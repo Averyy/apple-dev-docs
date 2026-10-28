@@ -23,11 +23,11 @@ func isSuperset(of other: Set<Element>) -> Bool
 
 Available when `Element` conforms to `Hashable`.
 
-#### Return Value
+## Return Value
 
 `true` if the set is a superset of `other`; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 Set *A* is a superset of another set *B* if every member of *B* is also a member of *A*.
 

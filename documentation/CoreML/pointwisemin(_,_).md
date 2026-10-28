@@ -31,7 +31,7 @@ func pointwiseMin(_ lhs: MLTensor, _ rhs: some MLTensorScalar & Numeric) -> MLTe
 func pointwiseMin(_ lhs: some MLTensorScalar & Numeric, _ rhs: MLTensor) -> MLTensor
 ```
 
-#### Discussion
+## Discussion
 
 For example:
 

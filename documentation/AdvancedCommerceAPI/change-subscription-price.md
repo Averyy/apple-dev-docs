@@ -16,7 +16,7 @@ Increase or decrease the price of an auto-renewable subscription, a bundle, or i
 - [Advanced Commerce API changelog](./changelog.md)
 - [Identifying rate limits for Advanced Commerce APIs](./ratelimits.md)
 
-#### Discussion
+## Discussion
 
 Call this endpoint when you change the price of a subscription or any bundle or item within it. For information about the customer communication, see [Handling subscription price changes](./handling-subscription-price-changes.md).
 
@@ -24,7 +24,7 @@ Only active subscriptions that aren’t in a billing retry state are eligible fo
 
 For information about providing prices, see [Specifying prices for Advanced Commerce SKUs](./prices.md).
 
-##### Example request and response
+### Example request and response
 
 In the following request:
 

@@ -19,7 +19,7 @@ var allowsAnimatedImages: Bool { get set }
 @property (nonatomic) BOOL allowsAnimatedImages;
 ```
 
-#### Discussion
+## Discussion
 
 Set to [`true`](../../Swift/true.md) if the web view should allow animated images, otherwise [`false`](../../Swift/false.md).
 

@@ -21,7 +21,7 @@ Checks if connections using the path may send traffic over a specific interface 
 func usesInterfaceType(_ type: NWInterface.InterfaceType) -> Bool
 ```
 
-#### Discussion
+## Discussion
 
 Paths can use interface types by directly routing over an interface, routing through a tunnel that goes over a physical interface, or being eligble to use multiple interfaces directly.
 

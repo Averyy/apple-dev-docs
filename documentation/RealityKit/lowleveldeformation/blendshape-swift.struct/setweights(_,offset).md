@@ -18,7 +18,7 @@ Sets the buffer containing blend-shape weights.
 func setWeights(_ buffer: any MTLBuffer, offset: Int) throws
 ```
 
-#### Discussion
+## Discussion
 
 The buffer must contain `targetCount` Float values, one per blend-shape target.
 

@@ -20,7 +20,7 @@ The name of this attribute.
 var name: USDToken { get }
 ```
 
-#### Discussion
+## Discussion
 
 An attribute’s name is the last component of its [`path`](./path.md). This property is equivalent to the `USDLayer.Path/name` property of that path.
 

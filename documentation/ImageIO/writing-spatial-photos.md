@@ -10,7 +10,7 @@ Create spatial photos for visionOS by packaging a pair of left- and right-eye im
 - macOS 14.0+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 Spatial photos are *High-Efficiency Image Codec* (HEIC) files containing a pair of left- and right-eye images, together with a stereo pair group and additional spatial metadata. *Spatial metadata* describes properties of the left- and right-eye cameras that captured the stereo scene. Adding spatial metadata to a stereo HEIC prompts Apple platforms to consider the image as *spatial* instead of just stereo, and opts the image into visual treatments on Apple Vision Pro that help minimize common causes of stereo viewing discomfort.
 
@@ -20,7 +20,7 @@ This sample app demonstrates how to use [Image I/O](./ImageIO.md) APIs to conver
 
 > **Note**: This sample app is a macOS command-line application, but you can also perform the spatial photo conversion process on other Apple platforms such as visionOS and iOS.
 
-##### Configure the sample code project
+### Configure the sample code project
 
 To run the app in Xcode, add the input file locations, output file location, and spatial metadata for your images as arguments to the project’s scheme. Select Product > Scheme > Edit Scheme (Command-<), and add the arguments described below to Arguments Passed On Launch:
 
@@ -35,7 +35,7 @@ By default, the project’s scheme loads a pair of left- and right-eye images fr
 
 For these images, a disparity adjustment of +2% of the image width produces a comfortable depth effect when the spatial photo is presented in a window on Apple Vision Pro. This 2% disparity adjustment value positions the nearest object in the spatial photo — the hummingbird — just behind the front of the window, while still keeping an effective illusion of depth between the hummingbird and the background. The scheme’s arguments express the +2% disparity adjustment with a `--disparityAdjustment` value of `0.02`.
 
-##### Load the left- and right-eye images
+### Load the left- and right-eye images
 
 The app starts by creating a [`CGImageSource`](./cgimagesource.md) for each of the left- and right-eye images. An initializer on `StereoPairImage` performs the following steps:
 
@@ -77,7 +77,7 @@ guard leftImage.width == rightImage.width, leftImage.height == rightImage.height
 
 > ❗ **Important**: The left- and right-eye images in a spatial photo must have the same pixel size.
 
-##### Define an extrinsic position for each image
+### Define an extrinsic position for each image
 
 The app converts the provided baseline distance from millimeters to meters.
 
@@ -95,7 +95,7 @@ let rightPosition: [Double] = [baselineInMeters, 0, 0]
 
 > ❗ **Important**: The distance in 3D space between the left- and right-eye camera extrinsic positions must always represent the baseline in meters between the two cameras that captured the images. The position of the right-eye camera must always be positioned to the right of the left-eye camera in the left-eye camera’s coordinate space.
 
-##### Compute a camera intrinsics matrix
+### Compute a camera intrinsics matrix
 
 The app uses the provided horizontal field of view, plus the known width and height of each input image, to compute a 3x3 camera intrinsics matrix that describes the characteristics of the left and right cameras.
 
@@ -126,7 +126,7 @@ func intrinsics(horizontalFOV: Double) -> [Double] {
 
 The app already validated the left-eye and right-eye images to confirm that they have the same pixel size. As a result, the app calculates the intrinsics matrix for the left-eye image and uses it as the intrinsics matrix for both images below.
 
-##### Encode the disparity adjustment
+### Encode the disparity adjustment
 
 The app encodes the provided disparity adjustment value as a signed integer, converting it from a signed floating-point value in the range `[-1.0, +1.0]` (as a fraction of image width) to a signed integer value in the range `[-10000, +10000]`.
 
@@ -134,7 +134,7 @@ The app encodes the provided disparity adjustment value as a signed integer, con
 let encodedDisparityAdjustment = Int(disparityAdjustment * 1e4)
 ```
 
-##### Define an image properties dictionary for each image
+### Define an image properties dictionary for each image
 
 Before adding the left-eye and right-eye images to the image destination, the app defines a properties dictionary for each image, which expresses the spatial metadata for that image as expected ImageIO properties.
 
@@ -209,7 +209,7 @@ The camera extrinsics dictionary specifies an identity rotation to indicate that
 
 The properties dictionary also specifies a [`kCGImagePropertyHasAlpha`](./kcgimagepropertyhasalpha.md) value of `false` to indicate that the system should ignore any alpha channel data in the source image when adding that source image to the image destination.
 
-##### Write the images to an output image destination
+### Write the images to an output image destination
 
 The app calls [`CGImageDestinationCreateWithURL(_:_:_:_:)`](./cgimagedestinationcreatewithurl%28_,_,_,_%29.md) to create an output [`CGImageDestination`](./cgimagedestination.md) at the provided URL for the output spatial photo. The app creates the image destination with the uniform type identifier for a HEIC image and an expected image count of `2` to indicate that the app writes both a left- and right-eye image to a single HEIC file.
 

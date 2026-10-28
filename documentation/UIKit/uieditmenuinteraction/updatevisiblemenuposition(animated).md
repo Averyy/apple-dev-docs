@@ -22,7 +22,7 @@ func updateVisibleMenuPosition(animated: Bool)
 - (void) updateVisibleMenuPositionAnimated:(BOOL) animated;
 ```
 
-#### Discussion
+## Discussion
 
 You use this method to update the location of the menu. This method calls [`editMenuInteraction(_:targetRectFor:)`](../uieditmenuinteractiondelegate/editmenuinteraction%28_,targetrectfor%29.md) and updates the position of the menu using the position the delegate returns. The method has no effect if no menu is present.
 

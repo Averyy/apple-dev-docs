@@ -22,7 +22,7 @@ typedef struct MDQueryBatchingParams {
 } MDQueryBatchingParams;
 ```
 
-#### Overview
+## Overview
 
 The default batching parameters are undefined and subjectto change. 
 

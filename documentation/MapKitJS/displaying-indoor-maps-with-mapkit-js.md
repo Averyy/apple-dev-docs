@@ -6,7 +6,7 @@
 
 Use the Indoor Mapping Data Format (IMDF) to show an indoor map with custom overlays and points of interest in your browser.
 
-#### Overview
+## Overview
 
 This sample uses the [`importGeoJSON()`](./mapkit/importgeojson.md) method from MapKit JS to import data in [Indoor Mapping Data Format (IMDF)](https://register.apple.com/resources/imdf/), and render an indoor map in your browser. The sample app demonstrates decoding, rendering, and styling of a small subset of the IMDF feature types and properties.
 
@@ -14,7 +14,7 @@ Use these examples to create your own indoor map with a style that is consistent
 
 > **Note**: This sample code project is associated with WWDC 2019 session [241: Adding Indoor Maps to your App and Website](https://developer.apple.com/wwdc19/241).
 
-##### Configure Your Sample Code Project
+### Configure Your Sample Code Project
 
 To run this sample code:
 

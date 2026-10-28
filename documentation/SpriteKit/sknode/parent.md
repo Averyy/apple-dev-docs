@@ -29,7 +29,7 @@ var parent: SKNode? { get }
 
 - [Accessing and Modifying the Node Tree](../accessing-and-modifying-the-node-tree.md)
 
-#### Discussion
+## Discussion
 
 If the node is not in a node tree, the value is `nil`.
 

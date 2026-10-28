@@ -9,7 +9,7 @@ Provide a reason for customers to stay subscribed with a preconfigured message t
 **Availability**:
 - Retention Messaging API 1.0+
 
-#### Overview
+## Overview
 
 The Retention Messaging API is a server-to-server service that enables you to select which message the system displays to customers when they view a subscription details page and might cancel. You upload and configure messages in advance for products and locales.
 
@@ -49,19 +49,19 @@ You use the API to select retention messages for customers in two ways:
 
 The system doesn’t display a retention message for a product in any locale that lacks a default retention message.
 
-##### Upload images and messages
+### Upload images and messages
 
 All retention messages start with text that you upload, and optional images. For more information, see [`Upload Image`](./upload-image.md) and [`Upload Message`](./upload-message.md).
 
 Don’t upload content that is misleading or inaccurate.
 
-##### Configure default retention messages
+### Configure default retention messages
 
 The simplest way to use this API is to configure default messages. Start by uploading images and messages. Then, specify the messages to use as default messages. For more information, see [Setting up retention messages](./setting-up-retention-messages.md).
 
 Default messages can display only text-based messages with or without images or bullet points. To provide retention messages that include offers, use the real-time messaging flow.
 
-##### Provide real-time messages, including offers
+### Provide real-time messages, including offers
 
 The real-time messaging flow calls your server when an active subscriber views a subscription details page with a Cancel button. For example, customers might consider canceling on the Apple Account > Subscriptions page, or when viewing the subscription details page on the App Store.
 
@@ -75,7 +75,7 @@ Follow these steps to implement the real-time flow:
 4. To set up your endpoint in the production environment, call the [`Initiate Performance Test`](./initiate-performance-test.md) and pass the test. Then call the [`Configure Realtime URL`](./configure-realtime-url.md) endpoint to set up your production URL.
 5. Respond to App Store requests by selecting a retention message to display in real time. For more information, see [Responding to real-time retention messaging requests](./responding-to-realtime-retention-messaging-requests.md).
 
-##### System requirements
+### System requirements
 
 Retention messages are visible only to devices running iOS 15.1 or later, iPadOS 15.1 or later, visionOS 1 or later, or macOS 14 or later.
 

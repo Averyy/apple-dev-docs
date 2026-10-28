@@ -4,7 +4,7 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 The tvOS 12.4 SDK provides support for developing tvOS apps for Apple TV devices running tvOS 12.4. The SDK comes bundled with Xcode 10.3. For information on the compatibility requirements for Xcode 10.3, see [Xcode 10.3 Release Notes](../Xcode-Release-Notes/xcode-10_3-release-notes.md).
 

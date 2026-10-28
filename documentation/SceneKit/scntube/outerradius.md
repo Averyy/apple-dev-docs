@@ -25,7 +25,7 @@ var outerRadius: CGFloat { get set }
 @property (nonatomic) CGFloat outerRadius;
 ```
 
-#### Discussion
+## Discussion
 
 The tube is centered in its local coordinate system. For example, a tube whose outer radius is  `5.0` extends from `-5.0` to `5.0` along the x- and z-axes. The default outer radius is `0.5`.
 

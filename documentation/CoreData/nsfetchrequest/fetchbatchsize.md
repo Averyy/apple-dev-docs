@@ -25,7 +25,7 @@ var fetchBatchSize: Int { get set }
 @property (nonatomic) NSUInteger fetchBatchSize;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `0`. A batch size of `0` is treated as infinite, which disables the batch fetching behavior.
 
@@ -33,7 +33,7 @@ If you set a nonzero batch size, the collection of objects returned when an inst
 
 You can use this feature to restrict the working set of data in your application. In combination with [`fetchLimit`](./fetchlimit.md), you can create a subrange of an arbitrary result set.
 
-##### Special Considerations
+### Special Considerations
 
 For purposes of thread safety, when the fetch is executed, consider the array proxy returned as being owned by the managed object context the request is executed against. Treat the array proxy as if it were a managed object registered with that context.
 

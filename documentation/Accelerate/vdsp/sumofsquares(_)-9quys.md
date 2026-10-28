@@ -21,7 +21,7 @@ Returns the double-precision vector sum of squares.
 static func sumOfSquares<U>(_ vector: U) -> Double where U : AccelerateBuffer, U.Element == Double
 ```
 
-#### Discussion
+## Discussion
 
 This function calculates and returns the sum of the squares of the elements of a supplied vector.
 

@@ -24,7 +24,7 @@ case floatRGB9E5
 MTLAttributeFormatFloatRGB9E5
 ```
 
-#### Discussion
+## Discussion
 
 This data format is identical to [`MTLPixelFormat.rgb9e5Float`](../mtlpixelformat/rgb9e5float.md), and used in compute functions for manipulating pixels.
 

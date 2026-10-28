@@ -17,11 +17,11 @@ Returns an array of strings that represent file types that can be loaded as a te
 + (NSArray *) textUnfilteredFileTypes;
 ```
 
-#### Return Value
+## Return Value
 
 An array of `NSString` objects, consisting of all file types supported by text classes, but does not include those types that can be converted to supported file types through a user-installed filter service.
 
-#### Discussion
+## Discussion
 
 This list consists of all file types supported by text classes, but does not include those types that can be converted to supported file types through a user-installed filter service. In macOS, the array returned by this method may be passed directly to the `runModalForTypes:` method of [`NSOpenPanel`](../../AppKit/nsopenpanel.md).
 

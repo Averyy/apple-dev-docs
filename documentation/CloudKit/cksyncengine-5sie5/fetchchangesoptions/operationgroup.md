@@ -21,7 +21,7 @@ The operation group to use for the underlying CloudKit operations.
 var operationGroup: CKOperationGroup { get set }
 ```
 
-#### Discussion
+## Discussion
 
 > 💡 **Tip**: Providing a specific operation group helps you to identify and analyze the telemetry of fetch operations in CloudKit Console.
 

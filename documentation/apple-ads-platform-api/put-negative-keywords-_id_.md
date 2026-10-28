@@ -9,15 +9,15 @@ Update a negative keyword’s status to enable or pause its search term exclusio
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 This endpoint updates an existing negative keyword. The `NegativeKeywordUpdate` schema accepts only the `status` field. Negative keywords don’t have a `bid` field, and `text` and `matchType` are immutable after creation. To change a negative keyword’s text or match type, delete it and create a new one.
 
-#### Payload Examples
+## Payload Examples
 
 Pause a negative keyword to temporarily suspend its search term exclusion. The term can be re-enabled without recreating it.
 
-##### Request
+### Request
 
 ```http
 PUT /v1/negative-keywords/{id}
@@ -27,7 +27,7 @@ PUT /v1/negative-keywords/{id}
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {

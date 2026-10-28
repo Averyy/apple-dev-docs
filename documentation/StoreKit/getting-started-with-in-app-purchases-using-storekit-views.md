@@ -5,11 +5,11 @@
 
 Set up an in-app store using SwiftUI and StoreKit views.
 
-#### Overview
+## Overview
 
 StoreKit provides a streamlined system for building basic Apple In-App Purchase (IAP) capabilities that allow you to provide purchases in your app and process transactions using simple SwiftUI views. You can use this capability to build a basic store with default styling, or you can customize your store’s experience using the full, expressive capabilities of SwiftUI.
 
-#### Choose your product types
+## Choose your product types
 
 StoreKit supports the following product types, and StoreKit views can display all of them without any custom programming:
 
@@ -18,7 +18,7 @@ StoreKit supports the following product types, and StoreKit views can display al
 - **Auto-renewable subscriptions**: Recurring access to virtual content, services, and premium features in your app on an ongoing basis. An auto-renewable subscription continues to automatically renew at the end of each subscription period until people choose to cancel it.
 - **Non-renewing subscriptions**: Access to a service or content that lasts for a limited time, like access to an in-game battle pass. People purchase a non-renewing subscription each time they want to extend their access to the service or content.
 
-#### Prototype your in-app store offline
+## Prototype your in-app store offline
 
 With StoreKit, you can create a file that allows you to prototype and test your Apple In-App Purchase code in Xcode without needing to set up products in App Store Connect. Xcode calls this a StoreKit local configuration; to create a local configuration file, follow these steps:
 
@@ -33,7 +33,7 @@ For more information about setting up a local configuration file, see [Setting u
 
 This local configuration file allows you to experiment with product IDs and various purchase types offline. To use the product IDs in a published app, create the same product IDs in App Store Connect after you finish prototyping.
 
-#### Choose IDs for your products
+## Choose IDs for your products
 
 In your app, define products that someone can buy, in order to prototype your store. Choose descriptive product IDs that are easy for you to read and understand. In this example, the product IDs describe the product type they represent.
 
@@ -54,7 +54,7 @@ enum ProductID: String {
 
 > **Note**: In a production app, consider fetching the list of product IDs programmatically — either from App Store Connect, or from your own server. This approach lets you enable and disable products without recompiling your app. For more information, see [Configure Apple In-App Purchase settings](https://developer.apple.com/help/app-store-connect/configure-in-app-purchase-settings/overview-for-configuring-in-app-purchases).
 
-#### Monitor transactions in your app
+## Monitor transactions in your app
 
 StoreKit provides several asynchronous sequences that provide your app with information and updates. For example, the class below checks [`unfinished`](./transaction/unfinished.md) and [`currentEntitlements`](./transaction/currententitlements.md) at startup, and continues to check [`updates`](./transaction/updates.md) in the background while the app is running.
 
@@ -157,7 +157,7 @@ private func handle(updatedTransaction verificationResult: VerificationResult<Tr
 }
 ```
 
-#### Define products in the local StoreKit configuration file
+## Define products in the local StoreKit configuration file
 
 Before moving on to the views that display these products, define these products in the local configuration file you created earlier.
 
@@ -170,7 +170,7 @@ To create the local products, follow these steps:
 
 ![A screenshot of the StoreKitWorkflows app showing a view the StoreKit local configuration editor and some of the properties available to edit.](https://developer.apple.com/tutorials/images/com.apple.storekit/getting-started-with-in-app-purchases-using-storekit-views-LocalConfiguration-Editing@2x.png)
 
-#### Create SwiftUI views that display your products
+## Create SwiftUI views that display your products
 
 After completing the local configuration, you can show all of your products on one page with a simple, compact SwiftUI view.
 

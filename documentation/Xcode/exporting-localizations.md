@@ -5,11 +5,11 @@
 
 Provide the localizable files from your project to localizers.
 
-#### Overview
+## Overview
 
 Export localizations for the languages and regions you’re ready to support. You can export all the files that you need to localize from your Xcode project, or export the files for specific localizations. Optionally, add files to the exported folders to provide context, and then give the files to localizers.
 
-##### Export localizations using Xcode
+### Export localizations using Xcode
 
 In the Project navigator, select the project, then choose Product > Export Localizations. In the dialog that appears, enter a folder name, choose a location, choose the localizations, and click Export.
 
@@ -30,7 +30,7 @@ Xcode extracts strings that you pass to [`Text`](../SwiftUI/text.md) structures,
 
 In addition, each localization folder in the catalog contains only the resources and assets that you mark as localizable. Prior to localization, the file is a copy of the development language file—a placeholder to provide context for the localizers.
 
-##### Add files to the Xcode Localization Catalog
+### Add files to the Xcode Localization Catalog
 
 Before you give the catalog to localizers, you can add additional files to the `Notes` folders to provide more context. An Xcode Localization Catalog folder contains:
 
@@ -41,7 +41,7 @@ Before you give the catalog to localizers, you can add additional files to the `
 | `Notes` | A folder containing additional information for localizers, such as screenshots, movies, or text files. |
 | `Source Contents` | A folder containing the assets to produce the content that provides context for localizers, such as user interface files and other resources. |
 
-##### Export localizations using commands
+### Export localizations using commands
 
 You can also export localization files with the `xcodebuild` command using the -`exportLocalizations` argument:
 

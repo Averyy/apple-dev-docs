@@ -24,7 +24,7 @@ case restricted
 VSAccountAccessStatusRestricted
 ```
 
-#### Discussion
+## Discussion
 
 This status can result if parental controls prohibit the user from allowing access.
 

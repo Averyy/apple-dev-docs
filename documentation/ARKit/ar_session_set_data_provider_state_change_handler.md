@@ -15,7 +15,7 @@ Sets the handler for responding to a state change of one or more data providers.
 extern void ar_session_set_data_provider_state_change_handler(ar_session_t session, dispatch_queue_t queue, ar_session_data_provider_state_change_handler_t data_provider_state_change_handler);
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: Setting this will override the function set using `ar_session_set_data_provider_state_change_handler_f`.
 

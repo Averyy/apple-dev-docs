@@ -22,11 +22,11 @@ optional func splitViewControllerPreferredInterfaceOrientationForPresentation(_ 
 - (UIInterfaceOrientation) splitViewControllerPreferredInterfaceOrientationForPresentation:(UISplitViewController *) splitViewController;
 ```
 
-#### Return Value
+## Return Value
 
 The orientation to use when first displaying the split view controller.
 
-#### Discussion
+## Discussion
 
 UIKit calls this method to determine which orientation your app prefers when presenting the specified split view controller. You can use this method to specify the orientation that you think is best when first displaying the split view controller. The orientation you specify can be different from the current device orientation. After presentation, the system may rotate the split view controller as appropriate to one of its other supported interface orientations.
 

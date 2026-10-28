@@ -5,11 +5,11 @@
 
 Apple no longer supports this API.
 
-#### Overview
+## Overview
 
 > **Note**:  As of June 2023, Apple no longer supports the Apple Ads Campaign Management API 3. Endpoints are no longer accessible. Use API 4. See [Implementing OAuth for the Apple Ads API](./implementing-oauth-for-the-apple-search-ads-api.md).
 
-##### 3.1
+### 3.1
 
 Released in May 2020.
 

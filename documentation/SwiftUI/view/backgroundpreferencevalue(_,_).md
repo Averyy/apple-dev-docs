@@ -22,7 +22,7 @@ nonisolated
 func backgroundPreferenceValue<Key, T>(_ key: Key.Type = Key.self, @ContentBuilder _ transform: @escaping (Key.Value) -> T) -> some View where Key : PreferenceKey, T : View
 ```
 
-#### Return Value
+## Return Value
 
 A view that layers a second view behind the view.
 

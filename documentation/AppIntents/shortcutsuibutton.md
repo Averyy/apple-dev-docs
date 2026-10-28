@@ -19,7 +19,7 @@ A button that opens the current app’s page in the Shortcuts app.
 @objc @preconcurrency final class ShortcutsUIButton
 ```
 
-#### Overview
+## Overview
 
 You can add additional targets to observe when the button is tapped.
 

@@ -29,7 +29,7 @@ class CachedURLResponse
 
 - [Accessing cached data](./accessing-cached-data.md)
 
-#### Overview
+## Overview
 
 A [`CachedURLResponse`](./cachedurlresponse.md) object provides the server’s response metadata in the form of a [`URLResponse`](./urlresponse.md) object, along with an [NSData](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/PropertyLists/OldStylePlists/OldStylePLists.html#//apple_ref/doc/uid/20001012-47169) object containing the actual cached content data. Its storage policy determines whether the response should be cached on disk, in memory, or not at all.
 

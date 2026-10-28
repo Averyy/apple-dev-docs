@@ -21,7 +21,7 @@ Custom week of the year format style showing the minimum number of digits that r
 static var defaultDigits: Date.FormatStyle.Symbol.YearForWeekOfYear { get }
 ```
 
-#### Discussion
+## Discussion
 
 This represents week-of-year values like `1` or `18`.
 

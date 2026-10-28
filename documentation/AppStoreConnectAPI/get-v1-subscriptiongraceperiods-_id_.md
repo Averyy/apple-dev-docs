@@ -9,9 +9,9 @@ Get the Boolean value that represents the billing grace period opt-in state and 
 **Availability**:
 - App Store Connect API 2.0+
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

@@ -20,7 +20,7 @@ A large widget.
 case systemLarge
 ```
 
-#### Discussion
+## Discussion
 
 The large system widget can appear on the Home Screen or in the Today View in iOS or iPadOS, or in the Notification Center on macOS.
 

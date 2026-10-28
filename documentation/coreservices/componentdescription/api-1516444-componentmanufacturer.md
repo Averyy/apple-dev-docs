@@ -16,7 +16,7 @@ A four-character code that identifies the manufacturer of the component.
 OSType componentManufacturer;
 ```
 
-#### Discussion
+## Discussion
 
 The [`componentManufacturer`](./api-1516444-componentmanufacturer.md) field allows for further differentiation between individual components. For example, components made by a specific manufacturer may support an extended feature set. Components provided by Apple use a manufacturer value of `appl`.
 

@@ -16,11 +16,11 @@ Reads the 512-byte data provided by the drive in response to the ATA IDENTIFY DE
 IOReturn (*GetATAIdentifyData)(void *interface, void *buffer, UInt32 inSize, UInt32 *outSize);
 ```
 
-#### Return Value
+## Return Value
 
 An IOReturn result code. If inSize is greater than 512 or less than 1, kIOReturnBadArgument is returned.
 
-#### Discussion
+## Discussion
 
 Reads the 512-byte data provided by the drive in response to the ATA IDENTIFY DEVICE command. See section 8.15 of ATA/ATAPI-6. The data placed in buffer is guaranteed to be in native endian form on return. (i.e. it will be byte swapped on big endian platforms, so the caller need not do anything)
 

@@ -25,7 +25,7 @@ let kCGImagePropertyDepth: CFString
 extern CFStringRef const kCGImagePropertyDepth;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is a [`CFNumber`](../CoreFoundation/cfnumber.md).
 

@@ -19,7 +19,7 @@ class func optionalShared() -> WebHistory!
 + (WebHistory *) optionalSharedHistory;
 ```
 
-#### Return Value
+## Return Value
 
 A shared web history object initialized with the default web history file, or `nil` if one was not previously specified using the [`setOptionalShared(_:)`](./setoptionalshared%28_%29.md) method.
 

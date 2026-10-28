@@ -16,7 +16,7 @@ The color to apply to the text displayed in the sash. If `nil` the text will be 
 @preconcurrency class var titleColor: Color? { get }
 ```
 
-#### Discussion
+## Discussion
 
 Default value is `nil`
 

@@ -20,7 +20,7 @@ func ColorSyncProfileGetDisplayTransferFormulaFromVCGT(_ profile: ColorSyncProfi
 extern bool ColorSyncProfileGetDisplayTransferFormulaFromVCGT(ColorSyncProfileRef profile, float *redMin, float *redMax, float *redGamma, float *greenMin, float *greenMax, float *greenGamma, float *blueMin, float *blueMax, float *blueGamma);
 ```
 
-#### Discussion
+## Discussion
 
 The function performs this conversion only if a `vcgt` tag exists in the profile and the conversion is possible.
 

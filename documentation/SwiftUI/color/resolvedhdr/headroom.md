@@ -22,7 +22,7 @@ The content headroom of the color.
 var headroom: Float? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This is the ratio of nominal peak luminance (“peak white”) to nominal diffuse luminance (“reference white” or “diffuse white”). Headroom is a linear quantity, i.e. there is no gamma function applied to it.
 

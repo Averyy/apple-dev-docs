@@ -5,11 +5,11 @@
 
 Learn about implicit animations, explicit animations, and actions, and when to choose each in your app.
 
-#### Overview
+## Overview
 
 SceneKit animation support is based on the Core Animation framework. (For more about Core Animation, read [Core Animation Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreAnimation_guide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004514).) Several SceneKit classes define *animatable* properties, meaning that in addition to simply assigning a new value to the property, you can create animations that transition smoothly between two values of the property. For example, animating a node’s [`opacity`](./scnnode/opacity.md) property fades the node’s visible content in or out. You can animate content *implicitly* or *explicitly*.
 
-##### Animate Content Changes Implicitly
+### Animate Content Changes Implicitly
 
 You create an animation implicitly by changing the value of an animatable property. Implicit animation is useful when you want to quickly animate a one-time change or animate several property changes together without writing a lot of animation code.
 
@@ -39,7 +39,7 @@ Listing 1. Implicit animation that makes a block of text fall out of the scene w
 }
 ```
 
-##### Explicitly Create an Animation
+### Explicitly Create an Animation
 
 For more complex animations, you can explicitly create an animation object and attach it to the scene element being animated. Creating an animation object also makes an animation reusable, so you can play the same animation at any time on demand or apply it to different elements of your scene.
 

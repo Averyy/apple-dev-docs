@@ -21,7 +21,7 @@ A notification the system posts when an asset’s media selection groups change.
 static let AVAssetMediaSelectionGroupsDidChange: NSNotification.Name
 ```
 
-#### Discussion
+## Discussion
 
 The system posts this notification only after the value of an asset’s [`availableMediaCharacteristicsWithMediaSelectionOptions`](../../../AVFoundation/avpartialasyncproperty/availablemediacharacteristicswithmediaselectionoptions.md) property reaches a status of [`AVKeyValueStatus.loaded`](../../../AVFoundation/avkeyvaluestatus/loaded.md).
 

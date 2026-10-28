@@ -21,7 +21,7 @@ func handleView() async throws
 
 - [Presenting ads in your app](../presenting-ads-in-your-app.md)
 
-#### Discussion
+## Discussion
 
 Call this method on the app impression to register a person’s viewing of the ad content.
 

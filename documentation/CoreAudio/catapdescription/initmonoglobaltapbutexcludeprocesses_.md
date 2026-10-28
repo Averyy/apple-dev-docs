@@ -14,7 +14,7 @@
 - (instancetype) initMonoGlobalTapButExcludeProcesses:(NSArray<NSNumber *> *) processesObjectIDsToExcludeFromTap;
 ```
 
-#### Discussion
+## Discussion
 
 Mix all processes to a mono stream except the given processes
 

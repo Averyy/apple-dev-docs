@@ -13,7 +13,7 @@
 kMicrosecondScale = 1000
 ```
 
-#### Discussion
+## Discussion
 
 Scale factor for microsecond based times.
 

@@ -19,7 +19,7 @@ func device() -> IOBluetoothDevice!
 - (IOBluetoothDevice *) device;
 ```
 
-#### Return Value
+## Return Value
 
 Device The IOBluetoothDevice object that the IOBluetoothDevicePair object is pairing with, as specified in -setDevice: or pairWithDevice:
 

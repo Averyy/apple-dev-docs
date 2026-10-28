@@ -15,7 +15,7 @@ Constants for the type of effect to apply to the text.
 typedef NSString * NSTextEffectStyle;
 ```
 
-#### Discussion
+## Discussion
 
 Use this constant as the value for the [`NSTextEffectAttributeName`](./nstexteffectattributename.md) key.
 

@@ -16,7 +16,7 @@ case unspecified
 INGetUserCurrentRestaurantReservationBookingsIntentResponseCodeUnspecified
 ```
 
-#### Discussion
+## Discussion
 
 Use this code when the information in the intent object was insufficient for you to perform the fetch operation.
 

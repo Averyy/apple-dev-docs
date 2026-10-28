@@ -25,7 +25,7 @@ typealias CMBufferValidationCallback = (CMBufferQueue, CMBuffer, UnsafeMutableRa
 typedef int (*)(struct opaqueCMBufferQueue *, const void *, void *) CMBufferValidationCallback;
 ```
 
-#### Discussion
+## Discussion
 
 [`CMBufferQueueEnqueue(_:buffer:)`](./cmbufferqueueenqueue%28_,buffer%29.md) will call this function to validate buffers.
 
@@ -33,7 +33,7 @@ Return `noErr` if the buffer is in a valid state to add.
 
 Return a nonzero error code if the buffer should be rejected; [`CMBufferQueueEnqueue(_:buffer:)`](./cmbufferqueueenqueue%28_,buffer%29.md) will return this error to the caller. If you do not have a more descriptive error code, use `kCMBufferQueueError_InvalidBuffer`.
 
-##### Callback Parameters
+### Callback Parameters
 
 - **buf**: The buffer about to be added.
 - **queue**: The queue requesting validation.

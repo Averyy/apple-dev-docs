@@ -21,7 +21,7 @@ The data type of a tag’s value.
 enum CMTagDataType : uint32_t;
 ```
 
-#### Overview
+## Overview
 
 Use methods from Inspecting Tags to determine a tag’s data type.
 

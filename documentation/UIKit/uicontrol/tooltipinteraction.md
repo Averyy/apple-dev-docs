@@ -22,7 +22,7 @@ var toolTipInteraction: UIToolTipInteraction? { get }
 @property (nonatomic, strong, readonly, nullable) UIToolTipInteraction * toolTipInteraction;
 ```
 
-#### Discussion
+## Discussion
 
 When you set the [`toolTip`](./tooltip.md) property, the control creates a [`UIToolTipInteraction`](../uitooltipinteraction.md) object and assigns it to the [`toolTipInteraction`](./tooltipinteraction.md) property.
 

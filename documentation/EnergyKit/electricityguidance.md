@@ -17,7 +17,7 @@ A data model that provides guidance on when electricity is cleaner and less expe
 struct ElectricityGuidance
 ```
 
-#### Overview
+## Overview
 
 `ElectricityGuidance` provides information on grid quality and electricity cost, if cost information is available. You can use `ElectricityGuidance` to adjust the electricity consumption of your managed devices to times when electricity is cleaner, and optionally reduce the overall electricity consumption or cost of your managed devices.
 

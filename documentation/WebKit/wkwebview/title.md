@@ -23,7 +23,7 @@ var title: String? { get }
 @property (nonatomic, copy, readonly, nullable) NSString * title;
 ```
 
-#### Discussion
+## Discussion
 
 [`WKWebView`](../wkwebview.md) is key-value observing (KVO) compliant for this property.
 

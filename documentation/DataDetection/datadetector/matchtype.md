@@ -21,7 +21,7 @@ A set of types of matches that the system can find in a string.
 struct MatchType
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: The framework may either not support or only partially support some types in certain languages.
 

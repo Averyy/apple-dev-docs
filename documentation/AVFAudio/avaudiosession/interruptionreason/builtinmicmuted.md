@@ -24,7 +24,7 @@ case builtInMicMuted
 AVAudioSessionInterruptionReasonBuiltInMicMuted
 ```
 
-#### Discussion
+## Discussion
 
 This interruption reason typically occurs when a user closes an iPad’s Smart Folio cover.
 

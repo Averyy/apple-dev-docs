@@ -19,7 +19,7 @@ var isMulticastAddress: Bool { get }
 @property (readonly, getter=isMulticastAddress) BOOL isMulticastAddress;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) if the address is a multicast address, or [`false`](../../Swift/false.md) if it isn’t.
 

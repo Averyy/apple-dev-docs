@@ -22,7 +22,7 @@ init(_ data: Data, @DynamicInstructionsBuilder content: @escaping (Data.Element)
 
 Available when `Data` conforms to `RandomAccessCollection`, `ID` is `Data.Element.ID`, `Content` conforms to `DynamicInstructions`, and `Data.Element` conforms to `Identifiable`.
 
-#### Discussion
+## Discussion
 
 Don’t create this type directly. Instead, use [`DynamicInstructions.ForEach`](../dynamicinstructions/foreach.md) within the `body` of your [`DynamicInstructions`](../dynamicinstructions.md).
 

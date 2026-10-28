@@ -21,7 +21,7 @@ Sets the cancellation handler function for the given dispatch source.
 extern void dispatch_source_set_cancel_handler_f(dispatch_source_t source, dispatch_function_t handler);
 ```
 
-#### Discussion
+## Discussion
 
 The cancellation handler (if specified) is submitted to the source’s target queue in response to a call to [`dispatch_source_cancel`](./dispatch_source_cancel.md) when the system has released all references to the source’s underlying handle and the source’s event handler block has returned.
 

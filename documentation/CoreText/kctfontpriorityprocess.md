@@ -25,7 +25,7 @@ var kCTFontPriorityProcess: Int { get }
 kCTFontPriorityProcess
 ```
 
-#### Discussion
+## Discussion
 
 Fonts registered for the process are in [`CTFontManagerScope.process`](./ctfontmanagerscope/process.md).
 

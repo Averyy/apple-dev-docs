@@ -19,7 +19,7 @@ func contentBorderThickness(for edge: NSRectEdge) -> CGFloat
 - (CGFloat) contentBorderThicknessForEdge:(NSRectEdge) edge;
 ```
 
-#### Return Value
+## Return Value
 
 Thickness of the given border, in points.
 

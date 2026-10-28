@@ -28,7 +28,7 @@ optional func resolveCallCapability(for intent: INStartCallIntent) async -> INSt
 - (void) resolveCallCapabilityForStartCall:(INStartCallIntent *) intent withCompletion:(void (^)(INStartCallCallCapabilityResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This method lets SiriKit know which types of calls you can start. Your implementation should provide a successful resolution for the call types you support and an unsupported resolution for any call types you don’t support.
 

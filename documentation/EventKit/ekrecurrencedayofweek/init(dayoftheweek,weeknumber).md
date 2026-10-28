@@ -24,7 +24,7 @@ init(dayOfTheWeek: EKWeekday, weekNumber: Int)
 - (id) initWithDayOfTheWeek:(EKWeekday) dayOfTheWeek weekNumber:(NSInteger) weekNumber;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized day of the week.
 

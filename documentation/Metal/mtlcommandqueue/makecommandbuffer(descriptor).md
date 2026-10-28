@@ -25,7 +25,7 @@ func makeCommandBuffer(descriptor: MTLCommandBufferDescriptor) -> (any MTLComman
 - (id<MTLCommandBuffer>) commandBufferWithDescriptor:(MTLCommandBufferDescriptor *) descriptor;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to create a command buffer that you configure with a descriptor. You can configure whether the command buffer retains references to resources that its commands refer to by setting the `descriptor` parameter’s [`retainedReferences`](../mtlcommandbufferdescriptor/retainedreferences.md) property. You can also configure whether the command buffer saves extra error information, which is useful during development, by setting the descriptor’s [`errorOptions`](../mtlcommandbufferdescriptor/erroroptions.md) property.
 

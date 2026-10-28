@@ -29,7 +29,7 @@ nonisolated
 func toolbar<Content>(@ContentBuilder content: () -> Content) -> some View where Content : View
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to populate a toolbar with a collection of views that you provide to a toolbar content builder.
 

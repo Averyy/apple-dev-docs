@@ -19,7 +19,7 @@ case normal
 QLPreviewViewStyleNormal
 ```
 
-#### Discussion
+## Discussion
 
 The default style for a [`QLPreviewView`](../qlpreviewview.md) object. Use this style should for larger, full-size previews.
 

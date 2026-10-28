@@ -19,7 +19,7 @@ var VMEXIT_CLEAR_IA32_RTIT_CTL: UInt32 { get }
 VMEXIT_CLEAR_IA32_RTIT_CTL
 ```
 
-#### Discussion
+## Discussion
 
 Must be `0`.
 

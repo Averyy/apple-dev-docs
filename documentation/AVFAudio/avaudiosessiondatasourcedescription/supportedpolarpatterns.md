@@ -23,7 +23,7 @@ var supportedPolarPatterns: [AVAudioSession.PolarPattern]? { get }
 @property (readonly, nullable) NSArray<NSString *> * supportedPolarPatterns;
 ```
 
-#### Discussion
+## Discussion
 
 This property returns an array of one or more polar patterns, or [`nil`](../../ObjectiveC/nil-227m0.md) if the data source doesn’t support directivity configuration. This feature is available only on the built-in microphone port for certain devices.
 

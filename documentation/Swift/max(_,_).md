@@ -21,7 +21,7 @@ Returns the greater of two comparable values.
 func max<T>(_ x: T, _ y: T) -> T where T : Comparable
 ```
 
-#### Return Value
+## Return Value
 
 The greater of `x` and `y`. If `x` is equal to `y`, returns `y`.
 

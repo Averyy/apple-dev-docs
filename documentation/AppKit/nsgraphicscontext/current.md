@@ -19,11 +19,11 @@ class var current: NSGraphicsContext? { get set }
 @property (class, strong, nullable) NSGraphicsContext * currentContext;
 ```
 
-#### Return Value
+## Return Value
 
 The current graphics context of the current thread.
 
-#### Discussion
+## Discussion
 
 Returns an instance of a concrete subclass of [`NSGraphicsContext`](../nsgraphicscontext.md).
 

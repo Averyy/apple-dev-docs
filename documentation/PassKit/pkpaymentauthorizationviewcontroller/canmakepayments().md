@@ -24,11 +24,11 @@ class func canMakePayments() -> Bool
 + (BOOL) canMakePayments;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the device supports making payments; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 User may not be able to make payments for a variety of reasons. For example, this functionality may not be supported by their hardware, or it may be restricted by parental controls.
 

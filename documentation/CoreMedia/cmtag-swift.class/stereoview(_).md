@@ -21,7 +21,7 @@ Creates a tag containing eye information for 3D video.
 static func stereoView(_ value: CMStereoViewComponents) -> CMTypedTag<CMStereoViewComponents>
 ```
 
-#### Return Value
+## Return Value
 
 A new typed tag containing the stereo display eye information represented by `value`.
 

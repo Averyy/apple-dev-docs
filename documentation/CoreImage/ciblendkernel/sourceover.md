@@ -24,7 +24,7 @@ class var sourceOver: CIBlendKernel { get }
 @property (class, strong, readonly) CIBlendKernel * sourceOver;
 ```
 
-#### Discussion
+## Discussion
 
 ![The result of using the source over blend kernel (background image is top left, foreground image is bottom left)](https://developer.apple.com/tutorials/images/com.apple.coreimage/media-2926884@2x.png)
 

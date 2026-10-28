@@ -21,11 +21,11 @@ func dequantized(_ w: MLXArray, scales: MLXArray, biases: MLXArray?, groupSize: 
 
 - [Converting From Python](./converting-python.md)
 
-#### Discussion
+## Discussion
 
 For details, please see [this documentation](https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.dequantize.html)
 
-##### See Also
+### See Also
 
 - [`quantized(_:groupSize:bits:mode:globalScale:stream:)`](./quantized%28_,groupsize,bits,mode,globalscale,stream%29.md)
 - [`quantizedMM(_:_:scales:biases:transpose:groupSize:bits:mode:stream:)`](./quantizedmm%28_,_,scales,biases,transpose,groupsize,bits,mode,stream%29.md)

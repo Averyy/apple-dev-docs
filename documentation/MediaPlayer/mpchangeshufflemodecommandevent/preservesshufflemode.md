@@ -25,7 +25,7 @@ var preservesShuffleMode: Bool { get }
 @property (nonatomic, readonly) BOOL preservesShuffleMode;
 ```
 
-#### Discussion
+## Discussion
 
 When set to [`true`](../../Swift/true.md), the shuffle mode is preserved between playback sessions.
 

@@ -20,7 +20,7 @@ var ES_EVENT_TYPE_AUTH_SETOWNER: es_event_type_t { get }
 ES_EVENT_TYPE_AUTH_SETOWNER
 ```
 
-#### Discussion
+## Discussion
 
 This identifier corresponds to the [`es_events_t`](./es_events_t.md) union member [`setowner`](./es_events_t/setowner.md), which has the type [`es_event_settime_t`](./es_event_settime_t.md).
 

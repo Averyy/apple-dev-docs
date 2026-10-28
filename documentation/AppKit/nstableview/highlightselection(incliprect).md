@@ -19,7 +19,7 @@ func highlightSelection(inClipRect clipRect: NSRect)
 - (void) highlightSelectionInClipRect:(NSRect) clipRect;
 ```
 
-#### Discussion
+## Discussion
 
 This method is invoked before [`drawRow(_:clipRect:)`](./drawrow%28_,cliprect%29.md).
 

@@ -21,7 +21,7 @@ Modifies the current clipping path, using the nonzero winding number rule.
 extern void CGContextClip(CGContextRef c);
 ```
 
-#### Discussion
+## Discussion
 
 The function uses the nonzero winding number rule to calculate the intersection of the current path with the current clipping path. The path resulting from the intersection is used as the new current clipping path for subsequent painting operations.
 

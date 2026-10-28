@@ -15,7 +15,7 @@ A location, in map units, of a point on the Earth’s surface projected onto a 2
 class MapPoint implements MapPointData
 ```
 
-#### Overview
+## Overview
 
 Map units are a value from `0` to `1` that represent an interpolated location within the height or width of the full map projection. On a two-dimensional map, the upper-left corner of the map projection has the coordinate (`0,` `0`), and the lower-right corner of the map projection has the coordinate (`1,` `1`).
 

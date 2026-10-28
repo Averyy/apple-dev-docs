@@ -24,11 +24,11 @@ class func newCylinder(withHeight height: Float, radii: vector_float2, radialSeg
 + (instancetype) newCylinderWithHeight:(float) height radii:(vector_float2) radii radialSegments:(NSUInteger) radialSegments verticalSegments:(NSUInteger) verticalSegments geometryType:(MDLGeometryType) geometryType inwardNormals:(BOOL) inwardNormals allocator:(id<MDLMeshBufferAllocator>) allocator;
 ```
 
-#### Return Value
+## Return Value
 
 A new mesh object.
 
-#### Discussion
+## Discussion
 
 This method generates vertex data for a cylinder centered at the origin of its local coordinate system.
 

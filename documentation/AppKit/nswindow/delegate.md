@@ -19,7 +19,7 @@ weak var delegate: (any NSWindowDelegate)? { get set }
 @property (weak, nullable) id<NSWindowDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is `nil` if the window doesn’t have a delegate.
 

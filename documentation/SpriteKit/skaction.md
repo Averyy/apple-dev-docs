@@ -31,7 +31,7 @@ class SKAction
 - [Getting Started with Spring Joints](./getting-started-with-spring-joints.md)
 - [Working with Inverse Kinematics](./working-with-inverse-kinematics.md)
 
-#### Overview
+## Overview
 
 [`SKAction`](./skaction.md) is an animation that is executed by a node in the scene. Actions are used to change a node in some way (like move its position over time), but you can also use actions to change the scene, like doing a fadeout. When the scene processes its nodes, the actions associated with those nodes are processed.
 

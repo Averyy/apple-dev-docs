@@ -25,7 +25,7 @@ func setStrokeColorSpace(_ space: CGColorSpace)
 extern void CGContextSetStrokeColorSpace(CGContextRef c, CGColorSpaceRef space);
 ```
 
-#### Discussion
+## Discussion
 
 As a side effect when you call this function, Core Graphics assigns an appropriate initial value to the stroke color, based on the color space you specify. To change this value, call [`setStrokeColor(_:)`](./setstrokecolor%28_%29-4pd8p.md). Note that the preferred API is now [`setStrokeColor(_:)`](./setstrokecolor%28_%29-1sskg.md).
 

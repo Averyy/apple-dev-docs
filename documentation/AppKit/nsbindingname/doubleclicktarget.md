@@ -19,7 +19,7 @@ static let doubleClickTarget: NSBindingName
 extern NSBindingName NSDoubleClickTargetBinding;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [Cocoa Bindings](../cocoa-bindings.md).
 

@@ -22,11 +22,11 @@ Waits for the next child task to complete, and returns the value it returned.
 mutating func next(isolation: isolated (any Actor)? = #isolation) async -> ChildTaskResult?
 ```
 
-#### Return Value
+## Return Value
 
 The value returned by the next child task that completes.
 
-#### Discussion
+## Discussion
 
 The values returned by successive calls to this method appear in the order that the tasks *completed*, not in the order that those tasks were added to the task group. For example:
 

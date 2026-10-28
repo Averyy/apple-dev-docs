@@ -19,7 +19,7 @@ func allowsMultipleSelection() -> Bool
 - (BOOL) allowsMultipleSelection;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the receiver allows the user to select more than one cell at a time; [`false`](../../Swift/false.md) otherwise.
 

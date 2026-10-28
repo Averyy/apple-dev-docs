@@ -24,7 +24,7 @@ let kCIAttributeTypeTransform: String
 extern NSString * const kCIAttributeTypeTransform;
 ```
 
-#### Discussion
+## Discussion
 
 An [`CGAffineTransform`](../CoreFoundation/cgaffinetransform.md) is associated with attribute.
 

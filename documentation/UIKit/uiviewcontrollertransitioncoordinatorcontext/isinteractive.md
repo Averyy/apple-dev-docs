@@ -24,7 +24,7 @@ var isInteractive: Bool { get }
 @property (nonatomic, readonly, getter=isInteractive) BOOL interactive;
 ```
 
-#### Discussion
+## Discussion
 
 Every interactive transition has at least one noninteractive segment — namely, when it’s completing. In addition, you can design an interactive transition to have intermediate segments that are noninteractive.
 

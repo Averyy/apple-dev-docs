@@ -15,11 +15,11 @@ Returns whether the receiver was able to commit any pending edits.
 - (BOOL) commitEditing;
 ```
 
-#### Return Value
+## Return Value
 
 [`YES`](../yes.md) if the changes were successfully applied to the model, [`NO`](../no.md) otherwise.
 
-#### Discussion
+## Discussion
 
 A commit is denied if the receiver fails to apply the changes to the model object, perhaps due to a validation error.
 

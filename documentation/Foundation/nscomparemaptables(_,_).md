@@ -25,7 +25,7 @@ func NSCompareMapTables(_ table1: NSMapTable<AnyObject, AnyObject>, _ table2: NS
 extern BOOL NSCompareMapTables(NSMapTable *table1, NSMapTable *table2);
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if the keys and corresponding values of `table1` and `table2` are the same, and the two tables are the same size, otherwise [`false`](../Swift/false.md).
 

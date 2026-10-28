@@ -17,7 +17,7 @@ The signature is missing the nonce, in the testing environment.
 static var signatureMissingNonce: SKAdTestError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 Be sure to include a nonce when you create and validate an ad impression in the testing environment.
 

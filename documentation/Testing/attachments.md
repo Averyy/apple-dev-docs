@@ -5,11 +5,11 @@
 
 Attach values to tests to help diagnose issues and gather feedback.
 
-#### Overview
+## Overview
 
 Attach values such as strings and files to tests. Implement the [`Attachable`](./attachable.md) protocol to create your own attachable types.
 
-##### Attach data or strings
+### Attach data or strings
 
 If your test produces encoded data that you want to save as an attachment, you can call [`record(_:named:sourceLocation:)`](./attachment/record%28_,named,sourcelocation%29.md).
 
@@ -28,7 +28,7 @@ You can attach an instance of [Array<UInt8>](../Swift/array.md), [ContiguousArra
 
 You can also attach an instance of [String](../Swift/string.md) or [Substring](../Swift/substring.md). The testing library treats attached strings as UTF-8 text files. If you want to save a string as an attachment using a different encoding, convert it to [`Data`](../Foundation/data.md) using [data(using:allowLossyConversion:)](../Swift/stringprotocol/data%28using,allowlossyconversion%29.md) and attach the resulting data instead of the original string.
 
-##### Attach encodable values
+### Attach encodable values
 
 If you have a value you want to save as an attachment that conforms to either [Encodable](../Swift/encodable.md) or [NSSecureCoding](../Foundation/nssecurecoding.md), you can extend it to add conformance to [`Attachable`](./attachable.md). When you import the [Foundation](../Foundation/Foundation.md) module, the testing library automatically provides a default implementation of [`Attachable`](./attachable.md) to types that also conform to [`Encodable`](../Swift/encodable.md) or [`NSSecureCoding`](../Foundation/nssecurecoding.md).
 
@@ -48,7 +48,7 @@ extension SalesReport: Encodable, Attachable {}
 
 > ❗ **Important**: The testing library provides these default implementations only if your test target imports the [Foundation](../Foundation/Foundation.md) module.
 
-##### Attach transferable values
+### Attach transferable values
 
 If you have a value you want to save as an attachment that conforms to [Transferable](../CoreTransferable/transferable.md), you can create an instance of [`Attachment`](./attachment.md) from it when you import the [Core Transferable](../CoreTransferable/CoreTransferable.md) module.
 
@@ -75,7 +75,7 @@ When you create an attachment from a transferable value, the testing library cal
 let attachment = try await Attachment(exporting: salesReport, as: .pdf)
 ```
 
-##### Attach files and directories
+### Attach files and directories
 
 If you have a file you want to save as an attachment, you can attach it using its file URL. The testing library needs to read or map the file before attaching it to your test, and those operations can fail, so you need to explicitly create an instance of [`Attachment`](./attachment.md) before you record it.
 
@@ -93,7 +93,7 @@ import Foundation
 
 You can also attach a directory to a test using its file URL. When you attach a directory to a test, the testing library creates a ZIP file containing the directory’s contents, then attaches that ZIP file in place of the directory.
 
-##### Attach images
+### Attach images
 
 You can attach instances of the following system-provided image types to a test:
 
@@ -118,7 +118,7 @@ struct SalesReport { ... }
 
 If you don’t specify an image format when attaching an image to a test, the testing library selects the format to use based on the preferred name you pass.
 
-##### Attach other values
+### Attach other values
 
 If you have a value that needs a custom encoded representation when you save it as an attachment, implement [`withUnsafeBytes(for:_:)`](./attachable/withunsafebytes%28for,_%29.md). The implementation of this function calls its `body` argument and passes the encoded representation of `self` or, if a failure occurs, throws an error representing that failure.
 
@@ -140,7 +140,7 @@ extension SalesReport: Attachable {
 
 If your type conforms to [Sendable](../Swift/sendable.md), the testing library avoids calling this function until it needs to save the attachment. If your type  *doesn’t* conform to [`Sendable`](../Swift/sendable.md), the testing library calls this function as soon as you record the attachment.
 
-###### Customize attachment behavior
+#### Customize attachment behavior
 
 If you can reliably estimate in advance how large the encoded representation will be, implement [`estimatedAttachmentByteCount`](./attachable/estimatedattachmentbytecount.md). The testing library uses the value of this property as a hint to optimize memory and disk usage.
 
@@ -175,7 +175,7 @@ extension SalesReport: Attachable {
 }
 ```
 
-##### Inspect attachments after a test run ends
+### Inspect attachments after a test run ends
 
 By default, the testing library saves your attachments as soon as you call [`record(_:sourceLocation:)`](./attachment/record%28_,sourcelocation%29.md) or [`record(_:named:sourceLocation:)`](./attachment/record%28_,named,sourcelocation%29.md). You can access saved attachments after your tests finish running:
 

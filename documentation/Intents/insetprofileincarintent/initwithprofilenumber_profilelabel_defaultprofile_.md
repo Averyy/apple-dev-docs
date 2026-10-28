@@ -21,11 +21,11 @@ Initializes the intent object with the specified profile name and index informat
 - (instancetype) initWithProfileNumber:(NSNumber *) profileNumber profileLabel:(NSString *) profileLabel defaultProfile:(NSNumber *) defaultProfile;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized intent object or `nil` if the object could not be created.
 
-#### Discussion
+## Discussion
 
 Normally, you don’t create instances of this class yourself. Instead, Siri creates instances when the user asks to restore settings from a profile. However, you can use this method during testing to create intent objects in order to validate your intent handling code paths.
 

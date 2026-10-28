@@ -25,7 +25,7 @@ var bloomIntensity: CGFloat { get set }
 @property (nonatomic) CGFloat bloomIntensity;
 ```
 
-#### Discussion
+## Discussion
 
 A bloom effect adds a soft glow to highlights (areas of bright color) in the rendered scene, simulating the way bright highlights appear to the human eye or a physical camera in a real-world scene. This property controls the strength of the bloom effect; lower values result in a subtle effect, and higher values create very bright glow. The default value is `0.0`, resulting in no bloom effect.
 

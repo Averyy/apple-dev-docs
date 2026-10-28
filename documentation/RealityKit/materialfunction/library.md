@@ -21,7 +21,7 @@ Metal Library containing the given function.
 var library: any MTLLibrary { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Most often this is your app’s default library.
 

@@ -25,7 +25,7 @@ var propertyControllers: [SCNParticleSystem.ParticleProperty : SCNParticleProper
 @property (nonatomic, copy, nullable) NSDictionary<NSString *,SCNParticlePropertyController *> * propertyControllers;
 ```
 
-#### Discussion
+## Discussion
 
 Each key in this dictionary is one of the constants listed in `Particle Property Keys`, and the value for each key is a [`SCNParticlePropertyController`](../scnparticlepropertycontroller.md) object responsible for varying that property over time. Use particle property controllers to add efficient animations that change the appearance or behavior of each particle emitted by the system.
 

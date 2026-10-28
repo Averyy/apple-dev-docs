@@ -24,7 +24,7 @@ class EKVirtualConferenceDescriptor
 @interface EKVirtualConferenceDescriptor : NSObject
 ```
 
-#### Overview
+## Overview
 
 When users add events to their calendars and use one of the room types that your provider defines, EventKit requests a virtual conference descriptor from your provider. Each virtual conference descriptor contains:
 

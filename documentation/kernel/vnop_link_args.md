@@ -16,7 +16,7 @@ struct vnop_link_args {
 };
 ```
 
-#### Discussion
+## Discussion
 
 VNOP_REMOVE is called to remove a file from a filesystem's namespace, for example by unlink(). It can operate on regular files, named pipes, special files, and in some cases on directories.
 

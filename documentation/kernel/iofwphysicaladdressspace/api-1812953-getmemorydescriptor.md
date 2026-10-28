@@ -12,7 +12,7 @@ IOMemoryDescriptor * getMemoryDescriptor(
  none. );
 ```
 
-#### Return Value
+## Return Value
 
 returns the IOMemoryDescriptor
 

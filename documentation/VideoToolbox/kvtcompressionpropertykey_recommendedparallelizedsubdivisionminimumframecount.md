@@ -24,7 +24,7 @@ let kVTCompressionPropertyKey_RecommendedParallelizedSubdivisionMinimumFrameCoun
 extern CFStringRef const kVTCompressionPropertyKey_RecommendedParallelizedSubdivisionMinimumFrameCount;
 ```
 
-#### Discussion
+## Discussion
 
 For best results, ensure that the total number of frames of a parallelized subdivision is greater than or equal to this value.
 

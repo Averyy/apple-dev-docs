@@ -22,7 +22,7 @@ case fullDocument
 UIWritingToolsCoordinatorContextScopeFullDocument
 ```
 
-#### Discussion
+## Discussion
 
 With this option, include all of the text your view manages. If your view has multiple text storage objects, create a separate context object for each one.
 

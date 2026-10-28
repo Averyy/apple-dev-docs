@@ -19,7 +19,7 @@ optional var enableOpenUnlinkEmulation: Bool { get }
 @property (readonly) BOOL enableOpenUnlinkEmulation;
 ```
 
-#### Discussion
+## Discussion
 
 *Open-unlink* functionality refers to a file system’s ability to support an open file being fully unlinked from the file system namespace. If a file system doesn’t support this functionality, FSKit can emulate it instead; this is called “open-unlink emulation”.
 

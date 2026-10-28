@@ -25,7 +25,7 @@ func present(afterMinimumDuration duration: CFTimeInterval)
 - (void) presentAfterMinimumDuration:(CFTimeInterval) duration;
 ```
 
-#### Discussion
+## Discussion
 
 When a command queue schedules a command buffer for execution, it tracks whether any commands in that command buffer need to render or write to the drawable object. When you call this method, the drawable presents its contents at a future time when all render and write requests for that drawable are complete and a previous drawable has been visible onscreen for the specified duration. Use this method to schedule drawables at a regular interval.
 

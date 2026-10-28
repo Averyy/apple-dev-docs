@@ -25,7 +25,7 @@ var physicalGranularity: MTLSize { get }
 @property (readonly) MTLSize physicalGranularity;
 ```
 
-#### Discussion
+## Discussion
 
 If you’re using a rendering algorithm that uses binning or tiling to partition the rendered image, you may want to use the value of this property to determine your bin sizes.
 

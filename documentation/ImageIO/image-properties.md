@@ -5,7 +5,7 @@
 
 Properties that apply to the container in general, and not necessarily to an individual image in the container.
 
-#### Overview
+## Overview
 
 Access these properties using the [`CGImageSourceCopyProperties(_:_:)`](./cgimagesourcecopyproperties%28_,_%29.md) function.
 

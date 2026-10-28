@@ -25,7 +25,7 @@ func xpc_array_create_empty() -> xpc_object_t
 extern xpc_object_txpc_array_create_empty();
 ```
 
-#### Return Value
+## Return Value
 
 A new array object.
 

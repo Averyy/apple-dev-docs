@@ -5,7 +5,7 @@
 
 This function is used to “create and destroy” particular device instances. It provides the FF plug-in driver with all the necessary start-up parameters.
 
-#### Overview
+## Overview
 
 ```c
 HRESULT ( *InitializeTerminate)(
@@ -15,7 +15,7 @@ HRESULT ( *InitializeTerminate)(
    boolean_t begin );
 ```
 
-##### Parameters
+### Parameters
 
 - **self**: Pointer to the FFPlugInDriver implementation instance.
 - **forceFeedbackAPIVersion**: The version number of FF API that loaded the effect driver. The plugIn should check that the major version of the forceFeedbackAPI version is the same as the major version of the API at the time the plugIn was compiled. If the major versions are different, then the plugIn API has changed and the plugIn will NOT be compatible with it.
@@ -26,7 +26,7 @@ HRESULT ( *InitializeTerminate)(
   If begin is false, this parameter is ignored. (You can pass NULL.)
 - **begin**: Nonzero if access to the device is beginning. Zero if the access to the device is ending. The FF API will call InitializeTerminate( begin=TRUE) when a FF device is first selected for use, and InitializeTerminate( begin=false) when the FF device is no longer needed.
 
-##### Return Value
+### Return Value
 
 Returns FF_OK if successful, or an error value otherwise:
 

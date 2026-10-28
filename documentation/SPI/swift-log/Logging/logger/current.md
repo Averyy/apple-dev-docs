@@ -31,7 +31,7 @@ static var current: Logger { get }
 - [004: Testing code that logs](../api-004-testinglogging.md)
 - [Implementing a log handler](../implementingaloghandler.md)
 
-#### Discussion
+## Discussion
 
 Returns the logger bound by the nearest enclosing [`withLogger(_:_:)`](../withlogger%28_,_%29-70nli.md) scope. If none is active, returns the process-wide unbound default — a `Logger(label: "")` constructed via `LoggingSystem.factory` the first time the task-local is touched, then reused for the lifetime of the process. The empty label is the deliberate diagnostic signal that no `withLogger` scope was set up before the read.
 

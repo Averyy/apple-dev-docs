@@ -23,7 +23,7 @@ var isSelected: Bool { get set }
 @property (nonatomic, getter=isSelected) BOOL selected;
 ```
 
-#### Discussion
+## Discussion
 
 Set the value of this property to [`true`](../../Swift/true.md) to select it or [`false`](../../Swift/false.md) to deselect it. Most controls don’t modify their appearance or behavior when selected, but some do. For example, the [`UISegmentedControl`](../uisegmentedcontrol.md) class tracks whether a segment is selected and draws it differently when it is.
 

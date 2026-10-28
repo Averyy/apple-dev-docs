@@ -24,7 +24,7 @@ var magFilter: MDLMaterialTextureFilterMode { get set }
 @property (nonatomic, assign) MDLMaterialTextureFilterMode magFilter;
 ```
 
-#### Discussion
+## Discussion
 
 Texture filtering determines the appearance of a rendered surface when portions of the surface appear larger or smaller than the original texture image. For example, the texture coordinates at a point near the camera may correspond to a small fraction of a texel. A renderer uses the magnification filter to determine the color of the sampled texel at that point.
 

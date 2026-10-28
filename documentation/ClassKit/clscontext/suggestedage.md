@@ -23,7 +23,7 @@ var suggestedAge: NSRange { get set }
 @property (nonatomic, assign, readwrite) NSRange suggestedAge;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to optionally suggest an age range for a context’s content. This guides teachers as they look for content for their students, although teachers are free to ignore your suggestion. If you provide a range, use integer ages measured in years as bounds. For example, you could consider a game as suitable for students from ages 4 to 6:
 

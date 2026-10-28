@@ -25,11 +25,11 @@ func convertToUserSpace(_ rect: CGRect) -> CGRect
 extern CGRect CGContextConvertRectToUserSpace(CGContextRef c, CGRect rect);
 ```
 
-#### Return Value
+## Return Value
 
 The rectangle in user space coordinates.
 
-#### Discussion
+## Discussion
 
 In general, affine transforms do not preserve rectangles. As a result, this function returns the smallest rectangle that contains the transformed corner points of the rectangle.
 

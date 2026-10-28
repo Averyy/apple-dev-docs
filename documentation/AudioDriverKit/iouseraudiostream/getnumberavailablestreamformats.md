@@ -15,11 +15,11 @@ Returns the number of available stream formats.
 size_t GetNumberAvailableStreamFormats();
 ```
 
-#### Return Value
+## Return Value
 
 The number of available stream formats, as a [`size_t`](../../kernel/size_t.md).
 
-#### Discussion
+## Discussion
 
 This method synchronizes by using the work queue created by the object.
 

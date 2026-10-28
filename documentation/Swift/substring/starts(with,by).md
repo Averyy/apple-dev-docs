@@ -21,11 +21,11 @@ Returns a Boolean value indicating whether the initial elements of the sequence 
 func starts<PossiblePrefix>(with possiblePrefix: PossiblePrefix, by areEquivalent: (Self.Element, PossiblePrefix.Element) throws -> Bool) rethrows -> Bool where PossiblePrefix : Sequence
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the initial elements of the sequence are equivalent to the elements of `possiblePrefix`; otherwise, `false`. If `possiblePrefix` has no elements, the return value is `true`.
 
-#### Discussion
+## Discussion
 
 The predicate must be an *equivalence relation* over the elements. That is, for any elements `a`, `b`, and `c`, the following conditions must hold:
 

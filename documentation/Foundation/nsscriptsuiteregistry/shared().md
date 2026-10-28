@@ -20,7 +20,7 @@ class func shared() -> NSScriptSuiteRegistry
 + (NSScriptSuiteRegistry *) sharedScriptSuiteRegistry;
 ```
 
-#### Discussion
+## Discussion
 
 If it creates an instance, and if the application provides scriptability information in the script suite format, the method loads suite definitions in all frameworks and other bundles that the application currently imports or includes; if information is provided in the sdef format, the method loads information only from the specified sdef file. If in reading scriptability information an exception is `raised` because of parsing errors, it handles the exception by printing a line of information to the console.
 

@@ -21,7 +21,7 @@ var displaysSearchBarInNavigationBar: Bool { get set }
 @property (nonatomic, assign) BOOL displaysSearchBarInNavigationBar;
 ```
 
-#### Discussion
+## Discussion
 
 When you return [`true`](../../Swift/true.md) to display the search bar in a navigation bar, the system uses the search display controller’s [`navigationItem`](./navigationitem.md) property and ignores the navigation item, if set, of the [`searchContentsController`](./searchcontentscontroller.md) view controller. The displayed search field occupies as much width in the navigation bar as possible.
 

@@ -23,11 +23,11 @@ func location(in view: UIView?) -> CGPoint
 - (CGPoint) locationInView:(UIView *) view;
 ```
 
-#### Return Value
+## Return Value
 
 A point in the local coordinate system of `view`.
 
-#### Discussion
+## Discussion
 
 To get the location of the drag activity within the window, use `nil` for the view.
 

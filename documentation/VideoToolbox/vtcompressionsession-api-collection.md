@@ -5,7 +5,7 @@
 
 An object that compresses video data.
 
-#### Overview
+## Overview
 
 A compression session supports the compression of a sequence of video frames. Here’s the workflow:
 

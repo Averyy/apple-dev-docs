@@ -24,7 +24,7 @@ func sessionControlsWillEnterFullscreenAppearance(_ session: AVCaptureSession)
 - (void) sessionControlsWillEnterFullscreenAppearance:(AVCaptureSession *) session;
 ```
 
-#### Discussion
+## Discussion
 
 When controls enter a fullscreen appearance, your app should hide portions of its user interface, including duplicative or unnecessary elements. Few onscreen elements should be visible so people can focus on their control interactions while viewing the camera preview unobstructed.
 

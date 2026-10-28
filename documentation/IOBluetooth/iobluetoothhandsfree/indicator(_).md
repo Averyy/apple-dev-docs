@@ -19,7 +19,7 @@ func indicator(_ indicatorName: String!) -> Int32
 - (int) indicator:(NSString *) indicatorName;
 ```
 
-#### Discussion
+## Discussion
 
 Returns an indicator’s value.
 

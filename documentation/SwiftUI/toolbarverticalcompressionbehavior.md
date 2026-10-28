@@ -21,7 +21,7 @@ A behavior that determines how bars compress when the system places different ty
 struct ToolbarVerticalCompressionBehavior
 ```
 
-#### Overview
+## Overview
 
 Use this with the [`toolbarVerticalCompressionBehavior(_:)`](./view/toolbarverticalcompressionbehavior%28_%29.md) modifier to control which items compress first when space is limited.
 

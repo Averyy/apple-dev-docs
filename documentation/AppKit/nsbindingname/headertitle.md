@@ -19,7 +19,7 @@ static let headerTitle: NSBindingName
 extern NSBindingName NSHeaderTitleBinding;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [Cocoa Bindings](../cocoa-bindings.md).
 

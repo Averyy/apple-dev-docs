@@ -25,7 +25,7 @@ class func superclass() -> AnyClass?
 + (Class) superclass;
 ```
 
-#### Return Value
+## Return Value
 
 The class object for the receiver’s superclass.
 

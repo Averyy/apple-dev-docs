@@ -5,7 +5,7 @@
 
 Group combination of clips as a unit.
 
-#### Overview
+## Overview
 
 A compound clip media is a clip you construct out of audio or video clip components, and which you can reference as a unit. Use the `sequence` element to describe its top-level sequence.
 
@@ -28,7 +28,7 @@ The code example below shows a compound clip definition with two clips laid down
 
 ```
 
-##### Using Compound Clip
+### Using Compound Clip
 
 To use the compound clip media as a clip, add a `ref-clip` element that references the media in the timeline. Each `ref-clip` element uses audio and video from the compound clip media. Call out audio components from the compound clip by their roles and apply adjustments or effects. For information on configuring audio components in compound clips, see [Audio Components in Compound Clips](./audio-components-in-compound-clips.md).
 

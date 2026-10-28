@@ -25,11 +25,11 @@ func la_solve(_ matrix_system: la_object_t, _ obj_rhs: la_object_t) -> la_object
 extern la_object_tla_solve(la_object_t matrix_system, la_object_t obj_rhs);
 ```
 
-#### Return Value
+## Return Value
 
 A matrix of the solution(s) of the system of equations.
 
-#### Discussion
+## Discussion
 
 Solves a system of linear equations
 

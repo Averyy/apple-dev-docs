@@ -21,7 +21,7 @@ Performs an ordinal encoding on a single input.
 func applied(to input: Category?, eventHandler: EventHandler? = nil) throws -> Int
 ```
 
-#### Return Value
+## Return Value
 
 A ordinal encoded value.
 

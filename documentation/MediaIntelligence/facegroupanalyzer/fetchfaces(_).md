@@ -20,7 +20,7 @@ Returns the faces with the specified identifiers.
 final func fetchFaces(_ faceIDs: [FaceGroupAnalyzer.Face.ID]) throws -> some AsyncSequence<FaceGroupAnalyzer.Face, any Error>
 ```
 
-#### Return Value
+## Return Value
 
 An async sequence of matching [`FaceGroupAnalyzer.Face`](./face.md) values.
 

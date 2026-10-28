@@ -24,7 +24,7 @@ var isSharpnessSupported: Bool { get }
 @property (readonly, getter=isSharpnessSupported) BOOL sharpnessSupported;
 ```
 
-#### Discussion
+## Discussion
 
 If this value is `true`, you can adjust the amount of sharpness to apply to the image by setting [`sharpnessAmount`](./sharpnessamount.md).
 

@@ -22,7 +22,7 @@ func texturePixelsHigh() -> Int
 - (NSUInteger) texturePixelsHigh;
 ```
 
-#### Return Value
+## Return Value
 
 The height of the texture, expressed in pixels.
 

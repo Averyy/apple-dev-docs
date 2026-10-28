@@ -19,7 +19,7 @@ static func alarm(schedule: Alarm.Schedule? = nil, attributes: AlarmAttributes<M
 
 Available when `Metadata` conforms to `AlarmMetadata`.
 
-#### Discussion
+## Discussion
 
 At the scheduled time, based on the `schedule` parameter you supply, the alarm alerts.
 

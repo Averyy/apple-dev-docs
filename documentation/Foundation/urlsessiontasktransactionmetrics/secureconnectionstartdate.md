@@ -25,7 +25,7 @@ var secureConnectionStartDate: Date? { get }
 @property (copy, readonly, nullable) NSDate * secureConnectionStartDate;
 ```
 
-#### Discussion
+## Discussion
 
 This value is `nil` if an encrypted connection isn’t used, if a persistent connection is used, or if the resource is retrieved from local resources.
 

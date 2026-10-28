@@ -21,7 +21,7 @@ Creates a new mutable raw pointer from the given immutable raw pointer.
 init?(mutating other: UnsafeRawPointer?)
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to explicitly convert `other` to an `UnsafeMutableRawPointer` instance. This initializer creates a new pointer to the same address as `other` and performs no allocation or copying.
 

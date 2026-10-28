@@ -20,7 +20,7 @@ Adds Level of Detail configuration using screen area-based switching to an entit
 static func addByScreenArea(to entity: Entity, levels: [(entities: LevelOfDetailComponent.DetailLevel, minArea: Float)])
 ```
 
-#### Discussion
+## Discussion
 
 Each level pairs a set of entities with a minimum screen area threshold. Entities within a level are shown or hidden together. Thresholds must be in descending order and in the range [0.0, 1.0].
 

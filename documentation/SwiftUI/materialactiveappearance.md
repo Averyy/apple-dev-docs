@@ -21,7 +21,7 @@ The behavior for how materials appear active and inactive.
 struct MaterialActiveAppearance
 ```
 
-#### Overview
+## Overview
 
 On macOS, materials have active and inactive appearances that can reinforce the active appearance of the window they are in:
 

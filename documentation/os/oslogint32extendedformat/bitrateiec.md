@@ -21,7 +21,7 @@ A format that displays a 32-bit integer as an IEC bit rate.
 case bitrateIEC
 ```
 
-#### Discussion
+## Discussion
 
 Use this option to format the interpolated value as an IEC bit rate, such as `100 Kibps`. The following example applies the `bitrateIEC` formatter to the 32-bit integer value `102_400`:
 

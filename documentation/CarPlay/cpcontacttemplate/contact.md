@@ -21,7 +21,7 @@ var contact: CPContact { get set }
 @property (nonatomic, strong) CPContact * contact;
 ```
 
-#### Discussion
+## Discussion
 
 Assigning a new instance of [`CPContact`](../cpcontact.md) updates the template.
 

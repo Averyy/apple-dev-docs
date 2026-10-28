@@ -25,7 +25,7 @@ case batchRequestFailed
 CKErrorBatchRequestFailed
 ```
 
-#### Discussion
+## Discussion
 
 This error occurs when an operation attempts to save multiple items in a custom zone, but one of those items encounters an error. Because custom zones are atomic, the entire batch fails. The items that cause the problem have their own errors, and all other items in the batch have a [`CKError.Code.batchRequestFailed`](./batchrequestfailed.md) error to indicate that the system can’t save them.
 

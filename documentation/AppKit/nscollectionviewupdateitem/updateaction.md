@@ -19,7 +19,7 @@ var updateAction: NSCollectionView.UpdateAction { get }
 @property (readonly) NSCollectionUpdateAction updateAction;
 ```
 
-#### Discussion
+## Discussion
 
 For a list of relevant actions, see [`NSCollectionView.UpdateAction`](../nscollectionview/updateaction.md).
 

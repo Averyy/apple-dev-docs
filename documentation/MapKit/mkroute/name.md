@@ -25,7 +25,7 @@ var name: String { get }
 @property (nonatomic, readonly) NSString * name;
 ```
 
-#### Discussion
+## Discussion
 
 The framework localizes the string in this property according to the user’s language preferences. You can display this string to the user from your app’s user interface so that the user can distinguish one route from another.
 

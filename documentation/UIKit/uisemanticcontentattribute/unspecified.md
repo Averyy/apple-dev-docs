@@ -23,7 +23,7 @@ case unspecified
 UISemanticContentAttributeUnspecified
 ```
 
-#### Discussion
+## Discussion
 
 The view is flipped when switching between left-to-right and right-to-left layouts.
 

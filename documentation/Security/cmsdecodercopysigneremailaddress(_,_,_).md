@@ -19,11 +19,11 @@ func CMSDecoderCopySignerEmailAddress(_ cmsDecoder: CMSDecoder, _ signerIndex: I
 OSStatus CMSDecoderCopySignerEmailAddress(CMSDecoderRef cmsDecoder, size_t signerIndex, CFStringRef*signerEmailAddressOut);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md). Returns [`errSecParam`](./errsecparam.md) if the CMS message was not signed or if `signerIndex` is greater than the number of signers of the message minus one (`signerIndex > (numSigners – 1)`).
 
-#### Discussion
+## Discussion
 
 You cannot call this function until after you have called the [`CMSDecoderFinalizeMessage(_:)`](./cmsdecoderfinalizemessage%28_%29.md) function.
 

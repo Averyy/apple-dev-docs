@@ -25,11 +25,11 @@ init?(data: CFData)
 extern CGDataProviderRefCGDataProviderCreateWithCFData(CFDataRef data);
 ```
 
-#### Return Value
+## Return Value
 
 A new data provider. In Objective-C, you’re responsible for releasing this object using [`CGDataProviderRelease`](../cgdataproviderrelease.md).
 
-#### Discussion
+## Discussion
 
 You can use this function when you need to represent Core Graphics data as a CFData type. For example, you might create a CFData object when reading data from the pasteboard.
 

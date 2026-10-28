@@ -19,11 +19,11 @@ func SCNetworkServiceEstablishDefaultConfiguration(_ service: SCNetworkService) 
 Boolean SCNetworkServiceEstablishDefaultConfiguration(SCNetworkServiceRef service);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if the configuration was updated; `FALSE` if an error occurred.
 
-#### Discussion
+## Discussion
 
 The default configuration includes the addition of network protocols for the service (with default configuration options).
 

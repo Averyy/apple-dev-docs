@@ -19,7 +19,7 @@ var intValue: Int32 { get set }
 @property int intValue;
 ```
 
-#### Discussion
+## Discussion
 
 Use the [`integerValue`](./integervalue.md) property instead.
 

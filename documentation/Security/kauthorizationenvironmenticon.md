@@ -20,7 +20,7 @@ var kAuthorizationEnvironmentIcon: String { get }
 #define kAuthorizationEnvironmentIcon
 ```
 
-#### Discussion
+## Discussion
 
 The value should be a full path to an image compatible with the NSImage class.
 

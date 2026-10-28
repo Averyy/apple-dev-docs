@@ -5,13 +5,13 @@
 
 Leverage FaceTime infrastructure to create coordinated experiences users can share.
 
-#### Overview
+## Overview
 
 Use [Group Activities](../GroupActivities/GroupActivities.md) to bring your app’s users together to enjoy new and exciting shared experiences that are built atop [SharePlay](https://developer.apple.com/shareplay) and the FaceTime infrastructure. For example, a karaoke app might offer karaoke parties where several participants take part simultaneously from their own devices.
 
 Represent shareable activities by creating objects that conform to the [`GroupActivity`](../GroupActivities/groupactivity.md) protocol and, after a shared activity begins, use [`GroupSession`](../GroupActivities/groupsession.md) to synchronize that activity across participants’ devices.
 
-##### Add the Group Activities capability to your target
+### Add the Group Activities capability to your target
 
 Follow the steps in [Add a capability](./adding-capabilities-to-your-app.md#Add-a-capability) to add the capability to your app’s target, making sure you select the Group Activities capability from Xcode’s Capabilities library. This capability is available on all platforms except watchOS, and you must add it to an app target — Group Activities aren’t available in widgets, extensions, or App Clips.
 

@@ -21,7 +21,7 @@ Returns a modified attribute container as part of building a chain of attributes
 static subscript<K>(dynamicMember keyPath: KeyPath<AttributeDynamicLookup, K>) -> AttributeContainer.Builder<K> where K : AttributedStringKey { get }
 ```
 
-#### Discussion
+## Discussion
 
 This method returns an [`AttributeContainer.Builder`](./builder.md), which allows you to chain multiple attributes in a single call, like this:
 

@@ -19,7 +19,7 @@ A content configuration for a content-unavailable view.
 struct UIContentUnavailableConfiguration
 ```
 
-#### Overview
+## Overview
 
 A content-unavailable configuration is a composable description of a view that indicates your app can’t display content. Using a content-unavailable configuration, you can obtain system default styling for a variety of different empty states. Fill the configuration with placeholder content, and then assign it to a view controller’s [`contentUnavailableConfiguration`](./uiviewcontroller/contentunavailableconfiguration-4b95e.md), or to a [`UIContentUnavailableView`](./uicontentunavailableview.md).
 

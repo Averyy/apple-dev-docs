@@ -19,7 +19,7 @@ func removeSplitViewItem(_ splitViewItem: NSSplitViewItem)
 - (void) removeSplitViewItem:(NSSplitViewItem *) splitViewItem;
 ```
 
-#### Discussion
+## Discussion
 
 After you remove a split view item, the system adjusts the layout of the split view accordingly.
 

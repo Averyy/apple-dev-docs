@@ -25,11 +25,11 @@ func CFRunLoopSourceCreate(_ allocator: CFAllocator!, _ order: CFIndex, _ contex
 extern CFRunLoopSourceRefCFRunLoopSourceCreate(CFAllocatorRef allocator, CFIndex order, CFRunLoopSourceContext *context);
 ```
 
-#### Return Value
+## Return Value
 
 The new CFRunLoopSource object. You are responsible for releasing this object.
 
-#### Discussion
+## Discussion
 
 The run loop source is not automatically added to a run loop. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 

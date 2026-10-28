@@ -5,11 +5,11 @@
 
 Set up a scene hierarchy for accurate physics simulations.
 
-#### Overview
+## Overview
 
 RealityKit provides a physics engine optimized to simulate a wide range of object sizes. Most RealityKit scenes contain objects within this range, so they simulate correctly without any extra work. However, objects smaller than one cubic centimeter fall outside the optimal size range. You need to set up scenes containing those tiny objects differently to ensure that they simulate realistically.
 
-##### Use the default hierarchy for most scenes
+### Use the default hierarchy for most scenes
 
 Set up most RealityKit scenes — those without very tiny objects — so that you’ve parented all entities to a single anchor entity that acts as both the root of the visible scene and the origin of the physics simulation. With this setup, you can rotate and move the anchor in the scene without affecting the physics simulation because RealityKit applies anchor transforms after calculating the physics simulation.
 
@@ -17,7 +17,7 @@ Set up most RealityKit scenes — those without very tiny objects — so that yo
 
 When using this type of hierarchy, you can move, rotate, and scale objects after placing them in the [`ARView`](./arview.md), and everything functions correctly, even if you make some objects smaller than a cubic centimeter after placing them in your scene.
 
-##### Create a hierarchy for simulating tiny objects
+### Create a hierarchy for simulating tiny objects
 
 Scenes that are authored with tiny objects, however, may not simulate optimally. To compensate, set up those scenes with a hierarchy that separates the scene root from the physics origin so you can change the scale of the physics origin independently of the scene.
 

@@ -15,11 +15,11 @@ Determine if a forced unmount is in progress.
 int vfs_isforce(mount_t mp);
 ```
 
-#### Return Value
+## Return Value
 
 Nonzero if a request has been made to forcibly unmount, else 0.
 
-#### Discussion
+## Discussion
 
 A forced unmount invalidates open files.
 

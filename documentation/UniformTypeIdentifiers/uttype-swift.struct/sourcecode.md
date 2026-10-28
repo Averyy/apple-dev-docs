@@ -21,7 +21,7 @@ A base type that represents source code of any programming language.
 static var sourceCode: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.source-code`.
 

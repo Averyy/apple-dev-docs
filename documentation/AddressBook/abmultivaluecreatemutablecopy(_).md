@@ -32,7 +32,7 @@ func ABMultiValueCreateMutableCopy(_ multiValue: ABMultiValueRef!) -> Unmanaged<
 extern ABMutableMultiValueRefABMultiValueCreateMutableCopy(ABMultiValueRef multiValue);
 ```
 
-#### Return Value
+## Return Value
 
 A mutable copy of `multiValue`.You are responsible for releasing this object.
 

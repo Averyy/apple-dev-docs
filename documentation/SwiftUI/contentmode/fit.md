@@ -25,7 +25,7 @@ case fit
 
 - [Fitting images into available space](../fitting-images-into-available-space.md)
 
-#### Discussion
+## Discussion
 
 This mode preserves the content’s aspect ratio. If the content doesn’t have the same aspect ratio as the available space, the content becomes the same size as the available space on one axis and leaves empty space on the other.
 

@@ -5,7 +5,7 @@
 
 Control the movement of virtual objects with forces.
 
-#### Overview
+## Overview
 
 Create various types of force effects, such as vortex, drag, and turbulence. Add a force effect to a scene by creating a structure that adopts [`ForceEffectProtocol`](./forceeffectprotocol.md), and attaching it to an entity with a [`ForceEffectComponent`](./forceeffectcomponent.md).
 

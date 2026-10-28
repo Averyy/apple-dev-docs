@@ -22,7 +22,7 @@ nonisolated
 struct TitleAndIconLabelStyle
 ```
 
-#### Overview
+## Overview
 
 You can also use [`titleAndIcon`](./labelstyle/titleandicon.md) to construct this style.
 

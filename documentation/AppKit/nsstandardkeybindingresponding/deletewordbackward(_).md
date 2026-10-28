@@ -19,7 +19,7 @@ optional func deleteWordBackward(_ sender: Any?)
 - (void) deleteWordBackward:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 If the insertion point is in the middle of a word, this method deletes only the portion of the word preceding the insertion point.
 

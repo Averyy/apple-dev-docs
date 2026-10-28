@@ -24,7 +24,7 @@ case singlePageContinuous
 kPDFDisplaySinglePageContinuous
 ```
 
-#### Discussion
+## Discussion
 
 Vertical scrolling applies to the entire document.
 

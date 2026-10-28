@@ -21,11 +21,11 @@ Returns the position immediately after the given index.
 func index(after i: Substring.UTF16View.Index) -> Substring.UTF16View.Index
 ```
 
-#### Return Value
+## Return Value
 
 The index value immediately after `i`.
 
-#### Discussion
+## Discussion
 
 The successor of an index must be well defined. For an index `i` into a collection `c`, calling `c.index(after: i)` returns the same index every time.
 

@@ -20,7 +20,7 @@ A request that detects a human hand pose.
 struct DetectHumanHandPoseRequest
 ```
 
-#### Overview
+## Overview
 
 This type of request produces a collection of [`HumanHandPoseObservation`](./humanhandposeobservation.md) objects that describe the hand pose.
 

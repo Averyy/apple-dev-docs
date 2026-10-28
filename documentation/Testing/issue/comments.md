@@ -23,7 +23,7 @@ Any comments provided by the developer and associated with this issue.
 var comments: [Comment]
 ```
 
-#### Discussion
+## Discussion
 
 If no comment was supplied when the issue occurred, the value of this property is the empty array.
 

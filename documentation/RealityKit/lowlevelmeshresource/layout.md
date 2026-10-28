@@ -18,7 +18,7 @@ An object that describes a set of attributes that share a buffer index, offset, 
 struct Layout
 ```
 
-#### Overview
+## Overview
 
 If you interleave your data (that is, represent it with a structure), use one `Layout` object where `bufferStride` equals `MemoryLayout<Type>.stride`. If you store attributes separately, use one `Layout` per attribute.
 

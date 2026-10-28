@@ -4,7 +4,7 @@
 
 Learn about updates, bug fixes, and API changes for MapKit JS.
 
-#### Overview
+## Overview
 
 MapKit JS Release Notes announce new features, updates, and deprecations to be aware of when upgrading from a previous version so you can plan for changes and make adjustments as necessary. This document links to all available release notes for previously released versions of MapKit JS.
 

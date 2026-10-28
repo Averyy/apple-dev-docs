@@ -20,7 +20,7 @@ Finishes analysis after an audio input sequence has been terminated and fully co
 final func finalizeAndFinishThroughEndOfInput() async throws
 ```
 
-#### Discussion
+## Discussion
 
 This method waits until the input sequence has been terminated and fully consumed, then finalizes like [`finalize(through:)`](./finalize%28through%29.md) and finishes analysis like [`finish(after:)`](./finish%28after%29.md).
 

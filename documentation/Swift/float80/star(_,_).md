@@ -15,7 +15,7 @@ Multiplies two values and produces their product, rounding to a representable va
 static func * (lhs: Float80, rhs: Float80) -> Float80
 ```
 
-#### Discussion
+## Discussion
 
 The multiplication operator (`*`) calculates the product of its two arguments. For example:
 

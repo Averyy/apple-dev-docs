@@ -5,11 +5,11 @@
 
 A Boolean value that determines if a behavior executes exclusively.
 
-#### Overview
+## Overview
 
 The default value is `false`, which indicates that other behaviors’ actions run concurrently with the behavior. If the value is `true`, other exclusive behaviors stop performing actions when the runtime actives a trigger in the behavior.
 
-##### Declaration
+### Declaration
 
 ```other
 uniform bool exclusive = false

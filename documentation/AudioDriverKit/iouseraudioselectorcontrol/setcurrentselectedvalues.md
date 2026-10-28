@@ -15,11 +15,11 @@ Sets the current selections of the selector.
 kern_return_t SetCurrentSelectedValues(const IOUserAudioSelectorValue *in_values, size_t in_num_values);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../../DriverKit/error-codes.md).
 
-#### Discussion
+## Discussion
 
 If successful, changing the control’s selected values sends a notification to the host to update the object state.
 

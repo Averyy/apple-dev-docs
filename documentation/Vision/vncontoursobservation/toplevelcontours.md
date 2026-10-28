@@ -24,7 +24,7 @@ var topLevelContours: [VNContour] { get }
 @property (readonly) NSArray<VNContour *> * topLevelContours;
 ```
 
-#### Discussion
+## Discussion
 
 This array constitutes the top of the contour hierarchy. You can iterate over each [`VNContour`](../vncontour.md) instance to determine its children.
 

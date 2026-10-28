@@ -15,7 +15,7 @@ The range of visible characters in the document.
 @property NSRange accessibilityVisibleCharacterRange;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to store the range for entire lines. Characters that are horizontally clipped are included in this range.
 

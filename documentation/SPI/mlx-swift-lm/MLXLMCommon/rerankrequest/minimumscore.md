@@ -17,7 +17,7 @@ Optional inclusive lower score bound.
 var minimumScore: Double?
 ```
 
-#### Discussion
+## Discussion
 
 Thresholds are supported only by rerankers with a declared bounded score range.
 

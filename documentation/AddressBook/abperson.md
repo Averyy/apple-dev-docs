@@ -19,7 +19,7 @@ class ABPerson
 @interface ABPerson : ABRecord
 ```
 
-#### Overview
+## Overview
 
 An `ABPerson` object corresponds to a single person record in the database. A person object contains the person’s name, company, address, email addresses, and phone numbers.
 

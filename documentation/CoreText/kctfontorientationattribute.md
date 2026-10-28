@@ -25,7 +25,7 @@ let kCTFontOrientationAttribute: CFString
 extern CFStringRef const kCTFontOrientationAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 The value associated with this key is an integer represented as a [`CFNumber`](../CoreFoundation/cfnumber.md) object containing one of the constants in [`CTFontOrientation`](./ctfontorientation.md). If you want to receive vertical metrics from a font for vertical rendering, specify [`kCTFontVerticalOrientation`](./ctfontorientation/kctfontverticalorientation.md). If unspecified, the font uses its native orientation.
 

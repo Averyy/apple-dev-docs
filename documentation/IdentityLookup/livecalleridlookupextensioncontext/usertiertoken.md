@@ -23,7 +23,7 @@ let userTierToken: Data
 
 - [Getting up-to-date calling and blocking information for your app](../getting-up-to-date-calling-and-blocking-information-for-your-app.md)
 
-#### Discussion
+## Discussion
 
 The system sends this token to the Privacy Pass token issuer, which can verify whether it belongs to a valid user of your app. It then issues a Privacy Pass token.
 

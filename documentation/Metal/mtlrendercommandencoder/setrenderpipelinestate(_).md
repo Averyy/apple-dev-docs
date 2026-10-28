@@ -25,7 +25,7 @@ func setRenderPipelineState(_ pipelineState: any MTLRenderPipelineState)
 - (void) setRenderPipelineState:(id<MTLRenderPipelineState>) pipelineState;
 ```
 
-#### Discussion
+## Discussion
 
 Set the render pass’s render pipeline state before encoding any draw or tile commands by calling this method because the default pipeline state is `nil`.
 

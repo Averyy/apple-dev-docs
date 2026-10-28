@@ -25,7 +25,7 @@ var simdEulerAngles: simd_float3 { get set }
 @property (nonatomic) simd_float3 simdEulerAngles;
 ```
 
-#### Discussion
+## Discussion
 
 The order of components in this vector matches the axes of rotation:
 

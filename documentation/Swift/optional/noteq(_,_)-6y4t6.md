@@ -21,7 +21,7 @@ Returns a Boolean value indicating whether the right-hand-side argument is not `
 static func != (lhs: _OptionalNilComparisonType, rhs: borrowing Wrapped?) -> Bool
 ```
 
-#### Discussion
+## Discussion
 
 You can use this not-equal-to operator (`!=`) to test whether an optional instance is not `nil` even when the wrapped value’s type does not conform to the `Equatable` protocol.
 

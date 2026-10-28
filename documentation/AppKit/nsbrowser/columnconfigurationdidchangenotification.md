@@ -19,7 +19,7 @@ class let columnConfigurationDidChangeNotification: NSNotification.Name
 extern NSNotificationName NSBrowserColumnConfigurationDidChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the browser whose column sizes need to be made persistent. This notification does not contain a `userInfo` dictionary. If the user resizes more than one column, a single notification is posted when the user is finished resizing.
 

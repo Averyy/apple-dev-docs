@@ -22,7 +22,7 @@ class NEPrivateLTENetwork
 @interface NEPrivateLTENetwork : NSObject
 ```
 
-#### Overview
+## Overview
 
 Populate your manager’s [`matchPrivateLTENetworks`](./neapppushmanager/matchprivateltenetworks.md) with an array of objects of this type. The system starts the provider when the device’s current private LTE provider matches the properties of any member of the array.
 

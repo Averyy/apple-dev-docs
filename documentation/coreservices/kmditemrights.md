@@ -19,7 +19,7 @@ let kMDItemRights: CFString!
 const CFStringRef kMDItemRights;
 ```
 
-#### Discussion
+## Discussion
 
 Contains a rights management statement for the resource, or reference a service providing such information. Rights information often encompasses Intellectual Property Rights (IPR), Copyright, and various Property Rights. 
 

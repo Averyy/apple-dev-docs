@@ -15,7 +15,7 @@ The structure for describing a high-speed capable USB device.
 typedef struct IOUSBDeviceQualifierDescriptor IOUSBDeviceQualifierDescriptor;
 ```
 
-#### Discussion
+## Discussion
 
 For information about this descriptor, see USB 2.0, 9.6.2.
 

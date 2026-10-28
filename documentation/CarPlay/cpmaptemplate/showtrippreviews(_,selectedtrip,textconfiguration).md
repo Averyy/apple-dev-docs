@@ -21,7 +21,7 @@ func showTripPreviews(_ tripPreviews: [CPTrip], selectedTrip: CPTrip?, textConfi
 - (void) showTripPreviews:(NSArray<CPTrip *> *) tripPreviews selectedTrip:(CPTrip *) selectedTrip textConfiguration:(CPTripPreviewTextConfiguration *) textConfiguration;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to display upcoming trips or multiple trip options, such as search results. Trip previews can appear over an active navigation session. Provide an array of up to twelve [`CPTrip`](../cptrip.md) objects to preview. If the array contains more objects, CarPlay displays only the first twelve.
 

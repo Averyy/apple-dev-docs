@@ -21,7 +21,7 @@ Flag indicating that no code signing validation errors have been found for the p
 static let isDynamicallyValid: ProcessCodeSigningFlags.ValueSet
 ```
 
-#### Discussion
+## Discussion
 
 This is equivalent to `CS_VALID` in C APIs.
 

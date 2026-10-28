@@ -24,7 +24,7 @@ A backpressure strategy using a high and low watermark to suspend and resume pro
 static func watermark(low: Int, high: Int, waterLevelForElement: @escaping @Sendable (borrowing Element) -> Int) -> MultiProducerSingleConsumerAsyncChannel<Element, Failure>.Source.BackpressureStrategy
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**: `waterLevelForElement` will be called during a lock on each element when it is written into the source and when it is consumed from the channel, so it must be side-effect free and at best constant in time.
 

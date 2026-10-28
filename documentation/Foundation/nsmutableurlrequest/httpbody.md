@@ -25,7 +25,7 @@ var httpBody: Data? { get set }
 @property (copy, nullable) NSData * HTTPBody;
 ```
 
-#### Discussion
+## Discussion
 
 The request body is sent as the message body of the request, as in an HTTP `POST` request. Setting the HTTP body data clears any input stream in [`httpBodyStream`](./httpbodystream.md). These values are mutually exclusive.
 

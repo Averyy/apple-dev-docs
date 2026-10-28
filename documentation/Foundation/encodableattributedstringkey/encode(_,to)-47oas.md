@@ -21,7 +21,7 @@ static func encode(_ value: Self.Value, to encoder: any Encoder) throws
 
 Available when `Value` conforms to `Encodable`.
 
-#### Discussion
+## Discussion
 
 The default implementation calls down to the value’s [`encode(to:)`](../../Swift/encodable/encode%28to%29.md) method.
 

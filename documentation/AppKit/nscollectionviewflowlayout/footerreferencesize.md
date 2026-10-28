@@ -19,7 +19,7 @@ var footerReferenceSize: NSSize { get set }
 @property NSSize footerReferenceSize;
 ```
 
-#### Discussion
+## Discussion
 
 If the delegate does not implement the [`collectionView(_:layout:referenceSizeForFooterInSection:)`](../nscollectionviewdelegateflowlayout/collectionview%28_,layout,referencesizeforfooterinsection%29.md) method, the flow layout object uses the value of this property as the footer size.
 

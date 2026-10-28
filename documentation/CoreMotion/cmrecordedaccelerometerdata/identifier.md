@@ -23,7 +23,7 @@ var identifier: UInt64 { get }
 @property (readonly) uint64_t identifier;
 ```
 
-#### Discussion
+## Discussion
 
 Accelerometer data is recorded in batches, which are assigned a unique identifier. This property contains the identifier of the batch in which this particular sample was recorded.
 

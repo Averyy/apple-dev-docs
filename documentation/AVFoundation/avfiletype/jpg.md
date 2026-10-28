@@ -25,7 +25,7 @@ static let jpg: AVFileType
 extern AVFileType const AVFileTypeJPEG;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this UTI is `public.jpeg`. File of this type have a `.jpg` or `.jpeg` extension.
 

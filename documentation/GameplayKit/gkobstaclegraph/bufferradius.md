@@ -24,7 +24,7 @@ var bufferRadius: Float { get }
 @property (nonatomic, readonly) float bufferRadius;
 ```
 
-#### Discussion
+## Discussion
 
 You set this property when creating a graph with the [`init(obstacles:bufferRadius:)`](./init%28obstacles,bufferradius%29.md) initializer. Use the `bufferRadius` initializer parameter to take the size of potential travelers into account when determining navigability. After initialization, you can use this property to examine the buffer radius the graph was created with—for example, to draw a debugging overlay in your game UI that indicates passable and impassable areas.
 

@@ -12,11 +12,11 @@ SCSIServiceResponse ExecuteParallelTask (
  SCSIParallelTaskIdentifierparallelRequest );
 ```
 
-#### Return Value
+## Return Value
 
 is an appropriate SCSIServiceResponse which are defined in the file <IOKit/scsi/SCSITask.h>.
 
-#### Overview
+## Overview
 
 The ExecuteParallelTask call is made by the client to submit a SCSIParallelTask for execution.
 

@@ -20,7 +20,7 @@ Creates a shader graph with the given name, inputs, and outputs.
 init(named name: String, inputs: [ShaderGraph.NodeDefinition.Input], outputs: [ShaderGraph.NodeDefinition.Output]) throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: If any input or output name is empty or duplicated.
 

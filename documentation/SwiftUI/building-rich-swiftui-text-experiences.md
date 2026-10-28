@@ -12,7 +12,7 @@ Build an editor for formatted text using SwiftUI text editor views and attribute
 - Mac Catalyst 26.0+
 - Xcode 26.0+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC25 session 280: [Code-along: Cook up a rich text experience in SwiftUI with AttributedString](https://developer.apple.com/wwdc25/280/).
 
@@ -20,7 +20,7 @@ You can follow along with the code written in the WWDC25 session, learning how t
 
 After the code-along, you can learn more about how to persist rich text using SwiftData, and how to export rich text documents using the `Transferable` protocol.
 
-##### Configure the sample code project
+### Configure the sample code project
 
 To configure the sample code project, do the following in Xcode:
 

@@ -21,11 +21,11 @@ Returns a filter that applies a saturation adjustment.
 static func saturation(_ amount: Double) -> GraphicsContext.Filter
 ```
 
-#### Return Value
+## Return Value
 
 A filter that applies a saturation adjustment.
 
-#### Discussion
+## Discussion
 
 This filter is equivalent to the `saturate` filter primitive defined by the Scalable Vector Graphics (SVG) specification.
 

@@ -24,7 +24,7 @@ optional func anticipateRendering(using renderHint: AVVideoCompositionRenderHint
 - (void) anticipateRenderingUsingHint:(AVVideoCompositionRenderHint *) renderHint;
 ```
 
-#### Discussion
+## Discussion
 
 In this method, the compositor can load composition resources, such as overlay images, that will be needed in the anticipated rendering time range.
 

@@ -16,7 +16,7 @@ A notification that posts after a racing wheel controller disconnects from the d
 static let GCRacingWheelDidDisconnect: NSNotification.Name
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the [`GCRacingWheel`](../../../GameController/gcracingwheel.md) object that disconnects from the device.
 

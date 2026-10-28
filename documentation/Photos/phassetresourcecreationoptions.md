@@ -24,7 +24,7 @@ class PHAssetResourceCreationOptions
 @interface PHAssetResourceCreationOptions : NSObject
 ```
 
-#### Overview
+## Overview
 
 You use this class when creating an asset for addition to the Photos library with a [`PHAssetCreationRequest`](./phassetcreationrequest.md) object.
 

@@ -21,7 +21,7 @@ Returns the position of the run immediately before a run indicated by an index.
 func index(beforeRun i: AttributedString.Index) -> AttributedString.Index
 ```
 
-#### Return Value
+## Return Value
 
 The position of the first run immediately before the beginning of the `i`-th run.
 

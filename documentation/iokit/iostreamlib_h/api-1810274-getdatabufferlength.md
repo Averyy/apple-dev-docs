@@ -13,7 +13,7 @@ IOByteCount ( *GetDataBufferLength)(
    IOStreamBufferID bufferID );
 ```
 
-#### Return Value
+## Return Value
 
 The length in bytes of the data buffer, or 0 if there is no data buffer.
 

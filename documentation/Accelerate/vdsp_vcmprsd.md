@@ -21,7 +21,7 @@ Generates a compressed copy of the specified double-precision vector using the n
 extern void vDSP_vcmprsD(const double *__A, vDSP_Stride __IA, const double *__B, vDSP_Stride __IB, double *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 The following code shows an example of compressing the values in `source` using the nonzero values in `gatingVector`:
 

@@ -23,7 +23,7 @@ var rectOfInterest: CGRect { get set }
 @property (nonatomic) CGRect rectOfInterest;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is a [`CGRect`](../../CoreFoundation/cgrect.md) value that determines the object’s rectangle of interest for each frame of video.
 

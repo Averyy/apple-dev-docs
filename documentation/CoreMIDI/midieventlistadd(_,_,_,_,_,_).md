@@ -25,11 +25,11 @@ func MIDIEventListAdd(_ evtlist: UnsafeMutablePointer<MIDIEventList>, _ listSize
 extern MIDIEventPacket *MIDIEventListAdd(MIDIEventList *evtlist, ByteCount listSize, MIDIEventPacket *curPacket, MIDITimeStamp time, ByteCount wordCount, const UInt32 *words);
 ```
 
-#### Return Value
+## Return Value
 
 A packet pointer to pass as the `curPacket` argument in a subsequent call to this function, or `NULL` if there wasn’t room in the packet for the event.
 
-#### Discussion
+## Discussion
 
 The maximum size of an event list is 65,536 bytes. Send large SysEx messages in smaller event lists.
 

@@ -20,7 +20,7 @@ var sendPort: Port? { get }
 @property (retain, readonly, nullable) NSPort * sendPort;
 ```
 
-#### Return Value
+## Return Value
 
 For an outgoing message, the port the receiver will send itself through when it receives a [`send(before:)`](./send%28before%29.md) message. For an incoming message, the port replies to the receiver should be sent through.
 

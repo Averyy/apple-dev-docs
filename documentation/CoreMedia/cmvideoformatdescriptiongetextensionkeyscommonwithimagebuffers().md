@@ -25,7 +25,7 @@ func CMVideoFormatDescriptionGetExtensionKeysCommonWithImageBuffers() -> CFArray
 extern CFArrayRefCMVideoFormatDescriptionGetExtensionKeysCommonWithImageBuffers();
 ```
 
-#### Discussion
+## Discussion
 
 When specifying a `CMFormatDescription` for a `CMSampleBuffer`, the format description must be consistent with formatting information attached to the `CVImageBuffer`. The width, height, and codecType must match (for `CVPixelBuffers` the codec type is given by `CVPixelBufferGetPixelFormatType`(pixelBuffer); for other `CVImageBuffers`, the codecType must be 0). The format description extensions must match the image buffer attachments for all the keys in the list returned by this function (if absent in either they must be absent in both). Currently, the list is:
 

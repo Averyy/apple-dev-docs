@@ -23,7 +23,7 @@ case linkActivated
 WKNavigationTypeLinkActivated
 ```
 
-#### Discussion
+## Discussion
 
 This action occurs when the user activates a link with an `href` attribute.
 

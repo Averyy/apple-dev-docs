@@ -24,11 +24,11 @@ class func success(with resolvedRelativeSetting: INRelativeSetting) -> Self
 + (instancetype) successWithResolvedRelativeSetting:(INRelativeSetting) resolvedRelativeSetting;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INRelativeSettingResolutionResult`](../inrelativesettingresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object when you’re able to modify a setting using the specified value.
 

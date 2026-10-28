@@ -17,7 +17,7 @@ A message for the barcode.
 let barcodeMessage: String?
 ```
 
-#### Discussion
+## Discussion
 
 The value is the `message` field of the barcode dictionary of the selected pass.
 

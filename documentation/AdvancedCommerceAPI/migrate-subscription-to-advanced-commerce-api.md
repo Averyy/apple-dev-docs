@@ -15,7 +15,7 @@ Migrate a subscription that a customer purchased through Apple In-App Purchase t
 - [Advanced Commerce API changelog](./changelog.md)
 - [Identifying rate limits for Advanced Commerce APIs](./ratelimits.md)
 
-#### Discussion
+## Discussion
 
 > **Note**: You can use the Advanced Commerce API and the StoreKit [Apple In-App Purchase](../StoreKit/in-app-purchase.md) APIs in the same app. Both APIs use the App Store commerce system, including the same signed JWS transactions and JWS renewal info. For products that you offer using the Apple In-App Purchase API, you set up product identifiers in App Store Connect. For products that you offer using the Advanced Commerce API, you host and manage your own catalog of SKUs and add product details dynamically at runtime.
 

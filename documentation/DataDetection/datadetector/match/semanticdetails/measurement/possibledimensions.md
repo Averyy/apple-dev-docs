@@ -21,7 +21,7 @@ An array of dimensions someone can consider for use in a measurement.
 let possibleDimensions: [Dimension]
 ```
 
-#### Discussion
+## Discussion
 
 There’s typically only one measurement, unless the original string is ambiguous and open to interpretation in more than one way. For example, a measurement of “10 degrees” is ambiguous without additional context.
 

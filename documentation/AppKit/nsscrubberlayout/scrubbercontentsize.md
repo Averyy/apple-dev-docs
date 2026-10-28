@@ -19,7 +19,7 @@ var scrubberContentSize: NSSize { get }
 @property (readonly) NSSize scrubberContentSize;
 ```
 
-#### Discussion
+## Discussion
 
 The base implementation returns [`NSZeroSize`](../../Foundation/nszerosize.md).
 

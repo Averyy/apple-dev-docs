@@ -30,7 +30,7 @@ func sign(_ signData: Data, using secureElementPass: PKSecureElementPass) async 
 - (void) signData:(NSData *) signData withSecureElementPass:(PKSecureElementPass *) secureElementPass completion:(void (^)(NSData *signedData, NSData *signature, NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  The method is available only to developers who work with Apple to enable this functionality.
 

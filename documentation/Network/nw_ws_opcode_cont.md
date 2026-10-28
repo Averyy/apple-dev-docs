@@ -25,7 +25,7 @@ var nw_ws_opcode_cont: nw_ws_opcode_t { get }
 nw_ws_opcode_cont
 ```
 
-#### Discussion
+## Discussion
 
 Continuations are handled automatically, and should not be manually sent.
 

@@ -17,7 +17,7 @@ Returns an electricity venue for the given venue identifier.
 static func venue(for id: UUID) async throws -> EnergyVenue
 ```
 
-#### Discussion
+## Discussion
 
 This method throws [`EnergyKitError.venueUnavailable`](../energykiterror/venueunavailable.md) if the framework can’t provide the requested venue.
 

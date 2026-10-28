@@ -23,7 +23,7 @@ var editedMask: NSTextStorage.EditActions { get }
 @property (nonatomic, readonly) NSTextStorageEditActions editedMask;
 ```
 
-#### Discussion
+## Discussion
 
 This property indicates pending changes for attributes, characters, or both. Use the C bitwise AND operator to test the value against the [`editedAttributes`](./editactions/editedattributes.md) or [`editedCharacters`](./editactions/editedcharacters.md) constants; testing for equality fails if you add additional mask flags later. The text storage object’s associated delegate and layout managers can use this information to determine the nature of edits in their respective notification methods.
 

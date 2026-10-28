@@ -19,11 +19,11 @@ optional func rects(forCharacterRange range: NSRange) -> [NSValue]?
 - (NSArray<NSValue *> *) rectsForCharacterRange:(NSRange) range;
 ```
 
-#### Return Value
+## Return Value
 
 An array containing the rectangles containing the located text in the content view object’s coordinate system and return that array. The rectangles are return wrapped as `NSValue` objects.
 
-#### Discussion
+## Discussion
 
 The text finder uses this method to determine the location to display the find indicator.
 

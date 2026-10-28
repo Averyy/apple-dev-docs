@@ -25,11 +25,11 @@ func UTTypeCopyPreferredTagWithClass(_ inUTI: CFString, _ inTagClass: CFString) 
 CFStringRef UTTypeCopyPreferredTagWithClass(CFStringRef inUTI, CFStringRef inTagClass);
 ```
 
-#### Return Value
+## Return Value
 
 An array of tags (as CFStrings), or `NULL` if there was no translation available to convert the uniform type identifier to the specified class.
 
-#### Discussion
+## Discussion
 
 If the type declaration included more than one tag with the specified class, the first tag in the declared tag array is the preferred tag.
 

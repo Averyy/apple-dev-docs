@@ -21,7 +21,7 @@ Returns a new archive byte stream instance mapped to an object that conforms to 
 static func customStream<C>(instance: C) -> ArchiveByteStream? where C : AnyObject, C : ArchiveByteStreamProtocol
 ```
 
-#### Return Value
+## Return Value
 
 A new archive byte stream.
 

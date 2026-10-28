@@ -19,7 +19,7 @@ func replaceCurrentItem(with item: WKAudioFilePlayerItem?)
 - (void) replaceCurrentItemWithPlayerItem:(WKAudioFilePlayerItem *) item;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation of this method does nothing. Subclasses can override it to implement support for swapping out the current player item for a new one.
 

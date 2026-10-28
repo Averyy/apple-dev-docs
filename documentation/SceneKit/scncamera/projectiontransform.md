@@ -25,7 +25,7 @@ var projectionTransform: SCNMatrix4 { get set }
 @property (nonatomic) SCNMatrix4 projectionTransform;
 ```
 
-#### Discussion
+## Discussion
 
 This transformation expresses the combination of all the camera’s geometric properties: projection type (perspective or orthographic), field of view, depth limits, and orthographic scale (if applicable). SceneKit uses this transformation to convert points in the camera node’s coordinate space to the renderer’s 2D space when rendering and processing events.
 

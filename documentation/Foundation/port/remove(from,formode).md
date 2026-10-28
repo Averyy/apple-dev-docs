@@ -25,7 +25,7 @@ func remove(from runLoop: RunLoop, forMode mode: RunLoop.Mode)
 - (void) removeFromRunLoop:(NSRunLoop *) runLoop forMode:(NSRunLoopMode) mode;
 ```
 
-#### Discussion
+## Discussion
 
 This method should not be called directly.
 

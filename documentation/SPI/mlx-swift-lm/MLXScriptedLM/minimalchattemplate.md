@@ -17,7 +17,7 @@ A minimal one-marker-per-role template for mechanics tests. Not a real model fam
 struct MinimalChatTemplate
 ```
 
-#### Overview
+## Overview
 
 ```
 <|tools|>[...]<|end|>          only when tools are present

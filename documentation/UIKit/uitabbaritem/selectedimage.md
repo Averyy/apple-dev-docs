@@ -23,7 +23,7 @@ var selectedImage: UIImage? { get set }
 @property (nonatomic, strong, nullable) UIImage * selectedImage;
 ```
 
-#### Discussion
+## Discussion
 
 If `nil`, the item uses the value in [`image`](../uibaritem/image.md) instead. The item creates the images it displays from the alpha values in its source images. To prevent system tinting, use images with the [`UIImage.RenderingMode.alwaysOriginal`](../uiimage/renderingmode-swift.enum/alwaysoriginal.md) rendering mode. The item clips any image that’s larger than its bounds.
 

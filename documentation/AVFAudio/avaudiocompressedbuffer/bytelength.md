@@ -25,7 +25,7 @@ var byteLength: UInt32 { get set }
 @property (nonatomic) uint32_t byteLength;
 ```
 
-#### Discussion
+## Discussion
 
 You can change this value as part of an operation that modifies the contents.
 

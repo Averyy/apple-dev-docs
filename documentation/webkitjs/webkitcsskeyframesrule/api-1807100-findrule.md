@@ -11,7 +11,7 @@ Returns the keyframe rule for the specified selector.
 WebKitCSSKeyframeRule findRule (in DOMString key);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the keyframe rule corresponding to the given selector if it exists.
 

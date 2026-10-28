@@ -24,7 +24,7 @@ var sunElevation: Float { get set }
 @property (nonatomic, assign) float sunElevation;
 ```
 
-#### Discussion
+## Discussion
 
 An elevation of `1.0` places the sun at the zenith (the center of the top face of the cube texture), a value of `0.0` places the sun at the nadir (the center of the bottom face), and a value of `0.5` places the sun on the horizon. The azimuth angle of the sun is fixed; to control the horizontal position of the sun relative to scene content, rotate the scene element responsible for displaying the sky cube texture.
 

@@ -15,15 +15,15 @@
 extern OSStatus AudioConverterFillBuffer(AudioConverterRef inAudioConverter, AudioConverterInputDataProc inInputDataProc, void *inInputDataProcUserData, UInt32 *ioOutputDataSize, void *outOutputData);
 ```
 
-#### Return Value
+## Return Value
 
 A  result code.
 
-#### Discussion
+## Discussion
 
 Converts audio data supplied by a callback function.
 
-##### Special Considerations
+### Special Considerations
 
 This function is deprecated. Use the [`AudioConverterFillComplexBuffer(_:_:_:_:_:_:)`](./audioconverterfillcomplexbuffer%28_,_,_,_,_,_%29.md) function instead.
 

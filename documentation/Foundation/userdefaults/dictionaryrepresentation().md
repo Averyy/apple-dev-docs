@@ -25,11 +25,11 @@ func dictionaryRepresentation() -> [String : Any]
 - (NSDictionary<NSString *,id> *) dictionaryRepresentation;
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary with the combined set of keys and values from all domains.
 
-#### Discussion
+## Discussion
 
 Use this method to retrieve a union of the keys and values available to your app. The dictionary contains the data from all of the available domains. If multiple domains contain a value for the same key, the dictionary includes the value from the earliest occurrence of that key and discards the values in subsequent domains.
 

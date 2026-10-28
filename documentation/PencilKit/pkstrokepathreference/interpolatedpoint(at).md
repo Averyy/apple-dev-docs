@@ -23,7 +23,7 @@ func interpolatedPoint(at parametricValue: CGFloat) -> PKStrokePoint
 - (PKStrokePoint *) interpolatedPointAt:(CGFloat) parametricValue;
 ```
 
-#### Return Value
+## Return Value
 
 A [`PKStrokePointReference`](../pkstrokepointreference.md) interpolated from supplied `parametricValue.`
 

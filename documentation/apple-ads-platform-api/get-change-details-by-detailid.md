@@ -9,7 +9,7 @@ Retrieve field-level before and after values for a single entity change by its d
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 This endpoint returns the complete field-level change record for a single entity within a transaction. The response contains a `details` array of [`ActivityDetail`](./activitydetail.md) objects, each holding a `changes` array of field change objects. Each change object captures the `field` name, `oldValues`, and `newValues` as string arrays. To page through a large `changes` array, use `limit` and `offset`.
 
@@ -21,11 +21,11 @@ What populates `oldValues` and `newValues` depends on the event type that produc
 | `UPDATE` | Previous field value | Updated field value |
 | `DELETE` | Last known value | Typically empty [], but may contain system-managed values (for example, deletion flag, status, transaction ID) set at delete time |
 
-#### Payload Examples
+## Payload Examples
 
 **Campaign Update**:
 
-##### Request
+### Request
 
 Retrieve field-level details for a campaign update that changed two fields in the same transaction: it re-enables `status` and increases `dailyBudget`.
 
@@ -33,7 +33,7 @@ Retrieve field-level details for a campaign update that changed two fields in th
 GET /v1/change-history/Campaign.444555666.txn_abc123def456
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -88,7 +88,7 @@ GET /v1/change-history/Campaign.444555666.txn_abc123def456
 
 **Ad Group Create**:
 
-##### Request
+### Request
 
 Retrieve field-level details for a new ad group creation. The `oldValues` field is empty for all fields on `CREATE` events.
 
@@ -96,7 +96,7 @@ Retrieve field-level details for a new ad group creation. The `oldValues` field 
 GET /v1/change-history/AdGroup.888999333.txn_def789ghi012
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -162,7 +162,7 @@ GET /v1/change-history/AdGroup.888999333.txn_def789ghi012
 
 **Keyword Delete**:
 
-##### Request
+### Request
 
 Retrieve field-level details for a deleted keyword. The `newValues` field is empty for all fields on `DELETE` events.
 
@@ -170,7 +170,7 @@ Retrieve field-level details for a deleted keyword. The `newValues` field is emp
 GET /v1/change-history/Keyword.777888999.txn_jkl345mno678
 ```
 
-##### Response
+### Response
 
 ```json
 {

@@ -25,7 +25,7 @@ func resume(withParameters updateParameters: [MLParameterKey : Any])
 - (void) resumeWithParameters:(NSDictionary<MLParameterKey *,id> *) updateParameters;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to resume the model update task with newer parameter values. You use this method within the closures you provide in an [`MLUpdateProgressHandlers`](../mlupdateprogresshandlers.md) instance to resume the [`MLUpdateTask`](../mlupdatetask.md).
 

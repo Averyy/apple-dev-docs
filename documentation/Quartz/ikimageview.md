@@ -19,7 +19,7 @@ class IKImageView
 @interface IKImageView : NSView
 ```
 
-#### Overview
+## Overview
 
 The `IKImageView` class provides an efficient way to display images in a view while at the same time supporting a number of image editing operations such as rotating, zooming, and cropping. If possible, image rendering uses hardware acceleration to achieve optimal performance. The `IKImageView` class is implemented as a subclass of [`NSView`](../AppKit/nsview.md). Similar to [`NSImageView`](../AppKit/nsimageview.md), the `IKImageView` class is used to display a single image.
 

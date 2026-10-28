@@ -13,7 +13,7 @@
 #define littleOutputSegment
 ```
 
-#### Discussion
+## Discussion
 
 Backward compatibility define for the old global function definition. See also IOLittleMemoryCursor::outputSegment.
 

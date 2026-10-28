@@ -21,7 +21,7 @@ The context of an attempt to fetch changes from the server.
 struct FetchChangesContext
 ```
 
-#### Overview
+## Overview
 
 The sync engine might attempt to fetch changes from the server for many reasons. For example, if you call [`fetchChanges(_:)`](./fetchchanges%28_%29.md), it tries to fetch changes immediately. Or if it receives a push notification, it schedules an automatic sync and fetch changes when the scheduler task runs.
 

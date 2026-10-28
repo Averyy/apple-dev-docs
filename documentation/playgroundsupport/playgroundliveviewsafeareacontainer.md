@@ -16,9 +16,9 @@ A protocol that ensures that views fit without obstruction within the Swift Play
 protocol PlaygroundLiveViewSafeAreaContainer : AnyObject
 ```
 
-#### Overview
+## Overview
 
-This protocol provides [`liveViewSafeAreaGuide`](./playgroundliveviewsafeareacontainer/api-3029546-liveviewsafeareaguide.md), a layout guide set to the safe area. The safe area is the part of the live view that isn't covered by any Swift Playgrounds user interface elements like the Run button. You use this property to constrain the bounds of your content view inside the bounds of the safe area, which depend on how you set the `LiveViewEdgeToEdge` key for the current page. When this key is set to `NO`, the safe area is exactly the same as the live view area. When the key is set to `YES`, the safe area can be smaller than the live view area.
+This protocol provides [`liveViewSafeAreaGuide`](./playgroundliveviewsafeareacontainer/api-3029546-liveviewsafeareaguide.md), a layout guide set to the safe area. The *safe area* is the part of the live view that isn't covered by any Swift Playgrounds user interface elements like the Run button. You use this property to constrain the bounds of your content view inside the bounds of the safe area, which depend on how you set the `LiveViewEdgeToEdge` key for the current page. When this key is set to `NO`, the safe area is exactly the same as the live view area. When the key is set to `YES`, the safe area can be smaller than the live view area.
 
 ![Side-by-side screenshots showing how the safe area can be larger or smaller depending on how you set the LiveViewEdgeToEdge key.](https://docs-assets.developer.apple.com/published/53bde67707/3036821@2x.png)
 

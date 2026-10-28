@@ -24,11 +24,11 @@ func UIGraphicsGetPDFContextBounds() -> CGRect
 extern CGRect UIGraphicsGetPDFContextBounds();
 ```
 
-#### Return Value
+## Return Value
 
 The current page bounds associated with the PDF context or [`CGRectZero`](../CoreGraphics/cgrectzero.md) if the current context is not a PDF context.
 
-#### Discussion
+## Discussion
 
 If a page has not yet been started, this function returns the default media box you specified when you created the PDF context; otherwise, it returns the page bounds for the current page.
 

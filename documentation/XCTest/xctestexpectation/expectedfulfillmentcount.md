@@ -16,7 +16,7 @@ var expectedFulfillmentCount: Int { get set }
 @property (nonatomic) NSUInteger expectedFulfillmentCount;
 ```
 
-#### Discussion
+## Discussion
 
 The value of [`expectedFulfillmentCount`](./expectedfulfillmentcount.md) must be greater than 0. By default, expectations have an [`expectedFulfillmentCount`](./expectedfulfillmentcount.md) of 1.
 

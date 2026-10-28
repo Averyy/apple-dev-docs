@@ -19,7 +19,7 @@ var format: String { get set }
 @property (copy) NSString * format;
 ```
 
-#### Discussion
+## Discussion
 
 The format string uses the format patterns from [Unicode Technical Standard #35](http://www.unicode.org/reports/tr35/tr35-numbers.html#Number_Format_Patterns).  For more information, see  [Data Formatting Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DataFormatting/DataFormatting.html#//apple_ref/doc/uid/10000029i).
 

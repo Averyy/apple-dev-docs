@@ -9,7 +9,7 @@ Reduce API calls and conserve device power by streamlining your app’s georelat
 **Availability**:
 - Apple Maps Server API 1.2+
 
-#### Overview
+## Overview
 
 Use this web-based service to streamline your app’s API by moving georelated searches for places, points of interest, geocoding, directions, possible autocompletions for searches, and estimated time of arrival (ETA) calculations from inside your app to your server.
 

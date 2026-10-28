@@ -25,7 +25,7 @@ func accessibilityPreviousTextMarker(_ marker: BEAccessibilityTextMarker) -> BEA
 - (BEAccessibilityTextMarker *) accessibilityPreviousTextMarker:(BEAccessibilityTextMarker *) marker;
 ```
 
-#### Return Value
+## Return Value
 
 The previous text marker, or `nil` if there isn’t one.
 

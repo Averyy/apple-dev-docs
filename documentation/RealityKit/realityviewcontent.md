@@ -15,7 +15,7 @@ The content of a visionOS reality view.
 struct RealityViewContent
 ```
 
-#### Overview
+## Overview
 
 Add content that you want your visionOS app to display to a `RealityViewContent`.
 

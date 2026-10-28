@@ -23,7 +23,7 @@ static let spineLocation: UIPageViewController.OptionsKey
 extern UIPageViewControllerOptionsKey const UIPageViewControllerOptionSpineLocationKey;
 ```
 
-#### Discussion
+## Discussion
 
 For possible values, see [`UIPageViewController.SpineLocation`](../spinelocation-swift.enum.md). A spine location is only valid if the transition style is [`UIPageViewController.TransitionStyle.pageCurl`](../transitionstyle-swift.enum/pagecurl.md).
 

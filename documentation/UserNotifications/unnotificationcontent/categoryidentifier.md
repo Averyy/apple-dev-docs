@@ -32,7 +32,7 @@ var categoryIdentifier: String { get }
 @property (atomic, copy, readonly) NSString * categoryIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 Use notification types to distinguish between the different types of notifications your app supports. You use this support primarily to create actionable notifications with custom action buttons, and to redirect your notifications through either your notification service app extension or your notification content app extension.
 

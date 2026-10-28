@@ -19,7 +19,7 @@ var rowActionsVisible: Bool { get set }
 @property BOOL rowActionsVisible;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains a Boolean value indicating whether a table row’s actions are visible or not—the user has swiped the row to reveal the row actions. Set the value of this property to [`false`](../../Swift/false.md) to hide any visible row actions. Setting the value of this property to [`true`](../../Swift/true.md) is not supported, and will result in an exception.
 

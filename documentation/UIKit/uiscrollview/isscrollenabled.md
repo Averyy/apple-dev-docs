@@ -23,7 +23,7 @@ var isScrollEnabled: Bool { get set }
 @property (nonatomic, getter=isScrollEnabled) BOOL scrollEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`true`](../../Swift/true.md), which indicates that scrolling is enabled. Setting the value to [`false`](../../Swift/false.md) disables scrolling.
 

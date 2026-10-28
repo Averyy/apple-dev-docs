@@ -17,17 +17,17 @@ Creates a new sensor reader for the specified sensor type.
 init(sensor: Sensor) throws
 ```
 
-#### Return Value
+## Return Value
 
 A new `SRReader` instance
 
-#### Discussion
+## Discussion
 
 This initializer attempts to create a reader for the given sensor.
 
 > **Throws**: An error if cannot create reader due to hardware limitations or internal error
 
-#### Example
+## Example
 
 ```swift
 do {

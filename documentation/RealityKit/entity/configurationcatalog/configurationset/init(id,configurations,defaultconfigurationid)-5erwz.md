@@ -26,7 +26,7 @@ init(id: String, configurations: [Entity.ConfigurationCatalog.Configuration], de
 init(id: String, configurations: [String : Entity.ConfigurationCatalog.Configuration], defaultConfigurationId: String? = nil) throws
 ```
 
-#### Return Value
+## Return Value
 
 A configuration set containing the configurations.
 

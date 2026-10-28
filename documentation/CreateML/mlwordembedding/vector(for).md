@@ -15,7 +15,7 @@ Accesses the vector associated with the given string in the vocabulary.
 func vector(for text: String) -> [Double]?
 ```
 
-#### Return Value
+## Return Value
 
 The vector associated with the string if present in the word embedding; otherwise, `nil`.
 

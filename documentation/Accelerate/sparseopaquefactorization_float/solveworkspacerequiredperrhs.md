@@ -25,7 +25,7 @@ var solveWorkspaceRequiredPerRHS: Int
 size_t solveWorkspaceRequiredPerRHS;
 ```
 
-#### Discussion
+## Discussion
 
 The required size of workspace in bytes for a call to a sparse solve function is [`solveWorkspaceRequiredStatic`](./solveworkspacerequiredstatic.md) `+ nrhs *` [`solveWorkspaceRequiredPerRHS`](./solveworkspacerequiredperrhs.md) where `nrhs` is the number of right-hand-side vectors.
 

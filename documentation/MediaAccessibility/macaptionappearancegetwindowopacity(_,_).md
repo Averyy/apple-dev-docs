@@ -24,7 +24,7 @@ func MACaptionAppearanceGetWindowOpacity(_ domain: MACaptionAppearanceDomain, _ 
 extern CGFloat MACaptionAppearanceGetWindowOpacity(MACaptionAppearanceDomain domain, MACaptionAppearanceBehavior *behavior);
 ```
 
-#### Return Value
+## Return Value
 
 The float value, ranging from `0.0` to `1.0`, representing the opacity of the color behind all other caption elements.
 

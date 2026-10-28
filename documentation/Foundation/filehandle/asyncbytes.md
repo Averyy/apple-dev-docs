@@ -21,7 +21,7 @@ An asynchronous sequence of bytes.
 struct AsyncBytes
 ```
 
-#### Overview
+## Overview
 
 Use the `for`-`await`-`in` syntax to iterate over the bytes in this sequence. For text files, you can also use its [`characters`](../../Swift/asyncsequence/characters.md), [`unicodeScalars`](../../Swift/asyncsequence/unicodescalars.md), or [`lines`](../../Swift/asyncsequence/lines.md) properties to retrieve the contents in a more convenient format. Since all of these properties conform to [`AsyncSequence`](../../Swift/asyncsequence.md), as does the [`FileHandle`](../filehandle.md) property [`bytes`](./bytes.md), you can use methods defined by [`AsyncSequence`](../../Swift/asyncsequence.md) to perform powerful inline processing. For example, you can skip the first `n` bytes of the file with `myFileHandle.bytes.prefix(n)`.
 

@@ -25,7 +25,7 @@ var currentEventSkippableState: AVPlayerInterstitialEvent.SkippableEventState { 
 @property (readonly) AVPlayerInterstitialEventSkippableEventState currentEventSkippableState;
 ```
 
-#### Discussion
+## Discussion
 
 If currentEvent is nil, then the value will be AVPlayerInterstitialEventSkippableEventStateNotSkippable.
 

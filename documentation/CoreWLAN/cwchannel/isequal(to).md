@@ -19,11 +19,11 @@ func isEqual(to channel: CWChannel) -> Bool
 - (BOOL) isEqualToChannel:(CWChannel *) channel;
 ```
 
-#### Return Value
+## Return Value
 
 *YES* if the objects are equal.
 
-#### Discussion
+## Discussion
 
 CWChannel objects are considered equal if all their corresponding properties are equal.
 

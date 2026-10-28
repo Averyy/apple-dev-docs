@@ -13,7 +13,7 @@
 kSENSE_RESPONSE_CODE_Deferred_Errors = 0x71
 ```
 
-#### Discussion
+## Discussion
 
 Response code indicating deferred errors are reported.
 

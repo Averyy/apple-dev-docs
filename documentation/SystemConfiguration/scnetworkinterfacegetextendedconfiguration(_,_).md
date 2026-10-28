@@ -19,7 +19,7 @@ func SCNetworkInterfaceGetExtendedConfiguration(_ interface: SCNetworkInterface,
 CFDictionaryRefSCNetworkInterfaceGetExtendedConfiguration(SCNetworkInterfaceRef interface, CFStringRef extendedType);
 ```
 
-#### Return Value
+## Return Value
 
 The configuration settings associated with the interface, or `NULL` if no configuration settings are associated with the interface or an error occurred.
 

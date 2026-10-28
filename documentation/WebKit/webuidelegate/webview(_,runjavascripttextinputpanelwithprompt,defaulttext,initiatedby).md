@@ -19,11 +19,11 @@ optional func webView(_ sender: WebView!, runJavaScriptTextInputPanelWithPrompt 
 - (NSString *) webView:(WebView *) sender runJavaScriptTextInputPanelWithPrompt:(NSString *) prompt defaultText:(NSString *) defaultText initiatedByFrame:(WebFrame *) frame;
 ```
 
-#### Return Value
+## Return Value
 
 The text entered by the user if the user clicks OK; otherwise, `nil`.
 
-#### Discussion
+## Discussion
 
 This method is used to provide an alternate text input panel when JavaScript code calls `prompt`. Delegates should visually indicate that this panel comes from JavaScript. The panel should contain an OK and a Cancel button, and an editable text field. If you do not implement this method, a JavaScript text input panel is displayed.
 

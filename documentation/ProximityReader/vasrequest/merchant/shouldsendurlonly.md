@@ -19,7 +19,7 @@ A Boolean value that indicates whether to send only the merchant URL to the cust
 let shouldSendURLOnly: Bool
 ```
 
-#### Discussion
+## Discussion
 
 The customer’s device can use the URL for pass provisioning.
 

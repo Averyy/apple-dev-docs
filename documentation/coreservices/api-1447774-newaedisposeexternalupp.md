@@ -19,11 +19,11 @@ func NewAEDisposeExternalUPP(_ userRoutine: AEDisposeExternalProcPtr!) -> AEDisp
 AEDisposeExternalUPP NewAEDisposeExternalUPP(AEDisposeExternalProcPtr userRoutine);
 ```
 
-#### Return Value
+## Return Value
 
 See [`AEDisposeExternalUPP`](./aedisposeexternalupp.md).
 
-#### Discussion
+## Discussion
 
 See the [`AEDisposeExternalProcPtr`](./aedisposeexternalprocptr.md) callback function. 
 

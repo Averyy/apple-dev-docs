@@ -17,7 +17,7 @@ Bicubic interpolation with a single scale factor.
 func bicubicInterpolate(_ x: MLXArray, scaleFactor: Float, alignCorners: Bool = false, antialias: Bool = false) -> MLXArray
 ```
 
-#### Return Value
+## Return Value
 
 Interpolated tensor of shape [B, C, outH, outW]
 

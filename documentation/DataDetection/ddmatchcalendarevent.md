@@ -25,7 +25,7 @@ class DDMatchCalendarEvent
 @interface DDMatchCalendarEvent : DDMatch
 ```
 
-#### Overview
+## Overview
 
 The DataDetection framework returns a calendar event match in a `DDMatchCalendarEvent` object, which has only a beginning date, only an end date, or both a beginning date and an end date.
 

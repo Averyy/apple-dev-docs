@@ -14,7 +14,7 @@
 gestaltPlayAndRecord = 6
 ```
 
-#### Discussion
+## Discussion
 
 Set if the built-in sound hardware is able to play and record sounds simultaneously. If this bit is clear, the built-in sound hardware can either play or record, but not do both at once. This bit is valid only if the `gestaltBuiltInSoundInput` bit is set, and it applies only to any built-in sound input and output hardware.
 

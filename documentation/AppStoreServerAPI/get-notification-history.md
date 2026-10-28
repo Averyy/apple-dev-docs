@@ -14,7 +14,7 @@ Get a list of notifications that the App Store server attempted to send to your 
 - [App Store Server API changelog](./app-store-server-api-changelog.md)
 - [Identifying rate limits](./identifying-rate-limits.md)
 
-#### Discussion
+## Discussion
 
 Call this endpoint to get a paginated list of the version 2 [App Store Server Notifications](../AppStoreServerNotifications/AppStoreServerNotifications.md) that the App Store attempted to send to your server’s [`App Store Server Notifications V2`](../AppStoreServerNotifications/app-store-server-notifications-v2.md) endpoint in a specified timespan. Notification history is available for the past 180 days in the production environment, and the past 30 days in the sandbox environment.
 

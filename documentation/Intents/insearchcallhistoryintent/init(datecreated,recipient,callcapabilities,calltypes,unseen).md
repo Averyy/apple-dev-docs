@@ -21,11 +21,11 @@ Creates a search call history intent object with the specified search criteria.
 convenience init(dateCreated: INDateComponentsRange? = nil, recipient: INPerson? = nil, callCapabilities: INCallCapabilityOptions, callTypes: INCallRecordTypeOptions, unseen: Bool? = nil)
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INSearchCallHistoryIntent`](../insearchcallhistoryintent.md) object.
 
-#### Discussion
+## Discussion
 
 Normally, you don’t create instances of this class yourself. Instead, Siri creates instances when the user asks to search their call history. However, you can use this method during testing to create intent objects in order to validate your intent handling code paths.
 

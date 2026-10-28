@@ -21,11 +21,11 @@ convenience init(batteryLevel: Double)
 + (instancetype) routeDetailWithBatteryLevel:(double) batteryLevel;
 ```
 
-#### Return Value
+## Return Value
 
 A new @c CPRouteDetail instance representing the battery level
 
-#### Discussion
+## Discussion
 
 Use this method to display the estimated battery level upon arrival at the destination for electric vehicles. Display as a percentage (0.0 to 100.0) to show state of charge.
 

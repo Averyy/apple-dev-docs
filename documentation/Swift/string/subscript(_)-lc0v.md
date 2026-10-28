@@ -21,7 +21,7 @@ Accesses the character at the given position.
 subscript(i: String.Index) -> Character { get }
 ```
 
-#### Overview
+## Overview
 
 You can use the same indices for subscripting a string and its substring. For example, this code finds the first letter after the first space:
 

@@ -23,11 +23,11 @@ func vImageBufferFill_CbCr16S(_ dest: UnsafePointer<vImage_Buffer>, _ color: Uns
 vImage_Error vImageBufferFill_CbCr16S(const vImage_Buffer *dest, const Pixel_16S16S color, vImage_Flags flags);
 ```
 
-#### Return Value
+## Return Value
 
 kvImageNoError                     Success
 
-#### Discussion
+## Discussion
 
 Fill the dest buffer with the pixel value.
 

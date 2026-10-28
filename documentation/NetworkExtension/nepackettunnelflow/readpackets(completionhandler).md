@@ -28,7 +28,7 @@ func readPackets() async -> ([Data], [NSNumber])
 - (void) readPacketsWithCompletionHandler:(void (^)(NSArray<NSData *> *packets, NSArray<NSNumber *> *protocols)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Each call to this method results in a single execution of the completion handler. The caller should call this method after each `completionHandler` execution in order to continue to receive packets from the TUN interface.
 

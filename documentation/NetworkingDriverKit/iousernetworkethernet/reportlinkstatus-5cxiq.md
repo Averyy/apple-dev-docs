@@ -15,11 +15,11 @@ Reports the status of the link between the device and your driver to the system.
 virtual kern_return_t ReportLinkStatus(IOUserNetworkLinkStatus linkStatus, IOUserNetworkMediaType activeMediaType);
 ```
 
-#### Return Value
+## Return Value
 
 `kIOReturnSuccess` on success, or another value if an error occurred.
 
-#### Discussion
+## Discussion
 
 Call this method when you want to notify the network about any changes to the link status or active media type for your device.
 

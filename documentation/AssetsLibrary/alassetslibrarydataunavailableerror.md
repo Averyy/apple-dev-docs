@@ -21,7 +21,7 @@ var ALAssetsLibraryDataUnavailableError: Int { get }
 ALAssetsLibraryDataUnavailableError
 ```
 
-#### Discussion
+## Discussion
 
 This error may be returned in the [`ALAssetsLibraryAccessFailureBlock`](./alassetslibraryaccessfailureblock.md) for `ALAssetsLibrary/enumerateGroups(withTypes:using:failureBlock:)` and `ALAssetsLibrary/asset(for:resultBlock:failureBlock:)`; and in the completion blocks for `ALAssetsLibrary/writeImage(toSavedPhotosAlbum:orientation:completionBlock:)` and `ALAssetsLibrary/writeImage(toSavedPhotosAlbum:orientation:completionBlock:)`; as well as in the completion selector for [`UIImageWriteToSavedPhotosAlbum(_:_:_:_:)`](../UIKit/uiimagewritetosavedphotosalbum%28_,_,_,_%29.md) and [`UISaveVideoAtPathToSavedPhotosAlbum(_:_:_:_:)`](../UIKit/uisavevideoatpathtosavedphotosalbum%28_,_,_,_%29.md).
 

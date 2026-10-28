@@ -5,7 +5,7 @@
 
 Select the version of Xcode you want to use for command-line tools, in either Xcode settings or Terminal.
 
-#### Overview
+## Overview
 
 If you have multiple versions of Xcode on your Mac, you can select a specific version of the app to use for command-line tools. For example, you might want to release your app with the latest version of Xcode, while using a beta version to try out new APIs.
 
@@ -13,7 +13,7 @@ You can do this by selecting a default Xcode version to use for command-line too
 
 > **Note**: To use the commands from the Command Line Tools for Xcode package, select the package after installing. For more information, see [Installing the command-line tools](./installing-the-command-line-tools.md).
 
-##### Check the default Xcode app for command-line tools
+### Check the default Xcode app for command-line tools
 
 To identify the default Xcode app for command-line tools, choose Xcode > Settings, and click Locations in the sidebar. The Command Line Tools section of the Locations pane displays both the Xcode version number and the location of the file. ![A screenshot of the Locations pane in Xcode settings, showing the Archives, Compilation Cache (Automatic size), Command Line Tools, and Custom Paths sections.](https://developer.apple.com/tutorials/images/com.apple.Xcode/configuring-command-line-tools-settings-01@2x.png)
 
@@ -42,7 +42,7 @@ sudo `xcode-select --switch <path/to/>Xcode.app` to set one
 
 > ❗ **Important**: The standard location of Xcode is `/Applications/Xcode.app`. If you install Xcode in a nonstandard location, such as `/Applications/Xcode26/Xcode.app`, use Xcode settings or `xcode-select` to select this location.
 
-##### Select the default Xcode app
+### Select the default Xcode app
 
 To change the default Xcode app for the command-line tools in Xcode, choose a different version of the app from the pop-up menu in Locations settings, under Command Line Tools. The pop-up menu contains the name and build of every Xcode app installed on your Mac.
 
@@ -70,7 +70,7 @@ To select the Command Line Tools for Xcode package, run the following command:
 % sudo xcode-select --switch /Library/Developer/CommandLineTools
 ```
 
-##### Select the default Xcode app temporarily
+### Select the default Xcode app temporarily
 
 If you want to keep the default Xcode app for the command-line tools and use a command from a different version of Xcode, set the `DEVELOPER_DIR` environment variable when you invoke the command in Terminal:
 

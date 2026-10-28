@@ -5,13 +5,13 @@
 
 Provide a secure and convenient alternative to passwords.
 
-#### Overview
+## Overview
 
 Your browser app on macOS or iOS can authenticate people to websites by using passkeys stored in the keychain, and managed by third-party credential providers. It can also create passkeys that the operating system stores in the keychain, or that third-party credential providers store. Optionally, when someone authenticates with a website, present your own UI to list the passkeys available for the website so they can choose which passkey to use; otherwise, delegate to the operating system’s UI to choose passkeys or, on iOS, use AutoFill.
 
 Use [`ASAuthorizationController`](./asauthorizationcontroller.md) when performing requests defined in the WebAuthentication standard. If you present your own passkey-selection UI, you can specify [`allowedCredentials`](./asauthorizationplatformpublickeycredentialassertionrequest/allowedcredentials.md) to restrict the system UI to only show the selected passkey. Implement the authorization controller’s delegate callback to receive passkey request responses, which you return to the website that makes the request.
 
-##### Request access to passkeys
+### Request access to passkeys
 
 When someone wants to use a passkey to authenticate with a website, create an instance of [`ASAuthorizationWebBrowserPublicKeyCredentialManager`](./asauthorizationwebbrowserpublickeycredentialmanager.md) and follow these steps:
 
@@ -43,7 +43,7 @@ class BrowserAuthorizationController {
 }
 ```
 
-##### Create an assertion request
+### Create an assertion request
 
 The credentials you get from the credential manager don’t contain the key data; instead, they contain metadata that identifies the credentials to the operating system and to the authenticating person. If the array of credentials contains more than one credential, present them to the person so they can select which credential to use.
 
@@ -71,7 +71,7 @@ extension BrowserAuthorizationController {
 
 To start an authorization request using AutoFill presentation on iOS, call [`performAutoFillAssistedRequests()`](./asauthorizationcontroller/performautofillassistedrequests%28%29.md) on the authorization controller instead of [`performRequests()`](./asauthorizationcontroller/performrequests%28%29.md).
 
-##### Supply a presentation context provider
+### Supply a presentation context provider
 
 [`ASAuthorizationController`](./asauthorizationcontroller.md) might need to present UI to complete the authentication challenge. Conform to [`ASAuthorizationControllerPresentationContextProviding`](./asauthorizationcontrollerpresentationcontextproviding.md) to provide a window in which the controller can display its UI.
 
@@ -86,7 +86,7 @@ extension BrowserAuthorizationController : ASAuthorizationControllerPresentation
 }
 ```
 
-##### Implement authorization controller delegate callbacks
+### Implement authorization controller delegate callbacks
 
 Conform to [`ASAuthorizationControllerDelegate`](./asauthorizationcontrollerdelegate.md) to react to authorization completion. Implement methods to respond to successful authorization, and to get notified when errors occur.
 

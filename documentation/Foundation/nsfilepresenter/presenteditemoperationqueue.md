@@ -26,7 +26,7 @@ var presentedItemOperationQueue: OperationQueue { get }
 @property (retain, readonly) NSOperationQueue * presentedItemOperationQueue;
 ```
 
-#### Discussion
+## Discussion
 
 As other objects and processes interact with the presented item, the system queues relevant messages for this presenter object on the operation queue in this property. For example, when another process attempts to read a file presented by this object, the system places an invocation of this object’s [`relinquishPresentedItem(toReader:)`](./relinquishpresenteditem%28toreader%29.md) method on the queue for execution. The other process must wait to read the file until that method is dequeued and executed. Requests for an object’s presented URL are not processed on this queue.
 

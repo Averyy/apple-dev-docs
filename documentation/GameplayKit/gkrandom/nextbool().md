@@ -25,11 +25,11 @@ func nextBool() -> Bool
 - (BOOL) nextBool;
 ```
 
-#### Return Value
+## Return Value
 
 A random Boolean value.
 
-#### Discussion
+## Discussion
 
 Typically, custom classes implementing this protocol should implement the [`nextBool()`](./nextbool%28%29.md) method based on the value returned by the [`nextInt(upperBound:)`](./nextint%28upperbound%29.md) method. Alternative implementations are possible, but may lead to less uniform results.
 

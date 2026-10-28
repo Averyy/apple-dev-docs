@@ -5,7 +5,7 @@
 
 Download your sales and financial reports.
 
-#### Overview
+## Overview
 
 App Store Connect provides data that allows you to measure the performance of your app and view payments from Apple. Use the App Store Connect API to apply filters to select and configure the data, and automate the download of sales and financial reports. For detailed information on reports, see [Overview of reporting tools](https://developer.apple.com/help/app-store-connect/measure-app-performance/overview-of-reporting-tools).
 

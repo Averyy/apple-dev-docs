@@ -25,7 +25,7 @@ struct objc_super
 struct objc_super;
 ```
 
-#### Discussion
+## Discussion
 
 The compiler generates an `objc_super` data structure when it encounters the `super` keyword as the receiver of a message. It specifies the class definition of the particular superclass that should be messaged.
 

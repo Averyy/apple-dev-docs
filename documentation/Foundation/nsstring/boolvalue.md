@@ -25,7 +25,7 @@ var boolValue: Bool { get }
 @property (readonly) BOOL boolValue;
 ```
 
-#### Discussion
+## Discussion
 
 This property is [`true`](../../Swift/true.md) on encountering one of “Y”, “y”, “T”, “t”, or a digit 1-9—the method ignores any trailing characters. This property is [`false`](../../Swift/false.md) if the receiver doesn’t begin with a valid decimal text representation of a number.
 

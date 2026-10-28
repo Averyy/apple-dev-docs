@@ -29,7 +29,7 @@ enum NSURLRequestCachePolicy : NSUInteger;
 
 - [Accessing cached data](../accessing-cached-data.md)
 
-#### Overview
+## Overview
 
 The default policy is [`NSURLRequest.CachePolicy.useProtocolCachePolicy`](./cachepolicy-swift.enum/useprotocolcachepolicy.md).
 

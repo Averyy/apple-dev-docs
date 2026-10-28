@@ -21,7 +21,7 @@ var isRedownload: Bool { get }
 @property (nonatomic, assign, readonly) BOOL isRedownload;
 ```
 
-#### Discussion
+## Discussion
 
 In the production environment, this value is `true` when the user redownloaded and reinstalled the app. In the testing environment, you set the value of this property when you create the test postback.
 

@@ -21,7 +21,7 @@ Computes the squared magnitude value of each element in the supplied complex dou
 extern void vDSP_zvmagsD(const DSPDoubleSplitComplex *__A, vDSP_Stride __IA, double *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 Calculates the squared magnitudes of complex vector `A`, leaving the result in `C`:
 

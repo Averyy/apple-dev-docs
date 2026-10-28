@@ -22,11 +22,11 @@ Returns a new view with a symbol effect added to it.
 nonisolated func symbolEffect<T>(_ effect: T, options: SymbolEffectOptions = .default, isActive: Bool = true) -> some View where T : IndefiniteSymbolEffect, T : SymbolEffect
 ```
 
-#### Return Value
+## Return Value
 
 A copy of the view with a symbol effect added.
 
-#### Discussion
+## Discussion
 
 The following example adds a repeating pulse effect to two symbol images:
 

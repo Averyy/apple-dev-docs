@@ -22,11 +22,11 @@ init!(forServiceType serviceType: String!, requestMethod: SLRequestMethod, url: 
 + (SLRequest *) requestForServiceType:(NSString *) serviceType requestMethod:(SLRequestMethod) requestMethod URL:(NSURL *) url parameters:(NSDictionary *) parameters;
 ```
 
-#### Return Value
+## Return Value
 
 The newly initialized request object.
 
-#### Discussion
+## Discussion
 
 Use this method to initialize an `SLRequest`. The value and formatting of each parameter is dependent on the target service.
 

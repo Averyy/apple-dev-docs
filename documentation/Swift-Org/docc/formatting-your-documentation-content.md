@@ -10,13 +10,13 @@ framework: "Swift-Org/docc"
 
 Enhance your content’s presentation with special formatting and styling for text and lists.
 
-#### Overview
+## Overview
 
 Use [Markdown](https://daringfireball.net/projects/markdown/syntax), a lightweight markup language, to give structure and style to your documentation. DocC includes a custom dialect of Markdown, documentation markup, which extends Markdown’s syntax to include features like symbol linking, improved image support, term lists, and asides.
 
 To ensure consistent structure and styling, use DocC’s documentation markup for all of the documentation you write.
 
-##### Add a Page Title and Section Headers
+### Add a Page Title and Section Headers
 
 To add a page title, precede the text you want to use with a hash (`#`) and a space. For the page title of an article or API collection, use plain text only.
 
@@ -68,7 +68,7 @@ For all other section headers, use a triple hash (`###`) and a space, and then a
 
 Use this type of section header in framework landing pages, top-level pages, articles, and occasionally in symbol reference pages where you need to provide more detail.
 
-##### Format Text in Bold, Italics, and Code Voice
+### Format Text in Bold, Italics, and Code Voice
 
 DocC provides three ways to format the text in your documentation. You can apply bold or italic styling, or you can use code voice, which renders the specified text in a monospace font.
 
@@ -100,7 +100,7 @@ If your sloth possesses one of the special powers: `ice`, `fire`,
 
 > **Note**: To include multiple lines of code, use a code listing instead. For more information, see [Add Code Listings](./formatting-your-documentation-content.md#Add-Code-Listings).
 
-##### Add Code Listings
+### Add Code Listings
 
 DocC includes support for code listings, or fenced code blocks, which allow you to go beyond the basic declaration sections you find in symbol reference pages, and to provide more complete code examples for adopters of your framework. You can include code listings in your in-source symbol documentation, in extension files, and in articles and tutorials.
 
@@ -157,7 +157,7 @@ The following table lists the names of the programming languages you can specify
 | xml | html, xhtml, rss, atom, xjb, xsd, xsl, plist, wsf, svg |
 | yaml | yml |
 
-##### Add Bulleted, Numbered, and Term Lists
+### Add Bulleted, Numbered, and Term Lists
 
 DocC supports the following list types:
 

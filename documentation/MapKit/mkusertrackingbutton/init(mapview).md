@@ -22,7 +22,7 @@ convenience init(mapView: MKMapView?)
 + (instancetype) userTrackingButtonWithMapView:(MKMapView *) mapView;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized [`MKUserTrackingButton`](../mkusertrackingbutton.md) object.
 

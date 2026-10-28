@@ -23,7 +23,7 @@ class NSTextStorage
 @interface NSTextStorage : NSMutableAttributedString
 ```
 
-#### Overview
+## Overview
 
 [`NSTextStorage`](./nstextstorage.md) is a semi-concrete subclass of [`NSMutableAttributedString`](../Foundation/nsmutableattributedstring.md) that adds behavior for managing a set of client [`NSLayoutManager`](./nslayoutmanager.md) objects. A text storage object notifies its layout managers of changes to its characters or attributes, which lets the layout managers redisplay the text as needed.
 
@@ -31,7 +31,7 @@ You can access a text storage object from any thread of your app, but your app m
 
 In macOS, this class also defines properties for getting and setting scriptable attributes of [`NSTextStorage`](./nstextstorage.md) objects. Unless you’re dealing with scriptability, you shouldn’t access these properties directly. In particular, using the [`characters`](../AppKit/nstextstorage/characters.md), [`words`](../AppKit/nstextstorage/words.md), or [`paragraphs`](../AppKit/nstextstorage/paragraphs.md) properties is an inefficient way to manipulate the text storage, since accessing these properties involves the creation of many objects. Instead, use the text access methods defined by [`NSMutableAttributedString`](../Foundation/nsmutableattributedstring.md), [`NSAttributedString`](../Foundation/nsattributedstring.md), [`NSMutableString`](../Foundation/nsmutablestring.md), and [`NSString`](../Foundation/nsstring.md) to perform character-level manipulation.
 
-##### Subclassing Notes
+### Subclassing Notes
 
 The [`NSTextStorage`](./nstextstorage.md) class implements change management through the [`beginEditing()`](../Foundation/nsmutableattributedstring/beginediting%28%29.md) and [`endEditing()`](../Foundation/nsmutableattributedstring/endediting%28%29.md) methods, as well as verification of attributes, delegate handling, and layout management notification. The one aspect it doesn’t implement is managing the actual attributed string storage, which subclasses manage by overriding the two [`NSAttributedString`](../Foundation/nsattributedstring.md) primitives:
 

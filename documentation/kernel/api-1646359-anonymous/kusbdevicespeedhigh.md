@@ -13,7 +13,7 @@
 kUSBDeviceSpeedHigh = 2
 ```
 
-#### Discussion
+## Discussion
 
 The device is a high speed device.
 

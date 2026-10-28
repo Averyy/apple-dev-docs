@@ -24,7 +24,7 @@ static let cubic: CAAnimationCalculationMode
 extern CAAnimationCalculationMode const kCAAnimationCubic;
 ```
 
-#### Discussion
+## Discussion
 
 Intermediate frames are computed using a Catmull-Rom spline that passes through the keyframes. You can adjust the shape of the spline by specifying an optional set of tension, continuity, and bias values, which modify the spline using the standard Kochanek-Bartels form.
 

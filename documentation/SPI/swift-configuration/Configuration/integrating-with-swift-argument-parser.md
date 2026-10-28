@@ -10,7 +10,7 @@ framework: "swift-configuration/Configuration"
 
 Combine the commands and options of Swift Argument Parser with the provider hierarchy of Swift Configuration.
 
-#### Overview
+## Overview
 
 [Swift Argument Parser](https://github.com/apple/swift-argument-parser) and Swift Configuration solve different problems, and you can use them together in the same tool.
 
@@ -22,7 +22,7 @@ Swift Configuration is more dynamic. Your application and the libraries it depen
 
 When your tool has several commands, use Swift Argument Parser to define the commands and parse the command line, and use Swift Configuration to read the rest of your configuration. To make values from the command line available through a [`ConfigReader`](./configreader.md), either map the options you declare to configuration keys, or forward the arguments that Swift Argument Parser doesn’t recognize to a [`CommandLineArgumentsProvider`](./commandlineargumentsprovider.md).
 
-##### Map parsed options to configuration keys
+### Map parsed options to configuration keys
 
 Declare the options in your command, and then add the values the user provides to an [`InMemoryProvider`](./inmemoryprovider.md) at the front of your provider hierarchy. Your options keep the generated help and validation from Swift Argument Parser, and take precedence over values from the other providers:
 
@@ -55,7 +55,7 @@ struct Serve: AsyncParsableCommand {
 
 > 💡 **Tip**: Declare the options as optional, without a default value. If you give an option a default value in Swift Argument Parser, that value always takes precedence over the values from the other providers.
 
-##### Forward unrecognized arguments
+### Forward unrecognized arguments
 
 To accept any configuration key on the command line, without declaring an option for each one, capture the arguments that Swift Argument Parser doesn’t recognize, and pass them to a [`CommandLineArgumentsProvider`](./commandlineargumentsprovider.md).
 
@@ -89,7 +89,7 @@ struct Serve: AsyncParsableCommand {
 
 > ❗ **Important**: [`CommandLineArgumentsProvider`](./commandlineargumentsprovider.md) expects the program name as the first element of `arguments`, and skips it. Insert a placeholder (such as “serve” above) before the forwarded arguments, as the example shows, otherwise the provider ignores the first forwarded argument.
 
-##### Choose an approach
+### Choose an approach
 
 Swift Argument Parser doesn’t list forwarded arguments in the generated help, and doesn’t report misspelled options, because it treats every argument it doesn’t recognize as configuration.
 

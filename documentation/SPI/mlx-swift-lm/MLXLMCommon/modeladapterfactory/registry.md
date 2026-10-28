@@ -17,7 +17,7 @@ Registry of adapter type creators.
 let registry: ModelAdapterTypeRegistry
 ```
 
-#### Discussion
+## Discussion
 
 You can register custom adapter types as follows:
 

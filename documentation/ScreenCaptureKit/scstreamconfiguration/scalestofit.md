@@ -20,7 +20,7 @@ var scalesToFit: Bool { get set }
 @property (nonatomic, assign) BOOL scalesToFit;
 ```
 
-#### Discussion
+## Discussion
 
 The system uses this value during independent window capture.
 

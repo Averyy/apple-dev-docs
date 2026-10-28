@@ -21,11 +21,11 @@ func preferredFilenameExtension(forType typeName: String) -> String?
 - (NSString *) preferredFilenameExtensionForType:(NSString *) typeName;
 ```
 
-#### Return Value
+## Return Value
 
 The appropriate filename extension for `typeName`, or `nil` if no extension could be determined.
 
-#### Discussion
+## Discussion
 
 You can safely call this method from any thread of your app.
 

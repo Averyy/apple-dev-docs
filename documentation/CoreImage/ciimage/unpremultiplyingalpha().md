@@ -24,11 +24,11 @@ func unpremultiplyingAlpha() -> CIImage
 - (CIImage *) imageByUnpremultiplyingAlpha;
 ```
 
-#### Return Value
+## Return Value
 
 An image object representing the result of the operation.
 
-#### Discussion
+## Discussion
 
 Premultiplied alpha speeds up the rendering of images, but some custom filter routines can be expressed more efficiently with non-premultiplied RGB values. Use this method if you need to apply such a filter to an image that has premultiplied alpha.
 

@@ -21,7 +21,7 @@ Sets the registration handler work item for the dispatch source.
 func setRegistrationHandler(handler: DispatchWorkItem)
 ```
 
-#### Discussion
+## Discussion
 
 The registration handler (if specified) is submitted to the source’s target queue as soon as the source has been fully set up and is ready to start delivering events. The set up of a dispatch source’s underlying event-delivery mechanism occurs asynchronously.
 

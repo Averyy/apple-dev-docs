@@ -25,7 +25,7 @@ func expireSubscription(productIdentifier: String) throws
 - (BOOL) expireSubscriptionWithProductIdentifier:(NSString *) productIdentifier error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to test how your app handles expired subscriptions and revoking access to content or service. This method forces the subscription to expire. Specifically, the testing environment disables auto-renew and changes the subscription’s expiration date to the current system time.
 

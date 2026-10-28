@@ -19,7 +19,7 @@ var selectionIndexes: IndexSet { get set }
 @property (copy) NSIndexSet * selectionIndexes;
 ```
 
-#### Discussion
+## Discussion
 
 Whenever possible, use the [`selectionIndexPaths`](./selectionindexpaths.md) property instead of this one to set selections.
 

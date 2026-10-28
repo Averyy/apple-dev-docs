@@ -24,7 +24,7 @@ var flipZ: Bool { get set }
 @property (nonatomic, readwrite) BOOL flipZ;
 ```
 
-#### Discussion
+## Discussion
 
 If set to `YES` then the layer will compute the final value as `h[t] = z[t] h[t-1] + (1-z[t]) o[t]`. Otherwise it’s computed as `h[t] = (1-z[t]) h[t-1] + z[t] o[t]`. Default value: `NO`.
 

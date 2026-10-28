@@ -19,7 +19,7 @@ var maskImage: NSImage? { get set }
 @property (retain, nullable) NSImage * maskImage;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is `nil`, which is the equivalent of allowing all of the visual effect view’s content to show through. Assigning an image to this property masks the portions of the visual effect view using the image’s alpha channel.
 

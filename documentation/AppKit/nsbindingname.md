@@ -19,7 +19,7 @@ struct NSBindingName
 typedef NSString * NSBindingName;
 ```
 
-#### Discussion
+## Discussion
 
 The following values are used to specify a binding to [`bind(_:to:withKeyPath:options:)`](../ObjectiveC/nsobject-swift.class/bind%28_,to,withkeypath,options%29.md), [`infoForBinding(_:)`](../ObjectiveC/nsobject-swift.class/infoforbinding%28_%29.md), [`unbind(_:)`](../ObjectiveC/nsobject-swift.class/unbind%28_%29.md) and [`valueClassForBinding(_:)`](../ObjectiveC/nsobject-swift.class/valueclassforbinding%28_%29.md). See [Cocoa Bindings Reference](https://developer.apple.com/library/archive/documentation/Cocoa/Reference/CocoaBindingsRef/CocoaBindingsRef.html#//apple_ref/doc/uid/10000189i) for more information.
 

@@ -24,7 +24,7 @@ let PHLivePhotoInfoCancelledKey: String
 extern NSString * const PHLivePhotoInfoCancelledKey;
 ```
 
-#### Discussion
+## Discussion
 
 If you call the [`cancelRequest(withRequestID:)`](./phlivephoto/cancelrequest%28withrequestid%29.md) method to cancel a request, Photos calls your result handler block with a `true` value for this key.
 

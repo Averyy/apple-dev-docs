@@ -27,7 +27,7 @@ optional func playerViewControllerWillStopPictureInPicture(_ playerViewControlle
 
 - [Adopting Picture in Picture in a standard player](../adopting-picture-in-picture-in-a-standard-player.md)
 
-#### Discussion
+## Discussion
 
 Implement this method to update the state of your user interface, like presenting or enabling playback controls.
 

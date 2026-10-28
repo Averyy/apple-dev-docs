@@ -21,7 +21,7 @@ struct WiredMemoryTicket
 
 - [Wired Memory Management](./wired-memory.md)
 
-#### Overview
+## Overview
 
 A ticket represents a single unit of memory demand. Tickets are started and ended explicitly and are safe to start/end multiple times (extra calls are ignored). Use `withWiredLimit` to ensure cancellation-safe pairing.
 

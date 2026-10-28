@@ -21,7 +21,7 @@ Creates an entity query that retrieves all available entities of this type.
 func allEntitiesQuery() -> AnyEntityQuery
 ```
 
-#### Return Value
+## Return Value
 
 An entity query, configured to fetch all entities.
 

@@ -5,7 +5,7 @@
 
 Recognize result codes specific to the authorization services API.
 
-#### Overview
+## Overview
 
 Use the [`SecCopyErrorMessageString(_:_:)`](./seccopyerrormessagestring%28_,_%29.md) function to obtain a human readable string corresponding to these status codes.
 

@@ -20,7 +20,7 @@ var parent_audit_token: audit_token_t
 audit_token_t parent_audit_token;
 ```
 
-#### Discussion
+## Discussion
 
 This field is only available if the message [`version`](../es_message_t/version.md) is `4` or greater.
 

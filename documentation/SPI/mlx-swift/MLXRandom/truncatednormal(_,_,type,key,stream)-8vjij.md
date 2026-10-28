@@ -19,7 +19,7 @@ Generate values from a truncated normal distribution.
 func truncatedNormal<R, T>(_ range: Range<R>, _ shape: [Int] = [], type: T.Type = Float.self, key: MLXArray? = nil, stream: StreamOrDevice = .default) -> MLXArray where R : HasDType, R : Comparable, T : HasDType, T : BinaryFloatingPoint
 ```
 
-#### Discussion
+## Discussion
 
 The values are sampled from the truncated normal distribution in the range. An optional shape can be used to broadcast into a larger array.  An optional `Key` can be specified to control the PRNG.
 
@@ -33,7 +33,7 @@ let array = MLXRandom.truncatedNormal(0 ..< 10, [50], key: key)
 let array = MLXRandom.truncatedNormal(0.5 ..< 1, [50], key: key)
 ```
 
-##### See also
+### See also
 
 - [JAX Documentation](https://jax.readthedocs.io/en/latest/_modules/jax/_src/random.html#truncated_normal)
 

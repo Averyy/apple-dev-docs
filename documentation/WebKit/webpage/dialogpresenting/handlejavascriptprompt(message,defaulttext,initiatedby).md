@@ -21,7 +21,7 @@ A JavaScript `prompt()` function has been invoked.
 func handleJavaScriptPrompt(message: String, defaultText: String?, initiatedBy frame: WebPage.FrameInfo) async -> WebPage.JavaScriptPromptResult
 ```
 
-#### Return Value
+## Return Value
 
 The result of handling the invocation; if the result is affirmative, the response will include some text returned to JavaScript.
 

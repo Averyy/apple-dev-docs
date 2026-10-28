@@ -21,7 +21,7 @@ func CVOpenGLTextureCacheCreate(_ allocator: CFAllocator?, _ cacheAttributes: CF
 extern CVReturn CVOpenGLTextureCacheCreate(CFAllocatorRef allocator, CFDictionaryRef cacheAttributes, CGLContextObj cglContext, CGLPixelFormatObj cglPixelFormat, CFDictionaryRef textureAttributes, CVOpenGLTextureCacheRef*cacheOut);
 ```
 
-#### Return Value
+## Return Value
 
 Returns [`kCVReturnSuccess`](./kcvreturnsuccess.md) on success.
 

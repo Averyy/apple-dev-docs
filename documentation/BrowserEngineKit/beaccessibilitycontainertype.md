@@ -23,7 +23,7 @@ struct BEAccessibilityContainerType
 enum BEAccessibilityContainerType : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 Choose a value from this enumeration and set it as an element’s [`browserAccessibilityContainerType`](../ObjectiveC/nsobject-swift.class/browseraccessibilitycontainertype.md) to indicate the element’s container.
 

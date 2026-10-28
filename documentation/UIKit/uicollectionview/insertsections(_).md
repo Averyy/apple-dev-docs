@@ -23,7 +23,7 @@ func insertSections(_ sections: IndexSet)
 - (void) insertSections:(NSIndexSet *) sections;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to insert one or more sections into the collection view. This method adds the sections, and it is up to your data source to report the number of items in each section when asked for the information. The collection view then uses that information to get updated layout attributes for the newly inserted sections and items. If the insertions cause a change in the collection view’s visible content, those changes are animated into place.
 

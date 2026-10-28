@@ -19,7 +19,7 @@ var backgroundColor: NSColor? { get }
 @property (nonatomic, readonly, nullable) NSColor * backgroundColor;
 ```
 
-#### Discussion
+## Discussion
 
 This property has no meaning outside of Apple Print Products.
 

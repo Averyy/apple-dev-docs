@@ -19,7 +19,7 @@ optional func didReplaceCharacters()
 - (void) didReplaceCharacters;
 ```
 
-#### Discussion
+## Discussion
 
 See [`NSTextFinder`](../nstextfinder.md) for a complete description.
 

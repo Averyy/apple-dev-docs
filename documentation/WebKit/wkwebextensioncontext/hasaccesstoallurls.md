@@ -23,7 +23,7 @@ var hasAccessToAllURLs: Bool { get }
 @property (nonatomic, readonly) BOOL hasAccessToAllURLs;
 ```
 
-#### Discussion
+## Discussion
 
 This does not check for any `*` host patterns. In most cases you should use the broader [`hasAccessToAllHosts`](./hasaccesstoallhosts.md).
 

@@ -20,7 +20,7 @@ A directive that allows you to set a page’s kind, which affects its default ti
 @PageKind(_ kind: Kind)
 ```
 
-#### Overview
+## Overview
 
 The `@PageKind` directive tells Swift-DocC to treat a documentation page as a particular “kind”. This is used to determine the page’s default navigator icon, as well as the default title heading on the page itself.
 

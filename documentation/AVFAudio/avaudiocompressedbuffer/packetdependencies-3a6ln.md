@@ -21,7 +21,7 @@ The buffer’s array of packet dependencies.
 var packetDependencies: [AudioStreamPacketDependencyDescription]? { get }
 ```
 
-#### Discussion
+## Discussion
 
 If the audio format doesn’t use packet dependencies, this value is `nil`.
 

@@ -25,7 +25,7 @@ var attributes: [MTRAttributePath : [String : Any]]? { get }
 @property (nonatomic, copy, readonly, nullable) NSDictionary<MTRAttributePath *,NSDictionary<NSString *,id> *> * attributes;
 ```
 
-#### Discussion
+## Discussion
 
 1. The attributes in extraAttributesToRead on MTRCommissioningParameters.
 2. The FeatureMap attributes of all Network Commissioning clusters on the commissionee.

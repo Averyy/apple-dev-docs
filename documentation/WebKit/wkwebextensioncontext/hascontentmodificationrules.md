@@ -23,7 +23,7 @@ var hasContentModificationRules: Bool { get }
 @property (nonatomic, readonly) BOOL hasContentModificationRules;
 ```
 
-#### Discussion
+## Discussion
 
 This includes both static rules available in the extension’s manifest and dynamic rules applied during a browsing session.
 

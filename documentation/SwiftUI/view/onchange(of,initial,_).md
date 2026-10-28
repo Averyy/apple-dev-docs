@@ -33,11 +33,11 @@ func onChange<V>(of value: V, initial: Bool = false, _ action: @escaping (V, V) 
 
 - [Understanding the navigation stack](../understanding-the-navigation-stack.md)
 
-#### Return Value
+## Return Value
 
 A view that fires an action when the specified value changes.
 
-#### Discussion
+## Discussion
 
 You can use `onChange` to trigger a side effect as the result of a value changing, such as an `Environment` key or a `Binding`.
 

@@ -31,15 +31,15 @@ final class AccessLogger
 - [Troubleshooting and access reporting](./troubleshooting.md)
 - [Configuring libraries](./configuring-libraries.md)
 
-#### Overview
+## Overview
 
 This reporter integrates with the Swift Log library to provide structured logging of configuration accesses. Each configuration access generates a log entry with detailed metadata about the operation, making it easy to track configuration usage and debug issues.
 
-#### Package traits
+## Package traits
 
 This type is guarded by the `Logging` package trait.
 
-#### Usage
+## Usage
 
 Create an access logger and pass it to your configuration reader:
 
@@ -54,7 +54,7 @@ let config = ConfigReader(
 )
 ```
 
-#### Log format
+## Log format
 
 Each access event generates a structured log entry with metadata including:
 

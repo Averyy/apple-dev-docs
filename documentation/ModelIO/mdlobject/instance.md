@@ -24,7 +24,7 @@ var instance: MDLObject? { get set }
 @property (nonatomic, retain, nullable) MDLObject * instance;
 ```
 
-#### Discussion
+## Discussion
 
 Some asset formats supported by Model I/O provide *instancing*, a feature where the asset provides a single definition for an object, then can reuse that definition at multiple points in a scene. For example, an asset describing a scene of a table and chairs could contain mesh and material data for only one chair, then use instancing to place several of the same chair around the table.
 

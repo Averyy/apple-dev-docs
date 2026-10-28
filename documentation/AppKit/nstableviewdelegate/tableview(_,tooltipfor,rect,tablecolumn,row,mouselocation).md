@@ -20,11 +20,11 @@ optional func tableView(_ tableView: NSTableView, toolTipFor cell: NSCell, rect:
 - (NSString *) tableView:(NSTableView *) tableView toolTipForCell:(NSCell *) cell rect:(NSRectPointer) rect tableColumn:(NSTableColumn *) tableColumn row:(NSInteger) row mouseLocation:(NSPoint) mouseLocation;
 ```
 
-#### Return Value
+## Return Value
 
 A string that should be displayed in the tooltip. Return `nil` or the empty string if no tooltip is desired.
 
-#### Discussion
+## Discussion
 
 By default, `rect` is computed as
 

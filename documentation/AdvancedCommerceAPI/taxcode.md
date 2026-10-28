@@ -15,7 +15,7 @@ A tax code that applies to a SKU.
 string taxCode
 ```
 
-#### Discussion
+## Discussion
 
 You select a tax code for every SKU. For more information, see [Choosing tax codes for your SKUs](./taxcodes.md).
 

@@ -16,11 +16,11 @@ Defines an opaque data type representing an asynchronous search.
 class SKSearch
 ```
 
-#### Overview
+## Overview
 
 A search object is created when you call the [`SKSearchCreate(_:_:_:)`](./api-1443079-sksearchcreate.md) function.
 
-##### Special Considerations
+### Special Considerations
 
 You cannot use [`CFMakeCollectable`](../CoreFoundation/cfmakecollectable.md) with SKSearch objects. In a garbage-collected environment, you must use [`CFRelease`](../CoreFoundation/cfrelease.md) to dispose of an SKSearch object.
 

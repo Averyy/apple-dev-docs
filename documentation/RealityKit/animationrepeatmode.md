@@ -20,7 +20,7 @@ Options that determine whether an animation replays after completion.
 enum AnimationRepeatMode
 ```
 
-#### Overview
+## Overview
 
 Adopters of [`AnimationDefinition`](./animationdefinition.md), such as [`SampledAnimation`](./sampledanimation.md), offer repeat options of this type through the [`repeatMode`](./sampledanimation/repeatmode.md) property.
 

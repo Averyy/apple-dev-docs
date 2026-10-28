@@ -21,11 +21,11 @@ Send the elements of the asynchronous sequence to the channel.
 ## Declaration
 
 ```swift
-nonisolated
-(nonsending) mutating func send<S>(contentsOf sequence: consuming sending S) async throws where Element : Sendable, Element == S.Element, S : Sendable, S : AsyncSequence
+nonisolated(nonsending)
+mutating func send<S>(contentsOf sequence: consuming sending S) async throws where Element : Sendable, Element == S.Element, S : Sendable, S : AsyncSequence
 ```
 
-#### Discussion
+## Discussion
 
 This method returns once the provided asynchronous sequence or the channel finished.
 

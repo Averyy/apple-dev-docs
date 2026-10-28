@@ -6,7 +6,7 @@
 
 The number of rows in the object image array.
 
-#### Overview
+## Overview
 
 The number of vertical positions or increments in the range defined by the minimum and maximum tilt values. The value of this field must be positive.
 

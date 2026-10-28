@@ -20,7 +20,7 @@ An attempt to name an object with prohibited characters.
 static var nameContainsProhibitedCharacters: HMError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 Only letters, symbols, numbers, spaces, and apostrophes are permitted in names.
 

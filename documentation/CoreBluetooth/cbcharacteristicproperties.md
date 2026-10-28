@@ -25,7 +25,7 @@ struct CBCharacteristicProperties
 enum CBCharacteristicProperties : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 Since you can combine characteristic properties, a characteristic may have multiple property values set.
 

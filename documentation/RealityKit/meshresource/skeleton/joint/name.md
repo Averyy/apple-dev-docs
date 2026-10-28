@@ -20,7 +20,7 @@ The name of this joint.
 var name: String
 ```
 
-#### Discussion
+## Discussion
 
 Each joint needs to have a unique name within its skeleton.
 

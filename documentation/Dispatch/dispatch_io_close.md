@@ -21,7 +21,7 @@ Closes the specified channel to new read and write operations.
 extern void dispatch_io_close(dispatch_io_t channel, dispatch_io_close_flags_t flags);
 ```
 
-#### Discussion
+## Discussion
 
 After calling this function, you should not schedule any more read or write operations on the channel. Doing so causes an error to be sent to your handler.
 

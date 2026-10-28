@@ -23,7 +23,7 @@ case unspecified
 UISplitViewControllerStyleUnspecified
 ```
 
-#### Discussion
+## Discussion
 
 A split view controller with this style represents a classic split view controller created using any other approach than [`init(style:)`](../init%28style%29.md). You cannot create a split view controller with a style of [`UISplitViewController.Style.unspecified`](./unspecified.md) using this initializer.
 

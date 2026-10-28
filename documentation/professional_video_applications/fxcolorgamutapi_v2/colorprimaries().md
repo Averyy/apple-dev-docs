@@ -24,7 +24,7 @@ func colorPrimaries() -> FxColorPrimaries
 
 - [Managing color space and gamut in plug-ins](../../Professional-Video-Applications/managing-color-space-and-gamut-in-plug-ins.md)
 
-#### Return Value
+## Return Value
 
 An [`FxColorPrimaries`](../fxcolorprimaries.md) value that describes the project’s working gamut.
 

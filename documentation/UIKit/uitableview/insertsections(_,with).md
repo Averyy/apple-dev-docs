@@ -23,7 +23,7 @@ func insertSections(_ sections: IndexSet, with animation: UITableView.RowAnimati
 - (void) insertSections:(NSIndexSet *) sections withRowAnimation:(UITableViewRowAnimation) animation;
 ```
 
-#### Discussion
+## Discussion
 
 `UITableView` calls the relevant delegate and data source methods immediately afterward to get the cells and other content for visible cells.
 

@@ -25,7 +25,7 @@ let NSMigrationPropertyMappingKey: String
 extern NSString * const NSMigrationPropertyMappingKey;
 ```
 
-#### Discussion
+## Discussion
 
 To access this key in a custom value expression string in the Xcode mapping model editor use `$propertyMapping`.
 

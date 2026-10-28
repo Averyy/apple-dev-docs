@@ -18,11 +18,11 @@ Creates an outline disclosure system accessory with the specified display state,
 static func outlineDisclosure(displayed: UICellAccessory.DisplayedState = .always, options: UICellAccessory.OutlineDisclosureOptions = OutlineDisclosureOptions(), actionHandler: UICellAccessory.ActionHandler? = nil) -> UICellAccessory
 ```
 
-#### Return Value
+## Return Value
 
 A configured outline disclosure cell accessory. This accessory is a rotating chevron for use in outlines. In iOS and for headers in Mac Catalyst, this accessory appears on the trailing edge. For cells in Mac Catalyst, this accessory appears on the leading edge.
 
-#### Discussion
+## Discussion
 
 Use this cell accessory to indicate that an item can expand and collapse, and to enable the user to toggle between the expanded and collapsed states.
 

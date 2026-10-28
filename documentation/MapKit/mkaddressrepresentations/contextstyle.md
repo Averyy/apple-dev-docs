@@ -25,7 +25,7 @@ enum ContextStyle
 enum MKAddressRepresentationsContextStyle : NSInteger;
 ```
 
-#### Discussion
+## Discussion
 
 Use the [`MKAddressRepresentations.ContextStyle`](./contextstyle.md) to configure the degree of disambiguation context to include in an address representation from [`MKAddressRepresentations`](../mkaddressrepresentations.md), such as including the region name with the city.
 

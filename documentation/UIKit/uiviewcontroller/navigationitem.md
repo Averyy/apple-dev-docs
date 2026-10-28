@@ -23,7 +23,7 @@ var navigationItem: UINavigationItem { get }
 @property (nonatomic, strong, readonly) UINavigationItem * navigationItem;
 ```
 
-#### Discussion
+## Discussion
 
 This is a unique instance of [`UINavigationItem`](../uinavigationitem.md) created to represent the view controller when it is pushed onto a navigation controller. The first time the property is accessed, the [`UINavigationItem`](../uinavigationitem.md) object is created. Therefore, you should not access this property if you are not using a navigation controller to display the view controller. To ensure the navigation item is configured, you can either override this property and add code to create the bar button items when first accessed or create the items in your view controller’s initialization code.
 

@@ -5,7 +5,7 @@
 
 Organize your resources into groups and influence when they become accessible to the GPU.
 
-#### Overview
+## Overview
 
 Metal apps typically create resources, such as textures and buffers, so that their shaders can work with data as they run on the GPU. These resources need to be in memory that’s accessible to the GPU, or *resident*, so the shaders can access their data.
 
@@ -23,7 +23,7 @@ Residency sets help you mitigate these performance issues and delays. With a res
 
 You can attach each residency set to a command buffer or an entire command queue. Attaching a residency set to a command buffer removes the need to tell each of its command encoders which resources they need to use. Similarly, attaching a residency set to a command queue removes the need to attach that residency set to each of its command buffers.
 
-##### Make a residency set and add allocations to it
+### Make a residency set and add allocations to it
 
 Create a residency set by configuring an [`MTLResidencySetDescriptor`](./mtlresidencysetdescriptor.md) instance and passing it to the [`makeResidencySet(descriptor:)`](./mtldevice/makeresidencyset%28descriptor%29.md) method of an [`MTLDevice`](./mtldevice.md).
 
@@ -116,7 +116,7 @@ See [`MTLResidencySet`](./mtlresidencyset.md) for information about working with
 - Adding and removing allocations over time
 - Accounting for resource hazards
 
-##### Attach a residency set to a command buffer
+### Attach a residency set to a command buffer
 
 Connect an [`MTLCommandBuffer`](./mtlcommandbuffer.md) instance to a residency set’s resource allocations by attaching the set to the command buffer with the [`useResidencySet(_:)`](./mtlcommandbuffer/useresidencyset%28_%29.md) or [`useResidencySets(_:)`](./mtlcommandbuffer/useresidencysets%28_%29.md) method. Every command buffer can maintain a list of up to 32 different residency sets.
 
@@ -145,7 +145,7 @@ You don’t need to call the following methods for any allocation in a residency
 
 Attaching a residency set to a command buffer takes less CPU runtime and overhead than calling these methods for each encoder within a command buffer.
 
-##### Attach a residency set to a command queue and its command buffers
+### Attach a residency set to a command queue and its command buffers
 
 Connect an [`MTLCommandQueue`](./mtlcommandqueue.md) instance to a residency set’s resource allocations by attaching the set to the queue with its [`addResidencySet(_:)`](./mtlcommandqueue/addresidencyset%28_%29.md) or [`addResidencySets(_:)`](./mtlcommandqueue/addresidencysets%28_%29.md) method. Every command queue can maintain a list of up to 32 different residency sets.
 
@@ -167,7 +167,7 @@ When your app calls a command buffer’s [`commit()`](./mtlcommandbuffer/commit%
 
 Attaching a residency set to a command queue is more efficient than attaching that residency set to multiple command buffers from that queue.
 
-##### Detach a residency set from a command queue
+### Detach a residency set from a command queue
 
 When your command queue doesn’t need the resources of a residency set, disconnect it from the queue by calling the [`removeResidencySet(_:)`](./mtlcommandqueue/removeresidencyset%28_%29.md) or [`removeResidencySets(_:)`](./mtlcommandqueue/removeresidencysets%28_%29.md) method.
 
@@ -185,7 +185,7 @@ commandQueue.removeResidencySet(residencySet)
 
 The residency set remains attached to any of the queue’s command buffers already in-flight with a status equal to [`MTLCommandBufferStatus.committed`](./mtlcommandbufferstatus/committed.md) or [`MTLCommandBufferStatus.scheduled`](./mtlcommandbufferstatus/scheduled.md).
 
-##### Request residency ahead of time
+### Request residency ahead of time
 
 To make allocations in a residency set resident (for allocations that aren’t already resident), the Metal framework needs to do some work on the CPU. By default, Metal does this work when you call the [`commit()`](./mtlcommandbuffer/commit%28%29.md) method of the first command buffer that’s using the residency set. Making the allocations resident at this time can delay the graphics driver from submitting the command buffer to the GPU.
 
@@ -207,7 +207,7 @@ Call this method at any time before you commit the first command buffer that rel
 
 > **Note**:  The [`requestResidency()`](./mtlresidencyset/requestresidency%28%29.md) method may postpone some of the necessary steps to make allocations resident in scenarios where other apps have competing memory needs.
 
-##### Conclude residency for the resources
+### Conclude residency for the resources
 
 When your app no longer needs a residency set’s allocations to be accessible to the GPU, call the [`endResidency()`](./mtlresidencyset/endresidency%28%29.md) method, which effectively releases them.
 

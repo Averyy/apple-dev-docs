@@ -21,7 +21,7 @@ Configure IP to disable fragmentation on outgoing packets.
 func fragmentationDisabled(_ dontFragment: Bool) -> IP
 ```
 
-#### Discussion
+## Discussion
 
 Equivalent to `IP_DONTFRAG` for IPv4 and `IPV6_DONTFRAG` for IPv6.
 

@@ -23,7 +23,7 @@ var previewSize: CGSize { get }
 @property (nonatomic, readonly) CGSize previewSize;
 ```
 
-#### Discussion
+## Discussion
 
 You might use this property when configuring animations. If the item does not have an associated preview, this property is set to `CGSizeZero`.
 

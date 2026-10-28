@@ -24,7 +24,7 @@ var outputSettings: [String : Any]? { get }
 @property (nonatomic, readonly, nullable) NSDictionary<NSString *,id> * outputSettings;
 ```
 
-#### Discussion
+## Discussion
 
 A value of `nil` indicates that the input passes the samples through to the output without reencoding them.
 

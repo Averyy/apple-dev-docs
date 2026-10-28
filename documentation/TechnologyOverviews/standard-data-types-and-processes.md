@@ -20,7 +20,7 @@ In Objective-C, integers, floating-point values, and other primitive types map t
 
 ---
 
-#### Choose the best configuration for variables
+## Choose the best configuration for variables
 
 The variables you create are either *mutable* or *immutable*, meaning you can change their values after initialization or you can’t. Mutability is an important consideration when designing data structures because it impacts how you move data around your app. A structure with only immutable data values doesn’t change, so multiple tasks can safely access that structure at the same time. The same isn’t true if the structure contains a mutable value. Tasks must synchronize access to a mutable structure to avoid corrupting the data inside it.
 
@@ -37,7 +37,7 @@ Choose immutable types to represent your data whenever possible. Because their v
 
 ---
 
-#### Prepare to save your app’s data to disk
+## Prepare to save your app’s data to disk
 
 At some point, you’re going to want to save your app’s data to disk. The first step of this process is to convert your structured data into a serial stream of bytes that you can write to a file, which you do using the [archiving and serialization](../Foundation/archives-and-serialization.md) process. This process converts your in-memory data structures to a stream of bytes that you can then write to disk. When reading content from disk, you reverse this process by recreating your data structures from the serialized stream of bytes.
 
@@ -47,7 +47,7 @@ To serialize types in Objective-C, adopt the [`NSCoding`](../Foundation/nscoding
 
 ---
 
-#### Format data for different audiences
+## Format data for different audiences
 
 Bringing your app to other countries involves localizing text and other content to match a person’s language, but it also involves formatting data according to the person’s regional settings. Different countries and regions have rules for how to format numbers, dates, currencies, and other types of data. For example, one country might separate the fractional part of a currency using a comma, and another might use a period. Formatting data for the current [locale](../Foundation/locale.md) is one step in the [internationalization process](../Xcode/supporting-multiple-languages-in-your-app.md), which you use to make your app available globally.
 
@@ -57,7 +57,7 @@ To format values in Objective-C, use an instance of the [`Formatter`](../Foundat
 
 ---
 
-#### Filter, sort, and compare items
+## Filter, sort, and compare items
 
 Working on large amounts of data can make it difficult to organize and find that data. As the number of items in an array increases, [apply filters](../Foundation/filters-and-sorting.md) to locate the items you want. You can also [sort](../Foundation/filters-and-sorting.md) the contents of an array using rules you supply.
 
@@ -75,7 +75,7 @@ Once you have a filtered list of results, apply sort descriptors to arrange them
 
 ---
 
-#### Secure your data
+## Secure your data
 
 Protect your app’s data, and store any data you write to disk securely. People’s devices contain a lot of personal information, and even information that might not seem personal can expose details about someone’s habits or choices. Apple platforms make it easy to encrypt and decrypt the data and files you create. In addition, make sure you adopt [secure policies](../Security/Security.md) for handling data to reduce the likelihood of a malicious attack gaining access to that data.
 

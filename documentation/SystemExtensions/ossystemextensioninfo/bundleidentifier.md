@@ -17,7 +17,7 @@ var bundleIdentifier: String { get }
 @property (copy, readonly) NSString * bundleIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 The bundle identifier of the extension (CFBundleIdentifier)
 

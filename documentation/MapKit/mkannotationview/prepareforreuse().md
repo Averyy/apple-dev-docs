@@ -24,7 +24,7 @@ func prepareForReuse()
 - (void) prepareForReuse;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation of this method does nothing. You can override it in your custom annotation views and use it to put the view in a known state before the map view returns it to your map view delegate.
 

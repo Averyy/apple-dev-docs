@@ -21,7 +21,7 @@ An enumeration that acts as a namespace for Swift overlays to BLAS.
 struct BLAS
 ```
 
-#### Overview
+## Overview
 
 The [`BLAS`](./blas.md) enumeration provides methods and structures that offer a Swift-friendly API for Basic Linear Algebra Subprograms (BLAS) and Linear Algebra PACKage (LAPACK) operations.
 

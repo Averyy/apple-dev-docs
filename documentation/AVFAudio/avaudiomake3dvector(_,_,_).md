@@ -25,7 +25,7 @@ func AVAudioMake3DVector(_ x: Float, _ y: Float, _ z: Float) -> AVAudio3DVector
 static AVAudio3DVector AVAudioMake3DVector(float x, float y, float z);
 ```
 
-#### Return Value
+## Return Value
 
 A new [`AVAudio3DVector`](./avaudio3dvector.md) instance.
 

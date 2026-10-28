@@ -26,7 +26,7 @@ var overallDurationHint: CMTime { get }
 @property (nonatomic, readonly) CMTime overallDurationHint;
 ```
 
-#### Discussion
+## Discussion
 
 For QuickTime movie files and MPEG-4 files, the asset retrieves this value from the `mehd` box of the `mvex` box, if present. If no total fragment duration hint is available, the value of this property is [`invalid`](../../CoreMedia/cmtime/invalid.md).
 

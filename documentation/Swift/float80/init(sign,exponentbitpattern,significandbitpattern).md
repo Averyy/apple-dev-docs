@@ -15,7 +15,7 @@ Creates a new instance from the specified sign and bit patterns.
 init(sign: FloatingPointSign, exponentBitPattern: UInt, significandBitPattern: UInt64)
 ```
 
-#### Discussion
+## Discussion
 
 The values passed as `exponentBitPattern` and `significandBitPattern` are interpreted in the binary interchange format defined by the [IEEE 754 specification](http://ieeexplore.ieee.org/servlet/opac?punumber=4610933).
 

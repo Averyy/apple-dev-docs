@@ -19,7 +19,7 @@ var isHidden: Bool { get set }
 @property (assign, readwrite, getter=isHidden) BOOL hidden;
 ```
 
-#### Discussion
+## Discussion
 
 The system stores the files on disk, but it doesn’t display them to the user. For example, you could set this value to [`false`](../../Swift/false.md) when performing a dry run of a migration.
 

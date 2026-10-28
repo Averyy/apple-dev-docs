@@ -26,11 +26,11 @@ func projectPoint(_ point: SCNVector3) -> SCNVector3
 - (SCNVector3) projectPoint:(SCNVector3) point;
 ```
 
-#### Return Value
+## Return Value
 
 The corresponding point in the screen-space (view, layer, or GPU viewport) coordinate system of the scene renderer.
 
-#### Discussion
+## Discussion
 
 The z-coordinate of the returned point describes the depth of the projected point relative to the near and far clipping planes of the renderer’s viewing frustum (defined by its [`pointOfView`](./pointofview.md) node). Projecting a point on the near clipping plane returns a point whose z-coordinate is `0.0`; projecting a point on the far clipping plane returns a point whose z-coordinate is `1.0`.
 

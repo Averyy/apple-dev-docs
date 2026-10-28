@@ -15,7 +15,7 @@ Registers your driver with the networking stack.
 virtual kern_return_t RegisterEthernetInterface(IOUserNetworkMACAddress macAddress, IOUserNetworkPacketBufferPool *pool, IOUserNetworkPacketQueue **queues, uint32_t queueCount);
 ```
 
-#### Discussion
+## Discussion
 
 Call this method toward the end of your [`Start`](../../DriverKit/ioservice/start.md) method when your driver is ready to begin processing incoming and outgoing network packets.
 

@@ -21,7 +21,7 @@ Measures the execution of the specified closure.
 func withIntervalSignpost<T>(_ name: StaticString, id: OSSignpostID = .exclusive, around task: () throws -> T) rethrows -> T
 ```
 
-#### Discussion
+## Discussion
 
 The signposter uses a signpost ID to pair the beginning and the end of a signposted interval, which is necessary because multiple intervals with the same configuration and scope can be in-flight simultaneously. If only one interval with a specific configuration can execute at any particular time, pass [`exclusive`](../ossignpostid/exclusive.md) as the `id` parameter. Otherwise, use the [`makeSignpostID()`](./makesignpostid%28%29.md) and [`makeSignpostID(from:)`](./makesignpostid%28from%29.md) methods to generate a signpost identifier, as the following example shows:
 

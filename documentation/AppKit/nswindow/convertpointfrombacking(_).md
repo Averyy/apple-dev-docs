@@ -19,7 +19,7 @@ func convertPointFromBacking(_ point: NSPoint) -> NSPoint
 - (NSPoint) convertPointFromBacking:(NSPoint) point;
 ```
 
-#### Return Value
+## Return Value
 
 A point in the window’s coordinate system.
 

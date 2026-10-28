@@ -21,7 +21,7 @@ Creates a read-only buffer by allocating and initializing audio data via closure
 init(format: AVAudioFormat, frameCapacity: Int, initializingWith: (UnsafeMutablePointer<AudioBufferList>) throws -> Void) throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if allocation fails or the closure throws.
 

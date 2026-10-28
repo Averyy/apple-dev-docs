@@ -26,7 +26,7 @@ func removeAction(forKey key: String)
 - (void) removeActionForKey:(NSString *) key;
 ```
 
-#### Discussion
+## Discussion
 
 If the node is currently running an action that matches the key, SceneKit removes that action from the node, skipping any remaining animation it would perform but keeping any changes already made to the node.
 

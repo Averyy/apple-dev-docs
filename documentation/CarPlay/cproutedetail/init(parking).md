@@ -21,11 +21,11 @@ convenience init(parking: String)
 + (instancetype) routeDetailWithParking:(NSString *) parking;
 ```
 
-#### Return Value
+## Return Value
 
 A new @c CPRouteDetail instance representing the parking information.
 
-#### Discussion
+## Discussion
 
 Use this method to surface parking-related details (availability, estimated cost, distance to destination) so users can factor parking into their route selection.
 

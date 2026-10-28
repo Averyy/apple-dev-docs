@@ -21,7 +21,7 @@ typealias ABRecordType = UInt32
 typedef uint32_t ABRecordType;
 ```
 
-#### Discussion
+## Discussion
 
 See [Record Types](./api-1614747-record-types.md).
 

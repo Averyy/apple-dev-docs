@@ -23,7 +23,7 @@ var `protocol`: DDDevice.Protocol { get set }
 @property (nonatomic, assign, readwrite) DDDeviceProtocol protocol;
 ```
 
-#### Discussion
+## Discussion
 
 The value is [`DDDevice.Protocol.dial`](./protocol-swift.enum/dial.md) for the discovery of third-party media receivers.
 

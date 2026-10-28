@@ -27,7 +27,7 @@ func resumeSyncForUbiquitousItem(at url: URL, with behavior: NSFileManagerResume
 - (void) resumeSyncForUbiquitousItemAtURL:(NSURL *) url withBehavior:(NSFileManagerResumeSyncBehavior) behavior completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Always call this method when your app closes an item to allow the file provider to sync local changes back to the server.
 

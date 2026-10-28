@@ -21,7 +21,7 @@ A list of very-shortly-named months in this calendar, localized to the Calendarâ
 var veryShortMonthSymbols: [String] { get }
 ```
 
-#### Discussion
+## Discussion
 
 For example, for English in the Gregorian calendar, returns `["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"]`.
 

@@ -19,7 +19,7 @@ optional func displayDidEndReconfiguration(_ display: VZGraphicsDisplay)
 - (void) displayDidEndReconfiguration:(VZGraphicsDisplay *) display;
 ```
 
-#### Discussion
+## Discussion
 
 Frame updates have arrived at the most recently requested display size and configuration.
 

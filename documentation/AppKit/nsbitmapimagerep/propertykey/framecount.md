@@ -19,7 +19,7 @@ static let frameCount: NSBitmapImageRep.PropertyKey
 extern NSBitmapImageRepPropertyKey NSImageFrameCount;
 ```
 
-#### Discussion
+## Discussion
 
 This value is used when reading in data.
 

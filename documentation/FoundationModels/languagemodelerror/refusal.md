@@ -20,7 +20,7 @@ Information about a model refusal.
 struct Refusal
 ```
 
-#### Overview
+## Overview
 
 Refusal failures indicate that the model chose not to respond to a prompt.
 

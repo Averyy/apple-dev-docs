@@ -16,7 +16,7 @@ Sets the pixel format for the layer’s color textures to the specified value.
 void cp_layer_renderer_configuration_set_color_format(cp_layer_renderer_configuration_t configuration, MTLPixelFormat color_format);
 ```
 
-#### Discussion
+## Discussion
 
 Use this function to modify the configuration details for your layer. Fetch the layer’s supported pixel formats using the [`cp_layer_renderer_capabilities_supported_color_format`](./cp_layer_renderer_capabilities_supported_color_format.md) function.
 

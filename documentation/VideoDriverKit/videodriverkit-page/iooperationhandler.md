@@ -15,7 +15,7 @@ A block that tells the device to perform a video IO operation.
 typedef int (^)(unsigned int, unsigned int, unsigned int, unsigned long long, unsigned long long) IOOperationHandler;
 ```
 
-#### Discussion
+## Discussion
 
 See also [`SetIOOperationHandler`](../iouservideodevice/setiooperationhandler.md).
 

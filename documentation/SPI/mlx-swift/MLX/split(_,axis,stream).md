@@ -17,7 +17,7 @@ Split an array into 2 equal size pieces along a given axis.
 func split(_ array: MLXArray, axis: Int = 0, stream: StreamOrDevice = .default) -> (MLXArray, MLXArray)
 ```
 
-#### Discussion
+## Discussion
 
 Splits the array into 2 pieces along a given axis and returns an tuple of `MLXArray`:
 
@@ -27,7 +27,7 @@ let array = MLXArray(0 ..< 12, (4, 3))
 let (a, b) = split(array)
 ```
 
-##### See Also
+### See Also
 
 - [Shapes](./shapes.md)
 - [`split(_:parts:axis:stream:)`](./split%28_,parts,axis,stream%29.md)

@@ -25,7 +25,7 @@ var globallyUniqueString: String { get }
 @property (copy, readonly) NSString * globallyUniqueString;
 ```
 
-#### Discussion
+## Discussion
 
 The global ID for the process includes the host name, process ID, and a time stamp, which ensures that the ID is unique for the network. This property generates a new string each time its getter is invoked, and it uses a counter to guarantee that strings created from the same process are unique.
 

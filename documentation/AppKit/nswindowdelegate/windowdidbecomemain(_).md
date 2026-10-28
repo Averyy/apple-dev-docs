@@ -20,7 +20,7 @@ optional func windowDidBecomeMain(_ notification: Notification)
 - (void) windowDidBecomeMain:(NSNotification *) notification;
 ```
 
-#### Discussion
+## Discussion
 
 You can retrieve the window object in question by sending [`object`](../../Foundation/nsnotification/object.md) to `notification`.
 

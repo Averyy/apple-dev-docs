@@ -5,7 +5,7 @@
 
 Ensure that your server meets the requirements for supporting Exposure Notifications.
 
-#### Overview
+## Overview
 
 Apps that use the [Exposure Notification](./ExposureNotification.md) framework rely on a key server to identify potential exposure to individuals diagnosed with COVID-19, the disease caused by the SARS-CoV-2 virus. The key server is responsible for collecting and distributing exposure keys to allow on-device exposure detection. This article describes how to provide the data that allows exposure notification to work, and details the data format the [Exposure Notification](./ExposureNotification.md) framework requires.
 
@@ -22,7 +22,7 @@ Google has created an [implementation of a key server ](https://github.com/googl
 
 Before you begin setting up your key server, [request an Exposure Notification Entitlement](https://developer.apple.com/contact/request/exposure-notification-entitlement). Once your request is accepted, you’ll be asked to provide information that clients will use to authenticate the data they receive from your server, such as its public key.
 
-##### Reject Invalid Temporary Exposure Keys
+### Reject Invalid Temporary Exposure Keys
 
 A key server must reject invalid key files uploaded from a client app. Uploaded key data is considered invalid if:
 
@@ -33,7 +33,7 @@ If `TEKRollingPeriod` is not included, use a default value of 144. You may optio
 
 For detailed information on implementing key validity checks, see [Exposure Notification Cryptography Specification](https://covid19-static.cdn-apple.com/applications/covid19/current/static/contact-tracing/pdf/ExposureNotification-CryptographySpecificationv1.2.pdf).
 
-##### Take Precautions with Temporary Exposure Keys
+### Take Precautions with Temporary Exposure Keys
 
 To help ensure that the data sent to client devices canʼt be used to reveal a userʼs identity, your key server:
 
@@ -41,11 +41,11 @@ To help ensure that the data sent to client devices canʼt be used to reveal a u
 - Must not distribute temporary exposure key data until at least 2 hours after the end of the keyʼs expiration window
 - Must periodically delete any stored temporary exposure keys to ensure that none are over 30 days old
 
-##### Sign Downloads with the Latest Registered Certificate
+### Sign Downloads with the Latest Registered Certificate
 
 A key server must always sign files with the private key that corresponds to the latest public key provided to Apple using SHA-256 with ECDSA. Exposure notification clients reject keys retrieved from a server when they can’t verify them against the current public key.
 
-##### Package Temporary Exposure Key Data in a Zip Archive
+### Package Temporary Exposure Key Data in a Zip Archive
 
 A key server must deliver diagnosis key data to clients as a zip archive that contains two files, both stored at the root level, and both with the same base name, but different extensions. The file that contains the temporary exposure key data must have the extension `.bin` and the file that contains the signature and signature-verification metadata must have the extension `.sig`.
 

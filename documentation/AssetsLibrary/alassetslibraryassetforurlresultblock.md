@@ -12,7 +12,7 @@ Signature for the block executed if the user has granted access to the caller to
 typedef void (^)(ALAsset *) ALAssetsLibraryAssetForURLResultBlock;
 ```
 
-#### Discussion
+## Discussion
 
 The block parameter is defined as follows:
 

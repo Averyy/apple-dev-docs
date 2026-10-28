@@ -23,7 +23,7 @@ func completeExtensionConfigurationRequest()
 - (void) completeExtensionConfigurationRequest;
 ```
 
-#### Discussion
+## Discussion
 
 At some point after you call this method, the system dismisses the associated view controller.
 

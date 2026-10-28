@@ -19,7 +19,7 @@ A class that defines app extension configurations for the URL Filter control pro
 @preconcurrency class NEURLFilterControlProviderConfiguration
 ```
 
-#### Overview
+## Overview
 
 [`NEURLFilterControlProvider`](./neurlfiltercontrolprovider.md) uses this class to conform to the [ExtensionKit](../ExtensionKit/ExtensionKit.md) framework. Your extension doesn’t need to use this class directly.
 

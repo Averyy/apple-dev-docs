@@ -19,7 +19,7 @@ var tailIndent: CGFloat { get set }
 @property CGFloat tailIndent;
 ```
 
-#### Discussion
+## Discussion
 
 If positive, this value is the distance from the leading margin (for example, the left margin in left-to-right text). If 0 or negative, it’s the distance from the trailing margin.
 

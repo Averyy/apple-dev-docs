@@ -21,7 +21,7 @@ Instruction to render a quadratic Bezier curve starting from the current locatio
 HVFPartRenderInstructionAddQuad
 ```
 
-#### Discussion
+## Discussion
 
 The `HVFPartRenderParams` union will contain the data for `addQuad`.
 

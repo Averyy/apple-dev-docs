@@ -6,7 +6,7 @@
 
 The frame rate.
 
-#### Discussion
+## Discussion
 
 The positive or negative rate at which the frame animation in a view plays, if frame animation is enabled. The value of this field must be from `–100.0` through `+100.0`, inclusive.
 

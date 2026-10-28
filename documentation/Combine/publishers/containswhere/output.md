@@ -21,7 +21,7 @@ The kind of values published by this publisher.
 typealias Output = Bool
 ```
 
-#### Discussion
+## Discussion
 
 This publisher produces Boolean elements.
 

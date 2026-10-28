@@ -19,11 +19,11 @@ func numberOfItems(inSection section: Int) -> Int
 - (NSInteger) numberOfItemsInSection:(NSInteger) section;
 ```
 
-#### Return Value
+## Return Value
 
 The number of items in the section.
 
-#### Discussion
+## Discussion
 
 Use this method to get the number of items currently displayed by the collection view for the specified section. Do not call the methods of the data source to get this information.
 

@@ -22,7 +22,7 @@ A range expression that represents the entire range of a collection.
 enum UnboundedRange_
 ```
 
-#### Overview
+## Overview
 
 You can use the unbounded range operator (`...`) to create a slice of a collection that contains all of the collection’s elements. Slicing with an unbounded range is essentially a conversion of a collection instance into its slice type.
 

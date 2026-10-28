@@ -22,11 +22,11 @@ convenience init(cgAffineTransform t: CGAffineTransform)
 + (instancetype) vectorWithCGAffineTransform:(CGAffineTransform) t;
 ```
 
-#### Return Value
+## Return Value
 
  An autoreleased [`CIVector`](../civector.md) object of length 6.
 
-#### Discussion
+## Discussion
 
 The `CGAffineTransform` structure’s `a`, `b`, `c`, `d`, `tx` and `ty` values are stored in the vector’s six values.
 

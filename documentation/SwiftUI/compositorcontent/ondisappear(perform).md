@@ -17,11 +17,11 @@ nonisolated
 func onDisappear(perform action: (() -> Void)? = nil) -> some CompositorContent
 ```
 
-#### Return Value
+## Return Value
 
 A CompositorContent that triggers `action` after it disappears.
 
-#### Discussion
+## Discussion
 
 The exact moment that SwiftUI calls this method depends on the specific content type that you apply it to, but the `action` closure doesn’t execute until the content disappears from the interface.
 

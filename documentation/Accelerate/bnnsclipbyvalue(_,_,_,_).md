@@ -27,7 +27,7 @@ func BNNSClipByValue(_ dest: UnsafeMutablePointer<BNNSNDArrayDescriptor>, _ src:
 int BNNSClipByValue(BNNSNDArrayDescriptor *dest, const BNNSNDArrayDescriptor *src, float min_val, float max_val);
 ```
 
-#### Discussion
+## Discussion
 
 Use this function to clip the values in an input tensor to the range you specify. The function sets values below the minimum to the minimum, and values above the maximum to the maximum.
 

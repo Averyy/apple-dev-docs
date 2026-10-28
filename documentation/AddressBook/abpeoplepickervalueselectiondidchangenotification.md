@@ -15,7 +15,7 @@ Posted when the selection in a multivalue property is changed.
 extern NSString * const ABPeoplePickerValueSelectionDidChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The system posts this notification on the main actor.
 

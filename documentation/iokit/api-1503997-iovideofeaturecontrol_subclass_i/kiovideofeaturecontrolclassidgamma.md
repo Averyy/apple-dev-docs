@@ -14,7 +14,7 @@
 kIOVideoFeatureControlClassIDGamma = 'gmma'
 ```
 
-#### Discussion
+## Discussion
 
 A IOVideoFeatureControl that defines the function between incoming light level and output picture level. The units for the control's absolute value are undefined.
 

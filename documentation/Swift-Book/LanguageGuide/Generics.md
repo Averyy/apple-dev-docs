@@ -37,18 +37,6 @@ func swapTwoInts(_ a: inout Int, _ b: inout Int) {
 }
 ```
 
-<!--
-  - test: `whyGenerics`
-
-  ```swifttest
-  -> func swapTwoInts(_ a: inout Int, _ b: inout Int) {
-        let temporaryA = a
-        a = b
-        b = temporaryA
-     }
-  ```
--->
-
 This function makes use of in-out parameters to swap the values of `a` and `b`,
 as described in [In-Out Parameters](Functions.md#In-Out-Parameters).
 
@@ -63,18 +51,6 @@ swapTwoInts(&someInt, &anotherInt)
 print("someInt is now \(someInt), and anotherInt is now \(anotherInt)")
 // Prints "someInt is now 107, and anotherInt is now 3".
 ```
-
-<!--
-  - test: `whyGenerics`
-
-  ```swifttest
-  -> var someInt = 3
-  -> var anotherInt = 107
-  -> swapTwoInts(&someInt, &anotherInt)
-  -> print("someInt is now \(someInt), and anotherInt is now \(anotherInt)")
-  <- someInt is now 107, and anotherInt is now 3
-  ```
--->
 
 The `swapTwoInts(_:_:)` function is useful, but it can only be used with `Int` values.
 If you want to swap two `String` values,
@@ -95,24 +71,6 @@ func swapTwoDoubles(_ a: inout Double, _ b: inout Double) {
     b = temporaryA
 }
 ```
-
-<!--
-  - test: `whyGenerics`
-
-  ```swifttest
-  -> func swapTwoStrings(_ a: inout String, _ b: inout String) {
-        let temporaryA = a
-        a = b
-        b = temporaryA
-     }
-
-  -> func swapTwoDoubles(_ a: inout Double, _ b: inout Double) {
-        let temporaryA = a
-        a = b
-        b = temporaryA
-     }
-  ```
--->
 
 You may have noticed that the bodies of
 the `swapTwoInts(_:_:)`, `swapTwoStrings(_:_:)`, and `swapTwoDoubles(_:_:)` functions are identical.
@@ -148,25 +106,6 @@ func swapTwoValues<T>(_ a: inout T, _ b: inout T) {
 }
 ```
 
-<!--
-  - test: `genericFunctions`
-
-  ```swifttest
-  -> func swapTwoValues<T>(_ a: inout T, _ b: inout T) {
-        let temporaryA = a
-        a = b
-        b = temporaryA
-     }
-  ```
--->
-
-<!--
-  This could be done in one line using a tuple pattern: (a, b) = (b, a)
-  That's probably not as approachable here, and the novel syntax to avoid an
-  explicit placeholder variable might distract from the discussion of
-  generics.
--->
-
 The body of the `swapTwoValues(_:_:)` function
 is identical to the body of the `swapTwoInts(_:_:)` function.
 However, the first line of `swapTwoValues(_:_:)`
@@ -177,25 +116,6 @@ Here's how the first lines compare:
 func swapTwoInts(_ a: inout Int, _ b: inout Int)
 func swapTwoValues<T>(_ a: inout T, _ b: inout T)
 ```
-
-<!--
-  - test: `genericFunctionsComparison`
-
-  ```swifttest
-  -> func swapTwoInts(_ a: inout Int, _ b: inout Int)
-  >> {
-  >>    let temporaryA = a
-  >>    a = b
-  >>    b = temporaryA
-  >> }
-  -> func swapTwoValues<T>(_ a: inout T, _ b: inout T)
-  >> {
-  >>    let temporaryA = a
-  >>    a = b
-  >>    b = temporaryA
-  >> }
-  ```
--->
 
 The generic version of the function
 uses a *placeholder* type name (called `T`, in this case)
@@ -232,24 +152,6 @@ var anotherString = "world"
 swapTwoValues(&someString, &anotherString)
 // someString is now "world", and anotherString is now "hello"
 ```
-
-<!--
-  - test: `genericFunctions`
-
-  ```swifttest
-  -> var someInt = 3
-  -> var anotherInt = 107
-  -> swapTwoValues(&someInt, &anotherInt)
-  /> someInt is now \(someInt), and anotherInt is now \(anotherInt)
-  </ someInt is now 107, and anotherInt is now 3
-
-  -> var someString = "hello"
-  -> var anotherString = "world"
-  -> swapTwoValues(&someString, &anotherString)
-  /> someString is now \"\(someString)\", and anotherString is now \"\(anotherString)\"
-  </ someString is now "world", and anotherString is now "hello"
-  ```
--->
 
 > Note: The `swapTwoValues(_:_:)` function defined above is inspired by
 > a generic function called `swap`, which is part of the Swift standard library,
@@ -300,12 +202,6 @@ to indicate that they're a placeholder for a *type*, not a value.
 > and its generic type constraints are simple,
 > there's an alternate, lightweight syntax you can use instead,
 > as described in [Opaque Parameter Types](OpaqueTypes.md#Opaque-Parameter-Types).
-<!--
-Comparison between this syntax and the lightweight syntax
-is in the Opaque Types chapter, not here ---
-the reader hasn't learned about constraints yet,
-so it wouldn't make sense to list what is/isn't supported.
--->
 
 ## Generic Types
 
@@ -358,29 +254,6 @@ struct IntStack {
 }
 ```
 
-<!--
-  - test: `genericStack`
-
-  ```swifttest
-  -> struct IntStack {
-        var items: [Int] = []
-        mutating func push(_ item: Int) {
-           items.append(item)
-        }
-        mutating func pop() -> Int {
-           return items.removeLast()
-        }
-     }
-  >> var intStack = IntStack()
-  >> intStack.push(1)
-  >> intStack.push(2)
-  >> intStack.push(3)
-  >> intStack.push(4)
-  >> print("the stack now contains \(intStack.items.count) integers")
-  << the stack now contains 4 integers
-  ```
--->
-
 This structure uses an `Array` property called `items` to store the values in the stack.
 `Stack` provides two methods, `push` and `pop`,
 to push and pop values on and off the stack.
@@ -404,22 +277,6 @@ struct Stack<Element> {
     }
 }
 ```
-
-<!--
-  - test: `genericStack`
-
-  ```swifttest
-  -> struct Stack<Element> {
-        var items: [Element] = []
-        mutating func push(_ item: Element) {
-           items.append(item)
-        }
-        mutating func pop() -> Element {
-           return items.removeLast()
-        }
-     }
-  ```
--->
 
 Note how the generic version of `Stack`
 is essentially the same as the nongeneric version,
@@ -459,20 +316,6 @@ stackOfStrings.push("cuatro")
 // the stack now contains 4 strings
 ```
 
-<!--
-  - test: `genericStack`
-
-  ```swifttest
-  -> var stackOfStrings = Stack<String>()
-  -> stackOfStrings.push("uno")
-  -> stackOfStrings.push("dos")
-  -> stackOfStrings.push("tres")
-  -> stackOfStrings.push("cuatro")
-  /> the stack now contains \(stackOfStrings.items.count) strings
-  </ the stack now contains 4 strings
-  ```
--->
-
 Here's how `stackOfStrings` looks after pushing these four values on to the stack:
 
 ![](https://raw.githubusercontent.com/swiftlang/swift-book/main/TSPL.docc/Assets/stackPushedFourStrings@2x.png)
@@ -483,16 +326,6 @@ Popping a value from the stack removes and returns the top value, `"cuatro"`:
 let fromTheTop = stackOfStrings.pop()
 // fromTheTop is equal to "cuatro", and the stack now contains 3 strings
 ```
-
-<!--
-  - test: `genericStack`
-
-  ```swifttest
-  -> let fromTheTop = stackOfStrings.pop()
-  /> fromTheTop is equal to \"\(fromTheTop)\", and the stack now contains \(stackOfStrings.items.count) strings
-  </ fromTheTop is equal to "cuatro", and the stack now contains 3 strings
-  ```
--->
 
 Here's how the stack looks after popping its top value:
 
@@ -519,18 +352,6 @@ extension Stack {
 }
 ```
 
-<!--
-  - test: `genericStack`
-
-  ```swifttest
-  -> extension Stack {
-        var topItem: Element? {
-           return items.isEmpty ? nil : items[items.count - 1]
-        }
-     }
-  ```
--->
-
 The `topItem` property returns an optional value of type `Element`.
 If the stack is empty, `topItem` returns `nil`;
 if the stack isn't empty, `topItem` returns the final item in the `items` array.
@@ -549,17 +370,6 @@ if let topItem = stackOfStrings.topItem {
 }
 // Prints "The top item on the stack is tres."
 ```
-
-<!--
-  - test: `genericStack`
-
-  ```swifttest
-  -> if let topItem = stackOfStrings.topItem {
-        print("The top item on the stack is \(topItem).")
-     }
-  <- The top item on the stack is tres.
-  ```
--->
 
 Extensions of a generic type can also include requirements
 that instances of the extended type must satisfy
@@ -617,18 +427,6 @@ func someFunction<T: SomeClass, U: SomeProtocol>(someT: T, someU: U) {
 }
 ```
 
-<!--
-  - test: `typeConstraints`
-
-  ```swifttest
-  >> class SomeClass {}
-  >> protocol SomeProtocol {}
-  -> func someFunction<T: SomeClass, U: SomeProtocol>(someT: T, someU: U) {
-        // function body goes here
-     }
-  ```
--->
-
 The hypothetical function above has two type parameters.
 The first type parameter, `T`, has a type constraint
 that requires `T` to be a subclass of `SomeClass`.
@@ -655,21 +453,6 @@ func findIndex(ofString valueToFind: String, in array: [String]) -> Int? {
 }
 ```
 
-<!--
-  - test: `typeConstraints`
-
-  ```swifttest
-  -> func findIndex(ofString valueToFind: String, in array: [String]) -> Int? {
-        for (index, value) in array.enumerated() {
-           if value == valueToFind {
-              return index
-           }
-        }
-        return nil
-     }
-  ```
--->
-
 The `findIndex(ofString:in:)` function can be used to find a string value in an array of strings:
 
 ```swift
@@ -679,18 +462,6 @@ if let foundIndex = findIndex(ofString: "llama", in: strings) {
 }
 // Prints "The index of llama is 2".
 ```
-
-<!--
-  - test: `typeConstraints`
-
-  ```swifttest
-  -> let strings = ["cat", "dog", "llama", "parakeet", "terrapin"]
-  -> if let foundIndex = findIndex(ofString: "llama", in: strings) {
-        print("The index of llama is \(foundIndex)")
-     }
-  <- The index of llama is 2
-  ```
--->
 
 The principle of finding the index of a value in an array isn't useful only for strings, however.
 You can write the same functionality as a generic function
@@ -715,24 +486,6 @@ func findIndex<T>(of valueToFind: T, in array:[T]) -> Int? {
 }
 ```
 
-<!--
-  - test: `typeConstraints-err`
-
-  ```swifttest
-  -> func findIndex<T>(of valueToFind: T, in array:[T]) -> Int? {
-        for (index, value) in array.enumerated() {
-           if value == valueToFind {
-              return index
-           }
-        }
-        return nil
-     }
-  !$ error: binary operator '==' cannot be applied to two 'T' operands
-  !!       if value == valueToFind {
-  !!          ~~~~~ ^  ~~~~~~~~~~~
-  ```
--->
-
 This function doesn't compile as written above.
 The problem lies with the equality check, “`if value == valueToFind`”.
 Not every type in Swift can be compared with the equal to operator (`==`).
@@ -750,14 +503,6 @@ the equal to operator (`==`) and the not equal to operator (`!=`)
 to compare any two values of that type.
 All of Swift's standard types automatically support the `Equatable` protocol.
 
-<!--
-  TODO: write about how to make your own types conform to Equatable
-  once we have some documentation that actually describes it.
-  The text to use is something like:
-  and you can make your own types conform to ``Equatable`` too,
-  as described in <link>.
--->
-
 Any type that's `Equatable` can be used safely with the `findIndex(of:in:)` function,
 because it's guaranteed to support the equal to operator.
 To express this fact, you write a type constraint of `Equatable`
@@ -774,21 +519,6 @@ func findIndex<T: Equatable>(of valueToFind: T, in array:[T]) -> Int? {
 }
 ```
 
-<!--
-  - test: `typeConstraintsEquatable`
-
-  ```swifttest
-  -> func findIndex<T: Equatable>(of valueToFind: T, in array:[T]) -> Int? {
-        for (index, value) in array.enumerated() {
-           if value == valueToFind {
-              return index
-           }
-        }
-        return nil
-     }
-  ```
--->
-
 The single type parameter for `findIndex(of:in:)` is written as `T: Equatable`,
 which means “any type `T` that conforms to the `Equatable` protocol.”
 
@@ -801,27 +531,6 @@ let doubleIndex = findIndex(of: 9.3, in: [3.14159, 0.1, 0.25])
 let stringIndex = findIndex(of: "Andrea", in: ["Mike", "Malcolm", "Andrea"])
 // stringIndex is an optional Int containing a value of 2
 ```
-
-<!--
-  - test: `typeConstraintsEquatable`
-
-  ```swifttest
-  -> let doubleIndex = findIndex(of: 9.3, in: [3.14159, 0.1, 0.25])
-  /> doubleIndex is an optional Int with no value, because 9.3 isn't in the array
-  </ doubleIndex is an optional Int with no value, because 9.3 isn't in the array
-  -> let stringIndex = findIndex(of: "Andrea", in: ["Mike", "Malcolm", "Andrea"])
-  /> stringIndex is an optional Int containing a value of \(stringIndex!)
-  </ stringIndex is an optional Int containing a value of 2
-  ```
--->
-
-<!--
-  TODO: providing different type parameters on individual methods within a generic type
--->
-
-<!--
-  TODO: likewise providing type parameters for initializers
--->
 
 ## Associated Types
 
@@ -847,19 +556,6 @@ protocol Container {
     subscript(i: Int) -> Item { get }
 }
 ```
-
-<!--
-  - test: `associatedTypes, associatedTypes-err`
-
-  ```swifttest
-  -> protocol Container {
-        associatedtype Item
-        mutating func append(_ item: Item)
-        var count: Int { get }
-        subscript(i: Int) -> Item { get }
-     }
-  ```
--->
 
 The `Container` protocol defines three required capabilities
 that any container must provide:
@@ -931,34 +627,6 @@ struct IntStack: Container {
 }
 ```
 
-<!--
-  - test: `associatedTypes`
-
-  ```swifttest
-  -> struct IntStack: Container {
-        // original IntStack implementation
-        var items: [Int] = []
-        mutating func push(_ item: Int) {
-           items.append(item)
-        }
-        mutating func pop() -> Int {
-           return items.removeLast()
-        }
-        // conformance to the Container protocol
-        typealias Item = Int
-        mutating func append(_ item: Int) {
-           self.push(item)
-        }
-        var count: Int {
-           return items.count
-        }
-        subscript(i: Int) -> Int {
-           return items[i]
-        }
-     }
-  ```
--->
-
 The `IntStack` type implements all three of the `Container` protocol's requirements,
 and in each case wraps part of the `IntStack` type's existing functionality
 to satisfy these requirements.
@@ -1003,33 +671,6 @@ struct Stack<Element>: Container {
 }
 ```
 
-<!--
-  - test: `associatedTypes, associatedTypes-err`
-
-  ```swifttest
-  -> struct Stack<Element>: Container {
-        // original Stack<Element> implementation
-        var items: [Element] = []
-        mutating func push(_ item: Element) {
-           items.append(item)
-        }
-        mutating func pop() -> Element {
-           return items.removeLast()
-        }
-        // conformance to the Container protocol
-        mutating func append(_ item: Element) {
-           self.push(item)
-        }
-        var count: Int {
-           return items.count
-        }
-        subscript(i: Int) -> Element {
-           return items[i]
-        }
-     }
-  ```
--->
-
 This time, the type parameter `Element` is used as
 the type of the `append(_:)` method's `item` parameter
 and the return type of the subscript.
@@ -1054,14 +695,6 @@ as described in [Declaring Protocol Adoption with an Extension](Protocols.md#Dec
 extension Array: Container {}
 ```
 
-<!--
-  - test: `associatedTypes`
-
-  ```swifttest
-  -> extension Array: Container {}
-  ```
--->
-
 Array's existing `append(_:)` method and subscript enable Swift to infer
 the appropriate type to use for `Item`,
 just as for the generic `Stack` type above.
@@ -1084,19 +717,6 @@ protocol Container {
 }
 ```
 
-<!--
-  - test: `associatedTypes-equatable`
-
-  ```swifttest
-  -> protocol Container {
-        associatedtype Item: Equatable
-        mutating func append(_ item: Item)
-        var count: Int { get }
-        subscript(i: Int) -> Item { get }
-     }
-  ```
--->
-
 To conform to this version of `Container`,
 the container's `Item` type has to conform to the `Equatable` protocol.
 
@@ -1116,17 +736,6 @@ protocol SuffixableContainer: Container {
     func suffix(_ size: Int) -> Suffix
 }
 ```
-
-<!--
-  - test: `associatedTypes`
-
-  ```swifttest
-  -> protocol SuffixableContainer: Container {
-         associatedtype Suffix: SuffixableContainer where Suffix.Item == Item
-         func suffix(_ size: Int) -> Suffix
-     }
-  ```
--->
 
 In this protocol,
 `Suffix` is an associated type,
@@ -1162,31 +771,6 @@ let suffix = stackOfInts.suffix(2)
 // suffix contains 20 and 30
 ```
 
-<!--
-  - test: `associatedTypes`
-
-  ```swifttest
-  -> extension Stack: SuffixableContainer {
-         func suffix(_ size: Int) -> Stack {
-             var result = Stack()
-             for index in (count-size)..<count {
-                 result.append(self[index])
-             }
-             return result
-         }
-         // Inferred that Suffix is Stack.
-     }
-  -> var stackOfInts = Stack<Int>()
-  -> stackOfInts.append(10)
-  -> stackOfInts.append(20)
-  -> stackOfInts.append(30)
-  >> assert(stackOfInts.suffix(0).items == [])
-  -> let suffix = stackOfInts.suffix(2)
-  // suffix contains 20 and 30
-  >> assert(suffix.items == [20, 30])
-  ```
--->
-
 In the example above,
 the `Suffix` associated type for `Stack` is also `Stack`,
 so the suffix operation on `Stack` returns another `Stack`.
@@ -1211,29 +795,6 @@ extension IntStack: SuffixableContainer {
     // Inferred that Suffix is Stack<Int>.
 }
 ```
-
-<!--
-  - test: `associatedTypes`
-
-  ```swifttest
-  -> extension IntStack: SuffixableContainer {
-         func suffix(_ size: Int) -> Stack<Int> {
-             var result = Stack<Int>()
-             for index in (count-size)..<count {
-                 result.append(self[index])
-             }
-             return result
-         }
-         // Inferred that Suffix is Stack<Int>.
-     }
-  >> var intStack = IntStack()
-  >> intStack.append(10)
-  >> intStack.append(20)
-  >> intStack.append(30)
-  >> assert(intStack.suffix(0).items == [])
-  >> assert(intStack.suffix(2).items == [20, 30])
-  ```
--->
 
 ## Generic Where Clauses
 
@@ -1285,32 +846,6 @@ func allItemsMatch<C1: Container, C2: Container>
     return true
 }
 ```
-
-<!--
-  - test: `associatedTypes`
-
-  ```swifttest
-  -> func allItemsMatch<C1: Container, C2: Container>
-           (_ someContainer: C1, _ anotherContainer: C2) -> Bool
-           where C1.Item == C2.Item, C1.Item: Equatable {
-
-        // Check that both containers contain the same number of items.
-        if someContainer.count != anotherContainer.count {
-           return false
-        }
-
-        // Check each pair of items to see if they're equivalent.
-        for i in 0..<someContainer.count {
-           if someContainer[i] != anotherContainer[i] {
-              return false
-           }
-        }
-
-        // All items match, so return true.
-        return true
-     }
-  ```
--->
 
 This function takes two arguments called
 `someContainer` and `anotherContainer`.
@@ -1379,26 +914,6 @@ if allItemsMatch(stackOfStrings, arrayOfStrings) {
 // Prints "All items match."
 ```
 
-<!--
-  - test: `associatedTypes`
-
-  ```swifttest
-  -> var stackOfStrings = Stack<String>()
-  -> stackOfStrings.push("uno")
-  -> stackOfStrings.push("dos")
-  -> stackOfStrings.push("tres")
-
-  -> var arrayOfStrings = ["uno", "dos", "tres"]
-
-  -> if allItemsMatch(stackOfStrings, arrayOfStrings) {
-        print("All items match.")
-     } else {
-        print("Not all items match.")
-     }
-  <- All items match.
-  ```
--->
-
 The example above creates a `Stack` instance to store `String` values,
 and pushes three strings onto the stack.
 The example also creates an `Array` instance initialized with
@@ -1429,21 +944,6 @@ extension Stack where Element: Equatable {
 }
 ```
 
-<!--
-  - test: `associatedTypes`
-
-  ```swifttest
-  -> extension Stack where Element: Equatable {
-         func isTop(_ item: Element) -> Bool {
-             guard let topItem = items.last else {
-                 return false
-             }
-             return topItem == item
-         }
-     }
-  ```
--->
-
 This new `isTop(_:)` method
 first checks that the stack isn't empty,
 and then compares the given item
@@ -1470,19 +970,6 @@ if stackOfStrings.isTop("tres") {
 // Prints "Top element is tres."
 ```
 
-<!--
-  - test: `associatedTypes`
-
-  ```swifttest
-  -> if stackOfStrings.isTop("tres") {
-        print("Top element is tres.")
-     } else {
-        print("Top element is something else.")
-     }
-  <- Top element is tres.
-  ```
--->
-
 If you try to call the `isTop(_:)` method
 on a stack whose elements aren't equatable,
 you'll get a compile-time error.
@@ -1495,21 +982,6 @@ notEquatableStack.push(notEquatableValue)
 notEquatableStack.isTop(notEquatableValue)  // Error
 ```
 
-<!--
-  - test: `associatedTypes-err`
-
-  ```swifttest
-  -> struct NotEquatable { }
-  -> var notEquatableStack = Stack<NotEquatable>()
-  -> let notEquatableValue = NotEquatable()
-  -> notEquatableStack.push(notEquatableValue)
-  -> notEquatableStack.isTop(notEquatableValue)  // Error
-  !$ error: value of type 'Stack<NotEquatable>' has no member 'isTop'
-  !! notEquatableStack.isTop(notEquatableValue)  // Error
-  !! ~~~~~~~~~~~~~~~~~ ^~~~~
-  ```
--->
-
 You can use a generic `where` clause with extensions to a protocol.
 The example below extends the `Container` protocol from the previous examples
 to add a `startsWith(_:)` method.
@@ -1521,24 +993,6 @@ extension Container where Item: Equatable {
     }
 }
 ```
-
-<!--
-  - test: `associatedTypes`
-
-  ```swifttest
-  -> extension Container where Item: Equatable {
-        func startsWith(_ item: Item) -> Bool {
-           return count >= 1 && self[0] == item
-        }
-     }
-  ```
--->
-
-<!--
-  Using Container rather than Sequence/Collection
-  to continue running with the same example through the chapter.
-  This does, however, mean I can't use a for-in loop.
--->
 
 The `startsWith(_:)` method
 first makes sure that the container has at least one item,
@@ -1557,19 +1011,6 @@ if [9, 9, 9].startsWith(42) {
 }
 // Prints "Starts with something else."
 ```
-
-<!--
-  - test: `associatedTypes`
-
-  ```swifttest
-  -> if [9, 9, 9].startsWith(42) {
-        print("Starts with 42.")
-     } else {
-        print("Starts with something else.")
-     }
-  <- Starts with something else.
-  ```
--->
 
 The generic `where` clause in the example above
 requires `Item` to conform to a protocol,
@@ -1591,24 +1032,6 @@ print([1260.0, 1200.0, 98.6, 37.0].average())
 // Prints "648.9".
 ```
 
-<!--
-  - test: `associatedTypes`
-
-  ```swifttest
-  -> extension Container where Item == Double {
-         func average() -> Double {
-             var sum = 0.0
-             for index in 0..<count {
-                 sum += self[index]
-             }
-             return sum / Double(count)
-         }
-     }
-  -> print([1260.0, 1200.0, 98.6, 37.0].average())
-  <- 648.9
-  ```
--->
-
 This example adds an `average()` method
 to containers whose `Item` type is `Double`.
 It iterates over the items in the container to add them up,
@@ -1620,12 +1043,6 @@ You can include multiple requirements in a generic `where` clause
 that's part of an extension,
 just like you can for a generic `where` clause that you write elsewhere.
 Separate each requirement in the list with a comma.
-
-<!--
-  No example of a compound where clause
-  because Container only has one generic part ---
-  there isn't anything to write a second constraint for.
--->
 
 ## Contextual Where Clauses
 
@@ -1661,30 +1078,6 @@ print(numbers.endsWith(37))
 // Prints "true".
 ```
 
-<!--
-  - test: `associatedTypes`
-
-  ```swifttest
-  -> extension Container {
-         func average() -> Double where Item == Int {
-             var sum = 0.0
-             for index in 0..<count {
-                 sum += Double(self[index])
-             }
-             return sum / Double(count)
-         }
-         func endsWith(_ item: Item) -> Bool where Item: Equatable {
-             return count >= 1 && self[count-1] == item
-         }
-     }
-  -> let numbers = [1260, 1200, 98, 37]
-  -> print(numbers.average())
-  <- 648.75
-  -> print(numbers.endsWith(37))
-  <- true
-  ```
--->
-
 This example
 adds an `average()` method to `Container` when the items are integers,
 and it adds an `endsWith(_:)` method when the items are equatable.
@@ -1713,27 +1106,6 @@ extension Container where Item: Equatable {
     }
 }
 ```
-
-<!--
-  - test: `associatedTypes-err`
-
-  ```swifttest
-  -> extension Container where Item == Int {
-         func average() -> Double {
-             var sum = 0.0
-             for index in 0..<count {
-                 sum += Double(self[index])
-             }
-             return sum / Double(count)
-         }
-     }
-     extension Container where Item: Equatable {
-         func endsWith(_ item: Item) -> Bool {
-             return count >= 1 && self[count-1] == item
-         }
-     }
-  ```
--->
 
 In the version of this example that uses contextual `where` clauses,
 the implementation of `average()` and `endsWith(_:)`
@@ -1765,62 +1137,11 @@ protocol Container {
 }
 ```
 
-<!--
-  - test: `associatedTypes-iterator`
-
-  ```swifttest
-  -> protocol Container {
-        associatedtype Item
-        mutating func append(_ item: Item)
-        var count: Int { get }
-        subscript(i: Int) -> Item { get }
-
-        associatedtype Iterator: IteratorProtocol where Iterator.Element == Item
-        func makeIterator() -> Iterator
-     }
-  ```
--->
-
-<!--
-  Adding makeIterator() to Container lets it conform to Sequence,
-  although we don't call that out here.
--->
-
 The generic `where` clause on `Iterator` requires that
 the iterator must traverse over elements
 of the same item type as the container's items,
 regardless of the iterator's type.
 The `makeIterator()` function provides access to a container's iterator.
-
-<!--
-  This example requires SE-0157 Recursive protocol constraints
-  which is tracked by rdar://20531108
-
-   that accepts a ranged of indexes it its subscript
-   and returns a subcontainer ---
-   similar to how ``Collection`` works in the Swift standard library.
-
-   .. testcode:: associatedTypes-subcontainer
-
-      -> protocol Container {
-            associatedtype Item
-            associatedtype SubContainer: Container where SubContainer.Item == Item
-
-            mutating func append(_ item: Item)
-            var count: Int { get }
-            subscript(i: Int) -> Item { get }
-            subscript(range: Range<Int>) -> SubContainer { get }
-         }
-
-   The generic ``where`` clause on ``SubContainer`` requires that
-   the subcontainer must have the same item type as the container has,
-   regardless of what type the subcontainer is.
-   The original container and the subcontainer
-   could be represented by the same type
-   or by different types.
-   The new subscript that accepts a range
-   uses this new associated type as its return value.
--->
 
 For a protocol that inherits from another protocol,
 you add a constraint to an inherited associated type
@@ -1833,43 +1154,6 @@ that requires `Item` to conform to `Comparable`:
 protocol ComparableContainer: Container where Item: Comparable { }
 ```
 
-<!--
-  - test: `associatedTypes`
-
-  ```swifttest
-  -> protocol ComparableContainer: Container where Item: Comparable { }
-  ```
--->
-
-<!--
-  This version throws a warning as of Swift commit de66b0c25c70:
-  "redeclaration of associated type %0 from protocol %1 is better
-  expressed as a 'where' clause on the protocol"
-
-   -> protocol ComparableContainer: Container {
-          associatedtype Item: Comparable
-      }
--->
-
-<!--
-  Exercise the new container -- this might not actually be needed,
-  and it adds a level of complexity.
-
-  function < (lhs: ComparableContainer, rhs: ComparableContainer) -> Bool {
-      // Sort empty containers before nonempty containers.
-      if lhs.count == 0 {
-          return true
-      } else if rhs.count  == 0 {
-          return false
-      }
-
-      // Sort nonempty containers by their first element.
-      // (In real code, you would want to compare the second element
-      // if the first elements are equal, and so on.)
-      return lhs[0] < rhs[0]
-  }
--->
-
 ## Generic Subscripts
 
 Subscripts can be generic,
@@ -1878,11 +1162,6 @@ You write the placeholder type name inside angle brackets after `subscript`,
 and you write a generic `where` clause right before the opening curly brace
 of the subscript's body.
 For example:
-
-<!--
-  The paragraph above borrows the wording used to introduce
-  generics and 'where' clauses earlier in this chapter.
--->
 
 ```swift
 extension Container {
@@ -1896,61 +1175,6 @@ extension Container {
     }
 }
 ```
-
-<!--
-  - test: `genericSubscript`
-
-  ```swifttest
-  >> protocol Container {
-  >>    associatedtype Item
-  >>    mutating func append(_ item: Item)
-  >>    var count: Int { get }
-  >>    subscript(i: Int) -> Item { get }
-  >> }
-  -> extension Container {
-         subscript<Indices: Sequence>(indices: Indices) -> [Item]
-                 where Indices.Iterator.Element == Int {
-             var result: [Item] = []
-             for index in indices {
-                 result.append(self[index])
-             }
-             return result
-         }
-     }
-  ```
--->
-
-<!--
-  - test: `genericSubscript`
-
-  ```swifttest
-  >> struct IntStack: Container {
-        // original IntStack implementation
-        var items: [Int] = []
-        mutating func push(_ item: Int) {
-           items.append(item)
-        }
-        mutating func pop() -> Int {
-           return items.removeLast()
-        }
-        // conformance to the Container protocol
-        typealias Item = Int
-        mutating func append(_ item: Int) {
-           self.push(item)
-        }
-        var count: Int {
-           return items.count
-        }
-        subscript(i: Int) -> Int {
-           return items[i]
-        }
-     }
-  >> var s = IntStack()
-  >> s.push(10); s.push(20); s.push(30)
-  >> let items = s[ [0, 2] ]
-  >> assert(items == [10, 30])
-  ```
--->
 
 This extension to the `Container` protocol
 adds a subscript that takes a sequence of indices
@@ -1977,7 +1201,7 @@ is a sequence of integers.
 In addition to constraints you write explicitly,
 many places in your generic code also implicitly require
 conformance to some very common protocols like [`Copyable`][].
-<!-- When SE-0446 is implemented, add Escapable above. -->
+
 These generic constraints that you don't have to write
 are known as *implicit constraints*.
 For example, both of the following function declarations
@@ -2041,22 +1265,3 @@ see [Borrowing and Consuming Parameters](../ReferenceManual/Declarations.md#Borr
 For details about when generic code
 includes an implicit constraint to a given protocol,
 see the reference for that protocol.
-
-<!--
-  TODO: Generic Enumerations
-  --------------------------
--->
-
-<!--
-  TODO: Describe how Optional<Wrapped> works
--->
-
-<!--
-This source file is part of the Swift.org open source project
-
-Copyright (c) 2014 - 2022 Apple Inc. and the Swift project authors
-Licensed under Apache License v2.0 with Runtime Library Exception
-
-See https://swift.org/LICENSE.txt for license information
-See https://swift.org/CONTRIBUTORS.txt for the list of Swift project authors
--->

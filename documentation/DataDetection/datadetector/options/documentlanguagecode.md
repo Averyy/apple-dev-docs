@@ -21,7 +21,7 @@ An optional value that represents the language code of a specific locale.
 var documentLanguageCode: Locale.LanguageCode?
 ```
 
-#### Discussion
+## Discussion
 
 For more information on locales, see [`Locale.LanguageCode`](../../../Foundation/locale/languagecode-swift.struct.md).
 

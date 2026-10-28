@@ -23,7 +23,7 @@ static var disableLayerFusion: MLCGraphCompilationOptions { get }
 MLCGraphCompilationOptionsDisableLayerFusion
 ```
 
-#### Discussion
+## Discussion
 
 Include this option to disable fusion of layers, which is an important optimization that helps performance and memory footprint.
 

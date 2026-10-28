@@ -21,7 +21,7 @@ init(thumbnail: CPThumbnailImage, title: String?, subtitle: String?, tintColor: 
 - (instancetype) initWithThumbnail:(CPThumbnailImage *) thumbnail title:(NSString *) title subtitle:(NSString *) subtitle tintColor:(UIColor *) tintColor;
 ```
 
-#### Discussion
+## Discussion
 
 This initializer uses a CPThumbnailImage which encapsulates the image, aspect ratio, image, and sports overlay information.
 

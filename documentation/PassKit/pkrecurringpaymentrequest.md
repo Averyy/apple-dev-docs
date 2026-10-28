@@ -23,7 +23,7 @@ class PKRecurringPaymentRequest
 @interface PKRecurringPaymentRequest : NSObject
 ```
 
-#### Overview
+## Overview
 
 > ❗ **Important**:  You must set the [`recurringPaymentRequest`](./pkpaymentrequest/recurringpaymentrequest.md) property on a [`PKPaymentRequest`](./pkpaymentrequest.md) object to use this class to request a recurring payment.
 

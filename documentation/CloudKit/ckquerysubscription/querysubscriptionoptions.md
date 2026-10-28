@@ -25,7 +25,7 @@ var querySubscriptionOptions: CKQuerySubscription.Options { get }
 @property (assign, readonly) CKQuerySubscriptionOptions querySubscriptionOptions;
 ```
 
-#### Discussion
+## Discussion
 
 Set the value of this property at initialization time. When you configure a query-based subscription, use one of the following values:
 

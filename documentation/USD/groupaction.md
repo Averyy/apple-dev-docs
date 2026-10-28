@@ -4,19 +4,19 @@
 
 An action that runs a list of other actions.
 
-#### Overview
+## Overview
 
 This action defines how the runtime executes each action in the [actions](./actions.md) array. When [type](./type.md) is `serial`, the runtime performs [actions](./actions.md) one after the other. When [type](./type.md) is `concurrent`, the runtime starts each action at the same time.
 
 When this action’s [type](./type.md) is `serial`, you can specify a delay between two actions by placing a `WaitAction` between them.
 
-##### Declaration
+### Declaration
 
 ```other
 class Preliminary_Action "GroupAction"
 ```
 
-##### Create a sequential or looping group action
+### Create a sequential or looping group action
 
 The following example defines a group of actions that run sequentially. The group contains a flip action, a wait action, and a hide action.
 

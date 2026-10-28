@@ -21,7 +21,7 @@ The set of possible working color spaces for color-compositing operations.
 enum ColorRenderingMode
 ```
 
-#### Overview
+## Overview
 
 Each color space guarantees the preservation of a particular range of color values.
 

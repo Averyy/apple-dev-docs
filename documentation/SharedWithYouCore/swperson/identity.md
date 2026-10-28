@@ -27,7 +27,7 @@ class Identity
 
 - [Adding custom collaboration to your app](../../SharedWithYou/adding-custom-collaboration-to-your-app.md)
 
-#### Overview
+## Overview
 
 This object represents an opaque Merkle tree where the root hash of the tree can uniquely identify the individual using the hash value of all of their devices. The individual’s devices use [`SWPerson.IdentityProof`](./identityproof.md) to prove themselves to be part of this identity, and can then be used for cryptographic signatures for that individual.
 

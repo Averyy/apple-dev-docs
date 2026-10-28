@@ -25,7 +25,7 @@ func setSteeringAngle(_ value: CGFloat, forWheelAt index: Int)
 - (void) setSteeringAngle:(CGFloat) value forWheelAtIndex:(NSInteger) index;
 ```
 
-#### Discussion
+## Discussion
 
 Steering angles are relative to the wheel’s [`steeringAxis`](../scnphysicsvehiclewheel/steeringaxis.md) vector. With the default steering axis of `{0.0, -1.0, 0.0}`, a steering angle of `0.0` represents neutral steering, positive values steer the vehicle to the right, and negative values steer to the left.
 

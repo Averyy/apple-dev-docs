@@ -22,11 +22,11 @@ nonisolated
 func defaultFocus<V>(_ binding: FocusState<V>.Binding, _ value: V, priority: DefaultFocusEvaluationPriority = .automatic) -> some View where V : Hashable
 ```
 
-#### Return Value
+## Return Value
 
 The modified view.
 
-#### Discussion
+## Discussion
 
 By default, SwiftUI evaluates default focus when the window first appears, and when a focus state binding update moves focus automatically, but not when responding to user-driven navigation commands.
 

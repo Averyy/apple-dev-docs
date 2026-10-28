@@ -19,11 +19,11 @@ func filter() -> CIFilter
 - (CIFilter *) filter;
 ```
 
-#### Return Value
+## Return Value
 
 A `CIFilter` object.
 
-#### Discussion
+## Discussion
 
 The topology of the filter chain is immutable, meaning that any changes you make to the filter chain are not reflected in the filter. The returned filter holds the export input and output keys.
 

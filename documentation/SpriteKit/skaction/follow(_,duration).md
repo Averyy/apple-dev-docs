@@ -25,11 +25,11 @@ class func follow(_ path: CGPath, duration: TimeInterval) -> SKAction
 + (SKAction *) followPath:(CGPathRef) path duration:(NSTimeInterval) duration;
 ```
 
-#### Return Value
+## Return Value
 
 A new action object.
 
-#### Discussion
+## Discussion
 
 Calling this method is equivalent to calling the [`follow(_:asOffset:orientToPath:duration:)`](./follow%28_,asoffset,orienttopath,duration%29.md) method, passing in [`true`](../../Swift/true.md) to both the `offset` and `orient` parameters.
 

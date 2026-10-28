@@ -23,7 +23,7 @@ var displayName: String { get }
 @property (nonatomic, copy, readonly, nonnull) NSString * displayName;
 ```
 
-#### Discussion
+## Discussion
 
 This property provides a descriptive name of the timecode source, useful for display in user interfaces or logging.
 

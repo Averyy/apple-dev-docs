@@ -27,7 +27,7 @@ var horizontalSizeClass: UIUserInterfaceSizeClass { get }
 
 - [Adapting your app when traits change](../adapting-your-app-when-traits-change.md)
 
-#### Discussion
+## Discussion
 
 The default horizontal size class for a trait collection is [`UIUserInterfaceSizeClass.unspecified`](../uiuserinterfacesizeclass/unspecified.md).
 

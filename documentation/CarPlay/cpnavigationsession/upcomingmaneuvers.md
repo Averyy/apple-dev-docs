@@ -21,7 +21,7 @@ var upcomingManeuvers: [CPManeuver] { get set }
 @property (nonatomic, copy, readwrite) NSArray<CPManeuver *> * upcomingManeuvers;
 ```
 
-#### Discussion
+## Discussion
 
 The system displays multiple maneuvers at the same time. However, the system may limit the number of visible maneuvers.
 

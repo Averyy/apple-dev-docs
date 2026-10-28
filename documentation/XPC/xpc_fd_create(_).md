@@ -25,11 +25,11 @@ func xpc_fd_create(_ fd: Int32) -> xpc_object_t?
 extern xpc_object_txpc_fd_create(int fd);
 ```
 
-#### Return Value
+## Return Value
 
 A new file descriptor object. `NULL` if sufficient memory could not be allocated or if the given file descriptor was not valid.
 
-#### Discussion
+## Discussion
 
 This method performs the equivalent of a `dup(2)` on the descriptor, so it is safe to call `close(2)` on the descriptor after boxing it with a file descriptor object.
 

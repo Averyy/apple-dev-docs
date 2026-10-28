@@ -25,7 +25,7 @@ class MLDictionaryFeatureProvider
 @interface MLDictionaryFeatureProvider : NSObject
 ```
 
-#### Overview
+## Overview
 
 If your input data is stored in a dictionary, consider this type of [`MLFeatureProvider`](./mlfeatureprovider.md) that is backed by a dictionary. It is a convenience interface, saving you the trouble of iterating through the dictionary to assign all of its values.
 

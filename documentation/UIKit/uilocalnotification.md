@@ -25,7 +25,7 @@ class UILocalNotification
 @interface UILocalNotification : NSObject
 ```
 
-#### Overview
+## Overview
 
 The operating system is responsible for delivering local notifications at their scheduled times; the app does not have to be running for this to happen. Although local notifications are similar to remote notifications in that they are used for displaying alerts, playing sounds, and badging app icons, they are composed and delivered locally and do not require connection with remote servers.
 

@@ -17,7 +17,7 @@ optional func deviceInquiryDeviceFound(_ sender: IOBluetoothDeviceInquiry!, devi
 - (void) deviceInquiryDeviceFound:(IOBluetoothDeviceInquiry *) sender device:(IOBluetoothDevice *) device;
 ```
 
-#### Discussion
+## Discussion
 
 A new device has been found. You do not need to retain the device - it will be held in the internal storage of the inquiry, and can be accessed later using -foundDevices.
 

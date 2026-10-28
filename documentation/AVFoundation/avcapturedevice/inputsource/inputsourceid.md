@@ -19,7 +19,7 @@ var inputSourceID: String { get }
 @property (nonatomic, readonly) NSString * inputSourceID;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier is unique among the input sources exposed by particular capture device instance.
 

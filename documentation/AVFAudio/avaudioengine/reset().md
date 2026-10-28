@@ -25,7 +25,7 @@ func reset()
 - (void) reset;
 ```
 
-#### Discussion
+## Discussion
 
 This methods resets all audio nodes in the audio engine. For example, use it to silence reverb and delay tails.
 

@@ -22,11 +22,11 @@ final func prepare(using token: MobileDocumentReader.Token? = nil) async throws 
 - [Adopting the Verifier API in your iPhone app](../adopting-the-verifier-api-in-your-iphone-app.md)
 - [Generating reader tokens for the Verifier API](../generating-reader-tokens-for-the-verifier-api.md)
 
-#### Return Value
+## Return Value
 
 [`MobileDocumentReaderSession`](../mobiledocumentreadersession.md) when successful.
 
-#### Discussion
+## Discussion
 
 This method prepares the device for mobile document reading.
 

@@ -20,7 +20,7 @@ Copies multiple regions within a source placement sparse texture to a destinatio
 - (void) copyTextureMappingsFromTexture:(id<MTLTexture>) sourceTexture toTexture:(id<MTLTexture>) destinationTexture operations:(const MTL4CopySparseTextureMappingOperation[]) operations count:(NSUInteger) count;
 ```
 
-#### Discussion
+## Discussion
 
 You are responsible for ensuring the source and destination textures have the same [`placementSparsePageSize`](../mtltexturedescriptor/placementsparsepagesize.md).
 

@@ -21,7 +21,7 @@ Scans all scroll views contained by the proxy for the first with a child view wi
 func scrollTo<ID>(_ id: ID, anchor: UnitPoint? = nil) where ID : Hashable
 ```
 
-#### Discussion
+## Discussion
 
 If `anchor` is `nil`, this method finds the container of the identified view, and scrolls the minimum amount to make the identified view wholly visible.
 

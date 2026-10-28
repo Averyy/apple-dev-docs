@@ -29,7 +29,7 @@ extern NSNotificationName const AVPlayerRateDidChangeNotification;
 
 - [Controlling the transport behavior of a player](../controlling-the-transport-behavior-of-a-player.md)
 
-#### Discussion
+## Discussion
 
 Observing this notification is similar to key-value observing the rate property, except the notification provides additional information about the rate change in the user information dictionary.
 

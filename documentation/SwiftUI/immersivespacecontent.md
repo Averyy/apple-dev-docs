@@ -17,7 +17,7 @@ A type that you can use as the content of an immersive space.
 @preconcurrency protocol ImmersiveSpaceContent
 ```
 
-#### Overview
+## Overview
 
 A type conforming to this protocol inherits `@preconcurrency @MainActor` isolation from the protocol if the conformance is included in the type’s base declaration:
 

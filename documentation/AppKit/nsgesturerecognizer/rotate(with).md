@@ -19,7 +19,7 @@ func rotate(with event: NSEvent)
 - (void) rotateWithEvent:(NSEvent *) event;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation of this method does nothing. Use this method to start tracking the gesture in whatever way is appropriate.
 

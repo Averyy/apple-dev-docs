@@ -26,11 +26,11 @@ func watchValue<Return>(forKey key: AbsoluteConfigKey, type: ConfigType, updates
 
 Available when `Snapshot` conforms to `FileConfigSnapshot`.
 
-#### Return Value
+## Return Value
 
 The value returned by the closure.
 
-#### Discussion
+## Discussion
 
 The async sequence provided to the handler should immediately emit the current value (equivalent to calling [`value(forKey:type:)`](./value%28forkey,type%29.md)), followed by subsequent updates as they occur.
 

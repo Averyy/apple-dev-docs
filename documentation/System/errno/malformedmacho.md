@@ -25,7 +25,7 @@ static var malformedMachO: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 The Mach object file is malformed.
 

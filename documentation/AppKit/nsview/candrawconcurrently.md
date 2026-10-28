@@ -19,7 +19,7 @@ var canDrawConcurrently: Bool { get set }
 @property BOOL canDrawConcurrently;
 ```
 
-#### Discussion
+## Discussion
 
 If your view’s [`draw(_:)`](./draw%28_%29.md) implementation can draw safely on a background thread, set this property to [`true`](../../Swift/true.md). Doing so gives AppKit the ability to run your view’s drawing code off the app’s main thread, which can improve performance. The view’s window must also have its [`allowsConcurrentViewDrawing`](../nswindow/allowsconcurrentviewdrawing.md) property set to [`true`](../../Swift/true.md) (the default) for threaded view drawing to occur.
 

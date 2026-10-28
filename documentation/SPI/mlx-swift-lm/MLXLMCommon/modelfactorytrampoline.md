@@ -17,7 +17,7 @@ Protocol for types that can provide ModelFactory instances.
 protocol ModelFactoryTrampoline
 ```
 
-#### Overview
+## Overview
 
 Not used directly.
 

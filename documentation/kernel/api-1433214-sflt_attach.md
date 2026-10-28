@@ -13,11 +13,11 @@
 errno_t sflt_attach(socket_t socket, sflt_handle handle);
 ```
 
-#### Return Value
+## Return Value
 
 0 on success otherwise the errno error.
 
-#### Discussion
+## Discussion
 
 Attaches a socket filter to the specified socket. A filter must be registered before it can be attached.
 

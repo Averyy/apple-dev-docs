@@ -23,11 +23,11 @@ init(name: String, estimatedPickupDate: Date)
 - (instancetype) initWithName:(NSString *) name estimatedPickupDate:(NSDate *) estimatedPickupDate;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized ride option object or `nil` if the object could not be initialized.
 
-#### Discussion
+## Discussion
 
 After initializing the object, fill in the other properties of the newly created object before adding it to your response object.
 

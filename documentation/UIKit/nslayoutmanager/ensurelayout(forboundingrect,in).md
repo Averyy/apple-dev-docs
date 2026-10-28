@@ -23,7 +23,7 @@ func ensureLayout(forBoundingRect bounds: CGRect, in container: NSTextContainer)
 - (void) ensureLayoutForBoundingRect:(CGRect) bounds inTextContainer:(NSTextContainer *) container;
 ```
 
-#### Discussion
+## Discussion
 
 The layout manager reserves the right to perform layout for larger ranges. If noncontiguous layout is disabled, then the affected range is always effectively extended to start at the beginning of the text.
 

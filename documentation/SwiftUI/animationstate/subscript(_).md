@@ -21,7 +21,7 @@ Accesses the state for a custom key.
 subscript<K>(key: K.Type) -> K.Value where K : AnimationStateKey { get set }
 ```
 
-#### Overview
+## Overview
 
 Create a custom animation state value by defining a key that conforms to the [`AnimationStateKey`](../animationstatekey.md) protocol and provide the [`defaultValue`](../animationstatekey/defaultvalue.md) for the key. Also include properties to read and write state values that your [`CustomAnimation`](../customanimation.md) uses. For example, the following code defines a key named `PausableState` that has two state values, `paused` and `pauseTime`:
 

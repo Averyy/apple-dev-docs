@@ -21,7 +21,7 @@ var junctionType: CPJunctionType { get set }
 @property (nonatomic, assign) CPJunctionType junctionType;
 ```
 
-#### Discussion
+## Discussion
 
 One of the [`CPJunctionType`](../cpjunctiontype.md) values that indicates the type of traffic junction; a [`CPManeuver`](../cpmaneuver.md) requires this value.
 

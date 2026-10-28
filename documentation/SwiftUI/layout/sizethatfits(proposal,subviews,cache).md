@@ -22,11 +22,11 @@ Returns the size of the composite view, given a proposed size and the view’s s
 func sizeThatFits(proposal: ProposedViewSize, subviews: Self.Subviews, cache: inout Self.Cache) -> CGSize
 ```
 
-#### Return Value
+## Return Value
 
 A size that indicates how much space the container needs to arrange its subviews.
 
-#### Discussion
+## Discussion
 
 Implement this method to tell your custom layout container’s parent view how much space the container needs for a set of subviews, given a size proposal. The parent might call this method more than once during a layout pass with different proposed sizes to test the flexibility of the container, using proposals like:
 

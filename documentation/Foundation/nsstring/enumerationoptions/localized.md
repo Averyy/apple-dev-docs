@@ -23,7 +23,7 @@ static var localized: NSString.EnumerationOptions { get }
 NSStringEnumerationLocalized
 ```
 
-#### Discussion
+## Discussion
 
 Causes the enumeration to occur using the current locale. This does not make a difference in line, paragraph, or composed character sequence enumeration, but it may for words or sentences.
 

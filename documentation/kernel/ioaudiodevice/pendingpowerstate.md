@@ -9,7 +9,7 @@
 IOAudioDevicePowerState pendingPowerState;
 ```
 
-#### Overview
+## Overview
 
 If a power state change is in progress, this represents the pending power state. All other times this is the same as the currentPowerState.
 

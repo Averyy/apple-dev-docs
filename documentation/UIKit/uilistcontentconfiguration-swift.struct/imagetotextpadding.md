@@ -19,7 +19,7 @@ The padding between the image and text.
 var imageToTextPadding: CGFloat { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This value only applies when there’s both an image and text.
 

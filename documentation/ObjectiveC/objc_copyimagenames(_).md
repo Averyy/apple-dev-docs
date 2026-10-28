@@ -25,7 +25,7 @@ func objc_copyImageNames(_ outCount: UnsafeMutablePointer<UInt32>?) -> UnsafeMut
 extern const char **objc_copyImageNames(unsigned int *outCount);
 ```
 
-#### Return Value
+## Return Value
 
 An array of C strings representing the names of all the loaded Objective-C frameworks and dynamic libraries.
 

@@ -21,7 +21,7 @@ func control(at point: CGPoint) -> (any TCControl)?
 - (id<TCControl>) controlAtPoint:(CGPoint) point;
 ```
 
-#### Return Value
+## Return Value
 
 The control at the specified point, or `nil` if no control is found.
 

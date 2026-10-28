@@ -19,7 +19,7 @@ class NSColorPanel
 @interface NSColorPanel : NSPanel
 ```
 
-#### Overview
+## Overview
 
 [`NSColorPanel`](./nscolorpanel.md) provides a number of standard color selection modes and, with the [`NSColorPickingDefault`](./nscolorpickingdefault.md) and [`NSColorPickingCustom`](./nscolorpickingcustom.md) protocols, allows an app to add its own color selection modes. It also allows the user to save swatches containing frequently used colors.
 

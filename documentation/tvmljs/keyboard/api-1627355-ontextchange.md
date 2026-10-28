@@ -15,7 +15,7 @@ A function the system calls when the text in a search or text field changes.
 attribute function onTextChange;
 ```
 
-#### Discussion
+## Discussion
 
 Provide a callback function for the `onTextChange` attribute to respond to changes in the `searchField` or `textField` elements. You can respond to user inputs as the changes happen. This attribute must be set to a function; for example, `Keyboard.onTextChange = function () {}`.
 

@@ -22,7 +22,7 @@ optional var displaysPaymentTransaction: Bool { get }
 @property (nonatomic, assign, readonly) BOOL displaysPaymentTransaction;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this property and return [`true`](../../Swift/true.md) when you want your view controller to display the payment details of a transaction. For example, you might return [`true`](../../Swift/true.md) when you want to provide a customized payment interface. If you do not implement this property, or your implementation returns [`false`](../../Swift/false.md), Siri displays payment details using its own interface.
 

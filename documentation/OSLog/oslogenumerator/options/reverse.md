@@ -25,7 +25,7 @@ static var reverse: OSLogEnumerator.Options { get }
 OSLogEnumeratorReverse
 ```
 
-#### Discussion
+## Discussion
 
 If there is no starting position specified, start at the latest entry.
 

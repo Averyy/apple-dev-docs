@@ -24,11 +24,11 @@ class func photoEffectChrome() -> any CIFilter & CIPhotoEffect
 + (CIFilter<CIPhotoEffect> *) photoEffectChromeFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies a preconfigured set of effects that imitate vintage photography film with higher contrast.
 

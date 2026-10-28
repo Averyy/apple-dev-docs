@@ -21,7 +21,7 @@ Creates a  paragraph intent with the provided information.
 + (NSPresentationIntent *) paragraphIntentWithIdentity:(NSInteger) identity nestedInsideIntent:(NSPresentationIntent *) parent;
 ```
 
-#### Return Value
+## Return Value
 
 A new intent with the kind set to [`NSPresentationIntentKindParagraph`](../nspresentationintentkind/nspresentationintentkindparagraph.md).
 

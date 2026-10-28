@@ -22,7 +22,7 @@ var videoMaximumDuration: TimeInterval { get set }
 @property (nonatomic) NSTimeInterval videoMaximumDuration;
 ```
 
-#### Discussion
+## Discussion
 
 The system-enforced maximum duration for a video recording is 10 minutes; you can set this value to 10 minutes or less. The default value for this property is also 10 minutes.
 

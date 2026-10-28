@@ -19,11 +19,11 @@ func getL2CAPPSM(_ outPSM: UnsafeMutablePointer<BluetoothL2CAPPSM>!) -> IOReturn
 - (IOReturn) getL2CAPPSM:(BluetoothL2CAPPSM *) outPSM;
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if the PSM is found.
 
-#### Discussion
+## Discussion
 
 This method will search through the ProtoclDescriptorList attribute to find an entry with the L2CAP UUID (UUID16: 0x0100). If one is found, it gets the second element of the data element sequence and sets the outPSM pointer to it. The PSM value only gets set when kIOReturnSuccess is returned.
 

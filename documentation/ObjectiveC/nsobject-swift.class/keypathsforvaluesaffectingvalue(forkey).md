@@ -25,7 +25,7 @@ class func keyPathsForValuesAffectingValue(forKey key: String) -> Set<String>
 + (NSSet<NSString *> *) keyPathsForValuesAffectingValueForKey:(NSString *) key;
 ```
 
-#### Discussion
+## Discussion
 
 When an observer for the key is registered with an instance of the receiving class, key-value observing itself automatically observes all of the key paths for the same instance, and sends change notifications for the key to the observer when the value for any of those key paths changes.
 

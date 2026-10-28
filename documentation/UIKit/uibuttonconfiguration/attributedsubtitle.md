@@ -19,7 +19,7 @@ The text and style attributes for the button’s subtitle label.
 @property (nonatomic, copy, readwrite, nullable) NSAttributedString * attributedSubtitle;
 ```
 
-#### Discussion
+## Discussion
 
 The configuration sets the [`subtitle`](./subtitle.md) property to match the string value of this attributed string. To change the button subtitle when the button state changes, use [`configurationUpdateHandler`](../uibutton/configurationupdatehandler-swift.property.md) or [`updateConfiguration()`](../uibutton/updateconfiguration%28%29.md).
 

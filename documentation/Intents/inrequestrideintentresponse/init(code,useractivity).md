@@ -23,11 +23,11 @@ init(code: INRequestRideIntentResponseCode, userActivity: NSUserActivity?)
 - (instancetype) initWithCode:(INRequestRideIntentResponseCode) code userActivity:(NSUserActivity *) userActivity;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized response object or `nil` if the object could not be created.
 
-#### Discussion
+## Discussion
 
 After initializing the response object, update the [`rideStatus`](./ridestatus.md) property with the appropriate information about the ride. Siri or Maps uses the information you provide to inform the user about the details of the booking.
 

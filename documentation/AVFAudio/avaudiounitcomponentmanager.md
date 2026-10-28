@@ -24,7 +24,7 @@ class AVAudioUnitComponentManager
 @interface AVAudioUnitComponentManager : NSObject
 ```
 
-#### Overview
+## Overview
 
 The component manager has methods to find various information about the audio components without opening them. Currently, you can only search audio components that are audio units.
 

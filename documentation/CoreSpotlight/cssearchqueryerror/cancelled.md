@@ -19,7 +19,7 @@ The query stopped because someone canceled it.
 static var cancelled: CSSearchQueryError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 The system reports this error if your code called the [`cancel()`](../csuserquery/cancel%28%29.md) method.
 

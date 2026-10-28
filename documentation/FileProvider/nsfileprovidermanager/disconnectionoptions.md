@@ -19,7 +19,7 @@ struct DisconnectionOptions
 enum NSFileProviderManagerDisconnectionOptions : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 Use an empty set to indicate that the disconnection isn’t temporary, such as when the user logs out.
 

@@ -19,7 +19,7 @@ Creates and registers a new collaboration object using a collection of records t
 - (void) registerCKShareWithContainer:(CKContainer *) container allowedSharingOptions:(CKAllowedSharingOptions *) allowedOptions preparationHandler:(CKSharePreparationHandler) preparationHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to share a collection of [`CKRecord`](../../CloudKit/ckrecord.md) objects that aren’t assigned to an existing [`CKShare`](../../CloudKit/ckshare.md). When the system calls the `preparationHandler`, your app creates a new `CKShare` with the appropriate root `CKRecord` or [`CKRecordZone.ID`](../../CloudKit/ckrecordzone/id.md).
 

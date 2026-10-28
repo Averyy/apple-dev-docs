@@ -24,7 +24,7 @@ var channelIdentifier: String? { get set }
 @property (nonatomic, copy, nullable) NSString * channelIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 This property identifies the app that is making the request. If you distribute multiple apps, use this identifier to communicate which app sent the request.
 

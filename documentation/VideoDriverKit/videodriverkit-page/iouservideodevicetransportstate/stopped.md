@@ -15,7 +15,7 @@ Device transport state is stopped.
 Stopped
 ```
 
-#### Discussion
+## Discussion
 
 In this state, disable the hardware necessary for I/O.
 

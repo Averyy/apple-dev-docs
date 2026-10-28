@@ -19,7 +19,7 @@ A tool that recognizes text in an image.
 struct OCRTool
 ```
 
-#### Overview
+## Overview
 
 The tool returns a string containing all recognized text from the image. To enable this tool, configure your `LanguageModelSession` with an instance of `OCRTool`.
 

@@ -15,7 +15,7 @@ An object that provides access to setting information for a device.
 interface Settings
 ```
 
-#### Overview
+## Overview
 
 You cannot create an instance of the `Settings` class. An instance of this class is available in the global context as `Settings`.
 

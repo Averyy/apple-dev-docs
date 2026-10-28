@@ -22,7 +22,7 @@ optional func dragInteraction(_ interaction: UIDragInteraction, willAnimateLiftW
 - (void) dragInteraction:(UIDragInteraction *) interaction willAnimateLiftWithAnimator:(id<UIDragAnimating>) animator session:(id<UIDragSession>) session;
 ```
 
-#### Discussion
+## Discussion
 
 To add a custom animation block that runs during the lift animation, pass the block to the animator’s [`addAnimations(_:)`](../uidraganimating/addanimations%28_%29.md) method.
 

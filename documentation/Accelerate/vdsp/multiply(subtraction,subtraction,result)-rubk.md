@@ -21,7 +21,7 @@ Calculates the single-precision element-wise product of the differences of two p
 static func multiply<R, S, T, U, V>(subtraction subtractionAB: (a: R, b: S), subtraction subtractionCD: (c: T, d: U), result: inout V) where R : AccelerateBuffer, S : AccelerateBuffer, T : AccelerateBuffer, U : AccelerateBuffer, V : AccelerateMutableBuffer, R.Element == Float, S.Element == Float, T.Element == Float, U.Element == Float, V.Element == Float
 ```
 
-#### Discussion
+## Discussion
 
 This function calculates the products of the first `N` elements of the subtraction of vectors `A` and `B` and the subtraction of vectors `C` and `D`, as follows:
 

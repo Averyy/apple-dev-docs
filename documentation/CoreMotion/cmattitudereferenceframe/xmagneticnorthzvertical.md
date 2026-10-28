@@ -28,7 +28,7 @@ CMAttitudeReferenceFrameXMagneticNorthZVertical
 
 - [Getting processed device-motion data](../getting-processed-device-motion-data.md)
 
-#### Discussion
+## Discussion
 
 Use this option to determine the attitude of the device relative to magnetic north. For example, you might use this to implement a compass feature in your app. The [`yaw`](../cmattitude/yaw.md) (Z-axis) value in [`CMAttitude`](../cmattitude.md) is `0` when the X axis is aligned with magnetic north.
 

@@ -24,11 +24,11 @@ class func predicateForObjectsWithNoCorrelation() -> NSPredicate
 + (NSPredicate *) predicateForObjectsWithNoCorrelation;
 ```
 
-#### Return Value
+## Return Value
 
 A predicate that matches all objects that are not associated with any HealthKit correlations.
 
-#### Discussion
+## Discussion
 
 Use this convenience method to create a predicate that matches all objects not associated with a [`HKCorrelation`](../hkcorrelation.md) object. The following sample uses both the convenience method and a predicate format string to create equivalent predicates.
 

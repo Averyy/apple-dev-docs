@@ -22,7 +22,7 @@ Tells the delegate to handle the specified sync event.
 func handleEvent(_ event: CKSyncEngine.Event, syncEngine: CKSyncEngine) async
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**: On receipt of a [`CKSyncEngine.Event.stateUpdate(_:)`](../cksyncengine-5sie5/event/stateupdate%28_%29.md) event, you must persist the attached state to disk alongside your app data. The sync engine requires you to provide it with the most recent serialized state at initialization, and it’s your responsibility to make sure this is available across app launches.
 

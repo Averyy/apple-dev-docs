@@ -24,7 +24,7 @@ init(device: any MTLDevice, kernelWidth: Int, kernelHeight: Int)
 - (instancetype) initWithDevice:(id<MTLDevice>) device kernelWidth:(NSUInteger) kernelWidth kernelHeight:(NSUInteger) kernelHeight;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized box filter object.
 

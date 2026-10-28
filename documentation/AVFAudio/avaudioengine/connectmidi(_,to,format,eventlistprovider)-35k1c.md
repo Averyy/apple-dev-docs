@@ -22,7 +22,7 @@ func connectMIDI(_ sourceNode: AVAudioNode, to destinationNodes: [AVAudioNode], 
 - (void) connectMIDI:(AVAudioNode *) sourceNode toNodes:(NSArray<AVAudioNode *> *) destinationNodes format:(AVAudioFormat *) format eventListProvider:(AVMIDIEventListBlock) tapBlock;
 ```
 
-#### Discussion
+## Discussion
 
 Establish a MIDI only connection between a source node and multiple destination nodes.
 

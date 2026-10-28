@@ -25,7 +25,7 @@ var allocator: any MDLMeshBufferAllocator { get }
 @property (nonatomic, retain, readonly) id<MDLMeshBufferAllocator> allocator;
 ```
 
-#### Discussion
+## Discussion
 
 Certain operations on the MDLMesh object that owns this buffer—for example, generating new vertex attributes with methods such as [`addNormals(withAttributeNamed:creaseThreshold:)`](../mdlmesh/addnormals%28withattributenamed,creasethreshold%29.md), or changing the format and layout of vertex data by assigning a new value to the [`vertexDescriptor`](../mdlmesh/vertexdescriptor.md) property—may require reallocation of buffer memory. When you perform such operations, Model I/O  uses the same allocator that was used to create the buffer.
 

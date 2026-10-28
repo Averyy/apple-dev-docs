@@ -19,7 +19,7 @@ optional func selectionManagerWillBeginSelection(_ selectionManager: NSTextSelec
 - (void) selectionManagerWillBeginSelection:(NSTextSelectionManager *) selectionManager;
 ```
 
-#### Discussion
+## Discussion
 
 The selection manager calls this method after `selectionManager:shouldBeginSelectionAtPoint:` returns `YES` (or if that method isn’t implemented) and before any selection changes are made.
 

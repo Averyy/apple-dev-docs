@@ -18,7 +18,7 @@ The custom distance to inset the content view from the safe area or scroll view 
 final var contentInset: UIEdgeInsets { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to add additional scroll area around content. Default is `.zero`.
 

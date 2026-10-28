@@ -6,16 +6,19 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ra
 
 # mlx.core.random.split
 
-**split(*key: array*, *num: int = 2*, *stream: StreamOrDevice = None*) → [array](mlx.core.array.md#mlx.core.array)**
-: Split a PRNG key into sub keys.
+```python
+split(key: array, num: int = 2, stream: StreamOrDevice = None) → array
+```
 
-Parameters:
+Split a PRNG key into sub keys.
 
-**key** ([array](mlx.core.array.md#mlx.core.array)) – Input key to split.
-**num** ([int](https://docs.python.org/3/builtins/functions.html#int)*, **optional*) – Number of sub keys. Default: `2`.
+**Parameters:**
 
-Returns:
-The array of sub keys with `num` as its first dimension.
+- **key** ([array](mlx.core.array.md#mlx.core.array)) – Input key to split.
+- **num** ([int](https://docs.python.org/3/builtins/functions.html#int), *optional*) – Number of sub keys. Default: `2`.
 
-Return type:
-[array](mlx.core.array.md#mlx.core.array)
+**Returns:**
+: The array of sub keys with `num` as its first dimension.
+
+**Return type:**
+: [array](mlx.core.array.md#mlx.core.array)

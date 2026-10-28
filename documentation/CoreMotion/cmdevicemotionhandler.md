@@ -28,7 +28,7 @@ typedef void (^)(CMDeviceMotion *, NSError *) CMDeviceMotionHandler;
 
 - [Getting processed device-motion data](./getting-processed-device-motion-data.md)
 
-#### Discussion
+## Discussion
 
 Blocks of type `CMDeviceMotionHandler` are called when there is device-motion data to process. You pass the block into [`startDeviceMotionUpdates(to:withHandler:)`](./cmmotionmanager/startdevicemotionupdates%28to,withhandler%29.md) as the second argument. Blocks of this type return no value but take two arguments:
 

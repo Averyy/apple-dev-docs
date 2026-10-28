@@ -15,7 +15,7 @@ The block signature for a routine that unmaps guest physical memory from a task.
 typedef _Bool (^)(struct PGTask_s *, unsigned long long, unsigned long long) PGUnmapMemory;
 ```
 
-#### Return Value
+## Return Value
 
 Returns [`true`](../Swift/true.md) if the block successfully unmapped memory; otherwise [`false`](../Swift/false.md).
 

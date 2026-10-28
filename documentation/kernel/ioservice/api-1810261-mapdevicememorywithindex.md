@@ -13,11 +13,11 @@ virtual IOMemoryMap * mapDeviceMemoryWithIndex(
  IOOptionBits options = 0 );
 ```
 
-#### Return Value
+## Return Value
 
 An instance of IOMemoryMap, or zero if the index is beyond the count available. The mapping should be released only when access to it is no longer required.
 
-#### Overview
+## Overview
 
 This method creates a mapping for the IODeviceMemory at the given index, with `IODeviceMemory::map(options)`. The mapping is represented by the returned instance of IOMemoryMap, which should not be released until the mapping is no longer required.
 

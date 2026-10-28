@@ -25,7 +25,7 @@ let kCMMetadataIdentifier_QuickTimeMetadataPreferredAffineTransform: CFString
 extern CFStringRef const kCMMetadataIdentifier_QuickTimeMetadataPreferredAffineTransform;
 ```
 
-#### Discussion
+## Discussion
 
 This affine transform can be used in place of a track matrix for displaying a video track to better reflect the current orientation of a video camera with respect to a scene. For example, if the camera is rotated after a recording has started, the presence of this metadata will allow a player to adjust its rendering at the time the rotation occurred.
 

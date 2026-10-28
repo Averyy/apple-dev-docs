@@ -23,7 +23,7 @@ var ratingDescription: String? { get set }
 @property (copy, nullable) NSString * ratingDescription;
 ```
 
-#### Discussion
+## Discussion
 
 For example, the description might include the number of reviewers who provided ratings.
 

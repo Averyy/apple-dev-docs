@@ -20,11 +20,11 @@ func displayTransform(viewRotationAngle: CGFloat, viewportSize: CGSize) -> CGAff
 - (CGAffineTransform) displayTransformForViewRotationAngle:(CGFloat) viewRotationAngle viewportSize:(CGSize) viewportSize;
 ```
 
-#### Return Value
+## Return Value
 
 The display transform matrix.
 
-#### Discussion
+## Discussion
 
 The display transform can be used to convert normalized points in the image-space coordinate system of the captured image to normalized points in the view’s coordinate space. The transform provides the correct rotation and aspect-fill for presenting the captured image in the given view angle and size.
 

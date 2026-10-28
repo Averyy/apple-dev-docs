@@ -25,7 +25,7 @@ init(center centerCoordinate: CLLocationCoordinate2D, latitudinalMeters: CLLocat
 extern MKCoordinateRegion MKCoordinateRegionMakeWithDistance(CLLocationCoordinate2D centerCoordinate, CLLocationDistance latitudinalMeters, CLLocationDistance longitudinalMeters);
 ```
 
-#### Return Value
+## Return Value
 
 A region with the specified values.
 

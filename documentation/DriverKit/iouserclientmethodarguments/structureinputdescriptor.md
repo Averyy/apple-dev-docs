@@ -18,7 +18,7 @@ A memory descriptor containing structure input from the IOKit connect method.
 IOMemoryDescriptor * structureInputDescriptor;
 ```
 
-#### Discussion
+## Discussion
 
 This parameter is set only for large structures, and if set [`structureInput`](./structureinput.md) is `NULL`.
 

@@ -13,7 +13,7 @@
 IFNET_FAMILY_CELLULAR = 15
 ```
 
-#### Discussion
+## Discussion
 
 A cellular interface.
 

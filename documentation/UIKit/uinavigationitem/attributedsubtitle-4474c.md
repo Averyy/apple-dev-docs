@@ -17,7 +17,7 @@ An attributed string to display as the subtitle in the navigation bar.
 @property (nonatomic, copy, nullable) NSAttributedString * attributedSubtitle;
 ```
 
-#### Discussion
+## Discussion
 
 If non-nil, this property takes precedence over the `subtitle` property. If `subtitleView` is non-nil, this property is ignored. If `titleView` is non-nil, this property is ignored.
 

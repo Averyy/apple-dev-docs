@@ -21,7 +21,7 @@ The element may be visible.
 case visible
 ```
 
-#### Discussion
+## Discussion
 
 Some APIs may use this value to represent a hint or preference, rather than a mandatory assertion. For example, setting list row separator visibility to `visible` using the [`listRowSeparator(_:edges:)`](../view/listrowseparator%28_,edges%29.md) modifier may not always result in any visible separators, especially for list styles that do not include separators as part of their design.
 

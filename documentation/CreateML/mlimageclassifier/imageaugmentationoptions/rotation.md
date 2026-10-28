@@ -19,7 +19,7 @@ An option for augmenting training data by rotating each image.
 static let rotation: MLImageClassifier.ImageAugmentationOptions
 ```
 
-#### Discussion
+## Discussion
 
 Use this option to tell the image classifier to augment your training data set by rotating the original images.
 

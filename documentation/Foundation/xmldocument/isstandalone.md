@@ -20,7 +20,7 @@ var isStandalone: Bool { get set }
 @property (getter=isStandalone) BOOL standalone;
 ```
 
-#### Discussion
+## Discussion
 
 A standalone document does not have an external DTD associated with it.
 

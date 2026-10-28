@@ -19,7 +19,7 @@ func rowType(forRow rowIndex: Int) -> NSRuleEditor.RowType
 - (NSRuleEditorRowType) rowTypeForRow:(NSInteger) rowIndex;
 ```
 
-#### Return Value
+## Return Value
 
 The type of the row at `rowIndex`.
 

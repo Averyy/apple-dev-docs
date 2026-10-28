@@ -5,7 +5,7 @@
 
 Indicates that a query’s results list has change during the initial result-gathering phase of a query.
 
-#### Overview
+## Overview
 
 New items are typically added during this phase, however it is possible for items to be removed or updated, if the original file is changed. The info dictionary of the notification can contain `kMDQueryUpdateChangedItems` and `kMDQueryUpdateRemovedItems` keys.
 

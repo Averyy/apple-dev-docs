@@ -21,7 +21,7 @@ enum CPMessageTrailingItem
 enum CPMessageTrailingItem : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Use these constants when creating instances of [`CPMessageListItemTrailingConfiguration`](./cpmessagelistitemtrailingconfiguration.md). A trailing item can provide additional context for a list item’s contents, or help communicate its behavior.
 

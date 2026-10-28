@@ -24,7 +24,7 @@ nonisolated static var circular: CircularProgressViewStyle { get }
 
 Available when `Self` is `CircularProgressViewStyle`.
 
-#### Discussion
+## Discussion
 
 On watchOS, and in widgets and complications, a circular progress view appears as a gauge with the [`accessoryCircularCapacity`](../gaugestyle/accessorycircularcapacity.md) style. If the progress view is indeterminate, the gauge is empty.
 

@@ -5,7 +5,7 @@
 
 Create special rendering effects for your RealityKit scenes using Core Image.
 
-#### Overview
+## Overview
 
 In iOS 15 and later, and macOS 12 and later, you can apply postprocess effects to a RealityKit scene after RealityKit renders it, but before RealityKit displays it. If you register a postprocess callback function, RealityKit passes that function the complete, rendered frame so you can modify it before the viewer sees it. You can use any image processing or drawing APIs on the rendered frame but, as a practical matter, only APIs that execute on the GPU are fast enough to use every frame and maintain a good framerate.
 
@@ -15,7 +15,7 @@ You may also wish to look at the Metal Performance Shaders framework as an alter
 
 For information on using Image Filters from the Metal Performance Shaders framework, see [Using Metal performance shaders to create custom postprocess effects](./using-metal-performance-shaders-to-create-custom-postprocess-effects.md). If neither Core Image nor the Metal Performance Shaders framework provide the effect you need, you can also write custom compute functions to implement postprocess effects. For more information about postprocessing with compute functions, see [Implementing postprocess effects using Metal compute functions](./implementing-postprocess-effects-using-metal-compute-functions.md).
 
-##### Set up the core image context
+### Set up the core image context
 
 In order to apply a [`CIFilter`](../CoreImage/cifilter-swift.class.md), you need to create a [`CIContext`](../CoreImage/cicontext.md) during app launch and store it in a property so it’s available to your postprocess callback. You can use a single Core Image context regardless of the number or types of filters you use. The [`prepareWithDevice`](./arview/rendercallbacks-swift.struct/preparewithdevice.md) render callback is a good place to create your context and do other setup work. RealityKit calls the [`prepareWithDevice`](./arview/rendercallbacks-swift.struct/preparewithdevice.md) function once, after does its own setup, but before it renders the next frame.
 
@@ -40,11 +40,11 @@ arView.renderCallbacks.prepareWithDevice = setupCoreImage
 
 To make sure your setup code fires before rendering begins, assign the [`prepareWithDevice`](./arview/rendercallbacks-swift.struct/preparewithdevice.md) callback in code that executes during app startup, such as in your main view controller’s [`viewWillAppear(_:)`](../UIKit/uiviewcontroller/viewwillappear%28_%29.md) method or the main SwiftUI view’s [`makeUIView(context:)`](../SwiftUI/uiviewrepresentable/makeuiview%28context%29.md) method. RealityKit does call a [`prepareWithDevice`](./arview/rendercallbacks-swift.struct/preparewithdevice.md) callback if it’s registered after RealityKit starts rendering the scene, but doing setup tasks after rendering has started can cause a rendering hitch.
 
-##### Check the output texture pixel format
+### Check the output texture pixel format
 
 Some device GPUs require that the output texture be in a specific pixel format. If the device your code is running on doesn’t support [`MTLGPUFamily.apple2`](../Metal/mtlgpufamily/apple2.md), convert the output texture to the [`MTLPixelFormat.bgra8Unorm`](../Metal/mtlpixelformat/bgra8unorm.md) before using it. For more information, see [Checking the pixel format of a postprocess effect’s output texture](./checking-the-pixel-format-of-a-postprocess-effect-s-output-texture.md).
 
-##### Create a postprocess callback function
+### Create a postprocess callback function
 
 Next, create the render callback function. Once you register it, RealityKit calls it every frame before displaying the rendered scene. In the callback, configure your [`CIFilter`](../CoreImage/cifilter-swift.class.md), convert the source color texture — which contains the frame buffer — into a [`CIImage`](../CoreImage/ciimage.md), and set it as the filter’s image input. Then, create a [`CIRenderDestination`](../CoreImage/cirenderdestination.md), and render the filter to it.
 
@@ -78,7 +78,7 @@ func postProcessWithCoreImage(context: ARView.PostProcessContext) {
 
 > **Note**: The `compatibleTargetTexture` property referenced above is a derived property based on [`targetColorTexture`](./arview/postprocesscontext/targetcolortexture.md). It ensures that the output texture uses the appropriate pixel format for the current device. For more information, see [Checking the pixel format of a postprocess effect’s output texture](./checking-the-pixel-format-of-a-postprocess-effect-s-output-texture.md).
 
-##### Register the callback function
+### Register the callback function
 
 To apply the effect, register the function as the [`postProcess`](./arview/rendercallbacks-swift.struct/postprocess.md) render callback for the [`ARView`](./arview.md).
 

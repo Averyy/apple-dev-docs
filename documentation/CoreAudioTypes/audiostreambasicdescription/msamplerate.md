@@ -25,7 +25,7 @@ var mSampleRate: Float64
 Float64 mSampleRate;
 ```
 
-#### Discussion
+## Discussion
 
 For compressed formats, this field indicates the number of frames per second of equivalent decompressed data.
 

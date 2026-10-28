@@ -19,7 +19,7 @@ class var quaternaryLabelColor: NSColor { get }
 @property (class, strong, readonly) NSColor * quaternaryLabelColor;
 ```
 
-#### Discussion
+## Discussion
 
 Use this color for the least important text in your interface and for separators between text items. For example, you would use this color for secondary text that is disabled. You can also use it for other types of quaternary app content.
 

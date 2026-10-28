@@ -25,7 +25,7 @@ let kCGImagePropertyHasAlpha: CFString
 extern CFStringRef const kCGImagePropertyHasAlpha;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is a [`CFBoolean`](../CoreFoundation/cfboolean.md). The value is [`kCFBooleanTrue`](../CoreFoundation/kcfbooleantrue.md) when the image contains an alpha channel.
 

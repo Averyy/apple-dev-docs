@@ -5,7 +5,7 @@
 
 See the objects and functions you use to control the node tree’s composition.
 
-#### Overview
+## Overview
 
 You create the node tree by creating parent-child relationships between nodes. Each node maintains an ordered list of children, referenced by reading the node’s `children` property. The order of the children in the tree affects many aspects of scene processing, including hit testing and rendering, so it’s important to organize the node tree appropriately.
 

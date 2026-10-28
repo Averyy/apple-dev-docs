@@ -18,7 +18,7 @@ Creates a `Coordinator` instance to coordinate with the `NSView`.
 
 Available when `Coordinator` is `()`.
 
-#### Discussion
+## Discussion
 
 `Coordinator` can be accessed via `Context`.
 

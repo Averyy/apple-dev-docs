@@ -23,7 +23,7 @@ func ABAddressBookGetSourceWithRecordID(_ addressBook: ABAddressBook!, _ sourceI
 extern ABRecordRefABAddressBookGetSourceWithRecordID(ABAddressBookRef addressBook, ABRecordID sourceID);
 ```
 
-#### Return Value
+## Return Value
 
 If found, the source record with `recordID` as its identifier, otherwise `NULL`.
 

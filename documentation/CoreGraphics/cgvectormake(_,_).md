@@ -25,7 +25,7 @@ func CGVectorMake(_ dx: CGFloat, _ dy: CGFloat) -> CGVector
 static CGVector CGVectorMake(CGFloat dx, CGFloat dy);
 ```
 
-#### Return Value
+## Return Value
 
 Returns a [`CGVector`](../CoreFoundation/cgvector.md) structure with the specified coordinates.
 

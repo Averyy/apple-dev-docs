@@ -23,11 +23,11 @@ optional func collectionView(_ collectionView: UICollectionView, targetIndexPath
 - (NSIndexPath *) collectionView:(UICollectionView *) collectionView targetIndexPathForMoveOfItemFromOriginalIndexPath:(NSIndexPath *) originalIndexPath atCurrentIndexPath:(NSIndexPath *) currentIndexPath toProposedIndexPath:(NSIndexPath *) proposedIndexPath;
 ```
 
-#### Return Value
+## Return Value
 
 The index path you want to use for the item. If you don’t implement this method, the collection view uses the index path in the `proposedIndexPath` parameter.
 
-#### Discussion
+## Discussion
 
 During the interactive moving of an item, the collection view calls this method to see if you want to provide a different index path than the proposed path. You might use this method to prevent the user from dropping the item in an invalid location. For example, you might prevent the user from dropping the item in a specific section.
 

@@ -19,11 +19,11 @@
 static SPVector3DFloat SPVector3DFloatMake(SPVector3D vector);
 ```
 
-#### Return Value
+## Return Value
 
 A new vector.
 
-#### Discussion
+## Discussion
 
 Returns a single-precision vector from a double-precision vector.
 

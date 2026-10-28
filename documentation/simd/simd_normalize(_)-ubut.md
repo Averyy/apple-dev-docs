@@ -14,7 +14,7 @@ func simd_normalize(_ q: simd_quath) -> simd_quath
 static simd_quath simd_normalize(simd_quath q);
 ```
 
-#### Discussion
+## Discussion
 
 The unit quaternion obtained by normalizing `q`.
 

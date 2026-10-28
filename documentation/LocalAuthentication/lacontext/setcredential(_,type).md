@@ -24,7 +24,7 @@ func setCredential(_ credential: Data?, type: LACredentialType) -> Bool
 - (BOOL) setCredential:(NSData *) credential type:(LACredentialType) type;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the credential was set, otherwise [`false`](../../Swift/false.md).
 

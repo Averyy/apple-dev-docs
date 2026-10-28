@@ -20,7 +20,7 @@ Creates a video player component from a sample buffer video renderer object.
 init(videoRenderer: AVSampleBufferVideoRenderer)
 ```
 
-#### Discussion
+## Discussion
 
 To create a `VideoPlayerComponent`, first create an [`AVSampleBufferVideoRenderer`](../../AVFoundation/avsamplebuffervideorenderer.md) instance with no parameters and then pass that to the `VideoPlayerComponent` initializer. After creating the `VideoPlayerComponent`, create an [`AVAssetReader`](../../AVFoundation/avassetreader.md) with the [`AVURLAsset`](../../AVFoundation/avurlasset.md) and load the media (video), which you need to track as the [`AVAssetTrack`](../../AVFoundation/avassettrack.md). Feed this `AVAssetTrack` to the [`AVAssetReaderTrackOutput`](../../AVFoundation/avassetreadertrackoutput.md)
 and add this output tracker to the `AVAssetReader`.

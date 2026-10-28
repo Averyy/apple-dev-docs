@@ -19,7 +19,7 @@ func SCDynamicStoreCopyLocation(_ store: SCDynamicStore?) -> CFString?
 CFStringRefSCDynamicStoreCopyLocation(SCDynamicStoreRef store);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the current location identifier, or `NULL` if no location identifier has been defined or if an error occurred. You must release the returned value.
 

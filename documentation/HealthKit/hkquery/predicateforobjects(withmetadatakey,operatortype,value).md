@@ -24,11 +24,11 @@ class func predicateForObjects(withMetadataKey key: String, operatorType: NSComp
 + (NSPredicate *) predicateForObjectsWithMetadataKey:(NSString *) key operatorType:(NSPredicateOperatorType) operatorType value:(id) value;
 ```
 
-#### Return Value
+## Return Value
 
 A predicate that matches objects based on the specified metadata key, operator, and value.
 
-#### Discussion
+## Discussion
 
 Use this convenience method to create a predicate that matches objects based on their metadata, an operator, and a target value. When this predicate is evaluated, it gets the metadata’s value for the provided key. Then the predicate compares that value with the target value using the provided operator.
 

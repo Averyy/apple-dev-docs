@@ -10,7 +10,7 @@
 @property (nonatomic, readonly, getter=isCenterStageRectOfInterestSupported) BOOL centerStageRectOfInterestSupported;
 ```
 
-#### Discussion
+## Discussion
 
 Indicates whether the device supports the Center Stage Rect of Interest feature.
 

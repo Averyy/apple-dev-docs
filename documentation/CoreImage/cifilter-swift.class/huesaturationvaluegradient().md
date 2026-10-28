@@ -24,11 +24,11 @@ class func hueSaturationValueGradient() -> any CIFilter & CIHueSaturationValueGr
 + (CIFilter<CIHueSaturationValueGradient> *) hueSaturationValueGradientFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The generated image.
 
-#### Discussion
+## Discussion
 
 This method generates a hue-saturation-value gradient image. The filter creates a color wheel that shows the hues and saturations for a specified [`CGColorSpace`](../../CoreGraphics/cgcolorspace.md).
 

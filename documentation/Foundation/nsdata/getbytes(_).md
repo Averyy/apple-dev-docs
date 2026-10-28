@@ -27,7 +27,7 @@ func getBytes(_ buffer: UnsafeMutableRawPointer)
 - (void) getBytes:(void *) buffer;
 ```
 
-#### Discussion
+## Discussion
 
 You can see a sample using this method in [Working With Binary Data](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/BinaryData/Tasks/WorkingBinaryData.html#//apple_ref/doc/uid/20000717).
 

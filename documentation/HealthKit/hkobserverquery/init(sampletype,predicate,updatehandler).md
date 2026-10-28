@@ -28,11 +28,11 @@ init(sampleType: HKSampleType, predicate: NSPredicate?, updateHandler: @escaping
 
 - [Executing Observer Queries](../executing-observer-queries.md)
 
-#### Return Value
+## Return Value
 
 A newly initialized observer query object.
 
-#### Discussion
+## Discussion
 
 After instantiating the query, call the [`HKHealthStore`](../hkhealthstore.md) class’s [`execute(_:)`](../hkhealthstore/execute%28_%29.md) method to run this query. Observer queries are long-running tasks. They continue to run on an anonymous background thread and call their results handler whenever they detects relevant changes to the HealthKit store. To stop a query, call the [`HKHealthStore`](../hkhealthstore.md) class’s [`stop(_:)`](../hkhealthstore/stop%28_%29.md) method.
 

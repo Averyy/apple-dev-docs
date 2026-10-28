@@ -21,7 +21,7 @@ Instruction noting that rendering is ended.
 HVFPartRenderInstructionStop
 ```
 
-#### Discussion
+## Discussion
 
 The scaler does not currently issue this instruction. You can pass it to your render context directly to signal it to take any closing actions.
 

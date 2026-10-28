@@ -22,7 +22,7 @@ Accesses the value associated with a given key.
 dynamic subscript(key: Any) -> Any? { get }
 ```
 
-#### Discussion
+## Discussion
 
 The returned value is `nil` if `key` does not exist in the dictionary.
 

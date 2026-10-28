@@ -15,11 +15,11 @@ Requests the creation of a new user client for the service.
 virtual kern_return_t NewUserClient(uint32_t in_type, IOUserClient **out_user_client);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../../DriverKit/error-codes.md).
 
-#### Discussion
+## Discussion
 
 Override this method if your service supports communication though an external user client. When an app calls [`IOServiceOpen(_:_:_:_:)`](../../iokit/api-1514515-ioserviceopen.md) to start a new service, the system calls this method on the service passed to that function. In your implementation, call the [`Create`](../../DriverKit/ioservice/create.md) method to create a new [`IOUserClient`](../../DriverKit/iouserclient.md) object for your service and return that object in the `userClient` parameter.
 

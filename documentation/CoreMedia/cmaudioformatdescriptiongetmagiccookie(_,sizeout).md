@@ -25,11 +25,11 @@ func CMAudioFormatDescriptionGetMagicCookie(_ desc: CMAudioFormatDescription, si
 extern const void *CMAudioFormatDescriptionGetMagicCookie(CMAudioFormatDescriptionRef desc, size_t *sizeOut);
 ```
 
-#### Return Value
+## Return Value
 
 A read-only pointer to the magic cookie inside the audio format description.
 
-#### Discussion
+## Discussion
 
 The magic cookie is a completely opaque piece of data, written and read only by the codec itself. A magic cookie is only present for codecs that require it;  this API will return `NULL` if one does not exist. This API is specific to audio format descriptions, and will return `NULL` if called with a non-audio format description.
 

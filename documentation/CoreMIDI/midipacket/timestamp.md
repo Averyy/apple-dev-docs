@@ -25,7 +25,7 @@ var timeStamp: MIDITimeStamp
 MIDITimeStamp timeStamp;
 ```
 
-#### Discussion
+## Discussion
 
 If receiving MIDI data, this property represents the time at which the events occurred. If sending MIDI data, it represents the time at which to play the events. A value of 0 means “now.”
 

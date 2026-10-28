@@ -20,11 +20,11 @@ func CGSetDisplayTransferByByteTable(_ display: CGDirectDisplayID, _ tableSize: 
 extern CGError CGSetDisplayTransferByByteTable(CGDirectDisplayID display, uint32_t tableSize, const uint8_t *redTable, const uint8_t *greenTable, const uint8_t *blueTable);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See `Core Graphics Data Types and Constants`.
 
-#### Discussion
+## Discussion
 
 The same table may be passed in for the red, green, and blue channels. The tables are interpolated as needed to generate the number of samples required by the graphics hardware.
 

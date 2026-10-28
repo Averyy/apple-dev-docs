@@ -24,7 +24,7 @@ var baselineExposure: Float { get set }
 @property (readwrite) float baselineExposure;
 ```
 
-#### Discussion
+## Discussion
 
 The default value varies with camera settings. A value of `0` indicates linear response.
 

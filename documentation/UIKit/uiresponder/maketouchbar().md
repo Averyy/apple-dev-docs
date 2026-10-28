@@ -19,11 +19,11 @@ func makeTouchBar() -> NSTouchBar?
 - (NSTouchBar *) makeTouchBar;
 ```
 
-#### Return Value
+## Return Value
 
 A newly created Touch Bar object.
 
-#### Discussion
+## Discussion
 
 Override this method in a responder, such as [`UIViewController`](../uiviewcontroller.md), to create and configure a Touch Bar object for the responder.
 

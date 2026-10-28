@@ -30,7 +30,7 @@ var minimumObjectSize: Float { get set }
 
 - [Identifying Trajectories in Video](../identifying-trajectories-in-video.md)
 
-#### Discussion
+## Discussion
 
 Set the minimum size to filter out noise and small objects. The default value is `0`, which means to apply no filtering.
 

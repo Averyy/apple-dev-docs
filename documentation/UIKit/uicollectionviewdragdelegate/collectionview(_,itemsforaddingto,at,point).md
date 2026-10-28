@@ -22,11 +22,11 @@ optional func collectionView(_ collectionView: UICollectionView, itemsForAddingT
 - (NSArray<UIDragItem *> *) collectionView:(UICollectionView *) collectionView itemsForAddingToDragSession:(id<UIDragSession>) session atIndexPath:(NSIndexPath *) indexPath point:(CGPoint) point;
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`UIDragItem`](../uidragitem.md) objects containing the items to add to the current drag session. Return an empty array to prevent the items from being added to the drag session.
 
-#### Discussion
+## Discussion
 
 Implement this method when you want to allow the user to add items to an active drag session. If you don’t implement this method, taps in the collection view trigger the selection of items or other behaviors. However, when a drag session is active and a tap occurs, the collection view calls this method to give you an opportunity to add the underlying item to the drag session.
 

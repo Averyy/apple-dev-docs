@@ -27,7 +27,7 @@ optional func resolveCurrencyAmount(for intent: INSendPaymentIntent) async -> IN
 - (void) resolveCurrencyAmountForSendPayment:(INSendPaymentIntent *) intent completion:(void (^)(INSendPaymentCurrencyAmountResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to verify that you can transfer money in the intended currency. If the amount is outside of the minimum or maximum transaction amount supported by your app, return a successful result and use your response object to communicate that the amount is below the minimum or above the maximum amount. Do not use this method to validate that the user’s account contains the specified amount.
 

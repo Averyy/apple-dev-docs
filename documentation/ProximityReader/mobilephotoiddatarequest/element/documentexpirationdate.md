@@ -17,7 +17,7 @@ The document’s expiration date.
 static let documentExpirationDate: MobilePhotoIDDataRequest.Element
 ```
 
-#### Discussion
+## Discussion
 
 This is usually the expiration date of the corresponding physical document, if applicable.
 

@@ -25,7 +25,7 @@ var isAnalog: Bool { get }
 @property (readonly, getter=isAnalog) BOOL analog;
 ```
 
-#### Discussion
+## Discussion
 
 This property is [`true`](../../Swift/true.md) for most axis inputs.
 

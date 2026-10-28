@@ -19,7 +19,7 @@ static let itemName: NSPrintPanel.AccessorySummaryKey
 extern NSPrintPanelAccessorySummaryKey const NSPrintPanelAccessorySummaryItemNameKey;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value should be an [`NSString`](../../../Foundation/nsstring.md) object.
 

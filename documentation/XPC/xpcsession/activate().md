@@ -21,7 +21,7 @@ Activates a session so you can send messages.
 func activate() throws
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  Don’t call [`activate()`](./activate%28%29.md) on a session that’s already active.
 

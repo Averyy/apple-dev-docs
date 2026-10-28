@@ -21,7 +21,7 @@ File is a firmlink.
 static var firmlink: FileFlags { get }
 ```
 
-#### Discussion
+## Discussion
 
 Firmlinks are used by macOS to create transparent links between the read-only system volume and writable data volume. For example, the `/Applications` folder on the system volume is a firmlink to the `/Applications` folder on the data volume, allowing the user to see both system- and user-installed applications in a single folder.
 

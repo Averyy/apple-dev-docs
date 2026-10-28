@@ -21,11 +21,11 @@ Tracks access to properties.
 func withObservationTracking<T>(_ apply: () -> T, onChange: @autoclosure () -> @Sendable () -> Void) -> T
 ```
 
-#### Return Value
+## Return Value
 
 The value that the `apply` closure returns if it has a return value; otherwise, there is no return value.
 
-#### Discussion
+## Discussion
 
 This method tracks access to any property within the `apply` closure, and informs the caller of value changes made to participating properties by way of the `onChange` closure. For example, the following code tracks changes to the name of cars, but it doesn’t track changes to any other property of `Car`:
 

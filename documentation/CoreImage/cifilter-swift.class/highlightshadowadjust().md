@@ -24,11 +24,11 @@ class func highlightShadowAdjust() -> any CIFilter & CIHighlightShadowAdjust
 + (CIFilter<CIHighlightShadowAdjust> *) highlightShadowAdjustFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies the highlight-shadow adjust filter to an image. The effect adjusts shadows, while preserving spatial detail in the image.
 

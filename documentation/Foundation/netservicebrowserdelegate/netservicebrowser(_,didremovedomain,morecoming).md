@@ -24,7 +24,7 @@ optional func netServiceBrowser(_ browser: NetServiceBrowser, didRemoveDomain do
 - (void) netServiceBrowser:(NSNetServiceBrowser *) browser didRemoveDomain:(NSString *) domainString moreComing:(BOOL) moreComing;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate uses this message to compile a list of unavailable domains. It should wait until `moreDomainsComing` is [`false`](../../Swift/false.md) to do a bulk update of user interface elements.
 

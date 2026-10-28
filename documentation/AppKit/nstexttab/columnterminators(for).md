@@ -19,11 +19,11 @@ class func columnTerminators(for aLocale: Locale?) -> CharacterSet
 + (NSCharacterSet *) columnTerminatorsForLocale:(NSLocale *) aLocale;
 ```
 
-#### Return Value
+## Return Value
 
 The characters for the column terminators.
 
-#### Discussion
+## Discussion
 
 The returned value can be used as the value for [`columnTerminators`](./optionkey/columnterminators.md) to make a decimal tab stop.
 

@@ -19,7 +19,7 @@ static let lowercaseLatin: NSTextList.MarkerFormat
 extern NSTextListMarkerFormat const NSTextListMarkerLowercaseLatin;
 ```
 
-#### Discussion
+## Discussion
 
 Lowercase Latin alphabetical markers follow the pattern a, b, c, and so on.
 

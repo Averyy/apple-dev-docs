@@ -16,7 +16,7 @@ Registers for notifications to be received on the property listener delegates wh
 func addListener(forProperties properties: [AudioObjectPropertyAddress], dispatchQueue: dispatch_queue_t? = nil) throws
 ```
 
-#### Discussion
+## Discussion
 
 The AudioHardwareObject’s delegates property must contain at least one delegate for listeners to be called.
 

@@ -19,7 +19,7 @@ var selectionHighlightStyle: NSTableView.SelectionHighlightStyle { get set }
 @property NSTableViewSelectionHighlightStyle selectionHighlightStyle;
 ```
 
-#### Discussion
+## Discussion
 
 Setting the selection highlight style to [`NSTableView.SelectionHighlightStyle.sourceList`](./selectionhighlightstyle-swift.enum/sourcelist.md) causes the table view to draw its background using the source list style. It also sets the [`draggingDestinationFeedbackStyle`](./draggingdestinationfeedbackstyle-swift.property.md) to [`NSTableView.DraggingDestinationFeedbackStyle.sourceList`](./draggingdestinationfeedbackstyle-swift.enum/sourcelist.md).
 

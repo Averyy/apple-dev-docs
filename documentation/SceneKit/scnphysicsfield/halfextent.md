@@ -25,7 +25,7 @@ var halfExtent: SCNVector3 { get set }
 @property (nonatomic) SCNVector3 halfExtent;
 ```
 
-#### Discussion
+## Discussion
 
 To define a field’s area of effect, use the [`position`](../scnnode/position.md) property of the node that contains the field and the field’s [`halfExtent`](./halfextent.md) property. The center of the area of effect is the node’s position. The half-extent, a position vector in the local coordinate space of the node containing the field, marks one corner of a box, and the negative of the half-extent vector marks the opposite corner of the box. For example, if a node’s position is the vector `{2.0, 2.0, 2.0}` and it contains a physics field whose half-extent is the vector `{0.5, 0.5, 0.5}`, the field’s area of effect is the box extending from `1.5` to `2.5` along each axis of the scene’s coordinate system.
 

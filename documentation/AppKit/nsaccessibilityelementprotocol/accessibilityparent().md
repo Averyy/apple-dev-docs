@@ -20,11 +20,11 @@ func accessibilityParent() -> Any?
 - (id) accessibilityParent;
 ```
 
-#### Return Value
+## Return Value
 
 The element’s parent in the accessibility hierarchy.
 
-#### Discussion
+## Discussion
 
 This method is the getter for the [`NSAccessibilityProtocol`](../nsaccessibilityprotocol.md) protocol’s [`accessibilityParent`](../nsaccessibility-c.protocol/accessibilityparent.md) property.
 

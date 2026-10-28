@@ -20,7 +20,7 @@ The crossing behavior of the portal component.
 var crossingMode: PortalComponent.CrossingMode { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Provide a [`PortalComponent.CrossingMode`](./crossingmode-swift.enum.md) to configure the crossing behaviors.
 

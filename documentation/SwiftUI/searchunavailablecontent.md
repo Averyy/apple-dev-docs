@@ -21,7 +21,7 @@ A structure that represents the body of a static placeholder search view.
 struct SearchUnavailableContent
 ```
 
-#### Overview
+## Overview
 
 You don’t create this type directly. SwiftUI creates it when you build a search [`ContentUnavailableView`](./contentunavailableview.md).
 

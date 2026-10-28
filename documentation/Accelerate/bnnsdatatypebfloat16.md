@@ -23,7 +23,7 @@ var BNNSDataTypeBFloat16: BNNSDataType { get }
 BNNSDataTypeBFloat16
 ```
 
-#### Discussion
+## Discussion
 
 Storage data type
 

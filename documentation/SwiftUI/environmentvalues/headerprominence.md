@@ -21,7 +21,7 @@ The prominence to apply to section headers within a view.
 var headerProminence: Prominence { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The default is [`Prominence.standard`](../prominence/standard.md).
 

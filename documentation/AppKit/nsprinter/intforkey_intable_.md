@@ -15,7 +15,7 @@ Returns the integer value associated with the specified key.
 - (int) intForKey:(NSString *) key inTable:(NSString *) table;
 ```
 
-#### Return Value
+## Return Value
 
 The integer value. Returns `0` if the key is not in the table or the receiver lacks a PPD file.
 

@@ -24,7 +24,7 @@ var completionHandler: MPSGraphCompletionHandler { get set }
 @property (atomic, readwrite) MPSGraphCompletionHandler completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Default value is nil.
 

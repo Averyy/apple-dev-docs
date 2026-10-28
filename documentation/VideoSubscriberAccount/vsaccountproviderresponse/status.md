@@ -24,7 +24,7 @@ var status: String? { get }
 @property (nonatomic, copy, readonly, nullable) NSString * status;
 ```
 
-#### Discussion
+## Discussion
 
 This property is `nil` if the response doesn’t match an existing status type.
 

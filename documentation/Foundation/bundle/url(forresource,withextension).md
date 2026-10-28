@@ -25,11 +25,11 @@ func url(forResource name: String?, withExtension ext: String?) -> URL?
 - (NSURL *) URLForResource:(NSString *) name withExtension:(NSString *) ext;
 ```
 
-#### Return Value
+## Return Value
 
 The file URL for the resource file or `nil` if the file could not be located.
 
-#### Discussion
+## Discussion
 
 If `extension` is an empty string or `nil`, the returned pathname is the first one encountered where the file name exactly matches `name`. For details on how localized resources are found, read [The Bundle Search Pattern](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFBundles/AccessingaBundlesContents/AccessingaBundlesContents.html#//apple_ref/doc/uid/10000123i-CH104-SW7) in [Bundle Programming Guide](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFBundles/Introduction/Introduction.html#//apple_ref/doc/uid/10000123i).
 

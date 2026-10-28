@@ -19,7 +19,7 @@ class WKInterfaceImage
 @interface WKInterfaceImage : WKInterfaceObject
 ```
 
-#### Overview
+## Overview
 
 The images you display in your watchOS app can be static or animated. You use [`WKInterfaceImage`](./wkinterfaceimage.md) objects to specify the image data you want to display and to start and stop animations.
 
@@ -41,7 +41,7 @@ During the initialization of your interface controller, WatchKit creates any nee
 
 The images you use in your interface can be embedded in your Watch app bundle, created dynamically, or downloaded from the Internet. Images in your Watch app bundle represent the images that are part of your app’s user interface. Images that you download or create dynamically exist either in memory or as files in your WatchKit extension’s container directory. The `WKInterfaceImage` class provides setter methods for getting your images onscreen regardless of their location.
 
-##### Image Management
+### Image Management
 
 The images you use in your interface can come from many different locations, and you load and manage those images in different ways:
 
@@ -54,13 +54,13 @@ You can store animated image sequences in your Watch app bundle, but your image 
 
 When creating your images, always create them at a size that is appropriate for the underlying device. Whenever possible, try to use the same size image regardless of the underlying device. In cases where you need different images for different device sizes, use asset catalogs to store the different versions of the image using the same image name. If the image you specify is too large or too small, WatchKit uses the mode attribute you set in Interface Builder to determine how to render the image.
 
-##### Supported Image Formats
+### Supported Image Formats
 
 You can specify images using any image formats supported by iOS, but it is recommended that you use JPEG and PNG images whenever possible. Specifying images in formats other than JPEG and PNG can introduce a performance penalty when rendering those images. All images should be designed for Retina displays, and image filenames you provide yourself should include the `@2x` modifier in the filename.
 
 For more information about the supported image formats, see [`UIImage`](../UIKit/uiimage.md).
 
-##### Animating a Series of Images
+### Animating a Series of Images
 
 Animated images are an easy and fast way to make your interface more dynamic and engaging for users. You create animated images from existing images in your asset catalog or by creating a [`UIImage`](../UIKit/uiimage.md) object using the images you want.
 
@@ -72,7 +72,7 @@ Whenever possible, place image resources in an asset catalog in your Watch app b
 
 For more information on how to create animated images, see the discussions of the [`animatedImageNamed(_:duration:)`](../UIKit/uiimage/animatedimagenamed%28_,duration%29.md) and [`animatedImage(with:duration:)`](../UIKit/uiimage/animatedimage%28with,duration%29.md) methods in [`UIImage`](../UIKit/uiimage.md).
 
-##### Interface Builder Configuration Options
+### Interface Builder Configuration Options
 
 Xcode lets you configure information about your image interface object in your storyboard file. The following table lists the attributes you can configure and their meaning.
 

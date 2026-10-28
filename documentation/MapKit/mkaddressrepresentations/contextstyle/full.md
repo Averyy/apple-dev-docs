@@ -25,7 +25,7 @@ case full
 MKAddressRepresentationsContextStyleFull
 ```
 
-#### Discussion
+## Discussion
 
 The value that tells the framework to include all relevant context. For example, when used with [`cityWithContext(_:)`](../citywithcontext%28_%29.md) MapKit always includes the region name if the device is in that region.
 

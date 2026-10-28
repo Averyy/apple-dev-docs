@@ -19,7 +19,7 @@ static let managedObjectContext: NSBindingName
 extern NSBindingName NSManagedObjectContextBinding;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [Cocoa Bindings](../cocoa-bindings.md).
 

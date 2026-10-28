@@ -17,7 +17,7 @@ A traffic class for real-time audio and video communication.
 case responsiveAV
 ```
 
-#### Discussion
+## Discussion
 
 The responsive audio and video traffic class optimizes for interactive real-time media, such as video conferencing and voice calls that require low latency and consistent delivery.
 

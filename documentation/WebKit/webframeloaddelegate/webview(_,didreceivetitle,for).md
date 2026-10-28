@@ -19,7 +19,7 @@ optional func webView(_ sender: WebView!, didReceiveTitle title: String!, for fr
 - (void) webView:(WebView *) sender didReceiveTitle:(NSString *) title forFrame:(WebFrame *) frame;
 ```
 
-#### Discussion
+## Discussion
 
 This method may be invoked multiple times before all resources for `frame` are completely loaded. Delegates can implement this message to display the page title to the user.
 

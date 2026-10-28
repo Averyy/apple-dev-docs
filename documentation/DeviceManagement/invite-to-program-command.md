@@ -12,7 +12,7 @@ Invite a user to join the Volume Purchase Program (VPP).
 - Mac Catalyst 7.0+
 - macOS 10.9+
 
-#### Discussion
+## Discussion
 
 This command allows a server to invite a user to join the Volume Purchase Program (VPP). It issues the invitation, but doesn’t allow the server to monitor whether the user joins the program. This command yields a `NotNow` status if Setup Assistant is running.
 
@@ -20,7 +20,7 @@ The command doesn’t work with Account Driven enrollments.
 
 Refer to the following sections to determine supported channels and requirements, and to see an example request and response.
 
-##### Command availability
+### Command availability
 
 |  |  |
 | --- | --- |
@@ -30,7 +30,7 @@ Refer to the following sections to determine supported channels and requirements
 | Allowed in user enrollment | N/A |
 | Required access right | AllowAppInstallation |
 
-##### Example request and response
+### Example request and response
 
 **Request**:
 

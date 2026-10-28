@@ -19,7 +19,7 @@ func drawFocusRingMask()
 - (void) drawFocusRingMask;
 ```
 
-#### Discussion
+## Discussion
 
 This method provides the shape of the focus ring mask by drawing the focus ring mask. An implementation of this method should draw in the view’s interior (bounds) coordinate space, that the focus ring style has been set (it will be set it to [`NSFocusRingPlacement.only`](../nsfocusringplacement/only.md) to capture the focus ring itself), and that the fill and stroke colors have been set to an arbitrary fully opaque color.
 

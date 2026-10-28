@@ -14,7 +14,7 @@
 kMPInterruptRemoteContext = 2
 ```
 
-#### Discussion
+## Discussion
 
 Unsupported in macOS.
 

@@ -21,7 +21,7 @@ func unloadComposition()
 - (void) unloadComposition;
 ```
 
-#### Discussion
+## Discussion
 
 If necessary, this method calls [`stopRendering()`](./stoprendering%28%29.md)  prior to unloading the composition.
 

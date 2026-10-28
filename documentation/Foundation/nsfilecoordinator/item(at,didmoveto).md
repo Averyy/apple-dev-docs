@@ -25,7 +25,7 @@ func item(at oldURL: URL, didMoveTo newURL: URL)
 - (void) itemAtURL:(NSURL *) oldURL didMoveToURL:(NSURL *) newURL;
 ```
 
-#### Discussion
+## Discussion
 
 If you move or rename a file or directory as part of a write operation, call this method to notify relevant file presenters that the change occurred. This method calls the [`presentedItemDidMove(to:)`](../nsfilepresenter/presenteditemdidmove%28to%29.md) method for any of the item’s file presenters.  If the item is a directory, this method calls [`presentedItemDidMove(to:)`](../nsfilepresenter/presenteditemdidmove%28to%29.md) on the file presenters for the item’s contents. Finally, it calls [`presentedSubitem(at:didMoveTo:)`](../nsfilepresenter/presentedsubitem%28at,didmoveto%29.md) on the file presenter of any directory containing the item.
 

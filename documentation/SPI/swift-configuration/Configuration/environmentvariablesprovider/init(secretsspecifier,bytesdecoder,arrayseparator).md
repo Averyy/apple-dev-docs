@@ -24,7 +24,7 @@ Creates a new provider that reads from the current process environment.
 init(secretsSpecifier: SecretsSpecifier<String, String> = .none, bytesDecoder: some ConfigBytesFromStringDecoder = .base64, arraySeparator: Character = ",")
 ```
 
-#### Discussion
+## Discussion
 
 This initializer creates a provider that reads configuration values from the environment variables of the current process.
 

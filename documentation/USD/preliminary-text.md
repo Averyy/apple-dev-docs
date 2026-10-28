@@ -4,13 +4,13 @@
 
 A prim that renders 3D text in a scene.
 
-#### Overview
+## Overview
 
 Because `Preliminary_Text` prim is an `Xformable` prim, you define its position either by specifying an offset in world coordinates, or by specifying that the prim should inherit its parent transform.
 
 Alternatively, you can request that the runtime anchor a text prim in the real world by inheriting `Preliminary_AnchoringAPI`. Many AR experiences include anchored text to add information or context about real-world objects or virtual content.
 
-##### Declaration
+### Declaration
 
 ```other
 class Preliminary_Text "Preliminary_Text" (
@@ -18,7 +18,7 @@ class Preliminary_Text "Preliminary_Text" (
 )
 ```
 
-##### Create single-line or flowing text
+### Create single-line or flowing text
 
 The following example demonstrates single-line text.
 

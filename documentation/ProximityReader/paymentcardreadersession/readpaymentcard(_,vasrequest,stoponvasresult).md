@@ -21,11 +21,11 @@ func readPaymentCard(_ request: PaymentCardTransactionRequest, vasRequest: VASRe
 
 - [Accepting loyalty passes from Wallet](../accepting-loyalty-passes-from-wallet.md)
 
-#### Return Value
+## Return Value
 
 Either [`PaymentCardReadResult`](../paymentcardreadresult.md), [`VASReadResult`](../vasreadresult.md), or both when the read operation was successful.
 
-#### Discussion
+## Discussion
 
 Call this method to read either a contactless payment card or a loyalty card. This method displays a system sheet with instructions on what the person needs to do. The system UI remains onscreen until the system reads the person’s card, you cancel the operation, or an error occurs. If it reads a card successfully, the method returns the card information as a result.
 

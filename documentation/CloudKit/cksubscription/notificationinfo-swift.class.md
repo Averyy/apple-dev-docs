@@ -25,7 +25,7 @@ class NotificationInfo
 @interface CKNotificationInfo : NSObject
 ```
 
-#### Overview
+## Overview
 
 When configuring a subscription, use this class to specify the type of push notifications you want to generate when conditions meet the subscription’s trigger. You can provide content that the system displays to the user, describe the sounds to play, and indicate whether the app’s icon has a badge. You can request that the notification include information about the record that triggers it.
 

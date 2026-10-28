@@ -12,11 +12,11 @@ Configures the minimum deployment target version for the iOS platform using a cu
 static func iOS(_ versionString: String) -> SupportedPlatform
 ```
 
-#### Return Value
+## Return Value
 
 A `SupportedPlatform` instance.
 
-#### Discussion
+## Discussion
 
 The version string must be a series of two or three dot-separated integers, such as `8.0` or `8.0.1`.
 

@@ -25,11 +25,11 @@ class func migrationManagerClass() -> AnyClass
 + (Class) migrationManagerClass;
 ```
 
-#### Return Value
+## Return Value
 
 The `NSMigrationManager` class for this store class
 
-#### Discussion
+## Discussion
 
 In a subclass of `NSPersistentStore`, you can override this to provide a custom migration manager subclass (for example, to take advantage of store-specific functionality to improve migration performance).
 

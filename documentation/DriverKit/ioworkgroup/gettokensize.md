@@ -16,11 +16,11 @@
 size_t GetTokenSize();
 ```
 
-#### Return Value
+## Return Value
 
 Workgroup token size
 
-#### Discussion
+## Discussion
 
 Get the size of the workgroup token.
 

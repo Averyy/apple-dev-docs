@@ -25,15 +25,15 @@ func startOfDay(for date: Date) -> Date
 - (NSDate *) startOfDayForDate:(NSDate *) date;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSDate` instance representing the first moment date of the given date.
 
-#### Discussion
+## Discussion
 
 For example, passing `[NSDate date]` for the `date` parameter would give you the start of “today.”
 
-##### Special Considerations
+### Special Considerations
 
 If there were two midnights, this method returns the first. If there was none, it returns the first moment that did exist.
 

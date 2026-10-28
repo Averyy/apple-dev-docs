@@ -22,7 +22,7 @@ nonisolated
 func onInteractiveResizeChange(_ action: @escaping (Bool) -> Void) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Use this modifier to adjust how your view behaves when a window is in the process of being resized by the user. The action provided to this modifier will be called when the resize action begins and ends.
 

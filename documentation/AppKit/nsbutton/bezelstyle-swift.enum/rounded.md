@@ -19,7 +19,7 @@ static var rounded: NSButton.BezelStyle { get }
 NSBezelStyleRounded
 ```
 
-#### Discussion
+## Discussion
 
 Rounded buttons are common within the body of a window or alert. To configure a button as the default button, set the [`keyEquivalent`](../keyequivalent.md) property to the carriage return character (`\r`, ASCII `0xd`). The system draws the default button prominently using the accent color to indicate that the user can press the return key to invoke the button’s action.
 

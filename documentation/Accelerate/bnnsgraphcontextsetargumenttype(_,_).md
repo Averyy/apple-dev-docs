@@ -25,11 +25,11 @@ func BNNSGraphContextSetArgumentType(_ context: bnns_graph_context_t, _ argument
 int BNNSGraphContextSetArgumentType(bnns_graph_context_t context, BNNSGraphArgumentType argument_type);
 ```
 
-#### Return Value
+## Return Value
 
 `0` on success, nonzero on failure.
 
-#### Discussion
+## Discussion
 
 Some arguments require dynamic strides. In this case, set the graph context’s argument type to [`BNNSGraphArgumentTypeTensor`](./bnnsgraphargumenttypetensor.md) and pass the arguments to [`BNNSGraphContextExecute(_:_:_:_:_:_:)`](./bnnsgraphcontextexecute%28_,_,_,_,_,_%29.md) as [`BNNSTensor`](./bnnstensor.md) structures.
 

@@ -24,7 +24,7 @@ protocol VNFaceObservationAccepting : NSObjectProtocol
 @protocol VNFaceObservationAccepting <NSObject>
 ```
 
-#### Overview
+## Overview
 
 This protocol allows you to provide an input collection of [`VNFaceObservation`](./vnfaceobservation.md) objects as part of a request. Request objects adopt this protocol to request additional information about detected faces, such as facial landmarks.
 

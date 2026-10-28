@@ -12,11 +12,11 @@ static const OSSymbol * withCStringNoCopy(
  const char *cString);
 ```
 
-#### Return Value
+## Return Value
 
 An instance of OSSymbol representing the same characters as `cString`; `NULL`.
 
-#### Overview
+## Overview
 
 Avoid using this function; OSSymbols should own their internal string buffers.
 

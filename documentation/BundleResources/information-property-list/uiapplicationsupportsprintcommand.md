@@ -17,7 +17,7 @@ A Boolean value that indicates whether the app supports the Command-P keyboard s
 - **Name**: `UIApplicationSupportsPrintCommand` (Supports Print Command)
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 When the value for this key is `YES`, the system adds the Command-P keyboard shortcut to the app. When someone enters Command-P while using the app, the system calls the [`printContent(_:)`](../../UIKit/uiresponderstandardeditactions/printcontent%28_%29.md) method on the first responder that implements the method found in the responder chain.
 

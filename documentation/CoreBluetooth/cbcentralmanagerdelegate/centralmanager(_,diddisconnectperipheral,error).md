@@ -25,7 +25,7 @@ optional func centralManager(_ central: CBCentralManager, didDisconnectPeriphera
 - (void) centralManager:(CBCentralManager *) central didDisconnectPeripheral:(CBPeripheral *) peripheral error:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 The manager invokes this method when disconnecting a peripheral previously connected with the [`connect(_:options:)`](../cbcentralmanager/connect%28_,options%29.md) method. The error parameter contains the reason for the disconnection, unless the disconnect resulted from a call to [`cancelPeripheralConnection(_:)`](../cbcentralmanager/cancelperipheralconnection%28_%29.md). After this method executes, the peripheral device’s [`CBPeripheralDelegate`](../cbperipheraldelegate.md) object receives no further method calls.
 

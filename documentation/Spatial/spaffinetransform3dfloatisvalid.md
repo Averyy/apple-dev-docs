@@ -19,11 +19,11 @@
 static bool SPAffineTransform3DFloatIsValid(SPAffineTransform3DFloat transform);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether the affine transform is a valid transform.
 
-#### Discussion
+## Discussion
 
 Returns a Boolean value that indicates whether an affine transform is a valid transform.
 

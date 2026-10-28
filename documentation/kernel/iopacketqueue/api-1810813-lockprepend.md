@@ -12,11 +12,11 @@ virtual void lockPrepend(
  mbuf_tm);
 ```
 
-#### Return Value
+## Return Value
 
 Always returns true.
 
-#### Overview
+## Overview
 
 A spinlock is used to synchronize access to the queue.
 

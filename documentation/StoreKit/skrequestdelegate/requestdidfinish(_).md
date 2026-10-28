@@ -27,7 +27,7 @@ optional func requestDidFinish(_ request: SKRequest)
 - (void) requestDidFinish:(SKRequest *) request;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called after all processing of the request has been completed. Typically, subclasses of [`SKRequest`](../skrequest.md) require the delegate to implement additional methods to receive the response. When this method is called, your delegate receives no further communication from the request and can release it.
 

@@ -15,7 +15,7 @@ The domain that the rating applies to.
 attribute String contentRatingDomain;
 ```
 
-#### Discussion
+## Discussion
 
 There are three valid values for this property: `movie`, `music`, and `tvshow`.
 

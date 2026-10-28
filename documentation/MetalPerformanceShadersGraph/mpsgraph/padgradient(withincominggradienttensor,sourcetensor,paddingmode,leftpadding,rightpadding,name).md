@@ -24,7 +24,7 @@ func padGradient(withIncomingGradientTensor incomingGradientTensor: MPSGraphTens
 - (MPSGraphTensor *) padGradientWithIncomingGradientTensor:(MPSGraphTensor *) incomingGradientTensor sourceTensor:(MPSGraphTensor *) sourceTensor paddingMode:(MPSGraphPaddingMode) paddingMode leftPadding:(MPSShape *) leftPadding rightPadding:(MPSShape *) rightPadding name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor object.
 

@@ -23,7 +23,7 @@ var GSS_S_BAD_MIC: UInt { get }
 #define GSS_S_BAD_MIC
 ```
 
-#### Discussion
+## Discussion
 
 This value is an alias for [`GSS_S_BAD_SIG`](./gss_s_bad_sig.md).
 

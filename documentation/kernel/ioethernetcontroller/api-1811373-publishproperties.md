@@ -11,11 +11,11 @@ Publishes Ethernet controller properties and capabilities.
 virtual bool publishProperties();
 ```
 
-#### Return Value
+## Return Value
 
 Returns true if all properties and capabilities were discovered, and published successfully, false otherwise. Returning false will prevent client objects from attaching to the Ethernet controller since a property that a client relies upon may be missing.
 
-#### Overview
+## Overview
 
 This method publishes Ethernet controller properties to the property table. For instance, getHardwareAddress() is called to fetch the hardware address, and the address is then published to the property table. This method call is synchronized by the workloop's gate, and must never be called directly by subclasses.
 

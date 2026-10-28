@@ -24,7 +24,7 @@ var canGoBack: Bool { get }
 @property (nonatomic, readonly) BOOL canGoBack;
 ```
 
-#### Discussion
+## Discussion
 
 The page history gets built as your application calls navigation methods such as [`go(to:)`](./go%28to%29-5lh5d.md) and [`goToLastPage(_:)`](./gotolastpage%28_%29.md).
 

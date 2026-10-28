@@ -23,7 +23,7 @@ var textDragInteraction: UIDragInteraction? { get }
 @property (nonatomic, readonly, nullable) UIDragInteraction * textDragInteraction;
 ```
 
-#### Discussion
+## Discussion
 
 You can set the text drag interaction’s [`isEnabled`](../uidraginteraction/isenabled.md) property to [`false`](../../Swift/false.md) if you need to explicitly turn off drag interactions for a UIKit-provided text view.
 

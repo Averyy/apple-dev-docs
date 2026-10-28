@@ -21,11 +21,11 @@ func validateMenuItem(_ menuItem: NSMenuItem) -> Bool
 - (BOOL) validateMenuItem:(NSMenuItem *) menuItem;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) to enable `menuItem`, [`false`](../../Swift/false.md) to disable it.
 
-#### Discussion
+## Discussion
 
 The object implementing this method must be the target of `menuItem`. You can determine which menu item `menuItem` is by querying it for its tag or action.
 

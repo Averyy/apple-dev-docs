@@ -21,7 +21,7 @@ Match at the Unicode scalar level.
 static var unicodeScalar: RegexSemanticLevel { get }
 ```
 
-#### Discussion
+## Discussion
 
 At this semantic level, the string’s `UnicodeScalarView` is used for matching, and each matched element is a `UnicodeScalar` value.
 

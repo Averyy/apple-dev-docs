@@ -12,11 +12,11 @@ Preview a relevance configuration widget.
 ## Declaration
 
 ```swift
-@freestanding
-(declaration) macro Preview<Widget, Entry>(_ name: String? = nil, widget: @escaping @MainActor () -> Widget, @PreviewRelevanceEntryBuilder<Entry> relevanceEntries: @escaping @MainActor () async -> [Entry]) where Widget : Widget, Entry : RelevanceEntry
+@freestanding(declaration)
+macro Preview<Widget, Entry>(_ name: String? = nil, widget: @escaping @MainActor () -> Widget, @PreviewRelevanceEntryBuilder<Entry> relevanceEntries: @escaping @MainActor () async -> [Entry]) where Widget : Widget, Entry : RelevanceEntry
 ```
 
-#### Overview
+## Overview
 
 Provide the preview with sample data and use it to step through the timeline while ignoring the dates of the entries, and test out the transitions between them.
 

@@ -20,7 +20,7 @@ A value that controls the environment-lighting contribution to an entity’s lig
 var environmentLightingWeight: Float
 ```
 
-#### Discussion
+## Discussion
 
 The weight is a floating-point value in the range `[0.0, 1.0]`.
 

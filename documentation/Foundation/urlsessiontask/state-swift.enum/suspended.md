@@ -25,7 +25,7 @@ case suspended
 NSURLSessionTaskStateSuspended
 ```
 
-#### Discussion
+## Discussion
 
 No further processing takes place until the task is resumed. A task in this state is not subject to timeouts.
 

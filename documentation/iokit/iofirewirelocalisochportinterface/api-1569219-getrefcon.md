@@ -16,11 +16,11 @@ Get reference value associated with this port.
 void *(*GetRefCon)(IOFireWireLibIsochPortRef self);
 ```
 
-#### Return Value
+## Return Value
 
 The port refcon value.
 
-#### Discussion
+## Discussion
 
 Set the reference value with SetRefCon()
 

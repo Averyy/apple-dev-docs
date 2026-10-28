@@ -20,7 +20,7 @@ class var mainApp: SMAppService { get }
 @property (class, readonly) SMAppService * mainAppService;
 ```
 
-#### Discussion
+## Discussion
 
 Use this `SMAppService` to configure the main app to launch at login.
 

@@ -19,13 +19,13 @@ A namespace to collect APIs for use by container apps that provide live assistan
 enum LiveAssistance
 ```
 
-#### Overview
+## Overview
 
 To provide interpreter, captioning, or other services that work with FaceTime calls, create a container app that uses the [`LiveAssistance`](./liveassistance.md) APIs, as well as an app extension that conforms to the [`LiveAssistanceExtension`](./liveassistanceextension.md) protocol.
 
 When a participant in a FaceTime calls wants to use live assistance services, they primarily interact with the app extension. If the extension needs further information to set up the service, it launches the app by returning [`LiveAssistanceRequest.Response.requiresUserInput(reason:)`](./liveassistancerequest/response/requiresuserinput%28reason%29.md) to the request from the framework. This response causes the system to launch the container app, which uses the APIs in this type.
 
-##### Handling app launch
+### Handling app launch
 
 To prepare your container app, start by adding `com.apple.conversation-accessibility.container-app-launch` to the `NSUserActivityTypes` in your app’s information property list. This allows the framework to launch your app when the extension needs the person using the app to sign in or provide other information.
 

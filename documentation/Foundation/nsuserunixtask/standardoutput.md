@@ -19,7 +19,7 @@ var standardOutput: FileHandle? { get set }
 @property (retain, nullable) NSFileHandle * standardOutput;
 ```
 
-#### Discussion
+## Discussion
 
 Setting to `nil` will bind the stream to `/dev/null`.
 

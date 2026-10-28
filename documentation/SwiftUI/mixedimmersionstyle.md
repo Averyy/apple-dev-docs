@@ -15,7 +15,7 @@ An immersion style that displays unbounded content intermixed with other app con
 struct MixedImmersionStyle
 ```
 
-#### Overview
+## Overview
 
 When this immersion style is selected, the immersion amount reported by the closure of [`onImmersionChange(initial:_:)`](./view/onimmersionchange%28initial,_%29.md) is `0.0`.
 

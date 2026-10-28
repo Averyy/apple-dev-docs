@@ -24,7 +24,7 @@ case failed
 AVPlayerLooperStatusFailed
 ```
 
-#### Discussion
+## Discussion
 
 Examine the looper’s [`error`](../error.md) property to determine the cause of the failure.
 

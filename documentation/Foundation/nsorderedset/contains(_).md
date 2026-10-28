@@ -25,7 +25,7 @@ func contains(_ object: Any) -> Bool
 - (BOOL) containsObject:(ObjectType) object;
 ```
 
-#### Return Value
+## Return Value
 
 YES if `object` is present in the set, otherwise [`false`](../../Swift/false.md).
 

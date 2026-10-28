@@ -26,11 +26,11 @@ func scale() -> Int16
 - (short) scale;
 ```
 
-#### Return Value
+## Return Value
 
 The number of digits allowed after the decimal separator.
 
-#### Discussion
+## Discussion
 
 This method limits the precision of the values returned by `NSDecimalNumber`’s `decimalNumberBy...` methods. If [`scale()`](./scale%28%29.md) returns a negative value, it affects the digits before the decimal separator as well. If [`scale()`](./scale%28%29.md) returns `NSDecimalNoScale`, the number of digits is unlimited.
 

@@ -24,11 +24,11 @@ func AudioFileWriteBytes(_ inAudioFile: AudioFileID, _ inUseCache: Bool, _ inSta
 extern OSStatus AudioFileWriteBytes(AudioFileID inAudioFile, Boolean inUseCache, SInt64 inStartingByte, UInt32 *ioNumBytes, const void *inBuffer);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See Result Codes.
 
-#### Discussion
+## Discussion
 
 In most cases, you should use [`AudioFileWritePackets(_:_:_:_:_:_:_:)`](./audiofilewritepackets%28_,_,_,_,_,_,_%29.md) instead of this function.
 

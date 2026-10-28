@@ -25,7 +25,7 @@ var preferredMinSampleCount: Int { get set }
 @property (nonatomic, assign) NSInteger preferredMinSampleCount;
 ```
 
-#### Discussion
+## Discussion
 
 A value that isn’t `0` indicates the preferred number of samples to load. Fewer samples may be loaded if there is a change of format description.
 

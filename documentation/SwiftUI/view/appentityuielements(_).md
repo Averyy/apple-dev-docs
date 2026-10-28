@@ -22,7 +22,7 @@ nonisolated
 func appEntityUIElements(_ provider: @escaping @MainActor (AppEntityUIElementsContext) -> [AppEntityUIElement]) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 For standard SwiftUI views, you provide onscreen content and context to Apple Intelligence with the [`appEntityIdentifier(_:)`](./appentityidentifier%28_%29.md) modifier, making your app entities discoverable when your view appears on screen.
 

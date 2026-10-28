@@ -22,7 +22,7 @@ class MPMediaPlaylist
 @interface MPMediaPlaylist : MPMediaItemCollection
 ```
 
-#### Overview
+## Overview
 
 Each playlist has a name, a set of attributes, and a unique identifier that persists across application launches.
 

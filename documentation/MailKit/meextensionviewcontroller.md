@@ -19,7 +19,7 @@ class MEExtensionViewController
 @interface MEExtensionViewController : NSViewController
 ```
 
-#### Overview
+## Overview
 
 Create a custom subclass of [`MEExtensionViewController`](./meextensionviewcontroller.md) to provide MailKit with a view that displays:
 

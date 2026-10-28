@@ -20,11 +20,11 @@ optional func application(_ sender: Any, openFileWithoutUI filename: String) -> 
 - (BOOL) application:(id) sender openFileWithoutUI:(NSString *) filename;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the file was successfully opened or [`false`](../../Swift/false.md) if it was not.
 
-#### Discussion
+## Discussion
 
 Sent directly by `sender` to the delegate to request that the file `filename` be opened as a linked file. The method should open the file without bringing up its application’s user interface—that is, work with the file is under programmatic control of `sender`, rather than under keyboard control of the user.
 

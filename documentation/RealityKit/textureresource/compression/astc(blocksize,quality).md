@@ -15,7 +15,7 @@ Compresses the imported image with ASTC.
 static func astc(blockSize: TextureResource.Compression.ASTCBlockSize, quality: TextureResource.Compression.ASTCQuality = .fast) -> TextureResource.Compression
 ```
 
-#### Discussion
+## Discussion
 
 If the device doesn’t support ASTC pixel formats, RealityKit applies compression as part of the `.reality` file export.
 

@@ -22,7 +22,7 @@ final func showNotice(_ event: GroupSessionEvent)
 
 Available when `ActivityType` conforms to `GroupActivity`.
 
-#### Discussion
+## Discussion
 
 Call this method to update the system’s UI with information about session-related events. For example, a music-listening app might post an event to notify the group that a participant stopped playback. The system displays the event information only on the current device, and doesn’t forward events to other devices.
 

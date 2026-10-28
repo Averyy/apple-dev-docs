@@ -20,7 +20,7 @@ Predicts human body action periods from an array of poses.
 func applied(to input: [Pose], eventHandler: EventHandler? = nil) async throws -> [HumanBodyActionPeriodPredictor.Prediction]
 ```
 
-#### Return Value
+## Return Value
 
 An async sequence of predictions.
 

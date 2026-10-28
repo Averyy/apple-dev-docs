@@ -19,7 +19,7 @@ A predicate that filters what devices appear in the picker.
 var showDeviceCriteria: MatterAddDeviceRequest.DeviceCriteria
 ```
 
-#### Discussion
+## Discussion
 
 During setup user interface flows, the system may present a picker to choose the device to set up. Only devices that match the specified criteria appear in the picker.
 

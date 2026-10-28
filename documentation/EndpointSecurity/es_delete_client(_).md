@@ -19,7 +19,7 @@ func es_delete_client(_ client: OpaquePointer?) -> es_return_t
 extern es_return_t es_delete_client(es_client_t *client);
 ```
 
-#### Return Value
+## Return Value
 
 A value indicating whether deletion succeeded. [`ES_RETURN_ERROR`](./es_return_error.md) indicates that shutdown encountered an error, which results in a resource leak.
 

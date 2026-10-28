@@ -19,7 +19,7 @@ case openState
 NSDrawerOpenState
 ```
 
-#### Discussion
+## Discussion
 
 The drawer is open (visible onscreen).
 

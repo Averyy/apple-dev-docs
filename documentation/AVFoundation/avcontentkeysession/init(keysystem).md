@@ -25,11 +25,11 @@ convenience init(keySystem: AVContentKeySystem)
 + (instancetype) contentKeySessionWithKeySystem:(AVContentKeySystem) keySystem;
 ```
 
-#### Return Value
+## Return Value
 
 Returns a new [`AVContentKeySession`](../avcontentkeysession.md) instance.
 
-#### Discussion
+## Discussion
 
 The `AVContentKeySession` instance returned is capable of managing a collection of content decryption keys that correspond to the input key system. An [`invalidArgumentException`](../../Foundation/nsexceptionname/invalidargumentexception.md) is raised when the value of `keySystem` is unsupported.
 

@@ -19,7 +19,7 @@ var personalizedVolumeEnabled: SRHeadphoneSettings.SettingEnablement { get }
 @property (nonatomic, assign, readonly) SRHeadphoneSettingsSettingEnablement personalizedVolumeEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 Media volume adjusts in response to your environment.
 

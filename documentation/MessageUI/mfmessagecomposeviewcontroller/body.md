@@ -22,7 +22,7 @@ var body: String? { get set }
 @property (nonatomic, copy, nullable) NSString * body;
 ```
 
-#### Discussion
+## Discussion
 
 If you want to provide initial content in the body of a message, do so before you display it. After the message is displayed you cannot change the value of this property.
 

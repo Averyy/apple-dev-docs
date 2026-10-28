@@ -16,11 +16,11 @@ Method to find out if the device can be opened exclusively by the caller.
 Boolean (*IsExclusiveAccessAvailable)(void *self);
 ```
 
-#### Return Value
+## Return Value
 
 Returns false if the device has been opened for exclusive access, otherwise true.
 
-#### Discussion
+## Discussion
 
 Method to find out if the device can be opened exclusively by the caller.
 

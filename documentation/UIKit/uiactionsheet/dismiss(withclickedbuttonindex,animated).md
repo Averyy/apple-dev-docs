@@ -23,7 +23,7 @@ func dismiss(withClickedButtonIndex buttonIndex: Int, animated: Bool)
 - (void) dismissWithClickedButtonIndex:(NSInteger) buttonIndex animated:(BOOL) animated;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this method to dismiss the action sheet programmatically as needed. The action sheet also calls this method itself in response to the user tapping one of the buttons in the action sheet.
 

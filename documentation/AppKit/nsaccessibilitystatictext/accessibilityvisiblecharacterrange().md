@@ -19,11 +19,11 @@ optional func accessibilityVisibleCharacterRange() -> NSRange
 - (NSRange) accessibilityVisibleCharacterRange;
 ```
 
-#### Return Value
+## Return Value
 
 The range of the visible characters in the document. This method should return the range for entire lines. Characters that are horizontally clipped are included in this range.
 
-#### Discussion
+## Discussion
 
 This method is the getter for the [`NSAccessibilityProtocol`](../nsaccessibilityprotocol.md) protocol’s [`accessibilityVisibleCharacterRange`](../nsaccessibility-c.protocol/accessibilityvisiblecharacterrange.md) property.
 

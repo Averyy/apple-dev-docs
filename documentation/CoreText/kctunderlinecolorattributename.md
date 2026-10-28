@@ -25,7 +25,7 @@ let kCTUnderlineColorAttributeName: CFString
 extern CFStringRef const kCTUnderlineColorAttributeName;
 ```
 
-#### Discussion
+## Discussion
 
 Value must be a [`CGColor`](../CoreGraphics/cgcolor.md) object. Default is the foreground color.
 

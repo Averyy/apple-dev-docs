@@ -20,7 +20,7 @@ Creates a new swizzle pattern.
 static MTLTextureSwizzleChannels MTLTextureSwizzleChannelsMake(MTLTextureSwizzle r, MTLTextureSwizzle g, MTLTextureSwizzle b, MTLTextureSwizzle a);
 ```
 
-#### Return Value
+## Return Value
 
 A texture swizzle pattern.
 

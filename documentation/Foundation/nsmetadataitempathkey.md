@@ -23,7 +23,7 @@ let NSMetadataItemPathKey: String
 extern NSString * const NSMetadataItemPathKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value is an [`NSString`](./nsstring.md) object that contains the full path to the file
 

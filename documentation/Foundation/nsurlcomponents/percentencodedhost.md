@@ -27,7 +27,7 @@ var percentEncodedHost: String? { get set }
 @property (copy, nullable) NSString * percentEncodedHost;
 ```
 
-#### Discussion
+## Discussion
 
 For example, in the URL `http://www.example.com/index.html`, the host is `www.example.com`.
 

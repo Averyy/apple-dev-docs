@@ -23,7 +23,7 @@ var percentUnknown: Float { get }
 @property (nonatomic, readonly) float percentUnknown;
 ```
 
-#### Discussion
+## Discussion
 
 Both active motion and low signal level can cause `percentUnknown` results.
 

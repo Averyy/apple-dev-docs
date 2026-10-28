@@ -19,7 +19,7 @@ func save(to url: URL, ofType typeName: String, for saveOperation: NSDocument.Sa
 - (void) saveToURL:(NSURL *) url ofType:(NSString *) typeName forSaveOperation:(NSSaveOperationType) saveOperation delegate:(id) delegate didSaveSelector:(SEL) didSaveSelector contextInfo:(void *) contextInfo;
 ```
 
-#### Discussion
+## Discussion
 
 When saving is completed, regardless of success or failure, the method sends the message selected by `didSaveSelector` to the `delegate`, with the `contextInfo` as the last argument. The method selected by `didSaveSelector` must have the same signature as:
 

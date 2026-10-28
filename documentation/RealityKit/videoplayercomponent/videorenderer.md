@@ -20,7 +20,7 @@ The component’s video renderer.
 var videoRenderer: AVSampleBufferVideoRenderer? { get }
 ```
 
-#### Discussion
+## Discussion
 
 Pass this renderer to the component as a parameter in the initializer; you can’t replace it afterward. You can’t use the same `AVSampleBufferVideoRenderer` object with more than one `VideoPlayerComponent`.
 

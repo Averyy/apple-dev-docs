@@ -25,11 +25,11 @@ static func subtract<T, U>(_ vectorA: U, _ vectorB: T) -> [Float] where T : Acce
 
 - [Using vDSP for vector-based arithmetic](../using-vdsp-for-vector-based-arithmetic.md)
 
-#### Return Value
+## Return Value
 
 The output vector, `C`.
 
-#### Discussion
+## Discussion
 
 This function calculates the differences of the first `N` elements of input vectors `A` and `B`, and writes the result to output vector `C`, as follows:
 

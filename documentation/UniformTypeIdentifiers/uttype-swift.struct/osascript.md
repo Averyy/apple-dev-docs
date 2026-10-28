@@ -21,7 +21,7 @@ A type that represents an Open Scripting Architecture binary script.
 static var osaScript: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `com.apple.applescript.script`.
 

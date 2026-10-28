@@ -22,7 +22,7 @@ init(identifier: String, request: URLRequest, essential: Bool, fileSize: Int, ap
 - (instancetype) initWithIdentifier:(NSString *) identifier request:(NSURLRequest *) request essential:(BOOL) essential fileSize:(NSUInteger) fileSize applicationGroupIdentifier:(NSString *) applicationGroupIdentifier priority:(BADownloaderPriority) priority;
 ```
 
-#### Discussion
+## Discussion
 
 Constructs a download object to represent the download of a asset located inside of the provided @c request.
 

@@ -25,11 +25,11 @@ func vImageCreateMonochromeColorSpaceWithWhitePointAndTransferFunction(_ whitePo
 CGColorSpaceRefvImageCreateMonochromeColorSpaceWithWhitePointAndTransferFunction(const vImageWhitePoint *whitePoint, const vImageTransferFunction *tf, CGColorRenderingIntent intent, vImage_Flags flags, vImage_Error *error);
 ```
 
-#### Return Value
+## Return Value
 
 A [`CGColorSpace`](../CoreGraphics/cgcolorspace.md) with a reference count of one.
 
-#### Discussion
+## Discussion
 
 Use this function to create a [`CGColorSpace`](../CoreGraphics/cgcolorspace.md) instance to correspond with a specified white point and a transfer function. The [`CGColorSpace`](../CoreGraphics/cgcolorspace.md) instance defines a monochrome color space. (A Y’CbCr color space is an RGB color space and a conversion matrix from RGB to Y’CbCr.) The white point provides the extent of a color space in XYZ space, and the transfer function provides the transformation from linear color to nonlinear color that the pixels reside in.
 

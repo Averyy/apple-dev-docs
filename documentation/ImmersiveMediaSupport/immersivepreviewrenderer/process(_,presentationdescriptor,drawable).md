@@ -16,7 +16,7 @@ Performs the rendering of an immersive video frame.
 func process(_ frame: ImmersiveVideoFrame, presentationDescriptor: PresentationDescriptor, drawable: LayerRenderer.Drawable) async
 ```
 
-#### Discussion
+## Discussion
 
 This method is available on visionOS and integrates with the CompositorServices framework to provide head-tracked stereoscopic rendering. It automatically processes both left and right eye views, applies device anchor transforms for head tracking.
 

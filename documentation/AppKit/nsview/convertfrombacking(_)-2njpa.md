@@ -19,7 +19,7 @@ func convertFromBacking(_ rect: NSRect) -> NSRect
 - (NSRect) convertRectFromBacking:(NSRect) rect;
 ```
 
-#### Return Value
+## Return Value
 
 A rectangle in the view’s interior coordinate system.
 

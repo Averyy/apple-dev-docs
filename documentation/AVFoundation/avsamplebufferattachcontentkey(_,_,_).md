@@ -27,7 +27,7 @@ func AVSampleBufferAttachContentKey(_ sbuf: CMSampleBuffer, _ contentKey: AVCont
 extern BOOL AVSampleBufferAttachContentKey(CMSampleBufferRef sbuf, AVContentKey *contentKey, NSError **outError);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether the attachment is successful.
 

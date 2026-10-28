@@ -24,7 +24,7 @@ var animationTool: AVVideoCompositionCoreAnimationTool? { get }
 @property (nonatomic, retain, readonly, nullable) AVVideoCompositionCoreAnimationTool * animationTool;
 ```
 
-#### Discussion
+## Discussion
 
 This attribute may be `nil`. Set an animation tool if you’re using the composition in conjunction with [`AVAssetExportSession`](../avassetexportsession.md) for offline rendering, rather than with [`AVPlayer`](../avplayer.md).
 

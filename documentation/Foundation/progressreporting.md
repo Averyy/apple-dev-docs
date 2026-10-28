@@ -25,7 +25,7 @@ protocol ProgressReporting : NSObjectProtocol
 @protocol NSProgressReporting <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Create the returned progress object using [`ProgressReporting`](./progressreporting.md). The resulting object has no parent allowing the caller to add it to a progress tree using [`ProgressReporting`](./progressreporting.md).
 

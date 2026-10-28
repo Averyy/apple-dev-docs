@@ -20,7 +20,7 @@ class func info(for filter: SCContentFilter) -> SCShareableContentInfo
 + (SCShareableContentInfo *) infoForFilter:(SCContentFilter *) filter;
 ```
 
-#### Return Value
+## Return Value
 
 The sharable content matching the filter, or `nil` if none is found.
 

@@ -15,7 +15,7 @@ Check if a filesystem is marked as having reliable remote VNOP_ACCESS support.
 int vfs_authopaqueaccess(mount_t mp);
 ```
 
-#### Return Value
+## Return Value
 
 Nonzero if VNOP_ACCESS is supported remotely, else 0.
 

@@ -25,11 +25,11 @@ func CFRunLoopIsWaiting(_ rl: CFRunLoop!) -> Bool
 extern Boolean CFRunLoopIsWaiting(CFRunLoopRef rl);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if `rl` has no events to process and is blocking, waiting for a source or timer to become ready to fire; `false` if `rl` either is not running or is currently processing a source, timer, or observer.
 
-#### Discussion
+## Discussion
 
 This function is useful only to test the state of another thread’s run loop. When called with the current thread’s run loop, this function always returns `false`.
 

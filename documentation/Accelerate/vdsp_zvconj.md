@@ -21,7 +21,7 @@ Calculates the complex conjugate of the values in a single-precision vector usin
 extern void vDSP_zvconj(const DSPSplitComplex *__A, vDSP_Stride __IA, const DSPSplitComplex *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 Conjugates elements of vector `A`, leaving results in `C`.
 

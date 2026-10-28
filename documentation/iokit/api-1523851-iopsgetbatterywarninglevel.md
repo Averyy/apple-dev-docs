@@ -16,7 +16,7 @@ Indicates whether the system is at a low battery warning level.
 IOPSLowBatteryWarningLevel IOPSGetBatteryWarningLevel(void);
 ```
 
-#### Discussion
+## Discussion
 
 If your app runs in full screen mode and occludes macOS's battery monitor's low battery warnings, you should alert the user at least when the system is in kIOPSLowBatteryWarnFinal.
 

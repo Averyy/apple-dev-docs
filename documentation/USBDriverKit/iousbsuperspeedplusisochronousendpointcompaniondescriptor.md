@@ -15,7 +15,7 @@ The descriptor for a SuperSpeedPlus Isochronous USB Endpoint Companion.
 struct IOUSBSuperSpeedPlusIsochronousEndpointCompanionDescriptor;
 ```
 
-#### Overview
+## Overview
 
 See USB 3.1 9.6.8: SuperSpeedPlus Isochronous Endpoint Companion in the USB Specification at [http://www.usb.org](http://www.usb.org).
 

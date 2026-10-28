@@ -11,9 +11,9 @@ Fetches a single Impression Share report containing metrics and metadata.
 
 > **Deprecated**: Apple Ads Campaign Management API is deprecated. Instead, use the [Apple Ads Platform API](../apple-ads-platform-api/apple-ads-platform-api.md).
 
-#### Discussion
+## Discussion
 
-##### Payload example: A single impression share report
+### Payload example: A single impression share report
 
 **Request**:
 

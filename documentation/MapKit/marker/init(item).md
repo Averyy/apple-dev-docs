@@ -22,7 +22,7 @@ Creates a marker for a given map item using a MapKit-provided label.
 @preconcurrency init(item: MKMapItem) where Label == Text
 ```
 
-#### Discussion
+## Discussion
 
 MapKit composes a label using available information, such as the `name` property of `label`.
 

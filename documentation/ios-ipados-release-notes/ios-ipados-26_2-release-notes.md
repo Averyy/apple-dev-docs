@@ -5,19 +5,19 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 The iOS & iPadOS 26.2 SDK provides support to develop apps for iPhone and iPad running iOS & iPadOS 26.2. The SDK comes bundled with Xcode 26.2. For information on the compatibility requirements for Xcode 26.2, see [Xcode 26.2 Release Notes](../Xcode-Release-Notes/xcode-26_2-release-notes.md).
 
-##### AirDrop
+### AirDrop
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Devices set to “Everyone” on 26.2 beta 1 are not discoverable by devices on 26.2 beta 2.  (163636875)
 
-##### DeclaredAgeRange API
+### DeclaredAgeRange API
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Usage of the following symbols within the DeclaredAgeRange framework will cause a runtime crash. You must recompile your app against the 26.2 SDK to receive this fix. 
 
@@ -29,46 +29,46 @@ The iOS & iPadOS 26.2 SDK provides support to develop apps for iPhone and iPad r
   - `AgeRangeService.AgeRangeDeclaration.paymentChecked`
   - `AgeRangeService.AgeRangeDeclaration.guardianPaymentChecked`  (165248390) (FB21121092)
 
-##### HealthKit
+### HealthKit
 
-###### New Features
+#### New Features
 
 - Hypertension notifications are now available for reading with a new API. Your app can now request authorization for `HKCategoryTypeIdentifierHypertensionEvent` to read notifications resulting from the Hypertension Notifications Feature on Apple Watch.  (153344834)
 
-##### Instruments
+### Instruments
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: The Allocations instrument sometimes fails to report reference counting operations for native Swift types.  (163080666)
 
-##### PermissionKit API
+### PermissionKit API
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: PermissionKit Significant App Update API is not testable in sandbox.  (163601229)
 
-##### StoreKit
+### StoreKit
 
-###### New Features
+#### New Features
 
 - [AppStore.ageRatingCode](../StoreKit/appstore/ageratingcode.md) API provides the current age rating code for your app. Use this property to fetch the age rating and compare it with the last known rating to check for changes.  (160960740)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: An issue prevents the purchase of a subscription using a win-back offer when testing with StoreKit Testing in Xcode.  (162357552) (FB20604848)
 - Fixed: `SubscriptionStatus.all` returning old `SubscriptionStatus` after a subscription change.  (163505178)
 
-##### TLS
+### TLS
 
-###### Known Issues
+#### Known Issues
 
 - The default TLS Client Hello has been modified. If your app or website communicates with servers configured with strict bot-detection or security policies that only allow traffic with known TLS fingerprints, then users might be unable to login or perform other actions.
 
   TLS Client Hellos are expected to change across releases as Apple works to offer the most secure TLS options. Servers should adopt resilient and adaptable bot-detection policies that can handle changes in TLS Client Hellos. Overly restrictive policies can cause difficult to triage disruptions to user experience.  (163151032)
 
-##### Watch Face Gallery
+### Watch Face Gallery
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Watch Face Gallery text is in English only.  (164187878)
 

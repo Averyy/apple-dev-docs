@@ -15,7 +15,7 @@ The structure for the billboard alternative mode device capability.
 struct IOUSBDeviceCapabilityBillboardAltMode;
 ```
 
-#### Overview
+## Overview
 
 See USB Billboard 3.1.6.3: Billboard Capability Descriptor V1.21.
 

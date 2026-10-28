@@ -17,7 +17,7 @@ case cwUnsupportedCapabilitiesErr
 kCWUnsupportedCapabilitiesErr
 ```
 
-#### Discussion
+## Discussion
 
 Access point cannot support all requested capabilities.
 

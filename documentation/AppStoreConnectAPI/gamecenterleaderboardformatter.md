@@ -41,7 +41,7 @@ string GameCenterLeaderboardFormatter
 - [App Store Connect API 3.5 release notes](./app-store-connect-api-3-5-release-notes.md)
 - [App Store Connect API 3.8 release notes](./app-store-connect-api-3-8-release-notes.md)
 
-##### Discussion
+### Discussion
 
 Leaderboard formatters allow you to specify the unit of measurement for a Game Center leaderboard. There is a new required attribute `defaultFormatter` when using [`Create a Leaderboard`](./post-v1-gamecenterleaderboards.md) which will give all your localizations the same formatter. You can also optionally use `formatterOverride` to override a specific leaderboard localization when calling [`Create a Leaderboard Localization`](./post-v1-gamecenterleaderboardlocalizations.md) or [`Modify a Leaderboard Localization`](./patch-v1-gamecenterleaderboardlocalizations-_id_.md).
 

@@ -24,7 +24,7 @@ var outputProvider: AURenderPullInputBlock? { get set }
 @property (nonatomic, copy, nullable) AURenderPullInputBlock outputProvider;
 ```
 
-#### Discussion
+## Discussion
 
 This block must be set if output is enabled.
 

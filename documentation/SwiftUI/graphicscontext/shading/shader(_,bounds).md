@@ -20,11 +20,11 @@ Returns a shading instance that fills with the results of querying a shader for 
 static func shader(_ shader: Shader, bounds: CGRect = .zero) -> GraphicsContext.Shading
 ```
 
-#### Return Value
+## Return Value
 
 A shading instance that fills using the shader.
 
-#### Discussion
+## Discussion
 
 For a shader function to act as a shape fill it must have a function signature matching:
 

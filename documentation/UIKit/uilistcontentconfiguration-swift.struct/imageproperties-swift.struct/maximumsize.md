@@ -19,7 +19,7 @@ The maximum size for the image.
 var maximumSize: CGSize { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`CGSizeZero`](../../../CoreGraphics/cgsizezero.md). A width or height of zero means that the system doesn’t constrain the size for that dimension.
 

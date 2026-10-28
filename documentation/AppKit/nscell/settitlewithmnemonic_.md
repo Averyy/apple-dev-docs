@@ -17,7 +17,7 @@ Sets the title of the receiver with one character in the string denoted as an ac
 - (void) setTitleWithMnemonic:(NSString *) stringWithAmpersand;
 ```
 
-#### Discussion
+## Discussion
 
 Mnemonics are not supported in macOS.
 

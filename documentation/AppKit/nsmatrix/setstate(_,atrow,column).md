@@ -19,7 +19,7 @@ func setState(_ value: Int, atRow row: Int, column col: Int)
 - (void) setState:(NSInteger) value atRow:(NSInteger) row column:(NSInteger) col;
 ```
 
-#### Discussion
+## Discussion
 
 For radio-mode matrices, if `value` is nonzero the specified cell is selected before its state is set to `value`. If `value` is 0 and the receiver is a radio-mode matrix, the currently selected cell is deselected (providing that empty selection is allowed).
 

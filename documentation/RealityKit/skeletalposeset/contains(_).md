@@ -20,7 +20,7 @@ Checks if the set contains a pose with the given name.
 func contains(_ poseID: SkeletalPose.ID) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` a pose with matching name is contained in the set.
 

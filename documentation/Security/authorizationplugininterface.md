@@ -25,7 +25,7 @@ typedef struct AuthorizationPluginInterface { ... } AuthorizationPluginInterface
 
 - [Extending authorization services with plug-ins](./extending-authorization-services-with-plug-ins.md)
 
-#### Overview
+## Overview
 
 Your plug-in passes this interface to the authorization engine through the [`AuthorizationPluginCreate`](./authorizationplugincreate.md) function.
 

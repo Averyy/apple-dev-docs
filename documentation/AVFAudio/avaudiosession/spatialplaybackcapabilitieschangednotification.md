@@ -24,7 +24,7 @@ class let spatialPlaybackCapabilitiesChangedNotification: NSNotification.Name
 extern NSNotificationName const AVAudioSessionSpatialPlaybackCapabilitiesChangedNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The system posts this notification when spatial playback capabilities change due to a change in user preference.
 

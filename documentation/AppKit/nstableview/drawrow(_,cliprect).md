@@ -19,7 +19,7 @@ func drawRow(_ row: Int, clipRect: NSRect)
 - (void) drawRow:(NSInteger) row clipRect:(NSRect) clipRect;
 ```
 
-#### Discussion
+## Discussion
 
 [`NSCell`](../nscell.md)-based table views can override this method to customize the drawing of the rows.
 

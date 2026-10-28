@@ -23,7 +23,7 @@ init(style: INUIAddVoiceShortcutButtonStyle)
 - (instancetype) initWithStyle:(INUIAddVoiceShortcutButtonStyle) style;
 ```
 
-#### Return Value
+## Return Value
 
 A button initialized with the specified style.
 

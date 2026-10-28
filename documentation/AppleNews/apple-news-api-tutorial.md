@@ -4,15 +4,15 @@
 
 Request channel data and publish an article using the Apple News API.
 
-#### Overview
+## Overview
 
 In this tutorial, you’ll use Python to request channel data and publish an article to your channel. The tutorial assumes you’re familiar with basic Python programming constructs and techniques. Beginning programmers should be able to follow along and run this tutorial.
 
-##### Alternative Tutorial Code Languages
+### Alternative Tutorial Code Languages
 
 In addition to Python, the tutorial code is also available in Java, C#, and PHP. To get the code for all four, download the [Apple-News-API-Tutorial-Example-Code.zip](https://developer.apple.com/apple-news/download/Apple-News-API-Tutorial-Example-Code.zip) file.
 
-##### Requirements
+### Requirements
 
 Before beginning the tutorial, make sure you have the following information and installed software:
 

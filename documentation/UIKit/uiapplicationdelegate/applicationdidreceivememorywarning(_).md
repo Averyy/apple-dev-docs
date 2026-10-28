@@ -27,7 +27,7 @@ optional func applicationDidReceiveMemoryWarning(_ application: UIApplication)
 
 - [Responding to memory warnings](../responding-to-memory-warnings.md)
 
-#### Discussion
+## Discussion
 
 Your implementation of this method should free up as much memory as possible by purging cached data objects that can be recreated (or reloaded from disk) later. You use this method in conjunction with the [`didReceiveMemoryWarning()`](../uiviewcontroller/didreceivememorywarning%28%29.md) of the [`UIViewController`](../uiviewcontroller.md) class and the [`didReceiveMemoryWarningNotification`](../uiapplication/didreceivememorywarningnotification.md) notification to release memory throughout your app.
 

@@ -15,7 +15,7 @@
 static let CWScanCacheDidUpdate: NSNotification.Name
 ```
 
-#### Discussion
+## Discussion
 
 Posted when new entries are added to the scan cache, or existing entries are updated with more current information. The *object* for this notification is the corresponding BSD interface name. This notification does not contain a *userInfo* dictionary.
 

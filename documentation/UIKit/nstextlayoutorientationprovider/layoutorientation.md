@@ -24,7 +24,7 @@ var layoutOrientation: NSLayoutManager.TextLayoutOrientation { get }
 @property (nonatomic, readonly) NSTextLayoutOrientation layoutOrientation;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the default layout orientation for text in the object that adopts the protocol. If the text contains an explicit [`verticalGlyphForm`](../../Foundation/nsattributedstring/key/verticalglyphform.md) attribute in Swift or an [`NSVerticalGlyphFormAttributeName`](../nsverticalglyphformattributename.md) attribute in Objective-C, that attribute overrides the value in this property. When rendering, TextKit assumes the coordinate system is appropriately rotated.
 

@@ -14,7 +14,7 @@ virtual IOInterruptEventSource * CreateDeviceInterrupt (
  IOService *provider );
 ```
 
-#### Return Value
+## Return Value
 
 IOInterruptEventSource. May return NULL if and only if there is no hardware interrupt associated with this device.
 

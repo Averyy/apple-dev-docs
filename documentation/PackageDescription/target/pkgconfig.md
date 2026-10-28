@@ -12,7 +12,7 @@ The name of the package configuration file, without extension, for the system li
 final let pkgConfig: String?
 ```
 
-#### Discussion
+## Discussion
 
 If present, the Swift Package Manager tries every package configuration name separated by a space to search for the `<name>.pc` file to get the additional flags needed for the system library target.
 

@@ -20,7 +20,7 @@ A view that provides a Look Around preview for a specific geographic location.
 @preconcurrency struct LookAroundPreview
 ```
 
-#### Overview
+## Overview
 
 Use a `LookAroundPreview` to create preview imagery for a specific geographic location on the map that you can place in your view. In the following example, a travel recommendations app displays and styles a stack of Look Around previews it generates from an array of `ItineraryItem` structures that contain the location’s title and Look Around scene:
 

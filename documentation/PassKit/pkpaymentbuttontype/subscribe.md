@@ -24,7 +24,7 @@ case subscribe
 PKPaymentButtonTypeSubscribe
 ```
 
-#### Discussion
+## Discussion
 
 This button looks like:
 

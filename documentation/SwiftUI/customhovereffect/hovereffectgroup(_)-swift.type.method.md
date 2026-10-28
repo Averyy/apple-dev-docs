@@ -17,7 +17,7 @@ static func hoverEffectGroup(_ group: HoverEffectGroup?) -> GroupHoverEffect
 
 Available when `Self` is `GroupHoverEffect`.
 
-#### Return Value
+## Return Value
 
 An effect that activates the given hover group.
 

@@ -25,11 +25,11 @@ func registeredObject(for objectID: NSManagedObjectID) -> NSManagedObject?
 - (NSManagedObject *) objectRegisteredForID:(NSManagedObjectID *) objectID;
 ```
 
-#### Return Value
+## Return Value
 
 The identified object, if it’s known to the context; otherwise, `nil`.
 
-#### Discussion
+## Discussion
 
 This method provides a convenient way to retrieve an object from the context’s [`registeredObjects`](./registeredobjects.md) property. A `nil` return value means the context doesn’t recognize the specified object; the object might still exist in the persistent store. If you need to query both the context and the store, use [`existingObject(with:)`](./existingobject%28with%29.md) instead.
 

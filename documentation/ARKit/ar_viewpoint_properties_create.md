@@ -15,7 +15,7 @@ Create an `ar_viewpoint_properties_t`.
 extern ar_viewpoint_properties_tar_viewpoint_properties_create();
 ```
 
-#### Return Value
+## Return Value
 
 A new `ar_viewpoint_properties_t`.
 

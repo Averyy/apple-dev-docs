@@ -23,7 +23,7 @@ init(eraserType: __PKEraserType)
 - (instancetype) initWithEraserType:(PKEraserType) eraserType;
 ```
 
-#### Return Value
+## Return Value
 
 A new eraser tool object.
 

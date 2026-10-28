@@ -24,7 +24,7 @@ class HKCorrelationType
 @interface HKCorrelationType : HKSampleType
 ```
 
-#### Overview
+## Overview
 
 The [`HKCorrelationType`](./hkcorrelationtype.md) class is a concrete subclass of the [`HKObjectType`](./hkobjecttype.md) class. To create a correlation type instance, use the object type’s [`correlationType(forIdentifier:)`](./hkobjecttype/correlationtype%28foridentifier%29.md) conveniance method.
 
@@ -36,7 +36,7 @@ Use correlation types to:
 
 HealthKit provides two correlation types: blood pressure and food.
 
-##### Using Correlation Types
+### Using Correlation Types
 
 As with many HealthKit classes, don’t subclass correlation types.
 

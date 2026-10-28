@@ -23,7 +23,7 @@ func userGesturePerformed(in tab: any WKWebExtensionTab)
 - (void) userGesturePerformedInTab:(id<WKWebExtensionTab>) tab;
 ```
 
-#### Discussion
+## Discussion
 
 When a user gesture is performed in a tab, this method should be called to update the extension context.
 

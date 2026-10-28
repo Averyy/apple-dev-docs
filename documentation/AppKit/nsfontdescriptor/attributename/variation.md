@@ -19,7 +19,7 @@ static let variation: NSFontDescriptor.AttributeName
 extern NSFontDescriptorAttributeName NSFontVariationAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSDictionary`](../../../Foundation/nsdictionary.md) object. The default value is supplied by the font. See [`NSFontDescriptor.VariationKey`](../variationkey.md) for dictionary keys.
 

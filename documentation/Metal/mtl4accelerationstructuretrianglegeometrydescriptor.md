@@ -24,7 +24,7 @@ class MTL4AccelerationStructureTriangleGeometryDescriptor
 @interface MTL4AccelerationStructureTriangleGeometryDescriptor : MTL4AccelerationStructureGeometryDescriptor
 ```
 
-#### Overview
+## Overview
 
 Use a [`MTLResidencySet`](./mtlresidencyset.md) to mark residency of all buffers this descriptor references when you build this acceleration structure.
 

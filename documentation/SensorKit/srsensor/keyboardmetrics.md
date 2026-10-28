@@ -21,7 +21,7 @@ static let keyboardMetrics: SRSensor
 extern SRSensor const SRSensorKeyboardMetrics;
 ```
 
-#### Discussion
+## Discussion
 
 The [`sample`](../srfetchresult/sample.md) type for this sensor is [`SRKeyboardMetrics`](../srkeyboardmetrics.md).
 

@@ -33,7 +33,7 @@ var includedAttributes: INPhotoAttributeOptions { get }
 @property (atomic, assign, readonly) INPhotoAttributeOptions includedAttributes;
 ```
 
-#### Discussion
+## Discussion
 
 All of the specified attributes must be present in the photos.
 

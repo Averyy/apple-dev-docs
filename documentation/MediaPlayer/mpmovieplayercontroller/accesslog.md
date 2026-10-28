@@ -23,7 +23,7 @@ var accessLog: MPMovieAccessLog! { get }
 @property (nonatomic, readonly) MPMovieAccessLog * accessLog;
 ```
 
-#### Discussion
+## Discussion
 
 Can be `nil`. For information about movie access logs, refer to [`MPMovieAccessLog`](../mpmovieaccesslog.md).
 

@@ -15,11 +15,11 @@ Extracts the number of an endpoint from an endpoint descriptor.
 uint8_t IOUSBGetEndpointNumber(const IOUSBEndpointDescriptor *descriptor);
 ```
 
-#### Return Value
+## Return Value
 
 An unsigned integer that represents an endpoint number.
 
-#### Discussion
+## Discussion
 
 This method parses an endpoint descriptor to determine its number, excluding direction.
 

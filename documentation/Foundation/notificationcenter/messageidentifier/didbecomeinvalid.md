@@ -23,7 +23,7 @@ static var didBecomeInvalid: NotificationCenter.BaseMessageIdentifier<Port.DidBe
 
 Available when `Self` is `NotificationCenter.BaseMessageIdentifier<Port.DidBecomeInvalidMessage>`.
 
-#### Discussion
+## Discussion
 
 Use this identifier with [`NotificationCenter`](../../notificationcenter.md)’s `addObserver(of:for:using:)` or `messages(of:for:bufferSize:)` methods to observe messages of type [`Port.DidBecomeInvalidMessage`](../../port/didbecomeinvalidmessage.md).
 

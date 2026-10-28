@@ -4,7 +4,7 @@
 
 Enhance features in your app by using the models at the core of Apple Intelligence.
 
-#### Overview
+## Overview
 
 To add intelligent capabilities to your apps, build your features using the same models that power Apple Intelligence. Apple makes its models, so you don’t have to spend time creating and training your own. Use these models to answer general questions, extract structured data, personalize your app’s experience, or implement intelligent features. As your needs grow, integrate custom models you create or ones you acquire from other sources.
 
@@ -12,7 +12,7 @@ As you add support for generative models, keep the intended experience in mind. 
 
 ---
 
-#### Integrate Apple’s generative models into your workflows
+## Integrate Apple’s generative models into your workflows
 
 The [Foundation Models](../FoundationModels/FoundationModels.md) framework provides access to the same large language models that power Apple Intelligence. Use these models to analyze the text-based content you provide and generate responses.
 
@@ -22,7 +22,7 @@ Supplement the model you use with custom [tools](../FoundationModels/expanding-g
 
 ---
 
-#### Run deep learning models on device with Core AI
+## Run deep learning models on device with Core AI
 
 Use the [Core AI](../CoreAI/CoreAI.md) framework to run deep learning models on a device for tasks like generating text, recognizing images, or transcribing speech. Core AI handles models of any size, from small embedded models to large language models, running them across the CPU, GPU, and Neural Engine of the device.
 
@@ -34,7 +34,7 @@ For deeper customization, Core AI lets you replace model operations with custom 
 
 ---
 
-#### Build custom machine learning models for your app
+## Build custom machine learning models for your app
 
 When your app needs a smaller, task-specific model, like a classifier or a regressor, create and train your own using the [Create ML app](https://developer.apple.com/machine-learning/create-ml/) or the [Create ML](../CreateML/CreateML.md) and [Create ML Components](../CreateMLComponents/CreateMLComponents.md) frameworks. These tools take the data you provide and generate a model you can run in your app. Prepare the data you use to train models with help from the [TabularData](../TabularData/TabularData.md) framework. It supports loading, filtering, grouping, joining, and summarizing CSV or JSON data.
 
@@ -52,7 +52,7 @@ If you’ve trained a model in [MLX](https://ml-explore.github.io/mlx/), or anot
 
 ---
 
-#### Evaluate the quality of your intelligence-powered features
+## Evaluate the quality of your intelligence-powered features
 
 When your feature depends on a generative model, use the [Evaluations](../Evaluations/Evaluations.md) framework to see how well it’s working. Evaluations provides a systematic way to measure the output quality of any intelligence-powered feature you build, and a way to catch regressions when an underlying model changes or your prompt evolves.
 
@@ -64,7 +64,7 @@ Run evaluations from Xcode to view results and compare them against previous run
 
 ---
 
-#### Measure the performance of your custom models
+## Measure the performance of your custom models
 
 Measuring the performance of models is an important task of machine learning. In Xcode, preview your model’s behavior by using sample data files or using the device’s camera and microphone. Review the performance of your model’s predictions directly from Xcode, or [profile your app in Instruments](../CoreAI/analyzing-model-runtime-performance-with-instruments.md) to get a thorough performance analysis. After adding a model to your project, select it to see the expected prediction latency, load times, and which compute units support and run each operation.
 
@@ -74,7 +74,7 @@ To build a deeper understanding of the model you’re working with, Xcode allows
 
 ---
 
-#### Make your company’s generative models available to everyone
+## Make your company’s generative models available to everyone
 
 To help others build their generative AI feature, the [Foundation Models](../FoundationModels/FoundationModels.md) framework provides a consistent API experience for interacting with any on-device or server-based model. By conforming to the [language model protocol](../FoundationModels/languagemodel.md), you provide a high-quality integration built by the people who know the model best.
 

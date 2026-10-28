@@ -25,7 +25,7 @@ case alpha
 SCNBlendModeAlpha
 ```
 
-#### Discussion
+## Discussion
 
 This mode is the default value of the [`blendMode`](../scnmaterial/blendmode.md) property.
 

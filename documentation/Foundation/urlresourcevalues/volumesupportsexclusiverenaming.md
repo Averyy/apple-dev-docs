@@ -21,7 +21,7 @@ A Boolean value that indicates whether the volume warns of a pre-existing destin
 var volumeSupportsExclusiveRenaming: Bool? { get }
 ```
 
-#### Discussion
+## Discussion
 
 This value is `true` if the volume supports the `RENAME_EXCL` option of the `renamex_np(2)` system call.
 

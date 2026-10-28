@@ -21,7 +21,7 @@ class CTCellularData
 @interface CTCellularData : NSObject
 ```
 
-#### Overview
+## Overview
 
 This property represents all access to cellular data. If the [`restrictedState`](./ctcellulardata/restrictedstate.md) is [`CTCellularDataRestrictedState.restricted`](./ctcellulardatarestrictedstate/restricted.md), the app cannot use the cellular network.
 

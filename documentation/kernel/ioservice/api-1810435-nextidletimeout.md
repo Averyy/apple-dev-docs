@@ -14,11 +14,11 @@ virtual SInt32 nextIdleTimeout(
  unsigned intpowerState);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the next time the device should idle off (in seconds, relative to the current time).
 
-#### Overview
+## Overview
 
 Returns the next time that the device should idle into its next lower power state. Subclasses may override for custom idle behavior.
 

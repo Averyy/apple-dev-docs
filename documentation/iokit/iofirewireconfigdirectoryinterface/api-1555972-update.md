@@ -16,7 +16,7 @@ Causes the ROM data to be updated through the specified byte offset. This functi
 IOReturn (*Update)(IOFireWireLibConfigDirectoryRef self, UInt32 inOffset);
 ```
 
-#### Return Value
+## Return Value
 
 An IOReturn result code
 

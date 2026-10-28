@@ -19,7 +19,7 @@ The error code that indicates an expired coupon.
 static var couponCodeExpiredError: PKPaymentError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use this error code if the user entered an expired coupon code in the payment sheet. You can use [`paymentCouponCodeExpiredError(localizedDescription:)`](../pkpaymentrequest/paymentcouponcodeexpirederror%28localizeddescription%29.md) to create an expired coupon error object.
 

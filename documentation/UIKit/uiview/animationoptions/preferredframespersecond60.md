@@ -23,7 +23,7 @@ static var preferredFramesPerSecond60: UIView.AnimationOptions { get }
 UIViewAnimationOptionPreferredFramesPerSecond60
 ```
 
-#### Discussion
+## Discussion
 
 Specify this value to request a preferred frame rate. It’s recommended that you use the default value unless you have identified a specific need for an explicit rate.
 

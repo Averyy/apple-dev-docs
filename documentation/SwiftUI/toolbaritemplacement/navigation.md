@@ -20,7 +20,7 @@ A placement for navigation actions.
 static let navigation: ToolbarItemPlacement
 ```
 
-#### Discussion
+## Discussion
 
 Navigation actions allow the user to move between contexts. For example, the forward and back buttons of a web browser are navigation actions.
 

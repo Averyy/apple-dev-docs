@@ -25,7 +25,7 @@ typealias AUGenericViewInternalBase = UIView
 typealias AUGenericViewInternalBase = NSView
 ```
 
-#### Discussion
+## Discussion
 
 Apple discourages the use of this symbol.
 

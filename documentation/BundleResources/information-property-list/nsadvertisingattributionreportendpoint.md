@@ -16,7 +16,7 @@ The URL where Private Click Measurement and SKAdNetwork send attribution informa
 - **Name**: `NSAdvertisingAttributionReportEndpoint` (Advertising attribution report endpoint URL)
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 This key is a string that contains a valid URL containing your domain name. Provide a string in the format `“https://example.com”`, where you replace `example` with your domain name. Include this key in your app for the following two uses:
 

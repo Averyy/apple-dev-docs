@@ -19,7 +19,7 @@ Returns the text of the help screen for this type.
 static func helpMessage(columns: Int?) -> String
 ```
 
-#### Return Value
+## Return Value
 
 The full help screen for this type.
 

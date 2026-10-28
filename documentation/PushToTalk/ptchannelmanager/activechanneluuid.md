@@ -21,7 +21,7 @@ var activeChannelUUID: UUID? { get }
 @property (nonatomic, strong, readonly, nullable) NSUUID * activeChannelUUID;
 ```
 
-#### Discussion
+## Discussion
 
 You can activate only one channel at a time. A `nil` value indicates there isn’t an active Push to Talk channel. When this value isn’t `nil`, the channel is active in the user interface, and the ephemeral push token is usable.
 

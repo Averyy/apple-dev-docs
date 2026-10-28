@@ -16,11 +16,11 @@ Returns the texture usage value to apply to the layer’s depth textures.
 MTLTextureUsage cp_layer_renderer_configuration_get_depth_usage(cp_layer_renderer_configuration_t configuration);
 ```
 
-#### Return Value
+## Return Value
 
 The Metal texture usage value to apply to the layer’s depth textures.
 
-#### Discussion
+## Discussion
 
 Metal optimizes texture-related operations based on the texture’s usage value. The usage value can be a combination of options. For more information, see [`MTLTextureUsage`](../Metal/mtltextureusage.md).
 

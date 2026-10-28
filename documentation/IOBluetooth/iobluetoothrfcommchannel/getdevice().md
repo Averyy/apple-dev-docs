@@ -19,7 +19,7 @@ func getDevice() -> IOBluetoothDevice!
 - (IOBluetoothDevice *) getDevice;
 ```
 
-#### Return Value
+## Return Value
 
 The IOBluetoothDevice object .
 

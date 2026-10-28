@@ -26,11 +26,11 @@ func environment<V>(_ keyPath: WritableKeyPath<EnvironmentValues, V>, _ value: V
 
 - [Applying custom fonts to text](../applying-custom-fonts-to-text.md)
 
-#### Return Value
+## Return Value
 
 A view that has the given value set in its environment.
 
-#### Discussion
+## Discussion
 
 Use this modifier to set one of the writable properties of the [`EnvironmentValues`](../environmentvalues.md) structure, including custom values that you create. For example, you can set the value associated with the [`truncationMode`](../environmentvalues/truncationmode.md) key:
 

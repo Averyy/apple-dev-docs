@@ -25,11 +25,11 @@ func CFCopyDescription(_ cf: CFTypeRef!) -> CFString!
 extern CFStringRefCFCopyDescription(CFTypeRef cf);
 ```
 
-#### Return Value
+## Return Value
 
 A string that contains a description of `cf`. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 The nature of the description differs by object. For example, a description of a CFArray object would include descriptions of each of the elements in the collection.
 

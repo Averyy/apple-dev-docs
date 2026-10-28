@@ -21,7 +21,7 @@ A type alias to define the stride of a date.
 typealias Stride = TimeInterval
 ```
 
-#### Discussion
+## Discussion
 
 The stride of a Date is a [`TimeInterval`](../timeinterval.md).
 

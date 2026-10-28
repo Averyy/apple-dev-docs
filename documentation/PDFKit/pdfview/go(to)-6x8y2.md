@@ -24,7 +24,7 @@ func go(to page: PDFPage)
 - (void) goToPage:(PDFPage *) page;
 ```
 
-#### Discussion
+## Discussion
 
 PDF Kit records the move in its page history.
 

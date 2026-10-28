@@ -13,11 +13,11 @@ Read a user in an Apple School Manager organization.
 
 - [Integrating with Roster API and Sign in with Apple](./integrating-with-roster-api-and-sign-in-with-apple.md)
 
-#### Discussion
+## Discussion
 
 Access to the `users` resource requires authorization to the `edu.users.read` scope.
 
-##### Example
+### Example
 
 **Request**:
 

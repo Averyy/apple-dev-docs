@@ -24,7 +24,7 @@ var kAudioFormatProperty_ChannelLayoutSimpleName: AudioFormatPropertyID { get }
 kAudioFormatProperty_ChannelLayoutSimpleName
 ```
 
-#### Discussion
+## Discussion
 
 A simplified name for channel layout. Compared to the value of the [`kAudioFormatProperty_ChannelLayoutName`](./kaudioformatproperty_channellayoutname.md) property, the name in this property omits the channel labels. The specifier is an [`AudioChannelLayout`](../CoreAudioTypes/audiochannellayout.md) struct containing the layout description. The value is a [`CFString`](../CoreFoundation/cfstring.md) object. The caller is responsible for releasing the returned string.
 

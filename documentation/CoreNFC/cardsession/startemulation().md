@@ -17,7 +17,7 @@ Start the card emulation and present a modal user interface to the person using 
 func startEmulation() async throws
 ```
 
-#### Discussion
+## Discussion
 
 Set the [`alertMessage`](./alertmessage.md) prior to calling this method.
 

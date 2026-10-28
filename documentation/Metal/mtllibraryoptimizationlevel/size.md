@@ -28,7 +28,7 @@ MTLLibraryOptimizationLevelSize
 
 - [Minimizing the binary size of a shader library](../minimizing-the-binary-size-of-a-shader-library.md)
 
-#### Discussion
+## Discussion
 
 This option is similar to [`MTLLibraryOptimizationLevel.default`](./default.md), but adds optimizations that prioritize minimizing a shader’s executable size, which may also reduce compile time.
 

@@ -17,7 +17,7 @@ Creates and returns a document object for document type.
 - (id) makeUntitledDocumentOfType:(NSString *) type;
 ```
 
-#### Discussion
+## Discussion
 
 Creates and returns an `NSDocument` object for document type `type`. The returned object is not retained. Returns `nil` if the `NSDocument` subclass for `type` couldn’t be determined or if the object couldn’t be created. This method calls the `NSDocument` [`init()`](../nsdocument/init%28%29.md) method and is called by [`openUntitledDocumentOfType:display:`](./openuntitleddocumentoftype_display_.md).
 

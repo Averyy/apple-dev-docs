@@ -19,11 +19,11 @@ func isMousePoint(_ point: NSPoint, in rect: NSRect) -> Bool
 - (BOOL) mouse:(NSPoint) point inRect:(NSRect) rect;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if `aRect` contains `aPoint`, [`false`](../../Swift/false.md) otherwise.
 
-#### Discussion
+## Discussion
 
 Point-in-rectangle functions generally assume that the bottom edge of a rectangle is outside of the rectangle boundaries, while the upper edge is inside the boundaries. This method views `aRect` from the point of view of the user—that is, this method always treats the bottom edge of the rectangle as the one closest to the bottom edge of the user’s screen. By making this adjustment, this function ensures consistent mouse-detection behavior from the user’s perspective.
 

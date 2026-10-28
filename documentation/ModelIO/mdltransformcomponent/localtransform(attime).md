@@ -24,11 +24,11 @@ optional func localTransform(atTime time: TimeInterval) -> matrix_float4x4
 - (matrix_float4x4) localTransformAtTime:(NSTimeInterval) time;
 ```
 
-#### Return Value
+## Return Value
 
 The local transformation matrix for the specified time sample.
 
-#### Discussion
+## Discussion
 
 This matrix defines the position, orientation, shear, and scale for any object affected by the transform component, relative to the coordinate space of its parent, as of the specified time sample.
 

@@ -25,11 +25,11 @@ func CFDateCreate(_ allocator: CFAllocator!, _ at: CFAbsoluteTime) -> CFDate!
 extern CFDateRefCFDateCreate(CFAllocatorRef allocator, CFAbsoluteTime at);
 ```
 
-#### Return Value
+## Return Value
 
 A date object that represents the absolute time `at`.  The caller is responsible for releasing the `CFDate` object using [`CFRelease`](./cfrelease.md).
 
-#### Discussion
+## Discussion
 
 `CFDate` objects must always be created using absolute time. Time intervals are not supported.
 

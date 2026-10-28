@@ -21,7 +21,7 @@ var phoneOrEmailAddress: String? { get set }
 @property (nonatomic, copy, nullable) NSString * phoneOrEmailAddress;
 ```
 
-#### Discussion
+## Discussion
 
 When the user selects the list item, Siri launches the message compose flow and uses this property’s value as the recipient’s contact information.
 

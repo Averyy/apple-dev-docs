@@ -25,7 +25,7 @@ case callSignaling
 NSURLNetworkServiceTypeCallSignaling
 ```
 
-#### Discussion
+## Discussion
 
 Use this for establishing, maintaining, and tearing down a VoIP call.
 

@@ -24,7 +24,7 @@ class UITabBarItemStateAppearance
 @interface UITabBarItemStateAppearance : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use a [`UITabBarItemStateAppearance`](./uitabbaritemstateappearance.md) object to customize the appearance of your tab bar items and the badges they display. Don’t create [`UITabBarItemStateAppearance`](./uitabbaritemstateappearance.md) objects yourself. Instead, create a [`UITabBarItemAppearance`](./uitabbaritemappearance.md) object and use its properties to fetch the appearance attributes for tab bar items in a particular state. For example, to set the attributes for items in the normal state, configure the object in the [`normal`](./uitabbaritemappearance/normal.md) property.
 

@@ -5,7 +5,7 @@
 
 Represent multiple representations of the same information, differing either by language or storage type or by the size or nature of the data.
 
-#### Overview
+## Overview
 
 Multiple values for the same tag represent multiple representations of the same information, differing either by language or storage type or by the size or nature of the data. For example, an artist name may be supplied in three ways:
 

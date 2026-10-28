@@ -23,7 +23,7 @@ static var withColonSeparatorInTime: ISO8601DateFormatter.Options { get }
 NSISO8601DateFormatWithColonSeparatorInTime
 ```
 
-#### Discussion
+## Discussion
 
 The date representation uses the colon separator (`:`) in the time.
 

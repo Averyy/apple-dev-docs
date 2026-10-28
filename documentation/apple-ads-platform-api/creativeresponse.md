@@ -15,11 +15,11 @@ The response object for an ad creative operation.
 object CreativeResponse
 ```
 
-#### Discussion
+## Discussion
 
 The `CreativeResponse` object is the single-item response envelope returned by ad creative create, read, and update operations.
 
-##### Example
+### Example
 
 ```json
 {

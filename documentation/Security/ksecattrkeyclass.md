@@ -25,7 +25,7 @@ let kSecAttrKeyClass: CFString
 extern CFStringRef const kSecAttrKeyClass;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is of type [`CFTypeRef`](../CoreFoundation/cftyperef.md) and specifies a type of cryptographic key. Possible values are listed in [Key Class Values](./item-attribute-keys-and-values.md#Key-Class-Values). Read only.
 

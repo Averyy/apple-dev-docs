@@ -22,7 +22,7 @@ class INRestaurantOffer
 @interface INRestaurantOffer : NSObject
 ```
 
-#### Overview
+## Overview
 
 An [`INRestaurantOffer`](./inrestaurantoffer.md) object provides information about a special offer made by a restaurant. Restaurants might offer special pricing as part of a promotion or advertisement. This object captures the details of an offer, which the system then displays to the user during the reservation selection process. When booking the reservation, you include the offer selected by the user with the information you provide to the restaurant.
 

@@ -24,11 +24,11 @@ init(device: any MTLDevice)
 + (SKRenderer *) rendererWithDevice:(id<MTLDevice>) device;
 ```
 
-#### Return Value
+## Return Value
 
 A new renderer object.
 
-#### Discussion
+## Discussion
 
 Pass in the same Metal device that is associated to the Metal command buffer passed into [`render(withViewport:commandBuffer:renderPassDescriptor:)`](./render%28withviewport,commandbuffer,renderpassdescriptor%29.md).
 

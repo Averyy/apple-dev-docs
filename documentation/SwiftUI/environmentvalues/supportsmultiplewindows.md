@@ -21,7 +21,7 @@ A Boolean value that indicates whether the current platform supports opening mul
 var supportsMultipleWindows: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 Read this property from the environment to determine if your app can use the [`openWindow`](./openwindow.md) action to open new windows:
 

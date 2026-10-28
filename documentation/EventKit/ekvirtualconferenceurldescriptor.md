@@ -24,7 +24,7 @@ class EKVirtualConferenceURLDescriptor
 @interface EKVirtualConferenceURLDescriptor : NSObject
 ```
 
-#### Overview
+## Overview
 
 To let users join a virtual conference, you provide one or more URL descriptor objects in the [`EKVirtualConferenceDescriptor`](./ekvirtualconferencedescriptor.md) for the conference. Calendar uses the first URL descriptor as the preferred way for users to join a virtual conference and displays any additional links you provide in the virtual conference details.
 

@@ -20,7 +20,7 @@ optional func textView(_ textView: NSTextView, completions words: [String], forP
 - (NSArray<NSString *> *) textView:(NSTextView *) textView completions:(NSArray<NSString *> *) words forPartialWordRange:(NSRange) charRange indexOfSelectedItem:(NSInteger *) index;
 ```
 
-#### Return Value
+## Return Value
 
 The actual array of completions that will be presented for the partial word at the given range. Returning `nil` or a zero-length array suppresses completion.
 

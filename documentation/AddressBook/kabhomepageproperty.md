@@ -21,7 +21,7 @@ let kABHomePageProperty: String
 extern NSString * const kABHomePageProperty;
 ```
 
-#### Discussion
+## Discussion
 
 The `kABHomePageProperty` property has been deprecated in OS X version 10.4. Instead, use the `kABURLsProperty` multivalue property with the label `kABHomePageLabel`.
 

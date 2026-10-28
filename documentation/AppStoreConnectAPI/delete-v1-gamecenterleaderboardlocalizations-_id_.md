@@ -11,9 +11,9 @@ Delete a localization that’s associated with a leaderboard.
 
 > **Deprecated**: This endpoint is deprecated. Use [`Delete a Game Center Leaderboard Localization`](./delete-v2-gamecenterleaderboardlocalizations-_id_.md) instead.
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

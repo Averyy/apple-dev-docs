@@ -25,7 +25,7 @@ optional func peripheral(_ peripheral: CBPeripheral, didOpen channel: CBL2CAPCha
 - (void) peripheral:(CBPeripheral *) peripheral didOpenL2CAPChannel:(CBL2CAPChannel *) channel error:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 This method delivers the result of a previous call to [`openL2CAPChannel(_:)`](../cbperipheral/openl2capchannel%28_%29.md).
 

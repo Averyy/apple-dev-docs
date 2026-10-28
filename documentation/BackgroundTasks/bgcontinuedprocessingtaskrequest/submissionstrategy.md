@@ -21,7 +21,7 @@ enum SubmissionStrategy
 enum BGContinuedProcessingTaskRequestSubmissionStrategy : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 The Continuous Background Task request ([`BGContinuedProcessingTaskRequest`](../bgcontinuedprocessingtaskrequest.md)) property [`strategy`](./strategy.md) is of this type.
 

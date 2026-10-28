@@ -21,7 +21,7 @@ var mainFrameURL: String! { get set }
 @property (nonatomic, copy) NSString * mainFrameURL;
 ```
 
-#### Discussion
+## Discussion
 
 Functionally equivalent to invoking `[[webView mainFrame] loadRequest:[NSURLRequest requestWithURL: [NSURL URLWithString:URLString]]]`.
 

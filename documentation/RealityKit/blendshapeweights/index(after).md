@@ -20,7 +20,7 @@ Returns the position in the sequence of the weight that follows the given positi
 func index(after i: BlendShapeWeights.Index) -> BlendShapeWeights.Index
 ```
 
-#### Discussion
+## Discussion
 
 For more on calculating indices, see [`index(after:)`](../../Swift/array/index%28after%29.md).
 

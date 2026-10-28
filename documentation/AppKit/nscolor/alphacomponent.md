@@ -19,7 +19,7 @@ var alphaComponent: CGFloat { get }
 @property (readonly) CGFloat alphaComponent;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is between `0.0` and `1.0`, where `0.0` represents fully transparent and `1.0` represents fully opaque. If the color has no alpha component, the value of this property is `1.0`.
 

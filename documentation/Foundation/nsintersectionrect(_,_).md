@@ -20,7 +20,7 @@ func NSIntersectionRect(_ aRect: NSRect, _ bRect: NSRect) -> NSRect
 extern NSRect NSIntersectionRect(NSRect aRect, NSRect bRect);
 ```
 
-#### Return Value
+## Return Value
 
 The graphic intersection of `aRect` and `bRect`. If the two rectangles don’t overlap, the returned rectangle has its origin at (0.0, 0.0) and zero width and height (including situations where the intersection is a point or a line segment).
 

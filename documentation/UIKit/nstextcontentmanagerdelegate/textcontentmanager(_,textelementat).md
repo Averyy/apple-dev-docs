@@ -23,11 +23,11 @@ optional func textContentManager(_ textContentManager: NSTextContentManager, tex
 - (NSTextElement *) textContentManager:(NSTextContentManager *) textContentManager textElementAtLocation:(id<NSTextLocation>) location;
 ```
 
-#### Return Value
+## Return Value
 
 An [`NSTextElement`](../nstextelement.md).
 
-#### Discussion
+## Discussion
 
 When non-`nil`, `textContentManager` uses the text element you specify instead of creating one based on its standard mapping logic.
 

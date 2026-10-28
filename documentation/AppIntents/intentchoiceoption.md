@@ -21,7 +21,7 @@ A structure representing an entry in a list of options for a person to choose fr
 struct IntentChoiceOption
 ```
 
-#### Overview
+## Overview
 
 Each option includes display text and an optional style that influences its visual presentation. For example, an option for deleting a file might use a text and style to communicate its destructive action.
 

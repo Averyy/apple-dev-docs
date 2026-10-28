@@ -20,7 +20,7 @@ var extent: simd_float3 { get }
 @property (nonatomic, readonly) simd_float3 extent;
 ```
 
-#### Discussion
+## Discussion
 
 > ⚠️ **Warning**:  In iOS 16, use [`planeExtent`](./planeextent.md) instead.
 

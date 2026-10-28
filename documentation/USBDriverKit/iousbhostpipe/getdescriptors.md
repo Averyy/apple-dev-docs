@@ -15,7 +15,7 @@ Retrieves the endpoint descriptors associated with this pipe.
 virtual kern_return_t GetDescriptors(IOUSBStandardEndpointDescriptors *descriptors, IOUSBGetEndpointDescriptorOptions type);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 

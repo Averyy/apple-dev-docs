@@ -5,13 +5,13 @@
 
 Learn how to create, manage, and rotate Apple Pay certificates to maintain uninterrupted payment processing.
 
-#### Overview
+## Overview
 
 When you configure Apple Pay, you create a payment processing certificate to securely encrypt payment data. If you integrate Apple Pay on the Web, you also create an identity certificate to authenticate communication with Apple Pay servers. To get started with Apple Pay configuration, see [Setting up Apple Pay](../PassKit/setting-up-apple-pay.md).
 
 Both certificates are valid for 25 months and must be renewed before they expire to avoid disruptions to payment processing in your apps and websites. This document explains how to update—also referred to as rolling or rotating—your Apple Pay certificates with minimal disruption.
 
-#### Apple Pay credentials
+## Apple Pay credentials
 
 | Credential | Description | Expiration |
 | --- | --- | --- |
@@ -20,7 +20,7 @@ Both certificates are valid for 25 months and must be renewed before they expire
 | Payment Processing Certificate | Encrypts payment data. Apple Pay servers use the certificate’s public key to encrypt payment data; the corresponding private key is used to decrypt it. See [Create a payment processing certificate](./tn3206-updating-apple-pay-certificates.md#Create-a-payment-processing-certificate) for the setup steps. | Yes; 25 months |
 | Identity Certificate | A TLS certificate that authenticates requests with Apple Pay servers. Required for Apple Pay on the Web. Can be linked to either a Merchant Identifier or a Payment Platform Integrator Identifier. See [Create an identity certificate](./tn3206-updating-apple-pay-certificates.md#Create-an-identity-certificate) for the setup steps. | Yes; 25 months |
 
-#### Payment processing certificates
+## Payment processing certificates
 
 Merchant identifiers and payment platform integrator identifiers support one active payment processing certificate at a time. When you activate a new payment processing certificate, Apple Pay servers begin using it to encrypt transactions. Whilst the newly created payment processing certificate is propagated across Apple Pay servers, some transactions may temporarily still be encrypted with the previous certificate’s public key.
 
@@ -35,7 +35,7 @@ To handle this transition correctly, always check the `publicKeyHash` value in t
 - Use the public key’s hash to identify the correct private key
 - Monitor and rotate your certificates
 
-##### Create a payment processing certificate
+### Create a payment processing certificate
 
 A payment processing certificate is associated with your merchant identifier or payment platform integrator identifier and encrypts payment information for Apple Pay. Decryption can be handled by the merchant directly or delegated to their PSP.
 
@@ -67,7 +67,7 @@ When generating the CSR for payment processing, use the appropriate key type for
 8. Click Continue.
 9. Click Download to save the certificate file (`*.cer`).
 
-##### Activate a payment processing certificate
+### Activate a payment processing certificate
 
 Apple Pay payment decryption can be handled by the merchant directly or delegated to a PSP. If your PSP handles decryption, coordinate with them before activing a new payment processing certificate. Both parties must be fully prepared to use the updated credentials before you proceed—activating prematurely can interrupt payment processing in your apps and websites.
 
@@ -81,7 +81,7 @@ Once activated, Apple Pay servers immediately begin using the new certificate to
 
 > ❗ **Important**: Payment processing certificate activation is irreversible. Once you activate a new certificate, the previous certificate is immediately invalidated and cannot be restored.
 
-##### Use the public key’s hash to identify the correct private key
+### Use the public key’s hash to identify the correct private key
 
 During the transition period after activation, Apple Pay servers may use either the previous or new public key to encrypt transactions as the update propagates. Use the `publicKeyHash` value in the payment token’s header to determine which private key to use for decryption.
 
@@ -89,7 +89,7 @@ Once you stop receiving the `publicKeyHash` value associated with the previous c
 
 For more information on payment token structure and decryption, see [Payment token format reference](../PassKit/payment-token-format-reference.md).
 
-#### Identity certificates
+## Identity certificates
 
 Merchant identifiers and payment platform integrator identifiers support up to three active identity certificates simultaneously. This allows you to create and validate a new certificate before revoking the previous one, ensuring uninterrupted connectivity with Apple Pay servers.
 
@@ -99,7 +99,7 @@ Merchant identifiers and payment platform integrator identifiers support up to t
 - Monitor and rotate your certificates
 - Revoke an identity certificate
 
-##### Create an identity certificate
+### Create an identity certificate
 
 Identity certificates require a CSR generated using an RSA 2048-bit key pair.
 
@@ -121,7 +121,7 @@ Identity certificates require a CSR generated using an RSA 2048-bit key pair.
 
 Once downloaded, add the new certificate to your keychain or keystore. It can be used immediately to secure connections to Apple Pay servers. After you’ve confirmed the new certificate works as expected in your environment, revoke and delete the previous certificate from both the [Apple Developer Portal](https://developer.apple.com/account/resources/identifiers/list) and your keychain or keystore.
 
-#### Monitor and rotate your certificates
+## Monitor and rotate your certificates
 
 To view the status and expiration date of each certificate, use the following resources:
 
@@ -132,7 +132,7 @@ To view the status and expiration date of each certificate, use the following re
 
 Certificates can be rotated manually in the [Apple Developer Portal](https://developer.apple.com/account/resources/identifiers/list) or programmatically using the [App Store Connect API](../AppStoreConnectAPI/certificates.md). To learn more about programmatically rotating payment processing certificates, see [Managing merchant IDs and Payment Processing certificates](../AppStoreConnectAPI/managing-payment-processing-certificates.md).
 
-##### Revoke an identity certificate
+### Revoke an identity certificate
 
 You can revoke certificates in the following resources:
 
@@ -148,7 +148,7 @@ You can revoke certificates in the following resources:
    - ***Note:*** If a banner appears at the top of the page saying that you need to accept an agreement, click the Review Agreement button and follow the instructions before continuing.
 4. Under the identity certificate section, locate a certificate (preferably an inactive certificate) and click Revoke.
 
-#### Frequently asked questions
+## Frequently asked questions
 
 **Does updating certificates affect my merchant domain verification?**
 
@@ -178,7 +178,7 @@ Renew your certificate before the code freeze begins so the new expiration date 
 
 Renew your certificates at least 30 days before expiration to allow sufficient time for coordination with your PSP and validation in your environment before activation.
 
-#### Revision History
+## Revision History
 
 - **2026-03-12** First published.
 

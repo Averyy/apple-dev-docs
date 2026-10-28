@@ -25,7 +25,7 @@ func class_addProperty(_ cls: AnyClass?, _ name: UnsafePointer<CChar>, _ attribu
 extern BOOL class_addProperty(Class cls, const char *name, const objc_property_attribute_t *attributes, unsigned int attributeCount);
 ```
 
-#### Return Value
+## Return Value
 
 [`YES`](./yes.md) if the property was added successfully; otherwise [`NO`](./no.md) (for example, this function returns [`NO`](./no.md) if the class already has that property).
 

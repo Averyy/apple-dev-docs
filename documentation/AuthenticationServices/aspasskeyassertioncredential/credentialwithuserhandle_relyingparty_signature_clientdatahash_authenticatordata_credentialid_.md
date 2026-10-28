@@ -19,7 +19,7 @@ Creates and initializes a new passkey assertion credential.
 + (instancetype) credentialWithUserHandle:(NSData *) userHandle relyingParty:(NSString *) relyingParty signature:(NSData *) signature clientDataHash:(NSData *) clientDataHash authenticatorData:(NSData *) authenticatorData credentialID:(NSData *) credentialID;
 ```
 
-#### Return Value
+## Return Value
 
 The credential object.
 

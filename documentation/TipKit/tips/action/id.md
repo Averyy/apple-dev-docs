@@ -21,7 +21,7 @@ The identifier for a tip’s action.
 let id: String
 ```
 
-#### Discussion
+## Discussion
 
 If you don’t specify a value in the initializer, the system assigns one based on the value of the `index`.
 

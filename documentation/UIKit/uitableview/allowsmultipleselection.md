@@ -27,7 +27,7 @@ var allowsMultipleSelection: Bool { get set }
 
 - [Handling row selection in a table view](../handling-row-selection-in-a-table-view.md)
 
-#### Discussion
+## Discussion
 
 This property controls whether a user can select multiple rows simultaneously outside of editing mode. Selected rows acquire a selected appearance.
 

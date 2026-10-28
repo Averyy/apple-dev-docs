@@ -23,7 +23,7 @@ class func registerAppForAdNetworkAttribution()
 + (void) registerAppForAdNetworkAttribution;
 ```
 
-#### Discussion
+## Discussion
 
 Apps that an ad network campaign advertise call this method or [`updateConversionValue(_:)`](./updateconversionvalue%28_%29.md) when the app first launches. Both methods generate an install notification, which is the cryptographically signed data that validates that a user installed and launched this app as a result of an ad.
 

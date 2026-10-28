@@ -20,7 +20,7 @@ func NSInsetRect(_ aRect: NSRect, _ dX: Double, _ dY: Double) -> NSRect
 extern NSRect NSInsetRect(NSRect aRect, CGFloat dX, CGFloat dY);
 ```
 
-#### Return Value
+## Return Value
 
 A copy of `aRect`, altered by moving the two sides that are parallel to the y axis inward by `dX`, and the two sides parallel to the x axis inwards by `dY`.
 

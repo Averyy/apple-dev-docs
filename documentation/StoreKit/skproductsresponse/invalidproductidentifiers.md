@@ -31,7 +31,7 @@ var invalidProductIdentifiers: [String] { get }
 
 - [Fetching product information from the App Store](../fetching-product-information-from-the-app-store.md)
 
-#### Discussion
+## Discussion
 
 The App Store may not recognize your product identifiers unless you meet following criteria, as applicable:
 

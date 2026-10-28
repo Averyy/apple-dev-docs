@@ -21,7 +21,7 @@ static func ** (lhs: MLXArray, rhs: MLXArray) -> MLXArray
 
 - [Converting From Python](../converting-python.md)
 
-#### Discussion
+## Discussion
 
 Raise the elements of `lhs` to the powers in elements of `rhs` with [Numpy Style Broadcasting](../broadcasting.md).
 
@@ -35,7 +35,7 @@ let b = MLXArray([4, 5, 6])
 let r = a ** b
 ```
 
-##### See Also
+### See Also
 
 - [Arithmetic](../arithmetic.md)
 - [`pow(_:stream:)`](./pow%28_,stream%29.md)

@@ -20,7 +20,7 @@ A mapping of blend weights to the target meshes that those weights affect.
 class BlendShapeWeightsMapping
 ```
 
-#### Overview
+## Overview
 
 Use `BlendShapeWeightsMapping` to initialize a [`BlendShapeWeightsComponent`](./blendshapeweightscomponent.md). You can initialize it in two different ways:
 

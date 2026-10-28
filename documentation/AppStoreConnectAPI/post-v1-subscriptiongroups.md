@@ -13,7 +13,7 @@ Create a subscription group for an app.
 
 - [Creating auto-renewable subscription groups](./creating-auto-renewable-subscription-groups.md)
 
-#### Discussion
+## Discussion
 
 > **Note**:  Changes that you make to product metadata with the App Store Connect API can take up to 1 hour to appear in the sandbox environment.
 

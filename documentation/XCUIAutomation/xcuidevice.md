@@ -27,7 +27,7 @@ class XCUIDevice
 @interface XCUIDevice : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use the `XCUIDevice` [`shared`](./xcuidevice/shared.md) instance to perform the following interactions with a simulated iOS, watchOS, or tvOS device during a UI test:
 

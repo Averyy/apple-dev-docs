@@ -17,7 +17,7 @@ Marker protocol for types that can be used in the `template` of a kernel call.
 protocol KernelTemplateArg
 ```
 
-#### Overview
+## Overview
 
 Currently:
 

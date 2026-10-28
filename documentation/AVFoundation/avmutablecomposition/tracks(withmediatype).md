@@ -25,11 +25,11 @@ func tracks(withMediaType mediaType: AVMediaType) -> [AVMutableCompositionTrack]
 - (NSArray<AVMutableCompositionTrack *> *) tracksWithMediaType:(AVMediaType) mediaType;
 ```
 
-#### Return Value
+## Return Value
 
 An array of composition tracks, which is empty if there are no matching tracks.
 
-#### Discussion
+## Discussion
 
 Apple discourages using this method. Load tracks asynchronously using [`loadTracks(withMediaType:completionHandler:)`](./loadtracks%28withmediatype,completionhandler%29.md) instead.
 

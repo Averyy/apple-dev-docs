@@ -23,7 +23,7 @@ class CFMutableDictionary
 typedef struct __CFDictionary * CFMutableDictionaryRef;
 ```
 
-#### Overview
+## Overview
 
 CFMutableDictionary manages dynamic dictionaries. The basic interface for managing dictionaries is provided by [`CFDictionary`](./cfdictionary.md). CFMutableDictionary adds functions to modify the contents of a dictionary.
 

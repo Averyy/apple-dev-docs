@@ -21,7 +21,7 @@ Returns a Boolean value that indicates whether the size contains the specified s
 static bool SPSize3DContainsSize(SPSize3D size, SPSize3D other);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether the size contains the specified size.
 

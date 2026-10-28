@@ -21,7 +21,7 @@ func drawArrow(_ whichArrow: NSScroller.Arrow, highlight flag: Bool)
 - (void) drawArrow:(NSScrollerArrow) whichArrow highlight:(BOOL) flag;
 ```
 
-#### Discussion
+## Discussion
 
 If `flag` is [`true`](../../Swift/true.md), the button is drawn highlighted; otherwise it’s drawn normally. You should never need to invoke this method directly, but may wish to override it to customize the appearance of scroll buttons.
 

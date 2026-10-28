@@ -25,7 +25,7 @@ struct OSLogType
 typedef enum { ... } os_log_type_t;
 ```
 
-#### Overview
+## Overview
 
 A log level controls how and when the system writes a message to the unified logging system. To write a message with a specific log level, create a [`Logger`](./logger.md) and call its [`log(level:_:)`](./logger/log%28level,_%29.md) method. Alternatively, call the method that corresponds to the desired log level, such as [`debug(_:)`](./logger/debug%28_%29.md) or [`fault(_:)`](./logger/fault%28_%29.md).
 

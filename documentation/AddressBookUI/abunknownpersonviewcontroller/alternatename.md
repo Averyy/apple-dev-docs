@@ -23,7 +23,7 @@ var alternateName: String? { get set }
 @property (nonatomic, copy, nullable) NSString * alternateName;
 ```
 
-#### Discussion
+## Discussion
 
 The alternate name is only for display. It is not saved if this contact is added to the address book database.
 

@@ -25,7 +25,7 @@ func decode(_ data: Data) throws -> [any MKGeoJSONObject]
 - (NSArray<id<MKGeoJSONObject>> *) geoJSONObjectsWithData:(NSData *) data error:(NSError **) errorPtr;
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`MKGeoJSONObject`](../mkgeojsonobject.md) objects, or an error if the decoder encounters an issue.
 

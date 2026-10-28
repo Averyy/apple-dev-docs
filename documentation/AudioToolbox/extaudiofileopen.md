@@ -15,15 +15,15 @@ Deprecated. Use the [`ExtAudioFileOpenURL(_:_:)`](./extaudiofileopenurl%28_,_%29
 extern OSStatus ExtAudioFileOpen(const struct FSRef *inFSRef, ExtAudioFileRef*outExtAudioFile);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 
-#### Discussion
+## Discussion
 
 Allocates a new ExtAudioFileRef for reading an existing audio file.
 
-##### Special Considerations
+### Special Considerations
 
 This function is deprecated. Use the [`ExtAudioFileOpenURL(_:_:)`](./extaudiofileopenurl%28_,_%29.md) function instead.
 

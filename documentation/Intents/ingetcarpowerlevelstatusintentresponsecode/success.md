@@ -23,7 +23,7 @@ case success
 INGetCarPowerLevelStatusIntentResponseCodeSuccess
 ```
 
-#### Discussion
+## Discussion
 
 Use this code when your app has successfully received the car’s current power levels.
 

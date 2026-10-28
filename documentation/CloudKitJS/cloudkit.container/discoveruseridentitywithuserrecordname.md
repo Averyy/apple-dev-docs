@@ -17,11 +17,11 @@ Promise<CloudKit.UserIdentitiesResponse, CloudKit.CKError> discoverUserIdentityW
 );
 ```
 
-#### Return Value
+## Return Value
 
 A `Promise` object that resolves to [`CloudKit.UserIdentitiesResponse`](../cloudkit.useridentitiesresponse.md) object, or rejects to a [`CKError`](../cloudkit/ckerror.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to retrieve information about a user for whom you have the corresponding `name` property of the `User` record. The user must meet the following criteria:
 

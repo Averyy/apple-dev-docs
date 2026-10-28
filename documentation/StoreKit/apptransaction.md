@@ -27,7 +27,7 @@ struct AppTransaction
 - [Supporting business model changes by using the app transaction](./supporting-business-model-changes-by-using-the-app-transaction.md)
 - [Validating receipts with the App Store](./validating-receipts-with-the-app-store.md)
 
-#### Overview
+## Overview
 
 > **Related sessions from WWDC22**:  Session 10007:  [What’s new with Apple In-App Purchase](https://developer.apple.com/videos/play/wwdc2022/10007/)
 

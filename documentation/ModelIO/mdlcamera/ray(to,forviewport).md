@@ -24,11 +24,11 @@ func ray(to pixel: vector_int2, forViewPort size: vector_int2) -> vector_float3
 - (vector_float3) rayTo:(vector_int2) pixel forViewPort:(vector_int2) size;
 ```
 
-#### Return Value
+## Return Value
 
 A set of 3D world coordinates.
 
-#### Discussion
+## Discussion
 
 This method projects a ray from the camera’s location in the direction of the specified view coordinates, returning the world coordinates where that ray intersects a plane at a distance of 1.0 units (of world coordinate space) away from the camera.
 

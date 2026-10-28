@@ -22,7 +22,7 @@ The key that defines the app category entitlement to enable Cellular Network Sli
 - `streaming-9001`: Sets the application category for streaming apps.
 - `missionCritical-9500`: Sets the application category for mission critical apps.
 
-#### Discussion
+## Discussion
 
 To enable Cellular Network Slicing, also set the [5G Network Slicing Traffic Category](./com.apple.developer.networking.slicing.trafficcategory.md) entitlement.
 

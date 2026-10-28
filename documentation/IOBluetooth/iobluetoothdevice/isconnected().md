@@ -19,7 +19,7 @@ func isConnected() -> Bool
 - (BOOL) isConnected;
 ```
 
-#### Return Value
+## Return Value
 
 Returns YES if a baseband connection to the device exists.
 

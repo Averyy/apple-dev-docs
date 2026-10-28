@@ -15,11 +15,11 @@ Invoice billing contact details supplied when creating a campaign or budget orde
 object InvoiceDetailCreate
 ```
 
-#### Discussion
+## Discussion
 
 The `InvoiceDetailCreate` object is the create-time counterpart to [`InvoiceDetail`](./invoicedetail.md). It’s required for Line of Credit (`LOC`) accounts when creating a campaign or budget order.
 
-##### Example
+### Example
 
 ```json
 {

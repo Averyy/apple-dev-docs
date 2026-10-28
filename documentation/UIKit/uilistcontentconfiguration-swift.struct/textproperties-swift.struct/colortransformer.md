@@ -19,7 +19,7 @@ The color transformer for resolving the text color.
 var colorTransformer: UIConfigurationColorTransformer? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 If the value is `nil`, the configuration uses [`color`](./color.md) without any transformations.
 

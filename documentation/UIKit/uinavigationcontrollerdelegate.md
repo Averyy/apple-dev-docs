@@ -24,7 +24,7 @@ protocol UINavigationControllerDelegate : NSObjectProtocol
 @protocol UINavigationControllerDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Use a navigation controller delegate (a custom object that implements this protocol) to modify behavior when a view controller is pushed or popped from the navigation stack of a [`UINavigationController`](./uinavigationcontroller.md) object.
 

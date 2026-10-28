@@ -23,7 +23,7 @@ func requestCloseSession()
 - (void) requestCloseSession;
 ```
 
-#### Discussion
+## Discussion
 
 Once the request to close the session has completed, [`device(_:didCloseSessionWithError:)`](../icdevicedelegate/device%28_,didclosesessionwitherror%29.md) is called on the delegate.
 

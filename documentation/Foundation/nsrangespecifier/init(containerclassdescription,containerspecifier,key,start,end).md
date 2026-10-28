@@ -20,11 +20,11 @@ init(containerClassDescription classDesc: NSScriptClassDescription, containerSpe
 - (instancetype) initWithContainerClassDescription:(NSScriptClassDescription *) classDesc containerSpecifier:(NSScriptObjectSpecifier *) container key:(NSString *) property startSpecifier:(NSScriptObjectSpecifier *) startSpec endSpecifier:(NSScriptObjectSpecifier *) endSpec;
 ```
 
-#### Return Value
+## Return Value
 
 A range specifier initialized with the given properties.
 
-#### Discussion
+## Discussion
 
 Invokes the super class’s [`init(containerClassDescription:containerSpecifier:key:)`](../nsscriptobjectspecifier/init%28containerclassdescription,containerspecifier,key%29.md) method and initializes the instance with the object specifiers representing the starting element, `startSpec`, and the ending element, `endSpec`, of a range of elements in the container.
 

@@ -23,7 +23,7 @@ var supportedNetworks: [PKPaymentNetwork] { get set }
 @property (nonatomic, copy) NSArray<NSString *> * supportedNetworks;
 ```
 
-#### Discussion
+## Discussion
 
 This property constrains the selectable payment passes to those the array includes — for example, [`visa`](../pkpaymentnetwork/visa.md) or [`masterCard`](../pkpaymentnetwork/mastercard.md).
 

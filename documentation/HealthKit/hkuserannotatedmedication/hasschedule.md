@@ -24,7 +24,7 @@ var hasSchedule: Bool { get }
 @property (nonatomic, assign, readonly) BOOL hasSchedule;
 ```
 
-#### Discussion
+## Discussion
 
 The value is `true` for medications for which a person has set up reminders and `false` for medications that are only taken as needed.
 

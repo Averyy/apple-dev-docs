@@ -15,11 +15,11 @@ Initializes a video object.
 virtual bool init(IOUserVideoDriver *in_video_driver);
 ```
 
-#### Return Value
+## Return Value
 
 True on success.
 
-#### Discussion
+## Discussion
 
 Always pass in the `IOUserVideoDriver`; calling `init()` always returns false.
 

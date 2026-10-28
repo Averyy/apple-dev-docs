@@ -21,7 +21,7 @@ A linear curve.
 static let linear: UnitCurve
 ```
 
-#### Discussion
+## Discussion
 
 As the linear curve is a straight line from (0, 0) to (1, 1), the output progress is always equal to the input progress, and the velocity is always equal to 1.0.
 

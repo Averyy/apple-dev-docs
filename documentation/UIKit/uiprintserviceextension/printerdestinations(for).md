@@ -22,11 +22,11 @@ func printerDestinations(for printInfo: UIPrintInfo) -> [UIPrinterDestination]
 - (NSArray<UIPrinterDestination *> *) printerDestinationsForPrintInfo:(UIPrintInfo *) printInfo;
 ```
 
-#### Return Value
+## Return Value
 
 A printer or printers that fulfill the printing options in `printInfo`.
 
-#### Discussion
+## Discussion
 
 This method inspects the [`UIPrintInfo`](../uiprintinfo.md) record to determine which printers to display to the user.
 

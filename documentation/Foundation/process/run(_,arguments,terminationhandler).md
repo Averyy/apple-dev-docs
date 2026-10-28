@@ -19,7 +19,7 @@ class func run(_ url: URL, arguments: [String], terminationHandler: (@Sendable (
 + (NSTask *) launchedTaskWithExecutableURL:(NSURL *) url arguments:(NSArray<NSString *> *) arguments error:(NSError **) error terminationHandler:(void (^)(NSTask *)) terminationHandler;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized `NSTask` object with the environment of the current process.
 

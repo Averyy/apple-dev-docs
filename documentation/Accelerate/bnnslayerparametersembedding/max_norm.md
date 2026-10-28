@@ -27,7 +27,7 @@ var max_norm: Float
 float max_norm;
 ```
 
-#### Discussion
+## Discussion
 
 If nonzero, the operation renormalizes any vector with a norm greater than `max_norm` during forward lookups.
 

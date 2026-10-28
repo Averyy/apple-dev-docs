@@ -19,11 +19,11 @@ optional func accessibilitySelectedColumns() -> [Any]?
 - (NSArray *) accessibilitySelectedColumns;
 ```
 
-#### Return Value
+## Return Value
 
 An array containing the currently selected columns for the table.
 
-#### Discussion
+## Discussion
 
 This method is the getter for the [`NSAccessibilityProtocol`](../nsaccessibilityprotocol.md) protocol’s [`accessibilitySelectedColumns`](../nsaccessibility-c.protocol/accessibilityselectedcolumns.md) property. Additionally, your class needs to send a [`selectedColumnsChanged`](../nsaccessibility-swift.struct/notification/selectedcolumnschanged.md) notification whenever the table’s selected columns change.
 

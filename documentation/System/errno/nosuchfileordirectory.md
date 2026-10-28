@@ -25,7 +25,7 @@ static var noSuchFileOrDirectory: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 A component of a specified pathname didn’t exist, or the pathname was an empty string.
 

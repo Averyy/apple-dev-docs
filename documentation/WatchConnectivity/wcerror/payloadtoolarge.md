@@ -19,7 +19,7 @@ An error indicating an attempt to send an item that exceeds the maximum size lim
 static var payloadTooLarge: WCError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 This error can occur for both data dictionaries and files.
 

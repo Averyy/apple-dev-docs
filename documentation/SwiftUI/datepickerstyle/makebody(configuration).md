@@ -22,7 +22,7 @@ Returns the appearance and interaction content for a `DatePicker`.
 @MainActor @preconcurrency func makeBody(configuration: Self.Configuration) -> Self.Body
 ```
 
-#### Discussion
+## Discussion
 
 The system calls this method for each [`DatePicker`](../datepicker.md) instance in a view hierarchy where this style is the current date picker style.
 

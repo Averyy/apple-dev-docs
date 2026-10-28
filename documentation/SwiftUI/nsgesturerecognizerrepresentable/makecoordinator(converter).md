@@ -17,7 +17,7 @@ Creates the custom object that you use to communicate state changes from your ge
 @preconcurrency func makeCoordinator(converter: Self.CoordinateSpaceConverter) -> Self.Coordinator
 ```
 
-#### Discussion
+## Discussion
 
 You access the resulting coordinator via the `Context` passed into other methods in this protocol.
 

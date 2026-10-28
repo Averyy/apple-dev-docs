@@ -25,7 +25,7 @@ var domain: String { get }
 @property (copy, readonly) NSString * domain;
 ```
 
-#### Discussion
+## Discussion
 
 If the domain does not start with a dot, then the cookie is only sent to the exact host specified by the domain. If the domain does start with a dot, then the cookie is sent to other hosts in that domain as well, subject to certain restrictions. See [RFC 6265](https://tools.ietf.org/html/rfc6265.html) for more detail.
 

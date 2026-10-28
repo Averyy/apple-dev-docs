@@ -15,7 +15,7 @@ Returns a Boolean value indicating whether two values are not equal.
 static func != (lhs: borrowing Self, rhs: borrowing Self) -> Bool
 ```
 
-#### Discussion
+## Discussion
 
 Inequality is the inverse of equality. For any values `a` and `b`, `a != b` implies that `a == b` is `false`.
 

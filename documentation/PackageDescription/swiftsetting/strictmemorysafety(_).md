@@ -15,7 +15,7 @@ Enable strict memory safety checking.
 static func strictMemorySafety(_ condition: BuildSettingCondition? = nil) -> SwiftSetting
 ```
 
-#### Discussion
+## Discussion
 
 Strict memory safety checking is an opt-in compiler feature that identifies any uses of language constructs or APIs that break memory safety. Issues are reported as warnings and can generally be suppressed by adding annotations (such as `@unsafe` and `unsafe`) that acknowledge the presence of unsafe code, making it easier to review and audit at a later time.
 

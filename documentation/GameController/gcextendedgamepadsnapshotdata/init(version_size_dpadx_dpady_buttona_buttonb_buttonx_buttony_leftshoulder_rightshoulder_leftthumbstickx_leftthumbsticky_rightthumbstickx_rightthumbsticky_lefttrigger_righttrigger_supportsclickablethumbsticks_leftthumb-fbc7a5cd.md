@@ -23,4 +23,4 @@ init(version: UInt16, size: UInt16, dpadX: Float, dpadY: Float, buttonA: Float, 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/gamecontroller/gcextendedgamepadsnapshotdata/init(version:size:dpadx:dpady:buttona:buttonb:buttonx:buttony:leftshoulder:rightshoulder:leftthumbstickx:leftthumbsticky:rightthumbstickx:rightthumbsticky:lefttrigger:righttrigger:supportsclickablethumbsticks:leftthumbstickbutton:rightthumb-26via)*
+*[View on Apple Developer](https://developer.apple.com/documentation/gamecontroller/gcextendedgamepadsnapshotdata/init%28version:size:dpadx:dpady:buttona:buttonb:buttonx:buttony:leftshoulder:rightshoulder:leftthumbstickx:leftthumbsticky:rightthumbstickx:rightthumbsticky:lefttrigger:righttrigger:supportsclickablethumbsticks:leftthumbstickbutton:rightthumb-26via)*

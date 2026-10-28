@@ -24,7 +24,7 @@ static func appearance(for trait: UITraitCollection) -> Self
 + (instancetype) appearanceForTraitCollection:(UITraitCollection *) trait;
 ```
 
-#### Return Value
+## Return Value
 
 The appearance proxy for the receiver.
 

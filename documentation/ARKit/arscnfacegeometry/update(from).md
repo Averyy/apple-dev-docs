@@ -20,7 +20,7 @@ func update(from faceGeometry: ARFaceGeometry)
 - (void) updateFromFaceGeometry:(ARFaceGeometry *) faceGeometry;
 ```
 
-#### Discussion
+## Discussion
 
 To update a SceneKit model of a face actively tracked in an AR session, call this method in your [`ARSCNViewDelegate`](../arscnviewdelegate.md) object’s [`renderer(_:didUpdate:for:)`](../arscnviewdelegate/renderer%28_,didupdate,for%29.md) callback, passing the [`geometry`](../arfaceanchor/geometry.md) property from the [`ARFaceAnchor`](../arfaceanchor.md) object that callback provides.
 

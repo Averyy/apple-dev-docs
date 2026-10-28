@@ -19,7 +19,7 @@ var volume: Float { get set }
 @property float volume;
 ```
 
-#### Discussion
+## Discussion
 
 Volumes are expressed in floating-point units ranging from 0.0 through 1.0. A value of 0.0 corresponds to silence, and a value of 1.0 corresponds to the maximum possible volume. Volume units lie on a scale that is linear with amplitude or voltage. A doubling of perceived loudness corresponds to a doubling of the volume. Setting a value outside this range is undefined.
 

@@ -25,7 +25,7 @@ func CVPixelBufferGetPlaneCount(_ pixelBuffer: CVPixelBuffer) -> Int
 extern size_t CVPixelBufferGetPlaneCount(CVPixelBufferRef pixelBuffer);
 ```
 
-#### Return Value
+## Return Value
 
 The number of planes.  Returns `0` for nonplanar pixel buffers.
 

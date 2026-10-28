@@ -25,7 +25,7 @@ var particleMassVariation: CGFloat { get set }
 @property (nonatomic) CGFloat particleMassVariation;
 ```
 
-#### Discussion
+## Discussion
 
 Setting a nonzero value for this property randomizes the effect of the [`particleMass`](./particlemass.md) property. SceneKit randomly adjusts the mass of each particle by up to half the [`particleMassVariation`](./particlemassvariation.md) value. For example, if the [`particleMass`](./particlemass.md) value is `1.0` kilograms and the [`particleMassVariation`](./particlemassvariation.md) value is `0.5` kilograms, each particle uses a random mass value between `0.75` and `1.25` kilograms for physics simulation.
 

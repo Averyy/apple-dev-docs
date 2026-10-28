@@ -28,7 +28,7 @@ extern NSFileProviderItemIdentifier const NSFileProviderWorkingSetContainerItemI
 - [Synchronizing the File Provider Extension](../synchronizing-the-file-provider-extension.md)
 - [Defining Your File Provider’s Content](../defining-your-file-provider-s-content.md)
 
-#### Discussion
+## Discussion
 
 For more information about the working set, see  [Create the Working Set and Enumerate its Content](../defining-your-file-provider-s-content.md#Create-the-Working-Set-and-Enumerate-its-Content).
 

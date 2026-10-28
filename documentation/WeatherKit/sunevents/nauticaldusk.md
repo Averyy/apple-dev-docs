@@ -21,7 +21,7 @@ The time of nautical sunset, when the sun’s center is 12° below the horizon.
 var nauticalDusk: Date?
 ```
 
-#### Discussion
+## Discussion
 
 This property is optional because it’s possible for the sun to not set on a given day, at extreme latitudes. At nautical dusk, most stars become visible, and in clear weather conditions the horizon is visible.
 

@@ -24,11 +24,11 @@ func AudioConverterConvertComplexBuffer(_ inAudioConverter: AudioConverterRef, _
 extern OSStatus AudioConverterConvertComplexBuffer(AudioConverterRef inAudioConverter, UInt32 inNumberPCMFrames, const AudioBufferList *inInputData, AudioBufferList *outOutputData);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 
-#### Discussion
+## Discussion
 
 This function is appropriate for linear PCM-to-linear PCM audio data format conversion where there is no sample rate conversion.
 

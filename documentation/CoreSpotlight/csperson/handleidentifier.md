@@ -23,7 +23,7 @@ var handleIdentifier: String { get }
 @property (readonly) NSString * handleIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is a [`CNContact`](../../Contacts/cncontact.md) property key, such as [`CNContactPhoneNumbersKey`](../../Contacts/cncontactphonenumberskey.md) or [`CNContactEmailAddressesKey`](../../Contacts/cncontactemailaddresseskey.md).
 

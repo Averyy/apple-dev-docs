@@ -25,7 +25,7 @@ case perRecord
 CKRecordZoneEncryptionScopePerRecord
 ```
 
-#### Discussion
+## Discussion
 
 This is the default encryption scope for a record zone.
 

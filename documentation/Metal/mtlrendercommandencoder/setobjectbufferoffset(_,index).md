@@ -25,7 +25,7 @@ func setObjectBufferOffset(_ offset: Int, index: Int)
 - (void) setObjectBufferOffset:(NSUInteger) offset atIndex:(NSUInteger) index;
 ```
 
-#### Discussion
+## Discussion
 
 The command this method encodes changes the offset for a mesh buffer that already has a previous assignment from one of your earlier commands.
 

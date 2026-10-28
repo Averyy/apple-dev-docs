@@ -24,7 +24,7 @@ case pinLockout
 PKPaymentAuthorizationStatusPINLockout
 ```
 
-#### Discussion
+## Discussion
 
 Pass this constant to the completion block when the bank informs you that the user has exceeded the allowed number of attempts to enter their PIN.
 

@@ -21,11 +21,11 @@ Returns the default memory alignment of `T`.
 static func alignment(ofValue value: borrowing T) -> Int
 ```
 
-#### Return Value
+## Return Value
 
 The default memory alignment, in bytes, of the given value’s type. This value is always positive.
 
-#### Discussion
+## Discussion
 
 Use a type’s alignment when allocating memory using an unsafe pointer.
 

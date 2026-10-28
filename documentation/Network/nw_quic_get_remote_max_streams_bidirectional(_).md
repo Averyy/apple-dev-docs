@@ -25,7 +25,7 @@ func nw_quic_get_remote_max_streams_bidirectional(_ metadata: nw_protocol_metada
 uint64_t nw_quic_get_remote_max_streams_bidirectional(nw_protocol_metadata_t metadata);
 ```
 
-#### Return Value
+## Return Value
 
 The maximum number of bidirectional streams advertised by peer that the connection is allowed to create.
 

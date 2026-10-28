@@ -21,11 +21,11 @@ func evaluation(on labeledData: DataFrame) -> MLRegressorMetrics
 func evaluation(on labeledData: MLDataTable) -> MLRegressorMetrics
 ```
 
-#### Return Value
+## Return Value
 
 Metrics that describe the maximum error ([`maximumError`](../mlregressormetrics/maximumerror.md)) or the average error ([`rootMeanSquaredError`](../mlregressormetrics/rootmeansquarederror.md)).
 
-#### Discussion
+## Discussion
 
 Evaluation should be done on a testing data set that the model has not seen as part of the training or validation data sets. The data should have feature columns with identical name and type to the training data, as well as a labels column with the same name.
 

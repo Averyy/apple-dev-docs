@@ -25,7 +25,7 @@ let kCGImagePropertyGIFHasGlobalColorMap: CFString
 extern CFStringRef const kCGImagePropertyGIFHasGlobalColorMap;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is a [`CFBoolean`](../CoreFoundation/cfboolean.md).
 

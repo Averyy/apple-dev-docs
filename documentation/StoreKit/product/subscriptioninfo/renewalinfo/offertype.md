@@ -23,7 +23,7 @@ The subscription offer type for the next subscription period.
 var offerType: Transaction.OfferType? { get }
 ```
 
-#### Discussion
+## Discussion
 
 If this value is `nil`, there’s no offer applied.
 

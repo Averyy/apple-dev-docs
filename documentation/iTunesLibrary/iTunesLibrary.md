@@ -10,7 +10,7 @@ Retrieve the properties of the media in the user’s iTunes library.
 - Mac Catalyst 14.0+
 - macOS 10.13+
 
-#### Overview
+## Overview
 
 With this framework, you can retrieve media information, such as track and playlist metadata, directly from the user’s iTunes library, eliminating the need to query the iTunes XML file.
 

@@ -24,11 +24,11 @@ class func openMaps(with mapItems: [MKMapItem], launchOptions: [String : Any]? =
 + (BOOL) openMapsWithItems:(NSArray<MKMapItem *> *) mapItems launchOptions:(NSDictionary<NSString *,id> *) launchOptions;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the Maps app successfully opens the maps items, or [`false`](../../Swift/false.md) if there’s an error.
 
-#### Discussion
+## Discussion
 
 You use this method to pass one or more map items to the Maps app. For example, you might use this method to ask the Maps app to display location-based search results that your app generates. The Maps app displays pins at each location you specify and uses the contents of each map item object to display additional information.
 

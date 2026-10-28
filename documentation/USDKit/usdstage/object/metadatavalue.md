@@ -20,7 +20,7 @@ A value that can be stored as metadata in a Universal Scene Description file.
 protocol MetadataValue : Sendable
 ```
 
-#### Overview
+## Overview
 
 Types that conform to this protocol can be authored as metadata using [`USDStage.Object.MetadataCollection`](./metadatacollection.md).
 

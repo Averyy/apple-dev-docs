@@ -21,7 +21,7 @@ Specifies the style to use when describing a relative date, such as “1 day ago
 var presentation: Date.RelativeFormatStyle.Presentation
 ```
 
-#### Discussion
+## Discussion
 
 Express relative date formats in either `numeric` or `named` styles. For example:
 

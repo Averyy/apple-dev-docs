@@ -23,11 +23,11 @@ static func name(style: PersonNameComponents.FormatStyle.Style) -> Self
 
 Available when `Self` is `PersonNameComponents.FormatStyle`.
 
-#### Return Value
+## Return Value
 
 A name format style.
 
-#### Discussion
+## Discussion
 
 Use the dot-notation form of tis type method when the call point allows the use of [`PersonNameComponents.FormatStyle`](../personnamecomponents/formatstyle.md). You typically do this when calling the [`formatted(_:)`](../personnamecomponents/formatted%28_%29.md) method of [`PersonNameComponents`](../personnamecomponents.md).
 

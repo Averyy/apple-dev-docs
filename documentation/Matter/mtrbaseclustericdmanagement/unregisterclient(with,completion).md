@@ -29,7 +29,7 @@ func unregisterClient(with params: MTRICDManagementClusterUnregisterClientParams
 - (void) unregisterClientWithParams:(MTRICDManagementClusterUnregisterClientParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This command allows a client to unregister itself with the ICD.
 

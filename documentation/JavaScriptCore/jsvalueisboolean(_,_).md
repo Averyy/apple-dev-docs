@@ -24,7 +24,7 @@ func JSValueIsBoolean(_ ctx: JSContextRef!, _ value: JSValueRef!) -> Bool
 bool JSValueIsBoolean(JSContextRef ctx, JSValueRef value);
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if `value` is a Boolean; otherwise, [`false`](../Swift/false.md).
 

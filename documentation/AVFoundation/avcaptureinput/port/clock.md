@@ -23,7 +23,7 @@ var clock: CMClock? { get }
 @property (nonatomic, readonly, nullable) CMClockRef clock;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is readonly and may not reflect the actual clock in the capture device.
 

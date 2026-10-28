@@ -24,7 +24,7 @@ var anticipatedPlaybackRate: Float { get }
 @property (nonatomic, readonly) float anticipatedPlaybackRate;
 ```
 
-#### Discussion
+## Discussion
 
 Consider this command complete after the player is ready to start playback at the indicated rate.
 

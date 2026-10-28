@@ -16,11 +16,11 @@ Start the channel.
 IOReturn (*Start)(IOFireWireLibIsochChannelRef self);
 ```
 
-#### Return Value
+## Return Value
 
 Returns an IOReturn error code.
 
-#### Discussion
+## Discussion
 
 Calling this function will result in all listener and talker ports on this isochronous channel having their Start method called.
 

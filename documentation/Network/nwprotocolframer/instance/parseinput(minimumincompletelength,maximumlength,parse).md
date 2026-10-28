@@ -21,7 +21,7 @@ Examines the content of input data while in your input handler.
 final func parseInput(minimumIncompleteLength: Int, maximumLength: Int, parse: (UnsafeMutableRawBufferPointer?, Bool) -> Int) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 Returns true if the requested length was available to parse, or false if the conditions could not be met.
 

@@ -25,7 +25,7 @@ func present()
 - (void) present;
 ```
 
-#### Discussion
+## Discussion
 
 When a command queue schedules a command buffer for execution, it tracks whether any commands in that command buffer need to render or write to the drawable object. When you call this method, the drawable presents its contents as soon as possible after all scheduled render or write requests for that drawable are complete.
 

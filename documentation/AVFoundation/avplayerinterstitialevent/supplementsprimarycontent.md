@@ -25,7 +25,7 @@ var supplementsPrimaryContent: Bool { get set }
 @property (nonatomic, readonly) BOOL supplementsPrimaryContent;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`false`](../../Swift/false.md).
 

@@ -19,11 +19,11 @@
 extern bool os_lockdown_mode_enabled();
 ```
 
-#### Return Value
+## Return Value
 
 True if Lockdown Mode is enabled; false if Lockdown Mode is disabled or not supported on the platform.
 
-#### Discussion
+## Discussion
 
 Returns a cached value indicating whether Lockdown Mode is currently enabled on the system.
 

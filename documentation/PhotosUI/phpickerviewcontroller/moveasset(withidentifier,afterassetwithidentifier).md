@@ -23,7 +23,7 @@ func moveAsset(withIdentifier identifier: String, afterAssetWithIdentifier after
 - (void) moveAssetWithIdentifier:(NSString *) identifier afterAssetWithIdentifier:(NSString *) afterIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 This method ignores assets that are invalid or aren’t in a selected state, and if you don’t specify a library when calling [`init(photoLibrary:)`](../phpickerconfiguration-swift.struct/init%28photolibrary%29.md).
 

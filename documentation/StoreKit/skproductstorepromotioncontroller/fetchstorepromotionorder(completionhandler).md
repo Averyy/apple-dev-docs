@@ -33,7 +33,7 @@ func promotionOrder() async throws -> [SKProduct]
 
 - [Promoting Apple In-App Purchases](../promoting-in-app-purchases.md)
 
-#### Discussion
+## Discussion
 
 This function returns an array of promoted products whose order is overridden on the given device.
 

@@ -5,7 +5,7 @@
 
 Use call tree visualizations to find performance bottlenecks in Instruments.
 
-#### Overview
+## Overview
 
 Instruments organizes profiling data into a call tree, a hierarchical view showing which functions consume the most time. Each profiling instrument populates the call tree in its own way. Most use CPU sampling, but some use other techniques, such as Processor Trace, which reconstructs a call tree from hardware branch-tracing instructions, or the Task Creation Call Tree in Swift Concurrency, which captures a backtrace each time your app creates a task.
 
@@ -13,7 +13,7 @@ Instruments provides three ways to visualize the same data: the standard call tr
 
 Run Comparison and [`OSSignposter`](../os/ossignposter.md) complement call tree analysis. With `OSSignposter`, you can annotate your code with named intervals that appear as labeled spans in Instruments, and isolate the call tree to a specific operation. Run Comparison creates a diff of the call trees from two separate recordings, making it straightforward to measure whether a code change introduced a regression or an improvement.
 
-#### Switch between call tree view modes
+## Switch between call tree view modes
 
 A segmented control in the top-right corner of the detail area lets you choose from three call tree view modes: Call Tree, Flame Graph, and Top Functions. Click the appropriate button to switch modes. The underlying sample data doesn’t change when you switch; only the presentation changes.
 
@@ -25,7 +25,7 @@ In the flame graph:
 
 ![A screenshot of the Instruments detail view and the segmented control that switches between Call Tree, Flame Graph, and Top Functions modes.](https://developer.apple.com/tutorials/images/com.apple.Xcode/call-tree-view-mode-picker@2x.png)
 
-#### Explore profiles with flame graphs
+## Explore profiles with flame graphs
 
 A flame graph presents the same data as a standard call tree, but organizes it visually as a grid of blocks. The x-axis represents the percentage of samples. When more samples include a particular frame at a call-stack position, those blocks are wider. The vertical axis represents call-stack depth, with frames arranged in the order they appear in recorded call stacks.
 
@@ -39,7 +39,7 @@ The standard call tree is better suited for detailed analysis of individual code
 
 ![A screenshot of Instruments showing a flame graph with wide blocks indicating frames that appear in many CPU samples.](https://developer.apple.com/tutorials/images/com.apple.Xcode/call-tree-flame-graph@2x.png)
 
-#### Find performance hotspots with Top Functions
+## Find performance hotspots with Top Functions
 
 Top Functions aggregates all samples for the same symbol across the entire recording, regardless of which callers invoked that symbol. In a standard call tree, a function called from 10 different callers appears 10 times, once under each caller. In Top Functions, that same function appears once, with all of its samples combined into a single row.
 
@@ -51,7 +51,7 @@ By default, Instruments sorts the Top Functions table to show the functions that
 
 ![A screenshot of Instruments showing the Top Functions split-pane layout with the Top Functions table on the left and an adjacent flame graph on the right.](https://developer.apple.com/tutorials/images/com.apple.Xcode/call-tree-top-functions@2x.png)
 
-#### Mark performance intervals
+## Mark performance intervals
 
 With [`OSSignposter`](../os/ossignposter.md), you can annotate your code with named intervals that Instruments displays as labeled spans in a timeline track. Selecting a span in the timeline sets the active time range to that interval, which filters all call tree views to show only the samples from that period.
 
@@ -66,7 +66,7 @@ defer { signposter.endInterval("renderFrame", state) }
 
 For more details on signpost types, disambiguation, and how to display signpost data in Instruments, see [Recording Performance Data](../os/recording-performance-data.md).
 
-#### Compare profiling runs
+## Compare profiling runs
 
 Run Comparison shows the differences between two call tree views from separate recordings in the same Instruments document. Use it when you want to measure whether a code change improved or regressed the performance of a specific operation. To compare runs, record at least two runs in the same document by clicking Record multiple times.
 

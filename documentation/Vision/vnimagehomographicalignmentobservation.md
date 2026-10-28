@@ -24,7 +24,7 @@ class VNImageHomographicAlignmentObservation
 @interface VNImageHomographicAlignmentObservation : VNImageAlignmentObservation
 ```
 
-#### Overview
+## Overview
 
 This type of observation results from a [`VNHomographicImageRegistrationRequest`](./vnhomographicimageregistrationrequest.md), informing the [`warpTransform`](./vnimagehomographicalignmentobservation/warptransform.md) performed to align the input images.
 

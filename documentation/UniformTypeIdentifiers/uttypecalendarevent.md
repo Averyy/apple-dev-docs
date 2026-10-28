@@ -21,7 +21,7 @@ A base type that represents a calendar event.
 extern UTType * const UTTypeCalendarEvent;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.calendar-event`.
 

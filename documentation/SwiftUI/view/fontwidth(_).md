@@ -22,7 +22,7 @@ nonisolated
 func fontWidth(_ width: Font.Width?) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that uses the font width you specify.
 

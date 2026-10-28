@@ -15,7 +15,7 @@ The form feed key.
 static let formFeed: NSEvent.SpecialKey
 ```
 
-#### Discussion
+## Discussion
 
 This key is unavailable on most Macintosh keyboards.
 

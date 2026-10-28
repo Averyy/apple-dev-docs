@@ -20,7 +20,7 @@ weak var viewLayer: CALayer? { get set }
 @property (nonatomic, weak, nullable) CALayer * viewLayer;
 ```
 
-#### Discussion
+## Discussion
 
 Assign the layer that presents the camera image. Renderers such as `ARSCNView`, `ARSKView`, `ARView`, and `RealityView` set this for you.
 

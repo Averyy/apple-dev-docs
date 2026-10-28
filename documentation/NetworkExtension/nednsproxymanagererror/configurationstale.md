@@ -23,7 +23,7 @@ case configurationStale
 NEDNSProxyManagerErrorConfigurationStale
 ```
 
-#### Discussion
+## Discussion
 
 You must load the configuration with a call to [`loadFromPreferences(completionHandler:)`](../nednsproxymanager/loadfrompreferences%28completionhandler%29.md) before you can save it.
 

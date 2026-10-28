@@ -17,7 +17,7 @@ let IMKCandidatesOpacityAttributeName: String
 extern const NSString * IMKCandidatesOpacityAttributeName;
 ```
 
-#### Discussion
+## Discussion
 
 The opacity attribute for a candidates window. The associated value must be an `NSNumber` object that represents a value from 0 to 1.
 

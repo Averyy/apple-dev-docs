@@ -25,11 +25,11 @@ init(symbolicLinkWithDestinationURL url: URL)
 - (instancetype) initSymbolicLinkWithDestinationURL:(NSURL *) url;
 ```
 
-#### Return Value
+## Return Value
 
 Initialized symbolic-link file wrapper referencing `url`.
 
-#### Discussion
+## Discussion
 
 The file wrapper is not associated with a file-system node until you save it using [`write(to:options:originalContentsURL:)`](./write%28to,options,originalcontentsurl%29.md).
 

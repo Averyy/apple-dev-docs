@@ -17,11 +17,11 @@ Compute the eigenvalues of a complex Hermitian or real symmetric matrix.
 func eigvalsh(_ array: MLXArray, UPLO: String = "L", stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Return Value
+## Return Value
 
 The eigenvalues in ascending order
 
-#### Discussion
+## Discussion
 
 This function supports arrays with at least 2 dimensions. When the input has more than two dimensions, the eigenvalues are computed for each matrix in the last two dimensions.
 

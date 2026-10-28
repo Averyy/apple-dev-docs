@@ -21,7 +21,7 @@ The closure to execute after CloudKit retrieves all of the subscriptions.
 var fetchSubscriptionsResultBlock: ((Result<Void, any Error>) -> Void)? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This property is a closure that returns no value and has the following parameter:
 

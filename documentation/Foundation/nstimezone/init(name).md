@@ -25,11 +25,11 @@ init?(name tzName: String)
 - (instancetype) initWithName:(NSString *) tzName;
 ```
 
-#### Return Value
+## Return Value
 
 A time zone object initialized with the identifier `tzName`.
 
-#### Discussion
+## Discussion
 
 If `tzName` is a known identifier, this method calls [`init(name:data:)`](./init%28name,data%29.md) with the appropriate data object.
 

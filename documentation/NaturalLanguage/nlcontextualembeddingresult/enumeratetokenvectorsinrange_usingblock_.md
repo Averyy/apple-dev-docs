@@ -21,7 +21,7 @@ Iterates over the embedding vectors corresponding to the subword tokens within t
 - (void) enumerateTokenVectorsInRange:(NSRange) range usingBlock:(void (^)(NSArray<NSNumber *> *tokenVector, NSRange tokenRange, BOOL *stop)) block;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to access the individual (subword) token embeddings. You can apply pooling or combination techniques to aggregate these subword vectors into a single representation for a word, phrase, or entire input.
 

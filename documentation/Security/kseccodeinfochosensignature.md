@@ -18,7 +18,7 @@ let kSecCodeInfoChosenSignature: CFString
 extern CFStringRef const kSecCodeInfoChosenSignature;
 ```
 
-#### Discussion
+## Discussion
 
 Key in the dictionary returned by SecCodeCopySigningInformation. The value is a CFNumber containing the 1-based index of the signature slot that was selected for validation and information retrieval.
 

@@ -39,7 +39,7 @@ func draw(_ text: GraphicsContext.ResolvedText, at point: CGPoint, anchor: UnitP
 func draw(_ text: Text, at point: CGPoint, anchor: UnitPoint = .center)
 ```
 
-#### Discussion
+## Discussion
 
 The current context state defines the full drawing operation. For example, the current transformation and clip shapes affect how SwiftUI draws the image.
 

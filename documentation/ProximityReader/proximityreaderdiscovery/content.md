@@ -17,7 +17,7 @@ A type that represents content you can display on the current device.
 struct Content
 ```
 
-#### Overview
+## Overview
 
 This structure stores information the system needs to present the appropriate interface. Don’t create instances of this structure directly. Instead, fetch each instance using the [`content(for:)`](./content%28for%29.md) method.
 

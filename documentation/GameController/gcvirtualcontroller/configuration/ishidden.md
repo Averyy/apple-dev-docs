@@ -21,7 +21,7 @@ var isHidden: Bool { get set }
 @property (nonatomic, getter=isHidden) BOOL hidden;
 ```
 
-#### Discussion
+## Discussion
 
 To present your own virtual controller interface, set this property to [`true`](../../../Swift/true.md). Then when the state of controls in your interface changes, use the [`GCVirtualController`](../../gcvirtualcontroller.md) [`setValue(_:forButtonElement:)`](../setvalue%28_,forbuttonelement%29.md) and [`setPosition(_:forDirectionPadElement:)`](../setposition%28_,fordirectionpadelement%29.md) methods to update the corresponding elements.
 

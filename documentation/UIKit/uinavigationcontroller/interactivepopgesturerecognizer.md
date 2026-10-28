@@ -22,7 +22,7 @@ var interactivePopGestureRecognizer: UIGestureRecognizer? { get }
 @property (nonatomic, readonly, nullable) UIGestureRecognizer * interactivePopGestureRecognizer;
 ```
 
-#### Discussion
+## Discussion
 
 The navigation controller installs this gesture recognizer on its view and uses it to pop the topmost view controller off the navigation stack when a person swipes horizontally from the leading edge of the screen.
 

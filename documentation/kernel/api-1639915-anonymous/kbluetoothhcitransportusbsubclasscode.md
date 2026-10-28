@@ -13,7 +13,7 @@
 kBluetoothHCITransportUSBSubClassCode = 0x01
 ```
 
-#### Discussion
+## Discussion
 
 RF Controller
 

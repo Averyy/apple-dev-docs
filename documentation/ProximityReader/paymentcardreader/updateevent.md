@@ -19,7 +19,7 @@ An event you receive during the configuration of the payment system.
 enum UpdateEvent
 ```
 
-#### Overview
+## Overview
 
 If the [`prepare(using:updateHandler:)`](./prepare%28using,updatehandler%29.md) must update the device’s configuration, it delivers events to the update handler you provided. Use those events to monitor the status of the update.
 

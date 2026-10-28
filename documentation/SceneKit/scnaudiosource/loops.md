@@ -25,7 +25,7 @@ var loops: Bool { get set }
 @property (nonatomic) BOOL loops;
 ```
 
-#### Discussion
+## Discussion
 
 If this value is [`true`](../../Swift/true.md), audio players using this source automatically begin playing again after playback has finished. If this value is [`false`](../../Swift/false.md) (the default), the audio source plays exactly once.
 

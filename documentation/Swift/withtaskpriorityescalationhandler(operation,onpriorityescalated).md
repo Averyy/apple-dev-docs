@@ -18,15 +18,15 @@ Runs the passed `operation` while registering a task priority escalation handler
 ## Declaration
 
 ```swift
-nonisolated
-(nonsending) func withTaskPriorityEscalationHandler<T, E>(operation: nonisolated(nonsending) () async throws(E) -> T, onPriorityEscalated handler: @Sendable (TaskPriority, TaskPriority) -> Void) async throws(E) -> T where E : Error
+nonisolated(nonsending)
+func withTaskPriorityEscalationHandler<T, E>(operation: nonisolated(nonsending) () async throws(E) -> T, onPriorityEscalated handler: @Sendable (TaskPriority, TaskPriority) -> Void) async throws(E) -> T where E : Error
 ```
 
-#### Return Value
+## Return Value
 
 The value returned by `operation`
 
-#### Discussion
+## Discussion
 
 The handler may perform additional actions upon priority escalation, but cannot influence how the escalation influences the task, i.e. the task’s priority will be escalated regardless of actions performed in the handler.
 

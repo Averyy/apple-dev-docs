@@ -25,11 +25,11 @@ class func removeFromParent() -> SKAction
 + (SKAction *) removeFromParent;
 ```
 
-#### Return Value
+## Return Value
 
 A new action object.
 
-#### Discussion
+## Discussion
 
 When the action executes, the node is immediately removed from its parent.
 

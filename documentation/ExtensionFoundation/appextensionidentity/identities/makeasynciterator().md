@@ -17,7 +17,7 @@ Creates the asynchronous iterator that produces elements of this asynchronous se
 func makeAsyncIterator() -> AppExtensionIdentity.Identities.AsyncIterator
 ```
 
-#### Return Value
+## Return Value
 
 An instance of the `AsyncIterator` type used to produce elements of the asynchronous sequence.
 

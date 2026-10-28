@@ -22,7 +22,7 @@ weak var delegate: (any NCWidgetSearchViewDelegate)? { get set }
 @property (weak, nullable) id<NCWidgetSearchViewDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 A search view controller’s delegate performs a search on the input term and updates the controller’s [`searchResults`](./searchresults.md) property with the results.
 

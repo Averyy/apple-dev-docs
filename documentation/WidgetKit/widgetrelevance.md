@@ -20,7 +20,7 @@ A type collecting the relevances for a widget kind.
 struct WidgetRelevance<Configuration>
 ```
 
-#### Overview
+## Overview
 
 Return this type from the `relevance()` requirement of your [`TimelineProvider`](./timelineprovider.md), [`AppIntentTimelineProvider`](./appintenttimelineprovider.md), or [`IntentTimelineProvider`](./intenttimelineprovider.md) to inform the system of when a widget might be relevant and in which configuration.
 

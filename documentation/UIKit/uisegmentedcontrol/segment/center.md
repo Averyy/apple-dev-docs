@@ -23,7 +23,7 @@ case center
 UISegmentedControlSegmentCenter
 ```
 
-#### Discussion
+## Discussion
 
 Applies only when [`numberOfSegments`](../numberofsegments.md) is greater than 2.
 

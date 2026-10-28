@@ -25,11 +25,11 @@ convenience init(url referenceURL: URL)
 + (instancetype) referenceNodeWithURL:(NSURL *) referenceURL;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized reference node.
 
-#### Discussion
+## Discussion
 
 This intializer is for loading archives that reside outside of the app bundle.
 

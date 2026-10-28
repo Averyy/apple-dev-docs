@@ -16,7 +16,7 @@ struct IOUSBStandardEndpointDescriptors {
 };
 ```
 
-#### Discussion
+## Discussion
 
 Use this structure to intialize and adjust pipes in the system. You must initialize the `bcdUSB` descriptor to the USB version that the device supports. Acceptable values are `0x0110`, `0x0200`, `0x0300`, `0x0310`. 
 

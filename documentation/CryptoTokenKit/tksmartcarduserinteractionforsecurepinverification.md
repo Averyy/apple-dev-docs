@@ -25,7 +25,7 @@ class TKSmartCardUserInteractionForSecurePINVerification
 @interface TKSmartCardUserInteractionForSecurePINVerification : TKSmartCardUserInteractionForPINOperation
 ```
 
-#### Overview
+## Overview
 
 The result of a user interaction is available once the interaction has completed.
 

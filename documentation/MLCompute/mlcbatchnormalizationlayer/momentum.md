@@ -23,7 +23,7 @@ var momentum: Float { get }
 @property (nonatomic, readonly) float momentum;
 ```
 
-#### Discussion
+## Discussion
 
 The default is `0.99`.
 

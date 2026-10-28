@@ -25,7 +25,7 @@ static var year: NSCalendar.Unit { get }
 NSCalendarUnitYear
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is an `NSInteger`. Equal to `kCFCalendarUnitYear`.
 

@@ -14,7 +14,7 @@
 var typeUTF16ExternalRepresentation: DescType { get }
 ```
 
-#### Discussion
+## Discussion
 
 Unicode text in 16-bit external representation with byte-order-mark (BOM).
 

@@ -5,11 +5,11 @@
 
 Determine which Apple Music capabilities are available on a customer’s device.
 
-#### Overview
+## Overview
 
 After you request the user’s permission to access their Apple Music library (see [Requesting Access to Apple Music Library](./requesting-access-to-apple-music-library.md)), you confirm that authorization and then identify Apple Music capabilities on the user’s device.
 
-##### Confirm Whether the User Authorized Access to Apple Music Library
+### Confirm Whether the User Authorized Access to Apple Music Library
 
 Use [`SKCloudServiceController`](./skcloudservicecontroller.md)’s [`authorizationStatus()`](./skcloudservicecontroller/authorizationstatus%28%29.md) to check whether the user has authorized access to Apple Music Library. If the authorization status is [`SKCloudServiceAuthorizationStatus.notDetermined`](./skcloudserviceauthorizationstatus/notdetermined.md), call [`SKCloudServiceController`](./skcloudservicecontroller.md)’s [`requestAuthorization(_:)`](./skcloudservicecontroller/requestauthorization%28_%29.md) to prompt the user for access.
 
@@ -42,7 +42,7 @@ if ([SKCloudServiceController authorizationStatus] == SKCloudServiceAuthorizatio
 }
 ```
 
-##### Create a Cloud Service Controller and Its Handler to Fetch Capabilities
+### Create a Cloud Service Controller and Its Handler to Fetch Capabilities
 
 First, create an [`SKCloudServiceController`](./skcloudservicecontroller.md) object:
 
@@ -60,7 +60,7 @@ SKCloudServiceController *controller = [[SKCloudServiceController alloc] init];
 
 Then call its [`requestCapabilities(completionHandler:)`](./skcloudservicecontroller/requestcapabilities%28completionhandler%29.md) method to fetch the current Apple Music capabilities, as described in the sections that follow.
 
-##### Check for the Capability to Play Apple Music Content
+### Check for the Capability to Play Apple Music Content
 
 If you want your app to play Apple Music content, check whether `capabilities` includes [`musicCatalogPlayback`](./skcloudservicecapability/musiccatalogplayback.md):
 
@@ -88,7 +88,7 @@ controller.requestCapabilities {(capabilities: SKCloudServiceCapability, error: 
 
 ```
 
-##### Check for the Subscription-Eligible Capability
+### Check for the Subscription-Eligible Capability
 
 A user is eligible for an Apple Music subscription offer when `capabilities` doesn’t include [`musicCatalogPlayback`](./skcloudservicecapability/musiccatalogplayback.md) but contains [`musicCatalogSubscriptionEligible`](./skcloudservicecapability/musiccatalogsubscriptioneligible.md). If you want your app to present the user with an offer to subscribe to Apple Music, check `capabilities` for these features:
 
@@ -117,7 +117,7 @@ controller.requestCapabilities {(capabilities: SKCloudServiceCapability, error: 
 
 You can present the offer using [`SKCloudServiceSetupViewController`](./skcloudservicesetupviewcontroller.md).
 
-##### Check for the Capability to Add Songs to the User’s iCloud Music Library
+### Check for the Capability to Add Songs to the User’s iCloud Music Library
 
 If you want your app to add tracks to the user’s iCloud music library, check whether `capabilities` includes [`addToCloudMusicLibrary`](./skcloudservicecapability/addtocloudmusiclibrary.md):
 

@@ -19,7 +19,7 @@ func AXUIElementCreateApplication(_ pid: pid_t) -> AXUIElement
 AXUIElementRef AXUIElementCreateApplication(pid_t pid);
 ```
 
-#### Return Value
+## Return Value
 
 The AXUIElementRef representing the top-level accessibility object for the application with the specified process ID.
 

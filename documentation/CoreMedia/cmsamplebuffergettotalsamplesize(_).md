@@ -25,7 +25,7 @@ func CMSampleBufferGetTotalSampleSize(_ sbuf: CMSampleBuffer) -> Int
 extern size_t CMSampleBufferGetTotalSampleSize(CMSampleBufferRef sbuf);
 ```
 
-#### Return Value
+## Return Value
 
 Total size in bytes of sample data in the `CMSampleBuffer`. If there are no sample sizes in this `CMSampleBuffer`, a size of 0 will be returned.
 

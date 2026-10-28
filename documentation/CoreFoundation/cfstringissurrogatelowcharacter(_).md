@@ -25,7 +25,7 @@ func CFStringIsSurrogateLowCharacter(_ character: UniChar) -> Bool
 static Boolean CFStringIsSurrogateLowCharacter(UniChar character);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if `character` is a low character in a surrogate pair, otherwise `false`.
 

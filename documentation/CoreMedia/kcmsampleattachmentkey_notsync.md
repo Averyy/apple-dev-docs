@@ -25,7 +25,7 @@ let kCMSampleAttachmentKey_NotSync: CFString
 extern CFStringRef const kCMSampleAttachmentKey_NotSync;
 ```
 
-#### Discussion
+## Discussion
 
 A sync sample, also known as a key frame or IDR (Instantaneous Decoding Refresh), can be decoded without requiring any previous samples to have been decoded. Samples following a sync sample also do not require samples prior to the sync sample to have been decoded. Samples are assumed to be sync samples by default — set the value for this key to [`kCFBooleanTrue`](../CoreFoundation/kcfbooleantrue.md) for samples which should not be treated as sync samples.
 

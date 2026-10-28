@@ -20,7 +20,7 @@ func downloadAllItems(_ sender: Any!)
 - (void) downloadAllItems:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 This method is can be connected to a user interface item in Interface Builder.
 

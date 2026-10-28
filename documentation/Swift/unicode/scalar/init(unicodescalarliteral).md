@@ -21,7 +21,7 @@ Creates a Unicode scalar with the specified value.
 init(unicodeScalarLiteral value: Unicode.Scalar)
 ```
 
-#### Discussion
+## Discussion
 
 Do not call this initializer directly. It may be used by the compiler when you use a string literal to initialize a `Unicode.Scalar` instance.
 

@@ -19,7 +19,7 @@ optional func textViewportLayoutController(_ textViewportLayoutController: NSTex
 - (id<NSTextViewportRenderingSurface>) textViewportLayoutController:(NSTextViewportLayoutController *) textViewportLayoutController retrieveCachedRenderingSurfaceForKey:(id<NSTextViewportRenderingSurfaceKey>) renderingSurfaceKey;
 ```
 
-#### Return Value
+## Return Value
 
 The cached rendering surface, or `nil`.
 

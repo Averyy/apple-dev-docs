@@ -14,11 +14,11 @@ virtual IOReturn powerStateWillChangeTo(
  IOService *whatDevice );
 ```
 
-#### Return Value
+## Return Value
 
 The driver returns `IOPMAckImplied` if it has prepared for the power change when it returns. If it has started preparing but not finished, it should return a number of microseconds which is an upper limit of the time it will need to finish preparing. Then, when it has completed its preparations, it should call acknowledgePowerChange.
 
-#### Overview
+## Overview
 
 Power management informs interested parties that a device is about to change to a different power state. Interested parties are those that have registered for this notification via registerInterestedDriver. If you have called `registerInterestedDriver` on a power managed driver, you must implement `powerStateWillChangeTo` and powerStateDidChangeTo to receive the notifications. `powerStateWillChangeTo` is called in a clean and separate thread context. `powerStateWillChangeTo` is called before a power state transition takes place; `powerStateDidChangeTo` is called after the transition has completed.
 

@@ -16,7 +16,7 @@ An error that indicates the property list for an action is invalid.
 static var actionPropertyListInvalidError: AMError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 The property list (`Info.plist`) could be missing, damaged, or constructed improperly.
 

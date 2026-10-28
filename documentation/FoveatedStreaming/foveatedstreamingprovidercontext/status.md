@@ -16,7 +16,7 @@ Reports the current status of the foveated streaming provider.
 final var status: FoveatedStreamingProviderStatus { get }
 ```
 
-#### Discussion
+## Discussion
 
 - If the status is `connecting`, then [`connect(context:)`](../foveatedstreamingextension/connect%28context%29.md) is in the middle of being called.
 - If the status is `connected`, then [`connect(context:)`](../foveatedstreamingextension/connect%28context%29.md) has completed its call without error.  The stream is assumed running.

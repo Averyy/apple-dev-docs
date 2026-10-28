@@ -20,7 +20,7 @@ Omits reporting collisions with static collision objects.
 static let `static`: CollisionComponent.CollisionOptions
 ```
 
-#### Discussion
+## Discussion
 
 When a collision object is static, it doesn’t report collisions with static collision objects, only with dynamic collision objects. In contrast, when a collision object is dynamic (not static), it reports collisions with all other collision objects.
 

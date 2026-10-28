@@ -24,7 +24,7 @@ var clipRectSource: MTLRegion { get set }
 @property (nonatomic, readwrite) MTLRegion clipRectSource;
 ```
 
-#### Discussion
+## Discussion
 
 This value indicates which part of the source image to read from. If the value of `clipRectSource` does not lie completely within the source image, then the intersection of the image bounds and the value of `clipRectSource` will be used. The value of `clipRectSource` replaces the [`offset`](../mpsunaryimagekernel/offset.md) value for this filter, which is ignored.
 

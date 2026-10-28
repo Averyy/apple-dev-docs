@@ -19,11 +19,11 @@ func numberOfChildren(ofItem item: Any?) -> Int
 - (NSInteger) numberOfChildrenOfItem:(id) item;
 ```
 
-#### Return Value
+## Return Value
 
 The number of children associated with the parent.
 
-#### Discussion
+## Discussion
 
 You can call this method on an outline view with either a static or dynamic data source. For an outline view whose contents are dynamic, this method may call out to the [`outlineView(_:numberOfChildrenOfItem:)`](../nsoutlineviewdatasource/outlineview%28_,numberofchildrenofitem%29.md) method of the associated data source object.
 

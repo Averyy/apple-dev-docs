@@ -17,7 +17,7 @@ virtual IOReturn GetEndpointProperties(
  UInt8 *interval);
 ```
 
-#### Return Value
+## Return Value
 
 returns kIOReturnSuccess if the endpoint is found, and kIOUSBEndpointNotFound if it is not.
 

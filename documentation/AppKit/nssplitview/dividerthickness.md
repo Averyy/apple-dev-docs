@@ -19,7 +19,7 @@ var dividerThickness: CGFloat { get }
 @property (readonly) CGFloat dividerThickness;
 ```
 
-#### Discussion
+## Discussion
 
 You can subclass [`NSSplitView`](../nssplitview.md) and override this method to change the thickness of a split view’s dividers.
 

@@ -24,7 +24,7 @@ var emitterCells: [CAEmitterCell]? { get set }
 @property (copy, nullable) NSArray<CAEmitterCell *> * emitterCells;
 ```
 
-#### Discussion
+## Discussion
 
 When specified, each particle emitted by the cell acts as an emitter for each of the cell’s sub-cells. The emission point is the current particle position and the emission angle is relative to the current direction of the particle.
 

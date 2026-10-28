@@ -19,11 +19,11 @@ convenience init?(pasteboard: NSPasteboard)
 - (instancetype) initWithPasteboard:(NSPasteboard *) pasteboard;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized `NSImage` object or `nil` if the method cannot create an image from the contents of the pasteboard.
 
-#### Discussion
+## Discussion
 
 The specified pasteboard should contain a type supported by one of the registered `NSImageRep` subclasses. The table below lists the default pasteboard types and file extensions for several `NSImageRep` subclasses.
 

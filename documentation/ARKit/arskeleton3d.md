@@ -20,7 +20,7 @@ class ARSkeleton3D
 @interface ARSkeleton3D : ARSkeleton
 ```
 
-#### Overview
+## Overview
 
 An [`ARBodyAnchor`](./arbodyanchor.md) contains one instance of this [`ARSkeleton`](./arskeleton.md) subclass to provide its joint positions in 3D space. The [`jointLocalTransforms`](./arskeleton3d/jointlocaltransforms-1m5a1.md) property describes a joint’s 3D offset from its parent joint. The [`jointModelTransforms`](./arskeleton3d/jointmodeltransforms-dno4.md) property describes a joint’s 3D offset from the body anchor’s [`transform`](./aranchor/transform.md).
 

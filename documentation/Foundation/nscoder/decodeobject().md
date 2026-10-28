@@ -25,7 +25,7 @@ func decodeObject() -> Any?
 - (id) decodeObject;
 ```
 
-#### Discussion
+## Discussion
 
 `NSCoder`’s implementation invokes [`decodeValue(ofObjCType:at:)`](./decodevalue%28ofobjctype,at%29.md) to decode the object data.
 

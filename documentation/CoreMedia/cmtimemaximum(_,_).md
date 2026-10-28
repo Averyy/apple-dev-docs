@@ -25,7 +25,7 @@ func CMTimeMaximum(_ time1: CMTime, _ time2: CMTime) -> CMTime
 extern CMTime CMTimeMaximum(CMTime time1, CMTime time2);
 ```
 
-#### Return Value
+## Return Value
 
 The greater of the two times.
 

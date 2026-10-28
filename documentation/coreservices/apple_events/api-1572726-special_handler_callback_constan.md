@@ -4,7 +4,7 @@
 
 Specify an object callback function to install, get, or remove from the special handler dispatch table.
 
-#### Overview
+## Overview
 
 You use these constants with the [`AEInstallSpecialHandler(_:_:_:)`](../api-1445532-aeinstallspecialhandler.md), [`AEGetSpecialHandler(_:_:_:)`](../api-1444274-aegetspecialhandler.md), or [`AERemoveSpecialHandler(_:_:_:)`](../api-1447960-aeremovespecialhandler.md) functions. 
 

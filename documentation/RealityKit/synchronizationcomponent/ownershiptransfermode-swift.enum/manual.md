@@ -20,7 +20,7 @@ Require explicit ownership request confirmation.
 case manual
 ```
 
-#### Discussion
+## Discussion
 
 Handle the [`SynchronizationEvents.OwnershipRequest`](../../synchronizationevents/ownershiprequest.md) event to find out when a peer requests ownership of an entity, and call the method stored in the requests’s [`accept`](../../synchronizationevents/ownershiprequest/accept.md) property to confirm the transfer of ownership.
 

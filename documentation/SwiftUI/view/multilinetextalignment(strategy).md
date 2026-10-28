@@ -22,7 +22,7 @@ nonisolated
 func multilineTextAlignment(strategy: Text.AlignmentStrategy) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 To control the alignment explicitly at a view level, choose the [`layoutBased`](../text/alignmentstrategy/layoutbased.md) mode and set the [`multilineTextAlignment`](../environmentvalues/multilinetextalignment.md) to the appropriate value.
 

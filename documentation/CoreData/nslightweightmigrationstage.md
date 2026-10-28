@@ -25,7 +25,7 @@ class NSLightweightMigrationStage
 @interface NSLightweightMigrationStage : NSMigrationStage
 ```
 
-#### Overview
+## Overview
 
 Use [`NSLightweightMigrationStage`](./nslightweightmigrationstage.md) when you have a series of models to migrate and those models are compatible with lightweight migrations. Instances of this class supplement your custom migration stages and help maintain a consistent stage order for the entire migration.
 

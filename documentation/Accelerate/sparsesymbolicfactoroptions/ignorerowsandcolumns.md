@@ -25,7 +25,7 @@ var ignoreRowsAndColumns: UnsafeMutablePointer<Int32>?
 int * ignoreRowsAndColumns;
 ```
 
-#### Discussion
+## Discussion
 
 If this array isn’t `nil`, [`ignoreRowsAndColumns`](./ignorerowsandcolumns.md) provides a list of rows and columns to ignore. Terminate [`ignoreRowsAndColumns`](./ignorerowsandcolumns.md) with a negative index.
 

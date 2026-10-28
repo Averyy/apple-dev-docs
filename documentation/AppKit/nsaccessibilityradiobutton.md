@@ -19,7 +19,7 @@ protocol NSAccessibilityRadioButton : NSAccessibilityButton
 @protocol NSAccessibilityRadioButton <NSAccessibilityButton>
 ```
 
-#### Overview
+## Overview
 
 Use this protocol when you want a user interface element to behave like a radio button—a control for constraining a selection to a single element from several elements—in the accessibility hierarchy.
 

@@ -25,11 +25,11 @@ func CFNumberFormatterGetDecimalInfoForCurrencyCode(_ currencyCode: CFString!, _
 extern Boolean CFNumberFormatterGetDecimalInfoForCurrencyCode(CFStringRef currencyCode, int32_t *defaultFractionDigits, double *roundingIncrement);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the information was obtained successfully, otherwise `false` (for example, if the currency code is unknown or the information is not available).
 
-#### Discussion
+## Discussion
 
 The returned values are not localized because these are properties of the currency.
 

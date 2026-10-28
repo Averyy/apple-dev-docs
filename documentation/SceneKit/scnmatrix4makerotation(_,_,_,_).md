@@ -41,7 +41,7 @@ extern SCNMatrix4 SCNMatrix4MakeRotation(float angle, float x, float y, float z)
 extern SCNMatrix4 SCNMatrix4MakeRotation(CGFloat angle, CGFloat x, CGFloat y, CGFloat z);
 ```
 
-#### Return Value
+## Return Value
 
 A new rotation matrix.
 

@@ -15,7 +15,7 @@ virtual IOReturn controllerDidChangePowerState(
  IOService *policyMaker );
 ```
 
-#### Return Value
+## Return Value
 
 The return value is always `kIOReturnSuccess`.
 

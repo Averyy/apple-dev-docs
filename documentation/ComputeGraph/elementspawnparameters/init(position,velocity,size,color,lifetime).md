@@ -21,7 +21,7 @@ Creates a new set of particle spawn parameters.
 init(position: SIMD3<Float>, velocity: SIMD3<Float> = .zero, size: SIMD2<Float> = .init(0.01, 0.01), color: SIMD4<Float> = .init(1, 1, 1, 1), lifetime: Float = 1.0)
 ```
 
-#### Example
+## Example
 
 ```swift
 // Create a particle that starts at the origin, moves upward, is red, and lasts 3 seconds

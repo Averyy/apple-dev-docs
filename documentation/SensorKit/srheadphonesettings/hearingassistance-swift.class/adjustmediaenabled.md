@@ -19,7 +19,7 @@ var adjustMediaEnabled: SRHeadphoneSettings.SettingEnablement { get }
 @property (nonatomic, assign, readonly) SRHeadphoneSettingsSettingEnablement adjustMediaEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 Setting to enable audio adjustments to music and video playing on device.
 

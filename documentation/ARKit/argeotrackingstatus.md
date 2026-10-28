@@ -20,7 +20,7 @@ class ARGeoTrackingStatus
 @interface ARGeoTrackingStatus : NSObject
 ```
 
-#### Overview
+## Overview
 
 Geo tracking requires coordination with the user at various phases of the geo-tracking lifecycle. To elicit the right user actions, an app needs to provide clear instructions to the user based on the current frame’s [`geoTrackingStatus`](./arframe/geotrackingstatus.md):
 

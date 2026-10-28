@@ -12,7 +12,7 @@ UInt8 GetAutoSenseDataSize (
  SCSIParallelTaskIdentifierparallelTask );
 ```
 
-#### Return Value
+## Return Value
 
 returns Size of auto sense data buffer.
 

@@ -21,7 +21,7 @@ Fits a robust scaler to a sequence of elements.
 func fitted<S>(to input: S, eventHandler: EventHandler? = nil) throws -> RobustScaler<Element>.Transformer where Element == S.Element, S : Sequence
 ```
 
-#### Return Value
+## Return Value
 
 The fitted transformer.
 

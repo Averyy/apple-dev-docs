@@ -25,11 +25,11 @@ class func localizedScanner(with string: String) -> Any
 + (id) localizedScannerWithString:(NSString *) string;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSScanner` object that scans `aString` according to the user’s default locale.
 
-#### Discussion
+## Discussion
 
 Sets the string to scan by invoking [`init(string:)`](./init%28string%29.md) with `aString`. The locale is set with [`Scanner`](../scanner.md).
 

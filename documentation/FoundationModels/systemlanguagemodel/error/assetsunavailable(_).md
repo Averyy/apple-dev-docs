@@ -19,7 +19,7 @@ The assets required for the session are unavailable.
 case assetsUnavailable(SystemLanguageModel.Error.AssetsUnavailable)
 ```
 
-#### Discussion
+## Discussion
 
 This may happen if you forget to check model availability to begin with, or if the model assets are deleted. This can happen if the user disables Apple Intelligence while your app is running.
 

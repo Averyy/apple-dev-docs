@@ -24,7 +24,7 @@ var writeMask: MTLColorWriteMask { get set }
 @property (nonatomic) MTLColorWriteMask writeMask;
 ```
 
-#### Discussion
+## Discussion
 
 This property defaults to [`all`](../mtlcolorwritemask/all.md).
 

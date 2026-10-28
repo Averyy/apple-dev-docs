@@ -20,7 +20,7 @@ func vmnet_network_create_with_serialization(_ network: xpc_object_t, _ status: 
 vmnet_network_refvmnet_network_create_with_serialization(xpc_object_t network, vmnet_return_t *status);
 ```
 
-#### Return Value
+## Return Value
 
 Network object in [`vmnet_network_ref`](./vmnet_network_ref.md), `NULL` otherwise. The `status` contains the error code.
 

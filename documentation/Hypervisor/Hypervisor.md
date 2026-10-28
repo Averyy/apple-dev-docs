@@ -9,13 +9,13 @@ Build virtualization solutions on top of a lightweight hypervisor, without third
 **Availability**:
 - macOS 10.10+
 
-#### Overview
+## Overview
 
 Hypervisor provides C APIs so you can interact with virtualization technologies in user space, without writing kernel extensions (KEXTs). As a result, the apps you create using this framework are suitable for distribution on the [Mac App Store](https://www.appstore.com/).
 
 Use this framework to create and control hardware-facilitated virtual machines and virtual processors (VMs and vCPUs) from your entitled, sandboxed, user-space process. Hypervisor abstracts virtual machines as processes, and virtual processors as threads.
 
-##### Requirements
+### Requirements
 
 The Hypervisor framework has the following requirements:
 
@@ -25,7 +25,7 @@ At runtime, determine whether the Hypervisor APIs are available on a particular 
 
 - **Entitlements**: All process must have the [`com.apple.security.hypervisor`](../BundleResources/entitlements/com.apple.security.hypervisor.md) entitlement to use Hypervisor API.
 
-##### Virtual Resource Mapping
+### Virtual Resource Mapping
 
 A guest is an operating system that runs on top of the virtual hardware. The operating system and processes that run the virtualized hardware are together called the host. Virtual hardware in the guest maps to specific resources on the host.
 
@@ -35,7 +35,7 @@ Virtual CPUs (vCPUs) in a virtual machine map to POSIX threads. Create a new vCP
 
 Hypervisor maps the physical memory in the guest to virtual memory of the host process. Create a new memory mapping with [`hv_vm_map(_:_:_:_:)`](./hv_vm_map%28_,_,_,_%29.md). Access to memory outside the mapped range causes [`hv_vcpu_run(_:)`](./hv_vcpu_run%28_%29.md) to exit. Emulate memory-mapped hardware by emulating the memory access on exit and re-enter the guest with [`hv_vcpu_run(_:)`](./hv_vcpu_run%28_%29.md).
 
-##### Example VM Life Cycle
+### Example VM Life Cycle
 
 The following figure illustrates a simplified life cycle of creating and running a virtual machine with one or more virtual CPUs using the Hypervisor API.
 

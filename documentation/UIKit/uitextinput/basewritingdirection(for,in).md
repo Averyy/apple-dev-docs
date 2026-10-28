@@ -24,11 +24,11 @@ func baseWritingDirection(for position: UITextPosition, in direction: UITextStor
 - (NSWritingDirection) baseWritingDirectionForPosition:(UITextPosition *) position inDirection:(UITextStorageDirection) direction;
 ```
 
-#### Return Value
+## Return Value
 
 A constant that represents a writing direction (for example, left-to-right or right-to-left).
 
-#### Discussion
+## Discussion
 
 The base writing direction is set previously when the text input system sends a [`setBaseWritingDirection(_:for:)`](./setbasewritingdirection%28_,for%29.md) message to the conforming document object.
 

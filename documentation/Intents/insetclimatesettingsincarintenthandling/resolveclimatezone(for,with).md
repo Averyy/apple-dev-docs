@@ -28,7 +28,7 @@ optional func resolveClimateZone(for intent: INSetClimateSettingsInCarIntent) as
 - (void) resolveClimateZoneForSetClimateSettingsInCar:(INSetClimateSettingsInCarIntent *) intent withCompletion:(void (^)(INCarSeatResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve the climate zone. Use the intent object to identify the climate zone specified by the user. If the car has more than one climate zone, use the intent’s [`climateZone`](../insetclimatesettingsincarintent/climatezone.md) property to identify the correct zone.
 

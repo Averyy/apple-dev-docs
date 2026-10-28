@@ -4,11 +4,11 @@
 
 Specify a value for the `sendPriority` parameter of the `AESend` function.
 
-#### Overview
+## Overview
 
 For related information, see the `AESend(_:_:_:_:_:_:_:)` function and [`AESendMode`](../aesendmode.md). 
 
-##### Version-Notes
+### Version-Notes
 
 The `sendPriority` parameter of the `AESend` function is deprecated in macOS.
 

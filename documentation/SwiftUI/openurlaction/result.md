@@ -21,7 +21,7 @@ The result of a custom open URL action.
 struct Result
 ```
 
-#### Overview
+## Overview
 
 If you declare a custom [`OpenURLAction`](../openurlaction.md) in the [`Environment`](../environment.md), return one of the result values from its handler.
 

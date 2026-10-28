@@ -22,7 +22,7 @@ var videoMaxZoomFactor: CGFloat { get }
 @property (nonatomic, readonly) CGFloat videoMaxZoomFactor;
 ```
 
-#### Discussion
+## Discussion
 
 A maximum factor of `1.0` indicates that the format isn’t capable of zooming.
 

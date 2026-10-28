@@ -19,7 +19,7 @@ func requestAuthorization(handler: @escaping (CMAuthorizationStatus) -> Void)
 - (void) requestAuthorizationWithHandler:(void (^)(CMAuthorizationStatus status)) handler;
 ```
 
-#### Discussion
+## Discussion
 
 As soon as the user authorizes fall detection, the system calls the delegate’s [`fallDetectionManager(_:didDetect:completionHandler:)`](../cmfalldetectiondelegate/falldetectionmanager%28_,diddetect,completionhandler%29.md) method and passes the latest fall detection event.
 

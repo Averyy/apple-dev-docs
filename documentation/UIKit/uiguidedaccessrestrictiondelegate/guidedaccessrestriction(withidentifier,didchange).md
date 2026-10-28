@@ -24,7 +24,7 @@ func guidedAccessRestriction(withIdentifier restrictionIdentifier: String, didCh
 - (void) guidedAccessRestrictionWithIdentifier:(NSString *) restrictionIdentifier didChangeState:(UIGuidedAccessRestrictionState) newRestrictionState;
 ```
 
-#### Discussion
+## Discussion
 
 Your app should adjust its behavior to allow or deny the operation controlled by the specified restriction each time it receives this message.
 

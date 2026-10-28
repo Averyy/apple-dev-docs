@@ -24,7 +24,7 @@ func VTPixelRotationSessionInvalidate(_ session: VTPixelRotationSession)
 extern void VTPixelRotationSessionInvalidate(VTPixelRotationSessionRef session);
 ```
 
-#### Discussion
+## Discussion
 
 When a pixel rotation session’s retain count reaches zero, the system automatically invalidates it. However, because other processes may retain a session, it can be hard to predict when the invalidation occurs. Calling this function ensures a deterministic, orderly teardown.
 

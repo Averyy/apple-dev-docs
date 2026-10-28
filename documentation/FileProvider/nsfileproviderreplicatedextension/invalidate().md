@@ -24,7 +24,7 @@ func invalidate()
 - (void) invalidate;
 ```
 
-#### Discussion
+## Discussion
 
 Your implementation should perform any necessary cleanup so that the system can dismiss and deallocate the file provider.
 

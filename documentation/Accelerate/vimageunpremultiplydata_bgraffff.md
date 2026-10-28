@@ -21,11 +21,11 @@ Transforms a 32-bit-per-channel, 4-channel BGRA buffer from premultiplied alpha 
 #define vImageUnpremultiplyData_BGRAFFFF(_src, _dest, _flags)
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
-#### Discussion
+## Discussion
 
 This function divides color channels by the alpha channel using the following code:
 

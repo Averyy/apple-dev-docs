@@ -4,7 +4,7 @@
 
 Displays a spinner and description on the screen.
 
-#### Overview
+## Overview
 
 Use the `loadingTemplate` element to display a spinner and description of why the spinner is being displayed; for example, an interim page showing that the requested page is being loaded. A spinner is automatically presented when the page is displayed, and you can add text to tell your users what is happening. The following figure shows the basic layout for a `layoutTemplate` page. The theme for the loading template defaults to the system preference.
 
@@ -12,7 +12,7 @@ Use the `loadingTemplate` element to display a spinner and description of why th
 
 ![Layout diagram showing a title area and a spinner.](https://developer.apple.com/tutorials/images/com.apple.TVML/loadingtemplate-1@2x.png)
 
-##### Main Elements
+### Main Elements
 
 The following listing shows main elements of the `loadingTemplate` in TVML format.
 
@@ -26,12 +26,12 @@ The following listing shows main elements of the `loadingTemplate` in TVML forma
 </document>
 ```
 
-###### Element Descriptions
+#### Element Descriptions
 
 - **[activityIndicator](./activityindicator.md)**: Image of a spinning wheel icon.
 - **[title](./title.md)**: The text telling the user why there is a delay.
 
-##### Example
+### Example
 
 The following listing shows the TVML for a loadingTemplate example.
 

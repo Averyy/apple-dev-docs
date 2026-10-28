@@ -24,7 +24,7 @@ case driver
 INCarSeatDriver
 ```
 
-#### Discussion
+## Discussion
 
 The driver’s seat could be in the front left or front right of the car, depending on the car.
 

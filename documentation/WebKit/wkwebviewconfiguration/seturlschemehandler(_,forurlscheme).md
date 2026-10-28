@@ -23,7 +23,7 @@ func setURLSchemeHandler(_ urlSchemeHandler: (any WKURLSchemeHandler)?, forURLSc
 - (void) setURLSchemeHandler:(id<WKURLSchemeHandler>) urlSchemeHandler forURLScheme:(NSString *) urlScheme;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to register any custom resource types that your web content uses. For example, you might register a custom URL scheme for resources that you provide programmatically from your app.
 

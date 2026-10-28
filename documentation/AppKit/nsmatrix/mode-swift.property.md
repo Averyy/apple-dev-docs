@@ -19,7 +19,7 @@ var mode: NSMatrix.Mode { get set }
 @property NSMatrixMode mode;
 ```
 
-#### Discussion
+## Discussion
 
 See [`NSMatrix.Mode`](./mode-swift.enum.md) for possible values.
 

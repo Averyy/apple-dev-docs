@@ -26,7 +26,7 @@ var canPlayFastForward: Bool { get }
 @property (readonly) BOOL canPlayFastForward;
 ```
 
-#### Discussion
+## Discussion
 
 This property is `true` when an item can play at rates greater than `2.0`. Every item with a status of [`AVPlayerItem.Status.readyToPlay`](./status-swift.enum/readytoplay.md) plays at rates between `1.0` and `2.0`, inclusive, even when this property is `false`.
 

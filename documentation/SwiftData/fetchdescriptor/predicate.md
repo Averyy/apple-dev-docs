@@ -22,7 +22,7 @@ The logical condition that determines whether the fetch includes a specific mode
 var predicate: Predicate<T>?
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to replace or remove the fetch descriptor’s predicate. If the value is `nil`, any fetch using the descriptor will return all models of the associated type.
 

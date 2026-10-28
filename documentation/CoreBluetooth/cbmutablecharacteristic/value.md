@@ -25,7 +25,7 @@ var value: Data? { get set }
 @property (retain, readwrite, nullable) NSData * value;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the value of the characteristic. For example, a temperature measurement characteristic of a health thermometer service may have a value that indicates a temperature in Celsius.
 

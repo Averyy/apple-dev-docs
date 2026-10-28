@@ -17,7 +17,7 @@ A placement for items in the navigation bar’s large title subtitle area.
 static let largeSubtitle: ToolbarItemPlacement
 ```
 
-#### Discussion
+## Discussion
 
 The view appears when the navigation bar renders its title out-of-line, and takes precedence over the value provided to the `View.navigationSubtitle(_:)` modifier.
 

@@ -24,7 +24,7 @@ let CNInstantMessageServiceGaduGadu: String
 extern NSString * const CNInstantMessageServiceGaduGadu;
 ```
 
-#### Discussion
+## Discussion
 
 This key takes a string value.
 

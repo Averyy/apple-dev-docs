@@ -23,7 +23,7 @@ var splitBehavior: UISplitViewController.SplitBehavior { get }
 @property (nonatomic, readonly) UISplitViewControllerSplitBehavior splitBehavior;
 ```
 
-#### Discussion
+## Discussion
 
 This property controls how a split view controller’s secondary view controller appears in relation to the other child view controllers. To change the current split behavior, change the value of the [`preferredSplitBehavior`](./preferredsplitbehavior.md) property.
 

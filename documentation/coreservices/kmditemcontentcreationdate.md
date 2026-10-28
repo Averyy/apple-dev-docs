@@ -19,7 +19,7 @@ let kMDItemContentCreationDate: CFString!
 const CFStringRef kMDItemContentCreationDate;
 ```
 
-#### Discussion
+## Discussion
 
 This value is supplementary to [`kMDItemRecordingDate`](./kmditemrecordingdate.md), which indicates the original recording date of the song or composition. 
 

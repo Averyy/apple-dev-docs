@@ -20,7 +20,7 @@ Loads a ShaderGraphMaterial from MaterialX data.
 init(materialXLabel: String, data: Data) async throws
 ```
 
-#### Return Value
+## Return Value
 
 A ShaderGraphMaterial object from the data with the label specified.
 

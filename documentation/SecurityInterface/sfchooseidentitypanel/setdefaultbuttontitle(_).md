@@ -19,7 +19,7 @@ func setDefaultButtonTitle(_ title: String!)
 - (void) setDefaultButtonTitle:(NSString *) title;
 ```
 
-#### Discussion
+## Discussion
 
 The default button dismisses the sheet or panel and returns a value of [`NSOKButton`](../../AppKit/nsokbutton.md).
 

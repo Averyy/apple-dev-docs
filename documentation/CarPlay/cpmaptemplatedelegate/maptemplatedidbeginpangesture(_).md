@@ -21,7 +21,7 @@ optional func mapTemplateDidBeginPanGesture(_ mapTemplate: CPMapTemplate)
 - (void) mapTemplateDidBeginPanGesture:(CPMapTemplate *) mapTemplate;
 ```
 
-#### Discussion
+## Discussion
 
 CarPlay doesn’t call this method when connected to some CarPlay systems.
 

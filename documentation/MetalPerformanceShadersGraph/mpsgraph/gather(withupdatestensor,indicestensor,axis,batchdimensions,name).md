@@ -24,11 +24,11 @@ func gather(withUpdatesTensor updatesTensor: MPSGraphTensor, indicesTensor: MPSG
 - (MPSGraphTensor *) gatherWithUpdatesTensor:(MPSGraphTensor *) updatesTensor indicesTensor:(MPSGraphTensor *) indicesTensor axis:(NSUInteger) axis batchDimensions:(NSUInteger) batchDimensions name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor object
 
-#### Discussion
+## Discussion
 
 Gathers the values in updatesTensor to the result tensor along the indices in indicesTensor. The gather is defined as
 

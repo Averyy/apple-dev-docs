@@ -25,7 +25,7 @@ case signOut
 CKSyncEngineAccountChangeTypeSignOut
 ```
 
-#### Discussion
+## Discussion
 
 You should delete any locally-stored data for the previous account.
 

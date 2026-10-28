@@ -26,7 +26,7 @@ var xValue: AXDataPointValue { get set }
 @property (nonatomic, copy) AXDataPointValue * xValue;
 ```
 
-#### Discussion
+## Discussion
 
 Use a `double` value for a numeric x-axis, or an [`NSString`](../../Foundation/nsstring.md) value for a categorical x-axis.
 

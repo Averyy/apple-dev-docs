@@ -23,7 +23,7 @@ var devices: [AVExternalSyncDevice] { get }
 @property (readonly) NSArray<AVExternalSyncDevice *> * devices;
 ```
 
-#### Discussion
+## Discussion
 
 The list is updated when external sync devices are connected to the host and they remain in the list until they become unavailable. This property is key-value observable.
 

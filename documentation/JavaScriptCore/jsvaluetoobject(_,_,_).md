@@ -24,7 +24,7 @@ func JSValueToObject(_ ctx: JSContextRef!, _ value: JSValueRef!, _ exception: Un
 JSObjectRefJSValueToObject(JSContextRef ctx, JSValueRef value, JSValueRef*exception);
 ```
 
-#### Return Value
+## Return Value
 
 The [`JSObjectRef`](./jsobjectref.md) result of conversion, or `NULL` if the system throws an exception.
 

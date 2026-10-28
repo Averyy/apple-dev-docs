@@ -25,15 +25,15 @@ init(forFunction target: NSExpression, selectorName name: String, arguments para
 + (NSExpression *) expressionForFunction:(NSExpression *) target selectorName:(NSString *) name arguments:(NSArray *) parameters;
 ```
 
-#### Return Value
+## Return Value
 
 An expression which will return the result of invoking the selector named `name` on the result of evaluating the target expression with the parameters specified by evaluating the elements of `parameters`.
 
-#### Discussion
+## Discussion
 
 See the description of [`init(forFunction:arguments:)`](./init%28forfunction,arguments%29.md) for examples of how to construct the parameter array.
 
-##### Special Considerations
+### Special Considerations
 
 This method throws an exception immediately if the selector is unknown; it throws at runtime if the parameters are incorrect.
 

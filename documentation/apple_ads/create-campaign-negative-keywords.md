@@ -11,7 +11,7 @@ Creates negative keywords for a campaign.
 
 > **Deprecated**: Apple Ads Campaign Management API is deprecated. Instead, use the [Apple Ads Platform API](../apple-ads-platform-api/apple-ads-platform-api.md).
 
-#### Overview
+## Overview
 
 > **Note**:  If you create duplicate keywords, the payload response indicates an error, but the call returns with a 200 status code.
 
@@ -22,13 +22,13 @@ Creates negative keywords for a campaign.
 - 429: The API calls exceed rate-limit thresholds. See the Rate Limits subsection of [Calling the Apple Ads API](./calling-the-apple-search-ads-api.md).
 - 500: The Apple Ads server is temporarily down or unreachable. The request may be valid, but you need to retry it later.
 
-#### Discussion
+## Discussion
 
 Negative keywords prevent your ad from showing up in App Store searches. Negative keywords can belong to a campaign or an ad group.
 
 To create campaign negative keywords, use the associated `campaignId` in the URI.
 
-##### Payload example: Create campaign negative keywords
+### Payload example: Create campaign negative keywords
 
 **Request**:
 

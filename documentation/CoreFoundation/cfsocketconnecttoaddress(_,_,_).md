@@ -25,7 +25,7 @@ func CFSocketConnectToAddress(_ s: CFSocket!, _ address: CFData!, _ timeout: CFT
 extern CFSocketError CFSocketConnectToAddress(CFSocketRef s, CFDataRef address, CFTimeInterval timeout);
 ```
 
-#### Return Value
+## Return Value
 
 An error code indicating success or failure of the connection attempt.
 

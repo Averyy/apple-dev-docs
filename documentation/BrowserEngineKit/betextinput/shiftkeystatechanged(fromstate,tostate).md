@@ -27,7 +27,7 @@ func shiftKeyStateChanged(fromState oldState: BEKeyModifierFlags, toState newSta
 
 - [Integrating custom browser text views with UIKit](../integrating-custom-browser-text-views-with-uikit.md)
 
-#### Discussion
+## Discussion
 
 The system invokes this method when a person presses or releases the Shift key, or toggles the Caps Lock key.
 

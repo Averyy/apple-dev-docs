@@ -24,7 +24,7 @@ func queryStepCountStarting(from start: Date, to end: Date, to queue: OperationQ
 - (void) queryStepCountStartingFrom:(NSDate *) start to:(NSDate *) end toQueue:(NSOperationQueue *) queue withHandler:(CMStepQueryHandler) handler;
 ```
 
-#### Discussion
+## Discussion
 
 This method runs asynchronously, returning immediately and delivering the results to the specified `handler` block. The system stores only the last seven days worth of step data at most. If there are no samples for the specified range of time, a value of 0 is passed to the `handler` block.
 

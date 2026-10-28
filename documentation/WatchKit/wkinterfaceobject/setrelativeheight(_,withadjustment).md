@@ -19,7 +19,7 @@ func setRelativeHeight(_ height: CGFloat, withAdjustment adjustment: CGFloat)
 - (void) setRelativeHeight:(CGFloat) height withAdjustment:(CGFloat) adjustment;
 ```
 
-#### Discussion
+## Discussion
 
 You can’t use this method to alter the height of tables or separator items. Changes to the height of an object are animatable.
 

@@ -23,7 +23,7 @@ class LASecret
 @interface LASecret : NSObject
 ```
 
-#### Overview
+## Overview
 
 You create [`LASecret`](./lasecret.md) instances when you store an [`LAPersistedRight`](./lapersistedright.md); you can’t create them directly.
 

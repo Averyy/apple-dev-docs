@@ -21,7 +21,7 @@ Encodes each element of the column.
 mutating func encode<T, Encoder>(_ type: T.Type, using encoder: Encoder) throws where T : Encodable, Encoder : TopLevelEncoder
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: `ColumnEncodingError` if an element fails to encode.
 

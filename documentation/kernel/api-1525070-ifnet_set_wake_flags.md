@@ -13,11 +13,11 @@
 errno_t ifnet_set_wake_flags(ifnet_t interface, u_int32_t properties, u_int32_t mask);
 ```
 
-#### Return Value
+## Return Value
 
 0 on success otherwise the errno error.
 
-#### Discussion
+## Discussion
 
 Sets the wake properties of the underlying hardware. These are typically set by the driver.
 

@@ -24,7 +24,7 @@ var strokeEnd: CGFloat { get set }
 @property (nonatomic, assign) CGFloat strokeEnd;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property and [`strokeStart`](./strokestart.md) to render a portion of the line. Use [`location(atPointIndex:)`](../mkmultipoint/location%28atpointindex%29.md) to get unit distance locations for point indices along the line.
 

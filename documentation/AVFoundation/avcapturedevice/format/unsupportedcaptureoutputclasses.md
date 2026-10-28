@@ -22,7 +22,7 @@ var unsupportedCaptureOutputClasses: [AnyClass] { get }
 @property (nonatomic, readonly) NSArray<Class> * unsupportedCaptureOutputClasses;
 ```
 
-#### Discussion
+## Discussion
 
 As a rule, capture formats with a given [`mediaType`](./mediatype.md) are available for use with all [`AVCaptureOutput`](../../avcaptureoutput.md) subclasses that accept that media type. However, this isn’t always the case. For example, formats for high-resolution photo capture may not support the [`AVCaptureMovieFileOutput`](../../avcapturemoviefileoutput.md) class due to bandwidth limitations.
 

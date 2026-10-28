@@ -19,7 +19,7 @@ var wantsLayer: Bool { get set }
 @property BOOL wantsLayer;
 ```
 
-#### Discussion
+## Discussion
 
 Setting the value of this property to [`true`](../../Swift/true.md) turns the view into a layer-backed view—that is, the view uses a [`CALayer`](../../QuartzCore/calayer.md) object to manage its rendered content. Creating a layer-backed view implicitly causes the entire view hierarchy under that view to become layer-backed. Thus, the view and all of its subviews (including subviews of subviews) become layer-backed. The default value of this property is [`false`](../../Swift/false.md).
 

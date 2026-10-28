@@ -21,7 +21,7 @@ The maximum distance, in meters, at which terrain is visible for the day.
 var maximumVisibility: Double
 ```
 
-#### Discussion
+## Discussion
 
 The amount of light, and weather conditions like fog, mist, and smog affect visibility.
 

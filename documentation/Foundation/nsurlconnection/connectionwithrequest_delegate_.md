@@ -20,11 +20,11 @@ Creates and returns an initialized URL connection and begins to load the data fo
 + (NSURLConnection *) connectionWithRequest:(NSURLRequest *) request delegate:(id) delegate;
 ```
 
-#### Return Value
+## Return Value
 
 The URL connection for the URL request. Returns `nil` if a connection can’t be created.
 
-#### Discussion
+## Discussion
 
 During the download the connection maintains a strong reference to the `delegate`. It releases that strong reference when the connection finishes loading, fails, or is canceled.
 

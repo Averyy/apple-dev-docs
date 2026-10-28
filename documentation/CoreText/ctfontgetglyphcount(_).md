@@ -25,7 +25,7 @@ func CTFontGetGlyphCount(_ font: CTFont) -> CFIndex
 extern CFIndex CTFontGetGlyphCount(CTFontRef font);
 ```
 
-#### Return Value
+## Return Value
 
 The number of glyphs in the font.
 

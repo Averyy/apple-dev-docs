@@ -24,7 +24,7 @@ static let medication: HKHealthConceptDomain
 extern HKHealthConceptDomain const HKHealthConceptDomainMedication;
 ```
 
-#### Discussion
+## Discussion
 
 Use with identifiers for medications, such as ibuprofen or insulin.
 

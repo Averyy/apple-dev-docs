@@ -32,7 +32,7 @@ var url: URL { get }
 @property (atomic, copy, readonly) NSURL * URL;
 ```
 
-#### Discussion
+## Discussion
 
 The file at the specified URL is security scoped to your app. Before you access it, call the [`startAccessingSecurityScopedResource()`](../../Foundation/url/startaccessingsecurityscopedresource%28%29.md) method of [`NSURL`](../../Foundation/nsurl.md).
 

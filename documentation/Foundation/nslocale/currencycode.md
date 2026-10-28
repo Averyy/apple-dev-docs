@@ -25,7 +25,7 @@ var currencyCode: String? { get }
 @property (copy, readonly, nullable) NSString * currencyCode;
 ```
 
-#### Discussion
+## Discussion
 
 Example currency codes include `"USD"`, `"EUR"`, and `"JPY"`.
 

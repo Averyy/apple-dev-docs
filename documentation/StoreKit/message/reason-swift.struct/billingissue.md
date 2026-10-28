@@ -22,7 +22,7 @@ static let billingIssue: Message.Reason
 
 - [Testing failing subscription renewals and Apple In-App Purchases](../../testing-failing-subscription-renewals-and-in-app-purchases.md)
 
-#### Discussion
+## Discussion
 
 If an auto-renewable subscription fails to renew due to a billing issue, the subscription enters a billing retry state, and the App Store sends a message with the [`billingIssue`](./billingissue.md) reason.
 
@@ -45,7 +45,7 @@ The App Store stops sending further messages when the user resolves the billing 
 
 For more information about the billing retry state, see [`isInBillingRetry`](../../product/subscriptioninfo/renewalinfo/isinbillingretry.md) in  [`Product.SubscriptionInfo.RenewalInfo`](../../product/subscriptioninfo/renewalinfo.md).
 
-##### Test the message in the sandbox environment
+### Test the message in the sandbox environment
 
 You can simulate billing issues in the sandbox environment to test how the system presents the [`billingIssue`](./billingissue.md) message in your app, and how your app handles it if you choose to delay or suppress its presentation. For more information, including step-by-step test cases, see [Testing failing subscription renewals and Apple In-App Purchases](../../testing-failing-subscription-renewals-and-in-app-purchases.md).
 

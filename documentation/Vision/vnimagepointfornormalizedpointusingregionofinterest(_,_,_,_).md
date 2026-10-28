@@ -24,7 +24,7 @@ func VNImagePointForNormalizedPointUsingRegionOfInterest(_ normalizedPoint: CGPo
 extern CGPoint VNImagePointForNormalizedPointUsingRegionOfInterest(CGPoint normalizedPoint, size_t imageWidth, size_t imageHeight, CGRect roi);
 ```
 
-#### Return Value
+## Return Value
 
 A point in the image-coordinate space.
 

@@ -24,11 +24,11 @@ func VTDecompressionSessionDecodeFrame(_ session: VTDecompressionSession, sample
 extern OSStatus VTDecompressionSessionDecodeFrameWithOutputHandler(VTDecompressionSessionRef session, CMSampleBufferRef sampleBuffer, VTDecodeFrameFlags decodeFlags, VTDecodeInfoFlags *infoFlagsOut, VTDecompressionOutputHandler outputHandler);
 ```
 
-#### Return Value
+## Return Value
 
 An `OSStatus` value that indicates the result of the operation.
 
-#### Discussion
+## Discussion
 
 This function cannot be called with a session created with a [`VTDecompressionOutputCallbackRecord`](./vtdecompressionoutputcallbackrecord.md).
 

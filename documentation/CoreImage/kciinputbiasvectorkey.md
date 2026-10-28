@@ -24,7 +24,7 @@ let kCIInputBiasVectorKey: String
 extern NSString * const kCIInputBiasVectorKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key needs to be a [`CIVector`](./civector.md) instance.
 

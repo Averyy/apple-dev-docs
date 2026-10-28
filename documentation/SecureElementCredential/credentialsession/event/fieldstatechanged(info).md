@@ -16,7 +16,7 @@ The state of the NFC RF field changed during card emulation.
 case fieldStateChanged(info: CredentialSession.NFCFieldInformation)
 ```
 
-#### Discussion
+## Discussion
 
 The credential session sends an initial event with the current field state when entering the card emulation state. The session then sends further events if the field state changes. The session only publishes this event when it’s in the card emulation state.
 

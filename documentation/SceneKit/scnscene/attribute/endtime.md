@@ -23,7 +23,7 @@ static let endTime: SCNScene.Attribute
 extern SCNSceneAttribute const SCNSceneEndTimeAttributeKey;
 ```
 
-#### Discussion
+## Discussion
 
 A floating-point value (in an [`NSNumber`](../../../Foundation/nsnumber.md) object) for the end time of the scene.
 

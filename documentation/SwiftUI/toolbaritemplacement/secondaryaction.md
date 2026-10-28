@@ -19,7 +19,7 @@ A placement for secondary actions.
 static let secondaryAction: ToolbarItemPlacement
 ```
 
-#### Discussion
+## Discussion
 
 A secondary action is a frequently used action for the current context but is not a requirement for the current context to function.
 

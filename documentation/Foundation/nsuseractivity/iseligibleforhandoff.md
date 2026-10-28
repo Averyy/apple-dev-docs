@@ -29,7 +29,7 @@ var isEligibleForHandoff: Bool { get set }
 
 - [Creating a user activity object](../creating-a-user-activity-object.md)
 
-#### Discussion
+## Discussion
 
 Set the value of this property to `true` for activities you can continue on a person’s other devices; otherwise, set it to `false`. The default value of this property is `true`.
 

@@ -5,13 +5,13 @@
 
 Create tasks that download files while your app is inactive.
 
-#### Overview
+## Overview
 
 For long-running and nonurgent transfers, you can create tasks that run in the background. These tasks continue to run even when your app is suspended, allowing your app to access the downloaded file when the app is resumed.
 
 > **Note**:  You don’t have to do all background network activity with background sessions as described in this article. Apps that declare appropriate background modes can use default URL sessions and data tasks, just as if they were in the foreground.
 
-##### Configure the background session
+### Configure the background session
 
 To perform a background download, configure a [`URLSession`](./urlsession.md) for background operation. The following example demonstrates this process.
 
@@ -33,7 +33,7 @@ private lazy var urlSession: URLSession = {
 
 > **Note**:  For more visibility into how the system is scheduling and performing your background tasks, download and install the Background Networking Profile onto your iOS device from the Bug Reporting [Profiles and Logs](https://developer.apple.com/bug-reporting/profiles-and-logs/) page.
 
-##### Create and schedule the download task
+### Create and schedule the download task
 
 You create download tasks from the session with either the [`downloadTask(with:)`](./urlsession/downloadtask%28with%29-1onj.md) method that takes a URL, or the [`downloadTask(with:)`](./urlsession/downloadtask%28with%29-3fb7s.md) method that takes a [`URLRequest`](./urlrequest.md) instance.  You set properties on this method to help the system optimize its behavior.
 
@@ -54,7 +54,7 @@ backgroundTask.countOfBytesClientExpectsToReceive = 500 * 1024
 backgroundTask.resume()
 ```
 
-##### Handle app suspension
+### Handle app suspension
 
 Different app states affect how your app interacts with the background download. In iOS, your app could be in the foreground, suspended, or even terminated by the system. See [Managing your app’s life cycle](../UIKit/managing-your-app-s-life-cycle.md) for more information about these states.
 
@@ -91,17 +91,17 @@ func urlSessionDidFinishEvents(forBackgroundURLSession session: URLSession) {
 }
 ```
 
-##### Access the file, or move it to a permanent location
+### Access the file, or move it to a permanent location
 
 Once your resumed app calls the completion handler, the download task finishes its work and calls the delegate’s [`urlSession(_:downloadTask:didFinishDownloadingTo:)`](./urlsessiondownloaddelegate/urlsession%28_,downloadtask,didfinishdownloadingto%29.md) method. At this point, the file is fully downloaded, and will be available until your delegate method returns. If you only need to read it once, you can access the file immediately in its temporary location. If you want to preserve the file, move it to a permanent location like the `Documents` directory, as described in [Downloading files from websites](./downloading-files-from-websites.md).
 
-##### Recreate the session if the app was terminated
+### Recreate the session if the app was terminated
 
 If the system terminated the app while it was suspended, the system relaunches the app in the background. As part of your launch time setup, recreate the background session (see `Creating a background URL session`), using the same session identifier as before, to allow the system to reassociate the background download task with your session. You do this so your background session is ready to go whether the app was launched by the user or by the system. Once the app relaunches, the series of events is the same as if the app had been suspended and resumed, as discussed earlier in [Handle app suspension](./downloading-files-in-the-background.md#Handle-app-suspension).
 
 > **Note**:  In cases where the transfer is initiated while the app is in the background, the session configuration’s [`isDiscretionary`](./urlsessionconfiguration/isdiscretionary.md) property is treated as being [`true`](../Swift/true.md).
 
-##### Comply with background transfer limitations
+### Comply with background transfer limitations
 
 With background sessions, the actual transfer is performed by a process that is separate from your app’s process. Because restarting your app’s process is fairly expensive, a few features are unavailable, resulting in the following limitations:
 
@@ -110,7 +110,7 @@ With background sessions, the actual transfer is performed by a process that is 
 - Redirects are always followed. As a result, even if you have implemented [`urlSession(_:task:willPerformHTTPRedirection:newRequest:completionHandler:)`](./urlsessiontaskdelegate/urlsession%28_,task,willperformhttpredirection,newrequest,completionhandler%29.md), it is *not* called.
 - Only upload tasks from a file are supported (uploads from data instances or a stream fail after the app exits).
 
-##### Use background sessions efficiently
+### Use background sessions efficiently
 
 When the system resumes or relaunches your app, it uses a rate limiter to prevent abuse of background downloads. When your app starts a new download task while in the background, the task doesn’t begin until the delay expires. The delay increases each time the system resumes or relaunches your app.
 

@@ -19,7 +19,7 @@ var maximumReferenceExtendedDynamicRangeColorComponentValue: CGFloat { get }
 @property (readonly) CGFloat maximumReferenceExtendedDynamicRangeColorComponentValue;
 ```
 
-#### Discussion
+## Discussion
 
 Reference displays are calibrated to provide accurate color and lighting information that helps to optimize video content. Not all displays support reference rendering. If the display hardware doesn’t support reference rendering, the value of this property is `0`.
 

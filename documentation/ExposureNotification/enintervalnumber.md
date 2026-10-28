@@ -23,7 +23,7 @@ typealias ENIntervalNumber = UInt32
 typedef uint32_t ENIntervalNumber;
 ```
 
-#### Discussion
+## Discussion
 
 These shared intervals of time derive from timestamps in UNIX Epoch Time.
 

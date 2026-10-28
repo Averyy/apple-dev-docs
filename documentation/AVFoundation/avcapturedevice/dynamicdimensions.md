@@ -21,7 +21,7 @@ var dynamicDimensions: CMVideoDimensions { get }
 @property (readonly) CMVideoDimensions dynamicDimensions;
 ```
 
-#### Discussion
+## Discussion
 
 If the device’s activeFormat’s [`supportedDynamicAspectRatios`](./format/supporteddynamicaspectratios.md) is an empty array, this property returns {0,0}.
 

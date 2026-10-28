@@ -19,7 +19,7 @@ optional func webView(_ webView: WebView!, shouldApplyStyle style: DOMCSSStyleDe
 - (BOOL) webView:(WebView *) webView shouldApplyStyle:(DOMCSSStyleDeclaration *) style toElementsInDOMRange:(DOMRange *) range;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the user should be allowed to apply the style to the content range; otherwise, [`false`](../../Swift/false.md).
 

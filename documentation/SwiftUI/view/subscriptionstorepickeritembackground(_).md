@@ -21,7 +21,7 @@ nonisolated
 func subscriptionStorePickerItemBackground(_ backgroundStyle: some ShapeStyle) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 You can also control the shape of the picker item background using [`subscriptionStorePickerItemBackground(_:in:)`](./subscriptionstorepickeritembackground%28_,in%29.md).
 

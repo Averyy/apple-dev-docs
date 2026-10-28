@@ -20,7 +20,7 @@ A custom attribute that constructs a control widget template’s body.
 struct ControlWidgetTemplateBuilder
 ```
 
-#### Overview
+## Overview
 
 The `@ControlWidgetTemplateBuilder` attribute allows your control template’s body closure to produce a control template after zero or more other statements:
 

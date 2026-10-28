@@ -19,7 +19,7 @@ var indexOfSelectedItem: Int { get }
 @property (readonly) NSInteger indexOfSelectedItem;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is the index of the selected item, or `-1` if no item is selected.
 

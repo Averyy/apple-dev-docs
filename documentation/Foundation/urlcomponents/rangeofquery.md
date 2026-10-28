@@ -21,7 +21,7 @@ Returns the character range of the query in the string returned by the string pr
 var rangeOfQuery: Range<String.Index>? { get }
 ```
 
-#### Discussion
+## Discussion
 
 If the component does not exist, nil is returned.
 

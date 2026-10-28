@@ -25,7 +25,7 @@ var geometryIndex: Int { get }
 @property (nonatomic, readonly) NSInteger geometryIndex;
 ```
 
-#### Discussion
+## Discussion
 
 Every [`SCNGeometry`](../scngeometry.md) object contains one or more [`SCNGeometryElement`](../scngeometryelement.md) objects that define how its vertices connect to form a surface. This property provides the index of the geometry element intersecting the search ray. For more information about that geometry element, use the geometry’s [`element(at:)`](../scngeometry/element%28at%29.md) method.
 

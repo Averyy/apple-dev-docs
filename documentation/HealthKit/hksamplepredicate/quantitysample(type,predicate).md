@@ -20,7 +20,7 @@ Returns a sample predicate that matches quantity samples.
 static func quantitySample(type quantityType: HKQuantityType, predicate: NSPredicate? = nil) -> HKSamplePredicate<HKQuantitySample>
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to create an [`HKSamplePredicate`](../hksamplepredicate.md) instance that you can use to query for [`HKQuantitySample`](../hkquantitysample.md) objects.
 

@@ -15,7 +15,7 @@ Create and manipulate 3D mathematical primitives.
 - visionOS 1.0+
 - watchOS 9.0+
 
-#### Overview
+## Overview
 
 The Spatial module is a lightweight 3D mathematical library that provides a simple API for working with 3D primitives. Much of its functionality is similar to the 2D geometry support in Core Graphics, but in three dimensions.
 

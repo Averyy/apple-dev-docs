@@ -23,7 +23,7 @@ func requestMetadata()
 - (void) requestMetadata;
 ```
 
-#### Discussion
+## Discussion
 
 If metadata for the item is not readily available, accessing this property requests metadata from the camera, then notifies the delegate by calling [`cameraDevice(_:didReceiveMetadata:for:error:)`](../iccameradevicedelegate/cameradevice%28_,didreceivemetadata,for,error%29.md).
 

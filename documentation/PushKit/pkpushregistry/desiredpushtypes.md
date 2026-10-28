@@ -28,7 +28,7 @@ var desiredPushTypes: Set<PKPushType>? { get set }
 
 - [Supporting PushKit Notifications in Your App](../supporting-pushkit-notifications-in-your-app.md)
 
-#### Discussion
+## Discussion
 
 When you assign a value to this property, the push registry object makes a registration request with the PushKit server. This request is asynchronous, and the success or failure of the request is reported to your registry’s delegate object. For a successful registration, PushKit delivers a push token to the delegate. Use that token to generate push requests from your server.
 

@@ -11,7 +11,7 @@ Returns the address of a function that is designated to handle incoming packets 
 virtual IOOutputAction getOutputHandler() const;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the address of the enqueue() method.
 

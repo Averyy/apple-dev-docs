@@ -23,7 +23,7 @@ case upperAlphanumeric
 TKSmartCardPINCharsetUpperAlphanumeric
 ```
 
-#### Discussion
+## Discussion
 
 PIN can be composed of digits and uppercase letters.
 

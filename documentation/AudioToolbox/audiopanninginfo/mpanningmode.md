@@ -24,7 +24,7 @@ var mPanningMode: AudioPanningMode
 AudioPanningMode mPanningMode;
 ```
 
-#### Discussion
+## Discussion
 
 See [`AudioPanningMode`](../audiopanningmode.md).
 

@@ -30,11 +30,11 @@ func outputShapes(forInputShapes inputShapes: [[NSNumber]]) throws -> [[NSNumber
 
 - [Creating and Integrating a Model with Custom Layers](../creating-and-integrating-a-model-with-custom-layers.md)
 
-#### Return Value
+## Return Value
 
 The shapes of the output for the given input shapes.
 
-#### Discussion
+## Discussion
 
 Implement this method to define the layer’s interface with the rest of the network. It will be called at least once at load time and any time the size of the inputs changes in a call to [`prediction(from:)`](../mlmodel/prediction%28from%29-9y2aa.md).
 

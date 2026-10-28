@@ -23,7 +23,7 @@ let CXErrorDomainRequestTransaction: String
 extern NSErrorDomain const CXErrorDomainRequestTransaction;
 ```
 
-#### Discussion
+## Discussion
 
 See [CallKit Constants](./callkit-constants.md) for possible error codes.
 

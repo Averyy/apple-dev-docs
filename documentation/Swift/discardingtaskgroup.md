@@ -22,7 +22,7 @@ A discarding group that contains dynamically created child tasks.
 struct DiscardingTaskGroup
 ```
 
-#### Overview
+## Overview
 
 To create a discarding task group, call the [`withDiscardingTaskGroup(returning:isolation:body:)`](./withdiscardingtaskgroup%28returning,isolation,body%29.md) method.
 
@@ -30,11 +30,11 @@ Don’t use a task group from outside the task where you created it. In most cas
 
 Refer to [`TaskGroup`](./taskgroup.md) documentation for detailed discussion of semantics shared between all task groups.
 
-##### Discarding behavior
+### Discarding behavior
 
 A discarding task group eagerly discards and releases its child tasks as soon as they complete. This allows for the efficient releasing of memory used by those tasks, which are not retained for future `next()` calls, as would be the case with a [`TaskGroup`](./taskgroup.md).
 
-##### Cancellation behavior
+### Cancellation behavior
 
 A discarding task group becomes canceled in one of the following ways:
 

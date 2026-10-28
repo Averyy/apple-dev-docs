@@ -21,7 +21,7 @@ optional func legibleMenuController(_ menuController: AVLegibleMediaOptionsMenuC
 - (void) legibleMenuController:(AVLegibleMediaOptionsMenuController *) menuController didChangeMenuState:(AVLegibleMediaOptionsMenuState) state;
 ```
 
-#### Discussion
+## Discussion
 
 Tells the delegate, when legible media options menu state changes.
 

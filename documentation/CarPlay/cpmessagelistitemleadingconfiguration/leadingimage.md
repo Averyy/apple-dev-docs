@@ -21,7 +21,7 @@ var leadingImage: UIImage? { get }
 @property (nonatomic, readonly, nullable) UIImage * leadingImage;
 ```
 
-#### Discussion
+## Discussion
 
 Configurations are immutable. To change or remove the image that the message list item’s leading region shows, create a new configuration and update the list item’s [`leadingConfiguration`](../cpmessagelistitem/leadingconfiguration.md) property.
 

@@ -16,7 +16,7 @@ get getsUserLocation(): boolean;
 set getsUserLocation(value: boolean);
 ```
 
-#### Discussion
+## Discussion
 
 When set to `true`, the request returns results that are near the user’s current location. The default value is `false`.
 

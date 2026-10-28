@@ -24,11 +24,11 @@ func MTAudioProcessingTapGetSourceAudio(_ tap: MTAudioProcessingTap, _ numberFra
 extern OSStatus MTAudioProcessingTapGetSourceAudio(MTAudioProcessingTapRef tap, CMItemCount numberFrames, AudioBufferList *bufferListInOut, MTAudioProcessingTapFlags *flagsOut, CMTimeRange *timeRangeOut, CMItemCount *numberFramesOut);
 ```
 
-#### Return Value
+## Return Value
 
 An `OSStatus` result code.
 
-#### Overview
+## Overview
 
 This function may only be called from the processing tap’s callback.
 

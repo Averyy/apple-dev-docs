@@ -17,15 +17,15 @@ One dimensional discrete Fourier Transform on a real input.
 func rfft(_ array: MLXArray, n: Int? = nil, axis: Int = -1, norm: FFTNorm = .backward, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Return Value
+## Return Value
 
 DFT of the input along the given axis.  The output data type will be complex.
 
-#### Discussion
+## Discussion
 
 The output has the same shape as the input except along `axis` in which case it has size `n / 2 + 1`.
 
-##### See Also
+### See Also
 
 - [`MLXFFT`](./mlxfft.md)
 

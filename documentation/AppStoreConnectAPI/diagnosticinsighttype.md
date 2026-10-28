@@ -19,7 +19,7 @@ string DiagnosticInsightType
 
 - `TREND`
 
-#### Discussion
+## Discussion
 
 -TREND: Represents an insight type that indicates how the impact of signatures has changed between the current version and previous versions.
 

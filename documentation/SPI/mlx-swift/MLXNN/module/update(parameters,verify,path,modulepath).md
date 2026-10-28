@@ -22,7 +22,7 @@ func update(parameters: ModuleParameters, verify: Module.VerifyUpdate, path: [St
 
 - [Creating Modules](../custom-layers.md)
 
-#### Discussion
+## Discussion
 
 This will replace the parameters in the `Module` recursively with the given [`ModuleParameters`](../moduleparameters.md) structure.  For example:
 
@@ -42,7 +42,7 @@ The [`apply(filter:map:)`](./apply%28filter,map%29.md) can be used for similar p
 
 If a parameter is missing from the update and validation indicates `.allModelKeysSet` this will call [`updateMissing(parameter:verify:path:modulePath:)`](./updatemissing%28parameter,verify,path,modulepath%29.md) which will throw an error.  Subclasses can override this if needed.
 
-##### See Also
+### See Also
 
 - [Creating Modules](../custom-layers.md)
 - [`update(parameters:)`](./update%28parameters%29.md)

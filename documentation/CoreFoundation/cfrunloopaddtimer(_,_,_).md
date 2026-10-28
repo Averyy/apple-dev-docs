@@ -25,7 +25,7 @@ func CFRunLoopAddTimer(_ rl: CFRunLoop!, _ timer: CFRunLoopTimer!, _ mode: CFRun
 extern void CFRunLoopAddTimer(CFRunLoopRef rl, CFRunLoopTimerRef timer, CFRunLoopMode mode);
 ```
 
-#### Discussion
+## Discussion
 
 A run loop timer can be registered in only one run loop at a time, although it can be added to multiple run loop modes within that run loop.
 

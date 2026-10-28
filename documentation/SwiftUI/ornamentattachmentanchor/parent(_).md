@@ -15,7 +15,7 @@ The anchor point for the ornament expressed as a 3D unit point relative to its p
 static func parent(_ anchor: UnitPoint3D) -> OrnamentAttachmentAnchor
 ```
 
-#### Discussion
+## Discussion
 
 The parent depends on where the ornament modifier is placed. When used inside another ornament context, that ornament is the parent. Otherwise, it’s the Scene itself.
 

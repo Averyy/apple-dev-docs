@@ -20,7 +20,7 @@ The asset has no subtype.
 PHAssetMediaSubtypeNone
 ```
 
-#### Discussion
+## Discussion
 
 This is the default subtype for most photo and video assets.
 

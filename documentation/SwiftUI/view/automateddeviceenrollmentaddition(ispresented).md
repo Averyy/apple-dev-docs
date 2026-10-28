@@ -17,11 +17,11 @@ Presents a modal view that enables users to add devices to their organization.
 @preconcurrency func automatedDeviceEnrollmentAddition(isPresented: Binding<Bool>) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 The modal view that the system presents to the user.
 
-#### Discussion
+## Discussion
 
 Use this view modifier to present UI in your app for device administrators to add devices purchased outside of the official channel to their organization — Apple School Manager or Apple Business. The system requires sign in with a Managed Apple Account that includes device enrollment privileges.
 

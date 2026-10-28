@@ -19,7 +19,7 @@ A floating-point value that represents the intensity of the effect.
 var strength: Float
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to 1.0.
 

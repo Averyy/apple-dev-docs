@@ -31,7 +31,7 @@ struct List<SelectionValue, Content> where SelectionValue : Hashable, Content : 
 - [Migrating to new navigation types](./migrating-to-new-navigation-types.md)
 - [Performing a search operation](./performing-a-search-operation.md)
 
-#### Overview
+## Overview
 
 In its simplest form, a `List` creates its contents statically, as shown in the following example:
 
@@ -72,7 +72,7 @@ var body: some View {
 
 ![A vertical list with five text views, each with the name of an](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/List-2-iOS@2x.png)
 
-##### Supporting selection in lists
+### Supporting selection in lists
 
 To make members of a list selectable, provide a binding to a selection variable. Binding to a single instance of the list data’s `Identifiable.ID` type creates a single-selection list. Binding to a [`Set`](../Swift/set.md) with a type that matches the list data’s `Identifiable.ID` type creates a list that supports multiple selections. The following example shows how to add multiselect to the previous example:
 
@@ -110,7 +110,7 @@ When people make a single selection by tapping or clicking, the selected cell ch
 
 People can make multiple selections without needing to enter edit mode on devices that have a keyboard and mouse or trackpad, like Mac and iPad.
 
-##### Refreshing the list content
+### Refreshing the list content
 
 To make the content of the list refreshable using the standard refresh control, use the [`refreshable(action:)`](./view/refreshable%28action%29.md) modifier.
 
@@ -153,7 +153,7 @@ struct Ocean: Identifiable, Hashable {
  }
 ```
 
-##### Supporting multidimensional lists
+### Supporting multidimensional lists
 
 To create two-dimensional lists, group items inside [`Section`](./section.md) instances. The following example creates sections named after the world’s oceans, each of which has [`Text`](./text.md) views named for major seas attached to those oceans. The example also allows for selection of a single list item, identified by the `id` of the example’s `Sea` type.
 
@@ -213,7 +213,7 @@ Because this example uses single selection, people can make selections outside o
 
 > **Note**: In iOS 15, iPadOS 15, and tvOS 15 and earlier, lists support selection only in edit mode, even for single selections.
 
-##### Creating hierarchical lists
+### Creating hierarchical lists
 
 You can also create a hierarchical list of arbitrary depth by providing tree-structured data and a `children` parameter that provides a key path to get the child nodes at any level. The following example uses a deeply-nested collection of a custom `FileItem` type to simulate the contents of a file system. The list created from this data uses collapsing cells to allow the user to navigate the tree structure.
 
@@ -258,7 +258,7 @@ struct ContentView: View {
 
 ![A list providing an expanded view of a tree structure. Some rows have a](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/List-5-iOS@2x.png)
 
-##### Styling lists
+### Styling lists
 
 SwiftUI chooses a display style for a list based on the platform and the view type in which it appears. Use the [`listStyle(_:)`](./view/liststyle%28_%29.md) modifier to apply a different [`ListStyle`](./liststyle.md) to all lists within a view. For example, adding `.listStyle(.plain)` to the example shown in the “Creating Multidimensional Lists” topic applies the [`plain`](./liststyle/plain.md) style, the following screenshot shows:
 

@@ -22,7 +22,7 @@ var latchingAxes: UIAxis { get set }
 @property (nonatomic) UIAxis latchingAxes;
 ```
 
-#### Discussion
+## Discussion
 
 If you set this property, the [`UIPointerStyle`](../uipointerstyle.md) associated with this region locks in and only allows freeform movement along the axes you specify.
 

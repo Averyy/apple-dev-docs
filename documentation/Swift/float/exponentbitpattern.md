@@ -21,7 +21,7 @@ The raw encoding of the value’s exponent field.
 var exponentBitPattern: UInt { get }
 ```
 
-#### Discussion
+## Discussion
 
 This value is unadjusted by the type’s exponent bias.
 

@@ -19,11 +19,11 @@ Provides the visible Thread networks to the device.
 func selectThreadNetwork(from threadScanResults: [MatterAddDeviceExtensionRequestHandler.ThreadScanResult]) async throws -> MatterAddDeviceExtensionRequestHandler.ThreadNetworkAssociation
 ```
 
-#### Return Value
+## Return Value
 
 The Thread network to join, or [`defaultSystemNetwork`](./threadnetworkassociation/defaultsystemnetwork.md).
 
-#### Discussion
+## Discussion
 
 The Matter device provides information about the visible Thread networks that it sees. This allows the ecosystem to choose the correct network for the device to use.
 

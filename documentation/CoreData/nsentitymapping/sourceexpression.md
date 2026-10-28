@@ -25,7 +25,7 @@ var sourceExpression: NSExpression? { get set }
 @property (strong, nullable) NSExpression * sourceExpression;
 ```
 
-#### Discussion
+## Discussion
 
 The source expression is used to obtain the collection of managed objects to process through the mapping. The expression can be a fetch request expression, or any other expression that evaluates to a collection.
 

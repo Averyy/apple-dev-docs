@@ -22,11 +22,11 @@ optional func tableView(_ tableView: UITableView, dropPreviewParametersForRowAt 
 - (UIDragPreviewParameters *) tableView:(UITableView *) tableView dropPreviewParametersForRowAtIndexPath:(NSIndexPath *) indexPath;
 ```
 
-#### Return Value
+## Return Value
 
 A [`UIDragPreviewParameters`](../uidragpreviewparameters.md) object containing information about how to customize the row’s appearance. Return `nil` to use the default appearance.
 
-#### Discussion
+## Discussion
 
 Use this method to customize the appearance of the row before a drop occurs. For example, you might use this method to specify that only part of the cell’s visible content should be used for the drop preview. If you don’t implement this method, or if you return `nil`, the drop preview displays the row’s visible content.
 

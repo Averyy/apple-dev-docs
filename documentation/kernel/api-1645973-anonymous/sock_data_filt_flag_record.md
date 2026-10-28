@@ -13,7 +13,7 @@
 sock_data_filt_flag_record = 2
 ```
 
-#### Discussion
+## Discussion
 
 Indicates this data is a record. This flag is only ever seen on inbound data.
 

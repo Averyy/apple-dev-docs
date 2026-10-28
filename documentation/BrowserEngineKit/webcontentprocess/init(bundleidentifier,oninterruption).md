@@ -17,7 +17,7 @@ Launches a web content process asynchronously.
 init(bundleIdentifier: String? = nil, onInterruption: @escaping () -> Void) async throws
 ```
 
-#### Discussion
+## Discussion
 
 Initializing a [`WebContentProcess`](../webcontentprocess.md) object launches a new instance of a web content extension. Control returns from this method only after the process for the new web content extension launches.
 

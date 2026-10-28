@@ -17,7 +17,7 @@ Returns a document object created from the contents of a given URL and optionall
 - (id) openDocumentWithContentsOfURL:(NSURL *) url display:(BOOL) display;
 ```
 
-#### Discussion
+## Discussion
 
 Returns an `NSDocument` object created from the contents of `aURL` and displays it if `flag` is [`true`](../../Swift/true.md). The returned object is not retained, but is added to the receiver’s list of managed documents. Returns `nil` if the object could not be created, typically because `aURL` does not point to a valid location or because there is no `NSDocument` subclass for the document type. Even if `flag` is [`true`](../../Swift/true.md), the document is not displayed if [`shouldCreateUI`](./shouldcreateui.md) returns [`false`](../../Swift/false.md). This method calls [`makeDocumentWithContentsOfURL:ofType:`](./makedocumentwithcontentsofurl_oftype_.md) to obtain the created `NSDocument` object.
 

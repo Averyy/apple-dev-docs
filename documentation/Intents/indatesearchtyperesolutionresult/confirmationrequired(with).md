@@ -25,11 +25,11 @@ class func confirmationRequired(with dateSearchTypeToConfirm: INDateSearchType) 
 + (instancetype) confirmationRequiredWithDateSearchTypeToConfirm:(INDateSearchType) dateSearchTypeToConfirm;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INDateSearchTypeResolutionResult`](../indatesearchtyperesolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method when you can’t resolve the parameter to a date type that’s similar to, but not equal to, the one specified in the intent. Don’t use this method to resolve date types that your app doesn’t support.
 

@@ -17,7 +17,7 @@ An error that indicates the merchant must accept the Terms and Conditions with a
 case accountNotLinked
 ```
 
-#### Discussion
+## Discussion
 
 The merchant must accept the Terms and Conditions before configuring the device. See [`linkAccount(using:)`](../paymentcardreader/linkaccount%28using%29.md).
 

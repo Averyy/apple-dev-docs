@@ -24,11 +24,11 @@ class func convolutionRGB9Vertical() -> any CIFilter & CIConvolution
 + (CIFilter<CIConvolution> *) convolutionRGB9VerticalFilter;
 ```
 
-#### Return Value
+## Return Value
 
 This method applies a 1 x 9 convolution to the `RGB` components of an image. The effect uses a 1 x 9 area surrounding an input pixel, the pixel itself, and those within a distance of 4 pixels vertically. The effect repeats this for every pixel within the image. Unlike the convolution filters, which use square matrices, this filter can only produce effects along a vertical axis. You can combine this filter with the [`convolutionRGB9Horizontal()`](./convolutionrgb9horizontal%28%29.md) to apply separable 9 x 9 convolutions. This filter differs from the [`convolution9Vertical()`](./convolution9vertical%28%29.md) filter, which processes all of the color components including the alpha component.
 
-#### Discussion
+## Discussion
 
 The convolution-RGB-9-vertical filter uses the following properties:
 

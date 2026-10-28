@@ -24,7 +24,7 @@ Creates a new provider that reads files from a directory.
 init(directoryPath: FilePath, allowMissing: Bool = false, secretsSpecifier: SecretsSpecifier<String, Data> = .all, arraySeparator: Character = ",") async throws
 ```
 
-#### Discussion
+## Discussion
 
 This initializer scans the specified directory and loads all regular files as configuration values. Subdirectories are not traversed. Hidden files (starting with a dot) are skipped.
 

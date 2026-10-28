@@ -19,7 +19,7 @@ var minimumInteritemSpacing: CGFloat { get set }
 @property CGFloat minimumInteritemSpacing;
 ```
 
-#### Discussion
+## Discussion
 
 For a vertically scrolling layout, the value represents the minimum spacing between items in the same row. For a horizontally scrolling layout, the value represents the minimum spacing between items in the same column. The layout object uses this spacing only to compute how many items can fit in a single row or column. The actual spacing may be increased after the number of items has been determined.
 

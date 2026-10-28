@@ -19,7 +19,7 @@ The text alignment the button uses to lay out the title and subtitle.
 @property (nonatomic, assign, readwrite) UIButtonConfigurationTitleAlignment titleAlignment;
 ```
 
-#### Discussion
+## Discussion
 
 The title aligment can align the title and subtitle labels along the leading or trailing edges, or center them relative to each other.
 

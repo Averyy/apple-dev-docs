@@ -11,7 +11,7 @@ An atom that contains a key that corresponds to the timed metadata track contain
 - [Constant-size timed metadata sample data](./constant-size_timed_metadata_sample_data.md)
 - [Timed metadata sample data format](./timed_metadata_sample_data_format.md)
 
-#### Overview
+## Overview
 
 A metadata key atom is identified by a `local_key_id` corresponding to a 32-bit integer (or FourCC) type code local to the timed metadata track containing it. This `local_key_id` will correspond to atom types within the metadata sample data.
 

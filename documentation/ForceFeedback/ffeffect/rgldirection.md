@@ -20,7 +20,7 @@ var rglDirection: LPLONG!
 LPLONG rglDirection;
 ```
 
-#### Discussion
+## Discussion
 
 The flags FFEFF_CARTESIAN, FFEFF_POLAR, and FFEFF_SPHERICAL determine the semantics of the values in the array.
 

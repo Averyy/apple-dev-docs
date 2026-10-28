@@ -25,7 +25,7 @@ var averageGray: CGFloat { get set }
 @property (nonatomic) CGFloat averageGray;
 ```
 
-#### Discussion
+## Discussion
 
 When using a High Dynamic Range (HDR) camera, SceneKit applies a process called *tone mapping* to translate the wide range of luminance values in the visible scene to the narrower range of brightness values that can be shown on a display. SceneKit determines a tone mapping curve from the [`minimumExposure`](./minimumexposure.md), [`maximumExposure`](./maximumexposure.md), [`exposureOffset`](./exposureoffset.md), and [`whitePoint`](./whitepoint.md) properties, along with this property which serves as a constant estimate of scene luminance.
 

@@ -14,7 +14,7 @@
 #define kUSBConfigurationValue
 ```
 
-#### Discussion
+## Discussion
 
 The field in the USB Interface Descriptor corresponding to the configuration
 

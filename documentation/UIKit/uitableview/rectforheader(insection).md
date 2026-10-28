@@ -23,7 +23,7 @@ func rectForHeader(inSection section: Int) -> CGRect
 - (CGRect) rectForHeaderInSection:(NSInteger) section;
 ```
 
-#### Return Value
+## Return Value
 
 A rectangle defining the area in which the table view draws the section header.
 

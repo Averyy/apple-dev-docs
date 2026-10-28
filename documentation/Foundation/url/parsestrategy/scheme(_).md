@@ -21,7 +21,7 @@ Modifies a parse strategy to parse a URL’s scheme component in accordance with
 func scheme(_ strategy: URL.ParseStrategy.ComponentParseStrategy<String> = .required) -> URL.ParseStrategy
 ```
 
-#### Return Value
+## Return Value
 
 A modified [`URL.ParseStrategy`](../parsestrategy.md) that incorporates the specified behavior.
 

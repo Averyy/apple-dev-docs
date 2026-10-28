@@ -17,7 +17,7 @@ MX (Microscaling) FP4 quantization format.
 case mxfp4
 ```
 
-##### See Also
+### See Also
 
 - https://www.opencompute.org/documents/ocp-microscaling-formats-mx-v1-0-spec-final-pdf
 

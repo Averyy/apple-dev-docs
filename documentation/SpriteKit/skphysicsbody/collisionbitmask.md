@@ -29,7 +29,7 @@ var collisionBitMask: UInt32 { get set }
 
 - [About Collisions and Contacts](../about-collisions-and-contacts.md)
 
-#### Discussion
+## Discussion
 
 When two physics bodies contact each other, a collision may occur. This body’s collision mask is compared to the other body’s category mask by performing a logical AND operation. If the result is a nonzero value, this body is affected by the collision. Each body independently chooses whether it wants to be affected by the other body. For example, you might use this to avoid collision calculations that would make negligible changes to a body’s velocity.
 

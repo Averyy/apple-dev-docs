@@ -19,15 +19,15 @@ func AEGetSpecialHandler(_ functionClass: AEKeyword, _ handler: UnsafeMutablePoi
 OSErr AEGetSpecialHandler(AEKeyword functionClass, AEEventHandlerUPP *handler, Boolean isSysHandler);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145).
 
-#### Discussion
+## Discussion
 
 See also [`AEInstallSpecialHandler(_:_:_:)`](./api-1445532-aeinstallspecialhandler.md) and [`AERemoveSpecialHandler(_:_:_:)`](./api-1447960-aeremovespecialhandler.md). 
 
-##### Version-Notes
+### Version-Notes
 
 Thread safe starting in OS X v10.2.
 

@@ -18,7 +18,7 @@ A Boolean value that indicates whether your app handles touch input natively, wi
 
 **Default**: `NO`
 
-#### Discussion
+## Discussion
 
 By default, AppKit injects gesture recognizers to emulate mouse events from touch input for apps that use a third-party UI framework. These emulation gesture recognizers translate raw touches into the mouse events those frameworks expect.
 

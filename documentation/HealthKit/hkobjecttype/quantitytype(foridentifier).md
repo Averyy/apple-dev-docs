@@ -28,11 +28,11 @@ class func quantityType(forIdentifier identifier: HKQuantityTypeIdentifier) -> H
 
 - [Saving data to HealthKit](../saving-data-to-healthkit.md)
 
-#### Return Value
+## Return Value
 
 The shared `HKQuantityType` instance based on the provided identifier.
 
-#### Discussion
+## Discussion
 
 This method returns an instance of the [`HKQuantityType`](../hkquantitytype.md) concrete subclass. HealthKit uses quantity types to create samples that store a numerical value. Use quantity type instances to create quantity samples that you can save in the HealthKit store. For more information, see [`HKQuantitySample`](../hkquantitysample.md).
 

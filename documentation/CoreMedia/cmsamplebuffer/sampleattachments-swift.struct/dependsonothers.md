@@ -21,7 +21,7 @@ Indicates whether the sample depends on other samples for decoding.
 var dependsOnOthers: Bool? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This key has no default value. If this key is not present, dependency information for the sample is unknown. A value of false indicates that the sample does not depend on other samples (for example, an I frame). A value of true indicates that the sample does depend on other samples (for example, a P or B frame).
 

@@ -19,7 +19,7 @@ func center()
 - (void) center;
 ```
 
-#### Discussion
+## Discussion
 
 The window is placed exactly in the center horizontally and somewhat above center vertically. Such a placement carries a certain visual immediacy and importance. This method doesn’t put the window onscreen, however; use [`makeKeyAndOrderFront(_:)`](./makekeyandorderfront%28_%29.md) to do that.
 

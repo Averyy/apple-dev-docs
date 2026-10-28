@@ -20,7 +20,7 @@ var domain: Int32
 int domain;
 ```
 
-#### Discussion
+## Discussion
 
 See the man page for `socket(2)` for a list of available domain values.
 

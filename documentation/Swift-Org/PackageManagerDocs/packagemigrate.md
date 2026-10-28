@@ -13,7 +13,7 @@ Migrate a package or its individual targets to use the given set of features.
 **Availability**:
 - Swift 6.2+
 
-#### Overview
+## Overview
 
 ```
 package migrate [--package-path=<package-path>]

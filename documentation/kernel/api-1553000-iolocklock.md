@@ -24,7 +24,7 @@ void IOLockLock(struct IOLock *lock);
 void IOLockLock(IOLock *lock);
 ```
 
-#### Discussion
+## Discussion
 
 Lock the mutex. If the lock is held by any thread, block waiting for its unlock. This function may block and so should not be called from interrupt level or while a spin lock is held. Locking the mutex recursively from one thread will result in deadlock.
 

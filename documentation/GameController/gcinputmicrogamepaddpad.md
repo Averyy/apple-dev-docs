@@ -24,7 +24,7 @@ let GCInputMicroGamepadDpad: String
 extern NSString * const GCInputMicroGamepadDpad;
 ```
 
-#### Discussion
+## Discussion
 
 For the second-generation Siri Remote and later, this represents the entire touch surface.
 

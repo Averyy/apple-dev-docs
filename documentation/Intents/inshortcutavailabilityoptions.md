@@ -23,7 +23,7 @@ struct INShortcutAvailabilityOptions
 enum INShortcutAvailabilityOptions : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 The system uses the set of availability options in a donated shortcut to provide the user with shortcuts relevant in a particular context or circumstance. For example, a meditation app could include an intent with [`sleepMindfulness`](./inshortcutavailabilityoptions/sleepmindfulness.md) in its [`shortcutAvailability`](../Foundation/nsuseractivity/shortcutavailability.md) options when calling [`setShortcutSuggestions(_:)`](./invoiceshortcutcenter/setshortcutsuggestions%28_%29.md). Then the Wind Down configuration screen in the Health app includes that intent in the Mindfulness category when guiding the user to set up shortcuts.
 

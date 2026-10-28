@@ -21,7 +21,7 @@ Returns an instance of `T` by applying the provided argument values to the prope
 func dynamicallyCall(withKeywordArguments args: KeyValuePairs<String, (any IntentValueExpressing)?>) -> T
 ```
 
-#### Discussion
+## Discussion
 
 Typically, you use this subscript implicitly via function-call syntax, for example:
 

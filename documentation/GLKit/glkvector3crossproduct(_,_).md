@@ -22,7 +22,7 @@ func GLKVector3CrossProduct(_ vectorLeft: GLKVector3, _ vectorRight: GLKVector3)
 static GLKVector3 GLKVector3CrossProduct(GLKVector3 vectorLeft, GLKVector3 vectorRight);
 ```
 
-#### Return Value
+## Return Value
 
 A new vector.
 

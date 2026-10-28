@@ -21,7 +21,7 @@ Indicates that a button has been pressed (touch down).
 static let button: SensoryFeedback.PressFeedback
 ```
 
-#### Discussion
+## Discussion
 
 Only plays feedback on visionOS.
 

@@ -11,7 +11,7 @@ Securely pair and connect to external devices over peer-to-peer Wi-Fi.
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
 
-#### Overview
+## Overview
 
 Wi-Fi Aware™ (also known as Neighbor Awareness Networking or NAN) is a Wi-Fi Alliance™ standard specification that enables devices to securely discover, pair, and communicate with nearby devices without an internet connection or access point. Your app can use the Wi-Fi Aware framework to connect with Wi-Fi Aware certified accessories. The framework offers a secure and standardized way to establish peer-to-peer (P2P) connections between Wi-Fi devices, providing networking capabilities such as:
 

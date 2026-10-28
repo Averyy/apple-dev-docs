@@ -19,7 +19,7 @@ func hide(_ sender: Any?)
 - (void) hide:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 This method is usually invoked when the user chooses Hide in the app’s main menu. When this method begins, it posts an [`willHideNotification`](./willhidenotification.md) to the default notification center. When it completes successfully, it posts an [`didHideNotification`](./didhidenotification.md).
 

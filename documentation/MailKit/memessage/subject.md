@@ -19,7 +19,7 @@ var subject: String { get }
 @property (nonatomic, copy, readonly) NSString * subject;
 ```
 
-#### Discussion
+## Discussion
 
 This property corresponds to the Subject header in the message.
 

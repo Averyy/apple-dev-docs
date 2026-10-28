@@ -24,7 +24,7 @@ weak var mesh: MTKMesh? { get }
 @property (nonatomic, weak, readonly, nullable) MTKMesh * mesh;
 ```
 
-#### Discussion
+## Discussion
 
 The buffer of this parent mesh should be set in the encoder before a call to [`drawIndexedPrimitives(type:indexCount:indexType:indexBuffer:indexBufferOffset:)`](../../Metal/mtlrendercommandencoder/drawindexedprimitives%28type,indexcount,indextype,indexbuffer,indexbufferoffset%29.md) is made.
 

@@ -24,11 +24,11 @@ func JSObjectMakeTypedArrayWithBytesNoCopy(_ ctx: JSContextRef!, _ arrayType: JS
 JSObjectRefJSObjectMakeTypedArrayWithBytesNoCopy(JSContextRef ctx, JSTypedArrayType arrayType, void *bytes, size_t byteLength, JSTypedArrayBytesDeallocator bytesDeallocator, void *deallocatorContext, JSValueRef*exception);
 ```
 
-#### Return Value
+## Return Value
 
 A [`JSObjectRef`](./jsobjectref.md) typed array with a backing store that is the same as the one that `bytes` points to, or `NULL` if there is an error.
 
-#### Discussion
+## Discussion
 
 If the system throws an exception during this function, it always calls the `bytesDeallocator`.
 

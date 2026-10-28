@@ -21,7 +21,7 @@ Creates an `AnyBidirectionalCollection` having the same underlying collection as
 init(_ other: AnyRandomAccessCollection<Element>)
 ```
 
-#### Discussion
+## Discussion
 
 > **Complexity**: O(1)
 

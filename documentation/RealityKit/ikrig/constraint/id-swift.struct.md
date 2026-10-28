@@ -20,7 +20,7 @@ The identity type for a constraint in a rig.
 struct ID
 ```
 
-#### Overview
+## Overview
 
 > **Note**: Stable only during the lifetime of the containing process.
 

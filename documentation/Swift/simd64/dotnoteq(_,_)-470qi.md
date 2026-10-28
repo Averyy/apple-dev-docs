@@ -23,7 +23,7 @@ static func .!= (a: SIMD64<Scalar>, b: Scalar) -> SIMDMask<SIMD64<Scalar>.MaskSt
 
 Available when `Scalar` is `Double`.
 
-#### Discussion
+## Discussion
 
 Each lane of the result is true if that lane of a is not equal to b, and false otherwise.
 

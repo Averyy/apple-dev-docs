@@ -21,7 +21,7 @@ The time ranges for the segment that have media data is readily available.
 @property (readonly) NSArray<NSValue *> * loadedTimeRanges;
 ```
 
-#### Discussion
+## Discussion
 
 The loaded time ranges might be discontinuous.
 

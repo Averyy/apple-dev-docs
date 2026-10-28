@@ -21,7 +21,7 @@ A Boolean value that indicates whether running the app intent in the foreground 
 var canContinueInForeground: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 Check the value of this property to determine if running the app intent in the foreground is supported in the current context. Typically, you check this value if your app intent supports both foreground and background runtime modes, and need to switch from background to foreground.
 

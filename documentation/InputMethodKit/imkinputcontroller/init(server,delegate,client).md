@@ -19,11 +19,11 @@ init!(server: IMKServer!, delegate: Any!, client inputClient: Any!)
 - (id) initWithServer:(IMKServer *) server delegate:(id) delegate client:(id) inputClient;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized input controller object.
 
-#### Discussion
+## Discussion
 
 Methods in the [`IMKStateSetting`](../imkstatesetting.md) and [`IMKMouseHandling`](../imkmousehandling.md) protocols that are implemented by the delegate object always include a client parameter. Methods in the `IMKInputController` class do not need to take a client  because the `initWithServer:delegate:client:` method stores the client object you supply as an ivar when it initializes the `IMKInputController` object.
 

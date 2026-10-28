@@ -15,11 +15,11 @@ Changes a setting of a particular speech channel.
 OSErr SetSpeechInfo(SpeechChannel chan, OSType selector, const void *speechInfo);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./speech_synthesis_manager.md#1659745).
 
-#### Discussion
+## Discussion
 
 The `SetSpeechInfo` functionchanges the type of setting indicated by the `selector` parameterin the speech channel specified by the `chan` parameter,based on the data your application provides via the `speechInfo` parameter.
 

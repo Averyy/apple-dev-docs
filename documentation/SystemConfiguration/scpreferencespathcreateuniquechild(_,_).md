@@ -19,7 +19,7 @@ func SCPreferencesPathCreateUniqueChild(_ prefs: SCPreferences, _ prefix: CFStri
 CFStringRefSCPreferencesPathCreateUniqueChild(SCPreferencesRef prefs, CFStringRef prefix);
 ```
 
-#### Return Value
+## Return Value
 
 A string representing the new (unique) child path, or `NULL` if the specified path does not exist.
 

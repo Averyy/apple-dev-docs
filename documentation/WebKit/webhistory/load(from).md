@@ -19,7 +19,7 @@ func load(from URL: URL!) throws
 - (BOOL) loadFromURL:(NSURL *) URL error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 When successful, this method posts a notification ([`WebHistoryLoadedNotification`](../webhistoryloadednotification.md)).
 

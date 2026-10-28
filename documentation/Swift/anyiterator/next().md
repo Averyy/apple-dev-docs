@@ -21,7 +21,7 @@ Advances to the next element and returns it, or `nil` if no next element exists.
 func next() -> Element?
 ```
 
-#### Discussion
+## Discussion
 
 Once `nil` has been returned, all subsequent calls return `nil`.
 

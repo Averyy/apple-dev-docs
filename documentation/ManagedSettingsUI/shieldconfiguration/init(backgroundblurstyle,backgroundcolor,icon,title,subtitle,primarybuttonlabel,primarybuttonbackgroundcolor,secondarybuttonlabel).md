@@ -17,7 +17,7 @@ Creates a shield configuration with the specified values.
 init(backgroundBlurStyle: UIBlurEffect.Style? = nil, backgroundColor: UIColor? = nil, icon: UIImage? = nil, title: ShieldConfiguration.Label? = nil, subtitle: ShieldConfiguration.Label? = nil, primaryButtonLabel: ShieldConfiguration.Label? = nil, primaryButtonBackgroundColor: UIColor? = nil, secondaryButtonLabel: ShieldConfiguration.Label? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 The system provides a default for any options that you don’t specify.
 

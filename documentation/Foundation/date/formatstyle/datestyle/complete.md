@@ -21,7 +21,7 @@ A date style with all components represented.
 static let complete: Date.FormatStyle.DateStyle
 ```
 
-#### Discussion
+## Discussion
 
 A `complete` date style represents the day, month, day of month, and year components in the format. For example, `Saturday, October 17, 2020`,` `for locale `en_US`.
 

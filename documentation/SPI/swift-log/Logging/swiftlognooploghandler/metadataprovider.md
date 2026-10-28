@@ -17,7 +17,7 @@ Default implementation for a metadata provider that defaults to nil.
 var metadataProvider: Logger.MetadataProvider? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This default exists in order to facilitate the source-compatible introduction of the `metadataProvider` protocol requirement.
 

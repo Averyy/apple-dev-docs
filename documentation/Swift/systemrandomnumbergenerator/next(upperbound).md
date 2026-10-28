@@ -21,11 +21,11 @@ Returns a random value that is less than the given upper bound.
 mutating func next<T>(upperBound: T) -> T where T : FixedWidthInteger, T : UnsignedInteger
 ```
 
-#### Return Value
+## Return Value
 
 A random value of `T` in the range `0..<upperBound`. Every value in the range `0..<upperBound` is equally likely to be returned.
 
-#### Discussion
+## Discussion
 
 Use this method when you need random binary data to generate another value. If you need an integer value within a specific range, use the static `random(in:using:)` method on that integer type instead of this method.
 

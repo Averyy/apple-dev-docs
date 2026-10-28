@@ -5,7 +5,7 @@
 
 Get set up for using the Apple News API.
 
-#### Overview
+## Overview
 
 Once you have created an Apple News Format article, you use the Apple News API to send a request to publish the article to the Apple News app. You can also send requests to manage the articles in your channel. For example, you can:
 
@@ -15,7 +15,7 @@ Once you have created an Apple News Format article, you use the Apple News API t
 - Find a specific article
 - Delete articles that you no longer want in your channel
 
-##### Verify Your Channel Security Information
+### Verify Your Channel Security Information
 
 Make sure you have the following security information, which you received when you set up your channel:
 
@@ -28,14 +28,14 @@ If you don’t have this information, see [Use your CMS with News Publisher](htt
 
 To learn how the Apple News API keeps your content secure, see [About the Apple News Security Model](./about-the-apple-news-security-model.md). You’ll use the authentication steps as part of each request you make.
 
-##### Get the Apple News API
+### Get the Apple News API
 
 Choose one of these options:
 
 - Download the [Apple News API Client Utility](https://developer.apple.com/apple-news/download/Apple-News-API-CLI.zip) (a Ruby Gem). Follow the setup instructions provided in the README file to install, configure, and use the utility.
 - Use the Apple News REST API. Write your own code to integrate the Apple News API with your content management system (CMS) in a way that’s compatible with your organization’s processes.
 
-##### Send a Request for Each Task
+### Send a Request for Each Task
 
 Requests you send to the Apple News resource contain a method (`GET`, `POST`, `PUT`, or `DELETE`) and a URL with the required parameters. Requests also include all security information, headers, body, and other parts the endpoint requires.
 
@@ -45,7 +45,7 @@ For example, to publish an article, use the Create an Article endpoint that star
 POST https://news-api.apple.com/channels/{channelId}/articles
 ```
 
-##### Validate Responses
+### Validate Responses
 
 The Apple News API returns the following responses:
 

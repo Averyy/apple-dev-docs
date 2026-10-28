@@ -19,7 +19,7 @@ init?(uuid: UUID, qualifierData: Data)
 - (instancetype) initWithUUID:(NSUUID *) uuid qualifierData:(NSData *) qualifierData;
 ```
 
-#### Return Value
+## Return Value
 
 A new identifier, or `nil` if `qualifierData` is not exactly eight bytes long.
 

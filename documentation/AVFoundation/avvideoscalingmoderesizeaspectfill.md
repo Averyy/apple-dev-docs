@@ -24,7 +24,7 @@ let AVVideoScalingModeResizeAspectFill: String
 extern NSString * const AVVideoScalingModeResizeAspectFill;
 ```
 
-#### Discussion
+## Discussion
 
 This mode crops the video to fit the destination dimensions, preserving the aspect ratio of the source video.
 

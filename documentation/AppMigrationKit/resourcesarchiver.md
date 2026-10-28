@@ -16,7 +16,7 @@ An object your app uses to archive resources during an export operation.
 final class ResourcesArchiver
 ```
 
-#### Overview
+## Overview
 
 > ❗ **Important**: This class handles task cancellation automatically by throwing cancellation errors up the stack if the migration system cancels the export. Don’t catch the cancellation errors; doing so causes the system to kill the app extension.
 

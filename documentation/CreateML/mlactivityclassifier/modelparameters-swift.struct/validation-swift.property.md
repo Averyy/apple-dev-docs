@@ -15,7 +15,7 @@ The validation data source.
 var validation: MLActivityClassifier.ModelParameters.Validation { get set }
 ```
 
-#### Discussion
+## Discussion
 
 If you don’t specify validation data, the training process automatically sets aside a random subset of the training data as the validation data.
 

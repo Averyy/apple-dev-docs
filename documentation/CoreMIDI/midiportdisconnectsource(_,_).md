@@ -23,7 +23,7 @@ func MIDIPortDisconnectSource(_ port: MIDIPortRef, _ source: MIDIEndpointRef) ->
 extern OSStatus MIDIPortDisconnectSource(MIDIPortRef port, MIDIEndpointRef source);
 ```
 
-#### Return Value
+## Return Value
 
 An `OSStatus` result code.
 

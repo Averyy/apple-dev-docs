@@ -17,17 +17,17 @@ CMError CMFlattenProfile (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A `CMError` value. See [Result Codes](../colorsync_manager.md#1670295).
 
-#### Overview
+## Overview
 
 The ColorSync Manager passes to the CMM the pointer to your profile-flattening function. The CMM calls your function [`CMFlattenProcPtr`](../cmflattenprocptr.md) to perform the actual data transfer.
 
 To unflatten a profile embedded in a graphics document to an independent disk file, use the function “Accessing Profile Elements”. 
 
-##### Version-Notes
+### Version-Notes
 
 Prior to version 2.5, the ColorSync Manager dispatches the `CMFlattenProfile` function to the CMM specified by the profile whose reference you provide. If the preferred CMM is unavailable or it does not support this function, then the default CMM is used.
 

@@ -27,11 +27,11 @@ func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView?
 
 - [Using responders and the responder chain to handle events](../using-responders-and-the-responder-chain-to-handle-events.md)
 
-#### Return Value
+## Return Value
 
 The view object that’s the farthest descendent of the current view and contains `point`. Returns `nil` if the point lies completely outside the view hierarchy of the current view.
 
-#### Discussion
+## Discussion
 
 This method traverses the view hierarchy by calling the [`point(inside:with:)`](./point%28inside,with%29.md) method of each subview to determine which subview to send a touch event to. If [`point(inside:with:)`](./point%28inside,with%29.md) returns [`true`](../../Swift/true.md), this method continues to traverse the subview hierarchy until it finds the frontmost view that contains the specified point. If a view doesn’t contain the point, this method ignores its branch of the view hierarchy. You rarely need to call this method yourself, but you might override it to hide touch events from subviews.
 

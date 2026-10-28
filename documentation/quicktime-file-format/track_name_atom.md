@@ -6,7 +6,7 @@
 
 An atom that provides a name for a track.
 
-#### Overview
+## Overview
 
 A movie atom’s user data atom may contain a track name atom (`'tnam'`).
 

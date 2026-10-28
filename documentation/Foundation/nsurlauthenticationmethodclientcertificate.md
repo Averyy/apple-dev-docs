@@ -25,7 +25,7 @@ let NSURLAuthenticationMethodClientCertificate: String
 extern NSString * const NSURLAuthenticationMethodClientCertificate;
 ```
 
-#### Discussion
+## Discussion
 
 This authentication method can apply to any protocol.
 

@@ -24,7 +24,7 @@ func removeOverlays(_ overlays: [any MKOverlay])
 - (void) removeOverlays:(NSArray<id<MKOverlay>> *) overlays;
 ```
 
-#### Discussion
+## Discussion
 
 This method removes the specified overlays regardless of which level each one is in. Removing an overlay also removes its corresponding renderer, if one is in use. The method ignores an overlay object if it isn’t associated with the map view.
 

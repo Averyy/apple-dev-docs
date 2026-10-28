@@ -14,7 +14,7 @@ func simd_equal(_ x: simd_int3, _ y: simd_int3) -> simd_bool
 static simd_bool simd_equal(simd_int3 x, simd_int3 y);
 ```
 
-#### Discussion
+## Discussion
 
 True if and only if each lane of x is equal to the corresponding lane of y.
 

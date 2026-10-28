@@ -15,7 +15,7 @@ Activate a newly created virtual device to begin receiving notifications and ena
 func activate(delegate: any HIDVirtualDeviceDelegate)
 ```
 
-#### Discussion
+## Discussion
 
 Many functions won’t run, and notifications won’t be received using the [`HIDVirtualDeviceDelegate`](../hidvirtualdevicedelegate.md) until activate has run successfully. A device cannot be activated twice.
 

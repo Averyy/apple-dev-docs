@@ -19,7 +19,7 @@ Options that specify the system strategy for preserving the original image conte
 enum CreationStrategy
 ```
 
-#### Overview
+## Overview
 
 Use these options to specify how much you want the system to preserve the original image you provide.
 

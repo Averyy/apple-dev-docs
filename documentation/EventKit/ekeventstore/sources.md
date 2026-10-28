@@ -24,7 +24,7 @@ var sources: [EKSource] { get }
 @property (nonatomic, readonly) NSArray<EKSource *> * sources;
 ```
 
-#### Discussion
+## Discussion
 
 Although this property is an array, the order of the elements in the array isn’t guaranteed.
 

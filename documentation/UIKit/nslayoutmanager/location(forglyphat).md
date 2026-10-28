@@ -23,11 +23,11 @@ func location(forGlyphAt glyphIndex: Int) -> CGPoint
 - (CGPoint) locationForGlyphAtIndex:(NSUInteger) glyphIndex;
 ```
 
-#### Return Value
+## Return Value
 
 The location of the given glyph.
 
-#### Discussion
+## Discussion
 
 If the given glyph does not have an explicit location set for it (for example, if it is part of (but not first in) a sequence of nominally spaced characters), the location is calculated by glyph advancements from the location of the most recent preceding glyph with a location set.
 

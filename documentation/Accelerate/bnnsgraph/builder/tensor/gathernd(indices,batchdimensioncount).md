@@ -23,7 +23,7 @@ func gatherND(indices: some BNNSGraph.Builder.OperationParameter<Int32>, batchDi
 
 Available when `T` conforms to `BNNSScalar`.
 
-#### Discussion
+## Discussion
 
 Register a gather-nd op, which indexes `self` at the coordinates provided in `indices`. In particular, output `y` such that `y[i...] = self[indices[i..., :]]`.
 

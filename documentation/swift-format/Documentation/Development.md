@@ -39,7 +39,7 @@ debugging the tool during development:
 
 ## Support Scripts
 
-The [Scripts](../Scripts) directory contains a `format-diff.sh` script
+The [Scripts](https://github.com/swiftlang/swift-format/blob/main/Scripts) directory contains a `format-diff.sh` script
 that some developers may find useful. When invoked, it rebuilds
 `swift-format` (if necessary to pick up any recent changes) and lets
 you view a side-by-side `diff` with the original file on the left side

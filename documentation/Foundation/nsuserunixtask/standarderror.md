@@ -19,7 +19,7 @@ var standardError: FileHandle? { get set }
 @property (retain, nullable) NSFileHandle * standardError;
 ```
 
-#### Discussion
+## Discussion
 
 Setting to `nil` will bind the stream to `/dev/null`.
 

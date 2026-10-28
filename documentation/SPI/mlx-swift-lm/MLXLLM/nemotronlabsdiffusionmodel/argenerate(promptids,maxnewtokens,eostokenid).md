@@ -17,7 +17,7 @@ Pure autoregressive generation (causal attention).
 func arGenerate(promptIds: [Int], maxNewTokens: Int = 128, eosTokenId: Int? = nil) -> (tokens: [Int], nfe: Int)
 ```
 
-#### Discussion
+## Discussion
 
 Mirrors `ar_generate` in `modeling_nemotron_labs_diffusion.py`. Returns the prompt concatenated with newly generated tokens, and the number of forward passes performed.
 

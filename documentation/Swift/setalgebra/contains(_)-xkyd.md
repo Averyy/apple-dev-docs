@@ -23,11 +23,11 @@ func contains(_ member: Self) -> Bool
 
 Available when `Self` is `Self.Element`.
 
-#### Return Value
+## Return Value
 
 `true` if the option set contains `member`; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 This example uses the `contains(_:)` method to check whether next-day shipping is in the `availableOptions` instance.
 

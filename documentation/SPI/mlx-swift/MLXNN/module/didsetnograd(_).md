@@ -17,11 +17,11 @@ Called when [`noGrad()`](./nograd%28%29.md) is updated.
 func didSetNoGrad(_ noGrad: Set<String>)
 ```
 
-#### Discussion
+## Discussion
 
 This is provided for subclasses to override.
 
-##### See Also
+### See Also
 
 - [`noGrad()`](./nograd%28%29.md)
 

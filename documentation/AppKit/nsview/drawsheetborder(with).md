@@ -21,7 +21,7 @@ func drawSheetBorder(with borderSize: NSSize)
 - (void) drawSheetBorderWithSize:(NSSize) borderSize;
 ```
 
-#### Discussion
+## Discussion
 
 The marks can be such things as crop marks or fold lines of size `borderSize`. This method has been deprecated.
 

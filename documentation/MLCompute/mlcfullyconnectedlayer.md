@@ -23,7 +23,7 @@ class MLCFullyConnectedLayer
 @interface MLCFullyConnectedLayer : MLCLayer
 ```
 
-#### Overview
+## Overview
 
 This is also known as a dense layer.
 

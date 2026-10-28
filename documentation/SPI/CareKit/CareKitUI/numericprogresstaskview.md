@@ -18,7 +18,7 @@ A card that displays a header, instructions, and indicators for progress and goa
 struct NumericProgressTaskView<Header> where Header : View
 ```
 
-#### Overview
+## Overview
 
 In CareKit, this view is intended to display a particular event for a task.
 

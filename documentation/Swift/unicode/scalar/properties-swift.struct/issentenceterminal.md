@@ -21,7 +21,7 @@ A Boolean value indicating whether the scalar is a punctuation mark that general
 var isSentenceTerminal: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property corresponds to the “Sentence_Terminal” property in the [Unicode Standard](http://www.unicode.org/versions/latest/).
 

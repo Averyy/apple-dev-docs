@@ -27,7 +27,7 @@ var products: [SKProduct] { get }
 @property (nonatomic, readonly) NSArray<SKProduct *> * products;
 ```
 
-#### Discussion
+## Discussion
 
 The array consists of a list of [`SKProduct`](../skproduct.md) objects.
 

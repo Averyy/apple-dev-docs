@@ -19,7 +19,7 @@ weak var delegate: (any NSTextStorageDelegate)? { get set }
 @property (weak, nullable) id<NSTextStorageDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 Use a delegate object to monitor edits occurring to the text contents. Your delegate object must conform to the [`NSTextStorageDelegate`](../nstextstoragedelegate.md) protocol.
 

@@ -24,7 +24,7 @@ static var defaultLayout: PreviewTrait<Preview.ViewTraits> { get }
 
 Available when `T` is `Preview.ViewTraits`.
 
-#### Discussion
+## Discussion
 
 This is the same as the [`PreviewLayout.device`](../previewlayout/device.md) layout, and is the default if you don’t specify a layout trait.
 

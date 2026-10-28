@@ -19,7 +19,7 @@ An optional identifier for the region.
 @preconcurrency var identifier: AnyHashable? { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use this value to identify the [`UIPointerRegion`](../uipointerregion.md) in subsequent pointer interaction delegate calls.
 

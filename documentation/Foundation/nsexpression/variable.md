@@ -25,7 +25,7 @@ var variable: String { get }
 @property (copy, readonly) NSString * variable;
 ```
 
-#### Discussion
+## Discussion
 
 Accessing this property raises an exception if it is not applicable to the expression.
 

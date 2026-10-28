@@ -16,7 +16,7 @@ A Boolean value that indicates whether the overlay view highlights actionable te
 final var selectableItemsHighlighted: Bool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The overlay view manages this property value for you. It sets this property to `false` if you set the [`analysis`](./analysis.md) property or the [`activeInteractionTypes`](./activeinteractiontypes.md) property to an empty set. Otherwise, it sets this property depending on whether the user toggles the Live Text button in the interface.
 

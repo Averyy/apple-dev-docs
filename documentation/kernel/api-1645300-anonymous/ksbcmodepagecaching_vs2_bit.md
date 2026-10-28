@@ -13,7 +13,7 @@
 kSBCModePageCaching_VS2_Bit = 4
 ```
 
-#### Discussion
+## Discussion
 
 VS2 Bit definition.
 

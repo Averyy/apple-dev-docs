@@ -21,7 +21,7 @@ Calculates the double-precision element-wise sum and subtraction of two vectors,
 void vDSP_vaddsubD(const double *__I0, vDSP_Stride __I0S, const double *__I1, vDSP_Stride __I1S, double *__O0, vDSP_Stride __O0S, double *__O1, vDSP_Stride __O1S, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This function calculates the addition and subtraction of the first `N` elements of input vectors `A` and `B`, and writes the result to output vector `C`, as follows:
 

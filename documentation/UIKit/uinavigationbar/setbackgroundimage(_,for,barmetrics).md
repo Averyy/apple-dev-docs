@@ -23,7 +23,7 @@ func setBackgroundImage(_ backgroundImage: UIImage?, for barPosition: UIBarPosit
 - (void) setBackgroundImage:(UIImage *) backgroundImage forBarPosition:(UIBarPosition) barPosition barMetrics:(UIBarMetrics) barMetrics;
 ```
 
-#### Discussion
+## Discussion
 
 Resizable images will be stretched vertically, if necessary, for a position of [`UIBarPosition.topAttached`](../uibarposition/topattached.md).
 

@@ -21,7 +21,7 @@ Toggles the Boolean variable’s value.
 mutating func toggle()
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to toggle a Boolean value from `true` to `false` or from `false` to `true`.
 

@@ -21,7 +21,7 @@ static var `default`: MPMovieControlStyle { get }
 MPMovieControlStyleDefault
 ```
 
-#### Discussion
+## Discussion
 
 Fullscreen controls are displayed by default.
 

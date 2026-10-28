@@ -25,7 +25,7 @@ class var system: TimeZone { get }
 @property (class, copy, readonly) NSTimeZone * systemTimeZone;
 ```
 
-#### Discussion
+## Discussion
 
 If the current system time zone cannot be determined, the GMT time zone is used instead.
 

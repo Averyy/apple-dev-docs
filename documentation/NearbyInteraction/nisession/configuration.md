@@ -23,7 +23,7 @@ var configuration: NIConfiguration? { get }
 @property (nonatomic, copy, readonly, nullable) NIConfiguration * configuration;
 ```
 
-#### Discussion
+## Discussion
 
 An app doesn’t set this property. Instead, NI sets its value to reflect the object that the app passed in to [`run(_:)`](./run%28_%29.md).
 

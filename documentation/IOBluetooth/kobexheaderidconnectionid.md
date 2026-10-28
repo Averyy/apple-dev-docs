@@ -17,7 +17,7 @@ var kOBEXHeaderIDConnectionID: OBEXHeaderIdentifiers { get }
 kOBEXHeaderIDConnectionID
 ```
 
-#### Discussion
+## Discussion
 
 An identifier used for OBEX connection multiplexing.
 

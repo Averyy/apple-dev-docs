@@ -24,7 +24,7 @@ var enableRevocationCheck: Bool { get set }
 @property BOOL enableRevocationCheck;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is NO. If this property is set to YES, then during IKEv2 negotiation the certificate identifying the server is checked to see if it has been revoked.
 

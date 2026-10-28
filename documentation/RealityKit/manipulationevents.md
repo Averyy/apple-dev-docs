@@ -15,7 +15,7 @@ Events that occur while a person manipulates an entity.
 enum ManipulationEvents
 ```
 
-#### Overview
+## Overview
 
 You can subscribe to these events using [`subscribe(to:on:_:)`](./realityviewcontentprotocol/subscribe%28to,on,_%29.md). For example, you can change the color of an entity’s material when the manipulation gesture begins and ends.
 

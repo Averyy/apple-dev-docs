@@ -14,7 +14,7 @@ void CompleteParallelTask (
  SCSIServiceResponseserviceResponse );
 ```
 
-#### Overview
+## Overview
 
 The HBA specific sublcass inherits the CompleteParallelTask() method which shall be called when the HBA has completed the processing of a parallel task.
 

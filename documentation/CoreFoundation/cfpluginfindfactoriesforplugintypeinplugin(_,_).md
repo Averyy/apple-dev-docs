@@ -25,7 +25,7 @@ func CFPlugInFindFactoriesForPlugInTypeInPlugIn(_ typeUUID: CFUUID!, _ plugIn: C
 extern CFArrayRefCFPlugInFindFactoriesForPlugInTypeInPlugIn(CFUUIDRef typeUUID, CFPlugInRef plugIn);
 ```
 
-#### Return Value
+## Return Value
 
 An array of UUIDs for factory functions capable of creating an instance of the given type.
 

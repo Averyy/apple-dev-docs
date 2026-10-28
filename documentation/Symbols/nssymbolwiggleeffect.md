@@ -21,7 +21,7 @@ A symbol effect that applies the Wiggle animation to symbol images.
 @interface NSSymbolWiggleEffect : NSSymbolEffect
 ```
 
-#### Overview
+## Overview
 
 The Wiggle animation applies a transitory translation or rotation effect to the symbol.
 

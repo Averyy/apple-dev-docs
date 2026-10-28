@@ -20,7 +20,7 @@ The dimension of the computed specular cubemap for material reflections.
 var specularCubeDimension: Int?
 ```
 
-#### Discussion
+## Discussion
 
 If `nil`, the environment resource uses the source cubemap’s dimensions.
 

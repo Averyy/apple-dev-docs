@@ -21,7 +21,7 @@ Fetches the share metadata for the specified share URL.
 func shareMetadata(for url: URL) async throws -> CKShare.Metadata
 ```
 
-#### Return Value
+## Return Value
 
 The share metadata for the share URL.
 

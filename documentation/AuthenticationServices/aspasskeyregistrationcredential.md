@@ -23,7 +23,7 @@ class ASPasskeyRegistrationCredential
 @interface ASPasskeyRegistrationCredential : NSObject
 ```
 
-#### Overview
+## Overview
 
 Create a passkey registration credential to provide a response to a passkey registration request from your credential provider extension. Call [`completeRegistrationRequest(using:completionHandler:)`](./ascredentialproviderextensioncontext/completeregistrationrequest%28using,completionhandler%29.md), passing your passkey registration credential.
 

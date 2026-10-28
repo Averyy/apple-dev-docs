@@ -21,7 +21,7 @@ typealias SLComposeViewControllerCompletionHandler = (SLComposeViewControllerRes
 typedef void (^)(enum SLComposeViewControllerResult) SLComposeViewControllerCompletionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The completion handler is called while the SLComposeViewController is still visible and it is responsible for dismissing the view controller. For the possible values of the `result` parameter, see [`SLComposeViewControllerResult`](./slcomposeviewcontrollerresult.md). Use the [`completionHandler`](./slcomposeviewcontroller/completionhandler.md) property to set this handler.
 

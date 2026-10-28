@@ -21,7 +21,7 @@ Loads a preconfigured AudioFileResource from a Reality Composer Pro project with
 @preconcurrency static func load(named name: String, from scene: String, in bundle: Bundle? = nil) throws -> AudioFileResource
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**: The name provided **must** be unique.
 

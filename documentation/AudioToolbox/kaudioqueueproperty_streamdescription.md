@@ -24,7 +24,7 @@ var kAudioQueueProperty_StreamDescription: AudioQueuePropertyID { get }
 kAudioQueueProperty_StreamDescription
 ```
 
-#### Discussion
+## Discussion
 
 Value is a read-only [`AudioStreamBasicDescription`](../CoreAudioTypes/audiostreambasicdescription.md) structure, indicating an audio queue’s data format. Primarily useful for obtaining a complete ASBD when recording, in cases where you initially specify a sample rate of `0`.
 

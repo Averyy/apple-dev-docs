@@ -24,7 +24,7 @@ class MDLMeshBufferData
 @interface MDLMeshBufferData : NSObject
 ```
 
-#### Overview
+## Overview
 
 This class is the simplest concrete implementation of the [`MDLMeshBuffer`](./mdlmeshbuffer.md) protocol—use this class when you need only a single data store for loading or processing mesh data. To share mesh data for other uses, use another concrete implementation of the [`MDLMeshBuffer`](./mdlmeshbuffer.md) protocol—for example, the [`MTKMeshBuffer`](../MetalKit/mtkmeshbuffer.md) class shares mesh data with Metal buffers, ensuring that data is copied a minimal number of times between loading, processing, and rendering.If you do not specify a [`MDLMeshBufferAllocator`](./mdlmeshbufferallocator.md) object for loading meshes from a file with the [`MDLAsset`](./mdlasset.md) class or generating meshes with the [`MDLMesh`](./mdlmesh.md) class, Model I/O uses [`MDLMeshBufferData`](./mdlmeshbufferdata.md) objects to store mesh data.
 

@@ -3,7 +3,7 @@
 **Framework**: System Configuration  
 **Role**: API Collection
 
-#### Overview
+## Overview
 
 The `SystemConfiguration` programming interface provides functions you can use to get and interpret status and error codes generated as a result of calling functions of the System Configuration framework.
 

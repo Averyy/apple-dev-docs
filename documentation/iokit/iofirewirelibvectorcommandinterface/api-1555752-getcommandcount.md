@@ -16,7 +16,7 @@ Returns the number of commands currently in this vector.
 UInt32 (*GetCommandCount)(IOFireWireLibVectorCommandRef self);
 ```
 
-#### Return Value
+## Return Value
 
 UInt32 The number of commands in this vector
 

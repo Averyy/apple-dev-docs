@@ -23,7 +23,7 @@ struct EulerAnglesFloat
 typedef struct { ... } SPEulerAnglesFloat;
 ```
 
-#### Overview
+## Overview
 
 A structure that represents Euler angles, in radians, and ordering.
 

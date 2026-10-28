@@ -19,7 +19,7 @@ A name composed as a single-string representation of a Kerberos name.
 #define GSS_KRB5_NT_PRINCIPAL
 ```
 
-#### Discussion
+## Discussion
 
 Parse a name of this type with the `krb5_parse_name` function.
 

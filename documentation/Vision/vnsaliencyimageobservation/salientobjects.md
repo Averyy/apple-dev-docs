@@ -24,7 +24,7 @@ var salientObjects: [VNRectangleObservation]? { get }
 @property (nonatomic, readonly, nullable) NSArray<VNRectangleObservation *> * salientObjects;
 ```
 
-#### Discussion
+## Discussion
 
 The objects in this array don’t follow any specific ordering. It’s up to your app to iterate across the observations and apply desired ordering.
 

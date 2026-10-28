@@ -17,7 +17,7 @@ A policy that indicates the device shields specific categories of activity, with
 case specific(Set<ActivityCategoryToken>, except: Set<Token<Activity>> = [])
 ```
 
-#### Discussion
+## Discussion
 
 List categories you want to shield in the first parameter. Use the `except` parameter to specify apps and websites not to shield, even if they’re in the categories that you list. Your app can shield up to 50 category tokens and specify up to 50 application or web domain tokens exceptions at once.
 

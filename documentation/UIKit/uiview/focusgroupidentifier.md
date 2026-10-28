@@ -22,7 +22,7 @@ var focusGroupIdentifier: String? { get set }
 @property (nonatomic, copy, readwrite, nullable) NSString * focusGroupIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 If this property is `nil`, subviews inherit their superview’s focus group.
 

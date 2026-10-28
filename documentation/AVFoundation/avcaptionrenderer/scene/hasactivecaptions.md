@@ -22,7 +22,7 @@ var hasActiveCaptions: Bool { get }
 @property (nonatomic, readonly) BOOL hasActiveCaptions;
 ```
 
-#### Discussion
+## Discussion
 
 Knowing when the renderer has active captions can be useful to scrub to times where captions are present, or skip scenes where no captions exist.
 

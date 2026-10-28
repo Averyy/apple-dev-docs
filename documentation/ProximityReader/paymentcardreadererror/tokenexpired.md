@@ -17,7 +17,7 @@ An error that indicates the reader’s token expired.
 case tokenExpired
 ```
 
-#### Discussion
+## Discussion
 
 Refresh the token and try again.
 

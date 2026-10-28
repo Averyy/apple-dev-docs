@@ -13,7 +13,7 @@
 kIOPMPowerOn = 0x00000002
 ```
 
-#### Discussion
+## Discussion
 
 Indicates the device is on, requires power, and provides power. Useful as a: Capability, InputPowerRequirement, OutputPowerCharacter
 

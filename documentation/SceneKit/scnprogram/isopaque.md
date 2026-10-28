@@ -25,7 +25,7 @@ var isOpaque: Bool { get set }
 @property (nonatomic, getter=isOpaque) BOOL opaque;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`true`](../../Swift/true.md), indicating that all fragments rendered by the program are fully opaque. In this case, SceneKit can composite these fragments into the final image without blending, improving rendering performance.
 

@@ -19,7 +19,7 @@ class Annotation extends EventTarget
 
 - [Migrating from Version 5 to Version 6](./migrating-from-version-5-to-version-6.md)
 
-#### Overview
+## Overview
 
 An annotation represents data that you want to display on the map’s surface. Associate each annotation with a [`coordinate`](./annotation/coordinate.md) on the map. Use the extended objects [`MarkerAnnotation`](./markerannotation.md) and [`ImageAnnotation`](./imageannotation.md) to create annotations on the map, or [`Annotation`](./annotation.md) to customize a view beyond the presentation that [`ImageAnnotation`](./imageannotation.md) or [`MarkerAnnotation`](./markerannotation.md) provide.
 

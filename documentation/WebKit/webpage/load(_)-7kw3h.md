@@ -20,11 +20,11 @@ Loads the web content that the specified URL request object references and navig
 @MainActor final func load(_ request: URLRequest) -> some AsyncSequence<WebPage.NavigationEvent, any Error>
 ```
 
-#### Return Value
+## Return Value
 
 An async sequence you use to track the loading progress of the navigation. If the `Task` enclosing the sequence is cancelled, the page will stop loading all resources.
 
-#### Discussion
+## Discussion
 
 Use this method to load a page from a local or network-based URL. For example, you might use this method to navigate to a network-based webpage.
 

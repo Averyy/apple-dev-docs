@@ -25,7 +25,7 @@ func sortedCookies(using sortOrder: [NSSortDescriptor]) -> [HTTPCookie]
 - (NSArray<NSHTTPCookie *> *) sortedCookiesUsingDescriptors:(NSArray<NSSortDescriptor *> *) sortOrder;
 ```
 
-#### Return Value
+## Return Value
 
 The cookie storage’s cookies, sorted according to `sortOrder`, as an array of [`HTTPCookie`](../httpcookie.md) objects.
 

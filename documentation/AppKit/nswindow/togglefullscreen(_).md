@@ -19,7 +19,7 @@ func toggleFullScreen(_ sender: Any?)
 - (void) toggleFullScreen:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 If an application supports fullscreen, it should add a menu item to the View menu with `toggleFullScreen:` as the action, and `nil` as the target.
 

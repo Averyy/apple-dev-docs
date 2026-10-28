@@ -17,7 +17,7 @@ Loads the receiver’s data in the background.
 - (void) loadInBackground;
 ```
 
-#### Discussion
+## Discussion
 
 Each subclass determines its own loading policy. Clients should not assume that multiple background loads can proceed simultaneously. For example, a subclass may maintain only one thread for background loading, so only one background loading operation can be in progress at a time. If multiple background loads are requested, the later requests will wait in a queue until earlier requests are handled.
 

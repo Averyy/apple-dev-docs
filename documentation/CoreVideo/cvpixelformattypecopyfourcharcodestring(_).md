@@ -23,11 +23,11 @@ func CVPixelFormatTypeCopyFourCharCodeString(_ pixelFormat: OSType) -> CFString
 extern CFStringRefCVPixelFormatTypeCopyFourCharCodeString(OSType pixelFormat);
 ```
 
-#### Return Value
+## Return Value
 
 A string with a user displayable conversion of a pixel format.
 
-#### Discussion
+## Discussion
 
 Creates a string with a formatted representation of a pixel format
 

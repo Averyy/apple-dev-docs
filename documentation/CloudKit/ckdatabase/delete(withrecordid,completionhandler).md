@@ -29,7 +29,7 @@ func delete(withRecordID recordID: CKRecord.ID) async throws -> CKRecord.ID
 - (void) deleteRecordWithID:(CKRecordID *) recordID completionHandler:(void (^)(CKRecordID *recordID, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The completion handler takes the following parameters:
 

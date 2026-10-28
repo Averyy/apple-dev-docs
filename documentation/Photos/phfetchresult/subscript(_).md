@@ -24,11 +24,11 @@ subscript(idx: Int) -> ObjectType { get }
 - (ObjectType) objectAtIndexedSubscript:(NSUInteger) idx;
 ```
 
-#### Return Value
+## Return Value
 
 The object located at `index` in the fetch result.
 
-#### Discussion
+## Discussion
 
 Raises a range exception if `idx` is beyond the end of the fetch result (that is, greater than or equal to the value of the [`count`](./count.md) property).
 

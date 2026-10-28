@@ -17,7 +17,7 @@ Plain ChatML, as used by the Qwen family without its tool extensions.
 struct ChatMLTemplate
 ```
 
-#### Overview
+## Overview
 
 ```
 <|im_start|>system\n...<|im_end|>\n

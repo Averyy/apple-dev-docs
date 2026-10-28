@@ -14,7 +14,7 @@ Query attributes in managed apps on a device.
 - visionOS 1.1+
 - watchOS 10.0+
 
-#### Discussion
+## Discussion
 
 This command allows the server to get attributes of managed apps.
 
@@ -22,7 +22,7 @@ The response doesn’t include apps that Declarative Device Management is managi
 
 Refer to the following sections to determine supported channels and requirements, and to see an example request and response.
 
-##### Command availability
+### Command availability
 
 |  |  |
 | --- | --- |
@@ -32,7 +32,7 @@ Refer to the following sections to determine supported channels and requirements
 | Allowed in user enrollment | iOS, visionOS |
 | Required access right | AllowAppInstallation |
 
-##### Example request and response
+### Example request and response
 
 **Request**:
 

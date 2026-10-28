@@ -24,7 +24,7 @@ class GKOctreeNode
 @interface GKOctreeNode : NSObject
 ```
 
-#### Overview
+## Overview
 
 You don’t create instances of this class directly; instead, a [`GKOctree`](./gkoctree.md) object provides you with a [`GKOctreeNode`](./gkoctreenode.md) instance when you add an element to a tree. If you plan to remove elements from the tree, keep references to the corresponding nodes so you can use the [`remove(_:using:)`](./gkoctree/remove%28_,using%29.md) method for better performance.
 

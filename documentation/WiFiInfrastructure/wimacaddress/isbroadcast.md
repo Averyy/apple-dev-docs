@@ -17,7 +17,7 @@ A Boolean value that indicates whether this is the broadcast MAC Address.
 var isBroadcast: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is `true` if this is the broadcast MAC Address, `false` otherwise.
 

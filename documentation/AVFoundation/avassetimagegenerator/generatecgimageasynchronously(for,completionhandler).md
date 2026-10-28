@@ -24,7 +24,7 @@ func generateCGImageAsynchronously(for requestedTime: CMTime, completionHandler 
 - (void) generateCGImageAsynchronouslyForTime:(CMTime) requestedTime completionHandler:(void (^)(CGImageRef image, CMTime actualTime, NSError *error)) handler;
 ```
 
-#### Discussion
+## Discussion
 
 Swift clients should use the asynchronous [`image(at:)`](./image%28at%29.md) method instead.
 

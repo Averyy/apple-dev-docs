@@ -22,7 +22,7 @@ var pixelAspectRatio: CGFloat { get }
 @property (nonatomic, readonly) CGFloat pixelAspectRatio;
 ```
 
-#### Discussion
+## Discussion
 
 The aspect ratio is defined as `x/y`, where `x` is the width of the pixel and `y` is the height of the pixel.
 

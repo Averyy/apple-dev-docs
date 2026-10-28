@@ -15,7 +15,7 @@ A static property that allows you to access the Look Around ready-state enumerat
 static ReadyStates: typeof LookAroundReadyState;
 ```
 
-#### Discussion
+## Discussion
 
 For more information about the possible ready-state values that apply to Look Around views, see [`LookAroundReadyState`](../lookaroundreadystate.md).
 

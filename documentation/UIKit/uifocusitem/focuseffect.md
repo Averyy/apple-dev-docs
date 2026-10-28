@@ -23,7 +23,7 @@ optional var focusEffect: UIFocusEffect? { get }
 @property (nonatomic, copy, readonly, nullable) UIFocusEffect * focusEffect;
 ```
 
-#### Discussion
+## Discussion
 
 A `nil` value indicates that the system shouldn’t apply any visual effects when the item becomes focused.
 

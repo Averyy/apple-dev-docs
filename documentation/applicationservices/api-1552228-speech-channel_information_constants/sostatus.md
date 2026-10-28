@@ -13,7 +13,7 @@
 soStatus = 'stat'
 ```
 
-#### Discussion
+## Discussion
 
 Get a speech status information structure forthe speech channel. The `speechInfo` parameteris a pointer to a speech status information structure, describedin [`SpeechStatusInfo`](../speechstatusinfo.md).
 

@@ -23,7 +23,7 @@ struct CallStackTree
 
 - [Analyzing app performance with MetricKit](./analyzing-app-performance-with-metrickit.md)
 
-#### Discussion
+## Discussion
 
 Each diagnostic struct — including [`CrashDiagnostic`](./crashdiagnostic.md), [`HangDiagnostic`](./hangdiagnostic.md), [`CPUExceptionDiagnostic`](./cpuexceptiondiagnostic.md), [`DiskWriteExceptionDiagnostic`](./diskwriteexceptiondiagnostic.md), [`AppLaunchDiagnostic`](./applaunchdiagnostic.md), and [`MemoryExceptionDiagnostic`](./memoryexceptiondiagnostic.md) — carries a `callStackTree` property of this type.
 

@@ -25,7 +25,7 @@ var timestamp: NSNumber { get set }
 
 - [Generating the signature to validate view-through ads](../generating-the-signature-to-validate-view-through-ads.md)
 
-#### Discussion
+## Discussion
 
 Ad networks generate the timestamp, represented as UNIX time in milliseconds, at the time you begin to serve the ad to users.
 

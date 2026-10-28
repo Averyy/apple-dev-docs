@@ -21,11 +21,11 @@ Increments the retain count of a color space.
 extern CGColorSpaceRefCGColorSpaceRetain(CGColorSpaceRef space);
 ```
 
-#### Return Value
+## Return Value
 
 The same color space you passed in as the `space` parameter.
 
-#### Discussion
+## Discussion
 
 This function is equivalent to [`CFRetain`](../CoreFoundation/cfretain.md), except that it does not cause an error if the `cs` parameter is `NULL`.
 

@@ -18,7 +18,7 @@ A value that controls the JSON structure used when encoding a metric report.
 enum EncodingFormat
 ```
 
-#### Discussion
+## Discussion
 
 Set [`encodingFormatKey`](./encodingformatkey.md) in a `JSONEncoder`’s `userInfo` dictionary to choose the encoding format before archiving reports:
 

@@ -18,11 +18,11 @@ Returns a Metal texture containing the current contents of the texture resource 
 final func read(commandBuffer: (any MTLCommandBuffer)?) -> any MTLTexture
 ```
 
-#### Return Value
+## Return Value
 
 A `MTLTexture` ready for GPU read operations.
 
-#### Discussion
+## Discussion
 
 The renderer waits for the provided command buffer to complete before discarding the texture.
 

@@ -26,7 +26,7 @@ func requestDocument(_ request: PKIdentityRequest) async throws -> PKIdentityDoc
 - (void) requestDocument:(PKIdentityRequest *) request completion:(void (^)(PKIdentityDocument *document, NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 The user needs to approve the request before releasing any data. When the user approves the request, the system returns the document. If the user doesn’t approve the request, the handler returns a [`PKIdentityError.Code.cancelled`](../pkidentityerror-swift.struct/code/cancelled.md) error.
 

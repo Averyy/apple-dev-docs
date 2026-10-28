@@ -19,11 +19,11 @@ convenience init(image: NSImage, menu: NSMenu?, target: Any?, action: Selector?)
 + (instancetype) comboButtonWithImage:(NSImage *) image menu:(NSMenu *) menu target:(id) target action:(SEL) action;
 ```
 
-#### Return Value
+## Return Value
 
 A combo button configured with only the specified image.
 
-#### Discussion
+## Discussion
 
 This method sets the [`title`](./title.md) property to an empty string.
 

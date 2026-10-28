@@ -22,7 +22,7 @@ var items: [NSToolbarItem] { get }
 @property (copy, readonly) NSArray<__kindof NSToolbarItem *> * items;
 ```
 
-#### Discussion
+## Discussion
 
 To specify the default order of your toolbar’s items, implement the [`toolbarDefaultItemIdentifiers(_:)`](../nstoolbardelegate/toolbardefaultitemidentifiers%28_%29.md) method in your toolbar delegate object. Use other methods of your delegate object to manage the placement of items in the toolbar.
 

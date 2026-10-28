@@ -20,7 +20,7 @@ Returns an action that represents a change to the playback queue.
 static func updatedQueue(_ change: GroupSessionEvent.Action.QueueChange) -> GroupSessionEvent.Action
 ```
 
-#### Discussion
+## Discussion
 
 When you want to notify the user of changes to the playback queue, call this method to create an action type with the details of the change. Then call the [`showNotice(_:)`](../../groupsession/shownotice%28_%29.md) method to post that action. For example, use the following code to notify the user that someone added a song to the queue.
 

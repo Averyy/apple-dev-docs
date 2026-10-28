@@ -21,7 +21,7 @@ var player: AVPlayer { get set }
 @property (nonatomic, readwrite) AVPlayer * player;
 ```
 
-#### Discussion
+## Discussion
 
 The player associated with the menu controller.
 

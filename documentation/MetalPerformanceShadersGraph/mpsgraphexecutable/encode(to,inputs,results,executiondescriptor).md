@@ -24,7 +24,7 @@ func encode(to commandBuffer: MPSCommandBuffer, inputs inputsArray: [MPSGraphTen
 - (NSArray<MPSGraphTensorData *> *) encodeToCommandBuffer:(MPSCommandBuffer *) commandBuffer inputsArray:(NSArray<MPSGraphTensorData *> *) inputsArray resultsArray:(NSArray<MPSGraphTensorData *> *) resultsArray executionDescriptor:(MPSGraphExecutableExecutionDescriptor *) executionDescriptor;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensorData array with results synchronized to the CPU memory if MPSGraphOptionsSynchronizeResults set.
 

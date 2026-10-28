@@ -21,7 +21,7 @@ Truncate in the middle of the line.
 case middle
 ```
 
-#### Discussion
+## Discussion
 
 Use this kind of truncation to omit characters from the middle of the string. For example, you could truncate the English alphabet as “ab…yz”.
 

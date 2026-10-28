@@ -19,7 +19,7 @@ unowned(unsafe) var currentTextContainer: NSTextContainer? { get }
 @property (assign, readonly, nullable) NSTextContainer * currentTextContainer;
 ```
 
-#### Return Value
+## Return Value
 
 The text container for the text being typeset. This value is valid only while the typesetter is performing layout.
 

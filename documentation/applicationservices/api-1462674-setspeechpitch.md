@@ -19,11 +19,11 @@ func SetSpeechPitch(_ chan: SpeechChannel, _ pitch: Fixed) -> OSErr
 OSErr SetSpeechPitch(SpeechChannel chan, Fixed pitch);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./speech_synthesis_manager.md#1659745).
 
-#### Discussion
+## Discussion
 
 The `SetSpeechPitch` functionchanges the current speech pitch on the speech channel specifiedby the `chan` parameterto the pitch specified by the `pitch` parameter.Typical voice frequencies range from around 90 hertz for a low-pitchedmale voice to perhaps 300 hertz for a high-pitched child’s voice.These frequencies correspond to approximate pitch values in theranges of 30.000 to 40.000 and 55.000 to 65.000, respectively. Althoughfixed-point values allow you to specify a wide range of pitches,not all synthesizers will support the full range of pitches. Ifyour application specifies a pitch that a synthesizer cannot handle, itmay adjust the pitch to fit within an acceptable range. 
 

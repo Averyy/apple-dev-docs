@@ -19,11 +19,11 @@ func SecItemImport(_ importedData: CFData, _ fileNameOrExtension: CFString?, _ i
 OSStatus SecItemImport(CFDataRef importedData, CFStringRef fileNameOrExtension, SecExternalFormat *inputFormat, SecExternalItemType *itemType, SecItemImportExportFlags flags, const SecItemImportExportKeyParameters *keyParams, SecKeychainRef importKeychain, CFArrayRef*outItems);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 This function uses the `fileNameOrExtension`, `inputFormat`, and `itemType` parameters to help it interpret the incoming data. In most cases, [`SecItemImport(_:_:_:_:_:_:_:_:)`](./secitemimport%28_,_,_,_,_,_,_,_%29.md) can correctly interpret an external item if none of these are specified, but it is safer for you not to count on that ability.
 

@@ -17,7 +17,7 @@ The per-forward chunk length for prefilling `count` positions, or `nil` when the
 func chunkLength(forChunking count: Int, defaultStepSize: Int = PrefillParameters.defaultStepSize, maximumStepSize: Int? = nil) -> Int?
 ```
 
-#### Discussion
+## Discussion
 
 `count` is the number of positions the caller intends to chunk — excluding any tail it reserves for the first sampled forward. Models pass their own `defaultStepSize` (used when [`stepSize`](./stepsize.md) is `nil`) and, if they have one, a `maximumStepSize` cap such as a sliding-window size.
 

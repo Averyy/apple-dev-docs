@@ -27,7 +27,7 @@ static var parameterSummary: Self.SummaryContent { get }
 - [Adding parameters to an app intent](../adding-parameters-to-an-app-intent.md)
 - [Creating your first app intent](../creating-your-first-app-intent.md)
 
-#### Discussion
+## Discussion
 
 Use this property to create interactive descriptions of your app intent that include relevant parameter values. You can use this property to provide multiple summaries reflecting specific parameter values or combinations of values. You can also incorporate specific parameters values into your descriptions using variable substitution. The Shortcuts app uses the contents of this property to create bespoke shortcuts for your app.
 

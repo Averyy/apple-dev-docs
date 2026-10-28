@@ -19,7 +19,7 @@ case pushOnPushOff
 NSButtonTypePushOnPushOff
 ```
 
-#### Discussion
+## Discussion
 
 When [`state`](../state.md) is [`on`](../../nscontrol/statevalue/on.md), the button appears illuminated. If the button has borders, it may also appear recessed. A second click returns the button’s [`state`](../state.md) to [`off`](../../nscontrol/statevalue/off.md).
 

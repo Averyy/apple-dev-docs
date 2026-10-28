@@ -16,11 +16,11 @@ Returns the time at which the system displays the frame.
 cp_time_t cp_frame_timing_get_presentation_time(cp_frame_timing_t frame_timing);
 ```
 
-#### Return Value
+## Return Value
 
 The Mach absolute time at which the layer presents the frame.
 
-#### Discussion
+## Discussion
 
 You can use the presentation time as a synchronization point for other parts of your app. For example, if you play an audio clip when the frame appears, configure your code to start playing the clip at the specified time.
 

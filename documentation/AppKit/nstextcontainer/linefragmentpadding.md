@@ -19,7 +19,7 @@ var lineFragmentPadding: CGFloat { get set }
 @property CGFloat lineFragmentPadding;
 ```
 
-#### Discussion
+## Discussion
 
 The padding appears at the beginning and end of the line fragment rectangles. The layout manager uses this value to determine the layout width. The default value of this property is `5.0`.
 

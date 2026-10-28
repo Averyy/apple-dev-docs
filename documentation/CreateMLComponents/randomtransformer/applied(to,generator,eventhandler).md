@@ -22,7 +22,7 @@ Performs the random transformation on a single input.
 func applied(to input: Self.Input, generator: inout some RandomNumberGenerator, eventHandler: EventHandler?) async throws -> Self.Output
 ```
 
-#### Return Value
+## Return Value
 
 An output produced by applying the random transformer to the input.
 

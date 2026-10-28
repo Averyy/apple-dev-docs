@@ -19,11 +19,11 @@ Generates a hand pose prediction for an image.
 func prediction(from image: URL) throws -> [(label: String, confidence: Double)]
 ```
 
-#### Return Value
+## Return Value
 
 An array of prediction tuples.
 
-#### Discussion
+## Discussion
 
 Each prediction consists of an array of tuples that pair a classification label with the model’s confidence in that label.
 

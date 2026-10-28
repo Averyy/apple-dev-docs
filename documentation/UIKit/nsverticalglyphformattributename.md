@@ -20,7 +20,7 @@ The vertical glyph form of the text.
 extern NSAttributedStringKey const NSVerticalGlyphFormAttributeName;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSNumber`](../Foundation/nsnumber.md) object containing an integer. The value `0` indicates horizontal text. The value `1` indicates vertical text. In iOS, horizontal text is always used and specifying a different value is undefined.
 

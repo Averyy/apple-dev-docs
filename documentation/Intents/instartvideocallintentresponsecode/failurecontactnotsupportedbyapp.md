@@ -24,7 +24,7 @@ case failureContactNotSupportedByApp
 INStartVideoCallIntentResponseCodeFailureContactNotSupportedByApp
 ```
 
-#### Discussion
+## Discussion
 
 Use this code when the sender or recipient can’t take part in a video call.
 

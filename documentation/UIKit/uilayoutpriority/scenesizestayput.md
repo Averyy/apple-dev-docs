@@ -23,7 +23,7 @@ static var sceneSizeStayPut: UILayoutPriority { get }
 static const UILayoutPriority UILayoutPrioritySceneSizeStayPut;
 ```
 
-#### Discussion
+## Discussion
 
 Specify constraint priorities that are either higher or lower than this value, rather than equal to it.
 

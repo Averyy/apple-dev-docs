@@ -25,7 +25,7 @@ var decode: UnsafePointer<CGFloat>? { get }
 extern const CGFloat *CGImageGetDecode(CGImageRef image);
 ```
 
-#### Discussion
+## Discussion
 
 For a bitmap image or image mask, for each color component in the source color space, the decode array contains a pair of values denoting the upper and lower limits of a range. When the image is rendered, a linear transform maps the original component value into a relative number, within the designated range, that is appropriate for the destination color space. If remapping of the image’s color values is not allowed, the returned value will be `NULL`.
 

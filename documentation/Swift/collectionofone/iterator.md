@@ -22,7 +22,7 @@ An iterator that produces one or zero instances of an element.
 struct Iterator
 ```
 
-#### Overview
+## Overview
 
 `IteratorOverOne` is the iterator for the `CollectionOfOne` type.
 

@@ -21,11 +21,11 @@ Creates a new dispatch I/O channel from an existing channel.
 extern dispatch_io_tdispatch_io_create_with_io(dispatch_io_type_t type, dispatch_io_t io, dispatch_queue_t queue, void (^cleanup_handler)(int error));
 ```
 
-#### Return Value
+## Return Value
 
 The dispatch I/O channel or `NULL` if an error occurred. The returned object is retained before it is returned; it is your responsibility to close the channel and then release this object when you are done using it.
 
-#### Discussion
+## Discussion
 
 This function creates a new dispatch I/O channel that inherits the file descriptor or path name of the specified channel but whose channel type and policies you can set to be different.
 

@@ -23,7 +23,7 @@ func beginSheet(_ sheetWindow: NSWindow) async -> NSApplication.ModalResponse
 - (void) beginSheet:(NSWindow *) sheetWindow completionHandler:(void (^)(NSModalResponse returnCode)) handler;
 ```
 
-#### Discussion
+## Discussion
 
 If the window already has a presented sheet, this method queues the specified sheet for presentation after the current sheet is dismissed and then returns control to the caller.
 

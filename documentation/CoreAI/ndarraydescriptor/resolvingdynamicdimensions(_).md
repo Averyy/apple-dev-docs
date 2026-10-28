@@ -19,7 +19,7 @@ Returns a new descriptor with all dynamic dimensions replaced by concrete values
 func resolvingDynamicDimensions(_ newShape: [Int]) -> NDArrayDescriptor
 ```
 
-#### Discussion
+## Discussion
 
 If the original model contained ndArray arguments with dynamic shapes, then the `NDArrayDescriptor` returned for that argument from the `InferenceFunctionDescriptor` will contain the value `-1` in the dimensions with dynamic sizes.
 

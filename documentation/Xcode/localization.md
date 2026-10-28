@@ -4,7 +4,7 @@
 
 Expand the market for your app by supporting multiple languages and regions.
 
-#### Overview
+## Overview
 
 Localization is the process of translating and adapting your app into multiple languages and regions. Localize your app so it adapts for people who speak a variety of languages, and who download your app from different App Store territories.
 

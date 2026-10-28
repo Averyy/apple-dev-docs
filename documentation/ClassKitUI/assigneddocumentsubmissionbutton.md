@@ -20,7 +20,7 @@ A button that provides submission functionality for the assigned document.
 @preconcurrency struct AssignedDocumentSubmissionButton
 ```
 
-#### Overview
+## Overview
 
 `AssignedDocumentSubmissionButton` enables students to submit and withdraw assigned documents. The button fetches document data from ClassKit and updates its appearance and behavior based on the current submission status. The button shows loading states during both initial data loading and submission processing.
 

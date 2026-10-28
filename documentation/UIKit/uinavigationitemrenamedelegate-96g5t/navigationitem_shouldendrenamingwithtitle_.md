@@ -18,11 +18,11 @@ Asks the delegate whether to continue or abandon the rename process.
 - (BOOL) navigationItem:(UINavigationItem *) navigationItem shouldEndRenamingWithTitle:(NSString *) title;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) to continue the rename process; [`false`](../../Swift/false.md) to cancel the rename process.
 
-#### Discussion
+## Discussion
 
 Implement this method to return [`false`](../../Swift/false.md) to prevent renaming.
 

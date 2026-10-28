@@ -22,11 +22,11 @@ init?(newBigIntFrom string: String, in context: JSContext)
 + (JSValue *) valueWithNewBigIntFromString:(NSString *) string inContext:(JSContext *) context;
 ```
 
-#### Return Value
+## Return Value
 
 The JSValue representing a JavaScript value with type BigInt.
 
-#### Discussion
+## Discussion
 
 Create a new BigInt value from a numeric string.
 

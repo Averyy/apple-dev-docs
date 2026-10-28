@@ -15,11 +15,11 @@ The declaration to configure a connection to a screen-sharing host.
 object ScreenSharingConnection
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.configuration.screensharing.connection` as the declaration type.
 
-##### Configuration availability
+### Configuration availability
 
 |  |  |
 | --- | --- |
@@ -31,7 +31,7 @@ Specify `com.apple.configuration.screensharing.connection` as the declaration ty
 | Allowed in user scope | macOS |
 | Apply | Multiple configurations are applied separately |
 
-##### Configuration example
+### Configuration example
 
 This configuration sets up a screen-sharing connection to a remote Mac.
 

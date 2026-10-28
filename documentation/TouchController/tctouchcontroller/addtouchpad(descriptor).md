@@ -21,7 +21,7 @@ func addTouchpad(descriptor: TCTouchpadDescriptor) -> TCTouchpad
 - (TCTouchpad *) addTouchpadWithDescriptor:(TCTouchpadDescriptor *) descriptor;
 ```
 
-#### Return Value
+## Return Value
 
 A new `TCTouchpad` instance.
 

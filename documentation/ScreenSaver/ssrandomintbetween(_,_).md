@@ -19,7 +19,7 @@ func SSRandomIntBetween(_ a: Int32, _ b: Int32) -> Int32
 static int SSRandomIntBetween(int a, int b);
 ```
 
-#### Discussion
+## Discussion
 
 The Screen Saver framework automatically seeds the `random()` C function to generate the number.
 

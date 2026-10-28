@@ -23,7 +23,7 @@ convenience init(filterBy: Predicate<Element>? = nil, sortBy: [SortDescriptor<El
 
 Available when `Element` conforms to `PersistentModel` and `SectionTitle` is `Never`.
 
-#### Discussion
+## Discussion
 
 A new `ModelContext` is created from the provided container.
 

@@ -19,11 +19,11 @@
 static SPRotationAxis3DFloat SPRotationAxis3DFloatMakeWithVector(simd_float3 xyz);
 ```
 
-#### Return Value
+## Return Value
 
 A new rotation axis.
 
-#### Discussion
+## Discussion
 
 Creates an axis with components specified as a 3-element SIMD vector.
 

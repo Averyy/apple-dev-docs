@@ -15,7 +15,7 @@ A Boolean value that indicates whether your app is optimized for a carrier-provi
 - **Name**: `com.apple.developer.networking.carrier-constrained.app-optimized`
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 Returning `true` indicates to Apple that your app is optimized for a carrier-provided satellite network.
 

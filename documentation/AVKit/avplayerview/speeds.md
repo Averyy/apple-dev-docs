@@ -19,7 +19,7 @@ var speeds: [AVPlaybackSpeed] { get set }
 @property (copy) NSArray<AVPlaybackSpeed *> * speeds;
 ```
 
-#### Discussion
+## Discussion
 
 By default, this property value equals [`systemDefaultSpeeds`](../avplaybackspeed/systemdefaultspeeds.md). Setting this property to an empty array hides the playback speed selection user interface.
 

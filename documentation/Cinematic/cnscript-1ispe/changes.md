@@ -19,7 +19,7 @@ An object that represents a snapshot of the changes made to a movie script, incl
 struct Changes
 ```
 
-#### Overview
+## Overview
 
 Use as a snapshot to quickly revert to previously saved edits.
 

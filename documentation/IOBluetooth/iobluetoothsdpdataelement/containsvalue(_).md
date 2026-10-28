@@ -19,11 +19,11 @@ func containsValue(_ cmpValue: NSObject!) -> Bool
 - (BOOL) containsValue:(NSObject *) cmpValue;
 ```
 
-#### Return Value
+## Return Value
 
 Returns TRUE if the target’s value either matches the given value or if it contains the given value.
 
-#### Discussion
+## Discussion
 
 This method works just like -containsDataElement: except that it is comparing the value objects directly.
 

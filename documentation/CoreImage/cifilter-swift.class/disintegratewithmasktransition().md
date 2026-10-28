@@ -24,11 +24,11 @@ class func disintegrateWithMaskTransition() -> any CIFilter & CIDisintegrateWith
 + (CIFilter<CIDisintegrateWithMaskTransition> *) disintegrateWithMaskTransitionFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The transition image.
 
-#### Discussion
+## Discussion
 
 This method applies the disintegrate with mask transition filter to an image. The effect transitions from one image to another using the shapes defined by the mask image.
 

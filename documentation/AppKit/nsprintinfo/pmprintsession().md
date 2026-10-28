@@ -19,11 +19,11 @@ func pmPrintSession() -> UnsafeMutableRawPointer
 - (void *) PMPrintSession;
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to a [`PMPrintSession`](../../applicationservices/pmprintsession.md) object, an opaque type that stores information about a print job. You should not call `PMRelease` to release the returned object, except to balance calls to `PMRetain` that your code also issued.
 
-#### Discussion
+## Discussion
 
 The information in the returned `PMPrintSession` object is consistent with the receiver’s session information at the time this method is called. Subsequent changes to the receiving `NSPrintInfo` object do not result in changes to the information in the `PMPrintSession` object.
 

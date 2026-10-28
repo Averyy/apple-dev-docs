@@ -21,7 +21,7 @@ func setMode(_ mode: NSColorPanel.Mode)
 - (void) setMode:(NSColorPanelMode) mode;
 ```
 
-#### Discussion
+## Discussion
 
 This method is invoked by the `NSColorPanel` method [`mode`](../nscolorpanel/mode-swift.property.md) method to ensure the color picker reflects the current mode. For example, invoke this method during color picker initialization to ensure that all color pickers are restored to the mode the user left them in the last time an `NSColorPanel` was used.
 

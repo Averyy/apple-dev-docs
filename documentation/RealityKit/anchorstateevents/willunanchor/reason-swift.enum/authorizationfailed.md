@@ -20,7 +20,7 @@ Anchor type is not authorized
 case authorizationFailed
 ```
 
-#### Discussion
+## Discussion
 
 For more information on anchor authorization, see `SpatialTrackingSession.Configuration.AnchorCapability`
 

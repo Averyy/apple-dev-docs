@@ -25,11 +25,11 @@ class func sharedKeySet(forKeys keys: [any NSCopying]) -> Any
 + (id) sharedKeySetForKeys:(NSArray<id<NSCopying>> *) keys;
 ```
 
-#### Return Value
+## Return Value
 
 A shared key set object.
 
-#### Discussion
+## Discussion
 
 The array of `keys` may contain duplicates which are quietly ignored. Duplicate hash values of the keys are quietly allowed, but may cause lower performance and increase memory usage.
 

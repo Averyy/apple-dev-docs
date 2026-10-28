@@ -21,7 +21,7 @@ Returns the mean of magnitudes of a single-precision vector.
 static func meanMagnitude<U>(_ vector: U) -> Float where U : AccelerateBuffer, U.Element == Float
 ```
 
-#### Discussion
+## Discussion
 
 This function calculates and returns the mean magnitude of a supplied vector.
 

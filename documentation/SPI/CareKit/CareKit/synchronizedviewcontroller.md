@@ -18,7 +18,7 @@ A view controller that updates a view using a stream of data.
 class SynchronizedViewController<ViewSynchronizer> where ViewSynchronizer : ViewSynchronizing
 ```
 
-#### Overview
+## Overview
 
 This view controller observes a stream of data from the view it’s mapped to, according to `viewSynchronizer`.
 

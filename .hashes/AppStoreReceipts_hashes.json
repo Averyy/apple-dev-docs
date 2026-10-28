@@ -172,9 +172,25 @@
       "file_path": "documentation/AppStoreReceipts/responsebody/latest_receipt_info-data.dictionary.md",
       "hash": "7e538bde9551a7851ebca19ce0d0f5bf60a8ec839fcd115b2e13c230320bf44e"
     },
+    "https://developer.apple.com/tutorials/data/documentation/appstorereceipts/responsebody/latest_receipt_info-data.dictionary/is_in_intro_offer_period.json": {
+      "error": "HTTP 404",
+      "status": "error"
+    },
     "https://developer.apple.com/tutorials/data/documentation/appstorereceipts/responsebody/pending_renewal_info-data.dictionary.json": {
       "file_path": "documentation/AppStoreReceipts/responsebody/pending_renewal_info-data.dictionary.md",
       "hash": "d96c03fc8f80e5b6c8f602c07d22471349ed66de7876edc32e8a64269c6dd11c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/appstorereceipts/responsebody/pending_renewal_info-data.dictionary/auto_renew_status.json": {
+      "error": "HTTP 404",
+      "status": "error"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/appstorereceipts/responsebody/pending_renewal_info-data.dictionary/is_in_billing_retry_period.json": {
+      "error": "HTTP 404",
+      "status": "error"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/appstorereceipts/responsebody/pending_renewal_info-data.dictionary/offer_code_ref_name.json": {
+      "error": "HTTP 404",
+      "status": "error"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstorereceipts/responsebody/receipt-data.dictionary.json": {
       "file_path": "documentation/AppStoreReceipts/responsebody/receipt-data.dictionary.md",
@@ -183,6 +199,38 @@
     "https://developer.apple.com/tutorials/data/documentation/appstorereceipts/responsebody/receipt-data.dictionary/in_app-data.dictionary.json": {
       "file_path": "documentation/AppStoreReceipts/responsebody/receipt-data.dictionary/in_app-data.dictionary.md",
       "hash": "13e204fb94282e198ebfbb33881241de38c5ff8e0c42ac7bcbbfe0131358647b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/appstorereceipts/responsebody/receipt-data.dictionary/in_app-data.dictionary/cancellation_date_ms.json": {
+      "error": "HTTP 404",
+      "status": "error"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/appstorereceipts/responsebody/receipt-data.dictionary/in_app-data.dictionary/expires_date_ms.json": {
+      "error": "HTTP 404",
+      "status": "error"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/appstorereceipts/responsebody/receipt-data.dictionary/in_app-data.dictionary/is_in_intro_offer_period.json": {
+      "error": "HTTP 404",
+      "status": "error"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/appstorereceipts/responsebody/receipt-data.dictionary/in_app-data.dictionary/is_trial_period.json": {
+      "error": "HTTP 404",
+      "status": "error"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/appstorereceipts/responsebody/receipt-data.dictionary/in_app-data.dictionary/original_transaction_id.json": {
+      "error": "HTTP 404",
+      "status": "error"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/appstorereceipts/responsebody/receipt-data.dictionary/in_app-data.dictionary/promotional_offer_id.json": {
+      "error": "HTTP 404",
+      "status": "error"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/appstorereceipts/responsebody/receipt-data.dictionary/in_app-data.dictionary/transaction_id.json": {
+      "error": "HTTP 404",
+      "status": "error"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/appstorereceipts/responsebody/status.json": {
+      "error": "HTTP 404",
+      "status": "error"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstorereceipts/status.json": {
       "file_path": "documentation/AppStoreReceipts/status.md",
@@ -203,8 +251,8 @@
   },
   "metadata": {
     "render": {
-      "version": 3
+      "version": 4
     },
-    "total_pages": 50
+    "total_pages": 62
   }
 }

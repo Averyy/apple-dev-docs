@@ -25,7 +25,7 @@ let MPLanguageOptionCharacteristicIsMainProgramContent: String
 extern NSString * const MPLanguageOptionCharacteristicIsMainProgramContent;
 ```
 
-#### Discussion
+## Discussion
 
 An option that presents the main program audio for the presentation, regardless of locale, would typically have this characteristic. The system infers the presence of this characteristic for a language option and considers any option that doesn’t have the characteristic [`MPLanguageOptionCharacteristicIsAuxiliaryContent`](./mplanguageoptioncharacteristicisauxiliarycontent.md) to have the characteristic.
 

@@ -26,7 +26,7 @@ var snapshotData: Data { get set }
 @property (atomic, copy) NSData * snapshotData;
 ```
 
-#### Discussion
+## Discussion
 
 You can assign another [`NSData`](../../Foundation/nsdata.md) object containing extended snapshot data to this property. The elements of the extended snapshot are updated to the values stored in the flattened data. This triggers any value handlers attached to those elements.
 

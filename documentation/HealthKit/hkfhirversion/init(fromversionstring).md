@@ -23,7 +23,7 @@ convenience init(fromVersionString versionString: String) throws
 + (instancetype) versionFromVersionString:(NSString *) versionString error:(NSError **) errorOut;
 ```
 
-#### Discussion
+## Discussion
 
 The string must be in the following format: `<major>.<minor>.<patch>`.
 

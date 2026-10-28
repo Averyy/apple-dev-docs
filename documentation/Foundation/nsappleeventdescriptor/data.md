@@ -20,7 +20,7 @@ var data: Data { get }
 @property (copy, readonly) NSData * data;
 ```
 
-#### Discussion
+## Discussion
 
 An instance of `NSData` containing the receiver’s data, or `nil` if an error occurs.
 

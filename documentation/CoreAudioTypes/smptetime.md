@@ -25,7 +25,7 @@ struct SMPTETime
 struct SMPTETime;
 ```
 
-#### Overview
+## Overview
 
 SMPTE (Society of Motion Picture and Television Engineers, pronounced “SIMPtee”) times are used to correlate a point in an audio stream with an external event. For example, a SMPTE time can be used to correlate a sound in an audio file with a video frame in a movie file.
 

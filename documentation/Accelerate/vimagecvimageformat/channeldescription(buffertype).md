@@ -21,11 +21,11 @@ Returns the range and clamp limits for a specified channel in a Core Video image
 func channelDescription(bufferType: vImage.BufferType) -> vImageChannelDescription?
 ```
 
-#### Return Value
+## Return Value
 
 A [`vImageChannelDescription`](../vimagechanneldescription.md) structure that describes the range and clamp limits for the specified channel.
 
-#### Discussion
+## Discussion
 
 Use this function to return the [`vImageChannelDescription`](../vimagechanneldescription.md) description for a specified channel in a Core Video format.
 

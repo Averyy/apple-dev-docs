@@ -22,7 +22,7 @@ var overflowPresentationSource: (any UIPopoverPresentationControllerSourceItem)?
 @property (nonatomic, strong, readonly, nullable) id<UIPopoverPresentationControllerSourceItem> overflowPresentationSource;
 ```
 
-#### Discussion
+## Discussion
 
 If the overflow menu button for the navigation item is visible, this property returns a non-`nil` item that you can use as a presentation source — for example, to present a custom popover that anchors to the overflow menu button. Otherwise, this property returns `nil`.
 

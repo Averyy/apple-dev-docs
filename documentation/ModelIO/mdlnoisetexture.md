@@ -24,7 +24,7 @@ class MDLNoiseTexture
 @interface MDLNoiseTexture : MDLTexture
 ```
 
-#### Overview
+## Overview
 
 Like other procedural [`MDLTexture`](./mdltexture.md) subclasses, the [`MDLNoiseTexture`](./mdlnoisetexture.md) class generates texel data only when that data is first referenced, and then caches it for future use.
 

@@ -26,11 +26,11 @@ func isKind(of aClass: AnyClass) -> Bool
 - (BOOL) isKindOfClass:(Class) aClass;
 ```
 
-#### Return Value
+## Return Value
 
 [`YES`](../yes.md) if the receiver is an instance of `aClass` or an instance of any class that inherits from `aClass`, otherwise [`NO`](../no.md).
 
-#### Discussion
+## Discussion
 
 For example, in this code, [`isKind(of:)`](./iskind%28of%29.md) would return [`YES`](../yes.md) because, in Foundation, the [`NSArchiver`](../../Foundation/nsarchiver.md) class inherits from [`NSCoder`](../../Foundation/nscoder.md):
 

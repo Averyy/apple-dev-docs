@@ -22,7 +22,7 @@ var monitoredRegions: Set<CLRegion> { get }
 @property (nonatomic, copy, readonly) NSSet<__kindof CLRegion *> * monitoredRegions;
 ```
 
-#### Discussion
+## Discussion
 
 You cannot add regions to this property directly. Instead, you must register regions by calling the [`startMonitoring(for:)`](./startmonitoring%28for%29.md) method. The regions in this property are shared by all instances of the [`CLLocationManager`](../cllocationmanager.md) class in your app.
 

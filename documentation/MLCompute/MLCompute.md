@@ -15,7 +15,7 @@ Accelerate training and validation of neural networks across the CPU and one or 
 
 > **Deprecated**: ML Compute is deprecated. Instead, use [`BNNS`](../Accelerate/bnns.md) for CPU tasks, [Metal Performance Shaders](../MetalPerformanceShaders/MetalPerformanceShaders.md) for GPU work, and [Core ML](../CoreML/CoreML.md) for tensor APIs.
 
-#### Overview
+## Overview
 
 ML Compute uses high performance [`BNNS`](../Accelerate/bnns.md) primitives from the Accelerate framework for the CPU, and [Metal Performance Shaders](../MetalPerformanceShaders/MetalPerformanceShaders.md) for the GPU.
 

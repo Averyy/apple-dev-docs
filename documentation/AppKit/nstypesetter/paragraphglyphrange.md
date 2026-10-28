@@ -19,7 +19,7 @@ var paragraphGlyphRange: NSRange { get }
 @property (readonly) NSRange paragraphGlyphRange;
 ```
 
-#### Return Value
+## Return Value
 
 The glyph range currently being processed.
 

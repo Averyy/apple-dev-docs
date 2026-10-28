@@ -19,11 +19,11 @@ func openRFCOMMChannelAsync(_ rfcommChannel: AutoreleasingUnsafeMutablePointer<I
 - (IOReturn) openRFCOMMChannelAsync:(IOBluetoothRFCOMMChannel **) rfcommChannel withChannelID:(BluetoothRFCOMMChannelID) channelID delegate:(id) channelDelegate;
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if the open process was successfully started (or if an existing RFCOMM channel was found). The channel must be released when the caller is done with it.
 
-#### Discussion
+## Discussion
 
 This method will begin the process of opening a new RFCOMM channel to the target device. The baseband connection to the device will be opened if it is not open already. The RFCOMM channel open process will not complete until the client has registered an incoming data listener on the new channel. The RFCOMM channel object is already retained when this function returns success; the channel must be released when the caller is done with it.
 

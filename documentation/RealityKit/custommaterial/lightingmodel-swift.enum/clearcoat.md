@@ -19,7 +19,7 @@ The entity renders using physically based rendering techniques with a clearcoat.
 case clearcoat
 ```
 
-#### Discussion
+## Discussion
 
 A custom material using the [`CustomMaterial.LightingModel.clearcoat`](./clearcoat.md) lighting model uses physically based rendering, including a clearcoat if the material’s surface shader calls `params.surface().set_clearcoat()`.
 

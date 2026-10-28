@@ -21,7 +21,7 @@ An enumeration of types that can appear as a placeholder in a string interpolati
 enum Placeholder
 ```
 
-#### Overview
+## Overview
 
 Foundation uses this type when you create a string with the `\(placeholder: type)` syntax and supply an array of replacement values in a `String.LocalizationOptions`. Placeholders work with [`String`](../../string.md) initializers that take an `options:` parameter:
 

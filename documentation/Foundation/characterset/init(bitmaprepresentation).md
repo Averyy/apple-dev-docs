@@ -21,7 +21,7 @@ Initialize with a bitmap representation.
 init(bitmapRepresentation data: Data)
 ```
 
-#### Discussion
+## Discussion
 
 This method is useful for creating a character set object with data from a file or other external data source.
 

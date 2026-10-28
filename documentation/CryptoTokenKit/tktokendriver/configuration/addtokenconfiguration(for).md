@@ -25,11 +25,11 @@ func addTokenConfiguration(for instanceID: TKToken.InstanceID) -> TKToken.Config
 - (TKTokenConfiguration *) addTokenConfigurationForTokenInstanceID:(TKTokenInstanceID) instanceID;
 ```
 
-#### Return Value
+## Return Value
 
 The configuration class for the token.
 
-#### Discussion
+## Discussion
 
 This method adds the created configuration into the [`tokenConfigurations`](./tokenconfigurations.md) dictionary. Adding a configuration with an `instanceID` that already exists replaces the existing configuration with a new empty configuration.
 

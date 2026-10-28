@@ -20,7 +20,7 @@ unowned(unsafe) var delegate: (any IKDeviceBrowserViewDelegate)! { get set }
 @property (assign) id<IKDeviceBrowserViewDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate object must conform to the [`IKDeviceBrowserViewDelegate`](../ikdevicebrowserviewdelegate.md) protocol.
 

@@ -25,11 +25,11 @@ func SecTrustCopyPolicies(_ trust: SecTrust, _ policies: UnsafeMutablePointer<CF
 OSStatus SecTrustCopyPolicies(SecTrustRef trust, CFArrayRef*policies);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 It is safe to call this function concurrently on two or more threads as long as it is not used to get values from a trust management object that is simultaneously being changed by another function. For example, you can call this function on two threads at the same time, but not if you are simultaneously calling the [`SecTrustSetPolicies(_:_:)`](./sectrustsetpolicies%28_,_%29.md) function for the same trust management object on another thread.
 

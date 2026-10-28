@@ -5,7 +5,7 @@
 
 Trim the silent priming samples to preserve correct synchronization.
 
-#### Overview
+## Overview
 
 If an audio playback system attempting to synchronize AAC encoded audio and video does not compensate for encoder delay (that is, does not discard the silent priming samples), the audio and video will be out of synchronization. In the example above, it will be off by 2112 samples—The audio will be 2112 samples behind the video because the first real audio sample is actually the 2113th sample after the beginning of the decoded PCM data.
 

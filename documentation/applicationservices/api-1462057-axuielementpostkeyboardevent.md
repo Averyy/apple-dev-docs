@@ -15,7 +15,7 @@ Posts keys to the specified application.
 AXError AXUIElementPostKeyboardEvent(AXUIElementRef application, CGCharCode keyChar, CGKeyCode virtualKey, Boolean keyDown);
 ```
 
-#### Return Value
+## Return Value
 
 If unsuccessful, `AXUIElementPostKeyboardEvent` may return one of the following error codes, among others:
 
@@ -25,7 +25,7 @@ If unsuccessful, `AXUIElementPostKeyboardEvent` may return one of the following 
 - **`kAXErrorCannotComplete`**: The function cannot complete because messaging has failed in some way.
 - **`kAXErrorNotImplemented`**: The process does not fully support the accessibility API.
 
-#### Discussion
+## Discussion
 
 This is similar to [`CGPostKeyboardEvent`](../CoreGraphics/cgpostkeyboardevent%28_,_,_%29.md) (which synthesizes a low-level keyboard event on the local machine), but it allows you to specify the target application as opposed to always sending the events to the active application. If the system-wide accessibility object is passed in the `application` parameter, the event is sent to the active application.
 

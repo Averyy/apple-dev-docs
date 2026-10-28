@@ -22,7 +22,7 @@ var warnings: [AVCaptionConversionWarning] { get }
 @property (readonly) NSArray<AVCaptionConversionWarning *> * warnings;
 ```
 
-#### Discussion
+## Discussion
 
 This property value may change while the validator’s status is [`AVCaptionConversionValidator.Status.validating`](./status-swift.enum/validating.md).
 

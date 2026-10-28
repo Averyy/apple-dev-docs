@@ -16,11 +16,11 @@ Starts the device service and associates it with the specified provider object.
 virtual kern_return_t Start(IOService *provider);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 
-#### Discussion
+## Discussion
 
 After successfully matching the specified provider to your device, the system instantiates your device object and calls this method. Don’t override this method directly. Instead, implement your custom initialization code in the [`handleStart`](./handlestart.md) method.
 

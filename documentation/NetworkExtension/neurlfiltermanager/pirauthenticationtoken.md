@@ -18,7 +18,7 @@ A PIR per-user authentication token string.
 var pirAuthenticationToken: String? { get }
 ```
 
-#### Discussion
+## Discussion
 
 This value is an HTTP bearer token that authenticates the person using your app. The system uses this token to attest that it is a valid user when requesting anonymous authentication tokens.
 

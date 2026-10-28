@@ -5,11 +5,11 @@
 
 Choose a font family for Apple News Format that’s supported in iOS, iPadOS, and macOS.
 
-#### Overview
+## Overview
 
 Fonts determine the look of text in your article. Within font families, the properties `fontWeight`, `fontWidth`, and `fontStyle` provide variations on the font for bolder or lighter, condensed or expanded, and regular or italicized text. To specify a font variant in Apple News Format, you can also use an explicit font variant’s PostScript name (listed in parentheses) in a `fontName` property without style modifiers (see [`TextStyle`](../AppleNewsFormat/textstyle.md)). For information about using fonts in Apple News Format, see [Defining and Applying Text Styles](./defining-and-applying-text-styles.md).
 
-##### Choose a Font Family
+### Choose a Font Family
 
 The following table lists font families for Apple News Format that are supported in iOS, iPadOS, and macOS.
 
@@ -72,7 +72,7 @@ The following table lists font families for Apple News Format that are supported
 | Zapf Dingbats | fontWeight: regular (ZapfDingbatsITC) |
 | Zapfino | fontWeight: regular (Zapfino) |
 
-##### Apply the Fonts to Your Article
+### Apply the Fonts to Your Article
 
 The following example code shows how to apply the Arial font family to your article.
 

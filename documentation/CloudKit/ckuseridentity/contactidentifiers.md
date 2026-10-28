@@ -27,7 +27,7 @@ var contactIdentifiers: [String] { get }
 @property (copy, readonly) NSArray<NSString *> * contactIdentifiers;
 ```
 
-#### Discussion
+## Discussion
 
 Identities that CloudKit discovers using [`CKDiscoverAllUserIdentitiesOperation`](../ckdiscoveralluseridentitiesoperation.md) correspond to entries in the local Contacts database, matching the identifier on [`CNContact`](../../Contacts/cncontact.md).  Use these identifiers with the Contacts database to get additional information about the contacts. Multiple identifiers can exist for a single discovered user because multiple contacts can contain the same email addresses or phone numbers.
 

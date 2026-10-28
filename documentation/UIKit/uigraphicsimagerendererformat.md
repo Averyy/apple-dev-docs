@@ -23,7 +23,7 @@ class UIGraphicsImageRendererFormat
 @interface UIGraphicsImageRendererFormat : UIGraphicsRendererFormat
 ```
 
-#### Overview
+## Overview
 
 Use an instance of [`UIGraphicsImageRendererFormat`](./uigraphicsimagerendererformat.md) to initialize a [`UIGraphicsImageRenderer`](./uigraphicsimagerenderer.md) object with nondefault attributes.
 

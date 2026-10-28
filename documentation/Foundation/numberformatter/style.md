@@ -25,7 +25,7 @@ enum Style
 enum NSNumberFormatterStyle : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 The table below provides examples of each formatting style for the U.S., France, and China.
 

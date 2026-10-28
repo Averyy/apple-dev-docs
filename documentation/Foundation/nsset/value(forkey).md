@@ -25,11 +25,11 @@ func value(forKey key: String) -> Any
 - (id) valueForKey:(NSString *) key;
 ```
 
-#### Return Value
+## Return Value
 
 A set containing the results of invoking `valueForKey:` (with the argument `key`) on each of the receiving set’s members.
 
-#### Discussion
+## Discussion
 
 The returned set might not have the same number of members as the receiving set. The returned set will not contain any elements corresponding to instances of `valueForKey:` returning `nil` (note that this is in contrast with `NSArray`’s implementation, which may put `NSNull` values in the arrays it returns).
 

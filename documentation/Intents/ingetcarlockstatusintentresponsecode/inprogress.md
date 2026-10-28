@@ -23,7 +23,7 @@ case inProgress
 INGetCarLockStatusIntentResponseCodeInProgress
 ```
 
-#### Discussion
+## Discussion
 
 When handling the intent, return this code if your request may take longer than a few seconds to complete.
 

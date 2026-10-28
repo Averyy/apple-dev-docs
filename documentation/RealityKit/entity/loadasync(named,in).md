@@ -24,11 +24,11 @@ Returns a load request that creates an entity by asynchronously loading it from 
 
 - [Loading remote assets in multiplayer apps](../loading-remote-assets.md)
 
-#### Return Value
+## Return Value
 
 A resource loader that publishes the root entity in the loaded file.
 
-#### Discussion
+## Discussion
 
 RealityKit supports loading entities from USD (`.usd`, `.usda`, `.usdc`, `.usdz`) and Reality (`.reality`) files.
 

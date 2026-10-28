@@ -24,7 +24,7 @@ var useConstantColor: GLboolean { get set }
 @property (nonatomic, assign) GLboolean useConstantColor;
 ```
 
-#### Discussion
+## Discussion
 
 If the value is set to `GL_TRUE`, then the value stored in the [`constantColor`](./constantcolor.md) property is used as the color value for each vertex. If the value is set to `GL_FALSE`, then your application is expected to enable the [`GLKVertexAttrib.color`](../glkvertexattrib/color.md) attribute and provide per-vertex color data. The default value is `GL_FALSE`.
 

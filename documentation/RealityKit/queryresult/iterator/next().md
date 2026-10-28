@@ -20,7 +20,7 @@ Advances to the next entity and returns it.
 mutating func next() -> Element?
 ```
 
-#### Return Value
+## Return Value
 
 Calling this method advances the iterator to the next entity and returns it. If there is no next element, returns `nil`.
 

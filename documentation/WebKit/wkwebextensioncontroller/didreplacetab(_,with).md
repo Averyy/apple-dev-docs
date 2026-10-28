@@ -23,7 +23,7 @@ func didReplaceTab(_ oldTab: any WKWebExtensionTab, with newTab: any WKWebExtens
 - (void) didReplaceTab:(id<WKWebExtensionTab>) oldTab withTab:(id<WKWebExtensionTab>) newTab;
 ```
 
-#### Discussion
+## Discussion
 
 This method informs all loaded extensions of the replacement of a tab, ensuring consistent understanding across extensions.
 

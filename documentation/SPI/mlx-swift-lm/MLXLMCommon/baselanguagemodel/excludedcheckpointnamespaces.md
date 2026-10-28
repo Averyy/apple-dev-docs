@@ -22,7 +22,7 @@ var excludedCheckpointNamespaces: [String] { get }
 
 - [Model Compatibility](../model-compatibility.md)
 
-#### Discussion
+## Discussion
 
 Namespaces match whole dot-separated prefixes of the names before [`prepareCheckpoint(_:)`](./preparecheckpoint%28_%29.md). The default is empty.
 

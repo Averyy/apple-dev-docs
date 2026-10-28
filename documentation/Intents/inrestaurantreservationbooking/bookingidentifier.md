@@ -30,7 +30,7 @@ var bookingIdentifier: String { get set }
 @property (atomic, copy) NSString * bookingIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 Assign a unique identifier to this property that you can use later to complete the reservation. The identifier should be a string that you can use to look up the reservation details in your system.
 

@@ -19,7 +19,7 @@ func updateController()
 - (void) updateController;
 ```
 
-#### Discussion
+## Discussion
 
 The preview panel automatically updates its controller (by searching the responder chain) whenever the main or key window changes. You should only invoke this method if the responder chain changes without explicit notice.
 

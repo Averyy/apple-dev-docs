@@ -19,7 +19,7 @@ static func description(for element: Any) -> String?
 extern NSString *NSAccessibilityRoleDescriptionForUIElement(id element);
 ```
 
-#### Discussion
+## Discussion
 
 This function is like the [`description(with:)`](./description%28with%29.md) function, except that it queries `element` to get the role and subrole. The [`description(with:)`](./description%28with%29.md) function is more efficient, but this function is useful for accessorizing base classes so that they properly handle derived classes, which may override the subrole or even the role.
 

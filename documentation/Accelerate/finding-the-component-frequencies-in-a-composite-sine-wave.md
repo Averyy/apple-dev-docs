@@ -5,7 +5,7 @@
 
 Use 1D fast Fourier transform to compute the frequency components of a signal.
 
-#### Overview
+## Overview
 
 Accelerate’s vDSP module provides functions to perform 1D fast Fourier transforms (FFTs) on vectors of data, such as audio signals. The example below shows an input signal (left) and its frequency domain representation (right) after transforming the signal with a forward FFT.
 
@@ -13,7 +13,7 @@ Accelerate’s vDSP module provides functions to perform 1D fast Fourier transfo
 
 You can inspect the frequency-domain data of a forward FFT to compute the individual sine wave components of a composite wave. The technique described in this article is applicable to many digital signal processing applications, for example, finding the dominant frequencies in a dual-tone multi-frequency (DTMF) signal or removing noise from a signal.
 
-##### Synthesize a test signal
+### Synthesize a test signal
 
 The function below generates a composite sine wave from a supplied array of component frequencies and amplitudes:
 
@@ -33,7 +33,7 @@ static func synthesizeSignal(frequencyAmplitudePairs: [(f: Float, a: Float)],
 }
 ```
 
-##### Create the composite signal
+### Create the composite signal
 
 Create an array that contains frequency-amplitude tuples. You define the frequencies as the number of cycles per `n`. The highest measurable frequency, known as the Nyquist frequency, is the element with index `n/2`, which is `1023` in a zero-based array that contains `2048` elements.
 
@@ -55,7 +55,7 @@ The image below is a visualization of composite sine waves in `signal`:
 
 ![A diagram that shows a plot of the original signal in the time domain.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-4264725@2x.png)
 
-##### Create the FFT setup
+### Create the FFT setup
 
 Create a setup object that contains a precalculated weights array of complex exponentials required to perform the FFT operations. The values in the weights array simplify the FFT calculation. Creating this setup object can be expensive, so do it only once, for example, when starting your app. After creating the setup object, you can reuse it later.
 
@@ -73,7 +73,7 @@ guard let fftSetUp = vDSP.FFT(log2n: log2n,
 
 You can use this setup object for similarly sized smaller FFTs. However, using a weights array built for an FFT that processes a large number of elements can degrade performance for an FFT that processes a significantly smaller number of elements.
 
-##### Create the source and destination arrays for the forward FFT
+### Create the source and destination arrays for the forward FFT
 
 The FFT operates on complex numbers. That is, it operates on numbers that contain a real part and an imaginary part. Create two arrays — one for the real parts and one for the imaginary parts — for the input and output to the FFT operation:
 
@@ -92,7 +92,7 @@ var forwardOutputImag = [Float](repeating: 0,
 
 Because each complex value stores two real values, the length of each array is half that of `signal`.
 
-##### Perform the forward FFT
+### Perform the forward FFT
 
 You use [`DSPSplitComplex`](./dspsplitcomplex.md) structures to pass the separate real and imaginary arrays of the input and the output data to the FFT transform function.
 
@@ -136,7 +136,7 @@ forwardInputReal.withUnsafeMutableBufferPointer { forwardInputRealPtr in
 
 On return, `forwardOutputReal` contains the real parts of the forward FFT, and `forwardOutputImag` contains the imaginary parts of the frequency-domain representation of the original signal.
 
-##### Compute component frequencies in the frequency-domain data
+### Compute component frequencies in the frequency-domain data
 
 Use the [`vDSP_zaspec`](./vdsp_zaspec.md) function to compute the autospectrum of the frequency-domain data in the `forwardOutputReal` and `forwardOutputImag` arrays. The autospectrum is the sum of squares of the complex and real parts of each complex frequency-domain element. The code below computes the autospectrum:
 
@@ -205,7 +205,7 @@ print(componentFrequencyAmplitudePairs.map {
 })
 ```
 
-##### Recreate the original signal
+### Recreate the original signal
 
 Use an inverse FFT to recreate a signal in the time domain, using the frequency-domain data returned by the forward FFT.
 

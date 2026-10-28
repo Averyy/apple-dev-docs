@@ -23,7 +23,7 @@ enum SpineLocation
 enum UIPageViewControllerSpineLocation : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 To set the spine location, wrap one of these constants in an [`NSNumber`](../../Foundation/nsnumber.md) object and set it as the value for the [`spineLocation`](./optionskey/spinelocation.md) key in the options dictionary passed to the [`init(transitionStyle:navigationOrientation:options:)`](./init%28transitionstyle,navigationorientation,options%29.md) method.
 

@@ -24,11 +24,11 @@ class func temperatureAndTint() -> any CIFilter & CITemperatureAndTint
 + (CIFilter<CITemperatureAndTint> *) temperatureAndTintFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies the image temperature and tint filter to an image. The effect adjusts the white balance of the input image to match the `targetNeutral` property, resulting in a cooler or warmer tone image.
 

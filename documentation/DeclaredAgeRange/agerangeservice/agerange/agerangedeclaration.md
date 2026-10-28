@@ -18,7 +18,7 @@ Information about how the person set their age range.
 var ageRangeDeclaration: AgeRangeService.AgeRangeDeclaration?
 ```
 
-#### Discussion
+## Discussion
 
 This property provides context about the reliability and source of the age information. Use this information to determine the appropriate level of content restriction required for your app’s features.
 

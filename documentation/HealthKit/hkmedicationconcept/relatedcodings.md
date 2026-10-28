@@ -24,7 +24,7 @@ var relatedCodings: Set<HKClinicalCoding> { get }
 @property (nonatomic, copy, readonly) NSSet<HKClinicalCoding *> * relatedCodings;
 ```
 
-#### Discussion
+## Discussion
 
 Each coding links the medication to an external medical terminology system, such as RxNorm.
 

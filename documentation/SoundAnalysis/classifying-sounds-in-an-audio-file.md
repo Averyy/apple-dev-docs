@@ -5,11 +5,11 @@
 
 Identify individual sounds in a file, such as a recording, with an audio file analyzer.
 
-#### Overview
+## Overview
 
 Recognize sounds, such as laughter and applause, when they occur in a recording by processing audio files with an [`SNAudioFileAnalyzer`](./snaudiofileanalyzer.md). For example, a sound recording app can use an audio file analyzer to assign searchable metadata tags to each sound file in its library. The same app could also use the analyzer to add timestamps to each recording so that the user can jump to a moment with a specific sound.
 
-##### Create a Sound Classification Request
+### Create a Sound Classification Request
 
 Create an [`SNClassifySoundRequest`](./snclassifysoundrequest.md) by passing a version identifier to the [`init(classifierIdentifier:)`](./snclassifysoundrequest/init%28classifieridentifier%29.md) initializer.
 
@@ -37,7 +37,7 @@ let soundClassifier = try SoundClassifier(configuration: defaultConfig)
 let classifySoundRequest = try SNClassifySoundRequest(mlModel: soundClassifier.model)
 ```
 
-##### Implement a Results Observer
+### Implement a Results Observer
 
 Implement a type that receives results from an audio analyzer by adopting the [`SNResultsObserving`](./snresultsobserving.md) protocol. The protocol defines the methods an analyzer calls as it generates results or errors, or when it completes a task.
 
@@ -86,7 +86,7 @@ The observer in this example prints the prediction’s result — a timestamp, 
 
 > ❗ **Important**:  You must maintain a strong reference to your observer. Sound analyzers don’t keep strong references to your observer.
 
-##### Create an Audio File Analyzer
+### Create an Audio File Analyzer
 
 Analyze an audio file by creating an [`SNAudioFileAnalyzer`](./snaudiofileanalyzer.md) and passing a URL to an audio file to the [`init(url:)`](./snaudiofileanalyzer/init%28url%29-336no.md) initializer.
 
@@ -117,7 +117,7 @@ Start analyzing the audio file by calling the [`analyze()`](./snaudiofileanalyze
 audioFileAnalyzer.analyze()
 ```
 
-##### Receive the Results
+### Receive the Results
 
 The audio analyzer sends each result to your [`SNResultsObserving`](./snresultsobserving.md) instance as it processes the audio data.
 

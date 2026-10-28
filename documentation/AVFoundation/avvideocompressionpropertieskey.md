@@ -24,7 +24,7 @@ let AVVideoCompressionPropertiesKey: String
 extern NSString * const AVVideoCompressionPropertiesKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is an instance of [`NSDictionary`](../Foundation/nsdictionary.md). Add entries to this dictionary to manually change bit rate, B-frame delivery, I-frame interval, and codec quality. Querying the [`supportedOutputSettingsKeys(for:)`](./avcapturemoviefileoutput/supportedoutputsettingskeys%28for%29.md) method reveals the keys supported for the current release and configuration.
 

@@ -19,7 +19,7 @@ protocol NSValidatedUserInterfaceItem
 @protocol NSValidatedUserInterfaceItem
 ```
 
-#### Overview
+## Overview
 
 The [`NSValidatedUserInterfaceItem`](./nsvalidateduserinterfaceitem.md) protocol works with the [`NSUserInterfaceValidations`](./nsuserinterfacevalidations.md) protocol to enable or disable a control automatically, depending on whether any responder in the responder chain can handle the control’s action method. The [`NSMenuItem`](./nsmenuitem.md) and [`NSToolbarItem`](./nstoolbaritem.md) classes implement this protocol.
 

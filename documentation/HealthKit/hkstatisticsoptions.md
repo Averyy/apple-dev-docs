@@ -24,11 +24,11 @@ struct HKStatisticsOptions
 enum HKStatisticsOptions : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 You cannot combine a discrete option with a cumulative option. You can, however, combine multiple discrete options together to perform multiple calculations. You can also combine the [`separateBySource`](./hkstatisticsoptions/separatebysource.md) option with any of the other options.
 
-#### Swift
+## Swift
 
 ```swift
 let cumulativeActiveEnergyBurned = HKQuantityType(.activeEnergyBurned)
@@ -56,7 +56,7 @@ let discreteQuery = HKStatisticsQuery(quantityType: discreteHeartRate,
 }
 ```
 
-#### Objective-C
+## Objective-C
 
 ```objc
 HKQuantityType *cumulativeActiveEnergyBurned =

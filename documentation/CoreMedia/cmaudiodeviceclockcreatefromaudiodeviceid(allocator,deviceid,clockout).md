@@ -19,7 +19,7 @@ func CMAudioDeviceClockCreateFromAudioDeviceID(allocator: CFAllocator?, deviceID
 extern OSStatus CMAudioDeviceClockCreateFromAudioDeviceID(CFAllocatorRef allocator, AudioDeviceID deviceID, CMClockRef*clockOut);
 ```
 
-#### Overview
+## Overview
 
 > ❗ **Important**: In Objective-C, you’re responsible for calling [`CFRelease`](../CoreFoundation/cfrelease.md) to release the clock returned in `clockOut`.
 

@@ -8,7 +8,7 @@ An atom that specifies information for a link hot spot.
 
 > **Deprecated**: VR Media is deprecated in the QuickTime file format. The information that follows documents existing content containing VR Media and should not be used for new development.
 
-#### Overview
+## Overview
 
 The link hot spot atom specifies information for hot spots of type `kQTVRHotSpotLinkType` (’`link'`). Its atom type is thus `'link'`. The link hot spot atom contains specific information about a link hot spot.
 

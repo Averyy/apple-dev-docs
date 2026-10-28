@@ -21,7 +21,7 @@ Returns a localized string for a specified variant code.
 func localizedString(forVariantCode variantCode: String) -> String?
 ```
 
-#### Discussion
+## Discussion
 
 For example, in the “en” locale, the result for `"POSIX"` is `"Computer"`.
 

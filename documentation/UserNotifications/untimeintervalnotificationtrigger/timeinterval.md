@@ -33,7 +33,7 @@ var timeInterval: TimeInterval { get }
 @property (atomic, readonly) NSTimeInterval timeInterval;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the original time interval that you specified when creating the trigger object. The value in this property isn’t updated as time counts down. To find out when the trigger will fire next, call the [`nextTriggerDate()`](./nexttriggerdate%28%29.md) method.
 

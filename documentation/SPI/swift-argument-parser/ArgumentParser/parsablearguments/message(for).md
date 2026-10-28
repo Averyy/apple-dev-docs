@@ -14,10 +14,10 @@ Returns a brief message for the given error.
 ## Declaration
 
 ```swift
-static func message(for error: any Error) -> String
+static func message(for error: Error) -> String
 ```
 
-#### Return Value
+## Return Value
 
 A message that can be displayed to the user.
 
@@ -28,9 +28,9 @@ A message that can be displayed to the user.
 ## See Also
 
 ### Handling Errors
-- [static func fullMessage(for: any Error, columns: Int?) -> String](./fullmessage%28for,columns%29.md)
+- [static func fullMessage(for: Error, columns: Int?) -> String](./fullmessage%28for,columns%29.md)
   Returns a full message for the given error, including usage information, if appropriate.
-- [static func exitCode(for: any Error) -> ExitCode](./exitcode%28for%29.md)
+- [static func exitCode(for: Error) -> ExitCode](./exitcode%28for%29.md)
   Returns the exit code for the given error.
 
 

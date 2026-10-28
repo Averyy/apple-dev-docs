@@ -25,7 +25,7 @@ var label: String? { get set }
 @property (atomic, copy, nullable) NSString * label;
 ```
 
-#### Discussion
+## Discussion
 
 Set labels to help you quickly identify a command buffer at runtime in the Metal debugging and profiling tools. See [Naming resources and commands](../../Xcode/naming-resources-and-commands.md).
 

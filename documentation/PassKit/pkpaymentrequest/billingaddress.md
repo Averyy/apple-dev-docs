@@ -22,7 +22,7 @@ unowned(unsafe) var billingAddress: ABRecord? { get set }
 @property (nonatomic, assign, nullable) ABRecordRef billingAddress;
 ```
 
-#### Discussion
+## Discussion
 
 If you already have a billing address on file, set it here. The user can either use the address you specify or select a different address.
 

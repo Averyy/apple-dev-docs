@@ -19,7 +19,7 @@ class func authorization() -> Any!
 + (id) authorization;
 ```
 
-#### Return value
+## Return value
 
 The authorization object.
 

@@ -20,11 +20,11 @@ string AppsReportingCampaign.SystemStatus
 - `RUNNING`: The campaign is actively delivering ads.
 - `NOT_RUNNING`: The campaign isn’t currently delivering. Check `systemStatusReasons` for the cause.
 
-#### Discussion
+## Discussion
 
 This is a point-in-time snapshot; a campaign that later changes to `NOT_RUNNING` won’t retroactively update in an already-generated report.
 
-##### Example
+### Example
 
 ```json
 {

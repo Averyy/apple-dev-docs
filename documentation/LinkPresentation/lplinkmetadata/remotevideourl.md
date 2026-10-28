@@ -25,7 +25,7 @@ var remoteVideoURL: URL? { get set }
 @property (nonatomic, retain, nullable) NSURL * remoteVideoURL;
 ```
 
-#### Discussion
+## Discussion
 
 This may reference a remote video file that [AVFoundation](../../AVFoundation/AVFoundation.md) can stream.
 

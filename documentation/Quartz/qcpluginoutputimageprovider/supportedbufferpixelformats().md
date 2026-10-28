@@ -21,7 +21,7 @@ optional func supportedBufferPixelFormats() -> [Any]!
 - (NSArray *) supportedBufferPixelFormats;
 ```
 
-#### Return Value
+## Return Value
 
 A list of pixel formats, in order of preference, that the image can be rendered to in memory, or `nil` if the image provider does not support rendering to the CPU.
 

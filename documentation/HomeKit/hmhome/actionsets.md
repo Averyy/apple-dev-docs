@@ -24,7 +24,7 @@ var actionSets: [HMActionSet] { get }
 @property (nonatomic, copy, readonly) NSArray<HMActionSet *> * actionSets;
 ```
 
-#### Discussion
+## Discussion
 
 Action sets are instances of [`HMActionSet`](../hmactionset.md).
 

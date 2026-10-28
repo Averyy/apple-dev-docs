@@ -15,7 +15,7 @@ Represents an SBP2 normal command ORB. Supplies the APIs for configuring normal 
 class IOFireWireSBP2ORB : IOCommand
 ```
 
-#### Overview
+## Overview
 
 ## Topics
 

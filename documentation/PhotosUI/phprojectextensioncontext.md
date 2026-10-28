@@ -19,7 +19,7 @@ class PHProjectExtensionContext
 @interface PHProjectExtensionContext : NSExtensionContext
 ```
 
-#### Overview
+## Overview
 
 When a Photos project extension is initialized, it is handed an extension context object. This object provides the extension with access to the underlying project, as well as the photo library from which assets are fetched and edited.
 

@@ -19,7 +19,7 @@ class func setFontPanelFactory(_ factoryId: AnyClass?)
 + (void) setFontPanelFactory:(Class) factoryId;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method before accessing the Font panel in any way, such as in your app delegate’s [`applicationWillFinishLaunching(_:)`](../nsapplicationdelegate/applicationwillfinishlaunching%28_%29.md) method.
 

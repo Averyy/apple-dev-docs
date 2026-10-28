@@ -16,7 +16,7 @@ Pushes a window defined by the window group that presents the specified value ty
 func callAsFunction<D>(id: String, value: D) where D : Decodable, D : Encodable, D : Hashable
 ```
 
-#### Discussion
+## Discussion
 
 Don’t call this method directly. SwiftUI calls it when you call the [`pushWindow`](../environmentvalues/pushwindow.md) action with an identifier and a value:
 

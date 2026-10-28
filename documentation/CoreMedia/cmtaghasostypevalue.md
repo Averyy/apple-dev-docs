@@ -21,11 +21,11 @@ Whether a given tag contains a value for use by the operating system.
 extern Boolean CMTagHasOSTypeValue(CMTag tag);
 ```
 
-#### Return Value
+## Return Value
 
 Returns `YES` if the tag represents an [`OSType`](../kernel/ostype.md).
 
-#### Discussion
+## Discussion
 
 Prefer using this method over directly comparing a tag’s data type to [`kCMTagDataType_OSType`](./cmtagdatatype/kcmtagdatatype_ostype.md).
 

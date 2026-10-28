@@ -5,7 +5,7 @@
 
 Enhance and adjust the contrast of an image with histogram equalization and contrast stretching.
 
-#### Overview
+## Overview
 
 An image histogram is a representation of an image that describes its color tones distribution. The histogram contains a series of bins that represent the possible values for each color channel. For example, each channel of an 8-bit image contains 256 histogram bins. Each bin contains the image’s pixel count of the corresponding value.
 
@@ -15,7 +15,7 @@ The histogram of the following low-contrast image shows that almost all of its p
 
 vImage provides functions that can either equalize or stretch an image’s histogram to enhance the contrast of an image.
 
-##### Apply histogram equalization to an image
+### Apply histogram equalization to an image
 
 Histogram equalization transforms an image so that its histogram is more uniformly distributed across the entire range of values. The operation stretches dense parts of the histogram, where contrast is low, and condenses sparse parts of the histogram, where contrast is high. A truly uniform histogram is one in which each histogram bin contains the same value, that is, its cumulative histogram is a diagonal line. The vImage histogram equalization functions approximate that truly uniform histogram.
 
@@ -63,7 +63,7 @@ On return, `destinationBuffer` contains the transformed image. The picture below
 
 Note that the histogram bins aren’t evenly distributed throughout the resulting histogram. The amount of stretching correlates to the number of pixels in each bin.
 
-##### Apply contrast stretching to an image
+### Apply contrast stretching to an image
 
 Contrast stretching evenly distributes a histogram’s pixel values across the full range of available pixel values. This technique is ideal for enhancing the contrast of an image with pixel values concentrated in one area of the intensity spectrum, such as the original low-contrast image above.
 
@@ -109,7 +109,7 @@ On return, `destinationBuffer` contains the transformed image. The picture below
 
 ![Two side-by-side images show a high-contrast photograph of a landscape and a chart that represents the photograph’s histogram. The vertical peaks in the chart are evenly distributed across the length of the chart. The continous line that represents the cumulative histogram rises where the histogram values are high and is flat where the histogram values are low. ](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3702118@2x.png)
 
-##### Apply ends-in contrast stretching to an image
+### Apply ends-in contrast stretching to an image
 
 The vImage ends-in contrast stretching functions accept parameters that allow you to control which part of the histogram the operation stretches. Use ends-in contrast stretching for images with the majority of their pixels clustered in a single area and a small number of pixels at either end of their histogram. In these situations, standard contrast stretching may not yield your desired result.
 

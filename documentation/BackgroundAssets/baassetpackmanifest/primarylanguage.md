@@ -20,7 +20,7 @@ The application’s primary language, represented as a BCP-47 identifier, as con
 @property (copy, readonly, nullable) NSString * primaryLanguage;
 ```
 
-#### Discussion
+## Discussion
 
 If no available localized asset packs match the current preferred languages, the system falls back on the application’s primary language.
 

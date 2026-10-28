@@ -15,7 +15,7 @@ The visible cells for the table.
 @property (copy, nullable) NSArray * accessibilityVisibleCells;
 ```
 
-#### Discussion
+## Discussion
 
 This property is required for all elements that act like cell-based tables.
 

@@ -5,11 +5,11 @@
 
 Defines an audio component by its source channels.
 
-#### Overview
+## Overview
 
 The `audio-channel-source` element defines an audio component for `clip` and `asset-clip` elements in terms of source channels in the underlying assets.
 
-##### Audio Channel Attributes
+### Audio Channel Attributes
 
 The `audio-channel-source` element uses the attributes listed below to define its audio channel configuration:
 

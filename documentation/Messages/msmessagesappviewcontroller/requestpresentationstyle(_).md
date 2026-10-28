@@ -21,7 +21,7 @@ func requestPresentationStyle(_ presentationStyle: MSMessagesAppPresentationStyl
 - (void) requestPresentationStyle:(MSMessagesAppPresentationStyle) presentationStyle;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method when you need to change the extension’s presentation style. Keep in mind that the user should have ultimate control over the extension’s presentation style. If the user chooses to change the presentation style, you want to respect that choice.
 

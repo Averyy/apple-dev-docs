@@ -20,11 +20,11 @@ nonisolated
 func onPencilSqueeze(perform action: @escaping (PencilSqueezeGesturePhase) -> Void) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that performs `action` when the user squeezes their Apple Pencil.
 
-#### Discussion
+## Discussion
 
 You should respect people’s setting for the squeeze gesture by reading the [`preferredPencilSqueezeAction`](../environmentvalues/preferredpencilsqueezeaction.md) environment value, if the setting makes sense in your app. If it doesn’t, consider giving people a way to specify custom behavior in your app instead.
 

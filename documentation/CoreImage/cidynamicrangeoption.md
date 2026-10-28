@@ -24,7 +24,7 @@ struct CIDynamicRangeOption
 typedef NSString * CIDynamicRangeOption;
 ```
 
-#### Overview
+## Overview
 
 These options are consistent with the analogous options available in Core Graphics, Core Animation, AppKit, UIKit, and SwiftUI, In Core Image, this option can be set on the `CISystemToneMap` filter.
 

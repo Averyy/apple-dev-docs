@@ -20,7 +20,7 @@ var kAuthorizationEnvironmentPrompt: String { get }
 #define kAuthorizationEnvironmentPrompt
 ```
 
-#### Discussion
+## Discussion
 
 The value should be a localized UTF-8 string.
 

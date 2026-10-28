@@ -28,7 +28,7 @@ extern NSString * const HKMetadataKeyAverageSpeed;
 
 - [Receiving Downhill Skiing and Snowboarding Data](./receiving-downhill-skiing-and-snowboarding-data.md)
 
-#### Discussion
+## Discussion
 
 Set this key on a workout, workout segment, or a quantity sample that represents distance. Set its value to an [`HKQuantity`](./hkquantity.md) object with a length/time unit (for example, m/s). For more information on creating complex units, see Performing unit math.
 

@@ -22,7 +22,7 @@ nonisolated
 func splitArrangementFixedLayoutSize(horizontal: Bool = true, vertical: Bool = true) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Add this modifier to a view in a split style [`ArrangementView`](../arrangementview.md), and specify `true` when you want the system to limit the view’s size to the ideal size for that axis, as the following example shows:
 

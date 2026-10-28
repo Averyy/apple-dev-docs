@@ -12,7 +12,7 @@ static void sHandleCheckPowerState (
  IOSCSIProtocolInterface *self );
 ```
 
-#### Overview
+## Overview
 
 The sHandleCheckPowerState method is a static function used as C->C++ glue for going behind the command gate.
 

@@ -21,7 +21,7 @@ A sign display strategy to use accounting principles.
 static var accounting: CurrencyFormatStyleConfiguration.SignDisplayStrategy { get }
 ```
 
-#### Discussion
+## Discussion
 
 This strategy always shows the currency symbol, and shows negative values in parenthesis. Examples of this strategy include `$123`, `$0`, and `($123)`.
 

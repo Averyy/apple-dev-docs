@@ -21,7 +21,7 @@ No interval.
 case never
 ```
 
-#### Discussion
+## Discussion
 
 Use this case to specify a time interval that never occurs. For example, specify this value for a timer’s repeat interval to prevent a timer from repeating.
 

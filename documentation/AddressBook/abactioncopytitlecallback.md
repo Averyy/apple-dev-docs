@@ -15,7 +15,7 @@ The title of the menu item for the action.
 typedef const struct __CFString *(*)(struct __ABPerson *, const struct __CFString *) ABActionCopyTitleCallback;
 ```
 
-#### Discussion
+## Discussion
 
 If the property returned by `ABActionGetPropertyCallback` is a multi-value property, identifier contains the unique identifier of the value selected.
 

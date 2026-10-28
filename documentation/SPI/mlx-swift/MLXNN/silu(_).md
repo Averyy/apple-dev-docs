@@ -17,7 +17,7 @@ Applies the Sigmoid Linear Unit. Also known as Swish.
 func silu(_ x: MLXArray) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 This is:
 
@@ -25,7 +25,7 @@ This is:
 x * MLX.sigmoid(x)
 ```
 
-##### See Also
+### See Also
 
 - [Activation Functions and Layers](./activations.md)
 - [`SiLU`](./silu.md)

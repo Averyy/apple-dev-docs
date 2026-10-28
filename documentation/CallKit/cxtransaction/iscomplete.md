@@ -23,7 +23,7 @@ var isComplete: Bool { get }
 @property (nonatomic, assign, readonly, getter=isComplete) BOOL complete;
 ```
 
-#### Discussion
+## Discussion
 
 A transaction is complete only when all of its actions are complete.
 

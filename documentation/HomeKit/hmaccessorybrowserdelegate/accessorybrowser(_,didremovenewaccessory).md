@@ -22,7 +22,7 @@ optional func accessoryBrowser(_ browser: HMAccessoryBrowser, didRemoveNewAccess
 - (void) accessoryBrowser:(HMAccessoryBrowser *) browser didRemoveNewAccessory:(HMAccessory *) accessory;
 ```
 
-#### Discussion
+## Discussion
 
 A common reason for an accessory to no longer be available is because it was added to a home, and is thus no longer a new accessory.
 

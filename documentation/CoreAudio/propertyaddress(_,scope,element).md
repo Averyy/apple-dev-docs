@@ -16,7 +16,7 @@ A helper constructor for the AudioObjectPropertyAddress struct.
 func PropertyAddress(_ selector: AudioObjectPropertySelector, scope: AudioObjectPropertyScope = kAudioObjectPropertyScopeGlobal, element: AudioObjectPropertyElement = kAudioObjectPropertyElementMain) -> AudioObjectPropertyAddress
 ```
 
-#### Return Value
+## Return Value
 
 An AudioObjectPropertyAddress collects these three parts that identify a specific property together in a struct for easy transmission.
 

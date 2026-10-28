@@ -22,7 +22,7 @@ Identifies the subscription bundle group the next renewal is for.
 var bundleSubscriptionGroupID: String? { get }
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: Only for renewals of subscriptions included in a bundle.
 

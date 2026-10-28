@@ -23,7 +23,7 @@ convenience init(identifier: UUID)
 + (instancetype) configurationWithIdentifier:(NSUUID *) identifier;
 ```
 
-#### Discussion
+## Discussion
 
 If a [`WKWebExtensionController`](../../wkwebextensioncontroller.md) is associated with a unique persistent configuration, data will be written to the file system in a unique location based on the specified identifier.
 

@@ -15,11 +15,11 @@ Release mappings for buffer data.
 errno_t buf_unmap(buf_t bp);
 ```
 
-#### Return Value
+## Return Value
 
 0 for success, EINVAL if unable to unmap buffer.
 
-#### Discussion
+## Discussion
 
 For buffers created through buf_getblk() (i.e. traditional buffer cache usage), buf_unmap() does nothing; buf_brelse() will take care of unmapping. For a B_CLUSTER buffer, i.e. an iobuf whose upl state is managed manually, there are two possibilities. If the buffer was created with an underlying "real" buffer through cluster_bp(), buf_unmap() does nothing; buf_brelse() on the underlying buffer will tear down the mapping. Otherwise, the buffer was created with buf_alloc() and buf_setupl() was subsequently called; buf_map() created the mapping. In this case, buf_unmap() will unmap the buffer.
 

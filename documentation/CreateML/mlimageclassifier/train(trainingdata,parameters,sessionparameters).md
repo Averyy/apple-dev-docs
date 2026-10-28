@@ -26,7 +26,7 @@ static func train(trainingData: MLImageClassifier.DataSource, parameters: MLImag
         ), sessionParameters: MLTrainingSessionParameters = _defaultSessionParameters) throws -> MLJob<MLImageClassifier>
 ```
 
-#### Return Value
+## Return Value
 
 An [`MLJob`](../mljob.md) that represents the image classifier training session.
 

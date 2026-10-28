@@ -17,7 +17,7 @@ Websites for the system to cover with a shielding view.
 var webDomains: Set<WebDomainToken>? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 When the user visits a website in this list of domains, the system calls your extension that customizes the shield’s appearance. When the user taps on a button the shield displays, the system calls your extension that handles user actions. If your app doesn’t provide a list of domains to shield, this value is `nil`. Your app can shield up to 50 web domain tokens at once.
 

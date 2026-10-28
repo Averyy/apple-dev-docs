@@ -20,7 +20,7 @@ nonisolated
 struct OutlineSubgroupChildren
 ```
 
-#### Overview
+## Overview
 
 [`OutlineGroup`](./outlinegroup.md) uses this type as a generic constraint for the `Content` of the [`DisclosureGroup`](./disclosuregroup.md) instances it creates.
 

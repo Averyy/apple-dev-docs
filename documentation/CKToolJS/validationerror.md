@@ -15,7 +15,7 @@ The base class of errors emitted when validators fail validation.
 interface ValidationError
 ```
 
-#### Overview
+## Overview
 
 Extends `ErrorBase`.
 

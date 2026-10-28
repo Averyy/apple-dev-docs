@@ -15,7 +15,7 @@ A structure that encapsulates all the information for describing the basic forma
 struct IOUserVideoStreamBasicDescription;
 ```
 
-#### Overview
+## Overview
 
 This structure is sufficient to describe any constant bit rate format that has channels that are the same size. Extensions are required for variable bit rate data and for constant bit rate data where the channels have unequal sizes. However, where applicable, the appropriate fields will be filled out correctly for these kinds of formats (the extra data is provided via separate properties). In all fields, a value of 0 indicates that the field is either unknown, not applicable or otherwise is inappropriate for the format and should be ignored. Note that 0 is still a valid value for most formats in the `mFormatFlags` field.
 

@@ -19,7 +19,7 @@ static var wheelModeMask: NSColorPanel.Options { get }
 NSColorPanelWheelModeMask
 ```
 
-#### Discussion
+## Discussion
 
 Color wheel.
 

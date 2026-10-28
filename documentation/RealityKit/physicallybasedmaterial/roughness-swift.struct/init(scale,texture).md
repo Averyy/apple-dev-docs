@@ -20,7 +20,7 @@ Creates a roughness object from a color or texture.
 init(scale: Float = 1.0, texture: PhysicallyBasedMaterial.Texture? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 The `roughness` property represents how much the surface of the entity scatters light it reflects. A material with a high roughness has a matte appearance, while one with a low roughness has a shiny appearance.
 

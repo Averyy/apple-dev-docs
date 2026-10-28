@@ -27,7 +27,7 @@ optional func photoOutput(_ output: AVCapturePhotoOutput, didFinishProcessingLiv
 - [Capturing and saving Live Photos](../capturing-and-saving-live-photos.md)
 - [Tracking photo capture progress](../tracking-photo-capture-progress.md)
 
-#### Discussion
+## Discussion
 
 Use this method to receive the results of a Live Photo capture. When the photo output calls this method, the movie component of the Live Photo has been written to the location specified by the `outputFileURL` parameter and the Live Photo is ready for consumption. (To receive the still image component of the Live Photo, implement the [`photoOutput(_:didFinishProcessingPhoto:previewPhoto:resolvedSettings:bracketSettings:error:)`](./photooutput%28_,didfinishprocessingphoto,previewphoto,resolvedsettings,bracketsettings,error%29.md) method.)
 

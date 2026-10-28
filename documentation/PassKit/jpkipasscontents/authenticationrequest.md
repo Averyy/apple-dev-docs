@@ -16,7 +16,7 @@ The user authentification request based on the generics type.
 struct AuthenticationRequest<IdentityType> where IdentityType : JPKIPassContents.Identity
 ```
 
-#### Overview
+## Overview
 
 Use this structure to define valid user authentication request options for `UserIdentity` or `SigningIdentity`.
 

@@ -9,7 +9,7 @@ Soft-delete a campaign by its unique identifier, cascading to its ad groups, key
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 This endpoint deletes a campaign by its ID. The campaign is soft-deleted: it’s marked with `deleted: true` and excluded from query results by default, but the record and all its fields are preserved.
 
@@ -23,11 +23,11 @@ Keep the following in mind when relying on this endpoint’s soft-delete behavio
 | Deleted campaigns excluded from queries by default | `POST /v1/campaigns/query` results automatically exclude campaigns with `deleted: true` unless explicitly filtered. |
 | Active ad groups are also deleted | Deleting a campaign cascades to its associated ad groups, keywords, and ads. |
 
-#### Payload Examples
+## Payload Examples
 
 **Delete Campaign**:
 
-##### Request
+### Request
 
 Deletes a campaign by its unique identifier. A successful delete returns HTTP 200 with an empty result.
 
@@ -35,7 +35,7 @@ Deletes a campaign by its unique identifier. A successful delete returns HTTP 20
 DELETE /v1/campaigns/111222333
 ```
 
-##### Response
+### Response
 
 ```json
 {}
@@ -43,7 +43,7 @@ DELETE /v1/campaigns/111222333
 
 **Verify Deletion**:
 
-##### Request
+### Request
 
 After deletion, confirm the campaign is marked deleted by retrieving it directly by ID.
 
@@ -51,7 +51,7 @@ After deletion, confirm the campaign is marked deleted by retrieving it directly
 GET /v1/campaigns/111222333
 ```
 
-##### Response
+### Response
 
 ```json
 {

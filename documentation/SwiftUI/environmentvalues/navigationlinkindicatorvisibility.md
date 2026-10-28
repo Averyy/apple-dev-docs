@@ -22,7 +22,7 @@ A value that says whether a built-in navigation link would show a disclosure ind
 var navigationLinkIndicatorVisibility: Visibility { get }
 ```
 
-#### Discussion
+## Discussion
 
 You can set this value with [`navigationLinkIndicatorVisibility(_:)`](../view/navigationlinkindicatorvisibility%28_%29.md).
 

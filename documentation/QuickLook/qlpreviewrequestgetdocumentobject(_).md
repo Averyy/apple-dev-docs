@@ -21,11 +21,11 @@ func QLPreviewRequestGetDocumentObject(_ preview: QLPreviewRequest!) -> UnsafeRa
 extern const void *QLPreviewRequestGetDocumentObject(QLPreviewRequestRef preview);
 ```
 
-#### Return Value
+## Return Value
 
 The object that’s stored as part of the preview request.
 
-#### Discussion
+## Discussion
 
 Use this method to get the object that you stored previously with the preview request using [`QLPreviewRequestSetDocumentObject(_:_:_:)`](./qlpreviewrequestsetdocumentobject%28_,_,_%29.md).
 

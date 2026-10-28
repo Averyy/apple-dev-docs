@@ -24,7 +24,7 @@ init(device: any MTLDevice, transposeLeft: Bool, transposeRight: Bool, resultRow
 - (instancetype) initWithDevice:(id<MTLDevice>) device transposeLeft:(BOOL) transposeLeft transposeRight:(BOOL) transposeRight resultRows:(NSUInteger) resultRows resultColumns:(NSUInteger) resultColumns interiorColumns:(NSUInteger) interiorColumns alpha:(double) alpha beta:(double) beta;
 ```
 
-#### Return Value
+## Return Value
 
 A valid [`MPSMatrixMultiplication`](../mpsmatrixmultiplication.md) object or `nil`, if failure.
 

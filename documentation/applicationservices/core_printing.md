@@ -3,7 +3,7 @@
 **Framework**: Application Services  
 **Role**: API Collection
 
-#### Overview
+## Overview
 
 Core Printing is a C API that Mac apps and command line tools can use to perform printing tasks that don’t display a user interface. Core Printing defines a set of opaque types and a rich set of operations on instances of these types. The Core Printing opaque types include:
 

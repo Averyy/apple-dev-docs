@@ -25,7 +25,7 @@ func CFNumberIsFloatType(_ number: CFNumber!) -> Bool
 extern Boolean CFNumberIsFloatType(CFNumberRef number);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if `number`’s value is one of the defined floating point types, otherwise `false`. The valid floating point types are listed in [`CFNumberType`](./cfnumbertype.md).
 

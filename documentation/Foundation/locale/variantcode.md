@@ -21,7 +21,7 @@ The variant code for the locale, or `nil` if it has none.
 var variantCode: String? { get }
 ```
 
-#### Discussion
+## Discussion
 
 For example, for the locale “en_POSIX”, returns “POSIX”.
 

@@ -10,7 +10,7 @@ framework: "mlx-swift-lm/MLXLMCommon"
 
 Reduce the memory footprint of long-context generation by compressing the key/value cache.
 
-#### Overview
+## Overview
 
 At long context lengths the KV cache, not the weights, dominates memory. Use [`KVCacheConfiguration`](./kvcacheconfiguration.md) to select capacity, compression, and compatibility as one validated value:
 
@@ -31,7 +31,7 @@ The standalone legacy [`maybeQuantizeKVCache(cache:kvBits:kvGroupSize:quantizedK
 
 Prefill is unaffected: the cache stores raw fp16 during prompt processing, compresses on the first decode step, and encodes each new token incrementally afterwards. Compressed caches round-trip through prompt-cache save/restore.
 
-#### Capacity and compatibility
+## Capacity and compatibility
 
 A capacity creates rotating caches for model cache factories that support the generic bounded-cache path. Rotating caches are not compressible, so combining a capacity with compression can leave no eligible layers. Select the failure semantics explicitly. Typed configuration defaults to `.requireAtLeastOneLayer`, preventing a compression request from silently becoming an all-fp16 no-op:
 
@@ -47,7 +47,7 @@ Applications that need a hard total-context cap and compression should omit cach
 
 A realized `ChatSession` cache is bound to its configuration. When parameters change, a session with a structured transcript rebuilds automatically on the next response. A restored raw cache has no transcript to replay and rejects an incompatible request; clear it or create a new session.
 
-#### Reusing divergent prefixes
+## Reusing divergent prefixes
 
 Rotating caches normally discard history beyond their attention window. To reuse recent prefixes after rotation, opt into a bounded rewind reserve:
 
@@ -67,7 +67,7 @@ For raw caches, use [`canTrimPromptCache(_:numTokens:)`](./cantrimpromptcache%28
 
 The reserve and its retained history survive cache copying and serialization. Older readers reject the extended rotating-cache metadata rather than restoring it with the wrong attention window.
 
-#### Cache ownership and progress
+## Cache ownership and progress
 
 Generation owns each realized model cache through one shared reference-backed storage object. This is required because Swift arrays have value semantics while dynamic compression replaces individual array elements. Iterators, sessions, and runtime reporting therefore observe the same realized cache topology.
 
@@ -75,7 +75,7 @@ The storage also owns one `processedTokenCount` for the model-wide logical timel
 
 The legacy raw `[KVCache]` persistence API remains entry-oriented. When a raw cache is adopted, shared storage infers its initial progress from attention offsets (or a legacy recurrent offset for recurrent-only caches). Applications that need exact transcript recovery should persist the corresponding token prefix and continuation state together with the cache rather than treating raw cache arrays as a conversation checkpoint.
 
-#### Scheme reference
+## Scheme reference
 
 Scheme names read `turbo<K-bits>v<V-bits>`; `0` means keys stay fp16.
 
@@ -93,7 +93,7 @@ Scheme names read `turbo<K-bits>v<V-bits>`; `0` means keys stay fp16.
 
 † boundary-layer protection auto-engages for fragile schemes (turbo-quantized keys or 2-bit values): the first and last two attention layers use 8-bit affine instead of the turbo scheme.
 
-#### Choosing a scheme
+## Choosing a scheme
 
 Start asymmetric and light, verify output quality on your model, then compress further:
 
@@ -103,7 +103,7 @@ Start asymmetric and light, verify output quality on your model, then compress f
 4. `turbo8v2`: memory-bound long context, after validating step 3.
 5. Symmetric `turbo4`, `turbo3`, `turbo2`: maximum compression. Key compression is where models break. Per-dimension key calibration (computed automatically from the prefill cache at compression time) equalizes post-rotation key variance and recovers most of the gap on sensitive families; sensitivity still varies, so validate on your model before deploying.
 
-#### Family sensitivity (measured)
+## Family sensitivity (measured)
 
 WikiText-2 decode-time KL divergence against an fp16 cache with identical weights, so the numbers isolate cache compression from weight quantization:
 
@@ -113,11 +113,11 @@ WikiText-2 decode-time KL divergence against an fp16 cache with identical weight
 - Phi-family models are unusually affine-friendly (affine8 KLD 0.0004).
 - Symmetric key compression improves with model size (KLD 2.7 at 1.7B, 0.6 at 7B on the same family).
 
-#### Performance
+## Performance
 
 TurboQuant decode runs through JIT-compiled Metal kernels; kernels are compiled once per model shape, not per call. Single-token decode is a SIMD-parallel flash kernel (packed, raw fp16, or 8-bit affine key scoring with inline value dequantization). Measured on Qwen3-1.7B (M5 Max, fp16 150 tok/s): turbo8v3 114, turbo4 122, turbo0v4 102. Prefill stays raw fp16, so prefill throughput is unaffected. Use TurboQuant when memory is the constraint (long contexts, larger models per machine); use affine8 when exact fp16-parity decode matters more than footprint.
 
-#### Limitations
+## Limitations
 
 - Rotating and sliding-window cache layers (most Gemma layers) are not converted; their storage is already bounded by the window size and their eviction layout does not fit the sequential-append compression path. On mixed models the global (non-rotating) layers, where cache memory actually grows, do compress, and a one-time notice lists the layers that kept fp16 rotating caches. Hybrid recurrent layers are likewise left untouched.
 - A bounded compressed rotating cache is not implemented.

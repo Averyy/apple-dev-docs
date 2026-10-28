@@ -15,7 +15,7 @@ Returns a Boolean value that indicates whether two values are equal.
 static func == (lhs: SpatialTemplateConfiguration, rhs: SpatialTemplateConfiguration) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the configuration objects are equal, or `false` if they aren’t.
 

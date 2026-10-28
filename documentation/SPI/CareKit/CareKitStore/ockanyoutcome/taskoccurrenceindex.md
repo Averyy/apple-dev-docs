@@ -18,7 +18,7 @@ A property that specifies how many events occured before this outcome became ins
 var taskOccurrenceIndex: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 For example, if a task is schedule to happen twice per day, then the 2nd outcome on the 2nd day has a `taskOccurrenceIndex` of 3.
 

@@ -15,7 +15,7 @@ The host calls this method to allow the clock device to perform a configuration 
 virtual kern_return_t PerformDeviceConfigurationChange(uint64_t change_action, OSObject *in_change_info);
 ```
 
-#### Discussion
+## Discussion
 
 The configuration change is one that had been previously requested via a call to the host via `RequestDeviceConfigChange` or a change to an IO state that requires a configuration change.
 

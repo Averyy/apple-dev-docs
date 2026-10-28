@@ -21,7 +21,7 @@ Waits for, or decrements, a semaphore.
 func wait(wallTimeout: DispatchWallTime) -> DispatchTimeoutResult
 ```
 
-#### Discussion
+## Discussion
 
 Decrement the counting semaphore. If the resulting value is less than zero, this function waits for a signal to occur before returning.
 

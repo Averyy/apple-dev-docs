@@ -25,7 +25,7 @@ var writeabilityHandler: (@Sendable (FileHandle) -> Void)? { get set }
 @property (copy, nullable) void (^writeabilityHandler)(NSFileHandle *);
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is `nil`. Assigning a valid [Block object](https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/Block.html#//apple_ref/doc/uid/TP40008195-CH3) to this property creates a dispatch source for writing the contents of the file or socket. Your block is submitted to the file handle’s dispatch queue when there is room available to write more data. When writing a file, your handler block is typically executed repeatedly until the entire contents of the file have been written. When writing data to a socket, your handler block is executed whenever the socket is ready to accept more data.
 

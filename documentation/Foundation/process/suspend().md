@@ -20,11 +20,11 @@ func suspend() -> Bool
 - (BOOL) suspend;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the receiver was successfully suspended, [`false`](../../Swift/false.md) otherwise.
 
-#### Discussion
+## Discussion
 
 Multiple [`suspend()`](./suspend%28%29.md) messages can be sent, but they must be balanced with an equal number of [`resume()`](./resume%28%29.md) messages before the task resumes execution.
 

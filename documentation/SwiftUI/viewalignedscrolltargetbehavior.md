@@ -21,7 +21,7 @@ The scroll behavior that aligns scroll targets to view-based geometry.
 struct ViewAlignedScrollTargetBehavior
 ```
 
-#### Overview
+## Overview
 
 You use this behavior when a scroll view should always align its scroll targets to a rectangle that’s aligned to the geometry of a view. In the following example, the scroll view always picks an item view to settle on.
 

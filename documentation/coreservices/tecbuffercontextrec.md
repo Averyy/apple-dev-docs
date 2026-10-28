@@ -18,7 +18,7 @@ typedef struct TECBufferContextRec {
 } TECBufferContextRec;
 ```
 
-#### Overview
+## Overview
 
 This structure is used in the [`TECConverterContextRec`](./tecconvertercontextrec.md) data structure that is used for a TEC plug-in.
 

@@ -19,11 +19,11 @@ func isDescendant(of view: NSView) -> Bool
 - (BOOL) isDescendantOf:(NSView *) view;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the view is a subview, or distant subview, of the specified view.
 
-#### Discussion
+## Discussion
 
 The method returns [`true`](../../Swift/true.md) if the view is either an immediate or distant subview of `aView`.
 

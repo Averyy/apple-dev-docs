@@ -19,7 +19,7 @@ struct NSTextStorageEditActions
 enum NSTextStorageEditActions : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 These values are also OR’ed together in notifications to inform instances of `NSLayoutManager` was changed—see [`textStorage(_:edited:range:changeInLength:invalidatedRange:)`](./nslayoutmanager/textstorage%28_,edited,range,changeinlength,invalidatedrange%29.md).
 

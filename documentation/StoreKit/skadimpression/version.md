@@ -26,7 +26,7 @@ var version: String { get set }
 - [Generating the signature to validate view-through ads](../generating-the-signature-to-validate-view-through-ads.md)
 - [Identifying the parameters in install-validation postbacks](../identifying-the-parameters-in-install-validation-postbacks.md)
 
-#### Discussion
+## Discussion
 
 Set this instance property to the SKAdNetwork version you’re using to sign the view-through ad impression. View-through ads are available starting in version 2.2. For more information about versions and availability, see [SKAdNetwork release notes](../skadnetwork-release-notes.md).
 

@@ -25,7 +25,7 @@ var havingPredicate: NSPredicate? { get set }
 @property (nonatomic, strong, nullable) NSPredicate * havingPredicate;
 ```
 
-#### Discussion
+## Discussion
 
 If a `havingPredicate` value is supplied, the predicate will be run after. Specifying a `havingPredicate` requires that [`propertiesToGroupBy`](./propertiestogroupby.md) also be specified.
 

@@ -17,7 +17,7 @@ The names of the intent classes your app handles directly.
 - **Name**: `INIntentsSupported` (Intents eligible for in-app handling)
 - **Type**: array of string 
 
-#### Discussion
+## Discussion
 
 Provide the class name of each [`INIntent`](../../Intents/inintent.md) subclass your app can handle. To specify this information in Xcode, add the class names in the Supported Intents section of your app target in the Project Editor.
 

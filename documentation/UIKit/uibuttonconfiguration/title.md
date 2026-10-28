@@ -19,7 +19,7 @@ The text of the title label the button displays.
 @property (nonatomic, copy, readwrite, nullable) NSString * title;
 ```
 
-#### Discussion
+## Discussion
 
 This property matches the string value of the [`attributedTitle`](./attributedtitle.md) property. To change the button title when the button state changes, use [`configurationUpdateHandler`](../uibutton/configurationupdatehandler-swift.property.md) or [`updateConfiguration()`](../uibutton/updateconfiguration%28%29.md).
 

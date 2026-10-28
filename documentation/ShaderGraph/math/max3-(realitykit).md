@@ -14,7 +14,7 @@ Outputs the maximum of three incoming values.
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 **Max3 (integer)**:
 

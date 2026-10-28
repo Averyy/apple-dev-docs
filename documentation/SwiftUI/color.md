@@ -26,7 +26,7 @@ struct Color
 
 - [Laying out a simple view](./laying-out-a-simple-view.md)
 
-#### Overview
+## Overview
 
 You can create a color in one of several ways:
 

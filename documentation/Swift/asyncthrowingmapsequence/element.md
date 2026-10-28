@@ -23,7 +23,7 @@ typealias Element = Transformed
 
 Available when `Base` conforms to `AsyncSequence`.
 
-#### Discussion
+## Discussion
 
 The map sequence produces whatever type of element its the transforming closure produces.
 

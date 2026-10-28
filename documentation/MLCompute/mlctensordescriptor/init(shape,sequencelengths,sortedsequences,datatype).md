@@ -21,7 +21,7 @@ Creates a tensor descriptor with the shape, variable sequence lengths, sorting i
 convenience init?(shape: [Int], sequenceLengths: [Int], sortedSequences: Bool, dataType: MLCDataType)
 ```
 
-#### Discussion
+## Discussion
 
 This initializer provides a convenient way for you to configure sequence tensors used by recurrent layers.
 

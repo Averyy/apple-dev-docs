@@ -25,11 +25,11 @@ func nw_proxy_config_create_oblivious_http(_ relay: nw_relay_hop_t, _ relay_reso
 nw_proxy_config_tnw_proxy_config_create_oblivious_http(nw_relay_hop_t relay, const char *relay_resource_path, const uint8_t *gateway_key_config, size_t gateway_key_config_length);
 ```
 
-#### Return Value
+## Return Value
 
 An initialized proxy configuration object.
 
-#### Discussion
+## Discussion
 
 [Oblivious HTTP](https://www.ietf.org/archive/id/draft-ietf-ohai-ohttp-08.html) provides per-message encryption to a gateway through a relay.
 

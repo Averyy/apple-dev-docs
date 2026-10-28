@@ -25,7 +25,7 @@ func fire()
 - (void) fire;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this method to fire a repeating timer without interrupting its regular firing schedule. If the timer is non-repeating, it is automatically invalidated after firing, even if its scheduled fire date has not arrived.
 

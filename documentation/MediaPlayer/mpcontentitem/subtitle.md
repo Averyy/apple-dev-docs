@@ -24,7 +24,7 @@ var subtitle: String? { get set }
 @property (nonatomic, copy, nullable) NSString * subtitle;
 ```
 
-#### Discussion
+## Discussion
 
 A subtitle is another public designator for the media item. For a song track, the subtitle is often the artist or album name.
 

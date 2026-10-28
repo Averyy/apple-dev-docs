@@ -19,7 +19,7 @@ func presentScene(_ scene: SKScene, transition: SKTransition)
 - (void) presentScene:(SKScene *) scene transition:(SKTransition *) transition;
 ```
 
-#### Discussion
+## Discussion
 
 If the interface is not currently presenting a scene, the new scene is presented immediately, and the `transition` property is ignored. Otherwise, the interface’s [`scene`](./scene.md) property is updated immediately, and the transition is executed to animate the swap between scenes.
 

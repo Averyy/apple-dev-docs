@@ -21,11 +21,11 @@ Wraps this publisher with a type eraser.
 func eraseToAnyPublisher() -> AnyPublisher<Self.Output, Self.Failure>
 ```
 
-#### Return Value
+## Return Value
 
 An [`AnyPublisher`](../anypublisher.md) wrapping this publisher.
 
-#### Discussion
+## Discussion
 
 Use [`eraseToAnyPublisher()`](./erasetoanypublisher%28%29.md) to expose an instance of [`AnyPublisher`](../anypublisher.md) to the downstream subscriber, rather than this publisher’s actual type. This form of *type erasure* preserves abstraction across API boundaries, such as different modules. When you expose your publishers as the [`AnyPublisher`](../anypublisher.md) type, you can change the underlying implementation over time without affecting existing clients.
 

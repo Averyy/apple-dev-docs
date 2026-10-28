@@ -21,11 +21,11 @@ func CGSetLocalEventsFilterDuringSuppressionState(_ filter: CGEventFilterMask, _
 extern CGError CGSetLocalEventsFilterDuringSuppressionState(CGEventFilterMask filter, CGEventSuppressionState state);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See the result codes described in [Quartz Display Services](./quartz-display-services.md).
 
-#### Discussion
+## Discussion
 
 By default, the system suppresses local hardware events from the keyboard and mouse during a short interval after a synthetic event is posted and during a synthetic mouse drag (mouse movement with the left or only mouse button down).
 

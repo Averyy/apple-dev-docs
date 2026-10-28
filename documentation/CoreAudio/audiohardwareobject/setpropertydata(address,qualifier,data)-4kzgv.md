@@ -16,7 +16,7 @@ Tells an AudioObject to change the value of the given property using the  provid
 func setPropertyData(address: AudioObjectPropertyAddress, qualifier: Data? = nil, data: Data) throws
 ```
 
-#### Discussion
+## Discussion
 
 Note that the value of the property should not be considered changed until the HAL has called the listeners as many properties values are changed asynchronously.
 

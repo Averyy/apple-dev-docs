@@ -13,7 +13,7 @@
 kIOHIDElementTypeInput_ScanCodes = 4
 ```
 
-#### Discussion
+## Discussion
 
 Input data field used to represent a scan code or usage selector.
 

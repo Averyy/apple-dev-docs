@@ -25,11 +25,11 @@ func vImageRotate90_ARGB8888(_ src: UnsafePointer<vImage_Buffer>, _ dest: Unsafe
 vImage_Error vImageRotate90_ARGB8888(const vImage_Buffer *src, const vImage_Buffer *dest, uint8_t rotationConstant, const Pixel_8888 backColor, vImage_Flags flags);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes from [Error codes](./api-1578972-error-codes.md).
 
-#### Discussion
+## Discussion
 
 This function maps the center point of the source image to the center point of the destination image. It doesn’t scale or resample; instead, the function copies unchanged individual pixels to new locations.
 

@@ -20,7 +20,7 @@ Accesses a pose transformation using the index of the joint name.
 subscript(joint: String) -> Transform? { get set }
 ```
 
-#### Overview
+## Overview
 
 > **Note**: Setting a joint to `nil` has no effect.
 

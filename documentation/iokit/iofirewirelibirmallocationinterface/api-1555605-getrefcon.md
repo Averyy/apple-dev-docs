@@ -16,7 +16,7 @@ Get the current refcon
 void *(*GetRefCon)(IOFireWireLibIRMAllocationRef self);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the current refcon value
 

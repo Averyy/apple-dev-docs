@@ -28,7 +28,7 @@ var maxVertexAmplificationCount: Int { get set }
 
 - [Improving rendering performance with vertex amplification](../improving-rendering-performance-with-vertex-amplification.md)
 
-#### Discussion
+## Discussion
 
 Before setting this property, call the [`supportsVertexAmplificationCount(_:)`](../mtldevice/supportsvertexamplificationcount%28_%29.md) method on the device object to determine whether that amplification count is supported.
 

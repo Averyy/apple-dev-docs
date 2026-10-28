@@ -19,11 +19,11 @@ func PMGetAdjustedPageRect(_ pageFormat: PMPageFormat, _ pageRect: UnsafeMutable
 OSStatus PMGetAdjustedPageRect(PMPageFormat pageFormat, PMRect *pageRect);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./core_printing.md#1670007).
 
-#### Discussion
+## Discussion
 
 Before using this function, you must call [`PMSessionValidatePageFormat(_:_:_:)`](./api-1459090-pmsessionvalidatepageformat.md) to ensure that the values for the adjusted page rectangle correctly account for scaling, rotation, and application resolution settings.
 

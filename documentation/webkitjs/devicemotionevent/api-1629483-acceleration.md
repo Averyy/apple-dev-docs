@@ -15,7 +15,7 @@ The acceleration that the user is giving to the device.
 readonly attribute Acceleration acceleration;
 ```
 
-#### Discussion
+## Discussion
 
 The acceleration data are expressed in m/s^2 and use the following `x`, `y`, and `z` axis properties represented as doubles:
 

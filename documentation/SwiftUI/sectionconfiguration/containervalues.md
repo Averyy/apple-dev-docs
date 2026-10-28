@@ -21,7 +21,7 @@ The container values associated with the given section.
 var containerValues: ContainerValues { get }
 ```
 
-#### Discussion
+## Discussion
 
 Only explicitly created sections are able to have container values, meaning this container values will be empty if the section is implicit.
 

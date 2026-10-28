@@ -21,7 +21,7 @@ Returns a Base-64 encoded string.
 func base64EncodedString(options: Data.Base64EncodingOptions = []) -> String
 ```
 
-#### Return Value
+## Return Value
 
 The Base-64 encoded string.
 

@@ -24,7 +24,7 @@ The default toggle style.
 
 Available when `Self` is `DefaultToggleStyle`.
 
-#### Discussion
+## Discussion
 
 Use this [`ToggleStyle`](../togglestyle.md) to let SwiftUI pick a suitable style for the current platform and context. Toggles use the `automatic` style by default, but you might need to set it explicitly using the [`toggleStyle(_:)`](../view/togglestyle%28_%29.md) modifier to override another style in the environment. For example, you can request automatic styling for a toggle in an [`HStack`](../hstack.md) that’s otherwise configured to use the [`button`](./button.md) style:
 
@@ -45,7 +45,7 @@ HStack {
 .toggleStyle(.button) // Use button style for toggles in the stack.
 ```
 
-##### Platform defaults
+### Platform defaults
 
 The `automatic` style produces an appearance that varies by platform, using the following styles in most contexts:
 
@@ -68,7 +68,7 @@ List {
 
 ![A screenshot of three buttons labeled Show Lyrics, Shuffle, and](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/ToggleStyle-automatic-2-tvOS@2x.png)
 
-##### Contextual defaults
+### Contextual defaults
 
 A toggle’s automatic appearance varies in certain contexts:
 

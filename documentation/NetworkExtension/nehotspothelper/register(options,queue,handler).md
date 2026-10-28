@@ -24,11 +24,11 @@ class func register(options: [String : NSObject]? = nil, queue: dispatch_queue_t
 + (BOOL) registerWithOptions:(NSDictionary<NSString *,NSObject *> *) options queue:(dispatch_queue_t) queue handler:(NEHotspotHelperHandler) handler;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the registration was successful, [`false`](../../Swift/false.md) otherwise
 
-#### Discussion
+## Discussion
 
 Once this API is invoked successfully, the application becomes eligible to be launched in the background and participate in various hotspot related functions.
 

@@ -29,7 +29,7 @@ SCNWrapModeClamp
 
 - [SCNClamp](../scnclamp.md)
 
-#### Discussion
+## Discussion
 
 Texture sampling in areas whose texture coordinates would fall outside this range produces texel colors from the nearest edge of the texture image.
 

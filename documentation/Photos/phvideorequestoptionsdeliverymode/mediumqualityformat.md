@@ -24,7 +24,7 @@ case mediumQualityFormat
 PHVideoRequestOptionsDeliveryModeMediumQualityFormat
 ```
 
-#### Discussion
+## Discussion
 
 When the [`isNetworkAccessAllowed`](../phvideorequestoptions/isnetworkaccessallowed.md) property is `true`, the medium quality option provides a version of the video asset that is suitable for streaming from iCloud and displaying on a device—for example, an MP4 video with 720p resolution. If a higher-quality version is already cached on the device, Photos provides that video instead.
 

@@ -19,7 +19,7 @@ class func shared() -> IKImageEditPanel!
 + (IKImageEditPanel *) sharedImageEditPanel;
 ```
 
-#### Return Value
+## Return Value
 
 An `IKImageEditPanel` object.
 

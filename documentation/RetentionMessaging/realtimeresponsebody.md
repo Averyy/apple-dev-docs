@@ -22,7 +22,7 @@ object RealtimeResponseBody
 - [Retention Messaging API changelog](./retention-messaging-changelog.md)
 - [Setting up your Get Retention Message endpoint](./setting-up-retention-messaging-endpoint.md)
 
-#### Discussion
+## Discussion
 
 Return this response when the App Store calls your `Get Retention Message` endpoint.
 

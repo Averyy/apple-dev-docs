@@ -17,7 +17,7 @@ The property that configures default parameters that prioritize bulk throughput,
 static let defaults: WAPublisherListener.DatapathParameters
 ```
 
-#### Return Value
+## Return Value
 
 Default parameters.
 

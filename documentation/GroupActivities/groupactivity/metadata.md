@@ -21,7 +21,7 @@ A description of the activity, and optional image to display to the user.
 var metadata: GroupActivityMetadata { get async }
 ```
 
-#### Discussion
+## Discussion
 
 The system accesses this property when it’s ready to invite other participants to join the activity. Don’t access this property directly. Instead, implement it in your custom activity types and provide descriptive information about the current activity. For example, provide the title of the activity and an image that illustrates the activity.
 

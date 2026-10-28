@@ -25,7 +25,7 @@ var version: UInt32
 UInt32 version;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this parameter must be 0.
 

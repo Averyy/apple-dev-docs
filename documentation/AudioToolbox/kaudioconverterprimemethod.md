@@ -24,7 +24,7 @@ var kAudioConverterPrimeMethod: AudioConverterPropertyID { get }
 kAudioConverterPrimeMethod
 ```
 
-#### Discussion
+## Discussion
 
 See [`AudioConverterPrimeInfo`](./audioconverterprimeinfo.md) and [Converter Priming Constants](./api-1559927-converter-priming-constants.md).
 

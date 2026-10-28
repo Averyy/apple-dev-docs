@@ -5,7 +5,7 @@
 
 Recognize the values the Security Server sets in an authorization item’s flag field.
 
-#### Overview
+## Overview
 
 Look for these values in the [`flags`](./authorizationitem/flags.md) field of an [`AuthorizationItem`](./authorizationitem.md), for example among the set of items in the `authorizedRights` parameter returned by a call to the [`AuthorizationCopyInfo(_:_:_:)`](./authorizationcopyinfo%28_,_,_%29.md) function.
 

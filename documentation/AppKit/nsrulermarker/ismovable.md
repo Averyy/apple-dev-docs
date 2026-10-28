@@ -19,7 +19,7 @@ var isMovable: Bool { get set }
 @property (getter=isMovable) BOOL movable;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) to allow the user to drag the marker image in the ruler, [`false`](../../Swift/false.md) to make it immobile.
 

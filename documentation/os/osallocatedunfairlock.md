@@ -22,7 +22,7 @@ A structure that creates an unfair lock.
 struct OSAllocatedUnfairLock<State>
 ```
 
-#### Overview
+## Overview
 
 Unfair locks are low-level locks that block efficiently on contention. They’re useful for protecting code that loads stored resources. However, it’s unsafe to use [`os_unfair_lock`](./os_unfair_lock.md) from Swift because it’s a value type and, therefore, doesn’t have a stable memory address. That means when you call [`os_unfair_lock_lock`](./os_unfair_lock_lock.md) or [`os_unfair_lock_unlock`](./os_unfair_lock_unlock.md) and pass a lock object using the `&` operator, the system may lock or unlock the wrong object.
 

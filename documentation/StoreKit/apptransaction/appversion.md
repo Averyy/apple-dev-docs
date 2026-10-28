@@ -21,7 +21,7 @@ The app version that the app transaction applies to.
 let appVersion: String
 ```
 
-#### Discussion
+## Discussion
 
 This value is the version string you entered in Xcode. This value is a machine-readable string composed of one to three period-separated integers, such as `10.4.1`.
 

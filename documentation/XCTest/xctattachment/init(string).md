@@ -16,7 +16,7 @@ convenience init(string: String)
 + (instancetype) attachmentWithString:(NSString *) string;
 ```
 
-#### Discussion
+## Discussion
 
 Creates an attachment with a [`uniformTypeIdentifier`](./uniformtypeidentifier.md) of `"``public.plain-text"`.
 

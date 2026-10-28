@@ -25,7 +25,7 @@ var cacheName: String? { get }
 @property (nonatomic, readonly, nullable) NSString * cacheName;
 ```
 
-#### Discussion
+## Discussion
 
 The file itself is stored in a private directory; you can only access it by name using [`deleteCache(withName:)`](./deletecache%28withname%29.md)
 

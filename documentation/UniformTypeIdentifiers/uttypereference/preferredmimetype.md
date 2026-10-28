@@ -25,7 +25,7 @@ var preferredMIMEType: String? { get }
 @property (readonly, nullable) NSString * preferredMIMEType;
 ```
 
-#### Discussion
+## Discussion
 
 If available, the preferred (first available) tag of class [`mimeType`](../uttagclass/mimetype.md). If not `nil`, the value of this property is the best available MIME type value for this type.
 

@@ -25,7 +25,7 @@ var executableArchitectures: [NSNumber]? { get }
 @property (copy, readonly, nullable) NSArray<NSNumber *> * executableArchitectures;
 ```
 
-#### Discussion
+## Discussion
 
 An array of `NSNumber` objects, each of which contains an integer value corresponding to a supported processor architecture. For a list of common architecture types, see the constants in [Mach-O Architecture](../api-1495005-mach-o-architecture.md). If the bundle does not contain a Mach-O executable, this is `nil`.
 

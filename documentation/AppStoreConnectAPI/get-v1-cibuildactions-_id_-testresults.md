@@ -9,11 +9,11 @@ List all test results for a specific test action Xcode Cloud performed as part o
 **Availability**:
 - App Store Connect API 1.5+
 
-#### Discussion
+## Discussion
 
 The example request below lists the test results for an Xcode Cloud build that performed a test action. Use the information provided in the response to display test results on a dashboard, create a new task for a failing test in your issue tracker, and so on.
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

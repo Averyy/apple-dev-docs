@@ -20,7 +20,7 @@ var layer: CALayer? { get set }
 @property (nonatomic, strong, nullable) CALayer * layer;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to the root layer of the hierarchy that you host in a [`LayerHierarchyHostingView`](../layerhierarchyhostingview.md) in the browser app.
 

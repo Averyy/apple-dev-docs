@@ -19,7 +19,7 @@ Report a snapshot of all the credentialIDs that will be accepted for a `userHand
 final func reportAllAcceptedPublicKeyCredentials(relyingPartyIdentifier: String, userHandle: Data, acceptedCredentialIDs: [Data]) async throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: `ASAuthorizationError` if the system failed to accept the update.
 

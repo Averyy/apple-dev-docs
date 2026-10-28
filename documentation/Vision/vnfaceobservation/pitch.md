@@ -24,7 +24,7 @@ var pitch: NSNumber? { get }
 @property (nonatomic, strong, readonly, nullable) NSNumber * pitch;
 ```
 
-#### Discussion
+## Discussion
 
 This value indicates the rotational angle of the face around the x-axis.
 

@@ -21,11 +21,11 @@ Creates and initializes an HTTP cookie object using the provided properties.
 + (NSHTTPCookie *) cookieWithProperties:(NSDictionary<NSString *,id> *) properties;
 ```
 
-#### Return Value
+## Return Value
 
 The newly created cookie object. Returns `nil` if the provided properties are invalid.
 
-#### Discussion
+## Discussion
 
 To successfully create a cookie, you must provide values for (at least) the [`path`](../httpcookiepropertykey/path.md), [`name`](../httpcookiepropertykey/name.md), and [`value`](../httpcookiepropertykey/value.md) keys, and either the [`originURL`](../httpcookiepropertykey/originurl.md) key or the [`domain`](../httpcookiepropertykey/domain.md) key.
 

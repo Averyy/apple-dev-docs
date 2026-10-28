@@ -20,11 +20,11 @@ optional func springLoadingEntered(_ draggingInfo: any NSDraggingInfo) -> NSSpri
 - (NSSpringLoadingOptions) springLoadingEntered:(id<NSDraggingInfo>) draggingInfo;
 ```
 
-#### Return Value
+## Return Value
 
 A value of type `NSSpringLoadingOptions` to enable or disable spring-loading. Returning a value of `NSSpringLoadingEnabled` enables typical spring-loading behavior that is appropriate in most cases.
 
-#### Discussion
+## Discussion
 
 This method is called when a drag enters the bounds of the spring-loading destination. It returns a value of type `NSSpringLoadingOptions` to enable or disable spring-loading for the destination.
 

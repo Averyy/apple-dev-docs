@@ -25,7 +25,7 @@ var name: String? { get set }
 @property (nonatomic, copy, nullable) NSString * name;
 ```
 
-#### Discussion
+## Discussion
 
 You can provide a descriptive name for a node to make managing your scene graph easier. Nodes loaded from a scene file may have names assigned by an artist using a 3D authoring tool. Use the [`childNode(withName:recursively:)`](./childnode%28withname,recursively%29.md) or [`childNodes(passingTest:)`](./childnodes%28passingtest%29.md) method to retrieve a node from a scene graph by its name, or the [`SCNSceneSource`](../scnscenesource.md) class to examine nodes in a scene file without loading its scene graph.
 

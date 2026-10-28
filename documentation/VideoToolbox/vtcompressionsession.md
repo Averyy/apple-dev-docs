@@ -24,7 +24,7 @@ class VTCompressionSession
 typedef struct OpaqueVTCompressionSession * VTCompressionSessionRef;
 ```
 
-#### Overview
+## Overview
 
 A compression session supports the compression of a sequence of video frames. The session is a reference-counted CoreFoundation (CF) object.
 

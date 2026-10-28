@@ -23,7 +23,7 @@ case URL
 UIKeyboardTypeURL
 ```
 
-#### Discussion
+## Discussion
 
 This keyboard type prominently features the period (”`.`”) and slash (”/”) characters and the “`.com`” string.
 

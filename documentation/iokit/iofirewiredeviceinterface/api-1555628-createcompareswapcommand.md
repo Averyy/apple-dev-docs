@@ -16,7 +16,7 @@ Create a quadlet compare/swap command object.
 IOFireWireLibCommandRef (*CreateCompareSwapCommand)(IOFireWireLibDeviceRef self, io_object_t device, const FWAddress *addr, UInt32 cmpVal, UInt32 newVal, IOFireWireLibCommandCallback callback, Boolean failOnReset, UInt32 generation, void *inRefCon, REFIID iid);
 ```
 
-#### Return Value
+## Return Value
 
 An IOFireWireLibCommandRef interface. See IOFireWireLibCommandRef.
 

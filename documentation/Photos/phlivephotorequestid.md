@@ -24,7 +24,7 @@ typealias PHLivePhotoRequestID = Int32
 typedef int32_t PHLivePhotoRequestID;
 ```
 
-#### Discussion
+## Discussion
 
 Pass this identifier to the [`cancelRequest(withRequestID:)`](./phlivephoto/cancelrequest%28withrequestid%29.md) method if you need to cancel a request before it completes.
 

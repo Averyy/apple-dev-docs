@@ -5,7 +5,7 @@
 
 Control the common attributes of all Metal memory resources, including buffers and textures, and how to configure their underlying memory.
 
-#### Overview
+## Overview
 
 A *resource* is a memory asset, such as an [`MTLBuffer`](./mtlbuffer.md) or [`MTLTexture`](./mtltexture.md), that a GPU can access (see [Buffers](./buffers.md) and [Textures](./textures.md)).
 

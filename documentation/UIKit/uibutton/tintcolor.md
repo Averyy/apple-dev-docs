@@ -23,7 +23,7 @@ var tintColor: UIColor! { get set }
 @property (nonatomic, strong, null_resettable) UIColor * tintColor;
 ```
 
-#### Discussion
+## Discussion
 
 All subclasses of [`UIView`](../uiview.md) derive their behavior for [`tintColor`](../uiview/tintcolor.md) from the base class. See the discussion of [`tintColor`](../uiview/tintcolor.md) at the [`UIView`](../uiview.md) level for more information.
 

@@ -22,7 +22,7 @@ var isWritingToolsActive: Bool { get }
 @property (nonatomic, readonly, getter=isWritingToolsActive) BOOL writingToolsActive;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to determine when someone is using the writing tools to rewrite text in the current text view. When writing tools are active, the system can change significant portions of the text view’s content. You might use this property to prevent your app from performing actions that interfere with those changes. For example, you might stop synchronizing text to iCloud while the UI is active.
 

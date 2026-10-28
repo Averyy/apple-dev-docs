@@ -5,13 +5,13 @@
 
 Convert an existing movie file to a different format.
 
-#### Overview
+## Overview
 
 To convert an existing movie file to a format that makes it compatible with other devices, you need to generate a new movie file based on the contents of the existing file. Though you can’t change the format of the saved video, you can create a new file in the desired format by following the steps outlined in this article.
 
 > 💡 **Tip**:  If your app can save a movie directly from video capture, it’s more efficient to change the default format during capture by following the steps in [Recording movies in alternative formats](./recording-movies-in-alternative-formats.md).
 
-##### Export a new video to the desired format
+### Export a new video to the desired format
 
 To export a video to a different format, begin with an [`AVAsset`](./avasset.md) movie file and perform these steps:
 

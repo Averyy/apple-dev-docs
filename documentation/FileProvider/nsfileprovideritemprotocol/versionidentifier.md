@@ -22,7 +22,7 @@ optional var versionIdentifier: Data? { get }
 @property (nonatomic, strong, readonly, nullable) NSData * versionIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains a data object that can uniquely identify each version of the item; for example, the hash of a document’s contents.
 

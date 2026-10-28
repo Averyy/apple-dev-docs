@@ -20,7 +20,7 @@ The function used to respond to action paused events.
 mutating func actionPaused(event: Self.EventType)
 ```
 
-#### Discussion
+## Discussion
 
 Action paused is raised when the animation is paused.
 

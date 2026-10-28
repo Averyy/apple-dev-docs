@@ -22,7 +22,7 @@ A shape provider that strokes its shape.
 nonisolated struct StrokeShapeView<Content, Style, Background> where Content : Shape, Style : ShapeStyle, Background : View
 ```
 
-#### Overview
+## Overview
 
 You don’t create this type directly; it’s the return type of `Shape.stroke`.
 

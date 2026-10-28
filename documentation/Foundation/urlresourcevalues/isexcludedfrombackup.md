@@ -26,7 +26,7 @@ var isExcludedFromBackup: Bool? { get set }
 - [Optimizing Your App’s Data for iCloud Backup](../optimizing-your-app-s-data-for-icloud-backup.md)
 - [Using the file system effectively](../using-the-file-system-effectively.md)
 
-#### Discussion
+## Discussion
 
 This property is only useful for excluding cache and other application support files which are not needed in a backup. Some operations commonly made to user documents will cause this property to be reset to false and so this property should not be used on user documents.
 

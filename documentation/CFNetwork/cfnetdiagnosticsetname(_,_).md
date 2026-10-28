@@ -24,11 +24,11 @@ func CFNetDiagnosticSetName(_ details: CFNetDiagnostic, _ name: CFString)
 extern void CFNetDiagnosticSetName(CFNetDiagnosticRef details, CFStringRef name);
 ```
 
-#### Discussion
+## Discussion
 
 Frameworks requiring that an application name be displayed to the user derive the application name from the bundle identifier of the currently running application, in that application’s localization. If you want to override the derived application name, use this function to set the name that is displayed.
 
-##### Special Considerations
+### Special Considerations
 
 This function is thread safe as long as another thread does not alter the same CFNetDiagnosticRef at the same time.
 

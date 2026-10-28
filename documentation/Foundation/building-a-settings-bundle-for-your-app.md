@@ -5,7 +5,7 @@
 
 Integrate your app’s custom settings into the Settings app in iOS, iPadOS, tvOS, and visionOS, and support a Mac Catalyst settings window.
 
-#### Overview
+## Overview
 
 In iOS, iPadOS, tvOS, and visionOS, you can display some or all of your app’s settings from the system’s Settings app. The Settings app already displays system-specific settings for each app. For example, if an app supports push notifications, the Settings app displays details about the types of alerts the system uses to deliver those notifications. If you don’t want to display settings from your app’s interface, you can display them in the Settings app instead. Typically, you do so if people modify the settings infrequently.
 
@@ -15,7 +15,7 @@ If your iOS app supports Mac Catalyst, the system uses your app’s Settings bun
 
 > **Note**: To determine when to add a Settings bundle to your app, see [Settings](https://developer.apple.com/design/human-interface-guidelines/settings) in Human Interface Guidelines.
 
-##### Add the Settings bundle and initial content to your project
+### Add the Settings bundle and initial content to your project
 
 Xcode provides a template for a Settings bundle that you can add to your project and modify. To add this bundle to your app:
 
@@ -41,7 +41,7 @@ Remove any elements from the initial `Root.plist` file that you don’t need, an
 | [Title](./building-a-settings-bundle-for-your-app.md#Add-a-title-element) | An element that displays a read-only setting’s name and value. Use this element to display setting information that you don’t want someone to change. |
 | [Toggle switch](./building-a-settings-bundle-for-your-app.md#Add-a-toggle-switch-element) | An element that offers a binary choice. Use it to enable or disable features. |
 
-##### Localize the content of your settings interface
+### Localize the content of your settings interface
 
 When you build your settings interface, specify the text for interface elements in your development language. To localize that text, add strings files to your Settings bundle for each language you support. When building your settings interface, the Settings app loads the strings file for the appropriate language and makes the relevant substitutions. The following listing shows the structure of a bundle that includes localized strings for English and German.
 
@@ -64,7 +64,7 @@ Inside each strings file, place a pair of translation strings on its own line an
 "Enabled" = "Aktiviert";
 ```
 
-##### Specify the contents of each settings page
+### Specify the contents of each settings page
 
 Each property list file in your Settings bundle contains top-level keys that describe the contents of that page. Include these keys in the `Root.plist` file to specify the contents of your main settings page. Also include them in the property list file for any child pages you add to your Settings bundle. The keys tell the Settings app what elements to display on the page and where to find localized resources. The following table lists the supported keys and their purpose.
 
@@ -74,7 +74,7 @@ Each property list file in your Settings bundle contains top-level keys that des
 | Strings Filename | String | The name of the `.strings` file, without the filename extension, you use to store localized text for the current page. For each language you support, create language-specific project directories in your Settings bundle and place a copy of this file in the directory. If you omit this key, the system doesn’t display a localized version of your settings interface. The raw name of this key is `StringsTable`. |
 | Settings Page Title | String | The name of the page, which the Settings app doesn’t use. The raw name of this key is `Title`. |
 
-##### Add a child page element
+### Add a child page element
 
 If your app’s settings interface includes a large number of elements, organize those elements hierarchically using child page elements. When the Settings app encounters a child page element, it adds a single row to the current page of your settings interface. Tapping or clicking the row transitions to a new page, the contents of which you provide in a separate property list file in your Settings bundle. The following table lists the supported keys and their purpose.
 
@@ -85,7 +85,7 @@ If your app’s settings interface includes a large number of elements, organize
 | Filename (required) | String | The name of the property list file to load. Specify the filename without its `.plist` extension. Place the file in the root directory of your Settings bundle, alongside the existing `Root.plist` file. The raw name of this key is `File`. |
 | Icon | String | The name of an image in your Settings bundle, without the filename extension. In an iOS app running in Mac Catalyst, the system displays this image as the toolbar tab icon in your app’s Settings window. The Settings apps in iOS, iPadOS, tvOS, and visionOS ignore this key. The raw name of this key is `Icon`. |
 
-##### Add a group element
+### Add a group element
 
 Include group elements to separate settings visually on the current page. When the Settings app encounters a group element, it renders the items in the group with a special visual treatment to indicate they’re related to each other, and not to other elements. The group includes the items immediately after the group element. The group ends when there are no more elements in the Preference Items array, or when the Settings app encounters a radio group element or another group element. The following table lists the supported keys and their purpose.
 
@@ -94,7 +94,7 @@ Include group elements to separate settings visually on the current page. When t
 | Type (required) | String | The value of this key is always `Group`.  The raw name of this key is `Type` and the raw value is `PSGroupSpecifier`. |
 | Title (localizable) | String | The title string to display before the grouped items. Use this key to specify the purpose of the group of settings. The raw name of this key is `Title`. |
 
-##### Add a multi-value element
+### Add a multi-value element
 
 A multi-value element gives someone a way to choose one value from a mutually exclusive set of values. The Settings app displays a single row for this element on the current page. When someone taps or clicks that row, Settings displays a new page with the available values and places a checkmark next to the selected one. When someone changes the selected value, the system saves the new value to your app’s defaults database. The following table lists the supported keys and their purpose.
 
@@ -107,7 +107,7 @@ A multi-value element gives someone a way to choose one value from a mutually ex
 | Titles (required, localizable) | Array | An array of strings, each of which contains a human-readable description of one option. Each string in this array corresponds to the value at the same index in the Values array. The Values array must have the same number of elements. The raw name of this key is `Titles`. |
 | Values (required) | Array | An array of values for the corresponding options. The items in the array can be any property list type. When someone chooses an option, the system writes the corresponding value from this array to the defaults database. This array must have the same number of elements as the Title array. The raw name of this key is `Values`. |
 
-##### Add a radio group element
+### Add a radio group element
 
 A radio group element displays a group of mutually exclusive values on the current page. This element is similar to a multi-value element but places the items on the current page instead of displaying a new page. Tapping or clicking one row deselects the other rows and saves the new value to your app’s defaults database. Avoid using this option with a large number of possible values. The following table lists the supported keys and their purpose.
 
@@ -123,7 +123,7 @@ A radio group element displays a group of mutually exclusive values on the curre
 
 If a group element appeared previously in the list of items, the presence of this element ends that group and creates a new group exclusively for the radio group values. If you display any items after the radio group, make the first item another group element to create a new group of settings.
 
-##### Add a slider element
+### Add a slider element
 
 A slider element displays a row with a slider control that you can use to represent a continuous range of values. The control in this row is equivalent to a [`Slider`](../SwiftUI/slider.md), [`UISlider`](../UIKit/uislider.md), or [`NSSlider`](../AppKit/nsslider.md) control. The slider control spans the entire width of the row, with the slider’s minimum position located at the leading edge of the row. The following table lists the supported keys and their purpose.
 
@@ -139,7 +139,7 @@ A slider element displays a row with a slider control that you can use to repres
 
 > **Note**: tvOS doesn’t support slider controls in settings interfaces, and the Settings app in tvOS ignores slider elements in your property list files.
 
-##### Add a text-field element
+### Add a text-field element
 
 A text-field element displays a row with an editable space for typing a text-based value. The title of the element appears on the row’s leading edge and the value appears on the trailing edge. Tapping or clicking the row displays the system keyboard so the person can type. The following table lists the supported keys and their purpose.
 
@@ -156,7 +156,7 @@ A text-field element displays a row with an editable space for typing a text-bas
 
 > ❗ **Important**: Because the Settings app displays and manages your settings interface, your app can’t validate the setting’s text before the system saves it to the database. When you retrieve a value for the associated setting in your code, validate it before you use it.
 
-##### Add a title element
+### Add a title element
 
 A title element displays a read-only version of the setting’s name and its currently configured value, if any. Use this element to display settings that you don’t want people to change. For example, you might use this field to display login information that someone created using your app’s interface. The following table lists the supported keys and their purpose.
 
@@ -171,7 +171,7 @@ A title element displays a read-only version of the setting’s name and its cur
 
 Use the Titles and Values keys of this element to provide meaningful descriptions of potentially cryptic settings. If the Values array contains the current setting, the Settings app displays the associated string from the Titles array instead. If the setting contains a value that’s not in the array, the Settings app displays the value without modification.
 
-##### Add a toggle switch element
+### Add a toggle switch element
 
 A toggle switch element displays a control with a binary choice and a title describing the meaning behind that choice. This element is equivalent to a [`Toggle`](../SwiftUI/toggle.md), [`UISwitch`](../UIKit/uiswitch.md), or [`NSSwitch`](../AppKit/nsswitch.md) control. Typically, you use this element for settings that enable or disable features. The following table lists the supported keys and their purpose.
 

@@ -24,7 +24,7 @@ func hasMediaType(_ mediaType: AVMediaType) -> Bool
 - (BOOL) hasMediaType:(AVMediaType) mediaType;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the device captures media of the specified type; otherwise, [`false`](../../Swift/false.md).
 

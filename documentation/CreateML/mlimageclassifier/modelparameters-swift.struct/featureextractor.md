@@ -21,7 +21,7 @@ The underlying base model the training session uses to extract image features as
 var featureExtractor: MLImageClassifier.FeatureExtractorType { get set }
 ```
 
-#### Discussion
+## Discussion
 
 When you train an image classifier with Create ML, you don’t train a complete model that converts images to labels. Instead, Create ML leverages a *feature extractor*, which is another model that identifies a set of general but distinguishing image characteristics. You can either use Create ML’s `scenePrint` feature extractor or provide your own custom feature extractor.
 

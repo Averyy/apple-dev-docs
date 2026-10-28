@@ -19,7 +19,7 @@ Creates a new instance of a disbursement request with the merchant identifier, c
 - (instancetype) initWithMerchantIdentifier:(NSString *) merchantIdentifier currencyCode:(NSString *) currencyCode regionCode:(NSString *) regionCode supportedNetworks:(NSArray<NSString *> *) supportedNetworks merchantCapabilities:(PKMerchantCapability) merchantCapabilities summaryItems:(NSArray<PKPaymentSummaryItem *> *) summaryItems;
 ```
 
-#### Return Value
+## Return Value
 
 A new `PKDisbursementRequest`.
 

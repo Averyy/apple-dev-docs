@@ -25,7 +25,7 @@ static let contentAccessDateKey: URLResourceKey
 extern NSURLResourceKey const NSURLContentAccessDateKey;
 ```
 
-#### Discussion
+## Discussion
 
 This key corresponds to an [`NSDate`](../nsdate.md) value, or `nil` if the volume doesn’t support access dates.
 

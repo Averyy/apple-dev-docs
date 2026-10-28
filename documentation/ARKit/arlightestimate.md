@@ -20,7 +20,7 @@ class ARLightEstimate
 @interface ARLightEstimate : NSObject
 ```
 
-#### Overview
+## Overview
 
 If you enable the [`isLightEstimationEnabled`](./arconfiguration/islightestimationenabled.md) setting, ARKit provides light estimates in the [`lightEstimate`](./arframe/lightestimate.md) property of each [`ARFrame`](./arframe.md) it delivers.
 

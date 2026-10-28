@@ -22,7 +22,7 @@ func GLKMatrixStackGetMatrix4(_ stack: GLKMatrixStack) -> GLKMatrix4
 GLKMatrix4 GLKMatrixStackGetMatrix4(GLKMatrixStackRef stack);
 ```
 
-#### Return Value
+## Return Value
 
 The top matrix.
 

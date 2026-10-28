@@ -21,7 +21,7 @@ A guide that marks the bottom-most text baseline in a view.
 static let lastTextBaseline: VerticalAlignment
 ```
 
-#### Discussion
+## Discussion
 
 Use this guide to align with the baseline of the bottom-most text in a view. The guide aligns with the bottom of a view that contains no text.
 

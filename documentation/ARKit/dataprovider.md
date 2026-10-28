@@ -16,7 +16,7 @@ A source of live data from ARKit.
 protocol DataProvider : AnyObject, CustomStringConvertible, Sendable
 ```
 
-#### Overview
+## Overview
 
 Most providers supply an asynchronous sequence of updated anchors for the provider’s data type. For example, a [`HandTrackingProvider`](./handtrackingprovider.md) instance’s [`anchorUpdates`](./handtrackingprovider/anchorupdates.md) property gives updates over time for hand anchors.
 

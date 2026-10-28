@@ -23,7 +23,7 @@ convenience init(textLineRects: [NSValue])
 - (instancetype) initWithTextLineRects:(NSArray<NSValue *> *) textLineRects;
 ```
 
-#### Return Value
+## Return Value
 
 A new preview parameters object for a view containing text.
 

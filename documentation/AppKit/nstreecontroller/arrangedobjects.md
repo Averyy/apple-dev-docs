@@ -19,7 +19,7 @@ var arrangedObjects: NSTreeNode { get }
 @property (strong, readonly) NSTreeNode * arrangedObjects;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property represents a proxy root tree node containing the tree controller’s sorted content objects. The proxy object responds to [`children`](../nstreenode/children.md) and [`descendant(at:)`](../nstreenode/descendant%28at%29.md) messages. This property is observable using key-value observing.
 

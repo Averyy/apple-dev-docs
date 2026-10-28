@@ -24,7 +24,7 @@ static var hazardTrackingModeUntracked: MTLResourceOptions { get }
 MTLResourceHazardTrackingModeUntracked
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [`MTLHazardTrackingMode.untracked`](../mtlhazardtrackingmode/untracked.md).
 

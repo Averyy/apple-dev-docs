@@ -19,11 +19,11 @@ func NewOSLAdjustMarksUPP(_ userRoutine: OSLAdjustMarksProcPtr!) -> OSLAdjustMar
 OSLAdjustMarksUPP NewOSLAdjustMarksUPP(OSLAdjustMarksProcPtr userRoutine);
 ```
 
-#### Return Value
+## Return Value
 
 See [`OSLAdjustMarksUPP`](./osladjustmarksupp.md).
 
-#### Discussion
+## Discussion
 
 See the [`OSLAdjustMarksProcPtr`](./osladjustmarksprocptr.md) callback function. 
 

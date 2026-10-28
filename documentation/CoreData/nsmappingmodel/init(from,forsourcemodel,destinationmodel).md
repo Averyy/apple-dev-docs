@@ -25,11 +25,11 @@ init?(from bundles: [Bundle]?, forSourceModel sourceModel: NSManagedObjectModel?
 + (NSMappingModel *) mappingModelFromBundles:(NSArray<NSBundle *> *) bundles forSourceModel:(NSManagedObjectModel *) sourceModel destinationModel:(NSManagedObjectModel *) destinationModel;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the mapping model to translate data from `sourceModel` to `destinationModel`. If a suitable mapping model cannot be found, returns `nil`.
 
-#### Discussion
+## Discussion
 
 This method is a companion to the [`mergedModel(from:)`](../nsmanagedobjectmodel/mergedmodel%28from%29.md) and [`mergedModel(from:forStoreMetadata:)`](../nsmanagedobjectmodel/mergedmodel%28from,forstoremetadata%29.md) methods. In this case, the framework uses the version information from the models to locate the appropriate mapping model in the available bundles.
 

@@ -25,7 +25,7 @@ var lastPositionTimestamp: TimeInterval { get }
 @property (readonly) NSTimeInterval lastPositionTimestamp;
 ```
 
-#### Discussion
+## Discussion
 
 This property isn’t a specific date and time. To determine the time between positions, subtract a previous value from the current value.
 

@@ -25,7 +25,7 @@ var layers: Float { get set }
 @property (nonatomic) float layers;
 ```
 
-#### Discussion
+## Discussion
 
 Set to `nil` for automatic.
 

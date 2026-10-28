@@ -25,7 +25,7 @@ static var noChildProcess: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 A `wait(2)` or `waitpid(2)` function was executed by a process that doesn’t have any existing child processes or whose child processes are all already being waited for.
 

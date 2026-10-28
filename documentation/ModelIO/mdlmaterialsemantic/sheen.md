@@ -24,7 +24,7 @@ case sheen
 MDLMaterialSemanticSheen
 ```
 
-#### Discussion
+## Discussion
 
 Model I/O uses this semantic for the `sheen` and `map_sheen` attributes when importing from the MTL file format (for assets in the OBJ file format).
 

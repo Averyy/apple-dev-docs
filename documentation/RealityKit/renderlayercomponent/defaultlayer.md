@@ -20,7 +20,7 @@ A render layer component that contains only [`defaultLayer`](../renderlayer/defa
 static let defaultLayer: RenderLayerComponent
 ```
 
-#### Discussion
+## Discussion
 
 RealityKit treats entities without an explicit [`RenderLayerComponent`](../renderlayercomponent.md) as if they had this component.
 

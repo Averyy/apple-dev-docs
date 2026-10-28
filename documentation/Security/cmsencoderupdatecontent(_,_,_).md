@@ -19,11 +19,11 @@ func CMSEncoderUpdateContent(_ cmsEncoder: CMSEncoder, _ content: UnsafeRawPoint
 OSStatus CMSEncoderUpdateContent(CMSEncoderRef cmsEncoder, const void *content, size_t contentLen);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 You use this function to add the content that is to be signed or encrypted. If the message is only a container for certificates added with the [`CMSEncoderAddSupportingCerts(_:_:)`](./cmsencoderaddsupportingcerts%28_,_%29.md) function and has no other content, do not call this function. This function can be called multiple times.
 

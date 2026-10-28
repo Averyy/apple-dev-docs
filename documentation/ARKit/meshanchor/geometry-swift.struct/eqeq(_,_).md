@@ -15,7 +15,7 @@ Returns a Boolean value indicating whether two mesh geometries are equal.
 static func == (lhs: MeshAnchor.Geometry, rhs: MeshAnchor.Geometry) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the two mesh geometries are equal; otherwise, `false`.
 

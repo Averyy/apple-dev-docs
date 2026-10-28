@@ -12,7 +12,7 @@ Creates a new [`XCTestRun`](../xctestrun.md) for the provided test.
 + (instancetype) testRunWithTest:(XCTest *) test;
 ```
 
-#### Return Value
+## Return Value
 
 A test run for the provided test.
 

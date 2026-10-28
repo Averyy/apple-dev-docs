@@ -24,7 +24,7 @@ static let peakExpiratoryFlowRate: HKQuantityTypeIdentifier
 extern HKQuantityTypeIdentifier const HKQuantityTypeIdentifierPeakExpiratoryFlowRate;
 ```
 
-#### Discussion
+## Discussion
 
 These samples use volume/time units (described in [`HKUnit`](../hkunit.md)) and measure discrete values (described in [`HKQuantityAggregationStyle`](../hkquantityaggregationstyle.md)).
 

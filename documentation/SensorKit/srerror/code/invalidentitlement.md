@@ -21,7 +21,7 @@ case invalidEntitlement
 SRErrorInvalidEntitlement
 ```
 
-#### Discussion
+## Discussion
 
 To allow the app to read sensor data, the system requires that the app’s code signature contain a special entitlement. For more information, see [Configuring your project for sensor reading](../../configuring-your-project-for-sensor-reading.md).
 

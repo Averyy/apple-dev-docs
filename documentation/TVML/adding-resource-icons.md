@@ -5,7 +5,7 @@
 
 Add Apple-provided icons to buttons and as independent images.
 
-#### Overview
+## Overview
 
 Apple TV contains several icons that are available when you set the `src` attribute on a `badge` element to `resource://<resourcename>`. Here’s an example that sets the preview icon on a button:
 

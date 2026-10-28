@@ -21,7 +21,7 @@ Compares two ordered sets, using the provided block and with options, to create 
 - (NSOrderedCollectionDifference<id> *) differenceFromOrderedSet:(NSOrderedSet<id> *) other withOptions:(NSOrderedCollectionDifferenceCalculationOptions) options usingEquivalenceTest:(BOOL (^)(ObjectType obj1, ObjectType obj2)) block;
 ```
 
-#### Discussion
+## Discussion
 
 The options allow you to choose to omit insertion or removal references to the change objects within the difference object’s changes. Don’t use the option [`inferMoves`](../nsorderedcollectiondifferencecalculationoptions/infermoves.md) when providing a block for the equivalence test. The changes returned in the difference object don’t include valid values for [`associatedIndex`](../nsorderedcollectionchange/associatedindex.md).
 

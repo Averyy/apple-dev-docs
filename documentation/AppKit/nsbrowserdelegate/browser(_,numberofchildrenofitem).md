@@ -20,7 +20,7 @@ optional func browser(_ browser: NSBrowser, numberOfChildrenOfItem item: Any?) -
 - (NSInteger) browser:(NSBrowser *) browser numberOfChildrenOfItem:(id) item;
 ```
 
-#### Return Value
+## Return Value
 
 The number of children.
 

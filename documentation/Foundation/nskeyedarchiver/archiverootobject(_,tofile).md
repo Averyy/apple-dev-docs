@@ -27,11 +27,11 @@ class func archiveRootObject(_ rootObject: Any, toFile path: String) -> Bool
 + (BOOL) archiveRootObject:(id) rootObject toFile:(NSString *) path;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the operation was successful, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 This method archives the graph formed by the root object to a data object, then atomically writes it to the given path. The format of the archive is [`PropertyListSerialization.PropertyListFormat.binary`](../propertylistserialization/propertylistformat/binary.md).
 

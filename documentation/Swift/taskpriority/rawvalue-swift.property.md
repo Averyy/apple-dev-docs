@@ -21,7 +21,7 @@ The corresponding value of the raw type.
 var rawValue: UInt8
 ```
 
-#### Discussion
+## Discussion
 
 A new instance initialized with `rawValue` will be equivalent to this instance. For example:
 

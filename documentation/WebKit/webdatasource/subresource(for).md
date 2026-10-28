@@ -19,7 +19,7 @@ func subresource(for URL: URL!) -> WebResource!
 - (WebResource *) subresourceForURL:(NSURL *) URL;
 ```
 
-#### Return Value
+## Return Value
 
 The subresource for `URL` or `nil` if the data source hasn’t finished downloading the subresource.
 

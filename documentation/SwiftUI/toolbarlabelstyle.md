@@ -21,7 +21,7 @@ The label style of a toolbar.
 struct ToolbarLabelStyle
 ```
 
-#### Overview
+## Overview
 
 Use this type in conjunction with modifiers like [`windowToolbarLabelStyle(fixed:)`](./scene/windowtoolbarlabelstyle%28fixed%29.md) and [`windowToolbarLabelStyle(_:)`](./scene/windowtoolbarlabelstyle%28_%29.md) to customize the appearance of window toolbars managed by SwiftUI.
 

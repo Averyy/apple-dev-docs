@@ -25,7 +25,7 @@ class MKLocalSearchCompletion
 @interface MKLocalSearchCompletion : NSObject
 ```
 
-#### Overview
+## Overview
 
 You don’t create instances of this class directly. Instead, you use an [`MKLocalSearchCompleter`](./mklocalsearchcompleter.md) to initiate a search based on a set of partial search strings. That object stores any matches in its results property. Retrieve any `MKLocalSearchCompletion` objects from that property and display the search terms in your interface, or use one to initiate a search for content based on that search term.
 

@@ -25,7 +25,7 @@ let CBATTErrorDomain: String
 extern NSString * const CBATTErrorDomain;
 ```
 
-#### Discussion
+## Discussion
 
 This value identifies Core Bluetooth Attribute Protocol (ATT) errors when used as the [`domain`](../Foundation/nserror/domain.md) of an [`NSError`](../Foundation/nserror.md) instance.
 

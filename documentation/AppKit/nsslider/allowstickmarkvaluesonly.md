@@ -19,7 +19,7 @@ var allowsTickMarkValuesOnly: Bool { get set }
 @property BOOL allowsTickMarkValuesOnly;
 ```
 
-#### Discussion
+## Discussion
 
 This value is [`true`](../../Swift/true.md) if the slider fixes its values to the values represented by its tick marks; otherwise it’s [`false`](../../Swift/false.md). For example, if a slider has a minimum value of `0`, a maximum value of `100`, and five markers, the allowable values are `0`, `25`, `50`, `75`, and `100`. When users move the slider’s knob, it jumps to the tick mark nearest the cursor when the mouse button is released. This method has no effect if the slider has no tick marks. In its implementation of this method, the receiving `NSSlider` instance invokes the method of the same name of its `NSSliderCell` instance.
 

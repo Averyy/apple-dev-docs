@@ -20,7 +20,7 @@ attribute string redirectURI;
 - [Configuring your webpage for Sign in with Apple](../../SigninwithApple/configuring-your-webpage-for-sign-in-with-apple.md)
 - [Incorporating Sign in with Apple into other platforms](../../SigninwithApple/incorporating-sign-in-with-apple-into-other-platforms.md)
 
-#### Discussion
+## Discussion
 
 The URI provided must redirect to a website under your control. Supply this URI to WWDR to enable this feature.
 

@@ -23,11 +23,11 @@ func clearButtonRect(forBounds bounds: CGRect) -> CGRect
 - (CGRect) clearButtonRectForBounds:(CGRect) bounds;
 ```
 
-#### Return Value
+## Return Value
 
 The rectangle in which to draw the clear button.
 
-#### Discussion
+## Discussion
 
 You should not call this method directly. If you want to place the clear button in a different location, you can override this method and return the new rectangle. Your method should call the `super` implementation and modify the returned rectangle’s origin only. Changing the size of the clear button may cause unnecessary distortion of the button image.
 

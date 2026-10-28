@@ -24,7 +24,7 @@ case contribute
 PKPaymentButtonTypeContribute
 ```
 
-#### Discussion
+## Discussion
 
 This button looks like:
 

@@ -19,7 +19,7 @@ func SCNetworkSetSetServiceOrder(_ set: SCNetworkSet, _ newOrder: CFArray) -> Bo
 Boolean SCNetworkSetSetServiceOrder(SCNetworkSetRef set, CFArrayRef newOrder);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if the new service order was saved; `FALSE` if an error occurred.
 

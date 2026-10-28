@@ -25,7 +25,7 @@ func CFDataGetLength(_ theData: CFData!) -> CFIndex
 extern CFIndex CFDataGetLength(CFDataRef theData);
 ```
 
-#### Return Value
+## Return Value
 
 An index that specifies the number of bytes in `theData`.
 

@@ -17,7 +17,7 @@ The top-level Qwen3 model class providing embedding-level outputs.
 class Qwen3Model
 ```
 
-#### Overview
+## Overview
 
 This class conforms to `EmbeddingModel`, making it suitable for use as a base for Causal Language Models or as a standalone encoder for generating text embeddings.
 

@@ -21,7 +21,7 @@ Creates a standard map style that includes the elevation, point of interest, and
 static func standard(elevation: MapStyle.Elevation = .automatic, emphasis: MapStyle.StandardEmphasis = .automatic, pointsOfInterest: PointOfInterestCategories = .all, showsTraffic: Bool = false) -> MapStyle
 ```
 
-#### Return Value
+## Return Value
 
 A [`MapStyle`](../mapstyle.md) with the configuration you specified.
 

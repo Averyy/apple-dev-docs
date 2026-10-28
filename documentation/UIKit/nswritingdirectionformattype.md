@@ -24,7 +24,7 @@ enum NSWritingDirectionFormatType
 enum NSWritingDirectionFormatType : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Use these constants as the values for the [`writingDirection`](../Foundation/nsattributedstring/key/writingdirection.md) key in Swift or the [`NSWritingDirectionAttributeName`](./nswritingdirectionattributename.md) key in Objective-C.
 

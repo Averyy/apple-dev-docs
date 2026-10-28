@@ -15,7 +15,7 @@ An error a validator emits when a value isn’t an object.
 interface ValueNotObjectError
 ```
 
-#### Overview
+## Overview
 
 Extends `ValidationError`.
 

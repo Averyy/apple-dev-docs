@@ -12,11 +12,11 @@ virtual UInt32 getReconnectTime(
  void );
 ```
 
-#### Return Value
+## Return Value
 
 Returns a UInt32 containing the currently set reconnect time.
 
-#### Overview
+## Overview
 
 Returns the currently desired initiator reconnect time encoded as 2^time seconds.
 

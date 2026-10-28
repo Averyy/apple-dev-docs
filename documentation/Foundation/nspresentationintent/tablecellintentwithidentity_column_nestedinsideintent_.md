@@ -21,7 +21,7 @@ Creates a table cell intent with the provided information.
 + (NSPresentationIntent *) tableCellIntentWithIdentity:(NSInteger) identity column:(NSInteger) column nestedInsideIntent:(NSPresentationIntent *) parent;
 ```
 
-#### Return Value
+## Return Value
 
 A new intent with the kind set to [`NSPresentationIntentKindTableCell`](../nspresentationintentkind/nspresentationintentkindtablecell.md).
 

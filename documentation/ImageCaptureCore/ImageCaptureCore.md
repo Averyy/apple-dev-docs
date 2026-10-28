@@ -13,7 +13,7 @@ Browse for media devices and control them programmatically from your app.
 - macOS 10.6+
 - visionOS 1.0+
 
-#### Overview
+## Overview
 
 Using ImageCaptureCore, your app can:
 
@@ -24,7 +24,7 @@ Using ImageCaptureCore, your app can:
 
 ![Diagram showing a macOS device connected by cables to a camera and a scanner, and an iPadOS device connected by cable to a camera.](https://developer.apple.com/tutorials/images/com.apple.imagecapturecore/media-3501083@2x.png)
 
-##### Configuring tethered capture and photo import
+### Configuring tethered capture and photo import
 
 To import pictures and tether from a macOS app, you first need to enable the Hardened Runtime capability in Xcode, and then add the [`Photos Library Entitlement`](../BundleResources/entitlements/com.apple.security.personal-information.photos-library.md).
 

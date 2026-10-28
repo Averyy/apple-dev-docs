@@ -21,7 +21,7 @@ A type that hides the day period marker.
 static let omitted: Date.FormatStyle.Symbol.Hour.AMPMStyle
 ```
 
-#### Discussion
+## Discussion
 
 This type represents the hour period numerically only. For example, `8` (for 8 a.m.) or `1` (for 1 p.m.) if used with `defaultDigits`, and `08` or `01` if used with `twoDigits`.
 

@@ -17,7 +17,7 @@ An opaque representation of a specific web domain.
 let token: ApplicationToken?
 ```
 
-#### Discussion
+## Discussion
 
 Use  a token to share information about an app with other devices in the same Family Sharing group.
 

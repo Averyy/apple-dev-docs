@@ -24,7 +24,7 @@ var isRasterizationEnabled: Bool { get set }
 @property (nonatomic, readwrite, getter=isRasterizationEnabled) BOOL rasterizationEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`true`](../../Swift/true.md), indicating that primitives are rasterized. If the value is [`false`](../../Swift/false.md), then primitives are dropped prior to rasterization (i.e. rasterization is disabled). Disabling rasterization may be useful to gather data from vertex-only transformations.
 

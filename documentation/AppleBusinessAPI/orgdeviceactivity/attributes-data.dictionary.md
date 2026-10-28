@@ -15,11 +15,11 @@ Attributes that describe an organization device activity resource.
 object OrgDeviceActivity.Attributes
 ```
 
-#### Overview
+## Overview
 
 > **Note**: You can add new attributes to a resource without a newer version of an API.
 
-###### Status
+#### Status
 
 | **Possible values** | **Description** |
 | --- | --- |
@@ -28,7 +28,7 @@ object OrgDeviceActivity.Attributes
 | `STOPPED` | Indicates that an activity is stopped. |
 | `FAILED` | Indicates when an activity fails processing. For more details, check the downloadable activity logs. |
 
-###### Substatus
+#### Substatus
 
 | **Possible values** | **Description** |
 | --- | --- |

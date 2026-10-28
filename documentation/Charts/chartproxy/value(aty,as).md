@@ -21,7 +21,7 @@ Returns the data value at the given y position, or `nil` if the position does no
 func value<P>(atY position: CGFloat, as: P.Type = P.self) -> P? where P : Plottable
 ```
 
-#### Return Value
+## Return Value
 
 The data value at the given position.
 

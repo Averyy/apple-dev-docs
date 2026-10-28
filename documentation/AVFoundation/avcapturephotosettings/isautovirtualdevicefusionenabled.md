@@ -22,7 +22,7 @@ var isAutoVirtualDeviceFusionEnabled: Bool { get set }
 @property (nonatomic, getter=isAutoVirtualDeviceFusionEnabled) BOOL autoVirtualDeviceFusionEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 When [`isAutoVirtualDeviceFusionEnabled`](./isautovirtualdevicefusionenabled.md) and [`isVirtualDeviceFusionSupported`](../avcapturephotooutput/isvirtualdevicefusionsupported.md) are true, the framework may fuse constituent camera images of a virtual device to improve still image quality, depending on the current zoom factor, light levels, and focus position. You can determine whether virtual device fusion is enabled for a particular capture request by inspecting the [`isVirtualDeviceFusionEnabled`](../avcaptureresolvedphotosettings/isvirtualdevicefusionenabled.md) property of [`AVCaptureResolvedPhotoSettings`](../avcaptureresolvedphotosettings.md).
 

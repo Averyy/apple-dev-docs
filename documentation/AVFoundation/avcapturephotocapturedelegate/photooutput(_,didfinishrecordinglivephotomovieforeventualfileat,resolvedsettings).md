@@ -26,7 +26,7 @@ optional func photoOutput(_ output: AVCapturePhotoOutput, didFinishRecordingLive
 
 - [Capturing and saving Live Photos](../capturing-and-saving-live-photos.md)
 
-#### Discussion
+## Discussion
 
 The photo output calls this method as soon as it has captured all movie data for a Live Photo. However, at this moment, that media content has not yet been processed or written to storage. (To be notified when the complete movie file has finished writing and is ready for consumption, implement the [`photoOutput(_:didFinishProcessingLivePhotoToMovieFileAt:duration:photoDisplayTime:resolvedSettings:error:)`](./photooutput%28_,didfinishprocessinglivephototomoviefileat,duration,photodisplaytime,resolvedsettings,error%29.md) method.)
 

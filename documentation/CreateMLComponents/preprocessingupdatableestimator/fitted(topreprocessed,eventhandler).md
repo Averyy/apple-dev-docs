@@ -21,7 +21,7 @@ Fits a transformer to a sequence of preprocessed features.
 func fitted<S>(toPreprocessed preprocessed: S, eventHandler: EventHandler? = nil) async throws -> PreprocessingUpdatableEstimator<Preprocessor, Estimator>.Transformer where S : Sequence, Preprocessor.Output == S.Element, S.Element == Estimator.Transformer.Input
 ```
 
-#### Return Value
+## Return Value
 
 The fitted transformer.
 

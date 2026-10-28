@@ -24,15 +24,15 @@ class UIAlertView
 @interface UIAlertView : UIView
 ```
 
-#### Overview
+## Overview
 
 In apps that run in versions of iOS prior to iOS 8, use the [`UIAlertView`](./uialertview.md) class to display an alert message to the user. An alert view functions similar to but differs in appearance from an action sheet (an instance of [`UIActionSheet`](./uiactionsheet.md)).
 
-##### Using an alert view
+### Using an alert view
 
 Use the properties and methods defined in this class to set the title, message, and delegate of an alert view and configure the buttons in apps that run in versions of iOS prior to iOS 8. You must set a delegate if you add custom buttons. The delegate should conform to the [`UIAlertViewDelegate`](./uialertviewdelegate.md) protocol. Use the [`show()`](./uialertview/show%28%29.md) method to display an alert view after it’s configured.
 
-##### Subclassing notes
+### Subclassing notes
 
 The [`UIAlertView`](./uialertview.md) class is intended to be used as-is and doesn’t support subclassing. The view hierarchy for this class is private and must not be modified.
 

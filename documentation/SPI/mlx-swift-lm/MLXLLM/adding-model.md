@@ -10,14 +10,14 @@ framework: "mlx-swift-lm/MLXLLM"
 
 If the model follows the typical LLM pattern you can add a new model in a few steps.
 
-#### Overview
+## Overview
 
 - `config.json`, `tokenizer.json`, and `tokenizer_config.json`
 - `*.safetensors`
 
 You can follow the pattern of the models in the [Models](./models.md) directory and create a `.swift` file for your new model:
 
-#### Create a Configuration
+## Create a Configuration
 
 Create a configuration struct to match the `config.json` (any parameters needed).
 
@@ -36,7 +36,7 @@ public struct YourModelConfiguration: Codable, Sendable {
 }
 ```
 
-#### Create the Model Class
+## Create the Model Class
 
 Create the model class. The top-level public class should have a structure something like this:
 
@@ -65,7 +65,7 @@ public class YourModel: Module, LLMModel, KVCacheDimensionProvider, LoRAModel {
 }
 ```
 
-#### Register the Model
+## Register the Model
 
 In [LLMModelFactory.swift](./llmmodelfactory.swift.md) register the model type itself (this is independent of the model id):
 

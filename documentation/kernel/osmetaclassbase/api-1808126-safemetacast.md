@@ -13,11 +13,11 @@ static OSMetaClassBase * safeMetaCast(
  const OSMetaClass *toMeta);
 ```
 
-#### Return Value
+## Return Value
 
 `anObject` if the object is derived from the class managed by `toMeta`, otherwise `NULL`.
 
-#### Overview
+## Overview
 
 It is far more convenient to use OSDynamicCast.
 

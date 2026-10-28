@@ -23,11 +23,11 @@ func falseNegativeCount(of label: Label) -> Int
 
 Available when `Label` conforms to `Hashable`.
 
-#### Return Value
+## Return Value
 
 The false negative count.
 
-#### Discussion
+## Discussion
 
 If the label does not have a confidence threshold, the false negative count is 0. If the label has a confidence threshold NaN, the false negative count is the number of elements in the ground truth labels collection that do not contain the label. If the label is not in the known set of labels, the false negative count is 0.
 

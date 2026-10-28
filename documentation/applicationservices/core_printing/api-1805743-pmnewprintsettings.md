@@ -15,11 +15,11 @@ OSStatus PMNewPrintSettings (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../core_printing.md#1670007).
 
-#### Overview
+## Overview
 
 Valid after calling `PMBegin`. The function `PMNewPrintSettings`  allocates memory for a new  `PMPrintSettings`  object in your application’s memory space. The new print settings object is empty until you set its values, or until you call  `PMDefaultPrintSettings`  or  `PMValidatePrintSettings`.
 

@@ -22,7 +22,7 @@ var maximumValue: Float { get set }
 @property (nonatomic) float maximumValue;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to set the value that the trailing end of the slider represents. If you change the value of this property, and the current value of the slider is above the new maximum, the slider adjusts the [`value`](./value.md) property to match the new maximum. If you set the maximum value to a value smaller than the minimum, the slider updates the minimum value to equal the maximum.
 

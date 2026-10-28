@@ -27,11 +27,11 @@ object ManagementStatusSubscriptions
 - [Implementing Platform SSO for unattended device enrollment](./implementing-platform-sso-for-unattended-device-enrollment.md)
 - [Leveraging the declarative management data model to scale devices](./leveraging-the-declarative-management-data-model-to-scale-devices.md)
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.configuration.management.status-subscriptions` as the declaration type.
 
-##### Configuration availability
+### Configuration availability
 
 |  |  |
 | --- | --- |
@@ -43,7 +43,7 @@ Specify `com.apple.configuration.management.status-subscriptions` as the declara
 | Allowed in user scope | macOS, Shared iPad |
 | Apply | Multiple configurations are combined and applied as a single effective configuration |
 
-##### Configuration example
+### Configuration example
 
 This configuration subscribes to a set of device status items.
 

@@ -21,7 +21,7 @@ A value that describes a failure to produce a subject for a sample.
 enum SubjectInferenceError
 ```
 
-#### Overview
+## Overview
 
 The evaluation runner records these values in the `"SubjectInferenceError"` column of [`detailed`](./evaluationresult/detailed.md). The evaluation runner omits this column entirely on a clean run where the run produces every subject successfully, so check for the column’s presence before reading it.
 

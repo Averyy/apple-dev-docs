@@ -19,7 +19,7 @@ The untransformed color for foreground views.
 @property (nonatomic, strong, readwrite, nullable) UIColor * baseForegroundColor;
 ```
 
-#### Discussion
+## Discussion
 
 The button configuration may transform the base color before applying it to foreground views.
 

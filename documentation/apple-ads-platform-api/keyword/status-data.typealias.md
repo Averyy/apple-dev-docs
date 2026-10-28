@@ -20,11 +20,11 @@ string Keyword.Status
 - `ENABLED`: Keyword is active and eligible to serve.
 - `PAUSED`: Keyword is paused and will not serve.
 
-#### Discussion
+## Discussion
 
 This field controls auction eligibility directly, separate from the system-computed factors reflected in [`Keyword.DisplayStatus`](./displaystatus-data.typealias.md).
 
-##### Example
+### Example
 
 ```json
 {

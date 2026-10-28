@@ -15,7 +15,7 @@ A flag to indicate whether PCM samples are signed or unsigned integers.
 LinearPCMFormatFlagIsSignedInteger
 ```
 
-#### Discussion
+## Discussion
 
 This flag is a synonym of [`FormatFlagIsSignedInteger`](./formatflagissignedinteger.md).
 

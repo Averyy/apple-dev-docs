@@ -18,7 +18,7 @@ optional func webView(_ webView: WKWebView, insertInputSuggestion inputSuggestio
 - (void) webView:(WKWebView *) webView insertInputSuggestion:(UIInputSuggestion *) inputSuggestion;
 ```
 
-#### Discussion
+## Discussion
 
 Tells the delegate when the keyboard delivers an input suggestion.
 

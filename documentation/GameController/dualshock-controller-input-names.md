@@ -5,7 +5,7 @@
 
 Constants for names of DualShock 4 elements.
 
-#### Overview
+## Overview
 
 Use these constants as the keys when accessing [`GCDualShockGamepad`](./gcdualshockgamepad.md) elements by name using the [`allElements`](./gcphysicalinputprofile/allelements.md) property, `subscript(_:)` notation, or similar [`GCPhysicalInputProfile`](./gcphysicalinputprofile.md) APIs.
 

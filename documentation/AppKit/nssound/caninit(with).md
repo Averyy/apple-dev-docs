@@ -19,11 +19,11 @@ class func canInit(with pasteboard: NSPasteboard) -> Bool
 + (BOOL) canInitWithPasteboard:(NSPasteboard *) pasteboard;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) when the receiver can handle the data represented by `pasteboard`; [`false`](../../Swift/false.md) otherwise.
 
-#### Discussion
+## Discussion
 
 The [`NSSound`](../nssound.md) method is used to find out whether the class can handle the data in `pasteboard`.
 

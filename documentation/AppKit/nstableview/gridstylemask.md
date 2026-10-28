@@ -19,7 +19,7 @@ var gridStyleMask: NSTableView.GridLineStyle { get set }
 @property NSTableViewGridLineStyle gridStyleMask;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify whether lines should be drawn between rows and columns. When setting this property, you can specify multiple styles at once by adding the corresponding constants together. The default value of this property is [`NSTableViewGridNone`](../nstableviewgridlinestyle/nstableviewgridnone.md).
 

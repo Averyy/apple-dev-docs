@@ -15,7 +15,7 @@ The structure for storing a USB configuration descriptor.
 typedef struct IOUSBConfigurationDescriptor IOUSBConfigurationDescriptor;
 ```
 
-#### Discussion
+## Discussion
 
 This descriptor contains information about a specific configuration of a device, including the interfaces that configuration provides. This structure has a variable length so it defines only the known fields. Use the `wTotalLength` field to read the entire descriptor.
 

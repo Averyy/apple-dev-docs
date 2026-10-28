@@ -24,11 +24,11 @@ convenience init(from fromResult: PHFetchResult<ObjectType>, to toResult: PHFetc
 + (instancetype) changeDetailsFromFetchResult:(PHFetchResult<PHObject *> *) fromResult toFetchResult:(PHFetchResult<PHObject *> *) toResult changedObjects:(NSArray<PHObject *> *) changedObjects;
 ```
 
-#### Return Value
+## Return Value
 
 A change details object.
 
-#### Discussion
+## Discussion
 
 Typically, you use the [`PHChange`](../phchange.md) class to retrieve [`PHFetchResultChangeDetails`](../phfetchresultchangedetails.md) objects describing any changes that have occurred since you performed a fetch, but you can also use this method to get a change details object that summarizes the difference between two arbitrary [`PHFetchResult`](../phfetchresult.md) objects. In this case, Photos cannot automatically determine when the same objects are present in both fetch results but those objects’ content has changed, so the [`changedIndexes`](./changedindexes.md) and [`changedObjects`](./changedobjects.md) properties are empty.
 

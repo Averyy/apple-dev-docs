@@ -19,7 +19,7 @@ optional var hasAdjustMode: Bool { get }
 @property (atomic, readonly) BOOL hasAdjustMode;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the tab should be displayed, otherwise NO.
 

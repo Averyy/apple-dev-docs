@@ -23,11 +23,11 @@ init(style: UIActivityIndicatorView.Style)
 - (instancetype) initWithActivityIndicatorStyle:(UIActivityIndicatorViewStyle) style;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized [`UIActivityIndicatorView`](../uiactivityindicatorview.md) object.
 
-#### Discussion
+## Discussion
 
 [`UIActivityIndicatorView`](../uiactivityindicatorview.md) sizes the returned instance according to the specified `style`. You can set and retrieve the style of an activity indicator through the [`style`](./style-swift.property.md) property.
 

@@ -19,7 +19,7 @@ class TVPosterView
 @interface TVPosterView : TVLockupView
 ```
 
-#### Overview
+## Overview
 
 The `TVPosterView` object is a specialized [`TVLockupView`](./tvlockupview.md) used to display media items. The size of the poster view expands when it comes into focus.
 

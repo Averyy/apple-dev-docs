@@ -25,7 +25,7 @@ case canceling
 NSURLSessionTaskStateCanceling
 ```
 
-#### Discussion
+## Discussion
 
 The delegate may or may not have received a [`urlSession(_:task:didCompleteWithError:)`](../../urlsessiontaskdelegate/urlsession%28_,task,didcompletewitherror%29.md) message yet. A task in this state is not subject to timeouts.
 

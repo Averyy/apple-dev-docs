@@ -25,7 +25,7 @@ let kCTRunDelegateAttributeName: CFString
 extern CFStringRef const kCTRunDelegateAttributeName;
 ```
 
-#### Discussion
+## Discussion
 
 The value must be a [`CTRunDelegate`](./ctrundelegate.md) object. The run delegate controls such typographic traits as glyph ascent, descent, and width. The values returned by the embedded run delegate apply to each glyph resulting from the text in that range. Because an embedded object is only a display-time modification, you should avoid applying this attribute to a range of text with complex behavior, such as text having a change of writing direction or having combining marks. It is thus recommended you apply this attribute to a range containing the single character U+FFFC.
 

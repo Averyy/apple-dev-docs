@@ -21,11 +21,11 @@ Replaces an empty stream with the provided element.
 func replaceEmpty(with output: Self.Output) -> Publishers.ReplaceEmpty<Self>
 ```
 
-#### Return Value
+## Return Value
 
 A publisher that replaces an empty stream with the provided output element.
 
-#### Discussion
+## Discussion
 
 Use [`replaceEmpty(with:)`](./replaceempty%28with%29.md) to provide a replacement element if the upstream publisher finishes without producing any elements.
 

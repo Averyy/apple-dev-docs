@@ -25,11 +25,11 @@ init(format: AVAudioFormat, packetCapacity: AVAudioPacketCount, maximumPacketSiz
 - (instancetype) initWithFormat:(AVAudioFormat *) format packetCapacity:(AVAudioPacketCount) packetCapacity maximumPacketSize:(NSInteger) maximumPacketSize;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`AVAudioCompressedBuffer`](../avaudiocompressedbuffer.md) instance.
 
-#### Discussion
+## Discussion
 
 You can obtain the maximum packet size from the [`maximumOutputPacketSize`](../avaudioconverter/maximumoutputpacketsize.md) property of an [`AVAudioConverter`](../avaudioconverter.md) you configure for encoding this format.
 

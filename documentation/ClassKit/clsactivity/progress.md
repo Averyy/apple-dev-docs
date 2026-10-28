@@ -27,7 +27,7 @@ var progress: Double { get set }
 
 - [Recording student progress](../recording-student-progress.md)
 
-#### Discussion
+## Discussion
 
 It’s up to you to define what progress means for each task in your app. For example, you might define progress through a quiz context as the fraction of questions answered. You could report the progress through a video context as a fraction representing the number of minutes watched out of the total minutes in the video.
 

@@ -25,7 +25,7 @@ func CFNumberFormatterGetTypeID() -> CFTypeID
 extern CFTypeID CFNumberFormatterGetTypeID();
 ```
 
-#### Return Value
+## Return Value
 
 The type identifier for the `CFNumberFormatter` opaque type.
 

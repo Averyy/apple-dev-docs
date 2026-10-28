@@ -25,7 +25,7 @@ case insufficientAuthorization
 CBATTErrorInsufficientAuthorization
 ```
 
-#### Discussion
+## Discussion
 
 This error indicates you must obtain authorization before reading or writing the attribute’s value.
 

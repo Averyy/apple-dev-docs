@@ -22,7 +22,7 @@ class func isAbsoluteAltitudeAvailable() -> Bool
 + (BOOL) isAbsoluteAltitudeAvailable;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to determine if altitude updates are available before calling the [`startAbsoluteAltitudeUpdates(to:withHandler:)`](./startabsolutealtitudeupdates%28to,withhandler%29.md) method.
 

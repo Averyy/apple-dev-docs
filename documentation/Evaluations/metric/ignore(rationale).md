@@ -21,7 +21,7 @@ Returns a metric with an ignored result, excluded from aggregation.
 func ignore(rationale: String? = nil) -> Metric
 ```
 
-#### Discussion
+## Discussion
 
 ```swift
 let ignoredResult = metric.ignore()

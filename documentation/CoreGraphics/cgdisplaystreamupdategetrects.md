@@ -10,11 +10,11 @@
 extern const CGRect *CGDisplayStreamUpdateGetRects(CGDisplayStreamUpdateRef updateRef, CGDisplayStreamUpdateRectType rectType, size_t *rectCount);
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to the array of CGRectangles.  This array should not be freed by the caller.
 
-#### Discussion
+## Discussion
 
 Returns a pointer to an array of CGRect structs that describe what parts of the frame have changed relative to the previously delivered frame.   This rectangle list encapsulates both the update rectangles and movement rectangles.
 

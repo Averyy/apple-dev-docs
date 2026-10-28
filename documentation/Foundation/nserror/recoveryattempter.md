@@ -25,7 +25,7 @@ var recoveryAttempter: Any? { get }
 @property (strong, readonly, nullable) id recoveryAttempter;
 ```
 
-#### Discussion
+## Discussion
 
 The recovery attempter must be an instance of a class that conforms to the [`NSSecureCoding`](../nssecurecoding.md) and NSErrorRecoveryAttempting protocols. It must also be able to correctly interpret an index in the [`localizedRecoveryOptions`](./localizedrecoveryoptions.md) property.
 

@@ -23,7 +23,7 @@ var itemSearchBlock: UIAccessibilityCustomRotor.Search { get set }
 @property (nonatomic, copy) UIAccessibilityCustomRotorSearch itemSearchBlock;
 ```
 
-#### Discussion
+## Discussion
 
 Your implementation of the block facilitates navigation from the current rotor to the next or previous rotor.
 

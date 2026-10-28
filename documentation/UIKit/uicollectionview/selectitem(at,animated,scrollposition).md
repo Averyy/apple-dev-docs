@@ -23,7 +23,7 @@ func selectItem(at indexPath: IndexPath?, animated: Bool, scrollPosition: UIColl
 - (void) selectItemAtIndexPath:(NSIndexPath *) indexPath animated:(BOOL) animated scrollPosition:(UICollectionViewScrollPosition) scrollPosition;
 ```
 
-#### Discussion
+## Discussion
 
 If the [`allowsSelection`](./allowsselection.md) property is [`false`](../../Swift/false.md), calling this method has no effect. If there’s an existing selection with a different index path and the [`allowsMultipleSelection`](./allowsmultipleselection.md) property is [`false`](../../Swift/false.md), calling this method replaces the previous selection.
 

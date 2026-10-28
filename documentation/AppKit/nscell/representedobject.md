@@ -19,11 +19,11 @@ var representedObject: Any? { get set }
 @property (strong, nullable) id representedObject;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to link the cell an appropriate object. For example, in a pop-up list of color names, the represented object of each cell could be the appropriate [`NSColor`](../nscolor.md) object.
 
-##### Special Considerations
+### Special Considerations
 
 When you copy an `NSCell` object, the value of this property is set to `nil` in the copy.
 

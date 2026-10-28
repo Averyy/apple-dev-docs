@@ -17,7 +17,7 @@ Type of device.
 enum DeviceType
 ```
 
-#### Overview
+## Overview
 
 See [`Device`](./device.md) and [`StreamOrDevice`](./streamordevice.md).
 

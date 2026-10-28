@@ -21,7 +21,7 @@ An option to use when requesting a resource from the Apple Music catalog.
 struct MusicCatalogResourceRequestOption
 ```
 
-#### Overview
+## Overview
 
 > **See Also**: [`MusicCatalogResourceRequest`](./musiccatalogresourcerequest.md)
 

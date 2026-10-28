@@ -25,7 +25,7 @@ convenience init(index value: Int)
 - (instancetype) initWithIndex:(NSUInteger) value;
 ```
 
-#### Return Value
+## Return Value
 
 Initialized [`NSIndexSet`](../nsindexset.md) object with `index`.
 

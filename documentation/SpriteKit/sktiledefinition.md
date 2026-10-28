@@ -25,7 +25,7 @@ class SKTileDefinition
 @interface SKTileDefinition : NSObject
 ```
 
-#### Overview
+## Overview
 
 To define the visual representation of a single tile, you create an [`SKTileDefinition`](./sktiledefinition.md) object with texture and size information. Tile definitions support separate normal textures, for simulating 3D lighting, and arrays of textures for animation with speed controlled by the [`timePerFrame`](./sktiledefinition/timeperframe.md) property. Textures can be rotated in 90˚ increments or flipped either vertically or horizontally.
 

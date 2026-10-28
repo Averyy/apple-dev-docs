@@ -23,7 +23,7 @@ func hash(into hasher: inout Hasher)
 
 Available when `LocalID` conforms to `EntityIdentifierConvertible`, `LocalID` conforms to `Sendable`, `StableID` conforms to `EntityIdentifierConvertible`, and `StableID` conforms to `Sendable`.
 
-#### Discussion
+## Discussion
 
 This ensures consistent hashing with equality - identifiers that are equal will produce the same hash value.
 

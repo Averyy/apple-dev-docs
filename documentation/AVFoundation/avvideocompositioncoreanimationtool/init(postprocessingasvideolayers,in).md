@@ -24,11 +24,11 @@ convenience init(postProcessingAsVideoLayers videoLayers: [CALayer], in animatio
 + (instancetype) videoCompositionCoreAnimationToolWithPostProcessingAsVideoLayers:(NSArray<CALayer *> *) videoLayers inLayer:(CALayer *) animationLayer;
 ```
 
-#### Return Value
+## Return Value
 
 A new `AVVideoCompositionCoreAnimationTool` instance with the composited video frames and the rendered animation layer.
 
-#### Discussion
+## Discussion
 
 Duplicates the composited video frames in each videoLayer and renders animationLayer to produce the final frame. The `videoLayers` should be in `animationLayer`’s sublayer tree.
 

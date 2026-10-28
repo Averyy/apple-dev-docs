@@ -31,7 +31,7 @@ class XCUIElementQuery
 
 - [Recording UI automation for testing](./recording-ui-automation-for-testing.md)
 
-#### Discussion
+## Discussion
 
 Use element queries to find UI elements in your app that you interact with in the tests, to test for the presence of expected elements, or to discover elements to test their values.
 

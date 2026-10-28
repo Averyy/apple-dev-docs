@@ -27,7 +27,7 @@ func BNNSBandPart(_ num_lower: Int32, _ num_upper: Int32, _ input: UnsafePointer
 int BNNSBandPart(const int num_lower, const int num_upper, const BNNSNDArrayDescriptor *input, BNNSNDArrayDescriptor *output, const BNNSFilterParameters *filter_params);
 ```
 
-#### Discussion
+## Discussion
 
 Use [`BNNSBandPart(_:_:_:_:_:)`](./bnnsbandpart%28_,_,_,_,_%29.md) to copy a tensor’s main diagonal and zero or more upper and lower bands. You can specify that the function returns either the entire upper or lower triangle by passing a negative value to the corresponding `num_*` parameter.
 

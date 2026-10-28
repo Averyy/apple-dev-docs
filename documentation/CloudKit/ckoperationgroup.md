@@ -25,7 +25,7 @@ class CKOperationGroup
 @interface CKOperationGroup : NSObject
 ```
 
-#### Overview
+## Overview
 
 In certain situations, you might want to perform several CloudKit operations together. Grouping operations in CloudKit doesn’t ensure atomicity.
 

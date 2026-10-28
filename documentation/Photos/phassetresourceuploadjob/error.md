@@ -26,11 +26,11 @@ var error: (any Error)? { get }
 
 - [Uploading asset resources in the background](../../PhotoKit/uploading-asset-resources-in-the-background.md)
 
-#### Return Value
+## Return Value
 
 An error object describing the failure, or `nil` if the job has not failed.
 
-#### Discussion
+## Discussion
 
 This property is populated when the job reaches the `PHAssetResourceUploadJobStateFailed` state. It provides detailed information about why the upload failed, including network errors, server errors, or client-side errors.
 

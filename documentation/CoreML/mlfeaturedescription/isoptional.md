@@ -25,7 +25,7 @@ var isOptional: Bool { get }
 @property (nonatomic, readonly, getter=isOptional) BOOL optional;
 ```
 
-#### Discussion
+## Discussion
 
 Optional values can be `nil`, for models that have inputs related to features being present or not.
 

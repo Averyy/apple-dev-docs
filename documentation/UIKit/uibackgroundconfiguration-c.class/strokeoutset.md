@@ -19,7 +19,7 @@ The outset (or inset, if negative) for the stroke.
 @property (nonatomic) CGFloat strokeOutset;
 ```
 
-#### Discussion
+## Discussion
 
 This value is relative to the background, including any [`backgroundInsets`](./backgroundinsets.md). The default value is `0.0`.
 

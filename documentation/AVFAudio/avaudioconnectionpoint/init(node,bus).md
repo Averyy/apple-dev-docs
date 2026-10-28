@@ -25,7 +25,7 @@ init(node: AVAudioNode, bus: AVAudioNodeBus)
 - (instancetype) initWithNode:(AVAudioNode *) node bus:(AVAudioNodeBus) bus;
 ```
 
-#### Discussion
+## Discussion
 
 If the node is `nil`, this method fails and returns `nil`.
 

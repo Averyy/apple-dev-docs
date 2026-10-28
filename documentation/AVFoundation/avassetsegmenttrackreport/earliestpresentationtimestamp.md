@@ -24,7 +24,7 @@ var earliestPresentationTimeStamp: CMTime { get }
 @property (nonatomic, readonly) CMTime earliestPresentationTimeStamp;
 ```
 
-#### Discussion
+## Discussion
 
 The value is [`invalid`](../../CoreMedia/cmtime/invalid.md) if there’s no information available.
 

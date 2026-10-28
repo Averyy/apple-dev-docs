@@ -21,7 +21,7 @@ A concrete font value.
 struct Resolved
 ```
 
-#### Overview
+## Overview
 
 `Font.Resolved` is a concrete representation of a Font that can be shown, with a specific set of `EnvironmentValues`. A `Resolved` font will always map to the same CTFont on a given platform.
 

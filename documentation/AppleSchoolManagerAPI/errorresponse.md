@@ -15,7 +15,7 @@ The error details that an API returns in the response body whenever the API requ
 object ErrorResponse
 ```
 
-##### Example response
+### Example response
 
 ```json
      {

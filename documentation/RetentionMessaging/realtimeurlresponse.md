@@ -15,7 +15,7 @@ The response body that contains the URL for your Get Retention Message endpoint.
 object RealtimeUrlResponse
 ```
 
-#### Discussion
+## Discussion
 
 This is the response body for the [`Get Realtime URL`](./get-realtime-url.md) endpoint.
 

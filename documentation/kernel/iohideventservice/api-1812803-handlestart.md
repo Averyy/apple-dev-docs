@@ -12,11 +12,11 @@ virtual bool handleStart(
  IOService *provider );
 ```
 
-#### Return Value
+## Return Value
 
 True on success, or false otherwise. Returning false will cause start() to fail and return false.
 
-#### Overview
+## Overview
 
 IOHIDEventService will call this method from start() before any I/O operations are issued to the concrete subclass. Methods such as getReportElements() are only called after handleStart() has returned true. A subclass that overrides this method should begin its implementation by calling the version in super, and then check the return value.
 

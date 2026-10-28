@@ -21,7 +21,7 @@ The total number of files for a file progress object.
 var fileTotalCount: Int? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 If the current progress is operating on a set of files, set this property to the total number of files in the operation.
 

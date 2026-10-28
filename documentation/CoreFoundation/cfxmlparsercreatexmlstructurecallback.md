@@ -19,11 +19,11 @@ typealias CFXMLParserCreateXMLStructureCallBack = (CFXMLParser?, CFXMLNode?, Uns
 typedef void *(*)(struct __CFXMLParser *, const struct __CFXMLNode *, void *) CFXMLParserCreateXMLStructureCallBack;
 ```
 
-#### Return Value
+## Return Value
 
 A program-defined value representing the new XML element or `NULL` to indicate that the given structure should be skipped. This value is passed to the other callbacks.
 
-#### Discussion
+## Discussion
 
 If NULL is returned for a given structure, only minimal parsing is done for that structure (enough to correctly determine its end, and to extract any data necessary for the remainder of the parse, such as Entity definitions). This callback (or any of the tree-creation callbacks) will not be called for any children of the skipped structure. The only exception is that the top-most element will always be reported even if NULL was returned for the document as a whole. For performance reasons, the node passed to this callback cannot be safely retained by the client; the node as a whole must be copied (using the [`CFXMLNodeCreateCopy`](./cfxmlnodecreatecopy.md) function), or its contents must be extracted and copied. You are required to implement this callback for the parser to operate.
 

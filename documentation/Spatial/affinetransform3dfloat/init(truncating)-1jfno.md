@@ -23,11 +23,11 @@ init(truncating transform: ProjectiveTransform3DFloat)
 static SPAffineTransform3DFloat SPAffineTransform3DFloatMakeWithTruncatedProjective(SPProjectiveTransform3DFloat transform);
 ```
 
-#### Return Value
+## Return Value
 
 A new affine transform structure.
 
-#### Discussion
+## Discussion
 
 Returns a new affine transform structure from the first three rows of the specified projective transform.
 

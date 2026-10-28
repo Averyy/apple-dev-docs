@@ -25,11 +25,11 @@ func CFURLCreateFileReferenceURL(_ allocator: CFAllocator!, _ url: CFURL!, _ err
 extern CFURLRefCFURLCreateFileReferenceURL(CFAllocatorRef allocator, CFURLRef url, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 The new file reference URL, or `NULL` if an error occurs.
 
-#### Discussion
+## Discussion
 
 File reference URLs use a URL path syntax that identifies a file system object by reference, not by path. This form of file URL remains valid when the file system path of the URL’s underlying resource changes.
 

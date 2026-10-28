@@ -16,11 +16,11 @@ Sets the login password.
 IOReturn (*setPassword)(void *self, void *buffer, UInt32 length);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess on success.
 
-#### Discussion
+## Discussion
 
 Sets the login password using a buffer and a length. An alternate version exists that accepts an IOMemoryDescriptor. If the password length is 8 or less the password is copied directly into the login orb. If the length is greater than 8 the buffer is referenced by address in the login ORB. In this case the buffer is not copied and should remain allocated for the duration of the login attempt.
 

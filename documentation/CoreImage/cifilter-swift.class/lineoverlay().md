@@ -24,11 +24,11 @@ class func lineOverlay() -> any CIFilter & CILineOverlay
 + (CIFilter<CILineOverlay> *) lineOverlayFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies the line overlay filter to an image. The effect creats a sketch that outlines the edges of the image in black, leaving the non-outlined portion of the image transparent.
 

@@ -20,7 +20,7 @@ var anchors: [ARAnchor] { get set }
 @property (nonatomic, copy) NSArray<__kindof ARAnchor *> * anchors;
 ```
 
-#### Discussion
+## Discussion
 
 This array is a snapshot of [`ARAnchor`](../aranchor.md) objects (including subclasses of [`ARAnchor`](../aranchor.md)) in the session as of when the world map was captured, including the [`transform`](../aranchor/transform.md) for each. When you create a world map, ARKit automatically includes all anchors whose positions are assumed to be static with respect to the environment—that is, anchor classes that don’t conform to [`ARTrackable`](../artrackable.md). After you create a world map, you can choose to add more anchors to, or remove anchors from, this list before saving or sharing the map.
 

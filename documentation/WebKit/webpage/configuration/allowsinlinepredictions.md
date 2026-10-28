@@ -20,7 +20,7 @@ Indicates whether inline predictions are allowed.
 var allowsInlinePredictions: Bool
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `false`. If false, inline predictions are disabled regardless of the system setting. If true, they are enabled based on the system setting.
 

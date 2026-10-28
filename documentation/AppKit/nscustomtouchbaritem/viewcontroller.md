@@ -19,7 +19,7 @@ var viewController: NSViewController? { get set }
 @property (strong, readwrite, nullable) NSViewController * viewController;
 ```
 
-#### Discussion
+## Discussion
 
 When set, the item’s [`view`](./view.md) property returns the view controller’s [`view`](../nsviewcontroller/view.md) property.
 

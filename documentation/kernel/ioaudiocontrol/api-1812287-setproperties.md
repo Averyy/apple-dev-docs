@@ -12,11 +12,11 @@ virtual IOReturn setProperties(
  OSObject *properties);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess on success.
 
-#### Overview
+## Overview
 
 This is called when the user client changes a property of this IOAudioControl. In this case it is used to change the value. This function looks for that property and then calls setValue() through the IOCommandGate and setValueAction().
 

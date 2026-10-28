@@ -22,7 +22,7 @@ var suppressUsageRecording: Bool { get set }
 @property (nonatomic) BOOL suppressUsageRecording;
 ```
 
-#### Discussion
+## Discussion
 
 Set to [`YES`](../../ObjectiveC/yes.md) to stop recording and reporting web-usage data.
 

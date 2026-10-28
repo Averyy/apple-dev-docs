@@ -5,7 +5,7 @@
 
 Metadata that specifies whether an animation plays automatically on load.
 
-#### Overview
+## Overview
 
 Set the [autoPlay](./autoplay.md) metadata on the document’s *stage*, that is, the outermost container for scene description. For more information about setting stage metadata, see [UsdStage](https://openusd.org/docs/api/class_usd_stage.html) > Stage Metadata.
 
@@ -15,13 +15,13 @@ To support assets that disable `autoPlay`, an app should provide a way to start 
 
 Reality Composer sets this property to `false` when it exports a USDZ to enforce that only behaviors ([Preliminary_Behavior](./preliminary-behavior.md)) drive animations.
 
-##### Declaration
+### Declaration
 
 ```other
 bool autoPlay
 ```
 
-##### Disable automatic animation playback
+### Disable automatic animation playback
 
 The following asset demonstrates [autoPlay](./autoplay.md) alongside existing animation properties, like `startTimeCode` and `endTimeCode`. Because this asset defines [autoPlay](./autoplay.md) as `false`, the runtime doesn’t automatically play the animation after it loads this asset.
 

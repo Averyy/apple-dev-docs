@@ -20,7 +20,7 @@ A query interface that reads the heartbeat series data stored in a heartbeat sam
 struct HKHeartbeatSeriesQueryDescriptor
 ```
 
-#### Overview
+## Overview
 
 Use [`HKHeartbeatSeriesQueryDescriptor`](./hkheartbeatseriesquerydescriptor.md) to read the heartbeat data included in a [`HKHeartbeatSeriesSample`](./hkheartbeatseriessample.md). To read the individual heartbeats, create a heartbeat series query descriptor using the desired series sample, and then call the [`results(for:)`](./hkheartbeatseriesquerydescriptor/results%28for%29.md) method on the descriptor.
 

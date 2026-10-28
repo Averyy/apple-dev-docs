@@ -19,7 +19,7 @@ class let didEndSheetNotification: NSNotification.Name
 extern NSNotificationName NSWindowDidEndSheetNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the `NSWindow` object that contained the sheet. This notification doesn’t contain a `userInfo` dictionary.
 

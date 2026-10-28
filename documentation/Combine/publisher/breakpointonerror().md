@@ -21,11 +21,11 @@ Raises a debugger signal upon receiving a failure.
 func breakpointOnError() -> Publishers.Breakpoint<Self>
 ```
 
-#### Return Value
+## Return Value
 
 A publisher that raises a debugger signal upon receiving a failure.
 
-#### Discussion
+## Discussion
 
 When the upstream publisher fails with an error, this publisher raises the `SIGTRAP` signal, which stops the process in the debugger. Otherwise, this publisher passes through values and completions as-is.
 

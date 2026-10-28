@@ -16,7 +16,7 @@ get showsScale(): FeatureVisibility;
 set showsScale(showsScale: FeatureVisibility);
 ```
 
-#### Discussion
+## Discussion
 
 The scale doesn’t display above a specific zoom threshold (7500 meters per point). MapKit JS handles the placement of the scale automatically as follows:
 

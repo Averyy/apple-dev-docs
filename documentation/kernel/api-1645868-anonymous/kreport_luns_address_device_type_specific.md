@@ -13,7 +13,7 @@
 kREPORT_LUNS_ADDRESS_DEVICE_TYPE_SPECIFIC = kREPORT_LUNS_ADDRESS_METHOD_FLAT_SPACE
 ```
 
-#### Discussion
+## Discussion
 
 Device Type Specific Addressing Method.
 

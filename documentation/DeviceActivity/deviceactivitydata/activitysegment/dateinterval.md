@@ -17,7 +17,7 @@ Access the date interval of the activity segment.
 var dateInterval: DateInterval
 ```
 
-#### Discussion
+## Discussion
 
 The [`DeviceActivityFilter.SegmentInterval`](../../deviceactivityfilter/segmentinterval-swift.enum.md) that your app requests determines this value.
 

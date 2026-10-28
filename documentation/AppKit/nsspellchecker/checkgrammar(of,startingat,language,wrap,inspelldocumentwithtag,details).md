@@ -19,7 +19,7 @@ func checkGrammar(of stringToCheck: String, startingAt startingOffset: Int, lang
 - (NSRange) checkGrammarOfString:(NSString *) stringToCheck startingAt:(NSInteger) startingOffset language:(NSString *) language wrap:(BOOL) wrapFlag inSpellDocumentWithTag:(NSInteger) tag details:(NSArray<NSDictionary<NSString *,id> *> **) details;
 ```
 
-#### Return Value
+## Return Value
 
 Location of the first flagged grammatical unit.
 

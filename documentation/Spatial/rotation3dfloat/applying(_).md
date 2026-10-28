@@ -21,7 +21,7 @@ Returns a rotation that’s transformed by the specified projective transform.
 func applying(_ transform: ProjectiveTransform3DFloat) -> Rotation3DFloat
 ```
 
-#### Discussion
+## Discussion
 
 - Returns The transformed rotation. In the case where Spatial is unable to successfully apply the transform, the function returns `.identity`.
 

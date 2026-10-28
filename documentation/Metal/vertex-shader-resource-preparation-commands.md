@@ -5,7 +5,7 @@
 
 Assign resources to vertex shaders, including buffers, textures, acceleration structures, sampler states, and function tables.
 
-#### Overview
+## Overview
 
 Vertex shaders share argument tables for each resource type, such as buffers, textures, and sampler states. Each shader type has its own argument tables, separate from vertex shaders and other shader types.
 

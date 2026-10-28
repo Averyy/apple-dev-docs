@@ -21,7 +21,7 @@ A scale to apply to vector images relative to text.
 enum Scale
 ```
 
-#### Overview
+## Overview
 
 Use this type with the [`imageScale(_:)`](../view/imagescale%28_%29.md) modifier, or the [`imageScale`](../environmentvalues/imagescale.md) environment key, to set the image scale.
 

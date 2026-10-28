@@ -23,7 +23,7 @@ var minSupportedLockedVideoFrameDuration: CMTime { get }
 @property (nonatomic, readonly) CMTime minSupportedLockedVideoFrameDuration;
 ```
 
-#### Discussion
+## Discussion
 
 `kCMTimeInvalid` is returned when the device or its current configuration does not support locked frame rate. Use [`activeLockedVideoFrameDuration`](../avcapturedeviceinput/activelockedvideoframeduration.md) to set the locked frame rate on the input.
 

@@ -19,7 +19,7 @@ object Mosaic
 
 - [Preparing Image, Video, Audio, Music, and ARKit Assets](../AppleNews/preparing-image-video-audio-music-and-arkit-assets.md)
 
-#### Discussion
+## Discussion
 
 Use the `Mosaic` component to display a group of images in no particular order. (To display a group of images in a particular order, use the `Gallery` component.) Users can tap an image in a mosaic to see a full-screen version.
 
@@ -27,7 +27,7 @@ Use the `Mosaic` component to display a group of images in no particular order. 
 
 ![Screenshot of an Apple News article with a mosaic on iPad.](https://developer.apple.com/tutorials/images/com.apple.applenews/media-3591437@2x.png)
 
-##### Example
+### Example
 
 ```json
 {

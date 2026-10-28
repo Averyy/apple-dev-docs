@@ -22,7 +22,7 @@ A property wrapper type for an observable object supplied by the focused view or
 @frozen @propertyWrapper @preconcurrency struct FocusedObject<ObjectType> where ObjectType : ObservableObject
 ```
 
-#### Overview
+## Overview
 
 Focused objects invalidate the current view whenever the observable object changes. If multiple views publish a focused object using the same key, the wrapped property will reflect the object that’s closest to the focused view.
 

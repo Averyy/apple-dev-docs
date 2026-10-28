@@ -15,11 +15,11 @@ Prepare the memory for an I/O transfer.
 virtual IOReturn prepare(IODirection forDirection);
 ```
 
-#### Return Value
+## Return Value
 
 An IOReturn code.
 
-#### Discussion
+## Discussion
 
 This involves paging in the memory, if necessary, and wiring it down for the duration of the transfer. The complete() method completes the processing of the memory after the I/O transfer finishes. Note that the prepare call is not thread safe and it is expected that the client will more easily be able to guarantee single threading a particular memory descriptor.
 

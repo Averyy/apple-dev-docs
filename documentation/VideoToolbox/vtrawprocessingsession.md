@@ -19,7 +19,7 @@ class VTRAWProcessingSession
 typedef struct OpaqueVTRAWProcessingSession * VTRAWProcessingSessionRef;
 ```
 
-#### Overview
+## Overview
 
 A RAW processing session supports processing of frames that have been output from decoders in camera native formats, such as RAW or Bayer formats.
 

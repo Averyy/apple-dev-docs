@@ -19,7 +19,7 @@ A Boolean value that indicates whether a person or the app has text selected wit
 final var hasActiveTextSelection: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 If [`textSelection`](./interactiontypes/textselection.md) is an active interaction type, a person can select text using a standard input method and the app can select text through the [`selectedRanges`](./selectedranges.md) property. If neither a person nor the app select any text, then this property returns `false`.
 

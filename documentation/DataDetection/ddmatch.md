@@ -25,7 +25,7 @@ class DDMatch
 @interface DDMatch : NSObject
 ```
 
-#### Overview
+## Overview
 
 The DataDetection framework returns results in objects that are subclasses of `DDMatch`, which are specific to the type of matching data. Each object contains the matched string.
 

@@ -15,7 +15,7 @@ Secondary text for the notification.
 let subtitle: String?
 ```
 
-#### Discussion
+## Discussion
 
 This property contains text that supplements [`title`](./title.md).
 

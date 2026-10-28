@@ -21,7 +21,7 @@ A type that represents a vCard file.
 extern UTType * const UTTypeVCard;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.vcard`.
 

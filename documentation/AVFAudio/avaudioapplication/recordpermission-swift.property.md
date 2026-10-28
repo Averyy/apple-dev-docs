@@ -25,7 +25,7 @@ var recordPermission: AVAudioApplication.recordPermission { get }
 @property (readonly) AVAudioApplicationRecordPermission recordPermission;
 ```
 
-#### Discussion
+## Discussion
 
 See [`requestRecordPermission(completionHandler:)`](./requestrecordpermission%28completionhandler%29.md) for more information.
 

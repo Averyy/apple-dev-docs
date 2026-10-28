@@ -18,11 +18,11 @@ Creates a rectangular patch mesh with a topology suitable for cloth simulation.
 static func patch(size: SIMD2<Float>, targetEdgeLength: Float = defaultTargetEdgeLength) throws -> Self
 ```
 
-#### Return Value
+## Return Value
 
 The generated patch mesh resource.
 
-#### Discussion
+## Discussion
 
 The generated patch will be a rectangular mesh in the XZ plane, with the face normals pointing towards +Y. The patch is centered at the origin.
 

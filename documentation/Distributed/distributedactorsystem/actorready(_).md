@@ -22,7 +22,7 @@ Invoked during a distributed actor’s initialization, as soon as it becomes ful
 func actorReady<Act>(_ actor: Act) where Act : DistributedActor, Self.ActorID == Act.ID
 ```
 
-#### Discussion
+## Discussion
 
 The system is expected to store the reference to this actor, and maintain an `ActorID: DistributedActor` mapping for the purpose of implementing the `resolve(id:as:)` method.
 

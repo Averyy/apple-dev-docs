@@ -12,11 +12,11 @@ Share data between a user’s devices and other iCloud users.
 - Mac Catalyst 16.0+
 - Xcode 14.1+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with the WWDC22 session [10119: Optimize your use of Core Data and CloudKit ](https://developer.apple.com/wwdc22/10119/).
 
-##### Configure the sample code project
+### Configure the sample code project
 
 Before you run the sample code project in Xcode, do the following:
 
@@ -28,7 +28,7 @@ Before you run the sample code project in Xcode, do the following:
 
 Xcode automatically generates provisioning profiles as needed. You can now build and run the CoreDataCloudKitDemo app or tests.
 
-##### Run the CoreDataCloudKitDemo app
+### Run the CoreDataCloudKitDemo app
 
 1. Select the CoreDataCloudKitDemo scheme.
 2. Choose a destination. The CoreDataCloudKitDemo app supports the following destinations:
@@ -37,7 +37,7 @@ Xcode automatically generates provisioning profiles as needed. You can now build
    - Any iOS device
    - My Mac (Mac Catalyst)
 
-##### Configuration options
+### Configuration options
 
 To facilitate testing, the app supports the following configuration options the `AppDelegate` class parses into properties:
 

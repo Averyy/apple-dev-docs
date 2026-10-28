@@ -20,7 +20,7 @@ A joint that allows movement along a straight line, similar to a sliding drawer.
 struct PhysicsPrismaticJoint
 ```
 
-#### Overview
+## Overview
 
 `PhysicsPrismaticJoint`, also called a “slider joint”, allows one linear degree of freedom along the x-axis between two [`Entity`](./entity.md) pins.
 

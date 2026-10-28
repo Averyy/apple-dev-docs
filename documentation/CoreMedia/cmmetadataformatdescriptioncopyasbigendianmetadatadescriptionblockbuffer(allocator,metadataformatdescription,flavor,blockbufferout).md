@@ -25,7 +25,7 @@ func CMMetadataFormatDescriptionCopyAsBigEndianMetadataDescriptionBlockBuffer(al
 extern OSStatus CMMetadataFormatDescriptionCopyAsBigEndianMetadataDescriptionBlockBuffer(CFAllocatorRef allocator, CMMetadataFormatDescriptionRef metadataFormatDescription, CMMetadataDescriptionFlavor flavor, CMBlockBufferRef*blockBufferOut);
 ```
 
-#### Discussion
+## Discussion
 
 On return, the caller owns the returned CMBlockBuffer, and must release it when done with it.
 

@@ -23,7 +23,7 @@ var scaleClassLoss: Float { get set }
 @property (nonatomic, readwrite) float scaleClassLoss;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `2.0`.
 

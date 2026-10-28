@@ -17,7 +17,7 @@ Use `model.safetensors.index.json` when it names files that exist, otherwise the
 case automatic
 ```
 
-#### Discussion
+## Discussion
 
 This is what a well-packaged checkpoint wants and it is the default.
 

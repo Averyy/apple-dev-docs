@@ -17,11 +17,11 @@ Creates a new alias record, given a target file or directory.
 OSErr FSNewAlias(const FSRef *fromFile, const FSRef *target, AliasHandle *inAlias);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. If the specified target is valid, this function creates an alias record for the target and returns `noErr`. Any other return value indicates that this function did not create an alias record.
 
-#### Discussion
+## Discussion
 
 The `FSNewAlias` function creates an alias record that describes the specified target. It allocates the storage, fills in the record, and puts a record handle to that storage in the `inAlias` parameter. `FSNewAlias` records the full pathname of the target and a collection of other information relevant to locating the target, verifying the target, and mounting the target’s volume, if necessary. You can have `FSNewAlias` store relative search information as well by supplying a starting point for a relative search.
 

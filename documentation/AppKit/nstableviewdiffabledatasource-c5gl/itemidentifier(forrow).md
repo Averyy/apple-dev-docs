@@ -15,7 +15,7 @@ Returns an identifier for the item at the specified row in the table view.
 func itemIdentifier(forRow row: Int) -> ItemIdentifierType?
 ```
 
-#### Return Value
+## Return Value
 
 The item’s identifier, or `nil` if the method doesn’t find an item at the provided row.
 

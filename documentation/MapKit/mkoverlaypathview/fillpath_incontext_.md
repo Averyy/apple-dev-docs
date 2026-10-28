@@ -19,7 +19,7 @@ Fills the area enclosed by the specified path.
 - (void) fillPath:(CGPathRef) path inContext:(CGContextRef) context;
 ```
 
-#### Discussion
+## Discussion
 
 You must set the current fill color before calling this method. Typically you do this by calling the [`applyFillPropertiesToContext:atZoomScale:`](./applyfillpropertiestocontext_atzoomscale_.md) method prior to drawing. If the [`fillColor`](./fillcolor.md) property is currently `nil`, this method does nothing.
 

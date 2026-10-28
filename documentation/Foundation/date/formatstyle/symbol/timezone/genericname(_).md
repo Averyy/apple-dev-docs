@@ -21,11 +21,11 @@ Returns the generic, non-location representation of a timezone.
 static func genericName(_ width: Date.FormatStyle.Symbol.TimeZone.Width) -> Date.FormatStyle.Symbol.TimeZone
 ```
 
-#### Return Value
+## Return Value
 
 A timezone format style appropriate for the locale and specified width.
 
-#### Discussion
+## Discussion
 
 The value falls back to the value of [`localizedGMT(_:)`](./localizedgmt%28_%29.md) with a `short` width if unavailable. For example, `PT` ([`Date.FormatStyle.Symbol.TimeZone.Width.short`](./width/short.md)) or `Pacific Time` ([`Date.FormatStyle.Symbol.TimeZone.Width.long`](./width/long.md)).
 

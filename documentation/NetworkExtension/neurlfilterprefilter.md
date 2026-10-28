@@ -18,7 +18,7 @@ A structure containing a prefilter returned by a filter control provider.
 struct NEURLFilterPrefilter
 ```
 
-#### Overview
+## Overview
 
 You return this type from the [`fetchPrefilter(existingPrefilterTag:)`](./neurlfiltercontrolprovider/fetchprefilter%28existingprefiltertag%29.md) method of [`NEURLFilterControlProvider`](./neurlfiltercontrolprovider.md). The returned `NEURLFilterPrefilter` must contain a Bloom filter built with the 32-bit FNV-1a and 32-bit MurmurHash3 hash functions, with double hashing. Depending on the size of the Bloom filter data, it can be passed as data or the path of a file containing the data.
 

@@ -24,11 +24,11 @@ class func shared() -> Self
 + (instancetype) sharedContentManager;
 ```
 
-#### Return Value
+## Return Value
 
 The current content manager.
 
-#### Discussion
+## Discussion
 
 Call this method to create a new content manager. Set the [`dataSource`](./datasource.md) and [`delegate`](./delegate.md) immediately after creating the content manager.
 

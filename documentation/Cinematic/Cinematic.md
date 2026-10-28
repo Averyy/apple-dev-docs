@@ -12,7 +12,7 @@ Integrate playback and editing of assets captured in Cinematic mode into your ap
 - macOS 14.0+
 - tvOS 17.0+
 
-#### Overview
+## Overview
 
 The Cinematic framework enables you to add professional-level editing and playback features to movies, recorded with the Camera app’s Cinematic mode, to your apps. These are the same features used in applications such as Final Cut Pro, Photos, and iMovie. For example, this enables your apps to change focus distance and aperture in movies, creating a bokeh effect, even after recording.
 

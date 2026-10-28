@@ -20,7 +20,7 @@ Creates a texture creation options structure.
 init(semantic: TextureResource.Semantic?, compression: TextureResource.Compression, mipmapsMode: TextureResource.MipmapsMode = .allocateAndGenerateAll)
 ```
 
-#### Discussion
+## Discussion
 
 The `semantic` value you pass tells RealityKit how you plan to use the texture data from this resource. For example, passing [`TextureResource.Semantic.color`](../semantic-swift.enum/color.md) lets RealityKit know you’re using the texture to pass perceptual color information to the shaders, such as for providing a UV-mapped base color for physically based rendering materials. Passing [`TextureResource.Semantic.raw`](../semantic-swift.enum/raw.md) tells RealityKit to pass the pixel values with as little processing as possible.
 

@@ -21,7 +21,7 @@ The properties of a picker option to use for selecting a subscription.
 struct PickerOption
 ```
 
-#### Overview
+## Overview
 
 You use `SubscriptionStoreControlStyleConfiguration.PickerOption` very similarly to [`SubscriptionStoreControlStyleConfiguration.Option`](./option.md). The key differences are:
 

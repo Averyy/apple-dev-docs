@@ -25,7 +25,7 @@ func writeTimestamp(granularity: MTL4TimestampGranularity, counterHeap: any MTL4
 - (void) writeTimestampWithGranularity:(MTL4TimestampGranularity) granularity intoHeap:(id<MTL4CounterHeap>) counterHeap atIndex:(NSUInteger) index;
 ```
 
-#### Discussion
+## Discussion
 
 The method ensures that any prior work finishes, but doesn’t delay any subsequent work.
 

@@ -22,13 +22,13 @@ typedef struct AEDesc {
 } AEDesc;
 ```
 
-#### Overview
+## Overview
 
 The Apple Event Manager uses one or more descriptors to constructApple event attributes and parameters, object specifiers, tokens,and many other types of data it works with. (Token is defined in [`AEDisposeToken(_:)`](./api-1446783-aedisposetoken.md).) Adescriptor consists of an opaque data storage container and a descriptortype that identifies the type of the data stored in the descriptor.
 
 The descriptor type is a structure of type `DescType`,which in turn is of data type `ResType`—thatis, a four-character code. [Descriptor Type Constants](./apple_events/api-1542788-descriptor_type_constants.md) lists the constants for the basic descriptortypes used by the Apple Event Manager. For information about descriptortypes used with object specifiers, see [Key Form and Descriptor Type Object Specifier Constants](./apple_events/api-1572731-key_form_and_descriptor_type_obj.md). 
 
-##### Version-Notes
+### Version-Notes
 
 Prior to Carbon, the [`AEDataStorage`](./aedatastorage.md) datatype was defined as follows:
 

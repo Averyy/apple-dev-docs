@@ -23,7 +23,7 @@ func presentationTransitionWillBegin()
 - (void) presentationTransitionWillBegin;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation of this method does nothing. Subclasses can override it and use it to add custom views to the view hierarchy and to create any animations associated with those views. To perform your animations, get the transition coordinator of the presented view controller and call its [`animate(alongsideTransition:completion:)`](../uiviewcontrollertransitioncoordinator/animate%28alongsidetransition,completion%29.md) or [`animateAlongsideTransition(in:animation:completion:)`](../uiviewcontrollertransitioncoordinator/animatealongsidetransition%28in,animation,completion%29.md) method. Calling those methods ensures that your animations are executed at the same time as any other transition animations.
 

@@ -9,7 +9,7 @@
 IOAudioSampleRate sampleRate;
 ```
 
-#### Overview
+## Overview
 
 The current sample rate of the audio engine in samples per second.
 

@@ -25,7 +25,7 @@ struct FileRepresentation<Item> where Item : Transferable
 
 - [Choosing a transfer representation for a model type](./choosing-a-transfer-representation-for-a-model-type.md)
 
-#### Overview
+## Overview
 
 Use a [`FileRepresentation`](./filerepresentation.md) for transferring types that involve a large amount of data. For example, if your app defines a `Movie` type that could represent a lengthy video, use a `FileRepresentation` instance to transfer the video data to another app or process.
 

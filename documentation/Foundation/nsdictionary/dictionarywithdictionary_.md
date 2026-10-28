@@ -21,7 +21,7 @@ Creates a dictionary containing the keys and values from another given dictionar
 + (instancetype) dictionaryWithDictionary:(NSDictionary<id,id> *) dict;
 ```
 
-#### Return Value
+## Return Value
 
 A new dictionary containing the keys and values found in `dict`.
 

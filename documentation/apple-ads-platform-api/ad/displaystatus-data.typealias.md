@@ -26,11 +26,11 @@ string Ad.DisplayStatus
 - `AD_GROUP_ON_HOLD`: Delivery stops because the parent ad group is on hold.
 - `CAMPAIGN_ON_HOLD`: Delivery stops because the parent campaign is on hold.
 
-#### Discussion
+## Discussion
 
 Because delivery depends on the full hierarchy, an ad can show `AD_GROUP_ON_HOLD` or `CAMPAIGN_ON_HOLD` even when its own settings are otherwise ready to serve.
 
-##### Example
+### Example
 
 ```json
 {

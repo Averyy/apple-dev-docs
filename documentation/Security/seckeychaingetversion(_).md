@@ -21,11 +21,11 @@ func SecKeychainGetVersion(_ returnVers: UnsafeMutablePointer<UInt32>) -> OSStat
 OSStatus SecKeychainGetVersion(UInt32 *returnVers);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 Your application can call the [`SecKeychainGetVersion(_:)`](./seckeychaingetversion%28_%29.md) function to find out which version of keychain services is installed on the user’s system.
 

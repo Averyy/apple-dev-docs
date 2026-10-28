@@ -25,7 +25,7 @@ static var compareAnchored: CFStringCompareFlags { get }
 kCFCompareAnchored
 ```
 
-#### Discussion
+## Discussion
 
 No match at the beginning or end means nothing is found, even if a matching sequence of characters occurs elsewhere in the string.
 

@@ -21,7 +21,7 @@ Convert a typed value to a raw tag value for this category.
 func tagValue(for value: TypedValue) -> CMTag.Value
 ```
 
-#### Return Value
+## Return Value
 
 The typed value as a wrapped tag value.
 

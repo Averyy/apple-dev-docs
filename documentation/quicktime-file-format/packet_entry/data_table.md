@@ -10,7 +10,7 @@ A table that defines the data to be put in the payload portion of the RTP packet
 
 - [Data modes](../data_modes.md)
 
-#### Overall
+## Overall
 
 This table defines various places the data can be retrieved. Table entries are listed in the following table.
 

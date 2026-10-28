@@ -21,7 +21,7 @@ Prefer the quality-of-service class associated with the current execution contex
 DISPATCH_BLOCK_INHERIT_QOS_CLASS
 ```
 
-#### Discussion
+## Discussion
 
 Indicates that execution of a dispatch block submitted to a queue should prefer the QoS class assigned to the queue over the QoS class assigned to the block at the time of submission. The latter will only be used if the queue in question does not have an assigned QoS class, as long as doing so does not result in a QoS class lower than the QoS class inherited from the queue’s target queue. This flag is the default when a dispatch block is submitted to a queue for asynchronous execution and has no effect when the dispatch block is invoked directly. It is ignored if [`DISPATCH_BLOCK_ENFORCE_QOS_CLASS`](./dispatch_block_enforce_qos_class.md) is also passed.
 

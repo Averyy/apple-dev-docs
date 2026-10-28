@@ -27,7 +27,7 @@ optional func confirm(intent: INRequestRideIntent) async -> INRequestRideIntentR
 - (void) confirmRequestRide:(INRequestRideIntent *) intent completion:(void (^)(INRequestRideIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to create a response object with the details that you intend to use when booking the ride. Although you are providing details about how you intend to book the ride, do not actually book the ride from this method. Siri or Maps will present the details of your response to the user. If the user changes any ride properties prior to confirmation, you may have to resolve those properties and confirm the updated request again before handling the booking.
 

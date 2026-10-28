@@ -23,7 +23,7 @@ var model: String { get }
 @property (nonatomic, strong, readonly) NSString * model;
 ```
 
-#### Discussion
+## Discussion
 
 Possible examples of model strings are “iPhone” and “iPod touch”.
 

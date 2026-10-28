@@ -20,11 +20,11 @@ Searches for objects corresponding to a point in the view based on a query and a
 @preconcurrency func hitTest(_ point: CGPoint, query: CollisionCastQueryType = .all, mask: CollisionGroup = .all) -> [CollisionCastHit]
 ```
 
-#### Return Value
+## Return Value
 
 An array of hit results.
 
-#### Discussion
+## Discussion
 
 The method ignores entities that lack a [`CollisionComponent`](../collisioncomponent.md).
 

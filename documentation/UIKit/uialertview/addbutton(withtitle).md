@@ -23,11 +23,11 @@ func addButton(withTitle title: String?) -> Int
 - (NSInteger) addButtonWithTitle:(NSString *) title;
 ```
 
-#### Return Value
+## Return Value
 
 The index of the new button. Button indices start at `0` and increase in the order they are added.
 
-#### Discussion
+## Discussion
 
 Adding too many buttons can cause the alert view to scroll. For guidelines on the best ways to use an alert in an app, see [Temporary Views](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/MobileHIG/Alerts.html#//apple_ref/doc/uid/TP40006556-CH14).
 

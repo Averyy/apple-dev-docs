@@ -23,7 +23,7 @@ Confirm this confirmation.
 func callAsFunction(count: Int = 1)
 ```
 
-#### Discussion
+## Discussion
 
 Calling a confirmation as a function is shorthand for calling its [`confirm(count:)`](./confirm%28count%29.md) method.
 

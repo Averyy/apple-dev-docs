@@ -20,11 +20,11 @@ optional func control(_ control: NSControl, textShouldEndEditing fieldEditor: NS
 - (BOOL) control:(NSControl *) control textShouldEndEditing:(NSText *) fieldEditor;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the insertion point should be allowed to end the editing session; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 This message is sent only by controls that allow editing of text (such as a text field or a form field). This message is sent by the control directly to its delegate object.
 

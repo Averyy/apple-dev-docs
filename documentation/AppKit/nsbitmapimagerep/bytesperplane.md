@@ -19,7 +19,7 @@ var bytesPerPlane: Int { get }
 @property (readonly) NSInteger bytesPerPlane;
 ```
 
-#### Discussion
+## Discussion
 
 This number is calculated from the number of bytes per row and the height of the image.
 

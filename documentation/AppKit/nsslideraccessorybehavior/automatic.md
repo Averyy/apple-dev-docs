@@ -23,7 +23,7 @@ class var automatic: NSSliderAccessoryBehavior { get }
 @property (class, copy, readonly) NSSliderAccessoryBehavior * automaticBehavior;
 ```
 
-#### Discussion
+## Discussion
 
 For example, NSTouchBarItems have `.valueStep` behavior.
 

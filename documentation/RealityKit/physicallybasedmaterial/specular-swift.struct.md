@@ -20,7 +20,7 @@ An object that defines the specular highlights of an entity.
 struct Specular
 ```
 
-#### Overview
+## Overview
 
 RealityKit automatically draws *specular highlights* for physically based materials, using the values of various properties, primarily [`roughness`](./roughness-swift.property.md) and [`metallic`](./metallic-swift.property.md). Specular highlights are bright spots of reflected light that appear on shiny objects.
 

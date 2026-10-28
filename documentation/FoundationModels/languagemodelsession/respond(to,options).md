@@ -35,7 +35,7 @@ nonisolated(nonsending) final func respond(to prompt: String, options: Generatio
 - [Running a Core AI model in a Foundation Models session](../running-a-core-ai-model-in-a-foundation-models-session.md)
 - [Supporting languages and locales with Foundation Models](../supporting-languages-and-locales-with-foundation-models.md)
 
-#### Return Value
+## Return Value
 
 A string composed of the tokens produced by sampling model output.
 

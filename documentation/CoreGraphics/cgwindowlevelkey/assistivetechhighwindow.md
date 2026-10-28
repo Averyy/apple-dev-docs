@@ -18,7 +18,7 @@ case assistiveTechHighWindow
 kCGAssistiveTechHighWindowLevelKey
 ```
 
-#### Discussion
+## Discussion
 
 The level for assistive technology.
 

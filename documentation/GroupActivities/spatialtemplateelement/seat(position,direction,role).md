@@ -17,7 +17,7 @@ static func seat(position: SpatialTemplateElementPosition, direction: SpatialTem
 
 Available when `Self` is `SpatialTemplateSeatElement`.
 
-#### Return Value
+## Return Value
 
 An initialized seat element for you to add to a custom spatial template.
 

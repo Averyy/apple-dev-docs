@@ -24,7 +24,7 @@ init?(buffer: CVPixelBuffer, presentationTimeStamp: CMTime)
 - (instancetype) initWithBuffer:(CVPixelBufferRef) buffer presentationTimeStamp:(CMTime) presentationTimeStamp;
 ```
 
-#### Discussion
+## Discussion
 
 Initialization fails if you specify a `NULL` buffer or one that isn’t backed by an `IOSurface`.
 

@@ -27,7 +27,7 @@ var completionHandler: (((any Error)?) -> Void)? { get set }
 
 - [Searching for information in your app](../searching-for-information-in-your-app.md)
 
-#### Discussion
+## Discussion
 
 Specify a value for this property only if you start your query with the [`start()`](./start%28%29.md) method. When the query finishes, the query object executes the provided closure once to let you know the search is complete. Use your handler to perform any related cleanup. The block you assign to this property returns no parameters and takes the following parameter:
 

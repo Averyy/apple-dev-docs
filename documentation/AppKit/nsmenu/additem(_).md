@@ -19,7 +19,7 @@ func addItem(_ newItem: NSMenuItem)
 - (void) addItem:(NSMenuItem *) newItem;
 ```
 
-#### Discussion
+## Discussion
 
 This method invokes [`insertItem(_:at:)`](./insertitem%28_,at%29.md). Thus, the menu does not accept the menu item if it already belongs to another menu. After adding the menu item, the menu updates itself.
 

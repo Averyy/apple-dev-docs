@@ -25,7 +25,7 @@ case failureCredentialsUnverified
 INTransferMoneyIntentResponseCodeFailureCredentialsUnverified
 ```
 
-#### Discussion
+## Discussion
 
 Use this response code when you’re unable to verify the user’s credentials. You might use this response code if the user is currently logged out of your app or is unknown to you.
 

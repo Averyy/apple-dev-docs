@@ -23,7 +23,7 @@ let kMIDIPropertyReceiveChannels: CFString
 extern CFStringRef const kMIDIPropertyReceiveChannels;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this property in the following scenarios:
 

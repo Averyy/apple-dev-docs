@@ -19,7 +19,7 @@ var headerLevel: Int { get set }
 @property NSInteger headerLevel;
 ```
 
-#### Discussion
+## Discussion
 
 If the paragraph is not a header, the value is `0`. If the paragraph is a header, the value ranges from `1` to `6`, depending on the header’s level.
 

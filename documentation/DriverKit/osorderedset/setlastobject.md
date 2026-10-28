@@ -18,11 +18,11 @@ Adds an object at the end of the OSOrderedSet if it is not already present.
 bool setLastObject(const OSMetaClassBase *anObject);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if `anObject` was successfully added to the ordered set, `false` otherwise (including if it was already in the ordered set at any index).
 
-#### Discussion
+## Discussion
 
 The set adds storage to accomodate the new object, if necessary. If successfully added, the object is retained.
 

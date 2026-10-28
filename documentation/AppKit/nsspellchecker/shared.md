@@ -19,7 +19,7 @@ class var shared: NSSpellChecker { get }
 @property (class, strong, readonly) NSSpellChecker * sharedSpellChecker;
 ```
 
-#### Return Value
+## Return Value
 
 The spelling checker shared by this application.
 

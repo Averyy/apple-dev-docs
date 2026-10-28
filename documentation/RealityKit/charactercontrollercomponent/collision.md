@@ -20,7 +20,7 @@ A container that holds collision state for the character controller.
 struct Collision
 ```
 
-#### Overview
+## Overview
 
 All coordinates are in *physics space*, the coordinate system of the physics simulation.
 

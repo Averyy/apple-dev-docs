@@ -19,11 +19,11 @@ func rectForLayout(at startingPoint: NSPoint, in rect: NSRect, textContainer: NS
 - (NSRect) rectForLayoutAtPoint:(NSPoint) startingPoint inRect:(NSRect) rect textContainer:(NSTextContainer *) textContainer characterRange:(NSRange) charRange;
 ```
 
-#### Return Value
+## Return Value
 
 The rectangle within which glyphs should be laid out.
 
-#### Discussion
+## Discussion
 
 This method is called by the typesetter before the text block is laid out to return the rectangle within which glyphs should be laid out.
 

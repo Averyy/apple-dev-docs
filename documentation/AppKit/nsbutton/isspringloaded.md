@@ -19,7 +19,7 @@ var isSpringLoaded: Bool { get set }
 @property (getter=isSpringLoaded) BOOL springLoaded;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) if spring loading is enabled for the button, and [`false`](../../Swift/false.md) if it is not. The default is [`false`](../../Swift/false.md).
 

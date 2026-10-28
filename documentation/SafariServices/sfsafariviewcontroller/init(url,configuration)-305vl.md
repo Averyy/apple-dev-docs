@@ -22,11 +22,11 @@ init(url URL: URL, configuration: SFSafariViewController.Configuration)
 - (instancetype) initWithURL:(NSURL *) URL configuration:(SFSafariViewControllerConfiguration *) configuration;
 ```
 
-#### Return Value
+## Return Value
 
 A newly created Safari view controller.
 
-#### Discussion
+## Discussion
 
 Use [`init(url:)`](./init%28url%29-5kpkn.md) to initialize an instance with the default configuration. The initializer copies the specified [`SFSafariViewController.Configuration`](./configuration-swift.class.md) object, so mutating the configuration after invoking the initializer has no effect on the view controller.
 

@@ -23,7 +23,7 @@ class PKAddSecureElementPassConfiguration
 @interface PKAddSecureElementPassConfiguration : NSObject
 ```
 
-#### Overview
+## Overview
 
 This class supports identity document configuration.
 

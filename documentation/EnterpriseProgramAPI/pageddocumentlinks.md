@@ -12,7 +12,7 @@ Links related to the response document, including paging links.
 object PagedDocumentLinks
 ```
 
-#### Discussion
+## Discussion
 
 All the response data constitutes multiple *documents.*
 

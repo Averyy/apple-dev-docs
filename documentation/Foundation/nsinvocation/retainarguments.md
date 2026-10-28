@@ -21,7 +21,7 @@ If the receiver hasn’t already done so, retains the target and all object argu
 - (void) retainArguments;
 ```
 
-#### Discussion
+## Discussion
 
 Before this method is invoked, [`argumentsRetained`](./argumentsretained.md) returns [`false`](../../Swift/false.md); after, it returns [`true`](../../Swift/true.md).
 

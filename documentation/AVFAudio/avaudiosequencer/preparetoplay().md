@@ -24,7 +24,7 @@ func prepareToPlay()
 - (void) prepareToPlay;
 ```
 
-#### Discussion
+## Discussion
 
 The framework invokes this method automatically on play if you don’t call it, but it may delay startup.
 

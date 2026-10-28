@@ -21,7 +21,7 @@ Returns a precision that constrains formatted values to a range of allowed digit
 static func integerLength<R>(_ limits: R) -> NumberFormatStyleConfiguration.Precision where R : RangeExpression
 ```
 
-#### Return Value
+## Return Value
 
 A precision that constrains formatted values to ranges of digits in the integer part.
 

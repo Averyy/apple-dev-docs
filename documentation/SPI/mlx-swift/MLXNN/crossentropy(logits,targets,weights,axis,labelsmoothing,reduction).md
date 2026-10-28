@@ -17,11 +17,11 @@ Computes the cross entropy loss.
 func crossEntropy(logits: MLXArray, targets: MLXArray, weights: MLXArray? = nil, axis: Int = -1, labelSmoothing: Float = 0, reduction: LossReduction = .none) -> MLXArray
 ```
 
-#### Return Value
+## Return Value
 
 Computed cross entropy loss
 
-##### See Also
+### See Also
 
 - [Loss Functions](./losses.md)
 

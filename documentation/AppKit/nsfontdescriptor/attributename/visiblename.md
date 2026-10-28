@@ -19,7 +19,7 @@ static let visibleName: NSFontDescriptor.AttributeName
 extern NSFontDescriptorAttributeName NSFontVisibleNameAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSString`](../../../Foundation/nsstring.md) object.
 

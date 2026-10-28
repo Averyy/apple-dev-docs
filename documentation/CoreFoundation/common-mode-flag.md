@@ -5,7 +5,7 @@
 
 A run loop pseudo-mode that manages objects monitored in the “common” modes.
 
-#### Overview
+## Overview
 
 Run loops never run in this mode. This pseudo-mode is used only as a special set of sources, timers, and observers that is shared by other modes. See Managing Observers for more details.
 

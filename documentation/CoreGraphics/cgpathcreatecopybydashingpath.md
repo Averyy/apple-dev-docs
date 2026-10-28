@@ -21,11 +21,11 @@ Creates a dashed copy of another path.
 extern CGPathRefCGPathCreateCopyByDashingPath(CGPathRef path, const CGAffineTransform *transform, CGFloat phase, const CGFloat *lengths, size_t count);
 ```
 
-#### Return Value
+## Return Value
 
 A new, immutable path. You are responsible for releasing this object.
 
-#### Discussion
+## Discussion
 
 The new path is created so that filling the new path draws the same pixels as stroking the original path with the specified dash parameters.
 

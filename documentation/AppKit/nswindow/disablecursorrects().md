@@ -19,7 +19,7 @@ func disableCursorRects()
 - (void) disableCursorRects;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method when you need to do some special cursor manipulation and you don’t want the Application Kit interfering.
 

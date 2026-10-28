@@ -25,11 +25,11 @@ func keyEnumerator() -> NSEnumerator
 - (NSEnumerator<id> *) keyEnumerator;
 ```
 
-#### Return Value
+## Return Value
 
 An enumerator object that lets you access each key in the dictionary.
 
-#### Discussion
+## Discussion
 
 Here’s how you might use this method.
 
@@ -59,7 +59,7 @@ If you use this method with instances of mutable subclasses of [`NSDictionary`](
 
 If you want to enumerate the dictionary’s values rather than its keys, use the [`objectEnumerator()`](./objectenumerator%28%29.md) method.
 
-##### Special Considerations
+### Special Considerations
 
 It is more efficient to use the fast enumeration protocol (see [`NSFastEnumeration`](../nsfastenumeration.md)) than this method. Fast enumeration is available in macOS 10.5 and later and iOS 2.0 and later.
 

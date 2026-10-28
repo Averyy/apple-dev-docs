@@ -20,7 +20,7 @@ func NSRectFromString(_ aString: String) -> NSRect
 extern NSRect NSRectFromString(NSString *aString);
 ```
 
-#### Discussion
+## Discussion
 
 Scans `aString` for four numbers which are used as the x and y coordinates and the width and height, in that order, to create an NSPoint object. If `aString` does not contain four numbers, those numbers that were scanned are used, and 0 is used for the remaining values. If `aString` does not contain any numbers, this function returns an NSRect object with a rectangle whose origin is (0, 0) and width and height are both 0.
 

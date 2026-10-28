@@ -17,7 +17,7 @@ Key for an array of strings that denote the day after tomorrow.
 extern NSString * const NSNextNextDayDesignations;
 ```
 
-#### Discussion
+## Discussion
 
 The default is an array that contains a single string, “nextday”.
 

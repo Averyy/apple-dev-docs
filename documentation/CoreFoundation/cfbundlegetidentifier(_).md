@@ -25,7 +25,7 @@ func CFBundleGetIdentifier(_ bundle: CFBundle!) -> CFString!
 extern CFStringRefCFBundleGetIdentifier(CFBundleRef bundle);
 ```
 
-#### Return Value
+## Return Value
 
 A CFString object containing the bundle’s identifier, or `NULL` if none was specified in the information property list. Ownership follows the [The Get Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-SW1).
 

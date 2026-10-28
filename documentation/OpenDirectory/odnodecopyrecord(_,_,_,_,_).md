@@ -20,7 +20,7 @@ func ODNodeCopyRecord(_ node: ODNodeRef!, _ recordType: String!, _ recordName: C
 extern ODRecordRefODNodeCopyRecord(ODNodeRef node, ODRecordType recordType, CFStringRef recordName, CFTypeRef attributes, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 A reference to a specified record of `inNode`.
 

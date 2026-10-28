@@ -19,7 +19,7 @@ var layer: CALayer? { get set }
 @property (strong, nullable) CALayer * layer;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to set or get the layer associated with the view, if any. When set, the layer serves as the backing store for the view’s contents.
 

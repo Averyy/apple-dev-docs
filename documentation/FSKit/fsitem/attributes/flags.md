@@ -19,7 +19,7 @@ var flags: UInt32 { get set }
 @property (nonatomic) uint32_t flags;
 ```
 
-#### Discussion
+## Discussion
 
 See `st_flags` in `stat.h` for flag definitions.
 

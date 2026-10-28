@@ -20,7 +20,7 @@ nonisolated
 func focusable(_ isFocusable: Bool = true, onFocusChange: @escaping (Bool) -> Void = { _ in }) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that sets whether a view is focusable, and triggers `onFocusChange` when the view gains or loses focus.
 

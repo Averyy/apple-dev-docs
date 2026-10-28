@@ -15,7 +15,7 @@ Accessor to a Mach read/write lock.
 lck_rw_t * IORWLockGetMachLock(IORWLock *lock);
 ```
 
-#### Discussion
+## Discussion
 
 Accessor to the Mach read/write lock.
 

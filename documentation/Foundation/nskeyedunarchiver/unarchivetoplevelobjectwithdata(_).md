@@ -25,11 +25,11 @@ Decodes a previously-archived object graph, and returns the root object.
 class func unarchiveTopLevelObjectWithData(_ data: Data) throws -> Any?
 ```
 
-#### Return Value
+## Return Value
 
 The unarchived object, or `nil` if an error occurred.
 
-#### Discussion
+## Discussion
 
 This method throws an error if `data` does not contain valid keyed data.
 

@@ -22,7 +22,7 @@ typealias CMMotionActivityHandler = (CMMotionActivity?) -> Void
 typedef void (^)(CMMotionActivity *) CMMotionActivityHandler;
 ```
 
-#### Discussion
+## Discussion
 
 This block takes the following parameter:
 

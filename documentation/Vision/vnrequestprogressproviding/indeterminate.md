@@ -25,7 +25,7 @@ var indeterminate: Bool { get }
 @property (readonly) BOOL indeterminate;
 ```
 
-#### Discussion
+## Discussion
 
 A value of [`true`](../../Swift/true.md) doesn’t mean that the request will run forever. Rather, it means that the nature of the request can’t be broken down into identifiable fractions to report. The [`progressHandler`](./progresshandler.md) will still be called at suitable intervals.
 

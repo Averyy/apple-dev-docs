@@ -19,7 +19,7 @@ var representedObject: (any NSCopying)? { get set }
 @property (strong, nullable) id<NSCopying> representedObject;
 ```
 
-#### Discussion
+## Discussion
 
 See [About Ruler Markers](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Rulers/Concepts/AboutRulerMarkers.html#//apple_ref/doc/uid/20000873) for more information on the represented object.
 

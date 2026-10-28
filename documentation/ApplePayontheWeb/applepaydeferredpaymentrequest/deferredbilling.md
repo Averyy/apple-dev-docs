@@ -16,7 +16,7 @@ A dictionary that contains details about the deferred payment.
 required ApplePayLineItem deferredBilling;
 ```
 
-#### Discussion
+## Discussion
 
 For example “Pay $2.99 on October 9, 2023.”
 

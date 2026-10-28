@@ -19,7 +19,7 @@ A 2-bit signed integer.
 case int2
 ```
 
-#### Discussion
+## Discussion
 
 Two-bit signed integers can represent values in the range [-2, 1]. This type is used for quantization.
 

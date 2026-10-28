@@ -4,7 +4,7 @@
 
 Displays images inside of other elements.
 
-#### Overview
+## Overview
 
 The `decorationImage` element contains a link to an image that is displayed. Here’s an example that displays a chevron image.
 
@@ -12,7 +12,7 @@ The `decorationImage` element contains a link to an image that is displayed. Her
 <decorationImage src="resource://list-chevron" />
 ```
 
-##### Contained In
+### Contained In
 
 - [listItemLockup](./listitemlockup.md)
 

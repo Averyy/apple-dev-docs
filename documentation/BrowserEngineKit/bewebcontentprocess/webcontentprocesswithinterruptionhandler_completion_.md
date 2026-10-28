@@ -17,7 +17,7 @@ Launches a web content extension process asynchronously.
 + (void) webContentProcessWithInterruptionHandler:(void (^)()) interruptionHandler completion:(void (^)(BEWebContentProcess *process, NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Your browser app can run multiple web content extension processes.
 

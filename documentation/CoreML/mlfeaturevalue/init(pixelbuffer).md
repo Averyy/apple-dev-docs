@@ -25,7 +25,7 @@ convenience init(pixelBuffer value: CVPixelBuffer)
 + (instancetype) featureValueWithPixelBuffer:(CVPixelBufferRef) value;
 ```
 
-#### Discussion
+## Discussion
 
 [Core ML](../CoreML.md) supports different pixel format types depending on the model’s feature description. For information about `ImageFeatureType`, see [Core ML Format Reference](https://apple.github.io/coremltools/mlmodel/Format/FeatureTypes.html#imagefeaturetype). When the image feature’s color space is `GRAYSCALE`, use [`kCVPixelFormatType_OneComponent8`](../../CoreVideo/kcvpixelformattype_onecomponent8.md); and when it’s `GRAYSCALE_FLOAT16`, use [`kCVPixelFormatType_OneComponent16Half`](../../CoreVideo/kcvpixelformattype_onecomponent16half.md); otherwise, use [`kCVPixelFormatType_32BGRA`](../../CoreVideo/kcvpixelformattype_32bgra.md) when it’s set to `RGB` or `BGR`.
 

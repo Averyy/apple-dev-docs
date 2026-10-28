@@ -19,7 +19,7 @@ func SCBondInterfaceGetMemberInterfaces(_ bond: SCBondInterface) -> CFArray?
 CFArrayRefSCBondInterfaceGetMemberInterfaces(SCBondInterfaceRef bond);
 ```
 
-#### Return Value
+## Return Value
 
 The list of interfaces.
 

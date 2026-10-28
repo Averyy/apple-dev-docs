@@ -23,11 +23,11 @@ func sendAction(_ action: Selector, to target: Any?, from sender: Any?, for even
 - (BOOL) sendAction:(SEL) action to:(id) target from:(id) sender forEvent:(UIEvent *) event;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if a responder object handled the action message, [`false`](../../Swift/false.md) if no object in the responder chain handled the message.
 
-#### Discussion
+## Discussion
 
 Normally, this method is invoked by a [`UIControl`](../uicontrol.md) object that the user has touched. The default implementation dispatches the action method to the given target object or, if no target is specified, to the first responder. Subclasses may override this method to perform special dispatching of action messages.
 

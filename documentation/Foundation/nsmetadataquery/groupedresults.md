@@ -25,7 +25,7 @@ var groupedResults: [NSMetadataQueryResultGroup] { get }
 @property (copy, readonly) NSArray<NSMetadataQueryResultGroup *> * groupedResults;
 ```
 
-#### Discussion
+## Discussion
 
 These groups are based on the receiver’s grouping attributes.
 

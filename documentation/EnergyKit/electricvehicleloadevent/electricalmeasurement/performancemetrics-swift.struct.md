@@ -17,7 +17,7 @@ Performance metrics for the current electrical measurement.
 struct PerformanceMetrics
 ```
 
-#### Overview
+## Overview
 
 Performance metrics provide additional context about the vehicle’s state during charging, such as the estimated driving range and battery temperature.
 

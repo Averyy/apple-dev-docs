@@ -19,7 +19,7 @@ var accessibilitySettings: SRAcousticSettings.Accessibility { get }
 @property (nonatomic, strong, readonly) SRAcousticSettingsAccessibility * accessibilitySettings;
 ```
 
-#### Discussion
+## Discussion
 
 Accessibility Settings
 

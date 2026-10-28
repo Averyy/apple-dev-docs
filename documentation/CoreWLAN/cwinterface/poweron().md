@@ -19,7 +19,7 @@ func powerOn() -> Bool
 - (BOOL) powerOn;
 ```
 
-#### Discussion
+## Discussion
 
 Dynamically queries the interface for the current power state. Returns *NO* in the case of an error.
 

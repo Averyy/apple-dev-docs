@@ -22,7 +22,7 @@ Returns the number of models that match the criteria of the specified fetch desc
 func fetchCount<T>(_ descriptor: FetchDescriptor<T>) throws -> Int where T : PersistentModel
 ```
 
-#### Return Value
+## Return Value
 
 The total number of models that satisfy the criteria of the fetch descriptor.
 

@@ -15,7 +15,7 @@ Sent when a control with editable text begins an editing session.
 - (void) controlTextDidBeginEditing:(NSNotification *) obj;
 ```
 
-#### Discussion
+## Discussion
 
 This method is invoked when the user begins editing text in a control such as a text field or a form field. The control posts a [`textDidBeginEditingNotification`](../../AppKit/nscontrol/textdidbegineditingnotification.md) notification, and if the control’s delegate implements this method, it is automatically registered to receive the notification. Use the key `@"NSFieldEditor"` to obtain the field editor from the `userInfo` dictionary of the notification object.
 

@@ -25,7 +25,7 @@ var source: UIViewController { get }
 @property (nonatomic, readonly) UIViewController * sourceViewController;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the view controller whose contents are displayed at the beginning of the segue.
 

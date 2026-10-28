@@ -24,7 +24,7 @@ func reset()
 - (void) reset;
 ```
 
-#### Discussion
+## Discussion
 
 Calling this method restarts the evaluation process: the system removes all rules from the current [`agenda`](./agenda.md) and [`executed`](./executed.md) lists and empties the [`facts`](./facts.md) set. (However, the rule’s [`state`](./state.md) dictionary is left unchanged.) The system then automatically repopulates its agenda according to the [`salience`](../gkrule/salience.md) of each rule in the [`rules`](./rules.md) array.
 

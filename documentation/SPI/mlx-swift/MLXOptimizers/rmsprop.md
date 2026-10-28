@@ -17,11 +17,11 @@ The RMSprop optimizer [1].
 class RMSprop
 ```
 
-#### Overview
+## Overview
 
 [1]: Tieleman, T. and Hinton, G. 2012. Lecture 6.5-rmsprop, coursera: Neural networks for machine learning
 
-##### See Also
+### See Also
 
 - [MLXOptimizers](./MLXOptimizers.md)
 

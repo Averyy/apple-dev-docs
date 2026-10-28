@@ -24,7 +24,7 @@ var userTrackingMode: MKUserTrackingMode { get set }
 @property (nonatomic) MKUserTrackingMode userTrackingMode;
 ```
 
-#### Discussion
+## Discussion
 
 Setting the tracking mode to [`MKUserTrackingMode.follow`](../mkusertrackingmode/follow.md) or [`MKUserTrackingMode.followWithHeading`](../mkusertrackingmode/followwithheading.md) causes the map view to center the map on that location and begin tracking the user’s location. If it’s zoomed out, the map view automatically zooms in on the user’s location, effectively changing the current visible region.
 

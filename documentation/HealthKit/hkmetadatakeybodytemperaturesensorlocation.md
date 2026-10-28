@@ -24,7 +24,7 @@ let HKMetadataKeyBodyTemperatureSensorLocation: String
 extern NSString * const HKMetadataKeyBodyTemperatureSensorLocation;
 ```
 
-#### Discussion
+## Discussion
 
 This key takes an [`NSNumber`](../Foundation/nsnumber.md) object whose value is [`HKBodyTemperatureSensorLocation`](./hkbodytemperaturesensorlocation.md).
 

@@ -15,7 +15,7 @@ The request body for updating a bid strategy on an ad group or campaign.
 object CampaignUpdate.BidStrategy
 ```
 
-#### Discussion
+## Discussion
 
 To change a campaign’s bid strategy after creation, use this object. The `bidStrategyType` and `bidStrategyGoal` fields must be sent together and matched per the pairings in `BidStrategy`.
 

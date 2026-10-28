@@ -23,11 +23,11 @@ Synchronously loads an environment resource from a bundle.
 @preconcurrency static func load(named name: String, in bundle: Bundle? = nil) throws -> EnvironmentResource
 ```
 
-#### Return Value
+## Return Value
 
 The environment resource that loads from the specified bundle.
 
-#### Discussion
+## Discussion
 
 Loading an [`EnvironmentResource`](../environmentresource.md) with this method blocks the main actor because it’s synchronous, so only call it from a command-line application. The method can stall a regular app, which makes it visibly hitch, and the system terminates an app if its UI becomes unresponsive.
 

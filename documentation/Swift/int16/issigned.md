@@ -21,7 +21,7 @@ A Boolean value indicating whether this type is a signed integer type.
 static var isSigned: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property is always `true` for signed integer types.
 

@@ -25,7 +25,7 @@ func CTLineGetStringRange(_ line: CTLine) -> CFRange
 extern CFRange CTLineGetStringRange(CTLineRef line);
 ```
 
-#### Return Value
+## Return Value
 
 A [`CFRange`](../CoreFoundation/cfrange.md) structure that contains the range over the backing store string that spawned the glyphs, or if the function fails for any reason, an empty range.
 

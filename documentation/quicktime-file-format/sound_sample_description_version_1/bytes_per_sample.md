@@ -6,7 +6,7 @@
 
 The size of an uncompressed sample in bytes.
 
-#### Overview
+## Overview
 
 This is set to `1` for 8-bit audio, `2` for all other cases, even if the sample size is greater than 2 bytes.
 

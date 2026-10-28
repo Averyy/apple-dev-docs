@@ -22,7 +22,7 @@ static let textSelection: ImageAnalysisInteraction.InteractionTypes
 
 - [Enabling Live Text interactions with images](../../enabling-live-text-interactions-with-images.md)
 
-#### Discussion
+## Discussion
 
 People can select text to perform actions. In this mode, the framework disables data detectors ([`dataDetectors`](./datadetectors.md)) by default. However, if you set the [`allowLongPressForDataDetectorsInTextMode`](../allowlongpressfordatadetectorsintextmode.md) property to `true`, a person can use a long-press gesture to enable them.
 

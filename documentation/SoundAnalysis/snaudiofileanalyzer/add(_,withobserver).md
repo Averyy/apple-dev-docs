@@ -29,7 +29,7 @@ func add(_ request: any SNRequest, withObserver observer: any SNResultsObserving
 
 - [Classifying Sounds in an Audio File](../classifying-sounds-in-an-audio-file.md)
 
-#### Discussion
+## Discussion
 
 The method throws an error (Swift) or returns an error (Objective-C) if the analyzer is actively processing the file.
 

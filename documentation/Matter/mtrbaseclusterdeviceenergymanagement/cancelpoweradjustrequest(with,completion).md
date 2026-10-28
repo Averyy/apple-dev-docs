@@ -29,7 +29,7 @@ func cancelPowerAdjustRequest(with params: MTRDeviceEnergyManagementClusterCance
 - (void) cancelPowerAdjustRequestWithParams:(MTRDeviceEnergyManagementClusterCancelPowerAdjustRequestParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Allows a client to cancel an ongoing PowerAdjustmentRequest operation.
 

@@ -13,7 +13,7 @@ static void kdpTransmitDispatcher(
  UInt32length);
 ```
 
-#### Overview
+## Overview
 
 Field KDP transmit requests, then dispatches the call to the registered transmit handler.
 

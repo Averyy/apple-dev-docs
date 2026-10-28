@@ -20,7 +20,7 @@ var backgroundColor: NSColor { get set }
 @property (copy) NSColor * backgroundColor;
 ```
 
-#### Discussion
+## Discussion
 
 The background color is visible only if the drawn image representation does not completely cover all of the pixels available for the image’s current size.  The background color is ignored for cached image representations; such caches are always created with a white background. Assigning a new background color does not cause the receiver to recache itself.
 

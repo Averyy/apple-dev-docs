@@ -21,11 +21,11 @@ Creates a floor geometry.
 + (instancetype) floor;
 ```
 
-#### Return Value
+## Return Value
 
 A new floor geometry.
 
-#### Discussion
+## Discussion
 
 A floor extends infinitely in the x- and z-axis dimensions of its local coordinate space, and is located in the plane whose y-coordinate is zero.
 

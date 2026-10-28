@@ -22,7 +22,7 @@ nonisolated
 func accessibilityActions<Content>(@ContentBuilder _ content: () -> Content) -> some View where Content : View
 ```
 
-#### Discussion
+## Discussion
 
 Actions allow assistive technologies, such as the VoiceOver, to interact with the view by invoking the action. For example, this is how a dynamic number of custom action could be added to a view.
 

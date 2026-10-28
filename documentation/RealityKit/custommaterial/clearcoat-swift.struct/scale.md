@@ -19,7 +19,7 @@ The intensity of the clearcoat.
 var scale: Float
 ```
 
-#### Discussion
+## Discussion
 
 Use the scale value either to hold a uniform clearcoat value that applies to the entire entity, or use it as a multiplier to scale the clearcoat intensity sampled from the [`texture`](./texture.md) property.
 

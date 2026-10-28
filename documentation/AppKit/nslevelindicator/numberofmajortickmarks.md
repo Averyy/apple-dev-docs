@@ -19,7 +19,7 @@ var numberOfMajorTickMarks: Int { get set }
 @property NSInteger numberOfMajorTickMarks;
 ```
 
-#### Discussion
+## Discussion
 
 The number of major tick marks must be less than or equal to the number of tick marks returned by [`numberOfTickMarks`](./numberoftickmarks.md). For example, if the number of tick marks is 11 and you specify 3 major tick marks, the resulting level indicator will display 3 major tick marks alternating with 8 minor tick marks, as in the example shown in [`NSLevelIndicator`](../nslevelindicator.md).
 

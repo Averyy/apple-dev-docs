@@ -24,7 +24,7 @@ let HMCharacteristicTypeOutputState: String
 extern NSString * const HMCharacteristicTypeOutputState;
 ```
 
-#### Discussion
+## Discussion
 
 The value represents the state of a programmable switch. For a binary switch, a value of `1` indicates that the switch is in the `ON` position.
 

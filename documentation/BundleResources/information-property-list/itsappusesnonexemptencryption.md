@@ -14,7 +14,7 @@ A Boolean value indicating whether the app uses encryption.
 - **Name**: `ITSAppUsesNonExemptEncryption` (App Uses Non-Exempt Encryption)
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 Set the value for this key to `NO` in your app’s [`Information Property List`](../information-property-list.md) file to indicate that your app—including any third-party libraries you link against—either uses no encryption, or only uses encryption that’s exempt from export compliance requirements, as described in [Overview of export compliance](https://developer.apple.com/help/app-store-connect/manage-app-information/overview-of-export-compliance/). Set the value to `YES` to indicate that your app uses non-exempt encryption.
 

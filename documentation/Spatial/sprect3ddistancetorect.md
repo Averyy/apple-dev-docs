@@ -19,11 +19,11 @@
 static double SPRect3DDistanceToRect(SPRect3D rect, SPRect3D other);
 ```
 
-#### Return Value
+## Return Value
 
 The distance between the two rectangle.
 
-#### Discussion
+## Discussion
 
 Returns the distance between the origins of two rectangle.
 

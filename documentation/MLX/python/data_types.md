@@ -9,6 +9,8 @@ url: https://ml-explore.github.io/mlx/build/html/python/data_types.html
 The default floating point type is `float32` and the default integer type is
 `int32`. The table below shows supported values for [Dtype](_autosummary/mlx.core.Dtype.md#mlx.core.Dtype).
 
+**Supported Data Types**
+
 | Type | Bytes | Description |
 | --- | --- | --- |
 | `bool_` | 1 | Boolean (`True`, `False`) data type |

@@ -5,17 +5,17 @@
 
 Create requests for Apple TV Catalog metadata.
 
-#### Overview
+## Overview
 
 To get the data for an Apple TV Feed data set, request information about the latest feed export, use that information to request links to parts of the feed, and then use those links to download the data.
 
-#### Compose a request
+## Compose a request
 
 To compose a request, first specify the root path, `https://api-feeds.tv.apple.com/v1`.
 
 Follow the root path with `/feed/` and the required information for the specific request.
 
-#### Request metadata for the latest feed export
+## Request metadata for the latest feed export
 
 To request metadata about the latest available export for an Apple TV Feed data set, construct a URL that includes the `feedId` followed by `/latest`.
 
@@ -37,9 +37,9 @@ The response returns metadata about the most recent export for the specified `fe
 ],
 ```
 
-#### Request feed data links
+## Request feed data links
 
-To request links to parts of the data for a feed export, construct a URL that includes the `id` of a specific feed export, which you can get from the response above, followed by `/parts`. You can use the `limit` and `offset` parameters to paginate the returned results. For more information, see [Fetching Resources by Page](../AppleMusicAPI/fetching_resources_by_page.md).
+To request links to parts of the data for a feed export, construct a URL that includes the `id` of a specific feed export, which you can get from the response above, followed by `/parts`. You can use the `limit` and `offset` parameters to paginate the returned results. For more information, see [Fetching Resources by Page](../AppleMusicAPI/fetching-resources-by-page.md).
 
 ```
 GET https://api-feeds.tv.apple.com/v1/feed/exports/{id}/parts?limit=100&offset=0
@@ -82,7 +82,7 @@ The response returns `parts` objects as `resources`, each of which includes an `
   }
 ```
 
-#### Download the feed data
+## Download the feed data
 
 Use the links that the `parts` response provides to download the feed data. Note that access to these links expires after a specified time.
 

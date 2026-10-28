@@ -16,11 +16,11 @@ Generates a pseudo-random single-precision float between 0 and 1 using a specifi
 float random::float_01_using(uint seed)
 ```
 
-#### Return Value
+## Return Value
 
 A pseudo-random single-precision float in the range [0.0, 1.0].
 
-#### Discussion
+## Discussion
 
 This function generates a random value in the range [0.0, 1.0] using single-precision floating-point format and the provided seed. The seed is not modified, allowing for reproducible random number generation.
 

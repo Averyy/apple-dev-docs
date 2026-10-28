@@ -25,7 +25,7 @@ class var newlines: CharacterSet { get }
 @property (class, copy, readonly) NSCharacterSet * newlineCharacterSet;
 ```
 
-#### Return Value
+## Return Value
 
 A character set containing all the newline characters.
 

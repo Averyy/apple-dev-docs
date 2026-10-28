@@ -15,7 +15,7 @@ Gets the number of bytes to use for the link header.
 virtual kern_return_t GetLinkHeaderLength(uint8_t *length) const;
 ```
 
-#### Return Value
+## Return Value
 
 `kIOReturnSuccess` on success, or another value if an error occurred.
 

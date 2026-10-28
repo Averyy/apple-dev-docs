@@ -23,7 +23,7 @@ Returns a new softmax cross entropy loss layer parameters structure from the spe
 init(function: BNNSLossFunction, i_desc: BNNSNDArrayDescriptor, o_desc: BNNSNDArrayDescriptor, reduction: BNNSLossReductionFunction, label_smooth: Float)
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  The input data type and output data type must be `float`. The output size must be `1`, unless the reduction is [`BNNS.LossReduction.none`](../bnns/lossreduction/none.md).
 

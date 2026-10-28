@@ -16,11 +16,11 @@ List all scheduled system power events
 CFArrayRef IOPMCopyScheduledPowerEvents(void);
 ```
 
-#### Return Value
+## Return Value
 
 A CFArray of CFDictionaries of power events. The CFArray must be released by the caller. NULL if there are no scheduled events.
 
-#### Discussion
+## Discussion
 
 Returns a CFArray of CFDictionaries of power events. Each CFDictionary contains keys for CFSTR(kIOPMPowerEventTimeKey), CFSTR(kIOPMPowerEventAppNameKey), and CFSTR(kIOPMPowerEventTypeKey).
 

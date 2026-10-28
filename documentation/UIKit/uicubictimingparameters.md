@@ -24,7 +24,7 @@ class UICubicTimingParameters
 @interface UICubicTimingParameters : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use a [`UICubicTimingParameters`](./uicubictimingparameters.md) object to specify custom timing curves when creating animations with objects that adopt the [`UIViewAnimating`](./uiviewanimating.md) protocol, such as [`UIViewPropertyAnimator`](./uiviewpropertyanimator.md).
 

@@ -25,7 +25,7 @@ func denyCallID(_ callID: Int)
 - (void) denyCallID:(NSInteger) callID;
 ```
 
-#### Discussion
+## Discussion
 
 When a remote user requests a voice chat, the voice chat service calls the client’s [`voiceChatService(_:didReceiveInvitationFromParticipantID:callID:)`](../gkvoicechatclient/voicechatservice%28_,didreceiveinvitationfromparticipantid,callid%29.md) method. The client calls this method to reject the request or [`acceptCallID(_:)`](./acceptcallid%28_%29.md) to accept it.
 

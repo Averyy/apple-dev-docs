@@ -25,7 +25,7 @@ var shouldInferMappingModelAutomatically: Bool { get set }
 @property BOOL shouldInferMappingModelAutomatically;
 ```
 
-#### Discussion
+## Discussion
 
 If this flag is set to [`true`](../../Swift/true.md) and the value of the [`shouldMigrateStoreAutomatically`](./shouldmigratestoreautomatically.md) is [`true`](../../Swift/true.md), the coordinator attempts to infer a mapping model if none can be found. The default for this flag is [`true`](../../Swift/true.md).
 

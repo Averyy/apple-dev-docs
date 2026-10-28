@@ -22,7 +22,7 @@ nonisolated
 func presentationBackground<S>(_ style: S) -> some View where S : ShapeStyle
 ```
 
-#### Discussion
+## Discussion
 
 The following example uses the [`thick`](../material/thick.md) material as the sheet background:
 

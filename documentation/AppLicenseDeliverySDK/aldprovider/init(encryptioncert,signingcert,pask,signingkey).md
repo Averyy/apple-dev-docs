@@ -16,7 +16,7 @@ init(encryptionCert: [UInt8], signingCert: [UInt8], PASK: [UInt8], signingKey: [
 
 - [Licensing alternative distribution apps](../licensing-alternative-distribution-apps.md)
 
-#### Discussion
+## Discussion
 
 For an example that uses a provider, see [Licensing alternative distribution apps](../licensing-alternative-distribution-apps.md).
 

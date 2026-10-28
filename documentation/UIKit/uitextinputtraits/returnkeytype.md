@@ -23,7 +23,7 @@ optional var returnKeyType: UIReturnKeyType { get set }
 @property (nonatomic) UIReturnKeyType returnKeyType;
 ```
 
-#### Discussion
+## Discussion
 
 Setting this property to a different key type changes the visible title of the Return key and typically results in the system dismissing the keyboard when it is pressed. The default value for this property is [`UIReturnKeyType.default`](../uireturnkeytype/default.md).
 

@@ -20,7 +20,7 @@ case waitingForLocation
 ARGeoTrackingStateReasonWaitingForLocation
 ```
 
-#### Discussion
+## Discussion
 
 While in this state, the app needs to wait for the Core Location subsystem to provide the user’s GPS location. Inform the user of the check in progress; for instance, present a message alerting them to the geotracking initialization process.
 

@@ -25,7 +25,7 @@ class func archivedData(withRootObject object: Any, requiringSecureCoding requir
 + (NSData *) archivedDataWithRootObject:(id) object requiringSecureCoding:(BOOL) requiresSecureCoding error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 To prevent the possibility of encoding an object that [`NSKeyedUnarchiver`](../nskeyedunarchiver.md) can’t decode, set `requiresSecureCoding` to true whenever possible. This ensures that all encoded objects conform to [`NSSecureCoding`](../nssecurecoding.md).
 

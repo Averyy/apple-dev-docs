@@ -15,7 +15,7 @@ The rotation, in degrees, of the device frame around its y-axis.
 readonly attribute unrestricted double gamma;
 ```
 
-#### Discussion
+## Discussion
 
 Values are between -180 and 180.  This property is `null` if the device cannot provide this angle.
 

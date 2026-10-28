@@ -26,7 +26,7 @@ func downloadConfigurationModel() async throws
 - (void) downloadConfigurationModelWithCompletionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 This method downloads model assets required for the current configuration in background. You should call this method if [`configurationModelStatus`](./configurationmodelstatus.md) is `VTSuperResolutionScalerConfigurationModelStatusDownloadRequired`. After this method is called, you can query [`configurationModelPercentageAvailable`](./configurationmodelpercentageavailable.md) to determine progress of model asset download process. If the download fails, the completion handler is invoked with an `NSError`, and the [`configurationModelStatus`](./configurationmodelstatus.md) goes back to `VTSuperResolutionScalerConfigurationModelStatusDownloadRequired`. If the download succeeds, the completion handler is invoked with `nil` NSError.
 

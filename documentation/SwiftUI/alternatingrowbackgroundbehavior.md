@@ -15,7 +15,7 @@ The styling of views with respect to alternating row backgrounds.
 struct AlternatingRowBackgroundBehavior
 ```
 
-#### Overview
+## Overview
 
 Use values of this type with the [`alternatingRowBackgrounds(_:)`](./view/alternatingrowbackgrounds%28_%29.md) modifier.
 

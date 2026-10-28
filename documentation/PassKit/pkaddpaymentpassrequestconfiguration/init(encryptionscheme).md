@@ -23,11 +23,11 @@ init?(encryptionScheme: PKEncryptionScheme)
 - (instancetype) initWithEncryptionScheme:(PKEncryptionScheme) encryptionScheme;
 ```
 
-#### Return Value
+## Return Value
 
 A newly instantiated configuration object.
 
-#### Discussion
+## Discussion
 
 After instantiating a configuration object, you must also set its [`cardholderName`](./cardholdername.md) and [`primaryAccountSuffix`](./primaryaccountsuffix.md) properties before using it to create a [`PKAddPaymentPassViewController`](../pkaddpaymentpassviewcontroller.md) instance.
 

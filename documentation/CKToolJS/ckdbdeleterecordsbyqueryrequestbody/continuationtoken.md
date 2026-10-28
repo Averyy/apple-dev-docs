@@ -15,7 +15,7 @@ The location of the last batch of results.
 attribute string? continuationToken;
 ```
 
-#### Discussion
+## Discussion
 
 Use this key when the results of a previous operation exceed the maximum.
 

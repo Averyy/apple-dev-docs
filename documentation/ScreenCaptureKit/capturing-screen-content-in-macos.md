@@ -10,13 +10,13 @@ Stream desktop content like displays, apps, and windows by adopting screen captu
 - macOS 15.0+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 This sample shows how to add high-performance screen capture to your Mac app by using [ScreenCaptureKit](./ScreenCaptureKit.md). The sample explores how to create content filters to capture the displays, apps, and windows you choose. It then shows how to configure your stream output, retrieve video frames and audio samples, and update a running stream.
 
 > **Note**: This sample code project is associated with WWDC24 session 10088: [Capture HDR content with ScreenCaptureKit](https://developer.apple.com/wwdc24/10088/).
 
-##### Configure the sample code project
+### Configure the sample code project
 
 To run this sample app, you’ll need the following:
 
@@ -25,7 +25,7 @@ To run this sample app, you’ll need the following:
 
 The first time you run this sample, the system prompts you to grant the app Screen Recording permission. After you grant permission, you need to restart the app to enable capture.
 
-##### Create a content filter
+### Create a content filter
 
 Displays, running apps, and windows are the shareable content on a device. The sample uses the [`SCShareableContent`](./scshareablecontent.md) class to retrieve the items in the form of [`SCDisplay`](./scdisplay.md), [`SCRunningApplication`](./scrunningapplication.md), and [`SCWindow`](./scwindow.md) objects respectively.
 
@@ -59,7 +59,7 @@ filter = SCContentFilter(display: display,
                          exceptingWindows: [])
 ```
 
-##### Create a stream configuration
+### Create a stream configuration
 
 An [`SCStreamConfiguration`](./scstreamconfiguration.md) object provides properties to configure the stream’s output size, pixel format, audio capture settings, and more. The app’s configuration throttles frame updates to 60 fps, and configures the number of frames to keep in the queue at 5. Specifying more frames uses more memory, but may allow for processing frame data without stalling the display stream. The default value is 3 and shouldn’t exceed 8 frames.
 
@@ -95,7 +95,7 @@ streamConfig.minimumFrameInterval = CMTime(value: 1, timescale: 60)
 streamConfig.queueDepth = 5
 ```
 
-##### Start the capture session
+### Start the capture session
 
 The sample uses the content filter and stream configuration to initialize a new instance of [`SCStream`](./scstream.md). To retrieve audio and video sample data, the app adds stream outputs that capture media of the specified type. When the stream captures new sample buffers, it delivers them to its stream output object on the indicated dispatch queues.
 
@@ -116,7 +116,7 @@ try await stream?.updateConfiguration(configuration)
 try await stream?.updateContentFilter(filter)
 ```
 
-##### Process the output
+### Process the output
 
 When a stream captures a new audio or video sample buffer, it calls the stream output’s [`stream(_:didOutputSampleBuffer:of:)`](./scstreamoutput/stream%28_,didoutputsamplebuffer,of%29.md) method, passing it the captured data and an indicator of its type. The stream output evaluates and processes the sample buffer as shown below.
 
@@ -136,7 +136,7 @@ func stream(_ stream: SCStream, didOutputSampleBuffer sampleBuffer: CMSampleBuff
 }
 ```
 
-##### Process a video sample buffer
+### Process a video sample buffer
 
 If the sample buffer contains video data, it retrieves the sample buffer attachments that describe the output video frame.
 
@@ -180,7 +180,7 @@ let frame = CapturedFrame(surface: surface,
                           scaleFactor: scaleFactor)
 ```
 
-##### Process an audio sample buffer
+### Process an audio sample buffer
 
 If the sample buffer contains audio, it retrieves the data as an [AudioBufferList](../CoreAudioTypes/audiobufferlist.md) as shown below.
 

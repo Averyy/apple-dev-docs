@@ -24,7 +24,7 @@ var workoutEvents: [HKWorkoutEvent] { get }
 @property (copy, readonly) NSArray<HKWorkoutEvent *> * workoutEvents;
 ```
 
-#### Discussion
+## Discussion
 
 HealthKit sorts the events in ascending order. These events are a subset of the containing workout’s events, that take place between the activity’s [`startDate`](./startdate.md) and [`endDate`](./enddate.md). This includes any event that partially overlaps the activity. As a result, these events may appear in more than one activity.
 

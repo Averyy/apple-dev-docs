@@ -24,7 +24,7 @@ let kCIInputCountKey: String
 extern NSString * const kCIInputCountKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key needs to be an integer  `NSNumber` instance.
 

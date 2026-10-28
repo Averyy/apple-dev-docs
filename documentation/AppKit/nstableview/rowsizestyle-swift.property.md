@@ -19,7 +19,7 @@ var rowSizeStyle: NSTableView.RowSizeStyle { get set }
 @property NSTableViewRowSizeStyle rowSizeStyle;
 ```
 
-#### Discussion
+## Discussion
 
 To set the row size style on a row by row basis, set the value of this property to [`NSTableView.RowSizeStyle.custom`](./rowsizestyle-swift.enum/custom.md) and implement the [`tableView(_:heightOfRow:)`](../nstableviewdelegate/tableview%28_,heightofrow%29.md) method in your table view delegate object.
 

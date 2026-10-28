@@ -25,7 +25,7 @@ struct Name
 
 - [Adding support for app extensions to your app](../adding-support-for-app-extensions-to-your-app.md)
 
-#### Overview
+## Overview
 
 Add this type to each extension point definition you create in your host app. Provide a unique string for each of your app’s extension points. App extensions that want to bind to the extension point include this name in their binding.
 

@@ -25,7 +25,7 @@ static var immediate: FileWrapper.ReadingOptions { get }
 NSFileWrapperReadingImmediate
 ```
 
-#### Discussion
+## Discussion
 
 When you create a file wrapper and pass the [`immediate`](./immediate.md) reading option, the content of the file is read immediately. Otherwise, file content is read only when requested, such as by accessing the [`regularFileContents`](../regularfilecontents.md), [`fileWrappers`](../filewrappers.md), [`serializedRepresentation`](../serializedrepresentation.md), or [`symbolicLinkDestinationURL`](../symboliclinkdestinationurl.md) properties.
 

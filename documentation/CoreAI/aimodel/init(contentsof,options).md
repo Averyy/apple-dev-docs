@@ -25,7 +25,7 @@ init(contentsOf modelURL: URL, options: SpecializationOptions = .default) async 
 - [Integrating on-device AI models in your app with Core AI](../integrating-on-device-ai-models-in-your-app-with-core-ai.md)
 - [Managing model specialization and caching](../managing-model-specialization-and-caching.md)
 
-#### Discussion
+## Discussion
 
 This initializer specializes the model if needed, caching the result for future calls.
 

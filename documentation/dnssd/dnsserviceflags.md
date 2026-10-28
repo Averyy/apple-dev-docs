@@ -23,7 +23,7 @@ typealias DNSServiceFlags = UInt32
 typedef uint32_t DNSServiceFlags;
 ```
 
-#### Discussion
+## Discussion
 
 Type declaration for DNS Service flags.
 

@@ -19,7 +19,7 @@ func scroll(_ clipView: NSClipView, to point: NSPoint)
 - (void) scrollClipView:(NSClipView *) clipView toPoint:(NSPoint) point;
 ```
 
-#### Discussion
+## Discussion
 
 The superview of `clipView` should then send a [`scroll(to:)`](../nsclipview/scroll%28to%29.md) message to `clipView` with `point` as the argument. This mechanism is provided so the `NSClipView` object’s superview can coordinate scrolling of multiple tiled clip views.
 

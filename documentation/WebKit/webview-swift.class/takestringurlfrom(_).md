@@ -20,7 +20,7 @@ func takeStringURLFrom(_ sender: Any?)
 - (void) takeStringURLFrom:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 This method sets the receiver’s current location to the value obtained by sending a `stringValue` message to `sender`, then starts loading the URL returned by `sender`.
 

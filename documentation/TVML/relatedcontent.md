@@ -4,7 +4,7 @@
 
 Contains elements that are related to another element.
 
-#### Overview
+## Overview
 
 This element is often used to display the related content when another element is brought into focus. Here’s an example that contains a `lockup` inside of a `relatedContent` element.
 
@@ -17,7 +17,7 @@ This element is often used to display the related content when another element i
 </relatedContent
 ```
 
-##### Subelements of relatedContent
+### Subelements of relatedContent
 
 - [activityIndicator](./activityindicator.md)
 - [grid](./grid.md)
@@ -25,7 +25,7 @@ This element is often used to display the related content when another element i
 - [itemBanner](./itembanner.md)
 - [lockup](./lockup.md)
 
-##### Elements that Use relatedContent
+### Elements that Use relatedContent
 
 - [list](./list.md)
 - [listItemLockup](./listitemlockup.md)

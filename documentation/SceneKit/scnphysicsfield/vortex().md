@@ -25,11 +25,11 @@ class func vortex() -> SCNPhysicsField
 + (SCNPhysicsField *) vortexField;
 ```
 
-#### Return Value
+## Return Value
 
 A physics field object. To use the field in a scene, attach it to the [`physicsField`](../scnnode/physicsfield.md) property of an [`SCNNode`](../scnnode.md) object.
 
-#### Discussion
+## Discussion
 
 The force on an object in a vortex field is tangential to the line from the object’s position to the field’s axis and proportional to the object’s mass. (The field’s axis is a line that is parallel to its [`direction`](./direction.md) vector and that passes through its center. For details, see the [`offset`](./offset.md) property.) For example, when a vortex field’s area of effect contains many objects, the resulting scene resembles a tornado: The objects simultaneously revolve around and fly away from the field’s center.
 

@@ -15,7 +15,7 @@ Sets a new IOMemoryDescriptor to use for video IO on the IOUserVideoStream.
 kern_return_t SetControlMemoryDescriptor(IOMemoryDescriptor *in_control_memory_descriptor);
 ```
 
-#### Discussion
+## Discussion
 
 Setting this value should only be done during the PerformDeviceConfigurationChange() call. If the value needs to be changed, RequestDeviceConfigChange() should be called to allow IO to stop and the config change to be performed.
 

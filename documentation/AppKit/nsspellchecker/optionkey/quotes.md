@@ -19,7 +19,7 @@ static let quotes: NSSpellChecker.OptionKey
 extern NSTextCheckingOptionKey NSTextCheckingQuotesKey;
 ```
 
-#### Discussion
+## Discussion
 
 If not specified, values will be taken from user’s preferences.
 

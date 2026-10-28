@@ -19,7 +19,7 @@ case graphicBezel
 CLKComplicationFamilyGraphicBezel
 ```
 
-#### Discussion
+## Discussion
 
 The following figure shows the size and location of the graphic bezel complication.
 

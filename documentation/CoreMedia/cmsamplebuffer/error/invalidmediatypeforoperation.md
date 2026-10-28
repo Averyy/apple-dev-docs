@@ -21,7 +21,7 @@ The media type the format description defines isn’t value for the requested op
 static let invalidMediaTypeForOperation: NSError
 ```
 
-#### Discussion
+## Discussion
 
 This error occurs, for example, if you call the [`withUnsafeAudioStreamPacketDescriptions(_:)`](../withunsafeaudiostreampacketdescriptions%28_%29.md) with nonaudio data.
 

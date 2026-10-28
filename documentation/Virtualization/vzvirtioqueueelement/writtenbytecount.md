@@ -19,7 +19,7 @@ var writtenByteCount: Int { get }
 @property (readonly) NSUInteger writtenByteCount;
 ```
 
-#### Discussion
+## Discussion
 
 This value increases as you write memory to the write buffers. This value is initially equal to 0.
 

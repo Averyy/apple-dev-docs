@@ -14,7 +14,7 @@
 virtual uint32_t getLogicalMax();
 ```
 
-#### Return Value
+## Return Value
 
 Returns the element’s logical maximum.
 

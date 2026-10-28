@@ -23,7 +23,7 @@ case dismissAndForwardAction
 UNNotificationContentExtensionResponseOptionDismissAndForwardAction
 ```
 
-#### Discussion
+## Discussion
 
 Choose this option when you want the app to respond to the action or handle it.
 

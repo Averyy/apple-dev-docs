@@ -15,7 +15,7 @@ The request body you use to modify a Game Center leaderboard update request.
 object GameCenterLeaderboardV2UpdateRequest.Data.Attributes
 ```
 
-#### Overview
+## Overview
 
 - activityProperties:
 - archived:

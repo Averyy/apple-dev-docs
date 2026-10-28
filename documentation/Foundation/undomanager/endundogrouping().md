@@ -25,7 +25,7 @@ func endUndoGrouping()
 - (void) endUndoGrouping;
 ```
 
-#### Discussion
+## Discussion
 
 All individual undo operations back to the matching [`beginUndoGrouping()`](./beginundogrouping%28%29.md) message are grouped together and reversed by a later [`undo()`](./undo%28%29.md) or [`undoNestedGroup()`](./undonestedgroup%28%29.md) message. Undo groups can be nested, thus providing functionality similar to nested transactions. Raises an `NSInternalInconsistencyException` if there’s no [`beginUndoGrouping()`](./beginundogrouping%28%29.md) message in effect.
 

@@ -22,7 +22,7 @@ var userPassword: LAEnvironment.MechanismUserPassword? { get }
 @property (nonatomic, readonly, nullable) LAEnvironmentMechanismUserPassword * userPassword;
 ```
 
-#### Discussion
+## Discussion
 
 Information about local user password (on macOS) or passcode (on embedded platforms).
 

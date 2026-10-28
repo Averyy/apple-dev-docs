@@ -22,7 +22,7 @@ A type to support dynamic member lookup of attributes and containers.
 @frozen enum AttributeDynamicLookup
 ```
 
-#### Overview
+## Overview
 
 This type allows attribute owners to add extensions that enable dynamic member lookup access to attributes. Supporting types — including [`AttributedString`](./attributedstring.md), [`AttributedSubstring`](./attributedsubstring.md), and [`AttributeContainer`](./attributecontainer.md) — gain dynamic lookup support by extending this type.
 

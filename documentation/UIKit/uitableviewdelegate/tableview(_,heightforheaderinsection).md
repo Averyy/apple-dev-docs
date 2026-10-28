@@ -27,11 +27,11 @@ optional func tableView(_ tableView: UITableView, heightForHeaderInSection secti
 
 - [Adding headers and footers to table sections](../adding-headers-and-footers-to-table-sections.md)
 
-#### Return Value
+## Return Value
 
 A nonnegative floating-point value that specifies the height (in points) of the header for `section`.
 
-#### Discussion
+## Discussion
 
 Use this method to specify the height of custom header views returned by your [`tableView(_:viewForHeaderInSection:)`](./tableview%28_,viewforheaderinsection%29.md) method.
 

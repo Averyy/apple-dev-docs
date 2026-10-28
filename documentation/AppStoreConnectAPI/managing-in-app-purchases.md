@@ -5,11 +5,11 @@
 
 Create In-App Purchases, configure their metadata and pricing, submit them for review, and promote them with the App Store Connect API.
 
-#### Overview
+## Overview
 
 The App Store Connect API lets you create and configure In-App Purchases for your app. After you create an In-App Purchase, you can add metadata, such as a display name and description, and choose your In-App Purchase pricing. After your app is fully configured, you’re able to submit your In-App Purchase for review. After approval, you can also schedule pricing changes and edit some metadata for your In-App Purchases.
 
-##### Review App Store Connect API usage
+### Review App Store Connect API usage
 
 To manage In-App Purchases with the App Store Connect API, you need to understand key concepts for using the API. If you’re new to using the App Store Connect API, make sure to read the documentation in the Essentials section of [Schedule price changes](https://developer.apple.com/help/app-store-connect/manage-in-app-purchases/schedule-price-changes) and learn how to create API keys, generate JWTs, identify rate limits, and more.
 
@@ -21,7 +21,7 @@ To create and manage In-App Purchases, be sure you have one of the following use
 
 For the full list of App Store Connect user roles, see [`UserRole`](./userrole.md) and [Program Roles](https://developer.apple.com/support/roles).
 
-##### Create your In-App Purchase
+### Create your In-App Purchase
 
 To create an In-App Purchase, use `POST /v2/inAppPurchases` ([`Create an In-App Purchase`](./post-v2-inapppurchases.md)) with a payload that contains the required information, including an internal name, a product ID, the In-App Purchase type, and a review note. Additionally, supply the Apple ID of the app that contains this In-App Purchase.
 
@@ -79,7 +79,7 @@ Editing an In-App Purchase is similar, but you use `PATCH /v2/inAppPurchases/{id
 
 > **Note**:  The `familySharable` field is editable only for auto-renewable subscriptions and non-consumable In-App Purchases.
 
-##### Localize metadata for your In-App Purchase
+### Localize metadata for your In-App Purchase
 
 Localized display names and descriptions live on an *In-App Purchase version* — a draft container for the metadata and review images that go through App Review together. Create a version first, then attach localizations to it. The pre-4.4.1 workflow that posts localizations directly to the In-App Purchase (`POST /v1/inAppPurchaseLocalizations`) is deprecated as of 4.4.1 but remains available for existing integrations. For guidance on moving to the version-based workflow, see [Migrating In-App Purchase metadata to v2](./migrating-in-app-purchase-metadata-to-v2.md).
 
@@ -141,7 +141,7 @@ Add a localization by calling `POST /v2/inAppPurchaseLocalizations` ([`Create an
 
 To read all localizations attached to a version, use `GET /v1/inAppPurchaseVersions/{id}/localizations` ([`List localizations for an In-App Purchase version`](./get-v1-inapppurchaseversions-_id_-localizations.md)). To list every version on the parent In-App Purchase, use `GET /v2/inAppPurchases/{id}/versions` ([`List the versions of an In-App Purchase`](./get-v2-inapppurchases-_id_-versions.md)). For the full version lifecycle, see [Working with In-App Purchase versions](./working-with-in-app-purchase-versions.md).
 
-##### Manage pricing for your In-App Purchase
+### Manage pricing for your In-App Purchase
 
 To set a price point for your In-App Purchase, look up the `id` of the price point you want to assign to the In-App Purchase. The following example uses the price point `4.99`.
 
@@ -255,7 +255,7 @@ Here’s an example payload:
 }
 ```
 
-##### Submit your In-App Purchase
+### Submit your In-App Purchase
 
 After you configure an In-App Purchase and populate its version with localizations, submit it for App Review. The first step is to upload a screenshot to show what the In-App Purchase looks like to people.
 
@@ -337,7 +337,7 @@ The version’s state transitions from `PREPARE_FOR_SUBMISSION` to `READY_FOR_RE
 
 The `POST /v1/inAppPurchaseSubmissions` ([`Create a review submission for an In-App Purchase`](./post-v1-inapppurchasesubmissions.md)) endpoint is deprecated as of 4.4.1. Existing integrations that submit an In-App Purchase directly by its `id` continue to work, but new integrations use the review submissions workflow described above. For guidance on moving to the version-based workflow, see [Migrating In-App Purchase metadata to v2](./migrating-in-app-purchase-metadata-to-v2.md).
 
-##### Promote your In-App Purchase
+### Promote your In-App Purchase
 
 After your In-App Purchase gets approved, you can promote it to people who visit your app listing in the App Store. To accomplish this task, use `POST /v1/promotedPurchases` ([`Promote a purchase`](./post-v1-promotedpurchases.md)) with a payload that includes your Apple ID and the ID for your In-App Purchase. The response confirms the state is `"Waiting for Review"`. You can also look up the state of a specific promoted purchase by using `GET /v2/inAppPurchases/{id}/promotedPurchase` ([`Read promoted purchase information for an In-App Purchase`](./get-v2-inapppurchases-_id_-promotedpurchase.md)), or look up the status of all your promoted purchases by using `GET /v1/apps/{id}/promotedPurchases` ([`List all promoted purchases for an app`](./get-v1-apps-_id_-promotedpurchases.md)).
 
@@ -371,7 +371,7 @@ Here’s an example payload:
 
 Promoted purchase images are icons that are displayed in an App Store listing next to promoted purchase metadata. Each promoted purchase has a single image associated and displayed next to the name of the promoted purchase. The upload process is similar to the App Review screenshot process, but with the `/v1/promotedPurchaseImages` endpoint. Use the same `POST`, `PUT`, `PATCH`, and `GET` steps. For more information, see [Uploading Assets to App Store Connect](./uploading-assets-to-app-store-connect.md).
 
-##### Update In-App Purchase prices
+### Update In-App Purchase prices
 
 At some point, you might want to change the price of your In-App Purchase. Use one of these two methods:
 

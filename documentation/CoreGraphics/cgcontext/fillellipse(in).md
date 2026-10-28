@@ -25,7 +25,7 @@ func fillEllipse(in rect: CGRect)
 extern void CGContextFillEllipseInRect(CGContextRef c, CGRect rect);
 ```
 
-#### Discussion
+## Discussion
 
 The current path is cleared as a side effect of calling this function.
 

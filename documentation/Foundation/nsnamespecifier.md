@@ -20,7 +20,7 @@ class NSNameSpecifier
 @interface NSNameSpecifier : NSScriptObjectSpecifier
 ```
 
-#### Overview
+## Overview
 
 As an example, the following script specifies both an application and a window by name. In this script, the named window’s implicitly specified container is the Finder application’s list of open windows.
 

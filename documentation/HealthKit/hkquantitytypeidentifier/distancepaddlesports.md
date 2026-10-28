@@ -24,7 +24,7 @@ static let distancePaddleSports: HKQuantityTypeIdentifier
 extern HKQuantityTypeIdentifier const HKQuantityTypeIdentifierDistancePaddleSports;
 ```
 
-#### Discussion
+## Discussion
 
 These samples use length units (described in [`HKUnit`](../hkunit.md)) and measure cumulative values (described in [`HKQuantityAggregationStyle`](../hkquantityaggregationstyle.md)). During outdoor paddling sports workouts, the system automatically collects distance samples on Apple Watch.
 

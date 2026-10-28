@@ -27,7 +27,7 @@ func cancelRequest(withError error: any Error)
 
 - [Adding Actions to the Context Menu](../adding-actions-to-the-context-menu.md)
 
-#### Discussion
+## Discussion
 
 Call this method if the action fails. Set the error’s domain to [`FPUIErrorDomain`](../fpuierrordomain.md). Set the error code to a [`FPUIExtensionErrorCode`](../fpuiextensionerrorcode.md) value.
 

@@ -23,7 +23,7 @@ func performAction(for tab: (any WKWebExtensionTab)?)
 - (void) performActionForTab:(id<WKWebExtensionTab>) tab;
 ```
 
-#### Discussion
+## Discussion
 
 Performing the action will mark the tab, if specified, as having an active user gesture. When the `tab` parameter is `nil`, the default action is performed. The action can either trigger an event or display a popup, depending on how the extension is configured.
 

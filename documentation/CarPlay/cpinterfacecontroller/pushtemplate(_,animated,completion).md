@@ -25,7 +25,7 @@ func pushTemplate(_ templateToPush: CPTemplate, animated: Bool) async throws -> 
 - (void) pushTemplate:(CPTemplate *) templateToPush animated:(BOOL) animated completion:(void (^)(BOOL success, NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
 >

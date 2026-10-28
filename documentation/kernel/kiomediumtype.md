@@ -15,7 +15,7 @@ A property of IONetworkMedium objects.
 #define kIOMediumType
 ```
 
-#### Discussion
+## Discussion
 
 The kIOMediumType property is an OSNumber object that describes the type of medium that this object represents.
 

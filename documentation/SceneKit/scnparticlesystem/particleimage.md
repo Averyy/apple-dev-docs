@@ -25,13 +25,13 @@ var particleImage: Any? { get set }
 @property (nonatomic, retain, nullable) id particleImage;
 ```
 
-#### Discussion
+## Discussion
 
 Texture images help to determine visual effect rendered by the particle system. The [`particleColor`](./particlecolor.md) property colorizes the image before rendering. You may specify an image using an [`NSImage`](../../AppKit/nsimage.md) (in macOS) or [`UIImage`](../../UIKit/uiimage.md) (in iOS) instance, or an [`NSString`](../../Foundation/nsstring.md) or [`NSURL`](../../Foundation/nsurl.md) instance containing the path or URL to an image file.
 
 If the value is `nil` (the default), SceneKit renders each particle as a small white square (colorized by the [`particleColor`](./particlecolor.md) property).
 
-To specify a sequence of frames for animating each particle, arrange the frames as a grid in a single image, as shown in [Figure 1](./api-1524153-particleimage.md#1965925), then use the properties listed in Animating Particle Images to identify frames in the grid and set the speed and style of the animation.
+To specify a sequence of frames for animating each particle, arrange the frames as a grid in a single image, as shown in [Figure 1](./particleimage.md#1965925), then use the properties listed in Animating Particle Images to identify frames in the grid and set the speed and style of the animation.
 
 ![](https://developer.apple.com/tutorials/images/com.apple.scenekit/media-1965925@2x.png)
 

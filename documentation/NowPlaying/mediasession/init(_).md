@@ -22,7 +22,7 @@ Creates a new local Now Playing session.
 init(_ representable: Representable)
 ```
 
-#### Discussion
+## Discussion
 
 The session automatically observes the representable and syncs metadata, commands, and playback state to the system.
 

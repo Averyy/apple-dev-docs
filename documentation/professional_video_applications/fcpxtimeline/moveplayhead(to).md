@@ -23,11 +23,11 @@ func movePlayhead(to newTime: CMTime) -> CMTime
 
 - [Interacting with the Final Cut Pro Timeline](../../Professional-Video-Applications/interacting-with-the-final-cut-pro-timeline.md)
 
-#### Return Value
+## Return Value
 
 The new playhead position in the Final Cut Pro timeline.
 
-#### Discussion
+## Discussion
 
 Workflow extensions can use this method to move the playhead to a new location in the Final Cut Pro timeline. The movement of the playhead is limited to the valid time range of the current timeline sequence. Use the [`sequenceTimeRange`](./sequencetimerange.md) property to find the time range of a sequence in the Final Cut Pro timeline.
 

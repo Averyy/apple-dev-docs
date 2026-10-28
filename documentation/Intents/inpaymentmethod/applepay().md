@@ -24,7 +24,7 @@ class func applePay() -> Self
 + (instancetype) applePayPaymentMethod;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to obtain a payment method object for Apple Pay.
 

@@ -15,11 +15,11 @@ Retrieves the frame’s drawable, which contains the textures and drawing enviro
 func queryDrawable() -> LayerRenderer.Drawable?
 ```
 
-#### Return Value
+## Return Value
 
 The drawable type, or `nil` if the layer is in the [`LayerRenderer.State.paused`](../state-swift.enum/paused.md) or [`LayerRenderer.State.invalidated`](../state-swift.enum/invalidated.md) state.
 
-#### Discussion
+## Discussion
 
 Fetch the drawable when you’re ready to encode the drawing commands for the frame. The [`LayerRenderer.Drawable`](../drawable.md) type contains the textures and other information you need to set up your render descriptor in Metal.
 

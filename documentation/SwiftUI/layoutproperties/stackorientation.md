@@ -21,7 +21,7 @@ The orientation of the containing stack-like container.
 var stackOrientation: Axis?
 ```
 
-#### Discussion
+## Discussion
 
 Certain views alter their behavior based on the stack orientation of the container that they appear in. For example, [`Spacer`](../spacer.md) and [`Divider`](../divider.md) align their major axis to match that of their container.
 

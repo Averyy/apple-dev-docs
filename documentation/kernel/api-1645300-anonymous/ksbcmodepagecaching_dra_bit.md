@@ -13,7 +13,7 @@
 kSBCModePageCaching_DRA_Bit = 5
 ```
 
-#### Discussion
+## Discussion
 
 DRA Bit definition.
 

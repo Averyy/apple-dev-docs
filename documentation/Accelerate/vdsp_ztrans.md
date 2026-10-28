@@ -21,7 +21,7 @@ Divides a complex single-precision vector by a real single-precision vector.
 extern void vDSP_ztrans(const float *__A, const DSPSplitComplex *__B, const DSPSplitComplex *__C, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This function calculates the first `N` elements of `A` divided by the corresponding element in `B`, writing the result to `C`:
 

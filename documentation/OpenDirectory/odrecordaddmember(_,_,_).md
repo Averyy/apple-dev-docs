@@ -20,11 +20,11 @@ func ODRecordAddMember(_ group: ODRecordRef!, _ member: ODRecordRef!, _ error: U
 extern bool ODRecordAddMember(ODRecordRef group, ODRecordRef member, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the record is successfully added; `false` otherwise.
 
-#### Discussion
+## Discussion
 
 Returns an error if `inGroup` is not a group record or if `inMember` is not of a type allowed in a group record.
 

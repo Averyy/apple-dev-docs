@@ -20,7 +20,7 @@ func contentsRect(for overlayView: ImageAnalysisOverlayView) -> CGRect
 
 - [Enabling Live Text interactions with images](../enabling-live-text-interactions-with-images.md)
 
-#### Return Value
+## Return Value
 
 The unit rectangle `[0.0, 0.0, 1.0, 1.0]`.
 

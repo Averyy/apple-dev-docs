@@ -16,17 +16,17 @@ OSStatus PMSessionGetDocumentFormatGeneration (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../core_printing.md#1670007).
 
-#### Overview
+## Overview
 
 You must call the function `PMSessionGetDocumentFormatGeneration` between the creation and release of a printing session. See the function [`PMCreateSession`](../api-1463247-pmcreatesession.md). You should call `PMSessionGetDocumentFormatGeneration` only after the Print dialog is dismissed. 
 
 The function `PMSessionGetDocumentFormatGeneration` determines the spool file formats that the specific print job supports. Spool file formats are represented by MIME types. The macOS print spooler supports PDF and PICT + PS. The default spool file format is PDF. PICT + PS is supported only for printing to a PostScript printer.
 
-##### Special Considerations
+### Special Considerations
 
 The PICT + PS spool file format is not available on Intel-based systems.
 

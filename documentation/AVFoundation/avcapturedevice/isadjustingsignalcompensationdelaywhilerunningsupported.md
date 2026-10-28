@@ -23,7 +23,7 @@ var isAdjustingSignalCompensationDelayWhileRunningSupported: Bool { get }
 @property (nonatomic, readonly, getter=isAdjustingSignalCompensationDelayWhileRunningSupported) BOOL adjustingSignalCompensationDelayWhileRunningSupported;
 ```
 
-#### Discussion
+## Discussion
 
 This property returns `true` if the `signalCompensationDelay` of an [`AVExternalSyncDevice`](../avexternalsyncdevice.md) being followed by this device’s [`AVCaptureDeviceInput`](../avcapturedeviceinput.md) can be adjusted while the [`AVCaptureSession`](../avcapturesession.md) is running.
 

@@ -20,7 +20,7 @@ Returns a new MLUntypedColumn containing values sorted by the specified order.
 func sort(byIncreasingOrder: Bool = true) -> MLUntypedColumn
 ```
 
-#### Return Value
+## Return Value
 
 A MLUntypedColumn sorted by the specified order.
 

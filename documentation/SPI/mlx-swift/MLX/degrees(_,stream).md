@@ -17,7 +17,7 @@ Convert angles from radians to degrees.
 func degrees(_ array: MLXArray, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-##### See Also
+### See Also
 
 - [Arithmetic](./arithmetic.md)
 - [`radians(_:stream:)`](./radians%28_,stream%29.md)

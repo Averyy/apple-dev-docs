@@ -23,7 +23,7 @@ var kDNSServiceFlagsDefault: UInt32 { get }
 kDNSServiceFlagsDefault
 ```
 
-#### Discussion
+## Discussion
 
 Indicates that this domain should be selected by default. Applies only to enumeration and is only valid in conjunction with “Add”.
 

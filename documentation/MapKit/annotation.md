@@ -22,7 +22,7 @@ A customizable annotation used to indicate a location on a map.
 @preconcurrency struct Annotation<Label, Content> where Label : View, Content : View
 ```
 
-#### Overview
+## Overview
 
 Use this view to annotations in the closure you provide to the `content` parameter in the [`Map`](./map.md) initializers.
 

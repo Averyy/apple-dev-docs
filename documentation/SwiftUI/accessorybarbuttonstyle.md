@@ -16,7 +16,7 @@ nonisolated
 struct AccessoryBarButtonStyle
 ```
 
-#### Overview
+## Overview
 
 This is the default button style for views in accessory toolbars, which you create with [`init(id:)`](./toolbaritemplacement/init%28id%29.md), and for searchable scopes. This style also affects other view types that you apply a button style to, like [`Toggle`](./toggle.md), [`Picker`](./picker.md), and [`Menu`](./menu.md) instances.
 

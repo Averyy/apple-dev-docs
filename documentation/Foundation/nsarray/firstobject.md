@@ -25,7 +25,7 @@ var firstObject: Any? { get }
 @property (nonatomic, readonly, nullable) ObjectType firstObject;
 ```
 
-#### Discussion
+## Discussion
 
 If the array is empty, returns `nil`.
 

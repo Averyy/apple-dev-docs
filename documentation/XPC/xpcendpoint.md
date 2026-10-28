@@ -16,7 +16,7 @@ A connection in serialized form.
 struct XPCEndpoint
 ```
 
-#### Overview
+## Overview
 
 An `XPCEndpoint` can be passed around in an XPC message. The recipient of `XPCEndpoint` can use [`init(endpoint:targetQueue:options:cancellationHandler:)`](./xpcsession/init%28endpoint,targetqueue,options,cancellationhandler%29.md) to create as many distinct sessions as desired.
 

@@ -22,7 +22,7 @@ nonisolated
 func sensoryFeedback<T>(_ feedback: SensoryFeedback, trigger: T) -> some View where T : Equatable
 ```
 
-#### Discussion
+## Discussion
 
 For example, you could play feedback when a state value changes:
 

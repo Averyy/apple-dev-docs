@@ -27,7 +27,7 @@ func draw(_ image: GraphicsContext.ResolvedImage, in rect: CGRect, style: FillSt
 func draw(_ image: Image, in rect: CGRect, style: FillStyle = FillStyle())
 ```
 
-#### Discussion
+## Discussion
 
 The current context state defines the full drawing operation. For example, the current transformation and clip shapes affect how SwiftUI draws the image.
 

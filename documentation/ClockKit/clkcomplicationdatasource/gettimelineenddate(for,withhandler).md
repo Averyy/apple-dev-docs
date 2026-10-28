@@ -30,7 +30,7 @@ optional func timelineEndDate(for complication: CLKComplication) async -> Date?
 - [Loading future timeline events](../loading-future-timeline-events.md)
 - [Sharing an Apple Watch face](../sharing-an-apple-watch-face.md)
 
-#### Discussion
+## Discussion
 
 Your implementation of this method must execute the block in the handler parameter and specify the date. If your application can’t provide future timeline entries, specify the current date.
 

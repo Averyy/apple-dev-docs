@@ -20,11 +20,11 @@ func fileOutputShouldProvideSampleAccurateRecordingStart(_ output: AVCaptureFile
 - (BOOL) captureOutputShouldProvideSampleAccurateRecordingStart:(AVCaptureOutput *) output;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if frame accurate recording is required; otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 In apps linked before OS X Mountain Lion, delegates that implement the [`fileOutput(_:didOutputSampleBuffer:from:)`](./fileoutput%28_,didoutputsamplebuffer,from%29.md) method can ensure that starting and stopping a recording is frame accurate by calling [`startRecording(to:recordingDelegate:)`](../avcapturefileoutput/startrecording%28to,recordingdelegate%29.md) or [`stopRecording()`](../avcapturefileoutput/stoprecording%28%29.md) from within the callback. Frame accurate recording requires the capture output to apply outputSettings when the session starts running, so it is ready to start and/or stop recording on any given frame boundary. Applying compression settings for the entire length of the session has power, thermal, and CPU implications.
 

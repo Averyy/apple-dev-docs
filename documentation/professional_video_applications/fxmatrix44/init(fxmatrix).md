@@ -19,7 +19,7 @@ init!(fxMatrix newFxMatrix: FxMatrix44!)
 - (id) initWithFxMatrix:(FxMatrix44 *) newFxMatrix;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized matrix object or `nil` if the object couldn’t be created.
 

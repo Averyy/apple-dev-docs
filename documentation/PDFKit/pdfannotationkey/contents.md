@@ -24,7 +24,7 @@ static let contents: PDFAnnotationKey
 extern PDFAnnotationKey PDFAnnotationKeyContents;
 ```
 
-#### Discussion
+## Discussion
 
 If the annotation doesn’t display text, the annotation uses it as an alternative human-readable form. For example, VoiceOver speaks the text for the annotation.
 

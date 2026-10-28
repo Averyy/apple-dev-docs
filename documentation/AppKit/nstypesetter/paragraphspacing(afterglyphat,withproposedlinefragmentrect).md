@@ -19,11 +19,11 @@ func paragraphSpacing(afterGlyphAt glyphIndex: Int, withProposedLineFragmentRect
 - (CGFloat) paragraphSpacingAfterGlyphAtIndex:(NSUInteger) glyphIndex withProposedLineFragmentRect:(NSRect) rect;
 ```
 
-#### Return Value
+## Return Value
 
 The paragraph spacing—that is, the number of points of space added following a paragraph—that is in effect after the glyph specified by `glyphIndex`.
 
-#### Discussion
+## Discussion
 
 The typesetter adds the number of points specified in the return value to the bottom of the line fragment rectangle specified by `rect` (but not to the used line fragment rectangle for that line). Paragraph spacing added after a paragraph correlates to the value returned by the [`paragraphSpacing`](../nsparagraphstyle/paragraphspacing.md) method of [`NSParagraphStyle`](../nsparagraphstyle.md), which you can set using the [`paragraphSpacing`](../nsparagraphstyle/paragraphspacing.md) method of [`NSMutableParagraphStyle`](../nsmutableparagraphstyle.md).
 

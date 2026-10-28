@@ -20,7 +20,7 @@ var right: es_tcc_authorization_right_t
 es_tcc_authorization_right_t right;
 ```
 
-#### Discussion
+## Discussion
 
 Represents the type of authorization permission an application has to a TCC Service.
 

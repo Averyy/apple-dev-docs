@@ -23,7 +23,7 @@ var isAdjustingExposure: Bool { get }
 @property (nonatomic, readonly, getter=isAdjustingExposure) BOOL adjustingExposure;
 ```
 
-#### Discussion
+## Discussion
 
 This property is key-value observable.
 

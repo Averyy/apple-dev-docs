@@ -25,7 +25,7 @@ let kCMMemoryPoolOption_AgeOutPeriod: CFString
 extern CFStringRef const kCMMemoryPoolOption_AgeOutPeriod;
 ```
 
-#### Discussion
+## Discussion
 
 Pass a value for this option to the [`CMMemoryPoolCreate(options:)`](./cmmemorypoolcreate%28options%29.md) function.
 

@@ -20,7 +20,7 @@ optional func collectionView(_ collectionView: NSCollectionView, didEndDisplayin
 - (void) collectionView:(NSCollectionView *) collectionView didEndDisplayingItem:(NSCollectionViewItem *) item forRepresentedObjectAtIndexPath:(NSIndexPath *) indexPath;
 ```
 
-#### Discussion
+## Discussion
 
 The collection view calls this method after removing an item from its content. You can use this method to track the removal of items and perform related tasks.
 

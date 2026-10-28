@@ -19,11 +19,11 @@ class var pathComponentCellClass: AnyClass { get }
 @property (class, readonly) Class pathComponentCellClass;
 ```
 
-#### Return Value
+## Return Value
 
 The class used to create `NSPathComponentCell` objects.
 
-#### Discussion
+## Discussion
 
 Subclasses can override this method to return a custom cell class that is automatically used. By default, the method returns `[NSPathComponentCell class]`, or a specialized subclass thereof.
 

@@ -21,11 +21,11 @@ Returns an empty `NSMutableString` object with initial storage for a given numbe
 + (NSMutableString *) stringWithCapacity:(NSUInteger) capacity;
 ```
 
-#### Return Value
+## Return Value
 
 An empty `NSMutableString` object with initial storage for `capacity` characters.
 
-#### Discussion
+## Discussion
 
 The number of characters indicated by `capacity` is simply a hint to increase the efficiency of data storage. The value does *not* limit the length of the string.
 

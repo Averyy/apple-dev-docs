@@ -19,7 +19,7 @@ enum TypesetterBehavior
 enum NSTypesetterBehavior : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 These constants define the behavior of `NSLayoutManager` and `NSTypesetter` when laying out lines. They are used by [`typesetterBehavior`](./typesetterbehavior-swift.property.md) to control the compatibility level of the typesetter.
 

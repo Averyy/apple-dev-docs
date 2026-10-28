@@ -23,7 +23,7 @@ func ignoreSnapshotOnNextApplicationLaunch()
 - (void) ignoreSnapshotOnNextApplicationLaunch;
 ```
 
-#### Discussion
+## Discussion
 
 As part of the state preservation process, UIKit captures your app’s user interface and stores it in an image file. When your app is relaunched, the system displays this snapshot image in place of your app’s default launch image to preserve the notion that your app was still running. If you feel that the snapshot cannot correctly reflect your app’s user interface when your app is relaunched, call this method to let UIKit know that it should use your app’s default launch image instead of the snapshot.
 

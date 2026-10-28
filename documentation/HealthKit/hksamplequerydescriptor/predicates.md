@@ -20,7 +20,7 @@ An array of sample predicates that define the type of data that the query return
 var predicates: [HKSamplePredicate<Sample>] { get set }
 ```
 
-#### Discussion
+## Discussion
 
 To query for multiple types of data, provide a sample predicate for each type. If your [`HKSamplePredicate`](../hksamplepredicate.md) instances return different [`HKSample`](../hksample.md) subclasses, use [`sample(type:predicate:)`](../hksamplepredicate/sample%28type,predicate%29.md) to create the sample predicates.
 

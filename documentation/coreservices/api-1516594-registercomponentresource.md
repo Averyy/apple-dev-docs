@@ -15,11 +15,11 @@ Registers a component stored in a resource file.
 Component RegisterComponentResource(ComponentResourceHandle cr, SInt16 global);
 ```
 
-#### Return Value
+## Return Value
 
 The unique component identifier assigned to the component by the Component Manager, or `NULL `if the function could not register the component. See the description of the `Component` data type.
 
-#### Discussion
+## Discussion
 
 Before a component can be used by an application, the component must be registered with the Component Manager. Applications can then find and open the component using the standard Component Manager functions. 
 

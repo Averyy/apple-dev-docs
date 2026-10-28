@@ -18,7 +18,7 @@ Creates a context targeting the specified Metal device.
 init(_ device: any MTLDevice) throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: If the context cannot be initialized for the given device.
 

@@ -25,7 +25,7 @@ func CFPreferencesSetAppValue(_ key: CFString, _ value: CFPropertyList?, _ appli
 extern void CFPreferencesSetAppValue(CFStringRef key, CFPropertyListRef value, CFStringRef applicationID);
 ```
 
-#### Discussion
+## Discussion
 
 New preference values are stored in the standard application preference location, `~/Library/Preferences/`. When called with [`kCFPreferencesCurrentApplication`](./kcfpreferencescurrentapplication.md), modifications are performed in the preference domain “Current User, Current Application, Any Host.” If you need to create preferences in some other domain, use the low-level function [`CFPreferencesSetValue(_:_:_:_:_:)`](./cfpreferencessetvalue%28_,_,_,_,_%29.md).
 

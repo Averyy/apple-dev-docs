@@ -30,7 +30,7 @@ func evaluate(inputs: [MLMultiArray], outputs: [MLMultiArray]) throws
 
 - [Creating and Integrating a Model with Custom Layers](../creating-and-integrating-a-model-with-custom-layers.md)
 
-#### Discussion
+## Discussion
 
 Implement this method to evaluate the inputs using your layer’s custom behavior and to populate the output arrays. It will be called for each evaluation of your model performed on the CPU.
 

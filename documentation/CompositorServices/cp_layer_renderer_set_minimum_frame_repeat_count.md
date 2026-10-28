@@ -16,7 +16,7 @@ Sets the number of additional times the system displays a frame.
 void cp_layer_renderer_set_minimum_frame_repeat_count(cp_layer_renderer_t layer_renderer, int frame_repeat_count);
 ```
 
-#### Discussion
+## Discussion
 
 Use this value to specify the pacing of your drawing operations. A higher repeat count increases the amount of time you have to render each frame and decreases the amount of power your app uses to display that frame. However, higher repeat counts mean your content updates less frequently, so increase the value only if it is appropriate for your content.
 

@@ -16,7 +16,7 @@ The payment capabilities the merchant supports.
 enum ApplePayMerchantCapability
 ```
 
-#### Overview
+## Overview
 
 Values for merchant capability are:
 

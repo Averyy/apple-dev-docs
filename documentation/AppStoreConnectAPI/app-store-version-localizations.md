@@ -5,7 +5,7 @@
 
 Create and maintain version-specific App Store metadata that’s localized.
 
-#### Overview
+## Overview
 
 Use `appStoreVersionLocalizations` to create and maintain your App Store metadata in different languages. This resource includes the following attributes:
 

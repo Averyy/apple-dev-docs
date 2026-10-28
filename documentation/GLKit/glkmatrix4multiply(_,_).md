@@ -22,7 +22,7 @@ func GLKMatrix4Multiply(_ matrixLeft: GLKMatrix4, _ matrixRight: GLKMatrix4) -> 
 static GLKMatrix4 GLKMatrix4Multiply(GLKMatrix4 matrixLeft, GLKMatrix4 matrixRight);
 ```
 
-#### Return Value
+## Return Value
 
 A new matrix created by multiplying the two matrices together.
 

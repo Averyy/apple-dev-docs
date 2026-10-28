@@ -25,11 +25,11 @@ func CFBundleGetInfoDictionary(_ bundle: CFBundle!) -> CFDictionary!
 extern CFDictionaryRefCFBundleGetInfoDictionary(CFBundleRef bundle);
 ```
 
-#### Return Value
+## Return Value
 
 A CFDictionary object containing the data stored in the bundle’s information property list (the `Info.plist` file). This is a global information dictionary. CFBundle may add extra keys to this dictionary for its own use. Ownership follows the [The Get Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-SW1).
 
-#### Discussion
+## Discussion
 
 You should typically use [`CFBundleGetValueForInfoDictionaryKey(_:_:)`](./cfbundlegetvalueforinfodictionarykey%28_,_%29.md) rather than retrieving values directly from the info dictionary because the function will return localized values if any are available. Use `CFBundleGetInfoDictionary` only if you know that the key you are interested in will not be localized.
 

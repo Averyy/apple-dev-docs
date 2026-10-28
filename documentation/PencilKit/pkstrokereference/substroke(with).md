@@ -23,11 +23,11 @@ func substroke(with range: __PKFloatRange) -> PKStroke
 - (PKStroke *) substrokeWithRange:(PKFloatRange *) range;
 ```
 
-#### Return Value
+## Return Value
 
 A new stroke containing only the control points within the specified range.
 
-#### Discussion
+## Discussion
 
 Maintains rendering information so the returned substroke renders the same as the corresponding portion of the receiver. The returned stroke may have a `renderState` set to maintain this information.
 

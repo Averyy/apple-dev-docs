@@ -23,7 +23,7 @@ func removeKeyCommand(_ keyCommand: UIKeyCommand)
 - (void) removeKeyCommand:(UIKeyCommand *) keyCommand;
 ```
 
-#### Discussion
+## Discussion
 
 This method lets you easily remove key commands without overriding the [`keyCommands`](../uiresponder/keycommands.md) property.
 

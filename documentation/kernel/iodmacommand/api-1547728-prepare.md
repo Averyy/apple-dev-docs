@@ -15,11 +15,11 @@ Prepare the memory for an I/O transfer.
 virtual IOReturn prepare(UInt64 offset, UInt64 length, bool flushCache, bool synchronize);
 ```
 
-#### Return Value
+## Return Value
 
 An IOReturn code.
 
-#### Discussion
+## Discussion
 
 Allocate the mapping resources neccessary for this transfer, specifying a sub range of the IOMemoryDescriptor that will be the target of the I/O. The complete() method frees these resources. Data may be copied to buffers for kIODirectionOut memory descriptors, depending on hardware mapping resource availabilty or alignment restrictions. It should be noted that the this function may block and should only be called on the clients context, i.e never call this routine while gated; also the call itself is not thread safe though this should be an issue as each IODMACommand is independant.
 

@@ -12,7 +12,7 @@ Key to retrieve the group’s persistent ID.
 extern NSString * const ALAssetsGroupPropertyPersistentID;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is an `NSString` object.
 

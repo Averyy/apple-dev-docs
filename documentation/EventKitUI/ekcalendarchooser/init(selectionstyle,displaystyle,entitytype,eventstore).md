@@ -22,7 +22,7 @@ init(selectionStyle style: EKCalendarChooserSelectionStyle, displayStyle: EKCale
 - (id) initWithSelectionStyle:(EKCalendarChooserSelectionStyle) style displayStyle:(EKCalendarChooserDisplayStyle) displayStyle entityType:(EKEntityType) entityType eventStore:(EKEventStore *) eventStore;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized calendar chooser.
 

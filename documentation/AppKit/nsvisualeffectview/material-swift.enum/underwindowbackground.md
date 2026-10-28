@@ -19,7 +19,7 @@ case underWindowBackground
 NSVisualEffectMaterialUnderWindowBackground
 ```
 
-#### Discussion
+## Discussion
 
 Use this material on a visual effect view with a [`blendingMode`](../blendingmode-swift.property.md) of [`NSVisualEffectView.BlendingMode.behindWindow`](../blendingmode-swift.enum/behindwindow.md) to create a sense of peeking through the back of the window. This effect creates an illusion that the background of the window has peeled away to reveal what’s under it.
 

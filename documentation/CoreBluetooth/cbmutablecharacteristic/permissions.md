@@ -25,7 +25,7 @@ var permissions: CBAttributePermissions { get set }
 @property (nonatomic, assign, readwrite) CBAttributePermissions permissions;
 ```
 
-#### Discussion
+## Discussion
 
 Characteristic permissions represent the read, write, and encryption permissions for a characteristic’s value. For a complete list and discussion of the available characteristic permissions, see [`CBAttributePermissions`](../cbattributepermissions.md).
 

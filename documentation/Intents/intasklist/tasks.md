@@ -33,7 +33,7 @@ var tasks: [INTask] { get }
 @property (atomic, copy, readonly) NSArray<INTask *> * tasks;
 ```
 
-#### Discussion
+## Discussion
 
 A task list contains one or more [`INTask`](../intask.md) objects representing the individual tasks. Each task has its own descriptive information and trigger conditions.
 

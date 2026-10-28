@@ -12,7 +12,7 @@ Interact with package registry and manage related configuration.
 **Availability**:
 - Swift 5.9+
 
-#### Overview
+## Overview
 
 Overview of package manager commands here…
 

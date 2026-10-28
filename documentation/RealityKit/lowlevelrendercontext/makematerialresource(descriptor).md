@@ -22,8 +22,8 @@ func makeMaterialResource(descriptor: LowLevelMaterialResource.Descriptor) throw
 **Other overloads**:
 
 ```swift
-nonisolated
-(nonsending) func makeMaterialResource(descriptor: LowLevelMaterialResource.Descriptor) async throws -> sending LowLevelMaterialResource
+nonisolated(nonsending)
+func makeMaterialResource(descriptor: LowLevelMaterialResource.Descriptor) async throws -> sending LowLevelMaterialResource
 ```
 
 

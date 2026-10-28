@@ -5,7 +5,7 @@
 
 Manage vehicle door locks and get the vehicle’s status.
 
-#### Overview
+## Overview
 
 Users can lock or unlock the car’s doors and get other car-related information using Siri. Automotive vendors use their Intents app extension to validate the user’s request and communicate with the user’s registered vehicles.
 

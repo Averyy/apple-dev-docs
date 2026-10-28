@@ -23,7 +23,7 @@ A notice type that indicates that you display the destination in a web view or n
 case withinApp
 ```
 
-#### Discussion
+## Discussion
 
 After displaying a notice with this notice type using [`showNotice(type:)`](../shownotice%28type%29.md), if the customer chooses to continue, the app displays the destination in a web view or native experience within the app.
 

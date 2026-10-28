@@ -19,7 +19,7 @@ case deviceN
 NSColorSpaceModelDeviceN
 ```
 
-#### Discussion
+## Discussion
 
 This model is used in PostScript and PDF color specification.
 

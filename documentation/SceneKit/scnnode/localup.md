@@ -25,7 +25,7 @@ class var localUp: SCNVector3 { get }
 @property (class, nonatomic, readonly) SCNVector3 localUp;
 ```
 
-#### Discussion
+## Discussion
 
 The “up” direction of a node affects cameras attached to a node, as well as relative orientation and movement effects such as [`look(at:)`](./look%28at%29.md), [`SCNLookAtConstraint`](../scnlookatconstraint.md), and [`SCNBillboardConstraint`](../scnbillboardconstraint.md).
 

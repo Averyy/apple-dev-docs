@@ -21,7 +21,7 @@ Convert from one primitive MTLDataType to another.
 case convert(from: ComputeNodeGraph.DataType, to: ComputeNodeGraph.DataType)
 ```
 
-#### Discussion
+## Discussion
 
 Equivalent to calling Metal’s constructor of `to` with a value of type `from`
 

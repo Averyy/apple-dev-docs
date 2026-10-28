@@ -41,7 +41,7 @@ nonisolated init(_ titleResource: LocalizedStringResource, id: String, @ContentB
 nonisolated init<S>(_ title: S, id: String, @ContentBuilder makeContent: @escaping () -> Content) where S : StringProtocol
 ```
 
-#### Discussion
+## Discussion
 
 The window group uses the specified content as a template to create each window in the group. The system uses the title to distinguish the window group in the user interface, such as in the name of commands associated with the group.
 

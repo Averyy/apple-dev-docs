@@ -30,7 +30,7 @@ protocol GKTurnBasedEventListener
 - [Exchanging data between players in turn-based games](./exchanging-data-between-players-in-turn-based-games.md)
 - [Starting turn-based matches and passing turns between players](./starting-turn-based-matches-and-passing-turns-between-players.md)
 
-#### Overview
+## Overview
 
 To receive the `GKTurnBasedEventListener` call backs, register your game object with the local player object immediately after initialization.
 

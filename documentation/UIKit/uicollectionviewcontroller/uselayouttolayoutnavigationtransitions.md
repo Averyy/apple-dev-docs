@@ -23,7 +23,7 @@ var useLayoutToLayoutNavigationTransitions: Bool { get set }
 @property (nonatomic, assign) BOOL useLayoutToLayoutNavigationTransitions;
 ```
 
-#### Discussion
+## Discussion
 
 This property helps facilitate transitions between two or more collection view controllers using a navigation controller. When configuring your navigation controller, install a collection view controller as the root object on the navigation stack and set its value for this property to [`false`](../../Swift/false.md). When the user selects an item that would require pushing a new collection view controller on the stack, set the value of this property for the new view controller to [`true`](../../Swift/true.md). When you do that, the navigation controller performs an animated layout change between the contents of the two collection view controllers instead of the traditional push animation. Similarly, popping the topmost collection view controller off the stack animates back to the previous layout. The navigation controller drives the transition between the view controllers, including the ability to drive the transition interactively.
 

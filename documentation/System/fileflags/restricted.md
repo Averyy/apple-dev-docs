@@ -21,7 +21,7 @@ File requires an entitlement for writing.
 static var restricted: FileFlags { get }
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding C constant is `SF_RESTRICTED`.
 

@@ -24,11 +24,11 @@ class func edgePreserveUpsample() -> any CIFilter & CIEdgePreserveUpsample
 + (CIFilter<CIEdgePreserveUpsample> *) edgePreserveUpsampleFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The adjusted image.
 
-#### Discussion
+## Discussion
 
 This method applies the edge preserve upsample filter to an image. The effect upsamples a small input image to be the size of the scale image using the luminance of the input image to preserve detail.
 

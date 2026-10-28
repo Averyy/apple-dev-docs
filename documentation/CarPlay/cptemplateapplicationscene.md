@@ -21,7 +21,7 @@ class CPTemplateApplicationScene
 @interface CPTemplateApplicationScene : UIScene
 ```
 
-#### Overview
+## Overview
 
 A scene manages your app’s user interface, including the window that CarPlay displays from that scene. Only navigation apps have access to that window, and use it for drawing map content. All other categories of apps use the scene’s interface controller exclusively for constructing their user interfaces.
 

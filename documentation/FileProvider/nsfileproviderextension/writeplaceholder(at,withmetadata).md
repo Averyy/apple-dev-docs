@@ -24,7 +24,7 @@ class func writePlaceholder(at placeholderURL: URL, withMetadata metadata: [URLR
 + (BOOL) writePlaceholderAtURL:(NSURL *) placeholderURL withMetadata:(NSDictionary<NSString *,id> *) metadata error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method whenever you need to create a placeholder for a document. The metadata that you provide depends largely on the needs of your document picker’s user interface; however, the common options include file size, filename, and thumbnails.
 

@@ -19,11 +19,11 @@ func rulerView(_ ruler: NSRulerView, shouldMove marker: NSRulerMarker) -> Bool
 - (BOOL) rulerView:(NSRulerView *) ruler shouldMoveMarker:(NSRulerMarker *) marker;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if `aMarker` can be moved, [`false`](../../Swift/false.md) otherwise.
 
-#### Discussion
+## Discussion
 
 This method controls whether an existing marker `aMarker` can be moved. The receiver checks for permission to make the change by invoking [`shouldChangeText(in:replacementString:)`](./shouldchangetext%28in,replacementstring%29.md) and returning the return value of that message. If the change is allowed, the receiver is then sent a [`rulerView(_:didMove:)`](./rulerview%28_,didmove%29.md) message.
 

@@ -25,17 +25,17 @@ func sectionIndexTitle(forSectionName sectionName: String) -> String?
 - (NSString *) sectionIndexTitleForSectionName:(NSString *) sectionName;
 ```
 
-#### Return Value
+## Return Value
 
 The section index entry corresponding to the section with name `sectionName`.
 
-#### Discussion
+## Discussion
 
 The default implementation returns the capitalized first letter of the section name.
 
 You should override this method if you need a different way to convert from a section name to its name in the section index.
 
-##### Special Considerations
+### Special Considerations
 
 You only need this method if you use a section index.
 

@@ -23,7 +23,7 @@ var isRunning: Bool { get }
 @property (nonatomic, readonly, getter=isRunning) BOOL running;
 ```
 
-#### Discussion
+## Discussion
 
 The views associated with an animator’s behaviors can change position or change transform only when the animator is running. For optimization purposes, iOS can pause and then restart an animator. Use this method if you need to check whether or not your views are currently subject to changes in position or transform.
 

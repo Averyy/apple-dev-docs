@@ -16,7 +16,7 @@ The trial billing cycle for the recurring payment.
 ApplePayLineItem trialBilling;
 ```
 
-#### Discussion
+## Discussion
 
 The trial billing cycle is optional; use it if the recurring payment has a trial period.
 

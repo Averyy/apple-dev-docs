@@ -25,7 +25,7 @@ init?(url: URL, statusCode: Int, httpVersion HTTPVersion: String?, headerFields:
 - (instancetype) initWithURL:(NSURL *) url statusCode:(NSInteger) statusCode HTTPVersion:(NSString *) HTTPVersion headerFields:(NSDictionary<NSString *,NSString *> *) headerFields;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized [`HTTPURLResponse`](../httpurlresponse.md) object or `nil` if an error occurred during initialization.
 

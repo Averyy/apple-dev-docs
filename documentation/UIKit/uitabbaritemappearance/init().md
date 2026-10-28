@@ -23,7 +23,7 @@ convenience init()
 - (instancetype) init;
 ```
 
-#### Return Value
+## Return Value
 
 A new appearance object containing appropriate default values for a stacked tab bar item.
 

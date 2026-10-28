@@ -25,11 +25,11 @@ class UnitMass
 @interface NSUnitMass : NSDimension
 ```
 
-#### Overview
+## Overview
 
 You typically use instances of [`UnitMass`](./unitmass.md) to represent specific quantities of mass using the [`NSMeasurement`](./nsmeasurement.md) class.
 
-##### Mass
+### Mass
 
 Mass is a fundamental property of matter that causes it to resist a force accelerating it. The SI unit for mass is the kilogram (kg), which defined in terms of the mass of the international prototype kilogram.
 

@@ -19,7 +19,7 @@ func SCVLANInterfaceGetOptions(_ vlan: SCVLANInterface) -> CFDictionary?
 CFDictionaryRefSCVLANInterfaceGetOptions(SCVLANInterfaceRef vlan);
 ```
 
-#### Return Value
+## Return Value
 
 The configuration settings associated with the VLAN interface, or `NULL` if no changes to the default configuration have been saved.
 

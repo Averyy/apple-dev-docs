@@ -26,11 +26,11 @@ func AUGraphOpen(_ inGraph: AUGraph) -> OSStatus
 extern OSStatus AUGraphOpen(AUGraph inGraph);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 
-#### Discussion
+## Discussion
 
 Upon return from this function call, the audio units belonging to the graph are open but not initialized. Specifically, no resource allocation occurs.
 

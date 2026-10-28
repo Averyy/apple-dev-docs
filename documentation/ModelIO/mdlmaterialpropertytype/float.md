@@ -24,7 +24,7 @@ case float
 MDLMaterialPropertyTypeFloat
 ```
 
-#### Discussion
+## Discussion
 
 Use the [`floatValue`](../mdlmaterialproperty/floatvalue.md) property to access the material property’s value.
 

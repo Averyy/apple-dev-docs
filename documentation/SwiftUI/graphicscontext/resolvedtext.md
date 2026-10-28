@@ -21,7 +21,7 @@ A text view resolved to a particular environment.
 struct ResolvedText
 ```
 
-#### Overview
+## Overview
 
 You resolve a [`Text`](../text.md) view in preparation for drawing it into a context, either manually by calling [`resolve(_:)`](./resolve%28_%29-4dx65.md) or automatically when calling [`draw(_:in:)`](./draw%28_,in%29-5opqf.md) or [`draw(_:at:anchor:)`](./draw%28_,at,anchor%29-5dgmd.md). The resolved text view takes into account environment values like the display resolution and current color scheme.
 

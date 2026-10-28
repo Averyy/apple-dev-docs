@@ -13,11 +13,11 @@ Interact with a nearby Apple Watch by measuring its distance to a paired iPhone.
 - watchOS 8.0+
 - Xcode 13.3+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC21 session [10165: Explore Nearby Interaction with Third-Party Accessories](https://developer.apple.com/wwdc21/10165).
 
-##### Configure the Sample Code Project
+### Configure the Sample Code Project
 
 You can run this sample either in the simulator or on paired devices. When running on paired devices, both the watch and iPhone must contain an Ultra Wideband chip.
 

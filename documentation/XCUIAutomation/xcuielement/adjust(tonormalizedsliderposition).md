@@ -26,7 +26,7 @@ func adjust(toNormalizedSliderPosition normalizedSliderPosition: CGFloat)
 - (void) adjustToNormalizedSliderPosition:(CGFloat) normalizedSliderPosition;
 ```
 
-#### Discussion
+## Discussion
 
 A normalized slider value of `0` corresponds to the minimum value of the slider, and `1` corresponds to the maximum value.
 

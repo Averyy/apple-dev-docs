@@ -22,7 +22,7 @@ An indication of which the current stage of a transition.
 enum TransitionPhase
 ```
 
-#### Overview
+## Overview
 
 When a view is appearing with a transition, the transition will first be shown with the `willAppear` phase, then will be immediately moved to the `identity` phase. When a view is being removed, its transition is changed from the `identity` phase to the `didDisappear` phase. If a view is removed while it is still transitioning in, then its phase will change to `didDisappear`. If a view is re-added while it is transitioning out, its phase will change back to `identity`.
 

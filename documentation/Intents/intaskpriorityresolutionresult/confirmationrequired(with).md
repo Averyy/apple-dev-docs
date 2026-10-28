@@ -25,11 +25,11 @@ class func confirmationRequired(with taskPriorityToConfirm: INTaskPriority) -> S
 + (instancetype) confirmationRequiredWithTaskPriorityToConfirm:(INTaskPriority) taskPriorityToConfirm;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INTaskPriorityResolutionResult`](../intaskpriorityresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method when you have to make assumptions about the time information specified by the user.
 

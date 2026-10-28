@@ -29,7 +29,7 @@ struct NavigationView<Content> where Content : View
 - [Migrating to new navigation types](./migrating-to-new-navigation-types.md)
 - [Picking container views for your content](./picking-container-views-for-your-content.md)
 
-#### Overview
+## Overview
 
 Use a `NavigationView` to create a navigation-based app in which the user can traverse a collection of views. Users navigate to a destination view by selecting a [`NavigationLink`](./navigationlink.md) that you provide. On iPadOS and macOS, the destination content appears in the next column. Other platforms push a new view onto the stack, and enable removing items from the stack with platform-specific controls, like a Back button or a swipe gesture.
 

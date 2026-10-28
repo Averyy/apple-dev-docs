@@ -32,7 +32,7 @@ var url: URL? { get }
 @property (atomic, copy, readonly, nullable) NSURL * URL;
 ```
 
-#### Discussion
+## Discussion
 
 Provide a URL in your reservations so that the user can access reservation details from a device on which your app is unavailable.
 

@@ -5,7 +5,7 @@
 
 Access the system's user and group database and manage access controls.
 
-#### Overview
+## Overview
 
 The Core Services Identity Reference allows developers to support user and group creation, enumeration, attribute inspection, credential management as well as group membership management in their applications.
 

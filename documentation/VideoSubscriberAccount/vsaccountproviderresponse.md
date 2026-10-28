@@ -24,7 +24,7 @@ class VSAccountProviderResponse
 @interface VSAccountProviderResponse : NSObject
 ```
 
-#### Overview
+## Overview
 
 A `VSAccountProviderResponse` object encapsulates the information the account provider sends back to your app, such as authentication scheme type, raw response data, and status code.
 

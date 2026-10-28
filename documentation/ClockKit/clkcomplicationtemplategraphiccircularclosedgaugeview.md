@@ -17,7 +17,7 @@ A template for displaying a SwiftUI view inside a closed circular gauge.
 final class CLKComplicationTemplateGraphicCircularClosedGaugeView<Label> where Label : View
 ```
 
-#### Overview
+## Overview
 
 This template belongs to the [`CLKComplicationFamily.graphicCircular`](./clkcomplicationfamily/graphiccircular.md) family. [Figure 1](./clkcomplicationtemplategraphiccircularclosedgaugeview.md#3667247) shows the layout of the view and where the template might appear on the clock face.
 

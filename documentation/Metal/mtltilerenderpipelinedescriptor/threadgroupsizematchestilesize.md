@@ -24,7 +24,7 @@ var threadgroupSizeMatchesTileSize: Bool { get set }
 @property (nonatomic, readwrite) BOOL threadgroupSizeMatchesTileSize;
 ```
 
-#### Discussion
+## Discussion
 
 Metal can optimize code generation when the threadgroup and tile sizes match.
 

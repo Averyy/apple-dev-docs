@@ -25,13 +25,13 @@ func vImageFlatten_BGRA8888ToRGB888(_: UnsafePointer<vImage_Buffer>, _: UnsafePo
 vImage_Error vImageFlatten_BGRA8888ToRGB888(const vImage_Buffer *, const vImage_Buffer *, const Pixel_8888 , bool , vImage_Flags );
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
-#### Discussion
+## Discussion
 
-##### Parameters
+### Parameters
 
 - **bgra8888Src**: The source vImage buffer.
 - **rgb888dest**: A pointer to the destination vImage buffer structure. You’re responsible for filling out the [`height`](./vimage_buffer/height.md), [`width`](./vimage_buffer/width.md), and [`rowBytes`](./vimage_buffer/rowbytes.md) fields of this structure, and for allocating a data buffer of the appropriate size. On return, the data buffer this structure points to contains the destination image data. When you no longer need the data buffer, deallocate the memory to prevent memory leaks.

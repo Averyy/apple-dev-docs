@@ -19,11 +19,11 @@ func activate(from application: NSRunningApplication, options: NSApplication.Act
 - (BOOL) activateFromApplication:(NSRunningApplication *) application options:(NSApplicationActivationOptions) options;
 ```
 
-#### Return Value
+## Return Value
 
 Returns [`true`](../../Swift/true.md) if the request is allowed by the system, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Use this method to request app activation. Calling this method doesn’t guarantee app activation. For cooperative activation, the other application should call [`yieldActivation(to:)`](../nsapplication/yieldactivation%28to%29.md) or equivalent prior to the target application invoking [`activate()`](../nsapplication/activate%28%29.md).
 

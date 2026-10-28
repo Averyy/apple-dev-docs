@@ -25,7 +25,7 @@ var kCTFontPrioritySystem: Int { get }
 kCTFontPrioritySystem
 ```
 
-#### Discussion
+## Discussion
 
 System fonts are located in `/System/Library/Fonts`.
 

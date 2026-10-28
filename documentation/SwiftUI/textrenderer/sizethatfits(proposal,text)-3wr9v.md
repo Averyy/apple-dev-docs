@@ -22,7 +22,7 @@ Returns the size of the text in `proposal`. The provided `text` proxy value may 
 func sizeThatFits(proposal: ProposedViewSize, text: TextProxy) -> CGSize
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation of this function returns `text.size(proposal)`.
 

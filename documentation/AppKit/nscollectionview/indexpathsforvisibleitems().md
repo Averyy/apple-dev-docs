@@ -19,11 +19,11 @@ func indexPathsForVisibleItems() -> Set<IndexPath>
 - (NSSet<NSIndexPath *> *) indexPathsForVisibleItems;
 ```
 
-#### Return Value
+## Return Value
 
 The set of [`NSIndexPath`](../../Foundation/nsindexpath.md) objects corresponding to the currently visible items.
 
-#### Discussion
+## Discussion
 
 The index paths returned by this method belong to items that are active and currently being managed by the collection view. As a result, the returned set may include index paths for items that are outside of the collection view’s actual visible rectangle. For example, it may contain index paths for items that were recently visible but have since been scrolled out of view. To test whether an item is visible, check to see if its frame rectangle intersects the [`visibleRect`](../nsview/visiblerect.md) of the collection view.
 

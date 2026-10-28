@@ -4,7 +4,7 @@
 
 Indicate a structure format used in a `'uchr'` resource.
 
-#### Overview
+## Overview
 
 These constants are those currently defined to be used within the various structures in a `'uchr'` resource to indicate each structure’s format.
 

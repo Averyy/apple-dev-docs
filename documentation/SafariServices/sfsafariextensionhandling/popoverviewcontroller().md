@@ -23,7 +23,7 @@ optional func popoverViewController() -> SFSafariExtensionViewController
 
 - [Adjusting settings for a toolbar item](../adjusting-settings-for-a-toolbar-item.md)
 
-#### Return Value
+## Return Value
 
 The app extension’s popover view controller.
 

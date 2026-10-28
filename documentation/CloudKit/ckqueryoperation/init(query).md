@@ -25,7 +25,7 @@ convenience init(query: CKQuery)
 - (instancetype) initWithQuery:(CKQuery *) query;
 ```
 
-#### Discussion
+## Discussion
 
 You can use the operation that this method returns only once to perform a search, but you can reuse the query that you provide. During execution, the operation performs a new search and returns the first batch of results. If there are more results available, you must create a separate query object using the provided cursor object.
 

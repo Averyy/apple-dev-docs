@@ -15,11 +15,11 @@ The response from a bulk negative keyword creation request, containing results f
 object NegativeKeywordCreateBulkResponse
 ```
 
-#### Discussion
+## Discussion
 
 The bulk negative keyword creation endpoint returns `NegativeKeywordCreateBulkResponse` as its response envelope. When `allowPartialSuccess` is `true` in the request, inspect each item’s `success` field to determine which negative keywords were created. The response populates `error` only when the system rejects the overall request before processing any items.
 
-##### Example
+### Example
 
 ```json
 {

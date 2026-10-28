@@ -13,11 +13,11 @@
 typedef errno_t (*sf_connect_out_func)(void *cookie, socket_t so, const struct sockaddr *to);
 ```
 
-#### Return Value
+## Return Value
 
 Return: 0 - The caller will continue with normal processing of the connection. EJUSTRETURN - The caller will return with a value of 0 (no error) from that point without further processing the connect command. The protocol layer will not see the call. Anything Else - The caller will rejecting the outbound connection.
 
-#### Discussion
+## Discussion
 
 sf_connect_out_func is called to filter outbound connections. A protocol will call this before initiating an outbound connection.
 

@@ -20,11 +20,11 @@ func ColorSyncDeviceSetCustomProfiles(_ deviceClass: CFString!, _ deviceID: CFUU
 extern bool ColorSyncDeviceSetCustomProfiles(CFStringRef deviceClass, CFUUIDRef deviceID, CFDictionaryRef profileInfo);
 ```
 
-#### Return Value
+## Return Value
 
 `true` on success and `false` in case of failure.
 
-#### Discussion
+## Discussion
 
 The `profileInfo` dictionary requires the following keys:
 

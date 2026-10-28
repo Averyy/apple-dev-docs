@@ -19,7 +19,7 @@ func startListening()
 - (void) startListening;
 ```
 
-#### Discussion
+## Discussion
 
 When a command is recognized the message [`speechRecognizer(_:didRecognizeCommand:)`](../nsspeechrecognizerdelegate/speechrecognizer%28_,didrecognizecommand%29.md) is sent to the delegate.
 

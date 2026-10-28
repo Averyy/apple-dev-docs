@@ -9,7 +9,7 @@ Get URLs to download a snapshot of someone’s data from a recurring series.
 **Availability**:
 - Account Data Transfer 1.0+
 
-#### Overview
+## Overview
 
 **Request**:
 

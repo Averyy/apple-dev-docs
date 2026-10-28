@@ -22,7 +22,7 @@ Dumps the given object’s contents using its mirror to the specified output str
 func dump<T, TargetStream>(_ value: T, to target: inout TargetStream, name: String? = nil, indent: Int = 0, maxDepth: Int = .max, maxItems: Int = .max) -> T where TargetStream : TextOutputStream
 ```
 
-#### Return Value
+## Return Value
 
 The instance passed as `value`.
 

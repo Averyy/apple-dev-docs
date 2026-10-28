@@ -19,7 +19,7 @@ func update()
 - (void) update;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see `NSMenuValidation`.
 

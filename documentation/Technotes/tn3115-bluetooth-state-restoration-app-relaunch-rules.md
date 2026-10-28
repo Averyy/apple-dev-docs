@@ -5,7 +5,7 @@
 
 Learn about the conditions under which an iOS app will be relaunched by Bluetooth State Restoration.
 
-#### Overview
+## Overview
 
 Bluetooth State Restoration on iOS will relaunch an app in the background for pending Core Bluetooth requests. There are, though, certain conditions where the system will **not** relaunch and restore your app regardless of pending requests.
 
@@ -36,7 +36,7 @@ Also, it’s important to keep in mind that your app will be relaunched and rest
 
 For more information on Bluetooth State Preservation and Restoration refer to [State Preservation and Restoration](https://developer.apple.com/library/content/documentation/NetworkingInternetWeb/Conceptual/CoreBluetooth_concepts/CoreBluetoothBackgroundProcessingForIOSApps/PerformingTasksWhileYourAppIsInTheBackground.html#//apple_ref/doc/uid/TP40013257-CH7-SW10) in [Core Bluetooth Programming Guide](https://developer.apple.com/library/content/documentation/NetworkingInternetWeb/Conceptual/CoreBluetooth_concepts/AboutCoreBluetooth/Introduction.html#//apple_ref/doc/uid/TP40013257-CH1-SW1)
 
-#### Revision History
+## Revision History
 
 - **2025-09-15** Updated for iOS 26 and iPadOS 26.
 - **2022-02-08** Republished as TN3115. Made clarifications to the document.

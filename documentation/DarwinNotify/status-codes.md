@@ -3,7 +3,7 @@
 **Framework**: Darwin Notify  
 **Role**: API Collection
 
-#### Discussion
+## Discussion
 
 These routines allow processes to exchange stateless notification events. Processes post notifications to a single system-wide notification server, which then distributes notifications to client processes that have registered to receive those notifications, including processes run by other users.
 

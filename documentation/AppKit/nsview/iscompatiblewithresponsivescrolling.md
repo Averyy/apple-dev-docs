@@ -19,7 +19,7 @@ class var isCompatibleWithResponsiveScrolling: Bool { get }
 @property (class, readonly, getter=isCompatibleWithResponsiveScrolling) BOOL compatibleWithResponsiveScrolling;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the view class supports responsive scrolling. AppKit enables responsive scrolling when the views involved in scrolling—the [`NSScrollView`](../nsscrollview.md), [`NSClipView`](../nsclipview.md), and embedded document view—all have this property set to [`true`](../../Swift/true.md). If you want to opt out of responsive scrolling, override this property and set it to [`false`](../../Swift/false.md).
 

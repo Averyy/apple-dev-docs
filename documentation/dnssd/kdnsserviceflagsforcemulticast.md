@@ -23,7 +23,7 @@ var kDNSServiceFlagsForceMulticast: UInt32 { get }
 kDNSServiceFlagsForceMulticast
 ```
 
-#### Discussion
+## Discussion
 
 Flag for signifying that a query or registration should be performed exclusively via multicast DNS, even for a name in a domain (e.g. foo.apple.com.) that would normally imply unicast DNS.
 

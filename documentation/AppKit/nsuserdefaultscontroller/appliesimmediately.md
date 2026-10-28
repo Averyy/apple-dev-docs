@@ -19,7 +19,7 @@ var appliesImmediately: Bool { get set }
 @property BOOL appliesImmediately;
 ```
 
-#### Discussion
+## Discussion
 
 Default is [`true`](../../Swift/true.md).
 

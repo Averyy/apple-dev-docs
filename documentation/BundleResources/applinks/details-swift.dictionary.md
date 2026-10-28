@@ -20,7 +20,7 @@ A list of apps and the universal links they handle for a domain.
 object applinks.Details
 ```
 
-#### Discussion
+## Discussion
 
 The object optionally contains any of these keys:
 

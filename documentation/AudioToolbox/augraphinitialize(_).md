@@ -26,11 +26,11 @@ func AUGraphInitialize(_ inGraph: AUGraph) -> OSStatus
 extern OSStatus AUGraphInitialize(AUGraph inGraph);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 
-#### Discussion
+## Discussion
 
 Calling this function calls the `AudioUnitInitialize` function on each opened node or audio unit that is involved in a interaction. If a node is not involved, it is initialized after it becomes involved in an interaction.
 

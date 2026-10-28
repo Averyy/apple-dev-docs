@@ -22,11 +22,11 @@ init(options: [String : Any] = [:])
 - (instancetype) initWithOptions:(NSDictionary<NSString *,id> *) options;
 ```
 
-#### Return Value
+## Return Value
 
 A new media library.
 
-#### Discussion
+## Discussion
 
 For descriptions of possible load options, see [Load Options Keys](../load-options-keys.md).
 

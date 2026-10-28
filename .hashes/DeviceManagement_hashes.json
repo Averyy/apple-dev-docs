@@ -9036,6 +9036,10 @@
       "file_path": "documentation/DeviceManagement/package.md",
       "hash": "a4b501493fa7ad8af1815e900af5ff4d03707e635189f51a63ef6a58fe87d426"
     },
+    "https://developer.apple.com/tutorials/data/documentation/devicemanagement/package/manifesturl.json": {
+      "error": "HTTP 404",
+      "status": "error"
+    },
     "https://developer.apple.com/tutorials/data/documentation/devicemanagement/packageinstallbehaviorobject.json": {
       "file_path": "documentation/DeviceManagement/packageinstallbehaviorobject.md",
       "hash": "9db5fe2a33ab187b60cb2b2e66081cfbe3b98aaffa339c63371e1da18129c05f"
@@ -11363,8 +11367,8 @@
   },
   "metadata": {
     "render": {
-      "version": 3
+      "version": 4
     },
-    "total_pages": 2840
+    "total_pages": 2841
   }
 }

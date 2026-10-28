@@ -23,7 +23,7 @@ static func == (lhs: Publishers.DropUntilOutput<Upstream, Other>, rhs: Publisher
 
 Available when `Upstream` conforms to `Publisher`, `Upstream` conforms to `Equatable`, `Other` conforms to `Publisher`, `Other` conforms to `Equatable`, and `Upstream.Failure` is `Other.Failure`.
 
-#### Return Value
+## Return Value
 
 `true` if the publishers have equal `upstream` and `other` properties; otherwise `false`.
 

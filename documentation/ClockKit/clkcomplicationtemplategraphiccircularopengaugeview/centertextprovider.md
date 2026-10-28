@@ -18,7 +18,7 @@ The text provider for the center text.
 <CLKTextProvider> @objc final var centerTextProvider: CLKTextProvider { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The template supports multicolored text from this text provider.
 

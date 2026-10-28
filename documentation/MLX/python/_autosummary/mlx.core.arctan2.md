@@ -6,16 +6,19 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ar
 
 # mlx.core.arctan2
 
-**arctan2(*a: scalar | array*, *b: scalar | array*, */*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.md#mlx.core.array)**
-: Element-wise inverse tangent of the ratio of two arrays.
+```python
+arctan2(a: scalar | array, b: scalar | array, /, *, stream: StreamOrDevice = None) → array
+```
 
-Parameters:
+Element-wise inverse tangent of the ratio of two arrays.
 
-**a** ([array](mlx.core.array.md#mlx.core.array)* or **scalar*) – Input array or scalar.
-**b** ([array](mlx.core.array.md#mlx.core.array)* or **scalar*) – Input array or scalar.
+**Parameters:**
 
-Returns:
-The inverse tangent of the ratio of `a` and `b`.
+- **a** ([array](mlx.core.array.md#mlx.core.array) *or* *scalar*) – Input array or scalar.
+- **b** ([array](mlx.core.array.md#mlx.core.array) *or* *scalar*) – Input array or scalar.
 
-Return type:
-[array](mlx.core.array.md#mlx.core.array)
+**Returns:**
+: The inverse tangent of the ratio of `a` and `b`.
+
+**Return type:**
+: [array](mlx.core.array.md#mlx.core.array)

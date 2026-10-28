@@ -13,7 +13,7 @@
 kINQUIRY_Page83_AssociationTargetPort = 0x10
 ```
 
-#### Discussion
+## Discussion
 
 Association of the identifier is with the target port.
 

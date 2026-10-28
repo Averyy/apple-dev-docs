@@ -19,7 +19,7 @@ var negotiatedFeatures: VZNegotiatedVirtioFeatureSet? { get }
 @property (readonly, nullable) VZNegotiatedVirtioFeatureSet * negotiatedFeatures;
 ```
 
-#### Discussion
+## Discussion
 
 The value is only valid after the framework calls [`customVirtioDeviceDidAcceptDriverOk(_:)`](../vzcustomvirtiodevicedelegate/customvirtiodevicedidacceptdriverok%28_%29.md). The framework calls this method when the guest driver sets `DRIVER_OK`.
 

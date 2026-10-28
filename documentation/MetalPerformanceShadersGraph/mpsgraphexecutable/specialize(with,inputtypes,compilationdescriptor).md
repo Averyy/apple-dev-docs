@@ -24,7 +24,7 @@ func specialize(with device: MPSGraphDevice?, inputTypes: [MPSGraphType], compil
 - (void) specializeWithDevice:(MPSGraphDevice *) device inputTypes:(NSArray<MPSGraphType *> *) inputTypes compilationDescriptor:(MPSGraphCompilationDescriptor *) compilationDescriptor;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to choose when specialization happens, else it occurs at encode time automatically.
 

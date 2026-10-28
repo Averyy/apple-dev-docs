@@ -19,7 +19,7 @@ func getTitle() -> String!
 - (NSString *) getTitle;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the title of the device selector panel.
 

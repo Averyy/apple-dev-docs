@@ -24,7 +24,7 @@ var categoryType: HKCategoryType { get }
 @property (strong, readonly) HKCategoryType * categoryType;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains a reference to the [`sampleType`](../hksample/sampletype.md) property that is cast as an [`HKCategoryType`](../hkcategorytype.md) object.
 

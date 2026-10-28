@@ -4,7 +4,7 @@
 
 Represents a title with one or more text blocks.
 
-#### Overview
+## Overview
 
 A `title` element contains one or more `text` elements, each of which describes a block of text with custom styles.
 

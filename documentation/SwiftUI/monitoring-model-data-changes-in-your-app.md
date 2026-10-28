@@ -13,7 +13,7 @@ Show changes to data in your app’s user interface by using observable objects.
 - macOS 13.1+
 - Xcode 14.3+
 
-#### Overview
+## Overview
 
 You typically store and process data in your app using a data model that’s separate from your app’s user interface (UI) and other logic. The separation promotes modularity, improves testability, and makes it easier to reason about how your app works.
 
@@ -21,7 +21,7 @@ Traditionally, you use a view controller to move data back and forth between the
 
 > ❗ **Important**: This article explains how to observe model data changes in SwiftUI apps that have a minimum deployment target that is prior to iOS 17, iPadOS 17, macOS 14, tvOS 17, or watchOS 10. To prepare your app for a newer version of one of those operating systems, see [Migrating from the Observable Object protocol to the Observable macro](./migrating-from-the-observable-object-protocol-to-the-observable-macro.md). If your app’s minimum deployment target is iOS 17, iPadOS 17, macOS 14, tvOS 17, or watchOS 10 or later, use the observation approach described in [Managing model data in your app](./managing-model-data-in-your-app.md).
 
-##### Make model data observable
+### Make model data observable
 
 To make the data changes in your model visible to SwiftUI, adopt the [`ObservableObject`](../Combine/observableobject.md) protocol for model classes. For example, you can create a `Book` class that’s an observable object:
 
@@ -50,7 +50,7 @@ class Book: ObservableObject {
 
 You can still display the identifier in your user interface, but because it isn’t published, SwiftUI doesn’t watch that particular property for changes.
 
-##### Monitor changes in observable objects
+### Monitor changes in observable objects
 
 To tell SwiftUI to monitor an observable object, add the [`ObservedObject`](./observedobject.md) property wrapper to the property’s declaration:
 
@@ -82,7 +82,7 @@ struct BookEditView: View {
 }
 ```
 
-##### Instantiate a model object in a view
+### Instantiate a model object in a view
 
 SwiftUI might create or recreate a view at any time, so it’s important that initializing a view with a given set of inputs always results in the same view. As a result, it’s unsafe to create an observed object inside a view. Instead, SwiftUI provides the [`StateObject`](./stateobject.md) property wrapper, which creates a single source of truth for a reference type that you store in a view hierarchy. You can safely create a `Book` instance inside a view this way:
 
@@ -118,7 +118,7 @@ struct BookReader: App {
 }
 ```
 
-##### Share an object throughout your app
+### Share an object throughout your app
 
 If you have a data model object that you want to use throughout your app, but don’t want to pass it through many layers of hierarchy, you can use the [`environmentObject(_:)`](./view/environmentobject%28_%29.md) view modifier to put the object into the environment instead:
 
@@ -157,7 +157,7 @@ struct LibraryView_Previews: PreviewProvider {
 }
 ```
 
-##### Create a two-way connection using bindings
+### Create a two-way connection using bindings
 
 When you allow a person to change the data in the UI, use a binding to the corresponding property. This ensures that updates flow back into the data model automatically. You can get a binding to an observed object, state object, or environment object property by prefixing the name of the object with the dollar sign (`$`). For example, if you let someone edit the title of a book by adding a [`TextField`](./textfield.md) to the `BookEditView`, give the text field a binding to the book’s `title` property:
 

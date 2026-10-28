@@ -21,7 +21,7 @@ The quality of the face capture.
 var captureQuality: FaceObservation.CaptureQuality?
 ```
 
-#### Discussion
+## Discussion
 
 This value is nil for face observations produced by a `DetectFaceRectanglesRequest` analysis. Use [`DetectFaceCaptureQualityRequest`](../detectfacecapturequalityrequest.md) to detect capture quality.
 

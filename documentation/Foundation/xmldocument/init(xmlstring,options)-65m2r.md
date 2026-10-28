@@ -20,11 +20,11 @@ convenience init(xmlString string: String, options mask: XMLNode.Options = []) t
 - (instancetype) initWithXMLString:(NSString *) string options:(NSXMLNodeOptions) mask error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized `NSXMLDocument` object, or `nil` if initialization fails because of parsing errors or other reasons.
 
-#### Discussion
+## Discussion
 
 The encoding of the document is set to UTF-8.
 

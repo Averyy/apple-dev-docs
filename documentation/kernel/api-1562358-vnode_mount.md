@@ -15,7 +15,7 @@ Get the mount structure for the filesystem that a vnode belongs to.
 mount_t vnode_mount(vnode_t vp);
 ```
 
-#### Return Value
+## Return Value
 
 The mount, directly.
 

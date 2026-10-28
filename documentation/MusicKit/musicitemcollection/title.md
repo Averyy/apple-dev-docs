@@ -21,7 +21,7 @@ An optional title for the collection.
 var title: String? { get }
 ```
 
-#### Discussion
+## Discussion
 
 Collections that represent an association from a music item often contain a title.
 

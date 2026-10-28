@@ -21,7 +21,7 @@ Removes the elements in the specified subrange from the collection.
 mutating func removeSubrange(_ bounds: Range<Self.Index>)
 ```
 
-#### Discussion
+## Discussion
 
 All the elements following the specified position are moved to close the gap. This example removes three elements from the middle of an array of measurements.
 

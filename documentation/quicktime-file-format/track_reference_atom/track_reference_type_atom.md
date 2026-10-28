@@ -6,7 +6,7 @@
 
 A list of track reference type atoms containing the track reference information.
 
-#### Overview
+## Overview
 
 For more information, see [`Track reference type atom`](../track_reference_type_atom.md).
 

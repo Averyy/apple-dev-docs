@@ -25,11 +25,11 @@ func descriptor(for path: FilePath, asLocalizedFor language: Locale.Language) th
 
 - [Reducing download and storage demands with localized asset packs](../reducing-download-and-storage-demands-with-localized-asset-packs.md)
 
-#### Return Value
+## Return Value
 
 A descriptor for the opened file.
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**: It’s your responsibility to close the file descriptor when you’re done using it.
 

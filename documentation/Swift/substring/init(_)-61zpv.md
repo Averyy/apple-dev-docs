@@ -21,7 +21,7 @@ Creates a Substring having the given content.
 init(_ content: Substring.UTF16View)
 ```
 
-#### Discussion
+## Discussion
 
 > **Complexity**: O(1)
 

@@ -16,7 +16,7 @@ The fields of shipping information the user must provide to fulfill the order.
 sequence <ApplePayContactField> requiredShippingContactFields;
 ```
 
-#### Discussion
+## Discussion
 
 Use `requiredShippingContactFields` to request the user’s address and other contact information that you require to fulfill the order.
 

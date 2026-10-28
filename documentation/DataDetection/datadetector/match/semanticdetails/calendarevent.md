@@ -21,7 +21,7 @@ The values the framework returns that represent date components of a calendar ev
 struct CalendarEvent
 ```
 
-#### Discussion
+## Discussion
 
 You can use these properties to populate an Event. The event may contain just a single date, such as a start date, but can contain both a start and end date.
 

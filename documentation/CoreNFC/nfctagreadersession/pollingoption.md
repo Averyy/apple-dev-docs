@@ -21,7 +21,7 @@ struct PollingOption
 enum NFCPollingOption : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 You can combine options to have the reader session scan and detect different tag types at the same time.
 

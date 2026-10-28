@@ -15,11 +15,11 @@ Request body for the Query Change History endpoint.
 object AuditQuery
 ```
 
-#### Overview
+## Overview
 
 The `AuditQuery` object is the request payload for `POST /v1/change-history/query` ([`Query Change History`](./query-audit-summary-_-grouped-by-transaction.md)). Every valid request must include at least one `filters` entry targeting `eventTime` using `BETWEEN`, `GREATER_THAN`, or `LESS_THAN`. All other fields are optional and default to reasonable values when omitted.
 
-##### Example
+### Example
 
 A minimal valid request looks like this:
 
@@ -61,9 +61,9 @@ A minimal valid request looks like this:
 | `timeZone` | `"UTC"`, `"ORTZ"` | `"UTC"` | Controls how the API interprets `eventTime` filter values. `"UTC"` treats values as UTC. `"ORTZ"` interprets values in the org’s configured timezone and converts them to UTC server-side before filtering. |
 | `metadata` | `"none"`, `"latest"`, `"snapshot"` | `"none"` | Controls entity metadata in change detail responses. `"none"` returns no metadata. `"latest"` joins current entity metadata. `"snapshot"` uses metadata captured at the time of the event. |
 
-#### Discussion
+## Discussion
 
-##### Required Filter
+### Required Filter
 
 ```json
 {
@@ -76,7 +76,7 @@ A minimal valid request looks like this:
 }
 ```
 
-##### Combine filters
+### Combine filters
 
 The API combines multiple `filters` entries with logical AND. For example, to retrieve only `Campaign` `UPDATE` events in a time window:
 
@@ -161,11 +161,11 @@ To retrieve changes made by a specific user across multiple ad groups:
 }
 ```
 
-##### Handle time zones
+### Handle time zones
 
 When `timeZone` is `"ORTZ"`, the server converts the `eventTime` filter values from the org’s configured timezone to UTC before executing the query. The `eventTime` values returned in the response are always in UTC regardless of this setting.
 
-##### Performance Tips
+### Performance Tips
 
 - Set `needTotals` to `"false"` on high-volume queries where you don’t need an accurate total count. Skipping the COUNT query can substantially reduce response latency.
 - Apply `entityType` and `eventType` filters to limit result set size before paginating.

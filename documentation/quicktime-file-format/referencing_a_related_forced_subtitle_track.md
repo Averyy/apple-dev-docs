@@ -5,7 +5,7 @@
 
 Prevent overlapping a timed subtitle track with a forced subtitle track.
 
-#### Overview
+## Overview
 
 A subtitle track can contain a track reference of type `'forc'` to a paired subtitle track that contains only forced subtitles.
 

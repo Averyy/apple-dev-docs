@@ -21,11 +21,11 @@ func AUGraphIsNodeSubGraph(_ inGraph: AUGraph, _ inNode: AUNode, _ outFlag: Unsa
 extern OSStatus AUGraphIsNodeSubGraph(AUGraph const inGraph, AUNode inNode, Boolean *outFlag);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 
-#### Discussion
+## Discussion
 
 ## Parameters
 

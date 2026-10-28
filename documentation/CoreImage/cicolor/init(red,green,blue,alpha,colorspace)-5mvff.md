@@ -22,11 +22,11 @@ convenience init?(red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat, c
 + (instancetype) colorWithRed:(CGFloat) red green:(CGFloat) green blue:(CGFloat) blue alpha:(CGFloat) alpha colorSpace:(CGColorSpaceRef) colorSpace;
 ```
 
-#### Return Value
+## Return Value
 
  An autoreleased [`CIColor`](../cicolor.md) instance.
 
-#### Discussion
+## Discussion
 
 This will return `null` if the `CGColorSpace` is not `kCGColorSpaceModelRGB`.
 

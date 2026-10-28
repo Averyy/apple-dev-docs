@@ -19,7 +19,7 @@ func completeStateRestoration()
 - (void) completeStateRestoration;
 ```
 
-#### Discussion
+## Discussion
 
 This method informs the app that the extended state restoration is completed for the balancing .
 

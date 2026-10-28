@@ -21,7 +21,7 @@ convenience init(_ elementProvider: @escaping (@escaping ([UIMenuElement]) -> Vo
 + (instancetype) providerWithElementProvider:(void (^)(void (^completion)(NSArray<UIMenuElement *> *elements))) elementProvider;
 ```
 
-#### Discussion
+## Discussion
 
 Creates a deferred menu element provider with an asynchronous block.
 

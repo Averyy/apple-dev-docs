@@ -25,7 +25,7 @@ class MTRBaseClusterPowerTopology
 @interface MTRBaseClusterPowerTopology : MTRGenericBaseCluster
 ```
 
-#### Overview
+## Overview
 
 The Power Topology Cluster provides a mechanism for expressing how power is flowing between endpoints.
 

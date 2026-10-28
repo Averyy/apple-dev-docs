@@ -34,7 +34,7 @@ var queueName: String? { get set }
 - [Finding players for custom server-based games](../finding-players-for-custom-server-based-games.md)
 - [Troubleshooting matchmaking rules using metrics](../troubleshooting-matchmaking-rules-using-metrics.md)
 
-#### Discussion
+## Discussion
 
 To use matchmaking rules, set the [`queueName`](./queuename.md) property to a queue name that you configure in App Store Connect. Then set [`properties`](./properties.md) and optionally [`recipientProperties`](./recipientproperties.md) to game-specific criteria.
 

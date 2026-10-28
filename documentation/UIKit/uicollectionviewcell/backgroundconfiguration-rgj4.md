@@ -20,7 +20,7 @@ The current background configuration of the cell.
 @preconcurrency var backgroundConfiguration: UIBackgroundConfiguration? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Using a background configuration, you can obtain system default background styling for a variety of different cell states. Create a background configuration with one of the default system styles, customize the configuration to match your cell’s style as necessary, and assign the configuration to this property.
 

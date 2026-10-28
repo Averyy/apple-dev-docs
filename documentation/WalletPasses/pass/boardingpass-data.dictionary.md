@@ -21,7 +21,7 @@ object Pass.BoardingPass
 
 - [Creating an airline boarding pass using semantic tags](../creating-an-airline-boarding-pass-using-semantic-tags.md)
 
-#### Discussion
+## Discussion
 
 Use the boarding pass type for transit passes like airline boarding passes, train tickets, and bus tickets.
 

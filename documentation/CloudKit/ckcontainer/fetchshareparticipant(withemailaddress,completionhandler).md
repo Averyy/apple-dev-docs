@@ -25,7 +25,7 @@ func fetchShareParticipant(withEmailAddress emailAddress: String, completionHand
 - (void) fetchShareParticipantWithEmailAddress:(NSString *) emailAddress completionHandler:(void (^)(CKShareParticipant *shareParticipant, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The closure doesn’t return a value and takes the following parameters:
 

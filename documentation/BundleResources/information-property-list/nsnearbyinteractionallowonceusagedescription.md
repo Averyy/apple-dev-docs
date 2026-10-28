@@ -15,7 +15,7 @@ A one-time request for user permission to begin an interaction session with near
 - **Name**: `NSNearbyInteractionAllowOnceUsageDescription` (Privacy - Nearby Interaction Allow Once Usage Description)
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 > ⚠️ **Warning**:  Define this property in the `Info.plist` only for apps that deploy to iOS 14. [`NSNearbyInteractionUsageDescription`](./nsnearbyinteractionusagedescription.md) replaces this property in iOS 15 and later.
 

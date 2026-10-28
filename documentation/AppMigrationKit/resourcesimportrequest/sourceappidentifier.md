@@ -16,7 +16,7 @@ The application that exported the content.
 let sourceAppIdentifier: MigrationAppIdentifier
 ```
 
-#### Discussion
+## Discussion
 
 Use this identifier to validate that the imported data comes from a trusted source.
 

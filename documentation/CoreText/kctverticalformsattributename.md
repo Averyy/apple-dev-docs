@@ -25,7 +25,7 @@ let kCTVerticalFormsAttributeName: CFString
 extern CFStringRef const kCTVerticalFormsAttributeName;
 ```
 
-#### Discussion
+## Discussion
 
 Value must be a [`CFBoolean`](../CoreFoundation/cfboolean.md) object. Default is [`kCFBooleanFalse`](../CoreFoundation/kcfbooleanfalse.md). A value of [`kCFBooleanFalse`](../CoreFoundation/kcfbooleanfalse.md) indicates that horizontal glyph forms are to be used; [`kCFBooleanTrue`](../CoreFoundation/kcfbooleantrue.md) indicates that vertical glyph forms are to be used.
 

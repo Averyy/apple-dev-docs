@@ -19,7 +19,7 @@ var paperSize: NSSize { get set }
 @property NSSize paperSize;
 ```
 
-#### Discussion
+## Discussion
 
 The size is measured in points in the user coordinate space.
 

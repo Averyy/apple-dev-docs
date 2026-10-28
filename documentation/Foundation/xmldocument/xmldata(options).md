@@ -20,7 +20,7 @@ func xmlData(options: XMLNode.Options = []) -> Data
 - (NSData *) XMLDataWithOptions:(NSXMLNodeOptions) options;
 ```
 
-#### Discussion
+## Discussion
 
 The encoding used is based on the value returned from [`characterEncoding`](./characterencoding.md).
 

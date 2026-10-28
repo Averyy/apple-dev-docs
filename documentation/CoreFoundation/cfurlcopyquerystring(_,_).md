@@ -25,11 +25,11 @@ func CFURLCopyQueryString(_ anURL: CFURL!, _ charactersToLeaveEscaped: CFString!
 extern CFStringRefCFURLCopyQueryString(CFURLRef anURL, CFStringRef charactersToLeaveEscaped);
 ```
 
-#### Return Value
+## Return Value
 
 The query string, or `NULL` if no parameter string exists. Ownership follows the create rule. See [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 This function removes all percent escape sequences except those for characters specified in `charactersToLeaveEscaped`.
 

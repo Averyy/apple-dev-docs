@@ -25,7 +25,7 @@ let CKErrorRetryAfterKey: String
 extern NSString * const CKErrorRetryAfterKey;
 ```
 
-#### Discussion
+## Discussion
 
 An [`NSNumber`](../Foundation/nsnumber.md) that contains the number of seconds until you can retry a request. CloudKit adds this key to the error’s [`userInfo`](../Foundation/nserror/userinfo.md) dictionary when the error code is [`CKError.Code.serviceUnavailable`](./ckerror/code/serviceunavailable.md) or [`CKError.Code.requestRateLimited`](./ckerror/code/requestratelimited.md).
 

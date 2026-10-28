@@ -19,7 +19,7 @@ var message: String! { get set }
 @property (copy, null_resettable) NSString * message;
 ```
 
-#### Discussion
+## Discussion
 
 This prompt appears on all [`NSSavePanel`](../nssavepanel.md) objects (or all [`NSOpenPanel`](../nsopenpanel.md) objects if this property is on an [`NSOpenPanel`](../nsopenpanel.md) instance) in your application. The default message text is an empty string.
 

@@ -34,7 +34,7 @@ var maximumNumberOfPeers: Int { get set }
 @property (atomic, assign) NSUInteger maximumNumberOfPeers;
 ```
 
-#### Discussion
+## Discussion
 
 The largest allowable value (and the default) is 8.
 

@@ -15,11 +15,11 @@ Creates a custom log object, to be passed to logging functions for sending messa
 os_log_t os_log_create(const char *subsystem, const char *category);
 ```
 
-#### Return Value
+## Return Value
 
 A value of type `os_log_t`, which can be passed to other logging functions to perform logging and to determine whether a specific level of logging is enabled. A value is always returned and should be released when no longer needed.
 
-#### Discussion
+## Discussion
 
 Generally, use the `OS_LOG_DEFAULT` constant to perform logging using the system’s behavior. Create a custom log object only when you want to tag messages with a specific subsystem and category for the purpose of filtering, or to customize the logging behavior of your subsystem with a profile for debugging purposes. This function only needs to be called once to initialize a custom log object. It doesn’t need to be called again when changing logging settings. The system automatically detects changes to logging settings.
 

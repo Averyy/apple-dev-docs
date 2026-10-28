@@ -24,7 +24,7 @@ var kSCNetworkFlagsConnectionAutomatic: Int { get }
 kSCNetworkFlagsConnectionAutomatic
 ```
 
-#### Discussion
+## Discussion
 
 Any traffic directed to the specified name or address will initiate the connection.
 

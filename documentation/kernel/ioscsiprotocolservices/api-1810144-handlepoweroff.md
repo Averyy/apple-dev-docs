@@ -12,11 +12,11 @@ virtual IOReturn HandlePowerOff (
  void );
 ```
 
-#### Return Value
+## Return Value
 
 A valid IOReturn code.
 
-#### Overview
+## Overview
 
 Convenience method for a protocol service driver to handle a power off call (called on the way to sleep). This method is guaranteed to be called after application layer drivers have been put to sleep.
 

@@ -24,7 +24,7 @@ class CAAnimationGroup
 @interface CAAnimationGroup : CAAnimation
 ```
 
-#### Overview
+## Overview
 
 The grouped animations run in the time space specified by the [`CAAnimationGroup`](./caanimationgroup.md) instance.
 

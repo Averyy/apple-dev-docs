@@ -10,11 +10,11 @@ Stream texture and buffer data directly from disk into Metal resources using fas
 - macOS 13.0+
 - Xcode 14.0+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC22 session [10104: Load resources faster with Metal 3](https://developer.apple.com/wwdc22/10104/).
 
-##### Configure the sample code project
+### Configure the sample code project
 
 This sample code project requires the following:
 

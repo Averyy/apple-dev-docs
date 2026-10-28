@@ -19,7 +19,7 @@ var highlightState: NSCollectionViewItem.HighlightState { get set }
 @property NSCollectionViewItemHighlightState highlightState;
 ```
 
-#### Discussion
+## Discussion
 
 The highlight state provides a visual indication of operations happening to items in the collection view. The highlight state normally toggles between the [`NSCollectionViewItem.HighlightState.none`](./highlightstate-swift.enum/none.md) and [`NSCollectionViewItem.HighlightState.forSelection`](./highlightstate-swift.enum/forselection.md) states, but other states may be applied to indicate transient conditions. For example, the [`NSCollectionViewItem.HighlightState.forDeselection`](./highlightstate-swift.enum/fordeselection.md) state is applied during interactive selections when a currently selected item is about to be deselected.
 

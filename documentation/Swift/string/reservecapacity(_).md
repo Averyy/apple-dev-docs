@@ -21,7 +21,7 @@ Reserves enough space in the string’s underlying storage to store the specifie
 mutating func reserveCapacity(_ n: Int)
 ```
 
-#### Discussion
+## Discussion
 
 Because each character in a string can require more than a single ASCII character’s worth of storage, additional allocation may be necessary when adding characters to a string after a call to `reserveCapacity(_:)`.
 

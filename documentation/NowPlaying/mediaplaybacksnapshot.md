@@ -25,7 +25,7 @@ struct MediaPlaybackSnapshot
 
 - [Publishing media sessions](./publishing-media-sessions.md)
 
-#### Overview
+## Overview
 
 Use a snapshot to describe whether the session is playing, paused, or buffering, along with the current elapsed time and the timestamp at which that elapsed time was captured. The system uses the snapshot to extrapolate elapsed time between updates.
 

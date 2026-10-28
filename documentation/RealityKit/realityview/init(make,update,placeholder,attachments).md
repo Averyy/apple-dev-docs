@@ -18,7 +18,7 @@ init<A, P>(make: @escaping @MainActor @Sendable (inout RealityViewContent, Reali
 
 Available when `Content` conforms to `View`.
 
-#### Discussion
+## Discussion
 
 This initializer doesn’t automatically add the attachment views to your [`RealityViewContent`](../realityviewcontent.md). You can access the entities that represent the attachments by calling the [`entity(for:)`](../realityviewattachments/entity%28for%29.md) method of the [`RealityViewAttachments`](../realityviewattachments.md), and add them to your content or as a child of another [`Entity`](../entity.md):
 

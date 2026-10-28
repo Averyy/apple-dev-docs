@@ -5,7 +5,7 @@
 
 Read App Clip and App Clip experience information.
 
-#### Overview
+## Overview
 
 The `appClips` resource represents an App Clip and its associated App Clip experiences. Use this resource to access existing App Clip metadata and to create, update, or delete App Clip experiences.
 

@@ -15,11 +15,11 @@ Creates the specified window controller from the storyboard and initializes it u
 func instantiateController<Controller>(identifier: NSStoryboard.SceneIdentifier, creator: ((NSCoder) -> Controller?)? = nil) -> Controller where Controller : NSWindowController
 ```
 
-#### Return Value
+## Return Value
 
 The window controller that corresponds to the specified identifier string. If no window controller has the given identifier, this method throws an exception.
 
-#### Discussion
+## Discussion
 
 Use this method to create a window controller object programmatically. Each time you call this method, it creates a new instance of the window controller using the block you provide.
 

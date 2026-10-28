@@ -21,7 +21,7 @@ An object representing the progress of the intent’s action.
 var progress: Progress { get }
 ```
 
-#### Discussion
+## Discussion
 
 You can update  the progress as your action moves forward. Note that the system receives an update of the progress.
 

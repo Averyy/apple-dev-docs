@@ -24,7 +24,7 @@ func addInputWithNoConnections(_ input: AVCaptureInput)
 - (void) addInputWithNoConnections:(AVCaptureInput *) input;
 ```
 
-#### Discussion
+## Discussion
 
 You can call this method while the session is running.
 

@@ -24,7 +24,7 @@ var numberOfHistogramEntries: Int
 NSUInteger numberOfHistogramEntries;
 ```
 
-#### Discussion
+## Discussion
 
 This value must be both a power of 2 and a minimum of 256 bins.
 

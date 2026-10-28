@@ -22,7 +22,7 @@ enum GLKTextureInfoOrigin
 enum GLKTextureInfoOrigin : GLint;
 ```
 
-#### Overview
+## Overview
 
 The origin’s position has no effect on how the texture is loaded into the context. If you need to flip the image before loading it, your app must explicitly add the GLKTextureOriginBottomLeft key to the options dictionary provided when loading the texture.
 

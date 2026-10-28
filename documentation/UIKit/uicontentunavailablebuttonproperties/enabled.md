@@ -19,7 +19,7 @@ A Boolean value that enables and disables the button.
 @property (nonatomic, getter=isEnabled) BOOL enabled;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `YES`.
 

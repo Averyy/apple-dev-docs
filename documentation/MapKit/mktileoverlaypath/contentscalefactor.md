@@ -25,7 +25,7 @@ var contentScaleFactor: CGFloat
 CGFloat contentScaleFactor;
 ```
 
-#### Discussion
+## Discussion
 
 This value is typically either `1.0` (for standard resolution displays) or `2.0` (for Retina displays).
 

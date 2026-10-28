@@ -21,7 +21,7 @@ The shape of the tensor.
 var shape: [Int] { get }
 ```
 
-#### Discussion
+## Discussion
 
 For example, 2 x 3 matrix may be represented as a tensor with the shape of `[2, 3]`.
 

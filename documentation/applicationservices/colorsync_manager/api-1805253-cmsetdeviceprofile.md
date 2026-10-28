@@ -17,11 +17,11 @@ CMError CMSetDeviceProfile (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A `CMError` value. See [Result Codes](../colorsync_manager.md#1670295).
 
-#### Overview
+## Overview
 
 This function provides a way to change a profile used by a given device by ID. It can be called after device registration by calibration applications to reset a device's profile from factory defaults to calibrated profiles. In order for this call to be made successfully, you must pass the `CMDeviceClass` and `CMDeviceID` of the device being calibrated along with the `CMDeviceProfileID` of the profile to set. (Device selection and identification can be facilitated using the function `CMIterateColorDevices`). If an invalid `CMDeviceClass` or `CMDeviceID` is passed, an error (`CMInvalidDeviceClass` or `CMInvalidDeviceID`) is returned. 
 

@@ -29,7 +29,7 @@ var startDate: Date { get }
 - [Adding samples to a workout](../adding-samples-to-a-workout.md)
 - [Running workout sessions](../running-workout-sessions.md)
 
-#### Discussion
+## Discussion
 
 The sample’s start date must be equal to or earlier than its end date.
 

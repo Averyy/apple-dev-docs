@@ -20,11 +20,11 @@ func AudioDeviceTranslateTime(_ inDevice: AudioObjectID, _ inTime: UnsafePointer
 extern OSStatus AudioDeviceTranslateTime(AudioObjectID inDevice, const AudioTimeStamp *inTime, AudioTimeStamp *outTime);
 ```
 
-#### Return Value
+## Return Value
 
 An OSStatus indicating success or failure. kAudioHardwareNotRunningError will be returned if the AudioDevice isn’t running.
 
-#### Discussion
+## Discussion
 
 Translates the time in the AudioDevice’s time base from one representation to another. Note that the device has to be running
 

@@ -15,7 +15,7 @@ An error that indicates the system doesn’t support notification forwarding for
 case unsupportedAccessory
 ```
 
-#### Discussion
+## Discussion
 
 This error indicates that the argument specified in the [`requestForwarding(for:)`](../accessorynotificationcenter/requestforwarding%28for%29.md) call doesn’t support notification forwarding.
 

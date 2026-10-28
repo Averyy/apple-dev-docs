@@ -15,9 +15,9 @@ Create an app asset library placement.
 - [Migrating to the App Asset Library](./migrating-to-the-app-asset-library.md)
 - [Placing assets on your App Store surfaces](./placing-assets-on-your-app-store-surfaces.md)
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

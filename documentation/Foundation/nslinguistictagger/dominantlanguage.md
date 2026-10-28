@@ -27,11 +27,11 @@ var dominantLanguage: String? { get }
 @property (copy, readonly, nullable) NSString * dominantLanguage;
 ```
 
-#### Return Value
+## Return Value
 
 The BCP-47 tag identifying the dominant language of the string, or the tag “und” if a specific language cannot be determined.
 
-#### Discussion
+## Discussion
 
 If you want to know the dominant language of a string that you’re analyzing with a linguistic tagger (for example, identifying part of speech for each word), specify the [`language`](../nslinguistictagscheme/language.md) tag scheme in the initializer. After you set the [`string`](./string.md) property of the linguistic tagger, the dominant language can be determined with the [`dominantLanguage`](./dominantlanguage.md) property, as shown in this example:
 

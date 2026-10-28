@@ -24,7 +24,7 @@ var isRunning: Bool { get }
 @property (nonatomic, readonly, getter=isRunning) BOOL running;
 ```
 
-#### Discussion
+## Discussion
 
 This property is key-value observable.
 

@@ -20,11 +20,11 @@ Returns the pixel buffer which is currently being displayed.
 func displayedReadOnlyPixelBuffer() -> CVReadOnlyPixelBuffer?
 ```
 
-#### Return Value
+## Return Value
 
 A CVReadOnlyPixelBuffer object.
 
-#### Discussion
+## Discussion
 
 CVReadOnlyPixelBuffer can be nil if the current player’s rate is non-zero, displayed pixel buffer is protected, no image is currently being displayed, or if the image is unavailable.
 

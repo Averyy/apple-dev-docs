@@ -22,7 +22,7 @@ Creates a new floating-point value using the sign of one value and the magnitude
 init(signOf: Self, magnitudeOf: Self)
 ```
 
-#### Discussion
+## Discussion
 
 The following example uses this initializer to create a new `Double` instance with the sign of `a` and the magnitude of `b`:
 

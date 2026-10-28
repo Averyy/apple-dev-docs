@@ -16,7 +16,7 @@ var isInverted: Bool { get set }
 @property (getter=isInverted) BOOL inverted;
 ```
 
-#### Discussion
+## Discussion
 
 To check that a situation does *not* occur during testing, create an expectation that is fulfilled when the unexpected situation occurs, and set its [`isInverted`](./isinverted.md) property to true. Your test will fail immediately if the inverted expectation is fulfilled.
 

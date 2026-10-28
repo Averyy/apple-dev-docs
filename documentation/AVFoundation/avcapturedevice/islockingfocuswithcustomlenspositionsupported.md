@@ -22,7 +22,7 @@ var isLockingFocusWithCustomLensPositionSupported: Bool { get }
 @property (nonatomic, readonly, getter=isLockingFocusWithCustomLensPositionSupported) BOOL lockingFocusWithCustomLensPositionSupported;
 ```
 
-#### Discussion
+## Discussion
 
 If this property’s value is [`false`](../../Swift/false.md), calling the [`setFocusModeLocked(lensPosition:completionHandler:)`](./setfocusmodelocked%28lensposition,completionhandler%29.md) method with a lens position value other than [`currentLensPosition`](./currentlensposition.md) raises an exception.
 

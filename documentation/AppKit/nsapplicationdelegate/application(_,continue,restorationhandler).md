@@ -20,11 +20,11 @@ optional func application(_ application: NSApplication, continue userActivity: N
 - (BOOL) application:(NSApplication *) application continueUserActivity:(NSUserActivity *) userActivity restorationHandler:(void (^)(NSArray<id<NSUserActivityRestoring>> *restorableObjects)) restorationHandler;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if this method handled continuing the activity; [`false`](../../Swift/false.md) to have AppKit attempt to continue the activity.
 
-#### Discussion
+## Discussion
 
 The app calls this method when it receives the data associated with the user activity. Use the data stored in the `NSUserActivity` object to re-create the user’s activity. This method is your opportunity to update your app so that it can perform the associated task.
 

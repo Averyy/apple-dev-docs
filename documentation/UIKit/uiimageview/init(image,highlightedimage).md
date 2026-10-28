@@ -23,11 +23,11 @@ init(image: UIImage?, highlightedImage: UIImage?)
 - (instancetype) initWithImage:(UIImage *) image highlightedImage:(UIImage *) highlightedImage;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized image view object.
 
-#### Discussion
+## Discussion
 
 The images you specify are used to configure the initial size of the image view itself. Use constraints and the image view’s content mode to adjust the image view’s final size onscreen. This method disables user interactions for the image view by setting the [`isUserInteractionEnabled`](./isuserinteractionenabled.md) property to [`false`](../../Swift/false.md).
 

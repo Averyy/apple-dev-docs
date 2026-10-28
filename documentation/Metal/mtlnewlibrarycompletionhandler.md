@@ -24,7 +24,7 @@ typealias MTLNewLibraryCompletionHandler = ((any MTLLibrary)?, (any Error)?) -> 
 typedef void (^)(id<MTLLibrary>, NSError *) MTLNewLibraryCompletionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The framework reports compiler warnings to the console. The `error` parameter doesn’t report warnings because it’s `nil` when there aren’t any compiler errors.
 

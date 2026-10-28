@@ -25,7 +25,7 @@ var imageSequenceAnimationMode: SCNParticleImageSequenceAnimationMode { get set 
 @property (nonatomic) SCNParticleImageSequenceAnimationMode imageSequenceAnimationMode;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`SCNParticleImageSequenceAnimationMode.repeat`](../scnparticleimagesequenceanimationmode/repeat.md), indicating that the image sequence loops continuously. For details on other values, see [`SCNParticleImageSequenceAnimationMode`](../scnparticleimagesequenceanimationmode.md).
 

@@ -19,11 +19,11 @@ func SKIndexGetDocumentTermCount(_ inIndex: SKIndex!, _ inDocumentID: SKDocument
 CFIndex SKIndexGetDocumentTermCount(SKIndexRef inIndex, SKDocumentID inDocumentID);
 ```
 
-#### Return Value
+## Return Value
 
 A CFIndex object containing the number of terms in a document.
 
-#### Discussion
+## Discussion
 
 In versions of macOS prior to OS X v10.4, the parameter type for `inDocumentID` was `CFIndex`. In macOS 10.4 and later, the parameter type is `SKDocumentID`.
 

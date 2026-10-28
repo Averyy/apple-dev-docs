@@ -29,7 +29,7 @@ optional func applicationWillEnterForeground(_ application: UIApplication)
 
 - [Transitioning to the UIKit scene-based life cycle](../transitioning-to-the-uikit-scene-based-life-cycle.md)
 
-#### Discussion
+## Discussion
 
 In iOS 4.0 and later, UIKit calls this method as part of the transition from the background to the active state. You can use this method to undo many of the changes you made to your app upon entering the background. The call to this method is invariably followed by a call to the [`applicationDidBecomeActive(_:)`](./applicationdidbecomeactive%28_%29.md) method, which then moves the app from the inactive to the active state.
 

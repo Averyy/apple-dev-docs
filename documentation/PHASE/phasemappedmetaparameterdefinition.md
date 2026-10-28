@@ -24,7 +24,7 @@ class PHASEMappedMetaParameterDefinition
 @interface PHASEMappedMetaParameterDefinition : PHASENumberMetaParameterDefinition
 ```
 
-#### Overview
+## Overview
 
 This class takes a metaparameter as input and plots its value on a curve defined by the [`envelope`](./phasemappedmetaparameterdefinition/envelope.md) property.
 

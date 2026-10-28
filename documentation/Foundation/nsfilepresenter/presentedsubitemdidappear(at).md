@@ -25,7 +25,7 @@ optional func presentedSubitemDidAppear(at url: URL)
 - (void) presentedSubitemDidAppearAtURL:(NSURL *) url;
 ```
 
-#### Discussion
+## Discussion
 
 This method is relevant for applications that present directories. This might occur if the delegate manages the contents of a directory or manages a file that is implemented as a file package. Your implementation of this method should take whatever actions necessary to incorporate the new file or directory into the presented content. For example, you might add the new item to your application’s data structures and refresh your user interface.
 

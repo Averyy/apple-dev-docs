@@ -21,7 +21,7 @@ A constraint that tests whether the provided signing identifier matches the sign
 struct SigningIdentifier
 ```
 
-#### Overview
+## Overview
 
 The signing identifier is referred to as simply the “Identifier” in codesign –dump output. The signing identifier is matched byte for byte (i.e. no unicode normalization occurs). Signing identifiers can be claimed by multiple signers. To check a signing identifier securely you should also require a [`ValidationCategory`](./validationcategory.md) constraint and for non-Apple code a [`TeamIdentifier`](./teamidentifier.md) constraint.
 

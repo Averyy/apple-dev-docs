@@ -20,11 +20,11 @@ func inverse(forRelationshipKey relationshipKey: String) -> String?
 - (NSString *) inverseForRelationshipKey:(NSString *) relationshipKey;
 ```
 
-#### Return Value
+## Return Value
 
 The name of the inverse relationship from the relationship specified by `relationshipKey`.
 
-#### Discussion
+## Discussion
 
 For a given key that defines the name of the relationship from the receiver’s class to another class, returns the name of the relationship from the other class to the receiver’s class. For example, suppose an Employee class has a relationship named `department` to a Department class, and that Department has a relationship named `employees` to Employee. The statement:
 

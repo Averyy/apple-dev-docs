@@ -5,7 +5,7 @@
 
 Handle events for external media players.
 
-#### Overview
+## Overview
 
 Apps that play audio or video content receive player events to start and stop playback, change tracks, and even rate an item. All iOS apps that create their own media player, macOS apps, and external media apps should support these events.
 

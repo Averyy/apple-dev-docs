@@ -19,7 +19,7 @@ Requests access to accounts of the specified type.
 - (void) requestAccessToAccountsWithType:(ACAccountType *) accountType withCompletionHandler:(ACAccountStoreRequestAccessCompletionHandler) handler;
 ```
 
-#### Discussion
+## Discussion
 
 This method displays a dialog to the user confirming whether the application has access to the account. If access is granted, the application has access to protected properties of and operations on all accounts of the specified type.
 

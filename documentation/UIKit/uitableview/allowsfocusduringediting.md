@@ -23,7 +23,7 @@ var allowsFocusDuringEditing: Bool { get set }
 @property (nonatomic) BOOL allowsFocusDuringEditing;
 ```
 
-#### Discussion
+## Discussion
 
 If you implement [`tableView(_:canFocusRowAt:)`](../uitableviewdelegate/tableview%28_,canfocusrowat%29.md), its return value takes precedence over the value of this property.
 

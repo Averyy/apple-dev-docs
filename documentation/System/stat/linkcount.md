@@ -21,7 +21,7 @@ Number of hard links
 var linkCount: Int { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding C property is `st_nlink`.
 

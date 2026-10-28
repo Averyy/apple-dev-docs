@@ -24,7 +24,7 @@ optional func visit(_ event: CNChangeHistoryAddGroupEvent)
 - (void) visitAddGroupEvent:(CNChangeHistoryAddGroupEvent *) event;
 ```
 
-#### Discussion
+## Discussion
 
 Inspect the group in the event that the system provides and update your app’s cached data accordingly.
 

@@ -24,7 +24,7 @@ struct IOPixelInformation {
 };
 ```
 
-#### Overview
+## Overview
 
 This structure is used by IOFramebuffer to define the format of the pixels.
 

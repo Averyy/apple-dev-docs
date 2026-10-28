@@ -23,7 +23,7 @@ struct DecelerationRate
 typedef CGFloat UIScrollViewDecelerationRate;
 ```
 
-#### Overview
+## Overview
 
 You use these constants to set the value of the [`decelerationRate`](./decelerationrate-swift.property.md) property.
 

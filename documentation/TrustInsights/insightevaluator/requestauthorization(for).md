@@ -16,11 +16,11 @@ Requests authorization from a person to generate evaluations.
 final nonisolated(nonsending) func requestAuthorization<each I>(for context: InsightEvaluator.InsightContext<repeat each I>) async throws -> InsightEvaluator.AuthorizationStatus where repeat each I : InsightEvaluator.InsightRequestProtocol
 ```
 
-#### Return Value
+## Return Value
 
 The [`InsightEvaluator.AuthorizationStatus`](./authorizationstatus.md) after a person has made their decision.
 
-#### Discussion
+## Discussion
 
 The method doesn’t return until the UI interaction is complete and a person has made a selection as to whether to allow access to insights.
 

@@ -23,7 +23,7 @@ static var byComposedCharacterSequences: NSString.EnumerationOptions { get }
 NSStringEnumerationByComposedCharacterSequences
 ```
 
-#### Discussion
+## Discussion
 
 Enumerates by composed character sequences. Equivalent to [`rangeOfComposedCharacterSequences(for:)`](../rangeofcomposedcharactersequences%28for%29.md).
 

@@ -16,11 +16,11 @@ Creates a descriptor initialized with the specified event type that stores the s
 + (NSAppleEventDescriptor *) descriptorWithDescriptorType:(DescType) descriptorType data:(NSData *) data;
 ```
 
-#### Return Value
+## Return Value
 
 A descriptor with the specified type and data, or `nil` if an error occurs.
 
-#### Discussion
+## Discussion
 
 You can use this method to create a descriptor that you can build into a complete Apple event by calling methods such as [`setAttribute(_:forKeyword:)`](./setattribute%28_,forkeyword%29.md), [`setDescriptor(_:forKeyword:)`](./setdescriptor%28_,forkeyword%29.md), and [`setParam(_:forKeyword:)`](./setparam%28_,forkeyword%29.md).
 

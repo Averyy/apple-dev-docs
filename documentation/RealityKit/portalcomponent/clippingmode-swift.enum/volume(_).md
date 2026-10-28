@@ -20,7 +20,7 @@ Clips the contents within the portal to a box-shaped region.
 case volume(PortalComponent.Volume)
 ```
 
-#### Discussion
+## Discussion
 
 Use this case for room-sized portals and other bounded portal spaces where content shouldn’t extend infinitely behind the portal surface. RealityKit hides any portal world content outside the volume.
 

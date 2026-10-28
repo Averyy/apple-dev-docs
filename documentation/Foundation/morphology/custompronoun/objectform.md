@@ -23,7 +23,7 @@ The object pronoun form to apply when using this custom pronoun behavior.
 var objectForm: String? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 In the English phrase “ask him,” the pronoun “him” exhibits the object form.
 

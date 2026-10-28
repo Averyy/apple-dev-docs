@@ -15,7 +15,7 @@ Initialize an adaptor for a virtual machine.
 init(virtualMachine: VZVirtualMachine)
 ```
 
-#### Discussion
+## Discussion
 
 If the virtual machine has graphics devices, the first display of the first graphics device is used. If the virtual machine has no graphics devices, the adaptor is created successfully but the view will have no display.
 

@@ -19,7 +19,7 @@ var minWidth: CGFloat { get set }
 @property CGFloat minWidth;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is `10.0`.
 

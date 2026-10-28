@@ -20,7 +20,7 @@ typealias GLKVertexAttributeParameters = _GLKVertexAttributeParameters
 typedef struct _GLKVertexAttributeParameters GLKVertexAttributeParameters;
 ```
 
-#### Fields
+## Fields
 
 - `GLboolean normalized`
 - `GLint size`

@@ -15,7 +15,7 @@ Equatable implementation.
 static func == (lhs: DiskImage.LayerType, rhs: DiskImage.LayerType) -> Bool
 ```
 
-#### Discussion
+## Discussion
 
 Two LayerType values are equal if they represent the same layer type. For overlay layers, the blockCount parameter is ignored in the comparison.
 

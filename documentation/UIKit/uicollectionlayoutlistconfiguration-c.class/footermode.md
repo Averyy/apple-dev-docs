@@ -19,7 +19,7 @@ The type of footer to use for the list.
 @property (nonatomic) UICollectionLayoutListFooterMode footerMode;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`UICollectionLayoutListFooterModeNone`](../uicollectionlayoutlistfootermode/uicollectionlayoutlistfootermodenone.md).
 

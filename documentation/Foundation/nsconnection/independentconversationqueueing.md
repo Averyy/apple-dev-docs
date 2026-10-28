@@ -16,7 +16,7 @@ A Boolean value that indicates whether the receiver handles remote messages atom
 @property BOOL independentConversationQueueing;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the receiver handles remote messages atomically, otherwise [`false`](../../Swift/false.md).
 

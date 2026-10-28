@@ -21,7 +21,7 @@ Returns an `NSString` object initialized by using a given format string as a tem
 - (instancetype) initWithFormat:(NSString *) format locale:(id) locale;
 ```
 
-#### Discussion
+## Discussion
 
 Pass comma-separated list of trailing variadic arguments to substitute into `format`.
 

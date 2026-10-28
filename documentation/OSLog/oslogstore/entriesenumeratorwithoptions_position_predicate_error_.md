@@ -21,7 +21,7 @@ Returns a log enumerator based on an underlying store.
 - (OSLogEnumerator *) entriesEnumeratorWithOptions:(OSLogEnumeratorOptions) options position:(OSLogPosition *) position predicate:(NSPredicate *) predicate error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 The returned object represents the sequence of entries for the `OSLogStore`. Use the additional parameters to control which entries are returned and their order.
 

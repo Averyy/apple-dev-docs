@@ -21,7 +21,7 @@ A mode that renders pixels of bitmap images as-is.
 case original
 ```
 
-#### Discussion
+## Discussion
 
 For system images created from the SF Symbol set, multicolor symbols respect the current foreground and accent colors.
 

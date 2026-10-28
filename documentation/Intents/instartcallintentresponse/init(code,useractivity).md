@@ -23,7 +23,7 @@ init(code: INStartCallIntentResponseCode, userActivity: NSUserActivity?)
 - (instancetype) initWithCode:(INStartCallIntentResponseCode) code userActivity:(NSUserActivity *) userActivity;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized response object or `nil` if unable to create the object.
 

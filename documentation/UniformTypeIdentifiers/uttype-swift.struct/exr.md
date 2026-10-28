@@ -21,7 +21,7 @@ An EXR image.
 static var exr: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 **UTI:** com.ilm.openexr-image
 

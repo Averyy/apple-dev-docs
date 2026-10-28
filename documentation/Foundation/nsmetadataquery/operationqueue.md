@@ -25,7 +25,7 @@ var operationQueue: OperationQueue? { get set }
 @property (retain, nullable) NSOperationQueue * operationQueue;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to decouple the processing of results from the thread used to execute the query. This makes it easier to synchronize query result processing with other related operations—such as updating the data model or user interface—which you might want to perform on the main queue.
 

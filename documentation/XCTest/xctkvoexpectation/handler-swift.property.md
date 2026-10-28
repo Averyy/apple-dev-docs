@@ -27,7 +27,7 @@ var handler: XCTKVOExpectation.Handler? { get set }
 @property (atomic, copy, nullable) XCKeyValueObservingExpectationHandler handler;
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**:  The system ignores the expectation’s [`expectedValue`](./expectedvalue.md) property when the [`handler`](./handler-swift.property.md) is non-nil.
 

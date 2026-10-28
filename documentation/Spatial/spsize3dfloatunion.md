@@ -19,11 +19,11 @@
 static SPSize3DFloat SPSize3DFloatUnion(SPSize3DFloat size, SPSize3DFloat other);
 ```
 
-#### Return Value
+## Return Value
 
 A size structure that is the smallest size that contains two sizes.
 
-#### Discussion
+## Discussion
 
 Returns the smallest size that contains two sizes.
 

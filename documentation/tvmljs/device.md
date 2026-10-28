@@ -15,7 +15,7 @@ An object that provides information about an Apple TV and the host app installed
 interface Device
 ```
 
-#### Overview
+## Overview
 
 You cannot create an instance of the `Device` class. An instance of this class is available in the global context as `Device`.
 

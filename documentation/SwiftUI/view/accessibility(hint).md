@@ -24,7 +24,7 @@ nonisolated
 func accessibility(hint: Text) -> ModifiedContent<Self, AccessibilityAttachmentModifier>
 ```
 
-#### Discussion
+## Discussion
 
 Provide a hint in the form of a brief phrase, like “Purchases the item” or “Downloads the attachment”.
 

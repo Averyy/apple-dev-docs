@@ -5,19 +5,19 @@
 
 Released October 3, 2024 — 18.0.1 (20619.1.26.30)
 
-#### Overview
+## Overview
 
 Safari 18.0.1 is available for iOS 18.0.1, iPadOS 18.0.1, visionOS 2.0.1, macOS 15.0.1, macOS Sonoma, and macOS Ventura.
 
-##### Networking
+### Networking
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed `SameSite` default behavior.
 
-##### Web Extensions
+### Web Extensions
 
-###### Resolved Issue
+#### Resolved Issue
 
 - Fixed an issue to restore lost Safari Web Extension data.
 

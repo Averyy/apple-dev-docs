@@ -18,11 +18,11 @@ Synthesizes a property for accessors.
 ## Declaration
 
 ```swift
-@attached
-(accessor, names: named(init), named(get), named(set), named(_modify)) @attached(peer, names: prefixed(`_`)) macro ObservationTracked()
+@attached(accessor, names: named(init), named(get), named(set), named(_modify))
+@attached(peer, names: prefixed(`_`)) macro ObservationTracked()
 ```
 
-#### Overview
+## Overview
 
 The [Observation](./Observation.md) module uses this macro. Its use outside of the framework isn’t necessary.
 

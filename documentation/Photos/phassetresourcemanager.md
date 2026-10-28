@@ -24,7 +24,7 @@ class PHAssetResourceManager
 @interface PHAssetResourceManager : NSObject
 ```
 
-#### Overview
+## Overview
 
 An asset can have multiple underlying data resources—for example, both original and edited versions—each of which is represented by a [`PHAssetResource`](./phassetresource.md) object. Unlike the [`PHImageManager`](./phimagemanager.md) class, which provides and caches the primary representations of assets as thumbnails, image objects, or video objects, the asset resource manager provides direct access to these underlying data resources.
 

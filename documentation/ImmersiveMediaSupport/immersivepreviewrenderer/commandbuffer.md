@@ -17,7 +17,7 @@ The command buffer of the render.
 var commandBuffer: (any MTLCommandBuffer)? { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use this to present a drawable and commit the command buffer to finalize the frame.
 

@@ -20,7 +20,7 @@ Creates equivalent content from a JSON string.
 init(json: String) throws
 ```
 
-#### Discussion
+## Discussion
 
 The JSON string you provide may be incomplete. This is useful for correctly handling partially generated responses.
 

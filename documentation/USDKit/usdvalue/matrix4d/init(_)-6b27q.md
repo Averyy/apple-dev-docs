@@ -20,7 +20,7 @@ Creates a matrix from a Spatial projective transform (double-precision).
 init(_ projectiveTransform: ProjectiveTransform3D)
 ```
 
-#### Discussion
+## Discussion
 
 `ProjectiveTransform3D` is column-major and treats vectors as column vectors; `Matrix4d` is row-major and treats vectors as row vectors. The in-memory layout is identical, so this initializer reads each `m[col, row]` element and lays it out row-major.
 

@@ -15,11 +15,11 @@ Gets the current frame number of the USB controller.
 virtual kern_return_t GetFrameNumber(uint64_t *frameNumber, uint64_t *theTime);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 
-#### Discussion
+## Discussion
 
 This method returns the current frame number of the USB controller, omitting the microframe. Use this information to schedule future isochronous requests.
 

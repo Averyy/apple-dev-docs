@@ -24,7 +24,7 @@ func setValueForXAxis(_ xAxis: Float, yAxis: Float)
 - (void) setValueForXAxis:(float) xAxis yAxis:(float) yAxis;
 ```
 
-#### Discussion
+## Discussion
 
 This method does nothing if the associated controller isn’t a snapshot (its [`isSnapshot`](../gccontroller/issnapshot.md) property is [`false`](../../Swift/false.md)`)`. Otherwise, this method sets the value of the direction pad’s buttons as well.
 

@@ -19,7 +19,7 @@ func setWidth(_ width: CGFloat)
 - (void) setWidth:(CGFloat) width;
 ```
 
-#### Discussion
+## Discussion
 
 You cannot use this method to alter the width of tables or the thickness of vertical separator items. Changing the width of a [`WKInterfaceImage`](../wkinterfaceimage.md) object causes the image’s content scaling mode to change to [`UIView.ContentMode.scaleToFill`](../../UIKit/uiview/contentmode-swift.enum/scaletofill.md).
 

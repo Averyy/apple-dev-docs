@@ -19,7 +19,7 @@ var PIN_BASED_PREEMPTION_TIMER: UInt32 { get }
 PIN_BASED_PREEMPTION_TIMER
 ```
 
-#### Discussion
+## Discussion
 
 A VM Exit occurs when the timer reaches zero.
 

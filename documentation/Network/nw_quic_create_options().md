@@ -25,7 +25,7 @@ func nw_quic_create_options() -> nw_protocol_options_t
 nw_protocol_options_tnw_quic_create_options();
 ```
 
-#### Return Value
+## Return Value
 
 A default set of QUIC connection options.
 

@@ -17,7 +17,7 @@ Controls whether grab strength falls off based on particle distance from the vol
 struct Falloff
 ```
 
-#### Overview
+## Overview
 
 When grabbing particles using a volume, falloff determines how strongly particles are dragged based on their position within the volume. With falloff disabled, all particles inside the volume are dragged with equal strength. With falloff enabled, particles closer to the volume surface are dragged less strongly, producing smoother motion.
 

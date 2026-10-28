@@ -16,7 +16,7 @@ nonisolated
 init()
 ```
 
-#### Discussion
+## Discussion
 
 Don’t call this initializer directly. Instead, use the [`checkbox`](../togglestyle/checkbox.md) static variable to create this style:
 

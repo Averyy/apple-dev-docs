@@ -10,7 +10,7 @@ framework: "Swift-Org/EmbeddedSwift"
 
 Program without an SDK for maximum control and minimal size.
 
-#### Overview
+## Overview
 
 Developing in “baremetal mode” means programming directly for the hardware without any operating system or SDK abstractions. This provides maximum control and minimum codesize, but requires deeper understanding of the hardware.
 
@@ -21,7 +21,7 @@ Embedded Swift supports true baremetal development, where you directly program h
 - Projects requiring full control over every aspect of the hardware
 - Educational purposes to understand how hardware and software interact
 
-#### Key components of a baremetal project
+## Key components of a baremetal project
 
 A complete baremetal project typically includes:
 
@@ -34,9 +34,9 @@ A complete baremetal project typically includes:
 
 For a full working example of all these components, see [Setting up a baremetal STM32 project with Embedded Swift](./stm32baremetalguide.md). The rest of this document provides general platform-independent guidance when working in baremetal mode. However, much of the problem space of baremetal development is outside of the scope of this documentation, and requires deeper familiary with your specific setup. This information is typically provided by your board vendor, the spec of the MCU, the ISA spec of the execution core, the C toolchain documentation, ELF file format spec, and other similar sources.
 
-#### Hardware access patterns
+## Hardware access patterns
 
-##### 1. Direct memory access using pointers
+### 1. Direct memory access using pointers
 
 Note that using UnsafePointers to directly access registers at known addresses is not recommended in almost any situation because doing that correctly is tricky, it’s inherently unsafe (and shifts the safety responsibility to the user) and can easily cause very hard to debug runtime problems. However, sometimes it might be neccessary to use this method.
 
@@ -66,7 +66,7 @@ gpioDataRegister.store(1 << 5)
 
 Whenever possible, consider using Swift MMIO (see below) which does also provide proper volatile semantics, but more importantly provides type safety on individual registers and their fields.
 
-##### 2. Using Swift MMIO for type-safe register access
+### 2. Using Swift MMIO for type-safe register access
 
 Swift MMIO provides strongly-typed access to memory-mapped hardware and can automatically generate register definitions from SVD files. It can provide a higher-level type-safe access to hardware registers, for example:
 
@@ -77,7 +77,7 @@ gpioa.odr.write { $0.odr5 = true } // Set pin 5 high
 
 See [Swift MMIO](https://github.com/apple/swift-mmio/) for details and [Setting up a baremetal STM32 project with Embedded Swift](./stm32baremetalguide.md) for a guided example of using it.
 
-#### Creating a linker script and data segment relocation
+## Creating a linker script and data segment relocation
 
 A baremetal project requires a custom linker script to properly place code and data in memory. This is a relatively complex task to get right, and requires understanding of the memory map, flash and RAM setup of your target device, as well as understanding the ELF file format and what code/data sections do you expect your entire program to use.
 
@@ -135,7 +135,7 @@ Tip: If this handling is not done correctly, a typical symptom is that global va
 
 Also, projects are often created using linker script examples copied from a manufacturers website, sample code, etc. Whilst this may often work initially, be particularly careful that .got sections are included correctly, as shown above. Prior to 6.5, Swift can produce position independent code (PIC) even on embedded bare metal, which may utilise a Global Offset Table (GOT). Ensuring, if such sections are generated, they are included in firmware, placed correctly and symbols defined by the linker take account of them, will help avoid subtle, hard to reproduce crashes in some cases.
 
-#### Vector table and interrupts
+## Vector table and interrupts
 
 The vector table is a critical component that maps hardware interrupts and exceptions to specific handler functions in your code. It’s typically placed at the beginning of flash memory and contains function pointers that the processor uses when responding to various events.
 
@@ -172,7 +172,7 @@ func uartInterruptHandler() {
 
 However, note that Swift currently does not provide any form of synchronization or “interrupt safety” for the code that executes the interrupt. Namely, if your interrupt handler modifies global variables that are also accessed by your main program, you need to be careful about data races and ensure proper synchronization (such as using atomic operations or disabling interrupts during critical sections). Additionally, interrupt handlers should be kept short and fast to avoid blocking other important system events.
 
-#### Building a minimal project
+## Building a minimal project
 
 To build an Embedded Swift baremetal project with SwiftPM, you will need a setup like this:
 

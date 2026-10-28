@@ -19,7 +19,7 @@ The system standard layout dimension for reserved layout size.
 extern const CGFloat UIListContentImageStandardDimension;
 ```
 
-#### Discussion
+## Discussion
 
 Setting the [`reservedLayoutSize`](./uilistcontentimageproperties/reservedlayoutsize.md) width or height to this constant results in using the system standard value for a symbol image for that dimension, even when the image is not a symbol image.
 

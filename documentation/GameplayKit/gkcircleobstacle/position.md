@@ -24,7 +24,7 @@ var position: vector_float2 { get set }
 @property (nonatomic, assign) vector_float2 position;
 ```
 
-#### Discussion
+## Discussion
 
 The coordinate system for agents and obstacles is arbitrary; you may choose how to map agent and obstacle positions and sizes into your game scene.
 

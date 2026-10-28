@@ -24,7 +24,7 @@ var diffuseAlbedoTexture: (any MTLTexture)? { get set }
 @property (nonatomic, retain, nullable) id<MTLTexture> diffuseAlbedoTexture;
 ```
 
-#### Discussion
+## Discussion
 
 You are responsible for ensuring the usage and pixel format of the texture you assign to this property matches the texture usage [`diffuseAlbedoTextureUsage`](./diffusealbedotextureusage.md) requests and the pixel format that [`diffuseAlbedoTextureFormat`](../mtlfxtemporaldenoisedscalerdescriptor/diffusealbedotextureformat.md) requests.
 

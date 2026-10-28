@@ -13,7 +13,7 @@ virtual void close(
  IOOptionBits options = 0 );
 ```
 
-#### Overview
+## Overview
 
 IOService provides generic open and close semantics to track clients of a provider that have established an active datapath. The use of open and `close`, and rules regarding ownership are family defined, and defined by the handleOpen and handleClose methods in the provider.
 

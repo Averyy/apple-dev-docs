@@ -9,7 +9,7 @@ Delete an Xcode Cloud product and all of its associated workflows, builds, and a
 **Availability**:
 - App Store Connect API 1.5+
 
-#### Discussion
+## Discussion
 
 To delete an Xcode Cloud product, call this endpoint using the HTTP `DELETE` method like this:
 

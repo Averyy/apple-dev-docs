@@ -15,7 +15,7 @@ A notification that the device was seized by another client.
 case deviceSeized
 ```
 
-#### Discussion
+## Discussion
 
 After the device is seized by another client, notifications are paused until [`HIDDeviceClient.Notification.deviceUnseized`](./deviceunseized.md) is received.
 

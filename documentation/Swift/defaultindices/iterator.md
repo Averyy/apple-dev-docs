@@ -23,7 +23,7 @@ typealias Iterator = IndexingIterator<DefaultIndices<Elements>>
 
 Available when `Elements` conforms to `Collection`.
 
-#### Discussion
+## Discussion
 
 By default, a collection conforms to the `Sequence` protocol by supplying `IndexingIterator` as its associated `Iterator` type.
 

@@ -22,7 +22,7 @@ case success
 INCancelWorkoutIntentResponseCodeSuccess
 ```
 
-#### Discussion
+## Discussion
 
 Use this code when your app extension successfully cancels the workout.
 

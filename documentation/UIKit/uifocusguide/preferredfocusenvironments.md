@@ -28,7 +28,7 @@ var preferredFocusEnvironments: [any UIFocusEnvironment]! { get set }
 - [About focus interactions for Apple TV](../about-focus-interactions-for-apple-tv.md)
 - [Creating custom navigation interactions](../creating-custom-navigation-interactions.md)
 
-#### Discussion
+## Discussion
 
 Setting this property to a nonempty array marks this guide’s [`layoutFrame`](../uilayoutguide/layoutframe.md) as focusable. If empty, this guide is effectively disabled.
 

@@ -11,7 +11,7 @@ An opaque type that describes the graphics environment for printing a document.
 typedef struct OpaquePMPrintContext* PMPrintContext;
 ```
 
-#### Overview
+## Overview
 
 This data type is used by functions that are not recommended or deprecated.
 

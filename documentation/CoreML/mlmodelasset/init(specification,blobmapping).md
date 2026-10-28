@@ -24,7 +24,7 @@ convenience init(specification specificationData: Data, blobMapping: [URL : Data
 + (instancetype) modelAssetWithSpecificationData:(NSData *) specificationData blobMapping:(NSDictionary<NSURL *,NSData *> *) blobMapping error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 An ML Program may use `BlobFileValue` syntax, which stores the blob data in external files and refers them by URL. This factory method enables in-memory workflow for such models by using the specified in-memory blob data in place of the external files.
 

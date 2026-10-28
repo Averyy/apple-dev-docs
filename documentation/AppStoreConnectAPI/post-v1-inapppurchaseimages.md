@@ -11,7 +11,7 @@ Reserve an image asset to appear in the App Store, representing an In-App Purcha
 
 > **Deprecated**: This endpoint is deprecated. Use [`Create an In-App Purchase image`](./post-v2-inapppurchaseimages.md) instead.
 
-#### Discussion
+## Discussion
 
 > **Note**:  Changes that you make to product metadata with the App Store Connect API can take up to 1 hour to appear in the sandbox environment.
 

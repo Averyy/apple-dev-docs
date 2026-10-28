@@ -27,7 +27,7 @@ static let lemma: NSLinguisticTagScheme
 extern NSLinguisticTagScheme const NSLinguisticTagSchemeLemma;
 ```
 
-#### Discussion
+## Discussion
 
 For example, the stem of the English word “reading” is “read”.
 

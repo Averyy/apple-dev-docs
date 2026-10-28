@@ -21,7 +21,7 @@ The amount of water vapor in the air.
 var humidity: Double
 ```
 
-#### Discussion
+## Discussion
 
 Relative humidity measures the amount of water vapor in the air, compared to the maximum amount that the air can hold at the current temperature.
 

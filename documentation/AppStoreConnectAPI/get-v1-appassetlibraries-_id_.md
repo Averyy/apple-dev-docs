@@ -9,9 +9,9 @@ Get information about an app’s asset library.
 **Availability**:
 - App Store Connect API 4.5+
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

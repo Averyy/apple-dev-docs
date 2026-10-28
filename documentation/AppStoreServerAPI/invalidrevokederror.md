@@ -19,7 +19,7 @@ object InvalidRevokedError
 
 - [App Store Server API changelog](./app-store-server-api-changelog.md)
 
-#### Discussion
+## Discussion
 
 The [`Get Transaction History`](./get-transaction-history.md) endpoint returns this error if you provide an invalid value for the `revoked` query parameter.
 

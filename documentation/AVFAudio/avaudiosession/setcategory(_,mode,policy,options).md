@@ -24,7 +24,7 @@ func setCategory(_ category: AVAudioSession.Category, mode: AVAudioSession.Mode,
 - (BOOL) setCategory:(AVAudioSessionCategory) category mode:(AVAudioSessionMode) mode routeSharingPolicy:(AVAudioSessionRouteSharingPolicy) policy options:(AVAudioSessionCategoryOptions) options error:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 You specify options only with a default routing policy. With a long-form route-sharing policy, you can use the [`playback`](./category-swift.struct/playback.md) category and the [`default`](./mode-swift.struct/default.md), [`moviePlayback`](./mode-swift.struct/movieplayback.md), and [`spokenAudio`](./mode-swift.struct/spokenaudio.md) modes.
 

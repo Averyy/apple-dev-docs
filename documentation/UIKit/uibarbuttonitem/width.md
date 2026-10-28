@@ -23,7 +23,7 @@ var width: CGFloat { get set }
 @property (nonatomic, assign, readwrite) CGFloat width;
 ```
 
-#### Discussion
+## Discussion
 
 If this property value is positive, the width of the combined image and title are fixed. If the value is `0.0` or negative, the item sets the width of the combined image and title to fit. This property is ignored if the style uses radio mode. The default value is `0.0`.
 

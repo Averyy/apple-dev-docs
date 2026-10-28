@@ -17,7 +17,7 @@ A Boolean value that indicates whether observer queries receive updates while ru
 - **Name**: `com.apple.developer.healthkit.background-delivery` (HealthKit Observer Query Background Delivery)
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 If this key is [`true`](../../Swift/true.md), your app can enable background delivery of [`HKObserverQuery`](../../HealthKit/hkobserverquery.md) instances by calling the HealthKit store’s [`enableBackgroundDelivery(for:frequency:withCompletion:)`](../../HealthKit/hkhealthstore/enablebackgrounddelivery%28for,frequency,withcompletion%29.md) method. By default, the value is [`false`](../../Swift/false.md).
 

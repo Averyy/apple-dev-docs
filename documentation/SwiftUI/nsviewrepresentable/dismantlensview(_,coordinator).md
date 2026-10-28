@@ -17,7 +17,7 @@ Cleans up the presented AppKit view (and coordinator) in anticipation of their r
 @preconcurrency static func dismantleNSView(_ nsView: Self.NSViewType, coordinator: Self.Coordinator)
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to perform additional clean-up work related to your custom view. For example, you might use this method to remove observers or update other parts of your SwiftUI interface.
 

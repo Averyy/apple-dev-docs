@@ -25,7 +25,7 @@ func start()
 - (void) start;
 ```
 
-#### Discussion
+## Discussion
 
 Calling this method is necessary only if you create a connection with the [`init(request:delegate:startImmediately:)`](./init%28request,delegate,startimmediately%29.md) method and provide [`false`](../../Swift/false.md) for the `startImmediately` parameter. If you don’t schedule the connection in a run loop or an operation queue before calling this method, the connection is scheduled in the current run loop in the default mode.
 

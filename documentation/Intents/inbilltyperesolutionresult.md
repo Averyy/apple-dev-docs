@@ -25,7 +25,7 @@ class INBillTypeResolutionResult
 @interface INBillTypeResolutionResult : INIntentResolutionResult
 ```
 
-#### Overview
+## Overview
 
 You create [`INBillTypeResolutionResult`](./inbilltyperesolutionresult.md) objects when resolving intent parameters containing a value of type [`INBillType`](./inbilltype.md). Use the creation method that best reflects your ability to resolve the parameter. For additional resolution options, see [`INIntentResolutionResult`](./inintentresolutionresult.md).
 

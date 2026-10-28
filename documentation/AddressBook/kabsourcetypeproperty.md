@@ -23,7 +23,7 @@ let kABSourceTypeProperty: ABPropertyID
 extern const ABPropertyID kABSourceTypeProperty;
 ```
 
-#### Discussion
+## Discussion
 
 Type: [`ABSourceType`](./absourcetype.md)
 

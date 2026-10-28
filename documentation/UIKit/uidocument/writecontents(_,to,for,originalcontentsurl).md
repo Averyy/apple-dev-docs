@@ -22,7 +22,7 @@ func writeContents(_ contents: Any, to url: URL, for saveOperation: UIDocument.S
 - (BOOL) writeContents:(id) contents toURL:(NSURL *) url forSaveOperation:(UIDocumentSaveOperation) saveOperation originalContentsURL:(NSURL *) originalContentsURL error:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called by the [`writeContents(_:andAttributes:safelyTo:for:)`](./writecontents%28_,andattributes,safelyto,for%29.md) to write the actual file data. It is passed the contents object returned from your [`contents(forType:)`](./contents%28fortype%29.md) implementation. The default implementation of this method supports [`NSData`](../../Foundation/nsdata.md) or [`FileWrapper`](../../Foundation/filewrapper.md) contents by asking the contents object to save itself to the corresponding URL.
 

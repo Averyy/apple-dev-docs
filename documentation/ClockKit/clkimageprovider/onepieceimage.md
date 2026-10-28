@@ -21,7 +21,7 @@ var onePieceImage: UIImage { get set }
 @property (nonatomic, retain) UIImage * onePieceImage;
 ```
 
-#### Discussion
+## Discussion
 
 The one-piece image is used in multicolor environments when no two-piece image is available. The one-piece image is always used in monochrome environments. This property must not be `nil`.
 

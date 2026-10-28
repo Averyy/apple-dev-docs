@@ -14,7 +14,7 @@
 gestaltNativeCPUtype = 'cput'
 ```
 
-#### Discussion
+## Discussion
 
 The selector you pass to the `Gestalt` function to determine the native CPU type.
 

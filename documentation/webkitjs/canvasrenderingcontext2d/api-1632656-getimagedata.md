@@ -21,11 +21,11 @@ ImageData getImageData(
 );
 ```
 
-#### Return Value
+## Return Value
 
 An `imageData` object. 
 
-#### Discussion
+## Discussion
 
 All parameter values are in pixels relative to the upper-left corner of the canvas, *not* the current canvas coordinate system. The returned `imageData` object has two read-only properties: `width` and `height`. The `imageData` object’s `data` property is a one-dimensional array of RGBa pixel values in row order from left to right, with four values for each pixel—red, green, blue, and alpha. The RGBa values are integers with a range of 0-255, inclusive.
 

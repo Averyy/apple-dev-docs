@@ -17,11 +17,11 @@ Promise<CloudKit.SubscriptionsResponse, CloudKit.CKError> fetchSubscriptions(
 );
 ```
 
-#### Return Value
+## Return Value
 
 A `Promise` object that resolves to a [`CloudKit.SubscriptionsResponse`](../cloudkit.subscriptionsresponse.md) object, or rejects to a [`CKError`](../cloudkit/ckerror.md) object.
 
-#### Discussion
+## Discussion
 
 See [Fetching Subscriptions by Identifier (subscriptions/lookup)](https://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/CloudKitWebServicesReference/LookupSubscriptionsbyID.html#//apple_ref/doc/uid/TP40015240-CH17) in [CloudKit Web Services Reference](https://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/CloudKitWebServicesReference/index.html#//apple_ref/doc/uid/TP40015240).
 

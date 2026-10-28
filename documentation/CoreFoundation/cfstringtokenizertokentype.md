@@ -25,7 +25,7 @@ struct CFStringTokenizerTokenType
 enum CFStringTokenizerTokenType : CFOptionFlags;
 ```
 
-#### Overview
+## Overview
 
 See [http://www.unicode.org/reports/tr29/#Word_Boundaries](http://www.unicode.org/reports/tr29/#Word_Boundaries) for a detailed description of word boundaries.
 

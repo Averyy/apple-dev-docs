@@ -21,7 +21,7 @@ A Boolean value indicating whether the scalar is ignored for casing purposes.
 var isCaseIgnorable: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property corresponds to the “Case_Ignorable” property in the [Unicode Standard](http://www.unicode.org/versions/latest/).
 

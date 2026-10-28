@@ -15,7 +15,7 @@ An experience in which the system does not apply spatial processing to the audio
 @interface CABypassedSpatialAudio : CASpatialAudioExperience
 ```
 
-#### Overview
+## Overview
 
 The Objective-C version of the [`BypassedSpatialAudio`](./bypassedspatialaudio.md) Swift type.
 

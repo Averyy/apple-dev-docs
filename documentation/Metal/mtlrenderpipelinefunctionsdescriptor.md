@@ -24,7 +24,7 @@ class MTLRenderPipelineFunctionsDescriptor
 @interface MTLRenderPipelineFunctionsDescriptor : NSObject
 ```
 
-#### Overview
+## Overview
 
 When you create a render pipeline that takes visible functions as parameters, you need to specify all possible functions that the render pipeline can call. If you already have a pipeline, you can create a new render pipeline with the same configuration but additional callable functions. To create the new pipeline state, configure an [`MTLRenderPipelineFunctionsDescriptor`](./mtlrenderpipelinefunctionsdescriptor.md) instance with the additional callable functions to add, and then call the pipeline state’s [`makeRenderPipelineState(additionalBinaryFunctions:)`](./mtlrenderpipelinestate/makerenderpipelinestate%28additionalbinaryfunctions%29-84te1.md) method, passing the descriptor.
 

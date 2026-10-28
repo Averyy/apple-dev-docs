@@ -21,7 +21,7 @@ A regex component that represents an atomic group.
 struct Local<Output>
 ```
 
-#### Overview
+## Overview
 
 An atomic group opens a local backtracking scope which, upon successful exit, discards any remaining backtracking points from within the scope.
 

@@ -15,7 +15,7 @@ The thickness of the slider knob, in pixels.
 - (void) setKnobThickness:(CGFloat) thickness;
 ```
 
-#### Discussion
+## Discussion
 
 The thickness is defined to be the extent of the knob along the long dimension of the bar. In a vertical slider, a knob’s thickness is its height; in a horizontal slider, its thickness is its width.
 

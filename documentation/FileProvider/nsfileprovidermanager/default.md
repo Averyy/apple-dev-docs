@@ -22,7 +22,7 @@ class var `default`: NSFileProviderManager { get }
 @property (class, strong, readonly) NSFileProviderManager * defaultManager;
 ```
 
-#### Discussion
+## Discussion
 
 This property returns a manager for the default domain on iOS. You can access the default domain in both the containing app and the File Provider extension. On macOS, use an explicit domain by calling [`init(for:)`](./init%28for%29.md) instead.
 

@@ -25,11 +25,11 @@ init(fileURLWithFileSystemRepresentation path: UnsafePointer<CChar>, isDirectory
 - (instancetype) initFileURLWithFileSystemRepresentation:(const char *) path isDirectory:(BOOL) isDir relativeToURL:(NSURL *) baseURL;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the initialized object.
 
-#### Discussion
+## Discussion
 
 The file system representation format is described in File Encodings and Fonts.
 

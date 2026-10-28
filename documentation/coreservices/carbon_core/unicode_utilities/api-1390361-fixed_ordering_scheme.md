@@ -4,7 +4,7 @@
 
 Specifies to use the fixed ordering scheme.
 
-#### Overview
+## Overview
 
 `UCCollateOptions` is a 32-bit value. Bits 0-23 are described in  [`UCCollateOptions`](../../uccollateoptions.md). The field consisting of bits 24-31 is used for values that specify which fixed ordering scheme to use with the function  [`UCCompareTextNoLocale(_:_:_:_:_:_:_:)`](../../api-1390513-uccomparetextnolocale.md). Currently only one such scheme is provided.
 

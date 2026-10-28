@@ -21,11 +21,11 @@ Returns a new path with filled regions in either this path or the given path.
 func union(_ other: Path, eoFill: Bool = false) -> Path
 ```
 
-#### Return Value
+## Return Value
 
 A new path.
 
-#### Discussion
+## Discussion
 
 The filled region of resulting path is the combination of the filled region of both paths added together.
 

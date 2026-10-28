@@ -17,7 +17,7 @@ Defines the interface for receiving messages from an [`MKReverseGeocoder`](./mkr
 @protocol MKReverseGeocoderDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 You use this protocol to receive the placemark information for a given coordinate or to retrieve any errors that occurred during the reverse-geocoding process.
 

@@ -20,7 +20,7 @@ case genericItemAttr
 kSecGenericItemAttr
 ```
 
-#### Discussion
+## Discussion
 
 You use this tag to set or get a value of untyped bytes that represents a user-defined attribute. This is unique to generic password attributes.
 

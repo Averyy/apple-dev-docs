@@ -19,7 +19,7 @@ var colorSpace: NSColorSpace? { get set }
 @property (strong, nullable) NSColorSpace * colorSpace;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is `nil` if the window does not have a backing store, and is off-screen.
 

@@ -21,7 +21,7 @@ Total size allocated, in bytes
 var sizeAllocated: Int64 { get }
 ```
 
-#### Discussion
+## Discussion
 
 The semantics of this property are tied to the underlying C `st_blocks` field, which can have file-system–dependent behavior.
 

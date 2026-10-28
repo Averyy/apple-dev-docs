@@ -19,7 +19,7 @@ protocol NSFileProviderSearching : NSObjectProtocol
 @protocol NSFileProviderSearching <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Implement this protocol in your provider’s principal class to support searching files in cloud storage. To make search available to the person using the device, also set the property [`supportsStringSearchRequest`](./nsfileproviderdomain/supportsstringsearchrequest.md) to `true`.
 

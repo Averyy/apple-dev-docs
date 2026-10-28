@@ -19,7 +19,7 @@ var alwaysUsesMultipleValuesMarker: Bool { get set }
 @property BOOL alwaysUsesMultipleValuesMarker;
 ```
 
-#### Discussion
+## Discussion
 
 Setting this property to [`true`](../../Swift/true.md) can increase performance if your application doesn’t allow editing multiple values. The default is [`false`](../../Swift/false.md). This property is observable using key-value observing.
 

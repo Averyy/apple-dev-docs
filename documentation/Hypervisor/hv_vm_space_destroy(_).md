@@ -19,11 +19,11 @@ func hv_vm_space_destroy(_ asid: hv_vm_space_t) -> hv_return_t
 extern hv_return_t hv_vm_space_destroy(hv_vm_space_t asid);
 ```
 
-#### Return Value
+## Return Value
 
 [`HV_SUCCESS`](./hv_success.md) if the operation was successful, otherwise an error code specified in [`hv_return_t`](./hv_return_t.md).
 
-#### Discussion
+## Discussion
 
 > **Note**:  You can’t destroy default address space, `HV_VM_SPACE_DEFAULT.`
 

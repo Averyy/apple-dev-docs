@@ -24,11 +24,11 @@ convenience init(transformComponent component: any MDLTransformComponent)
 - (instancetype) initWithTransformComponent:(id<MDLTransformComponent>) component;
 ```
 
-#### Return Value
+## Return Value
 
 A new transform object.
 
-#### Discussion
+## Discussion
 
 Use this method to copy transformation from any object that adopts the [`MDLTransformComponent`](../mdltransformcomponent.md) protocol (such as another [`MDLTransform`](../mdltransform.md) instance).
 

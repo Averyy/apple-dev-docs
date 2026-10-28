@@ -25,7 +25,7 @@ func CMTimeRangeGetIntersection(_ range: CMTimeRange, otherRange: CMTimeRange) -
 extern CMTimeRange CMTimeRangeGetIntersection(CMTimeRange range, CMTimeRange otherRange);
 ```
 
-#### Return Value
+## Return Value
 
 A time range that represents the largest intersection of the input.
 

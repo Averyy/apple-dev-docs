@@ -19,7 +19,7 @@ var userInterfaceDirectionPolicy: WKUserInterfaceDirectionPolicy { get set }
 @property (nonatomic) WKUserInterfaceDirectionPolicy userInterfaceDirectionPolicy;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`WKUserInterfaceDirectionPolicy.content`](../wkuserinterfacedirectionpolicy/content.md). For other possible values, see [`WKUserInterfaceDirectionPolicy`](../wkuserinterfacedirectionpolicy.md).
 

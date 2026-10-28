@@ -18,7 +18,7 @@ typealias FSEventStreamCallback = (ConstFSEventStreamRef, UnsafeMutableRawPointe
 typedef void (*FSEventStreamCallback)(ConstFSEventStreamRef streamRef, void *clientCallBackInfo, size_t numEvents, void *eventPaths, const FSEventStreamEventFlags *eventFlags, const FSEventStreamEventId *eventIds);
 ```
 
-#### Discussion
+## Discussion
 
 This is the type of the callback function supplied by the client when creating a new stream. This callback is invoked by the service from the client's runloop(s) when events occur, per the parameters specified when the stream was created.
 

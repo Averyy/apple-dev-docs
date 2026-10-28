@@ -25,7 +25,7 @@ var expectedTravelTime: TimeInterval { get }
 @property (nonatomic, readonly) NSTimeInterval expectedTravelTime;
 ```
 
-#### Discussion
+## Discussion
 
 This expected travel time reflects the time it takes to traverse the route under ideal conditions. The actual amount of time may vary based on conditions.
 

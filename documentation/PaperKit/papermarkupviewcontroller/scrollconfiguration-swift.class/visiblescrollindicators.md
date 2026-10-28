@@ -19,7 +19,7 @@ The axes for which scroll indicators are visible.
 final var visibleScrollIndicators: PaperMarkupViewController.ScrollConfiguration.Axis { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Scroll indicators appear while tracking and fade out after tracking. Default is `[.vertical, .horizontal]`.
 

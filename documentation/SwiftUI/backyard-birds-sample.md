@@ -14,7 +14,7 @@ Create an app with persistent data, interactive widgets, and an all new in-app p
 - watchOS 10.2+
 - Xcode 15.1+
 
-#### Overview
+## Overview
 
 Backyard Birds offers a rich environment in which you can watch the birds that visit your backyard garden. You can monitor their water and food supply to ensure they always have fresh water and plenty to eat, or upgrade the game using an in-app purchase to provide tastier food for the birds to eat.
 
@@ -24,7 +24,7 @@ You can access the source code for this sample on [GitHub](https://github.com/ap
 
 > **Note**: This sample code project is associated with WWDC23 session 102: [State of the Union](https://developer.apple.com/wwdc23/102/).
 
-##### Configure the sample code project
+### Configure the sample code project
 
 To configure the Backyard Birds app to run on your devices, follow these steps:
 
@@ -34,7 +34,7 @@ To configure the Backyard Birds app to run on your devices, follow these steps:
 4. Select the top-level Backyard Birds project.
 5. For all targets, choose your team from the Team menu in the Signing & Capabilities pane so Xcode can automatically manage your provisioning profile.
 
-##### Create a data-driven app
+### Create a data-driven app
 
 The app defines its data model by conforming the model objects to [`PersistentModel`](../SwiftData/persistentmodel.md) using the [`Model`](../SwiftData/model%28%29.md) macro. Using the [`Attribute`](../SwiftData/attribute%28_,originalname,hashmodifier%29.md) macro with the [`unique`](../SwiftData/schema/attribute/option/unique.md) option ensures that the `id` property is unique.
 
@@ -59,7 +59,7 @@ The app defines its data model by conforming the model objects to [`PersistentMo
 }
 ```
 
-##### Construct interactive widgets
+### Construct interactive widgets
 
 Backyard Birds displays interactive widgets by presenting a [`Button`](./button.md) to refill a backyard’s supplies when the water and food are running low. The app does this by placing a `Button` in the widget’s view, and passing a `ResupplyBackyardIntent` instance to the [`init(intent:label:)`](./button/init%28intent,label%29.md) initializer:
 
@@ -110,7 +110,7 @@ struct BackyardWidgetIntent: WidgetConfigurationIntent {
 }
 ```
 
-##### Provide a new in-app purchase experience
+### Provide a new in-app purchase experience
 
 The sample app uses [`ProductView`](../StoreKit/productview.md) to display several different bird food upgrades available for purchase on a store shelf. To prominently feature an in-app purchase item, the app uses the [`.productViewStyle(.large)`](./view/productviewstyle%28_%29.md) modifier:
 

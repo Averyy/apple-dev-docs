@@ -20,7 +20,7 @@ func layoutOptions() -> Int
 - (NSUInteger) layoutOptions;
 ```
 
-#### Return Value
+## Return Value
 
 The layout options as a bit mask, as defined in Constants.
 

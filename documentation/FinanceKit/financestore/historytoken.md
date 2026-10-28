@@ -16,7 +16,7 @@ A structure that describes the starting point to use for financial data queries.
 struct HistoryToken
 ```
 
-#### Overview
+## Overview
 
 The framework returns this as part of a [`FinanceStore.Changes`](./changes.md) instance when iterating over a `History` sequence.
 

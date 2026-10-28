@@ -19,7 +19,7 @@ var availableFonts: [String] { get }
 @property (copy, readonly) NSArray<NSString *> * availableFonts;
 ```
 
-#### Discussion
+## Discussion
 
 Note that these fonts are in various system font directories.
 

@@ -19,13 +19,13 @@ Responds to the removal of the MDM enrollment profile from a device.
 
 - [Migrating managed devices](./migrating-managed-devices.md)
 
-#### Discussion
+## Discussion
 
 The system sends this message on a best-effort basis. If the system can’t send the message while removing the MDM profile, it removes the profile and doesn’t resend the message.
 
 On success, the server needs to respond with a `200 OK` status.
 
-##### Check-in availability
+### Check-in availability
 
 |  |  |
 | --- | --- |

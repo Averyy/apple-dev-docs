@@ -25,7 +25,7 @@ func forSelector(_ sel: Selector, argumentIndex arg: Int, ofReply: Bool) -> NSXP
 - (NSXPCInterface *) interfaceForSelector:(SEL) sel argumentIndex:(NSUInteger) arg ofReply:(BOOL) ofReply;
 ```
 
-#### Discussion
+## Discussion
 
 See [`setInterface(_:for:argumentIndex:ofReply:)`](./setinterface%28_,for,argumentindex,ofreply%29.md) for more explanation.
 

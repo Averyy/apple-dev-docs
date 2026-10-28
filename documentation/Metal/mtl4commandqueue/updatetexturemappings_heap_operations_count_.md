@@ -20,7 +20,7 @@ Updates multiple regions within a placement sparse texture to alias specific til
 - (void) updateTextureMappings:(id<MTLTexture>) texture heap:(id<MTLHeap>) heap operations:(const MTL4UpdateSparseTextureMappingOperation[]) operations count:(NSUInteger) count;
 ```
 
-#### Discussion
+## Discussion
 
 You can provide a `nil` parameter to the `heap` argument only if when you perform unmap operations. Otherwise, you are responsible for ensuring the heap is non-nil and has a [`maxCompatiblePlacementSparsePageSize`](../mtlheapdescriptor/maxcompatibleplacementsparsepagesize.md) of at least the texture’s [`placementSparsePageSize`](../mtltexturedescriptor/placementsparsepagesize.md).
 

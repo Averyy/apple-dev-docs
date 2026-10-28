@@ -19,7 +19,7 @@ var importsGraphics: Bool { get set }
 @property BOOL importsGraphics;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) to allow the user to import files by dragging onto the text views sharing the receiver’s layout manager, [`false`](../../Swift/false.md) otherwise.
 

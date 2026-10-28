@@ -24,7 +24,7 @@ let kVTCompressionPropertyKey_TargetQualityForAlpha: CFString
 extern CFStringRef const kVTCompressionPropertyKey_TargetQualityForAlpha;
 ```
 
-#### Discussion
+## Discussion
 
 Specify this value as a number in the range of `0.0` for the lowest quality to `1.0` for nearly lossless quality. Alpha plane bit rates tend to increase with increasing values. When encoding the alpha channel, the system gives priority to quality over bitrate.
 

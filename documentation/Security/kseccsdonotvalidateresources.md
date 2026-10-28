@@ -20,7 +20,7 @@ var kSecCSDoNotValidateResources: UInt32 { get }
 kSecCSDoNotValidateResources
 ```
 
-#### Discussion
+## Discussion
 
 By default, a mismatch in any bundle resource causes validation to fail.
 

@@ -25,7 +25,7 @@ case any
 NSAnyPredicateModifier
 ```
 
-#### Discussion
+## Discussion
 
 The left hand side must be a collection. The corresponding predicate compares each value in the left hand side against the right hand side and returns [`true`](../../../Swift/true.md) when it finds the first match—or [`false`](../../../Swift/false.md) if no match is found
 

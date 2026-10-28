@@ -14,7 +14,7 @@ An event that is fired when LivePhotosKit JS is loaded.
 const String LIVEPHOTOSKIT_LOADED;
 ```
 
-#### Discussion
+## Discussion
 
 This event is fired when `livephotoskit.js` is loaded asynchronously. It always has the value `livephotoskitloaded`.
 

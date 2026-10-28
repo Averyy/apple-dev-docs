@@ -21,7 +21,7 @@ init(request: URLRequest, delegate: (any NSURLDownloadDelegate)?)
 - (instancetype) initWithRequest:(NSURLRequest *) request delegate:(id<NSURLDownloadDelegate>) delegate;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized NSURLDownload object for `request`.
 

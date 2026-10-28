@@ -19,7 +19,7 @@ func connect()
 - (void) connect;
 ```
 
-#### Discussion
+## Discussion
 
 Connects to the device and sets up a service level connection (RFCOMM channel). Delegate methods will be called once the connection is complete or a failure occurs.
 

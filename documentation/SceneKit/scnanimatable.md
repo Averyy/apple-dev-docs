@@ -29,7 +29,7 @@ protocol SCNAnimatable : NSObjectProtocol
 
 - [Animating SceneKit Content](./animating-scenekit-content.md)
 
-#### Overview
+## Overview
 
 SceneKit uses the same architecture as the Core Animation framework, allowing you to animate property changes implicitly or explicitly. For implicit animation, use the [`SCNTransaction`](./scntransaction.md) class to quickly create simple animations with very little code. For more complex animations, explicitly create [`CAAnimation`](../QuartzCore/caanimation.md) objects, and use the methods in the [`SCNAnimatable`](./scnanimatable.md) protocol to attach them to the SceneKit objects you want to animate. You also use the methods in this protocol to control any animations already attached to a SceneKit object.
 

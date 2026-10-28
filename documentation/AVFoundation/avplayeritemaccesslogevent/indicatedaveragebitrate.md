@@ -25,7 +25,7 @@ var indicatedAverageBitrate: Double { get }
 @property (nonatomic, readonly) double indicatedAverageBitrate;
 ```
 
-#### Discussion
+## Discussion
 
 The property corresponds to “sc-indicated-avg-bitrate”.
 

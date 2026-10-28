@@ -26,7 +26,7 @@ var preferredBehavioralStyle: UIBehavioralStyle { get set }
 
 - [Building a desktop-class iPad app](../building-a-desktop-class-ipad-app.md)
 
-#### Discussion
+## Discussion
 
 Use this property to specify the behavioral style for the navigation bar. If the value of the property is [`UIBehavioralStyle.automatic`](../uibehavioralstyle/automatic.md), use the [`behavioralStyle`](./behavioralstyle.md) property to determine the actual style.
 

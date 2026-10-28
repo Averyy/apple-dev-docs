@@ -5,7 +5,7 @@
 
 Diagnose model performance by capturing a trace in Instruments.
 
-#### Overview
+## Overview
 
 When a Core AI model runs on your device, many events happen internally that can significantly affect performance. To get useful performance information for apps with on-device models, profile your app in Instruments. This template helps you:
 
@@ -14,7 +14,7 @@ When a Core AI model runs on your device, many events happen internally that can
 - Compare model performance across CPU, GPU, and Neural Engine.
 - Find unnecessary delays from repeatedly loading uncached models.
 
-#### Record a new trace
+## Record a new trace
 
 Start with your Xcode project open and your device connected to your Mac. Next, select your app’s scheme and a run destination, then choose Product > Profile. In the Instruments template picker, select the Core AI template and click the Choose button.
 
@@ -35,7 +35,7 @@ To begin recording the trace, click the Record button at the top left of the win
 
 > **Note**: For the most actionable results, run your app on its own. Other apps competing for CPU, GPU, or Neural Engine resources can distort the trace.
 
-#### Review the trace recording
+## Review the trace recording
 
 Now that you’ve recorded a trace, the Instruments timeline shows recorded data from each of the instruments in the Core AI template.
 

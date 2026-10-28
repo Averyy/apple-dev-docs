@@ -23,7 +23,7 @@ var underestimatedCount: Int { get }
 
 Available when `Base` conforms to `Sequence`.
 
-#### Discussion
+## Discussion
 
 The default implementation returns 0. If you provide your own implementation, make sure to compute the value nondestructively.
 

@@ -25,7 +25,7 @@ var expectedTravelTime: TimeInterval { get }
 @property (nonatomic, readonly) NSTimeInterval expectedTravelTime;
 ```
 
-#### Discussion
+## Discussion
 
 The expected travel time reflects the time it takes to traverse the route, taking expected traffic into account. The actual amount of time may vary based on changes in traffic and other travel conditions.
 

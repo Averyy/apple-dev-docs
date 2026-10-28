@@ -21,11 +21,11 @@ Returns a format style to use floating-point currency notation.
 static func currency<Value>(code: String) -> Self where Self == FloatingPointFormatStyle<Value>.Currency, Value : BinaryFloatingPoint
 ```
 
-#### Return Value
+## Return Value
 
 A floating-point format style that uses the specified currency code.
 
-#### Discussion
+## Discussion
 
 Use the dot-notation form of this method when the call point allows the use of [`FloatingPointFormatStyle`](../floatingpointformatstyle.md). You typically do this when calling the `formatted` methods of types that conform to [`BinaryFloatingPoint`](../../Swift/binaryfloatingpoint.md).
 

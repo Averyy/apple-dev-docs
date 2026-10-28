@@ -21,7 +21,7 @@ A type that defines the behavior of title of a toolbar.
 struct ToolbarTitleDisplayMode
 ```
 
-#### Overview
+## Overview
 
 Use the [`toolbarTitleDisplayMode(_:)`](./view/toolbartitledisplaymode%28_%29.md) modifier to configure the title display behavior of your toolbar:
 

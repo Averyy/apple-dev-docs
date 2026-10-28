@@ -27,7 +27,7 @@ protocol UITableViewDropCoordinator : NSObjectProtocol
 
 - [Supporting drag and drop in table views](./supporting-drag-and-drop-in-table-views.md)
 
-#### Overview
+## Overview
 
 Don’t create instances of this class yourself. When a drop occurs in the table view, UIKit creates an instance of this class and passes it to your [`tableView(_:performDropWith:)`](./uitableviewdropdelegate/tableview%28_,performdropwith%29.md) method. Use the object to let the table view know how you want to animate the dropped items into position.
 

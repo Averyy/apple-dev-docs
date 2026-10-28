@@ -21,7 +21,7 @@ Round to the closest allowed value whose magnitude is greater than or equal to t
 case awayFromZero
 ```
 
-#### Discussion
+## Discussion
 
 The following example shows the results of rounding numbers using this rule:
 

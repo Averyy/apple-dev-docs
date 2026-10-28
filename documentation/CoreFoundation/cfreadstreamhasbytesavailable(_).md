@@ -25,7 +25,7 @@ func CFReadStreamHasBytesAvailable(_ stream: CFReadStream!) -> Bool
 extern Boolean CFReadStreamHasBytesAvailable(CFReadStreamRef stream);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if data can be read from `stream` without blocking, otherwise `FALSE`. If `stream` cannot tell if data is available without actually trying to read the data, this function returns `TRUE`.
 

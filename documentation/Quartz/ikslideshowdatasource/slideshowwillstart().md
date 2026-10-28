@@ -19,7 +19,7 @@ optional func slideshowWillStart()
 - (void) slideshowWillStart;
 ```
 
-#### Discussion
+## Discussion
 
 Image Kit invokes this method when the slideshow is about to start. Implement this method to perform custom tasks at that time.
 

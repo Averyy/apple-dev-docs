@@ -26,7 +26,7 @@ func fetch<T>(_ request: NSFetchRequest<T>) throws -> [T] where T : NSFetchReque
 
 - [Accessing data when the store changes](../accessing-data-when-the-store-changes.md)
 
-#### Discussion
+## Discussion
 
 This method fetches objects from the context and the persistent stores that you associate with the context’s persistent store coordinator. The method registers any objects it retrieves from a store with the context.
 

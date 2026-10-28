@@ -24,11 +24,11 @@ func enumerateContacts(with fetchRequest: CNContactFetchRequest, usingBlock bloc
 - (BOOL) enumerateContactsWithFetchRequest:(CNContactFetchRequest *) fetchRequest error:(NSError **) error usingBlock:(void (^)(CNContact *contact, BOOL *stop)) block;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if enumeration of all contacts matching a contact fetch request executes successfully; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 This method waits until the enumeration is finished. If there are no results, the block is not called and the method returns [`true`](../../Swift/true.md).
 

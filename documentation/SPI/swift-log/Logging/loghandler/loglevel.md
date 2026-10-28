@@ -18,7 +18,7 @@ Get or set the configured log level.
 var logLevel: Logger.Level { get set }
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: `LogHandler`s must treat the log level as a value type. This means that the change in metadata must only affect this very `LogHandler`. It is acceptable to provide some form of global log level override that means a change in log level on a particular `LogHandler` might not be reflected in any `LogHandler`.
 

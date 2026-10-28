@@ -28,7 +28,7 @@ extern NSNotificationName const UIApplicationSignificantTimeChangeNotification;
 
 - [Processing queued notifications](../processing-queued-notifications.md)
 
-#### Discussion
+## Discussion
 
 The system posts this notification when, for example, there’s a change to a new day (midnight), a carrier time update, or a change to, or from, daylight savings time. The notification doesn’t contain a user info dictionary.
 

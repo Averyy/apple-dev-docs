@@ -25,7 +25,7 @@ func removeObjects(at indexes: IndexSet)
 - (void) removeObjectsAtIndexes:(NSIndexSet *) indexes;
 ```
 
-#### Discussion
+## Discussion
 
 This method is similar to [`removeObject(at:)`](./removeobject%28at%29.md), but allows you to efficiently remove multiple objects with a single operation. `indexes` specifies the locations of objects to be removed given the state of the array when the method is invoked, as illustrated in the following example:
 

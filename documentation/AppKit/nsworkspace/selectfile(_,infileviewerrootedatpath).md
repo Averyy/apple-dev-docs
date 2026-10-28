@@ -19,11 +19,11 @@ func selectFile(_ fullPath: String?, inFileViewerRootedAtPath rootFullPath: Stri
 - (BOOL) selectFile:(NSString *) fullPath inFileViewerRootedAtPath:(NSString *) rootFullPath;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the file was successfully selected; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 In macOS 10.5 and later, this method does not follow symlinks when selecting the file. If the `fullPath` parameter contains any symlinks, this method selects the symlink instead of the file it targets. If you want to select the target file, use the [`resolvingSymlinksInPath`](../../Foundation/nsstring/resolvingsymlinksinpath.md) method to resolve any symlinks before calling this method.
 

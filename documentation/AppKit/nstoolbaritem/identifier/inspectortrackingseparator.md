@@ -19,7 +19,7 @@ static let inspectorTrackingSeparator: NSToolbarItem.Identifier
 extern NSToolbarItemIdentifier NSToolbarInspectorTrackingSeparatorItemIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 Only applies to windows with `NSWindowStyleMaskFullSizeContentView` applied.
 

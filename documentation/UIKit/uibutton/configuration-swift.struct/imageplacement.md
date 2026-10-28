@@ -19,7 +19,7 @@ The edge against which the button places the image.
 var imagePlacement: NSDirectionalRectEdge { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to place the image along the top, leading, trailing, or bottom edge of the button.
 

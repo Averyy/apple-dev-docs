@@ -25,7 +25,7 @@ func CGPDFScannerGetContentStream(_ scanner: CGPDFScannerRef) -> CGPDFContentStr
 extern CGPDFContentStreamRefCGPDFScannerGetContentStream(CGPDFScannerRef scanner);
 ```
 
-#### Return Value
+## Return Value
 
 The content stream associated with `scanner`.
 

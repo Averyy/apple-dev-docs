@@ -19,7 +19,7 @@ var allowsCollapsing: Bool { get set }
 @property BOOL allowsCollapsing;
 ```
 
-#### Discussion
+## Discussion
 
 When [`true`](../../Swift/true.md), the candidate list item can be collapsed, [`false`](../../Swift/false.md) otherwise.
 

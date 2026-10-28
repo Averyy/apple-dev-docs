@@ -13,7 +13,7 @@
 #define kIOCDMediaTypeRW
 ```
 
-#### Discussion
+## Discussion
 
 The kIOCDMediaTypeKey constant for CD ReWritable (CD-RW) media.
 

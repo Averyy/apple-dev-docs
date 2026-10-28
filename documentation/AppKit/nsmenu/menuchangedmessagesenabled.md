@@ -19,13 +19,13 @@ var menuChangedMessagesEnabled: Bool { get set }
 @property BOOL menuChangedMessagesEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 This property indicates whether messages are sent to the application’s windows each time the menu changes.
 
 To avoid the “flickering” effect of many successive menu changes, set the value of this property to [`false`](../../Swift/false.md), make changes to the menu, and then set the value of this property to [`true`](../../Swift/true.md). This approach has the effect of batching changes and applying them all at once.
 
-##### Special Considerations
+### Special Considerations
 
 In macOS 10.6 and later this property has no effect.
 

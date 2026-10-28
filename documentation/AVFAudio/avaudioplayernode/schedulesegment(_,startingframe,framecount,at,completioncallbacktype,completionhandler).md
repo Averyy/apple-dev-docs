@@ -29,7 +29,7 @@ func scheduleSegment(_ file: AVAudioFile, startingFrame startFrame: AVAudioFrame
 - (void) scheduleSegment:(AVAudioFile *) file startingFrame:(AVAudioFramePosition) startFrame frameCount:(AVAudioFrameCount) numberFrames atTime:(AVAudioTime *) when completionCallbackType:(AVAudioPlayerNodeCompletionCallbackType) callbackType completionHandler:(AVAudioPlayerNodeCompletionHandler) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 ## Parameters
 

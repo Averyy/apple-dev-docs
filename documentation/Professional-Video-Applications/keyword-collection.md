@@ -5,7 +5,7 @@
 
 Group clips and projects based on matching keywords.
 
-#### Overview
+## Overview
 
 Use a `keyword-collection` element to describe a keyword collection in an event. The name attribute specifies the keyword to match.
 

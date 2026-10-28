@@ -21,7 +21,7 @@ The LZFSE compression algorithm, which is recommended for use on Apple platforms
 case lzfse
 ```
 
-#### Discussion
+## Discussion
 
 LZFSE is Apple’s proprietary compression algorithm, matching the compression ratio of zlib level 5, but with much higher energy efficiency and speed (between 2x and 3x) for both encode and decode operations.
 

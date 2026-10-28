@@ -20,7 +20,7 @@ An integer multiple of the frame interval at which the animation stops.
 var end: TimeInterval { get set }
 ```
 
-#### Discussion
+## Discussion
 
 When calculating the visual beginning of a sampled animation, the framework first evaluates this property, and then applies the optional [`trimEnd`](./trimend.md), in seconds.
 

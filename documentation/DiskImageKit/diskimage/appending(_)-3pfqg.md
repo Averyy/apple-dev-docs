@@ -15,11 +15,11 @@ Appends a new layer to this disk image, creating or extending a stack
 consuming func appending(_ configuration: any DiskImage.CreationConfiguration & DiskImage.StackableLayer) throws -> any StackedImage
 ```
 
-#### Return Value
+## Return Value
 
 A [`StackedImage`](../stackedimage.md) containing all layers.
 
-#### Discussion
+## Discussion
 
 > **Note**: The framework allows only one cache layer per stacked disk image.
 

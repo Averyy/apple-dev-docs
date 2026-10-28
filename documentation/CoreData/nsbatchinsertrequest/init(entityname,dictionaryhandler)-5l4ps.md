@@ -22,11 +22,11 @@ convenience init(entityName: String, dictionaryHandler handler: @escaping (NSMut
 + (instancetype) batchInsertRequestWithEntityName:(NSString *) entityName dictionaryHandler:(BOOL (^)(NSMutableDictionary<NSString *,id> *obj)) handler;
 ```
 
-#### Return Value
+## Return Value
 
 A batch-insertion request.
 
-#### Discussion
+## Discussion
 
 Core Data repeatedly calls the provided closure until it returns `true`, then finishes the request and saves the data.
 

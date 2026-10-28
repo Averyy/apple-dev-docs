@@ -20,7 +20,7 @@ An object that describes a recommended intent configuration for a user-customiza
 struct IntentRecommendation<T> where T : INIntent
 ```
 
-#### Overview
+## Overview
 
 By adding a custom SiriKit intent definition to your project and using an [`IntentTimelineProvider`](./intenttimelineprovider.md), you allow users to configure widgets to show data that’s most relevant to them. Some platforms don’t have a dedicated user interface to configure all of your intent parameters. For example, watchOS doesn’t offer a dedicated user interface to configure data that appears on a complication. Use intent recommendations in watchOS to offer preconfigured complications that show data that’s most relevant to the user.
 

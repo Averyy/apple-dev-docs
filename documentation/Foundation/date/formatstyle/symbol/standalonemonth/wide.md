@@ -21,7 +21,7 @@ The full representation of a standalone month.
 static var wide: Date.FormatStyle.Symbol.StandaloneMonth { get }
 ```
 
-#### Discussion
+## Discussion
 
 This custom format style conveys the complete representation of a month, like `October` for October.
 

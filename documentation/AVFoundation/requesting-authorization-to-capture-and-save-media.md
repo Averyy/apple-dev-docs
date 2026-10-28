@@ -5,7 +5,7 @@
 
 Prompt the user to authorize access to the camera, microphone, and photo library.
 
-#### Overview
+## Overview
 
 In iOS and macOS 10.14 and later, the user must explicitly grant permission for each app to access the camera and microphone. Before your app can use a capture device for the first time, the system presents an alert with an app-specific message that you specify, to ask the user to grant your app access to the capture device. For example, the following screenshots show the camera access alert in iOS and macOS 10.14 and later:
 
@@ -17,7 +17,7 @@ The system remembers the user’s response to each access alert, so subsequent u
 
 This article outlines the steps you can take to ensure your app has permission before it attempts to capture media.
 
-##### Configure access alerts
+### Configure access alerts
 
 The system requires that your app provides static messages to display to the user when the system asks for permission to access the camera or microphone:
 
@@ -28,7 +28,7 @@ For each key, provide a message that explains to the user why your app needs to 
 
 ![A screenshot showing the Camera and Microphone usage descriptions in the Info tab of the app target.](https://developer.apple.com/tutorials/images/com.apple.avfoundation/media-4132754@2x.png)
 
-##### Enable entitlements in macOS
+### Enable entitlements in macOS
 
 In macOS, you also need to enable the following entitlements in Signing & Capabilities for your app targets:
 
@@ -39,7 +39,7 @@ In macOS, you also need to enable the following entitlements in Signing & Capabi
 
 > ❗ **Important**:  Your app needs to contain the appropriate key in its `Info.plist` file, and the appropriate entitlement enabled in macOS, before it requests authorization or attempts to use a capture device. Otherwise, the system terminates your app.
 
-##### Verify and request authorization for capture
+### Verify and request authorization for capture
 
 Always test the [`AVCaptureDevice`](./avcapturedevice.md) [`authorizationStatus(for:)`](./avcapturedevice/authorizationstatus%28for%29.md) method before setting up a capture session. If the user hasn’t granted or denied capture permission, the authorization status is [`AVAuthorizationStatus.notDetermined`](./avauthorizationstatus/notdetermined.md). In this case, use the [`requestAccess(for:completionHandler:)`](./avcapturedevice/requestaccess%28for,completionhandler%29.md) method to tell the system to prompt the user.
 
@@ -69,7 +69,7 @@ func setUpCaptureSession() async {
 }
 ```
 
-##### Request authorization to save captured media
+### Request authorization to save captured media
 
 Your app must get permission to access the photo library before it attempts to save photos or videos; otherwise the system terminates your app. Which permission you request depends on the types of media you want to save:
 

@@ -4,7 +4,7 @@
 **Kind**: var  
 **Role**: Global Variable
 
-If the image has a LAB color model, the buffer contains the *b** channel.
+If the image has a LAB color model, the buffer contains the *b\** channel.
 
 **Availability**:
 - iOS 7.0+

@@ -5,7 +5,7 @@
 
 Review predefined environment variables you use in custom build scripts.
 
-#### Overview
+## Overview
 
 With custom workflows, you can tailor Xcode Cloud to your needs. When you create a custom workflow, you configure the temporary build environment Xcode Cloud uses, start conditions, actions, and other settings. However, you may need to perform custom tasks, for example, installing a third-party tool or uploading a build’s artifacts to your server. To achieve this, Xcode Cloud supports running custom shell scripts, referred to as *custom build scripts*.
 
@@ -15,7 +15,7 @@ Xcode Cloud includes a set of predefined environment variables that you can use 
 
 For more information on using custom build scripts and accessing environment variables, see [Writing custom build scripts](./writing-custom-build-scripts.md).
 
-##### Variables that are always available
+### Variables that are always available
 
 The following environment variables are available every time Xcode Cloud starts a build, no matter which actions or start conditions you configure for a workflow:
 
@@ -44,23 +44,23 @@ The following environment variables are available every time Xcode Cloud starts 
 
 > **Note**: Xcode Cloud builds your project using temporary build environments that use an HTTP proxy and makes the standard `HTTP_PROXY` and `HTTPS_PROXY` environment variables available. Many tools respect those variables and use them to change their settings.
 
-##### Variables for specific start conditions
+### Variables for specific start conditions
 
 The availability of the following environment variables depends on the workflow’s start condition you configure. For example, the `CI_PULL_REQUEST_NUMBER` variable is only available if the Pull Request Change start condition started the build.
 
-###### Variable for branch changes
+#### Variable for branch changes
 
 - **`CI_BRANCH`**: The name of the source branch that Xcode Cloud checked out for the current build, for example, `main`.
 
-###### Variable for tag changes
+#### Variable for tag changes
 
 - **`CI_TAG`**: The name of the tag that Xcode Cloud checked out for the current build, for example, `release-1.1`.
 
-###### Variable for branch changes and tag changes
+#### Variable for branch changes and tag changes
 
 - **`CI_GIT_REF`**: The canonical Git reference that contains the `CI_COMMIT`, for example, `refs/heads/bug-fix` for a build from the `bug-fix` branch and `refs/tags/release-1.0` from the `release-1.0` tag.
 
-###### Variables for pull request changes
+#### Variables for pull request changes
 
 - **`CI_PULL_REQUEST_HTML_URL`**: The URL to the pull request’s website.
 - **`CI_PULL_REQUEST_NUMBER`**: The pull request’s number, for example, `42`.
@@ -71,11 +71,11 @@ The availability of the following environment variables depends on the workflow�
 - **`CI_PULL_REQUEST_TARGET_COMMIT`**: The most recent Git commit hash of the pull request’s target branch. The CI service tests your changes against the merge of `CI_PULL_REQUEST_TARGET_COMMIT` and `CI_PULL_REQUEST_SOURCE_COMMIT`.
 - **`CI_PULL_REQUEST_TARGET_REPO`**: The full name of the pull request’s target repository, for example, `example/original-repository-of-example-framework`. If the pull request involves only one repository, the variable’s value is the same as `CI_PULL_REQUEST_SOURCE_REPO`.
 
-##### Variables for specific actions
+### Variables for specific actions
 
 The availability of the following environment variables depends on the action Xcode Cloud performs. For example, the `CI_ARCHIVE_PATH` variable is only available when Xcode Cloud performs an archive action.
 
-###### Variables for test actions
+#### Variables for test actions
 
 - **`CI_RESULT_BUNDLE_PATH`**: The path to the test action’s result bundle (`.xcresult`).
 - **`CI_TEST_DESTINATION_DEVICE_TYPE`**: The device type of the simulated device you choose as the test action’s destination, for example, `iPhone 11`.
@@ -86,7 +86,7 @@ The availability of the following environment variables depends on the action Xc
 
 > **Note**: Xcode Cloud makes all the environment variables for test actions available to the processes that execute your tests, known as *test runners*. This includes environment variables set by the system as well as any custom environment variables you set in the Environment section of your workflow. When executing your test action, Xcode Cloud adds the prefix `TEST_RUNNER_` to each variable’s name, which is required by `xcodebuild` for the test runner process to access each variable by its original name. For more information on using the `TEST_RUNNER_` prefix on your environment variables when running `xcodebuild`, see the Environment Variables section of `xcodebuild`’s [man page](x-man-page://1/xcodebuild).
 
-###### Variables for archive actions
+#### Variables for archive actions
 
 - **`CI_AD_HOC_SIGNED_APP_PATH`**: The path to an exported archive that’s code-signed for Ad Hoc distribution.
 - **`CI_APP_STORE_SIGNED_APP_PATH`**: The path to an exported archive that’s code-signed for TestFlight distribution and eligible for release on the App Store.

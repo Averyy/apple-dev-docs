@@ -17,7 +17,7 @@ var kIMKLocateCandidatesLeftHint: Int { get }
 kIMKLocateCandidatesLeftHint
 ```
 
-#### Discussion
+## Discussion
 
 Place the candidates window to the left of the current text selection.
 

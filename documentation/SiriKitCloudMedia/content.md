@@ -15,7 +15,7 @@ A description of a piece of playback content, such as a song, podcast, or advert
 object Content
 ```
 
-#### Discussion
+## Discussion
 
 If you provide a `playIndex` for any content, you must provide a `playIndex` for each `Content` object in the [`Queue`](./queue.md). These indices must have a strong ordering. If your `Queue` also provides a `contentItemsCount`, the client may use these values to display or announce playback progress to the user. For example, if a queue’s `contentItemsCount` is 7 and the `playIndex` for the current content is 3, the client might present the playback progress as *3 of 7*.
 

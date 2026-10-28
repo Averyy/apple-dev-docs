@@ -25,7 +25,7 @@ var recordZoneWithIDWasDeletedBlock: ((CKRecordZone.ID) -> Void)? { get set }
 @property (nonatomic, copy, nullable) void (^recordZoneWithIDWasDeletedBlock)(CKRecordZoneID *zoneID);
 ```
 
-#### Discussion
+## Discussion
 
 The closure returns no value and takes the following parameter:
 

@@ -5,7 +5,7 @@
 
 Measure how your model runs on your Mac or a connected device by generating a performance report in Xcode.
 
-#### Overview
+## Overview
 
 A performance report lets you analyze a model’s speed and *compute unit* usage before you ever integrate it into your app. Xcode runs the model and reports how long it takes to load and make a prediction, and which compute unit (the Neural Engine, GPU, or CPU) runs each operation. This makes it easy to compare candidate models or architectures early on, without writing any app code.
 
@@ -19,13 +19,13 @@ Use a performance report to:
 
 You generate a report on your Mac or a connected device, so the measurements reflect that specific hardware. Choose the device that matches where your app runs.
 
-#### Open a model in Xcode
+## Open a model in Xcode
 
 You can open a model file, such as an `.mlpackage`, directly in Xcode by double-clicking it or choosing File > Open, without adding it to a project or a target. If the model is already part of an Xcode project, select it in the Project navigator instead. Either way, Xcode opens the model viewer, a tabbed editor for inspecting the model. Open its Performance tab, where you create and read reports.
 
 ![Screenshot of the model viewer in Xcode for a model named DepthAnythingV2SmallF16P6. The tab row shows General, Preview, Predictions, Performance, Structure, and Utilities, with Performance selected. The Performance pane reads, Create a Performance Report, and instructs you to click the + button in the bottom-left corner.](https://developer.apple.com/tutorials/images/com.apple.coreml/model-viewer-performance-tab@2x.png)
 
-#### Create a performance report
+## Create a performance report
 
 The numbers in a report reflect what the device is doing while the report runs. Before you start, close other apps and nonessential processes on the device you’re testing. This helps ensure background work doesn’t affect the results.
 
@@ -37,7 +37,7 @@ The configuration sets which compute units the model may use, such as All, CPU o
 
 ![Screenshot of the Choose compute unit dialog in Xcode. The Compute Unit options are All (selected), CPU only, CPU and GPU, and CPU and Neural Engine. The dialog has Cancel, Previous, and Run Test buttons.](https://developer.apple.com/tutorials/images/com.apple.coreml/performance-report-compute-unit@2x.png)
 
-#### Read the load and prediction times
+## Read the load and prediction times
 
 A report shows three timings in milliseconds: prediction, load, and compilation. Load and compilation get the model ready to run; prediction is the cost of each individual prediction after that.
 
@@ -57,7 +57,7 @@ Prediction has a First statistic: the cost of the very first prediction, which c
 
 ![Screenshot of the timings in an Xcode performance report. Compute Units Selected reads All (CPU, GPU, Neural Engine) and Prediction Function reads Default. Three tiles show Prediction at 22.93 ms, Load at 45.20 ms, and Compilation at 127.08 ms, each with a statistic menu set to Median.](https://developer.apple.com/tutorials/images/com.apple.coreml/performance-report-times@2x.png)
 
-#### Read the compute unit for each operation
+## Read the compute unit for each operation
 
 Below the timings, the report lists each operation in the model with a column for each compute unit: CPU, GPU, and Neural Engine. The Type column shows the kind of each operation, such as convolution or activation:
 
@@ -73,7 +73,7 @@ Each operation indicates which units can run it, and the unit that ran the opera
 
 If a model’s performance or compute utilization isn’t aligned with your needs, you may need to change your model’s architecture or how it’s represented. That work is model optimization. For more information, watch the WWDC session [Optimize your Core ML usage](https://developer.apple.com/videos/play/wwdc2022/10027/). For a Python package you can use to convert and optimize models, download [Core ML Tools](https://coremltools.readme.io/).
 
-#### Compare reports across devices and configurations
+## Compare reports across devices and configurations
 
 Generate more than one report to compare. Xcode saves each report you generate in the Performance tab. Run the same model on your Mac and on a connected device to see where operations run on each, or run it with different compute-unit configurations to see how the timings and placement change. Comparing a run that uses all compute units against a CPU-only run, for example, shows how much the Neural Engine and GPU help your model.
 
@@ -87,7 +87,7 @@ For more fine-grained detail than the comparison view’s summary numbers, selec
 
 Because this report was configured to use CPU only, the GPU and Neural Engine columns show hollow diamonds for every operation. That doesn’t mean these operations are incompatible with those units in general, only that they were incompatible with the specified configuration.
 
-#### Read the same data in code with a compute plan
+## Read the same data in code with a compute plan
 
 A compute plan gives you the report’s compute-unit mapping in code. For each operation it tells you which compute devices can run it, which one Core ML uses, and an estimate of its relative cost. It doesn’t measure load or prediction times the way the report does. Use it when you want the placement and cost data without opening Xcode, like in a script or a build step.
 

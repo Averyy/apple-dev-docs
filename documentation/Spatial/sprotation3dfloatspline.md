@@ -19,11 +19,11 @@
 static SPRotation3DFloat SPRotation3DFloatSpline(SPRotation3DFloat r0, SPRotation3DFloat r1, SPRotation3DFloat r2, SPRotation3DFloat r3, float t);
 ```
 
-#### Return Value
+## Return Value
 
 A new rotation that’s the interpolated value between the two rotations along a spherical cubic spline.
 
-#### Discussion
+## Discussion
 
 Returns an interpolated value between two rotations along a spherical cubic spline.
 

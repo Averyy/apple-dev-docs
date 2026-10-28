@@ -19,7 +19,7 @@ var isEditable: Bool { get set }
 @property (getter=isEditable) BOOL editable;
 ```
 
-#### Discussion
+## Discussion
 
 The default is [`true`](../../Swift/true.md).
 

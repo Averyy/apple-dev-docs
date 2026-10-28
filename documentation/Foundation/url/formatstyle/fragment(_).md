@@ -21,7 +21,7 @@ Modifies a format style to display a URL’s fragment component in accordance wi
 func fragment(_ strategy: URL.FormatStyle.ComponentDisplayOption = .never) -> URL.FormatStyle
 ```
 
-#### Return Value
+## Return Value
 
 A modified [`URL.FormatStyle`](../formatstyle.md) that incorporates the specified behavior.
 

@@ -19,7 +19,7 @@ var preferredMaximumSize: NSSize { get }
 @property (readonly) NSSize preferredMaximumSize;
 ```
 
-#### Discussion
+## Discussion
 
 An app extension should return the maximum dimensions that are potentially useful for its root view, based on the items the service has been sent.  By default, the value of this property is a large or infinite size.
 

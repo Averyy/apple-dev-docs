@@ -19,7 +19,7 @@ var VMEXIT_SAVE_IA32_PAT: UInt32 { get }
 VMEXIT_SAVE_IA32_PAT
 ```
 
-#### Discussion
+## Discussion
 
 Must be `0`.
 

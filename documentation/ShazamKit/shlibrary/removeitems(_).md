@@ -21,7 +21,7 @@ Removes an array of media items from the user’s Shazam library.
 final func removeItems(_ items: [SHMediaItem]) async throws
 ```
 
-#### Discussion
+## Discussion
 
 Apps can only remove media items that it added to the library with [`addItems(_:)`](./additems%28_%29.md).
 

@@ -21,11 +21,11 @@ Decodes the user activity’s user info dictionary as an instance of the specifi
 func typedPayload<T>(_ type: T.Type) throws -> T where T : Decodable, T : Encodable
 ```
 
-#### Return Value
+## Return Value
 
 The type-safe instance.
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  This method applies only to SwiftUI apps.
 

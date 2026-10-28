@@ -5,7 +5,7 @@
 
 Define the visual elements of your app using a hierarchy of views.
 
-#### Overview
+## Overview
 
 Views are the building blocks that you use to declare your app’s user interface. Each view contains a description of what to display for a given state. Every bit of your app that’s visible to the user derives from the description in a view, and any type that conforms to the [`View`](./view.md) protocol can act as a view in your app.
 

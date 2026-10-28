@@ -20,7 +20,7 @@ case portItemAttr
 kSecPortItemAttr
 ```
 
-#### Discussion
+## Discussion
 
 You use this tag to set or get a value of type `UInt32` that represents the Internet port number. This is unique to Internet password attributes.
 

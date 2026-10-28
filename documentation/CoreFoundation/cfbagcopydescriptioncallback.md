@@ -25,11 +25,11 @@ typealias CFBagCopyDescriptionCallBack = (UnsafeRawPointer?) -> Unmanaged<CFStri
 typedef const struct __CFString *(*)(const void *) CFBagCopyDescriptionCallBack;
 ```
 
-#### Return Value
+## Return Value
 
 A textual description of `value`. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 This callback is passed to [`CFBagCreate(_:_:_:_:)`](./cfbagcreate%28_,_,_,_%29.md) in a [`CFBagCallBacks`](./cfbagcallbacks.md) structure. This callback is used by the [`CFCopyDescription(_:)`](./cfcopydescription%28_%29.md) function.
 

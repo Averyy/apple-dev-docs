@@ -22,7 +22,7 @@ optional func searchTextField(_ searchTextField: UISearchTextField, didSelect su
 - (void) searchTextField:(UISearchTextField *) searchTextField didSelectSuggestion:(id<UISearchSuggestion>) suggestion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to execute any necessary updates when a person chooses a search suggestion.
 

@@ -24,7 +24,7 @@ var appleMoveTimeGoal: HKQuantity { get set }
 @property (nonatomic, strong) HKQuantity * appleMoveTimeGoal;
 ```
 
-#### Discussion
+## Discussion
 
 The [`HKQuantity`](../hkquantity.md) object for this property must use units of time, such as [`hour()`](../hkunit/hour%28%29.md), [`minute()`](../hkunit/minute%28%29.md), or [`second()`](../hkunit/second%28%29.md). Apple Watch automatically calculates move time based on readings from the watch’s sensors.
 

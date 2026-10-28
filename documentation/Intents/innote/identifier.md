@@ -33,7 +33,7 @@ var identifier: String? { get }
 @property (atomic, copy, readonly, nullable) NSString * identifier;
 ```
 
-#### Discussion
+## Discussion
 
 Use this value internally to locate notes in your app’s data structures.
 

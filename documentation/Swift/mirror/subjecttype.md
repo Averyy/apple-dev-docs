@@ -21,7 +21,7 @@ The static type of the subject being reflected.
 let subjectType: any Any.Type
 ```
 
-#### Discussion
+## Discussion
 
 This type may differ from the subject’s dynamic type when this mirror is the `superclassMirror` of another mirror.
 

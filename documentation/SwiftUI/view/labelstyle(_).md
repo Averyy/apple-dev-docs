@@ -22,7 +22,7 @@ nonisolated
 func labelStyle<S>(_ style: S) -> some View where S : LabelStyle
 ```
 
-#### Discussion
+## Discussion
 
 Use this modifier to set a specific style for all labels within a view:
 

@@ -21,7 +21,7 @@ var highlightColumn2: Bool { get set }
 @property (nonatomic) BOOL highlightColumn2;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), text in column two is rendered with a highlight. When the value is [`false`](../../Swift/false.md), the text in column one is rendered with a highlight. The default value of this property is [`false`](../../Swift/false.md).
 

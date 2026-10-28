@@ -19,7 +19,7 @@ static var defaultHigh: NSLayoutConstraint.Priority { get }
 static const NSLayoutPriority NSLayoutPriorityDefaultHigh;
 ```
 
-#### Discussion
+## Discussion
 
 Note that the level is higher than [`windowSizeStayPut`](./windowsizestayput.md). This means dragging to resize a window will not make buttons clip, rather the window frame is constrained.
 

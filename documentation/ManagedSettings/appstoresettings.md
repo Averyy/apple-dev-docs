@@ -17,7 +17,7 @@ Constraints on a user’s App Store settings.
 struct AppStoreSettings
 ```
 
-#### Overview
+## Overview
 
 Use `AppStoreSettings` to manage a user’s App Store settings. You can set a maximum age rating for apps, deny in-app purchases, and require passwords for purchases.
 

@@ -25,7 +25,7 @@ let kCTFontVariationAttribute: CFString
 extern CFStringRef const kCTFontVariationAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 If specified in a font descriptor, fonts with the specified axes are primary match candidates; if no such fonts exist, this attribute is ignored.
 

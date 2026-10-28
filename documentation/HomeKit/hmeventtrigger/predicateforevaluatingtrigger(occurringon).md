@@ -24,7 +24,7 @@ class func predicateForEvaluatingTrigger(occurringOn dateComponents: DateCompone
 + (NSPredicate *) predicateForEvaluatingTriggerOccurringOnDateWithComponents:(NSDateComponents *) dateComponents;
 ```
 
-#### Return Value
+## Return Value
 
 A predicate object that represents a condition to evaluate before executing the scene.
 

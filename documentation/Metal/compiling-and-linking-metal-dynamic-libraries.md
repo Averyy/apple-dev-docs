@@ -5,7 +5,7 @@
 
 Build a Metal dynamic library from the command line, allowing for runtime loading of shared shaders.
 
-#### Overview
+## Overview
 
 When you share a set of utility functions between multiple Metal libraries, static linking at compile time includes those functions in all of your libraries. This causes libraries to increase in size because each Metal library includes duplicate code for the utility functions. Metal also compiles individual, identical versions of your utilites for each library, causing longer shader compilation times.
 
@@ -18,7 +18,7 @@ This article tells you how to build a dynamic library from the command line with
 
 For instructions on compiling an intermediate representation for Metal, see [Building a shader library by precompiling source files](./building-a-shader-library-by-precompiling-source-files.md). For an example of an app that builds and links dynamic libraries at runtime, see [Creating a Metal dynamic library](./creating-a-metal-dynamic-library.md).
 
-##### Compile shaders to a dynamic library
+### Compile shaders to a dynamic library
 
 Start by compiling your utility functions to a dynamic library. Use the `metal` command-line tool, adding both the `-dynamiclib` and `-install_name` options. The `-dynamiclib` flag builds the output as a dynamic library, and `-install_name` is the library name that the linker uses to resolve the library. The following compiler invocation builds `utilities.metal` to a dynamic library `libUtility.ir.metallib`, where you link the library as `Utility`:
 
@@ -28,7 +28,7 @@ Start by compiling your utility functions to a dynamic library. Use the `metal` 
 
 > ❗ **Important**:  Ensure that the install name uses the format of l`ib${LIBRARY_NAME}.metallib`. Otherwise, the Metal linker can’t locate your dynamic library.
 
-##### Add binary archives to your dynamic library optionally
+### Add binary archives to your dynamic library optionally
 
 Binary archives are prebuilt shader functions for GPUs you specify at compile time. Use binary archives when you prefer to make the tradeoff of distributing larger files for your app while avoiding the cost of compiling shaders from Metal IR at runtime. For more information on binary archives, see [Metal binary archives](./metal-binary-archives.md).
 
@@ -42,7 +42,7 @@ For more information on `metal-config`, run `man metal-config` in Terminal.
 
 For more information about the Metal translator and how you can customize which binaries to build from a Metal IR file, see [Creating binary archives from device-built pipeline state objects](./creating-binary-archives-from-device-built-pipeline-state-objects.md) and [Compiling binary archives from a custom configuration script](./compiling-binary-archives-from-a-custom-configuration-script.md).
 
-##### Link utility shaders to your Metal library
+### Link utility shaders to your Metal library
 
 Prelinking dynamic libraries to your other libraries avoids some runtime costs associated with resolving the symbols to load from your dynamic library. When you’re compiling your final Metal libraries to ship, use the `-L` and `-l` linker options with the `metal` command-line tool. The `-l` option provides the names of libraries to link to, and `-L` provides custom library search paths. The following code example demonstrates linking an intermediate representation `shaders.ir` with the `Utilities` library that you compile from the previous step. If you skip compiling binaries into your dynamic library, rename `libUtility.metalir.metallib` to `libUtility.metallib`.
 
@@ -54,7 +54,7 @@ Prelinking dynamic libraries to your other libraries avoids some runtime costs a
 
 Add both `shaders.metallib` and `libUtility.metallib` to your Xcode project as resources. For your dynamic library to load correctly if you link it from the command line, place it at a location in your app’s resources corresponding to the path that you set for the `-L` argument. In this example, put `shaders.metallib` and l`ibUtility.metallib` in the same directory in a resource bundle.
 
-##### Load dynamic libraries in your app
+### Load dynamic libraries in your app
 
 Use the [`makeDynamicLibrary(url:)`](./mtldevice/makedynamiclibrary%28url%29.md) method in your app to load your Metal dynamic library, and then add it to a pipeline descriptor calling the shader functions in your other Metal libraries. The following code example loads a dynamic library and creates an [`MTLComputePipelineDescriptor`](./mtlcomputepipelinedescriptor.md) that includes it as a library to load:
 

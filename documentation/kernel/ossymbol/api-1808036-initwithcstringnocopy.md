@@ -12,11 +12,11 @@ virtual bool initWithCStringNoCopy(
  const char *cString);
 ```
 
-#### Return Value
+## Return Value
 
 `false`.
 
-#### Overview
+## Overview
 
 Overrides OSString's implementation to prevent creation of distinct OSSymbols with the same string value.
 

@@ -15,11 +15,11 @@ virtual IOReturn _maintRequest(
  void *);
 ```
 
-#### Return Value
+## Return Value
 
 kIOReturnUnsupported if the command given is not implemented, kIOReturnSuccess otherwise.
 
-#### Overview
+## Overview
 
 This function implements the commands as defined in the maintCommandEnum. It can be subclassed but it isn't an external API in the usual sense. A subclass implementation of _maintRequest would be called synchronously with respect to the work loop and it should be implemented in the usual way that an ioctl would be.
 

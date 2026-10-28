@@ -25,7 +25,7 @@ var stackSize: Int { get set }
 @property NSUInteger stackSize;
 ```
 
-#### Discussion
+## Discussion
 
 This value must be in bytes and a multiple of 4KB.
 

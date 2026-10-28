@@ -24,7 +24,7 @@ var kAudioFormatProperty_ASBDFromMPEGPacket: AudioFormatPropertyID { get }
 kAudioFormatProperty_ASBDFromMPEGPacket
 ```
 
-#### Discussion
+## Discussion
 
 An [`AudioStreamBasicDescription`](../CoreAudioTypes/audiostreambasicdescription.md) structure for a given MPEG Packet. The specifier is an MPEG Packet.
 

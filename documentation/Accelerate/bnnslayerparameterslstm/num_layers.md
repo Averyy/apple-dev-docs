@@ -27,7 +27,7 @@ var num_layers: Int
 size_t num_layers;
 ```
 
-#### Discussion
+## Discussion
 
 If you define the corresponding array descriptor’s size to `0`, BNNS uses this value. BNNS throws an error if you set this value to a nonzero value that doesn’t match the corresponding array descriptor’s size.
 

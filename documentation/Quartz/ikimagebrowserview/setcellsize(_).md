@@ -19,7 +19,7 @@ func setCellSize(_ size: NSSize)
 - (void) setCellSize:(NSSize) size;
 ```
 
-#### Discussion
+## Discussion
 
 You must use `setCellSize` or [`setZoomValue(_:)`](./setzoomvalue%28_%29.md), but not both. Setting the zoom value changes the cell size, and vice versa.
 

@@ -34,7 +34,7 @@ func setDefaultLeaderboardCategoryID(_ categoryID: String?) async throws
 - (void) setDefaultLeaderboardCategoryID:(NSString *) categoryID completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 You set the default leaderboard in App Store Connect when you configure your game’s leaderboards. All players normally start with this leaderboard as the default leaderboard. Calling this method changes the default leaderboard only for the local player.
 

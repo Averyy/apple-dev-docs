@@ -24,7 +24,7 @@ var status: AVAssetWriter.Status { get }
 @property (readonly) AVAssetWriterStatus status;
 ```
 
-#### Discussion
+## Discussion
 
 This property is thread safe.
 

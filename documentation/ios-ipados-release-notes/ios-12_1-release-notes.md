@@ -5,13 +5,13 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 The iOS 12.1 SDK provides support for developing iOS apps for iPhone, iPad, or iPod touch devices running iOS 12.1. The SDK comes bundled with Xcode 10.1. For information on the compatibility requirements for Xcode 10.1, see [Xcode Release Notes](../Xcode-Release-Notes/Xcode-Release-Notes.md).
 
-##### AR Quick Look
+### AR Quick Look
 
-###### Known Issues
+#### Known Issues
 
 - Some animated USDZ assets generated using Xcode 10 beta don’t animate on iOS 12.1. Regenerate affected assets using the release version of Xcode 10 or later. (45120472)
 

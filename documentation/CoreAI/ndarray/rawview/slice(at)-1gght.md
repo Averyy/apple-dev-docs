@@ -20,7 +20,7 @@ Returns a sub-view with the same rank as this view by slicing the dimensions at 
 func slice<let indexRank : Int>(at ranges: [indexRank of any NDArray.RangeExpression]) -> NDArray.RawView
 ```
 
-#### Discussion
+## Discussion
 
 For example if you have a 2D NDArray and want to compute the sum of a specific row, you can slice that row, reintroduce the scalar type, and then access a span over it (or use `withUnsafePointer` if not contiguous).
 

@@ -25,7 +25,7 @@ var kvImageBackgroundColorFill: Int { get }
 kvImageBackgroundColorFill
 ```
 
-#### Discussion
+## Discussion
 
 The associated value is a background color (that is, a pixel value). When you set this flag, vImage assigns the pixel value to all pixels outside the image. You can set this flag for convolution and geometry functions. The morphology functions do not use this flag because they do not use pixels outside the image in any of their calculations.
 

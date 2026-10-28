@@ -22,11 +22,11 @@ class func referenceObjects(inGroupNamed name: String, bundle: Bundle?) -> Set<A
 + (NSSet<ARReferenceObject *> *) referenceObjectsInGroupNamed:(NSString *) name bundle:(NSBundle *) bundle;
 ```
 
-#### Return Value
+## Return Value
 
 A set of all unique reference objects in the specified group.
 
-#### Discussion
+## Discussion
 
 To use the objects for detection in a world-tracking AR session, provide this set for your session configuration’s [`detectionObjects`](../arworldtrackingconfiguration/detectionobjects.md) property.
 

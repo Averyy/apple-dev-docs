@@ -17,7 +17,7 @@ The currently selected pointer mode.
 @preconcurrency var selectedIndirectPointerTouchMode: PaperMarkupViewController.TouchMode { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Default is `.selection`
 

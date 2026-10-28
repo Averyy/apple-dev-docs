@@ -19,7 +19,7 @@ var CPU_BASED_MSR_BITMAPS: UInt32 { get }
 CPU_BASED_MSR_BITMAPS
 ```
 
-#### Discussion
+## Discussion
 
 Must be `1`.
 

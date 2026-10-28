@@ -5,7 +5,7 @@
 
 Specifies the amount of space between lines of text.
 
-#### Overview
+## Overview
 
 Use the `tv-line-spacing` style to set the amount of space between lines of text. Here’s an example that sets the amount of space between lines of text in a `infoTable` element.
 
@@ -23,11 +23,11 @@ Use the `tv-line-spacing` style to set the amount of space between lines of text
 </infoTable>
 ```
 
-##### Values for tv-line-spacing
+### Values for tv-line-spacing
 
 - **Float**: The amount of space, in points, between lines of text.
 
-##### Elements that Use tv-line-spacing
+### Elements that Use tv-line-spacing
 
 - [grid](./grid.md)
 - [info](./info.md)

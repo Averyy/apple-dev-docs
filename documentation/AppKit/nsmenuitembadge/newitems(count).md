@@ -19,7 +19,7 @@ class func newItems(count itemCount: Int) -> Self
 + (instancetype) newItemsWithCount:(NSInteger) itemCount;
 ```
 
-#### Return Value
+## Return Value
 
 Returns a new badge item of type [`NSMenuItemBadge.BadgeType.newItems`](./badgetype/newitems.md).
 

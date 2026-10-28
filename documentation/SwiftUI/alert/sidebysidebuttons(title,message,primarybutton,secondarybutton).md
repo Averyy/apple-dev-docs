@@ -17,7 +17,7 @@ Creates a side by side button alert.
 static func sideBySideButtons(title: Text, message: Text? = nil, primaryButton: Alert.Button, secondaryButton: Alert.Button) -> Alert
 ```
 
-#### Discussion
+## Discussion
 
 The system determines the visual ordering of the buttons.
 

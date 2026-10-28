@@ -19,7 +19,7 @@ The styles of the segmented control.
 enum UISegmentedControlStyle : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 You use these constants as values for the [`segmentedControlStyle`](./uisegmentedcontrol/segmentedcontrolstyle.md) property.
 

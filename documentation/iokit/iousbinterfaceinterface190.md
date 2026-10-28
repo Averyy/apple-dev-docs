@@ -18,7 +18,7 @@ typedef struct IOUSBInterfaceStruct190 {
 } IOUSBInterfaceInterface190;
 ```
 
-#### Overview
+## Overview
 
 The functions listed here include all of the functions defined for the IOUSBInterfaceInterface, IOUSBInterfaceInterface182, IOUSBInterfaceInterface183, and some new functions that are available in macOS 10.2 and later.
 

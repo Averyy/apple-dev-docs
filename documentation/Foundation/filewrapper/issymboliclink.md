@@ -25,7 +25,7 @@ var isSymbolicLink: Bool { get }
 @property (readonly, getter=isSymbolicLink) BOOL symbolicLink;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains [`true`](../../Swift/true.md) when the file wrapper object is a symbolic-link file wrapper, [`false`](../../Swift/false.md) otherwise.
 

@@ -21,7 +21,7 @@ func alphaControlAddedOrRemoved(_ sender: Any?)
 - (void) alphaControlAddedOrRemoved:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 This method is invoked automatically when the opacity slider of the `NSColorPanel` is added or removed; you never invoke this method directly.
 

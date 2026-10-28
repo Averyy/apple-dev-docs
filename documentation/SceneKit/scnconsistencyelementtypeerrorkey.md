@@ -25,7 +25,7 @@ let SCNConsistencyElementTypeErrorKey: String
 extern NSString * const SCNConsistencyElementTypeErrorKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is a [`NSString`](../Foundation/nsstring.md) object naming a scene file element type.
 

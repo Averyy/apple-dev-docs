@@ -5,13 +5,13 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 The tvOS 15 SDK provides support to develop tvOS apps for Apple TV devices running tvOS 15. The SDK comes bundled with Xcode 13. For information on the compatibility requirements for Xcode 13, see [Xcode 13 Release Notes](../Xcode-Release-Notes/xcode-13-release-notes.md).
 
-##### App Store
+### App Store
 
-###### New Features
+#### New Features
 
 - The `request(with:)` type method on [`Product`](../StoreKit/product.md) is now renamed to [`products(for:)`](../StoreKit/product/products%28for%29.md). (79410910)
 
@@ -31,47 +31,47 @@ The tvOS 15 SDK provides support to develop tvOS apps for Apple TV devices runni
 
 - `VerificationResult.unverified(SignedType)` is now `VerificationResult.unverified(SignedType, VerificationError)` to provide a reason for unverified signed values. [`jsonRepresentation`](../StoreKit/transaction/jsonrepresentation.md) is available on [`Transaction`](../StoreKit/transaction.md) and [`jsonRepresentation`](../StoreKit/product/subscriptioninfo/renewalinfo/jsonrepresentation.md) is available on [`renewalInfo`](../StoreKit/product/subscriptioninfo/status-swift.struct/renewalinfo.md); both properties provide the payload JSON as `Data`. [`payloadValue`](../StoreKit/verificationresult/payloadvalue.md) and [`unsafePayloadValue`](../StoreKit/verificationresult/unsafepayloadvalue.md) properties are available on [`VerificationResult`](../StoreKit/verificationresult.md) as a convenience to access the signed value. (80701792)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where purchases performed in the Sandbox environment returned `VerificationResult.unverified(_:_:)`. (71949674)
 
-###### Known Issues
+#### Known Issues
 
 - The [`unfinished`](../StoreKit/transaction/unfinished.md) property might return `VerificationResult<Transaction>` for transactions that have already finished. (81346114)
 
-##### Logging
+### Logging
 
-###### Deprecations
+#### Deprecations
 
 - Support for cleartext HTTP URL schemes for Proxy Automatic Configuration (PAC) is now deprecated. Use only HTTPS URL schemes for PAC. This affects all PAC configurations, including, but not limited to, configurations set via Settings, System Preferences, profiles, and `URLSession` APIs such as [`connectionProxyDictionary`](../Foundation/urlsessionconfiguration/connectionproxydictionary.md) and [`CFNetworkExecuteProxyAutoConfigurationURL(_:_:_:_:)`](../CFNetwork/cfnetworkexecuteproxyautoconfigurationurl%28_,_,_,_%29.md). If you configure a cleartext HTTP PAC URL, the system may upgrade it to HTTPS during PAC file loads. Web Proxy Auto-Discovery (WPAD) Protocol via DNS isn’t affected. Dynamic Host Configuration Protocol (DHCP) Option 252 WPAD may attempt to upgrade cleartext HTTP URLs to HTTPS during PAC file loads. (61981845)
 
-##### MapKit
+### MapKit
 
-###### Deprecations
+#### Deprecations
 
 - [`MKPinAnnotationView`](../MapKit/mkpinannotationview.md) and [`MapPin`](../MapKit/mappin.md) are deprecated in this beta. (78536295)
 
-##### Networking
+### Networking
 
-###### New Features
+#### New Features
 
 - The default `Accept-Language` header that [`URLSession`](../Foundation/urlsession.md) sends has an updated format and corrected values for multiple locales. In addition to the preferred language, the header also includes the current system language as a fallback if it differs from the preferred language. This behavior affects apps that link against macOS 12, iOS 15, tvOS 15, and watchOS 8 SDKs. (38772422)
 
-##### SharePlay
+### SharePlay
 
-###### Deprecations
+#### Deprecations
 
 - SharePlay development in beta 7 and upcoming beta releases requires the installation of an updated [SharePlay Development Profile](https://developer.apple.com/download/). This profile enables successful creation and reception of GroupSessions via the Group Activities API in iOS 15, iPadOS 15 and tvOS 15 beta 7, as well as macOS Monterey beta 6. (81816137)
 
-##### StoreKit
+### StoreKit
 
-###### New Features
+#### New Features
 
 - [StoreKit](../StoreKit/StoreKit.md) 2 introduces a modern Swift-based API that takes advantage of new language features like Swift concurrency. Use this API to load product information, display in-app purchases in your store, allow customers to make purchases, manage access to content and subscriptions, and receive transaction information signed by the App Store in JSON Web Signature (JWS) format. (66587964)
 
-##### SwiftUI
+### SwiftUI
 
-###### New Features
+#### New Features
 
 - [`LocalizedStringKey`](../SwiftUI/localizedstringkey.md) can now contain Markdown syntax. The system parses Markdown strings when you create a [`Text`](../SwiftUI/text.md) view from a `LocalizedStringKey`, including `Text` views created with a string literal. The system styles `Text` according to Markdown constructs. (74515884)
 
@@ -102,13 +102,13 @@ The [`openURL`](../SwiftUI/environmentvalues/openurl.md) environment value can n
 
 - [`Text`](../SwiftUI/text.md) views that contain excessive line height characters now have a larger default size to avoid clipping or overlapping of oversized characters. (80665315)
 
-###### Deprecations
+#### Deprecations
 
 - `controlProminence` is deprecated. Use the new `.borderedProminent` [`ButtonStyle`](../SwiftUI/buttonstyle.md) instead. (78908460)
 
-##### Xcode
+### Xcode
 
-###### Known Issues
+#### Known Issues
 
 - [MusicKit](../MusicKit/MusicKit.md) functionality, such as loading content with music requests, doesn’t work in simulated devices. (78559381)
 

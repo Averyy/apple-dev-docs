@@ -17,7 +17,7 @@ The current playground page.
 static let current: PlaygroundPage
 ```
 
-#### Discussion
+## Discussion
 
 Use [`current`](./api-1964509-current.md) to find the playground page instance.
 

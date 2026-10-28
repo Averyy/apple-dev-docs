@@ -15,7 +15,7 @@ Open the disk-image with read-write permissions.
 case readWrite
 ```
 
-#### Discussion
+## Discussion
 
 Fails if there’s no permission to open the image in this mode.
 

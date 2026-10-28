@@ -17,7 +17,7 @@ A quality-of-service (QoS) type that provides high throughput for delay-tolerant
 case background
 ```
 
-#### Discussion
+## Discussion
 
 Use this Wi-Fi access category for background data transfers, to prevent background traffic from interfering with other higher-priority flows, and for packets transmitted by a `NetworkConnection` that you set with NWParameter’s `serviceClass = .background`.
 

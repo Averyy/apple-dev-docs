@@ -19,11 +19,11 @@ optional func numberOfItems(in comboBoxCell: NSComboBoxCell) -> Int
 - (NSInteger) numberOfItemsInComboBoxCell:(NSComboBoxCell *) comboBoxCell;
 ```
 
-#### Return Value
+## Return Value
 
 The number of items your data source object manages.
 
-#### Discussion
+## Discussion
 
 An `NSComboBoxCell` object uses this method to determine how many items it should display in its pop-up list.
 

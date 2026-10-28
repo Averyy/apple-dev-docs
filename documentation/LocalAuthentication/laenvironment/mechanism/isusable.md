@@ -22,7 +22,7 @@ var isUsable: Bool { get }
 @property (nonatomic, readonly) BOOL isUsable;
 ```
 
-#### Discussion
+## Discussion
 
 Whether the mechanism is available for use, i.e. whether the relevant preflight call of @c canEvaluatePolicy would succeed.
 

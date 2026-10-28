@@ -19,7 +19,7 @@ Should be called by the app when a tab is activated to notify all loaded web ext
 - (void) didActivateTab:(id<WKWebExtensionTab>) activatedTab previousActiveTab:(id<WKWebExtensionTab>) previousTab;
 ```
 
-#### Discussion
+## Discussion
 
 This method informs all loaded extensions of the tab activation, ensuring consistent state awareness across extensions.
 

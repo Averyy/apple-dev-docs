@@ -20,7 +20,7 @@ A data structure that represents the root object in a privacy manifest file.
 - **Name**: `App Privacy Configuration`
 - **Type**: dictionary
 
-#### Overview
+## Overview
 
 Use the keys and values in this object in the privacy manifest for your app or third-party SDK. For more information, see [Privacy manifest files](./privacy-manifest-files.md).
 

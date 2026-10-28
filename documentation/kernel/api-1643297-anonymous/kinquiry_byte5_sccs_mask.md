@@ -13,7 +13,7 @@
 kINQUIRY_Byte5_SCCS_Mask = (1 << kINQUIRY_Byte5_SCCS_Bit)
 ```
 
-#### Discussion
+## Discussion
 
 Mask to use to test the SCCS bit.
 

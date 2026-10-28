@@ -24,7 +24,7 @@ case independent
 AVAudioSessionRouteSharingPolicyIndependent
 ```
 
-#### Discussion
+## Discussion
 
 In iOS, the system sets this policy in cases where the user directs video to a wireless route using the route picker UI. Apps shouldn’t try to set this value directly.
 

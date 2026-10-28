@@ -19,11 +19,11 @@
 static SPRect3DFloat SPRect3DFloatRotate(SPRect3DFloat rect, SPRotation3DFloat rotation);
 ```
 
-#### Return Value
+## Return Value
 
 A rectangle that’s rotated by the specified rotation.
 
-#### Discussion
+## Discussion
 
 Returns a rectangle that’s rotated by the specified rotation around the origin.
 

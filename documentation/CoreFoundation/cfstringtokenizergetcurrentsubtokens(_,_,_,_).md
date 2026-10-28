@@ -25,11 +25,11 @@ func CFStringTokenizerGetCurrentSubTokens(_ tokenizer: CFStringTokenizer!, _ ran
 extern CFIndex CFStringTokenizerGetCurrentSubTokens(CFStringTokenizerRef tokenizer, CFRange *ranges, CFIndex maxRangeLength, CFMutableArrayRef derivedSubTokens);
 ```
 
-#### Return Value
+## Return Value
 
 The number of ranges returned.
 
-#### Discussion
+## Discussion
 
 If token type is `kCFStringTokenizerTokenNone`, the `ranges` array and `derivedSubTokens` array are untouched and the return value is `0`.
 

@@ -21,7 +21,7 @@ The bundle identifier of the app extension.
 var bundleIdentifier: String { get }
 ```
 
-#### Discussion
+## Discussion
 
 During development, an app extension creator assigns a value to this string that incorporates the creator’s company name and the extension name. Bundle identifier strings use reverse-DNS notation.
 

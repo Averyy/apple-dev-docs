@@ -5,13 +5,13 @@
 
 Send a request for mobile document information for apps installed on a device.
 
-#### Overview
+## Overview
 
 The Digital Credentials API allows websites to request identity document information from apps installed on a device. You can request mobile documents (mdocs), as defined in the ISO/IEC 18013-5 standard, through the Digital Credentials API.
 
 Using the Digital Credentials API is the most streamlined and secure way for websites to request mdocs. By implementing the API, your website has access to the mdocs stored in the Wallet app, and in other apps on device. By default, the API supports these flows across iPhone, iPad, and Mac without any platform-specific work required by the website. Additionally, the API leverages other standards to enable cross-platform flows to other operating systems.
 
-#### Build the request
+## Build the request
 
 Your server needs to build the request and handle encryption. The request format is defined in the mdoc request profile in ISO/IEC 18013-7 Annex C.
 
@@ -29,13 +29,13 @@ Define the details of the document you’re requesting in the `ItemsRequest` typ
 - **`docType`**: A standardized string that describes the type of document you’re requesting. For example, you can request a mobile driver’s license (mDL) by using  “org.iso.18013.5.1.mDL”.
 - **`nameSpaces`**: A nested dictionary that defines the elements you request and whether your website intends to retain these elements after the identity verification is complete. These elements are divided into groups called *namespaces*. The standardized namespaces and element identifiers may be different for each document type.
 
-#### Sign and authenticate the request
+## Sign and authenticate the request
 
 After you build the request that describes the document you’re requesting, you might need to authenticate the request through a signature. Any apps that contain these documents are eligible to respond to this request. Some apps might have additional authentication that requires identification of the requesting website.
 
 The standardized mechanism for authenticating the request is the `ReaderAuth` mechanism described in Section 9.1.4 of ISO/IEC 18013-5. This section contains instructions on how to generate a signature and attach it to your device request. The `SessionTranscript` your app uses to generate this signature needs to be the `SessionTranscript` defined in Annex C of ISO/IEC 18013-7.
 
-##### Enable Apple Wallet to accept an mdoc request
+### Enable Apple Wallet to accept an mdoc request
 
 Apple Wallet’s authentication requirements include authenticating the request via the `ReaderAuth` mechanism with a certificate.
 
@@ -43,7 +43,7 @@ You get this request authentication certificate from Apple Business Connect. For
 
 After you have this certificate, generate the `ReaderAuth` signature with its signing key. Then, attach the certificate to the `ReaderAuth` structure through the `x5chain` header defined in RFC 9360.
 
-#### Call the Digital Credentials API
+## Call the Digital Credentials API
 
 First, you build the request based on the generated information from your server. Then, you can build the request structure for the Digital Credentials API.
 
@@ -85,7 +85,7 @@ First, build the request based on the generated information from your server. On
 
 Pass your mdoc request as an individual request in the requests array. The protocol string `org-iso-mdoc` identifies the request profile.
 
-#### Receive an mdoc response
+## Receive an mdoc response
 
 The format of the mdoc response returned from the Digital Credentials API is defined in Annex C of ISO/IEC 18013-7. There are two important parameters in the mdoc response:
 

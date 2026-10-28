@@ -25,7 +25,7 @@ unowned(unsafe) var delegate: (any NSCacheDelegate)? { get set }
 @property (assign, nullable) id<NSCacheDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate must adopt the [`NSCacheDelegate`](../nscachedelegate.md) protocol.
 

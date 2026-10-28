@@ -25,7 +25,7 @@ var settings: [String : Any] { get }
 @property (readonly) NSDictionary<NSString *,id> * settings;
 ```
 
-#### Discussion
+## Discussion
 
 See [`init(url:settings:)`](./init%28url,settings%29-5whyq.md) for supported keys and values.
 

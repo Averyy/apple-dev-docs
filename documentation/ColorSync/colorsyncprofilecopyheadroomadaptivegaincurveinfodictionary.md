@@ -21,7 +21,7 @@ Returns a dictionary describing the Headroom Adaptive Gain Curve decoded from a 
 extern CFDictionaryRefColorSyncProfileCopyHeadroomAdaptiveGainCurveInfoDictionary(ColorSyncProfileRef profile);
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary describing the gain curve, which the caller must release with `CFRelease`, or `NULL` if the profile carries no HAGC tag. See the key constants declared below for the dictionary’s contents.
 

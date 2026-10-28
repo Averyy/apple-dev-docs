@@ -21,7 +21,7 @@ Custom format style portraying the ordinal of the day in the month.
 static var ordinalOfDayInMonth: Date.FormatStyle.Symbol.Day { get }
 ```
 
-#### Discussion
+## Discussion
 
 For example, the second Wednesday in July would yield `2`.
 

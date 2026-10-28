@@ -24,7 +24,7 @@ var device: any MTLDevice { get }
 @property (nonatomic, readonly, nonnull) id<MTLDevice> device;
 ```
 
-#### Discussion
+## Discussion
 
 A Metal device must be specialized at initialization.
 

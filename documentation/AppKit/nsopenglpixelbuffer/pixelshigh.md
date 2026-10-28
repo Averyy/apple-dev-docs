@@ -15,7 +15,7 @@ The height of the OpenGL pixel buffer’s texture (in pixels).
 @property (readonly) GLsizei pixelsHigh;
 ```
 
-#### Return Value
+## Return Value
 
 The height of the texture (in pixels).
 

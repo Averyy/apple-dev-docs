@@ -24,7 +24,7 @@ var pasteConfiguration: UIPasteConfiguration? { get set }
 @property (nonatomic, copy, nullable) UIPasteConfiguration * pasteConfiguration;
 ```
 
-#### Discussion
+## Discussion
 
 If the responder object doesn’t have a paste configuration, `nil` is returned.
 

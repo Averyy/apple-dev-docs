@@ -22,7 +22,7 @@ Adds two values and produces their sum, rounded to a representable value.
 override static func + (lhs: Self, rhs: Self) -> Self
 ```
 
-#### Discussion
+## Discussion
 
 The addition operator (`+`) calculates the sum of its two arguments. For example:
 

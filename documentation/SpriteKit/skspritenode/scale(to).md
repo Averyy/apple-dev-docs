@@ -25,7 +25,7 @@ func scale(to size: CGSize)
 - (void) scaleToSize:(CGSize) size;
 ```
 
-#### Discussion
+## Discussion
 
 This method works by setting the sprite node’s [`xScale`](../sknode/xscale.md) and [`yScale`](../sknode/yscale.md) to achieve the specified size in its parent’s coordinate space.
 

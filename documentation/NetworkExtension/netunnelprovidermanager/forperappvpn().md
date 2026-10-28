@@ -19,7 +19,7 @@ class func forPerAppVPN() -> Self
 + (instancetype) forPerAppVPN;
 ```
 
-#### Return Value
+## Return Value
 
 An object you use to configure a per-app VPN.
 

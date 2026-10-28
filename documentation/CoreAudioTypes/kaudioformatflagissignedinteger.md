@@ -25,7 +25,7 @@ var kAudioFormatFlagIsSignedInteger: AudioFormatFlags { get }
 kAudioFormatFlagIsSignedInteger
 ```
 
-#### Discussion
+## Discussion
 
 Set this flag to indicate the format is signed integer, and clear to indicate it’s unsigned integer. This flag is only valid if [`kAudioFormatFlagIsFloat`](./kaudioformatflagisfloat.md) is clear.
 

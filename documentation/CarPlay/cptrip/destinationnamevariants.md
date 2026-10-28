@@ -21,7 +21,7 @@ var destinationNameVariants: [String]? { get set }
 @property (nonatomic, copy, nullable) NSArray<NSString *> * destinationNameVariants;
 ```
 
-#### Discussion
+## Discussion
 
 You need to provide at least one variant. Present the variant strings as localized, displayable content.
 

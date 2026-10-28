@@ -22,7 +22,7 @@ var supportsColor: Bool { get }
 @property (readonly) BOOL supportsColor;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) if the printer supports color printing or [`false`](../../Swift/false.md) if it does not. For printers you create yourself using the [`init(url:)`](./init%28url%29-1mibn.md) method, the value of this property is [`false`](../../Swift/false.md) until you successfully connect to the printer using the [`contactPrinter(_:)`](./contactprinter%28_%29.md) method.
 

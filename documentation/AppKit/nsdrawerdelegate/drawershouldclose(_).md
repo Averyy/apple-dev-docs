@@ -21,11 +21,11 @@ optional func drawerShouldClose(_ sender: NSDrawer) -> Bool
 - (BOOL) drawerShouldClose:(NSDrawer *) sender;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) to allow the drawer to close; [`false`](../../Swift/false.md) to prevent it from closing.
 
-#### Discussion
+## Discussion
 
 This method is invoked on user-initiated attempts to close a drawer by dragging it or when the [`NSDrawerDelegate`](../nsdrawerdelegate.md) method is called.
 

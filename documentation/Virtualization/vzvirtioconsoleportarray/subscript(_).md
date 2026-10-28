@@ -19,7 +19,7 @@ subscript(portIndex: Int) -> VZVirtioConsolePort? { get }
 - (VZVirtioConsolePort *) objectAtIndexedSubscript:(NSUInteger) portIndex;
 ```
 
-#### Return Value
+## Return Value
 
 A [`VZVirtioConsolePort`](../vzvirtioconsoleport.md) port, or `nil` if the index is outside the bounds of the array.
 

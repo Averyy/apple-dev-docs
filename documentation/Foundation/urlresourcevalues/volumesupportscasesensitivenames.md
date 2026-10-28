@@ -21,7 +21,7 @@ A Boolean value that indicates whether the volume format treats upper and lower 
 var volumeSupportsCaseSensitiveNames: Bool? { get }
 ```
 
-#### Discussion
+## Discussion
 
 An upper case character is equivalent to a lower case character, and you can’t have two names that differ solely in the case of the characters.
 

@@ -19,7 +19,7 @@ Presents an image viewer for a given image file containing Apple Reference Image
 @preconcurrency func photosReferenceImageViewer(fileURL: Binding<URL?>, onProcessingCompletion: ((Result<URL, any Error>) -> Void)?) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 - Parameters
 

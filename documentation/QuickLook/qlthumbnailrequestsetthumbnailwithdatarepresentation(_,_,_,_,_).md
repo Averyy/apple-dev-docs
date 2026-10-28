@@ -21,7 +21,7 @@ func QLThumbnailRequestSetThumbnailWithDataRepresentation(_ thumbnail: QLThumbna
 extern void QLThumbnailRequestSetThumbnailWithDataRepresentation(QLThumbnailRequestRef thumbnail, CFDataRef data, CFStringRef contentTypeUTI, CFDictionaryRef previewProperties, CFDictionaryRef properties);
 ```
 
-#### Discussion
+## Discussion
 
 There are currently no supported UTIs. This call only works if you set your generator to run on the main thread.
 

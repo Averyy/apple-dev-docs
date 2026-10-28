@@ -15,7 +15,7 @@ Enables Swift interoperability with a given language.
 static func interoperabilityMode(_ mode: SwiftSetting.InteroperabilityMode, _ condition: BuildSettingCondition? = nil) -> SwiftSetting
 ```
 
-#### Discussion
+## Discussion
 
 This is useful for enabling interoperability between Swift and C++ for a given target.
 

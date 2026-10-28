@@ -31,7 +31,7 @@ var playerGroup: Int { get set }
 - [Finding players using matchmaking rules](../finding-players-using-matchmaking-rules.md)
 - [Starting turn-based matches and passing turns between players](../starting-turn-based-matches-and-passing-turns-between-players.md)
 
-#### Discussion
+## Discussion
 
 Game Center only finds players whose `GKMatchRequest` objects share the same `playerGroup` value. For example, use the `playerGroup` property to create matches based on skill level, game modes, or other common interests. The default value of this property is `1`.
 

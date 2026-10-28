@@ -23,7 +23,7 @@ var deviceVerificationNonce: UUID { get }
 
 Available when `SignedType` is `Transaction`.
 
-#### Discussion
+## Discussion
 
 Use the lowercased nonce when computing the [`deviceVerification`](./deviceverification-69lvx.md) value.
 

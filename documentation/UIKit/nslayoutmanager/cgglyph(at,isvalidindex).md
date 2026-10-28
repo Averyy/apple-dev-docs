@@ -23,11 +23,11 @@ func cgGlyph(at glyphIndex: Int, isValidIndex: UnsafeMutablePointer<ObjCBool>?) 
 - (CGGlyph) CGGlyphAtIndex:(NSUInteger) glyphIndex isValidIndex:(BOOL *) isValidIndex;
 ```
 
-#### Return Value
+## Return Value
 
 The glyph at the specified index or [`kCGFontIndexInvalid`](../../CoreGraphics/kcgfontindexinvalid.md) if the index is out of range.
 
-#### Discussion
+## Discussion
 
 If noncontiguous layout is disabled, calling this method generates all glyphs up to and including the one at `glyphIndex`.
 

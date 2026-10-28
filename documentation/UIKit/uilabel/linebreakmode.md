@@ -23,7 +23,7 @@ var lineBreakMode: NSLineBreakMode { get set }
 @property (nonatomic) NSLineBreakMode lineBreakMode;
 ```
 
-#### Discussion
+## Discussion
 
 If you aren’t using styled text, this property applies to the entire text string in the [`text`](./text.md) property. If you’re using styled text, assigning a new value to this property applies the line break mode to the entirety of the string in the [`attributedText`](./attributedtext.md) property. To apply the line break mode to only a portion of the text, create a new attributed string with the desired style information and associate it with the label. However, [`NSParagraphStyle`](../nsparagraphstyle.md) properties, such as those defined by [`NSLineBreakMode`](../nslinebreakmode.md), apply to entire paragraphs (as defined for [`paragraphRange(for:)`](../../Foundation/nsstring/paragraphrange%28for%29.md)), not words within paragraphs.
 

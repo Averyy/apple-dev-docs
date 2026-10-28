@@ -19,7 +19,7 @@ var allowsDragging: Bool { get set }
 @property (nonatomic) BOOL allowsDragging;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if users can re-order pages by dragging thumbnails, [`false`](../../Swift/false.md) otherwise.
 

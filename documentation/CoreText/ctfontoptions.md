@@ -25,7 +25,7 @@ struct CTFontOptions
 enum CTFontOptions : CFOptionFlags;
 ```
 
-#### Overview
+## Overview
 
 Use these options with the functions [`CTFontCreateWithNameAndOptions(_:_:_:_:)`](./ctfontcreatewithnameandoptions%28_,_,_,_%29.md) and [`CTFontCreateWithFontDescriptorAndOptions(_:_:_:_:)`](./ctfontcreatewithfontdescriptorandoptions%28_,_,_,_%29.md).
 

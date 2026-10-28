@@ -18,7 +18,7 @@ var FFCAP_ET_RAMPFORCE: Int { get }
 FFCAP_ET_RAMPFORCE
 ```
 
-#### Discussion
+## Discussion
 
 The effect represents a ramp force effect.
 

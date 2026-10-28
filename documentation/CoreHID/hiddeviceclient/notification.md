@@ -15,7 +15,7 @@ Notifications for a HID device.
 enum Notification
 ```
 
-#### Overview
+## Overview
 
 You can receive these notifications using [`monitorNotifications(reportIDsToMonitor:elementsToMonitor:)`](./monitornotifications%28reportidstomonitor,elementstomonitor%29.md).
 

@@ -18,7 +18,7 @@ Create a new array of [`KVCache`](../kvcache.md) appropriate for this model.
 func newCache(parameters: GenerateParameters?) throws -> [KVCache]
 ```
 
-#### Discussion
+## Discussion
 
 Implementations must honor [`maxKVSize`](../generateparameters/maxkvsize.md) for any attention layer that can be token-windowed. Hybrid attention / state-space models apply the limit to attention caches only (see [`makeAttentionKVCache(parameters:)`](../makeattentionkvcache%28parameters%29.md)).
 

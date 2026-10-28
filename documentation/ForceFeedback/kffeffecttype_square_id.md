@@ -14,7 +14,7 @@
 #define kFFEffectType_Square_ID
 ```
 
-#### Discussion
+## Discussion
 
 UUID for a square wave effect type
 

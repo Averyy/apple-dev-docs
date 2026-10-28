@@ -26,7 +26,7 @@ func invalidate()
 
 - [Adopting system selection UI in custom text views](../adopting-system-selection-ui-in-custom-text-views.md)
 
-#### Discussion
+## Discussion
 
 Call this method when you’re ready to hide the loupe. After calling this method, you can remove your reference to the session.
 

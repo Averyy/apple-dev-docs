@@ -4,7 +4,7 @@
 
 Identifies collation as a class of Unicode utility operations.
 
-#### Overview
+## Overview
 
 The locales and collation variants available for collation operations can be determined by calling the Locales Utilities functions `LocaleOperationCountLocales` and `LocaleOperationGetLocales` with the `opClass` parameter set to the `kUnicodeCollationClass` constant. 
 

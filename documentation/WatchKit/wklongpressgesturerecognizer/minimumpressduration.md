@@ -19,7 +19,7 @@ var minimumPressDuration: CFTimeInterval { get set }
 @property (nonatomic) CFTimeInterval minimumPressDuration;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is `0.5` seconds, but you can change this value when configuring the gesture recognizer in Interface Builder.
 

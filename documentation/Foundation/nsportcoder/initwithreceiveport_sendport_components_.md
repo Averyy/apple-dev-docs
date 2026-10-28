@@ -16,7 +16,7 @@ Initializes and returns an `NSPortCoder` object.
 - (id) initWithReceivePort:(NSPort *) rcvPort sendPort:(NSPort *) sndPort components:(NSArray *) comps;
 ```
 
-#### Discussion
+## Discussion
 
 Initializes a newly allocated `NSPortCoder` object connected to the communication ports `rcvPort` and `sndPort`, with an encoded distributed objects message stored in `comps`.
 

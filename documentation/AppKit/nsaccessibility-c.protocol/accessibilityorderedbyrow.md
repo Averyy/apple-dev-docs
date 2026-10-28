@@ -15,7 +15,7 @@ A Boolean value that determines whether the accessibility element’s grid is in
 @property (getter=isAccessibilityOrderedByRow) BOOL accessibilityOrderedByRow;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property for UI elements that present a grid of child elements. Set the property to [`true`](../../Swift/true.md) if the grid is ordered row major; otherwise, set to [`false`](../../Swift/false.md).
 

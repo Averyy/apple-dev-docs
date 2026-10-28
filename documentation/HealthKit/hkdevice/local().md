@@ -24,7 +24,7 @@ class func local() -> HKDevice
 + (HKDevice *) localDevice;
 ```
 
-#### Return Value
+## Return Value
 
 A device object representing the hardware (iPhone, iPod Touch, or Apple Watch) that is running the app.
 

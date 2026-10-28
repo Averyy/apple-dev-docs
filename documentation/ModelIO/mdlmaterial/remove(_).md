@@ -24,7 +24,7 @@ func remove(_ property: MDLMaterialProperty)
 - (void) removeProperty:(MDLMaterialProperty *) property;
 ```
 
-#### Discussion
+## Discussion
 
 This method has no effect if the specified material property is not contained in the material.
 

@@ -20,7 +20,7 @@ class BEAudioSession
 @interface BEAudioSession : NSObject
 ```
 
-#### Overview
+## Overview
 
 This class provides a scoped interface that limits a browser-app extension’s access to the audio session. For example, an extension process can query available outputs and communicate a preferred output to the system, while the browser app’s main process retains full control over audio session configuration.
 

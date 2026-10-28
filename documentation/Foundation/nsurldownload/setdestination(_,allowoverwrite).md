@@ -19,11 +19,11 @@ func setDestination(_ path: String, allowOverwrite: Bool)
 - (void) setDestination:(NSString *) path allowOverwrite:(BOOL) allowOverwrite;
 ```
 
-#### Discussion
+## Discussion
 
 If `allowOverwrite` is [`false`](../../Swift/false.md) and a file already exists at `path`, a unique filename will be created for the downloaded file by appending a number to the filename. The delegate can implement the [`download(_:didCreateDestination:)`](../nsurldownloaddelegate/download%28_,didcreatedestination%29.md) delegate method to determine the filename used when the file is written to disk.
 
-##### Special Considerations
+### Special Considerations
 
 An `NSURLDownload` instance ignores multiple calls to this method.
 

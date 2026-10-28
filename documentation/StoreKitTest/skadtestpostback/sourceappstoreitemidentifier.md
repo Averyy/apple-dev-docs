@@ -21,7 +21,7 @@ var sourceAppStoreItemIdentifier: Int { get }
 @property (nonatomic, assign, readonly) NSInteger sourceAppStoreItemIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 In the testing environment, the [`sourceAppStoreItemIdentifier`](./sourceappstoreitemidentifier.md) is always `0`.
 

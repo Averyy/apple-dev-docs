@@ -22,7 +22,7 @@ var supportedEAPTypes: [NSNumber] { get set }
 @property (copy) NSArray<NSNumber *> * supportedEAPTypes;
 ```
 
-#### Discussion
+## Discussion
 
 See [`NEHotspotEAPSettings.EAPType`](./eaptype.md) for valid values.
 

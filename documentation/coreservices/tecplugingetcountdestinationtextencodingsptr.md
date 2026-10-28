@@ -16,7 +16,7 @@ Defines a pointer to a function that counts andreturns the number of destination
 typedef OSStatus (*TECPluginGetCountDestinationTextEncodingsPtr)(TextEncoding inputEncoding, TextEncoding *destinationEncodings, ItemCount maxDestinationEncodings, ItemCount *actualDestinationEncodings);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./carbon_core/text_encoding_conversion_manager.md#1664324).
 

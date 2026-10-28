@@ -23,7 +23,7 @@ optional func textViewDidChangeSelection(_ textView: UITextView)
 - (void) textViewDidChangeSelection:(UITextView *) textView;
 ```
 
-#### Discussion
+## Discussion
 
 Implementation of this method is optional. You can use the [`selectedRange`](../uitextview/selectedrange.md) property of the text view to get the new selection.
 

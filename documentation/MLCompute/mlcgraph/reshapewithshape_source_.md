@@ -19,7 +19,7 @@ Adds a new reshape layer to the graph using the shape and source tensor you spec
 - (MLCTensor *) reshapeWithShape:(NSArray<NSNumber *> *) shape source:(MLCTensor *) source;
 ```
 
-#### Return Value
+## Return Value
 
 A result tensor.
 

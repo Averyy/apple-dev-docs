@@ -24,7 +24,7 @@ var borderColor: CGColor? { get set }
 @property (nullable) CGColorRef borderColor;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is an opaque black color.
 

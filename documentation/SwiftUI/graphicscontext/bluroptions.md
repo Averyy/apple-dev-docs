@@ -22,7 +22,7 @@ Options that configure the graphics context filter that creates blur.
 struct BlurOptions
 ```
 
-#### Overview
+## Overview
 
 You can use a set of these options when you call [`blur(radius:options:)`](./filter/blur%28radius,options%29.md) to create a [`GraphicsContext.Filter`](./filter.md) that adds blur to an object that you draw into a [`GraphicsContext`](../graphicscontext.md).
 

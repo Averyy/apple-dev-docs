@@ -19,7 +19,7 @@ The configuration for the button’s appearance.
 @property (nonatomic, copy, readwrite, nullable) UIButtonConfiguration * configuration;
 ```
 
-#### Discussion
+## Discussion
 
 Setting a configuration opts the button into a configuration system based on [`UIButtonConfiguration`](../uibuttonconfiguration.md). This configuration supports several options and behaviors unavailable with other configuration methods. Features include subtitle labels, extended control over background appearance, ways to transform the button configuration when the button changes state, and integration with macOS when building with Mac Catalyst.
 

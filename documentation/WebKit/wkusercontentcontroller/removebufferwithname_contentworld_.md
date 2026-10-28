@@ -17,7 +17,7 @@
 - (void) removeBufferWithName:(NSString *) name contentWorld:(WKContentWorld *) world;
 ```
 
-#### Discussion
+## Discussion
 
 Removes a previously added data buffer from the given `WKContentWorld
 

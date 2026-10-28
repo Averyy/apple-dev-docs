@@ -21,7 +21,7 @@ The layout direction inherited by the container view.
 var layoutDirection: LayoutDirection
 ```
 
-#### Discussion
+## Discussion
 
 SwiftUI supports both left-to-right and right-to-left directions. Read this property within a custom layout container to find out which environment the container is in.
 

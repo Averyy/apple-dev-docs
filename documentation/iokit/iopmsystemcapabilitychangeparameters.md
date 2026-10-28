@@ -17,7 +17,7 @@ struct IOPMSystemCapabilityChangeParameters {
 };
 ```
 
-#### Discussion
+## Discussion
 
 A system capability change is a system level transition from a set of system capabilities to a new set of system capabilities. Power management sends a `kIOMessageSystemCapabilityChange` message and provides this structure as the message data (by reference) to `gIOPriorityPowerStateInterest` clients when system capability changes.
 

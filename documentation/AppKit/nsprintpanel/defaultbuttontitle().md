@@ -19,7 +19,7 @@ func defaultButtonTitle() -> String?
 - (NSString *) defaultButtonTitle;
 ```
 
-#### Return Value
+## Return Value
 
 The title of the default button.
 

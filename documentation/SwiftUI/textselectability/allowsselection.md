@@ -20,7 +20,7 @@ A Boolean value that indicates whether the selectability type allows selection.
 static var allowsSelection: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 Conforming types, such as [`EnabledTextSelectability`](../enabledtextselectability.md) and [`DisabledTextSelectability`](../disabledtextselectability.md), return `true` or `false` for this property as appropriate. SwiftUI expects this value for a given selectability type to be constant, unaffected by global state.
 

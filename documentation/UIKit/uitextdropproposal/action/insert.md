@@ -22,7 +22,7 @@ case insert
 UITextDropActionInsert
 ```
 
-#### Discussion
+## Discussion
 
 The action ignores any selection present in the target text view.
 

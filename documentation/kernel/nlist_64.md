@@ -16,7 +16,7 @@ struct nlist_64 {
 };
 ```
 
-#### Discussion
+## Discussion
 
 See discussion in [`nlist`](./nlist.md).
 

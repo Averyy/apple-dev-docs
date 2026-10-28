@@ -10,7 +10,7 @@ framework: "Swift-Org/SwiftlyDocs"
 
 A utility for installing and managing Swift toolchains.
 
-#### Overview
+## Overview
 
 ```
 swiftly [--version] [--help]
@@ -24,7 +24,7 @@ swiftly [--version] [--help]
 
 *Show help information.*
 
-#### install
+## install
 
 Install a new toolchain.
 
@@ -124,7 +124,7 @@ Progress information will be appended to this file as JSON objects, one per line
 
 *Show help information.*
 
-#### list-available
+## list-available
 
 List toolchains available for install.
 
@@ -175,7 +175,7 @@ Note that listing available snapshots before the latest release (major and minor
 
 *Show help information.*
 
-#### use
+## use
 
 Set the in-use or default toolchain. If no toolchain is provided, print the currently in-use toolchain, if any.
 
@@ -259,7 +259,7 @@ $ swiftly use xcode
 
 *Show help information.*
 
-#### uninstall
+## uninstall
 
 Remove an installed toolchain.
 
@@ -330,7 +330,7 @@ $ swiftly uninstall all
 
 *Show help information.*
 
-#### list
+## list
 
 List installed toolchains.
 
@@ -379,7 +379,7 @@ $ swiftly list 5.7-snapshot
 
 *Show help information.*
 
-#### update
+## update
 
 Update an installed toolchain to a newer version.
 
@@ -467,7 +467,7 @@ If the toolchain that is installed has extra post installation steps they they w
 
 *Show help information.*
 
-#### init
+## init
 
 Perform swiftly initialization into your user account.
 
@@ -511,7 +511,7 @@ swiftly init [--no-modify-profile] [--overwrite] [--platform=<platform>] [--skip
 
 *Show help information.*
 
-#### self-update
+## self-update
 
 Update the version of swiftly itself.
 
@@ -535,7 +535,7 @@ swiftly self-update [--assume-yes] [--verbose]  [--version] [--help]
 
 *Show help information.*
 
-#### run
+## run
 
 Run a command while proxying to the selected toolchain commands.
 
@@ -595,7 +595,7 @@ The script will receive the argument ‘+abcde’ followed by ‘+xyz’.
 
 *Show help information.*
 
-#### self-uninstall
+## self-uninstall
 
 Uninstall swiftly itself.
 
@@ -619,7 +619,7 @@ swiftly self-uninstall [--assume-yes] [--verbose] [--version] [--help]
 
 *Show help information.*
 
-#### link
+## link
 
 Link swiftly so it resumes management of the active toolchain.
 
@@ -649,7 +649,7 @@ Links swiftly if it has been disabled.
 
 *Show help information.*
 
-#### unlink
+## unlink
 
 Unlinks swiftly so it no longer manages the active toolchain.
 
@@ -683,7 +683,7 @@ $ swiftly link
 
 *Show help information.*
 
-#### help
+## help
 
 Show subcommand help information.
 

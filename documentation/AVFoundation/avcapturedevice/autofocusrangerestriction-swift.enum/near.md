@@ -22,7 +22,7 @@ case near
 AVCaptureAutoFocusRangeRestrictionNear
 ```
 
-#### Discussion
+## Discussion
 
 You should use this value if your app uses [`AVCaptureMetadataOutput`](../../avcapturemetadataoutput.md) to recognize machine-readable codes.
 

@@ -20,7 +20,7 @@ An entitlement that prevents the system from initiating Apple Pay while the app 
 
 **Default**: `true`
 
-#### Discussion
+## Discussion
 
 Add this entitlement to your app that uses NFC or a related technology, to stop the system from showing the Apple Pay UI while your app is in the foreground.
 

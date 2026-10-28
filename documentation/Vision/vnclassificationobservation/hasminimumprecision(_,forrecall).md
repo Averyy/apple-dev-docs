@@ -24,7 +24,7 @@ func hasMinimumPrecision(_ minimumPrecision: Float, forRecall recall: Float) -> 
 - (BOOL) hasMinimumPrecision:(float) minimumPrecision forRecall:(float) recall;
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean indicating whether or not this classification observation provides a minimum percentage of relevant results that meet the desired recall criterion.
 

@@ -18,7 +18,7 @@ Returns the value of the OSNumber as a uint8_t value.
 uint8_t unsigned8BitValue() const;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the value of the OSNumber as a uint8_t value.
 

@@ -24,7 +24,7 @@ let AVVideoPixelAspectRatioVerticalSpacingKey: String
 extern NSString * const AVVideoPixelAspectRatioVerticalSpacingKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is an instance of `NSNumber`.
 

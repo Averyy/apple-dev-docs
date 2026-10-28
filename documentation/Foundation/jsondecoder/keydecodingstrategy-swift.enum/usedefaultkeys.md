@@ -21,7 +21,7 @@ A key decoding strategy that doesn’t change key names during decoding.
 case useDefaultKeys
 ```
 
-#### Discussion
+## Discussion
 
 The [`JSONDecoder.KeyDecodingStrategy.useDefaultKeys`](./usedefaultkeys.md) strategy is the strategy used if you don’t specify one.
 

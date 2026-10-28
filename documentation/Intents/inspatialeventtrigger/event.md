@@ -31,7 +31,7 @@ var event: INSpatialEvent { get }
 @property (atomic, assign, readonly) INSpatialEvent event;
 ```
 
-#### Discussion
+## Discussion
 
 The user can trigger events when they leave or arrive at the specified location. This property is set at automatically at initialization time and cacan’tnnot be changed later.
 

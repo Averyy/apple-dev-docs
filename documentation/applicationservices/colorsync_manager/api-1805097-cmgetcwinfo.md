@@ -14,11 +14,11 @@ CMError CMGetCWInfo (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A `CMError` value. See [Result Codes](../colorsync_manager.md#1670295).
 
-#### Overview
+## Overview
 
 This discussion is accurate for versions of ColorSync prior to 2.5. See the version notes below for changes starting with version 2.5.
 
@@ -28,7 +28,7 @@ The source and destination profiles you specify when you create a color world id
 
 The `CMGetCWInfo` function identifies the CMM or CMMs to use. Your application must allocate a data structure of type `CMCWInfoRecord` and pass a pointer to it in the `info` parameter. The `CMGetCWInfo` function returns the color world information in this structure. The structure includes a `cmmCount` field identifying the number of CMMs that will be used and an array of two members containing structures of type `CMMInfoRecord`. The `CMGetCWInfo` function returns information in one or both of the CMM information records depending on whether one or two CMMs are used. 
 
-##### Version-Notes
+### Version-Notes
 
 Starting with ColorSync 2.5, a user can select a preferred CMM with the ColorSync control panel. If the user has selected a preferred CMM, and if it is available, then it will be used for all color conversion and matching operations.
 

@@ -25,7 +25,7 @@ var lineNumber: Int { get }
 @property (readonly) NSInteger lineNumber;
 ```
 
-#### Discussion
+## Discussion
 
 You may access this property once a parsing operation has begun or after an error occurs.
 

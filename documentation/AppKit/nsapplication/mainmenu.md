@@ -19,7 +19,7 @@ var mainMenu: NSMenu? { get set }
 @property (strong, nullable) NSMenu * mainMenu;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to assign a new menu bar for your app or to access the current menu bar.
 

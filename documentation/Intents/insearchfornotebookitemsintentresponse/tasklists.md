@@ -33,7 +33,7 @@ var taskLists: [INTaskList]? { get set }
 @property (atomic, copy, readwrite, nullable) NSArray<INTaskList *> * taskLists;
 ```
 
-#### Discussion
+## Discussion
 
 When searching for items of type [`INNotebookItemType.taskList`](../innotebookitemtype/tasklist.md), put the results of your search in this property. Assign a value to the [`sortType`](./sorttype.md) property that indicates how you sorted the results.
 

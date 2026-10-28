@@ -21,7 +21,7 @@ Positions and orients the entity to look at a target from a given position.
 @preconcurrency func look(at target: SIMD3<Float>, from position: SIMD3<Float>, upVector: SIMD3<Float> = SIMD3<Float>(0, 1, 0), relativeTo referenceEntity: Entity?)
 ```
 
-#### Discussion
+## Discussion
 
 You can use this method on any entity, but it’s particularly useful for orienting cameras and lights to aim at a particular point in space.
 

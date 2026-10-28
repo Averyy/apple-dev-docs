@@ -5,7 +5,7 @@
 
 Drive a character’s locomotion state machine from a Script Graph at runtime.
 
-#### Overview
+## Overview
 
 An Animation Graph is a visual, node-based description of how a character animates: which clips play, how they blend together, and when the character switches from one motion to another. Instead of hand-coding transition logic, you connect nodes from a handful of categories — Source nodes that supply raw animation clips, a Control Flow node called a State Machine that branches between named states, Modifier nodes that blend or reshape poses, and a single Output node that hands the final pose to the entity’s skeleton. The graph evaluates this network continuously and drives whichever entity you assign it to.
 
@@ -17,13 +17,13 @@ Two features extend a graph beyond its own boundaries. Tags let a state machine�
 
 This article builds a small locomotion graph — an Idle, Walk, and Run state machine blended by speed — assigns it to a character, previews it from three different surfaces in the editor, and wires a Script Graph that reads and drives its state. It also covers [AnimationGraphComponent](../RealityKit/animationgraphcomponent.md), the public RealityKit struct that attaches the compiled graph to an entity and exposes its runtime state to Swift.
 
-#### Create an Animation Graph
+## Create an Animation Graph
 
 Create the asset from the Project Browser by clicking **[+]**  > **Animation** > **Animation Graph**, then give it a descriptive name, such as “CharacterLocomotion.” Opening the asset switches Reality Composer Pro to the Animation Workspace, a layout pre-configured for authoring Animation Graph assets, with the graph canvas as the central surface.
 
 Before adding nodes, set the graph’s asset-level Skeleton Definition to the skeleton the graph drives — every Animation Clip and pose node you add later resolves its joints against this skeleton, so set it first. If your project already has retargeted animation clips in an animation library that references the same Skeleton Definition, you can drop those clips directly into the graph as Source nodes without any additional setup.
 
-#### Add animation sources
+## Add animation sources
 
 Every Animation Graph node belongs to one of five categories: Source, Control Flow, Modifier, Inverse Kinematics, and Output. Open the Node Insertion Menu with N or the Space key to browse them.
 
@@ -31,7 +31,7 @@ Add two Animation Clip nodes from the Source category and point them at your cha
 
 ![Screenshot of a Reality Composer Pro Animation Graph with Walk, Run, and Idle nodes connected to a State Machine node.](https://developer.apple.com/tutorials/images/RealityComposerPro/AnimationGraph6@2x.png)
 
-#### Blend sources by speed
+## Blend sources by speed
 
 To blend between the Walk and Run clips based on speed, add a Blend 1D node from the Modifier category and connect both clip outputs into it. Blend 1D opens an embedded Blend Space view, a small grid editor where you arrange animation samples along a single parameter axis. Place the Walk sample near the low end of the axis and the Run sample near the high end; the node needs at least two samples to blend anything, and you can add, remove, rename, or reposition samples at any time.
 
@@ -41,7 +41,7 @@ To drive that axis at runtime rather than hardcoding a value, add a graph-level 
 
 > **One vocabulary note carries through the rest of this article**: Animation Graph nodes pass pose data along typed pins, not execution order. There’s no concept of an execution-flow or event pin here — that vocabulary belongs to Script Graph, which you’ll meet later in this article.
 
-#### Branch states with a State Machine
+## Branch states with a State Machine
 
 A Blend 1D node handles blending within a single locomotion pose, but a character also needs to switch between distinct behaviors — standing still versus moving. Add a State Machine node from the Control Flow category to handle that branching. Inside it, create three States: Idle, Walk, and Run, and rename each one to match. Idle sources a standing-still Animation Clip directly; Walk and Run can both route through the Blend 1D node you built in the previous section, since that node already blends between exactly those two clips.
 
@@ -51,7 +51,7 @@ Connect Idle to Walk, and Walk to Run, with Transitions — connect Conduits bet
 
 With the state machine wired, connect its output to a Final Pose node from the Output category. Final Pose is where every graph in this article ultimately terminates — it’s the node that hands the resolved pose to the entity’s skeleton for rendering.
 
-#### Expose graph state with Tags
+## Expose graph state with Tags
 
 A state machine’s states can carry Tags, which announce when a state reaches a particular point in its playback lifecycle. Select the Run state and add an Internal Tag named “IsSprinting,” then set its logic mode to OnEnter so the tag reports active as soon as the character enters the Run state. Other logic modes are available for detecting a state’s full duration, its exit moment, or each loop iteration; this graph only needs to know the instant Run begins, so OnEnter is the right choice here.
 
@@ -59,19 +59,19 @@ A state machine’s states can carry Tags, which announce when a state reaches a
 
 Every tag placed anywhere in the graph also appears in the graph-level Tags panel, listing each tag’s Name, Type, and current Status. You can check a tag two ways: from inside the state machine, using a Tag-type Transition Condition to branch on whether another state’s tag is active, or from outside the graph entirely, by reading the tag’s status from Swift or a Script Graph. That second path is the hook this article uses later to bridge into Script Graph and Swift — keep it distinct from Script Graph’s own Events, which is a different mechanism in a different graph type; the Drive the graph from a Script Graph section covers it separately.
 
-#### Assign the graph to a character entity
+## Assign the graph to a character entity
 
 With the graph built, select the character entity in the Hierarchy Tab, open the Inspector, and choose Add Component > Animation Graph. Bind the CharacterLocomotion asset you created earlier to this component. Reality Composer Pro lists Animation Graph under the Animation heading alongside Animation Library and Skeleton Debug, describing it as the component that scripts an entity’s animation behavior through a graph interface.
 
 Confirm the component’s bound graph shares the same Skeleton Definition as the character’s rig — a mismatch here is the most common reason a correctly wired graph produces no visible motion, since the graph’s Animation Clip and pose nodes resolve joints against whichever skeleton the graph itself declares.
 
-#### Preview the graph in the editor
+## Preview the graph in the editor
 
 Reality Composer Pro gives you three separate surfaces for checking this graph’s behavior. Each answers a different question. The Animation Graph editor’s own Preview Viewport, built directly into the graph’s Interface Layout, gives you real-time feedback as you edit nodes — useful while you’re still wiring the Blend 1D node or adjusting a transition threshold. The shared Preview Tab, common to every asset type in Reality Composer Pro, shows the selected graph updating live against its own Camera and Lighting environment settings. Use it to check the character’s appearance independent of the graph editor itself.
 
 The Simulate Tab goes a step further by letting you play the graph over time rather than viewing a static snapshot: use Play, Pause, and Restart alongside a Playback Speed control ranging from 1/10x to 10x, plus the same shared camera, lighting, and debug-view controls found elsewhere. Scrub the Speed input up and down here to confirm the Walk-to-Run blend and the state machine’s transitions behave the way you expect before moving on to gameplay integration.
 
-#### Drive the graph from a Script Graph
+## Drive the graph from a Script Graph
 
 Everything up to this point lives entirely inside the Animation Graph editor. Getting a Trigger input or a Tag to respond to gameplay — a collision, a button press — requires a second, separate graph type: Script Graph, Reality Composer Pro’s event-driven visual scripting surface for runtime logic. Authoring a Script Graph produces a `ScriptingComponent` that you attach to an entity alongside its Animation Graph component.
 
@@ -83,7 +83,7 @@ A Script Graph typically begins with a node from its Events category — reactin
 
 For this locomotion graph, wire a Script Graph that starts from a Collision event, uses Get Component to reach the entity’s Animation Graph component, and then either reads whether the “IsSprinting” Tag is currently active or sets the “Jump” Trigger input you’d expose alongside Speed, depending on what the collision represents.
 
-#### Observe graph state from Swift
+## Observe graph state from Swift
 
 RealityKit exposes the compiled graph’s runtime state to Swift through [AnimationGraphComponent](../RealityKit/animationgraphcomponent.md), the same component the Add Component menu and Script Graph’s Get Component node work with. Attach it with [AnimationGraphComponent.init(graph:)](../RealityKit/animationgraphcomponent/init%28graph%29.md), or read it back from an entity that already has one:
 

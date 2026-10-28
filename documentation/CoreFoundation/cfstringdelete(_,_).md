@@ -25,7 +25,7 @@ func CFStringDelete(_ theString: CFMutableString!, _ range: CFRange)
 extern void CFStringDelete(CFMutableStringRef theString, CFRange range);
 ```
 
-#### Discussion
+## Discussion
 
 The characters after the deleted range are adjusted to “fill in” the gap.
 

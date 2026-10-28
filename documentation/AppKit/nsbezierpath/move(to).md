@@ -19,7 +19,7 @@ func move(to point: NSPoint)
 - (void) moveToPoint:(NSPoint) point;
 ```
 
-#### Discussion
+## Discussion
 
 This method implicitly closes the current subpath (if any) and sets the current point to the value in `aPoint`. When closing the previous subpath, this method does not cause a line to be created from the first and last points in the subpath.
 

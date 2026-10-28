@@ -19,7 +19,7 @@ A type to represent a basic authentication password.
 struct BasicAuthentication
 ```
 
-#### Overview
+## Overview
 
 This type is a representation of `BasicAuth` as defined in the Credential Exchange Format (CXF) specification.
 

@@ -23,7 +23,7 @@ var region: UIRegion { get set }
 @property (nonatomic, strong) UIRegion * region;
 ```
 
-#### Discussion
+## Discussion
 
 This property defines the shape of the field centered on the point in the [`position`](./position.md) property. A field does not exert any force on items that lie outside of the specified region.
 

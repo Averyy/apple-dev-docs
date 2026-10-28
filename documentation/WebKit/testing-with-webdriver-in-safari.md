@@ -5,7 +5,7 @@
 
 Enable WebDriver and run a test.
 
-#### Overview
+## Overview
 
 This article walks you through the process of setting up WebDriver and running a test written in Python. When a test calls a command, the command is executed in the following steps:
 
@@ -14,7 +14,7 @@ This article walks you through the process of setting up WebDriver and running a
 3. The driver validates the HTTP request’s contents and forwards the command to the appropriate browser instance.
 4. When a command has finished executing, the driver sends an HTTP response for the REST API command. The client library interprets the HTTP response and returns the result to the test code.
 
-##### Make Sure You Have Safari’s WebDriver
+### Make Sure You Have Safari’s WebDriver
 
 Safari and Safari Technology Preview each provide their own `safaridriver` executable. Make sure you already have the executable on your device:
 
@@ -23,13 +23,13 @@ Safari and Safari Technology Preview each provide their own `safaridriver` execu
 
 Each `safaridriver` is capable of launching only the Safari version it’s associated with, and the two can run simultaneously. Although you can launch `safaridriver` manually by running a `safaridriver` executable, most Selenium libraries launch the driver automatically. See the documentation for your preferred client library to learn how to specify which browser to use.
 
-##### Get the Correct Selenium Library Version
+### Get the Correct Selenium Library Version
 
 Grab a recent release of the [Selenium](https://www.seleniumhq.org/download/) open source project. Selenium’s Java and Python client libraries offer support for Safari’s native driver implementation starting in the 3.0.0-beta1 release.
 
 > ❗ **Important**:  Don’t use the old SafariDriver implementation, which is no longer supported by the Selenium project. The Apple-developed driver is a replacement for the legacy SafariDriver formerly maintained by the Selenium project.
 
-##### Configure Safari to Enable WebDriver Support
+### Configure Safari to Enable WebDriver Support
 
 Safari’s WebDriver support for developers is turned off by default. How you enable it depends on your operating system.
 
@@ -43,7 +43,7 @@ Run `safaridriver --enable` once. (If you’re upgrading from a previous macOS r
 2. Choose Develop > Allow Remote Automation.
 3. Authorize `safaridriver` to launch the XPC service that hosts the local web server. To permit this, manually run `/usr/bin/safaridriver` once and follow the authentication prompt.
 
-##### Write a WebDriver Testing Suite
+### Write a WebDriver Testing Suite
 
 Once you’ve obtained a client library, you can write a WebDriver test and run it against Safari. The example below uses using Python WebDriver to test important functionality of the [WebKit Feature Status](https://webkit.org/status/) page.
 
@@ -106,7 +106,7 @@ if __name__ == "__main__":
     unittest.main()
 ```
 
-##### Run Your Test
+### Run Your Test
 
 Copy and save the test code above as `test_webkit.py` and run the following:
 

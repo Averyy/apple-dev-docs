@@ -24,7 +24,7 @@ class GCDualSenseGamepad
 @interface GCDualSenseGamepad : GCExtendedGamepad
 ```
 
-#### Overview
+## Overview
 
 The DualSense controller profile is similar to a DualShock profile ([`GCDualShockGamepad`](./gcdualshockgamepad.md)), but has adaptive triggers that allow you to specify a dynamic resistance force when the user pulls the trigger. For example, you can emulate the feeling of pulling back a bow string, firing a weapon, or pulling a lever.
 

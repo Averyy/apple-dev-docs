@@ -4,7 +4,7 @@
 **Kind**: func  
 **Role**: Function
 
-Solves the equation *Subfactor * X = B* in place for the vector of double-precision values *X*.
+Solves the equation *Subfactor \* X = B* in place for the vector of double-precision values *X*.
 
 **Availability**:
 - iOS 11.0+
@@ -27,18 +27,18 @@ static void SparseSolve(SparseOpaqueSubfactor_Double Subfactor, DenseVector_Doub
 
 ## Parameters
 
-- `Subfactor`: The *Subfactor* in *Subfactor* ** X = B* that [`SparseCreateSubfactor(_:_:)`](./sparsecreatesubfactor%28_,_%29-49d8w.md) returns.
+- `Subfactor`: The *Subfactor* in *Subfactor* *\* X = B* that [`SparseCreateSubfactor(_:_:)`](./sparsecreatesubfactor%28_,_%29-49d8w.md) returns.
 - `XB`: On input, the vector *B*. On return, the vector *X* overwrites it.
 
 ## See Also
 
 ### Vector-solving functions
 - [func SparseSolve(SparseOpaqueSubfactor_Float, DenseVector_Float)](./sparsesolve%28_,_%29-6pxrq.md)
-  Solves the equation *Subfactor * X = B* in place for the vector of single-precision values *X*.
+  Solves the equation *Subfactor \* X = B* in place for the vector of single-precision values *X*.
 - [func SparseSolve(SparseOpaqueSubfactor_Double, DenseVector_Double, DenseVector_Double)](./sparsesolve%28_,_,_%29-g0wb.md)
-  Solves the equation *Subfactor * X = B* in place for the vector of double-precision values *X*.
+  Solves the equation *Subfactor \* X = B* in place for the vector of double-precision values *X*.
 - [func SparseSolve(SparseOpaqueSubfactor_Float, DenseVector_Float, DenseVector_Float)](./sparsesolve%28_,_,_%29-5mq7s.md)
-  Solves the equation *Subfactor * X = B* in place for the vector of single-precision values *X*.
+  Solves the equation *Subfactor \* X = B* in place for the vector of single-precision values *X*.
 
 
 ---

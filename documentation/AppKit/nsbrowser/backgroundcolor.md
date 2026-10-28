@@ -19,7 +19,7 @@ var backgroundColor: NSColor { get set }
 @property (strong) NSColor * backgroundColor;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is `[NSColor whiteColor]`. `[NSColor clearColor]` specifies a transparent background.
 

@@ -15,11 +15,11 @@ Concludes the secure download process.
 OSStatus SecureDownloadFinished(SecureDownloadRef downloadRef);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Secure Download Result Codes](./secure-download-result-codes.md).
 
-#### Discussion
+## Discussion
 
 Call this after all data has been received.
 

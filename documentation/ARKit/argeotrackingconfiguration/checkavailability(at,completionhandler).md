@@ -20,7 +20,7 @@ class func checkAvailability(at coordinate: CLLocationCoordinate2D, completionHa
 + (void) checkAvailabilityAtCoordinate:(CLLocationCoordinate2D) coordinate completionHandler:(void (^)(BOOL isAvailable, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 This function returns [`false`](../../Swift/false.md) under the following circumstances:
 

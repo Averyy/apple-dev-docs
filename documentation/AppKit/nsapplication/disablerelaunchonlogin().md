@@ -19,7 +19,7 @@ func disableRelaunchOnLogin()
 - (void) disableRelaunchOnLogin;
 ```
 
-#### Discussion
+## Discussion
 
 Invoking this method will prevent the app from relaunching when the user next logs in to their account.
 

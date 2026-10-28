@@ -25,11 +25,11 @@ func CMSampleBufferGetTypeID() -> CFTypeID
 extern CFTypeID CMSampleBufferGetTypeID();
 ```
 
-#### Return Value
+## Return Value
 
 `CFTypeID` of `CMSampleBuffer` objects.
 
-#### Discussion
+## Discussion
 
 You can check if a `CFTypeRef` object is actually a `CMSampleBuffer` by comparing `CFGetTypeID(object)` with `CMSampleBufferGetTypeID()`.
 

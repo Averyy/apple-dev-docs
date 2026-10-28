@@ -20,11 +20,11 @@ func `class`(forScriptingClass className: String) -> AnyClass?
 - (Class) classForScriptingClass:(NSString *) className;
 ```
 
-#### Return Value
+## Return Value
 
 A `Class` object representing the scripting class.
 
-#### Discussion
+## Discussion
 
 You invoke this method on an instance of a scriptable application. Once you have the class object, you may allocate an instance of the class and appropriately the raw instance. Or you may use it in a call to [`isKind(of:)`](../../ObjectiveC/nsobjectprotocol/iskind%28of%29.md) to determine the class type of an object.
 

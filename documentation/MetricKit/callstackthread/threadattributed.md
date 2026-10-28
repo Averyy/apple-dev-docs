@@ -19,7 +19,7 @@ Indicates whether this call stack is attributed to a specific thread.
 let threadAttributed: Bool?
 ```
 
-#### Discussion
+## Discussion
 
 This field is only present when `CallStackTree.callStackPerThread` is `true`.
 

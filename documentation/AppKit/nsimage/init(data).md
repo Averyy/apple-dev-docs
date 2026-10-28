@@ -19,11 +19,11 @@ convenience init?(data: Data)
 - (instancetype) initWithData:(NSData *) data;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized `NSImage` object or `nil` if the method cannot create an image representation from the contents of the specified data object.
 
-#### Discussion
+## Discussion
 
 Use this method in cases where you already have image data in a supported format and want to obtain an `NSImage` object that represents that data. This method initializes the object with an image representation that is most appropriate for the type of data you provided.
 

@@ -5,7 +5,7 @@
 
 Create an article with text components and component text styles.
 
-#### Overview
+## Overview
 
 In [Setting Up the Introductory Tutorial](./setting-up-the-introductory-tutorial.md), you learned how to download the article structure bundle. To create an article, you must add some JSON objects (called *components*) to that bundle.
 
@@ -15,7 +15,7 @@ In [Setting Up the Introductory Tutorial](./setting-up-the-introductory-tutorial
 - Component text style defaults
 - A drop cap
 
-##### Add Text Components to the Article Structure
+### Add Text Components to the Article Structure
 
 Components represent the content of your article, including the article’s title, introduction, byline, and body text.
 
@@ -34,7 +34,7 @@ The body content in the example is in HTML. For details about using HTML tags to
 
 > ❗ **Important**:  Make sure to save your `article.json` file. Do not change the file name.
 
-###### Components: Copy This Code
+#### Components: Copy This Code
 
 ```json
   "components": [
@@ -107,7 +107,7 @@ The body content in the example is in HTML. For details about using HTML tags to
   ],
 ```
 
-##### Apply a Default Text Style to the Article
+### Apply a Default Text Style to the Article
 
 You should always include a default text style to ensure a consistent appearance for the text components in your article. You can always override the default style, as needed, for one or more components.
 
@@ -118,7 +118,7 @@ Your code should look like the example code [Default Text Style: Result](./creat
 
 After you make this change in your code, you can preview your working `article.json` file in News Preview to see that all of your components are now using the `default` text style. You can tell because the text in the preview is bold and link text is yellow.
 
-###### Default Text Style: Copy This Code
+#### Default Text Style: Copy This Code
 
 ```json
     "default": {
@@ -132,7 +132,7 @@ After you make this change in your code, you can preview your working `article.j
     }
 ```
 
-###### Default Text Style: Result
+#### Default Text Style: Result
 
 Ellipses (`...`) indicate lines of code that have been omitted from this example.
 
@@ -153,7 +153,7 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
 }
 ```
 
-##### Apply Default Text Styles by Component Role
+### Apply Default Text Styles by Component Role
 
 Default `role`-specific component text styles ensure a consistent text style across all components with a given `role`, such as all `heading` components or all `body` components. You can always override these default styles, as needed, for one or more components.
 
@@ -166,7 +166,7 @@ This code adds default text styles for `body`, `title`, and other component type
 
 After you make this change in your code, you can preview your working `article.json` file in News Preview to see that your article’s components now use the default component text styles for their types. For example, article body text uses a serif font, and the first four components in your article have gray text instead of black.
 
-###### Default Component Text Styles: Copy This Code
+#### Default Component Text Styles: Copy This Code
 
 ```json
 ,
@@ -205,7 +205,7 @@ After you make this change in your code, you can preview your working `article.j
     }
 ```
 
-###### Default Component Text Styles: Result
+#### Default Component Text Styles: Result
 
 Ellipses (`...`) indicate lines of code that have been omitted from this example.
 
@@ -250,7 +250,7 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
 }
 ```
 
-##### Define a Style That Has a Drop Cap
+### Define a Style That Has a Drop Cap
 
 A drop cap changes the size, position, and style of a text component’s first character, or first few characters. Before you can add a drop cap to a text component, you must define a style that has a drop cap.
 
@@ -261,7 +261,7 @@ A drop cap changes the size, position, and style of a text component’s first c
 
 Your code should look like the example code [bodyFirstDropCap: Result](./creating-your-first-article.md#bodyFirstDropCap-Result).
 
-###### bodyFirstDropCap: Copy This Code
+#### bodyFirstDropCap: Copy This Code
 
 ```json
 ,
@@ -274,7 +274,7 @@ Your code should look like the example code [bodyFirstDropCap: Result](./creatin
     }
 ```
 
-###### bodyFirstDropCap: Result
+#### bodyFirstDropCap: Result
 
 Ellipses (`...`) indicate lines of code that have been omitted from this example.
 
@@ -294,7 +294,7 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
 }
 ```
 
-##### Use the Drop Cap Style in a Body Component
+### Use the Drop Cap Style in a Body Component
 
 Now that you have defined a style with a drop cap, you can use that style in one or more components.
 
@@ -306,7 +306,7 @@ Your code should look like the example code [Drop Cap Style: Result](./creating-
 
 After you make this change in your code, you can preview your working `article.json` file in News Preview to see a drop cap in your article.
 
-###### Drop Cap Style: Result
+#### Drop Cap Style: Result
 
 Ellipses (…) indicate lines of code that have been omitted from this example.
 
@@ -327,7 +327,7 @@ Ellipses (…) indicate lines of code that have been omitted from this example.
 }
 ```
 
-##### Further Exploration
+### Further Exploration
 
 At any time, you can try changing property values in your `article.json` file and then use News Preview to see how these changes affect the look of your article.
 
@@ -340,7 +340,7 @@ For example, try changing the height of your article’s drop cap:
 
 The drop cap in your article now uses the new height that you chose. If you chose a number less than 2 or greater than 10, the error console informs you that you chose an illegal value. On some devices, the height of the drop cap may be adjusted automatically to help ensure a better visual experience.
 
-##### Next
+### Next
 
 [Positioning Text Components](./positioning-text-components.md)
 

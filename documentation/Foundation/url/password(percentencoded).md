@@ -21,11 +21,11 @@ Returns the password component of the URL, optionally removing any percent-encod
 func password(percentEncoded: Bool = true) -> String?
 ```
 
-#### Return Value
+## Return Value
 
 The password component of the URL, optionally percent-encoding any unreserved characters.
 
-#### Discussion
+## Discussion
 
 The system doesn’t allow certain characters in the URL password component, so [`URL`](../url.md) percent-encodes those characters to create a valid URL. Calling this function with `percentEncoded = false` removes any percent-encoding and returns the unencoded password.
 

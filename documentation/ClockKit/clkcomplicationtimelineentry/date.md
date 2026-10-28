@@ -25,7 +25,7 @@ var date: Date { get set }
 
 - [Loading future timeline events](../loading-future-timeline-events.md)
 
-#### Discussion
+## Discussion
 
 The date you specify represents the day and time at which to begin displaying the associated complication data. Set this value appropriately based on the data you want to display. For example, weather forecast data would use the time at which the forecast was valid, but information about an upcoming meeting would use an earlier date to give the user advance notice.
 

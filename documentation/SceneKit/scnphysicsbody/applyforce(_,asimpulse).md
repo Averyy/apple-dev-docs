@@ -25,7 +25,7 @@ func applyForce(_ direction: SCNVector3, asImpulse impulse: Bool)
 - (void) applyForce:(SCNVector3) direction impulse:(BOOL) impulse;
 ```
 
-#### Discussion
+## Discussion
 
 Applying a force or impulse to a body imparts a linear acceleration proportional to its mass.
 

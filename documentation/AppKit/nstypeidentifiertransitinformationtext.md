@@ -20,7 +20,7 @@ let NSTypeIdentifierTransitInformationText: String
 extern NSString * const NSTypeIdentifierTransitInformationText;
 ```
 
-#### Discussion
+## Discussion
 
 UTI subtype for [`transitInformation`](../Foundation/nstextcheckingresult/checkingtype/transitinformation.md), `com.apple.structured-text.transit-information`.
 

@@ -24,7 +24,7 @@ func go(to destination: PDFDestination)
 - (void) goToDestination:(PDFDestination *) destination;
 ```
 
-#### Discussion
+## Discussion
 
 Destinations include a page and a point on the page specified in page space.
 

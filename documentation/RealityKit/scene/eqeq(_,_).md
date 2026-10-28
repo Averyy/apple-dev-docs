@@ -21,7 +21,7 @@ nonisolated
 static func == (lhs: Scene, rhs: Scene) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value set to `true` if the two scenes are equal.
 

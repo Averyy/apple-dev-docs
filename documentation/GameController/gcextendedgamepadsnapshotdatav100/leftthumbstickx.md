@@ -26,7 +26,7 @@ var leftThumbstickX: Float
 float leftThumbstickX;
 ```
 
-#### Discussion
+## Discussion
 
 The range of permissible values is `-1.0` to `1.0`, inclusive.
 

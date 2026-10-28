@@ -20,7 +20,7 @@ The reason for the event.
 let action: GroupSessionEvent.Action
 ```
 
-#### Discussion
+## Discussion
 
 The system uses this information to craft a message in the system UI.
 

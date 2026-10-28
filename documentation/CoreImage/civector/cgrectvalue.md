@@ -24,7 +24,7 @@ var cgRectValue: CGRect { get }
 @property (readonly) CGRect CGRectValue;
 ```
 
-#### Return Value
+## Return Value
 
  Reading this property creates a `CGRect` structure whose origin is the `X`, `Y`, `Z` and `W` values from the vector.
 

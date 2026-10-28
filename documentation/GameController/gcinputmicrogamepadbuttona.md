@@ -24,7 +24,7 @@ let GCInputMicroGamepadButtonA: String
 extern NSString * const GCInputMicroGamepadButtonA;
 ```
 
-#### Discussion
+## Discussion
 
 For the first-generation and second-generation Siri Remote and later, this represents the button on the entire touch surface.
 

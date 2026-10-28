@@ -23,13 +23,13 @@ class INSetCarLockStatusIntent
 @interface INSetCarLockStatusIntent : INIntent
 ```
 
-#### Overview
+## Overview
 
 When the user asks to lock or unlock the car, Siri creates an `INSetCarLockStatusIntent` object. This intent object can contain the name of the user’s car and the requested lock status. Use this object to lock or unlock the car.
 
 To handle this intent, the handler object in your Intents extension must adopt the [`INSetCarLockStatusIntentHandling`](./insetcarlockstatusintenthandling.md) protocol. Your handler should confirm the request and create an [`INSetCarLockStatusIntentResponse`](./insetcarlockstatusintentresponse.md) object with the results.
 
-##### Additional Intent Attributes
+### Additional Intent Attributes
 
 The following table lists additional attributes of this intent object:
 
@@ -38,7 +38,7 @@ The following table lists additional attributes of this intent object:
 | Supported by | Siri Intents, Siri Suggestions |
 | Always requires unlocked device? | Yes |
 
-##### Example Phrases
+### Example Phrases
 
 Users can ask Siri to lock or unlock their car in a variety of ways. The table below provides a few sample phrases in different languages. You can use these phrases during testing to trigger your intents. This list isn’t exhaustive, and Siri may recognize many other phrases.
 

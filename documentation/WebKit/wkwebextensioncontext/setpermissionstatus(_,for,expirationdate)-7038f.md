@@ -23,7 +23,7 @@ func setPermissionStatus(_ status: WKWebExtensionContext.PermissionStatus, for p
 - (void) setPermissionStatus:(WKWebExtensionContextPermissionStatus) status forMatchPattern:(WKWebExtensionMatchPattern *) pattern expirationDate:(NSDate *) expirationDate;
 ```
 
-#### Discussion
+## Discussion
 
 This method will update [`grantedPermissionMatchPatterns`](./grantedpermissionmatchpatterns.md) and [`deniedPermissionMatchPatterns`](./deniedpermissionmatchpatterns.md). Use this method for changing a single match pattern’s status.
 

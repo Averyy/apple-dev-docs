@@ -19,11 +19,11 @@ Creates a configuration for a button that has a tinted, bordered style.
 + (instancetype) borderedTintedButtonConfiguration;
 ```
 
-#### Return Value
+## Return Value
 
 A new configuration object.
 
-#### Discussion
+## Discussion
 
 This style provides an alternative name for the [`tintedButtonConfiguration`](./tintedbuttonconfiguration.md) style.
 

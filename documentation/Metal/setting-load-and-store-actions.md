@@ -5,7 +5,7 @@
 
 Set actions that define how a render pass loads and stores a render target.
 
-#### Overview
+## Overview
 
 [`MTLLoadAction`](./mtlloadaction.md) and [`MTLStoreAction`](./mtlstoreaction.md) values allow you to define how a render pass loads and stores your [`MTLRenderPassAttachmentDescriptor`](./mtlrenderpassattachmentdescriptor.md) objects. By choosing appropriate actions for your render targets, you can avoid costly and unnecessary work at the start (load) or end (store) of a render pass.
 
@@ -53,7 +53,7 @@ renderPassDescriptor.stencilAttachment.loadAction = MTLLoadActionDontCare;
 renderPassDescriptor.stencilAttachment.storeAction = MTLStoreActionDontCare;
 ```
 
-##### Choose a load action
+### Choose a load action
 
 Several options are available, depending on which of the following scenarios describes your render targetʼs loading needs.
 
@@ -71,7 +71,7 @@ Several options are available, depending on which of the following scenarios des
 
 > **Note**:  You canʼt choose [`MTLLoadAction.load`](./mtlloadaction/load.md) for a memoryless render target because it isnʼt backed by system memory. For more information about memoryless render targets, see [Choosing a resource storage mode for Apple GPUs](./choosing-a-resource-storage-mode-for-apple-gpus.md).
 
-##### Choose a store action
+### Choose a store action
 
 Several options are available, depending on which of the following scenarios describes your render targetʼs storage needs.
 
@@ -98,7 +98,7 @@ To store and resolve a multisample texture in a single render pass, always choos
 
 > **Note**:  You canʼt choose [`MTLStoreAction.store`](./mtlstoreaction/store.md) or [`MTLStoreAction.storeAndMultisampleResolve`](./mtlstoreaction/storeandmultisampleresolve.md) for a memoryless render target because it isnʼt backed by system memory. For more information about memoryless render targets, see [Choosing a resource storage mode for Apple GPUs](./choosing-a-resource-storage-mode-for-apple-gpus.md).
 
-##### Evaluate actions between render passes
+### Evaluate actions between render passes
 
 You can use the same render targets across multiple render passes. Several load and store combinations are possible for the same render target between any two render passes, depending on which of the following scenarios describes your render targetʼs needs from one render pass to another.
 

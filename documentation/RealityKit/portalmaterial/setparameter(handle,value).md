@@ -20,7 +20,7 @@ Sets the value of a parameter identified by a handle.
 mutating func setParameter(handle: MaterialParameters.Handle, value newValue: MaterialParameters.Value) throws
 ```
 
-#### Discussion
+## Discussion
 
 Use this overload alongside [`parameterHandle(name:)`](./parameterhandle%28name%29.md) when you update the same parameter often enough that avoiding repeated name lookups matters. For one-off updates, [`setParameter(name:value:)`](./setparameter%28name,value%29.md) is more readable.
 

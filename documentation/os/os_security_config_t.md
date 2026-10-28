@@ -19,7 +19,7 @@
 typedef enum { ... } os_security_config_t;
 ```
 
-#### Overview
+## Overview
 
 Supported security configurations that a process/task can have. This is a bitmask type, allowing multiple configurations to be active.
 

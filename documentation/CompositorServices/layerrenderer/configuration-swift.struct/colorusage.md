@@ -16,7 +16,7 @@ The texture usage value to apply to the layer’s color textures.
 var colorUsage: MTLTextureUsage { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Metal optimizes texture-related operations based on the value in this property. The usage value can be a combination of options. For more information, see [`MTLTextureUsage`](../../../Metal/mtltextureusage.md).
 

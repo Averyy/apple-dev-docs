@@ -20,11 +20,11 @@ Analyzes an input sequence created from an audio file, returning when the file h
 final func analyzeSequence(from audioFile: AVAudioFile) async throws -> CMTime?
 ```
 
-#### Return Value
+## Return Value
 
 The time-code of the last audio sample of the input, or `nil` if the file was empty. You may use this value for the parameter of [`finalizeAndFinish(through:)`](./finalizeandfinish%28through%29.md) (or other methods).
 
-#### Discussion
+## Discussion
 
 When this method returns, the file will have been read, but the last of the audio may still be undergoing analysis. To wait for the analysis to complete, call another method such as [`finalize(through:)`](./finalize%28through%29.md) and await its return.
 

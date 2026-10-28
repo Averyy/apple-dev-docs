@@ -19,7 +19,7 @@ var hidesEmptyCells: Bool { get set }
 @property BOOL hidesEmptyCells;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) when the text table hides empty cells. If empty cells are hidden, locations with empty cells allow the background of the enclosing block or text container to show through.
 

@@ -24,7 +24,7 @@ class MTLDepthStencilDescriptor
 @interface MTLDepthStencilDescriptor : NSObject
 ```
 
-#### Overview
+## Overview
 
 An [`MTLDepthStencilDescriptor`](./mtldepthstencildescriptor.md) instance is used to define a specific configuration of the depth and stencil stages of a rendering pipeline. To create an [`MTLDepthStencilDescriptor`](./mtldepthstencildescriptor.md) instance, use standard allocation and initialization techniques.
 

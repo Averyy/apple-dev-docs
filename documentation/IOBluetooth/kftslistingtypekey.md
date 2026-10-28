@@ -19,7 +19,7 @@ var kFTSListingTypeKey: Unmanaged<CFString>!
 extern CFStringRef kFTSListingTypeKey;
 ```
 
-#### Discussion
+## Discussion
 
 ## See Also
 

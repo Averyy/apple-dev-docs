@@ -23,7 +23,7 @@ var isPencilInputExpected: Bool { get set }
 @property (nonatomic, readwrite, getter=isPencilInputExpected) BOOL pencilInputExpected;
 ```
 
-#### Discussion
+## Discussion
 
 When pencil input is likely, adjust your UI or perform any actions you need to accommodate that input. For example, you might adjust the size of UI elements to optimize them for handwriting input.
 

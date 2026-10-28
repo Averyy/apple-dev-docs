@@ -25,7 +25,7 @@ enum ThermalState
 enum NSProcessInfoThermalState : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 These values are used by the [`ProcessInfo`](../processinfo.md) class as return values for [`thermalState`](./thermalstate-swift.property.md).
 

@@ -19,7 +19,7 @@ func vS256Divide(_ numerator: UnsafePointer<vS256>, _ divisor: UnsafePointer<vS2
 extern void vS256Divide(const vS256 *numerator, const vS256 *divisor, vS256 *result, vS256 *remainder);
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  Apple provides the BLAS and LAPACK libraries under the Accelerate framework to be in line with LAPACK 3.9.1. These new interfaces provide additional functionality, as well as a new ILP64 interface. To use the new interfaces, define `ACCELERATE_NEW_LAPACK` before including the Accelerate or vecLib headers. For ILP64 interfaces, also define `ACCELERATE_LAPACK_ILP64`. For Swift projects, specify `ACCELERATE_NEW_LAPACK=1` and `ACCELERATE_LAPACK_ILP64=1` as preprocessor macros in Xcode build settings under Apple Clang - Preprocessing > Preprocessor Macros.
 

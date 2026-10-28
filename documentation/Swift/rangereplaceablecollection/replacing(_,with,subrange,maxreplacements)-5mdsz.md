@@ -23,7 +23,7 @@ func replacing<Replacement>(_ regex: some RegexComponent, with replacement: Repl
 
 Available when `SubSequence` is `Substring`.
 
-#### Return Value
+## Return Value
 
 A new collection in which all occurrences of subsequence matching `regex` in `subrange` are replaced by `replacement`.
 

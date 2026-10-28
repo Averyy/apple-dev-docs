@@ -25,11 +25,11 @@ typealias CGDataProviderGetBytesAtPositionCallback = (UnsafeMutableRawPointer?, 
 typedef unsigned long (*)(void *, void *, long long, unsigned long) CGDataProviderGetBytesAtPositionCallback;
 ```
 
-#### Return Value
+## Return Value
 
 The number of bytes copied. If no more data can be written to the buffer, you should return 0.
 
-#### Discussion
+## Discussion
 
 When Core Graphics is ready to receive data from the provider, your function is called.
 

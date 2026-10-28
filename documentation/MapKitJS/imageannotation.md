@@ -20,7 +20,7 @@ class ImageAnnotation extends Annotation
 - [MapKit JS 6](./mapkit-js-6.md)
 - [Migrating from Version 5 to Version 6](./migrating-from-version-5-to-version-6.md)
 
-#### Overview
+## Overview
 
 There are times when you want to customize the look of an annotation. To do this, use an [`ImageAnnotation`](./imageannotation.md) object, which lets you specify your own image resources by providing a URL to your asset (such as a PNG or JPEG image), an [`ImageSource`](./imagesource.md) like an `HTMLCanvasElement` or `ImageBitmap`, or a `Promise` that resolves to an [`ImageSource`](./imagesource.md).
 

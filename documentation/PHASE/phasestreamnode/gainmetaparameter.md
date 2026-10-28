@@ -22,7 +22,7 @@ var gainMetaParameter: PHASENumberMetaParameter? { get }
 @property (nonatomic, strong, readonly, nullable) PHASENumberMetaParameter * gainMetaParameter;
 ```
 
-#### Discussion
+## Discussion
 
 If specified during construction, the metaparameter for controlling gain will be available here
 

@@ -21,7 +21,7 @@ The default expansion state for a tab section in the sidebar.
 struct TabSectionExpansion
 ```
 
-#### Overview
+## Overview
 
 Use this type in conjunction with the [`defaultSectionExpansion(_:)`](./tabcontent/defaultsectionexpansion%28_%29.md) modifier.
 

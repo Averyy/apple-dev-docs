@@ -25,7 +25,7 @@ static var fileExists: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 An existing file was mentioned in an inappropriate context; for example, as the new link name in a link function.
 

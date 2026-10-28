@@ -23,7 +23,7 @@ case gray
 UITableViewCellSelectionStyleGray
 ```
 
-#### Discussion
+## Discussion
 
 Use [`UITableViewCell.SelectionStyle.default`](./default.md) instead.
 

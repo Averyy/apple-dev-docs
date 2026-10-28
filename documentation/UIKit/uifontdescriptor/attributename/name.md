@@ -24,7 +24,7 @@ static let name: UIFontDescriptor.AttributeName
 extern UIFontDescriptorAttributeName const UIFontDescriptorNameAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 The value is an optional [`NSString`](../../../Foundation/nsstring.md) object that specifies the PostScript name of the font.
 

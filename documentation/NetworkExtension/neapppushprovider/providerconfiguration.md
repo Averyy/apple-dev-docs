@@ -26,7 +26,7 @@ var providerConfiguration: [String : Any]? { get }
 
 - [Maintaining a Reliable Network Connection](../maintaining-a-reliable-network-connection.md)
 
-#### Discussion
+## Discussion
 
 The [`NEAppPushManager`](../neapppushmanager.md) provides this dictionary. Use key-value observing to watch for changes in the dictionary.
 

@@ -19,7 +19,7 @@ func setLineFragmentRect(_ fragmentRect: NSRect, forGlyphRange glyphRange: NSRan
 - (void) setLineFragmentRect:(NSRect) fragmentRect forGlyphRange:(NSRange) glyphRange usedRect:(NSRect) usedRect baselineOffset:(CGFloat) baselineOffset;
 ```
 
-#### Discussion
+## Discussion
 
 The exact positions of the glyphs must be set after the line fragment rectangle with `setLocation:forStartOfGlyphRange:`.
 

@@ -17,7 +17,7 @@ Nested structure of arrays, dictionaries and values.
 struct NestedDictionary<Key, Element> where Key : Hashable
 ```
 
-#### Overview
+## Overview
 
 Some of the capabilities of `MLX` (especially in `MLXNN`) need to deal with arbitrarily structured values.  This is simple in python but swift needs type to describe the structure.
 
@@ -62,7 +62,7 @@ class M : Module {
 let nd = M().mapParameters { $0.shape }
 ```
 
-##### See Also
+### See Also
 
 - [`NestedItem`](./nesteditem.md)
 

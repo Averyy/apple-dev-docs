@@ -23,7 +23,7 @@ protocol AUMessageChannel
 @protocol AUMessageChannel
 ```
 
-#### Overview
+## Overview
 
 Audio units and their hosts have unique communication needs. For example, for better audio processing they can exchange musical context. An audio unit implements a class that conforms to [`AUMessageChannel`](./aumessagechannel.md) and returns an instance from [`messageChannel(for:)`](./auaudiounit/messagechannel%28for%29.md). A host queries the instance through the channel name.
 

@@ -19,7 +19,7 @@ class RequestError extends Error
 
 - [Migrating from Version 5 to Version 6](./migrating-from-version-5-to-version-6.md)
 
-#### Discussion
+## Discussion
 
 When a [`Service`](./service.md) method’s returned promise rejects, the rejection value is a [`RequestError`](./requesterror.md). The [`message`](./requesterror/message.md) property contains a [`ConfigurationErrorStatus`](./configurationerrorstatus.md) value that describes the error.
 

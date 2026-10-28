@@ -25,7 +25,7 @@ let kCGImagePropertyExifComponentsConfiguration: CFString
 extern CFStringRef const kCGImagePropertyExifComponentsConfiguration;
 ```
 
-#### Discussion
+## Discussion
 
 For compressed data, specifies that the channels of each component are arranged in increasing numeric order (from first component to the fourth).
 

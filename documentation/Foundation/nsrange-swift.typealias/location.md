@@ -21,7 +21,7 @@ The index of the first member of the range.
 var location: Int
 ```
 
-#### Discussion
+## Discussion
 
 The minimum first index is `0`, as in C arrays. For type compatibility with the rest of the system, the maximum value you should use for the location is `LONG_MAX`.
 

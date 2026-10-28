@@ -25,7 +25,7 @@ class MKAddressRepresentations
 @interface MKAddressRepresentations : NSObject
 ```
 
-#### Discussion
+## Discussion
 
 Use this class to obtain formatted address strings for a place’s full address, city, or region.
 

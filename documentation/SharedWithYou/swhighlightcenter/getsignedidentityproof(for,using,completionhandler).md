@@ -31,7 +31,7 @@ func signedIdentityProof(for collaborationHighlight: SWCollaborationHighlight, u
 
 - [Adding custom collaboration to your app](../adding-custom-collaboration-to-your-app.md)
 
-#### Discussion
+## Discussion
 
 When a collaboration message is sent, the system sends it individually to each of a person’s devices. Messages identifies each device using a cryptographic public key. Since the goal is to allow access only on this set of devices, the root hash is derived from the set of public keys registered to each recipient.
 

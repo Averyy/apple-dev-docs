@@ -22,7 +22,7 @@ var prefersPageSizing: Bool { get set }
 @property (nonatomic) BOOL prefersPageSizing;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`true`](../../Swift/true.md). The default value indicates the sheet uses [`UIModalPresentationStyle.pageSheet`](../uimodalpresentationstyle/pagesheet.md) behavior, in which the sheet width follows the readable width.
 

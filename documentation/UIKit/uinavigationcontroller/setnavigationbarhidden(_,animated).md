@@ -23,7 +23,7 @@ func setNavigationBarHidden(_ hidden: Bool, animated: Bool)
 - (void) setNavigationBarHidden:(BOOL) hidden animated:(BOOL) animated;
 ```
 
-#### Discussion
+## Discussion
 
 For animated transitions, the duration of the animation is specified by the value in the [`hideShowBarDuration`](./hideshowbarduration.md) constant.
 

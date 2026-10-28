@@ -21,7 +21,7 @@ Creates an instance using the provided date separator, date and time components 
 init(dateSeparator: Date.ISO8601FormatStyle.DateSeparator = .dash, dateTimeSeparator: Date.ISO8601FormatStyle.DateTimeSeparator = .standard, timeZone: TimeZone = TimeZone(secondsFromGMT: 0)!)
 ```
 
-#### Discussion
+## Discussion
 
 Possible values of `dateSeparator` are `dash` and `omitted`. Omitted is the default.
 

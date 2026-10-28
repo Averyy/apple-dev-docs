@@ -10,7 +10,7 @@ framework: "Swift-Org/PackageManagerDocs"
 
 Learn about the security features that the package manager implements.
 
-#### Trust on First Use
+## Trust on First Use
 
 The package manager records **fingerprints** of downloaded package versions so that it can perform [trust-on-first-use](https://en.wikipedia.org/wiki/Trust_on_first_use) (TOFU). That is, when a package version is downloaded for the first time, the package manager trusts that it has downloaded the correct contents and requires subsequent downloads of the same package version to have the same fingerprint. If the fingerprint changes, it might be an indicator that the package has been compromised and the package manager either warns or returns an error.
 
@@ -30,9 +30,9 @@ For packages retrieved from a registry, the package manager expects all registri
 
 If registries have conflicting fingerprints, the package manager reports an error. You can reduce the error to a warning by setting the [build](./swiftbuild.md) option `--resolver-fingerprint-checking` to `warn` (default is `strict`).
 
-##### Package signing
+### Package signing
 
-###### Signed packages from a registry
+#### Signed packages from a registry
 
 A registry may support or require signing. To sign a package release, package authors set either the `signing-identity` (for reading from operating system’s identity store such as Keychain in macOS), or `private-key-path` and `cert-chain-paths` (for reading from files) options of the [`swift package-registry publish`](./packageregistrypublish.md) subcommand so the package manager can locate the signing key and certificate.
 
@@ -44,7 +44,7 @@ If the root of the signing certificate is not in the package manager’s default
 
 For more information on signed registry packages, see [Publishing to Registry](./usingswiftpackageregistry.md#Publishing-to-Registry).
 
-###### Validating signed packages
+##### Validating signed packages
 
 The package manager determines if a downloaded archive is signed by checking for presence of the `X-Swift-Package-Signature-Format` and `X-Swift-Package-Signature` headers in the HTTP response.
 
@@ -70,7 +70,7 @@ Users can configure certificate expiry and revocation check through the `signing
 
 An invalid signing certificate would result in the package manager rejecting the archive when downloading from a registry, or the package collection.
 
-###### Signed package collections
+#### Signed package collections
 
 Package collection publishers may [sign a collection to protect its contents](./packagecollections.md#Protecting-package-collections) from tampering. If a collection is signed, the package manager checks that the signature is valid before importing it; or returns an error if any of these fails:
 

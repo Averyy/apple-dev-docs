@@ -19,7 +19,7 @@ var isPlanar: Bool { get }
 extern BOOL NSPlanarFromDepth(NSWindowDepth depth);
 ```
 
-#### Discussion
+## Discussion
 
 Returns [`true`](../../../Swift/true.md) if the specified window `depth` is planar and [`false`](../../../Swift/false.md) if it is not.
 

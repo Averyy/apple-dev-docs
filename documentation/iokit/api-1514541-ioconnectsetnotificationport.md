@@ -23,11 +23,11 @@ func IOConnectSetNotificationPort(_ connect: io_connect_t, _ type: UInt32, _ por
 kern_return_t IOConnectSetNotificationPort(io_connect_t connect, uint32_t type, mach_port_t port, uintptr_t reference);
 ```
 
-#### Return Value
+## Return Value
 
 A `kern_return_t` error code.
 
-#### Discussion
+## Discussion
 
 This is a generic method to pass a Mach port send right to be used by family specific notifications.
 

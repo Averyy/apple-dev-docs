@@ -15,7 +15,7 @@ Caching options for an abstract socket.
 @interface VZLinuxRosettaAbstractSocketCachingOptions : VZLinuxRosettaCachingOptions
 ```
 
-#### Overview
+## Overview
 
 Use this object to configure Rosetta to communicate with the Rosetta daemon using an abstract socket.
 

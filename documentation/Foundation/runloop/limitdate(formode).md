@@ -25,11 +25,11 @@ func limitDate(forMode mode: RunLoop.Mode) -> Date?
 - (NSDate *) limitDateForMode:(NSRunLoopMode) mode;
 ```
 
-#### Return Value
+## Return Value
 
 The date at which the next timer is scheduled to fire, or `nil` if there are no input sources for this mode.
 
-#### Discussion
+## Discussion
 
 The run loop is entered with an immediate timeout, so the run loop does not block, waiting for input, if no input sources need processing.
 

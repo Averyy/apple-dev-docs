@@ -25,7 +25,7 @@ func CFRunLoopTimerDoesRepeat(_ timer: CFRunLoopTimer!) -> Bool
 extern Boolean CFRunLoopTimerDoesRepeat(CFRunLoopTimerRef timer);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if `timer` repeats, or has a periodicity; otherwise `false`.
 

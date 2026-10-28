@@ -20,7 +20,7 @@ protocol NSCollectionLayoutVisibleItem : NSObjectProtocol
 @protocol NSCollectionLayoutVisibleItem <NSObject>
 ```
 
-#### Overview
+## Overview
 
 A visible item represents an item in a collection view that’s currently visible onscreen, such as a cell, supplementary view, or decoration. You access a specific section’s visible items in its visible item invalidation handler ([`NSCollectionLayoutSectionVisibleItemsInvalidationHandler`](./nscollectionlayoutsectionvisibleitemsinvalidationhandler.md)), stored in the [`visibleItemsInvalidationHandler`](./nscollectionlayoutsection/visibleitemsinvalidationhandler.md) property. The handler is called before each layout cycle, any time an animation occurs in that section due to changes such as adding or removing items, scrolling the section, or rotating the device.
 

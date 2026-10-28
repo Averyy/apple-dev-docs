@@ -24,7 +24,7 @@ func present(launchConfiguration: AVCaptureDeskViewApplication.LaunchConfigurati
 - (void) presentWithLaunchConfiguration:(AVCaptureDeskViewApplicationLaunchConfiguration *) launchConfiguration completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 If Desk View is already running, this method brings it to the front. If Desk View is in the Dock, this method opens it and brings it to the front.
 

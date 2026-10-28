@@ -22,7 +22,7 @@ nonisolated
 func simultaneously<Other>(with other: Other) -> SimultaneousGesture<Self, Other> where Other : Gesture
 ```
 
-#### Return Value
+## Return Value
 
 A gesture with two simultaneous gestures.
 

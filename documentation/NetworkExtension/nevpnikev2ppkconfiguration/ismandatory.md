@@ -24,7 +24,7 @@ var isMandatory: Bool { get set }
 @property BOOL isMandatory;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `true`.
 

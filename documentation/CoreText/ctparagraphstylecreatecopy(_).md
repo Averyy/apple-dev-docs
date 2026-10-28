@@ -25,7 +25,7 @@ func CTParagraphStyleCreateCopy(_ paragraphStyle: CTParagraphStyle) -> CTParagra
 extern CTParagraphStyleRefCTParagraphStyleCreateCopy(CTParagraphStyleRef paragraphStyle);
 ```
 
-#### Return Value
+## Return Value
 
 A valid reference to an immutable CTParagraphStyle object that is a copy of the one passed into `paragraphStyle`, If the `paragraphStyle` reference is valid; otherwise `NULL`, if any error occurred, including being supplied with an invalid reference.
 

@@ -4,13 +4,13 @@
 
 Displays groups of items along one side of a page and images of a group’s contents on the other side.
 
-#### Overview
+## Overview
 
 Use the `catalogTemplate` element to display information about groups of like products; for example, a movie catalog that provides categories for dramas, comedies, and all movies. Each group of products is contained in its own section and displayed along the left side of the screen. Images depicting the products contained within a selected group are displayed in the related content area on the right side of the screen. The following figure shows the basic layout for a `catalogTemplate` page. The theme for the catalog template defaults to the system preference.
 
 ![Layout diagram showing a banner area at the top, three section areas on the left side, and a related content area on the right.](https://developer.apple.com/tutorials/images/com.apple.TVML/catalogtemplate-1@2x.png)
 
-##### Main Elements
+### Main Elements
 
 The following listing shows the main elements of the `catalogTemplate` element in TVML format.
 
@@ -37,7 +37,7 @@ The following listing shows the main elements of the `catalogTemplate` element i
 </catalogTemplate>
 ```
 
-###### Element Descriptions
+#### Element Descriptions
 
 - **[banner](./banner.md)**: Information describing what the catalog contains, such as movies.
 - **[header](./header.md)**: Information describing what one section of the page contains.
@@ -45,7 +45,7 @@ The following listing shows the main elements of the `catalogTemplate` element i
 - **[listItemLockup](./listitemlockup.md)**: Element containing all information that relates to one list item on the left side of the page, including the item title and label, as well as related content.
 - **[section](./section.md)**: An area of the page containing related elements that are grouped together as one element for layout purposes.
 
-##### Example
+### Example
 
 The following listing shows the TVML for a `catalogTemplate` example. The example displays a title along the top of the screen. Two items representing movie categories, All Movies and Comedies, are listed along the left side of the screen. Movie posters are presented on the right in a grid format according to which movie category the user selects.
 

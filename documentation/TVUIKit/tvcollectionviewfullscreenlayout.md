@@ -19,7 +19,7 @@ class TVCollectionViewFullScreenLayout
 @interface TVCollectionViewFullScreenLayout : UICollectionViewLayout
 ```
 
-#### Overview
+## Overview
 
 Use this class to create a full-screen browsing experience. Full-screen layouts are an immersive way to present and navigate through content.
 

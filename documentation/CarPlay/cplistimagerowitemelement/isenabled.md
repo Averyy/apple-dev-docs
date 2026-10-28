@@ -21,7 +21,7 @@ var isEnabled: Bool { get set }
 @property (nonatomic, assign, getter=isEnabled) BOOL enabled;
 ```
 
-#### Discussion
+## Discussion
 
 Set the value of this property to @c YES to enable the list element or @c NO to disable it. The default value of this property is @c YES.
 

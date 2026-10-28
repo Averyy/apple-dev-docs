@@ -12,11 +12,11 @@ IOReturn temporaryPowerClampOn(
  void );
 ```
 
-#### Return Value
+## Return Value
 
 A return code that can be ignored by the caller.
 
-#### Overview
+## Overview
 
 Use `temporaryPowerClampOn` to hold your driver in its highest power state while waiting for child devices to attach. After children have attached, the clamp is released and the device's power state is controlled by the children's requirements.
 

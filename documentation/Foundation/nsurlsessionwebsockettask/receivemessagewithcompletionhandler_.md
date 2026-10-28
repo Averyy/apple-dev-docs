@@ -21,7 +21,7 @@ Reads a WebSocket message once all the frames of the message are available.
 - (void) receiveMessageWithCompletionHandler:(void (^)(NSURLSessionWebSocketMessage *message, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 If the task reaches the [`maximumMessageSize`](../urlsessionwebsockettask/maximummessagesize.md) while buffering the frames, this call fails with an error.
 

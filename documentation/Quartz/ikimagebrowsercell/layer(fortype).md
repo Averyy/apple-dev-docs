@@ -19,11 +19,11 @@ func layer(forType type: String!) -> CALayer!
 - (CALayer *) layerForType:(NSString *) type;
 ```
 
-#### Return Value
+## Return Value
 
 The `CALayer` to display in the specified position.
 
-#### Discussion
+## Discussion
 
 Subclasses can override this method to add a Core Animation layer to the cell
 

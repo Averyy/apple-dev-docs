@@ -22,7 +22,7 @@ Returns the entity scaled by the specified size.
 func scaled(by size: Self.Size) -> Self
 ```
 
-#### Discussion
+## Discussion
 
 - Returns The scaled entity.
 

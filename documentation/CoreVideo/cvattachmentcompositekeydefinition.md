@@ -21,7 +21,7 @@ Associates a set of raw attachment keys with a value type and preferred propagat
 struct CVAttachmentCompositeKeyDefinition<ModePreference, Value> where ModePreference : CVAttachmentModePreference, Value : CVAttachmentValueRepresentable
 ```
 
-#### Overview
+## Overview
 
 The rawValues array should contain raw key strings required to represent any instance of Value. Even if some of the elements in rawValues are not required to represent certain instances of Value.
 

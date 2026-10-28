@@ -25,7 +25,7 @@ static var compareForcedOrdering: CFStringCompareFlags { get }
 kCFCompareForcedOrdering
 ```
 
-#### Discussion
+## Discussion
 
 You use this option for stability when sorting (for example, with `kCFCompareCaseInsensitive` specified “aaa” is greater than “AAA”).
 

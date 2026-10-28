@@ -19,11 +19,11 @@
 static bool SPAffineTransform3DFloatIsRectilinear(SPAffineTransform3DFloat transform);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether the transform is rectilinear.
 
-#### Discussion
+## Discussion
 
 Returns a Boolean value that indicates whether the transform is rectilinear.
 

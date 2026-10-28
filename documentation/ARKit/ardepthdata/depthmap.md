@@ -20,7 +20,7 @@ unowned(unsafe) var depthMap: CVPixelBuffer { get }
 @property (nonatomic, assign, readonly) CVPixelBufferRef depthMap;
 ```
 
-#### Discussion
+## Discussion
 
 For custom renderers, if you create a texture to send depth data to the GPU, choose a [`MTLPixelFormat`](../../Metal/mtlpixelformat.md) according to the [`depthMap`](./depthmap.md) pixel format. Call [`CVPixelBufferGetPixelFormatType(_:)`](../../CoreVideo/cvpixelbuffergetpixelformattype%28_%29.md) on the [`depthMap`](./depthmap.md) to get its format. For example, if at runtime the [`depthMap`](./depthmap.md) format is [`kCVPixelFormatType_DepthFloat32`](../../CoreVideo/kcvpixelformattype_depthfloat32.md)  ([`OSType`](../../kernel/ostype.md) ``fdep``), use  [`MTLPixelFormat.r32Float`](../../Metal/mtlpixelformat/r32float.md).
 

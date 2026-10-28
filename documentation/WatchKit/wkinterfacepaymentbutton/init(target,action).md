@@ -19,7 +19,7 @@ init(target: Any?, action: Selector)
 - (instancetype) initWithTarget:(id) target action:(SEL) action;
 ```
 
-#### Discussion
+## Discussion
 
 When the user taps the button, the system calls the `action` method on the `target`.
 

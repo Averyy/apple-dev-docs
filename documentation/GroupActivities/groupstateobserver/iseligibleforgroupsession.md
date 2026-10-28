@@ -26,7 +26,7 @@ A Boolean value that indicates whether the system can start a group session.
 - [Configure your visionOS app for sharing with people nearby](../configure-your-app-for-sharing-with-people-nearby.md)
 - [Presenting SharePlay activities from your app’s UI](../promoting-shareplay-activities-from-your-apps-ui.md)
 
-#### Discussion
+## Discussion
 
 This property indicates whether a FaceTime call is active and the system can create group sessions. Configure a subscriber to this property to monitor changes to the system’s state. When the system can create group sessions, it sets the value of this property to `true`. When the creation of a group session isn’t possible, the system sets the value to `false`.
 

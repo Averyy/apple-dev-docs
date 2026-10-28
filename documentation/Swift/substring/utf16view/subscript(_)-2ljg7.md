@@ -21,7 +21,7 @@ Accesses the contiguous subrange of the collection’s elements specified by a r
 subscript<R>(r: R) -> Self.SubSequence where R : RangeExpression, Self.Index == R.Bound { get }
 ```
 
-#### Overview
+## Overview
 
 The range expression is converted to a concrete subrange relative to this collection. For example, using a `PartialRangeFrom` range expression with an array accesses the subrange from the start of the range expression until the end of the array.
 

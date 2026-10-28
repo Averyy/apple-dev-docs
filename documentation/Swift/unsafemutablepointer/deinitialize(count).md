@@ -22,11 +22,11 @@ Deinitializes the specified number of values starting at this pointer.
 func deinitialize(count: Int) -> UnsafeMutableRawPointer
 ```
 
-#### Return Value
+## Return Value
 
 A raw pointer to the same address as this pointer. The memory referenced by the returned raw pointer is still bound to `Pointee`.
 
-#### Discussion
+## Discussion
 
 The region of memory starting at this pointer and covering `count` instances of the pointer’s `Pointee` type must be initialized. After calling `deinitialize(count:)`, the memory is uninitialized, but still bound to the `Pointee` type.
 

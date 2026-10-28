@@ -21,7 +21,7 @@ The locale of the format style.
 var locale: Locale
 ```
 
-#### Discussion
+## Discussion
 
 By default, the format style displays a measurement in the unit that `locale` specifies. The default value is [`autoupdatingCurrent`](../../locale/autoupdatingcurrent.md).
 

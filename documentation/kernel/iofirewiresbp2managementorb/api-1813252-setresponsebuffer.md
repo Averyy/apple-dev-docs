@@ -13,11 +13,11 @@ virtual IOReturn setResponseBuffer(
  UInt32len );
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess on a success.
 
-#### Overview
+## Overview
 
 Sets the response buffer for the management ORB. kFWSBP2QueryLogins returns a response to its query and needs to write it somewhere. This routine allows you to specify the location.
 

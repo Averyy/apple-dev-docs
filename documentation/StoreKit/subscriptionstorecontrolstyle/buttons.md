@@ -24,7 +24,7 @@ A subscription store control style that displays a subscribe button for each sub
 
 Available when `Self` is `ButtonsSubscriptionStoreControlStyle`.
 
-#### Discussion
+## Discussion
 
 You can also use [`subscriptionStoreControlStyle(_:)`](../../SwiftUI/view/subscriptionstorecontrolstyle%28_%29.md) with [`buttons`](./buttons.md) as the parameter to construct this style.
 

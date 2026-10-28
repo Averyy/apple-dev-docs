@@ -34,7 +34,7 @@ func donate() async throws
 - [Donating Reservations](../../SiriKit/donating-reservations.md)
 - [Donating Shortcuts](../../SiriKit/donating-shortcuts.md)
 
-#### Discussion
+## Discussion
 
 Call this method from your app when you want to donate a SiriKit interaction to the system to help improve search results. If you provide a block in the `completion` parameter, the system executes your block asynchronously with the results.
 

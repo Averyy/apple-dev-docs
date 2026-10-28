@@ -18,7 +18,7 @@ Updates the text for an item at a particular index.
 @MainActor func updateItem(at index: Int, withTitle title: String?, detail: String?) -> OCKLogItemButton?
 ```
 
-#### Return Value
+## Return Value
 
 The item that was updated.
 

@@ -25,7 +25,7 @@ case temporarilyUnavailable
 CKAccountStatusTemporarilyUnavailable
 ```
 
-#### Discussion
+## Discussion
 
 You receive this account status when the user’s iCloud account is available, but isn’t ready to support CloudKit operations. Don’t delete any cached data and don’t enqueue any CloudKit operations after receipt of this account status. Instead, use the [`CKAccountChanged`](../../Foundation/nsnotification/name-swift.struct/ckaccountchanged.md) notification to listen for when the status changes to [`CKAccountStatus.available`](./available.md).
 

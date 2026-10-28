@@ -24,7 +24,7 @@ func elapsedTime(at date: Date) -> TimeInterval
 - (NSTimeInterval) elapsedTimeAtDate:(NSDate *) date;
 ```
 
-#### Discussion
+## Discussion
 
 The duration of a workout doesn’t include intervals between pause and resume events.
 

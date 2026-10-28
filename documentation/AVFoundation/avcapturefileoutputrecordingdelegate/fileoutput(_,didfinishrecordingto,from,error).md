@@ -24,7 +24,7 @@ func fileOutput(_ output: AVCaptureFileOutput, didFinishRecordingTo outputFileUR
 - (void) captureOutput:(AVCaptureFileOutput *) output didFinishRecordingToOutputFileAtURL:(NSURL *) outputFileURL fromConnections:(NSArray<AVCaptureConnection *> *) connections error:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called whenever a file is finished. If the file was forced to be finished due to an error, the error is described in the error parameter—otherwise, the error parameter is `nil`.
 

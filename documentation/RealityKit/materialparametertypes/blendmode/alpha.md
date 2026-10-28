@@ -20,7 +20,7 @@ Blend by multiplying the material’s color value by its alpha value
 case alpha
 ```
 
-#### Discussion
+## Discussion
 
 This is the default blending mode for materials. Use this mode to represent transparent objects such as glass.
 

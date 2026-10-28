@@ -25,7 +25,7 @@ var isTemporaryID: Bool { get }
 @property (readonly, getter=isTemporaryID) BOOL temporaryID;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the receiver is temporary, otherwise [`false`](../../Swift/false.md). Most object IDs return [`false`](../../Swift/false.md). New objects inserted into a managed object context are assigned a temporary ID which is replaced with a permanent one once the object gets saved to a persistent store.
 

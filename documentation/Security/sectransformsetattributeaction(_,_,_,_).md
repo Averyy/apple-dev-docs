@@ -21,11 +21,11 @@ func SecTransformSetAttributeAction(_ ref: SecTransformImplementationRef, _ acti
 extern CFErrorRefSecTransformSetAttributeAction(SecTransformImplementationRef ref, CFStringRef action, SecTransformStringOrAttributeRef attribute, SecTransformAttributeActionBlock newAction);
 ```
 
-#### Return Value
+## Return Value
 
 An error on failure, or `NULL` on success. In Objective-C, call the [`CFRelease`](../CoreFoundation/cfrelease.md) function to free the error’s memory when you are done with it.
 
-#### Discussion
+## Discussion
 
 The [`kSecTransformActionProcessData`](./ksectransformactionprocessdata.md) action used with the [`SecTransformSetDataAction(_:_:_:)`](./sectransformsetdataaction%28_,_,_%29.md) function is a special case of a [`SecTransformSetAttributeAction(_:_:_:_:)`](./sectransformsetattributeaction%28_,_,_,_%29.md) action. If this is called on the input attribute then it will overwrite any [`kSecTransformActionProcessData`](./ksectransformactionprocessdata.md) action.
 

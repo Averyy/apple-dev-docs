@@ -22,7 +22,7 @@ nonisolated
 var layoutDirectionBehavior: LayoutDirectionBehavior { get }
 ```
 
-#### Discussion
+## Discussion
 
 If the layoutDirectionBehavior for a Shape is one that mirrors, the shape’s path will be mirrored horizontally when in the specified layout direction. When mirrored, the individual points of the path will be transformed.
 

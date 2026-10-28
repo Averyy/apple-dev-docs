@@ -25,7 +25,7 @@ var BNNSDataLayout8DLastMajor: BNNSDataLayout { get }
 BNNSDataLayout8DLastMajor
 ```
 
-#### Discussion
+## Discussion
 
 The value `(i, j, k, l, m, n, o, p)` is at index:
 

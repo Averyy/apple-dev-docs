@@ -20,7 +20,7 @@ Consumes and returns the [`USDPlayer.DeformationData.Update`](../deformationdata
 mutating func takeDeformationUpdate(id: USDPlayer.DeformationID) -> USDPlayer.DeformationData.Update?
 ```
 
-#### Discussion
+## Discussion
 
 Returns `nil` if not present.
 

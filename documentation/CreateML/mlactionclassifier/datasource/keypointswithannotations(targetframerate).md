@@ -17,7 +17,7 @@ Generates a data table with action annotations of the data source.
 func keypointsWithAnnotations(targetFrameRate: Double = MLActionClassifier.__Defaults.targetFrameRate) throws -> MLDataTable
 ```
 
-#### Return Value
+## Return Value
 
 A data table.
 

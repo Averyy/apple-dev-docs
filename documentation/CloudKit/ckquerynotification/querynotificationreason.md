@@ -25,7 +25,7 @@ var queryNotificationReason: CKQueryNotification.Reason { get }
 @property (nonatomic, assign, readonly) CKQueryNotificationReason queryNotificationReason;
 ```
 
-#### Discussion
+## Discussion
 
 Subscription notifications result from the creation, deletion, or updating of a single record. The record in question must match the subscription’s predicate for an event to trigger.
 

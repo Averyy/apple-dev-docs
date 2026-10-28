@@ -15,11 +15,11 @@ Returns the members of the group.
 @property (nonatomic, readonly, nullable) NSArray * members;
 ```
 
-#### Return Value
+## Return Value
 
 An array of `CBIdentity` objects each representing a member of the group identity.
 
-#### Discussion
+## Discussion
 
 This method only returns direct members of a group, it does not return members of members. Both user and group identities can be members of a group, but a group cannot be a member of itself. You also cannot have “circular” membership, i.e. a group be a member of another group that is a member of the first group.
 

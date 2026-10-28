@@ -23,7 +23,7 @@ var freeCancellationDate: Date? { get set }
 @property (nonatomic, strong, nullable) NSDate * freeCancellationDate;
 ```
 
-#### Discussion
+## Discussion
 
 If you set [`freeCancellationDate`](./freecancellationdate.md), you need to set [`freeCancellationDateTimeZone`](./freecancellationdatetimezone.md) as well.
 

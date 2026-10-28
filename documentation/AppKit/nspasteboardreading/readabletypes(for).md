@@ -20,15 +20,15 @@ static func readableTypes(for pasteboard: NSPasteboard) -> [NSPasteboard.Pastebo
 + (NSArray<NSString *> *) readableTypesForPasteboard:(NSPasteboard *) pasteboard;
 ```
 
-#### Return Value
+## Return Value
 
 An array of uniform type identifier strings of data types instances that the receiver can read from the pasteboard and initialize from.
 
-#### Discussion
+## Discussion
 
 By default, the system provides the data for a type to [`init(pasteboardPropertyList:ofType:)`](./init%28pasteboardpropertylist,oftype%29.md) as an instance of `NSData`. If you implement [`readingOptions(forType:pasteboard:)`](./readingoptions%28fortype,pasteboard%29.md) and specify a different option, the system converts the `NSData` object for a type to an `NSString` object or any other property list object.
 
-##### Special Considerations
+### Special Considerations
 
 Don’t perform other pasteboard operations in the method implementation.
 

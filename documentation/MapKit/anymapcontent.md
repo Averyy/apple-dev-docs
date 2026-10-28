@@ -22,7 +22,7 @@ A type-erased map content.
 @preconcurrency struct AnyMapContent
 ```
 
-#### Overview
+## Overview
 
 An `AnyMapContent` allows changing the type of content used in a given map view.
 

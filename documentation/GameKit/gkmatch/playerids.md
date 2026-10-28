@@ -25,7 +25,7 @@ var playerIDs: [String]? { get }
 @property (nonatomic, readonly, nullable) NSArray<NSString *> * playerIDs;
 ```
 
-#### Discussion
+## Discussion
 
 The `playerIDs` property initially includes the player identifiers for any remote players already connected to the match; the array may initially be empty. As each new player connects to the match, GameKit adds the player’s identifier to the array. GameKit doesn’t include the local player’s identifier in this array.
 

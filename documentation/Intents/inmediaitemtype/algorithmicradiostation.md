@@ -24,7 +24,7 @@ case algorithmicRadioStation
 INMediaItemTypeAlgorithmicRadioStation
 ```
 
-#### Discussion
+## Discussion
 
 Use this media type when your app plays a station based on the user’s request, rather than the exact media the user requested.
 

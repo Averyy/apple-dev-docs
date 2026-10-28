@@ -20,7 +20,7 @@ Partial results for an electrocardiogram query.
 enum Result
 ```
 
-#### Overview
+## Overview
 
 The query returns a [`HKElectrocardiogramQuery.Result.measurement(_:)`](./result/measurement%28_%29.md) result for each voltage measurement, followed by a [`HKElectrocardiogramQuery.Result.done`](./result/done.md) result.
 

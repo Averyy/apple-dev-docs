@@ -17,7 +17,7 @@ Generate values in the half-open interval `[start, stop)` spaced by `step`.
 static func arange(_ start: Int, _ stop: Int, step: Int = 1, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 Example:
 
@@ -26,7 +26,7 @@ Example:
 let r = MLXArray.arange(2, 10, step: 2)
 ```
 
-##### See Also
+### See Also
 
 - [Initialization](../initialization.md)
 - [`arange(_:_:step:dtype:stream:)`](./arange%28_,_,step,dtype,stream%29-5h4mf.md)

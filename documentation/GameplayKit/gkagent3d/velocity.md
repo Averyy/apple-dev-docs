@@ -24,7 +24,7 @@ var velocity: vector_float3 { get }
 @property (nonatomic, readonly) vector_float3 velocity;
 ```
 
-#### Discussion
+## Discussion
 
 An agent’s velocity is a calculated property—the velocity vector is determined by an agent’s facing direction (its [`rotation`](./rotation.md) property) and its [`speed`](../gkagent/speed.md) property.
 

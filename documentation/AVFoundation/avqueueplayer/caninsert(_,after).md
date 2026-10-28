@@ -26,11 +26,11 @@ func canInsert(_ item: AVPlayerItem, after afterItem: AVPlayerItem?) -> Bool
 - (BOOL) canInsertItem:(AVPlayerItem *) item afterItem:(AVPlayerItem *) afterItem;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if `item` can be appended to the queue, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Adding the same item to a player at more than one position in the queue isn’t supported.
 

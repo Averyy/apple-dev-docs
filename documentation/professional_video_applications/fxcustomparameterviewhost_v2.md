@@ -23,7 +23,7 @@ protocol FxCustomParameterViewHost_v2
 
 - [Adding parameters to plug-ins](../Professional-Video-Applications/adding-parameters-to-plug-ins.md)
 
-#### Overview
+## Overview
 
 An FxPlug that wants to present custom UI for one or more of its parameters must conform to the FxCustomParmeterViewHost protocol. This protocol allows the plug-in to provide a subclass of NSView. It is up to the plug-in to handle NSEvents in its custom view(s). When an event in a custom view necessitates a change to the value of the associated parameter, the plug-in then uses methods in the host API FxCustomParameterActionAPI to tell the host application to change the parameter value.
 

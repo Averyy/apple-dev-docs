@@ -16,7 +16,7 @@ class XCTExpectedFailure
 @interface XCTExpectedFailure : NSObject
 ```
 
-#### Overview
+## Overview
 
 The test system creates and tracks instances of `XCTExpectedFailure` when you call one of the `XCTExpectFailure` functions. Don’t create or use them directly.
 

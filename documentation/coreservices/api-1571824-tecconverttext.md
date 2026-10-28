@@ -15,13 +15,13 @@ Converts a stream of text from a source encoding to adestination encoding. It us
 OSStatus TECConvertText(TECObjectRef encodingConverter, ConstTextPtr inputBuffer, ByteCount inputBufferLength, ByteCount *actualInputLength, TextPtr outputBuffer, ByteCount outputBufferLength, ByteCount *actualOutputLength);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./carbon_core/text_encoding_conversion_manager.md#1664324). If there is not enough memoryavailable for `TECConvertText` toconvert the text when allocating internal buffers, the functionreturns the appropriate Memory Manager result code.
 
 In most cases, `TECConvertText` does not return [`kTECUsedFallbacksStatus`](./api-1560006-anonymous/ktecusedfallbacksstatus.md) even if it has substituted a fallback character in the process of converting its input text to output in another encoding (unlike, for example, [`ConvertFromUnicodeToText`](./api-1433542-convertfromunicodetotext.md) which always returns [`kTECUsedFallbacksStatus`](./api-1560006-anonymous/ktecusedfallbacksstatus.md) if it substitutes a fallback character). That is because `TECConvertText` is intended to be used primarily by clients who just want it to do the best job it can in converting from a given input encoding to a given output encoding and don't want to worry too much about the details.
 
-#### Discussion
+## Discussion
 
 If the output buffer you allocate is too small to accommodateany of the converted text, the function fails. For best results,you should follow these guidelines when you allocate an output buffer:
 

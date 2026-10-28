@@ -14,11 +14,11 @@
 extern OSStatus AudioHardwareSetProperty(AudioHardwarePropertyID inPropertyID, UInt32 inPropertyDataSize, const void *inPropertyData);
 ```
 
-#### Return Value
+## Return Value
 
 An OSStatus indicating success or failure.
 
-#### Discussion
+## Discussion
 
 Tells the AudioSystemObject to change the value of the given property using the provided data.
 

@@ -16,7 +16,7 @@ ARKit has completed its classfication process for the plane anchor.
 ARPlaneClassificationStatusKnown
 ```
 
-#### Discussion
+## Discussion
 
 See the [`classification`](../arplaneanchor/classification-2hi2p.md) property to identify the detected surface.
 

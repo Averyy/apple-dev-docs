@@ -13,7 +13,7 @@
 kIOVideoFeatureControlClassIDSharpness = 'shrp'
 ```
 
-#### Discussion
+## Discussion
 
 A IOVideoFeatureControl that controls the sharpness of the picture. The units for the control's absolute value are undefined.
 

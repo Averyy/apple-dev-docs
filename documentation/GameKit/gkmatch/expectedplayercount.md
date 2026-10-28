@@ -28,7 +28,7 @@ var expectedPlayerCount: Int { get }
 
 - [Exchanging data between players in real-time games](../exchanging-data-between-players-in-real-time-games.md)
 
-#### Discussion
+## Discussion
 
 GameKit decrements the value of this property when a player connects to the match. When the value reaches `0`, all expected players joined, and the game can begin.
 

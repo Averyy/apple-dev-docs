@@ -23,7 +23,7 @@ var constant: CGFloat { get set }
 @property CGFloat constant;
 ```
 
-#### Discussion
+## Discussion
 
 Unlike the other properties, the constant can be modified after constraint creation. Setting the constant on an existing constraint performs much better than removing the constraint and adding a new one that’s exactly like the old except that it has a different constant.
 

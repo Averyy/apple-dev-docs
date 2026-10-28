@@ -33,12 +33,12 @@ cmake -B build -DCMAKE_BUILD_TYPE=Release
 cmake --build build -j
 ```
 
-From the `build/` directory, you can run an [example](examples/example.c)
+From the `build/` directory, you can run an [example](https://github.com/ml-explore/mlx-c/blob/main/examples/example.c)
 that uses MLX C with `./example`.
 
 ## Contributing
 
-Check out the [contribution guidelines](CONTRIBUTING.md) for more information
+Check out the [contribution guidelines](https://github.com/ml-explore/mlx-c/blob/main/CONTRIBUTING.md) for more information
 on contributing to MLX C. See the
 [docs](https://ml-explore.github.io/mlx/build/html/install.html) for more
 information on building from source, and running tests.

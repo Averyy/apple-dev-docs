@@ -26,7 +26,7 @@ class XCUICoordinate
 @interface XCUICoordinate : NSObject
 ```
 
-#### Overview
+## Overview
 
 Coordinates are dynamic, like the elements to which they refer, and may compute different screen locations at different times, or be invalid if the element they reference doesn’t exist.
 

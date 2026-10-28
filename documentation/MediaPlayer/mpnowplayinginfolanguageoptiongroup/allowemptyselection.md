@@ -25,7 +25,7 @@ var allowEmptySelection: Bool { get }
 @property (nonatomic, readonly) BOOL allowEmptySelection;
 ```
 
-#### Discussion
+## Discussion
 
 When set to [`true`](../../Swift/true.md), there must be a language option in the language option group.
 

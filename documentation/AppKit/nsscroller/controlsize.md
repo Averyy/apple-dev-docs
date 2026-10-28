@@ -19,7 +19,7 @@ var controlSize: NSControl.ControlSize { get set }
 @property NSControlSize controlSize;
 ```
 
-#### Discussion
+## Discussion
 
 Valid values for `controlSize` are described in [`NSControl.ControlSize`](../nscontrol/controlsize-swift.enum.md) (`NSCell`).
 

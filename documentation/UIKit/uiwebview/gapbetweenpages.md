@@ -21,7 +21,7 @@ var gapBetweenPages: CGFloat { get set }
 @property (nonatomic) CGFloat gapBetweenPages;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `0`.
 

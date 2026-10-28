@@ -25,7 +25,7 @@ func makeRenderPipelineState(additionalBinaryFunctions binaryFunctionsDescriptor
 - (id<MTLRenderPipelineState>) newRenderPipelineStateWithBinaryFunctions:(MTL4RenderPipelineBinaryFunctionsDescriptor *) binaryFunctionsDescriptor error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A new render pipeline state upon success, otherwise `nil`.
 

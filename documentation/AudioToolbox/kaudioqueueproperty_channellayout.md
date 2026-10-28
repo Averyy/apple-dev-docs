@@ -24,7 +24,7 @@ var kAudioQueueProperty_ChannelLayout: AudioQueuePropertyID { get }
 kAudioQueueProperty_ChannelLayout
 ```
 
-#### Discussion
+## Discussion
 
 Value is a read/write [`AudioChannelLayout`](../CoreAudioTypes/audiochannellayout.md) structure that describes an audio queue channel layout. The number of channels in the layout must match the number of channels in the audio format. This property is typically not used in the case of one or two channel audio. For more than two channels (such as in the case of 5.1 surround sound), you may need to specify a channel layout to indicate channel order, such as left, then center, then right.
 

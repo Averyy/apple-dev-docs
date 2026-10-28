@@ -20,7 +20,7 @@ class SCScreenshotConfiguration
 @interface SCScreenshotConfiguration : NSObject
 ```
 
-#### Overview
+## Overview
 
 `SCScreenshotConfiguration` provides a default image capture configuration for [`SCScreenshotManager`](./scscreenshotmanager.md). Only configure its properties if you need to customize the output. Additional options for customization include dynamic range settings, image reproduction optimizations, and ignoring user interface elements.
 

@@ -20,7 +20,7 @@ static let coreTechnology: TransactionReporting.TokenType
 
 - [Reporting transactions for the Core Technology Commission](../../reporting-transactions-for-core-technology-commission.md)
 
-#### Discussion
+## Discussion
 
 When you pass this constant to the [`token(for:)`](../token%28for%29.md) method, it returns JSON data as a Base64URL-encoded string. For more information, see [Reporting transactions for the Core Technology Commission](../../reporting-transactions-for-core-technology-commission.md).
 

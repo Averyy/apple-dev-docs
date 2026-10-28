@@ -23,7 +23,7 @@ init(collectionView: UICollectionView, cellProvider: @escaping UICollectionViewD
 - (instancetype) initWithCollectionView:(UICollectionView *) collectionView cellProvider:(UICollectionViewDiffableDataSourceCellProvider) cellProvider;
 ```
 
-#### Discussion
+## Discussion
 
 To connect a diffable data source to a collection view, you create the diffable data source using this initializer, passing in the collection view you want to associate with that data source. You also pass in a cell provider, where you configure each of your cells to determine how to display your data in the UI.
 

@@ -22,7 +22,7 @@ nonisolated
 init(alignment: VerticalAlignment? = nil, @ContentBuilder content: () -> Content)
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to create a [`GridRow`](../gridrow.md) inside of a [`Grid`](../grid.md). Provide a content closure that defines the cells of the row, and optionally customize the vertical alignment of content within each cell. The following example customizes the vertical alignment of the cells in the first and third rows:
 

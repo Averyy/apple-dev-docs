@@ -5,7 +5,7 @@
 
 Store the panoramic image for a panoramic node.
 
-#### Overview
+## Overview
 
 The actual panoramic image for a panoramic node is contained in a panorama image track, which is a standard QuickTime video track. The track reference to this track is stored in the `imageRefTrackIndex` field of the panorama sample atom.
 

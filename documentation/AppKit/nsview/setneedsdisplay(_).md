@@ -19,7 +19,7 @@ func setNeedsDisplay(_ invalidRect: NSRect)
 - (void) setNeedsDisplayInRect:(NSRect) invalidRect;
 ```
 
-#### Discussion
+## Discussion
 
 A later `displayIfNeeded` method will then perform drawing only within the invalid region. View objects marked as needing display are automatically redisplayed on each pass through the application’s event loop. (View objects that need to redisplay before the event loop comes around can of course immediately be sent the appropriate `display` method.)
 

@@ -21,7 +21,7 @@ Retrieves a tag’s value as a specific type, if and only if it matches a catego
 func value<T>(onlyIfMatching category: CMTypedTag<T>.Category) -> T? where T : Sendable
 ```
 
-#### Return Value
+## Return Value
 
 The value contained in the tag as an instance of type `T` if the category matches. Otherwise, returns `nil`.
 

@@ -19,7 +19,7 @@ class ABPersonView
 @interface ABPersonView : NSView
 ```
 
-#### Overview
+## Overview
 
 > **Note**:  You should not override the [`fieldEditor(_:for:)`](../AppKit/nswindow/fieldeditor%28_,for%29.md) method of the window that contains this view.
 
@@ -54,8 +54,6 @@ class ABPersonView
 - [NSTouchBarProvider](../AppKit/nstouchbarprovider.md)
 - [NSUserActivityRestoring](../AppKit/nsuseractivityrestoring.md)
 - [NSUserInterfaceItemIdentification](../AppKit/nsuserinterfaceitemidentification.md)
-- [Sendable](../Swift/sendable.md)
-- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 

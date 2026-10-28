@@ -15,7 +15,7 @@ virtual IOReturn handleCommand(
  void *param3 = 0);
 ```
 
-#### Return Value
+## Return Value
 
 kIOReturnSuccess on success, or an error code otherwise.
 

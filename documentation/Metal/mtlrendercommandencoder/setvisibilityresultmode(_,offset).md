@@ -25,7 +25,7 @@ func setVisibilityResultMode(_ mode: MTLVisibilityResultMode, offset: Int)
 - (void) setVisibilityResultMode:(MTLVisibilityResultMode) mode offset:(NSUInteger) offset;
 ```
 
-#### Discussion
+## Discussion
 
 To create a render pass that can enable visibility testing, assign an [`MTLBuffer`](../mtlbuffer.md) instance to the [`visibilityResultBuffer`](../mtlrenderpassdescriptor/visibilityresultbuffer.md) property of an [`MTLRenderPassDescriptor`](../mtlrenderpassdescriptor.md).
 

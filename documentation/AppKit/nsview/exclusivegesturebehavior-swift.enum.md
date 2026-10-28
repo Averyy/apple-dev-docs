@@ -19,7 +19,7 @@ enum ExclusiveGestureBehavior
 enum NSViewExclusiveGestureBehavior : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 See the `exclusiveGestureBehavior` property of `NSView` more information.
 

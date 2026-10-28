@@ -16,7 +16,7 @@ Invalidates the configuration and transitions the underlying session state to ma
 func invalidate() async throws
 ```
 
-#### Discussion
+## Discussion
 
 Call `invalidate()` in the closure passed to [`transactionTask(_:action:)`](../../../SwiftUI/view/transactiontask%28_,action%29.md) when you complete your wired transaction or card emulation. Your app is responsible for invalidating any wired or card emulation state by calling this method.
 

@@ -19,7 +19,7 @@ func PMPresetCreatePrintSettings(_ preset: PMPreset, _ session: PMPrintSession, 
 OSStatus PMPresetCreatePrintSettings(PMPreset preset, PMPrintSession session, PMPrintSettings  _Nullable *printSettings);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./core_printing.md#1670007).
 

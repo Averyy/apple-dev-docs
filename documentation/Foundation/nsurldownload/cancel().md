@@ -19,7 +19,7 @@ func cancel()
 - (void) cancel;
 ```
 
-#### Discussion
+## Discussion
 
 This method deletes the partially downloaded file unless you have previously called [`deletesFileUponFailure`](./deletesfileuponfailure.md), passing [`false`](../../Swift/false.md).
 

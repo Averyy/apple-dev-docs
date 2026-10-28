@@ -23,11 +23,11 @@ init()
 - (instancetype) init;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized spring timing parameters object or `nil` if the object could not be created.
 
-#### Discussion
+## Discussion
 
 This method sets the initial velocity of any animated properties to `0.0` and sets the damping ratio to `4.56`.
 

@@ -19,7 +19,7 @@ Biometry is locked because there were too many failed attempts.
 static var biometryLockout: LAError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 A passcode is now required to unlock biometry. Try the [`LAPolicy.deviceOwnerAuthentication`](../lapolicy/deviceownerauthentication.md) policy instead to allow use of a passcode.
 

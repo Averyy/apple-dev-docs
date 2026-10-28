@@ -24,7 +24,7 @@ var primitiveType: MTLPrimitiveType { get }
 @property (nonatomic, readonly) MTLPrimitiveType primitiveType;
 ```
 
-#### Discussion
+## Discussion
 
 Use this value for the `primitiveType` parameter in a call to [`drawIndexedPrimitives(type:indexCount:indexType:indexBuffer:indexBufferOffset:)`](../../Metal/mtlrendercommandencoder/drawindexedprimitives%28type,indexcount,indextype,indexbuffer,indexbufferoffset%29.md).
 

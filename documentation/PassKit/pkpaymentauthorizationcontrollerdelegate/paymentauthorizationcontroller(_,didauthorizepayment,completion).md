@@ -34,7 +34,7 @@ optional func paymentAuthorizationController(_ controller: PKPaymentAuthorizatio
 - (void) paymentAuthorizationController:(PKPaymentAuthorizationController *) controller didAuthorizePayment:(PKPayment *) payment completion:(void (^)(PKPaymentAuthorizationStatus status)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called after the payment request is authorized. You submit the payment information to your payment processor to authorize the transaction, and then call the completion block.
 

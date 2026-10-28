@@ -21,7 +21,7 @@ A generic type that represents content conveyed via a chart.
 protocol VectorizedChartContent<DataElement> : ChartContent
 ```
 
-#### Overview
+## Overview
 
 Its primary associated type represents the data element, sometimes called *data point*, *observation* or *aggregate*.
 

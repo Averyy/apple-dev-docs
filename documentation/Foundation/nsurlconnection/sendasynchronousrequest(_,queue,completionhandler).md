@@ -34,7 +34,7 @@ class func sendAsynchronousRequest(_ request: URLRequest, queue: OperationQueue)
 + (void) sendAsynchronousRequest:(NSURLRequest *) request queue:(NSOperationQueue *) queue completionHandler:(void (^)(NSURLResponse *response, NSData *data, NSError *connectionError)) handler;
 ```
 
-#### Discussion
+## Discussion
 
 If the request completes successfully, the `data` parameter of the handler block contains the resource data, and the `error` parameter is `nil`.  If the request fails, the `data` parameter is `nil` and the error parameter contain information about the failure.
 

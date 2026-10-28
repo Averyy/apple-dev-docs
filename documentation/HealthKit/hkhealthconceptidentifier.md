@@ -24,7 +24,7 @@ class HKHealthConceptIdentifier
 @interface HKHealthConceptIdentifier : NSObject
 ```
 
-#### Overview
+## Overview
 
 Each identifier points to one concept inside a domain. For example, within the medication domain, one identifier might represent ibuprofen while another represents insulin.
 

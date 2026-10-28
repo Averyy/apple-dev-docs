@@ -24,7 +24,7 @@ class HMDurationEvent
 @interface HMDurationEvent : HMTimeEvent
 ```
 
-#### Overview
+## Overview
 
 Use a duration event to specify that a different event should end after a period of time.
 

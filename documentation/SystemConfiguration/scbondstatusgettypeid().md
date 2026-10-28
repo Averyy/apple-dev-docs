@@ -19,7 +19,7 @@ func SCBondStatusGetTypeID() -> CFTypeID
 CFTypeID SCBondStatusGetTypeID();
 ```
 
-#### Return Value
+## Return Value
 
 The type identifier of all [`SCBondStatus`](./scbondstatus.md) instances.
 

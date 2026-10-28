@@ -20,7 +20,7 @@ func captureView(_ captureView: AVCaptureView, startRecordingTo fileOutput: AVCa
 - (void) captureView:(AVCaptureView *) captureView startRecordingToFileOutput:(AVCaptureFileOutput *) fileOutput;
 ```
 
-#### Discussion
+## Discussion
 
 If the capture file output is an instance of [`AVCaptureMovieFileOutput`](../../AVFoundation/avcapturemoviefileoutput.md), you start recording by calling [`startRecording(to:recordingDelegate:)`](../../AVFoundation/avcapturefileoutput/startrecording%28to,recordingdelegate%29.md) on the capture file output.
 

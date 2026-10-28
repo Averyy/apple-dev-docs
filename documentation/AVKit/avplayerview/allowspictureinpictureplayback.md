@@ -19,7 +19,7 @@ var allowsPictureInPicturePlayback: Bool { get set }
 @property (nonatomic) BOOL allowsPictureInPicturePlayback;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `false`.
 

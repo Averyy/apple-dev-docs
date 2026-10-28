@@ -21,7 +21,7 @@ var stickContents: TCControlContents? { get set }
 @property (nonatomic, strong, nullable) TCControlContents * stickContents;
 ```
 
-#### Discussion
+## Discussion
 
 May be `nil`.
 

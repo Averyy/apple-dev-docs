@@ -21,11 +21,11 @@ Modifies the date format style to use the specified month format style.
 func month(_ format: Date.FormatStyle.Symbol.Month = .abbreviated) -> Date.FormatStyle
 ```
 
-#### Return Value
+## Return Value
 
 A date format style modified to include the specified month style.
 
-#### Discussion
+## Discussion
 
 Possible values of [`Date.FormatStyle.Symbol.Month`](./symbol/month.md) include [`abbreviated`](./symbol/month/abbreviated.md), [`defaultDigits`](./symbol/month/defaultdigits.md), [`narrow`](./symbol/month/narrow.md), [`twoDigits`](./symbol/month/twodigits.md), and [`wide`](./symbol/month/wide.md).
 

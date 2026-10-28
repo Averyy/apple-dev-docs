@@ -24,7 +24,7 @@ var sourceVideoAverageFrameDuration: CMTime { get set }
 @property (nonatomic) CMTime sourceVideoAverageFrameDuration;
 ```
 
-#### Discussion
+## Discussion
 
 Setting this property enables the output settings assistant to generate more complete video settings. After setting a value, requery the [`videoSettings`](./videosettings.md) property to get the latest values.
 

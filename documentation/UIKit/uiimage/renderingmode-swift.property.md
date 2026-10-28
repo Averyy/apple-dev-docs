@@ -24,7 +24,7 @@ var renderingMode: UIImage.RenderingMode { get }
 @property (nonatomic, readonly) UIImageRenderingMode renderingMode;
 ```
 
-#### Discussion
+## Discussion
 
 The default rendering mode is [`UIImage.RenderingMode.automatic`](./renderingmode-swift.enum/automatic.md).
 

@@ -19,11 +19,11 @@ func getSize() -> UInt32
 - (uint32_t) getSize;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the size in bytes of the target data element.
 
-#### Discussion
+## Discussion
 
 The size is valid whether the data element has a fixed or variable size descriptor.
 

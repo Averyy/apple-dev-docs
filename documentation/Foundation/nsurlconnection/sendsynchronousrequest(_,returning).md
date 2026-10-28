@@ -26,11 +26,11 @@ class func sendSynchronousRequest(_ request: URLRequest, returning response: Aut
 + (NSData *) sendSynchronousRequest:(NSURLRequest *) request returningResponse:(NSURLResponse **) response error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 The downloaded data for the URL request. Returns `nil` if a connection could not be created or if the download fails.
 
-#### Discussion
+## Discussion
 
 A synchronous load is built on top of the asynchronous loading code made available by the class. The calling thread is blocked while the asynchronous loading system performs the URL load on a thread spawned specifically for this load request. No special threading or run loop configuration is necessary in the calling thread in order to perform a synchronous load.
 

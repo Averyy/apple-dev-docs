@@ -15,11 +15,11 @@ Changes the search order for registered components.
 OSErr SetDefaultComponent(Component aComponent, SInt16 flags);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./carbon_core/component_manager.md#1668759).
 
-#### Discussion
+## Discussion
 
 Note that this function changes the search order for all applications. As a result, you should use this function carefully. 
 

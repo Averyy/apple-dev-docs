@@ -19,7 +19,7 @@ func layoutAttributesForItems(in rect: NSRect) -> Set<NSScrubberLayoutAttributes
 - (NSSet<__kindof NSScrubberLayoutAttributes *> *) layoutAttributesForItemsInRect:(NSRect) rect;
 ```
 
-#### Discussion
+## Discussion
 
 The base implementation returns an empty [`NSSet`](../../Foundation/nsset.md).
 

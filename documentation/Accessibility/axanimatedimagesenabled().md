@@ -24,7 +24,7 @@ Returns a Boolean value that indicates whether the system setting for Animated I
 func AXAnimatedImagesEnabled() -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if the system setting for Animated Images is on; otherwise, [`false`](../Swift/false.md).
 

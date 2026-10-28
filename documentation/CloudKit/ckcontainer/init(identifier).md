@@ -25,7 +25,7 @@ init(identifier containerIdentifier: String)
 + (CKContainer *) containerWithIdentifier:(NSString *) containerIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 The specified identifier must correspond to one of the containers in the iCloud capabilities section of your Xcode project. Including the identifier with your app’s capabilities adds the corresponding entitlements to your app. To access your app’s default container, use the [`default()`](./default%28%29.md) method instead.
 

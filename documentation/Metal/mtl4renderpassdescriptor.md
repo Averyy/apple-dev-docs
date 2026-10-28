@@ -24,7 +24,7 @@ class MTL4RenderPassDescriptor
 @interface MTL4RenderPassDescriptor : NSObject
 ```
 
-#### Overview
+## Overview
 
 You use render pass descriptors to create instances of [`MTL4RenderCommandEncoder`](./mtl4rendercommandencoder.md) and encode draw commands into instances of [`MTL4CommandBuffer`](./mtl4commandbuffer.md).
 

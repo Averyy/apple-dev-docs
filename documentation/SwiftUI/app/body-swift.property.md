@@ -23,7 +23,7 @@ The content and behavior of the app.
 @MainActor @preconcurrency var body: Self.Body { get }
 ```
 
-#### Discussion
+## Discussion
 
 For any app that you create, provide a computed `body` property that defines your app’s scenes, which are instances that conform to the [`Scene`](../scene.md) protocol. For example, you can create a simple app with a single scene containing a single view:
 

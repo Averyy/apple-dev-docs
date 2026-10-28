@@ -15,11 +15,11 @@ Base type for all bulk operation requests.
 object BaseBulkRequest
 ```
 
-#### Discussion
+## Discussion
 
 The `BaseBulkRequest` object is the common base type extended by all typed bulk request objects (`KeywordCreateBulkRequest`, `NegativeKeywordUpdateBulkRequest`, etc.) and by `BulkOperationRequest`. It carries the `allowPartialSuccess` flag that controls batch failure behavior.
 
-##### Example
+### Example
 
 ```json
 {

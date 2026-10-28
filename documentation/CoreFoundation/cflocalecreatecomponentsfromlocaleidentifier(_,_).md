@@ -25,11 +25,11 @@ func CFLocaleCreateComponentsFromLocaleIdentifier(_ allocator: CFAllocator!, _ l
 extern CFDictionaryRefCFLocaleCreateComponentsFromLocaleIdentifier(CFAllocatorRef allocator, CFLocaleIdentifier localeID);
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary containing the result from parsing a locale ID consisting of language, script, country or region, variant, and keyword/value pairs. Returns `NULL` if there was a problem creating the object. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 The dictionary keys are the constant CFString objects that correspond to the locale ID components; the values correspond to constants where available. For example: the string “en_US@calendar=japanese” yields a dictionary with three entries: `kCFLocaleLanguageCode``=en`, `kCFLocaleCountryCode``=US`, and `kCFLocaleCalendarIdentifier``=``kCFJapaneseCalendar`. See also [`CFLocaleCreateLocaleIdentifierFromComponents(_:_:)`](./cflocalecreatelocaleidentifierfromcomponents%28_,_%29.md).
 

@@ -24,7 +24,7 @@ Creates a new configuration provider where each key is rewritten by the given cl
 func mapKeys(_ transform: @escaping @Sendable (AbsoluteConfigKey) -> AbsoluteConfigKey) -> KeyMappingProvider<Self>
 ```
 
-#### Return Value
+## Return Value
 
 A provider which maps keys using the provided transformation function.
 

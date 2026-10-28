@@ -25,11 +25,11 @@ func CFBundleCopyPreferredLocalizationsFromArray(_ locArray: CFArray!) -> CFArra
 extern CFArrayRefCFBundleCopyPreferredLocalizationsFromArray(CFArrayRef locArray);
 ```
 
-#### Return Value
+## Return Value
 
 A subset of `locArray` that CFBundle would use in the current application context. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 You can obtain `locArray` using the [`CFBundleCopyBundleLocalizations(_:)`](./cfbundlecopybundlelocalizations%28_%29.md) function.
 

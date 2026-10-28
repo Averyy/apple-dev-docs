@@ -23,7 +23,7 @@ static var windowBackground: WindowBackgroundShapeStyle { get }
 
 Available when `Self` is `WindowBackgroundShapeStyle`.
 
-#### Discussion
+## Discussion
 
 On macOS, this has a unique appearance compared to the default `ShapeStyle.background`. It matches the default background of a window: a wallpaper-tinted light gray in the light appearance and a wallpaper-tinted dark gray in the dark appearance.
 

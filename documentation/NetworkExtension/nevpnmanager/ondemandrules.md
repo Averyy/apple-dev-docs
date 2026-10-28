@@ -24,7 +24,7 @@ var onDemandRules: [NEOnDemandRule]? { get set }
 @property (copy, nullable) NSArray<NEOnDemandRule *> * onDemandRules;
 ```
 
-#### Discussion
+## Discussion
 
 The VPN configuration can optionally be configured to connect automatically based on a variety of criteria specified in [`NEOnDemandRule`](../neondemandrule.md) objects. The [`onDemandRules`](./ondemandrules.md) property contains the current set of Connect On Demand rules for the VPN configuration. Each rule is evaluated in order, and the first rule that matches all criteria on the current network is applied.
 

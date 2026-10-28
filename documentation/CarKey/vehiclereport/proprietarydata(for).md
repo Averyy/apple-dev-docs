@@ -19,11 +19,11 @@ Retrieves the proprietary data associated with one of the vehicle’s functions.
 func proprietaryData(for function: FunctionIdentifier) throws -> Data?
 ```
 
-#### Return Value
+## Return Value
 
 A data object, or `nil` if no data was present for the specified feature.
 
-#### Discussion
+## Discussion
 
 When it receives new data from a vehicle, the system updates the vehicle report and notifies the session delegate. Call this method to retrieve any data associated with a particular feature of your vehicle.
 

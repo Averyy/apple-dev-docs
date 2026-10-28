@@ -20,7 +20,7 @@ A list of named strings and an associated array of string values that define cus
 object applinks.SubstitutionVariables
 ```
 
-#### Discussion
+## Discussion
 
 The keys in this object are substitution variable names; the value for each key is an array of strings to substitute for the associated variable in URL pattern-matching operations.
 

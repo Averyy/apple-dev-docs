@@ -25,7 +25,7 @@ func nw_data_transfer_report_get_path_count(_ report: nw_data_transfer_report_t)
 uint32_t nw_data_transfer_report_get_path_count(nw_data_transfer_report_t report);
 ```
 
-#### Discussion
+## Discussion
 
 Use the path index to look up individual values, or pass `NW_ALL_PATHS` to get an aggregate view.
 

@@ -25,9 +25,9 @@ var imageSequenceFrameRate: CGFloat { get set }
 @property (nonatomic) CGFloat imageSequenceFrameRate;
 ```
 
-#### Discussion
+## Discussion
 
-To specify a sequence of frames for animating each particle, arrange the frames as a grid in a single image, as shown in [Figure 1](./api-1524153-particleimage.md#1965925). Then use the [`imageSequenceRowCount`](./imagesequencerowcount.md) and [`imageSequenceColumnCount`](./imagesequencecolumncount.md) properties to specify the arrangement of frames in the images, and this property to define animation speed.
+To specify a sequence of frames for animating each particle, arrange the frames as a grid in a single image, as shown in [Figure 1](./particleimage.md#1965925). Then use the [`imageSequenceRowCount`](./imagesequencerowcount.md) and [`imageSequenceColumnCount`](./imagesequencecolumncount.md) properties to specify the arrangement of frames in the images, and this property to define animation speed.
 
 The default value is `0.0` frames per second, specifying no animation.
 

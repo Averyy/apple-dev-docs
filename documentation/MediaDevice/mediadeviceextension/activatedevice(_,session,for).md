@@ -23,7 +23,7 @@ func activateDevice(_ device: MediaOutputDevice, session: MediaOutputSession, fo
 
 - [Creating a media device extension](../creating-a-media-device-extension.md)
 
-#### Discussion
+## Discussion
 
 If the device requires additional user authentication, call [`requestPairingCode(for:session:reason:authorizationMethod:)`](../mediadeviceroutingmanager/requestpairingcode%28for,session,reason,authorizationmethod%29.md). The system will report user input via [`connectUsingPairingCode(_:to:session:)`](./connectusingpairingcode%28_,to,session%29.md).
 
@@ -33,7 +33,7 @@ If the activation is successful, call [`activatedDevice(_:session:)`](../mediade
 
 > **Note**: Once a device is activated, the extension will be restricted on the local area network and will only be permitted to connect to the device(s) that were activated as defined by the [`networkEndpoints`](../mediaoutputdevice/networkendpoints.md) property.  Additionally upon device activation, your extension will lose access to Bluetooth and be granted access to reach out to the internet domains that have been declared in the `MDRequestedDomains` of the extension’s Info.plist
 
-#### Declaring Domains
+## Declaring Domains
 
 Declare the domains your extension may need to connect to in your extension’s Info.plist using `MDRequestedDomains`. The type must conform to an array of strings:
 
@@ -48,7 +48,7 @@ Declare the domains your extension may need to connect to in your extension’s 
 </dict>
 ```
 
-#### Grouping
+## Grouping
 
 If the extension receives multiple activations, then the associated [`MediaOutputDevice`](../mediaoutputdevice.md) instances should be grouped together. If the devices are already members of a group, then those groups should now be considered grouped together. [`updateDevices(_:)`](../mediadeviceroutingmanager/updatedevices%28_%29.md) should be called to update the state of group information.
 

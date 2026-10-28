@@ -21,7 +21,7 @@ A publisher that publishes a given sequence of elements.
 struct Sequence<Elements, Failure> where Elements : Sequence, Failure : Error
 ```
 
-#### Overview
+## Overview
 
 When the publisher exhausts the elements in the sequence, the next request causes the publisher to finish.
 

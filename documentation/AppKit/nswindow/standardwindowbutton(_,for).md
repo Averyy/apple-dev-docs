@@ -19,11 +19,11 @@ class func standardWindowButton(_ b: NSWindow.ButtonType, for styleMask: NSWindo
 + (NSButton *) standardWindowButton:(NSWindowButton) b forStyleMask:(NSWindowStyleMask) styleMask;
 ```
 
-#### Return Value
+## Return Value
 
 The new window button of the type identified by `b`; `nil` when no such button type exists.
 
-#### Discussion
+## Discussion
 
 The caller is responsible for adding the button to the view hierarchy and for setting the target to be the window.
 

@@ -5,7 +5,7 @@
 
 Implement Apple’s Secure Download System in macOS.
 
-#### Overview
+## Overview
 
 The `Security.SecureDownload` API provides access to Apple’s Secure Download System. This API is only useful for certain specialized apps. Because of this, you must import this API explicitly:
 

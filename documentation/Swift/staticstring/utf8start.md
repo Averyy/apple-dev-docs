@@ -21,7 +21,7 @@ A pointer to a null-terminated sequence of UTF-8 code units.
 var utf8Start: UnsafePointer<UInt8> { get }
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**: Accessing this property when `hasPointerRepresentation` is `false` triggers a runtime error.
 

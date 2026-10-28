@@ -22,7 +22,7 @@ func makePayload(url setupPayloadURL: URL, ownershipToken: HMAccessoryOwnershipT
 - (HMAccessorySetupPayload *) payloadWithURL:(NSURL *) setupPayloadURL ownershipToken:(HMAccessoryOwnershipToken *) ownershipToken;
 ```
 
-#### Return Value
+## Return Value
 
 An accessory setup payload that you use to add the accessory. The method fails and returns `nil` if the setup payload URL is invalid.
 

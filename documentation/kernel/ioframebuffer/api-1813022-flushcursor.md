@@ -12,7 +12,7 @@ virtual void flushCursor(
  void );
 ```
 
-#### Overview
+## Overview
 
 IOFramebuffer implements software cursor functionality when a hardware cursor is unavailable. Some hardware may need to flush a cache after the processor has finished lifting and dropping the software cursor.
 

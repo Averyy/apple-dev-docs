@@ -33,7 +33,7 @@ var amount: NSDecimalNumber? { get }
 @property (atomic, copy, readonly, nullable) NSDecimalNumber * amount;
 ```
 
-#### Discussion
+## Discussion
 
 This value in the [`currencyCode`](./currencycode.md) property determines the currency designator applied to this number.
 

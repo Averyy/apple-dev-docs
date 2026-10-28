@@ -25,7 +25,7 @@ class var defaultBehavior: any NSDecimalNumberBehaviors { get set }
 @property (class, strong) id<NSDecimalNumberBehaviors> defaultBehavior;
 ```
 
-#### Discussion
+## Discussion
 
 By default, the arithmetic methods use the `NSRoundPlain` behavior; that is, the methods round to the closest possible return value. The methods assume your need for precision does not exceed 38 significant digits and raise exceptions when they try to divide by 0 or produce a number too big or too small to be represented.
 

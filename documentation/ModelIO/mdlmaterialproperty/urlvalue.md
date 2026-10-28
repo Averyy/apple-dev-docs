@@ -24,7 +24,7 @@ var urlValue: URL? { get set }
 @property (nonatomic, copy, nullable) NSURL * URLValue;
 ```
 
-#### Discussion
+## Discussion
 
 A renderer (or other software component processing a material) is responsible for loading a texture image from the specified URL.
 

@@ -15,11 +15,11 @@ Returns to your application the registration information for a component.
 OSErr GetComponentInfo(Component aComponent, ComponentDescription *cd, Handle componentName, Handle componentInfo, Handle componentIcon);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./carbon_core/component_manager.md#1668759).
 
-#### Discussion
+## Discussion
 
 For information on registering components, see “Registering Components”.  
 

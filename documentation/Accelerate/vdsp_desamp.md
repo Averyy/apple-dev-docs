@@ -25,7 +25,7 @@ extern void vDSP_desamp(const float *__A, vDSP_Stride __DF, const float *__F, fl
 
 - [Resampling a signal with decimation](./resampling-a-signal-with-decimation.md)
 
-#### Discussion
+## Discussion
 
 Performs finite impulse response (FIR) filtering at selected positions of the input vector `A`, with the filter `F`, using the decimation factor `DF`. Results are left in the output vector `C`.
 

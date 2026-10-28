@@ -59,7 +59,7 @@ nonisolated
 init<S>(_ title: S, value: KeyPath<RowValue, String>, comparator: String.StandardComparator = .localizedStandard) where Content == Text, S : StringProtocol
 ```
 
-#### Discussion
+## Discussion
 
 This initializer creates a [`Text`](../text.md) view for you. For more information about localizing strings, see [`Text`](../text.md).
 

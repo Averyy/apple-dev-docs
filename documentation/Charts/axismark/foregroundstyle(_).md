@@ -21,7 +21,7 @@ Sets the axis content’s foreground elements to use a given style.
 func foregroundStyle<S>(_ style: S) -> some AxisMark where S : ShapeStyle
 ```
 
-#### Return Value
+## Return Value
 
 An axis content that uses the given foreground style.
 

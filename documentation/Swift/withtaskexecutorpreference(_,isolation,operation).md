@@ -21,21 +21,21 @@ Configure the current task hierarchy’s task executor preference to the passed 
 func withTaskExecutorPreference<T, Failure>(_ taskExecutor: (any TaskExecutor)?, isolation: isolated (any Actor)? = #isolation, operation: () async throws(Failure) -> T) async throws(Failure) -> T where Failure : Error
 ```
 
-#### Return Value
+## Return Value
 
 The value returned from the `operation` closure
 
-##### Task executor preference semantics
+### Task executor preference semantics
 
 Task executors influence *where* nonisolated asynchronous functions, and default actor methods execute. The preferred executor will be used whenever possible, rather than hopping to the global concurrent pool.
 
 For an in depth discussion of this topic, see [`TaskExecutor`](./taskexecutor.md).
 
-##### Disabling task executor preference
+### Disabling task executor preference
 
 Passing `nil` as executor means disabling any preference (if it was set) and the task hierarchy will execute without any executor preference until a different preference is set.
 
-##### Asynchronous function execution semantics in presence of task executor preferences
+### Asynchronous function execution semantics in presence of task executor preferences
 
 The following diagram illustrates on which executor an `async` function will execute, in presence (or lack thereof) a task executor preference.
 
@@ -72,7 +72,7 @@ In short, without a task executor preference, `nonisolated async` functions will
 
 Isolated functions semantically execute on the actor they are isolated to, however if such actor does not declare a custom executor (it is a “default actor”) in presence of a task executor preference, tasks executing on this actor will use the preferred executor as source of threads to run the task, while isolated on the actor.
 
-##### Example
+### Example
 
 ```swift
 Task {

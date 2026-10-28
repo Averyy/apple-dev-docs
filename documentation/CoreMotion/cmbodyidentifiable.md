@@ -24,7 +24,7 @@ protocol CMBodyIdentifiable : NSObjectProtocol
 @protocol CMBodyIdentifiable <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Adopt this protocol or use a conforming system type to associate motion sensor updates with a specific view or display. When you set [`deviceMotionBody`](./cmmotionmanager/devicemotionbody.md) to an object conforming to [`CMBodyIdentifiable`](./cmbodyidentifiable.md), Core Motion automatically calculates motion data, such as 3D orientation and rotation rate, relative to that view rather than the device’s physical coordinate system.
 

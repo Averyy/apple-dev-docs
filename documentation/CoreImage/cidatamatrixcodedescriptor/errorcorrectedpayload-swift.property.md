@@ -24,7 +24,7 @@ var errorCorrectedPayload: Data { get }
 @property (readonly) NSData * errorCorrectedPayload;
 ```
 
-#### Discussion
+## Discussion
 
 DataMatrix symbols are specified bn ISO/IEC 16022:2006(E). ECC 200-type symbols will always have an even number of rows and columns.
 

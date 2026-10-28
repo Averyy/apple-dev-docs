@@ -15,7 +15,7 @@ The type definition for an asynchronous device request completion routine.
 virtual void CompleteAsyncDeviceRequest(OSAction *action, IOReturn status, uint32_t bytesTransferred);
 ```
 
-#### Discussion
+## Discussion
 
 Implement a custom version of this method and use the [`TYPE`](../../DriverKit/type.md) macro to let the system know that your method conforms to this prototype.
 

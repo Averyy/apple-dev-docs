@@ -19,7 +19,7 @@ func MTRegisterProfessionalVideoWorkflowFormatReaders()
 extern void MTRegisterProfessionalVideoWorkflowFormatReaders();
 ```
 
-#### Overview
+## Overview
 
 Call this function to indicate to Media Toolbox that your app requires support for [MediaExtension](../MediaExtension/MediaExtension.md) format readers.
 

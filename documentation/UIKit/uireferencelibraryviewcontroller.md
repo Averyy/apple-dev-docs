@@ -23,7 +23,7 @@ class UIReferenceLibraryViewController
 @interface UIReferenceLibraryViewController : UIViewController
 ```
 
-#### Overview
+## Overview
 
 A [`UIReferenceLibraryViewController`](./uireferencelibraryviewcontroller.md) object should not be used to display wordlists, create a standalone dictionary app, or republish the content in any form.
 

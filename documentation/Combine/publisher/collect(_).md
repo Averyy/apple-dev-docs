@@ -25,11 +25,11 @@ func collect(_ count: Int) -> Publishers.CollectByCount<Self>
 
 - [Processing Published Elements with Subscribers](../processing-published-elements-with-subscribers.md)
 
-#### Return Value
+## Return Value
 
 A publisher that collects up to the specified number of elements, and then publishes them as an array.
 
-#### Discussion
+## Discussion
 
 Use [`collect(_:)`](./collect%28_%29.md) to emit arrays of at most `count` elements from an upstream publisher. If the upstream publisher finishes before collecting the specified number of elements, the publisher sends an array of only the items it received. This may be fewer than `count` elements.
 

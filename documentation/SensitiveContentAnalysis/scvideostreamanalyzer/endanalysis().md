@@ -21,7 +21,7 @@ func endAnalysis()
 - (void) endAnalysis;
 ```
 
-#### Discussion
+## Discussion
 
 This method stops analyzing the video stream in reference to the most recent call to `beginAnalysis`.
 

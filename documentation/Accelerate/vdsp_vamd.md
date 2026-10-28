@@ -21,7 +21,7 @@ Calculates the double-precision element-wise product of a vector and the sum of 
 extern void vDSP_vamD(const double *__A, vDSP_Stride __IA, const double *__B, vDSP_Stride __IB, const double *__C, vDSP_Stride __IC, double *__D, vDSP_Stride __IDD, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This function calculates the sums of the first `N` elements of `A` and `B`, multiplies each sum by the corresponding value in `C`, and writes the result to `D`, as follows:
 

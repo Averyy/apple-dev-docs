@@ -18,7 +18,7 @@ A combination of values that specify what to include in observation notification
 final let options: NSKeyValueObservingOptions
 ```
 
-#### Discussion
+## Discussion
 
 For possible values, see [`NSKeyValueObservingOptions`](../../Foundation/nskeyvalueobservingoptions.md).
 

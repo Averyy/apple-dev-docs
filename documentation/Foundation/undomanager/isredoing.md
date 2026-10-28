@@ -25,7 +25,7 @@ var isRedoing: Bool { get }
 @property (readonly, getter=isRedoing) BOOL redoing;
 ```
 
-#### Discussion
+## Discussion
 
 The value is [`true`](../../Swift/true.md) if the manager is performing its [`redo()`](./redo%28%29.md) method, otherwise [`false`](../../Swift/false.md).
 

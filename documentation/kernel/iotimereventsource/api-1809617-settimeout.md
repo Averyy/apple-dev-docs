@@ -13,7 +13,7 @@ virtual IOReturn setTimeout(
  UInt32 scale_factor = scale_factor);
 ```
 
-#### Return Value
+## Return Value
 
 kIOReturnSuccess if everything is fine, kIOReturnNoResources if action hasn't been declared.
 

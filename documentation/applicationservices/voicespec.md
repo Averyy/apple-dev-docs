@@ -21,7 +21,7 @@ typedef struct VoiceSpec {
 } VoiceSpec;
 ```
 
-#### Overview
+## Overview
 
 A voice specification structure provides a unique specification that you must use to obtain information about a voice. You also must use a voice specification structure if you wish to create a speech channel that generates speech in a voice other than the current system default voice.
 

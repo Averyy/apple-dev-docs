@@ -28,7 +28,7 @@ protocol INStartCallIntentHandling : NSObjectProtocol
 
 - [Dispatching intents to handlers](../SiriKit/dispatching-intents-to-handlers.md)
 
-#### Overview
+## Overview
 
 Use the methods of the [`INStartCallIntentHandling`](./instartcallintenthandling.md) protocol to resolve, confirm, and handle requests to start an audio or video call with the designated users. Adopt this protocol in an object of your Intents extension that’s capable of validating the call information. Your Intents extension shouldn’t try to initiate the call directly. Instead, a successful response involves asking Siri to launch your app to begin the call.
 

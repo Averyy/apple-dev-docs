@@ -22,7 +22,7 @@ func setMessageBody(_ body: String, isHTML: Bool)
 - (void) setMessageBody:(NSString *) body isHTML:(BOOL) isHTML;
 ```
 
-#### Discussion
+## Discussion
 
 This method replaces the previous body content with the new content. If the user has a signature file, the body content is inserted immediately before the signature. If you want to include images with your content, you must attach the images separately using the [`addAttachmentData(_:mimeType:fileName:)`](./addattachmentdata%28_,mimetype,filename%29.md) method.
 

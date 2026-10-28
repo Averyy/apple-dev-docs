@@ -21,7 +21,7 @@ func matmul(_ other: MLXArray, stream: StreamOrDevice = .default) -> MLXArray
 
 - [Converting From Python](../converting-python.md)
 
-#### Discussion
+## Discussion
 
 Perform the (possibly batched) matrix multiplication of two arrays. This function supports broadcasting for arrays with more than two dimensions.
 
@@ -39,7 +39,7 @@ let b = MLXArray(converting: [-5.0, 37.5, 4, 7, 1, 0], [2, 3])
 let r = a.matmul(b)
 ```
 
-##### See Also
+### See Also
 
 - [Arithmetic](../arithmetic.md)
 - [`matmul(_:_:stream:)`](../matmul%28_,_,stream%29.md)

@@ -16,7 +16,7 @@ Returns a new extension device with an optional legacy device identifier.
 + (instancetype) deviceWithLocalizedName:(NSString *) localizedName deviceID:(NSUUID *) deviceID legacyDeviceID:(NSString *) legacyDeviceID source:(id<CMIOExtensionDeviceSource>) source;
 ```
 
-#### Return Value
+## Return Value
 
 A new device instance.
 

@@ -20,11 +20,11 @@ func CGShieldingWindowLevel() -> CGWindowLevel
 extern CGWindowLevel CGShieldingWindowLevel();
 ```
 
-#### Return Value
+## Return Value
 
 The window level of the shield window for a captured display.
 
-#### Discussion
+## Discussion
 
 This function returns a value that is sometimes used to position a window over the shield window for a captured display. Attempting to position a window over a captured display may be unsuccessful—or it may present undesirable results such as illegible or invisible content—because of interactions between full-screen graphics (such as OpenGL full-screen drawing contexts) and the graphics hardware. Because of these limitations, this technique is not recommended.
 

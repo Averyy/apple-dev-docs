@@ -25,7 +25,7 @@ case systemExtraLargePortrait
 - [Adding interactivity to widgets and Live Activities](../adding-interactivity-to-widgets-and-live-activities.md)
 - [Preparing widgets for additional platforms, contexts, and appearances](../preparing-widgets-for-additional-contexts-and-appearances.md)
 
-#### Discussion
+## Discussion
 
 The `systemExtraLargePortrait` widget family can appear on the Home Screen on iOS, on the Today View on iOS and iPadOS, on the Desktop on macOS, and on visionOS.  This extra-large widget appears in a portrait orientation, similar to the [`WidgetFamily.systemExtraLargePortrait`](./systemextralargeportrait.md) widget of a visionOS app.
 

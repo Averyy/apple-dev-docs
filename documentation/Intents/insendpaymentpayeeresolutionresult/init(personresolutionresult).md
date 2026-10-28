@@ -23,11 +23,11 @@ init(personResolutionResult: INPersonResolutionResult)
 - (instancetype) initWithPersonResolutionResult:(INPersonResolutionResult *) personResolutionResult;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized resolution result object.
 
-#### Discussion
+## Discussion
 
 Typically, you do not call this method directly. Instead, you use the existing methods to create a resolution result of the appropriate type.
 

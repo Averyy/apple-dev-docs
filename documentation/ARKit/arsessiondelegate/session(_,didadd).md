@@ -20,7 +20,7 @@ optional func session(_ session: ARSession, didAdd anchors: [ARAnchor])
 - (void) session:(ARSession *) session didAddAnchors:(NSArray<__kindof ARAnchor *> *) anchors;
 ```
 
-#### Discussion
+## Discussion
 
 Depending on the session configuration, ARKit may automatically add anchors to a session.
 

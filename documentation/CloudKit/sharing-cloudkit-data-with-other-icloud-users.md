@@ -12,7 +12,7 @@ Create and share private CloudKit data with other users by implementing the shar
 - Mac Catalyst 13.0+
 - Xcode 13.0+
 
-#### Overview
+## Overview
 
 As technology advances, people collaborate with others through cloud-based apps more than ever. They can share digital assets with friends, or invite their colleagues living around the world to work together. To support such use cases, apps need to move user data to the cloud and implement a data-sharing flow that includes features like sharing management, data synchronization, and access control.
 
@@ -20,7 +20,7 @@ This sample demonstrates how to use CloudKit to implement these features by allo
 
 The sample also demonstrates how to create an in-memory cache for a CloudKit record zone. Because of this local cache, the sample doesn’t have to query the server while navigating the UI within the zone.
 
-##### Configure the Sample Code Project
+### Configure the Sample Code Project
 
 Before building the sample, perform the following steps in Xcode:
 
@@ -34,7 +34,7 @@ Before running the sample on a device, configure the device as follows:
 1. Log in with an Apple ID. For the CloudKit private database to synchronize across devices, the Apple ID must be the same on the devices.
 2. Choose Settings > Apple ID > iCloud, and turn on iCloud Drive, if it is off.
 
-##### Create a CloudKit Schema for the App
+### Create a CloudKit Schema for the App
 
 CloudKit apps need to create a schema to define the record types and fields, and [CloudKit Dashboard](http://icloud.developer.apple.com/dashboard/) is the tool for doing that. For more information, see [Inspecting and Editing an iCloud Container’s Schema](./inspecting-and-editing-an-icloud-container-s-schema.md).
 
@@ -58,7 +58,7 @@ cloudkit/designing-and-creating-a-cloudkit-database
 
 For real-world apps that use record types at an earlier phase, like creating a [`CKQuerySubscription`](./ckquerysubscription.md) at the beginning of a launch session, the schema must be ready first.
 
-##### Create and Share a Topic
+### Create and Share a Topic
 
 To create and share a topic with another iCloud user using the sample, follow these steps:
 
@@ -82,7 +82,7 @@ To discover more features in the CloudKit sharing UI:
 newNoteRecord.parent = CKRecord.Reference(record: topicRecord, action: .none)
 ```
 
-##### Share a Record
+### Share a Record
 
 The sample uses [`UICloudSharingController`](../UIKit/uicloudsharingcontroller.md) to implement the sharing flow. Depending on whether the root record is in a shared state, there are different ways to create a sharing controller.
 
@@ -139,7 +139,7 @@ Using the sharing UI, users can send a link, stop sharing the record, change the
 - [`cloudSharingControllerDidStopSharing(_:)`](../UIKit/uicloudsharingcontrollerdelegate/cloudsharingcontrollerdidstopsharing%28_%29.md) — CloudKit calls this method when users stop sharing a record. When this happens, it removes the share and updates the shared topic and notes on the server, so the sample fetches the changes and updates the local cache.
 - [`cloudSharingController(_:failedToSaveShareWithError:)`](../UIKit/uicloudsharingcontrollerdelegate/cloudsharingcontroller%28_,failedtosavesharewitherror%29.md) — CloudKit calls this method when the sharing controller fails to save a share. When this happens, the sample alerts the error and updates the cached root record to avoid an inconsistent status.
 
-##### Maintain a Local Cache of CloudKit Records
+### Maintain a Local Cache of CloudKit Records
 
 To avoid fetching data from the server each time the zone view and topic view are about to appear, the sample caches the zones in the container, and the topics and notes in the current zone. The caches are both in-memory because the sample doesn’t tend to add more complexity by introducing a persistence layer. Real-world apps can persist their cache to avoid doing an initial fetch on each launch.
 

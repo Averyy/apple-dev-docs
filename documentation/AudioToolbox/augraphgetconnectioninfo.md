@@ -15,7 +15,7 @@ Deprecated in OS X v10.5. Instead, use [`AUGraphGetInteractionInfo(_:_:_:)`](./a
 extern OSStatus AUGraphGetConnectionInfo(AUGraph inGraph, UInt32 inConnectionIndex, AUNode *outSourceNode, UInt32 *outSourceOutputNumber, AUNode *outDestNode, UInt32 *outDestInputNumber);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 

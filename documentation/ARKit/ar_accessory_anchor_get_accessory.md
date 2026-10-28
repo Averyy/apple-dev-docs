@@ -15,7 +15,7 @@ Returns the accessory that is being tracked by the anchor.
 extern ar_accessory_tar_accessory_anchor_get_accessory(ar_accessory_anchor_t accessory_anchor);
 ```
 
-#### Return Value
+## Return Value
 
 The accessory.
 

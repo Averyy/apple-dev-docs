@@ -21,7 +21,7 @@ Opens a new file descriptor using the given path and parameters, and creates a s
 static func fileStream(path: FilePath, mode: FileDescriptor.AccessMode, options: FileDescriptor.OpenOptions, permissions: FilePermissions) -> ArchiveByteStream?
 ```
 
-#### Return Value
+## Return Value
 
 A new archive byte stream.
 

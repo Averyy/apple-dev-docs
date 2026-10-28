@@ -19,7 +19,7 @@ func setPeriodicDelay(_ delay: Float, interval: Float)
 - (void) setPeriodicDelay:(float) delay interval:(float) interval;
 ```
 
-#### Discussion
+## Discussion
 
 The delay and interval values are used if the button is configured (by a [`isContinuous`](../nscontrol/iscontinuous.md) message) to continuously send the action message to the target object while tracking the mouse.
 

@@ -34,7 +34,7 @@ optional func photoOutput(_ output: AVCapturePhotoOutput, didFinishProcessingPho
 - [Capturing uncompressed image data](../capturing-uncompressed-image-data.md)
 - [Saving captured photos](../saving-captured-photos.md)
 
-#### Discussion
+## Discussion
 
 Use this method to receive the results of photo capture regardless of format.
 

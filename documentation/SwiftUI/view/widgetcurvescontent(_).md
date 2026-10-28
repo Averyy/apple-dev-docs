@@ -20,7 +20,7 @@ Displays the widget’s content along a curve if the context allows it.
 @preconcurrency func widgetCurvesContent(_ curvesContent: Bool = true) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 The system positions the widget’s content along a curve that follows the corner of the watch face when displaying a [`WidgetFamily.accessoryCorner`](../../WidgetKit/widgetfamily/accessorycorner.md) complication. The widget must use  a  [`widgetLabel(_:)`](./widgetlabel%28_%29-7wguh.md) modifier, and the curving effect modifies only text, SF Symbols, and images.
 

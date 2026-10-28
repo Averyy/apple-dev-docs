@@ -25,7 +25,7 @@ class CBAttribute
 @interface CBAttribute : NSObject
 ```
 
-#### Overview
+## Overview
 
 Concrete subclasses of [`CBAttribute`](./cbattribute.md) (and their mutable counterparts) represent the services a peripheral offers, the characteristics of those services, and the descriptors attached to those characteristics. The concrete subclasses are:
 

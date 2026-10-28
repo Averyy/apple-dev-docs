@@ -10,7 +10,7 @@ framework: "mlx-swift-lm/MLXLMCommon"
 
 Notes on upgrading from mlx-swift-lm 2.x releases.
 
-#### Introduction
+## Introduction
 
 mlx-swift-lm 3.x has breaking API changes from 2.x:
 
@@ -27,11 +27,11 @@ This was done for several reasons:
   - see [Integration Packages](./using.md#Integration-Packages)
 - provide a mechanism to separate the download of weights and the load of weights
 
-#### Selecting a Downloader and Tokenizer
+## Selecting a Downloader and Tokenizer
 
 See [Using mlx-swift-lm](./using.md) for details on selecting a Downloader and a Tokenizer and how to hook these up.
 
-##### Using MLXHuggingFace Macros
+### Using MLXHuggingFace Macros
 
 If using the [MLXHuggingFace Macros](./using.md#MLXHuggingFace-Macros), if you had code like this:
 
@@ -85,7 +85,7 @@ let model = try await loadModelContainer(
 ...
 ```
 
-##### Using Integration Packages
+### Using Integration Packages
 
 If you are using an [Integration Packages](./using.md#Integration-Packages) you would do something similar:
 
@@ -119,7 +119,7 @@ let model = try await loadModelContainer(
 ...
 ```
 
-#### MLXEmbedders
+## MLXEmbedders
 
 MLXEmbedders requires the same [Selecting a Downloader and Tokenizer](./upgrade.md#Selecting-a-Downloader-and-Tokenizer).  Additionally, there are some changes to type names and methods – these now use the same structure and mechanism as MLXLMCommon / MLXLLM.
 
@@ -173,11 +173,11 @@ These types are removed or replaced:
 - `ModelContainer` -> EmbedderModelContainer and EmbedderModelContext (matches LLM/VLM concepts)
 - `load()` free functions -> EmbedderModelFactory
 
-#### Release Notes
+## Release Notes
 
 Detailed release notes.
 
-##### Loading API changes
+### Loading API changes
 
 The core APIs now include a `from:` parameter of type `URL` or `any Downloader` as well as a `using:` parameter for the tokenizer loader. Tokenizer integration packages may supply convenience methods with a default tokenizer loader, allowing you to omit the `using:` parameter.
 
@@ -249,7 +249,7 @@ let container = try await EmbedderModelFactory.shared.loadContainer(
 )
 ```
 
-##### Renamed methods
+### Renamed methods
 
 `decode(tokens:)` is renamed to `decode(tokenIds:)` to align with the `transformers` library in Python:
 
@@ -261,9 +261,9 @@ let text = tokenizer.decode(tokens: ids)
 let text = tokenizer.decode(tokenIds: ids)
 ```
 
-#### Breaking Changes
+## Breaking Changes
 
-##### Loading API
+### Loading API
 
 The `hub` parameter (previously `HubApi`) has been replaced with `from` (any `Downloader` or `URL` for a local directory). Functions that previously defaulted to `defaultHubApi` no longer have a default – callers must pass a `Downloader` explicitly (for example the `#hubDownloader()` macro from `MLXHuggingFace`) or use the `#huggingFaceLoadModelContainer` / `#huggingFaceLoadModel` convenience macros.
 
@@ -271,30 +271,30 @@ For most users who were using the default Hub client, adding `import MLXHuggingF
 
 Users who were passing a custom `HubApi` instance should create a `HuggingFace.HubClient` instead and wrap it with `#hubDownloader(_:)` to pass as the `from` parameter.
 
-##### `ModelConfiguration`
+### `ModelConfiguration`
 
 - `tokenizerId` and `overrideTokenizer` have been replaced by `tokenizerSource: TokenizerSource?`, which supports `.id(String)` for remote sources and `.directory(URL)` for local paths.
 - `preparePrompt` has been removed. This shouldn’t be used anyway, since support for chat templates is available.
 - `modelDirectory(hub:)` has been removed. For local directories, pass the `URL` directly to the loading functions. For remote models, the `Downloader` protocol handles resolution.
 
-##### Tokenizer loading
+### Tokenizer loading
 
 `loadTokenizer(configuration:hub:)` has been removed. Tokenizer loading is now done by the `TokenizerLoader` passed to the load functions. `#huggingFaceTokenizerLoader()` uses `AutoTokenizer.from(modelFolder:)` from Swift Transformers.
 
 `replacementTokenizers` (the `TokenizerReplacementRegistry`) has been removed. To load a tokenizer class that `AutoTokenizer` does not support, pass your own `TokenizerLoader`.
 
-##### `defaultHubApi`
+### `defaultHubApi`
 
 The `defaultHubApi` global has been removed. Hugging Face Hub access is now provided by the `#hubDownloader()` macro from `MLXHuggingFace`, which wraps a default `HuggingFace.HubClient`.
 
-##### Low-level APIs
+### Low-level APIs
 
 - `downloadModel(hub:configuration:progressHandler:)` → `Downloader.download(id:revision:matching:useLatest:progressHandler:)`
 - `loadTokenizerConfig(configuration:hub:)` → `TokenizerLoader.load(from:)`
 - `ModelFactory._load(hub:configuration:progressHandler:)` → `_load(configuration: ResolvedModelConfiguration)`
 - `ModelFactory._loadContainer`: removed (base `loadContainer` now builds the container from `_load`)
 
-##### `UserInput.Image`, `UserInput.Video` and `UserInput.Audio`
+### `UserInput.Image`, `UserInput.Video` and `UserInput.Audio`
 
 These three media types were enums with these cases:
 

@@ -18,7 +18,7 @@ Saves the HotspotManager configuration in the Network Extension preferences.
 final func saveToPreferences() async throws
 ```
 
-#### Discussion
+## Discussion
 
 Only call this method after previously calling [`loadFromPreferences()`](./loadfrompreferences%28%29.md) to load the configuration.
 

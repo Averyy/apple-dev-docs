@@ -25,11 +25,11 @@ func objc_getProtocol(_ name: UnsafePointer<CChar>) -> Protocol?
 extern Protocol *objc_getProtocol(const char *name);
 ```
 
-#### Return Value
+## Return Value
 
 The protocol named `name`, or `NULL` if no protocol named `name` could be found.
 
-#### Discussion
+## Discussion
 
 This function acquires the runtime lock.
 

@@ -21,7 +21,7 @@ The distance to another operation queue scheduler time.
 func distance(to other: OperationQueue.SchedulerTimeType) -> OperationQueue.SchedulerTimeType.Stride
 ```
 
-#### Return Value
+## Return Value
 
 The time interval between this time and the other time.
 

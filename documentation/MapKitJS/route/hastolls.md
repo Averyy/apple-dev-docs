@@ -15,7 +15,7 @@ A Boolean value that indicates whether a route has tolls.
 hasTolls: boolean | null;
 ```
 
-#### Discussion
+## Discussion
 
 When `true`, this route has tolls. If `false`, this route doesn’t have any tolls. If `null`, the route may or may not have tolls.
 

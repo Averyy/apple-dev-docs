@@ -20,7 +20,7 @@ var gridColor: NSColor { get set }
 @property (copy) NSColor * gridColor;
 ```
 
-#### Discussion
+## Discussion
 
 The default color is gray.
 

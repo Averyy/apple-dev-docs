@@ -16,11 +16,11 @@ nonisolated
 func touchBar<Content>(@ContentBuilder content: () -> Content) -> some View where Content : View
 ```
 
-#### Return Value
+## Return Value
 
 A view that contains the Touch Bar content.
 
-#### Discussion
+## Discussion
 
 Use `touchBar(_:)` when you need to dynamically construct items to show in the Touch Bar. The content is displayed by the Touch Bar when appropriate, depending on focus.
 

@@ -17,7 +17,7 @@ The target shapes associated with the body.
 var targetShapes: [ClothBodyComponent.TargetShape]
 ```
 
-#### Discussion
+## Discussion
 
 Target shapes pull the body towards a mix of animatable shapes.
 

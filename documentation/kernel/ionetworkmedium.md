@@ -15,7 +15,7 @@ An object that encapsulates information about a network medium (i.e. 10Base-T, o
 class IONetworkMedium : OSObject
 ```
 
-#### Overview
+## Overview
 
 The main purpose of this object is for a network driver to advertise its media capability, through a collection of IONetworkMedium objects stored in a dictionary in its property table. IONetworkMedium supports serialization, and will encode its properties in the form of a dictionary to the serialization stream when instructed. This will allow a user-space application to browse the set of media types supported by the controller.
 

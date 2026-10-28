@@ -15,7 +15,7 @@ The plug-in formats source code.
 case sourceCodeFormatting
 ```
 
-#### Discussion
+## Discussion
 
 The command used to modify the source code in the package based on a set of rules. Invoked by a `format-source-code` verb to `swift package`.
 

@@ -17,11 +17,11 @@ Randomly zero a portion of the elements during training.
 class Dropout
 ```
 
-#### Overview
+## Overview
 
 The remaining elements are multiplied with `1 / (1-p)` where `p` is the probability of zeroing an element. This is done so the expected value of a given element will remain the same.
 
-##### See Also
+### See Also
 
 - [`Dropout2d`](./dropout2d.md)
 - [`Dropout3d`](./dropout3d.md)

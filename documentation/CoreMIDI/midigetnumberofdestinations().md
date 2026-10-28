@@ -23,7 +23,7 @@ func MIDIGetNumberOfDestinations() -> Int
 extern ItemCount MIDIGetNumberOfDestinations();
 ```
 
-#### Return Value
+## Return Value
 
 The number of destinations in the system, or 0 if an error occurred.
 

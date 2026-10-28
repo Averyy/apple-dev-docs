@@ -24,11 +24,11 @@ convenience init?(textMarkupAttributes: [String : Any] = [:])
 - (instancetype) initWithTextMarkupAttributes:(NSDictionary<NSString *,id> *) textMarkupAttributes;
 ```
 
-#### Return Value
+## Return Value
 
 A text style rule object initialized with the specified attributes.
 
-#### Discussion
+## Discussion
 
 This method sets the [`textSelector`](./textselector.md) property of the style object to `nil`, which causes the rules to be applied to all of the text in the media item.
 

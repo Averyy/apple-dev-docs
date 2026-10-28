@@ -18,7 +18,7 @@ An asynchronous array of items that the data scanner currently recognizes in the
 var recognizedItems: AsyncStream<[RecognizedItem]> { get }
 ```
 
-#### Discussion
+## Discussion
 
 You can use this property instead of the [`DataScannerViewControllerDelegate`](../datascannerviewcontrollerdelegate.md) protocol methods to track the recognized items in real time. To get the changes between arrays, use the [`difference(from:)`](../../Swift/array/difference%28from%29.md) method. For more information on asynchronous streams, see [Concurrency](../../Swift/concurrency.md).
 

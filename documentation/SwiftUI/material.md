@@ -21,7 +21,7 @@ A background material type.
 struct Material
 ```
 
-#### Overview
+## Overview
 
 You can apply a blur effect to a view that appears behind another view by adding a material with the [`background(_:ignoresSafeAreaEdges:)`](./view/background%28_,ignoressafeareaedges%29.md) modifier:
 

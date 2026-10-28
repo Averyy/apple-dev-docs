@@ -24,7 +24,7 @@ var font: CFTypeRef? { get set }
 @property (nullable) CFTypeRef font;
 ```
 
-#### Discussion
+## Discussion
 
 May be either a [`CTFont`](../../CoreText/ctfont.md), a [`CGFont`](../../CoreGraphics/cgfont.md), an instance of `NSFont` (macOS only), or a string naming the font. In iOS, you cannot assign a [`UIFont`](../../UIKit/uifont.md) object to this property. Defaults to Helvetica.
 

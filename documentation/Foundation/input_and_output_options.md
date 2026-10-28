@@ -5,7 +5,7 @@
 
 Input and output options specifically intended for `NSXMLDocument` objects.
 
-#### Overview
+## Overview
 
 Because `NSXMLDocument` is a subclass of [`XMLNode`](./xmlnode.md), you can also use the relevant input and output options described in Constants in the `NSXMLNode` class reference. You can specify input options in the `NSXMLDocument` methods [`init(contentsOf:options:)`](./xmldocument/init%28contentsof,options%29.md), [`init(data:options:)`](./xmldocument/init%28data,options%29.md), [`init(xmlString:options:)`](./xmldocument/init%28xmlstring,options%29-65m2r.md). The [`xmlData(options:)`](./xmldocument/xmldata%28options%29.md) method takes output options.
 

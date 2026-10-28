@@ -21,7 +21,7 @@ class MPMediaPickerController
 @interface MPMediaPickerController : UIViewController
 ```
 
-#### Overview
+## Overview
 
 An [`MPMediaPickerController`](./mpmediapickercontroller.md) object, or media item picker, is a specialized view controller that you employ to provide a graphical interface for selecting media items. To display a media item picker, present it modally on an existing view controller. Presenting an [`MPMediaPickerController`](./mpmediapickercontroller.md) in non-modal mode; for example, pushing a [`MPMediaPickerController`](./mpmediapickercontroller.md) onto an existing [`UINavigationController`](../UIKit/uinavigationcontroller.md) stack causes your app to crash. [`MPMediaItem`](./mpmediaitem.md) describes media items.
 

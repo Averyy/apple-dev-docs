@@ -16,7 +16,7 @@ A provider object for USB devices that support HID interactions.
 class IOUserUSBHostHIDDevice;
 ```
 
-#### Overview
+## Overview
 
 An `IOUserUSBHostHIDDevice` object is a fully functional provider object that represents a USB-based HID device. Typically, you don’t create `IOUserUSBHostHIDDevice` objects directly. Instead, you specify that your driver relies on an `IOUserUSBHostHIDDevice` as its provider, and the system creates the interface object for you during the matching process.
 
@@ -24,7 +24,7 @@ When implementing a custom driver, use this provider object to manage the connec
 
 Subclass `IOUserUSBHostHIDDevice` only when you want to customize the interactions with the USB device. For example, you might use a custom subclass to initialize the USB device in a particular way or support a custom transport mechanism. You can also use a custom subclass to perform additional processing on the report data.
 
-##### Specify the Driver’s Personality Information
+### Specify the Driver’s Personality Information
 
 When you subclass `IOUserUSBHostHIDDevice`, update the `IOKitPersonalities` key of your driver extension’s `Info.plist` file with information to match your driver to appropriate hardware. For this class, always include the keys and values in the following table.
 

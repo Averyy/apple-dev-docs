@@ -23,7 +23,7 @@ var isAuthenticationRequired: Bool { get set }
 @property (nonatomic, assign, getter=isAuthenticationRequired) BOOL authenticationRequired;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is ignored and treated as a value of [`true`](../../Swift/true.md) when the value of the [`activationMode`](./activationmode.md) property is set to [`UIMutableUserNotificationAction`](../uimutableusernotificationaction.md).
 

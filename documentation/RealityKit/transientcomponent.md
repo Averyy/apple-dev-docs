@@ -20,7 +20,7 @@ An interface for components that aren’t saved to file or cloned.
 protocol TransientComponent : Component
 ```
 
-#### Overview
+## Overview
 
 Components that conform to the [`TransientComponent`](./transientcomponent.md) protocol aren’t included when RealityKit serializes its owning entity to save it to a file. Similarly, when you clone an entity, any transient components on that entity aren’t copied to the clone.
 

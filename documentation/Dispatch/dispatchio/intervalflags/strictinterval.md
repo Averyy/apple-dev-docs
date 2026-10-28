@@ -21,7 +21,7 @@ Enqueue handlers for a channel at strict intervals regardless of how much data h
 static let strictInterval: DispatchIO.IntervalFlags
 ```
 
-#### Discussion
+## Discussion
 
 Setting this flag can lead to the handler being called even if the amount of data does not exceed the channel’s low-water mark.
 

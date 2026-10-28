@@ -25,7 +25,7 @@ init(url: URL, format: AVAudioFormat) throws
 - (instancetype) initWithURL:(NSURL *) url format:(AVAudioFormat *) format error:(NSError **) outError;
 ```
 
-#### Return Value
+## Return Value
 
 A new audio recorder, or [`nil`](../../ObjectiveC/nil-227m0.md) if an error occurred.
 

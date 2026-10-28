@@ -23,7 +23,7 @@ var alignmentRectInsets: UIEdgeInsets { get }
 @property (nonatomic, readonly) UIEdgeInsets alignmentRectInsets;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is an [`UIEdgeInsets`](../uiedgeinsets.md) structure with zero values. Custom views that draw ornamentation around their content should use this property to return insets that align with the edges of the content, excluding the ornamentation. This allows the constraint-based layout system to align views based on their content, rather than just their frame.
 

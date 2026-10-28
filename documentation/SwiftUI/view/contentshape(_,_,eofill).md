@@ -26,11 +26,11 @@ func contentShape<S>(_ kind: ContentShapeKinds, _ shape: S, eoFill: Bool = false
 
 - [Making a view into a drag source](../making-a-view-into-a-drag-source.md)
 
-#### Return Value
+## Return Value
 
 A view that uses the given shape for the specified kind.
 
-#### Discussion
+## Discussion
 
 The content shape has a variety of uses. You can control the kind of the content shape by specifying one in `kind`. The following example sets the focus ring shape of the view, without affecting its shape for hit-testing:
 
@@ -41,7 +41,7 @@ MyFocusableView()
 
 You can apply multiple kinds of content shapes to the same view. For example, apply a [`interaction`](../contentshapekinds/interaction.md) shape and [`focusEffect`](../contentshapekinds/focuseffect.md) shape together to set both the hit-testing shape and focus ring shape on a view.
 
-#### Context Menu & Drag Previews
+## Context Menu & Drag Previews
 
 You can control the preview shown by the system for context menus or drags using the relevant content shape kind, like [`dragPreview`](../contentshapekinds/dragpreview.md) and [`contextMenuPreview`](../contentshapekinds/contextmenupreview.md).
 

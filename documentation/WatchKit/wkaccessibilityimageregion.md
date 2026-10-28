@@ -19,7 +19,7 @@ class WKAccessibilityImageRegion
 @interface WKAccessibilityImageRegion : NSObject
 ```
 
-#### Overview
+## Overview
 
 The accessibility image region object defines the portion of the image that you want to call out separately and the label you want to apply to that region. Use an accessibility image region object in conjunction with any interface object that displays an image, either as part of its foreground or background content. Register your custom regions using the [`setAccessibilityImageRegions(_:)`](./wkinterfaceobject/setaccessibilityimageregions%28_%29.md) method of the corresponding interface object.
 

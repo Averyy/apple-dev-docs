@@ -21,7 +21,7 @@ An element of the reflected instance’s structure.
 typealias Child = (label: String?, value: Any)
 ```
 
-#### Discussion
+## Discussion
 
 When the `label` component in not `nil`, it may represent the name of a stored property or an active `enum` case. If you pass strings to the `descendant(_:_:)` method, labels are used for lookup.
 

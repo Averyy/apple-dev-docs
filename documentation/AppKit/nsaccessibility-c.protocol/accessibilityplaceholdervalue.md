@@ -15,7 +15,7 @@ The placeholder value for the accessibility element.
 @property (copy, nullable) NSString * accessibilityPlaceholderValue;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property for accessibility elements that support placeholder values, such as text fields.
 

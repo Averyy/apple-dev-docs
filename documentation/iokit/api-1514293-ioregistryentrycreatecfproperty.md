@@ -23,11 +23,11 @@ func IORegistryEntryCreateCFProperty(_ entry: io_registry_entry_t, _ key: CFStri
 CFTypeRef IORegistryEntryCreateCFProperty(io_registry_entry_t entry, CFStringRef key, CFAllocatorRef allocator, IOOptionBits options);
 ```
 
-#### Return Value
+## Return Value
 
 A CF container is created and returned the caller on success. The caller should release with CFRelease.
 
-#### Discussion
+## Discussion
 
 This function creates an instantaneous snapshot of a registry entry property, creating a CF container analogue in the caller's task. Not every object available in the kernel is represented as a CF container; currently OSDictionary, OSArray, OSSet, OSSymbol, OSString, OSData, OSNumber, OSBoolean are created as their CF counterparts.
 

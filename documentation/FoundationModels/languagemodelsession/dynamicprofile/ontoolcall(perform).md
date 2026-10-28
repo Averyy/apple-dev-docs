@@ -31,7 +31,7 @@ func onToolCall(perform action: nonisolated(nonsending) sending @escaping (Trans
 
 - [Composing dynamic sessions with instructions and profiles](../../composing-dynamic-sessions-with-instructions-and-profiles.md)
 
-#### Discussion
+## Discussion
 
 When the `onToolCall` closure throws an error, the caller’s `respond` or `response` propagates that error.
 

@@ -26,7 +26,7 @@ func discardRecording(handler: @escaping () -> Void)
 - (void) discardRecordingWithHandler:(void (^)()) handler;
 ```
 
-#### Discussion
+## Discussion
 
 [`discardRecording(handler:)`](./discardrecording%28handler%29.md) can only be called after the handler block in [`stopRecording(handler:)`](./stoprecording%28handler%29.md) has been called. Use the `handler` block to do any required cleanup, including setting any `RPPreviewScreenController` references to `nil`.
 

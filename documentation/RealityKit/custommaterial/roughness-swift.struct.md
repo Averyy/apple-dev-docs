@@ -19,7 +19,7 @@ An object that defines how the surface of an entity scatters the light it reflec
 struct Roughness
 ```
 
-#### Overview
+## Overview
 
 In physically based rendering, the `roughness` property represents how much the surface of an entity scatters the light it reflects. A material with a high roughness has a matte appearance, whereas one with a low roughness has a shiny appearance.
 

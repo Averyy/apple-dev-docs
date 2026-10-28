@@ -18,7 +18,7 @@ let kCGWindowOwnerName: CFString
 extern CFStringRef const kCGWindowOwnerName;
 ```
 
-#### Discussion
+## Discussion
 
 The key that identifies the name of the application that owns the window. The value for this key is a [`CFString`](../CoreFoundation/cfstring.md) type.
 

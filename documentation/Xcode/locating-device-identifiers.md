@@ -5,13 +5,13 @@
 
 Get the unique identifier for a device before registering it in your developer account.
 
-#### Overview
+## Overview
 
 To register one or more devices using your developer account, you first collect the device identifiers. Typically, you register multiple devices using your developer account to test your app internally before uploading builds to App Store Connect. Later, you can use TestFlight to distribute beta builds to testers without needing to register their devices.
 
 For more information on distributing your app to a limited set of people on known devices, see [Distributing your app to registered devices](./distributing-your-app-to-registered-devices.md).
 
-#### Locate device identifiers using Device Hub
+## Locate device identifiers using Device Hub
 
 For iOS, iPadOS, tvOS, visionOS, and watchOS devices, you can use Device Hub to get identifiers. If the physical device doesn’t appear in Device Hub, pair it with your Mac as described in [Managing your simulated and physical devices in Device Hub](./managing-your-simulated-and-physical-devices-in-device-hub.md).
 
@@ -23,7 +23,7 @@ For iOS, iPadOS, tvOS, visionOS, and watchOS devices, you can use Device Hub to 
 
 If the UDID field doesn’t appear, click Edit Visibility at the bottom of the inspector. Toggle on the UDID property and others that you want to show and toggle off properties you want to hide. Click Done.
 
-#### Locate device identifiers using Finder
+## Locate device identifiers using Finder
 
 For iOS, iPadOS, tvOS, visionOS, and watchOS devices, you can use Finder to get identifiers without pairing the devices with your Mac using Device Hub.
 
@@ -35,7 +35,7 @@ For iOS, iPadOS, tvOS, visionOS, and watchOS devices, you can use Finder to get 
 
 If the Locations section doesn’t appear in Finder, see [Customize the Finder toolbar and sidebar on Mac](https://support.apple.com/guide/mac-help/customize-finder-toolbar-sidebar-mac-mchlp3011/mac).
 
-#### Locate Mac device identifiers using System Information
+## Locate Mac device identifiers using System Information
 
 Use System Information if you want to register a Mac that you don’t use for development.
 

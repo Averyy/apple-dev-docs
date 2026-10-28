@@ -20,7 +20,7 @@ Replaces all payload arcs with the specified list.
 func set(_ payloads: [USDPrim.Payload]) throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if the payloads cannot be set.
 

@@ -20,7 +20,7 @@ An interface that you implement to interact with a drop operation in a view modi
 @preconcurrency protocol DropDelegate
 ```
 
-#### Overview
+## Overview
 
 The [`DropDelegate`](./dropdelegate.md) protocol provides a comprehensive and flexible way to interact with a drop operation. Specify a drop delegate when you modify a view to accept drops with the [`onDrop(of:delegate:)`](./view/ondrop%28of,delegate%29.md) method.
 

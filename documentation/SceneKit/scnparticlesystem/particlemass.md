@@ -25,7 +25,7 @@ var particleMass: CGFloat { get set }
 @property (nonatomic) CGFloat particleMass;
 ```
 
-#### Discussion
+## Discussion
 
 A particle’s mass determines its resistance to forces. The effects of the [`dampingFactor`](./dampingfactor.md) property and any [`SCNPhysicsField`](../scnphysicsfield.md) objects affecting each particle are proportional to its mass. You can randomize the masses of particles in the system with the [`particleMassVariation`](./particlemassvariation.md) property.
 

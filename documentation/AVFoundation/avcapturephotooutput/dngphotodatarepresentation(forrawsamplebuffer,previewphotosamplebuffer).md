@@ -23,11 +23,11 @@ class func dngPhotoDataRepresentation(forRawSampleBuffer rawSampleBuffer: CMSamp
 + (NSData *) DNGPhotoDataRepresentationForRawSampleBuffer:(CMSampleBufferRef) rawSampleBuffer previewPhotoSampleBuffer:(CMSampleBufferRef) previewPhotoSampleBuffer;
 ```
 
-#### Return Value
+## Return Value
 
 A data object containing a DNG representation of the requested photo capture results, or `nil` if the sample buffers cannot be packaged for output.
 
-#### Discussion
+## Discussion
 
 After you request a photo capture with the [`capturePhoto(with:delegate:)`](./capturephoto%28with,delegate%29.md) method, the photo capture output delivers results to your delegate as one or more [`CMSampleBuffer`](../../CoreMedia/cmsamplebuffer.md) objects. (See the [`photoOutput(_:didFinishProcessingRawPhoto:previewPhoto:resolvedSettings:bracketSettings:error:)`](../avcapturephotocapturedelegate/photooutput%28_,didfinishprocessingrawphoto,previewphoto,resolvedsettings,bracketsettings,error%29.md) method.) To repackage the sample buffer’s content for output as a DNG file, use this class method. Optionally, you can include metadata in the resulting DNG output by attaching it to the sample buffer before calling this method.
 

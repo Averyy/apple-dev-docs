@@ -22,7 +22,7 @@ var isSidebarDestination: Bool { get set }
 @property (nonatomic, assign) BOOL isSidebarDestination;
 ```
 
-#### Discussion
+## Discussion
 
 By default, tab groups are not destinations when displayed in the sidebar, and cannot be selected directly by users. When enabled, the tab group becomes a selectable item in the sidebar, and will no longer perform automatic selection for a default child if no child is currently selected. The default value is NO.
 

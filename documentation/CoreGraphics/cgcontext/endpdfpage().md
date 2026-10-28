@@ -25,7 +25,7 @@ func endPDFPage()
 extern void CGPDFContextEndPage(CGContextRef context);
 ```
 
-#### Discussion
+## Discussion
 
 You can call [`endPDFPage()`](./endpdfpage%28%29.md) only after you call the function [`beginPDFPage(_:)`](./beginpdfpage%28_%29.md).
 

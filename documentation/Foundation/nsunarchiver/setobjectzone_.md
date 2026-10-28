@@ -16,7 +16,7 @@ Sets the memory zone used to allocate decoded objects.
 - (void) setObjectZone:(NSZone *) zone;
 ```
 
-#### Discussion
+## Discussion
 
 If `zone` is `nil`, or if this method is never invoked, the default zone is used, as given by `NSDefaultMallocZone()`.
 

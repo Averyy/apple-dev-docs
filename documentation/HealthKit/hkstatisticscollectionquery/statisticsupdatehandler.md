@@ -24,7 +24,7 @@ var statisticsUpdateHandler: (@Sendable (HKStatisticsCollectionQuery, HKStatisti
 @property (nonatomic, copy, nullable) void (^statisticsUpdateHandler)(HKStatisticsCollectionQuery *query, HKStatistics *statistics, HKStatisticsCollection *collection, NSError *error);
 ```
 
-#### Discussion
+## Discussion
 
 If this property is set to `nil`, the statistics collection query will automatically stop as soon as it has finished calculating the initial results. If this property is not `nil`, the query behaves similarly to the observer query. It continues to run, monitoring the HealthKit store. If any new, matching samples are saved to the store—or if any of the existing matching samples are deleted from the store—the query executes the update handler on a background queue.
 

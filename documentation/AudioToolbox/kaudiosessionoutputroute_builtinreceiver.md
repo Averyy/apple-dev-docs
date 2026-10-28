@@ -22,7 +22,7 @@ let kAudioSessionOutputRoute_BuiltInReceiver: CFString!
 extern CFStringRef const kAudioSessionOutputRoute_BuiltInReceiver;
 ```
 
-#### Discussion
+## Discussion
 
 Some iOS devices do not have this output.
 

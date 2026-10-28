@@ -21,7 +21,7 @@ The set of approved and enabled app extensions.
 var identities: [AppExtensionIdentity] { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to get the set of app extensions your host app can currently load.
 

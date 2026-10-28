@@ -23,7 +23,7 @@ class func pictureInPictureButtonStartImage(compatibleWith traitCollection: UITr
 + (UIImage *) pictureInPictureButtonStartImageCompatibleWithTraitCollection:(UITraitCollection *) traitCollection;
 ```
 
-#### Return Value
+## Return Value
 
 A system-default template image.
 

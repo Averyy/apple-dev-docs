@@ -10,7 +10,7 @@ Interact with detailed 3D models using manipulation and clipping controls.
 - visionOS 27.0+
 - Xcode 27.0+
 
-#### Overview
+## Overview
 
 This sample loads a structured 3D model, such as an engine assembly, into an immersive space and provides the tools to take it apart and look inside. The sample highlights two RealityKit components:
 
@@ -21,7 +21,7 @@ This sample loads a structured 3D model, such as an engine assembly, into an imm
 
 > **Note**: This sample code project is associated with WWDC26 session 284: [Collaborate on structured 3D models in visionOS](https://developer.apple.com/videos/play/wwdc2026/284).
 
-#### Choose a model and display controls
+## Choose a model and display controls
 
 When the app launches, `ContentView` offers two ways to bring in a model: open the bundled engine model, or pick an external USD with the system file importer.
 
@@ -67,7 +67,7 @@ private func makeControlsEntity() -> Entity {
 
 `ImmersiveControlsView` arranges the controls in a capsule along the bottom of the view, and includes an exit button, the primary model actions (lock, expand, and clipping), and a button that toggles the model hierarchy panel. The following sections discuss these primary actions.
 
-#### Load a model and make it manipulable
+## Load a model and make it manipulable
 
 The sample loads a model from a URL and configures it for interaction in one place. It creates the entity with [`init(contentsOf:withName:)`](./entity/init%28contentsof,withname%29.md), then attaches a collision shape to each part so gestures can find them, adds a [`ManipulationComponent`](./manipulationcomponent.md) so a person can move, rotate, and scale the model with their hands, and adds the input and hover components that gestures depend on. For other ways to bring a model into your app, see [Loading entities from a file](./loading-entities-from-a-file.md).
 
@@ -181,7 +181,7 @@ private func loadModel(from url: URL, into content: RealityViewContent) async {
 
 For more information about configuring entities for direct manipulation, see [Manipulating entities with solid collisions](../visionOS/manipulating-entities-with-solid-collisions.md).
 
-#### Lock and unlock the model
+## Lock and unlock the model
 
 The locking control locks and unlocks the model. The model starts locked, with the [`ManipulationComponent`](./manipulationcomponent.md) on the root so the whole assembly moves as one. Unlocking moves manipulation onto the individual parts instead. The `toggleModelLock()` method alternates between these two configurations.
 
@@ -219,7 +219,7 @@ func openAssembly() {
 
 Locking the model again reverses the process: `closeAssembly()` removes those components from the parts and restores them on the root, so the model moves as a single object with its internal layout intact. The geometry and the hierarchy never change; only where the components live in the tree does. The sample identifies the parts with `assemblyParent`, which descends to the first entity with more than one part — the parts a person manipulates when the model is unlocked.
 
-#### Expand and collapse the model
+## Expand and collapse the model
 
 The expansion control expands the assembly, then collapses it back. Expanding also unlocks the model, and collapsing re-locks it. The `toggleModelExpansion()` method handles both directions.
 
@@ -253,7 +253,7 @@ func toggleModelExpansion() {
 
 Before expanding, the app records each part’s transform so it can animate the pieces home later. Expanding delegates to the model entity’s `expandAlongPrimaryAxis(offset:)`, which chooses a direction and lays out the parts along it. Collapsing moves each part back to its saved transform with [`move(to:relativeTo:duration:timingFunction:)`](./hastransform/move%28to,relativeto,duration,timingfunction%29.md) before locking it again.
 
-#### Choose the expansion axis
+## Choose the expansion axis
 
 To expand the assembly, the sample first determines an expansion axis. The `findOptimalAxisForExpansion()` method chooses the axis along which the parts are most spread out, weighting each part by its bounding-box volume so large structural components count for more than small pieces.
 
@@ -311,7 +311,7 @@ private func calculateVolumeWeightedPositionVariance() -> SIMD3<Float> {
 }
 ```
 
-#### Animate the parts into place
+## Animate the parts into place
 
 With an axis chosen, `layoutChildren(along:additionalOffset:)` sorts the parts along that direction and positions each one just past the previous part. The method adds a small gap between the parts that stays visually consistent at any model scale. It animates each part with a [`FromToByAction`](./fromtobyaction.md) in [`FromToByAction.TransformMode.scene`](./fromtobyaction/transformmode/scene.md) mode, so the motion stays correct even if a person moves or rotates the model midanimation.
 
@@ -340,7 +340,7 @@ private func animateChild(_ child: Entity, along axis: Axis3D, delta: Float) {
 
 Because each part already carries a [`ManipulationComponent`](./manipulationcomponent.md) whose [`releaseBehavior`](./manipulationcomponent/releasebehavior-swift.property.md) is [`stay`](./manipulationcomponent/releasebehavior-swift.struct/stay.md), it holds its new position when the animation finishes and a person grabs it. Locking remains available while expanding the model to allow re-locking the expanded view and repositioning it as a single unit.
 
-#### Clip through the model with planes
+## Clip through the model with planes
 
 The clipping control slices through the model so a person can see a cross section of its interior. The sample drives clipping as a three-state machine (off, active, and editing) stored on the entity, through a `clippingState` accessor. Changing the state adds or removes a [`ClippingComponent`](./clippingcomponent.md) and caches the current bounds.
 
@@ -403,7 +403,7 @@ func clipEntity(_ model: Entity) throws {
 }
 ```
 
-#### Convert a drag into a bounds change
+## Convert a drag into a bounds change
 
 Each plane controls one scalar value of the bounding box, so dragging a plane moves it only along the axis normal to its face. The drag gesture arrives in the plane’s local coordinate space, but the clipping bounds live in the model’s space. The sample converts the drag delta into world space, then projects it onto the plane’s constrained direction so it discards any motion not perpendicular to the face.
 
@@ -466,7 +466,7 @@ private func trimmedBoundingBox(_ constrainedDeltaInWorld: SIMD3<Float>, _ posit
 }
 ```
 
-#### Sync the clipping planes to the model
+## Sync the clipping planes to the model
 
 While a clip is active, the model and its plane controls are separate entities. The planes have to follow whenever the model moves. The sample uses a [`System`](./system.md) rather than a one-shot observer so the update runs every frame and the planes track the model without a frame of lag.
 
@@ -508,7 +508,7 @@ final class ClippingTransformSyncSystem: System {
 
 The system matches every entity that carries a `ClippingTransformSyncComponent` using an [`EntityQuery`](./entityquery.md), then copies the entity’s transform onto its clipping control. It writes the transform only when it actually changes, which avoids sending unnecessary change notifications each frame. The app registers the system once at startup, in the `AppModel` initializer, before any scene runs. For more information about systems and queries, see [Implementing systems for entities in a scene](./implementing-systems-for-entities-in-a-scene.md).
 
-#### View the model hierarchy
+## View the model hierarchy
 
 The hierarchy control toggles a panel that lists the model’s structure, so a person can see the asset’s organization and identify which components can be separated. `EntityHierarchyView` renders the loaded entity’s descendants with an [`OutlineGroup`](../SwiftUI/outlinegroup.md) view.
 

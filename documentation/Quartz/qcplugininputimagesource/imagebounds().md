@@ -22,7 +22,7 @@ func imageBounds() -> NSRect
 - (NSRect) imageBounds;
 ```
 
-#### Return Value
+## Return Value
 
 The bounds of the image source.
 

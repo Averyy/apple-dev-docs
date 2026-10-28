@@ -12,7 +12,7 @@ inline void setDMACommand(
  IODMACommand *dma_command ) ;
 ```
 
-#### Return Value
+## Return Value
 
 none
 

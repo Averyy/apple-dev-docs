@@ -5,7 +5,7 @@
 
 Update Exposure Notifications configuration values from a Public Health Authority’s server.
 
-#### Overview
+## Overview
 
 The Exposure Notifications feature reads configuration values to customize behavior for each region based on values provided by that region’s Public Health Authority (PHA). PHAs can push changes to these configuration values from their servers using the Exposure Notifications server-to-server API. A PHA might use the server-to-server API, for example, to automate changes under certain conditions, such as changing the polling interval when experiencing unusually high activity, or providing a configuration portal hosted on their own servers.
 

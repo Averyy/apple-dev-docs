@@ -20,7 +20,7 @@ let NSTypeIdentifierDateText: String
 extern NSString * const NSTypeIdentifierDateText;
 ```
 
-#### Discussion
+## Discussion
 
 UTI subtype for [`date`](../Foundation/nstextcheckingresult/date.md), `com.apple.structured-text.date`.
 

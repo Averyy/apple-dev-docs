@@ -25,7 +25,7 @@ struct AudioSearch
 
 - [Responding to audio search and playback requests](./responding-to-audio-search-and-playback-requests.md)
 
-#### Overview
+## Overview
 
 People use Apple Intelligence and Siri to find and play audio. By integrating your app’s audio catalog with Apple Intelligence and Siri using the [App Intents](../AppIntents/AppIntents.md) framework, the system forwards search and playback requests to your app, and your app returns audio search results and allows the system to play your app’s songs, podcasts, audiobooks, and so on.
 

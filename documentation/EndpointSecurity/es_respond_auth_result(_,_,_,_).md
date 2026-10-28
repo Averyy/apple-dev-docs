@@ -19,7 +19,7 @@ func es_respond_auth_result(_ client: OpaquePointer, _ message: UnsafePointer<es
 extern es_respond_result_t es_respond_auth_result(es_client_t *client, const es_message_t *message, es_auth_result_t result, bool cache);
 ```
 
-#### Return Value
+## Return Value
 
 A result that indicates whether the response succeeded or failed.
 

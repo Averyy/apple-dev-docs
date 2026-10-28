@@ -19,7 +19,7 @@ final let primaryUsage: HIDUsage
 
 - [Communicating with human interface devices](../communicatingwithhiddevices.md)
 
-#### Discussion
+## Discussion
 
 This is the main usage for the device, pulled from the top level collection of the report descriptor, specifying the general device type.
 

@@ -19,11 +19,11 @@ init(asset: MDLAsset, divisions: Int32, interiorShells: Int32, exteriorShells: I
 - (instancetype) initWithAsset:(MDLAsset *) asset divisions:(int) divisions interiorShells:(int) interiorShells exteriorShells:(int) exteriorShells patchRadius:(float) patchRadius;
 ```
 
-#### Return Value
+## Return Value
 
 A new voxel array.
 
-#### Discussion
+## Discussion
 
 When you create a voxel array from an asset, Model I/O analyzes any meshes contained in the asset to determine the volume of the 3D objects modeled by those meshes. This initializer discretizes that volume by dividing the asset’s [`boundingBox`](../mdlasset/boundingbox.md) coordinates into a three-dimensional grid. The `divisions` parameter determines the height of the grid in voxels. Because single voxel is a cubic unit, the width and depth of the grid in voxels is proportional to its height and the bounding box of the asset.
 

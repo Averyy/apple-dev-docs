@@ -25,7 +25,7 @@ case cannotStartRecording
 AVAudioSessionErrorCodeCannotStartRecording
 ```
 
-#### Discussion
+## Discussion
 
 This error type usually occurs when an app starts a mixable recording from the background and it isn’t configured as an Inter-App Audio app.
 

@@ -15,7 +15,7 @@ An array of route objects.
 routes: Route[];
 ```
 
-#### Discussion
+## Discussion
 
 The server returns up to three [`Route`](../route.md) objects in the array.
 

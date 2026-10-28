@@ -14,7 +14,7 @@ A string bundle ID that identifies the corresponding content blocker extension o
 - **Name**: `SFSafariCorrespondingIOSExtensionBundleIdentifier` (Safari - Associated iOS Extension Bundle Identifier)
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 To enable extension syncing for your macOS content blocker extension or Safari web extension, specify the bundle ID of the corresponding iOS content blocker extension or Safari web extension.
 

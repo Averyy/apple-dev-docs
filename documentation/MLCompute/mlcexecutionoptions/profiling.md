@@ -23,7 +23,7 @@ static var profiling: MLCExecutionOptions { get }
 MLCExecutionOptionsProfiling
 ```
 
-#### Discussion
+## Discussion
 
 Include this option to return profiling information in the graph execute completion handler callback, including device execution time.
 

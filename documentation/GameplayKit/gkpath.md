@@ -24,7 +24,7 @@ class GKPath
 @interface GKPath : NSObject
 ```
 
-#### Overview
+## Overview
 
 To make an agent move to or stay within the area defined by a path, create a goal with the [`init(toStayOn:maxPredictionTime:)`](./gkgoal/init%28tostayon,maxpredictiontime%29.md) method; to make an agent traverse along a path, create a goal with the [`init(toFollow:maxPredictionTime:forward:)`](./gkgoal/init%28tofollow,maxpredictiontime,forward%29.md) method.
 

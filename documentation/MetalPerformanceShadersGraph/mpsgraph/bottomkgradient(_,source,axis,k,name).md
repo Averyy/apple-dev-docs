@@ -24,11 +24,11 @@ func bottomKGradient(_ gradient: MPSGraphTensor, source: MPSGraphTensor, axis: I
 - (MPSGraphTensor *) bottomKWithGradientTensor:(MPSGraphTensor *) gradient source:(MPSGraphTensor *) source axis:(NSInteger) axis k:(NSUInteger) k name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor object.
 
-#### Discussion
+## Discussion
 
 Finds the K smallest values along the minor dimension of the input. The input must have at least K elements along its minor dimension.
 

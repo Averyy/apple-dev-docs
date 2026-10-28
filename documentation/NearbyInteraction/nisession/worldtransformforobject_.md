@@ -17,11 +17,11 @@ Returns a world transform to integrate a nearby object in an AR experience.
 - (simd_float4x4) worldTransformForObject:(NINearbyObject *) object;
 ```
 
-#### Return Value
+## Return Value
 
 A world transform in ARKit’s coordinate space.
 
-#### Discussion
+## Discussion
 
 This [ARKit](../../ARKit/ARKit.md) transform represents the given object’s position in the physical environment, if it’s available. Otherwise, this function returns [`NINearbyObjectWorldTransformNotAvailable`](../ninearbyobjectworldtransformnotavailable.md).
 

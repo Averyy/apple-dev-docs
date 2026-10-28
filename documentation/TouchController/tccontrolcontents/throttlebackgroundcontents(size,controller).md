@@ -21,7 +21,7 @@ class func throttleBackgroundContents(size: CGSize, controller: TCTouchControlle
 + (TCControlContents *) throttleBackgroundContentsOfSize:(CGSize) size controller:(TCTouchController *) controller;
 ```
 
-#### Return Value
+## Return Value
 
 The `TCControlContents` for the throttle background.
 

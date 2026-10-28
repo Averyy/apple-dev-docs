@@ -23,7 +23,7 @@ struct HangDiagnostic
 
 - [Monitoring app performance with MetricKit](./monitoring-app-performance-with-metrickit.md)
 
-#### Discussion
+## Discussion
 
 This carries a [`CallStackTree`](./callstacktree.md) captured at the time of the hang, and a `hangDuration` measurement that reports how long the main thread was blocked.
 

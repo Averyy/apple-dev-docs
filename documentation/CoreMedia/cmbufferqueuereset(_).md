@@ -25,11 +25,11 @@ func CMBufferQueueReset(_ queue: CMBufferQueue) -> OSStatus
 extern OSStatus CMBufferQueueReset(CMBufferQueueRef queue);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See `Result Codes`.
 
-#### Discussion
+## Discussion
 
 All buffers in the queue are released.  Triggers are not removed, however, and will be called appropriately as the queue duration goes to zero.
 

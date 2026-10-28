@@ -21,7 +21,7 @@ A unit to use in formatting a duration.
 struct Unit
 ```
 
-#### Overview
+## Overview
 
 Supported units range from hours to nanoseconds. Use these with the `allowed` parameter of the [`Duration.UnitsFormatStyle`](../unitsformatstyle.md) initializers to specify which units to use in a formatted string.
 

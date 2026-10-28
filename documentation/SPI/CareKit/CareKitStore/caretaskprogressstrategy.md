@@ -17,7 +17,7 @@ A structure that provides access to various strategies for computing progress fo
 struct CareTaskProgressStrategy<Progress> where Progress : CareTaskProgress
 ```
 
-#### Overview
+## Overview
 
 This structure is most commonly used when you already have access to an event and want to specify a strategy for computing progress:
 

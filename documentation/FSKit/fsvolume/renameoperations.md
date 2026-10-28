@@ -19,7 +19,7 @@ protocol RenameOperations : NSObjectProtocol
 @protocol FSVolumeRenameOperations <NSObject>
 ```
 
-#### Overview
+## Overview
 
 > **Deprecated**: Use [`FSVolume.RenameHandler`](./renamehandler.md) instead.
 

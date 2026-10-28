@@ -13,7 +13,7 @@
 class AXObserver
 ```
 
-#### Overview
+## Overview
 
 An AXObserverRef is a CFType. Like all CFTypes, they are reference counted ([`CFRetain`](../CoreFoundation/cfretain.md), [`CFRelease`](../CoreFoundation/cfrelease.md)).
 

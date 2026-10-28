@@ -13,7 +13,7 @@
 void bpf_tap_in(ifnet_t interface, u_int32_t dlt, mbuf_t packet, void *header, size_t header_len);
 ```
 
-#### Discussion
+## Discussion
 
 Call this function when your interface receives a packet. This function will check if any bpf devices need a a copy of the packet.
 

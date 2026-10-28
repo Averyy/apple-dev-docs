@@ -19,7 +19,7 @@ func terminate(_ sender: Any?)
 - (void) terminate:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 This method is typically invoked when the user chooses Quit or Exit from the app’s menu.
 

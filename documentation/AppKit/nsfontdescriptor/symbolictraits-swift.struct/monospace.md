@@ -19,7 +19,7 @@ static var monoSpace: NSFontDescriptor.SymbolicTraits { get }
 NSFontDescriptorTraitMonoSpace
 ```
 
-#### Discussion
+## Discussion
 
 The font uses fixed-pitch glyphs, if available, and may have multiple glyph advances (many CJK glyphs contain two spaces).
 

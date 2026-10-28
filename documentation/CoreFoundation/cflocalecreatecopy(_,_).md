@@ -25,7 +25,7 @@ func CFLocaleCreateCopy(_ allocator: CFAllocator!, _ locale: CFLocale!) -> CFLoc
 extern CFLocaleRefCFLocaleCreateCopy(CFAllocatorRef allocator, CFLocaleRef locale);
 ```
 
-#### Return Value
+## Return Value
 
 A new locale that is a copy of `locale`. Returns `NULL` if there was a problem creating the object. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 

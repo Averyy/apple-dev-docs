@@ -15,7 +15,7 @@ A language ID that determines the language for route information.
 language?: string;
 ```
 
-#### Discussion
+## Discussion
 
 When you set the language to a language ID such as `fr-CA` or `en-GB`, MapKit JS returns step-by-step directions in the specified language, if available. If you don’t set the language when initializing a [`Directions`](../directions.md) object, the directions default to the language ID the system provides when initializing the map with [`init()`](../mapkit/init.md). If the map doesn’t have a specified language upon initialization, MapKit JS returns directions in the browser’s language setting.
 

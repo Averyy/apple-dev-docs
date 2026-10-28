@@ -21,7 +21,7 @@ A base type representing media formats that may contain both video and audio.
 static var movie: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 This type corresponds to what users would label a “movie”.
 

@@ -21,11 +21,11 @@ Returns a tensor by gathering slices along the given axis at the specified indic
 func gathering(atIndices indices: MLTensor, alongAxis axis: Int) -> MLTensor
 ```
 
-#### Return Value
+## Return Value
 
 The gathered tensor.
 
-#### Discussion
+## Discussion
 
 For example:
 

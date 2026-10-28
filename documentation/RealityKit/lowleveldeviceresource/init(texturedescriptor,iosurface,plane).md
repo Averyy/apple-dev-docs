@@ -20,7 +20,7 @@ Creates a new [`LowLevelDeviceResource`](../lowleveldeviceresource.md) from the 
 init(textureDescriptor: MTLTextureDescriptor, iosurface: IOSurfaceRef, plane: Int) throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: If a the texture descriptor is incompatible with the specified IOSurface
 

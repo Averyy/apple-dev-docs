@@ -21,7 +21,7 @@ Creates a new `URL` by expanding the RFC 6570 template and variables.
 init?(template: URL.Template, variables: [URL.Template.VariableName : URL.Template.Value])
 ```
 
-#### Discussion
+## Discussion
 
 This will fail if variable expansion does not produce a valid, well-formed URL.
 

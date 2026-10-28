@@ -25,7 +25,7 @@ func fileSize() -> UInt64
 - (unsigned long long) fileSize;
 ```
 
-#### Return Value
+## Return Value
 
 The value associated with the [`size`](../fileattributekey/size.md) key, as a `UInt64` in Swift (`unsigned long long` in Objective-C), or `0` if the file attributes dictionary has no entry for the key.
 

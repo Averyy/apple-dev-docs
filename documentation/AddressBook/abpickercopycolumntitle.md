@@ -15,7 +15,7 @@ Obtains the title of a custom property.
 extern CFStringRefABPickerCopyColumnTitle(ABPickerRef inPicker, CFStringRef inProperty);
 ```
 
-#### Return Value
+## Return Value
 
 The title of the column that displays the custom property in the record list.
 

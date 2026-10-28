@@ -17,7 +17,7 @@ Requests a capability for the current process.
 - (id<BEProcessCapabilityGrant>) requestWithError:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 This method returns the granted capability, if possible; otherwise, it returns `nil` and sets the argument error object.
 

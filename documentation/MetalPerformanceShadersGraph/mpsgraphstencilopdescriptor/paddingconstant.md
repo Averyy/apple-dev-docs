@@ -24,7 +24,7 @@ var paddingConstant: Float { get set }
 @property (nonatomic, readwrite) float paddingConstant;
 ```
 
-#### Discussion
+## Discussion
 
 Default value: 0.
 

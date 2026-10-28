@@ -24,7 +24,7 @@ case albumMyPhotoStream
 PHAssetCollectionSubtypeAlbumMyPhotoStream
 ```
 
-#### Discussion
+## Discussion
 
 This album is available only if the user has enabled My Photo Stream in the iCloud settings for Photos. The My Photo Stream setting is off by default when iCloud Photo Library is enabled.
 

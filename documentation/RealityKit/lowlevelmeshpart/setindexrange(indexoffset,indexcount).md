@@ -18,7 +18,7 @@ Updates the first index and index count for this mesh part.
 final func setIndexRange(indexOffset: Int, indexCount: Int) throws(LowLevelRenderContextError)
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: [`LowLevelRenderContextError`](../lowlevelrendercontexterror.md) if the resulting range falls outside the mesh resource’s index buffer.
 

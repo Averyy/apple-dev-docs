@@ -19,7 +19,7 @@ func setAutoupdate(_ autoupdate: Bool, interval: TimeInterval)
 - (void) setAutoupdate:(BOOL) autoupdate interval:(NSTimeInterval) interval;
 ```
 
-#### Discussion
+## Discussion
 
 If autoupdates are enabled and the authorization times out (for example), the authorization view automatically relocks. If autoupdates are disabled, you have to call the [`updateStatus(_:)`](./updatestatus%28_%29.md) method to manually update the view if the status changes when the user has not clicked on the lock icon. Autoupdates are disabled by default. Because autoupdates poll, they can affect system performance. For that reason, you might want to set a time interval so that the polling does not take place as often.
 

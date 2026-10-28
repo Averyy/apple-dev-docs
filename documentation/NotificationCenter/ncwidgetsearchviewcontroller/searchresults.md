@@ -21,7 +21,7 @@ var searchResults: [Any]? { get set }
 @property (copy, nullable) NSArray<id> * searchResults;
 ```
 
-#### Discussion
+## Discussion
 
 The [`delegate`](./delegate.md) updates this property with the results of the search. For each object in `searchResults`, the search view controller uses the [`searchResultKeyPath`](./searchresultkeypath.md) property to find the description of the object to display in search view.
 

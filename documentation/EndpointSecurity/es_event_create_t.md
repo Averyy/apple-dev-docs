@@ -20,7 +20,7 @@ struct es_event_create_t
 typedef struct { ... } es_event_create_t;
 ```
 
-#### Overview
+## Overview
 
 If the file doesn’t exist — either because it’s awaiting authorization or a client denied authorization —  this type contains the parent directory and file name of the proposed file. If the file does exist, as is the case with notifications of successful file creation, this type contains the full path of the created file. Use the [`destination_type`](./es_event_create_t/destination_type.md) member to determine which case this event represents, and then access the [`destination`](./es_event_create_t/destination.md) `union` accordingly.
 

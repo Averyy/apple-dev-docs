@@ -24,7 +24,7 @@ class MTL4PipelineOptions
 @interface MTL4PipelineOptions : NSObject
 ```
 
-#### Overview
+## Overview
 
 You provide these options through the [`MTL4PipelineDescriptor`](./mtl4pipelinedescriptor.md) class at compilation time.
 

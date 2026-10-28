@@ -22,7 +22,7 @@ func bounds() -> NSRect
 - (NSRect) bounds;
 ```
 
-#### Return Value
+## Return Value
 
 The bounds of the rendering context expressed in Quartz Composer units.
 

@@ -19,11 +19,11 @@
 static SPScaledPose3D SPScaledPose3DMake(SPPose3D pose, double scale);
 ```
 
-#### Return Value
+## Return Value
 
 A new scaled pose structure.
 
-#### Discussion
+## Discussion
 
 Returns a scaled pose with the specified pose and uniform scale.
 

@@ -20,7 +20,7 @@ var aeDesc: UnsafePointer<AEDesc>? { get }
 @property (readonly, nullable) const AEDesc * aeDesc;
 ```
 
-#### Discussion
+## Discussion
 
 If the receiver has a valid `AEDesc` structure, returns a pointer to it; otherwise returns `nil`.
 

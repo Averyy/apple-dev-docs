@@ -24,7 +24,7 @@ func VNNormalizedRectForImageRectUsingRegionOfInterest(_ imageRect: CGRect, _ im
 extern CGRect VNNormalizedRectForImageRectUsingRegionOfInterest(CGRect imageRect, size_t imageWidth, size_t imageHeight, CGRect roi);
 ```
 
-#### Return Value
+## Return Value
 
 A rectangle in the normalized-coordinate space.
 

@@ -22,7 +22,7 @@ struct MetricGroup
 
 - [Analyzing app performance with MetricKit](./analyzing-app-performance-with-metrickit.md)
 
-#### Discussion
+## Discussion
 
 Use `MetricGroup` with [`metricGroup`](./metricresult/metricgroup.md) to filter or group results without exhaustive switching. For example, to process only CPU-related metrics:
 

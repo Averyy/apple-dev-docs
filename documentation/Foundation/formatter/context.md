@@ -25,7 +25,7 @@ enum Context
 enum NSFormattingContext : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Use formatting contexts to specify where the result of formatting will appear, so that the formatter can provide the most appropriate result.
 

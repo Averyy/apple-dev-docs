@@ -25,7 +25,7 @@ func cblas_crotg(_ A: OpaquePointer, _ B: OpaquePointer, _ C: UnsafeMutablePoint
 void cblas_crotg(__LAPACK_float_complex *A, __LAPACK_float_complex *B, float *C, __LAPACK_float_complex *S);
 ```
 
-#### Discussion
+## Discussion
 
 Given a vertical matrix containing `a` and `b`, computes the values of `cos θ` and `sin θ` that zero the lower value (`b`). Returns the value of `sin θ` in `s`, the value of `cos θ` in `c`, and the upper value (`r`) in `a`.
 

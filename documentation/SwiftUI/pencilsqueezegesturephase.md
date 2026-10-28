@@ -20,7 +20,7 @@ Describes the phase and value of an Apple Pencil squeeze gesture.
 enum PencilSqueezeGesturePhase
 ```
 
-#### Overview
+## Overview
 
 When you use the [`onPencilSqueeze(perform:)`](./view/onpencilsqueeze%28perform%29.md) view modifier, you can handle the Apple Pencil squeeze gesture’s phase in the `action` closure.
 

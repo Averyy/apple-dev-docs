@@ -12,7 +12,7 @@ Creates an executable target.
 static func executableTarget(name: String, dependencies: [Target.Dependency] = [], path: String? = nil, exclude: [String] = [], sources: [String]? = nil, resources: [Resource]? = nil, publicHeadersPath: String? = nil, cSettings: [CSetting]? = nil, cxxSettings: [CXXSetting]? = nil, swiftSettings: [SwiftSetting]? = nil, linkerSettings: [LinkerSetting]? = nil, plugins: [Target.PluginUsage]? = nil) -> Target
 ```
 
-#### Discussion
+## Discussion
 
 An executable target can contain either Swift or C-family source files, but not both. It contains code that is built as an executable module that can be used as the main target of an executable product. The target is expected to either have a source file named `main.swift`, `main.m`, `main.c`, or `main.cpp`, or a source file that contains the `@main` keyword.
 

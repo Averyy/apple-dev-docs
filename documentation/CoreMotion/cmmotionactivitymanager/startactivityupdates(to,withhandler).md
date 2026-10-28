@@ -22,7 +22,7 @@ func startActivityUpdates(to queue: OperationQueue, withHandler handler: @escapi
 - (void) startActivityUpdatesToQueue:(NSOperationQueue *) queue withHandler:(CMMotionActivityHandler) handler;
 ```
 
-#### Discussion
+## Discussion
 
 This method initiates the tracking of motion data asynchronously. Upon calling this method, the motion activity manager executes the `handler` block on the specified `queue`, reporting the current motion in effect for the device. After that, the motion activity manager executes the `handler` block only when the motion data changes.
 

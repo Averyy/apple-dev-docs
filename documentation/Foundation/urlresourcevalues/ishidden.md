@@ -21,7 +21,7 @@ True for resources normally not displayed to users.
 var isHidden: Bool? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**:  If the resource is a hidden because its name starts with a period, setting this property to false will not change the property.
 

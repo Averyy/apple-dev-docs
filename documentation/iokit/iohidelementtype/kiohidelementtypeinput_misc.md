@@ -14,7 +14,7 @@
 kIOHIDElementTypeInput_Misc = 1
 ```
 
-#### Discussion
+## Discussion
 
 Misc input data field or varying size.
 

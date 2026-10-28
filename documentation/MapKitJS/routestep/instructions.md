@@ -15,7 +15,7 @@ The written instructions for following the path that the step represents.
 instructions: string;
 ```
 
-#### Discussion
+## Discussion
 
 MapKit JS localizes the instructions according to the [`Directions`](../directions.md) object’s [`language`](../directionsconstructoroptions/language.md) setting.
 

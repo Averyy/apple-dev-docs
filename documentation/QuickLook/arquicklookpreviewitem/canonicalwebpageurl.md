@@ -22,7 +22,7 @@ var canonicalWebPageURL: URL? { get set }
 @property (nonatomic, strong, nullable) NSURL * canonicalWebPageURL;
 ```
 
-#### Discussion
+## Discussion
 
 If this is supplied, the URL to the canonical web page is shared instead of the 3D content file. For example, providing https://developer.apple.com/arkit/gallery/ as the canonical web page URL string will be shared via the Share button. If the web page URL string is malformed or not provided, then AR Quick Look will default to sharing the 3D content.
 

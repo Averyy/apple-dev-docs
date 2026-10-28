@@ -24,7 +24,7 @@ var destinationOrigin: MTLOrigin
 MTLOrigin destinationOrigin;
 ```
 
-#### Discussion
+## Discussion
 
 The X, Y and Z coordinates of the tiles relative to the origin match the same coordinates in the source region.
 

@@ -19,7 +19,7 @@ func displayIfNeeded()
 - (void) displayIfNeeded;
 ```
 
-#### Discussion
+## Discussion
 
 This method invokes the `NSView` methods [`lockFocus()`](./lockfocus%28%29.md), [`draw(_:)`](./draw%28_%29.md), and [`unlockFocus()`](./unlockfocus%28%29.md) as necessary. If the view isn’t opaque, this method backs up the view hierarchy to the first opaque ancestor, calculates the portion of the opaque ancestor covered by the view, and begins displaying from there.
 

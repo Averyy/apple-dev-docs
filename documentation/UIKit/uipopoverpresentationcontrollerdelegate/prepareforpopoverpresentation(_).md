@@ -22,7 +22,7 @@ optional func prepareForPopoverPresentation(_ popoverPresentationController: UIP
 - (void) prepareForPopoverPresentation:(UIPopoverPresentationController *) popoverPresentationController;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to perform any last minute customizations of the popover appearance and behavior. At the time this method is called, the popover is not yet on the screen. You can use this method to modify the configuration of the popover presentation controller or perform any other actions that your app requires.
 

@@ -22,7 +22,7 @@ var isVisible: Bool { get }
 @property (readonly, getter=isVisible) BOOL visible;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) when the item is visible in the toolbar, and [`false`](../../Swift/false.md) when it isn’t in the toolbar or is present in the toolbar’s overflow menu. This property is key-value observing (KVO) compliant.
 

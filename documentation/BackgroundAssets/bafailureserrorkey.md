@@ -20,7 +20,7 @@ The `-[NSError userInfo]` key for the set of asset packs the local availability 
 extern NSErrorUserInfoKey const BAFailuresErrorKey;
 ```
 
-#### Discussion
+## Discussion
 
 This key is relevant when the error code is [`BAManagedErrorCodeLocalAvailabilityFailure`](./bamanagederrorcode/bamanagederrorcodelocalavailabilityfailure.md). Its value should be an `NSDictionary<BAAssetPack*, NSError*>` object.
 

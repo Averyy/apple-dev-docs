@@ -22,7 +22,7 @@ let MPMoviePlayerThumbnailImageKey: String
 extern NSString * const MPMoviePlayerThumbnailImageKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is a [`UIImage`](../UIKit/uiimage.md) object containing the image that was obtained for the desired frame.
 

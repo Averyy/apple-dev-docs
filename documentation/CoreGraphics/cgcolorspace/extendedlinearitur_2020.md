@@ -25,7 +25,7 @@ class let extendedLinearITUR_2020: CFString
 extern CFStringRef const kCGColorSpaceExtendedLinearITUR_2020;
 ```
 
-#### Discussion
+## Discussion
 
 This color space has the same colorimetry as [`itur_2020`](./itur_2020.md), but uses a linear transfer function. You may encode component values below `0.0` and above `1.0`.
 

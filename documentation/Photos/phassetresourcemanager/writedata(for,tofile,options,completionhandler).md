@@ -28,7 +28,7 @@ func writeData(for resource: PHAssetResource, toFile fileURL: URL, options: PHAs
 - (void) writeDataForAssetResource:(PHAssetResource *) resource toFile:(NSURL *) fileURL options:(PHAssetResourceRequestOptions *) options completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 When you call this method, Photos begins asynchronously reading the underlying data for the asset resource. Depending on the options you specify and the current state of the asset, Photos may download asset data from the network.
 

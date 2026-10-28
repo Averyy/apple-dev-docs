@@ -12,11 +12,11 @@ IOPMPowerFlags registerInterestedDriver(
  IOService *theDriver );
 ```
 
-#### Return Value
+## Return Value
 
 Flags describing the capability of the device in its current power state. If the current power state is not yet defined, zero is returned (this is the case when the driver is not yet in the power domain hierarchy or hasn't fully registered with power management yet).
 
-#### Overview
+## Overview
 
 Call `registerInterestedDriver` on the IOService object you are interested in receiving power state messages from, and pass a pointer to the interested driver (`this`) as an argument. The interested driver is retained until the power interest is removed by calling `deRegisterInterestedDriver`. The interested driver should override powerStateWillChangeTo and powerStateDidChangeTo to receive these power change messages. Interested drivers must acknowledge power changes in `powerStateWillChangeTo` or `powerStateDidChangeTo`, either via return value or later calls to acknowledgePowerChange.
 

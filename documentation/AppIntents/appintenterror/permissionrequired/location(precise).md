@@ -21,7 +21,7 @@ The person needs to allow the app to access their location.
 static func location(precise: Bool = false) -> AppIntentError
 ```
 
-#### Discussion
+## Discussion
 
 The error message differs based on whether a person needs to give the app access to their precise or approximate location.
 

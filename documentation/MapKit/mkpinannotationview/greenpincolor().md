@@ -40,11 +40,11 @@ class func greenPinColor() -> NSColor
 + (NSColor *) greenPinColor;
 ```
 
-#### Return Value
+## Return Value
 
 The green pin color.
 
-#### Discussion
+## Discussion
 
 The system uses green pins to indicate starting points on the map.
 

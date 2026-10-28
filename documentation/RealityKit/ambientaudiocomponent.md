@@ -20,7 +20,7 @@ A component that configures the ambient rendering of sounds from an entity.
 struct AmbientAudioComponent
 ```
 
-#### Overview
+## Overview
 
 Ambient audio sources emit each channel of an audio resource from an angle projected from the entity, without reverberation. Ambient audio sources take into account the relative orientation of the source and the listener. Position is not taken into account; the channels do not get louder as the user moves toward them.
 

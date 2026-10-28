@@ -25,7 +25,7 @@ func CMMetadataDataTypeRegistryDataTypeIsRegistered(_ dataType: CFString) -> Boo
 extern Boolean CMMetadataDataTypeRegistryDataTypeIsRegistered(CFStringRef dataType);
 ```
 
-#### Return Value
+## Return Value
 
 [`kCFBooleanTrue`](../CoreFoundation/kcfbooleantrue.md) if the data type has been registered; [`kCFBooleanFalse`](../CoreFoundation/kcfbooleanfalse.md) otherwise.
 

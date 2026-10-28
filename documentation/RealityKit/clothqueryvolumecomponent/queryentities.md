@@ -17,7 +17,7 @@ The entities to query for intersections with the volume.
 var queryEntities: [Entity]
 ```
 
-#### Discussion
+## Discussion
 
 Only entities with a [`ClothBodyComponent`](../clothbodycomponent.md) are included in the query; others are ignored.
 

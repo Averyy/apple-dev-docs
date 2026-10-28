@@ -15,7 +15,7 @@ Gets the video object identifier of the object.
 IOUserVideoObjectID GetObjectID();
 ```
 
-#### Discussion
+## Discussion
 
 This identifier can be used for object lookup with IOUserVideoDriver.
 

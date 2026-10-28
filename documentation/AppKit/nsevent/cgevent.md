@@ -19,7 +19,7 @@ var cgEvent: CGEvent? { get }
 @property (readonly, nullable) CGEventRef CGEvent;
 ```
 
-#### Discussion
+## Discussion
 
 The [`CGEvent`](../../CoreGraphics/cgevent.md) opaque type returned is autoreleased. If no `CGEventRef` object corresponding to the `NSEvent` object can be created, this method returns `NULL`.
 

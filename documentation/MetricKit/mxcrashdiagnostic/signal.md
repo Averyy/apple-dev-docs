@@ -25,7 +25,7 @@ var signal: NSNumber? { get }
 @property (strong, readonly, nullable) NSNumber * signal;
 ```
 
-#### Discussion
+## Discussion
 
 Processor-specific information is in the `usr/include/sys/signal.h` file in the SDK.
 

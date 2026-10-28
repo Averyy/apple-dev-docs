@@ -21,7 +21,7 @@ Creates an unbounded range expression.
 static func ... (_: UnboundedRange_)
 ```
 
-#### Discussion
+## Discussion
 
 The unbounded range operator (`...`) is valid only within a collection’s subscript.
 

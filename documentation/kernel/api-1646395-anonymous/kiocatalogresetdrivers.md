@@ -13,7 +13,7 @@
 kIOCatalogResetDrivers
 ```
 
-#### Discussion
+## Discussion
 
 Resets the IOCatalogue with a new set of personalities.
 

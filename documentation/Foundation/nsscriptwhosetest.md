@@ -20,7 +20,7 @@ class NSScriptWhoseTest
 @interface NSScriptWhoseTest : NSObject
 ```
 
-#### Overview
+## Overview
 
 `NSScriptWhoseTest` is an abstract class whose sole method is [`isTrue()`](./nsscriptwhosetest/istrue%28%29.md). Two concrete subclasses of `NSScriptWhoseTest` generate objects representing Boolean expressions comparing one object with another and objects representing multiple Boolean expressions connected by logical operators (`OR`, `AND`, `NOT`). These classes are, respectively, [`NSSpecifierTest`](./nsspecifiertest.md) and [`NSLogicalTest`](./nslogicaltest.md). In evaluating itself, an [`NSWhoseSpecifier`](./nswhosespecifier.md) invokes the [`isTrue()`](./nsscriptwhosetest/istrue%28%29.md) method of its “test” object.
 

@@ -25,7 +25,7 @@ case short
 MKAddressRepresentationsContextStyleShort
 ```
 
-#### Discussion
+## Discussion
 
 The value that tells the framework to exclude optional context. For example, when used with [`cityWithContext(_:)`](../citywithcontext%28_%29.md) MapKit always excludes the region name.
 

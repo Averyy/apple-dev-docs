@@ -25,11 +25,11 @@ init()
 - (instancetype) init;
 ```
 
-#### Return Value
+## Return Value
 
 An array.
 
-#### Discussion
+## Discussion
 
 After an immutable array has been initialized in this way, it cannot be modified.
 

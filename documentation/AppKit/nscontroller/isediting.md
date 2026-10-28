@@ -19,7 +19,7 @@ var isEditing: Bool { get }
 @property (readonly, getter=isEditing) BOOL editing;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) when an editor is registered with the controller object or [`false`](../../Swift/false.md) when no editor is registered.
 

@@ -16,7 +16,7 @@ A Bool where a value of true indicates that devices should mix stereo signals do
 var shouldMixStereoToMono: Bool { get throws }
 ```
 
-#### Discussion
+## Discussion
 
 The two channels on the device that comprise the stereo signal are defined on the AudioHardwareDevice by preferredChannelsForStereo.
 

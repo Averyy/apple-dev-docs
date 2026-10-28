@@ -17,7 +17,7 @@ An object that represents a single edge of a surface.
 enum Edge
 ```
 
-#### Overview
+## Overview
 
 Each [`CapturedRoom.Surface`](../surface.md) instance in a captured room’s surface arrays ([`doors`](../doors.md), [`openings`](../openings.md), [`walls`](../walls.md), and [`windows`](../windows.md)) has a set ([`completedEdges`](./completededges.md)) that contains one of each case in this enumeration.
 

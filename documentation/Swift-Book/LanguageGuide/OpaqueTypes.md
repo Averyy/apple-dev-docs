@@ -58,32 +58,6 @@ print(smallTriangle.draw())
 // ***
 ```
 
-<!--
-  - test: `opaque-result`
-
-  ```swifttest
-  -> protocol Shape {
-         func draw() -> String
-     }
-
-  -> struct Triangle: Shape {
-        var size: Int
-        func draw() -> String {
-            var result: [String] = []
-            for length in 1...size {
-                result.append(String(repeating: "*", count: length))
-            }
-            return result.joined(separator: "\n")
-        }
-     }
-  -> let smallTriangle = Triangle(size: 3)
-  -> print(smallTriangle.draw())
-  </ *
-  </ **
-  </ ***
-  ```
--->
-
 You could use generics to implement operations like flipping a shape vertically,
 as shown in the code below.
 However, there's an important limitation to this approach:
@@ -104,25 +78,6 @@ print(flippedTriangle.draw())
 // **
 // *
 ```
-
-<!--
-  - test: `opaque-result`
-
-  ```swifttest
-  -> struct FlippedShape<T: Shape>: Shape {
-         var shape: T
-         func draw() -> String {
-             let lines = shape.draw().split(separator: "\n")
-             return lines.reversed().joined(separator: "\n")
-         }
-     }
-  -> let flippedTriangle = FlippedShape(shape: smallTriangle)
-  -> print(flippedTriangle.draw())
-  </ ***
-  </ **
-  </ *
-  ```
--->
 
 This approach to defining a `JoinedShape<T: Shape, U: Shape>` structure
 that joins two shapes together vertically, like the code below shows,
@@ -146,28 +101,6 @@ print(joinedTriangles.draw())
 // **
 // *
 ```
-
-<!--
-  - test: `opaque-result`
-
-  ```swifttest
-  -> struct JoinedShape<T: Shape, U: Shape>: Shape {
-        var top: T
-        var bottom: U
-        func draw() -> String {
-            return top.draw() + "\n" + bottom.draw()
-        }
-     }
-  -> let joinedTriangles = JoinedShape(top: smallTriangle, bottom: flippedTriangle)
-  -> print(joinedTriangles.draw())
-  </ *
-  </ **
-  </ ***
-  </ ***
-  </ **
-  </ *
-  ```
--->
 
 Exposing detailed information about the creation of a shape
 allows types that aren't meant to be
@@ -197,12 +130,6 @@ returns a type that depends on its caller:
 ```swift
 func max<T>(_ x: T, _ y: T) -> T where T: Comparable { ... }
 ```
-
-<!--
-  From https://developer.apple.com/documentation/swift/max(_:_:)
-  Not test code because it won't actually compile
-  and there's nothing to meaningfully test.
--->
 
 The code that calls `max(_:_:)` chooses the values for `x` and `y`,
 and the type of those values determines the concrete type of `T`.
@@ -249,40 +176,6 @@ print(trapezoid.draw())
 // **
 // *
 ```
-
-<!--
-  - test: `opaque-result`
-
-  ```swifttest
-  -> struct Square: Shape {
-         var size: Int
-         func draw() -> String {
-             let line = String(repeating: "*", count: size)
-             let result = Array<String>(repeating: line, count: size)
-             return result.joined(separator: "\n")
-         }
-     }
-
-  -> func makeTrapezoid() -> some Shape {
-         let top = Triangle(size: 2)
-         let middle = Square(size: 2)
-         let bottom = FlippedShape(shape: top)
-         let trapezoid = JoinedShape(
-             top: top,
-             bottom: JoinedShape(top: middle, bottom: bottom)
-         )
-         return trapezoid
-     }
-  -> let trapezoid = makeTrapezoid()
-  -> print(trapezoid.draw())
-  </ *
-  </ **
-  </ **
-  </ **
-  </ **
-  </ *
-  ```
--->
 
 The `makeTrapezoid()` function in this example
 declares its return type as `some Shape`;
@@ -331,28 +224,6 @@ print(opaqueJoinedTriangles.draw())
 // *
 ```
 
-<!--
-  - test: `opaque-result`
-
-  ```swifttest
-  -> func flip<T: Shape>(_ shape: T) -> some Shape {
-         return FlippedShape(shape: shape)
-     }
-  -> func join<T: Shape, U: Shape>(_ top: T, _ bottom: U) -> some Shape {
-         JoinedShape(top: top, bottom: bottom)
-     }
-
-  -> let opaqueJoinedTriangles = join(smallTriangle, flip(smallTriangle))
-  -> print(opaqueJoinedTriangles.draw())
-  </ *
-  </ **
-  </ ***
-  </ ***
-  </ **
-  </ *
-  ```
--->
-
 The value of `opaqueJoinedTriangles` in this example
 is the same as `joinedTriangles` in the generics example
 in the [The Problem that Opaque Types Solve](OpaqueTypes.md#The-Problem-that-Opaque-Types-Solve) section earlier in this chapter.
@@ -384,38 +255,6 @@ func invalidFlip<T: Shape>(_ shape: T) -> some Shape {
 }
 ```
 
-<!--
-  - test: `opaque-result-err`
-
-  ```swifttest
-  >> protocol Shape {
-  >>     func draw() -> String
-  >> }
-  >> struct Square: Shape {
-  >>     func draw() -> String { return "#" }  // stub implementation
-  >> }
-  >> struct FlippedShape<T: Shape>: Shape {
-  >>     var shape: T
-  >>     func draw() -> String { return "#" } // stub implementation
-  >> }
-  -> func invalidFlip<T: Shape>(_ shape: T) -> some Shape {
-         if shape is Square {
-             return shape // Error: Return types don't match.
-         }
-         return FlippedShape(shape: shape) // Error: Return types don't match.
-     }
-  !$ error: function declares an opaque return type 'some Shape', but the return statements in its body do not have matching underlying types
-  !! func invalidFlip<T: Shape>(_ shape: T) -> some Shape {
-  !!      ^                                    ~~~~~~~~~~
-  !$ note: return statement has underlying type 'T'
-  !! return shape // Error: Return types don't match.
-  !! ^
-  !$ note: return statement has underlying type 'FlippedShape<T>'
-  !! return FlippedShape(shape: shape) // Error: Return types don't match.
-  !! ^
-  ```
--->
-
 If you call this function with a `Square`, it returns a `Square`;
 otherwise, it returns a `FlippedShape`.
 This violates the requirement to return values of only one type
@@ -437,35 +276,6 @@ struct FlippedShape<T: Shape>: Shape {
 }
 ```
 
-<!--
-  - test: `opaque-result-special-flip`
-
-  ```swifttest
-  >> protocol Shape { func draw() -> String }
-  >> struct Square: Shape {
-  >>     func draw() -> String { return "#" }  // stub implementation
-  >> }
-  -> struct FlippedShape<T: Shape>: Shape {
-         var shape: T
-         func draw() -> String {
-             if shape is Square {
-                return shape.draw()
-             }
-             let lines = shape.draw().split(separator: "\n")
-             return lines.reversed().joined(separator: "\n")
-         }
-     }
-  ```
--->
-
-<!--
-  Another way to fix it is with type erasure.
-  Define a wrapper called AnyShape,
-  and wrap whatever shape you created inside invalidFlip(_:)
-  before returning it.
-  That example is long enough that it breaks the flow here.
--->
-
 The requirement to always return a single type
 doesn't prevent you from using generics in an opaque return type.
 Here's an example of a function that incorporates its type parameter
@@ -476,16 +286,6 @@ func `repeat`<T: Shape>(shape: T, count: Int) -> some Collection {
     return Array<T>(repeating: shape, count: count)
 }
 ```
-
-<!--
-  - test: `opaque-result`
-
-  ```swifttest
-  -> func `repeat`<T: Shape>(shape: T, count: Int) -> some Collection {
-         return Array<T>(repeating: shape, count: count)
-     }
-  ```
--->
 
 In this case,
 the underlying type of the return value
@@ -519,56 +319,6 @@ let largeSquare = Square(size: 5)
 let vertical = VerticalShapes(shapes: [largeTriangle, largeSquare])
 print(vertical.draw())
 ```
-
-<!--
-  - test: `boxed-protocol-types`
-
-  ```swifttest
-   >> protocol Shape {
-   >>    func draw() -> String
-   >> }
-   >> struct Triangle: Shape {
-   >>    var size: Int
-   >>    func draw() -> String {
-   >>        var result: [String] = []
-   >>        for length in 1...size {
-   >>            result.append(String(repeating: "*", count: length))
-   >>        }
-   >>        return result.joined(separator: "\n")
-   >>    }
-   >> }
-   >> struct Square: Shape {
-   >>     var size: Int
-   >>     func draw() -> String {
-   >>         let line = String(repeating: "*", count: size)
-   >>         let result = Array<String>(repeating: line, count: size)
-   >>         return result.joined(separator: "\n")
-   >>     }
-   >
-   -> struct VerticalShapes: Shape {
-          var shapes: [any Shape]
-          func draw() -> String {
-              return shapes.map { $0.draw() }.joined(separator: "\n\n")
-          }
-      }
-   ->
-   -> let largeTriangle = Triangle(size: 5)
-   -> let largeSquare = Square(size: 5)
-   -> let vertical = VerticalShapes(shapes: [largeTriangle, largeSquare])
-   -> print(vertical.draw())
-   << *
-   << **
-   << ***
-   << ****
-   << *****
-   <<-
-   << *****
-   << *****
-   << *****
-   << *****
-   << *****
-  ```
--->
 
 In the example above,
 `VerticalShapes` declares the type of `shapes` as `[any Shape]` ---
@@ -652,31 +402,6 @@ func protoFlip<T: Shape>(_ shape: T) -> Shape {
 }
 ```
 
-<!--
-  - test: `opaque-result-existential-error`
-
-  ```swifttest
-  >> protocol Shape {
-  >>     func draw() -> String
-  >> }
-  >> struct Triangle: Shape {
-  >>     var size: Int
-  >>     func draw() -> String { return "#" }  // stub implementation
-  >> }
-  >> struct Square: Shape {
-  >>     var size: Int
-  >>     func draw() -> String { return "#" }  // stub implementation
-  >> }
-  >> struct FlippedShape<T: Shape>: Shape {
-  >>     var shape: T
-  >>     func draw() -> String { return "#" } // stub implementation
-  >> }
-  -> func protoFlip<T: Shape>(_ shape: T) -> Shape {
-        return FlippedShape(shape: shape)
-     }
-  ```
--->
-
 This version of `protoFlip(_:)`
 has the same body as `flip(_:)`,
 and it always returns a value of the same type.
@@ -699,26 +424,6 @@ func protoFlip<T: Shape>(_ shape: T) -> Shape {
 }
 ```
 
-<!--
-  - test: `opaque-result-existential-error`
-
-  ```swifttest
-  -> func protoFlip<T: Shape>(_ shape: T) -> Shape {
-        if shape is Square {
-           return shape
-        }
-
-        return FlippedShape(shape: shape)
-     }
-  !$ error: invalid redeclaration of 'protoFlip'
-  !! func protoFlip<T: Shape>(_ shape: T) -> Shape {
-  !!      ^
-  !$ note: 'protoFlip' previously declared here
-  !! func protoFlip<T: Shape>(_ shape: T) -> Shape {
-  !!      ^
-  ```
--->
-
 The revised version of the code returns
 an instance of `Square` or an instance of `FlippedShape`,
 depending on what shape is passed in.
@@ -737,20 +442,6 @@ let protoFlippedTriangle = protoFlip(smallTriangle)
 let sameThing = protoFlip(smallTriangle)
 protoFlippedTriangle == sameThing  // Error
 ```
-
-<!--
-  - test: `opaque-result-existential-error`
-
-  ```swifttest
-  >> let smallTriangle = Triangle(size: 3)
-  -> let protoFlippedTriangle = protoFlip(smallTriangle)
-  -> let sameThing = protoFlip(smallTriangle)
-  -> protoFlippedTriangle == sameThing  // Error
-  !$ error: binary operator '==' cannot be applied to two 'any Shape' operands
-  !! protoFlippedTriangle == sameThing  // Error
-  !! ~~~~~~~~~~~~~~~~~~~~ ^  ~~~~~~~~~
-  ```
--->
 
 The error on the last line of the example occurs for several reasons.
 The immediate issue is that the `Shape` doesn't include an `==` operator
@@ -799,19 +490,6 @@ protocol Container {
 extension Array: Container { }
 ```
 
-<!--
-  - test: `opaque-result, opaque-result-existential-error`
-
-  ```swifttest
-  -> protocol Container {
-         associatedtype Item
-         var count: Int { get }
-         subscript(i: Int) -> Item { get }
-     }
-  -> extension Array: Container { }
-  ```
--->
-
 You can't use `Container` as the return type of a function
 because that protocol has an associated type.
 You also can't use it as constraint in a generic return type
@@ -830,30 +508,6 @@ func makeProtocolContainer<T, C: Container>(item: T) -> C {
 }
 ```
 
-<!--
-  - test: `opaque-result-existential-error`
-
-  ```swifttest
-  // Error: Protocol with associated types can't be used as a return type.
-  -> func makeProtocolContainer<T>(item: T) -> Container {
-         return [item]
-     }
-
-  // Error: Not enough information to infer C.
-  -> func makeProtocolContainer<T, C: Container>(item: T) -> C {
-         return [item]
-     }
-  !$ error: use of protocol 'Container' as a type must be written 'any Container'
-  !! func makeProtocolContainer<T>(item: T) -> Container {
-  !!                                           ^~~~~~~~~
-  !! any Container
-  !$ error: cannot convert return expression of type '[T]' to return type 'C'
-  !! return [item]
-  !! ^~~~~~
-  !! as! C
-  ```
--->
-
 Using the opaque type `some Container` as a return type
 expresses the desired API contract --- the function returns a container,
 but declines to specify the container's type:
@@ -868,20 +522,6 @@ print(type(of: twelve))
 // Prints "Int".
 ```
 
-<!--
-  - test: `opaque-result`
-
-  ```swifttest
-  -> func makeOpaqueContainer<T>(item: T) -> some Container {
-         return [item]
-     }
-  -> let opaqueContainer = makeOpaqueContainer(item: 12)
-  -> let twelve = opaqueContainer[0]
-  -> print(type(of: twelve))
-  <- Int
-  ```
--->
-
 The type of `twelve` is inferred to be `Int`,
 which illustrates the fact that type inference works with opaque types.
 In the implementation of `makeOpaqueContainer(item:)`,
@@ -891,40 +531,6 @@ so the return value is an array of integers
 and the `Item` associated type is inferred to be `Int`.
 The subscript on `Container` returns `Item`,
 which means that the type of `twelve` is also inferred to be `Int`.
-
-<!--
-  TODO: Expansion for the future
-
-  You can combine the flexibility of returning a value of protocol type
-  with the API-boundary enforcement of opaque types
-  by using type erasure
-  like the Swift standard library uses in the
-  `AnySequence <//apple_ref/fake/AnySequence`_ type.
-
-  protocol P { func f() -> Int }
-
-  struct AnyP: P {
-      var p: P
-      func f() -> Int { return p.f() }
-  }
-
-  struct P1 {
-      func f() -> Int { return 100 }
-  }
-  struct P2 {
-      func f() -> Int { return 200 }
-  }
-
-  func opaque(x: Int) -> some P {
-      let result: P
-      if x > 100 {
-          result = P1()
-      }  else {
-          result = P2()
-      }
-      return AnyP(p: result)
-  }
--->
 
 ## Opaque Parameter Types
 
@@ -985,13 +591,3 @@ a generic `where` clause or any same-type (`==`) constraints.
 In addition,
 using the lightweight syntax for very complex constraints
 can be hard to read.
-
-<!--
-This source file is part of the Swift.org open source project
-
-Copyright (c) 2014 - 2022 Apple Inc. and the Swift project authors
-Licensed under Apache License v2.0 with Runtime Library Exception
-
-See https://swift.org/LICENSE.txt for license information
-See https://swift.org/CONTRIBUTORS.txt for the list of Swift project authors
--->

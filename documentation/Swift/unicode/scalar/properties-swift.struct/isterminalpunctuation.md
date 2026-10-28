@@ -21,7 +21,7 @@ A Boolean value indicating whether the scalar is a punctuation symbol that typic
 var isTerminalPunctuation: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property corresponds to the “Terminal_Punctuation” property in the [Unicode Standard](http://www.unicode.org/versions/latest/).
 

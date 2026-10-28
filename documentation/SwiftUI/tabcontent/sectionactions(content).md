@@ -21,7 +21,7 @@ nonisolated
 func sectionActions<Content>(@ContentBuilder content: () -> Content) -> some TabContent<Self.TabValue> where Content : View
 ```
 
-#### Discussion
+## Discussion
 
 On iOS, the actions are displayed after the other tabs in the section. On macOS, the actions are displayed when a user hovers over the section.
 

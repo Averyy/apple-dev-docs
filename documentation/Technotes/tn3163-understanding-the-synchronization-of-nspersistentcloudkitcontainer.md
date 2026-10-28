@@ -5,7 +5,7 @@
 
 Explore the details inside the synchronization of `NSPersistentCloudKitContainer` by capturing and analyzing a sysdiagnose.
 
-#### Overview
+## Overview
 
 [`NSPersistentCloudKitContainer`](../CoreData/nspersistentcloudkitcontainer.md) is designed to provide end-to-end synchronization for apps. In many cases, apps use this API to set up a Core Data stack, and the Core Data store automatically synchronizes across devices.
 
@@ -13,7 +13,7 @@ Under the hood, `NSPersistentCloudKitContainer` separates the synchronization pr
 
 This technote unveils some details inside the synchronization by analyzing a sysdiagnose, and provides some representative logs that can be used to identify some important tasks and their state.
 
-#### The synchronization in a nutshell
+## The synchronization in a nutshell
 
 As a prerequisite, it’s important to understand how the synchronization works at a higher level.
 
@@ -32,11 +32,11 @@ For more information about `NSPersistentCloudKitContainer`, see the following WW
 
 To discover what happens inside an export or import and how the system services work together, see [Understand the export](./tn3163-understanding-the-synchronization-of-nspersistentcloudkitcontainer.md#Understand-the-export) and [Understand the import](./tn3163-understanding-the-synchronization-of-nspersistentcloudkitcontainer.md#Understand-the-import).
 
-#### Capture and analyze a sysdiagnose
+## Capture and analyze a sysdiagnose
 
 Sysdiagnose analysis is the only means for peeking at the details inside the synchronization, and is typically for investigating a synchronization issue. To do that, capture a sysdiagnose, use your favorite tools to find the relevant logs, and then explore the messages. Focus on finding errors or suspicious activities that may be relevant to the issue you are investigating.
 
-##### Capture a sysdiagnose
+### Capture a sysdiagnose
 
 Before capturing a sysdiagnose, find a set of devices and steps that can reproduce the issue. A sysdiagnose won’t contain the relevant logs if it isn’t captured from a device where the issue recently happened. If you can’t reproduce the issue, consider reaching out to the users who reported the issue to you for help.
 
@@ -57,7 +57,7 @@ To capture a sysdiagnose from a device:
 
 For more information, see WWDC22 session 10119: [Optimize your use of Core Data and CloudKit](https://developer.apple.com/videos/play/wwdc2022/10119/?time=1295).
 
-##### Analyze a sysdiagnose
+### Analyze a sysdiagnose
 
 The most relevant part in a sysdiagnose is the system logs, which are archived in the file named `system_logs.logarchive`. Use `Console.app` or `log` to find the relevant logs in the file and determine if the synchronization succeeds.
 
@@ -82,7 +82,7 @@ Use these tools to explore what really happens inside the exports and imports. I
 - The time frames when an activity should but doesn’t happen. If the activity is an export, confirm that `NSPersistentCloudKitContainer` detects the change on the store; for an import related to a CloudKit private or shared database, confirm that the system gets the CloudKit notification and delivers it to your app. See [Understand the export](./tn3163-understanding-the-synchronization-of-nspersistentcloudkitcontainer.md#Understand-the-export) and  [Understand the import](./tn3163-understanding-the-synchronization-of-nspersistentcloudkitcontainer.md#Understand-the-import) for more information.
 - The activities that last unusually long. If any, check if they are intentionally deferred by the system. See [Understand system throttles](./tn3163-understanding-the-synchronization-of-nspersistentcloudkitcontainer.md#Understand-system-throttles) for more information.
 
-#### Understand the export
+## Understand the export
 
 An export has the following phases:
 
@@ -92,7 +92,7 @@ An export has the following phases:
 
 This section shows the filters for tracing the phases, and provides the representative logs that can be used to identify the phases and their state.
 
-##### Observe if the Core Data store is changed
+### Observe if the Core Data store is changed
 
 When observing the app saving a managed object context ([`NSManagedObjectContext`](../CoreData/nsmanagedobjectcontext.md)) or a remote change notification ([`NSPersistentStoreRemoteChange`](../Foundation/nsnotification/name-swift.struct/nspersistentstoreremotechange.md)) that indicates the store being changed remotely, `NSPersistentCloudKitContainer` logs the event and starts to schedule an export. Use the `process` (”<the app name>”), `subsystem` (“com.apple.coredata”), and `message` (“Observed”) filters to find the relevant logs, as shown in the following example:
 
@@ -114,7 +114,7 @@ info  … 14:14:15.230887 …  YourCoolApp debug: CoreData+CloudKit:
 
 The logs contain the Core Data [store UUID](../CoreData/nsstoreuuidkey.md), or `A73C42D5-ADEE-4758-B2A1-F75DEBF93702` in this example, which can be used with the `message` filter to filter out the logs irrelevant to the store.
 
-##### Confirm that the export can proceed
+### Confirm that the export can proceed
 
 After observing that the store was changed, `NSPersistentCloudKitContainer` asks the system if now is appropriate to do an export. An export activity has an identifier that contains the store UUID.
 
@@ -158,7 +158,7 @@ Rationale: [{[ratelimited]: Required:1.00, Observed:0.00},]}}
 
 When hitting a throttle, `NSPersistentCloudKitContainer` stops synchronization, until the throttle expires. The expiration time of a throttle depends on the policy. For more information, see [Understand system throttles](./tn3163-understanding-the-synchronization-of-nspersistentcloudkitcontainer.md#Understand-system-throttles).
 
-##### Execute the export
+### Execute the export
 
 Once the system decides that the export can proceed, `NSPersistentCloudKitContainer` starts to execute it. Use the `process` (”<the app name>”), `subsystem` (“com.apple.coredata”), and `message` (“export”) filters to find the logs that show the whole lifecycle. The following example shows an export was scheduled, enqueued, executed, and finished:
 
@@ -221,7 +221,7 @@ error: Error Domain=NSCocoaErrorDomain Code=134417
 was cancelled because there is already a pending request of type 'NSCloudKitMirroringExportRequest'." …
 ```
 
-#### Understand the import
+## Understand the import
 
 An import has the following phases:
 
@@ -231,7 +231,7 @@ An import has the following phases:
 
 This section shows the filters for tracing the phases, and provides the representative logs that can be used to identify the phases and their state.
 
-##### Schedule an import
+### Schedule an import
 
 The associated CloudKit database can change (as a result of a peer’s export, for example). To merge the remote changes, `NSPersistentCloudKitContainer` schedules the following imports:
 
@@ -324,7 +324,7 @@ com.apple.coredata.cloudkit.private.subscription <CKDatabaseNotification: …>
 
 > **Note**: If the system receives a CloudKit notification but doesn’t forward it to your app, confirm that the `Remote notification` background mode is on in your project, as described in [Enable Remote Notifications in the Background](../CoreData/setting-up-core-data-with-cloudkit.md).
 
-##### Confirm that the import can proceed
+### Confirm that the import can proceed
 
 As it does for an export, `NSPersistentCloudKitContainer` coordinates with the system on when to do an import. Use the `process` (“dasd”) and `message` (“activity.import.<the-store-UUID>”) filters to find the relevant logs. The following example shows the system applied `Activity Group Policy` to throttle an import, and let it go almost immediately because the throttle quickly expired:
 
@@ -348,7 +348,7 @@ FinalDecision: Can Proceed FinalScore: 0.843824}
 
 For more information, see [Understand system throttles](./tn3163-understanding-the-synchronization-of-nspersistentcloudkitcontainer.md#Understand-system-throttles).
 
-##### Execute the import
+### Execute the import
 
 `NSPersistentCloudKitContainer` starts to execute an import once the system determines the activity can proceed. Use the `process` (”<the app name>”), `subsystem` (“com.apple.coredata”), and `message` ( “import”) filters to find the relevant logs. The following example shows an import was scheduled, enqueued, executed, and finished. The scheduling messages include information about why an import was scheduled – In this example, `ImportActivity` indicates that the import was scheduled in response to the system approving the activity.
 
@@ -408,7 +408,7 @@ with result: <NSCloudKitMirroringResult: …> storeIdentifier: …
 success: 1 madeChanges: 0 error: (null)
 ```
 
-#### Understand system throttles
+## Understand system throttles
 
 The system resources on a device are finite and shared by all apps. High utilization from one app can negatively affect others. To balance the use of the resources and achieve the best overall user experience on the device, the system includes a process to coordinate the execution of app activities, and that is `dasd`.
 
@@ -424,7 +424,7 @@ When hitting a throttle, `NSPersistentCloudKitContainer` stops exporting or impo
 
 CloudKit can throttle the requests from `NSPersistentCloudKitContainer` as well. For more information, see [TN3162: Understanding CloudKit throttles](./tn3162-understanding-cloudkit-throttles.md).
 
-#### Provide actionable feedback
+## Provide actionable feedback
 
 When you see a system behavior that doesn’t make sense in your use case, consider [filing a feedback report](http://developer.apple.com/bug-reporting/). It is important to make your report **actionable** by providing the following information:
 
@@ -440,7 +440,7 @@ For more information about filing a great feedback report, see WWDC22 session 10
 
 > **Note**: When providing feedback for other CloudKit APIs, such as the [CloudKit](../CloudKit/CloudKit.md) framework and [`NSUbiquitousKeyValueStore`](../Foundation/nsubiquitouskeyvaluestore.md), make your report actionable as well by providing the same information, except the Core Data store that isn’t needed.
 
-#### Revision History
+## Revision History
 
 - **2024-02-28** Adjusted some of the video links.
 - **2024-02-20** First published.

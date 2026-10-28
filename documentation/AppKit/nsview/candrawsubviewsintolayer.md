@@ -19,7 +19,7 @@ var canDrawSubviewsIntoLayer: Bool { get set }
 @property BOOL canDrawSubviewsIntoLayer;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), any subviews that have an implicitly created layer—that is, layers for which you did not explicitly set the [`wantsLayer`](./wantslayer.md) property to [`true`](../../Swift/true.md)—draw their contents into the current view’s layer. In other words, the subviews do not get a layer of their own. Instead, they draw their content into the parent view’s layer. All views involved in the operation draw their content using their [`draw(_:)`](./draw%28_%29.md) method. They do not use the [`updateLayer()`](./updatelayer%28%29.md) method to update their layer contents, even if the [`wantsUpdateLayer`](./wantsupdatelayer.md) property is set to [`true`](../../Swift/true.md).
 

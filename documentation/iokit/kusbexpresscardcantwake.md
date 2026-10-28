@@ -14,7 +14,7 @@
 #define kUSBExpressCardCantWake
 ```
 
-#### Discussion
+## Discussion
 
 Useful property names in USB land.
 

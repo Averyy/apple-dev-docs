@@ -21,7 +21,7 @@ A Boolean value indicating whether the request is allowed to use the built-in ce
 var allowsCellularAccess: Bool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Setting this property to `true` makes the request eligible to run over cellular, subject to other considerations (including, but not limited to, the [`URLSessionConfiguration`](../urlsessionconfiguration.md)’s [`allowsCellularAccess`](../urlsessionconfiguration/allowscellularaccess.md) property). Setting this value to `false` ensures that the request will never run over cellular.
 

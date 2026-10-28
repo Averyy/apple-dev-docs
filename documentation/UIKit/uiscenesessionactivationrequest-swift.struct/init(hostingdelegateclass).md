@@ -19,7 +19,7 @@ Creates a `UISceneSessionActivationRequest` customized to open a SwiftUI scene.
 init?<D>(hostingDelegateClass: D.Type) where D : UIHostingSceneDelegate
 ```
 
-#### Discussion
+## Discussion
 
 The first scene declared in the `rootScene` property of your hosting delegate class will be activated by this request.
 

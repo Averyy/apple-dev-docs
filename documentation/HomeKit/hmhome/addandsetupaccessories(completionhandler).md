@@ -31,7 +31,7 @@ func addAndSetUpAccessories() async throws
 
 - [Testing your app with the HomeKit Accessory Simulator](../testing-your-app-with-the-homekit-accessory-simulator.md)
 
-#### Discussion
+## Discussion
 
 This method launches an interactive process that first asks the user to provide a HomeKit code for the accessories—for example, by scanning an 8-digit code, by scanning the QR code, wirelessly by holding an iPhone next to the device, or by manually entering the HomeKit code. The process then asks the user to configure the accessory’s services, naming them and placing them in rooms.
 

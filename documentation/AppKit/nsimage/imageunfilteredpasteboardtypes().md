@@ -21,11 +21,11 @@ class func imageUnfilteredPasteboardTypes() -> [NSPasteboard.PasteboardType]
 + (NSArray<NSString *> *) imageUnfilteredPasteboardTypes;
 ```
 
-#### Return Value
+## Return Value
 
 An array of `NSString` objects, each of which identifies a single supported pasteboard type.
 
-#### Discussion
+## Discussion
 
 The returned list does not contain pasteboard types that are supported only through a user-installed filter service.
 

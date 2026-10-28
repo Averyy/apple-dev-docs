@@ -17,13 +17,13 @@ Implements the rotary positional encoding.
 final class RoPE
 ```
 
-#### Overview
+## Overview
 
 The traditional implementation rotates consecutive pairs of elements in the feature dimension while the default implementation rotates pairs with stride half the feature dimensions for efficiency.
 
 For more details see *RoFormer: Enhanced Transformer with Rotary Position Embedding* ([https://arxiv.org/abs/2104.09864](https://arxiv.org/abs/2104.09864))
 
-##### See Also
+### See Also
 
 - [Positional Encoding](./positional-encoding.md)
 

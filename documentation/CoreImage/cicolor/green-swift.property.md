@@ -24,7 +24,7 @@ var green: CGFloat { get }
 @property (readonly) CGFloat green;
 ```
 
-#### Discussion
+## Discussion
 
 If the [`CIColor`](../cicolor.md) was initialized with a `CGColor` in a non-RGB `CGColorSpace` then it will be converted to sRGB to get the green component.
 

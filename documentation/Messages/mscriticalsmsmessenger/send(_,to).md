@@ -20,11 +20,11 @@ func send(_ message: MSCriticalMessage, to recipient: MSRecipient) async throws 
 
 - [Sending SMS messages from an app](../critical-messaging-api.md)
 
-#### Return Value
+## Return Value
 
 `true` if the message successfully sends.
 
-#### Discussion
+## Discussion
 
 There’s no user interaction necessary for the framework to send this message. If the message sends successfully, the framework displays a notification indicating sending the message was successful. Upon error, this method throws a `MSCriticalMessagingError/errorDomain` error.
 

@@ -25,7 +25,7 @@ func nw_framer_async(_ framer: nw_framer_t, _ async_block: @escaping nw_framer_b
 void nw_framer_async(nw_framer_t framer, nw_framer_block_t async_block);
 ```
 
-#### Discussion
+## Discussion
 
 You should call this if you need to call any framer functions but are in another scheduling context.
 

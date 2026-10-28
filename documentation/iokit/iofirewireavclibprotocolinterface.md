@@ -18,7 +18,7 @@ typedef struct _IOFireWireAVCLibProtocolInterface {
 } IOFireWireAVCLibProtocolInterface;
 ```
 
-#### Overview
+## Overview
 
 The IOFireWireAVCLibProtocolInterface is used to set up local plug control registers and to receive AVC requests.
 

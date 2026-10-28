@@ -17,7 +17,7 @@ The system pattern color to use for the area behind scrollable content.
 @property (class, nonatomic, readonly) UIColor * scrollViewTexturedBackgroundColor;
 ```
 
-#### Return Value
+## Return Value
 
 The `UIColor` object.
 

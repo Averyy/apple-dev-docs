@@ -23,7 +23,7 @@ class CFMutableCharacterSet
 typedef struct __CFCharacterSet * CFMutableCharacterSetRef;
 ```
 
-#### Overview
+## Overview
 
 CFMutableCharacterSet manages dynamic character sets. The basic interface for managing character sets is provided by [`CFCharacterSet`](./cfcharacterset.md). CFMutableCharacterSet adds functions to modify the contents of a character set.
 

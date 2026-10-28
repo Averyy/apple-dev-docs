@@ -19,7 +19,7 @@ An option to programmatically determine how much variety to use when creating im
 case automatic
 ```
 
-#### Discussion
+## Discussion
 
 This option offers a middle ground between low and high variety. It modifies the creation parameters for some, but not all, of the images.
 

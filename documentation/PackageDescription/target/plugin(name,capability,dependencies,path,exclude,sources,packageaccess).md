@@ -15,11 +15,11 @@ Defines a new package plug-in target.
 static func plugin(name: String, capability: Target.PluginCapability, dependencies: [Target.Dependency] = [], path: String? = nil, exclude: [String] = [], sources: [String]? = nil, packageAccess: Bool = true) -> Target
 ```
 
-#### Return Value
+## Return Value
 
 A `Target` instance.
 
-#### Discussion
+## Discussion
 
 A plug-in target provides custom build commands to SwiftPM (and to any IDEs based on libSwiftPM).
 

@@ -23,7 +23,7 @@ var classCount: Int { get }
 @property (nonatomic, readonly) NSUInteger classCount;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is 1.
 

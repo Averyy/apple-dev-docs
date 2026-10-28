@@ -25,7 +25,7 @@ var host: String? { get }
 @property (copy, readonly, nullable) NSString * host;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the host, unescaped using the [`replacingPercentEscapes(using:)`](../nsstring/replacingpercentescapes%28using%29.md) method. If the receiver does not conform to RFC 1808, this property contains `nil`. For example, in the URL `http://www.example.com/index.html`, the host is `www.example.com`.
 

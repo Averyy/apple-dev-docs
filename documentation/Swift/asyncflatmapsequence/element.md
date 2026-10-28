@@ -23,7 +23,7 @@ typealias Element = SegmentOfResult.Element
 
 Available when `Base` conforms to `AsyncSequence` and `SegmentOfResult` conforms to `AsyncSequence`.
 
-#### Discussion
+## Discussion
 
 The flat map sequence produces the type of element in the asynchronous sequence produced by the `transform` closure.
 

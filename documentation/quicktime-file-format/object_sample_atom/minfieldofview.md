@@ -6,7 +6,7 @@
 
 The minimum field of view to which the object can zoom.
 
-#### Overview
+## Overview
 
 The valid range for this field is from 1 to the value of the `fieldOfView` field. The value of this field must be positive.
 

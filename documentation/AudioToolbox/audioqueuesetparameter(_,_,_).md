@@ -24,11 +24,11 @@ func AudioQueueSetParameter(_ inAQ: AudioQueueRef, _ inParamID: AudioQueueParame
 extern OSStatus AudioQueueSetParameter(AudioQueueRef inAQ, AudioQueueParameterID inParamID, AudioQueueParameterValue inValue);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See Result Codes.
 
-#### Discussion
+## Discussion
 
 Use this function to change the settings for a playback audio queue directly. Changes take effect immediately. To set playback gain at the granularity of an audio queue buffer, use the [`AudioQueueEnqueueBufferWithParameters(_:_:_:_:_:_:_:_:_:_:)`](./audioqueueenqueuebufferwithparameters%28_,_,_,_,_,_,_,_,_,_%29.md) function.
 

@@ -23,7 +23,7 @@ case keyboardLANG2
 UIKeyboardHIDUsageKeyboardLANG2
 ```
 
-#### Discussion
+## Discussion
 
 On Japanese language keyboards from Apple, the [`UIKeyboardHIDUsage.keyboardLANG2`](./keyboardlang2.md) key is the alphanumeric (英数) key. On Korean language keyboards, it’s the Hanja conversion key.
 

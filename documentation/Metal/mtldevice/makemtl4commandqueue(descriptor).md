@@ -25,7 +25,7 @@ func makeMTL4CommandQueue(descriptor: MTL4CommandQueueDescriptor) throws -> any 
 - (id<MTL4CommandQueue>) newMTL4CommandQueueWithDescriptor:(MTL4CommandQueueDescriptor *) descriptor error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A [`MTL4CommandQueue`](../mtl4commandqueue.md) instance, or `nil` if the function failed.
 

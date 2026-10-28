@@ -17,7 +17,7 @@ Element-wise logical or.
 static func .|| (lhs: MLXArray, rhs: MLXArray) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 Logical or on two arrays with [Numpy Style Broadcasting](../broadcasting.md).
 
@@ -30,7 +30,7 @@ let b = a + 1
 let r = (a .< b) .|| ((a + 1) .> b)
 ```
 
-##### See Also
+### See Also
 
 - [Logical Operators](../logical.md)
 - [`logicalOr(_:_:stream:)`](../logicalor%28_,_,stream%29.md)

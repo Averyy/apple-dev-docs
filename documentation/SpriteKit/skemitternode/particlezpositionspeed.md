@@ -25,7 +25,7 @@ var particleZPositionSpeed: CGFloat { get set }
 @property (nonatomic) CGFloat particleZPositionSpeed;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `0.0`.
 

@@ -16,7 +16,7 @@ Returns a new stream.
 + (instancetype) streamWithLocalizedName:(NSString *) localizedName streamID:(NSUUID *) streamID direction:(CMIOExtensionStreamDirection) direction clockType:(CMIOExtensionStreamClockType) clockType source:(id<CMIOExtensionStreamSource>) source;
 ```
 
-#### Return Value
+## Return Value
 
 A new stream object.
 

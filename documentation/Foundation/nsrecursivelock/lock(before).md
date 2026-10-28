@@ -25,11 +25,11 @@ func lock(before limit: Date) -> Bool
 - (BOOL) lockBeforeDate:(NSDate *) limit;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the lock is acquired before `limit`, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 The thread is blocked until the receiver acquires the lock or `limit` is reached.
 

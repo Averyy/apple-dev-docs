@@ -25,7 +25,7 @@ func decodeDouble(forKey key: String) -> Double
 - (double) decodeDoubleForKey:(NSString *) key;
 ```
 
-#### Discussion
+## Discussion
 
 Subclasses must override this method if they perform keyed coding.
 

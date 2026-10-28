@@ -28,7 +28,7 @@ class SCSensitivityAnalyzer
 - [Detecting sensitive content in media and providing intervention options](./detecting-nudity-in-media-and-providing-intervention-options.md)
 - [Testing your app’s response to sensitive media](./testing-your-app-s-response-to-sensitive-media.md)
 
-#### Overview
+## Overview
 
 To check an image for sensitive content, call one of this class’s `analyzeImage` methods and pass in a user-provided image, or a URL to the image.
 

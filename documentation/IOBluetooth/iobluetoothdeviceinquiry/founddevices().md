@@ -19,11 +19,11 @@ func foundDevices() -> [Any]!
 - (NSArray *) foundDevices;
 ```
 
-#### Return Value
+## Return Value
 
 Returns an NSArray of IOBluetoothDevice objects.
 
-#### Discussion
+## Discussion
 
 Will not return nil. If there are no devices found, returns an array with length of 0.
 

@@ -63,7 +63,7 @@ init(wrappedValue: Value, _ key: String) where Value == URL
 init<RowValue>(wrappedValue: Value = TableColumnCustomization<RowValue>(), _ key: String) where Value == TableColumnCustomization<RowValue>, RowValue : Identifiable
 ```
 
-#### Discussion
+## Discussion
 
 A common usage is with enumerations:
 

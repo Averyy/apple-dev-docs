@@ -25,7 +25,7 @@ var ssmlRepresentation: String { get }
 @property (nonatomic, readonly) NSString * ssmlRepresentation;
 ```
 
-#### Discussion
+## Discussion
 
 The Speech Synthesis Markup Language describes the speech synthesis attributes for the customization of pitch, rate, intonation, and more.
 

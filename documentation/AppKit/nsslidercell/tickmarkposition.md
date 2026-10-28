@@ -19,7 +19,7 @@ var tickMarkPosition: NSSlider.TickMarkPosition { get set }
 @property NSTickMarkPosition tickMarkPosition;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is a constant indicating the position of the tick marks. Possible values  are described in [`NSSlider.TickMarkPosition`](../nsslider/tickmarkposition-swift.enum.md). The default alignments are `NSTickMarkBelow` and `NSTickMarkLeft`. Setting this property has no effect if no tick marks have been assigned (that is, if [`numberOfTickMarks`](./numberoftickmarks.md) is 0).
 

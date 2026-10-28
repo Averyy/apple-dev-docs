@@ -21,11 +21,11 @@ func mmioRead(atOffset offset: Int) -> UInt32
 - (uint32_t) mmioReadAtOffset:(size_t) offset;
 ```
 
-#### Return Value
+## Return Value
 
 The 32-bit unsigned integer from the MMIO region.
 
-#### Discussion
+## Discussion
 
 Call this method whenever the guest virtual machine reads from the graphics device’s memory-mapped I/O region.
 

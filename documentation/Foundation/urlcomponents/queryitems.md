@@ -21,7 +21,7 @@ An array of query items for the URL in the order in which they appear in the ori
 var queryItems: [URLQueryItem]? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Each `URLQueryItem` represents a single key-value pair,
 

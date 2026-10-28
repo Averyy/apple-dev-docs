@@ -15,7 +15,7 @@ A base class that represents a Unified Extensible Firmware Interface (UEFI) sign
 @interface VZEFISignature : NSObject
 ```
 
-#### Overview
+## Overview
 
 Don’t instantiate `VZEFISignature` objects directly; instead, create an instance of one of its subclasses, such as [`VZEFISignatureX509Certificate`](./vzefisignaturex509certificate.md) or [`VZEFISignatureSHA256Hash`](./vzefisignaturesha256hash.md).
 

@@ -24,7 +24,7 @@ var prepareWithDevice: ((any MTLDevice) -> Void)?
 - [Applying core image filters as a postprocess effect](../../applying-core-image-filters-as-a-postprocess-effect.md)
 - [Implementing postprocess effects using Metal compute functions](../../implementing-postprocess-effects-using-metal-compute-functions.md)
 
-#### Discussion
+## Discussion
 
 If you assign a function to [`prepareWithDevice`](./preparewithdevice.md), RealityKit calls that function once, after it does its setup work, but before it renders the next frame. If you register a [`prepareWithDevice`](./preparewithdevice.md) callback during app startup, RealityKit calls it before it renders the first frame. A callback function looks like this:
 

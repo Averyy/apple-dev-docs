@@ -25,7 +25,7 @@ class func localizedString(forStatusCode statusCode: Int) -> String
 + (NSString *) localizedStringForStatusCode:(NSInteger) statusCode;
 ```
 
-#### Return Value
+## Return Value
 
 A localized string suitable for displaying to users that describes the specified status code.
 

@@ -25,11 +25,11 @@ class func disambiguation(with noteContentsToDisambiguate: [INNoteContent]) -> S
 + (instancetype) disambiguationWithNoteContentsToDisambiguate:(NSArray<INNoteContent *> *) noteContentsToDisambiguate;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INNoteContentResolutionResult`](../innotecontentresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object when more than one note matches the provided information and you cannot pick one definitively. Ask the user to select from among the notes that you specify.
 

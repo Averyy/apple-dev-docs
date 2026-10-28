@@ -21,7 +21,7 @@ The refund request submission failed.
 case failed
 ```
 
-#### Discussion
+## Discussion
 
 A refund request submission can fail for many reasons, such as having an invalid transaction identifier, or if the App Store can’t process the request for some other reason.
 

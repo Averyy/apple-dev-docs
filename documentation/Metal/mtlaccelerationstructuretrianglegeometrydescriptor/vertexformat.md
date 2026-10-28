@@ -24,7 +24,7 @@ var vertexFormat: MTLAttributeFormat { get set }
 @property (nonatomic) MTLAttributeFormat vertexFormat;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to a value that represents the pixel format of the data you assign to the [`vertexBuffer`](./vertexbuffer.md) property. The property’s default is [`MTLAttributeFormat.float3`](../mtlattributeformat/float3.md).
 

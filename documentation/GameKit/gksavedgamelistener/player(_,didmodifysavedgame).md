@@ -23,7 +23,7 @@ optional func player(_ player: GKPlayer, didModifySavedGame savedGame: GKSavedGa
 - (void) player:(GKPlayer *) player didModifySavedGame:(GKSavedGame *) savedGame;
 ```
 
-#### Discussion
+## Discussion
 
 GameKit invokes this method when you save game data on a device that isn’t the user’s current device.
 

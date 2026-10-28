@@ -19,7 +19,7 @@ Placement for commands that control the Undo Manager.
 static let undoRedo: CommandGroupPlacement
 ```
 
-#### Discussion
+## Discussion
 
 By default, this group includes the following commands in macOS:
 

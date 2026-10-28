@@ -20,7 +20,7 @@ Creates a file coordinator for coordinated disk access outside the normal read/w
 final func makeFileCoordinator() -> sending NSFileCoordinator
 ```
 
-#### Discussion
+## Discussion
 
 Call this every time to get a new coordinator for each separate read or write operation. SwiftUI coordinates file access for [`read(from:progress:)`](../documentreader/read%28from,progress%29.md) and [`write(snapshot:to:previous:progress:)`](../documentwriter/write%28snapshot,to,previous,progress%29.md) automatically. Use this method when you need to access the document’s file at other times — for example, to read a single sub-file of a package on demand.
 

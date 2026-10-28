@@ -25,7 +25,7 @@ let kCTFontFeaturesAttribute: CFString
 extern CFStringRef const kCTFontFeaturesAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 The value associated with this key is a [`CFArray`](../CoreFoundation/cfarray.md) object containing font feature dictionaries. This feature list contains the feature information from the [‘feat’ table](https://developer.apple.com/fonts/TrueType-Reference-Manual/RM06/Chap6feat.html) of the font. For more information, see [`CTFontCopyFeatures(_:)`](./ctfontcopyfeatures%28_%29.md).
 

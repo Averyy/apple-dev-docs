@@ -25,11 +25,11 @@ convenience init?(nickname: INSpeakableString, number: String?, accountType: INA
 - (instancetype) initWithNickname:(INSpeakableString *) nickname number:(NSString *) number accountType:(INAccountType) accountType organizationName:(INSpeakableString *) organizationName;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized [`INPaymentAccount`](../inpaymentaccount.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create payment accounts associated with the user.
 

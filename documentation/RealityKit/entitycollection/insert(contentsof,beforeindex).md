@@ -21,7 +21,7 @@ Adds the specified sequence of entities to this collection in order, directly be
 mutating func insert<S>(contentsOf sequence: S, beforeIndex index: Int) where S : Sequence, S.Element : Entity
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: This operation can invalidate the index order of any extant entities.
 

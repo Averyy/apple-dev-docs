@@ -20,7 +20,7 @@ Returns a Boolean value that indicates whether two components of a bind path are
 static func == (lhs: BindPath.Part, rhs: BindPath.Part) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 Returns `true` if the components of the bind path are equal. Otherwise, returns `false`.
 

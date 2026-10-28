@@ -25,7 +25,7 @@ func nw_quic_copy_sec_protocol_metadata(_ metadata: nw_protocol_metadata_t) -> s
 sec_protocol_metadata_tnw_quic_copy_sec_protocol_metadata(nw_protocol_metadata_t metadata);
 ```
 
-#### Return Value
+## Return Value
 
 The security metadata for the QUIC connection.
 

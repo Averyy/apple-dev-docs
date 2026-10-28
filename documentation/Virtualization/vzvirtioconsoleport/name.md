@@ -19,7 +19,7 @@ var name: String? { get }
 @property (copy, readonly, nullable) NSString * name;
 ```
 
-#### Discussion
+## Discussion
 
 This property can’t change while the VM is running. A null value indicates a name isn’t set.
 

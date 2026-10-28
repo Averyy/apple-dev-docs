@@ -5,115 +5,115 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 The macOS 26.4 SDK provides support to develop apps for Mac computers running Tahoe 26.4. The SDK comes bundled with Xcode 26.4. For information on the compatibility requirements for Xcode 26.4, see [Xcode 26.4 Release Notes](../Xcode-Release-Notes/xcode-26_4-release-notes.md).
 
-##### Address Sanitizer
+### Address Sanitizer
 
-###### Known Issues
+#### Known Issues
 
 - Address Sanitizer and Thread Sanitizer might hang on macOS 26.4, iOS 26.4, tvOS 26.4, watchOS 26.4, and visionOS 26.4 when building with Xcode 26.3 or older.  (171762808)
 
   **Workaround:** Use Xcode 26.4 when testing applications with Address Sanitizer or Thread Sanitizer.
 
-##### AppKit
+### AppKit
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Window resize pointer does not follow the window’s corner shape.  (149726089)
 
-##### Background Assets
+### Background Assets
 
-###### New Features
+#### New Features
 
 - You can now check the status of an asset pack while offline by calling `localStatus(ofAssetPackWithID:)` or `assetPackIsAvailableLocally(withID:)` on the shared asset pack manager. The former method returns all available status information. The latter returns only a Boolean value but can be called synchronously. Not all status information is available offline.  (164498466)
 - You can make the latest version of an asset pack available locally by calling `ensureLocalAvailability(of:requireLatestVersion:)` on the shared asset pack manager and passing `true` to the `shouldUpdate` parameter.  (166237389)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Setting a URL override could break apps from the App Store that use Apple-Hosted Background Assets.  (169558509)
 - Fixed: Apps might crash when downloading asset packs.  (169648111)
 
-##### CoreMIDI
+### CoreMIDI
 
-###### New Features
+#### New Features
 
 - Audio MIDI Setup now supports Network MIDI 2.0 sessions in the redesigned MIDI Network Setup panel. You can create MIDI 2.0 connections over your local network using UDP transport for Universal MIDI Packets, enabling both Legacy MIDI and MIDI 2.0 protocol communication. Network MIDI 2.0 sessions appear alongside existing RTP MIDI sessions and support automatic device discovery through mDNS and data integrity features for reliable wireless performance.  (118728162)
 
-##### External Boot
+### External Boot
 
-###### Known Issues
+#### Known Issues
 
 - When installing an external disk, some configurations of M1 Apple Silicon Macs might panic at boot.   (170263142)
 
   **Workaround:** Install to a secondary volume in APFS container instead of external disk to validate secondary boot sequences.
 
-##### External Media
+### External Media
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: HFS external media might fail to mount automatically.  (168672160)
 
-##### FSKit
+### FSKit
 
-###### Known Issues
+#### Known Issues
 
 - The availability version for `FSVolume.MountOptions` and for the property `FSVolume.requestedMountOptions` is incorrect. These symbols are available starting in macOS 26.4.  (171914656)
 
-##### Installation
+### Installation
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Install macOS Tahoe Beta.app does not work on versions of macOS prior to 15.0.  (170997618)
 
-##### Internet Accounts
+### Internet Accounts
 
-###### Known Issues
+#### Known Issues
 
 - Exchange syncing for Calendar, Reminders and Notes might fail.  (168082477)
 
   **Workaround:** To continue syncing Calendar and Reminders, disable Notes syncing in Internet Accounts.
 
-##### Login
+### Login
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Touch ID might not be available to unlock the screen of a standard user account after updating to this release. This occurs when FileVault is enabled and a standard user account is logged in prior to any administrator logging in following the update.  (169743642)
 
-##### macOS Recovery
+### macOS Recovery
 
-###### Known Issues
+#### Known Issues
 
 - When deleting a boot volume from the Activation Lock window in macOS Recovery, full erase functionality might not work.   (170280070)
 
   **Workaround:** Use the “Erase All Content and Settings” functionality from the booted OS instead of triggering from recovery.
 
-##### Networking
+### Networking
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Multiple processes leak `CFRunLoopSource` objects when Automatic proxy configuration (PAC) or Auto proxy discovery are configured.
 
   For clients of the `CFNetworkExecuteProxyAutoConfigurationURL` and `CFNetworkExecuteProxyAutoConfigurationScript` API, please check to make sure your process is not working around the leak by overreleasing the `CFRunLoopSourceRef` returned by those functions or the `CFArrayRef` and `CFErrorRef` passed to the completion.  (166839810) (FB21376045)
 
-##### Printing
+### Printing
 
-###### Known Issues
+#### Known Issues
 
 - Jobs and Printer Status might not be reflected in Print Center.  (171264258)
 
-##### Resource fork
+### Resource fork
 
-###### Resolved Issues
+#### Resolved Issues
 
 - On macOS 26.4 and later, file systems that do not natively support extended attributes restrict partial writes to the first 286 bytes of the resource fork extended attribute (com.apple.ResourceFork).
 
   To modify the resource fork, replace the entire 286-byte range, or write beyond the 286-byte offset.  (156896699)
 
-##### Rosetta
+### Rosetta
 
-###### Deprecations
+#### Deprecations
 
 - As announced at WWDC in 2025, macOS Tahoe 26 is the last release to support Intel based Macs. Additionally, Rosetta support for apps will end after macOS 27. Starting in macOS Tahoe 26.4, users will be notified when they launch apps that use Rosetta of the upcoming incompatibility.
 
@@ -123,24 +123,24 @@ The macOS 26.4 SDK provides support to develop apps for Mac computers running Ta
 
   Organizations using a device management service can control the notification experience with the `allowRosettaUsageAwareness` key.  (169228455)
 
-##### StoreKit
+### StoreKit
 
-###### New Features
+#### New Features
 
 - New fields [revocationType](../StoreKit/transaction/revocationtype-swift.property.md) and [revocationPercentage](../StoreKit/transaction/revocationpercentage.md) have been added to [Transaction](../StoreKit/transaction.md).  (148858551)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Purchase Intents might not be emitted from the intents sequence when the app is launched from the background.  (168958783) (FB21767675)
 
-##### SwiftUI
+### SwiftUI
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: SwiftUI does not surface the latest `.userActivity` as the current user activity.  (163136831)
 - Fixed: On macOS, a non-opaque window that hosts glass content will correctly update the backdrop content behind the glass even if the window is inactive.  (166828089) (FB21375029)
 
-###### Known Issues
+#### Known Issues
 
 - Multiple implicit SwiftUI animations (triggered by `RealityViewContent.animate` or `Entity.animate`) that modify a RealityKit component’s properties, are combined only when the implicit animations target the same set of component properties.
 
@@ -148,9 +148,9 @@ The macOS 26.4 SDK provides support to develop apps for Mac computers running Ta
 
   **Workaround:** Ensure the same component properties are animated by subsequent implicit animations when possible.
 
-##### Virtualization
+### Virtualization
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: On certain hardware configurations, new macOS Tahoe virtual machine installations may boot to a black screen.  (169654019)
 

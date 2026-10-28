@@ -21,11 +21,11 @@ func SMJobBless(_ domain: CFString!, _ executableLabel: CFString, _ auth: Author
 extern Boolean SMJobBless(CFStringRef domain, CFStringRef executableLabel, AuthorizationRef auth, CFErrorRef*outError);
 ```
 
-#### Return Value
+## Return Value
 
 Returns [`true`](../Swift/true.md) if the job was successfully submitted; otherwise [`false`](../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 `SMJobBless` submits the executable for the given label as a `launchd` job. This function removes the need for a `setuid(_:)` helper invoked through [`AuthorizationExecuteWithPrivileges`](../Security/authorizationexecutewithprivileges.md) in order to install a `launchd` property list. If the job is already installed, this methods returns [`true`](../Swift/true.md).
 

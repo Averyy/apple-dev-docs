@@ -21,7 +21,7 @@ var allowsDuplicatesInToolbar: Bool { get }
 @property (readonly) BOOL allowsDuplicatesInToolbar;
 ```
 
-#### Discussion
+## Discussion
 
 If the value in this property is [`true`](../../Swift/true.md), the toolbar allows someone to drag more than one copy of the toolbar item from the customization palette. If the value of this property is [`false`](../../Swift/false.md), the toolbar prevents someone from dragging more than one copy of the item from the customization palette.
 

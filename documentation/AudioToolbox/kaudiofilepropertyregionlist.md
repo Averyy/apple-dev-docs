@@ -24,7 +24,7 @@ var kAudioFilePropertyRegionList: AudioFilePropertyID { get }
 kAudioFilePropertyRegionList
 ```
 
-#### Discussion
+## Discussion
 
 If you access this property, your app is responsible for releasing the [`CFString`](../CoreFoundation/cfstring.md) objects.
 

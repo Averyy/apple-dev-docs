@@ -25,7 +25,7 @@ static var calendar: NSCalendar.Unit { get }
 NSCalendarUnitCalendar
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is an [`NSCalendar`](../../nscalendar.md).
 

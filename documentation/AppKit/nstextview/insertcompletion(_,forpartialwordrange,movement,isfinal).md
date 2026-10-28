@@ -19,7 +19,7 @@ func insertCompletion(_ word: String, forPartialWordRange charRange: NSRange, mo
 - (void) insertCompletion:(NSString *) word forPartialWordRange:(NSRange) charRange movement:(NSInteger) movement isFinal:(BOOL) flag;
 ```
 
-#### Discussion
+## Discussion
 
 This method has two effects, text substitution and changing of the selection:
 

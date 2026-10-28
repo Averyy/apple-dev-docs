@@ -19,11 +19,11 @@ Provides rooms that correspond to a home in the device setup.
 func rooms(in home: MatterAddDeviceRequest.Home?) async -> [MatterAddDeviceRequest.Room]
 ```
 
-#### Return Value
+## Return Value
 
 The list of rooms to show. If only one room exists, no room card appears.
 
-#### Discussion
+## Discussion
 
 The system issues this request before presenting the “Select Room” card, and populates the picker with these options.
 

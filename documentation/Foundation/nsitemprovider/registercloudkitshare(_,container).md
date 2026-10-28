@@ -19,7 +19,7 @@ func registerCloudKitShare(_ share: CKShare, container: CKContainer)
 - (void) registerCloudKitShare:(CKShare *) share container:(CKContainer *) container;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method when the CloudKit share already exists on the server and you want to update it. The behavior of the sharing service depends on the role of the current user. An owner can edit the share’s configuration, which includes managing participants and their permissions. A participant can view the share’s configuration and choose to stop participating.
 

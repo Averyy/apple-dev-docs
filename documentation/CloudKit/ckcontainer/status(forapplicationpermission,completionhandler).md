@@ -31,7 +31,7 @@ func applicationPermissionStatus(for applicationPermission: CKContainer.Applicat
 - (void) statusForApplicationPermission:(CKApplicationPermissions) applicationPermission completionHandler:(CKApplicationPermissionBlock) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to determine the extra capabilities that the user grants to your app. If your app doesn’t have a specific permission, calling this method yields [`CKContainer.ApplicationPermissionStatus.initialState`](./applicationpermissionstatus/initialstate.md). In response, call the [`requestApplicationPermission(_:completionHandler:)`](./requestapplicationpermission%28_,completionhandler%29.md) method to prompt the user to provide their permission.
 

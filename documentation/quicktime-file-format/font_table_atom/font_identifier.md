@@ -6,7 +6,7 @@
 
 An unsigned 16-bit integer that identifies the font.
 
-#### Overview
+## Overview
 
 This can be any number to uniquely identify this font in this table, but it must match the font number specified in the subtitle sample description and in any per-sample style records (`'styl'`).
 

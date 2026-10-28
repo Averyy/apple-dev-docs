@@ -21,7 +21,7 @@ Mutate the elements of a typed span as bytes.
 init<Element>(mutating elements: inout MutableSpan<Element>) where Element : ConvertibleFromBytes, Element : ConvertibleToBytes
 ```
 
-#### Discussion
+## Discussion
 
 The stride of `Element` must equal its size, and the starting address of `elements` must be well-aligned for `Element`.
 

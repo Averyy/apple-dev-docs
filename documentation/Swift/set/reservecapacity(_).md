@@ -23,7 +23,7 @@ mutating func reserveCapacity(_ minimumCapacity: Int)
 
 Available when `Element` conforms to `Hashable`.
 
-#### Discussion
+## Discussion
 
 If you are adding a known number of elements to a set, use this method to avoid multiple reallocations. This method ensures that the set has unique, mutable, contiguous storage, with space allocated for at least the requested number of elements.
 

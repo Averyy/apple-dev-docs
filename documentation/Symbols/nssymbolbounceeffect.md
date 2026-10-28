@@ -21,7 +21,7 @@ A type that applies a transitory scaling effect, or bounce, to the layers in a s
 @interface NSSymbolBounceEffect : NSSymbolEffect
 ```
 
-#### Overview
+## Overview
 
 A bounce animation draws attention to a symbol by applying a brief scaling operation to the symbol’s layers. You can choose to scale the symbol up or down as it bounces.
 

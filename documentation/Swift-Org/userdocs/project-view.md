@@ -10,7 +10,7 @@ framework: "Swift-Org/userdocs"
 
 Use this view to get a high level view of your Swift project.
 
-#### Overview
+## Overview
 
 If your workspace contains a package, this extension will add a **Swift Project** view to the Explorer:
 

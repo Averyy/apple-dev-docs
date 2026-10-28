@@ -23,7 +23,7 @@ class func attributionToken() throws -> String
 + (NSString *) attributionTokenWithError:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 The token that the framework returns is a Base64 encoded string and has a 24-hour TTL. You can provide the token to a Mobile Measurement Provider (MMP), or app developers can use it to make a `POST` API call to fetch attribution records within the 24-hour TTL window. Use a single token in the request body and use a content-type of `text/plain` in the header, as the following example shows:
 
@@ -39,7 +39,7 @@ G9i5hC8lQJeGOfmS+MFycll/025oJEjtpZ+rs4AUkDEJh52fT8RrjwIR/h+2JOpXz4MRdmtcemL8WTTH
 
 For details about error codes, see [`AAAttributionError`](../aaattributionerror.md).
 
-#### Response codes
+## Response codes
 
 | **Response** | **Description** |
 | --- | --- |
@@ -48,7 +48,7 @@ For details about error codes, see [`AAAttributionError`](../aaattributionerror.
 | 404 | Not found. The API is unable to retrieve the requested attribution record.  ![](https://developer.apple.com/tutorials/images/com.apple.AdServices/spacer.png)Tokens have a TTL of 24 hours. If the `POST` API call exceeds 24 hours, a `404` response returns. If your token is valid, a best practice is to initiate retries at intervals of 5 seconds with a maximum of three attempts. |
 | 500 | The Apple Ads server is temporarily down or unreachable. The request may be valid, but you need to retry it later. |
 
-#### Attribution payloads
+## Attribution payloads
 
 The attribution record is a data dictionary with key-value pairs that correspond to your Apple Ads campaigns and app downloads from devices running iOS 14 and later. Run reports to review detailed campaign metadata in the [Apple Ads Platform API](../../apple-ads-platform-api/apple-ads-platform-api.md) or [Apple Ads Advanced](https://ads.apple.com/advanced/).
 
@@ -70,7 +70,7 @@ The attribution record is a data dictionary with key-value pairs that correspond
 }
 ```
 
-##### Tap-through payload example
+### Tap-through payload example
 
 A payload for tap-through attribution resembles the following:
 
@@ -90,7 +90,7 @@ A payload for tap-through attribution resembles the following:
 }
 ```
 
-##### View-through payload example
+### View-through payload example
 
 A payload for view-through attribution resembles the following:
 
@@ -110,7 +110,7 @@ A payload for view-through attribution resembles the following:
 }
 ```
 
-##### Pre-order payload example
+### Pre-order payload example
 
 A payload for pre-order attribution on tap-throughs resembles the following:
 
@@ -148,7 +148,7 @@ A payload for pre-order attribution on view-throughs resembles the following:
 }
 ```
 
-#### Attribution payload descriptions
+## Attribution payload descriptions
 
 | **Field** | **Data type** | **Description** |
 | --- | --- | --- |
@@ -165,7 +165,7 @@ A payload for pre-order attribution on view-throughs resembles the following:
 | `orgId` | long | The identifier of the organization that owns the campaign. Your `orgId` is the same as your account in Apple Ads Advanced. ![](https://developer.apple.com/tutorials/images/com.apple.AdServices/spacer.png)Obtain your `orgId` by calling [`Get User ACL`](../../apple-ads-platform-api/get-user-acls.md) in the Apple Ads Platform API. |
 | `supplyPlacement` | string | The ad placements for a campaign. |
 
-##### supplyPlacement descriptions
+### supplyPlacement descriptions
 
 | **Value** | **Description** |
 | --- | --- |

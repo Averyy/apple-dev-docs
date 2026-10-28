@@ -15,7 +15,7 @@ The header for the table view.
 @property (strong, nullable) id accessibilityHeader;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property on a table view.
 

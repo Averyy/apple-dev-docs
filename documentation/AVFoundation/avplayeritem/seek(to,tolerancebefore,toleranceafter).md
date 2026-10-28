@@ -25,7 +25,7 @@ func seek(to time: CMTime, toleranceBefore: CMTime, toleranceAfter: CMTime)
 - (void) seekToTime:(CMTime) time toleranceBefore:(CMTime) toleranceBefore toleranceAfter:(CMTime) toleranceAfter;
 ```
 
-#### Discussion
+## Discussion
 
 The time seeked to will be within the range `[time-beforeTolerance, time+afterTolerance]`, and may differ from the specified time for efficiency. If you pass `kCMTimeZero` for both `toleranceBefore` and `toleranceAfter` (to request sample accurate seeking), you may incur additional decoding delay that impacts seeking performance.
 

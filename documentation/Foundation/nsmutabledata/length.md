@@ -25,7 +25,7 @@ var length: Int { get set }
 @property NSUInteger length;
 ```
 
-#### Discussion
+## Discussion
 
 The mutable data object’s length parameter is read-writeable. You can set this parameter to expand or truncate the number of bytes contained by the data object. If the mutable data object is expanded, the additional bytes are filled with zeros.
 

@@ -21,11 +21,11 @@ func openFile(_ fullPath: String, withApplication appName: String?) -> Bool
 - (BOOL) openFile:(NSString *) fullPath withApplication:(NSString *) appName;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the file was successfully opened; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 The `appName` parameter need not be specified with a full path and, in the case of an app wrapper, may be specified with or without the `.app` extension. The sending app is deactivated before the request is sent.
 

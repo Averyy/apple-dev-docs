@@ -26,7 +26,7 @@ func buyProduct(productIdentifier: String) throws
 - (BOOL) buyProductWithIdentifier:(NSString *) productIdentifier error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 After calling this function, handle the new transaction in your payment queue.
 

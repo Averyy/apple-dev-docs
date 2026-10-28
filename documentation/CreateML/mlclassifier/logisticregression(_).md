@@ -15,7 +15,7 @@ A classifier that predicts a discrete target value as a function of data feature
 case logisticRegression(MLLogisticRegressionClassifier)
 ```
 
-#### Discussion
+## Discussion
 
 Don’t create an [`MLClassifier`](../mlclassifier.md) using one of its enumeration cases. Use the classifier’s initializer instead.
 

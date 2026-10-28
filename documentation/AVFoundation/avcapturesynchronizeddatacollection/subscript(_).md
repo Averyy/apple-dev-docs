@@ -22,11 +22,11 @@ subscript(key: AVCaptureOutput) -> AVCaptureSynchronizedData? { get }
 - (AVCaptureSynchronizedData *) objectForKeyedSubscript:(AVCaptureOutput *) key;
 ```
 
-#### Return Value
+## Return Value
 
 A synchronized data object corresponding to the specified capture output.
 
-#### Discussion
+## Discussion
 
 This call is equivalent to the [`synchronizedData(for:)`](./synchronizeddata%28for%29.md) method, but allows subscript syntax.
 

@@ -19,7 +19,7 @@ func addItems(withTitles itemTitles: [String])
 - (void) addItemsWithTitles:(NSArray<NSString *> *) itemTitles;
 ```
 
-#### Discussion
+## Discussion
 
 The new menu items use the pop-up button’s default action and target, but you can change these using the setAction: and setTarget: methods of the corresponding [`NSMenuItem`](../nsmenuitem.md) object.
 

@@ -27,7 +27,7 @@ var recordZoneFetchCompletionBlock: ((CKRecordZone.ID, CKServerChangeToken?, Dat
 @property (nonatomic, copy, nullable) void (^recordZoneFetchCompletionBlock)(CKRecordZoneID *recordZoneID, CKServerChangeToken *serverChangeToken, NSData *clientChangeTokenData, BOOL moreComing, NSError *recordZoneError);
 ```
 
-#### Discussion
+## Discussion
 
 The closure returns no value and takes the following parameters:
 

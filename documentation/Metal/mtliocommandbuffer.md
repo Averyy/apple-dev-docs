@@ -24,7 +24,7 @@ protocol MTLIOCommandBuffer : NSObjectProtocol
 @protocol MTLIOCommandBuffer <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Add commands an input/output command buffer to load assets from the file system directly into Metal resources. Your app can then use those resources with other commands it submits to [`MTLCommandQueue`](./mtlcommandqueue.md).
 

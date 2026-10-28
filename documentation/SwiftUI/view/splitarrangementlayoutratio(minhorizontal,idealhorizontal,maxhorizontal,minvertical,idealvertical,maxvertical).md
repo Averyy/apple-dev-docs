@@ -22,7 +22,7 @@ nonisolated
 func splitArrangementLayoutRatio(minHorizontal: CGFloat? = nil, idealHorizontal: CGFloat? = nil, maxHorizontal: CGFloat? = nil, minVertical: CGFloat? = nil, idealVertical: CGFloat? = nil, maxVertical: CGFloat? = nil) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Use this modifier when you want to customize the size of a view compared to the other view in the split arrangement, as the following example shows:
 

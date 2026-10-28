@@ -20,7 +20,7 @@ enum ApplePayContactField
 
 - [Apple Pay on the Web Version 3 Release Notes](./apple-pay-on-the-web-version-3-release-notes.md)
 
-#### Overview
+## Overview
 
 Contact field values (available in all versions of the API):
 

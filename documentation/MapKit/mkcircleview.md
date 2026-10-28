@@ -23,7 +23,7 @@ class MKCircleView
 @interface MKCircleView : MKOverlayPathView
 ```
 
-#### Overview
+## Overview
 
 This view fills and strokes the circle represented by the annotation. You can change the color and other drawing attributes of the circle by modifying the properties inherited from the [`MKOverlayPathView`](./mkoverlaypathview.md) class. This class is typically used as is and not subclassed.
 

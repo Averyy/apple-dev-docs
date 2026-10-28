@@ -19,7 +19,7 @@ A macro that masks out all but the supplementary information field from a major 
 #define GSS_SUPPLEMENTARY_INFO(x)
 ```
 
-#### Discussion
+## Discussion
 
 Apply this macro to a major status code, then compare the result with one of the supplementary information constants to extract the relevant information.
 

@@ -23,7 +23,7 @@ var publicKeyIndex: Int { get }
 @property (nonatomic, assign, readonly) NSUInteger publicKeyIndex;
 ```
 
-#### Discussion
+## Discussion
 
 This data can be used to determine if the node is the left or the right child in the tree.
 

@@ -21,7 +21,7 @@ var playbackProgress: CGFloat { get set }
 @property (nonatomic, assign) CGFloat playbackProgress;
 ```
 
-#### Discussion
+## Discussion
 
 If the list item represents media content that is playable, set this property’s value to a fractional number between 0 and 1 to indicate its playback progress. The list item displays a progress bar that derives its value from this property.
 

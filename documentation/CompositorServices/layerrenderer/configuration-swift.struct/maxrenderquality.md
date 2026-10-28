@@ -20,7 +20,7 @@ var maxRenderQuality: LayerRenderer.RenderQuality { get set }
 
 - [Defining layer renderer quality](../../defining-layer-renderer-quality.md)
 
-#### Discussion
+## Discussion
 
 The max render quality is a value between [0, 1]. This determines the max render quality at which drawing can happen.
 

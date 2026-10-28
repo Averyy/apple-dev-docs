@@ -26,11 +26,11 @@ func CFNetServiceGetTypeID() -> CFTypeID
 extern CFTypeID CFNetServiceGetTypeID();
 ```
 
-#### Return Value
+## Return Value
 
 The type ID.
 
-#### Discussion
+## Discussion
 
 This function is thread safe.
 

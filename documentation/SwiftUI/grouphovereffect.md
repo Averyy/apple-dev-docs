@@ -15,7 +15,7 @@ A `CustomHoverEffect` that activates a named group of effects.
 struct GroupHoverEffect
 ```
 
-#### Overview
+## Overview
 
 Use the [`hoverEffectGroup(_:)`](./customhovereffect/hovereffectgroup%28_%29-swift.type.method.md) or [`hoverEffectGroup(id:in:behavior:)`](./customhovereffect/hovereffectgroup%28id,in,behavior%29-swift.type.method.md) methods to construct a [`GroupHoverEffect`](./grouphovereffect.md).
 

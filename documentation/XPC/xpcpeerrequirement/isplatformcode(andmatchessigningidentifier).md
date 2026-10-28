@@ -16,11 +16,11 @@ Create a requirement that the peer is platform binary. If provided, additionally
 static func isPlatformCode(andMatchesSigningIdentifier: String? = nil) -> XPCPeerRequirement
 ```
 
-#### Return Value
+## Return Value
 
 A `XPCPeerRequirement` object representing the requirement
 
-#### Discussion
+## Discussion
 
 - andMatchesSigningIdentifier: If non-nil, The signing identifier the peer must have
 

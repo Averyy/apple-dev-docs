@@ -21,7 +21,7 @@ Gets the invocation’s return value.
 - (void) getReturnValue:(void *) retLoc;
 ```
 
-#### Discussion
+## Discussion
 
 Use the `NSMethodSignature` method [`methodReturnLength`](../nsmethodsignature/methodreturnlength.md) to determine the size needed for `buffer`:
 

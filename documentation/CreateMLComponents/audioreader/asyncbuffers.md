@@ -20,7 +20,7 @@ An async sequence of audio buffers read from an audio file.
 struct AsyncBuffers
 ```
 
-#### Overview
+## Overview
 
 This sequence allows iterating through the file only once.
 

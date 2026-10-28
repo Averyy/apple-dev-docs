@@ -27,7 +27,7 @@ func fileDataRepresentation(with customizer: any AVCapturePhotoFileDataRepresent
 - [Capturing photos in RAW and Apple ProRAW formats](../capturing-photos-in-raw-and-apple-proraw-formats.md)
 - [Configuring camera capture to collect a Portrait Effects matte](../configuring-camera-capture-to-collect-a-portrait-effects-matte.md)
 
-#### Return Value
+## Return Value
 
 A data representation of the photo.
 

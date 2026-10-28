@@ -17,7 +17,7 @@ Sent when the user attempts to drag a cell.
 - (void) textView:(NSTextView *) view draggedCell:(id<NSTextAttachmentCell>) cell inRect:(NSRect) rect event:(NSEvent *) event;
 ```
 
-#### Discussion
+## Discussion
 
 This method has been deprecated in favor of [`textView(_:draggedCell:in:event:at:)`](./textview%28_,draggedcell,in,event,at%29.md).
 

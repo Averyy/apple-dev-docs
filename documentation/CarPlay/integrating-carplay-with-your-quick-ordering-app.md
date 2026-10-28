@@ -13,11 +13,11 @@ Configure your food-ordering app to work with CarPlay.
 - macOS 14.0+
 - Xcode 15.4+
 
-#### Overview
+## Overview
 
 This sample code project demonstrates how to display custom ordering options in a vehicle using CarPlay. The sample app integrates with the CarPlay framework by implementing `CPTemplate` subclasses, such as [`CPPointOfInterestTemplate`](./cppointofinteresttemplate.md) and [`CPListTemplate`](./cplisttemplate.md). This sample’s iOS app component provides a logging interface to help you understand the life cycle of a CarPlay app.
 
-##### Configure the sample code project
+### Configure the sample code project
 
 CarPlay quick-ordering apps require a CarPlay quick-ordering entitlement, which you can request [here](https://developer.apple.com/contact/carplay). After Apple grants the entitlement, follow these steps:
 
@@ -26,7 +26,7 @@ CarPlay quick-ordering apps require a CarPlay quick-ordering entitlement, which 
 3. Create an `Entitlements.plist` file in the project, if you don’t have one already.
 4. Create a key for the CarPlay quick-ordering app entitlement as a Boolean. Make sure that the target project setting `CODE_SIGN_ENTITLEMENTS` has the path of the `Entitlements.plist` file.
 
-##### Handle communication with CarPlay
+### Handle communication with CarPlay
 
 After a device connects to CarPlay and the sample app launches, it sets a root template to display content onscreen. The system sets the root template on the `CPInterfaceController` when the app connects to CarPlay. In this sample, the root template is an instance of `CPTabBarTemplate` with a `CPPointOfInterestTemplate` as the template that initially displays.
 
@@ -60,7 +60,7 @@ func setupMap() {
 }
 ```
 
-##### Keep the map in focus
+### Keep the map in focus
 
 The sample uses [`func pointOfInterestTemplate(_ aTemplate: CPPointOfInterestTemplate, didChangeMapRegion region: MKCoordinateRegion)`](./cppointofinteresttemplatedelegate/pointofinteresttemplate%28_,didchangemapregion%29.md) to keep the map in focus. The data that `CLLocationManager` provides for a given location can change as a person is moving. This means the results need to update as the map region changes.
 
@@ -145,7 +145,7 @@ func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
 }
 ```
 
-##### Provide updates
+### Provide updates
 
 After a person places an order, the system starts a Live Activity to show the order’s status. Live Activities don’t display in CarPlay, but do provide a glanceable view on the person’s Lock Screen to inform them about updates to their order.
 

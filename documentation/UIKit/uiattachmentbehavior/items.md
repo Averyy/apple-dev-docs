@@ -23,7 +23,7 @@ var items: [any UIDynamicItem] { get }
 @property (nonatomic, copy, readonly) NSArray<id<UIDynamicItem>> * items;
 ```
 
-#### Discussion
+## Discussion
 
 Contains two elements when used for an attachment behavior of type [`UIAttachmentBehavior.AttachmentType.items`](./attachmenttype/items.md); contains one element when used for an attachment behavior of type [`UIAttachmentBehavior.AttachmentType.anchor`](./attachmenttype/anchor.md).
 

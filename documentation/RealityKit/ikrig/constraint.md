@@ -20,7 +20,7 @@ A definition of a rig constraint.
 struct Constraint
 ```
 
-#### Overview
+## Overview
 
 Each constraint can have its position and orientation demands enabled individually.
 

@@ -19,7 +19,7 @@ func hv_vcpu_get_sme_p_reg(_ vcpu: hv_vcpu_t, _ reg: hv_sme_p_reg_t, _ value: Un
 extern hv_return_t hv_vcpu_get_sme_p_reg(hv_vcpu_t vcpu, hv_sme_p_reg_t reg, uint8_t *value, size_t length);
 ```
 
-#### Return Value
+## Return Value
 
 `HV_SUCCESS` on success; otherwise an error code.
 

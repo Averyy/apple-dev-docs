@@ -20,11 +20,11 @@ optional func outlineView(_ outlineView: NSOutlineView, selectionIndexesForPropo
 - (NSIndexSet *) outlineView:(NSOutlineView *) outlineView selectionIndexesForProposedSelection:(NSIndexSet *) proposedSelectionIndexes;
 ```
 
-#### Return Value
+## Return Value
 
 An [`NSIndexSet`](../../Foundation/nsindexset.md) instance containing the indexes of the new selection. Return `proposedSelectionIndexes` if the proposed selection is acceptable, or the value of the table view’s existing selection to avoid changing the selection.
 
-#### Discussion
+## Discussion
 
 This method may be called multiple times with one new index added to the existing selection to find out if a particular index can be selected when the user is extending the selection with the keyboard or mouse.
 

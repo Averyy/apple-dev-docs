@@ -25,11 +25,11 @@ class func classForKeyedUnarchiver() -> AnyClass
 + (Class) classForKeyedUnarchiver;
 ```
 
-#### Return Value
+## Return Value
 
 The class to substitute for the receiver during keyed unarchiving.
 
-#### Discussion
+## Discussion
 
 During keyed unarchiving, instances of the receiver will be decoded as members of the returned class. This method overrides the results of the decoder’s class and instance name to class encoding tables.
 

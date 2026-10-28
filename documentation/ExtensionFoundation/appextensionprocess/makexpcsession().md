@@ -18,11 +18,11 @@ Connect to the app extension process using an XPC session.
 func makeXPCSession() throws -> XPCSession
 ```
 
-#### Return Value
+## Return Value
 
 The session object your app uses to communicate with the app extension.
 
-#### Discussion
+## Discussion
 
 Call this method to create a connection between your host app and an app extension using the XPC framework. You might choose this approach to connect a more secure connection to an app extension running in a sandboxed process. If the app extension accepts the connection request, the returned connection object contains the proxy information you need to communicate with it. If the app extension refuses the request or doesn’t support this connection type, this method throws an error.
 

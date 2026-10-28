@@ -18,11 +18,11 @@ Creates a new calendar view decoration with a custom view, using your view provi
 - (instancetype) initWithCustomViewProvider:(UIView * (^)()) customViewProvider;
 ```
 
-#### Return Value
+## Return Value
 
 A calendar view decoration.
 
-#### Discussion
+## Discussion
 
 Create and return a decoration view for the calendar view in your `customViewProvider` block. The calendar view will clip the decoration view to its parent’s bounds. The decoration view may not have any interactions.
 

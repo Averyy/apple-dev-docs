@@ -24,7 +24,7 @@ var daysOfTheYear: [NSNumber]? { get }
 @property (nonatomic, readonly, nullable) NSArray<NSNumber *> * daysOfTheYear;
 ```
 
-#### Discussion
+## Discussion
 
 Values can be from `1` to `366` and from `-1` to `-366`. This property value is valid only for recurrence rules initialized with a frequency type of [`EKRecurrenceFrequency.yearly`](../ekrecurrencefrequency/yearly.md).
 

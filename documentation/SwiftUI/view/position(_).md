@@ -22,11 +22,11 @@ nonisolated
 func position(_ position: CGPoint) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that fixes the center of this view at `position`.
 
-#### Discussion
+## Discussion
 
 Use the `position(_:)` modifier to place the center of a view at a specific coordinate in the parent view using a [`CGPoint`](../../CoreFoundation/cgpoint.md) to specify the `x` and `y` offset.
 

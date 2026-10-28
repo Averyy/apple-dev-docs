@@ -25,7 +25,7 @@ var framePosition: AVAudioFramePosition { get set }
 @property (nonatomic) AVAudioFramePosition framePosition;
 ```
 
-#### Discussion
+## Discussion
 
 Set the `framePosition` property to perform a seek before a read or write. A read or write operation advances the frame position value by the number of frames it reads or writes.
 

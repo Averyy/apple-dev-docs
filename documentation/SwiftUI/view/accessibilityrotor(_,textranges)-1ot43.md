@@ -1,0 +1,78 @@
+# accessibilityRotor(_:textRanges:)
+
+**Framework**: SwiftUI  
+**Kind**: method  
+**Role**: Instance Method
+
+Create an Accessibility Rotor replacing the specified system-provided Rotor. The Rotor will be attached to the current Accessibility element, and each entry will go the specified range of that element.
+
+**Availability**:
+- iOS 15.0+
+- iPadOS 15.0+
+- Mac Catalyst 15.0+
+- macOS 12.0+
+- tvOS 15.0+
+- visionOS 1.0+
+- watchOS 8.0+
+
+## Declaration
+
+```swift
+nonisolated
+func accessibilityRotor(_ systemRotor: AccessibilitySystemRotor, textRanges: [Range<String.Index>]) -> some View
+```
+
+**Other overloads**:
+
+```swift
+@export(implementation)
+nonisolated func accessibilityRotor(_ label: LocalizedStringResource, textRanges: [Range<String.Index>]) -> some View
+```
+
+```swift
+nonisolated
+func accessibilityRotor(_ label: Text, textRanges: [Range<String.Index>]) -> some View
+```
+
+```swift
+nonisolated
+func accessibilityRotor(_ labelKey: LocalizedStringKey, textRanges: [Range<String.Index>]) -> some View
+```
+
+```swift
+nonisolated
+func accessibilityRotor<L>(_ label: L, textRanges: [Range<String.Index>]) -> some View where L : StringProtocol
+```
+
+## Discussion
+
+An Accessibility Rotor is a shortcut for Accessibility users to quickly navigate to specific elements of the user interface, and optionally specific ranges of text within those elements.
+
+In the following example, a Message application adds a Rotor allowing the user to navigate through all the ranges of text containing headings.
+
+```swift
+extension Message {
+    // Ranges of special areas in the `content` text. Calculated when
+    // `content` is set and then cached so that we don't have to
+    // re-compute them.
+    var headingRanges: [Range<String.Index>]
+}
+
+struct MessageContentView: View {
+    TextEditor(.constant(message.content))
+        .accessibilityRotor(
+            .heading,
+            textRanges: message.headingRanges
+        )
+}
+```
+
+## Parameters
+
+- `systemRotor`: The system-provided Rotor that will be overridden by this custom Rotor.
+- `textRanges`: An array of ranges that will be used to generate the entries of the Rotor.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/view/accessibilityrotor(_:textranges:)-1ot43)*

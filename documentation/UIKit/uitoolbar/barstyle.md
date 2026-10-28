@@ -22,7 +22,7 @@ var barStyle: UIBarStyle { get set }
 @property (nonatomic) UIBarStyle barStyle;
 ```
 
-#### Discussion
+## Discussion
 
 See [`UIBarStyle`](../uibarstyle.md) for possible values. The default value is [`UIBarStyle.default`](../uibarstyle/default.md).
 

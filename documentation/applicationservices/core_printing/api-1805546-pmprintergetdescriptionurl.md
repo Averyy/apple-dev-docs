@@ -17,11 +17,11 @@ OSStatus PMPrinterGetDescriptionURL (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../core_printing.md#1670007).
 
-#### Overview
+## Overview
 
 You can use this function to obtain a reference to the PostScript printer description (PPD) file for a PostScript printer.
 

@@ -15,7 +15,7 @@ Removes all documents from the stack except for the bottom-most document, which 
 void popToRootDocument();
 ```
 
-#### Discussion
+## Discussion
 
 Use this function to quickly return to the root document from any other document in the stack.
 

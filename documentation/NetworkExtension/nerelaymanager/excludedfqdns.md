@@ -22,7 +22,7 @@ var excludedFQDNs: [String]? { get set }
 @property (copy, nullable) NSArray<NSString *> * excludedFQDNs;
 ```
 
-#### Discussion
+## Discussion
 
 An array of strings containing Fully Qualified Domain Names (FQDNs). If the destination host matches one of these strings then the relay will not be used.  An excluded FQDN takes priority over the matchDomain property.  This means the relay will not be used if the hostname matches an FQDN in this array even if the matchDomains contains a domain that would have been considered a match.
 

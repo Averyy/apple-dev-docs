@@ -5,7 +5,7 @@
 
 Store compressed and uncompressed image data in QuickTime movies.
 
-#### Overview
+## Overview
 
 Video media is used to store compressed and uncompressed image data in QuickTime movies. It has a media type of `'vide'`.
 

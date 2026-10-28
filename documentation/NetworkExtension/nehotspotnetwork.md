@@ -23,7 +23,7 @@ class NEHotspotNetwork
 @interface NEHotspotNetwork : NSObject
 ```
 
-#### Overview
+## Overview
 
 When the Hotspot Helper app is asked to evaluate the a network or filter the Wi-Fi scan list, it annotates the  `NEHotspotNetwork` object via the `setConfidence:` method.
 

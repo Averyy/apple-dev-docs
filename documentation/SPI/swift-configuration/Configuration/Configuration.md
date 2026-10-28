@@ -11,7 +11,7 @@ framework: "swift-configuration/Configuration"
 
 A Swift library for reading configuration in applications and libraries.
 
-#### Overview
+## Overview
 
 Swift Configuration defines an abstraction between configuration *readers* and *providers*.
 
@@ -199,7 +199,7 @@ If you’re migrating from manually handling configuration, the [Migrating to Sw
 
 You can combine these providers to form a hierarchy. For details, check out [Provider hierarchy](./Configuration.md#Provider-hierarchy).
 
-##### Quick start
+### Quick start
 
 Add the dependency to your `Package.swift`:
 
@@ -223,7 +223,7 @@ let httpTimeout = config.int(forKey: "http.timeout", default: 60)
 print("The HTTP timeout is: \(httpTimeout)")
 ```
 
-##### Package traits
+### Package traits
 
 This package offers additional integrations you can enable using [package traits](https://docs.swift.org/swiftpm/documentation/packagemanagerdocs/addingdependencies#Packages-with-Traits). To enable an additional trait on the package, update the package dependency:
 
@@ -244,7 +244,7 @@ Available traits:
 - **`YAML`** (opt-in): Adds support for [`YAMLSnapshot`](./yamlsnapshot.md), which enables using [`FileProvider`](./fileprovider.md) and [`ReloadingFileProvider`](./reloadingfileprovider.md) with YAML files.
 - **`PropertyList`** (opt-in): Adds support for [`PropertyListSnapshot`](./propertylistsnapshot.md), which enables using [`FileProvider`](./fileprovider.md) and [`ReloadingFileProvider`](./reloadingfileprovider.md) with property list files.
 
-##### Supported platforms and minimum versions
+### Supported platforms and minimum versions
 
 The library is supported on Apple platforms, Linux, Windows, and Android.
 
@@ -257,9 +257,9 @@ The library is supported on Apple platforms, Linux, Windows, and Android.
 - Windows
 - Android API 28+
 
-##### Key features
+### Key features
 
-###### Three access patterns
+#### Three access patterns
 
 The library provides three distinct ways to read configuration values:
 
@@ -285,9 +285,9 @@ The library provides three distinct ways to read configuration values:
 
 For detailed guidance on when to use each access pattern, see [Choosing the access pattern](./choosing-access-patterns.md). Within each of the access patterns, the library offers different reader methods that reflect your needs of optional, default, and required configuration parameters. To understand the choices available, see [Choosing reader methods](./choosing-reader-methods.md).
 
-###### Providers
+#### Providers
 
-###### Built-in providers
+##### Built-in providers
 
 The library includes comprehensive built-in provider support:
 
@@ -300,13 +300,13 @@ The library includes comprehensive built-in provider support:
 - In-memory: [`InMemoryProvider`](./inmemoryprovider.md) and [`MutableInMemoryProvider`](./mutableinmemoryprovider.md)
 - Key transforming: [`KeyMappingProvider`](./keymappingprovider.md)
 
-###### Community providers
+##### Community providers
 
 - TOML file: [mattt/swift-configuration-toml](https://github.com/mattt/swift-configuration-toml)
 
 You can also implement a custom [`ConfigProvider`](./configprovider.md).
 
-###### Provider hierarchy
+#### Provider hierarchy
 
 In addition to using providers individually, you can create fallback behavior using an array of providers. The first provider that returns a non-nil value wins.
 
@@ -331,7 +331,7 @@ let config = ConfigReader(providers: [
 let timeout = config.int(forKey: "http.timeout", default: 15)
 ```
 
-###### Hot reloading
+#### Hot reloading
 
 You can periodically reload configuration in long-running services with [`ReloadingFileProvider`](./reloadingfileprovider.md):
 
@@ -349,7 +349,7 @@ try await config.watchInt(forKey: "http.timeout", default: 60) { updates in
 
 Read [Using reloading providers](./using-reloading-providers.md) for details on how to receive updates as configuration changes.
 
-###### Namespacing and scoped readers
+#### Namespacing and scoped readers
 
 The built-in namespacing of [`ConfigKey`](./configkey.md) interprets `"http.timeout"` as an array of two components: `"http"` and `"timeout"`. The following example uses [`scoped(to:)`](./configreader/scoped%28to%29.md) to create a namespaced reader with the key `"http"`, to allow reads to use the shorter key `"timeout"`:
 
@@ -375,7 +375,7 @@ let httpConfig = config.scoped(to: "http")
 let timeout = httpConfig.int(forKey: "timeout")
 ```
 
-###### Debugging and troubleshooting
+#### Debugging and troubleshooting
 
 Use [`AccessReporter`](./accessreporter.md) to log all accesses to a config reader:
 
@@ -402,7 +402,7 @@ tail -f /var/log/myapp/config-access.log
 
 Check out the built-in [`AccessLogger`](./accesslogger.md), [`FileAccessLogger`](./fileaccesslogger.md), and [Troubleshooting and access reporting](./troubleshooting.md).
 
-###### Handling Secrets
+#### Handling Secrets
 
 The library provides built-in support for handling sensitive configuration values securely:
 
@@ -414,7 +414,7 @@ let optionalAPIToken = config.string(forKey: "api.token", isSecret: true)
 
 When you mark values as secrets, the library automatically redacts them from access logs and debugging output. Read [Handling secrets correctly](./handling-secrets-correctly.md) for guidance on best practices for secrets management.
 
-###### Consistent snapshots
+#### Consistent snapshots
 
 Retrieve related values from a consistent snapshot using [`ConfigSnapshotReader`](./configsnapshotreader.md), which [`snapshot()`](./configreader/snapshot%28%29.md) returns.
 
@@ -428,7 +428,7 @@ let privateKey = try snapshot.requiredString(forKey: "mtls.privateKey", isSecret
 // `certificate` and `privateKey` are guaranteed to come from the same snapshot in the provider
 ```
 
-###### Extensible ecosystem
+#### Extensible ecosystem
 
 Any package can implement a [`ConfigProvider`](./configprovider.md), making the ecosystem extensible for custom configuration sources.
 

@@ -15,7 +15,7 @@ Measure the quality of your app’s intelligence-powered features.
 - watchOS 27.0+
 - Xcode 27.0+
 
-#### Overview
+## Overview
 
 Use the Evaluations framework to systematically evaluate your app’s intelligence-powered features. Define datasets, generate model responses, apply metrics, and aggregate results, all with type-safe Swift APIs that integrate directly into your development workflow.
 
@@ -29,7 +29,7 @@ With the Evaluations framework, you can:
 
 The framework evaluates your intelligence-powered features against the metrics you define, from simple pass or fail checks to detailed scoring with model-judge patterns. It aggregates the results into summaries that show you which approach performs best and where individual responses fall short. The framework works with any model available through [Foundation Models](../FoundationModels/FoundationModels.md), including on-device, Private Cloud Compute, and other models.
 
-##### What’s new
+### What’s new
 
 - [Meet the Evaluations framework](https://developer.apple.com/videos/play/wwdc2026/298)
   Learn how to evaluate model-driven experiences using the Evaluations framework. In a probabilistic world, unit tests alone won’t suffice. Discover how to define metrics, automatically grade outputs, and aggregate statistics to ensure your AI-powered features perform reliably across Apple’s platforms.

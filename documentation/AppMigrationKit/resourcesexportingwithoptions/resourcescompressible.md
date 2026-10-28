@@ -17,7 +17,7 @@ A property that indicates whether the archiver attempts to compress the resource
 var resourcesCompressible: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 If the majority of resources to export are already compressed files – such as most image file formats – implement this property to return `false`, since the files won’t benefit from further compression. On the other hand, if most exported resources are text files or other compressible data, return `true` to allow AppMigrationKit to compress them. The compression allows AppMigrationKit to optimize the migration process.
 

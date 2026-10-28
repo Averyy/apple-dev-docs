@@ -19,7 +19,7 @@ The key to the font in a text attributes dictionary.
 extern NSString * const UITextAttributeFont;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is an instance of [`UIFont`](./uifont.md).
 

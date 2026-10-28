@@ -24,7 +24,7 @@ class UITabBarItemAppearance
 @interface UITabBarItemAppearance : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use a [`UITabBarItemAppearance`](./uitabbaritemappearance.md) object to customize the appearance of a tab bar item in each of its possible states. You can customize the appearance differently for each state. For example, you might apply different colors to the tab bar item’s icon in the [`normal`](./uitabbaritemappearance/normal.md) and [`selected`](./uitabbaritemappearance/selected.md) states.
 

@@ -21,7 +21,7 @@ The automatic placement.
 static var automatic: ContentMarginPlacement { get }
 ```
 
-#### Discussion
+## Discussion
 
 Views that support margin customization can automatically use margins with this placement. For example, a [`ScrollView`](../scrollview.md) will use this placement to automatically inset both its content and scroll indicators by the specified amount.
 

@@ -15,11 +15,11 @@ Tells the clock device to stop I/O.
 virtual kern_return_t StopIO(IOUserAudioStartStopFlags in_flags);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../../DriverKit/error-codes.md).
 
-#### Discussion
+## Discussion
 
 The default implementation always returns [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md).
 

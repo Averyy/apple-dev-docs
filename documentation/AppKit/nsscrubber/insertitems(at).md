@@ -19,7 +19,7 @@ func insertItems(at indexes: IndexSet)
 - (void) insertItemsAtIndexes:(NSIndexSet *) indexes;
 ```
 
-#### Discussion
+## Discussion
 
 The scrubber requests the view for each index from its data source.
 

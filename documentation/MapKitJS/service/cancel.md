@@ -21,11 +21,11 @@ cancel(promise: Promise<unknown>): boolean;
 
 - [Migrating from Version 5 to Version 6](../migrating-from-version-5-to-version-6.md)
 
-#### Return Value
+## Return Value
 
 `true` if the server cancels the pending search request.
 
-#### Discussion
+## Discussion
 
 Sometimes you need to cancel a request, either because a person initiates the cancellation or moves on to another activity.
 

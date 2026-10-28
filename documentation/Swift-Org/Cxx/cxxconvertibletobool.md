@@ -17,7 +17,7 @@ A C++ type that can be converted to a Boolean value.
 protocol CxxConvertibleToBool
 ```
 
-#### Overview
+## Overview
 
 Any C++ type that defines `operator bool()` conforms to this protocol.
 

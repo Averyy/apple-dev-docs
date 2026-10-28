@@ -26,7 +26,7 @@ A high-level representation of a collection of vertices and edges that define a 
 - [Creating a plane with low-level mesh](./creating-a-plane-with-low-level-mesh.md)
 - [Reducing CPU Utilization in Your RealityKit App](./reducing-cpu-utilization-in-your-realitykit-app.md)
 
-#### Overview
+## Overview
 
 Use [`MeshResource`](./meshresource.md) to create procedural geometry from built-in primitives like boxes, spheres, planes, and cylinders, or from custom mesh data. Assign a mesh resource to an entity’s [`ModelComponent`](./modelcomponent.md) alongside an array of [`Material`](./material.md) instances to render the shape in a scene.
 

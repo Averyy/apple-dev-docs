@@ -25,7 +25,7 @@ static let volumeIdentifierKey: URLResourceKey
 extern NSURLResourceKey const NSURLVolumeIdentifierKey;
 ```
 
-#### Discussion
+## Discussion
 
 This identifier can be used with the [`isEqual(_:)`](../../ObjectiveC/nsobjectprotocol/isequal%28_%29.md) method to determine whether two file system resources are on the same volume.
 

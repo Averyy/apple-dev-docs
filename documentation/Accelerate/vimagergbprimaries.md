@@ -25,7 +25,7 @@ struct vImageRGBPrimaries
 typedef struct vImageRGBPrimaries { ... } vImageRGBPrimaries;
 ```
 
-#### Overview
+## Overview
 
 The `x` and `y` values define the chromaticity of each color primary RGB and the white point according to the CIE 1931 color space. For example, the following code defines the RGB primaries for ITU-R BT.709-5:
 

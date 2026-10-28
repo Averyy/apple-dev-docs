@@ -21,7 +21,7 @@ A type that provides a collection of all of its values.
 protocol CaseIterable
 ```
 
-#### Overview
+## Overview
 
 Types that conform to the `CaseIterable` protocol are typically enumerations without associated values. When using a `CaseIterable` type, you can access a collection of all of the type’s cases by using the type’s `allCases` property.
 
@@ -40,7 +40,7 @@ let caseList = CompassDirection.allCases
 // caseList == "north, south, east, west"
 ```
 
-### Conforming to the CaseIterable Protocol
+## Conforming to the CaseIterable Protocol
 
 The compiler can automatically provide an implementation of the `CaseIterable` requirements for any enumeration without associated values or `@available` attributes on its cases. The synthesized `allCases` collection provides the cases in order of their declaration.
 

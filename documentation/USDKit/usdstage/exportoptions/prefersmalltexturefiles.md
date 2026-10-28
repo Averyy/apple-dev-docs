@@ -20,7 +20,7 @@ Reduce textures’ file size at the standard quality level.
 static var preferSmallTextureFiles: USDStage.ExportOptions { get }
 ```
 
-#### Discussion
+## Discussion
 
 This is the same as `preferSmallTextureFiles(quality: .standard)`.
 

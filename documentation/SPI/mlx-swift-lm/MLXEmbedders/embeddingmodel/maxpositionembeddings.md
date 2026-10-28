@@ -18,7 +18,7 @@ The maximum number of position embeddings supported by this model, or `nil` if t
 var maxPositionEmbeddings: Int? { get }
 ```
 
-#### Discussion
+## Discussion
 
 Inputs exceeding this length are truncated internally with a warning. Callers may pre-truncate for efficiency or to implement custom strategies (e.g. chunking with pooling).
 

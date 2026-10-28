@@ -22,7 +22,7 @@ struct MPMediaPlaylistAttribute
 enum MPMediaPlaylistAttribute : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 Playlist attributes to use as possible values for the [`MPMediaPlaylistPropertyPlaylistAttributes`](./mpmediaplaylistpropertyplaylistattributes.md) property.
 

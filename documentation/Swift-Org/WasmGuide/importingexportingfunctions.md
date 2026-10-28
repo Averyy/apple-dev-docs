@@ -10,14 +10,14 @@ framework: "Swift-Org/WasmGuide"
 
 WebAssembly modules often need to interact with their host environment. This guide demonstrates how to build a Swift guest module that both exports functions to the host and imports functions from it, using `WasmKit` as the host application.
 
-#### Overview
+## Overview
 
 This process involves two Swift packages:
 
 1. **Guest**: The WebAssembly module running inside the virtual machine.
 2. **Host**: The application that loads and executes the guest module.
 
-#### 1. The Guest Module
+## 1. The Guest Module
 
 First, create a Swift package for the guest module. This module will:
 
@@ -88,7 +88,7 @@ public func addAndPrint(_ lhs: Int32, _ rhs: Int32) -> Int32 {
 }
 ```
 
-#### 2. Building the Guest
+## 2. Building the Guest
 
 Compile the guest package using the Swift SDK for WebAssembly.
 
@@ -103,7 +103,7 @@ Swift Package Manager will produce a `.wasm` file at `.build/wasm32-unknown-wasi
 cp .build/wasm32-unknown-wasi/debug/Guest.wasm guest.wasm
 ```
 
-#### 3. The Host Application (WasmKit)
+## 3. The Host Application (WasmKit)
 
 Now, create the host application that will execute the guest module.
 
@@ -169,7 +169,7 @@ struct Host {
 }
 ```
 
-#### 4. Running the Host
+## 4. Running the Host
 
 Run the host application to see the interaction in action.
 

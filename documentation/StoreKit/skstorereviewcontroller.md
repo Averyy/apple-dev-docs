@@ -25,7 +25,7 @@ class SKStoreReviewController
 @interface SKStoreReviewController : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use the [`requestReview(in:)`](./skstorereviewcontroller/requestreview%28in%29.md) method to indicate when it makes sense within the logic of your app to ask the customer for ratings and reviews.
 

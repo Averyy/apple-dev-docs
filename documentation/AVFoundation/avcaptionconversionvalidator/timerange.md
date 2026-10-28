@@ -22,7 +22,7 @@ var timeRange: CMTimeRange { get }
 @property (readonly) CMTimeRange timeRange;
 ```
 
-#### Discussion
+## Discussion
 
 If captions need to appear only after the start of the associated media, the start time of this time range can be less than the start time of the first caption’s time range.
 

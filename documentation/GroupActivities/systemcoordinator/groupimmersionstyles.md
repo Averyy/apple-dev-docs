@@ -15,7 +15,7 @@ An asynchronous sequence that contains one or more incoming immersion styles for
 struct GroupImmersionStyles
 ```
 
-#### Overview
+## Overview
 
 When a participant in an activity changes the immersion style of their immersive space, the system adds the style to this sequence. Configure an asynchronous task to monitor this sequence and process results when they arrive.
 

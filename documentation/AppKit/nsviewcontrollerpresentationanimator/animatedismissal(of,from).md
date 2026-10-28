@@ -21,7 +21,7 @@ func animateDismissal(of viewController: NSViewController, from fromViewControll
 - (void) animateDismissalOfViewController:(NSViewController *) viewController fromViewController:(NSViewController *) fromViewController;
 ```
 
-#### Discussion
+## Discussion
 
 To add custom view controller dismissal animation, Implement it in this method.
 

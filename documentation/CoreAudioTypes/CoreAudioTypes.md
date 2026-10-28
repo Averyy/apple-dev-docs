@@ -15,7 +15,7 @@ Use specialized data types to interact with audio streams, complex buffers, and 
 - visionOS 1.0+
 - watchOS 6.0+
 
-#### Overview
+## Overview
 
 The Core Audio Types framework declares common data types and constants that other Core Audio interfaces use. This framework also includes several convenience functions.
 

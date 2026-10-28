@@ -24,7 +24,7 @@ class var current: SCShareableContent { get async throws }
 + (void) getShareableContentWithCompletionHandler:(void (^)(SCShareableContent *shareableContent, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to retrieve the onscreen content that your app can capture. If the call is successful, the system returns the shareable content to the completion handler; otherwise, it returns an error that describes the failure.
 

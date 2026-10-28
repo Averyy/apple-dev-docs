@@ -25,7 +25,7 @@ let kSecTrustCertificateTransparency: CFString
 extern CFStringRef const kSecTrustCertificateTransparency;
 ```
 
-#### Discussion
+## Discussion
 
 When the key is present and the value set to [`kCFBooleanTrue`](../CoreFoundation/kcfbooleantrue.md), it indicates the chain is Certificate Transparency (CT) qualified.
 

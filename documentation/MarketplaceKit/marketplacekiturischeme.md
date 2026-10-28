@@ -24,7 +24,7 @@ let MarketplaceKitURIScheme: String
 - [Installing apps from an alternative marketplace](./installing-apps-from-an-alternative-marketplace.md)
 - [Ingesting an alternative distribution package](./ingesting-an-alternative-distribution-package.md)
 
-#### Discussion
+## Discussion
 
 This installation scheme defines how your webpage requests the installation of your app. For example, assign a URL with the following scheme to a Download button on your page:
 
@@ -49,7 +49,7 @@ The URL parameters are:
 
 Web browsers recognize the scheme and hand off the installation request to [MarketplaceKit](./MarketplaceKit.md). For more information, see [Installing your app from your website](./installing-your-app-from-your-website.md).
 
-#### Setting the alternative distribution package parameter
+## Setting the alternative distribution package parameter
 
 The fully qualified domain in the `alternateDistributionPackage` value needs to match the fully qualified domain of the *referrer*, that is, the page that contains the `marketplace-kit://` link. This domain also needs to match the domain you supply to App Store Connect. For more information, see [Alternative Distribution Domains](../AppStoreConnectAPI/alternative-distribution-domains.md). For example:
 

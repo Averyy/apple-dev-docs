@@ -9,7 +9,7 @@ Develop drivers for MIDI devices.
 **Availability**:
 - DriverKit 24.0+
 
-#### Overview
+## Overview
 
 Use the MIDIDriverKit framework to implement a MIDI driver extension that communicates with Core MIDI. The framework handles all user-client communication between your driver extension and the Core MIDI server so you don’t need to implement a MIDI driver plug-in. You can also leverage other transport-based driver extension frameworks, such as [USBDriverKit](../USBDriverKit/USBDriverKit.md), in your implementation.
 

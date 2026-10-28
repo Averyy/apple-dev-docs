@@ -25,11 +25,11 @@ typealias CTRunDelegateGetWidthCallback = (UnsafeMutableRawPointer) -> CGFloat
 typedef double (*)(void *) CTRunDelegateGetWidthCallback;
 ```
 
-#### Return Value
+## Return Value
 
 The typographic width of glyphs in the run associated with the run delegate.  A value of 0.0 indicates that the glyphs should not be drawn.
 
-#### Discussion
+## Discussion
 
 You would declare the get-width function like this if you were to name it `MyGetWidthCallback`:
 

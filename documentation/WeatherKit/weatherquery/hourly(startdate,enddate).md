@@ -23,11 +23,11 @@ static func hourly(startDate: Date, endDate: Date) -> WeatherQuery<T>
 
 Available when `T` is `Forecast<HourWeather>`.
 
-#### Return Value
+## Return Value
 
 An hourly forecast query for the specified time range
 
-#### Discussion
+## Discussion
 
 - Historical data is available from Aug 1, 2021.
 - Forecasts are available up to 10 days (~240 hours) in the future.

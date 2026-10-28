@@ -35,7 +35,7 @@ class UIView
 - [Making a view into a drag source](./making-a-view-into-a-drag-source.md)
 - [Making a view into a drop destination](./making-a-view-into-a-drop-destination.md)
 
-#### Overview
+## Overview
 
 Views are the fundamental building blocks of your app’s user interface, and the [`UIView`](./uiview.md) class defines the behaviors that are common to all views. A view object renders content within its bounds rectangle, and handles any interactions with that content. The [`UIView`](./uiview.md) class is a concrete class that you can instantiate and use to display a fixed background color. You can also subclass it to draw more sophisticated content. To display labels, images, buttons, and other interface elements commonly found in apps, use the view subclasses that the UIKit framework provides rather than trying to define your own.
 
@@ -59,7 +59,7 @@ Views can nest inside other views to create view hierarchies, which offer a conv
 
 The [`frame`](./uiview/frame.md) and [`bounds`](./uiview/bounds.md) properties define the geometry of each view. The [`frame`](./uiview/frame.md) property defines the origin and dimensions of the view in the coordinate system of its superview. The [`bounds`](./uiview/bounds.md) property defines the internal dimensions of the view as it sees them, and its use is almost exclusive to custom drawing code. The center property provides a convenient way to reposition a view without changing its [`frame`](./uiview/frame.md) or [`bounds`](./uiview/bounds.md) properties directly.
 
-##### Create a view
+### Create a view
 
 Normally, you create views in your storyboards by dragging them from the library to your canvas. You can also create views programmatically. When creating a view, you typically specify its initial size and position relative to its future superview. For example, the following example creates a view and places its top-left corner at the point (10, 10) in the superview’s coordinate system (once it is added to that superview).
 
@@ -81,13 +81,13 @@ To add a subview to another view, call the [`addSubview(_:)`](./uiview/addsubvie
 
 After creating a view, create Auto Layout rules to govern how the size and position of the view change in response to changes in the rest of the view hierarchy.
 
-##### Draw views
+### Draw views
 
 View drawing occurs on an as-needed basis. When a view is first shown, or when all or part of it becomes visible due to layout changes, the system asks the view to draw its contents. For views that contain custom content using UIKit or Core Graphics, the system calls the view’s [`draw(_:)`](./uiview/draw%28_%29.md) method. Your implementation of this method is responsible for drawing the view’s content into the current graphics context, which is set up by the system automatically prior to calling this method. This creates a static visual representation of your view’s content that can then be displayed on the screen.
 
 When the actual content of your view changes, it’s your responsibility to notify the system that your view needs to be redrawn. You do this by calling your view’s [`setNeedsDisplay()`](./uiview/setneedsdisplay%28%29.md) or [`setNeedsDisplay(_:)`](./uiview/setneedsdisplay%28_%29.md) method of the view. These methods let the system know that it should update the view during the next drawing cycle. Because it waits until the next drawing cycle to update the view, you can call these methods on multiple views to update them at the same time.
 
-##### Animate views
+### Animate views
 
 Changes to several view properties can be animated — that is, changing the property creates an animation starting at the current value and ending at the new value that you specify. The following properties of the [`UIView`](./uiview.md) class are animatable:
 
@@ -100,17 +100,17 @@ Changes to several view properties can be animated — that is, changing the pro
 
 To animate your changes, create a [`UIViewPropertyAnimator`](./uiviewpropertyanimator.md) object and use its handler block to change the values of your view’s properties. The [`UIViewPropertyAnimator`](./uiviewpropertyanimator.md) class lets you specify the duration and timing of your animations, but it performs the actual animations. You can pause a property-based animator that’s currently running to interrupt the animation and drive it interactively. For more information, see [`UIViewPropertyAnimator`](./uiviewpropertyanimator.md).
 
-##### Threading considerations
+### Threading considerations
 
 Manipulations to your app’s user interface must occur on the main thread. Thus, you should always call the methods of the [`UIView`](./uiview.md) class from code running in the main thread of your app. The only time this may not be strictly necessary is when creating the view object itself, but all other manipulations should occur on the main thread.
 
-##### Subclassing notes
+### Subclassing notes
 
 The [`UIView`](./uiview.md) class is a key subclassing point for visual content that also requires user interactions. Although there are many good reasons to subclass [`UIView`](./uiview.md), it is recommended that you do so only when the basic [`UIView`](./uiview.md) class or the standard system views do not provide the capabilities that you need. Subclassing requires more work on your part to implement the view and to tune its performance.
 
 For information about ways to avoid subclassing, see [Alternatives to subclassing](./uiview.md#Alternatives-to-subclassing).
 
-###### Methods to override
+#### Methods to override
 
 When subclassing [`UIView`](./uiview.md), there are only a handful of methods you should override and many methods that you might override depending on your needs. Because [`UIView`](./uiview.md) is a highly configurable class, there are also many ways to implement sophisticated view behaviors without overriding custom methods, which are discussed in the Alternatives to Subclassing section. In the meantime, the following list includes the methods you might consider overriding in your [`UIView`](./uiview.md) subclasses:
 
@@ -135,7 +135,7 @@ When subclassing [`UIView`](./uiview.md), there are only a handful of methods yo
   - [`gestureRecognizerShouldBegin(_:)`](./uiview/gesturerecognizershouldbegin%28_%29.md) - Implement this method if your view handles touch events directly and might want to prevent attached gesture recognizers from triggering additional actions.
   - [`touchesBegan(_:with:)`](./uiresponder/touchesbegan%28_,with%29.md), [`touchesMoved(_:with:)`](./uiresponder/touchesmoved%28_,with%29.md), [`touchesEnded(_:with:)`](./uiresponder/touchesended%28_,with%29.md), [`touchesCancelled(_:with:)`](./uiresponder/touchescancelled%28_,with%29.md) - Implement these methods if you need to handle touch events directly. (For gesture-based input, use gesture recognizers.)
 
-###### Alternatives to subclassing
+#### Alternatives to subclassing
 
 Many view behaviors can be configured without the need for subclassing. Before you start overriding methods, consider whether modifying the following properties or behaviors would provide the behavior you need.
 
@@ -151,7 +151,7 @@ Many view behaviors can be configured without the need for subclassing. Before y
 
 Animations are another way to make visible changes to a view without requiring you to subclass and implement complex drawing code. Many properties of the [`UIView`](./uiview.md) class are animatable, which means changes to those properties can trigger system-generated animations. Starting animations requires as little as one line of code to indicate that any changes that follow should be animated. For more information about animation support for views, see [Animate views](./uiview.md#Animate-views).
 
-##### Sensor coordinate orientation
+### Sensor coordinate orientation
 
 `UIView` conforms to [`CLBodyIdentifiable`](../CoreLocation/clbodyidentifiable.md) and [`CMBodyIdentifiable`](../CoreMotion/cmbodyidentifiable.md), informing Core Location and Core Motion how the app’s UI and this view are situated with respect to reference physical orientations. They use this information to transform the sensor values they provide, such as compass headings and device motion data, so those values align with your UI’s actual orientation. Without this association, Core Location and Core Motion report sensor values relative to the device’s physical orientation, which can produce unexpected results, such as a navigation map that appears rotated.
 

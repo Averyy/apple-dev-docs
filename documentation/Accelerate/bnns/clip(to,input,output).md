@@ -23,7 +23,7 @@ Clips the input tensor to a closed range and writes the result to the output ten
 static func clip(to bounds: ClosedRange<Float>, input: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor) throws
 ```
 
-#### Discussion
+## Discussion
 
 Use this function to clip the values in an input tensor to a range. The function sets values below the minimum to the minimum and values above the maximum to the maximum.
 

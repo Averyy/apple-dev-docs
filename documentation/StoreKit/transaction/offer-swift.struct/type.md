@@ -25,7 +25,7 @@ let type: Transaction.OfferType
 
 - [Supporting offer codes in your app](../../supporting-offer-codes-in-your-app.md)
 
-#### Discussion
+## Discussion
 
 See [`Transaction.OfferType`](../offertype-swift.struct.md) for the complete list of offer types.
 

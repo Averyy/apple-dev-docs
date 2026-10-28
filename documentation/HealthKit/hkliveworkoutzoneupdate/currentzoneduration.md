@@ -19,7 +19,7 @@ A property that contains the zone duration just entered.
 final var currentZoneDuration: HKWorkoutZoneDuration? { get }
 ```
 
-#### Discussion
+## Discussion
 
 When this property is `nil`, no zone is currently active.
 

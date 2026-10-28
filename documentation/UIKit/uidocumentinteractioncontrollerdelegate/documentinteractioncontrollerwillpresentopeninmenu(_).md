@@ -22,7 +22,7 @@ optional func documentInteractionControllerWillPresentOpenInMenu(_ controller: U
 - (void) documentInteractionControllerWillPresentOpenInMenu:(UIDocumentInteractionController *) controller;
 ```
 
-#### Discussion
+## Discussion
 
 The Open In menu is used to select an application for opening the current file. You can use this method to update your user interface in response to displaying the menu.
 

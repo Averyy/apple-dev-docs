@@ -24,7 +24,7 @@ class MDLPhotometricLight
 @interface MDLPhotometricLight : MDLPhysicallyPlausibleLight
 ```
 
-#### Overview
+## Overview
 
 You create a photometric light from a file in the IES format, containing physical measurements of a light source. Many manufacturers of real-world light fixtures publish such files describing the lighting characteristics of their products. This photometry data measures the light web surrounding a light source—measurements of the light’s intensity in all directions around the source.The [`MDLPhotometricLight`](./mdlphotometriclight.md) provides two ways to interpret a light web:
 

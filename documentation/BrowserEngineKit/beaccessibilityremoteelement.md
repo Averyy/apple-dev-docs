@@ -21,7 +21,7 @@ class BEAccessibilityRemoteElement
 @interface BEAccessibilityRemoteElement : NSObject
 ```
 
-#### Overview
+## Overview
 
 If a peripheral process in your browser app (such as a web content process or extension process) provides Accessibility elements, you can use this class to connect the Accessibility element hierarchies across the two processes so that assistive technologies such as VoiceOver, Switch Control, and Voice Control can interact with both hierarchies.
 

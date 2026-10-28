@@ -19,7 +19,7 @@ var selectedItem: NSMenuItem? { get }
 @property (strong, readonly, nullable) NSMenuItem * selectedItem;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is the menu item that is currently selected, or `nil` if no item is selected. The last selected menu item is the one that was highlighted when the user released the mouse button. It is possible for a pull-down menu’s selected item to be its first item.
 

@@ -15,7 +15,7 @@ The value to which a kext's unresolved, weakly-referenced symbols are bound.
 const void *const gOSKextUnresolved;
 ```
 
-#### Discussion
+## Discussion
 
 A kext must test a weak symbol before using it. A weak symbol is only safe to use if it is not equal to `gOSKextUnresolved`.
 

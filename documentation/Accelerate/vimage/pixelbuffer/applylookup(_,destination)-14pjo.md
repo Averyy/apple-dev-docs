@@ -23,7 +23,7 @@ func applyLookup(_ lookupTable: [Pixel_F], destination: vImage.PixelBuffer<vImag
 
 Available when `Format` is `vImage.PlanarF`.
 
-#### Discussion
+## Discussion
 
 You can use this function to create custom response curves (that is, the value of an output pixel based on the value of the corresponding input pixel). Changing the shape of the response curve changes the brightness and contrast of an image.
 

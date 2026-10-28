@@ -17,7 +17,7 @@ var duration: UInt64
 - [Licensing alternative distribution apps](../licensing-alternative-distribution-apps.md)
 - [Renewing and revoking app licenses](../renewing-and-revoking-app-licenses.md)
 
-#### Discussion
+## Discussion
 
 The alternative app marketplace determines a value for this property at its discretion. iOS doesn’t let an app launch if the duration of its license lapses.
 

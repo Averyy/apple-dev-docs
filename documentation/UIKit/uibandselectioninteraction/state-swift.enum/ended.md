@@ -22,7 +22,7 @@ case ended
 UIBandSelectionInteractionStateEnded
 ```
 
-#### Discussion
+## Discussion
 
 Use this state to finalize the interaction. For example, you might finalize the selection of items in your view.
 

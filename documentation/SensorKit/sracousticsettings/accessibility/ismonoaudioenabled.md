@@ -19,7 +19,7 @@ var isMonoAudioEnabled: Bool { get }
 @property (nonatomic, assign, readonly, getter=isMonoAudioEnabled) BOOL monoAudioEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 When in mono mode, audio output is the same audio from both the left and right channels
 

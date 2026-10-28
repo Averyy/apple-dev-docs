@@ -22,7 +22,7 @@ enum MetricResult
 
 - [Analyzing app performance with MetricKit](./analyzing-app-performance-with-metrickit.md)
 
-#### Discussion
+## Discussion
 
 `MetricResult` unifies all metric types into a single enum. You receive `MetricResult` values by iterating the [`values`](./metricreport/intervalentry/values.md) array on a [`MetricReport.IntervalEntry`](./metricreport/intervalentry.md), or the [`values`](./metricreport/stateentry/values.md) array on a [`MetricReport.StateEntry`](./metricreport/stateentry.md).
 

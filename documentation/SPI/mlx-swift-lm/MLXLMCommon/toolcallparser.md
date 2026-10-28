@@ -21,7 +21,7 @@ protocol ToolCallParser : Sendable
 
 - [Developing mlx-swift-lm](./developing.md)
 
-#### Overview
+## Overview
 
 Different models use different formats for tool calls. This protocol provides a common interface for parsing tool calls from model output text.
 

@@ -19,7 +19,7 @@ var alternateTitle: String { get set }
 @property (copy) NSString * alternateTitle;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the string that appears on the button when the button is in an on state, or the empty string if the button doesn’t display an alternate title. By default, a button’s alternate title is Button.
 

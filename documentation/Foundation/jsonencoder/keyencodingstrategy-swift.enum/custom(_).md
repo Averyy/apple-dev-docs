@@ -22,7 +22,7 @@ A key encoding strategy defined by the closure you supply.
 case custom(@Sendable ([any CodingKey]) -> any CodingKey)
 ```
 
-#### Discussion
+## Discussion
 
 The value associated with this case is a closure you use to choose the names of keys in the encoded JSON object. During encoding, the closure executes once for each key in the [`Encodable`](../../../Swift/encodable.md) value. The closure receives an array of [`CodingKey`](../../../Swift/codingkey.md) instances representing the sequence of keys needed to reach the value the encoder is currently encoding.
 

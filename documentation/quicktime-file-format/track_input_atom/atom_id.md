@@ -6,7 +6,7 @@
 
 A 32-bit integer relating this track input atom to its secondary input.
 
-#### Overview
+## Overview
 
 The value of this field corresponds to the index of the secondary input in the track reference atom. That is, the first secondary input corresponds to the track input atom with an atom ID value of `1`; the second to the track input atom with an atom ID of `2`, and so on.
 

@@ -19,7 +19,7 @@ func menu(forSegment segment: Int) -> NSMenu?
 - (NSMenu *) menuForSegment:(NSInteger) segment;
 ```
 
-#### Return Value
+## Return Value
 
 The menu associated with the segment; otherwise, `nil`.
 

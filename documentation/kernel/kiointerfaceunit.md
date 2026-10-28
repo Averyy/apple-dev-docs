@@ -15,7 +15,7 @@ A property of IONetworkInterface objects.
 #define kIOInterfaceUnit
 ```
 
-#### Discussion
+## Discussion
 
 The kIOInterfaceUnit property has an OSNumber value that describes the unit number assigned to the interface object.
 

@@ -19,7 +19,7 @@ func toggleAutomaticDataDetection(_ sender: Any?)
 - (void) toggleAutomaticDataDetection:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 Automatic data detection enables detection of dates, addresses, and phone numbers.
 

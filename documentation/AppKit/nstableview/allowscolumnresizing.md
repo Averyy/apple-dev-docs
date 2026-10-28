@@ -19,7 +19,7 @@ var allowsColumnResizing: Bool { get set }
 @property BOOL allowsColumnResizing;
 ```
 
-#### Discussion
+## Discussion
 
 The default of this property is [`true`](../../Swift/true.md), which allows the user to resize the table view’s columns. You can resize columns programmatically regardless of this setting.
 

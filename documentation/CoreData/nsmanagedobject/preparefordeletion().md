@@ -25,7 +25,7 @@ func prepareForDeletion()
 - (void) prepareForDeletion;
 ```
 
-#### Discussion
+## Discussion
 
 You can implement this method to perform any operations required before the object is deleted, such as custom propagation before relationships are torn down, or reconfiguration of objects using key-value observing.
 

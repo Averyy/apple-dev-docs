@@ -25,7 +25,7 @@ case failureInsufficientFunds
 INTransferMoneyIntentResponseCodeFailureInsufficientFunds
 ```
 
-#### Discussion
+## Discussion
 
 Use this response code when the user’s source account doesn’t contain the necessary funds for the transfer.
 

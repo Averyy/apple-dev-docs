@@ -34,7 +34,7 @@ var playerID: String? { get }
 @property (atomic, copy, readonly, nullable) NSString * playerID;
 ```
 
-#### Discussion
+## Discussion
 
 This property is `nil` if this slot isn’t filled yet — for example, when Game Center uses automatch to fill this slot.
 

@@ -25,7 +25,7 @@ class CMFormatDescription
 typedef const struct opaqueCMFormatDescription * CMFormatDescriptionRef;
 ```
 
-#### Overview
+## Overview
 
 A `CMFormatDescription` object is an object that describes media types (audio, video, muxed, and so on).
 

@@ -20,7 +20,7 @@ Assigns multiple sampler states to a range of entries in the object shader argum
 func setObjectSamplerStates(_ samplers: [(any MTLSamplerState)?], range: Range<Int>)
 ```
 
-#### Discussion
+## Discussion
 
 By default, the sampler state at each index is `nil`.
 

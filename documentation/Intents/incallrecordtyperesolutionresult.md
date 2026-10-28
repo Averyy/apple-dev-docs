@@ -24,7 +24,7 @@ class INCallRecordTypeResolutionResult
 @interface INCallRecordTypeResolutionResult : INIntentResolutionResult
 ```
 
-#### Overview
+## Overview
 
 An `INCallRecordTypeResolutionResult` object is what you return when resolving parameters containing a value of type [`INCallRecordType`](./incallrecordtype.md). Use the creation method that best reflects your ability to successfully resolve the parameter.
 

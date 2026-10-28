@@ -19,7 +19,7 @@ A detection track representing all detections selected by a given decision.
 final func detectionTrack(for decision: CNDecision) -> CNDetectionTrack?
 ```
 
-#### Return Value
+## Return Value
 
 A detection track representing all detections selected by a given decision.
 

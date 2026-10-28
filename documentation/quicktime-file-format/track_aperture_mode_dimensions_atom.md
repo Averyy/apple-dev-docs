@@ -10,7 +10,7 @@ A container atom that stores information for video correction in the form of thr
 
 - [QuickTime File Format change log](./revision_history.md)
 
-#### Overview
+## Overview
 
 This atom is optionally included in the track atom. The type of the track aperture mode dimensions atom is `‘tapt’`.
 

@@ -15,7 +15,7 @@ Invokes your error callback function.
 void InvokeSpeechErrorUPP(SpeechChannel chan, SRefCon refCon, OSErr theError, long bytePos, SpeechErrorUPP userUPP);
 ```
 
-#### Discussion
+## Discussion
 
 You should not need to call the `InvokeSpeechErrorUPP` function,because the system calls your error callback function for you.
 

@@ -19,7 +19,7 @@ class VZSingleDirectoryShare
 @interface VZSingleDirectoryShare : VZDirectoryShare
 ```
 
-#### Overview
+## Overview
 
 This directory share exposes a single directory from the host file system to the guest.
 

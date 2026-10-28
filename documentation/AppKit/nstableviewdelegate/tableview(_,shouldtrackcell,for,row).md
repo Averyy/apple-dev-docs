@@ -20,11 +20,11 @@ optional func tableView(_ tableView: NSTableView, shouldTrackCell cell: NSCell, 
 - (BOOL) tableView:(NSTableView *) tableView shouldTrackCell:(NSCell *) cell forTableColumn:(NSTableColumn *) tableColumn row:(NSInteger) row;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the cell should be tracked, [`false`](../../Swift/false.md) otherwise.
 
-#### Discussion
+## Discussion
 
 In general, only selectable or selected cells can be tracked. If you implement this method, cells that aren’t selectable or selected can be tracked; similarly, cells that are selectable or selected can be set as untracked.
 

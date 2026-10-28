@@ -24,7 +24,7 @@ func setFill()
 - (void) setFill;
 ```
 
-#### Discussion
+## Discussion
 
 If you subclass `UIColor`, you must implement this method in your subclass. Your custom implementation should modify the fill color in the current graphics context by setting it to the color represented by the receiver.
 

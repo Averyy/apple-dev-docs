@@ -25,7 +25,7 @@ func unload()
 - (void) unload;
 ```
 
-#### Discussion
+## Discussion
 
 Calling this method does not necessarily unload any content associated with the node’s child nodes from memory—it merely removes them from the scene graph. The unlinked nodes and their content are then subject to normal object memory management rules. Under ARC, those objects are deallocated if and only if they are not referenced from elsewhere in your program.
 

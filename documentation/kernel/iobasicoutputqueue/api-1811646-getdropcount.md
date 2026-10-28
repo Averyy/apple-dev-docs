@@ -11,7 +11,7 @@ Gets the number of packets dropped by the queue.
 virtual UInt32 getDropCount();
 ```
 
-#### Return Value
+## Return Value
 
 Returns the number of packets dropped due to over-capacity, or by external calls to the flush() method.
 

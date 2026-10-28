@@ -25,7 +25,7 @@ func apply(_ gameModelUpdate: any GKGameModelUpdate)
 - (void) applyGameModelUpdate:(id<GKGameModelUpdate>) gameModelUpdate;
 ```
 
-#### Discussion
+## Discussion
 
 Your implementation of the [`GKGameModelUpdate`](../gkgamemodelupdate.md) protocol, or *move class*, should add properties or methods that describe a move in terms of your game. In this method, you examine that information and perform the corresponding changes to your game model’s internal state. GameplayKit calls this method to speculate about possible future moves and their effects, using a copy of the active game board.
 

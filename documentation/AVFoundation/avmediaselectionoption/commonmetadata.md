@@ -25,7 +25,7 @@ var commonMetadata: [AVMetadataItem] { get }
 @property (nonatomic, readonly) NSArray<AVMetadataItem *> * commonMetadata;
 ```
 
-#### Discussion
+## Discussion
 
 You can filter the array of [`AVMetadataItem`](../avmetadataitem.md) objects according to locale using [`metadataItems(from:with:)`](../avmetadataitem/metadataitems%28from,with%29.md), key using [`metadataItems(from:withKey:keySpace:)`](../avmetadataitem/metadataitems%28from,withkey,keyspace%29.md), or language using [`metadataItems(from:filteredAndSortedAccordingToPreferredLanguages:)`](../avmetadataitem/metadataitems%28from,filteredandsortedaccordingtopreferredlanguages%29.md).
 

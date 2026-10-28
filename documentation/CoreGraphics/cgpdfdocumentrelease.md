@@ -21,7 +21,7 @@ Decrements the retain count of a PDF document.
 extern void CGPDFDocumentRelease(CGPDFDocumentRef document);
 ```
 
-#### Discussion
+## Discussion
 
 This function is equivalent to [`CFRelease`](../CoreFoundation/cfrelease.md), except that it does not cause an error if the `document` parameter is `NULL`.
 

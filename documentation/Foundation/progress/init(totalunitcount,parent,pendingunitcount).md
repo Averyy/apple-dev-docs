@@ -25,7 +25,7 @@ init(totalUnitCount unitCount: Int64, parent: Progress, pendingUnitCount portion
 + (NSProgress *) progressWithTotalUnitCount:(int64_t) unitCount parent:(NSProgress *) parent pendingUnitCount:(int64_t) portionOfParentTotalUnitCount;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to initialize a progress object with a specified containing progress object and unit count.
 

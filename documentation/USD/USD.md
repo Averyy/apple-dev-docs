@@ -5,7 +5,7 @@
 
 An efficient and scalable way to represent 3D scenes.
 
-#### Overview
+## Overview
 
 [Universal Scene Description](https://openusd.org/release/index.html) (*OpenUSD*, though commonly referred to as *USD*) is an efficient, scalable system for authoring, reading, and streaming graphics data. Originally developed by Pixar for their feature films, it is now a proposed open standard being promoted by the [Alliance for OpenUSD (AOUSD)](https://aousd.org). Apple and Pixar are both founding members of the AOUSD.
 

@@ -17,7 +17,7 @@ An environment value that provides the ability to reevaluate default focus.
 struct ResetFocusAction
 ```
 
-#### Overview
+## Overview
 
 Get the [`resetFocus`](./environmentvalues/resetfocus.md) environment value and call it as a function to force a default focus reevaluation at runtime.
 

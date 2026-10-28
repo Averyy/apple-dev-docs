@@ -25,7 +25,7 @@ func visit(_ event: CNChangeHistoryUpdateContactEvent)
 - (void) visitUpdateContactEvent:(CNChangeHistoryUpdateContactEvent *) event;
 ```
 
-#### Discussion
+## Discussion
 
 Inspect the contact in the event that the system provides and update your app’s cached data accordingly.
 

@@ -24,7 +24,7 @@ var dimensions: vector_int2 { get }
 @property (nonatomic, readonly) vector_int2 dimensions;
 ```
 
-#### Discussion
+## Discussion
 
 If the texture contains multiple mipmap levels (the [`mipLevelCount`](./miplevelcount.md) value is greater than zero), this property reflects the base (largest) mipmap level.
 

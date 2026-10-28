@@ -21,7 +21,7 @@ The track groups an asset contains.
 var trackGroups: [AVAssetTrackGroup] { get }
 ```
 
-#### Discussion
+## Discussion
 
 This value is an empty array if the composition has no track groups.
 

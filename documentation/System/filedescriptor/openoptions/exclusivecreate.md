@@ -25,7 +25,7 @@ static var exclusiveCreate: FileDescriptor.OpenOptions { get }
 
 - [Adopting Swift File Options](../../adopting-file-options.md)
 
-#### Discussion
+## Discussion
 
 If this option and [`create`](./create.md) are both specified and the file exists, doc:FileDescriptor/open(_:_:options:permissions:retryOnInterrupt:)-2266j returns an error instead of creating the file. You can use this, for example, to implement a simple exclusive-access locking mechanism.
 

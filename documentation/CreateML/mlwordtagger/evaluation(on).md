@@ -15,7 +15,7 @@ Computes evaluation metrics.
 func evaluation(on labeledTokens: [(tokens: [MLWordTagger.Token], labels: [String])]) -> MLWordTaggerMetrics
 ```
 
-#### Return Value
+## Return Value
 
 Word tagger metrics.
 

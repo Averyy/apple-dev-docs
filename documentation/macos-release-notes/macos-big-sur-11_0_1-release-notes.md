@@ -4,43 +4,43 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 The macOS 11 SDK provides support to develop apps for Macs running macOS Big Sur 11. The SDK comes bundled with Xcode 12.2. For information on the compatibility requirements for Xcode 12.2, see [Xcode 12.2 Release Notes](../Xcode-Release-Notes/xcode-12_2-release-notes.md).
 
-##### General
+### General
 
-###### Known Issues
+#### Known Issues
 
 > ❗ **Important**: Updating to macOS Big Sur 11.0.1 from previous versions of macOS might take significantly longer than expected. Data loss could occur if the update is interrupted. (59101197)
 
-##### Accessibility
+### Accessibility
 
-###### Known Issues
+#### Known Issues
 
 - You might be unable to pair certain braille displays using Bluetooth. (69794099)
 
   **Workaround:** Connect these devices using USB instead.
 
-##### AppKit
+### AppKit
 
 - See [AppKit Release Notes for macOS Big Sur 11](./appkit-release-notes-for-macos-11.md).
 
-##### App Store
+### App Store
 
-###### New Features
+#### New Features
 
 - [`SKStoreProductViewController`](../StoreKit/skstoreproductviewcontroller.md) and [`SKProductStorePromotionController`](../StoreKit/skproductstorepromotioncontroller.md) APIs are now available for both macOS and Mac Catalyst apps. (56300909)
 
-##### Core ML
+### Core ML
 
-###### Deprecations
+#### Deprecations
 
 - The default initializer on the auto-generated model interface has been deprecated in favor of `init(configuration:)`. Please use `init(configuration:)` or the newly introduced `.load()` method and handle model load errors as appropriate. (64432588)
 
-##### Installer and Software Update
+### Installer and Software Update
 
-###### Known Issues
+#### Known Issues
 
 - When updating from macOS Big Sur 11 beta 2 to macOS Big Sur 11 beta 3 or later, you might be offered an unexpectedly large download rather than an incremental software update. (65753086)
 
@@ -50,9 +50,9 @@ The macOS 11 SDK provides support to develop apps for Macs running macOS Big Sur
 
   **Workaround:** Update the previous version of macOS Catalina to 10.15.6 or later.
 
-##### Kernel
+### Kernel
 
-###### Known Issues
+#### Known Issues
 
 - Installing a new kernel extension requires signing in as an Admin user. You must also restart your Mac to load the extension. Kernel extensions using certain deprecated KPIs won’t be loaded. For more information, see [Deprecated Kernel Extensions and System Extension Alternatives](https://developer.apple.com/support/kernel-extensions/). (55068348)
 
@@ -61,7 +61,7 @@ The macOS 11 SDK provides support to develop apps for Macs running macOS Big Sur
 - Use only absolute paths with the `--volume-root` option of `kmutil`, and don’t use a trailing `/`. (63773848)
 - Symbols exported by both xnu and Apple kernel extensions will change. Recompile your kernel extension with each update to macOS Big Sur 11.0.1 to ensure compatibility. (64262563)
 
-###### New Features
+#### New Features
 
 - The `kern.argmax` limit has been increased, allowing programs to receive longer argument lists. (48661669)
 - Darwin `kevent` now allows non-parent processes to register for `NOTE_EXITSTATUS`, which delivers the same values as the `wait()` family of functions in the event data. Refer to the `wait4()` man page for more information. This event is subject to the following security checks:
@@ -69,21 +69,21 @@ The macOS 11 SDK provides support to develop apps for Macs running macOS Big Sur
   - The requesting process is allowed to send signals by sandbox restrictions.
   - The requesting process and the target process are running as the same user or the requesting process has root privileges. (58134463)
 
-###### Deprecations
+#### Deprecations
 
 - Kernel extensions using certain deprecated KPIs no longer load. Refer to the [support page](https://developer.apple.com/support/kernel-extensions). While macOS Big Sur remains in development, you can temporarily disable System Integrity Protection to allow these deprecated extensions to load. (55068348)
 
-##### Key-Value Observing
+### Key-Value Observing
 
-###### New Features
+#### New Features
 
 - Key-Value Observation removal facilities now employ deterministic bookkeeping methods. Cases that would have produced hard-to-diagnose crashes, especially those where KVO signals problems accessing deallocated observer pointers or observers associated with incorrect objects, now produce an exception pinpointing which observed object needs a missed `removeObserver` call, and by which observers. This exception was previously thrown as ‘best effort’ when KVO could detect the problem; the new deterministic bookkeeping allows it to be thrown for all cases where `removeObserver(_:)` is needed.
 
   The improved determinism also allows improved Swift API handling. Instances of [`NSKeyValueObservation`](../Foundation/nskeyvalueobservation.md), produced by the Swift `NSObject.observe(_:changeHandler:)` method, take advantage of integration with this bookkeeping so they now invalidate automatically when the observed object is released,  regardless of how the object implements its KVO behavior. This applies to all usage of this API in macOS 11 Big Sur beta, including on processes built with previous versions of the SDK, and eliminates certain classes of crashes that sometimes required using the legacy API instead. (65051563)
 
-##### Logging
+### Logging
 
-###### New Features
+#### New Features
 
 - New APIs are available for using `os_log` from Swift as part of the [os](../os/os.md) framework:
 
@@ -94,9 +94,9 @@ The macOS 11 SDK provides support to develop apps for Macs running macOS Big Sur
 
   **Note:** The new APIs can’t be back deployed; however, the existing `os_log` API remains available for back deployment. (22539144)
 
-##### Mac Catalyst
+### Mac Catalyst
 
-###### Known Issues
+#### Known Issues
 
 - `WebGL` content in [`WKWebView`](../WebKit/wkwebview.md) might experience reduced performance. (70587571)
 - A [`ToolbarItem`](../SwiftUI/toolbaritem.md) with automatic placement isn’t placed in the window toolbar. (63690384)
@@ -156,35 +156,35 @@ The macOS 11 SDK provides support to develop apps for Macs running macOS Big Sur
 - The text you use in a `UITextView` or `UITextField` to look up definitions may be out of sync with the visual selection.
 - [`UITitlebar`](../UIKit/uititlebar.md) has a new [`UITitlebarSeparatorStyle`](../UIKit/uititlebarseparatorstyle.md) property that gives control over the appearance of the hairline bar in between a macOS window’s titlebar and its content. This property is especially useful when designing interfaces in the style of the new macOS Big Sur full-height sidebar.
 
-###### New Features
+#### New Features
 
 - Optimized for Mac is a new option for Catalyst apps. When optimized for Mac, Catalyst apps use Mac controls, appearances, spacing, and true font metrics, and content is no longer scaled by 77 percent. A new constant, [`UIUserInterfaceIdiom.mac`](../UIKit/uiuserinterfaceidiom/mac.md), has been introduced to support the new idiom. For more information on the new idiom and optimizing your Mac Catalyst app, see [Choosing a user interface idiom for your Mac app](../UIKit/choosing-a-user-interface-idiom-for-your-mac-app.md), and [Optimize the Interface of your Mac Catalyst App — WWDC20](https://developer.apple.com/videos/play/wwdc2020/10056/).
 - When you deliver your iPad app on the Mac via Catalyst, your existing users on iOS no longer need to purchase your app a second time. In addition, you can manage the capabilities and App Store metadata of your app in one place.
 - Application preferences that include no items users can set are instead shown in the About box.
 
-##### Networking
+### Networking
 
-###### New Features
+#### New Features
 
 - Experimental HTTP/3 support can be enabled in Safari via Experimental Features in the Developer menu, and enabled system-wide using the Terminal command `defaults write -g CFNetworkHTTP3Override -int 3`. (62969220)
 
-##### RealityKit
+### RealityKit
 
-###### New Features
+#### New Features
 
 - The new `DebugModelComponent` struct has been renamed to [`ModelDebugOptionsComponent`](../RealityKit/modeldebugoptionscomponent.md), and its `shaderDebugMode` property has been renamed to [`visualizationMode`](../RealityKit/modeldebugoptionscomponent/visualizationmode-swift.property.md). (64275817)
 
-##### Safari and WebKit
+### Safari and WebKit
 
-###### New Features
+#### New Features
 
 - Support for 4K HDR playback of YouTube videos. (64824895)
 - Support for Web Extensions is now available. Existing Chrome and Firefox extensions can be converted for Safari using `xcrun safari-web-extension-converter` and distributed through the App Store for use in Safari 14. (55707949)
 - Webpage Translation is now available in the U.S. and Canada. Supported languages include English, Spanish, Simplified Chinese, French, German, Russian, and Brazilian Portuguese. Safari will automatically detect if translation is available based on your Preferred Languages list. (64437861)
 
-##### Security
+### Security
 
-###### New Features
+#### New Features
 
 - macOS Big Sur 11 beta improves system security by requiring an administrator password when a certificate trust settings change is made in the admin trust domain. Running as the root user alone is no longer sufficient to modify certificate trust. User trust domain settings continue to require confirmation by entering the password for the user’s account. This change may affect you if one of the following is true:
 
@@ -194,15 +194,15 @@ The macOS 11 SDK provides support to develop apps for Macs running macOS Big Sur
 
   **Workaround:** Use Apple Configurator 2 to create and install a configuration profile containing your root certificate.
 
-##### SwiftUI
+### SwiftUI
 
-###### Known Issues
+#### Known Issues
 
 - [`ProgressView`](../SwiftUI/progressview.md) generic type signature has changed, adding the [`currentValueLabel`](../SwiftUI/gaugestyleconfiguration/currentvaluelabel-swift.property.md) generic parameter. This change doesn’t require any source changes, but it causes apps compiled using an earlier beta SDK to quit unexpectedly. (63580200)
 
   **Workaround:** Re-compile apps for macOS Big Sur 11 Beta 6 or later to resolve this issue.
 
-###### New Features
+#### New Features
 
 - A [`ToolbarItem`](../SwiftUI/toolbaritem.md) attached to the content of a sheet will now display [`confirmationAction`](../SwiftUI/toolbaritemplacement/confirmationaction.md), [`cancellationAction`](../SwiftUI/toolbaritemplacement/cancellationaction.md), [`destructiveAction`](../SwiftUI/toolbaritemplacement/destructiveaction.md) and [`automatic`](../SwiftUI/toolbaritemplacement/automatic.md) placements below the the content of the sheet. (61180502)
 - A [`ToolbarItem`](../SwiftUI/toolbaritem.md)  [`Label`](../SwiftUI/label.md) is now automatically used when the window’s toolbar is set to Icon and Text or Text Only. (67823018)
@@ -352,9 +352,9 @@ The macOS 11 SDK provides support to develop apps for Macs running macOS Big Sur
 - `body` is now implicitly a [`ViewBuilder`](../SwiftUI/viewbuilder.md) and [`body`](../SwiftUI/app/body-swift.property.md) is now implicitly a [`SceneBuilder`](../SwiftUI/scenebuilder.md). (63606493)
 - A new redaction reason API for applying placeholder [`Text`](../SwiftUI/text.md) treatment is now available. (63288447)
 
-##### Third-Party Apps
+### Third-Party Apps
 
-###### Known Issues
+#### Known Issues
 
 - You might experience kernel panics when using earlier versions of Parallels Desktop 16. (67358596)
 
@@ -363,33 +363,33 @@ The macOS 11 SDK provides support to develop apps for Macs running macOS Big Sur
 
   **Workaround:** Set `SYSTEM_VERSION_COMPAT=1` in the calling environment, for example: `$ SYSTEM_VERSION_COMPAT=1 legacy_script.pl`
 
-##### Time Machine
+### Time Machine
 
-###### New Features
+#### New Features
 
 - APFS-formatted backup volumes are now supported for faster, more compact, and more reliable backups. New local and network Time Machine backup destinations are formatted as APFS by default. Time Machine will continue backing up to existing HFS backup volumes. (65155545)
 
-##### Virtualization
+### Virtualization
 
-###### New Features
+#### New Features
 
 - The [Hypervisor](../Hypervisor/Hypervisor.md) framework now requires the `com.apple.security.hypervisor` entitlement. (63960391)
 - A new `Virtualization` framework provides high-level APIs to run Linux in a virtual machine. (64492914)
 
-###### Deprecations
+#### Deprecations
 
 - The function [`hv_vcpu_run(_:)`](../Hypervisor/hv_vcpu_run%28_%29.md) is deprecated.
 - The `VNIdentifiedPointsObservation` class is deprecated. Use [`VNRecognizedPointsObservation`](../Vision/vnrecognizedpointsobservation.md) instances instead. (63690311)
 
-##### Wallet
+### Wallet
 
-###### Known Issues
+#### Known Issues
 
 - [`isPassLibraryAvailable()`](../PassKit/pkpasslibrary/ispasslibraryavailable%28%29.md) doesn’t ensure uniform availability of pass library functionality between platforms and devices. (60697880)
 
   **Workaround:** Call a more specific API to check available functionality, such as [`canAddPasses()`](../PassKit/pkaddpassesviewcontroller/canaddpasses%28%29.md).
 
-###### New Features
+#### New Features
 
 - Apple Pay support is now available to Mac Catalyst apps. Two methods have been added to existing delegate protocols. No changes are required for iPad apps, but one or both of these methods must be implemented when building for Catalyst. (64187739)
 
@@ -410,15 +410,15 @@ The macOS 11 SDK provides support to develop apps for Macs running macOS Big Sur
   @end
   ```
 
-##### Xcode
+### Xcode
 
-###### Known Issues
+#### Known Issues
 
 - Legacy Xcode versions prior to 11.5 might unexpectedly quit when launched. (59991056)
 
   **Workaround:** Run the following command in Terminal: `defaults write com.apple.dt.Xcode DVTDisableMainThreadChecker 1`, then deselect Main Thread Checker in the Diagnostic tab of the Run and Test actions for each scheme in your project.
 
-###### New Features
+#### New Features
 
 - [`hv_vcpu_run_until(_:_:)`](../Hypervisor/hv_vcpu_run_until%28_,_%29.md) now supports the deadline [`HV_DEADLINE_FOREVER`](../Hypervisor/hv_deadline_forever.md). (57025216)
 - The new [`hv_vcpu_enable_managed_msr(_:_:_:)`](../Hypervisor/hv_vcpu_enable_managed_msr%28_,_,_%29.md) and [`hv_vcpu_set_msr_access(_:_:_:)`](../Hypervisor/hv_vcpu_set_msr_access%28_,_,_%29.md) enable direct MSR access from a guest. (50291076)

@@ -19,7 +19,7 @@ func scrollItem(at index: Int, to alignment: NSScrubber.Alignment)
 - (void) scrollItemAtIndex:(NSInteger) index toAlignment:(NSScrubberAlignment) alignment;
 ```
 
-#### Discussion
+## Discussion
 
 To animate the scroll, call this method on the animator proxy. See [`NSAnimatablePropertyContainer`](../nsanimatablepropertycontainer.md) for details.
 

@@ -24,7 +24,7 @@ case dynamic
 WKSelectionGranularityDynamic
 ```
 
-#### Discussion
+## Discussion
 
 When the selection is within a single block, the granularity may be single character. When the selection is not confined to a single block, the granularity may be a single block.
 

@@ -21,11 +21,11 @@ Returns a sequence of pairs (*n*, *x*), where *n* represents a consecutive integ
 func enumerated() -> EnumeratedSequence<Self>
 ```
 
-#### Return Value
+## Return Value
 
 A sequence of pairs enumerating the sequence.
 
-#### Discussion
+## Discussion
 
 This example enumerates the characters of the string “Swift” and prints each character along with its place in the string.
 

@@ -13,7 +13,7 @@ Implement realistic real-time lighting by dynamically generating reflection maps
 - macOS 14.0+
 - Xcode 26.3+
 
-#### Overview
+## Overview
 
 This sample code project relates to multiple WWDC sessions, including:
 
@@ -22,7 +22,7 @@ This sample code project relates to multiple WWDC sessions, including:
 - [10286: Explore bindless rendering in Metal](https://developer.apple.com/wwdc21/10286/)
 - [10150: Explore hybrid rendering with Metal ray tracing](https://developer.apple.com/wwdc21/10150/)
 
-##### Configure the sample code project
+### Configure the sample code project
 
 To run this sample app, you need the following:
 

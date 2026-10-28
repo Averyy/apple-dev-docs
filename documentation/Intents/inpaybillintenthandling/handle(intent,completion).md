@@ -30,7 +30,7 @@ func handle(intent: INPayBillIntent) async -> INPayBillIntentResponse
 - (void) handlePayBill:(INPayBillIntent *) intent completion:(void (^)(INPayBillIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Your implementation of this method must schedule payment of the specified bill using the information in the intent object. The response object you provide should include the transaction details and indicate whether or not scheduling of the transaction was successful.
 

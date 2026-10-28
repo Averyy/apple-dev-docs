@@ -15,11 +15,11 @@ The object for setting an offset value to use with a component shadow.
 object ComponentShadowOffset
 ```
 
-#### Discussion
+## Discussion
 
 Use the `ComponentShadowOffset` object to define an offset. A positive `x` value moves the shadow to the right, and a negative `x` value moves the shadow to the left. A positive `y` value moves the shadow down, and a negative `y` value moves the shadow up.
 
-##### Example
+### Example
 
 ```json
 {

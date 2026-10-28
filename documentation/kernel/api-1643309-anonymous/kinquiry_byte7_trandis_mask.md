@@ -13,7 +13,7 @@
 kINQUIRY_Byte7_TRANDIS_Mask = (1 << kINQUIRY_Byte7_TRANDIS_Bit)
 ```
 
-#### Discussion
+## Discussion
 
 Mask to use to test the TRANDIS bit.
 

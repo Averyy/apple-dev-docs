@@ -33,7 +33,7 @@ func reply(withLocalizableMessageKey key: String, arguments: [String], data: Dat
 
 - [Exchanging data between players in turn-based games](../exchanging-data-between-players-in-turn-based-games.md)
 
-#### Discussion
+## Discussion
 
 To accept or decline an exchange request, invoke this method from the [`player(_:receivedExchangeRequest:for:)`](../gkturnbasedeventlistener/player%28_,receivedexchangerequest,for%29.md) protocol method. Include game-specific details about the exchange in the `data` parameter. When all recipients reply or time out, GameKit invokes the [`player(_:receivedExchangeReplies:forCompletedExchange:for:)`](../gkturnbasedeventlistener/player%28_,receivedexchangereplies,forcompletedexchange,for%29.md) protocol method in the game instances of the sender and the current participant.
 

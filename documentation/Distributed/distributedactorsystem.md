@@ -21,11 +21,11 @@ A distributed actor system underpins and implements all functionality of distrib
 protocol DistributedActorSystem<SerializationRequirement> : Sendable
 ```
 
-#### Overview
+## Overview
 
 A [`DistributedActor`](./distributedactor.md) is always initialized in association with some concrete actor system. That actor system instance is then used to manage the identity of the actor, as well as handle all remote interactions of the distributed actor.
 
-#### Using a DistributedActorSystem library
+## Using a DistributedActorSystem library
 
 From a library user’s perspective (e.g. someone using a `ClusterSystem` or `SampleWebSocketActorSystem`), the basic use of a distributed actor system is fairly opaque.
 
@@ -50,13 +50,13 @@ For more details about how the specific actor system implementation deals with r
 
 > **Note**: For example, you may refer to the [Swift Distributed Actors cluster library](https://github.com/apple/swift-distributed-actors/) documentation, which is one example of such feature complete distributed actor system implementation.
 
-#### Implementing a DistributedActorSystem
+## Implementing a DistributedActorSystem
 
 This section is dedicated to distributed actor system library authors, and generally can be skipped over by library users, as it explains the interactions of synthesized code and specific distributed actor system methods and how they must be implemented.
 
 Methods discussed in this section are generally not intended to be called directly, but instead will have calls generated to them from distributed actor declarations in appropriate places (such as initializers, `distributed func` calls, or `distributed` computed properties).
 
-##### Assigning and Resigning Actor Identifiers
+### Assigning and Resigning Actor Identifiers
 
 During a local distributed actor’s initialization (i.e. any `init` of a `distributed actor`), the actor system will be invoked in order to assign an [`ActorID`](./distributedactorsystem/actorid.md) for this actor.
 
@@ -103,7 +103,7 @@ deinit {
 
 After an ID is resigned, it technically could be used to identify another instance. For example, an advanced actor system implementation could use such approach to implement actors which are created “ad-hoc” and always contain the appropriate ID, and if one isn’t allocated yet for such ID, it could *then* create one on demand and make sure it is assigned the required ID.
 
-##### Readying Distributed Actors
+### Readying Distributed Actors
 
 Once a `distributed actor` has been *fully initialized* during its initializer, a call to [`actorReady(_:)`](./distributedactorsystem/actorready%28_%29.md) is synthesized. This call is made after the actor’s properties (including all user-declared properties) have been initialized, but before other user-defined code in the initializer gets a chance to run.
 
@@ -117,7 +117,7 @@ The [`actorReady(_:)`](./distributedactorsystem/actorready%28_%29.md) call on th
 
 Next, we will discuss the just mentioned `resolve` method, which is closely tied to readying actors.
 
-##### Resolving (potentially remote) Distributed Actors
+### Resolving (potentially remote) Distributed Actors
 
 An important aspect of any distributed actor system is being able to turn a [`DistributedActor`](./distributedactor.md) type and [`ActorID`](./distributedactorsystem/actorid.md) into a reference to an actor (instance), regardless where the actor is located. The ID should have enough information stored to be able to make the decision of *where* the actor is located, without having to contact remote nodes. Specifically, the implementation of [`resolve(id:as:)`](./distributedactorsystem/resolve%28id,as%29.md) is *not* `async` and should *not* perform long running or blocking operations in order to return.
 
@@ -127,7 +127,7 @@ The actor system’s [`resolve(id:as:)`](./distributedactorsystem/resolve%28id,a
 
 The actor system’s `resolve` returning `nil` means that the [`ActorID`](./distributedactorsystem/actorid.md) passed to it refers to a *remote* distributed actor. The Swift runtime reacts to this by creating a remote actor reference (sometimes called a “proxy”).
 
-##### Handling remote calls
+### Handling remote calls
 
 Finally, calls on a *remote* distributed actor reference’s distributed methods are turned into invocations of `remoteCall(on:target:invocation:returning:throwing:)` (or `remoteCallVoid(on:target:invocation:throwing:)` for Void returning methods).
 
@@ -139,7 +139,7 @@ While implementing remote calls please keep in mind any potential failure scenar
 
 While it is not *required* to conform error thrown out of these methods to [`DistributedActorSystemError`](./distributedactorsystemerror.md), the general guideline about conforming errors to this protocol is that errors which are outside of the user’s control, but are thrown because transport or actor system issues, should conform to it. This is to simplify separating “business logic errors” from transport errors.
 
-##### Further reading
+### Further reading
 
 For an even more in-depth explanation about the inner workings of a distributed actor system, you can refer to the following Swift Evolution proposals:
 

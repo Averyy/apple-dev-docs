@@ -19,7 +19,7 @@ A content domain that defines which fields and attribute mappings are presented 
 struct ContentDomain
 ```
 
-#### Overview
+## Overview
 
 Each domain exposes a small set of fields tuned for a specific category of user content. Developers can override the default attribute mappings.
 

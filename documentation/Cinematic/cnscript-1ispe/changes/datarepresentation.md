@@ -19,7 +19,7 @@ Persistent data representation of changes for later restoration.
 var dataRepresentation: Data { get }
 ```
 
-#### Discussion
+## Discussion
 
 The script changes are only used with the original cinematic movie from which the script came from.
 

@@ -25,7 +25,7 @@ var disableDialogs: Bool { get set }
 @property (nonatomic, assign) BOOL disableDialogs;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `false`. Set this value to `true` when you run automated tests and want to suppress interactive dialogs.
 

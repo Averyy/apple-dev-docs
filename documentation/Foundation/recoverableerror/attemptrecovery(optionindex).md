@@ -22,7 +22,7 @@ Attempt to recover from this error when the user selected the option at the give
 func attemptRecovery(optionIndex recoveryOptionIndex: Int) -> Bool
 ```
 
-#### Discussion
+## Discussion
 
 This entry point is used for recovery of errors handled at the “application” granularity, where nothing else in the application can proceed until the attempted error recovery completes.
 

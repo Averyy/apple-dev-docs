@@ -21,7 +21,7 @@ Returns a date with a specified amount of time added to it.
 static func + (lhs: Date, rhs: TimeInterval) -> Date
 ```
 
-#### Return Value
+## Return Value
 
 A date with a specified amount of time added to it.
 

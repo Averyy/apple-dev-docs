@@ -19,7 +19,7 @@ func paragraphSpacing(beforeGlyphAt glyphIndex: Int, withProposedLineFragmentRec
 - (CGFloat) paragraphSpacingBeforeGlyphAtIndex:(NSUInteger) glyphIndex withProposedLineFragmentRect:(NSRect) rect;
 ```
 
-#### Discussion
+## Discussion
 
 The `rect` argument specifies the line fragment rectangle of the first line in the paragraph.
 

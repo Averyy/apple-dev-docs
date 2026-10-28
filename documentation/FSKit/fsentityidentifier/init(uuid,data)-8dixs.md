@@ -19,7 +19,7 @@ init(uuid: UUID, data qualifierData: Data)
 - (instancetype) initWithUUID:(NSUUID *) uuid data:(NSData *) qualifierData;
 ```
 
-#### Discussion
+## Discussion
 
 > ⚠️ **Warning**: This initializer is annotated as returning a non-optional value but silently returns `nil` when `qualifierData` is not exactly eight bytes, which can surface as a null value in a non-optional Swift variable. Use [`init(uuid:qualifierData:)`](./init%28uuid,qualifierdata%29-8xlg1.md) instead, which is explicitly failable.
 

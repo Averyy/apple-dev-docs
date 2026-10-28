@@ -17,7 +17,7 @@ The configuration of the mobile document reader.
 final var configuration: MobileDocumentReader.Configuration { get async throws }
 ```
 
-#### Discussion
+## Discussion
 
 Use the information contained in the configuration to construct as reader token on your server.
 

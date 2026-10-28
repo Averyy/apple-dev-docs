@@ -15,7 +15,7 @@ Creates a signature from SHA-256 hash data.
 - (instancetype) initWithData:(NSData *) data;
 ```
 
-#### Discussion
+## Discussion
 
 The hash data must be exactly 32 bytes in length. If data isn’t exactly 32 bytes, the framework raises an exception.
 

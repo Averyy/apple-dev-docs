@@ -25,11 +25,11 @@ init?(streamDescription asbd: UnsafePointer<AudioStreamBasicDescription>)
 - (instancetype) initWithStreamDescription:(const AudioStreamBasicDescription *) asbd;
 ```
 
-#### Return Value
+## Return Value
 
 A new `AVAudioFormat` instance, or `nil` if the initialization fails.
 
-#### Discussion
+## Discussion
 
 If the [`AudioStreamBasicDescription`](../../CoreAudioTypes/audiostreambasicdescription.md) specifies more than two channels, this method fails and returns `nil`. Instead, use the [`init(streamDescription:channelLayout:)`](./init%28streamdescription,channellayout%29.md) method.
 

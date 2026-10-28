@@ -20,11 +20,11 @@ func vmnet_network_create(_ configuration: vmnet_network_configuration_ref, _ st
 vmnet_network_refvmnet_network_create(vmnet_network_configuration_ref configuration, vmnet_return_t *status);
 ```
 
-#### Return Value
+## Return Value
 
 Vmnet network handle on success, otherwise `NULL`.
 
-#### Discussion
+## Discussion
 
 This API attempts to reserve the configuration such that subsequent interface start calls is guaranteed to not fail due to resource contention. The lifetime of such reservation is the same as that of [`vmnet_network_ref`](./vmnet_network_ref.md). Use [`CFRelease`](../CoreFoundation/cfrelease.md) to release the network object.
 

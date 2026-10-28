@@ -21,7 +21,7 @@ Compares two values of this type to determine if they are equivalent to each oth
 static func == (lhs: WordPair, rhs: WordPair) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 True if both values were equal, or false if they were unequal.
 

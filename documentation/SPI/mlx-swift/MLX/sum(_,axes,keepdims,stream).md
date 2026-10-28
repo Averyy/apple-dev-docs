@@ -21,7 +21,7 @@ func sum(_ array: MLXArray, axes: some Collection<Int>, keepDims: Bool = false, 
 
 - [Converting From Python](./converting-python.md)
 
-##### See Also
+### See Also
 
 - [Reduction Functions](./reduction.md)
 - [`sum(_:axis:keepDims:stream:)`](./sum%28_,axis,keepdims,stream%29.md)

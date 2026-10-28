@@ -25,7 +25,7 @@ static var protocolError: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 Some protocol error occurred. This error is device-specific, but generally isn’t related to a hardware failure.
 

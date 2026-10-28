@@ -24,7 +24,7 @@ func registerForConnectionEvents(options: [CBConnectionEventMatchingOption : Any
 - (void) registerForConnectionEventsWithOptions:(NSDictionary<NSString *,id> *) options;
 ```
 
-#### Discussion
+## Discussion
 
 When the central manager makes a connection that matches the options, it calls the delegate’s [`centralManager(_:connectionEventDidOccur:for:)`](../cbcentralmanagerdelegate/centralmanager%28_,connectioneventdidoccur,for%29.md) method.
 

@@ -15,7 +15,7 @@ Locates objects in an image and generates an annotation for each object it detec
 func prediction(from image: URL) throws -> MLObjectDetector.DetectedObjects
 ```
 
-#### Return Value
+## Return Value
 
 An [`MLObjectDetector.DetectedObjects`](./detectedobjects.md) instance — which is an [`MLObjectDetector.ObjectAnnotation`](./objectannotation.md) array — where each annotation represents an item the object detector found in the image.
 

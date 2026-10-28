@@ -20,7 +20,7 @@ A Boolean value that indicates whether the object orbits the center point in the
 var spinClockwise: Bool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `true`, which indicates that the rotation occurs in the clockwise direction. Set the value to `false` to cause the object to orbit the center point counterclockwise.
 

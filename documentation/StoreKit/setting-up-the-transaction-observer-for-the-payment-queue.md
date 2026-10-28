@@ -5,11 +5,11 @@
 
 Enable your app to receive and handle transactions by adding an observer.
 
-#### Overview
+## Overview
 
 To process transactions in your app, you need to create and add an observer to the payment queue. The observer object responds to new transactions and synchronizes the queue of pending transactions with the App Store, and the payment queue prompts users to authorize payment. It’s important to add the transaction observer at app launch to ensure you don’t miss payment queue notifications that the system may send when the app launches.
 
-##### Create an observer
+### Create an observer
 
 Create and build a custom observer class to handle changes to the payment queue.
 
@@ -40,7 +40,7 @@ let iapObserver = StoreObserver()
 
 After you create the transaction observer, you can add it to the payment queue.
 
-##### Add an observer
+### Add an observer
 
 StoreKit attaches your observer to the queue when your app calls.
 

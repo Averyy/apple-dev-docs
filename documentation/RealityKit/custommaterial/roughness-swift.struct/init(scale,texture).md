@@ -19,7 +19,7 @@ Creates a roughness object from a color or texture.
 init(scale: Float = 1.0, texture: CustomMaterial.Texture? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to create an object to specify the amount of roughness using a single value or an image texture, or both.
 

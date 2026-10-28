@@ -23,7 +23,7 @@ consuming func flatMapError<NewFailure>(_ transform: (Failure) -> Result<Success
 
 Available when `Failure` conforms to `Error`.
 
-#### Return Value
+## Return Value
 
 A `Result` instance, either from the closure or the previous `.success`.
 

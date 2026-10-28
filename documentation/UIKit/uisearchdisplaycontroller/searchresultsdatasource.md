@@ -23,7 +23,7 @@ weak var searchResultsDataSource: (any UITableViewDataSource)? { get set }
 @property (nonatomic, weak, nullable) id<UITableViewDataSource> searchResultsDataSource;
 ```
 
-#### Discussion
+## Discussion
 
 The default is `nil`.
 

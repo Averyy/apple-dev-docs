@@ -19,7 +19,7 @@ The type of header to use for the list.
 @property (nonatomic) UICollectionLayoutListHeaderMode headerMode;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`UICollectionLayoutListHeaderModeNone`](../uicollectionlayoutlistheadermode/uicollectionlayoutlistheadermodenone.md).
 

@@ -24,7 +24,7 @@ var bounds: CGRect { get set }
 @property CGRect bounds;
 ```
 
-#### Discussion
+## Discussion
 
 The bounds rectangle is the origin and size of the layer in its own coordinate space. When you create a new standalone layer, the default value for this property is an empty rectangle, which you must change before using the layer. The values of each coordinate in the rectangle are measured in points.
 

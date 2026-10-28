@@ -20,7 +20,7 @@ A component that defines which layers an entity participates in.
 struct RenderLayerComponent
 ```
 
-#### Overview
+## Overview
 
 Add a [`RenderLayerComponent`](./renderlayercomponent.md) to an entity to control which lights illuminate it and which lights it casts shadows from. A light affects this entity when the entity’s [`layers`](./renderlayercomponent/layers.md) intersect with the light’s layers, for example [`layers`](./directionallightcomponent/layers.md), [`layers`](./pointlightcomponent/layers.md), or [`layers`](./spotlightcomponent/layers.md).
 

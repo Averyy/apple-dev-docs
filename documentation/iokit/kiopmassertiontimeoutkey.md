@@ -16,7 +16,7 @@ kIOPMAssertionTimeoutKey specifies an outer bound, in seconds, that this asserti
 #define kIOPMAssertionTimeoutKey
 ```
 
-#### Discussion
+## Discussion
 
 If your application hangs, or is unable to complete its assertion task in a reasonable amount of time, specifying a timeout allows PM to disable your assertion so the system can resume normal activity. Once a timeout with the [`kIOPMAssertionTimeoutActionTurnOff`](./kiopmassertiontimeoutactionturnoff.md) assertion fires, the level will be set to [`kIOPMAssertionTimeoutActionTurnOff`](./kiopmassertiontimeoutactionturnoff.md). The assertion may be re-armed by calling IOPMAssertionSetLevel.
 

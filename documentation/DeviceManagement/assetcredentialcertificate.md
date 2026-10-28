@@ -21,11 +21,11 @@ A reference to one PKCS #1 or PEM encoded certificate.
 object AssetCredentialCertificate
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.asset.credential.certificate` as the declaration type.
 
-##### Asset example
+### Asset example
 
 ```json
 {

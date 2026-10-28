@@ -20,7 +20,7 @@ let kSecCodeInfoTimestamp: CFString
 extern CFStringRef const kSecCodeInfoTimestamp;
 ```
 
-#### Discussion
+## Discussion
 
 The value is a [`CFDate`](../CoreFoundation/cfdate.md) object describing the signing date as (securely) certified by a timestamp authority service. This timestamp cannot be falsified by the signer, and is trusted to the same degree as the timestamp service that created the timestamp.
 

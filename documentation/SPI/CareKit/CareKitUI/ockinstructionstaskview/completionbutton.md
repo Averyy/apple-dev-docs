@@ -18,7 +18,7 @@ The button on the bottom of the instructions task view.
 let completionButton: OCKLabeledButton
 ```
 
-#### Discussion
+## Discussion
 
 The background color is the `tintColor` when in a normal state, and gray when in a selected state.
 

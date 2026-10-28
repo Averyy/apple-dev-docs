@@ -19,7 +19,7 @@ typealias SpeechErrorCFProcPtr = (SpeechChannel, SRefCon, CFError) -> Void
 typedef void (*SpeechErrorCFProcPtr)(SpeechChannel chan, SRefCon refCon, CFErrorRef theError);
 ```
 
-#### Discussion
+## Discussion
 
 An error callback function defined by the `SpeechErrorCFProcPtr` is the Core Foundation-based equivalent of an error callback function defined by [`SpeechErrorProcPtr`](./speecherrorprocptr.md). The Speech Synthesis Manager calls a speech channel’s error callback function whenever it encounters a syntax error within a command embedded in a `CFString` object it is processing. This can be useful during application debugging, to detect problems with commands that you have embedded in strings that your application speaks. It can also be useful if your application allows users to embed commands within strings. Your application might display an alert indicating that the Speech Synthesis Manager encountered a problem in processing an embedded command.
 

@@ -19,11 +19,11 @@ func webScriptValue(at index: UInt32) -> Any!
 - (id) webScriptValueAtIndex:(unsigned int) index;
 ```
 
-#### Return Value
+## Return Value
 
 The value of a property at `index`. Returns [`WebUndefined`](../webundefined.md) if an exception is thrown in the JavaScript environment.
 
-#### Discussion
+## Discussion
 
 Accessing property values by index is dependent on the scripting environment.
 

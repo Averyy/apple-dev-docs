@@ -15,7 +15,7 @@ The Enhanced AC-3 format.
 EnhancedAC3
 ```
 
-#### Discussion
+## Discussion
 
 This format uses no flags.
 

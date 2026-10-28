@@ -20,7 +20,7 @@ Enable people to interactively dismiss the keyboard as part of the scroll operat
 static var interactively: ScrollDismissesKeyboardMode { get }
 ```
 
-#### Discussion
+## Discussion
 
 The software keyboard’s position tracks the gesture that drives the scroll operation if the gesture crosses into the keyboard’s area of the display. People can dismiss the keyboard by scrolling it off the display, or reverse the direction of the scroll to cancel the dismissal.
 

@@ -11,11 +11,11 @@ virtual const IOUSBDescriptorHeader * FindNextAssociatedDescriptor(
  UInt8type);
 ```
 
-#### Return Value
+## Return Value
 
 Pointer to the descriptor, or NULL if no matching descriptors found.
 
-#### Overview
+## Overview
 
 Find the next descriptor of the requested type associated with the interface.
 

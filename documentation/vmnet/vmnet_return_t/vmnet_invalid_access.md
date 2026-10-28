@@ -18,7 +18,7 @@ case VMNET_INVALID_ACCESS
 VMNET_INVALID_ACCESS
 ```
 
-#### Discussion
+## Discussion
 
 Indicates failure due to insufficient permissions.
 

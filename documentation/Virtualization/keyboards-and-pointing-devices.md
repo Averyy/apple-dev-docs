@@ -5,7 +5,7 @@
 
 Configure devices that connect a mouse and keyboard to the guest system.
 
-#### Overview
+## Overview
 
 Configure a keyboard and a pointing device to allow people to interact with macOS or Linux VMs.
 

@@ -19,7 +19,7 @@ var representedElementCategory: NSCollectionElementCategory { get }
 @property (readonly) NSCollectionElementCategory representedElementCategory;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to distinguish whether the layout attributes apply to an item, a supplementary view, a decoration view, or another type of element presented by the collection view.
 

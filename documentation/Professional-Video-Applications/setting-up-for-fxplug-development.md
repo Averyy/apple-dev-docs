@@ -5,11 +5,11 @@
 
 Download and install the required software to develop FxPlug plug-ins.
 
-#### Overview
+## Overview
 
 Developing FxPlug plug-ins requires that you have certain developer software installed on your Mac along with host applications.
 
-##### Install software
+### Install software
 
 Your system must have the following software installed:
 
@@ -18,7 +18,7 @@ Your system must have the following software installed:
 - [Motion](https://apps.apple.com/app/motion/id434290957) 5.6.4 or newer
 - [Final Cut Pro](https://apps.apple.com/app/final-cut-pro/id424389933) 10.6.6 or newer
 
-##### Use plug-ins in host applications
+### Use plug-ins in host applications
 
 Plug-ins can be used in Final Cut Pro for Mac and Motion, referred to as the host applications. Use plug-ins directly in Motion; in Final Cut Pro, however, you must wrap plug-ins in a template, as described in [Preparing plug-ins for use in Final Cut Pro](./preparing-plug-ins-for-use-in-final-cut-pro.md). Once built, macOS automatically recognizes the plug-ins and vends them to the host applications on request.
 

@@ -15,7 +15,7 @@ A data object that contains the message content.
 let data: Data
 ```
 
-#### Discussion
+## Discussion
 
 For messages from the system containing sensitive data, this data is encrypted and ready for transmission to your accessory. For messages from your accessory containing sensitive data, encrypt this data before creating the transport message.
 

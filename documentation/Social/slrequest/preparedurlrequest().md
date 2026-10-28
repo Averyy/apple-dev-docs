@@ -22,11 +22,11 @@ func preparedURLRequest() -> URLRequest!
 - (NSURLRequest *) preparedURLRequest;
 ```
 
-#### Return Value
+## Return Value
 
 An OAuth-compatible `NSURLRequest` object that allows an app to act on behalf of the user, while keeping the user’s password private. The `NSURLRequest` is signed as OAuth1 by default, or OAuth2 by adding the appropriate token based on the user’s account.
 
-#### Discussion
+## Discussion
 
 Use this method to modify your request before sending. By setting the account correctly, this method will automatically add any necessary tokens.
 

@@ -17,7 +17,7 @@ Use the first character of the property’s name as a short option label.
 static var short: NameSpecification { get }
 ```
 
-#### Discussion
+## Discussion
 
 For example, a property named `verbose` would be converted to the label `-v`. Short labels can be combined into groups.
 

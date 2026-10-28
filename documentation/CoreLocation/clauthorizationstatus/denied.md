@@ -25,7 +25,7 @@ case denied
 kCLAuthorizationStatusDenied
 ```
 
-#### Discussion
+## Discussion
 
 When the authorization status is denied, your app can’t use location services. The status can be denied when:
 

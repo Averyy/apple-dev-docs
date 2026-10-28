@@ -26,7 +26,7 @@ struct Unmanaged<Instance> where Instance : AnyObject
 
 - [Working with Core Foundation Types](./working-with-core-foundation-types.md)
 
-#### Overview
+## Overview
 
 When you use this type, you become partially responsible for keeping the object alive.
 

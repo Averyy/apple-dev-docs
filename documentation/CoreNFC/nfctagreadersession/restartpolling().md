@@ -21,7 +21,7 @@ func restartPolling()
 - (void) restartPolling;
 ```
 
-#### Discussion
+## Discussion
 
 After restarting the polling sequence, the reader session sends newly detected tags to the session’s delegate method [`tagReaderSession(_:didDetect:)`](../nfctagreadersessiondelegate-2joku/tagreadersession%28_,diddetect%29.md).
 

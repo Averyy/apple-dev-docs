@@ -18,7 +18,7 @@ Per-camera scissor rectangles within the render target.
 var scissorRects: [MTLScissorRect]? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Corresponds to `MTLRenderCommandEncoder.setScissorRects(_:)`.
 

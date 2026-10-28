@@ -15,11 +15,11 @@ Removes the specified critical region object.
 OSStatus MPDeleteCriticalRegion(MPCriticalRegionID criticalRegion);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./carbon_core/multiprocessing_services.md#1663965).
 
-#### Discussion
+## Discussion
 
 Calling this function unblocks all tasks waiting to enter the critical region and their respective  [`MPEnterCriticalRegion`](./api-1585622-mpentercriticalregion.md)  calls will return with the result code `kMPDeletedErr`.
 

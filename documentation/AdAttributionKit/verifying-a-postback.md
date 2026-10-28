@@ -5,7 +5,7 @@
 
 Ensure the validity of a postback you receive after an ad conversion by verifying its cryptographic signature.
 
-#### Overview
+## Overview
 
 Postbacks contain data that validate an ad conversion. You need to verify the postback signature to make sure that Apple signed it before you count the conversion. Follow these steps to validate the postback:
 
@@ -14,11 +14,11 @@ Postbacks contain data that validate an ad conversion. You need to verify the po
 3. Validate the JSON Web Signature (JWS) by verifying its signature.
 4. Count only unique postbacks with signatures you verify. Check the did-win parameter to learn whether the postback represents a winning attribution.
 
-#### Receive the postback
+## Receive the postback
 
 Devices send postbacks to ad networks and developers within a defined timeframe after a conversion event occurs and the advertised app updates the conversion value at least once. Ad networks receive postbacks at the URL they provide when they register to use AdAttributionKit. Developers who opt in receive copies of winning postbacks at the URL they configure in the app’s property list key, `AttributionCopyEndpoint`. For more information about setting up your postback URL, see [Registering an ad network](./registering-an-ad-network.md) and [Configuring an advertised app](./configuring-an-advertised-app.md). For more information about the timeframe for receiving attribution, see [Receiving ad attributions and postbacks](./receiving-ad-attributions-and-postbacks.md). You may receive postbacks in three conversion windows. For more information, see [Receiving postbacks in multiple conversion windows](./receiving-postbacks-in-multiple-conversion-windows.md).
 
-#### Verify Apple’s signature
+## Verify Apple’s signature
 
 Apple signs postbacks with a different key depending on the environment and whether the system creates the postbacks in an end-to-end flow or in developer settings.
 
@@ -85,7 +85,7 @@ If your verification passes, the postback is valid.
 
 > ❗ **Important**: If the signature fails your verification, consider the postback message invalid. Don’t use it to count a conversion.
 
-#### Verify the JWS components
+## Verify the JWS components
 
 The JWS components include the following:
 
@@ -93,11 +93,11 @@ The JWS components include the following:
 - A payload that contains the `impression-type`, `ad-network-identifier`, `source-identifier`, `advertised-item-identifier`, `conversion-type`, `postback-identifier`, `did-win`, and `postback-sequence-index` properties, as well as the `marketplace-identifier` and `publisher-item-identifier` properties, both of which are optional.
 - The signature that Apple generates, which is the last component of the JWS.
 
-#### Respond to the postback
+## Respond to the postback
 
 When you receive a postback, respond with an HTTP 200 OK status code. If the device receives a 500 status code, it attempts to send the postback up to nine times over a maximum of 9 days.
 
-#### Count unique messages only
+## Count unique messages only
 
 Use the `postback-identifier` value to ensure that you’re counting unique ad conversions. If you receive more than one postback with the same `postback-identifier`, discard the duplicate report.
 

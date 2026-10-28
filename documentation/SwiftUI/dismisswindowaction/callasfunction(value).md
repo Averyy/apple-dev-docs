@@ -20,7 +20,7 @@ Dismisses the window defined by the window group that is presenting the specifie
 @preconcurrency func callAsFunction<D>(value: D) where D : Decodable, D : Encodable, D : Hashable
 ```
 
-#### Discussion
+## Discussion
 
 If multiple windows match the provided value, then they all will be dismissed. For dismissing a specific window in a specific group, use `dismissWindow(id:value:)`.
 

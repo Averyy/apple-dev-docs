@@ -6,7 +6,7 @@
 
 An atom that contains information about the item, including item-specific flags and item optional identifier.
 
-#### Overview
+## Overview
 
 The optional item information atom contains information about the item: item-specific flags and item optional identifier. This ID must be unique within the metadata atom. To simplify assignment of item identifiers, the metadata header atom’s nextItemInfo field can be used as described in [`Metadata header atom`](./metadata_header_atom.md).
 

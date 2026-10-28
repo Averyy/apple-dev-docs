@@ -25,7 +25,7 @@ var objectThreadExecutionWidth: Int { get }
 @property (readonly) NSUInteger objectThreadExecutionWidth;
 ```
 
-#### Discussion
+## Discussion
 
 You can access the value of this property in your shader code by adding an integer parameter with the `[[threads_per_simdgroup]]` attribute. For more information about this attribute, see the [Metal Shading Language Specification (PDF)](https://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf).
 

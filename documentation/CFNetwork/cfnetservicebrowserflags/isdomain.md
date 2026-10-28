@@ -24,7 +24,7 @@ static var isDomain: CFNetServiceBrowserFlags { get }
 kCFNetServiceFlagIsDomain
 ```
 
-#### Discussion
+## Discussion
 
 If set, the results pertain to a search for domains. If not set, the results pertain to a search for services.
 

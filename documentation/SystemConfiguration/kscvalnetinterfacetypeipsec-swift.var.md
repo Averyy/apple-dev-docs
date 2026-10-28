@@ -19,7 +19,7 @@ let kSCValNetInterfaceTypeIPSec: CFString
 extern CFStringRef const kSCValNetInterfaceTypeIPSec;
 ```
 
-#### Discussion
+## Discussion
 
 This value applies to the [`kSCPropNetInterfaceType`](./kscpropnetinterfacetype-swift.var.md) key.
 

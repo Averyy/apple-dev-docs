@@ -21,7 +21,7 @@ func disconnect()
 - (void) disconnect;
 ```
 
-#### Discussion
+## Discussion
 
 After you invoke this method, the framework stops calling input handlers that you set for the elements.
 

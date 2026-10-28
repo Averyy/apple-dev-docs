@@ -25,7 +25,7 @@ var classForKeyedArchiver: AnyClass? { get }
 @property (readonly, nullable) Class classForKeyedArchiver;
 ```
 
-#### Discussion
+## Discussion
 
 The object will be encoded as if it were a member of the class. This property is overridden by the encoder class and instance name to class encoding tables. If this property is `nil`, the result of this property is ignored.
 

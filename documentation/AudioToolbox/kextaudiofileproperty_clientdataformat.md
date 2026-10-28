@@ -24,11 +24,11 @@ var kExtAudioFileProperty_ClientDataFormat: ExtAudioFilePropertyID { get }
 kExtAudioFileProperty_ClientDataFormat
 ```
 
-#### Discussion
+## Discussion
 
 The audio stream format for your application. Value is a read/write [`AudioStreamBasicDescription`](../CoreAudioTypes/audiostreambasicdescription.md) struct.
 
-#### Discussion
+## Discussion
 
 The format must be linear PCM (specified by the `kAudioFormatLinearPCM` constant from the `CoreAudioTypes.h` header file). You must set this property to allow encoding or decoding of a non-PCM file data format. You can set this property on PCM files to specify the data format to use in your read and write calls.
 

@@ -20,11 +20,11 @@ Randomly split a MLDataTable into partitions on a user-define label column, whil
 func stratifiedSplitBySequence(proportions: [Double], by sequenceIdentifierColumn: String, on column: String, seed: Int = timestampSeed()) throws -> MLDataTable
 ```
 
-#### Return Value
+## Return Value
 
 A new MLDataTable with an additional partition column with the index of the partition for each row.
 
-#### Discussion
+## Discussion
 
 The proportions specified will be applied uniformly to each label being partitioned on.
 

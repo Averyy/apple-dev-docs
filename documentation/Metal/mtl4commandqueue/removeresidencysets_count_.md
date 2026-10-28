@@ -20,7 +20,7 @@ Removes multiple residency sets from a command queue’s list, which means Metal
 - (void) removeResidencySets:(id<MTLResidencySet> const[]) residencySets count:(NSUInteger) count;
 ```
 
-#### Discussion
+## Discussion
 
 The method doesn’t remove the residency sets from command buffers the queue owns with an [`status`](../mtlcommandbuffer/status.md) property that’s equal to [`MTLCommandBufferStatus.committed`](../mtlcommandbufferstatus/committed.md) or [`MTLCommandBufferStatus.scheduled`](../mtlcommandbufferstatus/scheduled.md).
 

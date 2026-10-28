@@ -21,7 +21,7 @@ The three-letter code that represents the country or region associated with the 
 let countryCode: String
 ```
 
-#### Discussion
+## Discussion
 
 This property uses the ISO 3166-1 Alpha-3 country code representation.
 

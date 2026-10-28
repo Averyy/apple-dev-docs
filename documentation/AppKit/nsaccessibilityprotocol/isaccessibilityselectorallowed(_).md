@@ -20,7 +20,7 @@ func isAccessibilitySelectorAllowed(_ selector: Selector) -> Bool
 - (BOOL) isAccessibilitySelectorAllowed:(SEL) selector;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md), if accessibility clients can call the selector; otherwise, [`false`](../../Swift/false.md).
 

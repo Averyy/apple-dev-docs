@@ -19,7 +19,7 @@ optional var isSeekRegionInhibited: Bool { get }
 @property (readonly, getter=isSeekRegionInhibited) BOOL seekRegionInhibited;
 ```
 
-#### Discussion
+## Discussion
 
 FSKit reads this value after the file system replies to the `loadResource` message. Changing the returned value during the runtime of the volume has no effect.
 

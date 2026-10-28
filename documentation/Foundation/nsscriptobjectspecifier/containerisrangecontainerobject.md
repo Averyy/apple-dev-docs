@@ -20,7 +20,7 @@ var containerIsRangeContainerObject: Bool { get set }
 @property BOOL containerIsRangeContainerObject;
 ```
 
-#### Discussion
+## Discussion
 
 If the receiver’s container specifier is `nil` and `flag` is [`true`](../../Swift/true.md), sets the receiver’s container to be the container for a range specifier. If the receiver’s container specifier is `nil` and `flag` is [`false`](../../Swift/false.md), sets the receiver’s container to be the top-level object.
 

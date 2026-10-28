@@ -4,7 +4,7 @@
 
 Use agents to help you explore code, add features, refine your interface, and leverage skills, such as localization and accessibility.
 
-#### Overview
+## Overview
 
 You interact with an agent or large language model of your choice by entering a series of natural language prompts to ask questions and give instructions. The agent or model refines its responses to your prompts based on previous interactions and any project context that you give it. Xcode presents the responses and changes that it makes to your project files for your review. You can enter another prompt or undo changes, and you can later roll back changes to a previous state. Xcode preserves all your interactions in conversations that you can refer to and organize into groups.
 

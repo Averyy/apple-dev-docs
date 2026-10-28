@@ -20,11 +20,11 @@ var notationName: String? { get set }
 @property (copy, nullable) NSString * notationName;
 ```
 
-#### Return Value
+## Return Value
 
 The name of the notation associated with the receiver.
 
-#### Discussion
+## Discussion
 
 Notations are applicable to unparsed external entities, processing instructions, and some attribute values.
 

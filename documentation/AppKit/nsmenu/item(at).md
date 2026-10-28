@@ -19,11 +19,11 @@ func item(at index: Int) -> NSMenuItem?
 - (NSMenuItem *) itemAtIndex:(NSInteger) index;
 ```
 
-#### Return Value
+## Return Value
 
 The found menu item (an object conforming to the NSMenuItem protocol) or `nil` if the object couldn’t be found.
 
-#### Discussion
+## Discussion
 
 This method raises an exception if `index` is out of bounds.
 

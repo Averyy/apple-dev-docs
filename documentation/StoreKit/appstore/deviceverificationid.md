@@ -21,7 +21,7 @@ The device verification identifier to use to verify whether signed information i
 static var deviceVerificationID: UUID? { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to verify whether an App Store-signed JSON Web Signature (JWS) is valid for the current device. The JWS may be one of the following:
 

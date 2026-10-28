@@ -16,7 +16,7 @@ Processes the digitizer elements and dispatches events for any updated values.
 virtual void handleDigitizerReport(uint64_t timestamp, uint32_t reportID);
 ```
 
-#### Discussion
+## Discussion
 
 This method iterates over the digitizer elements from the report and dispatches events for any changed values. The system calls this method automatically when a new report arrives; don’t call this method yourself.
 

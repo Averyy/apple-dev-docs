@@ -21,7 +21,7 @@ The bit pattern of the value’s encoding.
 var bitPattern: UInt16 { get }
 ```
 
-#### Discussion
+## Discussion
 
 The bit pattern matches the binary interchange format defined by the [IEEE 754 specification](http://ieeexplore.ieee.org/servlet/opac?punumber=4610933).
 

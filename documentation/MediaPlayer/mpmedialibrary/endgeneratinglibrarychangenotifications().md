@@ -22,7 +22,7 @@ func endGeneratingLibraryChangeNotifications()
 - (void) endGeneratingLibraryChangeNotifications;
 ```
 
-#### Discussion
+## Discussion
 
 To completely turn off notifications, you must call this method the same number of times that you called [`beginGeneratingLibraryChangeNotifications()`](./begingeneratinglibrarychangenotifications%28%29.md).
 

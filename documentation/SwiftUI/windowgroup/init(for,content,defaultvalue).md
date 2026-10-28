@@ -22,7 +22,7 @@ init<D, C>(for type: D.Type = D.self, @ContentBuilder content: @escaping (Bindin
 
 Available when `Content` conforms to `View`.
 
-#### Discussion
+## Discussion
 
 The window group using the given view as a template to form the content of each window in the group.
 

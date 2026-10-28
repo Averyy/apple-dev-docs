@@ -25,7 +25,7 @@ static let ac3: AVFileType
 extern AVFileType const AVFileTypeAC3;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this UTI is `public.ac3-audio`. Files of this type have an `.ac3` extension.
 

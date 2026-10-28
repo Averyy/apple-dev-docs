@@ -29,7 +29,7 @@ extern CFStringRef const kSecClassGenericPassword;
 
 - [Adding a password to the keychain](./adding-a-password-to-the-keychain.md)
 
-#### Discussion
+## Discussion
 
 The following keychain item attributes form the composite primary key of a generic password item:
 

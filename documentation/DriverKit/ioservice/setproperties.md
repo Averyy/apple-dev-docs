@@ -18,11 +18,11 @@ Sends the dictionary of properties to the current service object.
 virtual kern_return_t SetProperties(OSDictionary *properties);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../error-codes.md).
 
-#### Discussion
+## Discussion
 
 The default implementation of this method returns [`kIOReturnUnsupported`](../kioreturnunsupported.md). You can override this method and use it to modify the set of properties and values as needed. The changes you make apply only to the current service.
 

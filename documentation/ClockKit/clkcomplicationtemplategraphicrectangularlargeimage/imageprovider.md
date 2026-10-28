@@ -22,7 +22,7 @@ var imageProvider: CLKFullColorImageProvider { get set }
 @property (nonatomic, copy) CLKFullColorImageProvider * imageProvider;
 ```
 
-#### Discussion
+## Discussion
 
 This image provider produces a full-color image.
 

@@ -10,13 +10,13 @@ framework: "Swift-Org/SwiftJavaDocumentation"
 
 Detailed feature documentation for calling Swift from Java using jextract.
 
-#### Overview
+## Overview
 
 The following sections describe each feature supported by jextract, with Swift definitions alongside the generated Java API for both JNI and FFM modes.
 
 For guidance on choosing between JNI and FFM mode, see [Features Overview](./featuresoverview.md).
 
-##### Initializers
+### Initializers
 
 **Swift**:
 
@@ -52,7 +52,7 @@ try (var arena = AllocatingSwiftArena.ofConfined()) {
 
 Classes and structs can both have initializers imported.
 
-##### Class members
+### Class members
 
 Swift `class` methods and computed properties are imported as `static` methods on the generated Java wrapper type.
 
@@ -82,7 +82,7 @@ assertEquals(24, MySwiftClass.classMethod(12));
 assertEquals(42, MySwiftClass.getClassVariable());
 ```
 
-##### Optional initializers / Throwing initializers
+### Optional initializers / Throwing initializers
 
 Optional and throwing initializers are supported in JNI mode.
 
@@ -116,11 +116,11 @@ try (var arena = SwiftArena.ofConfined()) {
 // not supported yet
 ```
 
-##### Deinitializers
+### Deinitializers
 
 Classes and structs are automatically cleaned up when the enclosing arena is closed (`SwiftArena` in JNI mode, `AllocatingSwiftArena` in FFM mode). No explicit deinitialization calls are needed on the Java side.
 
-##### Enums
+### Enums
 
 Swift enums with associated values are extracted into a corresponding Java `class`. Each case becomes a static factory method, and associated values are accessed via `getAsX` methods that return `Optional` records.
 
@@ -198,7 +198,7 @@ try (var arena = SwiftArena.ofConfined()) {
 // not supported yet
 ```
 
-###### Switching and pattern matching
+#### Switching and pattern matching
 
 Use `getDiscriminator()` for simple switching without accessing associated values:
 
@@ -236,7 +236,7 @@ try (var arena = SwiftArena.ofConfined()) {
 
 Each nested `Vehicle.Case.*` type is a `record`, so on Java 21+ you can also destructure it positionally (`case Vehicle.Case.Car(var name, var trailer)`), and on Java 16+ reach the same values with [pattern matching for instanceof](https://openjdk.org/jeps/394).
 
-##### RawRepresentable enums
+### RawRepresentable enums
 
 jextract supports extracting enums that conform to `RawRepresentable`, giving access to an optional initializer and the `rawValue` property.
 
@@ -272,11 +272,11 @@ try (var arena = SwiftArena.ofConfined()) {
 // not supported yet
 ```
 
-##### Global functions
+### Global functions
 
 Global Swift functions are imported as static methods on the generated library class.
 
-##### Member functions
+### Member functions
 
 Class and struct member functions are imported as instance methods on the generated Java wrapper type.
 
@@ -320,7 +320,7 @@ try (var arena = AllocatingSwiftArena.ofConfined()) {
 }
 ```
 
-##### Throwing functions
+### Throwing functions
 
 Throwing Swift functions are imported as Java methods that throw exceptions. In FFM mode the exception type is `SwiftJavaErrorException`. In JNI mode the thrown exception depends on the Swift error, as described below.
 
@@ -355,7 +355,7 @@ assertNotNull(exception.getMessage());
 assertTrue(exception.getMessage().contains("swiftError"));
 ```
 
-###### Errors in JNI mode
+#### Errors in JNI mode
 
 In JNI mode, extracted Swift types that conform to `Error` or `LocalizedError` are generated as Java classes extending `org.swift.swiftkit.core.SwiftError`, which is a `java.lang.Exception`. `getMessage()` returns the Swift `String(describing:)` of the error.
 
@@ -374,11 +374,11 @@ try {
 }
 ```
 
-##### Stored properties
+### Stored properties
 
 Stored `var` and `let` properties are imported as getter/setter methods. Properties with `willSet` and `didSet` observers work transparently.
 
-##### private(set) properties
+### private(set) properties
 
 In JNI mode, properties declared `public private(set) var` are imported with only a getter on the Java side; the setter is omitted so the property’s write-access restriction is preserved across the language boundary. FFM mode does not yet apply this restriction.
 
@@ -408,7 +408,7 @@ assertThrows(NoSuchMethodException.class, () -> MySwiftClass.class.getMethod("se
 // not supported yet
 ```
 
-##### Computed properties
+### Computed properties
 
 Computed properties are imported the same way as stored properties: as getter (and optionally setter) methods. Throwing computed properties are supported in JNI mode but not yet in FFM mode.
 
@@ -452,7 +452,7 @@ try (var arena = SwiftArena.ofConfined()) {
 // not supported yet
 ```
 
-##### Async functions
+### Async functions
 
 Asynchronous functions are imported as Future-type returning Java functions.
 
@@ -488,7 +488,7 @@ assertEquals(22, result);
 // not supported yet
 ```
 
-###### Asynchronous functions and Kotlin async/await
+#### Asynchronous functions and Kotlin async/await
 
 Because Kotlin offers extension `suspending fun` methods on Future types, it is possible to `.await()` on such Swift extracted `async` function in Kotlin, like so:
 
@@ -505,11 +505,11 @@ suspend fun useAsyncSum() {
 
 This relies on the Kotlin `kotlinx-coroutines-jdk8` library which adds the `await()` extension function on `java.util.concurrent.CompletableFuture`.
 
-##### Collections
+### Collections
 
 Arrays are copied across the boundary. Dictionaries and sets are handed to Java as a wrapper over the live Swift value.
 
-###### Arrays
+#### Arrays
 
 Arrays of primitives (`[UInt8]`, `[Int32]`, `[Double]`, `[String]`) are supported in both JNI and FFM modes and map to the corresponding Java array types (`byte[]`, `int[]`, `double[]`, `String[]`).
 
@@ -584,11 +584,11 @@ try (var arena = SwiftArena.ofConfined()) {
 // not supported yet
 ```
 
-###### InlineArray
+#### InlineArray
 
 Fixed-size inline arrays (Swift’s `InlineArray<N, T>`, sugar `[N of T]`) are recognized when parsing Swift sources, but are not yet extracted in either mode. Declarations using them are skipped.
 
-###### Dictionaries
+#### Dictionaries
 
 Swift dictionaries (`[Key: Value]`) are imported using the `SwiftDictionaryMap<Key, Value>` Java wrapper type. Creating the wrapper does not copy the dictionary; it implements `java.util.Map` by making a JNI downcall into the Swift value for each operation. Use `SwiftDictionaryMap::toJavaMap` to copy into a `java.util.Map` on the Java heap.
 
@@ -629,7 +629,7 @@ try (var arena = SwiftArena.ofConfined()) {
 // not supported yet
 ```
 
-###### Sets
+#### Sets
 
 Swift sets (`Set<Element>`) are imported using the `SwiftSet<Element>` Java wrapper. Like dictionaries, creating the wrapper does not copy, and each operation is a JNI downcall. Use `SwiftSet::toJavaSet` to copy into a `java.util.Set` on the Java heap.
 
@@ -670,11 +670,11 @@ try (var arena = SwiftArena.ofConfined()) {
 // not supported yet
 ```
 
-##### Bytes and buffers
+### Bytes and buffers
 
 There are several ways to pass raw bytes, differing in whether the bytes are copied or viewed in place.
 
-###### Byte arrays
+#### Byte arrays
 
 `[UInt8]` maps to Java’s `byte[]` in both modes by copying.
 
@@ -716,7 +716,7 @@ assertArrayEquals(input, MySwiftLibrary.byteArray(input));
 
 Nested byte arrays (`[[UInt8]]`) are also supported in JNI mode.
 
-###### Raw byte buffers
+#### Raw byte buffers
 
 A Swift function taking `UnsafeRawBufferPointer` is callable from both modes, with the buffer surfacing differently on the Java side.
 
@@ -784,7 +784,7 @@ MySwiftLibrary.withBuffer((buf) -> {
 assertEquals(124, bufferSize.get());
 ```
 
-###### Java ByteBuffer
+#### Java ByteBuffer
 
 In FFM mode the generated `Data` wrapper converts to and from `java.nio.ByteBuffer`. Bringing bytes in:
 
@@ -814,7 +814,7 @@ try (var arena = AllocatingSwiftArena.ofConfined()) {
 
 In JNI mode, `Data.toByteArray()` is the way to copy bytes out. For the `Data` type itself see [Data](./featuresjextract.md#Data).
 
-###### Java MemorySegment (FFM only)
+#### Java MemorySegment (FFM only)
 
 `Data.toMemorySegment(arena)` copies the bytes into memory allocated in the given arena and returns it as a `java.lang.foreign.MemorySegment`. This is one copy, and the JVM then reads that native memory without a second copy onto the Java heap. To read the bytes without copying at all, use `withUnsafeBytes` (see below).
 
@@ -833,7 +833,7 @@ try (var arena = AllocatingSwiftArena.ofConfined()) {
 }
 ```
 
-##### Generic types
+### Generic types
 
 Support for generic types is work-in-progress and limited. Members containing type parameters (such as `T`) are not exported.
 
@@ -886,7 +886,7 @@ try (var arena = SwiftArena.ofConfined()) {
 // not supported yet
 ```
 
-##### Generic type specialization
+### Generic type specialization
 
 Conditional/constrained extensions on types (e.g. `extension Box where Element == Fish`) cannot be safely exposed on the generic Java wrapper. Instead, jextract detects typealiases like `typealias FishBox = Box<Fish>` and performs *specialization* - exposing a dedicated `FishBox` Java class with all matching extensions applied.
 
@@ -936,7 +936,7 @@ assertEquals("Fish", FishBox.describeElement());
 
 `FishBox` carries the constrained extension’s `describeFish()` in addition to `Box`’s own members, and unlike the generic `Box` it has no Java type parameter.
 
-###### Specializing via swift-java.config
+#### Specializing via swift-java.config
 
 The `typealias` above works when you control the Swift source being wrapped. If you don’t, for example you are running jextract against a dependency you can’t edit, the same specialization can be requested from `swift-java.config` using the `specialize` key, without touching the Swift source at all:
 
@@ -953,7 +953,7 @@ The `typealias` above works when you control the Swift source being wrapped. If 
 
 This produces the same `FishBox` Java class, with the same constrained extension members applied, as the `typealias FishBox = Box<Fish>` approach. See [specialize](./swiftjavaconfigfile.md#specialize) for the full field reference.
 
-##### Tuples
+### Tuples
 
 Tuples are imported as `Tuple2`, `Tuple3`, etc. types with positional `$0`, `$1` accessors.
 
@@ -1017,7 +1017,7 @@ assertEquals("hello", result.$1);
 // not supported yet
 ```
 
-##### Protocols
+### Protocols
 
 Swift `protocol` types are imported as Java `interface`s. Concrete types wrapping a Swift instance can be passed to protocol-typed parameters.
 
@@ -1080,7 +1080,7 @@ try (var arena = SwiftArena.ofConfined()) {
 // not supported yet
 ```
 
-##### Existential and opaque parameters
+### Existential and opaque parameters
 
 In JNI mode, existential (`any SomeProtocol`, `any (A & B)`) and opaque (`some Builder`) parameters are all imported as Java generics with appropriate bounds. Not yet supported in FFM mode.
 
@@ -1098,7 +1098,7 @@ becomes:
 
 Only Swift-backed instances may be passed; this enables passing concrete jextract-generated types that conform to a given Swift protocol.
 
-##### Returning protocol types
+### Returning protocol types
 
 Functions that return an existential (`any SomeProtocol`) or opaque (`some SomeProtocol`) value of a single protocol are supported. The returned value is wrapped in a generated *existential box*: a Java class named `<Protocol>Box` that implements the protocol’s Java `interface`. The box carries the concrete value together with its type metadata, and dispatches each protocol requirement through a dedicated native thunk that reconstructs the existential from that value.
 
@@ -1137,11 +1137,11 @@ Using the returned value works like using any other imported interface: its requ
 
 > **Note**: Static requirements (`static func`, `init`) and returning a *composite* existential (`any (A & B)`) are not currently supported.
 
-##### Foundation types
+### Foundation types
 
 A handful of Foundation value types are recognized by name and bridged to a matching Java representation, rather than being treated as opaque Swift values.
 
-###### Data
+#### Data
 
 Swift methods accepting or returning `Foundation.Data` are extracted using the Java `Data` wrapper type.
 
@@ -1200,7 +1200,7 @@ try (var arena = AllocatingSwiftArena.ofConfined()) {
 }
 ```
 
-###### Date
+#### Date
 
 In JNI mode, `Foundation.Date` is imported as a generated `Date` wrapper class. It converts to and from `java.time.Instant` via `toInstant()` and `Date.fromInstant(instant, arena)`, and exposes `getTimeIntervalSince1970()`. Not yet supported in FFM mode.
 
@@ -1237,7 +1237,7 @@ try (var arena = SwiftArena.ofConfined()) {
 // not supported yet
 ```
 
-###### UUID
+#### UUID
 
 In JNI mode, `Foundation.UUID` maps directly to `java.util.UUID`, so UUIDs can be passed in either direction without a wrapper type. Not yet supported in FFM mode.
 
@@ -1266,7 +1266,7 @@ assertEquals(uuid, MySwiftLibrary.echoUUID(uuid));
 // not supported yet
 ```
 
-###### URL
+#### URL
 
 Both `Foundation.URL` and `FoundationEssentials.URL` are recognized and imported. On the Java side they surface as a generated `URL` wrapper class backed by the Swift value, so URLs can flow across the boundary without manual string conversion. Because Swift’s `URL(string:)` is failable, constructing one from Java returns an `Optional<URL>`.
 
@@ -1296,7 +1296,7 @@ try (var arena = SwiftArena.ofConfined()) {
 // not supported yet
 ```
 
-##### Optional parameters and return types
+### Optional parameters and return types
 
 Optional primitives use Java’s `OptionalLong`, `OptionalInt`, etc. Optional objects use `java.util.Optional<T>`. Optional parameters work in both modes:
 
@@ -1369,7 +1369,7 @@ assertEquals(OptionalLong.of(999), MySwiftLibrary.optionalLong(OptionalLong.of(9
 // not supported yet
 ```
 
-##### Primitive and unsigned types
+### Primitive and unsigned types
 
 Java does not support unsigned numbers (other than the 16-bit wide `char`), so Swift’s unsigned integer types are mapped as their bit-width equivalents. This is potentially dangerous - for example `200` stored in a `UInt8` would be interpreted as a `byte` of value `-56` in Java.
 
@@ -1386,7 +1386,7 @@ Java does not support unsigned numbers (other than the 16-bit wide `char`), so S
 | `Float` | `float` |
 | `Double` | `double` |
 
-###### The @Unsigned annotation
+#### The @Unsigned annotation
 
 Because the Java type alone cannot express that a value was unsigned in Swift, jextract marks every such value with the `@Unsigned` annotation from `org.swift.swiftkit.core.annotations`. The annotation does not enforce anything at runtime; it records that a negative Java value should be read as a large positive one, and gives static analysis tools something to check against. It is retained at runtime, so it is also visible through reflection.
 
@@ -1434,7 +1434,7 @@ The same applies to `Set` and `Dictionary`, where an unsigned key *or* value is 
 
 Swift’s word-sized `Int` and `UInt` are imported as `long`, which is wide enough for a 64-bit Swift `Int`. Where the Swift side may be 32-bit the generated Java range-checks arguments and return values, throwing `SwiftIntegerOverflowException` for values that would not fit.
 
-##### Strings
+### Strings
 
 Strings are passed by copying data across the language boundary. A Swift `String` becomes a Java `String`, both as a parameter and as a return type, in both modes.
 
@@ -1464,7 +1464,7 @@ long reply = MySwiftLibrary.globalWriteString(string);
 assertEquals(string.length(), reply);
 ```
 
-##### Subscripts
+### Subscripts
 
 Swift subscripts are imported as `getSubscript`/`setSubscript` methods. Subscripts taking parameters keep them on the generated Java methods.
 
@@ -1506,11 +1506,11 @@ try (var arena = AllocatingSwiftArena.ofConfined()) {
 }
 ```
 
-##### Closures
+### Closures
 
 Swift closure parameters become Java functional interfaces that can be implemented with a lambda expression.
 
-###### Non-escaping closures
+#### Non-escaping closures
 
 Non-escaping closures with `Void` return or primitive arguments/results are supported in both modes.
 
@@ -1638,7 +1638,7 @@ boolean result = MySwiftLibrary.globalCallMeBooleanSupplier(() -> true);
 assertEquals(true, result);
 ```
 
-###### Escaping closures
+#### Escaping closures
 
 `@escaping` closures with `Void` return or primitive arguments/results are supported. The closure is stored on the Swift side and can be triggered multiple times.
 
@@ -1709,19 +1709,19 @@ try (var arena = SwiftArena.ofConfined()) {
 // not supported yet
 ```
 
-##### Type extensions
+### Type extensions
 
 Swift type extensions (e.g. `extension String { ... }`) are supported in both modes. Extended methods appear on the generated Java wrapper type.
 
-##### Nested types
+### Nested types
 
 Nested types (e.g. `struct Hello { struct World {} }`) are supported in JNI mode. Not yet supported in FFM mode.
 
-##### ARC and lifetime safety
+### ARC and lifetime safety
 
 Class instances are reference-counted using Swift’s Automatic Reference Counting (ARC). The Java arena (`SwiftArena` in JNI, `AllocatingSwiftArena` in FFM) manages lifetimes - when the arena is closed, all instances allocated within it are released.
 
-##### Sendable and thread safety
+### Sendable and thread safety
 
 Swift types conforming to `Sendable` are surfaced on the Java side with the `@ThreadSafe` annotation on the generated wrapper class, communicating to Java callers that the wrapped Swift value is safe to share across threads. This translation is applied by both JNI and FFM modes.
 

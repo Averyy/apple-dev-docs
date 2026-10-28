@@ -28,7 +28,7 @@ func addWorkoutActivity(_ workoutActivity: HKWorkoutActivity) async throws
 - (void) addWorkoutActivity:(HKWorkoutActivity *) workoutActivity completion:(void (^)(BOOL success, NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 You can call this method repeatedly to incrementally add activities to the builder. Calling this method after calling [`finishWorkout(completion:)`](./finishworkout%28completion%29.md) fails with an error.
 

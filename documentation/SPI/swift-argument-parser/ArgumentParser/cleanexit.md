@@ -17,7 +17,7 @@ An error type that represents a clean (non-error state) exit of the utility.
 struct CleanExit
 ```
 
-#### Overview
+## Overview
 
 Throwing a `CleanExit` instance from a `validate` or `run` method, or passing it to `exit(with:)`, exits the program with exit code `0`.
 
@@ -26,9 +26,9 @@ Throwing a `CleanExit` instance from a `validate` or `run` method, or passing it
 ### Instance Properties
 - [var description: String](./cleanexit/description.md)
 ### Type Methods
-- [static func helpRequest((any ParsableCommand.Type)?) -> CleanExit](./cleanexit/helprequest%28_%29-773ef.md)
+- [static func helpRequest(ParsableCommand.Type?) -> CleanExit](./cleanexit/helprequest%28_%29-773ef.md)
   Treat this error as a help request and display the full help message.
-- [static func helpRequest(any ParsableCommand) -> CleanExit](./cleanexit/helprequest%28_%29-9qiuh.md)
+- [static func helpRequest(ParsableCommand) -> CleanExit](./cleanexit/helprequest%28_%29-9qiuh.md)
   Treat this error as a help request and display the full help message.
 - [static func message(String) -> CleanExit](./cleanexit/message%28_%29.md)
   Treat this error as a clean exit with the given message.

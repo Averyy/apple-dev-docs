@@ -24,7 +24,7 @@ class VNRecognizeAnimalsRequest
 @interface VNRecognizeAnimalsRequest : VNImageBasedRequest
 ```
 
-#### Overview
+## Overview
 
 Use the [`knownAnimalIdentifiers(forRevision:)`](./vnrecognizeanimalsrequest/knownanimalidentifiers%28forrevision%29.md) method to determine which animals the request supports.
 

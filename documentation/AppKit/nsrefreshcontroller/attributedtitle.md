@@ -20,7 +20,7 @@ var attributedTitle: NSAttributedString? { get set }
 @property (copy, nullable) NSAttributedString * attributedTitle;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to provide additional context about the refresh operation.
 

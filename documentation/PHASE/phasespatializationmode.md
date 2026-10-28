@@ -24,7 +24,7 @@ enum PHASESpatializationMode
 enum PHASESpatializationMode : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 When your app outputs audio through a spatial mixer, [`PHASESpatialMixerDefinition`](./phasespatialmixerdefinition.md), the PHASE engine requires your app to choose an option of this enumeration and assign it to the [`outputSpatializationMode`](./phaseengine/outputspatializationmode.md) property.
 

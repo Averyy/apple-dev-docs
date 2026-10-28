@@ -15,7 +15,7 @@ The preferred arrangement of spatial Personas in your app’s immersive space.
 var spatialTemplatePreference: SpatialTemplatePreference
 ```
 
-#### Discussion
+## Discussion
 
 When the system displays spatial Personas, it uses the value of this property to determine how to arrange them around the content in your app’s immersive space. The default value of this property is [`none`](../../spatialtemplatepreference/none.md) , which lets the system determine placement based on the activity’s content. Specify other options if you prefer a specific arrangement around your app’s content.
 

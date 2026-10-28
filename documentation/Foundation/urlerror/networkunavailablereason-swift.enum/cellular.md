@@ -21,7 +21,7 @@ A reason that indicates network is unavailable because the interface is cellular
 case cellular
 ```
 
-#### Discussion
+## Discussion
 
 This reason occurs when cellular is the only available network interface, but the [`URLSessionConfiguration`](../../urlsessionconfiguration.md) property [`allowsCellularAccess`](../../urlsessionconfiguration/allowscellularaccess.md) is [`false`](../../../Swift/false.md).
 

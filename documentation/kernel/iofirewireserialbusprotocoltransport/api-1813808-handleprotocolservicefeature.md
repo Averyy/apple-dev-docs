@@ -13,11 +13,11 @@ virtual bool HandleProtocolServiceFeature (
  void *serviceValue );
 ```
 
-#### Return Value
+## Return Value
 
 Will return true if the specified feature is supported by the protocol layer.
 
-#### Overview
+## Overview
 
 See IOSCSIProtocolServices.h for more details regarding HandleProtocolServiceFeature.
 

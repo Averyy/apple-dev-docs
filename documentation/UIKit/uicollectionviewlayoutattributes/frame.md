@@ -23,7 +23,7 @@ var frame: CGRect { get set }
 @property (nonatomic) CGRect frame;
 ```
 
-#### Discussion
+## Discussion
 
 The frame rectangle is measured in points and specified in the coordinate system of the collection view. Setting the value of this property also sets the values of the [`center`](./center.md) and [`size`](./size.md) properties.
 

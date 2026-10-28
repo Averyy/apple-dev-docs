@@ -24,7 +24,7 @@ var showsRouteButton: Bool { get set }
 @property (nonatomic) BOOL showsRouteButton;
 ```
 
-#### Discussion
+## Discussion
 
 The route button is visible by default when there’s more than one audio output route available. To hide the route button, set this property’s value to [`false`](../../Swift/false.md).
 

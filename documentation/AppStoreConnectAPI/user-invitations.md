@@ -5,7 +5,7 @@
 
 Email invitations to join your App Store Connect team.
 
-#### Overview
+## Overview
 
 The `userInvitations` resource represents users who have been invited to join a team in App Store Connect. When you create a user invitation the user receives an email with a link to activate an account and connect it to their Apple Account.
 

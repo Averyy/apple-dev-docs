@@ -17,7 +17,7 @@ When the button is clicked (on state), it appears illuminated. If the button has
 static const NSButtonType NSPushOnPushOffButton;
 ```
 
-#### Discussion
+## Discussion
 
 This option is called Push On Push Off in Interface Builder’s Button inspector.
 

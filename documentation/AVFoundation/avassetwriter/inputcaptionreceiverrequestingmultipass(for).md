@@ -18,7 +18,7 @@ Attaches the input to the writer and returns a tuple with an input receiver for 
 func inputCaptionReceiverRequestingMultiPass(for input: AVAssetWriterInput) -> sending (AVAssetWriterInput.CaptionReceiver, AVAssetWriterInput.MultiPassController)
 ```
 
-#### Return Value
+## Return Value
 
 A tuple with an input receiver for writing caption data, and an associated multi pass controller.
 

@@ -20,7 +20,7 @@ Returns the wrapped value as `T` without checking the dynamic type.
 func unsafeValue<T>(assumingType type: T.Type = T.self) -> T where T : USDValueProtocol
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**: The behaviour is undefined when `T` does not match the stored type. Prefer [`value(as:)`](./value%28as%29.md) unless you have already confirmed the type with [`isHolding(_:)`](./isholding%28_%29.md).
 

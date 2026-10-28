@@ -19,7 +19,7 @@ The image to use a cell content when the cell is selected.
 @property (nonatomic, strong, nullable) UIImage * selectedImage;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is `nil` (no image).
 

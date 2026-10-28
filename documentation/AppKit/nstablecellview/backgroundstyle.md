@@ -19,7 +19,7 @@ var backgroundStyle: NSView.BackgroundStyle { get set }
 @property NSBackgroundStyle backgroundStyle;
 ```
 
-#### Discussion
+## Discussion
 
 The property is automatically set by the enclosing [`NSTableRowView`](../nstablerowview.md) to let this view know what its background looks like. For instance, when the `backgroundStyle` is NSBackgroundStyleDark, the view should use a light text color.
 

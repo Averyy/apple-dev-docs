@@ -21,7 +21,7 @@ The closure to execute when a record becomes available.
 var perRecordResultBlock: ((CKRecord.ID, Result<CKRecord, any Error>) -> Void)? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This property is a closure that returns no value and has the following parameters:
 

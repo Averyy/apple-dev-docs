@@ -25,7 +25,7 @@ func relationships(forDestination entity: NSEntityDescription) -> [NSRelationshi
 - (NSArray<NSRelationshipDescription *> *) relationshipsWithDestinationEntity:(NSEntityDescription *) entity;
 ```
 
-#### Return Value
+## Return Value
 
 An array containing the relationships of the receiver where the entity description of the relationship is `entity`. Elements in the array are instances of [`NSRelationshipDescription`](../nsrelationshipdescription.md).
 

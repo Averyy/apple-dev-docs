@@ -22,7 +22,7 @@ func invalidateAuthorization(for route: AVCustomDeviceRoute)
 - (void) invalidateAuthorizationForRoute:(AVCustomDeviceRoute *) route;
 ```
 
-#### Discussion
+## Discussion
 
 The route only becomes authorized again if the user selects it using the route picker.
 

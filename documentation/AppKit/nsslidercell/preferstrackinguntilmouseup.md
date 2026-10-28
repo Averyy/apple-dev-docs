@@ -19,11 +19,11 @@ class var prefersTrackingUntilMouseUp: Bool { get }
 @property (class, readonly) BOOL prefersTrackingUntilMouseUp;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the `NSSliderCell` continues to track the pointer even after it leaves the cell’s tracking rectangle; otherwise, [`false`](../../Swift/false.md). By default, this method returns [`true`](../../Swift/true.md).
 
-#### Discussion
+## Discussion
 
 If this method returns [`true`](../../Swift/true.md), users retain control of the knob until they release the mouse button, even if they drag the pointer to the other side of the screen.
 

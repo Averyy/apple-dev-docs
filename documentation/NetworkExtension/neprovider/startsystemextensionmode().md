@@ -19,7 +19,7 @@ class func startSystemExtensionMode()
 + (void) startSystemExtensionMode;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method as early as possible after your system extension starts.
 

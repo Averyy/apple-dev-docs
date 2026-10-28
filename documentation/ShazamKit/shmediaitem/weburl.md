@@ -33,7 +33,7 @@ var webURL: URL? { get }
 @property (atomic, strong, readonly, nullable) NSURL * webURL;
 ```
 
-#### Discussion
+## Discussion
 
 This link opens the Shazam app or App Clip if it’s available on the device.
 

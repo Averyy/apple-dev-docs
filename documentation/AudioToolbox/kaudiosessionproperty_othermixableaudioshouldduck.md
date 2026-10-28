@@ -23,7 +23,7 @@ var kAudioSessionProperty_OtherMixableAudioShouldDuck: Int { get }
 kAudioSessionProperty_OtherMixableAudioShouldDuck
 ```
 
-#### Discussion
+## Discussion
 
 When your app is finished playing sound, be sure to set this property back to `FALSE` to remove ducking.
 

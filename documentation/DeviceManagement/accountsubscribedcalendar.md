@@ -19,11 +19,11 @@ The declaration to configure a subscribed calendar.
 object AccountSubscribedCalendar
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.configuration.account.subscribed-calendar` as the declaration type.
 
-##### Configuration availability
+### Configuration availability
 
 |  |  |
 | --- | --- |
@@ -35,7 +35,7 @@ Specify `com.apple.configuration.account.subscribed-calendar` as the declaration
 | Allowed in user scope | macOS, Shared iPad |
 | Apply | Multiple configurations are applied separately |
 
-##### Configuration example
+### Configuration example
 
 This configuration subscribes to a calendar feed.
 

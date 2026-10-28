@@ -19,11 +19,11 @@ func setFrameUsingName(_ name: NSWindow.FrameAutosaveName) -> Bool
 - (BOOL) setFrameUsingName:(NSWindowFrameAutosaveName) name;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) when `name` is read and the frame is set successfully; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 The frame is constrained according to the window’s minimum and maximum size settings. This method causes a [`windowWillResize(_:to:)`](../nswindowdelegate/windowwillresize%28_,to%29.md) message to be sent to the delegate.
 

@@ -24,7 +24,7 @@ let UNNotificationAttachmentOptionsThumbnailClippingRectKey: String
 extern NSString * const UNNotificationAttachmentOptionsThumbnailClippingRectKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is a dictionary containing a normalized [`CGRect`](../CoreFoundation/cgrect.md) — a unit rectangle whose values are in the range `0.0` to `1.0` and represent the portion of the original image that you want to display. For example, specifying an origin of (`0.25`, `0.25`) and a size of (`0.5`, `0.5`) defines a clipping rectangle that shows only the center portion of the image. Use the [`dictionaryRepresentation`](../CoreFoundation/cgrect/dictionaryrepresentation.md) function to create the dictionary for your rectangle.
 

@@ -19,7 +19,7 @@ var arrangedSubviews: [NSView] { get }
 @property (copy, readonly) NSArray<__kindof NSView *> * arrangedSubviews;
 ```
 
-#### Discussion
+## Discussion
 
 The stack view ensures that the contents of this array are always a subset of its [`subviews`](../nsview/subviews.md) array.
 

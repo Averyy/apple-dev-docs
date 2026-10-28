@@ -25,7 +25,7 @@ var particleLifeSpanVariation: CGFloat { get set }
 @property (nonatomic) CGFloat particleLifeSpanVariation;
 ```
 
-#### Discussion
+## Discussion
 
 Setting a nonzero value for this property randomizes the effect of the [`particleLifeSpan`](./particlelifespan.md) property. SceneKit randomly adjusts the life span of each particle by up to half the [`particleLifeSpanVariation`](./particlelifespanvariation.md) value. For example, if the [`particleLifeSpan`](./particlelifespan.md) value is `1.0` seconds and the [`particleLifeSpanVariation`](./particlelifespanvariation.md) value is `0.5` seconds, each particle appears for a random duration between `0.75` and `1.25` seconds before being removed from the scene.
 

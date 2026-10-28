@@ -16,11 +16,11 @@ Returns a hint about whether now would be a good time to perform time-insensitiv
 IOSystemLoadAdvisoryLevel IOGetSystemLoadAdvisory(void);
 ```
 
-#### Return Value
+## Return Value
 
 IOSystemLoadAdvisoryLevel - one of: kIOSystemLoadAdvisoryLevelGreat - A Good time to perform time-insensitive work. kIOSystemLoadAdvisoryLevelOK - An OK time to perform time-insensitive work. kIOSystemLoadAdvisoryLevelBad - A Bad time to perform time-insensitive work.
 
-#### Discussion
+## Discussion
 
 Based on user and system load, IOGetSystemLoadAdvisory determines "better" and "worse" times to run optional or time-insensitive CPU or disk work.
 

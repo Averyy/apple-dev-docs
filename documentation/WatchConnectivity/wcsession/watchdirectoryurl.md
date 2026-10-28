@@ -22,7 +22,7 @@ var watchDirectoryURL: URL? { get }
 @property (nonatomic, readonly, nullable) NSURL * watchDirectoryURL;
 ```
 
-#### Discussion
+## Discussion
 
 You must activate the current session before accessing this URL. Use this directory to store preferences, files, and other data that is relevant to the specific instance of your Watch app running on the currently paired Apple Watch. If more than one Apple Watch is paired with the same iPhone, the URL in this directory changes when the active Apple Watch changes.
 

@@ -22,7 +22,7 @@ nonisolated
 func inAppPurchaseOptions(_ options: ((Product) async -> Set<Product.PurchaseOption>)?) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 In-app stores within this view will add any default purchase options to the set you return, and use the result for configuring the purchase. If you just want to react to in-app purchases beginning without adding purchase options, you can add an action with [`onInAppPurchaseStart(perform:)`](./oninapppurchasestart%28perform%29.md).
 

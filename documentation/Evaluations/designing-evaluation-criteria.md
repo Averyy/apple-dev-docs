@@ -5,13 +5,13 @@
 
 Define quality for your feature by choosing measurable criteria, scoring approaches, and ground-truth strategies.
 
-#### Overview
+## Overview
 
 Deciding what to measure in your evaluations means defining success for your feature: *criteria* specify your measurable standards of quality. [Designing effective evaluations](./designing-effective-evaluations.md) explains why evaluation matters and how its life cycle works; once you understand this evaluation process, your next step is defining your criteria. Well-defined criteria help you build strong evaluations. Vague criteria produce vague signals, but precise criteria tell you specifically where your feature succeeds and where it fails.
 
 This article details the strategic decisions behind evaluation design: defining measurable targets, identifying quality dimensions, choosing between scoring approaches, and selecting the right *ground-truth*, or verified accurate results. Most features combine several criteria into an *evaluation suite*, mixing rule-based checks, scored quality dimensions, and model-judge assessments to cover what a single approach can’t.
 
-#### Define success as measurable targets
+## Define success as measurable targets
 
 Before writing any evaluation code, identify what success looks like for your feature. Every quality goal needs to become a specific, measurable target that code can verify.
 
@@ -26,7 +26,7 @@ Consider what your feature needs to accomplish and what might go wrong. Each goa
 
 Start with the criteria that matter most to your users. You can always add more dimensions later as you begin to understand the points of failure in your feature.
 
-#### Identify quality dimensions
+## Identify quality dimensions
 
 A single feature typically needs to satisfy several independent quality dimensions. Consider each of these, with at least one criterion per dimension that matters to your feature:
 
@@ -41,7 +41,7 @@ Not every dimension applies to every feature. Choose the dimensions that represe
 
 > 💡 **Tip**: Start with two or three evaluators that cover your most important quality dimensions. Add more as you learn where your feature tends to fail.
 
-#### Choose the right scoring approach
+## Choose the right scoring approach
 
 Evaluations give you two main evaluation mechanisms: code-based evaluators and model-judge. The right approach depends on how you define correctness for each criterion. Start with the simplest approach that gives reliable signals, and move to more sophisticated methods only when needed:
 
@@ -68,7 +68,7 @@ For implementation details, see [Evaluating language model responses](./evaluati
 
 For best practices on configuring model-judge evaluators, including scoring scales, bias mitigation, and calibration, see [Designing effective model-judge evaluators](./designing-effective-model-judges.md).
 
-#### Choose the right ground-truth strategy
+## Choose the right ground-truth strategy
 
 Different scoring strategies relate to ground truth in different ways. Understanding this distinction helps you choose the right approach for each criterion:
 

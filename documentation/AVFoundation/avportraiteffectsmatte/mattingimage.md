@@ -25,7 +25,7 @@ var mattingImage: CVPixelBuffer { get }
 @property (readonly) CVPixelBufferRef mattingImage;
 ```
 
-#### Discussion
+## Discussion
 
 Query the pixel format using the [`pixelFormatType`](./pixelformattype.md) property.
 

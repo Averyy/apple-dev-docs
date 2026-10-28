@@ -24,7 +24,7 @@ func ExtAudioFileTell(_ inExtAudioFile: ExtAudioFileRef, _ outFrameOffset: Unsaf
 extern OSStatus ExtAudioFileTell(ExtAudioFileRef inExtAudioFile, SInt64 *outFrameOffset);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 

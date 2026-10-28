@@ -24,7 +24,7 @@ class var supportedRevisions: IndexSet { get }
 @property (class, nonatomic, copy, readonly) NSIndexSet * supportedRevisions;
 ```
 
-#### Discussion
+## Discussion
 
 This method allows clients to inspect at runtime what capabilities are available for each class of [`VNRequest`](../vnrequest.md) in the Vision framework.
 

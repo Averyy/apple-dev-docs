@@ -17,7 +17,7 @@ A scalar `MLXArray` containing the largest finite value for this dtype’s real 
 var greatestFiniteMagnitudeArray: MLXArray { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use this when the dtype is statically known to be floating point, e.g. `DType.float16.greatestFiniteMagnitudeArray`.
 

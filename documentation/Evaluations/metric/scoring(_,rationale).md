@@ -25,7 +25,7 @@ func scoring(_ value: Double, rationale: String? = nil) -> Metric
 
 - [Evaluating language model responses](../evaluating-language-model-responses.md)
 
-#### Discussion
+## Discussion
 
 ```swift
 let scoreResult = metric.scoring(0.85, rationale: "Partial match")

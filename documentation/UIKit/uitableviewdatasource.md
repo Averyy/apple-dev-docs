@@ -28,7 +28,7 @@ protocol UITableViewDataSource : NSObjectProtocol
 
 - [Filling a table with data](./filling-a-table-with-data.md)
 
-#### Overview
+## Overview
 
 Table views manage only the presentation of their data; they don’t manage the data itself. To manage the data, you provide the table with a data source object — an object that implements the [`UITableViewDataSource`](./uitableviewdatasource.md) protocol. A data source object responds to data-related requests from the table. It also manages the table’s data directly, or coordinates with other parts of your app to manage that data. Other responsibilities of the data source object include:
 
@@ -62,7 +62,7 @@ Use other methods of this protocol to enable specific features for your table. F
 
 For information about how to create and configure your table’s cells using your data source object, see [Filling a table with data](./filling-a-table-with-data.md).
 
-##### Specify the location of rows and sections
+### Specify the location of rows and sections
 
 Table views communicate the location of cells to you using the [`row`](../Foundation/nsindexpath/row.md) and [`section`](../Foundation/nsindexpath/section.md) properties of [`NSIndexPath`](../Foundation/nsindexpath.md) objects. Row and section indexes are zero based, so the first section is at index `0`, the second at index `1`, and so on. Similarly, the first row of each section is at index `0`, which means you need both the [`section`](../Foundation/nsindexpath/section.md) and [`row`](../Foundation/nsindexpath/row.md) values to identify a row uniquely. If your table has no sections, you need only the [`row`](../Foundation/nsindexpath/row.md) value.
 

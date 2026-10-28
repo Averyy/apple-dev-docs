@@ -21,7 +21,7 @@ A view that represents the default placeholder for a RealityView.
 @preconcurrency struct RealityViewDefaultPlaceholder
 ```
 
-#### Overview
+## Overview
 
 You don’t directly create instances of this type because [`RealityView`](./realityview.md) creates them for you.
 

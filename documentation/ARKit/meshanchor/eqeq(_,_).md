@@ -15,7 +15,7 @@ Returns a Boolean value indicating whether two mesh anchors are equal.
 static func == (lhs: MeshAnchor, rhs: MeshAnchor) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the two mesh anchors are equal; otherwise, `false`.
 

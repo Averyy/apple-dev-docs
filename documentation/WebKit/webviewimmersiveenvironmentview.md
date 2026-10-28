@@ -16,7 +16,7 @@ A SwiftUI view that renders a specific website-provided immersive environment.
 struct WebViewImmersiveEnvironmentView
 ```
 
-#### Overview
+## Overview
 
 Place this view in your app’s Immersive Space hierarchy. Initialize it with the `WebPage.ImmersiveEnvironment` received from the presentation callback to render that specific environment.
 

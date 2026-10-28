@@ -21,7 +21,7 @@ The reason the network was unavailable for a task.
 var networkUnavailableReason: URLError.NetworkUnavailableReason? { get }
 ```
 
-#### Discussion
+## Discussion
 
 The network may be unavailable due to restrictions placed on the [`URLSessionConfiguration`](../urlsessionconfiguration.md), such as [`allowsConstrainedNetworkAccess`](../urlsessionconfiguration/allowsconstrainednetworkaccess.md), [`allowsExpensiveNetworkAccess`](../urlsessionconfiguration/allowsexpensivenetworkaccess.md) and [`allowsCellularAccess`](../urlsessionconfiguration/allowscellularaccess.md).
 

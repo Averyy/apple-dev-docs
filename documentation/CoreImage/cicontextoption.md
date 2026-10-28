@@ -24,7 +24,7 @@ struct CIContextOption
 typedef NSString * CIContextOption;
 ```
 
-#### Overview
+## Overview
 
 These option keys can be passed to `CIContext` creation APIs such as:
 

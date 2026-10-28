@@ -24,7 +24,7 @@ class VSAccountMetadataRequest
 @interface VSAccountMetadataRequest : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use a `VSAccountMetadataRequest` object to indicate the specific information your app will obtain about a subscriber from their subscription provider. Also, use this object to provide information to the subscription provider that it needs to perform the request, such as a verification token, the authentication schemes your app supports, or your app’s identifier.
 

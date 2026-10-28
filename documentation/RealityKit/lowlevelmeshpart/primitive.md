@@ -18,7 +18,7 @@ The geometric primitive to use when rendering this part.
 final var primitive: MTLPrimitiveType { get }
 ```
 
-#### Discussion
+## Discussion
 
 Corresponds to `MTLPrimitiveType`.
 

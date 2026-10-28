@@ -15,7 +15,7 @@ The amount of spacing to add around the annotation when showing items.
 get padding(): Padding;
 ```
 
-#### Discussion
+## Discussion
 
 You can’t set the padding property of the place annotation.
 

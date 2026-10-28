@@ -24,7 +24,7 @@ struct AudioFileRegionList
 struct AudioFileRegionList;
 ```
 
-#### Overview
+## Overview
 
 This structure is used by the [`kAudioFilePropertyRegionList`](./kaudiofilepropertyregionlist.md) property.
 

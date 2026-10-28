@@ -25,7 +25,7 @@ var filePathURL: URL? { get }
 @property (copy, readonly, nullable) NSURL * filePathURL;
 ```
 
-#### Discussion
+## Discussion
 
 If the receiver is a file reference URL, this property contains a copy of the URL converted to a file path URL. If the receiver’s URL is a file path URL, this property contains the original URL. If the original URL is not a file URL, or if the resource is not reachable or no longer exists, this property contains `nil`.
 

@@ -15,7 +15,7 @@ Creates a memory buffer with memory descriptor for that buffer.
 static OSPtr<IOBufferMemoryDescriptor> withCopy(task_t inTask, IOOptionBits options, vm_map_t sourceMap, mach_vm_address_t source, mach_vm_size_t size);
 ```
 
-#### Return Value
+## Return Value
 
 Returns an instance of class IOBufferMemoryDescriptor to be released by the caller, which will free the memory desriptor and associated buffer.
 

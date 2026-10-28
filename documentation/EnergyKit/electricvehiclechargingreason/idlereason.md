@@ -21,7 +21,7 @@ enum IdleReason
 
 - [Providing charging history for electric vehicles](../providing-informative-charging-history-for-electric-vehicles.md)
 
-#### Overview
+## Overview
 
 Use these reasons with [`ElectricVehicleStatusEvent.Status.chargingIdle(_:)`](../electricvehiclestatusevent/status-swift.enum/chargingidle%28_%29.md) to explain why charging hasn’t started or why it’s paused.
 

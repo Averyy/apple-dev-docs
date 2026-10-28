@@ -24,7 +24,7 @@ class ASPickerDisplayItem
 
 - [Discovering and configuring accessories](./discovering-and-configuring-accessories.md)
 
-#### Overview
+## Overview
 
 Create instances of `ASPickerDisplayItem` that describe the accessories you want to discover. Each item contains a name and product image to display, plus an [`ASDiscoveryDescriptor`](./asdiscoverydescriptor.md) that identifies the kind of accessories to match. Pass these in an array to [`showPicker(for:completionHandler:)`](./asaccessorysession/showpicker%28for,completionhandler%29.md) to display a picker that allows the person using your app to discover and select nearby accessories.
 

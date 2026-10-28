@@ -20,7 +20,7 @@ let ITLibMediaItemPropertySortComposer: String
 extern NSString * const ITLibMediaItemPropertySortComposer;
 ```
 
-#### Discussion
+## Discussion
 
 If `nil`, use [`ITLibMediaItemPropertyComposer`](./itlibmediaitempropertycomposer.md).
 

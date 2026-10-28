@@ -17,7 +17,7 @@ An error that occurs if the radio lacks resources.
 case noRadioResources(WAError.NoRadioResourcesDetails)
 ```
 
-#### Discussion
+## Discussion
 
 The radio needs resources to support additional active devices, services, or performance requirements. Close any unneeded network `NetworkConnection`s, and stop any unneeded `NetworkBrowser`s and `NetworkListener`s to free resources, and then retry.
 

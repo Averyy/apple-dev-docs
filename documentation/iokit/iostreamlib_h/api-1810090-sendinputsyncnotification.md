@@ -13,7 +13,7 @@ IOReturn ( *SendInputSyncNotification)(
    UInt32 token );
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if the notification was successfully sent.
 

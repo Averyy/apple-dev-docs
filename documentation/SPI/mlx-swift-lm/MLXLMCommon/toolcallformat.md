@@ -17,7 +17,7 @@ Supported tool call formats for different language models.
 enum ToolCallFormat
 ```
 
-#### Overview
+## Overview
 
 This enum defines the various tool call formats used by different LLM families. Each format has its own syntax for encoding function names and arguments.
 

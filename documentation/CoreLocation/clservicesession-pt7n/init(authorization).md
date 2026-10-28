@@ -20,7 +20,7 @@ Creates a services session by using the authorization mode you specify.
 init(authorization: CLServiceSession.AuthorizationRequirement)
 ```
 
-#### Discussion
+## Discussion
 
 Passing `.none` for authorization requirement creates a session object that doesn’t request a person’s authorization to access Location Services, but the object meets a requested Explicit Service Session requirement if the framework already has authorization.
 

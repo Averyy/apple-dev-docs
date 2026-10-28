@@ -24,7 +24,7 @@ func JSGarbageCollect(_ ctx: JSContextRef!)
 void JSGarbageCollect(JSContextRef ctx);
 ```
 
-#### Discussion
+## Discussion
 
 The system doesn’t collect JavaScript values that are on the machine stack, are in a register, are receiving protection from [`JSValueProtect(_:_:)`](./jsvalueprotect%28_,_%29.md), are the global object of an execution context, or are reachable from any such value.
 

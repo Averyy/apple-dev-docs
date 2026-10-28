@@ -21,7 +21,7 @@ Removes the specified child from this entity.
 @preconcurrency func remove(at index: Int, preservingWorldTransform: Bool = false)
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: This may modify the order of the `ChildCollection`.
 

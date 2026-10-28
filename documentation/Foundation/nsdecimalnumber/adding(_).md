@@ -25,11 +25,11 @@ func adding(_ decimalNumber: NSDecimalNumber) -> NSDecimalNumber
 - (NSDecimalNumber *) decimalNumberByAdding:(NSDecimalNumber *) decimalNumber;
 ```
 
-#### Return Value
+## Return Value
 
 A new `NSDecimalNumber` object whose value is the sum of the receiver and `decimalNumber`.
 
-#### Discussion
+## Discussion
 
 This method uses the default behavior when handling calculation errors and rounding.
 

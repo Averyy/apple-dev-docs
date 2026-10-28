@@ -17,11 +17,11 @@ Runs the spatial tracking session with a spatial tracking configuration, an AR s
 @MainActor final func run(_ configuration: SpatialTrackingSession.Configuration, session: ARSession, arConfiguration: ARConfiguration) async -> SpatialTrackingSession.UnavailableCapabilities?
 ```
 
-#### Return Value
+## Return Value
 
 The unavailable capabilities based on the hardware and the user authorization.
 
-#### Discussion
+## Discussion
 
 You manage and run the [`ARSession`](../../ARKit/arsession.md) for the `SpatialTrackingSession`.
 

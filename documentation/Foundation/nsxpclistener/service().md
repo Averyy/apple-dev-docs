@@ -25,7 +25,7 @@ class func service() -> NSXPCListener
 + (NSXPCListener *) serviceListener;
 ```
 
-#### Discussion
+## Discussion
 
 Calling the `resume` method on the returned object starts the listener and never returns. This method is typically called at the end of your `main` function.
 

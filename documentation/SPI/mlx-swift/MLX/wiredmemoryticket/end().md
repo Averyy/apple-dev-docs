@@ -17,7 +17,7 @@ Ends the ticket and returns the applied limit.
 func end() async -> Int
 ```
 
-#### Discussion
+## Discussion
 
 Ending releases its size from the active set and resumes any waiters.
 

@@ -14,7 +14,7 @@
 #define iokit_usb_msg(message)
 ```
 
-#### Discussion
+## Discussion
 
 Messages specific to the IOUSBFamily. Note that the iokit_usb_msg(x) translates to 0xe0004xxx, where xxx is the value in parenthesis as a hex number.
 

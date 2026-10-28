@@ -23,11 +23,11 @@ func systemLayoutSizeFitting(_ targetSize: CGSize) -> CGSize
 - (CGSize) systemLayoutSizeFittingSize:(CGSize) targetSize;
 ```
 
-#### Return Value
+## Return Value
 
 The optimal size for the view.
 
-#### Discussion
+## Discussion
 
 This method returns a size value for the view that optimally satisfies the view’s current constraints and is as close to the value in the `targetSize` parameter as possible. This method does not actually change the size of the view.
 

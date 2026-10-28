@@ -19,7 +19,7 @@ func CTFontCollectionCreateMutableCopy(_ original: CTFontCollection) -> CTMutabl
 extern CTMutableFontCollectionRefCTFontCollectionCreateMutableCopy(CTFontCollectionRef original);
 ```
 
-#### Return Value
+## Return Value
 
 A mutable copy of the original font collection.
 

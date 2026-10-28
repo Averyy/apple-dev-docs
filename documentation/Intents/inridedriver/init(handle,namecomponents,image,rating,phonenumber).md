@@ -25,11 +25,11 @@ convenience init(handle: String, nameComponents: PersonNameComponents, image: IN
 - (instancetype) initWithHandle:(NSString *) handle nameComponents:(NSPersonNameComponents *) nameComponents image:(INImage *) image rating:(NSString *) rating phoneNumber:(NSString *) phoneNumber;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized driver object or `nil` if the object could not be created.
 
-#### Discussion
+## Discussion
 
 You must specify all of the driver’s information at initialization time. You can’t change the values after initialization.
 

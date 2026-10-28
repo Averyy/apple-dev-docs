@@ -28,7 +28,7 @@ class CADisplayLink
 
 - [Optimizing iPhone and iPad apps to support ProMotion displays](./optimizing-iphone-and-ipad-apps-to-support-promotion-displays.md)
 
-#### Overview
+## Overview
 
 Your app initializes a new display link by providing a target object and a selector to call when the system updates the screen. To synchronize your display loop with the display, your application adds it to a run loop using the [`add(to:forMode:)`](./cadisplaylink/add%28to,formode%29.md) method.
 
@@ -75,7 +75,7 @@ func step(displaylink: CADisplayLink) {
 
 You shouldn’t subclass [`CADisplayLink`](./cadisplaylink.md).
 
-##### Preferred and Actual Frame Rates
+### Preferred and Actual Frame Rates
 
 You control a display link’s frame rate (the number of times the system calls the selector of its target, per second) by setting [`preferredFramesPerSecond`](./cadisplaylink/preferredframespersecond.md). However, the actual frames per second may differ from the preferred value you set; actual frame rates are always a factor of the maximum refresh rate of the device. For example, if your device’s maximum refresh rate is 60 frames per second (defined by [`maximumFramesPerSecond`](../UIKit/uiscreen/maximumframespersecond.md)), actual frame rates include 15, 20, 30, and 60 frames per second. If you set a display link’s preferred frame rate to a value higher than the maximum, the actual frame rate is the maximum.
 

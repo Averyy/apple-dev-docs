@@ -20,7 +20,7 @@ A component that defines a portal world.
 struct WorldComponent
 ```
 
-#### Overview
+## Overview
 
 This component separates an entity and its descendants from the default world, allowing it to only be visible through a portal.
 

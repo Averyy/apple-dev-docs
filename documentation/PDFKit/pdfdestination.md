@@ -24,7 +24,7 @@ class PDFDestination
 @interface PDFDestination : NSObject
 ```
 
-#### Overview
+## Overview
 
 In typical usage, you do not initialize `PDFDestination` objects but rather get them as either attributes of [`PDFAnnotationLink`](./pdfannotationlink.md) or [`PDFOutline`](./pdfoutline.md) objects, or in response to the `PDFView` method [`currentDestination`](./pdfview/currentdestination.md).
 

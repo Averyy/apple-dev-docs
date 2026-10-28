@@ -23,7 +23,7 @@ var firstOtherButtonIndex: Int { get }
 @property (nonatomic, readonly) NSInteger firstOtherButtonIndex;
 ```
 
-#### Discussion
+## Discussion
 
 The button indices start at `0`. If `-1`, then the index is not set. This property is ignored if there are no other buttons. The default value is `-1`.
 

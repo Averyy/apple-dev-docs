@@ -14,7 +14,7 @@ Refracts a vector using a given normal and index of refraction (eta).
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 | Input | Type |
 | --- | --- |
@@ -26,13 +26,13 @@ Refracts a vector using a given normal and index of refraction (eta).
 | --- | --- |
 | `Out` | Vector3f |
 
-#### Parameter descriptions
+## Parameter descriptions
 
 - **`In`**: The vector to refract.
 - **`Normal`**: The normal of the surface from which the `In` vector refracts.
 - **`Eta`**: The index of refraction.
 
-#### Discussion
+## Discussion
 
 - **`Out High`**: The high end value of the output range; the default is `1.0`.
 

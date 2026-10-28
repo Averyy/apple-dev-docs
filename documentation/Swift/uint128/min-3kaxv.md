@@ -23,7 +23,7 @@ static var min: Self { get }
 
 Available when `Self` conforms to `FixedWidthInteger`.
 
-#### Discussion
+## Discussion
 
 For unsigned integer types, this value is always `0`.
 

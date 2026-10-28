@@ -25,7 +25,7 @@ var size: CGSize { get set }
 @property (nonatomic) CGSize size;
 ```
 
-#### Discussion
+## Discussion
 
 When a scene is first initialized, its size property is configured by the designated initializer. The size of the scene specifies the size of the visible portion of the scene in points. This is only used to specify the visible portion of the scene. Nodes in the tree can be positioned outside of this area; those nodes are still processed by the scene, but are ignored by the renderer.
 

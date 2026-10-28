@@ -22,7 +22,7 @@ func stopMonitoringVisits()
 - (void) stopMonitoringVisits;
 ```
 
-#### Discussion
+## Discussion
 
 Calling this method disables the delivery of visit-related events for your app. If a compatible iPad or iPhone app calls this method when running in visionOS, the method does nothing.
 

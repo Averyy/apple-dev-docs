@@ -24,7 +24,7 @@ var isProtectedDataAvailable: Bool { get }
 @property (nonatomic, readonly, getter=isProtectedDataAvailable) BOOL protectedDataAvailable;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`false`](../../Swift/false.md) if data protection is enabled and the device is currently locked. The value of this property is set to [`true`](../../Swift/true.md) if the device is unlocked or if content protection is not enabled.
 

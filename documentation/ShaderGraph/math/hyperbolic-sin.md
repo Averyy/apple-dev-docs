@@ -14,7 +14,7 @@ The hyperbolic sine of the incoming value in radians.
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 **Hyperbolic Sin (half)**:
 

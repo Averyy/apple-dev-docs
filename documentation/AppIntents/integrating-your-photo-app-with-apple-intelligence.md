@@ -13,11 +13,11 @@ Adopt photo schemas so people can edit and manage photos with Siri.
 - macOS 27.0+
 - Xcode 27.0+
 
-#### Overview
+## Overview
 
 This sample app uses the App Intents framework to make its photo functionality discoverable by Apple Intelligence and Siri. After choosing photos from their camera roll, people use Siri to perform actions like rotating a photo, adding it to their Favorites, and more.
 
-#### Make content available in Spotlight
+## Make content available in Spotlight
 
 To make its content discoverable by Apple Intelligence and let people find photos using semantic search in Spotlight, the sample app describes its assets as app entities that conform to the [`IndexedEntity`](./indexedentity.md) protocol:
 
@@ -63,7 +63,7 @@ By conforming app entities to `IndexedEntity` and donating them to a Spotlight i
 
 For more information about making content available to Spotlight, see [Making app entities available in Spotlight](./making-app-entities-available-in-spotlight.md).
 
-#### Make app entities shareable
+## Make app entities shareable
 
 Describing app data as app entities and indexing them in Spotlight is the first step toward making your app discoverable by Apple Intelligence and bringing your app to Siri. To make sure the system can pass the sample app’s content to other apps, the app adopts the [`Transferable`](../CoreTransferable/transferable.md) protocol for its app entities:
 
@@ -79,7 +79,7 @@ extension AssetEntity: Transferable {
 }
 ```
 
-#### Provide onscreen context
+## Provide onscreen context
 
 When a person makes a request that references onscreen content, for example, “Rotate this photo”, Apple Intelligence needs to know which photo is visible onscreen. When you provide this information as context, Siri can respond to a request and perform the action. In addition to conforming to the [`Transferable`](../CoreTransferable/transferable.md) protocol, the `AssetEntity` also conforms to the [`asset`](./appschema/photosentity/asset.md) schema. Schema conformance is a prerequisite for providing cues to the system about what’s visible onscreen. To bridge visible content to an app entity that conforms to a schema, you annotate a view or user activity object with an app entity. The `MediaView` shows one photo at a time, so the app annotates a [`NSUserActivity`](../Foundation/nsuseractivity.md) with the `AssetEntity` that represents the currently visible photo:
 
@@ -104,7 +104,7 @@ var body: some View {
 
 For more information about making onscreen content discoverable by Apple Intelligence, see [Providing contextual cues to Apple Intelligence and Siri](./providing-contextual-cues-to-apple-intelligence-and-siri.md).
 
-#### Create app intents for photo actions
+## Create app intents for photo actions
 
 Transferable app entities, Spotlight donations, and user-activity annotations give the system context about your app’s content. To let people perform actions on the content with Siri, create app intents that conform to intent schemas in the `.photos` domain that match photo actions. For example, the sample app implements an intent that conforms to the [`createAlbum`](./appschema/photosintent/createalbum.md) schema to let people create a photo album in the app with Siri:
 

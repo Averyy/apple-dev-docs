@@ -5,7 +5,7 @@
 
 Back user interfaces with a local replica of a CloudKit private database.
 
-#### Overview
+## Overview
 
 Use Core Data with CloudKit to give users seamless access to the data in your app across all their devices.
 
@@ -13,7 +13,7 @@ Core Data with CloudKit combines the benefits of local persistence with cloud ba
 
 ![Flow diagram showing a record syncing between CloudKit and three devices: a laptop, an iPad, and an iPhone.](https://developer.apple.com/tutorials/images/com.apple.coredata/media-3226649@2x.png)
 
-##### Determine If Your App Is Eligible for Core Data with CloudKit
+### Determine If Your App Is Eligible for Core Data with CloudKit
 
 Apps adopting Core Data can use Core Data with CloudKit as long as the persistent store is an [`NSSQLiteStoreType`](./nssqlitestoretype.md) store, and the data model is compatible with CloudKit limitations. For example, CloudKit does not support unique constraints, undefined attributes, or required relationships.
 
@@ -21,7 +21,7 @@ Apps using CloudKit cannot use Core Data with CloudKit with existing CloudKit co
 
 For more information about data model requirements, see [Create a Data Model](./creating-a-core-data-model-for-cloudkit.md#Create-a-Data-Model).
 
-##### Set Up Your Development Environment
+### Set Up Your Development Environment
 
 You need an [Apple Developer Program](https://developer.apple.com/programs/) account to access the CloudKit service and your team’s CloudKit containers during development.
 
@@ -31,7 +31,7 @@ You can run and test Core Data with CloudKit apps using Simulator. You may also 
 
 For more information, see [Create an iCloud Account for Development](https://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/CloudKitQuickStart/EnablingiCloudandConfiguringCloudKit/EnablingiCloudandConfiguringCloudKit.html#//apple_ref/doc/uid/TP40014987-CH2-SW7).
 
-##### Configure Core Data with CloudKit
+### Configure Core Data with CloudKit
 
 Add Core Data with CloudKit to your project as follows:
 

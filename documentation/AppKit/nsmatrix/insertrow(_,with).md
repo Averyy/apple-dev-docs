@@ -19,7 +19,7 @@ func insertRow(_ row: Int, with newCells: [NSCell]?)
 - (void) insertRow:(NSInteger) row withCells:(NSArray<NSCell *> *) newCells;
 ```
 
-#### Discussion
+## Discussion
 
 If `row` is greater than the number of rows in the receiver, enough rows are created to expand the receiver to be `row` rows high. `newCells` should either be empty or contain a sufficient number of cells to fill each new row. If `newCells` is `nil` or an array with no elements, the call is equivalent to calling [`insertRow(_:)`](./insertrow%28_%29.md). Extra cells are ignored, unless the matrix is empty. In that case, a matrix is created with one row and enough columns for all the elements of `newCells`.
 

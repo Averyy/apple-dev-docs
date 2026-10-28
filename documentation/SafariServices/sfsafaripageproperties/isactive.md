@@ -19,7 +19,7 @@ var isActive: Bool { get }
 @property (nonatomic, readonly, getter=isActive) BOOL active;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if active; otherwise [`false`](../../Swift/false.md).
 

@@ -19,11 +19,11 @@ func supplementalTarget(forAction action: Selector, sender: Any?) -> Any?
 - (id) supplementalTargetForAction:(SEL) action sender:(id) sender;
 ```
 
-#### Return Value
+## Return Value
 
 An object which responds to the action, or `nil`.
 
-#### Discussion
+## Discussion
 
 If this `NSResponder` instance does not itself `respondsToSelector:`, then `supplementalTargetForAction:sender:` is called.
 

@@ -25,7 +25,7 @@ func NSDecimalMultiply(_ result: UnsafeMutablePointer<Decimal>, _ leftOperand: U
 extern NSCalculationError NSDecimalMultiply(NSDecimal *result, const NSDecimal *leftOperand, const NSDecimal *rightOperand, NSRoundingMode roundingMode);
 ```
 
-#### Discussion
+## Discussion
 
 Multiplies `rightOperand` by `leftOperand` and stores the product, possibly rounded off according to `roundingMode`, in `result`.
 

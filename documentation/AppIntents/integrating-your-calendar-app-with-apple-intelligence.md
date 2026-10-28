@@ -12,7 +12,7 @@ Adopt calendar schemas so people can create, find, and manage events with Siri.
 - Mac Catalyst 27.0+
 - Xcode 27.0+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC26 session [344: Code-along: Make your app available to Siri](https://developer.apple.com/wwdc26/344/).
 

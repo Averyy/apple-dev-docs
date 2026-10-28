@@ -23,7 +23,7 @@ var totalRiskScoreFullRange: Double { get }
 @property (nonatomic, assign, readonly) double totalRiskScoreFullRange;
 ```
 
-#### Discussion
+## Discussion
 
 This value is not limited by [`ENRiskScoreMax`](../enriskscoremax.md).
 

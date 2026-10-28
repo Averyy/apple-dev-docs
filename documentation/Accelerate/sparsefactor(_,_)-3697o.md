@@ -25,11 +25,11 @@ func SparseFactor(_ type: SparseFactorization_t, _ Matrix: SparseMatrixStructure
 static SparseOpaqueSymbolicFactorization SparseFactor(SparseFactorization_t type, SparseMatrixStructure Matrix);
 ```
 
-#### Return Value
+## Return Value
 
 A [`SparseOpaqueSymbolicFactorization`](./sparseopaquesymbolicfactorization.md) structure that represents the symbolic factorization.
 
-#### Discussion
+## Discussion
 
 Use this function to calculate the symbolic factorization of a sparse matrix’s structure to pass to the direct solve functions. You can use the symbolic factorization that this function returns for multiple numerical factorizations with different numerical values and different precisions, but the same nonzero structure.
 

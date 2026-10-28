@@ -13,11 +13,11 @@ virtual bool registerOutputHandler(
  IOOutputActionaction );
 ```
 
-#### Return Value
+## Return Value
 
 Returns true if the target/action provided was accepted, false otherwise.
 
-#### Overview
+## Overview
 
 The interface object will forward all output packets sent from the network stack to the target and action registered using this method. The registration must occur before the interface is registered and opened by `IONetworkStack`, otherwise the default handler will be used. The default target and action is set by `init()` as the controller, and the handler returned by the controller's `getOutputHandler()` method.
 

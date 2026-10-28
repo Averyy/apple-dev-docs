@@ -27,7 +27,7 @@ optional func resolveAccountNickname(for intent: INSearchForAccountsIntent) asyn
 - (void) resolveAccountNicknameForSearchForAccounts:(INSearchForAccountsIntent *) intent withCompletion:(void (^)(INSpeakableStringResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve any questions about the account nickname used during a search. Use this method to examine the [`accountNickname`](../insearchforaccountsintent/accountnickname.md) property of the `intent` object. Return a resolution of success if you can perform the search using the specified nickname. If the property does not contain a value, return a resolution of success or not required based if you can use other information in the `intent` object to perform the search.
 

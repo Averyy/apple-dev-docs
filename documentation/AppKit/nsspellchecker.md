@@ -19,7 +19,7 @@ class NSSpellChecker
 @interface NSSpellChecker : NSObject
 ```
 
-#### Overview
+## Overview
 
 To handle all its spell checking, an app needs only one instance of [`NSSpellChecker`](./nsspellchecker.md), known as the spell checker. Using the spell checker you manage the Spelling panel, in which the user can specify decisions about words that are suspect. The spell checker also offers the ability to provide word completions to augment the text completion system.
 

@@ -20,7 +20,7 @@ var color: NSColor! { get set }
 @property (nonatomic, copy, null_unspecified) NSColor * color;
 ```
 
-#### Discussion
+## Discussion
 
 This property is the equivalent of the [`cgColor`](./cgcolor.md) property on iOS.
 

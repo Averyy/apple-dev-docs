@@ -23,7 +23,7 @@ var isEligibleForPrediction: Bool { get set }
 @property (getter=isEligibleForPrediction) BOOL eligibleForPrediction;
 ```
 
-#### Discussion
+## Discussion
 
 If you aren’t yet using App Intents, set the value of this property to `true` if you want the system to suggest the activity as a shortcut. When the activity object is current, or associated with a view or responder in your app’s interface, the system includes the shortcut in places like Spotlight search and the Lock Screen. Set this property to `false` if you’re already donating App Intents to the system or want to prevent the generation of shortcuts for the activity. The default value of this property is `false`.
 

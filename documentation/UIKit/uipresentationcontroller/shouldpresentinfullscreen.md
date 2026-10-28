@@ -23,11 +23,11 @@ var shouldPresentInFullscreen: Bool { get }
 @property (nonatomic, readonly) BOOL shouldPresentInFullscreen;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the presentation covers the screen or [`false`](../../Swift/false.md) if it covers all or part of the current view controller only.
 
-#### Discussion
+## Discussion
 
 The default implementation of this method returns [`true`](../../Swift/true.md), indicating that the presentation covers the entire screen. You can override this method and return [`false`](../../Swift/false.md) to force the presentation to display only in the current context.
 

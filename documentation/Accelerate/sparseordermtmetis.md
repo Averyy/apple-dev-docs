@@ -25,7 +25,7 @@ var SparseOrderMTMetis: SparseOrder_t { get }
 SparseOrderMTMetis
 ```
 
-#### Discussion
+## Discussion
 
 The order in which variables are eliminated (i.e. the column/row ordering) in a sparse factorization makes a big difference to the size of the resulting factors and amount of work required to calculate them (it is probably the biggest single factor). Minimizing the size or work required is an NP-complete problem, so only heuristics are implemented in this library.
 

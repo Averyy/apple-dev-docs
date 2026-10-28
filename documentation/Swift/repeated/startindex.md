@@ -21,7 +21,7 @@ The position of the first element in a nonempty collection.
 var startIndex: Repeated<Element>.Index { get }
 ```
 
-#### Discussion
+## Discussion
 
 In a `Repeated` collection, `startIndex` is always equal to zero. If the collection is empty, `startIndex` is equal to `endIndex`.
 

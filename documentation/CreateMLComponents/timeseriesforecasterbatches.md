@@ -21,7 +21,7 @@ A sequence of forecaster batches on a time series shaped array.
 struct TimeSeriesForecasterBatches<Scalar> where Scalar : MLShapedArrayScalar
 ```
 
-#### Overview
+## Overview
 
 A time-series forecaster takes a series of samples and produces a prediction of the next samples. For example the sequence `[1, 2, 3, 4]` could predict `[5, 6]`. To train a forecaster, each training batch contains the input samples along with the annotations (ground truth predictions). For example a batch could have this:
 

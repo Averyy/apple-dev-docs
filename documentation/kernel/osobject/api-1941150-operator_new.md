@@ -12,7 +12,7 @@ static void * operator new(
  size_tsize);
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to block of memory if available, `NULL` otherwise.
 

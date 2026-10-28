@@ -22,7 +22,7 @@ The closure to execute when a record no longer exists.
 var recordWithIDWasDeletedBlock: ((CKRecord.ID, CKRecord.RecordType) -> Void)? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The closure returns no value and takes the following parameters:
 

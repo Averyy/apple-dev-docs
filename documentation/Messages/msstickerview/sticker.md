@@ -21,7 +21,7 @@ var sticker: MSSticker? { get set }
 @property (nonatomic, strong, readwrite, nullable) MSSticker * sticker;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to `nil` to remove the current sticker.
 

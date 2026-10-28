@@ -22,7 +22,7 @@ class var iBeam: NSCursor { get }
 @property (class, strong, readonly) NSCursor * IBeamCursor;
 ```
 
-#### Return Value
+## Return Value
 
 The I-beam cursor. This is the cursor that you’re used to seeing over editable or selectable text. The I-beam cursor’s default hot spot is where the crossbeam intersects the I.
 

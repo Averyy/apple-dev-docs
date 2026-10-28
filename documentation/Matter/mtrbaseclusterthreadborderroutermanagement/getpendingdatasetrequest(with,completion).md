@@ -29,7 +29,7 @@ func pendingDatasetRequest(with params: MTRThreadBorderRouterManagementClusterGe
 - (void) getPendingDatasetRequestWithParams:(MTRThreadBorderRouterManagementClusterGetPendingDatasetRequestParams *) params completion:(void (^)(MTRThreadBorderRouterManagementClusterDatasetResponseParams *data, NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This command SHALL be used to request the pending dataset of the Thread network to which the border router is connected.
 

@@ -19,7 +19,7 @@ enum Code
 enum AAErrorCode : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 The AccessoryAccess framework can also report errors from other domains when the error originates from a lower level component. The `NSError` domain for the AccessoryAccess framework is `AAErrorDomain`, the code is one of the `AAErrorCode` constants.
 

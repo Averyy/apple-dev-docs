@@ -21,11 +21,11 @@ Returns a Boolean value that indicates whether the asynchronous sequence contain
 func contains(where predicate: (Self.Element) async throws -> Bool) async rethrows -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the sequence contains an element that satisfies predicate; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 You can use the predicate to check for an element of a type that doesn’t conform to the `Equatable` protocol, or to find an element that satisfies a general condition.
 

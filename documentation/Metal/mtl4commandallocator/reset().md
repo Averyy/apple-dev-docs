@@ -29,7 +29,7 @@ func reset()
 
 - [Understanding the Metal 4 core API](../understanding-the-metal-4-core-api.md)
 
-#### Discussion
+## Discussion
 
 Calling this method allows new [`MTL4CommandBuffer`](../mtl4commandbuffer.md) to reuse its existing internal memory heaps to encode new GPU commands.
 

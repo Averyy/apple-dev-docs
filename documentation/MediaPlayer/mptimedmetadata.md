@@ -23,7 +23,7 @@ class MPTimedMetadata
 @interface MPTimedMetadata : NSObject
 ```
 
-#### Overview
+## Overview
 
 Content providers can embed these objects when creating a stream. The properties and constants in this class let you extract the metadata as you play the stream using an [`MPMoviePlayerController`](./mpmovieplayercontroller.md) object. For example, the provider of a live sports video stream could use `MPTimedMetadata` instances to embed game scores, with timestamps, in the stream. On the client side—that is, on the user’s device—their application could employ the properties of this class to update their app’s user interface in real time during the game.
 

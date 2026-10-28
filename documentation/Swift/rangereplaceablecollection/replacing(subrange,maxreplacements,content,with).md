@@ -23,7 +23,7 @@ func replacing<Output, Replacement>(subrange: Range<Self.Index>, maxReplacements
 
 Available when `Self` conforms to `BidirectionalCollection` and `SubSequence` is `Substring`.
 
-#### Return Value
+## Return Value
 
 A new collection in which all matches for regex in `subrange` are replaced by the result of calling `replacement`, where regex is the result of calling `content`.
 

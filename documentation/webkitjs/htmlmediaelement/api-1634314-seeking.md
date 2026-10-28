@@ -16,7 +16,7 @@ A Boolean value that indicates whether the element is seeking. (read-only)
 readonly attribute boolean seeking;
 ```
 
-#### Discussion
+## Discussion
 
 If `true`, the media resource is playing in a nonlinear fashion; otherwise, it is not.
 

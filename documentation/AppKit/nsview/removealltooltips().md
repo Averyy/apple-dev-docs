@@ -19,7 +19,7 @@ func removeAllToolTips()
 - (void) removeAllToolTips;
 ```
 
-#### Discussion
+## Discussion
 
 This method operates on tooltips created using either [`addToolTip(_:owner:userData:)`](./addtooltip%28_,owner,userdata%29.md) or set using the [`toolTip`](./tooltip.md) property.
 

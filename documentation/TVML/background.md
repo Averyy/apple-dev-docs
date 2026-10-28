@@ -4,7 +4,7 @@
 
 Displays an image or plays audio in the background of a channel app page.
 
-#### Overview
+## Overview
 
 Here’s an example that shows adding an image and audio to a `background` element.
 
@@ -19,12 +19,12 @@ Here’s an example that shows adding an image and audio to a `background` eleme
 
 > **Note**: Audio does not work in the background when the `background` element is contained in a `banner` element.
 
-##### Subelements of background
+### Subelements of background
 
 - [audio](./audio.md)
 - [mediaContent](./mediacontent.md)
 
-##### Elements that Use background
+### Elements that Use background
 
 - [alertTemplate](./alerttemplate.md)
 - [banner](./banner.md)

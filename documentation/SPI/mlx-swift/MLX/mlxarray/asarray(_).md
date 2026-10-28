@@ -21,11 +21,11 @@ func asArray<T>(_ type: T.Type) -> [T] where T : HasDType
 
 - [Converting From Python](../converting-python.md)
 
-#### Discussion
+## Discussion
 
 Note: because the number of dimensions is dynamic, this cannot produce a multi-dimensional array.
 
-##### See Also
+### See Also
 
 - [Conversion](../conversion.md)
 - [`asData(access:)`](./asdata%28access%29.md)

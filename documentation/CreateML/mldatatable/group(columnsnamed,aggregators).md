@@ -20,7 +20,7 @@ Creates a new data table with the given columns and adds a new column for each o
 func group<S>(columnsNamed: String..., aggregators: S) -> MLDataTable where S : Sequence, S.Element == MLDataTable.Aggregator
 ```
 
-#### Return Value
+## Return Value
 
 A new data table.
 

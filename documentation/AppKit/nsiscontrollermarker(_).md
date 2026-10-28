@@ -19,11 +19,11 @@ func NSIsControllerMarker(_ object: Any?) -> Bool
 extern BOOL NSIsControllerMarker(id object);
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if the object is one of the designated controller markers or [`false`](../Swift/false.md) if it is not.
 
-#### Discussion
+## Discussion
 
 This function helps you to create bindings between user interface elements and controller objects. The Application Kit predefines several special marker objects used as values for indicating selection state; currently these are [`NSMultipleValuesMarker`](./nsmultiplevaluesmarker.md), [`NSNoSelectionMarker`](./nsnoselectionmarker.md), and [`NSNotApplicableMarker`](./nsnotapplicablemarker.md). These markers are typed as `id` and only exist for the purpose of indicating a state; they are never archived and cannot be used as object values in controls. You use this function to test whether a given object value is a marker, in which case it is not directly assignable to the object that is bound. This check is important, especially since additional markers may be added in the future.
 

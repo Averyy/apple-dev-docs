@@ -17,7 +17,7 @@ Subclasses must implement this to create a new `State` when needed.  This is cal
 func newState(parameter: MLXArray) -> State
 ```
 
-#### Discussion
+## Discussion
 
 For example:
 

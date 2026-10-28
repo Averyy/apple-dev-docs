@@ -26,7 +26,7 @@ var numberFormatter: NumberFormatter! { get set }
 @property (copy, null_resettable) NSNumberFormatter * numberFormatter;
 ```
 
-#### Discussion
+## Discussion
 
 This property defaults to a number formatter using the [`NumberFormatter.Style.decimal`](../numberformatter/style/decimal.md) style. You can provide a different number formatter to customize the energy string’s appearance.
 

@@ -24,11 +24,11 @@ Synchronously gets a required config value for the given config key, converting 
 func requiredInt<Value>(forKey key: ConfigKey, as type: Value.Type = Value.self, isSecret: Bool = false, fileID: String = #fileID, line: UInt = #line) throws -> Value where Value : RawRepresentable, Value.RawValue == Int
 ```
 
-#### Return Value
+## Return Value
 
 The config value converted to the expected type.
 
-#### Discussion
+## Discussion
 
 Use this method when a integer-convertible configuration value is mandatory for your application to function. The method throws an error if the value is missing or can’t be converted to the expected type.
 

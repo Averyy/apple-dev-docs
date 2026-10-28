@@ -31,7 +31,7 @@ class UIWindowScene
 - [Providing data to the view hierarchy with custom traits](./providing-data-to-the-view-hierarchy-with-custom-traits.md)
 - [Specifying the scenes your app supports](./specifying-the-scenes-your-app-supports.md)
 
-#### Overview
+## Overview
 
 A [`UIWindowScene`](./uiwindowscene.md) object manages one instance of your app’s UI, including one or more windows that you display from that scene. The scene object manages the display of your windows on the user’s device, and the life cycle of that scene as the user interacts with it. When the state of the scene changes, the scene object notifies its delegate object, which adopts the [`UIWindowSceneDelegate`](./uiwindowscenedelegate.md) protocol. The scene also posts appropriate notifications to registered observers. Use the delegate object or notification observers to respond to any changes.
 

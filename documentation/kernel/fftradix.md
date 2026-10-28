@@ -15,7 +15,7 @@ The size of the FFT decomposition.
 typedef int FFTRadix;
 ```
 
-#### Discussion
+## Discussion
 
 An `FFTRadix` value is passed as an argument to [`vDSP_create_fftsetup`](./api-1580009-vdsp_create_fftsetup.md) or [`vDSP_create_fftsetupD`](../Accelerate/vdsp_create_fftsetupd.md).
 

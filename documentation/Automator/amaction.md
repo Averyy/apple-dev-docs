@@ -20,7 +20,7 @@ class AMAction
 @interface AMAction : NSObject
 ```
 
-#### Overview
+## Overview
 
 Automator is an Apple app that allows users to construct and execute workflows consisting of a sequence of discrete modules called actions. An action performs a specific task, such as copying a file or cropping an image, and passes its output to Automator to give to the next action in the workflow. Actions are currently implemented as loadable bundles owned by objects of the [`AMBundleAction`](./ambundleaction.md) class, a subclass of [`AMAction`](./amaction.md).
 

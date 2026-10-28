@@ -16,7 +16,7 @@ struct VNImageOption
 typedef NSString * VNImageOption;
 ```
 
-#### Discussion
+## Discussion
 
 Pass an option key into the [`VNImageRequestHandler`](./vnimagerequesthandler.md) instance on creation or request.  Option keys are used to describe specific properties of an image or specify how an image needs to be handled.
 

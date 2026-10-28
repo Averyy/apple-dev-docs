@@ -25,7 +25,7 @@ var computeFunctionDescriptor: MTL4FunctionDescriptor? { get set }
 @property (nonatomic, copy, readwrite, nullable) MTL4FunctionDescriptor * computeFunctionDescriptor;
 ```
 
-#### Discussion
+## Discussion
 
 You don’t assign instances of [`MTL4FunctionDescriptor`](../mtl4functiondescriptor.md) to this property directly, instead assign an instance of one of its subclasses, such as [`MTL4LibraryFunctionDescriptor`](../mtl4libraryfunctiondescriptor.md), which represents a function from a Metal library.
 

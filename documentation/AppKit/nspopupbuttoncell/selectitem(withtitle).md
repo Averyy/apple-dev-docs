@@ -19,7 +19,7 @@ func selectItem(withTitle title: String)
 - (void) selectItemWithTitle:(NSString *) title;
 ```
 
-#### Discussion
+## Discussion
 
 By default, selecting or deselecting a menu item changes its state. To disassociate the current selection from the state of menu items, set the [`altersStateOfSelectedItem`](./altersstateofselecteditem.md) property to [`false`](../../Swift/false.md).
 

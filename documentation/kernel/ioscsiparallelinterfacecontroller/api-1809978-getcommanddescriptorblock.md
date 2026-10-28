@@ -13,11 +13,11 @@ bool GetCommandDescriptorBlock (
  SCSICommandDescriptorBlock *cdbData );
 ```
 
-#### Return Value
+## Return Value
 
 returns true if data was copied to cdbData pointer
 
-#### Overview
+## Overview
 
 This will always return a 16 Byte CDB. If the Protocol Layer driver does not support 16 Byte CDBs, it will have to create a local SCSICommandDescriptorBlock variable to get the CDB data and then transfer the needed bytes from there.
 

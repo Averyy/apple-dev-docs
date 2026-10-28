@@ -5,7 +5,7 @@
 
 Customize your watchOS app’s user interface for continuous display.
 
-#### Overview
+## Overview
 
 The launch of watchOS 6 introduced the Always On state. Supported devices continued to display the time, even when the user isn’t actively interacting with the watch; however, when running an app, the system blurs the app’s user interface and displays the time over it.
 
@@ -19,7 +19,7 @@ Additionally, any controls in the user interface remain interactive. Users can t
 
 Apps compiled for watchOS 8 and later have Always On enabled by default. You can disable this feature by setting the [`WKSupportsAlwaysOnDisplay`](../BundleResources/information-property-list/wksupportsalwaysondisplay.md) key to [`false`](../Swift/false.md) in the WatchKit Extension’s `Info.plist` file. Users can also disable Always On for the entire device or on a per-app basis by choosing Settings > Display & Brightness > Always On.
 
-##### Understand frontmost app behavior
+### Understand frontmost app behavior
 
 By default, when the user lowers their wrist or stops interacting with their watch, your app transitions to the inactive state. The system continues to display your app’s user interface as long as your app remains the frontmost app (usually two minutes) before transitioning to the background and becoming suspended. If the user dismisses the app (for example, by pressing the Digital Crown or by covering the screen), the app transitions immediately to the background and doesn’t become the frontmost app.
 
@@ -27,7 +27,7 @@ Users can set the amount of time that apps remain the frontmost app by changing 
 
 When the app is inactive, the user interface doesn’t update by default. However, you can use a [`TimelineView`](../SwiftUI/timelineview.md) to schedule periodic updates. For more information, see [Updating watchOS apps with timelines](./updating-watchos-apps-with-timelines.md).
 
-##### Update the display during background sessions
+### Update the display during background sessions
 
 Apps running a background session, such as a workout session or background audio session, remain onscreen as long as the session is active. Unlike frontmost apps, apps running a background session can continue to update their user interface; however, to save battery life, the system reduces the update frequency.
 
@@ -64,7 +64,7 @@ var body: some View {
 }
 ```
 
-##### Hide sensitive information
+### Hide sensitive information
 
 Because displayed information may be visible to casual observers, be sure to hide any sensitive data while your app is in Always On. Add the [`privacySensitive(_:)`](../SwiftUI/view/privacysensitive%28_%29.md) view modifier to blur out specific user interface elements during Always On.
 
@@ -101,7 +101,7 @@ But the interface obscures sensitive data, such as the account number and balanc
 
 To protect the user’s privacy, always hide any highly sensitive information, such as financial information or health data. For information that may or may not be sensitive, such as incoming messages or appointments, default to showing the information. If the user has any concerns, they can disable Always On on a per-app basis.
 
-##### Customize the reduced luminance appearance
+### Customize the reduced luminance appearance
 
 To preserve battery life, the system dims the screen during Always On. The system determines the screen’s overall luminance by comparing the ratio of lit pixels to dark pixels. It then reduces the overall brightness to an appropriate level.
 
@@ -136,7 +136,7 @@ Then it dims the title in Always On. Because the ratio of lit to dark pixels is 
 
 ![A watchOS app running in Always On. The app dims the title, but the appearance of the status text and button don’t changed.](https://developer.apple.com/tutorials/images/com.apple.watchOS-Apps/designing-your-app-for-the-always-on-state-5@2x.png)
 
-##### Preview both interfaces in Xcode
+### Preview both interfaces in Xcode
 
 You can preview both the regular and Always On interfaces in Xcode. To see the Always On interface, set the [`isLuminanceReduced`](../SwiftUI/environmentvalues/isluminancereduced.md) and [`redactionReasons`](../SwiftUI/environmentvalues/redactionreasons.md) environment variables in the preview.
 
@@ -159,7 +159,7 @@ The resulting preview shows both the regular and the Always On interfaces.
 
 > **Note**: The system doesn’t automatically dim the user interface when previewing in Xcode. To see how the system automatically dims the user interface, you must test it on a device or in the simulator.
 
-##### Test Always On in the Simulator
+### Test Always On in the Simulator
 
 Xcode supports Always On in the simulator. Simply click the Toggle Always On button in the status bar to test.
 

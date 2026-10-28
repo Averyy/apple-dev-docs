@@ -12,7 +12,7 @@ Display content and provide services in an AR experience with App Clip Codes.
 - Mac Catalyst 14.5+
 - Xcode 12.5+
 
-#### Overview
+## Overview
 
 The sample app Seed Shop provides gardeners with previews of fully grown plants. At the nursery, Seed Shop identifies the plant from an App Clip Code on a seed packet, and displays the adult plant in 3D. With the help of AR, the buyer can see, for example, the real height of a typical Mammoth sunflower by inspecting the virtual plant at scale, relative to real objects in the camera feed.
 
@@ -22,7 +22,7 @@ When a user with a device running iOS & iPad OS 14.3 or later scans the seed pac
 
 If the user indicates they may buy a particular plant in the App Clip experience, Seed Shop suggests the user download the full version of the app to preview the plant in their own garden. This sample project builds the App Clip Code provided on the seed packet at the garden store, allowing the user to view an AR version of the plant before purchase.
 
-##### Configure the Sample Code Project
+### Configure the Sample Code Project
 
 To configure Seed Shop for code signing, first set a development team on each target. Define a unique bundle ID for the targets, and set the App Clip’s parent application identifiers entitlement.
 
@@ -40,7 +40,7 @@ The App Clip Codes in Seed Shop display on a package of seeds. Add this [image o
 
 > **Note**: You must set the run destination to an actual device. The Simulator doesn’t support augmented reality.
 
-##### Ensure Device Support and Run a Session
+### Ensure Device Support and Run a Session
 
 In [viewDidLoad](x-source-tag://ViewDidLoad), the sample app calls [`supportsAppClipCodeTracking`](../ARKit/arworldtrackingconfiguration/supportsappclipcodetracking.md) to check if the device contains the Apple Neural Engine (ANE), which App Clip Code tracking requires.
 
@@ -57,7 +57,7 @@ newConfiguration.appClipCodeTrackingEnabled = true
 arView.session.run(newConfiguration)
 ```
 
-##### Identify the App Clip Code that Launched the Experience
+### Identify the App Clip Code that Launched the Experience
 
 When the user points the device at an App Clip Code using the camera or Code Scanner, the system launches its associated App Clip, or if present, the full app.
 
@@ -82,7 +82,7 @@ If an app interacts with a single App Clip Code, the app can limit its interacti
 process(productKey: getProductKey(from: appClipCodeLaunchURL), initializePreview: false)
 ```
 
-##### Guide the User with Messaging
+### Guide the User with Messaging
 
 The device may pan away from the App Clip Code that launched the experience in the time it takes for the system to transition from the camera or Code Scanner to the app or App Clip. In the event ARKit doesn’t immediately find the App Clip Code in the camera feed, the sample app displays text instructing the user what to do.
 
@@ -93,7 +93,7 @@ class AppClipCodeCoachingOverlayView: UILabel {
         text = "Scan code to start"
 ```
 
-##### Launch the App Clip in Code Scanner
+### Launch the App Clip in Code Scanner
 
 During development, the sample project can launch the App Clip target in Xcode to test the AR experience. After the target launches once, the device scans the test App Clip Code with Code Scanner to invoke the App Clip.
 
@@ -103,7 +103,7 @@ To associate an App Clip Code to the App Clip during development, Seed Shop sets
 
 For more on local experiences, see [Testing Your App Clip’s Launch Experience](./testing-the-launch-experience-of-your-app-clip.md#Test-App-Clip-invocations-with-a-local-experience).
 
-##### Set Up an App Clip Experience in App Store Connect
+### Set Up an App Clip Experience in App Store Connect
 
 At runtime, the system checks the App Clip registry in App Store Connect to ensure an App Clip associates to an App Clip Code before allowing the app access to the App Clip Code URL. For more information, see [`url`](../ARKit/arappclipcodeanchor/url.md).
 
@@ -119,7 +119,7 @@ When testers view App Clip Codes to launch the App Clip or decode [`ARAppClipCod
 
 > ❗ **Important**: During testing in the TestFlight app, the three experience URLs in App Store Connect’s TestFlight area change the invocation URL the system passes into the App Clip, but they don’t affect [`ARAppClipCodeAnchor`](../ARKit/arappclipcodeanchor.md) URL decoding.
 
-##### Configure the Server and Targets for App Site Association
+### Configure the Server and Targets for App Site Association
 
 App Store Connect allows an app to define a particular App Clip experience URL if the server hosting the URL’s domain approves of it via Apple App Site Association. In addition, the framework performs an equivalent runtime check before allowing the App Clip or parent app to decode [`ARAppClipCodeAnchor`](../ARKit/arappclipcodeanchor.md) URLs that are within the App Clip experience’s domain. This check occurs for local and App Store Connect experiences. To express approval, the server provides the App Clip’s and parent app’s fully qualified application identifiers in an Apple App Site Association (AASA) file’s `appclips` node.
 
@@ -145,7 +145,7 @@ The sample project enables the Associated Domains capability on both targets. Th
 
 For more on configuring AASA for App Clips, see [Associating your App Clip with your website](./associating-your-app-clip-with-your-website.md).
 
-##### Recognize an App Clip Code and Decode the URL
+### Recognize an App Clip Code and Decode the URL
 
 When ARKit recognizes an App Clip Code in the camera feed, it instantiates an [`ARAppClipCodeAnchor`](../ARKit/arappclipcodeanchor.md) and passes it to the [`session(_:didAdd:)`](../ARKit/arsessiondelegate/session%28_,didadd%29.md) callback. Since the user succeeded in scanning a code, the sample app hides the instructional text.
 
@@ -182,7 +182,7 @@ For more on URL decoding failure, see [`ARAppClipCodeAnchor.URLDecodingState.fai
 
 > **Note**: The sample project bundles seed packaging material that displays App Clip Codes, but an app might situate App Clip Codes differently. For detailed guidance on displaying App Clip Codes in the environment, see [App Clip Code Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/app-clips/overview/app-clip-codes/).
 
-##### Retrieve a Product’s 3D Model
+### Retrieve a Product’s 3D Model
 
 When ARKit decodes an App Clip Code’s URL, the sample app parses the URL suffix to get the product name.
 
@@ -210,7 +210,7 @@ func process(modelURL: URL, productKey: String) {
     let contentLoad = CachingWebLoader.shared.cachedWebLoad(url: modelURL)
 ```
 
-##### Search for Product Packaging
+### Search for Product Packaging
 
 The sample project’s URL mapping system includes an image of the product’s packaging material on which to place the product’s 3D model in the environment.
 
@@ -253,7 +253,7 @@ func process(imageURL: URL, productKey: String, initializeImageAnchor: Bool) {
 
 For more information about image tracking, see [Tracking and Altering Images](../ARKit/tracking-and-altering-images.md).
 
-##### Display the 3D Asset
+### Display the 3D Asset
 
 When the user pans the device from the scanned App Clip Code to its downloaded packaging image, ARKit identifies the seed packet’s real-world location and displays the full-grown plant on top.
 

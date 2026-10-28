@@ -33,7 +33,7 @@ var frequencySkew: Float { get }
 @property (atomic, assign, readonly) float frequencySkew;
 ```
 
-#### Discussion
+## Discussion
 
 A value of `0.0` indicates that the query and matched audio are at the same frequency. Other values indicate that the query audio is playing at a different frequency. For example, if the original recording plays at `100` Hz, a value of `0.05` indicates that the query recording plays at `105` Hz.
 

@@ -23,7 +23,7 @@ var observedProgress: Progress? { get set }
 @property (nonatomic, strong, nullable) NSProgress * observedProgress;
 ```
 
-#### Discussion
+## Discussion
 
 When this property is set, the progress view updates its progress value automatically using information it receives from the [`Progress`](../../Foundation/progress.md) object. (Progress updates are animated.) Set the property to `nil` when you want to update the progress manually. The default value of this property is `nil`.
 

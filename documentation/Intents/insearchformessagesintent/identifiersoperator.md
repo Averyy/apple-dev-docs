@@ -31,7 +31,7 @@ var identifiersOperator: INConditionalOperator { get }
 @property (atomic, assign, readonly) INConditionalOperator identifiersOperator;
 ```
 
-#### Discussion
+## Discussion
 
 This property indicates whether the message must contain all, some, or none of the identifiers listed in the [`identifiers`](./identifiers.md) property.
 

@@ -24,11 +24,11 @@ func AudioCodecInitialize(_ inCodec: AudioCodec, _ inInputFormat: UnsafePointer<
 extern OSStatus AudioCodecInitialize(AudioCodec inCodec, const AudioStreamBasicDescription *inInputFormat, const AudioStreamBasicDescription *inOutputFormat, const void *inMagicCookie, UInt32 inMagicCookieByteSize);
 ```
 
-#### Return Value
+## Return Value
 
 Returns `NoErr` if successful. Returns `kAudioCodecUnsupportedFormatError` if the codec cannot handle the specified data translation.  See `Result Codes` for other possible values.
 
-#### Discussion
+## Discussion
 
 This function allocates any buffers needed, sets the input and output formats, and puts the codec into the initialized state. The codec has to be in the initialized state for the  [`AudioCodecAppendInputData(_:_:_:_:_:)`](./audiocodecappendinputdata%28_,_,_,_,_%29.md) and [`AudioCodecProduceOutputPackets(_:_:_:_:_:_:)`](./audiocodecproduceoutputpackets%28_,_,_,_,_,_%29.md) functions to work. While in this state, the format information for the translation cannot be changed; you must call the [`AudioCodecUninitialize(_:)`](./audiocodecuninitialize%28_%29.md) function before making any changes. A codec’s properties provide information about allowable types of input and output, magic cookies, and so forth. Use the [`AudioCodecGetProperty(_:_:_:_:)`](./audiocodecgetproperty%28_,_,_,_%29.md) function to read a codec’s properties. The properties are described in [Global Codec Properties](./api-1494121-global-codec-properties.md) and [Instance Codec Properties](./api-1494111-instance-codec-properties.md).
 

@@ -25,7 +25,7 @@ func object_setIvar(_ obj: Any?, _ ivar: Ivar, _ value: Any?)
 extern void object_setIvar(id obj, Ivar ivar, id value);
 ```
 
-#### Discussion
+## Discussion
 
 [`object_setIvar(_:_:_:)`](./object_setivar%28_,_,_%29.md) is faster than [`object_setInstanceVariable`](./object_setinstancevariable.md) if the Ivar for the instance variable is already known.
 

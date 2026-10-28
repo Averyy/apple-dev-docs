@@ -24,7 +24,7 @@ func apply(_ transform: CGAffineTransform)
 - (void) applyTransform:(CGAffineTransform) transform;
 ```
 
-#### Discussion
+## Discussion
 
 This method applies the specified transform to the path’s points immediately. The modifications made to the path object are permanent. If you do not want to permanently modify a path object, you should consider applying the transform to a copy.
 

@@ -19,7 +19,7 @@ let IKPictureTakerAllowsFileChoosingKey: String
 extern NSString * const IKPictureTakerAllowsFileChoosingKey;
 ```
 
-#### Discussion
+## Discussion
 
 The associated value is an `NSNumber` object that contains a `BOOL` value whose default value is [`true`](../Swift/true.md).
 

@@ -19,7 +19,7 @@ A type to validate existing AIVU files to ensure that they meet the minimum requ
 struct AIVUValidator
 ```
 
-#### Overview
+## Overview
 
 An AIVU is a standalone media file with the one or more video and audio tracks, and AIV required static and dynamic metadata.
 

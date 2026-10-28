@@ -16,7 +16,7 @@ get center(): Coordinate;
 set center(center: CoordinateData);
 ```
 
-#### Discussion
+## Discussion
 
 When accessing [`center`](./center.md), MapKit JS copies the [`Coordinate`](../coordinate.md) instance.
 

@@ -29,7 +29,7 @@ class MLMultiArray
 
 - [Making Predictions with a Sequence of Inputs](./making-predictions-with-a-sequence-of-inputs.md)
 
-#### Overview
+## Overview
 
 A multidimensional array, or *multiarray*, is one of the underlying types of an `MLFeatureValue` that stores numeric values in multiple dimensions. All elements in an [`MLMultiArray`](./mlmultiarray.md) instance are one of the same type, and one of the types that [`MLMultiArrayDataType`](./mlmultiarraydatatype.md) defines:
 

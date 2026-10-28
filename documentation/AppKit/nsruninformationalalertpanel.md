@@ -17,7 +17,7 @@ Creates and runs an informational alert panel.
 extern NSInteger NSRunInformationalAlertPanel(NSString *title, NSString *msgFormat, NSString *defaultButton, NSString *alternateButton, NSString *otherButton, ...);
 ```
 
-#### Discussion
+## Discussion
 
 Creates an informational alert panel that provides information related to a requested action. It then runs the panel in a modal event loop.
 

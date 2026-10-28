@@ -25,11 +25,11 @@ func isEqual(to other: Data) -> Bool
 - (BOOL) isEqualToData:(NSData *) other;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the contents of `otherData` are equal to the contents of the receiver, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Two data objects are equal if they hold the same number of bytes, and if the bytes at the same position in the objects are the same.
 

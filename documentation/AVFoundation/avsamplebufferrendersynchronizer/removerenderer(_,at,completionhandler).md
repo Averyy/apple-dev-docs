@@ -31,7 +31,7 @@ func removeRenderer(_ renderer: any AVQueuedSampleBufferRendering, at time: CMTi
 - (void) removeRenderer:(id<AVQueuedSampleBufferRendering>) renderer atTime:(CMTime) time completionHandler:(void (^)(BOOL didRemoveRenderer)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 This method removes the renderer asynchronously. The method can be called more than once, with a subsequent scheduled removal replacing a previously scheduled removal. This method can be called while [`rate`](./rate.md) is not `0.0`.
 

@@ -29,11 +29,11 @@ nonisolated
 func dynamicTypeSize<T>(_ range: T) -> some View where T : RangeExpression, T.Bound == DynamicTypeSize
 ```
 
-#### Return Value
+## Return Value
 
 A view that sets the Dynamic Type size to the specified `size`.
 
-#### Discussion
+## Discussion
 
 As an example, you can set a Dynamic Type size in `ContentView` to be [`DynamicTypeSize.xLarge`](../dynamictypesize/xlarge.md) (this can be useful in previews to see your content at a different size) like this:
 

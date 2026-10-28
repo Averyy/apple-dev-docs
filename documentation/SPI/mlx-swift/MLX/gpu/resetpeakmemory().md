@@ -17,7 +17,7 @@ Reset the peak memory to zero.
 static func resetPeakMemory()
 ```
 
-#### Discussion
+## Discussion
 
 See [`peakMemory`](../memory/snapshot/peakmemory.md).
 

@@ -22,11 +22,11 @@ func persistentIdentifierForItem(at url: URL) -> NSFileProviderItemIdentifier?
 - (NSFileProviderItemIdentifier) persistentIdentifierForItemAtURL:(NSURL *) url;
 ```
 
-#### Return Value
+## Return Value
 
 A unique identifier for the item specified by the URL, or `nil` if the document is not in the File Provider’s shared container.
 
-#### Discussion
+## Discussion
 
 Override this method to define a static mapping between URLs and their persistent identifiers. A document’s identifier should remain constant over time; it should not change when the document is edited, moved, or renamed.
 

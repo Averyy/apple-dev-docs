@@ -23,7 +23,7 @@ func addInputs(_ inputs: [String : MLCTensor], lossLabels: [String : MLCTensor]?
 - (BOOL) addInputs:(NSDictionary<NSString *,MLCTensor *> *) inputs lossLabels:(NSDictionary<NSString *,MLCTensor *> *) lossLabels lossLabelWeights:(NSDictionary<NSString *,MLCTensor *> *) lossLabelWeights;
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the operation was successful.
 

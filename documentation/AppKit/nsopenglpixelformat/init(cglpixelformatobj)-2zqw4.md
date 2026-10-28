@@ -19,11 +19,11 @@ init?(cglPixelFormatObj format: CGLPixelFormatObj)
 - (NSOpenGLPixelFormat *) initWithCGLPixelFormatObj:(CGLPixelFormatObj) format;
 ```
 
-#### Return Value
+## Return Value
 
 An intialized [`NSOpenGLPixelFormat`](../nsopenglpixelformat.md) object that wraps the CGL pixel format object.
 
-#### Discussion
+## Discussion
 
 If your application already has a low-level CGL pixel format object, you can create an [`NSOpenGLPixelFormat`](../nsopenglpixelformat.md) object to wrap it by calling this initializer. The [`NSOpenGLPixelFormat`](../nsopenglpixelformat.md) object retains the CGL pixel format object by calling the `CGLRetainPixelFormat(_:)` function.
 

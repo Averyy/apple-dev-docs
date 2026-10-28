@@ -15,7 +15,7 @@ The earliest start date of a subscription in a series of auto-renewable subscrip
 timestamp recentSubscriptionStartDate
 ```
 
-#### Discussion
+## Discussion
 
 For more information about the recent subscription start date, see [`recentSubscriptionStartDate`](../AppStoreServerAPI/recentsubscriptionstartdate.md).
 

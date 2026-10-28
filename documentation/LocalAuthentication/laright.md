@@ -23,7 +23,7 @@ class LARight
 @interface LARight : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use [`LARight`](./laright.md) instances to protect access to portions of your app that may contain sensitive information. By default, [`LARight`](./laright.md) instances require people to authenticate with Face ID, Touch ID, Apple Watch, or the device passcode. The following creates an [`LARight`](./laright.md) with the default authentication requirements:
 

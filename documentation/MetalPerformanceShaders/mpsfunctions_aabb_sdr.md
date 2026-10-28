@@ -22,7 +22,7 @@ let MPSFunctions_AABB_SDR: MPSFunctions_AABB
 static const MPSFunctions_AABB MPSFunctions_AABB_SDR;
 ```
 
-#### Discussion
+## Discussion
 
 Axis aligned bounding box for color gamut
 

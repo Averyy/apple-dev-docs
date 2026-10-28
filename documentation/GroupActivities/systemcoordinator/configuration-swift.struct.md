@@ -15,7 +15,7 @@ A structure that specifies your app’s support for activities that take place i
 struct Configuration
 ```
 
-#### Overview
+## Overview
 
 A [`SystemCoordinator.Configuration`](./configuration-swift.struct.md) structure stores your app’s preferences for the creation and arrangement of spatial Personas in a FaceTime call. Use this type to tell the system that you support activities that take place in one of your app’s immersive spaces, and how you want the system to arrange spatial Personas around your app’s content. To create a shared simulation space for your activity, set the [`supportsGroupImmersiveSpace`](./configuration-swift.struct/supportsgroupimmersivespace.md) property to `true`.
 

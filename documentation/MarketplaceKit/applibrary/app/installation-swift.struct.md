@@ -16,7 +16,7 @@ A structure that provides progress information for a specific app installation.
 struct Installation
 ```
 
-#### Overview
+## Overview
 
 The [`installation`](./installation-swift.property.md) property of the[`AppLibrary.App`](../app.md) class is of this type.
 

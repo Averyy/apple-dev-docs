@@ -21,7 +21,7 @@ An asynchronous request for authentication has been canceled by the user.
 var NSURLErrorUserCancelledAuthentication: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 This is typically incurred by clicking a “Cancel” button in a username/password dialog, rather than the user making an attempt to authenticate.
 

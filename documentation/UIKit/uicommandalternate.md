@@ -24,7 +24,7 @@ class UICommandAlternate
 @interface UICommandAlternate : NSObject
 ```
 
-#### Overview
+## Overview
 
 Create a [`UICommandAlternate`](./uicommandalternate.md) object and add it to a [`UICommand`](./uicommand.md) or [`UIKeyCommand`](./uikeycommand.md) object when you want to provide users an alternative action for the command. The command alternate is available to the user when they press the keyboard modifier keys, like Control or Option, specified in the [`modifierFlags`](./uicommandalternate/modifierflags.md) property.
 

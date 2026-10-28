@@ -24,7 +24,7 @@ class MTLFunctionStitchingInputNode
 @interface MTLFunctionStitchingInputNode : NSObject
 ```
 
-#### Overview
+## Overview
 
 An input node contains data from one of the stitched function’s parameters. The output data type of an input node has the same type as the matching parameter.
 

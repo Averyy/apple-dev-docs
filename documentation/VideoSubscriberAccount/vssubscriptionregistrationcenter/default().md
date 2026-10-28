@@ -24,11 +24,11 @@ class func `default`() -> VSSubscriptionRegistrationCenter
 + (VSSubscriptionRegistrationCenter *) defaultSubscriptionRegistrationCenter;
 ```
 
-#### Return Value
+## Return Value
 
 This method returns a [`VSSubscriptionRegistrationCenter`](../vssubscriptionregistrationcenter.md) object that refers to the default registration center.
 
-#### Discussion
+## Discussion
 
 Use the object this method returns to tell the system what content the user is able to access within your app.
 

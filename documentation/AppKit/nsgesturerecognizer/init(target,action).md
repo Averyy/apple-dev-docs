@@ -19,11 +19,11 @@ init(target: Any?, action: Selector?)
 - (instancetype) initWithTarget:(id) target action:(SEL) action;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized gesture recognizer object or `nil` if an error occurred.
 
-#### Discussion
+## Discussion
 
 This method is the designated initializer. Subclasses must call this method from their own custom initialization methods. Call the method before performing other tasks.
 

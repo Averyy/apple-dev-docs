@@ -28,7 +28,7 @@ var contentAttributeSet: CSSearchableItemAttributeSet? { get set }
 
 - [Creating a user activity object](../creating-a-user-activity-object.md)
 
-#### Discussion
+## Discussion
 
 A [`CSSearchableItemAttributeSet`](../../CoreSpotlight/cssearchableitemattributeset.md) object encapsulates the set of properties you want to display for a searchable activity.
 

@@ -24,7 +24,7 @@ case alwaysUseChannelBased
 PHASESpatializationModeAlwaysUseChannelBased
 ```
 
-#### Discussion
+## Discussion
 
 The framework selects a channel layout for the output audio that’s compatible with the device’s channel configuration in Settings.
 

@@ -21,7 +21,7 @@ The privacy context that applies to all connections that do not use a custom con
 static let `default`: NWParameters.PrivacyContext
 ```
 
-#### Discussion
+## Discussion
 
 You cannot disable logging on the default privacy context.
 

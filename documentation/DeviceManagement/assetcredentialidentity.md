@@ -21,11 +21,11 @@ A reference to a PKCS #12 password-protected identity.
 object AssetCredentialIdentity
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.asset.credential.identity` as the declaration type.
 
-##### Asset example
+### Asset example
 
 ```json
 {

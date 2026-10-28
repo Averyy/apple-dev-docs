@@ -19,7 +19,7 @@ A future which will provide an inference value once any pending write is complet
 final class AsyncValue
 ```
 
-#### Overview
+## Overview
 
 An `AsyncValue` contains an underlying `InferenceValue` however that value may be actively in-use by some previously dispatched async work, and thus accessing the underlying value below an `AsyncValue` requires an `await` to wait for any previous compute writing it to be complete.
 

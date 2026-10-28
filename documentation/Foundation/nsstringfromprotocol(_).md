@@ -25,7 +25,7 @@ func NSStringFromProtocol(_ proto: Protocol) -> String
 extern NSString *NSStringFromProtocol(Protocol *proto);
 ```
 
-#### Return Value
+## Return Value
 
 A string containing the name of `proto`.
 

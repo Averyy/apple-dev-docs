@@ -17,7 +17,7 @@ The metadata associated with the constraint that locks the user’s eSIM setting
 static let lockESIM: SettingMetadata<Bool>
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `false`.
 

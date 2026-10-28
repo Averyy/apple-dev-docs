@@ -17,7 +17,7 @@ Includes only devices the user selects or pairs in DeviceDiscoveryUI’s `Device
 static let userSpecifiedDevices: WASubscriberBrowser.Devices
 ```
 
-#### Discussion
+## Discussion
 
 Only applicable to use with the `DevicePicker()` API. Will throw an error if used with a `NetworkBrowser`.
 

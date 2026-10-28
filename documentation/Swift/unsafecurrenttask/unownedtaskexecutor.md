@@ -21,7 +21,7 @@ The current [`TaskExecutor`](../taskexecutor.md) preference, if this task has on
 var unownedTaskExecutor: UnownedTaskExecutor? { get }
 ```
 
-#### Discussion
+## Discussion
 
 The executor may be used to compare for equality with an expected executor preference.
 

@@ -16,7 +16,7 @@ An AppKit view that's displayed as the live view.
 case view(NSView)
 ```
 
-#### Discussion
+## Discussion
 
 This view must be the root of a view hierarchy (it must not have a superview), and it must not be owned by a view controller.
 

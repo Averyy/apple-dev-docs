@@ -19,7 +19,7 @@ An error that indicates the operation occurred when the app was in the backgroun
 case ClientInBackground
 ```
 
-#### Discussion
+## Discussion
 
 Perform the operation when the app is running in the foreground.
 

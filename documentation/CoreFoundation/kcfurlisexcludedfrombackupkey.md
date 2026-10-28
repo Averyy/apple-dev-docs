@@ -23,7 +23,7 @@ let kCFURLIsExcludedFromBackupKey: CFString!
 extern CFStringRef const kCFURLIsExcludedFromBackupKey;
 ```
 
-#### Discussion
+## Discussion
 
 Key for determining whether the resource is excluded from all backups of app data, returned as a `CFBoolean` object.
 

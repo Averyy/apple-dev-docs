@@ -12,11 +12,11 @@ UInt32 extendedConfigRead32(
  IOByteCountoffset );
 ```
 
-#### Return Value
+## Return Value
 
 An 32-bit value in host byte order (big endian on PPC).
 
-#### Overview
+## Overview
 
 This method reads a 32-bit configuration space register on the device and returns its value.
 

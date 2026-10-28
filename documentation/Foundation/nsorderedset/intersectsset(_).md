@@ -25,7 +25,7 @@ func intersectsSet(_ set: Set<AnyHashable>) -> Bool
 - (BOOL) intersectsSet:(NSSet<id> *) set;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if at least one object in the receiving ordered set is also present in `other`, otherwise [`false`](../../Swift/false.md).
 

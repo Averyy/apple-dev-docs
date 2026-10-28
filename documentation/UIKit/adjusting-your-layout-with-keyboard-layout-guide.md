@@ -12,7 +12,7 @@ Respond dynamically to keyboard movement by using the tracking features of the k
 - Mac Catalyst 15.0+
 - Xcode 13.0+
 
-#### Overview
+## Overview
 
 When your app presents a keyboard, you want it to integrate well into your layout. This sample code project demonstrates how to configure constraints when you set [`followsUndockedKeyboard`](./uikeyboardlayoutguide/followsundockedkeyboard.md) to `true` on the [`keyboardLayoutGuide`](./uiview/keyboardlayoutguide.md) property in `UIView` to adapt your layout to the movement of the floating keyboard onscreen. The sample illustrates several concepts, such as handling when the keyboard is close to the top of the screen, and adapting the layout when the additional views don’t have constraints with a direct relationship to the `keyboardLayoutGuide`.
 
@@ -25,7 +25,7 @@ view.keyboardLayoutGuide.topAnchor.constraint(
 
 See [`UILayoutGuide`](./uilayoutguide.md) for more information about layout guides.
 
-##### Follow the undocked keyboard
+### Follow the undocked keyboard
 
 For more precise layout responses to the undocked keyboard, the sample sets `followsUndockedKeyboard` to `true` and then creates tracking constraints that activate and deactivate when the keyboard approaches or leaves an edge. Tracking constraints only apply when `followsUndockedKeyboard` is `true`.
 
@@ -34,7 +34,7 @@ For more precise layout responses to the undocked keyboard, the sample sets `fol
 view.keyboardLayoutGuide.followsUndockedKeyboard = true
 ```
 
-##### Enable tracking constraints
+### Enable tracking constraints
 
 The sample shows how the [`UITrackingLayoutGuide`](./uitrackinglayoutguide.md) activates or deactivates constraints when the `keyboardLayoutGuide` approaches or leaves an edge. The sample code passes an array of constraints to the `keyboardLayoutGuide`, and indicates which edges trigger the change. The sample configures an array of constraints to activate when `awayFrom` the leading and trailing edges, so the constraints activate when the keyboard docks or when the floating keyboard is in the middle area of the screen. Conversely, the constraints deactivate when the floating keyboard approaches either the leading or trailing edge.
 
@@ -77,7 +77,7 @@ let nearLeadingConstraints = [ editViewToKeyboardLeading, imageViewToTrailing ]
 view.keyboardLayoutGuide.setConstraints(nearLeadingConstraints, activeWhenNearEdge: .leading)
 ```
 
-##### Account for keyboard types
+### Account for keyboard types
 
 The following list describes which edges the system reports the `keyboardLayoutGuide` is `near` and `awayFrom` when different types of keyboards are active:
 
@@ -102,7 +102,7 @@ The following list describes which edges the system reports the `keyboardLayoutG
 
 When the app is in 1/3 split view mode, the `keyboardLayoutGuide` is `awayFrom` leading and trailing edges, `near` the bottom edge if docked, and can be `near` the top edge if floating or undocked.
 
-##### Handle edge combinations
+### Handle edge combinations
 
 The sample shows constraints that are active when `near` or `awayFrom` multiple edges. The system activates or deactivates the constraints only when the position of the keyboard meets all edge requirements. Because a docked keyboard is `awayFrom` leading and trailing edges, but `near` the bottom edge, the constraint in the example below only activates when the keyboard undocks and is `awayFrom` the leading and trailing edges. This situation happens with undocked full or split keyboards, and with a floating keyboard in the horizontal middle of the screen.
 

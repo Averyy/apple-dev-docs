@@ -29,7 +29,7 @@ var storageMode: MTLStorageMode { get set }
 - [Choosing a resource storage mode for Apple GPUs](../choosing-a-resource-storage-mode-for-apple-gpus.md)
 - [Optimizing texture data](../optimizing-texture-data.md)
 
-#### Discussion
+## Discussion
 
 In iOS and tvOS, the default value is [`MTLStorageMode.shared`](../mtlstoragemode/shared.md). In macOS, the default value is [`MTLStorageMode.managed`](../mtlstoragemode/managed.md).
 

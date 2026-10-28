@@ -22,7 +22,7 @@ init(insertionIndexPath: IndexPath, reuseIdentifier: String, rowHeight: CGFloat)
 - (instancetype) initWithInsertionIndexPath:(NSIndexPath *) insertionIndexPath reuseIdentifier:(NSString *) reuseIdentifier rowHeight:(CGFloat) rowHeight;
 ```
 
-#### Return Value
+## Return Value
 
 A new placeholder cell object.
 

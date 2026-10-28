@@ -23,7 +23,7 @@ static var number: IntegerFormatStyle<Int8> { get }
 
 Available when `Self` is `IntegerFormatStyle<Int8>`.
 
-#### Discussion
+## Discussion
 
 Use this type property when the call point allows the use of [`IntegerFormatStyle`](../integerformatstyle.md). You typically do this when calling the `formatted` methods of types that conform to [`BinaryInteger`](../../Swift/binaryinteger.md).
 

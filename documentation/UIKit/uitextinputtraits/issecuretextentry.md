@@ -23,7 +23,7 @@ optional var isSecureTextEntry: Bool { get set }
 @property (nonatomic, getter=isSecureTextEntry) BOOL secureTextEntry;
 ```
 
-#### Discussion
+## Discussion
 
 This property is set to [`false`](../../Swift/false.md) by default. Setting this property to [`true`](../../Swift/true.md) in any view that conforms to [`UITextInputTraits`](../uitextinputtraits.md) disables the user’s ability to copy the text in the view and, in some cases, also disables the user’s ability to record and broadcast the text in the view.
 

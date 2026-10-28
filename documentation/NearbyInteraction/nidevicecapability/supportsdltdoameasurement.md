@@ -22,7 +22,7 @@ var supportsDLTDOAMeasurement: Bool { get }
 @property (nonatomic, readonly) BOOL supportsDLTDOAMeasurement;
 ```
 
-#### Discussion
+## Discussion
 
 Only create a [`NIDLTDOAConfiguration`](../nidltdoaconfiguration.md) instance if the value of this property is `true`.
 

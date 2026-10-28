@@ -25,11 +25,11 @@ class UnitSpeed
 @interface NSUnitSpeed : NSDimension
 ```
 
-#### Overview
+## Overview
 
 You typically use instances of [`UnitSpeed`](./unitspeed.md) to represent specific quantities of speed using the [`NSMeasurement`](./nsmeasurement.md) class.
 
-##### Speed
+### Speed
 
 Speed is the magnitude of velocity, or the rate of change of position. Speed can be expressed by SI derived units in terms of meters per second (m/s), and is also commonly expressed in terms of kilometers per hour (km/h) and miles per hour (mph).
 

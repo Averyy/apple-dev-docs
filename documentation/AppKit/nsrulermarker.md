@@ -19,7 +19,7 @@ class NSRulerMarker
 @interface NSRulerMarker : NSObject
 ```
 
-#### Overview
+## Overview
 
 An example of a marker is the representation of a margin or tab setting, or the edges of a graphic on the page.
 

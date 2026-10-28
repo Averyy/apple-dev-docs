@@ -21,7 +21,7 @@ class NSOpenGLContext
 @interface NSOpenGLContext : NSObject
 ```
 
-#### Overview
+## Overview
 
 An OpenGL context is created using an [`NSOpenGLPixelFormat`](./nsopenglpixelformat.md)object that specifies the context’s buffer types and other attributes. A context can be full-screen, offscreen, or associated with an [`NSView`](./nsview.md) object. A context draws into its *drawable object*, which is the frame buffer that is the target of OpenGL drawing operations.
 

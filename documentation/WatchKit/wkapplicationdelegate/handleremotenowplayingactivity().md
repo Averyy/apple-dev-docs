@@ -19,7 +19,7 @@ optional func handleRemoteNowPlayingActivity()
 - (void) handleRemoteNowPlayingActivity;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to update your user interface and display information about the iOS app’s content.
 

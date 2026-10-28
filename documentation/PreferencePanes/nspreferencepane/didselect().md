@@ -20,7 +20,7 @@ func didSelect()
 - (void) didSelect;
 ```
 
-#### Discussion
+## Discussion
 
 Default implementation does nothing. Override this method to perform actions right after the main view has been placed into a window on the screen.
 

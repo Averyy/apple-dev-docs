@@ -20,7 +20,7 @@ var destination_type: es_destination_type_t
 es_destination_type_t destination_type;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to determine how to access the [`destination`](./destination.md) field.
 

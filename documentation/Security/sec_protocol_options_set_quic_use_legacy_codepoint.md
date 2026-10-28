@@ -10,7 +10,7 @@
 void sec_protocol_options_set_quic_use_legacy_codepoint(sec_protocol_options_t options, bool quic_use_legacy_codepoint);
 ```
 
-#### Discussion
+## Discussion
 
 Set QUIC to use the legacy codepoint. Defaults to true.
 

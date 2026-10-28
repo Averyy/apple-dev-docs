@@ -21,7 +21,7 @@ The subscription options to merchandise within a section.
 var options: [SubscriptionStoreControlStyleConfiguration.Option]
 ```
 
-#### Discussion
+## Discussion
 
 This property represents the main content of a section. The view your style creates needs to provide a control to subscribe to each option in the array.
 

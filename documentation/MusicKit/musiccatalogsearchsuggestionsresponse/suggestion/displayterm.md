@@ -21,7 +21,7 @@ A term to display to the user to select from.
 let displayTerm: String
 ```
 
-#### Discussion
+## Discussion
 
 Use the [`searchTerm`](./searchterm.md) value for the actual search.
 

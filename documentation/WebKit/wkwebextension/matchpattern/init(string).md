@@ -23,7 +23,7 @@ init(string: String) throws
 - (instancetype) initWithString:(NSString *) string error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A pattern object, or `nil` if the pattern string is invalid and an error will be set.
 

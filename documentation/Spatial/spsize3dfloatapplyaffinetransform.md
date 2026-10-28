@@ -19,11 +19,11 @@
 static SPSize3DFloat SPSize3DFloatApplyAffineTransform(SPSize3DFloat size, SPAffineTransform3DFloat transform);
 ```
 
-#### Return Value
+## Return Value
 
 The transformed size.
 
-#### Discussion
+## Discussion
 
 Returns a size that’s transformed by the specified affine transform.
 

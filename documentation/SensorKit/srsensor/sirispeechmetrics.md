@@ -21,7 +21,7 @@ static let siriSpeechMetrics: SRSensor
 extern SRSensor const SRSensorSiriSpeechMetrics;
 ```
 
-#### Discussion
+## Discussion
 
 The [`sample`](../srfetchresult/sample.md) type for this sensor is [`SRSpeechMetrics`](../srspeechmetrics.md).
 

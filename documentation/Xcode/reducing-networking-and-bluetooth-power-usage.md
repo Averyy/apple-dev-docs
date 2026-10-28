@@ -5,17 +5,17 @@
 
 Schedule requests strategically and minimize background network activity to decrease your app’s energy use.
 
-#### Overview
+## Overview
 
 Decrease the power your app consumes in communication-related tasks by choosing the correct networking technology, batching connections, and waiting for appropriate networking conditions before making requests.
 
-##### Choose an appropriate networking framework
+### Choose an appropriate networking framework
 
 Your choice of networking framework directly impacts your app’s energy consumption. Use [`URLSession`](../Foundation/urlsession.md) to send HTTP requests, because it includes built-in power optimizations like connection pooling and intelligent scheduling. For lower-level networking access, use the [Network](../Network/Network.md) framework, which provides energy-efficient protocols and gives you control over connection timing.
 
 Both `URLSession` and the Network framework take advantage of system-level power optimizations.
 
-##### Schedule requests efficiently
+### Schedule requests efficiently
 
 Minimize energy consumption by being strategic about when and how your app accesses the network. Use a single [`URLSession`](../Foundation/urlsession.md) instance (rather than multiple instances) so you can re-use connections wherever possible.
 
@@ -25,7 +25,7 @@ Manage expensive network requests through [`URLSession`](../Foundation/urlsessio
 
 To prevent network tasks from using an expensive network, set [`allowsExpensiveNetworkAccess`](../Foundation/urlsessionconfiguration/allowsexpensivenetworkaccess.md) to `false`. Postpone nonessential tasks until a nonexpensive network, such as Wi-Fi, becomes available. Limit your app’s use of constrained network access by setting [`allowsConstrainedNetworkAccess`](../Foundation/urlsessionconfiguration/allowsconstrainednetworkaccess.md) to `false` for discretionary requests, and defer these tasks until a nonconstrained interface becomes available.
 
-##### Schedule network requests in the background
+### Schedule network requests in the background
 
 Use [`background(withIdentifier:)`](../Foundation/urlsessionconfiguration/background%28withidentifier%29.md) to configure a [`URLSessionDownloadTask`](../Foundation/urlsessiondownloadtask.md) to run in the background. The system schedules background download tasks when energy conditions are optional. Set [`isDiscretionary`](../Foundation/urlsessionconfiguration/isdiscretionary.md) to `true` to tell the system to use intelligent scheduling, which defers the download until the device is charging or connected to Wi-Fi.
 
@@ -33,7 +33,7 @@ The system automatically coalesces background downloads from multiple apps, keep
 
 For more information, see [Downloading files in the background](../Foundation/downloading-files-in-the-background.md).
 
-##### Refresh app state in the background
+### Refresh app state in the background
 
 Use [`BGAppRefreshTask`](../BackgroundTasks/bgapprefreshtask.md) strategically to keep your app’s state updated, while minimizing unnecessary network activity. Schedule background refresh tasks only when essential data updates are needed, and always check network conditions before initiating requests.
 
@@ -43,7 +43,7 @@ Call [`setTaskCompleted(success:)`](../BackgroundTasks/bgtask/settaskcompleted%2
 
 If your app uses too many resources in the background, the system might stop it, which increases your app’s energy use because the system needs to launch your app instead of bringing it to the foreground the next time someone tries to use it.
 
-##### Minimize your app’s Bluetooth use
+### Minimize your app’s Bluetooth use
 
 Keep connections to Bluetooth accessories open only when your app is communicating with the accessory. Discover and configure accessories using [AccessorySetupKit](../AccessorySetupKit/AccessorySetupKit.md), which efficiently maintains the Bluetooth connection for you.
 

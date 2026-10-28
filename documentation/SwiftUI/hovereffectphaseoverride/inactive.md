@@ -15,7 +15,7 @@ Immediately transition to the inactive phase.
 static var inactive: HoverEffectPhaseOverride { get }
 ```
 
-#### Discussion
+## Discussion
 
 Applying this override causes an effect to become inactive immediately, regardless of whether the view is hovered or not. The transition will use the animations defined by the effect, but will ignore any delays. The effect remains inactive until this override is removed.
 

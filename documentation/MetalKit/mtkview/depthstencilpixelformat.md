@@ -24,7 +24,7 @@ var depthStencilPixelFormat: MTLPixelFormat { get set }
 @property (nonatomic) MTLPixelFormat depthStencilPixelFormat;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`MTLPixelFormat.invalid`](../../Metal/mtlpixelformat/invalid.md), which means that the view doesn’t create a depth and stencil texture. If you set it to a different format, the view automatically creates those textures for you and configures them as part of any render passes that the view creates.
 

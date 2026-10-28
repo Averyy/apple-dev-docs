@@ -25,11 +25,11 @@ func adding(_ anObject: Any) -> [Any]
 - (NSArray<id> *) arrayByAddingObject:(ObjectType) anObject;
 ```
 
-#### Return Value
+## Return Value
 
 A new array that is a copy of the receiving array with `anObject` added to the end.
 
-#### Discussion
+## Discussion
 
 If `anObject` is `nil`, an `NSInvalidArgumentException` is raised.
 

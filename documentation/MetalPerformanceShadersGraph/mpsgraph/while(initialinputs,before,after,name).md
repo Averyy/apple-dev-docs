@@ -24,7 +24,7 @@ func `while`(initialInputs: [MPSGraphTensor], before: @escaping MPSGraphWhileBef
 - (NSArray<MPSGraphTensor *> *) whileWithInitialInputs:(NSArray<MPSGraphTensor *> *) initialInputs before:(MPSGraphWhileBeforeBlock) before after:(MPSGraphWhileAfterBlock) after name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor array with results returned from the conditionBlock depending on the predicate tensor.
 

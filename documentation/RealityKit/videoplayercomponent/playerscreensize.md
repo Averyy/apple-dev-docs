@@ -20,7 +20,7 @@ The screen entity size of the current video player in meters.
 var playerScreenSize: SIMD2<Float> { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property has the format `[width, height]`.
 

@@ -17,7 +17,7 @@ The metadata associated with the setting that deactivates Safari’s AutoFill fe
 static let denyAutoFill: SettingMetadata<Bool>
 ```
 
-#### Discussion
+## Discussion
 
 Use `denyAutoFill` to access the metadata for [`denyAutoFill`](./denyautofill-swift.property.md). The default value is `false`.
 

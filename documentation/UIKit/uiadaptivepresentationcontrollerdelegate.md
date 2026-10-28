@@ -24,7 +24,7 @@ protocol UIAdaptivePresentationControllerDelegate : NSObjectProtocol
 @protocol UIAdaptivePresentationControllerDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 After implementing an object that conforms to this protocol, assign that object to the [`delegate`](./uipresentationcontroller/delegate.md) property of an appropriate [`UIPresentationController`](./uipresentationcontroller.md) object. Your delegate can suggest a new presentation style or an entirely new view controller for displaying content. For more information about using the delegate to respond to size class changes, see [`UIPresentationController`](./uipresentationcontroller.md).
 

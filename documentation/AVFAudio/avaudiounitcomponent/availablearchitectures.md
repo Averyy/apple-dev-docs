@@ -19,7 +19,7 @@ var availableArchitectures: [NSNumber] { get }
 @property (nonatomic, readonly) NSArray<NSNumber *> * availableArchitectures;
 ```
 
-#### Discussion
+## Discussion
 
 This is an `NSArray` of `NSNumbers` where each entry corresponds to one of the constants in Mach-O Architecture in [`Bundle`](../../Foundation/bundle.md).
 

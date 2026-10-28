@@ -9,7 +9,7 @@ Create a Game Center leaderboard set.
 **Availability**:
 - App Store Connect API 3.6+
 
-#### Overview
+## Overview
 
 - 201:
 - 400:
@@ -19,7 +19,7 @@ Create a Game Center leaderboard set.
 - 422:
 - 429:
 
-##### Discussion
+### Discussion
 
 Create a leaderboard set with a relationship to one of the following:
 

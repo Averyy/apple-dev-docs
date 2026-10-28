@@ -25,7 +25,7 @@ static var all: SCNPhysicsCollisionCategory { get }
 SCNPhysicsCollisionCategoryAll
 ```
 
-#### Discussion
+## Discussion
 
 With this collision mask, a physics body can collide with all other physics bodies.
 

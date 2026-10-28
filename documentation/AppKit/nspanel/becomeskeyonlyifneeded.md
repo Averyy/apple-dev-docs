@@ -19,7 +19,7 @@ var becomesKeyOnlyIfNeeded: Bool { get set }
 @property BOOL becomesKeyOnlyIfNeeded;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) when the panel becomes the key window only when keyboard input is required; the value is [`false`](../../Swift/false.md) when the panel becomes key when it’s clicked. The default value is [`false`](../../Swift/false.md).
 

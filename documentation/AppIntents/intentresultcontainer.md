@@ -21,7 +21,7 @@ An object that represents the output of a completed intent.
 struct IntentResultContainer<Value, OpensAppIntent, Snippet, Dialog> where Value : _IntentValue, OpensAppIntent : AppIntent
 ```
 
-#### Overview
+## Overview
 
 Use the `IntentResult.result()` family of functions to create instances
 

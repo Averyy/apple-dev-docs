@@ -21,7 +21,7 @@ Truncates the elements of a double-precision vector to fractions.
 extern void vDSP_vfracD(const double *__A, vDSP_Stride __IA, double *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This function is the same as [`vDSP_vfrac`](./vdsp_vfrac.md), except for the types of vectors `A` and C.
 

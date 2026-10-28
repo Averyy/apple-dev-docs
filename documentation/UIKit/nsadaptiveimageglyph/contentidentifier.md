@@ -24,7 +24,7 @@ var contentIdentifier: String { get }
 @property (readonly) NSString * contentIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to create a persistent reference to this specific image in your code. The image data contains this content identifier, so the value persists between instantiations.
 

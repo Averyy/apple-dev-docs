@@ -22,7 +22,7 @@ func reloadAllComponents()
 - (void) reloadAllComponents;
 ```
 
-#### Discussion
+## Discussion
 
 Calling this method causes the picker view to query the delegate for new data for all components.
 

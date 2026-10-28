@@ -21,7 +21,7 @@ An identifier that identifies the volume the file system object is on.
 var volumeIdentifier: (any NSCopying & NSSecureCoding & NSObjectProtocol)? { get }
 ```
 
-#### Discussion
+## Discussion
 
 Other objects on the same volume will have the same volume identifier and can be compared using for equality using `isEqual`. This identifier is not persistent across system restarts.
 

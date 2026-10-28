@@ -19,7 +19,7 @@ class let sessionDidBecomeActiveNotification: NSNotification.Name
 extern NSNotificationName NSWorkspaceSessionDidBecomeActiveNotification;
 ```
 
-#### Discussion
+## Discussion
 
 This notification allows an app to re-enable some processing, such as when a switched-out session switches back in.
 

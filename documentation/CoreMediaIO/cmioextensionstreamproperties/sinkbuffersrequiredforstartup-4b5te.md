@@ -16,7 +16,7 @@ The number of buffers the stream requires for startup.
 @property (atomic, strong, nullable) NSNumber * sinkBuffersRequiredForStartup;
 ```
 
-#### Discussion
+## Discussion
 
 This property translates to the [`kCMIOStreamPropertyOutputBuffersRequiredForStartup`](../kcmiostreampropertyoutputbuffersrequiredforstartup.md) property.
 

@@ -20,7 +20,7 @@ The custom user agent string.
 final var customUserAgent: String? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify a custom user agent string for the webpage.
 

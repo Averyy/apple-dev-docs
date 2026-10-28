@@ -24,7 +24,7 @@ var alignmentMode: CATextLayerAlignmentMode { get set }
 @property (copy) CATextLayerAlignmentMode alignmentMode;
 ```
 
-#### Discussion
+## Discussion
 
 The possible values are described in [Horizontal alignment modes](../horizontal-alignment-modes.md). Defaults to [`natural`](../catextlayeralignmentmode/natural.md).
 

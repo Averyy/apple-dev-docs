@@ -17,7 +17,7 @@ Bridged C++ iterator that allows to traverse the elements of a sequence using a 
 protocol UnsafeCxxInputIterator : Equatable
 ```
 
-#### Overview
+## Overview
 
 Mostly useful for conforming a type to the `CxxSequence` protocol. Do not directly use this protocol in Swift.
 

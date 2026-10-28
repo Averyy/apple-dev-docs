@@ -25,7 +25,7 @@ static let playUsingSceneTimeBase: SCNSceneSource.AnimationImportPolicy
 extern SCNSceneSourceAnimationImportPolicy const SCNSceneSourceAnimationImportPolicyPlayUsingSceneTimeBase;
 ```
 
-#### Discussion
+## Discussion
 
 Using this policy is equivalent to manually loading each animation, setting its [`usesSceneTimeBase`](../../../QuartzCore/caanimation/usesscenetimebase.md) property to [`true`](../../../Swift/true.md), and adding it to the appropriate element of the scene. Use this policy when you want to directly control (or let the user directly control) the progress of animations.
 

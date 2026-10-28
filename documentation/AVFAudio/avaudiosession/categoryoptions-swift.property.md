@@ -24,7 +24,7 @@ var categoryOptions: AVAudioSession.CategoryOptions { get }
 @property (readonly) AVAudioSessionCategoryOptions categoryOptions;
 ```
 
-#### Discussion
+## Discussion
 
 You use category options to tailor the behavior of the active audio session category. See [`AVAudioSession.CategoryOptions`](./categoryoptions-swift.struct.md) for the supported values.
 

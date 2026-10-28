@@ -21,7 +21,7 @@ A projection of the binding value that returns a binding.
 var projectedValue: Binding<Value> { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use the projected value to pass a binding value down a view hierarchy. To get the `projectedValue`, prefix the property variable with `$`. For example, in the following code example `PlayerView` projects a binding of the state property `isPlaying` to the `PlayButton` view using `$isPlaying`.
 

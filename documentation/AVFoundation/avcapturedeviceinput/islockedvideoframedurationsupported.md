@@ -23,7 +23,7 @@ var isLockedVideoFrameDurationSupported: Bool { get }
 @property (nonatomic, readonly, getter=isLockedVideoFrameDurationSupported) BOOL lockedVideoFrameDurationSupported;
 ```
 
-#### Discussion
+## Discussion
 
 See [`activeLockedVideoFrameDuration`](./activelockedvideoframeduration.md) for more information on video frame duration locking.
 

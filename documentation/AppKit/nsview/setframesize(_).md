@@ -19,7 +19,7 @@ func setFrameSize(_ newSize: NSSize)
 - (void) setFrameSize:(NSSize) newSize;
 ```
 
-#### Discussion
+## Discussion
 
 Changing the frame does not mark the view as needing to be displayed. Set the [`needsDisplay`](./needsdisplay.md) property to [`true`](../../Swift/true.md) when you want the view to be redisplayed.
 

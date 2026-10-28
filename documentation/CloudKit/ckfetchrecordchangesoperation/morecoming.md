@@ -25,7 +25,7 @@ var moreComing: Bool { get }
 @property (nonatomic, assign, readonly) BOOL moreComing;
 ```
 
-#### Discussion
+## Discussion
 
 If the server is unable to deliver all of the changed results with this operation object, it sets this property to [`true`](../../Swift/true.md) before executing the block in the [`fetchRecordChangesCompletionBlock`](./fetchrecordchangescompletionblock.md) property. To fetch the remaining changes, create a new [`CKFetchRecordChangesOperation`](../ckfetchrecordchangesoperation.md) object using the change token that the server returns.
 

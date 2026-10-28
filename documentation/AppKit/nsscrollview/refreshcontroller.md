@@ -19,7 +19,7 @@ var refreshController: NSRefreshController? { get set }
 @property (strong, nullable) NSRefreshController * refreshController;
 ```
 
-#### Discussion
+## Discussion
 
 Setting this property adds the refresh controller to the scroll view, enabling pull-to-refresh functionality. Set to nil to remove it.
 

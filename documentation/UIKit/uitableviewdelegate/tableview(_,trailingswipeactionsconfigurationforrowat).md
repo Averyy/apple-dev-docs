@@ -22,11 +22,11 @@ optional func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurat
 - (UISwipeActionsConfiguration *) tableView:(UITableView *) tableView trailingSwipeActionsConfigurationForRowAtIndexPath:(NSIndexPath *) indexPath;
 ```
 
-#### Return Value
+## Return Value
 
 The swipe actions to display next to the trailing edge of the row. Return `nil` if you want the table to display the default set of actions.
 
-#### Discussion
+## Discussion
 
 Use this method to return a set of actions to display when the user swipes the row. The actions you return are displayed on the trailing edge of the row. For example, in a left-to-right language environment, they are displayed on the right side of the row when the user swipes from right to left.
 

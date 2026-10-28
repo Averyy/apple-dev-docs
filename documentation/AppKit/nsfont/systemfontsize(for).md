@@ -19,11 +19,11 @@ class func systemFontSize(for controlSize: NSControl.ControlSize) -> CGFloat
 + (CGFloat) systemFontSizeForControlSize:(NSControlSize) controlSize;
 ```
 
-#### Return Value
+## Return Value
 
 The font size in points for the specified control size.
 
-#### Discussion
+## Discussion
 
 If `controlSize` does not correspond to a valid `NSControlSize`, returns the size of the standard system font.
 

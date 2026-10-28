@@ -27,11 +27,11 @@ init?(named name: String, in bundle: Bundle?, compatibleWith traitCollection: UI
 
 - [Configuring and displaying symbol images in your UI](../configuring-and-displaying-symbol-images-in-your-ui.md)
 
-#### Return Value
+## Return Value
 
 The image object that best matches the desired traits with the given name, or `nil` if no suitable image was found.
 
-#### Discussion
+## Discussion
 
 When searching the asset catalog, this method prefers an asset containing a symbol image over an asset with the same name containing a bitmap image. Because the system supports symbol images in iOS 13 and later, you may include both types of assets in the same asset catalog. The system automatically falls back to the bitmap image on earlier versions of iOS.
 

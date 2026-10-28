@@ -25,7 +25,7 @@ case unknown
 NSFormattingContextUnknown
 ```
 
-#### Discussion
+## Discussion
 
 This is the default formatting context.
 

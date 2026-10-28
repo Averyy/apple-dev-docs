@@ -21,7 +21,7 @@ Returns display representations by identifier.
 func displayRepresentations(for identifiers: [Self.Entity.ID]) async throws -> [Self.Entity.ID : DisplayRepresentation]
 ```
 
-#### Discussion
+## Discussion
 
 Return full representations; the system materializes only the components it needs (for example, dropping a deferred image when only text is required).
 

@@ -24,7 +24,7 @@ class UICollisionBehavior
 @interface UICollisionBehavior : UIDynamicBehavior
 ```
 
-#### Overview
+## Overview
 
 A collision behavior also specifies some characteristics of its items’ collisions, with other characteristics optionally specified by a [`UIDynamicItemBehavior`](./uidynamicitembehavior.md) object. A *dynamic item* is any iOS or custom object that conforms to the [`UIDynamicItem`](./uidynamicitem.md) protocol. The [`UIView`](./uiview.md) and [`UICollectionViewLayoutAttributes`](./uicollectionviewlayoutattributes.md) classes implement this protocol starting in iOS 7.0. You can use a custom object as a dynamic item for such purposes as reacting to rotation or position changes computed by a dynamic animator—an instance of the [`UIDynamicAnimator`](./uidynamicanimator.md) class.
 

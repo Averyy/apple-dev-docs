@@ -19,7 +19,7 @@ func CMAudioDeviceClockCreate(allocator: CFAllocator?, deviceUID: CFString?, clo
 extern OSStatus CMAudioDeviceClockCreate(CFAllocatorRef allocator, CFStringRef deviceUID, CMClockRef*clockOut);
 ```
 
-#### Discussion
+## Discussion
 
 When the associated device is completely stopped, the clock continues to advance, tracking [`CMClockGetHostTimeClock()`](./cmclockgethosttimeclock%28%29.md) until the audio device starts up again.
 

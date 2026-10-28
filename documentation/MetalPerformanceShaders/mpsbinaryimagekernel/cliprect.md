@@ -24,7 +24,7 @@ var clipRect: MTLRegion { get set }
 @property (nonatomic, readwrite) MTLRegion clipRect;
 ```
 
-#### Discussion
+## Discussion
 
 This value indicates which part of the destination to overwrite. If the clip rectangle does not lie completely within the destination image, then the intersection between the clip rectangle and destination bounds is used instead.
 

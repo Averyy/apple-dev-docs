@@ -16,7 +16,7 @@ nonisolated
 func makeBody(configuration: AccessoryBarButtonStyle.Configuration) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 The system calls this method for each [`Button`](../button.md) instance in a view hierarchy where this style is the current button style.
 

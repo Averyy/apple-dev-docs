@@ -25,7 +25,7 @@ static let elementFocusedNotification: NSNotification.Name
 extern NSNotificationName const UIAccessibilityElementFocusedNotification;
 ```
 
-#### Discussion
+## Discussion
 
 Retrieve the [`focusedElementUserInfoKey`](./focusedelementuserinfokey.md) key from the [`userInfo`](../../Foundation/nsnotification/userinfo.md) dictionary to get the identity of the focused accessibility element.
 

@@ -22,7 +22,7 @@ case cinematicExtendedEnhanced
 AVCaptureVideoStabilizationModeCinematicExtendedEnhanced
 ```
 
-#### Discussion
+## Discussion
 
 Enhanced extended cinematic has a reduced field of view compared to extended cinematic, without any noticeable increase in latency, and it yields improved stability.
 

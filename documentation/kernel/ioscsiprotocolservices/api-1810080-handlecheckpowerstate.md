@@ -12,7 +12,7 @@ virtual void HandleCheckPowerState (
  void );
 ```
 
-#### Overview
+## Overview
 
 The HandleCheckPowerState (void) method is on the serialized side of the command gate and can change member variables safely without multi-threading issues. Its main purpose is to call the superclass' HandleCheckPowerState ( UInt32 maxPowerState ) with the max power state with which the class registered.
 

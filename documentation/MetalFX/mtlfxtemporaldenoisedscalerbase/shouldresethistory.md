@@ -24,7 +24,7 @@ var shouldResetHistory: Bool { get set }
 @property (nonatomic) BOOL shouldResetHistory;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to [`true`](../../Swift/true.md) to invalidate history, for example when there is a scene cut in your game.
 

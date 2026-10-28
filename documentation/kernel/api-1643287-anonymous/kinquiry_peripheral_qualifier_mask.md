@@ -13,7 +13,7 @@
 kINQUIRY_PERIPHERAL_QUALIFIER_Mask = 0xE0
 ```
 
-#### Discussion
+## Discussion
 
 Mask to use for PERIPHERAL_DEVICE_TYPE field.
 

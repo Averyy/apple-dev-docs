@@ -23,7 +23,7 @@ func setActions(_ actions: [UIUserNotificationAction]?, for context: UIUserNotif
 - (void) setActions:(NSArray<UIUserNotificationAction *> *) actions forContext:(UIUserNotificationActionContext) context;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to set or change the actions associated with a specific context.
 

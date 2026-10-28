@@ -21,7 +21,7 @@ A function that deallocates a workgroup’s currently assigned shared memory.
 typedef void (*)(void *) os_workgroup_working_arena_destructor_t;
 ```
 
-#### Discussion
+## Discussion
 
 Define a custom function of this type to clean up or deallocate the shared memory you assign to a workgroup. If you call the [`os_workgroup_set_working_arena`](./os_workgroup_set_working_arena.md) function on a workgroup that already has a shared memory block, the workgroup calls this function with the current block before saving the new block to the workgroup.
 

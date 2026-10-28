@@ -25,7 +25,7 @@ func object_setClass(_ obj: Any?, _ cls: AnyClass) -> AnyClass?
 extern Classobject_setClass(id obj, Class cls);
 ```
 
-#### Return Value
+## Return Value
 
 The previous value of `object`’s class, or `Nil` if `object` is `nil`.
 

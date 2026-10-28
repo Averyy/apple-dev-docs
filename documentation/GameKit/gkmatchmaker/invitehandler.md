@@ -25,7 +25,7 @@ var inviteHandler: ((GKInvite, [Any]?) -> Void)? { get set }
 @property (nonatomic, copy, nullable) void (^inviteHandler)(GKInvite *acceptedInvite, NSArray *playerIDsToInvite);
 ```
 
-#### Discussion
+## Discussion
 
 The block takes the following parameters:
 

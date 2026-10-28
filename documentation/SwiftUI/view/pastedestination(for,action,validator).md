@@ -19,11 +19,11 @@ nonisolated
 func pasteDestination<T>(for payloadType: T.Type = T.self, action: @escaping ([T]) -> Void, validator: @escaping ([T]) -> [T] = { $0 }) -> some View where T : Transferable
 ```
 
-#### Return Value
+## Return Value
 
 A view that people can paste into using the system Paste command.
 
-#### Discussion
+## Discussion
 
 Use this modifier to paste one or more items into a view from the Clipboard when someone issues a Paste command. People issue a Paste command by choosing Edit > Paste from the app’s menu, or by using the Command-V keyboard shortcut. The system enables the Paste command for your app when the view in focus provides a paste destination.
 

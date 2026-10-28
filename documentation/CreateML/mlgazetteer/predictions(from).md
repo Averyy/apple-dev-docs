@@ -21,7 +21,7 @@ func predictions(from texts: [String]) throws -> [String]
 func predictions(from texts: MLDataColumn<String>) throws -> MLDataColumn<String>
 ```
 
-#### Return Value
+## Return Value
 
 An array of labels.
 

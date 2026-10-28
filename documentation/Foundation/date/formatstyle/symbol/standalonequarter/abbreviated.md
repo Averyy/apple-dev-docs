@@ -21,7 +21,7 @@ The abbreviated representation of a standalone quarter.
 static var abbreviated: Date.FormatStyle.Symbol.StandaloneQuarter { get }
 ```
 
-#### Discussion
+## Discussion
 
 This custom format style conveys an abbreviated representation of a standalone quarter, like `Q4` for the fourth quarter.
 

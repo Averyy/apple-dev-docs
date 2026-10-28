@@ -15,7 +15,7 @@ The mode of transportation the directions apply to.
 transportType?: TransportType;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this property to specify whether you want directions suited to a particular type of transportation. For example, you can specify if you want walking directions or driving directions.
 

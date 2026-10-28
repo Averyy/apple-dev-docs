@@ -25,7 +25,7 @@ var isCancellable: Bool { get set }
 @property (getter=isCancellable) BOOL cancellable;
 ```
 
-#### Discussion
+## Discussion
 
 By default, [`Progress`](../progress.md) objects are cancelable.
 

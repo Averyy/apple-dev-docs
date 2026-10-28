@@ -22,7 +22,7 @@ A view that merchandises a collection of Apple In-App Purchase products.
 @preconcurrency struct StoreView<Icon, PlaceholderIcon> where Icon : View, PlaceholderIcon : View
 ```
 
-#### Overview
+## Overview
 
 A `StoreView` displays a collection of Apple In-App Purchase products, including their localized names, descriptions, and prices, and displays a purchase button.
 
@@ -32,7 +32,7 @@ You can provide a view to use as an icon or image for each individual product. I
 
 If you set up promoted images for your products in App Store Connect, you can choose to display those images for your products.
 
-##### Manage the store layout
+### Manage the store layout
 
 The `StoreView` arranges products in rows. If the view has enough horizontal space available, the store adds columns. In tvOS, the view arranges the products in columns and adds rows as space permits.
 
@@ -40,7 +40,7 @@ The store view grows to fit its container, and scrolls when the container doesnâ
 
 To achieve a custom layout, you can compose [`ProductView`](./productview.md) instances with other container views instead of using the `StoreView`.
 
-##### Customize the store
+### Customize the store
 
 You can customize the store by displaying additional buttons, and applying styles.
 

@@ -19,7 +19,7 @@ class let didChangeBackingPropertiesNotification: NSNotification.Name
 extern NSNotificationName const NSWindowDidChangeBackingPropertiesNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the `NSWindow` object whose backing properties changed. This notification contains a `userInfo` dictionary that has backing scale and color space information. See [NSWindowDidChangeBackingPropertiesNotification User Info Properties](../nswindowdidchangebackingpropertiesnotification-user-info-properties.md) for the `userInfo` dictionary keys and values.
 

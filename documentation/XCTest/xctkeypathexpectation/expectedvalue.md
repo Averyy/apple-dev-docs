@@ -20,7 +20,7 @@ final var expectedValue: V? { get }
 
 Available when `T` inherits `NSObject` and `V` conforms to `Equatable`.
 
-#### Discussion
+## Discussion
 
 If the expectation doesn’t initialize with an expected value, this property returns `nil`.
 

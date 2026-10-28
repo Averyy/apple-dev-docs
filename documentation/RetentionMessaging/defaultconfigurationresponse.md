@@ -15,7 +15,7 @@ The response body that contains the default configuration information.
 object DefaultConfigurationResponse
 ```
 
-#### Discussion
+## Discussion
 
 This is the response body for the [`Get Default Message`](./get-default-message.md) endpoint.
 

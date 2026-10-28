@@ -20,7 +20,7 @@ Changed skinning data.
 let skinning: USDPlayer.DeformationData.SkinningData.Update?
 ```
 
-#### Discussion
+## Discussion
 
 `nil` if unchanged.
 

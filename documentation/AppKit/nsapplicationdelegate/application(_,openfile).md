@@ -20,11 +20,11 @@ optional func application(_ sender: NSApplication, openFile filename: String) ->
 - (BOOL) application:(NSApplication *) sender openFile:(NSString *) filename;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the file was successfully opened or [`false`](../../Swift/false.md) if it was not.
 
-#### Discussion
+## Discussion
 
 Sent directly by `theApplication` to the delegate. The method should open the file `filename`, returning [`true`](../../Swift/true.md) if the file is successfully opened, and [`false`](../../Swift/false.md) otherwise. If the user started up the application by double-clicking a file, the delegate receives the [`application(_:openFile:)`](./application%28_,openfile%29.md) message before receiving [`applicationDidFinishLaunching(_:)`](./applicationdidfinishlaunching%28_%29.md). ([`applicationWillFinishLaunching(_:)`](./applicationwillfinishlaunching%28_%29.md) is sent before [`application(_:openFile:)`](./application%28_,openfile%29.md).)
 

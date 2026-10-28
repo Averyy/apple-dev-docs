@@ -14,7 +14,7 @@
 Boolean (*TurnOnNotification)(IOFireWireLibIsochChannelRef self);
 ```
 
-#### Discussion
+## Discussion
 
 Description forthcoming
 

@@ -21,11 +21,11 @@ func configurationItems() -> [Any]!
 - (NSArray *) configurationItems;
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`SLComposeSheetConfigurationItem`](../slcomposesheetconfigurationitem.md) objects, or `nil` if no configuration items need to be displayed.
 
-#### Discussion
+## Discussion
 
 Implement this method if you need to display configuration items, such as an account picker or privacy indicator, in your compose view.
 

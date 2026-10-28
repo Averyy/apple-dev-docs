@@ -21,7 +21,7 @@ Opens a decode input archive stream.
 static func decodeStream(readingFrom stream: ArchiveByteStream, selectUsing filter: ArchiveHeader.EntryFilter? = nil, flags: ArchiveFlags = [], threadCount: Int = 0) -> ArchiveStream?
 ```
 
-#### Return Value
+## Return Value
 
 A new archive stream.
 

@@ -26,7 +26,7 @@ class func dictionary(fromTXTRecord txtData: Data) -> [String : Data]
 + (NSDictionary<NSString *,NSData *> *) dictionaryFromTXTRecordData:(NSData *) txtData;
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary representing `txtData`. The dictionary’s keys are `NSString` objects using UTF8 encoding. The values associated with all the dictionary’s keys are `NSData` objects that encapsulate strings or data. Fails an assertion if `txtData` cannot be represented as an `NSDictionary` object.
 

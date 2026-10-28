@@ -19,7 +19,7 @@ init(primaryUsage: HIDUsage? = nil, deviceUsages: [HIDUsage]? = nil, vendorID: U
 
 - [Communicating with human interface devices](../../communicatingwithhiddevices.md)
 
-#### Discussion
+## Discussion
 
 This `init` method is the only way to create matching criteria for discovering HID devices connected to the system. All parameters are optional; if none are specified, every discoverable device is matched.
 

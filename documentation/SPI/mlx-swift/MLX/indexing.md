@@ -10,7 +10,7 @@ framework: "mlx-swift/MLX"
 
 Array subscripts.
 
-#### Overview
+## Overview
 
 [`MLXArray`](./mlxarray.md) supports all the same indexing (see [Indexing](./indexing.md)) as the python `mx.array`, though in some cases they are written differently. In all cases both `MLXArray` and `mx.array` indexing strive to match [numpy indexing](https://numpy.org/doc/stable/user/basics.indexing.html).
 
@@ -56,7 +56,7 @@ These can be combined in any way with the following restrictions:
 - `.newAxis` cannot be used in a set operation, e.g. `array[.newAxis] = MLXArray(1)` is invalid
 - the number of axes given must be equal or less than the number of axes in the source array
 
-##### Set
+### Set
 
 The same operation that reads an array can also be used to update it:
 
@@ -76,7 +76,7 @@ var a = MLXArray(0 ..< 512, [8, 8, 8])
 a[1] = MLXArray(7)
 ```
 
-##### Advanced Indexing
+### Advanced Indexing
 
 [Numpy advanced indexing](https://numpy.org/doc/stable/user/basics.indexing.html#integer-array-indexing) is also usable.  The simplest form allows using an `MLXArray` as indices (see [Indexes](./indexes.md)):
 
@@ -92,9 +92,9 @@ let sorted = array[sortIndexes]
 
 More complex forms are also available if multiple arrays are passed.
 
-#### Idiomatic Expressions From Python
+## Idiomatic Expressions From Python
 
-##### Negative Indexes
+### Negative Indexes
 
 There are a number of idiomatic indexing expressions from python and numpy that are supported.  [Converting From Python](./converting-python.md) gives a table of common expressions.  This document seeks to explain some of them.
 
@@ -105,7 +105,7 @@ In python a negative index is used to mean “from end of array”.  Thus `array
 - `array[-3 ..< -1]` – iterates from the third-to-last index up to the last index.  This is equivalent to `array[-3:-1]` in python and follows the normal pattern for translating python slices to swift.  Note that parenthesis may be required in some cases like `array[(-3)...]`
 - any function that takes an axis or axes, e.g. [`repeated(_:count:axis:stream:)`](./repeated%28_,count,axis,stream%29.md)
 
-##### Slicing
+### Slicing
 
 In python a single colon (`:`) or double colon is used as a slicing operator.  In swift the equivalent would be a [RangeExpression](https://developer.apple.com/documentation/swift/rangeexpression):
 
@@ -170,7 +170,7 @@ Negative strides are allowed:
 array[.stride(by: -1)]
 ```
 
-##### None (newaxis) Operator
+### None (newaxis) Operator
 
 The [newaxis index in numpy](https://numpy.org/doc/stable/reference/constants.html#numpy.newaxis) is often written as `None` in idiomatic python code.  The swift equivalent does the same operation:
 
@@ -181,7 +181,7 @@ array[.newAxis]
 
 The [`newAxis`](./mlxarrayindex/newaxis.md) (`.newAxis`) index inserts a new size one dimension, similar to calling [`expandedDimensions(axis:stream:)`](./mlxarray/expandeddimensions%28axis,stream%29.md) with the appropriate axis.
 
-##### Ellipsis Operator
+### Ellipsis Operator
 
 The ellipsis operator is used in python to consume all available axes with full range slices. In swift this is written as [`ellipsis`](./mlxarrayindex/ellipsis.md) (`.ellipsis`):
 

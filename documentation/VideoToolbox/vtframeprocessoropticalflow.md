@@ -24,7 +24,7 @@ class VTFrameProcessorOpticalFlow
 @interface VTFrameProcessorOpticalFlow : NSObject
 ```
 
-#### Overview
+## Overview
 
 Instances retain the buffers backing them.
 

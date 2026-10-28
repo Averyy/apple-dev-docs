@@ -15,11 +15,11 @@ Creative specification embedded in report rows.
 object ReportingCreativeSpec
 ```
 
-#### Discussion
+## Discussion
 
 The `ReportingCreativeSpec` captures the locale language of a creative as recorded at report time. It’s embedded in ad and creative reporting objects where language-level segmentation is required.
 
-##### Example
+### Example
 
 ```json
 {

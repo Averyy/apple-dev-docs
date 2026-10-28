@@ -22,7 +22,7 @@ final func lostDevice(_ device: MediaOutputDevice)
 
 - [Creating a media device extension](../creating-a-media-device-extension.md)
 
-#### Discussion
+## Discussion
 
 Call this function when a previously discovered [`MediaOutputDevice`](../mediaoutputdevice.md) can no longer be found.
 

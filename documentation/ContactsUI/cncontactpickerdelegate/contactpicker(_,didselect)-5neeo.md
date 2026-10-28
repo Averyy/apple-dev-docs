@@ -22,7 +22,7 @@ optional func contactPicker(_ picker: CNContactPickerViewController, didSelect c
 - (void) contactPicker:(CNContactPickerViewController *) picker didSelectContacts:(NSArray<CNContact *> *) contacts;
 ```
 
-#### Discussion
+## Discussion
 
 This delegate method is called when the user selects more than one contact. Implementing this method configures the picker for multi-selection.
 

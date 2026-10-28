@@ -20,7 +20,7 @@ An array of languages to detect, in priority order.
 var recognitionLanguages: [Locale.Language]
 ```
 
-#### Discussion
+## Discussion
 
 The order of the languages in the array defines the order in which the system uses languages during language processing and text recognition.
 

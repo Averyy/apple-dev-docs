@@ -16,7 +16,7 @@ The content you use as an alert for a Live Activity update on your accessory.
 struct AlertMessage
 ```
 
-#### Overview
+## Overview
 
 Use the message’s [`title`](./alertmessage/title.md) and [`body`](./alertmessage/body.md) properties to create a notification-style alert on your accessory.
 

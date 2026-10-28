@@ -23,11 +23,11 @@ convenience init(size: CGSize)
 - (instancetype) initWithSize:(CGSize) size;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized image renderer.
 
-#### Discussion
+## Discussion
 
 Use this initializer to create an image renderer that will draw images of a given size. This renderer uses the [`default()`](../uigraphicsrendererformat/default%28%29.md) static method on [`UIGraphicsImageRendererContext`](../uigraphicsimagerenderercontext.md) to create its context, thereby selecting parameters that are the most appropriate for the current device.
 

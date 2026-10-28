@@ -22,7 +22,7 @@ Constructs an asynchronous stream from a given element-producing closure, with a
 init(unfolding produce: @escaping @Sendable () async -> Element?, onCancel: (@Sendable () -> Void)? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 Use this convenience initializer when you have an asynchronous function that can produce elements for the stream, and don’t want to invoke a continuation manually. This initializer “unfolds” your closure into an asynchronous stream. The created stream handles conformance to the `AsyncSequence` protocol automatically, including termination (either by cancellation or by returning `nil` from the closure to finish iteration).
 

@@ -21,7 +21,7 @@ var sections: [CPListSection] { get }
 @property (nonatomic, copy, readonly) NSArray<CPListSection *> * sections;
 ```
 
-#### Discussion
+## Discussion
 
 To add new sections to the list, to remove or reorder existing sections, or to update a section’s appearance, use the [`updateSections(_:)`](./updatesections%28_%29.md) method.
 

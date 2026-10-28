@@ -13,7 +13,7 @@ static IOBasicOutputQueue * withTarget(
  UInt32 capacity = 0);
 ```
 
-#### Return Value
+## Return Value
 
 Returns an IOBasicOutputQueue object on success, or 0 otherwise.
 

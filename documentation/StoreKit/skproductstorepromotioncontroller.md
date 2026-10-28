@@ -29,7 +29,7 @@ class SKProductStorePromotionController
 
 - [Promoting Apple In-App Purchases](./promoting-in-app-purchases.md)
 
-#### Overview
+## Overview
 
 For information about promoting Apple In-App Purchases, see [Promoting Apple In-App Purchases](./promoting-in-app-purchases.md).
 

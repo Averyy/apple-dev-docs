@@ -5,13 +5,13 @@
 
 Understand the frontmost app state, and the features it provides to your app.
 
-#### Overview
+## Overview
 
 When a watchOS app becomes inactive, such as when a person stops interacting with their watch or lowers their wrist, it enters a state called the frontmost app state. In this state, the app remains in the foreground, but with limited user interface interaction. The frontmost app is the most recently used app that hasn’t been explicitly dismissed, and the system maintains at most one frontmost app at a time.
 
 The visual presentation of inactive apps varies by device: on Apple Watch SE and Apple Watch Series 4 and earlier, the screen turns off when the app becomes inactive. On Apple Watch Series 5 and later, the system blurs the app’s user interface and displays the time over it.
 
-##### Transition to an inactive state
+### Transition to an inactive state
 
 Whether the screen is off or blurred, the app’s user interface is no longer shown, and it doesn’t receive actions from controls or gestures. However, the app is still in the foreground, and may respond to other events.
 
@@ -22,13 +22,13 @@ When a person raises their wrist, the system automatically activates and display
 - Respond immediately to the completion of a background transfer from a task or Watch Connectivity session.
 - Receive up to four background app refresh tasks per hour—similar to an app with a complication on the active watch face.
 
-##### Respond to a notification
+### Respond to a notification
 
 For example, when the frontmost app receives a notification, the system calls your notification delegate’s [`userNotificationCenter(_:willPresent:withCompletionHandler:)`](../UserNotifications/unusernotificationcenterdelegate/usernotificationcenter%28_,willpresent,withcompletionhandler%29.md) method, rather than displaying the notification alert. Your app can then respond by playing a haptic feedback or custom sound, and updating the user interface.
 
 > **Note**:  If a person explicitly closes the app by pressing the digital crown or covering the screen, the app doesn’t become the frontmost app and doesn’t remain in the inactive state, but transitions quickly to the background instead.
 
-##### Transition to the background
+### Transition to the background
 
 By default, the frontmost app remains in the foreground for two minutes before transitioning to the background and then becoming suspended. If a person dismisses the app (for example, by pressing the crown or by covering the screen), the app transitions immediately to the background, and doesn’t become the frontmost app.
 

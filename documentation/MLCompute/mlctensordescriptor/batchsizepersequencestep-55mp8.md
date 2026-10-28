@@ -19,7 +19,7 @@ The batch size for each sequence.
 @property (nonatomic, copy, readonly, nullable) NSArray<NSNumber *> * batchSizePerSequenceStep;
 ```
 
-#### Discussion
+## Discussion
 
 The framework only populates this value when [`sequenceLengths`](./sequencelengths-3ntsa.md) is valid. The length of this array is equal to the maximum sequence length in `sequenceLengths`; that’s `sequenceLengths[0]` when [`sortedSequences`](./sortedsequences.md) is `YES`.
 

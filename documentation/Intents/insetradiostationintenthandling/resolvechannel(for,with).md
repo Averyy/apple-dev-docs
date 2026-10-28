@@ -28,7 +28,7 @@ optional func resolveChannel(for intent: INSetRadioStationIntent) async -> INStr
 - (void) resolveChannelForSetRadioStation:(INSetRadioStationIntent *) intent withCompletion:(void (^)(INStringResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve the channel for the radio station. Use this method to set the radio to the station associated with the resolved channel.
 

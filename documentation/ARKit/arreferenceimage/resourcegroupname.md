@@ -20,7 +20,7 @@ var resourceGroupName: String? { get }
 @property (nonatomic, strong, readonly, nullable) NSString * resourceGroupName;
 ```
 
-#### Discussion
+## Discussion
 
 If ARKit loaded this image from an AR resource group in an asset catalog, ARKit sets the value of this property to the resource group’s name. Otherwise, the value of this property is `nil`>.
 

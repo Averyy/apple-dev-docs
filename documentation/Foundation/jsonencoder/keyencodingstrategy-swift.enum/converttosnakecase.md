@@ -21,7 +21,7 @@ A key encoding strategy that converts camel-case keys to snake-case keys.
 case convertToSnakeCase
 ```
 
-#### Discussion
+## Discussion
 
 Camel-case and snake-case are two common approaches for combining words when naming parts of an API. The Swift [API Design Guidelines](https://swift.org/documentation/api-design-guidelines/#general-conventions) recommend using camel-case names. Some JSON APIs adopt snake-case; use this strategy when you encounter such an API.
 

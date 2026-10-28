@@ -23,7 +23,7 @@ var primaryConstituentDeviceSwitchingBehavior: AVCaptureDevice.PrimaryConstituen
 @property (nonatomic, readonly) AVCapturePrimaryConstituentDeviceSwitchingBehavior primaryConstituentDeviceSwitchingBehavior;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`AVCaptureDevice.PrimaryConstituentDeviceSwitchingBehavior.auto`](./primaryconstituentdeviceswitchingbehavior-swift.enum/auto.md) for devices that support camera switching, and [`AVCaptureDevice.PrimaryConstituentDeviceSwitchingBehavior.unsupported`](./primaryconstituentdeviceswitchingbehavior-swift.enum/unsupported.md) for those that don’t.
 

@@ -22,7 +22,7 @@ var supportsMultipleItems: Bool { get set }
 @property (nonatomic, assign) BOOL supportsMultipleItems;
 ```
 
-#### Discussion
+## Discussion
 
 This property defaults to [`true`](../../Swift/true.md).
 

@@ -25,7 +25,7 @@ case inProgress
 INSearchForBillsIntentResponseCodeInProgress
 ```
 
-#### Discussion
+## Discussion
 
 Return this code if the search is running but you’re unable to return the results after a few seconds of having your handler called.
 

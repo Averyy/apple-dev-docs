@@ -15,7 +15,7 @@ An error a validator emits when a value isn’t JSON.
 interface ValueNotJsonError
 ```
 
-#### Overview
+## Overview
 
 Extends `ValueNotConvertibleToTypeError`.
 

@@ -22,7 +22,7 @@ final class CLKComplicationTemplateGraphicExtraLargeCircularView<Content> where 
 - [Adding text to a complication](./adding-text-to-a-complication.md)
 - [Building complications with SwiftUI](./building-complications-with-swiftui.md)
 
-#### Overview
+## Overview
 
 This template belongs to the [`CLKComplicationFamily.graphicExtraLarge`](./clkcomplicationfamily/graphicextralarge.md) family. [Figure 1](./clkcomplicationtemplategraphicextralargecircularview.md#3667292) shows the layout of the complication and where it appears on the clock face.
 

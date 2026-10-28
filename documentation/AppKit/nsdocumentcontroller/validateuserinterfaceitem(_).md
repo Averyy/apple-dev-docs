@@ -20,11 +20,11 @@ func validateUserInterfaceItem(_ item: any NSValidatedUserInterfaceItem) -> Bool
 - (BOOL) validateUserInterfaceItem:(id<NSValidatedUserInterfaceItem>) item;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if `item` should be enabled, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Subclasses can override this method to perform additional validations. Subclasses should call the underlying method on `super` in their implementation for items they don’t handle themselves.
 

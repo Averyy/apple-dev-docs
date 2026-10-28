@@ -25,7 +25,7 @@ var numberOfCaptureGroups: Int { get }
 @property (readonly) NSUInteger numberOfCaptureGroups;
 ```
 
-#### Discussion
+## Discussion
 
 A capture group consists of each possible match within a regular expression. Each capture group can then be used in a replacement template to insert that value into a replacement string.
 

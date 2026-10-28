@@ -21,7 +21,7 @@ A list of very-shortly-named weekdays in this calendar, localized to the Calenda
 var veryShortWeekdaySymbols: [String] { get }
 ```
 
-#### Discussion
+## Discussion
 
 For example, for English in the Gregorian calendar, returns `["S", "M", "T", "W", "T", "F", "S"]`.
 

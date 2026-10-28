@@ -25,7 +25,7 @@ func protocol_addMethodDescription(_ proto: Protocol, _ name: Selector, _ types:
 extern void protocol_addMethodDescription(Protocol *proto, SEL name, const char *types, BOOL isRequiredMethod, BOOL isInstanceMethod);
 ```
 
-#### Discussion
+## Discussion
 
 To add a method to a protocol using this function, the protocol must be under construction. That is, you must add any methods to `proto` before you register it with the Objective-C runtime (via the [`objc_registerProtocol(_:)`](./objc_registerprotocol%28_%29.md) function).
 

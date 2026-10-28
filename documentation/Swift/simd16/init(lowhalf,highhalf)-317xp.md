@@ -23,7 +23,7 @@ init(lowHalf: SIMD8<Float>, highHalf: SIMD8<Float>)
 
 Available when `Scalar` is `Float`.
 
-#### Discussion
+## Discussion
 
 Equivalent to:
 

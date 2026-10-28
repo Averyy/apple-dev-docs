@@ -25,11 +25,11 @@ class var main: Bundle { get }
 @property (class, strong, readonly) NSBundle * mainBundle;
 ```
 
-#### Return Value
+## Return Value
 
 The `NSBundle` object corresponding to the bundle directory that contains the current executable. This method may return a valid bundle object even for unbundled apps. It may also return `nil` if the bundle object could not be created, so always check the return value.
 
-#### Discussion
+## Discussion
 
 The main bundle lets you access the resources in the same directory as the currently running executable. For a running app or code running in a framework, the main bundle offers access to the app’s bundle directory.
 

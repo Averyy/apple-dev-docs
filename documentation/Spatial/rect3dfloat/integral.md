@@ -23,7 +23,7 @@ var integral: Rect3DFloat { get }
 static SPRect3DFloat SPRect3DFloatIntegral(SPRect3DFloat rect);
 ```
 
-#### Discussion
+## Discussion
 
 Returns the smallest rectangle with integer coordinates that contains the source rectangle.
 

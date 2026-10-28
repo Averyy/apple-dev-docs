@@ -14,7 +14,7 @@
 kIOHIDManagerOptionNone = 0x0
 ```
 
-#### Discussion
+## Discussion
 
 For those times when supplying 0 just isn't explicit enough.
 

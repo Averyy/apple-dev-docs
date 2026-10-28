@@ -25,7 +25,7 @@ static let measurementSystem: CFLocaleKey!
 extern CFLocaleKey const kCFLocaleMeasurementSystem;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is a CFString object, for example “Metric” or “U.S.”.
 

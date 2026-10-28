@@ -21,7 +21,7 @@ Modifies the date interval format style to use the specified time zone format.
 func timeZone(_ format: Date.IntervalFormatStyle.Symbol.TimeZone = .genericName(.short)) -> Date.IntervalFormatStyle
 ```
 
-#### Return Value
+## Return Value
 
 A date interval format style with the provided time zone format.
 

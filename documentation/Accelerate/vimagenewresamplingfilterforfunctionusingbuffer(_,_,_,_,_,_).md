@@ -25,11 +25,11 @@ func vImageNewResamplingFilterForFunctionUsingBuffer(_ filter: ResamplingFilter,
 vImage_Error vImageNewResamplingFilterForFunctionUsingBuffer(ResamplingFilter filter, float scale, void (*)(const float *, float *, unsigned long, void *)kernelFunc, float kernelWidth, void *userData, vImage_Flags flags);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes that [Data Types and Constants](./data-types-and-constants.md) describes.
 
-#### Discussion
+## Discussion
 
 This function creates a reusable resampling filter object  that you can pass to a shear function. Before calling this function, you must allocate a buffer to contain the resampling filter object returned by this function. You can get the necessary size by calling the function [`vImageGetResamplingFilterSize(_:_:_:_:)`](./vimagegetresamplingfiltersize%28_,_,_,_%29.md). When you no longer need this object, you’re responsible for deallocating its memory. Don’t use the function [`vImageDestroyResamplingFilter(_:)`](./vimagedestroyresamplingfilter%28_%29.md) to deallocate custom resampling filter objects; it’s not designed to deallocate them.
 

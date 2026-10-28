@@ -15,9 +15,9 @@ The status item that lists connection groups with member connection references t
 object StatusScreenSharingConnectionGroupUnresolvedConnections
 ```
 
-#### Discussion
+## Discussion
 
-##### Status item availability
+### Status item availability
 
 |  |  |
 | --- | --- |
@@ -28,7 +28,7 @@ object StatusScreenSharingConnectionGroupUnresolvedConnections
 | Allowed in system scope | macOS |
 | Allowed in user scope | macOS |
 
-##### Status item example
+### Status item example
 
 **New or updated connection group**:
 

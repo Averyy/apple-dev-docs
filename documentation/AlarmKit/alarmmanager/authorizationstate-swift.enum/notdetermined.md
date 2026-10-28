@@ -17,7 +17,7 @@ The client hasn’t requested authorization from a person.
 case notDetermined
 ```
 
-#### Discussion
+## Discussion
 
 If you attempt to schedule an alarm when the authorization system is in this state, the system prompts the person to allow or deny the alarm.
 

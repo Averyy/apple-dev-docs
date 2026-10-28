@@ -22,7 +22,7 @@ class let touchBarSkipToStartTemplateName: String
 extern NSImageName const NSImageNameTouchBarSkipToStartTemplate;
 ```
 
-#### Discussion
+## Discussion
 
 ![Template image for skip to start](https://developer.apple.com/tutorials/images/com.apple.appkit/media-2825128@2x.png)
 

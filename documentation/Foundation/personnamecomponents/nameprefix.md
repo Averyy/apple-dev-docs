@@ -21,7 +21,7 @@ The portion of a name’s full form of address that precedes the name itself.
 var namePrefix: String? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Some examples of name prefixes include Dr., Mr., and Ms.
 

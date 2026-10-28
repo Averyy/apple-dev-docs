@@ -24,7 +24,7 @@ class MKTileOverlayRenderer
 @interface MKTileOverlayRenderer : MKOverlayRenderer
 ```
 
-#### Overview
+## Overview
 
 You create instances of this class when tile overlays become visible on the map view. A renderer works closely with its associated tile overlay object to coordinate the loading and drawing of tiles at appropriate times.
 

@@ -5,7 +5,7 @@
 
 Specifiers for sample rate conversion quality, used for the [`kAudioConverterSampleRateConverterQuality`](./kaudioconvertersamplerateconverterquality.md) property.
 
-#### Overview
+## Overview
 
 Higher-quality sample-rate conversions entail higher processing cost.
 

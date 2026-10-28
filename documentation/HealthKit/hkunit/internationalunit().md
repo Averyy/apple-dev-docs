@@ -24,7 +24,7 @@ class func internationalUnit() -> Self
 + (instancetype) internationalUnit;
 ```
 
-#### Return Value
+## Return Value
 
 A HealthKit unit for measuring amounts in IUs.
 

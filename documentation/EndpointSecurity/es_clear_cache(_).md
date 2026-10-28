@@ -19,7 +19,7 @@ func es_clear_cache(_ client: OpaquePointer) -> es_clear_cache_result_t
 extern es_clear_cache_result_t es_clear_cache(es_client_t *client);
 ```
 
-#### Discussion
+## Discussion
 
 Endpoint Security shares caches across all clients, so you can provide any valid client as the parameter to this function.
 

@@ -24,7 +24,7 @@ var alpha: CGFloat { get set }
 @property (atomic) CGFloat alpha;
 ```
 
-#### Discussion
+## Discussion
 
 The value in this property can be in the range `0.0` to `1.0`, where `0.0` represents total transparency and `1.0` represents total opacity. The default value of this property is `1.0`.
 

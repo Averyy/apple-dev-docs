@@ -22,7 +22,7 @@ weak var delegate: (any UIPopoverPresentationControllerDelegate)? { get set }
 @property (nonatomic, weak, nullable) id<UIPopoverPresentationControllerDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 At various points during the presentation process, the popover presentation controller calls methods of its delegate to give that object a chance to respond. You might use a delegate to further configure the popover presentation controller or to respond to user-initiated actions relating to the popover. For example, immediately prior to displaying the popover, the presentation controller calls the [`prepareForPopoverPresentation(_:)`](../uipopoverpresentationcontrollerdelegate/prepareforpopoverpresentation%28_%29.md) method of the delegate object.
 

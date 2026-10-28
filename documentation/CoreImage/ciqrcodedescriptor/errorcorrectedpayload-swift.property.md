@@ -24,7 +24,7 @@ var errorCorrectedPayload: Data { get }
 @property (readonly) NSData * errorCorrectedPayload;
 ```
 
-#### Discussion
+## Discussion
 
 QR Codes are formally specified in ISO/IEC 18004:2006(E). Section 6.4.10 “Bitstream to codeword conversion” specifies the set of 8-bit codewords in the symbol immediately prior to splitting the message into blocks and applying error correction.
 

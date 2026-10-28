@@ -23,11 +23,11 @@ static func time(pattern: Duration.TimeFormatStyle.Pattern) -> Self
 
 Available when `Self` is `Duration.TimeFormatStyle`.
 
-#### Return Value
+## Return Value
 
 A duration time format style customized with the specified pattern.
 
-#### Discussion
+## Discussion
 
 Use the dot-notation form of this type method when the call point allows the use of [`Duration.TimeFormatStyle`](../../Swift/duration/timeformatstyle.md). You typically do this when calling the [`formatted(_:)`](../../Swift/duration/formatted%28_%29.md) method of [`Duration`](../../Swift/duration.md).
 

@@ -24,11 +24,11 @@ func applying(_ filter: CIFilter) -> Self
 - (instancetype) textureByApplyingCIFilter:(CIFilter *) filter;
 ```
 
-#### Return Value
+## Return Value
 
 A new texture object.
 
-#### Discussion
+## Discussion
 
 The image data is copied before control is returned to your game.
 

@@ -20,7 +20,7 @@ case worldTrackingUnstable
 ARGeoTrackingStateReasonWorldTrackingUnstable
 ```
 
-#### Discussion
+## Discussion
 
 This reason indicates that ARKit’s local-space tracking is functioning at a limited capacity. To retrieve more information about the cause, an app needs to refer to the camera’s [`trackingState`](../../arcamera/trackingstate-6i3pt.md). For the possible causes of this state, see [`ARTrackingState`](../../artrackingstate.md) and [`ARTrackingStateReason`](../../artrackingstatereason.md).
 

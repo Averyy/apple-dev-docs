@@ -19,7 +19,7 @@ var showsHiddenFiles: Bool { get set }
 @property BOOL showsHiddenFiles;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the panel displays hidden files; if [`false`](../../Swift/false.md), it does not. The default value is [`false`](../../Swift/false.md).
 

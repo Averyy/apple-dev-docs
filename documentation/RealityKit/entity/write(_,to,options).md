@@ -17,11 +17,11 @@ Exports an array of entities as separate scenes within a single RealityKit file.
 ## Declaration
 
 ```swift
-nonisolated
-(nonsending) static func write(_ entities: [Entity], to url: URL, options: Entity.WriteOptions = WriteOptions()) async throws
+nonisolated(nonsending)
+static func write(_ entities: [Entity], to url: URL, options: Entity.WriteOptions = WriteOptions()) async throws
 ```
 
-#### Discussion
+## Discussion
 
 This method generates a file with a `.reality` suffix, automatically setting its compatibility with other systems based on all the entity tree contents. The entities and their children may contain components or assets that can require the resulting RealityKit file to be compatible with system versions between:
 

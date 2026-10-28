@@ -21,7 +21,7 @@ Types of accessibility notifications that an app can post.
 enum AccessibilityNotification
 ```
 
-#### Overview
+## Overview
 
 Accessibility notifications provide a unified, multiplatform way for your app to convey information to someone using an assistive app. Your app can post these types of notifications:
 

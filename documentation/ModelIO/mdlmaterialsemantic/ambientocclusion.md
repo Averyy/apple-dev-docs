@@ -24,7 +24,7 @@ case ambientOcclusion
 MDLMaterialSemanticAmbientOcclusion
 ```
 
-#### Discussion
+## Discussion
 
 Ambient occlusion (AO) describes the accessibility of a point on a surface to the surrounding radiant environment and is typically used to attenuate ambient lighting. A renderer should not use AO data should to affect direct illumination.
 

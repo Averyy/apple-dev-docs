@@ -19,7 +19,7 @@ case plain
 NSTableViewStylePlain
 ```
 
-#### Discussion
+## Discussion
 
 A plain-style table applies no additional insets or padding around its content, except for the spacing that the [`intercellSpacing`](../intercellspacing.md) property specifies.
 

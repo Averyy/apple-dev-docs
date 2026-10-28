@@ -23,7 +23,7 @@ var updateAction: UICollectionViewUpdateItem.Action { get }
 @property (nonatomic, readonly) UICollectionUpdateAction updateAction;
 ```
 
-#### Discussion
+## Discussion
 
 For a list of relevant action types, see [`UICollectionViewUpdateItem.Action`](./action.md).
 

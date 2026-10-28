@@ -23,7 +23,7 @@ func beginSheet(with pdfInfo: NSPDFInfo, modalFor docWindow: NSWindow?) async ->
 - (void) beginSheetWithPDFInfo:(NSPDFInfo *) pdfInfo modalForWindow:(NSWindow *) docWindow completionHandler:(void (^)(NSInteger )) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 This method presents a slightly different PDF panel depending on whether the [`requestsParentDirectory`](./options-swift.struct/requestsparentdirectory.md) constant is set. If the user dismisses the panel without canceling it, this method updates the [`NSPDFInfo`](../nspdfinfo.md) object with any changes the user makes.
 

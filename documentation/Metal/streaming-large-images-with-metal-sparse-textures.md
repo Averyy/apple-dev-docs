@@ -13,7 +13,7 @@ Limit texture memory usage for large textures by loading or unloading image deta
 - macOS 14.0+
 - Xcode 26.3+
 
-#### Overview
+## Overview
 
 This sample demonstrates sparse texture streaming by rendering a ground plane that samples from a 16K resolution texture. The renderer uses [Metal sparse textures](./managing-sparse-texture-memory.md) to subdivide the image into regions, or *tiles*, and chooses the tiles to keep in memory. The GPU updates an access counter buffer, and the app determines the tiles it needs to load or discard. The sample shows a heat map of the available MIP levels on the lower left of the screen, where *white* represents level 0, *yellow* represents levels 1 to 3, *red* represents levels 4 and 5, and *purple* represents the remaining MIP levels. The app contains a checkbox that toggles the camera animation. When the animation runs, the app updates the sparse texture as the camera moves through the scene. Lastly, this sample demonstrates asynchronous updates using [Dispatch](../Dispatch/Dispatch.md), or *Grand Central Dispatch (GCD)*, to update the sparse texture.
 
@@ -25,7 +25,7 @@ Sparse textures are special textures that manage the residency of both tiles and
 
 The app follows a straightforward process to manage a sparse texture. First, it checks for sparse texture support. Next, it initializes the sparse texture by loading a texture of Apple Park, and loading and mapping the mipmap tails. Then, the app renders a scene that uses the sparse texture. After rendering, the app updates the texture in parallel with the main render pass. It retrieves the access counters, processes them, and discards tiles that aren’t needed anymore. It also maps and unmaps tiles, blits nonresident tiles, and updates the residency buffer when the blitting work finishes. To *blit* means to copy a rectangle of pixels from a source image buffer to a destination memory buffer.
 
-##### Configure the sample code project
+### Configure the sample code project
 
 The Xcode project contains schemes for running the sample on macOS and iOS with a physical device that supports sparse textures. You can enable or disable camera movement by checking the switch button on the top-right of the app screen.
 
@@ -35,7 +35,7 @@ To run the app:
 - Target a macOS device with an M1 chip or later and macOS 12 or later.
 - Target an iOS device with an A13 chip or later and iOS 14 or later.
 
-##### Check for sparse texture support
+### Check for sparse texture support
 
 The sample checks if the [`MTLGPUFamily.apple6`](./mtlgpufamily/apple6.md) feature set is available with the [`supportsFamily(_:)`](./mtldevice/supportsfamily%28_%29.md) method. This feature set begins with the Apple A13 GPUs. Here’s the code from `AAPLViewController:viewDidLoad`:
 
@@ -47,7 +47,7 @@ if (![_mtkView.device supportsFamily:MTLGPUFamilyApple6])
 }
 ```
 
-##### Manage the sparse texture
+### Manage the sparse texture
 
 A sparse texture divides large textures into tiles that the application treats as smaller textures with their own MIP levels. The sparse texture contains a residency buffer that tracks the MIP levels that are currently loaded. The following figure shows how the above texture would be subdivided into separate tile regions. The mipmap tail is considered its own tile, and the app ensures that all the tails are resident.
 
@@ -61,7 +61,7 @@ The `AAPLSparseTexture` class manages the sparse texture in this sample and uses
 
 During rendering, the GPU uses the access counters buffer to store a counter per tile and increments it when a shader samples from the corresponding tile region. The app can query and analyze this buffer to find tiles to map or unmap. When the heap is low on available memory, the class can replace resident tiles that the shader hasn’t recently accessed. And this is how the app uses the residency and access counters buffers to dynamically adjust the residency of the sparse texture while staying within a memory budget.
 
-##### Initialize the sparse texture
+### Initialize the sparse texture
 
 The app uses a 16K texture map of Apple Park stored in the Khronos Texture (KTX) file format. The `AAPLSparseTexture` and `AAPLStreamedTextureDataBacking` classes manage all aspects of using sparse textures. The app specifies a heap size of 16 MiB to quickly allocate memory to store tile data.
 
@@ -93,7 +93,7 @@ _sparseTextureBacking = [[AAPLStreamedTextureDataBacking alloc] initWithKTXPath:
 
 At this point, the app has initialized the sparse texture, copied the bottom mipmap tails to GPU memory, and mapped the mipmap tails resident. The app may now use the sparse texture for rendering objects.
 
-##### Render the scene
+### Render the scene
 
 The app performs ordinary rendering tasks in `drawInMTKView,` like updating animation variables and uniform buffers, creating a command buffer, and rendering the scene. The end of the following block of code shows an optional rendering pass that renders a quad in the lower-left of the screen. This quad shows a color-coded version of the residency buffer. You may disable this visualization by setting the preprocessor variable `DEBUG_SPARSE_TEXTURE` to 0.
 
@@ -135,7 +135,7 @@ dispatch_async(_dispatch_queue, ^{
 #endif
 ```
 
-##### Sample the sparse texture
+### Sample the sparse texture
 
 The following code shows how the app draws the ground plane. It sets typical render states like pipeline state object, vertex and fragment buffers, and texture state. It also sets a fragment buffer, `_sparseTexture.residencyBuffer`, that the shader utilizes to sample the texture. And finally, it sets the sparse texture using `setFragmentTexture`.
 
@@ -205,7 +205,7 @@ The following figure shows an example of how the tiles sample resident parent ti
 
 ![An illustration showing how the shader samples resident parent tiles if a requested tile isn’t resident. Levels 0, 1, and 2 are shown, along with the mipmap tail, with level 0 being the largest. Tile colors denote whether a tile is accessed and resident, accessed but not resident, nonresident, or resident.](https://developer.apple.com/tutorials/images/com.apple.metal/sparse-textures-5-tiles-sample@2x.png)
 
-##### Update the sparse texture
+### Update the sparse texture
 
 The following figure shows how the update process decides when to map or unmap tiles. For every resident tile that the shader accessed, the tile moves to the front of the least-recently used (LRU) cache, a data structure that combines a linked list and an unordered map. The `processAccessCounters` method creates map requests for the accessed nonresident tile and its nonresident parent tiles. The parent tiles need to form a chain from the bottom mipmap tail to the highest level tile. The update process checks for any dependencies and doesn’t create unmap requests for required parent tiles. And if the heap doesn’t have enough memory available, then `discardTilesFromLRU` unmaps unnecessary tiles to make room.
 
@@ -220,7 +220,7 @@ To summarize, the `AAPLSparseTexture:update:` method calls four functions to upd
 
 The remaining sections cover these methods in more detail.
 
-##### Update the access counter buffers
+### Update the access counter buffers
 
 The sparse texture class uses the [`getTextureAccessCounters(_:region:mipLevel:slice:resetCounters:countersBuffer:countersBufferOffset:)`](./mtlblitcommandencoder/gettextureaccesscounters%28_,region,miplevel,slice,resetcounters,countersbuffer,countersbufferoffset%29.md) API to copy and reset the counters for the sparse texture. It requests Metal to copy the data from each MIP level into the `_accessCountersBuffer`. The initialization step precalculated the offsets into this buffer, and the app can reference them from the `_accessCountersMipmapOffsets` array.
 
@@ -244,7 +244,7 @@ for (NSUInteger mipmap = 0; mipmap < _sparseTexture.firstMipmapInTail; ++mipmap)
 }
 ```
 
-##### Process the access counter buffers
+### Process the access counter buffers
 
 When the sparse texture class examines the access counters buffer, each entry contains the number of times the shader accessed each MIP region. A value of zero means that the tile wasn’t referenced at all in the last frame. Since there can be several frames in flight, the app ensures that tiles aren’t unmapped prematurely. To manage this, the sparse texture class uses a simple data structure `TextureTile`:
 
@@ -296,7 +296,7 @@ if (tile->framesCount <= 0)
 }
 ```
 
-##### Discard tiles from the LRU cache
+### Discard tiles from the LRU cache
 
 The app uses a heap of textures to manage the mapped tiles in the sparse texture. If there’s no memory available to map nonresident tiles, then the sparse texture class discards older tiles. It uses an LRU cache to prioritize tiles to discard. The `AAPLPointerLRUCache` class manages a `std::list` and `std::unordered_map` to track mapped tile pointers. When the manager retrieves a pointer with `AAPLPointerLRUCache::get`, it moves the tile to the front of the cache. When the manager discards a tile and the cache is full, `discardLeastRecentlyUsed` removes the last entry in the cache. The app tracks the number of tiles that need discarding and creates unmap requests in the following code:
 
@@ -315,7 +315,7 @@ for (; index < _numTilesToDiscardFromLRU; ++index)
 
 This completes the process to get the access counter buffers and create the map and unmap requests. The next step is to map and blit tiles.
 
-##### Map and blit tiles
+### Map and blit tiles
 
 The app stores a list of mapping and unmapping requests that the `mapAndBlitTiles` method encodes using a *resource state command encoder*. The `updateTileMappingMode` method converts the sparse pixel regions to tile regions and then updates the texture mapping to reflect the highest mapped MIP level.
 

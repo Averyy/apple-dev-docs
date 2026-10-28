@@ -22,7 +22,7 @@ class let touchBarAudioOutputVolumeMediumTemplateName: String
 extern NSImageName const NSImageNameTouchBarAudioOutputVolumeMediumTemplate;
 ```
 
-#### Discussion
+## Discussion
 
 ![Template image for audio output volume medium](https://developer.apple.com/tutorials/images/com.apple.appkit/media-2825108@2x.png)
 

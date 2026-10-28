@@ -27,7 +27,7 @@ var systemMinimumLayoutMargins: NSDirectionalEdgeInsets { get }
 
 - [Positioning content within layout margins](../positioning-content-within-layout-margins.md)
 
-#### Discussion
+## Discussion
 
 This property contains the minimum layout margins expected by the system for the view controller’s root view. Do not override this property. To stop considering the system’s minimum layout margins for the root view, set the [`viewRespectsSystemMinimumLayoutMargins`](./viewrespectssystemminimumlayoutmargins.md) property to [`false`](../../Swift/false.md). This property does not affect the margins associated with subviews of the root view.
 

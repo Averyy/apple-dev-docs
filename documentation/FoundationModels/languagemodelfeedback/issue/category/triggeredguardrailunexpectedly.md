@@ -20,7 +20,7 @@ An unexpected guardrail violation.
 case triggeredGuardrailUnexpectedly
 ```
 
-#### Discussion
+## Discussion
 
 An unexpected guardrail issue might be where you ask for a cake recipe, and the framework throws a guardrail violation error.
 

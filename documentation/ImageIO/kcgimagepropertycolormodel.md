@@ -25,7 +25,7 @@ let kCGImagePropertyColorModel: CFString
 extern CFStringRef const kCGImagePropertyColorModel;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is of type [`CFString`](../CoreFoundation/cfstring.md). Typically, the value corresponds to the [`kCGImagePropertyColorModelRGB`](./kcgimagepropertycolormodelrgb.md), [`kCGImagePropertyColorModelCMYK`](./kcgimagepropertycolormodelcmyk.md), [`kCGImagePropertyColorModelGray`](./kcgimagepropertycolormodelgray.md), or [`kCGImagePropertyColorModelLab`](./kcgimagepropertycolormodellab.md) constant.
 

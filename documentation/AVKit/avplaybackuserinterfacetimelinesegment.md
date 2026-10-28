@@ -21,7 +21,7 @@ class AVPlaybackUserInterfaceTimelineSegment
 @interface AVPlaybackUserInterfaceTimelineSegment : NSObject
 ```
 
-#### Overview
+## Overview
 
 Timeline segments divide media content into distinct regions, each with its own classification and behavior rules. Segments are typically used to distinguish between primary content and auxiliary content such as advertisements or bonus material, and to control whether users can seek or skip through specific portions of the timeline.
 

@@ -25,7 +25,7 @@ var interruptedPurchasesEnabled: Bool { get set }
 @property (nonatomic, assign) BOOL interruptedPurchasesEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `false`. Enabling this property causes all purchases to fail until you disable it.
 

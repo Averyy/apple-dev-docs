@@ -21,7 +21,7 @@ A Boolean that indicates whether the entity is active.
 @preconcurrency var isActive: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is `true` if the entity is anchored in a scene, and it and all of its ancestors are enabled ([`isEnabled`](./isenabled.md) is set to `true`). RealityKit doesn’t simulate or render inactive entities.
 

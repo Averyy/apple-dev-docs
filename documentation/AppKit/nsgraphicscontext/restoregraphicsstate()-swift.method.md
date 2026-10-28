@@ -19,7 +19,7 @@ func restoreGraphicsState()
 - (void) restoreGraphicsState;
 ```
 
-#### Discussion
+## Discussion
 
 This method must have been preceded with a [`saveGraphicsState()`](./savegraphicsstate%28%29-swift.method.md) message to add the graphics state to the stack. Invocations of [`saveGraphicsState()`](./savegraphicsstate%28%29-swift.method.md) and [`restoreGraphicsState()`](./restoregraphicsstate%28%29-swift.method.md) methods may be nested.
 

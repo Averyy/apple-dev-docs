@@ -20,7 +20,7 @@ A default implementation of the dependencies array.
 static var dependencies: [SystemDependency] { get }
 ```
 
-#### Discussion
+## Discussion
 
 RealityKit provides a default implementation of this property which returns an empty array. If a class that conforms to [`System`](../system.md) has no dependencies, it doesn’t need to implement this property.
 

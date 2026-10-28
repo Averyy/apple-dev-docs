@@ -21,7 +21,7 @@ Destroys a single-precision biquadratic filter setup object.
 extern void vDSP_biquad_DestroySetup(vDSP_biquad_Setup __setup);
 ```
 
-#### Discussion
+## Discussion
 
 This function frees all resources associated with a `vDSP_biquad_Setup` object previously created through a call to [`vDSP_biquad_CreateSetup`](./vdsp_biquad_createsetup.md).
 

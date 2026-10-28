@@ -25,7 +25,7 @@ class func phoneNumberCheckingResult(range: NSRange, phoneNumber: String) -> NST
 + (NSTextCheckingResult *) phoneNumberCheckingResultWithRange:(NSRange) range phoneNumber:(NSString *) phoneNumber;
 ```
 
-#### Return Value
+## Return Value
 
 Returns an `NSTextCheckingResult` with the specified [`range`](./range.md) and a [`resultType`](./resulttype.md) of [`phoneNumber`](./checkingtype/phonenumber.md).
 

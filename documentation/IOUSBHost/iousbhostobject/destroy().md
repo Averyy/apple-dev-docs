@@ -20,7 +20,7 @@ func destroy()
 - (void) destroy;
 ```
 
-#### Discussion
+## Discussion
 
 When you no longer need the [`IOUSBHostObject`](../iousbhostobject.md), call [`destroy()`](./destroy%28%29.md). This method destroys the connection with the kernel object and deregisters interest on [`io_service_t`](../../iokit/io_service_t.md). Calling [`destroy()`](./destroy%28%29.md) multiple times has no effect.
 

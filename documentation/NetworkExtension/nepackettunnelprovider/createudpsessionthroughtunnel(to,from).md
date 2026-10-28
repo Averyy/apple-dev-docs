@@ -26,7 +26,7 @@ func createUDPSessionThroughTunnel(to remoteEndpoint: NWEndpoint, from localEndp
 - (NWUDPSession *) createUDPSessionThroughTunnelToEndpoint:(NWEndpoint *) remoteEndpoint fromEndpoint:(NWHostEndpoint *) localEndpoint;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to create a UDP session to an endpoint inside the private network.
 

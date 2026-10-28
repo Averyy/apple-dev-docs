@@ -13,7 +13,7 @@ virtual IOReturn GetStringDescriptor(
  UInt16 lang=0x409);
 ```
 
-#### Overview
+## Overview
 
 Get a string descriptor as ASCII, in the specified language (default is US English)
 

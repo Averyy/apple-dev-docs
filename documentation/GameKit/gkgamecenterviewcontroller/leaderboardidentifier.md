@@ -26,7 +26,7 @@ var leaderboardIdentifier: String? { get set }
 @property (nonatomic, strong, nullable) NSString * leaderboardIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 The [`leaderboardIdentifier`](./leaderboardidentifier.md) property must either be `nil` or it must match a leaderboard identifier you defined when you created your leaderboards in App Store Connect. If `nil`, the view displays scores for the aggregate leaderboard. Default is `nil`.
 

@@ -25,7 +25,7 @@ func readToEndOfFileInBackgroundAndNotify(forModes modes: [RunLoop.Mode]?)
 - (void) readToEndOfFileInBackgroundAndNotifyForModes:(NSArray<NSString *> *) modes;
 ```
 
-#### Discussion
+## Discussion
 
 See [`readToEndOfFileInBackgroundAndNotify()`](./readtoendoffileinbackgroundandnotify%28%29.md) for details of this method’s operation. The method differs from [`readToEndOfFileInBackgroundAndNotify()`](./readtoendoffileinbackgroundandnotify%28%29.md) in that `modes` specifies the run-loop mode (or modes) in which [`NSFileHandleReadToEndOfFileCompletion`](../nsnotification/name-swift.struct/nsfilehandlereadtoendoffilecompletion.md) can be posted.
 

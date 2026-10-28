@@ -23,7 +23,7 @@ var supportsIncrementalUpdates: Bool { get }
 @property (nonatomic, readonly) BOOL supportsIncrementalUpdates;
 ```
 
-#### Discussion
+## Discussion
 
 Examine the value returned by this property to find out if the credential identity store can accept incremental updates. If incremental updates are supported, you can update the credential identity store with only the new changes since the last time it was updated. Otherwise, update the credential identity store by adding all credential identities.
 

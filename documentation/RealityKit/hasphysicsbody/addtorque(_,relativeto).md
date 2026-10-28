@@ -21,7 +21,7 @@ Applies a torque to the physics body at its center of mass.
 @preconcurrency func addTorque(_ torque: SIMD3<Float>, relativeTo referenceEntity: Entity?)
 ```
 
-#### Discussion
+## Discussion
 
 The physics simulator applies the added torque until the end of the frame interval. To continue exerting the torque after that time, add the torque again with another call to the method. Handle the [`SceneEvents.Update`](../sceneevents/update.md) event to receive an indication of when the frame interval ends. For an app that renders at 60 frames per second (fps), this event occurs about once per 16 milliseconds.
 

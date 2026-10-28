@@ -24,7 +24,7 @@ static let monospaced: UIFontDescriptor.SystemDesign
 extern UIFontDescriptorSystemDesign const UIFontDescriptorSystemDesignMonospaced;
 ```
 
-#### Discussion
+## Discussion
 
 Using this constant with [`withDesign(_:)`](../withdesign%28_%29.md) returns SF Mono.
 

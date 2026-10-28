@@ -19,11 +19,11 @@
 int (*)(const struct AudioServerPlugInHostInterface *, const struct __CFString *, const void **) CopyFromStorage;
 ```
 
-#### Return Value
+## Return Value
 
 An OSStatus indicating success or failure.
 
-#### Discussion
+## Discussion
 
 This method will fetch the data associated with the named storage key.
 

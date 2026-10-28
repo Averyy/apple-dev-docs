@@ -25,7 +25,7 @@ func execute() throws -> [ResultType]
 - (NSArray<id<NSFetchRequestResult>> *) execute:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 Calling `execute` on an [`NSFetchRequest`](../nsfetchrequest.md) will cause the [`NSFetchRequest`](../nsfetchrequest.md) to run against the managed object context ([`NSManagedObjectContext`](../nsmanagedobjectcontext.md)) that is associated with the queue on which the `execute` is called.
 

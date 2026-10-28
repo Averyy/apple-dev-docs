@@ -25,7 +25,7 @@ var updatedObjects: Set<NSManagedObject> { get }
 @property (nonatomic, strong, readonly) NSSet<__kindof NSManagedObject *> * updatedObjects;
 ```
 
-#### Discussion
+## Discussion
 
 A managed object context does not post key-value observing notifications when the return value of `updatedObjects` changes. A context does, however, post a [`NSManagedObjectContextObjectsDidChange`](../../Foundation/nsnotification/name-swift.struct/nsmanagedobjectcontextobjectsdidchange.md) notification when a change is made, and a [`NSManagedObjectContextWillSave`](../../Foundation/nsnotification/name-swift.struct/nsmanagedobjectcontextwillsave.md) notification and a [`NSManagedObjectContextDidSave`](../../Foundation/nsnotification/name-swift.struct/nsmanagedobjectcontextdidsave.md) notification before and after changes are committed respectively.
 

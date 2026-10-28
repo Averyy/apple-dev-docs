@@ -21,7 +21,7 @@ Custom format style portraying the minimum number of digits that represents the 
 static var defaultDigits: Date.FormatStyle.Symbol.Day { get }
 ```
 
-#### Discussion
+## Discussion
 
 This style produces `1` for the  first day of the month and `18` for the eighteenth. To force two-digit display in all cases, use [`twoDigits`](./twodigits.md).
 

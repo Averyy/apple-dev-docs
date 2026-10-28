@@ -19,7 +19,7 @@ func SCBondInterfaceSetOptions(_ bond: SCBondInterface, _ newOptions: CFDictiona
 Boolean SCBondInterfaceSetOptions(SCBondInterfaceRef bond, CFDictionaryRef newOptions);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if the configuration was stored; `FALSE` if an error occurred.
 

@@ -24,7 +24,7 @@ var training: Bool { get set }
 @property (nonatomic, readwrite) BOOL training;
 ```
 
-#### Discussion
+## Discussion
 
 If set to `YES` then the layer will produce training state tensor as a secondary output. Default value: `NO`.
 

@@ -17,7 +17,7 @@ Applies a bilinear transformation to the inputs.
 class Bilinear
 ```
 
-#### Overview
+## Overview
 
 Concretely:
 
@@ -37,7 +37,7 @@ W = MLXRandom.uniform(-scale ..< scale, [outputDimensions, inputDimensions2, inp
 b = MLXRandom.uniform(-scale ..< scale, [outputDimensions])
 ```
 
-##### See Also
+### See Also
 
 - [Creating Modules](./custom-layers.md)
 - [`Linear`](./linear.md)

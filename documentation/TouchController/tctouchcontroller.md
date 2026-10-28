@@ -21,7 +21,7 @@ class TCTouchController
 @interface TCTouchController : NSObject
 ```
 
-#### Overview
+## Overview
 
 The controller exposes controls through a [`GCController`](../GameController/gccontroller.md) instance, and enables seamless integration with the [Game Controller](../GameController/GameController.md) framework.
 

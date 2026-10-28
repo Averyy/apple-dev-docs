@@ -19,7 +19,7 @@ optional func customVirtioDeviceWillResume(_ device: VZCustomVirtioDevice)
 - (void) customVirtioDeviceWillResume:(VZCustomVirtioDevice *) device;
 ```
 
-#### Discussion
+## Discussion
 
 A device is in a resumed state when its corresponding [`VZVirtualMachine`](../vzvirtualmachine.md) resumes from the paused state. This happens when you call [`resume()`](../vzvirtualmachine/resume%28%29.md).
 

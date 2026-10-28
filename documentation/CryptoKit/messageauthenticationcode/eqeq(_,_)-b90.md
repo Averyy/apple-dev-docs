@@ -21,7 +21,7 @@ Returns a Boolean value indicating whether two message authentication codes are 
 static func == (lhs: Self, rhs: Self) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that’s `true` if the message authentication codes are equivalent.
 

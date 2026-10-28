@@ -36,7 +36,7 @@ class CLLocationManager
 - [Monitoring the user’s proximity to geographic regions](./monitoring-the-user-s-proximity-to-geographic-regions.md)
 - [Supporting live updates in SwiftUI and Mac Catalyst apps](./supporting-live-updates-in-swiftui-and-mac-catalyst-apps.md)
 
-#### Overview
+## Overview
 
 A [`CLLocationManager`](./cllocationmanager.md) object is the central place to manage your app’s location-related behaviors. Use a location-manager object to configure, start, and stop location services. You might use these services to:
 

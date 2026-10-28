@@ -24,7 +24,7 @@ class HMCharacteristic
 @interface HMCharacteristic : NSObject
 ```
 
-#### Overview
+## Overview
 
 An [`HMCharacteristic`](./hmcharacteristic.md) instance represents an aspect of a service that provides data, or that your app can control.
 

@@ -15,7 +15,7 @@ The structure for storing a USB device descriptor.
 struct IOUSBDeviceDescriptor;
 ```
 
-#### Overview
+## Overview
 
 For information about this descriptor type, see section 9.6.1 of the USB 3.2 specification at [http://www.usb.org](http://www.usb.org).
 

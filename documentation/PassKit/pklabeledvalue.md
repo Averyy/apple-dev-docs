@@ -24,7 +24,7 @@ class PKLabeledValue
 @interface PKLabeledValue : NSObject
 ```
 
-#### Overview
+## Overview
 
 See [`cardDetails`](./pkaddpaymentpassrequestconfiguration/carddetails.md).
 

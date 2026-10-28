@@ -19,7 +19,7 @@ func getGlyphs(in glyphsRange: NSRange, glyphs glyphBuffer: UnsafeMutablePointer
 - (NSUInteger) getGlyphsInRange:(NSRange) glyphsRange glyphs:(NSGlyph *) glyphBuffer characterIndexes:(NSUInteger *) charIndexBuffer glyphInscriptions:(NSGlyphInscription *) inscribeBuffer elasticBits:(BOOL *) elasticBuffer bidiLevels:(unsigned char *) bidiLevelBuffer;
 ```
 
-#### Discussion
+## Discussion
 
 A subclass can override this method to interact with custom glyph storage.
 

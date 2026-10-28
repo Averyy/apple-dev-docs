@@ -19,7 +19,7 @@
 extern UTType * const UTTypeJPEGXL;
 ```
 
-#### Discussion
+## Discussion
 
 A JPEG-XL encoded image.
 

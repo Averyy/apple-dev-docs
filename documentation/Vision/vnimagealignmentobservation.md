@@ -24,7 +24,7 @@ class VNImageAlignmentObservation
 @interface VNImageAlignmentObservation : VNObservation
 ```
 
-#### Overview
+## Overview
 
 This abstract superclass forms the basis of image alignment or registration output. You receive its subclasses, such as [`VNImageTranslationAlignmentObservation`](./vnimagetranslationalignmentobservation.md) and [`VNImageHomographicAlignmentObservation`](./vnimagehomographicalignmentobservation.md), by performing specific registration requests. Don’t create one of these classes yourself.
 

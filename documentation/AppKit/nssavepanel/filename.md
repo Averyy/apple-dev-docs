@@ -17,7 +17,7 @@ Returns the absolute pathname of the file currently shown in the panel.
 - (NSString *) filename;
 ```
 
-#### Return Value
+## Return Value
 
 The absolute pathname of the file.
 

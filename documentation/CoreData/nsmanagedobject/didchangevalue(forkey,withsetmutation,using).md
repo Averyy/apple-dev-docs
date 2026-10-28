@@ -25,7 +25,7 @@ func didChangeValue(forKey inKey: String, withSetMutation inMutationKind: NSKeyV
 - (void) didChangeValueForKey:(NSString *) inKey withSetMutation:(NSKeyValueSetMutationKind) inMutationKind usingObjects:(NSSet *) inObjects;
 ```
 
-#### Discussion
+## Discussion
 
 For more details, see [Key-Value Observing Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyValueObserving/KeyValueObserving.html#//apple_ref/doc/uid/10000177i).
 

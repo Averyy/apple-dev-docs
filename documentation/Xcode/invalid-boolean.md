@@ -5,11 +5,11 @@
 
 Detects when a program accesses a Boolean variable and its value isn’t true or false.
 
-#### Overview
+## Overview
 
 Use this check to detect accesses to a Boolean variable when its value isn’t true or false. This problem can occur when using an integer or pointer without an appropriate cast. The use of out-of-range Boolean values has undefined behavior, which can be difficult to debug. Available in Xcode 9 and later.
 
-##### Invalid Boolean variable access in C
+### Invalid Boolean variable access in C
 
 The intent of the following code is to call the `success` function when `result` is nonzero. However, because it uses a Boolean check, the compiler may, as an optimization, only emit instructions that check the least-significant bit of `predicate`, which is `0`, causing a logic error.
 
@@ -21,7 +21,7 @@ if (*predicate) { // Error: variable is not a valid Boolean
 }
 ```
 
-###### Solution
+#### Solution
 
 Use integer comparison instead of a Boolean check.
 

@@ -25,7 +25,7 @@ optional func physicsWorld(_ world: SCNPhysicsWorld, didUpdate contact: SCNPhysi
 - (void) physicsWorld:(SCNPhysicsWorld *) world didUpdateContact:(SCNPhysicsContact *) contact;
 ```
 
-#### Discussion
+## Discussion
 
 SceneKit calls this method on each step of the physics simulation (see the [`timeStep`](../scnphysicsworld/timestep.md) property) if information about the contact changes—for example, if two bodies are sliding against one another.
 

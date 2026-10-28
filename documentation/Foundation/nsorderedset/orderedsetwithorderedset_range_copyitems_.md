@@ -21,7 +21,7 @@ Creates and returns a new ordered set for a specified range of objects in an ord
 + (instancetype) orderedSetWithOrderedSet:(NSOrderedSet<id> *) set range:(NSRange) range copyItems:(BOOL) flag;
 ```
 
-#### Return Value
+## Return Value
 
 A new ordered set containing a uniqued collection of the objects contained in the specified range of the ordered set.
 

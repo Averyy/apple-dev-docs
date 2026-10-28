@@ -24,7 +24,7 @@ protocol CISignedDistanceGradientFromRedMask : CIFilterProtocol
 @protocol CISignedDistanceGradientFromRedMask <CIFilter>
 ```
 
-#### Overview
+## Overview
 
 Produces an infinite image where the red channel contains the distance in pixels from each pixel to the mask.
 

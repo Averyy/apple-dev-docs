@@ -18,11 +18,11 @@ Creates the default configuration you use to style a cell in a sidebar list.
 static func sidebarCell() -> UIListContentConfiguration
 ```
 
-#### Return Value
+## Return Value
 
 The default configuration for a cell in a sidebar list.
 
-#### Discussion
+## Discussion
 
 Create this configuration to update the content and styling of a cell in a sidebar collection view list. When you apply this configuration to a cell, the cell displays one label, which resizes automatically based on the length of the text you provide and the device’s Dynamic Type and accessibility settings.
 

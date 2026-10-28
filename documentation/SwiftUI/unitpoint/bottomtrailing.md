@@ -21,7 +21,7 @@ A point that’s in the bottom, trailing corner of a view.
 static let bottomTrailing: UnitPoint
 ```
 
-#### Discussion
+## Discussion
 
 This point occupies the position where the horizontal and vertical alignment guides intersect for [`bottomTrailing`](../alignment/bottomtrailing.md) alignment. The trailing edge appears on the right in a left-to-right language environment and on the left in a right-to-left environment.
 

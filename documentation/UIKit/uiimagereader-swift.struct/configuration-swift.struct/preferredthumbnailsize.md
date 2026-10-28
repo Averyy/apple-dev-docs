@@ -20,7 +20,7 @@ The thumbnail size in pixels that the image reader makes the image.
 var preferredThumbnailSize: CGSize { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`CGSizeZero`](../../../CoreGraphics/cgsizezero.md).
 

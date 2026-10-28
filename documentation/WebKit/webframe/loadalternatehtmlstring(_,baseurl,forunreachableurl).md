@@ -19,7 +19,7 @@ func loadAlternateHTMLString(_ string: String!, baseURL: URL!, forUnreachableURL
 - (void) loadAlternateHTMLString:(NSString *) string baseURL:(NSURL *) baseURL forUnreachableURL:(NSURL *) unreachableURL;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to display page-level loading errors in a web view. Typically, a `WebFrameLoadDelegate` or `WebPolicyDelegate` object invokes this method from these methods: `webView:didFailProvisionalLoadWithError:forFrame:` (`WebFrameLoadDelegate`), webView:decidePolicyForMIMEType:request:frame:decisionListener: (`WebPolicyDelegate`), or [`webView(_:unableToImplementPolicyWithError:frame:)`](../webpolicydelegate/webview%28_,unabletoimplementpolicywitherror,frame%29.md) (`WebPolicyDelegate`). If invoked from one of these methods, the back-forward list is maintained.
 

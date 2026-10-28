@@ -25,7 +25,7 @@ var kColorSyncHeadroomAdaptiveGainCurveInfo: Unmanaged<CFString>
 extern CFStringRef kColorSyncHeadroomAdaptiveGainCurveInfo;
 ```
 
-#### Discussion
+## Discussion
 
 Contains the alternate curve count, sharing flags, chromaticities, and the per-alternate curve info array. When set to `kCFBooleanFalse` instead of a CFDictionary, indicates the Reference-White Tone Mapping Operator (RWTMO) method.
 

@@ -12,11 +12,11 @@ virtual unsigned long initialPowerStateForDomainState(
  IOPMPowerFlagsdomainState );
 ```
 
-#### Return Value
+## Return Value
 
 A state number.
 
-#### Overview
+## Overview
 
 Power management calls this method once, when the driver is initializing power management. Most drivers do not need to implement this method, and can rely upon the default IOService implementation. The IOService implementation scans the power state array looking for the highest state whose `inputPowerRequirement` field exactly matches the value of the `domainState` parameter. If more intelligent determination is required, the power managed driver should implement the method and override the superclass's implementation.
 

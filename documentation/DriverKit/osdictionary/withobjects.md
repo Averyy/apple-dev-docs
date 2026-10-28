@@ -18,7 +18,7 @@ Allocates an OSDictionary object with given members and preallocated capacity.
 static OSDictionaryPtr withObjects(const OSObject **values, const OSObject **keys, uint32_t count, uint32_t capacity);
 ```
 
-#### Return Value
+## Return Value
 
 NULL on failure, otherwise the allocated OSDictionary with reference count 1 to be released by the caller.
 

@@ -21,7 +21,7 @@ class func canShowMIMEType(_ MIMEType: String!) -> Bool
 + (BOOL) canShowMIMEType:(NSString *) MIMEType;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the receiver can display content of the specified MIME type where `MIMEType` is one of the standard types like “image/gif”; otherwise, [`false`](../../Swift/false.md).
 

@@ -23,7 +23,7 @@ nonisolated init<V>(value: Binding<V>, in bounds: ClosedRange<V>, step: V.Stride
 
 Available when `Label` conforms to `View`.
 
-#### Discussion
+## Discussion
 
 Use this initializer to create a stepper that increments or decrements a binding to value by the step size you provide within the given bounds. By setting the bounds, you ensure that the value never goes below or above the lowest or highest value, respectively.
 

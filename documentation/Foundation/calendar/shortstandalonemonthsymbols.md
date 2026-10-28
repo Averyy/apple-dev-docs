@@ -21,7 +21,7 @@ A list of shorter-named standalone months in this calendar, localized to the Cal
 var shortStandaloneMonthSymbols: [String] { get }
 ```
 
-#### Discussion
+## Discussion
 
 For example, for English in the Gregorian calendar, returns `["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]`.
 

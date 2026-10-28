@@ -20,11 +20,11 @@ func tabView(_ tabView: NSTabView, shouldSelect tabViewItem: NSTabViewItem?) -> 
 - (BOOL) tabView:(NSTabView *) tabView shouldSelectTabViewItem:(NSTabViewItem *) tabViewItem;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the tab should be selected or [`false`](../../Swift/false.md) if it should not be selected.
 
-#### Discussion
+## Discussion
 
 This method is a delegate method called by the [`NSTabView`](../nstabview.md) object when changes occur. Use it to dynamically determine whether a tab should be selected.
 

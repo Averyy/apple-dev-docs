@@ -26,11 +26,11 @@ func CFNetServiceCreateDictionaryWithTXTData(_ alloc: CFAllocator?, _ txtRecord:
 extern CFDictionaryRefCFNetServiceCreateDictionaryWithTXTData(CFAllocatorRef alloc, CFDataRef txtRecord);
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary containing the key/value pairs parsed from `txtRecord`, or `NULL` if `txtRecord` cannot be parsed. Each key in the dictionary is a CFString object, and each value is a CFData object. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 This function is thread safe.
 

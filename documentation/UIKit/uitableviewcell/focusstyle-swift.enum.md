@@ -23,7 +23,7 @@ enum FocusStyle
 enum UITableViewCellFocusStyle : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 You use these constants to set the value of the [`focusStyle`](./focusstyle-swift.property.md) property.
 

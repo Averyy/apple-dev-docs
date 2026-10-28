@@ -21,7 +21,7 @@ var shouldCloseWithWindow: Bool { get set }
 @property (nonatomic) BOOL shouldCloseWithWindow;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../Swift/true.md), the web view should close; otherwise, it should not.
 

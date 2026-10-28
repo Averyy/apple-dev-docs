@@ -21,7 +21,7 @@ init(anchor: ARAnchor)
 - (instancetype) initWithAnchor:(ARAnchor *) anchor;
 ```
 
-#### Discussion
+## Discussion
 
 Each time ARKit generates a new [`ARFrame`](../arframe.md) object (corresponding to an incoming frame of live camera video at 60 fps), ARKit calls this initializer to copy each of the [`anchors`](../arframe/anchors.md) associated with the previous frame.
 

@@ -19,7 +19,7 @@ func play()
 - (void) play;
 ```
 
-#### Discussion
+## Discussion
 
 If the movie is currently paused, this resumes playback from the current position.
 

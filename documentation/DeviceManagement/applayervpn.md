@@ -20,13 +20,13 @@ The payload that configures a per-app VPN.
 object AppLayerVPN
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.vpn.managed.applayer` as the payload type.
 
 This profile defines per-app VPN behavior and applies only to VPN services of type `VPN`, `IPsec`, and `IKEv2`. All the properties of VPN apply to the top level of this profile as well.
 
-##### Profile availability
+### Profile availability
 
 |  |  |
 | --- | --- |
@@ -38,7 +38,7 @@ This profile defines per-app VPN behavior and applies only to VPN services of ty
 | Allowed in user enrollment | iOS, macOS, visionOS |
 | Allow multiple payloads | iOS, macOS, Shared iPad, visionOS, watchOS |
 
-##### Profile example
+### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>

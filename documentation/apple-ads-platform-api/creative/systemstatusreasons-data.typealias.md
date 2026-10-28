@@ -32,11 +32,11 @@ string Creative.SystemStatusReasons
 - `PAUSED_BY_USER`: The ad creative was paused by the advertiser.
 - `DELETED_BY_USER`: The ad creative was deleted.
 
-#### Discussion
+## Discussion
 
 These reasons span policy review, asset validation, and App Store product page issues that the platform surfaces when [`Creative.SystemStatus`](./systemstatus-data.typealias.md) is `INVALID`.
 
-##### Example
+### Example
 
 ```json
 {

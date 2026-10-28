@@ -25,7 +25,7 @@ var sections: [any NSFetchedResultsSectionInfo]? { get }
 @property (nonatomic, readonly, nullable) NSArray<id<NSFetchedResultsSectionInfo>> * sections;
 ```
 
-#### Discussion
+## Discussion
 
 The objects in the sections array implement the [`NSFetchedResultsSectionInfo`](../nsfetchedresultssectioninfo.md) protocol.
 

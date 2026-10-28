@@ -19,7 +19,7 @@ static let contentWidth: NSBindingName
 extern NSBindingName NSContentWidthBinding;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [Cocoa Bindings](../cocoa-bindings.md).
 

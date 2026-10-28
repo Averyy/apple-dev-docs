@@ -29,7 +29,7 @@ optional func resolveToAccount(for intent: INTransferMoneyIntent) async -> INPay
 - (void) resolveToAccountForTransferMoney:(INTransferMoneyIntent *) intent withCompletion:(void (^)(INPaymentAccountResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve the user account that’s the destination for the funds. Use this method to verify that the specified account exists and is able to receive the transferred funds. The [`toAccount`](../intransfermoneyintent/toaccount.md) property of the intent object contains any information provided by the user about which account to use.
 

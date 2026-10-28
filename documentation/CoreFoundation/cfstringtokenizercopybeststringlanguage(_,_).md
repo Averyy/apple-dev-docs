@@ -25,11 +25,11 @@ func CFStringTokenizerCopyBestStringLanguage(_ string: CFString!, _ range: CFRan
 extern CFStringRefCFStringTokenizerCopyBestStringLanguage(CFStringRef string, CFRange range);
 ```
 
-#### Return Value
+## Return Value
 
 A language in BCP 47 form, or `NULL` if the language in `string` could not be identified. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 The result is not guaranteed to be accurate. Typically, the function requires 200-400 characters to reliably guess the language of a string.
 

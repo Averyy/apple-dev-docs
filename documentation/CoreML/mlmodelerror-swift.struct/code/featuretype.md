@@ -25,7 +25,7 @@ case featureType
 MLModelErrorFeatureType
 ```
 
-#### Discussion
+## Discussion
 
 Core ML typically throws (Swift) or returns (Objective-C) this error when an app sends an input feature a value that’s of an incorrect type.
 

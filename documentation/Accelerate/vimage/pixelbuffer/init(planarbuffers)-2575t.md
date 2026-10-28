@@ -23,7 +23,7 @@ init(planarBuffers: [vImage.PixelBuffer<vImage.Planar16U>])
 
 Available when `Format` is `vImage.Interleaved16Ux4`.
 
-#### Discussion
+## Discussion
 
 Use this function to interleave four discrete planar buffers. For example, the following code creates a four-channel interleaved buffer from four planar buffers:
 

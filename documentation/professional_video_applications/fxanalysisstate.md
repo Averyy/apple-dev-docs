@@ -19,7 +19,7 @@ typealias FxAnalysisState = Int
 typedef NSUInteger FxAnalysisState;
 ```
 
-#### Discussion
+## Discussion
 
 Query the analysis state with [`analysisStateForEffect()`](./fxanalysisapi/analysisstateforeffect%28%29.md).
 

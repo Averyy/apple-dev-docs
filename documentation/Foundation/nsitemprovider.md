@@ -25,7 +25,7 @@ class NSItemProvider
 @interface NSItemProvider : NSObject
 ```
 
-#### Overview
+## Overview
 
 Starting in iOS 11, item providers play a central role in drag and drop, and in copy and paste. They continue to play a role with app extensions.
 
@@ -37,7 +37,7 @@ DispatchQueue.main.async {
 }
 ```
 
-##### App extension support
+### App extension support
 
 An app extension typically encounters item providers when examining the [`attachments`](./nsextensionitem/attachments.md) property of an [`NSExtensionItem`](./nsextensionitem.md) object. During that examination, the extension can use the [`hasItemConformingToTypeIdentifier(_:)`](./nsitemprovider/hasitemconformingtotypeidentifier%28_%29.md) method to look for data that it recognizes. Item providers use [Uniform Type Identifiers](../UniformTypeIdentifiers/UniformTypeIdentifiers.md) values to identify the data they contain. After finding a type of data that your extension can use, it calls the [`loadItem(forTypeIdentifier:options:completionHandler:)`](./nsitemprovider/loaditem%28fortypeidentifier,options,completionhandler%29.md) method to load the actual data, which is delivered to the provided completion handler.
 

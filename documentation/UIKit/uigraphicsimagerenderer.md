@@ -27,7 +27,7 @@ class UIGraphicsImageRenderer
 
 - [Adding Writing Tools support to a custom UIKit view](./adding-writing-tools-support-to-a-custom-uiview.md)
 
-#### Overview
+## Overview
 
 You can use image renderers to accomplish drawing tasks, without having to handle configuration such as color depth and image scale, or manage Core Graphics contexts. You initialize an image renderer with parameters such as image output dimensions and format. You then use one or more of the drawing functions to render images that share these properties.
 
@@ -41,7 +41,7 @@ To render an image:
 
 After initializing an image renderer, you can use it to draw multiple images with the same configuration. An image renderer keeps a cache of Core Graphics contexts, so reusing the same renderer can be more efficient than creating new renderers.
 
-##### Creating a graphics image renderer
+### Creating a graphics image renderer
 
 Create an image renderer, providing the size of the output image:
 
@@ -61,7 +61,7 @@ You can instead use one of the other [`UIGraphicsImageRenderer`](./uigraphicsima
 
 If you don’t provide a format, the renderer uses the [`default()`](./uigraphicsrendererformat/default%28%29.md) format, which creates a context best suited for the current device.
 
-##### Creating an image with an image renderer
+### Creating an image with an image renderer
 
 Use the [`image(actions:)`](./uigraphicsimagerenderer/image%28actions%29.md) method to create an image ([`UIImage`](./uiimage.md) object) with an image renderer. This method takes a closure that represents the drawing actions. Within this closure, the renderer creates a Core Graphics context using the parameters provided during renderer initialization, and sets this Core Graphics context to be the current context.
 
@@ -95,7 +95,7 @@ The above code creates the following image:
 
 In addition to the [`image(actions:)`](./uigraphicsimagerenderer/image%28actions%29.md) method that creates an [`UIImage`](./uiimage.md) object, [`UIGraphicsImageRenderer`](./uigraphicsimagerenderer.md) also has [`jpegData(withCompressionQuality:actions:)`](./uigraphicsimagerenderer/jpegdata%28withcompressionquality,actions%29.md) and [`pngData(actions:)`](./uigraphicsimagerenderer/pngdata%28actions%29.md) methods that create [`Data`](../Foundation/data.md) objects containing the image encoded as a JPEG or a PNG respectively. All three methods take the same approach as detailed here, accepting a block that represents the drawing actions.
 
-##### Using blend mode
+### Using blend mode
 
 The utility methods on [`UIGraphicsImageRendererContext`](./uigraphicsimagerenderercontext.md) also offer a variant that accepts a [`CGBlendMode`](../CoreGraphics/cgblendmode.md) value. This value determines how to combine the pixel values when painting.
 
@@ -129,7 +129,7 @@ This code draws a second square, using a blend mode of multiply. The following i
 
 ![Image showing two overlapping squares, one blue, the other turquoise, in the top-left and bottom-right of a white background square respectively.](https://developer.apple.com/tutorials/images/com.apple.uikit/media-2875000@2x.png)
 
-##### Using Core Graphics rendering functions
+### Using Core Graphics rendering functions
 
 The [`UIGraphicsImageRendererContext`](./uigraphicsimagerenderercontext.md) available in the image closure has a [`cgContext`](./uigraphicsrenderercontext/cgcontext.md) property, which allows you to use Core Graphics rendering functions directly. For example, the following code demonstrates how to add a circle to the image:
 

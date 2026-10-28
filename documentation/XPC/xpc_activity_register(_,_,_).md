@@ -19,7 +19,7 @@ func xpc_activity_register(_ identifier: UnsafePointer<CChar>, _ criteria: xpc_o
 extern void xpc_activity_register(const char *identifier, xpc_object_t criteria, xpc_activity_handler_t handler);
 ```
 
-#### Discussion
+## Discussion
 
 Registers a new activity with the system. The criteria of the activity are described by the dictionary passed to this function. If an activity with the same identifier already exists, the criteria provided override the existing criteria unless the special dictionary [`XPC_ACTIVITY_CHECK_IN`](./xpc_activity_check_in.md) is used. The [`XPC_ACTIVITY_CHECK_IN`](./xpc_activity_check_in.md) dictionary instructs the system to first look up an existing activity without modifying its criteria. Once the existing activity is found (or a new one is created with an empty set of criteria) the handler will be called with an activity object in the [`XPC_ACTIVITY_STATE_CHECK_IN`](./xpc_activity_state_check_in.md) state.
 

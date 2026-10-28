@@ -29,7 +29,7 @@ extern CFStringRef const kSecReturnRef;
 
 - [Storing a Certificate in the Keychain](./storing-a-certificate-in-the-keychain.md)
 
-#### Discussion
+## Discussion
 
 The corresponding value is of type [`CFBoolean`](../CoreFoundation/cfboolean.md). A value of [`kCFBooleanTrue`](../CoreFoundation/kcfbooleantrue.md) indicates that a reference should be returned. Depending on the item class requested, the returned references may be of type [`SecKeychainItem`](./seckeychainitem.md), [`SecKey`](./seckey.md), [`SecCertificate`](./seccertificate.md), [`SecIdentity`](./secidentity.md), or [`CFData`](../CoreFoundation/cfdata.md).
 

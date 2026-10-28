@@ -24,7 +24,7 @@ var type: PKPushType { get }
 @property (copy, readonly) PKPushType type;
 ```
 
-#### Discussion
+## Discussion
 
 For possible values, see [`PKPushType`](../pkpushtype.md).
 

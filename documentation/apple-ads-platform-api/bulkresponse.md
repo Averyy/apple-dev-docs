@@ -15,13 +15,13 @@ The generic response envelope returned by all bulk operations.
 object BulkResponse
 ```
 
-#### Discussion
+## Discussion
 
 The `BulkResponse` object is the standard response wrapper for bulk create, update, and delete operations. The `result` array is parallel to the `items` array in the corresponding `BulkOperationRequest`: element at index `n` in `result` corresponds to element at index `n` in the request. To correlate results back to their originating request item, use the `correlationId` field on each result entry.
 
 When `allowPartialSuccess` is `true` in the request, individual item failures appear in the `result` array rather than the top-level `error`.
 
-##### Example
+### Example
 
 ```json
 {

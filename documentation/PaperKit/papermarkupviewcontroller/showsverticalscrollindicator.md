@@ -20,7 +20,7 @@ A Boolean value that controls whether the vertical scroll indicator is visible.
 @preconcurrency var showsVerticalScrollIndicator: Bool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Default is `true`.
 

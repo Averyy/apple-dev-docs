@@ -24,7 +24,7 @@ var action: NEOnDemandRuleAction { get }
 @property (readonly) NEOnDemandRuleAction action;
 ```
 
-#### Discussion
+## Discussion
 
 The action of the On Demand Rule represents the behavior for triggering the corresponding VPN when the rule conditions are matched.
 

@@ -25,11 +25,11 @@ func range(at idx: Int) -> NSRange
 - (NSRange) rangeAtIndex:(NSUInteger) idx;
 ```
 
-#### Return Value
+## Return Value
 
 The range of the result.
 
-#### Discussion
+## Discussion
 
 A result must have at least one range, but may optionally have more, for example, to represent regular expression capture groups.
 

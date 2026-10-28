@@ -24,7 +24,7 @@ protocol Material
 
 - [Applying realistic material and lighting effects to entities](./applying-realistic-material-and-lighting-effects-to-entities.md)
 
-#### Overview
+## Overview
 
 In RealityKit, a *material* defines the surface properties of a 3D model. It specifies how RealityKit renders the entity, including its color and whether it’s shiny or reflective. A [`ModelEntity`](./modelentity.md) may have one material that defines the way RealityKit renders the entire entity, or it may have several that define the look of different parts of the model.
 

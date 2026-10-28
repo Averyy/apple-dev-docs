@@ -15,7 +15,7 @@ The accessibility element’s frame in screen coordinates.
 @property NSRect accessibilityFrame;
 ```
 
-#### Discussion
+## Discussion
 
 This property is accessed by the system whenever an accessibility client requests the element’s size or position.
 

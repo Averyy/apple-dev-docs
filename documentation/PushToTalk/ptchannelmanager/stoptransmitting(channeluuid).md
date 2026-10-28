@@ -25,7 +25,7 @@ func stopTransmitting(channelUUID: UUID)
 
 - [Creating a Push to Talk app](../creating-a-push-to-talk-app.md)
 
-#### Discussion
+## Discussion
 
 If successful, you receive a callback from [`channelManager(_:channelUUID:didEndTransmittingFrom:)`](../ptchannelmanagerdelegate/channelmanager%28_,channeluuid,didendtransmittingfrom%29.md) with `PTChannelTransmitRequestSource.programmaticRequest`; otherwise, you receive a failure reason through [`channelManager(_:failedToStopTransmittingInChannel:error:)`](../ptchannelmanagerdelegate/channelmanager%28_,failedtostoptransmittinginchannel,error%29.md).
 

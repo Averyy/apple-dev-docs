@@ -20,7 +20,7 @@ Creates and initializes a video material for a sample buffer video renderer obje
 init(videoRenderer: AVSampleBufferVideoRenderer)
 ```
 
-#### Discussion
+## Discussion
 
 To create a `VideoMaterial`, first create an [`AVSampleBufferVideoRenderer`](../../AVFoundation/avsamplebuffervideorenderer.md) instance with no parameters and then pass that to the `VideoMaterial` initializer. After creating the `VideoMaterial`, create a [`AVAssetReader`](../../AVFoundation/avassetreader.md) with the [`AVURLAsset`](../../AVFoundation/avurlasset.md) and load the media (video), which you need to track as the [`AVAssetTrack`](../../AVFoundation/avassettrack.md). Feed this `AVAssetTrack` to the [`AVAssetReaderTrackOutput`](../../AVFoundation/avassetreadertrackoutput.md) and add this output tracker to the `AVAssetReader` you created before. Wait for setup to finish and start reading. Read the sample buffers from the reader and enqueue it into the `AVSampleBufferVideoRenderer` object. `AVSampleBufferVideoRenderer` uses a push model, so feed the video sample buffers until the queue is full and then resume feeding it when it’s ready for more. You can use `isReadyForMoreMediaData` on the `AVSampleBufferVideoRenderer` object in a while-loop to check if you need to enqueue more sample buffers. You can’t use the same `AVSampleBufferVideoRenderer` object with more than one `VideoMaterial`.
 

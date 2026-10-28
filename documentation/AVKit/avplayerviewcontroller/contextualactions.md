@@ -25,7 +25,7 @@ var contextualActions: [UIAction] { get set }
 - [Adopting the system player interface in visionOS](../adopting-the-system-player-interface-in-visionos.md)
 - [Customizing the tvOS playback experience](../customizing-the-tvos-playback-experience.md)
 
-#### Discussion
+## Discussion
 
 Use this property to present action controls for a specific time in the presentation, such as showing a Skip Intro button during a title sequence. Have your app observe the player’s timing, and when playback reaches a point at which to present controls, set the property value to one or more custom actions. To dismiss the controls, set this property value back to an empty array.
 

@@ -17,7 +17,7 @@ The unique identifier for this card reader.
 var readerIdentifier: String { get async throws }
 ```
 
-#### Discussion
+## Discussion
 
 Include this identifier in support requests or tracing incidents to help track down potential problems. If the identifier isn’t readable, getting this value throws a [`PaymentCardReaderError`](../paymentcardreadererror.md).
 

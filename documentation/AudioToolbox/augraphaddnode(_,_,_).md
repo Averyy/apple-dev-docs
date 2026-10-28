@@ -26,11 +26,11 @@ func AUGraphAddNode(_ inGraph: AUGraph, _ inDescription: UnsafePointer<AudioComp
 extern OSStatus AUGraphAddNode(AUGraph inGraph, const AudioComponentDescription *inDescription, AUNode *outNode);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 
-#### Discussion
+## Discussion
 
 Creates a node in an audio processing graph, using the supplied `AudioComponentDescription` object to find and open the audio unit for the node.
 

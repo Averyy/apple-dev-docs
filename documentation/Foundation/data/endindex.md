@@ -21,7 +21,7 @@ The end index into the data.
 var endIndex: Data.Index { get }
 ```
 
-#### Discussion
+## Discussion
 
 This is the “one-past-the-end” position, and will always be equal to the `count`.
 

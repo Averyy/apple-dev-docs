@@ -16,7 +16,7 @@ This view displays a stabilized region of interest within a person’s view and 
 @preconcurrency struct CameraRegionView
 ```
 
-#### Overview
+## Overview
 
 `CameraRegionView` needs enterprise API access in order to be used. To use this view, you need to apply for the [`Camera Region access`](../BundleResources/entitlements/com.apple.developer.arkit.camera-region.allow.md) entitlement. For more information, including how to apply for this entitlement, see [Building spatial experiences for business apps with enterprise APIs for visionOS](../visionOS/building-spatial-experiences-for-business-apps-with-enterprise-apis.md).
 

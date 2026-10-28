@@ -14,7 +14,7 @@ Create custom materials and effects for 3D content in Reality Composer Pro.
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Overview
+## Overview
 
 Create complex materials and effects with Shader Graph, a node-based material editor within Reality Composer Pro. The editor presents an interface in which you can build out node graphs to achieve various visual effects.
 
@@ -24,7 +24,7 @@ With the control Shader Graph provides over materials, you can create effects th
 
 Build your material using the nodes that achieve your desired visual and geometric effects, and apply these materials to entities within your Reality Composer Pro scene.
 
-#### Interoperability
+## Interoperability
 
 Shader Graph uses MaterialX 1.38 conventions to improve interoperability with content creation applications that can read and author MaterialX within USD files.
 

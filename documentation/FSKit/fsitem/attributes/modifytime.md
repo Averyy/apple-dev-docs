@@ -19,7 +19,7 @@ var modifyTime: timespec { get set }
 @property (nonatomic) struct timespec modifyTime;
 ```
 
-#### Discussion
+## Discussion
 
 This property represents `mtime`, the last time the item’s contents changed.
 

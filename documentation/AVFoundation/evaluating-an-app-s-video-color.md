@@ -4,7 +4,7 @@
 
 Check color reproduction for a video in your app by using test patterns, video test equipment, and light-measurement instruments.
 
-#### Overview
+## Overview
 
 AVFoundation automatically applies color management to video during playback. ColorSync creates a color transform that provides a color match between the video’s color space (as specified by the color tag in the media) and the specific chromaticity and gamma characteristics of your display.
 
@@ -12,7 +12,7 @@ ColorSync uses the display’s ICC profile to obtain its chromaticity and gamma 
 
 > **Note**:  Viewers typically watch broadcast standards-based video in a dimly lit viewing environment such as a living room. The color management applied during playback lessens the contrast to preserve the correct tonality when viewing video in brighter viewing conditions.
 
-##### Manage color reproduction
+### Manage color reproduction
 
 During playback, the color-management process changes the pixel values encoded in the video file to make them appear true to the original on the display. As a result of this color management, the [Digital Color Meter app](https://support.apple.com/guide/digital-color-meter/welcome/mac) reports values from the display buffer that are different from the actual pixels encoded in the video file. Further, the Digital Color Meter app may report unequal pixel values between seemingly identical displays if their display profiles differ.
 
@@ -26,19 +26,19 @@ Appropriate color management of your video during playback requires tagging your
 
 For more information about color tags, see [Tagging media with video color information](./tagging-media-with-video-color-information.md).
 
-##### Evaluate video using test pattern files
+### Evaluate video using test pattern files
 
 Use test pattern files to evaluate the color characteristics of your AVFoundation-based app or workflow. These files produce expected results when displayed on Apple devices and operating systems. Open these files in the QuickTime Player App or with other apps or workflows that properly support the QuickTime File Format Specification. Read the display buffer pixel values using the Digital Color Meter app. See [Evaluating video using QuickTime test pattern files](./evaluating-video-using-quicktime-test-pattern-files.md).
 
-##### Evaluate video using a vectorscope or waveform analyzer
+### Evaluate video using a vectorscope or waveform analyzer
 
 Output test patterns to a vectorscope or waveform analyzer to analyze the video signals. View the test pattern on a vectorscope and verify the correct colorspace conversion matrices. Verify the gamma, quantization errors, and range expansion and compression on a waveform monitor. See [Evaluating an app’s video color using video test equipment](./evaluating-an-app-s-video-color-using-video-test-equipment.md).
 
-##### Evaluate video using a spectroradiometer or colorimeter
+### Evaluate video using a spectroradiometer or colorimeter
 
 Output the test pattern files to a spectroradiometer or colorimeter to measure front-of-screen (FoS) luminance. Measure and compare your results against the expected FoS values. See [Evaluating an app’s video color using light-measurement Instruments](./evaluating-an-app-s-video-color-using-light-measurement-instruments.md).
 
-##### Ensure accurate color application of your app’s video
+### Ensure accurate color application of your app’s video
 
 To ensure application of the appropriate color management to your video during playback:
 

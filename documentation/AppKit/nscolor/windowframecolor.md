@@ -21,7 +21,7 @@ class var windowFrameColor: NSColor { get }
 @property (class, strong, readonly) NSColor * windowFrameColor;
 ```
 
-#### Return Value
+## Return Value
 
 The color used for window frames. For more information, see [`NSColor`](../nscolor.md).
 

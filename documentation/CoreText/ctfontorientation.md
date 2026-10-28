@@ -25,7 +25,7 @@ enum CTFontOrientation
 enum CTFontOrientation : uint32_t;
 ```
 
-#### Overview
+## Overview
 
 Use the values of this enumeration for [`kCTFontOrientationAttribute`](./kctfontorientationattribute.md).
 

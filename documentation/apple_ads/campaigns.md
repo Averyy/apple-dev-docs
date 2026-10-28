@@ -5,7 +5,7 @@
 
 Create and manage Apple Ads campaigns.
 
-#### Overview
+## Overview
 
 > **Deprecated**: The Apple Ads Campaign Management API is deprecated and will be sunset on January 26, 2027. Use the [Apple Ads Platform API](../apple-ads-platform-api/apple-ads-platform-api.md) instead.
 
@@ -13,7 +13,7 @@ Use campaigns to promote your apps in the App Store. For an app to be eligible f
 
 You must have an `adamId` for each app you’re promoting, a valid email address, and an Apple ID. Apple IDs that only use phone numbers aren’t acceptable. All advertisers must comply with [Apple Ads Advertising Content Policies](https://ads.apple.com/policies).
 
-##### Maximize Conversions
+### Maximize Conversions
 
 A Maximize Conversions bid strategy in campaigns is designed to help you maximize the number of tap-through conversions at or near your target CPA. A Maximize Conversions bid strategy in campaigns uses a cost-per-tap pricing model so you only pay when a user engages with your ad.
 

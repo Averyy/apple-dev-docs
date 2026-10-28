@@ -5,7 +5,7 @@
 
 Specify the schema of a metadata attribute key.
 
-#### Overview
+## Overview
 
 These keys are in the dictionary returned by the function `MDSchemaCopyMetaAttributesForAttribute`.
 

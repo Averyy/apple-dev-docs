@@ -19,11 +19,11 @@ func SCPreferencesAddValue(_ prefs: SCPreferences, _ key: CFString, _ value: CFP
 Boolean SCPreferencesAddValue(SCPreferencesRef prefs, CFStringRef key, CFPropertyListRef value);
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if the value was added; [`false`](../Swift/false.md) if the key already exists or if an error occurred.
 
-#### Discussion
+## Discussion
 
 To commit these changes to permanent storage, you must call [`SCPreferencesCommitChanges(_:)`](./scpreferencescommitchanges%28_%29.md).
 

@@ -17,7 +17,7 @@ Return `true` if the given parameter name is valid – should be considered for 
 static func parameterIsValid(_ key: String) -> Bool
 ```
 
-#### Discussion
+## Discussion
 
 Specifically this will filter out parameters with keys starting with `_`.
 

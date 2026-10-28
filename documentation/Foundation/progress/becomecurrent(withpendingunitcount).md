@@ -25,7 +25,7 @@ func becomeCurrent(withPendingUnitCount unitCount: Int64)
 - (void) becomeCurrentWithPendingUnitCount:(int64_t) unitCount;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to build a tree of progress objects, as [Reporting Progress for Multiple Operations](../progress.md#Reporting-Progress-for-Multiple-Operations) describes.
 

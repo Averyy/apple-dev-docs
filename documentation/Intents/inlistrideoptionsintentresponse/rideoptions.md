@@ -31,7 +31,7 @@ var rideOptions: [INRideOption]? { get set }
 @property (atomic, copy, readwrite, nullable) NSArray<INRideOption *> * rideOptions;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify the ride options that you are able to offer the user. Ride options provide general information about the pricing and passenger capacity of a class of vehicles in your fleet. They may also contain special conditions such as whether multiple users can share the ride. Include only the ride options that you could potentially book in the immediate future. You may also want to specify a value for the [`expirationDate`](./expirationdate.md) property if pricing or availability can change.
 

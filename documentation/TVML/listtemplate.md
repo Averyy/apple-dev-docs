@@ -4,13 +4,13 @@
 
 Displays a list of items along one side of a page and the corresponding image on the other side.
 
-#### Overview
+## Overview
 
 Use the `listTemplate` element to display a list of items; for example, a list of the user’s favorite movies. Whereas you use the catalog template to display categories of a product (action movies, comedies, favorite movies), you use the list template to display actual contents of one category, such as a list of the user’s favorite movies. The items are listed on the right side of the screen with like items grouped together in a section. A title providing a brief description of the items is contained in a header area directly above the listed items. When an item is selected, information about the item is displayed on the left side of the screen. The following figure shows the basic layout for a `listTemplate` page. The theme for the list template defaults to the system preference.
 
 ![Layout diagram showing a banner area at the top, header and section areas on the right, and a related content area on the left.](https://developer.apple.com/tutorials/images/com.apple.TVML/listtemplate-1@2x.png)
 
-##### Main Elements
+### Main Elements
 
 The following listing shows the main elements of the `listTemplate` in TVML format.
 
@@ -35,7 +35,7 @@ The following listing shows the main elements of the `listTemplate` in TVML form
 </listTemplate>
 ```
 
-###### Element Descriptions
+#### Element Descriptions
 
 - **[banner](./banner.md)**: Element containing background information and the page title.
 - **[header](./header.md)**: Information describing what a section contains.
@@ -44,7 +44,7 @@ The following listing shows the main elements of the `listTemplate` in TVML form
 - **[relatedContent](./relatedcontent.md)**: Information that is displayed on the left side of the screen when an item in the list is highlighted.
 - **[section](./section.md)**: An area of the page that groups related elements together as one element, for layout purposes. In this case, the section contains list items.
 
-##### Example
+### Example
 
 The following listing shows the TVML for a `listTemplate` example. An image and a description that relate to the highlighted item are displayed on the left side of the screen.
 

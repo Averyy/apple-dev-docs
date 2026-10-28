@@ -16,11 +16,11 @@ Creates an element from a dictionary.
 IOHIDElementRef IOHIDElementCreateWithDictionary(CFAllocatorRef allocator, CFDictionaryRef dictionary);
 ```
 
-#### Return Value
+## Return Value
 
 Returns a new IOHIDElementRef.
 
-#### Discussion
+## Discussion
 
 The dictionary should contain keys defined in IOHIDKeys.h and start with kIOHIDElement. This call is meant be used by a IOHIDDeviceDeviceInterface object.
 

@@ -21,7 +21,7 @@ let readerInstanceIdentifier: String
 
 - [Generating reader tokens for the Verifier API](../../generating-reader-tokens-for-the-verifier-api.md)
 
-#### Discussion
+## Discussion
 
 > **Note**: Do not cache this value. When generating a reader token always retrieve the latest reader instance identifier first.
 

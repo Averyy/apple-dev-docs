@@ -24,7 +24,7 @@ var name: String { get set }
 @property (nonatomic, copy) NSString * name;
 ```
 
-#### Discussion
+## Discussion
 
 This name is not used for rendering, but it can be useful for debugging.
 

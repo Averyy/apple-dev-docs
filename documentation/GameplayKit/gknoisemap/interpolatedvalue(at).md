@@ -24,11 +24,11 @@ func interpolatedValue(at position: vector_float2) -> Float
 - (float) interpolatedValueAtPosition:(vector_float2) position;
 ```
 
-#### Return Value
+## Return Value
 
 The value at the specified position.
 
-#### Discussion
+## Discussion
 
 When you create a noise map from a [`GKNoise`](../gknoise.md) object, GameplayKit performs the noise generation and processing computations necessary to fill a discrete grid with noise samples. (You specify the size of the grid and its number of samples in the [`init(_:size:origin:sampleCount:seamless:)`](./init%28_,size,origin,samplecount,seamless%29.md) initializer.) You can use this method to get noise values for arbitrary positions in the noise field, regardless of whether those positions are aligned with the discrete grid. When you query a position not aligned with the grid, this method automatically samples nearby grid positions and interpolates the results.
 

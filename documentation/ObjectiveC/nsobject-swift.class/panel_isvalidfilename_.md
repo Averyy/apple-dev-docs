@@ -17,11 +17,11 @@ Gives the delegate the opportunity to validate selected items.
 - (BOOL) panel:(id) sender isValidFilename:(NSString *) filename;
 ```
 
-#### Return Value
+## Return Value
 
 [`YES`](../yes.md) if the filename is valid, or [`NO`](../no.md) if the save panel should stay in its modal loop and wait for the user to type in or select a different filename or names.
 
-#### Discussion
+## Discussion
 
 The `NSSavePanel` object `sender` sends this message just before the end of a modal session for each filename displayed or selected (including filenames in multiple selections). If the delegate refuses a filename in a multiple selection, none of the filenames in the selection is accepted.
 

@@ -21,7 +21,7 @@ Reset to the nearest scalar-aligned code unit offset `>= i`.
 mutating func reset(roundingForwardsFrom i: Int)
 ```
 
-#### Discussion
+## Discussion
 
 > **Complexity**: O(1)
 

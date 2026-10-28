@@ -23,7 +23,7 @@ var queue: OperationQueue { get set }
 @property (nonatomic, strong) NSOperationQueue * queue;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is the app’s main queue. Assign a different queue if you want delegate methods and handlers to be executed on a background queue.
 

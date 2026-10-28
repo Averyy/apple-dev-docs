@@ -24,7 +24,7 @@ var blending: PhysicallyBasedMaterial.Blending { get set }
 
 - [Applying realistic material and lighting effects to entities](../applying-realistic-material-and-lighting-effects-to-entities.md)
 
-#### Discussion
+## Discussion
 
 Use this property to specify whether an entity is opaque or transparent. To create an entity that’s opaque, assign [`PhysicallyBasedMaterial.Blending.opaque`](./blending-swift.enum/opaque.md) to this property.
 

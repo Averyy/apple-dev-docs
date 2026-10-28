@@ -25,7 +25,7 @@ case named
 NSRelativeDateTimeFormatterStyleNamed
 ```
 
-#### Discussion
+## Discussion
 
 The formatter falls back to using [`RelativeDateTimeFormatter.DateTimeStyle.numeric`](./numeric.md) if a name isn’t available.
 

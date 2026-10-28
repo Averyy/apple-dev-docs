@@ -17,7 +17,7 @@ The name of an icon set in your app’s asset catalog to use as the background f
 - **Name**: `UTTypeIconBackgroundName` (Background)
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 This key is optional. If you omit this key, the system produces the document icon with no custom background fill.
 

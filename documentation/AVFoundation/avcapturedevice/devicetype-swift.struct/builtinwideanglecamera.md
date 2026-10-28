@@ -24,7 +24,7 @@ static let builtInWideAngleCamera: AVCaptureDevice.DeviceType
 extern AVCaptureDeviceType const AVCaptureDeviceTypeBuiltInWideAngleCamera;
 ```
 
-#### Discussion
+## Discussion
 
 Devices of this type are suitable for general-purpose use.
 

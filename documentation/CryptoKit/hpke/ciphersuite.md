@@ -21,7 +21,7 @@ Cipher suites to use in hybrid public key encryption (HPKE).
 struct Ciphersuite
 ```
 
-#### Overview
+## Overview
 
 HPKE cipher suites identify the authenticated encryption with additional data (AEAD) algorithm for encrypting and decrypting messages, the key derivation function (KDF) for deriving the shared key, and the key encapsulation mechanism (KEM) for sharing the symmetric key. The sender and recipient of encrypted messages need to use the same cipher suite.
 

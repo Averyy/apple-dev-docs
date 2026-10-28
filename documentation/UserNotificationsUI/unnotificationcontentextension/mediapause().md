@@ -27,7 +27,7 @@ optional func mediaPause()
 
 - [Customizing the Appearance of Notifications](../customizing-the-appearance-of-notifications.md)
 
-#### Discussion
+## Discussion
 
 Don’t call this method yourself. If you implement the [`mediaPlayPauseButtonFrame`](./mediaplaypausebuttonframe.md) property in your view controller, the system calls this method when the user wants to stop playback of your media. Use your implementation of this method to pause playback at the current location.
 

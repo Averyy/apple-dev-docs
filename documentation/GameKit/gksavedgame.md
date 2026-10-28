@@ -27,7 +27,7 @@ class GKSavedGame
 
 - [Saving the player’s game data to an iCloud account](./saving-the-player-s-game-data-to-an-icloud-account.md)
 
-#### Overview
+## Overview
 
 A `GKSavedGame` object represents the file that contains game data you saved using the `GKLocalPlayer` [`saveGameData(_:withName:completionHandler:)`](./gklocalplayer/savegamedata%28_,withname,completionhandler%29.md) method.
 

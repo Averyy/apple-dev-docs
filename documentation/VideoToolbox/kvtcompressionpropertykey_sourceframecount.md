@@ -24,7 +24,7 @@ let kVTCompressionPropertyKey_SourceFrameCount: CFString
 extern CFStringRef const kVTCompressionPropertyKey_SourceFrameCount;
 ```
 
-#### Discussion
+## Discussion
 
 This property allows a client to give the video encoder advance guidance as to how many frames will be encoded. If nonzero, this value should be the exact number of times that the client calls [`VTCompressionSessionEncodeFrame(_:imageBuffer:presentationTimeStamp:duration:frameProperties:sourceFrameRefcon:infoFlagsOut:)`](./vtcompressionsessionencodeframe%28_,imagebuffer,presentationtimestamp,duration,frameproperties,sourceframerefcon,infoflagsout%29.md) in each pass.
 

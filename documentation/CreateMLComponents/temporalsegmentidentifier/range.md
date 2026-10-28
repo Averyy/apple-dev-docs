@@ -21,7 +21,7 @@ The segment’s timestamp range.
 var range: Range<Int>
 ```
 
-#### Discussion
+## Discussion
 
 To get a timestamp in seconds divide the value by the timescale.
 

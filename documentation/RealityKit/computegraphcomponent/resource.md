@@ -19,7 +19,7 @@ The compute graph resource that defines the simulation.
 var resource: ComputeGraphResource? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Assigning a new resource replaces the current graph and resets the simulation. Set to `nil` to detach the resource without destroying the entity.
 

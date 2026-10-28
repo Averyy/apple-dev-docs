@@ -25,7 +25,7 @@ var identifier: String { get }
 @property (nonatomic, readonly) NSString * identifier;
 ```
 
-#### Discussion
+## Discussion
 
 Use reverse domain notation to format the identifier. The behavior is undefined unless all voices within an extension have a unique identifier.
 

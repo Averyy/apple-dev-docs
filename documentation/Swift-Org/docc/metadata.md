@@ -22,7 +22,7 @@ Use metadata directives to instruct DocC how to build certain documentation file
 }
 ```
 
-#### Overview
+## Overview
 
 Use the `Metadata` directive with other directives to configure how certain documentation files build. Place the directive after the documentation page’s title.
 
@@ -71,7 +71,7 @@ Starting with version 6.0, use the `Metadata` directive with one or more [`Redir
 
 > **Note**: Starting with version 6.0, @Redirected is supported as a child directive of @Metadata. In previous versions, @Redirected must be used as a top level directive.
 
-##### Usage in documentation comments
+### Usage in documentation comments
 
 You can specify `@Metadata` configuration in documentation comments to specify [`Available`](./available.md) directives. Other metadata directives are not supported in documentation comments.
 

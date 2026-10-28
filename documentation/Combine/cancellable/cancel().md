@@ -27,7 +27,7 @@ func cancel()
 - [Receiving and Handling Events with Combine](../receiving-and-handling-events-with-combine.md)
 - [Controlling Publishing with Connectable Publishers](../controlling-publishing-with-connectable-publishers.md)
 
-#### Discussion
+## Discussion
 
 When implementing [`Cancellable`](../cancellable.md) in support of a custom publisher, implement `cancel()` to request that your publisher stop calling its downstream subscribers. Combine doesn’t require that the publisher stop immediately, but the `cancel()` call should take effect quickly. Canceling should also eliminate any strong references it currently holds.
 

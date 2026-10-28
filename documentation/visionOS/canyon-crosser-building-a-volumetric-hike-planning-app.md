@@ -10,7 +10,7 @@ Create a hike planning app using SwiftUI and RealityKit.
 - visionOS 26.0+
 - Xcode 26.0+
 
-#### Overview
+## Overview
 
 Canyon Crosser is a volumetric app that allows people to plan a hike through a historic trail in Grand Canyon National Park. As hiking in the desert revolves around temperature, the app allows people to see the predicted temperatures and plan rest stops and departure time accordingly.
 
@@ -27,7 +27,7 @@ Canyon Crosser demonstrates the use of several visionOS APIs:
 - **Observable Entities** — Shows how to dynamically update and observe changes on RealityKit entities.
 - **Dynamic Bounds Restriction** — Shows how to render content outside the bounds of the volumetric window.
 
-#### Use spatial layout to create a carousel
+## Use spatial layout to create a carousel
 
 After launching Canyon Crosser, the app displays a volumetric window featuring a carousel of landmarks. This carousel allows people to select a virtual hiking destination. While all landmarks are tappable in this example, they currently all lead to the Grand Canyon experience.
 
@@ -90,7 +90,7 @@ VStackLayout(spacing: 20).depthAlignment(.front) {
 }
 ```
 
-#### Present SwiftUI views from a volume
+## Present SwiftUI views from a volume
 
 After selecting a landmark, three named trailhead markers appear for the Grand Canyon. The trailhead names appear above the marker at the top of the trail. Each trailhead has a sub-entity that has a [`ViewAttachmentComponent`](../RealityKit/viewattachmentcomponent.md). The `ViewAttachmentComponent` attaches SwiftUI views to entities.
 
@@ -146,7 +146,7 @@ let trailheadPopoverPositioningEntity = addBillboardingPositioningEntity(
 
 Choosing “Hike This Trail” activates the UI to allow people to interact with the hike. Each hike consists of the route for that hike and one entity for each rest stop along the trail. After selecting a hike, the entities activate. Conversely, the entities deactivate when the person deselects a hike. After selecting a hike, Canyon Crosser displays a toolbar that includes elements for modifying the hike. For example, Canyon Crosser lets people set the hike’s start and stop time, and they can drag a slider to locations along the hike’s path.
 
-#### Use observable entities and components for dynamic updates
+## Use observable entities and components for dynamic updates
 
 SwiftUI views can react to changes in components attached to an [`Observable`](../Observation/observable.md) entity to drive dynamic updates throughout the app.
 
@@ -197,7 +197,7 @@ The getter uses the `observable` property on the entity so any reference to this
 
 The best places to modify observable properties are in a custom system, a gesture closure, or the `make: ` closure of your [`RealityView`](../RealityKit/realityview.md). Avoid modifying observable properties in view bodies or the `update: ` closure. The `make: ` closure of a RealityView differs from the `update: ` closure in that it doesn’t create a dependency when you access an observable property and doesn’t re-run on changes to the property.
 
-#### Request additional margins for drawing beyond the volume’s bounds
+## Request additional margins for drawing beyond the volume’s bounds
 
 Use the [`preferredWindowClippingMargins(_:_:)`](../SwiftUI/view/preferredwindowclippingmargins%28_,_%29.md) view modifier to request additional margins for drawing beyond the bounds of the window. This modifies the system behavior allowing you to display content that extends beyond the volume’s bounds.
 
@@ -215,7 +215,7 @@ In Canyon Crosser, the clipping margins are saved to the `ClippingMarginPercenta
 
 > **Note**: For more details, watch the WWDC25 session, [Set the scene with SwiftUI in visionOS](https://developer.apple.com/videos/play/wwdc2025/290).
 
-#### Related videos
+## Related videos
 
 - [Better together: SwiftUI and RealityKit](https://developer.apple.com/videos/play/wwdc2025/274)
   Discover how to seamlessly blend SwiftUI and RealityKit in visionOS 26. We’ll explore enhancements to Model3D, including animation and ConfigurationCatalog support, and demonstrate smooth transitions to RealityView. You’ll learn how to leverage SwiftUI animations to drive RealityKit component changes, implement interactive manipulation, use new SwiftUI components for richer interactions, and observe RealityKit changes from your SwiftUI code. We’ll also cover how to use unified coordinate conversion for cross-framework coordinate transformations.

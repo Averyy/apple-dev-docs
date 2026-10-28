@@ -30,11 +30,11 @@ func addBoundaryTimeObserver(forTimes times: [NSValue], queue: dispatch_queue_t?
 
 - [Monitoring playback progress in your app](../monitoring-playback-progress-in-your-app.md)
 
-#### Return Value
+## Return Value
 
 An opaque object that you pass as the argument to [`removeTimeObserver(_:)`](./removetimeobserver%28_%29.md) to stop observation.
 
-#### Discussion
+## Discussion
 
 Boundary times are arbitrary points of interest you define within the media timeline. As these times are traversed during normal playback, the block you provide to this method will be invoked. You must maintain a strong reference to the returned value as long as you want the time observer to be invoked by the player. Each invocation of this method should be paired with a corresponding call to [`removeTimeObserver(_:)`](./removetimeobserver%28_%29.md).
 

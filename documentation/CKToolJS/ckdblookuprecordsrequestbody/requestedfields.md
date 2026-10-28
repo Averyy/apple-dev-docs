@@ -15,7 +15,7 @@ The array of record field names that limits the amount of data returned in this 
 attribute string[]? requestedFields;
 ```
 
-#### Discussion
+## Discussion
 
 The server only returns the fields specified in the array. If omitted, the server returns all record fields. If set to an empty array, the server returns record metadata without the fields.
 

@@ -20,7 +20,7 @@ var shouldBeOpaque: Bool { get set }
 @property (nonatomic, assign) BOOL shouldBeOpaque;
 ```
 
-#### Discussion
+## Discussion
 
 When this property is `true`, semitransparent content in the stream presents as backed by a solid white background, making the resulting image fully opaque. The default value is `false`.
 

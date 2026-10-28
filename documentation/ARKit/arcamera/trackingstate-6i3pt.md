@@ -16,7 +16,7 @@ The general quality of position tracking available when the camera captured a fr
 var trackingState: ARCamera.TrackingState { get }
 ```
 
-#### Discussion
+## Discussion
 
 When this value is [`ARCamera.TrackingState.limited(_:)`](./trackingstate-swift.enum/limited%28_%29.md), see the associated [`ARCamera.TrackingState.Reason`](./trackingstate-swift.enum/reason.md) value for a possible cause of low tracking quality.
 

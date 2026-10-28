@@ -17,7 +17,7 @@ Message generator for TranslateGemma, Google’s translation fine-tunes of Gemma
 struct TranslateGemma3MessageGenerator
 ```
 
-#### Overview
+## Overview
 
 TranslateGemma’s chat template needs each user turn tagged with `source_lang_code` / `target_lang_code` (ISO 639-1); supply them via `UserInput.additionalContext`. Without those codes this behaves exactly like `DefaultMessageGenerator`.
 

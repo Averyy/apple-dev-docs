@@ -26,7 +26,7 @@ class AVCaptureManualExposureBracketedStillImageSettings
 
 - [Capturing a bracketed photo sequence](./capturing-a-bracketed-photo-sequence.md)
 
-#### Overview
+## Overview
 
 The `AVCaptureManualExposureBracketedStillImageSettings` class is a concrete subclass of the `AVCaptureBracketedStillImageSettings` class used when bracketing exposure duration and ISO.
 

@@ -19,7 +19,7 @@ A Boolean value that indicates whether to determine matches using numerical valu
 var numericMatch: Bool?
 ```
 
-#### Discussion
+## Discussion
 
 Set the value of this property to `true` to give the model the option to compare numerical values. For example, you might enable this option if your content contains Boolean attributes, star ratings, or any other attributes with numerical values. If you don’t specify a value for this property, the default value is `false`.
 

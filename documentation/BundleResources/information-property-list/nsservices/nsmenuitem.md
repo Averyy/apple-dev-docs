@@ -14,7 +14,7 @@ Text for a Services menu item.
 - **Name**: `NSMenuItem` (Menu)
 - **Type**: dictionary
 
-#### Discussion
+## Discussion
 
 The dictionary key is `default` with a string value.
 

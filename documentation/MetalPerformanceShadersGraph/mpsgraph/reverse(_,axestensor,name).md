@@ -24,11 +24,11 @@ func reverse(_ tensor: MPSGraphTensor, axesTensor: MPSGraphTensor, name: String?
 - (MPSGraphTensor *) reverseTensor:(MPSGraphTensor *) tensor axesTensor:(MPSGraphTensor *) axesTensor name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor object.
 
-#### Discussion
+## Discussion
 
 Reverses a tensor on given axes. Semantics based on [TensorFlow reverse op](https://www.tensorflow.org/api_docs/python/tf/reverse).
 

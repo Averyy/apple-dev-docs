@@ -18,7 +18,7 @@ An error that represents an invalid output location.
 case invalidOutput(URL)
 ```
 
-#### Discussion
+## Discussion
 
 This error occurs in two cases:
 

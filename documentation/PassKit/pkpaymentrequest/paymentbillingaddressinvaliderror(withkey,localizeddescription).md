@@ -24,7 +24,7 @@ class func paymentBillingAddressInvalidError(withKey postalAddressKey: String, l
 + (NSError *) paymentBillingAddressInvalidErrorWithKey:(NSString *) postalAddressKey localizedDescription:(NSString *) localizedDescription;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this convenience method to create a payment error object instead of creating an [`NSError`](../../Foundation/nserror.md) object yourself.  This method indicates an error in the billing address that is received from an Apple Pay sheet.
 

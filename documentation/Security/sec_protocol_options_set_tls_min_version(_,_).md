@@ -23,7 +23,7 @@ func sec_protocol_options_set_tls_min_version(_ options: sec_protocol_options_t,
 void sec_protocol_options_set_tls_min_version(sec_protocol_options_t options, SSLProtocol version);
 ```
 
-#### Discussion
+## Discussion
 
 Set the minimum support TLS version.
 

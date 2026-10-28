@@ -19,11 +19,11 @@ init(deviceCyan cyan: CGFloat, magenta: CGFloat, yellow: CGFloat, black: CGFloat
 + (NSColor *) colorWithDeviceCyan:(CGFloat) cyan magenta:(CGFloat) magenta yellow:(CGFloat) yellow black:(CGFloat) black alpha:(CGFloat) alpha;
 ```
 
-#### Return Value
+## Return Value
 
 The color object.
 
-#### Discussion
+## Discussion
 
 Values below 0.0 are interpreted as 0.0, and values above 1.0 are interpreted as 1.0.
 

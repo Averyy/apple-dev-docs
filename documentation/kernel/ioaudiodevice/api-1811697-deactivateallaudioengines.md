@@ -11,7 +11,7 @@ Deactivates all of the audio engines in the device.
 virtual void deactivateAllAudioEngines();
 ```
 
-#### Overview
+## Overview
 
 This is called by the stop() and free() methods in IOAudioDevice to completely shut down all audio engines as the driver is being shut down.
 

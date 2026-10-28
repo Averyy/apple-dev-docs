@@ -19,7 +19,7 @@ var CPU_BASED2_ENCLS_EXIT_MAP: UInt32 { get }
 CPU_BASED2_ENCLS_EXIT_MAP
 ```
 
-#### Discussion
+## Discussion
 
 Must be `0`.
 

@@ -28,7 +28,7 @@ extern HKQuantityTypeIdentifier const HKQuantityTypeIdentifierDistanceDownhillSn
 
 - [Receiving Downhill Skiing and Snowboarding Data](../receiving-downhill-skiing-and-snowboarding-data.md)
 
-#### Discussion
+## Discussion
 
 These samples use length units (described in [`HKUnit`](../hkunit.md)) and measure cumulative values (described in [`HKQuantityAggregationStyle`](../hkquantityaggregationstyle.md)). During downhill skiing workouts, the system automatically records distance samples on Apple Watch.
 

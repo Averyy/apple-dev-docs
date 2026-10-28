@@ -21,7 +21,7 @@ case missingWinningPostback
 SKAdTestErrorCodeMissingWinningPostback
 ```
 
-#### Discussion
+## Discussion
 
 Check that the first postback in the `postbacks` array you set when calling [`setPostbacks(_:)`](../../skadtestsession/setpostbacks%28_%29.md) has `didWin` set to `true`.
 

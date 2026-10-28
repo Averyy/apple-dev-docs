@@ -19,7 +19,7 @@ var arrangesAllSubviews: Bool { get set }
 @property BOOL arrangesAllSubviews;
 ```
 
-#### Discussion
+## Discussion
 
 If the value of this property is [`true`](../../Swift/true.md), the split view arranges all of its subviews automatically. The [`arrangedSubviews`](./arrangedsubviews.md) array is identical to the split view’s [`subviews`](../nsview/subviews.md) array, so any change to [`subviews`](../nsview/subviews.md) reflects in the [`arrangedSubviews`](./arrangedsubviews.md) array. The default value of this property is [`true`](../../Swift/true.md).
 

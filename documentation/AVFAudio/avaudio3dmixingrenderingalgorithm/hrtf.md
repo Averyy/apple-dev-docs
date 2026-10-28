@@ -25,7 +25,7 @@ case HRTF
 AVAudio3DMixingRenderingAlgorithmHRTF
 ```
 
-#### Discussion
+## Discussion
 
 The head-related transfer function is a CPU-intensive algorithm.
 

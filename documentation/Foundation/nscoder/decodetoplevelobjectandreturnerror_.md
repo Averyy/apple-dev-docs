@@ -21,7 +21,7 @@ Decodes a previously-encoded object, populating an error if decoding fails.
 - (id) decodeTopLevelObjectAndReturnError:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 The decoded object, or `nil` if decoding fails.
 

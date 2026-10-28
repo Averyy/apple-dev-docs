@@ -21,7 +21,7 @@ Device ID (if special file)
 var specialDeviceID: DeviceID { get set }
 ```
 
-#### Discussion
+## Discussion
 
 For character or block special files, the returned `DeviceID` may have meaningful major and minor values. For non-special files, this property is usually meaningless and often set to 0.
 

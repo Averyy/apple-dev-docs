@@ -27,7 +27,7 @@ func BNNSFilterCreateLayerReduction(_ layer_params: UnsafePointer<BNNSLayerParam
 BNNSFilterBNNSFilterCreateLayerReduction(const BNNSLayerParametersReduction *layer_params, const BNNSFilterParameters *filter_params);
 ```
 
-#### Discussion
+## Discussion
 
 Use a reduction layer to reduce an axis or axes of a tensor to a scalar value. Specify a size of one for the dimension or dimensions you need to reduce.
 

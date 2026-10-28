@@ -41,7 +41,7 @@ protocol INRidesharingDomainHandling : INGetRideStatusIntentHandling, INListRide
 @protocol INRidesharingDomainHandling <INListRideOptionsIntentHandling, INRequestRideIntentHandling, INGetRideStatusIntentHandling>
 ```
 
-#### Overview
+## Overview
 
 The [`INRidesharingDomainHandling`](./inridesharingdomainhandling.md) protocol is a convenience protocol that adopts all of the protocols used to handle ride sharing-related intents. When your app adopts all of the protocols associated with ride sharing, you can adopt this one protocol instead of adopting the [`INListRideOptionsIntentHandling`](./inlistrideoptionsintenthandling.md), [`INRequestRideIntentHandling`](./inrequestrideintenthandling.md), [`INGetRideStatusIntentHandling`](./ingetridestatusintenthandling.md), [`INCancelRideIntentHandling`](./incancelrideintenthandling.md), and [`INSendRideFeedbackIntentHandling`](./insendridefeedbackintenthandling.md) protocols separately.
 

@@ -19,7 +19,7 @@ The background color of the list.
 var backgroundColor: UIColor? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The default vaue is `nil`, which means that the configuration uses the system background color for the specified appearance.
 

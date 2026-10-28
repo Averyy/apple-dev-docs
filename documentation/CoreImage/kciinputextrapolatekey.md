@@ -24,7 +24,7 @@ let kCIInputExtrapolateKey: String
 extern NSString * const kCIInputExtrapolateKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key needs to be an `NSNumber` instance.
 

@@ -28,11 +28,11 @@ init(recurrenceWith type: EKRecurrenceFrequency, interval: Int, daysOfTheWeek da
 
 - [Creating a recurring event](../creating-a-recurring-event.md)
 
-#### Return Value
+## Return Value
 
 The initialized recurrence rule, or `nil` if invalid values are provided.
 
-#### Discussion
+## Discussion
 
 Negative values indicate counting backwards from the end of the recurrence rule’s frequency.
 

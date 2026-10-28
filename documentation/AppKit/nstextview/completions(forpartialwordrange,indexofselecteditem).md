@@ -19,11 +19,11 @@ func completions(forPartialWordRange charRange: NSRange, indexOfSelectedItem ind
 - (NSArray<NSString *> *) completionsForPartialWordRange:(NSRange) charRange indexOfSelectedItem:(NSInteger *) index;
 ```
 
-#### Return Value
+## Return Value
 
 An array of potential completions, in the order to be presented, representing possible word completions available from a partial word at `charRange`. Returning `nil` or a zero-length array suppresses completion.
 
-#### Discussion
+## Discussion
 
 May be overridden by subclasses to modify or override the list of possible completions.
 

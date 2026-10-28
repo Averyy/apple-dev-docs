@@ -26,11 +26,11 @@ class var notANumber: NSDecimalNumber { get }
 @property (class, copy, readonly) NSDecimalNumber * notANumber;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSDecimalNumber` object that specifies no number.
 
-#### Discussion
+## Discussion
 
 Any arithmetic method receiving [`notANumber`](./notanumber.md) as an argument returns [`notANumber`](./notanumber.md).
 

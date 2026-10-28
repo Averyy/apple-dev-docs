@@ -23,7 +23,7 @@ var droppedFrameReplacementPolicy: AVCaptureBroadcastVideoOutput.DroppedFrameRep
 @property (nonatomic) AVCaptureBroadcastVideoOutputDroppedFrameReplacementPolicy droppedFrameReplacementPolicy;
 ```
 
-#### Discussion
+## Discussion
 
 This property determines how the broadcast video output handles dropped frames. The default value is `AVCaptureBroadcastVideoOutputDroppedFrameReplacementPolicyRepeatPreviousFrame`.
 

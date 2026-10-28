@@ -30,7 +30,7 @@ class SKWarpGeometryGrid
 - [Animate the Warping of a Sprite](./animate-the-warping-of-a-sprite.md)
 - [Warping SpriteKit Content By Using an Effect Node](./warping-spritekit-content-by-using-an-effect-node.md)
 
-#### Overview
+## Overview
 
 An `SKWarpGeometryGrid` exposes a 2D array of source positions, and set of destination positions with matching size, that allow you to define which sections of a node should be translated from the source positions to the destination positions. Conceptually, this forms two grids—a source grid and a destination grid—where the visual warping is accomplished by stretching or shrinking each section of the node as the source positions of the grid interpolate to their corresponding destination positions.
 

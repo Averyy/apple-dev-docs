@@ -18,7 +18,7 @@ The device doesn’t have the necessary languages downloaded to perform a transl
 static let notInstalled: TranslationError
 ```
 
-#### Discussion
+## Discussion
 
 This error is thrown if [`canRequestDownloads`](../translationsession/canrequestdownloads.md) is false and either the languages are supported but the person hasn’t approved them or if the person has approved them but the languages haven’t finished downloading.
 

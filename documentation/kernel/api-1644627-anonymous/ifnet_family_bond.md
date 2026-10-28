@@ -13,7 +13,7 @@
 IFNET_FAMILY_BOND = 14
 ```
 
-#### Discussion
+## Discussion
 
 A virtual bonded interface.
 

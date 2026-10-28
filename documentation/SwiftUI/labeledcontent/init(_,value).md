@@ -33,7 +33,7 @@ init<S>(_ titleKey: LocalizedStringKey, value: S) where S : StringProtocol
 init<S>(_ titleResource: LocalizedStringResource, value: S) where S : StringProtocol
 ```
 
-#### Discussion
+## Discussion
 
 This initializer creates a [`Text`](../text.md) label on your behalf, and treats the title similar to [`init(_:)`](../text/init%28_%29.md). See `Text` for more information about localizing strings.
 

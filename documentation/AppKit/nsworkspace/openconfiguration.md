@@ -19,7 +19,7 @@ class OpenConfiguration
 @interface NSWorkspaceOpenConfiguration : NSObject
 ```
 
-#### Overview
+## Overview
 
 Create an [`NSWorkspace.OpenConfiguration`](./openconfiguration.md) object before launching an app or opening a URL using the shared [`NSWorkspace`](../nsworkspace.md) object. Use the properties of this object to customize the behavior of the launched app or the handling of the URLs. For example, you might tell the app to hide itself immediately after launch.
 

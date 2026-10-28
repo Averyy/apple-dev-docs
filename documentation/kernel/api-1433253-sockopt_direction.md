@@ -13,11 +13,11 @@
 sockopt_dir sockopt_direction(sockopt_t sopt);
 ```
 
-#### Return Value
+## Return Value
 
 sock_opt_get or sock_opt_set.
 
-#### Discussion
+## Discussion
 
 Retrieves the direction of the socket option (Get or Set).
 

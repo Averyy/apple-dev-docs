@@ -25,7 +25,7 @@ class CBPeripheral
 @interface CBPeripheral : CBPeer
 ```
 
-#### Overview
+## Overview
 
 The [`CBPeripheral`](./cbperipheral.md) class represents remote peripheral devices that your app discovers with a central manager (an instance of [`CBCentralManager`](./cbcentralmanager.md)). Peripherals use universally unique identifiers (UUIDs), represented by [`NSUUID`](../Foundation/nsuuid.md) objects, to identify themselves. Peripherals may contain one or more services or provide useful information about their connected signal strength.
 

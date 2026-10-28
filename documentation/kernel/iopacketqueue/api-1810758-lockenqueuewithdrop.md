@@ -12,11 +12,11 @@ virtual UInt32 lockEnqueueWithDrop(
  mbuf_tm);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the number of packets dropped and freed by the queue.
 
-#### Overview
+## Overview
 
 Packets are dropped if the size of the queue has reached its capacity. A spinlock is used to synchronize access to the queue.
 

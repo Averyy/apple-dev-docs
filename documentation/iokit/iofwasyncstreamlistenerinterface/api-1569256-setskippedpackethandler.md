@@ -16,7 +16,7 @@ Set the callback that should be called when incoming packets are dropped by the 
 const IOFWAsyncStreamListenerSkippedPacketHandler (*SetSkippedPacketHandler)(IOFWAsyncStreamListenerInterfaceRef self, IOFWAsyncStreamListenerSkippedPacketHandler inHandler);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the callback that was previously set or nil for none.
 

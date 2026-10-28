@@ -18,7 +18,7 @@ case tornOffMenuWindow
 kCGTornOffMenuWindowLevelKey
 ```
 
-#### Discussion
+## Discussion
 
 The level for torn-off menus.
 

@@ -23,7 +23,7 @@ typealias UICollectionViewDiffableDataSourceReferenceSupplementaryViewProvider =
 typedef UICollectionReusableView *(^)(UICollectionView *, NSString *, NSIndexPath *) UICollectionViewDiffableDataSourceSupplementaryViewProvider;
 ```
 
-#### Return Value
+## Return Value
 
 A non-`nil` configured supplementary view object. The supplementary view provider must return a valid view object to the collection view.
 

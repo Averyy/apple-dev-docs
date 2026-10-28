@@ -19,7 +19,7 @@ An asynchronous sequence of suggested completions for the current query text.
 var suggestions: CSUserQuery.Suggestions { get }
 ```
 
-#### Discussion
+## Discussion
 
 Getting the value of this property starts the query and begins the delivery of suggestions. Typically, you get this property as part of a `for..in` loop to iterate over the suggestions and display them in your interface.
 

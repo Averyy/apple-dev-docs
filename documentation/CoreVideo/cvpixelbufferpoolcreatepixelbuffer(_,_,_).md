@@ -25,11 +25,11 @@ func CVPixelBufferPoolCreatePixelBuffer(_ allocator: CFAllocator?, _ pixelBuffer
 extern CVReturn CVPixelBufferPoolCreatePixelBuffer(CFAllocatorRef allocator, CVPixelBufferPoolRef pixelBufferPool, CVPixelBufferRef*pixelBufferOut);
 ```
 
-#### Return Value
+## Return Value
 
 A Core Video result code. See [Result Codes](./result-codes.md) for possible values.
 
-#### Discussion
+## Discussion
 
 This function creates a new pixel buffer using the pixel buffer attributes specified during pool creation. This buffer has default attachments as specified in the `pixelBufferAttributes` parameter of [`CVPixelBufferPoolCreate(_:_:_:_:)`](./cvpixelbufferpoolcreate%28_,_,_,_%29.md), using either the [`kCVBufferPropagatedAttachmentsKey`](./kcvbufferpropagatedattachmentskey.md) or [`kCVBufferNonPropagatedAttachmentsKey`](./kcvbuffernonpropagatedattachmentskey.md) attributes.
 

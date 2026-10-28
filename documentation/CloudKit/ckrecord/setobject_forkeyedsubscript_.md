@@ -21,7 +21,7 @@ Stores an object in the record using the specified key.
 - (void) setObject:(id<CKRecordValue>) object forKeyedSubscript:(CKRecordFieldKey) key;
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**: Don’t call this method directly. The presence of this method is necessary to support subscripting syntax for record objects.
 

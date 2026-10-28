@@ -19,7 +19,7 @@ func reloadData()
 - (void) reloadData;
 ```
 
-#### Discussion
+## Discussion
 
 This method doesn’t refresh the visible item if it hasn’t changed.
 

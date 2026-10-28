@@ -21,7 +21,7 @@ init(title: String?, sections: [CPListSection], assistantCellConfiguration: CPAs
 - (instancetype) initWithTitle:(NSString *) title sections:(NSArray<CPListSection *> *) sections assistantCellConfiguration:(CPAssistantCellConfiguration *) assistantCellConfiguration;
 ```
 
-#### Discussion
+## Discussion
 
 The system provides the text and accessory image for the assistant cell and you can’t change these. Use the [`assistantCellConfiguration`](./assistantcellconfiguration.md) property to update the cell’s configuration after you initialize the template. CarPlay observes this property and automatically updates your app’s interface in response to any changes.
 

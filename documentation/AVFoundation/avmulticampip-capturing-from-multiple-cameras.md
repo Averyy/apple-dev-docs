@@ -12,11 +12,11 @@ Simultaneously record the output from the front and back cameras into a single m
 - Mac Catalyst 15.0+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC 2019 session [225: Advances in Camera Capture & Portrait Segmentation](https://developer.apple.com/videos/play/wwdc19/225/).
 
-##### Configure the sample code project
+### Configure the sample code project
 
 You must run this sample code on one of these devices:
 

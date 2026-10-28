@@ -22,11 +22,11 @@ Returns a custom set of options for [`CKSyncEngine`](../cksyncengine-5sie5.md) t
 func nextFetchChangesOptions(_ context: CKSyncEngine.FetchChangesContext, syncEngine: CKSyncEngine) async -> CKSyncEngine.FetchChangesOptions
 ```
 
-#### Return Value
+## Return Value
 
 Customized fetch options for the current fetch operation, or `context.options` to use the default options without customization.
 
-#### Discussion
+## Discussion
 
 While [`CKSyncEngine`](../cksyncengine-5sie5.md) fetches changes from the server, it calls this function to determine priority and other options for fetching changes.
 

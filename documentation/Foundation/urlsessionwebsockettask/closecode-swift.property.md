@@ -25,7 +25,7 @@ var closeCode: URLSessionWebSocketTask.CloseCode { get }
 @property (readonly) NSURLSessionWebSocketCloseCode closeCode;
 ```
 
-#### Discussion
+## Discussion
 
 You can retrieve the close code at any time. When the task is not yet closed, this value is [`URLSessionWebSocketTask.CloseCode.invalid`](./closecode-swift.enum/invalid.md).
 

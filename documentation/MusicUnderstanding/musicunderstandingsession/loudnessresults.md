@@ -22,7 +22,7 @@ nonisolated
 var loudnessResults: some Sendable & AsyncSequence<LoudnessResult, any Error> { get }
 ```
 
-#### Discussion
+## Discussion
 
 The sequence ends when the caller receives a `nil` result. You can use the loudness results to update meters real-time in your app. Then use `MusicUnderstanding/SessionResult/` to display peak loudness at the end.
 

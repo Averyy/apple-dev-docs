@@ -17,7 +17,7 @@ Allows the handler to receive a live view message from a remote object.
 func receive(_ message: PlaygroundValue)
 ```
 
-#### Discussion
+## Discussion
 
 The example below implements this method to receive a dictionary with a command from a remote object.
 

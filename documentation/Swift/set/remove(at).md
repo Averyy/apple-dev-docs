@@ -24,7 +24,7 @@ mutating func remove(at position: Set<Element>.Index) -> Element
 
 Available when `Element` conforms to `Hashable`.
 
-#### Return Value
+## Return Value
 
 The element that was removed from the set.
 

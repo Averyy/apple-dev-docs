@@ -21,11 +21,11 @@ optional func canRender(withCGLContext cgl_ctx: CGLContextObj!) -> Bool
 - (BOOL) canRenderWithCGLContext:(CGLContextObj) cgl_ctx;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the image can be rendered into this CGL context; otherwise [`false`](../../Swift/false.md), in which case [`render(toBuffer:withBytesPerRow:pixelFormat:forBounds:)`](./render%28tobuffer,withbytesperrow,pixelformat,forbounds%29.md) is called.
 
-#### Discussion
+## Discussion
 
 If your image can render using any OpenGL context, simply return [`true`](../../Swift/true.md). If your code requires special extensions, you’ll need to check for them and then provide the appropriate return value. For more information on checking for OpenGL capabilities supported by the hardware, see [OpenGL Programming Guide for Mac](https://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/OpenGL-MacProgGuide/opengl_intro/opengl_intro.html#//apple_ref/doc/uid/TP40001987).
 

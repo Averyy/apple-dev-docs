@@ -19,7 +19,7 @@ func adjustPageWidthNew(_ newRight: UnsafeMutablePointer<CGFloat>, left oldLeft:
 - (void) adjustPageWidthNew:(CGFloat *) newRight left:(CGFloat) oldLeft right:(CGFloat) oldRight limit:(CGFloat) rightLimit;
 ```
 
-#### Discussion
+## Discussion
 
 This method is invoked by [`printView(_:)`](./printview%28_%29.md). The view can pull in the right edge and return the new value in `newRight`, allowing it to prevent items such as small images or text columns from being divided across pages. If `rightLimit` is exceeded, the pagination mechanism simply uses `rightLimit` for the right edge.
 

@@ -17,7 +17,7 @@ Returns the accessory view of the Print panel.
 - (NSView *) accessoryView;
 ```
 
-#### Return Value
+## Return Value
 
 The accessory view of the receiver, if any.
 

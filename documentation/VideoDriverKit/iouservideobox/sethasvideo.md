@@ -15,7 +15,7 @@ Sets the value indicating the box’s video support.
 kern_return_t SetHasVideo(bool in_has_video);
 ```
 
-#### Discussion
+## Discussion
 
 The object sends a notification to the host to update the object state on success. The object’s work queue synchronizes access to the value.
 

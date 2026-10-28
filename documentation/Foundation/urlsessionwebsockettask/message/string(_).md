@@ -21,7 +21,7 @@ A WebSocket message that contains a string.
 case string(String)
 ```
 
-#### Discussion
+## Discussion
 
 The [`URLSessionWebSocketTask`](../../urlsessionwebsockettask.md) uses UTF-8 encoding to send the message’s string.
 

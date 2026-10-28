@@ -23,7 +23,7 @@ case score
 CLSProgressReportingCapabilityKindScore
 ```
 
-#### Discussion
+## Discussion
 
 Add this capability to indicate that a context reports a score at the end of a task using a [`CLSScoreItem`](../../clsscoreitem.md) instance.
 

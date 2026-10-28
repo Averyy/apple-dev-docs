@@ -21,7 +21,7 @@ Values that define the widget’s size and shape.
 enum WidgetFamily
 ```
 
-#### Overview
+## Overview
 
 Widgets can support one or more sizes, giving users the flexibility to configure their widgets however they like. Each widget size provides a different amount of space for detail, so consider which sizes work best for the type of information the widget displays. For more information about designing widgets, see [Widgets](https://developer.apple.com/design/human-interface-guidelines/widgets/overview/introduction/) or [Complications](https://developer.apple.com/design/human-interface-guidelines/watchos/overview/complications/).
 

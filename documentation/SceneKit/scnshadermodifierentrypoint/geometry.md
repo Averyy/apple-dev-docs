@@ -25,7 +25,7 @@ static let geometry: SCNShaderModifierEntryPoint
 extern SCNShaderModifierEntryPoint const SCNShaderModifierEntryPointGeometry;
 ```
 
-#### Discussion
+## Discussion
 
 Shader modifiers for this entry point execute in the vertex processing stage.
 

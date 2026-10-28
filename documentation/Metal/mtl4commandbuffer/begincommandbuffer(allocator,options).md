@@ -25,7 +25,7 @@ func beginCommandBuffer(allocator: any MTL4CommandAllocator, options: MTL4Comman
 - (void) beginCommandBufferWithAllocator:(id<MTL4CommandAllocator>) allocator options:(MTL4CommandBufferOptions *) options;
 ```
 
-#### Discussion
+## Discussion
 
 Attaches the command buffer to the specified [`MTL4CommandAllocator`](../mtl4commandallocator.md) and declares that the application is ready to encode commands into the command buffer.
 

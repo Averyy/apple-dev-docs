@@ -27,7 +27,7 @@ var numberOfUnits: Int { get }
 @property (nonatomic, readonly) NSUInteger numberOfUnits;
 ```
 
-#### Discussion
+## Discussion
 
 A subscription period duration is calculated by multiplying the number of units by the [`unit`](./unit.md).
 

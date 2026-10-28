@@ -24,7 +24,7 @@ var placeholderForCreatedCollectionList: PHObjectPlaceholder { get }
 @property (nonatomic, strong, readonly) PHObjectPlaceholder * placeholderForCreatedCollectionList;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property if you need to reference the collection created by a change request within the same change block. For details on change blocks, see [`PHPhotoLibrary`](../phphotolibrary.md).
 

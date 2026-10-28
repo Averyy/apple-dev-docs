@@ -19,7 +19,7 @@ The closest decision to the given time within the given tolerance.
 final func decision(at time: CMTime, tolerance: CMTime) -> CNDecision?
 ```
 
-#### Return Value
+## Return Value
 
 A decision representing the closest decision to the given time within the given tolerance. Returns nil if there are none.
 

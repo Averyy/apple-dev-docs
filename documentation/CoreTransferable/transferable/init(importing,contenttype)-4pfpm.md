@@ -21,7 +21,7 @@ Using the type’s `Transferable` conformance implementation, instantiates a val
 init(importing file: URL, contentType: UTType?) async throws
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation of this initializer is available to all types that conform to [`Transferable`](../transferable.md) protocol.
 

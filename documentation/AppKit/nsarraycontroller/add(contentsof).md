@@ -19,7 +19,7 @@ func add(contentsOf objects: [Any])
 - (void) addObjects:(NSArray *) objects;
 ```
 
-#### Discussion
+## Discussion
 
 If [`selectsInsertedObjects`](./selectsinsertedobjects.md) is [`true`](../../Swift/true.md) (the default), the added objects are selected in the array controller.
 

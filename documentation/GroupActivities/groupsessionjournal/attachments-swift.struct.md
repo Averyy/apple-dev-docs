@@ -20,7 +20,7 @@ An asynchronous sequence that contains one or more incoming attachment container
 struct Attachments
 ```
 
-#### Overview
+## Overview
 
 After a participant uploads a file or data, the system makes that content available on the [`GroupSessionJournal.Attachments`](./attachments-swift.struct.md) asynchronous sequence of each session participant. Configure an asynchronous task to monitor this sequence and process results when they arrive.
 

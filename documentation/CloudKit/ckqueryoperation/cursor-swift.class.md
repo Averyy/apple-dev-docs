@@ -25,7 +25,7 @@ class Cursor
 @interface CKQueryCursor : NSObject
 ```
 
-#### Overview
+## Overview
 
 You don’t create instances of this class yourself. When fetching records using a query operation, if the number of results exceeds the limit for the query, CloudKit provides a cursor. Use that cursor to create a new instance of [`CKQueryOperation`](../ckqueryoperation.md) and retrieve the next batch of results for the same query.
 

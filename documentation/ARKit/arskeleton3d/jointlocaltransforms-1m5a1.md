@@ -16,7 +16,7 @@ The local space transforms for each joint.
 @property (nonatomic, readonly) const simd_float4x4 * jointLocalTransforms;
 ```
 
-#### Discussion
+## Discussion
 
 Local space refers to a joint’s position relative to its parent joint.
 

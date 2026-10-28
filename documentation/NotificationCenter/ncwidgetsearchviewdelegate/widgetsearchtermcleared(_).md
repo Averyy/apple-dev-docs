@@ -22,7 +22,7 @@ func widgetSearchTermCleared(_ controller: NCWidgetSearchViewController)
 - (void) widgetSearchTermCleared:(NCWidgetSearchViewController *) controller;
 ```
 
-#### Discussion
+## Discussion
 
 When the delegate receives this message, it should stop the current search.
 

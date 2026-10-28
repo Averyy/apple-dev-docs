@@ -5,7 +5,7 @@
 
 Manage the rendering, selection, and entry of text in your view.
 
-#### Overview
+## Overview
 
 SwiftUI provides built-in views that display text to the user, like [`Text`](./text.md) and [`Label`](./label.md), or that collect text from the user, like [`TextField`](./textfield.md) and [`TextEditor`](./texteditor.md). Use text and symbol modifiers to control how SwiftUI displays and manages that text. For example, you can set a font, specify text layout parameters, and indicate what kind of input to expect.
 

@@ -21,11 +21,11 @@ Calls an error-throwing closure with each received element and publishes any ret
 func tryCompactMap<T>(_ transform: @escaping (Self.Output) throws -> T?) -> Publishers.TryCompactMap<Self, T>
 ```
 
-#### Return Value
+## Return Value
 
 Any non-`nil` optional results of calling the supplied closure.
 
-#### Discussion
+## Discussion
 
 Use [`tryCompactMap(_:)`](./trycompactmap%28_%29.md) to remove `nil` elements from a publisher’s stream based on an error-throwing closure you provide. If the closure throws an error, the publisher cancels the upstream publisher and sends the thrown error to the downstream subscriber as a [`Failure`](./failure.md).
 

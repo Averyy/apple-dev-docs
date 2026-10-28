@@ -24,7 +24,7 @@ let kVTCompressionPropertyKey_PixelAspectRatio: CFString
 extern CFStringRef const kVTCompressionPropertyKey_PixelAspectRatio;
 ```
 
-#### Discussion
+## Discussion
 
 If a video encoder enforces specific pixel aspect ratios, this property will be read-only ([`VTSessionSetProperty(_:key:value:)`](./vtsessionsetproperty%28_,key,value%29.md) returns [`kVTPropertyReadOnlyErr`](./kvtpropertyreadonlyerr.md)). The pixel aspect ratio is set on the format description for output samples, and may affect source frame scaling. `NULL` is a valid value for this property, meaning square pixels (1:1).
 

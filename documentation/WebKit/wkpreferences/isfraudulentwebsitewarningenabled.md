@@ -23,7 +23,7 @@ var isFraudulentWebsiteWarningEnabled: Bool { get set }
 @property (nonatomic, getter=isFraudulentWebsiteWarningEnabled) BOOL fraudulentWebsiteWarningEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`true`](../../Swift/true.md).
 

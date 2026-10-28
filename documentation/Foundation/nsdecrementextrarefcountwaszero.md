@@ -21,15 +21,15 @@ Decrements the specified object’s reference count.
 extern BOOL NSDecrementExtraRefCountWasZero(id object);
 ```
 
-#### Return Value
+## Return Value
 
 [`false`](../Swift/false.md) if `anObject` had an extra reference count, or [`true`](../Swift/true.md) if `anObject` didn’t have an extra reference count—indicating that the object should be deallocated (with `dealloc`).
 
-#### Discussion
+## Discussion
 
 Decrements the “extra reference” count of `anObject`. Newly created objects have only one actual reference, so that a single release message results in the object being deallocated. Extra references are those beyond the single original reference and are usually created by sending the object a retain message. Your code should generally not use these functions unless it is overriding the [`retain`](../ObjectiveC/nsobject-c.protocol/retain.md) or [`release`](../ObjectiveC/nsobject-c.protocol/release.md) methods.
 
-##### Special Considerations
+### Special Considerations
 
 This function is deprecated and unavailable for use with ARC.
 

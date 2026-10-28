@@ -19,7 +19,7 @@ A transient component that stores typed uniform values shared across all Compute
 class ComputeGraphSharedUniforms
 ```
 
-#### Overview
+## Overview
 
 You add scene-wide uniforms via a `ComputeGraphSharedUniforms` — such as gravity, wind, attractor locations, or a global time offset.
 

@@ -23,7 +23,7 @@ static var byWords: NSString.EnumerationOptions { get }
 NSStringEnumerationByWords
 ```
 
-#### Discussion
+## Discussion
 
 Enumerates by words.
 

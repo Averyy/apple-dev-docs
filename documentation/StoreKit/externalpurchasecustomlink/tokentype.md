@@ -21,7 +21,7 @@ Values that represent the external purchase token types.
 struct TokenType
 ```
 
-#### Discussion
+## Discussion
 
 Provide a token type value when you call [`token(for:)`](./token%28for%29-6pixj.md).
 

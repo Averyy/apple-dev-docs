@@ -19,7 +19,7 @@ var preferredScrollEdgeEffectStyle: NSScrollEdgeEffectStyle { get set }
 @property (strong) NSScrollEdgeEffectStyle * preferredScrollEdgeEffectStyle;
 ```
 
-#### Discussion
+## Discussion
 
 To allow for a soft edge on the interior edge of a titlebar accessory:
 

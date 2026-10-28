@@ -8,13 +8,13 @@ framework: "swift-async-algorithms/AsyncAlgorithms"
 **Framework**: swift-async-algorithms/AsyncAlgorithms  
 **Role**: Article
 
-#### Overview
+## Overview
 
 - Author(s): [Kevin Perry](https://github.com/kperryua)
 
 [ [Source](https://github.com/apple/swift-async-algorithms/blob/main/Sources/AsyncAlgorithms/AsyncJoinedSequence.swift) | [Tests](https://github.com/apple/swift-async-algorithms/blob/main/Tests/AsyncAlgorithmsTests/TestJoin.swift) ]
 
-#### Introduction
+## Introduction
 
 Concatenates an asynchronous sequence of asynchronous sequences that share an `Element` type together sequentially where the elements from the resulting asynchronous sequence are comprised in order from the elements of the first asynchronous sequence and then the second (and so on) or until an error occurs. Similar to `chain()`, except the number of asynchronous sequences to concatenate is not known up front.
 
@@ -32,7 +32,7 @@ for try await lineOrSeparator in joinedWithSeparator {
 
 This example shows how an `AsyncSequence` of `URL`s can be turned into an `AsyncSequence` of the lines of each of those files in sequence, with a separator line in between each file.
 
-#### Proposed Solution
+## Proposed Solution
 
 ```swift
 extension AsyncSequence where Element: AsyncSequence {
@@ -50,7 +50,7 @@ extension AsyncSequence where Element: AsyncSequence {
 }
 ```
 
-#### Detailed Design
+## Detailed Design
 
 ```swift
 public struct AsyncJoinedSequence<Base: AsyncSequence>: AsyncSequence where Base.Element: AsyncSequence {
@@ -117,7 +117,7 @@ The resulting `AsyncJoinedSequence` or `AsyncJoinedBySeparatorSequence` type is 
 
 When any of the asynchronous sequences being joined together come to their end of iteration, the `Joined` sequence iteration proceeds to the separator asynchronous sequence, if any. When the separator asynchronous sequence terminates, or if no separator was specified, it proceeds on to the next asynchronous sequence. When the last asynchronous sequence reaches the end of iteration the `AsyncJoinedSequence` or `AsyncJoinedBySeparatorSequence` then ends its iteration. At any point in time if one of the comprising asynchronous sequences ever throws an error during iteration the `AsyncJoinedSequence` or `AsyncJoinedBySeparatorSequence` iteration will throw that error and end iteration.
 
-#### Future Directions
+## Future Directions
 
 The Swift Algorithms package has [additional synchronous variants of joined()](https://github.com/apple/swift-algorithms/blob/main/Guides/Joined.md). It is conceivable to bring asynchronous variants of those over to `AsyncSequence`.
 
@@ -125,11 +125,11 @@ The variant that takes a single element as a separator is straightforward, but c
 
 There is another variant that takes a closure that allows one to customize the separator based on the return value of a closure. That closure is passed each of the two consecutive asynchronous sequences (not the two neighboring elements in consecutive sequences). This variant arguably has the greatest utility when the sequence type conforms to `Collection`, allowing either the `count` or any arbitrary element to be obtained directly. With `AsyncSequence`, it is less likely that this function with provide a similar level of utility, so it has been omitted.
 
-#### Alternatives Considered
+## Alternatives Considered
 
 Because `joined()` is essentially identical to `flatMap { $0 }`, it was considered that this should be called `flatten()` instead. However, it is preferable to follow the lead of the Swift standard library’s `joined()` method.
 
-#### Credits/Inspiration
+## Credits/Inspiration
 
 The Swift standard library has functions on synchronous sequences ([joined()](https://developer.apple.com/documentation/swift/sequence/1641166-joined), [joined(separator:)](https://developer.apple.com/documentation/swift/sequence/2431985-joined)) that perform similar (but synchronous) tasks.
 

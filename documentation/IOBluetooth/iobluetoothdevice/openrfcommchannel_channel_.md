@@ -15,11 +15,11 @@ Opens a new RFCOMM channel to the target device. Returns only once the channel i
 - (IOReturn) openRFCOMMChannel:(BluetoothRFCOMMChannelID) channelID channel:(IOBluetoothRFCOMMChannel **) rfcommChannel;
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if the open process was successfully started (or if an existing RFCOMM channel was found).
 
-#### Discussion
+## Discussion
 
 This method will begin the process of opening a new RFCOMM channel to the target device. The baseband connection to the device will be opened if it is not open already. The RFCOMM channel open process will not complete until the client has registered an incoming data listener on the new channel.
 

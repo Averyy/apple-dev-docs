@@ -14,7 +14,7 @@
 virtual IOHIDElement * getParentElement();
 ```
 
-#### Return Value
+## Return Value
 
 Returns the parent element, if any.
 

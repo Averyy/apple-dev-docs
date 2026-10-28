@@ -21,7 +21,7 @@ A regex component that chooses exactly one of its constituent regex components w
 struct ChoiceOf<Output>
 ```
 
-#### Overview
+## Overview
 
 You can use `ChoiceOf` to provide a group of regex components, each of which can be exclusively matched. In this example, `regex` successfully matches either a `"CREDIT"` or `"DEBIT"` substring:
 

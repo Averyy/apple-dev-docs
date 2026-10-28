@@ -19,11 +19,11 @@ class func dragColor(_ color: NSColor, with event: NSEvent, from sourceView: NSV
 + (BOOL) dragColor:(NSColor *) color withEvent:(NSEvent *) event fromView:(NSView *) sourceView;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md)
 
-#### Discussion
+## Discussion
 
 This method is usually invoked by the `mouseDown:` method of `sourceView`. The dragging mechanism handles all subsequent events.
 

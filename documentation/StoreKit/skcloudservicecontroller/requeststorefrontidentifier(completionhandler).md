@@ -30,7 +30,7 @@ func requestStorefrontIdentifier() async throws -> String
 - (void) requestStorefrontIdentifierWithCompletionHandler:(void (^)(NSString *storefrontIdentifier, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 You need to get the appropriate storefront before you specify a product, because product identifiers are meaningful within the context of a store.
 

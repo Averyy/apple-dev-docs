@@ -24,7 +24,7 @@ enum AudioBalanceFadeType
 enum AudioBalanceFadeType : UInt32;
 ```
 
-#### Overview
+## Overview
 
 These constants are used as values for the `mType` field of the [`AudioBalanceFade`](./audiobalancefade.md) structure.
 

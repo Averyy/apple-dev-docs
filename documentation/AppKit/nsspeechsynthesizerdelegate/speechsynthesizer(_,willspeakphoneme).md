@@ -22,11 +22,11 @@ optional func speechSynthesizer(_ sender: NSSpeechSynthesizer, willSpeakPhoneme 
 - (void) speechSynthesizer:(NSSpeechSynthesizer *) sender willSpeakPhoneme:(short) phonemeOpcode;
 ```
 
-#### Discussion
+## Discussion
 
 One use of this method might be to animate a mouth on screen to match the generated speech.
 
-##### Special Considerations
+### Special Considerations
 
 This method is not sent for modern voices. It is only supported for MacinTalk voices.
 

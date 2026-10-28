@@ -15,7 +15,7 @@ A property of IONetworkInterface objects.
 #define kIOInterfaceState
 ```
 
-#### Discussion
+## Discussion
 
 The kIOInterfaceState property has an OSNumber value that describes the current state of the interface object. This property is not exported to BSD via the ifnet structure.
 

@@ -26,11 +26,11 @@ func AUGraphGetNumberOfInteractions(_ inGraph: AUGraph, _ outNumInteractions: Un
 extern OSStatus AUGraphGetNumberOfInteractions(AUGraph inGraph, UInt32 *outNumInteractions);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 
-#### Discussion
+## Discussion
 
 The number of node interactions currently being managed by the graph.
 

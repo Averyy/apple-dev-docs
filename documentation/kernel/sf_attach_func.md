@@ -13,11 +13,11 @@
 typedef errno_t (*sf_attach_func)(void **cookie, socket_t so);
 ```
 
-#### Return Value
+## Return Value
 
 If you return a non-zero value, your filter will not be attached to this socket.
 
-#### Discussion
+## Discussion
 
 sf_attach_func is called to notify the filter it has been attached to a socket. The filter may allocate memory for this attachment and use the cookie to track it. This filter is called in one of two cases:
 

@@ -19,7 +19,7 @@ var printInfo: NSPrintInfo? { get }
 @property (strong, readonly, nullable) NSPrintInfo * printInfo;
 ```
 
-#### Discussion
+## Discussion
 
 The NSPrintInfo object is set using the [`beginSheet(with:modalFor:delegate:didEnd:contextInfo:)`](./beginsheet%28with,modalfor,delegate,didend,contextinfo%29.md) or [`runModal(with:)`](./runmodal%28with%29.md) method. The shared NSPrintInfo object is used if the receiver is run using [`runModal()`](./runmodal%28%29.md).
 

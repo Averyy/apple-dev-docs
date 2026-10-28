@@ -5,7 +5,7 @@
 
 Modifies the compositing blend mode and opacity percentage.
 
-#### Overview
+## Overview
 
 To modify the compositing blend mode and opacity percentage in the ranage [0.0..1.0] of the visible image, use the following attributes:
 
@@ -14,7 +14,7 @@ To modify the compositing blend mode and opacity percentage in the ranage [0.0..
 | `amount` | A fractional value that specifies the opacity amount, for example, `0.75`. |
 | `mode` | An integer value that corresponds to a built-in FCP blend mode; see [Blend Modes](./adjust-blend.md#Blend-Modes) for a list of supported values. |
 
-##### Blend Modes
+### Blend Modes
 
 - 0 (Normal)
 - 2 (Subtract)

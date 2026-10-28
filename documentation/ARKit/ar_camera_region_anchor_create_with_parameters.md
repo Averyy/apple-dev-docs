@@ -15,11 +15,11 @@ Create a camera region anchor using a transform from the anchor to the origin co
 extern ar_camera_region_anchor_tar_camera_region_anchor_create_with_parameters(simd_float4x4 origin_from_anchor_transform, float width, float height, ar_camera_region_camera_enhancement_t camera_enhancement);
 ```
 
-#### Return Value
+## Return Value
 
 An instance of `ar_camera_region_anchor_t`.
 
-#### Discussion
+## Discussion
 
 > **Note**: This type supports ARC. In non-ARC files, use `ar_retain()` and `ar_release()` to retain and release the object.
 

@@ -25,11 +25,11 @@ class func path(forResource name: String?, ofType ext: String?, inDirectory bund
 + (NSString *) pathForResource:(NSString *) name ofType:(NSString *) ext inDirectory:(NSString *) bundlePath;
 ```
 
-#### Return Value
+## Return Value
 
 The full pathname for the resource file or `nil` if the file could not be located. This method also returns `nil` if the bundle specified by the `bundlePath` parameter does not exist or is not a readable directory.
 
-#### Discussion
+## Discussion
 
 For details on how localized resources are found, read [The Bundle Search Pattern](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFBundles/AccessingaBundlesContents/AccessingaBundlesContents.html#//apple_ref/doc/uid/10000123i-CH104-SW7) in [Bundle Programming Guide](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFBundles/Introduction/Introduction.html#//apple_ref/doc/uid/10000123i).
 

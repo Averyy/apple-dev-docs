@@ -15,7 +15,7 @@ The text encoding to use.
 extern NSAttributedStringDocumentReadingOptionKey NSTextEncodingNameDocumentOption;
 ```
 
-#### Discussion
+## Discussion
 
 [`NSString`](../Foundation/nsstring.md) containing the name, IANA or otherwise, of a text encoding to override any encoding specified in an HTML document. Mutually exclusive with [`NSCharacterEncodingDocumentOption`](./nscharacterencodingdocumentoption.md). The previous string constant was `@"TextEncodingName"`.
 

@@ -21,7 +21,7 @@ Returns a shading instance that tiles an image across the infinite plane.
 static func tiledImage(_ image: Image, origin: CGPoint = .zero, sourceRect: CGRect = CGRect(x: 0, y: 0, width: 1, height: 1), scale: CGFloat = 1) -> GraphicsContext.Shading
 ```
 
-#### Return Value
+## Return Value
 
 A shading instance filled with a tiled image.
 

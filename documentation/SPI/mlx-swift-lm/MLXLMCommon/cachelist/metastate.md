@@ -17,7 +17,7 @@ metaState format: [childCount, (className, stateCount, metaStateCount, …metaSt
 override var metaState: [String] { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Like Python’s CacheList.meta_state which returns [child_class_names, child_meta_states], but flattened for Swift’s [String] format.
 

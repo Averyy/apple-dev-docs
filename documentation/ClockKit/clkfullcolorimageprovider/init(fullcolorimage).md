@@ -21,11 +21,11 @@ convenience init(fullColorImage image: UIImage)
 + (instancetype) providerWithFullColorImage:(UIImage *) image;
 ```
 
-#### Return Value
+## Return Value
 
 A full-color image provider.
 
-#### Discussion
+## Discussion
 
 For information about the image sizes and masks, see [Apple Watch Human Interface Guidelines](https://developer.apple.com/watch/human-interface-guidelines/).
 

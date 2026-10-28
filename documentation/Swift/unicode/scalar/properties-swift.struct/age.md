@@ -21,7 +21,7 @@ The earliest version of the Unicode Standard in which the scalar was assigned.
 var age: Unicode.Version? { get }
 ```
 
-#### Discussion
+## Discussion
 
 This value is `nil` for code points that have not yet been assigned.
 

@@ -19,7 +19,7 @@ var integerValue: Int { get set }
 @property NSInteger integerValue;
 ```
 
-#### Discussion
+## Discussion
 
 This property uses the [`objectValue`](./objectvalue.md) property to access the actual value. If the cell is not a text-type cell or its contents are not scannable, the value in this property is `0`.
 

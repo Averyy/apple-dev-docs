@@ -10,7 +10,7 @@ framework: "swift-openapi-generator/swift-openapi-generator"
 
 Learn about when and how the generator emits a custom Codable implementation.
 
-#### Overview
+## Overview
 
 As much as possible, the generator tries to rely on the [compiler-synthesized](https://developer.apple.com/documentation/foundation/archives_and_serialization/encoding_and_decoding_custom_types#2904055) implementation of Codable requirements:
 
@@ -34,7 +34,7 @@ This document goes into detail about each of these types, explains why a custom 
 
 > 💡 **Tip**: To check out a concrete example of generated Codable conformances, inspect the file-based reference tests, which contain realistic examples of generated code for various schemas.
 
-##### Object structs with additional properties
+### Object structs with additional properties
 
 An [object schema](https://datatracker.ietf.org/doc/html/draft-bhutton-json-schema-00#section-4.2.1) can have the [additionalProperties](https://datatracker.ietf.org/doc/html/draft-bhutton-json-schema-00#section-10.3.2.3) key, which documents how any properties *not* documented in the `properties` key should be handled.
 
@@ -55,7 +55,7 @@ An [object schema](https://datatracker.ietf.org/doc/html/draft-bhutton-json-sche
    - Custom decoder: yes, similar to 3., with the difference that values are validated to be of the specified type (for example, `Int`).
    - Custom encoder, yes, same as 3.
 
-##### Structs for allOf and anyOf
+### Structs for allOf and anyOf
 
 The [allOf](https://datatracker.ietf.org/doc/html/draft-bhutton-json-schema-00#section-10.2.1.1) and [anyOf](https://datatracker.ietf.org/doc/html/draft-bhutton-json-schema-00#section-10.2.1.2) schemas include one or more subschemas that all (for `allOf`) or at least one (for `anyOf`) need to be decodable from the underlying value.
 
@@ -84,7 +84,7 @@ The custom Codable implementations work as follows:
   - Custom decoder: yes, for key-value pair schemas uses `init(from:)` of the type directly, for others decodes from a single value container. The decoding is graceful, in other words any failure is turned into a nil result. But, to ensure a valid `anyOf`, at the end it validates that at least one subschema decoded successfully, otherwise throws an error.
   - Custom encoder: yes, only encodes the first *non-nil* non-key-value pair schema using a single value container (similar to the `allOf` encoder above), then it encodes all the key-value pair subschemas using their `encoder(to:)` method directly. Note that only if all of the non-key-value pair schemas were nil will it actually encode the key-value pairs, again because an `anyOf` cannot be simultaneously a single value schema (for example, a string) and a key-value pair schema (for example, a dictionary).
 
-##### Enums for oneOf
+### Enums for oneOf
 
 A [oneOf](https://datatracker.ietf.org/doc/html/draft-bhutton-json-schema-00#section-10.2.1.3) schema represents a payload that matches exactly one subschema (but not more).
 
@@ -109,17 +109,17 @@ The rule of thumb is roughly as follows:
   - while not required, it is recommended for better performance and debugging.
   - it also allows having multiple schemas that would successfully validate from the payload, but without a discriminator would fail to be a valid oneOf, where exactly one schema must validate (but not more).
 
-###### oneOf without a discriminator
+#### oneOf without a discriminator
 
 - Custom decoder: yes, tries to decode each subschema one-by-one, and stops when one validates correctly. For decoding the subschemas, it uses the same rules as allOf/anyOf, where key-value pair schemas are decoded directly using `init(from:)`, and other schemas are decoded from a single value container.
 - Custom encoder: yes, a switch statement over the schema and only encodes the value matching the case of the enum, again, using the direct `encode(to:)` method for key-value pair schemas, and a single value container for all other schemas.
 
-###### oneOf with a discriminator
+#### oneOf with a discriminator
 
 - Custom decoder: yes, performs decoding in two stages. First, decodes the discriminator property value to identify the Swift type to decode the full payload into. Then switches over the discriminator value and decodes the full payload using the chosen type. Since oneOf enums with a discriminator always contain object-ish schemas, which are key-value pair schemas, uses the direct `init(from:)` decoding initializer.
 - Custom encoder: yes, same as oneOf without a discriminator, but always uses `encode(to:)` because only key-value pair schemas are ever used here.
 
-##### A note on Foundation.Date
+### A note on Foundation.Date
 
 While `Foundation.Date` technically conforms to `Codable`, it’s not really codable on its own, as the method for coding is customizable by JSONEncoder/JSONDecoder (and other coders) using `dateEncodingStrategy`.
 

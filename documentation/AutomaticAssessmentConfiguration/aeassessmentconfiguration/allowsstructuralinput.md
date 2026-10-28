@@ -20,7 +20,7 @@ var allowsStructuralInput: Bool { get set }
 @property (nonatomic, assign) BOOL allowsStructuralInput;
 ```
 
-#### Discussion
+## Discussion
 
 Chinese and Japanese structural input methods allow users to enter characters using component-based input. An assessment session disables structural input by default, but you can allow it by setting [`allowsStructuralInput`](./allowsstructuralinput.md) to `true` in the [`AEAssessmentConfiguration`](../aeassessmentconfiguration.md) instance that you use to initialize a session.
 

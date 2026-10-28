@@ -25,7 +25,7 @@ convenience init(configurationFileNamed filename: String) throws
 - (instancetype) initWithConfigurationFileNamed:(NSString *) filename error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 Create a configuration file in Xcode by selecting File > New > File and choosing StoreKit Configuration File. By default, the filename is `Configuration.storekit`. You can include multiple configuration files in your project, but only one can be active at a time. StoreKit configuration files always have a .`storekit` file extension.
 

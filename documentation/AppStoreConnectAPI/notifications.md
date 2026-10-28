@@ -5,7 +5,7 @@
 
 Add and read information for alternative distribution package notifications.
 
-#### Overview
+## Overview
 
 Alternative marketplaces can use the marketplace webhooks API [`Add a Marketplace Webhook Configuration`](./post-v1-marketplacewebhooks.md) endpoint to set up an `endpointURL,` where the marketplace receives notifications about changes to apps that it distributes.
 

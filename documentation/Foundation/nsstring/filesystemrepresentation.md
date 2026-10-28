@@ -25,7 +25,7 @@ var fileSystemRepresentation: UnsafePointer<CChar> { get }
 @property (readonly) const char * fileSystemRepresentation;
 ```
 
-#### Discussion
+## Discussion
 
 The returned C string will be automatically freed just as a returned object would be released; your code should copy the representation or use [`getFileSystemRepresentation(_:maxLength:)`](./getfilesystemrepresentation%28_,maxlength%29.md) if it needs to store the representation outside of the memory context in which the representation was created.
 

@@ -5,7 +5,7 @@
 
 Draw text in your scene, such as a health indicator or a “Game Over” banner, by using a label node.
 
-#### Overview
+## Overview
 
 Most apps need to display text at some point, and implementing it correctly yourself can take a significant amount of work. But the [`SKLabelNode`](./sklabelnode.md) class does all of the work necessary to load fonts and create text for display.
 

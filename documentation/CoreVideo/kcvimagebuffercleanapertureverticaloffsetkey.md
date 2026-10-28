@@ -25,7 +25,7 @@ let kCVImageBufferCleanApertureVerticalOffsetKey: CFString
 extern CFStringRef const kCVImageBufferCleanApertureVerticalOffsetKey;
 ```
 
-#### Discussion
+## Discussion
 
 The vertical offset value is of type [`CFNumber`](../CoreFoundation/cfnumber.md).
 

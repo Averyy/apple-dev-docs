@@ -5,7 +5,7 @@
 
 Update your just-in-time (JIT) compiler to work with the Hardened Runtime capability, and with Apple silicon.
 
-#### Overview
+## Overview
 
 > ❗ **Important**:  If you need to build for Intel-based processors using Xcode 27 to target macOS 27 or DriverKit 27, add `x86_64` to the Architectures (`ARCHS`) build setting in Xcode, as described in the Architectures section of [Build settings reference](../Xcode/build-settings-reference.md) and [Configuring the build settings of a target](../Xcode/configuring-the-build-settings-of-a-target.md). If you need to run Xcode on an Intel-based processor, use Xcode 26 or earlier.
 
@@ -15,7 +15,7 @@ A just-in-time (JIT) compiler translates byte-code or intermediate script code i
 
 Because JIT compilation uses some techniques that the Hardened Runtime capability specifically disallows, you need to update your app if it supports that capability. Even if your app doesn’t adopt the Hardened Runtime, you need to still make changes to support Apple silicon. For more information about configuring the Hardened Runtime capability, see [Hardened Runtime](../Security/hardened-runtime.md).
 
-##### Enable the JIT entitlements for the Hardened Runtime
+### Enable the JIT entitlements for the Hardened Runtime
 
 The Hardened Runtime capability prohibits the execution of code in a memory page, unless that code is accompanied by a valid code signature. Because a JIT compiler doesn’t sign the code it generates, it technically violates the rules of the Hardened Runtime. To fix this issue, you need to adjust your Hardened Runtime settings to allow JIT-related activities.
 
@@ -29,7 +29,7 @@ Additionally, add the `com.apple.security.cs.jit-write-allowlist` entitlement wi
 
 When memory protection is enabled, a thread cannot write to a memory region and execute instructions in that region at the same time. Apple silicon enables memory protection for all apps, regardless of whether they adopt the Hardened Runtime. Intel-based Mac computers enable memory protection only for apps that adopt the Hardened Runtime.
 
-##### Create a callback to write JIT instructions
+### Create a callback to write JIT instructions
 
 Your app writes to the `MAP_JIT` memory region in a callback function, that you pass to the `pthread_jit_write_with_callback_np()` function. The callback needs to take a context pointer as an argument, and return its result as an integer. The callback needs to assume that the memory pointed to by the context pointer can be controlled by an attacker, and validate that the instructions to be written are permitted. For example:
 
@@ -62,7 +62,7 @@ int jit_writing_callback(void *context) {
 }
 ```
 
-##### Add your JIT callback to the allowlist
+### Add your JIT callback to the allowlist
 
 Each executable, for example, your app binary, can define at most one allowlist of functions that the executable uses as callbacks to `pthread_jit_write_with_callback_np()`.
 
@@ -85,7 +85,7 @@ If you add the `com.apple.security.cs.jit-write-allowlist-freeze-late` entitleme
 
 > ❗ **Important**:  Freeze the callback allowlist by calling `pthread_jit_write_freeze_callbacks_np()` early in your app’s startup process, before the app starts processing untrusted inputs.
 
-##### Write instructions to your JIT memory region
+### Write instructions to your JIT memory region
 
 Pass your callback and context pointer to `pthread_jit_write_with_callback_np()` to write code to the `MAP_JIT` memory region. This function:
 
@@ -105,7 +105,7 @@ if (status == JIT_COMPILATION_SUCCESS) {
 }
 ```
 
-##### Invalidate caches and execute the code
+### Invalidate caches and execute the code
 
 Always call `sys_icache_invalidate(_:_:)` before you execute the machine instructions on a recently updated memory page. On Apple silicon, the instruction caches aren’t coherent with data caches, and unexpected results might occur if you execute instructions without invalidating the caches. It’s also safe to call the `sys_icache_invalidate(_:_:)` function on Intel-based Mac computers, where the function does nothing.
 

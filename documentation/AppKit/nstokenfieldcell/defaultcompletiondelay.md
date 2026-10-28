@@ -19,11 +19,11 @@ class var defaultCompletionDelay: TimeInterval { get }
 @property (class, readonly) NSTimeInterval defaultCompletionDelay;
 ```
 
-#### Return Value
+## Return Value
 
 The default completion delay.
 
-#### Discussion
+## Discussion
 
 The default completion delay is `0`.
 

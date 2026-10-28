@@ -21,7 +21,7 @@ A Boolean value indicating whether the scalar’s principal function is to exten
 var isExtender: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 Typical extenders are length and iteration marks.
 

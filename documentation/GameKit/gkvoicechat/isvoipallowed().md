@@ -26,11 +26,11 @@ class func isVoIPAllowed() -> Bool
 + (BOOL) isVoIPAllowed;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if voice chat is available to the game.
 
-#### Discussion
+## Discussion
 
 Some countries or phone carriers may restrict the availability of Voice-over-IP (VoIP) services. Before creating a `GKVoiceChat` object, your game should first check to see whether the device supports VoIP.
 

@@ -24,11 +24,11 @@ init!(object value: Any!, in context: JSContext!)
 + (JSValue *) valueWithObject:(id) value inContext:(JSContext *) context;
 ```
 
-#### Return Value
+## Return Value
 
 A new JavaScript value representing the object.
 
-#### Discussion
+## Discussion
 
 Converting a native object creates a JavaScript object, including a constructor and prototype chain that reflects the object’s inheritance in the Objective-C or Swift type hierarchy. By default, properties and methods on the converted object are not exposed to JavaScript: to choose which properties and methods should be visible to JavaScript, see [`JSExport`](../jsexport.md).
 

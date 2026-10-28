@@ -15,7 +15,7 @@ Represents user-specified trust settings.
 typedef SecTrustResultType SecTrustUserSetting;
 ```
 
-#### Discussion
+## Discussion
 
 See [`SecTrustResultType`](./sectrustresulttype.md) for possible values.
 

@@ -14,7 +14,7 @@
 gestaltSndPlayDoubleBuffer = 10
 ```
 
-#### Discussion
+## Discussion
 
 Set if the Sound Manager supports the play-from-disk functions.
 

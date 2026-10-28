@@ -24,7 +24,7 @@ var computeFunction: (any MTLFunction)? { get set }
 @property (nonatomic, strong, readwrite, nullable) id<MTLFunction> computeFunction;
 ```
 
-#### Discussion
+## Discussion
 
 > ⚠️ **Warning**:  Ensure that this value is non-`nil` before creating a new [`MTLComputePipelineState`](../mtlcomputepipelinestate.md) with the associated pipeline descriptor instance.
 

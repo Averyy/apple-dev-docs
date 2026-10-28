@@ -21,7 +21,7 @@ Fits a composed transformer to a sequence of examples.
 func fitted<S>(to input: S, eventHandler: EventHandler? = nil) async throws -> PreprocessingUpdatableEstimator<Preprocessor, Estimator>.Transformer where S : Sequence, Preprocessor.Input == S.Element
 ```
 
-#### Return Value
+## Return Value
 
 The fitted transformer.
 

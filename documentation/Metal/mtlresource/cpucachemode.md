@@ -25,7 +25,7 @@ var cpuCacheMode: MTLCPUCacheMode { get }
 @property (readonly) MTLCPUCacheMode cpuCacheMode;
 ```
 
-#### Discussion
+## Discussion
 
 The cache mode is set when you create the resource and cannot be changed.
 

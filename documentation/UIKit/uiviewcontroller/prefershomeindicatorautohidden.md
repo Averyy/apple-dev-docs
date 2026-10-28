@@ -22,11 +22,11 @@ var prefersHomeIndicatorAutoHidden: Bool { get }
 @property (nonatomic, readonly) BOOL prefersHomeIndicatorAutoHidden;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if your view controller lets the system determine when to hide the indicator, or [`false`](../../Swift/false.md) if you want the indicator to show at all times. The default implementation of this method returns [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Override this method to signal your preference for displaying the visual indicator. The system takes your preference into account, but returning [`true`](../../Swift/true.md) is no guarantee that the indicator will be hidden.
 

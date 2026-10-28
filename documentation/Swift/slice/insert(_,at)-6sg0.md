@@ -23,7 +23,7 @@ mutating func insert(_ newElement: Base.Element, at i: Slice<Base>.Index)
 
 Available when `Base` conforms to `RangeReplaceableCollection`.
 
-#### Discussion
+## Discussion
 
 The new element is inserted before the element currently at the specified index. If you pass the collection’s `endIndex` property as the `index` parameter, the new element is appended to the collection.
 

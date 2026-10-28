@@ -16,7 +16,7 @@ An error that indicates the framework couldn’t complete the evaluation.
 case localError
 ```
 
-#### Discussion
+## Discussion
 
 A retry may succeed.
 

@@ -28,7 +28,7 @@ func removeFromPreferences() async throws
 - (void) removeFromPreferencesWithCompletionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 After the configuration is removed from the preferences the `NEVPNManager` object will still contain the configuration parameters. Calling [`loadFromPreferences(completionHandler:)`](./loadfrompreferences%28completionhandler%29.md): will clear out the configuration parameters from the `NEVPNManager` object.
 

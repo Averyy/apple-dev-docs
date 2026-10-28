@@ -19,7 +19,7 @@ protocol PHProjectExtensionController : NSObjectProtocol
 @protocol PHProjectExtensionController <NSObject>
 ```
 
-#### Overview
+## Overview
 
 The principal view controller for a Photos project extension must conform to this protocol. Methods in this protocol define the basic life cycle of the extension controller. They allow you to define any number of project types that your extension supports; the Photos app displays these project types to the user as choices when creating a new project. To enable this entry point into the extension, the Info.plist must include this key/value pair in its `NSExtensionAttributes` dictionary.
 

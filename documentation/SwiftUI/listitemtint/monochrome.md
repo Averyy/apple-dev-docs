@@ -21,7 +21,7 @@ A standard grayscale tint effect.
 static let monochrome: ListItemTint
 ```
 
-#### Discussion
+## Discussion
 
 The system doesn’t override monochrome tints.
 

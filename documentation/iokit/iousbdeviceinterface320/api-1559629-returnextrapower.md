@@ -16,11 +16,11 @@ Clients can use this API to tell the system that they will not use power that wa
 IOReturn (*ReturnExtraPower)(void *self, UInt32 type, UInt32 powerReturned);
 ```
 
-#### Return Value
+## Return Value
 
 If the returnedPower was not previously allocated, an error will be returned. This will include the case for power that was requested for sleep but was returned for wake. Returns kIOReturnSuccess if successful, kIOReturnNoDevice if there is no connection to an IOService.
 
-#### Discussion
+## Discussion
 
 The device has to be open to use this function.
 

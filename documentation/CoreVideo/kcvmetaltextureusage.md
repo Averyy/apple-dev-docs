@@ -24,7 +24,7 @@ let kCVMetalTextureUsage: CFString
 extern CFStringRef const kCVMetalTextureUsage;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`unknown`](../Metal/mtltextureusage/unknown.md). Use only values which are valid for [`MTLTextureUsage`](../Metal/mtltextureusage.md).
 

@@ -25,7 +25,7 @@ var direction: AVSampleBufferRequest.Direction { get set }
 @property (nonatomic, assign) AVSampleBufferRequestDirection direction;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`AVSampleBufferRequest.Direction.none`](./direction-swift.enum/none.md).
 

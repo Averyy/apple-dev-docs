@@ -22,7 +22,7 @@ func startEventUpdates(handler: @escaping CMPedometerEventHandler)
 - (void) startPedometerEventUpdatesWithHandler:(CMPedometerEventHandler) handler;
 ```
 
-#### Discussion
+## Discussion
 
 Pedometer events report changes in the user’s pedestrian activity.
 

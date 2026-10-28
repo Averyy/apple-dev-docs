@@ -20,11 +20,11 @@ func ColorSyncDeviceCopyDeviceInfo(_ deviceClass: CFString!, _ devID: CFUUID!) -
 extern CFDictionaryRefColorSyncDeviceCopyDeviceInfo(CFStringRef deviceClass, CFUUIDRef devID);
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary describing the device, or `NULL` if no matching device is registered.
 
-#### Discussion
+## Discussion
 
 Returns a dictionary with the following keys and values resolved for the current host and current user:
 

@@ -20,7 +20,7 @@ A URL of the open document if it is saved to disk.
 final var fileURL: URL? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Returns `nil` if the document has never been saved.
 

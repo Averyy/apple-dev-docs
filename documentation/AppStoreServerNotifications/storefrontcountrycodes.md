@@ -19,7 +19,7 @@ A list of storefront country codes for limiting the storefronts for a subscripti
 
 **Maximum Length**: `3`
 
-#### Discussion
+## Discussion
 
 If you provide a list of storefronts when you call the [`Extend Subscription Renewal Dates for All Active Subscribers`](../AppStoreServerAPI/extend-subscription-renewal-dates-for-all-active-subscribers.md) endpoint, the notification returns only those storefronts. If you don’t use the `storefrontCountryCodes`, the subscription-renewal-date extension applies to all storefronts.
 

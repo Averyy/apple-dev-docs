@@ -23,7 +23,7 @@ var trackTintColor: UIColor? { get set }
 @property (nonatomic, strong, nullable) UIColor * trackTintColor;
 ```
 
-#### Discussion
+## Discussion
 
 If you set [`trackTintColor`](./tracktintcolor.md) to `nil`, the track uses the tint of its parent.
 

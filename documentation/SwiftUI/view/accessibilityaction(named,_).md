@@ -39,7 +39,7 @@ nonisolated
 func accessibilityAction<S>(named name: S, _ handler: @escaping () -> Void) -> ModifiedContent<Self, AccessibilityAttachmentModifier> where S : StringProtocol
 ```
 
-#### Discussion
+## Discussion
 
 For example, this is how a custom action to compose a new email could be added to a view.
 

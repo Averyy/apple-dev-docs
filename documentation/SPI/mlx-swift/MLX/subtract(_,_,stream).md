@@ -21,7 +21,7 @@ func subtract(_ a: some ScalarOrArray, _ b: some ScalarOrArray, stream: StreamOr
 
 - [Converting From Python](./converting-python.md)
 
-#### Discussion
+## Discussion
 
 Subtract two arrays with [Numpy Style Broadcasting](./broadcasting.md).
 
@@ -34,7 +34,7 @@ let b = MLXArray([4, 5, 6])
 let r = subtract(a, b) // e.g. a - b
 ```
 
-##### See Also
+### See Also
 
 - [Arithmetic](./arithmetic.md)
 

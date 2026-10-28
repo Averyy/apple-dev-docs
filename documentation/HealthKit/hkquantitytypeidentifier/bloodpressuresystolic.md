@@ -24,7 +24,7 @@ static let bloodPressureSystolic: HKQuantityTypeIdentifier
 extern HKQuantityTypeIdentifier const HKQuantityTypeIdentifierBloodPressureSystolic;
 ```
 
-#### Discussion
+## Discussion
 
 Systolic blood pressure measures the maximum blood pressure during each heart beat. When recording blood pressure, combine systolic and diastolic samples into a single correlation object (described in [`bloodPressure`](../hkcorrelationtypeidentifier/bloodpressure.md)). These samples use pressure units (described in [`HKUnit`](../hkunit.md)) and measure discrete values (described in [`HKQuantityAggregationStyle`](../hkquantityaggregationstyle.md)).
 

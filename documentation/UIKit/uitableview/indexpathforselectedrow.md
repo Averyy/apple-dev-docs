@@ -23,7 +23,7 @@ var indexPathForSelectedRow: IndexPath? { get }
 @property (nonatomic, readonly, nullable) NSIndexPath * indexPathForSelectedRow;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is an index path identifying the row and section indexes of the selected row, or `nil` if the index path is invalid. If there are multiple selections, this property contains the first index-path object in the array of row selections; this object has the lowest index values for section and row.
 

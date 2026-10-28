@@ -22,7 +22,7 @@ The kind and location of a UTF-8 encoding error.
 struct ValidationError
 ```
 
-#### Overview
+## Overview
 
 Valid UTF-8 is represented by this table:
 
@@ -38,7 +38,7 @@ Valid UTF-8 is represented by this table:
 | U+40000..U+FFFFF | F1..F3 | 80..BF | 80..BF | 80..BF |
 | U+100000..U+10FFFF | F4 | 80..8F | 80..BF | 80..BF |
 
-##### Classifying errors
+### Classifying errors
 
 An *unexpected continuation* is when a continuation byte (`10xxxxxx`) occurs in a position that should be the start of a new scalar value. Unexpected continuations can often occur when the input contains arbitrary data instead of textual content. An unexpected continuation at the start of input might mean that the input was not correctly sliced along scalar boundaries or that it does not contain UTF-8.
 
@@ -55,7 +55,7 @@ An *overlong encoding* occurs when a scalar value that could have been encoded u
 
 An overlong encoding of `NUL`, `0xC0 0x80`, is used in Java’s Modified UTF-8 but is invalid UTF-8. Overlong encoding errors often catch attempts to bypass security measures.
 
-##### Reporting the range of the error
+### Reporting the range of the error
 
 The range of the error reported follows the *Maximal subpart of an ill-formed subsequence* algorithm in which each error is either one byte long or ends before the first byte that is disallowed. See “U+FFFD Substitution of Maximal Subparts” in the Unicode Standard. Unicode started recommending this algorithm in version 6 and is adopted by the W3C.
 

@@ -18,7 +18,7 @@ Reports a new incoming conversation after your notification service extension de
 final class func reportNewIncomingVoIPPushPayload(_ payload: [AnyHashable : Any]) async throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: When the system disallows a conversation, an error is thrown that contains information about why it disallowed the conversation.
 

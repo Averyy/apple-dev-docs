@@ -24,7 +24,7 @@ var outputPixelFormat: OSType { get set }
 @property (nonatomic, assign, readwrite) OSType outputPixelFormat;
 ```
 
-#### Discussion
+## Discussion
 
 The valid values are [`kCVPixelFormatType_TwoComponent32Float`](../../CoreVideo/kcvpixelformattype_twocomponent32float.md) and [`kCVPixelFormatType_TwoComponent16Half`](../../CoreVideo/kcvpixelformattype_twocomponent16half.md). The default value is [`kCVPixelFormatType_TwoComponent32Float`](../../CoreVideo/kcvpixelformattype_twocomponent32float.md).
 

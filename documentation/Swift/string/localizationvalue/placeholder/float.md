@@ -21,7 +21,7 @@ The single-precision floating-point type, as used for replacement values with th
 case float
 ```
 
-#### Discussion
+## Discussion
 
 To insert a `float` into a placeholder, use the syntax `\(placeholder: .float)`.
 

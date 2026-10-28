@@ -21,14 +21,14 @@ Searches for records that match a predicate and returns them to an awaiting call
 func records(matching query: CKQuery, inZoneWith zoneID: CKRecordZone.ID? = nil, desiredKeys: [CKRecord.FieldKey]? = nil, resultsLimit: Int = CKQueryOperation.maximumResults) async throws -> (matchResults: [(CKRecord.ID, Result<CKRecord, any Error>)], queryCursor: CKQueryOperation.Cursor?)
 ```
 
-#### Return Value
+## Return Value
 
 A tuple with the following named elements:
 
 - **`matchResults`**: An array of tuples. Each tuple includes a record identifier and a [`Result`](../../Swift/result.md) that contains either the corresponding matched record, or an error that describes why CloudKit can’t provide that record. For example, if CloudKit fails to materialize an asset field, it returns an error instead of a partial record. CloudKit sorts the array according to the query’s sort descriptors.
 - **`queryCursor`**: A cursor if the number of results exceeds `resultsLimit`; otherwise, `nil`.
 
-#### Discussion
+## Discussion
 
 If you specify `resultsLimit` and the number of matched records exceeds that value, this method returns only that number of records and a *cursor* — an object that marks a specific location in the full search results. To retrieve the next subset of search results, pass that cursor to the [`records(continuingMatchFrom:desiredKeys:resultsLimit:)`](./records%28continuingmatchfrom,desiredkeys,resultslimit%29.md) method. This method throws an error if the request fails, such as when the network is unavailable or the device doesn’t have an active iCloud account; otherwise, the returned tuple includes any individual record errors.
 

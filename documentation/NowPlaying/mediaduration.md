@@ -21,7 +21,7 @@ The duration of media content.
 enum MediaDuration
 ```
 
-#### Overview
+## Overview
 
 Use this enumeration to specify whether content has a finite duration or is a live stream without a defined end time.
 

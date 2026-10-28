@@ -17,7 +17,7 @@ Buttons a person uses to adjust the zoom level of the map.
 @preconcurrency struct MapZoomStepper
 ```
 
-#### Overview
+## Overview
 
 You typically use [`MapZoomStepper`](./mapzoomstepper.md) with [`Map`](./map.md) as a stand alone view, as shown in the following example:
 

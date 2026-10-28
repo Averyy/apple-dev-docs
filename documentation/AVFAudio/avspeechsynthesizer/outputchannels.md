@@ -24,7 +24,7 @@ var outputChannels: [AVAudioSessionChannelDescription]? { get set }
 @property (nonatomic, retain, nullable) NSArray<AVAudioSessionChannelDescription *> * outputChannels;
 ```
 
-#### Discussion
+## Discussion
 
 The system replicates speech audio to each audio session channel.
 

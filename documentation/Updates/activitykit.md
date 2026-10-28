@@ -5,16 +5,16 @@
 
 Learn about important changes in ActivityKit.
 
-#### Overview
+## Overview
 
 Browse notable changes in [ActivityKit](../ActivityKit/ActivityKit.md).
 
-#### June 2025
+## June 2025
 
 - Live Activities automatically appear on the Mac in the Menu bar and in CarPlay.
 - Schedule Live Activities for a specific time using [`request(attributes:content:pushType:style:alertConfiguration:start:)`](../ActivityKit/activity/request%28attributes,content,pushtype,style,alertconfiguration,start%29.md).
 
-#### June 2024
+## June 2024
 
 - Support Live Activities in the Smart Stack in watchOS.
 - Use broadcast capabilities to send Live Activity updates for people that subscribe to your channel.

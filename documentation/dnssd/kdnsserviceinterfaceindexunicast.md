@@ -23,7 +23,7 @@ var kDNSServiceInterfaceIndexUnicast: UInt32 { get }
 #define kDNSServiceInterfaceIndexUnicast
 ```
 
-#### Discussion
+## Discussion
 
 Specific interface indexes are identified via a 32-bit unsigned integer returned by the if_nametoindex() family of calls.
 

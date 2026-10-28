@@ -25,7 +25,7 @@ let kSecAttrType: CFString
 extern CFStringRef const kSecAttrType;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is of type [`CFNumber`](../CoreFoundation/cfnumber.md) and represents the item’s type. This number is the unsigned integer representation of a four-character code (for example, ‘aTyp’).
 

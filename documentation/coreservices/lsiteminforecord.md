@@ -22,7 +22,7 @@ typedef struct LSItemInfoRecord {
 } LSItemInfoRecord;
 ```
 
-#### Overview
+## Overview
 
 This data type defines an item-information record used bythe `LSCopyItemInfoForRef` and `LSCopyItemInfoForURL` functionsto return requested information about an item.
 

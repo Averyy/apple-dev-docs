@@ -21,7 +21,7 @@ Creates a Unicode scalar with the specified numeric value.
 init(_ v: UInt8)
 ```
 
-#### Discussion
+## Discussion
 
 For example, the following code sample creates a `Unicode.Scalar` instance with a value of `"7"`:
 

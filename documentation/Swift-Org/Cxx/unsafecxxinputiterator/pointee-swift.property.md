@@ -18,7 +18,7 @@ Returns the unwrapped result of C++ `operator*()`.
 var pointee: Pointee { get }
 ```
 
-#### Discussion
+## Discussion
 
 Generally, Swift creates this property automatically for C++ types that define `operator*()`.
 

@@ -21,7 +21,7 @@ var suppressesIncrementalRendering: Bool { get set }
 @property (nonatomic) BOOL suppressesIncrementalRendering;
 ```
 
-#### Discussion
+## Discussion
 
 When set to [`true`](../../Swift/true.md), the web view does not attempt to render incoming content as it arrives. Instead, the view’s current contents remain in place until all of the new content has been received, at which point the new content is rendered. This property does not affect the rendering of content retrieved after a frame finishes loading.
 

@@ -20,7 +20,7 @@ var ignoreClipping: Bool { get set }
 @property (nonatomic, assign) BOOL ignoreClipping;
 ```
 
-#### Discussion
+## Discussion
 
 Use [`SCContentFilter`](../sccontentfilter.md) in conjunction with this property to ignore window framing on specified apps and windows. Setting this value to `true` ignores shadows.
 

@@ -24,7 +24,7 @@ convenience init?(string description: String)
 - (id) initWithString:(NSString *) description;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSDate` object initialized with a date and time value specified by `aString`.
 

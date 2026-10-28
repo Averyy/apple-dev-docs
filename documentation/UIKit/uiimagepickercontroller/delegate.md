@@ -22,7 +22,7 @@ weak var delegate: (any UIImagePickerControllerDelegate & UINavigationController
 @property (nonatomic, weak, nullable) id<UIImagePickerControllerDelegate,UINavigationControllerDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate receives notifications when the user picks an image or movie, or exits the picker interface. The delegate also decides when to dismiss the picker interface, so you must provide a delegate to use a picker. If this property is `nil`, the picker is dismissed immediately if you try to show it.
 

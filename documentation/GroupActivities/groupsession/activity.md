@@ -21,7 +21,7 @@ The current activity associated with the session.
 <ActivityType> final var activity: ActivityType { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to fetch information about the selected activity. The value in this property conforms to the [`GroupActivity`](../groupactivity.md) protocol. Use it to fetch the activity details.
 

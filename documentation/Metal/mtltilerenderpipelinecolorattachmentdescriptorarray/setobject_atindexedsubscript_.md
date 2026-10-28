@@ -20,7 +20,7 @@ Sets the render pipeline state for a specified color attachment.
 - (void) setObject:(MTLTileRenderPipelineColorAttachmentDescriptor *) attachment atIndexedSubscript:(NSUInteger) attachmentIndex;
 ```
 
-#### Discussion
+## Discussion
 
 This method copies the pipeline state from the descriptor into the specified attachment in the array. Afterwards, you can modify and reuse the descriptior without affecting a previously set attachment.
 

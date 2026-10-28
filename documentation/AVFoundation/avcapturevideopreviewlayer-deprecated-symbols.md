@@ -5,7 +5,7 @@
 
 Review unsupported symbols and their replacements.
 
-#### Overview
+## Overview
 
 Configure the properties below on the associated [`AVCaptureConnection`](./avcaptureconnection.md) instead.
 

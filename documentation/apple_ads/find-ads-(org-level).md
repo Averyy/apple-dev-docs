@@ -15,11 +15,11 @@ Fetches ads within an organization by selector criteria.
 
 - [Apple Ads Campaign Management API 4](./apple-search-ads-campaign-management-api-4.md)
 
-#### Discussion
+## Discussion
 
 Use this endpoint to find `ads` within your organization using a [`Selector`](./selector.md) [`Condition`](./condition.md) to narrow results. If you don’t specify selector conditions, all [`Ad`](./ad.md) objects return in the response. See the [`Ad`](./ad.md) object for parameter descriptions and selector condition operators.
 
-##### Payload example: Find ads (org-level)
+### Payload example: Find ads (org-level)
 
 **Request**:
 

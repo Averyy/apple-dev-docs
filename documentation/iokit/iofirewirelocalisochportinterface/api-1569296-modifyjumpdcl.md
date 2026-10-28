@@ -16,11 +16,11 @@ Change the jump target label of a jump DCL.
 IOReturn (*ModifyJumpDCL)(IOFireWireLibLocalIsochPortRef self, DCLJump *inJump, DCLLabel *inLabel);
 ```
 
-#### Return Value
+## Return Value
 
 kIOReturnSuccess on success. Will return an error if 'inJump' does not point to a valid jump DCL or 'inLabel' does not point to a valid label DCL.
 
-#### Discussion
+## Discussion
 
 Use this function to change the flow of a DCL program. Works whether the DCL program is currently running or not.
 

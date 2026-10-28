@@ -25,11 +25,11 @@ func cacheNode(for objectID: NSManagedObjectID) -> NSAtomicStoreCacheNode?
 - (NSAtomicStoreCacheNode *) cacheNodeForObjectID:(NSManagedObjectID *) objectID;
 ```
 
-#### Return Value
+## Return Value
 
 The cache node for `objectID`.
 
-#### Discussion
+## Discussion
 
 This method is normally used by cache nodes to locate related cache nodes (by relationships).
 

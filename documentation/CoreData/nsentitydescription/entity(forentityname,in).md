@@ -25,11 +25,11 @@ class func entity(forEntityName entityName: String, in context: NSManagedObjectC
 + (NSEntityDescription *) entityForName:(NSString *) entityName inManagedObjectContext:(NSManagedObjectContext *) context;
 ```
 
-#### Return Value
+## Return Value
 
 The entity with the specified name from the managed object model associated with `context`’s persistent store coordinator.
 
-#### Discussion
+## Discussion
 
 Raises [`internalInconsistencyException`](../../Foundation/nsexceptionname/internalinconsistencyexception.md) if `context` is `nil`.
 

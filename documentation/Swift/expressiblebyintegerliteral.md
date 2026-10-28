@@ -21,7 +21,7 @@ A type that can be initialized with an integer literal.
 protocol ExpressibleByIntegerLiteral
 ```
 
-#### Overview
+## Overview
 
 The standard library integer and floating-point types, such as `Int` and `Double`, conform to the `ExpressibleByIntegerLiteral` protocol. You can initialize a variable or constant of any of these types by assigning an integer literal.
 
@@ -37,7 +37,7 @@ let redPercentage: Double = 1
 // redPercentage == 1.0
 ```
 
-### Conforming to ExpressibleByIntegerLiteral
+## Conforming to ExpressibleByIntegerLiteral
 
 To add `ExpressibleByIntegerLiteral` conformance to your custom type, implement the required initializer.
 

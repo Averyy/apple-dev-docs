@@ -19,11 +19,11 @@
 int (*)(struct AudioServerPlugInDriverInterface **, unsigned int, unsigned int, unsigned int, unsigned char *, unsigned char *) WillDoIOOperation;
 ```
 
-#### Return Value
+## Return Value
 
 An OSStatus indicating success or failure.
 
-#### Discussion
+## Discussion
 
 Asks the plug-in whether or not the device will perform the given phase of the IO cycle for a particular device.
 

@@ -24,7 +24,7 @@ class HKSource
 @interface HKSource : NSObject
 ```
 
-#### Overview
+## Overview
 
 Sources include apps and devices that save data to the HealthKit store. Currently, HealthKit supports only the direct import of data from Bluetooth LE heart rate monitors. All other devices need a companion app to collect and save the data to HealthKit.
 

@@ -27,7 +27,7 @@ optional func resolveDropOffLocation(for intent: INRequestRideIntent) async -> I
 - (void) resolveDropOffLocationForRequestRide:(INRequestRideIntent *) intent withCompletion:(void (^)(INPlacemarkResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to verify that you can drop off the user at the specified location. You may specify a drop-off location that is different than the one requested by the user. For example, you might specify a dedicated drop-off spot or an easy to spot point of interest that is near the user’s requested drop-off location. If you do not implement this method, SiriKit assumes that you are able to end the ride at the specified location.
 

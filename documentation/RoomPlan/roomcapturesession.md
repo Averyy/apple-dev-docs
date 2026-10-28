@@ -21,7 +21,7 @@ class RoomCaptureSession
 
 - [Scanning the rooms of a single structure](./scanning-the-rooms-of-a-single-structure.md)
 
-#### Overview
+## Overview
 
 This class scans a room on the app’s behalf and provides the necessary callbacks for you to display your own UI.
 

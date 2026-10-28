@@ -15,7 +15,7 @@ Removes an annotation from the map.
 removeAnnotation(annotation: Annotation): Annotation;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the annotation.
 

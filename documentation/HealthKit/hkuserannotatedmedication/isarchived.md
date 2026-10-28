@@ -24,7 +24,7 @@ var isArchived: Bool { get }
 @property (nonatomic, assign, readonly) BOOL isArchived;
 ```
 
-#### Discussion
+## Discussion
 
 The value is `true` if a person moves a medication to the archived section in the Health App. The value is `false` if a medication isn’t in the archived section.
 

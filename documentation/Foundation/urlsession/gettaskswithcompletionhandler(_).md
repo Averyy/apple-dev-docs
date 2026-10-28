@@ -29,7 +29,7 @@ var tasks: ([URLSessionDataTask], [URLSessionUploadTask], [URLSessionDownloadTas
 - (void) getTasksWithCompletionHandler:(void (^)(NSArray<NSURLSessionDataTask *> *dataTasks, NSArray<NSURLSessionUploadTask *> *uploadTasks, NSArray<NSURLSessionDownloadTask *> *downloadTasks)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The arrays passed to the completion handler contain any tasks that you have created within the session, not including any tasks that have been invalidated after completing, failing, or being cancelled.
 

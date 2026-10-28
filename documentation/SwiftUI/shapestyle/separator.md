@@ -24,7 +24,7 @@ static var separator: SeparatorShapeStyle { get }
 
 Available when `Self` is `SeparatorShapeStyle`.
 
-#### Discussion
+## Discussion
 
 For information about how to use shape styles, see [`ShapeStyle`](../shapestyle.md).
 

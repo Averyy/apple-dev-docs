@@ -20,7 +20,7 @@ Specifies the distance between centers of the lenses of the camera system that c
 @property (atomic, copy, nullable) NSNumber * cameraSystemBaseline;
 ```
 
-#### Discussion
+## Discussion
 
 The distance is in micrometers or thousandths of a millimeter. Can be nil if the value is unknown.
 

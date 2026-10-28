@@ -29,7 +29,7 @@ optional func resolveStatus(for intent: INSearchForNotebookItemsIntent) async ->
 - (void) resolveStatusForSearchForNotebookItems:(INSearchForNotebookItemsIntent *) intent withCompletion:(void (^)(INTaskStatusResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve the status to use during the search. Use this method to verify that you can search for tasks with the specified status. If you support searching based on the given status, return a successful resolution with the status value. If you do not support searching based on status, return a resolution indicating that the status is not required.
 

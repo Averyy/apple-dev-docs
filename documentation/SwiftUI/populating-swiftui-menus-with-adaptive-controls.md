@@ -5,7 +5,7 @@
 
 Improve your app by populating menus with controls and organizing your content intuitively.
 
-#### Overview
+## Overview
 
 Menus are versatile components you can populate adaptively and use to organize commands, actions, or items in your app.
 
@@ -13,7 +13,7 @@ In tight layouts or smaller devices, menus optimize space by displaying options 
 
 > **Note**: While the code for creating a menu in SwiftUI is largely the same across platforms, the system may display the menu differently depending on the device.
 
-##### Plan the structure of your menus
+### Plan the structure of your menus
 
 Make your menus simple and flexible, able to adapt to various interfaces, such as regular and compact size classes on iOS and iPadOS and across macOS, tvOS, and visionOS.
 
@@ -25,7 +25,7 @@ A menu consists of three components:
 
 For design guidance, see Human Interface Guidelines > [Menus](https://developer.apple.com/design/human-interface-guidelines/menus).
 
-##### Populate your menus
+### Populate your menus
 
 A well-declared SwiftUI [`Menu`](./menu.md) resembles its ultimate rendered appearance: the contents of the menu visually adapt to the purpose of each element. For example, inserting a `Button` in the menu’s closure renders an actionable menu item, while inserting a `Menu` creates a submenu item.
 
@@ -235,7 +235,7 @@ var body: some View {
 
 You can choose picker styles such as [`inline`](./pickerstyle/inline.md), [`menu`](./pickerstyle/menu.md), and [`palette`](./pickerstyle/palette.md).
 
-##### Apply style to menu pickers
+### Apply style to menu pickers
 
 By default, picker options in menus appear inline. SwiftUI implicitly applies the `inline` style, allowing you to select options without navigating away from the current view. The inline style works well for settings or configurations that require immediate context.
 
@@ -319,7 +319,7 @@ Menu("Actions") {
 
 ![A menu that displays a picker using a stepper. Menu items include Special request and Include toppings. Under Flavor is a horizontal row of three colored circles used to represent the ice cream flavors. The left circle is brown, used to represent Chocolate. The brown circle has a gray highlight to indicate that Chocolate has been selected. The center circle is white, used to represent Vanilla. The right circle is red, used to represent Strawberry. Beneath the colored circles is a line of gray text that shows the Quantity selected, indicating that three items have been selected. Beneath the Quantity line are a minus button, used to remove an item from the Quantity, and a plus button, used to add an item to the Quantity.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/menus-picker-palette-stepper@2x.png)
 
-##### Group menu items
+### Group menu items
 
 SwiftUI provides multiple ways to group items within menus, including submenus, sections, and dividers.
 
@@ -381,7 +381,7 @@ Menu("Settings") {
 
 ![A menu that displays submenus with dividers. At the top of the menu is a section, labeled General Settings, with the options Wi-Fi, Bluetooth, and Notifications. In the middle of the menu is a section, labeled Account Settings, with the options Profile, Security, and Privacy. At the bottom of the menu is a section, labeled Advanced Settings, with the options Developer Options, System Update, and Backup and Restore.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/menus-submenus-settings-groups@2x.png)
 
-##### Display compact menu items
+### Display compact menu items
 
 When you want to display a few related actions in a single row within a menu, consider using a [`ControlGroup`](./controlgroup.md). This method provides a compact, horizontally-grouped layout of up to four items.
 
@@ -415,7 +415,7 @@ Menu("Edit") {
 
 While submenus and sections are containers that group items, the `Divider` view provides a simple way to visually separate items within a menu. Unlike `Section`, `Divider` isn’t a container, but serves as a visual break that divides groups of items to organize and group like-commands for improved usability and uniformity across apps.
 
-##### Modify content behavior
+### Modify content behavior
 
 Beyond populating a menu’s content, SwiftUI also offers a set of APIs to modify the default behavior of menu items.
 

@@ -19,7 +19,7 @@ Indicates that the image description contains projected media data converted fro
 static let convertedFromExternalSphericalTags: CMFormatDescription.Extensions.Key
 ```
 
-#### Discussion
+## Discussion
 
 This format description extension is included if boxes containing external stereoscopic or spherical projection information were parsed.
 

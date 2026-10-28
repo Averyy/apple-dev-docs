@@ -10,7 +10,7 @@ virtual IOUSBPipe * GetPipeZero(
  void);
 ```
 
-#### Overview
+## Overview
 
 returns a pointer to the device's default control pipe
 

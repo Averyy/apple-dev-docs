@@ -23,11 +23,11 @@ optional func indexTitles(for collectionView: UICollectionView) -> [String]?
 - (NSArray<NSString *> *) indexTitlesForCollectionView:(UICollectionView *) collectionView;
 ```
 
-#### Return Value
+## Return Value
 
 An array of strings to use for the title of each index entry. For example, you might return an array of strings containing the letters of the alphabet (`["A", "B", "C", ..., "Z"]`).
 
-#### Discussion
+## Discussion
 
 Use this method to support fast scrolling through your collection view’s content. The strings you return are displayed in an index view that can be used to jump to specific locations in the collection view’s content. If you implement this method, you must also implement the [`collectionView(_:indexPathForIndexTitle:at:)`](./collectionview%28_,indexpathforindextitle,at%29.md) method to specify the collection view item associated with each index title.
 

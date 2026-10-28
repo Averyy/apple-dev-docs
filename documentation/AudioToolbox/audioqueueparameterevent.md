@@ -24,7 +24,7 @@ struct AudioQueueParameterEvent
 struct AudioQueueParameterEvent;
 ```
 
-#### Overview
+## Overview
 
 You use this structure with the [`AudioQueueEnqueueBufferWithParameters(_:_:_:_:_:_:_:_:_:_:)`](./audioqueueenqueuebufferwithparameters%28_,_,_,_,_,_,_,_,_,_%29.md) function. See that function, and [Audio Queue Parameters](./api-1552626-audio-queue-parameters.md), for more information.
 

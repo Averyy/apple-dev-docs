@@ -24,7 +24,7 @@ var ancsAuthorized: Bool { get }
 @property (readonly) BOOL ancsAuthorized;
 ```
 
-#### Discussion
+## Discussion
 
 If this value is [`false`](../../Swift/false.md), a user authorization sets this value to [`true`](../../Swift/true.md), which results in a call to the delegate’s [`centralManager(_:didUpdateANCSAuthorizationFor:)`](../cbcentralmanagerdelegate/centralmanager%28_,didupdateancsauthorizationfor%29.md) method.
 

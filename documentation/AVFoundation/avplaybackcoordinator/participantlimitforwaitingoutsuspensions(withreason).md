@@ -24,7 +24,7 @@ func participantLimitForWaitingOutSuspensions(withReason reason: AVCoordinatedPl
 - (NSInteger) participantLimitForWaitingOutSuspensionsWithReason:(AVCoordinatedPlaybackSuspensionReason) reason;
 ```
 
-#### Return Value
+## Return Value
 
 The participant limit.
 

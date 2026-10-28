@@ -25,7 +25,7 @@ func removeAllServices()
 - (void) removeAllServices;
 ```
 
-#### Discussion
+## Discussion
 
 Use this when you want to remove all services you’ve previously published, for example, if your app has a toggle button to expose GATT services.
 

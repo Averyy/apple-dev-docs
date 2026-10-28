@@ -19,7 +19,7 @@ func breakUndoCoalescing()
 - (void) breakUndoCoalescing;
 ```
 
-#### Discussion
+## Discussion
 
 This method should be invoked when saving the receiver’s contents to preserve proper tracking of unsaved changes and the document’s dirty state.
 

@@ -19,11 +19,11 @@ func PMPrinterCreateFromPrinterID(_ printerID: CFString) -> PMPrinter?
 PMPrinter PMPrinterCreateFromPrinterID(CFStringRef printerID);
 ```
 
-#### Return Value
+## Return Value
 
 A new printer object, or `NULL` if no print queue is available with the specified identifier. You are responsible for releasing the printer object with the function [`PMRelease(_:)`](./api-1461402-pmrelease.md).
 
-#### Discussion
+## Discussion
 
 This function is typically used to re-create a printer object using the print queue ID obtained by a call to `PMPrinterGetID` at an earlier time. If the print queue is deleted after obtaining the ID, this function returns `NULL` for that ID.
 

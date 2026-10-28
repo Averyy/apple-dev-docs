@@ -24,7 +24,7 @@ case `default`
 MTLAccelerationStructureInstanceDescriptorTypeDefault
 ```
 
-#### Discussion
+## Discussion
 
 This instance type corresponds to the [`MTLAccelerationStructureInstanceDescriptor`](../mtlaccelerationstructureinstancedescriptor.md)  structure memory layout.
 

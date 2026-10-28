@@ -24,7 +24,7 @@ class var overlay: CIBlendKernel { get }
 @property (class, strong, readonly) CIBlendKernel * overlay;
 ```
 
-#### Discussion
+## Discussion
 
 ![The result of using the overlay blend kernel (background image is top left, foreground image is bottom left)](https://developer.apple.com/tutorials/images/com.apple.coreimage/media-2926878@2x.png)
 

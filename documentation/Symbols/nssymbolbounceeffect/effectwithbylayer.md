@@ -21,7 +21,7 @@ An effect that bounces each layer separately.
 - (instancetype) effectWithByLayer;
 ```
 
-#### Return Value
+## Return Value
 
 A copy of the effect options that bounces each layer separately.
 

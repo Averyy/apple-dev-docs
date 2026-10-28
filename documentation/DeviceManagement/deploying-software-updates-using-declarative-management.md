@@ -5,11 +5,11 @@
 
 Use declarative configurations to deploy and manage software updates on managed devices.
 
-#### Overview
+## Overview
 
 Instead of initiating software updates on managed devices on-demand, you can use declarative device management to declare the desired operating system version state, and delegate the task to achieve that state to the device itself. This allows for a more resilient managed software update process and increased user transparency.
 
-#### Use the Apple Software Lookup Service
+## Use the Apple Software Lookup Service
 
 The Apple Software Lookup Service (available at ([https://gdmf.apple.com/v2/pmv](https://gdmf.apple.com/v2/pmv)) is the official resource to obtain a list of publicly available updates, upgrades, and Background Security Improvements. It allows a device management service to query releases as soon as Apple publishes them, and calculate applicability for each hardware model in a timely and accurate manner.
 
@@ -57,7 +57,7 @@ The following is an example entry from the Apple Software Lookup Service:
 
 Use the product version list to determine which versions are later than the deviceʼs current operating system version, and are applicable to a specific device. Then provide that list of versions to the administrator as potential operating system update candidates.
 
-#### Send a status report to the device management service
+## Send a status report to the device management service
 
 To receive updates for status items as they change, the device management service needs to subscribe to each status report by sending a [`ManagementStatusSubscriptions`](./managementstatussubscriptions.md) declaration to the device. The device then sends a `StatusReport` to the device management service when a [`ManagementStatusSubscriptions`](./managementstatussubscriptions.md) declaration becomes active, if the status of a subscribed item changes, and every 24 hours.
 
@@ -97,7 +97,7 @@ The [`StatusSoftwareUpdateInstallReason`](./statussoftwareupdateinstallreason.md
 
 In addition to the other reports, device management services may also want to make [`StatusSoftwareUpdateInstallReason`](./statussoftwareupdateinstallreason.md) available to administrator for support purposes, and to provide additional insight into how an update occurs. You can use this dictionary to determine whether a user initiates the update, the update happens automatically, or a software update enforcement declaration initiates it.
 
-#### Request a specific minimum software version during enrollment
+## Request a specific minimum software version during enrollment
 
 If a device supports this capability, it returns an `MDM_CAN_REQUEST_SOFTWARE_UPDATE` key, set to `true`, in the [`MachineInfo`](./machineinfo.md) data that it sends in the initial HTTP `POST` request to the device management service when the device detects a management configuration in Setup Assistant.
 
@@ -137,17 +137,17 @@ If you specify only `OSVersion`, a device automatically downloads and installs a
 
 > ❗ **Important**:  Before macOS 15, only releases from the `PublicAssetSets` and `PublicBackgroundSecurityImprovements` lists can be specified. In macOS 15, assets from `AssetSets` can also be used.
 
-#### Device management settings for software updates
+## Device management settings for software updates
 
 The [`SoftwareUpdateSettings`](./softwareupdatesettings.md) declaration consists of dictionaries that can be used to configure various aspects of the software update behavior.
 
 After a device management service distributes different keys across multiple declarations, a device merges the settings of all active software update settings declarations. If multiple declarations configure the same key, the merge behavior depends on the individual key, which is outlined in the tables below.
 
-#### Configure automatic software updates with device management
+## Configure automatic software updates with device management
 
 The [`SoftwareUpdateSettings`](./softwareupdatesettings.md) declaration offers a dictionary to define the automatic software update behavior on supervised iPhone, iPad, Mac, and Apple TV devices.
 
-#### How a device management service handles Background Security Improvements
+## How a device management service handles Background Security Improvements
 
 Background Security Improvements always apply to the latest update of an operating system, which becomes the base version of the Background Security Improvement. For example, if an iPhone has operating system version iOS 17.2 installed, then it applies the 17.2 (a) supplemental update, if one is available. In iOS 18, iPadOS 18, and macOS 15, combined updates have been made available, which allow a software update to include any available Background Security Improvements.
 
@@ -162,7 +162,7 @@ These two approaches apply to the software update enforcement configuration, and
 
 The [`SoftwareUpdateSettings`](./softwareupdatesettings.md) declaration can also be used to configure the Background Security Improvement behavior on supervised iPhone, iPad, and Mac devices.
 
-#### Defer a software update with device management
+## Defer a software update with device management
 
 Deferring a software update or upgrade from 1 to 90 days is done using the [`SoftwareUpdateSettings`](./softwareupdatesettings.md) declaration on supervised iPhone, iPad, and Mac devices.
 
@@ -170,7 +170,7 @@ A configured deferral defines the number of days before an organization offers a
 
 > **Note**:  Deferring software updates also defers any Background Security Improvements that are dependent on that version.
 
-#### Enforce software updates with device management
+## Enforce software updates with device management
 
 To enforce a software update by a certain time on devices that enroll using Device Enrollment or Automated Device Enrollment, device management services can apply the [`SoftwareUpdateEnforcementSpecific`](./softwareupdateenforcementspecific.md) declaration.
 
@@ -211,11 +211,11 @@ The user is prompted to install iOS 26.2 on December 20, 2025, after which the d
 
 The operating system automatically installs any available Background Security Improvements if a device management service defines only the `TargetOSVersion`. To target a specific release or Background Security Improvement, a device management service can use the `TargetBuildVersion` key in addition to specifying the build, including the supplemental version identifier.
 
-#### Notifications
+## Notifications
 
 The `Notifications` key changes the default notification behavior to show only a notification 1 hour before the enforcement time and the restart countdown.
 
-#### Use the bootstrap token for Mac computers with Apple silicon
+## Use the bootstrap token for Mac computers with Apple silicon
 
 To authorize an enforced software update on a supervised Mac computer with Apple silicon, a device management service can request and escrow a bootstrap token. This allows for a completely seamless software update experience, and avoids the need for user interaction as part of the process. When needed, the device uses a [`GetBootstrapTokenRequest`](./getbootstraptokenrequest.md) to retrieve the bootstrap token from the device management service.
 

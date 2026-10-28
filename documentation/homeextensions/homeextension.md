@@ -18,7 +18,7 @@ A type that represents an app extension for the Home app.
 protocol HomeExtension
 ```
 
-#### Overview
+## Overview
 
 Create a type that adopts this protocol, mark it with `@main`, and return your content from [`body`](./homeextension/body.md).
 

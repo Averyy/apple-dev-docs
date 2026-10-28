@@ -29,7 +29,7 @@ func dispatchThreads(_ threadsPerGrid: MTLSize, threadsPerThreadgroup: MTLSize)
 
 - [Calculating threadgroup and grid sizes](../calculating-threadgroup-and-grid-sizes.md)
 
-#### Discussion
+## Discussion
 
 > ⚠️ **Warning**:  Use this method only if the device your app is running on supports nonuniform threadgroup sizes. Check for device capabilities with [`supportsFamily(_:)`](../mtldevice/supportsfamily%28_%29.md) on the device providing your compute command encoder. See [Metal Feature Set Tables (PDF)](https://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf) for device support information.
 

@@ -25,7 +25,7 @@ func copy(sourceTensor: any MTLTensor, sourceOrigin: MTLTensorExtents, sourceDim
 - (void) copyFromTensor:(id<MTLTensor>) sourceTensor sourceOrigin:(MTLTensorExtents *) sourceOrigin sourceDimensions:(MTLTensorExtents *) sourceDimensions sourcePlane:(MTLTensorPlaneType) sourcePlane toTensor:(id<MTLTensor>) destinationTensor destinationOrigin:(MTLTensorExtents *) destinationOrigin destinationDimensions:(MTLTensorExtents *) destinationDimensions destinationPlane:(MTLTensorPlaneType) destinationPlane;
 ```
 
-#### Discussion
+## Discussion
 
 If `sourceTensor` and `destinationTensor` are not aliasable, this command applies a reshape operation. For auxiliary planes, specify origin and dimensions in plane coordinates by applying the corresponding auxiliary plane’s block factors.
 

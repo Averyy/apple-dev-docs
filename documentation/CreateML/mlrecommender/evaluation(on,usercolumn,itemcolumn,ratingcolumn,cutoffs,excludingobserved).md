@@ -21,7 +21,7 @@ func evaluation(on testingData: DataFrame, userColumn: String, itemColumn: Strin
 func evaluation(on testingData: MLDataTable, userColumn: String, itemColumn: String, ratingColumn: String? = nil, cutoffs: [Int] = [1, 2, 3, 4, 5], excludingObserved: Bool = true) -> MLRecommenderMetrics
 ```
 
-#### Discussion
+## Discussion
 
 Let P𝑘 be a vector of the first k items recommended by the model for a particular user and let A be the set of items in the provided testingData for the same user.
 

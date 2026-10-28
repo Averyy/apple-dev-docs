@@ -25,11 +25,11 @@ func isEqual(to otherDate: Date) -> Bool
 - (BOOL) isEqualToDate:(NSDate *) otherDate;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the `otherDate` is an [`NSDate`](../nsdate.md) object and is exactly equal to the receiver, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 This method detects sub-second differences between dates. If you want to compare dates with a less fine granularity, use [`timeIntervalSince(_:)`](./timeintervalsince%28_%29.md) to compare the two dates.
 

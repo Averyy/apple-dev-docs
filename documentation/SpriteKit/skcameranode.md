@@ -30,7 +30,7 @@ class SKCameraNode
 - [Positioning a Scene’s Origin Within its View](./positioning-a-scene-s-origin-within-its-view.md)
 - [Using Base Nodes to Lay Out SpriteKit Content](./using-base-nodes-to-lay-out-spritekit-content.md)
 
-#### Overview
+## Overview
 
 If you don’t use a camera in your scene, you control the visible portion of a scene using its [`anchorPoint`](./skscene/anchorpoint.md) property.
 

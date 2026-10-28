@@ -19,7 +19,7 @@ interface CKDBRecordReferenceAction {
 };
 ```
 
-#### Overview
+## Overview
 
 ```javascript
 import { CKDBRecordReferenceAction } from "@apple/cktool.database";

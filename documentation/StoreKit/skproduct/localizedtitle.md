@@ -27,7 +27,7 @@ var localizedTitle: String { get }
 @property (nonatomic, readonly) NSString * localizedTitle;
 ```
 
-#### Discussion
+## Discussion
 
 The title’s language is determined by the storefront that the user’s device is connected to, not the preferred language set on the device.
 

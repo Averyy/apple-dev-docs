@@ -23,7 +23,7 @@ func setQueue(with storeIDs: [String])
 - (void) setQueueWithStoreIDs:(NSArray<NSString *> *) storeIDs;
 ```
 
-#### Discussion
+## Discussion
 
 To begin playback after establishing a playback queue, call [`prepareToPlay()`](../mpmediaplayback/preparetoplay%28%29.md).
 

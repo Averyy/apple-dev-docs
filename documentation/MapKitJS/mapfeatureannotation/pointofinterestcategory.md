@@ -15,7 +15,7 @@ The point-of-interest category of the feature.
 get pointOfInterestCategory(): PointOfInterestCategory | null;
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**:  This property is only available when the [`featureType`](./featuretype.md) is [`PointOfInterest`](../mapfeaturetype/pointofinterest.md).
 

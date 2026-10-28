@@ -25,7 +25,7 @@ var modificationDate: Date? { get }
 @property (copy, readonly, nullable) NSDate * modificationDate;
 ```
 
-#### Discussion
+## Discussion
 
 If the version has been deleted, this value is `nil`.
 

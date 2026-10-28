@@ -25,11 +25,11 @@ func CTFontCopyDefaultCascadeListForLanguages(_ font: CTFont, _ languagePrefList
 extern CFArrayRefCTFontCopyDefaultCascadeListForLanguages(CTFontRef font, CFArrayRef languagePrefList);
 ```
 
-#### Return Value
+## Return Value
 
 An ordered list of [`CTFontDescriptor`](./ctfontdescriptor.md)s for font fallback according to the given language preferences.
 
-#### Discussion
+## Discussion
 
 When the original `font` used for text layout and rendering does not support a certain Unicode character from the provided text, the system follows this list to pick a fallback font that includes the character.
 

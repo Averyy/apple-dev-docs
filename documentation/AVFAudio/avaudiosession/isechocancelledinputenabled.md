@@ -21,7 +21,7 @@ var isEchoCancelledInputEnabled: Bool { get }
 @property (nonatomic, readonly) BOOL isEchoCancelledInputEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 For more information about echo cancellation, see [`setPrefersEchoCancelledInput(_:)`](./setprefersechocancelledinput%28_%29.md).
 

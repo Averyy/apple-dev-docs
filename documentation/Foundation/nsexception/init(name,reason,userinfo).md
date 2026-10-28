@@ -25,11 +25,11 @@ init(name aName: NSExceptionName, reason aReason: String?, userInfo aUserInfo: [
 - (instancetype) initWithName:(NSExceptionName) aName reason:(NSString *) aReason userInfo:(NSDictionary *) aUserInfo;
 ```
 
-#### Return Value
+## Return Value
 
 The created `NSException` object or `nil` if the object couldn’t be created.
 
-#### Discussion
+## Discussion
 
 This is the designated initializer.
 

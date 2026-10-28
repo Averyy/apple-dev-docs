@@ -24,7 +24,7 @@ func removeInput(_ input: AVCaptureInput)
 - (void) removeInput:(AVCaptureInput *) input;
 ```
 
-#### Discussion
+## Discussion
 
 You can invoke this method while the session is running.
 

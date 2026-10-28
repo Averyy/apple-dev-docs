@@ -19,7 +19,7 @@ func backgroundLayer() -> CALayer!
 - (CALayer *) backgroundLayer;
 ```
 
-#### Return Value
+## Return Value
 
 A `CALayer` instance.
 

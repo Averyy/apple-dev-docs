@@ -17,7 +17,7 @@ Key for the user password, returned as an `NSString` object.
 extern NSString * const NSFTPPropertyUserPasswordKey;
 ```
 
-#### Discussion
+## Discussion
 
 The default value for this key is “`NSURLHandle@apple.com`”.
 

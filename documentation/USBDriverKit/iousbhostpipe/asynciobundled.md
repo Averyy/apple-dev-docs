@@ -15,11 +15,11 @@ Enqueues a contiguous group of requests from the descriptor ring.
 virtual kern_return_t AsyncIOBundled(uint32_t ioTransferIndex, uint32_t ioTransferCount, uint32_t *ioTransferAcceptedCount, const uint32_t dataBufferLengthArray[16], int dataBufferLengthArrayCount, OSAction *completion, uint32_t completionTimeoutMs);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 
-#### Discussion
+## Discussion
 
 This method performs a bulk transfer of multiple data buffers. Use this method on bulk pipes to reduce the messaging overhead when you need to transfer large amounts of data to or from the device. Don’t use this method with interrupt or isochonous pipes.
 

@@ -21,7 +21,7 @@ The hyphenation factor of the document.
 static let hyphenationFactor: NSAttributedString.DocumentAttributeKey
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSNumber`](../../nsnumber.md) object containing a float. A value of 0 indicates that hyphenation is off, and a value of 1 indicates full hyphenation.
 

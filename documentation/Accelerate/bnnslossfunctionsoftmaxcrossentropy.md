@@ -25,7 +25,7 @@ var BNNSLossFunctionSoftmaxCrossEntropy: BNNSLossFunction { get }
 BNNSLossFunctionSoftmaxCrossEntropy
 ```
 
-#### Discussion
+## Discussion
 
 [`BNNSLossFunctionSoftmaxCrossEntropy`](./bnnslossfunctionsoftmaxcrossentropy.md) performs softmax on input logits and computes cross entropy loss with one hot encoded labels.
 

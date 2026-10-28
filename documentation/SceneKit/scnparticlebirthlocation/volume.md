@@ -25,7 +25,7 @@ case volume
 SCNParticleBirthLocationVolume
 ```
 
-#### Discussion
+## Discussion
 
 This value applies only when the [`emitterShape`](../scnparticlesystem/emittershape.md) property specifies one of SceneKit’s built-in basic geometries ([`SCNPlane`](../scnplane.md), [`SCNBox`](../scnbox.md), [`SCNSphere`](../scnsphere.md), [`SCNPyramid`](../scnpyramid.md), [`SCNCone`](../scncone.md), [`SCNCylinder`](../scncylinder.md), [`SCNCapsule`](../scncapsule.md), [`SCNTube`](../scntube.md), and [`SCNTorus`](../scntorus.md)).
 

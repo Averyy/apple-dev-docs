@@ -23,7 +23,7 @@ class UIGraphicsImageRendererContext
 @interface UIGraphicsImageRendererContext : UIGraphicsRendererContext
 ```
 
-#### Overview
+## Overview
 
 When using the [`UIGraphicsImageRenderer`](./uigraphicsimagerenderer.md) drawing methods, you must pass a block of type [`UIGraphicsImageRenderer.DrawingActions`](./uigraphicsimagerenderer/drawingactions.md) as an argument, which provides a [`UIGraphicsImageRendererContext`](./uigraphicsimagerenderercontext.md) instance as an argument. Use the context object to access high-level drawing functions and the underlying Core Graphics context.
 

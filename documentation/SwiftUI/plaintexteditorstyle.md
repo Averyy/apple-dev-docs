@@ -20,7 +20,7 @@ nonisolated
 struct PlainTextEditorStyle
 ```
 
-#### Overview
+## Overview
 
 You can also use [`plain`](./texteditorstyle/plain.md) to create this style.
 

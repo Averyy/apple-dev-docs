@@ -24,7 +24,7 @@ var duration: TimeInterval { get }
 @property (nonatomic, assign, readonly) NSTimeInterval duration;
 ```
 
-#### Discussion
+## Discussion
 
 For photo assets, the duration is always zero.
 

@@ -25,7 +25,7 @@ func CGImageSourceCreateWithURL(_ url: CFURL, _ options: CFDictionary?) -> CGIma
 extern CGImageSourceRefCGImageSourceCreateWithURL(CFURLRef url, CFDictionaryRef options);
 ```
 
-#### Return Value
+## Return Value
 
 An image source. You’re responsible for releasing this type using [`CFRelease`](../CoreFoundation/cfrelease.md).
 

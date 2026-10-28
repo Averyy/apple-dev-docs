@@ -25,7 +25,7 @@ var errorStatusCode: Int { get }
 @property (nonatomic, readonly) NSInteger errorStatusCode;
 ```
 
-#### Discussion
+## Discussion
 
 The property corresponds to “status”.
 

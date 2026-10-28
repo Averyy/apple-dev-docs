@@ -19,7 +19,7 @@ A Boolean value that determines whether to preserve the frame size of the custom
 var maintainsFixedSize: Bool
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../../Swift/true.md), the system preserves the current frame size of the view. When the value of this property is [`false`](../../../Swift/false.md), the system sizes the view during layout of the accessories.
 

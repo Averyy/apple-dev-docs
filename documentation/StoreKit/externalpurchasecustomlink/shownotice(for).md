@@ -21,11 +21,11 @@ Displays the system disclosure notice sheet for a custom link type and asks the 
 static func showNotice(for externalPurchaseType: ExternalPurchaseCustomLink.ExternalPurchaseType) async throws -> ExternalPurchaseCustomLink.NoticeResult
 ```
 
-#### Return Value
+## Return Value
 
 This method returns [`ExternalPurchaseCustomLink.NoticeResult.continued`](./noticeresult/continued.md) to indicate the customer chooses to continue, or [`ExternalPurchaseCustomLink.NoticeResult.cancelled`](./noticeresult/cancelled.md) to indicate the customer chooses not to continue to view external purchases. This method throws an error if your app isn’t eligible to use this API at runtime. In case of an error, this method throws a [`StoreKitError`](../storekiterror.md).
 
-#### Discussion
+## Discussion
 
 Use this method in combination with a specific entitlement entitlement assigned to your app and  Information Property List key depending on the region where you want to offer external purchases, following these guidelines:
 
@@ -46,7 +46,7 @@ Continue with the offer if [`showNotice(type:)`](./shownotice%28type%29.md) retu
 
 For example code that calls this method, see [`ExternalPurchaseCustomLink`](../externalpurchasecustomlink.md).
 
-##### See also
+### See also
 
 - [`ExternalPurchaseCustomLink.NoticeResult`](./noticeresult.md)
 - [`ExternalPurchaseCustomLink.ExternalPurchaseType`](./externalpurchasetype.md)

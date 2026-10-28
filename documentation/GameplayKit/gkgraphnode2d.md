@@ -24,7 +24,7 @@ class GKGraphNode2D
 @interface GKGraphNode2D : GKGraphNode
 ```
 
-#### Overview
+## Overview
 
 Together, a network of nodes form a graph that describes the navigability of a game world. Use graph nodes with a [`GKGraph`](./gkgraph.md), [`GKObstacleGraph`](./gkobstaclegraph.md), or [`GKMeshGraph`](./gkmeshgraph.md) object to perform actions that relate to the network of nodes as a whole, such as pathfinding to determine routes through the network.
 

@@ -13,7 +13,7 @@
 kIOVideoControlScopeInput = 'inpt'
 ```
 
-#### Discussion
+## Discussion
 
 The scope for controls that apply to the input section of the device.
 

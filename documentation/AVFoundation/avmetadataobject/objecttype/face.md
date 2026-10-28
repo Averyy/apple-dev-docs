@@ -23,7 +23,7 @@ static let face: AVMetadataObject.ObjectType
 extern AVMetadataObjectType const AVMetadataObjectTypeFace;
 ```
 
-#### Discussion
+## Discussion
 
 The type string stored in the `type` property of metadata objects that contain face detection data.
 

@@ -24,7 +24,7 @@ protocol CAMetalDisplayLinkDelegate
 @protocol CAMetalDisplayLinkDelegate
 ```
 
-#### Overview
+## Overview
 
 Your app responds to the system on behalf of a [`CAMetalDisplayLink`](./cametaldisplaylink.md) with this protocol. Implement a type that adopts the protocol and assign an instance of it to a display link’s [`delegate`](./cametaldisplaylink/delegate.md) property.
 

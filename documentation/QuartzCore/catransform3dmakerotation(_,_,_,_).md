@@ -24,7 +24,7 @@ func CATransform3DMakeRotation(_ angle: CGFloat, _ x: CGFloat, _ y: CGFloat, _ z
 extern CATransform3D CATransform3DMakeRotation(CGFloat angle, CGFloat x, CGFloat y, CGFloat z);
 ```
 
-#### Discussion
+## Discussion
 
 If the vector has length zero, this function returns the identity transform.
 

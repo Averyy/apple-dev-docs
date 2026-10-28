@@ -24,7 +24,7 @@ var pattern: Double { get set }
 @property (nonatomic) double pattern;
 ```
 
-#### Discussion
+## Discussion
 
 The framework clamps the value to the range `[0.0, 1.0]`. The default value is `0.0`, which creates an omnidirectional shape. The value `0.5` creates a cardioid shape. The value `1.0` creates a dipole shape.
 

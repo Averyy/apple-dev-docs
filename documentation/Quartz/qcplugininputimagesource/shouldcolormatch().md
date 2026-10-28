@@ -22,7 +22,7 @@ func shouldColorMatch() -> Bool
 - (BOOL) shouldColorMatch;
 ```
 
-#### Return Value
+## Return Value
 
 [`false`](../../Swift/false.md) if the source is a mask or gradient; [`true`](../../Swift/true.md) otherwise.
 

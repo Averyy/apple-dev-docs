@@ -23,7 +23,7 @@ case max
 UIPageViewControllerSpineLocationMax
 ```
 
-#### Discussion
+## Discussion
 
 One view controller is displayed at a time.
 

@@ -24,7 +24,7 @@ func generateCGImagesAsynchronously(forTimes requestedTimes: [NSValue], completi
 - (void) generateCGImagesAsynchronouslyForTimes:(NSArray<NSValue *> *) requestedTimes completionHandler:(AVAssetImageGeneratorCompletionHandler) handler;
 ```
 
-#### Discussion
+## Discussion
 
 Swift clients should prefer the asynchronous `images(for:)` method instead.
 

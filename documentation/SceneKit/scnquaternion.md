@@ -25,7 +25,7 @@ typealias SCNQuaternion = SCNVector4
 typedef SCNVector4 SCNQuaternion;
 ```
 
-#### Discussion
+## Discussion
 
 A quaternion is a mathematical construct useful for describing rotations in three-dimensional space. Although its implementation differs from that of a 4-component vector, you specify a quaternion value using the same fields as an `SCNVector4` structure.
 

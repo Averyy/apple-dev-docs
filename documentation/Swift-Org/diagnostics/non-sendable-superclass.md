@@ -8,7 +8,7 @@ framework: "Swift-Org/diagnostics"
 **Framework**: Swift-Org/diagnostics  
 **Role**: Article
 
-#### Overview
+## Overview
 
 A class cannot conform to `Sendable` when it inherits from a non-Sendable superclass. This prohibition exists because the superclass is free to change its exposed API or internal implementation in ways that would make a `Sendable` conformance unsafe. Consider code like this:
 
@@ -54,7 +54,7 @@ func useSynth(_ synth: MIDISynth) {
 
 However, since `MIDISynth` is *not* allowed to conform to `Sendable`, sending it to a task while still referencing it on the main actor will be an error.
 
-#### How to fix
+## How to fix
 
 If you need to send a class that inherits from a non-Sendable superclass, you have a few options:
 
@@ -91,7 +91,7 @@ If you need to send a class that inherits from a non-Sendable superclass, you ha
   }
   ```
 
-#### `NSObject`
+## `NSObject`
 
 An exception is made for directly inheriting from `NSObject`. `NSObject` does not and will not expose mutable stored properties, so direct subclasses are allowed to conform to `Sendable` for Objective-C interoperability.
 

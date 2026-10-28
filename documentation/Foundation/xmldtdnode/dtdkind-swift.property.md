@@ -20,11 +20,11 @@ var dtdKind: XMLDTDNode.DTDKind { get set }
 @property NSXMLDTDNodeKind DTDKind;
 ```
 
-#### Return Value
+## Return Value
 
 The receiver’s DTD kind. See Constants for a list of valid NSXMLDTDNodeKind constants.
 
-#### Discussion
+## Discussion
 
 The DTD kind is distinct from a `NSXMLDTDNode` object’s node kind (returned by the `NSXMLNode` [`kind`](../xmlnode/kind-swift.property.md) method).
 

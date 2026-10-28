@@ -11,7 +11,7 @@ Create an interactive mesh with low-level mesh and low-level texture.
 - visionOS 2.0+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 This sample app demonstrates how to create geometry that moves and changes shape in real time—to simulate the appearance of fabric, terrain, or water, for example, like in the following images:
 
@@ -27,7 +27,7 @@ To create dynamic, interactive geometry, the app leverages low-level meshes and 
 
 The app starts by generating a plane mesh with [`LowLevelMesh`](./lowlevelmesh.md), and it reconfigures the vertices within that mesh by reading data from a low-level texture that stores its height and normal map. As the app runs, it updates both the mesh and texture on the GPU in every frame. The sample demonstrates three unique height map generation functions, including a sine wave that oscillates outward over time, as well as a terrain editor and a water simulation that each respond to a person’s input.
 
-#### Define a custom vertex structure
+## Define a custom vertex structure
 
 The sample defines the custom vertex data structure for its plane mesh in an MSL header file:
 
@@ -40,7 +40,7 @@ struct PlaneVertex {
 
 In this example, the vertex has a 3D position and a 3D normal vector, but you can define your app’s vertex type with different names and other data.
 
-#### Create a low-level mesh with a descriptor
+## Create a low-level mesh with a descriptor
 
 The sample creates the plane low-level mesh by defining its vertex attributes, vertex layouts, and the number of vertices and indices it has capacity for:
 
@@ -86,7 +86,7 @@ See [Creating a plane with low-level mesh](./creating-a-plane-with-low-level-mes
 
 ![A screenshot of a flat plane mesh floating in a volume in a living room scene. The plane appears light gray in color.](https://developer.apple.com/tutorials/images/com.apple.RealityKit/generating-interactive-geometry-5.jpg)
 
-#### Create a compute shader dispatch system
+## Create a compute shader dispatch system
 
 The sample defines a custom `ComputeUpdateContext` structure that contains the necessary context for dispatching compute shader functions in every frame:
 
@@ -124,7 +124,7 @@ class HeightMapMesh: ComputeSystem {
 }
 ```
 
-#### Create a low-level texture height map
+## Create a low-level texture height map
 
 The sample creates a height map with [`LowLevelTexture`](./lowleveltexture.md) by specifying its pixel format, dimensions, and usage:
 
@@ -151,7 +151,7 @@ struct HeightMap {
 
 The low-level texture has the same dimensions as the plane low-level mesh, such that each pixel in the texture corresponds to a vertex in the mesh.
 
-#### Write height data to the low-level texture
+## Write height data to the low-level texture
 
 The sample writes height data to the low-level texture in every frame on the GPU by dispatching Metal compute shaders. For example, the compute shader function `generateSineWaveHeightMap` writes height values to the texture in the shape of a sine wave moving outward from the center of the texture over time:
 
@@ -269,7 +269,7 @@ func makeComputePipeline(named name: String) -> MTLComputePipelineState? {
 
 See [Creating a dynamic height and normal map with low-level texture](./creating-a-dynamic-height-map-with-low-level-texture.md) for further details, along with a description of how the sample derives surface normal directions from the height map.
 
-#### Generate additional height maps
+## Generate additional height maps
 
 The sample abstracts the generation of height maps by defining a `HeightMapGenerator` protocol:
 
@@ -318,7 +318,7 @@ struct HeightMap {
 }
 ```
 
-#### Update the mesh vertex data on the GPU
+## Update the mesh vertex data on the GPU
 
 The sample defines a structure containing the information necessary to update the mesh’s vertex data on the GPU:
 
@@ -392,7 +392,7 @@ private func updateVertices(computeContext: ComputeUpdateContext) {
 }
 ```
 
-#### Display the mesh with an entity
+## Display the mesh with an entity
 
 The sample creates a custom `HeightMapMeshEntity` class with a [`ModelComponent`](./modelcomponent.md) to display the `HeightMapMesh`:
 
@@ -445,7 +445,7 @@ The following video shows a `HeightMapMeshEntity` displaying the mesh its `Heigh
 
 [Video: A video of a plane mesh whose vertices are offset vertically to form a sine wave moving outward from the center of the mesh in concentric circles over time.](https://developer.apple.com/tutorials/videos/com.apple.RealityKit/generating-interactive-geometry-9.mp4)
 
-#### Make the mesh and texture interactive
+## Make the mesh and texture interactive
 
 The sample allows the mesh to respond to a person’s interactions by passing interaction data to the GPU, which uses it to modify the height map, which in turn updates the vertices of the mesh.
 

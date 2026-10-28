@@ -15,7 +15,7 @@ Returns a Boolean value that indicates whether a room contains the provided poin
 func contains(_ point: SIMD3<Float>) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 Returns `true` if the room contains the point, otherwise `false`.
 

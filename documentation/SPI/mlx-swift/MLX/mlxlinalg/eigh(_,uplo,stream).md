@@ -17,11 +17,11 @@ Compute the eigenvalues and eigenvectors of a complex Hermitian or real symmetri
 static func eigh(_ array: MLXArray, UPLO: String = "L", stream: StreamOrDevice = .default) -> (MLXArray, MLXArray)
 ```
 
-#### Return Value
+## Return Value
 
 A tuple containing the eigenvalues in ascending order and the normalized eigenvectors. The column `v[0..., i]` is the eigenvector corresponding to the i-th eigenvalue.
 
-#### Discussion
+## Discussion
 
 This function supports arrays with at least 2 dimensions. When the input has more than two dimensions, the eigenvalues and eigenvectors are computed for each matrix in the last two dimensions.
 

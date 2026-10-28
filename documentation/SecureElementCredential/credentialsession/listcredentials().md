@@ -20,11 +20,11 @@ func listCredentials() async throws -> [CredentialSession.Credential]
 
 - [Accessing and using secure element credentials](../accessing-and-using-secure-element-credentials.md)
 
-#### Return Value
+## Return Value
 
 An array of credentials to which the calling app has access rights. The order of credentials in this array is random.
 
-#### Discussion
+## Discussion
 
 When you call this method, the framework caches a snapshot of these credentials. Because credentials can change, refresh your data models whenever your app performs any kind of write operation using the [SecureElementCredential](../SecureElementCredential.md) framework. Also update whenever your app returns to the foreground.
 

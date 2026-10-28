@@ -21,7 +21,7 @@ func setColor(_ newColor: NSColor)
 - (void) setColor:(NSColor *) newColor;
 ```
 
-#### Discussion
+## Discussion
 
 This method is invoked on the current color picker each time `NSColorPanel`‘s [`color`](../nscolorpanel/color.md) method is invoked. If `color` is actually different from the color picker’s color (as it would be if, for example, the user dragged a color into `NSColorPanel`‘s color well), this method could be used to update the color picker’s color to reflect the change.
 

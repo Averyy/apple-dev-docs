@@ -21,7 +21,7 @@ The shortest representation of a month.
 static var narrow: Date.FormatStyle.Symbol.Month { get }
 ```
 
-#### Discussion
+## Discussion
 
 This custom format style conveys the shortest representation of a month. For example, it may represent September as `S`.
 

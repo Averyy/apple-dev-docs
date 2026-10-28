@@ -25,7 +25,7 @@ var kColorSyncGainCurveChromaticities: Unmanaged<CFString>
 extern CFStringRef kColorSyncGainCurveChromaticities;
 ```
 
-#### Discussion
+## Discussion
 
 For standard primaries, pass a `CFNumberRef` (`uint8_t`): 0 = BT.709, 1 = Display P3, 2 = BT.2020. For custom primaries, pass a `CFArrayRef` of 8 `float` values encoding four xy chromaticity pairs in order R, G, B, white point; each component in [0, 1] with x + y ≤ 1. The framework rejects any numeric value other than 0, 1, or 2.
 

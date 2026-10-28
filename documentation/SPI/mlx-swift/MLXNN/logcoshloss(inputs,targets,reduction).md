@@ -17,15 +17,15 @@ Computes the log cosh loss between inputs and targets.
 func logCoshLoss(inputs: MLXArray, targets: MLXArray, reduction: LossReduction = .none) -> MLXArray
 ```
 
-#### Return Value
+## Return Value
 
 Computed log cosh loss
 
-#### Discussion
+## Discussion
 
 Logcosh acts like L2 loss for small errors, ensuring stable gradients, and like the L1 loss for large errors, reducing sensitivity to outliers. This dual behavior offers a balanced, robust approach for regression tasks.
 
-##### See Also
+### See Also
 
 - [Loss Functions](./losses.md)
 

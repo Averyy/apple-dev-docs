@@ -17,7 +17,7 @@ An indication of when to reduce electricity usage for devices that can reduce el
 case reduce
 ```
 
-#### Discussion
+## Discussion
 
 For example, an HVAC system can reduce electricity consumption by adjusting setpoints.
 

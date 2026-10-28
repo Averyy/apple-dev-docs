@@ -22,7 +22,7 @@ Dumps the given object’s contents using its mirror to standard output.
 func dump<T>(_ value: T, name: String? = nil, indent: Int = 0, maxDepth: Int = .max, maxItems: Int = .max) -> T
 ```
 
-#### Return Value
+## Return Value
 
 The instance passed as `value`.
 

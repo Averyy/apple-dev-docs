@@ -15,11 +15,11 @@ Get virtual mappings for buffer data.
 errno_t buf_map(buf_t bp, caddr_t *io_addr);
 ```
 
-#### Return Value
+## Return Value
 
 0 for success, ENOMEM if unable to map the buffer.
 
-#### Discussion
+## Discussion
 
 For buffers created through buf_getblk() (i.e. traditional buffer cache usage), buf_map() just returns the address at which data was mapped by but_getblk(). For a B_CLUSTER buffer, i.e. an iobuf whose upl state is managed manually, there are two possibilities. If the buffer was created with an underlying "real" buffer through cluster_bp(), the mapping of the "real" buffer is returned. Otherwise, the buffer was created with buf_alloc() and buf_setupl() was subsequently called; buf_map() will call ubc_upl_map() to get a mapping for the buffer's upl and return the start of that mapping plus the buffer's upl offset (set in buf_setupl()). In the last case, buf_unmap() must later be called to tear down the mapping. NOTE: buf_map() does not set the buffer data pointer; this must be done with buf_setdataptr().
 

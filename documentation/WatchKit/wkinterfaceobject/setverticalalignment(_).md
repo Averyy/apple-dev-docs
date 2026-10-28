@@ -19,7 +19,7 @@ func setVerticalAlignment(_ verticalAlignment: WKInterfaceObjectVerticalAlignmen
 - (void) setVerticalAlignment:(WKInterfaceObjectVerticalAlignment) verticalAlignment;
 ```
 
-#### Discussion
+## Discussion
 
 Changes to the vertical alignment of an object are animatable.
 

@@ -21,11 +21,11 @@ class func isAvailable(forServiceType serviceType: String!) -> Bool
 + (BOOL) isAvailableForServiceType:(NSString *) serviceType;
 ```
 
-#### Return Value
+## Return Value
 
 Returns a Boolean value that indicates whether the service is accessible and whether at least one account is set up.
 
-#### Discussion
+## Discussion
 
 For the account to be available, the user must be logged into the social service in the device settings.
 

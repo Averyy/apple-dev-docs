@@ -18,7 +18,7 @@ Fetch a list of outcomes that exist in the store.
 func fetchAnyOutcomes(query: OCKOutcomeQuery, callbackQueue: DispatchQueue, completion: @escaping OCKResultClosure<[OCKAnyOutcome]>)
 ```
 
-#### Discussion
+## Discussion
 
 The closure receives an error if there’s an issue accessing the store or fetching results.
 

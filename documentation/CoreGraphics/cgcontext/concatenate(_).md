@@ -25,7 +25,7 @@ func concatenate(_ transform: CGAffineTransform)
 extern void CGContextConcatCTM(CGContextRef c, CGAffineTransform transform);
 ```
 
-#### Discussion
+## Discussion
 
 When you call this function, it concatenates (that is, it combines) two matrices, by multiplying them together. The order in which matrices are concatenated is important, as the operations are not commutative. The resulting CTM in the context is:   `CTMnew = transform * CTMcontext.`
 

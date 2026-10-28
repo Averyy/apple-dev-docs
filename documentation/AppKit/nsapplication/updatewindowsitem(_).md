@@ -19,7 +19,7 @@ func updateWindowsItem(_ win: NSWindow)
 - (void) updateWindowsItem:(NSWindow *) win;
 ```
 
-#### Discussion
+## Discussion
 
 You rarely need to invoke this method because it is invoked automatically when the edit status of an [`NSWindow`](../nswindow.md) object is set.
 

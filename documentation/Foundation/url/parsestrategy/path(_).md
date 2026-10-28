@@ -21,7 +21,7 @@ Modifies a parse strategy to parse a URL’s path component in accordance with t
 func path(_ strategy: URL.ParseStrategy.ComponentParseStrategy<String> = .optional) -> URL.ParseStrategy
 ```
 
-#### Return Value
+## Return Value
 
 A modified [`URL.ParseStrategy`](../parsestrategy.md) that incorporates the specified behavior.
 

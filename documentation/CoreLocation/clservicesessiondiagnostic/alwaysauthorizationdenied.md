@@ -20,7 +20,7 @@ A Boolean value that indicates someone has not granted the always authorization 
 @property (nonatomic, readonly) BOOL alwaysAuthorizationDenied;
 ```
 
-#### Discussion
+## Discussion
 
 This property is `true` in the `CLServiceSessionDiagnostic` of a [`CLServiceSession`](../clservicesession-pt7n.md) created with an [`CLServiceSession.AuthorizationRequirement.always`](../clservicesession-pt7n/authorizationrequirement/always.md)  goal if someone denies the app that authorization; otherwise `false`.
 

@@ -21,7 +21,7 @@ class var maximumImageSize: CGSize { get }
 @property (class, nonatomic, readonly) CGSize maximumImageSize;
 ```
 
-#### Discussion
+## Discussion
 
 To properly size your images, your app should size them to the display scale of the car screen. See -[CPInterfaceController carTraitCollection].
 

@@ -21,7 +21,7 @@ Creates an identifier for the specified entity.
 init<Entity>(for entity: Entity) where Entity : AppEntity
 ```
 
-#### Discussion
+## Discussion
 
 For entities adopting [`SyncableEntity`](../syncableentity.md), this initializer extracts the stable ID:
 

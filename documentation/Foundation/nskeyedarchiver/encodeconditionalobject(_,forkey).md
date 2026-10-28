@@ -25,7 +25,7 @@ func encodeConditionalObject(_ object: Any?, forKey key: String)
 - (void) encodeConditionalObject:(id) object forKey:(NSString *) key;
 ```
 
-#### Discussion
+## Discussion
 
 This method is effective only if you’ve previously archived this object with this key by calling [`encodeInt:forKey:`](./encodeint_forkey_.md).
 

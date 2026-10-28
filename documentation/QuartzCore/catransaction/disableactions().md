@@ -24,11 +24,11 @@ class func disableActions() -> Bool
 + (BOOL) disableActions;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if actions are disabled.
 
-#### Discussion
+## Discussion
 
 This is a convenience method that returns the `boolValue` for the [`value(forKey:)`](./value%28forkey%29.md) value returned by the  [`kCATransactionDisableActions`](../kcatransactiondisableactions.md) key.
 

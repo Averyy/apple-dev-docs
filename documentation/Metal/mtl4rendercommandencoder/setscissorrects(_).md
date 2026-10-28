@@ -20,7 +20,7 @@ Sets an array of scissor rectangles for a fragment scissor test.
 func setScissorRects(_ scissorRects: [MTLScissorRect])
 ```
 
-#### Discussion
+## Discussion
 
 Metal uses the specific scissor rectangle corresponding to the index you specify via the `[[ viewport_array_index ]]` output attribute of the vertex shader function in the Metal Shading Language, discarding all fragments outside of the scissor rect.
 

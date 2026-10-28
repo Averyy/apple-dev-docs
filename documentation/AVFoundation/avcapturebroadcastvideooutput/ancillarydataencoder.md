@@ -23,7 +23,7 @@ var ancillaryDataEncoder: AVCaptureAncillaryDataEncoder { get }
 @property (nonatomic, readonly) AVCaptureAncillaryDataEncoder * ancillaryDataEncoder;
 ```
 
-#### Discussion
+## Discussion
 
 This property provides access to the ancillary data encoder to set user-defined data or disable ancillary data encoding entirely.
 

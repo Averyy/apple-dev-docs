@@ -21,7 +21,7 @@ protocol MSStickerBrowserViewDataSource : NSObjectProtocol
 @protocol MSStickerBrowserViewDataSource <NSObject>
 ```
 
-#### Overview
+## Overview
 
 To load its stickers, the [`MSStickerBrowserView`](./msstickerbrowserview.md) class performs the following steps:
 

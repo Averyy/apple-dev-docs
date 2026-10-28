@@ -24,7 +24,7 @@ func UIRectFrame(_ rect: CGRect)
 extern void UIRectFrame(CGRect rect);
 ```
 
-#### Discussion
+## Discussion
 
 This function draws a frame around the inside of `rect` in the stroke color of the current graphics context and using the `kCGBlendModeCopy` blend mode. The width is equal to 1.0 in the current coordinate system. Because the frame is drawn inside the rectangle, it is visible even if drawing is clipped to the rectangle. If the current graphics context is `nil`, this function does nothing.
 

@@ -24,7 +24,7 @@ case mediaPlaylistTitle
 INVocabularyStringTypeMediaPlaylistTitle
 ```
 
-#### Discussion
+## Discussion
 
 Examples might include ‘Today’s Hits” or “80’s Hair Bands”.
 

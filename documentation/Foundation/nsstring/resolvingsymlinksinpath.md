@@ -25,7 +25,7 @@ var resolvingSymlinksInPath: String { get }
 @property (copy, readonly) NSString * stringByResolvingSymlinksInPath;
 ```
 
-#### Discussion
+## Discussion
 
 A new string made by resolving all symbolic links, then removing extraneous path components. For absolute paths, all symbolic links are guaranteed to be removed. For relative paths, symbolic links that can’t be resolved are left unresolved in the returned string.
 

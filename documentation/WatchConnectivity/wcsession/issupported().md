@@ -23,11 +23,11 @@ class func isSupported() -> Bool
 + (BOOL) isSupported;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if a session object is available or [`false`](../../Swift/false.md) if it is not.
 
-#### Discussion
+## Discussion
 
 Before retrieving the default session object, call this method to verify that the current device supports watch connectivity. Session objects are always available on Apple Watch. They are also available on iPhones that support pairing with an Apple Watch. For all other devices, this method returns [`false`](../../Swift/false.md) to indicate that you cannot use the classes and methods of this framework.
 

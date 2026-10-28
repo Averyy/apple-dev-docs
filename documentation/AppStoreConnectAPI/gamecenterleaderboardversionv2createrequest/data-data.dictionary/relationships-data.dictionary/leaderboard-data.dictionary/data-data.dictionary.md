@@ -13,7 +13,7 @@
 object GameCenterLeaderboardVersionV2CreateRequest.Data.Relationships.Leaderboard.Data
 ```
 
-#### Overview
+## Overview
 
 - id:
 - type:

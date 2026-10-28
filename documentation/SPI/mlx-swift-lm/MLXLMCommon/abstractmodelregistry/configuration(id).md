@@ -17,7 +17,7 @@ Returns configuration from [`modelRegistry`](../genericmodelfactory/modelregistr
 func configuration(id: String) -> ModelConfiguration
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: If the id doesn’t exists in the configuration, this will return a new instance of it. If you want to check if the configuration in model registry, you should use [`contains(id:)`](./contains%28id%29.md).
 

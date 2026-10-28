@@ -12,7 +12,7 @@ The request for the users’ details service.
 object GetVppUsersRequest
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**:  The `batchToken` encodes the original value of `includeRetired`; therefore, if a `batchToken` is present on the request, the `includeRetired` field (if passed) is ignored.
 

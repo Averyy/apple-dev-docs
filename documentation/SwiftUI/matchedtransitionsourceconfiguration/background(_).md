@@ -21,7 +21,7 @@ Specifies a color that will be drawn behind the content within the matched trans
 func background(_ style: Color) -> some MatchedTransitionSourceConfiguration
 ```
 
-#### Discussion
+## Discussion
 
 During a zoom transition, the background color fills the interpolated shape as it groes from the matched transition source.
 

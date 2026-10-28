@@ -22,7 +22,7 @@ init(defaultToolTip: String)
 - (instancetype) initWithDefaultToolTip:(NSString *) defaultToolTip;
 ```
 
-#### Return Value
+## Return Value
 
 A tooltip interaction object.
 

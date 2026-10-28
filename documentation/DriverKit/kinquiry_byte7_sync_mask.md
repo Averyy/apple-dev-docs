@@ -16,7 +16,7 @@
 kINQUIRY_Byte7_SYNC_Mask
 ```
 
-#### Discussion
+## Discussion
 
 Mask to use to test the SYNC bit.
 

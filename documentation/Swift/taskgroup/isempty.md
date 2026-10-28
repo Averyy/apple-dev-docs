@@ -21,11 +21,11 @@ A Boolean value that indicates whether the group has any remaining tasks.
 var isEmpty: Bool { get }
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the group has no pending tasks; otherwise `false`.
 
-#### Discussion
+## Discussion
 
 At the start of the body of a `withTaskGroup(of:returning:body:)` call, the task group is always empty. It’s guaranteed to be empty when returning from that body because a task group waits for all child tasks to complete before returning.
 

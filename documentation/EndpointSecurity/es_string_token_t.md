@@ -20,7 +20,7 @@ struct es_string_token_t
 typedef struct { ... } es_string_token_t;
 ```
 
-#### Overview
+## Overview
 
 The length doesn’t include the null terminator character.
 

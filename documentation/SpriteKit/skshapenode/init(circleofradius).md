@@ -25,7 +25,7 @@ convenience init(circleOfRadius radius: CGFloat)
 + (instancetype) shapeNodeWithCircleOfRadius:(CGFloat) radius;
 ```
 
-#### Return Value
+## Return Value
 
 A new shape node.
 

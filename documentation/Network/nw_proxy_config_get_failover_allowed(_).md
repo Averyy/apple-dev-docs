@@ -25,7 +25,7 @@ func nw_proxy_config_get_failover_allowed(_ proxy_config: nw_proxy_config_t) -> 
 bool nw_proxy_config_get_failover_allowed(nw_proxy_config_t proxy_config);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean that indicates whether or not a proxy configuration allows failover to non-proxied connections.
 

@@ -22,7 +22,7 @@ init?(frameWidth: Int, frameHeight: Int, sourcePixelFormat: OSType)
 - (instancetype) initWithFrameWidth:(NSInteger) frameWidth frameHeight:(NSInteger) frameHeight sourcePixelFormat:(OSType) sourcePixelFormat;
 ```
 
-#### Discussion
+## Discussion
 
 Returns nil if frameWidth, frameHeight, or sourcePixelFormat is unsupported.
 

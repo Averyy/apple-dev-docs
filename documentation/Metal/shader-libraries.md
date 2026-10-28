@@ -5,7 +5,7 @@
 
 Manage and load your app’s Metal shaders.
 
-#### Overview
+## Overview
 
 A Metal library represents a collection of one or more shaders. Xcode creates a library from the shader source files in a project, a Metal intermediate representation (IR) file, or a binary archive file. You can also create IR files from Metal source code by running the Metal compiler in a command-line environment.
 

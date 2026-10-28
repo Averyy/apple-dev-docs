@@ -17,7 +17,7 @@ Container for embedder models that guarantees single threaded access.
 final class EmbedderModelContainer
 ```
 
-#### Overview
+## Overview
 
 Wrap models used by e.g. the UI in a ModelContainer. Callers can access the model and/or tokenizer (any values from the [`EmbedderModelContext`](./embeddermodelcontext.md)):
 

@@ -5,13 +5,13 @@
 
 Describe your model classes to SwiftData using the framework’s macros, and store instances of those models so they exist beyond the app’s runtime.
 
-#### Overview
+## Overview
 
 Most apps define a number of custom types that model the data it creates or consumes. For example, a travel app might define classes that represent trips, flights, and booked accommodations. Using SwiftData, you can quickly and efficiently persist that data so it’s available across app launches, and leverage the framework’s integration with SwiftUI to refetch that data and display it onscreen.
 
 By design, SwiftData supplements your existing model classes. The framework provides tools such as macros and property wrappers that enable you to expressively describe your app’s schema in Swift code, removing any reliance on external dependencies such as model and migration mapping files.
 
-##### Turn classes into models to make them persistable
+### Turn classes into models to make them persistable
 
 To let SwiftData save instances of a model class, import the framework and annotate that class with the [`Model()`](./model%28%29.md) macro. The macro updates the class with conformance to the [`PersistentModel`](./persistentmodel.md) protocol, which SwiftData uses to examine the class and generate an internal schema. Additionally, the macro enables change tracking for the class by adding conformance to the [`Observable`](../Observation/observable.md) protocol.
 
@@ -33,7 +33,7 @@ By default, SwiftData includes all noncomputed properties of a class as long as 
 
 The code you write to define your model classes now serves as the source of truth for your app’s model layer, and the framework uses that to keep the persisted data in a consistent state.
 
-##### Customize the persistence behavior of model attributes
+### Customize the persistence behavior of model attributes
 
 An *attribute* is a property of a model class that SwiftData manages. In most cases, the framework’s default behavior for attributes is sufficient. However, if you need to alter how SwiftData handles the persistence of a particular attribute, use one of the provided schema macros. For example, you may want to avoid conflicts in your model data by specifying that an attribute’s value is unique across all instances of that model.
 
@@ -57,7 +57,7 @@ SwiftData persists all noncomputed attributes of a model by default, but you may
 @Transient var destinationWeather = Weather.current()
 ```
 
-##### Configure the model storage
+### Configure the model storage
 
 Before SwiftData can examine your models and generate the required schema, you need to tell it — at runtime — which models to persist, and optionally, the configuration to use for the underlying storage. For example, you may want the storage to exist only in memory when running tests, or to use a specific CloudKit container when syncing model data across devices.
 
@@ -111,7 +111,7 @@ let container = try ModelContainer(
 
 > ❗ **Important**: Automatic iCloud sync relies on the presence of the CloudKit entitlement, and SwiftData uses the first container it finds in that entitlement. If your app needs a particular container, use an instance of `ModelConfiguration` to specify that container.
 
-##### Save models for later use
+### Save models for later use
 
 To manage instances of your model classes at runtime, use a *model context* — the object responsible for the in-memory model data and coordination with the model container to successfully persist that data. To get a context for your model container that’s bound to the main actor, use the [`modelContext`](../SwiftUI/environmentvalues/modelcontext.md) environment variable:
 
@@ -145,7 +145,7 @@ context.insert(trip)
 
 Following the insert, you can save immediately by invoking the context’s [`save()`](./modelcontext/save%28%29.md) method, or rely on the context’s implicit save behavior instead. Contexts automatically track changes to their known model instances and include those changes in subsequent saves. In addition to saving, you can use a context to fetch, enumerate, and delete model instances. For more information, see [`ModelContext`](./modelcontext.md).
 
-##### Fetch models for display or additional processing
+### Fetch models for display or additional processing
 
 After you begin persisting model data, you’ll likely want to retrieve that data, materialized as model instances, and display those instances in a view or take some other action on them. SwiftData provides the [`Query`](./query.md) property wrapper and the [`FetchDescriptor`](./fetchdescriptor.md) type for performing fetches.
 

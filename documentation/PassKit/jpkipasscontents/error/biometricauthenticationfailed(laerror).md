@@ -16,7 +16,7 @@ Biometric authorization failed
 case biometricAuthenticationFailed(laError: LAError)
 ```
 
-#### Discussion
+## Discussion
 
 - laError. LocalAuthentication.LAError issued by the LocalAuthentication framework.
 

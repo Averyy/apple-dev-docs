@@ -25,11 +25,11 @@ func replaceOccurrences(of target: String, with replacement: String, options: NS
 - (NSUInteger) replaceOccurrencesOfString:(NSString *) target withString:(NSString *) replacement options:(NSStringCompareOptions) options range:(NSRange) searchRange;
 ```
 
-#### Return Value
+## Return Value
 
 The number of replacements made.
 
-#### Discussion
+## Discussion
 
 This method treats the length of the string as a valid range value that returns an empty string.
 

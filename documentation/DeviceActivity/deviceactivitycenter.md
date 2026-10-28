@@ -17,7 +17,7 @@ A class that enables an application’s extension to start monitoring scheduled 
 struct DeviceActivityCenter
 ```
 
-#### Overview
+## Overview
 
 Activity begins when someone first uses a device within the scheduled time interval and ends when someone first uses the device outside of the interval. The system only invokes the [`intervalDidStart(for:)`](./deviceactivitymonitor/intervaldidstart%28for%29.md) and [`intervalDidEnd(for:)`](./deviceactivitymonitor/intervaldidend%28for%29.md) when the device is in use. Likewise, the system invokes the [`eventDidReachThreshold(_:activity:)`](./deviceactivitymonitor/eventdidreachthreshold%28_,activity%29.md) function when an event reaches its threshold.
 

@@ -24,7 +24,7 @@ func setObject(_ object: Any!, forKeyedSubscript key: (any NSCopying & NSObjectP
 - (void) setObject:(id) object forKeyedSubscript:(NSObject<NSCopying> *) key;
 ```
 
-#### Discussion
+## Discussion
 
 This method first constructs a [`JSValue`](../jsvalue.md) object from the `key` parameter, then uses that value in JavaScript to set the property in the context’s global object.
 

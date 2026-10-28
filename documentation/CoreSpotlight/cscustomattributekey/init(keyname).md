@@ -23,11 +23,11 @@ convenience init?(keyName: String)
 - (instancetype) initWithKeyName:(NSString *) keyName;
 ```
 
-#### Return Value
+## Return Value
 
 A new custom attribute key.
 
-#### Discussion
+## Discussion
 
 To create custom attribute key names, use a reverse DNS format that includes your company name and does not include the period character (”.”). For example, a key name of the form `com_mycompany_myapp_mykeyname` works well.
 

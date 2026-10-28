@@ -24,7 +24,7 @@ init?(contentsOf url: URL, options: [CIImageOption : Any]? = nil)
 - (instancetype) initWithContentsOfURL:(NSURL *) url options:(NSDictionary<NSString *,id> *) options;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized image object, or `nil` if the object could not be initialized.
 

@@ -25,7 +25,7 @@ convenience init(recordIDs: [CKRecord.ID])
 - (instancetype) initWithRecordIDs:(NSArray<CKRecordID *> *) recordIDs;
 ```
 
-#### Discussion
+## Discussion
 
 A fetch operation retrieves all of a record’s fields, including any assets that those fields reference. If you want to minimize the amount of data that the operation returns, configure the [`desiredKeys`](./desiredkeys-34l1l.md) property with only the keys that contain the values that you have an interest in.
 

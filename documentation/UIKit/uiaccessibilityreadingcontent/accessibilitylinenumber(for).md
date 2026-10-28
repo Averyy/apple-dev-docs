@@ -25,11 +25,11 @@ func accessibilityLineNumber(for point: CGPoint) -> Int
 - (NSInteger) accessibilityLineNumberForPoint:(CGPoint) point;
 ```
 
-#### Return Value
+## Return Value
 
 The line number that contains the specified point or `NSNotFound` if the point indicates an empty area within the receiver’s rectangle. By default, this method returns `NSNotFound`.
 
-#### Discussion
+## Discussion
 
 This method is called only when `point` is within the bounds of the view or element.
 

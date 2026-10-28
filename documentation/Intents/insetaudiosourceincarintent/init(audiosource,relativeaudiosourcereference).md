@@ -24,11 +24,11 @@ init(audioSource: INCarAudioSource, relativeAudioSourceReference: INRelativeRefe
 - (instancetype) initWithAudioSource:(INCarAudioSource) audioSource relativeAudioSourceReference:(INRelativeReference) relativeAudioSourceReference;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized intent object or `nil` if the object could not be created.
 
-#### Discussion
+## Discussion
 
 Normally, you don’t create instances of this class yourself. Instead, Siri creates instances when the user asks to change the vehicle’s audio source. However, you can use this method during testing to create intent objects in order to validate your intent handling code paths. Your test code should always specify the unknown constant for one of the parameters; don’t specify the unknown constant for both parameters.
 

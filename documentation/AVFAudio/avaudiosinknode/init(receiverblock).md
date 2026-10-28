@@ -25,7 +25,7 @@ init(receiverBlock block: @escaping AVAudioSinkNodeReceiverBlock)
 - (instancetype) initWithReceiverBlock:(AVAudioSinkNodeReceiverBlock) block;
 ```
 
-#### Discussion
+## Discussion
 
 When connecting the audio sink node to another node, the system uses the connection format to set the audio format for the input bus.
 

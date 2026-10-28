@@ -6,7 +6,7 @@
 
 An atom you use to specify the size of each sample in the media.
 
-#### Overview
+## Overview
 
 See [`Sample size atom`](../sample_size_atom.md).
 

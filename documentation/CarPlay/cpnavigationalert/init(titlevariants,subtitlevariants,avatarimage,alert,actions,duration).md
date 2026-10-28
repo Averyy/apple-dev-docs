@@ -21,7 +21,7 @@ init(titleVariants: [String], subtitleVariants: [String], avatarImage: UIImage?,
 - (instancetype) initWithTitleVariants:(NSArray<NSString *> *) titleVariants subtitleVariants:(NSArray<NSString *> *) subtitleVariants avatarImage:(UIImage *) avatarImage alertImage:(UIImage *) alertImage actions:(NSArray<CPAlertAction *> *) actions duration:(NSTimeInterval) duration;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized @c CPNavigationAlert.
 

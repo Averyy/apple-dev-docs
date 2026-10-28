@@ -23,7 +23,7 @@ var trialBilling: PKRecurringPaymentSummaryItem? { get set }
 @property (nonatomic, strong, nullable) PKRecurringPaymentSummaryItem * trialBilling;
 ```
 
-#### Discussion
+## Discussion
 
 The trial billing cycle is optional; use it if the purchase has a trial period.
 

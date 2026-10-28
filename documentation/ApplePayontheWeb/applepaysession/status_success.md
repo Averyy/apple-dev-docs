@@ -15,7 +15,7 @@ The requested action succeeded.
 const unsigned short STATUS_SUCCESS;
 ```
 
-#### Discussion
+## Discussion
 
 When you call [`completePayment`](./completepayment.md) with [`STATUS_SUCCESS`](./status_success.md), the payment sheet shows that the transaction was successful, and the sheet is dismissed . For all other methods, the payment sheet remains open.
 

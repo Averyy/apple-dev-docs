@@ -17,7 +17,7 @@ Maximum size of the key-value cache. Old entries are overwritten while retaining
 var maxKVSize: Int?
 ```
 
-#### Discussion
+## Discussion
 
 When set, full-attention layers that would otherwise use [`KVCacheSimple`](../kvcachesimple.md) use [`RotatingKVCache`](../rotatingkvcache.md) instead. Architecture sliding-window layers use the smaller of their model-defined window and this limit. State-space / Mamba / GDN layers are not token-windowed and therefore do not consume this budget.
 

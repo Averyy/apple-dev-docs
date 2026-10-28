@@ -19,7 +19,7 @@ The declaration to configure Safari Extensions.
 object SafariExtensionSettings
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.configuration.safari.extensions.settings` as the declaration type.
 
@@ -38,7 +38,7 @@ If the same value appears in both `AllowedDomains` and `DeniedDomains`, Safari d
 
 The user can configure any domains not matched by the values in `AllowedDomains` or `DeniedDomains`.
 
-##### Examples
+### Examples
 
 Give an extension access to only “example.com” and its sub-domains, and deny access to everywhere else.
 
@@ -67,7 +67,7 @@ Give an extension access to “public.example.com”, but deny access to “exam
 "DeniedDomains": ["*example.com"]
 ```
 
-##### Configuration availability
+### Configuration availability
 
 |  |  |
 | --- | --- |
@@ -79,7 +79,7 @@ Give an extension access to “public.example.com”, but deny access to “exam
 | Allowed in user scope | macOS, Shared iPad |
 | Apply | Multiple configurations are combined and applied as a single effective configuration |
 
-##### Configuration examples
+### Configuration examples
 
 **Disallow all**:
 

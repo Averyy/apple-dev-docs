@@ -30,7 +30,7 @@ class SLComposeServiceViewController
 @interface SLComposeServiceViewController : NSViewController
 ```
 
-#### Overview
+## Overview
 
 The [`SLComposeServiceViewController`](./slcomposeserviceviewcontroller.md) class provides a standard compose view, and you can present it for social sharing extensions on iOS and macOS. By default, the compose view includes items such as an editable text view and an indication of remaining characters, in addition to support for previewing attachments and displaying configuration items, such as an account or privacy picker.
 

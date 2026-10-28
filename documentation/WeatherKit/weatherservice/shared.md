@@ -21,7 +21,7 @@ A single, shared weather service object.
 static let shared: WeatherService
 ```
 
-#### Discussion
+## Discussion
 
 Use this object to interface to weather services in your application. If you need to prioritize weather information, create separate instances with `init`.
 

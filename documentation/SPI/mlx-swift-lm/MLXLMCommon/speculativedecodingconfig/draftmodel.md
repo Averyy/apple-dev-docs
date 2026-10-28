@@ -17,7 +17,7 @@ The lightweight model used to propose candidate tokens, when it was provided eag
 var draftModel: ModelContainer? { get }
 ```
 
-#### Discussion
+## Discussion
 
 Configurations initialized with a loader closure return `nil` because the draft model is loaded asynchronously by [`ChatSession`](../chatsession.md) only when speculation is admitted by the memory policy.
 

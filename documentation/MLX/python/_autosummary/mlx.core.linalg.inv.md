@@ -6,20 +6,24 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.li
 
 # mlx.core.linalg.inv
 
-**inv(*a: array*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.md#mlx.core.array)**
-: Compute the inverse of a square matrix.
+```python
+inv(a: array, *, stream: StreamOrDevice = None) → array
+```
+
+Compute the inverse of a square matrix.
+
 This function supports arrays with at least 2 dimensions. When the input
 has more than two dimensions, the inverse is computed for each matrix
 in the last two dimensions of `a`.
 
-Parameters:
+**Parameters:**
 
-**a** ([array](mlx.core.array.md#mlx.core.array)) – Input array.
-**stream** ([Stream](stream_class.md#mlx.core.Stream)*, **optional*) – Stream or device. Defaults to `None`
+- **a** ([array](mlx.core.array.md#mlx.core.array)) – Input array.
+- **stream** ([Stream](stream_class.md#mlx.core.Stream), *optional*) – Stream or device. Defaults to `None`
 in which case the default stream of the default device is used.
 
-Returns:
-`ainv` such that `dot(a, ainv) = dot(ainv, a) = eye(a.shape[0])`
+**Returns:**
+: `ainv` such that `dot(a, ainv) = dot(ainv, a) = eye(a.shape[0])`
 
-Return type:
-[array](mlx.core.array.md#mlx.core.array)
+**Return type:**
+: [array](mlx.core.array.md#mlx.core.array)

@@ -25,7 +25,7 @@ var rootNode: SCNNode { get }
 @property (nonatomic, readonly) SCNNode * rootNode;
 ```
 
-#### Discussion
+## Discussion
 
 All scene content—nodes, geometries and their materials, lights, cameras, and related objects—is organized in a node hierarchy with a single common root node.
 

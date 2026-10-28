@@ -23,7 +23,7 @@ var averagePowerLevel: Float { get }
 @property (nonatomic, readonly) float averagePowerLevel;
 ```
 
-#### Discussion
+## Discussion
 
 This property isn’t key-value observable.
 

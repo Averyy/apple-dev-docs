@@ -16,7 +16,7 @@ Sets the fourth UV coordinate set for the rendered output mesh.
 void output::setUV4(float4 value)
 ```
 
-#### Discussion
+## Discussion
 
 This function assigns a custom UV coordinate to the fourth texture coordinate channel of the output mesh. If the mesh doesn’t already have a UV4 channel, it will be created. This enables multi-texturing and advanced shader effects.
 

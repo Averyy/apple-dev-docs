@@ -9,7 +9,7 @@ Get a list of version resource IDs for a specific Game Center achievement.
 **Availability**:
 - App Store Connect API 3.6+
 
-#### Overview
+## Overview
 
 - id:
 - limit:

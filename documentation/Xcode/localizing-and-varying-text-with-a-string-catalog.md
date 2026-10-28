@@ -5,7 +5,7 @@
 
 Use string catalogs to manage localizable strings, add languages, translate text, handle plurals, and vary text by device.
 
-#### Overview
+## Overview
 
 Your app delivers the best experience when it runs well in a person’s locale and displays content in their native language. Supporting multiple languages and regions is more than translating text. It includes handling plurals for nouns and units, as well as displaying the right form of text on specific devices.
 
@@ -26,7 +26,7 @@ For more information on internationalizing your app, see [Supporting multiple la
 
 > **Related session from WWDC25**: Session 225: [Code-along: Explore localization with Xcode](https://developer.apple.com/videos/play/wwdc2025/225)
 
-##### Add a string catalog to your project
+### Add a string catalog to your project
 
 Add one or more string catalog files to your project. You can start with the default `Localizable.xcstrings` file and later, add more depending on the complexity of your code.
 
@@ -38,13 +38,13 @@ To add a string catalog to your project:
 
 If you add multiple string catalogs, choose which string catalog to use for each localizable string by passing its name to the localizable APIs in your code. For more information, see [Organize localizable strings into tables](./preparing-your-apps-text-for-translation.md#Organize-localizable-strings-into-tables).
 
-##### Add your localizable text to the string catalog
+### Add your localizable text to the string catalog
 
 To populate your string catalog with the localizable text from your app, choose Product > Build. Xcode discovers the localizable strings in your app and adds them to string catalogs in your project automatically. Each time you build your project, Xcode updates your string catalogs with changes you make to localizable strings in your code.
 
 Most SwiftUI strings inside views are automatically localizable and appear in the string catalog files. If some strings are missing, verify that you are using localizable APIs in your code so that Xcode finds all the user-facing text. For more information, see [Preparing your app’s text for translation](./preparing-your-apps-text-for-translation.md) and [Preparing dates, currencies, and numbers for translation](./preparing-dates-numbers-with-formatters.md).
 
-##### Review the source of localizable text in the assistant
+### Review the source of localizable text in the assistant
 
 After you populate your string catalog, you can review the location of localizable text in your app before you add languages and translations.
 
@@ -54,7 +54,7 @@ If necessary, make edits to the localizable text in the source editor and choose
 
 To jump to the text in the source editor, click the arrow button that appears next to a key when you hover over it in the string catalog. You can also jump to the code and see example usages in the Attributes inspector for a key.
 
-##### Add variants for strings that contain plurals
+### Add variants for strings that contain plurals
 
 If you use string interpolation in your localizable strings, Xcode can add plural variants for you to string catalogs.
 
@@ -85,7 +85,7 @@ When you select Vary by Plural, Xcode:
 
 You can add plural variants to the source localization before or after you add languages and Xcode keeps all the plural variants in sync. If you add plural variants to a language other than the source localization, that change affects only that language.
 
-##### Vary strings by device
+### Vary strings by device
 
 When you need to alter the text that displays on a device due to the available space, or because it has a different interaction, use the Vary by Device option in the string catalog editor.
 
@@ -102,7 +102,7 @@ Enter the text you want to display for that selected device, while retaining the
 
 When the app runs on the selected device, the system displays the new message for that device.
 
-##### Generate comments automatically
+### Generate comments automatically
 
 You can let Xcode automatically create comments for your localizable strings to provide more context for localizers. These comments describe the interface element, surrounding interface, placeholder content, and variables in the string.
 
@@ -117,7 +117,7 @@ Later, when you export your localization files, an “auto-generated” note app
 
 Alternatively, pass comments to the localizable APIs in your code. For more information, see [Add comments to your localizable strings](./preparing-your-apps-text-for-translation.md#Add-comments-to-your-localizable-strings).
 
-##### Add localizations to your project
+### Add localizations to your project
 
 Add the language and region combinations you want to support to your string catalogs.
 
@@ -127,7 +127,7 @@ For example, select a language and region, such as Portuguese (Brazil) (pt-BR) o
 
 You can also add and remove languages using the Info pane in the project editor. Under Localizations, click the Add button, or select a localization and click the Remove button (-).
 
-##### Add translations to the string catalog
+### Add translations to the string catalog
 
 If you know the translations for the languages that you add, you can enter them directly in the string catalog editor. To enter translations, select the language that you want to add translations for in the sidebar. Then click the text field for each key in that language’s column and enter the translation for that key.
 

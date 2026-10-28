@@ -23,7 +23,7 @@ optional func peoplePickerNavigationController(_ peoplePicker: ABPeoplePickerNav
 - (BOOL) peoplePickerNavigationController:(ABPeoplePickerNavigationController *) peoplePicker shouldContinueAfterSelectingPerson:(ABRecordRef) person;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) to display the contact and dismiss the picker. [`false`](../../Swift/false.md) to do nothing.
 

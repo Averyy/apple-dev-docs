@@ -25,11 +25,11 @@ func certificate(for objectID: TKToken.ObjectID) throws -> TKTokenKeychainCertif
 - (TKTokenKeychainCertificate *) certificateForObjectID:(TKTokenObjectID) objectID error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 The certificate that the keychain stores.
 
-#### Discussion
+## Discussion
 
 If the certificate the `objectID` specifies isn’t found, the system fills `error` with [`TKError.Code.objectNotFound`](../../tkerror/code/objectnotfound.md).
 

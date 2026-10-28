@@ -30,7 +30,7 @@ func stop()
 
 - [Adding voice chat to multiplayer games](../adding-voice-chat-to-multiplayer-games.md)
 
-#### Discussion
+## Discussion
 
 This method disconnects the player from the channel. You should call `stop()` before you set the voice chat object to `nil`.
 

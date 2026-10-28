@@ -27,7 +27,7 @@ optional func resolveSpeakableGroupNames(for intent: INSearchForMessagesIntent) 
 - (void) resolveSpeakableGroupNamesForSearchForMessages:(INSearchForMessagesIntent *) intent withCompletion:(void (^)(NSArray<INSpeakableStringResolutionResult *> *resolutionResults)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This method resolves the names of any groups that were recipients of the messages.
 

@@ -17,7 +17,7 @@ Reproduce the `Q4_0` grid: symmetric, 32-element groups, scaled by the signed el
 case q4Zero
 ```
 
-#### Discussion
+## Discussion
 
 Use this for checkpoints whose weights were already trained against that grid. Re-deriving a grid from such weights discards the alignment they were trained for; reproducing it keeps them on their intended lattice.
 

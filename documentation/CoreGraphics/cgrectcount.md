@@ -20,7 +20,7 @@ typealias CGRectCount = UInt32
 typedef uint32_t CGRectCount;
 ```
 
-#### Discussion
+## Discussion
 
 For example, see the function [`CGWaitForScreenRefreshRects(_:_:)`](./cgwaitforscreenrefreshrects%28_,_%29.md).
 

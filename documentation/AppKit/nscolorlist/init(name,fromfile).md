@@ -19,7 +19,7 @@ init?(name: NSColorList.Name, fromFile path: String?)
 - (instancetype) initWithName:(NSColorListName) name fromFile:(NSString *) path;
 ```
 
-#### Discussion
+## Discussion
 
 Note that this method does not add the color list to [`availableColorLists`](./availablecolorlists.md) until the color list is saved into the user’s path with [`write(toFile:)`](./write%28tofile%29.md) with a value of `nil`.
 

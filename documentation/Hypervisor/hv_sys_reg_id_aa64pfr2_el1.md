@@ -17,7 +17,7 @@ var HV_SYS_REG_ID_AA64PFR2_EL1: hv_sys_reg_t { get }
 HV_SYS_REG_ID_AA64PFR2_EL1
 ```
 
-#### Discussion
+## Discussion
 
 Type of an ARM system register.
 

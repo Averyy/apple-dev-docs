@@ -19,7 +19,7 @@ var VMX_REASON_IRQ_WND: Int { get }
 VMX_REASON_IRQ_WND
 ```
 
-#### Discussion
+## Discussion
 
 At the beginning of an instruction, RFLAGS.IF was `1`.` `Events weren’t blocked by STI or by MOV SS and the “interrupt-window exiting” VM-execution control was `1`.
 

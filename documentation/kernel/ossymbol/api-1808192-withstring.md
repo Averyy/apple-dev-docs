@@ -12,11 +12,11 @@ static const OSSymbol * withString(
  const OSString *aString);
 ```
 
-#### Return Value
+## Return Value
 
 An instance of OSSymbol representing the same characters as `aString`; `NULL` on failure.
 
-#### Overview
+## Overview
 
 This function creates or returns the unique OSSymbol instance representing the string value of `aString`. You can compare it with other OSSymbols using the `==` operator.
 

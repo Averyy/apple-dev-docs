@@ -20,7 +20,7 @@ func messageReceived(_ message: TransportMessage, completion: @escaping @Sendabl
 
 - [Receiving iOS notifications on an accessory](../../receiving-ios-notifications-on-an-accessory.md)
 
-#### Discussion
+## Discussion
 
 The system calls this method to deliver encrypted notification data for transmission to your accessory. Relay the message’s data to your accessory over Bluetooth or another transport. Call the completion handler with [`AccessoryMessage.Result.success`](../../accessorymessage/result/success.md) if transmission succeeds, [`AccessoryMessage.Result.failure(_:)`](../../accessorymessage/result/failure%28_%29.md) with [`AccessoryMessage.Error.transportFailed`](../../accessorymessage/error/transportfailed.md) if the transport fails but may recover, or [`AccessoryMessage.Error.transportUnavailable`](../../accessorymessage/error/transportunavailable.md) if the transport is unavailable.
 

@@ -19,7 +19,7 @@ func MDQuerySetSearchScope(_ query: MDQuery!, _ scopeDirectories: CFArray!, _ sc
 void MDQuerySetSearchScope(MDQueryRef query, CFArrayRef scopeDirectories, OptionBits scopeOptions);
 ```
 
-#### Discussion
+## Discussion
 
 ## Parameters
 

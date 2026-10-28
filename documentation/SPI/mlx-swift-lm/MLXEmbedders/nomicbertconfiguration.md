@@ -17,7 +17,7 @@ The configuration object defining the hyperparameters and architectural details 
 struct NomicBertConfiguration
 ```
 
-#### Overview
+## Overview
 
 This struct conforms to `Decodable` to allow direct initialization from a JSON configuration file. It includes robust default values for many properties, ensuring backward compatibility with various model checkpoints.
 

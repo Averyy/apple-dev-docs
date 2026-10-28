@@ -27,7 +27,7 @@ func viewDidDisappear(_ animated: Bool)
 
 - [Enhancing your app with fluid transitions](../enhancing-your-app-with-fluid-transitions.md)
 
-#### Discussion
+## Discussion
 
 You can override this method to perform additional tasks associated with dismissing or hiding the view. If you override this method, you must call `super` at some point in your implementation.
 

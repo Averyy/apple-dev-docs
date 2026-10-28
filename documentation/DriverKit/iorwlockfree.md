@@ -16,7 +16,7 @@
 void IORWLockFree(struct IORWLock *lock);
 ```
 
-#### Discussion
+## Discussion
 
 Frees a read/write lock.
 

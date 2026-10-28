@@ -20,7 +20,7 @@ class CGDisplayStream
 typedef struct CGDisplayStream * CGDisplayStreamRef;
 ```
 
-#### Overview
+## Overview
 
 This data type streams the contents of a display to your app. The contents can be scaled or converted to a different color space. You can also choose to capture only a portion of a display. Your update handler can be called either from a traditional`CFRunLoop` or on a dispatch queue.
 

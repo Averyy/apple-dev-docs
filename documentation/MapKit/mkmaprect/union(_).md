@@ -25,11 +25,11 @@ func union(_ rect2: MKMapRect) -> MKMapRect
 extern MKMapRect MKMapRectUnion(MKMapRect rect1, MKMapRect rect2);
 ```
 
-#### Return Value
+## Return Value
 
 A rectangle with an area that encompasses the two rectangles and the space between them.
 
-#### Discussion
+## Discussion
 
 If either rectangle is `null`, this method returns the other rectangle. This method sets the origin point of the returned rectangle to the smaller of the x and y values for the two rectangles. Similarly, the method computes the size and width of the rectangle by taking the maximum x and y values and subtracting the x and y values for the new origin point.
 

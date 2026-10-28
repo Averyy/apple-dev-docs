@@ -19,7 +19,7 @@ class VZMacGuestProvisioningOptions
 @interface VZMacGuestProvisioningOptions : VZGuestProvisioningOptions
 ```
 
-#### Overview
+## Overview
 
 > **Note**: This configuration requires guest macOS 27 or later to function properly. Earlier versions of macOS don’t support the automated guest configuration protocol and ignore these settings.
 

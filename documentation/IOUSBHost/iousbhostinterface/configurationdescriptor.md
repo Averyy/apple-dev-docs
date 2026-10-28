@@ -20,7 +20,7 @@ var configurationDescriptor: UnsafePointer<IOUSBConfigurationDescriptor> { get }
 @property (readonly) const IOUSBConfigurationDescriptor * configurationDescriptor;
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to the device’s configuration descriptor.
 

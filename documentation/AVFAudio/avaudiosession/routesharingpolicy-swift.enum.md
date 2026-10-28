@@ -24,7 +24,7 @@ enum RouteSharingPolicy
 enum AVAudioSessionRouteSharingPolicy : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 A route-sharing policy allows you to specify that an audio session should route its output to somewhere other than the default system output when alternative routes are available.
 

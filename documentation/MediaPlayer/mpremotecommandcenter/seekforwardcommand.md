@@ -25,7 +25,7 @@ var seekForwardCommand: MPRemoteCommand { get }
 @property (nonatomic, readonly) MPRemoteCommand * seekForwardCommand;
 ```
 
-#### Discussion
+## Discussion
 
 Use the object in this property to register your app’s handler for seeking forward in the current track. In your handler, begin seeking forward through the current media item. You can disable the command if your app does not support it.
 

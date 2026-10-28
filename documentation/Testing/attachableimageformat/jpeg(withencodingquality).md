@@ -16,7 +16,7 @@ The JPEG image format.
 static func jpeg(withEncodingQuality encodingQuality: Float) -> AttachableImageFormat
 ```
 
-#### Return Value
+## Return Value
 
 An instance of this type representing the JPEG image format with the specified encoding quality.
 

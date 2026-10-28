@@ -25,7 +25,7 @@ init()
 extern CGMutablePathRefCGPathCreateMutable();
 ```
 
-#### Return Value
+## Return Value
 
 A new mutable path. You are responsible for releasing this object.
 

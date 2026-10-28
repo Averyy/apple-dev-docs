@@ -21,11 +21,11 @@ Prefixes the output of this publisher with the elements emitted by the given pub
 func prepend<P>(_ publisher: P) -> Publishers.Concatenate<P, Self> where P : Publisher, Self.Failure == P.Failure, Self.Output == P.Output
 ```
 
-#### Return Value
+## Return Value
 
 A publisher that prefixes the prefixing publisher’s elements prior to this publisher’s elements.
 
-#### Discussion
+## Discussion
 
 Use [`prepend(_:)`](./prepend%28_%29-5dj9c.md) to publish values from two publishers when you need to prepend one publisher’s elements to another.
 

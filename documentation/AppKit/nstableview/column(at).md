@@ -19,7 +19,7 @@ func column(at point: NSPoint) -> Int
 - (NSInteger) columnAtPoint:(NSPoint) point;
 ```
 
-#### Return Value
+## Return Value
 
 The index in the [`tableColumns`](./tablecolumns.md) array of the column `aPoint` lies in, or `–1` if `aPoint` lies outside the table view’s bounds.
 

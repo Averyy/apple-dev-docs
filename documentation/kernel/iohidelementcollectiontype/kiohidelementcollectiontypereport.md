@@ -13,7 +13,7 @@
 kIOHIDElementCollectionTypeReport
 ```
 
-#### Discussion
+## Discussion
 
 Wraps all the fields in a report.
 

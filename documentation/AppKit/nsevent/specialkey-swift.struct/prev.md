@@ -15,7 +15,7 @@ The previous key.
 static let prev: NSEvent.SpecialKey
 ```
 
-#### Discussion
+## Discussion
 
 This key is unavailable on most Macintosh keyboards.
 

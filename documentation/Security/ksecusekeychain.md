@@ -19,7 +19,7 @@ let kSecUseKeychain: CFString
 extern CFStringRef const kSecUseKeychain;
 ```
 
-#### Discussion
+## Discussion
 
 Specifies a [`SecKeychain`](./seckeychain.md) object that references the keychain to which [`SecItemAdd(_:_:)`](./secitemadd%28_,_%29.md) should add the provided items.
 

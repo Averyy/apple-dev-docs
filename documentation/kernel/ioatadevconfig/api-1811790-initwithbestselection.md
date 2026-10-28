@@ -13,7 +13,7 @@ IOReturn initWithBestSelection(
  IOATABusInfo *busInfo);
 ```
 
-#### Return Value
+## Return Value
 
 kIOSuccess (0) when a matching transfer mode is available between the device and controller.
 

@@ -25,7 +25,7 @@ var requiresSecureCoding: Bool { get }
 @property (readonly) BOOL requiresSecureCoding;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if this coder requires secure coding; [`false`](../../Swift/false.md) otherwise.
 

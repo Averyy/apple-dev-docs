@@ -21,11 +21,11 @@ Returns the remainder after dividing this value by the given value, along with a
 func remainderReportingOverflow(dividingBy other: UInt128) -> (partialValue: UInt128, overflow: Bool)
 ```
 
-#### Return Value
+## Return Value
 
 A tuple containing the result of the operation along with a Boolean value indicating whether overflow occurred. If the `overflow` component is `false`, the `partialValue` component contains the entire remainder. If the `overflow` component is `true`, an overflow occurred during division and the `partialValue` component contains either the entire remainder or, if the remainder is undefined, the dividend.
 
-#### Discussion
+## Discussion
 
 Dividing by zero is not an error when using this method. For a value `x`, the result of `x.remainderReportingOverflow(dividingBy: 0)` is `(x, true)`.
 

@@ -24,7 +24,7 @@ var formatDescription: CMFormatDescription { get }
 @property (nonatomic, readonly) CMFormatDescriptionRef formatDescription;
 ```
 
-#### Discussion
+## Discussion
 
 Calling this method doesn’t assume ownership of the returned [`CMFormatDescription`](../../../CoreMedia/cmformatdescription.md).
 

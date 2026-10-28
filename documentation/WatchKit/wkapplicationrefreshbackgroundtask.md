@@ -23,7 +23,7 @@ class WKApplicationRefreshBackgroundTask
 
 - [Using background tasks](./using-background-tasks.md)
 
-#### Overview
+## Overview
 
 Don’t subclass or create instances of this class. Instead, schedule a background app refresh task by calling [`scheduleBackgroundRefresh(withPreferredDate:userInfo:scheduledCompletion:)`](./wkextension/schedulebackgroundrefresh%28withpreferreddate,userinfo,scheduledcompletion%29.md). When the system triggers the background task, it launches your app in the background, instantiates a [`WKApplicationRefreshBackgroundTask`](./wkapplicationrefreshbackgroundtask.md) object, and passes the task object to your app delegate’s [`handle(_:)`](./wkextensiondelegate/handle%28_%29-92ulv.md) method.
 

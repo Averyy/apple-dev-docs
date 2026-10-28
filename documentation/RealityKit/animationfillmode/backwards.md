@@ -20,7 +20,7 @@ An option that shows the first animation frame while playback progresses to the 
 static let backwards: AnimationFillMode
 ```
 
-#### Discussion
+## Discussion
 
 For example, if you wind a hand-waving animation’s duration back one second by setting [`trimStart`](../sampledanimation/trimstart.md) to `-1.0`, a [`fillMode`](../sampledanimation/fillmode.md) of `backwards` determines that the hand holds its initial appearance for one second before waving.
 

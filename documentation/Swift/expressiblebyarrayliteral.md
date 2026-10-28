@@ -21,7 +21,7 @@ A type that can be initialized using an array literal.
 protocol ExpressibleByArrayLiteral
 ```
 
-#### Overview
+## Overview
 
 An array literal is a simple way of expressing a list of values. Simply surround a comma-separated list of values, instances, or literals with square brackets to create an array literal. You can use an array literal anywhere an instance of an `ExpressibleByArrayLiteral` type is expected: as a value assigned to a variable or constant, as a parameter to a method or initializer, or even as the subject of a nonmutating operation like `map(_:)` or `filter(_:)`.
 
@@ -46,7 +46,7 @@ The `Set` and `Array` types each handle array literals in their own way to creat
 > // error: cannot convert value of type '[String]' to specified type 'Set'
 > ```
 
-### Type Inference of Array Literals
+## Type Inference of Array Literals
 
 Whenever possible, Swift’s compiler infers the full intended type of your array literal. Because `Array` is the default type for an array literal, without writing any other code, you can declare an array with a particular element type by providing one or more values.
 
@@ -95,7 +95,7 @@ log(name: "Zero integers", value: [] as [Int])
 // Prints "Zero integers: []"
 ```
 
-### Conforming to ExpressibleByArrayLiteral
+## Conforming to ExpressibleByArrayLiteral
 
 Add the capability to be initialized with an array literal to your own custom types by declaring an `init(arrayLiteral:)` initializer. The following example shows the array literal initializer for a hypothetical `OrderedSet` type, which has setlike semantics but maintains the order of its elements.
 

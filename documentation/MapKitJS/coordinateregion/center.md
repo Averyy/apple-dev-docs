@@ -16,7 +16,7 @@ get center(): Coordinate;
 set center(coordinate: CoordinateData);
 ```
 
-#### Discussion
+## Discussion
 
 Create a [`Coordinate`](../coordinate.md) with a latitude and longitude pair:
 

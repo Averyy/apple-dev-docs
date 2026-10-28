@@ -24,7 +24,7 @@ let HMCharacteristicTypePowerModeSelection: String
 extern NSString * const HMCharacteristicTypePowerModeSelection;
 ```
 
-#### Overview
+## Overview
 
 The corresponding value is one of the constants in the [`HMCharacteristicValuePowerModeSelection`](./hmcharacteristicvaluepowermodeselection.md) enumeration.
 

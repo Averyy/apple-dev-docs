@@ -17,7 +17,7 @@ Export multiple traces of a function to a `.mlxfn` file.
 func exportFunctions(to url: URL, shapeless: Bool = false, _ f: @escaping ([MLXArray]) -> [MLXArray], build: (FunctionExporterMultiple) throws -> Void) throws
 ```
 
-#### Discussion
+## Discussion
 
 For example this defines a function, writes it to a file, imports it and evaluates it.
 
@@ -51,7 +51,7 @@ let r2 = try f2(a, b)[0]
 let r3 = try f2(a, b, c)[0]
 ```
 
-##### See Also
+### See Also
 
 - [`exportFunction(to:shapeless:_:)`](./exportfunction%28to,shapeless,_%29.md)
 - [`importFunction(from:)`](./importfunction%28from%29.md)

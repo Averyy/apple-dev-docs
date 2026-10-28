@@ -19,7 +19,7 @@ Generates a dictionary of the data source’s labeled audio files.
 func labeledSounds() throws -> [String : [URL]]
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary of labeled audio files. Each dictionary key is a label string and its value is an array of audio-file URLs.
 

@@ -19,7 +19,7 @@ var formattingDictionary: [String : String]? { get set }
 @property (copy, nullable) NSDictionary<NSString *,NSString *> * formattingDictionary;
 ```
 
-#### Discussion
+## Discussion
 
 If you assign a new the formatting dictionary to this property, it sets the current to formatting strings file name to `nil`.
 

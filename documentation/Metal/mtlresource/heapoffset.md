@@ -25,7 +25,7 @@ var heapOffset: Int { get }
 @property (readonly) NSUInteger heapOffset;
 ```
 
-#### Discussion
+## Discussion
 
 If the heap is not a placement heap ([`MTLHeapType.placement`](../mtlheaptype/placement.md)), the value is always `0` and should be ignored.
 

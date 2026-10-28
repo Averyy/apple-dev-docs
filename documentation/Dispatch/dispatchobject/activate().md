@@ -25,7 +25,7 @@ func activate()
 extern void dispatch_activate(dispatch_object_t object);
 ```
 
-#### Discussion
+## Discussion
 
 Once a dispatch object has been activated, it cannot change its target queue.
 

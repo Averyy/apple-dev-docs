@@ -31,7 +31,7 @@ var paymentAmount: INCurrencyAmount? { get }
 @property (atomic, strong, readonly, nullable) INCurrencyAmount * paymentAmount;
 ```
 
-#### Discussion
+## Discussion
 
 When you use the [`completed(settled:)`](./completed%28settled%29.md) method to create instances of this class, this property stores the final amount paid by the user for the ride. When you use the [`completed(outstanding:)`](./completed%28outstanding%29.md) method to create instances of this class, this property stores any unpaid costs that your app and must settle.
 

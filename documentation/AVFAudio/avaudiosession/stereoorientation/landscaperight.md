@@ -24,7 +24,7 @@ case landscapeRight
 AVAudioStereoOrientationLandscapeRight
 ```
 
-#### Discussion
+## Discussion
 
 ![An image showing the stereo orientation for the front and back data source.](https://developer.apple.com/tutorials/images/com.apple.avfaudio/media-3627728@2x.png)
 

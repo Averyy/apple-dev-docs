@@ -25,11 +25,11 @@ func setValue(_ value: Any?, forKeyPath keyPath: String)
 - (void) setValue:(id) value forKeyPath:(NSString *) keyPath;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation of this method gets the destination object for each relationship using [`value(forKey:)`](./value%28forkey%29.md), and sends the final object a [`setValue(_:forKey:)`](./setvalue%28_,forkey%29.md) message.
 
-##### Special Considerations
+### Special Considerations
 
 When using this method, and the destination object does not implement an accessor for the value, the default behavior is for that object to retain `value` rather than copy or assign `value`.
 

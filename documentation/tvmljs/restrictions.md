@@ -15,7 +15,7 @@ An object used to retrieve rating restriction information.
 interface Restrictions
 ```
 
-#### Overview
+## Overview
 
 Different countries often allow different levels of content to be shown. This class also allows you to specify the maximum and minimum rankings for content.
 

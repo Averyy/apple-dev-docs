@@ -21,7 +21,7 @@ enum CameraFlashMode
 enum UIImagePickerControllerCameraFlashMode : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 The constants in this enumeration are for use as values of the [`cameraFlashMode`](./cameraflashmode-swift.property.md) property.
 

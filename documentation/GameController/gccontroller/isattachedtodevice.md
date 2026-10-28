@@ -24,7 +24,7 @@ var isAttachedToDevice: Bool { get }
 @property (nonatomic, readonly, getter=isAttachedToDevice) BOOL attachedToDevice;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../Swift/true.md), the controller may be formfitting or otherwise closely attach to the device so that the player can interact simultaneously with the controller and the device. If [`false`](../../Swift/false.md), the controller doesn’t have an attachment to the device.
 

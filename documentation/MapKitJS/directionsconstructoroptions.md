@@ -15,7 +15,7 @@ Options that you may provide when creating a directions object.
 interface DirectionsConstructorOptions
 ```
 
-#### Overview
+## Overview
 
 Use [`DirectionsConstructorOptions`](./directionsconstructoroptions.md) to set options when creating a [`Directions`](./directions.md) object.
 

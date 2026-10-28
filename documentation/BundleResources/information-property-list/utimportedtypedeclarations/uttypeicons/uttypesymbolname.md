@@ -17,7 +17,7 @@ The name of an SF Symbol that represents this type.
 - **Name**: `UTTypeSymbolName` (Symbol Name)
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 This key is optional. If you omit this key, the system relies on other available icon information to represent the type.
 

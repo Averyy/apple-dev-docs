@@ -26,11 +26,11 @@ init(peer myPeerID: MCPeerID, serviceType: String)
 - (instancetype) initWithPeer:(MCPeerID *) myPeerID serviceType:(NSString *) serviceType;
 ```
 
-#### Return Value
+## Return Value
 
 Returns an initialized nearby service browser object, or `nil` if an error occurs.
 
-#### Discussion
+## Discussion
 
 This method throws an exception if the `session` or `serviceType` parameters do not contain valid objects or the specified Bonjour service type is not valid.
 

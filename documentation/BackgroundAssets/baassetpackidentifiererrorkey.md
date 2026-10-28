@@ -20,7 +20,7 @@ The `-[NSError userInfo]` key for an asset pack’s identifier.
 extern NSErrorUserInfoKey const BAAssetPackIdentifierErrorKey;
 ```
 
-#### Discussion
+## Discussion
 
 This key is relevant when the error code is [`BAManagedErrorCodeAssetPackNotFound`](./bamanagederrorcode/bamanagederrorcodeassetpacknotfound.md). Its value should be an `NSString` object.
 

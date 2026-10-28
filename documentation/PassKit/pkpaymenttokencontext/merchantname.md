@@ -23,7 +23,7 @@ var merchantName: String { get set }
 @property (nonatomic, copy) NSString * merchantName;
 ```
 
-#### Discussion
+## Discussion
 
 Provide the name of the merchant associated with the payment token, to display to the user.
 

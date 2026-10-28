@@ -25,7 +25,7 @@ var isLitPerPixel: Bool { get set }
 @property (nonatomic, getter=isLitPerPixel) BOOL litPerPixel;
 ```
 
-#### Discussion
+## Discussion
 
 When this property’s value is [`true`](../../Swift/true.md) (the default), SceneKit performs lighting calculations independently for each rendered pixel. This approach provides better rendering quality, but can adversely impact rendering performance.
 

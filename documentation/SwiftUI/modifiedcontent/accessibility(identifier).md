@@ -26,7 +26,7 @@ func accessibility(identifier: String) -> ModifiedContent<Content, Modifier>
 
 Available when `Modifier` is `AccessibilityAttachmentModifier`.
 
-#### Discussion
+## Discussion
 
 Use this value for testing. It isn’t visible to the user.
 

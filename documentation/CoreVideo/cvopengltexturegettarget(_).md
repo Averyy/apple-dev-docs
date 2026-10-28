@@ -21,11 +21,11 @@ func CVOpenGLTextureGetTarget(_ image: CVOpenGLTexture) -> GLenum
 extern GLenum CVOpenGLTextureGetTarget(CVOpenGLTextureRef image);
 ```
 
-#### Return Value
+## Return Value
 
 The OpenGL texture target.
 
-#### Discussion
+## Discussion
 
 See the [OpenGL specification](http://www.opengl.org/documentation/) for more information about texture targets.
 

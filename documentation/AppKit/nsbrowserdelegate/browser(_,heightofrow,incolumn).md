@@ -20,11 +20,11 @@ optional func browser(_ browser: NSBrowser, heightOfRow row: Int, inColumn colum
 - (CGFloat) browser:(NSBrowser *) browser heightOfRow:(NSInteger) row inColumn:(NSInteger) columnIndex;
 ```
 
-#### Return Value
+## Return Value
 
 The height to set for the specified row, which must be greater than 0.
 
-#### Discussion
+## Discussion
 
 The values returned for this method may be cached. Therefore, you should call [`noteHeightOfRowsWithIndexesChanged(_:inColumn:)`](../nsbrowser/noteheightofrowswithindexeschanged%28_,incolumn%29.md) to invalidate a row’s height before changing it.
 

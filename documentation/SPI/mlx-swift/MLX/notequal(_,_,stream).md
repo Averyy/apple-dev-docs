@@ -21,7 +21,7 @@ func notEqual(_ a: some ScalarOrArray, _ b: some ScalarOrArray, stream: StreamOr
 
 - [Converting From Python](./converting-python.md)
 
-#### Discussion
+## Discussion
 
 Not equal on two arrays with [Numpy Style Broadcasting](./broadcasting.md).
 
@@ -37,7 +37,7 @@ if notEqual(a, b).all().item() {
 }
 ```
 
-##### See Also
+### See Also
 
 - [Logical Operators](./logical.md)
 

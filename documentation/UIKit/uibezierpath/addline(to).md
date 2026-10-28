@@ -24,7 +24,7 @@ func addLine(to point: CGPoint)
 - (void) addLineToPoint:(CGPoint) point;
 ```
 
-#### Discussion
+## Discussion
 
 This method creates a straight line segment starting at the current point and ending at the point specified by the `point` parameter. After adding the line segment, this method updates the current point to the value in `point`.
 

@@ -20,7 +20,7 @@ nonisolated
 struct TextEditor
 ```
 
-#### Overview
+## Overview
 
 A text editor view allows you to display and edit multiline, scrollable text in your app’s user interface. By default, the text editor view styles the text using characteristics inherited from the environment, like [`font(_:)`](./view/font%28_%29.md), [`foregroundColor(_:)`](./view/foregroundcolor%28_%29.md), and [`multilineTextAlignment(_:)`](./view/multilinetextalignment%28_%29.md). The text editor view supports attributed text formatting when initialized with [`init(text:selection:)`](./texteditor/init%28text,selection%29-11r0a.md).
 
@@ -67,7 +67,7 @@ struct TextEditingView: View {
 }
 ```
 
-##### Text formatting
+### Text formatting
 
 When initialized with [`init(text:selection:)`](./texteditor/init%28text,selection%29-11r0a.md), `TextEditor` supports editing and formatting styled text.
 

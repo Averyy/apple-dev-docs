@@ -19,7 +19,7 @@ var VMX_REASON_VMCALL: Int { get }
 VMX_REASON_VMCALL
 ```
 
-#### Discussion
+## Discussion
 
 ## See Also
 

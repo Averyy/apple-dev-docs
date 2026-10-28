@@ -10,7 +10,7 @@ A 32-bit integer indicating the length of the group entry in the payload data.
 
 - [Representing encoder delay explicitly](../example_representing_encoder_delay_explicitly.md)
 
-#### Overview
+## Overview
 
 Set to 2 (bytes).
 

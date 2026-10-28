@@ -24,7 +24,7 @@ enum NSTextWritingDirection
 enum NSTextWritingDirection : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 You can use the logical OR operator to combine these constants with [`NSWritingDirection.leftToRight`](./nswritingdirection/lefttoright.md) or [`NSWritingDirection.rightToLeft`](./nswritingdirection/righttoleft.md) when used with [`writingDirection`](../Foundation/nsattributedstring/key/writingdirection.md) to specify formatting controls defined by the Unicode Bidirectional Algorithm in [Unicode Standard Annex #9](http://unicode.org/reports/tr9/).
 

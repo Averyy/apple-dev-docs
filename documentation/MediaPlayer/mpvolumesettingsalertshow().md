@@ -23,7 +23,7 @@ func MPVolumeSettingsAlertShow()
 extern void MPVolumeSettingsAlertShow();
 ```
 
-#### Discussion
+## Discussion
 
 The alert panel displayed by this function floats above the contents of the current window. It contains a slider for adjusting the system volume setting and a Done button so that the user can dismiss the panel. You can also dismiss the panel programmatically using the [`MPVolumeSettingsAlertHide()`](./mpvolumesettingsalerthide%28%29.md) function.
 

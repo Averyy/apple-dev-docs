@@ -21,11 +21,11 @@ The relative path of the URL if the URL conforms to RFC 3986, otherwise nil.
 var relativePath: String { get }
 ```
 
-#### Return Value
+## Return Value
 
 The relative path, or an empty string if the URL has an empty path.
 
-#### Discussion
+## Discussion
 
 > **Note**:  This function resolve against the base `URL`.
 

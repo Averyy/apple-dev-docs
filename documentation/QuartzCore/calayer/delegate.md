@@ -24,7 +24,7 @@ weak var delegate: (any CALayerDelegate)? { get set }
 @property (weak, nullable) id<CALayerDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 You can use a delegate object to provide the layer’s contents, handle the layout of any sublayers, and provide custom actions in response to layer-related changes. The object you assign to this property should implement one or more of the methods of the [`CALayerDelegate`](../calayerdelegate.md) informal protocol. For more information about that protocol, see `CALayerDelegate`
 

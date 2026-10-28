@@ -20,7 +20,7 @@ undefined begin();
 
 - [Creating an Apple Pay Session](../creating-an-apple-pay-session.md)
 
-#### Discussion
+## Discussion
 
 When this method is called, the payment sheet is presented and the merchant validation process is initiated.
 

@@ -22,7 +22,7 @@ func GLKMatrix3GetColumn(_ matrix: GLKMatrix3, _ column: Int32) -> GLKVector3
 static GLKVector3 GLKMatrix3GetColumn(GLKMatrix3 matrix, int column);
 ```
 
-#### Return Value
+## Return Value
 
 A vector representing the column retrieved from the matrix.
 

@@ -24,7 +24,7 @@ case keepCurrent
 MTLPurgeableStateKeepCurrent
 ```
 
-#### Discussion
+## Discussion
 
 The [`setPurgeableState(_:)`](../mtlresource/setpurgeablestate%28_%29.md) method never returns this value. When this value is passed to that function, it returns the current purgability state without changing it.
 

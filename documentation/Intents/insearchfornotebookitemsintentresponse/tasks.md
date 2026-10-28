@@ -33,7 +33,7 @@ var tasks: [INTask]? { get set }
 @property (atomic, copy, readwrite, nullable) NSArray<INTask *> * tasks;
 ```
 
-#### Discussion
+## Discussion
 
 When searching for items of type [`INNotebookItemType.task`](../innotebookitemtype/task.md) or `reminder`, put the results of your search in this property. Assign a value to the [`sortType`](./sorttype.md) property that indicates how you sorted the results.
 

@@ -5,11 +5,11 @@
 
 Specifies the font weight for the text in an element.
 
-#### Overview
+## Overview
 
 Use the `font-weight` style to specify how thick or thin a font looks.
 
-##### Values for font-weight
+### Values for font-weight
 
 - **`black`**: A font weight that is thicker than `heavy`.
 - **`bold`**: A font weight that is thicker than the default.
@@ -23,7 +23,7 @@ Use the `font-weight` style to specify how thick or thin a font looks.
 
 > **Note**: The `font-weight` values from thinnest to thickest are `ultralight`, `thin`, `light`, `regular`, `medium`, `semibold`, `bold`, `heavy`, and `black`.
 
-##### Elements that Use font-weight
+### Elements that Use font-weight
 
 - [decorationLabel](./decorationlabel.md)
 - [description](./description.md)

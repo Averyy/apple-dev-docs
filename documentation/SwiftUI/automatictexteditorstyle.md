@@ -20,7 +20,7 @@ The default text editor style, based on the text editor’s context.
 @preconcurrency struct AutomaticTextEditorStyle
 ```
 
-#### Overview
+## Overview
 
 You can also use [`automatic`](./texteditorstyle/automatic.md) to construct this style.
 

@@ -25,7 +25,7 @@ var central: CBCentral { get }
 @property (nonatomic, readonly) CBCentral * central;
 ```
 
-#### Overview
+## Overview
 
 For more information, see [Core Bluetooth Programming Guide](https://developer.apple.com/library/archive/documentation/NetworkingInternetWeb/Conceptual/CoreBluetooth_concepts/AboutCoreBluetooth/Introduction.html#//apple_ref/doc/uid/TP40013257).
 

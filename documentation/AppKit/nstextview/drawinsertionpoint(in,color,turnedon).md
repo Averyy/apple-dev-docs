@@ -19,7 +19,7 @@ func drawInsertionPoint(in rect: NSRect, color: NSColor, turnedOn flag: Bool)
 - (void) drawInsertionPointInRect:(NSRect) rect color:(NSColor *) color turnedOn:(BOOL) flag;
 ```
 
-#### Discussion
+## Discussion
 
 The focus must be locked on the receiver when this method is invoked. You should not need to invoke this method directly.
 

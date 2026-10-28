@@ -25,7 +25,7 @@ func metalDisplayLink(_ link: CAMetalDisplayLink, needsUpdate update: CAMetalDis
 - (void) metalDisplayLink:(CAMetalDisplayLink *) link needsUpdate:(CAMetalDisplayLinkUpdate *) update;
 ```
 
-#### Discussion
+## Discussion
 
 In this method’s implementation, perform your app’s rendering on the [`layer`](../cametaldrawable/layer.md) or [`texture`](../cametaldrawable/texture.md) of the `update` instance’s [`drawable`](../cametaldisplaylink/update/drawable.md) property. Before calling [`present()`](../../Metal/mtldrawable/present%28%29.md), encode all your Metal commands to the `link` parameter’s [`MTLDevice`](../../Metal/mtldevice.md). The GPU has additional time to complete running your commands before the frame displays on screen, determined by the value of the `link` parameter’s [`preferredFrameLatency`](../cametaldisplaylink/preferredframelatency.md) property.
 

@@ -17,7 +17,7 @@ Merge `suppress_tokens` from `generation_config.json` into the model’s suppres
 func mergeGenerationConfigSuppressedTokens(_ generationConfig: GenerationConfigFile?, into model: any LanguageModel)
 ```
 
-#### Discussion
+## Discussion
 
 Models conforming to [`SuppressedTokensProviding`](./suppressedtokensproviding.md) receive the IDs in [`suppressedTokenIds`](./suppressedtokensproviding/suppressedtokenids.md); every other model is tracked in a weak side table, so `generation_config.json` is honored regardless of conformance. No-op when the configuration declares no suppressed tokens. Called by the model factories after the model is created.
 

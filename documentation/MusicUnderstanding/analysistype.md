@@ -21,7 +21,7 @@ The analysis type for each session.
 struct AnalysisType
 ```
 
-#### Overview
+## Overview
 
 This serves as the primarily type used by the [`MusicUnderstandingSession`](./musicunderstandingsession.md).
 

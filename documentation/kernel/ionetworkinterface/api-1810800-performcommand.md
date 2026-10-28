@@ -15,11 +15,11 @@ virtual SInt32 performCommand(
  void *arg1 );
 ```
 
-#### Return Value
+## Return Value
 
 Returns a BSD return value defined in `bsd/sys/errno.h`.
 
-#### Overview
+## Overview
 
 This method handles socket ioctl commands sent to the network interface from DLIL. IONetworkInterface handles commands that are common for all network interface types. A subclass of IONetworkInterface may override this method to override the command handling in IONetworkInterface, or to extend the command processing to handle additional commands. The ioctl commands handled by IONetworkInterface are `SIOCGIFMTU` (Get interface MTU size), `SIOCSIFMTU` (Set interface MTU size), `SIOCSIFMEDIA` (Set media), and `SIOCGIFMEDIA` (Get media and link status).
 

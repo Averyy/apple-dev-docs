@@ -24,7 +24,7 @@ var typeName: String { get }
 @property (nonatomic, readonly) NSString * typeName;
 ```
 
-#### Discussion
+## Discussion
 
 For information about possible values, see the “Audio Unit Types” topic under [`AVAudioUnitComponent`](../avaudiounitcomponent.md).
 

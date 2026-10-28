@@ -23,7 +23,7 @@ var supportsCouponCode: Bool { get set }
 @property (nonatomic, assign) BOOL supportsCouponCode;
 ```
 
-#### Discussion
+## Discussion
 
 Set the value to `true` to display the coupon code field.
 

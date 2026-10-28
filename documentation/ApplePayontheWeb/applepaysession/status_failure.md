@@ -15,7 +15,7 @@ The requested action failed.
 const unsigned short STATUS_FAILURE;
 ```
 
-#### Discussion
+## Discussion
 
 The payment is not completed and the payment sheet is dismissed.
 

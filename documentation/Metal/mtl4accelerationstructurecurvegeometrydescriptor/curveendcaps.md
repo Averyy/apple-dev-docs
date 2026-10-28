@@ -24,7 +24,7 @@ var curveEndCaps: MTLCurveEndCaps { get set }
 @property (nonatomic) MTLCurveEndCaps curveEndCaps;
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to `MTLCurveEndCapsNone`.
 

@@ -23,7 +23,7 @@ class ICDevice
 @interface ICDevice : NSObject
 ```
 
-#### Overview
+## Overview
 
 The device browser uses the concrete subclasses [`ICCameraDevice`](./iccameradevice.md) and [`ICScannerDevice`](./icscannerdevice.md) to represent the cameras and scanners it finds.
 

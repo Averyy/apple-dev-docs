@@ -23,7 +23,7 @@ static var withMonth: ISO8601DateFormatter.Options { get }
 NSISO8601DateFormatWithMonth
 ```
 
-#### Discussion
+## Discussion
 
 The date representation includes the month. The format for month is `MM`.
 

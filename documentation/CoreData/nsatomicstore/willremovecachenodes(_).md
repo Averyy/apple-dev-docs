@@ -25,7 +25,7 @@ func willRemoveCacheNodes(_ cacheNodes: Set<NSAtomicStoreCacheNode>)
 - (void) willRemoveCacheNodes:(NSSet<__kindof NSAtomicStoreCacheNode *> *) cacheNodes;
 ```
 
-#### Discussion
+## Discussion
 
 This method is invoked by the store before the call to [`save()`](./save%28%29.md) with the collection of cache nodes marked as deleted by a managed object context.  You can override this method to track the nodes which will not be made persistent in the [`save()`](./save%28%29.md) method.
 

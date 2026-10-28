@@ -24,11 +24,11 @@ init(seed: Data)
 - (instancetype) initWithSeed:(NSData *) seed;
 ```
 
-#### Return Value
+## Return Value
 
 A new, independent random source.
 
-#### Discussion
+## Discussion
 
 Any two random sources initialized with the same seed data will generate the same sequence of random numbers. To replicate the behavior of an existing [`GKARC4RandomSource`](../gkarc4randomsource.md) instance, read that instance’s [`seed`](./seed.md) property and then create a new instance by passing the resulting data to the [`init(seed:)`](./init%28seed%29.md) initializer.
 

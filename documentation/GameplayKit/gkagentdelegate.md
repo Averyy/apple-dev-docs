@@ -24,7 +24,7 @@ protocol GKAgentDelegate : NSObjectProtocol
 @protocol GKAgentDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 A [`GKAgent`](./gkagent.md) object simulates its own movement according to constraints and goals. Use this protocol to manage an external object related to the agent, such as the sprite or 3D object that provides that agent’s visual representation in your game.
 

@@ -16,11 +16,11 @@ CMError CMNewProfileSearch (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A `CMError` value. See [Result Codes](../colorsync_manager.md#1670295).
 
-#### Overview
+## Overview
 
 The `CMNewProfileSearch` function sets up and defines a new search identifying through the search record the elements that a profile must contain to qualify for inclusion in the search result list. The function searches the ColorSync profiles folder for version 2.x profiles that meet the criteria and returns a list of these profiles in an internal private data structure whose reference is returned to you in the `searchResult` parameter. 
 
@@ -34,7 +34,7 @@ When your application has completed its search, it should call the function [CMD
 
 To obtain a reference to a profile corresponding to a specific index in the list, use the function [CMSearchGetIndProfile](./api-1805362-cmsearchgetindprofile.md). To obtain the file specification for a profile corresponding to a specific index in the list, use the function  [CMSearchGetIndProfileFileSpec](./api-1805365-cmsearchgetindprofilefilespec.md). To update the search result list, use the function  [CMUpdateProfileSearch](./api-1805356-cmupdateprofilesearch.md). To free the private memory allocated for a profile search after your application has completed the search, use the function  [CMDisposeProfileSearch](./api-1805358-cmdisposeprofilesearch.md). 
 
-##### Version-Notes
+### Version-Notes
 
 The `CMNewProfileSearch` function does not take full advantage of the optimized profile searching available starting with ColorSync version 2.5. Use [CMIterateColorSyncFolder](./api-1804904-cmiteratecolorsyncfolder.md) instead.
 

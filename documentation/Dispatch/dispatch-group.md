@@ -5,7 +5,7 @@
 
 A group of tasks that you monitor as a single unit.
 
-#### Overview
+## Overview
 
 Groups allow you to aggregate a set of tasks and synchronize behaviors on the group. You attach multiple blocks to a group and schedule them for asynchronous execution on the same queue or different queues. When all blocks finish executing, the group executes its completion handler. You can also wait synchronously for all blocks in the group to finish executing.
 

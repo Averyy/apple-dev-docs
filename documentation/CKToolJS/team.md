@@ -19,7 +19,7 @@ dictionary Team {
 };
 ```
 
-#### Overview
+## Overview
 
 You can find your team details in the Membership tab of the Apple Developer portal at `https://developer.apple.com`.
 

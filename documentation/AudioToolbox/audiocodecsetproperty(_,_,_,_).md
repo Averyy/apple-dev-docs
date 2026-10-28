@@ -24,11 +24,11 @@ func AudioCodecSetProperty(_ inCodec: AudioCodec, _ inPropertyID: AudioCodecProp
 extern OSStatus AudioCodecSetProperty(AudioCodec inCodec, AudioCodecPropertyID inPropertyID, UInt32 inPropertyDataSize, const void *inPropertyData);
 ```
 
-#### Return Value
+## Return Value
 
 Returns `NoErr` if successful, otherwise, a result code. See `Result Codes` for a list of possible values.
 
-#### Discussion
+## Discussion
 
 Codec properties are classified as either global properties, which remain the same for all instances of a codec, or instance properties, which may vary from instance to instance. However, not all instance property values can be modified. See [Instance Codec Properties](./api-1494111-instance-codec-properties.md) for details. No property values can be modified when the codec is in the initialized state. You must call this function before you call the [`AudioCodecInitialize(_:_:_:_:_:)`](./audiocodecinitialize%28_,_,_,_,_%29.md) function, or after you call the [`AudioCodecUninitialize(_:)`](./audiocodecuninitialize%28_%29.md) function. Call the [`AudioCodecGetProperty(_:_:_:_:)`](./audiocodecgetproperty%28_,_,_,_%29.md) function to retrieve the current value of a property.
 

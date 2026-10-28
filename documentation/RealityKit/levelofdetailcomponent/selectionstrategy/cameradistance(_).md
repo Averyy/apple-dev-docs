@@ -20,7 +20,7 @@ Switch levels based on distance from the camera.
 static func cameraDistance(_ thresholds: [Float]) -> LevelOfDetailComponent.SelectionStrategy
 ```
 
-#### Discussion
+## Discussion
 
 Each threshold specifies the maximum camera distance for a level. The last threshold is typically `.infinity` to catch all remaining distances.
 

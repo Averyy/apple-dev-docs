@@ -20,7 +20,7 @@ A response with vulgar or offensive material.
 case vulgarOrOffensive
 ```
 
-#### Discussion
+## Discussion
 
 A vulgar or offensive issue might be where you ask the model to draft a complaint about poor customer service, and it uses profanity.
 

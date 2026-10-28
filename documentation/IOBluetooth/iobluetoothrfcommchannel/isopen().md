@@ -19,11 +19,11 @@ func isOpen() -> Bool
 - (BOOL) isOpen;
 ```
 
-#### Return Value
+## Return Value
 
 TRUE if the channel state is open, FALSE otherwise.
 
-#### Discussion
+## Discussion
 
 note that “not open” means closed, opening and closing.
 

@@ -19,7 +19,7 @@ The mode for wrapping and truncating text in the cell.
 @property (nonatomic) NSLineBreakMode lineBreakMode;
 ```
 
-#### Discussion
+## Discussion
 
 For further information, see the [`UILineBreakMode`](../uilinebreakmode.md) constants described in NSString UIKit Additions Reference. The default value is [`UILineBreakModeTailTruncation`](../uilinebreakmode/uilinebreakmodetailtruncation.md).
 

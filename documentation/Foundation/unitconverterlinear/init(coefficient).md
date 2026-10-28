@@ -25,11 +25,11 @@ convenience init(coefficient: Double)
 - (instancetype) initWithCoefficient:(double) coefficient;
 ```
 
-#### Return Value
+## Return Value
 
 A unit converter initialized with the specified coefficient.
 
-#### Discussion
+## Discussion
 
 Calling this initializer is equivalent to calling [`init(coefficient:constant:)`](./init%28coefficient,constant%29.md), passing `0` for the `constant` parameter.
 

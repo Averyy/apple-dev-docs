@@ -24,7 +24,7 @@ class EAGLSharegroup
 @interface EAGLSharegroup : NSObject
 ```
 
-#### Overview
+## Overview
 
 Currently, the sharegroup manages textures, buffers, framebuffers, and renderbuffers. It is your application’s responsibility to manage state changes to shared objects when those objects are accessed from multiple contexts in the sharegroup. The results of changing the state of a shared object while it is being used for rendering in another context are undefined. To obtain deterministic results, your application must take explicit steps to ensure that the shared object is not currently being used for rendering while your application modifies it. Further, state changes are not guaranteed to be noticed by another context in the sharegroup until that context rebinds the shared object.
 

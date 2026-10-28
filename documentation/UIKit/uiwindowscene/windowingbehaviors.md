@@ -23,7 +23,7 @@ var windowingBehaviors: UISceneWindowingBehaviors? { get }
 @property (nonatomic, readonly, nullable) UISceneWindowingBehaviors * windowingBehaviors;
 ```
 
-#### Discussion
+## Discussion
 
 For Mac apps built with Mac Catalyst, use this property to specify whether the scene’s window displays minimize and close buttons. This property is `nil` on unsupported platforms.
 

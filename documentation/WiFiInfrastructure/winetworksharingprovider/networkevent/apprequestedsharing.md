@@ -17,7 +17,7 @@ A Boolean value that indicates whether the container app requested network shari
 let appRequestedSharing: Bool
 ```
 
-#### Discussion
+## Discussion
 
 The system sets this flag when your container app calls [`askToShare()`](../../winetworksharingcontroller/asktoshare%28%29.md).
 

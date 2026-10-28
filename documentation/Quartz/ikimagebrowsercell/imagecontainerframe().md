@@ -19,11 +19,11 @@ func imageContainerFrame() -> NSRect
 - (NSRect) imageContainerFrame;
 ```
 
-#### Return Value
+## Return Value
 
 The coordinates of image container frame, in the `IKImageBrowserView` coordinate space.
 
-#### Discussion
+## Discussion
 
 The image frame is computed automatically from the image container frame by taking in account the image alignment and the image aspect ratio.
 

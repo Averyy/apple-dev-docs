@@ -22,17 +22,17 @@ class UIApplicationShortcutItem
 @interface UIApplicationShortcutItem : NSObject
 ```
 
-#### Overview
+## Overview
 
 On a device that supports 3D Touch, a person invokes the quick action by pressing your app’s icon on the Home Screen and then selecting the quick action’s title. Your app delegate receives and handles the quick action.
 
 You must specify the characteristics of your [`UIApplicationShortcutItem`](./uiapplicationshortcutitem.md) instances during initialization, before you register them with your app object. The quick actions you’ve registered with your app object are immutable.
 
-##### Register an array of dynamic quick actions with your app
+### Register an array of dynamic quick actions with your app
 
 To register an array of Home Screen dynamic quick actions, set the value of your shared app object’s [`shortcutItems`](./uiapplication/shortcutitems.md) property with an [`NSArray`](../Foundation/nsarray.md) instance containing your defined dynamic Home Screen quick actions.
 
-##### Change your app’s dynamic quick actions
+### Change your app’s dynamic quick actions
 
 To change your app’s Home Screen dynamic quick actions, replace your app object’s [`shortcutItems`](./uiapplication/shortcutitems.md) array by setting a new value for the property. As a convenience for working with registered quick actions, this class has a mutable subclass, [`UIMutableApplicationShortcutItem`](./uimutableapplicationshortcutitem.md). The following code snippet illustrates one way to use the [`mutableCopy()`](../ObjectiveC/nsobject-swift.class/mutablecopy%28%29.md) method, along with mutable quick actions, to change the title of a dynamic Home Screen quick action:
 
@@ -65,7 +65,7 @@ if let existingShortcutItem = shortcutItems.first {
     [[UIApplication sharedApplication] setShortcutItems: updatedShortcutItems];
 ```
 
-##### Dynamic and static quick actions
+### Dynamic and static quick actions
 
 Although immutable, a [`UIApplicationShortcutItem`](./uiapplicationshortcutitem.md) instance is considered *dynamic* to distinguish it from a *static* quick action you specify at build time.
 
@@ -74,7 +74,7 @@ Although immutable, a [`UIApplicationShortcutItem`](./uiapplicationshortcutitem.
 
 The system limits the number of quick actions displayed when a user presses a Home Screen app icon. Within the limited set of displayed quick action titles, your static quick actions are shown first, starting at the topmost position in the list. If your static items don’t consume the permissible number for display and you’ve also defined dynamic quick actions using this class, then one or more of your dynamic quick actions is displayed.
 
-##### App launch and app update considerations for quick actions
+### App launch and app update considerations for quick actions
 
 When a user chooses one of your Home Screen quick actions, the system launches or resumes your app and UIKit calls the [`application(_:performActionFor:completionHandler:)`](./uiapplicationdelegate/application%28_,performactionfor,completionhandler%29.md) method in your app delegate. Be sure to read the description of that method in [`UIApplicationDelegate`](./uiapplicationdelegate.md) for information on how to ensure the method is called only when it should be.
 

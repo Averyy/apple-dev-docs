@@ -15,7 +15,7 @@ Sent to the first responder when the user selects a color in an `NSColorPanel` o
 - (void) changeColor:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 When the user selects a color in an [`NSColorPanel`](../../AppKit/nscolorpanel.md) object, the panel tries to call this method on the first responder. You can override this method in any responder that needs to respond to a color change.
 

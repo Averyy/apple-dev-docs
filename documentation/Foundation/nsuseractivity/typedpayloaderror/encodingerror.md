@@ -21,7 +21,7 @@ An encoding error that indicates that the content failed to encode into a valid 
 case encodingError
 ```
 
-#### Discussion
+## Discussion
 
 The [`setTypedPayload(_:)`](../settypedpayload%28_%29.md) method throws this error.
 

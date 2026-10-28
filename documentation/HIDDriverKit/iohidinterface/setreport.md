@@ -16,11 +16,11 @@ Sends a report to the HID device.
 virtual kern_return_t SetReport(IOMemoryDescriptor *report, IOHIDReportType reportType, uint32_t reportID, IOOptionBits options);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 
-#### Discussion
+## Discussion
 
 This method sets the report by calling the [`setReport`](../iohiddevice/setreport.md) method of its associated [`IOHIDDevice`](../iohiddevice.md) object. When sending the report to the device, this method combines the `reportID` and `options` together, with the `reportID` occupying the lower 8 bits of a 32-bit integer, and the `options` occupying the upper 24 bits.
 

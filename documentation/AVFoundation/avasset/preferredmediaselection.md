@@ -26,7 +26,7 @@ var preferredMediaSelection: AVMediaSelection { get }
 @property (nonatomic, readonly) AVMediaSelection * preferredMediaSelection;
 ```
 
-#### Discussion
+## Discussion
 
 Provides an instance of [`AVMediaSelection`](../avmediaselection.md) with the default selections for each of the assets media selection groups.
 

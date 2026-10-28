@@ -20,7 +20,7 @@ Preprocesses a sequence of examples.
 func preprocessed<InputSequence>(from input: InputSequence, eventHandler: EventHandler? = nil) async throws -> [PreprocessedFeatureSequence<Preprocessor.Output>] where InputSequence : Sequence, Preprocessor.Input == InputSequence.Element.Feature, InputSequence.Element : TemporalSequence
 ```
 
-#### Return Value
+## Return Value
 
 The preprocessed examples.
 

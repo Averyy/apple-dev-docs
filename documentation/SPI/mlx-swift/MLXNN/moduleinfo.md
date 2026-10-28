@@ -22,7 +22,7 @@ class ModuleInfo<T>
 
 - [Creating Modules](./custom-layers.md)
 
-#### Overview
+## Overview
 
 The keys for modules and parameters are usually named after their instance variables, but `feed_forward` would not be a very Swifty variable name:
 
@@ -71,7 +71,7 @@ public class FeedForward : Module {
 
 The `ModuleInfo` provides a hook for [`QuantizedLinear`](./quantizedlinear.md) and [`update(modules:verify:path:modulePath:)`](./module/update%28modules,verify,path,modulepath%29.md) to replace the contents of `w1`, etc. with a new compatible `Model` after it is created.
 
-##### See Also
+### See Also
 
 - [Creating Modules](./custom-layers.md)
 - [`ParameterInfo`](./parameterinfo.md)

@@ -16,7 +16,7 @@ The possible statuses of an exception request for an app.
 enum Status
 ```
 
-#### Overview
+## Overview
 
 The [`AppLibrary.ExceptionRequest`](../exceptionrequest.md) structure’s [`status`](./status-swift.property.md) property is of this type.
 

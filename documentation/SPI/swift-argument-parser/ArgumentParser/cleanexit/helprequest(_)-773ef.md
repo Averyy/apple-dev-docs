@@ -14,14 +14,14 @@ Treat this error as a help request and display the full help message.
 ## Declaration
 
 ```swift
-static func helpRequest(_ command: (any ParsableCommand.Type)? = nil) -> CleanExit
+static func helpRequest(_ command: ParsableCommand.Type? = nil) -> CleanExit
 ```
 
-#### Return Value
+## Return Value
 
 A throwable CleanExit error.
 
-#### Discussion
+## Discussion
 
 You can use this case to simulate the user specifying one of the help flags or subcommands.
 

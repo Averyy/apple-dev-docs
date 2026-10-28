@@ -24,7 +24,7 @@ let kCFStreamPropertyConnectionIsExpensive: CFString
 extern CFStringRef const kCFStreamPropertyConnectionIsExpensive;
 ```
 
-#### Discussion
+## Discussion
 
 If the connection hasn’t been established yet, the value is `NULL`.
 

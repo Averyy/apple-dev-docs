@@ -21,7 +21,7 @@ Performs Simpson integration over a single-precision vector.
 extern void vDSP_vsimps(const float *__A, vDSP_Stride __IA, const float *__B, float *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 Performs the following operation:
 

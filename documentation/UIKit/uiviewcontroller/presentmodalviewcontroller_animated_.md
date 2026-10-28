@@ -19,7 +19,7 @@ Presents a modal view managed by the given view controller to the user.
 - (void) presentModalViewController:(UIViewController *) modalViewController animated:(BOOL) animated;
 ```
 
-#### Discussion
+## Discussion
 
 On iPhone and iPod touch devices, the view of `modalViewController` is always presented full screen. On iPad, the presentation depends on the value in the [`modalPresentationStyle`](./modalpresentationstyle.md) property.
 

@@ -17,7 +17,7 @@ Returns the tag as a MIFARE tag object.
 - (id<NFCMiFareTag>) asNFCMiFareTag;
 ```
 
-#### Return Value
+## Return Value
 
 The tag object, if it conforms to the [`NFCMiFareTag`](../nfcmifaretag.md) protocol; otherwise, returns `nil`.
 

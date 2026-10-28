@@ -19,11 +19,11 @@ func getPageScanMode() -> BluetoothPageScanMode
 - (BluetoothPageScanMode) getPageScanMode;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the value for the page scan mode for the device.
 
-#### Discussion
+## Discussion
 
 This value is only meaningful if the target device has been seen during an inquiry. This can be by checking the result of -getLastInquiryUpdate. If nil is returned, then the device hasn’t been seen.
 

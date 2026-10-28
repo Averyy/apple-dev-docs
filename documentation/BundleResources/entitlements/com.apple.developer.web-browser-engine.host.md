@@ -19,7 +19,7 @@ An entitlement that enables your browser app to implement an alternative browser
 
 **Default**: `NO`
 
-#### Discussion
+## Discussion
 
 Add this entitlement to your browser app’s code signature to implement an alternative browser engine, which includes separating tasks such as rendering, network traffic, and web content, across dedicated extensions that you develop.
 

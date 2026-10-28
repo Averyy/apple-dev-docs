@@ -21,7 +21,7 @@ Applies a function to all tags in a collection.
 extern void CMTagCollectionApply(CMTagCollectionRef tagCollection, CMTagCollectionApplierFunction applier, void *context);
 ```
 
-#### Discussion
+## Discussion
 
 > ⚠️ **Warning**:  When applying a function to a mutable tag collection, modifying `tagCollection` in `applier` causes undefined behavior or a crash.
 

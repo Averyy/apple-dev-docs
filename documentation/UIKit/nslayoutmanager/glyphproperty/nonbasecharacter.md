@@ -23,7 +23,7 @@ static var nonBaseCharacter: NSLayoutManager.GlyphProperty { get }
 NSGlyphPropertyNonBaseCharacter
 ```
 
-#### Discussion
+## Discussion
 
 A glyph of this type typically represents characters in the Unicode Mn class.
 

@@ -24,11 +24,11 @@ func remove(_ element: ElementType, using node: GKOctreeNode) -> Bool
 - (BOOL) removeElement:(ElementType) element withNode:(GKOctreeNode *) node;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the object was removed from the tree. [`false`](../../Swift/false.md) if the specified object or node is not in the tree.
 
-#### Discussion
+## Discussion
 
 By referencing the node that contains the object to remove, this method can quickly remove an object from the tree without needing to perform an exhaustive search. To make use of this performance optimization, keep a reference to the node returned when you add elements with the [`add(_:at:)`](./add%28_,at%29.md) or [`add(_:in:)`](./add%28_,in%29.md) methods.
 

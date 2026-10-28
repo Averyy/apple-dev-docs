@@ -21,7 +21,7 @@ Defines `YES` as `1`.
 #define YES
 ```
 
-#### Discussion
+## Discussion
 
 The `YES` macro from Objective-C is bridged to Swift as an [`ObjCBool`](./objcbool.md) value of `true`.
 

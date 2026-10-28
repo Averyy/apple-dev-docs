@@ -21,7 +21,7 @@ A Boolean value that indicates whether the event is an all-day event.
 let allDay: Bool
 ```
 
-#### Discussion
+## Discussion
 
 This may be `true` if the date or date range doesn’t specify a time.
 

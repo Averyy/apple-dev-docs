@@ -21,7 +21,7 @@ The total file size, in bytes.
 var fileSize: Int? { get }
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**:  Only applicable to regular files.
 

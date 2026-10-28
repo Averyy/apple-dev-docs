@@ -19,7 +19,7 @@ var elementCount: Int { get }
 @property (readonly) NSInteger elementCount;
 ```
 
-#### Discussion
+## Discussion
 
 Each element type corresponds to one of the operations described in Path Elements.
 

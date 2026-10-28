@@ -23,7 +23,7 @@ var scalesPageToFit: Bool { get set }
 @property (nonatomic) BOOL scalesPageToFit;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../Swift/true.md), the webpage is scaled to fit and the user can zoom in and zoom out. If [`false`](../../Swift/false.md), user zooming is disabled. The default value is [`false`](../../Swift/false.md).
 

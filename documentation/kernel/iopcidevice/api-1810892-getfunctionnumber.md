@@ -12,11 +12,11 @@ virtual UInt8 getFunctionNumber(
  void );
 ```
 
-#### Return Value
+## Return Value
 
 The 3-bit value of device's function number.
 
-#### Overview
+## Overview
 
 This method is an accessor to return the PCI device's function number.
 

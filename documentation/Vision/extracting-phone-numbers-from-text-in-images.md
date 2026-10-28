@@ -12,7 +12,7 @@ Analyze and filter phone numbers from text in live capture by using Vision.
 - Mac Catalyst 13.0+
 - Xcode 14.2+
 
-#### Overview
+## Overview
 
 New in iOS 13, the Vision framework adds improved text-recognition capabilites that enable you to more easily extract text data from images. The sample app shows you how to use these capabilities to detect and display phone numbers scanned by the camera. It highlights the use of the fast recognition level and a reduced scope to provide responsive real-time text recognition.
 
@@ -47,7 +47,7 @@ do {
 
 Disabling language correction improves performance but produces less accurate results. The app includes extensions on `Character` and `String` to perform correction optimized for phone-number recognition. See `StringUtils.swift` to review this code.
 
-##### Configure the sample code project
+### Configure the sample code project
 
 To run this sample app, you need the following:
 

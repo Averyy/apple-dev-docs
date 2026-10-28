@@ -22,7 +22,7 @@ A type-erased wrapper over any collection with indices that support bidirectiona
 struct AnyBidirectionalCollection<Element>
 ```
 
-#### Overview
+## Overview
 
 An `AnyBidirectionalCollection` instance forwards its operations to a base collection having the same `Element` type, hiding the specifics of the underlying collection.
 

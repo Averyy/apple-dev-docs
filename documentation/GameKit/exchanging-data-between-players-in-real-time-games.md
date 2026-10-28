@@ -5,11 +5,11 @@
 
 Send data between players in a real-time multiplayer game.
 
-#### Overview
+## Overview
 
 In a multiplayer game, you can exchange game data between players to synchronize the state of the game or to facilitate communication between players. You can begin exchanging data when two or more players join or after all the player slots fill when you start the game. For example, if your game provides text messaging, players can send messages to each other while they wait for other players to join the game. GameKit handles the low-level communication of generic data; you design the structure of your game data, and implement the interface for presenting or entering that data.
 
-##### Start exchanging data
+### Start exchanging data
 
 When enough players join a multiplayer game, you can begin exchanging data. For example, present an interface for players to send text messages.
 
@@ -38,7 +38,7 @@ func match(_ match: GKMatch,
 
 To reinvite players whose match state becomes disconnected in a two-player match, implement the [`match(_:shouldReinviteDisconnectedPlayer:)`](./gkmatchdelegate/match%28_,shouldreinvitedisconnectedplayer%29.md) delegate method to return [`true`](../Swift/true.md).
 
-##### Send data to players
+### Send data to players
 
 GameKit exchanges generic data between players to give you flexibility in designing your game data. You just need to convert your model objects to a `Data` object before you send it. Then, you choose the type of transmission and size of the data depending on the characteristics of your game. You can send data to a subset of players or all players in the game.
 
@@ -63,7 +63,7 @@ For large data or many players, you can layer a network topology that performs b
 
 If you choose a client-server topology, use the [`chooseBestHostingPlayer(completionHandler:)`](./gkmatch/choosebesthostingplayer%28completionhandler%29.md) delegate method to find the player with the best network connection to act as the server. Invoke this method simultaneously in each game instance running on each player’s device.
 
-##### Receive data from players
+### Receive data from players
 
 Finally, you process the data that players receive from other players. For the recipients of the data, implement the [`match(_:didReceive:fromRemotePlayer:)`](./gkmatchdelegate/match%28_,didreceive,fromremoteplayer%29.md) delegate method to unpack the data sent by other players. For example, if the data contains a text message from another player, convert the `Data` object to a string. To display which player sent the data, use the player parameter.
 

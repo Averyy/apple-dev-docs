@@ -20,11 +20,11 @@ func generateDilatedDepth(from frame: ARFrame, commandBuffer: any MTLCommandBuff
 - (id<MTLTexture>) generateDilatedDepthFromFrame:(ARFrame *) frame commandBuffer:(id<MTLCommandBuffer>) commandBuffer;
 ```
 
-#### Return Value
+## Return Value
 
 A dilated depth texture which consists of a single channel of type `float32`.
 
-#### Discussion
+## Discussion
 
 You use the linear depth information this function provides when compositing a virtual object with the camera image.
 

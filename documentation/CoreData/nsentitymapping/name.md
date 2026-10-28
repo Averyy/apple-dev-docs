@@ -25,7 +25,7 @@ var name: String! { get set }
 @property (copy, null_resettable) NSString * name;
 ```
 
-#### Discussion
+## Discussion
 
 The name is used only as a means of distinguishing mappings in a model. If not specified, the value defaults to SOURCE->DESTINATION.
 

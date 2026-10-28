@@ -25,7 +25,7 @@ var countOfBytesExpectedToReceive: Int64 { get }
 @property (readonly) int64_t countOfBytesExpectedToReceive;
 ```
 
-#### Discussion
+## Discussion
 
 This value is determined based on the `Content-Length` header received from the server. If that header is absent, the value is [`NSURLSessionTransferSizeUnknown`](../nsurlsessiontransfersizeunknown.md).
 

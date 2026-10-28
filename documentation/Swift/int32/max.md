@@ -23,7 +23,7 @@ static var max: Self { get }
 
 Available when `Self` conforms to `FixedWidthInteger`.
 
-#### Discussion
+## Discussion
 
 For signed integer types, this value is `(2 ** (bitWidth - 1)) - 1`, where `**` is exponentiation.
 

@@ -29,7 +29,7 @@ optional func resolveTargetTask(for intent: INSetTaskAttributeIntent) async -> I
 - (void) resolveTargetTaskForSetTaskAttribute:(INSetTaskAttributeIntent *) intent withCompletion:(void (^)(INTaskResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve the task that the user wants to modify. Use the intent object to obtain information about the task that the user wants to modify. Use the information in the [`INTask`](../intask.md) object to look up the corresponding task information in your app’s data structures. Return a resolution that includes as much information about the task as you have available.
 

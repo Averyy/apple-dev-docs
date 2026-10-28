@@ -21,7 +21,7 @@ The bundle identifier that contains this entity type.
 let bundleIdentifier: String?
 ```
 
-#### Discussion
+## Discussion
 
 When non-nil, this value identifies the application bundle that defines the entity type. This helps distinguish between entity types with the same name across different applications.
 

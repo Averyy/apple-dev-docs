@@ -24,11 +24,11 @@ mutating func remove(at index: Dictionary<Key, Value>.Index) -> Dictionary<Key, 
 
 Available when `Key` conforms to `Hashable`.
 
-#### Return Value
+## Return Value
 
 The key-value pair that correspond to `index`.
 
-#### Discussion
+## Discussion
 
 Calling this method invalidates any existing indices for use with this dictionary.
 

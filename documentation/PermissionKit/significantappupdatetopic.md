@@ -19,7 +19,7 @@ A topic for requesting permission for significant app updates.
 struct SignificantAppUpdateTopic
 ```
 
-#### Overview
+## Overview
 
 Use `SignificantAppUpdateTopic` when your app has a significant update that requires parents or guardians to consent on behalf of their child. This topic helps you create consistent asking experiences that may comply with regulations that require notification or permission for app changes. You determine what constitutes a significant update based on applicable regulations.
 

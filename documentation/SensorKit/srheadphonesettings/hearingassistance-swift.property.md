@@ -19,7 +19,7 @@ var hearingAssistance: SRHeadphoneSettings.HearingAssistance? { get }
 @property (nonatomic, strong, readonly, nullable) SRHeadphoneSettingsHearingAssistance * hearingAssistance;
 ```
 
-#### Discussion
+## Discussion
 
 Hearing Assistance Settings
 

@@ -19,7 +19,7 @@ The release or version number of the bundle.
 - **Name**: `CFBundleShortVersionString` (Bundle version string (short))
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 This key is a user-visible string for the version of the bundle. The required format is three period-separated integers, such as 10.14.1. The string can only contain numeric characters (0-9) and periods.
 

@@ -15,7 +15,7 @@ Attributes that describe a Game Center achievement v2 resource.
 object GameCenterAchievementV2.Attributes
 ```
 
-#### Overview
+## Overview
 
 - activityProperties:
 - archived:

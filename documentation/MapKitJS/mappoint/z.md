@@ -15,7 +15,7 @@ The z component of a map point.
 z: number;
 ```
 
-#### Discussion
+## Discussion
 
 The value is always `1`.
 

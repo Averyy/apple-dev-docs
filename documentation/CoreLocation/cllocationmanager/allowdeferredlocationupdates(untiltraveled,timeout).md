@@ -24,7 +24,7 @@ func allowDeferredLocationUpdates(untilTraveled distance: CLLocationDistance, ti
 - (void) allowDeferredLocationUpdatesUntilTraveled:(CLLocationDistance) distance timeout:(NSTimeInterval) timeout;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method in situations where you want location data with GPS accuracy but do not need to process that data right away. If your app is in the background and the system is able to optimize its power usage, the location manager tells the GPS hardware to store new locations internally until the specified distance or timeout conditions are met. When one or both criteria are met, the location manager ends deferred locations by calling the [`locationManager(_:didFinishDeferredUpdatesWithError:)`](../cllocationmanagerdelegate/locationmanager%28_,didfinishdeferredupdateswitherror%29.md) method of its delegate and delivers the cached locations to the  [`locationManager(_:didUpdateLocations:)`](../cllocationmanagerdelegate/locationmanager%28_,didupdatelocations%29.md) method. If your app is in the foreground, the location manager does not defer the deliver of events but does monitor for the specified criteria. If your app moves to the background before the criteria are met, the location manager may begin deferring the delivery of events.
 

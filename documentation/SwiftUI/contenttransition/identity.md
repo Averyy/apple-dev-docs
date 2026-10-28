@@ -21,7 +21,7 @@ The identity content transition, which indicates that content changes shouldn’
 static let identity: ContentTransition
 ```
 
-#### Discussion
+## Discussion
 
 You can pass this value to a [`contentTransition(_:)`](../view/contenttransition%28_%29.md) modifier to selectively disable animations that would otherwise be applied by a [`withAnimation(_:_:)`](../withanimation%28_,_%29.md) block.
 

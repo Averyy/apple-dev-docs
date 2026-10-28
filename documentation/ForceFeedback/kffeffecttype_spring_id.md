@@ -14,7 +14,7 @@
 #define kFFEffectType_Spring_ID
 ```
 
-#### Discussion
+## Discussion
 
 UUID for a spring effect type
 

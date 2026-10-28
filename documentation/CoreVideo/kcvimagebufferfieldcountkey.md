@@ -25,7 +25,7 @@ let kCVImageBufferFieldCountKey: CFString
 extern CFStringRef const kCVImageBufferFieldCountKey;
 ```
 
-#### Discussion
+## Discussion
 
 The field count value is of type [`CFNumber`](../CoreFoundation/cfnumber.md).
 

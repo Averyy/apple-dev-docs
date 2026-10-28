@@ -25,7 +25,7 @@ var allScripts: [String] { get }
 @property (copy, readonly) NSArray<NSString *> * allScripts;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is an array of ISO 15924 script codes, such as `"Latn"` or `"Cyrl"`, that identify the scripts.
 

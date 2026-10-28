@@ -17,7 +17,7 @@ Returns the shared socket port name server.
 + (id) sharedInstance;
 ```
 
-#### Return Value
+## Return Value
 
 The single instance of `NSSocketPortNameServer` with which you register and look up `NSSocketPort` objects.
 

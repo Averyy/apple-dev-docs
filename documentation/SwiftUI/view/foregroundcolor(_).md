@@ -24,7 +24,7 @@ nonisolated
 func foregroundColor(_ color: Color?) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that uses the foreground color you supply.
 

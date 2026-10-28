@@ -25,11 +25,11 @@ class func success(with resolvedLocationSearchType: INLocationSearchType) -> Sel
 + (instancetype) successWithResolvedLocationSearchType:(INLocationSearchType) resolvedLocationSearchType;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INLocationSearchTypeResolutionResult`](../inlocationsearchtyperesolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object when you are able to search for reminders triggered by a location.
 

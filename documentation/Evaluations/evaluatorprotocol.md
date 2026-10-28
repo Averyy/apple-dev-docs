@@ -21,7 +21,7 @@ A type that evaluates subjects and produces metrics.
 protocol EvaluatorProtocol<Input, Subject> : Sendable
 ```
 
-#### Overview
+## Overview
 
 Conform to `EvaluatorProtocol` to create custom evaluators that measure the system’s output against expected criteria. Each evaluator returns an array of [`Metric`](./metric.md) values: one for each DataFrame column.
 

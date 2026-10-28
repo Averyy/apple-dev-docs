@@ -12,11 +12,11 @@ virtual IOReturn wakeAtTime(
  AbsoluteTimeabstime);
 ```
 
-#### Return Value
+## Return Value
 
 kIOReturnSuccess if everything is fine, kIOReturnNoResources if action hasn't been declared by init or IOEventSource::setAction (qqv).
 
-#### Overview
+## Overview
 
 Starts the timer, which will expire at abstime. After it expires, the timer will call the 'action' registered in the init() function. This timer is not periodic, a further call is needed to reset and restart the timer after it expires.
 

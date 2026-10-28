@@ -19,7 +19,7 @@ var isFocused: Bool { get set }
 @property (nonatomic, assign, getter=isFocused) BOOL focused;
 ```
 
-#### Discussion
+## Discussion
 
 To change the focus to the access point, set this property to [`true`](../../Swift/true.md); otherwise, set it to [`false`](../../Swift/false.md).
 

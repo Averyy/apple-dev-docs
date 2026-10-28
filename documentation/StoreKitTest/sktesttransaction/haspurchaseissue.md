@@ -25,7 +25,7 @@ var hasPurchaseIssue: Bool { get }
 @property (nonatomic, readonly) BOOL hasPurchaseIssue;
 ```
 
-#### Discussion
+## Discussion
 
 To test interrupted purchases, first set [`interruptedPurchasesEnabled`](../sktestsession/interruptedpurchasesenabled.md) to `true` before making a purchase. If [`hasPurchaseIssue`](./haspurchaseissue.md) value is `true`, then resolve the identified transaction by calling [`resolveIssueForTransaction(identifier:)`](../sktestsession/resolveissuefortransaction%28identifier%29.md).
 

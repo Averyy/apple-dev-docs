@@ -24,7 +24,7 @@ An event that captures information about accessing a configuration value.
 struct AccessEvent
 ```
 
-#### Overview
+## Overview
 
 Access events are generated whenever configuration values are accessed through [`ConfigReader`](./configreader.md) and [`ConfigSnapshotReader`](./configsnapshotreader.md) methods. They contain metadata about the access, results from individual providers, and the final outcome of the operation.
 

@@ -19,7 +19,7 @@ A Boolean value that determines whether the configuration positions the text and
 var prefersSideBySideTextAndSecondaryText: Bool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 When this value is [`true`](../../Swift/true.md), the configuration positions the text and secondary text side by side if there’s sufficient space. Otherwise, the configuration stacks the text in a vertical layout.
 

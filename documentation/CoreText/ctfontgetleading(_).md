@@ -25,7 +25,7 @@ func CTFontGetLeading(_ font: CTFont) -> CGFloat
 extern CGFloat CTFontGetLeading(CTFontRef font);
 ```
 
-#### Return Value
+## Return Value
 
 The font-leading metric scaled according to the point size and matrix of the font reference.
 

@@ -25,7 +25,7 @@ var writesToDepthBuffer: Bool { get set }
 @property (nonatomic) BOOL writesToDepthBuffer;
 ```
 
-#### Discussion
+## Discussion
 
 SceneKit’s rendering process uses a depth buffer to determine the ordering of rendered surfaces relative to the viewer. The default value of this property is [`true`](../../Swift/true.md), specifying that SceneKit saves depth information for each rendered pixel for use by later rendering passes.
 

@@ -24,7 +24,7 @@ func newTexture(name: String, scaleFactor: CGFloat, bundle: Bundle?, options: [M
 - (id<MTLTexture>) newTextureWithName:(NSString *) name scaleFactor:(CGFloat) scaleFactor bundle:(NSBundle *) bundle options:(NSDictionary<NSString *,id> *) options error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A fully loaded and initialized Metal texture, or `nil` if an error occurred.
 

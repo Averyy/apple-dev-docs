@@ -24,7 +24,7 @@ static let subsampleFactor: CIImageOption
 extern CIImageOption const kCIImageSubsampleFactor;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key should be an `NSNumber` containing the integer value 2, 4, or 8. It can be used to improve performance and reduce memory usage when working with large images.
 

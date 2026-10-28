@@ -19,7 +19,7 @@ static let identifier: NSFontDescriptor.VariationKey
 extern NSFontDescriptorVariationKey NSFontVariationAxisIdentifierKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is an [`NSNumber`](../../../Foundation/nsnumber.md) object.
 

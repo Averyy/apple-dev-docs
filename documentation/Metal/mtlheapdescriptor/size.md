@@ -24,7 +24,7 @@ var size: Int { get set }
 @property (nonatomic, readwrite) NSUInteger size;
 ```
 
-#### Discussion
+## Discussion
 
 You can use various [`MTLDevice`](../mtldevice.md) methods to help you estimate an appropriate heap size, including the following:
 

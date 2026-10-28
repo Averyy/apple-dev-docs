@@ -25,7 +25,7 @@ class NSTextField
 - [Adopting the system text cursor in custom text views](./adopting-the-system-text-cursor-in-custom-text-views.md)
 - [Customizing Writing Tools behavior for AppKit views](./customizing-writing-tools-behavior-for-system-views.md)
 
-#### Overview
+## Overview
 
 The [`NSTextField`](./nstextfield.md) class uses the [`NSTextFieldCell`](./nstextfieldcell.md) class to implement its user interface. Text fields display text either as a static label or as an editable input field. The content of a text field is either plain text or a rich-text attributed string. Text fields also support line wrapping to display multiline text, and a variety of truncation styles if the content doesn’t fit the available space.
 

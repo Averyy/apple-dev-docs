@@ -20,7 +20,7 @@ nonisolated
 func onApplePayShippingMethodChange(perform action: @escaping (PKShippingMethod) async -> PKPaymentRequestShippingMethodUpdate) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 An update to the payment request shipping method.
 

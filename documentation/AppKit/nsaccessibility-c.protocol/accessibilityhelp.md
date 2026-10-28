@@ -15,7 +15,7 @@ The help text for the accessibility element.
 @property (copy, nullable) NSString * accessibilityHelp;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property only when the results of activating this element are not obvious from the element’s label. This string functions as a tooltip. For example, VoiceOver reads this string when you pause over a control. To help ensure that accessibility clients like VoiceOver read the help text with the proper inflection, begin this string with a verb, capitalize the first letter, and end the string with a period. Always localize this string. The default value is `nil`.
 

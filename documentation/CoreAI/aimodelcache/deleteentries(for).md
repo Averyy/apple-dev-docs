@@ -23,7 +23,7 @@ final func deleteEntries(for modelURL: URL) throws
 
 - [Managing model specialization and caching](../managing-model-specialization-and-caching.md)
 
-#### Discussion
+## Discussion
 
 A model may have multiple entries in the cache. For example, one with [`cpuOnly`](../specializationoptions/cpuonly.md) and another with [`default`](../specializationoptions/default.md). This method deletes all of them.
 

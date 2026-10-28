@@ -5,13 +5,13 @@
 
 Released January 23, 2023 — Version 16.3 (18614.4.6)
 
-#### Overview
+## Overview
 
 Safari 16.3 is available for macOS Big Sur, macOS Monterey, macOS Ventura, iPadOS 16.3, and iOS 16.3.
 
-##### CSS
+### CSS
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed `MediaQueryList.matches` to update the parent document layout for viewport-dependent media queries.
 - Fixed transfers of min and max sizes for CSS `aspect-ratio` to be constrained by defined sizes.
@@ -22,15 +22,15 @@ Safari 16.3 is available for macOS Big Sur, macOS Monterey, macOS Ventura, iPadO
 - Fixed negative content sizes when using `box-sizing: border-box` with border and padding.
 - Fixed setting `scrollTop` on a fixed element with overflow breaking scrolling on a page with `overscroll-behavior: none`.
 
-##### Rendering
+### Rendering
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed replaced elements with aspect ratio and size in one dimension to respect the min and max constraints in the opposite dimension.
 
-##### Web API
+### Web API
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed decompressing content downloaded via `fetch()` with `Content-Encoding: gzip` set.
 - Fixed downloads served from a service worker that uses preload.
@@ -39,20 +39,20 @@ Safari 16.3 is available for macOS Big Sur, macOS Monterey, macOS Ventura, iPadO
 - Fixed Authorization header used for subsequent 301 redirects when the request header changes.
 - Fixed showing a dialog element when the target is a shadow host with a focus delegates.
 
-##### Content Security Policy
+### Content Security Policy
 
-###### New Features
+#### New Features
 
 - Added support for the `prefetch-src` directive.
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Check for `strict-dynamic` in `script-src` and `default-src` directives.
 - Fixed: Added an error event when Content Security Policy blocks inline stylesheets.
 
-##### Media
+### Media
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed web audio becoming garbled with switching from speakers to headphones.
 - Fixed video track’s size settings in the second MediaStream created when the `aspectRatio` constraint is applied.
@@ -61,9 +61,9 @@ Safari 16.3 is available for macOS Big Sur, macOS Monterey, macOS Ventura, iPadO
 - Fixed WebVTT styles to apply with in-band tracks.
 - Fixed alternate VPx codec names to support `vp8.0` and `vp9.0`.
 
-##### SVG
+### SVG
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed MouseClick `offsetX` and `offsetY` on a foreign object in an SVG to be relative to the element rather than relative to the SVG container.
 

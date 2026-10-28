@@ -23,7 +23,7 @@ func setActive(_ visible: Bool, animated: Bool)
 - (void) setActive:(BOOL) visible animated:(BOOL) animated;
 ```
 
-#### Discussion
+## Discussion
 
 When the user focus in the search field of a managed search bar, the search display controller automatically displays the search interface. You can use this method to force the search interface to appear.
 

@@ -25,7 +25,7 @@ func addingTimeInterval(_ ti: TimeInterval) -> Self
 - (instancetype) dateByAddingTimeInterval:(NSTimeInterval) ti;
 ```
 
-#### Return Value
+## Return Value
 
 A new `NSDate` object that is set to `seconds` seconds relative to the receiver. The date returned might have a representation different from the receiver’s.
 

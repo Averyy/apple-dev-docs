@@ -16,7 +16,7 @@ The set of request modes the receiver’s receive port is registered for with it
 @property (copy, readonly) NSArray<NSString *> * requestModes;
 ```
 
-#### Discussion
+## Discussion
 
 An array of `NSString` objects that represents the set of request modes the receiver’s receive port is registered for with its [`RunLoop`](../runloop.md) object.
 

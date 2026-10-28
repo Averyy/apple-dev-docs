@@ -12,7 +12,7 @@ An atom that contains information for converting from media time to sample numbe
 - [Streaming media](./streaming_media.md)
 - [Tween sample description](./tween_sample_description.md)
 
-#### Overview
+## Overview
 
 This atom also indicates how to interpret the sample (for example, whether to decompress the video data and, if so, how). This section describes the format and content of the sample table atom.
 

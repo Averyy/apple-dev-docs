@@ -21,7 +21,7 @@ Run the browser and receive updates when when the set of discovered endpoints ch
 final func run(_ handler: @escaping @isolated(any) @Sendable ([Provider.Endpoint]) async throws -> Void) async throws
 ```
 
-#### Discussion
+## Discussion
 
 Starts the browser, which will cause the browser to begin browsing for services on the network. A `stateUpdateHandler` may be used to determine when the state changes. If the browser fails, the state will transition to failed with an associated `NWError` value. Otherwise, the state will transition to ready. A failed state will cause `run()` to throw an exception.
 

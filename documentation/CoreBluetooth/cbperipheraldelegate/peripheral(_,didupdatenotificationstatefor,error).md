@@ -25,7 +25,7 @@ optional func peripheral(_ peripheral: CBPeripheral, didUpdateNotificationStateF
 - (void) peripheral:(CBPeripheral *) peripheral didUpdateNotificationStateForCharacteristic:(CBCharacteristic *) characteristic error:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 Core Bluetooth invokes this method when your app calls the [`setNotifyValue(_:for:)`](../cbperipheral/setnotifyvalue%28_,for%29.md) method. If successful, the `error` parameter is `nil`. If unsuccessful, the `error` parameter returns the cause of the failure.
 

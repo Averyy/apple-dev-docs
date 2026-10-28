@@ -21,7 +21,7 @@ Options for defining how a scene’s windows behave when used within a managed w
 struct WindowManagerRole
 ```
 
-#### Overview
+## Overview
 
 Use values of this type in conjunction with the [`windowManagerRole(_:)`](./scene/windowmanagerrole%28_%29.md) modifier to override the default system behavior.
 

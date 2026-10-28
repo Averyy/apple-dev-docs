@@ -23,7 +23,7 @@ init(code: INEndWorkoutIntentResponseCode, userActivity: NSUserActivity?)
 - (instancetype) initWithCode:(INEndWorkoutIntentResponseCode) code userActivity:(NSUserActivity *) userActivity;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized response object or `nil` if the object could not be created.
 

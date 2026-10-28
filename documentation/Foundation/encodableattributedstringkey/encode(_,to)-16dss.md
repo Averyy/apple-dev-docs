@@ -23,7 +23,7 @@ static func encode(_ value: Self.Value, to encoder: any Encoder) throws
 
 Available when `Value` inherits `NSObject` and `Value` conforms to `NSSecureCoding`.
 
-#### Discussion
+## Discussion
 
 The default implementation uses an [`NSKeyedArchiver`](../nskeyedarchiver.md) on the object, then calls [`encode(to:)`](../../Swift/encodable/encode%28to%29.md) on the resulting data.
 

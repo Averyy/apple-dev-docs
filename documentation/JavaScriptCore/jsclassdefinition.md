@@ -24,7 +24,7 @@ struct JSClassDefinition
 typedef struct { ... } JSClassDefinition;
 ```
 
-#### Overview
+## Overview
 
 All fields other than the [`version`](./jsclassdefinition/version.md) field are optional. Any pointer may be `NULL`.
 

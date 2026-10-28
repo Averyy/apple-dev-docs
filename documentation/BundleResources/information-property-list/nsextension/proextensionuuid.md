@@ -15,7 +15,7 @@ A UUID string that uniquely identifies your extension to the Compressor app.
 - **Name**: `ProExtensionUUID`
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 The value for this key is a placeholder UUID the Xcode template generates. Each extension must have a unique UUID. When you build an extension for the first time, the build script in the Xcode template replaces the placeholder UUID with a new UUID. The new UUID fulfills the uniqueness and persistence requirement for `ProExtensionUUID`. For subsequent rebuilds, the UUID stays the same because the Compressor app uses this UUID to differentiate between previously saved and newly discovered extensions.
 

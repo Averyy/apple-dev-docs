@@ -23,11 +23,11 @@ class func canFilter(byProperty property: String) -> Bool
 + (BOOL) canFilterByProperty:(NSString *) property;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the property you are testing can be used to construct a media property predicate of type [`MPMediaPropertyPredicate`](../mpmediapropertypredicate.md); otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 To see which media property keys you can use with this method, refer to [Media entity property keys](../media-entity-property-keys.md), [General media item property keys](../general-media-item-property-keys.md), [Playlist property keys](../playlist-property-keys.md), and [User-defined property keys](../user-defined-property-keys.md).
 

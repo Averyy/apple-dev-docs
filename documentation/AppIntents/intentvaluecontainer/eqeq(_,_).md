@@ -21,11 +21,11 @@ Returns a Boolean value indicating whether two containers are equal.
 static func == (lhs: IntentValueContainer, rhs: IntentValueContainer) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the containers are equal; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 Two containers are considered equal if their elements are equal, as determined by the `equals(other:)` method of the container elements.
 

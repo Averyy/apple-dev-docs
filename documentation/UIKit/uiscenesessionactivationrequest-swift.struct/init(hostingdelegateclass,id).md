@@ -19,7 +19,7 @@ Creates a `UISceneSessionActivationRequest` customized to open a SwiftUI scene w
 init?<D>(hostingDelegateClass: D.Type, id: String) where D : UIHostingSceneDelegate
 ```
 
-#### Discussion
+## Discussion
 
 The specified scene must be declared in the `rootScene` property of your hosting delegate class. The initializer will fail if no scene with the specified identifier is defined.
 

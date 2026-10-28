@@ -22,7 +22,7 @@ var duplex: UIPrintInfo.Duplex { get set }
 @property (nonatomic) UIPrintInfoDuplex duplex;
 ```
 
-#### Discussion
+## Discussion
 
 Some printers can print either duplex (double-sided) or single-sided. If double-sided is selected, a printer can either print flipping the back page along the long edge of the paper or along the short edge. The default option for duplex-capable printers is based on document type: single-sided (none) for photos, double-sided and long edge for other documents. If a printer is capable of duplex printing, a switch in the printing options allows users to toggle between single-side and double-sided printing. See the description of the [`UIPrintInfo.Duplex`](./duplex-swift.enum.md) constants for more information.
 

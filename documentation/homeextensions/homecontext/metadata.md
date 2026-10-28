@@ -18,7 +18,7 @@ Additional information that the Home app provides about the content it’s displ
 final var metadata: [String : String] { get }
 ```
 
-#### Discussion
+## Discussion
 
 You access values in this dictionary with the keys in [`HomeContext.MetadataKey`](./metadatakey.md).
 

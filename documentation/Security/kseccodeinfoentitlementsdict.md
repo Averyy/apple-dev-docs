@@ -20,7 +20,7 @@ let kSecCodeInfoEntitlementsDict: CFString
 extern CFStringRef const kSecCodeInfoEntitlementsDict;
 ```
 
-#### Discussion
+## Discussion
 
 The value is a [`CFDictionary`](../CoreFoundation/cfdictionary.md) object containing the embedded entitlements of the code if it has entitlements and they are in standard dictionary form. The value is absent if the code has no entitlements, or they are in a different format (in which case, see [`kSecCodeInfoEntitlements`](./kseccodeinfoentitlements.md)).
 

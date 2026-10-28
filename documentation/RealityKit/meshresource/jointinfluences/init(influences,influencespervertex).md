@@ -20,7 +20,7 @@ Associates every vertex in the mesh with a fixed number of influences per vertex
 init(influences: MeshBuffers.JointInfluences, influencesPerVertex: Int)
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: The buffer should contain `vertexCount * influencesPerVertex` elements.
 

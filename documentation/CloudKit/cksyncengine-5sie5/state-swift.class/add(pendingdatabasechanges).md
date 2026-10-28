@@ -21,7 +21,7 @@ Adds the specified database changes to the state.
 final func add(pendingDatabaseChanges: [CKSyncEngine.PendingDatabaseChange])
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to enable the sync engine to manage your pending database changes. For example, when someone makes a change that your app needs to send to the server, use this method to record the change. If there are no scheduled sync operations when you invoke this method, the sync engine automatically schedules one to send the changes. After the engine sends those changes, it notifies your app’s sync delegate with an event of type [`CKSyncEngine.Event.SentDatabaseChanges`](../event/sentdatabasechanges.md).
 

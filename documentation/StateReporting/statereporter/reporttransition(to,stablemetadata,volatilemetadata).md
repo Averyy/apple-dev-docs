@@ -25,7 +25,7 @@ final func reportTransition(to stateLabel: String?, stableMetadata: StableMetada
 
 - [Getting started with StateReporting](../getting-started-with-statereporting.md)
 
-#### Discussion
+## Discussion
 
 A transition occurs only when `stateLabel` or `stableMetadata` changes from the current state. If both are equal to the current values, this call is a no-op. Pass `nil` for `stateLabel` to indicate that no state is currently active, clearing any previously reported state. Passing an empty string for `stateLabel` is a fatal error. Any volatile metadata from the previous state is discarded when a new transition begins. Calling this method more frequently than user interaction timescales can trigger rate limiting, causing state updates to go unlogged.
 

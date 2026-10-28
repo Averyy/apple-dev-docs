@@ -22,7 +22,7 @@ optional func itemType(for csc: UICloudSharingController) -> String?
 - (NSString *) itemTypeForCloudSharingController:(UICloudSharingController *) csc;
 ```
 
-#### Discussion
+## Discussion
 
 [`UICloudSharingController`](../uicloudsharingcontroller.md) uses the UTI to determine if the shared item is a special type. This allows text presented by the controller to refer to the item using descriptive wording. For example, if the shared item is a presentation and `kUTTypePresentation` is returned, the screens refer to the shared item as a *presentation*. Likewise, if the shared item is a document and `kUTTypeContent` is returned, the screens refer to the item as a *document*. And when `kUTTypeSpreadsheet` is returned, the screens refer to the item as a *spreadsheet*.
 

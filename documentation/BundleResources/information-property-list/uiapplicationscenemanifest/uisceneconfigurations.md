@@ -17,7 +17,7 @@ The default configuration details the system uses to create new scenes.
 - **Name**: `UISceneConfigurations` (Scene Configuration)
 - **Type**: dictionary
 
-#### Discussion
+## Discussion
 
 The keys in the dictionary correspond to the roles played by your scenes.
 

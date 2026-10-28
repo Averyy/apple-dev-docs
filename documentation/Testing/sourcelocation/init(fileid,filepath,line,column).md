@@ -23,7 +23,7 @@ Initialize an instance of this type with the specified location details.
 init(fileID: String, filePath: String, line: Int, column: Int)
 ```
 
-#### Discussion
+## Discussion
 
 > **Precondition**: `fileID` must not be empty and must be formatted as described in the documentation for [#fileID](../../Swift/fileid%28%29.md).
 

@@ -20,7 +20,7 @@ The widget’s rendering mode, based on where the system is displaying it.
 var widgetRenderingMode: WidgetRenderingMode { get set }
 ```
 
-#### Discussion
+## Discussion
 
 You can read the rendering mode from the environment values using this key.
 

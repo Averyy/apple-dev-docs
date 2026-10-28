@@ -17,11 +17,11 @@ Retrieves the value indicating whether expired roots are allowed.
 OSStatus SSLGetAllowsExpiredRoots(SSLContextRef context, Boolean *allowsExpired);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Secure Transport Result Codes](./secure-transport-result-codes.md).
 
-#### Discussion
+## Discussion
 
 Use the [`SSLSetAllowsExpiredRoots`](./sslsetallowsexpiredroots.md) function to change the setting of the `allowsExpired` flag.
 

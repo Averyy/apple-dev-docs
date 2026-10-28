@@ -19,7 +19,7 @@ func invalidateRestorableState()
 - (void) invalidateRestorableState;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method whenever the restorable state of your document changes. This method marks the document’s state as dirty, which causes that state to be written to disk at some point in the future. Do not override this method.
 

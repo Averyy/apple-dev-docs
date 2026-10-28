@@ -24,7 +24,7 @@ static let `default`: UIFontDescriptor.SystemDesign
 extern UIFontDescriptorSystemDesign const UIFontDescriptorSystemDesignDefault;
 ```
 
-#### Discussion
+## Discussion
 
 The returned typeface depends on the system. In iOS, using this constant with [`withDesign(_:)`](../withdesign%28_%29.md) returns SF Pro, while in watchOS that returns SF Compact.
 

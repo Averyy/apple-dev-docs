@@ -27,7 +27,7 @@ static var NSSecondCalendarUnit: NSCalendar.Unit { get }
 NSSecondCalendarUnit
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is a `double`. Equal to `kCFCalendarUnitSecond`.
 

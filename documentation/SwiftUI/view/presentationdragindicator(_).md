@@ -22,7 +22,7 @@ nonisolated
 func presentationDragIndicator(_ visibility: Visibility) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 You can show a drag indicator when it isn’t apparent that a sheet can resize or when the sheet can’t dismiss interactively.
 

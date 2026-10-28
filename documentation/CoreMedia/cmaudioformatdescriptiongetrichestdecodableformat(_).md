@@ -25,11 +25,11 @@ func CMAudioFormatDescriptionGetRichestDecodableFormat(_ desc: CMAudioFormatDesc
 extern const AudioFormatListItem *CMAudioFormatDescriptionGetRichestDecodableFormat(CMAudioFormatDescriptionRef desc);
 ```
 
-#### Return Value
+## Return Value
 
 A read-only pointer to the appropriate `AudioFormatListItem` inside the audio format description.
 
-#### Discussion
+## Discussion
 
 This property performs validation on the formats represented by the audio in the description.  It finds the first `AudioFormatListItem` for which the current system has a valid decoder. This API is specific to audio format descriptions, and will return `NULL` if called with a non-audio format description.  It may also return `NULL` if there is no suitable decoder available on the current system for this audio format.
 

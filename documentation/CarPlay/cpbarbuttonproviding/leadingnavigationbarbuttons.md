@@ -22,7 +22,7 @@ var leadingNavigationBarButtons: [CPBarButton] { get set }
 @property (nonatomic, strong) NSArray<CPBarButton *> * leadingNavigationBarButtons;
 ```
 
-#### Discussion
+## Discussion
 
 The navigation bar displays up to two buttons in the leading space. When including more than two buttons in the array, the system displays only the first two buttons.
 

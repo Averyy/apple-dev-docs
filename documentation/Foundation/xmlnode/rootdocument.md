@@ -20,7 +20,7 @@ var rootDocument: XMLDocument? { get }
 @property (retain, readonly, nullable) NSXMLDocument * rootDocument;
 ```
 
-#### Discussion
+## Discussion
 
 If the receiver is a standalone node (that is, a node at the head of a detached branch of the tree), this method returns `nil`.
 

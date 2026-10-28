@@ -6,20 +6,23 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.fr
 
 # mlx.core.from_dlpack
 
-**from_dlpack(*x: DLPackCompatible*, */*, ***, *copy: bool | None = None*) → [array](mlx.core.array.md#mlx.core.array)**
-: Create an array from an object that supports DLPack.
+```python
+from_dlpack(x: DLPackCompatible, /, *, copy: bool | None = None) → array
+```
 
-Parameters:
+Create an array from an object that supports DLPack.
 
-**x** – Input object implementing `__dlpack__` and
+**Parameters:**
+
+- **x** – Input object implementing `__dlpack__` and
 `__dlpack_device__`.
-**copy** ([bool](https://docs.python.org/3/builtins/functions.html#bool)*, **optional*) – Whether to copy the input. If `True`,
+- **copy** ([bool](https://docs.python.org/3/builtins/functions.html#bool), *optional*) – Whether to copy the input. If `True`,
 always copy. If `False`, never copy. If `None`, share memory
 when possible and copy otherwise. Zero-copy imports preserve the
 DLPack strides.
 
-Returns:
-An array containing the input data.
+**Returns:**
+: An array containing the input data.
 
-Return type:
-[array](mlx.core.array.md#mlx.core.array)
+**Return type:**
+: [array](mlx.core.array.md#mlx.core.array)

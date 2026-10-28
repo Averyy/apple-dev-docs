@@ -24,7 +24,7 @@ var isLuminanceNoiseReductionSupported: Bool { get }
 @property (readonly, getter=isLuminanceNoiseReductionSupported) BOOL luminanceNoiseReductionSupported;
 ```
 
-#### Discussion
+## Discussion
 
 If this value is `true`, you can adjust the amount of luminance noise reduction to apply to the image by setting [`luminanceNoiseReductionAmount`](./luminancenoisereductionamount.md).
 

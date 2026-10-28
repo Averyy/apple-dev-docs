@@ -15,7 +15,7 @@ A feature visibility setting that determines when the compass is visible.
 showsCompass?: FeatureVisibility;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `mapkit.FeatureVisibility.Adaptive`. See [`FeatureVisibility`](../featurevisibility.md) for other settings.
 

@@ -19,7 +19,7 @@ An attributed variant of the primary text.
 @property (nonatomic, copy, nullable) NSAttributedString * attributedText;
 ```
 
-#### Discussion
+## Discussion
 
 This value supersedes the [`text`](../uilistcontentconfiguration-swift.struct/text.md) property.
 

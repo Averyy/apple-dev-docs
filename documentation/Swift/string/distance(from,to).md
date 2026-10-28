@@ -21,11 +21,11 @@ Returns the distance between two indices.
 func distance(from start: String.Index, to end: String.Index) -> Int
 ```
 
-#### Return Value
+## Return Value
 
 The distance between `start` and `end`.
 
-#### Discussion
+## Discussion
 
 > **Complexity**: O(*n*), where *n* is the resulting distance.
 

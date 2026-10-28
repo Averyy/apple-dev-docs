@@ -17,7 +17,7 @@ The currently selected drawing tool.
 @preconcurrency var selectedDrawingTool: any PKTool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Default is `PKInkingTool(.monoline)`. Setting this property to a color-bearing tool while `activeInkColor` is non-nil overrides the new tool’s color with the cached value, preserving the user’s most-recent color pick across programmatic tool changes.
 

@@ -30,7 +30,7 @@ func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?)
 - [Implementing a discrete gesture recognizer](../implementing-a-discrete-gesture-recognizer.md)
 - [Implementing coalesced touch support in an app](../implementing-coalesced-touch-support-in-an-app.md)
 
-#### Discussion
+## Discussion
 
 UIKit calls this method when a new touch is detected in a view or window. Many UIKit classes override this method and use it to handle the corresponding touch events. The default implementation of this method forwards the message up the responder chain. When creating your own subclasses, call `super` to forward any events that you don’t handle yourself, like in the following code.
 

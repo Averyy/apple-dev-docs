@@ -26,7 +26,7 @@ static var defaultQuery: Self.DefaultQuery { get }
 
 - [Defining app entities for your custom data types](../defining-app-entities-for-your-custom-data-types.md)
 
-#### Discussion
+## Discussion
 
 You can create a query that uses identifier, name and more. For additional information, see [`Query`](../../SwiftData/query.md).
 

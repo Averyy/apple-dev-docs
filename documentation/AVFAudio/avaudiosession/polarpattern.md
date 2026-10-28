@@ -24,7 +24,7 @@ struct PolarPattern
 typedef NSString * AVAudioSessionPolarPattern;
 ```
 
-#### Overview
+## Overview
 
 The direction of a polar pattern is relative to the orientation of the data source. For example, you can use the cardioid pattern with a back-facing data source to more clearly record sound from behind the device, or with a front-facing data source to more clearly record sound from in front of the device (such as the user’s voice).
 

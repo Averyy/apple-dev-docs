@@ -15,7 +15,7 @@ A video driver.
 class IOUserVideoDriver;
 ```
 
-#### Overview
+## Overview
 
 For the CoreVideo host to match against this `IOService`, keys must be added to the driver’s plist `IOKitOPersonalities`.
 

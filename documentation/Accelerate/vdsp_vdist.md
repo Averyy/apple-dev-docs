@@ -21,7 +21,7 @@ Calculates the single-precision hypotenuses of right triangles with legs that ar
 extern void vDSP_vdist(const float *__A, vDSP_Stride __IA, const float *__B, vDSP_Stride __IB, float *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 The [`vDSP_vdist`](./vdsp_vdist.md) and [`vDSP_vdistD`](./vdsp_vdistd.md) functions calculate the square roots of the sum of the squares of corresponding elements of vectors `A` and `B`, using the following operation:
 

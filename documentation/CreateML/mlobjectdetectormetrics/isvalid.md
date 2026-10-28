@@ -15,7 +15,7 @@ A Boolean value indicating whether the object detector model was able to calcula
 var isValid: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 Your metrics may be invalid if you attempt to perform evaluation on images with annotations that don’t match the annotations of your training examples.
 

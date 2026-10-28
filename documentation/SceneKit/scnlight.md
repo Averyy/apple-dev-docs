@@ -25,7 +25,7 @@ class SCNLight
 @interface SCNLight : NSObject
 ```
 
-#### Overview
+## Overview
 
 You illuminate your scene by attaching lights to [`SCNNode`](./scnnode.md) objects using their [`light`](./scnnode/light.md) property.
 

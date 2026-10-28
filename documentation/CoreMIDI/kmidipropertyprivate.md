@@ -23,7 +23,7 @@ let kMIDIPropertyPrivate: CFString
 extern CFStringRef const kMIDIPropertyPrivate;
 ```
 
-#### Discussion
+## Discussion
 
 You can set this property on a device or entity, but it still appears in the API; the system only hides the object’s owned endpoints.
 

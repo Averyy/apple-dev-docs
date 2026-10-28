@@ -21,7 +21,7 @@ case none
 CLLocationButtonLabelNone
 ```
 
-#### Discussion
+## Discussion
 
 Use a different label style if [`icon`](../cllocationbutton/icon.md) is [`CLLocationButtonIcon.none`](../cllocationbuttonicon/none.md).
 

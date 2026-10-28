@@ -15,7 +15,7 @@ Returns a copy of the coordinate.
 copy(): Coordinate;
 ```
 
-#### Return Value
+## Return Value
 
 A copy of the coordinate.
 

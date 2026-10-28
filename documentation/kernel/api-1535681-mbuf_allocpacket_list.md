@@ -13,11 +13,11 @@
 errno_t mbuf_allocpacket_list(unsigned int numpkts, mbuf_how_t how, size_t packetlen, unsigned int *maxchunks, mbuf_t *mbuf);
 ```
 
-#### Return Value
+## Return Value
 
 Returns 0 upon success or the following error code: EINVAL - Invalid parameter ENOMEM - Not enough memory available ENOBUFS - Buffers not big enough for the maximum number of chunks requested
 
-#### Discussion
+## Discussion
 
 Allocate a linked list of packets. According to the requested length, each packet will made of a chain of one or more mbufs. The mbuf type will be set to MBUF_TYPE_DATA. The caller may specify the maximum number of element for each mbuf chain making up a packet.
 

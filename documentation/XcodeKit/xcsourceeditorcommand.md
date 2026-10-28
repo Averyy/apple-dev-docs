@@ -23,7 +23,7 @@ protocol XCSourceEditorCommand : NSObjectProtocol
 
 - [Creating a Source Editor Extension](./creating-a-source-editor-extension.md)
 
-#### Overview
+## Overview
 
 A one-to-one mapping between command classes and commands is not required—multiple commands can be handled by a single class, by checking their invocation’s `commandIdentifier` at runtime.
 

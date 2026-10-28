@@ -21,11 +21,11 @@ func SecTrustedApplicationCreateFromPath(_ path: UnsafePointer<CChar>?, _ app: U
 OSStatus SecTrustedApplicationCreateFromPath(const char *path, SecTrustedApplicationRef*app);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 Use this method to create a trusted app instance, which both identifies an app and provides data that can be used to ensure that the app hasn’t been altered since the instance was created.
 

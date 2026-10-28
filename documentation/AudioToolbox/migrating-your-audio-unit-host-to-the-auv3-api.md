@@ -5,7 +5,7 @@
 
 Update your Audio Unit (AU) host app to take advantage of the new features and capabilities of AUv3.
 
-#### Overview
+## Overview
 
 The latest Audio Unit standard, AUv3, provides a robust plug-in model built on app extensions. This model provides several benefits to host apps, including greater security and stability, multiple view configurations, and support for shared user presets.
 
@@ -15,7 +15,7 @@ You can adopt the new API while still retaining your ability to host AUv2 audio 
 
 For a downloadable sample app that uses the core features of the AUv3 API, see [Incorporating Audio Effects and Instruments](./incorporating-audio-effects-and-instruments.md).
 
-##### Find Audio Units
+### Find Audio Units
 
 The AVFoundation framework’s [`AVAudioUnitComponentManager`](../AVFAudio/avaudiounitcomponentmanager.md) class provides a convenient way to find audio components registered with the host system. You use it to search for audio units by description, predicate, or test case, and the component manager returns an array of [`AVAudioUnitComponent`](../AVFAudio/avaudiounitcomponent.md) objects matching your search criteria. The following code example shows how to use each approach to find all audio effects available on the system.
 
@@ -42,7 +42,7 @@ let componentsByTest = manager.components { component, _ in
 }
 ```
 
-##### Instantiate Audio Units
+### Instantiate Audio Units
 
 Once you’ve found the list of available audio components, the next step is to instantiate the component you want to use. To instantiate the audio unit, use the [`AVAudioUnit`](../AVFAudio/avaudiounit.md) class’s [`instantiate(with:options:completionHandler:)`](../AVFAudio/avaudiounit/instantiate%28with,options,completionhandler%29.md) method as shown below.
 
@@ -65,7 +65,7 @@ func selectAudioUnit(at index: Int) {
 
 > ❗ **Important**:  A key difference between the two audio unit API versions is that AUv2 audio units are loaded into the host’s process, whereas AUv3 audio units are loaded out-of-process by default. In macOS only, if supported by the AUv3 audio unit, you can request loading it in-process by passing the [`loadInProcess`](./audiocomponentinstantiationoptions/loadinprocess.md) option in the `options` argument. To verify that the audio unit was successfully loaded in-process, query its [`isLoadedInProcess`](./auaudiounit/isloadedinprocess.md) property.
 
-##### Interact with an Audio Unit
+### Interact with an Audio Unit
 
 The way you interact with audio units using the AUv3 API differs from how you do so with the AUv2 API. With AUv2, you used C functions to operate on an audio unit. For example, the following code sets the maximum number of frames to render using the AUv2 API.
 
@@ -103,7 +103,7 @@ The following table lists the AUv2 function and its AUv3 method or property equi
 | [`AudioUnitGetProperty(_:_:_:_:_:_:)`](./audiounitgetproperty%28_,_,_,_,_,_%29.md) ![](https://developer.apple.com/tutorials/images/com.apple.audiotoolbox/spacer.png) [`AudioUnitSetProperty(_:_:_:_:_:_:)`](./audiounitsetproperty%28_,_,_,_,_,_%29.md) | `audioUnit.propertyName` | Modifies an audio unit property value. |
 | [`AudioUnitGetParameter(_:_:_:_:_:)`](./audiounitgetparameter%28_,_,_,_,_%29.md) ![](https://developer.apple.com/tutorials/images/com.apple.audiotoolbox/spacer.png) [`AudioUnitSetParameter(_:_:_:_:_:_:)`](./audiounitsetparameter%28_,_,_,_,_,_%29.md) | [`parameterTree`](./auaudiounit/parametertree.md) | Accesses the parameter tree object that’s used to get and set parameter values. |
 
-##### Present the Audio Unit’s User Interface
+### Present the Audio Unit’s User Interface
 
 To present the audio unit’s user interface, call its [`requestViewController(completionHandler:)`](./auaudiounit/requestviewcontroller%28completionhandler%29.md) method. This method asynchronously retrieves the audio unit’s view controller instance and returns it in a callback closure. The callback is invoked on a background thread, so you need to dispatch control back to the main queue before adding the audio unit’s user interface into your app’s view hierarchy.
 

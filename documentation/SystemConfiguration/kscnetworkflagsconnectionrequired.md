@@ -24,7 +24,7 @@ var kSCNetworkFlagsConnectionRequired: Int { get }
 kSCNetworkFlagsConnectionRequired
 ```
 
-#### Discussion
+## Discussion
 
 For example, this status would be returned for a dialup connection that was not currently active, but could handle network traffic for the target system.
 

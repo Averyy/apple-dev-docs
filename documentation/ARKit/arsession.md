@@ -26,11 +26,11 @@ class ARSession
 - [Displaying an AR Experience with Metal](./displaying-an-ar-experience-with-metal.md)
 - [Managing Session Life Cycle and Tracking Quality](./managing-session-life-cycle-and-tracking-quality.md)
 
-#### Overview
+## Overview
 
 An `ARSession` object coordinates the major processes that ARKit performs on your behalf to create an augmented reality experience. These processes include reading data from the device’s motion sensing hardware, controlling the device’s built-in camera, and performing image analysis on captured camera images. The session synthesizes all of these results to establish a correspondence between the real-world space the device inhabits and a virtual space where you model AR content.
 
-##### Create a Session
+### Create a Session
 
 Every AR experience requires an `ARSession`. If you implement a custom renderer, you instantiate the session yourself.
 
@@ -45,7 +45,7 @@ If you use one of the standard renderers (like [`ARView`](../RealityKit/arview.m
 let session = myView.session
 ```
 
-##### Run a Session
+### Run a Session
 
 Running a session requires a configuration. Subclasses of [`ARConfiguration`](./arconfiguration.md) determine how ARKit tracks a device’s position and motion relative to the real world, and thus it determines the kinds of AR experiences you create. For example, [`ARWorldTrackingConfiguration`](./arworldtrackingconfiguration.md) enables you to augment the user’s view of the world around them though the device’s back camera.
 

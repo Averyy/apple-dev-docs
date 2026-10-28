@@ -25,7 +25,7 @@ var targetPosition: SCNVector3 { get set }
 @property (nonatomic) SCNVector3 targetPosition;
 ```
 
-#### Discussion
+## Discussion
 
 When you set this property, SceneKit attempts to move the end effector node (the node whose [`constraints`](../scnnode/constraints.md) property references the constraint) to this position. SceneKit moves this node toward the target point by rotating it relative to its parent node (and rotating its parent and ancestor nodes, up the chain ending with the `chainRoot` node) until the node is at the target position or until it is as close to the target position as possible given the rotational limits of each joint in the chain.
 

@@ -12,7 +12,7 @@ Scan a document that contains a table and extract its content in a formatted way
 - Mac Catalyst 26.0+
 - Xcode 26.0+
 
-#### Overview
+## Overview
 
 This sample app shows how to capture document images using the device camera and extract structured data from tables. The app uses the [`RecognizeDocumentsRequest`](./recognizedocumentsrequest.md) API to detect a table and create a contact list from the extracted data.
 
@@ -26,11 +26,11 @@ The sample demonstrates three main capabilities:
 
 > **Note**: This sample code project is associated with WWDC25 session 272: [Reading documents using Vision](https://developer.apple.com/videos/play/wwdc2025/272).
 
-#### Configure the sample code project
+## Configure the sample code project
 
 Because this sample app requires camera access, you’ll need to build and run this sample on a device. When you first launch the app on a device, grant the app access to the camera. In the sample project’s assets folder, open the `sampleDocuments.png` file and use the rear camera on iPad or iPhone to take a picture of the document. Optionally, if you have access to a printer, print this file and take a picture of it with your device.
 
-#### Capture a document photo
+## Capture a document photo
 
 The app starts by showing a camera preview where you can frame and take a picture of the document. To setup this preview and capture, the app creates a capture session with `AVFoundation`:
 
@@ -69,7 +69,7 @@ func capturePhoto() async throws -> Data {
 
 This asynchronous method returns the captured photo as `Data`, which the app passes to the Vision model for analysis.
 
-#### Detect tables in the document
+## Detect tables in the document
 
 The app uses Vision to find the table in the captured document image. To detect the table, the app uses [`RecognizeDocumentsRequest`](./recognizedocumentsrequest.md). The Vision framework uses a default method for image processing: pass in the image, run the request, and get the extracted contents in an observation.
 
@@ -101,7 +101,7 @@ The [`perform(on:orientation:)`](./imageprocessingrequest/perform%28on,orientati
 
 The app highlights the detected table with a blue outline showing the boundaries.
 
-#### Extract contact information from table cells
+## Extract contact information from table cells
 
 With the extracted structure, the app can access the data in the table cells. The app parses through the rows and columns to get the table data and converts it to an array of `Contact` objects:
 
@@ -174,7 +174,7 @@ struct ContactView: View {
 
 A person can see this list of extracted contacts in the app by clicking the View Contacts button above the photo capture. Each entry shows the contact’s name and email address, with phone numbers included when detected in the table.
 
-#### Interact with table cells
+## Interact with table cells
 
 The app allows you to tap on the cells in the captured table and use the data within the cells to call or send a message. It uses the [`boundingRegion`](./documentobservation/container/table/boundingregion.md) property of the `DocumentObservation` to access the selected cell and to ensure that people only tap within the table bounds.
 
@@ -205,7 +205,7 @@ The method first verifies that the tap occurs within the table’s overall `boun
 
 When the method finds a cell, the app displays a popup showing the cell’s content. If the cell contains an email address, people can tap on the address to compose a message. For phone numbers, people can tap to call or send a text message.
 
-#### Export table data
+## Export table data
 
 You can also export the table data in tab-separated values (TSV) format to copy and paste into compatible apps like Notes or Numbers:
 

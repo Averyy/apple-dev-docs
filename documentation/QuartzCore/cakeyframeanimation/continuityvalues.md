@@ -24,7 +24,7 @@ var continuityValues: [NSNumber]? { get set }
 @property (copy, nullable) NSArray<NSNumber *> * continuityValues;
 ```
 
-#### Discussion
+## Discussion
 
 This property is an array of [`NSNumber`](../../Foundation/nsnumber.md) objects, used only for the cubic calculation modes. Positive values result in sharper corners while negative values create inverted corners. The first value defines the behavior of the tangent to the first control point, the second value controls the second point’s tangents, and so on. If you do not specify a value for a given control point, the value `0` is used.
 

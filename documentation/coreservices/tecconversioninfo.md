@@ -18,7 +18,7 @@ typedef struct TECConversionInfo {
 } TECConversionInfo;
 ```
 
-#### Overview
+## Overview
 
 When you call the function [`TECGetDirectTextEncodingConversions`](./api-1571834-tecgetdirecttextencodingconversi.md), you pass an array of text encoding conversion information structures. The function fills these structures with information about each type of supported conversion. 
 

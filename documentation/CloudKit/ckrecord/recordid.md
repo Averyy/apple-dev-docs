@@ -26,7 +26,7 @@ var recordID: CKRecord.ID { get }
 @property (copy, readonly) CKRecordID * recordID;
 ```
 
-#### Discussion
+## Discussion
 
 The system sets the ID of a new record at initialization time. If you use the [`init(recordType:recordID:)`](./init%28recordtype,recordid%29.md) method to initialize the record, the ID derives from the [`CKRecord.ID`](./id.md) object you provide. In all other cases, the record generates a UUID and bases its ID on that value. The ID of a record never changes during its lifetime.
 

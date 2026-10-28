@@ -26,7 +26,7 @@ let HMCharacteristicTypeModel: String
 extern NSString * const HMCharacteristicTypeModel;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is a string.
 

@@ -23,7 +23,7 @@ var isCompilation: Bool { get }
 @property (nonatomic, readonly, getter=isCompilation) BOOL compilation;
 ```
 
-#### Discussion
+## Discussion
 
 When the value is [`true`](../../Swift/true.md), the media item is part of a compilation.
 

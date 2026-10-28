@@ -19,7 +19,7 @@ var cells: [NSCell] { get }
 @property (copy, readonly) NSArray<NSCell *> * cells;
 ```
 
-#### Discussion
+## Discussion
 
 The cells in the array are row-ordered; that is, the first row of cells appears first in the array, followed by the second row, and so forth.
 

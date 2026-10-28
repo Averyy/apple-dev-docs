@@ -9,9 +9,9 @@ Get the asset library resource ID for a specific app.
 **Availability**:
 - App Store Connect API 4.5+
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

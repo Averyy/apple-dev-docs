@@ -22,7 +22,7 @@ Creates a button template for a control.
 
 Available when `Label` is `Text` and `ActionLabel` conforms to `View`.
 
-#### Discussion
+## Discussion
 
 Use the action label to additionally customize the appearance of this control button while its action is performed
 

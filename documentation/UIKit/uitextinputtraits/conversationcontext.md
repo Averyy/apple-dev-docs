@@ -25,7 +25,7 @@ optional var conversationContext: UIConversationContext? { get set }
 
 - [Adopting Smart Reply in your messaging or email app](../adopting-smart-reply-in-your-messaging-or-email-app.md)
 
-#### Discussion
+## Discussion
 
 Set this conversation context before the keyboard appears; the keyboard uses this context to initialize its conversation context value. When updates occur in the conversation, call [`conversationContext(_:didChange:)`](../uitextinputdelegate/conversationcontext%28_,didchange%29.md) on the `inputDelegate` property for [`UITextInput`](../uitextinput.md) objects, such as UITextView/inputDelegate`or`UITextField/inputDelegate``.
 

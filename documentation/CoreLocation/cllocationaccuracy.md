@@ -25,7 +25,7 @@ typealias CLLocationAccuracy = Double
 typedef double CLLocationAccuracy;
 ```
 
-#### Discussion
+## Discussion
 
 When reported in a [`CLLocation`](./cllocation.md) object, accuracy values are the number of meters from the original geographic coordinate that could yield the user’s actual location. When specifying values for the [`desiredAccuracy`](./cllocationmanager/desiredaccuracy.md) property of your [`CLLocationManager`](./cllocationmanager.md) object, use one of the appropriate constants.
 

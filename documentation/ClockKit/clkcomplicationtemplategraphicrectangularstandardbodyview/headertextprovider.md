@@ -18,7 +18,7 @@ The text provider for the header text.
 <CLKTextProvider> @objc final var headerTextProvider: CLKTextProvider { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The template supports multicolored text from this text provider.
 

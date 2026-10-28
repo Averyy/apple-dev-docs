@@ -20,7 +20,7 @@ class XCTest
 
 - [Set Up and Tear Down State in Your Tests](./set-up-and-tear-down-state-in-your-tests.md)
 
-#### Overview
+## Overview
 
 The [`XCTest`](./xctest-page.md) class provides shared functionality that [`XCTestCase`](./xctestcase.md) and [`XCTestSuite`](./xctestsuite.md) use for creating, managing, and executing tests. In most cases, you subclass [`XCTestCase`](./xctestcase.md) directly when defining tests in your project.
 

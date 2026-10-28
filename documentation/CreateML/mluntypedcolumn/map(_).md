@@ -26,7 +26,7 @@ func map<T>(_ lazyTransform: @escaping (MLDataValue) -> T) -> MLDataColumn<T> wh
 func map<T>(_ lazyTransform: @escaping (MLDataValue) -> T?) -> MLDataColumn<T> where T : MLDataValueConvertible
 ```
 
-#### Return Value
+## Return Value
 
 A new `MLDataColumn` typed to the return type of `lazyTransform`.
 

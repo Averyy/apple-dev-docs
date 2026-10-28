@@ -19,7 +19,7 @@ var kCFUserNotificationNoDefaultButtonFlag: CFOptionFlags { get }
 kCFUserNotificationNoDefaultButtonFlag
 ```
 
-#### Discussion
+## Discussion
 
 The dialog remains on screen until it times out or you cancel it with [`CFUserNotificationCancel(_:)`](./cfusernotificationcancel%28_%29.md). If you provide a title for the default button in the user notification’s description dictionary, this flag is ignored and buttons show up normally.
 

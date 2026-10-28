@@ -23,7 +23,7 @@ var contentOverlayView: UIView? { get }
 @property (nonatomic, readonly, nullable) UIView * contentOverlayView;
 ```
 
-#### Discussion
+## Discussion
 
 Use the content overlay view to add noninteractive custom views, such as a logo or watermark, between the video content and the controls.
 

@@ -24,7 +24,7 @@ convenience init<S>(input: S, configuration: PhotogrammetrySession.Configuration
 convenience init(input: URL, configuration: PhotogrammetrySession.Configuration = Configuration()) throws
 ```
 
-#### Discussion
+## Discussion
 
 Creates a new session instance from a custom sequence of [`PhotogrammetrySample`](../photogrammetrysample.md) objects by iterating over the provided  [`Sequence`](../../Swift/sequence.md) object.
 

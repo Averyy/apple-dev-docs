@@ -17,11 +17,11 @@ static IOMemoryDescriptor *withOptions(
  IOMapper *mapper = mapper);
 ```
 
-#### Return Value
+## Return Value
 
 The created IOMemoryDescriptor on success, to be released by the caller, or zero on failure.
 
-#### Overview
+## Overview
 
 This method creates and initializes an IOMemoryDescriptor for memory it has three main variants: Virtual, Physical & mach UPL. These variants are selected with the options parameter, see below. This memory descriptor needs to be prepared before it can be used to extract data from the memory described.
 

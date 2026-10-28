@@ -20,7 +20,7 @@ let NSTypeIdentifierPhoneNumberText: String
 extern NSString * const NSTypeIdentifierPhoneNumberText;
 ```
 
-#### Discussion
+## Discussion
 
 UTI subtype for [`phoneNumber`](../Foundation/nstextcheckingresult/phonenumber.md), `com.apple.structured-text.telephone-number`.
 

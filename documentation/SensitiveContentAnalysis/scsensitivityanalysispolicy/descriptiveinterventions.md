@@ -27,7 +27,7 @@ SCSensitivityAnalysisPolicyDescriptiveInterventions
 
 - [Detecting sensitive content in media and providing intervention options](../detecting-nudity-in-media-and-providing-intervention-options.md)
 
-#### Discussion
+## Discussion
 
 If this value is [`analysisPolicy`](../scsensitivityanalyzer/analysispolicy.md), it indicates that the person turned on both of the following:
 

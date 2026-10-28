@@ -24,7 +24,7 @@ class PHASESamplerNodeDefinition
 @interface PHASESamplerNodeDefinition : PHASEGeneratorNodeDefinition
 ```
 
-#### Overview
+## Overview
 
 Generate sound events from this node to play audio data that your app loads completely, either from disk or from memory.
 

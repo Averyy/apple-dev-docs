@@ -25,7 +25,7 @@ func forceRenewalOfSubscription(productIdentifier: String) throws
 - (BOOL) forceRenewalOfSubscriptionWithProductIdentifier:(NSString *) productIdentifier error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to test how your code handles subscription renewals. When you call this method, the subscription expires at the time you call the method, and a new subscription period begins.
 

@@ -25,7 +25,7 @@ var leftExpression: NSExpression { get }
 @property (retain, readonly) NSExpression * leftExpression;
 ```
 
-#### Discussion
+## Discussion
 
 `nil` if there is none.
 

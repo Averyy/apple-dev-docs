@@ -13,11 +13,11 @@
 errno_t mbuf_copydata(const mbuf_t mbuf, size_t offset, size_t length, void *out_data);
 ```
 
-#### Return Value
+## Return Value
 
 0 upon success otherwise the errno error.
 
-#### Discussion
+## Discussion
 
 Copies data out of an mbuf in to a specified buffer. If the data is stored in a chain of mbufs, the data will be copied from each mbuf in the chain until length bytes have been copied.
 

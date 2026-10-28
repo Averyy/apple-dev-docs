@@ -23,7 +23,7 @@ var transform: CGAffineTransform { get set }
 @property (nonatomic) CGAffineTransform transform;
 ```
 
-#### Discussion
+## Discussion
 
 Assigning a value to this property replaces the value in the [`transform3D`](./transform3d.md) property with a 3D version of the affine transform you specify.
 

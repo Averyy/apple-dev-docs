@@ -21,11 +21,11 @@ Returns a precision that constrains formatted values to ranges of allowed digits
 static func integerAndFractionLength<R1, R2>(integerLimits: R1, fractionLimits: R2) -> NumberFormatStyleConfiguration.Precision where R1 : RangeExpression, R2 : RangeExpression, R1.Bound == Int, R2.Bound == Int
 ```
 
-#### Return Value
+## Return Value
 
 A precision that constrains formatted values to ranges of digits in the integer and fraction parts.
 
-#### Discussion
+## Discussion
 
 When using this precision, the formatter rounds values that have more digits than the maximum of the range, as seen in the following example:
 

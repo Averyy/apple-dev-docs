@@ -20,7 +20,7 @@ Returns the relationship at a given path, if it exists.
 func relationship(at path: USDLayer.Path) -> USDPrim.Relationship
 ```
 
-#### Discussion
+## Discussion
 
 If no relationship exists at the resolved path, returns an invalid relationship handle.
 

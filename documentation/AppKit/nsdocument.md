@@ -20,7 +20,7 @@ class NSDocument
 @interface NSDocument : NSObject
 ```
 
-#### Overview
+## Overview
 
 A document is an object that can internally represent data displayed in a window and that can read data from and write data to a file or file package. Documents create and manage one or more window controllers and are in turn managed by a document controller. Documents respond to first-responder action messages to save, revert, and print their data.
 
@@ -32,7 +32,7 @@ A document can read that data from a file and write it to a file. It is also the
 
 For more information about using [`NSDocument`](./nsdocument.md) in a document-based app, see [Developing a Document-Based App](./developing-a-document-based-app.md).
 
-##### Subclassing NSDocument
+### Subclassing NSDocument
 
 The [`NSDocument`](./nsdocument.md) class is designed to be subclassed. That is, the [`NSDocument`](./nsdocument.md) class is abstract, and your app must create at least one [`NSDocument`](./nsdocument.md) subclass in order to use the document architecture. To create a useful [`NSDocument`](./nsdocument.md) subclass, you must override some methods, and you can optionally override others.
 
@@ -40,7 +40,7 @@ The [`NSDocument`](./nsdocument.md) class itself knows how to handle document da
 
 For more information about creating subclasses, including the primitive methods that subclasses must override and those that you can optionally override, see [Developing a Document-Based App](./developing-a-document-based-app.md).
 
-##### Document Saving Behavior
+### Document Saving Behavior
 
 The [`NSDocument`](./nsdocument.md) class implements document saving in a way that preserves, when possible, various attributes of each document, including:
 
@@ -59,11 +59,11 @@ When updating your app to link against OS X v10.5, keep in mind that it is usual
 
 Likewise, it’s usually more appropriate to invoke in your app code one of the `NSDocument` `revert...` methods than one of the `read...` methods. The `read...` methods are there primarily for you to override. The [`revert(toContentsOf:ofType:)`](./nsdocument/revert%28tocontentsof,oftype%29.md) method that is meant always to be invoked during rereading of an open document, sets the [`fileModificationDate`](./nsdocument/filemodificationdate.md) property with the file’s modification date after it has been read.
 
-##### iCloud Support
+### iCloud Support
 
 The [`NSDocument`](./nsdocument.md) class implements the file coordination support that is required for an iCloud-enabled, document-based Mac app (see [How iCloud Document Storage Works](https://developer.apple.com/library/archive/documentation/General/Conceptual/iCloudDesignGuide/Chapters/DesigningForDocumentsIniCloud.html#//apple_ref/doc/uid/TP40012094-CH2-SW10) in [iCloud Design Guide](https://developer.apple.com/library/archive/documentation/General/Conceptual/iCloudDesignGuide/Chapters/Introduction.html#//apple_ref/doc/uid/TP40012094)). In addition, this class’s methods for moving and renaming documents, new in OS X v10.8, ensure that these operations are performed in a safe manner for iCloud-enabled apps.
 
-##### Multicore Considerations
+### Multicore Considerations
 
 In macOS 10.6 and later, `NSDocument` supports the ability to open multiple documents concurrently. However, this support requires the cooperation of the document object. If your document subclass is able to read specific document types independently of other similar documents, you should override the [`canConcurrentlyReadDocuments(ofType:)`](./nsdocument/canconcurrentlyreaddocuments%28oftype%29.md) class method and return [`true`](../Swift/true.md) for the appropriate document types. If specific document types rely on shared state information, however, you should return [`false`](../Swift/false.md) for those types.
 

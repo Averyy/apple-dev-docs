@@ -22,7 +22,7 @@ var printableRect: CGRect { get }
 @property (readonly) CGRect printableRect;
 ```
 
-#### Discussion
+## Discussion
 
 Typically, UIKit passes this value into the last argument of the [`UIPrintPageRenderer`](../uiprintpagerenderer.md) method [`drawPage(at:in:)`](../uiprintpagerenderer/drawpage%28at,in%29.md).
 

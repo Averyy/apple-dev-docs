@@ -19,7 +19,7 @@ Don’t mirror shortcuts.
 static let withoutMirroring: KeyboardShortcut.Localization
 ```
 
-#### Discussion
+## Discussion
 
 Use this for shortcuts that always have a specific directionality, like aligning something on the right.
 

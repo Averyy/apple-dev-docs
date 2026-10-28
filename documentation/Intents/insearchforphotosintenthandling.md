@@ -25,7 +25,7 @@ protocol INSearchForPhotosIntentHandling : NSObjectProtocol
 @protocol INSearchForPhotosIntentHandling <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Use the methods of the [`INSearchForPhotosIntentHandling`](./insearchforphotosintenthandling.md) protocol to resolve, confirm, and handle requests to search the photos in your app. Adopt this protocol in an object of your Intents extension that’s capable of performing the search and determining the number of results. Siri doesn’t display the photos found during the search. After a successful search, Siri launches your app to display the photos.
 

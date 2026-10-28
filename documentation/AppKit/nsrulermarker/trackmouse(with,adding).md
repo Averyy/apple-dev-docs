@@ -19,11 +19,11 @@ func trackMouse(with mouseDownEvent: NSEvent, adding isAdding: Bool) -> Bool
 - (BOOL) trackMouse:(NSEvent *) mouseDownEvent adding:(BOOL) isAdding;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the user manipulation was allowed, [`false`](../../Swift/false.md) if it was not allowed.
 
-#### Discussion
+## Discussion
 
 [`NSRulerView`](../nsrulerview.md) objects invoke this method automatically to add a new marker or to move or remove an existing marker. You should never need to invoke it directly.
 

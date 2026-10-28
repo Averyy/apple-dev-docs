@@ -21,7 +21,7 @@ case chargerPluggedIn
 
 - [Providing charging history for electric vehicles](../../providing-informative-charging-history-for-electric-vehicles.md)
 
-#### Discussion
+## Discussion
 
 This status represents the initial connection before any charging logic determines whether to begin charging or remain idle.
 

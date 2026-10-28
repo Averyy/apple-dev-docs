@@ -27,7 +27,7 @@ func snapshot() throws -> any XCUIElementSnapshot
 - (id<XCUIElementSnapshot>) snapshotWithError:(NSError **) outError;
 ```
 
-#### Return Value
+## Return Value
 
 A snapshot of an element’s attributes and descendant user interface hierarchy.
 

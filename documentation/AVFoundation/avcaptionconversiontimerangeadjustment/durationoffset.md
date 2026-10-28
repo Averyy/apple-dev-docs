@@ -22,7 +22,7 @@ var durationOffset: CMTime { get }
 @property (readonly) CMTime durationOffset;
 ```
 
-#### Discussion
+## Discussion
 
 The value may any numeric value, positive, negative, or zero.
 

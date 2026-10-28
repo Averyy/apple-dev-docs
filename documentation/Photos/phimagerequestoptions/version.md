@@ -24,7 +24,7 @@ var version: PHImageRequestOptionsVersion { get set }
 @property (nonatomic, assign) PHImageRequestOptionsVersion version;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to request a version of the image with or without adjustments, or to request high-quality original data (for example, a RAW file) if such is available. See [`PHImageRequestOptionsVersion`](../phimagerequestoptionsversion.md).
 

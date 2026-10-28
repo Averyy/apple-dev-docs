@@ -23,7 +23,7 @@ var transitionProgress: CGFloat { get set }
 @property (nonatomic, assign) CGFloat transitionProgress;
 ```
 
-#### Discussion
+## Discussion
 
 During the transition, you should set the value of this property periodically and call [`invalidateLayout()`](../uicollectionviewlayout/invalidatelayout%28%29.md) to force the collection view to update item positions. If you are driving the transition with a gesture recognizer, you would likely set this property from the handler method of your gesture recognizer.
 

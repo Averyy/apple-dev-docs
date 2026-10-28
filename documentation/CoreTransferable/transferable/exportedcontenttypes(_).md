@@ -21,7 +21,7 @@ Content types supported by a given value’s `Transferable` conformance for expo
 func exportedContentTypes(_ visibility: TransferRepresentationVisibility = .all) -> [UTType]
 ```
 
-#### Discussion
+## Discussion
 
 Returns a list of all content types available for export in the type’s [`Transferable`](../transferable.md) conformance, except for those that are not supported by this specific value. For example, if an `exportingCondition` for some representation evaluates to `false`, this representation isn’t included.
 

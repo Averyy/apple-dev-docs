@@ -5,7 +5,7 @@
 
 Add a scene to your article to create special effects.
 
-#### Overview
+## Overview
 
 Apple News Format provides animations (see [About Component Animations](./about-component-animations.md)) and behaviors (see [About Component Behaviors](./about-component-behaviors.md)) to use with individual components in your article, but you can also use a *scene* — a combination of animations and behaviors — to control how a section or chapter of your article comes into view.
 

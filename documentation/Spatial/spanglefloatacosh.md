@@ -19,11 +19,11 @@
 static SPAngleFloat SPAngleFloatAcosh(float x);
 ```
 
-#### Return Value
+## Return Value
 
 The inverse hyperbolic cosine of the specified value.
 
-#### Discussion
+## Discussion
 
 Returns the inverse hyperbolic cosine of the specified value.
 

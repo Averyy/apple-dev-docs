@@ -24,7 +24,7 @@ case local
 CNContainerTypeLocal
 ```
 
-#### Discussion
+## Discussion
 
 There is only one local container for a device.
 

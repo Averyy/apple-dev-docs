@@ -19,7 +19,7 @@ let kSpeechPhonemeSymbolsProperty: CFString
 const CFStringRef kSpeechPhonemeSymbolsProperty;
 ```
 
-#### Discussion
+## Discussion
 
 The value associated with this property is a `CFDictionary` object that contains the phoneme symbols and example words defined for the current synthesizer. Your application might use this information to show the user what symbols to use when entering phonemic text directly. See [Phoneme Symbols Keys](./speech_synthesis_manager/phoneme_symbols_keys.md) for a description of the keys present in the dictionary.
 

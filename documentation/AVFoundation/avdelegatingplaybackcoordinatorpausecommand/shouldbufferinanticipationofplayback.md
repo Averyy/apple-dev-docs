@@ -24,7 +24,7 @@ var shouldBufferInAnticipationOfPlayback: Bool { get }
 @property (nonatomic, readonly) BOOL shouldBufferInAnticipationOfPlayback;
 ```
 
-#### Discussion
+## Discussion
 
 A [`true`](../../Swift/true.md) value indicates that a participant player requests starting playback at the [`anticipatedPlaybackRate`](./anticipatedplaybackrate.md) value.
 

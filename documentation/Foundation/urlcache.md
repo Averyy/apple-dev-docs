@@ -29,13 +29,13 @@ class URLCache
 
 - [Accessing cached data](./accessing-cached-data.md)
 
-#### Overview
+## Overview
 
 The [`URLCache`](./urlcache.md) class implements the caching of responses to URL load requests, by mapping [`NSURLRequest`](./nsurlrequest.md) objects to [`CachedURLResponse`](./cachedurlresponse.md) objects. It provides a composite in-memory and on-disk cache, and lets you manipulate the sizes of both the in-memory and on-disk portions. You can also control the path where cache data is persistently stored.
 
 > **Note**:  In iOS, the on-disk cache may be purged when the system runs low on disk space, but only when your app is not running.
 
-##### Thread safety
+### Thread safety
 
 In iOS 8 and later, and macOS 10.10 and later, [`URLCache`](./urlcache.md) is thread safe.
 
@@ -43,7 +43,7 @@ Although [`URLCache`](./urlcache.md) instance methods can safely be called from 
 
 Subclasses of [`URLCache`](./urlcache.md) must implement overridden methods in such a thread-safe manner.
 
-##### Subclassing notes
+### Subclassing notes
 
 The [`URLCache`](./urlcache.md) class is meant to be used as-is, but you can subclass it when you have specific needs. For example, you might want to screen which responses are cached, or reimplement the storage mechanism for security or other reasons.
 

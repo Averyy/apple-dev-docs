@@ -22,7 +22,7 @@ func performWithoutUserInteraction(generatePasswordsRequest: ASGeneratePasswords
 - (void) performGeneratePasswordsRequestWithoutUserInteraction:(ASGeneratePasswordsRequest *) generatePasswordsRequest;
 ```
 
-#### Discussion
+## Discussion
 
 To return results, you must call ``ASCredentialProviderExtensionContext/completeGeneratePasswordRequest(results:completionHandler:)`.
 

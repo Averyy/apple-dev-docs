@@ -19,7 +19,7 @@ func zoom(_ sender: Any?)
 - (void) zoom:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 For more information on the standard and user states, see [`windowWillUseStandardFrame(_:defaultFrame:)`](../nswindowdelegate/windowwillusestandardframe%28_,defaultframe%29.md).
 

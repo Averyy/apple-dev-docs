@@ -29,7 +29,7 @@ func write(_ buffer: UnsafePointer<UInt8>, maxLength len: Int) -> Int
 
 - [Uploading streams of data](../uploading-streams-of-data.md)
 
-#### Return Value
+## Return Value
 
 A number indicating the outcome of the operation:
 

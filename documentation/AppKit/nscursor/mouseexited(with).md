@@ -21,7 +21,7 @@ func mouseExited(with event: NSEvent)
 - (void) mouseExited:(NSEvent *) event;
 ```
 
-#### Discussion
+## Discussion
 
 Like [`mouseEntered(with:)`](./mouseentered%28with%29.md), this message is part of the class interface only so you can override it.
 

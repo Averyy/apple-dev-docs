@@ -23,7 +23,7 @@ class UIDatePicker
 @interface UIDatePicker : UIControl
 ```
 
-#### Overview
+## Overview
 
 You can use a date picker to allow a user to enter either a point in time (calendar date, time value, or both) or a time interval (for example, for a timer). The date picker reports interactions to its associated target object.
 
@@ -36,7 +36,7 @@ To add a date picker to your interface:
 
 You use a date picker only for handling the selection of times and dates. If you want to handle the selection of arbitrary items from a list, use a [`UIPickerView`](./uipickerview.md) object.
 
-##### Configure a date picker
+### Configure a date picker
 
 The [`datePickerMode`](./uidatepicker/datepickermode.md) property determines the configuration of a date picker. You can set the [`datePickerMode`](./uidatepicker/datepickermode.md) value programmatically or in Interface Builder. For modes that include date or time values, you can also configure the locale, calendar, and time zone information. The date picker uses that information when formatting date and time values for the current user, and defaults to the device’s locale, calendar, and time zone. The [`date`](./uidatepicker/date.md) property represents the currently selected date in the form of an [`NSDate`](../Foundation/nsdate.md) object, which is calendar and time zone agnostic.
 
@@ -50,7 +50,7 @@ The figure below shows a date picker configured with the [`datePickerMode`](./ui
 
 > **Note**:  You can use a [`UIDatePicker`](./uidatepicker.md) object for the selection of a time interval, but you must use an [`Timer`](../Foundation/timer.md) object to implement the actual timer behavior. For more information, see [`Timer`](../Foundation/timer.md).
 
-##### Respond to user interaction
+### Respond to user interaction
 
 Date pickers use the target-action design pattern to notify your app when the user changes the selected date. To be notified when the date picker’s value changes, register your action method with the [`valueChanged`](./uicontrol/event/valuechanged.md) event. At runtime the date picker calls your methods in response to the user selecting a date or time.
 
@@ -72,14 +72,14 @@ You connect a date picker to your action method using the [`addTarget(_:action:f
 - (IBAction)doSomething:(id)sender forEvent:(UIEvent*)event;
 ```
 
-##### Debug date pickers
+### Debug date pickers
 
 When debugging issues with date pickers, watch for these common pitfalls:
 
 - **The minimum date must be earlier than the maximum date.** Check the bounds of your [`minimumDate`](./uidatepicker/minimumdate.md) and [`maximumDate`](./uidatepicker/maximumdate.md) properties. If the maximum date is less than the minimum date, both properties are ignored, and the date picker allows the selection of any date value. The minimum and maximum dates are ignored in the countdown-timer mode ([`UIDatePicker.Mode.countDownTimer`](./uidatepicker/mode/countdowntimer.md)).
 - **The minute interval must be a divisor of 60.** Check that the [`minuteInterval`](./uidatepicker/minuteinterval.md) value can be evenly divided into 60; otherwise, the default value is used (`1`).
 
-##### Configure date picker attributes in Interface Builder
+### Configure date picker attributes in Interface Builder
 
 The following table lists the core attributes that you configure for date pickers in Attributes Inspector within Interface Builder.
 
@@ -100,19 +100,19 @@ The following table lists the attributes that control the display of date and ti
 
 For information about the date picker’s inherited Interface Builder attributes, see [`UIControl`](./uicontrol.md) and [`UIView`](./uiview.md).
 
-##### Change the appearance
+### Change the appearance
 
 You can change the appearance of [`UIDatePicker`](./uidatepicker.md) by setting [`preferredDatePickerStyle`](./uidatepicker/preferreddatepickerstyle.md). For a list of appearance styles, see [`UIDatePickerStyle`](./uidatepickerstyle.md).
 
 You should integrate date pickers in your layout using Auto Layout. Although date pickers can be resized, they should be used at their intrinsic content size.
 
-##### Specify a locale
+### Specify a locale
 
 Date pickers handle their own internationalization; the only thing you need to do is specify the appropriate locale. You can choose a specific locale for your date picker to appear in by setting the Locale ([`locale`](./uidatepicker/locale.md)) field in Attributes Inspector. Setting the locale changes the language that the date picker uses for display, but also the format of the date and time (for example, certain locales present days before month names, or prefer a 24-hour clock over a 12-hour clock). The width of the date picker automatically accommodates for the length of the localization. To use the system language, leave this property set to default.
 
 For more information, see [Internationalization and Localization Guide](https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPInternational/Introduction/Introduction.html#//apple_ref/doc/uid/10000171i).
 
-##### Support accessibility and VoiceOver
+### Support accessibility and VoiceOver
 
 Date pickers are accessible by default. Each time component in the date picker is its own accessibility element and has the Adjustable ([`adjustable`](./uiaccessibilitytraits/adjustable.md)) trait.
 

@@ -24,7 +24,7 @@ enum Preset
 enum PHASEMediumPreset : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Currently, this enumeration refers only to sound traveling through air.
 

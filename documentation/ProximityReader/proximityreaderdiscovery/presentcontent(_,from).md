@@ -17,7 +17,7 @@ Presents a sheet that teaches merchants how to use the specified feature.
 final func presentContent(_ content: ProximityReaderDiscovery.Content, from viewController: UIViewController) async throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: This method throws a [`ProximityReaderDiscovery.ContentError`](./contenterror.md) if the sheet fails to appear.
 

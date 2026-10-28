@@ -19,11 +19,11 @@ optional func previewPanel(_ panel: QLPreviewPanel!, transitionImageFor item: (a
 - (id) previewPanel:(QLPreviewPanel *) panel transitionImageForPreviewItem:(id<QLPreviewItem>) item contentRect:(NSRect *) contentRect;
 ```
 
-#### Return Value
+## Return Value
 
 The image to use for the transition zoom effect for the `item`.
 
-#### Discussion
+## Discussion
 
 The system invokes this optional method when the preview panel opens or closes to provide a smooth transition when zooming. The return type of the function should be an instance of [`NSImage`](../../AppKit/nsimage.md).
 

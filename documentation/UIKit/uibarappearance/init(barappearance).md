@@ -23,11 +23,11 @@ init(barAppearance: UIBarAppearance)
 - (instancetype) initWithBarAppearance:(UIBarAppearance *) barAppearance;
 ```
 
-#### Return Value
+## Return Value
 
 A new bar appearance object containing the relevant properties from the other object.
 
-#### Discussion
+## Discussion
 
 This method copies over the properties from `barAppearance` that are also relevant to the new bar appearance object.
 

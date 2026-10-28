@@ -19,7 +19,7 @@ func setImageURL(_ imageURL: URL?, for traits: TVTopShelfItem.ImageTraits)
 - (void) setImageURL:(NSURL *) imageURL forTraits:(TVTopShelfItemImageTraits) traits;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to assign images to a top shelf item. For most items, the system displays only an image. For carousel items, the system initially displays an image, but switches to the preview video when the navigation focus stops on the item.
 

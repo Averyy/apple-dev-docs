@@ -15,7 +15,7 @@ An error a validator emits when the length property of the value given is greate
 interface LengthGreaterThanMaxError
 ```
 
-#### Overview
+## Overview
 
 Extends `LengthError`.
 

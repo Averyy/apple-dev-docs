@@ -11,7 +11,7 @@ Translate text in your app from one language to another.
 - iPadOS 17.4+
 - macOS 14.4+
 
-#### Overview
+## Overview
 
 Offer in-app translations with the Translation framework. You can use the built-in UI and let the system offer a translation to users on your behalf. Or you can use the framework to customize the translation experience.
 

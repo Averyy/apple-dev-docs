@@ -24,7 +24,7 @@ func mpsndarray() -> MPSNDArray
 - (MPSNDArray *) mpsndarray;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSNDArray, or nil if allocation fails.
 

@@ -15,11 +15,11 @@ Adds an audio clock device to the audio box.
 kern_return_t AddClockDevice(IOUserAudioClockDevice *in_clock_device);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../../DriverKit/error-codes.md).
 
-#### Discussion
+## Discussion
 
 The box doesn’t own the clock device.
 

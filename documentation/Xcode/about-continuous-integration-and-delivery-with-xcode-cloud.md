@@ -5,7 +5,7 @@
 
 Learn how continuous integration and delivery with Xcode Cloud helps you create high-quality apps and frameworks.
 
-#### Overview
+## Overview
 
 Xcode consists of a suite of tools you use to build, test, and release apps and frameworks for Apple platforms. When you add features and support more devices and platforms, your app or framework and its codebase grow in complexity, making it harder to ensure its quality. With Xcode Cloud, you can adopt *continuous integration and delivery* (CI/CD), a standard practice to monitor, ensure, and improve the quality of your apps and frameworks.
 
@@ -22,7 +22,7 @@ Xcode Cloud is a CI/CD system that uses Git for source control and provides you 
 
 You don’t need to introduce every aspect of continuous integration and delivery at once. Instead, take a slow but steady approach and start by using [Git](https://git-scm.com) for managing your project’s source code. After you’re comfortable with Git’s workflows and processes, configure your project to use Xcode Cloud at the most basic level — for continually building and testing your projects. As you become more familiar with how Xcode Cloud works, you can start to take advantage of its CD features like delivering test builds with TestFlight.
 
-##### The role of source control
+### The role of source control
 
 Changes to your app’s code can be difficult to manage. This is especially true when you work on several changes at the same time. To help you organize, manage, and document source code changes, Xcode supports source control with Git. By using source control, you improve your project’s quality by tracking and reviewing code changes.
 
@@ -36,7 +36,7 @@ Because source control plays such a fundamental role in CI/CD, Xcode Cloud requi
 
 To learn more about source control with Xcode, see [Source control management](./source-control-management.md).
 
-##### The importance of automated building and testing
+### The importance of automated building and testing
 
 A typical development process starts with making changes to your code, building the project, and running your app in the Simulator or on a test device. Your process may even include verifying changes locally by running unit tests you create with [Swift Testing](../Testing/Testing.md) or [XCTest](../XCTest/XCTest.md), and by running integration, performance, or user interface tests.
 
@@ -50,13 +50,13 @@ For more information about automatically building your project with Xcode Cloud,
 
 For more information about testing your code, see [Testing](./testing.md).
 
-##### Continuous delivery
+### Continuous delivery
 
 The flip side to continuous integration (CI) is continuous delivery (CD). While automatic building and testing are important to developing high-quality apps and frameworks, it doesn’t replace the hands-on testing you get from team members and testers. When Xcode Cloud verifies a change to your code (CI), it can automatically deliver (CD) a new version of your app to internal testers with [TestFlight](https://developer.apple.com/testflight/). Xcode Cloud can also sign your app for external testing with TestFlight and submission to app review. You can also upload the exported app archive or a framework to your own server.
 
 ![A figure that illustrates the various steps of CD that happen after CI has passed: distribution to internal testers, external testers, and the App Store.](https://developer.apple.com/tutorials/images/com.apple.Xcode/About-Continuous-Integration-and-Delivery-with-Xcode-Cloud-3@2x.png)
 
-##### Collaborative software development with Xcode Cloud
+### Collaborative software development with Xcode Cloud
 
 Source control with Git helps you manage changes to your code. For example, Git branches enable you to make a change without affecting your verified, stable codebase. Additionally, branches are helpful when you develop your app or framework as a team. However, merging changes, resolving conflicts, and verifying code changes can be time-consuming.
 

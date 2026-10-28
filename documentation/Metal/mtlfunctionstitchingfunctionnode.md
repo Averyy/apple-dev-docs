@@ -24,7 +24,7 @@ class MTLFunctionStitchingFunctionNode
 @interface MTLFunctionStitchingFunctionNode : NSObject
 ```
 
-#### Overview
+## Overview
 
 When the Metal device object evaluates the function graph to compile the stitched function, it evaluates the nodes stored in the [`arguments`](./mtlfunctionstitchingfunctionnode/arguments.md) property that it hasn’t already evaluated, and then calls the function specified by [`name`](./mtlfunctionstitchingfunctionnode/name.md) to generate the node’s output.
 

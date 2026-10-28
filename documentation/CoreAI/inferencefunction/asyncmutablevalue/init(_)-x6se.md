@@ -19,7 +19,7 @@ Initialize the state from an existing ndArray.
 init(_ ndArray: consuming NDArray)
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: The ndArray will be eagerly copied if not uniquely referenced.
 

@@ -15,11 +15,11 @@ A static factory method that allocates and initializes a video clock device.
 static OSSharedPtr<IOUserVideoClockDevice> Create(IOUserVideoDriver *in_driver, OSString *in_device_uid, OSString *in_model_uid, OSString *in_manufacturer_uid);
 ```
 
-#### Return Value
+## Return Value
 
 OSSharedPtr to an IOUserVideoClockDevice if it was successfully allocated and initialized
 
-#### Discussion
+## Discussion
 
 If IOUserVideoClockDevice is subclassed to override behavior, don’t use this method to allocate or initialize the custom subclass.
 

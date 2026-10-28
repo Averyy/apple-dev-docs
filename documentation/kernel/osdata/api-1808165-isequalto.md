@@ -12,11 +12,11 @@ virtual bool isEqualTo(
  const OSMetaClassBase *anObject) const;
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the two objects are equivalent, `false` otherwise.
 
-#### Overview
+## Overview
 
 An OSData is considered equal to another object if that object is derived from OSData and contains the equivalent bytes of the same length.
 

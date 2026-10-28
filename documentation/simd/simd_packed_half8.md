@@ -14,7 +14,7 @@ typealias simd_packed_half8 = SIMD8<Float16>
 typedef _Float16 __attribute__((ext_vector_type(8))) simd_packed_half8;
 ```
 
-#### Discussion
+## Discussion
 
 A vector of eight 16-bit floating-point numbers with relaxed alignment.
 

@@ -28,7 +28,7 @@ optional func confirm(intent: INSendMessageIntent) async -> INSendMessageIntentR
 - (void) confirmSendMessage:(INSendMessageIntent *) intent completion:(void (^)(INSendMessageIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This method validates that your messaging service is available and that sending a message is possible. At some point in your implementation, execute the provided completion block with a response object.
 

@@ -25,7 +25,7 @@ extern void vDSP_vsbsm(const float *__A, vDSP_Stride __IA, const float *__B, vDS
 
 - [Using vDSP for vector-based arithmetic](./using-vdsp-for-vector-based-arithmetic.md)
 
-#### Discussion
+## Discussion
 
 This function calculates the element-wise difference of vectors `A` and `B`, multiplies the difference by scalar value `C`, and writes the result to vector `D`, as follows:
 

@@ -21,7 +21,7 @@ The never limit behavior.
 static var never: ViewAlignedScrollTargetBehavior.LimitBehavior { get }
 ```
 
-#### Discussion
+## Discussion
 
 Never limit the amount of views that can be scrolled.
 

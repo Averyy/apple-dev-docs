@@ -15,7 +15,7 @@ Complex vector absolute values; single precision.
 void vDSP_zvabs(const DSPSplitComplex *__A, vDSP_Stride __IA, float *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This performs the following operation:
 

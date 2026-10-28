@@ -19,7 +19,7 @@ var allowsScrolling: Bool { get set }
 @property (nonatomic) BOOL allowsScrolling;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../Swift/true.md), scrolling is allowed; if [`false`](../../Swift/false.md), it is not. If the frame contains a scrolling element, then that value is used as the default; otherwise, the default is [`true`](../../Swift/true.md).
 

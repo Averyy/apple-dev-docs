@@ -29,7 +29,7 @@ func optimizeContentsForCPUAccess(texture: any MTLTexture, slice: Int, level: In
 
 - [Optimizing texture data](../optimizing-texture-data.md)
 
-#### Discussion
+## Discussion
 
 This command can reduce the time it takes the CPU to access a texture. Apps typically run the command for:
 

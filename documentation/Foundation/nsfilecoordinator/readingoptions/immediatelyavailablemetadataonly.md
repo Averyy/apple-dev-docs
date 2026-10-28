@@ -25,7 +25,7 @@ static var immediatelyAvailableMetadataOnly: NSFileCoordinator.ReadingOptions { 
 NSFileCoordinatorReadingImmediatelyAvailableMetadataOnly
 ```
 
-#### Discussion
+## Discussion
 
 Specifying this option grants the coordinated read immediately (barring any conflicts with other readers, writers or file presenters on the same system), instead of waiting for the system to download the file’s contents and any additional metadata (for example, conflicting versions or thumbnails).
 

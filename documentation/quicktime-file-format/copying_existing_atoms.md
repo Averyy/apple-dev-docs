@@ -5,7 +5,7 @@
 
 Copy existing atoms within an atom container.
 
-#### Overview
+## Overview
 
 QuickTime provides several functions for copying existing atoms within an atom container. The `QTInsertChildren` function inserts a container of atoms as children of a parent atom in another atom container. The following figure shows two example QT atom containers, A and B.
 

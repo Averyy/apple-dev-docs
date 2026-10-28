@@ -21,7 +21,7 @@ Creates an operation for saving and deleting the specified subscriptions.
 - (instancetype) initWithSubscriptionsToSave:(NSArray<CKSubscription *> *) subscriptionsToSave subscriptionIDsToDelete:(NSArray<NSString *> *) subscriptionIDsToDelete;
 ```
 
-#### Discussion
+## Discussion
 
 The subscriptions that you want to save or delete must reside in the same container. CloudKit creates a subscription if you save one that doesn’t already exist. CloudKit returns an error if you try to delete a subscription that doesn’t exist.
 

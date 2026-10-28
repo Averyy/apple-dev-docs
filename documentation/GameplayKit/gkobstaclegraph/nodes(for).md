@@ -24,11 +24,11 @@ func nodes(for obstacle: GKPolygonObstacle) -> [NodeType]
 - (NSArray<GKGraphNode2D *> *) nodesForObstacle:(GKPolygonObstacle *) obstacle;
 ```
 
-#### Return Value
+## Return Value
 
 An array of nodes representing the navigable points nearest to each of the obstacle’s vertices.
 
-#### Discussion
+## Discussion
 
 Adding obstacles to a graph creates additional graph nodes corresponding to the navigable points nearest to each of the obstacle’s vertices. The [`GKObstacleGraph`](../gkobstaclegraph.md) class automatically creates, removes, or rearranges these nodes where necessary, and automatically connects or disconnects other nodes so that no path between nodes passes through an obstacle.
 

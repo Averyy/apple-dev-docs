@@ -25,7 +25,7 @@ func setWeight(_ weight: CGFloat, forTargetAt targetIndex: Int)
 - (void) setWeight:(CGFloat) weight forTargetAtIndex:(NSUInteger) targetIndex;
 ```
 
-#### Discussion
+## Discussion
 
 Target geometries and their weights determine the current form of the surface produced by the morpher. For example, if a morpher has one target whose weight is `0.5`, the form of the resulting surface will be halfway between those of the base geometry and the target geometry.
 

@@ -26,7 +26,7 @@ var isPlaying: Bool { get set }
 @property (getter=isPlaying) BOOL playing;
 ```
 
-#### Discussion
+## Discussion
 
 If the value of this property is [`false`](../../Swift/false.md) (the default), SceneKit does not increment the scene time, so animations associated with the scene do not play. Change this property’s value to [`true`](../../Swift/true.md) to start animating the scene.
 

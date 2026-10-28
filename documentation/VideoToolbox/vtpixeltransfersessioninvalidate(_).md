@@ -24,7 +24,7 @@ func VTPixelTransferSessionInvalidate(_ session: VTPixelTransferSession)
 extern void VTPixelTransferSessionInvalidate(VTPixelTransferSessionRef session);
 ```
 
-#### Discussion
+## Discussion
 
 When you finish with a pixel transfer session you created, call this function to tear it down, and then call [`CFRelease`](../CoreFoundation/cfrelease.md) to release your object reference.
 

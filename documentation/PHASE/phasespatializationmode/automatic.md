@@ -24,7 +24,7 @@ case automatic
 PHASESpatializationModeAutomatic
 ```
 
-#### Discussion
+## Discussion
 
 This setting instructs the framework to automatically set a mode that determines how PHASE positions and orients sound in 3D space. The framework chooses a mode based on the output device:
 

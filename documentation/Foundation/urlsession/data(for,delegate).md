@@ -21,11 +21,11 @@ Downloads the contents of a URL based on the specified URL request and delivers 
 func data(for request: URLRequest, delegate: (any URLSessionTaskDelegate)? = nil) async throws -> (Data, URLResponse)
 ```
 
-#### Return Value
+## Return Value
 
 An asynchronously-delivered tuple that contains the URL contents as a [`Data`](../data.md) instance, and a [`URLResponse`](../urlresponse.md).
 
-#### Discussion
+## Discussion
 
 Use this method to wait until the session finishes transferring data and receive it in a single [`Data`](../data.md) instance. To process the bytes as the session receives them, use [`bytes(for:delegate:)`](./bytes%28for,delegate%29.md).
 

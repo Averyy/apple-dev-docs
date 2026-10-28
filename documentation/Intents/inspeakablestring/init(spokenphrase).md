@@ -25,7 +25,7 @@ convenience init(spokenPhrase: String)
 - (instancetype) initWithSpokenPhrase:(NSString *) spokenPhrase;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized speakable string object.
 

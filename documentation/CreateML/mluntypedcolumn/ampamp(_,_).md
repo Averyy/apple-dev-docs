@@ -20,7 +20,7 @@ Creates a column of Booleans by performing a logical AND operation on each row o
 static func && (a: MLUntypedColumn, b: MLUntypedColumn) -> MLUntypedColumn
 ```
 
-#### Return Value
+## Return Value
 
 A new column of Booleans if the column and value have the same Boolean/integer underlying type; otherwise an invalid column.
 

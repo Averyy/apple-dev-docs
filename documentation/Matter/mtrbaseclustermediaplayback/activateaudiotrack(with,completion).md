@@ -29,7 +29,7 @@ func activateAudioTrack(with params: MTRMediaPlaybackClusterActivateAudioTrackPa
 - (void) activateAudioTrackWithParams:(MTRMediaPlaybackClusterActivateAudioTrackParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This command is used to activate a specific Audio Track for the media being played.
 

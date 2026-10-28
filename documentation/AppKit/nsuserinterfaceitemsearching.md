@@ -19,7 +19,7 @@ protocol NSUserInterfaceItemSearching : NSObjectProtocol
 @protocol NSUserInterfaceItemSearching <NSObject>
 ```
 
-#### Overview
+## Overview
 
 In general, users find the Help search functionality very useful. However, many large apps don’t use Apple Help API because of cross platform requirements, which means that some important Help topics are not presented as part of the Help menu. This API allows developers to incorporate their own Help topics and take full advantage of the Help feature.
 

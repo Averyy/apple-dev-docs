@@ -20,7 +20,7 @@ var descriptor: IOUSBEndpointDescriptor
 IOUSBEndpointDescriptor descriptor;
 ```
 
-#### Discussion
+## Discussion
 
 Initialize this descriptor with a valid [`IOUSBEndpointDescriptor`](../../iokit/iousbendpointdescriptor.md). See USB 3.2, 9.6.6.
 

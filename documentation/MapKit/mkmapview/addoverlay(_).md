@@ -24,7 +24,7 @@ func addOverlay(_ overlay: any MKOverlay)
 - (void) addOverlay:(id<MKOverlay>) overlay;
 ```
 
-#### Discussion
+## Discussion
 
 The map view adds the specified object to the group of overlay objects in the [`MKOverlayLevel.aboveLabels`](../mkoverlaylevel/abovelabels.md) level. Adding an overlay causes the map view to begin monitoring the area that the overlay represents. As soon as the bounding rectangle of an overlay intersects the visible portion of the map, the map view adds a corresponding overlay view to the map. Implement the [`mapView(_:rendererFor:)`](../mkmapviewdelegate/mapview%28_,rendererfor%29.md) method of the map view’s delegate object to provide the overlay view.
 

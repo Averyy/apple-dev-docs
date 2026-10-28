@@ -29,7 +29,7 @@ var parameterDataSizeAndAlign: MTLSizeAndAlign { get }
 
 - [Scaling variable rasterization rate content](../scaling-variable-rasterization-rate-content.md)
 
-#### Discussion
+## Discussion
 
 To convert coordinate values inside your shader, pass the rate map data into the shader in an [`MTLBuffer`](../mtlbuffer.md) instance. The buffer location where you store the parameter information needs at least the size and alignment this property provides.
 

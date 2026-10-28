@@ -25,7 +25,7 @@ var bandwidth: Float { get set }
 @property (nonatomic) float bandwidth;
 ```
 
-#### Discussion
+## Discussion
 
 The value range of values is `0.05` to `5.0` octaves.
 

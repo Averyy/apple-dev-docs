@@ -20,11 +20,11 @@ optional func alertShowHelp(_ alert: NSAlert) -> Bool
 - (BOOL) alertShowHelp:(NSAlert *) alert;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) when the delegate displayed help directly, [`false`](../../Swift/false.md) otherwise. When [`false`](../../Swift/false.md) and the alert has a help anchor ([`helpAnchor`](../nsalert/helpanchor.md)), the application’s help manager displays help using the help anchor.
 
-#### Discussion
+## Discussion
 
 The delegate implements this method only to override the help-anchor lookup behavior.
 

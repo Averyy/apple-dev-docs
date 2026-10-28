@@ -20,11 +20,11 @@ string BrandsReportingCampaign.SystemStatus
 - `RUNNING`: The campaign is actively delivering ads.
 - `NOT_RUNNING`: The campaign isn’t currently delivering. Check `systemStatusReasons` for the cause.
 
-#### Discussion
+## Discussion
 
 This reflects delivery conditions evaluated at the moment the report was generated, separate from the advertiser-set [`BrandsReportingCampaign.Status`](./status-data.typealias.md) reported alongside it.
 
-##### Example
+### Example
 
 ```json
 {

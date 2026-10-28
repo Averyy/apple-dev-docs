@@ -25,7 +25,7 @@ case momentList
 PHCollectionListTypeMomentList
 ```
 
-#### Discussion
+## Discussion
 
 Moment lists include both moment clusters and moment years. Moment clusters appear as “Collections” in the Photos app, grouping individual moments. Years group all moments containing assets created in the same calendar year.
 

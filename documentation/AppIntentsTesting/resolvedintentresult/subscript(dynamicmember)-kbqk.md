@@ -21,7 +21,7 @@ Returns the intent’s output, converted to the inferred type.
 subscript<T>(dynamicMember keyPath: KeyPath<ResolvedIntentResult.ValueKeyPath, Never>) -> T where T : IntentValueConvertible { get throws }
 ```
 
-#### Overview
+## Overview
 
 Access the return value using the `value` key path, for example:
 

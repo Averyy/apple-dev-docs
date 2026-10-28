@@ -19,7 +19,7 @@ var deltaY: CGFloat { get }
 @property (readonly) CGFloat deltaY;
 ```
 
-#### Discussion
+## Discussion
 
 This property is only valid for scroll wheel, mouse-move, mouse-drag, and swipe events. For swipe events, a nonzero value represents a horizontal swipe; `-1.0` corresponds to swipe down and `1.0` corresponds to swipe up.
 

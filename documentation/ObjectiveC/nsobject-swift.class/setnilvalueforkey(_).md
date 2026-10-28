@@ -25,7 +25,7 @@ func setNilValueForKey(_ key: String)
 - (void) setNilValueForKey:(NSString *) key;
 ```
 
-#### Discussion
+## Discussion
 
 Subclasses can override this method to handle the request in some other way, such as by substituting `0` or a sentinel value for `nil` and invoking [`setValue(_:forKey:)`](./setvalue%28_,forkey%29.md) again or setting the variable directly. The default implementation raises an `NSInvalidArgumentException`.
 

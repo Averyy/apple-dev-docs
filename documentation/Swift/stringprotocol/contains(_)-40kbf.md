@@ -21,7 +21,7 @@ Returns `true` if `other` is non-empty and contained within `self` by case-sensi
 func contains<T>(_ other: T) -> Bool where T : StringProtocol
 ```
 
-#### Discussion
+## Discussion
 
 Equivalent to `self.range(of: other) != nil`
 

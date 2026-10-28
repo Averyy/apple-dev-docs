@@ -21,7 +21,7 @@ Checks if the Logger can emit log messages for a given log type. This allows for
 func isEnabled(type: OSLogType) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 True if logging is enabled for the specified log type, false otherwise
 

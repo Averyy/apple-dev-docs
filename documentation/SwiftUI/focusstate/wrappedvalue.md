@@ -21,7 +21,7 @@ The current state value, taking into account whatever bindings might be in effec
 var wrappedValue: Value { get nonmutating set }
 ```
 
-#### Discussion
+## Discussion
 
 When focus is not in any view that is bound to this state, the wrapped value will be `nil` (for optional-typed state) or `false` (for `Bool`- typed state).
 

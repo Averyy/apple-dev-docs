@@ -5,7 +5,7 @@
 
 Support the installation of alternative distribution apps by creating signed JSON web tokens.
 
-#### Overview
+## Overview
 
 To enable app downloads from your website or alternative app marketplace using [MarketplaceKit](./MarketplaceKit.md), your web server supplies a special secure element, or *install verification token*, to the device’s operating system through the app installation process.
 
@@ -17,7 +17,7 @@ The following app download situations require you to create an install verificat
 - [`AppLibrary`](./applibrary.md) methods that install apps from within a marketplace app, for example, [`requestAppInstallation(for:account:installVerificationToken:)`](./applibrary/requestappinstallation%28for,account,installverificationtoken%29.md).
 - [`ActionButton`](./actionbutton.md), through an [`LAContext`](../LocalAuthentication/lacontext.md); see [Installing apps from an alternative marketplace](./installing-apps-from-an-alternative-marketplace.md).
 
-#### Create the JSON web token
+## Create the JSON web token
 
 To create the JWT, define a JWT header and provide key details in the payload.
 
@@ -64,7 +64,7 @@ An example JWT follows:
 
 For sample code and open source tools that assist with JWT creation, see [JWT.io](https://jwt.io).
 
-#### Sign the token and return it in response
+## Sign the token and return it in response
 
 To sign the token, use:
 

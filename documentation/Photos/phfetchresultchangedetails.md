@@ -24,11 +24,11 @@ class PHFetchResultChangeDetails<ObjectType> where ObjectType : PHObject
 @interface PHFetchResultChangeDetails : NSObject
 ```
 
-#### Overview
+## Overview
 
 A [`PHFetchResultChangeDetails`](./phfetchresultchangedetails.md) object provides detailed information about the differences between two fetch results—one that you previously obtained and an updated one that would result if you performed the same fetch again. The change details object provides information useful for updating a UI that lists the contents of a fetch result, such as the indexes of added, removed, and rearranged objects.
 
-##### Processing Changes in Order
+### Processing Changes in Order
 
 PhotoKit describes [`changedIndexes`](./phfetchresultchangedetails/changedindexes.md) in the *after* state, while [`UICollectionView`](../UIKit/uicollectionview.md)w’s [`performBatchUpdates(_:completion:)`](../UIKit/uicollectionview/performbatchupdates%28_,completion%29.md) expects them in the *before* state. As a result, [`changedIndexes`](./phfetchresultchangedetails/changedindexes.md) can’t be used safely inside [`performBatchUpdates(_:completion:)`](../UIKit/uicollectionview/performbatchupdates%28_,completion%29.md).
 

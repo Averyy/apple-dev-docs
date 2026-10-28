@@ -23,7 +23,7 @@ func MIDIThruConnectionSetParams(_ connection: MIDIThruConnectionRef, _ inConnec
 extern OSStatus MIDIThruConnectionSetParams(MIDIThruConnectionRef connection, CFDataRef inConnectionParams);
 ```
 
-#### Return Value
+## Return Value
 
 An `OSStatus` result code.
 

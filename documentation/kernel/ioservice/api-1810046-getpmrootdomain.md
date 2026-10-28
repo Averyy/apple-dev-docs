@@ -12,11 +12,11 @@ static class IOPMrootDomain * getPMRootDomain(
  void );
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to the power management root domain instance. It should not be released by the caller.
 
-#### Overview
+## Overview
 
 This method provides an accessor to the power management root domain instance for the computer.
 

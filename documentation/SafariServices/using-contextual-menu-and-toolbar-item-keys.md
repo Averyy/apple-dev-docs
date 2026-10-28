@@ -5,11 +5,11 @@
 
 Learn about adding contextual menu items and toolbar items to a Safari app extension with information property list keys.
 
-#### Overview
+## Overview
 
 Contextual menu items and toolbar items give you ways to add more menu options and entry points to your Safari app extension. You define and adjust these items using information property list keys.
 
-##### Add context menu items
+### Add context menu items
 
 The `SFSafariContextMenu` key lets your app extension add items to the context menu that appears in webpages. See [Context menus](https://developer.apple.com/design/human-interface-guidelines/macos/menus/contextual-menus/) for design guidelines.
 
@@ -42,7 +42,7 @@ For example, if you add two contextual menu items, your `Info.plist` file might 
 </array>
 ```
 
-##### Add a toolbar item
+### Add a toolbar item
 
 The `SFSafariToolbarItem` dictionary adds a toolbar item to Safari windows. See [Toolbars](https://developer.apple.com/design/human-interface-guidelines/macos/windows-and-views/toolbars/) for design guidelines.
 

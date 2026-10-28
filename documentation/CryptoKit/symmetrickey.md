@@ -21,7 +21,7 @@ A symmetric cryptographic key.
 struct SymmetricKey
 ```
 
-#### Overview
+## Overview
 
 You typically derive a symmetric key from an instance of a shared secret ([`SharedSecret`](./sharedsecret.md)) that you obtain through key agreement. You use a symmetric key to compute a message authentication code like [`HMAC`](./hmac.md), or to open and close a sealed box ([`ChaChaPoly.SealedBox`](./chachapoly/sealedbox.md) or [`AES.GCM.SealedBox`](./aes/gcm/sealedbox.md)) using a cipher like [`ChaChaPoly`](./chachapoly.md) or [`AES`](./aes.md).
 

@@ -21,7 +21,7 @@ enum Category
 enum UIApplicationCategory : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Use the values in this enumeration with [`isDefault(_:)`](./isdefault%28_%29.md) (or, in Objective-C, [`defaultStatusForCategory:error:`](./defaultstatusforcategory_error_.md)) to find if your app is the person’s default for a category.
 

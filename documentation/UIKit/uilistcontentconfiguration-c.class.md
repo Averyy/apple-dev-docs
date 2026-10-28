@@ -19,7 +19,7 @@ A content configuration for a list-based content view.
 @interface UIListContentConfiguration : NSObject
 ```
 
-#### Overview
+## Overview
 
 A list content configuration describes the styling and content for an individual element that might appear in a list, like a cell, header, or footer. Using a list content configuration, you can obtain system default styling for a variety of different view states. You fill the configuration with your content, and then assign it directly to cells, headers, and footers in [`UICollectionView`](./uicollectionview.md) and [`UITableView`](./uitableview.md), or to your own custom list content view ([`UIListContentView`](./uilistcontentview.md)).
 

@@ -20,7 +20,7 @@ class func comment(withStringValue stringValue: String) -> Any
 + (id) commentWithStringValue:(NSString *) stringValue;
 ```
 
-#### Return Value
+## Return Value
 
 An [`XMLNode`](../xmlnode.md) object representing an comment node ([`XMLNode.Kind.comment`](./kind-swift.enum/comment.md)) containing the text `stringValue` or `nil` if the object couldn’t be created. If `stringValue` is `nil` or an empty string, a content-less comment node is returned (`<!--->`).
 

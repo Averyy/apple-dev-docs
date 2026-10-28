@@ -19,11 +19,11 @@ func optionDescriptionsForBinding(_ binding: NSBindingName) -> [NSAttributeDescr
 - (NSArray<NSAttributeDescription *> *) optionDescriptionsForBinding:(NSBindingName) binding;
 ```
 
-#### Return Value
+## Return Value
 
 Returns an array of [`NSAttributeDescription`](../../CoreData/nsattributedescription.md) that describe the options for `binding`.
 
-#### Discussion
+## Discussion
 
 The [`NSAttributeDescription`](../../CoreData/nsattributedescription.md) instances in the array are used by Interface Builder to build the options editor user interface of the bindings inspector.
 

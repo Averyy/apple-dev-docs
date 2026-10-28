@@ -21,7 +21,7 @@ Initializes a textured sprite using an image file.
 + (instancetype) spriteNodeWithImageNamed:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized sprite object.
 

@@ -24,7 +24,7 @@ func cancel()
 - (void) cancel;
 ```
 
-#### Discussion
+## Discussion
 
 GameKit sends a [`GKError.Code.cancelled`](../gkerror/code/cancelled.md) error to the completion handler of either the [`findMatch(for:withCompletionHandler:)`](./findmatch%28for,withcompletionhandler%29.md) or [`findPlayers(forHostedRequest:withCompletionHandler:)`](./findplayers%28forhostedrequest,withcompletionhandler%29.md) method.
 

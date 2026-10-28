@@ -21,7 +21,7 @@ Enqueues an app-defined function for execution at the specified time.
 extern void dispatch_after_f(dispatch_time_t when, dispatch_queue_t queue, void *context, dispatch_function_t work);
 ```
 
-#### Discussion
+## Discussion
 
 This function waits until the specified time and then asynchronously adds the `work` function to the specified `queue`.
 

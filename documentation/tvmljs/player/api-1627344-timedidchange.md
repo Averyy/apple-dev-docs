@@ -15,7 +15,7 @@ An event that happens at a specified interval.
 attribute  timeDidChange;
 ```
 
-#### Discussion
+## Discussion
 
 This event fires every time a set number of seconds, starting from the beginning of the media item or 0 seconds, as specified in the `extraInfo` parameter for the listener, occurs. The listener is passed the following attributes:
 

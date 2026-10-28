@@ -18,7 +18,7 @@ static var optionOnScreenBelowWindow: CGWindowListOption { get }
 kCGWindowListOptionOnScreenBelowWindow
 ```
 
-#### Discussion
+## Discussion
 
 List all windows that are currently onscreen and in behind the window specified in the `relativeToWindow` parameter. Windows are returned in order from front to back.
 

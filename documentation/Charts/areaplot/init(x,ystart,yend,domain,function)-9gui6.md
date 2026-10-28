@@ -24,7 +24,7 @@ init(x: LocalizedStringResource, yStart: LocalizedStringResource, yEnd: Localize
 
 Available when `Content` is `FunctionAreaPlotContent`.
 
-#### Discussion
+## Discussion
 
 Parameters:
 

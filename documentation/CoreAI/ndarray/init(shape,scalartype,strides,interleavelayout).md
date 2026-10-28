@@ -19,7 +19,7 @@ Initialize an NDArray with the provided shape, scalar type, strides, and interle
 init(shape: [Int], scalarType: NDArray.ScalarType, strides: [Int], interleaveLayout: NDArray.InterleaveLayout)
 ```
 
-#### Discussion
+## Discussion
 
 `shape` and `strides` must have the same number of elements.
 

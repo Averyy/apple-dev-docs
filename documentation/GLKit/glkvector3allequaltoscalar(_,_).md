@@ -22,7 +22,7 @@ func GLKVector3AllEqualToScalar(_ vector: GLKVector3, _ value: Float) -> Bool
 static bool GLKVector3AllEqualToScalar(GLKVector3 vector, float value);
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if all of the vector’s components are equal to `value`, [`false`](../Swift/false.md) otherwise.
 

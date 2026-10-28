@@ -21,7 +21,7 @@ A Type-Length-Value (TLV) framing protocol.
 struct TLV
 ```
 
-#### Overview
+## Overview
 
 This protocol will infer the length of the data based on the content passed to it in send.
 

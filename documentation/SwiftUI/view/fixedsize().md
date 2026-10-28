@@ -22,11 +22,11 @@ Fixes this view at its ideal size.
 nonisolated func fixedSize() -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that fixes this view at its ideal size.
 
-#### Discussion
+## Discussion
 
 During the layout of the view hierarchy, each view proposes a size to each child view it contains. If the child view doesn’t need a fixed size it can accept and conform to the size offered by the parent.
 

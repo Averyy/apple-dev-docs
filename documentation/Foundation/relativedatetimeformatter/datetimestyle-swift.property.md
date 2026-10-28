@@ -25,7 +25,7 @@ var dateTimeStyle: RelativeDateTimeFormatter.DateTimeStyle { get set }
 @property NSRelativeDateTimeFormatterStyle dateTimeStyle;
 ```
 
-#### Discussion
+## Discussion
 
 Default is `numeric`.
 

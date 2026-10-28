@@ -24,11 +24,11 @@ func SSLSetSessionOption(_ context: SSLContext, _ option: SSLSessionOption, _ va
 OSStatus SSLSetSessionOption(SSLContextRef context, SSLSessionOption option, Boolean value);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Secure Transport Result Codes](./secure-transport-result-codes.md).
 
-#### Discussion
+## Discussion
 
 This function must be called prior to the [`SSLHandshake(_:)`](./sslhandshake%28_%29.md) function; consequently, this function can be called only when no session is active.
 

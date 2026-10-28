@@ -20,7 +20,7 @@ Returns the names of the fields authored at the given path.
 func fields(at path: USDLayer.Path) -> [USDToken]
 ```
 
-#### Return Value
+## Return Value
 
 The names of the authored fields.
 

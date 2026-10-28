@@ -16,7 +16,7 @@ Returns a token object representing any conversation in progress in the current 
 + (id) currentConversation;
 ```
 
-#### Return Value
+## Return Value
 
 A token object representing any conversation in progress in the current thread, or `nil` if there is no conversation in progress.
 

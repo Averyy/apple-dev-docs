@@ -5,17 +5,17 @@
 
 Upload and distribute Safari Web Extensions without using a Mac or Xcode.
 
-#### Overview
+## Overview
 
 The Safari web extension packager enables you to package and distribute your Safari extensions using App Store Connect from any web browser, without requiring a Mac or access to Xcode. After packaging your extension, you can use TestFlight to test your extension or submit it to the App Store for distribution.
 
 Safari web extension packager is also available as a command line tool which you can use alongside Xcode on a Mac. To learn more about using the command line tool, see [Packaging a web extension for Safari](./packaging-a-web-extension-for-safari.md).
 
-##### Create an Apple Developer account
+### Create an Apple Developer account
 
 To access and use the Safari Extension Packager, you need to enroll your Apple account in the Apple Developer Program. For details on how to create an Apple Account and enroll in the Apple Developer program, see [Apple Developer Program enrollment](https://developer.apple.com/programs/enroll/)
 
-##### Create an app record
+### Create an app record
 
 To create an app record, the Account Holder, Admin, or an App Manager opens [App Store Connect](https://appstoreconnect.apple.com/). Alternately, a team member with a Developer or Marketing role with access to create app records in App Store Connect can create this app record.
 
@@ -37,7 +37,7 @@ For more information about creating an app record, see [Add a new app](https://d
 
 ![A screenshot of the App Store Connect website.](https://developer.apple.com/tutorials/images/com.apple.safariservices/safari-web-extension-packager-create-app-record.png)
 
-##### Package the extension files
+### Package the extension files
 
 After creating an app record, navigate to Users and Access. If you don’t see Users and Access, click the More button (…) to show it. In Users and Access, click the Xcode Cloud tab, select Safari Web Extension Packager, and click Upload.
 
@@ -51,7 +51,7 @@ Review any reported exceptions, and see [Assessing your Safari web extension’s
 
 ![A screenshot of the Safari web extension packager tool. The Upload Web Extension screen is open for someone to upload their web extension resources zip file.](https://developer.apple.com/tutorials/images/com.apple.safariservices/safari-web-extension-packager-upload-extension-files.png)
 
-##### Distribute to beta testers with TestFlight
+### Distribute to beta testers with TestFlight
 
 Use TestFlight to distribute beta builds of your app and extension, manage beta testers, and collect feedback. Make improvements to your extension and continue distributing builds until all issues are resolved before submitting your extension for App Store review and distribution.
 
@@ -59,7 +59,7 @@ For more information, see [TestFlight overview](https://developer.apple.com/help
 
 ![A screenshot of the TestFlight tab in App Store Connect. Available builds of the app and testing status are viewable.](https://developer.apple.com/tutorials/images/com.apple.safariservices/safari-web-extension-packager-testflight.png)
 
-##### Distribute on the App Store
+### Distribute on the App Store
 
 Before submitting your app to the App Store for review, confirm that it’s ready for public release and that you’re making the most of your product page.
 

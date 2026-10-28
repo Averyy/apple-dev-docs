@@ -21,7 +21,7 @@ var title: String? { get set }
 @property (copy, nullable) NSString * title;
 ```
 
-#### Discussion
+## Discussion
 
 If an image is also set, the title appears to the right of the image.
 

@@ -25,7 +25,7 @@ var kvImageDoNotClamp: Int { get }
 kvImageDoNotClamp
 ```
 
-#### Discussion
+## Discussion
 
 Use this flag if the input data describes values outside `[0,1]` that should be preserved.
 

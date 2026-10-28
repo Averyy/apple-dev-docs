@@ -15,7 +15,7 @@ The type of markers for the ruler.
 @property NSAccessibilityRulerMarkerType accessibilityRulerMarkerType;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property on a ruler element. For a complete list of marker types, see [`NSAccessibilityRulerMarkerType`](../nsaccessibilityrulermarkertype.md).
 

@@ -19,7 +19,7 @@ class NSPredicateEditorRowTemplate
 @interface NSPredicateEditorRowTemplate : NSObject
 ```
 
-#### Overview
+## Overview
 
 You can create instances of `NSPredicateEditorRowTemplate` programmatically or in Interface Builder. By default, a noncompound row template has three views: a popup (or static text field) on the left, a popup or static text field for operators, and either a popup or other view on the right.  You can subclass `NSPredicateEditorRowTemplate` to create a row template with different numbers or types of views.
 

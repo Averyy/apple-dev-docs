@@ -22,7 +22,7 @@ var allowsCopyingTokens: Bool { get set }
 @property (nonatomic) BOOL allowsCopyingTokens;
 ```
 
-#### Discussion
+## Discussion
 
 The default value for this property is [`true`](../../Swift/true.md).
 

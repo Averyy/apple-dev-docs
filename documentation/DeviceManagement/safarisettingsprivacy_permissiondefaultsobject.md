@@ -18,7 +18,7 @@ The dictionary of website permission defaults. Each key in the dictionary repres
 object SafariSettingsPrivacy_PermissionDefaultsObject
 ```
 
-#### Discussion
+## Discussion
 
 Safari supports the following patterns for the website key:
 

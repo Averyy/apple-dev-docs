@@ -19,7 +19,7 @@ The font for the label.
 @property (nonatomic, strong) UIFont * font;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is the preferred font for [`body`](../uifont/textstyle/body.md).
 

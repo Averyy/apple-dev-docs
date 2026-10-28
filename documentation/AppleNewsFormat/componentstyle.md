@@ -25,13 +25,13 @@ object ComponentStyle
 - [Defining and Using Table Styles](../AppleNews/defining-and-using-table-styles.md)
 - [Supporting Dark Mode for Your Article](../AppleNews/supporting-dark-mode-for-your-article.md)
 
-#### Discussion
+## Discussion
 
 Use the `ComponentStyle` object to define the visual appearance of a component, including its background color, fill, opacity, borders, and table style.
 
 You can use this object in [`Component`](./component.md) and [`ArticleDocument.componentStyles`](./articledocument/componentstyles-data.dictionary.md).
 
-##### Example
+### Example
 
 ```json
 {

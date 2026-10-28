@@ -20,7 +20,7 @@ unowned(unsafe) var textField: NSTextField? { get set }
 @property (assign, nullable) NSTextField * textField;
 ```
 
-#### Discussion
+## Discussion
 
 This property is typically configured when the row is created in the [`NSTableViewDelegate`](../nstableviewdelegate.md) protocol method [`tableView(_:viewFor:row:)`](../nstableviewdelegate/tableview%28_,viewfor,row%29.md).
 

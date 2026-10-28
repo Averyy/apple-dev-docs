@@ -20,7 +20,7 @@ var worldMappingStatus: ARFrame.WorldMappingStatus { get }
 @property (nonatomic, readonly) ARWorldMappingStatus worldMappingStatus;
 ```
 
-#### Discussion
+## Discussion
 
 Every world-tracking session builds an internal world map, which ARKit uses to determine the device’s position in the user’s environment. You can save a snapshot of that internal state as an [`ARWorldMap`](../arworldmap.md) object, which you can use later to resume the saved session or share between devices to create a multiuser AR experience.
 

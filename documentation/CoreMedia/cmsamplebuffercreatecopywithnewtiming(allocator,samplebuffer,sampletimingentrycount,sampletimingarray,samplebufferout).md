@@ -25,11 +25,11 @@ func CMSampleBufferCreateCopyWithNewTiming(allocator: CFAllocator?, sampleBuffer
 extern OSStatus CMSampleBufferCreateCopyWithNewTiming(CFAllocatorRef allocator, CMSampleBufferRef originalSBuf, CMItemCount numSampleTimingEntries, const CMSampleTimingInfo *sampleTimingArray, CMSampleBufferRef*sampleBufferOut);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Sample Buffer Error Codes](./sample-buffer-errors.md).
 
-#### Discussion
+## Discussion
 
 This emulates `CMSampleBufferCreateCopy`, but changes the timing. The array parameters, `sampleTimingArray`, should have only one element if that same element applies to all samples.
 

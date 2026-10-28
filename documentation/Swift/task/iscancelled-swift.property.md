@@ -23,13 +23,13 @@ var isCancelled: Bool { get }
 
 Available when `Success` conforms to `Sendable` and `Failure` conforms to `Error`.
 
-#### Discussion
+## Discussion
 
 After the value of this property becomes `true`, it remains `true` indefinitely. There is no way to uncancel a task.
 
 This property returns the actual cancellation state of the task, regardless of whether a cancellation shield is active. Use [`isCancelled`](./iscancelled-swift.type.property.md) (the static property) if you need cancellation checking that respects active shields.
 
-##### Instance property isCancelled ignores Task Cancellation Shields
+### Instance property isCancelled ignores Task Cancellation Shields
 
 The instance property [`isCancelled`](./iscancelled-swift.property.md) is not contextual and therefore does not respect cancellation shields. If a task was cancelled and is executing with an active cancellation shield, these properties will return the *actual* cancellation status of the specific task.
 

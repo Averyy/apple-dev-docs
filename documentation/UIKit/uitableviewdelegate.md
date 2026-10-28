@@ -24,7 +24,7 @@ protocol UITableViewDelegate : UIScrollViewDelegate
 @protocol UITableViewDelegate <NSObject, UIScrollViewDelegate>
 ```
 
-#### Overview
+## Overview
 
 Use the methods of this protocol to manage the following features:
 

@@ -17,7 +17,7 @@ Specifies a miter line shape of the joints between connected segments of a strok
 static const NSLineJoinStyle NSMiterLineJoinStyle;
 ```
 
-#### Discussion
+## Discussion
 
 Here is an example of the appearance of this style:
 

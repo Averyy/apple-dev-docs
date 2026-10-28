@@ -15,7 +15,7 @@ Method call to convert an IOBluetoothSDPUUIDRef into an IOBluetoothSDPUUID *.
 + (instancetype) withSDPUUIDRef:(IOBluetoothSDPUUIDRef) sdpUUIDRef;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the IOBluetoothSDPUUID * for the given IOBluetoothSDPUUIDRef.
 

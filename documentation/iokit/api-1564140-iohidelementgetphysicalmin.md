@@ -16,11 +16,11 @@ Returns the scaled minimum value possible for the element.
 CFIndex IOHIDElementGetPhysicalMin(IOHIDElementRef element);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the physical minimum.
 
-#### Discussion
+## Discussion
 
 Minimum value for the physical extent of a variable element. This represents the value for the logical minimum with units applied to it.
 

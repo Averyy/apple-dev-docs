@@ -17,7 +17,7 @@ Returns the document object for the file in which the document data is stored.
 - (id) documentForFileName:(NSString *) fileName;
 ```
 
-#### Discussion
+## Discussion
 
 The `fileName` argument is a fully qualified path in the file system. Returns `nil` if no document can be found.
 

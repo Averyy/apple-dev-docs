@@ -23,7 +23,7 @@ optional func webExtensionController(_ controller: WKWebExtensionController, ope
 - (NSArray<id<WKWebExtensionWindow>> *) webExtensionController:(WKWebExtensionController *) controller openWindowsForExtensionContext:(WKWebExtensionContext *) extensionContext;
 ```
 
-#### Discussion
+## Discussion
 
 This method should be implemented by the app to provide the extension with the ordered open windows. Depending on your app’s requirements, you may return different windows for each extension or the same windows for all extensions. The first window in the returned array must correspond to the currently focused window and match the result of [`webExtensionController(_:focusedWindowFor:)`](./webextensioncontroller%28_,focusedwindowfor%29.md).
 

@@ -19,7 +19,7 @@ func prepare(_ sharingServicePicker: NSSharingServicePicker)
 - (void) prepareSharingServicePicker:(NSSharingServicePicker *) sharingServicePicker;
 ```
 
-#### Discussion
+## Discussion
 
 Override this method, as needed, and use it to configure the sharing service picker before AppKit displays it. The default implementation of this method does nothing. You might customize the contents of the share menu or provide a custom delegate for the chosen sharing service. You can get the default sharing menu item by calling [`standardShareMenuItem()`](../nsdocumentcontroller/standardsharemenuitem%28%29.md) on the current document controller.
 

@@ -16,11 +16,11 @@ Returns a dictionary listing all assertions, grouped by their owning process.
 IOReturn IOPMCopyAssertionsByProcess(CFDictionaryRef *AssertionsByPID);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess on success.
 
-#### Discussion
+## Discussion
 
 Notes: One process may have multiple assertions. Several processes may have asserted the same assertion to different levels.
 

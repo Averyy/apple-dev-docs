@@ -20,11 +20,11 @@ func vmnet_interface_set_event_callback(_ interface: interface_ref, _ event_mask
 vmnet_return_t vmnet_interface_set_event_callback(interface_ref interface, interface_event_t event_mask, dispatch_queue_t queue, vmnet_interface_event_callback_t callback);
 ```
 
-#### Return Value
+## Return Value
 
 Returns `vmnet` on success, or an error code on failure. See `vmnet` for possible values.
 
-#### Discussion
+## Discussion
 
 Once the block is set, the callback can be unset by calling the function again, specifying a `NULL` queue and a `NULL` handler.
 

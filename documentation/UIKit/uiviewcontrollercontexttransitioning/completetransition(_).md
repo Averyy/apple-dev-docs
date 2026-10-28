@@ -24,7 +24,7 @@ func completeTransition(_ didComplete: Bool)
 - (void) completeTransition:(BOOL) didComplete;
 ```
 
-#### Discussion
+## Discussion
 
 You must call this method after your animations have completed to notify the system that the transition animation is done. The parameter you pass must indicate whether the animations completed successfully. For interactive animations, you must call this method in addition to the [`finishInteractiveTransition()`](./finishinteractivetransition%28%29.md) or [`cancelInteractiveTransition()`](./cancelinteractivetransition%28%29.md) method. The best place to call this method is in the completion block of your animations.
 

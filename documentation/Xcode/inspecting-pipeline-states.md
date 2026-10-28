@@ -5,7 +5,7 @@
 
 Determine how your render and compute passes behave by examining their properties.
 
-#### Overview
+## Overview
 
 The Metal debugger allows you to inspect a pipeline state with the Pipeline State viewer. Double-click a pipeline state to open it and view its associated properties in a table.
 
@@ -15,7 +15,7 @@ In the screenshot above, the name of the pipeline state, G-buffer Creation, appe
 
 The table displays the properties of your pipeline state in a logical hierarchy. Click the disclosure controls on the left to expand the groups to view more information. Using the table, you can quickly inspect the properties of [`MTLRenderPipelineState`](../Metal/mtlrenderpipelinestate.md) or [`MTLComputePipelineState`](../Metal/mtlcomputepipelinestate.md).
 
-##### Limit your scope with filters
+### Limit your scope with filters
 
 Use the filter field at the bottom of the Pipeline State viewer to adjust the filtering criteria by typing filter terms into it. Then the table displays the related pipeline state properties that match the filter terms, and highlights the matches.
 

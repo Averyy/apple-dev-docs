@@ -30,11 +30,11 @@ struct FileProvider<Snapshot> where Snapshot : FileConfigSnapshot
 - [Example use cases](./example-use-cases.md)
 - [Troubleshooting and access reporting](./troubleshooting.md)
 
-#### Overview
+## Overview
 
 `FileProvider` is a generic file-based configuration provider that works with different file formats by using different snapshot types that conform to [`FileConfigSnapshot`](./fileconfigsnapshot.md). This allows for a unified interface for reading JSON, YAML, or other structured configuration files.
 
-#### Usage
+## Usage
 
 Create a provider by specifying the snapshot type and file path:
 
@@ -52,7 +52,7 @@ let yamlProvider = try await FileProvider<YAMLSnapshot>(
 
 The provider reads the file once during initialization and creates an immutable snapshot of the configuration values. For auto-reloading behavior, use [`ReloadingFileProvider`](./reloadingfileprovider.md).
 
-#### Configuration from a reader
+## Configuration from a reader
 
 You can also initialize the provider using a configuration reader that specifies the file path through environment variables or other configuration sources:
 

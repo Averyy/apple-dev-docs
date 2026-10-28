@@ -6,7 +6,7 @@
 
 A set of 32-bit flags that encode information about the control settings of the object.
 
-#### Overview
+## Overview
 
 The `controlSettings` field of the object sample atom is a long integer that specifies a set of control settings for an object node. Control settings specify whether the object can wrap during panning and tilting, as well as other features of the node. The control settings are specified using these bit flags:
 

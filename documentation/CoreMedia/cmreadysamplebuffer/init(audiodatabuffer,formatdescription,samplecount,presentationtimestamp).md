@@ -23,7 +23,7 @@ init(audioDataBuffer content: Content, formatDescription: CMAudioFormatDescripti
 
 Available when `Content` is `CMReadOnlyDataBlockBuffer`.
 
-#### Discussion
+## Discussion
 
 Use this init when the audio format is a linear PCM format or a constant bit rate (CBR) format. The `AudioStreamBasicDescription` in the format is used along with `sampleCount` & `presentationTimeStamp` to calculate the sample size & timings. The `AudioStreamBasicDescription/mBytesPerPacket` in the format description must be 0 for this init to consider it as a valid format. Otherwise, `init(compressedAudioDataBuffer:formatDescription:presentationTime:packetDescriptions:)` must be used along with a valid packet description array.
 

@@ -9,7 +9,7 @@ Search for geographic locations for use in ad group geo targeting.
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 This endpoint returns a list of geographic locations matching the search criteria. To discover valid geo location identifiers by name before assigning targets to an ad group, use this endpoint. For ID-based lookup of known locations, use the POST endpoint `POST /v1/search/geo` ([`Query Geo Locations`](./gets-a-list-of-geo-locations.md)) instead.
 
@@ -17,11 +17,11 @@ The API sorts results alphabetically by `displayName` and paginates them. Each r
 
 Every request requires `supplySource`, which determines which `entity` types are available. See the `supplySource` parameter below for details.
 
-#### Payload Examples
+## Payload Examples
 
 **Search by Name**:
 
-##### Request
+### Request
 
 Search for localities matching “San Francisco” in the US for App Store campaigns.
 
@@ -29,7 +29,7 @@ Search for localities matching “San Francisco” in the US for App Store campa
 GET /v1/search/geo?query=San%20Francisco&entity=Locality&countrycode=US&supplySource=APPSTORE
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -63,7 +63,7 @@ GET /v1/search/geo?query=San%20Francisco&entity=Locality&countrycode=US&supplySo
 
 **All States**:
 
-##### Request
+### Request
 
 Return all admin areas (states) in the US for Maps campaigns. Omit `query` to return every match.
 
@@ -71,7 +71,7 @@ Return all admin areas (states) in the US for Maps campaigns. Omit `query` to re
 GET /v1/search/geo?entity=AdminArea&countrycode=US&supplySource=MAPS
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -103,7 +103,7 @@ GET /v1/search/geo?entity=AdminArea&countrycode=US&supplySource=MAPS
 
 **Eligible Only**:
 
-##### Request
+### Request
 
 Search for localities in New York, excluding soft-blocked geos.
 
@@ -111,7 +111,7 @@ Search for localities in New York, excluding soft-blocked geos.
 GET /v1/search/geo?query=New%20York&entity=Locality&countrycode=US&supplySource=APPSTORE&eligible=true
 ```
 
-##### Response
+### Response
 
 ```json
 {

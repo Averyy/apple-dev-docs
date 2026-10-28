@@ -6,7 +6,7 @@
 
 An atom that indicates a default subtitle track for a selected sound track.
 
-#### Overview
+## Overview
 
 Sound tracks can have a track reference of type `'folw'` (for “follows”) to a single subtitle track from among the subtitle tracks in the same alternate group; this subtitle track should be considered the default to select if the sound track is selected. Use this only if compatibility between language tags is not possible for some reason making it impossible to otherwise select a default track. See [Preparing sound and subtitle alternate groups for use with Apple devices](./preparing_sound_and_subtitle_alternate_groups_for_use_with_apple_devices.md) for related information.
 

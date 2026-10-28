@@ -15,7 +15,7 @@ The request body you use to create an alternative distribution package.
 object AlternativeDistributionPackageCreateRequest
 ```
 
-#### Discussion
+## Discussion
 
 Use this object to create a new alternative distribution package in App Store Connect. For more information about the request that includes this request body, see [`Create an Alternative Distribution Package`](./post-v1-alternativedistributionpackages.md).
 

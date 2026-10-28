@@ -15,11 +15,11 @@ Wait for I/O on a buffer to complete.
 errno_t buf_biowait(buf_t bp);
 ```
 
-#### Return Value
+## Return Value
 
 0 for a successful wait; nonzero the buffer has been marked as EINTR or had an error set on it.
 
-#### Discussion
+## Discussion
 
 Waits for I/O on a buffer to finish, as marked by a buf_biodone() call.
 

@@ -14,7 +14,7 @@ func simd_quaternion(_ from: simd_half3, _ to: simd_half3) -> simd_quath
 static simd_quath simd_quaternion(simd_half3 from, simd_half3 to);
 ```
 
-#### Discussion
+## Discussion
 
 Construct a quaternion that rotates from one vector to another.
 

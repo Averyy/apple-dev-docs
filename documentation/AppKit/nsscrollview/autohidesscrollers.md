@@ -19,7 +19,7 @@ var autohidesScrollers: Bool { get set }
 @property BOOL autohidesScrollers;
 ```
 
-#### Discussion
+## Discussion
 
 The horizontal and vertical scroll bars are hidden independently of each other. When the value of this property is [`true`](../../Swift/true.md) and the content of the scroll view doesn’t extend beyond the size of the clip view on a given axis, the scroller on that axis is removed to leave more room for the content.
 

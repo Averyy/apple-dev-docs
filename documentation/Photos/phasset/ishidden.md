@@ -24,7 +24,7 @@ var isHidden: Bool { get }
 @property (nonatomic, assign, readonly, getter=isHidden) BOOL hidden;
 ```
 
-#### Discussion
+## Discussion
 
 Hidden assets are only available in the hidden Smart Album or in user Smart Albums. To include these assets, use the [`includeHiddenAssets`](../phfetchoptions/includehiddenassets.md) fetch option.
 

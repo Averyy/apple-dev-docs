@@ -17,7 +17,7 @@ Returns a function that computes the gradient and result of `f`, computing the g
 func valueAndGrad<T>(_ f: @escaping (NestedDictionary<String, MLXArray>, T) -> [MLXArray]) -> (NestedDictionary<String, MLXArray>, T) -> ([MLXArray], NestedDictionary<String, MLXArray>)
 ```
 
-#### Discussion
+## Discussion
 
 Note that this allows any parameters `<T>` s they will not be part of the gradient.
 

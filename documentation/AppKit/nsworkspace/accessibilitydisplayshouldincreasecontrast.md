@@ -19,7 +19,7 @@ var accessibilityDisplayShouldIncreaseContrast: Bool { get }
 @property (readonly) BOOL accessibilityDisplayShouldIncreaseContrast;
 ```
 
-#### Discussion
+## Discussion
 
 When this method returns [`true`](../../Swift/true.md), present a high-contrast UI. For example, use a less subtle color palette or bolder lines.
 

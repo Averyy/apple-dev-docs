@@ -19,7 +19,7 @@ A configuration that specifies the appearance and behavior of a button and its c
 struct Configuration
 ```
 
-#### Overview
+## Overview
 
 You can configure and update a button with a [`UIButton.Configuration`](./configuration-swift.struct.md). A button configuration contains all the customization options available with other methods, such as [`setTitle(_:for:)`](./settitle%28_,for%29.md), and can serve as a replacement for those methods. Alternatively, you can use a configuration in combination with these other methods and adopt new button behaviors and appearance without rewriting your customized [`UIButton`](../uibutton.md) code.
 

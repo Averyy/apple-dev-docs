@@ -25,7 +25,7 @@ case noTasksInApp
 INDeleteTasksTaskUnsupportedReasonNoTasksInApp
 ```
 
-#### Discussion
+## Discussion
 
 Use this reason when there are no tasks in the app. If tasks exist, but do not match the user’s intent, use [`INDeleteTasksTaskUnsupportedReason.noTasksFound`](./notasksfound.md)
 

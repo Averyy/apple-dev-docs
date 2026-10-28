@@ -25,7 +25,7 @@ func performCustomValidation(forMapping mapping: NSEntityMapping, manager: NSMig
 - (BOOL) performCustomValidationForEntityMapping:(NSEntityMapping *) mapping manager:(NSMigrationManager *) manager error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called before the default save validation is performed by the framework.
 

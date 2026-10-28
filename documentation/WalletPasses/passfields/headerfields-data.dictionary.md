@@ -21,7 +21,7 @@ object PassFields.HeaderFields
 
 - [Supporting semantic tags in Wallet passes](../supporting-semantic-tags-in-wallet-passes.md)
 
-#### Discussion
+## Discussion
 
 Use this field for essential information that must remain visible when Wallet collapses the pass.
 

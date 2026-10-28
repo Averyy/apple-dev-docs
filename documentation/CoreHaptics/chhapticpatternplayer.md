@@ -28,7 +28,7 @@ protocol CHHapticPatternPlayer : NSObjectProtocol
 
 - [Playing a single-tap haptic pattern](./playing-a-single-tap-haptic-pattern.md)
 
-#### Overview
+## Overview
 
 Create instances of a pattern player through a [`CHHapticEngine`](./chhapticengine.md) object by calling a factory method such as [`makePlayer(with:)`](./chhapticengine/makeplayer%28with%29.md). When you ask a pattern player to play a haptic pattern, the player submits those commands to the haptic engine on your behalf.
 

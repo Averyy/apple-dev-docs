@@ -20,11 +20,11 @@ init(name: String, transform: simd_float4x4)
 - (instancetype) initWithName:(NSString *) name transform:(simd_float4x4) transform;
 ```
 
-#### Discussion
+## Discussion
 
 World coordinate space in ARKit always follows a right-handed convention, but is oriented based on the session configuration. For details, see [Understanding World Tracking](../understanding-world-tracking.md).
 
-#### Discussion
+## Discussion
 
 Use the [`add(anchor:)`](../arsession/add%28anchor%29.md) method to begin tracking your custom anchor in an AR session.
 

@@ -21,7 +21,7 @@ The system determines the alignment.
 static let automatic: ToolbarTitleAlignment
 ```
 
-#### Discussion
+## Discussion
 
 The system chooses an alignment based on the context the title is rendered in.
 

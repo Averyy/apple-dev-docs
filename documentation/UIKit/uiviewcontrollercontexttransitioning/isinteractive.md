@@ -24,7 +24,7 @@ var isInteractive: Bool { get }
 @property (nonatomic, readonly, getter=isInteractive) BOOL interactive;
 ```
 
-#### Discussion
+## Discussion
 
 A transition is interactive only if the view controller’s delegate provides a corresponding interactive animator object.
 

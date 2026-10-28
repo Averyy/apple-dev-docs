@@ -25,7 +25,7 @@ var mediaContentTitle: String? { get set }
 @property (nonatomic, copy, readwrite, nullable) NSString * mediaContentTitle;
 ```
 
-#### Discussion
+## Discussion
 
 Your app’s extension sets a value for this property to communicate to the system the particular media that the device currently plays. The system displays the information to the user in a Now Playing view in the picker UI.
 

@@ -25,7 +25,7 @@ func read(into buffer: AVAudioPCMBuffer) throws
 - (BOOL) readIntoBuffer:(AVAudioPCMBuffer *) buffer error:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 When reading sequentially from the [`framePosition`](./frameposition.md) property, the method attempts to fill the buffer to its capacity. On return, the buffer’s [`length`](./length.md) property indicates the number of sample frames it successfully reads.
 

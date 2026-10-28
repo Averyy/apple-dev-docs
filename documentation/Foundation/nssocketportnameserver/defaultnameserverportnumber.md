@@ -17,7 +17,7 @@ Returns the port number used to contact the name server.
 @property uint16_t defaultNameServerPortNumber;
 ```
 
-#### Return Value
+## Return Value
 
 The port number used to contact the name server. This value is currently ignored.
 

@@ -24,7 +24,7 @@ let kVTVideoEncoderList_DisplayName: CFString
 extern CFStringRef const kVTVideoEncoderList_DisplayName;
 ```
 
-#### Discussion
+## Discussion
 
 The associated value is a [`CFString`](../CoreFoundation/cfstring.md) with the encoder’s display name.
 

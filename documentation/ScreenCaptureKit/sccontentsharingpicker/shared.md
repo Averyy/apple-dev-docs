@@ -24,7 +24,7 @@ class var shared: SCContentSharingPicker { get }
 @property (class, readonly) SCContentSharingPicker * sharedPicker;
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  Use this shared instance of the system picker rather than creating your own.
 

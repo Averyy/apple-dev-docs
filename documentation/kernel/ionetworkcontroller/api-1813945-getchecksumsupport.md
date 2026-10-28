@@ -14,11 +14,11 @@ virtual IOReturn getChecksumSupport(
  boolisOutput );
 ```
 
-#### Return Value
+## Return Value
 
 Default return is kIOReturnUnsupported. Controllers that override this method must return kIOReturnSuccess. Any other return value will be interpretated as a lack of checksum support, regardless of the value returned through the first argument.
 
-#### Overview
+## Overview
 
 A network controller that is capable of inserting and verifying checksums on output and input packets, should override this method and advertise its capability in order to assist or offload the software checksum calculations performed by the protocol stacks.
 

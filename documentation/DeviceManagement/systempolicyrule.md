@@ -15,7 +15,7 @@ The payload that configures the system policy.
 object SystemPolicyRule
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.systempolicy.rule` as the payload type.
 
@@ -23,7 +23,7 @@ This payload allows control over Gatekeeper’s system policy rules. The keys an
 
 This payload can only exist in a device profile. If the payload is present in a user profile, an error occurs during installation and the profile installation fails.
 
-##### Profile availability
+### Profile availability
 
 |  |  |
 | --- | --- |
@@ -35,7 +35,7 @@ This payload can only exist in a device profile. If the payload is present in a 
 | Allowed in user enrollment | N/A |
 | Allow multiple payloads | macOS |
 
-##### Profile example
+### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>

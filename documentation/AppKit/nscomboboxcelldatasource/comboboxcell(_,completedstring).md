@@ -19,11 +19,11 @@ optional func comboBoxCell(_ comboBoxCell: NSComboBoxCell, completedString uncom
 - (NSString *) comboBoxCell:(NSComboBoxCell *) comboBoxCell completedString:(NSString *) uncompletedString;
 ```
 
-#### Return Value
+## Return Value
 
 The completed string, from the items in the pop-up list, that matches the text entered by the user. Your implementation should return the first complete string that starts with `uncompletedString`.
 
-#### Discussion
+## Discussion
 
 An `NSComboBoxCell` object uses this method to perform incremental—or “smart”—searches when the user types into the text field.
 

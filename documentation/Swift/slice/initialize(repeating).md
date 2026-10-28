@@ -23,7 +23,7 @@ func initialize<Element>(repeating repeatedValue: Element) where Base == UnsafeM
 
 Available when `Base` conforms to `Collection`.
 
-#### Discussion
+## Discussion
 
 The destination memory must be uninitialized or the buffer’s `Element` must be a trivial type. After a call to `initialize(repeating:)`, the entire region of memory referenced by this buffer slice is initialized.
 

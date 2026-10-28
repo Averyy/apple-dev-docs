@@ -19,11 +19,11 @@ func PMCGImageCreateWithEPSDataProvider(_ epsDataProvider: CGDataProvider?, _ ep
 CGImageRef PMCGImageCreateWithEPSDataProvider(CGDataProviderRef epsDataProvider, CGImageRef epsPreview);
 ```
 
-#### Return Value
+## Return Value
 
 An image capable of rendering either the EPS content or the proxy image, depending upon the capabilities of the destination printer.
 
-#### Discussion
+## Discussion
 
 It is likely that data will not be read from the EPS data provider until after this function returns. You should be careful not to free the underlying EPS data until the data provider's release function is invoked. Similarly, do not free the preview image data until the image data provider's release function is invoked. You are responsible for releasing the data providers for the EPS image and the EPS preview image.
 

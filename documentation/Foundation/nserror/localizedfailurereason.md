@@ -25,7 +25,7 @@ var localizedFailureReason: String? { get }
 @property (copy, readonly, nullable) NSString * localizedFailureReason;
 ```
 
-#### Discussion
+## Discussion
 
 The object in the user info dictionary for the key [`NSLocalizedFailureReasonErrorKey`](../nslocalizedfailurereasonerrorkey.md).
 

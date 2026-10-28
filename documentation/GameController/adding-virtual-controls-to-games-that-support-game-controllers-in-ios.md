@@ -5,11 +5,11 @@
 
 Use touch input and virtual controllers to make your game available to players without controllers.
 
-#### Overview
+## Overview
 
 Many people play games on iOS devices without using a physical controller. You can make your game available to them by adding virtual touch controls, even if you designed your game for a physical controller. The [`GCVirtualController`](./gcvirtualcontroller.md) class leverages the Game Controller framework and optionally provides a default user interface. [`GCVirtualController`](./gcvirtualcontroller.md) can also render custom controls.
 
-##### Create a custom view controller subclass
+### Create a custom view controller subclass
 
 A Metal-based game typically presents content in a [`UIView`](../UIKit/uiview.md). An instance of [`UIViewController`](../UIKit/uiviewcontroller.md), known as the root view controller, manages the [`UIView`](../UIKit/uiview.md). Your root view controller is responsible for the [`GCVirtualController`](./gcvirtualcontroller.md) instance. To take responsibility, subclass from [`GCEventViewController`](./gceventviewcontroller.md) rather than [`UIViewController`](../UIKit/uiviewcontroller.md).
 
@@ -19,7 +19,7 @@ To create a custom subclass of [`UIViewController`](../UIKit/uiviewcontroller.md
 
 If the game uses a storyboard, [update your main scene](https://developer.apple.com/library/archive/featuredarticles/ViewControllerPGforiPhoneOS/DefiningYourSubclass.html) to use a new view controller class derived from [`GCEventViewController`](./gceventviewcontroller.md). Alternatively, if the game creates a root view controller programmatically, then update the code to create an instance of a new subclass derived from [`GCEventViewController`](./gceventviewcontroller.md).
 
-##### Configure the virtual controller
+### Configure the virtual controller
 
 When you connect a [`GCVirtualController`](./gcvirtualcontroller.md), a new [`GCController`](./gccontroller.md) appears in the controllers array. The elements that this controller supports are controlled by the configuration created for [`GCVirtualController`](./gcvirtualcontroller.md). To configure a virtual controller, follow these steps:
 
@@ -49,7 +49,7 @@ When you connect a [`GCVirtualController`](./gcvirtualcontroller.md), a new [`GC
 }
 ```
 
-##### Show and hide the virtual controller
+### Show and hide the virtual controller
 
 If there are no physical controllers connected, the game shows the virtual controller by default. If the player connects a physical controller, the game hides the virtual controller.
 
@@ -92,7 +92,7 @@ To hide the virtual controller when a player connects a physical controller, cal
 }
 ```
 
-##### Show and hide controls
+### Show and hide controls
 
 When the player can’t perform certain actions in the game, hide the corresponding control elements using the [`updateConfiguration(forElement:configuration:)`](./gcvirtualcontroller/updateconfiguration%28forelement,configuration%29.md) method. For example, during cutscene playback, the player can only press a button to skip playback.
 
@@ -119,7 +119,7 @@ When the player can’t perform certain actions in the game, hide the correspond
 }
 ```
 
-##### Render custom virtual touch controls
+### Render custom virtual touch controls
 
 For better immersion and performance, the game can render a custom virtual controller instead of the default. Custom controls render symbols that represent their mapped actions rather than generic symbols.
 

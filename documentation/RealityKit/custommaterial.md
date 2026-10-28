@@ -23,7 +23,7 @@ struct CustomMaterial
 
 - [Modifying RealityKit rendering using custom materials](./modifying-realitykit-rendering-using-custom-materials.md)
 
-#### Overview
+## Overview
 
 Custom, or programmable, materials allow you to leverage RealityKit’s existing shader pipeline to render physically based or unlit materials that support custom Metal shader functions. These functions modify how RealityKit renders an entity. Custom materials support two different types of custom Metal shader functions: geometry modifiers and surface shaders.
 

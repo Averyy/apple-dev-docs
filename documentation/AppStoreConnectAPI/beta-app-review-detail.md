@@ -5,7 +5,7 @@
 
 Information about your app required for beta app review.
 
-#### Overview
+## Overview
 
 Before an app can be distributed to external testers, it must be reviewed by Apple. A `betaAppReviewDetails` resource contains the information Apple requires when you submit a build for review, including a demo account login and contact details in case the reviewer has questions.
 

@@ -22,7 +22,7 @@ The underlying value referenced by the state object.
 @preconcurrency var wrappedValue: ObjectType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The wrapped value property provides primary access to the value’s data. However, you don’t typically access it directly. Instead, SwiftUI accesses this property for you when you refer to the variable that you create with the `@StateObject` attribute:
 

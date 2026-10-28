@@ -19,7 +19,7 @@ var previewImage: CGImage { get }
 @property (readonly) CGImageRef previewImage;
 ```
 
-#### Discussion
+## Discussion
 
 You specify this image at initialization time. The system uses it to implement any visual effects involving your view’s text. Create the image with your text on a transparent background.
 

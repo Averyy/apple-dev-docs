@@ -25,7 +25,7 @@ var recordIDsToDelete: [CKRecord.ID]? { get set }
 @property (nonatomic, copy, nullable) NSArray<CKRecordID *> * recordIDsToDelete;
 ```
 
-#### Discussion
+## Discussion
 
 An array of [`CKRecord.ID`](../ckrecord/id.md) objects that identifies the records to delete. The initial value of the property is the array of record IDs that you provide to the [`init(recordsToSave:recordIDsToDelete:)`](./init%28recordstosave,recordidstodelete%29.md) method.
 

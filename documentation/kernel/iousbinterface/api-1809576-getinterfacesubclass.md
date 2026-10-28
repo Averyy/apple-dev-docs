@@ -9,11 +9,11 @@
 virtual UInt8 GetInterfaceSubClass();
 ```
 
-#### Return Value
+## Return Value
 
 the interface subclass
 
-#### Overview
+## Overview
 
 returns the subclass code (assigned by the USB). These codes are qualified by the value returned by GetInterfaceClass
 

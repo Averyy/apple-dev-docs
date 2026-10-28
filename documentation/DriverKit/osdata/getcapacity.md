@@ -18,7 +18,7 @@ Returns length of preallocated capacity.
 size_t getCapacity() const;
 ```
 
-#### Return Value
+## Return Value
 
 Length of preallocated capacity.
 

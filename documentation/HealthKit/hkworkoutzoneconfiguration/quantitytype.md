@@ -20,7 +20,7 @@ A property that specifies the quantity type to which the zones apply.
 var quantityType: HKQuantityType { get }
 ```
 
-#### Discussion
+## Discussion
 
 Workout zones support the heart rate and cycling power quantity types.
 

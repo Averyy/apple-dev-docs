@@ -25,7 +25,7 @@ case success
 INCreateNoteIntentResponseCodeSuccess
 ```
 
-#### Discussion
+## Discussion
 
 Use this code after creating the note successfully. Your response should contain the details of the note that you created.
 

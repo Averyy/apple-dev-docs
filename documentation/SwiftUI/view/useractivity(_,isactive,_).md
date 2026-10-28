@@ -22,7 +22,7 @@ nonisolated
 func userActivity(_ activityType: String, isActive: Bool = true, _ update: @escaping (NSUserActivity) -> ()) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 You can use `userActivity(_:isActive:_:)` to start, stop, or modify the advertisement of a specific type of user activity.
 

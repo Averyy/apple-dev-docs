@@ -24,11 +24,11 @@ Asynchronously fetches a required array of config values for the given config ke
 func fetchRequiredStringArray<Value>(forKey key: ConfigKey, as type: Value.Type = Value.self, isSecret: Bool = false, fileID: String = #fileID, line: UInt = #line) async throws -> [Value] where Value : RawRepresentable, Value.RawValue == String
 ```
 
-#### Return Value
+## Return Value
 
 The config array converted to the expected type.
 
-#### Discussion
+## Discussion
 
 Use this method when a string-convertible array configuration value is mandatory for your application to function and you’re working with async providers. The method throws an error if the value is missing or can’t be converted to the expected type.
 

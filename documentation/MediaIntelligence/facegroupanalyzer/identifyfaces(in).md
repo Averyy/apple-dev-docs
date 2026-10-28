@@ -24,11 +24,11 @@ final nonisolated(nonsending) func identifyFaces(in assets: [MediaIntelligenceIm
 
 - [Detecting and grouping faces in images](../detecting-and-grouping-faces-in-images.md)
 
-#### Return Value
+## Return Value
 
 An async sequence of `(assetID, faces)` pairs.
 
-#### Discussion
+## Discussion
 
 Use this method to recognize people in new images against the existing gallery without storing any face data. Each returned face has an [`entityID`](./face/entityid.md) if the framework matched it to a known entity, or `nil` if no match was found.
 

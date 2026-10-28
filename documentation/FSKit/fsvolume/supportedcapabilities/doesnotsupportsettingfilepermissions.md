@@ -19,7 +19,7 @@ var doesNotSupportSettingFilePermissions: Bool { get set }
 @property (nonatomic) BOOL doesNotSupportSettingFilePermissions;
 ```
 
-#### Discussion
+## Discussion
 
 If this value is `true` (Swift) or `YES` (Objective-C), the volume doesn’t support setting file permissions.
 

@@ -21,7 +21,7 @@ nonisolated
 func scrollContentBackground(_ visibility: Visibility) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 The following example hides the standard system background of the List.
 

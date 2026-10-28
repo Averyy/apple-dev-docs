@@ -16,7 +16,7 @@ Converts an unsigned 16-bit little-endian value to theequivalent value in the co
 #define EndianU16_LtoN(value)
 ```
 
-#### Return Value
+## Return Value
 
 The equivalent valuein the computer’s native format.
 

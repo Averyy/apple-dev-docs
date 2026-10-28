@@ -21,7 +21,7 @@ Flag indicating that the process should enforce Library Validation.
 static let isLibraryValidationRequired: OnDiskCodeSigningFlags.ValueSet
 ```
 
-#### Discussion
+## Discussion
 
 Library validation means that the process will only load Apple signed code and code signed by the same Team Identifier as the process. This flag may be present on any on disk signature. This flag only has effect on main executables. This flag only has effect on macOS processes. On iOS/watchOS/tvOS/visionOS and iOS apps on macOS all processes enforce Library Validation, regardless of the state of this flag. This is equivalent to `CS_REQUIRE_LV` in C APIs.
 

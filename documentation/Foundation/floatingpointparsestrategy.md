@@ -21,7 +21,7 @@ A parse strategy for creating floating-point values from formatted strings.
 struct FloatingPointParseStrategy<Format> where Format : FormatStyle, Format.FormatInput : BinaryFloatingPoint
 ```
 
-#### Overview
+## Overview
 
 Create an explicit [`FloatingPointParseStrategy`](./floatingpointparsestrategy.md) to parse multiple strings according to the same parse strategy. In the following example, `usCurrencyStrategy` is a [`FloatingPointParseStrategy`](./floatingpointparsestrategy.md) that uses US dollars and the `en_US` locale’s conventions for number formatting. The example then uses this strategy to parse an array of strings, some of which represent valid US currency values.
 

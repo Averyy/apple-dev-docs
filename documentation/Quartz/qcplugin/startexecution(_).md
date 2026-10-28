@@ -21,11 +21,11 @@ func startExecution(_ context: (any QCPlugInContext)!) -> Bool
 - (BOOL) startExecution:(id<QCPlugInContext>) context;
 ```
 
-#### Return Value
+## Return Value
 
 [`false`](../../Swift/false.md) indicates a fatal error occurred and prevents the Quartz Composer engine from starting.
 
-#### Discussion
+## Discussion
 
 The Quartz Composer engine calls this method  when your custom patch starts to render. You can optionally override this execution method to perform setup tasks.
 

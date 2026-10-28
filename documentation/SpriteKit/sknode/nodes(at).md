@@ -30,11 +30,11 @@ func nodes(at p: CGPoint) -> [SKNode]
 - [Controlling User Interaction on Nodes](../controlling-user-interaction-on-nodes.md)
 - [Understanding Hit-Testing](../understanding-hit-testing.md)
 
-#### Return Value
+## Return Value
 
 An array of all `SKNode` objects in the subtree that intersect the point. Only nodes that have an [`isHidden`](./ishidden.md) of `false` and an [`alpha`](./alpha.md) greater that zero are included in the returned array. If no nodes intersect the point, an empty array is returned.
 
-#### Discussion
+## Discussion
 
 A point is considered to be in a node if it lies inside the rectangle returned by the [`calculateAccumulatedFrame()`](./calculateaccumulatedframe%28%29.md) method.
 

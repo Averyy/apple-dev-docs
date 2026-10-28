@@ -23,7 +23,7 @@ var kFxPropertyKey_DesiredProcessingColorInfo: String { get }
 
 - [Managing color space and gamut in plug-ins](../Professional-Video-Applications/managing-color-space-and-gamut-in-plug-ins.md)
 
-#### Discussion
+## Discussion
 
 The value for this key is an `NSUInteger` indicating the color space that the plug-in will process in. This color space is expressed as an [`FxImageColorInfo`](./fximagecolorinfo.md) constant. If a plug-in includes this property, all inputs are in the specified color space, and the output must also be in this color space.
 

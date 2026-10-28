@@ -21,7 +21,7 @@ A keyframe that uses a cubic curve to smoothly interpolate between values.
 struct CubicKeyframe<Value> where Value : Animatable
 ```
 
-#### Overview
+## Overview
 
 If you don’t specify a start or end velocity, SwiftUI automatically computes a curve that maintains smooth motion between keyframes.
 

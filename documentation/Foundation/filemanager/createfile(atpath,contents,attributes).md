@@ -25,11 +25,11 @@ func createFile(atPath path: String, contents data: Data?, attributes attr: [Fil
 - (BOOL) createFileAtPath:(NSString *) path contents:(NSData *) data attributes:(NSDictionary<NSString *,id> *) attr;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the operation was successful or if the item already exists, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 If you specify `nil` for the `attributes` parameter, this method uses a default set of values for the owner, group, and permissions of any newly created directories in the path. Similarly, if you omit a specific attribute, the default value is used. The default values for newly created files are as follows:
 

@@ -19,11 +19,11 @@ func hv_vcpu_run_until(_ vcpu: hv_vcpuid_t, _ deadline: UInt64) -> hv_return_t
 extern hv_return_t hv_vcpu_run_until(hv_vcpuid_t vcpu, uint64_t deadline);
 ```
 
-#### Return Value
+## Return Value
 
 [`HV_SUCCESS`](./hv_success.md) if the operation was successful, otherwise an error code specified in [`hv_return_t`](./hv_return_t.md).
 
-#### Discussion
+## Discussion
 
 If the deadline you specify is other than [`HV_DEADLINE_FOREVER`](./hv_deadline_forever.md), this call uses the VMX preemption timer. If the hardware doesn’t support the VMX preemption timer, it returns [`HV_UNSUPPORTED`](./hv_unsupported.md).
 

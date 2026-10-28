@@ -25,7 +25,7 @@ A view that combines multiple Liquid Glass shapes into a single shape that can m
 
 - [Applying Liquid Glass to custom views](./applying-liquid-glass-to-custom-views.md)
 
-#### Overview
+## Overview
 
 Use a container with the [`glassEffect(_:in:)`](./view/glasseffect%28_,in%29.md) modifier. Each view with a Liquid Glass effect contributes a shape rendered with the effect to a set of shapes. SwiftUI renders the effects together, improving rendering performance and allowing the effects to interact with and morph into one another.
 

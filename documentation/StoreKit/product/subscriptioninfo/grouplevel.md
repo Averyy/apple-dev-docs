@@ -22,7 +22,7 @@ The rank of the subscription relative to other subscriptions in the same subscri
 var groupLevel: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 If you offer multiple auto-renewable subscriptions with different price tiers, you can assign each to a level in App Store Connect. Ranking your subscriptions determines the upgrade, downgrade, and crossgrade paths available.
 

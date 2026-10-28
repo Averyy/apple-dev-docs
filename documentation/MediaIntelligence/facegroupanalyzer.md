@@ -24,7 +24,7 @@ final class FaceGroupAnalyzer
 
 - [Detecting and grouping faces in images](./detecting-and-grouping-faces-in-images.md)
 
-#### Overview
+## Overview
 
 [`FaceGroupAnalyzer`](./facegroupanalyzer.md) is the central object in the face analysis pipeline. It detects faces in images, stores their data persistently in a working directory you choose, and clusters the faces into groups called *entities*, where each entity represents a distinct person.
 

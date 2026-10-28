@@ -25,11 +25,11 @@ func isReadableFile(atPath path: String) -> Bool
 - (BOOL) isReadableFileAtPath:(NSString *) path;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the current process has read privileges for the file at `path`; otherwise [`false`](../../Swift/false.md) if the process does not have read privileges or the existence of the file could not be determined.
 
-#### Discussion
+## Discussion
 
 If the file at `path` is inaccessible to your app, perhaps because it does not have search privileges for one or more parent directories, this method returns [`false`](../../Swift/false.md). This method traverses symbolic links in the path. This method also uses the real user ID and group ID, as opposed to the effective user and group IDs, to determine if the file is readable.
 

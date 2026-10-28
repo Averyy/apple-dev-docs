@@ -25,7 +25,7 @@ static var tooManyOpenFiles: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 To check the current limit, call the `getdtablesize` function.
 

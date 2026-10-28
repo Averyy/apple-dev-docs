@@ -23,7 +23,7 @@ static func == (lhs: Just<Output>, rhs: Just<Output>) -> Bool
 
 Available when `Output` conforms to `Equatable`.
 
-#### Return Value
+## Return Value
 
 `true` if the publishers have equal `output` properties; otherwise `false`.
 

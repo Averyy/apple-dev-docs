@@ -21,7 +21,7 @@ var identifier: String { get }
 @property (nonatomic, readonly) NSString * identifier;
 ```
 
-#### Discussion
+## Discussion
 
 The format of the identifier can change across software releases. Therefore, do not persist this identifier.
 

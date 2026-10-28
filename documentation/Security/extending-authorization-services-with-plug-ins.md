@@ -5,7 +5,7 @@
 
 Modify the system’s authorization policy with custom code.
 
-#### Overview
+## Overview
 
 > ❗ **Important**:  To authenticate the person using your app prior to providing access to resources within the app, use [Local Authentication](../LocalAuthentication/LocalAuthentication.md) instead of creating an authorization plug-in. Use authorization plug-ins to extend or change system policies.
 
@@ -18,7 +18,7 @@ If the policy database specifies a mechanism in your authorization plug-in, the 
 
 > ❗ **Important**:  Authorization plug-ins that display an interface or otherwise connect to the window server can’t run in the privileged plug-in host. Running GUI code as root is — in general — a bad idea because GUI code links in many libraries, any of which could contain security vulnerabilities.
 
-##### Create an authorization plug-in
+### Create an authorization plug-in
 
 The entry point for your authorization plug-in is the [`AuthorizationPluginCreate`](./authorizationplugincreate.md) function. Your implementation of this function receives the Security Server’s authorization interface functions in an [`AuthorizationCallbacks`](./authorizationcallbacks.md) structure, and passes the plug-in’s interface to the Security Server by populating the [`AuthorizationPluginInterface`](./authorizationplugininterface.md) structure.
 
@@ -32,7 +32,7 @@ When you set context data, tag the data with a flag that specifies whether the S
 
 > ❗ **Important**:  If your plug-in displays a window before somebody logs into a Mac, ensure you set the [`canBecomeVisibleWithoutLogin`](../AppKit/nswindow/canbecomevisiblewithoutlogin.md) property of your [`NSWindow`](../AppKit/nswindow.md) instance to [`true`](../Swift/true.md). For more details, see [`AuthorizationPluginCreate`](./authorizationplugincreate.md).
 
-##### Register the authorization plug-in
+### Register the authorization plug-in
 
 To install an authorization plug-in so that the authorization engine can find it and use its authorization mechanisms, copy the bundle to `/Library/Security/SecurityAgentPlugins` as part of your app’s installation process. In your app, call [`AuthorizationRightSet(_:_:_:_:_:_:)`](./authorizationrightset%28_,_,_,_,_,_%29.md) to add a rule to the authorization policy database that refers to your plug-in. Pass a dictionary as the `rightDefinition` parameter, using the keys listed in [Authorization Name Tags](./authorization-name-tags.md) and those in the file `AuthorizationTagsPriv.h`.
 
@@ -44,13 +44,13 @@ The name of a mechanism is the plug-in name, followed by a colon (`:`), and the 
 SendFaxPlugin:ChangeUserPIN,privileged
 ```
 
-##### Participate in authorization decisions
+### Participate in authorization decisions
 
 When the authorization engine needs an authorization decision based on a policy defined in the policy database, it calls each mechanism belonging to that policy in turn, in the order they’re listed in the policy database. For each mechanism, the authorization engine calls the plug-in’s [`MechanismInvoke`](./authorizationplugininterface/mechanisminvoke.md) function, passing the plug-in `name:mechanism` string for that mechanism.
 
 The authorization engine doesn’t consider the authorization complete and approved until all mechanisms call [`SetResult`](./authorizationcallbacks/setresult.md) to return a positive authorization decision ([`kAuthorizationResultAllow`](./authorizationresult/kauthorizationresultallow.md)), one of the mechanisms calls SetResult to return a negative decision ([`kAuthorizationResultDeny`](./authorizationresult/kauthorizationresultdeny.md)), the maximum number of retries is reached ([`kAuthorizationResultUndefined`](./authorizationresult/kauthorizationresultundefined.md)), or the person cancels the attempt ([`kAuthorizationResultUserCanceled`](./authorizationresult/kauthorizationresultusercanceled.md)).
 
-##### Request an authorization decision
+### Request an authorization decision
 
 To discover the outcome of an authorization decision based on a policy that refers to your plug-in’s mechanisms, you don’t call your plug-in’s code directly. Instead, you call [`AuthorizationCopyRights(_:_:_:_:_:)`](./authorizationcopyrights%28_,_,_,_,_%29.md), passing the name of the policy that references that plug-in in the rights parameter. The authorization engine uses a hierarchical strategy to find a rule matching the requested policy name. For example, if your app requests the `com.example.myProduct.transcripts.create` right, then the authorization searches for these rules in order:
 

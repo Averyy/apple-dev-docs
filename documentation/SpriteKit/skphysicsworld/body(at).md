@@ -29,7 +29,7 @@ func body(at point: CGPoint) -> SKPhysicsBody?
 
 - [Searching the World for Physics Bodies](../searching-the-world-for-physics-bodies.md)
 
-#### Return Value
+## Return Value
 
 The first physics body discovered that contains the point. If no body contains the point, this method returns `nil`.
 

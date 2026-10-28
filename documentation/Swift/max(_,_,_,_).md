@@ -21,7 +21,7 @@ Returns the greatest argument passed.
 func max<T>(_ x: T, _ y: T, _ z: T, _ rest: T...) -> T where T : Comparable
 ```
 
-#### Return Value
+## Return Value
 
 The greatest of all the arguments. If there are multiple equal greatest arguments, the result is the last one.
 

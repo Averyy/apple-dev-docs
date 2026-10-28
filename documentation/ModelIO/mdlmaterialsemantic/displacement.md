@@ -24,7 +24,7 @@ case displacement
 MDLMaterialSemanticDisplacement
 ```
 
-#### Discussion
+## Discussion
 
 Model I/O uses this semantic for the `displacement` and `map_displacement` attributes when importing from the MTL file format (for assets in the OBJ file format).
 

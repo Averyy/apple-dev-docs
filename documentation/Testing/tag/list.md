@@ -23,7 +23,7 @@ A type representing one or more tags applied to a test.
 struct List
 ```
 
-#### Overview
+## Overview
 
 To add this trait to a test, use the [`tags(_:)`](../trait/tags%28_%29.md) function.
 

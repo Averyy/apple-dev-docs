@@ -5,7 +5,7 @@
 
 Display visually rich content on watch faces.
 
-#### Overview
+## Overview
 
 Use graphic templates to display multicolor text, full-color images, and gauges with color gradients on a variety of watch faces, including the Infograph, Infograph Modular, and Solar Dial.
 
@@ -25,7 +25,7 @@ The graphic families also provide templates that support SwiftUI. These template
 
 The [`CLKComplicationTemplateGraphicRectangularFullView`](./clkcomplicationtemplategraphicrectangularfullview.md), [`CLKComplicationTemplateGraphicCircularView`](./clkcomplicationtemplategraphiccircularview.md), and [`CLKComplicationTemplateGraphicExtraLargeCircularView`](./clkcomplicationtemplategraphicextralargecircularview.md) provide the most flexibility. In these templates, the SwiftUI view fills the entire complication—giving you a blank canvas that you can use to create your content. For more information, see [Building complications with SwiftUI](./building-complications-with-swiftui.md).
 
-##### Display Tinted Complications
+### Display Tinted Complications
 
 A watch face that supports graphic complications can display a low-color version of the complication in tinted mode, which makes the following changes to the template:
 

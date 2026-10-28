@@ -26,7 +26,7 @@ func writeDatagram(_ datagram: Data, completionHandler: @escaping ((any Error)?)
 - (void) writeDatagram:(NSData *) datagram completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Callers should wait until the `completionHandler` is executed before issuing another write.
 

@@ -20,7 +20,7 @@ Returns the authored variant selection for the given variant set.
 func variantSelection(for setName: USDToken) -> USDToken?
 ```
 
-#### Return Value
+## Return Value
 
 The authored variant name, or `nil` if not authored.
 

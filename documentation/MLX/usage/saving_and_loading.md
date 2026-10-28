@@ -8,6 +8,8 @@ url: https://ml-explore.github.io/mlx/build/html/usage/saving_and_loading.html
 
 MLX supports multiple array serialization formats.
 
+**Serialization Formats**
+
 | Format | Extension | Function | Notes |
 | --- | --- | --- | --- |
 | NumPy | `.npy` | [save()](../python/_autosummary/mlx.core.save.md#mlx.core.save) | Single arrays only |

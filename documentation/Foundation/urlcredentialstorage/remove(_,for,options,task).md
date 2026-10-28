@@ -25,7 +25,7 @@ func remove(_ credential: URLCredential, for protectionSpace: URLProtectionSpace
 - (void) removeCredential:(NSURLCredential *) credential forProtectionSpace:(NSURLProtectionSpace *) protectionSpace options:(NSDictionary<NSString *,id> *) options task:(NSURLSessionTask *) task;
 ```
 
-#### Discussion
+## Discussion
 
 The credential is removed from both persistent and temporary storage.
 

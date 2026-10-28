@@ -15,7 +15,7 @@ Check if a vnode is set to not have its data cached in memory (i.e. we write-thr
 int vnode_isnocache(vnode_t vp);
 ```
 
-#### Return Value
+## Return Value
 
 Nonzero if vnode is set to not have data chached, 0 otherwise.
 

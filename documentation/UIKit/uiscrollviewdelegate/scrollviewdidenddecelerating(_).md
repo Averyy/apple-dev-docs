@@ -23,7 +23,7 @@ optional func scrollViewDidEndDecelerating(_ scrollView: UIScrollView)
 - (void) scrollViewDidEndDecelerating:(UIScrollView *) scrollView;
 ```
 
-#### Discussion
+## Discussion
 
 The scroll view calls this method when the scrolling movement comes to a halt. The [`isDecelerating`](../uiscrollview/isdecelerating.md) property of `UIScrollView` controls deceleration.
 

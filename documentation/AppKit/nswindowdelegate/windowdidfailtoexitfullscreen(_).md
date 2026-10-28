@@ -20,7 +20,7 @@ optional func windowDidFailToExitFullScreen(_ window: NSWindow)
 - (void) windowDidFailToExitFullScreen:(NSWindow *) window;
 ```
 
-#### Discussion
+## Discussion
 
 In some cases, the transition to exit full-screen mode can fail, due to being in the midst of handling some other animation or user gesture. This method indicates that there was an error, and you should clean up any work you may have done to prepare to exit full-screen mode.
 

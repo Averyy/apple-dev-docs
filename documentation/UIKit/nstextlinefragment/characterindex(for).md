@@ -23,7 +23,7 @@ func characterIndex(for point: CGPoint) -> Int
 - (NSInteger) characterIndexForPoint:(CGPoint) point;
 ```
 
-#### Return Value
+## Return Value
 
 An integer that represents the character index at `point`.
 

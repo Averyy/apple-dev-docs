@@ -10,7 +10,7 @@ framework: "swift-async-algorithms/AsyncAlgorithms"
 
 Combines the latest values produced from two or more asynchronous sequences into an asynchronous sequence of tuples.
 
-#### Overview
+## Overview
 
 [[Source](https://github.com/apple/swift-async-algorithms/blob/main/Sources/AsyncAlgorithms/CombineLatest/AsyncCombineLatest2Sequence.swift), [Source](https://github.com/apple/swift-async-algorithms/blob/main/Sources/AsyncAlgorithms/CombineLatest/AsyncCombineLatest3Sequence.swift) | [Tests](https://github.com/apple/swift-async-algorithms/blob/main/Tests/AsyncAlgorithmsTests/TestCombineLatest.swift)]
 
@@ -32,7 +32,7 @@ Given some sample inputs the following combined events can be expected.
 | 12:40 AM |  | 14218.34 | AAPL: 173.91 NASDAQ: 14218.34 |
 | 1:15 PM | 173.00 |  | AAPL: 173.00 NASDAQ: 14218.34 |
 
-#### Detailed Design
+## Detailed Design
 
 This function family and the associated family of return types are prime candidates for variadic generics. Until that proposal is accepted, these will be implemented in terms of two- and three-base sequence cases.
 
@@ -79,11 +79,11 @@ If any of the bases terminate before the first element is produced, then the `As
 
 The throwing behavior of `AsyncCombineLatestSequence` is that if any of the bases throw, then the composed asynchronous sequence throws on its iteration. If at any point (within the first iteration or afterwards), an error is thrown by any base, the other iterations are cancelled and the thrown error is immediately thrown to the consuming iteration.
 
-##### Naming
+### Naming
 
 Since the inherent behavior of `combineLatest(_:...)` combines the latest values from multiple streams into a tuple the naming is intended to be quite literal. There are precedent terms of art in other frameworks and libraries (listed in the comparison section). Other naming takes the form of “withLatestFrom”. This was disregarded since the “with” prefix is often most associated with the passing of a closure and some sort of contextual concept; `withUnsafePointer` or `withUnsafeContinuation` are prime examples.
 
-##### Comparison with other libraries
+### Comparison with other libraries
 
 Combine latest often appears in libraries developed for processing events over time since the event ordering of a concept of “latest” only occurs when asynchrony is involved.
 

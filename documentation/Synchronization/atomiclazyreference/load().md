@@ -21,11 +21,11 @@ Atomically loads and returns the current value of this reference.
 func load() -> Instance?
 ```
 
-#### Return Value
+## Return Value
 
 A value of `Instance` if the lazy reference was written to, or `nil` if it has not been written to yet.
 
-#### Discussion
+## Discussion
 
 > **Note**: The load operation is performed with the memory ordering `AtomicLoadOrdering.acquiring`.
 

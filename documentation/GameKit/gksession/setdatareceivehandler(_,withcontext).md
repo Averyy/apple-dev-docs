@@ -24,7 +24,7 @@ func setDataReceiveHandler(_ handler: Any!, withContext context: UnsafeMutableRa
 - (void) setDataReceiveHandler:(id) handler withContext:(void *) context;
 ```
 
-#### Discussion
+## Discussion
 
 The handler must implement a method with the following signature:
 

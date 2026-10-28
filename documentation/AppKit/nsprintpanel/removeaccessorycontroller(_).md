@@ -19,7 +19,7 @@ func removeAccessoryController(_ accessoryController: any NSViewController & NSP
 - (void) removeAccessoryController:(NSViewController<NSPrintPanelAccessorizing> *) accessoryController;
 ```
 
-#### Discussion
+## Discussion
 
 You use this method to remove any view controllers responsible for displaying accessory views you do not want to include in the Print panel.
 

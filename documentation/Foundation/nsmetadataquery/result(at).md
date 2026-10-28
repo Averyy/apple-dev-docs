@@ -25,11 +25,11 @@ func result(at idx: Int) -> Any
 - (id) resultAtIndex:(NSUInteger) idx;
 ```
 
-#### Return Value
+## Return Value
 
 The query result at the position specified by `idx`. By default, this method returns an [`NSMetadataItem`](../nsmetadataitem.md) object representing the requested result; however, the query’s delegate can substitute this object with an instance of a different class.
 
-#### Discussion
+## Discussion
 
 For performance reasons, use this method when retrieving a specific result, rather than the array returned by [`results`](./results.md).
 

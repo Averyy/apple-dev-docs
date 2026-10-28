@@ -5,13 +5,13 @@
 
 Configure your project and write the code to download asset packs hosted by Apple.
 
-#### Overview
+## Overview
 
 Let Apple host your app’s assets for you with your Apple Developer Program membership. Apple-Hosted Background Assets hosts up to 200GB of compressed assets and is available for apps on TestFlight or the App Store that use the Managed Background Assets features on all platforms except watchOS. You can use the service to host many different types of assets — such as texture files, machine learning models, Metal shader libraries, and videos — and update them independent of your app build. Background Assets provides a default implementation of a downloader extension that manages asset pack downloads, background updates, compression, and more on people’s systems that you can customize in your downloader extension code.
 
 To create asset packs with a manifest file that the system manages, see [Creating managed asset packs](./creating-managed-asset-packs.md). To test your asset packs before uploading them to App Store Connect, see [Testing asset packs locally](./testing-asset-packs-locally.md).
 
-##### Configure your project for Apple-Hosted Background Assets
+### Configure your project for Apple-Hosted Background Assets
 
 To use Apple-Hosted Background Assets, add a downloader extension target to your project, configure the App Groups capability for both the app and the extension targets, and add some Background Assets information property list keys.
 
@@ -27,7 +27,7 @@ In the project editor, select the app target and click the Info tab. Then, add t
 
 For apps that use Apple-Hosted Background Assets, omit all other Background Assets information property list keys from your project.
 
-##### Customize downloads
+### Customize downloads
 
 The default system implementation supports automatic downloads, background updates, compression, and more that you can customize. The system calls the [`shouldDownload(_:)`](./manageddownloaderextension/shoulddownload%28_%29.md) method each time it downloads a new asset pack based on its download policy. Optionally, use this method to filter downloads at runtime.
 
@@ -35,7 +35,7 @@ The default system implementation supports automatic downloads, background updat
 
 If you don’t need to customize the download behavior for your asset packs beyond the download policies that you configure in the manifest files, remove the [`shouldDownload(_:)`](./manageddownloaderextension/shoulddownload%28_%29.md) method implementation from your downloader-extension structure. Otherwise, if your asset packs have specific compatibility requirements, provide a custom implementation for the [`shouldDownload(_:)`](./manageddownloaderextension/shoulddownload%28_%29.md) method.
 
-##### Download asset packs from your app
+### Download asset packs from your app
 
 An instance of the [`AssetPack`](./assetpack.md) structure represents an individual asset pack that’s available for download from the server, including metadata, such as its identifier that you set in the manifest file. To obtain an [`AssetPack`](./assetpack.md) instance, call the [`assetPack(withID:)`](./assetpackmanager/assetpack%28withid%29.md) method on the shared asset-pack manager:
 
@@ -53,7 +53,7 @@ If the system previously downloaded the asset pack, the [`ensureLocalAvailabilit
 
 > **Note**: Even for an asset pack with an essential download policy, network dropouts or other uncommon issues can prevent the system from downloading it until you call the [`ensureLocalAvailability(of:)`](./assetpackmanager/ensurelocalavailability%28of%29.md) method.
 
-##### Show download progress
+### Show download progress
 
 When downloading asset packs in the foreground, display a progress indicator.
 
@@ -111,7 +111,7 @@ default: // …
 }
 ```
 
-##### Load files in a downloaded asset pack
+### Load files in a downloaded asset pack
 
 To read the contents of an asset pack, call the [`contents(at:searchingInAssetPackWithID:options:)`](./assetpackmanager/contents%28at,searchinginassetpackwithid,options%29.md) method on the shared asset-pack manager, passing a relative path from the root of the source repository — the folder where you ran the packaging tool command — to the file that you want to read:
 

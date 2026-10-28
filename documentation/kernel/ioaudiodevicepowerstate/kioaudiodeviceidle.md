@@ -13,7 +13,7 @@
 kIOAudioDeviceIdle = 1
 ```
 
-#### Discussion
+## Discussion
 
 State when the system is awake but none of the IOAudioEngines are in use
 

@@ -24,7 +24,7 @@ class HKAudiogramSampleType
 @interface HKAudiogramSampleType : HKSampleType
 ```
 
-#### Overview
+## Overview
 
 The [`HKAudiogramSampleType`](./hkaudiogramsampletype.md) class is a concrete subclass of the [`HKObjectType`](./hkobjecttype.md) class. To create an audiogram sample type instance, use the object type’s [`audiogramSampleType()`](./hkobjecttype/audiogramsampletype%28%29.md) convenience method.
 

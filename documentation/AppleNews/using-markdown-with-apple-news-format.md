@@ -5,7 +5,7 @@
 
 Use Markdown formatting for text components.
 
-#### Overview
+## Overview
 
 Apple News Format supports a subset of Markdown syntax. You can use Markdown in the following components by setting the `format` property to `markdown`.
 
@@ -23,7 +23,7 @@ Apple News Format supports a subset of Markdown syntax. You can use Markdown in 
 
 In addition to the components above, you can also use Markdown to format text in [`CaptionDescriptor`](../AppleNewsFormat/captiondescriptor.md), and [`FormattedText`](../AppleNewsFormat/formattedtext.md) objects.
 
-##### Example
+### Example
 
 ```json
 {
@@ -35,11 +35,11 @@ In addition to the components above, you can also use Markdown to format text in
 
 To learn more about Markdown, visit the [Markdown](https://commonmark.org) website.
 
-##### Text-Level Markdown Syntax
+### Text-Level Markdown Syntax
 
 Apple News Format supports these Markdown features within text paragraphs.
 
-###### Emphasis (Italics)
+#### Emphasis (Italics)
 
 Use single asterisks (`*`) or single underscores (`_`).
 
@@ -63,7 +63,7 @@ This _sentence_'s Markdown formatting is (_more_) in_volved_.
 
 This *sentence*’s Markdown formatting is (*more*) in*volved*.
 
-###### Strong Emphasis (Bold)
+#### Strong Emphasis (Bold)
 
 To make text bold, use double asterisks (`**`) or double underscores (`__`).
 
@@ -87,7 +87,7 @@ This __sentence__'s Markdown formatting is (__more__) in__volved__.
 
 This **sentence**’s Markdown formatting is (**more**) in**volved**.
 
-###### Combined Emphasis (Italics) and Strong (Bold)
+#### Combined Emphasis (Italics) and Strong (Bold)
 
 You can nest emphasis and strong emphasis to use bold-italic font faces by using underscores with double asterisks (or double underscores with single asterisks).
 
@@ -116,7 +116,7 @@ In this example, the word *sentence* (but not the apostrophe and the letter *s* 
 
 > **Note**: Apple News Format doesn’t support the use of triple asterisks (`***`) or triple underscores (`___`) to create bold-italic.
 
-###### Strikethrough
+#### Strikethrough
 
 For strikethrough text, surround with double tildes (~~).
 
@@ -130,7 +130,7 @@ A sentence containing something ~~no longer neeeded~~.
 
 In this example, the text *no longer neeeded* is crossed out.
 
-##### Links
+### Links
 
 To add a link with Markdown, use brackets for the linked text and parentheses for the link URL. Brackets must contain at least one character; empty brackets are invalid.
 
@@ -152,9 +152,9 @@ The third example italicizes just the link.
 
 > **Note**: Apple News Format doesn’t support Markdown reference links, which use a second set of square brackets that contain a label that’s defined elsewhere in the article.
 
-##### Block-Level Markdown
+### Block-Level Markdown
 
-###### Headings
+#### Headings
 
 To indicate that text is a heading, use the `#` character.
 
@@ -170,7 +170,7 @@ To indicate that text is a heading, use the `#` character.
 
 `###### Heading 6`
 
-###### Inline Text Style
+#### Inline Text Style
 
 To apply a text style that you have already defined in Apple News Format, use square brackets (`[]`) to enclose the text you want to format and put the name of the text style you want to use in curly brackets (`{}`). You must define the text style you refer to using the `textStyles` property in the article document properties.
 
@@ -186,7 +186,7 @@ The trail passes the [Big Sur Waterfall]{specialTextStyle} before ending in the 
 
 The trail passes the **Big Sur Waterfall** before ending in the valley.
 
-###### Paragraphs
+#### Paragraphs
 
 To separate text into paragraphs, use two of the Markdown new line tags `(\n\n)` between the end of one paragraph and the beginning of the next paragraph. In JSON, new lines are encoded as `\n`.
 
@@ -206,9 +206,9 @@ Apple News Format doesn’t support Markdown paragraph and line separators (`\n`
 
 > **Note**: Apple News Format does not support single `\n` or `\r` Markdown tags. You can use the Unicode line separator `(\u2028)` to start a new line.
 
-###### Lists
+#### Lists
 
-###### Bulleted List
+##### Bulleted List
 
 To create a bulleted list item, start a new line, then type either a hyphen (`-`), an asterisk (`*`), or a plus sign (`+`) followed by a space.
 
@@ -224,7 +224,7 @@ To create a bulleted list item, start a new line, then type either a hyphen (`-`
 - First item
 - Second item
 
-###### Numbered List
+##### Numbered List
 
 Use numbers and periods followed by a space (`1. `).
 
@@ -240,7 +240,7 @@ Use numbers and periods followed by a space (`1. `).
 1. First numbered item
 2. Second numbered item
 
-###### Numbered List in Apple News Format
+##### Numbered List in Apple News Format
 
 In a numbered list, Apple News Format restarts at 1 for each new component — no matter what number you provide in your text.
 
@@ -266,7 +266,7 @@ If you need to separate a list into multiple components, remove `"format": "mark
 1. First list item
 2. Second list item
 
-###### Divider
+#### Divider
 
 To create a divider line or horizontal rule, type at least 3 hyphens (`---`) or 3 asterisks (`***`) on a new, empty line.
 
@@ -276,7 +276,7 @@ Dividers can separate portions of text.
 Here's the epilogue to my story.
 ```
 
-###### Maps
+#### Maps
 
 To add a map that renders within your article, begin the URL for your map with `https://maps.apple.com/`. When Apple News Format renders the article, it converts the link to a map that you can manipulate the same way as a `map` component. If your URL doesn’t start with `https://maps.apple.com/`, then Apple News Format only displays a link to the map.
 
@@ -292,11 +292,11 @@ Apple’s main campus occupies 172 acres at Apple Park.
 
 ![Screenshot of a full-screen map showing the location of Apple Park in Cupertino.](https://developer.apple.com/tutorials/images/com.apple.applenews/media-3591443@2x.png)
 
-##### Escaping Markdown
+### Escaping Markdown
 
 To escape special Markdown characters in a JSON document, use two backslashes (one to escape Markdown and one to escape JSON) as shown in the following examples:
 
-###### Example 1
+#### Example 1
 
 **Markdown**:
 
@@ -316,7 +316,7 @@ This is an asterisk: *
 
 This is an underscore: _
 
-###### Example 2
+#### Example 2
 
 **Markdown**:
 

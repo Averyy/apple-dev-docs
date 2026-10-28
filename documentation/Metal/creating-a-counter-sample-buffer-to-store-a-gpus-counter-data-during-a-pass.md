@@ -5,7 +5,7 @@
 
 Make a buffer that provides a place for a GPU to save its runtime performance metrics as it runs a pass.
 
-#### Overview
+## Overview
 
 You can create and use an [`MTLCounterSampleBuffer`](./mtlcountersamplebuffer.md) instance to store information from a GPU counter. To check whether a GPU produces data for a specific counter, see [Confirming which counters and counter sets a GPU supports](./confirming-which-counters-and-counter-sets-a-gpu-supports.md). Each *counter sample buffer* represents memory that a GPU uses to save data from the counter as it runs a pass. Counter sample buffers provide the GPU a place to temporarily store sample data, which avoids the need to synchronize data with the CPU. However, your app has the option to *resolve* the sample data with the CPU after the pass completes. See [Converting a GPU’s counter data into a readable format](./converting-a-gpus-counter-data-into-a-readable-format.md) for more information about resolving sample data.
 

@@ -20,7 +20,7 @@ var ES_EVENT_TYPE_AUTH_GETEXTATTR: es_event_type_t { get }
 ES_EVENT_TYPE_AUTH_GETEXTATTR
 ```
 
-#### Discussion
+## Discussion
 
 This identifier corresponds to the [`es_events_t`](./es_events_t.md) union member [`getextattr`](./es_events_t/getextattr.md), which has the type [`es_event_getextattr_t`](./es_event_getextattr_t.md).
 

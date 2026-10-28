@@ -19,7 +19,7 @@ func endLine(withGlyphRange lineGlyphRange: NSRange)
 - (void) endLineWithGlyphRange:(NSRange) lineGlyphRange;
 ```
 
-#### Discussion
+## Discussion
 
 Concrete subclass implementations of [`layoutParagraph(at:)`](./layoutparagraph%28at%29.md) should invoke this method at the end of each line.
 

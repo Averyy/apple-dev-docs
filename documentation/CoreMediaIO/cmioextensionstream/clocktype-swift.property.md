@@ -20,7 +20,7 @@ var clockType: CMIOExtensionStream.ClockType { get }
 @property (atomic, readonly) CMIOExtensionStreamClockType clockType;
 ```
 
-#### Discussion
+## Discussion
 
 If you created the stream with a custom clock configuration, the value of this property is [`CMIOExtensionStream.ClockType.custom`](./clocktype-swift.enum/custom.md).
 

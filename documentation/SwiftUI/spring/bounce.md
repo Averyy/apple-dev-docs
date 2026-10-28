@@ -21,7 +21,7 @@ How bouncy the spring is.
 var bounce: Double { get }
 ```
 
-#### Discussion
+## Discussion
 
 A value of 0 indicates no bounces (a critically damped spring), positive values indicate increasing amounts of bounciness up to a maximum of 1.0 (corresponding to undamped oscillation), and negative values indicate overdamped springs with a minimum value of -1.0.
 

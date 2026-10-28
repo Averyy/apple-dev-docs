@@ -24,7 +24,7 @@ func prepareToPlay()
 - (void) prepareToPlay;
 ```
 
-#### Discussion
+## Discussion
 
 The system automatically calls this method on playback, but calling it in advance minimizes the delay between calling [`play(_:)`](./play%28_%29.md) and the start of sound output.
 

@@ -24,7 +24,7 @@ func reloadData()
 - (void) reloadData;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method when the data source changed, which notifies the content manager to reload the data from the data source.
 

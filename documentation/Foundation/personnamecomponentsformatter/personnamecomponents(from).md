@@ -25,11 +25,11 @@ func personNameComponents(from string: String) -> PersonNameComponents?
 - (NSPersonNameComponents *) personNameComponentsFromString:(NSString *) string;
 ```
 
-#### Return Value
+## Return Value
 
 An [`NSPersonNameComponents`](../nspersonnamecomponents.md) object parsing string using the receiver’s format, or `nil` if no components could be parsed.
 
-#### Discussion
+## Discussion
 
 This method uses a combination of locale rules and heuristics to determine the most likely name components for a particular string representation. Parsing name components from a representation created for an existing name components object may not produce equivalent results.
 

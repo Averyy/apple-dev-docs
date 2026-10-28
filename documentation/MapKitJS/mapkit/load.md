@@ -21,11 +21,11 @@ load?(libraryNames: string | string[]): Promise<MapKit>;
 - [MapKit JS 6](../mapkit-js-6.md)
 - [Migrating from Version 5 to Version 6](../migrating-from-version-5-to-version-6.md)
 
-#### Return Value
+## Return Value
 
 A promise that resolves when the libraries finish loading. The promise resolves to the [`mapkit`](../mapkit.md) namespace object.
 
-#### Discussion
+## Discussion
 
 > **Note**:  The full bundle of MapKit JS doesn’t implement this method.
 

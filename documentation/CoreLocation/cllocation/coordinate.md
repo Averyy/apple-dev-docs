@@ -25,11 +25,11 @@ var coordinate: CLLocationCoordinate2D { get }
 @property (nonatomic, readonly) CLLocationCoordinate2D coordinate;
 ```
 
-#### Discussion
+## Discussion
 
 When running in the simulator, Core Location uses the values provided to it by the simulator. You must run your application on an iOS-based device to get the actual location of that device.
 
-##### Special Considerations
+### Special Considerations
 
 In iOS, this property is declared as `nonatomic`. In macOS, it is declared as `atomic`.
 

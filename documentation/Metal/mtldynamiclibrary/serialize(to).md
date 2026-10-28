@@ -25,7 +25,7 @@ func serialize(to url: URL) throws
 - (BOOL) serializeToURL:(NSURL *) url error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 When the methods succeeds, the file contains a representation of the [`MTLLibrary`](../mtllibrary.md) from the [`MTLDynamicLibrary`](../mtldynamiclibrary.md) that creates it, as well as the binaries it has for the device your app is running on.
 

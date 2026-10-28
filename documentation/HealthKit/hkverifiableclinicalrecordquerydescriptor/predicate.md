@@ -19,7 +19,7 @@ A predicate that limits the results returned by the query.
 var predicate: NSPredicate?
 ```
 
-#### Discussion
+## Discussion
 
 If this property is `nil`, the query returns all records of the specified type.
 

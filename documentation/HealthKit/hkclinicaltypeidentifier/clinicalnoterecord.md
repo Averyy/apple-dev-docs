@@ -24,7 +24,7 @@ static let clinicalNoteRecord: HKClinicalTypeIdentifier
 extern HKClinicalTypeIdentifier const HKClinicalTypeIdentifierClinicalNoteRecord;
 ```
 
-#### Discussion
+## Discussion
 
 Clinical notes can have one or more attached files. While these files are often PDFs, HTML, or text files, they can be any format. Check the [`HKAttachment`](../hkattachment.md) object’s [`contentType`](../hkattachment/contenttype.md) property to determine the file type. For more information on accessing the attachments, see [`HKAttachment`](../hkattachment.md).
 

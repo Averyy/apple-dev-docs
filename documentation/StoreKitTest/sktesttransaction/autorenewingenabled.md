@@ -25,7 +25,7 @@ var autoRenewingEnabled: Bool { get }
 @property (nonatomic, readonly) BOOL autoRenewingEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 By default, the system creates subscriptions with auto-renew enabled. To disable auto-renew, call [`disableAutoRenewForTransaction(identifier:)`](../sktestsession/disableautorenewfortransaction%28identifier%29.md).
 

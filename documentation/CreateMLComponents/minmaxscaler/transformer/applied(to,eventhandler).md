@@ -21,7 +21,7 @@ Scales the input values so that they all lie in the closed range `[minimum, maxi
 func applied(to input: Element, eventHandler: EventHandler? = nil) -> Element
 ```
 
-#### Return Value
+## Return Value
 
 A scaled value.
 

@@ -19,7 +19,7 @@ The private key associated with this passkey.
 var key: Data
 ```
 
-#### Discussion
+## Discussion
 
 This value must be a PKCS#8-formatted byte string, and Base64URL-encoded when encoding to JSON.
 

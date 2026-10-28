@@ -24,7 +24,7 @@ var groundAlbedo: Float { get set }
 @property (nonatomic, assign) float groundAlbedo;
 ```
 
-#### Discussion
+## Discussion
 
 This value simulates the amount of light that bounces back up into the sky from the ground. A value of `0.0` produces a clear sky, and values closer to `10` reduce the contrast of the sky, producing a foggy effect.
 

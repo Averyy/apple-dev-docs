@@ -21,7 +21,7 @@ A type you use to specify previously donated app intents.
 struct IntentDonationMatchingPredicate
 ```
 
-#### Overview
+## Overview
 
 An `IntentDonationMatchingPredicate` matches one or more app intent donations you made previously. Use this type to specify the donations you plan to delete using the [`deleteDonations(matching:)`](./intentdonationmanager/deletedonations%28matching%29.md) method of [`IntentDonationManager`](./intentdonationmanager.md). You can create predicates to match donations with specific identifiers, or to match donations that contain specific app intents or entities. For example, if someone deletes data in your app, you can create a predicate to remove donations that refer to that data.
 

@@ -23,7 +23,7 @@ var startDate: Date { get }
 @property (nonatomic, readonly) NSDate * startDate;
 ```
 
-#### Discussion
+## Discussion
 
 The `startDate` and [`endDate`](./enddate.md) represent the period of time over which the pedometer data was gathered.
 

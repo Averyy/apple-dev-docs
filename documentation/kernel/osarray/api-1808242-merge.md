@@ -12,11 +12,11 @@ virtual bool merge(
  const OSArray *otherArray);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if merging was successful, `false` otherwise.
 
-#### Overview
+## Overview
 
 This function merely appends one array onto another. Duplicates are not avoided and no sorting is performed. Objects successfully added to the receiver are retained.
 

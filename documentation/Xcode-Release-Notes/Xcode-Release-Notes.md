@@ -4,7 +4,7 @@
 
 Learn about changes to Xcode.
 
-#### Overview
+## Overview
 
 Xcode offers the tools you need to develop, test, and distribute apps for all Apple platforms, including intelligent code completion, simulators for Apple devices, advanced profiling and debugging tools, and more.
 

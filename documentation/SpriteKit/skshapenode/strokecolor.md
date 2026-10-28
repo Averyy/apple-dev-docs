@@ -45,7 +45,7 @@ var strokeColor: NSColor { get set }
 
 - [Getting Started with Shape Nodes](../getting-started-with-shape-nodes.md)
 
-#### Discussion
+## Discussion
 
 The default stroke color is `[SKColor whiteColor]`. If you do not want to stroke the shape, use `[SKColor clearColor].`
 

@@ -22,7 +22,7 @@ class let currentExposureDuration: CMTime
 extern const CMTime AVCaptureExposureDurationCurrent;
 ```
 
-#### Discussion
+## Discussion
 
 Pass this value to [`setExposureModeCustom(duration:iso:completionHandler:)`](./setexposuremodecustom%28duration,iso,completionhandler%29.md) to lock exposure duration to its current value (that’s, to disable autoexposure).
 

@@ -5,7 +5,7 @@
 
 Customize the layout of your user interface to support all Apple Watch sizes.
 
-#### Overview
+## Overview
 
 When designing your app, be sure to support all available Apple Watch sizes to ensure a consistent experience for everyone who uses your app. For more information on Apple Watch screen dimensions, refer to [watchOS device screen dimensions](https://developer.apple.com/design/human-interface-guidelines/layout#watchOS-device-screen-dimensions) in the Human Interface Guidelines. For information about adopting Liquid Glass in watchOS, refer to [Adopting Liquid Glass](../TechnologyOverviews/adopting-liquid-glass.md).
 
@@ -18,7 +18,7 @@ When designing your app, be sure to support all available Apple Watch sizes to e
 
 Where possible, use resizable objects to fill the available space. Resizable objects help you create flexible layouts and minimize the amount of customization you need to support for the different sizes. If necessary, you can customize your layout for specific sizes; however, when creating the layout for larger screens, use the additional space to display larger controls and assets, rather than filling the screen with additional controls. For additional design information, refer to [Designing for watchOS](https://developer.apple.com/design/human-interface-guidelines/designing-for-watchos).
 
-##### Use safe areas and scene padding
+### Use safe areas and scene padding
 
 Most watches have rounded corners that may clip scrolling content. Some also bend content around the bevel, which can affect the appearance of anything placed near the sides. Each screen keeps a margin between the text in its status and navigation bars, and the edge of the screen. When you lay out content, align text with the leading edge of the navigation bar’s title or Back button, and with the trailing edge of the status bar’s text.
 
@@ -84,7 +84,7 @@ Use [`Button`](../SwiftUI/button.md)  to automatically align with the text margi
 
 > **Note**: When Apple Watch Series 10 or 11 runs an app compiled for watchOS 10 or earlier, the system letterboxes the interface, centering it on the screen. Additionally, the Series 10 clips the corners of the letterboxed content; however, it doesn’t clip the safe area. To ensure your app’s interface appears as you expect on Series 10 and 11 sizes, build your app with the watchOS 11 SDK or later.
 
-##### Support Dynamic Type
+### Support Dynamic Type
 
 Use Dynamic Type so the wearer can modify the size of text components in your app. Dynamic Type helps people who need larger text for better readability. It also accommodates those who can read smaller text, allowing more information to appear on the screen. Apps that support Dynamic Type provide an experience that’s consistent with the system apps. For more information, refer to [Applying custom fonts to text](../SwiftUI/applying-custom-fonts-to-text.md).
 
@@ -97,7 +97,7 @@ Different watch sizes use different default Dynamic Type sizes:
 
 > **Note**: The wearer can change the Dynamic Type size, including using accessibility sizes. Always check your app’s appearance with all available type sizes. For additional design information, refer to [Typography](https://developer.apple.com/design/human-interface-guidelines/typography).
 
-##### Manage assets
+### Manage assets
 
 To provide an asset that adapts to all watch sizes, create a scalable PDF asset. Add a PDF to the asset catalog as a 2x image asset, then set its Auto Scaling attribute to Automatic.
 
@@ -119,7 +119,7 @@ When you load the PDF, the system scales the image based on the current device�
 
 For more design information, refer to [Images](https://developer.apple.com/design/human-interface-guidelines/images).
 
-##### Preview multiple sizes
+### Preview multiple sizes
 
 When designing a watchOS app, you can use Xcode previews to check your app’s layout. You can display one or more previews using the `#Preview` macro.
 

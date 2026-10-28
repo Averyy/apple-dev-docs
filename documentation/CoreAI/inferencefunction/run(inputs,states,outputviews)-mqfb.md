@@ -19,11 +19,11 @@ Runs the function on the provided input arrays and returns the output values.
 func run(inputs: [String : NDArray], states: consuming InferenceFunction.MutableViews = MutableViews(), outputViews: consuming InferenceFunction.MutableViews = MutableViews()) async throws -> InferenceFunction.Outputs
 ```
 
-#### Return Value
+## Return Value
 
 The outputs from the function.
 
-#### Discussion
+## Discussion
 
 This is a convenience overload that accepts a dictionary of [`NDArray`](../ndarray.md) values instead of an [`InferenceFunction.Inputs`](./inputs.md) collection.
 

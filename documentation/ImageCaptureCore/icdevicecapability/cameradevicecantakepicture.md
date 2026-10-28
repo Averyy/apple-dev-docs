@@ -23,7 +23,7 @@ static let cameraDeviceCanTakePicture: ICDeviceCapability
 extern ICDeviceCapability const ICCameraDeviceCanTakePicture;
 ```
 
-#### Discussion
+## Discussion
 
 When this capability is available, the client can call [`requestTakePicture()`](../iccameradevice/requesttakepicture%28%29.md) to capture a picture.
 

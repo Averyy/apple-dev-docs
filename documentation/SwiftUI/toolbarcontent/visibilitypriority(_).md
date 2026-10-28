@@ -22,7 +22,7 @@ Defines the visibility priority for a toolbar item.
 @preconcurrency func visibilityPriority(_ priority: ToolbarItemVisibilityPriority) -> some ToolbarContent
 ```
 
-#### Discussion
+## Discussion
 
 When toolbar space is limited, items with a lower priority move into the overflow menu before items with a higher priority. The default is [`automatic`](../toolbaritemvisibilitypriority/automatic.md).
 

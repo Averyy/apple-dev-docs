@@ -16,7 +16,7 @@ Key for dictionary returned by IOCopySystemLoadAdvisoryDetailed
 #define kIOSystemLoadAdvisoryUserLevelKey
 ```
 
-#### Discussion
+## Discussion
 
 Indicates user activity constraints on the current SystemLoadAdvisory level.
 

@@ -20,11 +20,11 @@ func ODNodeSetCredentialsExtended(_ node: ODNodeRef!, _ recordType: String!, _ a
 extern bool ODNodeSetCredentialsExtended(ODNodeRef node, ODRecordType recordType, ODAuthenticationType authType, CFArrayRef authItems, CFArrayRef*outAuthItems, ODContextRef*outContext, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if no error occurs; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 If this function fails, the previous credentials for the node are used.
 

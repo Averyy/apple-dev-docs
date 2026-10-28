@@ -15,7 +15,7 @@ Handles the completion of an asynchronous I/O request.
 virtual void CompleteAsyncIO(OSAction *action, IOReturn status, uint32_t actualByteCount, uint64_t completionTimestamp);
 ```
 
-#### Discussion
+## Discussion
 
 Implement a custom version of this method and use the [`TYPE`](../../DriverKit/type.md) macro to let the system know that your method conforms to this prototype.
 

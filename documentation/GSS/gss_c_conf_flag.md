@@ -23,7 +23,7 @@ var GSS_C_CONF_FLAG: Int32 { get }
 #define GSS_C_CONF_FLAG
 ```
 
-#### Discussion
+## Discussion
 
 When set, you can use the [`gss_wrap(_:_:_:_:_:_:_:)`](./gss_wrap%28_,_,_,_,_,_,_%29.md) and [`gss_unwrap(_:_:_:_:_:_:)`](./gss_unwrap%28_,_,_,_,_,_%29.md) functions to encrypt and decrypt the data transferred. When the flag is not set, you can perform your own data level encryption, but the GSS-API does not provide this service.
 

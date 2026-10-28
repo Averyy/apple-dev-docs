@@ -21,7 +21,7 @@ Marks the end of the local event handler.
 #define NS_ENDHANDLER
 ```
 
-#### Discussion
+## Discussion
 
 The `NS_ENDHANDLER` marks the end of a section of code that is a local exception handler. (The [`NS_HANDLER`](./ns_handler.md)macros marks the beginning of this section.) If an exception is raised in the exception handling domain marked off by the [`NS_DURING`](./ns_during.md) and [`NS_HANDLER`](./ns_handler.md), the local exception handler (if specified) is given a chance to handle the exception.
 

@@ -25,7 +25,7 @@ var errorOptions: MTLCommandBufferErrorOption { get }
 @property (readonly) MTLCommandBufferErrorOption errorOptions;
 ```
 
-#### Discussion
+## Discussion
 
 The property reflects the [`errorOptions`](../mtlcommandbufferdescriptor/erroroptions.md) property of the [`MTLCommandBufferDescriptor`](../mtlcommandbufferdescriptor.md) instance at the time you create the command buffer.
 

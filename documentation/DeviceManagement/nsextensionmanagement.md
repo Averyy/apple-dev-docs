@@ -15,7 +15,7 @@ The payload that configures the extensions that the system allows or disallows t
 object NSExtensionManagement
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.NSExtension` as the payload type.
 
@@ -23,7 +23,7 @@ You can manage extensions by bundle identifiers in allow and deny lists, or by a
 
 You can also start with all public extensions disallowed. To do so, include `AllPublicExtensionPoints` in `DeniedExtensionPoints`. This causes the system to expand the list to include all extensions that belong to any public extension points. This expansion occurs at evaluation time. The list of extension points can change from release to release. The expanded list disallows Apple and third-party extensions, but still allows extensions that belong to system-critcial extension points to execute.
 
-##### Profile availability
+### Profile availability
 
 |  |  |
 | --- | --- |
@@ -35,7 +35,7 @@ You can also start with all public extensions disallowed. To do so, include `All
 | Allowed in user enrollment | N/A |
 | Allow multiple payloads | macOS |
 
-##### Profile example
+### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>

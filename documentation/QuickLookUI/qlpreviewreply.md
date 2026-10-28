@@ -19,7 +19,7 @@ class QLPreviewReply
 @interface QLPreviewReply : NSObject
 ```
 
-#### Overview
+## Overview
 
 Create an instance of [`QLPreviewReply`](./qlpreviewreply.md) from the method [`providePreview(for:completionHandler:)`](./qlpreviewingcontroller/providepreview%28for,completionhandler%29.md) in your subclass of [`QLPreviewProvider`](./qlpreviewprovider.md). Create an instance to return data, such as an image, PDF, or HTML, that the system displays as the preview for the content that [`QLFilePreviewRequest`](./qlfilepreviewrequest.md) specifies.
 

@@ -21,7 +21,7 @@ A request that finds faces within an image.
 struct DetectFaceRectanglesRequest
 ```
 
-#### Overview
+## Overview
 
 This request returns faces as rectangular bounding boxes with origin and size.
 

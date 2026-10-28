@@ -21,7 +21,7 @@ Creates a localized string from a localized string resource, applying the specif
 init(localized resource: LocalizedStringResource, options: String.LocalizationOptions)
 ```
 
-#### Discussion
+## Discussion
 
 Call this initializer to look up the localization that `resource` indicates from a string catalog or `strings` file in your app bundle. Alter the resource’s `locale` prior to calling this method if you want to localize this string in a different locale than the process that creates the `LocalizedStringResource`.
 

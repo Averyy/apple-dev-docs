@@ -23,7 +23,7 @@ var statusBarOrientationAnimationDuration: TimeInterval { get }
 @property (nonatomic, readonly) NSTimeInterval statusBarOrientationAnimationDuration;
 ```
 
-#### Discussion
+## Discussion
 
 You should double the value of this property for a 180 degree orientation change in the status bar.
 

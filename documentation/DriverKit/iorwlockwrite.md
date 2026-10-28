@@ -16,7 +16,7 @@
 void IORWLockWrite(struct IORWLock *lock);
 ```
 
-#### Discussion
+## Discussion
 
 Lock a read/write lock for write.
 

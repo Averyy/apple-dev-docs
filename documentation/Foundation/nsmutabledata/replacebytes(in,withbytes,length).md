@@ -25,7 +25,7 @@ func replaceBytes(in range: NSRange, withBytes replacementBytes: UnsafeRawPointe
 - (void) replaceBytesInRange:(NSRange) range withBytes:(const void *) replacementBytes length:(NSUInteger) replacementLength;
 ```
 
-#### Discussion
+## Discussion
 
 If the length of `range` is not equal to `replacementLength`, the receiver is resized to accommodate the new bytes. Any bytes past `range` in the receiver are shifted to accommodate the new bytes. You can therefore pass `NULL` for `replacementBytes` and `0` for `replacementLength` to delete bytes in the receiver in the range `range`. You can also replace a range (which might be zero-length) with more bytes than the length of the range, which has the effect of insertion (or “replace some and insert more”).
 

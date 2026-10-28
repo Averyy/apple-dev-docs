@@ -25,7 +25,7 @@ case deviceNotFound
 MPRemoteCommandHandlerStatusDeviceNotFound
 ```
 
-#### Discussion
+## Discussion
 
 Commands that require a device to perform their action should return this status when the device is unavailable. For example, you’d return this status if your command requires headphones, but none are available.
 

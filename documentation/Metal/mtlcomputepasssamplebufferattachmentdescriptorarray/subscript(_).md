@@ -24,7 +24,7 @@ subscript(attachmentIndex: Int) -> MTLComputePassSampleBufferAttachmentDescripto
 - (MTLComputePassSampleBufferAttachmentDescriptor *) objectAtIndexedSubscript:(NSUInteger) attachmentIndex;
 ```
 
-#### Return Value
+## Return Value
 
 The requested  [`MTLComputePassSampleBufferAttachmentDescriptor`](../mtlcomputepasssamplebufferattachmentdescriptor.md) object.
 

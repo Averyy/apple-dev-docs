@@ -21,11 +21,11 @@ Returns a format style to format a list of strings.
 static func list<Base>(type: ListFormatStyle<StringStyle, Base>.ListType, width: ListFormatStyle<StringStyle, Base>.Width = .standard) -> Self where Self == ListFormatStyle<StringStyle, Base>, Base : Sequence, Base.Element == String
 ```
 
-#### Return Value
+## Return Value
 
 A list format style that formats a string array as a textual list of items.
 
-#### Discussion
+## Discussion
 
 Use the dot-notation form of this type method when the call point allows the use of [`ListFormatStyle`](../listformatstyle.md), and the [`Sequence`](../../Swift/sequence.md) element type is [`String`](../../Swift/string.md). You typically do this when calling the [`formatted(_:)`](../../Swift/sequence/formatted%28_%29.md) method of [`Sequence`](../../Swift/sequence.md).
 

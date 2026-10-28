@@ -21,7 +21,7 @@ An encoding error was detected.
 case error(length: Int)
 ```
 
-#### Discussion
+## Discussion
 
 `length` is the number of underlying code units consumed by this error, guaranteed to be greater than 0.
 

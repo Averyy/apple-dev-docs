@@ -17,7 +17,7 @@ static var immersiveSpace: NamedCoordinateSpace { get }
 
 Available when `Self` is `NamedCoordinateSpace`.
 
-#### Discussion
+## Discussion
 
 Use this to convert transforms from a window to an immersive space. The following sample converts the top-leading-back origin of a Model3D view to coordinates in the immersive space.
 

@@ -25,7 +25,7 @@ struct SparseOpaquePreconditioner_Complex_Double
 typedef struct { ... } SparseOpaquePreconditioner_Complex_Double;
 ```
 
-#### Overview
+## Overview
 
 - **`type`**: The type of preconditioner represented.
 - **`mem`**: Block of memory that will be passed unaltered as the first argument of the `apply()` callback.

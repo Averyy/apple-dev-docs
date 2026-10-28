@@ -22,7 +22,7 @@ func setDelegate(_ delegate: (any AVCaptureDataOutputSynchronizerDelegate)?, que
 - (void) setDelegate:(id<AVCaptureDataOutputSynchronizerDelegate>) delegate queue:(dispatch_queue_t) delegateCallbackQueue;
 ```
 
-#### Discussion
+## Discussion
 
 The data output synchronizer gathers data from its data outputs, and when it determines that all data has been received for a given timestamp, it vends collections of synchronized data by calling delegate methods on the specified dispatch queue.
 

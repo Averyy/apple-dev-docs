@@ -25,7 +25,7 @@ protocol MKGeoJSONObject : NSObjectProtocol
 @protocol MKGeoJSONObject <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Classes that conform to this protocol represent the types that the GeoJSON decoder can return.
 

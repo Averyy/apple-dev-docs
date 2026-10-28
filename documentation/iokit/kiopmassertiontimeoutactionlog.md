@@ -16,7 +16,7 @@ A potential value for [`kIOPMAssertionTimeoutActionKey`](./kiopmassertiontimeout
 #define kIOPMAssertionTimeoutActionLog
 ```
 
-#### Discussion
+## Discussion
 
 When this timeout action is specified, PM will log the timeout event but will not turn off or affect the setting of the assertion in any way.
 

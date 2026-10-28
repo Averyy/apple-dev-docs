@@ -24,7 +24,7 @@ var sfSymbolsName: String? { get set }
 @property (nonatomic, strong, nullable) NSString * sfSymbolsName;
 ```
 
-#### Discussion
+## Discussion
 
 If the user remaps this element, this property is the remapped system symbol.
 

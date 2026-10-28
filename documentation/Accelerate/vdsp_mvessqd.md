@@ -21,7 +21,7 @@ Calculates the mean of signed squares of a double-precision vector.
 extern void vDSP_mvessqD(const double *__A, vDSP_Stride __IA, double *__C, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This function calculates the mean of squares of the first `N` elements of the input vector and writes the result to the output scalar parameter, `C`.
 

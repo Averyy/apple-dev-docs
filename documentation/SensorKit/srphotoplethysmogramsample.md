@@ -21,7 +21,7 @@ class SRPhotoplethysmogramSample
 @interface SRPhotoplethysmogramSample : NSObject
 ```
 
-#### Overview
+## Overview
 
 The PPG sensor provides an array of these objects as its [`sample`](./srfetchresult/sample.md) type.
 

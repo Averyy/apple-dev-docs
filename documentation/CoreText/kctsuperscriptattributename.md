@@ -25,7 +25,7 @@ let kCTSuperscriptAttributeName: CFString
 extern CFStringRef const kCTSuperscriptAttributeName;
 ```
 
-#### Discussion
+## Discussion
 
 Value must be a [`CFNumber`](../CoreFoundation/cfnumber.md) object. Default is integer value `0`. If supported by the specified font, a value of `1` enables superscripting and a value of `-1` enables subscripting.
 

@@ -16,7 +16,7 @@ Describes the result of a transition.
 enum TransitionResult
 ```
 
-#### Overview
+## Overview
 
 A transition can successfully complete to the `toExperience` or reverse back to the `fromExperience`.
 

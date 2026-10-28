@@ -25,7 +25,7 @@ class func className(for cls: AnyClass) -> String?
 + (NSString *) classNameForClass:(Class) cls;
 ```
 
-#### Return Value
+## Return Value
 
 The class name with which [`NSKeyedArchiver`](../nskeyedarchiver.md) encodes instances of `cls`. Returns `nil` if [`NSKeyedArchiver`](../nskeyedarchiver.md) does not have a translation mapping for `cls`.
 

@@ -14,7 +14,7 @@
 kSKSearchOptionDefault = 0
 ```
 
-#### Discussion
+## Discussion
 
 Default search options include:
 

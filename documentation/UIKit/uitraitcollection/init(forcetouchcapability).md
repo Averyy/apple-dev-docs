@@ -23,7 +23,7 @@ init(forceTouchCapability capability: UIForceTouchCapability)
 + (UITraitCollection *) traitCollectionWithForceTouchCapability:(UIForceTouchCapability) capability;
 ```
 
-#### Return Value
+## Return Value
 
 A new trait collection containing only a specified force touch capability trait.
 

@@ -13,7 +13,7 @@
 typedef struct IODot3TxExtraEntry IODot3TxExtraEntry;
 ```
 
-#### Discussion
+## Discussion
 
 Extra transmitter statistics not defined by RFC1650.
 

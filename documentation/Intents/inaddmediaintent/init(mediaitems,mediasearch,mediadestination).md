@@ -24,11 +24,11 @@ init(mediaItems: [INMediaItem]?, mediaSearch: INMediaSearch?, mediaDestination: 
 - (instancetype) initWithMediaItems:(NSArray<INMediaItem *> *) mediaItems mediaSearch:(INMediaSearch *) mediaSearch mediaDestination:(INMediaDestination *) mediaDestination;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized intent object or nil if the object could not be created.
 
-#### Discussion
+## Discussion
 
 The [`INAddMediaIntent`](../inaddmediaintent.md) object should include information about the media that accurately represents the content, where to find it, and where to add it.
 

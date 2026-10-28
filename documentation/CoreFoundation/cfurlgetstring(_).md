@@ -25,7 +25,7 @@ func CFURLGetString(_ anURL: CFURL!) -> CFString!
 extern CFStringRefCFURLGetString(CFURLRef anURL);
 ```
 
-#### Return Value
+## Return Value
 
 A string representation of `anURL`. Ownership follows the get rule. See [The Get Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-SW1).
 

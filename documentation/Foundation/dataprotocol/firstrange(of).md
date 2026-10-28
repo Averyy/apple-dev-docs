@@ -21,11 +21,11 @@ Returns the first found range of the type’s data buffer.
 func firstRange<D>(of data: D) -> Range<Self.Index>? where D : DataProtocol
 ```
 
-#### Return Value
+## Return Value
 
 The range, if found, of the first match of the provided data sequence.
 
-#### Discussion
+## Discussion
 
 An example of searching a data buffer converted from a string:
 

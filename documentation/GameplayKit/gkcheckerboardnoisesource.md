@@ -24,7 +24,7 @@ class GKCheckerboardNoiseSource
 @interface GKCheckerboardNoiseSource : GKNoiseSource
 ```
 
-#### Overview
+## Overview
 
 Checkerboard noise can be useful as an input to [`GKNoise`](./gknoise.md) methods that create noise by combining other noise objects through various operations.
 

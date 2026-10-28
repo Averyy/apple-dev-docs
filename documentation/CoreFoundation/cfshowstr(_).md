@@ -25,7 +25,7 @@ func CFShowStr(_ str: CFString!)
 extern void CFShowStr(CFStringRef str);
 ```
 
-#### Discussion
+## Discussion
 
 Use this function to learn about specific attributes of a CFString object during debugging. These attributes include the following:
 
@@ -37,7 +37,7 @@ Use this function to learn about specific attributes of a CFString object during
 
 The information provided by this function is for debugging purposes only. The values of any of these attributes might change between different releases and on different platforms. Note in particular that this function does not show the contents of the string. If you want to display the contents of the string, use [`CFShow(_:)`](./cfshow%28_%29.md).
 
-##### Special Considerations
+### Special Considerations
 
 You can use `CFShowStr` in one of two general ways. If your debugger supports function calls (such as `gdb` does), call `CFShowStr` in the debugger:
 

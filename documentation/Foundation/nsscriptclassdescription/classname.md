@@ -20,7 +20,7 @@ var className: String? { get }
 @property (copy, readonly, nullable) NSString * className;
 ```
 
-#### Return Value
+## Return Value
 
 A class name. This may be either the human-readable name for the class—that is, the name that is used in a script—or the name of the Objective-C class that is instantiated to implement the class. To reliably obtain the implementation name, use [`implementationClassName`](./implementationclassname.md).
 

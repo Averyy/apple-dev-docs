@@ -25,11 +25,11 @@ class var lowercaseLetters: CharacterSet { get }
 @property (class, copy, readonly) NSCharacterSet * lowercaseLetterCharacterSet;
 ```
 
-#### Return Value
+## Return Value
 
 A character set containing all the lowercase letter characters.
 
-#### Discussion
+## Discussion
 
 Informally, this set is the set of all characters used as lowercase letters in alphabets that make case distinctions.
 

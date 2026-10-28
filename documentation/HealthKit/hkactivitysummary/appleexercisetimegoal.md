@@ -24,7 +24,7 @@ var appleExerciseTimeGoal: HKQuantity { get set }
 @property (nonatomic, strong) HKQuantity * appleExerciseTimeGoal;
 ```
 
-#### Discussion
+## Discussion
 
 The [`HKQuantity`](../hkquantity.md) object for this property must use time units.
 

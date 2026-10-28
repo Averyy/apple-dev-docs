@@ -6,7 +6,7 @@
 
 An array of colors.
 
-#### Overview
+## Overview
 
 Each color is made of four unsigned 16-bit integers. The first integer must be set to `0`, the second is the red value, the third is the green value, and the fourth is the blue value.
 

@@ -19,7 +19,7 @@ An error indicating that the system can’t transfer a file because it is inacce
 static var fileAccessDenied: WCError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 This error can occur when the file path is invalid or the app has insufficient privileges to access the file.
 

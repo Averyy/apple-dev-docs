@@ -15,7 +15,7 @@ Hashes the essential components of this value by feeding them into the given has
 func hash(into hasher: inout Hasher)
 ```
 
-#### Discussion
+## Discussion
 
 - hasher: The hasher to use when combining the components of this instance.
 

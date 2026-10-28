@@ -23,7 +23,7 @@ var selectedDataSource: AVAudioSessionDataSourceDescription? { get }
 @property (nonatomic, readonly, nullable) AVAudioSessionDataSourceDescription * selectedDataSource;
 ```
 
-#### Discussion
+## Discussion
 
 If this property returns `nil`, the port doesn’t support selecting between multiple data sources.
 

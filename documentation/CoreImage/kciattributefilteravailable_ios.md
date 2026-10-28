@@ -24,7 +24,7 @@ let kCIAttributeFilterAvailable_iOS: String
 extern NSString * const kCIAttributeFilterAvailable_iOS;
 ```
 
-#### Discussion
+## Discussion
 
 The iOS version in which the filter first became available, specified as an [`NSString`](../Foundation/nsstring.md) object.
 

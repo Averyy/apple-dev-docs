@@ -24,7 +24,7 @@ class func setDisableActions(_ flag: Bool)
 + (void) setDisableActions:(BOOL) flag;
 ```
 
-#### Discussion
+## Discussion
 
 This is a convenience method that invokes [`setValue(_:forKey:)`](./setvalue%28_,forkey%29.md) with an `NSNumber` containing a [`true`](../../Swift/true.md) for the  [`kCATransactionDisableActions`](../kcatransactiondisableactions.md) key.
 

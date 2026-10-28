@@ -19,7 +19,7 @@ func deactivate()
 - (void) deactivate;
 ```
 
-#### Discussion
+## Discussion
 
 This method detaches the color well from the system color panel. Future selections in the color panel don’t update the color well’s current color.
 

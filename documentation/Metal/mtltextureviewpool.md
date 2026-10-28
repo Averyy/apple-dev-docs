@@ -28,7 +28,7 @@ protocol MTLTextureViewPool : MTLResourceViewPool
 
 - [Understanding the Metal 4 core API](./understanding-the-metal-4-core-api.md)
 
-#### Overview
+## Overview
 
 Use texture view pools to create lightweight texture view objects of [`MTLTexture`](./mtltexture.md) and [`MTLBuffer`](./mtlbuffer.md) instances.
 

@@ -18,7 +18,7 @@ Returns the text combine at the index position.
 - (AVCaptionTextCombine) textCombineAtIndex:(NSInteger) index range:(NSRange *) outRange;
 ```
 
-#### Return Value
+## Return Value
 
 The text combine.
 

@@ -15,7 +15,7 @@ The maximum number of records to fetch.
 readonly attribute Number resultsLimit;
 ```
 
-#### Discussion
+## Discussion
 
 The default is the maximum number of records in a response that is allowed, described in [Data Size Limits](https://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/CloudKitWebServicesReference/PropertyMetrics.html#//apple_ref/doc/uid/TP40015240-CH23).
 

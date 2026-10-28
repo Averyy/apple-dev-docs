@@ -28,11 +28,11 @@ class func headingAvailable() -> Bool
 
 - [Configuring your app to use location services](../configuring-your-app-to-use-location-services.md)
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if heading data is available; [`false`](../../Swift/false.md) if it is not.
 
-#### Discussion
+## Discussion
 
 Heading data may not be available on all iOS-based devices. You should check the value returned by this method before asking the location manager to deliver heading-related events.
 

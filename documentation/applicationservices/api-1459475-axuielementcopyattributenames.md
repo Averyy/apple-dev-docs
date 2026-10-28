@@ -19,7 +19,7 @@ func AXUIElementCopyAttributeNames(_ element: AXUIElement, _ names: UnsafeMutabl
 AXError AXUIElementCopyAttributeNames(AXUIElementRef element, CFArrayRef  _Nullable *names);
 ```
 
-#### Return Value
+## Return Value
 
 If unsuccessful, `AXUIElementCopyAttributeNames` may return one of the following error codes, among others:
 

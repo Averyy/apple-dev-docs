@@ -18,11 +18,11 @@ The declaration to configure a VPN using the Always On sub-type.
 object NetworkVPNAlwaysOn
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.configuration.network.vpn.always-on` as the declaration type.
 
-##### Configuration availability
+### Configuration availability
 
 |  |  |
 | --- | --- |
@@ -34,7 +34,7 @@ Specify `com.apple.configuration.network.vpn.always-on` as the declaration type.
 | Allowed in user scope | N/A |
 | Apply | Only a single configuration is applied |
 
-##### Configuration example
+### Configuration example
 
 This configuration sets up an always-on IKEv2 VPN for both Cellular and Wi-Fi interfaces using certificate authentication.
 

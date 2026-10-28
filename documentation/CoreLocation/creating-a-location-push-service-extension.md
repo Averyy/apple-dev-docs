@@ -5,7 +5,7 @@
 
 Add and configure an extension to enable your location-sharing app to access a person’s location in response to a request from someone else.
 
-#### Overview
+## Overview
 
 The Location Push Service Extension (LPSE), available starting in iOS 15, is a power-efficient way to query locations on iOS or iPadOS devices, even when your app isn’t running.
 
@@ -15,7 +15,7 @@ When your app includes this extension, the system activates it when it receives 
 
 Once a person authorizes location data, the extension can query their location and process it for your app. Your server sends requests with the `location` push type to APNs. For more information about sending requests to APNs, see [Sending notification requests to APNs](../UserNotifications/sending-notification-requests-to-apns.md).
 
-##### Understand the limitations of LPSE and push event allocations
+### Understand the limitations of LPSE and push event allocations
 
 The following list details the operational constraints and expectation for apps that adopt the LPSE:
 
@@ -27,7 +27,7 @@ The following list details the operational constraints and expectation for apps 
 - If no more push event handling capacity exists, the system unregisters from the push topic to protect battery life for some time; the device doesn’t receive push events during this period.
 - There’s no way to find out how many push events are remaining at any given time.
 
-##### Configure Your Xcode Project
+### Configure Your Xcode Project
 
 To include Location Push Service Extension in your app, configure entitlements, capabilities, and keys for your Xcode project in these steps:
 
@@ -35,7 +35,7 @@ To include Location Push Service Extension in your app, configure entitlements, 
 - Enable your app to receive Apple Push Notification service (APNs) pushes by adding the Push Notifications capability. For more information, see [Registering your app with APNs](../UserNotifications/registering-your-app-with-apns.md).
 - Configure the purpose strings your app provides for the location service authorization prompts. For more information, see [Requesting authorization to use location services](./requesting-authorization-to-use-location-services.md).
 
-##### Add a Location Push Service Extension Target
+### Add a Location Push Service Extension Target
 
 Add a new target using the Location Push Service Extension template.
 
@@ -48,7 +48,7 @@ Add a new target using the Location Push Service Extension template.
 
 Xcode creates a subclass of [`CLLocationPushServiceExtension`](./cllocationpushserviceextension.md) to get you started.
 
-##### Implement Location Push Functionality
+### Implement Location Push Functionality
 
 To support location push functionality, implement these steps in your extension, app, and server:
 
@@ -63,7 +63,7 @@ For more information, see the [`CLServiceSession`](./clservicesession-pt7n.md) d
 
 > ❗ **Important**:  Help protect a person’s privacy when your app handles location data. Use end-to-end encryption to provide enhanced security if your app moves location data off someone’s device, including transmitting it to a server or to another person. For more information, see [Protecting the User’s Privacy](../UIKit/protecting-the-user-s-privacy.md).
 
-##### Send Location Push Requests From Your Server
+### Send Location Push Requests From Your Server
 
 When someone requests the location of another person, your app sends the request to your server, which sends a location push request to APNs. Ensure that your APNs `POST` request contains the following fields for a `location` push type:
 

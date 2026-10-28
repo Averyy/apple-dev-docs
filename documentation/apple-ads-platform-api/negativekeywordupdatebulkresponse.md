@@ -15,11 +15,11 @@ The response from a bulk negative keyword update request, containing results for
 object NegativeKeywordUpdateBulkResponse
 ```
 
-#### Discussion
+## Discussion
 
 The bulk negative keyword update endpoint returns `NegativeKeywordUpdateBulkResponse` as its response envelope. When `allowPartialSuccess` is `true` in the request, inspect each item’s `success` field to determine which updates applied. The response populates `error` only when the system rejects the overall request before processing any items.
 
-##### Example
+### Example
 
 ```json
 {

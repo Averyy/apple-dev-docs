@@ -21,7 +21,7 @@ Returns the first node definition with the given name, or `nil` if none is found
 final func definition(named name: String, in bundle: String? = nil) -> ComputeNodeGraph.NodeDefinition?
 ```
 
-#### Discussion
+## Discussion
 
 Pass `nil` for `bundle` to search across all bundles.
 

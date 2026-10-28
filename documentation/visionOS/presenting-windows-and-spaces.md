@@ -5,7 +5,7 @@
 
 Open and close the scenes that make up your app’s interface.
 
-#### Overview
+## Overview
 
 An app’s scenes, which contain views that people interact with, can take different forms. For example, a scene can fill a window, a tab in a window, or an entire screen. Some scenes can even place views throughout a person’s surroundings. How a scene appears depends on its type, the platform, and the context.
 
@@ -28,7 +28,7 @@ struct MailReader: App {
 
 In visionOS, you can alternatively configure your app to open the first [`ImmersiveSpace`](../SwiftUI/immersivespace.md) that the app declares. In any case, specific platforms and configurations enable you to open more than one scene at a time. Under those conditions, you can use actions that appear in the environment to programmatically open and close the scenes in your app.
 
-##### Check for multiple-scene support
+### Check for multiple-scene support
 
 If you share code among different platforms and need to find out at runtime whether the current system supports displaying multiple scenes, read the [`supportsMultipleWindows`](../SwiftUI/environmentvalues/supportsmultiplewindows.md) environment value. The following code creates a button that’s hidden unless the app supports multiple windows:
 
@@ -54,7 +54,7 @@ The value that you read depends on both the platform and how you configure your 
 
 If your app only ever runs in one of these situations, you can assume the associated behavior and don’t need to check the value.
 
-##### Enable multiple simultaneous scenes
+### Enable multiple simultaneous scenes
 
 You can always present multiple scenes in macOS. To enable an iPadOS or visionOS app to simultaneously display multiple scenes — including [`ImmersiveSpace`](../SwiftUI/immersivespace.md) scenes in visionOS — add the [`UIApplicationSupportsMultipleScenes`](../BundleResources/information-property-list/uiapplicationscenemanifest/uiapplicationsupportsmultiplescenes.md) key with a value of `true` in the [`UIApplicationSceneManifest`](../BundleResources/information-property-list/uiapplicationscenemanifest.md) dictionary of your app’s Information Property List. Use the Info tab in Xcode for your app’s target to add this key:
 
@@ -62,7 +62,7 @@ You can always present multiple scenes in macOS. To enable an iPadOS or visionOS
 
 Apps on other platforms can display only one scene during their lifetime.
 
-##### Open windows programmatically
+### Open windows programmatically
 
 Some platforms provide built-in controls that enable people to open instances of the window-style scenes that your app defines. For example, in macOS people can choose File > New Window from the menu bar to open a new window. SwiftUI also provides ways for you to open new windows programmatically.
 
@@ -92,7 +92,7 @@ Button("Connection Status") {
 }
 ```
 
-##### Open a space programmatically
+### Open a space programmatically
 
 In visionOS, you open an immersive space — a scene that you can use to present unbounded content in a person’s surroundings — in much the same way that you open a window, except that you use the [`openImmersiveSpace`](../SwiftUI/environmentvalues/openimmersivespace.md) action. The action runs asynchronously, so you use the `await` keyword when you call it, and typically do so from inside a [`Task`](../Swift/task.md):
 
@@ -114,13 +114,13 @@ Because your app operates in a Full Space when you open an [`ImmersiveSpace`](..
 
 Your app can display any number of windows together with an immersive space. However, when you open a space from your app, the system hides all windows that belong to other apps. After you dismiss your space, the other apps’ windows reappear. Similarly, the system hides your app’s windows if another app opens an immersive space.
 
-##### Designate a space as your app’s main interface
+### Designate a space as your app’s main interface
 
 When visionOS launches an app, it opens the first window group, window, or document scene that the app’s body declares, just like on other platforms. This is true even if you first declare a space. However, if you want to open your app into an immersive space directly, specify a space as the default scene for your app by adding the [`UIApplicationPreferredDefaultSceneSessionRole`](../BundleResources/information-property-list/uiapplicationpreferreddefaultscenesessionrole.md) key to your app’s information property list and setting its value to `UISceneSessionRoleImmersiveSpaceApplication`. In that case, visionOS opens the first space that it finds in your app declaration.
 
 > ❗ **Important**: Be careful not to overwhelm people when starting your app with an immersive space. For design guidance, see [Immersive experiences](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences).
 
-##### Close windows programmatically
+### Close windows programmatically
 
 People can close windows using system controls, like the close button built into the frame around a macOS window. You can also close windows programmatically. Get the [`dismissWindow`](../SwiftUI/environmentvalues/dismisswindow.md) action from the environment, and call it using the identifier of the window that you want to dismiss:
 
@@ -138,7 +138,7 @@ private struct ContentView: View {
 
 In iPadOS and visionOS, the system ignores the dismiss action if you use it to close a window that’s your app’s only open scene.
 
-##### Close spaces programmatically
+### Close spaces programmatically
 
 To close a space, call the [`dismissImmersiveSpace`](../SwiftUI/environmentvalues/dismissimmersivespace.md) action. Like the corresponding open space action, the close action operates asynchronously and requires the `await` keyword:
 
@@ -158,7 +158,7 @@ private struct ContentView: View {
 
 You don’t need to specify an identifier for this action, because there can only ever be one space open at a time. Like with windows, you can’t dismiss a space that’s your app’s only open scene.
 
-##### Transition between a window and a space
+### Transition between a window and a space
 
 Because you can’t programmatically close the last open window or immersive space in a visionOS app, be sure to open a new scene before closing the old one. Pay particular attention to the sequencing when moving between a window and an immersive space, because the space’s open and dismiss actions run asynchronously.
 

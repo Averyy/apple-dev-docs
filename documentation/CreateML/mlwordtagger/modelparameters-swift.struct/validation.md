@@ -15,7 +15,7 @@ The validation dataset.
 var validation: MLWordTagger.ModelParameters.ValidationData { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The default value is an [`MLWordTagger.ModelParameters.ValidationData.split(strategy:)`](./validationdata-swift.enum/split%28strategy%29.md) instance with the [`MLSplitStrategy.automatic`](../../mlsplitstrategy/automatic.md) split strategy``, which automatically generates the validation dataset by partitioning up to 10% of the training dataset.
 

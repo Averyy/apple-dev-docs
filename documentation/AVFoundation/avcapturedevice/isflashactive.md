@@ -23,7 +23,7 @@ var isFlashActive: Bool { get }
 @property (nonatomic, readonly, getter=isFlashActive) BOOL flashActive;
 ```
 
-#### Discussion
+## Discussion
 
 When the flash is active, it flashes when capturing a photo.
 

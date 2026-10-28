@@ -20,7 +20,7 @@ Returns a new labeled value identifier.
 + (instancetype) labeledValueWithLabel:(NSString *) label value:(ValueType) value;
 ```
 
-#### Return Value
+## Return Value
 
 A new labeled value object.
 

@@ -22,7 +22,7 @@ init?(coder aDecoder: NSCoder)
 - (instancetype) initWithCoder:(NSCoder *) aDecoder;
 ```
 
-#### Discussion
+## Discussion
 
 Called by NSCoder to decode MPSKernels
 

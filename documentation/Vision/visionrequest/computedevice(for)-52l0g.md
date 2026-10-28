@@ -21,11 +21,11 @@ Returns the compute device for a compute stage.
 func computeDevice(for computeStage: ComputeStage) -> MLComputeDevice?
 ```
 
-#### Return Value
+## Return Value
 
 The current compute device; otherwise, `nil` if one isn’t assigned.
 
-#### Discussion
+## Discussion
 
 - `computeStage: `The compute stage to inspect.
 

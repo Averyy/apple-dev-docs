@@ -15,7 +15,7 @@ The name of the text encoding to use.
 static let textEncodingName: NSAttributedString.DocumentAttributeKey
 ```
 
-#### Discussion
+## Discussion
 
 An [`NSString`](../../nsstring.md) object containing the name, IANA or otherwise, of a text encoding to be used. This attribute is mutually exclusive with [`characterEncoding`](./characterencoding.md).
 

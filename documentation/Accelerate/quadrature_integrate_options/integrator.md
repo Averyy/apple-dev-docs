@@ -23,7 +23,7 @@ var integrator: quadrature_integrator
 quadrature_integrator integrator;
 ```
 
-#### Discussion
+## Discussion
 
 Integrators
 

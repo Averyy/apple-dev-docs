@@ -18,7 +18,7 @@ An error indicating that the File Provider extension can’t evict an item.
 static var nonEvictable: NSFileProviderError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 The [`NSFileProviderManager`](../nsfileprovidermanager.md) throws this error when you attempt to evict an item that doesn’t have the [`allowsEvicting`](../nsfileprovideritemcapabilities/allowsevicting.md) capability. The system sets the error’s [`NSURLErrorKey`](../../Foundation/nsurlerrorkey.md) to the URL of the item that the error affects.
 

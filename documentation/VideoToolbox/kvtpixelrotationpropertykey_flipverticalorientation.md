@@ -24,7 +24,7 @@ let kVTPixelRotationPropertyKey_FlipVerticalOrientation: CFString
 extern CFStringRef const kVTPixelRotationPropertyKey_FlipVerticalOrientation;
 ```
 
-#### Discussion
+## Discussion
 
 Pass a value of [`true`](../Swift/true.md) to apply a vertical flip after rotation.
 

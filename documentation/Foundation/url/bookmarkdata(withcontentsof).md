@@ -21,7 +21,7 @@ Initializes and returns bookmark data derived from an alias file pointed to by a
 static func bookmarkData(withContentsOf url: URL) throws -> Data
 ```
 
-#### Discussion
+## Discussion
 
 If bookmarkFileURL refers to an alias file created prior to OS X 10.6 that contains Alias Manager information but no bookmark data, this method synthesizes bookmark data for the file.
 

@@ -25,7 +25,7 @@ var floatValue: Float { get set }
 @property (nonatomic) float floatValue;
 ```
 
-#### Discussion
+## Discussion
 
 If the receiver’s original value is a vector, [`floatValue`](./floatvalue.md) is the first element of the vector.
 

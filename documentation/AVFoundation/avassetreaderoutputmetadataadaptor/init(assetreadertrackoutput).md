@@ -26,7 +26,7 @@ init(assetReaderTrackOutput trackOutput: AVAssetReaderTrackOutput)
 - (instancetype) initWithAssetReaderTrackOutput:(AVAssetReaderTrackOutput *) trackOutput;
 ```
 
-#### Discussion
+## Discussion
 
 You can only create an adaptor with a track output that vends metadata, and that isn’t associated with another adaptor instance. Likewise, you can only create an adaptor with a track output whose asset reader hasn’t started reading.
 

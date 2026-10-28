@@ -18,7 +18,7 @@ The level of detail the view is recommended to have.
 struct LevelOfDetail
 ```
 
-#### Overview
+## Overview
 
 The system can update the levelOfDetail value based on user proximity or other system specific factors and allow content customization adapting to show different levels of details.
 

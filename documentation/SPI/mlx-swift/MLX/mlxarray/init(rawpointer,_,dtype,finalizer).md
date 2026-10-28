@@ -17,7 +17,7 @@ Initialize an MLXArray by transferring ownership of a raw pointer.
 convenience init(rawPointer: UnsafeMutableRawPointer, _ shape: (some Collection<Int>)? = [Int]?.none, dtype: DType, finalizer: @escaping () -> Void)
 ```
 
-#### Discussion
+## Discussion
 
 Note: the raw pointer must be compatible with the computational backing, e.g. a Metal stream requires something compatible with an `MTLBuffer`.
 

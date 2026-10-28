@@ -14,11 +14,11 @@ virtual IOReturn commandSleep(
  UInt32interruptible);
 ```
 
-#### Return Value
+## Return Value
 
 THREAD_AWAKENED - normal wakeup, THREAD_TIMED_OUT - timeout expired, THREAD_INTERRUPTED - interrupted, THREAD_RESTART - restart operation entirely, kIOReturnNotPermitted if the calling thread does not hold the command gate.
 
-#### Overview
+## Overview
 
 Put a thread to sleep waiting for an event but release the gate first. If the event occurs or timeout occurs then the commandGate is closed before the function returns.
 

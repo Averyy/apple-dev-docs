@@ -24,7 +24,7 @@ class func completionBlock() -> (() -> Void)?
 + (void (^)(void)) completionBlock;
 ```
 
-#### Discussion
+## Discussion
 
 See [`setCompletionBlock(_:)`](./setcompletionblock%28_%29.md) for a description of the role of the completion block object.
 

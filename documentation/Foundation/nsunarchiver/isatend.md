@@ -24,7 +24,7 @@ var isAtEnd: Bool { get }
 @property (readonly, getter=isAtEnd) BOOL atEnd;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the receiver has reached the end of the encoded data while decoding, otherwise [`false`](../../Swift/false.md).
 

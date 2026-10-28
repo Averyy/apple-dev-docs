@@ -19,7 +19,7 @@ An array of win-back offer identifiers that a customer is eligible to redeem, wh
 
 - [App Store Server API changelog](./app-store-server-api-changelog.md)
 
-#### Discussion
+## Discussion
 
 Use this list to select an eligible win-back offer for a customer. The array contains strings that represent offer identifiers for win-back offers.  You provide the offer identifier in App Store Connect when you configure a win-back offer.
 

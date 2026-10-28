@@ -20,7 +20,7 @@ var emulatedEffects: UInt32
 UInt32 emulatedEffects;
 ```
 
-#### Discussion
+## Discussion
 
 The emulated effects flags must also appear in the supportedEffects member. This value can be a combination of one or more of the following values:
 

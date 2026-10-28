@@ -21,7 +21,7 @@ Returns a time zone initialized with a given identifier.
 init?(identifier: String)
 ```
 
-#### Discussion
+## Discussion
 
 An example identifier is “America/Los_Angeles”.
 

@@ -25,7 +25,7 @@ var structure: SparseMatrixStructureComplex
 SparseMatrixStructureComplex structure;
 ```
 
-#### Discussion
+## Discussion
 
 The sparsity structure is represented in *block compressed sparse column* (block CSC) format. The matrix is divided into a regular grid of `rowCount x columnCount` blocks each of size `blockSize x blockSize`, and only blocks containing a non-zero entry are stored. CSC format is used to store the locations of these blocks. For each block column, a list of block row indices for non-zero blocks are stored, and the lists for each column are stored contiguously one after the other. Hence the row indices for column j are given by rowIndices`[columnStarts[j]:columnStarts[j+1]]`, where `columnStarts[]` is storing the location of the first index in each column.
 

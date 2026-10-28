@@ -19,7 +19,7 @@ func itemIdentifiersInSection(withIdentifier sectionIdentifier: Any) -> [Any]
 - (NSArray<id> *) itemIdentifiersInSectionWithIdentifier:(SectionIdentifierType) sectionIdentifier;
 ```
 
-#### Return Value
+## Return Value
 
 An array of identifiers of the items contained in the section.
 

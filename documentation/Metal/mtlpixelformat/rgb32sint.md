@@ -24,7 +24,7 @@ case rgb32Sint
 MTLPixelFormatRGB32Sint
 ```
 
-#### Discussion
+## Discussion
 
 The order of the color components in this format are red, green and blue.
 

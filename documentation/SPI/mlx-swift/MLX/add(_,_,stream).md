@@ -21,7 +21,7 @@ func add(_ a: some ScalarOrArray, _ b: some ScalarOrArray, stream: StreamOrDevic
 
 - [Converting From Python](./converting-python.md)
 
-#### Discussion
+## Discussion
 
 Add two arrays with [Numpy Style Broadcasting](./broadcasting.md).
 
@@ -35,7 +35,7 @@ let b = MLXArray([4, 5, 6])
 let r = add(add(a, b), 7)
 ```
 
-##### See Also
+### See Also
 
 - [Arithmetic](./arithmetic.md)
 - [`+(_:_:)`](./mlxarray/plus%28_,_%29-1rv98.md)

@@ -5,13 +5,13 @@
 
 Learn about important changes in TipKit.
 
-#### Overview
+## Overview
 
 Browse notable changes in TipKit.
 
-#### June 2024
+## June 2024
 
-##### General
+### General
 
 - Synchronize tips, rules, parameters, and events across people’s devices with the new CloudKit configuration using the `Tips.ConfigurationOption`.
 - Invalidate tips after they display for a specified duration using the new `MaxDisplayDuration` property.

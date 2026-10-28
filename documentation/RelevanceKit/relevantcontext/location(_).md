@@ -20,11 +20,11 @@ Tells the system a widget is relevant at a specific location.
 static func location(_ exact: CLRegion) -> RelevantContext
 ```
 
-#### Return Value
+## Return Value
 
 A contextual clue that the system uses to determine the relevance of a widget in the Smart Stack on Apple Watch.
 
-#### Discussion
+## Discussion
 
 To indicate relevance at a specific location, request a person’s permission to access their location with the When in Use or Always access level. For more information on creating a widget that can access location information, refer to [Accessing location information in widgets](../../WidgetKit/accessing-location-information-in-widgets.md).
 

@@ -5,7 +5,7 @@
 
 Describes the macOS Objective-C runtime library support functions and data structures.
 
-#### Overview
+## Overview
 
 The Objective-C runtime is a runtime library that provides support for the dynamic properties of the Objective-C language, and as such is linked to by all Objective-C apps. Objective-C runtime library support functions are implemented in the shared library found at `/usr/lib/libobjc.A.dylib`.
 
@@ -19,7 +19,7 @@ The low-level Objective-C runtime API is significantly updated in OS X version 1
 
 “Deprecated” below means “deprecated in OS X version 10.5 for 32-bit code, and disallowed for 64-bit code.”
 
-##### Who Should Read This Document
+### Who Should Read This Document
 
 The document is intended for readers who might be interested in learning about the Objective-C runtime.
 

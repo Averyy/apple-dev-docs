@@ -19,7 +19,7 @@ optional var contentHasInterframeDependencies: Bool { get }
 @property (readonly) BOOL contentHasInterframeDependencies;
 ```
 
-#### Discussion
+## Discussion
 
 The system queries this property on the extension when [Video Toolbox](../../VideoToolbox/VideoToolbox.md) queries the [`kVTDecompressionPropertyKey_ContentHasInterframeDependencies`](../../VideoToolbox/kvtdecompressionpropertykey_contenthasinterframedependencies.md) on the hosting [`VTDecompressionSession`](../../VideoToolbox/vtdecompressionsession.md).
 

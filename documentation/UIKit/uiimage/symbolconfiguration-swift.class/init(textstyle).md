@@ -24,11 +24,11 @@ convenience init(textStyle: UIFont.TextStyle)
 + (instancetype) configurationWithTextStyle:(UIFontTextStyle) textStyle;
 ```
 
-#### Return Value
+## Return Value
 
 A new symbol configuration object with the specified information.
 
-#### Discussion
+## Discussion
 
 Symbol images pick up the font styling information associated with the specified text style, causing them to match any text that uses the same style. Like it does for the text, UIKit scales the image to match the current Dynamic Type setting.
 

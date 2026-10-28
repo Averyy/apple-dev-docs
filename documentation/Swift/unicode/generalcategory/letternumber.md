@@ -21,7 +21,7 @@ A letter-like numeric character.
 case letterNumber
 ```
 
-#### Discussion
+## Discussion
 
 This value corresponds to the category `Letter_Number` (abbreviated `Nl`) in the [Unicode Standard](https://unicode.org/reports/tr44/#General_Category_Values).
 

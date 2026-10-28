@@ -25,7 +25,7 @@ func writeValue(_ data: Data, for characteristic: CBCharacteristic, type: CBChar
 - (void) writeValue:(NSData *) data forCharacteristic:(CBCharacteristic *) characteristic type:(CBCharacteristicWriteType) type;
 ```
 
-#### Discussion
+## Discussion
 
 When you call this method to write the value of a characteristic, the peripheral calls the [`peripheral(_:didWriteValueFor:error:)`](../cbperipheraldelegate/peripheral%28_,didwritevaluefor,error%29-4f5ea.md) method of its delegate object only if you specified the write type as [`CBCharacteristicWriteType.withResponse`](../cbcharacteristicwritetype/withresponse.md). The response you receive through the [`peripheral(_:didWriteValueFor:error:)`](../cbperipheraldelegate/peripheral%28_,didwritevaluefor,error%29-4f5ea.md) delegate method indicates whether the write was successful; if the write failed, it details the cause of the failure in an error.
 

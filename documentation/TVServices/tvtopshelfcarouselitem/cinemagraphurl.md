@@ -19,7 +19,7 @@ var cinemagraphURL: URL? { get set }
 @property (nonatomic, copy, nullable) NSURL * cinemagraphURL;
 ```
 
-#### Discussion
+## Discussion
 
 If you specify a value for this property, the system initially displays the corresponding video instead of a static image. The video plays in a loop until the preview video loads and is ready to play. If you do not specify a value for this property, the system displays the image you set using the [`setImageURL(_:for:)`](../tvtopshelfitem/setimageurl%28_,for%29.md) method.
 

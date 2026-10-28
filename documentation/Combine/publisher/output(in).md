@@ -21,11 +21,11 @@ Publishes elements specified by their range in the sequence of published element
 func output<R>(in range: R) -> Publishers.Output<Self> where R : RangeExpression, R.Bound == Int
 ```
 
-#### Return Value
+## Return Value
 
 A publisher that publishes elements specified by a range.
 
-#### Discussion
+## Discussion
 
 Use [`output(in:)`](./output%28in%29.md) to republish a range indices you specify in the published stream. After publishing all elements, the publisher finishes normally. If the publisher completes normally or with an error before producing all the elements in the range, it doesn’t publish the remaining elements.
 

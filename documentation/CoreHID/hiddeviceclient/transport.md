@@ -19,7 +19,7 @@ var transport: HIDDeviceTransport? { get }
 
 - [Communicating with human interface devices](../communicatingwithhiddevices.md)
 
-#### Discussion
+## Discussion
 
 A [`HIDDeviceTransport`](../hiddevicetransport.md) that specifies the type of transport the data sent to and from the device uses, if known.
 

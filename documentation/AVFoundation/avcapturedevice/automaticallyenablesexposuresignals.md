@@ -22,7 +22,7 @@ var automaticallyEnablesExposureSignals: Bool { get set }
 @property (nonatomic) BOOL automaticallyEnablesExposureSignals;
 ```
 
-#### Discussion
+## Discussion
 
 The `enabledExposureSignals` property can only be assigned when `automaticallyEnablesExposureSignals` is false, otherwise assignments to `enabledExposureSignals` will throw an exception.
 

@@ -29,11 +29,11 @@ func makeCommandQueue() -> (any MTLCommandQueue)?
 
 - [Setting up a command structure](../setting-up-a-command-structure.md)
 
-#### Return Value
+## Return Value
 
 A new [`MTLCommandQueue`](../mtlcommandqueue.md) instance if the method completed successfully; otherwise `nil`.
 
-#### Discussion
+## Discussion
 
 A command queue can only submit commands to the GPU device instance that created it.
 

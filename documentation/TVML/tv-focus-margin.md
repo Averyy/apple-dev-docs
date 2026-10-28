@@ -5,11 +5,11 @@
 
 Specifies the amount of space required for a custom cell element in focus.
 
-#### Overview
+## Overview
 
 > ❗ **Important**: `tv-focus-margin` can only be used with custom cell elements created in your binary.
 
-##### Values for tv-focus-margin
+### Values for tv-focus-margin
 
 - **Integer**: The amount of space, in points, around each side of the cell indicating the room needed for a focusable, custom cell element.
 - **Integer, Integer**: The amount of space, in points, around each side of the cell indicating the room needed for a focusable, custom cell element. The first value controls the top and bottom. The second value controls the left and right sides.

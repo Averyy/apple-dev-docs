@@ -21,7 +21,7 @@ final class OnDemandComponent<Content> where Content : Module
 
 - [Model Compatibility](./model-compatibility.md)
 
-#### Overview
+## Overview
 
 `Content` holds the component’s modules at the paths they have in the model:
 

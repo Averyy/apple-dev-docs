@@ -26,7 +26,7 @@ var accessLevel: VSSubscriptionAccessLevel { get set }
 @property (nonatomic, assign) VSSubscriptionAccessLevel accessLevel;
 ```
 
-#### Discussion
+## Discussion
 
 An error occurs if you try to set this property to [`VSSubscriptionAccessLevel.unknown`](../vssubscriptionaccesslevel/unknown.md).
 

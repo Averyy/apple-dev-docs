@@ -24,7 +24,7 @@ static let eventType: CHHapticPattern.Key
 extern CHHapticPatternKey CHHapticPatternKeyEventType;
 ```
 
-#### Discussion
+## Discussion
 
 The type is a [`CHHapticEvent.EventType`](../../chhapticevent/eventtype.md) value.
 

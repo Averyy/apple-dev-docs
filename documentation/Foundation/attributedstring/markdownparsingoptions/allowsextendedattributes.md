@@ -21,7 +21,7 @@ A Boolean value that indicates whether parsing allows extensions to Markdown tha
 var allowsExtendedAttributes: Bool
 ```
 
-#### Discussion
+## Discussion
 
 If this value is `false`, the Markdown parser supports only the CommonMark syntax. The default is `false`.
 

@@ -20,11 +20,11 @@ Creates a new render pipeline state asynchronously.
 - (id<MTL4CompilerTask>) newRenderPipelineStateWithDescriptor:(MTL4PipelineDescriptor *) descriptor compilerTaskOptions:(MTL4CompilerTaskOptions *) compilerTaskOptions completionHandler:(MTLNewRenderPipelineStateCompletionHandler) completionHandler;
 ```
 
-#### Return Value
+## Return Value
 
 A compiler task representing the asynchronous compilation task.
 
-#### Discussion
+## Discussion
 
 Use this method to build any render pipeline type, including render, tile, and mesh render pipeline states. The type of the descriptor you pass indicates the pipeline type this method builds.
 

@@ -24,7 +24,7 @@ case blendAlpha
 MTLBlendFactorBlendAlpha
 ```
 
-#### Discussion
+## Discussion
 
 `F = a`
 

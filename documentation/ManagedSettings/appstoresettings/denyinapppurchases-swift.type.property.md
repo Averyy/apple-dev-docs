@@ -17,7 +17,7 @@ The metadata associated with the setting to deny in-app purchases.
 static let denyInAppPurchases: SettingMetadata<Bool>
 ```
 
-#### Discussion
+## Discussion
 
 Use `denyInAppPurchases` to access metadata about [`denyInAppPurchases`](./denyinapppurchases-swift.property.md). The default value is `false`.
 

@@ -23,7 +23,7 @@ case completed
 INPaymentStatusCompleted
 ```
 
-#### Discussion
+## Discussion
 
 Use this constant when the funds have been successfully transferred to the payee’s account.
 

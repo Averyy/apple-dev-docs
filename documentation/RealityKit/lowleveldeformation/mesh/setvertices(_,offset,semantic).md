@@ -18,7 +18,7 @@ Binds a Metal buffer to the vertex attribute with the specified semantic.
 func setVertices(_ buffer: any MTLBuffer, offset: Int, semantic: LowLevelDeformation.VertexSemantic) throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: If the semantic is absent from the descriptor, if `offset` is out of bounds for `buffer`, or if the buffer is too small for the declared stride and vertex count.
 

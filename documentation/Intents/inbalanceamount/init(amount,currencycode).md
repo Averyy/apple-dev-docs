@@ -23,11 +23,11 @@ init(amount: NSDecimalNumber, currencyCode: String)
 - (instancetype) initWithAmount:(NSDecimalNumber *) amount currencyCode:(NSString *) currencyCode;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized [`INBalanceAmount`](../inbalanceamount.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to initialize balance amounts involving currencies. The [`balanceType`](./balancetype.md) property is automatically set to [`INBalanceType.money`](../inbalancetype/money.md).
 

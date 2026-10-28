@@ -17,7 +17,7 @@ Returns whether a string representing a numeric or date value is formatted in a 
 - (BOOL) isEntryAcceptable:(NSString *) string;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if `aString` is formatted appropriately for the receiver, otherwise [`false`](../../Swift/false.md).
 

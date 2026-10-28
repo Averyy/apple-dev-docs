@@ -23,7 +23,7 @@ init(displayName: String, category: DDDevice.Category, protocolType: UTType, ide
 - (instancetype) initWithDisplayName:(NSString *) displayName category:(DDDeviceCategory) category protocolType:(UTType *) protocolType identifier:(NSString *) identifier;
 ```
 
-#### Discussion
+## Discussion
 
 As an example `identifier` for Bluetooth devices, your extension can use the device’s local name (see [`CBAdvertisementDataLocalNameKey`](../../CoreBluetooth/cbadvertisementdatalocalnamekey.md)).
 

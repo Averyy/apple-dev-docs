@@ -22,7 +22,7 @@ var representedObject: Any? { get set }
 @property (nonatomic, strong, nullable) id representedObject;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to keep information required to restore a search from state restoration, paste a search token, or perform the user’s search.
 

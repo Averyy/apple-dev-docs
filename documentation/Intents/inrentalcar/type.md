@@ -32,7 +32,7 @@ var type: String? { get }
 @property (atomic, copy, readonly, nullable) NSString * type;
 ```
 
-#### Discussion
+## Discussion
 
 This property typically contains a string that describes the type of rental car reserved as defined by the rental car company, such as “Economy Class” or “Compact”.
 

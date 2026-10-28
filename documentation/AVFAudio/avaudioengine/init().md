@@ -25,11 +25,11 @@ init()
 - (instancetype) init;
 ```
 
-#### Return Value
+## Return Value
 
 A new `AVAudioEngine` instance.
 
-#### Discussion
+## Discussion
 
 To operate in manual rendering mode, which removes real-time running constraints, see [`enableManualRenderingMode(_:format:maximumFrameCount:)`](./enablemanualrenderingmode%28_,format,maximumframecount%29.md).
 

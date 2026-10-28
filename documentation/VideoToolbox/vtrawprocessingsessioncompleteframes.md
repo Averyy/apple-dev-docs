@@ -15,7 +15,7 @@ Forces the RAW Processor to complete processing frames.
 extern OSStatus VTRAWProcessingSessionCompleteFrames(VTRAWProcessingSessionRef session);
 ```
 
-#### Discussion
+## Discussion
 
 Call this after calling a set of [`VTRAWProcessingSessionProcessFrame`](./vtrawprocessingsessionprocessframe.md) calls to ensure that all frames have been processed. Before [`VTRAWProcessingSessionCompleteFrames`](./vtrawprocessingsessioncompleteframes.md) returns, the output handler will be invoked for all pending frames.
 

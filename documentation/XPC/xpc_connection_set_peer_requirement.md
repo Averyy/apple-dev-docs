@@ -19,7 +19,7 @@
 extern void xpc_connection_set_peer_requirement(xpc_connection_t connection, xpc_peer_requirement_t peer_requirement);
 ```
 
-#### Discussion
+## Discussion
 
 Requires that the connection peer has the specified requirement.
 

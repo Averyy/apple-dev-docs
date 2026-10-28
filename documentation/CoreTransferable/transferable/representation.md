@@ -22,7 +22,7 @@ The type of the representation used to import and export the item.
 associatedtype Representation : TransferRepresentation
 ```
 
-#### Discussion
+## Discussion
 
 Swift infers this type from the return value of the [`transferRepresentation`](./transferrepresentation.md) property.
 

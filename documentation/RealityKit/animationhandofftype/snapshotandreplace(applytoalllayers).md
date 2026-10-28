@@ -20,7 +20,7 @@ Stops the current animation and uses the current value of that animation as the 
 static func snapshotAndReplace(applyToAllLayers: Bool = true) -> AnimationHandoffType
 ```
 
-#### Discussion
+## Discussion
 
 If `applyToAllLayers` is `false`, the handoff only replaces current animations that have the same `layerId` as the `blendLayerOffset` parameter in the `playAnimation()` call.
 

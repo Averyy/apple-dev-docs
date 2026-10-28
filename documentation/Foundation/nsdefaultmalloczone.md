@@ -23,11 +23,11 @@ Returns the default zone.
 extern NSZone *NSDefaultMallocZone();
 ```
 
-#### Return Value
+## Return Value
 
 The default zone, which is created automatically at startup.
 
-#### Discussion
+## Discussion
 
 This zone is used by the standard C function `malloc`.
 

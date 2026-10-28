@@ -24,7 +24,7 @@ func removeElement(_ element: ElementType, boundingRectMin: vector_float2, bound
 - (void) removeElement:(ElementType) element boundingRectMin:(vector_float2) boundingRectMin boundingRectMax:(vector_float2) boundingRectMax;
 ```
 
-#### Discussion
+## Discussion
 
 Removing an object from the tree requires first finding that object within the tree’s internal structure. Because the tree organizes itself spatially, you must search for the node to be removed based on the region it occupies. The `boundingRectMin` and `boundingRectMax` parameters identify this region—to remove an element from the tree, those parameters must identify a region which entirely contains (or is the same as) the region you specified when adding that node to the tree with the [`addElement(_:boundingRectMin:boundingRectMax:splitStrategy:)`](./addelement%28_,boundingrectmin,boundingrectmax,splitstrategy%29.md) method.
 

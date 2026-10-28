@@ -15,7 +15,7 @@ The MPEG-4 High Efficiency AAC Version 2 audio object format.
 MPEG4AAC_HE_V2
 ```
 
-#### Discussion
+## Discussion
 
 This format uses no flags.
 

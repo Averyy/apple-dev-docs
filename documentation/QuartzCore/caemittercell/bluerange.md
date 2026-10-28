@@ -24,7 +24,7 @@ var blueRange: Float { get set }
 @property float blueRange;
 ```
 
-#### Discussion
+## Discussion
 
 The range specifies the mean amount by which the blue component of the [`color`](./color.md) property can vary for the cell.
 

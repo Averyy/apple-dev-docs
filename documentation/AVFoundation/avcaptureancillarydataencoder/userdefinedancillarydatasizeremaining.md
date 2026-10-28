@@ -23,7 +23,7 @@ var userDefinedAncillaryDataSizeRemaining: Int16 { get }
 @property (nonatomic, readonly) int16_t userDefinedAncillaryDataSizeRemaining;
 ```
 
-#### Discussion
+## Discussion
 
 Using SMPTE 291 and SMPTE RDD 18 standards for ancillary data, this property specifies max size in bytes for the user defined portion of that data
 

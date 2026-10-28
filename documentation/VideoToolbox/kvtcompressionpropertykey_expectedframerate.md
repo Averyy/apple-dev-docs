@@ -24,7 +24,7 @@ let kVTCompressionPropertyKey_ExpectedFrameRate: CFString
 extern CFStringRef const kVTCompressionPropertyKey_ExpectedFrameRate;
 ```
 
-#### Discussion
+## Discussion
 
 The frame rate is measured in frames per second.  This setting is not used to control the frame rate; it’s provided as a hint to the video encoder so that it can set up internal configuration before compression begins. The actual frame rate depends on frame durations and may vary.
 

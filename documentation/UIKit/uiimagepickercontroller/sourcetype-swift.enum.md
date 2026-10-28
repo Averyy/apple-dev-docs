@@ -22,7 +22,7 @@ enum SourceType
 enum UIImagePickerControllerSourceType : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 A given source may not be available on a given device because the source is not physically present or because it cannot currently be accessed.
 

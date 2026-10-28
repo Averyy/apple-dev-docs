@@ -25,11 +25,11 @@ func date(byAdding comps: DateComponents, to date: Date, options opts: NSCalenda
 - (NSDate *) dateByAddingComponents:(NSDateComponents *) comps toDate:(NSDate *) date options:(NSCalendarOptions) opts;
 ```
 
-#### Return Value
+## Return Value
 
 A new `NSDate` object representing the absolute time calculated by adding to `date` the calendrical components specified by `comps` using the options specified by `opts`. Returns `nil` if `date` falls outside the defined range of the receiver or if the computation cannot be performed.
 
-#### Discussion
+## Discussion
 
 Some operations can be ambiguous, and the behavior of the computation is calendar-specific, but generally components are added in the order specified.
 

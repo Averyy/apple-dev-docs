@@ -13,7 +13,7 @@
 kUSBHighSpeedMicrosecondsInFrame = 125
 ```
 
-#### Discussion
+## Discussion
 
 The device is attached to a bus running at high speed (125 microseconds / frame).
 

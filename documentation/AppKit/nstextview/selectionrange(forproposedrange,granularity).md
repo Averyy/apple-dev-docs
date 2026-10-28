@@ -19,11 +19,11 @@ func selectionRange(forProposedRange proposedCharRange: NSRange, granularity: NS
 - (NSRange) selectionRangeForProposedRange:(NSRange) proposedCharRange granularity:(NSSelectionGranularity) granularity;
 ```
 
-#### Return Value
+## Return Value
 
 The adjusted selected range, taking into account the selection granularity.
 
-#### Discussion
+## Discussion
 
 This method is invoked repeatedly during mouse tracking to modify the range of the selection. Override this method to specialize selection behavior.
 

@@ -23,7 +23,7 @@ case failureRequiringAppLaunch
 INRequestPaymentIntentResponseCodeFailureRequiringAppLaunch
 ```
 
-#### Discussion
+## Discussion
 
 Use this response code when you cannot make the payment request for a reason not covered by any other response code. Do not use it for general errors or to force the user to launch your app.
 

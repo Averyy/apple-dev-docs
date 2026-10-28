@@ -25,7 +25,7 @@ let kCGImageSourceShouldCache: CFString
 extern CFStringRef const kCGImageSourceShouldCache;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is a [`CFBoolean`](../CoreFoundation/cfboolean.md). The default value is [`kCFBooleanTrue`](../CoreFoundation/kcfbooleantrue.md) for 64-bit architectures, and [`kCFBooleanFalse`](../CoreFoundation/kcfbooleanfalse.md) for 32-bit architectures.
 

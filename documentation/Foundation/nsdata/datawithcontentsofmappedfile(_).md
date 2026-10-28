@@ -27,7 +27,7 @@ class func dataWithContentsOfMappedFile(_ path: String) -> Any?
 + (id) dataWithContentsOfMappedFile:(NSString *) path;
 ```
 
-#### Discussion
+## Discussion
 
 This method returns `nil` if the data object could not be created
 

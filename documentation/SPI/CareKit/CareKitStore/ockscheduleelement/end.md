@@ -17,7 +17,7 @@ The latest possible time for an event to occur.
 var end: Date?
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: Depending on the interval chosen, it is not guaranteed that an event will fall on this date.
 

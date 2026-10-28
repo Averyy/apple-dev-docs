@@ -24,11 +24,11 @@ init(scalarNoiseWithSmoothness smoothness: Float, name: String?, textureDimensio
 - (instancetype) initScalarNoiseWithSmoothness:(float) smoothness name:(NSString *) name textureDimensions:(vector_int2) textureDimensions channelCount:(int) channelCount channelEncoding:(MDLTextureChannelEncoding) channelEncoding grayscale:(BOOL) grayscale;
 ```
 
-#### Return Value
+## Return Value
 
 A new color noise texture object.
 
-#### Discussion
+## Discussion
 
 A color noise texture has random values for each color channel and can be tiled or mirrored without showing visible borders.
 

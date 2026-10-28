@@ -29,7 +29,7 @@ class MTLRenderPassAttachmentDescriptor
 - [Setting load and store actions](./setting-load-and-store-actions.md)
 - [Choosing a resource storage mode for Apple GPUs](./choosing-a-resource-storage-mode-for-apple-gpus.md)
 
-#### Overview
+## Overview
 
 Use an [`MTLRenderPassAttachmentDescriptor`](./mtlrenderpassattachmentdescriptor.md) instance to configure an individual render target of a framebuffer. Each [`MTLRenderPassAttachmentDescriptor`](./mtlrenderpassattachmentdescriptor.md) instance specifies one texture that a graphics rendering pass can write into.
 
@@ -47,7 +47,7 @@ There are specific [`MTLRenderPassAttachmentDescriptor`](./mtlrenderpassattachme
 | Depth | [`MTLRenderPassDepthAttachmentDescriptor`](./mtlrenderpassdepthattachmentdescriptor.md) |
 | Stencil | [`MTLRenderPassStencilAttachmentDescriptor`](./mtlrenderpassstencilattachmentdescriptor.md) |
 
-##### Multisampling
+### Multisampling
 
 To perform multisampled antialiased rendering, you use two textures. Attach to the [`texture`](./mtlrenderpassattachmentdescriptor/texture.md) property a [`MTLTextureType.type2DMultisample`](./mtltexturetype/type2dmultisample.md) texture, and a 2D or cube texture to the [`resolveTexture`](./mtlrenderpassattachmentdescriptor/resolvetexture.md) property. When a rendering command executes, it renders to the multisample texture. At the end of the render pass, the GPU resolves the contents of the multisample texture and writes the results into the resolve texture. The [`resolveLevel`](./mtlrenderpassattachmentdescriptor/resolvelevel.md), [`resolveSlice`](./mtlrenderpassattachmentdescriptor/resolveslice.md), and [`resolveDepthPlane`](./mtlrenderpassattachmentdescriptor/resolvedepthplane.md) properties specify where the resolved image is written to. The attachment’s [`storeAction`](./mtlrenderpassattachmentdescriptor/storeaction.md) property determines what happens to the multisample texture after the GPU resolves its data.
 

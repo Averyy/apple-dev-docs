@@ -22,7 +22,7 @@ case previewOptimized
 AVCaptureVideoStabilizationModePreviewOptimized
 ```
 
-#### Discussion
+## Discussion
 
 Preview stabilization is a low-latency and low-power algorithm which the system supports only on connections that have either an associated preview layer or a preview-sized [`AVCaptureVideoDataOutput`](../avcapturevideodataoutput.md).
 

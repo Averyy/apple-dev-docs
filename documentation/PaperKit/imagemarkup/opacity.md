@@ -19,7 +19,7 @@ The opacity of the image.
 var opacity: CGFloat { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Ranges from `0.0` (fully transparent) to `1.0` (fully opaque). Defaults to `1.0`.
 

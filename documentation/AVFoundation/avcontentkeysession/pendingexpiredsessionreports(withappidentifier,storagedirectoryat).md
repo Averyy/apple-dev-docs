@@ -25,11 +25,11 @@ class func pendingExpiredSessionReports(withAppIdentifier appIdentifier: Data, s
 + (NSArray<NSData *> *) pendingExpiredSessionReportsWithAppIdentifier:(NSData *) appIdentifier storageDirectoryAtURL:(NSURL *) storageURL;
 ```
 
-#### Return Value
+## Return Value
 
 Returns an array of expired session reports.
 
-#### Discussion
+## Discussion
 
 The system only returns expired session reports. It doesn’t include reports for active sessions.
 

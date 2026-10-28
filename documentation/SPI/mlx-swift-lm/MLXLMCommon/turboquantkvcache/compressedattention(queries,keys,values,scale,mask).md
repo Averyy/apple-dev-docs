@@ -17,7 +17,7 @@ Compressed-domain attention via Metal kernels.
 func compressedAttention(queries: MLXArray, keys newKeys: MLXArray, values newValues: MLXArray, scale: Float, mask: MLXFast.ScaledDotProductAttentionMaskMode = .none) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 On first call: compresses raw prefill cache in one batch. Then: encode 1 new token → fused attention kernel → inverse rotation.
 

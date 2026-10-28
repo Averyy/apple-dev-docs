@@ -19,7 +19,7 @@ class var isWritingToolsAvailable: Bool { get }
 @property (class, readonly) BOOL isWritingToolsAvailable;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is `true` when Writing Tools features are supported, even when the user has not enabled the feature. Writing Tools support might be unavailable because of device constraints.
 

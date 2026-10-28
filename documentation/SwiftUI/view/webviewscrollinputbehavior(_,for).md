@@ -20,7 +20,7 @@ nonisolated
 func webViewScrollInputBehavior(_ behavior: ScrollInputBehavior, for input: ScrollInputKind) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view with the configured scroll input behavior for web views.
 

@@ -5,7 +5,7 @@
 
 Ensure that critical tasks finish when your app moves to the background.
 
-#### Overview
+## Overview
 
 Extending your app’s background execution time ensures that you have adequate time to perform critical tasks. For tasks that require more background time, use [Background Tasks](../BackgroundTasks/BackgroundTasks.md).
 

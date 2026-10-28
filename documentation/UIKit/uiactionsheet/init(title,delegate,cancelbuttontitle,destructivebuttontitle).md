@@ -23,11 +23,11 @@ init(title: String?, delegate: (any UIActionSheetDelegate)?, cancelButtonTitle: 
 - (instancetype) initWithTitle:(NSString *) title delegate:(id<UIActionSheetDelegate>) delegate cancelButtonTitle:(NSString *) cancelButtonTitle destructiveButtonTitle:(NSString *) destructiveButtonTitle otherButtonTitles:(NSString *) otherButtonTitles;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized action sheet.
 
-#### Discussion
+## Discussion
 
 The action sheet automatically sets the appearance of the destructive and cancel buttons. If the action sheet contains only one button, it doesn’t apply the custom colors associated with the destructive and cancel buttons.
 

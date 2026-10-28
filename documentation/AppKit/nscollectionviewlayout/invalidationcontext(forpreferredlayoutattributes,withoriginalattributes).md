@@ -19,11 +19,11 @@ func invalidationContext(forPreferredLayoutAttributes preferredAttributes: NSCol
 - (NSCollectionViewLayoutInvalidationContext *) invalidationContextForPreferredLayoutAttributes:(NSCollectionViewLayoutAttributes *) preferredAttributes withOriginalAttributes:(NSCollectionViewLayoutAttributes *) originalAttributes;
 ```
 
-#### Return Value
+## Return Value
 
 An invalidation context that describes the changes to be made. This value is never `nil`.
 
-#### Discussion
+## Discussion
 
 The default implementation of this method creates an instance of the class returned by the [`invalidationContextClass`](./invalidationcontextclass.md) method and initializes it using its [`init()`](../../ObjectiveC/nsobject-swift.class/init%28%29.md) method. Subclasses can override this method and configure additional properties of the invalidation context. In your implementation, you must call `super` first to get the context object; you can then configure that object and return it.
 

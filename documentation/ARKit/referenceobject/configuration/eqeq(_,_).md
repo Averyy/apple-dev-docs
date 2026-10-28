@@ -15,7 +15,7 @@ Returns a Boolean value indicating whether two configurations are equal.
 static func == (lhs: ReferenceObject.Configuration, rhs: ReferenceObject.Configuration) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the two configurations are equal; otherwise, `false`.
 

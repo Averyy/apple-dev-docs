@@ -24,11 +24,11 @@ subscript(name: String) -> MDLMaterialProperty? { get }
 - (MDLMaterialProperty *) objectForKeyedSubscript:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 The material property with the specified name, or `nil` if the material does not contain a material property with that name.
 
-#### Discussion
+## Discussion
 
 This method is equivalent to the [`propertyNamed(_:)`](./propertynamed%28_%29.md) method but allows for the use of subscript syntax for reading material properties. To write material properties to the material, use the [`setProperty(_:)`](./setproperty%28_%29.md) method.
 

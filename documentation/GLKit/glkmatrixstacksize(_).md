@@ -22,7 +22,7 @@ func GLKMatrixStackSize(_ stack: GLKMatrixStack) -> Int32
 int GLKMatrixStackSize(GLKMatrixStackRef stack);
 ```
 
-#### Return Value
+## Return Value
 
 The number of matrices stored on the stack.
 

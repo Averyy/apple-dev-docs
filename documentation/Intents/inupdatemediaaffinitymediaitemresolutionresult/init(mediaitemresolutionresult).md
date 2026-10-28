@@ -24,11 +24,11 @@ init(mediaItemResolutionResult: INMediaItemResolutionResult)
 - (instancetype) initWithMediaItemResolutionResult:(INMediaItemResolutionResult *) mediaItemResolutionResult;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INUpdateMediaAffinityMediaItemResolutionResult`](../inupdatemediaaffinitymediaitemresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object when you’re able to successfully update the user’s affinity for a media item.
 

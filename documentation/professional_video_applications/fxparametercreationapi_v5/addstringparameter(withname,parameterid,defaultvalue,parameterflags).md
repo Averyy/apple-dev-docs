@@ -20,7 +20,7 @@ func addStringParameter(withName name: String, parameterID: UInt32, defaultValue
 - (BOOL) addStringParameterWithName:(NSString *) name parameterID:(UInt32) parameterID defaultValue:(NSString *) defaultValue parameterFlags:(FxParameterFlags) flags;
 ```
 
-#### Return Value
+## Return Value
 
 Returns `YES` if the application successfully creates a string parameter; `NO` otherwise.
 

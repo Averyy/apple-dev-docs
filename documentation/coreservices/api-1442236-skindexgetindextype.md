@@ -19,11 +19,11 @@ func SKIndexGetIndexType(_ inIndex: SKIndex!) -> SKIndexType
 SKIndexType SKIndexGetIndexType(SKIndexRef inIndex);
 ```
 
-#### Return Value
+## Return Value
 
 The category of the index. See the [`SKIndexType`](./skindextype.md) enumeration for a list of the various index categories. On failure, returns a value of `kSKIndexUnknown`.
 
-#### Discussion
+## Discussion
 
 As described in [`SKIndexType`](./skindextype.md), Search Kit offers four categories of index, each optimized for one or more types of searching.
 

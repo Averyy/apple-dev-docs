@@ -21,7 +21,7 @@ A Boolean value indicating whether the scalar is recommended to have syntactic u
 var isPatternSyntax: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property corresponds to the “Pattern_Syntax” property in the [Unicode Standard](http://www.unicode.org/versions/latest/).
 

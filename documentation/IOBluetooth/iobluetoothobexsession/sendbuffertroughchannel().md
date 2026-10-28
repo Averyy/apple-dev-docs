@@ -19,7 +19,7 @@ func sendBufferTroughChannel() -> IOReturn
 - (IOReturn) sendBufferTroughChannel;
 ```
 
-#### Discussion
+## Discussion
 
 Since a send in the rfcomm channel is broken in multiple write calls (this actually is true only if the size is grater than the rfcomm MTU). Each write call is performed by sendBufferTroughChannel. This should never need to be overwritten.
 

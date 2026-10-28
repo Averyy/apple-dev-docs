@@ -24,7 +24,7 @@ class func commit()
 + (void) commit;
 ```
 
-#### Discussion
+## Discussion
 
 Raises an exception if no current transaction exists.
 

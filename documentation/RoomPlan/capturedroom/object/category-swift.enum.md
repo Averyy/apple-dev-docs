@@ -17,7 +17,7 @@ Classifications of an object in a captured room.
 enum Category
 ```
 
-#### Overview
+## Overview
 
 Each [`CapturedRoom.Object`](../object.md) instance in a captured room’s [`objects`](../objects.md) array reflects a classification ([`category`](./category-swift.property.md)) of this type.
 

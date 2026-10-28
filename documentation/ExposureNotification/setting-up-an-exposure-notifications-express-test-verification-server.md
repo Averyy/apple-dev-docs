@@ -5,13 +5,13 @@
 
 Validate positive diagnoses for app-less exposure notifications.
 
-#### Overview
+## Overview
 
 Exposure Notifications Express requires a Public Health Authority (PHA) to have a test verification server that verifies positive diagnoses received from a test center or other healthcare provider. A test verification server includes a mechanism to request a verification code for users with a positive COVID-19 test result. The test verification server also has APIs that allow Exposure Notifications Express to authenticate the user’s positive diagnosis before uploading exposure keys to the PHA’s key server
 
 Google has created a reference implementation of a [test verification server](https://github.com/google/exposure-notifications-verification-server) that you can use as a starting point or as a reference while implementing your own test verification server.
 
-##### Configure the Test Verification Server
+### Configure the Test Verification Server
 
 Exposure Notifications Express works by reading configuration values for a PHA from Apple Business Registry (ABR). It uses these configuration values to locate a PHA’s servers and to adjust its calculations and behavior based on the values entered by that PHA. To set up a test verification server to work with Exposure Notifications Express, a PHA specifies the following values:
 
@@ -23,13 +23,13 @@ Exposure Notifications Express works by reading configuration values for a PHA f
 
 To see all of the configuration options available with Exposure Notifications Express, see [Configuring Exposure Notifications](./configuring-exposure-notifications.md).
 
-##### Generate Verification Codes on Request
+### Generate Verification Codes on Request
 
 PHAs use the test verification server to generate verification codes for positive test results. The verification code may be an 8-digit number that can be read over the phone or a deep link that can be texted or emailed to the user. A test verification server can use any one-time password algorithm to generate a verification code as long as the resulting code uniquely identifies one test result.
 
 > **Note**:  For information on generating deep links that are compatible with Exposure Notifications Express, see [Exposure Notifications Server Resource Identifier Scheme Documentation](https://github.com/google/exposure-notifications-verification-server/blob/main/docs/ens-spec.md).
 
-##### Exchange Verification Codes for Tokens
+### Exchange Verification Codes for Tokens
 
 Test verification servers must provide an endpoint to allow an iPhone to exchange a verification code for a long-term authentication token. PHAs register the URL for this endpoint with ABR as the Test Verification URL (`testVerificationURL`). This endpoint expects a JSON dictionary as the body of an HTTP POST request.
 
@@ -47,7 +47,7 @@ The test verification server responds to these requests by returning a JSON dict
 - **`error`**: If the test verification server encounters an error while processing the request, this string contains a description of the problem.
 - **`errorCode`**: If the test verification server encounters an error while processing the request, this string contains a code that describes the error.
 
-##### Respond to Verification Certificate Requests
+### Respond to Verification Certificate Requests
 
 Before uploading keys to the key server, Exposure Notifications Express contacts the verification server at the Test Verification Certificate URL (`testVerificationCertificateURL`) registered with ABR to get a certificate and metadata for the key batch.
 

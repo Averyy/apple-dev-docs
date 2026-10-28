@@ -19,7 +19,7 @@ var NSF25FunctionKey: Int { get }
 NSF25FunctionKey
 ```
 
-#### Discussion
+## Discussion
 
 This key is unavailable on most Macintosh keyboards.
 

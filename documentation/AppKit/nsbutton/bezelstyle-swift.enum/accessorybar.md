@@ -19,7 +19,7 @@ case accessoryBar
 NSBezelStyleAccessoryBar
 ```
 
-#### Discussion
+## Discussion
 
 Use this style of button to display some kind of toggle or selection state, like a favorites bar or search scope.
 

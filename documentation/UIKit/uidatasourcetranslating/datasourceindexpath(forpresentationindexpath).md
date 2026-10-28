@@ -24,7 +24,7 @@ func dataSourceIndexPath(forPresentationIndexPath presentationIndexPath: IndexPa
 - (NSIndexPath *) dataSourceIndexPathForPresentationIndexPath:(NSIndexPath *) presentationIndexPath;
 ```
 
-#### Return Value
+## Return Value
 
 The index path of the same item in the data source object, or `nil` if the item is no longer in the data source.
 

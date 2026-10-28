@@ -6,7 +6,7 @@
 
 An atom that uses one byte per sample as a bit field that describes dependency information.
 
-#### Overview
+## Overview
 
 See [`Sample dependency flags atom`](../sample_dependency_flags_atom.md).
 

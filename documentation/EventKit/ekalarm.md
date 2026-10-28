@@ -24,7 +24,7 @@ class EKAlarm
 @interface EKAlarm : EKObject
 ```
 
-#### Overview
+## Overview
 
 An [`EKAlarm`](./ekalarm.md) object represents an alarm in Event Kit. Use the [`init(absoluteDate:)`](./ekalarm/init%28absolutedate%29.md) and [`init(relativeOffset:)`](./ekalarm/init%28relativeoffset%29.md) class methods to create an alarm and use the properties to set information about an alarm. In macOS Mountain Lion, you can specify an action to trigger when the alarm fires via the `emailAddress`, `soundName`, or `url` property.
 

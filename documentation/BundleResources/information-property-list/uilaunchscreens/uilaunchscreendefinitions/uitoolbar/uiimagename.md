@@ -15,7 +15,7 @@ A custom image that replaces the toolbar during launch.
 - **Name**: `UIImageName`
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 Provide a value for this key that’s the name of an image in your asset catalog. You use the same string for the value that you might use when calling the [`init(named:)`](../../../../../UIKit/uiimage/init%28named%29.md) initializer of [`UIImage`](../../../../../UIKit/uiimage.md).
 

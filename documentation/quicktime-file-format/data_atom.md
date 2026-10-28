@@ -6,7 +6,7 @@
 
 An atom that contains the type and locale specific value of metadata.
 
-#### Overview
+## Overview
 
 The Data atom has an atom type of `‘data’`, and contains four bytes each of type and locale indicators, as specified in [Type indicator](./type_indicator.md) and [Locale indicator](./locale_indicator.md), and then the actual value of the metadata, formatted as required by the type.
 

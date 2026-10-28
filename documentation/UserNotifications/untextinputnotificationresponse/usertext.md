@@ -32,7 +32,7 @@ var userText: String { get }
 @property (atomic, copy, readonly) NSString * userText;
 ```
 
-#### Discussion
+## Discussion
 
 If the user does not specify any text, this property contains an empty string.
 

@@ -24,7 +24,7 @@ var kSequenceTrackProperty_LoopInfo: UInt32 { get }
 kSequenceTrackProperty_LoopInfo
 ```
 
-#### Discussion
+## Discussion
 
 Looping is off by default; by default, a music track plays exactly once. A read/write [`MusicTrackLoopInfo`](./musictrackloopinfo.md) structure.
 

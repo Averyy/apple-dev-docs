@@ -23,7 +23,7 @@ optional func updateFloatingCursor(at point: CGPoint)
 - (void) updateFloatingCursorAtPoint:(CGPoint) point;
 ```
 
-#### Discussion
+## Discussion
 
 UIKit calls this method when the touch location changes for the two-finger pan gesture used to move the cursor. You can use this method to update the visual state of your text view. For example, you might use this method to display custom visual feedback for cursor movements.This method may be called multiple times while the user’s fingers are moving, so your implementation should be fast. If you do not implement this method, UIKit provides visual feedback only when the selection changes.
 

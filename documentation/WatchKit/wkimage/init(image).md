@@ -19,11 +19,11 @@ convenience init(image: UIImage)
 + (instancetype) imageWithImage:(UIImage *) image;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized `WKImage` object.
 
-#### Discussion
+## Discussion
 
 Use this method when you already have a UIKit image object and want to use it in your picker.
 

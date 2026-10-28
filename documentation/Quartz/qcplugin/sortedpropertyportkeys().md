@@ -21,11 +21,11 @@ class func sortedPropertyPortKeys() -> [Any]!
 + (NSArray *) sortedPropertyPortKeys;
 ```
 
-#### Return Value
+## Return Value
 
 The property port keys in the order you want them to appear in the user interface.
 
-#### Discussion
+## Discussion
 
 Override this method to specify an optional ordering for property based ports in the user interface.
 

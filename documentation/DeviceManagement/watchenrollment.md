@@ -17,11 +17,11 @@ The declaration to configure an MDMv1 profile for Apple Watch enrollment.
 object WatchEnrollment
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.configuration.watch.enrollment` as the declaration type.
 
-##### Configuration availability
+### Configuration availability
 
 |  |  |
 | --- | --- |
@@ -33,7 +33,7 @@ Specify `com.apple.configuration.watch.enrollment` as the declaration type.
 | Allowed in user scope | N/A |
 | Apply | Only a single configuration is applied |
 
-##### Configuration example
+### Configuration example
 
 This configuration enrolls an Apple Watch using a profile URL.
 

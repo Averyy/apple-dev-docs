@@ -24,7 +24,7 @@ var currentPoint: CGPoint { get }
 @property (nonatomic, readonly) CGPoint currentPoint;
 ```
 
-#### Discussion
+## Discussion
 
 The value in this property represents the starting point for new line and curve segments. If the path is currently empty, this property contains the value [`CGPointZero`](../../CoreGraphics/cgpointzero.md).
 

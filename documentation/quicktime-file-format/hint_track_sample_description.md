@@ -6,7 +6,7 @@
 
 An atom that specifies the data format and location of the hint track sample data.
 
-#### Overview
+## Overview
 
 The sample description atom (`'stsd'`) contains information about the hint track samples. It specifies the data format (note that currently only RTP data format is defined) and the data reference to use (if more than one is defined) to locate the hint track sample data. It also contains some general information about this hint track, such as the hint track version number, the maximum packet size allowed by this hint track, and the RTP time scale. It may contain additional information, such as the random offsets to add to the RTP time stamp and sequence number.
 

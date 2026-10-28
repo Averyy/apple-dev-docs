@@ -23,11 +23,11 @@ class func success(with resolvedBalanceType: INBalanceType) -> Self
 + (instancetype) successWithResolvedBalanceType:(INBalanceType) resolvedBalanceType;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INBalanceTypeResolutionResult`](../inbalancetyperesolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object when you are able to resolve the balance type to a recognizable value in your app.
 

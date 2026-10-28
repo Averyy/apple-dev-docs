@@ -29,7 +29,7 @@ class DCDevice
 
 - [Accessing and modifying per-device data](./accessing-and-modifying-per-device-data.md)
 
-#### Overview
+## Overview
 
 Use the shared instance of the `DCDevice` class to generate a token that identifies a device. Call the [`generateToken(completionHandler:)`](./dcdevice/generatetoken%28completionhandler%29.md) method to get the token, and then send it to your server:
 

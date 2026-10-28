@@ -28,7 +28,7 @@ protocol PHContentEditingController : NSObjectProtocol
 
 - [Creating Photo Editing Extensions](../PhotoKit/creating-photo-editing-extensions.md)
 
-#### Overview
+## Overview
 
 The [`PHContentEditingController`](./phcontenteditingcontroller.md) protocol defines methods you implement in a custom view controller class in order to create a Photos extension. The Photos app hosts your extension’s view controller to provide a user interface for editing photo or video assets.
 

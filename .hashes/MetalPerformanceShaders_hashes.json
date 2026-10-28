@@ -25506,8 +25506,11 @@
     }
   },
   "metadata": {
+    "gone_links": [
+      "https://developer.apple.com/documentation/metalperformanceshaders/media-2903539"
+    ],
     "render": {
-      "version": 3
+      "version": 4
     },
     "total_pages": 6376
   }

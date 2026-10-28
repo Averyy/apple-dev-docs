@@ -23,7 +23,7 @@ struct NSFileProviderPage
 typedef NSData * NSFileProviderPage;
 ```
 
-#### Discussion
+## Discussion
 
 Your file provider should populate the page with the information it needs to partition items into batches and to systematically return a batch of data at a time. For example, a simple page could contain the index of the next item to return. A request to enumerate items from that page would then return a batch of items starting at the specified index.
 

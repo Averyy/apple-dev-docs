@@ -21,7 +21,7 @@ Swaps the elements of two double-precision vectors.
 static func swapElements<T, U>(_ vectorA: inout T, _ vectorB: inout U) where T : AccelerateMutableBuffer, U : AccelerateMutableBuffer, T.Element == Double, U.Element == Double
 ```
 
-#### Discussion
+## Discussion
 
 The following code swaps the elements in `vectorA` with those in `vectorB`:
 

@@ -19,11 +19,11 @@ func hv_vcpu_create(_ vcpu: UnsafeMutablePointer<hv_vcpu_t>, _ exit: UnsafeMutab
 extern hv_return_t hv_vcpu_create(hv_vcpu_t *vcpu, hv_vcpu_exit_t **exit, hv_vcpu_config_t config);
 ```
 
-#### Return Value
+## Return Value
 
 [`HV_SUCCESS`](./hv_success.md) if the operation was successful, otherwise an error code specified in [`hv_return_t`](./hv_return_t.md).
 
-#### Discussion
+## Discussion
 
 Intel-based Mac computers have different parameters:
 

@@ -21,11 +21,11 @@ func SecDigestTransformCreate(_ digestType: CFTypeRef?, _ digestLength: CFIndex,
 SecTransformRefSecDigestTransformCreate(CFTypeRef digestType, CFIndex digestLength, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to a new transform or `NULL` on error. In Objective-C, call the [`CFRelease`](../CoreFoundation/cfrelease.md) function to free this object’s memory when you are done with it.
 
-#### Discussion
+## Discussion
 
 This function creates a transform which computes a cryptographic digest.
 

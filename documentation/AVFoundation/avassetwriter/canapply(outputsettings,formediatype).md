@@ -24,11 +24,11 @@ func canApply(outputSettings: [String : Any]?, forMediaType mediaType: AVMediaTy
 - (BOOL) canApplyOutputSettings:(NSDictionary<NSString *,id> *) outputSettings forMediaType:(AVMediaType) mediaType;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the format supports the output settings; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Use this method to determine the compatibility of output settings for a particular media type. For example, video compression settings that specify H.264 compression aren’t compatible with file formats that don’t contain H.264-compressed video.
 

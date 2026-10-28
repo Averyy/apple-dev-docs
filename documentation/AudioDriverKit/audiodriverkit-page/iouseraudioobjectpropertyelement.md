@@ -15,7 +15,7 @@ A four character code which, along with the selector and scope, identify a speci
 typedef uint32_t IOUserAudioObjectPropertyElement;
 ```
 
-#### Discussion
+## Discussion
 
 The element selects one of possibly many items in the section of the object in which to look for the property. Element numbers begin with the main element, `0`, and increase sequentially.
 

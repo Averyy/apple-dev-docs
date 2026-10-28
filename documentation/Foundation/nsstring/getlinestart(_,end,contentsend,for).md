@@ -25,7 +25,7 @@ func getLineStart(_ startPtr: UnsafeMutablePointer<Int>?, end lineEndPtr: Unsafe
 - (void) getLineStart:(NSUInteger *) startPtr end:(NSUInteger *) lineEndPtr contentsEnd:(NSUInteger *) contentsEndPtr forRange:(NSRange) range;
 ```
 
-#### Discussion
+## Discussion
 
 A line is delimited by any of these characters, the longest possible sequence being preferred to any shorter:
 
@@ -38,7 +38,7 @@ A line is delimited by any of these characters, the longest possible sequence be
 
 If `aRange` is contained with a single line, of course, the returned indexes all belong to that line. You can use the results of this method to construct ranges for lines by using the start index as the range’s location and the difference between the end index and the start index as the range’s length.
 
-##### Special Considerations
+### Special Considerations
 
 This method detects all invalid ranges (including those with negative lengths). For applications linked against macOS 10.6 and later, this error causes an exception; for applications linked against earlier releases, this error causes a warning, which is displayed just once per application execution.
 

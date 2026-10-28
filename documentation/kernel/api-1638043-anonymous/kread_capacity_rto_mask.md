@@ -13,7 +13,7 @@
 kREAD_CAPACITY_RTO_Mask = 0x02
 ```
 
-#### Discussion
+## Discussion
 
 Mask to use when checking the RTO_EN_PROT_EN field.
 

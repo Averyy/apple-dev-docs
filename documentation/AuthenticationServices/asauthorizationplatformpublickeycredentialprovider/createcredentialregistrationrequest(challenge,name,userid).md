@@ -24,7 +24,7 @@ func createCredentialRegistrationRequest(challenge: Data, name: String, userID: 
 - (ASAuthorizationPlatformPublicKeyCredentialRegistrationRequest *) createCredentialRegistrationRequestWithChallenge:(NSData *) challenge name:(NSString *) name userID:(NSData *) userID;
 ```
 
-#### Return Value
+## Return Value
 
 A public key credential registration request.
 

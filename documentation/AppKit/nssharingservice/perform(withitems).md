@@ -19,7 +19,7 @@ func perform(withItems items: [Any])
 - (void) performWithItems:(NSArray *) items;
 ```
 
-#### Discussion
+## Discussion
 
 In most cases this will display a sharing window.
 

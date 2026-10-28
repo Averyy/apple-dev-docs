@@ -16,11 +16,11 @@ toggle SMART Operations.
 IOReturn (*SMARTEnableDisableOperations)(void *interface, Boolean enable);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if successful, kIOReturnNoDevice if there is no connection to an IOService, kIOReturnExclusiveAccess if it is already opened by another client.
 
-#### Discussion
+## Discussion
 
 See section 8.54.1 and 8.54.3 of ATA/ATAPI-6.
 

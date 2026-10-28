@@ -23,7 +23,7 @@ typealias ENRiskLevelValue = UInt8
 typedef uint8_t ENRiskLevelValue;
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  This type is available in iOS 12.5, and in iOS 13.5 and later.
 

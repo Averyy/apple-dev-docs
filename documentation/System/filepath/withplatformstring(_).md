@@ -21,11 +21,11 @@ Calls the given closure with a pointer to the contents of the file path, represe
 func withPlatformString<Result>(_ body: (UnsafePointer<CInterop.PlatformChar>) throws -> Result) rethrows -> Result
 ```
 
-#### Return Value
+## Return Value
 
 The return value, if any, of the `body` closure parameter.
 
-#### Discussion
+## Discussion
 
 The pointer passed as an argument to `body` is valid only during the execution of this method. Don’t try to store the pointer for later use.
 

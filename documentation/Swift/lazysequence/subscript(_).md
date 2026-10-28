@@ -23,7 +23,7 @@ subscript(position: LazySequence<Base>.Index) -> LazySequence<Base>.Element { ge
 
 Available when `Base` conforms to `Collection`.
 
-#### Overview
+## Overview
 
 > **Precondition**: `position` is a valid position in `self` and `position != endIndex`.
 

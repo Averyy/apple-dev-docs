@@ -24,11 +24,11 @@ class func success(with resolvedString: String) -> Self
 + (instancetype) successWithResolvedString:(NSString *) resolvedString;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INStringResolutionResult`](../instringresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object when you are able to use the string to handle the intent successfully.
 

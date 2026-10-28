@@ -20,7 +20,7 @@ var startSpecifier: NSScriptObjectSpecifier? { get set }
 @property (retain, nullable) NSScriptObjectSpecifier * startSpecifier;
 ```
 
-#### Return Value
+## Return Value
 
 The object specifier representing the first object of the range.
 

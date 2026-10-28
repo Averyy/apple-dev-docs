@@ -19,7 +19,7 @@ var drawsBackground: Bool { get set }
 @property BOOL drawsBackground;
 ```
 
-#### Discussion
+## Discussion
 
 If `flag` is [`true`](../../Swift/true.md), the receiver fills its background with the background color, if `flag` is [`false`](../../Swift/false.md), it doesn’t.
 

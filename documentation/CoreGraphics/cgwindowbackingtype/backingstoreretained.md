@@ -18,7 +18,7 @@ case backingStoreRetained
 kCGBackingStoreRetained
 ```
 
-#### Discussion
+## Discussion
 
 The window uses a buffer, but draws directly to the screen where possible and to the buffer for obscured portions.
 

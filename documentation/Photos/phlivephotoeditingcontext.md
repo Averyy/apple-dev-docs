@@ -28,7 +28,7 @@ class PHLivePhotoEditingContext
 
 - [Editing Asset Content](../PhotoKit/editing-asset-content.md)
 
-#### Overview
+## Overview
 
 A Live Photo is a picture, captured by a supported iOS device, that includes motion and sound from the moments just before and after it was taken. Editing the content of a Live Photo works much like editing other asset types:
 

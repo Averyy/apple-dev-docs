@@ -28,11 +28,11 @@ init?(named name: String)
 
 - [Configuring and displaying symbol images in your UI](../configuring-and-displaying-symbol-images-in-your-ui.md)
 
-#### Return Value
+## Return Value
 
 An object containing an unconfigured version of the image, or `nil` if the method could not find the specified image.
 
-#### Discussion
+## Discussion
 
 When searching the asset catalog, this method prefers an asset containing a symbol image over an asset with the same name containing a bitmap image. Because the system supports symbol images iOS 13 or later, you may include both types of assets in the same asset catalog. In iOS 12 or earlier, the system automatically chooses the bitmap image.
 
@@ -44,7 +44,7 @@ The system may purge cached image data at any time to free up memory. Purging oc
 
 In iOS 9 and later, this method is thread safe.
 
-##### Special Considerations
+### Special Considerations
 
 If you intend to display an image only once and don’t want it added to the system’s cache, create it using the [`imageWithContentsOfFile:`](./imagewithcontentsoffile_.md) method instead. Keeping single-use images out of the system image cache can potentially improve the memory use characteristics of your app.
 

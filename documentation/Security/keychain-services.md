@@ -4,7 +4,7 @@
 
 Securely store small chunks of data on behalf of the user.
 
-#### Overview
+## Overview
 
 Computer users often have small secrets that they need to store securely. For example, most people manage numerous online accounts. Remembering a complex, unique password for each is impossible, but writing them down is both insecure and tedious. Users typically respond to this situation by recycling simple passwords across many accounts, which is also insecure.
 

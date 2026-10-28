@@ -24,7 +24,7 @@ var borderWidth: CGFloat { get set }
 @property CGFloat borderWidth;
 ```
 
-#### Discussion
+## Discussion
 
 When this value is greater than 0.0, the layer draws a border using the current [`borderColor`](./bordercolor.md) value. The border is drawn inset from the receiver’s bounds by the value specified in this property. It is composited above the receiver’s contents and sublayers and includes the effects of the [`cornerRadius`](./cornerradius.md) property.
 

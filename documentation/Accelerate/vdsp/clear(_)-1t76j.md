@@ -21,7 +21,7 @@ Populates a double-precision vector with zeros.
 static func clear<V>(_ vector: inout V) where V : AccelerateMutableBuffer, V.Element == Double
 ```
 
-#### Discussion
+## Discussion
 
 This function populates a vector with zeros.
 

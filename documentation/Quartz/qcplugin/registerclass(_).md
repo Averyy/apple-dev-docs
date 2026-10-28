@@ -21,7 +21,7 @@ class func registerClass(_ aClass: AnyClass!)
 + (void) registerPlugInClass:(Class) aClass;
 ```
 
-#### Discussion
+## Discussion
 
 You call this method only if the code for your custom patch is mixed with your application code, and you plan only to use the custom patch from within  your application.
 

@@ -25,7 +25,7 @@ static var includeDirectoriesPostOrder: CFURLEnumeratorOptions { get }
 kCFURLEnumeratorIncludeDirectoriesPostOrder
 ```
 
-#### Discussion
+## Discussion
 
 A recursive post-order enumerator returns [`CFURLEnumeratorResult.directoryPostOrderSuccess`](../cfurlenumeratorresult/directorypostordersuccess.md) when it returns a directory’s URL after returning the directory’s descendents.
 

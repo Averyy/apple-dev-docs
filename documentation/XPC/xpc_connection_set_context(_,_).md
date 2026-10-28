@@ -25,7 +25,7 @@ func xpc_connection_set_context(_ connection: xpc_connection_t, _ context: Unsaf
 extern void xpc_connection_set_context(xpc_connection_t connection, void *context);
 ```
 
-#### Discussion
+## Discussion
 
 If you must manage the memory of the context object, you must set a finalizer to dispose of it. If this method is called on a connection which already has context associated with it, the finalizer will NOT be invoked. The finalizer is only invoked when the connection is being deallocated.
 

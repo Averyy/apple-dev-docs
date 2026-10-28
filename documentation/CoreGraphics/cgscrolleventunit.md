@@ -20,7 +20,7 @@ enum CGScrollEventUnit
 enum CGScrollEventUnit : uint32_t;
 ```
 
-#### Overview
+## Overview
 
 You may pass one of these constants to the function [`CGEventCreateScrollWheelEvent`](./cgeventcreatescrollwheelevent.md) to specify the unit of measurement for the event. The constant `kCGScrollEventUnitPixel` produces an event that most applications interpret as a smooth scrolling event. By default, the scale is about ten pixels per line. You can alter the scale with the function [`CGEventSourceSetPixelsPerLine`](./cgeventsourcesetpixelsperline.md).
 

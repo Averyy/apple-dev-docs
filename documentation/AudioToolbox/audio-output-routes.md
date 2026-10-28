@@ -5,7 +5,7 @@
 
 The various audio output destinations available for an iOS device.
 
-#### Overview
+## Overview
 
 These strings are used as values for the [`kAudioSession_AudioRouteKey_Type`](./kaudiosession_audioroutekey_type.md) key for the dictionary associated with the [`kAudioSession_AudioRouteKey_Outputs`](./kaudiosession_audioroutekey_outputs.md) array.
 

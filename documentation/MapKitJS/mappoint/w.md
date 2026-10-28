@@ -15,7 +15,7 @@ The w component of a map point.
 w: number;
 ```
 
-#### Discussion
+## Discussion
 
 The value is always `1`.
 

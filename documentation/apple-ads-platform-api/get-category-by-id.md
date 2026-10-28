@@ -9,19 +9,19 @@ Retrieve a single business category by its identifier.
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 This endpoint returns the full `BusinessCategory` object for the specified category ID. Use this endpoint to look up the `qualifiedId`, display name, and eligibility status for a specific category. The `id` is the MUID, which you can obtain from the Query Business Categories endpoint.
 
-#### Payload Examples
+## Payload Examples
 
-##### Request
+### Request
 
 ```
 GET /v1/business-categories/cat-din-001
 ```
 
-##### Response
+### Response
 
 ```json
 {

@@ -20,7 +20,7 @@ func evaluate()
 - (void) evaluate;
 ```
 
-#### Discussion
+## Discussion
 
 Calling [`insertionContainer`](./insertioncontainer.md), [`insertionKey`](./insertionkey.md), [`insertionIndex`](./insertionindex.md), or [`insertionReplaces`](./insertionreplaces.md) also causes the receiver to be evaluated, if it hasn’t already been evaluated.
 

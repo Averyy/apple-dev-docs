@@ -19,11 +19,11 @@ func closeTransportConnection() -> OBEXError
 - (OBEXError) closeTransportConnection;
 ```
 
-#### Return Value
+## Return Value
 
 Return whether or not the transport connection was closed successfully or not. Return OBEXSuccess ( 0 ) on success, otherwise an error code.
 
-#### Discussion
+## Discussion
 
 Tranport subclasses must override this! When called you should take whatever steps are necessary to actually close down the transport connection.
 

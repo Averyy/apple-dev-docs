@@ -24,7 +24,7 @@ class UICollectionViewDiffableDataSourceReference
 @interface UICollectionViewDiffableDataSource : NSObject
 ```
 
-#### Overview
+## Overview
 
 > ❗ **Important**: If you’re working in a Swift codebase, always use [`UICollectionViewDiffableDataSource`](./uicollectionviewdiffabledatasource-9tqpa.md) instead.
 

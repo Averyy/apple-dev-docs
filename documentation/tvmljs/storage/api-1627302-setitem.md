@@ -31,7 +31,7 @@ void setItem(
 );
 ```
 
-#### Discussion
+## Discussion
 
 The `setItem` function first checks whether the given key already exists in the storage. If it does not, then the key and associated value are stored. If the key already exists and the data in storage is different than the data being passed, the new data is saved to storage.
 

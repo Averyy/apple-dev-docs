@@ -5,7 +5,7 @@
 
 Handle events related to mouse, keyboard, and trackpad input.
 
-#### Overview
+## Overview
 
 The [`NSResponder`](./nsresponder.md) class defines the responder chain, an ordered list of objects that respond to user events. When the user clicks the mouse button, taps on the trackpad, or presses a key, an event is generated and passed up the responder chain in search of an object that can respond to it. Any object that handles events must inherit from the [`NSResponder`](./nsresponder.md) class. The core AppKit classes, [`NSApplication`](./nsapplication.md), [`NSWindow`](./nswindow.md), and [`NSView`](./nsview.md), inherit from [`NSResponder`](./nsresponder.md).
 

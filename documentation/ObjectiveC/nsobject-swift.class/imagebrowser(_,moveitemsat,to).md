@@ -19,11 +19,11 @@ func imageBrowser(_ aBrowser: IKImageBrowserView!, moveItemsAt indexes: IndexSet
 - (BOOL) imageBrowser:(IKImageBrowserView *) aBrowser moveItemsAtIndexes:(NSIndexSet *) indexes toIndex:(NSUInteger) destinationIndex;
 ```
 
-#### Return Value
+## Return Value
 
 [`YES`](../yes.md) if successful; [`NO`](../no.md) otherwise.
 
-#### Discussion
+## Discussion
 
 This method is optional. It is invoked by the image browser view after  Image Kit determines  that a reordering operation should be applied. The data source should update itself by reordering its elements.
 

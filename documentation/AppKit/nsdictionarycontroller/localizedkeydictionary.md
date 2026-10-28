@@ -19,7 +19,7 @@ var localizedKeyDictionary: [String : String] { get set }
 @property (copy) NSDictionary<NSString *,NSString *> * localizedKeyDictionary;
 ```
 
-#### Discussion
+## Discussion
 
 The dictionary contains the key names as the keys, and the localized key names as the corresponding values.
 

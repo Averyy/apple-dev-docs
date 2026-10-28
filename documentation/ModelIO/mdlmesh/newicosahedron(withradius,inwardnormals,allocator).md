@@ -24,11 +24,11 @@ class func newIcosahedron(withRadius radius: Float, inwardNormals: Bool, allocat
 + (instancetype) newIcosahedronWithRadius:(float) radius inwardNormals:(BOOL) inwardNormals allocator:(id<MDLMeshBufferAllocator>) allocator;
 ```
 
-#### Return Value
+## Return Value
 
 A new mesh object.
 
-#### Discussion
+## Discussion
 
 This method generates vertex data for an icosahedron centered at the origin of its local coordinate system. An icosahedron is a rough approximation of a sphere—to generate a more precise approximation, create an icosahedron and use the [`newSubdividedMesh(_:submeshIndex:subdivisionLevels:)`](./newsubdividedmesh%28_,submeshindex,subdivisionlevels%29.md) method to turn it into a geodesic sphere.
 

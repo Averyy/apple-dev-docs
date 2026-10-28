@@ -21,7 +21,7 @@ A hash-based message authentication algorithm.
 struct HMAC<H> where H : HashFunction
 ```
 
-#### Overview
+## Overview
 
 Use hash-based message authentication to create a code with a value that’s dependent on both a block of data and a symmetric cryptographic key. Another party with access to the data and the same secret key can compute the code again and compare it to the original to detect whether the data changed. This serves a purpose similar to digital signing and verification, but depends on a shared symmetric key instead of public-key cryptography.
 

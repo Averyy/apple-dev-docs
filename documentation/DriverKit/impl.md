@@ -22,7 +22,7 @@ Tells the system that the superclass implementation of this method runs in the k
 
 - [Creating a Driver Using the DriverKit SDK](./creating-a-driver-using-the-driverkit-sdk.md)
 
-#### Discussion
+## Discussion
 
 Use this macro when overriding any methods that are adorned directly (or indirectly via their class) with the [`IIG_KERNEL`](./iig_kernel.md) macro. For example, use it to define the implementation of custom [`Start`](./ioservice/start.md) and [`Stop`](./ioservice/stop.md) methods in an [`IOService`](./ioservice.md) subclass. The macro tells the compiler to add binding code between the method running locally in your driver extension’s process space and the superclass method running in the kernel. Don’t add this macro when overriding methods declared with the [`LOCAL`](./local.md) or [`LOCALONLY`](./localonly.md) macros.
 

@@ -23,7 +23,7 @@ static var top: UIStackView.Alignment { get }
 UIStackViewAlignmentTop
 ```
 
-#### Discussion
+## Discussion
 
 This value is equivalent to the [`UIStackView.Alignment.leading`](./leading.md) alignment for vertical stacks.
 

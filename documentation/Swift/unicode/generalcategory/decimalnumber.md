@@ -21,7 +21,7 @@ A decimal digit.
 case decimalNumber
 ```
 
-#### Discussion
+## Discussion
 
 This value corresponds to the category `Decimal_Number` (abbreviated `Nd`) in the [Unicode Standard](https://unicode.org/reports/tr44/#General_Category_Values).
 

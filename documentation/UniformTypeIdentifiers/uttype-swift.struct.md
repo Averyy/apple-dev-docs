@@ -21,7 +21,7 @@ A structure that represents a type of data to load, send, or receive.
 struct UTType
 ```
 
-#### Overview
+## Overview
 
 The [`UTType`](./uttype-swift.struct.md) instance may represent files on disk, abstract data types with no on-disk representation, or entirely unrelated hierarchical classification systems, such as hardware. Each instance has a unique [`identifier`](./uttype-swift.struct/identifier.md), and helpful properties, such as [`preferredFilenameExtension`](./uttype-swift.struct/preferredfilenameextension.md) and [`preferredMIMEType`](./uttype-swift.struct/preferredmimetype.md).
 

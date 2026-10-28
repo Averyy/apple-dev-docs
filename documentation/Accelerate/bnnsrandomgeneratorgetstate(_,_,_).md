@@ -25,7 +25,7 @@ func BNNSRandomGeneratorGetState(_ generator: BNNSRandomGenerator?, _ state_size
 int BNNSRandomGeneratorGetState(BNNSRandomGenerator generator, size_t state_size, void *state);
 ```
 
-#### Discussion
+## Discussion
 
 Use the [`BNNSRandomGeneratorGetState(_:_:_:)`](./bnnsrandomgeneratorgetstate%28_,_,_%29.md) and [`BNNSRandomGeneratorSetState(_:_:_:)`](./bnnsrandomgeneratorsetstate%28_,_,_%29.md) functions to capture and restore a random number generator’s state.
 

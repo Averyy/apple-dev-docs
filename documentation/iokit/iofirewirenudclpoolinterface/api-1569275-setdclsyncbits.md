@@ -14,7 +14,7 @@
 IOReturn (*SetDCLSyncBits)(NuDCLRef dcl, UInt8 syncBits);
 ```
 
-#### Discussion
+## Discussion
 
 Description forthcoming
 

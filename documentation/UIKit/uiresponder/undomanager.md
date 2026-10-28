@@ -23,7 +23,7 @@ var undoManager: UndoManager? { get }
 @property (nonatomic, readonly, nullable) NSUndoManager * undoManager;
 ```
 
-#### Discussion
+## Discussion
 
 By default, every window of an application has an undo manager: a shared object for managing undo and redo operations. However, the class of any object in the responder chain can have their own custom undo manager. (For example, instances of [`UITextField`](../uitextfield.md) have their own undo manager that’s cleared when the text field resigns first-responder status.) When you request an undo manager, the request goes up the responder chain and the [`UIWindow`](../uiwindow.md) object returns a usable instance.
 

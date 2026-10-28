@@ -25,7 +25,7 @@ optional func presentedItemDidGain(_ version: NSFileVersion)
 - (void) presentedItemDidGainVersion:(NSFileVersion *) version;
 ```
 
-#### Discussion
+## Discussion
 
 Your delegate can use this method to determine how to incorporate data from the new version of the file or file package. If the file has not been modified by your code, you might simply update to the new version quietly. However, if your application has its own changes, you might need to ask the user how to proceed.
 

@@ -12,7 +12,7 @@ virtual void registerService(
  IOOptionBits options = 0);
 ```
 
-#### Overview
+## Overview
 
 This function is called by IOAudioDevice::activateAudioEngine() once the audio engine has been fully initialized and is ready to begin audio playback.
 

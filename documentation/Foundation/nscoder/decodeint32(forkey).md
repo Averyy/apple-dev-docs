@@ -25,7 +25,7 @@ func decodeInt32(forKey key: String) -> Int32
 - (int32_t) decodeInt32ForKey:(NSString *) key;
 ```
 
-#### Discussion
+## Discussion
 
 If the encoded integer does not fit into a 32-bit integer, the method raises an `NSRangeException`. Subclasses must override this method if they perform keyed coding.
 

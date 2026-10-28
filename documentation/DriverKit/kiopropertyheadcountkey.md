@@ -16,7 +16,7 @@
 #define kIOPropertyHeadCountKey
 ```
 
-#### Discussion
+## Discussion
 
 This key is used to define the number of heads for a particular medium.
 

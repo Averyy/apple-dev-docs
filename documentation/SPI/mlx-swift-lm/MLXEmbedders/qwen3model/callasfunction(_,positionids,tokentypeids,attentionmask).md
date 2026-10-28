@@ -17,7 +17,7 @@ Forward pass to generate embeddings.
 func callAsFunction(_ inputIds: MLXArray, positionIds: MLXArray? = nil, tokenTypeIds: MLXArray? = nil, attentionMask: MLXArray? = nil) -> EmbeddingModelOutput
 ```
 
-#### Return Value
+## Return Value
 
 An `EmbeddingModelOutput` containing the final hidden states.
 

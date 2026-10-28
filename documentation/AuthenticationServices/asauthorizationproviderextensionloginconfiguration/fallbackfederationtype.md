@@ -21,7 +21,7 @@ var fallbackFederationType: ASAuthorizationProviderExtensionLoginConfiguration.F
 
 - [Implementing web-based authentication with Platform Single Sign-on](../implementing-web-based-authentication.md)
 
-#### Discussion
+## Discussion
 
 The federation method to use for fallback.
 

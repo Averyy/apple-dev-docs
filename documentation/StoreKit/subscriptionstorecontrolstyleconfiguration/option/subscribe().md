@@ -21,7 +21,7 @@ Initiates a purchase when a customer activates a control to subscribe to the opt
 func subscribe()
 ```
 
-#### Discussion
+## Discussion
 
 Call the [`subscribe()`](./subscribe%28%29.md) method within your custom style when the customer chooses to make a purchase.
 

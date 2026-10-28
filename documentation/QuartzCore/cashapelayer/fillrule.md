@@ -24,7 +24,7 @@ var fillRule: CAShapeLayerFillRule { get set }
 @property (copy) CAShapeLayerFillRule fillRule;
 ```
 
-#### Discussion
+## Discussion
 
 The possible values are shown in [Shape Fill Mode Values](../shape-fill-mode-values.md). The default is [`nonZero`](../cashapelayerfillrule/nonzero.md). See [Winding Rules](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CocoaDrawingGuide/Paths/Paths.html#//apple_ref/doc/uid/TP40003290-CH206-BAJIJJGD) for examples of the two fill rules.
 

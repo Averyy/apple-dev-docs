@@ -9,7 +9,7 @@
 IOAudioEngineStatus * status;
 ```
 
-#### Overview
+## Overview
 
 Status struct shared with the CoreAudio.framework.
 

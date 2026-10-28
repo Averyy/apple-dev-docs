@@ -21,7 +21,7 @@ Creates and returns a repeat behavior with a preferred repeat delay using period
 + (instancetype) behaviorPeriodicWithDelay:(double) delay;
 ```
 
-#### Return Value
+## Return Value
 
 A new behavior that prefers to repeat indefinitely with a specified delay using periodic animations.
 

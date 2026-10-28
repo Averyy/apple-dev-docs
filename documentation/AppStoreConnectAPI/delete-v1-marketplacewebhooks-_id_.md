@@ -11,9 +11,9 @@ Delete a specific marketplace notifcation endpoint URL.
 
 > **Deprecated**: This endpoint is deprecated.
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

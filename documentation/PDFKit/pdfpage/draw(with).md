@@ -23,7 +23,7 @@ func draw(with box: PDFDisplayBox)
 
 - [Adding Custom Graphics to a PDF](../adding-custom-graphics-to-a-pdf.md)
 
-#### Discussion
+## Discussion
 
 This method takes into account the page rotation and draws clipped to the specified box. If the page is set to display annotations, this method also draws them. This method does not clear the background. To clear the background before drawing, use [`NSRectFill`](../../AppKit/nsrectfill.md) with `NSColor` set (typically) to white.
 

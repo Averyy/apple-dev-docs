@@ -19,7 +19,7 @@ var titlebarSeparatorStyle: NSTitlebarSeparatorStyle { get set }
 @property NSTitlebarSeparatorStyle titlebarSeparatorStyle;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`NSTitlebarSeparatorStyle.automatic`](../nstitlebarseparatorstyle/automatic.md). Changing this value overrides any preference by [`NSSplitViewItem`](../nssplitviewitem.md).
 

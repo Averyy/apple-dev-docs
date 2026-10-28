@@ -14,11 +14,11 @@ SCSIParallelTaskIdentifier FindTaskForAddress (
  SCSITaggedTaskIdentifiertheQ );
 ```
 
-#### Return Value
+## Return Value
 
 returns a valid SCSIParallelTaskIdentifier or NULL if none found.
 
-#### Overview
+## Overview
 
 If a valid Tagged Task Identifier is specified, this method will return the task specified by the Tagged Task Address if one is found, or else NULL will be returned. If zero is used as the Tagged Task Identifier, then this routine will search for an outstanding task based on the Untagged Task Address and return the task or else, if one is not found, return NULL.
 

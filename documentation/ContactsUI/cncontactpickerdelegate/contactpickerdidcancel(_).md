@@ -22,7 +22,7 @@ optional func contactPickerDidCancel(_ picker: CNContactPickerViewController)
 - (void) contactPickerDidCancel:(CNContactPickerViewController *) picker;
 ```
 
-#### Discussion
+## Discussion
 
 The picker is dismissed automatically after a contact or property is picked.
 

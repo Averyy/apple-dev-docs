@@ -21,11 +21,11 @@ Performs a one-hot encoding on a single input.
 func applied(to input: Category?, eventHandler: EventHandler? = nil) throws -> [Int]
 ```
 
-#### Return Value
+## Return Value
 
 A one-hot encoded array.
 
-#### Discussion
+## Discussion
 
 - Parameters
 

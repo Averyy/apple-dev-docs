@@ -25,7 +25,7 @@ func NSStringFromSelector(_ aSelector: Selector) -> String
 extern NSString *NSStringFromSelector(SEL aSelector);
 ```
 
-#### Return Value
+## Return Value
 
 A string representation of `aSelector`.
 

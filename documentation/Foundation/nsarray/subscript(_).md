@@ -29,11 +29,11 @@ subscript(idx: Int) -> Any { get set }
 - (ObjectType) objectAtIndexedSubscript:(NSUInteger) idx;
 ```
 
-#### Return Value
+## Return Value
 
 The object located at `idx`.
 
-#### Discussion
+## Discussion
 
 This method has the same behavior as the [`object(at:)`](./object%28at%29.md) method.
 

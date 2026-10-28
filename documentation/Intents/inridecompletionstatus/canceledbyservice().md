@@ -23,11 +23,11 @@ class func canceledByService() -> Self
 + (instancetype) canceledByService;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized [`INRideCompletionStatus`](../inridecompletionstatus.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method when your service cancels the ride. This method sets the [`isCanceled`](./iscanceled.md) property of the returned object to [`true`](../../Swift/true.md), and it sets the [`isCompleted`](./iscompleted.md), [`isMissedPickup`](./ismissedpickup.md), and [`isOutstanding`](./isoutstanding.md) properties to [`false`](../../Swift/false.md).
 

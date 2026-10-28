@@ -24,7 +24,7 @@ var delegateSources: [EKSource] { get }
 @property (nonatomic, readonly) NSArray<EKSource *> * delegateSources;
 ```
 
-#### Discussion
+## Discussion
 
 By default, delegate event sources aren’t included in an event store’s [`sources`](./sources.md). To access events and reminders in a delegate source:
 

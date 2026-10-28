@@ -26,11 +26,11 @@ func NSDataFromGCMicroGamepadSnapShotDataV100(_ snapshotData: UnsafeMutablePoint
 NSData *NSDataFromGCMicroGamepadSnapShotDataV100(GCMicroGamepadSnapShotDataV100 *snapshotData);
 ```
 
-#### Return Value
+## Return Value
 
 A new [`NSData`](../Foundation/nsdata.md) object that contains the snapshot data, or `nil` if an error occurred.
 
-#### Discussion
+## Discussion
 
 If the version and size is not set in the snapshot the data will automatically have a version of `0x100` and a size equal to `sizeof(GCMicroGamepadSnapShotDataV100)`.
 

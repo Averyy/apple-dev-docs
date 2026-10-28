@@ -25,7 +25,7 @@ class SCNGeometrySource
 @interface SCNGeometrySource : NSObject
 ```
 
-#### Overview
+## Overview
 
 You use geometry sources together with [`SCNGeometryElement`](./scngeometryelement.md) objects to define custom [`SCNGeometry`](./scngeometry.md) objects or to inspect the data that composes an existing geometry.
 
@@ -35,7 +35,7 @@ You create a custom geometry using a three-step process:
 2. Create at least one [`SCNGeometryElement`](./scngeometryelement.md) object, containing an array of indices identifying vertices in the geometry sources and describing the drawing primitive that SceneKit uses to connect the vertices when rendering the geometry.
 3. Create an [`SCNGeometry`](./scngeometry.md) instance from the geometry sources and geometry elements.
 
-##### Interleaving Vertex Data
+### Interleaving Vertex Data
 
 Because most geometries use more than one geometry source and the GPU typically uses data from multiple sources together, you can achieve better rendering performance for custom geometries by interleaving the vertex data for multiple semantics in the same array.
 

@@ -19,11 +19,11 @@ func preferredPasteboardType(from availableTypes: [NSPasteboard.PasteboardType],
 - (NSPasteboardType) preferredPasteboardTypeFromArray:(NSArray<NSString *> *) availableTypes restrictedToTypesFromArray:(NSArray<NSString *> *) allowedTypes;
 ```
 
-#### Return Value
+## Return Value
 
 The preferred type to provide given the available types and the allowed types.
 
-#### Discussion
+## Discussion
 
 You should not need to override this method. You should also not need to invoke it unless you are implementing a new type of pasteboard to handle services other than copy/paste or dragging.
 

@@ -18,7 +18,7 @@ An optional identifier for the region.
 @property (nonatomic, readonly, nullable) id<NSObject> identifier;
 ```
 
-#### Discussion
+## Discussion
 
 Use this value to identify the [`UIPointerRegion`](../uipointerregion.md) in subsequent pointer interaction delegate calls.
 

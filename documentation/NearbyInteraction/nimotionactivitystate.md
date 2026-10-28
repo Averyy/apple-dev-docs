@@ -21,7 +21,7 @@ enum NIMotionActivityState
 enum NIMotionActivityState : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Ranging accuracy improves when the framework knows whether the accessory is moving. Track your accessory’s motion using a method you choose and then use this enumeration to describe the motion among the available states. When the accessory’s motion state changes, inform the session by calling [`updateMotionState(_:forObjectWithToken:)`](./nisession/updatemotionstate%28_,forobjectwithtoken%29.md)).
 

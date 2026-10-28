@@ -22,11 +22,11 @@ Returns the data stored in this decoder as represented in a container keyed by t
 func container<Key>(keyedBy type: Key.Type) throws -> KeyedDecodingContainer<Key> where Key : CodingKey
 ```
 
-#### Return Value
+## Return Value
 
 A keyed decoding container view into this decoder.
 
-#### Discussion
+## Discussion
 
 > **Throws**: `DecodingError.typeMismatch` if the encountered stored value is not a keyed container.
 

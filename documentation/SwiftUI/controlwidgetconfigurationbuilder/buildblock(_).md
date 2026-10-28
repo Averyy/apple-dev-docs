@@ -20,7 +20,7 @@ Passes a single control widget configuration written as a child control through 
 static func buildBlock<Content>(_ content: Content) -> some ControlWidgetConfiguration where Content : ControlWidgetConfiguration
 ```
 
-#### Discussion
+## Discussion
 
 An example of a single control widget configuration written as a child view is `{ StaticControlConfiguration(...) }`.
 

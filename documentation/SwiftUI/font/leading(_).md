@@ -21,11 +21,11 @@ Adjusts the line spacing of a font.
 func leading(_ leading: Font.Leading) -> Font
 ```
 
-#### Return Value
+## Return Value
 
 A modified font that uses the specified line spacing, or the original font if it doesn’t support line spacing adjustments.
 
-#### Discussion
+## Discussion
 
 You can change a font’s line spacing while maintaining other characteristics of the font by applying this modifier. For example, you can decrease spacing of the [`body`](./body.md) font by applying the [`Font.Leading.tight`](./leading/tight.md) value to it:
 

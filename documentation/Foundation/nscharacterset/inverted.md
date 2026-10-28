@@ -25,7 +25,7 @@ var inverted: CharacterSet { get }
 @property (copy, readonly) NSCharacterSet * invertedSet;
 ```
 
-#### Discussion
+## Discussion
 
 Using the inverse of an immutable character set is much more efficient than inverting a mutable character set.
 

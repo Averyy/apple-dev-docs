@@ -19,7 +19,7 @@ optional var selectedRanges: [NSValue] { get set }
 @property (copy) NSArray<NSValue *> * selectedRanges;
 ```
 
-#### Discussion
+## Discussion
 
 This property is required for the replace all in selection, select all, and select all in selection actions. The returned `NSArray` object should contain `NSRanges` wrapped by `NSValues`.
 

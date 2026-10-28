@@ -24,7 +24,7 @@ func layoutIfNeeded()
 - (void) layoutIfNeeded;
 ```
 
-#### Discussion
+## Discussion
 
 When this message is received, the layer’s super layers are traversed until a ancestor layer is found that does not require layout. Then layout is performed on the entire layer-tree beneath that ancestor.
 

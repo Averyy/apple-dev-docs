@@ -25,7 +25,7 @@ class CTRun
 typedef const struct __CTRun * CTRunRef;
 ```
 
-#### Overview
+## Overview
 
 A glyph run is a set of consecutive glyphs sharing the same attributes and direction.
 

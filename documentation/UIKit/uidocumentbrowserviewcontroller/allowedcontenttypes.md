@@ -24,7 +24,7 @@ var allowedContentTypes: [String] { get }
 @property (nonatomic, copy, readonly) NSArray<NSString *> * allowedContentTypes;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains an array of uniform type identifiers (UTIs). The document browser can open only documents of the types specified by these UTIs.
 

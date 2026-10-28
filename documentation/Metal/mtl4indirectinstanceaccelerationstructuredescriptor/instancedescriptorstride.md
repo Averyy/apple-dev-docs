@@ -24,7 +24,7 @@ var instanceDescriptorStride: Int { get set }
 @property (nonatomic) NSUInteger instanceDescriptorStride;
 ```
 
-#### Discussion
+## Discussion
 
 You are responsible for ensuring this stride is at least the size of the structure type corresponding to the instance descriptor type and a multiple of 4 bytes.
 

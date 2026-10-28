@@ -21,7 +21,7 @@ protocol ARSessionDelegate : ARSessionObserver
 @protocol ARSessionDelegate <ARSessionObserver>
 ```
 
-#### Overview
+## Overview
 
 Implement this protocol if you need to work directly with [`ARFrame`](./arframe.md) objects captured by the session or directly follow changes to the session’s set of tracked [`ARAnchor`](./aranchor.md) objects. Typically, you adopt this protocol when building a custom view for displaying AR content—if you display content with SceneKit or SpriteKit, the [`ARSCNViewDelegate`](./arscnviewdelegate.md) and [`ARSKViewDelegate`](./arskviewdelegate.md) protocols provide similar information and integrate with those technologies.
 

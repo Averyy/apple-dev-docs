@@ -22,7 +22,7 @@ class let touchBarBookmarksTemplateName: String
 extern NSImageName const NSImageNameTouchBarBookmarksTemplate;
 ```
 
-#### Discussion
+## Discussion
 
 ![Template image for bookmarks](https://developer.apple.com/tutorials/images/com.apple.appkit/media-2793480@2x.png)
 

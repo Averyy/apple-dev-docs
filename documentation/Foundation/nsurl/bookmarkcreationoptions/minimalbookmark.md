@@ -25,7 +25,7 @@ static var minimalBookmark: NSURL.BookmarkCreationOptions { get }
 NSURLBookmarkCreationMinimalBookmark
 ```
 
-#### Discussion
+## Discussion
 
 This produces a smaller bookmark that can be resolved in fewer ways.
 

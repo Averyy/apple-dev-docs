@@ -21,7 +21,7 @@ Appends an interpolated textual representation of a type using the specified att
 mutating func appendInterpolation<T>(_ value: @autoclosure @escaping () -> T, align: OSLogStringAlignment = .none, privacy: OSLogPrivacy = .auto, attributes: String) where T : CustomStringConvertible
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  You don’t call this method directly. Instead, the framework calls it automatically when you append an interpolated type that adopts the [`CustomStringConvertible`](../../Swift/customstringconvertible.md) protocol to a log message.
 

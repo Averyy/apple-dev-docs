@@ -9,9 +9,9 @@ Remove an alternative distribution key from your account.
 **Availability**:
 - App Store Connect API 3.3+
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

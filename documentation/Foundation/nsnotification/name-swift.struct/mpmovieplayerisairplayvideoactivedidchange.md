@@ -20,7 +20,7 @@ Posted when a movie player has started or ended playing a movie via AirPlay. The
 static let MPMoviePlayerIsAirPlayVideoActiveDidChange: NSNotification.Name
 ```
 
-#### Discussion
+## Discussion
 
 To find out whether AirPlay playback started or stopped, query the [`isAirPlayVideoActive`](../../../MediaPlayer/mpmovieplayercontroller/isairplayvideoactive.md) property. The movie player whose state has changed is available as the object associated with the notification.
 

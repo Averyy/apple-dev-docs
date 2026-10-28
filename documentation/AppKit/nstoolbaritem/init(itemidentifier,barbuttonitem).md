@@ -19,11 +19,11 @@ convenience init(itemIdentifier: NSToolbarItem.Identifier, barButtonItem: UIBarB
 + (instancetype) itemWithItemIdentifier:(NSToolbarItemIdentifier) itemIdentifier barButtonItem:(UIBarButtonItem *) barButtonItem;
 ```
 
-#### Return Value
+## Return Value
 
 A new toolbar item.
 
-#### Discussion
+## Discussion
 
 Use this method to create and initialize a toolbar item with property values from a [`UIBarButtonItem`](../../UIKit/uibarbuttonitem.md), such as [`title`](./title.md), [`image`](./image.md), [`action`](./action.md), and [`target`](./target.md).
 

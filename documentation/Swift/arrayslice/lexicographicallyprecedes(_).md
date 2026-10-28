@@ -23,11 +23,11 @@ func lexicographicallyPrecedes<OtherSequence>(_ other: OtherSequence) -> Bool wh
 
 Available when `Element` conforms to `Comparable`.
 
-#### Return Value
+## Return Value
 
 `true` if this sequence precedes `other` in a dictionary ordering; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 This example uses the `lexicographicallyPrecedes` method to test which array of integers comes first in a lexicographical ordering.
 

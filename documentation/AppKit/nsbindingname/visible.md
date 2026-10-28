@@ -19,7 +19,7 @@ static let visible: NSBindingName
 extern NSBindingName NSVisibleBinding;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [Cocoa Bindings](../cocoa-bindings.md).
 

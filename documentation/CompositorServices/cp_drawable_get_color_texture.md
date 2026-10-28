@@ -16,11 +16,11 @@ Returns the color texture at the specified index in the drawable.
 id<MTLTexture>cp_drawable_get_color_texture(cp_drawable_t drawable, size_t index);
 ```
 
-#### Return Value
+## Return Value
 
 The Metal color texture at the specified index.
 
-#### Discussion
+## Discussion
 
 Use the returned texture in your render pipeline to store the pixels you want to appear. The layer’s texture topology determines the total number of textures, and the layout and content for each texture. Use the drawable’s views to map your content into specific portions of the textures.
 

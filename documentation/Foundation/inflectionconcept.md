@@ -21,7 +21,7 @@ An inflection method to use when localizing text.
 enum InflectionConcept
 ```
 
-#### Overview
+## Overview
 
 Use `InflectionConcept` when you want to make a localizable string grammatically agree with a phrase or term of address that isn’t part of the text you’re localizing. Set [`InflectionConcept`](./inflectionconcept.md) on the [`concepts`](./attributedstring/localizationoptions/concepts.md) property of [`AttributedString.LocalizationOptions`](./attributedstring/localizationoptions.md) to specify the inflection concepts to use while inflecting text.
 

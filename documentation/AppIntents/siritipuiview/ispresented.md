@@ -18,7 +18,7 @@ Determines if the view should be presented to the user.
 @objc @preconcurrency dynamic final var isPresented: Bool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to `true` and gets set to `false` after the dismissal button is tapped. Changing this has no affect if `allowsDismissal` is set to `false`. This value is KVO compliant.
 

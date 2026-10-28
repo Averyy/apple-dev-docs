@@ -16,7 +16,7 @@
 class IOEventLink;
 ```
 
-#### Overview
+## Overview
 
 IOEventLink allows for fast IPC, suitable for realtime applications.
 

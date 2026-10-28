@@ -20,7 +20,7 @@ Updated material bindings.
 let assignedMaterials: [USDPlayer.MaterialID]?
 ```
 
-#### Discussion
+## Discussion
 
 `nil` if unchanged.
 

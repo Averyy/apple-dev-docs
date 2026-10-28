@@ -18,7 +18,7 @@ An unordered set of render target descriptors that defines the output format com
 struct DescriptorSet
 ```
 
-#### Overview
+## Overview
 
 `DescriptorSet` conforms to `ExpressibleByArrayLiteral`, so you can initialize it directly with an array literal of [`LowLevelRenderTarget.Descriptor`](./descriptor.md) values.
 

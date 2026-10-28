@@ -25,7 +25,7 @@ func SparseMultiplyAdd(_ A: SparseMatrix_Float, _ x: DenseVector_Float, _ y: Den
 static void SparseMultiplyAdd(SparseMatrix_Float A, DenseVector_Float x, DenseVector_Float y);
 ```
 
-#### Discussion
+## Discussion
 
 Use this function to multiply a sparse matrix by a dense vector and accumulate the result. The following equation is an example of a matrix-vector multiplication where the matrix is sparse:
 
@@ -129,9 +129,9 @@ SparseCleanup(A);
 - [func SparseMultiplyAdd(SparseMatrix_Double, DenseVector_Double, DenseVector_Double)](./sparsemultiplyadd%28_,_,_%29-7iuo9.md)
   Performs the multiply operation *y += Ax* on a vector of double-precision, floating-point values.
 - [func SparseMultiplyAdd(Double, SparseMatrix_Double, DenseVector_Double, DenseVector_Double)](./sparsemultiplyadd%28_,_,_,_%29-3oa6n.md)
-  Performs the multiply operation *y += alpha * Ax* on a vector of double-precision, floating-point values.
+  Performs the multiply operation *y += alpha \* Ax* on a vector of double-precision, floating-point values.
 - [func SparseMultiplyAdd(Float, SparseMatrix_Float, DenseVector_Float, DenseVector_Float)](./sparsemultiplyadd%28_,_,_,_%29-8n6xy.md)
-  Performs the multiply operation *y += alpha * Ax* on a vector of single-precision, floating-point values.
+  Performs the multiply operation *y += alpha \* Ax* on a vector of single-precision, floating-point values.
 
 
 ---

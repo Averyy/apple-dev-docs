@@ -24,7 +24,7 @@ var samplingMethod: MPSGraphRandomNormalSamplingMethod { get set }
 @property (nonatomic, readwrite) MPSGraphRandomNormalSamplingMethod samplingMethod;
 ```
 
-#### Discussion
+## Discussion
 
 This value is used for Normal and Truncated Normal disributions. See MPSGraphRandomNormalSamplingMethod. Defaults to MPSGraphRandomNormalSamplingInvCDF.
 

@@ -25,11 +25,11 @@ object ManagementServerCapabilities
 
 - [Leveraging the declarative management data model to scale devices](./leveraging-the-declarative-management-data-model-to-scale-devices.md)
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.management.server-capabilities` as the declaration type.
 
-##### Management declaration example
+### Management declaration example
 
 ```json
 {

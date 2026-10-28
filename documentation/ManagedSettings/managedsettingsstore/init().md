@@ -18,7 +18,7 @@ Creates a new instance of a store.
 init()
 ```
 
-#### Discussion
+## Discussion
 
 Each store contains the settings that the client app applies. If the client app doesn’t explicitly apply a setting, the default value is `nil`.
 

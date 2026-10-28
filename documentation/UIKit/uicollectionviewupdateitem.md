@@ -24,7 +24,7 @@ class UICollectionViewUpdateItem
 @interface UICollectionViewUpdateItem : NSObject
 ```
 
-#### Overview
+## Overview
 
 You don’t create instances of this class directly. When updating its content, the collection view object creates them and passes them to the layout object’s [`prepare(forCollectionViewUpdates:)`](./uicollectionviewlayout/prepare%28forcollectionviewupdates%29.md) method, which can use them to prepare the layout object for the upcoming changes.
 

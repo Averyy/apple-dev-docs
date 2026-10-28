@@ -24,7 +24,7 @@ case rgb8Sint
 MTLPixelFormatRGB8Sint
 ```
 
-#### Discussion
+## Discussion
 
 The order of the color components in this format are red, green and blue.
 

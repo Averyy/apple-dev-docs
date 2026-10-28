@@ -11,11 +11,11 @@ Creates an IOEthernetInterface object.
 virtual IONetworkInterface * createInterface();
 ```
 
-#### Return Value
+## Return Value
 
 Returns a newly allocated and initialized IOEthernetInterface object.
 
-#### Overview
+## Overview
 
 This method allocates and returns a new IOEthernetInterface instance. A subclass of IONetworkController must implement this method and return a matching interface object. The implementation in IOEthernetController will return an IOEthernetInterface object. Subclasses of IOEthernetController, such as Ethernet controller drivers, will have little reason to override this implementation.
 

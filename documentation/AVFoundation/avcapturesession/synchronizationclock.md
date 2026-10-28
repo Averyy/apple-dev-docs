@@ -24,7 +24,7 @@ var synchronizationClock: CMClock? { get }
 @property (nonatomic, readonly, nullable) CMClockRef synchronizationClock;
 ```
 
-#### Discussion
+## Discussion
 
 All capture output sample buffer timestamps are on the synchronization clock’s timebase. Use this clock in conjunction with the clock from an [`AVCaptureInput.Port`](../avcaptureinput/port.md) object to synchronize capture output with external data sources such as Core Motion samples.
 

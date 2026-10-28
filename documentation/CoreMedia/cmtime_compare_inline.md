@@ -21,7 +21,7 @@ Returns a Boolean value that indicates whether the specified comparison is true.
 #define CMTIME_COMPARE_INLINE(time1, comparator, time2)
 ```
 
-#### Discussion
+## Discussion
 
 The following code demonstrates how to use this macro to determine if the first time is less than or equal to the second time:
 

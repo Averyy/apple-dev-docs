@@ -5,7 +5,7 @@
 
 Discover how many people subscribe to your broadcast channels, and how many messages they receive.
 
-#### Overview
+## Overview
 
 Use the CloudKit Console to export Apple Push Notification service (APNs) broadcast notification metrics for your application and channels. To download the broadcast push notification metrics report, create a data export token, request data from iCloud Web Services, and download the results when the request completes. For more information about CloudKit and CloudKit Console, see [Build apps using CloudKit](https://developer.apple.com/icloud/cloudkit/).
 
@@ -15,7 +15,7 @@ Use the CloudKit Console to export Apple Push Notification service (APNs) broadc
 >
 > [Learn more](https://support.apple.com/guide/feedback-assistant/welcome/mac) about how to use Feedback Assistant.
 
-#### Create a data export token
+## Create a data export token
 
 To access log data for your apps, create a data export token by following these steps:
 
@@ -36,7 +36,7 @@ To access log data for your apps, create a data export token by following these 
 
 The token you create is restricted to your developer account, and only gives you access to the APNs dataset for the specified app.
 
-#### Create a data export request
+## Create a data export request
 
 Make an HTTPS `POST` request to the appropriate data export request endpoint:
 
@@ -132,7 +132,7 @@ The data export status endpoint might return the following HTTP status codes tha
 - **`401`**: The data export token is invalid.
 - **`500`**: An internal error occurred.
 
-#### Download the exported data
+## Download the exported data
 
 Make an HTTPS GET request to URL in the status object’s `downloadDetails.dataUrl` field to receive a CSV file that contains your exported data:
 

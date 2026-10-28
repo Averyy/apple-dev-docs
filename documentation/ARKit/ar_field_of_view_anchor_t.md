@@ -15,7 +15,7 @@ An anchor representing a set of field of view boundary polygon points in immersi
 typedef NSObject<OS_ar_field_of_view_anchor> * ar_field_of_view_anchor_t;
 ```
 
-#### Discussion
+## Discussion
 
 Provides polygon points that define preset FoV boundaries, allowing applications to visualize these FoVs in the immersive space.
 

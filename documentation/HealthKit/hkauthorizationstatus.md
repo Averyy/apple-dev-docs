@@ -24,7 +24,7 @@ enum HKAuthorizationStatus
 enum HKAuthorizationStatus : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 This status indicates whether  the user has authorized your app to save data of the given type.
 

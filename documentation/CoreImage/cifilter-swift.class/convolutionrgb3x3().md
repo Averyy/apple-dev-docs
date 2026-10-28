@@ -24,11 +24,11 @@ class func convolutionRGB3X3() -> any CIFilter & CIConvolution
 + (CIFilter<CIConvolution> *) convolutionRGB3X3Filter;
 ```
 
-#### Return Value
+## Return Value
 
 The convolved image.
 
-#### Discussion
+## Discussion
 
 This method applies a 3 x 3 convolution to the `RGB` components of an image. The effect uses a 3 x 3 area surrounding an input pixel, the pixel itself, and those within a distance of 1 pixel horizontally and vertically. This filter differs from the [`convolution3X3()`](./convolution3x3%28%29.md) filter, which processes all of the color components including the alpha component.
 

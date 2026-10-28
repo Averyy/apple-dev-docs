@@ -4,11 +4,11 @@
 
 Learn about changes to the visionOS SDK.
 
-#### Overview
+## Overview
 
 The Apple Developer Program provides everything you need to build and distribute your apps on the App Store. Membership includes access to beta OS releases, advanced app capabilities, and tools to develop, test, and distribute apps and Safari extensions. For more information, visit [Apple Developer Program](https://developer.apple.com/programs/).
 
-##### Bug Reporting
+### Bug Reporting
 
 For issues not mentioned in release notes, file bugs through [Feedback Assistant](https://developer.apple.com/bug-reporting/).
 

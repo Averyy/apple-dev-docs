@@ -24,11 +24,11 @@ init()
 - (instancetype) init;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized `PDFActionResetForm` instance, or `NULL` if the object could not be initialized.
 
-#### Discussion
+## Discussion
 
 Initially, there are no fields and [`fieldsIncludedAreCleared`](./fieldsincludedarecleared.md) returns [`true`](../../Swift/true.md).
 

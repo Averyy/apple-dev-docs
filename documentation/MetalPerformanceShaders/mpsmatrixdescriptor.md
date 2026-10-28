@@ -24,7 +24,7 @@ class MPSMatrixDescriptor
 @interface MPSMatrixDescriptor : NSObject
 ```
 
-#### Overview
+## Overview
 
 Matrix data is assumed to be stored in row-major order.
 

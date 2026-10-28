@@ -20,7 +20,7 @@ var file_provider_materialize: es_event_file_provider_materialize_t { get set }
 es_event_file_provider_materialize_t file_provider_materialize;
 ```
 
-#### Discussion
+## Discussion
 
 See the [File Provider](../../FileProvider/FileProvider.md) framework for more information on file providers.
 

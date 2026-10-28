@@ -5,13 +5,13 @@
 
 Display Apple Pay installment payment options and merchandising information to customers using the Apple Pay Merchandising web component.
 
-#### Overview
+## Overview
 
 The Apple Pay Merchandising component is a native web component that displays payment installment options from various payment providers. It helps merchants showcase flexible payment options to customers by making payment terms clear and accessible.
 
 The Apple Pay Merchandising component, `<apple-pay-merchandising>` provides a seamless way to display installment payment information on your website. The component automatically fetches and displays relevant payment options based on the purchase amount, currency, and available payment providers.
 
-##### Load the Apple Pay SDK with components
+### Load the Apple Pay SDK with components
 
 To use the Apple Pay Merchandising component, load the Apple Pay JS SDK with the desired components:
 
@@ -32,7 +32,7 @@ Available components:
 
 > ❗ **Important**: If the `components` query parameter is not specified, `apple-pay-button` and `wallet-button` are loaded by default. When you specify the `components` parameter, you must explicitly list all components you need, including `apple-pay-button` and `wallet-button` if you are using them.
 
-##### Add the element to your page
+### Add the element to your page
 
 Add the `<apple-pay-merchandising>` element to your page with the required attributes:
 
@@ -44,7 +44,7 @@ Add the `<apple-pay-merchandising>` element to your page with the required attri
 </apple-pay-merchandising>
 ```
 
-##### Choose a widget type
+### Choose a widget type
 
 The component supports three widget types to display payment information in different formats:
 
@@ -52,14 +52,14 @@ The component supports three widget types to display payment information in diff
 - **`installments-text`**: A text-focused display of installment options without prominent logos.
 - **`installments-how-to`**: A simplified view explaining how installment payments work.
 
-##### Add the required attributes
+### Add the required attributes
 
 The following attributes are required for the component to function:
 
 - **`amount`**: The purchase amount, for example “99.99”.
 - **`currency`**: The three-letter currency code, for example “USD”, “EUR”, “GBP”.
 
-##### Configure optional attributes
+### Configure optional attributes
 
 Customize the component behavior with these optional attributes:
 
@@ -88,7 +88,7 @@ The following example shows the merchandising component with multiple payment pa
 </apple-pay-merchandising>
 ```
 
-##### Add dark mode support
+### Add dark mode support
 
 The component automatically adapts to the user’s system color scheme when `theme="auto"` is set (default). You can also explicitly set light or dark themes:
 
@@ -108,7 +108,7 @@ The component automatically adapts to the user’s system color scheme when `the
 </apple-pay-merchandising>
 ```
 
-##### Access the component programmatically
+### Access the component programmatically
 
 You can interact with the component using JavaScript:
 
@@ -126,7 +126,7 @@ widget.data.then(data => {
 });
 ```
 
-##### Configure a Content Security Policy
+### Configure a Content Security Policy
 
 When implementing Content Security Policy (CSP), include the following directives to allow the merchandising component to function properly:
 
@@ -137,7 +137,7 @@ script-src https://applepay.cdn-apple.com;
 connect-src https://applepay.cdn-apple.com;
 ```
 
-##### Support accessibility interactions
+### Support accessibility interactions
 
 The Apple Pay Merchandising component is built with accessibility in mind. Some of the accessible features of the component include:
 
@@ -147,7 +147,7 @@ The Apple Pay Merchandising component is built with accessibility in mind. Some 
 - Supports right-to-left (RTL) language for Arabic, Hebrew, and other RTL languages.
 - Allows the choice of the person’s system color scheme preferences.
 
-##### Optimize the component for your site
+### Optimize the component for your site
 
 - Place prominently: Display the component near product pricing or on the cart page where customers make purchase decisions.
 - Update dynamically: Update the `amount` attribute when the cart total changes to show accurate installment information.

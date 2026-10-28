@@ -25,7 +25,7 @@ var shadingImage: CIImage? { get set }
 @property (nonatomic, retain, nullable) CIImage * shadingImage;
 ```
 
-#### Discussion
+## Discussion
 
 The resulting image has greater heights with lighter shades, and lesser heights (lower areas) with darker shades.
 

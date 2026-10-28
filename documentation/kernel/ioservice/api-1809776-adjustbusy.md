@@ -12,7 +12,7 @@ virtual void adjustBusy(
  SInt32delta );
 ```
 
-#### Overview
+## Overview
 
 Applies a delta to an IOService object's `busyState`. A change in the `busyState` to or from zero will change the IOService object's provider's `busyState` by one (in the same direction).
 

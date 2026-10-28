@@ -14,7 +14,7 @@
 #define kIOVideoDeviceLibTypeID
 ```
 
-#### Discussion
+## Discussion
 
 This is the UUID of the plug-in type (5339633C-F903-4212-9C90-9B18AF01862D).
 

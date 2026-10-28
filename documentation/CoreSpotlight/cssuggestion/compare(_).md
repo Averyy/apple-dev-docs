@@ -23,7 +23,7 @@ func compare(_ other: CSSuggestion) -> ComparisonResult
 - (NSComparisonResult) compare:(CSSuggestion *) other;
 ```
 
-#### Return Value
+## Return Value
 
 Returns an `NSComparisonResult`.
 

@@ -24,7 +24,7 @@ var indexBuffer: MTKMeshBuffer { get }
 @property (nonatomic, readonly, nonnull) MTKMeshBuffer * indexBuffer;
 ```
 
-#### Discussion
+## Discussion
 
 Use this object for the `indexBuffer` parameter in a call to [`drawIndexedPrimitives(type:indexCount:indexType:indexBuffer:indexBufferOffset:)`](../../Metal/mtlrendercommandencoder/drawindexedprimitives%28type,indexcount,indextype,indexbuffer,indexbufferoffset%29.md).
 

@@ -21,11 +21,11 @@ Returns a custom format style that portrays the year of a non-Gregorian calendar
 static func relatedGregorian(minimumLength: Int = 1) -> Date.FormatStyle.Symbol.Year
 ```
 
-#### Return Value
+## Return Value
 
 A custom year format style that portrays the year of the calendar system with the provided minimum length.
 
-#### Discussion
+## Discussion
 
 For non-Gregorian calendars, output corresponds to the extended Gregorian year in which the calendar’s year begins. The default length is the minimum needed to show the full year.
 

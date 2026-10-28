@@ -19,7 +19,7 @@ weak var delegate: (any NSStackViewDelegate)? { get set }
 @property (weak, nullable) id<NSStackViewDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 The system calls a delegate method when resizing has caused a view to be detached from or reattached to the stack view. For more information, see [`NSStackViewDelegate`](../nsstackviewdelegate.md).
 

@@ -18,7 +18,7 @@ geoJSONDidComplete?<D extends GeoJSONTypes.GeoJSON>(
 ): void;
 ```
 
-#### Discussion
+## Discussion
 
 After MapKit JS loads the GeoJSON data and converts it to MapKit objects, the framework calls [`geoJSONDidComplete()`](./geojsondidcomplete.md) with the resulting [`ItemCollection`](../itemcollection.md), which reflects any provided customizations. This is the same value that returns directly from [`importGeoJSON()`](../mapkit/importgeojson.md) in the synchronous case.
 

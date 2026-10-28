@@ -20,11 +20,11 @@ func IOUSBGetNextInterfaceAssociationDescriptor(_ configurationDescriptor: Unsaf
 const IOUSBInterfaceAssociationDescriptor *IOUSBGetNextInterfaceAssociationDescriptor(const IOUSBConfigurationDescriptor *configurationDescriptor, const IOUSBDescriptorHeader *currentDescriptor);
 ```
 
-#### Return Value
+## Return Value
 
 The next interface assocation descriptor pointer, or `nil` if no matching descriptor returns.
 
-#### Discussion
+## Discussion
 
 This method uses [`IOUSBGetNextDescriptorWithType(_:_:_:)`](./iousbgetnextdescriptorwithtype%28_,_,_%29.md) to find the next interface association descriptor.
 

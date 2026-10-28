@@ -22,11 +22,11 @@ class func persistentIDProperty(forGroupingType groupingType: MPMediaGrouping) -
 + (NSString *) persistentIDPropertyForGroupingType:(MPMediaGrouping) groupingType;
 ```
 
-#### Return Value
+## Return Value
 
 The identifier for the group type.
 
-#### Discussion
+## Discussion
 
 Use this convenience method to obtain the key for a specific persistent identifier based on a grouping type. You can use that key, in turn, to obtain the value of a specific persistent ID of a media item, such as album title or artist name. Using this method simplifies such tasks as drilling down from an artist, to albums by that artist, to a specific album.
 

@@ -14,11 +14,11 @@ bool SetAutoSenseData (
  UInt8senseDataSize );
 ```
 
-#### Return Value
+## Return Value
 
 True if sense data was successfully copied, otherwise false.
 
-#### Overview
+## Overview
 
 Accessor method to set the autosense data.
 

@@ -19,7 +19,7 @@ var verticalRulerView: NSRulerView? { get set }
 @property (strong, nullable) NSRulerView * verticalRulerView;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is `nil` when the scroll view has no vertical ruler view.
 

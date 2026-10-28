@@ -20,7 +20,7 @@ string ReportingAdChannelType
 - `SEARCH`: Metrics from Search results ads.
 - `DISPLAY`: Metrics from Search tab, Today tab, or Product Pages ads.
 
-#### Discussion
+## Discussion
 
 This distinguishes `SEARCH` results placements from `DISPLAY` placements such as the Search tab, Today tab, or product pages.
 

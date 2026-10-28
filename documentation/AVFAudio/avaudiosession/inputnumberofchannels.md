@@ -24,7 +24,7 @@ var inputNumberOfChannels: Int { get }
 @property (readonly) NSInteger inputNumberOfChannels;
 ```
 
-#### Discussion
+## Discussion
 
 You can observe changes to the value of this property by using key-value observing. For more information, see [Using Key-Value Observing in Swift](../../Swift/using-key-value-observing-in-swift.md).
 

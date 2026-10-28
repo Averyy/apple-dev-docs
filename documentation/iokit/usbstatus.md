@@ -14,7 +14,7 @@
 typedef UInt16 USBStatus;
 ```
 
-#### Discussion
+## Discussion
 
 Type used to get a DeviceStatus as a single quantity.
 

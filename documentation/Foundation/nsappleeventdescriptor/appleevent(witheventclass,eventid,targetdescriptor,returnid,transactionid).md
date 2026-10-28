@@ -20,11 +20,11 @@ class func appleEvent(withEventClass eventClass: AEEventClass, eventID: AEEventI
 + (NSAppleEventDescriptor *) appleEventWithEventClass:(AEEventClass) eventClass eventID:(AEEventID) eventID targetDescriptor:(NSAppleEventDescriptor *) targetDescriptor returnID:(AEReturnID) returnID transactionID:(AETransactionID) transactionID;
 ```
 
-#### Return Value
+## Return Value
 
 A descriptor for an Apple event, initialized according to the specified parameter values, or `nil` if an error occurs.
 
-#### Discussion
+## Discussion
 
 Constants such as `kAutoGenerateReturnID` and `kAnyTransactionID` are defined in `AE.framework`, a subframework of `ApplicationServices.framework`.
 

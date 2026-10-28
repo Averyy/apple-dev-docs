@@ -31,7 +31,7 @@ var guest: INRestaurantGuest? { get set }
 @property (atomic, copy, nullable) INRestaurantGuest * guest;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify the identity of the person making the reservation. Depending on the preferences you specify in the [`guestDisplayPreferences`](./guestdisplaypreferences.md) property, this person may or may not be the person associated with any newly created reservations.
 

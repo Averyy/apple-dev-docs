@@ -19,7 +19,7 @@ func font() -> NSFont!
 - (NSFont *) font;
 ```
 
-#### Return Value
+## Return Value
 
 The font used for text in the annotation’s text field.
 

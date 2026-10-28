@@ -20,11 +20,11 @@ static inline IOReturn weakWithSpecification (
  void *refCon = 0) __attribute__((always_inline));
 ```
 
-#### Return Value
+## Return Value
 
 kIOReturnSuccess if everything is OK, otherwise kIOReturnBadArgument if newCommand is NULL, kIOReturnUnsupported if the kernel doesn't export IODMACommand or IOReturnError if the new command fails to init, q.v. initWithSpecification.
 
-#### Overview
+## Overview
 
 Factory function to create and initialise an IODMACommand in one operation. The function allows a developer to 'weak' link with IODMACommand. This function will return kIOReturnUnsupported if the IODMACommand is unavailable. This function is actually fairly slow so it will be better to call it once then clone the successfully create command using cloneCommand (q.v.).
 

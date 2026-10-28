@@ -25,7 +25,7 @@ var databaseScope: CKDatabase.Scope { get }
 @property (nonatomic, assign, readonly) CKDatabaseScope databaseScope;
 ```
 
-#### Discussion
+## Discussion
 
 This property’s value is one of the constants that [`CKDatabase.Scope`](../ckdatabase/scope.md) defines.
 

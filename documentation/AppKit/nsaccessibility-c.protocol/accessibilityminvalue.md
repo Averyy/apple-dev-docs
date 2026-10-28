@@ -15,7 +15,7 @@ The minimum value for the accessibility element.
 @property (strong, nullable) id accessibilityMinValue;
 ```
 
-#### Discussion
+## Discussion
 
 This property is set to `nil` by default. Only a few AppKit controls (for example, [`NSSliderCell`](../nsslidercell.md)) support this value. Set this property only when the element has an [`accessibilityValue`](./accessibilityvalue.md) property and you want to define the minimum possible value.
 

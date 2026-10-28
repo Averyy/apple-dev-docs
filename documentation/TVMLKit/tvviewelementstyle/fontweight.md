@@ -21,7 +21,7 @@ var fontWeight: String? { get }
 @property (nonatomic, readonly, nullable) NSString * fontWeight;
 ```
 
-#### Discussion
+## Discussion
 
 Valid values for this property are `bold`, `light`, `medium`, and `regular`.
 

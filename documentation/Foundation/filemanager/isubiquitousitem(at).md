@@ -25,11 +25,11 @@ func isUbiquitousItem(at url: URL) -> Bool
 - (BOOL) isUbiquitousItemAtURL:(NSURL *) url;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the item is targeted for iCloud storage or [`false`](../../Swift/false.md) if it is not. This method also returns [`false`](../../Swift/false.md) if no item exists at `url`.
 
-#### Discussion
+## Discussion
 
 This method reflects only whether the item should be stored in iCloud because a call was made to the  [`setUbiquitous(_:itemAt:destinationURL:)`](./setubiquitous%28_,itemat,destinationurl%29.md) method with a value of [`true`](../../Swift/true.md) for its `flag` parameter. This method does not reflect whether the file has actually been uploaded to any iCloud servers. To determine a file’s upload status, check the `NSURLUbiquitousItemIsUploadedKey` attribute of the corresponding [`NSURL`](../nsurl.md) object.
 

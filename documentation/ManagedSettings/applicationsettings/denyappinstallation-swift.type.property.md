@@ -17,7 +17,7 @@ The metadata for the setting to prevent app installation.
 static let denyAppInstallation: SettingMetadata<Bool>
 ```
 
-#### Discussion
+## Discussion
 
 Use `denyAppInstallation` to access metadata about [`denyAppInstallation`](./denyappinstallation-swift.property.md). The default value is `false`.
 

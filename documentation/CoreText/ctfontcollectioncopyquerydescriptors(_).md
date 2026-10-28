@@ -19,7 +19,7 @@ func CTFontCollectionCopyQueryDescriptors(_ collection: CTFontCollection) -> CFA
 extern CFArrayRefCTFontCollectionCopyQueryDescriptors(CTFontCollectionRef collection);
 ```
 
-#### Return Value
+## Return Value
 
 A retained reference to the array of descriptors for querying (matching) the system font database. The return value is undefined if you create the collection with [`CTFontCollectionCreateFromAvailableFonts(_:)`](./ctfontcollectioncreatefromavailablefonts%28_%29.md).
 

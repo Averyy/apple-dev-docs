@@ -6,20 +6,24 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.wh
 
 # mlx.core.where
 
-**where(*condition: scalar | array*, *x: scalar | array*, *y: scalar | array*, */*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.md#mlx.core.array)**
-: Select from `x` or `y` according to `condition`.
+```python
+where(condition: scalar | array, x: scalar | array, y: scalar | array, /, *, stream: StreamOrDevice = None) → array
+```
+
+Select from `x` or `y` according to `condition`.
+
 The condition and input arrays must be the same shape or
 broadcastable with each another.
 
-Parameters:
+**Parameters:**
 
-**condition** ([array](mlx.core.array.md#mlx.core.array)) – The condition array.
-**x** ([array](mlx.core.array.md#mlx.core.array)) – The input selected from where condition is `True`.
-**y** ([array](mlx.core.array.md#mlx.core.array)) – The input selected from where condition is `False`.
+- **condition** ([array](mlx.core.array.md#mlx.core.array)) – The condition array.
+- **x** ([array](mlx.core.array.md#mlx.core.array)) – The input selected from where condition is `True`.
+- **y** ([array](mlx.core.array.md#mlx.core.array)) – The input selected from where condition is `False`.
 
-Returns:
-The output containing elements selected from
+**Returns:**
+: The output containing elements selected from
 `x` and `y`.
 
-Return type:
-[array](mlx.core.array.md#mlx.core.array)
+**Return type:**
+: [array](mlx.core.array.md#mlx.core.array)

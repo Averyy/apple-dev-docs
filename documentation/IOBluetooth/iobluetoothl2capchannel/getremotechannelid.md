@@ -15,7 +15,7 @@ Returns the remote L2CAP channel ID for the target L2CAP channel.
 - (BluetoothL2CAPChannelID) getRemoteChannelID;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the remote L2CAP channel ID for the target L2CAP channel.
 

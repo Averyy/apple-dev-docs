@@ -23,7 +23,7 @@ static var zeroAdvancement: NSLayoutManager.ControlCharacterAction { get }
 NSControlCharacterActionZeroAdvancement
 ```
 
-#### Discussion
+## Discussion
 
 Glyphs with this action are filtered out from layout ([`notShownAttribute(forGlyphAt:)`](../notshownattribute%28forglyphat%29.md) `== YES` for the glyph).
 

@@ -21,7 +21,7 @@ Creates a new Core Foundation data instance from a tag collection.
 extern CFDataRefCMTagCollectionCopyAsData(CMTagCollectionRef tagCollection, CFAllocatorRef allocator);
 ```
 
-#### Discussion
+## Discussion
 
 Convert data instances created by this function back to tag collections with [`CMTagCollectionCreateFromData`](./cmtagcollectioncreatefromdata.md).
 

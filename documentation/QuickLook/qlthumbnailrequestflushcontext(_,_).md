@@ -21,11 +21,11 @@ func QLThumbnailRequestFlushContext(_ thumbnail: QLThumbnailRequest!, _ context:
 extern void QLThumbnailRequestFlushContext(QLThumbnailRequestRef thumbnail, CGContextRef context);
 ```
 
-#### Discussion
+## Discussion
 
 You should call this method after drawing in the graphics context created by [`QLThumbnailRequestCreateContext(_:_:_:_:)`](./qlthumbnailrequestcreatecontext%28_,_,_,_%29.md).
 
-##### Special Considerations
+### Special Considerations
 
 Thread-safety: This function should be called in the same thread as the thumbnail request is made in; generally, this is the same thread in which the `GenerateThumbnailForURL` callback was invoked.
 

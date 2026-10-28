@@ -21,7 +21,7 @@ A quadratic Bézier curve from the previous current point to the given end-point
 case quadCurve(to: CGPoint, control: CGPoint)
 ```
 
-#### Discussion
+## Discussion
 
 The end-point of the curve becomes the new current point.
 

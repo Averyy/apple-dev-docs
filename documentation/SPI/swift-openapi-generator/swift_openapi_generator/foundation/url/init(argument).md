@@ -17,7 +17,7 @@ Creates a `URL` instance from a string argument.
 init?(argument: String)
 ```
 
-#### Discussion
+## Discussion
 
 Initializes a `URL` instance using the path provided as an argument string.
 

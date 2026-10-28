@@ -22,7 +22,7 @@ class TKSmartCardSlotNFCSession
 @interface TKSmartCardSlotNFCSession : NSObject
 ```
 
-#### Overview
+## Overview
 
 Lifetime of this session object is tied to the NFC smart card slot lifetime and once the NFC slot disappears (eg. after a user cancellation, calling end session, or an NFC timeout) the functions will start to fail and return `TKErrorCodeObjectNotFound` error.
 

@@ -15,7 +15,7 @@ Offsets the view by the horizontal and vertical amount specified in the offset p
 func offset(_ offset: CGSize) -> some HoverEffectContent
 ```
 
-#### Return Value
+## Return Value
 
 An effect that offsets the view by `offset`.
 

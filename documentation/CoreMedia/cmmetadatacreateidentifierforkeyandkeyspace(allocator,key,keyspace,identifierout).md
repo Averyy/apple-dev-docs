@@ -25,11 +25,11 @@ func CMMetadataCreateIdentifierForKeyAndKeySpace(allocator: CFAllocator?, key: C
 extern OSStatus CMMetadataCreateIdentifierForKeyAndKeySpace(CFAllocatorRef allocator, CFTypeRef key, CFStringRef keySpace, CFStringRef*identifierOut);
 ```
 
-#### Return Value
+## Return Value
 
 If successful, a nonzero result code. See [Metadata Identifier Error Codes](./metadata-identifier-errors.md).
 
-#### Discussion
+## Discussion
 
 Metadata entities are identified by a key whose interpretation is defined by its keyspace. When writing metadata to a QuickTime Movie, this tuple is part of the track’s format description.
 

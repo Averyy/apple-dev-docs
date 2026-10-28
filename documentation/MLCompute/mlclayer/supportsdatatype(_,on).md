@@ -23,7 +23,7 @@ class func supportsDataType(_ dataType: MLCDataType, on device: MLCDevice) -> Bo
 + (BOOL) supportsDataType:(MLCDataType) dataType onDevice:(MLCDevice *) device;
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the specified data type and device are supported.
 

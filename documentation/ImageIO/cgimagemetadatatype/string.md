@@ -25,7 +25,7 @@ case string
 kCGImageMetadataTypeString
 ```
 
-#### Discussion
+## Discussion
 
 The string type also represents number and Boolean values.
 

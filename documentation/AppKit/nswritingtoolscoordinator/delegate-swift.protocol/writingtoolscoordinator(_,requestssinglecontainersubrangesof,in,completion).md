@@ -23,7 +23,7 @@ optional func writingToolsCoordinator(_ writingToolsCoordinator: NSWritingToolsC
 - (void) writingToolsCoordinator:(NSWritingToolsCoordinator *) writingToolsCoordinator requestsSingleContainerSubrangesOfRange:(NSRange) range inContext:(NSWritingToolsCoordinatorContext *) context completion:(void (^)(NSArray<NSValue *> *)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 If your view uses multiple [`NSTextContainer`](../../nstextcontainer.md) objects to draw text in different regions, use this method to tell Writing Tools about the containers that display the specified text. In your implementation, subdivide `range` to create one new range for each portion of text that resides in a different container object. For example, if the text in `range` is split between two containers, provide two new [`NSRange`](../../../Foundation/nsrange-c.struct.md) types that reflect the portion of the total text in each container. If `range` resides completely within one container, call the completion handler with `range` as the only value in the array.
 

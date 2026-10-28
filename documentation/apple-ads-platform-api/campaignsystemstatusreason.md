@@ -61,7 +61,7 @@ string CampaignSystemStatusReason
 - `AUTOMATED_KEYWORDS_REQUIRED_AD_GROUP_MISSING`: Ad groups. An ad group required for automated keyword targeting is missing.
 - `AUTOMATED_KEYWORDS_REQUIRED_AD_GROUP_NOT_RUNNING`: Ad groups. The ad group required for automated keyword targeting is not running.
 
-#### Discussion
+## Discussion
 
 One or more `CampaignSystemStatusReason` values appear in the `systemStatusReasons` array on a [`Campaign`](./campaign.md) when `systemStatus` is `NOT_RUNNING`. These codes are read-only and system-applied. Use them to diagnose delivery issues and determine the appropriate corrective action.
 

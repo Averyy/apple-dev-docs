@@ -22,7 +22,7 @@ var isMultiCamSupported: Bool { get }
 @property (nonatomic, readonly, getter=isMultiCamSupported) BOOL multiCamSupported;
 ```
 
-#### Discussion
+## Discussion
 
 When performing single-camera capture using [`AVCaptureSession`](../../avcapturesession.md), you may set any of the device’s formats as its [`activeFormat`](../activeformat.md). However, when using [`AVCaptureMultiCamSession`](../../avcapturemulticamsession.md), you may only set the device’s format to one in which [`isMultiCamSupported`](./ismulticamsupported.md) is [`true`](../../../Swift/true.md). Only this limited subset of capture formats can run sustainably in a multi-camera capture scenario.
 

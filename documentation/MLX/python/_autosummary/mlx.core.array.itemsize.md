@@ -6,5 +6,8 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ar
 
 # mlx.core.array.itemsize
 
-**property array.itemsize**
-: The size of the array’s datatype in bytes.
+```python
+property array.itemsize
+```
+
+The size of the array’s datatype in bytes.

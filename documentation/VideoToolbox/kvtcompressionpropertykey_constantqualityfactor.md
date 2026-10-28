@@ -22,7 +22,7 @@ let kVTCompressionPropertyKey_ConstantQualityFactor: CFString
 extern CFStringRef const kVTCompressionPropertyKey_ConstantQualityFactor;
 ```
 
-#### Discussion
+## Discussion
 
 Requires the encoder to maintain consistent quality by specifying a target constant quality factor in the range of 0.0 to 1.0.
 

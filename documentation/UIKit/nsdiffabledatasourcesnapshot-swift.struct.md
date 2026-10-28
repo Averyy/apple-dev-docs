@@ -20,7 +20,7 @@ A representation of the state of the data in a view at a specific point in time.
 struct NSDiffableDataSourceSnapshot<SectionIdentifierType, ItemIdentifierType> where SectionIdentifierType : Hashable, SectionIdentifierType : Sendable, ItemIdentifierType : Hashable, ItemIdentifierType : Sendable
 ```
 
-#### Overview
+## Overview
 
 Diffable data sources use *snapshots* to provide data for collection views and table views. You use a snapshot to set up the initial state of the data that a view displays, and you use snapshots to reflect changes to the data that the view displays.
 
@@ -58,7 +58,7 @@ For more information, see the diffable data source types:
 - [`UITableViewDiffableDataSource`](./uitableviewdiffabledatasource-2euir.md)
 - [`NSCollectionViewDiffableDataSource`](../AppKit/nscollectionviewdiffabledatasource-axww.md)
 
-##### Bridging
+### Bridging
 
 You can bridge from an [`NSDiffableDataSourceSnapshotReference`](./nsdiffabledatasourcesnapshotreference.md) object to this type:
 

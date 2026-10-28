@@ -21,7 +21,7 @@ A placement of the bottom accessory in a tab view. You can use this to adjust th
 enum TabViewBottomAccessoryPlacement
 ```
 
-#### Overview
+## Overview
 
 The following example shows playback controls when the view is inline, and an expanded slider player view when the view is expanded.
 

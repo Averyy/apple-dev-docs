@@ -15,7 +15,7 @@ Creates the configuration structure for a spatial template.
 init(defaultInitiatorRole: (any SpatialTemplateRole)? = nil)
 ```
 
-#### Return Value
+## Return Value
 
 An initialized configuration object.
 

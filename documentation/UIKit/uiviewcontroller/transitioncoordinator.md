@@ -23,11 +23,11 @@ var transitionCoordinator: (any UIViewControllerTransitionCoordinator)? { get }
 @property (nonatomic, readonly, nullable) id<UIViewControllerTransitionCoordinator> transitionCoordinator;
 ```
 
-#### Return Value
+## Return Value
 
 The transition coordinator object associated with a currently active transition or `nil` if no transition is in progress.
 
-#### Discussion
+## Discussion
 
 When a presentation or dismissal is in progress, this method returns the transition coordinator object associated with that transition. If there is no in-progress transition associated with the current view controller, UIKit checks the view controller’s ancestors for a transition coordinator object and returns that object if it exists. You can use this object to create additional animations and synchronize them with the transition animations.
 

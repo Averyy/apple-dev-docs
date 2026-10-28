@@ -22,11 +22,11 @@ convenience init(rawPixelFormatType: OSType)
 + (instancetype) photoSettingsWithRawPixelFormatType:(OSType) rawPixelFormatType;
 ```
 
-#### Return Value
+## Return Value
 
 A new photo settings object.
 
-#### Discussion
+## Discussion
 
 Use this initializer for RAW-only capture. To capture an image in both RAW format and a processed format (such as JPEG), use the [`init(rawPixelFormatType:processedFormat:)`](./init%28rawpixelformattype,processedformat%29.md) initializer instead.
 

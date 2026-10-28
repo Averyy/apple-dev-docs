@@ -22,11 +22,11 @@ Returns a Boolean value that indicates whether the set is a superset of the give
 func isSuperset(of other: Self) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the set is a superset of `possibleSubset`; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 Set *A* is a superset of another set *B* if every member of *B* is also a member of *A*.
 

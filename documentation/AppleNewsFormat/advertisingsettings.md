@@ -17,11 +17,11 @@ The object for defining properties that affect the frequency and placement with 
 object AdvertisingSettings
 ```
 
-#### Discussion
+## Discussion
 
 Use the `AdvertisingSettings` object to insert dynamic advertisements between `Body`, `Chapter`, `Section`, or `Container` components in an article.
 
-##### Example
+### Example
 
 ```json
 {

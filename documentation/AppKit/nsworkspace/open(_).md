@@ -19,11 +19,11 @@ func open(_ url: URL) -> Bool
 - (BOOL) openURL:(NSURL *) url;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the location was successfully opened; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 You can call this method safely from any thread in macOS 10.6 and later.
 

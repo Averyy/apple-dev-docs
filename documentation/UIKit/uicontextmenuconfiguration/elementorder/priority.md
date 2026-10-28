@@ -23,7 +23,7 @@ case priority
 UIContextMenuConfigurationElementOrderPriority
 ```
 
-#### Discussion
+## Discussion
 
 This ordering strategy displays the first menu element in the [`UIMenu`](../../uimenu.md) closest to the location of the user interaction.
 

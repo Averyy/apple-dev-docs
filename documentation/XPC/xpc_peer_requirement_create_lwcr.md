@@ -19,11 +19,11 @@
 extern xpc_peer_requirement_txpc_peer_requirement_create_lwcr(xpc_object_t lwcr, xpc_rich_error_t*error_out);
 ```
 
-#### Return Value
+## Return Value
 
 On success this returns a new peer requirement object. On failure this will return NULL and if set, error_out will be set to an error describing the failure.
 
-#### Discussion
+## Discussion
 
 Create a requirement that the peer has the specified lightweight code requirement
 

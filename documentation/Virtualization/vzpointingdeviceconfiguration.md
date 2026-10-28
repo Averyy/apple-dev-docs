@@ -19,7 +19,7 @@ class VZPointingDeviceConfiguration
 @interface VZPointingDeviceConfiguration : NSObject
 ```
 
-#### Overview
+## Overview
 
 Don’t instantiate a `VZPointingDeviceConfiguration` directly, use one of its subclasses like [`VZUSBScreenCoordinatePointingDeviceConfiguration`](./vzusbscreencoordinatepointingdeviceconfiguration.md) instead.
 

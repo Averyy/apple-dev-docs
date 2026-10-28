@@ -27,7 +27,7 @@ var accessibilityLabel: String? { get set }
 
 - [Supporting VoiceOver in your app](../supporting-voiceover-in-your-app.md)
 
-#### Discussion
+## Discussion
 
 The label is a very short, localized string that identifies the accessibility element, but does not include the type of the control or view. For example, the label for a Save button is “Save,” not “Save button.”
 

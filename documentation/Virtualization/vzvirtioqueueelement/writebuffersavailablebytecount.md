@@ -19,7 +19,7 @@ var writeBuffersAvailableByteCount: Int { get }
 @property (readonly) NSUInteger writeBuffersAvailableByteCount;
 ```
 
-#### Discussion
+## Discussion
 
 This value is initially equal to `writeBuffersByteCount`. This value decreases as you write memory to the write buffers.
 

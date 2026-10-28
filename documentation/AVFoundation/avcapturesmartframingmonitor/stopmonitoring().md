@@ -25,7 +25,7 @@ func stopMonitoring()
 
 - [Adopting smart framing in your camera app](../adopting-smart-framing-in-your-camera-app.md)
 
-#### Discussion
+## Discussion
 
 The monitor’s [`recommendedFraming`](./recommendedframing.md) is `nil` when it is not actively running. Call this method to stop actively monitoring the scene and making framing recommendations. You may start monitoring before or after calling [`startRunning()`](../avcapturesession/startrunning%28%29.md), and may stop active monitoring without stopping the capture session by calling [`stopMonitoring()`](./stopmonitoring%28%29.md) at any time.
 

@@ -15,7 +15,7 @@ The supply sources and placements where this ad creative is eligible to serve.
 object CreativeEligibility.AllowedGroups
 ```
 
-#### Discussion
+## Discussion
 
 Each entry pairs a set of supply placements with the country or region codes where the ad creative can serve.
 

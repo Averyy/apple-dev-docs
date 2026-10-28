@@ -26,11 +26,11 @@ func copyPixelBuffer(forItemTime itemTime: CMTime, itemTimeForDisplay outItemTim
 - (CVPixelBufferRef) copyPixelBufferForItemTime:(CMTime) itemTime itemTimeForDisplay:(CMTime *) outItemTimeForDisplay;
 ```
 
-#### Return Value
+## Return Value
 
 A pixel buffer containing the image data to display or `nil` if nothing should be displayed at the specified time. The caller is responsible for calling [`CVBufferRelease`](../../CoreVideo/cvbufferrelease.md) on the returned data when it is no longer needed.
 
-#### Discussion
+## Discussion
 
 Typically, you call this method in response to a CVDisplayLink callback or a [`CADisplayLink`](../../QuartzCore/cadisplaylink.md) delegate method call when the [`hasNewPixelBuffer(forItemTime:)`](./hasnewpixelbuffer%28foritemtime%29.md) method also returns [`true`](../../Swift/true.md).
 

@@ -21,7 +21,7 @@ Fill the difference between discontiguous sample buffers with silence.
 static let fillDiscontinuitiesWithSilence: CVAttachmentKeyDefinitionWithDefault<CMSampleBufferAttachmentKeyDefinitions.ShouldPropagate, Bool>
 ```
 
-#### Discussion
+## Discussion
 
 If a sample buffer enters a buffer queue and the presentation time stamp between the previous buffer and the buffer with this attachment are discontiguous, handle the discontinuity by generating silence for the time difference. The getter returns the default value of false if this attachment is not present.
 

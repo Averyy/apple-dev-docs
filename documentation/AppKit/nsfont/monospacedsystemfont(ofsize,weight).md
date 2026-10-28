@@ -19,11 +19,11 @@ class func monospacedSystemFont(ofSize fontSize: CGFloat, weight: NSFont.Weight)
 + (NSFont *) monospacedSystemFontOfSize:(CGFloat) fontSize weight:(NSFontWeight) weight;
 ```
 
-#### Return Value
+## Return Value
 
 A font object containing a monospace version of the system font at the specified size and weight.
 
-#### Discussion
+## Discussion
 
 Use the returned font for interface items that require monospaced glyphs. The returned font includes monospaced glyphs for the Latin characters and the symbols commonly found in source code. Glyphs for other symbols are usually wider or narrower than the monospaced characters. To ensure the font uses fixed spacing for all characters, apply the [`fixedAdvance`](../nsfontdescriptor/attributename/fixedadvance.md) attribute to the any strings you render.
 

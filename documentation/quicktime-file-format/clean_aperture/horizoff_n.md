@@ -6,7 +6,7 @@
 
 A 32-bit signed integer containing either the horizontal offset of the clean aperture center minus (width–1)/2 or the numerator portion of a fractional offset.
 
-#### Overview
+## Overview
 
 This value is typically zero.
 

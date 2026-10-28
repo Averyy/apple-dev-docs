@@ -21,7 +21,7 @@ static let videoOrientation: SCStreamFrameInfo
 extern SCStreamFrameInfo const SCStreamFrameInfoVideoOrientation;
 ```
 
-#### Discussion
+## Discussion
 
 The key for the CFDictionary attached to the CMSampleBuffer for the video orientation.
 

@@ -20,7 +20,7 @@ var viewport: MTLViewport { get }
 MTLViewport cp_view_texture_map_get_viewport(cp_view_texture_map_t view_texture_map);
 ```
 
-#### Discussion
+## Discussion
 
 This retrieves the size of the view and its location within the texture. If the layer dedicates a separate texture to each view, the texture bounds and view bounds match. However, if the layer uses a shared or layered texture, the view’s location or other slice index might differ.
 

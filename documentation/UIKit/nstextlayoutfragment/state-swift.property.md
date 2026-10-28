@@ -23,7 +23,7 @@ var state: NSTextLayoutFragment.State { get }
 @property (readonly) NSTextLayoutFragmentState state;
 ```
 
-#### Discussion
+## Discussion
 
 This property is KVO-compliant.
 

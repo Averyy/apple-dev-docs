@@ -23,7 +23,7 @@ func bindOptimizerData(_ data: [MLCTensorData], deviceData: [MLCTensorOptimizerD
 - (BOOL) bindOptimizerData:(NSArray<MLCTensorData *> *) data deviceData:(NSArray<MLCTensorOptimizerDeviceData *> *) deviceData withTensor:(MLCTensor *) tensor;
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether the data successfully associates with the tensor.
 

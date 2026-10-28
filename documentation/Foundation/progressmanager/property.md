@@ -21,7 +21,7 @@ A type that conveys additional task-specific information on progress.
 protocol Property : SendableMetatype
 ```
 
-#### Overview
+## Overview
 
 The `Property` protocol defines custom properties that can be associated with progress tracking. These properties allow you to store and aggregate additional information alongside the standard progress metrics such as `totalCount` and `completedCount`.
 

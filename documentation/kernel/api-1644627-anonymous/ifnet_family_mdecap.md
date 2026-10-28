@@ -13,7 +13,7 @@
 IFNET_FAMILY_MDECAP = 9
 ```
 
-#### Discussion
+## Discussion
 
 A MDECAP interface.
 

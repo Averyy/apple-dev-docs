@@ -16,11 +16,11 @@ Generates a pseudo-random 32-bit unsigned integer using a specific seed.
 uint random::integer_using(uint seed)
 ```
 
-#### Return Value
+## Return Value
 
 A pseudo-random 32-bit unsigned integer.
 
-#### Discussion
+## Discussion
 
 This function generates a random integer covering the full range of 32-bit unsigned values using the provided seed. The seed is not modified, allowing for reproducible random number generation. Use this when you need deterministic randomness or want to control the random sequence independently.
 

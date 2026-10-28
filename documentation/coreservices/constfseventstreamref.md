@@ -18,7 +18,7 @@ typealias ConstFSEventStreamRef = OpaquePointer
 typedef const struct __FSEventStream *ConstFSEventStreamRef;
 ```
 
-#### Discussion
+## Discussion
 
 This is the type of a reference to a constant FSEventStream.
 

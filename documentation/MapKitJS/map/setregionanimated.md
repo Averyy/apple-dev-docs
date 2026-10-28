@@ -19,11 +19,11 @@ setRegionAnimated(region: CoordinateRegionData, animated?: boolean): Map;
 
 - [MapKit JS 5](../mapkit-js-5.md)
 
-#### Return Value
+## Return Value
 
 Returns the map object.
 
-#### Discussion
+## Discussion
 
 By default, MapKit JS animates the change.
 

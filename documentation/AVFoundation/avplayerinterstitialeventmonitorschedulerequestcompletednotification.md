@@ -21,7 +21,7 @@ A notification that is posted whenever a daterange-schedule request completes.
 extern NSNotificationName const AVPlayerInterstitialEventMonitorScheduleRequestCompletedNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The userInfo dictionary can contain the following keys and values:
 

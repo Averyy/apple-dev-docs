@@ -17,7 +17,7 @@ An action that occurs when someone selects the third item in the secondary butto
 case thirdSecondarySubmenuItemPressed
 ```
 
-#### Discussion
+## Discussion
 
 The system invokes this callback on your app’s [`ShieldActionDelegate`](../shieldactiondelegate.md) for the third item in the submenu when your app defines the [`secondaryButtonSubmenuItems`](../../ManagedSettingsUI/shieldconfiguration/secondarybuttonsubmenuitems.md) array with three elements.
 

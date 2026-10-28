@@ -25,7 +25,7 @@ protocol INTransferMoneyIntentHandling : NSObjectProtocol
 @protocol INTransferMoneyIntentHandling <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Use the methods of the [`INTransferMoneyIntentHandling`](./intransfermoneyintenthandling.md) protocol to resolve, confirm, and handle requests to transfer money between accounts. Adopt this protocol in an object of your Intents extension that’s capable of handling the transfer.
 

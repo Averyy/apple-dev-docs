@@ -20,7 +20,7 @@ var kMEVideoDecoderClassImplementationIDKey: String { get }
 #define kMEVideoDecoderClassImplementationIDKey
 ```
 
-#### Discussion
+## Discussion
 
 Format the string similar to the bundle identifier of the video decoder. Start with the reverse domain identifier of your developer account, followed by `.videodecoder.` and the name of the codec. If you plan to create multiple variants of the same video decoder, include an additional component to make each video decoder identifier unique; for example `com.mycompany.videodecoder.mycodec.codecvariant`.
 

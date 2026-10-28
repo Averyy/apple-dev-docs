@@ -15,7 +15,7 @@ Clear the flag on a vnode indicating that data should not be cached in memory (i
 void vnode_clearnocache(vnode_t vp);
 ```
 
-#### Return Value
+## Return Value
 
 void.
 

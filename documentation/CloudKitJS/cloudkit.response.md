@@ -15,7 +15,7 @@ The [`CloudKit.Response`](./cloudkit.response.md) class is an abstract superclas
 interface CloudKit.Response
 ```
 
-#### Overview
+## Overview
 
 For examples of methods that resolve to a [`CloudKit.Response`](./cloudkit.response.md) subclass, read [`CloudKit.Database`](./cloudkit.database.md).
 

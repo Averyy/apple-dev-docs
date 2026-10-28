@@ -24,7 +24,7 @@ class MTLRasterizationRateSampleArray
 @interface MTLRasterizationRateSampleArray : NSObject
 ```
 
-#### Overview
+## Overview
 
 The [`horizontal`](./mtlrasterizationratelayerdescriptor/horizontal.md) and [`vertical`](./mtlrasterizationratelayerdescriptor/vertical.md) properties of an [`MTLRasterizationRateLayerDescriptor`](./mtlrasterizationratelayerdescriptor.md) point to [`MTLRasterizationRateSampleArray`](./mtlrasterizationratesamplearray.md) instances that contains rasterization rates for the layer map. You can use array subscript syntax to access the samples. [`MTLRasterizationRateSampleArray`](./mtlrasterizationratesamplearray.md) instances perform bounds checking on any memory operations you make to their sample data.
 

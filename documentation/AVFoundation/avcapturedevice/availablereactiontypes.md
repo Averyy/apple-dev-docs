@@ -23,7 +23,7 @@ var availableReactionTypes: Set<AVCaptureReactionType> { get }
 @property (nonatomic, readonly) NSSet<NSString *> * availableReactionTypes;
 ```
 
-#### Discussion
+## Discussion
 
 The list may differ between devices, and may change for a specific device when it’s active format changes.
 

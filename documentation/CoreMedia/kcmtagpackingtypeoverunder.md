@@ -21,7 +21,7 @@ A tag stating that associated video has packed frames with a left eye image on t
 extern const CMTag kCMTagPackingTypeOverUnder;
 ```
 
-#### Discussion
+## Discussion
 
 This value is for use in tags with the [`kCMTagCategory_PackingType`](./cmtagcategory/kcmtagcategory_packingtype.md) category. For over-under packed frames, the height of a frame in video data is twice as high as the video displayed.
 

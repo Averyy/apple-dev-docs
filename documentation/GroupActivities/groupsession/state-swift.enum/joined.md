@@ -24,7 +24,7 @@ case joined
 
 - [Joining and managing a shared activity](../../joining-and-managing-a-shared-activity.md)
 
-#### Discussion
+## Discussion
 
 Call the [`join()`](../join%28%29.md) method to begin the transition to this state. When the transition completes, use the session object to synchronize your app’s data with the other participants’ devices.
 

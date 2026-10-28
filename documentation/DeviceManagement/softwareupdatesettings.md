@@ -25,11 +25,11 @@ object SoftwareUpdateSettings
 - [Deploying software updates using declarative management](./deploying-software-updates-using-declarative-management.md)
 - [Enrolling a device in a beta program](./enrolling-a-device-in-a-beta-program.md)
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.configuration.softwareupdate.settings` as the declaration type.
 
-##### Configuration availability
+### Configuration availability
 
 |  |  |
 | --- | --- |
@@ -41,7 +41,7 @@ Specify `com.apple.configuration.softwareupdate.settings` as the declaration typ
 | Allowed in user scope | N/A |
 | Apply | Multiple configurations are combined and applied as a single effective configuration |
 
-##### Configuration example
+### Configuration example
 
 This configuration manages software update behavior and deferral settings.
 

@@ -23,7 +23,7 @@ var shadowImage: UIImage? { get set }
 @property (nonatomic, strong, nullable) UIImage * shadowImage;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `nil`, which corresponds to the default shadow image. When non-`nil`, this property represents a custom shadow image to show instead of the default. To show a custom shadow image, you must also set a custom background image with the [`setBackgroundImage(_:for:)`](./setbackgroundimage%28_,for%29.md) method. If the default background image is used, then the default shadow image is used regardless of the value of this property.
 

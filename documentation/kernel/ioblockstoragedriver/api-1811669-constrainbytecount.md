@@ -13,7 +13,7 @@ virtual UInt64 constrainByteCount(
  boolisWrite);
 ```
 
-#### Overview
+## Overview
 
 This function should be called prior to each read or write operation, so that the driver can constrain the requested byte count, as necessary, to meet current device limits. Such limits could be imposed by the device depending on operating modes, media types, or transport protocol (e.g. ATA, SCSI).
 

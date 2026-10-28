@@ -29,11 +29,11 @@ protocol MTLAccelerationStructureCommandEncoder : MTLCommandEncoder
 - [Understanding the Metal 4 core API](./understanding-the-metal-4-core-api.md)
 - [Sampling GPU data into counter sample buffers](./sampling-gpu-data-into-counter-sample-buffers.md)
 
-#### Overview
+## Overview
 
 Create an acceleration structure encoder by calling one of the factory methods on an [`MTLCommandBuffer`](./mtlcommandbuffer.md) instance, such as [`makeAccelerationStructureCommandEncoder()`](./mtlcommandbuffer/makeaccelerationstructurecommandencoder%28%29.md).
 
-##### Command stages
+### Command stages
 
 Most commands apply to one stage within a pass. The following table shows which stage applies to each command:
 

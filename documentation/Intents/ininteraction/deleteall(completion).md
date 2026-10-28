@@ -34,7 +34,7 @@ class func deleteAll() async throws
 - [Deleting Donated Shortcuts](../../SiriKit/deleting-donated-shortcuts.md)
 - [Improving Siri Media Interactions and App Selection](../../SiriKit/improving-siri-media-interactions-and-app-selection.md)
 
-#### Discussion
+## Discussion
 
 Call this method to delete all of your app’s previously donated SiriKit interactions. If you provide a block in the `completion` parameter, the system executes your block asynchronously with the results.
 

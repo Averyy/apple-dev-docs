@@ -5,11 +5,11 @@
 
 Discover issues in your textures by examining their content.
 
-#### Overview
+## Overview
 
 The Metal debugger allows you to view the contents of a texture in the Texture viewer. First, flip the texture to the correct orientation and adjust the colors to ensure accuracy. Then, check for pixel issues like infinite values, not-a-number values, or any values that exceed the current EDR headroom of your display. Hover over pixels within the texture to inspect their values, then find any anomalies by selecting a pixel and comparing it with others. Finally, compare across mipmap levels to check for visual issues. For more information, see [Inspecting the bound resources for a command](./inspecting-the-bound-resources-for-a-command.md) or [Analyzing memory usage](./analyzing-memory-usage.md).
 
-##### Navigate your texture
+### Navigate your texture
 
 The Texture viewer contains several controls for interacting with and displaying your texture. If your texture contains multiple slices, such as [`MTLTextureType.type2DArray`](../Metal/mtltexturetype/type2darray.md), the controls in the title bar are disabled until you click a texture image. The active texture image has a system accent color border.
 
@@ -17,13 +17,13 @@ The Texture viewer contains several controls for interacting with and displaying
 
 Groups of texture slices that contain related content, such as the faces for a texture of type [`MTLTextureType.typeCube`](../Metal/mtltexturetype/typecube.md), are part of the same texture image.
 
-##### Flip your texture
+### Flip your texture
 
 If your renderer is using a different coordinate system and your texture image is upside down or flipped horizontally, you can flip it to the correct orientation in the Texture viewer. Click the texture actions button, then choose Flip Horizontally or Flip Vertically. Xcode flips groups of related texture slices, such as cubemaps, as a whole, and it flips unrelated texture slices independently.
 
 ![A screenshot of the actions menu. The Flip Horizontally menu item is highlighted.](https://developer.apple.com/tutorials/images/com.apple.Xcode/gputools-metal-debugger-tv-flip@2x.png)
 
-##### Configure texture rendering
+### Configure texture rendering
 
 Xcode automatically configures the color properties based on your texture, but you can configure them manually by clicking the Colors button in the title bar. You configure texture rendering on a per-texture-image basis. Follow these guidelines:
 
@@ -33,13 +33,13 @@ Xcode automatically configures the color properties based on your texture, but y
 
 ![A screenshot of the Texture Image Color Options popover. It consists of controls for color space, tone mapping, and color sizzling.](https://developer.apple.com/tutorials/images/com.apple.Xcode/gputools-metal-debugger-tv-colors@2x.png)
 
-##### View texture properties
+### View texture properties
 
 You can view properties for the active texture image, such as width and height, by clicking the Info button in the title bar.
 
 ![A screenshot of the Texture Image Properties popover.](https://developer.apple.com/tutorials/images/com.apple.Xcode/gputools-metal-debugger-tv-properties@2x.png)
 
-##### View texture issues
+### View texture issues
 
 The Issues button in the title bar becomes active if your texture contains any pixels (or samples) with values that are infinite, are not-a-number, or exceed the current EDR headroom of your display.
 
@@ -47,7 +47,7 @@ You can click the Issues button to see more information, and then click the Jump
 
 ![A screenshot of the Issues popover indicating that there are pixels exceeding the display EDR headroom. There’s a button next to the message for jumping to one such pixel.](https://developer.apple.com/tutorials/images/com.apple.Xcode/gputools-metal-debugger-tv-issues@2x.png)
 
-##### Inspect, select, and compare pixel values
+### Inspect, select, and compare pixel values
 
 Move the pointer over a pixel (or a sample if your texture is of type [`MTLTextureType.type2DMultisample`](../Metal/mtltexturetype/type2dmultisample.md) or [`MTLTextureType.type2DMultisampleArray`](../Metal/mtltexturetype/type2dmultisamplearray.md)) to inspect its value.
 
@@ -69,7 +69,7 @@ You can also move the pointer over a different pixel (or sample) to compare the 
 
 If you open multiple Attachments viewers or Texture viewers, you can compare pixels across different textures. For information on configuring editors within your Xcode workspace, see [Configuring the Xcode project window](./configuring-the-xcode-project-window.md).
 
-##### Compare mipmap levels
+### Compare mipmap levels
 
 By default, the Texture viewer shows all of your texture’s mipmap levels side by side. However, if you want to visually compare different mipmap levels, you can enable stacking. Click the texture actions button, and then choose Stack Mips.
 

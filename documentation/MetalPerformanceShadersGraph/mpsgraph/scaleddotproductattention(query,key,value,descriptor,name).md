@@ -24,11 +24,11 @@ func scaledDotProductAttention(query queryTensor: MPSGraphTensor, key keyTensor:
 - (MPSGraphTensor *) scaledDotProductAttentionWithQueryTensor:(MPSGraphTensor *) queryTensor keyTensor:(MPSGraphTensor *) keyTensor valueTensor:(MPSGraphTensor *) valueTensor descriptor:(MPSGraphSDPADescriptor *) descriptor name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor object.
 
-#### Discussion
+## Discussion
 
 The descriptor allows configuring an optional attention mask, causal masking, and attention sinks without requiring a separate API method for each combination of features.
 

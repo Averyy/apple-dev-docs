@@ -20,7 +20,7 @@ A parametric frequency-dependent radiation pattern, where the `focus` determines
 case beam(focus: Double)
 ```
 
-#### Discussion
+## Discussion
 
 The `focus` parameter is in the range `0...1` where `0` is the default. The default `.beam(focus: 0)` projects sound of all frequencies evenly in all directions, where the rotation of the spatial audio source has no impact on the tonality of the sound. A `focus` of `0` is commonly referred to as “omnidirectional”.
 

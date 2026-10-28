@@ -5,7 +5,7 @@
 
 Configure an app’s scenes, storyboards, icons, fonts, and other user interface elements.
 
-#### Overview
+## Overview
 
 You define the user interface that your app presents during normal operation with a combination of code and storyboards. However, the system needs to know a few things about your app’s user interface before execution begins. For example, on some platforms, you have to specify what device orientations your app supports and what the system should display while your app launches. You add keys to your app’s [`Information Property List`](./information-property-list.md) file to control certain aspects of its user interface.
 

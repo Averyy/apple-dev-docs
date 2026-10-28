@@ -19,7 +19,7 @@ An indication that two peers running incompatible versions of RealityKit can’t
 case sessionProtocolVersionMismatch
 ```
 
-#### Discussion
+## Discussion
 
 The [`compatibilityWith(_:)`](../compatibilitywith%28_%29.md) method returns this value when two devices have different OS versions and there has been a significant change in networking protocol between those releases.
 

@@ -19,7 +19,7 @@ func setCodeSigningRequirement(_ requirement: String)
 - (void) setCodeSigningRequirement:(NSString *) requirement;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to enforce a code-signing requirement on the peer process of an XPC connection.
 

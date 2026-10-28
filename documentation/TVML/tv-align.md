@@ -5,7 +5,7 @@
 
 Aligns an element horizontally inside its parent.
 
-#### Overview
+## Overview
 
 Here’s an example that centers an image inside of its containing element.
 
@@ -13,7 +13,7 @@ Here’s an example that centers an image inside of its containing element.
 <img style="tv-align:center" src="" width="182" height="274" />
 ```
 
-##### Values for tv-align
+### Values for tv-align
 
 - **`center`**: The element is aligned with the center of the parent element.
 - **`leading`**: The element is aligned along the leading edge of its parent element.
@@ -21,7 +21,7 @@ Here’s an example that centers an image inside of its containing element.
 - **`right`**: The element is aligned along the right edge of its parent element.
 - **`trailing`**: The element is aligned along the trailing edge of its parent element.
 
-##### Elements that Use tv-align
+### Elements that Use tv-align
 
 - [banner](./banner.md)
 - [divTemplate](./divtemplate.md)

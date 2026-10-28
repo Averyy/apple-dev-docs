@@ -15,7 +15,7 @@ The location ID for the device.
 var locationID: UInt64?
 ```
 
-#### Discussion
+## Discussion
 
 Location IDs are typically associated with USB devices, but can be overriden to have device implementation specific meaning.
 

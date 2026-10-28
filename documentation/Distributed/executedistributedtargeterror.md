@@ -21,7 +21,7 @@ Error thrown by [`executeDistributedTarget(on:target:invocationDecoder:handler:)
 struct ExecuteDistributedTargetError
 ```
 
-#### Overview
+## Overview
 
 Inspect the [`errorCode`](./executedistributedtargeterror/errorcode-swift.property.md) for details about the underlying reason this error was thrown.
 

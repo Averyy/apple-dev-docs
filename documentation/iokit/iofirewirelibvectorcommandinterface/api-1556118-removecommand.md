@@ -16,7 +16,7 @@ Removes a command to the vector command.
 void (*RemoveCommand)(IOFireWireLibVectorCommandRef self, IOFireWireLibCommandRef command);
 ```
 
-#### Return Value
+## Return Value
 
 An IOReturn result code
 

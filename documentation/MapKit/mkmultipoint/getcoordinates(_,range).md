@@ -25,7 +25,7 @@ func getCoordinates(_ coords: UnsafeMutablePointer<CLLocationCoordinate2D>, rang
 - (void) getCoordinates:(CLLocationCoordinate2D *) coords range:(NSRange) range;
 ```
 
-#### Discussion
+## Discussion
 
 This method converts the map points into coordinates before returning them to you. If you want to specify the value of each point as a map point, you can access the values directly using the [`points()`](./points%28%29.md) method.
 

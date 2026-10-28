@@ -24,7 +24,7 @@ let kVTCompressionPropertyKey_UsingHardwareAcceleratedVideoEncoder: CFString
 extern CFStringRef const kVTCompressionPropertyKey_UsingHardwareAcceleratedVideoEncoder;
 ```
 
-#### Discussion
+## Discussion
 
 You can query this property using [`VTSessionCopyProperty(_:key:allocator:valueOut:)`](./vtsessioncopyproperty%28_,key,allocator,valueout%29.md) after you have enabled hardware accelerated encode using [`kVTVideoEncoderSpecification_EnableHardwareAcceleratedVideoEncoder`](./kvtvideoencoderspecification_enablehardwareacceleratedvideoencoder.md) to see if a hardware-accelerated encoder was selected ([`kCFBooleanTrue`](../CoreFoundation/kcfbooleantrue.md)).
 

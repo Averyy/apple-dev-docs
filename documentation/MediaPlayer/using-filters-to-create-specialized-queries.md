@@ -5,11 +5,11 @@
 
 Add a filter set to a query before populating a music player queue.
 
-#### Overview
+## Overview
 
 Creating a queue and adding it to a music player is a straightforward task. You populate the music player queue by creating a basic query and searching the user’s music library for items that match the query. However, you can create filters and add them at query creation to refine the player’s music queue. Filter for an album, artist, song, or any of a variety of other options. For a list of keys you can use as filters, see [General media item property keys](./general-media-item-property-keys.md).
 
-##### Create one or more filters
+### Create one or more filters
 
 You need to create a new filter for each item you want to filter on. For example, if you want to filter for a specific album and all songs that contain a certain word from that album, you need two separate filters.
 
@@ -25,7 +25,7 @@ let songTitleFilter =
                              comparisonType: .contains)
 ```
 
-##### Combine the filters into a filter set
+### Combine the filters into a filter set
 
 Combine the filters into a filter set before you assign it to a query.
 
@@ -33,7 +33,7 @@ Combine the filters into a filter set before you assign it to a query.
 let filterSet = Set([albumTitleFilter, songTitleFilter])
 ```
 
-##### Create a query using the filter set
+### Create a query using the filter set
 
 Create a new query using the newly created filter set, and set the music player’s queue.
 

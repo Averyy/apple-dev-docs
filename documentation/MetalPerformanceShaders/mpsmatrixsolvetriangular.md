@@ -24,9 +24,9 @@ class MPSMatrixSolveTriangular
 @interface MPSMatrixSolveTriangular : MPSMatrixBinaryKernel
 ```
 
-#### Overview
+## Overview
 
-This kernel finds the solution matrix to the system *op(A) * X = alpha * B* or *X * op(A) = alpha * B*, where:
+This kernel finds the solution matrix to the system *op(A) \* X = alpha \* B* or *X \* op(A) = alpha \* B*, where:
 
 - A is either an upper or lower triangular matrix
 - *op(A)* is either *Aᵀ* or *A*

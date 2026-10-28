@@ -19,7 +19,7 @@ optional func layoutManager(_ layoutManager: NSLayoutManager, didCompleteLayoutF
 - (void) layoutManager:(NSLayoutManager *) layoutManager didCompleteLayoutForTextContainer:(NSTextContainer *) textContainer atEnd:(BOOL) layoutFinishedFlag;
 ```
 
-#### Discussion
+## Discussion
 
 This message is sent whenever a text container has been filled. This method can be useful for paginating.
 

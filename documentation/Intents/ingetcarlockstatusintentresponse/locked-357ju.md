@@ -19,7 +19,7 @@ A Boolean value indicating the status of the car’s locks.
 final var locked: Bool? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Typically, you assign a value to this property only after handling the intent. If the car is locked, set the property to [`true`](../../Swift/true.md); otherwise, set it to [`false`](../../Swift/false.md).
 

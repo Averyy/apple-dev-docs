@@ -6,7 +6,7 @@
 
 A 16-bit integer that identifies which atom of the specified type is to be used as the preview.
 
-#### Overview
+## Overview
 
 Typically, this field is set to `1` to indicate that you should use the first atom of the type specified in the atom type field.
 

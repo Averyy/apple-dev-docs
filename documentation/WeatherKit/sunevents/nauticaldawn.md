@@ -21,7 +21,7 @@ The time of nautical sunrise when the sun’s center is 12° below the horizon.
 var nauticalDawn: Date?
 ```
 
-#### Discussion
+## Discussion
 
 There is enough light for sailors to distinguish the horizon at sea, but the sky is too dark for outdoor activities. This property is optional because it’s possible for the sun to not rise on a given day, at extreme latitudes.
 

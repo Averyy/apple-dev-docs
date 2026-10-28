@@ -20,11 +20,11 @@ func CGDisplayIsAlwaysInMirrorSet(_ display: CGDirectDisplayID) -> boolean_t
 extern boolean_t CGDisplayIsAlwaysInMirrorSet(CGDirectDisplayID display);
 ```
 
-#### Return Value
+## Return Value
 
 If `true`, the specified display is in a mirroring set and cannot be removed from this set.
 
-#### Discussion
+## Discussion
 
 Some hardware configurations support the connection of auxiliary displays that always mirror the main display and therefore cannot be removed from the mirroring set to which they belong.
 

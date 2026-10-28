@@ -23,7 +23,7 @@ var distribution: UIStackView.Distribution { get set }
 @property (nonatomic) UIStackViewDistribution distribution;
 ```
 
-#### Discussion
+## Discussion
 
 This property determines how the stack view lays out its arranged views along its axis. The default value is [`UIStackView.Distribution.fill`](./distribution-swift.enum/fill.md). For a list of possible values, see [`UIStackView.Distribution`](./distribution-swift.enum.md).
 

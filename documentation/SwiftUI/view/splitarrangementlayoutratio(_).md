@@ -22,7 +22,7 @@ nonisolated
 func splitArrangementLayoutRatio(_ ratio: CGFloat?) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Use this modifier when you want to customize the size of the view compared to the other view in the split layout, as the following example shows:
 

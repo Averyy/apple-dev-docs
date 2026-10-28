@@ -5,7 +5,7 @@
 
 Perform fast Fourier transforms in place on 2D real data.
 
-#### Overview
+## Overview
 
 The functions in this group use the following operation for a forward real-to-complex transform:
 

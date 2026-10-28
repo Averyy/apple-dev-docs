@@ -24,7 +24,7 @@ var preGain: Float { get set }
 @property (nonatomic) float preGain;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `-6 dB`. The valid range of values is `-80 dB` to `20 dB`.
 

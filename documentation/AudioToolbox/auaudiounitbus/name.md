@@ -32,7 +32,7 @@ var name: String? { get set }
 @property (atomic, copy, nullable) NSString * name;
 ```
 
-#### Discussion
+## Discussion
 
 The bus name can be set by the host.
 

@@ -21,7 +21,7 @@ A reason that indicates network is unavailable because the user enabled “Low D
 NSURLErrorNetworkUnavailableReasonConstrained
 ```
 
-#### Discussion
+## Discussion
 
 This reason occurs when the following conditions are true:
 

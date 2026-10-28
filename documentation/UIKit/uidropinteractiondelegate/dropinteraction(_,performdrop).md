@@ -26,7 +26,7 @@ optional func dropInteraction(_ interaction: UIDropInteraction, performDrop sess
 
 - [Making a view into a drop destination](../making-a-view-into-a-drop-destination.md)
 
-#### Discussion
+## Discussion
 
 You can request a drag item’s [`itemProvider`](../uidragitem/itemprovider.md) data within the scope of this method only and not at any other time.
 

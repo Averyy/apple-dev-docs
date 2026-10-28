@@ -18,7 +18,7 @@ let vmnet_estimated_packets_available_key: UnsafePointer<CChar>
 extern const char * const vmnet_estimated_packets_available_key;
 ```
 
-#### Discussion
+## Discussion
 
 The estimated number of packets available to be read.
 

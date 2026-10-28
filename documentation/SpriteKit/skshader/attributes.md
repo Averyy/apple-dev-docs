@@ -25,7 +25,7 @@ var attributes: [SKAttribute] { get set }
 @property (nonatomic, copy, nonnull) NSArray<SKAttribute *> * attributes;
 ```
 
-#### Discussion
+## Discussion
 
 This property is not read-only, so you can also use it to provide all of the attributes in a single operation. Each of the attributes should be uniquely named.
 

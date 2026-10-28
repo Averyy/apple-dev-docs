@@ -13,7 +13,7 @@
 void SetWantsControlsRestored(bool in_wants_controls_restored);
 ```
 
-#### Discussion
+## Discussion
 
 Setter on the device object that tells the host that the controls for the device should or should not be saved/restored when the device is first published. If the device doesn’t implement this property, it is assumed that the settings should be saved and restored. Note that this should be set before the device is published to the host
 

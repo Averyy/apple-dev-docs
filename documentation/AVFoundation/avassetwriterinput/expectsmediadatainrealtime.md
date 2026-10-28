@@ -26,7 +26,7 @@ var expectsMediaDataInRealTime: Bool { get set }
 @property (nonatomic) BOOL expectsMediaDataInRealTime;
 ```
 
-#### Discussion
+## Discussion
 
 Set this value to [`true`](../../Swift/true.md) if your app appends media data to the input from a real-time source, such as an [`AVCaptureOutput`](../avcaptureoutput.md). Setting a [`true`](../../Swift/true.md) value optimizes the input for real-time usage so it accurately calculates the state of its [`isReadyForMoreMediaData`](./isreadyformoremediadata.md) property value.
 

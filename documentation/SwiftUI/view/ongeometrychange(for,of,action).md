@@ -29,7 +29,7 @@ Adds an action to be performed when a value, created from a geometry proxy, chan
 nonisolated func onGeometryChange<T>(for type: T.Type, of transform: @escaping @Sendable (GeometryProxy) -> T, action: @escaping (T, T) -> Void) -> some View where T : Equatable, T : Sendable
 ```
 
-#### Discussion
+## Discussion
 
 The geometry of a view can change frequently, especially if the view is contained within a [`ScrollView`](../scrollview.md) and that scroll view is scrolling.
 

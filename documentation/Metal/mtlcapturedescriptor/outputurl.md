@@ -24,7 +24,7 @@ var outputURL: URL? { get set }
 @property (nonatomic, copy, nullable) NSURL * outputURL;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `nil`. If you set [`destination`](./destination.md) to [`MTLCaptureDestination.gpuTraceDocument`](../mtlcapturedestination/gputracedocument.md), you need to set this property to where you want the file to be written to.
 

@@ -5,7 +5,7 @@
 
 Choose widget styles specific to visionOS, support recessed and elevated appearances, and add proximity awareness to your widget.
 
-#### Overview
+## Overview
 
 On Apple Vision Pro, people add widgets from your visionOS or compatible iPhone and iPad app to a room and permanently pin them to horizontal or vertical surfaces.
 
@@ -25,7 +25,7 @@ If your iPhone or iPad app already includes widgets and you enable visionOS comp
 
 For design guidance, refer to [Human Interface Guidelines > Widgets](https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/widgets).
 
-##### Support recessed and elevated mounting styles
+### Support recessed and elevated mounting styles
 
 People add widgets to a room and pin them to a surface. By default, widgets in visionOS sit directly on top of horizontal and vertical surfaces, taking on an elevated look. On horizontal surfaces, widgets always appear with this look. Additionally, widgets can appear recessed, directly embedded into a vertical surface like a wall. If one of these styles isn’t a good fit for your widget, use the [`supportedMountingStyles(_:)`](../SwiftUI/widgetconfiguration/supportedmountingstyles%28_%29.md) view modifier to specify the [`WidgetMountingStyle`](./widgetmountingstyle.md) your visionOS or iOS and iPadOS widget supports:
 
@@ -48,7 +48,7 @@ struct WeatherWidget: Widget {
 }
 ```
 
-##### Support visionOS rendering styles and extra large widgets
+### Support visionOS rendering styles and extra large widgets
 
 By default, widgets in visionOS appear under a glass texture. For widgets that your visionOS app offers, choose between the default glass texture or an alternative paper texture that gives the widget a poster-like look. To specify your widget’s texture, use the [`widgetTexture(_:)`](../SwiftUI/widgetconfiguration/widgettexture%28_%29.md) view modifier and choose between [`glass`](./widgettexture/glass.md) and [`paper`](./widgettexture/paper.md).
 
@@ -72,11 +72,11 @@ struct CaffeineTrackerWidget: Widget {
 }
 ```
 
-##### Support full color and accented rendering modes
+### Support full color and accented rendering modes
 
 By default, widgets in visionOS appear in [`fullColor`](./widgetrenderingmode/fullcolor.md), but people can also customize their widgets with a color theme that renders them in the [`accented`](./widgetrenderingmode/accented.md) mode, removing the background, and replacing it with a solid color that complements the selected color theme. Supporting the accented rendering mode in visionOS works the same as on other platforms. For more information , refer to [Preparing widgets for additional platforms, contexts, and appearances](./preparing-widgets-for-additional-contexts-and-appearances.md) and [Optimizing your widget for accented rendering mode and Liquid Glass](./optimizing-your-widget-for-accented-rendering-mode-and-liquid-glass.md).
 
-##### Add proximity awareness to your widget
+### Add proximity awareness to your widget
 
 While widgets in visionOS share a lot of similarities with widgets on other platforms, a key difference is the distance between a person and the widgets. People might look at your widget from a close distance or from further away. For example, someone might place a small widget on a desk and view it while sitting at the desk or from across the room. Widgets in visionOS behave like physical objects, appearing smaller as the distance between them and the person increases.
 

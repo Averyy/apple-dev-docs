@@ -23,11 +23,11 @@ optional func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool
 - (BOOL) textFieldShouldBeginEditing:(UITextField *) textField;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if editing should begin or [`false`](../../Swift/false.md) if it should not.
 
-#### Discussion
+## Discussion
 
 The text field calls this method when the user performs an action that would normally initiate the editing of the text field’s text. Implement this method if you want to prevent editing from happening in some situations. For example, you could use this method to prevent the user from editing the text field’s contents more than once. Most of the time, you should return [`true`](../../Swift/true.md) to allow editing to proceed.
 

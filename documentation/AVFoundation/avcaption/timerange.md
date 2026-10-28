@@ -22,7 +22,7 @@ var timeRange: CMTimeRange { get }
 @property (nonatomic, readonly) CMTimeRange timeRange;
 ```
 
-#### Discussion
+## Discussion
 
 Apple iTT format only permits captions to have overlapping time ranges if they’re associated with different regions.
 

@@ -19,7 +19,7 @@ var importsGraphics: Bool { get set }
 @property BOOL importsGraphics;
 ```
 
-#### Discussion
+## Discussion
 
 If `flag` is [`true`](../../Swift/true.md), the receiver allows the user to import files by dragging; if `flag` is [`false`](../../Swift/false.md), it doesn’t.
 

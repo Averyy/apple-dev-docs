@@ -16,11 +16,11 @@ Method to get the SCSIServiceResponse from the SCSITask.
 IOReturn (*GetSCSIServiceResponse)(void *task, SCSIServiceResponse *outServiceResponse);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess or kIOReturnError.
 
-#### Discussion
+## Discussion
 
 This method can be used to get the SCSIServiceResponse from the SCSITask.
 

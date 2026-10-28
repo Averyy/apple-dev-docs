@@ -28,11 +28,11 @@ class func gloom() -> any CIFilter & CIGloom
 
 - [Processing an Image Using Built-in Filters](../processing-an-image-using-built-in-filters.md)
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies the gloom filter to an image. The effect reduces the highlights of the image resulting in the image looking dull.
 

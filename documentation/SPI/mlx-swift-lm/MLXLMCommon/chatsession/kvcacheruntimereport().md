@@ -19,7 +19,7 @@ Return the legacy runtime-only view of the configured KV-cache strategy.
 func kvCacheRuntimeReport() async throws -> KVCacheRuntimeReport?
 ```
 
-#### Discussion
+## Discussion
 
 The report is `nil` until a typed or legacy cache configuration exists, or when the session currently stores history rather than a realized cache.
 

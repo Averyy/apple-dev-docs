@@ -20,7 +20,7 @@ The ligature of the text.
 extern NSAttributedStringKey const NSLigatureAttributeName;
 ```
 
-#### Overview
+## Overview
 
 The value of this attribute is an [`NSNumber`](../Foundation/nsnumber.md) object containing an integer. Ligatures cause specific character combinations to be rendered using a single custom glyph that corresponds to those characters. The value `0` indicates no ligatures. The value `1` indicates the use of the default ligatures. The value `2` indicates the use of all ligatures. The default value for this attribute is `1`. (Value `2` is unsupported on iOS.)
 

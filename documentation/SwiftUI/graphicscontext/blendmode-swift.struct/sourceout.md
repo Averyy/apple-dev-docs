@@ -21,7 +21,7 @@ A mode that you use to paint the source image onto the transparent parts of the 
 static var sourceOut: GraphicsContext.BlendMode { get }
 ```
 
-#### Discussion
+## Discussion
 
 This mode implements the equation `R = S*(1 - Da)` where
 

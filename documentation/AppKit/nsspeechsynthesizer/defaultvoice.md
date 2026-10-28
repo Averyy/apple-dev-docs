@@ -21,7 +21,7 @@ class var defaultVoice: NSSpeechSynthesizer.VoiceName { get }
 @property (class, copy, readonly) NSSpeechSynthesizerVoiceName defaultVoice;
 ```
 
-#### Return Value
+## Return Value
 
 Identifier of the default voice.
 

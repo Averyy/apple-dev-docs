@@ -24,7 +24,7 @@ static let environmentalAudioExposureEvent: HKCategoryTypeIdentifier
 extern HKCategoryTypeIdentifier const HKCategoryTypeIdentifierEnvironmentalAudioExposureEvent;
 ```
 
-#### Discussion
+## Discussion
 
 Apple Watch saves a [`environmentalAudioExposureEvent`](./environmentalaudioexposureevent.md) sample when it generates a *noise notification*, sent when the average sound level reaches or exceeds a specified threshold for three minutes. Apple Watch doesn’t record or save any sounds. Users can enable or disable these notifications, or set the threshold from Settings > Noise.
 

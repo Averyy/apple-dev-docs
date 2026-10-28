@@ -20,7 +20,7 @@ An object that contains information about an action that causes navigation to oc
 struct NavigationAction
 ```
 
-#### Overview
+## Overview
 
 A `NavigationAction` value is intended to be used to make policy decisions about whether to allow navigation within a web page via a `NavigationDeciding`.
 

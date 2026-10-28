@@ -21,7 +21,7 @@ weak var delegate: (any CPTabBarTemplateDelegate)? { get set }
 @property (nonatomic, weak, nullable) id<CPTabBarTemplateDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate must conform to the [`CPTabBarTemplateDelegate`](../cptabbartemplatedelegate.md) protocol.
 

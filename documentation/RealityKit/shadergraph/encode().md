@@ -18,7 +18,7 @@ Encodes the graph into a binary representation.
 final func encode() throws -> Data
 ```
 
-#### Discussion
+## Discussion
 
 The resulting data can be stored to disk or passed across a process boundary, and later restored with [`init(from:)`](./init%28from%29.md).
 

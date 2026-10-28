@@ -27,11 +27,11 @@ init(insertionHandler: @escaping (String) -> Void)
 - (instancetype) initWithInsertionHandler:(void (^)(NSString *tokenID)) insertionHandler;
 ```
 
-#### Return Value
+## Return Value
 
 A new token watcher object.
 
-#### Discussion
+## Discussion
 
 This is the designated initializer.
 

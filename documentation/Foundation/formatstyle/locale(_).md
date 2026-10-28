@@ -22,11 +22,11 @@ Modifies the format style to use the specified locale.
 func locale(_ locale: Locale) -> Self
 ```
 
-#### Return Value
+## Return Value
 
 A format style modified to use the provided locale.
 
-#### Discussion
+## Discussion
 
 Use this format style to change the locale used by an existing format style.
 

@@ -21,7 +21,7 @@ optional func appController(_ appController: TVApplicationController, evaluateAp
 - (void) appController:(TVApplicationController *) appController evaluateAppJavaScriptInContext:(JSContext *) jsContext;
 ```
 
-#### Discussion
+## Discussion
 
 This method serves as a callback function, giving the delegate the ability to add JavaScript classes and objects through the [`setObject(_:forKey:)`](../../Foundation/nsmutabledictionary/setobject%28_,forkey%29.md) method using the `jsContext` parameter. This method is called before the JavaScript is parsed into the execution context and is called on the JavaScript execution thread, not the main thread. Any object exposed to [`JSContext`](../../JavaScriptCore/jscontext.md) must not be retained on any other thread.
 

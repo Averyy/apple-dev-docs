@@ -16,7 +16,7 @@ Sets the position of an element to the specified coordinates.
 void module::setPosition(float3 position)
 ```
 
-#### Discussion
+## Discussion
 
 Use this function to move an element to a specific location in 3D space, replacing its current position.
 

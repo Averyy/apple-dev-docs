@@ -15,7 +15,7 @@ The container view’s 3D transform converted to a defined coordinate space.
 func transform(in coordinateSpace: some CoordinateSpaceProtocol) -> AffineTransform3D?
 ```
 
-#### Discussion
+## Discussion
 
 If the view doesn’t have a well-defined transform, such as if it’s affected by a projection transform, this function may return `nil`.
 

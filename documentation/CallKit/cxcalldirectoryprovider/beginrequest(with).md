@@ -26,7 +26,7 @@ func beginRequest(with context: CXCallDirectoryExtensionContext)
 
 - [Identifying and blocking calls](../identifying-and-blocking-calls.md)
 
-#### Discussion
+## Discussion
 
 An extension prepares for a host app’s request by getting the context passed in this method and requesting related data items, if appropriate. This method is received after the extension is initialized, but before the principal object is asked to do anything with the context.
 

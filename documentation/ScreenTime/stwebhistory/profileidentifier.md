@@ -22,7 +22,7 @@ struct ProfileIdentifier
 typedef NSString * STWebHistoryProfileIdentifier;
 ```
 
-#### Overview
+## Overview
 
 Profiles allow you to keep your web history separate for topics like work, personal, or school.
 

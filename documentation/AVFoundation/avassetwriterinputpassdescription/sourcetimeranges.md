@@ -24,7 +24,7 @@ var sourceTimeRanges: [NSValue] { get }
 @property (nonatomic, readonly) NSArray<NSValue *> * sourceTimeRanges;
 ```
 
-#### Discussion
+## Discussion
 
 Each element in the array is an [`NSValue`](../../Foundation/nsvalue.md) object that wraps a [`CMTimeRange`](../../CoreMedia/cmtimerange.md) structure that represents one source time range. The value of this property is suitable to pass to the [`reset(forReadingTimeRanges:)`](../avassetreaderoutput/reset%28forreadingtimeranges%29.md) method of [`AVAssetReaderOutput`](../avassetreaderoutput.md).
 

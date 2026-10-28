@@ -22,7 +22,7 @@ func isVideoStabilizationModeSupported(_ videoStabilizationMode: AVCaptureVideoS
 - (BOOL) isVideoStabilizationModeSupported:(AVCaptureVideoStabilizationMode) videoStabilizationMode;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../../Swift/true.md) if video stabilization is supported; otherwise, [`false`](../../../Swift/false.md).
 

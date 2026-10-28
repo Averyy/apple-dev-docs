@@ -15,7 +15,7 @@ The payload that configures Autonomous Single App mode.
 object AutonomousSingleAppMode
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.asam` as the payload type.
 
@@ -23,7 +23,7 @@ The system only allows installation of one profile of this type, and it requires
 
 > ❗ **Important**:  If two dictionaries contain the same `BundleIdentifier` value but a different `TeamIdentifier` value, an error occurs and the system doesn’t install the profile.
 
-##### Profile availability
+### Profile availability
 
 |  |  |
 | --- | --- |
@@ -35,7 +35,7 @@ The system only allows installation of one profile of this type, and it requires
 | Allowed in user enrollment | N/A |
 | Allow multiple payloads | N/A |
 
-##### Profile example
+### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>

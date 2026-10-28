@@ -26,7 +26,7 @@ func saveSnapshot() -> GCExtendedGamepadSnapshot
 - (GCExtendedGamepadSnapshot *) saveSnapshot;
 ```
 
-#### Return Value
+## Return Value
 
 A snapshot that is a copy of the controller at a moment in time, and has element values you can set.
 

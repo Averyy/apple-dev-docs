@@ -17,7 +17,7 @@ Associates a URL to the given attributes.
 mutating func setModelFileURL(_ url: URL?, for attributes: [any CapturedRoomAttribute]) throws
 ```
 
-#### Discussion
+## Discussion
 
 In error conditions, this function throws:
 

@@ -22,7 +22,7 @@ Resolves the associated value in the given coordinate space.
 func resolve<Space>(in otherSpace: Space) throws -> Self.Value where Space : CoordinateSpace3D
 ```
 
-#### Return Value
+## Return Value
 
 A concrete value converted to the provided space.
 

@@ -21,11 +21,11 @@ static func text(languages: [String] = [], textContentType: DataScannerViewContr
 
 - [Scanning data with the camera](../../scanning-data-with-the-camera.md)
 
-#### Return Value
+## Return Value
 
 A text data type.
 
-#### Discussion
+## Discussion
 
 Use this method to create a custom text data type. For example, if you know the content contains languages other than a person’s preferred languages, pass identifiers for those languages as the `languages` parameter. If you only want to scan for telephone numbers, pass [`DataScannerViewController.TextContentType.telephoneNumber`](../textcontenttype/telephonenumber.md) as the `textContentType` parameter.
 

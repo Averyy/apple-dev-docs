@@ -17,7 +17,7 @@ A hard upper bound for model-selected reasoning tokens.
 struct ThinkingBudgetConfiguration
 ```
 
-#### Overview
+## Overview
 
 Protocol tokens used to enter or leave reasoning are not charged to the budget. If a byte-fallback token ends mid-scalar, generation may consume the minimum additional tokens needed to complete valid Unicode before forcing the transition. Forced transition tokens still count toward [`maxTokens`](./generateparameters/maxtokens.md); callers must leave room for the transition and the final answer in their overall generation limit.
 

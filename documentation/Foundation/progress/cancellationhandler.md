@@ -25,11 +25,11 @@ var cancellationHandler: (@Sendable () -> Void)? { get set }
 @property (copy, nullable) void (^cancellationHandler)();
 ```
 
-#### Discussion
+## Discussion
 
 If the receiver is a suboperation of another progress object, the system invokes the [`cancellationHandler`](./cancellationhandler.md) block when canceling the containing progress object.
 
-##### Special Considerations
+### Special Considerations
 
 You’re responsible for canceling any work for the progress object.
 

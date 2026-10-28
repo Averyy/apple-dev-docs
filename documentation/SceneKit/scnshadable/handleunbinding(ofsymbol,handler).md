@@ -25,7 +25,7 @@ optional func handleUnbinding(ofSymbol symbol: String, handler block: SCNBinding
 - (void) handleUnbindingOfSymbol:(NSString *) symbol usingBlock:(SCNBindingBlock) block;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to associate a block with a SceneKit object (geometry or material) to handle cleanup related to an attribute or uniform variable in a custom [`SCNProgram`](../scnprogram.md) shader associated with that object. SceneKit will call your block after rendering the object. In the block, you can execute any OpenGL commands or other code necessary for post-rendering tasks.
 

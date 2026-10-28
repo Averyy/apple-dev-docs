@@ -23,7 +23,7 @@ var kDNSServiceType_SSHFP: Int { get }
 kDNSServiceType_SSHFP
 ```
 
-#### Discussion
+## Discussion
 
 SSH Key Fingerprint
 

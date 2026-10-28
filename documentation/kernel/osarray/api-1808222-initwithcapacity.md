@@ -12,11 +12,11 @@ virtual bool initWithCapacity(
  unsigned intcapacity);
 ```
 
-#### Return Value
+## Return Value
 
 `true` on success, `false` on failure.
 
-#### Overview
+## Overview
 
 Not for general use. Use the static instance creation method withCapacity instead.
 

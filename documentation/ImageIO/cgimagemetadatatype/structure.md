@@ -25,7 +25,7 @@ case structure
 kCGImageMetadataTypeStructure
 ```
 
-#### Discussion
+## Discussion
 
 Unlike array elements, fields of a structure may belong to different namespaces.
 

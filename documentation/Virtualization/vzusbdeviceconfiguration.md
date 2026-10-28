@@ -19,7 +19,7 @@ protocol VZUSBDeviceConfiguration : NSObjectProtocol
 @protocol VZUSBDeviceConfiguration <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Classes that conform to this protocol represent hot-pluggable USB device configurations.
 

@@ -15,7 +15,7 @@ The device fit validation status.
 var deviceFitStatus: DeviceFitStatus { get }
 ```
 
-#### Discussion
+## Discussion
 
 Indicates whether the user’s eyes are properly positioned within the optimal device fit range, or provides directional feedback if positioned outside.
 

@@ -21,7 +21,7 @@ The values that define how the generator selects existing samples as examples in
 enum SamplingStrategy
 ```
 
-#### Overview
+## Overview
 
 When a model repeats an inference, the strategy determines whether and how the generator retries with different examples.
 

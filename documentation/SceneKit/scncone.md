@@ -25,7 +25,7 @@ class SCNCone
 @interface SCNCone : SCNGeometry
 ```
 
-#### Overview
+## Overview
 
 ![](https://developer.apple.com/tutorials/images/com.apple.scenekit/media-2929809@2x.png)
 

@@ -21,7 +21,7 @@ A format that displays a 32-bit integer as bytes.
 case byteCount
 ```
 
-#### Discussion
+## Discussion
 
 Use this option to format the interpolated value as bytes, such as `100 kB`. The following example applies the `byteCount` formatter to the 32-bit integer value `100_000`:
 

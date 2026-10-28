@@ -19,7 +19,7 @@ var NSPrevFunctionKey: Int { get }
 NSPrevFunctionKey
 ```
 
-#### Discussion
+## Discussion
 
 This key is unavailable on most Macintosh keyboards.
 

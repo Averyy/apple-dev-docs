@@ -20,7 +20,7 @@ Creates a data table from a dictionary of column names and untyped columns.
 init(namedColumns: [String : MLUntypedColumn]) throws
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to create a data table from untyped columns.
 

@@ -24,7 +24,7 @@ func CAShow(_ inObject: UnsafeMutableRawPointer)
 extern void CAShow(void *inObject);
 ```
 
-#### Discussion
+## Discussion
 
 ## Parameters
 

@@ -3,7 +3,7 @@
 **Framework**: Core Services  
 **Role**: API Collection
 
-#### Overview
+## Overview
 
 The MDSchema functions provide information about the metadatareturned for an item including the type of metadata provided fora file type, the localized display name for a metadata attributekey, and the schema for a metadata attribute key.
 

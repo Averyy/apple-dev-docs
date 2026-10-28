@@ -25,7 +25,7 @@ var errorComment: String? { get }
 @property (nonatomic, readonly, nullable) NSString * errorComment;
 ```
 
-#### Discussion
+## Discussion
 
 The property corresponds to “comment”.
 

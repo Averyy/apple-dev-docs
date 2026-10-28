@@ -25,11 +25,11 @@ init?(radialSpace space: CGColorSpace, start: CGPoint, startRadius: CGFloat, end
 extern CGShadingRefCGShadingCreateRadial(CGColorSpaceRef space, CGPoint start, CGFloat startRadius, CGPoint end, CGFloat endRadius, CGFunctionRef function, bool extendStart, bool extendEnd);
 ```
 
-#### Return Value
+## Return Value
 
 A new Core Graphics radial shading. In Objective-C, you’re responsible for releasing this object using [`CGShadingRelease`](../cgshadingrelease.md).
 
-#### Discussion
+## Discussion
 
 A radial shading is a color blend that varies between two circles. To draw the shading, call the function [`drawShading(_:)`](../cgcontext/drawshading%28_%29.md).
 

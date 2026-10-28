@@ -20,7 +20,7 @@ func NSMakeSize(_ w: Double, _ h: Double) -> NSSize
 static NSSize NSMakeSize(CGFloat w, CGFloat h);
 ```
 
-#### Return Value
+## Return Value
 
 An `NSSize` having the specified `width` and `height`.
 

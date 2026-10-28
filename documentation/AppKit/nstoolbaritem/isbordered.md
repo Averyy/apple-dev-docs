@@ -22,7 +22,7 @@ var isBordered: Bool { get set }
 @property (getter=isBordered) BOOL bordered;
 ```
 
-#### Discussion
+## Discussion
 
 If your toolbar item displays a custom view, modifying this property applies the image to the view’s [`isBordered`](./isbordered.md) property, if one exists. The default value of this property is [`false`](../../Swift/false.md).
 

@@ -25,7 +25,7 @@ let MPMediaItemPropertyUserGrouping: String
 extern NSString * const MPMediaItemPropertyUserGrouping;
 ```
 
-#### Discussion
+## Discussion
 
 Value is an [`NSString`](../Foundation/nsstring.md) object.
 

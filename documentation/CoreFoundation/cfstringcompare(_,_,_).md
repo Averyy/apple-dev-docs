@@ -25,11 +25,11 @@ func CFStringCompare(_ theString1: CFString!, _ theString2: CFString!, _ compare
 extern CFComparisonResult CFStringCompare(CFStringRef theString1, CFStringRef theString2, CFStringCompareFlags compareOptions);
 ```
 
-#### Return Value
+## Return Value
 
 A [`CFComparisonResult`](./cfcomparisonresult.md) value that indicates whether `theString1` is equal to, less than, or greater than `theString2`.
 
-#### Discussion
+## Discussion
 
 You can affect how the comparison proceeds by specifying one or more option flags in `compareOptions`. Not all comparison options are currently implemented.
 

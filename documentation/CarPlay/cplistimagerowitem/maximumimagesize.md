@@ -23,7 +23,7 @@ class var maximumImageSize: CGSize { get }
 @property (class, nonatomic, readonly) CGSize maximumImageSize;
 ```
 
-#### Discussion
+## Discussion
 
 At runtime, use this value to determine the maximum size that CarPlay allows for a single image in an image row.
 

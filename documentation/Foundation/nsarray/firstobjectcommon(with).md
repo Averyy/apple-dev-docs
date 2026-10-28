@@ -25,11 +25,11 @@ func firstObjectCommon(with otherArray: [Any]) -> Any?
 - (ObjectType) firstObjectCommonWithArray:(NSArray<id> *) otherArray;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the first object contained in the receiving array that’s equal to an object in `otherArray`. If no such object is found, returns `nil`.
 
-#### Discussion
+## Discussion
 
 This method uses [`isEqual(_:)`](../../ObjectiveC/nsobjectprotocol/isequal%28_%29.md) to check for object equality.
 

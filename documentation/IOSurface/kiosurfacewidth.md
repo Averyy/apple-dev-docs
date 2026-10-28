@@ -24,7 +24,7 @@ let kIOSurfaceWidth: CFString
 extern CFStringRef const kIOSurfaceWidth;
 ```
 
-#### Discussion
+## Discussion
 
 Required for planar IOSurfaces.
 

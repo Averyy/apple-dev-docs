@@ -28,7 +28,7 @@ GKMatchSendDataUnreliable
 
 - [Exchanging data between players in real-time games](../../exchanging-data-between-players-in-real-time-games.md)
 
-#### Discussion
+## Discussion
 
 Use this mode for small packets of data that must arrive quickly to be useful to the recipient. Unreliable data may arrive in a different order than when you sent it.
 

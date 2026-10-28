@@ -25,11 +25,11 @@ func indexes(ofObjectsPassingTest predicate: (Any, Int, UnsafeMutablePointer<Obj
 - (NSIndexSet *) indexesOfObjectsPassingTest:(BOOL (^)(ObjectType obj, NSUInteger idx, BOOL *stop)) predicate;
 ```
 
-#### Return Value
+## Return Value
 
 The index of the corresponding value in the ordered set that passes the test specified by predicate. If no objects in the ordered set pass the test, returns NSNotFound..
 
-#### Discussion
+## Discussion
 
 If the block parameter is `nil`, this method raises an exception.
 

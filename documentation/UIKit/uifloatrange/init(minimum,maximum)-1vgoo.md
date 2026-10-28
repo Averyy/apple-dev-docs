@@ -23,7 +23,7 @@ init(minimum: CGFloat, maximum: CGFloat)
 static UIFloatRange UIFloatRangeMake(CGFloat minimum, CGFloat maximum);
 ```
 
-#### Discussion
+## Discussion
 
 Float ranges are used in [`UIAttachmentBehavior`](../uiattachmentbehavior.md) objects to define the maximum range of translation or rotation for animations.
 

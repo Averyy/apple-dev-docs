@@ -19,7 +19,7 @@ var viewController: NSViewController { get set }
 @property (strong) NSViewController * viewController;
 ```
 
-#### Discussion
+## Discussion
 
 Don’t set this property while adding the split view item to a split view controller. If you do, the system raises an exception.
 

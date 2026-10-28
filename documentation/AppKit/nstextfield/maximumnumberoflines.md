@@ -19,7 +19,7 @@ var maximumNumberOfLines: Int { get set }
 @property NSInteger maximumNumberOfLines;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of `0` indicates no limit to the number of lines, and the text fills the bounds of the text field cell.
 

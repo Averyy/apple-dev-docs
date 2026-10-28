@@ -19,7 +19,7 @@ var identifier: String? { get set }
 @property (copy, nullable) NSString * identifier;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier is unique to a notification. A notification delivered with the same identifier as an existing notification replaces the existing notification rather than causing the display of a new notification.
 

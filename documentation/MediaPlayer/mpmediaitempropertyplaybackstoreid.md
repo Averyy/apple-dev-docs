@@ -25,7 +25,7 @@ let MPMediaItemPropertyPlaybackStoreID: String
 extern NSString * const MPMediaItemPropertyPlaybackStoreID;
 ```
 
-#### Discussion
+## Discussion
 
 Matches the identifier used by [`MPMusicPlayerController`](./mpmusicplayercontroller.md) to enqueue store tracks.
 

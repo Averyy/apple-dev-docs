@@ -18,15 +18,15 @@ Runs the evaluation against the dataset and computes metric results.
 ## Declaration
 
 ```swift
-nonisolated
-(nonsending) func run(info: [String : String] = [:]) async throws -> EvaluationResult
+nonisolated(nonsending)
+func run(info: [String : String] = [:]) async throws -> EvaluationResult
 ```
 
-#### Return Value
+## Return Value
 
 An [`EvaluationResult`](../evaluationresult.md) that contains the summary statistics and sample-level results.
 
-#### Discussion
+## Discussion
 
 This method executes the evaluation by iterating through your dataset, producing subjects, applying evaluators, and producing summary statistics. The evaluation logs and skips inference errors rather than halting the run.
 

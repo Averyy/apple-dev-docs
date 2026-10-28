@@ -5,7 +5,7 @@
 
 Construct a digital pass with information that enables people to take action.
 
-#### Overview
+## Overview
 
 In iOS and watchOS 27, you can present passes such as, membership, loyalty, coupon, rewards, gift card, and other pass types in a poster-style format designed to highlight prominent artwork, modern typography, and thoughtful customer notifications. This style also supports up to two Featured Action links, giving users quick access to helpful information right from the pass.
 
@@ -13,7 +13,7 @@ The Poster Generic template builds on the same presentation style used for event
 
 ![An illustration of a Poster Generic Pass for a museum with poster artwork. The poster shows the skull of a Tyrannosaurus rex surrounded by ferns, butterflies, and a nautilus. The pass also displays a QR code and information about the pass holder, including the member name, expiration, and type of pass.](https://developer.apple.com/tutorials/images/com.apple.walletpasses/poster-generic-pass-natural-history-museum@2x.png)
 
-#### Create your pass type identifier
+## Create your pass type identifier
 
 Signing a pass requires a signing certificate for the *pass type identifier*, which is similar to a bundle identifier, or a class name. The value for the `passTypeIdentifier` key specifies the pass type identifier. You choose a string to define a class or category of passes; the string always begins with `pass`, and uses reverse DNS style—for example, `pass.com.example.membership-card`. Create your pass type identifier in the [Certificates, Identifiers & Profiles](https://developer.apple.com/account/resources) area of your Apple Developer account. The pass type identifier must match the certificate used to sign the pass. For more information on creating Wallet certificates, see [Create Wallet identifiers and certificates](https://developer.apple.com/help/account/capabilities/create-wallet-identifiers-and-certificates/).
 
@@ -27,7 +27,7 @@ PassKit uses the combination of pass type identifier and serial number to unique
 
 For more information on creating your pass type identifier, see [Create a Pass Type Identifier](./building-a-pass.md#Create-a-Pass-Type-Identifier).
 
-#### Add the Poster Generic Pass style
+## Add the Poster Generic Pass style
 
 The pass’s style determines the overall visual appearance of the pass and the template for placement of information on the pass. The value of the pass style key is a dictionary containing fields that hold the pass content. Specify the pass style by providing the corresponding key at the top level of the `pass.json` file; Poster Generic Passes use the key `posterGeneric`. For more information on building your `pass.json` file, see [Building a Pass](./building-a-pass.md).
 
@@ -61,7 +61,7 @@ The back of the pass can have as many fields as you need, and the contents of th
 
 For more information on pass fields, see [`PassFields`](./passfields.md) and Human Interface Guide > Wallet > [Pass field types](https://developer.apple.com/design/human-interface-guidelines/wallet#Pass-field-types). For more information on the generic pass object, see [`Pass.Generic`](./pass/generic-data.dictionary.md).
 
-#### Ensure backward compatibility
+## Ensure backward compatibility
 
 To ensure your pass is backward compatible, include an additional style dictionary on the same pass, for example, `storeCard`, `generic`, `eventTicket`, or `coupon`. Wallet’s style resolution prioritizes `posterGeneric` when present, so newer devices display the generic pass with the poster, and older devices display the legacy style they recognize.
 
@@ -162,7 +162,7 @@ The following example shows a `pass.json` file with the `posterGeneric` pass sty
 
 > **Note**:  A pass viewed on an Apple Watch doesn’t show the strip image (banner image), thumbnail image, or the information on the back of the pass.
 
-#### Provide scannable codes
+## Provide scannable codes
 
 Passes can work with Near Field Communication (NFC) readers and barcodes type. Someone can hold a device near an NFC reader with the contactless symbol to use their pass. When employing NFC, the pass doesn’t need a barcode.
 
@@ -172,7 +172,7 @@ For more information on barcodes, see [`Pass.Barcodes`](./pass/barcodes-data.dic
 
 For design guidance about generic passes, see Human Interface Guidelines > Wallet > Passes > [Generic passes](https://developer.apple.com/design/human-interface-guidelines/wallet#Generic-passes).
 
-#### Add Featured Actions
+## Add Featured Actions
 
 With iOS and watchOS 27 and later, you can include Featured Actions with your pass. These actions display as cards when someone views your pass in the Wallet app, and you can use them for quick calls to action for the viewer. Featured Actions make it easy for someone to find relevant information related to your pass quickly, such as directions to a business location, music related to a live performance, or links to book tickets.
 
@@ -186,11 +186,11 @@ Your string is a brief call to action, and your action label informs people what
 
 For a list of available Featured Actions, see [Add Featured Actions](./defining-the-metadata-of-your-wallet-pass.md#Add-Featured-Actions)
 
-#### Add notifications
+## Add notifications
 
 With notifications you can inform customers in thoughtful ways to increase visits, sales, and overall engagement. Use notifications to broadcast program updates to all of your customers or provide specific updates to each customer based on their engagement with your program. These updates and notifications can be triggered via relevant time and relevant location functionality held directly in the pass. For best practices and design guidance on notifications, see [Human Interface Guide > Components > System Experiences > Notifications](https://developer.apple.com/design/human-interface-guidelines/notifications#best-practices).
 
-#### Debug the pass
+## Debug the pass
 
 If the pass doesn’t display and add to Wallet, check the logs for a description of what went wrong. If you’re using Simulator to debug, you can drag your `.pkpass` file into the Simulator, then use the Console app on your Mac to view the Simulator device logs.
 

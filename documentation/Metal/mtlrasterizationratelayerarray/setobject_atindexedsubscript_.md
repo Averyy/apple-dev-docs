@@ -20,7 +20,7 @@ Stores a sample value at the specified index.
 - (void) setObject:(MTLRasterizationRateLayerDescriptor *) layer atIndexedSubscript:(NSUInteger) layerIndex;
 ```
 
-#### Discussion
+## Discussion
 
 The method converts the value to a single precision floating point value.
 

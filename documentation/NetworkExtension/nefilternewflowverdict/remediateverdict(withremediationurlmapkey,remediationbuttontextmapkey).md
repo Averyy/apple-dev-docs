@@ -22,11 +22,11 @@ class func remediateVerdict(withRemediationURLMapKey remediationURLMapKey: Strin
 + (NEFilterNewFlowVerdict *) remediateVerdictWithRemediationURLMapKey:(NSString *) remediationURLMapKey remediationButtonTextMapKey:(NSString *) remediationButtonTextMapKey;
 ```
 
-#### Return Value
+## Return Value
 
 An `NEFilterNewFlowVerdict` object.
 
-#### Discussion
+## Discussion
 
 When the Filter Data Provider returns this verdict from its `handleNewFlow:` method, the system uses the verdict’s `remediationURLMapKey` and `remediationButtonTextMapKey` to look up the remediation URL parameters in the [`remediationMap`](../nefiltercontrolprovider/remediationmap.md) dictionary set by the Filter Control Provider. The remediation URL parameters are then inserted into the block page which is presented to the user.
 

@@ -19,11 +19,11 @@ func SpeechSynthesisRegisterModuleURL(_ url: CFURL) -> OSErr
 OSErr SpeechSynthesisRegisterModuleURL(CFURLRef url);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./speech_synthesis_manager.md#1659745).
 
-#### Discussion
+## Discussion
 
 The `SpeechSynthesisRegisterModuleURL` function registers the speech synthesizer or voice specified by `url` and makes it available to the calling process. Before a synthesizer’s voices can be registered, the synthesizer must be registered (or loaded automatically by the Speech Synthesis Manager). If you call `SpeechSynthesisRegisterModuleURL` to register a voice and you receive the [`incompatibleVoice`](../coreservices/incompatiblevoice.md) result code, it’s likely that the synthesizer associated with the voice needs to be registered. If you call this function to register a synthesizer or voice that has already been registered, `SpeechSynthesisRegisterModuleURL` does nothing and returns an error.
 

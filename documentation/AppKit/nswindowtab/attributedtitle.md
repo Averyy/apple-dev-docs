@@ -20,7 +20,7 @@ var attributedTitle: NSAttributedString? { get set }
 @property (copy, nullable) NSAttributedString * attributedTitle;
 ```
 
-#### Discussion
+## Discussion
 
 If you provide an attributed title, the window tab uses all of the attributes that are explicitly provided in the attributed string. Attributes that are left unspecified, including the font and foreground color, are automatically filled in using default values appropriate for the window tab.
 

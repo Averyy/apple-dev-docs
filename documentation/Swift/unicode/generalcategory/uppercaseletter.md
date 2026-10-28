@@ -21,7 +21,7 @@ An uppercase letter.
 case uppercaseLetter
 ```
 
-#### Discussion
+## Discussion
 
 This value corresponds to the category `Uppercase_Letter` (abbreviated `Lu`) in the [Unicode Standard](https://unicode.org/reports/tr44/#General_Category_Values).
 

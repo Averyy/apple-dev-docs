@@ -16,7 +16,7 @@ A dictionary representation of a frame duration.
 @property (atomic, strong, nullable) NSDictionary * frameDuration;
 ```
 
-#### Discussion
+## Discussion
 
 The dictionary represents a [`CMTime`](../../CoreMedia/cmtime.md) value that’s consistent with the frame duration that the current active format specifies.
 

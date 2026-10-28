@@ -21,7 +21,7 @@ A collection that supports subscript assignment.
 protocol MutableCollection<Element> : Collection where Self.SubSequence : MutableCollection
 ```
 
-#### Overview
+## Overview
 
 Collections that conform to `MutableCollection` gain the ability to change the value of their elements. This example shows how you can modify one of the names in an array of students.
 
@@ -45,7 +45,7 @@ print(numbers)
 
 The `MutableCollection` protocol allows changing the values of a collection’s elements but not the length of the collection itself. For operations that require adding or removing elements, see the `RangeReplaceableCollection` protocol instead.
 
-### Conforming to the MutableCollection Protocol
+## Conforming to the MutableCollection Protocol
 
 To add conformance to the `MutableCollection` protocol to your own custom collection, upgrade your type’s subscript to support both read and write access.
 

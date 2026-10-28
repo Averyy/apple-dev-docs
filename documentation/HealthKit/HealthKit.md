@@ -14,7 +14,7 @@ Access and share health and fitness data while maintaining the user’s privacy 
 - visionOS 1.0+
 - watchOS 2.0+
 
-#### Overview
+## Overview
 
 HealthKit provides a central repository for health and fitness data on iPhone and Apple Watch. With the user’s permission, apps communicate with the HealthKit store to access and share this data.
 

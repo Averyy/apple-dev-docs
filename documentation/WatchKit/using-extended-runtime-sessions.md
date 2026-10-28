@@ -5,7 +5,7 @@
 
 Create an extended runtime session that continues running your app after the user stops interacting with it.
 
-#### Overview
+## Overview
 
 An app running on Apple Watch normally transitions to the background and becomes suspended when the user lowers their wrist. However, your app can use both background sessions and extended runtime sessions to continue running after the user stops interacting with it.
 
@@ -20,9 +20,9 @@ Select a session type based on the app’s intended use—not based on the featu
 
 > ❗ **Important**:  To maintain high performance on Apple Watch, limit the amount of work performed during an extended runtime session. If your app sustains high CPU usage over a period of time, the system may cancel the session (see [`WKExtendedRuntimeSessionErrorCode.exceededResourceLimits`](./wkextendedruntimesessionerrorcode/exceededresourcelimits.md)). Use Xcode’s CPU report tool or the time profiler in Instruments to test and minimize your app’s CPU usage.
 
-##### Set Up the Session
+### Set Up the Session
 
-Before starting an extended runtime session, enable your WatchKit extension’s Background Modes capability and select your app’s session type (see [Figure 1](./using_extended_runtime_sessions.md#3189143)). Each app can only support one type of extended runtime session, although it’s possible to support other background modes in combination with extended runtime.
+Before starting an extended runtime session, enable your WatchKit extension’s Background Modes capability and select your app’s session type (see [Figure 1](./using-extended-runtime-sessions.md#3189143)). Each app can only support one type of extended runtime session, although it’s possible to support other background modes in combination with extended runtime.
 
 ![A screenshot showing the Session Type setting for the Background Modes capability.](https://developer.apple.com/tutorials/images/com.apple.watchkit/media-3189143@2x.png)
 
@@ -74,7 +74,7 @@ For sessions started with [`start(at:)`](./wkextendedruntimesession/start%28at%2
 }
 ```
 
-##### Understand Session Behaviors
+### Understand Session Behaviors
 
 Extended runtime sessions gain the following features, based on the session type.
 

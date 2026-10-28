@@ -25,11 +25,11 @@ init?(sequentialInfo info: UnsafeMutableRawPointer?, callbacks: UnsafePointer<CG
 extern CGDataProviderRefCGDataProviderCreateSequential(void *info, const CGDataProviderSequentialCallbacks *callbacks);
 ```
 
-#### Return Value
+## Return Value
 
 A new data provider. In Objective-C, you’re responsible for releasing this object using [`CGDataProviderRelease`](../cgdataproviderrelease.md).
 
-#### Discussion
+## Discussion
 
 You use this function to create a sequential-access data provider that uses callback functions to read data from your program in a single block.
 

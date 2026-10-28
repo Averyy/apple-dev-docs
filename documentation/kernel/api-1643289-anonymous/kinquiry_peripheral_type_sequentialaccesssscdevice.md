@@ -13,7 +13,7 @@
 kINQUIRY_PERIPHERAL_TYPE_SequentialAccessSSCDevice = 0x01
 ```
 
-#### Discussion
+## Discussion
 
 Sequential Access (Tape) SSC Device.
 

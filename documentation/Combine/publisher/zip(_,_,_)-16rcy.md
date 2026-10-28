@@ -21,11 +21,11 @@ Combines elements from three other publishers and delivers groups of elements as
 func zip<P, Q, R>(_ publisher1: P, _ publisher2: Q, _ publisher3: R) -> Publishers.Zip4<Self, P, Q, R> where P : Publisher, Q : Publisher, R : Publisher, Self.Failure == P.Failure, P.Failure == Q.Failure, Q.Failure == R.Failure
 ```
 
-#### Return Value
+## Return Value
 
 A publisher that emits groups of elements from the upstream publishers as tuples.
 
-#### Discussion
+## Discussion
 
 Use [`zip(_:_:_:)`](./zip%28_,_,_%29-16rcy.md) to return a new publisher that combines the elements from three other publishers to publish a tuple to the downstream subscriber. The returned publisher waits until all four publishers have emitted an event, then delivers the oldest unconsumed event from each publisher as a tuple to the subscriber.
 

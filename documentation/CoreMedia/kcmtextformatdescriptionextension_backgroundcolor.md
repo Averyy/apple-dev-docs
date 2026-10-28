@@ -25,7 +25,7 @@ let kCMTextFormatDescriptionExtension_BackgroundColor: CFString
 extern CFStringRef const kCMTextFormatDescriptionExtension_BackgroundColor;
 ```
 
-#### Discussion
+## Discussion
 
 The value needs to be a [`CFDictionary`](../CoreFoundation/cfdictionary.md).
 

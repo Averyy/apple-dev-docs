@@ -19,11 +19,11 @@ func frameForItem(at index: Int) -> NSRect
 - (NSRect) frameForItemAtIndex:(NSUInteger) index;
 ```
 
-#### Return Value
+## Return Value
 
 The frame calculated by the receiver where it intends to place the subview for the [`NSCollectionViewItem`](../nscollectionviewitem.md) at the given index. The rectangle is returned in the collection view’s coordinate system.
 
-#### Discussion
+## Discussion
 
 You can use this method in the [`collectionView(_:draggingImageForItemsAt:with:offset:)`](../nscollectionviewdelegate/collectionview%28_,draggingimageforitemsat,with,offset%29-4yvk5.md) method to determine which views are in the visible portion of the enclosing scroll view.
 

@@ -29,7 +29,7 @@ NLTokenUnitWord
 
 - [Tokenizing natural language text](../tokenizing-natural-language-text.md)
 
-#### Discussion
+## Discussion
 
 Use this linguistic unit to tokenize text into individual words, like in the following example:
 

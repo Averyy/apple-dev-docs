@@ -24,7 +24,7 @@ case cfHostErrorUnknown
 kCFHostErrorUnknown
 ```
 
-#### Discussion
+## Discussion
 
 An unknown error (for example, a name server failure) occurred. For additional information, you can query the `kCFGetAddrInfoFailureKey` key to obtain the value returned by `getaddrinfo(_:_:_:_:)` and look up the value in `/usr/include/netdb.h`.
 

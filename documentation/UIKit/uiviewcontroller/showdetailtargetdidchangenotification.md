@@ -24,7 +24,7 @@ class let showDetailTargetDidChangeNotification: NSNotification.Name
 extern NSNotificationName const UIViewControllerShowDetailTargetDidChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 When a view controller is using [`show(_:sender:)`](./show%28_,sender%29.md) or [`showDetailViewController(_:sender:)`](./showdetailviewcontroller%28_,sender%29.md), it may need to know when a split view controller higher in the view hierarchy has changed. This notification is sent when a split view controller expands or collapses. The object of this notification is the view controller that caused the change.
 

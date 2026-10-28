@@ -20,7 +20,7 @@ A string array of country codes that indicates your app supports external purcha
 - **Name**: `SKExternalPurchase`
 - **Type**: array of string 
 
-#### Discussion
+## Discussion
 
 Use this information property list key if your app has the [`com.apple.developer.storekit.external-purchase`](../entitlements/com.apple.developer.storekit.external-purchase.md) entitlement.
 

@@ -15,11 +15,11 @@ Remove all negative cache entries which are children of a given vnode.
 void cache_purge_negatives(vnode_t vp);
 ```
 
-#### Return Value
+## Return Value
 
 void.
 
-#### Discussion
+## Discussion
 
 Appropriate to use when negative cache information for a directory could have become invalid, e.g. after file creation.
 

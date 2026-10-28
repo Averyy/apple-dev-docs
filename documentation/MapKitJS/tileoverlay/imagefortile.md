@@ -23,7 +23,7 @@ set imageForTile(
 - [MapKit JS 6](../mapkit-js-6.md)
 - [Migrating from Version 5 to Version 6](../migrating-from-version-5-to-version-6.md)
 
-#### Discussion
+## Discussion
 
 Set this property to a [`TileOverlayUrlTemplate`](../tileoverlayurltemplate.md) to provide tiles by URL, or a [`TileOverlayImageCallback`](../tileoverlayimagecallback.md) to provide tiles as image sources directly.
 

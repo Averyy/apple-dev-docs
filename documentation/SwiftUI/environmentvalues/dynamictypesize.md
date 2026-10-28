@@ -21,7 +21,7 @@ The current Dynamic Type size.
 var dynamicTypeSize: DynamicTypeSize { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This value changes as the user’s chosen Dynamic Type size changes. The default value is device-dependent.
 

@@ -30,7 +30,7 @@ class GKVoiceChat
 
 - [Adding voice chat to multiplayer games](./adding-voice-chat-to-multiplayer-games.md)
 
-#### Overview
+## Overview
 
 GameKit provides the underlying mechanism to implement voice chat between players in a multiplayer game. It’s your responsibility to provide player controls and display feedback during the chat.
 

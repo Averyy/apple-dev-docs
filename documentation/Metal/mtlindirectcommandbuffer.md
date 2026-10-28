@@ -28,7 +28,7 @@ protocol MTLIndirectCommandBuffer : MTLResource
 
 - [Improving CPU performance by using argument buffers](./improving-cpu-performance-by-using-argument-buffers.md)
 
-#### Overview
+## Overview
 
 Use an indirect command buffer to encode commands once and reuse them, and to encode commands on multiple CPU or GPU threads.
 

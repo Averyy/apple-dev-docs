@@ -20,7 +20,7 @@ A subscription store control style that displays subscription plans as a compact
 @preconcurrency struct CompactPickerSubscriptionStoreControlStyle
 ```
 
-#### Overview
+## Overview
 
 This style lays out the picker options in a horizontal stack, and it can scroll horizontally if the contents are wider than the container. This style is recommended when you expect your store to display two or three subscription options.
 

@@ -25,11 +25,11 @@ func identifiersOfEntries(withClass entryClass: AnyClass) -> [String]
 - (NSArray<NSString *> *) identifiersOfEntriesWithClass:(Class) entryClass;
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`NSString`](../../Foundation/nsstring.md) objects, each the unique identifier of an object in the scene source.
 
-#### Discussion
+## Discussion
 
 SceneKit recognizes objects of the following classes in scene files:
 

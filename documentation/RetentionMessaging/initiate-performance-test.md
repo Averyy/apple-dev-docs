@@ -16,7 +16,7 @@ Initiates a performance test of your Get Retention Message endpoint in the sandb
 - [Responding to real-time retention messaging requests](./responding-to-realtime-retention-messaging-requests.md)
 - [Retention Messaging API changelog](./retention-messaging-changelog.md)
 
-#### Discussion
+## Discussion
 
 Call this endpoint after you configure your `Get Retention Message` endpoint for the sandbox environment to test your server’s performance. The service returns a response that includes a [`PerformanceTestConfig`](./performancetestconfig.md) object that describes the testing parameters and a `requestId` you can use to request test results.
 

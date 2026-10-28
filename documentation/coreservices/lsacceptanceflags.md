@@ -22,7 +22,7 @@ typedef enum LSAcceptanceFlags : OptionBits {
 } LSAcceptanceFlags;
 ```
 
-#### Overview
+## Overview
 
 These flags are passed to the functions `LSCanRefAcceptItem` and `LSCanURLAcceptURL`.
 

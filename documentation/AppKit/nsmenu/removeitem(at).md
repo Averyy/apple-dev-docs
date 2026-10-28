@@ -19,7 +19,7 @@ func removeItem(at index: Int)
 - (void) removeItemAtIndex:(NSInteger) index;
 ```
 
-#### Discussion
+## Discussion
 
 After it removes the menu item, this method posts an [`didRemoveItemNotification`](./didremoveitemnotification.md).
 

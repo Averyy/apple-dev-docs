@@ -20,7 +20,7 @@ The HealthKit data is unavailable because it’s protected and the device is loc
 static var errorDatabaseInaccessible: HKError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 This error occurs when your app queries for HealthKit data while the device is locked. You can, however, still save data. This data is saved into a temporary file, which is merged with HealthKit’s data when the user unlocks their device.
 

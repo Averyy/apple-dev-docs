@@ -15,7 +15,7 @@ Indicates whether the people-picker window is visible.
 extern bool ABPickerIsVisible(ABPickerRef inPicker);
 ```
 
-#### Return Value
+## Return Value
 
 `true` when the window is visible, `false` otherwise.
 

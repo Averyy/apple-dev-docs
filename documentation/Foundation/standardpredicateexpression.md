@@ -21,7 +21,7 @@ A component expression that makes up part of a predicate, and that’s supported
 protocol StandardPredicateExpression<Output> : PredicateExpression, Decodable, Encodable, Sendable
 ```
 
-#### Overview
+## Overview
 
 Don’t declare new types that conform to the `StandardPredicateExpression` protocol.  Only the types provided by Foundation are valid conforming types.
 

@@ -20,7 +20,7 @@ Assigns multiple intersection function tables to a range of entries in the tile 
 - (void) setTileIntersectionFunctionTables:(id<MTLIntersectionFunctionTable> const[]) intersectionFunctionTables withBufferRange:(NSRange) range;
 ```
 
-#### Discussion
+## Discussion
 
 By default, the intersection function table at each index is `nil`.
 

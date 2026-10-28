@@ -21,7 +21,7 @@ A reference to a localizable string, accessible from another process.
 struct LocalizedStringResource
 ```
 
-#### Overview
+## Overview
 
 Use [`LocalizedStringResource`](./localizedstringresource.md) to provide localizable strings with lookups you defer to a later time.
 

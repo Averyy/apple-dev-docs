@@ -5,11 +5,11 @@
 
 Isolate privileged access to system resources and private data from untrusted code.
 
-#### Overview
+## Overview
 
 A browser is a complex app with many components: a graphical user interface (GUI), network communications, media playing, content parsing and rendering, and JavaScript execution. Improve the security of your browser for people using your app by creating separate extensions that are responsible for different parts of your app. The system runs your app and each of its extensions in separate processes with their own sandboxed access to system resources. Communicate between your app and its extensions, and between extensions, using [XPC](../XPC/XPC.md).
 
-#### Present the GUI and handle user input
+## Present the GUI and handle user input
 
 Your app presents the browser GUI, handles input from the person using the browser, and coordinates with the extensions to provide the browser features. Use [SwiftUI](../SwiftUI/SwiftUI.md) or [UIKit](../UIKit/UIKit.md) to display user interface and handle input. For more information on managing extensions, see [Managing the browser extension life cycle](./managing-the-browser-extension-lifecycle.md).
 
@@ -19,11 +19,11 @@ Use other API as necessary to provide common app features, for example, store a 
 
 If your browser engine uses custom text rendering and layout routines to display text on a web page, your browser app needs to adopt [`UITextInput`](../UIKit/uitextinput.md) and `BETextInput` to integrate with standard text interactions like showing text selection and displaying the contextual menu.
 
-#### Create a networking extension
+## Create a networking extension
 
 Your browser can create one instance of a networking extension, which uses [`URLSession`](../Foundation/urlsession.md) or socket APIs to retrieve remote resources and submit HTTP POST data. When web content extensions need to fetch additional resources, for example, images referenced in HTML documents, they communicate with the network extension to make the request and retrieve the data.
 
-#### Create content extensions
+## Create content extensions
 
 You create a content extension to host your browser’s rendering engine, which parses HTML documents and CSS style sheets, runs Javascript, and prepares the resulting document object for display. Create as many content extensions as your app needs to securely process browser contents, for example, one extension for each browser tab that a person uses, or one extension for each document and iframe with which your app works.
 
@@ -31,7 +31,7 @@ Content extensions work with untrusted data from remote sources, so don’t acce
 
 If your content extension uses just-in-time (JIT) compilation to run JavaScript code, you need to toggle the memory that contains the compiled code from writable to executable. For more information, see [Protecting code compiled just in time](./protecting-code-compiled-just-in-time.md).
 
-#### Process video and graphics
+## Process video and graphics
 
 Your browser can create one instance of a rendering extension, which uses [Metal](../Metal/Metal.md) to directly access the GPU to process video and other complex graphical data.
 

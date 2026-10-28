@@ -19,7 +19,7 @@ case pushDisclosure
 NSBezelStylePushDisclosure
 ```
 
-#### Discussion
+## Discussion
 
 Use this style of button when you want your button to look like a disclosure button, commonly seen in toolbars on macOS.
 

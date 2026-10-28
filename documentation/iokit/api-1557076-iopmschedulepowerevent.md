@@ -16,11 +16,11 @@ Schedule the machine to wake from sleep, power on, go to sleep, or shutdown.
 IOReturn IOPMSchedulePowerEvent(CFDateRef time_to_wake, CFStringRef my_id, CFStringRef type);
 ```
 
-#### Return Value
+## Return Value
 
 kIOReturnSuccess on success, otherwise on failure
 
-#### Discussion
+## Discussion
 
 This event will be added to the system's queue of power events and stored persistently on disk. The sleep and shutdown events present a graphical warning and allow a console user to cancel the event. Must be called as root.
 

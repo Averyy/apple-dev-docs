@@ -24,7 +24,7 @@ var channel: UInt32 { get set }
 @property (readwrite) UInt32 channel;
 ```
 
-#### Discussion
+## Discussion
 
 The valid range of values are between `0` and `15`.
 

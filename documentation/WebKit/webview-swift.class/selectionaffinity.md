@@ -19,7 +19,7 @@ var selectionAffinity: NSSelectionAffinity { get }
 @property (nonatomic, readonly) NSSelectionAffinity selectionAffinity;
 ```
 
-#### Discussion
+## Discussion
 
 For example, if text wraps across line boundaries, the value of this property indicates whether or not the insertion point appears after the last charactrer of the first line or before the first character of the following line.
 

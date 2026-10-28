@@ -16,7 +16,7 @@
 kSENSE_KEY_UNIT_ATTENTION
 ```
 
-#### Discussion
+## Discussion
 
 Device server indicates a unit attention condition.
 

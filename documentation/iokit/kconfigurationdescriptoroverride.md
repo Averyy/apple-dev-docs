@@ -14,7 +14,7 @@
 #define kConfigurationDescriptorOverride
 ```
 
-#### Discussion
+## Discussion
 
 Useful property names in USB land.
 

@@ -28,7 +28,7 @@ func onInsert(of supportedContentTypes: [UTType], perform action: @escaping (Int
 func onInsert(of acceptedTypeIdentifiers: [String], perform action: @escaping (Int, [NSItemProvider]) -> Void) -> some DynamicViewContent
 ```
 
-#### Return Value
+## Return Value
 
 A view that calls `action` when elements are inserted into the original view.
 

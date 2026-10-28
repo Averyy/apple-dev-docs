@@ -21,7 +21,7 @@ Creates a model prompt configuration.
 init(instructions: String = ModelJudgePrompt.defaultInstructions, evaluationTarget: (@Sendable (Input.ExpectedValue) -> String)? = nil, reference: (nonisolated(nonsending) @Sendable (Input, Input.ExpectedValue) async throws -> [String : String])? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 ```swift
 let prompt = ModelJudgePrompt<ModelSample<String>>(

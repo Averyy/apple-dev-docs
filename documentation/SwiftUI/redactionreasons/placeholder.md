@@ -21,7 +21,7 @@ Displayed data should appear as generic placeholders.
 static let placeholder: RedactionReasons
 ```
 
-#### Discussion
+## Discussion
 
 Text and images will be automatically masked to appear as generic placeholders, though maintaining their original size and shape. Use this to create a placeholder UI without directly exposing placeholder data to users.
 

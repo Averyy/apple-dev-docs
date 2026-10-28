@@ -23,7 +23,7 @@ var videoMaxZoomFactorForCenterStage: CGFloat { get }
 @property (nonatomic, readonly) CGFloat videoMaxZoomFactorForCenterStage;
 ```
 
-#### Discussion
+## Discussion
 
 Devices support a limited zoom range when Center Stage is active. If the device doesn’t support Center Stage, the value is [`videoMaxZoomFactor`](./videomaxzoomfactor.md).
 

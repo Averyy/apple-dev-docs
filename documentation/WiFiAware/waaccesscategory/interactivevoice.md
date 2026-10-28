@@ -17,7 +17,7 @@ A quality-of-service (QoS) type that provides very low-latency for low-throughpu
 case interactiveVoice
 ```
 
-#### Discussion
+## Discussion
 
 Only use this type if normal Wi-Fi packet transmission delays would be directly visible to the person using your app. Use this type for low data rate, live, unbuffered realtime flows that directly interact with the person using your app.
 

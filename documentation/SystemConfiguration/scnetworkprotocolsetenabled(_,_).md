@@ -19,7 +19,7 @@ func SCNetworkProtocolSetEnabled(_ protocol: SCNetworkProtocol, _ enabled: Bool)
 Boolean SCNetworkProtocolSetEnabled(SCNetworkProtocolRef protocol, Boolean enabled);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if the enabled status was saved; `FALSE` if an error occurred.
 

@@ -12,7 +12,7 @@ Leverage the spatial awareness of ARKit and Apple Ultra Wideband Chips in your a
 - Mac Catalyst 16.0+
 - Xcode 15.0+
 
-#### Overview
+## Overview
 
 This sample code project demonstrates how to use ARKit to find devices equipped with Apple Ultra Wideband (UWB) chips using a technique known as *ranging*. Ranging estimates the distance between devices using parameters such as signal strength and packet timing.
 
@@ -24,7 +24,7 @@ To use the Nearby Interaction framework in your app, it needs to implement the f
 2. Start [ARKit](../ARKit/ARKit.md), begin ranging for peer devices, and respond to changes in their status — this is how your app discovers compatible nearby devices and responds to changes in their availability.
 3. Implement a distance quality estimator function, if your app needs to take advantage of the EDM capabilities of the second-generation UWB chip. This is a function that uses data the Nearby Interaction framework returns to make decisions about signal quality to estimate the distance and direction between devices. This sample code project includes one possible implementation of a distance quality estimator function and its use to guide the people using the appropriate UI.
 
-##### Configure the sample code project
+### Configure the sample code project
 
 To run the app:
 
@@ -40,7 +40,7 @@ To run the app:
 
 > **Note**: This sample app doesn’t support Apple Watch and, because Camera Assistance uses ARKit, the app doesn’t support Simulator.
 
-##### Check availability
+### Check availability
 
 Because there are two types of UWB chips, always check to ensure that the peer devices support the mode the app is interested in, as shown in the example below:
 
@@ -64,7 +64,7 @@ if #available(iOS 17.0, watchOS 10.0, *) {
 }
 ```
 
-##### Start ARKit and ranging for peer devices
+### Start ARKit and ranging for peer devices
 
 Before the app can start ranging for potential peer devices, it needs to setup ARKit and the [Multipeer Connectivity](../MultipeerConnectivity/MultipeerConnectivity.md) frameworks, as shown in this example:
 
@@ -91,7 +91,7 @@ func startup() {
 }
 ```
 
-##### Respond to changes in peer devices
+### Respond to changes in peer devices
 
 After the app initializes the Multipeer Connectivity framework, the Nearby Interaction framework provides a protocol for tracking changes to peer devices and provides information necessary to interact with peers it discovers in the environment.
 
@@ -179,7 +179,7 @@ func session(_ session: NISession, didUpdateAlgorithmConvergence convergence: NI
 }
 ```
 
-##### Define a distance quality estimator
+### Define a distance quality estimator
 
 Finally, the key to using EDM is by creating a distance quality estimator function that the app uses to determine which peers to interact with. The specific criteria for such estimators are specific to your app’s use case; the following example is one such implementation:
 

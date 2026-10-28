@@ -22,7 +22,7 @@ The context’s model container.
 var container: ModelContainer { get }
 ```
 
-#### Discussion
+## Discussion
 
 The property provides a reference to the model container you specify when calling the context’s initializer. For more information, see [`init(_:)`](./init%28_%29.md).
 

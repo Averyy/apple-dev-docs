@@ -16,7 +16,7 @@ Creates a pseudo address space object and returns an interface to it. This will 
 IOFireWireLibPseudoAddressSpaceRef (*CreatePseudoAddressSpace)(IOFireWireLibDeviceRef self, UInt32 inSize, void *inRefCon, UInt32 inQueueBufferSize, void *inBackingStore, UInt32 inFlags, REFIID iid);
 ```
 
-#### Return Value
+## Return Value
 
 An IOFireWireLibPseudoAddressSpaceRef. Returns 0 upon failure
 

@@ -21,7 +21,7 @@ func resumeRendering()
 - (void) resumeRendering;
 ```
 
-#### Discussion
+## Discussion
 
 You can nest calls to this method.
 

@@ -19,7 +19,7 @@
 static void SPRotation3DFloatSetAxis(SPRotation3DFloat *rotation, SPRotationAxis3DFloat axis);
 ```
 
-#### Discussion
+## Discussion
 
 Sets the axis on the specified rotation structure.
 

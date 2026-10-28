@@ -23,7 +23,7 @@ enum DisplayMode
 enum UISplitViewControllerDisplayMode : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 A split view controller’s display mode controls the visual arrangement of its child view controllers. You set a preferred display mode by using the [`preferredDisplayMode`](./preferreddisplaymode.md) property, and the split view controller updates itself and reflects the actual display mode in the [`displayMode`](./displaymode-swift.property.md) property.
 

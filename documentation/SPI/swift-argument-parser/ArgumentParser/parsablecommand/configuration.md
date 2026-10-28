@@ -26,7 +26,6 @@ static var configuration: CommandConfiguration { get }
 
 ### ParsableCommand Implementations
 - [static var configuration: CommandConfiguration](./configuration-6i64v.md)
-  Configuration for this command, including subcommands and custom help text.
 
 ## See Also
 

@@ -24,7 +24,7 @@ var unmapped: GCControllerLiveInput? { get }
 @property (readonly, nullable) GCControllerLiveInput * unmappedInput;
 ```
 
-#### Discussion
+## Discussion
 
 Players should use the system game controller settings to remap controls. If you implement your own controller remapping feature, use this property to access the controller’s physical input without remapping applied.
 

@@ -25,7 +25,7 @@ var changeTokenUpdatedBlock: ((CKServerChangeToken) -> Void)? { get set }
 @property (nonatomic, copy, nullable) void (^changeTokenUpdatedBlock)(CKServerChangeToken *serverChangeToken);
 ```
 
-#### Discussion
+## Discussion
 
 The closure executes periodically, and provides a new change token so that you don’t need to refetch previously fetched record zone changes in a subsequent operation.
 

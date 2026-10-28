@@ -11,11 +11,11 @@ Updates targeting keywords in ad groups.
 
 > **Deprecated**: Apple Ads Campaign Management API is deprecated. Instead, use the [Apple Ads Platform API](../apple-ads-platform-api/apple-ads-platform-api.md).
 
-#### Discussion
+## Discussion
 
 To update targeting keywords, use the associated `campaignId` and `adgroupId` in the URI. The `id` in the payload must belong to a keyword that exists inside the ad group in the URI. The `status` and `bidAmount` fields are modifiable in the payload. Use partial updates to edit a subset of object properties without having to include all object properties in the payload. For more information, see the Use Partial Updates section of [Using Apple Ads API Functionality](./using-apple-search-ads-api-functionality.md).
 
-##### Payload example: Update ad group targeting keywords
+### Payload example: Update ad group targeting keywords
 
 When updating keywords in a campaign with a Maximize Conversions bidding strategy, `bidAmount` cannot be changed to a non-zero/non-null value.
 

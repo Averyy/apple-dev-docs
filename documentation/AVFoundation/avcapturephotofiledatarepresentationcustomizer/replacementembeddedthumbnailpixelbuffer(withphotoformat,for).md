@@ -22,11 +22,11 @@ optional func replacementEmbeddedThumbnailPixelBuffer(withPhotoFormat replacemen
 - (CVPixelBufferRef) replacementEmbeddedThumbnailPixelBufferWithPhotoFormat:(NSDictionary<NSString *,id> **) replacementEmbeddedThumbnailPhotoFormatOut forPhoto:(AVCapturePhoto *) photo;
 ```
 
-#### Return Value
+## Return Value
 
 A pixel buffer containing a source image to be encoded to the file as the replacement thumbnail image. To preserve the existing embedded thumbnail photo to the flattened data, set `replacementEmbeddedThumbnailPhotoFormatOut` to `photo.embeddedThumbnailPhotoFormat` and return `nil`. To replace the existing embedded thumbnail, pass a replacement photo format dictionary and return a non-`nil` replacement pixel buffer.  To remove the existing embedded thumbnail, set `replacementEmbeddedThumbnailPhotoFormatOut` to `nil` and return `nil`.
 
-#### Discussion
+## Discussion
 
 This callback is optional. If your delegate doesn’t implement this callback, the existing metadata in the in-memory [`AVCapturePhoto`](../avcapturephoto.md) container is written directly to the file data representation.
 

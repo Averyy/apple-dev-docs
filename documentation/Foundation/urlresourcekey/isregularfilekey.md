@@ -25,7 +25,7 @@ static let isRegularFileKey: URLResourceKey
 extern NSURLResourceKey const NSURLIsRegularFileKey;
 ```
 
-#### Discussion
+## Discussion
 
 The system returns the read-only value as a Boolean [`NSNumber`](../nsnumber.md) object.
 

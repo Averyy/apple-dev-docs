@@ -24,7 +24,7 @@ var handler: (any UIPreviewActionItem, UIViewController) -> Void { get }
 @property (nonatomic, copy, readonly) void (^)(id<UIPreviewActionItem>, UIViewController *) handler;
 ```
 
-#### Discussion
+## Discussion
 
 The handler is set when the peek quick action is instantiated; it is immutable.
 

@@ -25,7 +25,7 @@ init?(coder: NSCoder)
 - (instancetype) initWithCoder:(NSCoder *) coder;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized locale.
 

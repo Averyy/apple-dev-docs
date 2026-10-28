@@ -19,7 +19,7 @@ The text the subtitle label of the button displays.
 @property (nonatomic, copy, readwrite, nullable) NSString * subtitle;
 ```
 
-#### Discussion
+## Discussion
 
 This property matches the string value of the [`attributedSubtitle`](./attributedsubtitle.md) property. To change the button subtitle when the button state changes, use [`configurationUpdateHandler`](../uibutton/configurationupdatehandler-swift.property.md) or [`updateConfiguration()`](../uibutton/updateconfiguration%28%29.md).
 

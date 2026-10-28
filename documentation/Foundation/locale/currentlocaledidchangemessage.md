@@ -21,7 +21,7 @@ A message the system sends when the current locale changes.
 struct CurrentLocaleDidChangeMessage
 ```
 
-#### Overview
+## Overview
 
 Register an observer for this message if your app displays content that’s affected by the current locale, such as dates, times, numbers, and so on. Use the message to trigger updates to your app’s interface.
 

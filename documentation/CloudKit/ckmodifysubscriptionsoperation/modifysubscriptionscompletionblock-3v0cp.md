@@ -21,7 +21,7 @@ The block to execute after the operation modifies the subscriptions.
 @property (nonatomic, copy, nullable) void (^modifySubscriptionsCompletionBlock)(NSArray<CKSubscription *> *savedSubscriptions, NSArray<NSString *> *deletedSubscriptionIDs, NSError *operationError);
 ```
 
-#### Discussion
+## Discussion
 
 The block returns no value and takes the following parameters:
 

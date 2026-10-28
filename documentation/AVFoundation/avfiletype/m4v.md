@@ -25,7 +25,7 @@ static let m4v: AVFileType
 extern AVFileType const AVFileTypeAppleM4V;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this UTI is `com.apple.m4v-video`. Files of this type have an `m4v` extension.
 

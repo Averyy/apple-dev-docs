@@ -15,7 +15,7 @@ Removes a previously-added custom property object from the audio object.
 virtual kern_return_t RemoveCustomProperty(IOUserAudioCustomProperty *in_custom_property);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../../DriverKit/error-codes.md).
 

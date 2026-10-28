@@ -25,7 +25,7 @@ var concentration: Float { get set }
 @property (nonatomic) float concentration;
 ```
 
-#### Discussion
+## Discussion
 
 The smaller the value, the more tightly focused the light beam.
 

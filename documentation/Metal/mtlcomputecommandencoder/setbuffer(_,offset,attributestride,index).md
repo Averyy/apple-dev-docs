@@ -25,7 +25,7 @@ func setBuffer(_ buffer: any MTLBuffer, offset: Int, attributeStride stride: Int
 - (void) setBuffer:(id<MTLBuffer>) buffer offset:(NSUInteger) offset attributeStride:(NSUInteger) stride atIndex:(NSUInteger) index;
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  Only call this method when the buffer is part of [`stageInputDescriptor`](../mtlcomputepipelinedescriptor/stageinputdescriptor.md) and has its stride set to [`MTLBufferLayoutStrideDynamic`](../mtlbufferlayoutstridedynamic.md).
 

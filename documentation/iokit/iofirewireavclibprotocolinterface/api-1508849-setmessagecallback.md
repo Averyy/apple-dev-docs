@@ -16,7 +16,7 @@ Sets callback for user space message routine.
 void (*setMessageCallback)(void *self, void *refCon, IOFWAVCMessageCallback callback);
 ```
 
-#### Discussion
+## Discussion
 
 In FireWire and AVC, bus status messages are delivered via IOKit's message routine. This routine is emulated in user space for AVC and FireWire messages via this callback. You should register here for bus reset and reconnect messages.
 

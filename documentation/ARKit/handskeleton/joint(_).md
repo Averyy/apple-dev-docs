@@ -15,7 +15,7 @@ Retrieves a hand joint based on the joint name you specify.
 func joint(_ named: HandSkeleton.JointName) -> HandSkeleton.Joint
 ```
 
-#### Return Value
+## Return Value
 
 A hand joint referred to by the `named` parameter.
 

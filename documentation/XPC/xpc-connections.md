@@ -5,7 +5,7 @@
 
 Create and manage connections to services using connection-based APIs.
 
-#### Overview
+## Overview
 
 Use these APIs to work with XPC connections and related types — for example, when a framework function that you call returns an [`xpc_connection_t`](./xpc_connection_t.md).
 

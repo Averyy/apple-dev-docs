@@ -28,7 +28,7 @@ Asynchronously creates a cube texture resource from an equirectangular image.
 @preconcurrency convenience init(cubeFromEquirectangular cgImage: CGImage, named resourceName: String? = nil, quality: TextureResource.SamplingQuality = .fast, faceSize: Int? = nil, options: TextureResource.CreateOptions) throws
 ```
 
-#### Discussion
+## Discussion
 
 RealityKit samples the source equirectangular image at the specified quality level to generate the cube texture.
 

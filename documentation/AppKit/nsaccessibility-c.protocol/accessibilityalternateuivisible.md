@@ -15,7 +15,7 @@ A Boolean value that determines whether the accessibility element’s alternativ
 @property (getter=isAccessibilityAlternateUIVisible) BOOL accessibilityAlternateUIVisible;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property for elements that present an alternative UI—for example, when the pointer hovers over an interface element for a few seconds.
 

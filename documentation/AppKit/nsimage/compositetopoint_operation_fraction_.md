@@ -17,7 +17,7 @@ Composites the entire image at the specified opacity in the current coordinate s
 - (void) compositeToPoint:(NSPoint) point operation:(NSCompositingOperation) operation fraction:(CGFloat) fraction;
 ```
 
-#### Discussion
+## Discussion
 
 Behaves the same as [`compositeToPoint:operation:`](./compositetopoint_operation_.md) except that you can specify the amount of opacity to use when drawing the image.
 

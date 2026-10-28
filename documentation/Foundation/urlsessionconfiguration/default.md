@@ -25,7 +25,7 @@ class var `default`: URLSessionConfiguration { get }
 @property (class, strong, readonly) NSURLSessionConfiguration * defaultSessionConfiguration;
 ```
 
-#### Discussion
+## Discussion
 
 The default session configuration uses a persistent disk-based cache (except when the result is downloaded to a file) and stores credentials in the user’s keychain. It also stores cookies (by default) in the same shared cookie store as the [`NSURLConnection`](../nsurlconnection.md) and [`NSURLDownload`](../nsurldownload.md) classes.
 

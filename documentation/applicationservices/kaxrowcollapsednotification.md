@@ -19,7 +19,7 @@ var kAXRowCollapsedNotification: String { get }
 #define kAXRowCollapsedNotification
 ```
 
-#### Discussion
+## Discussion
 
 The value is the collapsed row UIElement.
 

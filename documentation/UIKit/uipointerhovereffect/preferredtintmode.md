@@ -18,7 +18,7 @@ The preferred tint mode for the effect.
 @property (nonatomic) UIPointerEffectTintMode preferredTintMode;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`UIPointerEffectTintModeOverlay`](../uipointereffecttintmode/uipointereffecttintmodeoverlay.md).
 

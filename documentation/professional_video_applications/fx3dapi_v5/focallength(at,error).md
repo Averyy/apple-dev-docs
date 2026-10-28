@@ -20,7 +20,7 @@ func focalLength(at time: CMTime, error: NSErrorPointer) -> Double
 - (double) focalLengthAtTime:(CMTime) time error:(NSError * *) error;
 ```
 
-#### Return Value
+## Return Value
 
 The value of the focal length.
 

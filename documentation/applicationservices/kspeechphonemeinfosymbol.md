@@ -19,7 +19,7 @@ let kSpeechPhonemeInfoSymbol: CFString
 const CFStringRef kSpeechPhonemeInfoSymbol;
 ```
 
-#### Discussion
+## Discussion
 
 The symbol does not necessarily have a phonetic connection to the phoneme, but might simply be an abstract textual representation of it.
 

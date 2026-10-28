@@ -15,13 +15,13 @@ Metrics for apps promoted object type.
 object AppsMetrics
 ```
 
-#### Discussion
+## Discussion
 
 The `AppsMetrics` object is the base metrics for apps campaign reports. It contains all standard performance metrics available for app promotion campaigns, including spend, impressions, taps, installs (split by tap-through and view-through attribution), pre-orders, and derived rates.
 
 All monetary fields reference [`Money`](./money.md) objects in the account’s reporting currency.
 
-##### Example
+### Example
 
 ```json
 {

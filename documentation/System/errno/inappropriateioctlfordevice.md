@@ -25,7 +25,7 @@ static var inappropriateIOCTLForDevice: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 You attempted a control function that can’t be performed on the specified file or device. For information about control functions, see `ioctl(2)`.
 

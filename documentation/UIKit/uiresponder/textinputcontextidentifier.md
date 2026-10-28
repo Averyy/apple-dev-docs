@@ -23,7 +23,7 @@ var textInputContextIdentifier: String? { get }
 @property (nonatomic, strong, readonly, nullable) NSString * textInputContextIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 If you redefine this property and return a string value, UIKit tracks the current text input mode for the responder. While in tracking mode, any programmatic changes you make to the text input mode are remembered and restored whenever the responder becomes active.
 

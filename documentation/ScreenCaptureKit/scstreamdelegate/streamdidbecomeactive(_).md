@@ -22,7 +22,7 @@ optional func streamDidBecomeActive(_ stream: SCStream)
 - (void) streamDidBecomeActive:(SCStream *) stream;
 ```
 
-#### Discussion
+## Discussion
 
 streamDidBecomeActive:
 

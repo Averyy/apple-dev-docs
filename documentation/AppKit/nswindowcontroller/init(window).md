@@ -19,11 +19,11 @@ init(window: NSWindow?)
 - (instancetype) initWithWindow:(NSWindow *) window;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized window controller.
 
-#### Discussion
+## Discussion
 
 This method is the designated initializer for `NSWindowController`.
 

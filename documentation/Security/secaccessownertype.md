@@ -20,7 +20,7 @@ typealias SecAccessOwnerType = UInt32
 typedef UInt32 SecAccessOwnerType;
 ```
 
-#### Discussion
+## Discussion
 
 See [SecAccessOwnerType Values](./secaccessownertype-values.md) for the list of possible values.
 

@@ -10,7 +10,7 @@ An atom that governs how the timecode text is displayed.
 
 - [QuickTime File Format change log](./revision_history.md)
 
-#### Overview
+## Overview
 
 The timecode media also requires a media information atom. This atom contains information governing how the timecode text is displayed. This media information atom is stored in a base media information atom (see [`Base media information atom`](./base_media_information_atom.md) for more information). The type of the timecode media information atom is `'tcmi'`.
 

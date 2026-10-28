@@ -25,7 +25,7 @@ var appearance: XCUIDevice.Appearance { get set }
 @property (nonatomic) XCUIDeviceAppearance appearance;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to get or set the interface appearance the system uses for applications running on the device. The example below captures the initial appearance value and sets the device to Dark Mode:
 

@@ -23,7 +23,7 @@ var kDNSServiceFlagsRegistrationDomains: UInt32 { get }
 kDNSServiceFlagsRegistrationDomains
 ```
 
-#### Discussion
+## Discussion
 
 Enumerates domains recommended for registration. Used for specifying domain enumeration type in DNSServiceEnumerateDomains.
 

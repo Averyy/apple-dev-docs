@@ -21,7 +21,7 @@ class AVLegibleMediaOptionsMenuController
 @interface AVLegibleMediaOptionsMenuController : NSObject
 ```
 
-#### Overview
+## Overview
 
 A menu controller for legible media options (subtitles/captions)
 

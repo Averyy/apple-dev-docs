@@ -25,7 +25,7 @@ var allowedProtocols: TKSmartCardProtocol { get set }
 @property TKSmartCardProtocol allowedProtocols;
 ```
 
-#### Discussion
+## Discussion
 
 This property is consulted only when beginning a session to a Smart Card. Any changes to this property will not be reflected by the current session, if one is already established.
 

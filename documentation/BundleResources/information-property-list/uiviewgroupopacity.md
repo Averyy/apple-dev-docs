@@ -17,7 +17,7 @@ A Boolean value that indicates whether Core Animation sublayers inherit the opac
 - **Name**: `UIViewGroupOpacity` (Renders with group opacity)
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 If `YES`, sublayers inherit from the superlayer; otherwise, they don’t.
 

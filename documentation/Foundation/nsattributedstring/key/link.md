@@ -21,7 +21,7 @@ The link for the text.
 static let link: NSAttributedString.Key
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSURL`](../../nsurl.md) object (preferred) or an [`NSString`](../../nsstring.md) object. The default value of this property is `nil`, indicating no link.
 

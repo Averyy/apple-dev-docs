@@ -17,7 +17,7 @@ Builds the vocabulary from `corpus` plus everything the template declares.
 init(corpus: [String], template: any ScriptedChatTemplate = MinimalChatTemplate(), specials: [String] = [], textMarkers: [String] = [], configuration: VocabularyBuilder.Configuration = .init(), eos: EndOfSequence = .template, bosToken: String? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 The corpus should hold every string a test will encode, so it tokenizes into corpus pieces rather than byte fallback. Unlisted text still round-trips. `specials` and `textMarkers` are for markers the scenario adds itself, such as `<think>`; the template’s own markers need not be listed.
 

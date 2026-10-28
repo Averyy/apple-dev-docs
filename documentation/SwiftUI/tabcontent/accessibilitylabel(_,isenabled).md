@@ -39,7 +39,7 @@ nonisolated
 func accessibilityLabel<S>(_ label: S, isEnabled: Bool = true) -> some TabContent<Self.TabValue> where S : StringProtocol
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to provide an accessibility label for a tab that contains content like an icon. Don’t include text in the label that repeats information that users already have. For example, don’t use the label “Library tab” because a tab already has a trait that identifies it as a tab.
 

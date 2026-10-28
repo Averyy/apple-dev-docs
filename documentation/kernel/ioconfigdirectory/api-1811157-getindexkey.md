@@ -11,11 +11,11 @@ virtual IOReturn getIndexKey(
  int &key);
 ```
 
-#### Return Value
+## Return Value
 
 kIOReturnSuccess if the index exists in the dictionary
 
-#### Overview
+## Overview
 
 Gets the key for entry at the specified index
 

@@ -19,11 +19,11 @@ class func isSelectorExcluded(fromWebScript selector: Selector!) -> Bool
 + (BOOL) isSelectorExcludedFromWebScript:(SEL) selector;
 ```
 
-#### Return Value
+## Return Value
 
 [`YES`](../yes.md) if the selector specified by `aSelector` should be hidden from the scripting environment; otherwise, [`NO`](../no.md).
 
-#### Discussion
+## Discussion
 
 Only methods with valid parameters and return types are exported to the WebKit JavaScript environment. The valid types are Objective-C objects and scalars. The default value is [`YES`](../yes.md).
 

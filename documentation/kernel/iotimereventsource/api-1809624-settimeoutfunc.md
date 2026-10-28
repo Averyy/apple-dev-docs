@@ -11,7 +11,7 @@ Set's timeout as the function of calloutEntry.
 virtual void setTimeoutFunc();
 ```
 
-#### Overview
+## Overview
 
 IOTimerEventSource is based upon the kern/thread_call.h APIs currently. This function allocates the calloutEntry member variable by using thread_call_allocate(timeout, this). If you need to write your own subclass of IOTimerEventSource you probably should override this method to allocate an entry that points to your own timeout routine.
 

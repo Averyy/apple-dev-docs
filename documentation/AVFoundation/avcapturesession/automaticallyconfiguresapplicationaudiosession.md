@@ -22,7 +22,7 @@ var automaticallyConfiguresApplicationAudioSession: Bool { get set }
 @property (nonatomic) BOOL automaticallyConfiguresApplicationAudioSession;
 ```
 
-#### Discussion
+## Discussion
 
 This property only takes effect if the value of the [`usesApplicationAudioSession`](./usesapplicationaudiosession.md) property is [`true`](../../Swift/true.md).
 

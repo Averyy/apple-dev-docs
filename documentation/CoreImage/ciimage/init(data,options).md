@@ -24,7 +24,7 @@ init?(data: Data, options: [CIImageOption : Any]? = nil)
 - (instancetype) initWithData:(NSData *) data options:(NSDictionary<NSString *,id> *) options;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized image object, or `nil` if the object could not be initialized.
 

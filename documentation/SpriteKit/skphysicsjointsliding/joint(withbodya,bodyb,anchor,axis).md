@@ -25,11 +25,11 @@ class func joint(withBodyA bodyA: SKPhysicsBody, bodyB: SKPhysicsBody, anchor: C
 + (SKPhysicsJointSliding *) jointWithBodyA:(SKPhysicsBody *) bodyA bodyB:(SKPhysicsBody *) bodyB anchor:(CGPoint) anchor axis:(CGVector) axis;
 ```
 
-#### Return Value
+## Return Value
 
 A new sliding joint.
 
-#### Discussion
+## Discussion
 
 You must add the joint to a physics world associated with the scene before it takes effect.
 

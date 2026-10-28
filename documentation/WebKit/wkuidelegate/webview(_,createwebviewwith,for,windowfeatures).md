@@ -23,11 +23,11 @@ optional func webView(_ webView: WKWebView, createWebViewWith configuration: WKW
 - (WKWebView *) webView:(WKWebView *) webView createWebViewWithConfiguration:(WKWebViewConfiguration *) configuration forNavigationAction:(WKNavigationAction *) navigationAction windowFeatures:(WKWindowFeatures *) windowFeatures;
 ```
 
-#### Return Value
+## Return Value
 
 A new web view or `nil`.
 
-#### Discussion
+## Discussion
 
 The web view returned must be created with the specified configuration. WebKit loads the request in the returned web view.
 

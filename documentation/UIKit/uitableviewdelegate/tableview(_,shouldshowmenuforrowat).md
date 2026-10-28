@@ -22,11 +22,11 @@ optional func tableView(_ tableView: UITableView, shouldShowMenuForRowAt indexPa
 - (BOOL) tableView:(UITableView *) tableView shouldShowMenuForRowAtIndexPath:(NSIndexPath *) indexPath;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the editing menu should be shown positioned near the row and pointing to it, otherwise [`false`](../../Swift/false.md). The default value is [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 If the user tap-holds a certain row in the table view, this method (if implemented) is invoked first. Return [`false`](../../Swift/false.md) if the editing menu shouldn’t be shown—for example, the cell corresponding to the row contains content that shouldn’t be copied or pasted over.
 

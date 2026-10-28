@@ -22,11 +22,11 @@ optional func textDroppableView(_ textDroppableView: any UIView & UITextDroppabl
 - (UITextDropEditability) textDroppableView:(UIView<UITextDroppable> *) textDroppableView willBecomeEditableForDrop:(id<UITextDropRequest>) drop;
 ```
 
-#### Return Value
+## Return Value
 
 A text drop editability style that indicates whether the text view can accept a drop operation.
 
-#### Discussion
+## Discussion
 
 By default, a text view that is not editable can’t accept drop requests. However, you can change this behavior by returning the editability style [`UITextDropEditability.temporary`](../uitextdropeditability/temporary.md) or [`UITextDropEditability.yes`](../uitextdropeditability/yes.md) in your implementation of this method. Not implementing this method is the same as returning the [`UITextDropEditability.no`](../uitextdropeditability/no.md) style.
 

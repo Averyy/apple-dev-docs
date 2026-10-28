@@ -20,11 +20,11 @@ func ColorSyncCMMCopyCMMIdentifier(_: ColorSyncCMM!) -> Unmanaged<CFString>?
 extern CFStringRefColorSyncCMMCopyCMMIdentifier(ColorSyncCMMRef );
 ```
 
-#### Return Value
+## Return Value
 
 The identifier of the CMM.
 
-#### Discussion
+## Discussion
 
 Use this function to get the identifier of the built-in CMM.
 

@@ -24,7 +24,7 @@ func append(_ captionGroup: AVCaptionGroup) -> Bool
 - (BOOL) appendCaptionGroup:(AVCaptionGroup *) captionGroup;
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether the operation succeeded.
 

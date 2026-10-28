@@ -25,7 +25,7 @@ static var fixed: OSLogFloatFormatting { get }
 
 - [Generating Log Messages from Your Code](../generating-log-messages-from-your-code.md)
 
-#### Discussion
+## Discussion
 
 This option is equivalent to the `%f` option of `fprintf`, which prints all digits before the radix point and a system-specific number of digits after the radix point.
 

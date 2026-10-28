@@ -21,7 +21,7 @@ Set the attributes of the work item to match the attributes of the current execu
 static let assignCurrentContext: DispatchWorkItemFlags
 ```
 
-#### Discussion
+## Discussion
 
 When this flag is set, the work item inherits attributes such as the quality-of-service class from the dispatch queue or thread responsible for executing the task.
 

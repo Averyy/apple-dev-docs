@@ -19,7 +19,7 @@ func setCriteria(_ criteria: [Any], andDisplayValues values: [Any], forRowAt row
 - (void) setCriteria:(NSArray *) criteria andDisplayValues:(NSArray *) values forRowAtIndex:(NSInteger) rowIndex;
 ```
 
-#### Discussion
+## Discussion
 
 It is your responsibility to ensure that each item in the array is a child of the previous item, and that the first item is a root item for the row type. If the last item has child items, then the items array will be extended by querying the delegate for child items until a childless item is reached. If `values` contains fewer objects than the (possibly extended) criteria array, then the delegate is queried to construct the remaining display values. If you want the delegate to be queried for all the criteria or all the display values, pass empty arrays; do not pass `nil`.
 

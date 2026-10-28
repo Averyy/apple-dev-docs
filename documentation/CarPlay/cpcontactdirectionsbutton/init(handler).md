@@ -21,11 +21,11 @@ init(handler: ((CPButton) -> Void)? = nil)
 - (instancetype) initWithHandler:(void (^)(CPButton *contactButton)) handler;
 ```
 
-#### Return Value
+## Return Value
 
 A new contact directions button that invokes its handler when the user taps it.
 
-#### Discussion
+## Discussion
 
 The button displays a system image that communicates its function.
 

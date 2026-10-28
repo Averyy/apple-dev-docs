@@ -16,7 +16,7 @@ Specifies the view that should act as the virtual camera for Apple Vision Pro 2D
 func cameraAnchor(isActive: Bool = true) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 This modifier can be used by visionOS apps to specify the placement of the virtual camera used to create a 2D stream of the user’s Persona. For example, a video conferencing app might add this modifier to the view that shows the other participants during a call. Then when the participant on visionOS looks at that view their Persona will make eye contact with the other participants on the call. The anchor will be at the center of the modified View.
 

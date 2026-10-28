@@ -15,7 +15,7 @@ The data structure that represents a Game Center leaderboard update request reso
 object GameCenterLeaderboardV2UpdateRequest.Data
 ```
 
-#### Overview
+## Overview
 
 - attributes:
 - id:

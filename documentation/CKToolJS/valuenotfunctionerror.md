@@ -15,7 +15,7 @@ An error a validator emits when a value isn’t a function.
 interface ValueNotFunctionError
 ```
 
-#### Overview
+## Overview
 
 Extends `ValueNotConvertibleToTypeError`.
 

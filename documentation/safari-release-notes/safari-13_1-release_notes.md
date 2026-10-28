@@ -5,13 +5,13 @@
 
 Released March 24, 2020 — Version 13.1 (15609.1.20)
 
-#### Overview
+## Overview
 
 Safari 13.1 ships with iOS 13.4 and macOS 10.15.4. It’s also available for macOS 10.14.6 and 10.13.6.
 
-##### General
+### General
 
-###### New Features
+#### New Features
 
 - Made significant improvements to the Web Platform Tests pass rate in several components, including CSS, Service Workers, SVG, and Fetch.
 - Added Close Tabs to the Right.
@@ -19,9 +19,9 @@ Safari 13.1 ships with iOS 13.4 and macOS 10.15.4. It’s also available for mac
 - Added support for bundled content blockers in Mac apps built with Mac Catalyst.
 - Added support for importing passwords from Google Chrome.
 
-##### Performance
+### Performance
 
-###### New Features
+#### New Features
 
 - Improved the performance speed of IndexedDB operations.
 - Improved back-forward responsiveness.
@@ -30,30 +30,30 @@ Safari 13.1 ships with iOS 13.4 and macOS 10.15.4. It’s also available for mac
 - Made media query updates more efficient.
 - Reduced the startup time of Service Workers.
 
-##### Privacy
+### Privacy
 
-###### New Features
+#### New Features
 
 - Prevented several potential approaches to circumventing Intelligent Tracking Prevention.
 - Added cookie blocking for all cross-site resources by default.
 
-##### Security
+### Security
 
-###### New Features
+#### New Features
 
 - Added the “Not Secure” warning for sites using TLS 1.1 and 1.0.
 - Fixed many bugs identified by fuzz testing.
 
-##### JavaScript
+### JavaScript
 
-###### New Features
+#### New Features
 
 - Added support for the nullish coalescing operator ??.
 - Added support for the `String.prototype.replaceAll` method.
 
-##### Web API
+### Web API
 
-###### New Features
+#### New Features
 
 - Added support for Web Animations.
 - Added support for the Async Clipboard API.
@@ -63,35 +63,35 @@ Safari 13.1 ships with iOS 13.4 and macOS 10.15.4. It’s also available for mac
 - Added support for the Remote Playback API.
 - Added support for the Picture-in-Picture API.
 
-##### WebRTC
+### WebRTC
 
-###### New Features
+#### New Features
 
 - Added support for DTMF codec and proxies.
 
-##### HTML
+### HTML
 
-###### New Features
+#### New Features
 
 - Added support for the `enterkeyhint` attribute.
 
-##### Web Components
+### Web Components
 
-###### New Features
+#### New Features
 
 - Added support for CSS Shadow Parts.
 
-##### CSS
+### CSS
 
-###### New Features
+#### New Features
 
 - Added support for font keywords: `ui-serif`, `ui-sans-serif`, `ui-monospace`, `ui-rounded`.
 - Added support for the `line-break: anywhere;` property value.
 - Added support for the `dynamic-range` media query.
 
-##### Web Inspector
+### Web Inspector
 
-###### New Features
+#### New Features
 
 - Added a new Sources tab that combines Resources and Debugger.
 - Added a new Layers tab.

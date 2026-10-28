@@ -13,7 +13,7 @@ Implement complications in a watch app to display essential information on a wat
 - watchOS 6.1+
 - Xcode 14.2+
 
-#### Overview
+## Overview
 
 This sample code project shows how to present time-based information on the Infograph or Infograph Modular watch face using Graphic Corner, Graphic Circular, Graphic Bezel, and Graphic Rectangular complication families.
 
@@ -21,7 +21,7 @@ Complications are small elements that display essential information (like weathe
 
 A complication family can have multiple variants, and so this sample app provides a list for users to select and play with different variants. You can run the app on a watch that supports graphic complications, tap a family and pick a variant, then tap the Apply button to save the configuration and refresh the complications.
 
-##### Configure the sample code project
+### Configure the sample code project
 
 To configure the sample code project, do the following in Xcode:
 
@@ -40,7 +40,7 @@ To show a complication on the watch:
 
 See [Customize the watch face](https://support.apple.com/guide/watch/customize-the-watch-face-apda6559ad78/watchos) in the Apple Watch User Guide to learn how to configure the watch face.
 
-##### Provide timeline entries for the complications
+### Provide timeline entries for the complications
 
 To keep the complications up to date, this sample implements the following [`CLKComplicationDataSource`](./clkcomplicationdatasource.md) methods to provide the supported timeline travel direction, the timeline end date, and the future timeline entries for all complications:
 
@@ -76,7 +76,7 @@ func getTimelineEntries(for complication: CLKComplication, after date: Date, lim
 
 After getting the timeline entries from the app, the system caches them and progresses through them automatically. After progressing through a reasonable amount data, the system wakes up the watch app and calls `getTimelineEntries(for:after:limit:withHandler:)` again for more entries.
 
-##### Create complication templates
+### Create complication templates
 
 Each timeline entry an app provides to the system has to contain a complication template, which is an instance of a [`CLKComplicationTemplate`](./clkcomplicationtemplate.md) subclass describing the content and visual form of the complication. This sample provides a template for each variant of the graphic complication families. A real-world app may just support the variant that best fits the content it presents.
 

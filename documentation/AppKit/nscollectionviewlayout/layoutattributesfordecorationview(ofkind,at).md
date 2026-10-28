@@ -19,11 +19,11 @@ func layoutAttributesForDecorationView(ofKind elementKind: NSCollectionView.Deco
 - (NSCollectionViewLayoutAttributes *) layoutAttributesForDecorationViewOfKind:(NSCollectionViewDecorationElementKind) elementKind atIndexPath:(NSIndexPath *) indexPath;
 ```
 
-#### Return Value
+## Return Value
 
 A layout attributes object containing the layout information to apply to the decoration view.
 
-#### Discussion
+## Discussion
 
 If your layout includes decoration views, you must override this method. In your implementation, create an instance of the appropriate layout attributes class and fill the resulting object with the layout information for the corresponding decoration view. You define the supported decoration views by assigning each one a string that identifies its kind. Use the `elementKind` and `indexPath` properties to identify the specific decoration view whose attributes were requested.
 

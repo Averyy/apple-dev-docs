@@ -25,7 +25,7 @@ func startAdvertising(_ advertisementData: [String : Any]?)
 - (void) startAdvertising:(NSDictionary<NSString *,id> *) advertisementData;
 ```
 
-#### Discussion
+## Discussion
 
 When you start advertising peripheral data, the peripheral manager calls the [`peripheralManagerDidStartAdvertising(_:error:)`](../cbperipheralmanagerdelegate/peripheralmanagerdidstartadvertising%28_,error%29.md) method of its delegate object.
 

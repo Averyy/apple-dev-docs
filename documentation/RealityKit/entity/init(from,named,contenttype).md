@@ -21,11 +21,11 @@ Creates an entity by asynchronously loading it from the in-memory contents of a 
 @preconcurrency convenience init(from data: Data, named name: String? = nil, contentType: UTType) async throws
 ```
 
-#### Return Value
+## Return Value
 
 The root entity of the loaded file.
 
-#### Discussion
+## Discussion
 
 RealityKit supports loading entities from USD (`.usd`, `.usda`, `.usdc`, `.usdz`) and Reality (`.reality`) files. Pass the data’s format as the `contentType` so RealityKit selects a parser directly instead of guessing the file type from the data. Prefer this initializer over [`init(from:named:)`](./init%28from,named%29.md) when the format is already known — for example from a server’s `Content-Type` or a MIME type.
 

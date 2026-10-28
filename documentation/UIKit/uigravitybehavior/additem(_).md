@@ -23,7 +23,7 @@ func addItem(_ item: any UIDynamicItem)
 - (void) addItem:(id<UIDynamicItem>) item;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to add new dynamic items to the gravity behavior after initialization. All the dynamic items added to a gravity behavior are subject to the same gravity vector.
 

@@ -12,11 +12,11 @@ Creates a library product to allow clients that declare a dependency on this pac
 static func library(name: String, type: Product.Library.LibraryType? = nil, targets: [String]) -> Product
 ```
 
-#### Return Value
+## Return Value
 
 A `Product` instance.
 
-#### Discussion
+## Discussion
 
 A library’s product can be either statically or dynamically linked. It’s recommended that you don’t explicitly declare the type of library, so Swift Package Manager can choose between static or dynamic linking based on the preference of the package’s consumer.
 

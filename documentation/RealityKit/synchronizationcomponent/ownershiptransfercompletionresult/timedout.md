@@ -20,7 +20,7 @@ The ownership transfer request timed out.
 case timedOut
 ```
 
-#### Discussion
+## Discussion
 
 A timeout doesn’t necessarily mean that the request is denied. It might succeed after the timeout.
 

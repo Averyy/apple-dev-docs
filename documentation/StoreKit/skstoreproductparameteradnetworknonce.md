@@ -29,7 +29,7 @@ extern NSString * const SKStoreProductParameterAdNetworkNonce;
 - [Combining parameters to generate a signature for SKAdNetwork 2](./combining-parameters-to-generate-a-signature-for-skadnetwork-2.md)
 - [Combining parameters to generate signatures for SKAdNetwork 2.2 and 3](./combining-parameters-to-generate-signatures-for-skadnetwork-2-2-and-3.md)
 
-#### Discussion
+## Discussion
 
 The value for this key is an [`NSUUID`](../Foundation/nsuuid.md). Ad networks generate a random value for this key at the time of the ad impression.
 

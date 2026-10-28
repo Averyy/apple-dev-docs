@@ -24,11 +24,11 @@ class func modTransition() -> any CIFilter & CIModTransition
 + (CIFilter<CIModTransition> *) modTransitionFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The transition image.
 
-#### Discussion
+## Discussion
 
 This method applies the mod transition filter to an image. The effect transitions from the input image to the output image by revealing the target image through irregularly shaped holes.
 

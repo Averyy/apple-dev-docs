@@ -24,7 +24,7 @@ var barButtonItem: UIBarButtonItem? { get set }
 @property (nonatomic, strong, nullable) UIBarButtonItem * barButtonItem;
 ```
 
-#### Discussion
+## Discussion
 
 Assign a value to this property to anchor the popover to the specified bar button item. When presented, the popover’s arrow points to the specified item. Alternatively, you may specify the anchor location for the popover using the [`sourceView`](./sourceview.md) and [`sourceRect`](./sourcerect.md) properties.
 

@@ -20,7 +20,7 @@ var color: NSColor { get set }
 @property (copy) NSColor * color;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to get the currently selected color, or to set the current color programmatically.
 

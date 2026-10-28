@@ -25,11 +25,11 @@ func SparseConvertFromOpaque(_ matrix: sparse_matrix_float) -> SparseMatrix_Floa
 static SparseMatrix_Float SparseConvertFromOpaque(sparse_matrix_float matrix);
 ```
 
-#### Return Value
+## Return Value
 
 A new [`SparseMatrix_Float`](./sparsematrix_float.md).
 
-#### Discussion
+## Discussion
 
 The following code shows an example of creating a [`SparseMatrix_Double`](./sparsematrix_double.md) structure from a BLAS opaque matrix and multiplying it by a vector:
 

@@ -16,7 +16,7 @@ A string, suitable for display, that is the name of the payment network backing 
 DOMString network;
 ```
 
-#### Discussion
+## Discussion
 
 The value is one of the supported networks specified in the [`supportedNetworks`](../applepaypaymentrequest/supportednetworks.md) property of the [`ApplePayPaymentRequest`](../applepaypaymentrequest.md).
 

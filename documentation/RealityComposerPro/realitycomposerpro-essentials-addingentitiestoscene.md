@@ -5,23 +5,23 @@
 
 Import assets to design Reality Composer Pro scenes for your app.
 
-#### Overview
+## Overview
 
 In Reality Composer Pro, you build scenes from entities and the assets you import. For background on entities, scenes, and the workspace, see [Navigating the Reality Composer Pro workspace](./realitycomposerpro-essentials-workspaceoverview.md).
 
 ![A screenshot of a new, empty Reality Composer Pro project.](https://developer.apple.com/tutorials/images/RealityComposerPro/EmptyProject@2x.png)
 
-##### Add entity assets to your project
+### Add entity assets to your project
 
 To create an entity, in the Project Browser, click **+** and then select **Entity** from the menu. Repeat as needed. Alternatively, create non-asset entities directly in the Scene Hierarchy by Control-clicking an entity and then selecting **Add Child Entity**. If you close a scene’s tab and need to reopen it, double-click the entity file in the Project Browser. To remove a scene, delete the scene’s file in the Project Browser.
 
 ![A screenshot of the Reality Composer Pro Project Browser with the + (Add) menu open, showing the Entity option.](https://developer.apple.com/tutorials/images/RealityComposerPro/ProjectBrowserMenuBar@2x.png)
 
-#### Import assets to your project
+## Import assets to your project
 
 In Reality Composer Pro, you design scenes by adding or importing **assets** into your project. You can import content in multiple ways, including USD and other files, into Reality Composer Pro.
 
-##### Import content from the main menu
+### Import content from the main menu
 
 From the Reality Composer Pro main menu, click **File** and then click **Import File**. This imports one or more files into your project, such as a PNG file to use for a texture, an audio file, or a USD file. Tip: You can also drag and drop asset files into Project Browser to import them.
 
@@ -31,7 +31,7 @@ From the Reality Composer Pro main menu, click **File** and then click **Import 
 
 When you import assets, you can find them in the Project Browser. Imported assets also include their dependencies.
 
-##### Import content from the Project Browser
+### Import content from the Project Browser
 
 From the Project Browser, Control-click the top-level project folder and then click **Import File**. Browse to the files you want to import, select them, and then click **Open**.
 
@@ -41,17 +41,17 @@ Alternatively, in the Project Browser, click the **Import** icon to import asset
 
 Reality Composer Pro can represent many assets as entities within a scene. However, not all assets can become entities. For example, image files don’t become entities when you add them to a scene. Reality Composer Pro only uses image assets indirectly — for example, as a source texture for materials built in Shader Graph. If you drag an image asset into the scene, nothing happens.
 
-#### Review import behavior for assets
+## Review import behavior for assets
 
 - Reality Composer Pro treats all imported assets as read-only files; that is, Reality Composer Pro converts imported `.usd` files to entity assets in the Project Browser. Reality Composer Pro doesn’t propagate changes back to the imported `.usd` source file, although Reality Composer Pro provides options to export changes back to the original source `.usd` file.
 
 - Reality Composer Pro projects can contain assets that aren’t used in any scenes. Xcode still compiles these assets into your app, and your app can load them at runtime. Reality Composer Pro compiles assets into `.reality` files.
 
-#### Add assets from the Project Browser
+## Add assets from the Project Browser
 
 Drag the asset’s file from the Project Browser into the Viewport to create an instance of the entity in the scene. Alternatively, drag the asset to the Scene Hierarchy to instantiate an entity. After you add the assets, the Project Browser displays all available asset files for use in your project.
 
-#### Compose a scene
+## Compose a scene
 
 All RealityKit entities in a scene exist at a specific position, orientation, and scale, even if the entity has no visual representation.
 
@@ -65,13 +65,13 @@ You can manipulate an entity in the following ways:
 
 ![A picture of the Reality Composer Pro Move interaction object shown in the Viewport.](https://developer.apple.com/tutorials/images/RealityComposerPro/Gizmo@2x.png)
 
-#### Change entities through the Inspector
+## Change entities through the Inspector
 
 Alternatively, you can make the same changes to the selected entity by typing new values into the Transform component in the Inspector. The Transform component stores the position, rotation, and scale for an entity.
 
 To increment a numeric field value while dragging, hold the Option key, then click and drag over the field.
 
-#### Override entity properties
+## Override entity properties
 
 When you edit an instance of a prototype and change a property’s value, the system creates an **override** for that property. Overrides let you change a property for an entity used in another scene while keeping the default value from the original scene.
 
@@ -79,20 +79,20 @@ To revert an override back to its initial value, in the Scene Hierarchy, Control
 
 > **Note**: Some objects — such as scopes, materials, and node graphs — exist in the Scene Hierarchy but aren’t transformable in 3D space.
 
-#### Create or modify entity hierarchies
+## Create or modify entity hierarchies
 
 Each scene in Reality Composer Pro contains hierarchies of all the RealityKit entities underneath the default scene’s Root. Reality Composer Pro displays these hierarchies in the Scene Hierarchy panel.
 
 Entities can also have relationships with other entities that determine how they move relative to the other object. For example, an entity might contain multiple meshes inside a transform. You can change each mesh to override its initial location; the override persists when you manipulate the mesh’s container.
 
-##### Change the relationship between entities
+### Change the relationship between entities
 
 To change the relationship between entities:
 
 - In the Scene Hierarchy panel, drag the entity onto its intended parent entity.
 - To make an entity the root entity in a scene, drag the selected entity to the Root transform at the top of the Scene Hierarchy.
 
-#### Add components to entities
+## Add components to entities
 
 Reality Composer Pro is built on RealityKit’s Entity Component System (ECS). For background on ECS, see the [RealityKit Developer Documentation](../RealityKit/RealityKit.md).
 
@@ -103,19 +103,19 @@ To add a component to an entity:
 - Select the entity in either the Scene Hierarchy or the viewport.
 - At the bottom-right of the Inspector, click **Add Component** to view a list of available components for the entity. Alternatively, press the Space bar to view available components.
 
-#### Create custom components from Xcode
+## Create custom components from Xcode
 
 You can create new custom components in Reality Composer Pro and then edit them in Xcode. First, integrate your project with an Xcode project.
 
 For more information, see [Linking an Xcode project](./realitycomposerpro-essentials-linkingxcodeproject.md).
 
-#### Activate and deactivate scene entities
+## Activate and deactivate scene entities
 
 As you continue to build in Reality Composer Pro, scenes can get very complex and may contain overlapping entities. To help simplify a scene, you can deactivate entities to remove them from the viewport and your scene without removing them from the current project.
 
 ![A screenshot of the Scene Hierarchy context menu in Reality Composer Pro showing the Deactivate option on a selected entity.](https://developer.apple.com/tutorials/images/RealityComposerPro/SceneHierarchyInstancedEntityContextMenu@2x.png)
 
-##### Deactivate an entity
+### Deactivate an entity
 
 In the Scene Hierarchy, Control-click an entity and then select **Deactivate**.
 
@@ -124,7 +124,7 @@ In the Scene Hierarchy, Control-click an entity and then select **Deactivate**.
 > - Xcode doesn’t compile any deactivated entities in your scenes into your app’s bundle.
 > - The entity still exists in your project and appears grayed out in the Scene Hierarchy without any subentities, but Reality Composer Pro hides it in the viewport.
 
-##### Reactivate an entity
+### Reactivate an entity
 
 In the Scene Hierarchy, Control-click an entity and then select **Activate**.
 

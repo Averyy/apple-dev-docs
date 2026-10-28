@@ -12,11 +12,11 @@ virtual SCSIServiceResponse HandleLogicalUnitReset (
  UInt8theLogicalUnit );
 ```
 
-#### Return Value
+## Return Value
 
 A valid SCSIServiceResponse.
 
-#### Overview
+## Overview
 
 HandleLogicalUnitReset instructs the Protocol Services driver to reset the logical unit.
 

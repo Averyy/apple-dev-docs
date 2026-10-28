@@ -19,7 +19,7 @@ The Apple Immersive Media Venue Descriptor is a collection of static metadata ne
 final actor VenueDescriptor
 ```
 
-#### Overview
+## Overview
 
 This type contains information that includes camera definitions such as the lens calibration information, as well as data necessary for the rendering of the video frames.
 

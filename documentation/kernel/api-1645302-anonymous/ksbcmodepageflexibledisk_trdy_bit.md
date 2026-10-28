@@ -13,7 +13,7 @@
 kSBCModePageFlexibleDisk_TRDY_Bit = 7
 ```
 
-#### Discussion
+## Discussion
 
 TRDY Bit definition.
 

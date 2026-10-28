@@ -13,6 +13,7 @@ Generate completions using the given async closure.
 
 **Availability**:
 - iOS 13.0+
+- iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
@@ -21,10 +22,10 @@ Generate completions using the given async closure.
 ## Declaration
 
 ```swift
-static func custom(_ completion: @escaping @Sendable ([String], Int, String) async -> [String]) -> CompletionKind
+static func custom(_ completion: @Sendable @escaping ([String], Int, String) async -> [String]) -> CompletionKind
 ```
 
-#### Discussion
+## Discussion
 
 The same as `custom(@Sendable @escaping ([String], Int, String) -> [String])`, except that the closure is asynchronous.
 

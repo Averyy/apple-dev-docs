@@ -19,7 +19,7 @@ func insertColumn(_ column: Int)
 - (void) insertColumn:(NSInteger) column;
 ```
 
-#### Discussion
+## Discussion
 
 New cells are created if needed with [`makeCell(atRow:column:)`](./makecell%28atrow,column%29.md). This method redraws the receiver. Your code may need to send [`sizeToCells()`](./sizetocells%28%29.md) after sending this method to resize the receiver to fit the newly added cells.
 

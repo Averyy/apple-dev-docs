@@ -5,7 +5,7 @@
 
 Document Type Definition (DTD) for the latest Final Cut Pro XML interchange format.
 
-#### Overview
+## Overview
 
 The following DTD applies to Final Cut Pro XML (FCPXML) Interchange Format 1.10. Find a downloadable version of the FCPXML DTD version 1.10 at the Final Cut Pro XML DTDs section on the [Final Cut Pro Support page](https://support.apple.com/final-cut-pro).
 
@@ -800,7 +800,7 @@ Here, the transition element overlaps the last 2 seconds of the previous video (
 
 ```
 
-##### Legacy FCPXML DTDs
+### Legacy FCPXML DTDs
 
 For earlier versions (v1.5 - v1.9) of the FCPXML DTDs, see Final Cut Pro XML DTDs section on the [Final Cut Pro Support page](https://support.apple.com/final-cut-pro).
 

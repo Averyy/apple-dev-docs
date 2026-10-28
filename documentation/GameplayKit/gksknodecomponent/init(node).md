@@ -24,11 +24,11 @@ init(node: SKNode)
 - (instancetype) initWithNode:(SKNode *) node;
 ```
 
-#### Return Value
+## Return Value
 
 A new SpriteKit component.
 
-#### Discussion
+## Discussion
 
 When you add this component to a [`GKEntity`](../gkentity.md) object, the component automatically sets the [`entity`](../../SpriteKit/sknode/entity.md) property of its SpriteKit node to point to that entity.
 

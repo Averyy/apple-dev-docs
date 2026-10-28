@@ -14,7 +14,7 @@ Configure, control, and communicate with home automation accessories.
 - visionOS 1.0+
 - watchOS 2.0+
 
-#### Overview
+## Overview
 
 HomeKit enables your app to coordinate and control home automation accessories from multiple vendors to present a coherent, user-focused interface.
 

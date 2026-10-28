@@ -13,11 +13,11 @@
 + (IOReturn) browseDevicesAsSheetForWindow:(IOBluetoothSDPServiceRecord **) outRecord options:(IOBluetoothServiceBrowserControllerOptions) inOptions window:(NSWindow *) inWindow;
 ```
 
-#### Return Value
+## Return Value
 
 IOReturn - * kIOReturnSuccess - on successful completion. * kCanceledErr - User canceled.
 
-#### Discussion
+## Discussion
 
 This method will allocate and run the IOBluetoothServiceBrowserController browser window as a sheet for a window.
 

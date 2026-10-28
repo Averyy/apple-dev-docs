@@ -19,7 +19,7 @@ case critical
 NSAlertStyleCritical
 ```
 
-#### Discussion
+## Discussion
 
 Use this alert style sparingly and only when extra attention is really needed (for example when confirming an action that may result in the unexpected loss of data).
 

@@ -29,7 +29,7 @@ class UITraitCollection
 - [Building a desktop-class iPad app](./building-a-desktop-class-ipad-app.md)
 - [Displaying and managing views with a view controller](./displaying-and-managing-views-with-a-view-controller.md)
 
-#### Overview
+## Overview
 
 The [`traitCollection`](./uitraitenvironment/traitcollection.md) property of the [`UITraitEnvironment`](./uitraitenvironment.md) protocol contains traits that describe the state of various elements of the iOS user interface, such as size class, display scale, and layout direction. Together, these traits compose the UIKit trait environment.
 

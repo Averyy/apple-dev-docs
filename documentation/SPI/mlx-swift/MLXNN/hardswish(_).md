@@ -17,7 +17,7 @@ Applies the hardswish function, element-wise
 func hardSwish(_ x: MLXArray) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 This is:
 
@@ -25,7 +25,7 @@ This is:
 x * MLX.minimum(MLX.maximum(x + 3, 0), 6) / 6
 ```
 
-##### See Also
+### See Also
 
 - [Activation Functions and Layers](./activations.md)
 - [`HardSwish`](./hardswish.md)

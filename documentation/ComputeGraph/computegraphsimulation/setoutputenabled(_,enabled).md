@@ -21,7 +21,7 @@ Enables or disables execution of the provided output stage, without disabling th
 final func setOutputEnabled(_ outputID: Int, enabled: Bool)
 ```
 
-#### Discussion
+## Discussion
 
 Disabling an output is useful when you want to switch between multiple outputs for the simulation, for example two outputs with different topologies for the same elements.
 

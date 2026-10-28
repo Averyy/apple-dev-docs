@@ -21,11 +21,11 @@ Prepares an audio resource for playback.
 @preconcurrency func prepareAudio(_ resource: AudioResource) -> AudioPlaybackController
 ```
 
-#### Return Value
+## Return Value
 
 An [`AudioPlaybackController`](../audioplaybackcontroller.md) object that you can use to start and stop audio playback for this specific instance of a resource playing on this entity. You can also use this controller to update playback properties, such as gain and speed, during playback.
 
-#### Discussion
+## Discussion
 
 To start playback right away with default `AudioPlaybackController` properties, use the [`playAudio(_:)`](./playaudio%28_%29.md) method instead.
 

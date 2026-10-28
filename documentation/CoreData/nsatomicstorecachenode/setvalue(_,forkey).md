@@ -25,7 +25,7 @@ func setValue(_ value: Any?, forKey key: String)
 - (void) setValue:(id) value forKey:(NSString *) key;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation forwards the request to the [`propertyCache`](./propertycache.md) dictionary if `key` matches a property name of the entity for this cache node. If `key` does not represent a property, the standard [`setValue(_:forKey:)`](../../ObjectiveC/nsobject-swift.class/setvalue%28_,forkey%29.md) implementation is used.
 

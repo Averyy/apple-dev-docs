@@ -19,7 +19,7 @@ static let sidebarTrackingSeparator: NSToolbarItem.Identifier
 extern NSToolbarItemIdentifier NSToolbarSidebarTrackingSeparatorItemIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 The item’s tracking separator visually aligns itself with the sidebar divider of a vertical split view in the same window.
 

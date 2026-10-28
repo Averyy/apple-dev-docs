@@ -16,7 +16,7 @@ Sets the fifth UV coordinate set for the rendered output mesh.
 void output::setUV5(float4 value)
 ```
 
-#### Discussion
+## Discussion
 
 This function assigns a custom UV coordinate to the fifth texture coordinate channel of the output mesh. If the mesh doesn’t already have a UV5 channel, it will be created. This enables multi-texturing and advanced shader effects.
 

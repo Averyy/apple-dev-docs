@@ -15,7 +15,7 @@
 static const NSColorPanelMode NSCMYKModeColorPanel;
 ```
 
-#### Discussion
+## Discussion
 
 Cyan-yellow-magenta-black
 

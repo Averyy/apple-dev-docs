@@ -25,7 +25,7 @@ class SCNShape
 @interface SCNShape : SCNGeometry
 ```
 
-#### Overview
+## Overview
 
 SceneKit creates a three-dimensional geometry by extruding a Bézier path, which extends in the x- and y-axis directions of its local coordinate space, along the z-axis by a specified amount. For example, if you create a shape with an extrusion depth of `1.0`, it extends from `-0.5` to `0.5` along the z-axis. An extrusion depth of zero creates a flat, one-sided shape—the geometry is confined to the plane whose z-coordinate is `0.0`, and viewable only from its front unless its material’s [`isDoubleSided`](./scnmaterial/isdoublesided.md) property is [`true`](../Swift/true.md).
 

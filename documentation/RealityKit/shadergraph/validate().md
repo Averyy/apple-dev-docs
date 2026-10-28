@@ -18,11 +18,11 @@ Checks whether the graph is well-formed without producing a Metal library.
 final func validate() -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the graph passes front-end validation, `false` otherwise.
 
-#### Discussion
+## Discussion
 
 Runs the ShaderGraph compiler front end — parsing, graph construction, and the transform pipeline — but stops short of stitching the graph into a Metal library. Use this to catch structural problems before paying the cost of a full compile.
 

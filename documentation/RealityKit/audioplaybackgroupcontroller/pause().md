@@ -21,7 +21,7 @@ Pauses playback of the audio resource while maintaining the position in the audi
 @preconcurrency func pause()
 ```
 
-#### Discussion
+## Discussion
 
 Resume playback of a paused audio resource by calling the [`play()`](./play%28%29.md) method.
 

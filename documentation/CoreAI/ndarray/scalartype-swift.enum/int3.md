@@ -19,7 +19,7 @@ A 3-bit signed integer.
 case int3
 ```
 
-#### Discussion
+## Discussion
 
 Three-bit signed integers can represent values in the range [-4, 3]. This type is used for quantization.
 

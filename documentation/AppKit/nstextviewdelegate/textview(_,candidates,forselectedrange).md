@@ -20,7 +20,7 @@ optional func textView(_ textView: NSTextView, candidates: [NSTextCheckingResult
 - (NSArray<NSTextCheckingResult *> *) textView:(NSTextView *) textView candidates:(NSArray<NSTextCheckingResult *> *) candidates forSelectedRange:(NSRange) selectedRange;
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`NSTextCheckingResult`](../../Foundation/nstextcheckingresult.md) objects.
 

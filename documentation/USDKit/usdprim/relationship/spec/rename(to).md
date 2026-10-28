@@ -20,7 +20,7 @@ Sets the relationship’s name.
 func rename(to name: USDToken) throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if the new name is invalid or already used by a sibling.
 

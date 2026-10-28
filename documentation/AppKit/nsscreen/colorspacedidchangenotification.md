@@ -19,7 +19,7 @@ class let colorSpaceDidChangeNotification: NSNotification.Name
 extern NSNotificationName const NSScreenColorSpaceDidChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the [`NSScreen`](../nsscreen.md) object whose [`colorSpace`](./colorspace.md) has changed.. This notification does not contain a `userInfo` dictionary.
 

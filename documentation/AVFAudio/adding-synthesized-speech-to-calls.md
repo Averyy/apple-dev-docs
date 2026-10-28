@@ -12,17 +12,17 @@ Provide a more accessible experience by adding your app’s audio to a call.
 - Mac Catalyst 18.2+
 - Xcode 16.1+
 
-#### Overview
+## Overview
 
 This sample shows how to create an accessibility app that supports augmentative and alternative communication (AAC) by adding synthesized speech to a call. This feature is available in iOS 18.2 and visionOS 2.2 and later, and is available to use with calling apps that capture microphone input using Apple’s voice processing like Phone, FaceTime, and most VoIP apps.
 
 The sample app provides a basic user interface with a button to toggle the feature state and a text field. When you enter text into the field and press enter, the app speaks the phrase. If you have an active call in progress and you enable adding the app’s audio to it, you’ll hear the synthesized speech on the originating and receiving ends of the call.
 
-#### Configure the sample code project
+## Configure the sample code project
 
 The sample requires running on an iOS device with iOS 18.2 or later. To test the sample, establish a phone or FaceTime call with another device.
 
-#### Enable the accessibility service
+## Enable the accessibility service
 
 Before an app can add its audio to calls, a person must turn on a system-level service in the Settings app by choosing Accessibility > Audio & Visual > Add Audio in Calls. This setting is global to the device and influences the availability of the service for all apps.
 
@@ -54,7 +54,7 @@ var alertButtons: some View {
 }
 ```
 
-#### Request permission
+## Request permission
 
 Turning on Add Audio in Calls makes the feature available to apps on the system, but apps must explicitly request and be granted permission to use the feature. The sample determines its permission by querying for the current microphone injection permission. A value of [`AVAudioApplication.MicrophoneInjectionPermission.undetermined`](./avaudioapplication/microphoneinjectionpermission-swift.enum/undetermined.md) indicates the app hasn’t yet requested permission and needs to before it can use the feature.
 
@@ -80,7 +80,7 @@ Calling this method causes the system to present a dialog that requests user per
 
 If a person denies the app permission, the system sets the microphone injection permission state to [`AVAudioApplication.MicrophoneInjectionPermission.denied`](./avaudioapplication/microphoneinjectionpermission-swift.enum/denied.md), and the app is unable to use the feature. The app remains in this state until a person explicitly changes the permission from the Add Audio in Calls screen in the Settings app. If you attempt to turn on the feature in the app while in this state, the app presents an alert similar to the one shown in the previous section to update the app’s permission.
 
-#### Enable adding audio to calls
+## Enable adding audio to calls
 
 When the app has permission to add audio and a person toggles the feature state in the user interface, the app responds by calling the shared [`AVAudioSession`](./avaudiosession.md) object’s [`setPreferredMicrophoneInjectionMode(_:)`](./avaudiosession/setpreferredmicrophoneinjectionmode%28_%29.md) method. To turn on the feature, the app passes the method a value of [`AVAudioSession.MicrophoneInjectionMode.spokenAudio`](./avaudiosession/microphoneinjectionmode/spokenaudio.md); to turn off the feature, it passes a value of [`AVAudioSession.MicrophoneInjectionMode.none`](./avaudiosession/microphoneinjectionmode/none.md).
 
@@ -93,7 +93,7 @@ When turned on during an active call, the system plays the app’s audio locally
 
 > **Note**: The `AVAudioSession/setPreferredMicrophoneInjectionMode(_:)` method uses the word *preferred* to indicate that an app can set its preference, but a person ultimately determines whether they allow the feature’s use.
 
-#### Monitor the availability of calls
+## Monitor the availability of calls
 
 To determine whether a call can use this feature, the sample awaits notification of changes to the state of the audio session’s microphone injection capabilities:
 

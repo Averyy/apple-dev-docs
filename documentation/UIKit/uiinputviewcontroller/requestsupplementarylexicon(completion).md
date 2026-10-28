@@ -27,7 +27,7 @@ func requestSupplementaryLexicon() async -> UILexicon
 - (void) requestSupplementaryLexiconWithCompletion:(void (^)(UILexicon *)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to obtain a [`UILexicon`](../uilexicon.md) object containing a basic set of term pairs for use in autocorrection or textual suggestions based on user input. The [`UILexicon`](../uilexicon.md) object contains words from various sources, including:
 

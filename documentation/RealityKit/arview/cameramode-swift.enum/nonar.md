@@ -17,7 +17,7 @@ A mode that creates a fully virtual environment with no relationship to the real
 case nonAR
 ```
 
-#### Discussion
+## Discussion
 
 Use this mode to create pure virtual 3D environments using [`ARView`](../../arview.md). RealityKit doesn’t place `.nonAR` content into the real world and, as a result, doesn’t require a front-facing device camera.
 

@@ -13,7 +13,7 @@
 kINQUIRY_PERIPHERAL_TYPE_OpticalCardReaderOCRWDevice = 0x0F
 ```
 
-#### Discussion
+## Discussion
 
 OCRW Device.
 

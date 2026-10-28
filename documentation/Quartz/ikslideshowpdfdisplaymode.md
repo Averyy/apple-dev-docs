@@ -19,7 +19,7 @@ let IKSlideshowPDFDisplayMode: String
 extern NSString * const IKSlideshowPDFDisplayMode;
 ```
 
-#### Discussion
+## Discussion
 
 The associated value is a PDF display mode constant, such as [`PDFDisplayMode.singlePage`](../PDFKit/pdfdisplaymode/singlepage.md) or [`PDFDisplayMode.twoUp`](../PDFKit/pdfdisplaymode/twoup.md). See [`PDFView`](../PDFKit/pdfview.md) for more information.
 

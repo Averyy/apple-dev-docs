@@ -22,11 +22,11 @@ func stickerBrowserView(_ stickerBrowserView: MSStickerBrowserView, stickerAt in
 - (MSSticker *) stickerBrowserView:(MSStickerBrowserView *) stickerBrowserView stickerAtIndex:(NSInteger) index;
 ```
 
-#### Return Value
+## Return Value
 
 A valid sticker object.
 
-#### Discussion
+## Discussion
 
 Do not perform any time-intensive activities in this method. For example, creating a sticker from a local image file should be fine, but you can’t download an image for your sticker.
 

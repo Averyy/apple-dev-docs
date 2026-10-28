@@ -17,7 +17,7 @@ Writes the page layout’s values to the print info object used when the page la
 - (void) writePrintInfo;
 ```
 
-#### Discussion
+## Discussion
 
 Do not invoke this method directly; it is invoked automatically when the receiver is dismissed.
 

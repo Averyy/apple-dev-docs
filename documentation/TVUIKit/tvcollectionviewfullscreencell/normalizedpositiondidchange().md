@@ -19,7 +19,7 @@ func normalizedPositionDidChange()
 - (void) normalizedPositionDidChange;
 ```
 
-#### Discussion
+## Discussion
 
 ## See Also
 

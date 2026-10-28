@@ -21,7 +21,7 @@ Show only points of interest belonging to certain categories from the provided a
 static func including(_ categories: [MKPointOfInterestCategory]) -> PointOfInterestCategories
 ```
 
-#### Return Value
+## Return Value
 
 Returns the points of interest to include.
 

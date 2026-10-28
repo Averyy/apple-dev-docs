@@ -21,7 +21,7 @@ A sequence of forecasting windows on a time series shaped array.
 struct TimeSeriesForecasterAnnotatedWindows<Scalar> where Scalar : MLShapedArrayScalar
 ```
 
-#### Overview
+## Overview
 
 A time-series forecaster takes a series of samples and produces a prediction of the next samples. For example the sequence `[1, 2, 3, 4]` could predict `[5, 6]`.
 

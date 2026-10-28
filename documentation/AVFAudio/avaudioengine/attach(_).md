@@ -25,7 +25,7 @@ func attach(_ node: AVAudioNode)
 - (void) attachNode:(AVAudioNode *) node;
 ```
 
-#### Discussion
+## Discussion
 
 An instance of [`AVAudioNode`](../avaudionode.md) isn’t usable until you attach it to the audio engine using this method.
 

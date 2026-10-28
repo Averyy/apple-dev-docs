@@ -6,7 +6,7 @@
 
 Atoms containing the necessary out-of-band decompression parameters for the sound decompressor.
 
-#### Overview
+## Overview
 
 For MPEG-4 audio (`'mp4a'`), this includes elementary stream descriptor (`'esds'`), format (`'frma'`), and terminator atoms.
 

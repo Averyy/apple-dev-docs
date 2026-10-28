@@ -17,7 +17,7 @@ Read a dimension of the array.
 func dim(_ dim: Int) -> Int
 ```
 
-#### Discussion
+## Discussion
 
 ```swift
 let array = MLXArray(0 ..< 12, [3, 4])

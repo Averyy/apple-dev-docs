@@ -25,7 +25,7 @@ func setMute(_ isMuted: Bool, forPlayer playerID: String)
 - (void) setMute:(BOOL) isMuted forPlayer:(NSString *) playerID;
 ```
 
-#### Discussion
+## Discussion
 
 If you mute a player, the local player doesn’t hear voice data transmitted by that player.
 

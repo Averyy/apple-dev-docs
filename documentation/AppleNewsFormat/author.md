@@ -21,13 +21,13 @@ object Author
 - [Using HTML with Apple News Format](../AppleNews/using-html-with-apple-news-format.md)
 - [Using Markdown with Apple News Format](../AppleNews/using-markdown-with-apple-news-format.md)
 
-#### Discussion
+## Discussion
 
 Use an `Author` component to include the name of one of the authors of the article. Alternatively, you can use the [`Byline`](./byline.md) component for adding contributors to your article.
 
 > **Note**:  This is not the same as the `authors` property in Article [`Metadata`](./metadata.md).
 
-##### Example
+### Example
 
 ```json
 {

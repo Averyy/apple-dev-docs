@@ -25,7 +25,7 @@ var mReserved: UInt32
 UInt32 mReserved;
 ```
 
-#### Discussion
+## Discussion
 
 Set the value to `0`.
 

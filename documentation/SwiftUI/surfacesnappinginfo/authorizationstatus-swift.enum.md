@@ -15,7 +15,7 @@ A type representing whether the user has granted permissions to provide more det
 enum AuthorizationStatus
 ```
 
-#### Overview
+## Overview
 
 To provide `ARKit/SurfaceClassification` data, the user must allow the app to access information about their surroundings. To request this data, set `UIWantsDetailedSurfaceInfo` to `YES` and set `NSWorldSensingUsageDescription` to provide a description of why your app is requesting this information. These values are set in your app’s `Info.plist` file.
 

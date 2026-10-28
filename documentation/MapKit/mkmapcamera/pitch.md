@@ -25,7 +25,7 @@ var pitch: CGFloat { get set }
 @property (nonatomic) CGFloat pitch;
 ```
 
-#### Discussion
+## Discussion
 
 A value of `0` results in a camera that points straight down at the map. Angles greater than `0` result in a camera that pitches toward the horizon by the specified number of degrees. If the map type is [`MKMapType.satellite`](../mkmaptype/satellite.md) or [`MKMapType.hybrid`](../mkmaptype/hybrid.md), the object clamps the pitch value to `0`.
 

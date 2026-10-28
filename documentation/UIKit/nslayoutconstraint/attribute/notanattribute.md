@@ -23,7 +23,7 @@ case notAnAttribute
 NSLayoutAttributeNotAnAttribute
 ```
 
-#### Discussion
+## Discussion
 
 Use this value when creating a constraint that assigns a constant to an attribute. For example, `item1.height >= 40`. If a constraint only has one item, set the second item to `nil`, and set the second attribute to [`NSLayoutConstraint.Attribute.notAnAttribute`](./notanattribute.md).
 

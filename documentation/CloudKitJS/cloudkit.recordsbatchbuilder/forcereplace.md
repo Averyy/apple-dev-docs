@@ -18,11 +18,11 @@ CloudKit.RecordsBatchBuilder forceReplace(
 );
 ```
 
-#### Return Value
+## Return Value
 
 The object that received this method call.
 
-#### Discussion
+## Discussion
 
 Creates records if they don’t exist.
 

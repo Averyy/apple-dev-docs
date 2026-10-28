@@ -15,7 +15,7 @@ An array of timestamps for each second from the beginning of a Live Photo for wh
 attribute Number[],string frameTimes;
 ```
 
-#### Discussion
+## Discussion
 
 The frameTimes array allows the Player to crossfade between video frames during playback.
 

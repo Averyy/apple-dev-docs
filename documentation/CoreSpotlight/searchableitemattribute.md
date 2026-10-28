@@ -19,7 +19,7 @@ An attribute from a content item that the Spotlight search tool can include in s
 struct SearchableItemAttribute
 ```
 
-#### Overview
+## Overview
 
 When searching your content, the [`SpotlightSearchTool`](./spotlightsearchtool.md) can retrieve attributes for found items in advance and include them with search results. When you configure a [`CoreSpotlightSource`](./corespotlightsource.md) or [`FileSource`](./filesource.md) for this tool, specify the attributes you want to retrieve from that source. The tool retrieves the attributes from any items and delivers them to the model as additional context to consider. If you don’t specify any attributes, the tool retrieves only the unique identifier of each search result.
 

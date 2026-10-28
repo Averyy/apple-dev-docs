@@ -16,7 +16,7 @@ Application-specific data or state you can add to support your app.
 DOMString applicationData;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property for additional data as may be appropriate for your app—for example, a shopping cart identifier or an order number.
 

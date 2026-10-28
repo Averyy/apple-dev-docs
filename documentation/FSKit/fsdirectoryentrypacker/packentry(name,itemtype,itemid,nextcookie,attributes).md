@@ -19,11 +19,11 @@ func packEntry(name: FSFileName, itemType: FSItem.ItemType, itemID: FSItem.Ident
 - (BOOL) packEntryWithName:(FSFileName *) name itemType:(FSItemType) itemType itemID:(FSItemID) itemID nextCookie:(FSDirectoryCookie) nextCookie attributes:(FSItemAttributes *) attributes;
 ```
 
-#### Return Value
+## Return Value
 
 `true` (Swift) or `YES` (Objective-C) if packing was successful and enumeration can continue with the next directory entry. If the value is `false` (Swift) or `NO` (Objective-C), stop enumerating. This result can happen when the entry is too big for the remaining space in the buffer.
 
-#### Discussion
+## Discussion
 
 You call this method in your implementation of [`enumerateDirectory(_:startingAt:verifier:attributes:packer:context:replyHandler:)`](../fsvolume/handler/enumeratedirectory%28_,startingat,verifier,attributes,packer,context,replyhandler%29.md), for each directory entry you want to provide to the enumeration.
 

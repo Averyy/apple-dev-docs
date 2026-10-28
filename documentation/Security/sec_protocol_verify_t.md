@@ -23,7 +23,7 @@ typealias sec_protocol_verify_t = (sec_protocol_metadata_t, sec_trust_t, @escapi
 typedef void (^)(NSObject<OS_sec_protocol_metadata> *, NSObject<OS_sec_trust> *, void (^)(_Bool)) sec_protocol_verify_t;
 ```
 
-#### Discussion
+## Discussion
 
 Block to be invoked when the protocol instance must verify the peer.
 

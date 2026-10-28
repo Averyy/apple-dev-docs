@@ -21,7 +21,7 @@ Creates a URL cache object with the specified memory and disk capacities, in the
 convenience init(memoryCapacity: Int, diskCapacity: Int, directory: URL? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 A disk cache measured in the tens of megabytes is acceptable in most cases.
 

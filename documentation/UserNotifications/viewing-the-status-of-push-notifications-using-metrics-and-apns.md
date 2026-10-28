@@ -5,17 +5,17 @@
 
 Monitor and interpret the status of your push notifications with Apple Push Notification service (APNs).
 
-#### Overview
+## Overview
 
 Push notifications can help optimize the user experience for your app by delivering important and time-sensitive information. Knowing the status of your notifications and whether your audience actually received them provides clarity and a better experience for people who use your app. You can monitor the status of your push notifications, after APNs accepts your request, using Metrics. Metrics shows you if APNs delivers or discards your push notifications, or saves them in persistent storage to attempt delivery later.
 
-##### Get access to the Push Notifications Console
+### Get access to the Push Notifications Console
 
 The [Push Notifications Console](https://icloud.developer.apple.com/dashboard/notifications) is available to developers with valid WWDR developer accounts. To get access to the Push Notifications Console for your application, sign in with your developer account credentials. Verify that you’re part of the WWDR development team that registered the bundle ID of your application. Ask the admin of your WWDR team to add you to the team with the appropriate role. For more information, refer to [Invite team members](https://developer.apple.com/help/account/manage-your-team/invite-team-members).
 
 The console is available to all team members, but certain features are only accessible to the admin role. For example, any team member can send a push notification to the APNs development environment, but only an admin user can send a push notification to the APNs production environment. For more details, refer to [Testing notifications using the Push Notification Console](./testing-notifications-using-the-push-notification-console.md). Similar access restrictions apply when you’re exporting delivery metrics. For more information, refer to [Exporting delivery metrics logs](../PushKit/exporting-delivery-metrics-logs.md). To learn more about managing a team member’s roles, refer to [Roles and access](https://developer.apple.com/help/account/manage-your-team/roles).
 
-##### View your metrics
+### View your metrics
 
 The [Push Notification Console](https://icloud.developer.apple.com/dashboard) Metrics tab provides aggregated, rounded reports on notification states as your notifications pass through APNs. Under the Metrics tab, it shows multiple notification statuses, such as delivered, stored, and discarded. Successful delivery depends on multiple factors, including:
 
@@ -28,7 +28,7 @@ If APNs stores or discards a notification, Metrics seperates the notifications i
 
 Use the notification metrics to observe adoption of your new notification features or to tune your existing solution. For example, an uptick of *Discarded - Disabled* means that people who use your app find notifications for your app irrelevant or noisy. Consider emphasizing on events that are interesting for people who use your app. Check the number of notifications preserved in APNs storage for offline devices and compare it with the number of push notifications delivered from APNs storage. If the former is significantly higher, it’s a strong indication that a large volume of notifications are sent to devices that aren’t active with APNs. To preserve privacy, APNs doesn’t track states of offline devices, other than preserving notifications. In this scenario, consider building a system to remove push tokens of inactive users and save on resources for your service.
 
-##### Interpret data about discarded notifications
+### Interpret data about discarded notifications
 
 The figure below shows the logical flow that APNs takes to deliver a push notification to the destination device.
 
@@ -42,7 +42,7 @@ After viewing or exporting your notification metrics, you may see that APNs disc
 
 You can use the Push Notification Console to send test notifications. For information on how to test notifications, see [Testing notifications using the Push Notification Console](./testing-notifications-using-the-push-notification-console.md).
 
-##### Interpret data about stored notifications
+### Interpret data about stored notifications
 
 After viewing or exporting your notification metrics, you may see that APNs stored some notifications in storage. APNs stores a push notification for a number of reasons. If the destination device isn’t connected to APNs, then APNs saves the push notification in persistent storage to deliver later (unless it expires). APNs attempts to deliver an unexpired, stored push notification when the destination device connects to the APNs server the next time. When APNs delivers the push notification to the destination device, the delivery may take multiple attempts and some attempts may reach across multiple network interfaces.
 

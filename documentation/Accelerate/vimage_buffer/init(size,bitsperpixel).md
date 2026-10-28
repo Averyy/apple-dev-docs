@@ -21,7 +21,7 @@ Creates a new buffer with the specified size and bits per pixel.
 init(size: CGSize, bitsPerPixel: UInt32) throws
 ```
 
-#### Discussion
+## Discussion
 
 This function allocates a buffer’s memory, but doesn’t initialize the memory.
 

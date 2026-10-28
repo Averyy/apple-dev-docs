@@ -24,7 +24,7 @@ static OSArrayPtr withObjects(const OSObject **values, uint32_t count, uint32_t 
 static OSPtr<OSArray> withObjects(const OSObject *objects[], unsigned int count, unsigned int capacity);
 ```
 
-#### Return Value
+## Return Value
 
 NULL on failure, otherwise the allocated OSArray with reference count 1 to be released by the caller.
 

@@ -24,11 +24,11 @@ class PHASEGroup
 @interface PHASEGroup : NSObject
 ```
 
-#### Overview
+## Overview
 
 With all the sounds it contains, a group shares settings like gain, playback rate, mute, and solo. Groups are nonhierarchical and don’t overlap — that is, each sound event associates with only one group.
 
-##### Apply Group Settings to Sounds
+### Apply Group Settings to Sounds
 
 You can apply settings to the sounds a group contains. For instance, an app can share volume settings with various sound effects and dialogue audio groups. The following example creates a group for background audio, such as environmental sound layers played with ambient music. By interpolating the group’s gain setting, the audio fade applies to every sound in the group.
 

@@ -21,7 +21,7 @@ The sync engine is about to fetch changes from the server.
 struct WillFetchChanges
 ```
 
-#### Overview
+## Overview
 
 The sync engine delivers the changes themselves via [`CKSyncEngine.Event.FetchedDatabaseChanges`](./fetcheddatabasechanges.md) and [`CKSyncEngine.Event.FetchedRecordZoneChanges`](./fetchedrecordzonechanges.md).
 

@@ -21,11 +21,11 @@ Returns the double-precision element-wise sum of a vector and a scalar value.
 static func add<U>(_ scalar: Double, _ vector: U) -> [Double] where U : AccelerateBuffer, U.Element == Double
 ```
 
-#### Return Value
+## Return Value
 
 The output vector, `C`.
 
-#### Discussion
+## Discussion
 
 This function calculates the element-wise sum of vector `A` and scalar value `B`, and writes the result to vector `C`, as follows:
 

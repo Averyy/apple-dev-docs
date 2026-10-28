@@ -19,7 +19,7 @@ var VMX_REASON_RDMSR: Int { get }
 VMX_REASON_RDMSR
 ```
 
-#### Discussion
+## Discussion
 
 The guest attempted to execute RDMSR, and the value of RCX was out of range, or the setting of the MSR bitmap caused an exit.
 

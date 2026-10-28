@@ -24,7 +24,7 @@ func assign(_ variable: MPSGraphTensor, tensor: MPSGraphTensor, name: String?) -
 - (MPSGraphOperation *) assignVariable:(MPSGraphTensor *) variable withValueOfTensor:(MPSGraphTensor *) tensor name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor object.
 

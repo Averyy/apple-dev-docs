@@ -19,7 +19,7 @@ var contentView: UIView { get }
 @property (nonatomic, strong, readonly) UIView * contentView;
 ```
 
-#### Discussion
+## Discussion
 
 Add subviews to the `contentView`. Don’t add views direcly to the lockup view.
 

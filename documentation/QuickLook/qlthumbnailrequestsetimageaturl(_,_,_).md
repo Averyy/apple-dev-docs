@@ -21,7 +21,7 @@ func QLThumbnailRequestSetImageAtURL(_ thumbnail: QLThumbnailRequest!, _ url: CF
 extern void QLThumbnailRequestSetImageAtURL(QLThumbnailRequestRef thumbnail, CFURLRef url, CFDictionaryRef properties);
 ```
 
-#### Discussion
+## Discussion
 
 Call this function to have QuickLook use the image at the provided url as a thumbnail.
 

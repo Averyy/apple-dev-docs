@@ -25,7 +25,7 @@ static let quickTimeMetadataLocationRole: AVMetadataIdentifier
 extern AVMetadataIdentifier const AVMetadataIdentifierQuickTimeMetadataLocationRole;
 ```
 
-#### Discussion
+## Discussion
 
 `0` indicates “shooting location,” `1` indicates “real location,” `2` indicates “fictional location.” Other values are reserved.
 

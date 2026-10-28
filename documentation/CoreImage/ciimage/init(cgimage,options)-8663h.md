@@ -24,7 +24,7 @@ init(cgImage image: CGImage, options: [CIImageOption : Any]? = nil)
 - (instancetype) initWithCGImage:(CGImageRef) image options:(NSDictionary<NSString *,id> *) options;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized image object.
 

@@ -20,7 +20,7 @@ var errSecCSDBDenied: OSStatus { get }
 errSecCSDBDenied
 ```
 
-#### Database
+## Database
 
 This error is returned when the system is attempting to sign unsigned code ad-hoc and couldn’t write to the signature database because of a permission problem.
 

@@ -12,11 +12,11 @@ virtual bool inPlane(
  const IORegistryPlane *plane = 0) const;
 ```
 
-#### Return Value
+## Return Value
 
 If the entry has a parent in the given plane or if plane = 0 then if entry has any parent; return true, otherwise false.
 
-#### Overview
+## Overview
 
 This method determines if the entry is attached in a plane to any other entry. It can also be used to determine if the entry is a member of any plane.
 

@@ -25,11 +25,11 @@ func CFLocaleCreateLocaleIdentifierFromComponents(_ allocator: CFAllocator!, _ d
 extern CFLocaleIdentifierCFLocaleCreateLocaleIdentifierFromComponents(CFAllocatorRef allocator, CFDictionaryRef dictionary);
 ```
 
-#### Return Value
+## Return Value
 
 A locale identifier consisting of language, script, country or region, variant, and keyword/value pairs derived from `dictionary`. Returns `NULL` if there was a problem creating the string. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 Reverses the actions of [`CFLocaleCreateComponentsFromLocaleIdentifier(_:_:)`](./cflocalecreatecomponentsfromlocaleidentifier%28_,_%29.md), creating a single string from the data in the specified dictionary. For example, the dictionary {`kCFLocaleLanguageCode``=en``,` `kCFLocaleCountryCode``=US``,` `kCFLocaleCalendarIdentifier``=``kCFJapaneseCalendar``}` becomes `"en_US@calendar=japanese"`.
 

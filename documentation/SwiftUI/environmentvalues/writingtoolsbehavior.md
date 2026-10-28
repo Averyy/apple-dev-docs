@@ -19,7 +19,7 @@ The current Writing Tools behavior for text and text input.
 var writingToolsBehavior: WritingToolsBehavior? { get }
 ```
 
-#### Discussion
+## Discussion
 
 This can be used by views that provide a custom text input to determine the Writing Tools editing experience to provide.
 

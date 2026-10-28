@@ -12,7 +12,7 @@ Perform speech recognition and transcription on audio captured from the micropho
 - Mac Catalyst 27.0+
 - Xcode 27.0+
 
-#### Overview
+## Overview
 
 This sample project shows you how to use the Speech framework to transcribe or caption audio, and how to use a custom language model to add new vocabulary and improve the accuracy of the transcription.
 
@@ -24,7 +24,7 @@ This sample uses [`CaptureInputSequenceProvider`](./captureinputsequenceprovider
 
 > **Note**: The sample app doesn’t run in the iOS Simulator, so you need to run it on a physical device with iOS or iPadOS 27 or later.
 
-#### Configure the speech analyzer
+## Configure the speech analyzer
 
 When the user taps the Start Recording button, the app creates [`SpeechAnalyzer`](./speechanalyzer.md) and [`DictationTranscriber`](./dictationtranscriber.md) objects to generate the transcription.
 
@@ -59,7 +59,7 @@ return DictationTranscriber(
 )
 ```
 
-#### Configure the capture session
+## Configure the capture session
 
 When the user taps the Start Recording button, the app starts a capture session managed by an [`AVCaptureSession`](../AVFoundation/avcapturesession.md) instance.
 
@@ -83,7 +83,7 @@ An app may also configure a capture session independently. The input sequence pr
 
 Finally, the app saves a reference to the [`AVCaptureSession`](../AVFoundation/avcapturesession.md) instance created by the provider in the view controller’s `captureSession` property, and uses that to manage the session later. To avoid concurrency-related compilation errors, the app actually saves the session instance in an actor and manages the session through that actor.
 
-#### Analyze audio and display results
+## Analyze audio and display results
 
 The app does its primary work in the `runSession` method. This work consists of two subtasks:
 
@@ -147,7 +147,7 @@ This technique is straightforward, but another common technique is to maintain t
 
 If the app didn’t need to provide immediate UI feedback, it could configure the transcriber to only provide final results, and just append each result to the overall transcript, further simplifying the code.
 
-#### Stop the capture session
+## Stop the capture session
 
 The app calls the `runSession` method in an overall recording task, saving a reference to that task in the view controller’s `recordingTask` property. When the user taps the Stop Recording button, the app simply cancels that task. Because the recording task’s subtasks are in a task group, the recording task doesn’t actually end until both subtasks finish cleanly and `runSession` returns.
 
@@ -161,7 +161,7 @@ The app cancels the recording task when the user taps the stop button, but it’
 
 Because it’s easy to overlook a stray reference, cancellation is the more reliable approach. But an app that uses another kind of audio sequence, such as one obtained from an [`AssetInputSequenceProvider`](./assetinputsequenceprovider.md) or one that the app itself creates, can simply finish the analysis session after the audio sequence ends and [`analyzeSequence(_:)`](./speechanalyzer/analyzesequence%28_%29.md) returns normally.
 
-#### Prepare to record and transcribe speech
+## Prepare to record and transcribe speech
 
 When the app launches, it uses [`AssetInventory`](./assetinventory.md) to ensure that any necessary transcription assets install. If the assets aren’t present on the device, it downloads them.
 
@@ -186,7 +186,7 @@ guard await AVCaptureDevice.requestAccess(for: .audio) else {
 }
 ```
 
-#### Customize the language model
+## Customize the language model
 
 Developers can enhance the [`DictationTranscriber`](./dictationtranscriber.md) transcriber module for specific use cases and applications by customizing its language model. This sample uses language model customization to improve accuracy when recognizing certain chess moves. The high-level steps in this process are:
 

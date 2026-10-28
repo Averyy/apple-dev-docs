@@ -21,7 +21,7 @@ A Boolean value that indicates whether the system declares the type.
 var isDeclared: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 The system either declares a type or dynamically generates a type, but not both.
 

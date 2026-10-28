@@ -24,7 +24,7 @@ typealias AUInternalRenderBlock = (UnsafeMutablePointer<AudioUnitRenderActionFla
 typedef int (^)(enum AudioUnitRenderActionFlags *, const struct AudioTimeStamp *, unsigned int, long, struct AudioBufferList *, const union AURenderEvent *, int (^)(enum AudioUnitRenderActionFlags *, const struct AudioTimeStamp *, unsigned int, long, struct AudioBufferList *) __attribute__((nonblocking))) __attribute__((nonblocking)) AUInternalRenderBlock;
 ```
 
-#### Discussion
+## Discussion
 
 This block is implemented in subclasses and should not be used by hosts.
 

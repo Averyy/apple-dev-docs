@@ -16,7 +16,7 @@ Asks the data source to return an app entity identifier for a particular row in 
 func tableView(_ tableView: NSTableView, appEntityIdentifierFor row: Int) -> EntityIdentifier?
 ```
 
-#### Return Value
+## Return Value
 
 The app entity identifier for the item at the specified location in the table view.
 

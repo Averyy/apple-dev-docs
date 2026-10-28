@@ -24,11 +24,11 @@ class func blurredRectangleGenerator() -> any CIFilter & CIBlurredRectangleGener
 + (CIFilter<CIBlurredRectangleGenerator> *) blurredRectangleGeneratorFilter;
 ```
 
-#### Return Value
+## Return Value
 
 A [`CIImage`](../ciimage.md) containing a blurred rectangle.
 
-#### Discussion
+## Discussion
 
 Creates a [`CIImage`](../ciimage.md) containing a blurred rectangle. The resulting image size is the extent of the rectangle plus any additional space required for the blur effect.
 

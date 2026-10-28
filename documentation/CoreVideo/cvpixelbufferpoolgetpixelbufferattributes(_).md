@@ -25,11 +25,11 @@ func CVPixelBufferPoolGetPixelBufferAttributes(_ pool: CVPixelBufferPool) -> CFD
 extern CFDictionaryRefCVPixelBufferPoolGetPixelBufferAttributes(CVPixelBufferPoolRef pool);
 ```
 
-#### Return Value
+## Return Value
 
 A Core Foundation dictionary containing the pool attributes, or [`nil`](../ObjectiveC/nil-227m0.md) if the function fails.
 
-#### Discussion
+## Discussion
 
 Use this function to obtain information about the pixel buffers which the system creates using the pool you specify, before the system creates those pixel buffers.
 

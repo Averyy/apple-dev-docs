@@ -27,7 +27,7 @@ Available when `Format` is `vImage.Planar8x3`.
 
 - [Optimizing image-processing performance](../../optimizing-image-processing-performance.md)
 
-#### Discussion
+## Discussion
 
 Use this function to interleave a buffer and overwrite an interleaved buffer with a copy of the source channels.
 

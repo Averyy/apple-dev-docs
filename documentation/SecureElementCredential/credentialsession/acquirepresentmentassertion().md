@@ -20,11 +20,11 @@ func acquirePresentmentAssertion() async throws -> CredentialSession.Presentment
 
 - [Accessing and using secure element credentials](../accessing-and-using-secure-element-credentials.md)
 
-#### Return Value
+## Return Value
 
 A [`CredentialSession.PresentmentIntentAssertion`](./presentmentintentassertion.md) object, representing exclusive access to presentment intent for a short time.
 
-#### Discussion
+## Discussion
 
 Call this method when your app is in the foreground and showing a user interface appropriate for connecting to a contactless reader.
 

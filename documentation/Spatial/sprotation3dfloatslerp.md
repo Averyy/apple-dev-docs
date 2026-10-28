@@ -19,11 +19,11 @@
 static SPRotation3DFloat SPRotation3DFloatSlerp(SPRotation3DFloat from, SPRotation3DFloat to, float t);
 ```
 
-#### Return Value
+## Return Value
 
 A new rotation. When @p t=0, the result is the @p from rotation. When @p t=1.0, the result is the @p to rotation. For any other value of @p t, the result is a spherical linear interpolation between the two rotations.
 
-#### Discussion
+## Discussion
 
 Returns the spherical linear interpolation along the shortest arc between two rotations.
 

@@ -5,7 +5,7 @@
 
 Read and write documents and supporting files while maintaining security protection.
 
-#### Overview
+## Overview
 
 App Sandbox improves the overall security of a Mac by restricting your app’s access to protected resources. macOS gives your app unrestricted access to limited parts of the Mac’s file system, but you can extend that access to:
 
@@ -18,7 +18,7 @@ App Sandbox improves the overall security of a Mac by restricting your app’s a
 
 Even in situations where App Sandbox permits your app to work with a file, discretionary access controls such as POSIX permissions or access control lists, or mandatory access controls built into macOS, may cause errors when your app attempts to use a file.
 
-##### Use files in your app’s container
+### Use files in your app’s container
 
 When your sandboxed app launches for the first time, macOS creates a sandbox container on the file system (in `~/Library/Containers`) and associates it with your app. Your app has full read and write access to its sandbox container, and can run programs located there as well.
 
@@ -28,7 +28,7 @@ The operating system also tracks the association between an app’s code signing
 
 > **Note**:  In certain situations, two different versions of your app can have different designated requirements, leading the operating system to request permission when the second version tries to access the sandbox container. One case is using both the version of your app from the Mac App Store and a local build created in Xcode on the same computer. Another is if you transfer an app to another App Store team and the code signing identity used to sign the app changes between released versions.
 
-##### Access files with standard user interactions
+### Access files with standard user interactions
 
 Give your app access to files that a person chooses in open and save panels, or by following these steps:
 
@@ -54,7 +54,7 @@ When the URL your app receives from a standard user interface interaction repres
 
 Your app can’t run programs in locations outside its app bundle, sandbox container, or app group containers using the entitlements to access user-selected files. To write programs in user-selected locations, add the `com.apple.security.files.user-selected.executable` entitlement with the Boolean value `YES`.
 
-##### Persist file access with security-scoped URL bookmarks
+### Persist file access with security-scoped URL bookmarks
 
 Create bookmark data from a URL using [`bookmarkData(options:includingResourceValuesForKeys:relativeTo:)`](../Foundation/nsurl/bookmarkdata%28options,includingresourcevaluesforkeys,relativeto%29.md), including the [`withSecurityScope`](../Foundation/nsurl/bookmarkcreationoptions/withsecurityscope.md) option. Foundation creates a URL bookmark with an explicit security scope that your app can store and retrieve to subsequently access the resource at the URL, regardless of whether your app exits between accesses. If your app doesn’t need to write to the file on subsequent access, include the [`securityScopeAllowOnlyReadAccess`](../Foundation/nsurl/bookmarkcreationoptions/securityscopeallowonlyreadaccess.md) option.
 
@@ -70,7 +70,7 @@ To access the file:
 
 You only need to create security-scoped bookmarks when your app might try to access the bookmarked resource after it exits and re-launches. In other situations, for example, passing a URL bookmark between processes, you can create and use a bookmark without security scope.
 
-##### Share file access between processes with URL bookmarks
+### Share file access between processes with URL bookmarks
 
 Create bookmark data from a URL using [`bookmarkData(options:includingResourceValuesForKeys:relativeTo:)`](../Foundation/nsurl/bookmarkdata%28options,includingresourcevaluesforkeys,relativeto%29.md), passing `[]` (Swift) or `0` (Objective-C) as the value for the options parameter. The bookmark Foundation creates refers to a security-scoped URL that grants access to the resource to a process that resolves the bookmark. Your app can pass that bookmark to another process, like a launch agent or an XPC service. Use the following example to access the resource in the receiving process:
 
@@ -109,13 +109,13 @@ if (location == nil) {
 
 The receiving process automatically attempts to extend its sandbox to include the bookmarked resource when it uses the security-scoped URL, as if it called [`startAccessingSecurityScopedResource()`](../Foundation/nsurl/startaccessingsecurityscopedresource%28%29.md) after resolving the bookmark. To defer extending the process’s sandbox until you explicitly call [`startAccessingSecurityScopedResource()`](../Foundation/nsurl/startaccessingsecurityscopedresource%28%29.md), pass the option [`withoutImplicitStartAccessing`](../Foundation/nsurl/bookmarkresolutionoptions/withoutimplicitstartaccessing.md).
 
-##### Access files related to documents with document-relative bookmarks
+### Access files related to documents with document-relative bookmarks
 
 Document-relative bookmarks extend access to project files to cover the supporting files those projects reference. Consider the example of an integrated development environment (IDE) app. An IDE project file could contain references to source code files, images, and other assets. Store document-relative bookmarks in the project document, so that when the sandboxed app opens the project document, it can resolve the bookmarks to access the other files.
 
 Create bookmark data from a URL using [`bookmarkData(options:includingResourceValuesForKeys:relativeTo:)`](../Foundation/nsurl/bookmarkdata%28options,includingresourcevaluesforkeys,relativeto%29.md), using the document’s URL as the `url` parameter. Foundation creates a bookmark that any process with access to the resource at the `relativeTo` URL can resolve.
 
-##### Share files between related apps with app group containers
+### Share files between related apps with app group containers
 
 Apps that are members of the same app group can create any number of shared containers that they use to exchange files. Your app can access files and folders in an app group container if it meets the following conditions:
 
@@ -126,7 +126,7 @@ Apps that are members of the same app group can create any number of shared cont
 
 In other situations, the system displays a request for someone to authorize your app’s access to the app group container.
 
-##### Use related file access to work with groups of files
+### Use related file access to work with groups of files
 
 To work with files that are related to a document chosen by the person using your app, like ancillary files or versions in different formats, identify your apps’ related file types with these steps:
 
@@ -160,7 +160,7 @@ The `Info.plist` file entry for the related file type should look like this exam
 
 In your code, create an object that conforms to [`NSFilePresenter`](../Foundation/nsfilepresenter.md). For a given document file, set that object’s [`primaryPresentedItemURL`](../Foundation/nsfilepresenter/primarypresenteditemurl.md) to the document’s URL, and the [`presentedItemURL`](../Foundation/nsfilepresenter/presenteditemurl.md) to the supporting file’s URL. Pass the created file presenter to an instance of [`NSFileCoordinator`](../Foundation/nsfilecoordinator.md), and use the file coordinator to access the supporting file. The operating system automatically extends your app’s sandbox to give your app access to the supporting file.
 
-##### Request capabilities to access standard folders
+### Request capabilities to access standard folders
 
 Apps that work with common types of file including Music, Movies, or Photos, can request capabilities that grant access to the standard folders where these files are located, avoiding the need to individually request consent to access each file. For example, to access the Music folder:
 
@@ -172,13 +172,13 @@ Apps that work with common types of file including Music, Movies, or Photos, can
 
 ![A screenshot of the Signing and Capabilities editor in Xcode. In the App Sandbox capability, permission and access to the Music Folder is set to Read Only.](https://developer.apple.com/tutorials/images/com.apple.security/media-4208570@2x.png)
 
-##### Request full disk access to use all files on a Mac
+### Request full disk access to use all files on a Mac
 
 Certain app workflows, like an app for backing up your Mac, require access to files wherever they reside on a file system. Your app can’t automatically gain full disk access through an entitlement or with code: the person using your app must choose to grant access in System Settings > Privacy & Security.
 
 In situations where your app tries to use a file outside of its sandbox, program defensively by handling failure cases, as someone may choose not to grant full disk access to your app.
 
-##### Diagnose other reasons your app can’t access a file
+### Diagnose other reasons your app can’t access a file
 
 Your app may not have access to a file even if App Sandbox doesn’t block access. Any of the operating system facilities listed below may restrict access to the file.
 

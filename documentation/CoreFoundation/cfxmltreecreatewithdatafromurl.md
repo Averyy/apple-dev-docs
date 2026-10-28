@@ -15,7 +15,7 @@ Creates a new CFXMLTree object by loading the data to be parsed directly from a 
 extern CFXMLTreeRefCFXMLTreeCreateWithDataFromURL(CFAllocatorRef allocator, CFURLRef dataSource, CFOptionFlags parseOptions, CFIndex versionOfNodes);
 ```
 
-#### Return Value
+## Return Value
 
 A new CFXMLTree object containing the data from the specified XML data source. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 

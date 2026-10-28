@@ -15,7 +15,7 @@ The MPEG-4 Harmonic Vector eXcitation Coding (HVXC) audio object format.
 MPEG4HVXC
 ```
 
-#### Discussion
+## Discussion
 
 This format uses no flags.
 

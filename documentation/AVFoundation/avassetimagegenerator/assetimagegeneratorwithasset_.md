@@ -20,7 +20,7 @@ Returns a new object that generates images for times within a video asset.
 + (instancetype) assetImageGeneratorWithAsset:(AVAsset *) asset;
 ```
 
-#### Return Value
+## Return Value
 
 A new image generator.
 

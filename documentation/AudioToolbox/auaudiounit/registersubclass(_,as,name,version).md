@@ -24,7 +24,7 @@ class func registerSubclass(_ cls: AnyClass, as componentDescription: AudioCompo
 + (void) registerSubclass:(Class) cls asComponentDescription:(AudioComponentDescription) componentDescription name:(NSString *) name version:(UInt32) version;
 ```
 
-#### Discussion
+## Discussion
 
 This method dynamically registers the supplied [`AUAudioUnit`](../auaudiounit.md) subclass with the Audio Component system, in the context of the current process only. After you’ve registered the subclass, instantiate it by calling one of the following:
 

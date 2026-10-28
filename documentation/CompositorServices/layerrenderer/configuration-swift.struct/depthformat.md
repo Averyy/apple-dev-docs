@@ -16,7 +16,7 @@ The pixel format to use for the layer’s depth textures.
 var depthFormat: MTLPixelFormat { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Use this value to determine the pixel format for depth textures in a frame. At configuration time, set the value to specify which pixel format you want.
 

@@ -23,7 +23,7 @@ func encode(to encoder: any Encoder) throws
 
 Available when `Key` conforms to `Encodable`, `Key` conforms to `Hashable`, and `Value` conforms to `Encodable`.
 
-#### Discussion
+## Discussion
 
 If the dictionary uses keys that are `String`, `Int`, or a type conforming to `CodingKeyRepresentable`, the contents are encoded in a keyed container. Otherwise, the contents are encoded as alternating key-value pairs in an unkeyed container.
 

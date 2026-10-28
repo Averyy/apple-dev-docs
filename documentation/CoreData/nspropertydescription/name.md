@@ -25,11 +25,11 @@ var name: String { get set }
 @property (nonatomic, copy) NSString * name;
 ```
 
-#### Discussion
+## Discussion
 
 A property name cannot be the same as any no-parameter method name of `NSObject` or `NSManagedObject`. Since there are hundreds of methods on `NSObject` which may conflict with property names, you should avoid very general words (like “font”, and “color”) and words or phrases that overlap with Cocoa paradigms (such as “isEditing” and “objectSpecifier”).
 
-##### Special Considerations
+### Special Considerations
 
 Setting the name raises an exception if the receiver’s model has been used by an object graph manager.
 

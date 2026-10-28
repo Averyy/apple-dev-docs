@@ -30,11 +30,11 @@ vImage_Error vImageBuffer_InitWithCGImage(vImage_Buffer *buf, vImage_CGImageForm
 - [Converting bitmap data between Core Graphics images and vImage buffers](./converting-bitmap-data-between-core-graphics-images-and-vimage-buffers.md)
 - [Optimizing image-processing performance](./optimizing-image-processing-performance.md)
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
-#### Discussion
+## Discussion
 
 The following code shows a passthrough function that accepts a [`CGImage`](../CoreGraphics/cgimage.md) image, populates a vImage buffer from the image, and generates a [`CGImage`](../CoreGraphics/cgimage.md) image from the buffer.
 

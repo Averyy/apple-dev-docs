@@ -21,7 +21,7 @@ static let onWristState: SRSensor
 extern SRSensor const SRSensorOnWristState;
 ```
 
-#### Discussion
+## Discussion
 
 The [`sample`](../srfetchresult/sample.md) type for this sensor is [`SRWristDetection`](../srwristdetection.md)
 

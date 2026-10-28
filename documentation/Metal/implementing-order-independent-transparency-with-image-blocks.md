@@ -13,7 +13,7 @@ Draw overlapping, transparent surfaces in any order by using tile shaders and im
 - macOS 14.0+
 - Xcode 26.3+
 
-#### Overview
+## Overview
 
 ![A rendering of the order-independent transparency effect.](https://developer.apple.com/tutorials/images/com.apple.metal/1-OITScene.png)
 
@@ -30,7 +30,7 @@ Order-independent transparency solves these issues by:
 
 The sample takes advantage of *tile memory* available on Apple silicon GPUs to quickly evaluate the depth and color of each fragment. Tile memory is a fast, temporary storage that shaders can use to store and retrieve information to and from other shaders.
 
-##### Configure the sample code project
+### Configure the sample code project
 
 To run this sample, you need Xcode 12 and a physical device including:
 
@@ -39,7 +39,7 @@ To run this sample, you need Xcode 12 and a physical device including:
 
 This sample can only run on a physical device because it uses the image block and tile shader features, which Simulator doesn’t support.
 
-##### Check for support
+### Check for support
 
 The app checks that the device supports the features required to implement this order-independent transparency algorithm.
 
@@ -50,7 +50,7 @@ _supportsOrderIndependentTransparency = [_device supportsFamily:MTLGPUFamilyAppl
 
 The techniques implemented by this sample require the image block and tile shader features, which are a part of the [`MTLGPUFamily.apple4`](./mtlgpufamily/apple4.md) feature set. Although this app does run on devices that don’t support these features, it incorrectly blends transparent geometries.
 
-##### Set up storage for transparent fragments
+### Set up storage for transparent fragments
 
 The sample uses tile memory to store data for multiple transparent layers. The `processTransparentFragment` shader draws the transparent geometry and populates the `TransparentFragmentStore` structure. This structure contains a single member, `fragmentValues`, which uses the `[[imageblock_data]]` attribute to specify that data for this element resides in tile memory.
 
@@ -85,7 +85,7 @@ static constexpr constant short kNumLayers = 4;
 
 If the number of transparent layers for any pixel exceeds `kNumLayers`, the `processTransparentFragment` shader drops the excess values. The subsequent blending shader ignores those color values that yield a technically incorrect result. Despite this, even if `kNumLayers` isn’t large enough, this algorithm still produces a convincing result.
 
-##### Reserve tile memory
+### Reserve tile memory
 
 When the sample sets up a render pass, it partitions the tile memory between storage for the `TransparentFragmentValues` structure and render targets.
 
@@ -108,7 +108,7 @@ _forwardRenderPassDescriptor.tileHeight = _optimalTileSize.height;
 
 In general, a larger tile size yields better performance because the GPU incurs less overhead to render fewer tiles. However, the GPU uses tile memory for both rasterization data and image block data. You need to balance the dimensions chosen for the tile size with that of the value for `kNumLayers`. If these values exceed the amount of tile memory, the GPU can’t execute the tile shader in the render pass. In that case, creation of the render pass fails.
 
-##### Initialize the image block
+### Initialize the image block
 
 The sample begins each render pass by initializing the image block structure.
 
@@ -139,7 +139,7 @@ kernel void initTransparentFragmentStore
 }
 ```
 
-##### Layer transparent geometry
+### Layer transparent geometry
 
 After the sample initializes the image block and renders opaque objects, it uses the `processTransparentFragments` shader to populate the layers of the `TransparentFragmentValues` structure. This fragment shader doesn’t actually render to any of the render pass attachments and only writes to the structure in the image block. Because it doesn’t write to an attachment, the pipeline disables writes to color attachments.
 
@@ -173,7 +173,7 @@ The following diagram shows an example of a shader populating layers of the imag
 
 In this example, the app first renders a green triangle whose fragments populate the first layer in the image block. It then renders an orange triangle with depth values less than the green triangle. The shader replaces any fragments covering the green triangle with the orange color and moves the fragments from the green triangle to the next layer. Finally, the app renders a blue triangle whose depth is in between the orange triangle and the green triangle. The shader replaces all the values of the green triangle in the second layer and moves them to the third. This results in an image block with fragments ordered by their depth values.
 
-##### Blend fragments for transparency
+### Blend fragments for transparency
 
 After the app layers all transparent geometry, the image block contains a list of fragment colors ordered by depth for every transparent fragment.
 

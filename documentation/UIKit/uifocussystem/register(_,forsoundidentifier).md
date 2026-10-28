@@ -23,7 +23,7 @@ class func register(_ soundFileURL: URL, forSoundIdentifier identifier: UIFocusS
 
 - [Using custom sounds for focus movement](../using-custom-sounds-for-focus-movement.md)
 
-#### Discussion
+## Discussion
 
 Use this method to register custom sounds that you want played in response to focus changes. Register sound files early in your app’s life cycle so that the focus system has time to process those files and make them ready for playback. You must register sound files before attempting to play them.
 

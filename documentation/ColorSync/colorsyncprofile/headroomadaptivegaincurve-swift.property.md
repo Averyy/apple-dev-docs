@@ -21,7 +21,7 @@ The Headroom Adaptive Gain Curve embedded in this profile, or `nil` if it carrie
 var headroomAdaptiveGainCurve: ColorSyncProfile.HeadroomAdaptiveGainCurve? { get }
 ```
 
-#### Discussion
+## Discussion
 
 This decodes the HAGC tag into its structured form. For the unparsed bytes, use [`headroomAdaptiveGainCurveMetadata`](./headroomadaptivegaincurvemetadata.md).
 

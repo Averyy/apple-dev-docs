@@ -19,11 +19,11 @@ Creates a reorder system accessory with the specified display state and configur
 static func reorder(displayed: UICellAccessory.DisplayedState = .whenEditing, options: UICellAccessory.ReorderOptions = ReorderOptions()) -> UICellAccessory
 ```
 
-#### Return Value
+## Return Value
 
 A configured reorder cell accessory. This accessory is three horizontal lines with the default system gray color. This accessory appears on the trailing edge of the cell.
 
-#### Discussion
+## Discussion
 
 If your collection view supports interactive reordering of its cells, a user can drag the cell by its reorder accessory to change the order of the cell in the collection view.
 

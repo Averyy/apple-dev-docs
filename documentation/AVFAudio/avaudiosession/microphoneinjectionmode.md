@@ -24,7 +24,7 @@ enum MicrophoneInjectionMode
 enum AVAudioSessionMicrophoneInjectionMode : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Apps can state their intent to mix synthesized speech into another app’s input stream. Accessibility apps can use this feature to implement augmentative and alternative communication systems that enable people with disabilities to communicate using synthesized speech.
 

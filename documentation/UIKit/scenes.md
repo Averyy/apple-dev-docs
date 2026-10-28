@@ -5,7 +5,7 @@
 
 Manage multiple instances of your app’s UI simultaneously, and direct resources to the appropriate instance of your UI.
 
-#### Overview
+## Overview
 
 UIKit manages each instance of your app’s UI using a [`UIWindowScene`](./uiwindowscene.md) object. A *scene* contains the windows and view controllers for presenting one instance of your UI. Each scene also has a corresponding [`UIWindowSceneDelegate`](./uiwindowscenedelegate.md) object, which you use to coordinate interactions between UIKit and your app. Scenes run concurrently with each other, sharing the same memory and app process space. As a result, a single app may have multiple scenes and scene delegate objects active at the same time.
 

@@ -24,7 +24,7 @@ protocol HMHomeManagerDelegate : NSObjectProtocol
 @protocol HMHomeManagerDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Adopt this protocol to find out about changes made outside your app to the set of homes in the HomeKit database, like when homes are added or removed by another app. You also rely on this protocol when you first create an [`HMHomeManager`](./hmhomemanager.md) instance. The home manager calls the [`homeManagerDidUpdateHomes(_:)`](./hmhomemanagerdelegate/homemanagerdidupdatehomes%28_%29.md) method to indicate that it has finished its initial load of data from the HomeKit database.
 

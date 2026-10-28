@@ -19,7 +19,7 @@ var lastComponentOfFileName: String { get set }
 @property (copy) NSString * lastComponentOfFileName;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the document name used during scripting. Note that this name may be different than the name used in [`fileURL`](./fileurl.md).
 

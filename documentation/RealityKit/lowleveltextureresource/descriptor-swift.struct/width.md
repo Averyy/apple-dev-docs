@@ -18,7 +18,7 @@ The width of the texture image for the base mipmap level, in pixels.
 var width: Int { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Corresponds to `MTLTextureDescriptor.width`.
 

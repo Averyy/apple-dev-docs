@@ -22,11 +22,11 @@ init(code: INCancelRideIntentResponseCode, userActivity: NSUserActivity?)
 - (instancetype) initWithCode:(INCancelRideIntentResponseCode) code userActivity:(NSUserActivity *) userActivity;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized response object or `nil` if the object could not be created.
 
-#### Discussion
+## Discussion
 
 After initializing the response object, update the [`cancellationFee`](./cancellationfee.md) and [`cancellationFeeThreshold`](./cancellationfeethreshold.md) properties with any relevant cancellation conditions. Siri or Maps notifies the user about any proposed cancellation fees during the confirmation phase.
 

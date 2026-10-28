@@ -18,7 +18,7 @@ Optionally preprocess the weights with access to safetensor metadata.
 func sanitize(weights: [String : MLXArray], metadata: [String : String]) throws -> [String : MLXArray]
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation forwards to [`sanitize(weights:)`](./sanitize%28weights%29.md). Models can override this to inspect metadata (e.g. check `metadata["format"] == "mlx"`) and skip or customize sanitization accordingly.
 

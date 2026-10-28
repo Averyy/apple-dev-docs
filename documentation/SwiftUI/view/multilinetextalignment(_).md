@@ -22,11 +22,11 @@ nonisolated
 func multilineTextAlignment(_ alignment: TextAlignment) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that aligns the lines of multiline [`Text`](../text.md) instances it contains.
 
-#### Discussion
+## Discussion
 
 Use this modifier to set an alignment for a multiline block of text. For example, the modifier centers the contents of the following [`Text`](../text.md) view:
 

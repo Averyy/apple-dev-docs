@@ -24,7 +24,7 @@ var pixelWidth: Int { get }
 @property (nonatomic, assign, readonly) NSUInteger pixelWidth;
 ```
 
-#### Discussion
+## Discussion
 
 If the asset’s content has been edited, this property describes the size of the current version of the asset.
 

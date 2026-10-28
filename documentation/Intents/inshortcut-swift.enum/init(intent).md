@@ -19,7 +19,7 @@ Creates a shortcut with the specified intent.
 init?(intent: INIntent)
 ```
 
-#### Discussion
+## Discussion
 
 Returns `nil` for invalid intents.
 

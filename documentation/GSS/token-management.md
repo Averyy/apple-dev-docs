@@ -5,7 +5,7 @@
 
 Establish secure communication with tokens.
 
-#### Overview
+## Overview
 
 The basic unit of currency in the GSS-API is the token. Applications using the GSS-API communicate with each other by using tokens, both for exchanging data and for making security arrangements. Tokens are declared as [`gss_buffer_t`](./gss_buffer_t.md) data types and are opaque to applications.
 

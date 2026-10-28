@@ -19,7 +19,7 @@ class NSUserAutomatorTask
 @interface NSUserAutomatorTask : NSUserScriptTask
 ```
 
-#### Overview
+## Overview
 
 The [`NSUserAutomatorTask`](./nsuserautomatortask.md) class is intended to run Automator workflows from your application. It is intended to execute user-supplied workflows, and will execute them outside of the application’s sandbox, if any.
 

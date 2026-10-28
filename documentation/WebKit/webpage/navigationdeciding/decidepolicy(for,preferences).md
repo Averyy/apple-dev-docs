@@ -21,11 +21,11 @@ Determines permission to navigate to new content based on the specified preferen
 mutating func decidePolicy(for action: WebPage.NavigationAction, preferences: inout WebPage.NavigationPreferences) async -> WKNavigationActionPolicy
 ```
 
-#### Return Value
+## Return Value
 
 The navigation policy for the action.
 
-#### Discussion
+## Discussion
 
 The web page calls this method after the interaction occurs but before it attempts to load any content.
 

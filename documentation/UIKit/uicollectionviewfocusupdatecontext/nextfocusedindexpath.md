@@ -23,7 +23,7 @@ var nextFocusedIndexPath: IndexPath? { get }
 @property (nonatomic, strong, readonly, nullable) NSIndexPath * nextFocusedIndexPath;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the index path only when the view receiving focus belongs to a cell of the collection view. If focus is moving to a view outside of the collection view and its cells, this property is `nil`.
 

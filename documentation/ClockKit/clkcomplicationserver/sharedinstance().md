@@ -21,7 +21,7 @@ class func sharedInstance() -> Self
 + (instancetype) sharedInstance;
 ```
 
-#### Discussion
+## Discussion
 
 Always use this method to retrieve the shared complication server object. Don’t try to create instances of the object yourself.
 

@@ -24,7 +24,7 @@ static OSStringPtr withCString(const char *cString);
 static OSPtr<OSString> withCString(const char *cString);
 ```
 
-#### Return Value
+## Return Value
 
 NULL on failure, otherwise the allocated OSString with reference count 1 to be released by the caller.
 

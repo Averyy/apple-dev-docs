@@ -21,7 +21,7 @@ Creates a regular expression from the given string, using the specified capture 
 init(_ pattern: String, as outputType: Output.Type = Output.self) throws
 ```
 
-#### Discussion
+## Discussion
 
 You can use this initializer to create a `Regex` instance from a regular expression that you have stored in `pattern` when you know the capture structure of the regular expression in advance.
 

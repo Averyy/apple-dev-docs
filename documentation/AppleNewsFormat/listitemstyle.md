@@ -15,13 +15,13 @@ The object for defining the style for bulleted or numbered lists in an article.
 object ListItemStyle
 ```
 
-#### Discussion
+## Discussion
 
 Use the `ListItemStyle` object to define text formatting for a bulleted (unordered) or numbered (ordered) list. Put `listItemStyle` inside a [`TextStyle`](./textstyle.md) object or [`ComponentTextStyle`](./componenttextstyle.md) object and set the text component’s `format` property to `html`. See [Using HTML with Apple News Format](../AppleNews/using-html-with-apple-news-format.md).
 
 You can use this object in [`TextStyle`](./textstyle.md) and [`ComponentTextStyle`](./componenttextstyle.md).
 
-##### Example
+### Example
 
 ```json
 {

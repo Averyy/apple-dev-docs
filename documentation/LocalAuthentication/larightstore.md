@@ -23,7 +23,7 @@ class LARightStore
 @interface LARightStore : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use an [`LARightStore`](./larightstore.md) along with an [`LARight`](./laright.md) to make secrets accessible only after certain conditions, including authentication, are met. Storing secrets this way lets you tie the availability of sensitive resources to the authorization status of the user.
 

@@ -16,7 +16,7 @@ struct vnop_inactive_args {
 };
 ```
 
-#### Discussion
+## Discussion
 
 VNOP_READLINK() gets the path stored in a symbolic link; it is called by namei() and the readlink() system call.
 

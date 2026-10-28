@@ -19,11 +19,11 @@ func MDQueryExecute(_ query: MDQuery!, _ optionFlags: CFOptionFlags) -> Bool
 Boolean MDQueryExecute(MDQueryRef query, CFOptionFlags optionFlags);
 ```
 
-#### Return Value
+## Return Value
 
 Returns `TRUE` if the query was started, `FALSE` otherwise. Queries cannot be executed more than once.
 
-#### Discussion
+## Discussion
 
 Queries only gather results or process updates while the current thread's run loop is running.
 

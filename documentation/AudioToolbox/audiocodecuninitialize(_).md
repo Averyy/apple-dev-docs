@@ -24,11 +24,11 @@ func AudioCodecUninitialize(_ inCodec: AudioCodec) -> OSStatus
 extern OSStatus AudioCodecUninitialize(AudioCodec inCodec);
 ```
 
-#### Return Value
+## Return Value
 
 Returns `NoErr` if successful, otherwise, a result code. See `Result Codes` for a list of possible values.
 
-#### Discussion
+## Discussion
 
 This function returns the codec to the uninitialized state. The codec may then be configured freely. This function does not flush the input buffer or clear input and output formats, magic cookie data, and other state variables. It is not necessary to call this function before closing the codec.
 

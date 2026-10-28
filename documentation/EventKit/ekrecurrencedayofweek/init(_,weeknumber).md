@@ -24,7 +24,7 @@ convenience init(_ dayOfTheWeek: EKWeekday, weekNumber: Int)
 + (instancetype) dayOfWeek:(EKWeekday) dayOfTheWeek weekNumber:(NSInteger) weekNumber;
 ```
 
-#### Return Value
+## Return Value
 
 The new day of the week.
 

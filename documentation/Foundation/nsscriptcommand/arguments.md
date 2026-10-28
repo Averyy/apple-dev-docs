@@ -20,7 +20,7 @@ var arguments: [String : Any]? { get set }
 @property (copy, nullable) NSDictionary<NSString *,id> * arguments;
 ```
 
-#### Discussion
+## Discussion
 
 Each argument in the dictionary is identified by the same name key used for the argument in the command’s class declaration in the script suite file.
 

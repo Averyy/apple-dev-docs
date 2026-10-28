@@ -16,11 +16,11 @@ Creates the server side of an XPC service using the specified service name.
 extern xpc_listener_txpc_listener_create(const char *service, dispatch_queue_t target_queue, xpc_listener_create_flags_t flags, xpc_listener_incoming_session_handler_t incoming_session_handler, xpc_rich_error_t*error_out);
 ```
 
-#### Return Value
+## Return Value
 
 If successful, an activated listener ready to accept incoming session requests; otherwise [`nil`](../ObjectiveC/nil-227m0.md).
 
-#### Discussion
+## Discussion
 
 Listener creation fails if the XPC service is either not found or is unavailable.
 

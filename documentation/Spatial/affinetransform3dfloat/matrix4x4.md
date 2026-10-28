@@ -23,7 +23,7 @@ var matrix4x4: simd_float4x4 { get }
 static simd_float4x4 SPAffineTransform3DFloatGet4x4Matrix(SPAffineTransform3DFloat transform);
 ```
 
-#### Discussion
+## Discussion
 
 Returns a 4 x 4 matrix constructed from the affine transform’s underlying matrix.
 

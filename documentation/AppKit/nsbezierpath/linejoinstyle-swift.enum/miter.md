@@ -19,7 +19,7 @@ case miter
 NSLineJoinStyleMiter
 ```
 
-#### Discussion
+## Discussion
 
 Here is an example of the appearance of this style:
 

@@ -15,11 +15,11 @@ Allocates and initializes an instance of the audio stream class.
 static OSSharedPtr<IOUserAudioStream> Create(IOUserAudioDriver *in_driver, IOUserAudioStreamDirection in_direction, IOMemoryDescriptor *in_io_memory_descriptor);
 ```
 
-#### Return Value
+## Return Value
 
 A poiner to an [`IOUserAudioStream`](../iouseraudiostream.md), if allocation and initialization succeeded.
 
-#### Discussion
+## Discussion
 
 If you subclass [`IOUserAudioStream`](../iouseraudiostream.md) to override this class’ behavior, don’t use [`Create`](./create.md) to allocate and initialize the custom subclass.
 

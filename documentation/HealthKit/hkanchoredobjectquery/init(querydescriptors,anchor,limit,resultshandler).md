@@ -24,7 +24,7 @@ init(queryDescriptors: [HKQueryDescriptor], anchor: HKQueryAnchor?, limit: Int, 
 - (instancetype) initWithQueryDescriptors:(NSArray<HKQueryDescriptor *> *) queryDescriptors anchor:(HKQueryAnchor *) anchor limit:(NSInteger) limit resultsHandler:(void (^)(HKAnchoredObjectQuery *query, NSArray<__kindof HKSample *> *sampleObjects, NSArray<HKDeletedObject *> *deletedObjects, HKQueryAnchor *newAnchor, NSError *error)) handler;
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to create an anchored object query for data that matches any of the [`HKQueryDescriptor`](../hkquerydescriptor.md) objects. Each descriptor can specify a different data type.
 

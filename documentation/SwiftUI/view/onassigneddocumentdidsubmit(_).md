@@ -19,11 +19,11 @@ Adds an action to perform after submitting an assigned document.
 @preconcurrency func onAssignedDocumentDidSubmit(_ action: @escaping (URL) -> Void) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that executes the specified action after assigned document submission.
 
-#### Discussion
+## Discussion
 
 This action runs only after successful submission, regardless of whether you provided an [`onAssignedDocumentWillSubmit(_:)`](./onassigneddocumentwillsubmit%28_%29.md) action.
 

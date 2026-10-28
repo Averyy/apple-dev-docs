@@ -15,15 +15,15 @@ This is the callback that copies the information.
 typedef CFStringRef (*WSClientContextCopyDescriptionCallBackProcPtr)(void *info);
 ```
 
-#### Return Value
+## Return Value
 
 A CFStringRef containing the client context information.
 
-#### Discussion
+## Discussion
 
 If your callback is named MyInfoCopyCallback, declare it like this:
 
-##### Discussion
+### Discussion
 
 Your callback is passed a  a pointer to private data for you to copy.
 

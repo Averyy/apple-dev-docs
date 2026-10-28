@@ -24,7 +24,7 @@ protocol MTLIndirectRenderCommand : NSObjectProtocol
 @protocol MTLIndirectRenderCommand <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Don’t implement this protocol; you get instances of this type by asking an [`MTLIndirectCommandBuffer`](./mtlindirectcommandbuffer.md) for them.
 

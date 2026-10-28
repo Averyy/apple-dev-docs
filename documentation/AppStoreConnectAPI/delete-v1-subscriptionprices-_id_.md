@@ -13,7 +13,7 @@ Delete a scheduled price change for an auto-renewable subscription.
 
 - [Configuring subscription prices across territories](./configuring-subscription-prices-across-territories.md)
 
-#### Discussion
+## Discussion
 
 > **Note**:  Changes that you make to product metadata with the App Store Connect API can take up to 1 hour to appear in the sandbox environment.
 

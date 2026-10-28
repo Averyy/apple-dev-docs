@@ -22,7 +22,7 @@ nonisolated
 init(wrappedValue thunk: @autoclosure @escaping () -> ObjectType)
 ```
 
-#### Discussion
+## Discussion
 
 You typically don’t call this initializer directly. Instead, SwiftUI calls it for you when you declare a property with the `@StateObject` attribute in an [`App`](../app.md), [`Scene`](../scene.md), or [`View`](../view.md) and provide an initial value:
 
@@ -45,7 +45,7 @@ var body: some View {
 }
 ```
 
-##### Initialize using external data
+### Initialize using external data
 
 If the initial state of a state object depends on external data, you can call this initializer directly. However, use caution when doing this, because SwiftUI only initializes the object once during the lifetime of the view — even if you call the state object initializer more than once — which might result in unexpected behavior. For more information and an example, see [`StateObject`](../stateobject.md).
 

@@ -23,7 +23,7 @@ var forwardList: [WKBackForwardListItem] { get }
 @property (nonatomic, copy, readonly) NSArray<WKBackForwardListItem *> * forwardList;
 ```
 
-#### Discussion
+## Discussion
 
 The items are in the order in which the web view originally visited them.
 

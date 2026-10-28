@@ -17,7 +17,7 @@ Stops the session and terminates media playback on the remote device.
 - (void) stop;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to end the playback session and clean up resources on both the local and remote devices. After calling this method, the session is terminated and further calls to session methods will have no effect.
 

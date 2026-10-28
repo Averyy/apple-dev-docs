@@ -18,7 +18,7 @@ The buffer underrun count.
 var sinkBufferUnderrunCount: Int? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This value is a number the system increments whenever you’re not servicing buffers fast enough.
 

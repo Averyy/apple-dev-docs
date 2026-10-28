@@ -5,7 +5,7 @@
 
 Control the caching modes, disk synchronization, and macOS auxiliary storage options of VMs.
 
-#### Overview
+## Overview
 
 These are values you use to control aspects of the operation of the virtual drives for guest VMs and the auxiliary storage of macOS guest VMs.
 

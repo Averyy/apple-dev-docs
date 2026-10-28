@@ -24,11 +24,11 @@ func MusicPlayerSetSequence(_ inPlayer: MusicPlayer, _ inSequence: MusicSequence
 extern OSStatus MusicPlayerSetSequence(MusicPlayer inPlayer, MusicSequence inSequence);
 ```
 
-#### Return Value
+## Return Value
 
 A result code
 
-#### Discussion
+## Discussion
 
 A music player must be stopped to call this function on it. Setting a music sequence for a player overrides the previously set sequence.
 

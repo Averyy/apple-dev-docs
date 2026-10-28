@@ -21,7 +21,7 @@ Fetches pending remote changes from the server using the specified options.
 - (void) fetchChangesWithOptions:(CKSyncEngineFetchChangesOptions *) options completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 If the fetch fails, the completion handler’s `error` parameter is an object that describes that failure; otherwise, it’s `nil`.
 

@@ -19,7 +19,7 @@ func alignJustified(_ sender: Any?)
 - (void) alignJustified:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 This method behaves similar to the [`alignJustified(_:)`](../../AppKit/nstextview/alignjustified%28_%29.md) method in [`NSTextView`](../../AppKit/nstextview.md).
 

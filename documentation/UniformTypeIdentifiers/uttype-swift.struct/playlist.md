@@ -21,7 +21,7 @@ A base type that represents a playlist.
 static var playlist: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.playlist`.
 

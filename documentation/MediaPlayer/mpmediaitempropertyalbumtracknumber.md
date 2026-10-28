@@ -25,7 +25,7 @@ let MPMediaItemPropertyAlbumTrackNumber: String
 extern NSString * const MPMediaItemPropertyAlbumTrackNumber;
 ```
 
-#### Discussion
+## Discussion
 
 This value is an [`NSNumber`](../Foundation/nsnumber.md) object representing an [`NSUInteger`](../ObjectiveC/nsuinteger.md) data type.
 

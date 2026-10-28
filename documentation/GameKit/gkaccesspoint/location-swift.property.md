@@ -28,7 +28,7 @@ var location: GKAccessPoint.Location { get set }
 
 - [Adding an access point to your game](../adding-an-access-point-to-your-game.md)
 
-#### Discussion
+## Discussion
 
 Use this property to set one of four corners to display the access point in your game. The default for left-to-right languages is the upper-left corner, and for right-to-left languages, it’s the upper-right corner.
 

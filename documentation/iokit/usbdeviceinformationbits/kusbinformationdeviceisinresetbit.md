@@ -14,7 +14,7 @@
 kUSBInformationDeviceIsInResetBit = 6
 ```
 
-#### Discussion
+## Discussion
 
 The hub port to which the USB device is attached is being reset
 

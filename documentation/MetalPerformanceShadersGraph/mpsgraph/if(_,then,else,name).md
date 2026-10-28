@@ -24,7 +24,7 @@ func `if`(_ predicateTensor: MPSGraphTensor, then thenBlock: @escaping MPSGraphI
 - (NSArray<MPSGraphTensor *> *) ifWithPredicateTensor:(MPSGraphTensor *) predicateTensor thenBlock:(MPSGraphIfThenElseBlock) thenBlock elseBlock:(MPSGraphIfThenElseBlock) elseBlock name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 Results If no error, the tensors returned by user. If not empty, user must define both then/else block, both should have same number of arguments and each corresponding argument should have same elementTypes.
 

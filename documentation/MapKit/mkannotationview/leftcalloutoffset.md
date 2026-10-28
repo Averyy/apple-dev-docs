@@ -20,7 +20,7 @@ var leftCalloutOffset: CGPoint { get set }
 @property (nonatomic) CGPoint leftCalloutOffset;
 ```
 
-#### Discussion
+## Discussion
 
 This property specifies where the map view shows the anchor of the callout when it orients off the left side of the annotation view.
 

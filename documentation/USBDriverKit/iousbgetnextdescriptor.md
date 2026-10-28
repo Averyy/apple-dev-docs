@@ -15,11 +15,11 @@ Gets the next descriptor in a configuration descriptor.
 const IOUSBDescriptorHeader *IOUSBGetNextDescriptor(const IOUSBConfigurationDescriptor *configurationDescriptor, const IOUSBDescriptorHeader *currentDescriptor);
 ```
 
-#### Return Value
+## Return Value
 
 The descriptor pointer, or `NULL` if no descriptor can be returned.
 
-#### Discussion
+## Discussion
 
 This method advances the current descriptor by its length, and validates that the new descriptor fits within the bounds of the configuration descriptor. Passing `NULL` for the `currentDescriptor` argument returns the first descriptor after the configuration descriptor.
 

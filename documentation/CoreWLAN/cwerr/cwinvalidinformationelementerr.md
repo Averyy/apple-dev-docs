@@ -17,7 +17,7 @@ case cwInvalidInformationElementErr
 kCWInvalidInformationElementErr
 ```
 
-#### Discussion
+## Discussion
 
 Invalid information element included in association request.
 

@@ -18,11 +18,11 @@ OSStatus PMSessionConvertOldPrintRecord (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../core_printing.md#1670007).
 
-#### Overview
+## Overview
 
 You must call this function between the creation and release of a printing session. See the function [`PMCreateSession`](../api-1463247-pmcreatesession.md).
 
@@ -30,7 +30,7 @@ You can use `PMSessionConvertOldPrintRecord` to create page format and print set
 
 In macOS, the function assumes the print record to be converted is a LaserWriter 8 print record.
 
-##### Special Considerations
+### Special Considerations
 
 If you need to convert a Mac OS 9 print record into data you can use in macOS, you should extract the page size data from the print record and use the function [`PMCreatePageFormatWithPMPaper`](../api-1459274-pmcreatepageformatwithpmpaper.md) to create a `PMPageFormat` object that corresponds to that data.
 

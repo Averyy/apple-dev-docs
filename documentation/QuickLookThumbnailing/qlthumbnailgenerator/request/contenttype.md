@@ -23,7 +23,7 @@ var contentType: UTType! { get set }
 @property (nonatomic, copy, null_resettable) UTType * contentType;
 ```
 
-#### Discussion
+## Discussion
 
 Quick Look Thumbnailing uses the content type of the source data to determine the provider of the thumbnail and the icon styles it applies when you request [`iconMode`](./iconmode.md).
 

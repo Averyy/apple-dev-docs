@@ -19,7 +19,7 @@ func setNextState()
 - (void) setNextState;
 ```
 
-#### Discussion
+## Discussion
 
 If a cell has three states, it cycles in this order: on, off, mixed, on, off, and so forth. If the cell has only two states, it toggles between them.
 

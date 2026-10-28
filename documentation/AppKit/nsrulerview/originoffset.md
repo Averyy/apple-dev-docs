@@ -19,7 +19,7 @@ var originOffset: CGFloat { get set }
 @property CGFloat originOffset;
 ```
 
-#### Discussion
+## Discussion
 
 The default offset is 0.0, meaning that the ruler origin coincides with the bounds origin of the document view.
 

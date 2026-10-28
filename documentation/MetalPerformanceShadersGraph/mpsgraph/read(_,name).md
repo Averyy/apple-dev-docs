@@ -24,7 +24,7 @@ func read(_ variable: MPSGraphTensor, name: String?) -> MPSGraphTensor
 - (MPSGraphTensor *) readVariable:(MPSGraphTensor *) variable name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor object.
 

@@ -21,7 +21,7 @@ The sync engine is about to send changes to the server.
 case willSendChanges(CKSyncEngine.Event.WillSendChanges)
 ```
 
-#### Discussion
+## Discussion
 
 A send operation may send all local changes, only changes to a specific set of records, or only those in a specific record zone. Use this case’s associated value to determine the scope for the current operation. For more information, see [`CKSyncEngine.SendChangesContext`](../sendchangescontext.md).
 

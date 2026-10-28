@@ -24,7 +24,7 @@ let HMCharacteristicTypeSupportedAudioStreamConfiguration: String
 extern NSString * const HMCharacteristicTypeSupportedAudioStreamConfiguration;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is TLV8-encoded data.
 

@@ -18,7 +18,7 @@ Creates a descriptor for a surface shader that accepts a custom uniforms argumen
 init<UniformsType>(named name: String, in library: any MTLLibrary, constantValues: MTLFunctionConstantValues = .init(), uniformsType: UniformsType.Type)
 ```
 
-#### Discussion
+## Discussion
 
 Equivalent to calling [`init(named:in:constantValues:uniformsSize:)`](./init%28named,in,constantvalues,uniformssize%29.md) with `MemoryLayout<UniformsType>.size`.
 

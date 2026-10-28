@@ -21,7 +21,7 @@ The position of the first element in a non-empty collection.
 var startIndex: AnyBidirectionalCollection<Element>.Index { get }
 ```
 
-#### Discussion
+## Discussion
 
 In an empty collection, `startIndex == endIndex`.
 

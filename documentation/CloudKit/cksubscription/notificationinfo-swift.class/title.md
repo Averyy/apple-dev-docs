@@ -24,7 +24,7 @@ var title: String? { get set }
 @property (copy, nullable) NSString * title;
 ```
 
-#### Discussion
+## Discussion
 
 CloudKit uses this value to set the `title` push notification property.
 

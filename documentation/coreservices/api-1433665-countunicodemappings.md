@@ -15,11 +15,11 @@ Counts available mappings that meet the specified matchingcriteria.
 OSStatus CountUnicodeMappings(OptionBits iFilter, ConstUnicodeMappingPtr iFindMapping, ItemCount *oActualCount);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./carbon_core/text_encoding_conversion_manager.md#1664324).
 
-#### Discussion
+## Discussion
 
 You can filter on any of the three text encoding subfieldsof the Unicode mapping structure’s `unicodeEncoding` specificationand on any of the three text encoding subfields of the structure’s `otherEncoding` specification.The `iFilter` parameterconsists of a set of six control flags that you set to identifywhich of the corresponding six subfields to include in the matchcount. No filtering is performed on fields for which you do notset the corresponding filter control flag.  
 

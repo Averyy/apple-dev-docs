@@ -20,11 +20,11 @@ Extracts root motion from the specified joint.
 static func extractRootMotion(jointName: String, options: SampledAnimation<Value>.SkeletalAnimationOperation.RootMotionOptions = .translationXZ, lockPosition: Transform? = nil) -> SampledAnimation<Value>.SkeletalAnimationOperation
 ```
 
-#### Return Value
+## Return Value
 
 A [`SampledAnimation.SkeletalAnimationOperation`](../skeletalanimationoperation.md) that, when processed, produces an [`AnimationGroup`](../../animationgroup.md) containing both the modified skeletal animation and the extracted transform sampled animation used for root motion.
 
-#### Discussion
+## Discussion
 
 Removes the specified transform components from the joint and returns them as a separate `SampledAnimation<Transform>` in the resulting [`AnimationGroup`](../../animationgroup.md). The skeletal animation will have the extracted motion removed. The returned `SampledAnimation<Transform>` has [`bindTarget`](../bindtarget.md) set to [`BindTarget.rootMotion`](../../bindtarget/rootmotion.md) automatically — playing the group drives the entity’s root motion and emits [`AnimationEvents.RootMotionDidUpdate`](../../animationevents/rootmotiondidupdate.md) events.
 

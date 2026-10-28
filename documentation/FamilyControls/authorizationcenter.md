@@ -16,7 +16,7 @@ The center for requesting authorization to provide parental controls.
 class AuthorizationCenter
 ```
 
-#### Overview
+## Overview
 
 To authorize your app so that it can provide parental controls, access the shared `AuthorizationCenter` instance.
 

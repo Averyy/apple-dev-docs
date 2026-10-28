@@ -24,7 +24,7 @@ init(amount: NSDecimalNumber, currencyCode: String)
 - (instancetype) initWithAmount:(NSDecimalNumber *) amount currencyCode:(NSString *) currencyCode;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized currency amount object or `nil` if the object could not be created.
 

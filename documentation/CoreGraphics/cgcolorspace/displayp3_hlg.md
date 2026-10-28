@@ -25,7 +25,7 @@ class let displayP3_HLG: CFString
 extern CFStringRef const kCGColorSpaceDisplayP3_HLG;
 ```
 
-#### Discussion
+## Discussion
 
 This color space was created by Apple Inc. This color space uses the DCI P3 primaries, a D65 white point, and the Hybrid Log-Gamma (HLG) transfer function. For more information on HLG, see [https://www.itu.int/rec/R-REC-BT.2100](https://www.itu.int/rec/R-REC-BT.2100).
 

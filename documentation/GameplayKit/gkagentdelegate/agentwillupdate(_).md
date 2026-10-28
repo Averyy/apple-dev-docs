@@ -24,7 +24,7 @@ optional func agentWillUpdate(_ agent: GKAgent)
 - (void) agentWillUpdate:(GKAgent *) agent;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method when you want to update the agent simulation with data from an external source, such as node position and orientation information updated by the SceneKit or SpriteKit physics engine. Set the [`position`](../gkagent2d/position.md) and [`rotation`](../gkagent2d/rotation.md) properties of the agent (as a [`GKAgent2D`](../gkagent2d.md) or [`GKAgent3D`](../gkagent3d.md) object) so that the next simulation step will take your changes to those properties into account.
 

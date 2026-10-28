@@ -19,7 +19,7 @@ var drawsBackground: Bool { get set }
 @property BOOL drawsBackground;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the cell draws its background color. In order to prevent inconsistent rendering, background color rendering is automatically disabled for rounded-bezel text fields.
 

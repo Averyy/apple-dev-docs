@@ -12,11 +12,11 @@ Enrich your app’s user experience by supporting standard and custom gesture in
 - Mac Catalyst 13.0+
 - Xcode 12.0+
 
-#### Overview
+## Overview
 
 Gesture interaction is one of the most intuitive user experiences on iOS, and gesture recognizers provide an easy way for apps to implement it. iOS defines some [standard gestures](https://developer.apple.com/design/human-interface-guidelines/ios/user-interaction/gestures/), and apps can use system-provided recognizers to support these standard gestures, or create custom ones for non-standard gestures. This sample demonstrates how to use standard gesture recognizers by adding pan, pinch, and rotation support for three colored views, which this sample calls *pieces*, and how to implement a custom recognizer to reset the pieces to their initial state.
 
-##### Set up a gesture recognizer
+### Set up a gesture recognizer
 
 To support gesture interaction on a view, create an appropriate gesture recognizer and associate it with the view by calling the [`addGestureRecognizer(_:)`](./uiview/addgesturerecognizer%28_%29.md) method, as shown below.
 
@@ -33,7 +33,7 @@ Xcode includes UIKit’s standard gesture recognizers in its Objects library so 
 
 With these steps, Xcode automatically adds the recognizer into the storyboard and associates it with the view. Developers can then add an action for the recognizer the same way they do for other UI elements.
 
-##### Handle pan, pinch, and rotation gestures
+### Handle pan, pinch, and rotation gestures
 
 This sample uses pan, pinch, and rotation gestures to move, scale, and rotate the views. When users pan a view, UIKit triggers the associated action method, which is `panPiece(_:)` in this sample, passing in a [`UIPanGestureRecognizer`](./uipangesturerecognizer.md) instance that carries a translation. The method then calculates and moves the view to the new position, and clears the translation by setting it to `.zero` so next time, its value is still the delta relative to the current position.
 
@@ -67,7 +67,7 @@ piece.layer.anchorPoint = CGPoint(x: anchorX, y: anchorY)
 piece.center = locationInSuperview
 ```
 
-##### Allow recognizing multiple gestures simultaneously
+### Allow recognizing multiple gestures simultaneously
 
 Users sometimes intuitively expect multiple gestures to work simultaneously, like pinching and rotating a view at the same time. This sample allows that by implementing the following [`UIGestureRecognizerDelegate`](./uigesturerecognizerdelegate.md) method, which returns `true` to allow all gesture recognizers in this sample to work together.
 
@@ -88,7 +88,7 @@ For gesture recognizers that are in the storyboard, this sample sets up their `d
 
 `UIGestureRecognizerDelegate` provides methods for apps to control the order in which gestures are recognized as well. For more information on gesture recognition order, see [Preferring one gesture over another](./preferring-one-gesture-over-another.md).
 
-##### Create a custom gesture recognizer
+### Create a custom gesture recognizer
 
 This sample creates a custom gesture recognizer, `ResetGestureRecognizer`, which recognizes a gesture that contains at least three horizontal turnings. Users can use the gesture to easily reset the views to their initial state. To do that, move the views away from their initial positions, then put one finger on the area the colored views don’t cover, and move right, left, right, and left (or vice versa), like shaking the finger on the screen.
 

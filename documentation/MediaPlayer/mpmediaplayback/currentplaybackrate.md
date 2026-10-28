@@ -24,7 +24,7 @@ var currentPlaybackRate: Float { get set }
 @property (nonatomic) float currentPlaybackRate;
 ```
 
-#### Discussion
+## Discussion
 
 This value represents a multiplier for the default playback rate of the current item. A value of `0.0` indicates that playback is stopped, while a value of `1.0` indicates that playback is occurring at normal speed. Positive values indicate forward playback while negative values indicate reverse playback.
 

@@ -25,11 +25,11 @@ func SCNVector4EqualToVector4(_ a: SCNVector4, _ b: SCNVector4) -> Bool
 extern bool SCNVector4EqualToVector4(SCNVector4 a, SCNVector4 b);
 ```
 
-#### Return Value
+## Return Value
 
 True if each component of `a` is exactly equal to `b`.
 
-#### Discussion
+## Discussion
 
 This function performs a numeric (not bitwise) comparison of each pair of component values.
 

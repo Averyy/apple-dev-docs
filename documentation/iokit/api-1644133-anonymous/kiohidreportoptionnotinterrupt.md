@@ -14,7 +14,7 @@
 kIOHIDReportOptionNotInterrupt = 0x100
 ```
 
-#### Discussion
+## Discussion
 
 Tells method that the report passed was not interrupt driven.
 

@@ -18,7 +18,7 @@ Adds an edge to the graph.
 final func addEdge(_ edge: ShaderGraph.Edge) throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: If the edge is invalid for this graph.
 

@@ -20,11 +20,11 @@ optional func splitView(_ splitView: NSSplitView, additionalEffectiveRectOfDivid
 - (NSRect) splitView:(NSSplitView *) splitView additionalEffectiveRectOfDividerAtIndex:(NSInteger) dividerIndex;
 ```
 
-#### Return Value
+## Return Value
 
 An additional rectangle, in the coordinate system that `splitView` defines, where mouse clicks can initiate divider dragging. Returning [`NSZeroRect`](../../Foundation/nszerorect.md) indicates no additional dragging rectangle is necessary.
 
-#### Discussion
+## Discussion
 
 If a split view has no delegate, or if its delegate doesn’t respond to this message, only mouse clicks within the effective frame of a divider initiate divider dragging.
 

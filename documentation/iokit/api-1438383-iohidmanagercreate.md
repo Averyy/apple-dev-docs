@@ -16,11 +16,11 @@ Creates an IOHIDManager object.
 IOHIDManagerRef IOHIDManagerCreate(CFAllocatorRef allocator, IOOptionBits options);
 ```
 
-#### Return Value
+## Return Value
 
 Returns a new IOHIDManagerRef.
 
-#### Discussion
+## Discussion
 
 The IOHIDManager object is meant as a global management system for communicating with HID devices.
 

@@ -19,7 +19,7 @@ class var selectedMenuItemTextColor: NSColor { get }
 @property (class, strong, readonly) NSColor * selectedMenuItemTextColor;
 ```
 
-#### Return Value
+## Return Value
 
 The system color used for text in selected menu items. For more information, see [`NSColor`](../nscolor.md).
 

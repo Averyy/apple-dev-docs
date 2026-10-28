@@ -22,7 +22,7 @@ nonisolated
 struct TabView<SelectionValue, Content> where SelectionValue : Hashable, Content : View
 ```
 
-#### Overview
+## Overview
 
 To create a user interface with tabs, place instances of [`Tab`](./tab.md)  in a `TabView`. On iOS, you can also use one of the badge modifiers, like [`badge(_:)`](./tabcontent/badge%28_%29.md), to assign a badge to each of the tabs.
 
@@ -81,7 +81,7 @@ TabView {
 .tabViewStyle(.page)
 ```
 
-##### Using tab sections
+### Using tab sections
 
 The [`sidebarAdaptable`](./tabviewstyle/sidebaradaptable.md) style supports declaring a secondary tab hierarchy by grouping tabs with a [`TabSection`](./tabsection.md).
 
@@ -116,7 +116,7 @@ TabView {
 .tabViewStyle(.sidebarAdaptable)
 ```
 
-##### Changing tab structure between horizontal and regular size classes
+### Changing tab structure between horizontal and regular size classes
 
 The following example shows a `TabView` with 4 tabs in compact and 5 tabs in regular. In compact, one of the tabs is a ‘Browse’ tab that displays a custom list view. This list view allows navigating to the destinations that are contained within the ‘Library’ and ‘Playlists’ sections in the horizontally regular size class. The navigation path and the selection state are updated when the number of tabs changes.
 
@@ -201,7 +201,7 @@ struct LibraryView: View {
 }
 ```
 
-##### Adding support for customization
+### Adding support for customization
 
 You can allow people to customize the tabs in a `TabView` by using `sidebarAdaptable` style with the [`tabViewCustomization(_:)`](./view/tabviewcustomization%28_%29.md) modifier. Customization allows people to drag tabs from the sidebar to the tab bar, hide tabs, and rearrange tabs in the sidebar.
 

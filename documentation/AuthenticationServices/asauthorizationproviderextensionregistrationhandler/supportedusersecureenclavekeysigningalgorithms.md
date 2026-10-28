@@ -17,7 +17,7 @@ optional var supportedUserSecureEnclaveKeySigningAlgorithms: [ASAuthorizationPro
 @property (readonly) NSArray<NSNumber *> * supportedUserSecureEnclaveKeySigningAlgorithms;
 ```
 
-#### Discussion
+## Discussion
 
 The supported user Secure Enclave Key signing algorithms.
 

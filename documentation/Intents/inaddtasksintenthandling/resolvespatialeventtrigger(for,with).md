@@ -29,7 +29,7 @@ optional func resolveSpatialEventTrigger(for intent: INAddTasksIntent) async -> 
 - (void) resolveSpatialEventTriggerForAddTasks:(INAddTasksIntent *) intent withCompletion:(void (^)(INSpatialEventTriggerResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve the location-based trigger associated with the new tasks. Use the intent object to obtain the trigger information, if any, suggested by the user. If the intent doesn’t contain any trigger information, and you do not require any, return a resolution indicating that you do not require a value. If the placemark information in the trigger is insufficient to identify the intended location, you might ask the user to choose from two to five triggers with different locations that match the provided placemark data.
 

@@ -24,7 +24,7 @@ class INSendMessageAttachment
 @interface INSendMessageAttachment : NSObject
 ```
 
-#### Overview
+## Overview
 
 When the type of a message is [`INOutgoingMessageType.outgoingMessageAudio`](./inoutgoingmessagetype/outgoingmessageaudio.md), the intent includes the audio recording as an [`INSendMessageAttachment`](./insendmessageattachment.md).
 

@@ -15,7 +15,7 @@ The date that the recipient received the message.
 @property (nonatomic, copy, readonly, nullable) NSDate * dateReceived;
 ```
 
-#### Discussion
+## Discussion
 
 This property is only available if the message has been delivered. For example, it isn’t present in a draft message.
 

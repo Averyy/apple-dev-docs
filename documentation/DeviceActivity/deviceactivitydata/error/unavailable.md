@@ -16,7 +16,7 @@ An error indicating data access is unavailable.
 case unavailable
 ```
 
-#### Discussion
+## Discussion
 
 To access data, the person must be in a region that supports data access.
 

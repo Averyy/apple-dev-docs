@@ -9,7 +9,7 @@ Returns a filtered, sorted, and paginated list of budget orders.
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 This endpoint finds budget orders by name, status, or date range, or retrieves them across an ad account. Narrow and order the result set with `filters`, `sorting`, and `pagination`.
 
@@ -17,7 +17,7 @@ See [`QueryFilterOperator`](./queryfilteroperator.md) for the full set of suppor
 
 Users with organization-level permissions don’t need the `X-AP-Context` header. Users limited to specific ad accounts must send it. See [Budget Orders Endpoints](./budget-orders-endpoints.md).
 
-##### Filterable Fields
+### Filterable Fields
 
 | Field | Type | Operators | Sortable | Description |
 | --- | --- | --- | --- | --- |
@@ -35,9 +35,9 @@ Users with organization-level permissions don’t need the `X-AP-Context` header
 
 The `value` and `invoiceDetail` fields aren’t filterable. The request body is a [`QueryRequest`](./queryrequest.md) composed of [`QueryFilter`](./queryfilter.md) conditions and [`QuerySort`](./querysort.md) directives ([`QuerySortOrder`](./querysortorder.md)), controlled by [`QueryPagination`](./querypagination.md).
 
-#### Payload Examples
+## Payload Examples
 
-##### Request
+### Request
 
 Query all active budget orders for an ad account, sorted by name.
 
@@ -66,7 +66,7 @@ POST /v1/shared-budgets/query
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {

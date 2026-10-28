@@ -21,7 +21,7 @@ func validateImpression(parameters: [String : Any], publicKey: String) throws
 - (BOOL) validateImpressionWithParameters:(NSDictionary<NSString *,id> *) parameters publicKey:(NSString *) publicKey error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 The cryptographic key pair you use for testing may be a different key pair than you use in production. For testing, use keys from the same key pair when you sign the ad impression and when you call [`validateImpression(parameters:publicKey:)`](./validateimpression%28parameters,publickey%29.md).
 

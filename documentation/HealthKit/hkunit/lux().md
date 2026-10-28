@@ -24,7 +24,7 @@ class func lux() -> Self
 + (instancetype) luxUnit;
 ```
 
-#### Return Value
+## Return Value
 
 A HealthKit unit for measuring illuminance in lux.
 

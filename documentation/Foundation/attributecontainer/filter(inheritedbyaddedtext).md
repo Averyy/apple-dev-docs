@@ -21,7 +21,7 @@ Returns a copy of the attribute container with only attributes that specify the 
 func filter(inheritedByAddedText: Bool) -> AttributeContainer
 ```
 
-#### Return Value
+## Return Value
 
 A copy of the attribute container with only attributes whose `inheritedByAddedText` property matches the provided value.
 

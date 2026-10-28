@@ -19,7 +19,7 @@ class PHProjectTypeDescription
 @interface PHProjectTypeDescription : NSObject
 ```
 
-#### Overview
+## Overview
 
 This object represents one project type choice presented in the project picker when a user is creating a project through project extensions. The [`PHProjectTypeDescriptionDataSource`](./phprojecttypedescriptiondatasource.md) object returns this descriptor from [`typeDescriptionDataSource(for:invalidator:)`](./phprojectextensioncontroller/typedescriptiondatasource%28for,invalidator%29.md).
 

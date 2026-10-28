@@ -25,7 +25,7 @@ var tunnelOverheadBytes: NSNumber? { get set }
 @property (copy, nullable) NSNumber * tunnelOverheadBytes;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is subtracted from the Maximum Transmission Unit (MTU) of the tunnel’s underlying physical network interface to compute the MTU of the TUN interface.
 

@@ -15,7 +15,7 @@ A pattern that indicates the pasteboard detects a string suitable for use as a w
 extern NSPasteboardDetectionPattern const NSPasteboardDetectionPatternProbableWebSearch;
 ```
 
-#### Return Value
+## Return Value
 
 NSString value, suitable for implementing “Paste and Search”
 

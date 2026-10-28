@@ -22,7 +22,7 @@ func webView(_ webView: WKWebView, dismissImmersiveEnvironment environment: WKIm
 - (void) webView:(WKWebView *) webView dismissImmersiveEnvironment:(WKImmersiveEnvironment *) environment completionHandler:(void (^)()) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Asks the delegate to dismiss an immersive environment.
 

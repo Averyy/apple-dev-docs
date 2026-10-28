@@ -24,7 +24,7 @@ class HKSeriesSample
 @interface HKSeriesSample : HKSample
 ```
 
-#### Overview
+## Overview
 
 Never instantiate [`HKSeriesSample`](./hkseriessample.md) objects directly. Instead, user one of the concrete subclasses (for example, the [`HKWorkoutRoute`](./hkworkoutroute.md) class).
 

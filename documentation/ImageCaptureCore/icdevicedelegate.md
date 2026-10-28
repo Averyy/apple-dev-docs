@@ -23,7 +23,7 @@ protocol ICDeviceDelegate : NSObjectProtocol
 @protocol ICDeviceDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Unless otherwise noted, all completion blocks execute on the calling thread.
 

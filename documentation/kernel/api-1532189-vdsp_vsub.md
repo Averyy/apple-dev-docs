@@ -15,7 +15,7 @@ Subtracts two single-precision vectors.
 void vDSP_vsub(const float *__B, vDSP_Stride __IB, const float *__A, vDSP_Stride __IA, float *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This function calculates the differences of the first `N` elements of input vectors `A` and `B`, writing the result to output vector `C`:
 

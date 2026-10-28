@@ -16,11 +16,11 @@ Creates a USB host object and sets up a communication channel to the kernel.
 - (instancetype) initWithIOService:(io_service_t) ioService options:(IOUSBHostObjectInitOptions) options queue:(dispatch_queue_t) queue error:(NSError **) error interestHandler:(IOUSBHostInterestHandler) interestHandler;
 ```
 
-#### Return Value
+## Return Value
 
 An [`IOUSBHostObject`](../iousbhostobject.md) instance, or `nil` on failure.
 
-#### Discussion
+## Discussion
 
 If the kernel [`IOUSBHostDevice`](../../kernel/iousbhostdevice.md) or [`IOUSBHostInterface`](../iousbhostinterface.md) is already open for exclusive access, the method returns `nil`. The method establishes exclusive ownership of the [`io_service_t`](../../kernel/io_service_t.md).
 

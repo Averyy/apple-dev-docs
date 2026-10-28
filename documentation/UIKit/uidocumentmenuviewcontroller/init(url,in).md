@@ -23,11 +23,11 @@ init(url: URL, in mode: UIDocumentPickerMode)
 - (instancetype) initWithURL:(NSURL *) url inMode:(UIDocumentPickerMode) mode;
 ```
 
-#### Return Value
+## Return Value
 
 Returns an initialized `UIDocumentMenuViewController` object, or `nil` if the object could not be successfully initialized.
 
-#### Discussion
+## Discussion
 
 The resulting document menu displays all the document pickers appropriate for the given mode.
 

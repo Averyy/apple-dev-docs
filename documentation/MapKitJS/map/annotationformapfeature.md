@@ -26,7 +26,7 @@ set annotationForMapFeature(
 );
 ```
 
-#### Discussion
+## Discussion
 
 You can choose to return the annotation the method provides with modified properties, or provide a new annotation to represent the map feature. If an annotation doesn’t return, MapKit JS uses the default annotation.
 

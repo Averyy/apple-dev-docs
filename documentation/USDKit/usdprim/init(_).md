@@ -20,7 +20,7 @@ Casts an object handle to a prim handle.
 init?(_ object: USDStage.Object)
 ```
 
-#### Discussion
+## Discussion
 
 Returns `nil` if the object is not a prim.
 

@@ -20,7 +20,7 @@ Replaces the layer’s contents with the USDA string.
 func importContents(from string: String) throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if the string cannot be parsed.
 

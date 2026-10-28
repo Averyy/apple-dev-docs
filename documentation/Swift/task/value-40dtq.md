@@ -23,7 +23,7 @@ var value: Success { get async }
 
 Available when `Success` conforms to `Sendable` and `Failure` is `Never`.
 
-#### Discussion
+## Discussion
 
 If the task hasn’t completed yet, accessing this property waits for it to complete and its priority increases to that of the current task. Note that this might not be as effective as creating the task with the correct priority, depending on the executor’s scheduling details.
 

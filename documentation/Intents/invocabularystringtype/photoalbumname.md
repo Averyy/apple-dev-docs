@@ -24,7 +24,7 @@ case photoAlbumName
 INVocabularyStringTypePhotoAlbumName
 ```
 
-#### Discussion
+## Discussion
 
 For example, you might include the string “WWDC 2015 Karaoke” for an album created by the user.
 

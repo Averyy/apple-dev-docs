@@ -21,7 +21,7 @@ The name of the entity.
 @preconcurrency var name: String { get set }
 ```
 
-#### Discussion
+## Discussion
 
 You can find an entity by name in a scene by calling the scene’s [`findEntity(named:)`](../scene/findentity%28named%29.md) method. Or you can recursively search among the children of a given entity by calling the entity’s [`findEntity(named:)`](./findentity%28named%29.md) method.
 

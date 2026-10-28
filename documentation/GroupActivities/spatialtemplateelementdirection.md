@@ -15,7 +15,7 @@ The initial direction a participant faces when an activity starts.
 struct SpatialTemplateElementDirection
 ```
 
-#### Overview
+## Overview
 
 A `SpatialTemplateElementDirection` type indicates where a participant faces at the start of an activity. You might configure participants to face your app’s content, another participant, or an arbitrary point in the shared coordinate system. You can also modify an existing direction value by adding an arbitrary amount of additional rotation. When a participant joins an activity, the system sets the initial orientation of their spatial Persona to the direction assigned to their seat position. If you don’t specify an initial direction for a seat, the participant faces your app’s content.
 

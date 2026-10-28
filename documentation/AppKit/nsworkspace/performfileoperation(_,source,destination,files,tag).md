@@ -19,11 +19,11 @@ func performFileOperation(_ operation: NSWorkspace.FileOperationName, source: St
 - (BOOL) performFileOperation:(NSWorkspaceFileOperationName) operation source:(NSString *) source destination:(NSString *) destination files:(NSArray *) files tag:(NSInteger *) tag;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the operation succeeded; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Some operations—such as moving, copying, and linking files—require a destination directory to be specified. If not, `destination` should be the empty string (`@""`). Before this method returns, it posts an [`didPerformFileOperationNotification`](./didperformfileoperationnotification.md) to the `NSWorkspace` object’s notification center.
 

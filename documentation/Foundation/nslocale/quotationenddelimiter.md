@@ -25,7 +25,7 @@ var quotationEndDelimiter: String { get }
 @property (copy, readonly) NSString * quotationEndDelimiter;
 ```
 
-#### Discussion
+## Discussion
 
 Examples of end quotation symbols include `"”"`, `"“"`, `"»"`, and `"」"`.
 

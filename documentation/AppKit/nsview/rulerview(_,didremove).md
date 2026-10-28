@@ -19,7 +19,7 @@ func rulerView(_ ruler: NSRulerView, didRemove marker: NSRulerMarker)
 - (void) rulerView:(NSRulerView *) ruler didRemoveMarker:(NSRulerMarker *) marker;
 ```
 
-#### Discussion
+## Discussion
 
 The client can take whatever action it needs based on this message, such as deleting a tab stop from the paragraph style or removing a layout guideline.
 

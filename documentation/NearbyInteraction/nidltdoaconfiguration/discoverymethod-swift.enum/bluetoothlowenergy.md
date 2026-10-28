@@ -21,7 +21,7 @@ case bluetoothLowEnergy
 NIDLTDOADiscoveryMethodBluetoothLowEnergy
 ```
 
-#### Discussion
+## Discussion
 
 This option is the default if your app doesn’t specify a discovery method while configuring the DL-TDOA session.
 

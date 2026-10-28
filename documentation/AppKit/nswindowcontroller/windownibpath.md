@@ -19,7 +19,7 @@ var windowNibPath: String? { get }
 @property (copy, readonly, nullable) NSString * windowNibPath;
 ```
 
-#### Discussion
+## Discussion
 
 If [`init(windowNibPath:owner:)`](./init%28windownibpath,owner%29.md) was used to initialize the instance, this property contains the path. If [`init(windowNibName:)`](./init%28windownibname%29.md) or [`init(windowNibName:owner:)`](./init%28windownibname,owner%29.md) was used, [`windowNibPath`](./windownibpath.md) locates the nib in the file’s owner’s class’ bundle or in the application’s main bundle and returns the full path (or `nil` if it cannot be located). Subclasses can override this behavior to augment the search behavior, but probably ought to call `super` first.
 

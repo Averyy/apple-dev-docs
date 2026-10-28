@@ -17,7 +17,7 @@ Registry of `model_type` strings (e.g. `"gemma4_assistant"`) to creator closures
 enum MTPDrafterTypeRegistry
 ```
 
-#### Overview
+## Overview
 
 Empty at bootstrap because drafter implementations live in MLXVLM — importing them here would create a circular dependency. Downstream modules call [`registerModelType(_:creator:)`](./modeltyperegistry/registermodeltype%28_,creator%29.md) on the shared registry at app/import time. See `Gemma4AssistantRegistration` in MLXVLM.
 

@@ -20,7 +20,7 @@ func invalidateTypeDescription(for projectType: PHProjectType)
 - (void) invalidateTypeDescriptionForProjectType:(PHProjectType) projectType;
 ```
 
-#### Discussion
+## Discussion
 
 If you call this method for project types other than [`undefined`](../phprojecttype/undefined.md), you must implement [`typeDescription(for:)`](../phprojecttypedescriptiondatasource/typedescription%28for%29.md) with functionality for the invalidated project type.
 

@@ -12,7 +12,7 @@ Access the centralized database for storing users’ contacts.
 - Mac Catalyst 14.0+
 - macOS 10.2+
 
-#### Overview
+## Overview
 
 The Address Book is a centralized database containing contacts and their personal information. Users enter personal information about themselves and their friends only once, instead of entering it repeatedly whenever the information is used. Apps that support the AddressBook framework share this contact information with other apps, including Apple’s Mail and Messages.
 

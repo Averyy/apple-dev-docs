@@ -23,7 +23,7 @@ case singleLineEtched
 UITableViewCellSeparatorStyleSingleLineEtched
 ```
 
-#### Discussion
+## Discussion
 
 This style is currently only supported for grouped-style table views.
 

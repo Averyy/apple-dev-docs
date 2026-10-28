@@ -25,7 +25,7 @@ func functionHandle(function: any MTL4BinaryFunction) -> (any MTLFunctionHandle)
 - (id<MTLFunctionHandle>) functionHandleWithBinaryFunction:(id<MTL4BinaryFunction>) function;
 ```
 
-#### Return Value
+## Return Value
 
 A function handle if the method succeeds, otherwise `nil`.
 

@@ -18,7 +18,7 @@ Maps primvar names used in this graph to texture coordinate channels.
 final var primvarMappings: [String : ShaderGraph.TextureCoordinate]
 ```
 
-#### Discussion
+## Discussion
 
 Primvar nodes reference geometry data by name. Use this dictionary to specify which [`ShaderGraph.TextureCoordinate`](./texturecoordinate.md) channel each name resolves to at render time.
 

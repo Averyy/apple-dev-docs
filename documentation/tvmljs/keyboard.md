@@ -15,7 +15,7 @@ An object used to retrieve user input from search fields and text fields.
 interface Keyboard
 ```
 
-#### Overview
+## Overview
 
 Use the `getFeature` function with the feature name `Keyboard` to retrieve an instance of this class from the `searchField` and `textField` elements, as in, for example, `getFeature('Keyboard')`.
 

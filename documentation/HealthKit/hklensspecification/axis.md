@@ -25,7 +25,7 @@ var axis: HKQuantity? { get }
 @property (nonatomic, copy, readonly, nullable) HKQuantity * axis;
 ```
 
-#### Discussion
+## Discussion
 
 This quantity measures the orientation of the correction in [`degreeAngle()`](../hkunit/degreeangle%28%29.md) units.
 

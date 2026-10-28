@@ -24,11 +24,11 @@ func AudioConverterReset(_ inAudioConverter: AudioConverterRef) -> OSStatus
 extern OSStatus AudioConverterReset(AudioConverterRef inAudioConverter);
 ```
 
-#### Return Value
+## Return Value
 
 A  result code.
 
-#### Discussion
+## Discussion
 
 Call this function after a discontinuity in the source audio stream being provided to the converter.
 

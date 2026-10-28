@@ -25,7 +25,7 @@ let isInBillingRetry: Bool
 
 - [Testing failing subscription renewals and Apple In-App Purchases](../../../testing-failing-subscription-renewals-and-in-app-purchases.md)
 
-#### Discussion
+## Discussion
 
 This field indicates whether Apple is attempting to automatically renew an expired subscription. If a subscription expires due to a billing issue, a value of `true` indicates that Apple is still trying to renew the subscription. If the subscription is in a billing grace period, the optional [`gracePeriodExpirationDate`](./graceperiodexpirationdate.md) contains a date.
 

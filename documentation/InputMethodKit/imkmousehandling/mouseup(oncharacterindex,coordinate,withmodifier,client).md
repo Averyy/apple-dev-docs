@@ -20,11 +20,11 @@ func mouseUp(onCharacterIndex index: Int, coordinate point: NSPoint, withModifie
 - (BOOL) mouseUpOnCharacterIndex:(NSUInteger) index coordinate:(NSPoint) point withModifier:(NSUInteger) flags client:(id) sender;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if handled; otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Implement this method if your input method handles mouse-up events.
 

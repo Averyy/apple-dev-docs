@@ -13,11 +13,11 @@
 u_int32_t ifnet_capabilities_supported(ifnet_t interface);
 ```
 
-#### Return Value
+## Return Value
 
 Flags. Capabilities flags are defined in net/if.h
 
-#### Discussion
+## Discussion
 
 Retrieve the interface capabilities supported by the interface.
 

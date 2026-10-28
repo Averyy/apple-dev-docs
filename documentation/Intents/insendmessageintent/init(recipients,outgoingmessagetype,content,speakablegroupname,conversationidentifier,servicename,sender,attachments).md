@@ -24,11 +24,11 @@ init(recipients: [INPerson]?, outgoingMessageType: INOutgoingMessageType, conten
 - (instancetype) initWithRecipients:(NSArray<INPerson *> *) recipients outgoingMessageType:(INOutgoingMessageType) outgoingMessageType content:(NSString *) content speakableGroupName:(INSpeakableString *) speakableGroupName conversationIdentifier:(NSString *) conversationIdentifier serviceName:(NSString *) serviceName sender:(INPerson *) sender attachments:(NSArray<INSendMessageAttachment *> *) attachments;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized intent or `nil` if the system can’t create the object.
 
-#### Discussion
+## Discussion
 
 Create an [`INSendMessageIntent`](../insendmessageintent.md) and donate it in an [`INInteraction`](../ininteraction.md) when the user sends a message directly in your app. When the user initiates sending a message from outside your app, such as asking Siri or tapping a contact in the Share Sheet, the system creates the intent and provides it to your intent handler.
 

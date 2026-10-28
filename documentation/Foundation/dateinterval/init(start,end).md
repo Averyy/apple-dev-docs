@@ -21,7 +21,7 @@ Initializes an interval with the specified start and end date.
 init(start: Date, end: Date)
 ```
 
-#### Discussion
+## Discussion
 
 Precondition: `end >= start`
 

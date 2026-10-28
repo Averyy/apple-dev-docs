@@ -25,7 +25,7 @@ func CFCharacterSetCreateMutable(_ alloc: CFAllocator!) -> CFMutableCharacterSet
 extern CFMutableCharacterSetRefCFCharacterSetCreateMutable(CFAllocatorRef alloc);
 ```
 
-#### Return Value
+## Return Value
 
 A new empty mutable character set. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 

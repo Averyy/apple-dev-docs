@@ -21,7 +21,7 @@ Modifies a format style to display a URL’s port component in accordance with t
 func port(_ strategy: URL.FormatStyle.ComponentDisplayOption = .omitIfHTTPFamily) -> URL.FormatStyle
 ```
 
-#### Return Value
+## Return Value
 
 A modified [`URL.FormatStyle`](../formatstyle.md) that incorporates the specified behavior.
 

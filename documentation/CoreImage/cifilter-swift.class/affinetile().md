@@ -24,11 +24,11 @@ class func affineTile() -> any CIFilter & CIAffineTile
 + (CIFilter<CIAffineTile> *) affineTileFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The tiled image.
 
-#### Discussion
+## Discussion
 
 This method applies the affine tile filter to an image. This effect performs an [`CGAffineTransform`](../../CoreFoundation/cgaffinetransform.md) and then tiles the transformed image.
 

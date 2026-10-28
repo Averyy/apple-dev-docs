@@ -24,7 +24,7 @@ var writeMask: UInt32 { get set }
 @property (nonatomic) uint32_t writeMask;
 ```
 
-#### Discussion
+## Discussion
 
 [`writeMask`](./writemask.md) are used for logical AND operations to values that are going to be written into a stencil attachment as the result of a stencil operation.
 

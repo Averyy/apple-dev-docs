@@ -21,7 +21,7 @@ A guide that marks the trailing edge of the view.
 static let trailing: Alignment
 ```
 
-#### Discussion
+## Discussion
 
 This alignment combines the [`trailing`](../horizontalalignment/trailing.md) horizontal guide and the [`center`](../verticalalignment/center.md) vertical guide:
 

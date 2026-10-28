@@ -19,7 +19,7 @@ Returns the model summary.
 func summary(includingStatistics: Bool) throws -> AIModelAsset.Summary?
 ```
 
-#### Return Value
+## Return Value
 
 The model summary, or `nil` if no program bytecode exists.
 

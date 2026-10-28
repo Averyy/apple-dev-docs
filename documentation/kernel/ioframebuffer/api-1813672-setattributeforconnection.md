@@ -14,11 +14,11 @@ virtual IOReturn setAttributeForConnection(
  uintptr_t value );
 ```
 
-#### Return Value
+## Return Value
 
 an IOReturn code.
 
-#### Overview
+## Overview
 
 IOFramebuffer subclasses may implement this method to allow arbitrary attribute/value pairs to be set, specific to one display connection.
 

@@ -23,11 +23,11 @@ func touchesShouldBegin(_ touches: Set<UITouch>, with event: UIEvent?, in view: 
 - (BOOL) touchesShouldBegin:(NSSet<UITouch *> *) touches withEvent:(UIEvent *) event inContentView:(UIView *) view;
 ```
 
-#### Return Value
+## Return Value
 
 Return [`false`](../../Swift/false.md) if you don’t want the scroll view to send event messages to `view`. If you want `view` to receive those messages, return [`true`](../../Swift/true.md) (the default).
 
-#### Discussion
+## Discussion
 
 The default behavior of [`UIScrollView`](../uiscrollview.md) is to invoke the [`UIResponder`](../uiresponder.md) event-handling methods of the target subview that the touches occur in.
 

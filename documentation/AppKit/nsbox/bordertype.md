@@ -21,7 +21,7 @@ var borderType: NSBorderType { get set }
 @property NSBorderType borderType;
 ```
 
-#### Discussion
+## Discussion
 
 A constant describing the type of border. Border types are defined in `NSView.h`. Currently, the following border types are defined: `NSNoBorder`,`NSLineBorder`,`NSBezelBorder`, `NSGrooveBorder`.
 

@@ -19,7 +19,7 @@ var automaticallyRearrangesObjects: Bool { get set }
 @property BOOL automaticallyRearrangesObjects;
 ```
 
-#### Discussion
+## Discussion
 
 The default is [`false`](../../Swift/false.md).
 

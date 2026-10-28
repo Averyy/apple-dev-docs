@@ -27,7 +27,7 @@ static let language: NSLinguisticTagScheme
 extern NSLinguisticTagScheme const NSLinguisticTagSchemeLanguage;
 ```
 
-#### Discussion
+## Discussion
 
 Each value for this tag scheme is a BCP-47 language identifier. For example, the language identifier for English is “en” and the identifier for Chinese written using the Simplified Chinese script is “zh-Hans”. The identifier “und” is used if a specific language cannot be determined.
 

@@ -21,7 +21,7 @@ A declarative description of the process of importing and exporting a transferab
 protocol TransferRepresentation<Item> : Sendable
 ```
 
-#### Overview
+## Overview
 
 Combine multiple existing transfer representations to compose a single transfer representation that describes how to transfer an item in multiple scenarios.
 

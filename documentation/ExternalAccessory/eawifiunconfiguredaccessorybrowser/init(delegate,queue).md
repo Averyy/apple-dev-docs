@@ -22,11 +22,11 @@ init(delegate: (any EAWiFiUnconfiguredAccessoryBrowserDelegate)?, queue: dispatc
 - (instancetype) initWithDelegate:(id<EAWiFiUnconfiguredAccessoryBrowserDelegate>) delegate queue:(dispatch_queue_t) queue;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized browser object.
 
-#### Discussion
+## Discussion
 
 This method is the designated initializer for `EAWiFiUnconfiguredAccessoryBrowser`. After initialization, an app can configure a browser object based on its interests.
 

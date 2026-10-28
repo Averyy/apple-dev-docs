@@ -28,7 +28,7 @@ optional func resolveAudioSource(for intent: INSetAudioSourceInCarIntent) async 
 - (void) resolveAudioSourceForSetAudioSourceInCar:(INSetAudioSourceInCarIntent *) intent withCompletion:(void (^)(INCarAudioSourceResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve the user’s request. The intent object passed to this method contains either an explicit audio source or a relative audio source, but not both. Use this method to determine whether the specified audio source is selectable in the user’s vehicle. Always strive toward a successful resolution.
 

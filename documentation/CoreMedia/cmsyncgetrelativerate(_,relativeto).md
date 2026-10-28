@@ -25,7 +25,7 @@ func CMSyncGetRelativeRate(_ ofClockOrTimebase: CMClockOrTimebase, relativeTo re
 extern Float64 CMSyncGetRelativeRate(CMClockOrTimebaseRef ofClockOrTimebase, CMClockOrTimebaseRef relativeToClockOrTimebase);
 ```
 
-#### Discussion
+## Discussion
 
 If both have a common host, the function syncs the clock or timebase based on the rates in the common tree rooted in that host.
 

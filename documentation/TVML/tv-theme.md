@@ -5,7 +5,7 @@
 
 Sets an element’s appearance according to the specified theme.
 
-#### Overview
+## Overview
 
 Use the tv-theme query to change the appearance of a template based on the theme specified in UIUserInterfaceStyle in the info.plist or by a theme set by the theme attribute. Here’s an example that sets styles for light and dark themes.
 
@@ -20,7 +20,7 @@ Use the tv-theme query to change the appearance of a template based on the theme
 </style>
 ```
 
-##### Values for tv-theme
+### Values for tv-theme
 
 - **`dark`**: The theme being tested for is dark.
 - **`light`**: The theme being tested for is light.

@@ -19,7 +19,7 @@ func fetch(with fetchRequest: NSFetchRequest<any NSFetchRequestResult>?, merge: 
 - (BOOL) fetchWithRequest:(NSFetchRequest *) fetchRequest merge:(BOOL) merge error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 This method performs a number of actions that you cannot reproduce. To customize this method, you should therefore create your own fetch request and then invoke `super`’s implementation with the new fetch request.
 

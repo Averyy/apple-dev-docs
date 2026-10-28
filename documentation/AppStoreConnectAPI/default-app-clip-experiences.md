@@ -5,7 +5,7 @@
 
 Read, create, update, and delete your default App Clip experience.
 
-#### Overview
+## Overview
 
 The `appClipDefaultExperiences` resource provides functionality to read information about the default App Clip experience you configure for your App Clip. Additionally, it provides functionality to create a default App Clip experience, to update an existing default App Clip experience, and to delete an unreleased default App Clip experience.
 

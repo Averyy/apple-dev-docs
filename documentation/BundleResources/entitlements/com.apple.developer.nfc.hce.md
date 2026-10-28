@@ -19,7 +19,7 @@ A Boolean value indicating whether your app can use the card session API.
 
 **Default**: `NO`
 
-#### Discussion
+## Discussion
 
 Your app must have this entitlement or else initializing a [`CardSession`](../../CoreNFC/cardsession.md) raises [`fatalError(_:file:line:)`](../../Swift/fatalerror%28_,file,line%29.md).
 

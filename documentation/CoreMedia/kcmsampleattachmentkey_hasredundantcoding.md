@@ -25,7 +25,7 @@ let kCMSampleAttachmentKey_HasRedundantCoding: CFString
 extern CFStringRef const kCMSampleAttachmentKey_HasRedundantCoding;
 ```
 
-#### Discussion
+## Discussion
 
 This key has no default value. If this key is not present, redundant coding information for the sample is unknown.
 

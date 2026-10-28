@@ -22,7 +22,7 @@ var liftBehavior: UIDragInteraction.LiftBehavior { get set }
 @property (nonatomic, assign) UIDragLiftBehavior liftBehavior;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`UIDragInteraction.LiftBehavior.default`](./liftbehavior-swift.enum/default.md), which uses the standard lift timing parameters.
 

@@ -25,11 +25,11 @@ func vImageLookupTable_Planar8toPlanar48(_ src: UnsafePointer<vImage_Buffer>, _ 
 vImage_Error vImageLookupTable_Planar8toPlanar48(const vImage_Buffer *src, const vImage_Buffer *dest, const uint64_t table[256], vImage_Flags flags);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
-#### Discussion
+## Discussion
 
 For each pixel, this function uses the 8-bit value from the source image as an index to the 48-bit value from the table. The per-pixel conversion calculation is equivalent to the following:
 

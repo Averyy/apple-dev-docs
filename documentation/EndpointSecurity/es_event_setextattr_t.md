@@ -20,7 +20,7 @@ struct es_event_setextattr_t
 typedef struct { ... } es_event_setextattr_t;
 ```
 
-#### Overview
+## Overview
 
 See the `setxattr(2)` man page for information on setting extended attributes.
 

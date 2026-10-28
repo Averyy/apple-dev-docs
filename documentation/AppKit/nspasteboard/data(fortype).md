@@ -19,21 +19,21 @@ func data(forType dataType: NSPasteboard.PasteboardType) -> Data?
 - (NSData *) dataForType:(NSPasteboardType) dataType;
 ```
 
-#### Return Value
+## Return Value
 
 A data object containing the data for the specified type from the first item in the receiver that contains the type, or `nil` if the contents of the pasteboard changed since they were last checked.
 
-#### Discussion
+## Discussion
 
 This method may also return `nil` if the pasteboard server cannot supply the data in time—for example, if the pasteboard’s owner is slow in responding to a [`pasteboard:provideDataForType:`](../../ObjectiveC/nsobject-swift.class/pasteboard_providedatafortype_.md) message and the interprocess communication times out.
 
-#### Discussion
+## Discussion
 
 Errors other than a timeout raise an `NSPasteboardCommunicationException`.
 
 If `nil` is returned, the application should put up a panel informing the user that it was unable to carry out the paste operation. Note that sending [`types`](./types.md) or [`availableType(from:)`](./availabletype%28from%29.md) before invoking [`data(forType:)`](./data%28fortype%29.md) can help you determine whether a `nil` result from a reading method is due to something like a pasteboard timeout.
 
-##### Special Considerations
+### Special Considerations
 
 For standard text data types such as string, RTF, and RTFD, the text data from each item is returned as one combined result separated by newlines.
 

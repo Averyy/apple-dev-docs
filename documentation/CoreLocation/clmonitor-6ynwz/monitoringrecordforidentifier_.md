@@ -18,7 +18,7 @@ Gets the monitoring record containing the condition and most recent monitoring e
 - (CLMonitoringRecord *) monitoringRecordForIdentifier:(NSString *) identifier;
 ```
 
-#### Return Value
+## Return Value
 
 The monitoring record; otherwise, [`nil`](../../ObjectiveC/nil-227m0.md).
 

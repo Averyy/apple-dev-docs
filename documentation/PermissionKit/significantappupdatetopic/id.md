@@ -19,7 +19,7 @@ The unique identifier the system uses to categorize this topic type.
 static let id: String
 ```
 
-#### Discussion
+## Discussion
 
 The system uses this identifier to group related permission requests and ensure your app receives responses for questions with this topic. You don’t need to modify this value - the system handles topic routing automatically using this predefined identifier.
 

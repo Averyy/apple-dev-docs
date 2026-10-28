@@ -33,7 +33,7 @@ var airline: INAirline { get }
 @property (atomic, copy, readonly) INAirline * airline;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains information specific to the airline associated with the reservation.
 

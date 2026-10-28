@@ -28,7 +28,7 @@ class AVAssetWriterInput
 
 - [Tagging media with video color information](./tagging-media-with-video-color-information.md)
 
-#### Overview
+## Overview
 
 Create an asset writer input to write a single track of media, and optional track-level metadata, to the output file. To write multiple concurrent tracks with ideal interleaving of media data, observe the value of the [`isReadyForMoreMediaData`](./avassetwriterinput/isreadyformoremediadata.md) property of each input.
 

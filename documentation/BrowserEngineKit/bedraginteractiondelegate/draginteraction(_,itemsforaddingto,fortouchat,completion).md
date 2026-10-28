@@ -20,7 +20,7 @@ optional func dragInteraction(_ dragInteraction: BEDragInteraction, itemsForAddi
 - (void) dragInteraction:(BEDragInteraction *) dragInteraction itemsForAddingToSession:(id<UIDragSession>) session forTouchAtPoint:(CGPoint) point completion:(BOOL (^)(NSArray<UIDragItem *> *)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This method is the asynchronous variant of [`dragInteraction(_:itemsForAddingTo:withTouchAt:)`](../../UIKit/uidraginteractiondelegate/draginteraction%28_,itemsforaddingto,withtouchat%29.md). If your delegate implements this method, the system calls this method instead of the synchronous version.
 

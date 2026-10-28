@@ -25,7 +25,7 @@ class let extendedLinearDisplayP3: CFString
 extern CFStringRef const kCGColorSpaceExtendedLinearDisplayP3;
 ```
 
-#### Discussion
+## Discussion
 
 This color space uses the DCI P3 primaries, a D65 white point, and a linear transfer function. You can encode component values below `0.0` and above `1.0`.
 

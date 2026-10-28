@@ -20,7 +20,7 @@ Posted when a movie has finished playing.
 static let MPMoviePlayerPlaybackDidFinish: NSNotification.Name
 ```
 
-#### Discussion
+## Discussion
 
 The `userInfo` dictionary of this notification contains the [`MPMoviePlayerPlaybackDidFinishReasonUserInfoKey`](../../../MediaPlayer/mpmovieplayerplaybackdidfinishreasonuserinfokey.md) key, which indicates the reason that playback finished. This notification is also sent when playback fails because of an error.
 

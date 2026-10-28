@@ -17,11 +17,11 @@ Adds a remote package dependency starting with a specific minimum version, up to
 static func package(name: String, url: String, _ range: Range<Version>) -> Package.Dependency
 ```
 
-#### Return Value
+## Return Value
 
 A `Package.Dependency` instance.
 
-#### Discussion
+## Discussion
 
 The following example allows the Swift Package Manager to pick versions `1.2.3`, `1.2.4`, `1.2.5`, but not `1.2.6`.
 

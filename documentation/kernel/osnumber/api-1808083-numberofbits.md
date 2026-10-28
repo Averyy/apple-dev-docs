@@ -11,11 +11,11 @@ Returns the number of bits used to represent the OSNumber object's integer value
 virtual unsigned int numberOfBits() const;
 ```
 
-#### Return Value
+## Return Value
 
 The number of bits used to represent the OSNumber object's integer value.
 
-#### Overview
+## Overview
 
 The number of bits is used to limit the stored value of the OSNumber. Any change to its value is performed as an `unsigned long long` and then truncated to the number of bits.
 

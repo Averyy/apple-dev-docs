@@ -14,7 +14,7 @@
 kIOCatalogKextdActive
 ```
 
-#### Discussion
+## Discussion
 
 Signals the kernel that kextd is running.
 

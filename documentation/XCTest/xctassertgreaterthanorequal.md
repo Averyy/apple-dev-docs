@@ -12,7 +12,7 @@ Asserts that the value of the first expression is greater than or equal to the v
 #define XCTAssertGreaterThanOrEqual(expression1, expression2, ...)
 ```
 
-#### Discussion
+## Discussion
 
 This function generates a failure when `expression1 < expression2`.
 

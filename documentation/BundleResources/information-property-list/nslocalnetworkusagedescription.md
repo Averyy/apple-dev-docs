@@ -18,7 +18,7 @@ A message that tells people why the app is requesting access to the local networ
 - **Name**: `NSLocalNetworkUsageDescription` (Privacy - Local Network Usage Description)
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 Any app that uses the local network, directly or indirectly, should include this description. This includes apps that use Bonjour and services implemented with Bonjour, as well as direct unicast or multicast connections to local hosts.
 

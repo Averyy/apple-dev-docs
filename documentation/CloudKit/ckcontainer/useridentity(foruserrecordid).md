@@ -23,11 +23,11 @@ Fetches the user identity for the specified user record ID.
 func userIdentity(forUserRecordID userRecordID: CKRecord.ID) async throws -> CKUserIdentity?
 ```
 
-#### Return Value
+## Return Value
 
 The user identity for the user record ID.
 
-#### Discussion
+## Discussion
 
 Use this method to retrieve the identity of a user who you already have a user record ID for. The user you’re searching for must meet the following criteria:
 

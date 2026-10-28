@@ -27,7 +27,7 @@ var localIdentifier: SWLocalCollaborationIdentifier { get }
 
 - [Adding custom collaboration to your app](../../SharedWithYou/adding-custom-collaboration-to-your-app.md)
 
-#### Discussion
+## Discussion
 
 Use this identifier to uniquely identify this metadata before the system creates a [`collaborationIdentifier`](./collaborationidentifier.md).
 

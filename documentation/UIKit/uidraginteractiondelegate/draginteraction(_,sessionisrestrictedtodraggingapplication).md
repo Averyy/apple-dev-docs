@@ -22,11 +22,11 @@ optional func dragInteraction(_ interaction: UIDragInteraction, sessionIsRestric
 - (BOOL) dragInteraction:(UIDragInteraction *) interaction sessionIsRestrictedToDraggingApplication:(id<UIDragSession>) session;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if you want to restrict the drag session to the app that started it; otherwise [`false`](../../Swift/false.md), which is the default if you don’t provide this method.
 
-#### Discussion
+## Discussion
 
 If you return [`true`](../../Swift/true.md) and the user attempts to drop the drag items onto another app, the system cancels the session.
 

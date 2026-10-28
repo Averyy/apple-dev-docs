@@ -24,7 +24,7 @@ var documentIdentifier: UUID { get }
 @property (nonatomic, copy, readonly) NSUUID * documentIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 Use the identifier to distinguish between documents.
 

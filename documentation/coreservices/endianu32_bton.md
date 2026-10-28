@@ -16,7 +16,7 @@ Converts an unsigned 32-bit big-endian value to the equivalentvalue in the compu
 #define EndianU32_BtoN(value)
 ```
 
-#### Return Value
+## Return Value
 
 The equivalent valuein the computer’s native format.
 

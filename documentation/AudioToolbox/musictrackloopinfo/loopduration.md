@@ -24,7 +24,7 @@ var loopDuration: MusicTimeStamp
 MusicTimeStamp loopDuration;
 ```
 
-#### Discussion
+## Discussion
 
 During looped playback, a music track plays from (`kSequenceTrackProperty_TrackLength` – `loopDuration`) to `kSequenceTrackProperty_TrackLength`.
 

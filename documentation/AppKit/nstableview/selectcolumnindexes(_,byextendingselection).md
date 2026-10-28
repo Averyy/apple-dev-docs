@@ -19,7 +19,7 @@ func selectColumnIndexes(_ indexes: IndexSet, byExtendingSelection extend: Bool)
 - (void) selectColumnIndexes:(NSIndexSet *) indexes byExtendingSelection:(BOOL) extend;
 ```
 
-#### Discussion
+## Discussion
 
 Replaces the deprecated [`selectColumn:byExtendingSelection:`](./selectcolumn_byextendingselection_.md) method.
 

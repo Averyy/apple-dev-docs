@@ -25,7 +25,7 @@ func cblas_zrotg(_ A: OpaquePointer, _ B: OpaquePointer, _ C: UnsafeMutablePoint
 void cblas_zrotg(__LAPACK_double_complex *A, __LAPACK_double_complex *B, double *C, __LAPACK_double_complex *S);
 ```
 
-#### Discussion
+## Discussion
 
 Given a vertical matrix containing `a` and `b`, computes the values of `cos θ` and `sin θ` that zero the lower value (`b`). Returns the value of `sin θ` in `s`, the value of `cos θ` in `c`, and the upper value (`r`) in `a`.
 

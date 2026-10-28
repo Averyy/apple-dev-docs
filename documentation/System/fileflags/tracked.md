@@ -21,7 +21,7 @@ File is tracked for the purpose of document IDs.
 static var tracked: FileFlags { get }
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding C constant is `UF_TRACKED`.
 

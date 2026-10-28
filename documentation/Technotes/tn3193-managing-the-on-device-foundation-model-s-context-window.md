@@ -5,7 +5,7 @@
 
 Learn how to budget for the context window limit of Apple’s on-device foundation model and handle the error when reaching the limit.
 
-#### Overview
+## Overview
 
 The [Foundation Models framework](../FoundationModels/FoundationModels.md) provides access to Apple’s on-device foundation model at the core of Apple Intelligence. With the framework, you can build AI-powered features that enhance your app.
 
@@ -15,7 +15,7 @@ The maximum number of tokens a LLM can process at once is called the context win
 
 Apple’s on-device foundation model has a context window of 4096 tokens per [language model session](../FoundationModels/languagemodelsession.md). To adapt to this limit, consider techniques to effectively budget for the context window, achieve your use-cases using fewer tokens, and handle the error when you reach the limit.
 
-#### Understand how your app consumes tokens
+## Understand how your app consumes tokens
 
 When you interact with a LLM, the model converts your input to a token sequence, and uses it to generate a probability distribution that reflects which token in the model’s vocabulary could be the next. Based on the decoding strategy, which is derived from the [generation options](../FoundationModels/generationoptions.md) when you use the Foundation Models framework, the model picks the next token, appends it to the sequence, and uses the updated sequence as the input for the next generation cycle. This process repeats until it reaches a stop condition. The final token sequence, after being converted to human-readable content, is the response you get.
 
@@ -32,13 +32,13 @@ The Foundation Models instrument allows you to profile your app to observe token
 
 For more information about profiling your app with the instrument, see the WWDC25 session 259: [Code-along: Bring on-device AI to your app using the Foundation Models framework](https://developer.apple.com/videos/play/wwdc2025/259/?time=1473).
 
-#### Split a large task into multiple language model sessions
+## Split a large task into multiple language model sessions
 
 When doing a task that needs a larger context window size, explore if you can split the task into smaller steps, run each step with a new language model session, and then assemble the results together.
 
 As an example, to generate a summary for a long article on device, consider separating the article into smaller chunks that the model can handle, summarizing each chunk with a new session, combining the results together, and then repeating this process, until getting a summary with ideal size. To avoid completely losing the context of the article when summarizing a chunk, consider adding the result of the previous summarization to the prompt so it conveys the contextual information.
 
-#### Ask the model for less content
+## Ask the model for less content
 
 One way to budget tokens is to ask the model to produce fewer response tokens. If you notice the model producing long, detailed responses, try:
 
@@ -47,7 +47,7 @@ One way to budget tokens is to ask the model to produce fewer response tokens. I
 
 Use [`maximumResponseTokens`](../FoundationModels/generationoptions/maximumresponsetokens.md) only when you need to protect against unexpectedly verbose responses and runaway generations, since enforcing a strict token response limit can lead the model to produce malformed results or grammatically incorrect partial responses like “A cat is a small.”
 
-#### Reduce the prompt size
+## Reduce the prompt size
 
 Prompts and instructions can consume a lot of tokens, especially in multi-turn scenarios where you’re sending multiple prompts to the same language model session. Writing shorter prompts and instructions is a way to save tokens without sacrificing response quality.
 
@@ -55,7 +55,7 @@ Give the model only the information needed for a specific task. Avoid instructio
 
 Use concise and imperative language in your instructions and prompts. Make sure your prompt has a clear verb that tells the model what to do, for example,  “Generate a story…” or “List 5 things that…”. Avoid indirect language, formal language, or jargon the foundation model might misinterpret. Aim for a maximum of 1–3 paragraphs for prompts and instructions, and in general, use the shortest prompt that can achieve your task.
 
-#### Use Generable types efficiently
+## Use Generable types efficiently
 
 `Generable` types consume tokens in multiple ways. For every `Generable` type in your generation request, the framework converts its type and format information to a JSON schema, and passes that schema text to the model. Any `@Guide` descriptions you write also consume tokens. To make your `Generable` types more efficient:
 
@@ -63,7 +63,7 @@ Use concise and imperative language in your instructions and prompts. Make sure 
 - Give your properties short, clear names.
 - Use `@Guide` only where needed. If your `Generable` type’s properties are clearly named, the model may have all the information it needs to generate your type. Try generating first with no `@Guide` annotations, and then add in `@Guide` annotations where needed to improve response quality.
 
-#### Use tool calling efficiently
+## Use tool calling efficiently
 
 Tool calling allows the model to request and incorporate the information from your code, but consumes tokens in a similar fashion to `Generable` types. When you provide a tool in your generation request, the framework puts the tool definitions, which includes the tool name, description, and parameter information, in the prompt so the model can decide when and how often to call the tool. When the model calls a tool, the framework returns the tool’s output back to the model for further processing, which consumes additional tokens. To use tool calling efficiently:
 
@@ -74,7 +74,7 @@ Look for opportunities to save tokens by skipping tool calling entirely. Use a t
 
 If you’re reaching the context window limit, consider breaking up tool calls across multiple language model sessions, if appropriate for your use case. In cases where you need the model to generate appropriate tool arguments, consider asking the model to generate those in one session, then run your tool using normal programming, then have the model process the tool’s output in a new, second session.
 
-#### Integrate a retrieval system to fetch information dynamically
+## Integrate a retrieval system to fetch information dynamically
 
 Retrieval-Augmented Generation, or RAG, is a technique that combines a retrieval system (like a search engine or vector database) with a language model. If your use case has a large amount of information, notes, or documents you’d like the model to reference, you may have too much information to fit in the context window. Using RAG, you can dynamically fetch snippets of the relevant information when needed, and pass only the snippets to the model to stay within the context window.
 
@@ -89,7 +89,7 @@ For the first step, consider using a chunking model and an embedding model. The 
 
 In the second step, vectorizing the whole knowledge base may be computationally heavy and take time. You can do it with a dedicated data preparation process that runs separate from the app and then stores the final chunks and embeddings in your app, or makes them available to the app through a server your app uses. RAG can be used as a tool call, or as a step you run before calling the on-device foundation model.
 
-#### Handle the exceeding context window size error elegantly
+## Handle the exceeding context window size error elegantly
 
 Even with carefully designed architecture and prompts, you might still exceed the context window limit in some cases. In an open-ended conversation implemented with one large language session, for example, people can continue the chat for long time, and eventually reach the limit.
 
@@ -126,7 +126,7 @@ func newContextualSession(with originalSession: LanguageModelSession) -> Languag
 
 For an example that includes instructions and tool calling, see [Generate dynamic game content with guided generation and tools](../FoundationModels/generate-dynamic-game-content-with-guided-generation-and-tools.md).
 
-#### Revision History
+## Revision History
 
 - **2026-03-31** Updated with the new API introduced in iOS, iPadOS, macOS, visionOS 26.4.
 - **2025-10-06** First published.

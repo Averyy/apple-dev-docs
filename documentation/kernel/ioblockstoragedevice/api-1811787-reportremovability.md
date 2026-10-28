@@ -12,7 +12,7 @@ virtual IOReturn reportRemovability(
  bool *isRemovable) = 0;
 ```
 
-#### Overview
+## Overview
 
 This method reports whether the media is removable, but it does not provide detailed information regarding software eject or lock/unlock capability.
 

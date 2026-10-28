@@ -5,13 +5,13 @@
 
 Replace hexadecimal addresses in a crash report with function names and line numbers that correspond to your app’s code.
 
-#### Overview
+## Overview
 
 When an app crashes, the operating system collects diagnostic information about what the app was doing at the time of the crash. One of the most important parts of the crash report is the thread backtraces, which appear as hexadecimal addresses. You translate these addresses into readable function names and line numbers — a process called *symbolication* — to understand why your app crashed. To learn about the structure of a backtrace, see [Backtraces](./examining-the-fields-in-a-crash-report.md#Backtraces).
 
 If you include debug symbols when you upload your app to App Store Connect for distribution in the App Store or TestFlight, the Crashes organizer in Xcode automatically symbolicates the crash reports for you. For more information, see [Building your app to include debugging information](./building-your-app-to-include-debugging-information.md).
 
-##### Determine whether a crash report is symbolicated
+### Determine whether a crash report is symbolicated
 
 A crash report can be fully symbolicated, partially symbolicated, or unsymbolicated. To diagnose an app issue, you need at least a partially symbolicated crash report — an unsymbolicated crash report is rarely useful.
 
@@ -75,7 +75,7 @@ Thread 0 Crashed:
     
 ```
 
-##### Symbolicate the crash report in Xcode
+### Symbolicate the crash report in Xcode
 
 To symbolicate a crash report from your device, connect the device to your Mac, click the Reports tab in the Device Hub app, then choose Crashes from the Inspector menu. In the list that appears, select the crash report. For more information, see [Device Hub](./device-hub.md) and [Managing your simulated and physical devices in Device Hub](./managing-your-simulated-and-physical-devices-in-device-hub.md).
 
@@ -91,7 +91,7 @@ If symbolication is incomplete, try the following:
 - If Xcode fails to symbolicate an address for your app, app extension, or frameworks, use Spotlight to find the required `.dSYM` files. For more information, see [Locating a missing debug symbol file](./locating-a-missing-debug-symbol-file.md).
 - If your app uses third-party frameworks or packages, contact their developers to obtain the `.dSYM` file.
 
-##### Symbolicate the crash report using a command-line tool
+### Symbolicate the crash report using a command-line tool
 
 You can symbolicate your crash report in Terminal using the `crashlog` command. Enter `xcrun crashlog` with the path to the crash report you want to symbolicate, as shown here:
 
@@ -136,7 +136,7 @@ Alternatively, if you already have an active LLDB session, you can import `lldb.
 
 The `crashlog` command provides additional options you can use to adjust its output. For example, you can parse and load your crash report in a scripted process, choose which frames and how many lines `crashlog` disassembles, and configure the command to display the image list. To learn about these options, enter `xcrun crashlog --help` in Terminal.
 
-##### Symbolicate the crash report using a Python script
+### Symbolicate the crash report using a Python script
 
 The `CrashSymbolicator.py` Python 3 script supports JSON-format crash reports and inlined frames when run with its default options. Find it in the `Contents/SharedFrameworks/CoreSymbolicationDT.framework/Resources` directory within the Xcode app bundle. In Terminal, navigate to this directory in your Xcode installation as follows:
 
@@ -193,7 +193,7 @@ To save the command’s output to a file, add the `-o` option:
 
 To learn about all the options the script offers, enter `python3 CrashSymbolicator.py --help` in Terminal.
 
-##### Symbolicate individual addresses of the crash report
+### Symbolicate individual addresses of the crash report
 
 For specialized debugging situations, such as symbolicating individual stack frames at the LLDB command line, use the `atos` command. This command converts hexadecimal addresses to function names and line numbers in your source code.
 

@@ -24,7 +24,7 @@ var blendingState: MTL4BlendState { get set }
 @property (nonatomic) MTL4BlendState blendingState;
 ```
 
-#### Discussion
+## Discussion
 
 This property’s default value is [`MTL4BlendState.disabled`](../mtl4blendstate/disabled.md).
 

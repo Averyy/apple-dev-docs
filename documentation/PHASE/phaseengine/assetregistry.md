@@ -24,7 +24,7 @@ var assetRegistry: PHASEAssetRegistry { get }
 @property (nonatomic, strong, readonly) PHASEAssetRegistry * assetRegistry;
 ```
 
-#### Discussion
+## Discussion
 
 This property loads audio resources from disk to memory, and unloads audio resources to free up system resources.
 

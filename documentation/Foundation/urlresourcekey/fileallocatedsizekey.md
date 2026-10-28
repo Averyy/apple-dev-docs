@@ -25,7 +25,7 @@ static let fileAllocatedSizeKey: URLResourceKey
 extern NSURLResourceKey const NSURLFileAllocatedSizeKey;
 ```
 
-#### Discussion
+## Discussion
 
 The system returns the read-only value as an [`NSNumber`](../nsnumber.md) object.
 

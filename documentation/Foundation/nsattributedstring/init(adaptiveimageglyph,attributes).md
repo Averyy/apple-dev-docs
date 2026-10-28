@@ -25,7 +25,7 @@ convenience init(adaptiveImageGlyph: NSAdaptiveImageGlyph, attributes: [NSAttrib
 + (instancetype) attributedStringWithAdaptiveImageGlyph:(NSAdaptiveImageGlyph *) adaptiveImageGlyph attributes:(NSDictionary<NSString *,id> *) attributes;
 ```
 
-#### Return Value
+## Return Value
 
 An attributed string containing the adaptive image glyph.
 

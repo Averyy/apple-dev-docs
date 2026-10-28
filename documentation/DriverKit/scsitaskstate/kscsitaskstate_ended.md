@@ -16,7 +16,7 @@
 kSCSITaskState_ENDED
 ```
 
-#### Discussion
+## Discussion
 
 The task is complete.
 

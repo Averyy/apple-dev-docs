@@ -19,7 +19,7 @@ init(coder: NSCoder)
 - (instancetype) initWithCoder:(NSCoder *) coder;
 ```
 
-#### Return Value
+## Return Value
 
 A properly initialized scrubber layout object.
 

@@ -5,7 +5,7 @@
 
 Use TelephonyMessagingKit to send and receive SMS, MMS, and RCS messages.
 
-#### Overview
+## Overview
 
 When the person using a device chooses your app to be the default carrier messaging app, the system sends all SMS, MMS, and RCS messages received by the device to your app. You use this framework to send and receive messages with those services.
 
@@ -13,7 +13,7 @@ This article describes how to set up your app to be the default app for carrier 
 
 > ❗ **Important**: You may develop and test `TelephonyMessagingKit` apps on devices in all regions by using an Apple-provided provisioning profile. People using your app must have an account registered in the European Union (EU), and their device must be located within the EU.
 
-##### Configure your app with the required entitlement
+### Configure your app with the required entitlement
 
 To make your app eligible to become the default carrier messaging app, add the  [`Default Carrier Messaging App`](../BundleResources/entitlements/com.apple.developer.carrier-messaging-app.md) entitlement, as described on the entitlement’s documentation page.
 
@@ -21,7 +21,7 @@ When someone uses the device in an environment that supports the use of Telephon
 
 To test whether your app can send and receive carrier messages, check the [`TelephonyMessagingSession`](./telephonymessagingsession.md) property [`isConfiguredForCarrierMessaging`](./telephonymessagingsession/isconfiguredforcarriermessaging.md) before you make any calls to TelephonyMessagingKit.
 
-##### Handle app launch
+### Handle app launch
 
 If your app isn’t running and the device receives an SMS, MMS, or RCS message, the system launches your app in the background, and gives your app some CPU time to process the received messages. Use this time to collect the messages, add them to your app’s data model or a persistent data store, and then post a local notification.
 
@@ -29,7 +29,7 @@ The person using the device can launch your app by tapping on a local notificati
 
 > **Note**: TelephonyMessagingKit uses a timeout for queued messages to avoid wasting memory. If your app doesn’t fetch received messages in time, the framework may discard them.
 
-##### Discover cellular services
+### Discover cellular services
 
 The person using your app may have multiple cellular services active at one time. To get an array of cellular services, use the [`shared`](./telephonymessagingsession/shared.md) instance of [`TelephonyMessagingSession`](./telephonymessagingsession.md) to get the [`cellularServices`](./telephonymessagingsession/cellularservices.md) array. Each member of this array is an instance of [`CellularServiceState`](./cellularservicestate.md), which contains a unique identifier for the cellular service and a label string. These labels correspond to the names the person gives to the services in the Settings app, under Settings > Cellular > SIM > Cellular Plan Label.
 
@@ -37,7 +37,7 @@ Your app needs a cellular service identifier when posting messages to specify wh
 
 If you want to handle changes to the cellular services, such as someone removing a SIM or changing the labels associated with their services, monitor the session’s [`cellularServiceStateUpdates`](./telephonymessagingsession/cellularservicestateupdates.md) asynchronous sequence.
 
-##### Receive messages
+### Receive messages
 
 The shared instance of [`TelephonyMessagingSession`](./telephonymessagingsession.md) also provides access to the device’s messaging services, as the properties [`smsService`](./telephonymessagingsession/smsservice.md), [`mmsService`](./telephonymessagingsession/mmsservice.md), and [`rcsService`](./telephonymessagingsession/rcsservice.md). These properties are instances of the types [`SMSService`](./smsservice.md), [`MMSService`](./mmsservice.md), and [`RCSService`](./rcsservice.md), respectively. Be aware that some or all of these may be available or unavailable at any time, based on carrier offerings and the device’s service plan, and whether your app is the default carrier messaging app.
 
@@ -67,7 +67,7 @@ for await smsMessageNotification in notifications {
 
 The process is similar for receiving MMS and RCS messages.
 
-##### Send messages
+### Send messages
 
 Your app can also send messages with SMS, MMS, or RCS.  While there are differences in the `sendMessage()` methods exposed by [`SMSService`](./smsservice.md), [`MMSService`](./mmsservice.md), and [`RCSService`](./rcsservice.md), they all require the following:
 

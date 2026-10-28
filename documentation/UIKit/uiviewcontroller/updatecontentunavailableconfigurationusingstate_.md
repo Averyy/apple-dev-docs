@@ -19,7 +19,7 @@ Updates the content-unavailable configuration for the provided state.
 - (void) updateContentUnavailableConfigurationUsingState:(UIContentUnavailableConfigurationState *) state;
 ```
 
-#### Discussion
+## Discussion
 
 Override this method to update the value of [`contentUnavailableConfiguration`](./contentunavailableconfiguration-6kqfk.md) as appropriate for the given state.
 

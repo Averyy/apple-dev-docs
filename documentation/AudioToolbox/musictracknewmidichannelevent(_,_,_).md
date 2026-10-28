@@ -24,7 +24,7 @@ func MusicTrackNewMIDIChannelEvent(_ inTrack: MusicTrack, _ inTimeStamp: MusicTi
 extern OSStatus MusicTrackNewMIDIChannelEvent(MusicTrack inTrack, MusicTimeStamp inTimeStamp, const MIDIChannelMessage *inMessage);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 

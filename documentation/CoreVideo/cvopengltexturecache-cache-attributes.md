@@ -5,7 +5,7 @@
 
 Dictionary keys and values for use with the cacheAttributes parameter of [`CVOpenGLTextureCacheCreate(_:_:_:_:_:_:)`](./cvopengltexturecachecreate%28_,_,_,_,_,_%29.md)
 
-#### Overview
+## Overview
 
 In some cases, a texture cache can do higher quality chroma upsampling on GPUs that support `ARB_fragment_program`. By default, it will be enabled automatically if the texture cache determines that the GPU has the needed support and the image size is something reasonable for the GPU being used. The default behavior can be overridden using the values defined below.
 

@@ -16,7 +16,7 @@ A buffer of vertex positions for each point along the plane’s boundary.
 @property (nonatomic, readonly) const simd_float3 * boundaryVertices;
 ```
 
-#### Discussion
+## Discussion
 
 Each `float3` value in this buffer represents the position of a vertex along the boundary polygon of the estimated plane. The owning plane anchor’s [`transform`](../aranchor/transform.md) matrix defines the coordinate system for these points.
 

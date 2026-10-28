@@ -19,7 +19,7 @@ var rotation: Float { get }
 @property (readonly) float rotation;
 ```
 
-#### Discussion
+## Discussion
 
 Many devices do not support rotation, in which case the returned value is 0.0. This property is valid only for mouse events with subtype `NSTabletPointEventSubtype` and for `NSTabletPoint` events.
 

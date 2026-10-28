@@ -27,7 +27,7 @@ class AVMetadataFaceObject
 
 - [Configuring camera capture to collect a Portrait Effects matte](./configuring-camera-capture-to-collect-a-portrait-effects-matte.md)
 
-#### Overview
+## Overview
 
 The `AVMetadataFaceObject` class is a concrete subclass of [`AVMetadataObject`](./avmetadataobject.md) that defines the features of a single detected face. You can retrieve instances of this class from the output of an [`AVCaptureMetadataOutput`](./avcapturemetadataoutput.md) object on devices that support face detection.
 

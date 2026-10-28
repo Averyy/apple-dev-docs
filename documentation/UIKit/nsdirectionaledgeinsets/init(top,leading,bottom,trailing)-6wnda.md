@@ -20,7 +20,7 @@ Creates a directional edge insets structure that contains the specified values.
 init(top: CGFloat, leading: CGFloat, bottom: CGFloat, trailing: CGFloat)
 ```
 
-#### Return Value
+## Return Value
 
 An initialized inset structure.
 

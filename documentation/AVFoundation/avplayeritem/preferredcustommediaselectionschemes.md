@@ -25,7 +25,7 @@ var preferredCustomMediaSelectionSchemes: [AVCustomMediaSelectionScheme] { get s
 @property (nonatomic, copy) NSArray<AVCustomMediaSelectionScheme *> * preferredCustomMediaSelectionSchemes;
 ```
 
-#### Discussion
+## Discussion
 
 Recommended usage: if use of a custom media selection scheme is desired, set this property before either replacing an AVPlayer’s current item with the receiver or adding the receiver to an AVQueuePlayer’s play queue. This will satisfy requirements of UI implementations that commit to a configuration of UI elements as the receiver becomes ready to play.
 

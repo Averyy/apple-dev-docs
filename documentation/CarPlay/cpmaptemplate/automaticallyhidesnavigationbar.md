@@ -21,7 +21,7 @@ var automaticallyHidesNavigationBar: Bool { get set }
 @property (nonatomic, assign) BOOL automaticallyHidesNavigationBar;
 ```
 
-#### Discussion
+## Discussion
 
 The default is [`true`](../../Swift/true.md).
 

@@ -5,7 +5,7 @@
 
 Share user or app data among multiple instances of your app running on different devices.
 
-#### Overview
+## Overview
 
 As an app developer, you can use one or more iCloud services to securely store your users’ data on the iCloud servers and make it available across all of their iCloud-enabled devices, thereby providing a seamless experience regardless of which device they use.
 
@@ -25,7 +25,7 @@ After you add the iCloud capability, Xcode updates your target’s entitlements 
 
 > **Note**: If you later remove the iCloud capability in Xcode, you must manually update your App ID’s configuration in your developer account to disable iCloud.
 
-##### Enable one or more iCloud services
+### Enable one or more iCloud services
 
 Prior to using an iCloud service to sync your users’ data across their devices, you must enable that service in Xcode to add the necessary entitlements to your app’s entitlements file. Use the checkbox next to the service’s name in the Services section of the iCloud capability to enable that service.
 
@@ -44,7 +44,7 @@ For more information, see [`iCloud Key-Value Store Entitlement`](../BundleResour
 
 > **Note**: Xcode automatically adds the Push Notifications capability to your target if you enable the CloudKit service because CloudKit uses push notifications to inform your app of server-side changes to your data. For more information, see [Remote Records](../CloudKit/remote-records.md).
 
-##### Manage your app’s iCloud containers
+### Manage your app’s iCloud containers
 
 After adding the iCloud capability, Xcode retrieves any existing iCloud containers from your developer account and displays them in the capability’s configuration section. Use the Refresh button below the list to re-fetch your account’s iCloud containers at any time.
 
@@ -78,7 +78,7 @@ After selecting the required containers, update your app to perform one or more 
 - For CloudKit apps, use [`init(identifier:)`](../CloudKit/ckcontainer/init%28identifier%29.md) to initialize an instance of [`CKContainer`](../CloudKit/ckcontainer.md) that provides access to the container’s databases and executes operations against those databases.
 - For Core Data apps that sync with CloudKit, use [`NSPersistentCloudKitContainerOptions`](../CoreData/nspersistentcloudkitcontaineroptions.md) to configure your Core Data stack to use your new container.
 
-##### Access the CloudKit console
+### Access the CloudKit console
 
 If your app enables the CloudKit service, use the web-based CloudKit Console to manage all aspects of your app’s iCloud containers, including the schemas for their databases, operation logs, and performance telemetry. For more information, see [Managing iCloud Containers with CloudKit Database App](../CloudKit/managing-icloud-containers-with-cloudkit-database-app.md).
 

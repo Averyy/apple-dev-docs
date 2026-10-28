@@ -15,7 +15,7 @@ The usage page value.
 var page: UInt16 { get }
 ```
 
-#### Discussion
+## Discussion
 
 This value determines the broader category of the functionality. This must always be specified, as a usage doesn’t have meaning without a page.
 

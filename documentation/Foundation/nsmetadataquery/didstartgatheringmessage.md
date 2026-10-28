@@ -21,7 +21,7 @@ A message a metadata query sends when it starts the initial result-gathering pha
 struct DidStartGatheringMessage
 ```
 
-#### Overview
+## Overview
 
 Observe this message with the identifier [`didStartGathering`](../notificationcenter/messageidentifier/didstartgathering.md), or specify its type directly to the `addObserver(of:for:using:)` method. The [`Subject`](../notificationcenter/mainactormessage/subject.md) of this message type is [`NSMetadataQuery`](../nsmetadataquery.md).
 

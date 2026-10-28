@@ -23,7 +23,7 @@ func setRightBarButton(_ item: UIBarButtonItem?, animated: Bool)
 - (void) setRightBarButtonItem:(UIBarButtonItem *) item animated:(BOOL) animated;
 ```
 
-#### Discussion
+## Discussion
 
 If two navigation items have the same custom left or right bar button items, those bar button items remain stationary during the transition when the navigation item is pushed or popped.
 

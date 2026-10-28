@@ -13,11 +13,11 @@ static IOService * waitForMatchingService(
  uint64_t timeout = timeout);
 ```
 
-#### Return Value
+## Return Value
 
 A published IOService object matching the supplied dictionary. waitForMatchingService returns a reference to the IOService which should be released by the caller. (Differs from waitForService() which does not retain the returned object.)
 
-#### Overview
+## Overview
 
 Provides a method of waiting for an IOService object matching the supplied matching dictionary to be registered and fully matched.
 

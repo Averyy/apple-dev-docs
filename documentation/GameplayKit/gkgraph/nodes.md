@@ -24,7 +24,7 @@ var nodes: [GKGraphNode]? { get }
 @property (nonatomic, readonly, nullable) NSArray<GKGraphNode *> * nodes;
 ```
 
-#### Discussion
+## Discussion
 
 This array can contain nodes that are not connected to other nodes in the graph.
 

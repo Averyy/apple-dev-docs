@@ -15,11 +15,11 @@ The request data your app provides to make changes to an auto-renewable subscrip
 object SubscriptionModifyInAppRequest
 ```
 
-#### Discussion
+## Discussion
 
 You use the `SubscriptionModifyInAppRequest` in your app when the customer makes one or more changes to a subscription, such as upgrading, downgrading, or adding or removing items.
 
-##### Example: upgrade a subscription
+### Example: upgrade a subscription
 
 In the following request:
 
@@ -61,7 +61,7 @@ In the following request:
 }
 ```
 
-##### Example: add an item and retain the billing cycle
+### Example: add an item and retain the billing cycle
 
 In the following request:
 
@@ -97,7 +97,7 @@ In the following request:
 }
 ```
 
-##### Example: remove an item at the next renewal
+### Example: remove an item at the next renewal
 
 In the following request:
 
@@ -125,7 +125,7 @@ In the following request:
 }
 ```
 
-##### Example: downgrade a subscription at the next renewal
+### Example: downgrade a subscription at the next renewal
 
 In the following request:
 

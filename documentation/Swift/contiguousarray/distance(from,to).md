@@ -21,7 +21,7 @@ Returns the distance between two indices.
 func distance(from start: Int, to end: Int) -> Int
 ```
 
-#### Return Value
+## Return Value
 
 The distance between `start` and `end`.
 

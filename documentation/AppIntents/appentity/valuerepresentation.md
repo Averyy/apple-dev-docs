@@ -21,11 +21,11 @@ A type alias for `IntentValueRepresentation`, providing a convenient way to defi
 typealias ValueRepresentation = IntentValueRepresentation
 ```
 
-#### Discussion
+## Discussion
 
 Use `ValueRepresentation` in your entity’s `transferRepresentation` to enable bidirectional conversion with system types like `IntentPerson`, `PlaceDescriptor`, and other `_SystemIntentValue` types.
 
-#### Example
+## Example
 
 ```swift
 struct ContactEntity: AppEntity, Transferable {

@@ -25,7 +25,7 @@ var exemplarCharacterSet: CharacterSet { get }
 @property (copy, readonly) NSCharacterSet * exemplarCharacterSet;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the same value returned by the [`object(forKey:)`](./object%28forkey%29.md) method when passing the [`exemplarCharacterSet`](./key/exemplarcharacterset.md) key.
 

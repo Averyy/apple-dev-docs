@@ -21,7 +21,7 @@ Creates an identifier for a sound classifier.
 init(rawValue: String)
 ```
 
-#### Discussion
+## Discussion
 
 Don’t create an identifier directly. Use a type property, such as [`version1`](./version1.md), instead.
 

@@ -17,7 +17,7 @@ Protocol for types that can provide a [`DType`](./dtype.md)
 protocol HasDType : ScalarOrArray
 ```
 
-#### Overview
+## Overview
 
 This is used to extract the [`DType`](./dtype.md) for values pass in to [`MLXArray`](./mlxarray.md) implicitly where possible.
 

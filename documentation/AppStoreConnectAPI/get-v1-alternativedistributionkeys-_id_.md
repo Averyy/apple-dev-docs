@@ -9,9 +9,9 @@ Read the public key information for a specific alternative distribution key.
 **Availability**:
 - App Store Connect API 3.3+
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

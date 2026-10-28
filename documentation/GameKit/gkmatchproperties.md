@@ -21,7 +21,7 @@ A type for game-specific properties that Game Center uses to find players when u
 typedef NSDictionary<NSString *,id> GKMatchProperties;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [Matchmaking rules](./matchmaking-rules.md).
 

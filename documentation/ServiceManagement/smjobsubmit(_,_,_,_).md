@@ -38,7 +38,7 @@ extern Boolean SMJobSubmit(CFStringRef domain, CFDictionaryRef job, void *auth, 
 extern Boolean SMJobSubmit(CFStringRef domain, CFDictionaryRef job, AuthorizationRef auth, CFErrorRef*outError);
 ```
 
-#### Return Value
+## Return Value
 
 Returns true if the system successfully submits the job, otherwise `false`.
 

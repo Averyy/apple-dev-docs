@@ -21,7 +21,7 @@ optional func session(_ session: NISession, didUpdateDLTDOA measurements: [NIDLT
 - (void) session:(NISession *) session didUpdateDLTDOAMeasurements:(NSArray<__kindof NIDLTDOAMeasurement *> *) measurements;
 ```
 
-#### Discussion
+## Discussion
 
 The framework invokes this callback to provide measurements for sessions that run [`NIDLTDOAConfiguration`](../nidltdoaconfiguration.md).
 

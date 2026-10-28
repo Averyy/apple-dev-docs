@@ -24,7 +24,7 @@ var rooms: [HMRoom] { get }
 @property (nonatomic, copy, readonly) NSArray<HMRoom *> * rooms;
 ```
 
-#### Discussion
+## Discussion
 
 Each [`HMHome`](../hmhome.md) instance has an immutable default room — returned by the [`roomForEntireHome()`](./roomforentirehome%28%29.md) method — to hold accessories that the user hasn’t assigned to a specific room. Unlike user-managed rooms, the default room doesn’t appear in the [`rooms`](./rooms.md) array.
 

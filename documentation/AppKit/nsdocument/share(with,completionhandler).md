@@ -23,7 +23,7 @@ func share(with sharingService: NSSharingService) async -> Bool
 - (void) shareDocumentWithSharingService:(NSSharingService *) sharingService completionHandler:(void (^)(BOOL success)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 This method shares the document’s file, located at [`fileURL`](./fileurl.md), with the specified sharing service. If the document has never been saved, this method prompts the user to save it before proceeding; otherwise, the method initiates an autosave operation to save any outstanding changes. As needed, the method moves the file to an appropriate location for sharing. For example, when saving to iCloud, the method moves the file to the user’s iCloud Drive folder. After the sharing service finishes, the method calls `completionHandler` with the results.
 

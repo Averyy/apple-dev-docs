@@ -22,7 +22,7 @@ Initializes a new history descriptor with the provided predicate and sort descri
 init(predicate: Predicate<TransactionType>? = nil, sortBy: [SortDescriptor<TransactionType>] = [])
 ```
 
-#### Discussion
+## Discussion
 
 If you don’t specify a predicate, any fetch using this descriptor will return all models of the associated type. If you expect the number of fetched transactions to be high, use [`fetchLimit`](./fetchlimit.md) to limit the number of transactions returned.
 

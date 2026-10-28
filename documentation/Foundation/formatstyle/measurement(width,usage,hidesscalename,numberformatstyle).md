@@ -21,11 +21,11 @@ Returns a format style to format temperature units.
 static func measurement(width: Measurement<UnitTemperature>.FormatStyle.UnitWidth = .abbreviated, usage: MeasurementFormatUnitUsage<UnitTemperature> = .general, hidesScaleName: Bool = false, numberFormatStyle: FloatingPointFormatStyle<Double>? = nil) -> Self where Self == Measurement<UnitTemperature>.FormatStyle
 ```
 
-#### Return Value
+## Return Value
 
 A format style that formats measurements according to the given parameters.
 
-#### Discussion
+## Discussion
 
 Use this static method when the call point allows the use of [`Measurement.FormatStyle`](../measurement/formatstyle.md) and the value type is `Measurement<UnitTemperature>`. You typically do this when calling the [`formatted(_:)`](../measurement/formatted%28_%29.md) method of [`Measurement`](../measurement.md).
 

@@ -25,7 +25,7 @@ func functionHandle(withName name: String) -> (any MTLFunctionHandle)?
 - (id<MTLFunctionHandle>) functionHandleWithName:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A function handle corresponding to the function if the name matches a function in this pipeline state, otherwise `nil`.
 

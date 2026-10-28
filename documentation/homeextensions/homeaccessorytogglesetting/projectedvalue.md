@@ -17,7 +17,7 @@ The setting itself, which you access with a dollar sign prefix.
 final var projectedValue: HomeAccessoryToggleSetting { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use it to list the setting in [`availableSettings`](../homeaccessorysettingscontainer/availablesettings.md) or to customize its appearance.
 

@@ -15,7 +15,7 @@ Creates a new window placement with a display-relative position, with an optiona
 init(_ position: UnitPoint, width: CGFloat? = nil, height: CGFloat? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 Any values not provided will use use the default values for the `Scene` that this placement is being applied to.
 

@@ -21,7 +21,7 @@ func pageCacheSize() -> Int
 - (NSUInteger) pageCacheSize;
 ```
 
-#### Return Value
+## Return Value
 
 The maximum number of pages that can be cached.
 

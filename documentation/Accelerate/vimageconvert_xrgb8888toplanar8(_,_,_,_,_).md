@@ -25,11 +25,11 @@ func vImageConvert_XRGB8888ToPlanar8(_ src: UnsafePointer<vImage_Buffer>, _ red:
 vImage_Error vImageConvert_XRGB8888ToPlanar8(const vImage_Buffer *src, const vImage_Buffer *red, const vImage_Buffer *green, const vImage_Buffer *blue, vImage_Flags flags);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
-#### Discussion
+## Discussion
 
 The source and destination buffers need to have the same height and width.
 

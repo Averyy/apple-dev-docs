@@ -15,7 +15,7 @@ An error a validator emits when a value isn’t a string.
 interface ValueNotStringError
 ```
 
-#### Overview
+## Overview
 
 Extends `ValueNotConvertibleToTypeError`.
 

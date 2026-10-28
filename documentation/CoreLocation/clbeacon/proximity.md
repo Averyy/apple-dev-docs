@@ -22,7 +22,7 @@ var proximity: CLProximity { get }
 @property (nonatomic, readonly) CLProximity proximity;
 ```
 
-#### Discussion
+## Discussion
 
 The value in this property gives a general sense of the relative distance to the beacon. Use it to quickly identify beacons that are nearer to the user rather than farther away.
 

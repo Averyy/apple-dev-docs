@@ -23,7 +23,7 @@ static var currentPriority: TaskPriority { get }
 
 Available when `Success` is `Never` and `Failure` is `Never`.
 
-#### Discussion
+## Discussion
 
 If you access this property outside of any task, this queries the system to determine the priority at which the current function is running. If the system can’t provide a priority, this property’s value is `Priority.default`.
 

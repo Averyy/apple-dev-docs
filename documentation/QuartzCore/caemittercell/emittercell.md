@@ -20,7 +20,7 @@ Creates and returns an instance of `CAEmitterCell`.
 + (instancetype) emitterCell;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized `CAEmitterCell` object or `nil` if initialization is not successful.
 

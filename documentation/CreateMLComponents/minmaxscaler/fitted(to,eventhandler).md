@@ -21,7 +21,7 @@ Fits a min max scaler to a sequence of elements.
 func fitted<S>(to input: S, eventHandler: EventHandler? = nil) throws -> MinMaxScaler<Element>.Transformer where Element == S.Element, S : Sequence
 ```
 
-#### Return Value
+## Return Value
 
 The fitted transformer.
 

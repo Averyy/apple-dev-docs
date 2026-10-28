@@ -23,11 +23,11 @@ func gss_delete_sec_context(_ minor_status: UnsafeMutablePointer<OM_uint32>, _ c
 OM_uint32 gss_delete_sec_context(OM_uint32 *minor_status, gss_ctx_id_t*context_handle, gss_buffer_t output_token);
 ```
 
-#### Return Value
+## Return Value
 
 A status code set to [`GSS_S_COMPLETE`](./gss_s_complete.md) on completion, or [`GSS_S_NO_CONTEXT`](./gss_s_no_context.md) if no context was supplied.
 
-#### Discussion
+## Discussion
 
 This function purges the context and all of its resources from memory, and frees all of its memory.
 

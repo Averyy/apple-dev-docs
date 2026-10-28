@@ -27,7 +27,7 @@ var supportsNavigation: NSNumber? { get set }
 
 - [Adding your app’s content to Spotlight indexes](../adding-your-app-s-content-to-spotlight-indexes.md)
 
-#### Discussion
+## Discussion
 
 When an item includes [`latitude`](./latitude.md) and [`longitude`](./longitude.md) properties, these properties can be used for navigation to the location represented by the item. For example, it makes sense to set [`supportsNavigation`](./supportsnavigation.md) to `1` for an item that represents review for a specific restaurant, but not for an item that represents a photo of a person.
 

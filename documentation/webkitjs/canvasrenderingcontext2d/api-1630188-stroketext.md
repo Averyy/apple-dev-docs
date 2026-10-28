@@ -21,7 +21,7 @@ void strokeText(
 );
 ```
 
-#### Discussion
+## Discussion
 
 The `x`, `y`, and `maxWidth` parameter values are in the canvas’s current coordinate system, subject to the current transformation matrix (rotation, scale, and so on).
 

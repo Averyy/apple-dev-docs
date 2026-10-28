@@ -24,7 +24,7 @@ var gain: Double { get set }
 @property (nonatomic, assign) double gain;
 ```
 
-#### Discussion
+## Discussion
 
 This property modifies the volume of all audio in the group. The framework clamps the value to the range between `0` and `1`, where `0` silences the audio and `1` doesn’t modify the original volume.
 

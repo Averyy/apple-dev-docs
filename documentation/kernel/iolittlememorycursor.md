@@ -15,7 +15,7 @@ An IOMemoryCursor subclass that outputs a vector of PhysicalSegments in the litt
 class IOLittleMemoryCursor : IOMemoryCursor
 ```
 
-#### Overview
+## Overview
 
 The IOLittleMemoryCursor would be used when the DMA hardware requires a little endian address and length pair. This cursor outputs an array of PhysicalSegments that are encoded in little endian format.
 

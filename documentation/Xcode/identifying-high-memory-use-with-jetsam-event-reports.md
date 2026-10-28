@@ -5,13 +5,13 @@
 
 Discover why the operating system terminated your app when available memory was low.
 
-#### Overview
+## Overview
 
 iOS, iPadOS, tvOS, visionOS, and watchOS have a virtual memory system that relies on all apps releasing memory when the operating system encounters *memory pressure*, where available memory is low and the system can’t meet the demands of all running apps. Under memory pressure, apps free memory after receiving a low-memory notification. If all running apps release enough total memory to alleviate memory pressure, your app will continue to run. But, if memory pressure continues because apps haven’t relinquished enough memory, the system frees memory by terminating applications to reclaim their memory. This is a *jetsam event*, and the system creates a jetsam event report with information about why it chose to jettison an app.
 
 Jetsam event reports differ from crash reports because they contain the overall memory use of all apps and system processes on a device, they’re in JSON format, and they don’t contain the backtraces of any threads in your app. If the system jettisons your app due to memory pressure while the app is visible, it will look like your app crashed. Use jetsam event reports to identify your app’s role in jetsam events, even if your app didn’t get jettisoned.
 
-##### Identify the memory page size and largest process
+### Identify the memory page size and largest process
 
 The jetsam event report records how much memory each process used before jettisoning an app. The virtual memory system allocates and manages memory in chunks, called *memory pages*, and the report lists the memory use as the number of memory pages used. To convert the number of memory pages into the bytes of memory your app used, you need to know the *page size*, which is the number of bytes in one memory page.
 
@@ -34,7 +34,7 @@ The `pageSize` field in the jetsam event report header records the number of byt
 
 While inspecting the header, examine the `largestProcess` field—this field names the process using the highest number of memory pages on the system. If other apps in addition to yours are regularly jettisoned, and your app is the largest process, you should reduce your memory use to better cooperate with other apps’ memory needs.
 
-##### Identify the jetsam reason
+### Identify the jetsam reason
 
 A jetsam event report contains a `processes` array, with each item in the array describing a single process in the system. Search for the `reason` key to identify the jettisoned process and why the system jettisoned it. Only the jettisoned process has the reason key.
 
@@ -78,7 +78,7 @@ Each item in the `processes` array also has the following keys, which provide ad
 - `coalition`: If your app’s process is part of a coalition that involves other system processes doing work on behalf of your app, use this information to identify related processes and their memory use, as your app can influence the memory use of other coalition processes.
 - `name`: The process name. See if this name matches a binary from your app, or belongs to another app or system process.
 
-##### Make changes to your app’s memory use
+### Make changes to your app’s memory use
 
 Once you confirm that your app is crashing due to high-memory use, by analyzing the jetsam event report, see [Gathering information about memory use](./gathering-information-about-memory-use.md) to understand your app’s memory use patterns, and [Making changes to reduce memory use](./making-changes-to-reduce-memory-use.md) for techniques to lower your memory use.
 

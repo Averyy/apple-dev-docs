@@ -16,7 +16,7 @@ Obtains the current async port.
 mach_port_t (*getAsyncPort)(void *self);
 ```
 
-#### Return Value
+## Return Value
 
 Returns a mach_port_t.
 

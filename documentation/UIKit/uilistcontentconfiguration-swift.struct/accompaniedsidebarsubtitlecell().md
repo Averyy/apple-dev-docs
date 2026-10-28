@@ -18,11 +18,11 @@ Creates the default configuration you use to style a cell that’s in an accompa
 static func accompaniedSidebarSubtitleCell() -> UIListContentConfiguration
 ```
 
-#### Return Value
+## Return Value
 
 The default configuration for a cell that’s in an accompanied sidebar list and contains subtitle text.
 
-#### Discussion
+## Discussion
 
 Create this configuration to update the content and styling of a cell in an accompanied sidebar collection view list, where the list is in the primary column of a split view controller, accompanied by another list in the split view controller’s supplementary column. When you apply this configuration to a cell, the cell displays one primary label and one subtitle label below the primary label. Both labels resize automatically based on the length of the text you provide and the device’s Dynamic Type and accessibility settings.
 

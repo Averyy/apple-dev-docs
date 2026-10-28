@@ -20,7 +20,7 @@ Called after the controller’s view is loaded into memory.
 @preconcurrency override dynamic func viewDidLoad()
 ```
 
-#### Discussion
+## Discussion
 
 The view controller uses this method to configure its interface.
 

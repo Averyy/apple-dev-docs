@@ -21,11 +21,11 @@ class func imageUnfilteredFileTypes() -> [String]
 + (NSArray<NSString *> *) imageUnfilteredFileTypes;
 ```
 
-#### Return Value
+## Return Value
 
 An array of `NSString` objects, each of which identifies a single supported file type. File types are identified by file extension and HFS file types.
 
-#### Discussion
+## Discussion
 
 The returned list does not contain pasteboard types that are available only through a user-installed filter service.
 

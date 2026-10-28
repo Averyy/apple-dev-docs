@@ -24,7 +24,7 @@ static let buttonShapesEnabledStatusDidChangeNotification: NSNotification.Name
 extern NSNotificationName const UIAccessibilityButtonShapesEnabledStatusDidChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 > **Related Sessions from WWDC20**:  Session 10020: [Make Your App Visually Accessible](https://developer.apple.com/wwdc20/10020)
 

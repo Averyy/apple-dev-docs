@@ -19,7 +19,7 @@ init(keyExchangeKeys: [VZEFISignatureList], dbSignatures: [VZEFISignatureList], 
 - (instancetype) initWithKeyExchangeKeys:(NSArray<VZEFISignatureList *> *) keyExchangeKeys dbSignatures:(NSArray<VZEFISignatureList *> *) dbSignatures dbxSignatures:(NSArray<VZEFISignatureList *> *) dbxSignatures;
 ```
 
-#### Discussion
+## Discussion
 
 > ⚠️ **Warning**: Make sure that the signature data is in the correct format. Applying a malformed configuration may corrupt the variable store and render the guest unbootable.
 

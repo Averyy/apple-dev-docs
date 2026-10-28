@@ -25,7 +25,7 @@ var max: CGFloat
 CGFloat max;
 ```
 
-#### Discussion
+## Discussion
 
 The vImage library clamps values greater than the maximum to the maximum.
 

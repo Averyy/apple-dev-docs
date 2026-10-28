@@ -17,7 +17,7 @@ The content you can present for the current device.
 final var contentList: [ProximityReaderDiscovery.Content] { get async throws }
 ```
 
-#### Discussion
+## Discussion
 
 This property contains zero or more [`ProximityReaderDiscovery.Content`](./content.md) structures, each of which corresponds to information on a supported topic. The content associated with each structure is specific to the country of the current device. The array can be empty if no content is available for the current country.
 

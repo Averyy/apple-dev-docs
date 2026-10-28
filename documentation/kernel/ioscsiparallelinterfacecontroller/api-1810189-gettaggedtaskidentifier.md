@@ -12,7 +12,7 @@ SCSITaggedTaskIdentifier GetTaggedTaskIdentifier (
  SCSIParallelTaskIdentifierparallelTask );
 ```
 
-#### Return Value
+## Return Value
 
 an SCSITaskAttribute value.
 

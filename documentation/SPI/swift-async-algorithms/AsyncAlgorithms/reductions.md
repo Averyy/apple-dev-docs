@@ -8,13 +8,13 @@ framework: "swift-async-algorithms/AsyncAlgorithms"
 **Framework**: swift-async-algorithms/AsyncAlgorithms  
 **Role**: Article
 
-#### Overview
+## Overview
 
 - Author(s): [Philippe Hausler](https://github.com/phausler)
 
 [ [Source](https://github.com/apple/swift-async-algorithms/blob/main/Sources/AsyncAlgorithms/AsyncExclusiveReductionsSequence.swift) | [Tests](https://github.com/apple/swift-async-algorithms/blob/main/Tests/AsyncAlgorithmsTests/TestReductions.swift) ]
 
-#### Introduction
+## Introduction
 
 The family of algorithms for reduce are useful for converting a sequence or asynchronous sequence into a single value, but that can elide important intermediate information. The *reductions* algorithm is often called “scan”, but this name does not convey its heritage to the family of reducing.
 
@@ -23,7 +23,7 @@ There are two strategies that are usable for creating continuous reductions: exc
 - Exclusive reductions take a value and incorporate values into that initial value. A common example is reductions by appending to an array.
 - Inclusive reductions transact only on the values provided. A common example is adding numbers.
 
-#### Proposed Solution
+## Proposed Solution
 
 Exclusive reductions come in two variants: transforming by application, or transformation via mutation. This replicates the same interface as `reduce(_:_:)` and `reduce(into:_:)`. Unlike the `reduce` algorithms, the `reductions` algorithm also comes in two flavors: throwing or non throwing transformations.
 
@@ -83,7 +83,7 @@ numbers.reductions { $0 + $1 }
 
 In the above example, if the numbers are a sequence of `1, 2, 3, 4`, the produced values would be `1, 3, 6, 10`.
 
-#### Detailed Design
+## Detailed Design
 
 The exclusive reduction variants come in two distinct cases: non-throwing and throwing. These both have corresponding types to encompass that throwing behavior.
 
@@ -129,11 +129,11 @@ extension AsyncThrowingExclusiveReductionsSequence.Iterator: Sendable
   where Base.AsyncIterator: Sendable, Element: Sendable { }
 ```
 
-#### Alternatives Considered
+## Alternatives Considered
 
 One alternate name for `reductions` was to name it `scan`; however the naming from the Swift Algorithms package offers considerably more inference to the heritage of what family of functions this algorithm belongs to.
 
-#### Credits/Inspiration
+## Credits/Inspiration
 
 This transformation function is a direct analog to the synchronous version [defined in the Swift Algorithms package](https://github.com/apple/swift-algorithms/blob/main/Guides/Reductions.md)
 

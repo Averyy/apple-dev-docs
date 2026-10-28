@@ -18,7 +18,7 @@ Unproject a 2D point from the gesture value into 3D world coordinates.
 func unproject(_ keyPath: KeyPath<Value, CGPoint>, to realitySpace: some RealityCoordinateSpace) -> SIMD3<Float>?
 ```
 
-#### Return Value
+## Return Value
 
 3D position in `realitySpace`.
 

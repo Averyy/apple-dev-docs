@@ -31,7 +31,7 @@ extern NSLinguisticTagScheme const NSLinguisticTagSchemeLexicalClass;
 
 - [Identifying Parts of Speech](../identifying-parts-of-speech.md)
 
-#### Discussion
+## Discussion
 
 For possible values, see Lexical Classes.
 

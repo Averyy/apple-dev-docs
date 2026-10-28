@@ -15,7 +15,7 @@ The CSS color that MapKit JS uses for the user interface controls on the map.
 tintColor?: string;
 ```
 
-#### Discussion
+## Discussion
 
 Use [`tintColor`](./tintcolor.md) to color the outline of the controls, text, and glyphs. Use any valid [CSS color value](https://www.w3.org/TR/css-color-3/).
 

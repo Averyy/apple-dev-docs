@@ -19,11 +19,11 @@
 static SPSize3DFloat SPSize3DFloatRotate(SPSize3DFloat size, SPRotation3DFloat rotation);
 ```
 
-#### Return Value
+## Return Value
 
 A size that’s rotated by the specified rotation.
 
-#### Discussion
+## Discussion
 
 Returns a size that’s rotated by the specified rotation around the origin.
 

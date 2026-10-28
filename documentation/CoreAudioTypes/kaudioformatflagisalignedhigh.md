@@ -25,7 +25,7 @@ var kAudioFormatFlagIsAlignedHigh: AudioFormatFlags { get }
 kAudioFormatFlagIsAlignedHigh
 ```
 
-#### Discussion
+## Discussion
 
 Set this flag to indicate placement of the sample bits is with the high bits of the channel. Clear this flag to indicate placement of the sample bits is with the low bits of the channel.
 

@@ -16,7 +16,7 @@ A 32-bit field that provides additional information about a particular component
 UInt32 componentFlags;
 ```
 
-#### Discussion
+## Discussion
 
 The high-order 8 bits are reserved for definition by the Component Manager. If you are developing an application, you should usually set these bits to `0`.
 

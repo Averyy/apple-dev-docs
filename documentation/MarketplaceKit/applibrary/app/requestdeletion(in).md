@@ -17,7 +17,7 @@ Prompts the person to delete the app.
 final func requestDeletion(in scene: UIWindowScene) async throws
 ```
 
-#### Discussion
+## Discussion
 
 This method presents a system confirmation for the person to permit or deny the app’s deletion.
 

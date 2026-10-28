@@ -25,7 +25,7 @@ static let null: MKMapRect
 extern const MKMapRect MKMapRectNull;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this constant when you want to specify an invalid map rectangle.
 

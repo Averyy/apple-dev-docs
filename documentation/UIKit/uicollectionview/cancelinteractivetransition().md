@@ -23,7 +23,7 @@ func cancelInteractiveTransition()
 - (void) cancelInteractiveTransition;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method after a call to the [`startInteractiveTransition(to:completion:)`](./startinteractivetransition%28to,completion%29.md) method and after you determine through a gesture recognizer or other event-handling code that the user wants to revert to the collection view’s original layout. This method removes the intermediate transition layout object from the collection view and reinstalls the original layout object. It then performs any final animations to get the collection view’s items from their current positions to the positions specified by the original layout object.
 

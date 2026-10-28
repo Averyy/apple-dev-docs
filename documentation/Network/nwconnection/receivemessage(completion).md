@@ -22,7 +22,7 @@ Schedules a single receive completion handler for a complete message, as opposed
 final func receiveMessage(completion: @escaping @Sendable (Data?, NWConnection.ContentContext?, Bool, NWError?) -> Void)
 ```
 
-#### Discussion
+## Discussion
 
 Receiving messages allows you to deal with complete datagrams or application-layer messages without needing to reconstruct a stream.
 

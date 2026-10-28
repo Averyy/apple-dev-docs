@@ -5,13 +5,13 @@
 
 Select viewports and their corresponding scissor rectangles in your vertex shader.
 
-#### Overview
+## Overview
 
 A viewport defines a subsection of the render targets that you want a drawing command to render into. Using viewport selection, you provide multiple viewports for a drawing command, and dynamically choose one of these viewports for each primitive rendered by the drawing command. Viewport selection makes it easier to consolidate rendering to multiple viewports into fewer drawing commands. For example, you might use viewport selection when rendering stereo imagery or other images whose content is rendered to multiple parts of the render target.
 
 ![A block diagram that shows a render pipeline whose final destination is a single target with multiple viewports.](https://developer.apple.com/tutorials/images/com.apple.metal/rendering-to-multiple-viewports-in-a-draw-command-1@2x.png)
 
-##### Check the device object for support for multiple viewports
+### Check the device object for support for multiple viewports
 
 All GPUs in the macOS family support multiple viewports. Multiple viewports are available in the Apple GPU family starting with family 5. Test for support using the code below:
 
@@ -38,7 +38,7 @@ For the maximum number of viewports you can use with each GPU family, see:
 - [Metal feature set tables (PDF)](https://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf)
 - [Metal feature set tables (Numbers)](https://developer.apple.com/metal/metal-feature-set-tables.zip)
 
-##### Add viewport selection to your vertex shader
+### Add viewport selection to your vertex shader
 
 To specify which viewport a primitive should be rendered into, add a vertex output with the `[[viewport_array_index]]` attribute. Your vertex shader needs to set this value so that Metal knows which viewport to render into.
 
@@ -66,7 +66,7 @@ Your vertex function needs to return the same index for all vertices that make u
 
 The rasterization stage uses the selected viewport and associated scissor rectangle to transform the vertex outputs and then passes the data over to the fragment stage. If you need to know which viewport is being rendered to inside your fragment shader, you can reference the same field that you set in the vertex output.
 
-##### Specify viewports and scissor rectangles in your draw command
+### Specify viewports and scissor rectangles in your draw command
 
 Call [`setViewports(_:)`](./mtlrendercommandencoder/setviewports%28_%29.md) to specify multiple viewports and [`setScissorRects(_:)`](./mtlrendercommandencoder/setscissorrects%28_%29.md) to specify scissor rectangles:
 

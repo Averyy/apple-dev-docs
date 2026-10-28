@@ -25,7 +25,7 @@ static let ambient: SCNLight.LightType
 extern SCNLightType const SCNLightTypeAmbient;
 ```
 
-#### Discussion
+## Discussion
 
 Because the intensity of light from an ambient source is the same everywhere in the scene,  its position and direction have no effect. Attenuation, spotlight angle, and shadow attributes do not apply to ambient lights.
 

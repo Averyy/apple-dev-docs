@@ -23,7 +23,7 @@ var timestamp: TimeInterval { get }
 @property (nonatomic, readonly) NSTimeInterval timestamp;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is the time, in seconds since system startup, that the touch originated or was last changed. You can store the value of this property and compare it to the timestamp in subsequent [`UITouch`](../uitouch.md) objects to determine the duration of the touch and, if it is being swiped, the speed of movement. For a definition of the time since system startup, see the description of the [`systemUptime`](../../Foundation/processinfo/systemuptime.md) method of the [`ProcessInfo`](../../Foundation/processinfo.md) class.
 

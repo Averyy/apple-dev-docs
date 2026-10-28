@@ -15,7 +15,7 @@ Constants for reserved function keys on the keyboard.
 struct SpecialKey
 ```
 
-#### Overview
+## Overview
 
 These constants correspond to unicode characters in the range (0xF700–0xF8FF) and are values you can use with the [`characters`](./characters.md) and [`charactersIgnoringModifiers`](./charactersignoringmodifiers.md) properties of the event. You can also use them in some parameters in the [`keyEvent(with:location:modifierFlags:timestamp:windowNumber:context:characters:charactersIgnoringModifiers:isARepeat:keyCode:)`](./keyevent%28with,location,modifierflags,timestamp,windownumber,context,characters,charactersignoringmodifiers,isarepeat,keycode%29.md) method of the event.
 

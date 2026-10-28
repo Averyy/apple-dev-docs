@@ -15,7 +15,7 @@ The opacity of the stroke color.
 strokeOpacity?: number;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property can be in the range of `0` (fully transparent) to `1` (fully opaque). The default stroke opacity is `1`.
 

@@ -20,7 +20,7 @@ Creates a constraint with only an orientational demand in absolute look-at mode.
 static func lookAtAbsolute(named name: String, on jointName: String, lookingAlong targetAxis: SIMD3<Float>, orientationWeight: SIMD3<Float> = [1, 1, 1]) -> IKRig.Constraint
 ```
 
-#### Discussion
+## Discussion
 
 > **See Also**: `IKOrientationDemand.Mode.absoluteLookAt`
 

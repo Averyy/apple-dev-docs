@@ -14,7 +14,7 @@ Get a paginated list of the customers that belong to a group.
 - [App Store Server API changelog](./app-store-server-api-changelog.md)
 - [Identifying rate limits](./identifying-rate-limits.md)
 
-#### Discussion
+## Discussion
 
 Call this endpoint to enumerate the customers that belong to a group. Get the `groupId` for a group by calling the [`Get Customer Groups`](./get-customer-groups.md) endpoint.
 
@@ -30,7 +30,7 @@ GET https://api.storekit.apple.com/groups/v1/group/{groupId}?limit=50
 
 Group membership is separate from any transaction information. To unlock content for a customer, read their transactions; don’t depend on this endpoint. For more information, see [`Get Customer Groups`](./get-customer-groups.md).
 
-##### Test in the sandbox environment
+### Test in the sandbox environment
 
 In the sandbox environment, this endpoint returns a placeholder response when you send the placeholder [`groupId`](./get-group-members/groupid.md) of `900000000000000000` that the [`Get Customer Groups`](./get-customer-groups.md) endpoint returns:
 

@@ -22,7 +22,7 @@ optional func assessmentSessionDidEnd(_ session: AEAssessmentSession)
 - (void) assessmentSessionDidEnd:(AEAssessmentSession *) session;
 ```
 
-#### Discussion
+## Discussion
 
 After your app calls a session’s [`end()`](../aeassessmentsession/end%28%29.md) method, the system asynchronously restores the system to its normal state and then calls its delegate’s [`assessmentSessionDidEnd(_:)`](./assessmentsessiondidend%28_%29.md) method. Confirm to the user that the assessment has stopped only after receiving this callback.
 

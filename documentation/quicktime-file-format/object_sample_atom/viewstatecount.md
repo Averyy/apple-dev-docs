@@ -6,7 +6,7 @@
 
 The number of view states of the object.
 
-#### Overview
+## Overview
 
 A view state selects an alternate set of images for an object’s views. The value of this field must be positive.
 

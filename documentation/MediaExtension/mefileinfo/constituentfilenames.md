@@ -17,7 +17,7 @@ var constituentFileNames: [String] { get set }
 @property (nonatomic, copy) NSArray<NSString *> * constituentFileNames;
 ```
 
-#### Discussion
+## Discussion
 
 List of media files that collectively represent the media asset.
 

@@ -24,7 +24,7 @@ static var emv: PKMerchantCapability { get }
 PKMerchantCapabilityEMV
 ```
 
-#### Discussion
+## Discussion
 
 Include this value only if you support China Union Pay transactions.
 

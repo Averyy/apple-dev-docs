@@ -15,7 +15,7 @@ A value indicating that all format flags are clear.
 FormatFlagsAreAllClear
 ```
 
-#### Discussion
+## Discussion
 
 This constant preserves `0` as the wild card value.
 

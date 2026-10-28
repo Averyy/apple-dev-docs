@@ -21,7 +21,7 @@ static func .== (lhs: MLXArray, rhs: some ScalarOrArray) -> MLXArray
 
 - [Converting From Python](../converting-python.md)
 
-##### See Also
+### See Also
 
 - [Arithmetic](../arithmetic.md)
 - [`.==(_:_:)`](./doteqeq%28_,_%29-56m0a.md)

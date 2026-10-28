@@ -23,11 +23,11 @@ func recommendedVideoSettings(forVideoCodecType videoCodecType: AVVideoCodecType
 - (NSDictionary<NSString *,id> *) recommendedVideoSettingsForVideoCodecType:(AVVideoCodecType) videoCodecType assetWriterOutputFileType:(AVFileType) outputFileType;
 ```
 
-#### Return Value
+## Return Value
 
 A fully populated dictionary of keys and values that are compatible with [`AVAssetWriter`](../avassetwriter.md).
 
-#### Discussion
+## Discussion
 
 This dictionary contains keys and values described in [Video settings](../video-settings.md) and is suitable for use when creating an [`AVAssetWriterInput`](../avassetwriterinput.md) with the [`init(mediaType:outputSettings:)`](../avassetwriterinput/init%28mediatype,outputsettings%29.md) initializer.
 

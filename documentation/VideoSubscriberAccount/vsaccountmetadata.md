@@ -24,7 +24,7 @@ class VSAccountMetadata
 @interface VSAccountMetadata : NSObject
 ```
 
-#### Overview
+## Overview
 
 The [`VSAccountMetadata`](./vsaccountmetadata.md) object contains the information you requested in the [`VSAccountMetadataRequest`](./vsaccountmetadatarequest.md) object that you passed to the [`enqueue(_:completionHandler:)`](./vsaccountmanager/enqueue%28_,completionhandler%29.md) method. If the call succeeds, the system sends the [`VSAccountMetadata`](./vsaccountmetadata.md) object to your app’s completion handler for your app to process.
 

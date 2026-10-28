@@ -24,7 +24,7 @@ func getTransformRamp(for time: CMTime, start startTransform: UnsafeMutablePoint
 - (BOOL) getTransformRampForTime:(CMTime) time startTransform:(CGAffineTransform *) startTransform endTransform:(CGAffineTransform *) endTransform timeRange:(CMTimeRange *) timeRange;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if values are returned successfully, otherwise [`false`](../../Swift/false.md). [`false`](../../Swift/false.md) is returned if `time` is beyond the duration of the last transform ramp that has been set.
 

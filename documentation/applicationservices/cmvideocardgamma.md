@@ -17,7 +17,7 @@ typedef struct CMVideoCardGamma {
 } CMVideoCardGamma;
 ```
 
-#### Overview
+## Overview
 
 The ColorSync Manager defines the `CMVideoCardGamma` data structure to specify the video gamma data to store with a video gamma profile tag. The structure is a union that can store data in either table or formula format. 
 

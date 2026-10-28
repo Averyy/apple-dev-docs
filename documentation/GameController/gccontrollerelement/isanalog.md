@@ -28,7 +28,7 @@ var isAnalog: Bool { get }
 
 - [Letting players use their second-generation Siri Remote as a game controller](../letting-players-use-their-second-generation-siri-remote-as-a-game-controller.md)
 
-#### Discussion
+## Discussion
 
 If this property is [`true`](../../Swift/true.md), the input value defined by the element can return a range (from a minimum to maximum) of possible values. For example, this element might be a pressure-sensitive button or an axis of a thumbstick that allows for a range of physical movement. If this property is [`false`](../../Swift/false.md), the input value is a discrete value, such as `0` if the element is off, and `1` if the element is on.
 

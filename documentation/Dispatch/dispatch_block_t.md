@@ -21,7 +21,7 @@ The prototype of blocks submitted to dispatch queues, which take no arguments an
 typedef void (^)(void) dispatch_block_t;
 ```
 
-#### Discussion
+## Discussion
 
 Blocks behave like other Objective-C objects. Under ARC, the system releases and retains them automatically, and it converts them to malloc blocks as needed to facilitate their escape from the current scope of execution. When ARC is disabled, you are responsible for retaining and releasing blocks at appropriate times, and for copying blocks before allowing them to escape from the current scope of execution.
 

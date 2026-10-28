@@ -19,7 +19,7 @@ Settings that determine the appearance of the background corner radius.
 enum CornerStyle
 ```
 
-#### Overview
+## Overview
 
 Use this property to control how the button uses the [`cornerRadius`](../../uibackgroundconfiguration-swift.struct/cornerradius.md) property of the button’s [`background`](./background.md).
 

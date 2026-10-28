@@ -20,7 +20,7 @@ class NSScriptSuiteRegistry
 @interface NSScriptSuiteRegistry : NSObject
 ```
 
-#### Overview
+## Overview
 
 Scriptability information specifies the terminology available for use in scripts that target an application. It also provides information, used by AppleScript and by Cocoa, about how support for that terminology is implemented in the application. This information includes descriptions of the scriptable object classes in an application and of the commands the application supports.
 

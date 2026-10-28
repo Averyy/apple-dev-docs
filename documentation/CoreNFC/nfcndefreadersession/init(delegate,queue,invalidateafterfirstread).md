@@ -21,7 +21,7 @@ init(delegate: any NFCNDEFReaderSessionDelegate, queue: dispatch_queue_t?, inval
 - (instancetype) initWithDelegate:(id<NFCNDEFReaderSessionDelegate>) delegate queue:(dispatch_queue_t) queue invalidateAfterFirstRead:(BOOL) invalidateAfterFirstRead;
 ```
 
-#### Discussion
+## Discussion
 
 When `invalidateAfterFirstRead` is [`false`](../../Swift/false.md), the reader session can read multiple NFC tags. For each successful read, the delegate’s [`readerSession(_:didDetectNDEFs:)`](../nfcndefreadersessiondelegate/readersession%28_,diddetectndefs%29.md) method delivers the message. A reader session that can read multiple tags terminates when the session times out or when the session is canceled by the client app (by calling [`invalidate()`](../nfcreadersessionprotocol/invalidate%28%29.md)) or the user (via the user interface).
 

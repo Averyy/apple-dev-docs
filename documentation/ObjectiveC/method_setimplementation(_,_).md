@@ -25,7 +25,7 @@ func method_setImplementation(_ m: Method, _ imp: IMP) -> IMP
 extern IMPmethod_setImplementation(Method m, IMP imp);
 ```
 
-#### Return Value
+## Return Value
 
 The previous implementation of the method.
 

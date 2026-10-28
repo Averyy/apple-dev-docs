@@ -23,7 +23,7 @@ optional func collectionView(_ collectionView: UICollectionView, didHighlightIte
 - (void) collectionView:(UICollectionView *) collectionView didHighlightItemAtIndexPath:(NSIndexPath *) indexPath;
 ```
 
-#### Discussion
+## Discussion
 
 The collection view calls this method only in response to user interactions and does not call it if you programmatically set the highlighting on a cell.
 

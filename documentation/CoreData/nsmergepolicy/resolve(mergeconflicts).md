@@ -25,7 +25,7 @@ func resolve(mergeConflicts list: [Any]) throws
 - (BOOL) resolveConflicts:(NSArray *) list error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 If you override this method in a subclass, you should typically invoke the superclass’s implementation in addition to performing your own operations.
 

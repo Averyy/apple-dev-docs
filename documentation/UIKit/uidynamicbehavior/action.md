@@ -23,7 +23,7 @@ var action: (() -> Void)? { get set }
 @property (nonatomic, copy, nullable) void (^action)();
 ```
 
-#### Discussion
+## Discussion
 
 The dynamic animator calls the action block on every animation step.
 

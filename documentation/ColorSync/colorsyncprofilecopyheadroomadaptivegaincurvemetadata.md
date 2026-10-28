@@ -25,7 +25,7 @@ extern CFDataRefColorSyncProfileCopyHeadroomAdaptiveGainCurveMetadata(ColorSyncP
 
 - [Authoring Headroom Adaptive Gain Curve metadata](./authoring-headroom-adaptive-gain-curve-metadata.md)
 
-#### Return Value
+## Return Value
 
 A copy of the raw HAGC data that the caller must release with `CFRelease`, or `NULL` if the profile contains no HAGC tag.
 

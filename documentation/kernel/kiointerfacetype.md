@@ -15,7 +15,7 @@ A property of IONetworkInterface objects.
 #define kIOInterfaceType
 ```
 
-#### Discussion
+## Discussion
 
 The kIOInterfaceType property has an OSNumber value that specifies the type of network interface that this interface represents. The type constants are defined in bsd/net/if_types.h.
 

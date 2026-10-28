@@ -13,7 +13,7 @@ Use argument buffers to render terrain in real time with a GPU-driven pipeline.
 - macOS 14.0+
 - Xcode 26.3+
 
-#### Overview
+## Overview
 
 This sample demonstrates dynamic terrain generation on an outdoor landscape, using argument buffers to select terrain materials, vegetation geometry, and particle effects within a GPU-driven pipeline. The sample creates a landscape with visually distinct areas, called habitats, that differ based on the land’s elevation. These are the habitats in the sample, ordered from highest to lowest elevation:
 
@@ -26,7 +26,7 @@ This sample demonstrates dynamic terrain generation on an outdoor landscape, usi
 
 > **Note**: This sample reduces the overhead of encoding commands on the CPU by using argument buffers. For an introduction to argument buffers, see the samples listed in [Buffers](./buffers.md).
 
-##### Getting started
+### Getting started
 
 The Xcode project contains schemes for running the sample in macOS and iOS. Metal isn’t supported in the iOS Simulator, so the iOS scheme requires a physical device that supports GPU family 4 to run the sample. The default scheme is macOS, which runs the sample as is on your Mac.
 
@@ -45,7 +45,7 @@ In iOS, use these controls to navigate the scene:
 
 > **Note**: The particle effects in this sample require a Mac that supports Tier 2 argument buffers. Particle effects aren’t available on iOS devices.
 
-##### Respond to landscape alterations
+### Respond to landscape alterations
 
 The app determines the landscape’s initial topology from a static height map, `TerrainHeightMap.png`.
 
@@ -66,7 +66,7 @@ static void EvaluateTerrainAtLocation(float2 uv,
                                       thread float3 &outNormal)
 ```
 
-##### Define an argument buffer for terrain habitats
+### Define an argument buffer for terrain habitats
 
 The sample defines a custom argument buffer structure, `TerrainHabitat`, that defines the elements of a terrain habitat.
 
@@ -126,7 +126,7 @@ struct TerrainParams
 
 `TerrainHabitat` is the specific argument buffer definition for a terrain habitat. However, because the app nests its definition within `TerrainParams`, the app sends the `TerrainParams` objects to the GPU pipeline.
 
-##### Render terrain
+### Render terrain
 
 The sample provides the GPU with the textures corresponding to various habitats. First, the sample calls the `useResource:usage:` method to indicate which textures the GPU uses.
 
@@ -173,7 +173,7 @@ BrdfProperties curSubLayerBrdf = sample_brdf(
                                              bitangent);
 ```
 
-##### Render vegetation
+### Render vegetation
 
 The sample passes the `terrainParamsBuffer` argument buffer to the vegetation render pass through an instance of `AAPLTerrainRenderer`. This data determines which type of vegetation to render at a given location. First, the sample calls the `setBuffer:offset:atIndex:` method to set the argument buffer for the vegetation render pass.
 
@@ -202,7 +202,7 @@ Finally, the sample uses this population index to render an instance of a partic
 vegetationSpawnInstance(pop_idx, world_matrix, float4(world_pos, radius), globalUniforms, instances, indirect);
 ```
 
-##### Render particles
+### Render particles
 
 The sample passes the `terrainParamsBuffer` argument buffer to the particle render pass through an instance of `AAPLTerrainRenderer`. This data determines which type of particles to render at a given location. First, the sample calls the `setBuffer:offset:atIndex:` method to set the argument buffer for the particle render pass.
 

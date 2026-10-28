@@ -27,7 +27,7 @@ func requestSendPTPCommand(_ ptpCommand: Data, outData ptpData: Data?) async thr
 - (void) requestSendPTPCommand:(NSData *) ptpCommand outData:(NSData *) ptpData completion:(void (^)(NSData *responseData, NSData *ptpResponseData, NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 The block receives the response, data, and an error message, if present.
 

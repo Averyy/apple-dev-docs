@@ -24,7 +24,7 @@ var controlPointFormat: MTLAttributeFormat { get set }
 @property (nonatomic) MTLAttributeFormat controlPointFormat;
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to `MTLAttributeFormatFloat3`, representing 3 floating point values tightly packed.
 

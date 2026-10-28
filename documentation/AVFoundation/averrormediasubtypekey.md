@@ -25,7 +25,7 @@ let AVErrorMediaSubTypeKey: String
 extern NSString * const AVErrorMediaSubTypeKey;
 ```
 
-#### Discussion
+## Discussion
 
 The associated value is an array of integers that indicate the media subtype.
 

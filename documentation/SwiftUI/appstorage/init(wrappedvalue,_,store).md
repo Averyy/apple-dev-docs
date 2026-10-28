@@ -69,7 +69,7 @@ init(wrappedValue: Value, _ key: String, store: UserDefaults? = nil) where Value
 init<RowValue>(wrappedValue: Value = TableColumnCustomization<RowValue>(), _ key: String, store: UserDefaults? = nil) where Value == TableColumnCustomization<RowValue>, RowValue : Identifiable
 ```
 
-#### Discussion
+## Discussion
 
 You can set this customization on the TabView using [`tabViewCustomization(_:)`](../view/tabviewcustomization%28_%29.md).
 

@@ -21,7 +21,7 @@ Construct a raw span over the memory represented by this span.
 var bytes: RawSpan { get }
 ```
 
-#### Return Value
+## Return Value
 
 A `RawSpan` over the memory represented by this span.
 

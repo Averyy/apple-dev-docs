@@ -16,7 +16,7 @@ Restores the last saved set of context settings.
 void restore();
 ```
 
-#### Discussion
+## Discussion
 
 You can save and restore all of the context settings: rotation, scale, translation, transformation matrix, stroke and fill styles, and text settings. This is a very fast, nestable operation.
 

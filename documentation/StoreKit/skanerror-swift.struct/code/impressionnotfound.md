@@ -22,7 +22,7 @@ case impressionNotFound
 SKANErrorImpressionNotFound
 ```
 
-#### Discussion
+## Discussion
 
 This error may occur if an app calls [`endImpression(_:completionHandler:)`](../../skadnetwork/endimpression%28_,completionhandler%29.md) before calling [`startImpression(_:completionHandler:)`](../../skadnetwork/startimpression%28_,completionhandler%29.md).
 

@@ -27,7 +27,7 @@ var batch_size: Int
 size_t batch_size;
 ```
 
-#### Discussion
+## Discussion
 
 If you set this value to a nonzero value that doesn’t match the corresponding array descriptor’s size, BNNS throws an error.
 

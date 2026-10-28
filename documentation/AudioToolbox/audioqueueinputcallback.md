@@ -24,11 +24,11 @@ typealias AudioQueueInputCallback = (UnsafeMutableRawPointer?, AudioQueueRef, Au
 typedef void (*)(void *, struct OpaqueAudioQueue *, struct AudioQueueBuffer *, const struct AudioTimeStamp *, unsigned int, const struct AudioStreamPacketDescription *) AudioQueueInputCallback;
 ```
 
-#### Discussion
+## Discussion
 
 If you name your callback function `MyAudioQueueInputCallback`, you would declare it like this:
 
-##### Discussion
+### Discussion
 
 You specify a recording audio queue callback when calling the [`AudioQueueNewInput(_:_:_:_:_:_:_:)`](./audioqueuenewinput%28_,_,_,_,_,_,_%29.md) function. The callback is invoked each time its recording audio queue has filled an audio queue buffer with fresh audio data. Typically, your callback writes the data to a file or other buffer, and then reenqueues the audio queue buffer to receive more data.
 

@@ -14,7 +14,7 @@ A surface shader that defines properties for a RealityKit Hair material.
 - tvOS 27.0+
 - visionOS 27.0+
 
-#### Parameter Types
+## Parameter Types
 
 | Input | Type |
 | --- | --- |
@@ -42,11 +42,11 @@ A surface shader that defines properties for a RealityKit Hair material.
 | --- | --- |
 | `Out` | Token |
 
-#### Discussion
+## Discussion
 
 The Hair Surface node produces a custom surface based on its input parameters. Connect the output of the Hair Surface node to the `Custom Surface` output of your material.
 
-#### Parameter descriptions
+## Parameter descriptions
 
 - **`Base Color`**: The base display color of the surface. The color of an object under pure white light.
 - **`Opacity`**: The level of opaqueness of the surface. If the value of this parameter is `1.0`, the surface is fully opaque. If the value is less than `1.0`, the surface appears translucent. If the value is `0.0`, the surface is completely transparent. The default value is `1.0`.

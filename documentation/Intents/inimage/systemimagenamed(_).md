@@ -24,7 +24,7 @@ class func systemImageNamed(_ systemImageName: String) -> Self
 + (instancetype) systemImageNamed:(NSString *) systemImageName;
 ```
 
-#### Return Value
+## Return Value
 
 An object that contains the specified symbol image. If `systemImageName` is invalid, the system passes `nil` to the completion handler of [`fetchUIImage(completion:)`](./fetchuiimage%28completion%29.md).
 

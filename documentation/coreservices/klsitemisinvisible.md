@@ -20,7 +20,7 @@ let kLSItemIsInvisible: CFString!
 const CFStringRef kLSItemIsInvisible;
 ```
 
-#### Discussion
+## Discussion
 
 Use the URL resource property [`kCFURLIsHiddenKey`](../CoreFoundation/kcfurlishiddenkey.md)/[`isHiddenKey`](../Foundation/urlresourcekey/ishiddenkey.md) instead.
 

@@ -19,7 +19,7 @@ class FSRenameItemResult
 @interface FSRenameItemResult : FSVolumeHandlerResult
 ```
 
-#### Overview
+## Overview
 
 Use this type in your implementation of  [`renameItem(_:inDirectory:named:to:inDirectory:overItem:context:replyHandler:)`](./fsvolume/handler/renameitem%28_,indirectory,named,to,indirectory,overitem,context,replyhandler%29.md).
 

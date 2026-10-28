@@ -15,7 +15,7 @@ Creates a 3D representation of the image if one does not already exist.
 @abi(final func generateNonisolatedNonsendingFinal() async throws) nonisolated(nonsending) final func generate() async throws
 ```
 
-#### Discussion
+## Discussion
 
 This method checks for cancellation of an enclosing `Task` during generation, and cancels its own async generation early (by throwing an error) if task cancellation is detected.
 

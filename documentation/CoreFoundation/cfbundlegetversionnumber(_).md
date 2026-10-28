@@ -25,11 +25,11 @@ func CFBundleGetVersionNumber(_ bundle: CFBundle!) -> UInt32
 extern UInt32 CFBundleGetVersionNumber(CFBundleRef bundle);
 ```
 
-#### Return Value
+## Return Value
 
 A `vers` resource style version number. If it is a string, it is automatically converted to the numeric representation, where the major version number is restricted to 2 BCD digits (in other words, it must be in the range 0-99) and the minor and bug fix version numbers are each restricted to a single BCD digit (0-9).
 
-#### Discussion
+## Discussion
 
 This function is only supported for the `vers` resource style version numbers. Where other version number styles—namely X, or X.Y, or X.Y.Z—are used, you can use [`CFBundleGetValueForInfoDictionaryKey(_:_:)`](./cfbundlegetvalueforinfodictionarykey%28_,_%29.md) with the key `kCFBundleVersionKey` to extract the version number as a string from the bundle’s information dictionary.
 

@@ -25,7 +25,7 @@ var intensity: CGFloat { get set }
 @property (nonatomic) CGFloat intensity;
 ```
 
-#### Discussion
+## Discussion
 
 When working with photometric lights (see the [`iesProfileURL`](./iesprofileurl.md) property) or physically-based rendering (see [`physicallyBased`](../scnmaterial/lightingmodel-swift.struct/physicallybased.md)), you can leave the [`color`](./color.md) property at its default white color and use the [`intensity`](./intensity.md) and [`temperature`](./temperature.md) to control the light using realistic parameters. When working with physically-based materials, this value the luminous flux of the light source. The default value is `1000` lumens.
 

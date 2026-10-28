@@ -19,7 +19,7 @@ var batteryState: WKInterfaceDeviceBatteryState { get }
 @property (nonatomic, readonly) WKInterfaceDeviceBatteryState batteryState;
 ```
 
-#### Discussion
+## Discussion
 
 If battery monitoring is enabled, this property is set to the device’s current battery state. For a list of possible states, see [`WKInterfaceDeviceBatteryState`](../wkinterfacedevicebatterystate.md).
 

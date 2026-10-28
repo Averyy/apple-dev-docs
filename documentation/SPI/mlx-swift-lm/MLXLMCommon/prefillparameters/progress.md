@@ -17,7 +17,7 @@ Called after each prefill chunk with `(processedPositions, totalPositions)`.
 var progress: (@Sendable (_ processed: Int, _ total: Int) -> Void)?
 ```
 
-#### Discussion
+## Discussion
 
 Positions are the units the model prefills: prompt tokens for text models, merged embedding positions (after image expansion) for VLMs. A terminal `(total, total)` is delivered once the prompt is fully consumed, for every model — including those that prefill in a single forward. Because chunks are pipelined with `asyncEval`, intermediate calls report graph submission, slightly ahead of GPU completion.
 

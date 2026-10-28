@@ -25,7 +25,7 @@ var particleCharge: CGFloat { get set }
 @property (nonatomic) CGFloat particleCharge;
 ```
 
-#### Discussion
+## Discussion
 
 A particle’s charge determines its behavior when affected by an electric or magnetic field. Use the [`SCNPhysicsField`](../scnphysicsfield.md) class to add these fields to your scene. Particles with positive or negative charges behave differently when affected by electric or magnetic fields. (Note that while SceneKit uses SI units as the basis for its physics simulation, you need not worry about realism — experiment with different combinations of values to find the behavior that works best for your app or game.) You can randomize the charges of particles in the system with the [`particleChargeVariation`](./particlechargevariation.md) property.
 

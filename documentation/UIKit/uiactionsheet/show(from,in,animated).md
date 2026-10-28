@@ -21,7 +21,7 @@ func show(from rect: CGRect, in view: UIView, animated: Bool)
 - (void) showFromRect:(CGRect) rect inView:(UIView *) view animated:(BOOL) animated;
 ```
 
-#### Discussion
+## Discussion
 
 On iPad, this method displays the action sheet in a popover whose arrow points to the specified rectangle of the view. The popover does not overlap the specified rectangle.
 

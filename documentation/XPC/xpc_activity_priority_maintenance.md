@@ -19,7 +19,7 @@ let XPC_ACTIVITY_PRIORITY_MAINTENANCE: UnsafePointer<CChar>
 extern const char * const XPC_ACTIVITY_PRIORITY_MAINTENANCE;
 ```
 
-#### Discussion
+## Discussion
 
 Maintenance priority is intended for user-invisible maintenance tasks such as garbage collection or optimization.
 

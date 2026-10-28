@@ -38,7 +38,7 @@ var suggestedInvocationPhrase: String? { get set }
 - [Donating Reservations](../../SiriKit/donating-reservations.md)
 - [Donating Shortcuts](../../SiriKit/donating-shortcuts.md)
 
-#### Discussion
+## Discussion
 
 Suggest a short, memorable phrase the user might say to activate this shortcut.
 

@@ -20,11 +20,11 @@ optional func outlineView(_ outlineView: NSOutlineView, rowViewForItem item: Any
 - (NSTableRowView *) outlineView:(NSOutlineView *) outlineView rowViewForItem:(id) item;
 ```
 
-#### Return Value
+## Return Value
 
 An instance or subclass of `NSTableRowView`. If `nil` is returned, a `NSTableRowView` instance is created and used.
 
-#### Discussion
+## Discussion
 
 This method, if implemented, is only invoked for NSView-based outline views.
 

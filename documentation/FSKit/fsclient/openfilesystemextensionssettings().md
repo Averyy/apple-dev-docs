@@ -19,11 +19,11 @@ func openFileSystemExtensionsSettings() -> Bool
 - (BOOL) openFileSystemExtensionsSettings;
 ```
 
-#### Return Value
+## Return Value
 
 `true` (Swift) or `YES` (Obj-C) if the settings were successfully opened; otherwise, `false` (Swift) or `NO`(Obj-C).
 
-#### Discussion
+## Discussion
 
 Calling this method allows someone using your app to navigate to the File System Extensions pane in System Settings. From this pane, they can view, enable, and disable file system extensions.
 

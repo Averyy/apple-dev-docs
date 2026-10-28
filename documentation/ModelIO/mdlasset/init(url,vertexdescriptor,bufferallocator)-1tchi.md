@@ -24,11 +24,11 @@ init(url URL: URL?, vertexDescriptor: MDLVertexDescriptor?, bufferAllocator: (an
 - (instancetype) initWithURL:(NSURL *) URL vertexDescriptor:(MDLVertexDescriptor *) vertexDescriptor bufferAllocator:(id<MDLMeshBufferAllocator>) bufferAllocator;
 ```
 
-#### Return Value
+## Return Value
 
 A new asset object.
 
-#### Discussion
+## Discussion
 
 Using this initializer is equivalent to using the [`init(url:vertexDescriptor:bufferAllocator:preserveTopology:error:)`](./init%28url,vertexdescriptor,bufferallocator,preservetopology,error%29-510xi.md) initializer, passing [`false`](../../Swift/false.md) for the `preserveTopology` parameter and ignoring errors.
 

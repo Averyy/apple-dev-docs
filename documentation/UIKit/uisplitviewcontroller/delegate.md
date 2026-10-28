@@ -23,7 +23,7 @@ weak var delegate: (any UISplitViewControllerDelegate)? { get set }
 @property (nonatomic, weak, nullable) id<UISplitViewControllerDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 The split view controller uses its delegate to manage showing and hiding related view controllers. For more information about the methods you can implement in your delegate, see [`UISplitViewControllerDelegate`](../uisplitviewcontrollerdelegate.md).
 

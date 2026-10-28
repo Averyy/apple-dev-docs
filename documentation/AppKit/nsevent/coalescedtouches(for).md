@@ -19,11 +19,11 @@ func coalescedTouches(for touch: NSTouch) -> [NSTouch]
 - (NSArray<NSTouch *> *) coalescedTouchesForTouch:(NSTouch *) touch;
 ```
 
-#### Return Value
+## Return Value
 
 An array that contains the [`NSTouch`](../nstouch.md) objects AppKit generated since the last event, but didn’t deliver. This method returns `nil` if the object in the `touch` parameter isn’t associated with the current event.
 
-#### Discussion
+## Discussion
 
 Use this method to obtain additional touch objects that the system received but didn’t deliver to your app. You might use these extra touch objects to create a more precise path for the touch sequence.
 

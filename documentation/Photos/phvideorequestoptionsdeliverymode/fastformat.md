@@ -24,7 +24,7 @@ case fastFormat
 PHVideoRequestOptionsDeliveryModeFastFormat
 ```
 
-#### Discussion
+## Discussion
 
 When the [`isNetworkAccessAllowed`](../phvideorequestoptions/isnetworkaccessallowed.md) property is `true`, the fast option provides a version of the video asset suitable for streaming from iCloud over a low-quality connection—for example, an MP4 video with 360p resolution. If a higher-quality version is already cached on the device, Photos provides that video instead.
 

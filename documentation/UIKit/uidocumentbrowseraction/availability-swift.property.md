@@ -22,7 +22,7 @@ var availability: UIDocumentBrowserAction.Availability { get }
 @property (nonatomic, readonly) UIDocumentBrowserActionAvailability availability;
 ```
 
-#### Discussion
+## Discussion
 
 For a list of possible values, see [`UIDocumentBrowserAction.Availability`](./availability-swift.struct.md).
 

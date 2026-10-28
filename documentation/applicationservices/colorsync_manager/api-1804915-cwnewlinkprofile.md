@@ -15,11 +15,11 @@ CMError CWNewLinkProfile (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A `CMError` value. See [Result Codes](../colorsync_manager.md#1670295).
 
-#### Overview
+## Overview
 
 This discussion is accurate for versions of ColorSync prior to 2.5. See the version notes below for changes starting with version 2.5.
 
@@ -44,7 +44,7 @@ The following rules govern the content and use of a device link profile:
 
 This function privately maintains all the profile information required by the color world for color-matching and color-checking sessions. Therefore, after executing the `CWNewLinkProfile` function, you should call the [CMCloseProfile](./api-1804861-cmcloseprofile.md) function for each profile used to build a device link profile (to dispose of each profile reference). 
 
-##### Version-Notes
+### Version-Notes
 
 Note that starting with version 2.5, use of the system profile has changed.
 

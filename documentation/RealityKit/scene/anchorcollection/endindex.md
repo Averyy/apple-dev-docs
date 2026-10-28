@@ -21,7 +21,7 @@ The position one greater than the last valid subscript argument.
 @preconcurrency var endIndex: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 When you need a range that includes the last element of an array, use the half-open range operator (`..<`) with [`endIndex`](./endindex.md). The `..<` operator creates a range that doesn’t include the upper bound, so it’s safe to use with [`endIndex`](./endindex.md).
 

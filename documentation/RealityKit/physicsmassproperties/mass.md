@@ -20,7 +20,7 @@ The mass in kilograms.
 var mass: Float
 ```
 
-#### Discussion
+## Discussion
 
 For a mass of `0` or infinity, the simulation treats the object as [`PhysicsBodyMode.kinematic`](../physicsbodymode/kinematic.md). That is, the object doesn’t respond to forces.
 

@@ -26,11 +26,11 @@ optional func tableView(_ tableView: UITableView, dropSessionDidUpdate session: 
 
 - [Supporting drag and drop in table views](../supporting-drag-and-drop-in-table-views.md)
 
-#### Return Value
+## Return Value
 
 The [`UITableViewDropProposal`](../uitableviewdropproposal.md) object indicating how to incorporate the dropped data.
 
-#### Discussion
+## Discussion
 
 While the user is dragging content, the table view calls this method repeatedly to determine how you would handle the drop if it occurred at the specified location. The table view provides visual feedback to the user based on your proposal.
 

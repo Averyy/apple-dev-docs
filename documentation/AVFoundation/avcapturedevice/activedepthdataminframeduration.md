@@ -22,7 +22,7 @@ var activeDepthDataMinFrameDuration: CMTime { get set }
 @property (nonatomic) CMTime activeDepthDataMinFrameDuration;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to set an upper limit to the frame rate at which the system produces depth data. Lowering the depth data frame rate typically lowers power consumption which increases the time the camera can run before it reaches an elevated system pressure state. Setting a value outside the active depth data format’s supported frame rate range produces an exception.
 

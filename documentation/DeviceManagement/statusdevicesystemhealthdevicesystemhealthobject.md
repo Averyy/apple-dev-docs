@@ -17,7 +17,7 @@ A dictionary where each key represents a hardware component name and each value 
 object StatusDeviceSystemHealthDeviceSystemHealthObject
 ```
 
-#### Discussion
+## Discussion
 
 - `ok`: The component is operating normally.
 - `error`: The component has a detected error or failure.

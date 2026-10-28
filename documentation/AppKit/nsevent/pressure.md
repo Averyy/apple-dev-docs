@@ -19,7 +19,7 @@ var pressure: Float { get }
 @property (readonly) float pressure;
 ```
 
-#### Discussion
+## Discussion
 
 For input devices that are pressure-sensitive, the value is increased as pressure is applied to the device.
 

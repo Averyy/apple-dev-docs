@@ -23,11 +23,11 @@ func decode(_ type: Int128.Type) throws -> Int128
 
 Available when `Self` conforms to `UnkeyedDecodingContainer`.
 
-#### Return Value
+## Return Value
 
 A value of the requested type.
 
-#### Discussion
+## Discussion
 
 > **Throws**: `DecodingError.typeMismatch` if the encountered encoded value cannot be converted to the requested type.
 

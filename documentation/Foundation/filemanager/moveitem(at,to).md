@@ -25,7 +25,7 @@ func moveItem(at srcURL: URL, to dstURL: URL) throws
 - (BOOL) moveItemAtURL:(NSURL *) srcURL toURL:(NSURL *) dstURL error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 When moving items, the current process must have permission to read the item at `srcURL` and write the parent directory of `dstURL`. If the item at `srcURL` is a directory, this method moves the directory and all of its contents, including any hidden files. If an item with the same name already exists at `dstURL`, this method stops the move attempt and returns an appropriate error. If the last component of `srcURL` is a symbolic link, only the link is moved to the new path; the item pointed to by the link remains at its current location.
 

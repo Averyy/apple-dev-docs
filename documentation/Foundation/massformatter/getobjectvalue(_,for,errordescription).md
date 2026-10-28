@@ -25,11 +25,11 @@ func getObjectValue(_ obj: AutoreleasingUnsafeMutablePointer<AnyObject?>?, for s
 - (BOOL) getObjectValue:(id*) obj forString:(NSString *) string errorDescription:(NSString **) error;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the conversion from string was successful; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 You can override this method in a subclass. For more information, see [`Formatter`](../formatter.md).
 

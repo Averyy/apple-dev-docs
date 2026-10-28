@@ -25,7 +25,7 @@ var outputNode: AVAudioOutputNode { get }
 @property (nonatomic, readonly) AVAudioOutputNode * outputNode;
 ```
 
-#### Discussion
+## Discussion
 
 The framework performs audio output through an output node. The audio engine creates a singleton on demand when first accessing this variable. Connect another node to the input of the output node, or get a mixer using the [`mainMixerNode`](./mainmixernode.md) property.
 

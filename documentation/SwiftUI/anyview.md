@@ -22,7 +22,7 @@ A type-erased view.
 nonisolated struct AnyView
 ```
 
-#### Overview
+## Overview
 
 An `AnyView` allows changing the type of view used in a given view hierarchy. Whenever the type of view used with an `AnyView` changes, the old hierarchy is destroyed and a new hierarchy is created for the new type.
 

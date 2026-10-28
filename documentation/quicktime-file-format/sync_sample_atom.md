@@ -6,7 +6,7 @@
 
 An atom that identifies the key frames in the media.
 
-#### Overview
+## Overview
 
 In a media that contains compressed data, key frames define starting points for portions of a temporally compressed sequence. The key frame is self-contained — that is, it is independent of preceding frames. Subsequent frames may depend on the key frame.
 

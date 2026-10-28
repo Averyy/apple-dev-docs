@@ -21,7 +21,7 @@ Returns a display option that omits the host component if it matches a set of su
 static func omitSpecificSubdomains(_ subdomainsToOmit: Set<String> = Set(), includeMultiLevelSubdomains omitMultiLevelSubdomains: Bool = false, when component: URL.FormatStyle.Component, matches requirements: Set<String>) -> URL.FormatStyle.HostDisplayOption
 ```
 
-#### Return Value
+## Return Value
 
 A display option that omits the host component if it matches a set of subdomains and a specified component meets the specified requirements.
 

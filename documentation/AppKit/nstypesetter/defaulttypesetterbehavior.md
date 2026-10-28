@@ -19,11 +19,11 @@ class var defaultTypesetterBehavior: NSLayoutManager.TypesetterBehavior { get }
 @property (class, readonly) NSTypesetterBehavior defaultTypesetterBehavior;
 ```
 
-#### Return Value
+## Return Value
 
 The default typesetter behavior.
 
-#### Discussion
+## Discussion
 
 Possible return values are described in the [`NSLayoutManager.TypesetterBehavior`](../nslayoutmanager/typesetterbehavior-swift.enum.md) section for [`NSLayoutManager`](../nslayoutmanager.md).
 

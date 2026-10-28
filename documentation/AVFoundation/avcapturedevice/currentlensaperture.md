@@ -22,7 +22,7 @@ class let currentLensAperture: Float
 extern const float AVCaptureLensApertureCurrent;
 ```
 
-#### Discussion
+## Discussion
 
 This value may be passed to [`setExposureModeCustom(lensAperture:duration:iso:completionHandler:)`](./setexposuremodecustom%28lensaperture,duration,iso,completionhandler%29.md) to lock it to its current value. Note that the device may be adjusting the aperture at the time of the call, in which case [`lensAperture`](./lensaperture.md) may be locked to different value than the value obtained by querying the property.
 

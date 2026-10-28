@@ -23,7 +23,7 @@ struct ScoredSearchableItem
 
 - [Making your indexed content available to Foundation Models](./making-your-indexed-content-available-to-foundation-models.md)
 
-#### Overview
+## Overview
 
 Use this type to associate a score with a searchable item from the app’s index. You create instances of this type from a [`CustomStage`](./customstage.md) when the stage’s output type is [`SearchPipelineDataType.scoredItems`](./searchpipelinedatatype/scoreditems.md).
 

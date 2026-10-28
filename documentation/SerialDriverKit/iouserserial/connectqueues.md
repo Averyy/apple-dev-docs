@@ -15,11 +15,11 @@ Creates and configures the buffers that store the data moving to and from the de
 virtual kern_return_t ConnectQueues(IOBufferMemoryDescriptor **ifmd, IOMemoryDescriptor **rxqmd, IOMemoryDescriptor **txqmd, IOMemoryDescriptor *in_rxqmd, IOMemoryDescriptor *in_txqmd, uint32_t in_rxqoffset, uint32_t in_txqoffset, uint8_t in_rxqlogsz, uint8_t in_txqlogsz);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 
-#### Discussion
+## Discussion
 
 When creating a custom serial driver, use this method to create or register the buffers that your driver uses to store data moving to and from the device. If you want to provide the memory buffers yourself, specify those values in the `in_rxqmd` and `in_txqmd` parameters. When creating custom buffers, always make the size of your buffers a power of 2. If you specify `NULL` for `in_rxqmd` and `in_txqmd`, this method creates new buffers for you.
 

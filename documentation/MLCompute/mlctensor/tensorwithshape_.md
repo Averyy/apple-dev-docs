@@ -19,11 +19,11 @@ Creates a tensor without data, with the shape you specify.
 + (instancetype) tensorWithShape:(NSArray<NSNumber *> *) shape;
 ```
 
-#### Return Value
+## Return Value
 
 A tensor.
 
-#### Discussion
+## Discussion
 
 The tensor data type is [`MLCDataType.float32`](../mlcdatatype/float32.md).
 

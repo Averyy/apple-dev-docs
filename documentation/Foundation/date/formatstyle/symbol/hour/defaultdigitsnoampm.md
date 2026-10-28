@@ -21,7 +21,7 @@ Custom format style portraying the minimum number of digits that represents the 
 static var defaultDigitsNoAMPM: Date.FormatStyle.Symbol.Hour { get }
 ```
 
-#### Discussion
+## Discussion
 
 This style doesn’t include the day period symbol (a.m. or p.m.). For example, `1`, `11`.
 

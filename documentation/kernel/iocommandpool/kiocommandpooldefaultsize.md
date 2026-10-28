@@ -11,7 +11,7 @@ The default size of any command pool.
 static const UInt32 kIOCommandPoolDefaultSize = 2;
 ```
 
-#### Overview
+## Overview
 
 kIOCommandPoolDefaultSize is the default size of any command pool. The default size was determined to be the smallest size for which a pool makes sense.
 

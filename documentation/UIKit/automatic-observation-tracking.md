@@ -5,7 +5,7 @@
 
 Simplify updating views when data changes by making updates in methods that support automatic observation tracking.
 
-#### Overview
+## Overview
 
 Use automatic observation tracking to update your views in response to model object changes without manually invalidating views. Mark your model classes with the [`Observable`](../Observation/observable.md) macro, then read model properties in methods like [`updateProperties()`](./uiview/updateproperties%28%29.md) or [`layoutSubviews()`](./uiview/layoutsubviews%28%29.md). UIKit tracks which properties you access and automatically calls these methods again when those properties change. This approach eliminates the need to manually call methods like [`setNeedsLayout()`](./uiview/setneedslayout%28%29.md) or [`setNeedsDisplay()`](./uiview/setneedsdisplay%28%29.md) after updating model data, reducing opportunities for bugs and outdated displays.
 

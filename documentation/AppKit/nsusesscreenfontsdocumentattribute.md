@@ -15,7 +15,7 @@ The screen fonts attribute.
 extern NSAttributedStringKey NSUsesScreenFontsDocumentAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSNumber`](../Foundation/nsnumber.md) object containing a Boolean; this attribute corresponds to the [`usesScreenFonts`](./nslayoutmanager/usesscreenfonts.md) method of [`NSLayoutManager`](./nslayoutmanager.md); if absent, follows the system default setting.
 

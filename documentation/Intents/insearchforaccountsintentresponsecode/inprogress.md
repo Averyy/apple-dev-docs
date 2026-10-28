@@ -23,7 +23,7 @@ case inProgress
 INSearchForAccountsIntentResponseCodeInProgress
 ```
 
-#### Discussion
+## Discussion
 
 Return this code if the search is running but you are unable to return the results after a few seconds of having your handler called. You might use this code when performing the search requires communicating with your server and you have not yet received a confirmation from that server.
 

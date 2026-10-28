@@ -19,7 +19,7 @@ func lastError() -> (any Error)!
 - (NSError *) lastError;
 ```
 
-#### Discussion
+## Discussion
 
 Your authorization plug-in should override this method and return the last error that occurred during evaluation or `nil` if no error occurred.
 

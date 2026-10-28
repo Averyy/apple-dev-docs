@@ -23,7 +23,7 @@ let kCTFontCollectionRemoveDuplicatesOption: CFString
 extern CFStringRef const kCTFontCollectionRemoveDuplicatesOption;
 ```
 
-#### Discussion
+## Discussion
 
 Option key to specify filtering of duplicates.
 

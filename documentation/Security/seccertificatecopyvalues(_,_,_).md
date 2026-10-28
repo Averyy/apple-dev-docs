@@ -23,11 +23,11 @@ CFDictionaryRefSecCertificateCopyValues(SecCertificateRef certificate, CFArrayRe
 
 - [Getting Certificate Values](./getting-certificate-values.md)
 
-#### Return Value
+## Return Value
 
 A dictionary containing the specified values from the certificate or `NULL` if an error occurs. In Objective-C, free this dictionary with a call to the [`CFRelease`](../CoreFoundation/cfrelease.md) function when you are done with it.
 
-#### Discussion
+## Discussion
 
 Each entry in this dictionary is itself a dictionary with the keys described in [Certificate Property Keys](./certificate-property-keys.md).
 

@@ -21,7 +21,7 @@ Creates a new collection by concatenating the elements of a collection and a seq
 static func + <Other>(lhs: Self, rhs: Other) -> Self where Other : Sequence, Self.Element == Other.Element
 ```
 
-#### Discussion
+## Discussion
 
 The two arguments must have the same `Element` type. For example, you can concatenate the elements of an integer array and a `Range<Int>` instance.
 

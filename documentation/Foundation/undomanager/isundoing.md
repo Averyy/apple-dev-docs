@@ -25,7 +25,7 @@ var isUndoing: Bool { get }
 @property (readonly, getter=isUndoing) BOOL undoing;
 ```
 
-#### Discussion
+## Discussion
 
 The value is [`true`](../../Swift/true.md) if the manager is performing its [`undo()`](./undo%28%29.md) or [`undoNestedGroup()`](./undonestedgroup%28%29.md) method, otherwise [`false`](../../Swift/false.md).
 

@@ -17,13 +17,13 @@ The payload that configures single sign-on (SSO).
 object SingleSignOn
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.sso` as the payload type.
 
 Deprecated in iOS 26. Use the [`ExtensibleSingleSignOn`](./extensiblesinglesignon.md) payload instead.
 
-##### Profile availability
+### Profile availability
 
 |  |  |
 | --- | --- |
@@ -35,7 +35,7 @@ Deprecated in iOS 26. Use the [`ExtensibleSingleSignOn`](./extensiblesinglesigno
 | Allowed in user enrollment | iOS |
 | Allow multiple payloads | N/A |
 
-##### Profile example
+### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>

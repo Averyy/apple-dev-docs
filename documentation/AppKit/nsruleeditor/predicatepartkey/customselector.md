@@ -19,7 +19,7 @@ static let customSelector: NSRuleEditor.PredicatePartKey
 extern NSRuleEditorPredicatePartKey const NSRuleEditorPredicateCustomSelector;
 ```
 
-#### Discussion
+## Discussion
 
 If specified, this overrides the operator type, options, and comparison modifier.
 

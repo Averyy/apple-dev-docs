@@ -20,7 +20,7 @@ The main accessor for the bind value.
 var value: T { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This property returns the animated value ([`animatedValue`](./animatedvalue.md)) if an animation is active. Otherwise, this property returns the base value ([`baseValue`](./basevalue.md)).
 

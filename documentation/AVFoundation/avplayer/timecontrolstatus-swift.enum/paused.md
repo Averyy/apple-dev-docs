@@ -25,7 +25,7 @@ case paused
 AVPlayerTimeControlStatusPaused
 ```
 
-#### Discussion
+## Discussion
 
 In this state, the player pauses indefinitely and doesn’t resume playback until you call its play method. You can also resume playback if the player has sufficent data to start playback by calling the player’s [`setRate(_:time:atHostTime:)`](../setrate%28_,time,athosttime%29.md) or [`playImmediately(atRate:)`](../playimmediately%28atrate%29.md) method with a nonzero rate value.
 

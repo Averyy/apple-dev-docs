@@ -21,7 +21,7 @@ addEventListener(
     ): boolean;
 ```
 
-#### Discussion
+## Discussion
 
 Unlike a DOM `EventTarget`, a [`MapKitEventTarget`](../mapkiteventtarget.md) doesn’t go through bubbling or capturing phases. The system also interprets the third parameter differently from the DOM’s `EventTarget`.
 

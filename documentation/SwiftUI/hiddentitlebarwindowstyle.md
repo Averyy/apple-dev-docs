@@ -15,7 +15,7 @@ A window style which hides both the window’s title and the backing of the titl
 struct HiddenTitleBarWindowStyle
 ```
 
-#### Overview
+## Overview
 
 You can also use [`hiddenTitleBar`](./windowstyle/hiddentitlebar.md) to construct this style.
 

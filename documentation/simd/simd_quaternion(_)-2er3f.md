@@ -14,7 +14,7 @@ func simd_quaternion(_ matrix: simd_half3x3) -> simd_quath
 static simd_quath simd_quaternion(simd_half3x3 matrix);
 ```
 
-#### Discussion
+## Discussion
 
 Construct a quaternion from a 3x3 rotation `matrix`.
 

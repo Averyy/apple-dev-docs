@@ -25,7 +25,7 @@ case contains
 NSContainsPredicateOperatorType
 ```
 
-#### Discussion
+## Discussion
 
 Returns [`true`](../../../Swift/true.md) if `[lhs contains rhs]`; the left hand side must be an `NSExpression` object that evaluates to a collection
 

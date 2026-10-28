@@ -19,7 +19,7 @@ let kCFUserNotificationPopUpTitlesKey: CFString!
 extern CFStringRef const kCFUserNotificationPopUpTitlesKey;
 ```
 
-#### Discussion
+## Discussion
 
 The array cannot have more than 256 elements.
 

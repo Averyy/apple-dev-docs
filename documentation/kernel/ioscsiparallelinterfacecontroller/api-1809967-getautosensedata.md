@@ -14,7 +14,7 @@ bool GetAutoSenseData (
  UInt8 senseDataSize );
 ```
 
-#### Return Value
+## Return Value
 
 returns true if successfully copied data into receivingBuffer
 

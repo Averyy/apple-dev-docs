@@ -19,7 +19,7 @@ var keyAttributes: Unmanaged<CFArray>?
 CFArrayRef keyAttributes;
 ```
 
-#### Discussion
+## Discussion
 
 Valid values are [`kSecAttrIsPermanent`](../ksecattrispermanent.md), [`kSecAttrIsSensitive`](../ksecattrissensitive.md), and [`kSecAttrIsExtractable`](../ksecattrisextractable.md). If you set this attribute array to `NULL`, the following defaults are used:
 

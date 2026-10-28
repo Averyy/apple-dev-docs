@@ -5,7 +5,7 @@
 
 Sets a default image for an `img` or `monogram` element.
 
-#### Overview
+## Overview
 
 Here’s an example that displays the default movie image.
 
@@ -16,7 +16,7 @@ Here’s an example that displays the default movie image.
 </lockup>
 ```
 
-##### Values for tv-placeholder
+### Values for tv-placeholder
 
 - **`monogram`**: The placeholder image appropriate for a monogram. The light themed placeholder image is:
 
@@ -38,7 +38,7 @@ Here’s an example that displays the default movie image.
 
 ![](https://developer.apple.com/tutorials/images/com.apple.TVML/tv-placeholder-5@2x.png)
 
-##### Elements that Use tv-placeholder
+### Elements that Use tv-placeholder
 
 - [img](./img.md)
 - [monogram](./monogram.md)

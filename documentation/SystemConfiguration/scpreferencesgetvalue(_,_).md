@@ -19,11 +19,11 @@ func SCPreferencesGetValue(_ prefs: SCPreferences, _ key: CFString) -> CFPropert
 CFPropertyListRefSCPreferencesGetValue(SCPreferencesRef prefs, CFStringRef key);
 ```
 
-#### Return Value
+## Return Value
 
 The value associated with the specified preference key (can be `NULL` if no value exists).
 
-#### Discussion
+## Discussion
 
 To avoid inadvertantly reading stale data, first call [`SCPreferencesLock(_:_:)`](./scpreferenceslock%28_,_%29.md) before calling this function.
 

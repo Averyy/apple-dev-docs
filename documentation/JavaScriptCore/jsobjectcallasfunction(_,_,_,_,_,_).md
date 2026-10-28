@@ -24,7 +24,7 @@ func JSObjectCallAsFunction(_ ctx: JSContextRef!, _ object: JSObjectRef!, _ this
 JSValueRefJSObjectCallAsFunction(JSContextRef ctx, JSObjectRef object, JSObjectRef thisObject, size_t argumentCount, JSValueRef const arguments[], JSValueRef*exception);
 ```
 
-#### Return Value
+## Return Value
 
 The [`JSValueRef`](./jsvalueref.md) that results from calling `object` as a function, or `NULL` if the system throws an exception or `object` isn’t a function.
 

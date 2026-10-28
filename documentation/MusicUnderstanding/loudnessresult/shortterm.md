@@ -21,7 +21,7 @@ An array of short-term loudness measurements sampled across the song in LUFS.
 let shortTerm: [MusicUnderstandingSession.TimedValue<Float>]
 ```
 
-#### Discussion
+## Discussion
 
 Short-term loudness is a 3-second window that advances 100 milliseconds (ms) per result.
 

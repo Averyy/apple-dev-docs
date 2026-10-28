@@ -15,7 +15,7 @@ Converts a map point into a coordinate with latitude and longitude.
 toCoordinate(): Coordinate;
 ```
 
-#### Return Value
+## Return Value
 
 A coordinate that contains the latitude and longitude corresponding to the location.
 

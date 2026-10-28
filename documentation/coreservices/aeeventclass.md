@@ -20,7 +20,7 @@ typealias AEEventClass = FourCharCode
 typedef FourCharCode AEEventClass;
 ```
 
-#### Discussion
+## Discussion
 
 Apple events are identified by their event class and event ID attributes. The event class is the attribute that identifies a group of related Apple events. When you call the `AEProcessAppleEvent(_:)` function, the Apple Event Manager uses these attributes to identify a handler for a specific Apple event.
 

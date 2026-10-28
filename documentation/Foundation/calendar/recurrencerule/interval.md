@@ -21,7 +21,7 @@ At what interval to repeat
 var interval: Int
 ```
 
-#### Discussion
+## Discussion
 
 Default value is `1`
 

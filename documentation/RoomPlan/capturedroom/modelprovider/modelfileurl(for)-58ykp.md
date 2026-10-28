@@ -17,11 +17,11 @@ Provides a URL to the 3D model for the given attributes.
 func modelFileURL(for attributes: [any CapturedRoomAttribute]) throws -> URL?
 ```
 
-#### Return Value
+## Return Value
 
 The 3D model that the app associates to the given object’s attributes via [`setModelFileURL(_:for:)`](./setmodelfileurl%28_,for%29-8xio.md). If no 3D model URL associates to the given attribute combination, this function returns `nil`.
 
-#### Discussion
+## Discussion
 
 In error conditions, this function throws:
 

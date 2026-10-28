@@ -16,11 +16,11 @@ Returns the time elapsed since the last frame.
 float graph::deltaTime()
 ```
 
-#### Return Value
+## Return Value
 
 The delta time in seconds
 
-#### Discussion
+## Discussion
 
 Delta time represents the duration between the current frame and the previous frame, allowing for frame-rate independent animations and simulations.
 

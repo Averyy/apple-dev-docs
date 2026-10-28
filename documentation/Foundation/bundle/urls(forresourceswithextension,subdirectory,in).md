@@ -25,7 +25,7 @@ class func urls(forResourcesWithExtension ext: String?, subdirectory subpath: St
 + (NSArray<NSURL *> *) URLsForResourcesWithExtension:(NSString *) ext subdirectory:(NSString *) subpath inBundleWithURL:(NSURL *) bundleURL;
 ```
 
-#### Return Value
+## Return Value
 
 An array of file URLs for the resource files matching the criteria or an empty array if no files could be located.
 

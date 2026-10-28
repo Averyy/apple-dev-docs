@@ -19,7 +19,7 @@ func item(at index: Int32) -> WebHistoryItem!
 - (WebHistoryItem *) itemAtIndex:(int) index;
 ```
 
-#### Return Value
+## Return Value
 
 The item at the specified index, or `nil` if `index` exceeds the bounds of the back-forward list (that is, if `index` is greater than the value returned by [`forwardListCount`](./forwardlistcount.md), or less than the negative form of the value returned by [`backListCount`](./backlistcount.md)).
 

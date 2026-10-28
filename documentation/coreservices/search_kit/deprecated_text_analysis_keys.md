@@ -5,7 +5,7 @@
 
 Search Kit ignores the `kSKLanguageTypes` constant. It determines language directly by document content.
 
-#### Overview
+## Overview
 
 In releases of macOS prior to version 10.4, the `kSKLanguageTypes` constant was an optional key in an index’s text analysis properties dictionary. Starting in OS X v10.4, Search Kit ignores this constant and determines language directly by the document content. A document may use multiple languages.
 

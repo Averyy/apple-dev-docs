@@ -19,7 +19,7 @@ func viewDidAppear()
 - (void) viewDidAppear;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called after the completion of any drawing and animations involved in the initial appearance of the view. You can override this method to perform tasks appropriate for that time, such as work that should not interfere with the presentation animation, or starting an animation that you want to begin after the view appears.
 

@@ -21,7 +21,7 @@ Creates a custom hybrid format with the precision value.
 static func hybrid(precision: @autoclosure @escaping () -> Int, explicitPositiveSign: Bool = false, uppercase: Bool = false) -> OSLogFloatFormatting
 ```
 
-#### Return Value
+## Return Value
 
 A custom hybrid format for floating-point numbers.
 

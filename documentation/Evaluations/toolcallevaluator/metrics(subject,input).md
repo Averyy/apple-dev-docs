@@ -18,15 +18,15 @@ Evaluates tool-call expectations against the actual transcript and returns score
 ## Declaration
 
 ```swift
-nonisolated
-(nonsending) func metrics(subject: ModelSubject<Input.ExpectedValue>, input: Input) async throws -> [Metric]
+nonisolated(nonsending)
+func metrics(subject: ModelSubject<Input.ExpectedValue>, input: Input) async throws -> [Metric]
 ```
 
-#### Return Value
+## Return Value
 
 An array that contains the strict pass or fail metric and the partial score metric.
 
-#### Discussion
+## Discussion
 
 Runs ordered, unordered, and disallowed expectation checks in a single pass and returns both a strict all-pass metric and a partial percentage-pass metric.
 

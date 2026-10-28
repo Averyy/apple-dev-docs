@@ -23,7 +23,7 @@ final class ImageAnalyzer
 
 - [Enabling Live Text interactions with images](./enabling-live-text-interactions-with-images.md)
 
-#### Overview
+## Overview
 
 To use an `ImageAnalyzer` object, first create an [`ImageAnalyzer.Configuration`](./imageanalyzer/configuration.md) object, and specify the types of items you want to find in an image. Then pass the image you want to analyze and the configuration object to an `ImageAnalyzer` object using the [`analyze(_:configuration:)`](./imageanalyzer/analyze%28_,configuration%29.md) or similar method. This method returns an [`ImageAnalysis`](./imageanalysis.md) object that contains all the data VisionKit needs to implement the Live Text interface.
 

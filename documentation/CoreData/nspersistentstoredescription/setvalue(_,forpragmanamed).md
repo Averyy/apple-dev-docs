@@ -25,7 +25,7 @@ func setValue(_ value: NSObject?, forPragmaNamed name: String)
 - (void) setValue:(NSObject *) value forPragmaNamed:(NSString *) name;
 ```
 
-#### Discussion
+## Discussion
 
 Pragma options are for SQLite stores only. All pragma values must be specified as [`NSString`](../../Foundation/nsstring.md)objects. The `fullfsync` and `synchronous` pragmas control the tradeoff between write performance (write to disk speed and cache utilization) and durability (data loss/corruption sensitivity to power interruption). For more information on pragma settings, see [http://sqlite.org/pragma.html](http://sqlite.org/pragma.html).
 

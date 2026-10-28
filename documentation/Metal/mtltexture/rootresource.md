@@ -27,7 +27,7 @@ var rootResource: (any MTLResource)? { get }
 @property (readonly, nullable) id<MTLResource> rootResource;
 ```
 
-#### Discussion
+## Discussion
 
 If the value is `nil`, then this texture image owns its own data. Otherwise, this value is the [`MTLResource`](../mtlresource.md) instance used to create the texture. For example, it might be a texture that uses the contents of an [`MTLBuffer`](../mtlbuffer.md) object or a texture view that reinterprets the contents of another [`MTLTexture`](../mtltexture.md).
 

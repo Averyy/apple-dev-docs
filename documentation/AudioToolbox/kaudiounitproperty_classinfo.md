@@ -24,7 +24,7 @@ var kAudioUnitProperty_ClassInfo: AudioUnitPropertyID { get }
 kAudioUnitProperty_ClassInfo
 ```
 
-#### Discussion
+## Discussion
 
 A read/write [`CFDictionary`](../CoreFoundation/cfdictionary.md) object valid on the audio unit global scope. A macOS audio unit that supports the part scope may, in addition, support presets on that scope that apply to individual parts.
 

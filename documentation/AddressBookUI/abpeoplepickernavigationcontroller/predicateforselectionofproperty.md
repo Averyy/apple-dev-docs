@@ -24,7 +24,7 @@ var predicateForSelectionOfProperty: NSPredicate? { get set }
 @property (nonatomic, copy, nullable) NSPredicate * predicateForSelectionOfProperty;
 ```
 
-#### Discussion
+## Discussion
 
 If the predicate evaluates to true, the selected property is returned to the app. If the predicate evaluates to false, the default action for the property is performed.
 

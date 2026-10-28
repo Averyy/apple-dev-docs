@@ -20,7 +20,7 @@ var lookAtPoint: simd_float3 { get }
 @property (nonatomic, assign, readonly) simd_float3 lookAtPoint;
 ```
 
-#### Discussion
+## Discussion
 
 This vector abstracts from the [`leftEyeTransform`](./lefteyetransform.md) and [`rightEyeTransform`](./righteyetransform.md) matrices to estimate what point,  relative to the face, the user’s eyes are focused upon. For example:
 

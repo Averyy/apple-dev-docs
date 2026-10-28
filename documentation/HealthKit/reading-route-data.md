@@ -5,7 +5,7 @@
 
 Access the user’s route for a workout.
 
-#### Overview
+## Overview
 
 Your app can read the route associated with any workout in HealthKit (for example, the path that the user took while walking, running, or cycling). However, the size and nature of route data presents two challenges:
 
@@ -20,7 +20,7 @@ As a result, a query that just returns the current route sample for a given work
 
 After you have the route sample, you still need to make a second query to access the underlying location data. For performance reasons, the system returns the locations asynchronously in batches. As each new batch of location data arrives, your app can process the locations and, for example, plot the locations on a map or analyze and visualize the data.
 
-##### Get the Route Sample Object
+### Get the Route Sample Object
 
 To guarantee that your app receives the most up-to-date route information, use an anchored object query to access the route and track any updates.
 
@@ -52,7 +52,7 @@ store.execute(routeQuery)
 
 The query’s update handler receives any additions or changes to the route data. This lets your app process the most up-to-date version of the route, as soon as it becomes available.
 
-##### Access a Route Sample’s Location Data
+### Access a Route Sample’s Location Data
 
 After receiving an [`HKWorkoutRoute`](./hkworkoutroute.md) sample, you can access its location data using an [`HKWorkoutRouteQuery`](./hkworkoutroutequery.md). Because a route sample can contain thousands of locations, you may not receive all of the location data at once. Instead, the system returns the location data in small batches.
 

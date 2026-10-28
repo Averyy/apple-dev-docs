@@ -23,7 +23,7 @@ case automatic
 UIBarMinimizationRestorationBehaviorAutomatic
 ```
 
-#### Discussion
+## Discussion
 
 By default, the bar restores when the user reverses scroll direction. The system selects [`UIBarMinimizationRestorationBehavior.atScrollEdge`](./atscrolledge.md) automatically for navigation items whose `preferredSearchBarPlacement` is `.integratedCentered`.
 

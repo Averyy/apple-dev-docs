@@ -10,7 +10,7 @@ framework: "Swift-Org/PackageManagerDocs"
 
 Add a package dependency to the manifest.
 
-#### Overview
+## Overview
 
 ```
 package add-dependency <dependency>

@@ -23,13 +23,13 @@ class INRequestPaymentIntent
 @interface INRequestPaymentIntent : INIntent
 ```
 
-#### Overview
+## Overview
 
 Siri creates an [`INRequestPaymentIntent`](./inrequestpaymentintent.md) object when the current user requests a payment from another user. A request payment intent object includes the payment amount and the person receiving the request. This intent represents only a request for payment and shouldn’t initiate any payments.
 
 To handle this intent, the handler object in your Intents extension must adopt the [`INRequestPaymentIntentHandling`](./inrequestpaymentintenthandling.md) protocol. Your handler should confirm the request and create an [`INRequestPaymentIntentResponse`](./inrequestpaymentintentresponse.md) object with the results of making the request.
 
-##### Additional Intent Attributes
+### Additional Intent Attributes
 
 The following table lists additional attributes of this intent object:
 

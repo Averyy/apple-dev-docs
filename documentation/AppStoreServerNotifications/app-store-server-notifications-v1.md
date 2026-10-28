@@ -16,7 +16,7 @@ Specify your secure server’s URL in App Store Connect to receive version 1 not
 - [App Store Server Notifications changelog](./app-store-server-notifications-changelog.md)
 - [Receiving App Store Server Notifications](./receiving-app-store-server-notifications.md)
 
-#### Discussion
+## Discussion
 
 To receive server notifications from the App Store, provide your secure server’s HTTPS URL in App Store Connect. For more information, see [Enabling App Store Server Notifications](./enabling-app-store-server-notifications.md). To secure your server and receive notifications, your server must support the Transport Layer Security (TLS) protocol version 1.2 or later.
 

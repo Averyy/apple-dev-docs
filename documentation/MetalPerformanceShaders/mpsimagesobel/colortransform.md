@@ -24,7 +24,7 @@ var colorTransform: UnsafePointer<Float> { get }
 @property (nonatomic, readonly, nonnull) const float * colorTransform;
 ```
 
-#### Discussion
+## Discussion
 
 This property returns a pointer to the array of 3 floats used to convert RGBA, RGB or RG source images to the destination texture format when said destination is monochrome.
 

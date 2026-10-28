@@ -21,7 +21,7 @@ var guidanceBackgroundColor: UIColor { get set }
 @property (nonatomic, strong) UIColor * guidanceBackgroundColor;
 ```
 
-#### Discussion
+## Discussion
 
 The system determines whether [`guidanceBackgroundColor`](./guidancebackgroundcolor.md) meets contrast requirements, and uses the default color when the provided color doesn’t meet those requirements. The system adjusts font color to correspond with the guidance background color.
 

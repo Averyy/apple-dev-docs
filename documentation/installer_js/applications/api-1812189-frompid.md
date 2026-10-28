@@ -11,7 +11,7 @@ Provides information about a running application with a given process ID.
 fromPID(processID)
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary (associative array) describing the application identified by `processID`.
 

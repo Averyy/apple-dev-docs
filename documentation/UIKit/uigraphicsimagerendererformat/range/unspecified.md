@@ -23,7 +23,7 @@ case unspecified
 UIGraphicsImageRendererFormatRangeUnspecified
 ```
 
-#### Discussion
+## Discussion
 
 In general, avoid specifying this value for an image renderer format. Some color spaces that you access using the [`imageRendererFormat`](../../uiimage/imagerendererformat.md) property of [`UIImage`](../../uiimage.md) may use this value.
 

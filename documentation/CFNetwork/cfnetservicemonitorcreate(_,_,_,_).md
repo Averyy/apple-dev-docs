@@ -26,11 +26,11 @@ func CFNetServiceMonitorCreate(_ alloc: CFAllocator?, _ theService: CFNetService
 extern CFNetServiceMonitorRefCFNetServiceMonitorCreate(CFAllocatorRef alloc, CFNetServiceRef theService, CFNetServiceMonitorClientCallBack clientCB, CFNetServiceClientContext *clientContext);
 ```
 
-#### Return Value
+## Return Value
 
 A new instance of a CFNetServiceMonitor, or `NULL` if the monitor could not be created. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 This function creates a CFNetServiceMonitor that watches for changes in records associated with `theService`.
 
@@ -44,7 +44,7 @@ To stop a monitor that is running in synchronous mode, call [`CFNetServiceMonito
 
 If you no longer need to monitor record changes, call [`CFNetServiceMonitorStop(_:_:)`](./cfnetservicemonitorstop%28_,_%29.md) to stop the monitor and then call [`CFNetServiceMonitorInvalidate(_:)`](./cfnetservicemonitorinvalidate%28_%29.md)to invalidate the monitor so it cannot be used again. Then call `CFRelease` to release the memory associated with CFNetServiceMonitorRef.
 
-##### Special Considerations
+### Special Considerations
 
 This function is thread safe.
 

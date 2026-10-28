@@ -17,7 +17,7 @@ Reverts the receiver to the data stored in the file system.
 - (BOOL) revertToSavedFromFile:(NSString *) fileName ofType:(NSString *) type;
 ```
 
-#### Discussion
+## Discussion
 
 Reverts the receiver to the data stored in the file system in file named `fileName` of file type `type`. Invokes [`readFromFile:ofType:`](./readfromfile_oftype_.md) and returns whether that method successfully read the file and processed the document data.
 

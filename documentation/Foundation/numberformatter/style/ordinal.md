@@ -25,7 +25,7 @@ case ordinal
 NSNumberFormatterOrdinalStyle
 ```
 
-#### Discussion
+## Discussion
 
 For example, in the en_US locale, the number 3 is represented as 3rd; in the fr_FR locale, the number 3 is represented as 3e.
 

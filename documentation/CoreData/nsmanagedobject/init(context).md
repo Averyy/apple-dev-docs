@@ -25,11 +25,11 @@ convenience init(context moc: NSManagedObjectContext)
 - (instancetype) initWithContext:(NSManagedObjectContext *) moc;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized instance of the appropriate subclass.
 
-#### Discussion
+## Discussion
 
 This method is only legal to call on subclasses of `NSManagedObject` that represent a single entity in the model.
 

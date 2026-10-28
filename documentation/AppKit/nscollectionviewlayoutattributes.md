@@ -20,13 +20,13 @@ class NSCollectionViewLayoutAttributes
 @interface NSCollectionViewLayoutAttributes : NSObject
 ```
 
-#### Overview
+## Overview
 
 During the layout, the layout object creates instances of [`NSCollectionViewLayoutAttributes`](./nscollectionviewlayoutattributes.md) for each element displayed in the collection view. The layout attributes describe the position of an element and other information such as its alpha and position on the z axis. The collection view later applies the layout attributes to the onscreen elements.
 
 The only time you interact with layout attribute objects is when you implement a custom layout, and the interactions are straightforward. When asked for layout attributes for a specific element, your layout object uses the methods of this class to create an appropriate instance of the class based on the type of the requested element. It then configures the properties of the object and returns it to the requester.
 
-##### Subclassing Notes
+### Subclassing Notes
 
 If you implement a custom layout object and your layout object requires additional attributes, you can subclass `NSCollectionViewLayoutAttributes` and add custom properties to your subclass. In your subclass, be sure to do the following:
 

@@ -14,7 +14,7 @@
 MPLibrary_MinorVersion = 3
 ```
 
-#### Discussion
+## Discussion
 
 Minor version number.
 

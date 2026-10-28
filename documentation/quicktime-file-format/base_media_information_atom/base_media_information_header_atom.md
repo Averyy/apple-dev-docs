@@ -6,7 +6,7 @@
 
 An atom that indicates that this media information atom pertains to a base media.
 
-#### Overview
+## Overview
 
 See [`Base media information header atom`](../base_media_information_header_atom.md).
 

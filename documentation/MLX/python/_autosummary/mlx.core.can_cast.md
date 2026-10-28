@@ -6,19 +6,23 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ca
 
 # mlx.core.can_cast
 
-**can_cast(*from_: array | Dtype*, *to: Dtype*) → [bool](https://docs.python.org/3/builtins/functions.html#bool)**
-: Determine if one data type can be cast to another according to type
+```python
+can_cast(from_: array | Dtype, to: Dtype) → bool
+```
+
+Determine if one data type can be cast to another according to type
 promotion rules.
+
 `from_` can be cast to `to` if promoting the two together gives
 back `to`.
 
-Parameters:
+**Parameters:**
 
-**from** ([array](mlx.core.array.md#mlx.core.array)* or *[Dtype](mlx.core.Dtype.md#mlx.core.Dtype)) – The source array or dtype.
-**to** ([Dtype](mlx.core.Dtype.md#mlx.core.Dtype)) – The destination dtype.
+- **from** ([array](mlx.core.array.md#mlx.core.array) *or* [Dtype](mlx.core.Dtype.md#mlx.core.Dtype)) – The source array or dtype.
+- **to** ([Dtype](mlx.core.Dtype.md#mlx.core.Dtype)) – The destination dtype.
 
-Returns:
-Whether the cast can be performed.
+**Returns:**
+: Whether the cast can be performed.
 
-Return type:
-[bool](https://docs.python.org/3/builtins/functions.html#bool)
+**Return type:**
+: [bool](https://docs.python.org/3/builtins/functions.html#bool)

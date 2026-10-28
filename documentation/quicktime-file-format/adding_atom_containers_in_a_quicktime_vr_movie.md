@@ -5,7 +5,7 @@
 
 Add node information to your QuickTime VR world.
 
-#### Overview
+## Overview
 
 Assuming you have already created the QuickTime VR world and node information atom containers, you would use the code (minus error checking) in the following listing to add them to the QTVR track.
 

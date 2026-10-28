@@ -23,7 +23,7 @@ case materializeEagerly
 NSFileProviderNamespacePolicyMaterializeEagerly
 ```
 
-#### Discussion
+## Discussion
 
 When a folder with the inherited policy is moved into a folder with this policy, the system will automatically schedule a download.
 

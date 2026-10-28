@@ -25,7 +25,7 @@ var minimumLinearLimit: CGFloat { get set }
 @property (nonatomic) CGFloat minimumLinearLimit;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is `-INFINITY`. With this value, the joint can slide forever in the direction opposite the slider axis.
 

@@ -24,7 +24,7 @@ var promptStyle: AVAudioSession.PromptStyle { get }
 @property (readonly) AVAudioSessionPromptStyle promptStyle;
 ```
 
-#### Discussion
+## Discussion
 
 Apps that issue voice prompts should observe changes in the prompt style and modify their prompts in response. This property is key-value observable.
 

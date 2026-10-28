@@ -24,7 +24,7 @@ case failed
 AVAssetReaderStatusFailed
 ```
 
-#### Discussion
+## Discussion
 
 Query the asset reader’s [`error`](../error.md) property to determine the reason for the failure.
 

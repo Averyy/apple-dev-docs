@@ -26,11 +26,11 @@ func CFHostGetAddressing(_ theHost: CFHost, _ hasBeenResolved: UnsafeMutablePoin
 extern CFArrayRefCFHostGetAddressing(CFHostRef theHost, Boolean *hasBeenResolved);
 ```
 
-#### Discussion
+## Discussion
 
 This function gets the addresses from a CFHost. The CFHost must have been previously resolved. To resolve a CFHost, call [`CFHostStartInfoResolution(_:_:_:)`](./cfhoststartinforesolution%28_,_,_%29.md).
 
-##### Special Considerations
+### Special Considerations
 
 This function gets the addresses in a thread-safe way, but the resulting data is not thread-safe. The data is returned as a “get” as opposed to a copy, so the data is not safe if the CFHost is altered from another thread.
 

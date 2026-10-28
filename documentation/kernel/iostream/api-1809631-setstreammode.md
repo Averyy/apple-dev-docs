@@ -12,7 +12,7 @@ virtual IOReturn setStreamMode(
  IOStreamMode mode);
 ```
 
-#### Overview
+## Overview
 
 Subclasses may define whether it is possible to change the mode of a stream.
 

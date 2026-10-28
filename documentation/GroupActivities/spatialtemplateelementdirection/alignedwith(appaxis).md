@@ -15,11 +15,11 @@ Creates a direction that orients the participant to look along the specified axi
 static func alignedWith(appAxis: SpatialTemplateElementAxis) -> SpatialTemplateElementDirection
 ```
 
-#### Return Value
+## Return Value
 
 A direction type that faces the specified seat position.
 
-#### Discussion
+## Discussion
 
 Use this function to create a seat that faces perpendicular to the app. For example, you might use it to mimic a long bench or stadium-style seating. The following code shows how to create such a line of seats:
 

@@ -24,7 +24,7 @@ var semanticSegmentationSkyMatte: CIImage? { get }
 @property (readonly, nullable) CIImage * semanticSegmentationSkyMatte;
 ```
 
-#### Discussion
+## Discussion
 
 This matting image segments the sky from the visible field of view of the image.
 

@@ -18,7 +18,7 @@ A closure that provides granular control over list separator appearance.
 typedef UIListSeparatorConfiguration *(^)(NSIndexPath *, UIListSeparatorConfiguration *) UICollectionLayoutListItemSeparatorHandler;
 ```
 
-#### Return Value
+## Return Value
 
 The configuration to use for the separators at `indexPath`.
 

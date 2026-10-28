@@ -25,11 +25,11 @@ convenience init(format: String, arguments argList: CVaListPointer)
 - (instancetype) initWithFormat:(NSString *) format arguments:(va_list) argList;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSString` object initialized by using `format` as a template into which the values in `argList` are substituted according to the current locale. The returned object may be different from the original receiver.
 
-#### Discussion
+## Discussion
 
 This method is meant to be called from within a variadic function, where the argument list will be available.
 

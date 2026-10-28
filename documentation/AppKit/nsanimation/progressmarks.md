@@ -19,7 +19,7 @@ var progressMarks: [NSNumber] { get set }
 @property (copy) NSArray<NSNumber *> * progressMarks;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is an array of [`NSNumber`](../../Foundation/nsnumber.md) objects, each of which contains a float value, which are typed to the [`NSAnimation.Progress`](./progress.md) type. If there are no progress marks, the array is empty. Setting the value of this property is `nil` clears all progress marks.
 

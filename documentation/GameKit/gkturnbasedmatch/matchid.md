@@ -37,7 +37,7 @@ var matchID: String { get }
 
 - [Starting turn-based matches and passing turns between players](../starting-turn-based-matches-and-passing-turns-between-players.md)
 
-#### Discussion
+## Discussion
 
 To get the current match object during gameplay, save the match ID and pass it to the [`load(withID:withCompletionHandler:)`](./load%28withid,withcompletionhandler%29.md) method.
 

@@ -21,7 +21,7 @@ let paymentCardData: String?
 
 - [Adding support for Tap to Pay on iPhone to your app](../adding-support-for-tap-to-pay-on-iphone-to-your-app.md)
 
-#### Discussion
+## Discussion
 
 This information is present any time the system reads a card, including for purchases, refunds, and card verification.
 

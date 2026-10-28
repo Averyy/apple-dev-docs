@@ -32,7 +32,7 @@ var street: String { get set }
 @property (atomic, copy) NSString * street;
 ```
 
-#### Discussion
+## Discussion
 
 A multiline address is delimited with carriage returns (that is, `n`).
 

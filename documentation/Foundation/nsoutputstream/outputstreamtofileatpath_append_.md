@@ -21,11 +21,11 @@ Creates and returns an initialized output stream for writing to a specified file
 + (instancetype) outputStreamToFileAtPath:(NSString *) path append:(BOOL) shouldAppend;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized output stream that can write to `path`.
 
-#### Discussion
+## Discussion
 
 The stream must be opened before it can be used.
 

@@ -24,7 +24,7 @@ var leading: CGFloat { get }
 @property (nonatomic, readonly) CGFloat leading;
 ```
 
-#### Discussion
+## Discussion
 
 The leading value represents additional space between lines of text and is measured in points. For an explanation of how this metric relates to a font’s other metrics, see [`UIFont`](../uifont.md).
 

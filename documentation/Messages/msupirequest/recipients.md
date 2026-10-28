@@ -19,7 +19,7 @@ var recipients: [String] { get }
 @property (nonatomic, copy, readonly) NSArray<NSString *> * recipients;
 ```
 
-#### Discussion
+## Discussion
 
 The SMS recipients who will receive the UPI validation message.
 

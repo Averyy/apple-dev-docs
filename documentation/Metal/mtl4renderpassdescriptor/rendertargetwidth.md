@@ -24,7 +24,7 @@ var renderTargetWidth: Int { get set }
 @property (nonatomic) NSUInteger renderTargetWidth;
 ```
 
-#### Discussion
+## Discussion
 
 When this value is non-zero, you need to assign it to be smaller than or equal to the minimum width of all attachments.
 

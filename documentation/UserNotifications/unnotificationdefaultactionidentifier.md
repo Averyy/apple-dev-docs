@@ -24,7 +24,7 @@ let UNNotificationDefaultActionIdentifier: String
 extern NSString * const UNNotificationDefaultActionIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 The delivery of this action doesn’t require any special configuration of notification categories. Use the [`userNotificationCenter(_:didReceive:withCompletionHandler:)`](./unusernotificationcenterdelegate/usernotificationcenter%28_,didreceive,withcompletionhandler%29.md) method of your delegate object to receive this action.
 

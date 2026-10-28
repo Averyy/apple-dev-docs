@@ -25,7 +25,7 @@ func xpc_bool_create(_ value: Bool) -> xpc_object_t
 extern xpc_object_txpc_bool_create(bool value);
 ```
 
-#### Return Value
+## Return Value
 
 A new Boolean object.
 

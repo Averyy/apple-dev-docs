@@ -13,7 +13,7 @@ Block or unblock a score submitted to a leaderboard.
 
 - [App Store Connect API 4.5 release notes](./app-store-connect-api-4-5-release-notes.md)
 
-#### Overview
+## Overview
 
 Blocking a score removes it from the leaderboard, and unblocking reinstates it. The response contains the updated [`GameCenterScoreModeration`](./gamecenterscoremoderation.md) in a [`GameCenterScoreModerationResponse`](./gamecenterscoremoderationresponse.md).
 

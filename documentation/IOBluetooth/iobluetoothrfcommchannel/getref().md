@@ -19,7 +19,7 @@ func getRef() -> Unmanaged<IOBluetoothRFCOMMChannelRef>!
 - (IOBluetoothRFCOMMChannelRef) getRFCOMMChannelRef;
 ```
 
-#### Return Value
+## Return Value
 
 Returns an IOBluetoothRFCOMMChannelRef representation of the target IOBluetoothRFCOMMChannel object.
 

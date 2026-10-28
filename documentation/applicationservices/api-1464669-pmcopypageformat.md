@@ -19,7 +19,7 @@ func PMCopyPageFormat(_ formatSrc: PMPageFormat, _ formatDest: PMPageFormat) -> 
 OSStatus PMCopyPageFormat(PMPageFormat formatSrc, PMPageFormat formatDest);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./core_printing.md#1670007).
 

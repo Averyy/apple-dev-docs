@@ -19,7 +19,7 @@ func item(at index: Int) -> NSMenuItem?
 - (NSMenuItem *) itemAtIndex:(NSInteger) index;
 ```
 
-#### Return Value
+## Return Value
 
 The menu item, or `nil` if no item exists at the specified index.
 

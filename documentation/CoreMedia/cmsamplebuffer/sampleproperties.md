@@ -21,7 +21,7 @@ Information about a sample in the sample buffer.
 struct SampleProperties
 ```
 
-#### Overview
+## Overview
 
 Each sample buffer holds a [`CMSampleBuffer.SamplePropertiesCollection`](./samplepropertiescollection.md) which provides this sample information for each sample in the sample buffer.
 

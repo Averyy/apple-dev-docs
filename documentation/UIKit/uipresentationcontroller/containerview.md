@@ -23,7 +23,7 @@ var containerView: UIView? { get }
 @property (nonatomic, strong, readonly, nullable) UIView * containerView;
 ```
 
-#### Discussion
+## Discussion
 
 UIKit sets the value of this property shortly after receiving the presentation controller from your transitioning delegate. The container view is always an ancestor of the presented view controller’s view. During transition animations, the container view also contains the presenting view controller’s view. When adding custom views to a presentation, add them to the container view.
 

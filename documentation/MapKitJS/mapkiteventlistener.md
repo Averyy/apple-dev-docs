@@ -21,7 +21,7 @@ type MapKitEventListener<T extends MapKitEvent = MapKitEvent> =
       };
 ```
 
-#### Discussion
+## Discussion
 
 You can specify the event listener as either a function or an object with a `handleEvent` method.
 

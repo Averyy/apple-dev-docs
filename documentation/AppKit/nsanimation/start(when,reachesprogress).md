@@ -19,7 +19,7 @@ func start(when animation: NSAnimation, reachesProgress startProgress: NSAnimati
 - (void) startWhenAnimation:(NSAnimation *) animation reachesProgress:(NSAnimationProgress) startProgress;
 ```
 
-#### Discussion
+## Discussion
 
 This method links the running of two animations together. You can set only one `NSAnimation` object as a start animation and one as a stop animation at any one time. Setting a new start animation removes any animation previously set.
 

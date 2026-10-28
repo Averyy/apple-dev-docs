@@ -24,11 +24,11 @@ class func seriesType(forIdentifier identifier: String) -> HKSeriesType?
 + (HKSeriesType *) seriesTypeForIdentifier:(NSString *) identifier;
 ```
 
-#### Return Value
+## Return Value
 
 The shared [`HKSeriesType`](../hkseriestype.md) instance based on the provided identifier.
 
-#### Discussion
+## Discussion
 
 This method returns an instance of the [`HKSeriesType`](../hkseriestype.md) concrete subclass. HealthKit uses series types to represent samples that store a series of items. You can’t directly instantiate these samples; instead, use a [`HKSeriesBuilder`](../hkseriesbuilder.md) subclass to create them. Use series types to ask  for permission to read series data from the HealthKit store.
 

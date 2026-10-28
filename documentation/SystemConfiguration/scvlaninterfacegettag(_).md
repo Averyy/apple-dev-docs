@@ -19,7 +19,7 @@ func SCVLANInterfaceGetTag(_ vlan: SCVLANInterface) -> CFNumber?
 CFNumberRefSCVLANInterfaceGetTag(SCVLANInterfaceRef vlan);
 ```
 
-#### Return Value
+## Return Value
 
 The tag for the VLAN interface.
 

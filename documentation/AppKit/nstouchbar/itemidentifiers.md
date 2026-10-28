@@ -22,7 +22,7 @@ var itemIdentifiers: [NSTouchBarItem.Identifier] { get }
 @property (copy, readonly) NSArray<NSString *> * itemIdentifiers;
 ```
 
-#### Discussion
+## Discussion
 
 If the user has not customized the bar, this property’s value is the same as that of the [`defaultItemIdentifiers`](./defaultitemidentifiers.md) property.
 

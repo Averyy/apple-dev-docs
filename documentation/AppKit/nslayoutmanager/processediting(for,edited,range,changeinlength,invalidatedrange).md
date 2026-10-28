@@ -19,7 +19,7 @@ func processEditing(for textStorage: NSTextStorage, edited editMask: NSTextStora
 - (void) processEditingForTextStorage:(NSTextStorage *) textStorage edited:(NSTextStorageEditActions) editMask range:(NSRange) newCharRange changeInLength:(NSInteger) delta invalidatedRange:(NSRange) invalidatedCharRange;
 ```
 
-#### Discussion
+## Discussion
 
 The [`processEditing()`](../nstextstorage/processediting%28%29.md) method of [`NSTextStorage`](../nstextstorage.md) calls this method to notify the layout manager of an edit action. Layout managers must not change the contents of the text storage during the execution of this message.
 

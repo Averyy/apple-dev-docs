@@ -23,11 +23,11 @@ optional func frame(forDictationResultPlaceholder placeholder: Any) -> CGRect
 - (CGRect) frameForDictationResultPlaceholder:(id) placeholder;
 ```
 
-#### Return Value
+## Return Value
 
 The rectangle, in the coordinate system of your input view, at which to display the dictation placeholder animation.
 
-#### Discussion
+## Discussion
 
 While dictation results are being generated, UIKit displays the built-in dictation placeholder animation. Your implementation of this method should provide the rectangle at which to display this animation (at the location where the dictation results will be inserted).
 

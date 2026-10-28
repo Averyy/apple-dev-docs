@@ -20,7 +20,7 @@ optional func collectionView(_ collectionView: NSCollectionView, didDeselectItem
 - (void) collectionView:(NSCollectionView *) collectionView didDeselectItemsAtIndexPaths:(NSSet<NSIndexPath *> *) indexPaths;
 ```
 
-#### Discussion
+## Discussion
 
 After the user successfully deselects one or more items, the collection view calls this method to let you know that the items are no longer selected. Use this method to respond to the selection change and to make any necessary adjustments to your content or the collection view.
 

@@ -15,7 +15,7 @@ A [`CloudKit.RecordZonesResponse`](./cloudkit.recordzonesresponse.md) object enc
 interface CloudKit.RecordZonesResponse
 ```
 
-#### Overview
+## Overview
 
 The methods in the [`CloudKit.Database`](./cloudkit.database.md) class that operate on record zones return a `Promise` object that resolves to a [`CloudKit.RecordZonesResponse`](./cloudkit.recordzonesresponse.md) object if the operation is successful. You should not create instances of this class directly.
 

@@ -27,7 +27,7 @@ class func registerObject(forStateRestoration object: any UIStateRestoring, rest
 
 - [About the UI preservation process](../about-the-ui-preservation-process.md)
 
-#### Discussion
+## Discussion
 
 You use this method to register objects that you want to save as part of the overall state restoration process. Registering the object makes it available for inclusion in the restoration archive but does not automatically include it. To include the object, refer to it from one of your other interface objects. For example, you might write out a reference to the object from the [`encodeRestorableState(with:)`](../uiviewcontroller/encoderestorablestate%28with%29.md) method of one of your view controllers.
 

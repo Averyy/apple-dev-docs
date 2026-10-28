@@ -15,7 +15,7 @@ Declare the user interface and behavior for your app on every platform.
 - visionOS 1.0+
 - watchOS 6.0+
 
-#### Overview
+## Overview
 
 SwiftUI provides views, controls, and layout structures for declaring your app’s user interface. The framework provides event handlers for delivering taps, gestures, and other types of input to your app, and tools to manage the flow of data from your app’s models down to the views and controls that users see and interact with.
 
@@ -27,7 +27,7 @@ You can integrate SwiftUI views with objects from the [UIKit](../UIKit/UIKit.md)
 
 > 💡 **Tip**: If you’re new to SwiftUI, visit the [SwiftUI Pathway](https://developer.apple.com/swiftui/get-started/). It’s a collection of tutorials, articles, and sample projects that help you get started with SwiftUI.
 
-##### Featured samples
+### Featured samples
 
 - [Landmarks: Building an app with Liquid Glass](./landmarks-building-an-app-with-liquid-glass.md)
   Enhance your app experience with system-provided and custom Liquid Glass.

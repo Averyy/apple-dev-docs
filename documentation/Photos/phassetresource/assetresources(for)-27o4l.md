@@ -24,11 +24,11 @@ class func assetResources(for asset: PHAsset) -> [PHAssetResource]
 + (NSArray<PHAssetResource *> *) assetResourcesForAsset:(PHAsset *) asset;
 ```
 
-#### Return Value
+## Return Value
 
 The asset’s resources.
 
-#### Discussion
+## Discussion
 
 Asset resource objects describe the data files that an asset represents. An asset can contain multiple resources—for example, an edited photo asset contains resources for both the original and edited images, as well as for the [`PHAdjustmentData`](../phadjustmentdata.md) object describing the edit. To work with one of these files, fetch the underlying data using the [`PHAssetResourceManager`](../phassetresourcemanager.md) class.
 

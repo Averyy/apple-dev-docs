@@ -24,7 +24,7 @@ var name: String { get set }
 @property (nonatomic, copy) NSString * name;
 ```
 
-#### Discussion
+## Discussion
 
 You use a filter’s name to construct key paths to its attributes when the filter is attached to a Core Animation layer. For example, if a [`CALayer`](../../QuartzCore/calayer.md) object has an attached [`CIFilter`](../cifilter-swift.class.md) instance whose name is `myExposureFilter`, you can refer to attributes of the filter using a key path such as `filters.myExposureFilter.inputEV`. Layer animations may also access filter attributes via these key paths.
 

@@ -28,7 +28,7 @@ protocol UITextInputDelegate : NSObjectProtocol
 
 - [Handling text interactions in custom keyboards](./handling-text-interactions-in-custom-keyboards.md)
 
-#### Overview
+## Overview
 
 A [`UITextInputDelegate`](./uitextinputdelegate.md) conveys notifications of pending or transpired changes in text and selection in the document. UIKit provides a private text input delegate, which it assigns at runtime to the [`inputDelegate`](./uitextinput/inputdelegate.md) property of the object whose class adopts the [`UITextInput`](./uitextinput.md) protocol.
 

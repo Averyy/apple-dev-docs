@@ -22,11 +22,11 @@ init(url: URL)
 + (UIPrinter *) printerWithURL:(NSURL *) url;
 ```
 
-#### Return Value
+## Return Value
 
 A printer object representing the specified printer or `nil` if there was a problem initializing the object.
 
-#### Discussion
+## Discussion
 
 Use this method to create printer objects for printers whose address you already know. The printer does not need to be online or available when you call this method. The URL you specify is stored in the returned object so that you can contact the printer later using the [`contactPrinter(_:)`](./contactprinter%28_%29.md) method.
 

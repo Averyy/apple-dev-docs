@@ -5,44 +5,44 @@
 
 Download the tutorial files, and learn about what you’ll create in the three advanced tutorials.
 
-#### Overview
+## Overview
 
 These three advanced tutorials will help you use some of the advanced design and layout features of Apple News Format. For information on previewing the article bundle examples and choosing a text editor, see [Setting Up the Introductory Tutorial](./setting-up-the-introductory-tutorial.md).
 
 The images below show some of the design and layout features of Apple News Format, such as inset components and inline HTML styling. You’ll use these features in the tutorials that follow to build your own designs and layouts, and Apple News will adapt your layouts to any iOS, iPadOS, or macOS device.
 
-##### Header Techniques
+### Header Techniques
 
 The first advanced tutorial covers some techniques for designing the header of your article.
 
 ![Labeled screenshot of an Apple News article on a Mac, iPad, and iPhone. The article includes a header image fill and a caption block anchored to the bottom of the header.](https://developer.apple.com/tutorials/images/com.apple.applenews/media-3624568@2x.png)
 
-##### Layout and Positioning
+### Layout and Positioning
 
 The second advanced tutorial covers elements of complex layouts, along with other topics.
 
 ![Labeled screenshot of an Apple News article on a Mac, iPad, and iPhone. The article includes a scene, text layered in front of a header image, inline HTML text styling, an inset pull quote, and a floating caption.](https://developer.apple.com/tutorials/images/com.apple.applenews/media-3629707@2x.png)
 
-##### Video and Dark Theme
+### Video and Dark Theme
 
 Among other topics, the third advanced tutorial will teach you how to include a video as your header background and implement a theme with different colors.
 
 ![Screenshot of an Apple News article with a color theme on a Mac, iPad, and iPhone.](https://developer.apple.com/tutorials/images/com.apple.applenews/media-3624567@2x.png)
 
-##### Static Image Fill
+### Static Image Fill
 
 Another topic the third advanced tutorial covers is how to cause an image to stay still while article content scrolls in front of it.
 
 ![Screenshot of an Apple News article with a full-screen, fixed-attachment image fill on a Mac, iPad, and iPhone.](https://developer.apple.com/tutorials/images/com.apple.applenews/media-3624565@2x.png)
 
-##### Choose an Option for Completing the Advanced Tutorials
+### Choose an Option for Completing the Advanced Tutorials
 
 Choose one of these options.
 
 - **Option 1: Edit files yourself.** (Recommended.) Download the `article.json` file, and use the instructions in this tutorial to add code to the file. Preview your changes as you go, using the [News Preview](https://developer.apple.com/news-preview/) tool.
 - **Option 2: Preview completed files.** Follow along by looking at downloadable examples that represent the completion of each stage of this tutorial. Preview the completed articles in the [News Preview](https://developer.apple.com/news-preview/) tool.
 
-##### Download the Article Bundle Examples
+### Download the Article Bundle Examples
 
 To begin the advanced tutorials, you’ll need to download and unzip one or more Apple News Format article bundles, or use your `article.json` file from the completed introductory tutorial.
 

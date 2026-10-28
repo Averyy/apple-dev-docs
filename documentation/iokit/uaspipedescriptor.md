@@ -16,7 +16,7 @@ typedef struct UASPipeDescriptor {
 } UASPipeDescriptor;
 ```
 
-#### Overview
+## Overview
 
 Structure used to specify the Mass Storage Specific UAS pipe usage descriptor
 

@@ -27,11 +27,11 @@ func tags(in range: NSRange, unit: NSLinguisticTaggerUnit, scheme: NSLinguisticT
 - (NSArray<NSString *> *) tagsInRange:(NSRange) range unit:(NSLinguisticTaggerUnit) unit scheme:(NSLinguisticTagScheme) scheme options:(NSLinguisticTaggerOptions) options tokenRanges:(NSArray<NSValue *> **) tokenRanges;
 ```
 
-#### Return Value
+## Return Value
 
 An array of the tags in the requested range.
 
-#### Discussion
+## Discussion
 
 When the returned array contains an entry that doesn’t have a corresponding tag scheme, that entry is an empty string (`""`).
 

@@ -21,7 +21,7 @@ Match the specified string prefix against a string value or array.
 func matchPrefix(_ value: String) -> EntitlementsQuery
 ```
 
-#### Discussion
+## Discussion
 
 Strings are matched byte for byte (i.e. no unicode normalization occurs). matchPrefix will match only the first string value that has the prefix.
 

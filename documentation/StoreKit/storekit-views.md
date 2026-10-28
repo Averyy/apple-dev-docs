@@ -5,7 +5,7 @@
 
 Display a customizable Apple In-App Purchase store using StoreKit views for SwiftUI.
 
-#### Overview
+## Overview
 
 The StoreKit views APIs provide UI to help you build a store for your Apple In-App Purchases, and provide a way for customers to complete the purchase. The views support localization, so your customers see the product names, descriptions, and prices appropriate to their App Store storefront.
 
@@ -149,8 +149,7 @@ For more information on configuring your Apple In-App Purchase metadata, see [Ma
 - [func preferredSubscriptionOffer((Product, Product.SubscriptionInfo, [Product.SubscriptionOffer]) -> Product.SubscriptionOffer?) -> some View
 ](../SwiftUI/view/preferredsubscriptionoffer%28_%29.md)
   Selects a subscription offer to apply to a purchase that a customer makes from a subscription store view, a store view, or a product view.
-- [func offerCodeRedemption(isPresented: Binding<Bool>, onCompletion: (Result<Void, any Error>) -> Void) -> some View
-](../SwiftUI/view/offercoderedemption%28ispresented,oncompletion%29.md)
+- [func offerCodeRedemption(isPresented: Binding<Bool>, onCompletion: (Result<Void, any Error>) -> Void) -> some View\n](../SwiftUI/view/offercoderedemption%28ispresented,oncompletion%29.md)
 ### Configuring purchase options and product descriptions
 - [func inAppPurchaseOptions(((Product) async -> Set<Product.PurchaseOption>)?) -> some View
 ](../SwiftUI/view/inapppurchaseoptions%28_%29.md)

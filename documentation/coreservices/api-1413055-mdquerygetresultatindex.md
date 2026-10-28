@@ -19,11 +19,11 @@ func MDQueryGetResultAtIndex(_ query: MDQuery!, _ idx: CFIndex) -> UnsafeRawPoin
 const void * MDQueryGetResultAtIndex(MDQueryRef query, CFIndex idx);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the MDItemRef currently at the given index, or if a result-creation function has been set, returns the result returned by that function.
 
-#### Discussion
+## Discussion
 
 This function causes the result object to be created if it hasn't been created already. For performance reasons you should only request objects that you require. If possible, call this function to fetch only the results you need to display or otherwise process. 
 

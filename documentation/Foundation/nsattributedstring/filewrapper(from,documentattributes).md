@@ -25,11 +25,11 @@ func fileWrapper(from range: NSRange, documentAttributes dict: [NSAttributedStri
 - (NSFileWrapper *) fileWrapperFromRange:(NSRange) range documentAttributes:(NSDictionary<NSString *,id> *) dict error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 Returns a file wrapper for the appropriate document type, or `nil` if failure. When `nil`, `error` encapsulates the error information.
 
-#### Discussion
+## Discussion
 
 Raises an [`rangeException`](../nsexceptionname/rangeexception.md) if any part of `range` lies beyond the end of the receiver’s characters.
 

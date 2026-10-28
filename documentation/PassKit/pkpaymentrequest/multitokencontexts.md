@@ -23,7 +23,7 @@ var multiTokenContexts: [PKPaymentTokenContext] { get set }
 @property (nonatomic, copy) NSArray<PKPaymentTokenContext *> * multiTokenContexts;
 ```
 
-#### Discussion
+## Discussion
 
 Use multitoken contexts to indicate payments for multiple merchants. This property is an array of [`PKPaymentTokenContext`](../pkpaymenttokencontext.md) objects. The sum of all payment token contexts must be less than or equal to the grand total of the enclosing payment request listed as the last payment summary item, [`PKPaymentSummaryItem`](../pkpaymentsummaryitem.md). Otherwise, the request results in a runtime error and cancels the payment request.
 

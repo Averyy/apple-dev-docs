@@ -19,7 +19,7 @@ func SKIndexCopyInfoForDocumentIDs(_ inIndex: SKIndex!, _ inCount: CFIndex, _ in
 void SKIndexCopyInfoForDocumentIDs(SKIndexRef inIndex, CFIndex inCount, SKDocumentID *inDocumentIDsArray, CFStringRef *outNamesArray, SKDocumentID *outParentIDsArray);
 ```
 
-#### Discussion
+## Discussion
 
 The [`SKIndexCopyInfoForDocumentIDs(_:_:_:_:_:)`](./api-1445499-skindexcopyinfofordocumentids.md) function lets you get a batch of document names and parent document IDs in one step, based on a list of document IDs.
 

@@ -24,7 +24,7 @@ var channelNumber: Int { get }
 @property (nonatomic, readonly) NSUInteger channelNumber;
 ```
 
-#### Discussion
+## Discussion
 
 You can use the value in this property to identify the channel during audio routing. However, the value of this property isn’t guaranteed to persist across route changes.
 

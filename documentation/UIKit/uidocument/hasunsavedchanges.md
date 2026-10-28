@@ -22,11 +22,11 @@ var hasUnsavedChanges: Bool { get }
 @property (nonatomic, readonly) BOOL hasUnsavedChanges;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the document has unsaved changes, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 The default implementation of [`autosave(completionHandler:)`](./autosave%28completionhandler%29.md) initiates a save if this property returns [`true`](../../Swift/true.md). Typical subclasses don’t need to override [`hasUnsavedChanges`](./hasunsavedchanges.md). To implement change tracking, they should instead use an [`UndoManager`](../../Foundation/undomanager.md) object (assigned to [`undoManager`](./undomanager.md)) to register changes or call [`updateChangeCount(_:)`](./updatechangecount%28_%29.md) every time the user makes a change; UIKit then automatically determines whether there are unsaved changes.
 

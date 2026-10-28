@@ -23,7 +23,7 @@ let queryToken: SpotlightSearchTool.SearchReply.QueryToken
 
 - [Making your indexed content available to Foundation Models](../../making-your-indexed-content-available-to-foundation-models.md)
 
-#### Discussion
+## Discussion
 
 When processing a request, a model might create multiple queries to find and refine search results. Use this property to associate replies with a specific query. The token itself is an opaque value you save and compare against tokens in other search replies. You might use this value to partition the data you receive.
 

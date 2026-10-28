@@ -28,7 +28,7 @@ optional func confirm(intent: INSaveProfileInCarIntent) async -> INSaveProfileIn
 - (void) confirmSaveProfileInCar:(INSaveProfileInCarIntent *) intent completion:(void (^)(INSaveProfileInCarIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to validate that you can save settings to a profile. For example, you might use this method to verify that you’ve an active connection to the vehicle or that you can use the specified profile name when saving the settings. At some point in your implementation, execute the provided completion block with a response object indicating your app’s readiness to make the change.
 

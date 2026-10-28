@@ -21,7 +21,7 @@ A collection of proxy values that represent the subviews of a layout view.
 struct LayoutSubviews
 ```
 
-#### Overview
+## Overview
 
 You receive a `LayoutSubviews` input to your implementations of [`Layout`](./layout.md) protocol methods, like [`placeSubviews(in:proposal:subviews:cache:)`](./layout/placesubviews%28in,proposal,subviews,cache%29.md) and [`sizeThatFits(proposal:subviews:cache:)`](./layout/sizethatfits%28proposal,subviews,cache%29.md). The `subviews` parameter (which the protocol aliases to the [`Layout.Subviews`](./layout/subviews.md) type) is a collection that contains proxies for the layout’s subviews (of type [`LayoutSubview`](./layoutsubview.md)). The proxies appear in the collection in the same order that they appear in the [`ContentBuilder`](./contentbuilder.md) input to the layout container. Use the proxies to perform layout operations.
 

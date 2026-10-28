@@ -22,7 +22,7 @@ let kCFDNSServiceFailureKey: CFString
 extern CFStringRef const kCFDNSServiceFailureKey;
 ```
 
-#### Discussion
+## Discussion
 
 If an error of type `kCFNetServicesErrorDNSServiceFailure` is returned, querying this key returns the last error returned by the DNS resolver libraries in response to the previous operation. To interpret the results, look up the error codes in `/usr/include/dns_sd.h` or [DNS Service Discovery C](../dnssd/dns-service-discovery-c.md).
 

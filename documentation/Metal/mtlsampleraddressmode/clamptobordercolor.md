@@ -24,7 +24,7 @@ case clampToBorderColor
 MTLSamplerAddressModeClampToBorderColor
 ```
 
-#### Discussion
+## Discussion
 
 You can configure the sampler’s border color by setting the [`borderColor`](../mtlsamplerdescriptor/bordercolor.md) property in the [`MTLSamplerDescriptor`](../mtlsamplerdescriptor.md) instance that creates the sampler.
 

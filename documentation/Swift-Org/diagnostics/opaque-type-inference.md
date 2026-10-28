@@ -8,7 +8,7 @@ framework: "Swift-Org/diagnostics"
 **Framework**: Swift-Org/diagnostics  
 **Role**: Article
 
-#### Overview
+## Overview
 
 Opaque result types are a useful tool for abstracting the return type of a function or subscript, or type of a property. Although the concrete underlying type of an opaque type is hidden from clients, it is still inferred by the compiler, which enforces certain usage requirements:
 

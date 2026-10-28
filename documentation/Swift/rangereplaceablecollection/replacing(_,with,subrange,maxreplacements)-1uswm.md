@@ -23,7 +23,7 @@ func replacing<C, Replacement>(_ other: C, with replacement: Replacement, subran
 
 Available when `Element` conforms to `Equatable`.
 
-#### Return Value
+## Return Value
 
 A new collection in which all occurrences of `other` in `subrange` of the collection are replaced by `replacement`.
 

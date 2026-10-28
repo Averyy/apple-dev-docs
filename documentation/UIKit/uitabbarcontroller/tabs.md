@@ -27,7 +27,7 @@ var tabs: [UITab] { get set }
 
 - [Elevating your iPad app with a tab bar and sidebar](../elevating-your-ipad-app-with-a-tab-bar-and-sidebar.md)
 
-#### Discussion
+## Discussion
 
 To set the tab bar’s content, assign an array of [`UITab`](../uitab.md) objects to this property. For more information, see [Elevating your iPad app with a tab bar and sidebar](../elevating-your-ipad-app-with-a-tab-bar-and-sidebar.md).
 

@@ -21,7 +21,7 @@ Synchronously sets the batch size for a graph.
 func setBatchSize(_ batchSize: Int, forFunction function: String? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 This is a special case of `setDynamicShapes(_:forFunction:)` where the only dynamic sizes that occur are the first index of their tensor (that is, the batch dimension) and are all equal. This allows just passing a single `batchSize` constant.
 

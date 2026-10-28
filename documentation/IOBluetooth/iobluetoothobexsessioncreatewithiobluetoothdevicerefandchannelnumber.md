@@ -15,11 +15,11 @@ Create an OBEX session with a device ref and an RFCOMM channel ID. This allows y
 OBEXError IOBluetoothOBEXSessionCreateWithIOBluetoothDeviceRefAndChannelNumber(IOBluetoothDeviceRef inDeviceRef, BluetoothRFCOMMChannelID inChannelID, OBEXSessionRef*outSessionRef);
 ```
 
-#### Return Value
+## Return Value
 
 An error code value. 0 if successful.
 
-#### Discussion
+## Discussion
 
 You will use a session reference to do all OBEX interaction to a specific device. This method DOES NOT create a connection to the device of any kind.
 

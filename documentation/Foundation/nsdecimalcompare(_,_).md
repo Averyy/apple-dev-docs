@@ -25,11 +25,11 @@ func NSDecimalCompare(_ leftOperand: UnsafePointer<Decimal>, _ rightOperand: Uns
 extern NSComparisonResult NSDecimalCompare(const NSDecimal *leftOperand, const NSDecimal *rightOperand);
 ```
 
-#### Return Value
+## Return Value
 
 `NSOrderedDescending` if `leftOperand` is bigger than `rightOperand`; `NSOrderedAscending` if `rightOperand` is bigger than `leftOperand`; or `NSOrderedSame` if the two operands are equal.
 
-#### Discussion
+## Discussion
 
 For more information, see [Number and Value Programming Topics](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/NumbersandValues/NumbersandValues.html#//apple_ref/doc/uid/10000038i).
 

@@ -31,7 +31,7 @@ func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?)
 - [Implementing a discrete gesture recognizer](../implementing-a-discrete-gesture-recognizer.md)
 - [Implementing coalesced touch support in an app](../implementing-coalesced-touch-support-in-an-app.md)
 
-#### Discussion
+## Discussion
 
 UIKit calls this method when it receives a system interruption requiring cancellation of the touch sequence. An interruption is anything that causes the application to become inactive or causes the view handling the touch events to be removed from its window. Your implementation of this method should clean up any state associated with handling the touch sequence. The default implementation of this method forwards the message up the responder chain. When creating your own subclasses, call `super` to forward any events that you don’t handle yourself, like in the following code.
 

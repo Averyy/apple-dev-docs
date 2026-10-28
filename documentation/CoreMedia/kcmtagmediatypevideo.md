@@ -21,7 +21,7 @@ A value for associating a tag’s media type with video.
 extern const CMTag kCMTagMediaTypeVideo;
 ```
 
-#### Discussion
+## Discussion
 
 This value is for use in tags with the [`kCMTagCategory_MediaType`](./cmtagcategory/kcmtagcategory_mediatype.md) category.
 

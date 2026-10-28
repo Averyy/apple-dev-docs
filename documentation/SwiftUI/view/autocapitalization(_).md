@@ -22,7 +22,7 @@ nonisolated
 func autocapitalization(_ style: UITextAutocapitalizationType) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Use this method when you need to automatically capitalize words, sentences, or other text like proper nouns.
 

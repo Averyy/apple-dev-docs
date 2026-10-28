@@ -12,7 +12,7 @@ Locate relevant passages in a document by asking the Bidirectional Encoder Repre
 - Mac Catalyst 13.0+
 - Xcode 15.2+
 
-#### Overview
+## Overview
 
 This sample app leverages the BERT model to find the answer to a user’s question in a body of text. The model accepts text from a document and a question, in natural English, about the document. The model responds with the location of a passage within the document text that answers the question. For example, given the text, “The quick brown fox jumps over the lethargic dog.”, with the question “Who jumped over the dog?”, the BERT model’s predicted answer is, “the quick brown fox”.
 
@@ -30,18 +30,18 @@ The sample leverages the BERT model by:
 6. Locating the answer by analyzing the BERT model’s output
 7. Extracting that answer from the original document text
 
-##### Configure the sample code project
+### Configure the sample code project
 
 Before you run the sample code project in Xcode, use a device with either:
 
 - iOS 13 or later
 - macOS 10.15 or later
 
-##### Build the vocabulary
+### Build the vocabulary
 
 The first step to using the BERT model is to import its vocabulary. The sample creates a vocabulary dictionary by splitting the vocabulary file into lines, each of which has one token. The function assigns each token’s (zero-based) line number as its value. For example, the first token,  `"[PAD]"`, has an ID of `0`, and the 5,001st token, `"knight"`, has an ID of `5000`.
 
-##### Split the text into word tokens
+### Split the text into word tokens
 
 The BERT model requires you to convert each word into one or more token IDs. Before you can use the vocabulary dictionary to find those IDs, you must divide the document’s text and the question’s text into word tokens.
 
@@ -71,7 +71,7 @@ return wordTokens
 
 The sample app leverages the tagger to split each string into tokens by using its [enumerateTags(in:unit:scheme:options:using:)](../NaturalLanguage/nltagger/enumeratetags%28in,unit,scheme,options,using%29.md) method with the [.tokenType](../NaturalLanguage/nltagscheme/tokentype.md) tagging scheme and the [.word](../NaturalLanguage/nltokenunit/word.md) token unit.
 
-##### Convert word or wordpiece tokens into their IDs
+### Convert word or wordpiece tokens into their IDs
 
 For speed and efficiency, the BERT model operates on token IDs, which are numbers that represent tokens, rather than operating on the text tokens themselves.
 
@@ -87,7 +87,7 @@ Continuing the example, the method converts document text into the word and word
 
 ![Flow diagram showing the conversion of tokens to token IDs.](https://developer.apple.com/tutorials/images/com.apple.coreml/bert-word-token-ids@2x.png)
 
-##### Prepare the model input
+### Prepare the model input
 
 The BERT model has two inputs:
 
@@ -161,7 +161,7 @@ let modelInput = BERTQAFP16Input(wordIDs: tokenIDInput,
                                  wordTypes: tokenTypeInput)
 ```
 
-##### Make a prediction
+### Make a prediction
 
 You use the BERT model to predict where to find an answer to the question in the document text, by giving the model your input feature provider with the input [`MLMultiArray`](./mlmultiarray.md) instances.
 
@@ -171,7 +171,7 @@ guard let prediction = try? bertModel.prediction(input: modelInput) else {
 }
 ```
 
-##### Find the answer
+### Find the answer
 
 You locate the answer to the question by analyzing the output from the BERT model. The model produces two outputs, `startLogits` and `endLogits`. Each *logit* is a raw confidence score of where the BERT model predicts the beginning and the end of an answer is.
 
@@ -206,7 +206,7 @@ let bestPair = findBestLogitPair(startLogits: startLogitsOfDoc,
 
 In this example, the indices of the best start and end logits are `8` and `11`, respectively. The answer substring, located between indices `8` and `11` of the original text, is `“the quick brown fox”`.
 
-##### Scale for larger documents
+### Scale for larger documents
 
 The BERT model included in this sample can process up to 384 tokens, including the three overhead tokens—one “classification start” token and two separator tokens—leaving 381 tokens for your text and question, combined. For larger texts that exceed this limitation, consider using one of these techniques:
 

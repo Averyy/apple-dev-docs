@@ -25,7 +25,7 @@ func vvpows(_: UnsafeMutablePointer<Double>, _: UnsafePointer<Double>, _: Unsafe
 void vvpows(double *, const double *, const double *, const int *);
 ```
 
-##### Parameters
+### Parameters
 
 - **y**: (output) Output vector of size `*n`. `y[i]` is set to `cbrt(x[i])`.
 - **x**: (input) Input vector of size `*n`.

@@ -24,7 +24,7 @@ typealias MTLCommandBufferHandler = @Sendable (any MTLCommandBuffer) -> Void
 typedef void (^)(id<MTLCommandBuffer>) MTLCommandBufferHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The [`MTLCommandBuffer`](./mtlcommandbuffer.md) type uses this signature in its methods that register your completion handlers, including [`addScheduledHandler(_:)`](./mtlcommandbuffer/addscheduledhandler%28_%29.md) and [`addCompletedHandler(_:)`](./mtlcommandbuffer/addcompletedhandler%28_%29.md).
 

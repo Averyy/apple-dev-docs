@@ -25,7 +25,7 @@ func nw_relay_hop_create(_ http3_relay_endpoint: nw_endpoint_t?, _ http2_relay_e
 nw_relay_hop_tnw_relay_hop_create(nw_endpoint_t http3_relay_endpoint, nw_endpoint_t http2_relay_endpoint, nw_protocol_options_t relay_tls_options);
 ```
 
-#### Return Value
+## Return Value
 
 An initialized relay hop object.
 

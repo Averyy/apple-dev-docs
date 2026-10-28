@@ -25,7 +25,7 @@ var resultType: NSPersistentHistoryResultType { get set }
 @property NSPersistentHistoryResultType resultType;
 ```
 
-#### Discussion
+## Discussion
 
 This value defaults to [`NSPersistentHistoryResultType.transactionsAndChanges`](../nspersistenthistoryresulttype/transactionsandchanges.md).
 

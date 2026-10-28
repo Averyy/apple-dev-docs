@@ -41,7 +41,7 @@ var ambientColor: NSColor { get set }
 @property (nonatomic) NSColor * ambientColor;
 ```
 
-#### Discussion
+## Discussion
 
 The alpha value of the color is ignored. The default color is black, meaning that the light does not have an ambient component. The ambient component of the light is not affected by the light’s [`falloff`](./falloff.md) property, nor is it affected by any normal map ([`normalTexture`](../skspritenode/normaltexture.md)) on the sprite node.
 

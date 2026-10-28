@@ -23,7 +23,7 @@ var usesExternalPlaybackWhileExternalScreenIsActive: Bool { get set }
 @property BOOL usesExternalPlaybackWhileExternalScreenIsActive;
 ```
 
-#### Discussion
+## Discussion
 
 The player automatically switches back to the external screen mode once video playback concludes. A brief transition may be visible on the external display when automatically switching between the two modes. The default value of this property is [`false`](../../Swift/false.md). The value of this property has no effect if [`allowsExternalPlayback`](./allowsexternalplayback.md) is [`false`](../../Swift/false.md).
 

@@ -25,7 +25,7 @@ static let language: NLTagScheme
 extern NLTagScheme const NLTagSchemeLanguage;
 ```
 
-#### Discussion
+## Discussion
 
 Each value for this tag scheme is listed in [`NLLanguage`](../nllanguage.md).
 

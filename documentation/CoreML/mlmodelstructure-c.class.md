@@ -21,7 +21,7 @@ A class representing the structure of a model.
 @interface MLModelStructure : NSObject
 ```
 
-#### Overview
+## Overview
 
 ```
 // Load the model structure.

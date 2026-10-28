@@ -5,11 +5,11 @@
 
 Enable the inspection of webpages and JavaScript in apps you develop when inspected from a connected Mac.
 
-#### Overview
+## Overview
 
 Web content and JavaScript is used for various purposes in apps, from providing UI from a webpage to enabling apps to be scriptable.
 
-##### When should I consider making content inspectable?
+### When should I consider making content inspectable?
 
 A common situation in which you may want the content of `WKWebView` to be inspectable is in an in-app web browser. The browser shows ordinary web content that would be inspectable when loaded in Safari. It can be beneficial both for the app developer, as well as web authors, to be able to inspect content in these views, as the size of the view may not match that of Safari’s, or the app developer may be injecting script into the view to provide integration with their app.
 
@@ -17,7 +17,7 @@ Web content is often dynamic, delivered by a server—not in the app—and easil
 
 `JSContext` can also enable scripting in an app whereby the customer provides the scripts to augment the app. Without the ability for a release version of your app to adopt inspectability, your customers may have no way to debug the scripts they have written. It makes it harder for customers to use this functionality of your app.
 
-#### Enabling Inspection
+## Enabling Inspection
 
 Across all platforms supporting `WKWebView` or `JSContext`, a new property is available called `isInspectable` (`inspectable` in Objective-C). It defaults to `false`, and you can set it to `true` to opt-in to content being inspectable. This decision is made for each individual `WKWebView` and `JSContext` to prevent unintentionally making it enabled for a view or context you don’t intend to be inspectable. So, for example, to make a `WKWebView` `inspectable`, you would:
 
@@ -64,7 +64,7 @@ The inspectable property can be changed at any point during the lifetime of your
 
 Once you’ve enabled inspection for your app, you can inspect it from Safari’s Develop menu in the submenu for either your current computer or an attached device.
 
-#### Provide readable names for inspectable `JSContext`s
+## Provide readable names for inspectable `JSContext`s
 
 Unlike `WKWebView`, which automatically gets a name based on the page currently loaded in the view, every `JSContext` with `inspectable` enabled will be listed as **JSContext** in Safari’s **Develop** menu. Provide a unique, human-readable name for each inspectable `JSContext` to make it easier for you and your customers to determine what the `JSContext` represents. For example, if your app runs different pieces of JavaScript on behalf of the user, you should give each `JSContext` a name based on what runs inside the context.
 
@@ -91,7 +91,7 @@ JSGlobalContextRef jsContextRef = JSGlobalContextCreate(NULL);
 JSGlobalContextSetName(jsContextRef, JSStringCreateWithUTF8CString("Context name"));
 ```
 
-#### Working with older versions of macOS and iOS
+## Working with older versions of macOS and iOS
 
 For apps linked against an SDK before macOS 13.3 and iOS 16.4, `WKWebView`s and `JSContext`s will continue to follow the previous behavior of always being inspectable when built for debugging from Xcode.
 

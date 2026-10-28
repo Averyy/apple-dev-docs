@@ -20,7 +20,7 @@ Constants to identify the position of a toolbar for appearance customization.
 #define UIToolbarPosition
 ```
 
-#### Overview
+## Overview
 
 In iOS 7 and later, these constants are defined in terms of [`UIBarPosition`](./uibarposition.md), which also introduces a new possible position: [`UIBarPosition.topAttached`](./uibarposition/topattached.md).
 

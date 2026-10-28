@@ -19,11 +19,11 @@ class func canInit(with pasteboard: NSPasteboard) -> Bool
 + (BOOL) canInitWithPasteboard:(NSPasteboard *) pasteboard;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the receiver understands the format of the specified data and can use it to initialize itself; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 This method invokes the [`imageUnfilteredPasteboardTypes()`](./imageunfilteredpasteboardtypes%28%29.md) class method and checks the list of types returned by that method against the data types in `pasteboard`. If it finds a match, it returns [`true`](../../Swift/true.md). When creating a subclass of `NSImageRep` that accepts image data from a non-default pasteboard type, override the [`imageUnfilteredPasteboardTypes()`](./imageunfilteredpasteboardtypes%28%29.md) method to assure this method returns the correct response.
 

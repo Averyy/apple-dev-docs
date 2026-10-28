@@ -21,7 +21,7 @@ The absolute URL.
 var absoluteURL: URL { get }
 ```
 
-#### Discussion
+## Discussion
 
 If the URL is itself absolute, this returns `self`.
 

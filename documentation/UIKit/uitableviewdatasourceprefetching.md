@@ -28,7 +28,7 @@ protocol UITableViewDataSourcePrefetching : NSObjectProtocol
 
 - [Filling a table with data](./filling-a-table-with-data.md)
 
-#### Overview
+## Overview
 
 You use a prefetch data source object in conjunction with your table view’s data source to begin loading data for cells before the [`tableView(_:cellForRowAt:)`](./uitableviewdatasource/tableview%28_,cellforrowat%29.md) data source method is called. The following steps are required to support a prefetch data source to your table view:
 
@@ -42,7 +42,7 @@ You use a prefetch data source object in conjunction with your table view’s da
 
 When configuring the table view object, assign your prefetch data source to its [`prefetchDataSource`](./uitableview/prefetchdatasource.md) property. For more information about how a table view works, see [`UITableView`](./uitableview.md).
 
-##### Load data asynchronously
+### Load data asynchronously
 
 The [`tableView(_:prefetchRowsAt:)`](./uitableviewdatasourceprefetching/tableview%28_,prefetchrowsat%29.md) method isn’t necessarily called for every cell in the table view. Your implementation of [`tableView(_:cellForRowAt:)`](./uitableviewdatasource/tableview%28_,cellforrowat%29.md) must therefore be able to cope with the following potential situations:
 

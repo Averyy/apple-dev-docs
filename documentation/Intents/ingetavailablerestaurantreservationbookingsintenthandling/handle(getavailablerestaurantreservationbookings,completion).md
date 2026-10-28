@@ -27,7 +27,7 @@ func handle(getAvailableRestaurantReservationBookings intent: INGetAvailableRest
 - (void) handleGetAvailableRestaurantReservationBookings:(INGetAvailableRestaurantReservationBookingsIntent *) intent completion:(void (^)(INGetAvailableRestaurantReservationBookingsIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Your implementation of this method must create one or more [`INRestaurantReservationBooking`](../inrestaurantreservationbooking.md) objects representing the potential reservations from which the user can choose. Each reservation booking object contains the time of the reservation along with special offers and any requirements for making the reservation. When done, execute the provided block with a response object that contains your reservation booking objects.
 

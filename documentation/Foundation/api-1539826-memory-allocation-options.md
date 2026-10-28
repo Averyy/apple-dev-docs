@@ -5,7 +5,7 @@
 
 Constants used to control behavior when allocating or reallocating collectible memory.
 
-#### Overview
+## Overview
 
 These constants are used as components in a bitfield to specify the behavior of [`NSAllocateCollectable`](./nsallocatecollectable.md) and [`NSReallocateCollectable`](./nsreallocatecollectable.md).
 

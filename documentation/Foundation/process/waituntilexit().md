@@ -20,7 +20,7 @@ func waitUntilExit()
 - (void) waitUntilExit;
 ```
 
-#### Discussion
+## Discussion
 
 This method first checks to see if the receiver is still running using [`isRunning`](./isrunning.md). Then it polls the current run loop using `NSDefaultRunLoopMode` until the task completes.
 

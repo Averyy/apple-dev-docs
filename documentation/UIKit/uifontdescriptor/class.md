@@ -24,7 +24,7 @@ typealias Class = Int
 typedef NSUInteger UIFontDescriptorClass;
 ```
 
-#### Discussion
+## Discussion
 
 These values correspond closely to the font class values in the OpenType OS/2 table. The class values are bundled in the upper four bits of the [`UIFontDescriptor.SymbolicTraits`](./symbolictraits-swift.struct.md) and can be accessed through [`classMask`](./symbolictraits-swift.struct/classmask.md). For additional information about the specific meaning of each identifier, refer to the OpenType specification.
 

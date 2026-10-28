@@ -18,7 +18,7 @@ case VMNET_FAILURE
 VMNET_FAILURE
 ```
 
-#### Discussion
+## Discussion
 
 Indicates failure for an unspecified reason.
 

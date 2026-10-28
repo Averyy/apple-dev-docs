@@ -23,7 +23,7 @@ func lock() async throws
 - (void) lockWithCompletionHandler:(void (^)(NSError *)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 This method first locks the file at `[self fileURL]` and then invokes the given block. The default locking implementation is to enable the “user immutable” flag on the file.
 

@@ -18,11 +18,11 @@ TextMetrics measureText(
 );
 ```
 
-#### Return Value
+## Return Value
 
 An object whose `width` property contains the width in pixels of the bounding box needed to render the text without clipping.
 
-#### Discussion
+## Discussion
 
 Use this method to determine how much space is needed to render a string, or to measure the width of an existing string.
 

@@ -25,11 +25,11 @@ func makeSmartCard() -> TKSmartCard?
 - (TKSmartCard *) makeSmartCard;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`TKSmartCard`](../tksmartcard.md) object, or `nil` if no Smart Card is currently inserted.
 
-#### Discussion
+## Discussion
 
 You can create multiple instances of `TKSmartCard` that represent the same Smart Card. Exclusivity of data transfer is handled by sessions on the individual `TKSmartCard` objects.
 

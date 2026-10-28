@@ -15,7 +15,7 @@ A sequence of updates to anchors a provider tracks.
 final var anchorUpdates: AnchorUpdateSequence<WorldAnchor> { get }
 ```
 
-#### Discussion
+## Discussion
 
 An async sequence providing all anchor updates. The provider vends new or updated world anchors via the sequence as they become available.
 

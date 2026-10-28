@@ -19,7 +19,7 @@ class SubGroup
 @interface MERAWProcessingSubGroupParameter : MERAWProcessingParameter
 ```
 
-#### Overview
+## Overview
 
 Sub groups are logical groupings of [`MERAWProcessingParameter`](../merawprocessingparameter.md) objects that should be displayed together in an application user interface.
 

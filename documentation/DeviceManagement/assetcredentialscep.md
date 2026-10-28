@@ -21,11 +21,11 @@ A reference to a SCEP identity.
 object AssetCredentialSCEP
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.asset.credential.scep` as the declaration type.
 
-##### Asset example
+### Asset example
 
 ```json
 {

@@ -21,11 +21,11 @@ Returns an `NSInvocationOperation` object initialized with the specified target 
 - (instancetype) initWithTarget:(id) target selector:(SEL) sel object:(id) arg;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized `NSInvocationOperation` object or `nil` if the target object does not implement the specified selector.
 
-#### Discussion
+## Discussion
 
 If you specify a selector with a non-void return type, you can get the return value by calling the [`result`](./result.md) method after the operation finishes executing. The receiver tells the invocation object to retain its arguments.
 

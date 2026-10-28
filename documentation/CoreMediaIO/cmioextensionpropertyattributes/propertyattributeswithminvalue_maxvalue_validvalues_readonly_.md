@@ -16,11 +16,11 @@ Returns a new property attributes object with the specified configuration.
 + (instancetype) propertyAttributesWithMinValue:(ObjectType) minValue maxValue:(ObjectType) maxValue validValues:(NSArray<id> *) validValues readOnly:(BOOL) readOnly;
 ```
 
-#### Return Value
+## Return Value
 
 A new property attributes object.
 
-#### Discussion
+## Discussion
 
 Configure the attributes of a property by optionally specifying:
 

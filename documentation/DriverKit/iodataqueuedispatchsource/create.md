@@ -18,7 +18,7 @@ Creates a dispatch source that you use as a shared-memory data queue.
 static kern_return_t Create(uint64_t queueByteCount, IODispatchQueue *queue, IODataQueueDispatchSource **source);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../error-codes.md).
 

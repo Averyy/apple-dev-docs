@@ -16,7 +16,7 @@ Handles events that address incoming data destined for the accessory.
 func dataEventHandler(event: AccessoryTransportSession.DataEvent)
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to relay data to your accessory over Bluetooth or another transport mechanism.
 

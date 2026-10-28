@@ -19,7 +19,7 @@ func setProperty(_ property: NSBitmapImageRep.PropertyKey, withValue value: Any?
 - (void) setProperty:(NSBitmapImageRepPropertyKey) property withValue:(id) value;
 ```
 
-#### Discussion
+## Discussion
 
 The properties can affect how the image is read in and saved to file.
 

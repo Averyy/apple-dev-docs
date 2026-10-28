@@ -19,7 +19,7 @@ class VZMacGraphicsDisplayConfiguration
 @interface VZMacGraphicsDisplayConfiguration : VZGraphicsDisplayConfiguration
 ```
 
-#### Overview
+## Overview
 
 Use this device to attach a display that’s shown in a [`VZVirtualMachineView`](./vzvirtualmachineview.md).
 

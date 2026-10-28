@@ -24,7 +24,7 @@ var boundingBox: MDLAxisAlignedBoundingBox { get }
 @property (nonatomic, readonly) MDLAxisAlignedBoundingBox boundingBox;
 ```
 
-#### Discussion
+## Discussion
 
 If an asset contains timed information, such as animated mesh data, this property provides the asset’s bounding box as of the first time sample. Use the [`boundingBox(atTime:)`](./boundingbox%28attime%29.md) method to get bounding box information at a specific time sample.
 

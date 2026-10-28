@@ -21,7 +21,7 @@ Indicates that a UI element’s values are changing.
 static let selection: SensoryFeedback
 ```
 
-#### Discussion
+## Discussion
 
 Equivalent to [`selection(_:)`](./selection%28_%29.md) with `SelectionFeedback/default`.
 

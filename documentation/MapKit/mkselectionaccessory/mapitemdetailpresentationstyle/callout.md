@@ -23,7 +23,7 @@ class var callout: MKSelectionAccessory.MapItemDetailPresentationStyle { get }
 @property (class, nonatomic, strong, readonly) MKMapItemDetailSelectionAccessoryPresentationStyle * callout;
 ```
 
-#### Discussion
+## Discussion
 
 Uses the [`MKSelectionAccessory.MapItemDetailPresentationStyle.CalloutStyle.automatic`](./calloutstyle/automatic.md) callout style.
 

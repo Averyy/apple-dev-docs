@@ -24,7 +24,7 @@ init(cgContext cgctx: CGContext, options: [CIContextOption : Any]? = nil)
 + (CIContext *) contextWithCGContext:(CGContextRef) cgctx options:(NSDictionary<NSString *,id> *) options;
 ```
 
-#### Discussion
+## Discussion
 
 After calling this method, Core Image draws content to the specified Quartz graphics context.
 

@@ -22,11 +22,11 @@ Performs all available analyses on the session’s audio source.
 func analyze() async throws -> MusicUnderstandingSession.SessionResult
 ```
 
-#### Return Value
+## Return Value
 
 The aggregated session result containing all analyses.
 
-#### Discussion
+## Discussion
 
 > **Throws**:  If analysis is already running on this session.
 

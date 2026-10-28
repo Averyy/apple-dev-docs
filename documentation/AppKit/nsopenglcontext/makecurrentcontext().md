@@ -21,7 +21,7 @@ func makeCurrentContext()
 - (void) makeCurrentContext;
 ```
 
-#### Discussion
+## Discussion
 
 Subsequent OpenGL calls are rendered into the context defined by the receiver.
 

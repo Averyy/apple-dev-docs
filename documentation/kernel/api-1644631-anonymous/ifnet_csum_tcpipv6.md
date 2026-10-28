@@ -13,7 +13,7 @@
 IFNET_CSUM_TCPIPV6 = 0x00000020
 ```
 
-#### Discussion
+## Discussion
 
 Hardware will calculate TCP IPv6 checksums.
 

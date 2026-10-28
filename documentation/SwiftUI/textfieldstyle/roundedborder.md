@@ -24,7 +24,7 @@ static var roundedBorder: RoundedBorderTextFieldStyle { get }
 
 Available when `Self` is `RoundedBorderTextFieldStyle`.
 
-#### Discussion
+## Discussion
 
 Use [`textFieldStyle(_:)`](../view/textfieldstyle%28_%29.md) to apply the [`bordered`](./bordered.md) style with [`textInputBorderShape(_:)`](../view/textinputbordershape%28_%29.md) to apply the [`roundedRectangle`](../textinputbordershape/roundedrectangle.md) shape instead.
 

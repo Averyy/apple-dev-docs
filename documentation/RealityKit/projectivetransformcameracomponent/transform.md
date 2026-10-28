@@ -20,7 +20,7 @@ The custom projection RealityKit applies to objects in the scene.
 var transform: float4x4
 ```
 
-#### Discussion
+## Discussion
 
 The value defaults to `4x4` zero matrix. Swap the near and far values to use a reverse depth matrix.
 

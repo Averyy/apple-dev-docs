@@ -23,7 +23,7 @@ var kAudioSessionCategory_RecordAudio: Int { get }
 kAudioSessionCategory_RecordAudio
 ```
 
-#### Discussion
+## Discussion
 
 This category is equivalent to the [`record`](../AVFAudio/avaudiosession/category-swift.struct/record.md) category provided in the AVFoundation framework.
 

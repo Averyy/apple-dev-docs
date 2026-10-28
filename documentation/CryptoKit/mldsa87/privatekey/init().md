@@ -21,7 +21,7 @@ Creates a random MLDSA87 private key.
 init() throws
 ```
 
-#### Discussion
+## Discussion
 
 This initializer is marked `throws` to support use in generic contexts, but key generation itself doesn’t produce errors.
 

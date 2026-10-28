@@ -20,11 +20,11 @@ optional func numberOfRows(in tableView: NSTableView) -> Int
 - (NSInteger) numberOfRowsInTableView:(NSTableView *) tableView;
 ```
 
-#### Return Value
+## Return Value
 
 The number of rows in `aTableView`.
 
-#### Discussion
+## Discussion
 
 An instance of [`NSTableView`](../nstableview.md) uses this method to determine how many rows it should create and display. Your [`numberOfRows(in:)`](./numberofrows%28in%29.md) implementation is called very frequently, so it must be efficient.
 

@@ -25,7 +25,7 @@ typealias nw_object_t = any OS_nw_object
 typedef NSObject<OS_nw_object> * nw_object_t;
 ```
 
-#### Discussion
+## Discussion
 
 Network.framework objects are reference-counted objects that can be used with Automatic Reference Counting (ARC) or directly retained and released.
 

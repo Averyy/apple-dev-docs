@@ -5,11 +5,11 @@
 
 Establish your identity to the ClassKit Catalog server by providing a cryptographically signed token for each call.
 
-#### Overview
+## Overview
 
 You authenticate the calls you make to the ClassKit Catalog API by including a cryptographically signed [JSON Web Token (JWT)](https://tools.ietf.org/html/rfc7519). You sign the JWT using a private key that you provision in [Apple Developer](https://developer.apple.com) website, and then include the signed token as part of the header of each call that you make.
 
-##### Register a Private Key
+### Register a Private Key
 
 Sign in to the Apple Developer web site, and navigate to the “Certificates, IDs, & Profiles” page. Choose Keys in the sidebar, and then click the plus (+) button to add a new key. Name the key, and enable it for use with ClassKit Catalog. Complete the registration and download the private key.
 
@@ -17,7 +17,7 @@ Sign in to the Apple Developer web site, and navigate to the “Certificates, ID
 
 You can download the private key only once. Apple doesn’t keep a copy of your key, so you can’t retrieve the key again. If you lose your key, you’ll need to revoke the key and create a new one. Similarly, if your private key is ever compromised, you’ll need to revoke the original key and create a new one.
 
-##### Create and Sign a Token
+### Create and Sign a Token
 
 Compose a JWT as a combination of a header, a claim set, and a signature, as described in the [JSON Web Token (JWT)](https://tools.ietf.org/html/rfc7519) specification. Create the header as a JSON object with key-value pairs representing:
 
@@ -53,7 +53,7 @@ An example claim set looks like this:
 
 Base-64 encode and compute a signature over these two objects, as described in the JWT specification, using your private key with the P-256 ECDSA algorithm and a SHA-256 hash. The two encoded objects plus the computed signature, separated by periods, make up the JWT.
 
-##### Authenticate Requests with the Signed Token
+### Authenticate Requests with the Signed Token
 
 Include the JWT with every request you make to the ClassKit Catalog API by adding `Authorization: Bearer <JWT>` to the header, where you replace <`JWT>` with your actual token. Here is an example of making a request using the `curl` command line utility:
 

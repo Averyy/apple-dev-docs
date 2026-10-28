@@ -24,15 +24,15 @@ func AudioFileGetGlobalInfo(_ inPropertyID: AudioFilePropertyID, _ inSpecifierSi
 extern OSStatus AudioFileGetGlobalInfo(AudioFilePropertyID inPropertyID, UInt32 inSpecifierSize, void *inSpecifier, UInt32 *ioDataSize, void *outPropertyData);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See Result Codes.
 
-#### Discussion
+## Discussion
 
 This function can be used to get information about the capabilities of Audio File Services data types, for example, to determine which file types can take which data formats, what file types are supported, what file type can hold a particular data type, and so forth. This function cannot be used to get information about the properties of particular files. So the properties whose information you are obtaining are global to the Audio File Services programming interface, not properties specific to any file.
 
-##### Special Considerations
+### Special Considerations
 
 Some Core Audio property values are C types and others are Core Foundation objects.
 

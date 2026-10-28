@@ -19,7 +19,7 @@ func drawSegment(_ segment: Int, inFrame frame: NSRect, with controlView: NSView
 - (void) drawSegment:(NSInteger) segment inFrame:(NSRect) frame withView:(NSView *) controlView;
 ```
 
-#### Discussion
+## Discussion
 
 You can override this method to provide a custom appearance for segmented controls. You should not call this method directly. It is called for you automatically by the control when it needs to be redrawn.
 

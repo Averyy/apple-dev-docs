@@ -25,7 +25,7 @@ func SparseCleanup(_ toFree: SparseMatrix_Complex_Double)
 static void SparseCleanup(SparseMatrix_Complex_Double Matrix);
 ```
 
-#### Discussion
+## Discussion
 
 Reports an error if the matrix was not allocated by Sparse.
 

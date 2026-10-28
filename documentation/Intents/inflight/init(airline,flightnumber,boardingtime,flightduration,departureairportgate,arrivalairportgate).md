@@ -24,7 +24,7 @@ init(airline: INAirline, flightNumber: String, boardingTime: INDateComponentsRan
 - (instancetype) initWithAirline:(INAirline *) airline flightNumber:(NSString *) flightNumber boardingTime:(INDateComponentsRange *) boardingTime flightDuration:(INDateComponentsRange *) flightDuration departureAirportGate:(INAirportGate *) departureAirportGate arrivalAirportGate:(INAirportGate *) arrivalAirportGate;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INFlight`](../inflight.md) object or `nil` if one can’t be created.
 

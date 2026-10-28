@@ -16,7 +16,7 @@ CFDictionary key indicates whether the battery is charged.
 #define kIOPSIsChargedKey
 ```
 
-#### Discussion
+## Discussion
 
 A battery must be plugged in to an external power source in order to be fully charged. Note that a battery may validly be plugged in, not charging, and <100% charge. e.g. A battery with capacity >= 95% and not charging, is defined as charged.
 

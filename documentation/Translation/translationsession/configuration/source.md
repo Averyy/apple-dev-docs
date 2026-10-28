@@ -18,7 +18,7 @@ The language to translate content from.
 var source: Locale.Language?
 ```
 
-#### Discussion
+## Discussion
 
 If left to its default value of `nil`, the session tries to identify the source language automatically, and prompts the person to choose a source language if it’s unclear. Changing this value cancels the previous task and creates a new one.
 

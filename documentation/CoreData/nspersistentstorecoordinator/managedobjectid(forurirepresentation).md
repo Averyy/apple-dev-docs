@@ -25,11 +25,11 @@ func managedObjectID(forURIRepresentation url: URL) -> NSManagedObjectID?
 - (NSManagedObjectID *) managedObjectIDForURIRepresentation:(NSURL *) url;
 ```
 
-#### Return Value
+## Return Value
 
 An object ID for the object specified by `url`.
 
-#### Discussion
+## Discussion
 
 The URI representation contains a UUID of the store the ID is coming from, and the coordinator can match it against the stores added to it.
 

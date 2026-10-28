@@ -17,7 +17,7 @@ class CFXMLNode
 typedef const struct __CFXMLNode * CFXMLNodeRef;
 ```
 
-#### Overview
+## Overview
 
 A CFXMLNode object describes an individual XML construct—like a tag, or a comment, or a string of character data. CFXMLNode is intended to be used with the CFXMLParser and CFXMLTree opaque types.
 

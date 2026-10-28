@@ -25,11 +25,11 @@ var perform: ((UnsafeMutableRawPointer?, CFIndex, CFAllocator?, UnsafeMutableRaw
 void *(*)(void *, long, const struct __CFAllocator *, void *) perform;
 ```
 
-#### Return Value
+## Return Value
 
 An optional Mach message to be sent in response to the received message. The message must be allocated using `allocator`. Return `NULL` if you want an empty reply returned to the sender.
 
-#### Discussion
+## Discussion
 
 You only need to provide this callback if you create your own version 1 run loop source. CFMachPort and CFMessagePort run loop sources already implement this callback to forward the received message to the CFMachPort’s or CFMessagePort’s own callback function, which you do need to implement.
 

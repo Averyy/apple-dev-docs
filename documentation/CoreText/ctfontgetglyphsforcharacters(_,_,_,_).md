@@ -25,11 +25,11 @@ func CTFontGetGlyphsForCharacters(_ font: CTFont, _ characters: UnsafePointer<Un
 extern bool CTFontGetGlyphsForCharacters(CTFontRef font, const UniChar characters[], CGGlyph glyphs[], CFIndex count);
 ```
 
-#### Return Value
+## Return Value
 
 `True` if the font could encode all Unicode characters; otherwise `False`.
 
-#### Discussion
+## Discussion
 
 Provides basic Unicode encoding for the given font, returning by reference an array of [`CGGlyph`](../CoreGraphics/cgglyph.md) values corresponding to a given array of Unicode characters for the given font.
 

@@ -15,7 +15,7 @@ Options for reporting playback progress.
 object PlayMediaControlActivity
 ```
 
-#### Discussion
+## Discussion
 
 Provide these values in a [`Queue`](./queue.md) to configure when the client sends requests to your [`Report Playback Progress and Activity`](./updateactivity.md) endpoint.
 

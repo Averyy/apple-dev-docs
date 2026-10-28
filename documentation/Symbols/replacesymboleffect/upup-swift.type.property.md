@@ -21,7 +21,7 @@ Returns an effect requesting the Up-Up variant of the Replace animation.
 static var upUp: ReplaceSymbolEffect { get }
 ```
 
-#### Discussion
+## Discussion
 
 The initial symbol scales up as it is removed, and the new symbol scales up as it is added.
 

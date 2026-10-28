@@ -5,13 +5,13 @@
 
 Request permission to display alerts, play sounds, or badge the app’s icon in response to a notification.
 
-#### Overview
+## Overview
 
 Local and remote notifications get a person’s attention by displaying an alert, playing sounds, or badging your app’s icon. These interactions occur when your app isn’t running or is in the background. They let people know that your app has relevant information for them to view. Because a person might consider notification-based interactions disruptive, you must obtain permission to use them.
 
 ![A screenshot showing the system prompting a person to allow or disallow the use of alerts, sounds, and badges when the app sends notifications.](https://developer.apple.com/tutorials/images/com.apple.usernotifications/media-3559454@2x.png)
 
-##### Explicitly request authorization in context
+### Explicitly request authorization in context
 
 To ask for authorization, get the shared [`UNUserNotificationCenter`](./unusernotificationcenter.md) instance and call its [`requestAuthorization(options:completionHandler:)`](./unusernotificationcenter/requestauthorization%28options,completionhandler%29.md) method. Specify all of the interaction types that your app employs. For example, you can request authorization to display alerts, add a badge to the app icon, or play sounds:
 
@@ -31,7 +31,7 @@ The first time your app makes this authorization request, the system prompts the
 
 Make the request in a context that helps people understand why your app needs authorization. In a task-tracking app that sends reminder notifications, you might make the request after the person schedules a first task. Sending the request in context provides a better experience than automatically requesting authorization on first launch, because people can see the purpose your apps notifications serve.
 
-##### Use provisional authorization to send trial notifications
+### Use provisional authorization to send trial notifications
 
 When you explicitly ask for permission to send notifications, people must decide whether to allow or deny permission before they’ve seen a notification from your app. Even if you carefully set the context before requesting authorization, people may not have enough information to make a decision, and might reject the authorization.
 
@@ -61,7 +61,7 @@ Unlike explicitly requesting authorization, this code doesn’t prompt the perso
 
 Additionally, if you request provisional authorization, you can request authorization when your app first launches. The person is only asked to keep or turn off notifications when they actually receive the notification.
 
-##### Customize notifications based on the current authorizations
+### Customize notifications based on the current authorizations
 
 Always check your app’s authorization status before scheduling local notifications. People can change your app’s authorization settings at any time. They can also change the type of interactions allowed by your app — which may cause you to alter the number or type of notifications your app sends.
 

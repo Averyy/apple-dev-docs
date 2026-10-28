@@ -19,7 +19,7 @@ A task scheduling error that indicates the app isn’t permitted to launch the t
 static var notPermitted: BGTaskScheduler.Error.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 There are two causes for this error:
 

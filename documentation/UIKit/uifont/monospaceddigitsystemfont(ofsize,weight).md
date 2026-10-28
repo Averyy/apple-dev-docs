@@ -24,11 +24,11 @@ class func monospacedDigitSystemFont(ofSize fontSize: CGFloat, weight: UIFont.We
 + (UIFont *) monospacedDigitSystemFontOfSize:(CGFloat) fontSize weight:(UIFontWeight) weight;
 ```
 
-#### Return Value
+## Return Value
 
 A font object of the specified size and weight, with variable-width text and fixed-width digits.
 
-#### Discussion
+## Discussion
 
 The system font uses proportional spacing. When displaying numerical data, you can use this method to retrieve a monospace font for displaying that data. With a monospaced font, each digit occupies the same amount of space, which makes it easier to read numbers that are stacked vertically.
 

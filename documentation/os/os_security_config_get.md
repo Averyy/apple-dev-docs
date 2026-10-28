@@ -19,11 +19,11 @@
 extern os_security_config_t os_security_config_get();
 ```
 
-#### Return Value
+## Return Value
 
 An os_security_config_t value representing the active security flags. This function is not expected to fail for the current process.
 
-#### Discussion
+## Discussion
 
 Retrieves the security configuration bitmask for the current process.
 

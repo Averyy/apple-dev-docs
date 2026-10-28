@@ -19,7 +19,7 @@ let IOBluetoothHandsFreeIndicatorBattChg: String
 extern NSString * const IOBluetoothHandsFreeIndicatorBattChg;
 ```
 
-#### Discussion
+## Discussion
 
 The value of the battery charge indicator is an integer from `0-5`, where `0` indicates a very low battery charge and `5` indicates a very high charge.
 

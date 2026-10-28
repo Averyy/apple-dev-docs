@@ -25,7 +25,7 @@ var XPC_CONNECTION_MACH_SERVICE_LISTENER: Int32 { get }
 #define XPC_CONNECTION_MACH_SERVICE_LISTENER
 ```
 
-#### Discussion
+## Discussion
 
 Pass this to [`xpc_connection_create_mach_service(_:_:_:)`](./xpc_connection_create_mach_service%28_,_,_%29.md). This flag indicates that the caller is the listener for the named service. Only pass this flag for services in the process’s `launchd.plist`. You may not use this flag to dynamically add services to the Mach bootstrap namespace.
 

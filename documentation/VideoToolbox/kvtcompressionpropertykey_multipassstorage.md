@@ -24,7 +24,7 @@ let kVTCompressionPropertyKey_MultiPassStorage: CFString
 extern CFStringRef const kVTCompressionPropertyKey_MultiPassStorage;
 ```
 
-#### Discussion
+## Discussion
 
 Some video encoders support multipass encoding.  To determine whether a [VTCompressionSession](./vtcompressionsession-api-collection.md) supports multipass encoding, you can inspect the dictionary returned by [`VTSessionCopySupportedPropertyDictionary(_:supportedPropertyDictionaryOut:)`](./vtsessioncopysupportedpropertydictionary%28_,supportedpropertydictionaryout%29.md) to see if it contains [`kVTCompressionPropertyKey_MultiPassStorage`](./kvtcompressionpropertykey_multipassstorage.md).
 

@@ -22,7 +22,7 @@ let kCFProxyPortNumberKey: CFString
 extern CFStringRef const kCFProxyPortNumberKey;
 ```
 
-#### Discussion
+## Discussion
 
 A `CFNumber` value specifying the port that should be used to contact the proxy.
 

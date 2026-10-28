@@ -9,7 +9,7 @@ Get a list of user IDs for an organizational unit in an organization.
 **Availability**:
 - Apple Business API 2.6+
 
-##### Example
+### Example
 
 **Request**:
 

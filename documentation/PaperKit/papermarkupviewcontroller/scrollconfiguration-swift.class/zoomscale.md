@@ -19,7 +19,7 @@ The current scale factor applied to the scroll view’s content.
 final var zoomScale: CGFloat { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Default is `1.0`.
 

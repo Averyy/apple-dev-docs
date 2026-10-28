@@ -19,7 +19,7 @@ func PMGetScale(_ pageFormat: PMPageFormat, _ scale: UnsafeMutablePointer<Double
 OSStatus PMGetScale(PMPageFormat pageFormat, double *scale);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./core_printing.md#1670007).
 

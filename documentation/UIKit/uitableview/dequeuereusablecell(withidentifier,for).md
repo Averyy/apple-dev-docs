@@ -28,11 +28,11 @@ func dequeueReusableCell(withIdentifier identifier: String, for indexPath: Index
 - [Configuring the cells for your table](../configuring-the-cells-for-your-table.md)
 - [Filling a table with data](../filling-a-table-with-data.md)
 
-#### Return Value
+## Return Value
 
 A [`UITableViewCell`](../uitableviewcell.md) object with the associated reuse identifier. This method always returns a valid cell.
 
-#### Discussion
+## Discussion
 
 Call this method only from the [`tableView(_:cellForRowAt:)`](../uitableviewdatasource/tableview%28_,cellforrowat%29.md) method of your table view data source object. This method returns an existing cell of the specified type, if one is available, or it creates and returns a new cell using the class or storyboard you provided earlier. Don’t call this method outside of your data source’s [`tableView(_:cellForRowAt:)`](../uitableviewdatasource/tableview%28_,cellforrowat%29.md) method. If you need to create cells at other times, call [`dequeueReusableCell(withIdentifier:)`](./dequeuereusablecell%28withidentifier%29.md) instead.
 

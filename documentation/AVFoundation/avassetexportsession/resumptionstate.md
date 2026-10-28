@@ -20,7 +20,7 @@ Represents the resumption state of the export session.
 enum ResumptionState
 ```
 
-#### Overview
+## Overview
 
 After calling `configureForResumableExport()`, this returned state details whether the export is successfully configured as resumable or not, and provides additional relevant information.
 

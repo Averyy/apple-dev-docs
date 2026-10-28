@@ -29,7 +29,7 @@ optional func resolveUnseen(for intent: INSearchCallHistoryIntent) async -> INBo
 - (void) resolveUnseenForSearchCallHistory:(INSearchCallHistoryIntent *) intent withCompletion:(void (^)(INBooleanResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to let SiriKit know whether you can search for unseen calls. Disambiguation and prompting the user for more information isn’t supported. Your implementation should provide a successful resolution with the requested value.
 

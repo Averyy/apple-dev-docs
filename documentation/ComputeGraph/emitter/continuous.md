@@ -16,7 +16,7 @@ Continuously emit particles at a fixed rate.
 void emitter::continuous(float rate, float maxBurst)
 ```
 
-#### Discussion
+## Discussion
 
 > **Visual**: ![Graph](https://developer.apple.com/tutorials/images/com.apple.computegraph/emitter__continuous.svg)
 

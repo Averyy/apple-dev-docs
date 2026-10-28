@@ -20,11 +20,11 @@ func FFCreateDevice(_ hidDevice: io_service_t, _ pDeviceReference: UnsafeMutable
 extern HRESULT FFCreateDevice(io_service_t hidDevice, FFDeviceObjectReference*pDeviceReference);
 ```
 
-#### Return Value
+## Return Value
 
 If the method succeeds, and the device supports FF, the return value is FF_OK. If the method fails, the return value can be one of the following error values:
 
-#### Discussion
+## Discussion
 
 FFERR_INVALIDPARAM
 
@@ -34,7 +34,7 @@ FFERR_OUTOFMEMORY
 
 FFERR_INTERNAL
 
-#### Discussion
+## Discussion
 
 When you are finished with the device, FFReleaseDevice must be called on the reference received in this function to dispose of the API device object.
 

@@ -12,11 +12,11 @@ CF_EXPORT IOHIDElementCollectionType IOHIDElementGetCollectionType(
    IOHIDElementRef element) AVAILABLE_MAC_OS_X_VERSION_10_5_AND_LATER;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the IOHIDElementCollectionType for the element.
 
-#### Overview
+## Overview
 
 The value returned by this method only makes sense if the element type is kIOHIDElementTypeCollection.
 

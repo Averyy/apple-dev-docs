@@ -21,7 +21,7 @@ The vehicle to receive the action request.
 let recipientVehicleID: String
 ```
 
-#### Discussion
+## Discussion
 
 This string is the same one that appears in the [`identifier`](../vehiclereport/identifier.md) property of one of the session’s vehicle reports.
 

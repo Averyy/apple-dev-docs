@@ -16,7 +16,7 @@ Defines a universal procedure pointer to a selector function callback.
 typedef SelectorFunctionProcPtr SelectorFunctionUPP;
 ```
 
-#### Discussion
+## Discussion
 
 You can obtain a `SelectorFunctionUPP` by calling the function [`NewSelectorFunctionUPP`](./api-1472304-newselectorfunctionupp.md). For more information, see [`SelectorFunctionProcPtr`](./selectorfunctionprocptr.md).
 

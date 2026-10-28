@@ -18,11 +18,11 @@ func FSEventStreamCreate(_ allocator: CFAllocator?, _ callback: FSEventStreamCal
 FSEventStreamRef FSEventStreamCreate(CFAllocatorRef allocator, FSEventStreamCallback callback, FSEventStreamContext *context, CFArrayRef pathsToWatch, FSEventStreamEventId sinceWhen, CFTimeInterval latency, FSEventStreamCreateFlags flags);
 ```
 
-#### Return Value
+## Return Value
 
 A valid FSEventStreamRef.
 
-#### Discussion
+## Discussion
 
 Creates a new FS event stream object with the given parameters. In order to start receiving callbacks you must also call FSEventStreamScheduleWithRunLoop() and FSEventStreamStart().
 

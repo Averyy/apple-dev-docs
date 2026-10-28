@@ -23,7 +23,7 @@ case failureNoMatchingWorkout
 INCancelWorkoutIntentResponseCodeFailureNoMatchingWorkout
 ```
 
-#### Discussion
+## Discussion
 
 Use this code when the user specifies a workout name that your app does not recognize.
 

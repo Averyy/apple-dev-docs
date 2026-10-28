@@ -10,11 +10,11 @@
 extern CGError CGDisplayStreamStop(CGDisplayStreamRef displayStream);
 ```
 
-#### Return Value
+## Return Value
 
 kCGErrorSuccess If the display stream was stopped, otherwise an error.
 
-#### Discussion
+## Discussion
 
 End delivery of frame updates to the handler block.
 

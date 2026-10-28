@@ -14,11 +14,11 @@ virtual IOReturn releaseAGPMemory(
  IOOptionBits options = 0 );
 ```
 
-#### Return Value
+## Return Value
 
 Returns an IOReturn code indicating success or failure.
 
-#### Overview
+## Overview
 
 Makes the memory described by the IOMemoryDescriptor object unaddressable by AGP by removing its pages from the GART array, given an offset into AGP space supplied by the caller (usually allocated by the AGP range allocator). It is the caller's responsibility to complete non-kernel pageable memory before calling this method, with IOMemoryDescriptor::complete.
 

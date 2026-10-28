@@ -8,7 +8,7 @@ framework: "Swift-Org/diagnostics"
 **Framework**: Swift-Org/diagnostics  
 **Role**: Article
 
-#### Overview
+## Overview
 
 Swift requires exclusive access to a variable in order to modify that variable. An error is reported if a program attempts to access a variable while it is already in the process of being accessed via another name. These issues can often be resolved by making a local copy of a variable before modifying it.
 

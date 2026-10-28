@@ -21,7 +21,7 @@ The default customization behavior.
 static var `default`: ToolbarCustomizationBehavior { get }
 ```
 
-#### Discussion
+## Discussion
 
 Items with this behavior start in the toolbar and can be moved or removed from the toolbar by the user.
 

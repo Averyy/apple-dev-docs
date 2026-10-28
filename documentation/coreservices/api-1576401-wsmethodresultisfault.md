@@ -15,11 +15,11 @@ Tests a method result dictionary for a fault condition.
 Boolean WSMethodResultIsFault(CFDictionaryRef methodResult);
 ```
 
-#### Return Value
+## Return Value
 
 A boolean TRUE if the result contains a fault condition.
 
-#### Discussion
+## Discussion
 
 If the result is a fault, look in the `kWSFaultCode`, `kWSFaultString`, and `kWSFaultExtra` fields of the dictionary.  If not a  fault, `kWSMethodInvocationResult` will contain the result of the execution. If debugging information was requested, it will be available in the dictionary as well.
 

@@ -21,7 +21,7 @@ let SWCopyRepresentationTypeIdentifier: String
 extern NSString * const SWCopyRepresentationTypeIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 Type identifier for copy representation that signals the system to use the app’s local document version.
 

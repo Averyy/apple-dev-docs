@@ -12,13 +12,13 @@ Create a user interface with searchable content in a table view.
 - Mac Catalyst 11.0+
 - Xcode 13.0+
 
-#### Overview
+## Overview
 
 This sample demonstrates how to create a table view controller and search controller to manage the display of searchable content. It creates another custom table view controller to display the search results. This table view controller also acts as the presenter or provides context for the search results so they’re presented within their own context.
 
 This sample includes the optional—but recommended—[`UIStateRestoring`](./uistaterestoring.md) protocol. You adopt this protocol from the view controller class to save the search bar’s active state, first responder status, and search bar text and restore them when the app is relaunched.
 
-##### Create a search controller
+### Create a search controller
 
 Use `MainTableViewController`, a subclass of [`UITableViewController`](./uitableviewcontroller.md), to create a search controller. The search controller searches and filters a set of `Product` objects and displays them in a table called `ResultsTableController`. This table controller is displayed as the user enters a search string and is dismissed when the search is complete.
 
@@ -65,7 +65,7 @@ override func viewDidLoad() {
 }
 ```
 
-##### Update the search results
+### Update the search results
 
 This sample uses the [`UISearchResultsUpdating`](./uisearchresultsupdating.md) protocol, along with [`NSComparisonPredicate`](../Foundation/nscomparisonpredicate.md), to filter search results from the group of available products. `NSComparisonPredicate` is a foundation class that specifies how data should be fetched or filtered using search criteria. The search criteria are based on what the user types in the search bar, which can be a combination of product title, year introduced, and price.
 

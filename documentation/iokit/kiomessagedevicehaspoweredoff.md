@@ -17,7 +17,7 @@
 #define kIOMessageDeviceHasPoweredOff
 ```
 
-#### Discussion
+## Discussion
 
 IOService power mgt does not send kIOMessageDeviceHasPoweredOff.
 

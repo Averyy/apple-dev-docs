@@ -19,7 +19,7 @@ func checkSpaceForParts()
 - (void) checkSpaceForParts;
 ```
 
-#### Discussion
+## Discussion
 
 The  [`usableParts`](./usableparts-swift.property.md) property contains the state calculated by this method. You should never need to invoke this method; it’s invoked automatically whenever the scroller’s size changes.
 

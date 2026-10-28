@@ -24,7 +24,7 @@ case ambienceBed
 AVAudio3DMixingSourceModeAmbienceBed
 ```
 
-#### Discussion
+## Discussion
 
 The rendering depends on listener orientation, but not on listener position. The audio channel layout of the bus specifies the directions of the input channels. The direction of the source node controls the rotation of the bed in the global space.
 

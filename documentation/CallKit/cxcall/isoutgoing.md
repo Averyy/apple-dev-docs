@@ -23,7 +23,7 @@ var isOutgoing: Bool { get }
 @property (nonatomic, assign, readonly, getter=isOutgoing) BOOL outgoing;
 ```
 
-#### Discussion
+## Discussion
 
 An outgoing call is a call initiated by the user, as opposed to an incoming call which is received by the telephony provider.
 

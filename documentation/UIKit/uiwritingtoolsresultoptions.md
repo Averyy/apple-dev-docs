@@ -22,7 +22,7 @@ struct UIWritingToolsResultOptions
 enum UIWritingToolsResultOptions : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 When configuring a text view, specify what type of text input you want Writing Tools to deliver to your view. You can ask it to return plain text without any attributes, or you can ask it to apply relevant formatting attributes to the text. You can even encourage it to return items in a list or format them in a table.
 

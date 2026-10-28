@@ -24,7 +24,7 @@ static let colorSpace: CIImageOption
 extern CIImageOption const kCIImageColorSpace;
 ```
 
-#### Discussion
+## Discussion
 
 For more information on this data type see [`CGColorSpace`](../../CoreGraphics/cgcolorspace.md). Typically you use this option when you need to load an elevation, mask, normal vector, or RAW sensor data directly from a file without color correcting it. This constant specifies to override Core Image, which, by default, assumes that data is in GenericRGB.
 

@@ -17,7 +17,7 @@ An identifier for a piece of content that your extension provides.
 struct HomeContentID
 ```
 
-#### Overview
+## Overview
 
 Defining identifiers as constants, instead of using strings, lets you reuse them and avoid typos. For example:
 

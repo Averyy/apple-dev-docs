@@ -21,11 +21,11 @@ Returns the serial dispatch queue associated with the application’s main threa
 static dispatch_queue_main_tdispatch_get_main_queue();
 ```
 
-#### Return Value
+## Return Value
 
 Returns the main queue. This queue is created automatically on behalf of the main thread before `main` is called.
 
-#### Discussion
+## Discussion
 
 The system automatically creates the main queue and associates it with your application’s main thread. Your app uses one (and only one) of the following three approaches to invoke blocks submitted to the main queue:
 

@@ -25,11 +25,11 @@ func cacheNodes() -> Set<NSAtomicStoreCacheNode>
 - (NSSet<__kindof NSAtomicStoreCacheNode *> *) cacheNodes;
 ```
 
-#### Return Value
+## Return Value
 
 The set of cache nodes registered with the receiver.
 
-#### Discussion
+## Discussion
 
 You should modify this collection using [`addCacheNodes(_:)`](./addcachenodes%28_%29.md): and [`willRemoveCacheNodes(_:)`](./willremovecachenodes%28_%29.md).
 

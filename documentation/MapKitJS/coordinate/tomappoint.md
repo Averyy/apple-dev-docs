@@ -15,7 +15,7 @@ Returns the map point that corresponds to the coordinate.
 toMapPoint(): MapPoint;
 ```
 
-#### Return Value
+## Return Value
 
 The map point value that corresponds to the coordinate on a two-dimensional map projection.
 

@@ -24,11 +24,11 @@ func AudioCodecReset(_ inCodec: AudioCodec) -> OSStatus
 extern OSStatus AudioCodecReset(AudioCodec inCodec);
 ```
 
-#### Return Value
+## Return Value
 
 Returns `NoErr` if successful, otherwise, a result code. See `Result Codes` for a list of possible values.
 
-#### Discussion
+## Discussion
 
 The input and output formats, magic cookie data, and other state variables are retained so that you needn’t call the [`AudioCodecInitialize(_:_:_:_:_:)`](./audiocodecinitialize%28_,_,_,_,_%29.md) function again unless the values of some variables have changed.
 

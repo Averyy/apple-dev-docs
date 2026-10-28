@@ -21,11 +21,11 @@ Publishes only elements that don’t match the previous element, as evaluated by
 func tryRemoveDuplicates(by predicate: @escaping (Self.Output, Self.Output) throws -> Bool) -> Publishers.TryRemoveDuplicates<Self>
 ```
 
-#### Return Value
+## Return Value
 
 A publisher that consumes — rather than publishes — duplicate elements.
 
-#### Discussion
+## Discussion
 
 Use [`tryRemoveDuplicates(by:)`](./tryremoveduplicates%28by%29.md) to remove repeating elements from an upstream publisher based upon the evaluation of elements using an error-throwing closure you provide. If your closure throws an error, the publisher terminates with the error.
 

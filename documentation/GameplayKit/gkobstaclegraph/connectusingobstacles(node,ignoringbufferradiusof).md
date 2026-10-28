@@ -24,7 +24,7 @@ func connectUsingObstacles(node: NodeType, ignoringBufferRadiusOf obstaclesBuffe
 - (void) connectNodeUsingObstacles:(NodeType) node ignoringBufferRadiusOfObstacles:(NSArray<GKPolygonObstacle *> *) obstaclesBufferRadiusToIgnore;
 ```
 
-#### Discussion
+## Discussion
 
 The [`GKObstacleGraph`](../gkobstaclegraph.md) class automatically maintains a network of nodes that describes the navigable areas around its collection of obstacles. Adding a new node to the graph connects it to these nodes, such that the resulting network can be used to find paths around the obstacles to the position of the new node. GameplayKit adds new connections only if those connections do not represent a path through any obstacles.
 

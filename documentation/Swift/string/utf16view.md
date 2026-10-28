@@ -22,7 +22,7 @@ A view of a string’s contents as a collection of UTF-16 code units.
 struct UTF16View
 ```
 
-#### Overview
+## Overview
 
 You can access a string’s view of UTF-16 code units by using its `utf16` property. A string’s UTF-16 view encodes the string’s Unicode scalar values as 16-bit integers.
 
@@ -70,7 +70,7 @@ if let i = favemoji.utf16.firstIndex(where: { $0 >= 128 }) {
 // Prints "My favorite emoji is "
 ```
 
-### UTF16View Elements Match NSString Characters
+## UTF16View Elements Match NSString Characters
 
 The UTF-16 code units of a string’s `utf16` view match the elements accessed through indexed `NSString` APIs.
 

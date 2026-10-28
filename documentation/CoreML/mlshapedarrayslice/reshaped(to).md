@@ -23,7 +23,7 @@ func reshaped(to newShape: [Int]) -> MLShapedArraySlice<Scalar>
 
 Available when `Scalar` conforms to `MLShapedArrayScalar`.
 
-#### Discussion
+## Discussion
 
 The reshaped array gets scalars of the original array in first-major order. Therefore, the initializer is semantically equivalent to:
 

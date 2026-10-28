@@ -25,11 +25,11 @@ class func distance(_ range: SKRange, to node: SKNode) -> Self
 + (instancetype) distance:(SKRange *) range toNode:(SKNode *) node;
 ```
 
-#### Return Value
+## Return Value
 
 A new constraint.
 
-#### Discussion
+## Discussion
 
 Distance constraints constrain a node to a specified distance range of another node or a point and can be used for effects such a simulating flocking around a node, repulsive fields and trails. Supplying a distance constraint with a range with a lower limit, an upper limit or both results in very different behaviors:
 

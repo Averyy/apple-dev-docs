@@ -25,11 +25,11 @@ init?(patternBaseSpace baseSpace: CGColorSpace?)
 extern CGColorSpaceRefCGColorSpaceCreatePattern(CGColorSpaceRef baseSpace);
 ```
 
-#### Return Value
+## Return Value
 
 A new pattern color space, or `NULL` if unsuccessful. In Objective-C, you’re responsible for releasing this object by calling [`CGColorSpaceRelease`](../cgcolorspacerelease.md).
 
-#### Discussion
+## Discussion
 
 For information on creating and using patterns, see [Quartz 2D Programming Guide](https://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/drawingwithquartz2d/Introduction/Introduction.html#//apple_ref/doc/uid/TP30001066) and [`CGPattern`](../cgpattern.md). Quartz retains the color space you pass in. Upon return, you may safely release it by calling [`CGColorSpaceRelease`](../cgcolorspacerelease.md).
 

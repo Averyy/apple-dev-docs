@@ -21,7 +21,7 @@ The kinds of library items that you can create.
 struct Category
 ```
 
-#### Overview
+## Overview
 
 When you specify a category for a library item, Xcode can group it with similar items in the library, making it easier for you to find. Categories provide visual treatment in the Xcode Library, but the treatment for each category depends on where the asset resides within the library.
 

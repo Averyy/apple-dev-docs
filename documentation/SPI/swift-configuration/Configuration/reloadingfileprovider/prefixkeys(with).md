@@ -24,11 +24,11 @@ Creates a new prefixed configuration provider.
 func prefixKeys(with prefix: ConfigKey) -> KeyMappingProvider<Self>
 ```
 
-#### Return Value
+## Return Value
 
 A provider which prefixes keys with the given prefix.
 
-#### Discussion
+## Discussion
 
 - Parameter: prefix: The configuration key to prepend to all configuration keys.
 

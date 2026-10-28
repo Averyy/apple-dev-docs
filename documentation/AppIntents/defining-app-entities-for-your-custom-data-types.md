@@ -5,7 +5,7 @@
 
 Provide the system with information about the types your app uses to model its data so that your intents can use those types as parameters.
 
-#### Overview
+## Overview
 
 People create, manage, and view their data primarily using your app’s interface, but sometimes they might want to access that data from outside your app. System features like Siri make it possible for people to perform actions using your app and interact with your app’s data. However, those features interact only with the data you provide using app entities.
 
@@ -13,7 +13,7 @@ An *app entity* is a type that adopts the [`AppEntity`](./appentity.md) protocol
 
 In your code, include app entities in places where the system can use them. In app intents, include entities as parameters when an action requires your app’s custom data. In your app’s Spotlight indexes, include entities alongside the rest of your data so Spotlight has a way to navigate to that data from search results. Indexing your content also makes your entities discoverable by Apple Intelligence and Siri, which can use the data to process requests involving your content. You can also suggest entities to the system and make your content more visible in relevant system interfaces.
 
-##### Create the initial code for your app entity type
+### Create the initial code for your app entity type
 
 When defining your app’s entities, you need to determine whether the underlying data is well-known to the system or specific to your app. The system is already familiar with many types of well-known data, such as photos, mail, books, files, and more. To promote consistency, the App Intents framework defines schemas that specify the properties to include in entities for these types. Supporting a schema makes it easier for Apple Intelligence to reason over your content and provide consistent responses. If your data doesn’t align with a particular schema, you can still define custom app entities that contain any data you want.
 
@@ -36,7 +36,7 @@ Although you use entities to reflect your app’s underlying data, you don’t h
 
 The [`IndexedEntity`](./indexedentity.md) type makes it possible to include your entities in your app’s Spotlight index. Apps use the [Core Spotlight](../CoreSpotlight/CoreSpotlight.md) framework to build a fast, searchable index of their content. Including entities in your app’s index provides a better experience with system search features. It also makes those entities available to Apple Intelligence. For more information about adding this support, see [Making app entities available in Spotlight](./making-app-entities-available-in-spotlight.md).
 
-##### Provide a unique identifier for your type
+### Provide a unique identifier for your type
 
 A requirement for all app entities is that they provide a unique identifier to distinguish one instance from another. Whether you have only one entity or tens of thousands, a unique identifier helps you differentiate entities of the same type. When the system needs a specific entity, it provides you with the identifier and expects you to return the matching entity instance.
 
@@ -56,7 +56,7 @@ struct PhotoAlbumEntity: AppEntity {
 
 The [`Identifiable`](../Swift/identifiable.md) protocol requires each entity instance to have a unique identifier value, but enforces that uniqueness only on the current device. If your app runs on multiple devices, you need to provide an identifier that’s stable across devices. If you store your data in CloudKit or generate UUIDs from your server, you can use the identifiers from those technologies in your entities. However, if you create a local identiifer for each entity that’s separate from the one you share with other devices, set the type of your `id` property to [`SyncableEntityIdentifier`](./syncableentityidentifier.md) instead. You can use this type with the [`SyncableEntity`](./syncableentity.md) protocol to tell the system that the identifer for each entity is the same on each of the person’s devices.
 
-##### Add properties for your key data variables
+### Add properties for your key data variables
 
 An entity type contains app-specific data you want to make available to the system. When declaring your type, add properties to store the relevant information. If your entity types are separate from your app’s data structures, design your type to store a copy of your app’s actual data. When you need to make changes to your app’s data, continue to modify your app-specific data structures and copy your changes to any existing entities.
 
@@ -106,7 +106,7 @@ If a property contains an array of entities, use an [`EntityCollection`](./entit
 
 For a list of property wrappers and how to use them, see [Property declarations](./app-entities.md#Property-declarations).
 
-##### Define properties using only the supported types
+### Define properties using only the supported types
 
 For every property you add to your app entity, choose only types that the App Intents framework supports. The system needs to know how to handle your chosen types because it customizes interactions based on those types. The following table lists the supported types.
 
@@ -120,7 +120,7 @@ For every property you add to your app entity, choose only types that the App In
 
 When you want to store app-specific data in a property, create an [`AppEntity`](./appentity.md) or [`AppEnum`](./appenum.md) type and use it to specify your data.
 
-##### Create a query type to handle searches
+### Create a query type to handle searches
 
 To help the system find your app’s entities, provide a query type for each entity type you define. The system uses your query type to search your app’s content at relevant times. For example, when an app intent parameter contains an entity, the parameter resolution process uses your query type to find the right entity. The system also runs your queries at other times to locate relevant entities in your app.
 
@@ -178,7 +178,7 @@ struct TrailEntity: AppEntity {
 
 For information about performing additional types of searches, see [`EntityStringQuery`](./entitystringquery.md) and [`EntityPropertyQuery`](./entitypropertyquery.md).
 
-##### Provide alternate representations of your content
+### Provide alternate representations of your content
 
 The system occasionally needs to incorporate your entities into conversations with people or other apps. During a Siri conversation, the system might describe the contents of the entity verbally to someone. During a multi-step operation, Apple Intelligence or Shortcuts might transfer well-known information from your entity to another app to process. For example, if your entity represents a geographical location, the system might send that location to Maps to generate directions. When implementing your entity types, describe your content to the system using specific types:
 

@@ -22,7 +22,7 @@ var merchantIdentifier: String? { get set }
 @property (nonatomic, copy, nullable) NSString * merchantIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 This property identifies the merchant making the request, and must match one of the merchant identifiers in the app’s entitlement. For information about configuring the entitlement, see [`com.apple.developer.in-app-identity-presentment.merchant-identifiers`](../../BundleResources/entitlements/com.apple.developer.in-app-identity-presentment.merchant-identifiers.md).
 

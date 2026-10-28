@@ -22,7 +22,7 @@ let kAudioSession_AudioRouteKey_Type: CFString!
 extern CFStringRef const kAudioSession_AudioRouteKey_Type;
 ```
 
-#### Discussion
+## Discussion
 
 A [`CFString`](../CoreFoundation/cfstring.md) object that serves as the one key for an audio routes input or output dictionary, whose value specifies an input source or output destination.
 

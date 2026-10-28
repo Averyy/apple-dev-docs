@@ -19,7 +19,7 @@ typealias IMKCandidatesLocationHint = Int
 typedef NSUInteger IMKCandidatesLocationHint;
 ```
 
-#### Discussion
+## Discussion
 
 The Input Method Kit uses the hint to place the candidates window in a location that is in the vicinity of the hint location, but that also ensures that the candidates window is fully visible.
 

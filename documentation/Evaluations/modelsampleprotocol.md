@@ -21,7 +21,7 @@ A type that defines language model evaluation samples with prompt, instructions,
 protocol ModelSampleProtocol : SampleProtocol where Self.ExpectedValue : Decodable, Self.ExpectedValue : Encodable, Self.ExpectedValue : Sendable
 ```
 
-#### Overview
+## Overview
 
 Extends [`SampleProtocol`](./sampleprotocol.md) with prompt, instructions, and evaluation expectations. Use [`ModelSample`](./modelsample.md) for the common case; create custom conformances when you need additional properties.
 

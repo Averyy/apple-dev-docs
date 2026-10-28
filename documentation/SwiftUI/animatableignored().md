@@ -18,11 +18,11 @@ An accessor macro that marks a property of a type to be excluded from the `anima
 ## Declaration
 
 ```swift
-@attached
-(accessor, names: named(willSet)) macro AnimatableIgnored()
+@attached(accessor, names: named(willSet))
+macro AnimatableIgnored()
 ```
 
-#### Overview
+## Overview
 
 ```swift
 @Animatable

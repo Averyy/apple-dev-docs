@@ -19,11 +19,11 @@ func InvokeOSLCountUPP(_ desiredType: DescType, _ containerClass: DescType, _ co
 OSErr InvokeOSLCountUPP(DescType desiredType, DescType containerClass, const AEDesc *container, long *result, OSLCountUPP userUPP);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145).
 
-#### Discussion
+## Discussion
 
 See the [`OSLCountProcPtr`](./oslcountprocptr.md) callback function. 
 

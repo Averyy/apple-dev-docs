@@ -19,7 +19,7 @@ case flexiblePush
 NSBezelStyleFlexiblePush
 ```
 
-#### Discussion
+## Discussion
 
 Use this style of button when you need to accommodate tall or variable height content.
 

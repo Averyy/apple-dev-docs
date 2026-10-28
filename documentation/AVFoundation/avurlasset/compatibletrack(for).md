@@ -26,11 +26,11 @@ func compatibleTrack(for compositionTrack: AVCompositionTrack) -> AVAssetTrack?
 - (AVAssetTrack *) compatibleTrackForCompositionTrack:(AVCompositionTrack *) compositionTrack;
 ```
 
-#### Return Value
+## Return Value
 
 An asset track managed by the asset from which any time range can be inserted into a given composition track.
 
-#### Discussion
+## Discussion
 
 Apple discourages using this method in iOS 15, tvOS 15, macOS 12, and watchOS 8 or later. Load compatible tracks asynchronously using [`findCompatibleTrack(for:completionHandler:)`](./findcompatibletrack%28for,completionhandler%29.md) instead.
 

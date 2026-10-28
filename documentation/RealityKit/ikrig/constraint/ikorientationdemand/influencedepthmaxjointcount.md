@@ -20,7 +20,7 @@ The number of joints to be influenced by this demand.
 var influenceDepthMaxJointCount: Int
 ```
 
-#### Discussion
+## Discussion
 
 The count starts from the constrained joint and continues up the chain to the skeleton’s root.
 

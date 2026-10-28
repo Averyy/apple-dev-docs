@@ -11,11 +11,11 @@ Fetches all ads assigned to an ad group.
 
 > **Deprecated**: Apple Ads Campaign Management API is deprecated. Instead, use the [Apple Ads Platform API](../apple-ads-platform-api/apple-ads-platform-api.md).
 
-#### Discussion
+## Discussion
 
 Use this endpoint to fetch all `ads` assigned to an ad group.
 
-##### Payload example: Get all ads
+### Payload example: Get all ads
 
 **Request**:
 

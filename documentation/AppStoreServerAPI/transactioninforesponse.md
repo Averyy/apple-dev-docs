@@ -19,7 +19,7 @@ object TransactionInfoResponse
 
 - [App Store Server API changelog](./app-store-server-api-changelog.md)
 
-#### Discussion
+## Discussion
 
 The `TransactionInfoResponse` contains information about the transaction that you request using the [`Get Transaction Info`](./get-transaction-info.md) endpoint. The [`transactionId`](./transactionid.md) in the `signedTransactionInfo` matches the `transactionId` you provide in the request path.
 

@@ -23,7 +23,7 @@ init<Source>(_ value: Source) where Source : BinaryInteger
 
 Available when `RawSignificand` conforms to `FixedWidthInteger`.
 
-#### Discussion
+## Discussion
 
 If two representable values are equally close, the result is the value with more trailing zeros in its significand bit pattern.
 

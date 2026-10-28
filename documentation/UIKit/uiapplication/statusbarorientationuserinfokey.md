@@ -24,7 +24,7 @@ class let statusBarOrientationUserInfoKey: String
 extern NSString * const UIApplicationStatusBarOrientationUserInfoKey;
 ```
 
-#### Discussion
+## Discussion
 
 The key’s value is an [`NSNumber`](../../Foundation/nsnumber.md) object that encapsulates a [`UIInterfaceOrientation`](../uiinterfaceorientation.md) value indicating the current orientation.  This key is used with [`didChangeStatusBarOrientationNotification`](./didchangestatusbarorientationnotification.md) and [`willChangeStatusBarOrientationNotification`](./willchangestatusbarorientationnotification.md) notifications.
 

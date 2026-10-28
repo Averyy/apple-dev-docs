@@ -15,7 +15,7 @@ Copies a block of memory.
 void MPBlockCopy(LogicalAddress source, LogicalAddress destination, ByteCount size);
 ```
 
-#### Discussion
+## Discussion
 
 This function simply calls through to the Driver Services Library function `BlockMoveData`. Note that you should not make any assumptions about the state of the destination memory while this function is executing. In the intermediate state, values may be present that are neither the original nor the final ones. For example, this function may use the `'dcbz'` instruction. If the underlying memory is not cacheable, if the memory is write-through instead of copy-back, or if the cache block is flushed for some reason, the `'dcbz'` instruction will write zeros to the destination. You can avoid the use of the `'dcbz'` instruction by calling `BlockMoveDataUncached`, but even that function makes no other guarantees about the memory block's intermediate state.
 

@@ -24,7 +24,7 @@ var kCFStreamErrorSOCKS4IdConflict: Int { get }
 kCFStreamErrorSOCKS4IdConflict
 ```
 
-#### Discussion
+## Discussion
 
 This error is specific to SOCKS4. This error code is only valid for errors in the `kCFStreamErrorSOCKS4SubDomainResponse` subdomain.
 

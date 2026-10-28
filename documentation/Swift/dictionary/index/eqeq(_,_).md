@@ -23,7 +23,7 @@ static func == (lhs: Dictionary<Key, Value>.Index, rhs: Dictionary<Key, Value>.I
 
 Available when `Key` conforms to `Hashable`.
 
-#### Discussion
+## Discussion
 
 Equality is the inverse of inequality. For any values `a` and `b`, `a == b` implies that `a != b` is `false`.
 

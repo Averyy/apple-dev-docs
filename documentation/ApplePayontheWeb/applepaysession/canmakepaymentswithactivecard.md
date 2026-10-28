@@ -20,11 +20,11 @@ static Promise <boolean> canMakePaymentsWithActiveCard(
 );
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the device supports Apple Pay and there is at least one active card in Wallet that is qualified for payments on the web; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 This method asynchronously contacts the Apple Pay servers as part of the verification process.
 

@@ -24,7 +24,7 @@ var hasHardwareVoiceCallProcessing: Bool { get }
 @property (readonly) BOOL hasHardwareVoiceCallProcessing;
 ```
 
-#### Discussion
+## Discussion
 
 Applications that use their own proprietary voice-processing algorithms should use this property to decide when to disable processing. If your app uses Apple’s Voice Processing I/O unit (subtype `kAudioUnitSubType_VoiceProcessingIO`), the system automatically manages this for you.
 

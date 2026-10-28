@@ -27,7 +27,7 @@ optional func detectWebpageLocale(for context: WKWebExtensionContext) async thro
 - (void) detectWebpageLocaleForWebExtensionContext:(WKWebExtensionContext *) context completionHandler:(void (^)(NSLocale *locale, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 No action is performed if not implemented.
 

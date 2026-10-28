@@ -24,7 +24,7 @@ func softMax(with tensor: MPSGraphTensor, axis: Int, name: String?) -> MPSGraphT
 - (MPSGraphTensor *) softMaxWithTensor:(MPSGraphTensor *) tensor axis:(NSInteger) axis name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid [`MPSGraphTensor`](../mpsgraphtensor.md) object
 

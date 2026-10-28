@@ -23,11 +23,11 @@ init(bounds: CGRect, format: UIGraphicsImageRendererFormat)
 - (instancetype) initWithBounds:(CGRect) bounds format:(UIGraphicsImageRendererFormat *) format;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized image renderer.
 
-#### Discussion
+## Discussion
 
 Use this initializer to create an image renderer when you want to override the default format for the current device.
 

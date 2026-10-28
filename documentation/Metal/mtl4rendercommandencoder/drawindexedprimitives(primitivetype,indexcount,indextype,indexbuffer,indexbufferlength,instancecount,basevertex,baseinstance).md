@@ -25,7 +25,7 @@ func drawIndexedPrimitives(primitiveType: MTLPrimitiveType, indexCount: Int, ind
 - (void) drawIndexedPrimitives:(MTLPrimitiveType) primitiveType indexCount:(NSUInteger) indexCount indexType:(MTLIndexType) indexType indexBuffer:(MTLGPUAddress) indexBuffer indexBufferLength:(NSUInteger) indexBufferLength instanceCount:(NSUInteger) instanceCount baseVertex:(NSInteger) baseVertex baseInstance:(NSUInteger) baseInstance;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to perform instanced indexed drawing, where an index buffer determines how Metal assembles primitives whilst customizing the base vertex and base instance value Metal passes to the vertex shader function.
 

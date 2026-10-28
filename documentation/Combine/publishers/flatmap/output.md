@@ -21,7 +21,7 @@ The kind of values published by this publisher.
 typealias Output = NewPublisher.Output
 ```
 
-#### Discussion
+## Discussion
 
 This publisher uses the output type declared by the new publisher.
 

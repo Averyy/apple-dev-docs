@@ -17,7 +17,7 @@ Called when a background load fails.
 - (void) backgroundLoadDidFailWithReason:(NSString *) reason;
 ```
 
-#### Discussion
+## Discussion
 
 This method is provided mainly for subclasses that wish to take some action before passing along the failure notification to the URL client. This method should invoke `super`’s implementation before returning.
 

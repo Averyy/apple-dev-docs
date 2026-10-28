@@ -14,7 +14,7 @@ The name of an icon for display when the extension appears in the Finder Preview
 - **Name**: `NSExtensionServiceFinderPreviewIconName`
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 This key is used in conjunction with the [`NSExtensionServiceAllowsFinderPreviewItem`](./nsextensionserviceallowsfinderpreviewitem.md) key.
 

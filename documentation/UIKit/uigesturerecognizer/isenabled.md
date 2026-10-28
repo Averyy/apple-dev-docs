@@ -23,7 +23,7 @@ var isEnabled: Bool { get set }
 @property (nonatomic, getter=isEnabled) BOOL enabled;
 ```
 
-#### Discussion
+## Discussion
 
 Disables a gesture recognizers so it does not receive touches. The default value is [`true`](../../Swift/true.md). If you change this property to [`false`](../../Swift/false.md) while a gesture recognizer is currently recognizing a gesture, the gesture recognizer transitions to a cancelled state.
 

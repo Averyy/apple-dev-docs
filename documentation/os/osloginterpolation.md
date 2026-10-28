@@ -22,7 +22,7 @@ A container for the elements of a log message.
 struct OSLogInterpolation
 ```
 
-#### Overview
+## Overview
 
 An [`OSLogInterpolation`](./osloginterpolation.md) structure contains a formatted string and its interpolated arguments. Don’t create [`OSLogInterpolation`](./osloginterpolation.md) structures directly. The system creates them automatically when you log messages using the [`Logger`](./logger.md) object.
 

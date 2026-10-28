@@ -17,7 +17,7 @@ Load dictionary of [`MLXArray`](./mlxarray.md) from a `safetensors` `Data`.
 func loadArrays(data: Data, stream: StreamOrDevice = .cpu) throws -> [String : MLXArray]
 ```
 
-##### See Also
+### See Also
 
 - [`saveToData(arrays:metadata:)`](./savetodata%28arrays,metadata%29.md)
 - [`loadArraysAndMetadata(data:stream:)`](./loadarraysandmetadata%28data,stream%29.md)

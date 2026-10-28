@@ -28,7 +28,7 @@ var MTLCounterDontSample: Int { get }
 
 - [Sampling GPU data into counter sample buffers](./sampling-gpu-data-into-counter-sample-buffers.md)
 
-#### Discussion
+## Discussion
 
 You can skip sampling at specific stages by assigning this sentinel value to the following properties instead of an offset to a counter sample buffer:
 

@@ -25,7 +25,7 @@ case moment
 PHAssetCollectionTypeMoment
 ```
 
-#### Discussion
+## Discussion
 
 The Photos app automatically creates moments to group assets by time and location.
 

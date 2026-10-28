@@ -23,7 +23,7 @@ var overrideNewTabPageURL: URL? { get }
 @property (nonatomic, copy, readonly, nullable) NSURL * overrideNewTabPageURL;
 ```
 
-#### Discussion
+## Discussion
 
 Provides the URL for a new tab page, if provided by the extension; otherwise `nil` if no page is defined.
 

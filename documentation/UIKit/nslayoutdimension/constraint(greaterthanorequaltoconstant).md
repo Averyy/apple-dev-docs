@@ -23,11 +23,11 @@ func constraint(greaterThanOrEqualToConstant c: CGFloat) -> NSLayoutConstraint
 - (NSLayoutConstraint *) constraintGreaterThanOrEqualToConstant:(CGFloat) c;
 ```
 
-#### Return Value
+## Return Value
 
 An [`NSLayoutConstraint`](../nslayoutconstraint.md) object that defines a minimum size for the attribute associated with this dimension anchor.
 
-#### Discussion
+## Discussion
 
 This method defines the relationship `first attribute >= c`. Where `first attribute` is the layout attribute represented by the anchor receiving this method call.
 

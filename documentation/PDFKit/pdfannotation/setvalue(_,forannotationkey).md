@@ -24,11 +24,11 @@ func setValue(_ value: Any, forAnnotationKey key: PDFAnnotationKey) -> Bool
 - (BOOL) setValue:(id) value forAnnotationKey:(PDFAnnotationKey) key;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the value sets successfully; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Some keys expect a complex type. For example, the [`color`](../pdfannotationkey/color.md) key expects an array of zero, one, two, three, or four elements, where each element is a floating-point number from `0.0` to `1.0`. As a convenience, this key accepts an [`NSColor`](../../AppKit/nscolor.md) or [`UIColor`](../../UIKit/uicolor.md) value. For details about other conveniences, see the individual [`PDFAnnotationKey`](../pdfannotationkey.md) properties or the `PDFAnnotationUtilities.h` header file.
 

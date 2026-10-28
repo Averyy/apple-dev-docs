@@ -25,7 +25,7 @@ enum CGPathDrawingMode
 enum CGPathDrawingMode : int32_t;
 ```
 
-#### Overview
+## Overview
 
 You can pass a path drawing mode constant to the function [`drawPath(using:)`](./cgcontext/drawpath%28using%29.md) to specify how Core Graphics should paint a graphics context’s current path.
 

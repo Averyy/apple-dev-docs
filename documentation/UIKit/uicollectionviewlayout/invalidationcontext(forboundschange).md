@@ -23,11 +23,11 @@ func invalidationContext(forBoundsChange newBounds: CGRect) -> UICollectionViewL
 - (UICollectionViewLayoutInvalidationContext *) invalidationContextForBoundsChange:(CGRect) newBounds;
 ```
 
-#### Return Value
+## Return Value
 
 An invalidation context that describes the changes that need to be made. Do not return nil.
 
-#### Discussion
+## Discussion
 
 The default implementation of this method creates an instance of the class provided by the [`invalidationContextClass`](./invalidationcontextclass.md) class method and returns it. If you want to use a custom invalidation context object with your layout, always override that method and return your custom class.
 

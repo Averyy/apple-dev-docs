@@ -5,7 +5,7 @@
 
 Design a flexible, functional, and responsive interface for editing text.
 
-#### Overview
+## Overview
 
 You can create a custom keyboard to provide a systemwide interface for manipulating text input. Because you’ll be integrating your keyboard with a system-provided service, you must fulfill certain requirements, and meet common user expectations.
 
@@ -15,7 +15,7 @@ Among other things, your keyboard must:
 - Adapt to the space that’s available. For example, iPadOS can display a keyboard docked to the bottom of the screen or floating with a compact width.
 - Enable users to switch to other keyboards.
 
-##### Support different input types
+### Support different input types
 
 Use the [`textDocumentProxy`](./uiinputviewcontroller/textdocumentproxy.md) to determine the current text input view’s keyboard input type. For each keyboard type that your app supports, configure your interface accordingly. One way to do this is by implementing [`textWillChange(_:)`](./uitextinputdelegate/textwillchange%28_%29.md) in your view controller, then compare the [`textDocumentProxy`](./uiinputviewcontroller/textdocumentproxy.md)‘s [`keyboardType`](./uitextinputtraits/keyboardtype.md) to your keyboard’s current display. If it’s different, update your interface accordingly.
 
@@ -37,13 +37,13 @@ Some text input views don’t allow custom keyboards:
 
 An app can disallow the use of third-party keyboards entirely by implementing [`application(_:shouldAllowExtensionPointIdentifier:)`](./uiapplicationdelegate/application%28_,shouldallowextensionpointidentifier%29.md) and returning [`false`](../Swift/false.md) when called with the `com.apple.keyboard-service` identifier. If an app disallows third-party keyboards, your keyboard won’t be shown in that app.
 
-##### Adapt to different layouts
+### Adapt to different layouts
 
 By default, iOS sizes custom keyboards to match the system keyboard according to screen size and device orientation. A custom keyboard’s width is always set by the system, typically matching the screen width. You can adjust the height of your custom keyboard’s primary view using Auto Layout. To change a keyboard’s height, adjust the height constraints on the UIInputViewController’s view to achieve the desired height for your interface.
 
 For more information about laying out your view, see [View layout](./view-layout.md).
 
-##### Handle common keyboard behaviors
+### Handle common keyboard behaviors
 
 Users expect various behaviors from keyboards. One example is autocapitalization: In a standard text field, the first letter of a sentence in a case-sensitive language is automatically capitalized.
 
@@ -69,7 +69,7 @@ Another common behavior is the ability to dismiss the keyboard. Users can end ed
 
 Custom keyboards also have to provide a way for users to switch keyboards. For more information on implementing a button to switch keyboards, see [Add your custom user interface](./creating-a-custom-keyboard.md#Add-your-custom-user-interface).
 
-##### Support autocomplete
+### Support autocomplete
 
 To support autocomplete functionality your keyboard has access to [`UILexicon`](./uilexicon.md). Make use of this class, along with a lexicon of your own design, to provide suggestions and autocorrections as users are entering text. The [`UILexicon`](./uilexicon.md) object contains words from various sources, including:
 
@@ -77,11 +77,11 @@ To support autocomplete functionality your keyboard has access to [`UILexicon`](
 - Text shortcuts defined in the Settings > General > Keyboard > Shortcuts list.
 - A dictionary of common words.
 
-##### Indicate dictation support
+### Indicate dictation support
 
 If your keyboard provides a way to input text using dictation, set the [`hasDictationKey`](./uiinputviewcontroller/hasdictationkey.md) property of your UIInputViewController’s subclass to [`true`](../Swift/true.md). In some cases, iOS may automatically show a dictation button (for example, on iPhone devices with Face ID). When you set [`hasDictationKey`](./uiinputviewcontroller/hasdictationkey.md) to [`true`](../Swift/true.md), iOS won’t show the system button, because having two buttons to perform dictation would be confusing to users.
 
-##### Leverage your containing app
+### Leverage your containing app
 
 When designing your custom keyboard, keep in mind that you can leverage your containing app for some functionality. For example, a tutorial would be best suited in your parent app. You could also configure settings or options in the containing app, then save those settings to a shared group container which your keyboard could then read. If your containing app’s sole purpose is to deliver your custom keyboard, there must be some utility provided even if it’s purely informational.
 

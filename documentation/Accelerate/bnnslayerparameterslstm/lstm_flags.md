@@ -27,7 +27,7 @@ var lstm_flags: UInt32
 uint32_t lstm_flags;
 ```
 
-#### Discussion
+## Discussion
 
 Set [`BNNSLayerFlagsLSTMBidirectional`](../bnnslayerflagslstmbidirectional.md) to enable bidirectional LSTM. Set [`BNNSLayerFlagsLSTMDefaultActivations`](../bnnslayerflagslstmdefaultactivations.md) to specify that the LSTM operation uses the default gate activations.
 

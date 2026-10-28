@@ -25,11 +25,11 @@ class func vortexField() -> SKFieldNode
 + (SKFieldNode *) vortexField;
 ```
 
-#### Return Value
+## Return Value
 
 A new vortex field node.
 
-#### Discussion
+## Discussion
 
 The strength of the field measures the acceleration of the field in meters per second squared (meaning that similar to gravity, all physics bodies are affected equally). The physics body is accelerated along the perpendicular of the line between the field node’s position and the position of the physics body. A positive field strength indicates the body is accelerated in a counter-clockwise direction. The [`falloff`](./falloff.md) property of a vortex field node is set by default to `2`.
 

@@ -19,7 +19,7 @@ var screen: NSScreen? { get }
 @property (strong, readonly, nullable) NSScreen * screen;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is the screen where most of the window is on; it is `nil` when the window is offscreen.
 

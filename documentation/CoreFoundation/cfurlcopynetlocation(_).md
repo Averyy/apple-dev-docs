@@ -25,11 +25,11 @@ func CFURLCopyNetLocation(_ anURL: CFURL!) -> CFString!
 extern CFStringRefCFURLCopyNetLocation(CFURLRef anURL);
 ```
 
-#### Return Value
+## Return Value
 
 The net location of `anURL`, or `NULL` if the URL cannot be decomposed (doesn’t conform to RFC 1808). Ownership follows the create rule. See [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 The URL net location is the portion of the URL that identifies the network address of the resource. It includes the optional username and password, as well as the target machine’s IP address or host name.
 

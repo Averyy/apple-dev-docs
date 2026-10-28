@@ -19,7 +19,7 @@ var visibleRect: NSRect { get }
 @property (readonly) NSRect visibleRect;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`NSZeroRect`](../../Foundation/nszerorect.md) if the layout is not currently assigned to a scrubber control.
 

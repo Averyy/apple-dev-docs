@@ -27,7 +27,7 @@ static var touchIDCurrentSet: SecAccessControlCreateFlags { get }
 kSecAccessControlTouchIDCurrentSet
 ```
 
-#### Discussion
+## Discussion
 
 Touch ID must be available and enrolled with at least one finger. The item is invalidated if fingers are added or removed.
 

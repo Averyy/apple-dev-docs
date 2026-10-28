@@ -21,7 +21,7 @@ Sets the receiver’s return value.
 - (void) setReturnValue:(void *) retLoc;
 ```
 
-#### Discussion
+## Discussion
 
 This value is normally set when you send an [`invoke`](./invoke.md) or [`invokeWithTarget:`](./invokewithtarget_.md) message.
 

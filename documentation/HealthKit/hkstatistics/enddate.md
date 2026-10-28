@@ -24,7 +24,7 @@ var endDate: Date { get }
 @property (strong, readonly) NSDate * endDate;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the end date for the statistics. If you calculated these statistics using a statistics query, this is the latest end date from all the samples that match the query. If you calculated these statistics using a statistics collection query, this is the end of the time interval for that particular collection of statistics.
 

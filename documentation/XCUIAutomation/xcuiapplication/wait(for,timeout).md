@@ -26,7 +26,7 @@ func wait(for state: XCUIApplication.State, timeout: TimeInterval) -> Bool
 - (BOOL) waitForState:(XCUIApplicationState) state timeout:(NSTimeInterval) timeout;
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether the app is in the specified state, or can reach the specified state before the timeout.
 

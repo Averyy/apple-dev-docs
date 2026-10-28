@@ -5,7 +5,7 @@
 
 Register an event lister for events that a map object dispatches.
 
-#### Overview
+## Overview
 
 MapKit JS uses events that developers can implement to hook into points in the life cycle of the map, as well as user interactions. Your code can respond to events by registering an event listener.
 
@@ -13,7 +13,7 @@ Events have a `target` property. The `target` of an event is the object dispatch
 
 Event listeners receive a single argument that is an event object. The event objects are similar to native event objects, though calls to `event.preventDefault()` or `event.stopPropagation()` don’t halt some actions that trigger these events. Scrolling, zooming, and panning, as well as zooming or rotating after a long press, provide methods to halt or prevent interaction.
 
-##### Respond to map display events
+### Respond to map display events
 
 MapKit JS dispatches the following events that allow you to respond to changes in the map display and a person’s interactions with the map and its controls.
 
@@ -27,7 +27,7 @@ MapKit JS dispatches the following events that allow you to respond to changes i
 - **`zoom-end`**: The map finishes zooming as a result of user interaction.
 - **`map-type-change`**: A program event or a user interaction causes the map’s `mapType` ([`MapType`](./maptype.md)) to change.
 
-##### Respond to annotation and overlay events
+### Respond to annotation and overlay events
 
 MapKit JS sends [`MapAnnotationSelectionEvent`](./mapannotationselectionevent.md),[`MapOverlaySelectionEvent`](./mapoverlayselectionevent.md), and [`MapAnnotationDragEvent`](./mapannotationdragevent.md) events when a person interacts with the annotations and overlays you place on the map. Respond to these interactions by updating the map or providing more information about the overlay or annotation the person interacts with.
 
@@ -37,14 +37,14 @@ MapKit JS sends [`MapAnnotationSelectionEvent`](./mapannotationselectionevent.md
 - **`dragging`**: The framework send a [`MapAnnotationDragEvent`](./mapannotationdragevent.md) when someone drags an annotation. The event has two properties.
 - **`drag-end`**: The framework send a [`MapAnnotationDragEvent`](./mapannotationdragevent.md) when someone finishes dragging an annotation.
 
-##### Respond to user location events
+### Respond to user location events
 
 MapKit JS sends [`MapUserLocationChangeEvent`](./mapuserlocationchangeevent.md) or [`MapUserLocationErrorEvent`](./mapuserlocationerrorevent.md) events to indicate changes in a person’s location. Use these events to adjust what the map displays or to trigger other responses in your app.
 
 - **`user-location-change`**: The framework sends a [`MapUserLocationChangeEvent`](./mapuserlocationchangeevent.md) event when [`showsUserLocation`](./map/showsuserlocation.md) is `true` and the map acquires the user’s location, or after an automatic update.
 - **`user-location-error`**: The framework sends a ([`MapUserLocationErrorEvent`](./mapuserlocationerrorevent.md)) when MapKit JS is unable to acquire the user’s location.
 
-##### Respond to map interaction events
+### Respond to map interaction events
 
 MapKit JS sends [`MapEvent`](./mapevent.md) events when someone taps or presses on the map view. Use these events to adjust the map view, respond to the deselecting of overlays, or drag or deselect annotations.
 

@@ -25,7 +25,7 @@ func selectMediaPresentationLanguage(_ language: String, for mediaSelectionGroup
 - (void) selectMediaPresentationLanguage:(NSString *) language forMediaSelectionGroup:(AVMediaSelectionGroup *) mediaSelectionGroup;
 ```
 
-#### Discussion
+## Discussion
 
 Overrides preferences for languages specified by the AVPlayer’s current media selection criteria. This method has no effect when the associated AVPlayer’s appliesMediaSelectionCriteriaAutomatically property has a value of NO, in which case you must use -selectMediaOption:inMediaSelectionGroup: instead in order to alter the presentation state of the media.
 

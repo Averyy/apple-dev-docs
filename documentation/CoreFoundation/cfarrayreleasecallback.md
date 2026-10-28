@@ -25,7 +25,7 @@ typealias CFArrayReleaseCallBack = (CFAllocator?, UnsafeRawPointer?) -> Void
 typedef void (*)(const struct __CFAllocator *, const void *) CFArrayReleaseCallBack;
 ```
 
-#### Discussion
+## Discussion
 
 This callback is passed to [`CFArrayCreate(_:_:_:_:)`](./cfarraycreate%28_,_,_,_%29.md) in a [`CFArrayCallBacks`](./cfarraycallbacks.md) structure.
 

@@ -14,7 +14,7 @@ Adjusts the saturation of a color.
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 **Saturate (color3f)**:
 
@@ -40,13 +40,13 @@ Adjusts the saturation of a color.
 | --- | --- |
 | `Out` | Color4 |
 
-#### Parameter descriptions
+## Parameter descriptions
 
 - **`In`**: The input color to adjust the saturation of.
 - **`Amount`**: The multiplier to apply to the saturation; the default value is `1.0`.
 - **`Luma Coefficients`**: The luma coefficients of the color space. The possible values for this node are the luma coefficients for the color spaces `acescg`, `rec202/rec2100`, or `rec709`. The default value is the luma coefficients for `acescg`, which are `(0.2722287, 0.6740818, 0.0536895)`.
 
-#### Discussion
+## Discussion
 
 The `Saturate` node performs a linear interpolation between the incoming color value and the luminance of the incoming color value. Setting the value of the `Amount` parameter to `0` adjusts the output to a grayscale of the input equal to the value that the [`Luminance`](./luminance.md) outputs.
 

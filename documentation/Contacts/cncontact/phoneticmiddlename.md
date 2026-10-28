@@ -32,7 +32,7 @@ var phoneticMiddleName: String { get }
 @property (atomic, copy, readonly) NSString * phoneticMiddleName;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains a string that specifies the pronunciation of the contact’s middle name.
 

@@ -26,11 +26,11 @@ func AUGraphStart(_ inGraph: AUGraph) -> OSStatus
 extern OSStatus AUGraphStart(AUGraph inGraph);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 
-#### Discussion
+## Discussion
 
 This function starts rendering by starting the head node of an audio processing graph. The graph must be initialized before it can be started.
 

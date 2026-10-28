@@ -21,7 +21,7 @@ init(window: NSWindow)
 + (NSGraphicsContext *) graphicsContextWithWindow:(NSWindow *) window;
 ```
 
-#### Return Value
+## Return Value
 
 The created [`NSGraphicsContext`](../nsgraphicscontext.md) object, or `nil` if the object could not be created.
 

@@ -5,7 +5,7 @@
 
 Make your AppKit apps accessible to everyone who uses macOS.
 
-#### Overview
+## Overview
 
 Making your app accessible means making it usable by everyone. By designing your app with accessibility in mind, you make it possible for everyone to enjoy your app. For more information, see [Accessibility](../Accessibility/Accessibility.md).
 

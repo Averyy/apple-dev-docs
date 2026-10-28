@@ -21,11 +21,11 @@ Returns the logical size of the memory managed by a dispatch data object
 extern size_t dispatch_data_get_size(dispatch_data_t data);
 ```
 
-#### Return Value
+## Return Value
 
 The number of bytes represented by the data object.
 
-#### Discussion
+## Discussion
 
 For data objects that represent multiple noncontiguous memory regions, the size reported by this function is the sum of the sizes of the individual regions.
 

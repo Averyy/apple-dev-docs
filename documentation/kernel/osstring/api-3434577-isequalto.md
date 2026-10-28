@@ -16,11 +16,11 @@ Compares the string with an OSObject
 virtual bool isEqualTo(const OSMetaClassBase *anObject);
 ```
 
-#### Return Value
+## Return Value
 
 true iff the object is of class OSData or OSString and isEqualTo() returns true.
 
-#### Discussion
+## Discussion
 
 If the object is of class OSString, the result of isEqualTo(const OSString * aDataObj) is returned. If the object is of class OSData, the result of isEqualTo(const OSData * aDataObj) is returned. Otherwise false is returned.
 

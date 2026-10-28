@@ -9,9 +9,9 @@ Read the associated document for a specific App Encryption Declaration.
 **Availability**:
 - App Store Connect API 2.2+
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

@@ -25,7 +25,7 @@ var subscriptionsToSave: [CKSubscription]? { get set }
 @property (nonatomic, copy, nullable) NSArray<CKSubscription *> * subscriptionsToSave;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the subscriptions that you want to save. Its initial value is the array that you pass to the [`init(subscriptionsToSave:subscriptionIDsToDelete:)`](./init%28subscriptionstosave,subscriptionidstodelete%29.md) method. Modify this property as necessary before you execute the operation or submit it to a queue. After CloudKit saves the subscriptions, it begins generating push notifications according to their criteria.
 

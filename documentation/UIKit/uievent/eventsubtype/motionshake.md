@@ -23,7 +23,7 @@ case motionShake
 UIEventSubtypeMotionShake
 ```
 
-#### Discussion
+## Discussion
 
 This is a subtype for the [`UIEvent.EventType.motion`](../eventtype/motion.md) general event type.
 

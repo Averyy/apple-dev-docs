@@ -20,7 +20,7 @@ string AppsReportingCreative.CreativeType
 - `CUSTOM_PRODUCT_PAGE`: An App Store creative using a Custom Product Page.
 - `DEFAULT_PRODUCT_PAGE`: An App Store creative using the app’s Default Product Page.
 
-#### Discussion
+## Discussion
 
 The `creativeType` field in reporting context mirrors the creation-time `creativeType` field on the creative, reflecting the format the creative used during the report’s date range. The `creativeType` field shares its enum with the Apple Maps (Brands) reporting equivalent, but apps ad reports only ever return `CUSTOM_PRODUCT_PAGE` or `DEFAULT_PRODUCT_PAGE`.
 

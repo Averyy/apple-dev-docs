@@ -21,7 +21,7 @@ Positions and orients the entity such that it looks at certain target from a giv
 @preconcurrency func look(at target: SIMD3<Float>, from position: SIMD3<Float>, upVector: SIMD3<Float> = SIMD3<Float>(0, 1, 0), relativeTo referenceEntity: Entity?, forward: Entity.ForwardDirection = .negativeZ)
 ```
 
-#### Discussion
+## Discussion
 
 This function moves the entity to the specified `position`. It rotates the entity such that the forward direction is pointing towards `target`. It further makes sure that entity’s *up* direction aligns with the specified `upVector`.
 

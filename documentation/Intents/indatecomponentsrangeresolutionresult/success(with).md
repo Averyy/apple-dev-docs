@@ -23,11 +23,11 @@ class func success(with resolvedDateComponentsRange: INDateComponentsRange) -> S
 + (instancetype) successWithResolvedDateComponentsRange:(INDateComponentsRange *) resolvedDateComponentsRange;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INDateComponentsRangeResolutionResult`](../indatecomponentsrangeresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object when you can resolve a parameter successfully to a value in your own internal data structures.
 

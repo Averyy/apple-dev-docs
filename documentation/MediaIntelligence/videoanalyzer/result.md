@@ -20,7 +20,7 @@ A type that represents the output of a video analysis operation.
 protocol Result : Sendable
 ```
 
-#### Overview
+## Overview
 
 This type is the base protocol for analysis result types. You receive a typed value conforming to this protocol when [`analyze(_:for:)`](./analyze%28_,for%29.md) succeeds for a particular request. The framework uses the request’s associated [`Result`](./request/result.md) type to determine the concrete type returned for each element in the tuple.
 

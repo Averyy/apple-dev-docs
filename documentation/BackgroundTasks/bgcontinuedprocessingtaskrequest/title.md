@@ -21,7 +21,7 @@ var title: String { get set }
 @property (copy, nonnull) NSString * title;
 ```
 
-#### Discussion
+## Discussion
 
 Define the value of this property as a parameter to the request initializer:  [`init(identifier:title:subtitle:)`](./init%28identifier,title,subtitle%29.md).
 

@@ -26,15 +26,15 @@ func CFHostSetClient(_ theHost: CFHost, _ clientCB: CFHostClientCallBack?, _ cli
 extern Boolean CFHostSetClient(CFHostRef theHost, CFHostClientCallBack clientCB, CFHostClientContext *clientContext);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if the association could be set or unset, otherwise `FALSE`.
 
-#### Discussion
+## Discussion
 
 The callback function specified by `clientCB` will be called when a resolution completes or is cancelled.
 
-##### Special Considerations
+### Special Considerations
 
 This function is thread safe.
 

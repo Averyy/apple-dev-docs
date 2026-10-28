@@ -19,7 +19,7 @@ func recordClass(fromUniqueId uniqueId: String!) -> String!
 - (NSString *) recordClassFromUniqueId:(NSString *) uniqueId;
 ```
 
-#### Return Value
+## Return Value
 
 The name of the class of the record, for example `ABPerson`.
 

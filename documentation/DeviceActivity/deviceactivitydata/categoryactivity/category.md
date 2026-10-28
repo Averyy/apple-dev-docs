@@ -17,7 +17,7 @@ Access the category of the activity.
 var category: ActivityCategory
 ```
 
-#### Discussion
+## Discussion
 
 Your device activity report extension can access the category’s [`localizedDisplayName`](../../../ManagedSettings/activitycategory/localizeddisplayname.md).
 

@@ -21,7 +21,7 @@ A type that represents a Reality Composer file.
 static var realityFile: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `com.apple.reality`.
 

@@ -17,7 +17,7 @@ The distance by which the vertices are extended outwards along the direction of 
 var bias: Float
 ```
 
-#### Discussion
+## Discussion
 
 This can be used to make a mesh collider slightly larger than its visual counterpart in order to avoid z-fighting.
 

@@ -21,7 +21,7 @@ func leaveChannel(channelUUID: UUID)
 - (void) leaveChannelWithUUID:(NSUUID *) channelUUID;
 ```
 
-#### Discussion
+## Discussion
 
 If successful, you receive a callback from [`channelManager(_:didLeaveChannel:reason:)`](../ptchannelmanagerdelegate/channelmanager%28_,didleavechannel,reason%29.md) with `PTChannelLeaveReason.programmaticRequest`; otherwise, you receive a failure reason through [`channelManager(_:failedToLeaveChannel:error:)`](../ptchannelmanagerdelegate/channelmanager%28_,failedtoleavechannel,error%29.md).
 

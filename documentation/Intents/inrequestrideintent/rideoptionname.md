@@ -32,7 +32,7 @@ var rideOptionName: INSpeakableString? { get }
 @property (atomic, copy, readonly, nullable) INSpeakableString * rideOptionName;
 ```
 
-#### Discussion
+## Discussion
 
 If the user requested a specific type of ride, this property specifies the name of that ride. Map this string to the [`INRideOption`](../inrideoption.md) object that most closely represents your company’s available rides. You can then use the ride option information to select a vehicle to fulfill the ride request.
 

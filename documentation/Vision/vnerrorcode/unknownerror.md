@@ -16,7 +16,7 @@ case unknownError
 VNErrorUnknownError
 ```
 
-#### Discussion
+## Discussion
 
 For more information about the error, see the error description and domain.
 

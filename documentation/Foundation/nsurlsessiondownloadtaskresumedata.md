@@ -29,7 +29,7 @@ extern NSString * const NSURLSessionDownloadTaskResumeData;
 
 - [Pausing and resuming downloads](./pausing-and-resuming-downloads.md)
 
-#### Discussion
+## Discussion
 
 When a transfer error occurs or when you call the [`cancel(byProducingResumeData:)`](./urlsessiondownloadtask/cancel%28byproducingresumedata%29.md) method, the delegate object or completion handler gets an [`NSError`](./nserror.md) object. If the transfer is resumable, that error object’s `userInfo` dictionary contains a value for this key. To resume the transfer, your app can pass that value to the [`downloadTask(withResumeData:)`](./urlsession/downloadtask%28withresumedata%29.md) or [`downloadTask(withResumeData:completionHandler:)`](./urlsession/downloadtask%28withresumedata,completionhandler%29.md) method.
 

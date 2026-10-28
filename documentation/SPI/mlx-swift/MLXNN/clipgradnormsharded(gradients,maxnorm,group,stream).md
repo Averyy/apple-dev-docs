@@ -17,11 +17,11 @@ Clip the global norm of gradients that are sharded across a group.
 func clipGradNormSharded(gradients: ModuleParameters, maxNorm: Float, group: MLXDistributed.Group? = nil, stream: StreamOrDevice = .cpu) throws -> (ModuleParameters, MLXArray)
 ```
 
-#### Return Value
+## Return Value
 
 The rescaled shard and the global gradient norm
 
-#### Discussion
+## Discussion
 
 This is the sharded counterpart of `clipGradNorm` in MLXOptimizers: no process holds the whole gradient, so the local squared norms are summed across the group before anything is rescaled.
 

@@ -22,11 +22,11 @@ init(delegate: (any CBPeripheralManagerDelegate)?, queue: dispatch_queue_t?, opt
 - (instancetype) initWithDelegate:(id<CBPeripheralManagerDelegate>) delegate queue:(dispatch_queue_t) queue options:(NSDictionary<NSString *,id> *) options;
 ```
 
-#### Return Value
+## Return Value
 
 Returns a newly initialized peripheral manager.
 
-#### Discussion
+## Discussion
 
 This method is the designated initializer for the [`CBPeripheralManager`](../cbperipheralmanager.md) class.
 

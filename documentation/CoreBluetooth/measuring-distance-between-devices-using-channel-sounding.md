@@ -12,7 +12,7 @@ Measure the distance between two Bluetooth Low Energy devices in real time with 
 - Mac Catalyst 27.0+
 - Xcode 27.0+
 
-#### Overview
+## Overview
 
 This sample app demonstrates how to use the Channel Sounding API to continuously measure the physical distance between an iOS device and any Bluetooth Low Energy peripheral that supports Bluetooth 6.3 and Channel Sounding. The app uses [AccessorySetupKit](../AccessorySetupKit/AccessorySetupKit.md) to pair the peripheral, [Core Bluetooth](./CoreBluetooth.md) to establish the *ACL connection* (the standard Bluetooth data link between devices), and then starts a Channel Sounding session as the initiator to stream live distance estimates to the screen. The app supports two measurement paths: Core Bluetooth and Nearby Interaction.
 
@@ -20,7 +20,7 @@ The app walks through each stage of the workflow: accessory pairing via [Accesso
 
 > **Note**: This sample code project is associated with WWDC26 session 369: [Find your accessory with Bluetooth Channel Sounding](https://developer.apple.com/videos/play/wwdc2026/369/).
 
-#### Configure the sample code project
+## Configure the sample code project
 
 Before running the sample code project in Xcode:
 
@@ -28,7 +28,7 @@ Before running the sample code project in Xcode:
 - Use a Bluetooth Low Energy peripheral that supports Bluetooth 6.3 and Channel Sounding as the responder. The responder can be any compatible BLE device.
 - Ensure your information property list includes the required [AccessorySetupKit](../AccessorySetupKit/AccessorySetupKit.md) entries for the Bluetooth identifiers your peripheral uses.
 
-#### Add and pair the accessory using AccessorySetupKit
+## Add and pair the accessory using AccessorySetupKit
 
 [AccessorySetupKit](../AccessorySetupKit/AccessorySetupKit.md) is the required pairing mechanism for Channel Sounding. It presents a system-managed picker that lets a person select and pair the peripheral, while keeping Bluetooth identifiers private from the app until the person explicitly grants access. Importantly, the system restricts Channel Sounding sessions to [AccessorySetupKit](../AccessorySetupKit/AccessorySetupKit.md)-paired devices. The system denies an attempt to start a session with a peripheral that wasn’t paired through [AccessorySetupKit](../AccessorySetupKit/AccessorySetupKit.md).
 
@@ -100,7 +100,7 @@ private func handleAccessoryEvent(_ event: ASAccessoryEvent) {
 }
 ```
 
-#### Connect the peripheral using Core Bluetooth
+## Connect the peripheral using Core Bluetooth
 
 After [AccessorySetupKit](../AccessorySetupKit/AccessorySetupKit.md) provides the peripheral’s `bluetoothIdentifier`, the app initializes [`CBCentralManager`](./cbcentralmanager.md), instead of at app launch. Initializing a [`CBCentralManager`](./cbcentralmanager.md) before [AccessorySetupKit](../AccessorySetupKit/AccessorySetupKit.md) completes pairing triggers the system Bluetooth permission prompt, which prevents the [AccessorySetupKit](../AccessorySetupKit/AccessorySetupKit.md) picker from appearing.
 
@@ -141,7 +141,7 @@ private func retrieveAndConnect(identifier: UUID, name: String) {
 
 The app stores a strong reference to the peripheral in `connectedPeripheral` before calling `connect`, keeping the object alive until the connection completes.
 
-#### Start a Channel Sounding session
+## Start a Channel Sounding session
 
 The app supports two measurement paths, selectable with a segmented control:
 
@@ -211,7 +211,7 @@ func startChannelSoundingThroughNearbyInteraction(peripheral: CBPeripheral) {
 }
 ```
 
-#### Process incoming distance measurements
+## Process incoming distance measurements
 
 A small extension on [`CBChannelSoundingProcedureResults`](./cbchannelsoundingprocedureresults.md) maps the raw `distance` property to an optional. The API returns a negative sentinel value when no valid measurement is available; the extension ensures the rest of the app only handles real readings:
 
@@ -259,7 +259,7 @@ if bluetooth.channelSoundingMethod == .nearbyInteraction,
 }
 ```
 
-#### Stop the session and clean up
+## Stop the session and clean up
 
 When it’s time to stop the session, `stopChannelSounding()` delegates to the active path and transitions the connection state back to `.connected`:
 

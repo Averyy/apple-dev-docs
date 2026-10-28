@@ -21,7 +21,7 @@ func prepare()
 - (void) prepare;
 ```
 
-#### Discussion
+## Discussion
 
 When you call this method, the generator is placed into a prepared state for a short period of time. While the generator is prepared, you can trigger feedback with lower latency.
 

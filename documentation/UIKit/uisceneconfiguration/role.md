@@ -23,7 +23,7 @@ var role: UISceneSession.Role { get }
 @property (nonatomic, readonly) UISceneSessionRole role;
 ```
 
-#### Discussion
+## Discussion
 
 UIKit populates this property with an appropriate role value based on the contents of your app’s `Info.plist` file. You also specify this value when you create a new scene-configuration object.
 

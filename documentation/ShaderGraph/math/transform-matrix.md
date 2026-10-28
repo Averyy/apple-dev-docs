@@ -14,7 +14,7 @@ Transforms a vector by a matrix.
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 **Transform Matrix (vector2f matrix3x3f)**:
 
@@ -71,7 +71,7 @@ Transforms a vector by a matrix.
 | --- | --- |
 | `Out` | Vector3f |
 
-#### Parameter descriptions
+## Parameter descriptions
 
 - **`In`**: The vector to transform. This node appends an addtional component onto the `In` vector with a value of `1.0` to make the vector match the dimensions of the `Mat` matrix. This additional compenent is removed after the transformation completes.
 - **`Mat`**: The matrix by which to transform the `In` vector; the default is the identity matrix.

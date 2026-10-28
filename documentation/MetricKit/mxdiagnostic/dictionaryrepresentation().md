@@ -25,7 +25,7 @@ func dictionaryRepresentation() -> [AnyHashable : Any]
 - (NSDictionary *) dictionaryRepresentation;
 ```
 
-#### Return Value
+## Return Value
 
 A [`Dictionary`](../../Swift/dictionary.md) (Swift) or [`NSDictionary`](../../Foundation/nsdictionary.md) (Objective-C) object containing the JSON representation of the contents of the diagnostic.
 

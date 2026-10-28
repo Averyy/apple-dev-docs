@@ -20,7 +20,7 @@ func detach()
 - (void) detach;
 ```
 
-#### Discussion
+## Discussion
 
 This method is applicable to `NSXMLNode` objects representing elements, text, comments, processing instructions, attributes, and namespaces. Once the node object is detached, you can add it as a child node of another parent.
 

@@ -19,7 +19,7 @@ Sample from a categorical distribution.
 func categorical(_ logits: MLXArray, axis: Int = -1, shape: [Int]? = nil, key: MLXArray? = nil, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 The values are sampled from the categorical distribution specified by the unnormalized values in `logits`.   If the `shape` is not specified the result shape will be the same shape as `logits` with the `axis` dimension removed.
 

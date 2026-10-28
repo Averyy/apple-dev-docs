@@ -24,7 +24,7 @@ class UINavigationBarAppearance
 @interface UINavigationBarAppearance : UIBarAppearance
 ```
 
-#### Overview
+## Overview
 
 After creating a [`UINavigationBarAppearance`](./uinavigationbarappearance.md) object, use the methods and properties of this class to specify the appearance you want for items in the navigation bar. Use the inherited properties from [`UIBarAppearance`](./uibarappearance.md) to configure the background and shadow attributes of the navigation bar itself.
 

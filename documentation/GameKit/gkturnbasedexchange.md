@@ -30,7 +30,7 @@ class GKTurnBasedExchange
 - [Exchanging data between players in turn-based games](./exchanging-data-between-players-in-turn-based-games.md)
 - [Sending messages to players in turn-based games](./sending-messages-to-players-in-turn-based-games.md)
 
-#### Overview
+## Overview
 
 GameKit sends exchange objects to [`GKTurnBasedEventListener`](./gkturnbasedeventlistener.md) protocol methods when the local player receives an exchange request or recipients reply to an exchange request. The exchange object encapsulates your custom game data that you want to communicate to other players.
 

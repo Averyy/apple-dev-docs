@@ -25,7 +25,7 @@ class func correctionCheckingResult(range: NSRange, replacementString: String) -
 + (NSTextCheckingResult *) correctionCheckingResultWithRange:(NSRange) range replacementString:(NSString *) replacementString;
 ```
 
-#### Return Value
+## Return Value
 
 Returns an `NSTextCheckingResult` with the specified [`range`](./range.md) and a [`resultType`](./resulttype.md) of [`spelling`](./checkingtype/spelling.md).
 

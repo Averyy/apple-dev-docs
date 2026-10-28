@@ -17,7 +17,7 @@ The signature is missing the app item identifier for the advertised app, in the 
 static var signatureMissingAppAdamId: SKAdTestError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 Be sure to include the app item identifier for the advertised app when you create and validate an ad impression in the testing environment.
 

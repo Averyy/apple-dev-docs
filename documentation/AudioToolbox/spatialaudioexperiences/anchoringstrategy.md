@@ -15,7 +15,7 @@ The center of a head-tracked spatial experience.
 enum AnchoringStrategy
 ```
 
-#### Overview
+## Overview
 
 For mono sounds, this defines the sound’s single location. For multi-channel sounds this defines the position of the channel layout’s front with all channels placed around the user relative to that front.
 

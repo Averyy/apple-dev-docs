@@ -26,11 +26,11 @@ func AUGraphUninitialize(_ inGraph: AUGraph) -> OSStatus
 extern OSStatus AUGraphUninitialize(AUGraph inGraph);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 
-#### Discussion
+## Discussion
 
 This function uninitializes the audio units that compose the audio processing graph.
 

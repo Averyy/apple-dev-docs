@@ -20,7 +20,7 @@ class var withAllAvailableDescriptors: NSFontCollection { get }
 @property (class, copy, readonly) NSFontCollection * fontCollectionWithAllAvailableDescriptors;
 ```
 
-#### Return Value
+## Return Value
 
 The collection of all fonts available to the current application.
 

@@ -25,7 +25,7 @@ var firstIndex: Int { get }
 @property (readonly) NSUInteger firstIndex;
 ```
 
-#### Discussion
+## Discussion
 
 First index in the index set or NSNotFound when the index set is empty.
 

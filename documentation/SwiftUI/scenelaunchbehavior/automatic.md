@@ -16,7 +16,7 @@ The automatic behavior.
 static let automatic: SceneLaunchBehavior
 ```
 
-#### Discussion
+## Discussion
 
 A scene with the automatic behavior will present itself on launch if it is the first scene defined by an app and no other scenes have presented themselves.
 

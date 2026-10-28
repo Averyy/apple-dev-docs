@@ -5,13 +5,13 @@
 
 Update your web server and website to send push notifications that work in Safari, other browsers, and web apps, following cross-browser standards.
 
-#### Overview
+## Overview
 
 When important, time-sensitive events occur, inform your website users with push notifications you send from your server. To do this, add support for *web push* — push notifications that use the cross-browser Push API, Notifications API, Badging API, and Service Worker standards. For more information on these standards, see [the W3C document on Push API standards](https://www.w3.org/TR/push-api/). Add web push to Home Screen web apps in iOS 16.4 or later and Webpages in Safari 16 for macOS 13 or later.
 
 To send web push notifications, update your webpage to subscribe users and handle notifications, and update your server to send push notifications. If you’re already sending push notifications with web push for other browsers, confirm that your server fulfills Safari’s requirements so that your existing implementation works for webpages in macOS Safari and web apps. You don’t need to join the Apple Developer Program to send web push notifications.
 
-##### Enable push notifications for your webpage or web app
+### Enable push notifications for your webpage or web app
 
 To enable push notifications, follow this general approach in your webpage or web app:
 
@@ -24,7 +24,7 @@ Safari doesn’t support invisible push notifications. Present push notification
 
 For more information on enabling web push in your webpage, see [Push API](https://developer.mozilla.org/en-US/docs/Web/API/Push_API) in Mozilla documentation.
 
-##### Prepare your server to send push notifications
+### Prepare your server to send push notifications
 
 Before you add code to send push notifications, make these preparations on your server:
 
@@ -44,7 +44,7 @@ Then add code to your server to:
 
 For more information on preparing your server to send push notifications, see [Push API](https://developer.mozilla.org/en-US/docs/Web/API/Push_API) in Mozilla documentation.
 
-##### Send your notification request to the recipient’s endpoint
+### Send your notification request to the recipient’s endpoint
 
 Prepare your push notification request according to the specification. Then send the notification request over HTTP/1.1 or HTTP/2 to the endpoint you stored from the recipient’s push registration.
 
@@ -58,13 +58,13 @@ Include the standard headers with your push notification request:
 - **`Topic`**: Optional identifier that the push service uses to coalesce notifications. Use a maximum of 32 characters from the URL or filename-safe Base64 characters sets.
 - **`Urgency`**: Indication of whether to send the notification immediately or prioritize the recipient’s device power considerations for delivery. Provide one of the following values: `very-low`, `low`, `normal`, or `high`. To attempt to deliver the notification immediately, specify `high`.
 
-##### Display badge counts for your web app
+### Display badge counts for your web app
 
 To display badge counts on your web app’s icon, use `navigator.setAppBadge` in your JavaScript to set a badge count. Clear the badge count with `navigator.clearAppBadge`.
 
 Users can configure badging permissions for your Home Screen web app in Notifications settings in iOS 16.4 or later.
 
-##### Review responses for push notification errors
+### Review responses for push notification errors
 
 The push notification service provides a response for each push notification request. Inspect each response to see how the push service handled your push request. The response headers include the HTTP status code and the `apns-id`, which uniquely identifies your push request. The HTTP status code indicates if the request succeeds; if the request fails, the status code identifies the type of error:
 

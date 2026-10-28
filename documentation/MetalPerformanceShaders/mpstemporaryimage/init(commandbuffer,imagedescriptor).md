@@ -24,11 +24,11 @@ convenience init(commandBuffer: any MTLCommandBuffer, imageDescriptor: MPSImageD
 + (instancetype) temporaryImageWithCommandBuffer:(id<MTLCommandBuffer>) commandBuffer imageDescriptor:(const MPSImageDescriptor *) imageDescriptor;
 ```
 
-#### Return Value
+## Return Value
 
 A valid [`MPSTemporaryImage`](../mpstemporaryimage.md) object.
 
-#### Discussion
+## Discussion
 
 The temporary image will be released when the command buffer is committed. The underlying texture will become invalid before this time due to the action of the [`readCount`](./readcount.md) property.
 

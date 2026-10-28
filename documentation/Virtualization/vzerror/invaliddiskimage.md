@@ -15,7 +15,7 @@ An invalid disk-image error.
 static var invalidDiskImage: VZError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 This error occurs when you supply a disk image in an unrecognized format, or when there’s damage to the disk image, or the image is invalid.
 

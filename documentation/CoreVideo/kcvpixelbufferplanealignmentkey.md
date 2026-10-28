@@ -25,7 +25,7 @@ let kCVPixelBufferPlaneAlignmentKey: CFString
 extern CFStringRef const kCVPixelBufferPlaneAlignmentKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is of type [`CFNumber`](../CoreFoundation/cfnumber.md). Planes start on a byte number that’s a multiple of this value.
 

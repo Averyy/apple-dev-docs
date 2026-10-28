@@ -19,7 +19,7 @@ init(leftExpressions: [NSExpression], rightExpressions: [NSExpression], modifier
 - (instancetype) initWithLeftExpressions:(NSArray<NSExpression *> *) leftExpressions rightExpressions:(NSArray<NSExpression *> *) rightExpressions modifier:(NSComparisonPredicateModifier) modifier operators:(NSArray<NSNumber *> *) operators options:(NSUInteger) options;
 ```
 
-#### Return Value
+## Return Value
 
 A row template of the “pop-up-pop-up-pop-up” form, with the left and right pop-ups representing the left and right expression arrays `leftExpressions` and `rightExpressions`, and the center pop-up representing the operators.
 

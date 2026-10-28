@@ -20,7 +20,7 @@ class ARBodyTrackingConfiguration
 @interface ARBodyTrackingConfiguration : ARConfiguration
 ```
 
-#### Overview
+## Overview
 
 When ARKit identifies a person in the rear camera’s feed, it calls [`session(_:didAdd:)`](./arsessiondelegate/session%28_,didadd%29.md), passing an [`ARBodyAnchor`](./arbodyanchor.md) you can use to track the body’s movement.
 

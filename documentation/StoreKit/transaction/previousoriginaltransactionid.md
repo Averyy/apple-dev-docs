@@ -22,7 +22,7 @@ The original transaction ID of the subscription this one replaced when a custome
 var previousOriginalTransactionID: UInt64? { get }
 ```
 
-#### Discussion
+## Discussion
 
 For a bundle transaction, this is the standalone subscription’s original transaction ID, while for a standalone transaction, this is the bundle’s original transaction ID. This field is `nil` if no such switch occurred.
 

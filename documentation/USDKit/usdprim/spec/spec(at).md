@@ -20,7 +20,7 @@ Returns the spec at the given path within this prim.
 func spec(at path: USDLayer.Path) -> USDLayer.Spec?
 ```
 
-#### Return Value
+## Return Value
 
 The spec, or `nil` if no spec is authored at `path`.
 

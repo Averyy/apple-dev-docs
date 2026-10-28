@@ -23,7 +23,7 @@ optional func applicationWillTerminate(_ application: UIApplication)
 - (void) applicationWillTerminate:(UIApplication *) application;
 ```
 
-#### Discussion
+## Discussion
 
 This method lets your app know that it is about to be terminated and purged from memory entirely. You should use this method to perform any final clean-up tasks for your app, such as freeing shared resources, saving user data, and invalidating timers. Your implementation of this method has approximately five seconds to perform any tasks and return. If the method does not return before time expires, the system may terminate the process altogether.
 

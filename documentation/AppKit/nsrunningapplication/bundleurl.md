@@ -19,7 +19,7 @@ var bundleURL: URL? { get }
 @property (copy, readonly, nullable) NSURL * bundleURL;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is `nil` of the application does not have a bundle structure.
 

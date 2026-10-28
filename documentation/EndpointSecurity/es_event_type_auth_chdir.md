@@ -20,7 +20,7 @@ var ES_EVENT_TYPE_AUTH_CHDIR: es_event_type_t { get }
 ES_EVENT_TYPE_AUTH_CHDIR
 ```
 
-#### Discussion
+## Discussion
 
 This identifier corresponds to the [`es_events_t`](./es_events_t.md) union member [`chdir`](./es_events_t/chdir.md), which has the type [`es_event_chdir_t`](./es_event_chdir_t.md).
 

@@ -20,7 +20,7 @@ Creates a stage from in-memory data in a given format.
 init(_ buffer: Data, type: UTType, loadingPayloads: USDStage.InitialLoadRule = .all) throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if the data cannot be read as a layer of the given type.
 

@@ -23,7 +23,7 @@ func removeChildBehavior(_ behavior: UIDynamicBehavior)
 - (void) removeChildBehavior:(UIDynamicBehavior *) behavior;
 ```
 
-#### Discussion
+## Discussion
 
 This method applies only to custom subclasses of the [`UIDynamicBehavior`](../uidynamicbehavior.md) class. UIKit concrete dynamic behaviors (such as an instance of [`UICollisionBehavior`](../uicollisionbehavior.md)) cannot have child behaviors.
 

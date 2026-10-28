@@ -23,7 +23,7 @@ case undetermined
 AVAudioSessionRecordPermissionUndetermined
 ```
 
-#### Discussion
+## Discussion
 
 A permission of [`AVAudioSession.RecordPermission.undetermined`](./undetermined.md) typically means that your app hasn’t requested, or is in the process of requesting, recording permission.
 

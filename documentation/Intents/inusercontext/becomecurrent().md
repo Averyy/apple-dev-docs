@@ -24,7 +24,7 @@ func becomeCurrent()
 - (void) becomeCurrent;
 ```
 
-#### Discussion
+## Discussion
 
 Call this function when your app becomes active or there’s a significant change in the user’s status or library.
 

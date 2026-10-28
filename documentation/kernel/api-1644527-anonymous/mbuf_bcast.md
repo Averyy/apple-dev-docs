@@ -13,7 +13,7 @@
 MBUF_BCAST = 0x0100
 ```
 
-#### Discussion
+## Discussion
 
 Indicates this packet will be sent or was received as a brodcast.
 

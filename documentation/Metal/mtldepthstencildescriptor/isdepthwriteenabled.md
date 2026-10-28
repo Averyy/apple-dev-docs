@@ -24,7 +24,7 @@ var isDepthWriteEnabled: Bool { get set }
 @property (nonatomic, getter=isDepthWriteEnabled) BOOL depthWriteEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`false`](../../Swift/false.md), which indicates the depth attachment is read-only.
 

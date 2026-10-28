@@ -29,7 +29,7 @@ func contentAppMessage(with params: MTRContentAppObserverClusterContentAppMessag
 - (void) contentAppMessageWithParams:(MTRContentAppObserverClusterContentAppMessageParams *) params completion:(void (^)(MTRContentAppObserverClusterContentAppMessageResponseParams *data, NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Upon receipt, the data field MAY be parsed and interpreted.
 

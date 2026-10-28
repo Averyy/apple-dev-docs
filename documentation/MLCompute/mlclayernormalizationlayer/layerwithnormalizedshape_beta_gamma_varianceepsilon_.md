@@ -19,7 +19,7 @@ Creates a normalization layer with a shape, beta and gamma tensors, and variance
 + (instancetype) layerWithNormalizedShape:(NSArray<NSNumber *> *) normalizedShape beta:(MLCTensor *) beta gamma:(MLCTensor *) gamma varianceEpsilon:(float) varianceEpsilon;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`MLCLayerNormalizationLayer`](../mlclayernormalizationlayer.md) instance.
 

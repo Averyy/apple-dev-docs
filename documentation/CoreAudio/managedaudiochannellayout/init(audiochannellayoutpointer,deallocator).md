@@ -21,7 +21,7 @@ Creates a new `ManagedAudioChannelLayout` from an existing pointer to an `AudioC
 init(audioChannelLayoutPointer: AudioChannelLayout.UnsafePointer, deallocator: @escaping (AudioChannelLayout.UnsafePointer) -> Void)
 ```
 
-#### Discussion
+## Discussion
 
 Any mutation on the new `ManagedAudioChannelLayout` will perform a copy of the `audioChannelLayoutPointer` values.
 

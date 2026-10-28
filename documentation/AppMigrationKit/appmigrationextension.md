@@ -16,7 +16,7 @@ An app extension you extend to participate in data export and import.
 protocol AppMigrationExtension : AppExtension, Sendable
 ```
 
-#### Overview
+## Overview
 
 During migration, the system calls your extension to collect and export its data to the receiving device. On import, the system calls your app extension just after app installation, but before the app is actually launchable.
 

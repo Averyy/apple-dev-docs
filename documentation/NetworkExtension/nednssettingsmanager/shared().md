@@ -23,7 +23,7 @@ class func shared() -> NEDNSSettingsManager
 + (NEDNSSettingsManager *) sharedManager;
 ```
 
-#### Return Value
+## Return Value
 
 The DNS settings manager instance for the calling application.
 

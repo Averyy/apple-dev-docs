@@ -22,7 +22,7 @@ class NEFilterControlProvider
 @interface NEFilterControlProvider : NEFilterProvider
 ```
 
-#### Overview
+## Overview
 
 The Filter Control Provider’s primary responsibility is to provide information to the associated Filter Data Provider so that it can perform its task of accurately filtering network content. There are several ways in which the Filter Control Provider provides data to the associated Filter Data Provider:
 
@@ -32,7 +32,7 @@ The Filter Control Provider’s primary responsibility is to provide information
 
 > ❗ **Important**:  To use the [`NEFilterControlProvider`](./nefiltercontrolprovider.md) class, you must enable the Network Extensions capability in Xcode and select the Content Filter capability. See [Configure network extensions](http://help.apple.com/xcode/mac/current/#/dev0b2ef6f08).
 
-##### Creating a Filter Control Provider Extension
+### Creating a Filter Control Provider Extension
 
 Filter Control Providers run as App Extensions for the `com.apple.networkextension.filter-control` extension point.
 

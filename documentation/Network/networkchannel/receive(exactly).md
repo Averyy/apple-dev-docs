@@ -23,7 +23,7 @@ func receive(exactly: Int) async throws -> ApplicationProtocol.Message<Data>
 
 Available when `ApplicationProtocol` conforms to `StreamProtocol`.
 
-#### Discussion
+## Discussion
 
 This may be called before the connection is ready, in which case the receive request will be enqueued until the connection is ready.
 

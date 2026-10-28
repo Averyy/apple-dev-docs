@@ -31,7 +31,7 @@ class func loadLeaderboards() async throws -> [GKLeaderboard]
 + (void) loadLeaderboardsWithCompletionHandler:(void (^)(NSArray<GKLeaderboard *> *leaderboards, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Use this class method to retrieve the list of leaderboards you configure in App Store Connect. Use the properties of each leaderboard object, especially the [`category`](./category.md) and [`title`](./title.md) properties, to learn more about the leaderboard.
 

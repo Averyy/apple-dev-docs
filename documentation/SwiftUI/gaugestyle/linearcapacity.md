@@ -23,7 +23,7 @@ A gauge style that displays a bar that fills from leading to trailing edges as t
 
 Available when `Self` is `LinearCapacityGaugeStyle`.
 
-#### Discussion
+## Discussion
 
 Apply this style to a [`Gauge`](../gauge.md) or to a view hierarchy that contains gauges using the [`gaugeStyle(_:)`](../view/gaugestyle%28_%29.md) modifier:
 

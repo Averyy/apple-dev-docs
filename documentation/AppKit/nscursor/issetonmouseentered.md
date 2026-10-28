@@ -21,7 +21,7 @@ var isSetOnMouseEntered: Bool { get }
 @property (readonly, getter=isSetOnMouseEntered) BOOL setOnMouseEntered;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the receiver will become current when it receives a [`mouseEntered(with:)`](./mouseentered%28with%29.md) message; otherwise, [`false`](../../Swift/false.md).
 

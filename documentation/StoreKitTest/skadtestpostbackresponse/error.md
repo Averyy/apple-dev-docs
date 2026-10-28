@@ -21,7 +21,7 @@ var error: (any Error)? { get set }
 @property (nonatomic, strong, nullable) NSError * error;
 ```
 
-#### Discussion
+## Discussion
 
 If the test session encounters an error when attempting to send the test postback with [`flushPostbacks(responses:)`](../skadtestsession/flushpostbacks%28responses%29.md), this property contains an [`SKAdTestError`](../skadtesterror.md) error.
 

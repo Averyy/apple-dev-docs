@@ -12,11 +12,11 @@ virtual bool isEqualTo(
  const OSMetaClassBase *anObject) const;
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the two objects are equivalent, `false` otherwise.
 
-#### Overview
+## Overview
 
 An OSArray is considered equal to another object if that object is derived from OSArray and contains the same or equivalent objects.
 

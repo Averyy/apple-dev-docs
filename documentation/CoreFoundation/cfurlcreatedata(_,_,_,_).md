@@ -25,11 +25,11 @@ func CFURLCreateData(_ allocator: CFAllocator!, _ url: CFURL!, _ encoding: CFStr
 extern CFDataRefCFURLCreateData(CFAllocatorRef allocator, CFURLRef url, CFStringEncoding encoding, Boolean escapeWhitespace);
 ```
 
-#### Return Value
+## Return Value
 
 A new `CFData` object containing the content of `url`. Ownership follows the create rule. See [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 This function escapes any character that is not 7-bit ASCII with the byte-code for the given encoding. If `escapeWhitespace` is `true`, whitespace characters (’ ’, ‘\t’, ‘\r’, ‘\n’) will be escaped as well. This is desirable if you want to embed the URL into a larger text stream like HTML.
 

@@ -19,11 +19,11 @@ func disconnect() -> OBEXError
 - (OBEXError) disconnect;
 ```
 
-#### Return Value
+## Return Value
 
 kOBEXSuccess, kOBEXSessionNotConnectedError, or kOBEXSessionBusyError initially. Further results returned through the fileTransferServicesDisconnectionComplete: delegate method if initially successful.
 
-#### Discussion
+## Discussion
 
 The user can manually disconnect the OBEXSession from the remote device if they want to. OBEXFileTransferServices will disconnect the OBEXSession at release only if it was responsible for opening the connection via a connect method.
 

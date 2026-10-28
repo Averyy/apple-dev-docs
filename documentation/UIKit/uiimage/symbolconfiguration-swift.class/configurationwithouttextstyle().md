@@ -24,7 +24,7 @@ func configurationWithoutTextStyle() -> Self
 - (instancetype) configurationWithoutTextStyle;
 ```
 
-#### Return Value
+## Return Value
 
 A new symbol configuration object without the text style information.
 

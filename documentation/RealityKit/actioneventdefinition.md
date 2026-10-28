@@ -20,7 +20,7 @@ Defines an action event interval, and any associated parameters.
 struct ActionEventDefinition<ActionType> where ActionType : EntityAction
 ```
 
-#### Overview
+## Overview
 
 Start, update, end, and skipped events are raised based on one or more event intervals defined by the action animation.
 

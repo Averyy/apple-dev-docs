@@ -37,7 +37,7 @@ object lastTransactionsItem
 ## See Also
 
 ### Object and Data Types
-- [subscriptionGroupIdentifier](./subscriptiongroupidentifieritem/subscriptiongroupidentifier.md)
+- subscriptionGroupIdentifier
 
 
 ---

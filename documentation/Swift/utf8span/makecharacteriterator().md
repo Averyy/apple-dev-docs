@@ -21,7 +21,7 @@ Returns an iterator that will construct `Character`s from the underlying UTF-8 c
 func makeCharacterIterator() -> UTF8Span.CharacterIterator
 ```
 
-#### Discussion
+## Discussion
 
 The resulting iterator has the same lifetime constraints as `self`.
 

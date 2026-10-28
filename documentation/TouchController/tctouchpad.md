@@ -21,7 +21,7 @@ class TCTouchpad
 @interface TCTouchpad : NSObject
 ```
 
-#### Overview
+## Overview
 
 This is mirrored by a `GCControllerDirectionPad` on the associated `GCController` instance.
 

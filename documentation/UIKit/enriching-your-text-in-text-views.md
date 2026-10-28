@@ -14,7 +14,7 @@ Support line numbering, section collapsing, inline attachment caching, exclusion
 - visionOS 27.0+
 - Xcode 27.0+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with the following WWDC sessions:
 >

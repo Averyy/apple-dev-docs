@@ -21,7 +21,7 @@ Block special device
 static var blockSpecial: FileType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding C constant is `S_IFBLK`.
 

@@ -19,7 +19,7 @@ object Context.Data
 
 - [Preparing Context Data](../preparing-context-data.md)
 
-#### Discussion
+## Discussion
 
 The description for each field includes a link to the equivalent property of the [`CLSContext`](../../ClassKit/clscontext.md) class.
 

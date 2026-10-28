@@ -21,7 +21,7 @@ A style displaying only the time component for a date.
 static let time: Text.DateStyle
 ```
 
-#### Discussion
+## Discussion
 
 ```swift
 Text(event.startDate, style: .time)

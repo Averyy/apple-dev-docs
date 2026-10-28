@@ -24,7 +24,7 @@ class NSCollectionLayoutBoundarySupplementaryItem
 @interface NSCollectionLayoutBoundarySupplementaryItem : NSCollectionLayoutSupplementaryItem
 ```
 
-#### Overview
+## Overview
 
 A boundary supplementary item is a specialized type of supplementary item ([`NSCollectionLayoutSupplementaryItem`](./nscollectionlayoutsupplementaryitem.md)). You use boundary supplementary items to add headers or footers to a section of a collection view or the entire collection view.
 

@@ -21,7 +21,7 @@ The first day of the week as represented by this locale.
 var firstDayOfWeek: Locale.Weekday?
 ```
 
-#### Discussion
+## Discussion
 
 This value is the preferred first day of the week to show in a calendar view. It isn’t necessarily the same as the first day after the weekend; don’t try to determine a first-day-of-week value from weekend information.
 

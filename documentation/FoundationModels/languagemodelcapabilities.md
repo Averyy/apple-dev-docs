@@ -20,7 +20,7 @@ A set of capabilities that a language model provides.
 struct LanguageModelCapabilities
 ```
 
-#### Overview
+## Overview
 
 Use this to declare what your model can do, like tool calling and guided generation:
 

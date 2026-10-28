@@ -25,11 +25,11 @@ func url(for directory: FileManager.SearchPathDirectory, in domain: FileManager.
 - (NSURL *) URLForDirectory:(NSSearchPathDirectory) directory inDomain:(NSSearchPathDomainMask) domain appropriateForURL:(NSURL *) url create:(BOOL) shouldCreate error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 The [`NSURL`](../nsurl.md) for the requested directory. When using Objective-C, if an error occurs, this method returns `nil` and assigns an appropriate error object to the `error` parameter.
 
-#### Discussion
+## Discussion
 
 You typically use this method to locate one of the standard system directories, such as the `Documents`, `Application Support` or `Caches` directories. After locating (or creating) the desired directory, this method returns the URL for that directory. If more than one appropriate directory exists in the specified domain, this method returns only the first one it finds.
 

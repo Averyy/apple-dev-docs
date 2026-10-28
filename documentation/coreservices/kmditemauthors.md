@@ -19,7 +19,7 @@ let kMDItemAuthors: CFString!
 const CFStringRef kMDItemAuthors;
 ```
 
-#### Discussion
+## Discussion
 
 The order of the authors is preserved, but does not represent the main author or relative importance of the authors. 
 

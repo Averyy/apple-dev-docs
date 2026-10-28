@@ -25,7 +25,7 @@ func CMTimeRangeMake(start: CMTime, duration: CMTime) -> CMTimeRange
 extern CMTimeRange CMTimeRangeMake(CMTime start, CMTime duration);
 ```
 
-#### Return Value
+## Return Value
 
 A valid time range structure, or an invalid time range if the duration’s epoch isn’t `0`.
 

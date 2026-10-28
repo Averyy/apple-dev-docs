@@ -20,7 +20,7 @@ Returns a string formatted to contain the data from a rectangle.
 extern NSString *NSStringFromCGRect(CGRect rect);
 ```
 
-#### Return Value
+## Return Value
 
 A string that corresponds to `rect`. See [`CGRectFromString`](./cgrectfromstring.md) for a discussion of the string format.
 

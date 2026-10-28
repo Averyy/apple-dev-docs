@@ -25,7 +25,7 @@ case regionMonitoringResponseDelayed
 kCLErrorRegionMonitoringResponseDelayed
 ```
 
-#### Discussion
+## Discussion
 
 The user information dictionary might contain an alternate region that you can monitor instead. Use [`kCLErrorUserInfoAlternateRegionKey`](../../kclerroruserinfoalternateregionkey.md) to retrieve the [`CLRegion`](../../clregion.md) object.
 

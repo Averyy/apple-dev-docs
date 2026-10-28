@@ -25,7 +25,7 @@ convenience init(ellipseIn rect: CGRect)
 + (instancetype) shapeNodeWithEllipseInRect:(CGRect) rect;
 ```
 
-#### Return Value
+## Return Value
 
 A new shape node.
 

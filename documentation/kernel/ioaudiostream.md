@@ -15,7 +15,7 @@ This class wraps a single sample buffer in an audio driver.
 class IOAudioStream : IOService
 ```
 
-#### Overview
+## Overview
 
 An IOAudioStream represents one hardware sample buffer as well as the direction of that buffer, the mix buffer that multiple clients mix into as well as a list of all of the formats to which this buffer can be set.
 

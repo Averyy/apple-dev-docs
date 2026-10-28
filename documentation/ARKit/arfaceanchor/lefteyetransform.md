@@ -20,7 +20,7 @@ var leftEyeTransform: simd_float4x4 { get }
 @property (nonatomic, assign, readonly) simd_float4x4 leftEyeTransform;
 ```
 
-#### Discussion
+## Discussion
 
 The translation aspect of this matrix indicates the position of the center of the eyeball, relative to the position represented by the anchor’s [`transform`](../aranchor/transform.md). The positive z-axis points from the center of the eyeball in the direction of the pupil.
 

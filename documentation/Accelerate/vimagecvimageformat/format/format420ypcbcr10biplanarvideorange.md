@@ -21,7 +21,7 @@ A video-range, two-plane YpCbCr 4:2:0 pixel format with 10 bits per channel.
 case format420YpCbCr10BiPlanarVideoRange
 ```
 
-#### Discussion
+## Discussion
 
 This format defines luminance and chrominance data in the range `64...940`, and stores 10 bits in the most significant bits of 16 bits.
 

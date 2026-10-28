@@ -6,7 +6,7 @@
 
 The region size part of a QuickDraw region.
 
-#### Overview
+## Overview
 
 The region size, region boundary box, and clipping region data fields constitute a QuickDraw region.
 

@@ -20,7 +20,7 @@ class WKApplication
 @interface WKApplication : NSObject
 ```
 
-#### Overview
+## Overview
 
 In Xcode 13 and earlier, the system divides a watchOS app into two sections:
 

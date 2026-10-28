@@ -27,7 +27,7 @@ var rootViewController: UIViewController? { get set }
 
 - [Managing content in your app’s windows](../managing-content-in-your-app-s-windows.md)
 
-#### Discussion
+## Discussion
 
 The root view controller provides the content view of the window. Assigning a view controller to this property (either programmatically or using Interface Builder) installs the view controller’s view as the content view of the window. The new content view is configured to track the window size, changing as the window size changes. If the window has an existing view hierarchy, the old views are removed before the new ones are installed.
 

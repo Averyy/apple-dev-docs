@@ -20,7 +20,7 @@ class func text(withStringValue stringValue: String) -> Any
 + (id) textWithStringValue:(NSString *) stringValue;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSXMLNode` object of kind [`XMLNode.Kind.text`](./kind-swift.enum/text.md) initialized with the textual `value` or `nil` if the object couldn’t be created.
 

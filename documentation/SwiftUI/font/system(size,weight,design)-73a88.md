@@ -29,7 +29,7 @@ static func system(size: CGFloat, weight: Font.Weight = .regular, design: Font.D
 static func system(size: CGFloat, weight: Font.Weight? = nil, design: Font.Design? = nil) -> Font
 ```
 
-#### Discussion
+## Discussion
 
 Use this function to create a system font by specifying the size and weight, and a type design together. The following styles the system font as 17 point, [`semibold`](./weight/semibold.md) text:
 

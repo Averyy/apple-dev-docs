@@ -26,11 +26,11 @@ convenience init(serviceType: String, session: MCSession)
 - (instancetype) initWithServiceType:(NSString *) serviceType session:(MCSession *) session;
 ```
 
-#### Return Value
+## Return Value
 
 Returns an initialized object, or `nil` if an error occurred.
 
-#### Discussion
+## Discussion
 
 This method throws an exception if the `session` or `serviceType` parameters do not contain valid objects or the specified Bonjour service type is not valid.
 

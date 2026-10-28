@@ -25,11 +25,11 @@ func collect<S>(_ strategy: Publishers.TimeGroupingStrategy<S>, options: S.Sched
 
 - [Processing Published Elements with Subscribers](../processing-published-elements-with-subscribers.md)
 
-#### Return Value
+## Return Value
 
 A publisher that collects elements by a given strategy, and emits a single array of the collection.
 
-#### Discussion
+## Discussion
 
 Use [`collect(_:options:)`](./collect%28_,options%29.md) to emit arrays of elements on a schedule specified by a [`Scheduler`](../scheduler.md) and `Stride` that you provide. At the end of each scheduled interval, the publisher sends an array that contains the items it collected. If the upstream publisher finishes before filling the buffer, the publisher sends an array that contains items it received. This may be fewer than the number of elements specified in the requested `Stride`.
 

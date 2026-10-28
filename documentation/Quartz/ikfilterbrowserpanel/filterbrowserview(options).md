@@ -19,11 +19,11 @@ func filterBrowserView(options inOptions: [AnyHashable : Any]! = [:]) -> IKFilte
 - (IKFilterBrowserView *) filterBrowserViewWithOptions:(NSDictionary *) inOptions;
 ```
 
-#### Return Value
+## Return Value
 
 A filter browser view that is configured as specified.
 
-#### Discussion
+## Discussion
 
 Use this method to add a view that contains the filter browser to your custom user interface. To dismiss the filter browser view, invoke the [`finish(_:)`](./finish%28_%29.md) method.
 

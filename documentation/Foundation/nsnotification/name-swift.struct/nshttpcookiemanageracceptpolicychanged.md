@@ -27,7 +27,7 @@ static let NSHTTPCookieManagerAcceptPolicyChanged: NSNotification.Name
 extern NSNotificationName const NSHTTPCookieManagerAcceptPolicyChangedNotification;
 ```
 
-#### Discussion
+## Discussion
 
 In macOS, cookies are shared among applications, meaning this notification can be received as a result of another application’s actions. Cookies are not shared among applications in iOS.
 

@@ -23,7 +23,7 @@ var behavior: NSSliderAccessoryBehavior { get set }
 @property (copy) NSSliderAccessoryBehavior * behavior;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `automaticBehavior`.
 

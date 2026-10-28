@@ -22,7 +22,7 @@ class let touchBarGoUpTemplateName: String
 extern NSImageName const NSImageNameTouchBarGoUpTemplate;
 ```
 
-#### Discussion
+## Discussion
 
 ![Template image for go up](https://developer.apple.com/tutorials/images/com.apple.appkit/media-2793540@2x.png)
 

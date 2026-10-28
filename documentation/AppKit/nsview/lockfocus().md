@@ -21,7 +21,7 @@ func lockFocus()
 - (void) lockFocus;
 ```
 
-#### Discussion
+## Discussion
 
 If you don’t use a `display` method to draw an `NSView` object, you must invoke [`lockFocus()`](./lockfocus%28%29.md) before invoking methods that send commands to the window server, and must balance it with an [`unlockFocus()`](./unlockfocus%28%29.md) message when finished.
 

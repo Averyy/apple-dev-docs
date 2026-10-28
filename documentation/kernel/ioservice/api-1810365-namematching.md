@@ -13,11 +13,11 @@ static OSDictionary * nameMatching(
  OSDictionary *table = 0 );
 ```
 
-#### Return Value
+## Return Value
 
 The matching dictionary created, or passed in, is returned on success, or zero on failure.
 
-#### Overview
+## Overview
 
 A very common matching criteria for IOService object is based on its name. `nameMatching` creates a matching dictionary that specifies any IOService object which responds successfully to the IORegistryEntry::compareName method. An existing dictionary may be passed in, in which case the matching properties will be added to that dictionary rather than creating a new one.
 

@@ -15,7 +15,7 @@ The structure for the container ID device capability.
 typedef struct IOUSBDeviceCapabilityContainerID IOUSBDeviceCapabilityContainerID;
 ```
 
-#### Discussion
+## Discussion
 
 See USB 3.2, 9.6.2.3 for more information.
 

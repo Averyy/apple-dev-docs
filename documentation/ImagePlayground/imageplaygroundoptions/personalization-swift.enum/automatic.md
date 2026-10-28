@@ -19,7 +19,7 @@ An option to choose the most appropriate personalization behavior.
 case automatic
 ```
 
-#### Discussion
+## Discussion
 
 This value equals [`ImagePlaygroundOptions.Personalization.enabled`](./enabled.md) by default.
 

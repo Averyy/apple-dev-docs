@@ -25,7 +25,7 @@ var availableLanguages: [String] { get }
 @property (readonly) NSArray<NSString *> * availableLanguages;
 ```
 
-#### Discussion
+## Discussion
 
 Each string in the array is intended to be interpreted as a BCP 47 language tag.
 

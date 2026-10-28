@@ -21,7 +21,7 @@ Calculates double-precision vector threshold with zero fill to the specified ran
 extern void vDSP_vthresD(const double *__A, vDSP_Stride __IA, const double *__B, double *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This function is the same as [`vDSP_vthres`](./vdsp_vthres.md), except for the types of vectors `A` and `C` and scalar `*B`.
 

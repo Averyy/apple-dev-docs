@@ -18,7 +18,7 @@ The pixel format of the depth attachment in the render pass the renderer encodes
 var depthAttachmentPixelFormat: MTLPixelFormat { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use this format when compiling your own `MTLRenderPipelineState` objects for draw calls issued inside the `render(using:_:)` callback.
 

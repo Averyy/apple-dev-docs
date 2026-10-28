@@ -22,7 +22,7 @@ func GLKVector3Add(_ vectorLeft: GLKVector3, _ vectorRight: GLKVector3) -> GLKVe
 static GLKVector3 GLKVector3Add(GLKVector3 vectorLeft, GLKVector3 vectorRight);
 ```
 
-#### Return Value
+## Return Value
 
 A new vector whose components each represent the sum of the two components found in the same positions of the two source vectors.
 

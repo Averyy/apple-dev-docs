@@ -13,7 +13,7 @@ virtual void taggedRelease(
  const int freeWhen) const = 0;
 ```
 
-#### Overview
+## Overview
 
 See OSObject::taggedRelease(const void *, const int freeWhen).
 

@@ -25,7 +25,7 @@ static let ubiquitousItemUploadingErrorKey: URLResourceKey
 extern NSURLResourceKey const NSURLUbiquitousItemUploadingErrorKey;
 ```
 
-#### Discussion
+## Discussion
 
 See [Foundation Constants](../foundation-constants.md) for possible error codes.
 

@@ -16,11 +16,11 @@ Processes a purchase for the product.
 func purchase(compactJWS: String, options: Set<AdvancedCommerceProduct.PurchaseOption> = []) async throws -> AdvancedCommerceProduct.PurchaseResult
 ```
 
-#### Return Value
+## Return Value
 
 The result of the purchase.
 
-#### Discussion
+## Discussion
 
 > **Throws**:  A `PurchaseError`, `StoreKitError`, or `InvalidRequest` error.
 

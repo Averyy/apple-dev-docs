@@ -23,7 +23,7 @@ class UIDocumentProperties
 @interface UIDocumentProperties : NSObject
 ```
 
-#### Overview
+## Overview
 
 Assign a [`UIDocumentProperties`](./uidocumentproperties.md) object to your navigation item’s [`documentProperties`](./uinavigationitem/documentproperties.md) property. UIKit uses this object to display a document header at the top of the title menu, which appears when a person taps the navigation item’s title. The document header displays information about the current document, such as its title, file type, and size.
 

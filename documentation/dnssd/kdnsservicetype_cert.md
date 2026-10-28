@@ -23,7 +23,7 @@ var kDNSServiceType_CERT: Int { get }
 kDNSServiceType_CERT
 ```
 
-#### Discussion
+## Discussion
 
 Certification record
 

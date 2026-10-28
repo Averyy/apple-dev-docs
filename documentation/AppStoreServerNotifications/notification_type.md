@@ -39,13 +39,13 @@ string notification_type
 - [App Store Server Notifications changelog](./app-store-server-notifications-changelog.md)
 - [Receiving App Store Server Notifications](./receiving-app-store-server-notifications.md)
 
-#### Discussion
+## Discussion
 
 You receive and can react to server notifications in real time for the subscription and refund events that these notification type values describe. The `notification_type` appears in the [`responseBodyV1`](./responsebodyv1.md).
 
 > **Note**:  If you’re receiving App Store Server Notifications Version 2, see [`responseBodyV2`](./responsebodyv2.md) and [`notificationType`](./notificationtype.md) instead.
 
-##### Handle use cases for notification events
+### Handle use cases for notification events
 
 When events occur that affect the customer’s product and subscription life-cycle, your server receives notifications from the App Store. Here are some examples of product events and the server notifications you can expect to receive:
 
@@ -68,7 +68,7 @@ When events occur that affect the customer’s product and subscription life-cyc
 | A purchaser disabled Family Sharing for a product, the purchaser (or family member) left the family group, or the purchaser asked for and received a refund | `REVOKE` |
 | The customer initiated a refund request for a consumable in-app purchase | `CONSUMPTION_REQUEST` |
 
-##### Receive notifications for the purchaser and family members
+### Receive notifications for the purchaser and family members
 
 The following table identifies the notifications you receive for the purchaser and for their family members who share products through Family Sharing. To determine if a notification is for the purchaser or a family member, check the value of the [`in_app_ownership_type`](../AppStoreReceipts/in_app_ownership_type.md) field, which appears in the [`unified_receipt.Latest_receipt_info`](./unified_receipt/latest_receipt_info-data.dictionary.md) of the `responseBody` object. For more information about Family Sharing, see [Supporting Family Sharing in your app](../StoreKit/supporting-family-sharing-in-your-app.md).
 
@@ -90,7 +90,7 @@ The following table identifies the notifications you receive for the purchaser a
 
 The `CONSUMPTION_REQUEST` notification applies to consumable in-app purchases, which aren’t eligible for Family Sharing.
 
-##### Test notification events with sandbox
+### Test notification events with sandbox
 
 Your development-signed apps use the sandbox environment when you sign in to App Store using a Sandbox Apple Account. To create a Sandbox Apple Account or test account in App Store Connect, see [Create a sandbox tester account](https://help.apple.com/app-store-connect/#/dev8b997bee1).
 

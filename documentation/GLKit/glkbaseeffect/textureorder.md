@@ -24,7 +24,7 @@ var textureOrder: [GLKEffectPropertyTexture]? { get set }
 @property (nonatomic, copy, nullable) NSArray<GLKEffectPropertyTexture *> * textureOrder;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property should be an array whose contents are all [`GLKEffectPropertyTexture`](../glkeffectpropertytexture.md) objects provided by the effect. The order of these objects in the array determines the order in which the textures are applied in the shader. For example, to reverse the order that the textures are applied to a scene, your application would use the following code:
 

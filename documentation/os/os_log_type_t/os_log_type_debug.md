@@ -21,7 +21,7 @@ The debug log level.
 OS_LOG_TYPE_DEBUG
 ```
 
-#### Discussion
+## Discussion
 
 Logging a message of this type is equivalent to calling the [`os_log_debug`](../os_log_debug.md) function. Use this level to capture information that may be useful during development or while troubleshooting a specific problem.
 

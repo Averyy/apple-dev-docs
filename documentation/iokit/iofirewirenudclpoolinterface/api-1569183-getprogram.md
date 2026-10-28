@@ -16,11 +16,11 @@ Finds the first DCL in the pool not preceeded by any other DCL.
 DCLCommand *(*GetProgram)(IOFireWireLibNuDCLPoolRef self);
 ```
 
-#### Return Value
+## Return Value
 
 A DCLCommand pointer.
 
-#### Discussion
+## Discussion
 
 Returns a backwards-compatible DCL program pointer. This can be passed to IOFireWireLibDeviceRef::CreateLocalIsochPort.
 

@@ -19,7 +19,7 @@ var mountPoint: String? { get }
 @property (nonatomic, readonly, nullable) NSString * mountPoint;
 ```
 
-#### Discussion
+## Discussion
 
 This property is set for cameras whose [`transportType`](../icdevice/transporttype.md) is [`transportTypeMassStorage`](../icdevicetransport/transporttypemassstorage.md).
 

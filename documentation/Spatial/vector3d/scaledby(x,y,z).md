@@ -21,7 +21,7 @@ Returns a vector that results from scaling with the specified double-precision v
 func scaledBy(x: Double = 1, y: Double = 1, z: Double = 1) -> Vector3D
 ```
 
-#### Return Value
+## Return Value
 
 The vector that results from scaling with the specified double-precision values.
 

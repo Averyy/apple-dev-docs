@@ -20,7 +20,7 @@ A graph-level signal raised by the graph while certain states are active.
 struct ActiveTag
 ```
 
-#### Overview
+## Overview
 
 Use tags to observe outputs the graph emits back to the rest of the application — for example, to play a footstep sound while the character is in a “running” state. The graph reports tags that are currently active or that fired during the most recent evaluation tick through [`activeTags`](./activetags.md).
 

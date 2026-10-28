@@ -20,7 +20,7 @@ var output: Any? { get }
 @property (nonatomic, strong, readonly, nullable) id output;
 ```
 
-#### Return Value
+## Return Value
 
 The output for the for last action in the workflow.
 

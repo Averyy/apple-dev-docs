@@ -19,7 +19,7 @@ func enableAutomaticTermination(_ reason: String)
 - (void) enableAutomaticTermination:(NSString *) reason;
 ```
 
-#### Discussion
+## Discussion
 
 This method decrements the automatic termination counter. When the counter is `0`, the application is eligible for automatic termination.
 

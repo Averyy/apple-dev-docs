@@ -23,7 +23,7 @@ var NSEC_PER_SEC: UInt64 { get }
 #define NSEC_PER_SEC
 ```
 
-#### Discussion
+## Discussion
 
 The number of nanoseconds in one second.
 

@@ -25,7 +25,7 @@ var zFar: Double { get set }
 @property (nonatomic) double zFar;
 ```
 
-#### Discussion
+## Discussion
 
 The far value determines the maximal distance between the camera and a visible surface. If a surface is farther from the camera than this  distance, the surface is clipped and does not appear. The default far value is `100.0`.
 

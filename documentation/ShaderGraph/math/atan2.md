@@ -14,7 +14,7 @@ The arctangent of the expression (iny/inx) in radians.
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 **Atan2 (float)**:
 
@@ -104,7 +104,7 @@ The arctangent of the expression (iny/inx) in radians.
 | --- | --- |
 | `Out` | Vector4h |
 
-#### Overview
+## Overview
 
 > **Note**: `Atan2` follows the MaterialX specification parameter names which may differ from the implementation used by content-creation apps.
 

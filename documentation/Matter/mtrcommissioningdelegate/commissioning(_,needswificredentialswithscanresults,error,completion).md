@@ -29,7 +29,7 @@ optional func commissioning(_ commissioning: MTRCommissioningOperation, needsWiF
 - (void) commissioning:(MTRCommissioningOperation *) commissioning needsWiFiCredentialsWithScanResults:(NSArray<MTRNetworkCommissioningClusterWiFiInterfaceScanResultStruct *> *) networks error:(NSError *) error completion:(void (^)(NSData *ssid, NSData *credentials)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Commissioning will pause, including in cases when the network scan failed, until the completion is invoked with the network and credentials the commissionee should use, or until commissioning is stopped.  The provided credentials are allowed to be nil for an open Wi-Fi network.
 

@@ -23,7 +23,7 @@ var isInterrupted: Bool { get }
 @property (nonatomic, readonly, getter=isInterrupted) BOOL interrupted;
 ```
 
-#### Discussion
+## Discussion
 
 This property is key-value observable.
 

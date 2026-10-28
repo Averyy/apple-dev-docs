@@ -22,7 +22,7 @@ init(configuration: AEAssessmentConfiguration)
 - (instancetype) initWithConfiguration:(AEAssessmentConfiguration *) configuration;
 ```
 
-#### Discussion
+## Discussion
 
 After creating a new session, assign its [`delegate`](./delegate.md) property before calling the [`begin()`](./begin%28%29.md) method to start a session. Wait for the delegate to receive the [`assessmentSessionDidBegin(_:)`](../aeassessmentsessiondelegate/assessmentsessiondidbegin%28_%29.md) call before starting an assessment.
 

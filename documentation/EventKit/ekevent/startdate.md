@@ -28,7 +28,7 @@ var startDate: Date! { get set }
 
 - [Creating events and reminders](../creating-events-and-reminders.md)
 
-#### Discussion
+## Discussion
 
 Floating events such as all-day events are returned in the default time zone.
 

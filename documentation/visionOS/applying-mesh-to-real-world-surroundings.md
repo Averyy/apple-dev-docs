@@ -10,13 +10,13 @@ Add a layer of mesh to objects in the real world, using scene reconstruction in 
 - visionOS 2.0+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 With [ARKit](../ARKit/ARKit.md) in visionOS, you can create immersive experiences that integrate with real-world environments. This sample demonstrates how to use ARKit’s scene-reconstruction capability to construct and display a layer of mesh on real-world objects, like the scene in the following video:
 
 [Video: A four-second video of a visionOS app in Simulator, displaying a translucent window labeled 'Scene Reconstruction Example'. The camera pans arounds to showcase a light cyan color covering the walls and ceiling of a room.](https://developer.apple.com/tutorials/videos/com.apple.visionOS/sample-scene-reconstruction-1-main-view.mov)
 
-##### Capture the anchors from the scene
+### Capture the anchors from the scene
 
 The sample uses the `MeshAnchorGenerator` class to retrieve anchor information from [`SceneReconstructionProvider`](../ARKit/scenereconstructionprovider.md). In the following code snippet, the generator takes in the root entity from the reality view to perform actions on the entities and create a dictionary to store the collection of anchors:
 
@@ -102,7 +102,7 @@ func run(_ sceneRec: SceneReconstructionProvider) async {
 
 > ❗ **Important**: To use the `SceneReconstructionProvider`, you must add the `NSWorldSensingUsageDescription` property key list entry to the `info.plist`.
 
-##### Add scene reconstruction to the view
+### Add scene reconstruction to the view
 
 To track the anchors, the app must start an `ARKitSession`. The app creates the `root` to store all the entities, the [`ARKitSession`](../ARKit/arkitsession.md) instance, and the [`SceneReconstructionProvider`](../ARKit/scenereconstructionprovider.md) instance to perform scene reconstruction:
 
@@ -172,7 +172,7 @@ struct SceneReconstructionView: View {
 }
 ```
 
-##### Set up the immersive space
+### Set up the immersive space
 
 For `ARKit` and `SceneReconstructionProvider` to work, the app requires an immersive space. The sample creates an immersive scene in the app’s entry point:
 

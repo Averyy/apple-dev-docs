@@ -16,7 +16,7 @@ Reads the 512-byte log at the specified logOffset in the log.
 IOReturn (*SMARTReadLogAtAddress)(void *interface, UInt32 logOffset, void *buffer, UInt32 size);
 ```
 
-#### Discussion
+## Discussion
 
 Reads the 512-byte log at the specified logOffset in the log. See section 8.54.6.4 of ATA/ATAPI-6.
 

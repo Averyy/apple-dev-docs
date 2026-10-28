@@ -25,11 +25,11 @@ func classNamed(_ className: String) -> AnyClass?
 - (Class) classNamed:(NSString *) className;
 ```
 
-#### Return Value
+## Return Value
 
 The `Class` object for `className`. Returns `nil` if `className` is not one of the classes associated with the receiver or if there is an error loading the executable code containing the class implementation.
 
-#### Discussion
+## Discussion
 
 If the bundle’s executable code is not yet loaded, this method dynamically loads it into memory. Classes (and categories) are loaded from just one file within the bundle directory; this code file has the same name as the directory, but without the extension (”`.bundle`”, “`.app`”, “`.framework`”). As a side effect of code loading, the receiver posts [`didLoadNotification`](./didloadnotification.md) after all classes and categories have been loaded; see `Notifications` for details.
 

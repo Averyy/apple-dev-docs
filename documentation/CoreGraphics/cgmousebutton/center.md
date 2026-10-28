@@ -18,7 +18,7 @@ case center
 kCGMouseButtonCenter
 ```
 
-#### Discussion
+## Discussion
 
 Specifies the center mouse button on a three-button mouse.
 

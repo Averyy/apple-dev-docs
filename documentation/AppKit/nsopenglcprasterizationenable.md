@@ -17,7 +17,7 @@ If disabled, all rasterization of 2D and 3D primitives is disabled.
 static const NSOpenGLContextParameter NSOpenGLCPRasterizationEnable;
 ```
 
-#### Discussion
+## Discussion
 
 This state is useful for debugging and to characterize the performance of an OpenGL driver without actually rendering.
 

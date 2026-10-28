@@ -20,7 +20,7 @@ typealias CGScreenRefreshCallback = (UInt32, UnsafePointer<CGRect>, UnsafeMutabl
 typedef void (*)(unsigned int, const struct CGRect *, void *) CGScreenRefreshCallback;
 ```
 
-#### Discussion
+## Discussion
 
 To register a screen-refresh callback function, you call the function [`CGRegisterScreenRefreshCallback(_:_:)`](./cgregisterscreenrefreshcallback%28_,_%29.md). Quartz invokes your callback function when operations such as drawing, window movement, scrolling, or display reconfiguration occur on local displays. When you finish using a callback registration, you should call the function [`CGUnregisterScreenRefreshCallback(_:_:)`](./cgunregisterscreenrefreshcallback%28_,_%29.md) to remove it.
 

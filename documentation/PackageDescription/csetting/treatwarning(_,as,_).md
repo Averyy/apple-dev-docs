@@ -15,7 +15,7 @@ Controls how a specific C compiler warning is treated during compilation.
 static func treatWarning(_ name: String, as level: WarningLevel, _ condition: BuildSettingCondition? = nil) -> CSetting
 ```
 
-#### Discussion
+## Discussion
 
 Use this setting to specify whether a particular warning should be treated as a warning (default behavior) or as an error. This is equivalent to passing `-Werror=` or `-Wno-error=` followed by the warning name to the C compiler.
 

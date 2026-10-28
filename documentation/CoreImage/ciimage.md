@@ -30,7 +30,7 @@ class CIImage
 - [Selectively Focusing on an Image](./selectively-focusing-on-an-image.md)
 - [Customizing Image Transitions](./customizing-image-transitions.md)
 
-#### Overview
+## Overview
 
 You use `CIImage` objects in conjunction with other Core Image classes—such as [`CIFilter`](./cifilter-swift.class.md), [`CIContext`](./cicontext.md), [`CIVector`](./civector.md), and [`CIColor`](./cicolor.md)—to take advantage of the built-in Core Image filters when processing images. You can create `CIImage` objects with data supplied from a variety of sources, including Quartz 2D images, Core Video image buffers ([`CVImageBuffer`](../CoreVideo/cvimagebuffer.md)), URL-based objects, and `NSData` objects.
 

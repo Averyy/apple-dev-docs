@@ -17,7 +17,7 @@ An error that indicates the current Store and Forward mode has payments from a d
 case storeAndForwardTokenIssuerChanged
 ```
 
-#### Discussion
+## Discussion
 
 You must process the previous token issuer payments and create a new Store and Forward session.
 

@@ -22,7 +22,7 @@ class AEAssessmentSession
 @interface AEAssessmentSession : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use the [`AEAssessmentSession`](./aeassessmentsession.md) class to manage an assessment session. The system allows only one active session at a time across all processes. The first session to run gets exclusive access to the system; subsequent session attempts fail until the first session ends.
 

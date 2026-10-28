@@ -25,7 +25,7 @@ static let describesMusicAndSoundForAccessibility: AVMediaCharacteristic
 extern AVMediaCharacteristic const AVMediaCharacteristicDescribesMusicAndSoundForAccessibility;
 ```
 
-#### Discussion
+## Discussion
 
 Legible media options may include transcriptions of spoken dialog and descriptions of music and sound effects.
 

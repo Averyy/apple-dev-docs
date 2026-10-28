@@ -22,7 +22,7 @@ Multiplies two values and produces their product.
 static func * (lhs: Self, rhs: Self) -> Self
 ```
 
-#### Discussion
+## Discussion
 
 The multiplication operator (`*`) calculates the product of its two arguments. For example:
 

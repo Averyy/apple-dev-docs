@@ -21,7 +21,7 @@ func CFURLCreateBookmarkDataFromAliasRecord(_ allocatorRef: CFAllocator!, _ alia
 extern CFDataRefCFURLCreateBookmarkDataFromAliasRecord(CFAllocatorRef allocatorRef, CFDataRef aliasRecordDataRef);
 ```
 
-#### Return Value
+## Return Value
 
 The bookmark data for the alias record.
 

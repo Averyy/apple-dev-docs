@@ -17,7 +17,7 @@ Signals your app extension to run and process the request to share a network.
 func askToShare() async throws -> WINetworkSharingAskToShareState
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to prompt your app extension to ask the person to share new networks. Your app extension can request network sharing in several ways:
 

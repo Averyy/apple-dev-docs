@@ -25,7 +25,7 @@ class let interstitialEventDidFinishEventKey: String
 extern NSString * const AVPlayerInterstitialEventMonitorInterstitialEventDidFinishEventKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value corresponding to this key is of type AVPlayerInterstitialEvent.
 

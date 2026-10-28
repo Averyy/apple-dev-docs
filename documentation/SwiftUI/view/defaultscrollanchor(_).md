@@ -22,7 +22,7 @@ nonisolated
 func defaultScrollAnchor(_ anchor: UnitPoint?) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Use this modifier to specify an anchor to control both which part of the scroll view’s content should be visible initially and how the scroll view handles content size changes.
 

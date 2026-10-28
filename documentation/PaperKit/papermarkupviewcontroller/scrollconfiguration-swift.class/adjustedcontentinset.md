@@ -18,7 +18,7 @@ The insets that the system derives from the content insets and safe area insets.
 final var adjustedContentInset: UIEdgeInsets { get }
 ```
 
-#### Discussion
+## Discussion
 
 When `contentInsetAdjustmentBehavior` allows, the scroll view may incorporate its safe area insets into the adjusted content inset.
 

@@ -5,11 +5,11 @@
 
 Learn about new features and updates in the External Purchase Server API.
 
-#### Overview
+## Overview
 
 Use this changelog to learn about feature updates, deprecations, and removals for the External Purchase Server API.
 
-#### 1.2.0 — 2025/06/26
+## 1.2.0 — 2025/06/26
 
 **New features**
 
@@ -17,21 +17,21 @@ Use this changelog to learn about feature updates, deprecations, and removals fo
 - Added DUPLICATE_TOKEN possible value in [`status`](./status.md) and [`ExternalPurchaseReport`](./externalpurchasereport.md) objects.
 - Added errors [`LineItemCreationDateOutOfRangeError`](./lineitemcreationdateoutofrangeerror.md) and [`DuplicateTokenStatusNotAllowedError`](./duplicatetokenstatusnotallowederror.md).
 
-#### 1.1.0 — 2025/04/14
+## 1.1.0 — 2025/04/14
 
 **New features**
 
 - Added errors [`RestatementCreationDateMismatchError`](./restatementcreationdatemismatcherror.md), [`RestatementNotAllowedCreationDateError`](./restatementnotallowedcreationdateerror.md), and [`RefundNotAllowedCreationDateError`](./refundnotallowedcreationdateerror.md).
 
-#### Server update — 2024/03/05
+## Server update — 2024/03/05
 
 Initial release.
 
-#### 1.0.0 — 2024/02/29
+## 1.0.0 — 2024/02/29
 
 Initial beta release with functionality enabled for sandbox testing.
 
-#### 0.1.0 — 2024/01/25
+## 0.1.0 — 2024/01/25
 
 Initial beta release for preview.
 

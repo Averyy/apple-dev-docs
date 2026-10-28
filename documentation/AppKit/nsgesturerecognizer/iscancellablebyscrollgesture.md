@@ -19,7 +19,7 @@ var isCancellableByScrollGesture: Bool { get set }
 @property (getter=isCancellableByScrollGesture) BOOL cancellableByScrollGesture;
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to `false`.
 

@@ -19,7 +19,7 @@ var mouseDownFlags: Int { get }
 @property (readonly) NSInteger mouseDownFlags;
 ```
 
-#### Discussion
+## Discussion
 
 The [`NSMatrix`](../nsmatrix.md) [`mouseDown(with:)`](./mousedown%28with%29.md) method obtains these flags by sending a [`modifierFlags`](../nsevent/modifierflags-swift.property.md) message to the event passed into [`mouseDown(with:)`](./mousedown%28with%29.md). Use this property if you want to access these flags. This property is valid only during tracking; it isn’t useful if the target of the receiver initiates another tracking loop as part of its action method (as a cell that pops up a pop-up list does, for example).
 

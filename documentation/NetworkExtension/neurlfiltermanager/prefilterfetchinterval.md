@@ -18,7 +18,7 @@ The time interval at which the the filter control provider app extension runs.
 var prefilterFetchInterval: TimeInterval { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This value determines how frequently the [`NEURLFilterControlProvider`](../neurlfiltercontrolprovider.md) can download prefilter Bloom filter data on to the device. Your implementation should allow some slight deviation between the scheduled time and the actual execution of the fetch.
 

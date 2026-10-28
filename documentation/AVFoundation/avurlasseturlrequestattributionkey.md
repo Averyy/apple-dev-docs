@@ -25,7 +25,7 @@ let AVURLAssetURLRequestAttributionKey: String
 extern NSString * const AVURLAssetURLRequestAttributionKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value is a number that represents an [`NSURLRequest.Attribution`](../Foundation/nsurlrequest/attribution-swift.enum.md). URL requests that the system issues on behalf of the asset attribute this value and follow the App Privacy Policy accordingly.
 

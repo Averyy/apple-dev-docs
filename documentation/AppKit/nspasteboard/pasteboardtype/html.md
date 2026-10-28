@@ -19,7 +19,7 @@ static let html: NSPasteboard.PasteboardType
 extern NSPasteboardType const NSPasteboardTypeHTML;
 ```
 
-#### Discussion
+## Discussion
 
 An `NSTextView` object can read HTML data, but not write it.
 

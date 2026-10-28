@@ -29,7 +29,7 @@ optional func didEvaluateActions(for scene: SKScene)
 
 - [Detecting Changes at Each Step of an Animation](../detecting-changes-at-each-step-of-an-animation.md)
 
-#### Discussion
+## Discussion
 
 Do not call this method directly; it is called by the system exactly once per frame, so long as the scene is presented in a view and is not paused. It is called after any actions have been evaluated by nodes in the scene but before any physics are simulated.
 

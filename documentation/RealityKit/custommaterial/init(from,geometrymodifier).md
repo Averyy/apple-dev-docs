@@ -19,7 +19,7 @@ Creates a custom material from an existing material and a geometry modifier.
 init(from material: any Material, geometryModifier: CustomMaterial.GeometryModifier) throws
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to create a custom material with the same properties as another existing material, but with a geometry modifier.
 

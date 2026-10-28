@@ -24,15 +24,15 @@ class func defaultValue(forKey key: String) -> Any?
 + (id) defaultValueForKey:(NSString *) key;
 ```
 
-#### Return Value
+## Return Value
 
 The default value for the named property. Returns `nil` if no default value has been set.
 
-#### Discussion
+## Discussion
 
 If this method returns `nil` a suitable “zero” default value for the property is provided, based on the declared type of the `key`. For example, if `key` is a `CGSize` object, a size of (0.0,0.0) is returned. For a `CGRect` an empty rectangle is returned. For `CGAffineTransform` and `CATransform3D`, the appropriate identity matrix is returned.
 
-##### Special Considerations
+### Special Considerations
 
 If `key` is not a known for property of the class, the result of the method is undefined.
 

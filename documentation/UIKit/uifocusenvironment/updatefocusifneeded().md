@@ -24,7 +24,7 @@ func updateFocusIfNeeded()
 - (void) updateFocusIfNeeded;
 ```
 
-#### Discussion
+## Discussion
 
 If any focus environment is currently pending an update (after calling [`setNeedsFocusUpdate()`](./setneedsfocusupdate%28%29.md)), then calling this method forces the focus engine to immediately update focus. Unlike [`setNeedsFocusUpdate()`](./setneedsfocusupdate%28%29.md), it does not matter if this environment currently contains focus, or if this environment is the one pending an update.
 

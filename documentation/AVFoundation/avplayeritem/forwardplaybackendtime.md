@@ -26,7 +26,7 @@ var forwardPlaybackEndTime: CMTime { get set }
 @property CMTime forwardPlaybackEndTime;
 ```
 
-#### Discussion
+## Discussion
 
 The value indicates the time at which playback should end when the playback rate is positive (see `AVPlayer`’s [`rate`](../avplayer/rate.md) property).
 

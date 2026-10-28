@@ -22,7 +22,7 @@ nonisolated
 func toolbarVerticalBehavior(_ behavior: ToolbarVerticalBehavior) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 By default, the system determines whether a vertical bar is rendered based on the device and application state. Use [`disabled`](../toolbarverticalbehavior/disabled.md) to opt out of the vertical bar, causing bar content to fall back to the standard horizontal top and bottom toolbars.
 

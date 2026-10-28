@@ -18,7 +18,7 @@ case numberOfWindowLevelKeys
 kCGNumberOfWindowLevelKeys
 ```
 
-#### Discussion
+## Discussion
 
 The total number of window levels.
 

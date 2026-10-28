@@ -13,7 +13,7 @@
 kINQUIRY_PERIPHERAL_TYPE_CommunicationsSSCDevice = 0x09
 ```
 
-#### Discussion
+## Discussion
 
 Comms SSC Device.
 

@@ -20,7 +20,7 @@ var maximumNumberOfTrackedFaces: Int { get set }
 @property (nonatomic, assign) NSInteger maximumNumberOfTrackedFaces;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is one. Set the maximum number of tracked faces to limit the number of faces that can be tracked in a given frame. Check the value of [`supportedNumberOfTrackedFaces`](./supportednumberoftrackedfaces.md) before setting this property.
 

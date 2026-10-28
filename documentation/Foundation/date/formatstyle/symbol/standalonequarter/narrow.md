@@ -21,7 +21,7 @@ The shortest representation of a standalone quarter.
 static var narrow: Date.FormatStyle.Symbol.StandaloneQuarter { get }
 ```
 
-#### Discussion
+## Discussion
 
 This custom format style conveys the shortest representation of a quarter, like `4` for the fourth quarter.
 

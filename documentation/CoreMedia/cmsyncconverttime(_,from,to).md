@@ -25,7 +25,7 @@ func CMSyncConvertTime(_ time: CMTime, from fromClockOrTimebase: CMClockOrTimeba
 extern CMTime CMSyncConvertTime(CMTime time, CMClockOrTimebaseRef fromClockOrTimebase, CMClockOrTimebaseRef toClockOrTimebase);
 ```
 
-#### Discussion
+## Discussion
 
 If both have a common host, the function syncs the clock or timebase based on the rates in the common tree rooted in that host.
 

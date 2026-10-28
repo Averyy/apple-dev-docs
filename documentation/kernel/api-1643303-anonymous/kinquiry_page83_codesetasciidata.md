@@ -13,7 +13,7 @@
 kINQUIRY_Page83_CodeSetASCIIData = 0x2
 ```
 
-#### Discussion
+## Discussion
 
 The identifier contains ASCII data.
 

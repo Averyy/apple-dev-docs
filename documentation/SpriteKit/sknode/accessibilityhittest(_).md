@@ -19,7 +19,7 @@ func accessibilityHitTest(_ point: CGPoint) -> Any?
 - (id) accessibilityHitTest:(CGPoint) point;
 ```
 
-#### Discussion
+## Discussion
 
 Override this method to implement your own, deeper hit testing within a user interface element.
 

@@ -13,11 +13,11 @@
 errno_t sflt_detach(socket_t socket, sflt_handle handle);
 ```
 
-#### Return Value
+## Return Value
 
 0 on success otherwise the errno error.
 
-#### Discussion
+## Discussion
 
 Detaches a socket filter from a specified socket.
 

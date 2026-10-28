@@ -25,11 +25,11 @@ func CTFramesetterCreateWithTypesetter(_ typesetter: CTTypesetter) -> CTFrameset
 extern CTFramesetterRefCTFramesetterCreateWithTypesetter(CTTypesetterRef typesetter);
 ```
 
-#### Return Value
+## Return Value
 
 This function returns a reference to a `CTFramesetter` object.
 
-#### Discussion
+## Discussion
 
 Each framesetter uses a typesetter internally to perform line breaking and other contextual analysis according to the characters in a string. This function allows the framesetter to use a typesetter that the system constructs using specific options.
 

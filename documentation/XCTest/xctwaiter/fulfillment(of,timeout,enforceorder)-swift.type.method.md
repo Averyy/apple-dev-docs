@@ -20,11 +20,11 @@ Creates a waiter that waits on group of expectations for up to the specified tim
 class func fulfillment(of expectations: [XCTestExpectation], timeout seconds: TimeInterval = .infinity, enforceOrder enforceOrderOfFulfillment: Bool = false) async -> XCTWaiter.Result
 ```
 
-#### Return Value
+## Return Value
 
 A value describing the outcome of waiting for `expectations`.
 
-#### Discussion
+## Discussion
 
 Use this Concurrency safe alternative to [`wait(for:timeout:enforceOrder:)`](./wait%28for,timeout,enforceorder%29-swift.type.method.md) in your Swift code. A call to [`wait(for:timeout:enforceOrder:)`](./wait%28for,timeout,enforceorder%29-swift.type.method.md) runs synchronously and blocks the calling thread, which can cause deadlocks or priority inversion.
 

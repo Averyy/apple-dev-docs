@@ -21,7 +21,7 @@ A base type that represents a database store.
 static var database: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.database`.
 

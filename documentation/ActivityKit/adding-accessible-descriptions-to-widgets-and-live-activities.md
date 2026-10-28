@@ -5,11 +5,11 @@
 
 Describe the interface elements of your widgets and Live Activities to help people understand what they represent.
 
-#### Overview
+## Overview
 
 Designing with accessibility in mind is a foundational principle when creating an app. It also applies to widgets and Live Activities. To allow people to customize how they interact with your widget or Live Activity, to verify VoiceOver works correctly for them, and to help people understand what each interface element represents, add accessibility labels to the SwiftUI views you create for each widget and Live Activity presentation.
 
-##### Provide accessibility labels
+### Provide accessibility labels
 
 Add accessibility labels for each SwiftUI view you use as needed and make sure your accessibility labels fit the widget or Live Activity content. To review API that allows you to add accessible descriptions to SwiftUI views, see [Accessible descriptions](../SwiftUI/accessible-descriptions.md).
 

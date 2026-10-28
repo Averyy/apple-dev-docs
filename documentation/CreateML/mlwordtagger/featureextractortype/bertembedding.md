@@ -15,7 +15,7 @@ A feature extractor that provides BERT contextual word embeddings.
 case bertEmbedding
 ```
 
-#### Discussion
+## Discussion
 
 The embeddings consider the context from left-to-right and right-to-left simultaneously.
 

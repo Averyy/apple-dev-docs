@@ -4,13 +4,13 @@
 
 Displays important information to the user.
 
-#### Overview
+## Overview
 
 Use the `alertTemplate` element to display important information, such as a message telling the user to perform an action before continuing. At a minimum, provide a description of the alert and a button so the user can take any required actions. The following figure shows the basic layout for an `alertTemplate` page. The theme for the alert template defaults to the system preference.
 
 ![Layout diagram showing title and description areas at the top, and a button area followed by a text area below.](https://developer.apple.com/tutorials/images/com.apple.TVML/alerttemplate-1@2x.png)
 
-##### Main Elements
+### Main Elements
 
 The following listing shows the main elements of the `alertTemplate` element in TVML format:
 
@@ -28,7 +28,7 @@ The following listing shows the main elements of the `alertTemplate` element in 
 </alertTemplate>
 ```
 
-###### Element Descriptions
+#### Element Descriptions
 
 - **[background](./background.md)**: Background elements, such as audio.
 - **[button](./button.md)**: A button that typically allows the user to dismiss the alert or to bring up a new template page. The button element contains a text element that shows the name of the button.
@@ -36,7 +36,7 @@ The following listing shows the main elements of the `alertTemplate` element in 
 - **[text](./text.md)**: A brief description of what the button does.
 - **[title](./title.md)**: The title of the alert, which should briefly communicate its purpose.
 
-##### Example
+### Example
 
 The following listing shows the TVML for an `alertTemplate` example:
 

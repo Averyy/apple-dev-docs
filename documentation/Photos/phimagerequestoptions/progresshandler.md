@@ -24,7 +24,7 @@ var progressHandler: PHAssetImageProgressHandler? { get set }
 @property (nonatomic, copy, nullable) PHAssetImageProgressHandler progressHandler;
 ```
 
-#### Discussion
+## Discussion
 
 If you request an image whose data is not on the local device, and you have enabled downloading with the [`isNetworkAccessAllowed`](./isnetworkaccessallowed.md) property, Photos calls your block periodically to report progress and to allow you to cancel the download.
 

@@ -24,7 +24,7 @@ protocol NetServiceDelegate : NSObjectProtocol
 @protocol NSNetServiceDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 The [`NetServiceDelegate`](./netservicedelegate.md) protocol defines the optional methods implemented by delegates of [`NetService`](./netservice.md) objects.
 

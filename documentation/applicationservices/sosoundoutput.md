@@ -17,7 +17,7 @@ Get or set the speech channel’s current outputchannel.
 var soSoundOutput: OSType { get }
 ```
 
-#### Discussion
+## Discussion
 
 This selector works with both the `GetSpeechInfo` and `SetSpeechInfo` functions.
 

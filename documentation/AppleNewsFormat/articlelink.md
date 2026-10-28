@@ -19,11 +19,11 @@ object ArticleLink
 
 - [Creating an Article Link](../AppleNews/creating-an-article-link.md)
 
-#### Discussion
+## Discussion
 
 Use the `ArticleLink` component to link a user to the article specified using the `articleIdentifier` property. If no `articleIdentifier` is provided, the component is assumed to be self referencing. Use [`ArticleThumbnail`](./articlethumbnail.md) and [`ArticleTitle`](./articletitle.md) as child components instead of [`Image`](./image.md) or [`Text`](./text.md) to provide semantic value to the linked article. You can use these components to provide content, styling, and layout, like you do with any other Apple News Format component. Apple News automatically populates the content based on nested child elements. A [`ComponentAddition`](./componentaddition.md) is automatically added to the component to allow the user to navigate to the referenced article.
 
-##### Example
+### Example
 
 ```json
 {

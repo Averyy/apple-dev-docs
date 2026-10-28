@@ -15,7 +15,7 @@ SCSI Protocol Driver Family for FireWire SBP2 Devices.
 class IOFireWireSerialBusProtocolTransport : IOSCSIProtocolServices
 ```
 
-#### Overview
+## Overview
 
 IOFireWireSerialBusProtocolTransport contains all the bus specific support for FireWire SBP2 compliant devices. To add vendor specific features or workarounds you will sub-class the appropriate methods of this family.
 

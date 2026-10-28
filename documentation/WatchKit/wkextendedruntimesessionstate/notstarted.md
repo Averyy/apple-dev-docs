@@ -19,7 +19,7 @@ case notStarted
 WKExtendedRuntimeSessionStateNotStarted
 ```
 
-#### Discussion
+## Discussion
 
 When you instantiate a new session, it stays in the [`WKExtendedRuntimeSessionState.notStarted`](./notstarted.md) state until you call the session’s [`start()`](../wkextendedruntimesession/start%28%29.md) or [`start(at:)`](../wkextendedruntimesession/start%28at%29.md) method.
 

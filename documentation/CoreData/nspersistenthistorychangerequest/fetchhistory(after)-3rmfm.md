@@ -29,7 +29,7 @@ class func fetchHistory(after token: NSPersistentHistoryToken?) -> Self
 
 - [Consuming relevant store changes](../consuming-relevant-store-changes.md)
 
-#### Return Value
+## Return Value
 
 A persistent history fetch request ([`NSPersistentHistoryChangeRequest`](../nspersistenthistorychangerequest.md)) with an initial token bookmark boundary.
 

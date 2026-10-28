@@ -13,7 +13,7 @@
 kIOVideoControlScopeGlobal = 'glob'
 ```
 
-#### Discussion
+## Discussion
 
 The scope for controls that apply to the device as a whole.
 

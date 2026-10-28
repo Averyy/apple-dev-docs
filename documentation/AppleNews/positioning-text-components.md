@@ -5,7 +5,7 @@
 
 Adjust the positions of the text components in your article—for example, place the article body off-center.
 
-#### Overview
+## Overview
 
 In [Creating Your First Article](./creating-your-first-article.md), you added some text components and component text styles to your article.
 
@@ -15,7 +15,7 @@ In [Creating Your First Article](./creating-your-first-article.md), you added so
 - How wide the text components are
 - The vertical spacing between the text components
 
-##### Define Basic ComponentLayout Objects
+### Define Basic ComponentLayout Objects
 
 `ComponentLayout` objects determine the placement of components in your article.
 
@@ -25,7 +25,7 @@ In [Creating Your First Article](./creating-your-first-article.md), you added so
 
 > **Note**:  The names of these `ComponentLayout` objects were created for this tutorial; when you create your own articles, you can create your own `ComponentLayout` object names. For the purposes of this tutorial, a “full” margin was considered to be a 24-point space above a or below a component, a “half” margin to be a 12-point space, and a “quarter” margin to be a 6-point space.
 
-###### Basic ComponentLayout Objects: Copy This Code
+#### Basic ComponentLayout Objects: Copy This Code
 
 ```json
   "componentLayouts": {
@@ -66,7 +66,7 @@ In [Creating Your First Article](./creating-your-first-article.md), you added so
   },
 ```
 
-##### Use ComponentLayout Objects in Text Components
+### Use ComponentLayout Objects in Text Components
 
 Now that you have defined some `ComponentLayout` objects, you can use them in one or more components.
 
@@ -74,7 +74,7 @@ Add references to `ComponentLayout` objects inside components as shown in the ex
 
 After you make this change in your code, you can preview your working `article.json` file in News Preview to see changes in the positioning of your components. For example, your article now has a wide right margin when viewed on an iPad.
 
-###### Positioning Text Components: Result
+#### Positioning Text Components: Result
 
 Ellipses (`...`) indicate lines of code that have been omitted from this example.
 
@@ -169,11 +169,11 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
 }
 ```
 
-##### Previous
+### Previous
 
 [Creating Your First Article](./creating-your-first-article.md)
 
-##### Next
+### Next
 
 [Adding a Divider](./adding-a-divider.md)
 

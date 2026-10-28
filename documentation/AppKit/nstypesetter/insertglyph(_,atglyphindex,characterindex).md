@@ -19,7 +19,7 @@ func insertGlyph(_ glyph: NSGlyph, atGlyphIndex glyphIndex: Int, characterIndex:
 - (void) insertGlyph:(NSGlyph) glyph atGlyphIndex:(NSUInteger) glyphIndex characterIndex:(NSUInteger) characterIndex;
 ```
 
-#### Discussion
+## Discussion
 
 The standard typesetter uses this method for inserting hyphenation glyphs. Because this method keeps the glyph caches synchronized, subclasses should always use this method to insert glyphs instead of calling [`layoutManager`](./layoutmanager.md) directly.
 

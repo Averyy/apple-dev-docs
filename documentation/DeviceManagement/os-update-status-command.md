@@ -15,11 +15,11 @@ Get the status of operating-system updates on a device. Removed: subscribe to th
 
 > **Deprecated**: **Removed** Use the declarative management software update features instead.
 
-#### Discussion
+## Discussion
 
 Refer to the following sections to determine supported channels and requirements, and to see an example request and response.
 
-##### Command availability
+### Command availability
 
 |  |  |
 | --- | --- |
@@ -29,7 +29,7 @@ Refer to the following sections to determine supported channels and requirements
 | Allowed in user enrollment | N/A |
 | Required access right | AllowAppInstallation |
 
-##### Example request and response
+### Example request and response
 
 **Request**:
 

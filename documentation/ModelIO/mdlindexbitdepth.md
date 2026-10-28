@@ -24,7 +24,7 @@ enum MDLIndexBitDepth
 enum MDLIndexBitDepth : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 For optimum performance, an index buffer should generally use the smallest data type that fits the number of indices it contains.
 

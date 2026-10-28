@@ -15,7 +15,7 @@ The behavior of the system-provided immersive environments when a scene is opene
 struct ImmersiveEnvironmentBehavior
 ```
 
-#### Overview
+## Overview
 
 Use one of these values with the [`immersiveEnvironmentBehavior(_:)`](./scene/immersiveenvironmentbehavior%28_%29.md) scene modifier to indicate how the immersive environment should behave when your app opens a scene.
 

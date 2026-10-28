@@ -22,7 +22,7 @@ func addAttachmentData(_ attachment: Data, mimeType: String, fileName filename: 
 - (void) addAttachmentData:(NSData *) attachment mimeType:(NSString *) mimeType fileName:(NSString *) filename;
 ```
 
-#### Discussion
+## Discussion
 
 This method attaches the specified data after the message body, but before the user’s signature. You may attach multiple files (using different file names), but must do so prior to displaying the mail composition interface. Don’t call this method after presenting the interface to the user.
 

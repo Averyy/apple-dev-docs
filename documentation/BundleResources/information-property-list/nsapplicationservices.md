@@ -17,7 +17,7 @@ A list of service providers and the devices that they support.
 - **Name**: `NSApplicationServices` (Application Services)
 - **Type**: dictionary
 
-#### Discussion
+## Discussion
 
 Use this key to define which devices [DeviceDiscoveryUI](../../DeviceDiscoveryUI/DeviceDiscoveryUI.md) can connect with. The application services’s [`Browses`](./nsapplicationservices/browses.md) key takes an array of dictionaries, where each dictionary contains a unique identifier, a usage description string, and a list of supported operating systems. You can define more than one application service for your apps. Each service has its own identifier, and can connect to a different subset of devices.
 

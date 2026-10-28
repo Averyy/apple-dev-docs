@@ -23,7 +23,7 @@ case alert
 UNAlertStyleAlert
 ```
 
-#### Discussion
+## Discussion
 
 Alerts are displayed in a modal window that must be dismissed explicitly by the user.
 

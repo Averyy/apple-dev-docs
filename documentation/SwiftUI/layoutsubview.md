@@ -21,7 +21,7 @@ A proxy that represents one subview of a layout.
 struct LayoutSubview
 ```
 
-#### Overview
+## Overview
 
 This type acts as a proxy for a view that your custom layout container places in the user interface. [`Layout`](./layout.md) protocol methods receive a [`LayoutSubviews`](./layoutsubviews.md) collection that contains exactly one proxy for each of the subviews arranged by your container.
 

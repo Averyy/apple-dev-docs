@@ -21,7 +21,7 @@ The name of the feature value that Vision sets from the request handler.
 var inputImageFeatureName: String
 ```
 
-#### Discussion
+## Discussion
 
 By default, Vision uses the first input found, but you can manually set that input to another feature name instead.
 

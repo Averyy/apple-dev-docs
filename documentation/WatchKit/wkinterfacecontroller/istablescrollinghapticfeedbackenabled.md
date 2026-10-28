@@ -19,7 +19,7 @@ var isTableScrollingHapticFeedbackEnabled: Bool { get set }
 @property (nonatomic, getter=isTableScrollingHapticFeedbackEnabled) BOOL tableScrollingHapticFeedbackEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 By default, this property is set to [`true`](../../Swift/true.md). In Apple Watch Series 4 and later, the watch provides haptic feedback as the user rotates the digital crown. When this property is [`true`](../../Swift/true.md), the watch provides haptic feedback whenever new rows scroll into view. However, if there are additional interface items at the top level, or if the table view contains a row that is taller than the screen, the crown falls back to providing linear feedback.
 

@@ -15,7 +15,7 @@ The hosting view creates and updates constraints that represent its content’s 
 static let minSize: NSHostingSizingOptions
 ```
 
-#### Discussion
+## Discussion
 
 The constraints reflect the size that fits a proposal of `width: 0, height: 0`.
 

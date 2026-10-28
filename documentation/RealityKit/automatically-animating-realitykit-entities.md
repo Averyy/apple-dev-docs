@@ -5,7 +5,7 @@
 
 Invoke implicit animations by setting the entity’s desired end state.
 
-#### Overview
+## Overview
 
 When you build 3D experiences with RealityKit, you often animate changes to an entity’s position, rotation, scale, or other properties. You can animate entity properties explicitly by creating an [`AnimationResource`](./animationresource.md). RealityKit can also animate changes automatically using *implicit animations*, which let you describe only the desired end state inside a closure.
 
@@ -25,7 +25,7 @@ Both approaches can animate properties for the following component types:
 - [`PointLightComponent`](./pointlightcomponent.md)
 - [`SpotLightComponent`](./spotlightcomponent.md)
 
-#### Animate entities without SwiftUI state
+## Animate entities without SwiftUI state
 
 Use [`animate(_:body:completion:)`](./entity/animate%28_,body,completion%29.md) to animate entity properties without any SwiftUI state binding. Pass an [`Animation`](../SwiftUI/animation.md) value and a closure that sets the properties you want to change. RealityKit interpolates each property from its current value to the new one using the animation you specify. Often, you can get the animation you want by using one of the static type classes on [`Animation`](../SwiftUI/animation.md), like [`linear`](../SwiftUI/animation/linear.md) or [`easeOut`](../SwiftUI/animation/easeout.md), rather than manually building a custom [`Animation`](../SwiftUI/animation.md).
 
@@ -39,7 +39,7 @@ Entity.animate(.linear(duration: 1.0)) {
 
 The [`animate(_:body:completion:)`](./entity/animate%28_,body,completion%29.md) method works without a [`RealityView`](./realityview.md) update closure or a SwiftUI state binding.
 
-#### Animate entities in a RealityView update closure
+## Animate entities in a RealityView update closure
 
 Use [`animate(body:completion:)`](./realityviewcontent/animate%28body,completion%29.md) inside a [`RealityView`](./realityview.md) update closure to animate entity changes in response to SwiftUI state changes. Because this method derives its animation from the current SwiftUI transaction, attach an animation to the [`State`](../SwiftUI/state.md) variable that triggers the update.
 
@@ -73,7 +73,7 @@ The `.animation(.linear(duration: 1.0))` modifier on `$isScaled` attaches an ani
 
 > ❗ **Important**: Call [`animate(body:completion:)`](./realityviewcontent/animate%28body,completion%29.md) only inside the update closure, not the make closure. The method relies on a SwiftUI transaction, which is only available during an update pass. Calling it during initial setup has no effect and logs a fault.
 
-#### Animate multiple properties
+## Animate multiple properties
 
 You can change multiple properties inside a single `animate` closure. RealityKit creates a separate animation for each property and drives them all with the same timing.
 
@@ -89,7 +89,7 @@ Entity.animate(.easeInOut(duration: 1.5)) {
 
 > ❗ **Important**: When you animate [`Transform`](./transform.md) properties, set them together through `entity.components[Transform.self]` rather than setting [`position`](./hastransform/position.md), [`scale`](./hastransform/scale.md), and [`orientation`](./hastransform/orientation.md) individually. Setting these convenience properties separately inside the closure generates independent animations that conflict, producing unexpected results.
 
-#### Respond to animation completion
+## Respond to animation completion
 
 Both [`animate(_:body:completion:)`](./entity/animate%28_,body,completion%29.md) and [`animate(body:completion:)`](./realityviewcontent/animate%28body,completion%29.md) accept an optional `completion` closure. RealityKit calls this closure when the animation finishes. The completion closure also runs if a new animation begins on the same property before the current animation finishes.
 

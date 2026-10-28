@@ -19,11 +19,11 @@ init(network: vmnet_network_ref)
 - (instancetype) initWithNetwork:(vmnet_network_ref) network;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized `VZVmnetNetworkDeviceAttachment` object, or `nil` if there was an error.
 
-#### Discussion
+## Discussion
 
 To ensure proper isolation between application processes, a virtual machine (VM) can only use the `network` that the same application process creates. If an application’s VM tries to use a `network` that another application’s VM creates, initialization fails.
 

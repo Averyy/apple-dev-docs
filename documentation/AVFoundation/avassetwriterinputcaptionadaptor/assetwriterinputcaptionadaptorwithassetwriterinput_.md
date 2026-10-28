@@ -18,7 +18,7 @@ A class method that creates a new caption adaptor that writes to the specified a
 + (instancetype) assetWriterInputCaptionAdaptorWithAssetWriterInput:(AVAssetWriterInput *) input;
 ```
 
-#### Return Value
+## Return Value
 
 A new instance of [`AVAssetWriterInputCaptionAdaptor`](../avassetwriterinputcaptionadaptor.md)
 

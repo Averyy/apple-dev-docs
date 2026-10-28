@@ -16,7 +16,7 @@ A type that stores information about a frame’s encoding, rendering, and presen
 typedef struct cp_frame_timing * cp_frame_timing_t;
 ```
 
-#### Discussion
+## Discussion
 
 Before you start drawing your frame’s content, retrieve the frame’s timing information using [`cp_frame_predict_timing`](./cp_frame_predict_timing.md). That function returns the latest predicted values for you to use during planning. After you retrieve the [`cp_drawable_t`](./cp_drawable_t.md) type for the frame, get the timing information from the drawable instead using [`frameTiming`](./layerrenderer/drawable/frametiming.md).
 

@@ -16,7 +16,7 @@ Looks up and returns the port registered under the specified name on a specified
 - (NSPort *) portForName:(NSString *) name host:(NSString *) host;
 ```
 
-#### Return Value
+## Return Value
 
 The port associated with `name` on the host `host`. Returns `nil` if no such port exists.
 

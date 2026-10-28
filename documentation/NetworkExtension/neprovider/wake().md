@@ -24,7 +24,7 @@ func wake()
 - (void) wake;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called by the system when the device wakes up from sleep mode.
 

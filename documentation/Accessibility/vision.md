@@ -4,13 +4,13 @@
 
 A person may be blind or color blind, or have a vision challenge that makes focusing difficult.
 
-#### Overview
+## Overview
 
 People who are blind, have low vision, or prefer larger text can use Apple’s vision accessibility features to customize their displays, control their devices, and navigate their surroundings. Design and develop your app to support vision accessibility features and provide a great experience for people who rely on these features.
 
 ![An illustration that shows a person with low vision sitting beside a guide dog while using an iPhone and AirPods.](https://developer.apple.com/tutorials/images/com.apple.Accessibility/accessibility-scene-vision@2x.png)
 
-##### Related videos
+### Related videos
 
 - [Create accessible spatial experiences](https://developer.apple.com/videos/play/wwdc2023/10034)
   Learn how you can make spatial computing apps that work well for everyone. Like all Apple platforms, visionOS is designed for accessibility: We’ll share how we’ve reimagined assistive technologies like VoiceOver and Pointer Control and designed features like Dwell Control to help people interact in the way that works best for them. Learn best practices for vision, motor, cognitive, and hearing accessibility and help everyone enjoy immersive experiences for visionOS.

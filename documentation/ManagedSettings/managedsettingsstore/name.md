@@ -17,7 +17,7 @@ The unique name of a store.
 struct Name
 ```
 
-#### Overview
+## Overview
 
 Use `ManagedSettingsStore.Name` to create distinct stores with their own settings. Initializing multiple stores with the same name will share settings.
 

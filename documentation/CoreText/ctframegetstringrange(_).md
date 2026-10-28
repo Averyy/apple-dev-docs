@@ -25,7 +25,7 @@ func CTFrameGetStringRange(_ frame: CTFrame) -> CFRange
 extern CFRange CTFrameGetStringRange(CTFrameRef frame);
 ```
 
-#### Return Value
+## Return Value
 
 A `CFRange` structure containing the backing store range of characters that were originally requested to fill the frame, or, if the function call is not successful, an empty range.
 

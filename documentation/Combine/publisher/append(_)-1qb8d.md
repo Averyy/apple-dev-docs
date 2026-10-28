@@ -21,11 +21,11 @@ Appends a publisher’s output with the specified elements.
 func append(_ elements: Self.Output...) -> Publishers.Concatenate<Self, Publishers.Sequence<[Self.Output], Self.Failure>>
 ```
 
-#### Return Value
+## Return Value
 
 A publisher that appends the specifiecd elements after this publisher’s elements.
 
-#### Discussion
+## Discussion
 
 Use [`append(_:)`](./append%28_%29-1qb8d.md) when you need to prepend specific elements after the output of a publisher.
 

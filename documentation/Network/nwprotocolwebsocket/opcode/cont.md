@@ -21,7 +21,7 @@ A continuation message.
 case cont
 ```
 
-#### Discussion
+## Discussion
 
 Continuations are handled automatically, and should not be manually sent.
 

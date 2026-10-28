@@ -18,7 +18,7 @@ Reasons for the App Store messages.
 struct Reason
 ```
 
-#### Overview
+## Overview
 
 The message reason informs your app of the purpose of the message. Your app can optionally use this information when it handles the messages.
 

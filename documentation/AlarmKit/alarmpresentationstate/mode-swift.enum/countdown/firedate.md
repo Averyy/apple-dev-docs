@@ -17,7 +17,7 @@ The date the countdown starts.
 var fireDate: Date
 ```
 
-#### Discussion
+## Discussion
 
 The alarm transitions to the `alerting` state.
 

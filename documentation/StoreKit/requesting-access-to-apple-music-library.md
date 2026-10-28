@@ -5,11 +5,11 @@
 
 Prompt the customer to authorize access to Apple Music library.
 
-#### Overview
+## Overview
 
 Your app must obtain permission from the customer before accessing Apple Music Library.
 
-##### Provide a Purpose String in Info.plist
+### Provide a Purpose String in Info.plist
 
 Provide a purpose string or usage description that describes how your app intends to use the user’s iCloud Music library or Apple Music catalog. Add the [`NSAppleMusicUsageDescription`](../BundleResources/information-property-list/nsapplemusicusagedescription.md) key to your app’s Info.plist. Set its value to a string that explains why your app needs access to Apple Music library. The system displays the string to the user when prompting them for authorization.
 
@@ -19,7 +19,7 @@ Provide a purpose string or usage description that describes how your app intend
 
 See [Requesting access to protected resources](../UIKit/requesting-access-to-protected-resources.md) for more details.
 
-##### Request Authorization
+### Request Authorization
 
 The user determines whether apps can play items from the Apple Music catalog or add tracks to their iCloud Music library. They can grant or deny access when your app requests authorization. Because the user can change your app’s authorization status in Settings > Privacy > Media and Apple Music, be sure to call [`SKCloudServiceController`](./skcloudservicecontroller.md)’s [`authorizationStatus()`](./skcloudservicecontroller/authorizationstatus%28%29.md) before attempting to access their Apple Music library.
 

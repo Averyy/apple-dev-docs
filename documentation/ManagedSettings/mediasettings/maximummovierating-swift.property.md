@@ -21,7 +21,7 @@ var maximumMovieRating: Int? { get set }
 
 - [Confirming the effective TV and movie ratings](../readingmedia.md)
 
-#### Discussion
+## Discussion
 
 If your app doesn’t configure this setting, the value is `nil`. The following list provides U.S. descriptions for the ratings:
 

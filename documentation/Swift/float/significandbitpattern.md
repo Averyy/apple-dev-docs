@@ -21,7 +21,7 @@ The raw encoding of the value’s significand field.
 var significandBitPattern: UInt32 { get }
 ```
 
-#### Discussion
+## Discussion
 
 The `significandBitPattern` property does not include the leading integral bit of the significand, even for types like `Float80` that store it explicitly.
 

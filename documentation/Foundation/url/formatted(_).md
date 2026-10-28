@@ -21,11 +21,11 @@ Formats the URL, using the provided format style.
 func formatted<F>(_ format: F) -> F.FormatOutput where F : FormatStyle, F.FormatInput == URL
 ```
 
-#### Return Value
+## Return Value
 
 A formatted string representation of the URL.
 
-#### Discussion
+## Discussion
 
 Use this method when you want to format a single URL value with a specific format style, or call it repeatedly with different format styles. The following example uses the static accessor [`url`](../formatstyle/url.md) to get a default style, then modifies its behavior to include or omit different URL components when [`formatted(_:)`](./formatted%28_%29.md) creates the string:
 

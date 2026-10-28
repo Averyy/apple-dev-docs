@@ -21,7 +21,7 @@ A Boolean value indicating whether the scalar is a radical component of CJK char
 var isRadical: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 These scalars are often the components of ideographic description sequences, as defined by the `isIDSBinaryOperator` and `isIDSTrinaryOperator` properties.
 

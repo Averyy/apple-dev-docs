@@ -23,7 +23,7 @@ protocol SRSensorReaderDelegate : NSObjectProtocol
 @protocol SRSensorReaderDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 To access sensor data, assign an object as the delegate and implement its callbacks.
 

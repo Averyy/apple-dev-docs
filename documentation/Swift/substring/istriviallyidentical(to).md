@@ -21,7 +21,7 @@ Returns a boolean value indicating whether this substring is identical to `other
 func isTriviallyIdentical(to other: Substring) -> Bool
 ```
 
-#### Discussion
+## Discussion
 
 Two substring values are identical if there is no way to distinguish between them.
 

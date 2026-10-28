@@ -15,7 +15,7 @@ A redirect URL for the user to securely sign in with the user’s Apple ID.
 readonly attribute String redirectURL;
 ```
 
-#### Discussion
+## Discussion
 
 Open this URL in a dialog or full-page redirect.
 

@@ -20,7 +20,7 @@ A Boolean value indicating whether your app may request a person’s age range.
 
 **Default**: `true`
 
-#### Discussion
+## Discussion
 
 This entitlement works with the [Declared Age Range](../../DeclaredAgeRange/DeclaredAgeRange.md) framework, which enables people to share their age range with your app.
 

@@ -14,7 +14,7 @@ The base path to the files or folders that the app installs.
 - **Name**: `APInstallerURL` (Installation directory base file URL)
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 Use the format `file://localhost/path/` for the path.
 

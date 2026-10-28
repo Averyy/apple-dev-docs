@@ -23,13 +23,13 @@ static var sizeDependent: SizeDependentTextVariant { get }
 
 Available when `Self` is `SizeDependentTextVariant`.
 
-#### Discussion
+## Discussion
 
 When a [`Text`](../text.md) provides different size options for its content, the size dependent preference chooses the largest option that fits into the available space without truncating or clipping its content.
 
 > **Note**: Only use this option where needed as it incurs a performance cost on every [`Text`](../text.md) it is applied to, even if the concrete text initializer cannot provide multiple size variants and there is no visual impact.
 
-#### Difference to ViewThatFits
+## Difference to ViewThatFits
 
 The [`sizeDependent`](./sizedependent.md) text variant preference differs from [`ViewThatFits`](../viewthatfits.md) both in usage and in behavior. [`ViewThatFits`](../viewthatfits.md) chooses the first child where the **ideal** size fits the available space. For [`Text`](../text.md) this means that it will only choose texts that can fit their contents into the available space **without a line break**. With this text variant preference, on the other hand, the largest variant is chosen that can fit the available space while respecting all the regular layout rules, such as [`lineLimit`](../environmentvalues/linelimit.md).
 

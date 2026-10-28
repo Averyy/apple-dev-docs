@@ -21,7 +21,7 @@ Calculates the single-precision element-wise addition of the product of a vector
 static func add<T, U, V>(multiplication: (a: T, b: Float), _ vector: U, result: inout V) where T : AccelerateBuffer, U : AccelerateBuffer, V : AccelerateMutableBuffer, T.Element == Float, U.Element == Float, V.Element == Float
 ```
 
-#### Discussion
+## Discussion
 
 This function calculates the element-wise product of vector `A` and scalar value `B`, adds vector `C` to the product, and writes the result to vector `D`, as follows:
 

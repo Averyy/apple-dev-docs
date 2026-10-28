@@ -20,7 +20,7 @@ The overlap factor of the extractor.
 let overlapFactor: Double
 ```
 
-#### Discussion
+## Discussion
 
 The overlap should be greater than or equal to zero and less than one.
 

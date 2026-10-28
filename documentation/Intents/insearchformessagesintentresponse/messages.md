@@ -31,7 +31,7 @@ var messages: [INMessage]? { get set }
 @property (atomic, copy, readwrite, nullable) NSArray<INMessage *> * messages;
 ```
 
-#### Discussion
+## Discussion
 
 For successful searches, use this property to return messages matching the search parameters. Provide as much information in each [`INMessage`](../inmessage.md) object as you can. Siri may present or read the message details to the user, depending on the messages and how Siri is communicating with the user.
 

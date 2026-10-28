@@ -16,7 +16,7 @@ Sets the color of the rendered output.
 void output::setColor(half4 color)
 ```
 
-#### Discussion
+## Discussion
 
 This function customizes the color applied to the rendered particle output, including the alpha channel. This affects only the rendered appearance and does not modify the particle itself.
 

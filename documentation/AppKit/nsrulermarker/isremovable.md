@@ -19,7 +19,7 @@ var isRemovable: Bool { get set }
 @property (getter=isRemovable) BOOL removable;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) to allow the user to drag the marker image off of the ruler and remove the marker, [`false`](../../Swift/false.md) to prevent the user from removing the marker.
 

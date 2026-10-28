@@ -27,7 +27,7 @@ case restricted
 CBPeripheralManagerAuthorizationStatusRestricted
 ```
 
-#### Discussion
+## Discussion
 
 The user can’t change this app’s status, possibly due to active restrictions such as parental controls being in place.
 

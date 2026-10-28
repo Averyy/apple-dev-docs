@@ -22,7 +22,7 @@ The system’s default source of random data.
 struct SystemRandomNumberGenerator
 ```
 
-#### Overview
+## Overview
 
 When you generate random values, shuffle a collection, or perform another operation that depends on random data, this type is the generator used by default. For example, the two method calls in this example are equivalent:
 
@@ -34,7 +34,7 @@ let y = Int.random(in: 1...100, using: &g)
 
 `SystemRandomNumberGenerator` is automatically seeded, is safe to use in multiple threads, and uses a cryptographically secure algorithm whenever possible.
 
-### Platform Implementation of `SystemRandomNumberGenerator`
+## Platform Implementation of `SystemRandomNumberGenerator`
 
 While the system generator is automatically seeded and thread-safe on every platform, the cryptographic quality of the stream of random data produced by the generator may vary. For more detail, see the documentation for the APIs used by each platform.
 

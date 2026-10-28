@@ -20,7 +20,7 @@ Key equivalents consist of a letter, punctuation, or function key that can be co
 struct KeyEquivalent
 ```
 
-#### Overview
+## Overview
 
 Key equivalents are used to establish keyboard shortcuts to app functionality. Any key can be used as a key equivalent as long as pressing it produces a single character value. Key equivalents are typically initialized using a single-character string literal, with constants for unprintable or hard-to-type values.
 

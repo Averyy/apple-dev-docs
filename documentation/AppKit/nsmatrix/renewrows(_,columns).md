@@ -19,7 +19,7 @@ func renewRows(_ newRows: Int, columns newCols: Int)
 - (void) renewRows:(NSInteger) newRows columns:(NSInteger) newCols;
 ```
 
-#### Discussion
+## Discussion
 
 This method uses the same cells as before, creating new cells only if the new size is larger; it never frees cells. It doesn’t redisplay the receiver. Your code should normally send [`sizeToCells()`](./sizetocells%28%29.md) after invoking this method to resize the receiver so it fits the changed cell arrangement. This method deselects all cells in the receiver.
 

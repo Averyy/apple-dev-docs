@@ -20,7 +20,7 @@ Allows specifying how web resources may access device sensors.
 var deviceSensorAuthorization: WebPage.DeviceSensorAuthorization
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation returns `WKPermissionDecision.prompt` for all requests.
 

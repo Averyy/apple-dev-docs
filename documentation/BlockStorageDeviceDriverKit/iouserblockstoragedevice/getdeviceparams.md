@@ -15,7 +15,7 @@ Gets device parameters in response to a call from the framework.
 virtual kern_return_t GetDeviceParams(struct DeviceParams *deviceParams);
 ```
 
-#### Return Value
+## Return Value
 
 A value that indicates the get-device-params result. Return [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) to inidicate success. To indicate a failure, see [IOKit Constants](../../iokit/iokit_constants.md) for error definitions.
 

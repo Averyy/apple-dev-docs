@@ -24,7 +24,7 @@ var availableInputs: [AVAudioSessionPortDescription]? { get }
 @property (readonly, nullable) NSArray<AVAudioSessionPortDescription *> * availableInputs;
 ```
 
-#### Discussion
+## Discussion
 
 The active audio session category and mode determine the number of inputs this property returns. For example, if the session’s category is [`playAndRecord`](./category-swift.struct/playandrecord.md), the array may contain a built-in microphone port and, if connected, a headset microphone port. Alternatively, if the session’s category is [`playback`](./category-swift.struct/playback.md), this property returns an empty array.
 

@@ -27,7 +27,7 @@ optional func download(_ download: WKDownload, decidedPolicyForHTTPRedirection r
 - (void) download:(WKDownload *) download willPerformHTTPRedirection:(NSHTTPURLResponse *) response newRequest:(NSURLRequest *) request decisionHandler:(void (^)(enum WKDownloadRedirectPolicy)) decisionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Determine whether to proceed with the redirect. Then invoke the decisionHandler closure, providing a download redirect policy that indicates whether to proceed with the redirect.
 

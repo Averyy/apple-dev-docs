@@ -9,7 +9,7 @@ Add offline audio processing features to your app by enabling offline manual ren
 **Availability**:
 - Xcode 15.4+
 
-#### Overview
+## Overview
 
 You commonly use [`AVAudioEngine`](./avaudioengine.md) to add advanced real-time audio playback features to your app. In a real-time scenario, the audio hardware drives the engine’s I/O and renders the data to the output hardware, such as the device’s built-in speaker or connected headphones.
 
@@ -21,7 +21,7 @@ You can also use `AVAudioEngine` to perform *offline* audio processing by enabli
 
 This sample playground shows you how to enable the audio engine’s manual rendering mode and drive the rendering process from your app.
 
-##### Prepare the source audio
+### Prepare the source audio
 
 The sample loads its audio data from a file contained within the playground. It creates an [`AVAudioFile`](./avaudiofile.md) object to wrap the on-disk file and retrieves its input format, which is used to configure later stages of the audio pipeline.
 
@@ -37,7 +37,7 @@ do {
 }
 ```
 
-##### Create and configure the audio engine
+### Create and configure the audio engine
 
 The sample creates the engine and configures it to perform the desired processing. It creates a player node to drive the input, feeds its output into a reverb node, and connects the output of the reverb node to the main mixer node (which is implicitly connected to the output node). Finally, it schedules the audio file for playback.
 
@@ -61,7 +61,7 @@ engine.connect(reverb, to: engine.mainMixerNode, format: format)
 player.scheduleFile(sourceFile, at: nil)
 ```
 
-##### Enable offline manual rendering mode
+### Enable offline manual rendering mode
 
 If you started the engine at this point, you’d hear the audio playing through the active output device. To change this default behavior, you need to explicitly configure the engine to use manual rendering mode. The sample enables this mode by calling the [`enableManualRenderingMode(_:format:maximumFrameCount:)`](./avaudioengine/enablemanualrenderingmode%28_,format,maximumframecount%29.md) method, passing it the offline rendering mode value, the audio format, and the maximum number of frames to render in a given pass of the render thread.
 
@@ -87,7 +87,7 @@ do {
 }
 ```
 
-##### Prepare the output destinations
+### Prepare the output destinations
 
 Unlike in a real-time playback scenario, the output from the audio engine isn’t rendered to the output hardware, but is instead rendered to an output buffer and ultimately written to a file on disk. The sample creates the buffer object to render into, and an output file in your `~/Documents` directory to save the processed audio.
 
@@ -106,7 +106,7 @@ do {
 }
 ```
 
-##### Manually render the audio
+### Manually render the audio
 
 The sample sequentially loops over the full duration of the input audio file, and in each pass, asks the engine to render the next batch of frames to the output buffer. If the audio engine successfully renders the data, the sample writes the buffer to the output file on disk. When the sample finishes processing the audio data, it stops the player and engine.
 

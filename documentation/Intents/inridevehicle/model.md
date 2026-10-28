@@ -31,7 +31,7 @@ var model: String? { get set }
 @property (atomic, copy, readwrite, nullable) NSString * model;
 ```
 
-#### Discussion
+## Discussion
 
 Examples might include “Civic” or “Escape”.
 

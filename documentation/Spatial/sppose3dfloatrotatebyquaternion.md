@@ -19,11 +19,11 @@
 static SPPose3DFloat SPPose3DFloatRotateByQuaternion(SPPose3DFloat pose, simd_quatf quaternion);
 ```
 
-#### Return Value
+## Return Value
 
 A pose with a rotation that’s rotated by the specified quaternion.
 
-#### Discussion
+## Discussion
 
 Returns a pose with a rotation that’s rotated by the specified quaternion.
 

@@ -15,7 +15,7 @@ Enumerates a collection of accessory anchors using a function.
 extern void ar_accessory_anchors_enumerate_anchors_f(ar_accessory_anchors_t accessory_anchors, void *context, ar_accessory_anchors_enumerator_function_t accessory_anchors_enumerator_function);
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: Enumeration is not thread-safe. The enumerator must not retain or release objects.
 

@@ -27,7 +27,7 @@ func viewSafeAreaInsetsDidChange()
 
 - [Displaying and managing views with a view controller](../displaying-and-managing-views-with-a-view-controller.md)
 
-#### Discussion
+## Discussion
 
 Use this method to update your interface to accommodate the new safe area. UIKit updates the safe area in response to size changes to system bars or when you modify the additional safe area insets of your view controller. UIKit also calls this method immediately before your view appears onscreen.
 

@@ -16,7 +16,7 @@ A unique serial number that identifies the power source.
 #define kIOPSHardwareSerialNumberKey
 ```
 
-#### Discussion
+## Discussion
 
 For Apple-manufactured batteries, this is an alphanumeric string generated during the battery manufacturing process.
 

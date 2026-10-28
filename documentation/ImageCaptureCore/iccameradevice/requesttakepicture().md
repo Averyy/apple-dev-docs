@@ -19,7 +19,7 @@ func requestTakePicture()
 - (void) requestTakePicture;
 ```
 
-#### Discussion
+## Discussion
 
 Before taking a picture, you must first enable tethering by calling [`requestEnableTethering()`](./requestenabletethering%28%29.md).
 

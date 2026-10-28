@@ -10,7 +10,7 @@ framework: "Swift-Org/APIGuidelines"
 
 Omit all labels when arguments can’t be usefully distinguished.
 
-#### Overview
+## Overview
 
 For example: `min(number1, number2)`, `zip(sequence1, sequence2)`.
 

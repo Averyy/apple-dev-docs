@@ -20,7 +20,7 @@ class NSScrubberLayout
 @interface NSScrubberLayout : NSObject
 ```
 
-#### Overview
+## Overview
 
 To determine the layout of items in a scrubber, use one of the built-in subclasses ([`NSScrubberProportionalLayout`](./nsscrubberproportionallayout.md) or [`NSScrubberFlowLayout`](./nsscrubberflowlayout.md)), or create a custom subclass to implement your own layout.
 

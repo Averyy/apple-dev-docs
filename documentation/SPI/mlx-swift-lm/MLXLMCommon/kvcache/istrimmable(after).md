@@ -18,7 +18,7 @@ Predict whether this cache can still be trimmed after appending `positions`.
 func isTrimmable(after positions: Int) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` when a subsequent rewind would remain valid.
 

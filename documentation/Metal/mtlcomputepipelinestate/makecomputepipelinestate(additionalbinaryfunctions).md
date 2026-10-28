@@ -25,7 +25,7 @@ func makeComputePipelineState(additionalBinaryFunctions: [any MTL4BinaryFunction
 - (id<MTLComputePipelineState>) newComputePipelineStateWithBinaryFunctions:(NSArray<id<MTL4BinaryFunction>> *) additionalBinaryFunctions error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A new compute pipeline state upon success, otherwise `nil`.
 

@@ -19,7 +19,7 @@ var substitutionsPanelAccessoryViewController: NSViewController? { get set }
 @property (strong, nullable) NSViewController * substitutionsPanelAccessoryViewController;
 ```
 
-#### Discussion
+## Discussion
 
 The accessory view controller can accommodate any custom view you want to display with the substitutions panel. The accessory view controller’s view is displayed below the substitutions list and the panel automatically resizes to accommodate the accessory view.
 

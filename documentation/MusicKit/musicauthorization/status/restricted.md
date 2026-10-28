@@ -21,7 +21,7 @@ Apps on this device can’t access MusicKit in a way that the user can’t chang
 case restricted
 ```
 
-#### Discussion
+## Discussion
 
 In this scenario, don’t prompt for authorization.
 

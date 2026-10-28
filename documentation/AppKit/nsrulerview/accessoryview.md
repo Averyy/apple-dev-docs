@@ -19,7 +19,7 @@ var accessoryView: NSView? { get set }
 @property (strong, nullable) NSView * accessoryView;
 ```
 
-#### Discussion
+## Discussion
 
 Raises an `NSInternalInconsistencyException` if `aView` is not `nil` and the receiver has no client view.
 

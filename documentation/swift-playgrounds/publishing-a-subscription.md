@@ -5,17 +5,17 @@
 
 Make the playground books in a series available online for download and subscription.
 
-#### Overview
+## Overview
 
 You publish playgrounds by packaging one or more of them into a subscription feed, then uploading the files for the subscription—the playground books, images, metadata, and subscription feed—to a compatible web host. Once the subscription is online, you can make it available for people to download on their iPads by using a web page or by entering a URL directly in Swift Playgrounds.
 
-##### Check Your Web Host For Compatibility
+### Check Your Web Host For Compatibility
 
 Uploading files usually involves a *web host*, which is a service provider that specializes in making data available online. Almost any web host meets the requirements for putting a playground subscription online. However, the host must support TLS 1.3 encryption.
 
 > **Note**: Popular sites such as GitHub via [GitHub Pages](https://pages.github.com/), Squarespace, and others offer the required features for hosting subscriptions. Hosts have their own terms and conditions, however, and may charge fees for high download volumes. Make sure you’re aware of and in agreement with these rules before making your feed available publicly.
 
-##### Upload Your Subscription’s Files
+### Upload Your Subscription’s Files
 
 You store a subscription’s playgrounds (zipped `.playgroundbook` files) as well as its feed (a JSON file) and supporting resources by uploading them to a web host. Be sure to note the URLs that your web host uses to store each file; you’ll use these to fill in the parts of the feed format described in Subscription Feed Format with URLs customized to your specific web host and your playground subscription. These URLs must match the URLs in the feed JSON.
 
@@ -23,7 +23,7 @@ Some web hosts have a file upload facility that lets you drag and drop a hierarc
 
 ![A diagram that shows a directory layout of all of the resources—such as images and zipped books—used by the example feed JSON.](https://developer.apple.com/tutorials/images/com.apple.Swift-Playgrounds/publishing-subscriptions-1@2x.png)
 
-##### Publish Your Subscription on the Web
+### Publish Your Subscription on the Web
 
 If you have an existing personal, business, or school website, you can add a page to that site linking visitors to your Swift Playgrounds subscriptions.
 
@@ -41,7 +41,7 @@ Check out my
 that whimsically highlights interesting facets of Swift!
 ```
 
-##### Publish Your Subscription Manually
+### Publish Your Subscription Manually
 
 If you want to distribute your playground in a classroom or workshop environment rather than through a web page, you can instruct learners to enter the URL of your feed manually. In Swift Playgrounds, tap the Add Subscription button and enter the URL for your feed. Manually entered URLs must not include the Swift Playgrounds subscriptions universal link prefix. Instead, use the raw URL from your web host for the feed.
 

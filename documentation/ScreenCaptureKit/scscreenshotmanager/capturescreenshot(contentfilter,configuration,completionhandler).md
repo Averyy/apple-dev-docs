@@ -22,7 +22,7 @@ class func captureScreenshot(contentFilter: SCContentFilter, configuration confi
 + (void) captureScreenshotWithFilter:(SCContentFilter *) contentFilter configuration:(SCScreenshotConfiguration *) config completionHandler:(void (^)(SCScreenshotOutput *output, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 captureScreenshotWithFilter:configuration:completionHandler:
 

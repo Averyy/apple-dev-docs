@@ -16,7 +16,7 @@ A Boolean value that determines whether the playback controls appear.
 attribute boolean controls;
 ```
 
-#### Discussion
+## Discussion
 
 On the desktop, if `false` (the default), the playback controls do not appear; otherwise, they do appear. On iOS, a native application is used to playback video in full screen; therefore, this property is ignored.
 

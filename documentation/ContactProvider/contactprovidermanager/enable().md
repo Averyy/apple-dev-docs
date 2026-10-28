@@ -16,7 +16,7 @@ Requests the person using the app to enable the extension domain.
 func enable() async throws
 ```
 
-#### Discussion
+## Discussion
 
 If necessary, this call waits for the person using the app to explicitly approve or deny using the extension domain.
 

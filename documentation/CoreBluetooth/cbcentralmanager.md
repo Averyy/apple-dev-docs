@@ -25,7 +25,7 @@ class CBCentralManager
 @interface CBCentralManager : CBManager
 ```
 
-#### Overview
+## Overview
 
 [`CBCentralManager`](./cbcentralmanager.md) objects manage discovered or connected remote peripheral devices (represented by [`CBPeripheral`](./cbperipheral.md) objects), including scanning for, discovering, and connecting to advertising peripherals.
 

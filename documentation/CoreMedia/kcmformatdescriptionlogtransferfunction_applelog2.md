@@ -25,7 +25,7 @@ let kCMFormatDescriptionLogTransferFunction_AppleLog2: CFString
 extern CFStringRef const kCMFormatDescriptionLogTransferFunction_AppleLog2;
 ```
 
-#### Discussion
+## Discussion
 
 You can download the Apple Log Profile and Apple Log 2 Profile White Papers from the Apple Developer Downloads website.
 

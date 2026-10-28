@@ -25,7 +25,7 @@ func synchronize()
 extern void CGContextSynchronize(CGContextRef c);
 ```
 
-#### Discussion
+## Discussion
 
 When you call this function, all drawing operations since the last update are flushed at the next regular opportunity. Under normal conditions, you do not need to call this function.
 

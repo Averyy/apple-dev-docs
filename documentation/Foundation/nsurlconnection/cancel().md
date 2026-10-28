@@ -25,7 +25,7 @@ func cancel()
 - (void) cancel;
 ```
 
-#### Discussion
+## Discussion
 
 After this method is called, the connection makes no further delegate method calls. If you want to reattempt the connection, you should create a new connection object.
 

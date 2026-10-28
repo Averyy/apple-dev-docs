@@ -19,7 +19,7 @@ var isExcludedFromWindowsMenu: Bool { get set }
 @property (getter=isExcludedFromWindowsMenu) BOOL excludedFromWindowsMenu;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) when the window is excluded from the Windows menu; otherwise, [`false`](../../Swift/false.md). The default initial setting is [`false`](../../Swift/false.md).
 

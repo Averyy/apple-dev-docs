@@ -19,7 +19,7 @@ var normalizedPosition: NSPoint { get }
 @property (readonly) NSPoint normalizedPosition;
 ```
 
-#### Discussion
+## Discussion
 
 The normalized position is a scaled value between (0.0) and (1.0,1.0), where (0.0,0.0) is the lower-left position on the touch device.
 

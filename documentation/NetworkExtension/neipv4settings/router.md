@@ -19,7 +19,7 @@ var router: String? { get set }
 @property (copy, nullable) NSString * router;
 ```
 
-#### Discussion
+## Discussion
 
 The system ignores this property for TUN interfaces.
 

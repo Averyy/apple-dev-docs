@@ -19,7 +19,7 @@ object promotionalOffer
 
 - [Setting up retention messages](./setting-up-retention-messages.md)
 
-#### Discussion
+## Discussion
 
 In your [`RealtimeResponseBody`](./realtimeresponsebody.md) real-time response, you can choose from mutually exclusive options. Include `promotionalOffer` in your response to provide a retention message with a promotional offer. The message identifier needs to refer to a message that doesn’t have an image, and that has a [`messageState`](./messagestate.md) of `APPROVED`; otherwise, the retention message fails. For more information about setting up messages, see [`Upload Message`](./upload-message.md).
 

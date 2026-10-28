@@ -23,7 +23,7 @@ var uti: String? { get }
 @property (nonatomic, readonly, nullable) NSString * UTI;
 ```
 
-#### Discussion
+## Discussion
 
 The `UTI` options are `kUTTypeFolder`, `kUTTypeImage`, `kUTTypeMovie`, `kUTTypeAudio`, or `kUTTypeData`.
 

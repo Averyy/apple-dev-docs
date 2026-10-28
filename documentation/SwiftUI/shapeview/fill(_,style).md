@@ -22,7 +22,7 @@ Fills this shape with a color or gradient.
 nonisolated func fill<S>(_ content: S = .foreground, style: FillStyle = FillStyle()) -> FillShapeView<Self.Content, S, Self> where S : ShapeStyle
 ```
 
-#### Return Value
+## Return Value
 
 A shape filled with the color or gradient you supply.
 

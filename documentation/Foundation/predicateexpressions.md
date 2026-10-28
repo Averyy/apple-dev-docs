@@ -22,7 +22,7 @@ The expressions that make up a predicate.
 enum PredicateExpressions
 ```
 
-#### Overview
+## Overview
 
 Don’t use this type directly.  When you call the `Predicate(_:)` macro in your code, the  expansion of that macro produces these values.
 

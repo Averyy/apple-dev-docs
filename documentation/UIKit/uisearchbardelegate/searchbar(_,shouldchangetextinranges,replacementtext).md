@@ -21,11 +21,11 @@ optional func searchBar(_ searchBar: UISearchBar, shouldChangeTextInRanges range
 - (BOOL) searchBar:(UISearchBar *) searchBar shouldChangeTextInRanges:(NSArray<NSValue *> *) ranges replacementText:(NSString *) replacementText;
 ```
 
-#### Return Value
+## Return Value
 
 Returns true if the text at the `ranges` should be replaced.
 
-#### Discussion
+## Discussion
 
 Asks the delegate if the text at the specified `ranges` should be replaced with `text`.
 

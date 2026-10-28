@@ -5,11 +5,11 @@
 
 Synchronize objects between devices, and handle store changes in the user interface.
 
-#### Overview
+## Overview
 
 Once you set up your Xcode project (see [Setting Up Core Data with CloudKit](./setting-up-core-data-with-cloudkit.md)) and initialize your development schema (see [Creating a Core Data Model for CloudKit](./creating-a-core-data-model-for-cloudkit.md)), you’re ready to sync a Core Data store to CloudKit.
 
-##### Run Your App and Create Managed Object Instances
+### Run Your App and Create Managed Object Instances
 
 Run your app and begin creating [`NSManagedObject`](./nsmanagedobject.md) instances. The objects automatically synchronize with the CloudKit database and propagate to other devices logged into the same iCloud account. The tasks that send changes to the cloud and receive remote changes in the local store happen on the system in the background. You don’t need to add any code to your project to synchronize records across devices.
 
@@ -17,7 +17,7 @@ It can be helpful to think of this process as similar to the water cycle. Water 
 
 Generally, you can expect data to synchronize a local change within about a minute of the change. Core Data also occasionally syncs CloudKit data in scenarios such as when the app hasn’t synced in a long time.
 
-##### Upload Core Data Changes to CloudKit
+### Upload Core Data Changes to CloudKit
 
 When the user makes a change on one device, Core Data uploads the change to CloudKit before sending it to the user’s other devices.
 
@@ -27,7 +27,7 @@ First, the user creates, updates, or deletes a managed object, such as adding a 
 
 For more information about background tasks, see [`UIApplication`](../UIKit/uiapplication.md).
 
-##### Download CloudKit Changes into Core Data
+### Download CloudKit Changes into Core Data
 
 After CloudKit receives a change and saves it to the CloudKit store, it notifies the user’s other devices about the change.
 
@@ -37,7 +37,7 @@ First, CloudKit periodically sends push notifications to other devices on a user
 
 For more information about push notifications, see [User Notifications](../UserNotifications/UserNotifications.md).
 
-##### Isolate the Current View from Store Changes
+### Isolate the Current View from Store Changes
 
 Consider what happens if a user deletes a record from their phone. This change uploads to CloudKit, and later downloads to a laptop and an iPad. The iPad’s current view may still show the record if the UI hasn’t updated with the changes yet. The user taps on the now-deleted record, which is no longer available in the store. This may lead to inconsistent representation of the record, such as missing data, in your UI.
 
@@ -55,7 +55,7 @@ For more information about faults, see [Faulting and Uniquing](https://developer
 
 For more information about query generations, see [Accessing data when the store changes](./accessing-data-when-the-store-changes.md).
 
-##### Integrate Store Changes Relevant to the Current View
+### Integrate Store Changes Relevant to the Current View
 
 Your app receives remote change notifications when the local store updates from CloudKit. However, it’s unnecessary to update your UI in response to every notification, because some changes may not be relevant to the current view.
 
@@ -63,7 +63,7 @@ Analyze the persistent history to determine whether the changes are relevant to 
 
 For more information about persistent history tracking, see [Consuming relevant store changes](./consuming-relevant-store-changes.md).
 
-##### Debug Errors in Core Data with CloudKit
+### Debug Errors in Core Data with CloudKit
 
 Most errors, like those that result from a network failure or a user not being signed in, are transient and don’t require action. You can choose the level of detail that Core Data with CloudKit logs to the system log.
 
@@ -75,7 +75,7 @@ Higher argument values produce more information; start at `1` and increase if yo
 
 If you observe persistent errors that don’t automatically recover, file a bug. For more information about bug reporting, see [Submitting Bugs and Feedback](https://developer.apple.com/bug-reporting/).
 
-##### Inspect Logs to See What Happened
+### Inspect Logs to See What Happened
 
 If Core Data with CloudKit doesn’t appear to be syncing, confirm that you’re testing on two unlocked devices logged into the same iCloud account, with good wireless internet connections.
 

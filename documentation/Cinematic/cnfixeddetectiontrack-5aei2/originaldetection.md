@@ -19,7 +19,7 @@ The original detection based on the fixed detection track.
 @property (strong, readonly, nullable) CNDetection * originalDetection;
 ```
 
-#### Discussion
+## Discussion
 
 This is the way to determine the time and bounds from which the fixed focus originated. This detection isn’t part of the detection track and has a different detection ID or none.
 

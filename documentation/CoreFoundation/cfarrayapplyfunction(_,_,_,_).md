@@ -25,7 +25,7 @@ func CFArrayApplyFunction(_ theArray: CFArray!, _ range: CFRange, _ applier: ((U
 extern void CFArrayApplyFunction(CFArrayRef theArray, CFRange range, CFArrayApplierFunction applier, void *context);
 ```
 
-#### Discussion
+## Discussion
 
 While this function iterates over a mutable collection, it is unsafe for the `applier` function to change the contents of the collection.
 

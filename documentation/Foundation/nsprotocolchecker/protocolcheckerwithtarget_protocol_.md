@@ -16,7 +16,7 @@ Allocates and initializes an `NSProtocolChecker` instance that will forward any 
 + (instancetype) protocolCheckerWithTarget:(NSObject *) anObject protocol:(Protocol *) aProtocol;
 ```
 
-#### Discussion
+## Discussion
 
 Thus, the checker can be vended in lieu of `anObject` to restrict the messages that can be sent to `anObject`. Returns the new instance.
 

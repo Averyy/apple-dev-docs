@@ -10,11 +10,11 @@ virtual bool start (
  IOService *provider );
 ```
 
-#### Return Value
+## Return Value
 
 Return true if the start was successful, false otherwise ( which will cause the instance to be detached and usually freed ).
 
-#### Overview
+## Overview
 
 See IOService for discussion.
 

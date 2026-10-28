@@ -24,7 +24,7 @@ var kAudioUnitProperty_CPULoad: AudioUnitPropertyID { get }
 kAudioUnitProperty_CPULoad
 ```
 
-#### Discussion
+## Discussion
 
 The proportion of time that an audio unit is devoting to audio rendering. The value ranges from 0.0 (the audio unit is spending no time rendering) through 1.0 (the audio unit is spending all of its time rendering).
 

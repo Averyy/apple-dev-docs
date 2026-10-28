@@ -28,7 +28,7 @@ GKMatchSendDataReliable
 
 - [Exchanging data between players in real-time games](../../exchanging-data-between-players-in-real-time-games.md)
 
-#### Discussion
+## Discussion
 
 Use this mode when you need guaranteed delivery in the order it’s sent, and the speed isn’t critical.
 

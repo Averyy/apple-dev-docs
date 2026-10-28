@@ -21,7 +21,7 @@ Calculates the single-precision element-wise division of a scalar value and a ve
 static func divide<U, V>(_ scalar: Float, _ vector: U, result: inout V) where U : AccelerateBuffer, V : AccelerateMutableBuffer, U.Element == Float, V.Element == Float
 ```
 
-#### Discussion
+## Discussion
 
 This function calculates the element-wise division of scalar value `A` and vector `B`, and writes the result to vector `C`, as follows:
 

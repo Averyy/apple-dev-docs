@@ -21,7 +21,7 @@ An anchor that matches at the end of the input string or at the end of the line 
 static var endOfSubjectBeforeNewline: Anchor { get }
 ```
 
-#### Discussion
+## Discussion
 
 This anchor is equivalent to `\Z` in regex syntax.
 

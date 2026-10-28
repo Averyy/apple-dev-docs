@@ -25,7 +25,7 @@ class MKAddressFilter
 @interface MKAddressFilter : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use this object to filter search results by criteria, such as country, region, and municipality. See [`MKAddressFilter.Options`](./mkaddressfilter/options.md) for more information.
 

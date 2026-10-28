@@ -21,7 +21,7 @@ Equality is derived from
 static func == (lhs: CMFormatDescription, rhs: CMFormatDescription) -> Bool
 ```
 
-#### Discussion
+## Discussion
 
 ```
 lhs.equalTo(rhs,

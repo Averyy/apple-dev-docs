@@ -22,7 +22,7 @@ A base type that preview macros use to create previews.
 struct Preview
 ```
 
-#### Overview
+## Overview
 
 Frameworks like SwiftUI and WidgetKit define initializers for this type, along with framework-specific preview macros that rely on this type. You don’t use this type directly. Instead, use one of the preview macros, like [`Preview(_:body:)`](../SwiftUI/preview%28_,body%29.md).
 

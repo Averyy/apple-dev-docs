@@ -25,11 +25,11 @@ func CMBufferQueueGetMinDecodeTimeStamp(_ queue: CMBufferQueue) -> CMTime
 extern CMTime CMBufferQueueGetMinDecodeTimeStamp(CMBufferQueueRef queue);
 ```
 
-#### Return Value
+## Return Value
 
 The earliest decode timestamp of the interrogated `CMBufferQueue`.
 
-#### Discussion
+## Discussion
 
 The search for earliest decode timstamp is performed in this API.                If you know your queue is in decode order, `Accessing CMBufferQueue`                is a faster alternative.  If the `getDecodeTimeStamp` callback is                `NULL`, `kCMTimeInvalid` will be returned.
 

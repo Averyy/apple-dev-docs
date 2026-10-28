@@ -19,11 +19,11 @@ The declaration to configure an Exchange account.
 object AccountExchange
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.configuration.account.exchange` as the declaration type.
 
-##### Configuration availability
+### Configuration availability
 
 |  |  |
 | --- | --- |
@@ -35,7 +35,7 @@ Specify `com.apple.configuration.account.exchange` as the declaration type.
 | Allowed in user scope | macOS, Shared iPad |
 | Apply | Multiple configurations are applied separately |
 
-##### Configuration example
+### Configuration example
 
 This configuration sets up a Microsoft Exchange account.
 

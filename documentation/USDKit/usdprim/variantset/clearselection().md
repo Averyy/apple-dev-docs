@@ -20,7 +20,7 @@ Clears the variant selection.
 func clearSelection() throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if the selection cannot be cleared.
 

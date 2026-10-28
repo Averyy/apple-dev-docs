@@ -26,7 +26,7 @@ optional func resolveRestaurant(for intent: INGetAvailableRestaurantReservationB
 - (void) resolveRestaurantForGetAvailableRestaurantReservationBookingDefaults:(INGetAvailableRestaurantReservationBookingDefaultsIntent *) intent withCompletion:(void (^)(INRestaurantResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve the restaurant you are providing default values for.
 

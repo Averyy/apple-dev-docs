@@ -23,7 +23,7 @@ NSWritingToolsCoordinatorStateInactive
 
 - [Adding Writing Tools support to a custom AppKit view](../../adding-writing-tools-support-to-a-custom-nsview.md)
 
-#### Discussion
+## Discussion
 
 The coordinator starts in the `inactive` state, and transitions immediately to the [`NSWritingToolsCoordinator.State.noninteractive`](./noninteractive.md) or [`NSWritingToolsCoordinator.State.interactiveResting`](./interactiveresting.md) state when someone chooses an option from the Writing Tools UI. After the coordinator finishes incorporating any changes for the current operation, it returns to the `inactive` state and waits for the person to choose a different option or dismiss the Writing Tools UI.
 

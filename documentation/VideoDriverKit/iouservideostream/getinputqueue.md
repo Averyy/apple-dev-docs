@@ -15,7 +15,7 @@ Gets the buffer queue for the stream.
 IOStreamBufferQueue * GetInputQueue();
 ```
 
-#### Return Value
+## Return Value
 
 The input buffer queue for the stream, or `NULL` if the stream is not open and the queue has not been created yet.
 

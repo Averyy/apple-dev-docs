@@ -22,7 +22,7 @@ nonisolated
 init(products: some Collection<Product>, @ViewBuilder icon: @escaping (Product, ProductIconPhase) -> Icon) where PlaceholderIcon == EmptyView
 ```
 
-#### Discussion
+## Discussion
 
 The store view asynchronously loads and displays each product’s promotional image. Use the [`ProductIconPhase`](../producticonphase.md) to monitor the current loading phase of the product’s promotional image, and provide an image for each phase. For more information about the loading phases, see [`ProductIconPhase`](../producticonphase.md).
 

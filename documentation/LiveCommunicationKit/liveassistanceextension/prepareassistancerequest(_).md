@@ -21,7 +21,7 @@ Prepares to handle a fresh assistance request, in response to a call from the fr
 func prepareAssistanceRequest(_ request: LiveAssistanceRequest) async throws -> LiveAssistanceRequest.Response
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method by performing any necessarily setup and eligibility checks. When finished, do one of the following:
 

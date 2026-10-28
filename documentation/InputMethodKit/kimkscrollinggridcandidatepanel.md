@@ -17,7 +17,7 @@ var kIMKScrollingGridCandidatePanel: Int { get }
 kIMKScrollingGridCandidatePanel
 ```
 
-#### Discussion
+## Discussion
 
 A window that displays a grid and can scroll if necessary.
 

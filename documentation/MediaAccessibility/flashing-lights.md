@@ -5,7 +5,7 @@
 
 Detect, mitigate, and inform people about flashing lights in media content.
 
-#### Overview
+## Overview
 
 People might want to avoid bright, frequent flashes of light in the media they consume. The Dim Flashing Lights setting allows the system to calculate, mitigate, and inform people about flashing lights in a piece of media.
 

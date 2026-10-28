@@ -23,7 +23,7 @@ func performBatchUpdates(_ updates: (() -> Void)?) async -> Bool
 - (void) performBatchUpdates:(void (^)()) updates completionHandler:(void (^)(BOOL finished)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to make multiple changes to the collection view in one single animated operation. Normally, when you insert, delete, reload, or move items, the collection view animates each change separately. Making those same changes inside the `updates` block causes them to be animated at the same time. This method updates the current layout information as needed before and after performing the operations in the `updates` block.
 

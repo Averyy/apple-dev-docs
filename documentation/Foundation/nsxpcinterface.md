@@ -25,7 +25,7 @@ class NSXPCInterface
 @interface NSXPCInterface : NSObject
 ```
 
-#### Overview
+## Overview
 
 This object holds all information about the interface of an exported object or remote object proxy. It describes what messages are allowed, what kinds of objects are allowed as arguments, what the signature of any reply blocks are, and information about additional proxy objects.
 

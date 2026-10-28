@@ -23,7 +23,7 @@ var deviceVerificationNonce: UUID { get }
 
 Available when `SignedType` is `Product.SubscriptionInfo.RenewalInfo`.
 
-#### Discussion
+## Discussion
 
 Use the lowercased nonce when computing the [`deviceVerification`](./deviceverification-5hvi9.md) value.
 

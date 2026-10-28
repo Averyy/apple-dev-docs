@@ -17,7 +17,7 @@ A type that customizes the style of a contact access button.
 struct Style
 ```
 
-#### Overview
+## Overview
 
 This type accounts for a contact access button’s visual traits like color and sizing of the contact image. Set the style of a contact access button with the [`contactAccessButtonStyle(_:)`](../../SwiftUI/view/contactaccessbuttonstyle%28_%29.md) view modifier.
 

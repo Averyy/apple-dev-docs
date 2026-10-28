@@ -24,7 +24,7 @@ var preferredMediaChunkDuration: CMTime { get set }
 @property (nonatomic) CMTime preferredMediaChunkDuration;
 ```
 
-#### Discussion
+## Discussion
 
 The total duration of the samples in a chunk can be no greater than the preferred chunk duration, or the duration of a single sample if the single sample’s duration is greater than the preferred chunk duration. The default media chunk duration is `1.0` second. Setting a negative or non-numeric value for the chunk duration will cause an error.
 

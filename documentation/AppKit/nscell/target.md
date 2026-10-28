@@ -19,7 +19,7 @@ weak var target: AnyObject? { get set }
 @property (weak, nullable) id target;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is the object that implements the selector specified by the [`action`](./action.md) property. Set the value of this property to `nil` to stop the delivery of action messages.
 

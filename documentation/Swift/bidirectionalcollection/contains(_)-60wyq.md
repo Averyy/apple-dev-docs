@@ -23,7 +23,7 @@ func contains(@RegexComponentBuilder _ content: () -> some RegexComponent) -> Bo
 
 Available when `SubSequence` is `Substring`.
 
-#### Return Value
+## Return Value
 
 `true` if the regex returned by `content` matched anywhere in this collection, otherwise `false`.
 

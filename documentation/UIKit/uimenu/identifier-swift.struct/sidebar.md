@@ -23,7 +23,7 @@ static let sidebar: UIMenu.Identifier
 extern UIMenuIdentifier const UIMenuSidebar;
 ```
 
-#### Discussion
+## Discussion
 
 The Sidebar menu group contains menu elements to show and hide the sidebar.
 

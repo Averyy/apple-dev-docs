@@ -29,11 +29,11 @@ OSStatus AuthorizationRightSet(AuthorizationRef authRef, const char *rightName, 
 
 - [Extending authorization services with plug-ins](./extending-authorization-services-with-plug-ins.md)
 
-#### Return Value
+## Return Value
 
 A result code. See [Authorization Services Result Codes](./authorization-services-result-codes.md).
 
-#### Discussion
+## Discussion
 
 The right you create must be an explicit right with no wildcards. Wildcard rights are for use by system administrators for site configuration. You can use this function to create a new right or modify an existing right. For example:
 

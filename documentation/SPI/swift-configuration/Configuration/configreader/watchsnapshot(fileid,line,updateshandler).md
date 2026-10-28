@@ -24,11 +24,11 @@ Watches the configuration for changes.
 func watchSnapshot<Return>(fileID: String = #fileID, line: UInt = #line, updatesHandler: nonisolated(nonsending) (ConfigUpdatesAsyncSequence<ConfigSnapshotReader, Never>) async throws -> Return) async throws -> Return where Return : ~Copyable
 ```
 
-#### Return Value
+## Return Value
 
 The value returned by the handler.
 
-#### Discussion
+## Discussion
 
 This method watches the configuration for changes and provides a stream of snapshots to the handler closure. Each snapshot represents the configuration state at a specific point in time.
 

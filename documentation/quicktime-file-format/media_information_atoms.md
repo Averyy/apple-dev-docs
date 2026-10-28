@@ -5,7 +5,7 @@
 
 An atom that contains a number of other atoms that define specific characteristics of the video media data.
 
-#### Overview
+## Overview
 
 Media information atoms (defined by the `'minf'` atom type) store handler-specific information for a track’s media data. The media handler uses this information to map from media time to media data and to process the media data.
 

@@ -15,7 +15,7 @@
 kINQUIRY_Byte56_QAS_Mask = (1 << kINQUIRY_Byte56_QAS_Bit)
 ```
 
-#### Discussion
+## Discussion
 
 Mask to use to test the QAS bit.
 

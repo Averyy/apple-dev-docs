@@ -20,11 +20,11 @@ typealias OSLCompareProcPtr = (DescType, UnsafePointer<AEDesc>?, UnsafePointer<A
 typedef OSErr (*OSLCompareProcPtr)(DescType oper, const AEDesc *obj1, const AEDesc *obj2, Boolean *result);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145). Your object comparison function should return `noErr` if it successfully compared the objects and `errAEEventNotHandled` if it can’t compare the objects. When the Apple Event Manager gets an error result of `errAEEventNotHandled`, it attempts to use other methods of comparing the specified objects, such as calling an equivalent system object comparison function.
 
-#### Discussion
+## Discussion
 
 The Apple Event Manager calls your object comparison function when, in the course of resolving an object specifier, the manager needs to compare an Apple event object with another object or with a value in a descriptor.
 

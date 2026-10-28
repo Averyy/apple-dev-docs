@@ -15,7 +15,7 @@ The HID specification compliant report descriptor for the associated HID device.
 final let descriptor: Data
 ```
 
-#### Discussion
+## Discussion
 
 A report descriptor defines details about the device and the type of interactions that it can engage in, such as the type of input it can generate, and the requests it responds to. This is the raw descriptor in byte form. Information extracted from the report descriptor is available in other [`HIDDeviceClient`](../hiddeviceclient.md) properties.
 

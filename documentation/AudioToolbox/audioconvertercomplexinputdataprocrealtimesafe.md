@@ -22,7 +22,7 @@ typealias AudioConverterComplexInputDataProcRealtimeSafe = (AudioConverterRef, U
 typedef int (*)(struct OpaqueAudioConverter *, unsigned int *, struct AudioBufferList *, struct AudioStreamPacketDescription **, void *) __attribute__((nonblocking)) AudioConverterComplexInputDataProcRealtimeSafe;
 ```
 
-#### Discussion
+## Discussion
 
 Realtime-safe variant of AudioConverterComplexInputDataProc.
 

@@ -12,11 +12,11 @@ virtual bool isEqualTo(
  const OSMetaClassBase *anObject) const;
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the objects are equal.
 
-#### Overview
+## Overview
 
 An OSDictionary is considered equal to another object if that object is derived from OSDictionary and contains the same or equivalent objects.
 

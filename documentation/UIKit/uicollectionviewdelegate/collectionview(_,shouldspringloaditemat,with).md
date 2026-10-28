@@ -22,11 +22,11 @@ optional func collectionView(_ collectionView: UICollectionView, shouldSpringLoa
 - (BOOL) collectionView:(UICollectionView *) collectionView shouldSpringLoadItemAtIndexPath:(NSIndexPath *) indexPath withContext:(id<UISpringLoadedInteractionContext>) context;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) to apply the spring-loading behavior for the item or [`false`](../../Swift/false.md) to suppress the behavior altogether.
 
-#### Discussion
+## Discussion
 
 If you do not implement this method, the collection view assumes a return value of [`true`](../../Swift/true.md).
 

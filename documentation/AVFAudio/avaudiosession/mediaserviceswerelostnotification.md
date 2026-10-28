@@ -24,7 +24,7 @@ class let mediaServicesWereLostNotification: NSNotification.Name
 extern NSNotificationName const AVAudioSessionMediaServicesWereLostNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The system posts this notification when the media server first becomes unavailable. Most apps don’t need to subscribe to this notification and should instead subscribe to the [`mediaServicesWereResetNotification`](./mediaserviceswereresetnotification.md) notification. However, you can use this notification as a cue to take any appropriate steps to handle requests that come in before the server restarts.
 

@@ -23,7 +23,7 @@ var isCinematicVideoCaptureSupported: Bool { get }
 @property (nonatomic, readonly, getter=isCinematicVideoCaptureSupported) BOOL cinematicVideoCaptureSupported;
 ```
 
-#### Discussion
+## Discussion
 
 This property returns `true` if the format supports Cinematic Video that produces a controllable, simulated depth of field and adds beautiful focus transitions for a cinema-grade look.
 

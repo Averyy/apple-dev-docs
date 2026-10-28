@@ -22,7 +22,7 @@ var rssi: Int { get }
 @property (nonatomic, readonly) NSInteger rssi;
 ```
 
-#### Discussion
+## Discussion
 
 This value is the average signal strength of the samples received since Core Location last reported the range of the beacon to your app.
 

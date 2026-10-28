@@ -26,9 +26,9 @@ func AUGraphClearConnections(_ inGraph: AUGraph) -> OSStatus
 extern OSStatus AUGraphClearConnections(AUGraph inGraph);
 ```
 
-#### Return Value
+## Return Value
 
-#### Discussion
+## Discussion
 
 This will clear all connections and callback interactions of the nodes of a graph.
 

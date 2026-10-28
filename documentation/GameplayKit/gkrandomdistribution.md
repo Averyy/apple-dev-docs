@@ -24,7 +24,7 @@ class GKRandomDistribution
 @interface GKRandomDistribution : NSObject
 ```
 
-#### Overview
+## Overview
 
 > ❗ **Important**:  The randomization services provided in GameplayKit are suitable for reliably creating deterministic, pseudorandom gameplay mechanics, but are not cryptographically robust. For cryptography, obfuscation, or cipher uses, use the Security framework, described in [Cryptographic Services Guide](https://developer.apple.com/library/archive/documentation/Security/Conceptual/cryptoservices/Introduction/Introduction.html#//apple_ref/doc/uid/TP40011172).
 

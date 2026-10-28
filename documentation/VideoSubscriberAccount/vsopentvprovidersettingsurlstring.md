@@ -23,7 +23,7 @@ let VSOpenTVProviderSettingsURLString: String
 extern NSString * const VSOpenTVProviderSettingsURLString;
 ```
 
-#### Discussion
+## Discussion
 
 Pass this URL to [`open(_:options:completionHandler:)`](../UIKit/uiapplication/open%28_,options,completionhandler%29.md) to open the Settings app and show the TV Provider settings.
 

@@ -19,7 +19,7 @@ A boolean value that determines whether this material writes its depth into Real
 var writesDepth: Bool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 If true, meshes with this material will occlude objects behind them by writing their depth into RealityKit’s depth buffer.
 

@@ -21,7 +21,7 @@ func enableExecution(_ context: (any QCPlugInContext)!)
 - (void) enableExecution:(id<QCPlugInContext>) context;
 ```
 
-#### Discussion
+## Discussion
 
 The Quartz Composer engine calls this method  when results start to be pulled from the  custom patch. You can optionally override this execution method to perform custom tasks at that time.
 

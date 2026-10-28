@@ -19,11 +19,11 @@
 static SPRay3D SPRay3DMake(SPPoint3D origin, SPVector3D direction);
 ```
 
-#### Return Value
+## Return Value
 
 A new ray stucture.
 
-#### Discussion
+## Discussion
 
 Returns a ray at the specified origin.
 

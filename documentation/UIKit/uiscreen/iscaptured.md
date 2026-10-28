@@ -24,7 +24,7 @@ var isCaptured: Bool { get }
 @property (nonatomic, readonly, getter=isCaptured) BOOL captured;
 ```
 
-#### Discussion
+## Discussion
 
 A value of `YES` indicates the system is actively recording, mirroring, or using AirPlay to stream the contents of the screen.
 

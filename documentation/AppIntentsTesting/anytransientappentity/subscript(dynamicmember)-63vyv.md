@@ -21,7 +21,7 @@ Accesses a nested entity property by name.
 subscript(dynamicMember identifier: String) -> DynamicPropertyPath { get }
 ```
 
-#### Overview
+## Overview
 
 The code below shows the syntactic sugar and the equivalent, desugared, subscript syntax.
 

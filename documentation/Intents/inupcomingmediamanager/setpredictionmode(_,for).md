@@ -23,7 +23,7 @@ func setPredictionMode(_ mode: INUpcomingMediaPredictionMode, for type: INMediaI
 - (void) setPredictionMode:(INUpcomingMediaPredictionMode) mode forType:(INMediaItemType) type;
 ```
 
-#### Discussion
+## Discussion
 
 Apps such as podcast apps that want Siri to show only the suggested shortcuts—those set in the [`setSuggestedMediaIntents(_:)`](./setsuggestedmediaintents%28_%29.md) method and not media intents donated by your app for media the user has listened to or watched—should use the [`INUpcomingMediaPredictionMode.onlyPredictSuggestedIntents`](../inupcomingmediapredictionmode/onlypredictsuggestedintents.md) prediction mode. To tell Siri to show both donated and suggested media intent shortcuts associated with your app, use the [`INUpcomingMediaPredictionMode.default`](../inupcomingmediapredictionmode/default.md) mode or don’t set any prediction mode for the media type.
 

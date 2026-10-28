@@ -9,9 +9,9 @@ List the alternative distribution key for your account.
 **Availability**:
 - App Store Connect API 3.4.2+
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

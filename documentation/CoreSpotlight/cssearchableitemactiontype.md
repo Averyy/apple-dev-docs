@@ -23,7 +23,7 @@ let CSSearchableItemActionType: String
 extern NSString * const CSSearchableItemActionType;
 ```
 
-#### Discussion
+## Discussion
 
 The `CSSearchableItemActionType` and `CSSearchableItemActivityIdentifier` constants help your app restore state or an activity when a user opens a searchable item listed in a search result. When the user opens the item, Handoff calls your app delegate’s `application(_:willContinueUserActivityWithType:)` method with `CSSearchableItemActionType`. Handoff also delivers an `NSUserActivity` object that contains a `userInfo` dictionary in which the key is `CSSearchableItemActivityIdentifier` and the associated value is the unique identifier that was used when the item was created. Your app delegate can check for the unique identifier in its `application(_:continue:restorationHandler:)` method.
 

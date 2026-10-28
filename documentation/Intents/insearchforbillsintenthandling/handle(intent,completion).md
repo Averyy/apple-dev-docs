@@ -30,7 +30,7 @@ func handle(intent: INSearchForBillsIntent) async -> INSearchForBillsIntentRespo
 - (void) handleSearchForBills:(INSearchForBillsIntent *) intent completion:(void (^)(INSearchForBillsIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Use the specified parameters to perform the search, then return the results in your response object. If you’re unable to perform the search, return a response object whose result code indicates the reason for the failure.
 

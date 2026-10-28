@@ -16,7 +16,7 @@ The number of compressed bytes written to the migration infrastructure, if the e
 let compressedBytes: Int?
 ```
 
-#### Discussion
+## Discussion
 
 Use this information in testing to determine if your extension might benefit from data compression during migration.
 

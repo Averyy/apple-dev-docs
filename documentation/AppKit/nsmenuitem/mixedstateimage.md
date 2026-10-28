@@ -19,7 +19,7 @@ var mixedStateImage: NSImage! { get set }
 @property (strong, null_resettable) NSImage * mixedStateImage;
 ```
 
-#### Discussion
+## Discussion
 
 A mixed state is useful for indicating a mix of “off” and “on” attribute values in a group of selected objects, such as a selection of text containing boldface and plain (non-boldface) words. By default this is a horizontal line.
 

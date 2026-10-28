@@ -29,7 +29,7 @@ func fetch(withRecordID recordID: CKRecord.ID) async throws -> CKRecord
 - (void) fetchRecordWithID:(CKRecordID *) recordID completionHandler:(void (^)(CKRecord *record, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The completion handler takes the following parameters:
 

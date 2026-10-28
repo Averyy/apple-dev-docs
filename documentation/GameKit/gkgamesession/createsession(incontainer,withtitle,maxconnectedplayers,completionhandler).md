@@ -30,7 +30,7 @@ class func createSession(inContainer containerName: String?, withTitle title: St
 + (void) createSessionInContainer:(NSString *) containerName withTitle:(NSString *) title maxConnectedPlayers:(NSInteger) maxPlayers completionHandler:(void (^)(GKGameSession *session, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The container name must be a valid iCloud container associated with your app. After a user has finished a game and is done with a game session, remove the created game session from iCloud using [`remove(withIdentifier:completionHandler:)`](./remove%28withidentifier,completionhandler%29.md). See [iCloud Design Guide](https://developer.apple.com/library/archive/documentation/General/Conceptual/iCloudDesignGuide/Chapters/Introduction.html#//apple_ref/doc/uid/TP40012094) for more information on incorporating iCloud in your app.
 

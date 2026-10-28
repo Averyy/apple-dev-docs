@@ -5,7 +5,7 @@
 
 Configure lights and light layers to control a scene’s illumination.
 
-#### Overview
+## Overview
 
 A scene’s final look depends on two independent systems working together: the lights you place in it, and the materials that decide whether geometry reacts to those lights. You add light components to entities to define where light comes from and how strong it is, and you choose a material’s [Shader type](./building-materials-in-reality-composer-pro.md) to define whether a surface responds to that light at all. Neither system knows about the other’s specific settings, but their combined effect determines everything you see in the viewport. This article describes this connected system piece by piece. Treat lighting and materials as a connected system from the start, and your results become intentional instead of accidental.
 
@@ -13,7 +13,7 @@ A scene’s final look depends on two independent systems working together: the 
 
 ![A screenshot of a 3D scene with multiple light components in Reality Composer Pro.](https://developer.apple.com/tutorials/images/RealityComposerPro/LightingScene2@2x.png)
 
-#### Choose a light type based on its real-world behavior
+## Choose a light type based on its real-world behavior
 
 Reality Composer Pro’s three dynamic light types map closely to real-world light sources, so the best way to choose among them is to think about the kind of light source you’re trying to simulate. A **Directional Light** represents a source so far away that its rays arrive parallel, like sunlight. Because it uses only the entity’s orientation, moving the entity has no visible effect on the light — only rotating it changes the lighting direction.
 
@@ -41,14 +41,14 @@ Spot lights can also be configured to project an image. After placing the Spot L
 
 > 💡 **Tip**: The Inspector’s Attenuation field on Point Light and Spot Light maps to the component’s `attenuationRadius` property; as of this writing, there is no separate Inspector control for `attenuationFalloffExponent`. Treat Attenuation as one dial that controls how quickly light intensity drops off with distance, and adjust it by feel while watching the viewport.
 
-#### Choose dynamic or static lighting
+## Choose dynamic or static lighting
 
 Each light component also has a mobility setting that defines it as dynamic or static.
 
 - A dynamic light recalculates its lighting contribution in real time, which is what you want for lights that move or change color during your experience.
 - A static light is fixed and eligible for baked lighting techniques elsewhere in your pipeline — a workflow beyond the scope of this article. If you’re unsure which to choose, start with dynamic and revisit the choice only if you have a specific performance or baking requirement.
 
-#### Relate lights and materials before placing them
+## Relate lights and materials before placing them
 
 Before adding a single light component, it helps to understand how Reality Composer Pro’s lighting pieces relate to each other. Light types are additive and parallel. You can place any number of Directional, Point, and Spot lights in a scene (be mindful of performance) and their contributions sum together at every point they reach. There’s no exclusivity between them — a scene can mix all three light types freely. As described above, each light type samples a different part of the entity’s Transform — Directional Lights use only orientation, Point Lights use only position, and Spot Lights use both.
 
@@ -56,7 +56,7 @@ Before adding a single light component, it helps to understand how Reality Compo
 
 See [Configuring how materials respond to light](./configuring-how-materials-respond-to-light.md) for how a material’s Shader type determines whether it responds to these lights.
 
-#### Configure Light Layers to filter scene lighting
+## Configure Light Layers to filter scene lighting
 
 Light Layers let you control whether lights affect specific entities in a scene. Create a Named Layer File and then assign it to a light’s Light Layer Asset property. Then, you can select individual entities and assign them to light layers, allowing you to filter which lights affect which entities.
 
@@ -74,7 +74,7 @@ With a Named Layer File created, you can now assign meshes and lights to layers.
 
 ![A screenshot of a Reality Composer Pro scene with a Render Layer component shown in the Inspector.](https://developer.apple.com/tutorials/images/RealityComposerPro/LightingRenderLayer1@2x.png)
 
-#### Control how lights and entities cast shadows
+## Control how lights and entities cast shadows
 
 Getting a shadow to appear requires two settings to agree: one on the light and one on the entity that should show the shadow. Configure both correctly, or no shadow appears.
 
@@ -86,13 +86,13 @@ Also add a Model Component ([`ModelComponent`](../RealityKit/modelcomponent.md))
 
 Add these components to each individual entity as needed because they are not inherited by an entity’s children. As a result, a hierarchy of meshes needs the component on every mesh entity that should participate.
 
-#### Use Shadow Cascades for Directional Lights
+## Use Shadow Cascades for Directional Lights
 
 Shadow Cascades are available to Directional Lights and control how sharp the shadow looks. Set Cascades to Fixed and then specify a number; the higher the number, the sharper the shadow. Set Cascades to Automatic and RealityKit dynamically balances sharpness with performance.
 
 > 💡 **Tip**: Shadow Cascades can be expensive and may not yield a significant quality improvement in certain camera and light configurations. They’re most effective in large scenes with a high dynamic range in scene depth, such as when the camera shows both near and distant objects to the viewer.
 
-#### Tune shadow quality for performance
+## Tune shadow quality for performance
 
 In the Shadow Component for Spot Lights, use a Medium or High Shadow Quality setting to create softer shadows.
 
@@ -102,7 +102,7 @@ Increasing the **Light Size** increases the size of the source light with commen
 
 For Directional Lights, as of this writing the Maximum Distance property defaults to 10 meters; use the lowest possible value that still tightly fits the area where you want shadows, to improve shadow quality and sharpness.
 
-#### Simulate shadows without a light source
+## Simulate shadows without a light source
 
 Reality Composer Pro also offers [`GroundingShadowComponent`](../RealityKit/groundingshadowcomponent.md), which produces a simulated effect that behaves as if a light source were positioned directly overhead. The component works independently of any actual light in your scene and doesn’t depend on the **Casts Shadow** setting on any light.
 
@@ -110,7 +110,7 @@ Select an entity and then add the Grounding Shadow component to enable it. This 
 
 Like [`DynamicLightShadowComponent`](../RealityKit/dynamiclightshadowcomponent.md), the Grounding Shadow component requires [`ModelComponent`](../RealityKit/modelcomponent.md) on the entity, and you add it to each entity individually rather than applying it to a hierarchy. Reach for grounding shadows when you want a plausible contact shadow under an object without configuring or even needing a real light to produce it.
 
-#### Add environment lighting for indirect light
+## Add environment lighting for indirect light
 
 Direct lights — Directional, Point, and Spot — model light coming from a specific source. Indirect environment lighting fills in everything else: the ambient bounce light that a real environment produces from every surface around it. Reality Composer Pro adds this through an Image Based Light  Component and an Image Based Light Receiver Component.
 
@@ -122,7 +122,7 @@ Add an Image Based Light Receiver Component to any entity you want a particular 
 
 > **Note**: This explicit link means an image-based light only affects entities that opt in. Placing an Image Based Light Component in a scene doesn’t automatically light everything in it. See [`ImageBasedLightReceiverComponent`](../RealityKit/imagebasedlightreceivercomponent.md) for more information.
 
-#### Use Virtual Environment Probes for indirect lighting
+## Use Virtual Environment Probes for indirect lighting
 
 For fully virtual environments, add a [`VirtualEnvironmentProbeComponent`](../RealityKit/virtualenvironmentprobecomponent.md) to give objects believable indirect lighting, precalculated from an [`EnvironmentResource`](../RealityKit/environmentresource.md) you configure.
 
@@ -138,7 +138,7 @@ In visionOS’s Shared Space, visionOS composites your content with the person�
 
 In a fully virtual environment, there’s no physical surrounding for ARKit to sample, so you place a Virtual Environment Probe to supply that lighting yourself. See  [`VirtualEnvironmentProbeComponent`](../RealityKit/virtualenvironmentprobecomponent.md) for more information.
 
-#### Preview lighting while iterating
+## Preview lighting while iterating
 
 Once your lights and materials are in place, Reality Composer Pro gives you several ways to see exactly what they’re doing, closing the loop between configuring lighting and confirming it looks right.
 

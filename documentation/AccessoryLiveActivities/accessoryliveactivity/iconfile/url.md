@@ -20,7 +20,7 @@ var url: URL { get async throws }
 
 - [Receiving Live Activity updates and alerts on an accessory](../../receiving-live-activities-on-an-accessory.md)
 
-#### Overview
+## Overview
 
 Use this URL to retrieve the file’s data and include its contents in your transmission to the accessory.
 

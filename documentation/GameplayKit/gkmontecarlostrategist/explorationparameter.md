@@ -24,7 +24,7 @@ var explorationParameter: Int { get set }
 @property (nonatomic, assign) NSUInteger explorationParameter;
 ```
 
-#### Discussion
+## Discussion
 
 When you call the [`bestMoveForActivePlayer()`](../gkstrategist/bestmoveforactiveplayer%28%29.md) method, the Monte Carlo strategist performs an iterative process of randomly choosing moves, searching for a sequence of moves that ends in a win for the current player. At each step in this process, the strategist chooses whether to try a different move or to continue examining the current sequence of moves.
 

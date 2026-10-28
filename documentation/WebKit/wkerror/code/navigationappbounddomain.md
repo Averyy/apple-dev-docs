@@ -23,7 +23,7 @@ case navigationAppBoundDomain
 WKErrorNavigationAppBoundDomain
 ```
 
-#### Discussion
+## Discussion
 
 This error occurs when the web view navigates away from an app-bound domain.
 

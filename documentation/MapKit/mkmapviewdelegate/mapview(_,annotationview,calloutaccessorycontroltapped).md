@@ -22,7 +22,7 @@ optional func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationVie
 - (void) mapView:(MKMapView *) mapView annotationView:(MKAnnotationView *) view calloutAccessoryControlTapped:(UIControl *) control;
 ```
 
-#### Discussion
+## Discussion
 
 Accessory views contain custom content and the map view positions it on either side of the annotation title text. If a view you specify is a descendant of the [`UIControl`](../../UIKit/uicontrol.md) class, the map view calls this method as a convenience whenever the user taps your view. You can use this method to respond to taps and perform any actions associated with that control. For example, if your control displays additional information about the annotation, you can use this method to present a modal panel with that information.
 

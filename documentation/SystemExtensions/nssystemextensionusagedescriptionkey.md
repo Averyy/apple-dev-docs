@@ -22,7 +22,7 @@ let NSSystemExtensionUsageDescriptionKey: String
 extern NSString * const NSSystemExtensionUsageDescriptionKey;
 ```
 
-#### Discussion
+## Discussion
 
 This key is required for all system extensions except DriverKit extensions, and must be in the extension’s `Info.plist` file. Failure to include this key results in an error at activation time. For DriverKit extensions, use [`OSBundleUsageDescriptionKey`](./osbundleusagedescriptionkey.md) instead.
 

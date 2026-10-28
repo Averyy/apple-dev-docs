@@ -17,7 +17,7 @@ Protocol for something that can convert structured [`Chat.Message`](./chat/messa
 protocol MessageGenerator : Sendable
 ```
 
-#### Overview
+## Overview
 
 Typically this is owned and used by a [`UserInputProcessor`](./userinputprocessor.md):
 

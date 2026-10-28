@@ -5,7 +5,7 @@
 
 Manage sandbox testers on your App Store Connect team.
 
-#### Overview
+## Overview
 
 The `sandboxTesters` resource represents a Sandbox Apple Account, which is an account you use to test your app in the sandbox environment. Using this resource you can read and modify Sandbox Apple Accounts and their data. Use App Store Connect to create or delete Sandbox Apple Account. For more information, see [Create Sandbox Apple Accounts](https://developer.apple.com/help/app-store-connect/test-in-app-purchases/create-sandbox-apple-ids). For more information about testing In-App Purchase in the sandbox environment, see [Overview of testing in sandbox](https://developer.apple.com/help/app-store-connect/test-in-app-purchases/overview-of-testing-in-sandbox).
 

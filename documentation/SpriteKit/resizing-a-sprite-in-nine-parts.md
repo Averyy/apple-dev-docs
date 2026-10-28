@@ -5,7 +5,7 @@
 
 Scale a sprite using nine-part algorithm.
 
-#### Overview
+## Overview
 
 The size of the sprite node’s [`frame`](./sknode/frame.md) property is determined by the values of these properties:
 

@@ -21,7 +21,7 @@ static let ambientLightSensor: SRSensor
 extern SRSensor const SRSensorAmbientLightSensor;
 ```
 
-#### Discussion
+## Discussion
 
 The [`sample`](../srfetchresult/sample.md) type for this sensor is [`SRAmbientLightSample`](../srambientlightsample.md).
 

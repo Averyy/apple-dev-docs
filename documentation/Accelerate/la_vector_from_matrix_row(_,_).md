@@ -27,11 +27,11 @@ func la_vector_from_matrix_row(_ matrix: la_object_t, _ matrix_row: la_count_t) 
 extern la_object_tla_vector_from_matrix_row(la_object_t matrix, la_count_t matrix_row);
 ```
 
-#### Return Value
+## Return Value
 
 The resulting vector is a 1 x cols(matrix) vector.
 
-##### Parameters
+### Parameters
 
 - **matrix**: Matrix from which to create the row vector.
 - **matrix_row**: The zero-based index of the row to create the vector from.

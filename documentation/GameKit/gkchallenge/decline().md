@@ -24,7 +24,7 @@ func decline()
 - (void) decline;
 ```
 
-#### Discussion
+## Discussion
 
 If you implement an interface to present challenges, it should call this method when the local player declines a challenge.
 

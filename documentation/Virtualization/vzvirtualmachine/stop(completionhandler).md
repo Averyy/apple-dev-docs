@@ -23,7 +23,7 @@ func stop() async throws
 - (void) stopWithCompletionHandler:(void (^)(NSError *errorOrNil)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 > ⚠️ **Warning**:  This is a destructive operation. It stops the VM without giving the guest a chance to stop cleanly.
 

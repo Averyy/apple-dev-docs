@@ -14,7 +14,7 @@
 #define kUSBVendorString
 ```
 
-#### Discussion
+## Discussion
 
 IORegistry key for the device's USB manufacturer string
 

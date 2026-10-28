@@ -15,7 +15,7 @@ The IOBDMedia class is a random-access disk device abstraction for BDs.
 class IOBDMedia : IOMedia
 ```
 
-#### Overview
+## Overview
 
 The IOBDMedia class is a random-access disk device abstraction for BDs.
 

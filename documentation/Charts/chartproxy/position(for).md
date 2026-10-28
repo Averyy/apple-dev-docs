@@ -21,7 +21,7 @@ Returns the x and y positions as a `CGPoint` for the given data values, or `nil`
 func position<X, Y>(for point: (x: X, y: Y)) -> CGPoint? where X : Plottable, Y : Plottable
 ```
 
-#### Return Value
+## Return Value
 
 The position corresponding to the data values.
 

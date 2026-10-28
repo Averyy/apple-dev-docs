@@ -19,7 +19,7 @@ The associated domains for specific services, such as shared web credentials, un
 - **Name**: `com.apple.developer.associated-domains` (Associated Domains)
 - **Type**: array of string 
 
-#### Discussion
+## Discussion
 
 This key specifies a list of domains for each enabled service. Add an associated domain to the list in the following format:
 

@@ -21,7 +21,7 @@ case noInterestedClients
 SRDeletionReasonNoInterestedClients
 ```
 
-#### Discussion
+## Discussion
 
 The framework deletes samples for this reason when there’s been no recording activity for a particular sensor.
 

@@ -21,7 +21,7 @@ Appends a line segment to a mutable graphics path.
 extern void CGPathAddLineToPoint(CGMutablePathRef path, const CGAffineTransform *m, CGFloat x, CGFloat y);
 ```
 
-#### Discussion
+## Discussion
 
 Before returning, this function updates the current point to the specified location `(x,y)`.
 

@@ -24,7 +24,7 @@ var envelope: PHASEEnvelope { get }
 @property (nonatomic, strong, readonly) PHASEEnvelope * envelope;
 ```
 
-#### Discussion
+## Discussion
 
 The line segments collectively plot an output value for the [`inputMetaParameterDefinition`](./inputmetaparameterdefinition.md) property.
 

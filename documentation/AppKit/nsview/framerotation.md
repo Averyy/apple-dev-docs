@@ -19,7 +19,7 @@ var frameRotation: CGFloat { get set }
 @property CGFloat frameRotation;
 ```
 
-#### Discussion
+## Discussion
 
 Positive values indicate counterclockwise rotation. Negative values indicate clockwise rotation. Rotation is performed around the origin of the frame rectangle. Changing the value of this property does not mark the view as needing to be displayed. Set the [`needsDisplay`](./needsdisplay.md) property to [`true`](../../Swift/true.md) when you want the view to be redisplayed.
 

@@ -25,7 +25,7 @@ var bitmapInfo: CGBitmapInfo { get }
 extern CGBitmapInfo CGBitmapContextGetBitmapInfo(CGContextRef context);
 ```
 
-#### Discussion
+## Discussion
 
 The data returned by the function specifies whether the bitmap contains an alpha channel and how the alpha channel is generated, along with whether the components are floating-point or integer.
 

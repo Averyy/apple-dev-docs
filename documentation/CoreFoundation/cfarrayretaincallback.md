@@ -25,11 +25,11 @@ typealias CFArrayRetainCallBack = (CFAllocator?, UnsafeRawPointer?) -> UnsafeRaw
 typedef const void *(*)(const struct __CFAllocator *, const void *) CFArrayRetainCallBack;
 ```
 
-#### Return Value
+## Return Value
 
 The value to store in an array, which is usually the `value` parameter passed to this callback, but may be a different   value if a different value should be stored in an array.
 
-#### Discussion
+## Discussion
 
 This callback is passed to [`CFArrayCreate(_:_:_:_:)`](./cfarraycreate%28_,_,_,_%29.md) in a [`CFArrayCallBacks`](./cfarraycallbacks.md) structure.
 

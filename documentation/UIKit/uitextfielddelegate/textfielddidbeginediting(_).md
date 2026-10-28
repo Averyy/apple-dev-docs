@@ -23,7 +23,7 @@ optional func textFieldDidBeginEditing(_ textField: UITextField)
 - (void) textFieldDidBeginEditing:(UITextField *) textField;
 ```
 
-#### Discussion
+## Discussion
 
 This method notifies the delegate that the specified text field just became the first responder. Use this method to update state information or perform other tasks. For example, you might use this method to show overlay views that are visible only while editing.
 

@@ -24,7 +24,7 @@ class MTLAttributeDescriptor
 @interface MTLAttributeDescriptor : NSObject
 ```
 
-#### Overview
+## Overview
 
 Attribute descriptors are part of an [`MTLVertexDescriptor`](./mtlvertexdescriptor.md) or [`MTLStageInputOutputDescriptor`](./mtlstageinputoutputdescriptor.md) instance to provide layout information about a function’s arguments. Each descriptor is for a single argument, containing information about the attached data, offset and stride, and data type.
 

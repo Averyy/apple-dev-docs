@@ -19,7 +19,7 @@ class func corners(radius: NSViewCornerRadius) -> NSViewCornerConfiguration
 + (NSViewCornerConfiguration *) configurationWithRadius:(NSViewCornerRadius *) radius;
 ```
 
-#### Discussion
+## Discussion
 
 When used with a container concentric radius, this allows each individual corner to resolve to different radii.
 

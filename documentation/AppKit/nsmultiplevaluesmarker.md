@@ -19,7 +19,7 @@ var NSMultipleValuesMarker: AnyObject
 extern id NSMultipleValuesMarker;
 ```
 
-#### Discussion
+## Discussion
 
 A binding can be configured to always return this marker for multiple items, even if the values are the same.
 

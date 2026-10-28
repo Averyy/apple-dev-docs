@@ -24,7 +24,7 @@ let kVTCompressionPropertyKey_MaxFrameDelayCount: CFString
 extern CFStringRef const kVTCompressionPropertyKey_MaxFrameDelayCount;
 ```
 
-#### Discussion
+## Discussion
 
 This value limits the number of frames that may be held in the compression window. If the maximum frame delay count is M, then before the call to encode frame N returns, frame N-M must have been emitted. The default is [`kVTUnlimitedFrameDelayCount`](./kvtunlimitedframedelaycount.md), which sets no limit on the compression window.
 

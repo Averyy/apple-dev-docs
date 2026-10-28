@@ -17,7 +17,7 @@ The person using the app invalidated the card session.
 case userInvalidated
 ```
 
-#### Discussion
+## Discussion
 
 Handle this error by creating a new card session.
 

@@ -5,7 +5,7 @@
 
 Communicate about events and share data between the containing app and JavaScript by using native messaging and app groups.
 
-#### Overview
+## Overview
 
 A Safari web extension consists of three parts that operate independently in their own sandboxed environments:
 
@@ -17,7 +17,7 @@ You use messaging APIs to communicate events and event data between these parts.
 
 Because the macOS or iOS app and the native app extension each run in their own sandboxed environments, they cannot share data in their respective containers. You can store data in a shared space that both the macOS or iOS app and the native app extension can access and update, by enabling app groups. For more information, see [Sharing Data with Your Containing App](https://developer.apple.com/library/archive/documentation/General/Conceptual/ExtensibilityPG/ExtensionScenarios.html#//apple_ref/doc/uid/TP40014214-CH21-SW6).
 
-##### Send messages from JavaScript to the app
+### Send messages from JavaScript to the app
 
 You can send messages to the native app extension from a background script or from extension pages that provide a user interface for your Safari web extension. Content scripts that are injected into web content cannot send messages to the native app extension.
 
@@ -60,7 +60,7 @@ The message from the script is the first item in the `context.inputItems` dictio
 
 Reply to the message by creating an `NSExtensionItem` response, populating response data in `userInfo`, and calling `context.completeResponse:returningItems:completionHandler` with the response.
 
-##### Send messages from the app to JavaScript
+### Send messages from the app to JavaScript
 
 To enable sending messages from the Safari web extension’s containing macOS app to its JavaScript scripts running in the browser or Mac web app, add `nativeMessaging` to the list of `permissions` in the `manifest.json` file. Send messages from the macOS app to notify the web scripts of important events, like when the user clicks a button or when data that the JavaScript script uses changes. You can’t send messages from a containing iOS app to your web extension’s JavaScript scripts.
 

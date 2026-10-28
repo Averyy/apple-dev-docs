@@ -24,7 +24,7 @@ func reloadData()
 - (void) reloadData;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to remove the overlay’s existing tile images and reload them from the original source. This method automatically causes the renderer to redraw the new tiles as soon as it loads them into memory.
 

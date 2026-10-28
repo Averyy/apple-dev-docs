@@ -21,7 +21,7 @@ Returns true if this path is not absolute (see `isAbsolute`).
 var isRelative: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 Examples:
 

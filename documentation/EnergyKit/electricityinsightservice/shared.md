@@ -17,7 +17,7 @@ A single, shared insight service object.
 static let shared: ElectricityInsightService
 ```
 
-#### Discussion
+## Discussion
 
 Use this object to interact with insight services in your app.
 

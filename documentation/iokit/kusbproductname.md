@@ -14,7 +14,7 @@
 #define kUSBProductName
 ```
 
-#### Discussion
+## Discussion
 
 Deprecated. Use kUSBProductID
 

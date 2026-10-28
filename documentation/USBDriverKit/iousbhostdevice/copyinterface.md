@@ -15,11 +15,11 @@ Gets the next host interface child associated with this device.
 virtual kern_return_t CopyInterface(uintptr_t ref, IOUSBHostInterface **interface);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 
-#### Discussion
+## Discussion
 
 Keep calling this method until the value in the interface parameter is `NULL`.
 

@@ -19,7 +19,7 @@ Remap shortcuts to their international counterparts, mirrored for right-to-left 
 static let automatic: KeyboardShortcut.Localization
 ```
 
-#### Discussion
+## Discussion
 
 This is the default configuration.
 

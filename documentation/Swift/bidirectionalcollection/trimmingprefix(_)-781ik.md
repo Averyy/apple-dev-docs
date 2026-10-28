@@ -23,7 +23,7 @@ func trimmingPrefix(@RegexComponentBuilder _ content: () -> some RegexComponent)
 
 Available when `SubSequence` is `Substring`.
 
-#### Return Value
+## Return Value
 
 A collection containing the elements after those that match the regex returned by `content`. If the regex does not match at the start of the collection, the entire contents of this collection are returned.
 

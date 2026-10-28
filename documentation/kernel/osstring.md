@@ -15,7 +15,7 @@ OSString wraps a C string in a C++ object for use in Libkern collections.
 class OSString : OSObject
 ```
 
-#### Overview
+## Overview
 
 OSString is a container class for managing arrays of characters. An OSString normally maintains its own character buffer and allows changes, but you can create an "immutable" OSString that references an external C string buffer using the "NoCopy" creator functions. Functions called to change the contents of an immutable OSString will fail.
 

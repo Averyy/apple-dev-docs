@@ -26,7 +26,7 @@ var timebase: CMTimebase { get }
 @property (retain, readonly) CMTimebaseRef timebase;
 ```
 
-#### Discussion
+## Discussion
 
 Apple discourages the use of this symbol in iOS 17, tvOS 17, and macOS 14 and later. Use [`timebase`](../avqueuedsamplebufferrendering/timebase.md) on the [`sampleBufferRenderer`](./samplebufferrenderer.md) instead.
 

@@ -17,11 +17,11 @@ static func asif(url: URL, blockCount: Int, blockSize: DiskImage.BlockSize) -> S
 
 Available when `Self` is `ASIFCreationConfiguration`.
 
-#### Return Value
+## Return Value
 
 An [`ASIFCreationConfiguration`](../../asifcreationconfiguration.md) instance for standalone use.
 
-#### Discussion
+## Discussion
 
 Use this initializer when creating a standalone image, or a base image for a stack, using [`init(creating:)`](../init%28creating%29.md). To create a cache or overlay layer for a stacked disk image, use [`asifLayer(url:type:)`](./asiflayer%28url,type%29.md) instead.
 

@@ -21,7 +21,7 @@ Gets a mutable view into a state buffer.
 - (void) getMultiArrayForStateNamed:(NSString *) stateName handler:(void (^)(MLMultiArray *buffer)) handler;
 ```
 
-#### Discussion
+## Discussion
 
 The underlying state buffer’s address can differ for each call; one shall not access the state buffer outside of the closure.
 

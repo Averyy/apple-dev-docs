@@ -24,7 +24,7 @@ var gatewayAddress: String? { get set }
 @property (copy, nullable) NSString * gatewayAddress;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is nil. When this property is nil, the route’s next-hop gateway will be set to the TUN interface unless it is a Split Exclude route.
 

@@ -19,7 +19,7 @@ var titleText: String? { get set }
 @property (nonatomic, copy, nullable) NSString * titleText;
 ```
 
-#### Discussion
+## Discussion
 
 The title is displayed along the top of the view.
 

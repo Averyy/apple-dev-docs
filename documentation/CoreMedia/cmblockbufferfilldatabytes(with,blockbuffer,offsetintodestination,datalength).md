@@ -25,7 +25,7 @@ func CMBlockBufferFillDataBytes(with fillByte: CChar, blockBuffer destinationBuf
 extern OSStatus CMBlockBufferFillDataBytes(char fillByte, CMBlockBufferRef destinationBuffer, size_t offsetIntoDestination, size_t dataLength);
 ```
 
-#### Return Value
+## Return Value
 
 Returns `kCMBlockBufferNoErr` if successful.
 

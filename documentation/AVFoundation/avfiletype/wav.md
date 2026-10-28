@@ -25,7 +25,7 @@ static let wav: AVFileType
 extern AVFileType const AVFileTypeWAVE;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this UTI is `com.microsoft.waveform-audio`. Files of this type have a `.wav`, `.wave`, or `.bwf` extension.
 

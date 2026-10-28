@@ -19,7 +19,7 @@ init(style: WKInterfaceAuthorizationAppleIDButton.Style, target: Any?, action: S
 - (instancetype) initWithStyle:(WKInterfaceAuthorizationAppleIDButtonStyle) style target:(id) target action:(SEL) action;
 ```
 
-#### Discussion
+## Discussion
 
 When the user taps the button, the system calls the `action` method on the target.
 

@@ -24,11 +24,11 @@ func oneHot(withIndicesTensor indicesTensor: MPSGraphTensor, depth: Int, axis: I
 - (MPSGraphTensor *) oneHotWithIndicesTensor:(MPSGraphTensor *) indicesTensor depth:(NSUInteger) depth axis:(NSUInteger) axis dataType:(MPSDataType) dataType name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor object.
 
-#### Discussion
+## Discussion
 
 Creates a tensor of rank equal to the rank of `indicesTensor` + 1. Inserts a new axis at the axis specified, or the minor axis if `axis` is -1. The values at the indices in the indicesTensor will be set to 1, and all other values will be set to 0.
 

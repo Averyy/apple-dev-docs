@@ -24,7 +24,7 @@ func requiresPerObjectAuthorization() -> Bool
 - (BOOL) requiresPerObjectAuthorization;
 ```
 
-#### Discussion
+## Discussion
 
 If this method returns [`true`](../../Swift/true.md), you must call [`requestPerObjectReadAuthorization(for:predicate:completion:)`](../hkhealthstore/requestperobjectreadauthorization%28for,predicate,completion%29.md) each time you want to query for the data type. The user can then select the individual samples that the app has permission to read. The system always prompts the user for permission, regardless of whether they’ve previously granted permission.
 

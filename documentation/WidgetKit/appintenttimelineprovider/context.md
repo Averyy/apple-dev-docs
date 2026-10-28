@@ -20,7 +20,7 @@ An object that contains details about how a widget is rendered, including its si
 typealias Context = TimelineProviderContext
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [`TimelineProviderContext`](../timelineprovidercontext.md).
 

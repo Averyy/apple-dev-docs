@@ -20,7 +20,7 @@ enum CGWindowBackingType
 enum CGWindowBackingType : uint32_t;
 ```
 
-#### Overview
+## Overview
 
 This type is used in conjunction with the constants described in [Backing Store Types](./backing-store-types.md).
 

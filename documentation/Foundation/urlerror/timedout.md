@@ -21,7 +21,7 @@ An asynchronous operation timed out.
 static var timedOut: URLError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 A URL session sends this error to its delegate when the `timeoutInterval` of a request  expires before a load can complete.
 

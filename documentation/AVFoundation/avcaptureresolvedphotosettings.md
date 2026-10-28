@@ -28,7 +28,7 @@ class AVCaptureResolvedPhotoSettings
 - [Configuring camera capture to collect a Portrait Effects matte](./configuring-camera-capture-to-collect-a-portrait-effects-matte.md)
 - [Tracking photo capture progress](./tracking-photo-capture-progress.md)
 
-#### Overview
+## Overview
 
 When you request a photo capture using the [`AVCapturePhotoOutput`](./avcapturephotooutput.md) [`capturePhoto(with:delegate:)`](./avcapturephotooutput/capturephoto%28with,delegate%29.md) method, you describe the settings for that capture request in an [`AVCapturePhotoSettings`](./avcapturephotosettings.md) object. When the capture begins, the photo output calls your delegate methods and provides an [`AVCaptureResolvedPhotoSettings`](./avcaptureresolvedphotosettings.md) object detailing the settings that are in effect for that capture. Resolved photo settings objects are immutable; they describe a request that has already been made.
 

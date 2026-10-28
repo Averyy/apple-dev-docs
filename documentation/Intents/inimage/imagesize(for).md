@@ -23,11 +23,11 @@ class func imageSize(for response: INIntentResponse) -> CGSize
 + (CGSize) imageSizeForIntentResponse:(INIntentResponse *) response;
 ```
 
-#### Return Value
+## Return Value
 
 The response object’s preferred image size.
 
-#### Discussion
+## Discussion
 
 If a response object includes an image, use this method to get its preferred size and then create an image of that size.
 

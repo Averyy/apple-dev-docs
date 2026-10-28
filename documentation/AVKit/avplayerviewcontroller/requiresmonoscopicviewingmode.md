@@ -19,7 +19,7 @@ var requiresMonoscopicViewingMode: Bool { get set }
 @property (nonatomic) BOOL requiresMonoscopicViewingMode;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `false`.
 

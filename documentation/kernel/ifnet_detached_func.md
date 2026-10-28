@@ -13,7 +13,7 @@
 typedef void (*ifnet_detached_func)(ifnet_t interface);
 ```
 
-#### Discussion
+## Discussion
 
 ifnet_detached_func is called an interface is detached from the list of interfaces. When ifnet_detach is called, it may not detach the interface immediately if protocols are attached. ifnet_detached_func is used to notify the interface that it has been detached from the networking stack. This is the last function that will be called on an interface. Until this function returns, you must not unload a kext supplying function pointers to this interface, even if ifnet_detacah has been called. Your detach function may be called during your call to ifnet_detach.
 

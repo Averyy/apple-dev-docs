@@ -21,11 +21,11 @@ Duplicates this file descriptor and returns the newly created copy.
 func duplicate(as target: FileDescriptor? = nil, retryOnInterrupt: Bool = true) throws -> FileDescriptor
 ```
 
-#### Return Value
+## Return Value
 
 The new file descriptor.
 
-#### Discussion
+## Discussion
 
 If the `target` descriptor is already in use, then it is first deallocated as if a close(2) call had been done first.
 

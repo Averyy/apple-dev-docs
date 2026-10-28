@@ -25,7 +25,7 @@ func count(for request: NSFetchRequest<any NSFetchRequestResult>) throws -> Int
 - (NSUInteger) countForFetchRequest:(NSFetchRequest *) request error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 The number of objects a given fetch request would have returned if it had been passed to [`fetch(_:)`](./fetch%28_%29-38ys1.md), or `NSNotFound` if an error occurs.
 

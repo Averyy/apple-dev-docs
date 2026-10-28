@@ -19,7 +19,7 @@ Applies a sigmoid function to each value.
 case sigmoid
 ```
 
-#### Discussion
+## Discussion
 
 Choose this when your values are unbounded logits that map to the 0 to 1 range, as opacity often is. The framework computes *f(x) = 1 / (1 + e^(-x))*.
 

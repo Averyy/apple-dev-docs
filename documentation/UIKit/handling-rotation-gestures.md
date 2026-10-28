@@ -5,7 +5,7 @@
 
 Measure the relative rotation of two fingers on the screen, and use that motion to rotate your content.
 
-#### Overview
+## Overview
 
 A rotation gesture is a continuous gesture that occurs when the first two fingers that touch the screen rotate around each other. Use the [`UIRotationGestureRecognizer`](./uirotationgesturerecognizer.md) class to detect rotation gestures.
 

@@ -4,7 +4,7 @@
 
 Displays a text field the user can interact with.
 
-#### Overview
+## Overview
 
 The `textField` element provides a field for users to enter text. This element is commonly used inside of other elements. Here’s an example of a text field prepopulated with an email as a guide to the user.
 
@@ -12,7 +12,7 @@ The `textField` element provides a field for users to enter text. This element i
 <textField>tclark@example.com</textField>
 ```
 
-##### Contained In
+### Contained In
 
 - [formTemplate](./formtemplate.md)
 

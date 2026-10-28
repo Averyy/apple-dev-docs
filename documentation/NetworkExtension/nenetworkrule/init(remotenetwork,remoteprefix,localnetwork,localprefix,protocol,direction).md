@@ -19,7 +19,7 @@ init(remoteNetwork: NWHostEndpoint?, remotePrefix: Int, localNetwork: NWHostEndp
 - (instancetype) initWithRemoteNetwork:(NWHostEndpoint *) remoteNetwork remotePrefix:(NSUInteger) remotePrefix localNetwork:(NWHostEndpoint *) localNetwork localPrefix:(NSUInteger) localPrefix protocol:(NENetworkRuleProtocol) protocol direction:(NETrafficDirection) direction;
 ```
 
-#### Discussion
+## Discussion
 
 If the port string of `remoteNetwork` is `0` or the empty string, then the rule matches traffic on any port coming from the remote network. If `remoteNetwork` is `nil`, the rule matches any remote network.
 

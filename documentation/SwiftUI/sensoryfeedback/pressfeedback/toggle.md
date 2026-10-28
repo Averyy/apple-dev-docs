@@ -21,7 +21,7 @@ Indicates that a toggle has been pressed (touch down).
 static let toggle: SensoryFeedback.PressFeedback
 ```
 
-#### Discussion
+## Discussion
 
 Toggle controls should also play [`selection(_:)`](../selection%28_%29.md) with [`on`](../selectionfeedback/on.md) and [`off`](../selectionfeedback/off.md).
 

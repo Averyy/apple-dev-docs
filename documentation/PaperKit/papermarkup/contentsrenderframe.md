@@ -19,7 +19,7 @@ The frame that tightly fits the rendered contents on the paper.
 var contentsRenderFrame: CGRect { get }
 ```
 
-#### Discussion
+## Discussion
 
 This frame includes padding around `contentsFrame` to ensure it includes all the rendered aspects of the content. For example, this frame will include the strokes, and shadows of any contents.
 

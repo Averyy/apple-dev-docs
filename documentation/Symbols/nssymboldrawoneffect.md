@@ -21,7 +21,7 @@ A symbol effect that applies the DrawOn animation to symbol images.
 @interface NSSymbolDrawOnEffect : NSSymbolEffect
 ```
 
-#### Overview
+## Overview
 
 The DrawOn animation makes the symbol visible either as a whole, or one motion group at a time, animating parts of the symbol with draw data.
 

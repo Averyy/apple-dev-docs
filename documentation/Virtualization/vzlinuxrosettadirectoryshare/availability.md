@@ -23,7 +23,7 @@ class var availability: VZLinuxRosettaAvailability { get }
 
 - [Running Intel Binaries in Linux VMs](../running-intel-binaries-in-linux-vms.md)
 
-#### Discussion
+## Discussion
 
 The value is one of the possible [`VZLinuxRosettaAvailability`](../vzlinuxrosettaavailability.md) values.
 

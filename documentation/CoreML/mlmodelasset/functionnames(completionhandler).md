@@ -29,7 +29,7 @@ var functionNames: [String] { get async throws }
 - (void) functionNamesWithCompletionHandler:(void (^)(NSArray<NSString *> *functionNames, NSError *error)) handler;
 ```
 
-#### Discussion
+## Discussion
 
 Some model types (e.g. ML Program) supports multiple functions. Use this method to query the function names.
 

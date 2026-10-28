@@ -20,7 +20,7 @@ constructor(
 );
 ```
 
-#### Discussion
+## Discussion
 
 The example below creates a new bounding region by passing the required longitude and latitude coordinates to the constructor:
 

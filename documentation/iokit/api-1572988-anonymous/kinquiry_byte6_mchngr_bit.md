@@ -15,7 +15,7 @@
 kINQUIRY_Byte6_MCHNGR_Bit = 3
 ```
 
-#### Discussion
+## Discussion
 
 MCHNGR bit definition.
 

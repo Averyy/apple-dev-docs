@@ -25,7 +25,7 @@ class func absoluteURL(withDataRepresentation data: Data, relativeTo baseURL: UR
 + (NSURL *) absoluteURLWithDataRepresentation:(NSData *) data relativeToURL:(NSURL *) baseURL;
 ```
 
-#### Discussion
+## Discussion
 
 If the data representation is not a legal URL string as ASCII bytes, the URL object may not behave as expected.
 

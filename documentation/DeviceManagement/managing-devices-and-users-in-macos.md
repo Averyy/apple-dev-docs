@@ -5,7 +5,7 @@
 
 Manage devices and users as separate entities in macOS.
 
-#### Overview
+## Overview
 
 A macOS client managed by a device management service enrolls devices and users as separate entities. Extensions to the MDM protocol in macOS enable managing the device and logged-in users independently. When enrollment occurs in this manner, the device management service receives separate requests for the device and each logged-in user.
 
@@ -46,7 +46,7 @@ The `UserConfiguration` key is optional. If present and `true`, the device is tr
 
 Extensions to the MDM protocol also enable multiple network users to log in to a device bound to an Open Directory. For more information, see [Enabling network and mobile user logins](./enabling-network-and-mobile-user-logins.md).
 
-#### Create a separate managed profile for each account
+## Create a separate managed profile for each account
 
 Don’t group multiple accounts together into a single profile. Create a separate profile for each account. This enables you to manage each account individually, such as to change an accountʼs settings or to remove an account when access requirements change.
 

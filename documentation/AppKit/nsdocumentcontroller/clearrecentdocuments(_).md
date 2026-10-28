@@ -20,7 +20,7 @@ func clearRecentDocuments(_ sender: Any?)
 - (void) clearRecentDocuments:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 This is the action for the Clear menu command, but it can be called directly if necessary.
 

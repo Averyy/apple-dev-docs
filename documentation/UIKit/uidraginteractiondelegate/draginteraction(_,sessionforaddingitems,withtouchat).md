@@ -22,11 +22,11 @@ optional func dragInteraction(_ interaction: UIDragInteraction, sessionForAdding
 - (id<UIDragSession>) dragInteraction:(UIDragInteraction *) interaction sessionForAddingItems:(NSArray<id<UIDragSession>> *) sessions withTouchAtPoint:(CGPoint) point;
 ```
 
-#### Return Value
+## Return Value
 
 The drag session to add drag items to, or `nil` to continue without adding drag items to any drag session.
 
-#### Discussion
+## Discussion
 
 If more than one drag session exists, the session used to add drag items may not be apparent to the user. Therefore, by default, no items are added to any session. If you want to change this behavior, implement this method and return the appropriate session. Return `nil` to continue without adding items.
 

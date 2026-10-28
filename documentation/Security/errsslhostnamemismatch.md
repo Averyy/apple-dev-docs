@@ -25,7 +25,7 @@ var errSSLHostNameMismatch: OSStatus { get }
 errSSLHostNameMismatch
 ```
 
-#### Discussion
+## Discussion
 
 This is commonly caused by an incorrect value for the [`kCFStreamSSLPeerName`](../CFNetwork/kcfstreamsslpeername.md) property within the dictionary associated with the stream’s [`kCFStreamPropertySSLSettings`](../CFNetwork/kcfstreampropertysslsettings.md) key.
 

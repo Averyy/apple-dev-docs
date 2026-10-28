@@ -23,11 +23,11 @@ init(id: LocalID)
 
 Available when `LocalID` conforms to `EntityIdentifierConvertible`, `LocalID` conforms to `Sendable`, and `LocalID` is `StableID`.
 
-#### Discussion
+## Discussion
 
 Use this for entities whose identifiers are already stable across devices, such as server-assigned UUIDs or globally unique identifiers.
 
-#### Example
+## Example
 
 ```swift
 struct Article: AppEntity, SyncableEntity {

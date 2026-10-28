@@ -5,7 +5,7 @@
 
 Use matrix multiplication to apply color transformations to images.
 
-#### Overview
+## Overview
 
 Matrix multiplication functions treat source pixels as `m`-element vectors, with the number of vector elements corresponding to the number of channels. The functions multiply each source value by an `n x m` matrix to produce an `n`-element destination pixel. You can use matrix multiplication functions for tasks like converting between color spaces. For example, you can multiply three-channel RGB pixels by a 4 x 3 matrix to generate four-channel CMYK pixels.
 

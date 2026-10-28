@@ -27,11 +27,11 @@ func transposed(permutation: Int...) -> MLTensor
 func transposed(permutation: [Int]) -> MLTensor
 ```
 
-#### Return Value
+## Return Value
 
 A permuted tensor.
 
-#### Discussion
+## Discussion
 
 For example:
 

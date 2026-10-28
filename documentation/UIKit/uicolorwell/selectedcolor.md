@@ -22,7 +22,7 @@ var selectedColor: UIColor? { get set }
 @property (nonatomic, strong, nullable) UIColor * selectedColor;
 ```
 
-#### Discussion
+## Discussion
 
 When a person selects a new color in the color picker, the system generates the control event [`valueChanged`](../uicontrol/event/valuechanged.md).
 

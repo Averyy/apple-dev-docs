@@ -23,11 +23,11 @@ func IOIteratorNext(_ iterator: io_iterator_t) -> io_object_t
 io_object_t IOIteratorNext(io_iterator_t iterator);
 ```
 
-#### Return Value
+## Return Value
 
 If the iterator handle is valid, the next element in the iteration is returned, otherwise zero is returned. The element should be released by the caller when it is finished.
 
-#### Discussion
+## Discussion
 
 This function returns the next object in an iteration, or zero if no more remain or the iterator is invalid.
 

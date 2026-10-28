@@ -19,7 +19,7 @@ Magnify gestures are enabled.
 static let enabled: WebView.MagnificationGesturesBehavior
 ```
 
-#### Discussion
+## Discussion
 
 The web view allows magnify gestures to change its magnification.
 

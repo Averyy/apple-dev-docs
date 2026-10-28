@@ -24,11 +24,11 @@ convenience init(device: any MTLDevice, imageDescriptor: MPSImageDescriptor)
 - (instancetype) initWithDevice:(id<MTLDevice>) device imageDescriptor:(const MPSImageDescriptor *) imageDescriptor;
 ```
 
-#### Return Value
+## Return Value
 
 A valid [`MPSImage`](../mpsimage.md) object or `nil`, if failure.
 
-#### Discussion
+## Discussion
 
 Storage for the image data is allocated lazily on the first use of the [`MPSImage`](../mpsimage.md) object, or when the [`texture`](./texture.md) property is first read.
 

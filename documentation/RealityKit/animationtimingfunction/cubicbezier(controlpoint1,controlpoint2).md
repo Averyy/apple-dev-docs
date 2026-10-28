@@ -20,7 +20,7 @@ Creates a timing function that accelerates and then decelerates towards the targ
 static func cubicBezier(controlPoint1: SIMD2<Float>, controlPoint2: SIMD2<Float>) -> AnimationTimingFunction
 ```
 
-#### Return Value
+## Return Value
 
 The cubic bezier timing function.
 

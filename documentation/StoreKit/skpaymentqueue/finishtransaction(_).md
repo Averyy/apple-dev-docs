@@ -39,7 +39,7 @@ func finishTransaction(_ transaction: SKPaymentTransaction)
 - [Testing at all stages of development with Xcode and the sandbox](../testing-at-all-stages-of-development-with-xcode-and-the-sandbox.md)
 - [Testing resubscribing from the subscriptions page](../testing-resubscribing-from-the-subscriptions-page.md)
 
-#### Discussion
+## Discussion
 
 Transactions on the payment queue are persistent until they are completed. StoreKit calls your observer’s [`paymentQueue(_:updatedTransactions:)`](../skpaymenttransactionobserver/paymentqueue%28_,updatedtransactions%29.md) method every time your app launches or resumes from background to tell you about transactions in the queue. After you’ve finished processing a transaction in your app, always call the [`finishTransaction(_:)`](./finishtransaction%28_%29.md) method to finish the transaction and remove it from the queue.
 

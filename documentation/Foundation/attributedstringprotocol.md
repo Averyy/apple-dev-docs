@@ -22,7 +22,7 @@ A protocol that provides common functionality to attributed strings and attribut
 protocol AttributedStringProtocol : AttributedStringAttributeMutation, CustomStringConvertible, Hashable, Sendable
 ```
 
-#### Overview
+## Overview
 
 Don’t declare new conformances to [`AttributedStringProtocol`](./attributedstringprotocol.md). Only the [`AttributedString`](./attributedstring.md) and [`AttributedSubstring`](./attributedsubstring.md) types in the standard library are valid conforming types.
 

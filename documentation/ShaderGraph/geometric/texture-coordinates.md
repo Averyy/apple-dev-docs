@@ -14,7 +14,7 @@ The 2D or 3D texture coordinates of the currently-processed data.
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 **Texture Coordinates (vector2f)**:
 
@@ -36,7 +36,7 @@ The 2D or 3D texture coordinates of the currently-processed data.
 | --- | --- |
 | `Out` | Vector4f |
 
-#### Parameter description
+## Parameter description
 
 - **`Index`**: The index of the texture coordinates to reference; the default is `0`.
 

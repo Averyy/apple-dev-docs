@@ -26,7 +26,7 @@ var preferredPeakBitRateForExpensiveNetworks: Double { get set }
 @property double preferredPeakBitRateForExpensiveNetworks;
 ```
 
-#### Discussion
+## Discussion
 
 When this value is nonzero, the player attempts to limit item playback by the specified bit rate when streaming over an expensive network, such as a cellular data plan. If the system can’t reduce the bit rate to meet this value, it reduces it as much as possible while it continues to play the item.
 

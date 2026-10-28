@@ -19,7 +19,7 @@ var data: Data! { get }
 @property (nonatomic, copy, readonly) NSData * data;
 ```
 
-#### Discussion
+## Discussion
 
 Can be used to save the web archive to a file, to put it on the pasteboard using the [`WebArchivePboardType`](../webarchivepboardtype.md) type, or used to initialize another web archive using the [`init(data:)`](./init%28data%29.md) method.
 

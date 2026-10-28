@@ -23,7 +23,7 @@ class UITableViewPlaceholder
 @interface UITableViewPlaceholder : NSObject
 ```
 
-#### Overview
+## Overview
 
 During a drop operation, create a [`UITableViewDropPlaceholder`](./uitableviewdropplaceholder.md) object (instead of this one) to insert placeholders into your table.
 

@@ -24,7 +24,7 @@ case accessoryInline
 - [Creating views for widgets, Live Activities, and watch complications](../creating-views-for-widgets-live-activities-and-watch-complications.md)
 - [Preparing widgets for additional platforms, contexts, and appearances](../preparing-widgets-for-additional-contexts-and-appearances.md)
 
-#### Discussion
+## Discussion
 
 The accessory inline widget can appear as a complication in watchOS, or on the Lock Screen in iOS and iPadOS. On some watch faces, the system renders the complication along a curve.
 

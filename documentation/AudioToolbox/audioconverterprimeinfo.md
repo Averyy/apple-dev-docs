@@ -24,7 +24,7 @@ struct AudioConverterPrimeInfo
 struct AudioConverterPrimeInfo;
 ```
 
-#### Overview
+## Overview
 
 Some audio data format conversions, particularly those involving sample-rate conversion, yield higher quality output when leading or trailing frames are available to the converter. The appropriate number of these so-called *priming frames* depends on the input audio data format.
 

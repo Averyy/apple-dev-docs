@@ -19,7 +19,7 @@ var isIdle: Bool { get }
 @property (nonatomic, readonly, getter=isIdle) BOOL idle;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) when the user is not rotating the crown and [`false`](../../Swift/false.md) when the user is rotating the crown.
 

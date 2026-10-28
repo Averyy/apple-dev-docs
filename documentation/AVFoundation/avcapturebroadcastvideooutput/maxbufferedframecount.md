@@ -23,7 +23,7 @@ var maxBufferedFrameCount: Int { get set }
 @property (nonatomic) NSInteger maxBufferedFrameCount;
 ```
 
-#### Discussion
+## Discussion
 
 When set to a value greater than 0, the buffer absorbs minor timing jitter in the capture pipeline, reducing the possibility of dropping frames during temporary processing variations. Frames accumulate in the buffer up to the specified limit. Once the buffer reaches [`maxBufferedFrameCount`](./maxbufferedframecount.md), the oldest frame is removed to make room for each new incoming frame, maintaining a rolling window of buffered content.
 

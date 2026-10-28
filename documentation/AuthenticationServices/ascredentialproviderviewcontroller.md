@@ -31,7 +31,7 @@ class ASCredentialProviderViewController
 @interface ASCredentialProviderViewController : NSViewController
 ```
 
-#### Overview
+## Overview
 
 To integrate a password, passkey, or one-time passcode manager app with AutoFill:
 
@@ -40,7 +40,7 @@ To integrate a password, passkey, or one-time passcode manager app with AutoFill
 3. Optionally add [`ASPasswordCredentialIdentity`](./aspasswordcredentialidentity.md) and [`ASPasskeyCredentialIdentity`](./aspasskeycredentialidentity.md) instances to the shared [`ASCredentialIdentityStore`](./ascredentialidentitystore.md) to make identities available directly in the AutoFill suggestions list. Then override the [`provideCredentialWithoutUserInteraction(for:)`](./ascredentialproviderviewcontroller/providecredentialwithoutuserinteraction%28for%29-3mo23.md) method to provide the associated credentials when the person taps a suggestion.
 4. Optionally, override the [`prepareInterfaceForExtensionConfiguration()`](./ascredentialproviderviewcontroller/prepareinterfaceforextensionconfiguration%28%29.md) method to specify a configuration interface that you can show when people first enable your credentials manager in Settings.
 
-##### Receiving credential updates
+### Receiving credential updates
 
 Apps and websites that allow sign-ins can signal updates to the operating system with the [`ASCredentialUpdater`](./ascredentialupdater.md) class. The various “report” methods of [`ASCredentialUpdater`](./ascredentialupdater.md) work like the “signal” methods of `PublicKeyCredential` when using WebAuthn on the web. For example, a website or app can notify credential manager apps that it updated a user name or email for a given account, allowing the manager to stay consistent with the website.
 

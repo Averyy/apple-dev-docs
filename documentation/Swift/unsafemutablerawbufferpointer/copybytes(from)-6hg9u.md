@@ -21,7 +21,7 @@ Copies from a collection of `UInt8` into this buffer’s memory.
 func copyBytes<C>(from source: C) where C : Collection, C.Element == UInt8
 ```
 
-#### Discussion
+## Discussion
 
 If the first `source.count` bytes of memory referenced by this buffer are bound to a type `T`, then `T` must be a trivial type, the underlying pointer must be properly aligned for accessing `T`, and `source.count` must be a multiple of `MemoryLayout<T>.stride`.
 

@@ -15,7 +15,7 @@ Returns a Boolean value that indicates whether the specified key is in the speci
 - (BOOL) isKey:(NSString *) key inTable:(NSString *) table;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the key is in the table; otherwise, [`false`](../../Swift/false.md).
 

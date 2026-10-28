@@ -5,7 +5,7 @@
 
 Enable background audio in your app to provide a seamless playback experience.
 
-#### Overview
+## Overview
 
 While most watchOS apps are optimized for quick interactions, apps that play audio content should continue playing even after the user lowers their wrists or navigates to a new app. Your app needs to play audio in the background in order to provide this seamless playback experience.
 
@@ -15,15 +15,15 @@ To play background audio:
 2. Configure and Activate the audio session.
 3. Start playing.
 
-##### Enable the Audio Background Mode
+### Enable the Audio Background Mode
 
-First, you must enable the Audio Background Mode capability for your WatchKit extension, as shown in [Figure 1](./storyboard_support/playing_background_audio.md#3008217).
+First, you must enable the Audio Background Mode capability for your WatchKit extension, as shown in [Figure 1](./playing-background-audio.md#3008217).
 
 ![A screenshot showing the Audio Background mode in your WatchKit extension’s Capabilities pane.](https://developer.apple.com/tutorials/images/com.apple.watchkit/media-3008217@2x.png)
 
 This step sets the [UIBackgroundModes](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/iPhoneOSKeys.html#//apple_ref/doc/plist/info/UIBackgroundModes) key in your extension’s `Info.plist` file.
 
-##### Configure and Activate the Audio Session
+### Configure and Activate the Audio Session
 
 Before you can play audio, you need to set up and activate the audio session.
 
@@ -42,13 +42,13 @@ Next, activate the session, by calling the [`activate(options:completionHandler:
 try await session.activate()
 ```
 
-This method sets up the audio route asynchronously before activating your session. watchOS requires a Bluetooth audio route for long-form audio. If necessary, the system presents an audio route picker to the user, letting them choose the Bluetooth route (see [Figure 2](./storyboard_support/playing_background_audio.md#3016837)).
+This method sets up the audio route asynchronously before activating your session. watchOS requires a Bluetooth audio route for long-form audio. If necessary, the system presents an audio route picker to the user, letting them choose the Bluetooth route (see [Figure 2](./playing-background-audio.md#3016837)).
 
 ![A screenshot of the audio route picker, showing two different Bluetooth headphones.](https://developer.apple.com/tutorials/images/com.apple.watchkit/media-3016837@2x.png)
 
 In general, if the user has previously selected a Bluetooth route or if AirPods or other W1-equipped Bluetooth headphones are nearby, the system picks the audio route automatically without displaying a picker view to the user. If no applicable Bluetooth route is selected (either automatically or by the user), the system passes an error to the completion handler.
 
-##### Start Playing
+### Start Playing
 
 The [`activate(options:completionHandler:)`](../AVFAudio/avaudiosession/activate%28options,completionhandler%29.md) method calls its completion handler as soon as a Bluetooth route is selected or when an error occurs. Check for errors in the completion handler. If no errors occurred, you can begin playing your audio content.
 

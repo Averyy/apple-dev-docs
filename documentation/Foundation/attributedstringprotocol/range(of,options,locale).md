@@ -21,7 +21,7 @@ Returns the range of a substring in the attributed string, if it exists.
 func range<T>(of stringToFind: T, options: String.CompareOptions = [], locale: Locale? = nil) -> Range<AttributedString.Index>? where T : StringProtocol
 ```
 
-#### Return Value
+## Return Value
 
 The range where `stringToFind` exists in the attributed string, or `nil` if it isn’t present.
 

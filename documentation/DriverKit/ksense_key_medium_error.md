@@ -16,7 +16,7 @@
 kSENSE_KEY_MEDIUM_ERROR
 ```
 
-#### Discussion
+## Discussion
 
 Device server detected a medium error.
 

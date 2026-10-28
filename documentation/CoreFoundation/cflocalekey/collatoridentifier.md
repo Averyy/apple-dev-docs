@@ -25,7 +25,7 @@ static let collatorIdentifier: CFLocaleKey!
 extern CFLocaleKey const kCFLocaleCollatorIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is a CFString object. If unknown, `nil` is returned.
 

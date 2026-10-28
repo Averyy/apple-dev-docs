@@ -19,7 +19,7 @@ var presentationFrame: NSRect { get }
 @property (readonly) NSRect presentationFrame;
 ```
 
-#### Discussion
+## Discussion
 
 You specify this value at initialization time. The system uses it to position the preview image over the text in your view. Make sure the frame rectangle is in your view’s coordinate space.
 

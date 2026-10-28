@@ -24,11 +24,11 @@ func MusicSequenceSetMIDIEndpoint(_ inSequence: MusicSequence, _ inEndpoint: MID
 extern OSStatus MusicSequenceSetMIDIEndpoint(MusicSequence inSequence, MIDIEndpointRef inEndpoint);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 
-#### Discussion
+## Discussion
 
 This is a convenience function, equivalent to iterating through the music tracks in a music sequence and targeting each to the MIDI endpoint.
 

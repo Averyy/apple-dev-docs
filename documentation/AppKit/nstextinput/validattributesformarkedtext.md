@@ -15,11 +15,11 @@ Returns an array of names for the attributes supported by the receiver.
 - (NSArray *) validAttributesForMarkedText;
 ```
 
-#### Return Value
+## Return Value
 
 An array of `NSString` objects representing names for the supported attributes.
 
-#### Discussion
+## Discussion
 
 The input server may choose to use some of these attributes in the text it inserts or in marked text. Returns an empty array if no attributes are supported. See NSAttributedString Additions for the set of string constants that you could return in the array.
 

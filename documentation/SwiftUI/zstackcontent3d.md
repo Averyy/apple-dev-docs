@@ -16,7 +16,7 @@ A type that adds spacing to a [`ZStack`](./zstack.md).
 nonisolated struct ZStackContent3D<Content> where Content : View
 ```
 
-#### Overview
+## Overview
 
 You don’t create this type directly. SwiftUI creates it for you when you use the `ZStack(alignment:spacing:content)` initializer.
 

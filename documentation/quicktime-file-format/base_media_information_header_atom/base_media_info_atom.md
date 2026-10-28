@@ -6,7 +6,7 @@
 
 An atom that defines the media’s control information, including graphics mode and balance information.
 
-#### Overview
+## Overview
 
 See [`Base media info atom`](../base_media_info_atom.md).
 

@@ -19,7 +19,7 @@ Gets the associated App Intent.
 func configurationIntent<Intent>(of intentType: Intent.Type = Intent.self) -> Intent? where Intent : ControlConfigurationIntent
 ```
 
-#### Return Value
+## Return Value
 
 An App Intent that contains the user-edited values or nil if there is no associated App Intent or the type does not match `intentType`.
 

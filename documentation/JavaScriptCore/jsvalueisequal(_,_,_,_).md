@@ -24,7 +24,7 @@ func JSValueIsEqual(_ ctx: JSContextRef!, _ a: JSValueRef!, _ b: JSValueRef!, _ 
 bool JSValueIsEqual(JSContextRef ctx, JSValueRef a, JSValueRef b, JSValueRef*exception);
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if the two values are equal according to the JavaScript `==` operator; [`false`](../Swift/false.md) if they’re unequal or the system throws an exception.
 

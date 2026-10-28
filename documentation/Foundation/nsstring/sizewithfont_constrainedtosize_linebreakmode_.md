@@ -19,11 +19,11 @@ Returns the size of the string if it were rendered with the specified constraint
 - (CGSize) sizeWithFont:(UIFont *) font constrainedToSize:(CGSize) size lineBreakMode:(NSLineBreakMode) lineBreakMode;
 ```
 
-#### Return Value
+## Return Value
 
 The width and height of the resulting string’s bounding box. These values may be rounded up to the nearest whole number.
 
-#### Discussion
+## Discussion
 
 You can use this method to obtain the layout metrics you need to draw a string in your user interface. This method does not actually draw the string or alter the receiver’s text in any way.
 

@@ -15,7 +15,7 @@ A Boolean value indicating whether this is an error object.
 readonly attribute Boolean isError;
 ```
 
-#### Discussion
+## Discussion
 
 This property is always `true`; for example, use this method when processing the results of operations that may contain errors.
 

@@ -18,7 +18,7 @@ let vmnet_read_max_packets_key: UnsafePointer<CChar>
 extern const char * const vmnet_read_max_packets_key;
 ```
 
-#### Discussion
+## Discussion
 
 The maximum value that *pktcnt may have in the call to vmnet_read().
 

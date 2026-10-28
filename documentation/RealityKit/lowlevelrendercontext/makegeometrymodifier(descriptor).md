@@ -22,8 +22,8 @@ func makeGeometryModifier(descriptor: LowLevelMaterialResource.GeometryModifier.
 **Other overloads**:
 
 ```swift
-nonisolated
-(nonsending) func makeGeometryModifier(descriptor: LowLevelMaterialResource.GeometryModifier.Descriptor) async throws -> sending LowLevelMaterialResource.GeometryModifier
+nonisolated(nonsending)
+func makeGeometryModifier(descriptor: LowLevelMaterialResource.GeometryModifier.Descriptor) async throws -> sending LowLevelMaterialResource.GeometryModifier
 ```
 
 

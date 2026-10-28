@@ -23,11 +23,11 @@ func moveInitialize<Element>(fromContentsOf source: UnsafeMutableBufferPointer<E
 
 Available when `Base` conforms to `Collection`.
 
-#### Return Value
+## Return Value
 
 The index one past the last element of the buffer slice initialized by this function.
 
-#### Discussion
+## Discussion
 
 Prior to calling the `moveInitialize(fromContentsOf:)` method on a buffer slice, the memory it references must be uninitialized, or its `Element` type must be a trivial type. After the call, the memory referenced by the buffer slice up to, but not including, the returned index is initialized. The memory referenced by `source` is uninitialized after the function returns. The buffer slice must reference enough memory to accommodate `source.count` elements.
 

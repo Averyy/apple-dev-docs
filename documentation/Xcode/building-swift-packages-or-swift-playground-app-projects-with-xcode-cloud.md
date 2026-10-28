@@ -5,7 +5,7 @@
 
 Add your Swift package or Swift Playgrounds app project to an Xcode project to build it in Xcode Cloud.
 
-#### Overview
+## Overview
 
 Xcode Cloud comes with support for the Swift Package Manager, and using Swift package dependencies in your app project requires little to no configuration. However, Xcode Cloud can’t build standalone Swift packages. To build your Swift package with Xcode Cloud:
 

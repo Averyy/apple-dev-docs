@@ -13,11 +13,11 @@
 ifnet_family_t ifnet_family(ifnet_t interface);
 ```
 
-#### Return Value
+## Return Value
 
 Interface family type.
 
-#### Discussion
+## Discussion
 
 Returns the family of the interface.
 

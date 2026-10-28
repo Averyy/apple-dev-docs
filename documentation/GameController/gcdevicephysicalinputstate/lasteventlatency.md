@@ -25,7 +25,7 @@ var lastEventLatency: TimeInterval { get }
 @property (readonly) NSTimeInterval lastEventLatency;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property as a minimum latency value that may not include latency that accrues on the device or when it transmits the event. If the host goes to sleep between when the event occurs and when you get this property, the value may not be accurate.
 

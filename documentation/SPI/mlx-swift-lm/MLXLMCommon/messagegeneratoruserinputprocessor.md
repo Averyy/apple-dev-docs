@@ -17,7 +17,7 @@ Applies a configured message generator before delegating input processing.
 struct MessageGeneratorUserInputProcessor
 ```
 
-#### Overview
+## Overview
 
 This lets a model configuration override a VLM processor’s built-in generator without changing the processor implementation.
 

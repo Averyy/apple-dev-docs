@@ -45,7 +45,7 @@ var color: NSColor { get set }
 
 - [Tinting a Sprite](../tinting-a-sprite.md)
 
-#### Discussion
+## Discussion
 
 If the [`texture`](./texture.md) property is non-`nil`, the red, green, and blue values of the color property are blended with the texture before the texture is drawn and the alpha property is ignored. If the [`texture`](./texture.md) property is `nil`, the color (including the alpha component) is used to draw a single-color rectangle.
 

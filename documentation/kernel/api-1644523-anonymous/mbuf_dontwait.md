@@ -13,7 +13,7 @@
 MBUF_DONTWAIT = 1
 ```
 
-#### Discussion
+## Discussion
 
 Don't allow the mbuf allocation call to block, if blocking is necessary fail and return immediately.
 

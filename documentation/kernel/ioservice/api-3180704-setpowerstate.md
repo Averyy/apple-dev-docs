@@ -24,11 +24,11 @@ virtual kern_return_t SetPowerState(uint32_t powerFlags);
 kern_return_t SetPowerState(uint32_t powerFlags, OSDispatchMethod supermethod);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../../DriverKit/error-codes.md). 
 
-#### Discussion
+## Discussion
 
 DriverKit calls this method to notify your service when the power state of its provider changes. Implement this method in your service object and use it to put your driver in a safe state for the new power setting. Call `super` as the last step in your implementation. 
 

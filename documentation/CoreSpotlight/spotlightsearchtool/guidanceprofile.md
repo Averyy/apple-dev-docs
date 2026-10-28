@@ -19,7 +19,7 @@ Options for which techniques to use to determine a match.
 struct GuidanceProfile
 ```
 
-#### Overview
+## Overview
 
 When you configure the [`SpotlightSearchTool`](../spotlightsearchtool.md) with the [`SpotlightSearchTool.GuidanceLevel.dynamic(_:)`](./guidancelevel/dynamic%28_%29.md) guidance option, you provide an instance of this structure. Configure the structure with the search techniques you want to allow or disallow, and might do so to prevent searches using techniques that don’t apply to your content. If you don’t specify a value for a property, the tool doesn’t use that search option.
 

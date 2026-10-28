@@ -19,7 +19,7 @@ protocol MEFormatReader : NSObjectProtocol
 @protocol MEFormatReader <NSObject>
 ```
 
-#### Overview
+## Overview
 
 This protocol provides an interface for the Media Toolbox to interact with extension plug-in format readers, which provide information about media assets. `MEFormatReader` objects are always instantiated by the Media Toolbox.
 

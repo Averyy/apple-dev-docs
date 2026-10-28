@@ -19,7 +19,7 @@ func CMAudioDeviceClockGetAudioDevice(_ clock: CMClock, deviceUIDOut: Autoreleas
 extern OSStatus CMAudioDeviceClockGetAudioDevice(CMClockRef clock, CFStringRef*deviceUIDOut, AudioDeviceID *deviceIDOut, Boolean *trackingDefaultDeviceOut);
 ```
 
-#### Return Value
+## Return Value
 
 A value that indicates the completion status.
 

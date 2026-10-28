@@ -21,11 +21,11 @@ Creates a new program object.
 + (instancetype) program;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized `SCNProgram` object, or `nil` if initialization is not successful.
 
-#### Discussion
+## Discussion
 
 You cannot use the newly created program object for rendering until you provide shader source code for its [`vertexShader`](./vertexshader.md) and [`fragmentShader`](./fragmentshader.md) properties.
 

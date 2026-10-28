@@ -20,7 +20,7 @@ A generic activity.
 static let generic: GroupActivityMetadata.ActivityType
 ```
 
-#### Discussion
+## Discussion
 
 This is the default value if no type is set.
 

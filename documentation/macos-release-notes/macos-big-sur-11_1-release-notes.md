@@ -5,23 +5,23 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 The macOS 11.1 SDK provides support to develop apps for Macs running macOS Big Sur 11.1. The SDK comes bundled with Xcode 12.3. For information on the compatibility requirements for Xcode 12.3, see [Xcode 12.3 Release Notes](../Xcode-Release-Notes/xcode-12_3-release-notes.md).
 
-##### AppKit
+### AppKit
 
-###### Resolved Issues
+#### Resolved Issues
 
 - [`NSToolbar`](../AppKit/nstoolbar.md) controls now draw the background correctly when you click or roll over them. (71592628)
 
-##### Mac Catalyst
+### Mac Catalyst
 
-###### New Features
+#### New Features
 
 - iOS & iPadOS apps with non-resizable windows can now enter full-screen mode. (70103920)
 
-###### Known Issues
+#### Known Issues
 
 - When you present a view controller with page sheet or form sheet presentation style, the size of the view controller’s root view is, by default, determined by the value returned from the presented view controller’s [`preferredContentSize`](../UIKit/uiviewcontroller/preferredcontentsize.md) method and the view is not resizable. You can arrange for the presented view controller to be resizable by using Auto Layout to specify the maximum and minimum sizes of its root view. To enable this, set the [`canResizeToFitContent`](../UIKit/uiwindow/canresizetofitcontent.md) property of the application’s main window to YES. One way to do this is to override the [`willMove(toWindow:)`](../UIKit/uiview/willmove%28towindow%29.md) or [`didMoveToWindow()`](../UIKit/uiview/didmovetowindow%28%29.md) methods of a view in the main view controller. (65254666)
 

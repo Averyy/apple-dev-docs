@@ -25,11 +25,11 @@ convenience init?(toFileAtPath path: String, append shouldAppend: Bool)
 - (instancetype) initToFileAtPath:(NSString *) path append:(BOOL) shouldAppend;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized output stream that can write to `path`.
 
-#### Discussion
+## Discussion
 
 The stream must be opened before it can be used.
 

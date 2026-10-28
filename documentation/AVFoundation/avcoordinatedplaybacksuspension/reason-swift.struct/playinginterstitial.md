@@ -24,7 +24,7 @@ static let playingInterstitial: AVCoordinatedPlaybackSuspension.Reason
 extern AVCoordinatedPlaybackSuspensionReason const AVCoordinatedPlaybackSuspensionReasonPlayingInterstitial;
 ```
 
-#### Discussion
+## Discussion
 
 Interstitials are content a player presents that’s unrelated to the primary content, such as advertisements and legal warnings.
 

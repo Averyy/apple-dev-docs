@@ -25,7 +25,7 @@ func cblas_zsyrk(_ ORDER: CBLAS_ORDER, _ UPLO: CBLAS_UPLO, _ TRANS: CBLAS_TRANSP
 void cblas_zsyrk(const enum CBLAS_ORDER ORDER, const enum CBLAS_UPLO UPLO, const enum CBLAS_TRANSPOSE TRANS, const __LAPACK_int N, const __LAPACK_int K, const __LAPACK_double_complex *ALPHA, const __LAPACK_double_complex *A, const __LAPACK_int LDA, const __LAPACK_double_complex *BETA, __LAPACK_double_complex *C, const __LAPACK_int LDC);
 ```
 
-#### Discussion
+## Discussion
 
 Calculates `alpha*A*A`; if transposed, calculates `alpha*A`.
 

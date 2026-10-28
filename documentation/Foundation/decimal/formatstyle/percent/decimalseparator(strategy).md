@@ -21,7 +21,7 @@ Modifies the format style to use the specified decimal separator display strateg
 func decimalSeparator(strategy: Decimal.FormatStyle.Percent.Configuration.DecimalSeparatorDisplayStrategy) -> Decimal.FormatStyle.Percent
 ```
 
-#### Return Value
+## Return Value
 
 A decimal percent format style modified to use the specified decimal separator display strategy.
 

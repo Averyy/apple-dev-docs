@@ -21,7 +21,7 @@ Replaces this string with the empty string.
 mutating func removeAll(keepingCapacity keepCapacity: Bool = false)
 ```
 
-#### Discussion
+## Discussion
 
 Calling this method invalidates any existing indices for use with this string.
 

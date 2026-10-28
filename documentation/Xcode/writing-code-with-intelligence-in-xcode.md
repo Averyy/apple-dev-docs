@@ -5,13 +5,13 @@
 
 Start conversations with an agent or model in Xcode to generate code, navigate unfamiliar codebases, and fix or refactor existing code.
 
-#### Overview
+## Overview
 
 Open the coding assistant, enter your prompts, and see the results in the transcript and artifacts panes. Undo changes or roll them back using the conversation history. Then organize your conversations with an agent or chat model by feature or approach using the conversation sidebar.
 
 To set up an agent or chat provider in Intelligence settings before you begin, see [Setting up coding intelligence](./setting-up-coding-intelligence.md).
 
-#### Start conversations with an agent or model
+## Start conversations with an agent or model
 
 After you enable one or more agents and chat models, you can start conversations in different places in your project where it’s most convenient for you.
 
@@ -24,7 +24,7 @@ Xcode adds a New Conversation to the list in the conversation sidebar and shows 
 
 To show or hide the conversation sidebar from anywhere in your project, click the Coding Assistant button. To start conversations in the source editor, see [Using coding intelligence in the source editor](./using-coding-intelligence-in-the-source-editor.md).
 
-#### Enter prompts in the message text field
+## Enter prompts in the message text field
 
 Enter your prompts in the message text field at the bottom of the transcript or click one of the suggested prompts. If you start a new conversation, Xcode changes the name of the conversation to the first prompt that you enter.
 
@@ -45,7 +45,7 @@ Use other buttons in the message text field to manage a request:
 
 If you use a chat product, a Project Context button appears in the lower-left corner of the message text field and is on by default. This allows Xcode to share relevant code and other context from your project with the model. To narrow the scope of the project files, you can turn off the automatic search feature and add explicit references to files and symbols in your prompt instead.
 
-#### Review responses in the transcript
+## Review responses in the transcript
 
 When you submit a prompt, Xcode appends it to the transcript above the message text field and the Assistant Activity button in the project window toolbar starts spinning. You can watch the progress in the transcript or do other tasks in the project window while you wait. When a response finishes, the Assistant Activity button stops spinning and Xcode stops updating the transcript. To quickly jump to the transcript from anywhere in your project, click the Assistant Activity button.
 
@@ -61,7 +61,7 @@ To navigate quickly between conversations, use the jump bar in the toolbar or se
 
 For more information on giving agents more tools, including managing permissions you grant in the transcript, see [Extending and customizing agents](./extending-and-customizing-agents.md).
 
-#### View project changes in the artifacts pane
+## View project changes in the artifacts pane
 
 Any changes that Xcode makes to your project files using intelligence appear in the artifacts pane on the right or below the transcript.
 
@@ -71,7 +71,7 @@ To add annotations to the code where you want to make edits, hover the pointer o
 
 To jump to a file in the source editor from the artifacts pane, double-click the filename, or to show or hide the artifacts pane, choose Show Artifacts from the filter button pop-up menu.
 
-#### Apply changes to your code when you are ready
+## Apply changes to your code when you are ready
 
 If you use an agent, you can enter plan mode to iterate on a software design and approve it before Xcode modifies any code.
 
@@ -81,7 +81,7 @@ If you use a chat product, you control whether Xcode modifies your project in th
 
 To apply a proposed change, click the code snippet in the response and click Apply in the dialog that appears. If the change adds a new file, click Create New File in the dialog.
 
-#### Roll back changes using the conversation history
+## Roll back changes using the conversation history
 
 Use the conversation history that Xcode maintains to rollback changes to a known state of your project, or to review changes across multiple files in your project.
 
@@ -97,7 +97,7 @@ To hide the conversation history, choose Dismiss History from the More button in
 
 > **Note**: To use the History feature, your project must have a Git repository. If you don’t have a repository, click the Create Repository button that appears when you click the History button.
 
-#### Organize conversations into groups
+## Organize conversations into groups
 
 To find the conversations that you have with agents and chat models more easily, rename them appropriately and organize them into groups. For example, you can create a new conversation for each part of a feature you’re working on and create a group for each feature of your app.
 

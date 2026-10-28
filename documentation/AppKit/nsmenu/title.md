@@ -19,7 +19,7 @@ var title: String { get set }
 @property (copy) NSString * title;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains a string value indicating the title of the menu. If the menu is a submenu of the application’s main menu, then the title of the menu appears in the menu bar.
 

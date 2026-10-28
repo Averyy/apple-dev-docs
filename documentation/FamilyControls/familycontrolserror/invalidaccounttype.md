@@ -17,7 +17,7 @@ The device isn’t signed into a valid iCloud account.
 case invalidAccountType
 ```
 
-#### Discussion
+## Discussion
 
 To request or revoke authorization, the user must sign into iCloud from a child account that’s part of a Family Sharing group.
 

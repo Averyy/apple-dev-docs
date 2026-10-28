@@ -23,7 +23,7 @@ var priority: UILayoutPriority { get set }
 @property UILayoutPriority priority;
 ```
 
-#### Discussion
+## Discussion
 
 By default, all constraints are required; this property is set to [`required`](../../AppKit/nslayoutconstraint/priority-swift.struct/required.md) in macOS or `UILayoutPriorityRequired` in iOS.
 

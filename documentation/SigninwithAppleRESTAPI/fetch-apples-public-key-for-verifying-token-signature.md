@@ -13,7 +13,7 @@ Fetch Apple’s public key to verify ID token and server notification signatures
 
 - [Processing changes for Sign in with Apple accounts](../SigninwithApple/processing-changes-for-sign-in-with-apple-accounts.md)
 
-#### Discussion
+## Discussion
 
 If successful, the HTTP status code is 200 (OK) and the [`JWKSet.Keys`](./jwkset/keys-data.dictionary.md) object contains Apple’s public key. For more information, see [Verifying a user](../SigninwithApple/verifying-a-user.md) and [Decode and validate the notifications](../SigninwithApple/processing-changes-for-sign-in-with-apple-accounts.md#Decode-and-validate-the-notifications).
 

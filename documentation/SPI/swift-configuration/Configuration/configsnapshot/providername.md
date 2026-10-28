@@ -25,7 +25,7 @@ The human-readable name of the configuration provider that created this snapshot
 var providerName: String { get }
 ```
 
-#### Discussion
+## Discussion
 
 Used by [`AccessReporter`](../accessreporter.md) and when diagnostic logging the config reader types.
 

@@ -25,7 +25,7 @@ var edges: UIRectEdge { get set }
 
 - [Handling pan gestures](../handling-pan-gestures.md)
 
-#### Discussion
+## Discussion
 
 The edges you specify are always relative to the app’s current interface orientation. This behavior ensures that the gestures always occur from the same place in your user interface, regardless of the device’s current orientation.
 

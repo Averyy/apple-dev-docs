@@ -24,7 +24,7 @@ var gamepad: GCGamepad? { get }
 @property (nonatomic, strong, readonly, nullable) GCGamepad * gamepad;
 ```
 
-#### Discussion
+## Discussion
 
 If the controller supports the gamepad profile, this property is a [`GCGamepad`](../gcgamepad.md) object that you use to access the input elements of the controller. If the controller doesn’t support the gamepad profile, this property is `nil`.
 

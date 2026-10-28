@@ -25,7 +25,7 @@ var NSDecimalMaxSize: Int32 { get }
 #define NSDecimalMaxSize
 ```
 
-#### Discussion
+## Discussion
 
 Gives a precision of at least 38 decimal digits, 128 binary positions.
 

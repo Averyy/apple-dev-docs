@@ -20,7 +20,7 @@ var font: NSFont? { get set }
 @property (copy, nullable) NSFont * font;
 ```
 
-#### Discussion
+## Discussion
 
 If the cell is being edited, setting this property causes the text in the cell to be redrawn in the new font, and the cell’s editor (the `NSText` object used globally for editing) is updated with the new font object.
 

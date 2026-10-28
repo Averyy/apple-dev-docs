@@ -24,7 +24,7 @@ case identity
 MTL4LogicalToPhysicalColorAttachmentMappingStateIdentity
 ```
 
-#### Discussion
+## Discussion
 
 This is the default behavior, which produces an identity mapping.
 

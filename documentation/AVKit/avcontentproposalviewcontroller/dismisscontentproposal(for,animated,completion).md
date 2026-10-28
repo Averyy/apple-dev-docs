@@ -27,7 +27,7 @@ func dismissContentProposal(for action: AVContentProposalAction, animated: Bool)
 
 - [Presenting content proposals in tvOS](../presenting-content-proposals-in-tvos.md)
 
-#### Discussion
+## Discussion
 
 Call this method to indicate the user action when leaving this proposal.
 

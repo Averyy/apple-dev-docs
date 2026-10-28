@@ -15,7 +15,7 @@ An invalid state transition error.
 static var invalidVirtualMachineStateTransition: VZError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 This error occurs when you attempt to change the state of the virtual machine in an invalid way. For example, it occurs when you attempt to start a virtual machine when its [`canStart`](../vzvirtualmachine/canstart.md) property is [`false`](../../Swift/false.md).
 

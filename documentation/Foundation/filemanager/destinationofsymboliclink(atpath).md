@@ -25,11 +25,11 @@ func destinationOfSymbolicLink(atPath path: String) throws -> String
 - (NSString *) destinationOfSymbolicLinkAtPath:(NSString *) path error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 An [`NSString`](../nsstring.md) object containing the path of the directory or file to which the symbolic link `path` refers. When using Objective-C, returns `nil` upon failure. If the symbolic link is specified as a relative path, that relative path is returned.
 
-#### Discussion
+## Discussion
 
 > **Handling Errors in Swift**:  In Swift, this method returns a nonoptional result and is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
 >

@@ -15,11 +15,11 @@ Gets the object’s identifier.
 IOUserAudioObjectID GetObjectID();
 ```
 
-#### Return Value
+## Return Value
 
 The object’s `IOUserAudioObjectID`.
 
-#### Discussion
+## Discussion
 
 Use this identifier when looking up a driver’s objects with [`GetAudioObjectForObjectID`](../iouseraudiodriver/getaudioobjectforobjectid.md).
 

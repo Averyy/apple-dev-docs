@@ -23,7 +23,7 @@ func require(toFail otherGestureRecognizer: UIGestureRecognizer)
 - (void) requireGestureRecognizerToFail:(UIGestureRecognizer *) otherGestureRecognizer;
 ```
 
-#### Discussion
+## Discussion
 
 This method works fine when gesture recognizers aren’t created elsewhere in the app — or in a framework — and the set of gesture recognizers remains the same. If you need to set up failure requirements lazily or in different view hierarchies, use [`gestureRecognizer(_:shouldRequireFailureOf:)`](../uigesturerecognizerdelegate/gesturerecognizer%28_,shouldrequirefailureof%29.md) and [`gestureRecognizer(_:shouldBeRequiredToFailBy:)`](../uigesturerecognizerdelegate/gesturerecognizer%28_,shouldberequiredtofailby%29.md) instead. (Note that the [`shouldRequireFailure(of:)`](./shouldrequirefailure%28of%29.md) and [`shouldBeRequiredToFail(by:)`](./shouldberequiredtofail%28by%29.md) methods let subclasses define class-wide failure requirements.)
 

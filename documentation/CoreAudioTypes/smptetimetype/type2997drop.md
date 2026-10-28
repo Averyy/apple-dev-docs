@@ -23,7 +23,7 @@ case type2997Drop
 kSMPTETimeType2997Drop
 ```
 
-#### Discussion
+## Discussion
 
 29.97 video frames per second, with video-frame numbers adjusted to ensure that the timecode matches elapsed clock time.
 

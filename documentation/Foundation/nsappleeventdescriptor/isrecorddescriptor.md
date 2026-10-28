@@ -19,7 +19,7 @@ var isRecordDescriptor: Bool { get }
 @property (readonly) BOOL isRecordDescriptor;
 ```
 
-#### Discussion
+## Discussion
 
 Record-like descriptors function as records, but may have a `descriptorType` other than `typeAERecord`, such as `typeObjectSpecifier`.
 

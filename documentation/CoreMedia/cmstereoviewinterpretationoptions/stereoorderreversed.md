@@ -25,7 +25,7 @@ static var stereoOrderReversed: CMStereoViewInterpretationOptions { get }
 kCMStereoViewInterpretation_StereoOrderReversed
 ```
 
-#### Discussion
+## Discussion
 
 Setting the [`stereoOrderReversed`](./stereoorderreversed.md) flag changes interpretations of geometry and affects internal storage.
 

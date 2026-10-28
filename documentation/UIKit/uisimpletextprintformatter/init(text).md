@@ -22,7 +22,7 @@ init(text: String)
 - (instancetype) initWithText:(NSString *) text;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized instance of `UISimpleTextPrintFormatter` or `nil` if the object could not be created.
 

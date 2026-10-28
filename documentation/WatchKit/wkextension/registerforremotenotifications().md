@@ -19,7 +19,7 @@ func registerForRemoteNotifications()
 - (void) registerForRemoteNotifications;
 ```
 
-#### Discussion
+## Discussion
 
 Before calling this method, you must enable your WatchKit extension’s Push Notification capability, as described in [Enable push notifications](https://help.apple.com/xcode/mac/current/#/devdfd3d04a1).
 

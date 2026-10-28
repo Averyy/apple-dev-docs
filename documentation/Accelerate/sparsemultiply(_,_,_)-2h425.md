@@ -4,7 +4,7 @@
 **Kind**: func  
 **Role**: Function
 
-Performs the multiply operation *Y = Subfactor ** *X* on a vector of single-precision values.
+Performs the multiply operation *Y = Subfactor \** *X* on a vector of single-precision values.
 
 **Availability**:
 - iOS 11.0+
@@ -35,11 +35,11 @@ static void SparseMultiply(SparseOpaqueSubfactor_Float Subfactor, DenseVector_Fl
 
 ### Subfactor and dense vector multiplication
 - [func SparseMultiply(SparseOpaqueSubfactor_Double, DenseVector_Double)](./sparsemultiply%28_,_%29-8ehhn.md)
-  Performs the multiply operation *Y = Subfactor * X*, in place on a vector of double-precision values.
+  Performs the multiply operation *Y = Subfactor \* X*, in place on a vector of double-precision values.
 - [func SparseMultiply(SparseOpaqueSubfactor_Float, DenseVector_Float)](./sparsemultiply%28_,_%29-7l3sr.md)
-  Performs the multiply operation *Y = Subfactor * X*, in place on a vector of single-precision values.
+  Performs the multiply operation *Y = Subfactor \* X*, in place on a vector of single-precision values.
 - [func SparseMultiply(SparseOpaqueSubfactor_Double, DenseVector_Double, DenseVector_Double)](./sparsemultiply%28_,_,_%29-6abql.md)
-  Performs the multiply operation *Y = Subfactor * X* on a vector of double-precision values.
+  Performs the multiply operation *Y = Subfactor \* X* on a vector of double-precision values.
 - [func SparseMultiply(SparseOpaqueSubfactor_Complex_Double, DenseMatrix_Complex_Double)](./sparsemultiply%28_,_%29-3s0hu.md)
   Perform the multiply operation `Y = Subfactor * X` in place for complex double values.
 - [func SparseMultiply(SparseOpaqueSubfactor_Complex_Double, DenseVector_Complex_Double)](./sparsemultiply%28_,_%29-9fn7j.md)

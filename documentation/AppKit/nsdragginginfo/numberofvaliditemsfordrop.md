@@ -21,7 +21,7 @@ var numberOfValidItemsForDrop: Int { get set }
 @property NSInteger numberOfValidItemsForDrop;
 ```
 
-#### Discussion
+## Discussion
 
 During draggingEntered: or draggingUpdated:, you are responsible for returning the drag operation. In some cases, you may accept some, but not all items on the dragging pasteboard. (For example, your application may only accept image files.)
 

@@ -24,7 +24,7 @@ init(_ configuration: PrimitiveButtonStyleConfiguration)
 
 Available when `Label` is `PrimitiveButtonStyleConfiguration.Label`.
 
-#### Discussion
+## Discussion
 
 Use this initializer within the [`makeBody(configuration:)`](../primitivebuttonstyle/makebody%28configuration%29.md) method of a [`PrimitiveButtonStyle`](../primitivebuttonstyle.md) to create an instance of the button that you want to style. This is useful for custom button styles that modify the current button style, rather than implementing a brand new style.
 

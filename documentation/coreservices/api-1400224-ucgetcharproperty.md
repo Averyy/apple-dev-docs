@@ -15,7 +15,7 @@ Obtains the value associated with a property type forthe specified `UniChar` cha
 OSStatus UCGetCharProperty(const UniChar *charPtr, UniCharCount textLength, UCCharPropertyType propType, UCCharPropertyValue *propValue);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./carbon_core/text_encoding_conversion_manager.md#1664324).
 

@@ -19,7 +19,7 @@ func becomeMain()
 - (void) becomeMainWindow;
 ```
 
-#### Discussion
+## Discussion
 
 This method posts an [`didBecomeMainNotification`](./didbecomemainnotification.md) to the default notification center.
 

@@ -16,7 +16,7 @@
 kSENSE_KEY_ABORTED_COMMAND
 ```
 
-#### Discussion
+## Discussion
 
 Device server indicates an aborted command condition.
 

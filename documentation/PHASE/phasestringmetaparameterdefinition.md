@@ -24,7 +24,7 @@ class PHASEStringMetaParameterDefinition
 @interface PHASEStringMetaParameterDefinition : PHASEMetaParameterDefinition
 ```
 
-#### Overview
+## Overview
 
 Use this class to spawn discrete instances of [`PHASENumberMetaParameter`](./phasenumbermetaparameter.md), for example, a “player speed” metaparameter that the app changes gradually from `0.0` to `1.0`.
 

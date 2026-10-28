@@ -24,7 +24,7 @@ class CATransaction
 @interface CATransaction : NSObject
 ```
 
-#### Overview
+## Overview
 
 `CATransaction` is the Core Animation mechanism for batching multiple layer-tree operations into atomic updates to the render tree. Every modification to a layer tree must be part of a transaction. Nested transactions are supported.
 

@@ -22,7 +22,7 @@ The vertical size class of this environment.
 var verticalSizeClass: UserInterfaceSizeClass? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 You receive a [`UserInterfaceSizeClass`](../userinterfacesizeclass.md) value when you read this environment value. The value tells you about the amount of vertical space available to the view that reads it. You can read this size class like any other of the [`EnvironmentValues`](../environmentvalues.md), by creating a property with the [`Environment`](../environment.md) property wrapper:
 

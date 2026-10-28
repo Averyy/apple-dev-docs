@@ -24,11 +24,11 @@ func dropout(_ tensor: MPSGraphTensor, rate: MPSGraphTensor, name: String?) -> M
 - (MPSGraphTensor *) dropoutTensor:(MPSGraphTensor *) tensor rateTensor:(MPSGraphTensor *) rate name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor object
 
-#### Discussion
+## Discussion
 
 Removes values in the `tensor` with a percentage chance equal to `rate`. Removed values are set to 0
 

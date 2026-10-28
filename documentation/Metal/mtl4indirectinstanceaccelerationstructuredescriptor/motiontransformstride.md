@@ -24,7 +24,7 @@ var motionTransformStride: Int { get set }
 @property (nonatomic) NSUInteger motionTransformStride;
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to `0`, indicating that transforms are tightly packed according to the motion transform type.
 

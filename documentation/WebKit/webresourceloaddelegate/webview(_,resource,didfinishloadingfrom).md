@@ -19,7 +19,7 @@ optional func webView(_ sender: WebView!, resource identifier: Any!, didFinishLo
 - (void) webView:(WebView *) sender resource:(id) identifier didFinishLoadingFromDataSource:(WebDataSource *) dataSource;
 ```
 
-#### Discussion
+## Discussion
 
 The `identifier` parameter is used to track the resource being loaded by `dataSource`. Delegates might implement this method to update the load status of an individual resource.
 

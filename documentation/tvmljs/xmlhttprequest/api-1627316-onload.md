@@ -15,7 +15,7 @@ A callback function that is called when the request is successfully completed.
 attribute function onload;
 ```
 
-#### Discussion
+## Discussion
 
 This attribute must be set to a function; for example, `XMLHttpRequest.onload = function () {}`.
 

@@ -23,7 +23,7 @@ static var showHideTransitionViews: UIView.AnimationOptions { get }
 UIViewAnimationOptionShowHideTransitionViews
 ```
 
-#### Discussion
+## Discussion
 
 When present, this key causes views to be hidden or shown (instead of removed or added) when performing a view transition. Both views must already be present in the parent view’s hierarchy when using this key. If this key is not present, the to-view in a transition is added to, and the from-view is removed from, the parent view’s list of subviews.
 

@@ -18,7 +18,7 @@ An object that holds the created 3D object.
 enum Result
 ```
 
-#### Overview
+## Overview
 
 When [`PhotogrammetrySession`](../photogrammetrysession.md) completes a [`PhotogrammetrySession.Request`](./request.md), it publishes a [`PhotogrammetrySession.Output.requestComplete(_:_:)`](./output/requestcomplete%28_,_%29.md) message to output, and includes the created object as the associated value of the result parameter. The result type corresponds to the request type. For example, a [`PhotogrammetrySession.Request.modelFile(url:detail:geometry:)`](./request/modelfile%28url,detail,geometry%29.md) request results in the session publishing a [`PhotogrammetrySession.Result.modelFile(_:)`](./result/modelfile%28_%29.md).
 

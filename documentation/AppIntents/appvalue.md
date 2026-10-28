@@ -21,7 +21,7 @@ An interface that describes conceptual types you use in app intents.
 protocol AppValue : PersistentlyIdentifiable, TypeDisplayRepresentable, _IntentValue, Sendable
 ```
 
-#### Overview
+## Overview
 
 This protocol serves as the base type for conceptual interfaces like [`AppEntity`](./appentity.md) or [`AppEnum`](./appenum.md).
 

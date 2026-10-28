@@ -23,7 +23,7 @@ var maximumPrimaryColumnWidth: CGFloat { get set }
 @property (nonatomic, assign) CGFloat maximumPrimaryColumnWidth;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property in conjunction with the [`minimumPrimaryColumnWidth`](./minimumprimarycolumnwidth.md) property to ensure the width of the primary view controller’s content is set to an acceptable value. The preliminary width is specified by the [`preferredPrimaryColumnWidthFraction`](./preferredprimarycolumnwidthfraction.md) property, which is applied to the split view controller’s width and checked against these bounds. If the resulting width is greater than the maximum value specified by this property, the width is set to the value in this property.
 

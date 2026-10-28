@@ -19,7 +19,7 @@ static let excludedKeys: NSBindingName
 extern NSBindingName NSExcludedKeysBinding;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [Cocoa Bindings](../cocoa-bindings.md).
 

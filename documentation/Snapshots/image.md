@@ -15,7 +15,7 @@ A JSON object for a Snapshot URL that describes the characteristics of custom im
 object Image
 ```
 
-#### Discussion
+## Discussion
 
 Maps Web Snapshots API supports JPEG, PNG, and GIF image formats for providing custom annotations. You may use up to 10 unique images in a snapshot request, and you may use an image for more than one annotation. It’s a good idea to use a URL shortener for image URLs so you don’t exceed the maximum character limit for a Snapshots URL.
 

@@ -23,11 +23,11 @@ init(payee: INPerson?, currencyAmount: INCurrencyAmount?, note: String?)
 - (instancetype) initWithPayee:(INPerson *) payee currencyAmount:(INCurrencyAmount *) currencyAmount note:(NSString *) note;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized intent or `nil` if the object could not be created.
 
-#### Discussion
+## Discussion
 
 Normally, you do not create instances of this class yourself. Instead, SiriKit creates instances when the user asks to send a payment to another user. However, you can use this method during testing to create intent objects in order to validate your intent handling code paths.
 

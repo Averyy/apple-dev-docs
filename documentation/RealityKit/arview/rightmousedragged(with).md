@@ -16,7 +16,7 @@ Informs the view that the user has moved the mouse with the right button pressed
 @preconcurrency override dynamic func rightMouseDragged(with event: NSEvent)
 ```
 
-#### Discussion
+## Discussion
 
 The view handles the event instead of passing it to the next responder. See [`NSResponder`](../../AppKit/nsresponder.md) for more information about the responder chain.
 

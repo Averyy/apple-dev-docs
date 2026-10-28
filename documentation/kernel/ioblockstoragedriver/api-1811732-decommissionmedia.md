@@ -12,7 +12,7 @@ virtual IOReturn decommissionMedia(
  boolforcible);
 ```
 
-#### Overview
+## Overview
 
 This method wraps a call to terminate, to tear down the stack and the IOMedia object for the media. If "forcible" is true, the media object will be forgotten, and initMediaState will be called. A forcible decommission would occur when an unrecoverable error happens during tear-down (e.g. perhaps a client is still open), but we must still forget about the media.
 

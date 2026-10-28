@@ -23,7 +23,7 @@ Returns a new resize-layer parameters structure from the specified parameters.
 init(method: BNNSInterpolationMethod, i_desc: BNNSNDArrayDescriptor, o_desc: BNNSNDArrayDescriptor, align_corners: Bool)
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  The number of input dimensions must be equal to number of output dimensions. The resize must be in same direction for all dimensions.
 

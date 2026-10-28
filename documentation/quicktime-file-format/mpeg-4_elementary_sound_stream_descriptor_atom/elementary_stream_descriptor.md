@@ -6,7 +6,7 @@
 
 An elementary stream descriptor for MPEG-4 audio.
 
-#### Overview
+## Overview
 
 As defined in the MPEG-4 specification ISO/IEC 14496.
 

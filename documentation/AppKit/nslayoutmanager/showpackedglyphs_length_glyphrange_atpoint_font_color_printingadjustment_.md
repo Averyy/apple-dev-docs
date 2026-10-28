@@ -17,7 +17,7 @@ Draws a range of glyphs.
 - (void) showPackedGlyphs:(char *) glyphs length:(NSUInteger) glyphLen glyphRange:(NSRange) glyphRange atPoint:(NSPoint) point font:(NSFont *) font color:(NSColor *) color printingAdjustment:(NSSize) printingAdjustment;
 ```
 
-#### Discussion
+## Discussion
 
 The  `glyphRange`, `point`, `font`, and `color` parameters are passed in merely for information purposes. They are already set in the graphics state. If for any reason you modify the set color or font, you must restore it before returning from this method.
 

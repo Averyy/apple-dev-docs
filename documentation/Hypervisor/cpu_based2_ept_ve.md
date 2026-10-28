@@ -19,7 +19,7 @@ var CPU_BASED2_EPT_VE: UInt32 { get }
 CPU_BASED2_EPT_VE
 ```
 
-#### Discussion
+## Discussion
 
 Must be `0`.
 

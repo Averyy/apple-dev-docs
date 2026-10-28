@@ -32,7 +32,7 @@ var canProcessInPlace: Bool { get }
 @property (atomic, readonly) BOOL canProcessInPlace;
 ```
 
-#### Discussion
+## Discussion
 
 In-place processing is the ability for an audio unit to transform an input signal to an output signal in-place in the input buffer, without requiring a separate output buffer.
 

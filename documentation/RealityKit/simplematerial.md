@@ -20,7 +20,7 @@ A basic material that responds to lights in the scene.
 struct SimpleMaterial
 ```
 
-#### Overview
+## Overview
 
 `SimpleMaterial` responds to both real and virtual lighting to enhance realism.
 

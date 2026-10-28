@@ -17,7 +17,7 @@ An object that customizes how to perform a display request.
 struct Options
 ```
 
-#### Overview
+## Overview
 
 Use this object to configure the validation mode of the request.
 

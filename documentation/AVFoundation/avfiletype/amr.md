@@ -25,7 +25,7 @@ static let amr: AVFileType
 extern AVFileType const AVFileTypeAMR;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this UTI is `org.3gpp.adaptive-multi-rate-audio`. Files of this type have an `.amr` extension.
 

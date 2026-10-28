@@ -24,11 +24,11 @@ func JSObjectMakeFunction(_ ctx: JSContextRef!, _ name: JSStringRef!, _ paramete
 JSObjectRefJSObjectMakeFunction(JSContextRef ctx, JSStringRef name, unsigned int parameterCount, JSStringRef const parameterNames[], JSStringRef body, JSStringRef sourceURL, int startingLineNumber, JSValueRef*exception);
 ```
 
-#### Return Value
+## Return Value
 
 A [`JSObjectRef`](./jsobjectref.md) that is a function, or `NULL` if either `body` or `parameterNames` contains a syntax error. The object’s prototype is the default function prototype.
 
-#### Discussion
+## Discussion
 
 Use this method when you want to execute a script repeatedly to avoid the cost of reparsing the script before each execution.
 

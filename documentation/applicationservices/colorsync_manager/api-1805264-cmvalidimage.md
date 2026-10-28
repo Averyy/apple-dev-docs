@@ -13,11 +13,11 @@ CMError CMValidImage (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A `CMError` value. See [Result Codes](../colorsync_manager.md#1670295).
 
-#### Overview
+## Overview
 
 This function validates the specified image file. ColorSync checks with any installed scripting plug-ins to see if they recognize the image's file format. If a          scripting plug-in is found which recognizes the image's file format, `CMValidateImage` returns `noErr` . If the image's file format is not recognized, `CMValidateImage` returns the `cmInvalidImageFile` error. 
 

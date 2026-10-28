@@ -25,7 +25,7 @@ func CMBufferQueueContainsEndOfData(_ queue: CMBufferQueue) -> Bool
 extern Boolean CMBufferQueueContainsEndOfData(CMBufferQueueRef queue);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean indicating whether `CMBufferQueue` has been marked with `EndOfData`.
 

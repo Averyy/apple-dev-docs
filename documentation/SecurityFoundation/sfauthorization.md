@@ -19,7 +19,7 @@ class SFAuthorization
 @interface SFAuthorization : NSObject
 ```
 
-#### Overview
+## Overview
 
 > ❗ **Important**: The authorization services API is not supported within an app sandbox because it allows privilege escalation.
 

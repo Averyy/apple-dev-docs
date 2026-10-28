@@ -21,7 +21,7 @@ Adds two values and stores the result in the left-hand-side variable.
 static func += (lhs: inout Int, rhs: Int)
 ```
 
-#### Discussion
+## Discussion
 
 The sum of the two arguments must be representable in the arguments’ type. In the following example, the result of `21 + 120` is greater than the maximum representable `Int8` value:
 

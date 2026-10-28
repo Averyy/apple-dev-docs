@@ -20,11 +20,11 @@ static boolean canMakePayments();
 
 - [Checking for Apple Pay availability](../checking-for-apple-pay-availability.md)
 
-#### Return Value
+## Return Value
 
 `true` if the device supports making payments with Apple Pay; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 This method only checks to ensure that the device supports processing payments with Apple Pay. It doesn’t verify whether or not the user has any provisioned cards in Wallet.
 

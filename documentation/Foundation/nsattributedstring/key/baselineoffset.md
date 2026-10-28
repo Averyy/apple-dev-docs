@@ -21,7 +21,7 @@ The vertical offset for the position of the text.
 static let baselineOffset: NSAttributedString.Key
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSNumber`](../../nsnumber.md) object containing a floating point value indicating the character’s offset from the baseline, in points. The default value is `0`.
 

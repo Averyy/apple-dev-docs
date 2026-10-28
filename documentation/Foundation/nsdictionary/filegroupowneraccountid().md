@@ -25,7 +25,7 @@ func fileGroupOwnerAccountID() -> NSNumber?
 - (NSNumber *) fileGroupOwnerAccountID;
 ```
 
-#### Return Value
+## Return Value
 
 The value associated with the [`groupOwnerAccountID`](../fileattributekey/groupowneraccountid.md) file attributes key, or `nil` if the file attributes dictionary has no entry for the key.
 

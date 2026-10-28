@@ -19,7 +19,7 @@ var queryDescriptors: [NSFontDescriptor]? { get }
 @property (copy, readonly, nullable) NSArray<NSFontDescriptor *> * queryDescriptors;
 ```
 
-#### Discussion
+## Discussion
 
 The font descriptors matching [`exclusionDescriptors`](./exclusiondescriptors.md) are removed from [`matchingDescriptors`](./matchingdescriptors.md)
 

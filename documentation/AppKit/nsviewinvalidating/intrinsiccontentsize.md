@@ -18,7 +18,7 @@ static var intrinsicContentSize: NSView.Invalidations.IntrinsicContentSize { get
 
 Available when `Self` is `NSView.Invalidations.IntrinsicContentSize`.
 
-#### Discussion
+## Discussion
 
 Use this invalidation type to call [`invalidateIntrinsicContentSize()`](../nsview/invalidateintrinsiccontentsize%28%29.md) so that a change in property value invalidates the containing view’s intrinsic content size. This allows the constraint-based layout system to account for the change the next time it updates the layout.
 

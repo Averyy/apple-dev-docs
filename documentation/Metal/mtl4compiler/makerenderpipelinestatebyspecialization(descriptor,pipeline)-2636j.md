@@ -20,11 +20,11 @@ Creates a new render pipeline state from another, previously unspecialized, pipe
 func makeRenderPipelineStateBySpecialization(descriptor: MTL4PipelineDescriptor, pipeline: any MTLRenderPipelineState) throws -> any MTLRenderPipelineState
 ```
 
-#### Return Value
+## Return Value
 
 A fully-specialized pipeline state object upon success, otherwise this function throws.
 
-#### Discussion
+## Discussion
 
 Metal specializes the pipeline state with new state values the descriptor provides, observing the following rules:
 

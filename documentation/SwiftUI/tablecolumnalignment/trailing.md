@@ -19,7 +19,7 @@ Trailing column alignment.
 static var trailing: TableColumnAlignment { get }
 ```
 
-#### Discussion
+## Discussion
 
 With a `layoutDirection` of `leftToRight`, this is equivalent to right; and with a `layoutDirection` of `rightToLeft`, this is equivalent to left.
 

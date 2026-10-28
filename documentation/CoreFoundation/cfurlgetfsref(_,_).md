@@ -26,11 +26,11 @@ func CFURLGetFSRef(_ url: CFURL!, _ fsRef: OpaquePointer!) -> Bool
 extern Boolean CFURLGetFSRef(CFURLRef url, struct FSRef *fsRef);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the conversion was successful, otherwise `false`.
 
-#### Discussion
+## Discussion
 
 The function cannot create an `FSRef` object if any of the leading path parts specified by `url` is an alias. The function can, however, traverse symbolic links.
 

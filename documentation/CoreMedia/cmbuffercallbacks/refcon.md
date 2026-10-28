@@ -25,7 +25,7 @@ var refcon: UnsafeMutableRawPointer?
 void * refcon;
 ```
 
-#### Discussion
+## Discussion
 
 This can be `NULL`, if the callbacks don’t require it.
 

@@ -28,7 +28,7 @@ class PHLivePhoto
 
 - [Displaying Live Photos](../PhotoKit/displaying-live-photos.md)
 
-#### Overview
+## Overview
 
 In iOS and tvOS, you can use this class to reference Live Photos from the user’s library (fetched with the [`PHAsset`](./phasset.md) and [`PHImageManager`](./phimagemanager.md) classes), to load displayable Live Photo objects from data obtained elsewhere (such as pictures shared through a social network), and to assign Live Photos to [`PHLivePhotoView`](../PhotosUI/phlivephotoview.md) objects for display.
 

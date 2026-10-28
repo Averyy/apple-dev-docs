@@ -20,7 +20,7 @@ set annotations(annotations: Annotation[]);
 
 - [MapKit JS 5](../mapkit-js-5.md)
 
-#### Discussion
+## Discussion
 
 You can set this property to a new (possibly empty) array of annotations, which updates all the annotations on the map.
 

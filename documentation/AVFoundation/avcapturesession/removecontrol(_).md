@@ -23,7 +23,7 @@ func removeControl(_ control: AVCaptureControl)
 - (void) removeControl:(AVCaptureControl *) control;
 ```
 
-#### Discussion
+## Discussion
 
 You may call this method while the session is running.
 

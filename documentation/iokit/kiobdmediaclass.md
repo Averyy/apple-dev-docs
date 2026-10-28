@@ -16,7 +16,7 @@ kIOBDMediaClass is the name of the IOBDMedia class.
 #define kIOBDMediaClass
 ```
 
-#### Discussion
+## Discussion
 
 kIOBDMediaClass is the name of the IOBDMedia class.
 

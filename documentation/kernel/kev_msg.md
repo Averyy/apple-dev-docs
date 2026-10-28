@@ -14,7 +14,7 @@ struct kev_msg {
 };
 ```
 
-#### Discussion
+## Discussion
 
 This structure is used when posting a kernel event.
 

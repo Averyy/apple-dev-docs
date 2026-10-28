@@ -25,7 +25,7 @@ var hasChanges: Bool { get }
 @property (nonatomic, readonly) BOOL hasChanges;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the receiver has been inserted, has been deleted, or has unsaved changes, otherwise [`false`](../../Swift/false.md). The result is the equivalent of OR-ing the values of [`isInserted`](./isinserted.md), [`isDeleted`](./isdeleted.md), and [`isUpdated`](./isupdated.md).
 

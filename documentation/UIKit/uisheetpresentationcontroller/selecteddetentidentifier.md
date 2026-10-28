@@ -21,7 +21,7 @@ var selectedDetentIdentifier: UISheetPresentationController.Detent.Identifier? {
 @property (nonatomic, copy, nullable) UISheetPresentationControllerDetentIdentifier selectedDetentIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 This property represents the most recent detent that the user selects or that you set programmatically. The default value is `nil`, which means the sheet displays at the smallest detent you specify in [`detents`](./detents.md).
 

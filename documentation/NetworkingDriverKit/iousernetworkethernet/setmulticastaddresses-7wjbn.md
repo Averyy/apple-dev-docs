@@ -15,11 +15,11 @@ Sets the device addresses to use for multicast filtering.
 virtual kern_return_t SetMulticastAddresses(const IOUserNetworkMACAddress *addresses, uint32_t count);
 ```
 
-#### Return Value
+## Return Value
 
 `kIOReturnSuccess` on success, or another value if an error occurred.
 
-#### Discussion
+## Discussion
 
 Override this method and use it to set up a Ethernet multicast filter on your device.
 

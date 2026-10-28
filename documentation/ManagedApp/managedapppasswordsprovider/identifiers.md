@@ -18,7 +18,7 @@ An asynchronous sequence of arrays of password identifiers provided by the MDM s
 var identifiers: some AsyncSequence<Array<String>, Never> { get async }
 ```
 
-#### Discussion
+## Discussion
 
 Use [`password(withIdentifier:)`](./password%28withidentifier%29.md) to look up an identifier to obtain the associated password. The sequence yields an array of identifiers when:
 

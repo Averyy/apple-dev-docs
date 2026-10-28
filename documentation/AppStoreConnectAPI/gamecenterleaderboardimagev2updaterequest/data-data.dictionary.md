@@ -15,7 +15,7 @@ The data structure that represents a Game Center leaderboard image update reques
 object GameCenterLeaderboardImageV2UpdateRequest.Data
 ```
 
-#### Overview
+## Overview
 
 - attributes:
 - id:

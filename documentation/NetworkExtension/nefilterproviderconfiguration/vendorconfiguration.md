@@ -23,7 +23,7 @@ var vendorConfiguration: [String : Any]? { get set }
 @property (copy, nullable) NSDictionary<NSString *,id> * vendorConfiguration;
 ```
 
-#### Discussion
+## Discussion
 
 All of the values in this dictionary must be [`NSSecureCoding`](../../Foundation/nssecurecoding.md)-compliant.
 

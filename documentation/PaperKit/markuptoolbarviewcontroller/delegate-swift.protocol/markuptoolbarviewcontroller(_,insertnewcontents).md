@@ -17,7 +17,7 @@ Add new content on top of the paper.
 func markupToolbarViewController(_ markupToolbarViewController: MarkupToolbarViewController, insertNewContents toInsert: PaperMarkup)
 ```
 
-#### Discussion
+## Discussion
 
 This is used for inserting any custom content, and non-shape elements like signatures or loupes.
 

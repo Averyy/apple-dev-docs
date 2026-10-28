@@ -21,7 +21,7 @@ Creates a scroll target behavior that aligns to values spaced at regular interva
 static func valueAligned<P>(unit: P, majorAlignment: MajorValueAlignment<P>? = nil, limitBehavior: ValueAlignedLimitBehavior = .automatic) -> ValueAlignedChartScrollTargetBehavior where Self == ValueAlignedChartScrollTargetBehavior, P : Plottable, P : Numeric
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to create a scroll behavior that aligns to desired units.
 

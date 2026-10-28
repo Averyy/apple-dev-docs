@@ -21,11 +21,11 @@ Resolves an entity from a system intent value type through the entity type’s t
 func resolved<T>(from value: T) async throws -> AnyAppEntity where T : _SystemIntentValue, T : IntentValueConvertible
 ```
 
-#### Return Value
+## Return Value
 
 The resolved entity.
 
-#### Discussion
+## Discussion
 
 > **Throws**: If the entity type does not support the given value type.
 

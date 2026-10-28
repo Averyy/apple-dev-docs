@@ -21,7 +21,7 @@ Creates an instance initialized to `false`.
 init()
 ```
 
-#### Discussion
+## Discussion
 
 Do not call this initializer directly. Instead, use the Boolean literal `false` to create a new `Bool` instance.
 

@@ -23,7 +23,7 @@ var allowsBackForwardNavigationGestures: Bool { get set }
 @property (nonatomic) BOOL allowsBackForwardNavigationGestures;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`false`](../../Swift/false.md).
 

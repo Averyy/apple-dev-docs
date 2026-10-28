@@ -24,7 +24,7 @@ final class GenerateIterativeSegmentationRequest
 
 - [Isolating an object from a tap, box, or scribble](./segmenting-objects-with-iterative-refinement.md)
 
-#### Overview
+## Overview
 
 Initialize with a seed point, a seed rectangle, or a seed scribble buffer to generate the initial segmentation mask. Then add points to iteratively refine the segmentation mask. The request supports a maximum of 13 points when seeded with a point or scribble, or 11 points when seeded with a box.
 

@@ -7,7 +7,7 @@ framework: "Swift-Org/MigrationGuide"
 
 **Framework**: Swift-Org/MigrationGuide
 
-#### Overview
+## Overview
 
 Swift’s concurrency system, introduced in [Swift 5.5](https://www.swift.org/blog/swift-5.5-released/), makes asynchronous and parallel code easier to write and understand. With the Swift 6 language mode, the compiler can now guarantee that concurrent programs are free of data races. When enabled, compiler safety checks that were previously optional become required.
 
@@ -28,7 +28,7 @@ You will find articles and code examples here that:
 >
 > There is a distinction between the *compiler version* and *language mode*. The Swift 6 compiler supports four distinct language modes: “6”, “5”, “4.2”, and “4”.
 
-##### Contributing
+### Contributing
 
 This guide is under active development. You can view the source, see full code examples, and learn about how to contribute in the [repository](https://github.com/apple/swift-migration-guide). We would love your contributions in the form of:
 

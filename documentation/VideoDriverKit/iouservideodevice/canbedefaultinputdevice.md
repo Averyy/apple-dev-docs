@@ -15,11 +15,11 @@ Returns a Boolean value indicating if device can be used for default input.
 uint32_t CanBeDefaultInputDevice();
 ```
 
-#### Return Value
+## Return Value
 
 True if device can be used for default input.
 
-#### Discussion
+## Discussion
 
 The object’s work queue synchronizes access to the value.
 

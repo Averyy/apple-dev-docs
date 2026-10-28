@@ -17,7 +17,7 @@
 + (void) checkIfContainsSpatialAudio:(AVAsset *) asset completionHandler:(void (^)(BOOL result)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Check if asset meets all the requirements to operate with Spatial Audio and its accompanying effects
 

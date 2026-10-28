@@ -22,7 +22,7 @@ optional var enableInputClicksWhenVisible: Bool { get }
 @property (nonatomic, readonly) BOOL enableInputClicksWhenVisible;
 ```
 
-#### Discussion
+## Discussion
 
 In your custom subclass of [`UIView`](../uiview.md), implement this property as a getter method. Return [`true`](../../Swift/true.md) to enable input clicks in your custom input or keyboard accessory view, as follows:
 

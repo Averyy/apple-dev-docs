@@ -23,7 +23,7 @@ func floodFill(from seed: CGPoint, newColor: Pixel_16U, connectivity: vImage.Flo
 
 Available when `Format` is `vImage.Planar16U`.
 
-#### Discussion
+## Discussion
 
 The flood-fill function sets all pixels that are neighboring and identical to the seed pixel to a new color. The operation continues until it reaches the image boundary or until it sets all pixels within the connected component to the new value.
 

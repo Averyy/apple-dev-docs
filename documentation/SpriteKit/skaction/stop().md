@@ -25,11 +25,11 @@ class func stop() -> SKAction
 + (SKAction *) stop;
 ```
 
-#### Return Value
+## Return Value
 
 A new action object.
 
-#### Discussion
+## Discussion
 
 This action may only be executed on an [`SKAudioNode`](../skaudionode.md) object. The audio is stopped, and if restarted, begins at the beginning.
 

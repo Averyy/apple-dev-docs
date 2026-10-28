@@ -19,7 +19,7 @@ class func current() -> WKInterfaceDevice
 + (WKInterfaceDevice *) currentDevice;
 ```
 
-#### Return Value
+## Return Value
 
 The shared device object.
 

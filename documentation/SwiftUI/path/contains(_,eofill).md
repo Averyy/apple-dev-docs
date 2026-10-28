@@ -21,7 +21,7 @@ Returns true if the path contains a specified point.
 func contains(_ p: CGPoint, eoFill: Bool = false) -> Bool
 ```
 
-#### Discussion
+## Discussion
 
 If `eoFill` is true, this method uses the even-odd rule to define which points are inside the path. Otherwise, it uses the non-zero rule.
 

@@ -13,7 +13,7 @@ Deletes a previously uploaded image.
 
 - [Identifying rate limits](./identifying-rate-limits.md)
 
-#### Discussion
+## Discussion
 
 Call this endpoint to delete an image. After successfully deleting the image, its `imageIdentifier` no longer exists. Don’t use the `imageIdentifier` of a deleted image in any new messages.
 

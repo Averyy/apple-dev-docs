@@ -21,7 +21,7 @@ Creates an empty data buffer of a specified size.
 init(capacity: Int)
 ```
 
-#### Discussion
+## Discussion
 
 This initializer doesn’t necessarily allocate the requested memory right away. `Data` allocates additional memory as needed, so `capacity` simply establishes the initial capacity. When it does allocate the initial memory, though, it allocates the specified amount.
 

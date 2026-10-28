@@ -25,11 +25,11 @@ optional func textView(_ textView: UITextView, shouldInteractWith URL: URL, in c
 - (BOOL) textView:(UITextView *) textView shouldInteractWithURL:(NSURL *) URL inRange:(NSRange) characterRange interaction:(UITextItemInteraction) interaction;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if interaction with the URL should be allowed; [`false`](../../Swift/false.md) if interaction should not be allowed.
 
-#### Discussion
+## Discussion
 
 This method is called on only the first interaction with the URL link. For example, this method is called when the user wants their first interaction with a URL to display a list of actions they can take; if the user chooses an open action from the list, this method is not called, because “open” represents the second interaction with the same URL.
 

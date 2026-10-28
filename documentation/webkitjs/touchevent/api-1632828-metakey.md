@@ -16,7 +16,7 @@ A Boolean value indicating whether the meta key is pressed.
 readonly attribute boolean metaKey;
 ```
 
-#### Discussion
+## Discussion
 
 If `true`, the meta key is pressed; otherwise, it is not. If there is no keyboard, this value is `false`.
 

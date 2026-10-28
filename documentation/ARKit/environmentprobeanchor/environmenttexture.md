@@ -15,7 +15,7 @@ The environment texture of an anchor.
 var environmentTexture: (any MTLTexture)? { get }
 ```
 
-#### Discussion
+## Discussion
 
 Textures may be `nil` if the person isn’t in a well-lit environment.
 

@@ -23,7 +23,7 @@ func go(to item: WKBackForwardListItem) -> WKNavigation?
 - (WKNavigation *) goToBackForwardListItem:(WKBackForwardListItem *) item;
 ```
 
-#### Return Value
+## Return Value
 
 A new navigation to the requested item, or `nil` if it is already the current item or is not part of the web view’s back-forward list.
 

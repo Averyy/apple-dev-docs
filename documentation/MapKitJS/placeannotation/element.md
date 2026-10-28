@@ -15,7 +15,7 @@ The annotation’s element in the DOM.
 get element(): HTMLElement;
 ```
 
-#### Discussion
+## Discussion
 
 You can’t set the element property of the place annotation.
 

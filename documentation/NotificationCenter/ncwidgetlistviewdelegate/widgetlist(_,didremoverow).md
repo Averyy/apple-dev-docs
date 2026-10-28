@@ -21,7 +21,7 @@ optional func widgetList(_ list: NCWidgetListViewController, didRemoveRow row: I
 - (void) widgetList:(NCWidgetListViewController *) list didRemoveRow:(NSUInteger) row;
 ```
 
-#### Discussion
+## Discussion
 
 List item deletion is not enabled unless the delegate implements this method and [`widgetList(_:shouldRemoveRow:)`](./widgetlist%28_,shouldremoverow%29.md). The item represented by `row` is removed from the list view controller’s [`contents`](../ncwidgetlistviewcontroller/contents.md) array before this method is called.
 

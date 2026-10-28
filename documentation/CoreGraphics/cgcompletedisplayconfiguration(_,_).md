@@ -20,11 +20,11 @@ func CGCompleteDisplayConfiguration(_ config: CGDisplayConfigRef?, _ option: CGC
 extern CGError CGCompleteDisplayConfiguration(CGDisplayConfigRef config, CGConfigureOption option);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. If the request to apply changes is successful, the result is `kCGErrorSuccess`. For other possible values, see [`CGError`](./cgerror.md).
 
-#### Discussion
+## Discussion
 
 This function applies a set of display configuration changes as a single atomic transaction. The duration or scope of the changes depends on the value of the `option` parameter. For more information about possible scopes, see [`CGConfigureOption`](./cgconfigureoption.md).
 

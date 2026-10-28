@@ -24,7 +24,7 @@ var showsPhysics: Bool { get set }
 @property (nonatomic) BOOL showsPhysics;
 ```
 
-#### Discussion
+## Discussion
 
 When this debugging option is enabled, each time a frame is rendered, an overlay image is drawn on top of your scene that shows the positions and shapes of any physics bodies visible in the scene.
 

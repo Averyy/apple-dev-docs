@@ -11,7 +11,7 @@ Returns the ordering context the ordered set was created with.
 virtual void * getOrderingRef();
 ```
 
-#### Return Value
+## Return Value
 
 The ordered set's ordering context, or `NULL` if it doesn't have one.
 

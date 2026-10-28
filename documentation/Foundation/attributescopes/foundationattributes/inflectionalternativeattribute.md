@@ -22,7 +22,7 @@ An attribute that provides an alternative inflection phrase when the system canâ
 enum InflectionAlternativeAttribute
 ```
 
-#### Overview
+## Overview
 
 Use the `inflectionAlternativeAttribute` to provide an alternative phrase for cases where the system canâ€™t achieve unambiguous grammatical agreement.
 

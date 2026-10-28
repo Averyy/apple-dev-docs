@@ -20,7 +20,7 @@ Sends a custom type asynchronously to other participants in the group session.
 final func send<Message>(_ value: Message, to participants: Participants = .all) async throws where Message : Decodable, Message : Encodable
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to send data that you package into a custom class or structure. The method encodes your custom structure’s type information, and delivers the data only to message sequences of the same type.
 

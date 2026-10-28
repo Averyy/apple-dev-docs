@@ -12,7 +12,7 @@ Registers a block of teardown code to run after the current test method ends.
 - (void) addTeardownBlock:(void (^)()) block;
 ```
 
-#### Discussion
+## Discussion
 
 Call [`addTeardownBlock:`](./addteardownblock_.md) during a test method’s execution to register a block of code to be called when the test method ends.
 

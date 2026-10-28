@@ -25,7 +25,7 @@ let NSUbiquitousKeyValueStoreChangedKeysKey: String
 extern NSString * const NSUbiquitousKeyValueStoreChangedKeysKey;
 ```
 
-#### Discussion
+## Discussion
 
 When the iCloud key-value store changes due to an external source, the system generates a [`didChangeExternallyNotification`](./nsubiquitouskeyvaluestore/didchangeexternallynotification.md) notification. That notification can include this key. The value of this key is an array of strings, each of which contains the name of a key that changed.
 

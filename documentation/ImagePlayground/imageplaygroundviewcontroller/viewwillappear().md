@@ -16,7 +16,7 @@ Notifies the view controller that its view is about to be added to a view hierar
 @preconcurrency override dynamic func viewWillAppear()
 ```
 
-#### Discussion
+## Discussion
 
 The view controller uses this method to configure its interface.
 

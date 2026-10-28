@@ -19,7 +19,7 @@ optional func refineSampleLocation(_ estimatedSampleLocation: AVSampleCursorStor
 - (BOOL) refineSampleLocation:(AVSampleCursorStorageRange) estimatedSampleLocation refinementData:(const uint8_t *) refinementData refinementDataLength:(size_t) refinementDataLength refinedLocation:(AVSampleCursorStorageRange *) refinedLocationOut error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 Use [`estimatedSampleLocation()`](./estimatedsamplelocation%28%29.md) to obtain the estimated sample location to pass to this method.
 

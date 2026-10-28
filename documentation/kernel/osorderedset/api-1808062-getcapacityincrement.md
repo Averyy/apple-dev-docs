@@ -11,11 +11,11 @@ Returns the storage increment of the ordered set.
 virtual unsigned int getCapacityIncrement() const;
 ```
 
-#### Return Value
+## Return Value
 
 The storage increment of the ordered set.
 
-#### Overview
+## Overview
 
 An OSOrderedSet allocates storage for objects in multiples of the capacity increment.
 

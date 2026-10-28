@@ -21,7 +21,7 @@ Produces the next element in the prefix sequence.
 mutating func next(isolation actor: isolated (any Actor)?) async throws(AsyncPrefixSequence<Base>.Failure) -> Base.Element?
 ```
 
-#### Discussion
+## Discussion
 
 Until reaching the number of elements to include, this iterator calls `next(isolation:)` on its base iterator and passes through the result. After reaching the maximum number of elements, subsequent calls to `next(isolation:)` return `nil`.
 

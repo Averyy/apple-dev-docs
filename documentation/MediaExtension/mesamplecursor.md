@@ -19,11 +19,11 @@ protocol MESampleCursor : NSCopying, NSObjectProtocol
 @protocol MESampleCursor <NSObject, NSCopying>
 ```
 
-#### Overview
+## Overview
 
 This object delivers sample data either by providing sample location and sample chunk information, or by directly generating a sample buffer.
 
-##### Delivering sample data
+### Delivering sample data
 
 An [`MESampleCursor`](./mesamplecursor.md) object can return sample data to [Core Media](../CoreMedia/CoreMedia.md) in two ways:
 
@@ -32,7 +32,7 @@ An [`MESampleCursor`](./mesamplecursor.md) object can return sample data to [Cor
 
 Review the following information that explains these approaches and which one to use for typical scenarios.
 
-###### Allowing Core Media to read the sample data
+#### Allowing Core Media to read the sample data
 
 This is the preferred method to deliver sample data. It allows Core Media to optimize data I/O read operations, and potentially combine multiple smaller reads into a single larger read for better performance. There are four methods available to deliver the required sample location information:
 
@@ -52,13 +52,13 @@ In some cases it’s not possible to directly determine the sample location and 
 
 This method returns the exact sample location information as a second step after it receives the coarse estimate from [`estimatedSampleLocation()`](./mesamplecursor/estimatedsamplelocation%28%29.md). Implement both methods to support this approach.
 
-###### Reading the sample buffers directly
+#### Reading the sample buffers directly
 
 When it’s not possible to let Core Media read the sample data using location information, the [`MESampleCursor`](./mesamplecursor.md) object needs to read the sample data itself using the [`MEByteSource`](./mebytesource.md) to deliver the sample data buffers. This is less efficient for data I/O because there’s no way for Core Media to optimize read operations.
 
 The method [`loadSampleBufferContainingSamples(to:completionHandler:)`](./mesamplecursor/loadsamplebuffercontainingsamples%28to,completionhandler%29.md) delivers sample data buffers directly, so it allows the [`MESampleCursor`](./mesamplecursor.md) object flexibility to read and unpack the samples from the media. The sample cursor needs to use the [`MEByteSource`](./mebytesource.md) directly to seek and read in the sample data. This method can deliver sample buffers either with one sample, such as for video tracks, or with blocks of samples, such as for audio tracks. It’s also suitable for use with synthesized samples that use metadata from the media, such as for timecode tracks.
 
-###### Choosing the best approach
+#### Choosing the best approach
 
 Choose the best approach in these typical scenarios:
 

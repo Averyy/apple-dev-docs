@@ -21,7 +21,7 @@ A type that represents data in Apple-protected MPEG-4 format.
 static var appleProtectedMPEG4Audio: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `com.apple.protected-mpeg-4-audio`.
 

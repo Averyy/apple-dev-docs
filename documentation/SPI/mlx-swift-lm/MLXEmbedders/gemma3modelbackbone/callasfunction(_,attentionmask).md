@@ -17,7 +17,7 @@ Processes input tokens through the model backbone.
 func callAsFunction(_ inputs: MLXArray, attentionMask: MLXArray? = nil) -> MLXArray
 ```
 
-#### Return Value
+## Return Value
 
 Final hidden states of shape `[Batch, Length, HiddenSize]`.
 

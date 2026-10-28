@@ -25,7 +25,7 @@ class SCNPhysicsContact
 @interface SCNPhysicsContact : NSObject
 ```
 
-#### Overview
+## Overview
 
 You don’t create  [`SCNPhysicsContact`](./scnphysicscontact.md) instances directly; SceneKit automatically creates these objects whenever contacts occur.
 

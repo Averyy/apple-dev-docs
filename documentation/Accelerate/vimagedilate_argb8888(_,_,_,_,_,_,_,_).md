@@ -25,11 +25,11 @@ func vImageDilate_ARGB8888(_ src: UnsafePointer<vImage_Buffer>, _ dest: UnsafePo
 vImage_Error vImageDilate_ARGB8888(const vImage_Buffer *src, const vImage_Buffer *dest, vImagePixelCount srcOffsetToROI_X, vImagePixelCount srcOffsetToROI_Y, const unsigned char *kernel, vImagePixelCount kernel_height, vImagePixelCount kernel_width, vImage_Flags flags);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
-#### Discussion
+## Discussion
 
 Use the dilate operation to enlarge light structural elements in an image. In the case where the kernel contains all zeros, use the corresponding maximize function instead.
 

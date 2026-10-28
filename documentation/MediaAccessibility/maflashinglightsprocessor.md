@@ -24,7 +24,7 @@ class MAFlashingLightsProcessor
 @interface MAFlashingLightsProcessor : NSObject
 ```
 
-#### Overview
+## Overview
 
 A device with the Dim Flashing Lights setting on automatically dims the brightness of flashing effect sequences when it detects them in video content. If your app performs custom video drawing instead of using [AVFoundation](../AVFoundation/AVFoundation.md) APIs, you can use the [`MAFlashingLightsProcessor`](./maflashinglightsprocessor.md) class to detect and mitigate sequences of flashing effects in your video content.
 

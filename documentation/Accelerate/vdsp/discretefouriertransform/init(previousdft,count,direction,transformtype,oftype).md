@@ -21,7 +21,7 @@ Initializes a new discrete Fourier transform structure.
 init(previousDFT: vDSP.DiscreteFourierTransform<T>?, count: Int, direction: vDSP.FourierTransformDirection, transformType: vDSP.DFTTransformType, ofType: T.Type) throws
 ```
 
-#### Discussion
+## Discussion
 
 The `count` parameter must be:
 

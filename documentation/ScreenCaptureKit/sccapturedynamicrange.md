@@ -22,7 +22,7 @@ enum SCCaptureDynamicRange
 enum SCCaptureDynamicRange : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 High dynamic range screenshot capture may specify local or canonical display attributes optimizing output for presentation on either the capture display or any high dyanmic range display. The screenshot capture updates the output screen capture buffer pixel format and color space to support high dynamic range when specified.
 

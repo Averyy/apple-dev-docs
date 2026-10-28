@@ -21,7 +21,7 @@ The position of the first element in a nonempty array. This is always zero.
 var startIndex: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 > **Complexity**: O(1)
 

@@ -19,7 +19,7 @@ A description of the significant update that initiates the permission question.
 let description: String
 ```
 
-#### Discussion
+## Discussion
 
 Provide a clear, concise explanation of what changes you’re making to your app that require parental consent. This description appears in the permission request that parents or guardians receive.
 

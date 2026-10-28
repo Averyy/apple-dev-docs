@@ -13,11 +13,11 @@ virtual SCSIServiceResponse AbortTask (
  SCSITaggedTaskIdentifiertheTag ) = 0;
 ```
 
-#### Return Value
+## Return Value
 
 A valid SCSIServiceResponse code.
 
-#### Overview
+## Overview
 
 Aborts a task based on the Logical Unit and tagged task identifier. Subclasses must override this method. Third party subclasses should not need to override this method.
 

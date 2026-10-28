@@ -24,7 +24,7 @@ var uid: String { get }
 @property (nonatomic, readonly) NSString * UID;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property matches that of the [`owningPortUID`](../avaudiosessionchanneldescription/owningportuid.md) property of every [`AVAudioSessionChannelDescription`](../avaudiosessionchanneldescription.md) object in the port’s [`channels`](./channels.md) array.
 

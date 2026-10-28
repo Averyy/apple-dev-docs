@@ -18,7 +18,7 @@ The effect to apply to the view with this style.
 @property (nonatomic, strong) id<UIHoverEffect> effect;
 ```
 
-#### Discussion
+## Discussion
 
 Use [`UIHoverAutomaticEffect`](../uihoverautomaticeffect-swift.struct.md) to apply a system-default effect to the view.
 

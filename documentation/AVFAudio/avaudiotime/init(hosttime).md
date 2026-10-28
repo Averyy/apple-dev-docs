@@ -25,7 +25,7 @@ init(hostTime: UInt64)
 - (instancetype) initWithHostTime:(uint64_t) hostTime;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`AVAudioTime`](../avaudiotime.md) instance.
 

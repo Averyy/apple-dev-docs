@@ -19,7 +19,7 @@ var isReleasedWhenClosed: Bool { get set }
 @property (getter=isReleasedWhenClosed) BOOL releasedWhenClosed;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) if the window is automatically released after being closed; [`false`](../../Swift/false.md) if it’s simply removed from the screen.
 

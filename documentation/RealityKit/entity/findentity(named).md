@@ -21,11 +21,11 @@ Recursively searches all descendant entities for one with the given name.
 @preconcurrency func findEntity(named name: String) -> Entity?
 ```
 
-#### Return Value
+## Return Value
 
 An entity with the given name, or `nil` if no entity is found.
 
-#### Discussion
+## Discussion
 
 The [`findEntity(named:)`](./findentity%28named%29.md) method conducts a depth-first, recursive search over all of the entity’s descendants for one whose [`name`](./name.md) property matches the given name. The method returns the first match. Entity names need not be unique.
 

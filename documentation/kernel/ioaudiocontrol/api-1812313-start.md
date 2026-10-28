@@ -12,11 +12,11 @@ virtual bool start(
  IOService *provider);
 ```
 
-#### Return Value
+## Return Value
 
 Returns true on success.
 
-#### Overview
+## Overview
 
 This is called automatically by IOAudioPort when addAudioControl() is called or by IOAudioEngine when addDefaultAudioControl() is called. It will only be called by the first call to either addAudioControl() or addDefaultAudioControl().
 

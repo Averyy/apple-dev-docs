@@ -20,7 +20,7 @@ var capturedDepthDataTimestamp: TimeInterval { get }
 @property (nonatomic, readonly) NSTimeInterval capturedDepthDataTimestamp;
 ```
 
-#### Discussion
+## Discussion
 
 Face-based AR (see [`ARFaceTrackingConfiguration`](../arfacetrackingconfiguration.md)) uses the front-facing, depth-sensing camera on compatible devices. When running such a configuration, frames vended by the session contain a depth map captured by the depth camera in addition to the color pixel buffer (see capturedImage) captured by the color camera. This property’s value is always zero when running other AR configurations.
 

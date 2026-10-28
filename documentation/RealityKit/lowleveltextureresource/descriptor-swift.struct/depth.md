@@ -18,7 +18,7 @@ The depth of the texture image for the base mipmap level, in pixels.
 var depth: Int { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Corresponds to `MTLTextureDescriptor.depth`.
 

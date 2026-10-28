@@ -24,11 +24,11 @@ uint32_t getNextIndexOfObject(const OSMetaClassBase *anObject, uint32_t index);
 virtual unsigned int getNextIndexOfObject(const OSMetaClassBase *anObject, unsigned int index);
 ```
 
-#### Return Value
+## Return Value
 
 Index at which the object was found, or -1U if the member was not found in the array after the index parameter.
 
-#### Discussion
+## Discussion
 
 Beginning at the passed index, iterate the array until the object instance is found or there are no more members. The search is done by pointer equality.
 

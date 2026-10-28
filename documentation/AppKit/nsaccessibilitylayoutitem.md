@@ -19,7 +19,7 @@ protocol NSAccessibilityLayoutItem : NSAccessibilityGroup
 @protocol NSAccessibilityLayoutItem <NSAccessibilityGroup>
 ```
 
-#### Overview
+## Overview
 
 Use this protocol when you want to create a layout item, a repositionable and resizeable item inside a layout area.
 

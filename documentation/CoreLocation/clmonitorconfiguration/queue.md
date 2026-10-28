@@ -18,7 +18,7 @@ The dispatch queue to bind the instance of a location monitor to.
 @property (readonly) dispatch_queue_t queue;
 ```
 
-#### Discussion
+## Discussion
 
 You need to perform all interactions related to the [`CLMonitor`](../clmonitor-2r51v.md) instance on this queue, and the framework delivers events that the `CLMonitor` instance generates to the handler on this queue.
 

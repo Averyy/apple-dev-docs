@@ -17,15 +17,15 @@ Returns a vectorized version of `f()`.
 func vmap(_ f: @escaping ([MLXArray]) -> [MLXArray], inAxes: some Sequence<Optional<Int>> = [0], outAxes: some Sequence<Optional<Int>> = [0]) -> ([MLXArray]) -> [MLXArray]
 ```
 
-#### Return Value
+## Return Value
 
 A vectorized function
 
-#### Discussion
+## Discussion
 
 The returned function applies `f()` independently over the axis specified by `inAxes` and stacks the results along `outAxes`.
 
-##### See Also
+### See Also
 
 - [Vectorization](./vmap.md)
 

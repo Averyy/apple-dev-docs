@@ -24,7 +24,7 @@ func register(_ observer: any PHPhotoLibraryPersistentChangesObserver)
 - (void) registerPersistentChangesObserver:(id<PHPhotoLibraryPersistentChangesObserver>) observer;
 ```
 
-#### Discussion
+## Discussion
 
 The observer is held weakly by the photo library. The observer’s [`photoLibraryPersistentChangesDidUpdate(_:)`](../phphotolibrarypersistentchangesobserver/photolibrarypersistentchangesdidupdate%28_%29.md) method is called on an arbitrary serial queue when changes are committed to the photo library. Use [`fetchPersistentChanges(since:)`](./fetchpersistentchanges%28since%29.md) to retrieve the specific changes.
 

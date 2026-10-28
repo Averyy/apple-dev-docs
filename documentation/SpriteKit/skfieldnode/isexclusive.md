@@ -25,7 +25,7 @@ var isExclusive: Bool { get set }
 @property (nonatomic, getter=isExclusive) BOOL exclusive;
 ```
 
-#### Discussion
+## Discussion
 
 If the value is set to [`true`](../../Swift/true.md) and a physics body is within this field’s region, all other field nodes that might otherwise affect this body are ignored. The default value is [`false`](../../Swift/false.md).
 

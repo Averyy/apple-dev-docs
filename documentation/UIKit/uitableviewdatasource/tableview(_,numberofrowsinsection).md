@@ -24,7 +24,7 @@ func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> 
 - (NSInteger) tableView:(UITableView *) tableView numberOfRowsInSection:(NSInteger) section;
 ```
 
-#### Return Value
+## Return Value
 
 The number of rows in `section`.
 

@@ -25,7 +25,7 @@ protocol AppIntentsPackage
 
 - [Configuring the runtime behavior of your app intents](./configuring-the-runtime-behavior-of-your-app-intents.md)
 
-#### Overview
+## Overview
 
 By default, your app intents are part of your application bundle. However, you may want to reuse app intents across apps or app extensions; for example, by bundling them with a framework you use across apps or Xcode targets.
 

@@ -25,7 +25,7 @@ func CFUUIDCreateFromString(_ alloc: CFAllocator!, _ uuidStr: CFString!) -> CFUU
 extern CFUUIDRefCFUUIDCreateFromString(CFAllocatorRef alloc, CFStringRef uuidStr);
 ```
 
-#### Return Value
+## Return Value
 
 A new CFUUID object, or if a CFUUID object of the same value already exists, the existing instance with its reference count incremented. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 

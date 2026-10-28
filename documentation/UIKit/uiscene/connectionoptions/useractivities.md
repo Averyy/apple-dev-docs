@@ -23,7 +23,7 @@ var userActivities: Set<NSUserActivity> { get }
 @property (nonatomic, copy, readonly) NSSet<NSUserActivity *> * userActivities;
 ```
 
-#### Discussion
+## Discussion
 
 If this property contains one or more [`NSUserActivity`](../../../Foundation/nsuseractivity.md) objects, use those objects to configure your scene’s interface when the scene connects. These activity objects represent the user activities that are available at the time the scene connects, like from search results, other apps, or [`requestSceneSessionActivation(_:userActivity:options:errorHandler:)`](../../uiapplication/requestscenesessionactivation%28_,useractivity,options,errorhandler%29.md). For example, if the user was browsing a web page, an activity object might contain the URL of that page.
 

@@ -20,7 +20,7 @@ The options for how the hosting controller tracks changes to the size of its Swi
 @preconcurrency var sizingOptions: UIHostingControllerSizingOptions { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The default value is the empty set.
 

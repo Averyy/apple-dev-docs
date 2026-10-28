@@ -25,7 +25,7 @@ let kCMSampleBufferAttachmentKey_StillImageLensStabilizationInfo: CFString
 extern CFStringRef const kCMSampleBufferAttachmentKey_StillImageLensStabilizationInfo;
 ```
 
-#### Discussion
+## Discussion
 
 Sample buffers that have been captured with a lens stabilization module may have an attachment of `kCMSampleBufferAttachmentKey_StillImageLensStabilizationInfo` which has information about the stabilization status during the capture.  This key will not be present in CMSampleBuffers coming from cameras without a lens stabilization module.
 

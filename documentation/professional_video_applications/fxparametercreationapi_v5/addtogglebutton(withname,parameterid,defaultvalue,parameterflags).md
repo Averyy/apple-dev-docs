@@ -20,7 +20,7 @@ func addToggleButton(withName name: String, parameterID: UInt32, defaultValue: B
 - (BOOL) addToggleButtonWithName:(NSString *) name parameterID:(UInt32) parameterID defaultValue:(BOOL) defaultValue parameterFlags:(FxParameterFlags) flags;
 ```
 
-#### Return Value
+## Return Value
 
 Returns `YES` if the application successfully creates a toggle parameter; `NO` otherwise.
 

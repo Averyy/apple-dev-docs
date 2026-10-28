@@ -23,7 +23,7 @@ case contentRuleListStoreLookUpFailed
 WKErrorContentRuleListStoreLookUpFailed
 ```
 
-#### Discussion
+## Discussion
 
 This error might occur if you previously deleted the rule list.
 

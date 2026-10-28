@@ -20,7 +20,7 @@ case failed
 ARAppClipCodeURLDecodingStateFailed
 ```
 
-#### Discussion
+## Discussion
 
 The decoding of an App Clip Code URL fails under these circumstances:
 

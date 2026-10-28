@@ -5,7 +5,7 @@
 
 Set style options for the components in your article.
 
-#### Overview
+## Overview
 
 You can use component styles to add interest and variety to your article and to make some content easier to read. Component styles include:
 
@@ -16,7 +16,7 @@ You can use component styles to add interest and variety to your article and to 
 - Border. Set the border color, width, and style for a component or for a table cell.
 - Table style. Specify the styling (color, stroke style, text style, and so on) that you want for the rows, columns, and cells of a data or HTML table.
 
-##### Define a Style
+### Define a Style
 
 To use a component style once, simply include a [`ComponentStyle`](../AppleNewsFormat/componentstyle.md) object as the value of the individual component’s style property.
 

@@ -5,7 +5,7 @@
 
 Confirm that App Store Server Notifications service responds properly in the sandbox environment.
 
-#### Overview
+## Overview
 
 If you enabled notifications from the App Store for your app, test your logic for transactions in the sandbox environment. To determine if a notification for a subscription event occurred in the test environment, check whether the value of the `environment` field equals `Sandbox` in the [`data`](../AppStoreServerNotifications/data.md) object of the App Store Server Notifications [`responseBodyV2DecodedPayload`](../AppStoreServerNotifications/responsebodyv2decodedpayload.md) object.
 

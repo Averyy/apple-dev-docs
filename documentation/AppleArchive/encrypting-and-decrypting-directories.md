@@ -10,7 +10,7 @@ Compress and encrypt the contents of an entire directory or decompress and decry
 - macOS 12.0+
 - Xcode 13.0+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC21 session [10233: Bring Encrypted Archives and Performance Improvements to Your App with Accelerate](https://developer.apple.com/wwdc21/10233/).
 

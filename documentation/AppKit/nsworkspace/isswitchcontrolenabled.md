@@ -19,7 +19,7 @@ var isSwitchControlEnabled: Bool { get }
 @property (readonly, getter=isSwitchControlEnabled) BOOL switchControlEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 You can observe this property with key-value observing.
 

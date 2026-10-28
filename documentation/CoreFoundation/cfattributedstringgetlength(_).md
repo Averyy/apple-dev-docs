@@ -25,7 +25,7 @@ func CFAttributedStringGetLength(_ aStr: CFAttributedString!) -> CFIndex
 extern CFIndex CFAttributedStringGetLength(CFAttributedStringRef aStr);
 ```
 
-#### Return Value
+## Return Value
 
 The length of the attributed string in characters; this is the same as `CFStringGetLength(CFAttributedStringGetString(aStr))`.
 

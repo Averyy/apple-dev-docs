@@ -21,7 +21,7 @@ Create a part renderer in the storage provided.
 int HVF_open_part_renderer(const void *hvgl, size_t hvglSize, const void *hvpm, size_t hvpmSize, void *storage, size_t storageSize);
 ```
 
-#### Discussion
+## Discussion
 
 The storage must be at least as large as what’s returned by `HVF_part_renderer_storage_size()`. This storage must be on a double boundary. The passed-in `hvgl` table must also be on a double boundary. The `hvpm` table is optional and may be NULL and zero size.
 

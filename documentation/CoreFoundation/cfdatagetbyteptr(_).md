@@ -25,11 +25,11 @@ func CFDataGetBytePtr(_ theData: CFData!) -> UnsafePointer<UInt8>!
 extern const UInt8 *CFDataGetBytePtr(CFDataRef theData);
 ```
 
-#### Return Value
+## Return Value
 
 A read-only pointer to the bytes associated with `theData`.
 
-#### Discussion
+## Discussion
 
 This function is guaranteed to return a pointer to a CFData object’s internal bytes. CFData, unlike CFString, does not hide its internal storage.
 

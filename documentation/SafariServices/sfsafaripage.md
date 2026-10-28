@@ -19,7 +19,7 @@ class SFSafariPage
 @interface SFSafariPage : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use an `SFSafariPage` object in your Safari app extension to send messages to injected content scripts, access page properties, and reload the page.
 

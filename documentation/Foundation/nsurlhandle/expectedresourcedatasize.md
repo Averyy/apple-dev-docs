@@ -17,11 +17,11 @@ Returns the expected length of the resource data if it is provided by the server
 - (long long) expectedResourceDataSize;
 ```
 
-#### Return Value
+## Return Value
 
 The expected size of the resource data, in bytes. A negative value if the length is unknown.
 
-#### Discussion
+## Discussion
 
 This information can be queried before all the data has arrived.
 

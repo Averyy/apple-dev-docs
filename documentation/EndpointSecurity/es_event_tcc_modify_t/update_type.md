@@ -18,7 +18,7 @@ var update_type: es_tcc_event_type_t
 es_tcc_event_type_t update_type;
 ```
 
-#### Discussion
+## Discussion
 
 Represent the type of TCC modification event.
 

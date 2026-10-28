@@ -19,11 +19,11 @@ func SCNetworkServiceSetName(_ service: SCNetworkService, _ name: CFString?) -> 
 Boolean SCNetworkServiceSetName(SCNetworkServiceRef service, CFStringRef name);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if the name was saved; `FALSE` if an error occurred.
 
-#### Discussion
+## Discussion
 
 Although it is not technically required, the user-specified names for all services within any given set should be unique. For this reason, an error will be returned if you attempt to name two services with the same string.
 

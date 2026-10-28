@@ -23,7 +23,7 @@ optional func collectionView(_ collectionView: UICollectionView, canEditItemAt i
 - (BOOL) collectionView:(UICollectionView *) collectionView canEditItemAtIndexPath:(NSIndexPath *) indexPath;
 ```
 
-#### Return Value
+## Return Value
 
 Returns [`true`](../../Swift/true.md) if the item is editable, [`false`](../../Swift/false.md) if it’s not. The default value is [`true`](../../Swift/true.md).
 

@@ -20,7 +20,7 @@ static var smoothedSceneDepth: ARConfiguration.FrameSemantics { get }
 ARFrameSemanticSmoothedSceneDepth
 ```
 
-#### Discussion
+## Discussion
 
 Enable this option on a world-tracking configuration ([`ARWorldTrackingConfiguration`](../../arworldtrackingconfiguration.md)) to instruct ARKit to provide your app with the distance between the user’s device and the real-world objects pictured in the frame’s [`capturedImage`](../../arframe/capturedimage.md). ARKit samples this distance using the LiDAR scanner and provides the results through the [`smoothedSceneDepth`](../../arframe/smoothedscenedepth.md) property on the session’s [`currentFrame`](../../arsession/currentframe.md).
 

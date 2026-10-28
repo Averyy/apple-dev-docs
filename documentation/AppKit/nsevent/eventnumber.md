@@ -19,7 +19,7 @@ var eventNumber: Int { get }
 @property (readonly) NSInteger eventNumber;
 ```
 
-#### Discussion
+## Discussion
 
 Every system-generated mouse and tracking-rectangle event increments this counter. If you access this property on an event of an unsupported type, AppKit raises [`internalInconsistencyException`](../../Foundation/nsexceptionname/internalinconsistencyexception.md).
 

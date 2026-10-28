@@ -19,7 +19,7 @@ The bright highlights to apply to the entity.
 var specular: CustomMaterial.Specular { get set }
 ```
 
-#### Discussion
+## Discussion
 
 In physically based rendering (PBR), specular highlights primarily come from the object’s [`roughness`](../physicallybasedmaterial/roughness-swift.property.md) value. RealityKit renders materials that have a low roughness value with specular highlights based on the environment, lighting, and shape of the entity. As a result, for most materials, you don’t need to specify a `specular` value.
 

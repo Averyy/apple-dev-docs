@@ -21,7 +21,7 @@ var image: UIImage { get set }
 @property (nonatomic, retain) UIImage * image;
 ```
 
-#### Discussion
+## Discussion
 
 For information about the image sizes and masks, see [Apple Watch Human Interface Guidelines](https://developer.apple.com/watch/human-interface-guidelines/).
 

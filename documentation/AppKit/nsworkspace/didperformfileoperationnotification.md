@@ -19,7 +19,7 @@ class let didPerformFileOperationNotification: NSNotification.Name
 extern NSNotificationName NSWorkspaceDidPerformFileOperationNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the shared `NSWorkspace` instance. The `userInfo` dictionary contains a key `@"NSOperationNumber"` with a `NSNumber` object containing an integer indicating the type of file operation
 

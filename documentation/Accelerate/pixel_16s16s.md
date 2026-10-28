@@ -23,7 +23,7 @@ typealias Pixel_16S16S = (Int16, Int16)
 typedef int16_t[2] Pixel_16S16S;
 ```
 
-#### Discussion
+## Discussion
 
 A two channel, 16-bit per channel signed pixel.
 

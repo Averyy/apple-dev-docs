@@ -21,7 +21,7 @@ Customizes how often new tips are presented in your app after another tip has be
 static func displayFrequency(_ displayFrequency: Tips.ConfigurationOption.DisplayFrequency) -> Tips.ConfigurationOption
 ```
 
-#### Overview
+## Overview
 
 Use `displayFrequency` to control how often new tips are displayed. For example, if display frequency is set to `.daily` and your `FavoriteLandmarkTip` is displayed, no new tips will be shown for at least 24 hours.
 
@@ -51,7 +51,7 @@ struct SampleApp: App {
 }
 ```
 
-##### Display Frequency Values
+### Display Frequency Values
 
 - [`immediate`](./displayfrequency/immediate.md)
   An immediate display frequency.

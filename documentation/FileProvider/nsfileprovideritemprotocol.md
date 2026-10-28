@@ -27,7 +27,7 @@ protocol NSFileProviderItemProtocol : NSObjectProtocol
 
 - [Synchronizing the File Provider Extension](./synchronizing-the-file-provider-extension.md)
 
-#### Overview
+## Overview
 
 Most of these properties are optional. A File Provider extension doesn’t need to implement all properties for all items.
 

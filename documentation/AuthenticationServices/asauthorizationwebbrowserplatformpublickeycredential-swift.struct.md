@@ -18,7 +18,7 @@ A structure that describes a passkey stored in the keychain, or managed by a thi
 struct ASAuthorizationWebBrowserPlatformPublicKeyCredential
 ```
 
-#### Overview
+## Overview
 
 Use [`ASAuthorizationWebBrowserPlatformPublicKeyCredential`](./asauthorizationwebbrowserplatformpublickeycredential-swift.struct.md) to describe passkeys in your browser app’s user interface so the person can choose a passkey. Get the chosen passkey’s [`credentialID`](./asauthorizationwebbrowserplatformpublickeycredential-swift.struct/credentialid.md) to create a [`ASAuthorizationPlatformPublicKeyCredentialDescriptor`](./asauthorizationplatformpublickeycredentialdescriptor.md) that identifies the passkey to the operating system.
 

@@ -14,7 +14,7 @@ A Boolean value that indicates whether the app may use access control technolog
 - **Name**: `com.apple.security.app-sandbox` (App Sandbox)
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 To add this entitlement to your app, enable the App Sandbox capability in Xcode.
 

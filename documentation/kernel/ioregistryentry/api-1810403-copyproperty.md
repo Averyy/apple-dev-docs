@@ -14,11 +14,11 @@ virtual OSObject * copyProperty(
  IOOptionBits options = kIORegistryIterateRecursively | options) const;
 ```
 
-#### Return Value
+## Return Value
 
 The property value found, or zero. A reference on any found property is returned to caller, which should be released.
 
-#### Overview
+## Overview
 
 This method will search for a property, starting first with this registry entry's property table, then iterating recusively through either the parent registry entries or the child registry entries of this entry. Once the first occurrence is found, it will lookup and return the value of the property, using the OSDictionary::getObject semantics. The iteration keeps track of entries that have been recursed into previously to avoid loops. This method is synchronized with other IORegistryEntry accesses to the property table(s).
 

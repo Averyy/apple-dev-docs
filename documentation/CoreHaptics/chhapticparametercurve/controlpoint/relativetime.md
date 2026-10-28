@@ -24,7 +24,7 @@ var relativeTime: TimeInterval { get set }
 @property (readwrite) NSTimeInterval relativeTime;
 ```
 
-#### Discussion
+## Discussion
 
 Think of the time as the control point’s x-coordinate.
 

@@ -25,7 +25,7 @@ init(hostTime: UInt64, sampleTime: AVAudioFramePosition, atRate sampleRate: Doub
 - (instancetype) initWithHostTime:(uint64_t) hostTime sampleTime:(AVAudioFramePosition) sampleTime atRate:(double) sampleRate;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`AVAudioTime`](../avaudiotime.md) instance.
 

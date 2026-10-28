@@ -5,23 +5,23 @@
 
 Streamline entering codes you send as SMS messages.
 
-#### Overview
+## Overview
 
 Some internet services that authenticate people with passwords send verification codes using SMS. The service sends a random one-time code to the phone number that the person added to their account profile. The person enters the code into the website or app as additional evidence that they’re accessing their own account.
 
 In iOS 14 or later and macOS Big Sur or later, format the SMS messages you send to bind your service’s one-time codes with its DNS domain. AutoFill only suggests a domain-bound code to a person when the website they’re browsing in Safari, or an associated domain for the app they’re using, matches the domain in the SMS code. This makes it harder for an attacker to trick someone into entering one-time codes into a phishing website.
 
-##### Configure your app’s associated domains
+### Configure your app’s associated domains
 
 AutoFill suggests domain-bound codes in your app if the bound domain in the message is one of the app’s associated domains. For information on configuring associated domains, see [Supporting associated domains](../Xcode/supporting-associated-domains.md).
 
-##### Set your one-time code text field’s content type
+### Set your one-time code text field’s content type
 
 For UIKit apps on iOS and Mac Catalyst, set your one-time code field’s [`textContentType`](../UIKit/uitextinputtraits/textcontenttype.md) property to [`oneTimeCode`](../UIKit/uitextcontenttype/onetimecode.md). For AppKit apps on macOS, set your one-time code field’s [`contentType`](../AppKit/nstextcontent/contenttype.md) property to [`oneTimeCode`](../AppKit/nstextcontenttype/onetimecode.md). For SwiftUI apps, use the [`textContentType(_:)`](../SwiftUI/view/textcontenttype%28_%29-ufdv.md) view modifier to set the content type to [`oneTimeCode`](../UIKit/uitextcontenttype/onetimecode.md).
 
 For your website, set the HTML `<input>` element attribute `autocomplete=one-time-code`.
 
-##### Format your SMS messages
+### Format your SMS messages
 
 You can present any information at the start of the SMS message, in any format. The last line of your message needs your DNS domain name, prefixed by an at sign (`@`), and the one-time code, prefixed by a hash symbol (`#`). Separate the two components using a space. For example:
 

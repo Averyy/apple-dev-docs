@@ -19,7 +19,7 @@ func ssidData() -> Data?
 - (NSData *) ssidData;
 ```
 
-#### Discussion
+## Discussion
 
 Dynamically queries the interface for the current SSID. The SSID is 1-32 octets. Returns *nil* in the case of an error, or if the interface is not participating in a network.
 

@@ -24,7 +24,7 @@ func attributeNamed(_ name: String) -> MDLVertexAttribute?
 - (MDLVertexAttribute *) attributeNamed:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 The descriptor’s vertex attribute with the specified name, or `nil` if the [`attributes`](./attributes.md) array does not contain a vertex attribute with that name.
 

@@ -32,7 +32,7 @@ var options: UNNotificationActionOptions { get }
 @property (atomic, readonly) UNNotificationActionOptions options;
 ```
 
-#### Discussion
+## Discussion
 
 You app should define options for an action when your app requires the corresponding behavior.
 

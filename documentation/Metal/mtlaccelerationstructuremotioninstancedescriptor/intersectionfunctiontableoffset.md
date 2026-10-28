@@ -24,7 +24,7 @@ var intersectionFunctionTableOffset: UInt32
 uint32_t intersectionFunctionTableOffset;
 ```
 
-#### Discussion
+## Discussion
 
 By default, after Metal finds an intersection between a ray and a primitive, it runs your specified intersection function to determine whether the ray actually hit the primitive. To determine which function in the intersection table to call, Metal adds this property to the value specified in the instance’s [`intersectionFunctionTableOffset`](../mtlaccelerationstructuregeometrydescriptor/intersectionfunctiontableoffset.md), and looks up the entry at that index.
 

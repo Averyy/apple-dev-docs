@@ -24,7 +24,7 @@ func pause()
 - (void) pause;
 ```
 
-#### Discussion
+## Discussion
 
 If the sound event plays audio, this function pauses audio playback.
 

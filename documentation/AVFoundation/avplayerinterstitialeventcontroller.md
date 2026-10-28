@@ -25,7 +25,7 @@ class AVPlayerInterstitialEventController
 @interface AVPlayerInterstitialEventController : AVPlayerInterstitialEventMonitor
 ```
 
-#### Overview
+## Overview
 
 This class is a subclass of [`AVPlayerInterstitialEventMonitor`](./avplayerinterstitialeventmonitor.md) that you use to manage the schedule of interstitial events to present during playback of primary content.
 

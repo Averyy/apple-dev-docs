@@ -16,7 +16,7 @@ Schedules HID device with run loop.
 void IOHIDDeviceScheduleWithRunLoop(IOHIDDeviceRef device, CFRunLoopRef runLoop, CFStringRef runLoopMode);
 ```
 
-#### Discussion
+## Discussion
 
 Formally associates device with client's run loop. Scheduling this device with the run loop is necessary before making use of any asynchronous APIs.
 

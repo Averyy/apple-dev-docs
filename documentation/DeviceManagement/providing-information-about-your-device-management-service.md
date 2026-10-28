@@ -5,7 +5,7 @@
 
 Create a service configuration entry point to your device management service to access frequently used information.
 
-#### Overview
+## Overview
 
 Add an unauthenticated HTTPS request entry point to your device management service to make it easier to access useful information about your service. Create the entry point using the endpoint `/MDMServiceConfig`; for example, `https://devicemanagement.example.com/MDMServiceConfig`.
 

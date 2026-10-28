@@ -4,13 +4,13 @@
 
 Displays information about a single media item and its components.
 
-#### Overview
+## Overview
 
 Use the `compilationTemplate` element to display information about one product that is made up of several distinct pieces; for example, an album and all of the songs that it contains. The header area on the left side of the screen contains general product information. Directly underneath the header area are several section areas that group like types of information; for example, one section can contain all of the songs on the album. The related content on the right side of the screen contains any images associated with the product and buttons that the user can use to interact with the product, such as Play and Buy buttons. The following figure shows the basic layout for a `compilationTemplate` page. The theme for the compilation template defaults to the system preference.
 
 ![Layout diagram showing header and section areas on the left side and related content on the right.](https://developer.apple.com/tutorials/images/com.apple.TVML/compilationtemplate-1@2x.png)
 
-##### Main Elements
+### Main Elements
 
 The following listing shows the main elements of the `compilationTemplate` element in TVML format:
 
@@ -40,7 +40,7 @@ The following listing shows the main elements of the `compilationTemplate` eleme
 </compilationTemplate>
 ```
 
-###### Element Descriptions
+#### Element Descriptions
 
 - **[background](./background.md)**: Background elements, such as audio.
 - **[header](./header.md)**: Information describing what a section of the list contains.
@@ -50,7 +50,7 @@ The following listing shows the main elements of the `compilationTemplate` eleme
 - **[relatedContent](./relatedcontent.md)**: Element containing all elements displayed along the right side of the screen.
 - **[section](./section.md)**: An area of the page that groups related elements for layout purposes.
 
-##### Example
+### Example
 
 The following listing shows the TVML for a `compilationTemplate` example. The example displays a list on the left side that contains information about the album and a list of available songs. The right side of the display contains an image of the album and buttons prompting the user to buy, rate, or shuffle the music.
 

@@ -21,7 +21,7 @@ A handler callback the queue uses to perform an insertion sort of the queue.
 CMBufferCompareHandler compare;
 ```
 
-#### Discussion
+## Discussion
 
 The queue invokes this callback when enqueuing buffers to perform an insertion sort. If you don’t provide a handler, the queue defaults to FIFO order.
 

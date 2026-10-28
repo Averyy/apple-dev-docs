@@ -5,7 +5,7 @@
 
 Create pipeline states for render and compute passes, samplers, depth and stencil states, and indirect command buffers.
 
-#### Overview
+## Overview
 
 Use these methods to create instances of various state types for a render or compute pass (see [Render passes](./render-passes.md) and [Compute passes](./compute-passes.md), respectively).
 

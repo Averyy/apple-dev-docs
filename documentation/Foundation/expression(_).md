@@ -16,8 +16,8 @@
 ## Declaration
 
 ```swift
-@freestanding
-(expression) macro Expression<each Input, Output>(_ body: (repeat each Input) -> Output) -> Expression<repeat each Input, Output>
+@freestanding(expression)
+macro Expression<each Input, Output>(_ body: (repeat each Input) -> Output) -> Expression<repeat each Input, Output>
 ```
 
 ## See Also

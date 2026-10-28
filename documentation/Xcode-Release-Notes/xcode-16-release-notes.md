@@ -5,19 +5,19 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 Xcode 16 includes SDKs for iOS 18, iPadOS 18, tvOS 18, watchOS 11, macOS Sequoia 15, and visionOS 2. The Xcode 16 release supports on-device debugging in iOS 15 and later, tvOS 15 and later, watchOS 7 and later, and visionOS. Xcode 16 requires a Mac running macOS Sonoma 14.5 or later.
 
-##### General
+### General
 
-###### Notes
+#### Notes
 
 - Predictive Code Completion is now supported on all Apple silicon Macs.  (130449481)
 - Predictive Code Completion is not supported when running Xcode in a Virtual Machine.  (129198328)
 - Developing for visionOS requires a Mac with Apple silicon.  (114799042)
 
-###### New Features
+#### New Features
 
 - Copy and paste from the build settings editor now uses xcconfig file syntax.  (14333348) (FB5925390)
 - The Project Navigator’s “Open As” context menu now supports choosing default editors per file type  (24666459)
@@ -30,7 +30,7 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, tvOS 18, watchOS 11, macOS Sequoia
 
   To import, run `xcodebuild -importPlatform <pathToSimulator.dmg>`, note that `xcrun simctl runtime add <pathToSimulator.dmg>` also works.  (129189162)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: `xcodebuild -showBuildSettings` now uses the new build system, to match the settings used when performing an actual build. This may result in some differences in the build settings emitted compared to the earlier implementation, particularly in the presence or absence of `-scheme` and `-destination` options to `xcodebuild`.  (58870112) (FB7549715)
 - Fixed an issue where the Add Frameworks dialog in the target editor would not show any results for a target building against the DriverKit SDK.  (107754792) (FB12103199)
@@ -47,7 +47,7 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, tvOS 18, watchOS 11, macOS Sequoia
 - Fixed: AppIntents may fail to build project if there are duplicate title values for AppIntent conformances within the same target.  (131192911)
 - Fixed: Varying a source language string in a String Catalog by plural will now use the correct plural cases for each language when propagating the same change to already-translated languages. (132042468)
 
-###### Known Issues
+#### Known Issues
 
 - Xcode 16 beta 5 may crash when opening Source Editor if running macOS Sequoia, beta 4 or older.   (130609632)
 
@@ -62,19 +62,19 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, tvOS 18, watchOS 11, macOS Sequoia
 
   (replacing the path to Xcode 16 if necessary.)
 
-###### Deprecations
+#### Deprecations
 
-- The simulator runtimes are currently available on the Apple Developer website, but will no longer be posted through the website in future updates.  Please use `xcodebuild -downloadPlatform <platform> -exportPath <path>` command to download the runtime and then `xcodebuild -importPlatform <path/simruntime.dmg>` to install it.  For more details, see [Installing and managing Simulator runtimes](../Xcode/installing-additional-simulator-runtimes.md).  (133776444)
+- The simulator runtimes are currently available on the Apple Developer website, but will no longer be posted through the website in future updates.  Please use `xcodebuild -downloadPlatform <platform> -exportPath <path>` command to download the runtime and then `xcodebuild -importPlatform <path/simruntime.dmg>` to install it.  For more details, see [Installing and managing Simulator runtimes](../Xcode/downloading-and-installing-additional-xcode-components.md).  (133776444)
 
-##### App Distribution
+### App Distribution
 
-###### Known Issues
+#### Known Issues
 
 - When building for ad hoc distribution, some iOS apps may have their watchOS apps uninstall or fail to launch with an error about needing an iPhone App when one already exists.  (135240308)
 
-##### Apple Clang Compiler
+### Apple Clang Compiler
 
-###### New Features
+#### New Features
 
 - For a re-exported module, Clang now looks for API Notes in the re-exporting module’s apinotes file. For example:
 
@@ -115,36 +115,36 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, tvOS 18, watchOS 11, macOS Sequoia
   - Structured binding extensions. ([P1091R3](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1091r3.html), [P1381R1](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1381r1.html))
   - Parenthesized initialization of aggregates. ([P0960R3](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p0960r3.html), [P1975R0](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1975r0.html))  (128912178)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed looking up module maps in all subdirectories of provided header search paths.  (106677321)
 
-###### Deprecations
+#### Deprecations
 
 - The following items have been deprecated or removed: Using -e without space after it to specify entry function to linker is disallowed now.  (130452096)
 
-##### Asset Catalogs
+### Asset Catalogs
 
-###### New Features
+#### New Features
 
 - The Asset Catalog context menu has a new “Find References to Item” option that initiates an “Asset References” find for the selected asset  (104226484)
 - Asset catalogs now provide an inspector property for enabling system color and image accessors for generated asset symbols, which allows Swift packages to opt-in to generating these accessors.  (113704993)
 - Code completion results for generated asset symbols now display asset thumbnails  (114392937)
 - The Find Navigator has a new “Asset References” query type that locates asset references as string literals or Swift/Objective-C generated symbols  (126376146)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Improved thumbnail rendering for asset catalog images.  (114343652)
 - Fixed an issue where the Attributes Inspector wasn’t displayed for items in a Sticker Catalog.  (120438144) (FB13512995)
 
-##### Build System
+### Build System
 
-###### New Features
+#### New Features
 
 - Beginning in Xcode 16, the build system coordinates with the Clang and Swift compilers to discover and build module dependencies of project sources as a set of explicit tasks in the build log. Explicitly built modules provide more actionable error messages when compilation errors are diagnosed, improve debugger performance, and allow the build system to make better scheduling decisions which maximize parallelism.  (112943296)
 - New build settings have been added to facilitate adoption of Swift 6. The `SWIFT_VERSION` build setting now allows building with the Swift 6 language mode. Projects can incrementally migrate to Swift 6 by opting into features individually using the new build settings under `Swift Compiler - Upcoming Features`.  (114638076)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Xcode now renames files such as TargetName-InfoPlist.strings to InfoPlist.strings at build time, even when the Info.plist file is fully generated by the build system.  (108824512)
 - Fixed: Resolved an issue where “Clean Build Folder” would have no effect in some workspaces containing a project without any targets.  (116412043)
@@ -154,9 +154,9 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, tvOS 18, watchOS 11, macOS Sequoia
 - Fixed: The build system now computes dependency information from command line arguments in more scenarios, reducing the likelihood of nondeterministic build failures. In some cases this may require shell script build phases to add output file dependency declarations.  (125596258)
 - Fixed: Building a project that contains only warnings no longer reveals the issue navigator on build completion. Instead, a new behavior option for ‘Build > Generates Warnings’ was introduced that is distinct from ‘Build > Generates Errors’.  (127064801)
 
-##### C++ Standard Library
+### C++ Standard Library
 
-###### New Features
+#### New Features
 
 - You can now turn on C++ Standard Library hardening in the Build Settings. Turning on hardening enables checks for common cases of misuse of the standard library APIs; if a check fails, the program is reliably terminated, helping prevent security vulnerabilities and diagnose some cases of undefined behavior. The library provides several hardening modes, including low-overhead modes that can be used in production. For more details, please refer to the [hardening documentation](https://developer.apple.com/xcode/cpp/#library-hardening).
 
@@ -182,7 +182,7 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, tvOS 18, watchOS 11, macOS Sequoia
   - [P2517R1](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p2517r1.html) — Add a conditional noexcept specification to `std::apply`
   - [P2539R4](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p2539r4.html) — Should the output of `std::print` to a terminal be synchronized with the underlying stream?  (128950351)
 
-###### Deprecations
+#### Deprecations
 
 - The following items have been deprecated or removed:
 
@@ -201,39 +201,39 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, tvOS 18, watchOS 11, macOS Sequoia
   - The macro `_LIBCPP_ENABLE_CXX20_REMOVED_ALLOCATOR_MEMBERS` has been deprecated and will be removed in a future release. This macro previously re-enabled redundant members of `std::allocator<T>` like `pointer`, `reference`, `rebind`, `address`, `max_size`, `construct`, `destroy`, and the two-argument overload of `allocate`. However, this led to the library being non-conforming due to incorrect constexpr-ness.
   - The macros `_LIBCPP_ENABLE_CXX17_REMOVED_FEATURES` and `_LIBCPP_ENABLE_CXX20_REMOVED_FEATURES` have been deprecated and will be removed in a future release. These macros used to re-enable all features that were removed in the C++17 and C++20 standards. Instead of using these macros, please use the macros that re-enable individual features.  (128950615)
 
-##### CarPlay Simulator
+### CarPlay Simulator
 
-###### New Features
+#### New Features
 
 - UI Refresh as well as the ability for you to rename configurations and screen record in CarPlay Simulator. Modifying and switching between configurations is accessible via a drop down in the main CarPlay Simulator window. Screen recording is accessible via the toolbar in the main CarPlay Simulator window.  (124405895)
 
-##### Clang
+### Clang
 
-###### New Features
+#### New Features
 
 - Clang now supports generating code to call typed allocators. To enable this support for C allocation functions such as `malloc()` set the `CLANG_ENABLE_C_TYPED_ALLOCATOR_SUPPORT` build setting to `YES`. For C++ allocations with `operator new`, set `CLANG_ENABLE_CPLUSPLUS_TYPED_ALLOCATOR_SUPPORT` to `YES`.  (132456928)
 
-##### Command-line Tools
+### Command-line Tools
 
-###### New Features
+#### New Features
 
 - Symbolication command line tools such as `atos `and `symbols` now support binaries and dSYMs with DWARFv5 debug info format.  (28041592)
 
-##### Containerization
+### Containerization
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: An app might not be able to read the contents of its own data container after replacing the content of the data container using Xcode or devicectl.  (116698465) (FB13253099)
 
-##### Create ML
+### Create ML
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Training fails towards the end of the Object Tracking training process if user loses internet connection.  (130111589)
 
-##### Debugging
+### Debugging
 
-###### New Features
+#### New Features
 
 - LLDB can now import explicitly-built Swift and Clang modules directly. If the first expression evaluation in LLDB takes a long time due to Clang module compilation, consider adopting explicit modules in your project.  (84105971)
 - The debug bar provides a control to view the current backtrace in the source editor, unified with contextual relevant source code for each frame in the source editor  (102907696)
@@ -245,7 +245,7 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, tvOS 18, watchOS 11, macOS Sequoia
 - After selecting the process entry in the Debug Navigator, users can now use the `Delete` key or contextual menu to stop the process.  (121154261)
 - Exception backtrace is shown more logically in Debug Navigator, especially when shown together with async recorded backtraces.  (121675894)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Breakpoints created in the LLDB console are now reflected in the breakpoint navigator and source editor  (10442078)
 - Fixed: LLDB will now initialize the Swift compiler used for expression evaluation with the exact configuration of the Swift module at the current breakpoint instead of merging all compiler flags from the entire application. This makes search path mismatches less likely.  (115188886)
@@ -253,13 +253,13 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, tvOS 18, watchOS 11, macOS Sequoia
 - Fixed an issue in the memory graph debugger where the inspector would not display allocation backtraces for objects in a saved memgraph file.  (120755580)
 - Fixed: When debugging or profiling arm64/arm64e apps on macOS 15, iOS 18, tvOS 18, or visionOS 2, SwiftUI symbols should now be present.  (127698015)
 
-###### Deprecations
+#### Deprecations
 
 - Diagnostics option “Malloc Stack Logging” no longer allows selecting “All Allocations and Free History” and instead tracks live allocations only.  (126948168)
 
-##### Devices
+### Devices
 
-###### New Features
+#### New Features
 
 - `devicectl` now provides commands to manage the developer disk images present on your Mac. See `devicectl manage ddis --help` for more information.   (114472187)
 - `devicectl list devices` now supports hiding column headers in its textual output via the `--hide-headers` flag.   (119357626)
@@ -267,7 +267,7 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, tvOS 18, watchOS 11, macOS Sequoia
 - `devicectl's --device` flag can now supports using a device’s name, DNS name, CoreDevice identifier, UDID, serial number, or ECID.  (123703862)
 - Core Device has improved error reporting when an app fails to launch.  (123922504)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Xcode no longer changes the currently selected run destination implicitly when there is a transient loss of connectivity to the device. Xcode will keep the disconnected device selected with an indicator of its disconnected status.  (38378613)
 - Fixed: Improved error reporting when we fail to enable DDI services on a device.  (114012346) (FB12987859)
@@ -278,31 +278,31 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, tvOS 18, watchOS 11, macOS Sequoia
 - Fixed: Pairing the same device again may cause the device to appear in the “Disconnected” section of the Device and Simulator Window.   (131072881)
 - Fixed: When targeting an Apple Watch (or simulator) that is in Nightstand Mode, Xcode will fail to launch the application with an “application failed to launch” error.  (134250531) (FB14855711)
 
-###### Known Issues
+#### Known Issues
 
 - Xcode is sometimes unable to determine if developer mode is enabled when using a device over the network.  (131662031) (FB14298506)
 
   **Workaround:** Connect the device directly to the Mac using a USBC or Lightning cable, then place the device in airplane mode to force Xcode to use the deivce over the wired connection.  Once Xcode is successfully using the device over the wired connection, you can turn airplane mode back on, and Xcode will continue to use the wired connection.
 - If Xcode is unable to determine the state of developer mode on a device, it will report that developer mode is disabled, possibly leading to confusion if developer mode is actually enabled.  (133418906)
 
-##### Documentation
+### Documentation
 
-###### New Features
+#### New Features
 
 - Swift-DocC has the ability to combine overloaded methods when `--enable-experimental-overloaded-symbol-presentation` is added to “Other DocC Flags” (`OTHER_DOCC_FLAGS`).  (38183676)
 - Write documentation links to on-page headings and topic sections using `<doc:SomePage#Some-heading-title>`  (78908451)
 - Swift-DocC now supports writing and building documentation for C++ APIs.  (117904434)
 - Swift-DocC now warns about documentation for parameters and return values that doesn’t exist for that documented API.  (118739612)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Documentation extension files no longer require unique file names.  (117174884)
 - Fixed: Documentation extension files for symbols with Swift and Objective-C representations can now use either language representation’s spelling for relative symbol links.  (120380627)
 - Fixed: Objective-C symbols with language refined representations in Swift now display distinct documentation hierarchies for Swift and Objective-C.  (122300247) (FB13585944)
 
-##### Foundation
+### Foundation
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: If meeting both of the following scenarios, your app may crash on launch on platforms earlier than the latest versions of the respective OS with errors indicating missing symbols in `NSDecimal`:
 
@@ -313,9 +313,9 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, tvOS 18, watchOS 11, macOS Sequoia
 
   **Note**: This does not affect apps calling these functions from Objective-C or apps running on the latest versions of the respective OS.  (133371820) (FB14696453)
 
-##### Instruments
+### Instruments
 
-###### New Features
+#### New Features
 
 - ‘Flatten Recursion’ feature in the new call tree detects and collapses cases of indirect recursion. (6823780) (FB5940449)
 - Recording options for a document and Instruments are now available directly in the document window when starting from a template. Subsequent runs can be reconfigured using ‘Next Recording’ button available in the runs sidebar. (40923253)
@@ -333,7 +333,7 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, tvOS 18, watchOS 11, macOS Sequoia
 - The new call tree enhances user responsiveness and provides progress bar feedback during longer running computations. (122577386)
 - `heap`, `leaks`, the Leaks instrument, and the Xcode memory graph debugger now label untyped allocations pointed to by stored properties of Swift types for easier identification.  (127317183)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed a sporadic crash happening when recording trace with the ‘Allocations’ Instrument. (27975091)
 - Fixed an issue where Instruments would show an error saying ‘Required kernel recording resources are in use by another document’ and prevent further recordings in the same document. (93788278)
@@ -344,7 +344,7 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, tvOS 18, watchOS 11, macOS Sequoia
 - Fixed an issue where Instruments wouldn’t respect ‘Working Directory’ override when launching applications on a macOS platform. (123194792) (FB13631596)
 - Fixed an issue where tracks in the main and pinned timeline could appear selected at the same time. (125189186)
 
-###### Known Issues
+#### Known Issues
 
 - UI State of the new call tree is not being saved in trace documents. (113659508)
 - When “Focus on Subtree” is used in the new call tree to focus a node, subsequent function applications are not possible. (116369374)
@@ -354,34 +354,34 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, tvOS 18, watchOS 11, macOS Sequoia
 - Legacy call tree is still used in the following Instruments: Allocations, Leaks, CPU Counters when using arithmetic formulas, Sample Importer. (124118051)
 - Xcode Debugger fails to capture memory graph from processes running in watchOS Rosetta Simulator destinations.  (132023793)
 
-###### Deprecations
+#### Deprecations
 
 - ‘Always use deferred mode’ option has been removed from Instruments. To record in deferred mode, use custom templates mechanism. (120497357)
 
-##### Interface Builder
+### Interface Builder
 
-###### Deprecations
+#### Deprecations
 
 - `@IBDesignable` views are deprecated and will no longer be rendered in the Interface Builder canvas.  (115873872)
 
-##### Linking
+### Linking
 
-###### New Features
+#### New Features
 
 - `dyld_info` gained support for code disassembly (`-disassemble`) and an improved Objective-C metadata inspection (`-objc`).  (65914062)
 - A new code deduplication algorithm brings additional code size savings and an improved static link time performance. It is enabled by default in release builds.  (125995452)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: A branch out of range errors in large binaries have been resolved with an improved branch island generation.  (117077862) (FB13282296)
 
-###### Deprecations
+#### Deprecations
 
 - `-ld_classic` linker option is deprecated and will be removed in a future release.  (128502299)
 
-##### Localization
+### Localization
 
-###### New Features
+#### New Features
 
 - The String Catalog filter bar now supports more complex search criteria such as “Begins With” and “Does Not Contain”. It also supports filtering by specific translation states.  (82717148) (FB9594524)
 - You can now mark strings in a String Catalog as not to be translated via “Mark as “Don’t Translate”” in the context menu. When such strings are exported via Product > “Export Localizations”, they will be marked with the translate=no attribute in the XLIFF file. This feature may be useful for strings that are still being iterated on and are not ready to be translated. The String Catalog editor prevents translation of strings marked as “Don’t Translate”.  (89342670)
@@ -397,7 +397,7 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, tvOS 18, watchOS 11, macOS Sequoia
 - Warnings are now emitted by the String Catalog editor for stale strings. Fix-Its are provided to remove the string if you no longer need it or to manage manually if you’d like to keep it around.  (125992742)
 - Tooltips in String Catalogs now provide insight into why a particular string cannot be edited. (129254023)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: When exporting localizations, Sticker Packs now treat accessibility labels as localizable. File names are no longer considered localizable.  (43449067)
 - Fixed: Xcode no longer extracts strings from SwiftUI Previews for localization. Such strings will no longer be extracted to String Catalogs or included by Product > Export Localizations.  (75628856)
@@ -428,19 +428,19 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, tvOS 18, watchOS 11, macOS Sequoia
 - Fixed an error “No “original” attribute provided for strings from table” that could occur when exporting localizations. (131190361) (FB14207838)
 - Fixed: Xcode now remembers column visibility settings in String Catalog editor. Use the context menu on the string table header to adjust column visibility. (131930622)
 
-###### Deprecations
+#### Deprecations
 
 - As of Xcode 16, the genstrings command-line tool is considered deprecated. String Catalogs in Xcode provide a way to automatically aggregate localizable strings from source code using the Swift compiler and other technologies. If you still need to find basic usages of NSLocalizedString in Swift and C-family source code outside the context of String Catalogs and without using the compiler, you can use the `xcstringstool` utility instead. The following invocation would extract NSLocalizedString and similar API from the input source files and generate a .strings file, similar to genstrings: `xcrun xcstringstool extract --legacy-localizable-strings -o <output-directory> --output-format strings <input-files>`  (102887793)
 
-##### Lock Screen
+### Lock Screen
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Lock Screen Quick Action buttons might disappear.  (128096099)
 
-##### LockedCameraCapture
+### LockedCameraCapture
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Capture Extensions are unable to fetch previously captured assets from PhotoKit when unlocked  (123529801)
 - Fixed: Device may lock when recording video  (123639753)
@@ -452,7 +452,7 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, tvOS 18, watchOS 11, macOS Sequoia
 - Fixed: Launching Capture Extensions may also concurrently prompt to open the app.  (130313693)
 - Fixed: Capture Extensions may crash with false “Camera not actively used” termination reason, including during extension to app transitions.  (130846437)
 
-###### Known Issues
+#### Known Issues
 
 - Logging does not appear in Xcode when debugging Capture Extensions when using “Attach to Process”.  (129785280)
 
@@ -460,48 +460,48 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, tvOS 18, watchOS 11, macOS Sequoia
 - Apps launched via Lock Screen Quick Action buttons will not run the CameraCaptureIntent perform function.   (133404039)
 - Capture Extensions or apps launched via CameraCaptureIntent may erroneously crash with “AVCaptureEventInteraction not installed” reason  (133578610)
 
-##### Memory Tools
+### Memory Tools
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: When running on beta 5 of macOS 15 Sequoia, iOS 18, or aligned OS builds, memory tools like Xcode’s Memory Graph Debugger and Instruments’ Leaks template, may fail unexpectedly or crash. This includes the command-line tools `leaks`, `heap`, `vmmap`, and `malloc_history` when run against live macOS or Simulator processes.  (132747700)
 
-##### Metal Debugger
+### Metal Debugger
 
-###### New Features
+#### New Features
 
 - The Metal Debugger now supports capturing a macOS app by pressing a keyboard shortcut.  (48403037)
 - The Xcode metal debugger adds support for metal-shaderconverter enabling source-level shader validation, debugging, and profiling for HLSL shaders  (116155434)
 
-##### Metal offline compiler
+### Metal offline compiler
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Building GPU binaries using metal-tt with deployment targets prior to iOS 18 and macOS 15 has undefined behavior and can result in incorrect compilation or a crash  (129366607)
 
-##### MPS Graph Viewer
+### MPS Graph Viewer
 
-###### New Features
+#### New Features
 
 - Xcode can now open MPS Graph packages. The new MPS Graph viewer let’s you inspect your pre-trained machine learning networks and visualize how they would be executed on Apple Silicon.  (116472862)
 
-##### Playgrounds
+### Playgrounds
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Xcode Playgrounds may compile code with Swift language version 5 even when the playground is configured to language version 6.  (128711228)
 - Fixed: Users may be unable to add files to a Playground.  (131866503)
 
-##### Previews
+### Previews
 
-###### New Features
+#### New Features
 
 - Xcode 16 brings a new execution engine for Previews that supports a larger range of projects and configurations. Now with shared build products between Build and Run and Previews, switching between the two is instant. Performance between edits in the source code is also improved for many projects, with increases up to 30%.  (37353090)
 - Previews now support previewing views inside of static libraries.  (50492391)
 - `PreviewModifier` is a new preview API for defining and applying reusable work between previews. Preview modifier can use an async and throwing initializer to load data, for example. Then in a separate call that data can be applied to any preview with that modifier. This makes it easier to load and apply data when using patterns like SwiftData, for example.  (108233218)
 - `@Previewable` is a new macro that can be applied to any SwiftUI property wrapper so it can be used directly inside of a #Preview without needing to define an intermediate wrapper view. This is especially common for the use of `@State`, which can now be written as `@Previewable @State var myState = <initial value>` directly inside of the `#Preview`.  (110570957) (FB12298419)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Previews now support previewing inside of bundle targets  (51419685)
 - Fixed: Previewing inside of files with methods of types nested in extensions no longer fails.  (74739568) (FB9019661)
@@ -528,9 +528,9 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, tvOS 18, watchOS 11, macOS Sequoia
 - Fixed: Previews may fail the first time you open a project that uses non-system macros.  (129604770)
 - Fixed an issue where previews was incorrectly applying platform filters.  (129862695)
 
-##### Project Management
+### Project Management
 
-###### New Features
+#### New Features
 
 - Xcode 16 introduces several new streamlined file creation workflows. Use “New Empty File” from the Project Navigator’s context menu to quickly create a new Swift file without any confirmation dialogs. Use Copy, Paste, and Duplicate from the Edit menu to create a new file from an existing file. Finally, you can cut text from the Source Editor, and then use the “New File from Clipboard” command while holding the option key in the Project Navigator’s context menu to quickly extract part of a source file into a new file.  (96547991)
 - The Xcode target editor now only shows major OS versions in the list of suggested deployment target versions.  (118566415)
@@ -542,33 +542,33 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, tvOS 18, watchOS 11, macOS Sequoia
   To use a folder as an opaque copiable resource, the default behavior before Xcode 16, uncheck the “Build Folder Contents” option in the File Inspector.  (123729918)
 - The Project Navigator now defaults to creating groups with associated folders when using the “New Group” and “New Group from Selection” commands. To create a group without a folder, hold option in the context menu to reveal the “New Group without Folder” variant of the command.  (127396845)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: The new xcodebuild flag of `-packageAuthorizationProvider keychain|netrc` can now be used to force usage of keychain or netrc as the authorizaion provider. This improves Xcode’s package registry support.  (118898849)
 - Fixed: Xcode projects once again support package dependencies on packages in the same directory or a parent path. This support had been temporarily removed because it could cause Xcode to crash.  (126308647)
 
-##### Project Navigator
+### Project Navigator
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: The Swift Migrator (Edit > Convert > To Current Swift Syntax) has been removed. For more information, see [Migrating to Swift 6](http://swift.org/migration).  (123486127)
 - Fixed: xcodebuild now validates the format version number of Xcode projects for compatibility when performing builds.  (125385745)
 
-##### Quick Actions
+### Quick Actions
 
-###### New Features
+#### New Features
 
 - Quick Actions now supports semantic search, which provides results that match the intent of a query without needing to exactly match the text.  (119402784)
 - Quick Actions now displays enhanced result descriptions for certain actions.  (123842506)
 - Quick Actions now supports acronym search e.g. the query “nef” matches the action “New > Empty File”.  (124293396)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where Quick Actions wouldn’t include results for certain menu items until the containing menus were manually opened.  (123789065)
 
-##### Reality Composer Pro
+### Reality Composer Pro
 
-###### New Features
+#### New Features
 
 - Timelines allows you to sequence actions to be executed in a particular order or at a particular time. Reality Composer Pro makes it easy to edit and configure those actions on a timeline and then initate the timeline to play based on a trigger.  (75589529)
 - You can now use VirtualEnvironmentProbeComponent to control the lightning of your virtual environment.   (117770245)
@@ -576,7 +576,7 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, tvOS 18, watchOS 11, macOS Sequoia
 - You can control the audio properties of an immersive environment using `RevertComponent`.   (118421316)
 - The number of texcoords has been extended from 2 to 8. The 6 new buffers support `float2`, `float3` and `float4` data.  The first 2 buffers continue to support only `float2` data.  (123364636)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Modifying animation action parameters may result in actions overlapping with other actions on the same animation track.  (124014280)
 - Fixed: Using the option *Convert Variants to Configurations* may results in a compilation failure of Reality Composer Pro projects.  (125624179)
@@ -595,7 +595,7 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, tvOS 18, watchOS 11, macOS Sequoia
 - Fixed: Nested Timelines do not loop infinitely.  (129304213)
 - Fixed: The Reverb Component has changed and will not apply a reverb effect until you reselect your previous reverb using Reality Composer Pro and re-deploy your project to your Apple Vision Pro.  (129951626)
 
-###### Known Issues
+#### Known Issues
 
 - Authoring light spill is not supported on Intel Macs.  (124170457)
 - Grounding shadow may be visible on the ground plane even if the grid hidden.  (127603652)
@@ -606,21 +606,21 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, tvOS 18, watchOS 11, macOS Sequoia
 
   **Workaround:** Either close and re-open Reality Composer Pro, or switch to a different scene tab and back
 
-##### RealityKit Inspector
+### RealityKit Inspector
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Capture Entity Hierarchy does not work when running designed for iPad apps on visionOS.   (128028088)
 
-##### Safari Web Extensions
+### Safari Web Extensions
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: The safari-web-extension-converter may fail when creating a new project.  (130299863)
 
-##### Signing & Distribution
+### Signing & Distribution
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: When building for macOS, Xcode 16 will now validate that any provisioning profiles used allow list all of the restricted entitlements you’ve specified in your entitlements files. This validation ensures that your app will successfully install, launch, and make use of system capabilities and services that require the entitlement. This may result in a build error if you are using a provisioning profile that doesn’t allow list the restricted entitlements you need. Automatic signing will generate a new provisioning profile for you, buit if you are using manual signing then you will need to visit your account at [https://developer.apple.com/account](https://developer.apple.com/account) to create a new provisioning profile.  (48821779)
 - Fixed: Xcode 16 stores downloaded provisioning profiles in a new location on disk, at ~/Library/Developer/Xcode/UserData/Provisioning Profiles. Xcode will still load previously downloaded profiles from the previous location.  (54347894)
@@ -628,36 +628,36 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, tvOS 18, watchOS 11, macOS Sequoia
 - Fixed: `xcodebuild` will crash when exporting an archive using manual signing if there is no provisioningProfiles key provided in the export options plist.  (128040128) (FB13797243)
 - Fixed: Submitting an iOS app with the Web Browser Engine Host entitlement to the App Store or for local distribution may fail with the error `App contains binaries that have no valid architectures for distribution.`  (135387309)
 
-##### Simulator
+### Simulator
 
-###### New Features
+#### New Features
 
 - Xcode 16’s visionOS simulator now includes support for simulated FaceTime calls. You can use this feature to test your SharePlay experience with a simulated group session on the visionOS simulator.
 
   To start a simulated visionOS FaceTime call, select one of the participant configurations in the “FaceTime” submenu of the simulator’s “Features” menubar item. For example, select Features > FaceTime > User and 4 Spatial Participants to start a call with four simulated participants using their spatial Personas.  (112669619)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Resolves a bug that limited the number of times that an iOS app could be rebuilt and launched to the local Mac destination designed for iPad.  (110895896) (FB12364137)
 - Fixed: When attempting to boot a simulator device after your system installs an XProtect update, the simulated device should boot more reliably (encountering less “Unable to boot the Simulator” or “-308” errors).  However, performance will not be optimized for boots that occur prior to GateKeeper completing a re-scan of the simulator runtime’s dyld cache (usually within a few minutes).  (118038020)
 
-###### Known Issues
+#### Known Issues
 
 - On systems that do not have Internet access, Xcode cannot reach the index for SDK to Simulator runtime mapping information. This will cause Xcode to list current simulators as ‘Other Installed Platforms’ and consider the current platform as missing.  (135367176)
 
   **Workaround:** To download a copy of the latest index run: `curl -O https://devimages-cdn.apple.com/downloads/xcode/simulators/index2.dvtdownloadableindex` Then copy the index to the offline system and run the following command to set the index: `defaults write com.apple.dt.Xcode DVTDownloadableIndex <path/to/the/copied/index2.dvtdownloadableindex>` Remember to repeat this workaround when upgrading to newer simulator runtimes, or newer Xcode, on systems without Internet access.
 
-##### Source Control
+### Source Control
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Xcode now properly handles “insteadOf” rules in git config  (52076700)
 - Fixed: The git command line tool distributed with Xcode 16 Beta does not contain PCRE support.  (119158145)
 - Fixed: Xcode now looks up the user’s known_hosts files for trusted keys when connecting to remote servers via SSH  (128175533)
 
-##### Source Editor
+### Source Editor
 
-###### New Features
+#### New Features
 
 - Added support for EditorConfig. The editor now respects indentation settings given in `.editorconfig` files. Xcode supports the following settings: `indent_style`, `tab_width`, `indent_size`, `end_of_line`, `insert_final_newline`, `max_line_length`, and `trim_trailing_whitespace`. See [https://editorconfig.org](https://editorconfig.org) for more information. Settings from `.editorconfig` files normally take precedence over settings given in the “Text Editing” section of View > Inspectors > File for a file or group. This can be disabled by unchecking the “Prefer Settings from EditorConfig” checkbox on the Indentation tab of Xcode > Settings > Text Editing.  (20796230)
 - There is a new “Extract to File” refactor action. Users can now click on a top level declaration in Swift files (class, struct, enum, extension, function) and click on “Extract to File” in the “Refactor” section, which will extract the declaration to a new file, as well as the relevant comments and imports. Users can also select any code and click on “Extract Selection to File” in the “Refactor” section, which will extract that selection to a new file.  (39453975)
@@ -667,34 +667,34 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, tvOS 18, watchOS 11, macOS Sequoia
 
   (133017821)
 
-###### Known Issues
+#### Known Issues
 
 - Changes to `.editorconfig` are not reflected immediately in open files.  (120389049)
 
   **Workaround:** Quit and restart Xcode.
 
-##### StoreKit
+### StoreKit
 
-###### New Features
+#### New Features
 
 - macOS now supports in-app [Offer Code](https://developer.apple.com/help/app-store-connect/manage-subscriptions/set-up-offer-codes/) redemption. Use [StoreKit Testing in Xcode](../Xcode/setting-up-storekit-testing-in-xcode.md) to ensure your app responds correctly when customers redeem a Mac App Store Offer Code.  (60096251)
 - You can now assign product and subscription images in the StoreKit configuration in Xcode. Use these images in-app when creating and testing [ProductViews](../StoreKit/productview.md) and [StoreViews](../StoreKit/storeview.md). Subscription groups now support adding localized names and descriptions. And, you can configure a test license agreement and test privacy policies to display in your [SubscriptionStoreView](../StoreKit/subscriptionstoreview.md) when testing with Xcode.  (114228169)
 - New win-back offer APIs can be tested using [StoreKit Testing in Xcode](../Xcode/setting-up-storekit-testing-in-xcode.md). Configure win-back offers for your auto-renewable subscriptions in the StoreKit configuration, and simulate different scenarios of a customer’s eligibility for each offer.  (118535734)
 - New win-back offer APIs can be tested using StoreKit Testing in Xcode. Configure win-back offers for your auto-renewable subscriptions in the StoreKit configuration, and simulate different scenarios of a customer’s eligibility for each offer.  (118893438)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue causing some custom build configurations to fail because of the StoreKit configuration sync if the bundleID of the target is missing.  (129705753) (FB13871078)
 
-###### Known Issues
+#### Known Issues
 
 - The StoreKit Transaction Manager might be unresponsive when performing actions while an app is running in a debug session. The affected actions include: create a new purchase, send a purchase intent, and edit an active or expired subscription.  (126700294)
 
   **Workaround:** Close the transaction manager, detach the app from the current debug session by stopping the process in Xcode, then re-open the transaction manager. You can open and use the app as normal on your device or simulator and perform actions in the transaction manager as long as there is no active debug session.
 
-##### Swift
+### Swift
 
-###### New Features
+#### New Features
 
 - Swift now allows usage of non-copyable C++ types.  (83358475)
 - You can now suppress `Copyable` on protocols, generic parameters, and existentials:
@@ -1102,7 +1102,7 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, tvOS 18, watchOS 11, macOS Sequoia
 
   (See [SE-0428](https://github.com/apple/swift-evolution/blob/main/proposals/0428-resolve-distributed-actor-protocols.md) for further examples)  (129184344)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Using an `Optional` value as a `consuming` parameter may lead to the compiler crashing when the `?` operator is applied to that parameter.  (116127887)
 - Fixed: The static methods of C++ classes imported to Swift are no longer getting “Mutating” suffix when there is a non-static const member function with the same name.  (120858502)
@@ -1127,7 +1127,7 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, tvOS 18, watchOS 11, macOS Sequoia
 - Fixed: Conditional conformances for Copyable can be written without explicitly specifying which generic parameters need to conform to Copyable. This is an issue due to a difference in behavior from the SE-427 proposal.  (128904812)
 - Fixed: Reinitializing a variable that has been consumed using the `consume` operator inside of a `defer` block that also contains `if` statements or other control flow may lead to the compiler generating invalid code that leads to runtime memory corruption.  (129303198)
 
-###### Known Issues
+#### Known Issues
 
 - By default, async initializers on actors use flow-sensitive isolation: at first, the initializer is a non-isolated function, but it becomes isolated to the actor when the actor object is fully initialized.  There is a known issue in this logic when the actor is initialized by delegating to another initializer call, and it is possible to observe data races if the actor is shared with concurrent contexts, then accessed later during the initializer.  Developers should take care when writing such initializers to avoid these data races.  This does not apply to initializers for non-actor types, non-async initializers, initializers that do not delegate to other initializers, or initializers that are explicitly non-isolated or isolated to a global actor, such as `@MainActor`.  (87485045)
 - When a `let` binding inside of a function has a `~Copyable` type, and the initialization occurs after the declaration, then the compiler may either crash or raise a spurious “copy of noncopyable” error diagnostic:
@@ -1154,9 +1154,9 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, tvOS 18, watchOS 11, macOS Sequoia
 - The closure passed to Task.init and Task.detached was changed from @Sendable to sending. As a result, the compiler no longer tells the programmer exactly which captured values create the potential for a data-race, making it difficult to determine how to fix this error. Instead the compiler prints out that the closure is a ‘task-isolated’ value without describing that the closure is ‘task-isolated’ since one of the variables that closure captures may still be used by code in the task where the closure is formed.  (133798044)
 - Designed for iPad apps built without compiler optimizations enabled may crash when run on versions of macOS before 15.0 if the app directly uses Swift Standard Library APIs related to `CheckedContinuation`, `TaskGroup`, `ThrowingTaskGroup`, and `TaskLocal`.  (134793410)
 
-##### Swift Packages
+### Swift Packages
 
-###### New Features
+#### New Features
 
 - Privacy manifests are automatically included as a copied resource for packages with tools version >= 6.0.  (111119227)
 - The current Git commit, tag, and whether there are any uncommitted changes is available through a new `Context.gitInformation` API (see `GitInformation`).  (111523616)
@@ -1167,7 +1167,7 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, tvOS 18, watchOS 11, macOS Sequoia
 - [SE-0301](https://github.com/apple/swift-evolution/blob/main/proposals/0301-package-editing-commands.md) has been implemented, allowing `Package.swift` to be edited through new package commands `add-dependency`, `add-product`, and `add-target`. See `swift package <command> -h` for more details.  (126377239)
 - `swiftLanguageVersions` and the new `swiftLanguageVersion` setting have been renamed to `swiftLanguageModes` and `swiftLanguageMode` respectively as per [SE-0441](https://github.com/swiftlang/swift-evolution/blob/main/proposals/0441-formalize-language-mode-terminology.md).  (132484168)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Files generated by plugins are available in plugins run at later stages through two new APIs on `SourceModuleTarget` - `pluginGeneratedSources` and `pluginGeneratedResources`.  (103808529)
 - Fixed: Swift packages containing macros will fail to build when cross-compiling with `swift build --swift-sdk`  (105991372)
@@ -1175,28 +1175,28 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, tvOS 18, watchOS 11, macOS Sequoia
 - Fixed an issue where Swift package targets built as frameworks could generate invalid bundle identifiers and result in failures when uploading apps to App Store Connect.  (124554622)
 - Fixed: Packages using `swift-tools-version: 6.0` did not infer the Swift 6 language mode when compiling within Xcode (or `xcodebuild`).  (130079815) (FB13957723)
 
-##### Templates
+### Templates
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Creating a new tvOS app extension now sets the correct product type in the Xcode project file. In previous releases, the product type could be set incorrectly, which could lead to issues launching the app extension at runtime.  (115338579) (FB13156098)
 - Fixed: Widgets for macOS will not be run under the WidgetKit Simulator for testing or debugging on the macOS 15 Beta.  (128987748)
 
-##### Test Report
+### Test Report
 
-###### New Features
+#### New Features
 
 - The test report displays new metadata “traits” from the Swift Testing framework.  (112429531)
 - The test report now displays “failure distribution” insights when multiple tests with the same tag or related bug fail, or if failures align across specific device or test plan configuration axes.  (122047922)
 - Test Report now supports filtering by test run status. Depending on repetition policy on Test Plan configuration, number of Test Plan configurations, and test parameterization, tests can be executed multiple times. Different runs of the same test can have different results. The Test Report now allows the user specify both the test status and the test run status in the filter bar.  (127015832)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Setting a baseline in the test report metrics tab does not save.  (129367944)
 
-##### Testing
+### Testing
 
-###### New Features
+#### New Features
 
 - Test Plans now support including or excluding Swift Testing tests and suites. Whenever at least one Swift Testing test or suite is referenced, all test identifiers in the JSON-based document are re-encoded using a new, hierarchical structure.  (71461811)
 - The Test Navigator now displays information about the arguments passed to each Swift Testing parameterized test. This information is shown shortly after a Test action is initiated. Selecting an individual set of arguments shows details about them and their sub-values in a source editor gap at the location of that test. Clicking the Run button for a set of arguments causes their associated test to re-run with the selected arguments. (Note: This is supported for arguments which conform to `Codable` or another protocol supported by Swift Testing — see its documentation for more details.)  (91899389)
@@ -1209,7 +1209,7 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, tvOS 18, watchOS 11, macOS Sequoia
 - The Test Plan editor shows a preview of what tests are included or excluded in a Test Plan.  Another column was added for tags associated with a test or suite.  The Test Plan can be filtered by XCTest or Swift Testing and will show on the test row what is causing a test to be excluded by specifying excluded by tag, excluded by a condition in code, or inactive if the check box is off.  There is a count of tests in the Test Plan In the bottom bar and choosing targets has moved from the bottom left to the top right of the editor.  (123704261)
 - The test navigator now has the ability to group all of your Swift Testing suites and tests by tag when there is one or more tag applied. In the group by hierarchy mode, tests will appear as they did previously in Xcode 15. In Xcode 16 there is a new section in the outline view that will display all of the Swift Testing tags found in your test plan. In the group by tag mode, tags will appear as child nodes of the currently active test plan. Tagged suites and tests will be organized as child nodes of each tag in the outline view.   (124498440)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Screen recordings will not be available when running UI tests using a scheme with a space in its name, or when producing an .xcresult bundle with a space in its path.  (122016656)
 - Fixed: When using Swift Testing, a test failure that occurs on a detached task or background thread may cause `swift test` to crash.  (122190668)
@@ -1221,15 +1221,15 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, tvOS 18, watchOS 11, macOS Sequoia
 - Fixed: When running UI tests against watchOS using xcodebuild or in Xcode Cloud, tests may fail with an error message that Accessibility has not loaded.  (129170180)
 - Fixed: Workflows using Swift Testing against Mac Catalyst run destinations will crash on macOS 14.X or below.  (133854987)
 
-###### Known Issues
+#### Known Issues
 
 - Using `await confirmation {}` or `await withKnownIssue {}` with an actor-isolated closure fails to compile.  (134375046)
 
   **Workaround:** Pass an explicitly `@Sendable` closure to these functions.
 
-##### TextureConverter
+### TextureConverter
 
-###### New Features
+#### New Features
 
 - TextureConverter now supports volume textures and 2d texture arrays. Additionally cubemap , volumes textures and 2D texture arrays can now be built from a series of 2d textures using the –build_array,  –build_cubemap & –build_volume options.  (70571617)
 - TextureConverter now supports reading and writing OpenEXR texture files.  (85262544)
@@ -1237,76 +1237,76 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, tvOS 18, watchOS 11, macOS Sequoia
 - Color gamut of textures can be specified with —gamut_in & —gamut_out, with color gamut conversion performed as necessary. Textures saved as KTX or KTX2 files store gamut information as metadata (for KTX 1.1 using the key com.apple.image.colorGamut).  (121144249)
 - The AppleTextureConverter API has been refactored to minimise memory usage.  (121388351)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Linking with the AppleTextureConverter library no longer requires additional libraries to be linked.  (123455882)
 
-###### Deprecations
+#### Deprecations
 
 - Support for PVRTC compressed textures is deprecated in TextureConverter.  (123431036)
 
-##### Virtualization
+### Virtualization
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: When running in a virtualized macOS environment, Apple ID sign-in is not supported in Xcode.  (127624414)
 
-##### visionOS SDK
+### visionOS SDK
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Warnings generated by realitytool print “unknown” instead of the deployment target  (131497951)
 
-##### WidgetKit
+### WidgetKit
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: An error building a control template that states “Template request failed: WidgetKit.ChronoError.AppIntent.conversionFailure(underlyingError: AppIntent has missing parameter value for ’timerName’” might occur. Users might need to set a default value in the initializer of @Parameter, or using the default method on Query.  (129066701)
 - Fixed: WidgetKit mac target crashes on launch.  (130238387)
 
-##### Xcode
+### Xcode
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Adding an asset for a visionOS app icon crashes Xcode, impacts any developer adding new app icons for a visionOS app  (130081736)
 
-##### Xcode Cloud
+### Xcode Cloud
 
-###### New Features
+#### New Features
 
 - The test report displayed in Xcode for Xcode Cloud builds now includes a Coverage node for builds which collect coverage data.  (121216727)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: From the Xcode Cloud tab, any action causing an update to the build results list while it is visible in Xcode Editor crashes Xcode. Such actions include clicking on the “Start Build” button in the top right corner of the list of builds, or viewing the build results list while a build is running in Xcode Editor.  (127102192)
 
-##### Xcode Cloud Package Integration
+### Xcode Cloud Package Integration
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: In cloud environments, Xcode workspaces that contain a single project with package dependencies would not be able to locate the Package.resolved file. Now, workspaces with a single project will also consider the project’s Package.resolved file.  (124713280) (FB13688344)
 
-##### Xcode Playgrounds
+### Xcode Playgrounds
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Playgrounds that use packages may not build.  (132428278)
 
-##### xcodebuild
+### xcodebuild
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where xcodebuild silently selects the first compatible run destination when it fails to match the destination specifier provided by the user.  (112043381)
 
-##### xcresulttool
+### xcresulttool
 
-###### New Features
+#### New Features
 
 - The xcresulttool CLI has introduced new interfaces to streamline the extraction of test and other results data from xcresult bundles.  (118990069)
 
-##### XCTest
+### XCTest
 
-###### New Features
+#### New Features
 
 - A new API on XCUIElement adds the ability to wait for any property on XCUIElement to become a value given a timeout. Also, `waitForNonExistence` has been added as a new API.  (35419925)
 - XCTest has new API for performing a “double tap” hand gesture on Apple Watch from UI tests.  (102866220)

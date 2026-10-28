@@ -19,7 +19,7 @@ A set of customization behaviors of a column that a table can offer to a user.
 struct TableColumnCustomizationBehavior
 ```
 
-#### Overview
+## Overview
 
 This is used as a value provided to [`disabledCustomizationBehavior(_:)`](./tablecolumncontent/disabledcustomizationbehavior%28_%29.md).
 

@@ -22,7 +22,7 @@ static var intersectionFunctionBuffer: MTLIntersectionFunctionSignature { get }
 MTLIntersectionFunctionSignatureIntersectionFunctionBuffer
 ```
 
-#### Discussion
+## Discussion
 
 The intersection function will be used with intersection function buffers
 

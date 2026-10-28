@@ -15,11 +15,11 @@ Retrieves estimated arrival times to up to 10 destinations from a single startin
 eta(request: EtaRequestOptions): Promise<EtaResponse>;
 ```
 
-#### Return Value
+## Return Value
 
 A promise that resolves with an [`EtaResponse`](../etaresponse.md) on success, or rejects with an `Error` on failure.
 
-#### Discussion
+## Discussion
 
 To get a set of estimated arrival times, provide an [`EtaRequestOptions`](../etarequestoptions.md) object when you call the [`eta()`](./eta.md) method. You can provide up to 10 destinations. The server returns an error if you request more than 10 destinations in a single request.
 

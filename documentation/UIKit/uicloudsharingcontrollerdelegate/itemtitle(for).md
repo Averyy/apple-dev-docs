@@ -23,7 +23,7 @@ func itemTitle(for csc: UICloudSharingController) -> String?
 - (NSString *) itemTitleForCloudSharingController:(UICloudSharingController *) csc;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to provide a meaningful title to the [`UICloudSharingController`](../uicloudsharingcontroller.md) invitation screen.
 

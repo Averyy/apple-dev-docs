@@ -23,7 +23,7 @@ func prepareToCaptureStillImageBracket(from connection: AVCaptureConnection, wit
 - (void) prepareToCaptureStillImageBracketFromConnection:(AVCaptureConnection *) connection withSettingsArray:(NSArray<__kindof AVCaptureBracketedStillImageSettings *> *) settings completionHandler:(void (^)(BOOL prepared, NSError *error)) handler;
 ```
 
-#### Discussion
+## Discussion
 
 Before taking a still image bracket, additional resources may need to be allocated. By calling this method first, you are able to know when the receiver is ready to capture the bracket with the specified settings array.
 

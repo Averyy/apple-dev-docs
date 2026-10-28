@@ -17,7 +17,7 @@ The name of an icon set in your app’s asset catalog to use as the center badge
 - **Name**: `UTTypeIconBadgeName` (Badge)
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 This key is optional. If you omit this key, the system automatically uses the app’s icon as the center badge.
 

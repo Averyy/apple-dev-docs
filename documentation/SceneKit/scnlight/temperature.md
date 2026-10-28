@@ -25,7 +25,7 @@ var temperature: CGFloat { get set }
 @property (nonatomic) CGFloat temperature;
 ```
 
-#### Discussion
+## Discussion
 
 SceneKit determines the actual color of the light by multiplying the [`color`](./color.md) value by a color corresponding to the light’s temperature. The default value of `6500` K represents a pure white light (leaving the color unmodulated); lower values (down to a minimum of zero) add a “warmer” yellow or orange effect to the light source, and higher values (up to a maximum of `40000`) add a “cooler” blue effect.
 

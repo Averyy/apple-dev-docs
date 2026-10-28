@@ -21,11 +21,11 @@ Returns an `NSMethodSignature` object that contains a description of the method 
 - (NSMethodSignature *) methodSignatureForSelector:(SEL) aSelector;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSMethodSignature` object that contains a description of the method identified by `aSelector`, or `nil` if the method can’t be found.
 
-#### Discussion
+## Discussion
 
 This method is used in the implementation of protocols. This method is also used in situations where an `NSInvocation` object must be created, such as during message forwarding. If your object maintains a delegate or is capable of handling messages that it does not directly implement, you should override this method to return an appropriate method signature.
 

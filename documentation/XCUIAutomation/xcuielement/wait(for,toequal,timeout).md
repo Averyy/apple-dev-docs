@@ -23,7 +23,7 @@ Waits a specified amount of time for a property value to equal a specified value
 @preconcurrency func wait<V>(for keyPath: KeyPath<XCUIElement, V>, toEqual expectedValue: V, timeout: TimeInterval) -> Bool where V : Equatable
 ```
 
-#### Discussion
+## Discussion
 
 This method returns [`false`](../../Swift/false.md) if the timeout expires before the observed property equals the expected value.
 

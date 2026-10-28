@@ -22,7 +22,7 @@ var isVisible: Bool { get }
 @property (readonly, getter=isVisible) BOOL visible;
 ```
 
-#### Discussion
+## Discussion
 
 When [`true`](../../Swift/true.md), this item is shown in a currently visible bar. This property is always [`false`](../../Swift/false.md) for spaces, proxy items, and groups.
 

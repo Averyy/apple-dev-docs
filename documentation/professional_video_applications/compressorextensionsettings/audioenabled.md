@@ -20,7 +20,7 @@ var audioEnabled: Bool { get set }
 @property BOOL audioEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 The Compressor app sets this value based on the source media attributes. Use this value to specify the [`kCEAudioEnabledKey`](../kceaudioenabledkey.md).
 

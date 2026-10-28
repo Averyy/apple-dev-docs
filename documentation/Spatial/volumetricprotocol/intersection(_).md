@@ -22,7 +22,7 @@ Returns the intersection of two volumetric entities.
 func intersection(_ other: Self) -> Self?
 ```
 
-#### Discussion
+## Discussion
 
 - Returns The intersection of `self` and `other`.
 

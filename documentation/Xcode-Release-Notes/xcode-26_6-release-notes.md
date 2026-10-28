@@ -5,19 +5,19 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 Xcode 26.6 includes Swift 6.3 and SDKs for iOS 26.5, iPadOS 26.5, tvOS 26.5, watchOS 26.5, macOS 26.5, and visionOS 26.5. Xcode 26.6 supports on-device debugging in iOS 15 and later, tvOS 15 and later, watchOS 8 and later, and visionOS. Xcode 26.6 requires a Mac running macOS Tahoe 26.2 or later.
 
-##### Coding Intelligence
+### Coding Intelligence
 
-###### New Features
+#### New Features
 
 - Google Gemini is now available in the coding assistant.  (171990272)
 - Xcode adds support for the Agent Client protocol.  (178294840)
 - The Preview Snapshot MCP tool can now render variants such as light/dark appearance, portrait/landscape orientation, and various type size overrides.  (178831772)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where the buttons in the Coding Tools popovers would not work.  (168956652)
 - Fixed a crash when closing a window during an active agent turn.  (174186260)
@@ -28,9 +28,9 @@ Xcode 26.6 includes Swift 6.3 and SDKs for iOS 26.5, iPadOS 26.5, tvOS 26.5, wat
 - Fixed a bug that could cause Xcode to hang indefinitely when an agent asked the user a question.  (177989242)
 - Fixed: If a deep link targeting the new beta is invoked on a system where an older version is set as the active developer tool, the link will be claimed by the older installation rather than the beta.  (179126594)
 
-##### Organizer
+### Organizer
 
-###### New Features
+#### New Features
 
 - Launch Time similar-app goals have been refined for improved accuracy, establishing new baselines.  (177355331)
 

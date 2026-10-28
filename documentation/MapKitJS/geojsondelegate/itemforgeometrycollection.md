@@ -18,7 +18,7 @@ itemForGeometryCollection?<D extends GeoJSONTypes.GeometryCollection>(
 ): ItemCollection<D> | Item[] | null;
 ```
 
-#### Return Value
+## Return Value
 
 A map item for the geometry collection.
 

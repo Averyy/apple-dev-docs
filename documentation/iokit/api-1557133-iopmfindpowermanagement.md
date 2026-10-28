@@ -16,7 +16,7 @@ Finds the Root Power Domain IOService.
 io_connect_t IOPMFindPowerManagement(mach_port_t master_device_port);
 ```
 
-#### Return Value
+## Return Value
 
 Returns a [`io_connect_t`](./io_connect_t.md) handle on the root domain. Must be released with IOServiceClose() when done.
 

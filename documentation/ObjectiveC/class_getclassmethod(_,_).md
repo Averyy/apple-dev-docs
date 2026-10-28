@@ -25,11 +25,11 @@ func class_getClassMethod(_ cls: AnyClass?, _ name: Selector) -> Method?
 extern Methodclass_getClassMethod(Class cls, SEL name);
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to the [`Method`](./method.md) data structure that corresponds to the implementation of the selector specified by `aSelector` for the class specified by `aClass`, or `NULL` if the specified class or its superclasses do not contain a class method with the specified selector.
 
-#### Discussion
+## Discussion
 
 Note that this function searches superclasses for implementations, whereas [`class_copyMethodList(_:_:)`](./class_copymethodlist%28_,_%29.md) does not.
 

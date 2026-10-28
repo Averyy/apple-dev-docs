@@ -19,7 +19,7 @@ var kFTSListingSizeKey: Unmanaged<CFString>!
 extern CFStringRef kFTSListingSizeKey;
 ```
 
-#### Discussion
+## Discussion
 
 ## See Also
 

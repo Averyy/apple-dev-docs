@@ -24,7 +24,7 @@ class func supportsDisbursements() -> Bool
 + (BOOL) supportsDisbursements;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the device can process disbursement requests; otherwise, [`false`](../../Swift/false.md).
 

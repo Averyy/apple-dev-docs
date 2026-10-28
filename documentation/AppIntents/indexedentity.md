@@ -24,7 +24,7 @@ protocol IndexedEntity : AppEntity
 - [Making app entities available in Spotlight](./making-app-entities-available-in-spotlight.md)
 - [Defining app entities for your custom data types](./defining-app-entities-for-your-custom-data-types.md)
 
-#### Overview
+## Overview
 
 Adopt this protocol in app entities you want to include in your app’s Spotlight index. Adding entities to Spotlight makes them discoverable by Apple Intelligence, and also serves as the first step in letting Spotlight launch your app and display items that appear in search results. Use the properties of this protocol to configure additional Spotlight metadata to accompany your app entity in the index.
 

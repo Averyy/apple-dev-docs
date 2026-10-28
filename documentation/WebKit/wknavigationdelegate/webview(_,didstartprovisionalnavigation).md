@@ -27,7 +27,7 @@ optional func webView(_ webView: WKWebView, didStartProvisionalNavigation naviga
 
 - [Replacing UIWebView in your app](../replacing-uiwebview-in-your-app.md)
 
-#### Discussion
+## Discussion
 
 The web view calls this method after it receives provisional approval to process a navigation request, but before it receives a response to that request.
 

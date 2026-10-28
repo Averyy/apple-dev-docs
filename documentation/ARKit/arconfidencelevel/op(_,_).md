@@ -16,7 +16,7 @@ Returns whether one confidence level is less than another.
 static func < (lhs: ARConfidenceLevel, rhs: ARConfidenceLevel) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if lhs is less than rhs; otherwise, `false`.
 

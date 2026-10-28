@@ -24,7 +24,7 @@ enum MTLAttributeFormat
 enum MTLAttributeFormat : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 All formats use little-endian byte order, which stores the least significant byte first. For GPU compute functions that manipulate data that other parts of your app consume, check that the data it exposes to the GPU matches the byte and bit alignments of the source format.
 
@@ -32,7 +32,7 @@ In a GPU compute function’s attributes, you can use a type that’s different 
 
 > 💡 **Tip**:  Avoid visual corruption when manipulating pixel data in a GPU compute function for a subsequent stage by using an exact match for the underlying pixel data.
 
-##### Normalized integer formats
+### Normalized integer formats
 
 Normalized signed integer formats have `Normalized` in the name and signed types like [`MTLAttributeFormat.char`](./mtlattributeformat/char.md) or [`MTLAttributeFormat.short`](./mtlattributeformat/short.md). For these formats, values in the range `[-1.0, 1.0]` map to `[MIN_INT, MAX_INT]`, where `MIN_INT` is the most negative integer and `MAX_INT` is the most positive integer for the number of bits in the storage size. Positive values and zero distribute uniformly in the range `[0.0, 1.0]`, and negative integer values greater than `(MIN_INT + 1)` distribute uniformly in the range `(-1.0, 0.0)`.
 

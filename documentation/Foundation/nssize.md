@@ -20,11 +20,11 @@ typealias NSSize = CGSize
 typedef CGSize NSSize;
 ```
 
-#### Discussion
+## Discussion
 
 Normally, the values of `width` and `height` are non-negative. The functions that create an `NSSize` structure do not prevent you from setting a negative value for these attributes. If the value of `width` or `height` is negative, however, the behavior of some methods may be undefined.
 
-##### Special Considerations
+### Special Considerations
 
 Prior to OS X v10.5 the width and height were represented by `float` values rather than `CGFloat` values.
 

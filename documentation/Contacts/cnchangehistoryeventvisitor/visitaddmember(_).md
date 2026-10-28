@@ -24,7 +24,7 @@ optional func visitAddMember(_ event: CNChangeHistoryAddMemberToGroupEvent)
 - (void) visitAddMemberToGroupEvent:(CNChangeHistoryAddMemberToGroupEvent *) event;
 ```
 
-#### Discussion
+## Discussion
 
 Inspect the group and contact in the event that the system provides and update your app’s cached data accordingly.
 

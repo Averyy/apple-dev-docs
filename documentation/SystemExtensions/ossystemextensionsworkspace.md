@@ -20,7 +20,7 @@ class OSSystemExtensionsWorkspace
 @interface OSSystemExtensionsWorkspace : NSObject
 ```
 
-#### Overview
+## Overview
 
 > **Note**: Using the workspace API requires the system extension entitlement
 

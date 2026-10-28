@@ -25,7 +25,7 @@ var mediaSubTypes: [NSNumber] { get }
 @property (nonatomic, readonly) NSArray<NSNumber *> * mediaSubTypes;
 ```
 
-#### Discussion
+## Discussion
 
 The value is an array of `NSNumber` objects carrying four character codes (of type FourCharCode) as defined in `CoreAudioTypes.h` for audio media and in `CMFormatDescription.h` for video media.
 

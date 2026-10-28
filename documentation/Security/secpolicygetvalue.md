@@ -15,11 +15,11 @@ Retrieves a policy’s value.
 OSStatus SecPolicyGetValue(SecPolicyRef policyRef, SecAsn1Item *value);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 A policy’s value is defined and interpreted by the policy. If you are using CSSM, you can specify object-identifier–policy-value pairs as input to the `CSSM_TP_POLICYINFO` function. Use the [`SecPolicyGetOID`](./secpolicygetoid.md) function to obtain the object identifier (OID) for a policy.
 

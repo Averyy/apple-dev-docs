@@ -19,11 +19,11 @@ func getRFCOMMChannelID(_ rfcommChannelID: UnsafeMutablePointer<BluetoothRFCOMMC
 - (IOReturn) getRFCOMMChannelID:(BluetoothRFCOMMChannelID *) rfcommChannelID;
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if the channel ID is found.
 
-#### Discussion
+## Discussion
 
 This method will search through the ProtoclDescriptorList attribute to find an entry with the RFCOMM UUID (UUID16: 0x0003). If one is found, it gets the second element of the data element sequence and sets the rfcommChannelID pointer to it. The channel ID only gets set when kIOReturnSuccess is returned.
 

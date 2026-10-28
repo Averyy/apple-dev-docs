@@ -24,11 +24,11 @@ func SCNetworkReachabilityCreateWithAddress(_ allocator: CFAllocator?, _ address
 SCNetworkReachabilityRefSCNetworkReachabilityCreateWithAddress(CFAllocatorRef allocator, const struct sockaddr *address);
 ```
 
-#### Return Value
+## Return Value
 
 A new immutable reachability reference. You must release the returned value.
 
-#### Discussion
+## Discussion
 
 You can use the reachability reference returned by this function to monitor the reachability of the target host.
 

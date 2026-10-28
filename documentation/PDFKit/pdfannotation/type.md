@@ -24,7 +24,7 @@ var type: String? { get set }
 @property (nonatomic, copy, nullable) NSString * type;
 ```
 
-#### Return Value
+## Return Value
 
 The type of the annotation. Types include `Line`, `Link`, `Text`, and so on, referring to the `PDFAnnotation` subclasses. In the Adobe PDF Specification, this attribute is called `Subtype`, and the common “type” for all annotations in the PDF Specification is `Annot`.
 

@@ -19,7 +19,7 @@ var paragraphSpacingBefore: CGFloat { get set }
 @property CGFloat paragraphSpacingBefore;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the space (measured in points) between the paragraph’s top and the beginning of its text content. The default value of this property is 0.0.
 

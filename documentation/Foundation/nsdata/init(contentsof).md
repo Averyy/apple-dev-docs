@@ -25,7 +25,7 @@ init?(contentsOf url: URL)
 - (instancetype) initWithContentsOfURL:(NSURL *) url;
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  As this method runs synchronously and blocks the calling thread until it finishes, don’t invoke it from the main thread. Use file coordination or one of the nonblocking file-related APIs instead.
 

@@ -25,7 +25,7 @@ func remove() throws
 - (BOOL) removeAndReturnError:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 This method removes this version object and its file from the version store, freeing up the associated storage space. You must not call this method for the current file version—that is, the version object returned by the [`currentVersionOfItem(at:)`](./currentversionofitem%28at%29.md) method.
 

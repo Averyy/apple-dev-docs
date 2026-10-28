@@ -25,7 +25,7 @@ var routes: [MKRoute] { get }
 @property (nonatomic, readonly) NSArray<MKRoute *> * routes;
 ```
 
-#### Discussion
+## Discussion
 
 The array contains one or more [`MKRoute`](../../mkroute.md) objects, each of which represents a possible set of directions for the user to follow. If you don’t request alternate routes in the original directions request, this array contains at most one object.
 

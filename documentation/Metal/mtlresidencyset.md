@@ -28,7 +28,7 @@ protocol MTLResidencySet : NSObjectProtocol
 
 - [Simplifying GPU resource management with residency sets](./simplifying-gpu-resource-management-with-residency-sets.md)
 
-#### Overview
+## Overview
 
 Residency sets are a way you can tell Metal which resource allocations, such as buffers, textures, and heaps, to make *resident*, or GPU-accessible. Adding allocations to a residency set requires less overhead than the equivalent methods of a command encoder. Residency sets also give you more control when Metal makes their allocations resident, and for how long they remain resident. However, residency sets don’t track hazards, so you need to account for hazards with fences and events.
 
@@ -71,7 +71,7 @@ Metal attaches all of a command queue’s residency sets to a command buffer fro
 
 See [Simplifying GPU resource management with residency sets](./simplifying-gpu-resource-management-with-residency-sets.md) for information about associating a residency set to command buffers and command queues.
 
-##### Create a residency set
+### Create a residency set
 
 Make a residency set by configuring an [`MTLResidencySetDescriptor`](./mtlresidencysetdescriptor.md) instance and passing it to the [`makeResidencySet(descriptor:)`](./mtldevice/makeresidencyset%28descriptor%29.md) method of an [`MTLDevice`](./mtldevice.md).
 
@@ -99,7 +99,7 @@ residencySet = [device newResidencySetWithDescriptor:setDescriptor
                                                error:&error];
 ```
 
-##### Add allocations to a residency set
+### Add allocations to a residency set
 
 Add individual resource allocations to a residency set by calling [`addAllocation(_:)`](./mtlresidencyset/addallocation%28_%29.md), or add multiple allocations with [`addAllocations(_:)`](./mtlresidencyset/addallocations%28_%29.md).
 
@@ -146,7 +146,7 @@ The residency set can handle redundant entries for the same allocation because i
 
 > ❗ **Important**:  Adding a resource, such as a buffer or texture, that originates from a heap to a residency set makes its entire heap resident.
 
-##### Remove allocations from a residency set
+### Remove allocations from a residency set
 
 Remove individual resource allocations from a residency set by calling [`removeAllocation(_:)`](./mtlresidencyset/removeallocation%28_%29.md), or remove multiple allocations with [`removeAllocations(_:)`](./mtlresidencyset/removeallocations%28_%29.md).
 
@@ -174,7 +174,7 @@ id<MTLAllocation> deallocations[] = {
 
 Like the methods that add resource allocations to the set, these methods aggregate removals with little CPU overhead. So you can call the methods multiple times without adversely affecting runtime performance.
 
-##### Commit the changes to a residency set
+### Commit the changes to a residency set
 
 Apply the updates to a residency set by calling its [`commit()`](./mtlresidencyset/commit%28%29.md) method.
 

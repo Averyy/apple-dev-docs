@@ -23,7 +23,7 @@ struct ControlCharacterAction
 enum NSControlCharacterAction : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 These constants [`layoutManager(_:shouldUse:forControlCharacterAt:)`](../nslayoutmanagerdelegate/layoutmanager%28_,shoulduse,forcontrolcharacterat%29.md) delegate method uses.
 

@@ -22,7 +22,7 @@ var swizzle: MTLTextureSwizzleChannels { get set }
 @property (nonatomic, readwrite) MTLTextureSwizzleChannels swizzle;
 ```
 
-#### Discussion
+## Discussion
 
 A desired swizzle format of a texture view.
 

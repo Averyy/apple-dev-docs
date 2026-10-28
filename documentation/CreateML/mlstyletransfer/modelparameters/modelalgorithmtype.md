@@ -19,7 +19,7 @@ The style transfer training algorithm options.
 enum ModelAlgorithmType
 ```
 
-#### Overview
+## Overview
 
 This object uses a convolutional neural network for training the style transfer model, giving more detailed style. It’s ideal for cases where latency is not the main concern, such as single images.
 

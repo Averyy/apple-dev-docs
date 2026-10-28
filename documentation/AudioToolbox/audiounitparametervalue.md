@@ -24,7 +24,7 @@ typealias AudioUnitParameterValue = Float32
 typedef Float32 AudioUnitParameterValue;
 ```
 
-#### Discussion
+## Discussion
 
 An audio unit parameter is an adjustable setting, such as gain. The parameters for Apple-supplied audio units are described in `Audio Unit Parameters`.
 

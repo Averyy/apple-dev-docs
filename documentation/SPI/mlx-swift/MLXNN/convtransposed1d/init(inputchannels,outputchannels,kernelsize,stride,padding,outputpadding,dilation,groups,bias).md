@@ -17,7 +17,7 @@ Applies a 1-dimensional transposed convolution over the multi-channel input sequ
 init(inputChannels: Int, outputChannels: Int, kernelSize: Int, stride: Int = 1, padding: Int = 0, outputPadding: Int = 0, dilation: Int = 1, groups: Int = 1, bias: Bool = true)
 ```
 
-#### Discussion
+## Discussion
 
 The channels are expected to be last i.e. the input shape should be `NLC` where:
 

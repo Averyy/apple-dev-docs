@@ -19,7 +19,7 @@ var levelIndicatorStyle: NSLevelIndicator.Style { get set }
 @property NSLevelIndicatorStyle levelIndicatorStyle;
 ```
 
-#### Discussion
+## Discussion
 
 The style determines the default minimum and maximum values of the control. For a list of possible styles, see [`NSLevelIndicator.Style`](../nslevelindicator/style.md).
 

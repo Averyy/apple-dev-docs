@@ -22,7 +22,7 @@ nonisolated
 protocol ShapeView<Content> : View
 ```
 
-#### Overview
+## Overview
 
 Use this type with the drawing methods on [`Shape`](./shape.md) to apply multiple fills and/or strokes to a shape. For example, the following code applies a fill and stroke to a capsule shape:
 

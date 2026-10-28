@@ -21,7 +21,7 @@ Returns the transform sheared by the specified shear.
 func sheared(_ shear: AxisWithFactorsFloat) -> ProjectiveTransform3DFloat
 ```
 
-#### Discussion
+## Discussion
 
 - Returns The sheared transform.
 

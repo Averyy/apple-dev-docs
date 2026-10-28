@@ -28,7 +28,7 @@ nonisolated
 init(editing modelTypes: [any PersistentModel.Type], contentType: UTType, editor: @escaping () -> Content, prepareDocument: @escaping (ModelContext) -> Void = { _ in })
 ```
 
-#### Discussion
+## Discussion
 
 ```swift
  @main

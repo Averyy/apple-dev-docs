@@ -23,7 +23,7 @@ protocol UIToolTipInteractionDelegate : NSObjectProtocol
 @protocol UIToolTipInteractionDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 A tooltip interaction delegate provides configuration information about a tooltip. You can, for instance, use the delegate to change the text of a tooltip.
 

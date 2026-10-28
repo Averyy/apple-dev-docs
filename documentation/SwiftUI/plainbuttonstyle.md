@@ -22,7 +22,7 @@ nonisolated
 struct PlainButtonStyle
 ```
 
-#### Overview
+## Overview
 
 You can also use [`plain`](./primitivebuttonstyle/plain.md) to construct this style.
 

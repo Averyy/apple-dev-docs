@@ -5,7 +5,7 @@
 
 Use concurrent programming and adjust the prioritization of background activities to improve the performance of your app.
 
-#### Overview
+## Overview
 
 Reduce the total computation your app does by adopting these strategies:
 
@@ -17,7 +17,7 @@ Reduce the total computation your app does by adopting these strategies:
 
 Additionally, reduce the amount of energy your app uses to perform calculations on the CPU by avoiding CPU bottlenecks, which reduce the CPU’s efficiency. For more information, see [Addressing CPU bottlenecks](./addressing-cpu-bottlenecks.md).
 
-##### Adopt concurrent programming
+### Adopt concurrent programming
 
 Use concurrent programming techniques, such as [Swift Concurrency](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/concurrency/) or [Dispatch](../Dispatch/Dispatch.md), to efficiently schedule work on multiple CPU cores. Adopting concurrent programming also helps to avoid hangs and hitches in your app by moving processing work to background threads. For more information, see [Improving app responsiveness](./improving-app-responsiveness.md).
 
@@ -27,11 +27,11 @@ Set the [`DispatchQoS`](../Dispatch/dispatchqos.md) (quality-of-service, or QoS)
 
 The Thread Performance Checker in Xcode reports runtime issues if you create dependencies from high-QoS operations on low-QoS operations. For more information on using the Thread Performance Checker, see [Diagnosing performance issues early](./diagnosing-performance-issues-early.md).
 
-##### Schedule work in the background
+### Schedule work in the background
 
 Use [Background Tasks](../BackgroundTasks/BackgroundTasks.md) to perform work in the background. The system optimizes the schedule for background tasks — for example by batching tasks together or by running the tasks when the device is charging. For more information, see [Choosing Background Strategies for Your App](../BackgroundTasks/choosing-background-strategies-for-your-app.md).
 
-##### Prioritize Live Activities appropriately
+### Prioritize Live Activities appropriately
 
 Whenever you send a push notification that contains an update to your app’s Live Activity that doesn’t require immediate attention from someone, set the value for the `apns-priority` HTTP header to `5`, which indicates to the Apple Push Notification service (APNs) server that it can deliver the push notification in an energy-efficient way. Notifications with `apns-priority` set to `5` don’t count toward your app’s budget for Live Activity updates, so setting the value to `5` helps reduce the likelihood that your app exceeds its budget. If the app does exceed its budget, the system reduces the rate at which it delivers your notifications. For more information, see [Starting and updating Live Activities with ActivityKit push notifications](../ActivityKit/starting-and-updating-live-activities-with-activitykit-push-notifications.md).
 

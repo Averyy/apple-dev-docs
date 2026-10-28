@@ -21,11 +21,11 @@ Creates and returns an `NSMutableArray` object with enough allocated memory to i
 + (instancetype) arrayWithCapacity:(NSUInteger) numItems;
 ```
 
-#### Return Value
+## Return Value
 
 A new `NSMutableArray` object with enough allocated memory to hold `numItems` objects.
 
-#### Discussion
+## Discussion
 
 Mutable arrays expand as needed; `numItems` simply establishes the object’s initial capacity.
 

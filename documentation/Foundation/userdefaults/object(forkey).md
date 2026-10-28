@@ -25,11 +25,11 @@ func object(forKey defaultName: String) -> Any?
 - (id) objectForKey:(NSString *) defaultName;
 ```
 
-#### Return Value
+## Return Value
 
 The object associated with `defaultName`, or `nil` if the key isn’t present in the defaults database.
 
-#### Discussion
+## Discussion
 
 The returned object is immutable, even if you originally set the key to a mutable value.
 

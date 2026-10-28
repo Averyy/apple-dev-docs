@@ -25,7 +25,7 @@ static func pairwise(_ name: String, scale: ScoringScale, judge: any LanguageMod
 
 - [Scoring with model-judge evaluators](../scoring-with-model-as-judge-evaluators.md)
 
-#### Discussion
+## Discussion
 
 The judge sees the model’s output under “Response” and the expected value from `input.expected` under “Baseline Response” in the Context section.
 

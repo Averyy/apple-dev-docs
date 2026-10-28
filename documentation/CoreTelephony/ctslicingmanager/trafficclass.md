@@ -17,7 +17,7 @@ Quality-of-service classes for routing network traffic.
 enum TrafficClass
 ```
 
-#### Discussion
+## Discussion
 
 The `TrafficClass` enumeration represents different quality-of-service (QoS) levels that the network uses to prioritize and route traffic. Each traffic class has specific characteristics optimized for different types of network communication.
 

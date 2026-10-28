@@ -20,7 +20,7 @@ var kSecTrustSettingsPolicy: String { get }
 #define kSecTrustSettingsPolicy
 ```
 
-#### Discussion
+## Discussion
 
 The value is a [`SecPolicy`](./secpolicy.md) object.
 

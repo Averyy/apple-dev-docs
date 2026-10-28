@@ -23,7 +23,7 @@ func setAction(_ action: UIAction, forSegmentAt segment: Int)
 - (void) setAction:(UIAction *) action forSegmentAtIndex:(NSUInteger) segment;
 ```
 
-#### Discussion
+## Discussion
 
 Segments prefer images over titles when the action contains both. Selecting a segment invokes the action’s [`UIActionHandler`](../uiactionhandler.md), as well as handlers for the [`valueChanged`](../uicontrol/event/valuechanged.md) and [`primaryActionTriggered`](../uicontrol/event/primaryactiontriggered.md) control events.
 

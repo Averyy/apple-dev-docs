@@ -23,7 +23,7 @@ var preferredResolution: CMVideoDimensions { get set }
 @property (nonatomic, assign) CMVideoDimensions preferredResolution;
 ```
 
-#### Discussion
+## Discussion
 
 Use [`preferredResolution`](./preferredresolution.md) to set your desired resolution of the external display. When left at the default value of { 0, 0 },  the native resolution of the external display is used.
 

@@ -19,11 +19,11 @@ func runModal() -> Int
 - (NSInteger) runModal;
 ```
 
-#### Return Value
+## Return Value
 
 `NSOKButton` if the user selected OK; otherwise,  `NSCancelButton`.
 
-#### Discussion
+## Discussion
 
 The receiver may create identities for selected records if necessary.
 

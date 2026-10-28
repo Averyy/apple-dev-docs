@@ -10,7 +10,7 @@ A table of sample count and group description index pairs.
 
 - [Representing encoder delay explicitly](../example_representing_encoder_delay_explicitly.md)
 
-#### Overview
+## Overview
 
 The layout of the table data is as follows:
 

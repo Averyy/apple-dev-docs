@@ -24,11 +24,11 @@ func toDouble() -> Double
 - (double) toDouble;
 ```
 
-#### Return Value
+## Return Value
 
 The native double-precision floating-point value.
 
-#### Discussion
+## Discussion
 
 This method uses JavaScript type coercion to convert the value to a JavaScript numeric value, then returns a native representation of the result. In JavaScript, all numeric values are treated as double-precision floating-point numbers except for certain operations such as bit shifts.
 

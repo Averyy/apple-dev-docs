@@ -21,11 +21,11 @@ Returns a regular expression where the start and end of input anchors (`^` and `
 func anchorsMatchLineEndings(_ matchLineEndings: Bool = true) -> Regex<Regex<Output>.RegexOutput>
 ```
 
-#### Return Value
+## Return Value
 
 The modified regular expression.
 
-#### Discussion
+## Discussion
 
 This method corresponds to applying the `m` option in regex syntax. For this behavior in the `RegexBuilder` syntax, see `Anchor.startOfLine`, `Anchor.endOfLine`, `Anchor.startOfSubject`, and `Anchor.endOfSubject`.
 

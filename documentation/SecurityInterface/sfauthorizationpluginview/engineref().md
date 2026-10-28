@@ -19,11 +19,11 @@ func engineRef() -> AuthorizationEngineRef!
 - (AuthorizationEngineRef) engineRef;
 ```
 
-#### Return Value
+## Return Value
 
 A handle of type [`AuthorizationEngineRef`](../../Security/authorizationengineref.md).
 
-#### Discussion
+## Discussion
 
 Use the authorization engine handle when you call the functions in the [`AuthorizationCallbacks`](../../Security/authorizationcallbacks.md) structure to set a result or a context value.
 

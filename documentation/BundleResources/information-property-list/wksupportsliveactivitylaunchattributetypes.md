@@ -14,7 +14,7 @@ The attribute type names that let a person launch your watchOS app by tapping a 
 - **Name**: `WKSupportsLiveActivityLaunchAttributeTypes` (watchOS Live Activity Launch Attribute Types)
 - **Type**: array of string 
 
-#### Discussion
+## Discussion
 
 When your iOS app starts a Live Activity, the system can forward it to an Apple Watch that has a paired watchOS app installed. If the person taps the Live Activity in the Smart Stack, the system checks whether your watchOS app declares a matching attribute type in this key. If the Live Activity’s attribute type matches an entry, the system launches the watchOS app and identifies that Live Activity as the reason for the launch.
 

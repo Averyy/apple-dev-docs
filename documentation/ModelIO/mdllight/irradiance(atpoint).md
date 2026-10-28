@@ -24,11 +24,11 @@ func irradiance(atPoint point: vector_float3) -> Unmanaged<CGColor>
 - (CGColorRef) irradianceAtPoint:(vector_float3) point;
 ```
 
-#### Return Value
+## Return Value
 
 The color and intensity of the light’s effect on the specified point.
 
-#### Discussion
+## Discussion
 
 Calling this method is equivalent to calling the [`irradiance(atPoint:colorSpace:)`](./irradiance%28atpoint,colorspace%29.md) method and passing the Rec. 709 color space. (See `kCGColorSpaceITUR_709`.)
 

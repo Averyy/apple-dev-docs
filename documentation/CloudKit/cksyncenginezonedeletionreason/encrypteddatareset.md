@@ -25,7 +25,7 @@ case encryptedDataReset
 CKSyncEngineZoneDeletionReasonEncryptedDataReset
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**: Upon receipt of deletions with this reason, you must delete any locally cached data and not resend it to iCloud.
 

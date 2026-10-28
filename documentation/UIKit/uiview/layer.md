@@ -23,7 +23,7 @@ var layer: CALayer { get }
 @property (nonatomic, strong, readonly) CALayer * layer;
 ```
 
-#### Discussion
+## Discussion
 
 This property is never `nil`. The value of the [`layerClass`](./layerclass.md) property determines the actual class of the layer object. The view is the layer’s delegate.
 

@@ -19,7 +19,7 @@ var repeats: Bool { get set }
 @property BOOL repeats;
 ```
 
-#### Discussion
+## Discussion
 
 The default value for this property is [`false`](../../Swift/false.md). See [Configure Scheduler Properties](../nsbackgroundactivityscheduler.md#Configure-Scheduler-Properties).
 

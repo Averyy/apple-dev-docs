@@ -5,7 +5,7 @@
 
 Validate the encrypted response.
 
-#### Overview
+## Overview
 
 Your login configuration instructs Platform SSO how to receive and verify the login response from an identity provider (IdP).
 
@@ -23,7 +23,7 @@ ewogI...luEng
 
 For more information, see [Creating a JSON Web Encryption (JWE) login response](./creating-a-json-web-encryption-jwe-login-response.md).
 
-##### Validate the ID token
+### Validate the ID token
 
 The `id_token` is a JSON Object Signing and Encryption (JOSE) object that the IdP signs using either RS256 or ES256 algorithms per RFC 7515 using compact serialization. The system retrieves the signing keys from the [`jwksEndpointURL`](./asauthorizationproviderextensionloginconfiguration/jwksendpointurl.md).
 

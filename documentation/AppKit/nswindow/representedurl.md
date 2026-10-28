@@ -19,7 +19,7 @@ var representedURL: URL? { get set }
 @property (copy, nullable) NSURL * representedURL;
 ```
 
-#### Discussion
+## Discussion
 
 When the URL specifies a path, the window shows an icon in its title bar, as described in the following table:
 

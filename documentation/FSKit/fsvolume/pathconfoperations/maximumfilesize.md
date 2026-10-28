@@ -19,7 +19,7 @@ optional var maximumFileSize: UInt64 { get }
 @property (readonly) uint64_t maximumFileSize;
 ```
 
-#### Discussion
+## Discussion
 
 Implement at least one of `maximumFileSize` or [`maximumFileSizeInBits`](./maximumfilesizeinbits.md). FSKit automatically converts from one to another if needed. If you implement both, FSKit uses only the `maximumFileSizeInBits` implementation.
 

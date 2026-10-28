@@ -19,7 +19,7 @@ var isCameraSensorOrientationCompensationSupported: Bool { get }
 @property (nonatomic, readonly, getter=isCameraSensorOrientationCompensationSupported) BOOL cameraSensorOrientationCompensationSupported;
 ```
 
-#### Discussion
+## Discussion
 
 A read-only BOOL value indicating whether still image buffers may be rotated to match the sensor orientation of earlier generation hardware.
 

@@ -19,7 +19,7 @@ func SCVLANInterfaceCreate(_ prefs: SCPreferences, _ physical: SCNetworkInterfac
 SCVLANInterfaceRefSCVLANInterfaceCreate(SCPreferencesRef prefs, SCNetworkInterfaceRef physical, CFNumberRef tag);
 ```
 
-#### Return Value
+## Return Value
 
 The new VLAN interface. You must release the returned value.
 

@@ -11,7 +11,7 @@ Is the current execution context holding the work-loop's gate?
 virtual bool inGate() const;
 ```
 
-#### Return Value
+## Return Value
 
 Returns true if IOThreadSelf() is gate holder.
 

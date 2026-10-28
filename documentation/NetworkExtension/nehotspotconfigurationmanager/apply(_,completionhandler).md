@@ -27,7 +27,7 @@ func apply(_ configuration: NEHotspotConfiguration) async throws
 - (void) applyConfiguration:(NEHotspotConfiguration *) configuration completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 This method attempts to join the network only if it’s found nearby. Also, because of the noticeable delay that the Hotspot 2.0 discovery mechanism may incur, the method doesn’t attempt to join Hotspot 2.0 networks.
 

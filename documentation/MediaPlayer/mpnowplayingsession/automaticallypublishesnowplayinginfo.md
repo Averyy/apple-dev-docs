@@ -23,7 +23,7 @@ var automaticallyPublishesNowPlayingInfo: Bool { get set }
 @property (nonatomic, assign) BOOL automaticallyPublishesNowPlayingInfo;
 ```
 
-#### Discussion
+## Discussion
 
 You can set Now Playing information keys for automatic publishing on [`nowPlayingInfo`](../../AVFoundation/avplayeritem/nowplayinginfo.md).
 

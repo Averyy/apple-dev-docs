@@ -13,11 +13,11 @@
 typedef bool (*IODebuggerSetModeHandler)(IOService *target, bool active);
 ```
 
-#### Return Value
+## Return Value
 
 Return true on success and false on failure.
 
-#### Discussion
+## Discussion
 
 Defines the mode handler that must be implemented by the target to service KDP link status requests. This handler is called by kdpSetModeDispatcher().
 

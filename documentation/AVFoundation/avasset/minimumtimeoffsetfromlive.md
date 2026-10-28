@@ -26,7 +26,7 @@ var minimumTimeOffsetFromLive: CMTime { get }
 @property (nonatomic, readonly) CMTime minimumTimeOffsetFromLive;
 ```
 
-#### Discussion
+## Discussion
 
 This property value is only valid when working with live streaming content. For non-live assets, this property value is [`invalid`](../../CoreMedia/cmtime/invalid.md).
 

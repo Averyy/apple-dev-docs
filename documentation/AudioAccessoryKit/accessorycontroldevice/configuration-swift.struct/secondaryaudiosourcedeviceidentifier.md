@@ -15,7 +15,7 @@ The Bluetooth address of the device providing the secondary source of audio.
 var secondaryAudioSourceDeviceIdentifier: Data?
 ```
 
-#### Discussion
+## Discussion
 
 If there’s only one device connected, set it as the primary device. If the accessory doesn’t support the [`audioSwitching`](../capabilities/audioswitching.md) capability, the value of this property is always `nil`.
 

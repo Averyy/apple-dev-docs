@@ -16,7 +16,7 @@ get data(): D | null;
 set data(data: D | null);
 ```
 
-#### Discussion
+## Discussion
 
 Use the [`data`](./data.md) object to view the original GeoJSON data. To retrieve the data as MapKit JS items, use the [`items`](./items.md) or [`getFlattenedItemList()`](./getflatteneditemlist.md) objects.
 

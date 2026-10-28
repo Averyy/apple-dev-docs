@@ -25,11 +25,11 @@ func getObjectValue(_ obj: AutoreleasingUnsafeMutablePointer<AnyObject?>?, for s
 - (BOOL) getObjectValue:(id*) obj forString:(NSString *) string errorDescription:(NSString **) error;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the conversion from string to cell content object was successful, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 When implementing this method in a subclass, return by reference the object `anObject` created from `string`. If `string` is equal to the value of the converted object, such as for formatters whose converted value type is `NSString`, it can be returned by reference without creating a new object.
 
@@ -59,7 +59,7 @@ The following example (which is paired with the example given in [`string(for:)`
 }
 ```
 
-##### Special Considerations
+### Special Considerations
 
 Prior to OS X v10.6, the implementation of this method in both [`NumberFormatter`](../numberformatter.md) and [`DateFormatter`](../dateformatter.md) would return [`true`](../../Swift/true.md) and an object value even if only part of the string could be parsed. This is problematic because you cannot be sure what portion of the string was parsed. For applications linked on or after OS X v10.6, this method instead returns an error if part of the string cannot be parsed. You can use `getObjectValue:forString:range:error:` to get the old behavior—it returns the range of the substring that was successfully parsed.
 

@@ -19,7 +19,7 @@ var canBecomeVisibleWithoutLogin: Bool { get set }
 @property BOOL canBecomeVisibleWithoutLogin;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) when the window can be displayed at the login window; otherwise, [`false`](../../Swift/false.md). By default, the value is [`false`](../../Swift/false.md).
 

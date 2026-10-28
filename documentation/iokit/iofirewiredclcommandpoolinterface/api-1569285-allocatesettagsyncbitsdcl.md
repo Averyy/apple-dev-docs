@@ -14,7 +14,7 @@
 DCLCommand *(*AllocateSetTagSyncBitsDCL)(IOFireWireLibDCLCommandPoolRef self, DCLCommand *inDCL, UInt16 inTagBits, UInt16 inSyncBits);
 ```
 
-#### Discussion
+## Discussion
 
 Description forthcoming
 

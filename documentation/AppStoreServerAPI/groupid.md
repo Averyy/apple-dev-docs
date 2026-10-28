@@ -19,7 +19,7 @@ string groupId
 
 - [App Store Server API changelog](./app-store-server-api-changelog.md)
 
-#### Discussion
+## Discussion
 
 The [`Get Customer Groups`](./get-customer-groups.md) endpoint returns a `groupId` for each group a customer belongs to. Pass that value to the [`Get Group Members`](./get-group-members.md) endpoint to enumerate the group’s members.
 

@@ -21,7 +21,7 @@ Calls a given closure with a raw pointer to the multiarray’s mutable storage.
 func withUnsafeMutableBytes<R>(_ body: (UnsafeMutableRawBufferPointer, [Int]) throws -> R) rethrows -> R
 ```
 
-#### Discussion
+## Discussion
 
 The buffer contains a collection of `int32`, `float16`, `float32`, or `float64` values, depending on the multiarray’s data type. It may not store these scalar values contiguously; use `strides` to get the buffer layout.
 

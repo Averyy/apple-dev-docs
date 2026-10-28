@@ -28,7 +28,7 @@ func trigger(state: GKGameCenterViewControllerState, handler: @escaping () -> Vo
 
 - [Adding an access point to your game](../adding-an-access-point-to-your-game.md)
 
-#### Discussion
+## Discussion
 
 For games that use controllers or the Apple TV remote, you can use this method to programmatically display the dashboard.
 

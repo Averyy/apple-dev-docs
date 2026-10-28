@@ -22,7 +22,7 @@ var visibleDateComponents: DateComponents { get set }
 @property (nonatomic, copy, nonnull) NSDateComponents * visibleDateComponents;
 ```
 
-#### Discussion
+## Discussion
 
 If `visibleDateComponents.calendar` is `nil` or isn’t equal to [`calendar`](./calendar.md), the calendar view uses [`calendar`](./calendar.md), which may result in an invalid date from the date components.
 

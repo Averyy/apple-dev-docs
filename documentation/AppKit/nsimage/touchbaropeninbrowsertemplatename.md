@@ -22,7 +22,7 @@ class let touchBarOpenInBrowserTemplateName: String
 extern NSImageName const NSImageNameTouchBarOpenInBrowserTemplate;
 ```
 
-#### Discussion
+## Discussion
 
 ![Template image for open in browser](https://developer.apple.com/tutorials/images/com.apple.appkit/media-2825125@2x.png)
 

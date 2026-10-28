@@ -26,7 +26,7 @@ init(bundleIdentifier: String)
 - (instancetype) initWithBundleIdentifier:(NSString *) bundleIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to launch an application based on its bundle identifier. For more information about bundle identifiers, see [About Bundle IDs](https://developer.apple.com/library/archive/documentation/IDEs/Conceptual/AppDistributionGuide/ConfiguringYourApp/ConfiguringYourApp.html#//apple_ref/doc/uid/TP40012582-CH28-SW8) in the [App Distribution Guide](https://developer.apple.com/library/archive/documentation/IDEs/Conceptual/AppDistributionGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40012582).
 

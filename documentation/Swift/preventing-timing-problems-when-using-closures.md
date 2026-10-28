@@ -5,13 +5,13 @@
 
 Understand how different API calls to your closures can affect your app.
 
-#### Overview
+## Overview
 
 Many of the APIs you use in Swift take a closure—or a function passed as an instance—as a parameter. Because closures can contain code that interacts with multiple parts of an app, it’s important to understand the different ways closures can be called by the APIs you pass them to. Closures you pass to APIs can be called synchronously (immediately) or asynchronously (sometime later). They may be called once, many times, or never.
 
 > ❗ **Important**: Making false assumptions about when a closure is called can lead to data inconsistency and app crashes.
 
-##### Understand the Results of Synchronous and Asynchronous Calls
+### Understand the Results of Synchronous and Asynchronous Calls
 
 When you pass a closure to an API, consider *when* that closure will be called relative to the other code in your app. In synchronous APIs, the result of calling the closure will be available immediately after you pass the closure. In asynchronous APIs, the result won’t be available until sometime later; this difference affects how you write code both *in* your closure as well as the code *following* your closure.
 
@@ -59,7 +59,7 @@ You’ll need to consider this kind of time-based execution problem frequently w
 
 A common timing mistake is expecting the results of an asynchronous call to be available within the calling synchronous code. For example, the `later(_:)` method above is comparable to the [`URLSession`](../Foundation/urlsession.md) class’s [`dataTask(with:completionHandler:)`](../Foundation/urlsession/datatask%28with,completionhandler%29-52wk8.md) method, which is also asynchronous. A timing scenario you should avoid is calling the [`dataTask(with:completionHandler:)`](../Foundation/urlsession/datatask%28with,completionhandler%29-52wk8.md) method within your app’s [`viewDidLoad()`](../UIKit/uiviewcontroller/viewdidload%28%29.md) method and attempting to use the results outside of the closure you pass as the completion handler.
 
-##### Don’t Write Code That Makes a One-Time Change in a Closure That’s Called Multiple Times
+### Don’t Write Code That Makes a One-Time Change in a Closure That’s Called Multiple Times
 
 If you’re going to pass a closure to an API that might call it multiple times, omit code that’s intended to make a one-time change to external state.
 
@@ -99,7 +99,7 @@ lines.forEach { line in
 }
 ```
 
-##### Don’t Put Critical Code in a Closure That Might Not Be Called
+### Don’t Put Critical Code in a Closure That Might Not Be Called
 
 If there’s a chance that a closure you pass to an API won’t be called, don’t put code that’s critical to continuing your app in the closure.
 

@@ -22,7 +22,7 @@
 struct Span<Element> where Element : ~Copyable
 ```
 
-#### Overview
+## Overview
 
 A `Span` instance is a non-owning, non-escaping view into memory. When a `Span` is created, it inherits the lifetime of the container owning the contiguous memory, ensuring temporal safety and avoiding use-after-free errors. Operations on `Span` are bounds-checked, ensuring spatial safety and avoiding buffer overflow errors.
 

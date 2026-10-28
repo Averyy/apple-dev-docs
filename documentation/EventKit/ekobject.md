@@ -24,7 +24,7 @@ class EKObject
 @interface EKObject : NSObject
 ```
 
-#### Overview
+## Overview
 
 `EKObject` provides fine control when saving and restoring property settings. For example, you can find out if a persistent object was modified locally and whether it needs to be saved. If the object has changed in the event store since it was fetched, you can refresh the local copy by keeping local changes or by removing local changes. You can also roll back the object to the state when it was first fetched.
 

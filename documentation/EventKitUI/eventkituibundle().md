@@ -22,7 +22,7 @@ func EventKitUIBundle() -> Bundle!
 extern NSBundle *EventKitUIBundle();
 ```
 
-#### Discussion
+## Discussion
 
 A *bundle* is a directory with a standardized hierarchical structure that holds executable code and the resources used by that code. Bundles organize their contained resources into well-defined subdirectories.
 

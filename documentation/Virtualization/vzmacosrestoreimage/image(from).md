@@ -19,7 +19,7 @@ class func image(from fileURL: URL) async throws -> VZMacOSRestoreImage
 + (void) loadFileURL:(NSURL *) fileURL completionHandler:(void (^)(VZMacOSRestoreImage *, NSError *)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 `VZMacOSRestoreImage` can load macOS installation media from a local file. If the `fileURL` parameter doesn’t refer to a local file, the system raises an exception.
 

@@ -24,7 +24,7 @@ var isLastFrame: Bool { get set }
 @property (nonatomic, assign, readwrite, getter=isLastFrame) BOOL lastFrame;
 ```
 
-#### Discussion
+## Discussion
 
 If set to [`true`](../../Swift/true.md), the current tracker will be released to the pool of available trackers when the current frame finishes processing.
 

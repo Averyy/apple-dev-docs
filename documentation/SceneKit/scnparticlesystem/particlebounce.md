@@ -25,7 +25,7 @@ var particleBounce: CGFloat { get set }
 @property (nonatomic) CGFloat particleBounce;
 ```
 
-#### Discussion
+## Discussion
 
 Restitution determines the amount of energy gained or lost in a collision. (To define collision behavior, see the [`colliderNodes`](./collidernodes.md) property.)
 

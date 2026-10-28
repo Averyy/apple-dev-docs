@@ -24,7 +24,7 @@ func writePackets(_ packets: [Data], withProtocols protocols: [NSNumber]) -> Boo
 - (BOOL) writePackets:(NSArray<NSData *> *) packets withProtocols:(NSArray<NSNumber *> *) protocols;
 ```
 
-#### Discussion
+## Discussion
 
 The number of NSData objects in `packets` must be exactly equal to the number of NSNumber objects in `protocols`.
 

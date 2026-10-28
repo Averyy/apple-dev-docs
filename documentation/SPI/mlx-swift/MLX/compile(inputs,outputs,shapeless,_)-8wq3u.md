@@ -17,15 +17,15 @@ Returns a compiled function that produces the same output as `f()`.
 func compile(inputs: [any Updatable] = [], outputs: [any Updatable] = [], shapeless: Bool = false, _ f: @escaping ([MLXArray]) -> [MLXArray]) -> @Sendable ([MLXArray]) -> [MLXArray]
 ```
 
-#### Return Value
+## Return Value
 
 A new function that produces the same output as `f()`
 
-#### Discussion
+## Discussion
 
 Any mutable state must be provided via the state parameter – see [Compilation](./compilation.md) for more information.
 
-##### See Also
+### See Also
 
 - [Compilation](./compilation.md)
 

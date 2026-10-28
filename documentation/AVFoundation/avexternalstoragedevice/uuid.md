@@ -23,7 +23,7 @@ var uuid: UUID? { get }
 @property (nonatomic, readonly, nullable) NSUUID * uuid;
 ```
 
-#### Discussion
+## Discussion
 
 The value is `nil` when the system can’t retrieve information from external storage device.
 

@@ -21,7 +21,7 @@ Returns a new array descriptor that’s initialized with random floating-point v
 static func allocate<Scalar>(randomUniformUsing: BNNS.RandomGenerator, range: ClosedRange<Scalar>, shape: BNNS.Shape, batchSize: Int = 1) -> BNNSNDArrayDescriptor? where Scalar : BNNSScalar, Scalar : FixedWidthInteger
 ```
 
-#### Discussion
+## Discussion
 
 Use this function to create a new array descriptor that’s initialized with random values [`BNNS.RandomGenerator`](../bnns/randomgenerator.md) generates.
 

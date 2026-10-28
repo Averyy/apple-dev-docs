@@ -15,7 +15,7 @@ The bottom margin of the document.
 static let bottomMargin: NSAttributedString.DocumentAttributeKey
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSNumber`](../../nsnumber.md) object containing a float, in points.
 

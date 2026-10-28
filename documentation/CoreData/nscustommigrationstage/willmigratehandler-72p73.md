@@ -21,7 +21,7 @@ The handler to execute before the stage runs.
 @property (copy, nullable) _Bool (^)(NSStagedMigrationManager *, NSCustomMigrationStage *, NSError **) willMigrateHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Use this handler to prepare the persistent store’s data for the pending migration. Access the store using the [`container`](../nsstagedmigrationmanager/container.md) property of the handler’s `migrationManager` parameter.
 

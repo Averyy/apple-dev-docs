@@ -5,7 +5,7 @@
 
 Access certificates, keys, and identities stored on a smart card as if they were part of the keychain.
 
-#### Overview
+## Overview
 
 A token is a storage repository for cryptographic items. When a token is present in the system—such as when the user physically inserts a smart card into a USB slot—the CryptoTokenKit framework exposes the token’s items to your app as standard keychain items. It does this by copying the items to the keychain when the token is inserted, and deleting them from the keychain when the token is removed.
 
@@ -13,7 +13,7 @@ A token is a storage repository for cryptographic items. When a token is present
 
 Because the items appear to your app as standard keychain items, you use [Keychain services](../Security/keychain-services.md) to access them. All the usual rules for building a search query and parsing the search results apply. For an example of storing and retrieving keychain items, see [Storing Keys in the Keychain](../Security/storing-keys-in-the-keychain.md). When you work with tokens, the CryptoTokenKit framework handles the storage. You only have to perform item retrieval.
 
-##### Narrow the Keychain Search with a Token ID
+### Narrow the Keychain Search with a Token ID
 
 When the framework copies an item from a token to the keychain, it records the associated token’s identifier, or token ID, as part of the keychain item. If you know the token ID, you can use it to very precisely filter the keychain search. Do this by including the [`kSecAttrTokenID`](../Security/ksecattrtokenid.md) key in the query dictionary. For example, to get a reference to a key that comes from a token with token ID `com.example.piv:0123456789`, use the search query:
 
@@ -45,7 +45,7 @@ watcher.setInsertionHandler { tokenID in
 }
 ```
 
-##### Use a Persistent Reference to Record a Token Item
+### Use a Persistent Reference to Record a Token Item
 
 When you want to keep a record of a token item or pass it to another process, you can get a persistent reference to the associated keychain item. Do this by setting the [`kSecReturnPersistentRef`](../Security/ksecreturnpersistentref.md) key’s value to [`true`](../Foundation/nsexpression/true.md) in the keychain search query. For example, the earlier query becomes:
 

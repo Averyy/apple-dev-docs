@@ -19,13 +19,13 @@ Tells the delegate that the user picked an image.
 - (void) imagePickerController:(UIImagePickerController *) picker didFinishPickingImage:(UIImage *) image editingInfo:(NSDictionary<NSString *,id> *) editingInfo;
 ```
 
-#### Discussion
+## Discussion
 
 Your delegate’s implementation of this method should pass the specified image on to any custom code that needs it and then dismiss the picker view.
 
 When user editing is enabled, the picker view presents the user with a preview of the currently selected image along with controls for modifying it. (This behavior is managed by the picker view prior to calling this method.) If the user modifies the image, the editing information is available in the `editingInfo` parameter. If you don’t need the editing information, simply use the image in the `image` parameter as is.
 
-##### Special Considerations
+### Special Considerations
 
 This deprecated method supports picking only still pictures. The replacement method, [`imagePickerController(_:didFinishPickingMediaWithInfo:)`](./imagepickercontroller%28_,didfinishpickingmediawithinfo%29.md), supports picking movies as well as still pictures.
 

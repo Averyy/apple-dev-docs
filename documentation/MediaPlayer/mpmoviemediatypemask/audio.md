@@ -21,7 +21,7 @@ static var audio: MPMovieMediaTypeMask { get }
 MPMovieMediaTypeMaskAudio
 ```
 
-#### Discussion
+## Discussion
 
 The movie file contains audio media.
 

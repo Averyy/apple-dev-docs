@@ -15,7 +15,7 @@ Frees a spin lock.
 void IOSimpleLockFree(IOSimpleLock *lock);
 ```
 
-#### Discussion
+## Discussion
 
 Frees a lock allocated with IOSimpleLockAlloc.
 

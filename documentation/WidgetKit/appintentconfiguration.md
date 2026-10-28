@@ -25,7 +25,7 @@ An object describing the content of a widget that uses a custom intent to provid
 
 - [Creating a widget extension](./creating-a-widget-extension.md)
 
-#### Overview
+## Overview
 
 The following example shows the configuration for a game widget that displays details about a chosen character.
 

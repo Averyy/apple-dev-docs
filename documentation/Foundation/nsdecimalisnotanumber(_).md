@@ -25,11 +25,11 @@ func NSDecimalIsNotANumber(_ dcm: UnsafePointer<Decimal>) -> Bool
 static BOOL NSDecimalIsNotANumber(const NSDecimal *dcm);
 ```
 
-#### Return Value
+## Return Value
 
 [`false`](../Swift/false.md) if the value in `dcm` represents a valid number, otherwise [`true`](../Swift/true.md).
 
-#### Discussion
+## Discussion
 
 For more information, see [Number and Value Programming Topics](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/NumbersandValues/NumbersandValues.html#//apple_ref/doc/uid/10000038i).
 

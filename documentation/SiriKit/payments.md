@@ -5,7 +5,7 @@
 
 Send payments between users or pay bills.
 
-#### Overview
+## Overview
 
 With the payments domain, users can pay bills or initiate monetary transfers between themselves and other individuals using Siri. Your Intents app extension facilitates bill payment from the user to any vendors (such as public utilities) that you previously configured in your app. For all payments, your Intents app extension works with your back-end services to initiate the transfers. The user then follows up on the progress of those transactions in your app.
 

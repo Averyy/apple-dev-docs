@@ -12,7 +12,7 @@ virtual void CompleteSCSITask (
  IOFireWireSBP2ORB *orb );
 ```
 
-#### Overview
+## Overview
 
 See IOSCSIProtocolServices.h for more details regarding CommandCompleted.
 

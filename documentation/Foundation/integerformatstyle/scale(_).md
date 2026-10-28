@@ -21,11 +21,11 @@ Modifies the format style to use the specified scale.
 func scale(_ multiplicand: Double) -> IntegerFormatStyle<Value>
 ```
 
-#### Return Value
+## Return Value
 
 An integer format style modified to use the specified scale.
 
-#### Discussion
+## Discussion
 
 The following example creates a default [`IntegerFormatStyle`](../integerformatstyle.md) for the `en_US` locale, and a second style that scales by a multiplicand of `0.001`. It then applies each style to an array of integers. The formatting that the modified style applies expresses each value in terms of one-thousandths.
 

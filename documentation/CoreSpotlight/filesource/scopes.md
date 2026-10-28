@@ -19,7 +19,7 @@ The directories to search.
 var scopes: [URL]
 ```
 
-#### Discussion
+## Discussion
 
 Specify one or more directory URLs to scope the search to those directories and their subdirectories. The default value of this property is an empty array, which searches all indexed volumes.
 

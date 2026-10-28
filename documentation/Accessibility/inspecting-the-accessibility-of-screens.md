@@ -5,13 +5,13 @@
 
 Focus on your app with Accessibility Inspector and investigate potential issues on each screen.
 
-#### Overview
+## Overview
 
 To investigate potential accessibility issues in your app, use Accessibility Inspector to display information about the accessibility properties of elements on screen in your app. Accessibility issues can occur on individual elements and when people navigate between elements, and you can detect both kinds of issue with the inspector.
 
 To open Accessibility Inspector, open Xcode and choose Xcode > Open Developer Tool > Accessibility Inspector.
 
-##### Target your app
+### Target your app
 
 In Accessibility Inspector, the target menu displays a list of connected devices and apps you can inspect. By default, it displays apps running on your Mac. If you’re developing a macOS app, pick your app from the list of running apps. If you’re developing for iOS, iPadOS, watchOS, or tvOS, select the name of the device on which the app is running, then pick the app from the processes menu. For information about targeting the correct device, see [Running your app on simulated or physical devices](../Xcode/running-your-app-on-simulated-or-physical-devices.md).
 
@@ -27,7 +27,7 @@ Once you select your app, Accessibility Inspector displays detailed information 
 
 ![An iOS app being inspected by Accessibility Inspector. The Quote button is highlighted by a green rectangle that indicates it's the current target of inspection.](https://developer.apple.com/tutorials/images/com.apple.Accessibility/quote-button-highlighted-in-green@2x.png)
 
-##### Inspect individual elements
+### Inspect individual elements
 
 You choose which element to inspect with the *Target an element* button or by pressing Option Space to toggle inspection mode. While in inspection mode, interact with the element you want to inspect to select it. For example, in macOS, click the element to select it. Similarly, in iOS, tap the element to select it.
 
@@ -40,7 +40,7 @@ Accessibility Inspector displays information about the element you select in sev
 
 Each screen in your app has the potential to contain accessibility issues; periodically navigate through your app during development and check for issues. If you find an inaccessible element, focus Accessibility Inspector on that element, examine its values, and trigger its actions to find the problem. For more information, see [Performing accessibility audits for your app](./performing-accessibility-audits-for-your-app.md).
 
-##### Navigate elements in accessibility order
+### Navigate elements in accessibility order
 
 The navigation section of the inspector contains controls for navigating the app in the same order that accessibility features like VoiceOver use to create a linear path through the elements of the current screen. You can also use these controls to navigate to individual elements for inspection.
 

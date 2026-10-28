@@ -19,7 +19,7 @@ static let leftExpression: NSRuleEditor.PredicatePartKey
 extern NSRuleEditorPredicatePartKey const NSRuleEditorPredicateLeftExpression;
 ```
 
-#### Discussion
+## Discussion
 
 This value is required for a non-`nil` comparison predicate.
 

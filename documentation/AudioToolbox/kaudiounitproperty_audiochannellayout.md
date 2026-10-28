@@ -24,7 +24,7 @@ var kAudioUnitProperty_AudioChannelLayout: AudioUnitPropertyID { get }
 kAudioUnitProperty_AudioChannelLayout
 ```
 
-#### Discussion
+## Discussion
 
 The channel order, within a given audio stream, for a specified audio unit element and scope. The number of channels in the layout must match the number of channels set for the scope-element. Each input and output bus in an audio unit can have one instance of this property.
 

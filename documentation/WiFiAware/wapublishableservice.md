@@ -21,7 +21,7 @@ struct WAPublishableService
 
 - [Adopting Wi-Fi Aware](./adopting-wi-fi-aware.md)
 
-#### Overview
+## Overview
 
 You specify the services your app uses in `Info.plist` via a dictionary under the [`WiFiAwareServices`](../BundleResources/information-property-list/wifiawareservices.md) key:
 

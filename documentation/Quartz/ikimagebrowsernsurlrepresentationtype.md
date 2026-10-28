@@ -19,7 +19,7 @@ let IKImageBrowserNSURLRepresentationType: String
 extern NSString * const IKImageBrowserNSURLRepresentationType;
 ```
 
-#### Discussion
+## Discussion
 
 An [`NSURL`](../Foundation/nsurl.md)object.
 

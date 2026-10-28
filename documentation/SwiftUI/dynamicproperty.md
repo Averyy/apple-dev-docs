@@ -21,7 +21,7 @@ An interface for a stored variable that updates an external property of a view.
 protocol DynamicProperty
 ```
 
-#### Overview
+## Overview
 
 The view gives values to these properties prior to recomputing the view’s [`body`](./view/body-8kl5o.md).
 

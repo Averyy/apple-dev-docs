@@ -22,7 +22,7 @@ var supportsReplacement: Bool { get }
 @property (nonatomic, readonly) BOOL supportsReplacement;
 ```
 
-#### Discussion
+## Discussion
 
 This property determines whether the find panel shows the replacement UI.
 

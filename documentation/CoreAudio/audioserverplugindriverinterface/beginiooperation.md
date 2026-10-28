@@ -19,11 +19,11 @@
 int (*)(struct AudioServerPlugInDriverInterface **, unsigned int, unsigned int, unsigned int, unsigned int, const struct AudioServerPlugInIOCycleInfo *) __attribute__((nonblocking)) BeginIOOperation;
 ```
 
-#### Return Value
+## Return Value
 
 An OSStatus indicating success or failure.
 
-#### Discussion
+## Discussion
 
 Tells the plug-in that the Host is about to begin a phase of the IO cycle for a particular device.
 

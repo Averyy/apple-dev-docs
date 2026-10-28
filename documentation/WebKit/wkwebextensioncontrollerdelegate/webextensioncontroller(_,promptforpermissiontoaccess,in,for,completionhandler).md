@@ -27,7 +27,7 @@ optional func webExtensionController(_ controller: WKWebExtensionController, pro
 - (void) webExtensionController:(WKWebExtensionController *) controller promptForPermissionToAccessURLs:(NSSet<NSURL *> *) urls inTab:(id<WKWebExtensionTab>) tab forExtensionContext:(WKWebExtensionContext *) extensionContext completionHandler:(void (^)(NSSet<NSURL *> *allowedURLs, NSDate *expirationDate)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 This method should be implemented by the app to prompt the user for permission and call the completion handler with the set of URLs that were granted access to and an optional expiration date. If not implemented or the completion handler is not called within a reasonable amount of time, the request is assumed to have been denied. The expiration date can be used to specify when the URLs expire.
 

@@ -21,7 +21,7 @@ Converts a vector of single-precision floating-point values to signed 8-bit inte
 extern void vDSP_vfixr8(const float *__A, vDSP_Stride __IA, char *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 The following code shows an example of using this function:
 

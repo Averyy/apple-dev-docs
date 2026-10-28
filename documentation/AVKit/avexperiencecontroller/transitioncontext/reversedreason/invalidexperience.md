@@ -15,7 +15,7 @@ A transition was attempted with an experience that cannot be transitioned to.
 case invalidExperience
 ```
 
-#### Discussion
+## Discussion
 
 Possible response is to consult `AVExperienceController.experience` and `AVExperienceController.availableExperiences` to choose a different experience to transition to.
 

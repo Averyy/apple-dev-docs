@@ -17,11 +17,11 @@ Transform the values in the nested structure using the `transform()` function.
 func mapValues<Result>(_ transform: (Element) throws -> Result) rethrows -> NestedItem<Key, Result>
 ```
 
-#### Discussion
+## Discussion
 
 This is typically called via [`mapValues(transform:)`](../nesteddictionary/mapvalues%28transform%29-1ehvq.md).
 
-##### See Also
+### See Also
 
 - [`mapValues(transform:)`](../nesteddictionary/mapvalues%28transform%29-1ehvq.md)
 

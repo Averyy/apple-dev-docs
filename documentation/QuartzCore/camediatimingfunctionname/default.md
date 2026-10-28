@@ -24,7 +24,7 @@ static let `default`: CAMediaTimingFunctionName
 extern CAMediaTimingFunctionName const kCAMediaTimingFunctionDefault;
 ```
 
-#### Discussion
+## Discussion
 
 This is a Bézier timing function with the control points (0.25,0.1) and (0.25,1.0).
 

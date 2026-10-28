@@ -19,7 +19,7 @@ func prepare()
 - (void) prepareLayout;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation of this method does nothing. During the layout cycle, the collection view calls this method first to give you a chance to prepare any data needed during the layout operation. When defining a custom layout, you can override this method and use it to set up data structures or perform any initial computations needed to perform the layout later.
 

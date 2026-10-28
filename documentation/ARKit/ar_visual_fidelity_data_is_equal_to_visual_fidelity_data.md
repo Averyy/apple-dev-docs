@@ -15,7 +15,7 @@ Check if two visual fidelity data instances are equal.
 extern bool ar_visual_fidelity_data_is_equal_to_visual_fidelity_data(ar_visual_fidelity_data_t fidelity_data, ar_visual_fidelity_data_t other_fidelity_data);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the two visual fidelity data instances are equal; otherwise, `false`.
 

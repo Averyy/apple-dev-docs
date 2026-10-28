@@ -21,7 +21,7 @@ var supportedDynamicAspectRatios: [AVCaptureDevice.AspectRatio] { get }
 @property (copy, readonly) NSArray<NSString *> * supportedDynamicAspectRatios;
 ```
 
-#### Discussion
+## Discussion
 
 An array that describes the aspect ratios that are supported for this format. If this device format does not support dynamic aspect ratio, this property returns an empty array.
 

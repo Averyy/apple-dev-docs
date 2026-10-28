@@ -16,7 +16,7 @@
 kINQUIRY_Byte7_RELADR_Bit
 ```
 
-#### Discussion
+## Discussion
 
 RELADR bit definition.
 

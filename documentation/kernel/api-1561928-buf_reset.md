@@ -15,11 +15,11 @@ Reset I/O flag state on a buffer.
 void buf_reset(buf_t bp, int32_t flags);
 ```
 
-#### Return Value
+## Return Value
 
 void.
 
-#### Discussion
+## Discussion
 
 Clears current flags on a buffer (internal and external) and allows some new flags to be set. Used perhaps to prepare an iobuf for reuse.
 

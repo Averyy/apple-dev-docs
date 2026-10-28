@@ -14,7 +14,7 @@
 registerComponentAfterExisting = 4
 ```
 
-#### Discussion
+## Discussion
 
 Specify this flag to indicate that this component should be registered after all other components with the same component type. Usually components are registered before others with identical descriptions; specifying this flag overrides that behavior. 
 

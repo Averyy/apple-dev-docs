@@ -23,7 +23,7 @@ func click()
 - (void) click;
 ```
 
-#### Discussion
+## Discussion
 
 If the element exists within a scrollable view but is offscreen, the framework attempts to scroll the element onscreen before performing the click.
 

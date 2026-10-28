@@ -21,7 +21,7 @@ nonisolated
 func onKeyPress(characters: CharacterSet, phases: KeyPress.Phases = [.down, .repeat], action: @escaping (KeyPress) -> KeyPress.Result) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A modified view that binds hardware keyboard input when focused.
 

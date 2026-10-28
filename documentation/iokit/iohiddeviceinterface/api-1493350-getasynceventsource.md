@@ -16,7 +16,7 @@ Gets the created async event source.
 CFRunLoopSourceRef (*getAsyncEventSource)(void *self);
 ```
 
-#### Return Value
+## Return Value
 
 Returns a CFRunLoopSourceRef.
 

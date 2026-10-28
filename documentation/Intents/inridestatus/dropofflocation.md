@@ -32,7 +32,7 @@ var dropOffLocation: CLPlacemark? { get set }
 @property (atomic, copy, readwrite, nullable) CLPlacemark * dropOffLocation;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify the final destination for the ride. Do not include the pickup location in the[`waypoints`](./waypoints.md) property.
 

@@ -21,11 +21,11 @@ Returns a span over all but the given number of trailing elements.
 mutating func extracting(droppingLast k: Int) -> MutableSpan<Element>
 ```
 
-#### Return Value
+## Return Value
 
 A span leaving off the specified number of elements at the end.
 
-#### Discussion
+## Discussion
 
 If the number of elements to drop exceeds the number of elements in the span, the result is an empty span.
 

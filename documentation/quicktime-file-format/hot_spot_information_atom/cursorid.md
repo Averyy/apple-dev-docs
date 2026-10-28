@@ -6,7 +6,7 @@
 
 An array of three IDs for custom hot spot cursors.
 
-#### Overview
+## Overview
 
 Custom hot spot cursors override the default hot spot cursors provided by QuickTime VR. The first ID (`cursorID[0]`) specifies the cursor that is displayed when it is in the hot spot. The second ID (`cursorID[1]`) specifies the cursor that is displayed when it is in the hot spot and the mouse button is down. The third ID (`cursorID[2]`) specifies the cursor that is displayed when it is in the hot spot and the mouse button is released. To retain the default cursor for any of these operations, set the corresponding cursor ID to `0`. Custom cursors should be stored in the VR world atom container, as described in [`VR world atom container`](../vr_world_atom_container.md).
 

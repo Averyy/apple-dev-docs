@@ -19,7 +19,7 @@ class NSArrayController
 @interface NSArrayController : NSObjectController
 ```
 
-#### Overview
+## Overview
 
 Typically the collection that an [`NSArrayController`](./nsarraycontroller.md) manages is an array, however, if the controller manages a relationship of a managed object (see [`NSManagedObject`](../CoreData/nsmanagedobject.md)) the collection may be a set. [`NSArrayController`](./nsarraycontroller.md) provides selection management and sorting capabilities.
 

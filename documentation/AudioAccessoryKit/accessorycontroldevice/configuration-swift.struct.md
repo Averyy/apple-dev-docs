@@ -15,7 +15,7 @@ The configuration for an accessory.
 struct Configuration
 ```
 
-#### Overview
+## Overview
 
 Use this structure to define the characteristics and capabilities of your audio accessory.
 

@@ -32,7 +32,7 @@ var keyPath: String { get }
 @property (atomic, copy, readonly) NSString * keyPath;
 ```
 
-#### Discussion
+## Discussion
 
 When recording parameter values, hosts should bind to the parameter key path (unless an audio unit specifically documents that its parameter addresses are stable and persistent). The individual node identifiers in a key path are separated by periods (`.`). Passing a node’s key path to a parameter tree’s [`value(forKeyPath:)`](../../ObjectiveC/nsobject-swift.class/value%28forkeypath%29.md) method returns the same node.
 

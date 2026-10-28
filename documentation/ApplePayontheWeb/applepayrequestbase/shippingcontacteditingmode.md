@@ -16,7 +16,7 @@ A value that indicates whether the shipping mode prevents the user from editing 
 ApplePayShippingContactEditingMode shippingContactEditingMode;
 ```
 
-#### Discussion
+## Discussion
 
 Set the value to `storePickup` for an in-store or other pickup to prevent the user from editing the shipping address.
 

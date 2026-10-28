@@ -18,7 +18,7 @@ A Boolean value that determines whether to add a shadow.
 @property (nonatomic) BOOL prefersShadow;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`false`](../../Swift/false.md).
 

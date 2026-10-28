@@ -19,7 +19,7 @@ var isTerminated: Bool { get }
 @property (readonly, getter=isTerminated) BOOL terminated;
 ```
 
-#### Discussion
+## Discussion
 
 The value of terminated is [`true`](../../Swift/true.md) if the receiver’s application has terminated, otherwise [`false`](../../Swift/false.md).
 

@@ -19,7 +19,7 @@ var canMakeTextSmaller: Bool { get }
 @property (nonatomic, readonly) BOOL canMakeTextSmaller;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if able to make the text smaller; otherwise, [`false`](../../Swift/false.md).
 

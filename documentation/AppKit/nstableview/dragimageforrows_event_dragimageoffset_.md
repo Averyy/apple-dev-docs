@@ -17,7 +17,7 @@ Computes and returns an image to use for dragging.
 - (NSImage *) dragImageForRows:(NSArray *) dragRows event:(NSEvent *) dragEvent dragImageOffset:(NSPointPointer) dragImageOffset;
 ```
 
-#### Discussion
+## Discussion
 
 Override this to return a custom image. `dragRows` represents the rows participating in the drag. `dragEvent` is a reference to the mouse-down event that began the drag. `dragImageOffset` is an in/out parameter.
 

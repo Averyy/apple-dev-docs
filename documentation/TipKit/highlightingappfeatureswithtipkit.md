@@ -12,7 +12,7 @@ Bring attention to new features in your app by using tips.
 - Mac Catalyst 18.0+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 With TipKit, you can teach people about a new feature in your app, or show them ways to accomplish a task faster. This sample guides you through the different types of tips you can add to your app, along with ways to control where and when they appear.
 
@@ -20,7 +20,7 @@ Each example highlights a different feature of the TipKit framework. The TipView
 
 > **Related session from WWDC23**: Session 10229: [Make features discoverable with TipKit](https://developer.apple.com/videos/play/wwdc2023/10229/)
 
-##### Define tip content
+### Define tip content
 
 The [`Tip`](./tip.md) protocol defines the text and imagery that tips use to describe what the features does, as well as the rules for when the tip appears. Each example defines a structure that conforms to the `Tip` protocol, and sets the properties that define the tip content.
 
@@ -40,7 +40,7 @@ struct InlineTip: Tip {
 }
 ```
 
-##### Load tips when the app starts
+### Load tips when the app starts
 
 Before tips display, they must load into the app. The sample initializes and loads all tips the app uses by calling [`configure(_:)`](./tips/configure%28_%29.md). The best practice is to call this once per app session, for example, in the [`init()`](../SwiftUI/app/init%28%29.md) method of your app.
 
@@ -67,7 +67,7 @@ struct TipKitExamples: App {
 
 > **Note**: The sample project is currently configured to reset tip state each time the sample runs. To turn this off, and see how tips behave in production, comment out `try Tips.resetDatastore()` in the `setupTipsForTesting` method of `TipKitExamplesApp`.
 
-##### Embed a tip directly in the view using inline tips
+### Embed a tip directly in the view using inline tips
 
 Use this style of tip whenever possible to avoid covering UI elements that people may want to interact with. Inline tips embed themselves directly into the view containing the feature they highlight. This style of tip causes the underlying view to alter its layout to accommodate the tip’s appearance and dismissal.
 
@@ -104,7 +104,7 @@ struct InlineView: View {
 }
 ```
 
-##### Display a tip on top of the underlying view using popover tips
+### Display a tip on top of the underlying view using popover tips
 
 Use this style of tip view if adjusting the underlying layout is undesirable or people don’t need to interact with any controls the tip obscures. Popover view modifiers display the tip view on top of the current screen layout while obscuring UI elements underneath. If you use a popover, consider excluding imagery because the tip already points to the feature being highlighted.
 
@@ -135,7 +135,7 @@ struct PopoverView: View {
 }
 ```
 
-##### Direct people to information or options with buttons
+### Direct people to information or options with buttons
 
 Buttons present people with additional information and options before they decide whether to use a new feature. For example, consider using buttons to redirect people to an area where they can learn more about what the given feature does. Or consider sending people to a settings screen if adjustments are necessary before a new feature can be used.
 
@@ -204,7 +204,7 @@ struct PasswordResetView: View {
 }
 ```
 
-##### Display tips based on app state using parameters
+### Display tips based on app state using parameters
 
 This sample demonstrates how to use app state to display a tip. Define a variable in your tip structure to represent the app state to track. Wrap it in a [`Parameter`](./tips/parameter.md) property wrapper, and then define a [`Rule`](./tips/rule.md) for when it displays using the `#Rule` macro in the [`rules`](./tip/rules.md) property of the structure defining the tip. This sample only displays the tip when someone taps the button and logs in.
 
@@ -311,7 +311,7 @@ struct FavoritePlantTip: Tip {
 }
 ```
 
-##### Display tips based on user actions with events
+### Display tips based on user actions with events
 
 To track and display tips based on user actions, define a [`Event`](./tip/event.md) constant with an `id` in your tip structure representing the user interaction you want to track. Then define a [`Rule`](./tips/rule.md) for when the tip displays using a `#Rule` macro referencing the event to track. Set the conditions for when the tip displays within the `#Rule` macro closure. In this sample, the tip displays when the event occurs three or more times.
 
@@ -350,7 +350,7 @@ struct EventView: View {
 }
 ```
 
-##### Creating an event with an associated donation value
+### Creating an event with an associated donation value
 
 You can also create a [`Event`](./tips/event.md) property wrapper with associated donated values. These values hold additional information relevant to the tip itself.
 
@@ -433,7 +433,7 @@ struct FoodEventTip: Tip {
 }
 ```
 
-##### Control display frequency using options
+### Control display frequency using options
 
 Options control the frequency with which tips display. Define a [`Option`](./tip/option.md) in the [`options`](./tip/options.md) property of your tip structure and set the frequency for the tip display there.
 
@@ -449,7 +449,7 @@ struct OptionTip: Tip {
 
 Then present the tip in a view. The first time the view appears, the tip displays once. Afterward, the tip no longer appears until reset or the app reinstalls on the device. See the section on overriding tip eligibility rules for instructions on how to reset a tip’s state.
 
-##### Combine parameters, events, and options for more complex interactions
+### Combine parameters, events, and options for more complex interactions
 
 To create more complex rules, combine parameters, events, and options to make tips appear. This sample defines one parameter-based rule to only show a tip when someone logs in, and another event-based rule that only displays a tip when someone enters the view three times. These rules logically AND together in the rules property of the tip structure.
 
@@ -525,7 +525,7 @@ struct ComboView: View {
 }
 ```
 
-##### Override eligibility rules to test tip appearance and display
+### Override eligibility rules to test tip appearance and display
 
 When a tip is no longer eligible for display, it stops appearing in the app. While this might make sense in production, it can make testing tip appearance and placement challenging during development.
 

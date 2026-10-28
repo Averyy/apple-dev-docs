@@ -20,11 +20,11 @@ var keySpecifier: NSScriptObjectSpecifier { get }
 @property (retain, readonly) NSScriptObjectSpecifier * keySpecifier;
 ```
 
-#### Return Value
+## Return Value
 
 A specifier for the object or objects to be moved.
 
-#### Discussion
+## Discussion
 
 Note that this specifier may be different than the specifier set by [`setReceiversSpecifier(_:)`](./setreceiversspecifier%28_%29.md), which sets the container specifier. For example, for a command such as `move the third circle to the location of the first circle`, the receiver might identify a document (which has a list of graphics), while the key specifier identifies the particular graphic to be moved.
 

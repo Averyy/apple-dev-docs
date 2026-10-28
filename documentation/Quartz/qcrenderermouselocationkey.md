@@ -21,7 +21,7 @@ let QCRendererMouseLocationKey: String
 extern NSString * const QCRendererMouseLocationKey;
 ```
 
-#### Discussion
+## Discussion
 
 The associated value is an [`NSPoint`](../Foundation/nspoint.md) object stored in an [`NSValue`](../Foundation/nsvalue.md) object. The mouse location is in normalized coordinates relative to the OpenGL context viewport (`[0,1]x[0,1]` with the origin `(0,0)` at the lower-left corner).
 

@@ -23,7 +23,7 @@ var currentPreferredSymbolConfiguration: UIImage.SymbolConfiguration? { get }
 @property (nonatomic, strong, readonly, nullable) UIImageSymbolConfiguration * currentPreferredSymbolConfiguration;
 ```
 
-#### Discussion
+## Discussion
 
 This can be `nil` or `unspecifiedConfiguration`, which is essentially the same as `nil` but more explicit.
 

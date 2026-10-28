@@ -15,11 +15,11 @@ Creates a new playlist object.
 new Playlist();
 ```
 
-#### Return Value
+## Return Value
 
 An empty playlist array.
 
-#### Discussion
+## Discussion
 
 After creating a new playlist, use the [`push`](./api-1627433-push.md) method to add new media items to the end of the playlist.
 

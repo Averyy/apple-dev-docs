@@ -23,7 +23,7 @@ func setTitle(_ title: String?, forSegmentAt segment: Int)
 - (void) setTitle:(NSString *) title forSegmentAtIndex:(NSUInteger) segment;
 ```
 
-#### Discussion
+## Discussion
 
 A segment can have only an image or a title; it can’t have both. There’s no default title.
 

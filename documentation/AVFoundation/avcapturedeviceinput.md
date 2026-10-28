@@ -28,7 +28,7 @@ class AVCaptureDeviceInput
 
 - [Setting up a capture session](./setting-up-a-capture-session.md)
 
-#### Overview
+## Overview
 
 This class is a concrete subclass of [`AVCaptureInput`](./avcaptureinput.md) that you use to connect a capture device to a capture session.
 

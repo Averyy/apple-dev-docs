@@ -23,7 +23,7 @@ class CFDate
 typedef const struct __CFDate * CFDateRef;
 ```
 
-#### Overview
+## Overview
 
 `CFDate` objects store dates and times that can be compared to other dates and times. `CFDate` objects are immutable—there is no mutable counterpart for this opaque type.
 

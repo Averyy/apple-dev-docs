@@ -15,7 +15,7 @@ The loaded model, if any.
 var model: ResolvedModel3D? { get }
 ```
 
-#### Discussion
+## Discussion
 
 If this value isn’t `nil`, the model load operation has finished, and you can use the model to update the view. You can use the model directly, or you can modify it in some way. For example, you can add a `ResolvedModel3D/resizable()` modifier to make the model resizable.
 

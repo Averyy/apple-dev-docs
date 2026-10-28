@@ -21,7 +21,7 @@ A type that specifies the format for the second fraction in a date format style.
 struct SecondFraction
 ```
 
-#### Overview
+## Overview
 
 The type [`Date.FormatStyle.Symbol.SecondFraction`](./secondfraction.md) includes static factory methods that create custom [`Date.FormatStyle.Symbol.SecondFraction`](./secondfraction.md) objects:
 

@@ -20,7 +20,7 @@ A notification that a document unlocks after a [`unlock(withPassword:)`](./pdfdo
 extern NSNotificationName const PDFDocumentDidUnlockNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the `PDFDocument` object itself.
 

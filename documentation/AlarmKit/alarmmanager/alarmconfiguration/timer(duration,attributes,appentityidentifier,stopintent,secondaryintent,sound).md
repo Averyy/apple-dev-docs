@@ -19,7 +19,7 @@ static func timer(duration: TimeInterval, attributes: AlarmAttributes<Metadata>,
 
 Available when `Metadata` conforms to `AlarmMetadata`.
 
-#### Discussion
+## Discussion
 
 The timer starts immediately, runs for `duration` seconds, and then alerts.  If you provide a secondary button with a behavior that indicates that the timer can repeat, the alert will have a repeat button.
 

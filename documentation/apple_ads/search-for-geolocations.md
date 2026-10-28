@@ -11,13 +11,13 @@ Fetches a list of geolocations for targeting.
 
 > **Deprecated**: Apple Ads Campaign Management API is deprecated. Instead, use the [Apple Ads Platform API](../apple-ads-platform-api/apple-ads-platform-api.md).
 
-#### Discussion
+## Discussion
 
 Use this endpoint to obtain App Store locations you can use to refine your target audience. Specify the criteria for a geolocation search using the geotargeting criteria [`CountryCriteria`](./countrycriteria.md), [`AdminAreaCriteria`](./adminareacriteria.md), and [`LocalityCriteria`](./localitycriteria.md), and then apply them to ad groups using [`Create an Ad Group`](./create-an-ad-group.md) and [`Update an Ad Group`](./update-an-ad-group.md) endpoints.
 
 ![A graphic depicting the search for geolocations workflow. First, run a get call for geo locations. Next, specify targeting criteria followed by applying the geo targeting in an ad group.](https://developer.apple.com/tutorials/images/com.apple.appleads/media-4465064@2x.png)
 
-##### Payload Example: Search for Geolocations
+### Payload Example: Search for Geolocations
 
 **Request**:
 

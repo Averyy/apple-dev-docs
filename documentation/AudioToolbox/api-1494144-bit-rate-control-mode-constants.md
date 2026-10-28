@@ -5,7 +5,7 @@
 
 Bit rate control modes to be used with `kAudioCodecPropertyBitRateControlMode`.
 
-#### Overview
+## Overview
 
 These modes are applicable only to encoders that can produce variable packet sizes, such as AAC.
 

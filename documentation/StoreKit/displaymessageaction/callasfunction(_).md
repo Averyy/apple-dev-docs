@@ -19,7 +19,7 @@ Tells StoreKit to display the App Store message, if appropriate.
 func callAsFunction(_ message: Message) throws
 ```
 
-#### Discussion
+## Discussion
 
 Don’t call this method directly. SwiftUI calls it when you call the [`DisplayMessageAction`](../displaymessageaction.md) structure using `message` as an argument.
 

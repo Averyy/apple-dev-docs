@@ -22,7 +22,7 @@ struct ManagedAppConfigurationDecodingErrorCode
 
 - [Specifying and decoding a configuration](./specifying-and-decoding-a-configuration.md)
 
-#### Overview
+## Overview
 
 The system reserves some codes for its use only. Reserved codes are equal to or greater than `firstReserved`. Codes less than the `firstReserved` value are app-specific. For more information, see [`code`](./managedappconfigurationdecodingerror/code.md).
 

@@ -20,7 +20,7 @@ The level of reverberated signal that an entity emits.
 var reverbLevel: Audio.Decibel { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The reverb level is in relative decibels, in the range  `[-Decibel.infinity, Decibel.zero]`, where `Decibel.zero` is the default.
 

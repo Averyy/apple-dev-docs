@@ -13,7 +13,7 @@
 kAXErrorNotificationUnsupported = -25207
 ```
 
-#### Discussion
+## Discussion
 
 The notification is not supported by the AXUIElementRef.
 

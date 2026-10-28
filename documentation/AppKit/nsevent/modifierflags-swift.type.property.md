@@ -19,11 +19,11 @@ class var modifierFlags: NSEvent.ModifierFlags { get }
 @property (class, readonly) NSEventModifierFlags modifierFlags;
 ```
 
-#### Return Value
+## Return Value
 
 A mask of the current modifiers using the values in `Modifier Flags`.
 
-#### Discussion
+## Discussion
 
 This returns the state of devices combined with synthesized events at the moment, independent of which events have been delivered via the event stream.
 

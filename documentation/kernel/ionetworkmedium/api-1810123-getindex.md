@@ -9,7 +9,7 @@
 virtual UInt32 getIndex() const;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the assigned medium index.
 

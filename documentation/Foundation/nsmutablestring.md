@@ -25,7 +25,7 @@ class NSMutableString
 @interface NSMutableString : NSString
 ```
 
-#### Overview
+## Overview
 
 In Swift, you can use this type instead of a [`String`](../Swift/string.md) in cases that require reference semantics.
 

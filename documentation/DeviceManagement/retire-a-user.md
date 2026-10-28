@@ -11,7 +11,7 @@ Retire a user account.
 
 > **Deprecated**: This legacy API is currently in maintenance mode. Apple won’t add any new functionality to it.
 
-#### Discussion
+## Discussion
 
 This service disassociates a VPP user from its iTunes account and releases the revocable licenses associated with the VPP user. The revoked licenses can then be assigned to other users in the organization.
 
@@ -19,7 +19,7 @@ Currently, ebook licenses are irrevocable.
 
 A retired VPP user can be reregistered, in the same organization, using the [`Register a User`](./register-a-user.md) endpoint.
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

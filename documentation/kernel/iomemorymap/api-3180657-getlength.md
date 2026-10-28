@@ -16,11 +16,11 @@ Returns the length of the memory block in bytes.
 uint64_t GetLength(void);
 ```
 
-#### Return Value
+## Return Value
 
 The number of bytes in the memory block.
 
-#### Discussion
+## Discussion
 
 The length represents the number of bytes that are accessible to the current process.
 

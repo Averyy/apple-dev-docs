@@ -23,11 +23,11 @@ func alignmentRect(forFrame frame: CGRect) -> CGRect
 - (CGRect) alignmentRectForFrame:(CGRect) frame;
 ```
 
-#### Return Value
+## Return Value
 
 The alignment rectangle for the specified frame.
 
-#### Discussion
+## Discussion
 
 The constraint-based layout system uses alignment rectangles to align views, rather than their frame. This allows custom views to be aligned based on the location of their content while still having a frame that encompasses any ornamentation they need to draw around their content, such as shadows or reflections.
 

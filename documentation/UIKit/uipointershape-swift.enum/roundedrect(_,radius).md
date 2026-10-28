@@ -18,7 +18,7 @@ The pointer morphs into a rounded rectangle using the provided corner radius.
 case roundedRect(CGRect, radius: CGFloat = UIPointerShape.defaultCornerRadius)
 ```
 
-#### Discussion
+## Discussion
 
 If you don’t specify a radius, the rounded rectangle uses the `defaultCornerRadius`.
 

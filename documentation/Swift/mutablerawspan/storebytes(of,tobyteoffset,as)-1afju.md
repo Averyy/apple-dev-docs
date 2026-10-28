@@ -21,7 +21,7 @@ Stores the given value’s bytes to the specified offset into the span’s memor
 mutating func storeBytes<T>(of value: T, toByteOffset offset: Int, as type: T.Type) where T : BitwiseCopyable, T : ConvertibleToBytes
 ```
 
-#### Discussion
+## Discussion
 
 The range of bytes required to store a value of type `T` starting at byte offset `offset` must be completely within the span.
 

@@ -14,7 +14,7 @@
 kREPORT_LUNS_ADDRESS_METHOD_PERIPHERAL_DEVICE = 0
 ```
 
-#### Discussion
+## Discussion
 
 Peripheral Device Addressing Method.
 

@@ -20,11 +20,11 @@ Opens a stage using the file at a URL as its root layer.
 static func open(_ url: URL, loadingPayloads: USDStage.InitialLoadRule = .all) throws -> USDStage
 ```
 
-#### Return Value
+## Return Value
 
 A new stage rooted at the layer loaded from `url`.
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if the URL does not refer to a readable file.
 

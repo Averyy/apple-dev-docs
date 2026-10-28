@@ -19,7 +19,7 @@ Returns a web extension initialized with a specified app extension bundle.
 + (void) extensionWithAppExtensionBundle:(NSBundle *) appExtensionBundle completionHandler:(void (^)(WKWebExtension *extension, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The app extension bundle must contain a `manifest.json` file in its resources directory. If the manifest is invalid or missing, or the bundle is otherwise improperly configured, an error will be returned.
 

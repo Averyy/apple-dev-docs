@@ -19,7 +19,7 @@ An object that represents the results of analyzing an image, and provides the in
 final class ImageAnalysis
 ```
 
-#### Overview
+## Overview
 
 An `ImageAnalysis` object represents the results of an [`ImageAnalyzer`](./imageanalyzer.md) object finding items in an image that people can interact with. To create an `ImageAnalysis` object, use the `ImageAnalyzer` class’s [`analyze(_:configuration:)`](./imageanalyzer/analyze%28_,configuration%29.md) method variety, passing the image and an [`ImageAnalyzer.Configuration`](./imageanalyzer/configuration.md) object that specifies the items you want to find. Then pass the image analysis to either an [`ImageAnalysisInteraction`](./imageanalysisinteraction.md) object for iOS or an [`ImageAnalysisOverlayView`](./imageanalysisoverlayview.md) object for macOS to provide the Live Text interface.
 

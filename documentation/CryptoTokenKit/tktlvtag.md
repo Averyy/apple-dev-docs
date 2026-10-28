@@ -25,7 +25,7 @@ typealias TKTLVTag = UInt64
 typedef UInt64 TKTLVTag;
 ```
 
-#### Discussion
+## Discussion
 
 Although some encodings tags do not have any size restrictions, the CryptoTokenKit framework supports tag lengths only up to 64-bits.
 

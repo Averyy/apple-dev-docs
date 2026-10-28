@@ -25,7 +25,7 @@ func catlas_zaxpby(_ N: __LAPACK_int, _ ALPHA: OpaquePointer, _ X: OpaquePointer
 void catlas_zaxpby(const __LAPACK_int N, const __LAPACK_double_complex *ALPHA, const __LAPACK_double_complex *X, const __LAPACK_int INCX, const __LAPACK_double_complex *BETA, __LAPACK_double_complex *Y, const __LAPACK_int INCY);
 ```
 
-#### Discussion
+## Discussion
 
 On return, the contents of vector `Y` are replaced with the result.
 

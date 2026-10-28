@@ -5,7 +5,7 @@
 
 Simulate joint physics that connect virtual objects.
 
-#### Overview
+## Overview
 
 In a 3D environment, you can animate various attributes of an [`Entity`](./entity.md) such as its location, rotation, and size from one value to another. This is ideal for simple pre-defined motion, but does not allow for interaction with external forces, such as collisions with other objects, or gestures. With a [`PhysicsJoint`](./physicsjoint.md) you can connect entities with pins, and RealityKit keeps your entities bound by constraints that you define.
 

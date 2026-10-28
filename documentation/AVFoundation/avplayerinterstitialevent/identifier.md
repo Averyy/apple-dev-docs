@@ -25,7 +25,7 @@ var identifier: String { get set }
 @property (nonatomic, readonly) NSString * identifier;
 ```
 
-#### Discussion
+## Discussion
 
 Setting an event on the interstitial event controller replaces any existing event with the same identifier.
 

@@ -25,7 +25,7 @@ var screenPoint: CGPoint { get }
 @property (readonly) CGPoint screenPoint;
 ```
 
-#### Discussion
+## Discussion
 
 Note that this value is dependent on the current frame of the referenced element. If the element’s frame changes, so does the value returned by this property. If the referenced element doesn’t exist when you call this property, the system fails the current test. Check the referenced element’s [`exists`](../xcuielement/exists.md) property to veryify whether the element is present.
 

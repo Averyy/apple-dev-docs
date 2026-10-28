@@ -5,7 +5,7 @@
 
 Perform common linear algebra operations with Apple’s implementation of the Basic Linear Algebra Subprograms (BLAS).
 
-#### Overview
+## Overview
 
 The vecLib framework contains nine C header files (not counting `vecLib.h`, which merely includes the others).
 

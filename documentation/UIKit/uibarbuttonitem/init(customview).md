@@ -23,11 +23,11 @@ convenience init(customView: UIView)
 - (instancetype) initWithCustomView:(UIView *) customView;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized [`UIBarButtonItem`](../uibarbuttonitem.md).
 
-#### Discussion
+## Discussion
 
 The bar button item created by this method doesn’t call the action method of its target in response to user interactions. Instead, the bar button item expects the specified custom view to handle any user interactions and provide an appropriate response.
 

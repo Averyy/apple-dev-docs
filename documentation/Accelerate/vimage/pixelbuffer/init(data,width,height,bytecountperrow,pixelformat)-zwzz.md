@@ -23,7 +23,7 @@ init(data: UnsafeMutableRawPointer, width: Int, height: Int, byteCountPerRow: In
 
 Available when `Format` conforms to `SinglePlanePixelFormat`.
 
-#### Discussion
+## Discussion
 
 You can use this function to simplify interoperation with other libraries and frameworks. For example, the following code shows a function that permutes the channels of a [`CGImage`](../../../CoreGraphics/cgimage.md) instance. The function creates a pixel buffer that uses the storage a [`CGDataProvider`](../../../CoreGraphics/cgdataprovider.md) instance’s [`data`](../../../CoreGraphics/cgdataprovider/data.md) property provides. The [`data`](../../../CoreGraphics/cgdataprovider/data.md) property is a copy of the image data, therefore, the code returns a new [`CGImage`](../../../CoreGraphics/cgimage.md) instance that it generates from the permuted pixel buffer.
 

@@ -25,11 +25,11 @@ func contents() -> UnsafeMutableRawPointer
 - (void *) contents;
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to the shared copy of the buffer data, or `NULL` for buffers allocated with a private resource storage mode ([`MTLStorageMode.private`](../mtlstoragemode/private.md)).
 
-#### Discussion
+## Discussion
 
 Private resources aren’t CPU-accessible.
 

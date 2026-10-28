@@ -20,11 +20,11 @@ Finds the first entity hit when projecting a ray from a starting point.
 func entity(at point: CGPoint, in space: some CoordinateSpaceProtocol) -> Entity?
 ```
 
-#### Return Value
+## Return Value
 
 The entity at `point`. Returns `nil` if no entity was found.
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**: RealityKit performs hit tests (ray-casts) against collision shapes. Entities without a valid [`CollisionComponent`](../collisioncomponent.md) are ignored by hit tests.
 

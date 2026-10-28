@@ -15,7 +15,7 @@ The rating for a video item.
 attribute int contentRatingRanking;
 ```
 
-#### Discussion
+## Discussion
 
 The rating is a value from `0`-`1000`. This value corresponds to a specific rating used by different countries. For example, a rating value can represent a PG-13 rating in the United States and an MA15+ in Australia.
 

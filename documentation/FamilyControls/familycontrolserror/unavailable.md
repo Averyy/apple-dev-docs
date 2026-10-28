@@ -17,7 +17,7 @@ The system failed to set up the Family Control framework.
 case unavailable
 ```
 
-#### Discussion
+## Discussion
 
 To access data, the user must be in a region that supports data access.
 

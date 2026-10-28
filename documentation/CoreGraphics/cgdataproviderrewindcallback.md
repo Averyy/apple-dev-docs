@@ -25,7 +25,7 @@ typealias CGDataProviderRewindCallback = (UnsafeMutableRawPointer?) -> Void
 typedef void (*)(void *) CGDataProviderRewindCallback;
 ```
 
-#### Discussion
+## Discussion
 
 When Core Graphics needs to read from the beginning of the provider’s data stream, your function is called.
 

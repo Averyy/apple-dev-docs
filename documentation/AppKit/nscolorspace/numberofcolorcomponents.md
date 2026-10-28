@@ -19,7 +19,7 @@ var numberOfColorComponents: Int { get }
 @property (readonly) NSInteger numberOfColorComponents;
 ```
 
-#### Discussion
+## Discussion
 
 This value is `0` if the color space isn’t based on `float` components.
 

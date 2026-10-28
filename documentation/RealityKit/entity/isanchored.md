@@ -21,7 +21,7 @@ A Boolean that indicates whether the entity is anchored.
 @preconcurrency var isAnchored: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is `true` if the entity is anchored in a scene. An entity that isn’t anchored becomes inactive ([`isActive`](./isactive.md) returns `false`), meaning RealityKit doesn’t render or simulate it.
 

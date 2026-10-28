@@ -21,7 +21,7 @@ Generates a column by subtracting each element in a column type from the corresp
 func - <L, R>(lhs: L, rhs: R) -> Column<R.Element> where L : OptionalColumnProtocol, R : ColumnProtocol, L.WrappedElement : AdditiveArithmetic, L.WrappedElement == R.Element
 ```
 
-#### Return Value
+## Return Value
 
 A new column with the same type as the right column.
 

@@ -28,11 +28,11 @@ convenience init(for asset: PHAsset)
 
 - [Requesting Changes to the Photo Library](../../PhotoKit/requesting-changes-to-the-photo-library.md)
 
-#### Return Value
+## Return Value
 
 An asset change request.
 
-#### Discussion
+## Discussion
 
 Before editing an asset, use its [`canPerform(_:)`](../phasset/canperform%28_%29.md) method to see if the asset allows editing.
 

@@ -25,7 +25,7 @@ static var traitComposite: CTFontSymbolicTraits { get }
 kCTFontTraitComposite
 ```
 
-#### Discussion
+## Discussion
 
 For CFR, a cascade list is expected per font.
 

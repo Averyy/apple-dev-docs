@@ -25,7 +25,7 @@ var particleChargeVariation: CGFloat { get set }
 @property (nonatomic) CGFloat particleChargeVariation;
 ```
 
-#### Discussion
+## Discussion
 
 Setting a nonzero value for this property randomizes the effect of the [`particleCharge`](./particlecharge.md) property. SceneKit randomly adjusts the charge of each particle by up to half the [`particleChargeVariation`](./particlechargevariation.md) value. For example, if the [`particleCharge`](./particlecharge.md) value is `1.0` coulombs and the [`particleChargeVariation`](./particlechargevariation.md) value is `0.5` coulombs, each particle uses a random charge value between `0.75` and `1.25` coulombs for physics simulation.
 

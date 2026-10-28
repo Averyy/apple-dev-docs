@@ -21,7 +21,7 @@ Performs the transformation on a sequence of input sequences.
 func applied<S>(to input: S, eventHandler: EventHandler? = nil) async throws -> [Self.OutputSequence] where S : Sequence, Self.Input == S.Element.Feature, S.Element : TemporalSequence
 ```
 
-#### Return Value
+## Return Value
 
 The outputs produced by applying the transformer to the inputs.
 

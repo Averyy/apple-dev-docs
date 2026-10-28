@@ -15,11 +15,11 @@ A single row in a Brands keyword report response.
 object BrandsKeywordReportRow
 ```
 
-#### Discussion
+## Discussion
 
 The `BrandsKeywordReportRow` object contains keyword metadata, performance metrics, and optional keyword insights for a single reporting row.
 
-##### Example
+### Example
 
 ```json
 {

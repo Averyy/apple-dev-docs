@@ -21,11 +21,11 @@ Calls the given closure with a decompression random access input stream.
 static func withRandomAccessDecompressionStream<E>(readingFrom compressedStream: ArchiveByteStream, allocationLimit: Int = Int.max, flags: ArchiveFlags = [], threadCount: Int = 0, _ body: (ArchiveByteStream) throws -> E) throws -> E
 ```
 
-#### Return Value
+## Return Value
 
 The result of the closure.
 
-#### Discussion
+## Discussion
 
 This function opens a stream created by [`randomAccessDecompressionStream(readingFrom:allocationLimit:flags:threadCount:)`](./randomaccessdecompressionstream%28readingfrom,allocationlimit,flags,threadcount%29.md), calls the specified closure, and closes the stream.
 

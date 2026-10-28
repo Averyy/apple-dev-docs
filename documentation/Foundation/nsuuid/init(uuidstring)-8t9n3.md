@@ -25,7 +25,7 @@ convenience init?(uuidString string: String)
 - (instancetype) initWithUUIDString:(NSString *) string;
 ```
 
-#### Return Value
+## Return Value
 
 A new UUID object. Returns `nil` for invalid strings.
 

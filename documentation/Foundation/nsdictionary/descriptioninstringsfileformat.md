@@ -25,7 +25,7 @@ var descriptionInStringsFileFormat: String { get }
 @property (copy, readonly) NSString * descriptionInStringsFileFormat;
 ```
 
-#### Discussion
+## Discussion
 
 The order in which the entries are listed is undefined.
 

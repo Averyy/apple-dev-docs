@@ -25,7 +25,7 @@ var ascending: Bool { get }
 @property (readonly) BOOL ascending;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the receiver specifies sorting in ascending order, otherwise [`false`](../../Swift/false.md).
 

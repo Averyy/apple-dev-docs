@@ -16,7 +16,7 @@ Sets the third UV coordinate set for the rendered output mesh.
 void output::setUV3(float4 value)
 ```
 
-#### Discussion
+## Discussion
 
 This function assigns a custom UV coordinate to the third texture coordinate channel of the output mesh. If the mesh doesn’t already have a UV3 channel, it will be created. This enables multi-texturing and advanced shader effects.
 

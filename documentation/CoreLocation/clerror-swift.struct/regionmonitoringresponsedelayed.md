@@ -21,7 +21,7 @@ A constant that indicates Core Location will deliver events but they may be dela
 static var regionMonitoringResponseDelayed: CLError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 The user information dictionary might contain an alternate region that you can monitor instead. Use the [`alternateRegion`](./alternateregion.md) property to retrieve the [`CLRegion`](../clregion.md) object.
 

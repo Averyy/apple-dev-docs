@@ -28,7 +28,7 @@ var timebase: CMTimebase { get }
 @property (retain, readonly) CMTimebaseRef timebase;
 ```
 
-#### Discussion
+## Discussion
 
 The timebase governs how time stamps are interpreted by the renderer.
 

@@ -23,7 +23,7 @@ var identifier: String? { get }
 @property (nonatomic, copy, readonly, nullable) NSString * identifier;
 ```
 
-#### Discussion
+## Discussion
 
 When generating a notification that includes these custom actions, you must use this string to initialize the notification. For local notifications, assign the string to the [`category`](../uilocalnotification/category.md) property of the [`UILocalNotification`](../uilocalnotification.md) object. For push notifications, use the string as the value of the `category` key in the push notification’s payload.
 

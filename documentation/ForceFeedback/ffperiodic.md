@@ -20,7 +20,7 @@ struct FFPERIODIC
 struct FFPERIODIC;
 ```
 
-#### Overview
+## Overview
 
 Used with the SINE, SQUARE, TRIANGLE, SAWTOOTHUP, and SAWTOOTHDOWN effects.
 

@@ -9,7 +9,7 @@
 bool autoDisable;
 ```
 
-#### Overview
+## Overview
 
 Do we need to automatically disable the interrupt source when we take an interrupt, i.e. we are level triggered.
 

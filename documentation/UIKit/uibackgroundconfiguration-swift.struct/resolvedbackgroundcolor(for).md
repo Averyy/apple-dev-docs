@@ -19,7 +19,7 @@ Generates the resolved background color for the specified tint color, using the 
 func resolvedBackgroundColor(for tintColor: UIColor) -> UIColor
 ```
 
-#### Discussion
+## Discussion
 
 The resulting color depends on [`backgroundColor`](./backgroundcolor.md) and [`backgroundColorTransformer`](./backgroundcolortransformer.md).
 

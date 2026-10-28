@@ -28,7 +28,7 @@ func writingToolsCoordinator(_ writingToolsCoordinator: NSWritingToolsCoordinato
 
 - [Adding Writing Tools support to a custom AppKit view](../../adding-writing-tools-support-to-a-custom-nsview.md)
 
-#### Discussion
+## Discussion
 
 Use this method to update your view’s text storage with the proposed changes. Writing Tools can call this method multiple times during the course of a session to notify you of changes to different ranges of text. Incorporate the changes into your view’s text storage and notify your layout manager so it can refresh the view.
 

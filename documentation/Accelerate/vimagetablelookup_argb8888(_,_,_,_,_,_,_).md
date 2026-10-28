@@ -25,11 +25,11 @@ func vImageTableLookUp_ARGB8888(_ src: UnsafePointer<vImage_Buffer>, _ dest: Uns
 vImage_Error vImageTableLookUp_ARGB8888(const vImage_Buffer *src, const vImage_Buffer *dest, const Pixel_8 alphaTable[256], const Pixel_8 redTable[256], const Pixel_8 greenTable[256], const Pixel_8 blueTable[256], vImage_Flags flags);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
-#### Discussion
+## Discussion
 
 ## Parameters
 

@@ -21,7 +21,7 @@ struct RenderOptions
 
 - [Reducing GPU Utilization in Your RealityKit App](../reducing-gpu-utilization-in-your-realitykit-app.md)
 
-#### Overview
+## Overview
 
 RealityKit applies effects to the render make the AR experience more immersive. You can selectively disable any of these effects by adding one or more options from the [`ARView.RenderOptions`](./renderoptions-swift.struct.md) set to the view’s [`renderOptions`](./renderoptions-swift.property.md) property.
 

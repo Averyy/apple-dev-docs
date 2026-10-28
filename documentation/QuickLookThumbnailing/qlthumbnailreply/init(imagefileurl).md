@@ -23,11 +23,11 @@ convenience init(imageFileURL fileURL: URL)
 + (instancetype) replyWithImageFileURL:(NSURL *) fileURL;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized reply object for a requested thumbnail.
 
-#### Discussion
+## Discussion
 
 The image is scaled down to fit the provided size by the [`QLFileThumbnailRequest`](../qlfilethumbnailrequest.md) if necessary.
 

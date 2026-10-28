@@ -23,7 +23,7 @@ func clearKeepAliveTimeout()
 - (void) clearKeepAliveTimeout;
 ```
 
-#### Discussion
+## Discussion
 
 If your VoIP app no longer needs to be woken up at periodic intervals, you can use this method to remove any previously installed handler.
 

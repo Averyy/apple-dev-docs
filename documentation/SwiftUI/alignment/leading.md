@@ -21,7 +21,7 @@ A guide that marks the leading edge of the view.
 static let leading: Alignment
 ```
 
-#### Discussion
+## Discussion
 
 This alignment combines the [`leading`](../horizontalalignment/leading.md) horizontal guide and the [`center`](../verticalalignment/center.md) vertical guide:
 

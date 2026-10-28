@@ -22,7 +22,7 @@ var peerIndex: UInt32 { get }
 @property (readonly) uint32_t peerIndex;
 ```
 
-#### Discussion
+## Discussion
 
 If the GPU is part of a peer group (see [`peerGroupID`](./peergroupid.md) or [`peerCount`](./peercount.md)) the peer index is the GPU’s unique value within the group in the range `[0, `[`peerCount`](./peercount.md)`)`.
 

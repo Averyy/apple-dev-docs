@@ -15,11 +15,11 @@ Installs a flipper callback for the specified data type.
 OSStatus CoreEndianInstallFlipper(OSType dataDomain, OSType dataType, CoreEndianFlipProc proc, void *refcon);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. Returns `noErr` ifyour flipper callback is installed.
 
-#### Discussion
+## Discussion
 
 You should install the callback by calling the function `CoreEndianInstallFlipper` when yourapplication calls its initialization routine or when you open yourresource file. 
 

@@ -19,7 +19,7 @@ var titleWidth: CGFloat { get set }
 @property CGFloat titleWidth;
 ```
 
-#### Discussion
+## Discussion
 
 The width of the title field, measured in points in the user coordinate space. You usually do not need to set this property. AppKit automatically sets the title width whenever the title changes. If the automatic width doesn’t suit your needs, though, you can use this property to set the width explicitly.
 

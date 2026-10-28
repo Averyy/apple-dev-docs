@@ -19,7 +19,7 @@ A person entered a hard pause.
 case hardPause
 ```
 
-#### Discussion
+## Discussion
 
 A semicolon (;) indicates a hard pause. When a person enters a hard pause, the system waits for further user interaction before it dials additional digits.
 

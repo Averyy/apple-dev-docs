@@ -25,7 +25,7 @@ func cblas_dgemm(_ ORDER: CBLAS_ORDER, _ TRANSA: CBLAS_TRANSPOSE, _ TRANSB: CBLA
 void cblas_dgemm(const enum CBLAS_ORDER ORDER, const enum CBLAS_TRANSPOSE TRANSA, const enum CBLAS_TRANSPOSE TRANSB, const __LAPACK_int M, const __LAPACK_int N, const __LAPACK_int K, const double ALPHA, const double *A, const __LAPACK_int LDA, const double *B, const __LAPACK_int LDB, const double BETA, double *C, const __LAPACK_int LDC);
 ```
 
-#### Discussion
+## Discussion
 
 This function multiplies `A * B` and multiplies the resulting matrix by `alpha`. It then multiplies matrix `C` by `beta`. It stores the sum of these two products in matrix `C`.
 

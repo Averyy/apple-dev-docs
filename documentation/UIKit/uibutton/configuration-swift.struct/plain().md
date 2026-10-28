@@ -19,7 +19,7 @@ Creates a configuration for a button with a transparent background.
 static func plain() -> UIButton.Configuration
 ```
 
-#### Return Value
+## Return Value
 
 A new configuration object.
 

@@ -20,7 +20,7 @@ func update(with collaborationData: ARSession.CollaborationData)
 - (void) updateWithCollaborationData:(ARCollaborationData *) collaborationData;
 ```
 
-#### Discussion
+## Discussion
 
 Call this function to update a session when the app receives collaboration data from other users that are participating in a multiuser AR experience. Your app receives this data when multiple users scan different parts of an environment and share that information with your app over the network. For more information, see [`isCollaborationEnabled`](../arworldtrackingconfiguration/iscollaborationenabled.md).
 

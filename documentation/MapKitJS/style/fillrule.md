@@ -16,7 +16,7 @@ get fillRule(): "evenodd" | "nonzero";
 set fillRule(fillRule: "evenodd" | "nonzero");
 ```
 
-#### Discussion
+## Discussion
 
 This can be either the nonzero winding rule (`nonzero`), or the even-odd rule (`evenodd`). The default fill rule is `nonzero`.
 

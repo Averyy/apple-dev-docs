@@ -21,7 +21,7 @@ An error that describes the cause of a failed fetch operation.
 @property (nonatomic, copy, readonly, nullable) NSError * error;
 ```
 
-#### Discussion
+## Discussion
 
 A `nil` value indicates a successful fetch.
 

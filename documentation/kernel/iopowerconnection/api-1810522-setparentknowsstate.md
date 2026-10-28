@@ -12,7 +12,7 @@ void setParentKnowsState (
  bool );
 ```
 
-#### Overview
+## Overview
 
 Called by the parent when the object is created and called by the child when it discovers that the parent now knows its state.
 

@@ -24,11 +24,11 @@ mutating func remove(_ member: Self.Element) -> Self.Element?
 
 Available when `Self` is `Self.Element`.
 
-#### Return Value
+## Return Value
 
 The intersection of `[member]` and the set, if the intersection was nonempty; otherwise, `nil`.
 
-#### Discussion
+## Discussion
 
 In the following example, the `.priority` shipping option is removed from the `options` option set. Attempting to remove the same shipping option a second time results in `nil`, because `options` no longer contains `.priority` as a member.
 

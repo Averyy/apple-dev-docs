@@ -5,7 +5,7 @@
 
 Apply behaviors and physical effects to the entities in a RealityKit scene.
 
-#### Overview
+## Overview
 
 In the Entity-Component-System (ECS) paradigm, the behavior of entities is often implemented using *systems*. A [`System`](./system.md) has an [`update(context:)`](./system/update%28context%29.md) method that fires every frame and applies its logic to all entities that meet certain criteria. For example, a game might have a system that controls applying damage to entities from different sources. The same system might make changes to the player’s character, non-player characters, and even inanimate objects that can be damaged or broken. Systems typically work together with one or more components. The system’s component both identifies which entities the system effects and also stores any per-entity data the system needs to work. A damage system, for example, might work with a damage component that stores health or hit points. To make an entity damageable, all you have to do is add the damage component to it, which can be done at runtime. The damage system queries for entities that contain the damage component and applies the appropriate health or hit point change to each of them.
 

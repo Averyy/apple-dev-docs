@@ -15,7 +15,7 @@ A regressor based on a collection of decision trees combined with gradient boost
 case boostedTree(MLBoostedTreeRegressor)
 ```
 
-#### Discussion
+## Discussion
 
 Don’t create an [`MLRegressor`](../mlregressor.md) using one of its enumeration cases. Use the regressor’s initializer instead.
 

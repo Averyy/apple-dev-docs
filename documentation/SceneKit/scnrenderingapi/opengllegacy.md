@@ -25,7 +25,7 @@ case openGLLegacy
 SCNRenderingAPIOpenGLLegacy
 ```
 
-#### Discussion
+## Discussion
 
 This option is available on all macOS systems supporting SceneKit. If you request the Metal rendering API for an [`SCNView`](../scnview.md) object on a system that does not support Metal, SceneKit falls back to the Legacy OpenGL API.
 

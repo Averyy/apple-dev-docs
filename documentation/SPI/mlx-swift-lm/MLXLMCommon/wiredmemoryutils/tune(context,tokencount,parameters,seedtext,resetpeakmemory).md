@@ -17,7 +17,7 @@ Measure weights, KV cache, and prefill workspace for the given model context.
 static func tune(context: ModelContext, tokenCount: Int, parameters: GenerateParameters, seedText: String = " hello", resetPeakMemory: Bool = true) async throws -> WiredMemoryMeasurement
 ```
 
-#### Discussion
+## Discussion
 
 This is a diagnostic helper intended to **measure** real memory usage rather than assume it. The returned values are best used to construct a ticket budget or to compare against manual estimates.
 

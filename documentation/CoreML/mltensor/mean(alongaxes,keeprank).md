@@ -27,11 +27,11 @@ func mean(alongAxes axes: Int..., keepRank: Bool = false) -> MLTensor
 func mean(alongAxes axes: [Int], keepRank: Bool = false) -> MLTensor
 ```
 
-#### Return Value
+## Return Value
 
 The reduced tensor.
 
-#### Discussion
+## Discussion
 
 For example:
 

@@ -25,7 +25,7 @@ var isImmersive: Bool { get }
 @property (nonatomic, readonly, getter=isImmersive) BOOL immersive;
 ```
 
-#### Discussion
+## Discussion
 
 If a variant audio redition is immersive it’s eligible for rendering to headphones or speakers.
 

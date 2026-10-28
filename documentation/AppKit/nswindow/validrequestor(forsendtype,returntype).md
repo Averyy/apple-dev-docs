@@ -19,11 +19,11 @@ func validRequestor(forSendType sendType: NSPasteboard.PasteboardType?, returnTy
 - (id) validRequestorForSendType:(NSPasteboardType) sendType returnType:(NSPasteboardType) returnType;
 ```
 
-#### Return Value
+## Return Value
 
 The object that responds to the services request; `nil` when none is found.
 
-#### Discussion
+## Discussion
 
 Messages to perform this method are initiated by the Services menu. It’s part of the mechanism that passes [`validRequestor(forSendType:returnType:)`](./validrequestor%28forsendtype,returntype%29.md) messages up the responder chain.
 

@@ -31,7 +31,7 @@ class SKShapeNode
 - [Creating a Shape Node from an Array of Points](./creating-a-shape-node-from-an-array-of-points.md)
 - [Getting Started with Shape Nodes](./getting-started-with-shape-nodes.md)
 
-#### Overview
+## Overview
 
 `SKShapeNode` allows you to create onscreen graphical elements from mathematical points, lines, and curves. The advantage this has over rasterized graphics, such as those displayed by textures, is that shapes are rasterized dynamically at runtime to produce crisp detail and smoother edges.
 

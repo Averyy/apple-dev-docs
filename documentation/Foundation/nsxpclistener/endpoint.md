@@ -25,7 +25,7 @@ var endpoint: NSXPCListenerEndpoint { get }
 @property (retain, readonly) NSXPCListenerEndpoint * endpoint;
 ```
 
-#### Discussion
+## Discussion
 
 The receiver of the endpoint can use this object to create a new connection to this [`NSXPCListener`](../nsxpclistener.md) object. The resulting `NSXPCListenerEndpoint` object uniquely names this listener object across connections.
 

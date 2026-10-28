@@ -24,7 +24,7 @@ convenience init(name: String, semantic: MDLMaterialSemantic, float2 value: vect
 - (instancetype) initWithName:(NSString *) name semantic:(MDLMaterialSemantic) semantic float2:(vector_float2) value;
 ```
 
-#### Return Value
+## Return Value
 
 A new material property object whose [`type`](./type.md) property is [`MDLMaterialPropertyType.float2`](../mdlmaterialpropertytype/float2.md).
 

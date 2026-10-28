@@ -28,7 +28,7 @@ An integer value indicating the desired fan speed position.
 @property (atomic, copy, readonly, nullable) NSNumber * fanSpeedIndex;
 ```
 
-#### Discussion
+## Discussion
 
 The value in this property maps to the manual fan speed control in your vehicle. For example, the value 1 corresponds to the first position of the fan speed knob, the value 2 corresponds to the second position of the fan speed knob, and so on. Use this property to set the fan speed to the specific level requested by the user.
 

@@ -22,11 +22,11 @@ func tokens(in textRange: UITextRange) -> [UISearchToken]
 - (NSArray<UISearchToken *> *) tokensInRange:(UITextRange *) textRange;
 ```
 
-#### Return Value
+## Return Value
 
 The tokens contained within the provided range.
 
-#### Discussion
+## Discussion
 
 Use this method to find out which tokens are included in the user’s current selection. You can provide a range that spans a mixture of tokens and text.
 

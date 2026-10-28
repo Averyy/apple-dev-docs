@@ -23,7 +23,7 @@ var kDNSServiceType_RRSIG: Int { get }
 kDNSServiceType_RRSIG
 ```
 
-#### Discussion
+## Discussion
 
 RRSIG
 

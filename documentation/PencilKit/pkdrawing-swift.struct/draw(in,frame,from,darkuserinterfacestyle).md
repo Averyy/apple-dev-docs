@@ -16,8 +16,8 @@ Draws the drawing in the specified rectangle.
 ## Declaration
 
 ```swift
-nonisolated
-(nonsending) func draw(in cgContext: CGContext, frame: CGRect, from sourceRect: CGRect, darkUserInterfaceStyle: Bool = false) async
+nonisolated(nonsending)
+func draw(in cgContext: CGContext, frame: CGRect, from sourceRect: CGRect, darkUserInterfaceStyle: Bool = false) async
 ```
 
 ## Parameters

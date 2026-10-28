@@ -25,7 +25,7 @@ int32 revocationPercentage
 
 **Minimum**: `0`
 
-#### Discussion
+## Discussion
 
 The revocation percentage value is rounded to three decimal places of precision, and is expressed as an integer, in milliunits. This field is present in the [`JWSTransactionDecodedPayload`](./jwstransactiondecodedpayload.md) for refunded transactions. This field doesn’t appear if the refund is reversed.
 

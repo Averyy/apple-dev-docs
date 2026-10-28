@@ -23,7 +23,7 @@ var preferredContentSizeCategory: UIContentSizeCategory { get }
 @property (nonatomic, readonly) UIContentSizeCategory preferredContentSizeCategory;
 ```
 
-#### Discussion
+## Discussion
 
 Users can request that apps display fonts in a size that is larger or smaller than the normal font size defined by the system. For example, a user with a visual impairment might request a larger default font size to make it easier to read text. Font objects returned by the system automatically scale based on the user’s preference. You can use the value of this property to request a font object of the appropriate size.
 

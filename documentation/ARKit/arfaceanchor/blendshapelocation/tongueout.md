@@ -20,7 +20,7 @@ static let tongueOut: ARFaceAnchor.BlendShapeLocation
 extern ARBlendShapeLocation const ARBlendShapeLocationTongueOut;
 ```
 
-#### Discussion
+## Discussion
 
 A value of `0.0` indicates that the tongue is fully inside the mouth; a value of `1.0` indicates that the tongue is as far out of the mouth as ARKit tracks.
 

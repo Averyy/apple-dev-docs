@@ -25,7 +25,7 @@ init(for aClass: AnyClass)
 + (NSBundle *) bundleForClass:(Class) aClass;
 ```
 
-#### Return Value
+## Return Value
 
 The `NSBundle` object that dynamically loaded `aClass` (a loadable bundle), the `NSBundle` object for the framework in which `aClass` is defined, or the main bundle object if `aClass` was not dynamically loaded or is not defined in a framework. This method creates and returns a new `NSBundle` object if there is no existing bundle associated with `aClass`. Otherwise, the existing instance is returned.
 

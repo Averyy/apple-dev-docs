@@ -24,11 +24,11 @@ func logicalXOR(_ primaryTensor: MPSGraphTensor, _ secondaryTensor: MPSGraphTens
 - (MPSGraphTensor *) logicalXORWithPrimaryTensor:(MPSGraphTensor *) primaryTensor secondaryTensor:(MPSGraphTensor *) secondaryTensor name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid `MPSGraphTensor` object containing the elementwise result of the applied operation.
 
-#### Discussion
+## Discussion
 
 This operation creates a logical XOR operation and returns the result tensor. It supports broadcasting as well.
 

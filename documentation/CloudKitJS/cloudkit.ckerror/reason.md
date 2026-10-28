@@ -15,7 +15,7 @@ A description of the error that occurred.
 readonly attribute String reason;
 ```
 
-#### Discussion
+## Discussion
 
 Possible values are described in [Errors](../errors.md).
 

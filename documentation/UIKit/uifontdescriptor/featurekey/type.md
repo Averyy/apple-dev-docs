@@ -20,7 +20,7 @@ A key for identifying the font feature type.
 static let type: UIFontDescriptor.FeatureKey
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is an [`NSNumber`](../../../Foundation/nsnumber.md) object specifying the font feature type such as ligature, character shape, or other font feature.
 

@@ -23,7 +23,7 @@ func finish()
 - (void) finish;
 ```
 
-#### Discussion
+## Discussion
 
 For audio buffer–based recognition, recognition does not finish until this method is called, so be sure to call it when the audio source is exhausted.
 

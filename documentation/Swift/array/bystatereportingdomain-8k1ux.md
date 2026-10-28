@@ -20,7 +20,7 @@ var byStateReportingDomain: [StateReportingDomain : [MetricReport.StateEntry]] {
 
 Available when `Element` is `MetricReport.StateEntry`.
 
-#### Discussion
+## Discussion
 
 State entries with active StateReporting context are grouped by their domain.
 

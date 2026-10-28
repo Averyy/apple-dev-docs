@@ -24,7 +24,7 @@ var isAnimated: Bool { get }
 @property (nonatomic, readonly, getter=isAnimated) BOOL animated;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`false`](../../Swift/false.md) for custom transitions — transitions where the view controller’s [`modalPresentationStyle`](../uiviewcontroller/modalpresentationstyle.md) property is set to [`UIModalPresentationStyle.custom`](../uimodalpresentationstyle/custom.md) — even when the transition is started by a call to the [`animateTransition(using:)`](../uiviewcontrolleranimatedtransitioning/animatetransition%28using%29.md) method. In nearly all other cases, the value of this property is [`true`](../../Swift/true.md).
 

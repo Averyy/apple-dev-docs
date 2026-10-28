@@ -13,7 +13,7 @@
 typedef struct UASPipeDescriptor UASPipeDescriptor;
 ```
 
-#### Discussion
+## Discussion
 
 Structure used to specify the Mass Storage Specific UAS pipe usage descriptor
 

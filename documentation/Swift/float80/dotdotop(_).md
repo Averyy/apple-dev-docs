@@ -15,7 +15,7 @@ Returns a partial range up to, but not including, its upper bound.
 static func ..< (maximum: Self) -> PartialRangeUpTo<Self>
 ```
 
-#### Discussion
+## Discussion
 
 Use the prefix half-open range operator (prefix `..<`) to create a partial range of any type that conforms to the `Comparable` protocol. This example creates a `PartialRangeUpTo<Double>` instance that includes any value less than `5.0`.
 

@@ -23,11 +23,11 @@ func backgroundVerticalPositionAdjustment(for barMetrics: UIBarMetrics) -> CGFlo
 - (CGFloat) backgroundVerticalPositionAdjustmentForBarMetrics:(UIBarMetrics) barMetrics;
 ```
 
-#### Return Value
+## Return Value
 
 The background vertical position offset for `barMetrics`.
 
-#### Discussion
+## Discussion
 
 This offset is used to adjust the vertical centering of bordered bar buttons within the bar.
 

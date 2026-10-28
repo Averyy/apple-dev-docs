@@ -58,7 +58,7 @@ Asynchronously creates a 2D texture resource from a pixel Metal buffer, or data.
 @preconcurrency convenience init(dimensions: TextureResource.DimensionsCube, format: TextureResource.Format, contents: TextureResource.Contents) throws
 ```
 
-#### Discussion
+## Discussion
 
 RealityKit efficiently creates a 2D texture from raw pixel bytes, with full control over the values and pixel format.
 

@@ -19,7 +19,7 @@ func selectItem(at index: Int)
 - (void) selectItemAtIndex:(NSInteger) index;
 ```
 
-#### Discussion
+## Discussion
 
 Posts an [`selectionDidChangeNotification`](./selectiondidchangenotification.md) to the default notification center if the selection does in fact change. Note that this method does not alter the contents of the combo box’s text field.
 

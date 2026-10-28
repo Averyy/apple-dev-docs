@@ -16,7 +16,7 @@ A metric that measures disk capacity and usage on the device.
 struct TotalDiskSpaceCapacityMetric
 ```
 
-#### Discussion
+## Discussion
 
 This metric corresponds to the [`MetricResult.totalDiskSpaceCapacity(_:)`](./metricresult/totaldiskspacecapacity%28_%29.md) case. It appears only in [`intervalEntries`](./metricreport/intervalentries.md) and is not included in state entries.
 

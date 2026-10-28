@@ -22,7 +22,7 @@ enum NSToolbarSection
 enum UINavigationBarNSToolbarSection : NSInteger;
 ```
 
-#### Discussion
+## Discussion
 
 Not every navigation item property is supported in every toolbar section. For more information, see [Display content in a toolbar on Mac](../uinavigationitem/title.md#Display-content-in-a-toolbar-on-Mac).
 

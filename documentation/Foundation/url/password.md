@@ -23,7 +23,7 @@ The password component of the URL if the URL conforms to RFC 3986; otherwise, ni
 var password: String? { get }
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**:  This function resolves against the base `URL`.
 

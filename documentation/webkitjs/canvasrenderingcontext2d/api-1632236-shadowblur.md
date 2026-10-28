@@ -16,7 +16,7 @@ A floating-point number that controls the degree of Gaussian blur applied to sha
 attribute unrestricted float shadowBlur;
 ```
 
-#### Discussion
+## Discussion
 
 If shadows are enabled, each shadow has a Gaussian blur applied to its alpha value, with a standard deviation of `shadowBlur`. The `shadowBlur` value must be a positive number, and may be zero.
 

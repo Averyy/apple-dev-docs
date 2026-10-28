@@ -22,7 +22,7 @@ class let touchBarTextBoldTemplateName: String
 extern NSImageName const NSImageNameTouchBarTextBoldTemplate;
 ```
 
-#### Discussion
+## Discussion
 
 ![Template image for bold text](https://developer.apple.com/tutorials/images/com.apple.appkit/media-2793532@2x.png)
 

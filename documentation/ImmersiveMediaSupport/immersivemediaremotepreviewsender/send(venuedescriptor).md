@@ -15,7 +15,7 @@ Sends a venue descriptor to all connected receivers.
 func send(venueDescriptor: VenueDescriptor) async throws
 ```
 
-#### Discussion
+## Discussion
 
 - venueDescriptor: The `venueDescriptor` to send to all clients.
 

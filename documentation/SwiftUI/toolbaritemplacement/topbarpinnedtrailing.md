@@ -18,7 +18,7 @@ A placement that pins the item to the trailing edge of the toolbar.
 static let topBarPinnedTrailing: ToolbarItemPlacement
 ```
 
-#### Discussion
+## Discussion
 
 Pinned items only move to the overflow menu when search is active and there isn’t enough room.
 

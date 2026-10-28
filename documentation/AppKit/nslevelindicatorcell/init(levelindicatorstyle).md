@@ -19,7 +19,7 @@ init(levelIndicatorStyle: NSLevelIndicator.Style)
 - (instancetype) initWithLevelIndicatorStyle:(NSLevelIndicatorStyle) levelIndicatorStyle;
 ```
 
-#### Discussion
+## Discussion
 
 The default value and minimum value are `0.0`. The default maximum value is dependent on `levelIndicatorStyle`. For continuous styles, the default maximum value is `100.0`. For discrete styles, the default maximum value is `5.0`.
 

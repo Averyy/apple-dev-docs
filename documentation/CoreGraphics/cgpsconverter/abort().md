@@ -20,7 +20,7 @@ func abort() -> Bool
 extern bool CGPSConverterAbort(CGPSConverterRef converter);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether the converter is currently converting data (`true` if it is).
 

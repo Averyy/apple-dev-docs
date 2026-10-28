@@ -21,11 +21,11 @@ func lineFragmentRect(forProposedRect proposedRect: NSRect, sweepDirection: NSLi
 - (NSRect) lineFragmentRectForProposedRect:(NSRect) proposedRect sweepDirection:(NSLineSweepDirection) sweepDirection movementDirection:(NSLineMovementDirection) movementDirection remainingRect:(NSRectPointer) remainingRect;
 ```
 
-#### Return Value
+## Return Value
 
 The longest rectangle available in the proposed rectangle for displaying text, or `NSZeroRect` if there is none according to the receiver’s region definition.
 
-#### Discussion
+## Discussion
 
 There is no guarantee as to the width of the proposed rectangle or to its location. For example, the proposed rectangle is likely to be much wider than the width of the receiver. The receiver should examine `proposedRect` to see that it intersects its bounding rectangle and should return a modified rectangle based on `sweepDirection` and `movementDirection`, whose possible values are listed in the class description. If `sweepDirection` is `NSLineSweepRight`, for example, the receiver uses this information to trim the right end of `proposedRect` as needed rather than the left end.
 

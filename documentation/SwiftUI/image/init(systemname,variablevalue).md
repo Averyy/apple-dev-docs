@@ -21,7 +21,7 @@ Creates a system symbol image with a variable value.
 init(systemName: String, variableValue: Double?)
 ```
 
-#### Discussion
+## Discussion
 
 This initializer creates an image using a system-provided symbol. The rendered symbol may alter its appearance to represent the value provided in `variableValue`. Use [SF Symbols](https://developer.apple.com/design/resources/#sf-symbols) (version 4.0 or later) to find system symbols that support variable values and their corresponding names.
 

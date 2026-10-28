@@ -15,7 +15,7 @@ Configurations for scenes you use to display navigation content on a CarPlay Ins
 - **Name**: `CPTemplateApplicationInstrumentClusterSceneSessionRoleApplication`
 - **Type**: array of dictionary 
 
-#### Discussion
+## Discussion
 
 After setting [`CPSupportsInstrumentClusterNavigationScene`](../cpsupportsinstrumentclusternavigationscene.md) to `YES`, use this key to specify a scene configuration when displaying navigation content in the CarPlay Instrument Cluster.
 

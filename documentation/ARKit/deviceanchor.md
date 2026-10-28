@@ -16,7 +16,7 @@ The position and orientation of Apple Vision Pro.
 struct DeviceAnchor
 ```
 
-#### Overview
+## Overview
 
 You create a device anchor by starting an [`ARKitSession`](./arkitsession.md) with a [`WorldTrackingProvider`](./worldtrackingprovider.md) and calling its [`queryDeviceAnchor(atTimestamp:)`](./worldtrackingprovider/querydeviceanchor%28attimestamp%29.md) method.
 

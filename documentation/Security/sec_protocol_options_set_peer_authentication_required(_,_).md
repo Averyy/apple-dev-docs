@@ -23,7 +23,7 @@ func sec_protocol_options_set_peer_authentication_required(_ options: sec_protoc
 void sec_protocol_options_set_peer_authentication_required(sec_protocol_options_t options, bool peer_authentication_required);
 ```
 
-#### Discussion
+## Discussion
 
 Enable or disable peer authentication. Clients default to true, whereas servers default to false.
 

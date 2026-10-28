@@ -9,7 +9,7 @@
 bool duringStartup;
 ```
 
-#### Overview
+## Overview
 
 State variable set to true while the driver is starting up and false all other times
 

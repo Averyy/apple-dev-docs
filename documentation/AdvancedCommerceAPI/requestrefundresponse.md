@@ -15,7 +15,7 @@ The response body for a transaction refund request.
 object RequestRefundResponse
 ```
 
-#### Overview
+## Overview
 
 ##Discussion This is the response body for the [`Request Transaction Refund`](./request-transaction-refund.md) endpoint.
 

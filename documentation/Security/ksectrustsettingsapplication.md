@@ -20,7 +20,7 @@ var kSecTrustSettingsApplication: String { get }
 #define kSecTrustSettingsApplication
 ```
 
-#### Discussion
+## Discussion
 
 The value is a [`SecTrustedApplication`](./sectrustedapplication.md) object.
 

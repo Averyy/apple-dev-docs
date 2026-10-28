@@ -14,11 +14,11 @@ virtual IOReturn reportKey(
  const DVDKeyFormatformat );
 ```
 
-#### Return Value
+## Return Value
 
 Returns the status of the data transfer.
 
-#### Overview
+## Overview
 
 Issue an MMC REPORT KEY command.
 

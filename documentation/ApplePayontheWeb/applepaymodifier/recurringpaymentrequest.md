@@ -20,7 +20,7 @@ ApplePayRecurringPaymentRequest recurringPaymentRequest;
 
 - [Apple Pay on the Web Version 14 Release Notes](../apple-pay-on-the-web-version-14-release-notes.md)
 
-#### Discussion
+## Discussion
 
 This property is optional. Use it to indicate that the payment request is for a recurring payment.
 

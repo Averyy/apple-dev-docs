@@ -23,7 +23,7 @@ func initializeElement<Element>(at index: Int, to value: Element) where Base == 
 
 Available when `Base` conforms to `Collection`.
 
-#### Discussion
+## Discussion
 
 The memory underlying the destination element must be uninitialized, or `Element` must be a trivial type. After a call to `initialize(to:)`, the memory underlying this element of the buffer slice is initialized.
 

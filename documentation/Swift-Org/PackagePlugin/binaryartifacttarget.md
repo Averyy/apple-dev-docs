@@ -17,7 +17,7 @@ A target describing an artifact that is distributed as a binary.
 struct BinaryArtifactTarget
 ```
 
-#### Overview
+## Overview
 
 For example, a library or executable.
 

@@ -28,7 +28,7 @@ func enumerateItems(for observer: any NSFileProviderEnumerationObserver, startin
 
 - [Defining Your File Provider’s Content](../defining-your-file-provider-s-content.md)
 
-#### Discussion
+## Discussion
 
 The system requests an enumerator in the following situations:
 

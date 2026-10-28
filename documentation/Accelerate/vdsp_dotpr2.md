@@ -21,7 +21,7 @@ Calculates the stereo dot product of two single-precision vectors.
 void vDSP_dotpr2(const float *__A0, vDSP_Stride __IA0, const float *__A1, vDSP_Stride __IA1, const float *__B, vDSP_Stride __IB, float *__C0, float *__C1, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This function calculates the stereo dot products of two vectors, using the following operation:
 

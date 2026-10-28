@@ -23,7 +23,7 @@ init(call callUUID: UUID, callUUIDToGroupWith: UUID?)
 - (instancetype) initWithCallUUID:(NSUUID *) callUUID callUUIDToGroupWith:(NSUUID *) callUUIDToGroupWith;
 ```
 
-#### Return Value
+## Return Value
 
 A new action for the specified call UUID and call UUID to group with.
 

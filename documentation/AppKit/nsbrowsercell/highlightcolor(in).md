@@ -19,7 +19,7 @@ func highlightColor(in controlView: NSView) -> NSColor?
 - (NSColor *) highlightColorInView:(NSView *) controlView;
 ```
 
-#### Return Value
+## Return Value
 
 The highlight color.
 

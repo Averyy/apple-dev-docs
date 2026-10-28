@@ -12,7 +12,7 @@ virtual IOReturn activateAudioEngine(
  IOAudioEngine *audioEngine);
 ```
 
-#### Return Value
+## Return Value
 
 Returns true if the audio engine was successfully activated.
 

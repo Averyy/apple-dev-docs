@@ -16,7 +16,7 @@ var fulfilledExpectations: [XCTestExpectation] { get }
 @property (readonly) NSArray<XCTestExpectation *> * fulfilledExpectations;
 ```
 
-#### Discussion
+## Discussion
 
 The array will be empty until the waiter has started waiting, even if expectations have already been fulfilled. Expectations fulfilled after the waiter stops waiting will not be in the array.
 

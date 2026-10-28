@@ -17,7 +17,7 @@ case cwReassociationDeniedErr
 kCWReassociationDeniedErr
 ```
 
-#### Discussion
+## Discussion
 
 Reassociation was denied because the access point was unable to determine that an association exists.
 

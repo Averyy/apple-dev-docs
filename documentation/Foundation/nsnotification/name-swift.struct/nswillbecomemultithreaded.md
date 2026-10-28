@@ -27,7 +27,7 @@ static let NSWillBecomeMultiThreaded: NSNotification.Name
 extern NSNotificationName const NSWillBecomeMultiThreadedNotification;
 ```
 
-#### Discussion
+## Discussion
 
 This notification does not contain a notification object or a `userInfo` dictionary.
 

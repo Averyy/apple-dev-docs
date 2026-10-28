@@ -4,13 +4,13 @@
 
 Upload an image or video once, then reuse it across your app’s App Store surfaces with per-surface placements.
 
-#### Overview
+## Overview
 
 The App Asset Library gives your app a single, shared collection of marketing and product media. Instead of uploading the same screenshot or app preview separately to every App Store version, custom product page, and in-app event, you upload each asset once into the library and then create *placements* that position it on specific surfaces. One asset can back many placements at the same time.
 
 This article explains how the pieces fit together. For the step-by-step workflows, see [Uploading and managing image assets](./uploading-and-managing-image-assets.md), [Uploading and managing video assets](./uploading-and-managing-video-assets.md), and [Placing assets on your App Store surfaces](./placing-assets-on-your-app-store-surfaces.md). For a comparison of the App Asset Library and the previous approach, see [Migrating to the App Asset Library](./migrating-to-the-app-asset-library.md).
 
-#### Understand the model
+## Understand the model
 
 The asset library is built from a small set of resources:
 
@@ -20,7 +20,7 @@ The asset library is built from a small set of resources:
 - **Ordering requests**: A single request that sets the display order of placements within one localization and placement group, such as the order of screenshots. For more information, see [App Asset Library placement ordering requests](./app-asset-library-placement-ordering-requests.md).
 - **Reference data**: A machine-readable catalog of valid specifications: dimensions, aspect ratios, file formats, placement groups, and per-placement limits. Query it instead of hard-coding requirements. For more information, see [App Asset Library reference data](./app-asset-library-reference-data.md).
 
-#### Learn the vocabulary of a placement
+## Learn the vocabulary of a placement
 
 Three values describe where an asset appears. You supply the first two when you create a placement, and App Store Connect provides the third:
 
@@ -30,7 +30,7 @@ Three values describe where an asset appears. You supply the first two when you 
 
 Placement group identifiers and their limits come from the reference data rather than an enumeration, so you need to read them at runtime. For more information, see [Discovering asset specifications](./discovering-asset-specifications.md).
 
-#### Follow the end-to-end workflow
+## Follow the end-to-end workflow
 
 A typical integration moves through these stages:
 
@@ -40,7 +40,7 @@ A typical integration moves through these stages:
 4. **Place the assets.** Create placements that link each asset to a target localization, then set their order within each placement group. For more information, see [Placing assets on your App Store surfaces](./placing-assets-on-your-app-store-surfaces.md).
 5. **Submit for review.** Placements travel through App Review as part of their parent surface. A placement’s state reflects the review state of that parent.
 
-#### Track asset state
+## Track asset state
 
 Every image and video reports a `state` ([`AppAssetLibraryAssetState`](./appassetlibraryassetstate.md)). Reserving, uploading, and processing an asset moves it through:
 
@@ -56,7 +56,7 @@ Three states sit outside that progression:
 
 Re-fetch an asset at any time to read its current `state` and `stateDetails`. Placements track their own `state` ([`AppAssetLibraryPlacementState`](./appassetlibraryplacementstate.md)), which mirrors the review state of the parent surface, from `ASSET_PROCESSING` through `PARENT_APPROVED`.
 
-#### Choose an asset category
+## Choose an asset category
 
 When you create an asset, you assign it a category ([`AppAssetLibraryAssetCategory`](./appassetlibraryassetcategory.md)):
 
@@ -65,7 +65,7 @@ When you create an asset, you assign it a category ([`AppAssetLibraryAssetCatego
 
 The category determines the placement types for which an asset is eligible. Each placement type in the reference data lists the categories it accepts in `acceptsAssetCategories`, and creating a placement with a category that doesn’t match that list returns an error.
 
-#### Review roles and access
+## Review roles and access
 
 To manage the asset library with the App Store Connect API, you need one of the following user roles:
 

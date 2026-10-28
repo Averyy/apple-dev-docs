@@ -24,7 +24,7 @@ protocol MTL4Archive : NSObjectProtocol, Sendable
 @protocol MTL4Archive <NSObject>
 ```
 
-#### Overview
+## Overview
 
 The pipeline states can have intermediate representation (IR) binaries, GPU- and system-specific binaries, or a combination.
 

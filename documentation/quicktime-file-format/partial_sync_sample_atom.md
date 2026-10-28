@@ -6,7 +6,7 @@
 
 An atom that lists the partial sync samples.
 
-#### Overview
+## Overview
 
 Since such samples are not full sync samples, don’t list them in the sync sample atom.
 

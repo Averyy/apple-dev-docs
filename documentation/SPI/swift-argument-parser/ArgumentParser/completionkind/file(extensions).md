@@ -17,7 +17,7 @@ The completion candidates include directory and file names, the latter filtered 
 static func file(extensions: [String] = []) -> CompletionKind
 ```
 
-#### Discussion
+## Discussion
 
 If the given list of extensions is empty, then file names are not filtered.
 

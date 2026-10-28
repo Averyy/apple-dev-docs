@@ -23,7 +23,7 @@ struct SearchResult
 
 - [Recognizing handwriting and converting it to text](../recognizing-handwriting-and-converting-to-text.md)
 
-#### Overview
+## Overview
 
 Each `SearchResult` identifies the set of strokes that matched the query and the bounding rectangle that contains them, expressed in the coordinate space of the drawing.
 

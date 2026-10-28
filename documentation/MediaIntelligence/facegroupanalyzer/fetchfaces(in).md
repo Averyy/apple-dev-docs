@@ -20,7 +20,7 @@ Returns the faces from the specified assets.
 final func fetchFaces(in assetIDs: [MediaIntelligenceImageAsset.ID]) throws -> some AsyncSequence<(assetID: MediaIntelligenceImageAsset.ID, faces: Array<FaceGroupAnalyzer.Face>), any Error>
 ```
 
-#### Return Value
+## Return Value
 
 An async sequence of `(assetID, faces)` pairs.
 

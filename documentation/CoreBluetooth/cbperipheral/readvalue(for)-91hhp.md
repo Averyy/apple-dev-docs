@@ -25,7 +25,7 @@ func readValue(for descriptor: CBDescriptor)
 - (void) readValueForDescriptor:(CBDescriptor *) descriptor;
 ```
 
-#### Discussion
+## Discussion
 
 When you call this method to read the value of a characteristic descriptor, the peripheral calls the [`peripheral(_:didUpdateValueFor:error:)`](../cbperipheraldelegate/peripheral%28_,didupdatevaluefor,error%29-1t3wm.md) method of its delegate object. If the peripheral successfully retrieves the value of the characteristic descriptor, you can access it through the characteristic descriptor’s [`value`](../cbdescriptor/value.md) property.
 

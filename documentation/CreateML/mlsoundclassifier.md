@@ -19,7 +19,7 @@ A machine learning model you train with audio files to recognize and identify so
 struct MLSoundClassifier
 ```
 
-#### Overview
+## Overview
 
 A sound classifier is a machine learning model that identifies and categorizes sounds in an app. Create a sound classifier by gathering a dataset of audio files and use them to train a model with [`MLSoundClassifier`](./mlsoundclassifier.md).
 

@@ -18,11 +18,11 @@ Gets a list of passkeys available for authenticating with the given relying part
 func platformCredentials(forRelyingParty relyingParty: String) async -> [ASAuthorizationWebBrowserPlatformPublicKeyCredential]
 ```
 
-#### Return Value
+## Return Value
 
 A list of credentials stored on the keychain, or managed by third-party credential managers, that are appropriate for responding to the current challenge.
 
-#### Discussion
+## Discussion
 
 Before calling this method, check that the value of [`authorizationStateForPlatformCredentials`](./authorizationstateforplatformcredentials.md) is [`ASAuthorizationWebBrowserPublicKeyCredentialManager.AuthorizationState.authorized`](./authorizationstate/authorized.md) and call [`requestAuthorizationForPublicKeyCredentials(_:)`](./requestauthorizationforpublickeycredentials%28_%29.md) if your app needs authorization. If you call this method without authorization, it returns an empty array.
 

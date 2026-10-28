@@ -19,11 +19,11 @@ func printOperation(withSettings printSettings: [NSPrintInfo.AttributeKey : Any]
 - (NSPrintOperation *) printOperationWithSettings:(NSDictionary<NSString *,id> *) printSettings error:(NSError **) outError;
 ```
 
-#### Return Value
+## Return Value
 
 The print operation, or `nil` if unsuccessful.
 
-#### Discussion
+## Discussion
 
 The print operation can be run to print the document’s current contents. The `NSPrintInfo` attributes in the passed-in `printSettings` dictionary are added to a copy of the document’s print info, and the resulting print info is used for the operation.
 

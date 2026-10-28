@@ -25,7 +25,7 @@ struct Viewpoint
 struct Viewpoint;
 ```
 
-#### Overview
+## Overview
 
 This structure represents a camera or observer’s position and viewing direction, with optional availability flags for each component. This allows partial viewpoint information to be represented when only position or direction is known.
 

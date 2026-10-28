@@ -24,7 +24,7 @@ var min: Float { get set }
 @property (nonatomic, readwrite) float min;
 ```
 
-#### Discussion
+## Discussion
 
 This value is used for Uniform distributions with float data types and Truncated Normal disributions. Defaults to 0 for uniform distributions and -2 for normal distributions.
 

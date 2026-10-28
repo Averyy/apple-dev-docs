@@ -29,7 +29,7 @@ class UNNotificationCategory
 - [Declaring your actionable notification types](./declaring-your-actionable-notification-types.md)
 - [Generating a remote notification](./generating-a-remote-notification.md)
 
-#### Overview
+## Overview
 
 A [`UNNotificationCategory`](./unnotificationcategory.md) object defines a type of notification that your executable can receive. You create category objects to define your app’s *actionable notifications* — notifications that have action buttons the user can select in response to the notification. Each category object you create stores the actions and other behaviors associated with a specific type of notification. Register your category objects using the [`setNotificationCategories(_:)`](./unusernotificationcenter/setnotificationcategories%28_%29.md) method of [`UNUserNotificationCenter`](./unusernotificationcenter.md). You can register as many category objects as you need.
 

@@ -29,11 +29,11 @@ var speed: CLLocationSpeed { get }
 
 - [Getting heading and course information](../getting-heading-and-course-information.md)
 
-#### Discussion
+## Discussion
 
 This value reflects the instantaneous speed of the device as it moves in the direction of its current heading. A negative value indicates an invalid speed. Because the actual speed can change many times between the delivery of location events, use this property for informational purposes only.
 
-##### Special Considerations
+### Special Considerations
 
 In iOS, this property is declared as `nonatomic`. In macOS, it is declared as `atomic`.
 

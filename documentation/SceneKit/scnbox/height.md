@@ -25,7 +25,7 @@ var height: CGFloat { get set }
 @property (nonatomic) CGFloat height;
 ```
 
-#### Discussion
+## Discussion
 
 The box is centered in its local coordinate system. For example, a box of height `10.0` extends from `-5.0` to `5.0` along the y-axis. The default width is `1.0`. A height of zero or less creates an empty geometry.
 

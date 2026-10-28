@@ -24,7 +24,7 @@ func cancel(_ request: ASWebAuthenticationSessionRequest!)
 
 - [Supporting Single Sign-On in a Web Browser App](../supporting-single-sign-on-in-a-web-browser-app.md)
 
-#### Discussion
+## Discussion
 
 Your browser app implements this method to accept cancellation requests from the initiating app.
 

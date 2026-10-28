@@ -25,7 +25,7 @@ func CVPixelBufferGetWidthOfPlane(_ pixelBuffer: CVPixelBuffer, _ planeIndex: In
 extern size_t CVPixelBufferGetWidthOfPlane(CVPixelBufferRef pixelBuffer, size_t planeIndex);
 ```
 
-#### Return Value
+## Return Value
 
 The width of the plane, in pixels, or `0` for nonplanar pixel buffers.
 

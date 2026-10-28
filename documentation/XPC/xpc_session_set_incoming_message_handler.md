@@ -21,7 +21,7 @@ Sets a handler to receive incoming messages for a session.
 extern void xpc_session_set_incoming_message_handler(xpc_session_t session, xpc_session_incoming_message_handler_t handler);
 ```
 
-#### Discussion
+## Discussion
 
 The `session` you pass to this method must be inactive. To create an inactive session, pass the [`XPC_SESSION_CREATE_INACTIVE`](./xpc_session_create_flags_t-c.enum/xpc_session_create_inactive.md) flag when you call [`xpc_session_create_xpc_service`](./xpc_session_create_xpc_service.md) or [`xpc_session_create_mach_service`](./xpc_session_create_mach_service.md). If the session already has an incoming message handler, this method replaces it.
 

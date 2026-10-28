@@ -11,7 +11,7 @@ Submit this command object to FireWire for execution.
 IOReturn ( *Submit)( IOFireWireLibVectorCommandRef self);
 ```
 
-#### Return Value
+## Return Value
 
 An IOReturn result code
 

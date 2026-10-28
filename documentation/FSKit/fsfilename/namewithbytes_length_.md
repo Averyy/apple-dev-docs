@@ -15,7 +15,7 @@ Creates a filename by copying a character sequence from a byte array.
 + (instancetype) nameWithBytes:(const char *) bytes length:(NSUInteger) length;
 ```
 
-#### Discussion
+## Discussion
 
 - bytes: A pointer to the character data to copy, up to a maximum of `length`. The sequence terminates if a `NUL` character exists prior to `length`.
 - length: The size of the `bytes` array.

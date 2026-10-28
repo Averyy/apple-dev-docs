@@ -21,7 +21,7 @@ var highlights: [TVMediaItem.Highlight] { get }
 @property (nonatomic, strong, readonly) NSArray<TVHighlight *> * highlights;
 ```
 
-#### Discussion
+## Discussion
 
 The `highlights` property contains all of the highlights associated with a specific group. For example, all of the home runs hit during a single baseball game.
 

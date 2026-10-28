@@ -15,7 +15,7 @@ The carrier attempted to use a non-CPM technology to deliver the message, but fa
 case interworkingFailed
 ```
 
-#### Discussion
+## Discussion
 
 This disposition indicates that the carrier attempted to use a technology like SMS or MMS to deliver the message.
 

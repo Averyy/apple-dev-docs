@@ -17,7 +17,7 @@ The sharding axis and segments for a parameter, or `nil` to leave it alone.
 typealias ShardingPredicate = (String, MLXArray) -> (axis: Int, segments: Segments)?
 ```
 
-#### Discussion
+## Discussion
 
 The path is the parameter’s path in the module, e.g. `layers.0.conv.weight`.
 

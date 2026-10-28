@@ -21,7 +21,7 @@ A constant that represents a Boolean value of false.
 #define XPC_BOOL_FALSE
 ```
 
-#### Discussion
+## Discussion
 
 You may compare a Boolean object against this constant to determine its value.
 

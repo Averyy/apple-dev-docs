@@ -21,7 +21,7 @@ Create and returns a new UUID with RFC 4122 version 4 random bytes.
 + (instancetype) UUID;
 ```
 
-#### Return Value
+## Return Value
 
 A new UUID object.
 

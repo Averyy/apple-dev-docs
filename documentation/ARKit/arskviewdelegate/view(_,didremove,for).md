@@ -20,7 +20,7 @@ optional func view(_ view: ARSKView, didRemove node: SKNode, for anchor: ARAncho
 - (void) view:(ARSKView *) view didRemoveNode:(SKNode *) node forAnchor:(ARAnchor *) anchor;
 ```
 
-#### Discussion
+## Discussion
 
 Depending on the session configuration, ARKit may automatically remove anchors from a session. The view calls this method once for each removed anchor.
 

@@ -28,7 +28,7 @@ func setShortcutSuggestions(_ suggestions: [INShortcut])
 
 - [Offering Actions in the Shortcuts App](../../SiriKit/offering-actions-in-the-shortcuts-app.md)
 
-#### Discussion
+## Discussion
 
 To replace the list of shortcut suggestions, call setShortcutSuggestions(_:), passing in a new list of suggestions. To remove suggestions made by your app, call the same method, passing in an empty array. For more information, see [Offering Actions in the Shortcuts App](../../SiriKit/offering-actions-in-the-shortcuts-app.md).
 

@@ -25,7 +25,7 @@ let CBAdvertisementDataManufacturerDataKey: String
 extern NSString * const CBAdvertisementDataManufacturerDataKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value associated with this key is an [`NSData`](../Foundation/nsdata.md) object.
 

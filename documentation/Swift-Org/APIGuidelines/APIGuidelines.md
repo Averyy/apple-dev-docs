@@ -10,7 +10,7 @@ framework: "Swift-Org/APIGuidelines"
 
 Design Swift APIs that prioritize clarity at the point of use through effective naming and consistent conventions.
 
-#### Overview
+## Overview
 
 Delivering a clear, consistent developer experience when writing Swift code is largely defined by the names and idioms that appear in APIs. These design guidelines explain how to make sure that your code feels like a part of the larger Swift ecosystem.
 

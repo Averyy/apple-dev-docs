@@ -21,11 +21,11 @@ class var knobColor: NSColor { get }
 @property (class, strong, readonly) NSColor * knobColor;
 ```
 
-#### Return Value
+## Return Value
 
 The system color used for an unselected slider knob.
 
-#### Discussion
+## Discussion
 
 The knob’s beveled edges, which set it in relief, are drawn in highlighted and shadowed versions of the face color. When a knob is selected, its color changes to [`selectedKnobColor`](./selectedknobcolor.md). For more information, see [`NSColor`](../nscolor.md).
 

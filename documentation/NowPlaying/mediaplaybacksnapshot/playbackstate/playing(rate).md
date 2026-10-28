@@ -21,7 +21,7 @@ Content is currently playing.
 case playing(rate: Float = 1.0)
 ```
 
-#### Discussion
+## Discussion
 
 The associated `rate` reflects the actual speed at which content is advancing, including temporary changes like seeking (for example, `5.0` during fast-forward).
 

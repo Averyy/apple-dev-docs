@@ -19,7 +19,7 @@ let kVTDecompressionPropertyKey_RequestRAWOutput: CFString
 extern CFStringRef const kVTDecompressionPropertyKey_RequestRAWOutput;
 ```
 
-#### Discussion
+## Discussion
 
 When a decoder produces RAW output the [`VTDecompressionSession`](./vtdecompressionsession.md) automatically invokes a [`VTRAWProcessingSession`](./vtrawprocessingsession.md) with default settings and emits processed frames by default, or when `kVTDecompressionPropertyKey_RequestRAWOutput` is set to `kCFBooleanFalse`. If you want to run a [`VTRAWProcessingSession`](./vtrawprocessingsession.md) on the RAW output to control the post-decode processing of the decoded `CVPixelBuffer` objects, you must set `kVTDecompressionPropertyKey_RequestRAWOutput` to `kCFBooleanTrue`. If `kVTDecompressionPropertyKey_RequestRAWOutput` is enabled and the decoder produces RAW output, the [`VTDecompressionSession`](./vtdecompressionsession.md) returns `CVPixelBuffer` objects in the decoder’s native RAW format, and ignores any specified image buffer attributes.
 

@@ -22,7 +22,7 @@ A guide that marks the bottom-most text baseline in a view.
 static var centerLastTextBaseline: Alignment { get }
 ```
 
-#### Discussion
+## Discussion
 
 This alignment combines the [`center`](../horizontalalignment/center.md) horizontal guide and the [`lastTextBaseline`](../verticalalignment/lasttextbaseline.md) vertical guide:
 

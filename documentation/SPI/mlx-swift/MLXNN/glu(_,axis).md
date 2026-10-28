@@ -17,11 +17,11 @@ Applies the gated linear unit function.
 func glu(_ x: MLXArray, axis: Int = -1) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 This function splits the `axis` dimension of the input into two halves (`a` and `b`) and applies `a * sigmoid(b)`.
 
-##### See Also
+### See Also
 
 - [Activation Functions and Layers](./activations.md)
 - [`GLU`](./glu.md)

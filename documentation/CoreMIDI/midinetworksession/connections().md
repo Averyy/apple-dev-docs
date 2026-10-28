@@ -23,7 +23,7 @@ func connections() -> Set<MIDINetworkConnection>
 - (NSSet<MIDINetworkConnection *> *) connections;
 ```
 
-#### Return Value
+## Return Value
 
 The set of connections.
 

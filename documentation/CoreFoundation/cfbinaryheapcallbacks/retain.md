@@ -25,11 +25,11 @@ var retain: ((CFAllocator?, UnsafeRawPointer?) -> UnsafeRawPointer?)!
 const void *(*)(const struct __CFAllocator *, const void *) retain;
 ```
 
-#### Return Value
+## Return Value
 
 The value to store in the binary heap, which is usually the `ptr` parameter passed to this callback, but may be a different   value if a different value should be stored in the binary heap.
 
-#### Discussion
+## Discussion
 
 The callback used to add a retain for the binary heap on values as they are put into the binary heap. This callback returns the value to use as the value in the binary heap, which is usually the value parameter passed to this callback, but may be a different value if a different value should be added to the binary heap. If this field is `NULL`, the binary heap does nothing to retain a value being added.
 

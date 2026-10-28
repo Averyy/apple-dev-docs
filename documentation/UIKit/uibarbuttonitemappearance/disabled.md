@@ -23,7 +23,7 @@ var disabled: UIBarButtonItemStateAppearance { get }
 @property (nonatomic, strong, readonly) UIBarButtonItemStateAppearance * disabled;
 ```
 
-#### Discussion
+## Discussion
 
 To set the attributes for this state, get the object in this property and modify it.
 

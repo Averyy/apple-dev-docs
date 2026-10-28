@@ -25,7 +25,7 @@ var cancelDate: Date? { get }
 @property (nonatomic, readonly, nullable) NSDate * cancelDate;
 ```
 
-#### Discussion
+## Discussion
 
 The [`cancelDate`](./canceldate.md) is equivalent to the [`revocationDate`](../../StoreKit/transaction/revocationdate.md) in [`Transaction`](../../StoreKit/transaction.md). The system sets the [`cancelDate`](./canceldate.md) if it refunds or revokes the in-app purchase. Otherwise, the value is `nil`.
 

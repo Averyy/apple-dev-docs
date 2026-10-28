@@ -25,7 +25,7 @@ class var illegalCharacters: CharacterSet { get }
 @property (class, copy, readonly) NSCharacterSet * illegalCharacterSet;
 ```
 
-#### Return Value
+## Return Value
 
 A character set containing all the illegal characters.
 

@@ -15,11 +15,11 @@ Gets the number of available selector values.
 size_t GetControlValuesCount();
 ```
 
-#### Return Value
+## Return Value
 
 The number of available selector values.
 
-#### Discussion
+## Discussion
 
 This method synchronizes by using the work queue created by the object.
 

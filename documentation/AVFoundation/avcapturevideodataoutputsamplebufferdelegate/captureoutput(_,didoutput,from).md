@@ -24,7 +24,7 @@ optional func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: C
 - (void) captureOutput:(AVCaptureOutput *) output didOutputSampleBuffer:(CMSampleBufferRef) sampleBuffer fromConnection:(AVCaptureConnection *) connection;
 ```
 
-#### Discussion
+## Discussion
 
 Delegates receive this message whenever the output captures and outputs a new video frame, decoding or re-encoding it as specified by its `videoSettings` property. Delegates can use the provided video frame in conjunction with other APIs for further processing.
 

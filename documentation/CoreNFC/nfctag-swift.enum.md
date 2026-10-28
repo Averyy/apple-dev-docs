@@ -17,7 +17,7 @@ An object that represents an NFC tag object.
 enum NFCTag
 ```
 
-#### Overview
+## Overview
 
 When an NFC reader session detects a tag, it returns an [`NFCTag`](./nfctag-swift.enum.md) object. Use this generic object to determine if the tag is available, and to retrieve an object of a specific tag type.
 

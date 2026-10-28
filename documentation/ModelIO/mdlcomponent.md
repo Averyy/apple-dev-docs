@@ -24,7 +24,7 @@ protocol MDLComponent : NSObjectProtocol
 @protocol MDLComponent <NSObject>
 ```
 
-#### Overview
+## Overview
 
 By extending this protocol in your own custom protocols, you can define new functionality to add to the [`MDLObject`](./mdlobject.md) instances in the object graph corresponding to a [`MDLAsset`](./mdlasset.md) instance.
 

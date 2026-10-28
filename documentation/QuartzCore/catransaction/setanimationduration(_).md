@@ -24,7 +24,7 @@ class func setAnimationDuration(_ dur: CFTimeInterval)
 + (void) setAnimationDuration:(CFTimeInterval) dur;
 ```
 
-#### Discussion
+## Discussion
 
 You can also set the animation duration for a specific transaction object by calling the [`setValue(_:forKey:)`](./setvalue%28_,forkey%29.md) method of that object and specifying the [`kCATransactionAnimationDuration`](../kcatransactionanimationduration.md) key.
 

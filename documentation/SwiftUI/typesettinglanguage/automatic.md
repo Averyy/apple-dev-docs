@@ -21,7 +21,7 @@ Automatic language behavior.
 static let automatic: TypesettingLanguage
 ```
 
-#### Discussion
+## Discussion
 
 When determining the language to use for typesetting the current UI language and preferred languages will be considered. For example, if the current UI locale is for English and Thai is included in the preferred languages then line heights will be taller to accommodate the taller glyphs used by Thai.
 

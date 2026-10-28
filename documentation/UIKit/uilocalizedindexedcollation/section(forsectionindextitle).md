@@ -23,11 +23,11 @@ func section(forSectionIndexTitle indexTitleIndex: Int) -> Int
 - (NSInteger) sectionForSectionIndexTitleAtIndex:(NSInteger) indexTitleIndex;
 ```
 
-#### Return Value
+## Return Value
 
 An integer identifying the table-view section associated with `indexTitleIndex`.
 
-#### Discussion
+## Discussion
 
 This method allows the table view to map between a given item in the section index and a given section even when there isn’t a one-to-one mapping. In its implementation of [`tableView(_:sectionForSectionIndexTitle:at:)`](../uitableviewdatasource/tableview%28_,sectionforsectionindextitle,at%29.md), the data source can call this method on the indexed-collation object specifying as an argument the passed-in index integer; it then returns the result to the table view.
 

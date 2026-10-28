@@ -9,7 +9,7 @@ Obtain a list of people the server manages, across the organization.
 **Availability**:
 - Device Assignment Services 5.0+
 
-#### Discussion
+## Discussion
 
 In addition to instructors and students, this list may contain additional people who don’t belong to any class.
 

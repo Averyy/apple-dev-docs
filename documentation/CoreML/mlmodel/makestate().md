@@ -21,7 +21,7 @@ Creates a new state object.
 func makeState() -> MLState
 ```
 
-#### Discussion
+## Discussion
 
 Core ML framework will allocate the state buffers declared in the model.
 

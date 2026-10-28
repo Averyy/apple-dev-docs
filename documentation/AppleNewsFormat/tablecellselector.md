@@ -15,13 +15,13 @@ The object for defining conditions that apply a conditional style to a cell.
 object TableCellSelector
 ```
 
-#### Discussion
+## Discussion
 
 Use the `TableCellSelector` object to set the criteria for applying conditional styles to rows. For example, you could set criteria to select a cell at a specific location or to select cells for a certain data descriptor.
 
 You can use this object in  [`ConditionalTableCellStyle`](./conditionaltablecellstyle.md).
 
-##### Example
+### Example
 
 ```json
 {

@@ -25,7 +25,7 @@ func stop()
 - (void) stop;
 ```
 
-#### Discussion
+## Discussion
 
 This method stops the audio engine and the audio hardware, and releases any allocated resources for the [`prepare()`](./prepare%28%29.md) method. When your app doesn’t need to play audio, consider pausing or stopping the engine to minimize power consumption.
 

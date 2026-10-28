@@ -24,7 +24,7 @@ static let electrodermalActivity: HKQuantityTypeIdentifier
 extern HKQuantityTypeIdentifier const HKQuantityTypeIdentifierElectrodermalActivity;
 ```
 
-#### Discussion
+## Discussion
 
 Electrodermal activity measures the conductance of the user’s skin. This conductance increases as the activity of the sweat glands increases. These samples use conductance units (described in [`HKUnit`](../hkunit.md)) and measure discrete values (described in [`HKQuantityAggregationStyle`](../hkquantityaggregationstyle.md)).
 

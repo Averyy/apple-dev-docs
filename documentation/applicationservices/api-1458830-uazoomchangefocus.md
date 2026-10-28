@@ -19,11 +19,11 @@ func UAZoomChangeFocus(_ inRect: UnsafePointer<CGRect>!, _ inHighlightRect: Unsa
 OSStatus UAZoomChangeFocus(const CGRect *inRect, const CGRect *inHighlightRect, UAZoomChangeFocusType inType);
 ```
 
-#### Return Value
+## Return Value
 
 Returns `noErr` if there were no problems, if Universal Access Zoom is zoomed all the way out, or if the feature is off; returns `paramErr` if `inRect` is `NULL` or if `inType` is out of range.
 
-#### Discussion
+## Discussion
 
 This function tells Universal Access the frame of the element in focus and the part of the element that should be in focus.
 

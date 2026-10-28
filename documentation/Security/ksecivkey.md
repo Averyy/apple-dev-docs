@@ -21,7 +21,7 @@ let kSecIVKey: CFString
 extern CFStringRef const kSecIVKey;
 ```
 
-#### Discussion
+## Discussion
 
 The key’s associated value is an initialization vector. Provide random bytes for this value—for example, created by calling the [`SecRandomCopyBytes(_:_:_:)`](./secrandomcopybytes%28_,_,_%29.md) method—unless your specification requires something else. The number of bytes in the vector should match the block size of the underlying block cipher. For example, use 16 bytes for AES encryption.
 

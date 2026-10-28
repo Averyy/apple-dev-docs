@@ -23,7 +23,7 @@ var faceID: Int { get }
 @property (readonly) NSInteger faceID;
 ```
 
-#### Discussion
+## Discussion
 
 Each time a face enters the picture, it is assigned a new unique identifier, which you can use to reference the face in your code. Face IDs are not reused, and the same face leaving and entering the picture again is assigned a new identifier.
 

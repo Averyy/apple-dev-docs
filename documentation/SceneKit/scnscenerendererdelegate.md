@@ -25,7 +25,7 @@ protocol SCNSceneRendererDelegate : NSObjectProtocol
 @protocol SCNSceneRendererDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 To build an app or game with SceneKit, you use an [`SCNView`](./scnview.md) object (or other object conforming the [`SCNSceneRenderer`](./scnscenerenderer.md) protocol) to display your scene. Then, to add per-frame game logic, or to perform custom Metal or OpenGL rendering before or after SceneKit renders the scene, specify your own custom object that implements the [`SCNSceneRendererDelegate`](./scnscenerendererdelegate.md) protocol for the view’s [`delegate`](./scnscenerenderer/delegate.md) property.
 
@@ -44,13 +44,13 @@ Each time through the rendering loop, a SceneKit view (or renderer) executes the
 7. SceneKit renders the scene graph in the view.
 8. The view calls its delegate’s [`renderer(_:didRenderScene:atTime:)`](./scnscenerendererdelegate/renderer%28_,didrenderscene,attime%29.md) method.
 
-##### Working With the Rendering Loop
+### Working With the Rendering Loop
 
 When building a game, you typically need to run logic relating to gameplay before each frame of animation. Game logic may include input handling, artificial intelligence, game scripting, or other tasks. Often, the results of this logic involve making changes to nodes or running actions on nodes.
 
 The methods listed in [`SCNSceneRendererDelegate`](./scnscenerendererdelegate.md) provide places to implement your game logic. Which of these methods you implement for which tasks depends on your game design. For example, if your game uses physics, you might implement the [`renderer(_:didSimulatePhysicsAtTime:)`](./scnscenerendererdelegate/renderer%28_,didsimulatephysicsattime%29.md) method to decide whether the player has won the game based on the state of physics bodies in the scene. If your gameplay isn’t based on the physics simulation, you might make such decisions in the [`renderer(_:updateAtTime:)`](./scnscenerendererdelegate/renderer%28_,updateattime%29.md) method instead.
 
-##### Custom Rendering
+### Custom Rendering
 
 If you want to perform custom rendering before or after SceneKit renders the contents of the scene, implement one or both methods listed in [`SCNSceneRendererDelegate`](./scnscenerendererdelegate.md). These methods are appropriate for custom Metal or OpenGL drawing that does not depend on the structure or content of the scene graph. If you instead want to render a special effect that is attached to a specific location in the scene, see [`SCNNodeRendererDelegate`](./scnnoderendererdelegate.md). Or if you want to use GPU shader programs to customize SceneKit’s rendering of scene content, see [`SCNShadable`](./scnshadable.md).
 

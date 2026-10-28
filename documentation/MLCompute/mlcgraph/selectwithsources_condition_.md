@@ -19,7 +19,7 @@ Adds a select layer to the graph using the condition mask and source tensors you
 - (MLCTensor *) selectWithSources:(NSArray<MLCTensor *> *) sources condition:(MLCTensor *) condition;
 ```
 
-#### Return Value
+## Return Value
 
 A result tensor.
 

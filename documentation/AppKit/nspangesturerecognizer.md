@@ -19,7 +19,7 @@ class NSPanGestureRecognizer
 @interface NSPanGestureRecognizer : NSGestureRecognizer
 ```
 
-#### Overview
+## Overview
 
 The gesture is recognized when the user clicks all of specified buttons, drags the mouse, and releases one or more of the buttons. Use the pan gesture recognizer object to retrieve the distance traveled during the pan and the location of the mouse as it pans.
 

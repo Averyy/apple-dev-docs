@@ -25,7 +25,7 @@ var collapseIDKey: String? { get set }
 @property (copy, nullable) NSString * collapseIDKey;
 ```
 
-#### Discussion
+## Discussion
 
 When CloudKit generates a push notification, it sets the notification’s `apns-collapse-id` header to this property’s value. The system uses this header to coalesce unseen notifications.
 

@@ -20,7 +20,7 @@ func setEventHandler(_ handler: Any, andSelector handleEventSelector: Selector, 
 - (void) setEventHandler:(id) handler andSelector:(SEL) handleEventSelector forEventClass:(AEEventClass) eventClass andEventID:(AEEventID) eventID;
 ```
 
-#### Discussion
+## Discussion
 
 If an event handler is already registered for the specified event class and event ID, removes it. The signature for `handler` should match the following:
 

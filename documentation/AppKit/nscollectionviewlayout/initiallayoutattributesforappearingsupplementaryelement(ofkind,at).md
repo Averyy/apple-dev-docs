@@ -19,11 +19,11 @@ func initialLayoutAttributesForAppearingSupplementaryElement(ofKind elementKind:
 - (NSCollectionViewLayoutAttributes *) initialLayoutAttributesForAppearingSupplementaryElementOfKind:(NSCollectionViewSupplementaryElementKind) elementKind atIndexPath:(NSIndexPath *) elementIndexPath;
 ```
 
-#### Return Value
+## Return Value
 
 The layout attributes object that describes the supplementary view’s position and properties at the start of animations.
 
-#### Discussion
+## Discussion
 
 When your layout object adds supplementary views in response to other changes in the collection view, the collection view calls this method for each supplementary view before animating it onscreen. Because new supplementary views are not yet visible in the collection view, the attributes you return represent the view’s starting state. For example, you might return attributes that position the supplementary view offscreen or set its initial alpha to `0`. The collection view uses the attributes you return as the starting point for any animations. (The end point of the animation is the view’s new location and attributes.) If you return `nil`, the layout uses the supplementary view’s final attributes for both the start point and end point of the animation.
 

@@ -19,7 +19,7 @@ var reservedThicknessForAccessoryView: CGFloat { get set }
 @property CGFloat reservedThicknessForAccessoryView;
 ```
 
-#### Discussion
+## Discussion
 
 If the ruler is horizontal, `thickness` is the height of the accessory view; otherwise, it’s the width. NSRulerViews by default reserve no space for an accessory view.
 

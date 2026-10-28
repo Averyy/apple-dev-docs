@@ -25,7 +25,7 @@ var isShareable: Bool { get }
 @property (readonly, getter=isShareable) BOOL shareable;
 ```
 
-#### Discussion
+## Discussion
 
 The value is set when the texture is created and never changes.
 

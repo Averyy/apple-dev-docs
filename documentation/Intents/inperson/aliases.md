@@ -24,7 +24,7 @@ var aliases: [INPersonHandle]? { get }
 @property (atomic, copy, readonly, nullable) NSArray<INPersonHandle *> * aliases;
 ```
 
-#### Discussion
+## Discussion
 
 Each [`INPersonHandle`](../inpersonhandle.md) in this property represents another way of identifying the user to your app. Person handles contain information such as phone numbers or email addresses that are unique to the user.
 

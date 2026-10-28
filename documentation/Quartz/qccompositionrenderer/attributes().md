@@ -22,11 +22,11 @@ func attributes() -> [AnyHashable : Any]!
 - (NSDictionary *) attributes;
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary that contains the attributes that describe the composition, including the input and output ports of the root patch.
 
-#### Discussion
+## Discussion
 
 The dictionary can define any of the attributes that are specified by the composition attribute keys. See [`QCCompositionAttributeNameKey`](../qccompositionattributenamekey.md), QCCompositionAttributeDescriptionKey, and [`QCCompositionAttributeCopyrightKey`](../qccompositionattributecopyrightkey.md).
 

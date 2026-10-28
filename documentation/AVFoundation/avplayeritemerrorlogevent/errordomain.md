@@ -25,7 +25,7 @@ var errorDomain: String { get }
 @property (nonatomic, readonly) NSString * errorDomain;
 ```
 
-#### Discussion
+## Discussion
 
 The property corresponds to “domain”.
 

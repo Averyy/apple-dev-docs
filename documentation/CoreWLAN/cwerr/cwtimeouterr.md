@@ -17,7 +17,7 @@ case cwTimeoutErr
 kCWTimeoutErr
 ```
 
-#### Discussion
+## Discussion
 
 Authentication/Association timed out.
 

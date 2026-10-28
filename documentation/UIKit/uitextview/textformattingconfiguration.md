@@ -23,7 +23,7 @@ var textFormattingConfiguration: UITextFormattingViewController.Configuration? {
 @property (nonatomic, copy, readwrite, nullable) UITextFormattingViewControllerConfiguration * textFormattingConfiguration;
 ```
 
-#### Discussion
+## Discussion
 
 It has a non-nil default value.
 

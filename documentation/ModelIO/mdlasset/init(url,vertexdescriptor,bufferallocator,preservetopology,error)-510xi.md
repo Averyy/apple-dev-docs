@@ -24,11 +24,11 @@ init(url URL: URL, vertexDescriptor: MDLVertexDescriptor?, bufferAllocator: (any
 - (instancetype) initWithURL:(NSURL *) URL vertexDescriptor:(MDLVertexDescriptor *) vertexDescriptor bufferAllocator:(id<MDLMeshBufferAllocator>) bufferAllocator preserveTopology:(BOOL) preserveTopology error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A new asset object.
 
-#### Discussion
+## Discussion
 
 Use this initializer when you need to ensure that mesh data from the asset is allocated and formatted correctly for your intended use. For example, to use the MetalKit framework for loading vertex data into GPU buffers for rendering using Metal, pass a [`MTKMeshBufferAllocator`](../../MetalKit/mtkmeshbufferallocator.md) object for the `bufferAllocator` parameter. If you specify a [`MDLVertexDescriptor`](../mdlvertexdescriptor.md) object for the `vertexDescriptor` parameter, Model I/O automatically transforms mesh data to the specified vertex format upon loading. If you specify [`false`](../../Swift/false.md) for the `preserveTopology` parameter, Model I/O automatically transforms submesh data to create triangle meshes (the optimal format for rendering on most GPUs). By using these parameters, you ensure that mesh data is copied and transformed a minimal number of times between being read from a file and being loaded into GPU memory for rendering.
 

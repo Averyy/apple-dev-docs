@@ -19,11 +19,11 @@ object DataDescriptor
 
 - [Defining and Using Table Styles](../AppleNews/defining-and-using-table-styles.md)
 
-#### Discussion
+## Discussion
 
 A `DataDescriptor` object defines the data in a table by including basic information such as data type, data format, and a name for this set of data that identifies the kind of information it is. For example, the name could be “product number” or “release year”. An array of all the data descriptors for a table is located in the table’s [`RecordStore`](./recordstore.md).
 
-##### Example
+### Example
 
 ```json
 {

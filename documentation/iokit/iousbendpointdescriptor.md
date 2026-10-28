@@ -16,7 +16,7 @@ typedef struct IOUSBEndpointDescriptor {
 } IOUSBEndpointDescriptor;
 ```
 
-#### Overview
+## Overview
 
 Descriptor for a USB Endpoint. See the USB Specification at [http://www.usb.org](http://www.usb.org).
 

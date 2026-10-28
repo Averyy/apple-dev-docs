@@ -25,7 +25,7 @@ var directoryAttributes: [FileAttributeKey : Any]? { get }
 @property (copy, readonly, nullable) NSDictionary<NSString *,id> * directoryAttributes;
 ```
 
-#### Discussion
+## Discussion
 
 See the description of the [`fileAttributes(atPath:traverseLink:)`](../fileattributes%28atpath,traverselink%29.md) method of [`FileManager`](../../filemanager.md) for details on obtaining the attributes from the dictionary.
 

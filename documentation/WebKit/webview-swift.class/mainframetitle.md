@@ -21,7 +21,7 @@ var mainFrameTitle: String! { get }
 @property (nonatomic, copy, readonly) NSString * mainFrameTitle;
 ```
 
-#### Discussion
+## Discussion
 
 The HTML title of the loaded page. Returns `@""` if the loaded document is not HTML.
 

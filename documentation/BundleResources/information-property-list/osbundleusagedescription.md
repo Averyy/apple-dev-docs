@@ -17,7 +17,7 @@ A message that tells people why the app is trying to install a driver extension 
 - **Name**: `OSBundleUsageDescription` (Privacy - Driver Extension Usage Description)
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 This key is required for all [DriverKit](../../DriverKit/DriverKit.md) extensions. Failure to include this key results in an error at activation time. For system extensions that are not DriverKit extensions, use [`NSSystemExtensionUsageDescription`](./nssystemextensionusagedescription.md) instead.
 

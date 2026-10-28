@@ -21,7 +21,7 @@ Decapsulates the encapsulated shared secret
 func decapsulate<D>(_ encapsulated: D) throws -> SymmetricKey where D : DataProtocol
 ```
 
-#### Return Value
+## Return Value
 
 The decapsulated shared secret
 

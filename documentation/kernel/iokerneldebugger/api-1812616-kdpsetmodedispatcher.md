@@ -12,11 +12,11 @@ static boolean_t kdpSetModeDispatcher(
  boolean_tactive);
 ```
 
-#### Return Value
+## Return Value
 
 Return TRUE if the link is up and data can be sent/received. Otherwise, return FALSE.
 
-#### Overview
+## Overview
 
 Field KDP set mode requests, then dispatches the call to the registered set mode handler.
 

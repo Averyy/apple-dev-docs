@@ -21,7 +21,7 @@ Content types statically supported by the `Transferable` conformance of the type
 static func importedContentTypes() -> [UTType]
 ```
 
-#### Discussion
+## Discussion
 
 For example, if you have a type that conforms to [`Transferable`](../transferable.md) and can be represented as [`Image`](../../SwiftUI/image.md) and you need to know if it can be instantiated with a JPEG file, you can check against `importedContentTypes`:
 

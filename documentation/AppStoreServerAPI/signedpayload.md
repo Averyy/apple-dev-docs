@@ -15,7 +15,7 @@ A cryptographically signed payload, in JSON Web Signature (JWS) format, containi
 string signedPayload
 ```
 
-#### Discussion
+## Discussion
 
 The `signedpayload` is a string of three Base64 URL-encoded components, separated by a period.
 

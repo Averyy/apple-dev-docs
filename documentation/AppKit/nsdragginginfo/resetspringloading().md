@@ -21,7 +21,7 @@ func resetSpringLoading()
 - (void) resetSpringLoading;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method when a drag operation moves from one spring-loaded region into another within the same destination and the spring-loading options haven’t changed.
 

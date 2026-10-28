@@ -19,7 +19,7 @@
 - (instancetype) initWithRealtimeSafeRenderBlock:(AVAudioSourceNodeRenderBlockRealtimeSafe) block;
 ```
 
-#### Discussion
+## Discussion
 
 Identical to initWithRenderBlock:, but requires a realtime-safe block. When the the engine is configured for realtime use (rendering to a device, or using `AVAudioEngineManualRenderingModeRealtime`) this initializer is preferred.
 

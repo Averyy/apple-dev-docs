@@ -24,7 +24,7 @@ func JSValueIsArray(_ ctx: JSContextRef!, _ value: JSValueRef!) -> Bool
 bool JSValueIsArray(JSContextRef ctx, JSValueRef value);
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if `value` is an array; otherwise, [`false`](../Swift/false.md).
 

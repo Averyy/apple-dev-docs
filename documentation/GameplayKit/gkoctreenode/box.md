@@ -24,7 +24,7 @@ var box: GKBox { get }
 @property (readonly) struct GKBox box;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this rectangle to find elements in the tree with the [`elements(in:)`](../gkoctree/elements%28in%29.md) method.
 

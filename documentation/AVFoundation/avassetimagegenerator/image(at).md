@@ -24,7 +24,7 @@ func image(at time: CMTime) async throws -> (image: CGImage, actualTime: CMTime)
 
 - [Creating images from a video asset](../creating-images-from-a-video-asset.md)
 
-#### Return Value
+## Return Value
 
 A tuple that contains the image and the time the asset was created.
 

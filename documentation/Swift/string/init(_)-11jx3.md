@@ -21,7 +21,7 @@ Creates a String having the given content.
 init(_ content: Substring.UnicodeScalarView)
 ```
 
-#### Discussion
+## Discussion
 
 > **Complexity**: O(N), where N is the length of the resulting `String`’s UTF-16.
 

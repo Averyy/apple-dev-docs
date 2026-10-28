@@ -15,7 +15,7 @@ The value corresponding to this key is the initial value for this parameter as d
 extern CFStringRef const kVTRAWProcessingParameter_InitialValue;
 ```
 
-#### Discussion
+## Discussion
 
 For List types, this is the ListElementID for the List element.
 

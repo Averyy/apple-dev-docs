@@ -21,7 +21,7 @@ A column in a data frame.
 struct Column<WrappedElement>
 ```
 
-#### Overview
+## Overview
 
 A column is a [`Collection`](../Swift/collection.md) that contains values of a specific type, including:
 

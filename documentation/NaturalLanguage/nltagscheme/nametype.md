@@ -29,7 +29,7 @@ extern NLTagScheme const NLTagSchemeNameType;
 
 - [Identifying people, places, and organizations](../identifying-people-places-and-organizations.md)
 
-#### Discussion
+## Discussion
 
 For possible values, see Name types in [`NLTag`](../nltag.md).
 

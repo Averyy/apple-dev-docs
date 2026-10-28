@@ -22,7 +22,7 @@ var event: EKEvent! { get set }
 @property (nonatomic, retain, null_unspecified) EKEvent * event;
 ```
 
-#### Discussion
+## Discussion
 
 This property must be set before displaying the view.
 

@@ -15,7 +15,7 @@ A Boolean value that prioritizes routes to avoid tolls.
 avoidTolls?: boolean;
 ```
 
-#### Discussion
+## Discussion
 
 Set this value to `true` to prioritize routes that don’t have any tolls. The returned routes may contain tolls if no reasonable toll-free routes exist, even if `avoidTolls` is `true`. To verify toll assumptions, check [`hasTolls`](../route/hastolls.md). The default is `false`.
 

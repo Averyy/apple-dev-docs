@@ -19,7 +19,7 @@ func requestOpenSession(withCredentials username: String, password: String)
 - (void) requestOpenSessionWithCredentials:(NSString *) username password:(NSString *) password;
 ```
 
-#### Discussion
+## Discussion
 
 If the device reports a failure of credentials, you can provide them here for the launch. A client must open a session on a device in order to use the device.
 

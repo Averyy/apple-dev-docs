@@ -19,11 +19,11 @@ func hv_gic_state_create() -> hv_gic_state_t
 extern hv_gic_state_thv_gic_state_create();
 ```
 
-#### Return Value
+## Return Value
 
 A new GIC state object that represents the current GIC state.
 
-#### Discussion
+## Discussion
 
 Release this object with [`os_release`](../os/os_release-c.func.md) when it’s no longer needed.
 

@@ -17,7 +17,7 @@ A language model that exposes token IDs that must never be sampled during genera
 protocol SuppressedTokensProviding : AnyObject
 ```
 
-#### Overview
+## Overview
 
 Multimodal models seed this set with the placeholder token IDs from their configuration (image / audio / video soft tokens and their begin/end markers). Those tokens are prompt-side markers that carry no meaning as generated text, but they can occasionally be sampled if left unmasked and then leak into the output verbatim (e.g. `<audio|>` read aloud by TTS). Model factories additionally merge `suppress_tokens` from `generation_config.json` into this set after the model is created.
 

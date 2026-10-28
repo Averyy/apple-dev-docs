@@ -22,7 +22,7 @@ case labelOnly
 UIPasteControlDisplayModeLabelOnly
 ```
 
-#### Discussion
+## Discussion
 
 The label’s text reads “Paste”. The value you set for [`baseForegroundColor`](../configuration-swift.class/baseforegroundcolor.md) colors the text.
 

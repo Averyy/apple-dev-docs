@@ -21,7 +21,7 @@ A Boolean value indicating whether this character represents a currency symbol.
 var isCurrencySymbol: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 For example, the following characters all represent currency symbols:
 

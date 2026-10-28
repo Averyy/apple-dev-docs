@@ -25,7 +25,7 @@ let kCFStreamPropertySOCKSVersion: CFString
 extern CFStringRef const kCFStreamPropertySOCKSVersion;
 ```
 
-#### Discussion
+## Discussion
 
 Its value must be `kCFStreamSocketSOCKSVersion4` or `kCFStreamSocketSOCKSVersion5` to set SOCKS4 or SOCKS5, respectively. If this key is not present, SOCKS5 is used by default.
 

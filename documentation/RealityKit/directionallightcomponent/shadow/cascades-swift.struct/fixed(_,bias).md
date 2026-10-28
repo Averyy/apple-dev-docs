@@ -20,7 +20,7 @@ Specify a fixed number of shadow cascades to use.
 static func fixed(_ count: Int, bias: Float = 0.0) -> DirectionalLightComponent.Shadow.Cascades
 ```
 
-#### Discussion
+## Discussion
 
 Accepted values are 1, 2, 3, and 4.
 

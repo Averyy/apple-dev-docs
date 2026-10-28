@@ -24,11 +24,11 @@ class func crystallize() -> any CIFilter & CICrystallize
 + (CIFilter<CICrystallize> *) crystallizeFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies the crystallize filter to an image. The effect creates polygon-shaped color blocks by aggregating pixel-color values.
 

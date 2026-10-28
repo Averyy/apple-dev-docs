@@ -21,7 +21,7 @@ The amount of precipitation for the hour.
 var precipitationAmount: Measurement<UnitLength>
 ```
 
-#### Discussion
+## Discussion
 
 This value refers to the liquid equivalent of all precipitation amounts. Note that since this is the amount over the hour and the precipitation intensity is also amount over the hour, this property also means precipitationIntensity
 

@@ -19,7 +19,7 @@ var isFlipped: Bool { get }
 @property (readonly, getter=isFlipped) BOOL flipped;
 ```
 
-#### Discussion
+## Discussion
 
 The state is determined by sending `flipped` to the receiver’s view that has focus. If no view has focus, returns [`false`](../../Swift/false.md) unless the receiver is instantiated using [`init(cgContext:flipped:)`](./init%28cgcontext,flipped%29-9cbad.md) specifying [`true`](../../Swift/true.md) as the `flipped` parameter.
 

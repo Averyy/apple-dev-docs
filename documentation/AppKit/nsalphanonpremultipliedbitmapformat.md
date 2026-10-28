@@ -15,7 +15,7 @@ A format where alpha values are not premultiplied.
 static const NSBitmapFormat NSAlphaNonpremultipliedBitmapFormat;
 ```
 
-#### Discussion
+## Discussion
 
 If this option is not specified, alpha values are premultiplied.
 

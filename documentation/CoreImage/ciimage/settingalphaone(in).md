@@ -24,7 +24,7 @@ func settingAlphaOne(in extent: CGRect) -> CIImage
 - (CIImage *) imageBySettingAlphaOneInExtent:(CGRect) extent;
 ```
 
-#### Return Value
+## Return Value
 
 An image object representing the result of the operation.
 

@@ -23,7 +23,7 @@ func unload(_ extensionContext: WKWebExtensionContext) throws
 - (BOOL) unloadExtensionContext:(WKWebExtensionContext *) extensionContext error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 Causes the context to stop running.
 

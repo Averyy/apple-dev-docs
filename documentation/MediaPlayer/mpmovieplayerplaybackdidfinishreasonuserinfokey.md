@@ -22,7 +22,7 @@ let MPMoviePlayerPlaybackDidFinishReasonUserInfoKey: String
 extern NSString * const MPMoviePlayerPlaybackDidFinishReasonUserInfoKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is an [`NSNumber`](../Foundation/nsnumber.md) containing an integer value that represents one of the [`MPMovieFinishReason`](./mpmoviefinishreason.md) constants.
 

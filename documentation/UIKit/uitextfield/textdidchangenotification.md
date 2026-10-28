@@ -24,7 +24,7 @@ class let textDidChangeNotification: NSNotification.Name
 extern NSNotificationName const UITextFieldTextDidChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The affected text field is stored in the `object` parameter of the notification.
 

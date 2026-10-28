@@ -23,7 +23,7 @@ enum Style
 enum UISplitViewControllerStyle : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 In iOS 14 and later, [`UISplitViewController`](../uisplitviewcontroller.md) supports column-style layouts. A column-style split view controller lets you create an interface with two or three columns by using [`init(style:)`](./init%28style%29.md) with the appropriate [`style`](./style-swift.property.md):
 

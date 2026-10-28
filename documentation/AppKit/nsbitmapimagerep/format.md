@@ -19,7 +19,7 @@ struct Format
 enum NSBitmapFormat : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 You can combine these values and pass them to the  [`init(bitmapDataPlanes:pixelsWide:pixelsHigh:bitsPerSample:samplesPerPixel:hasAlpha:isPlanar:colorSpaceName:bitmapFormat:bytesPerRow:bitsPerPixel:)`](./init%28bitmapdataplanes,pixelswide,pixelshigh,bitspersample,samplesperpixel,hasalpha,isplanar,colorspacename,bitmapformat,bytesperrow,bitsperpixel%29.md) method as the bitmap format. You can access them later in the  [`bitmapFormat`](./bitmapformat.md) property.
 

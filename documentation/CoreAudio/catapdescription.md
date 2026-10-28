@@ -22,7 +22,7 @@ class CATapDescription
 @interface CATapDescription : NSObject
 ```
 
-#### Overview
+## Overview
 
 The input stream is a mix of all of the specified processes’ output audio.
 

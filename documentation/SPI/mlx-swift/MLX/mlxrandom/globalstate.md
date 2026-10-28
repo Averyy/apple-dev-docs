@@ -17,11 +17,11 @@ Global random state.
 static let globalState: MLXRandom.RandomState
 ```
 
-#### Discussion
+## Discussion
 
 This can be used with `compile(state: [MLXRandom.globalState, ...], ...)`
 
-##### See Also
+### See Also
 
 - [`seed(_:)`](./seed%28_%29.md)
 

@@ -15,11 +15,11 @@ Returns a Boolean value indicating whether two regions are equal.
 equals(anotherRegion: CoordinateRegion): boolean;
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the region that `anotherRegion` specifies is equal to the calling [`CoordinateRegion`](../coordinateregion.md); otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 The following example shows how to determine whether a given region is equal to the region that’s displaying on the map.
 

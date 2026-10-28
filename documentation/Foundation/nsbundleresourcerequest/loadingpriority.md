@@ -26,7 +26,7 @@ var loadingPriority: Double { get set }
 @property double loadingPriority;
 ```
 
-#### Discussion
+## Discussion
 
 Possible values are between `0.0` and `1.0` or the special constant [`NSBundleResourceRequestLoadingPriorityUrgent`](../nsbundleresourcerequestloadingpriorityurgent.md). The default is `0.5`. The system will attempt to give higher priority to requests with higher values. You can change the priority at any time, including during downloading of the managed resources.
 

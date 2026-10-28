@@ -23,7 +23,7 @@ var attachmentRange: UIFloatRange { get set }
 @property (nonatomic, readwrite) UIFloatRange attachmentRange;
 ```
 
-#### Discussion
+## Discussion
 
 For sliding attachments, this property defines the range of motion (measured in points) supported along the given axis of translation. The specified range must always contain the value 0, which represents the starting point of movement for items. Items slide along the axis between the minimum and maximum values you specify. Setting this property to [`zero`](../uifloatrange/zero.md) prevents items from sliding at all along their axis of translation.
 

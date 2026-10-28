@@ -6,7 +6,7 @@
 
 An atom that specifies the characteristics of an entire QuickTime movie.
 
-#### Overview
+## Overview
 
 You use the movie header atom to specify the characteristics of an entire QuickTime movie. The data contained in this atom defines characteristics of the entire QuickTime movie, such as time scale and duration. It has an atom type value of `'mvhd'`.
 

@@ -21,7 +21,7 @@ Generates a data frame that includes only the column selection.
 func selecting(_ selection: ColumnSelection) -> DataFrame
 ```
 
-#### Return Value
+## Return Value
 
 A new data frame including only the selected columns.
 

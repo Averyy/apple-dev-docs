@@ -15,7 +15,7 @@ The file name of the MMS part.
 var filename: String
 ```
 
-#### Discussion
+## Discussion
 
 If the file name is unavailable or doesn’t apply to this kind of content part, use an empty string.
 

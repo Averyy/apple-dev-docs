@@ -28,7 +28,7 @@ var usage: MTLTextureUsage { get set }
 
 - [Developing Metal apps that run in Simulator](../developing-metal-apps-that-run-in-simulator.md)
 
-#### Discussion
+## Discussion
 
 The default value for this property is [`shaderRead`](../mtltextureusage/shaderread.md). If the given texture has multiple uses in your app, you can combine multiple usage options for that texture. After you set a texture’s usage options, you can use it only in the ways that you specified.
 

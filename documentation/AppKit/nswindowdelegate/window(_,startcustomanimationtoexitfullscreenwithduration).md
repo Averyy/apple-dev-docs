@@ -20,11 +20,11 @@ optional func window(_ window: NSWindow, startCustomAnimationToExitFullScreenWit
 - (void) window:(NSWindow *) window startCustomAnimationToExitFullScreenWithDuration:(NSTimeInterval) duration;
 ```
 
-#### Discussion
+## Discussion
 
 You can implement this method to perform custom animation with the given duration to be in sync with the system animation.
 
-##### Special Considerations
+### Special Considerations
 
 This method is called only if [`customWindowsToExitFullScreen(for:)`](./customwindowstoexitfullscreen%28for%29.md) returns non-`nil`.
 

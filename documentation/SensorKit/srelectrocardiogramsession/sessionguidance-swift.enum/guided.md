@@ -21,7 +21,7 @@ case guided
 SRElectrocardiogramSessionGuidanceGuided
 ```
 
-#### Discussion
+## Discussion
 
 The duration of this type of session is usually fixed.
 

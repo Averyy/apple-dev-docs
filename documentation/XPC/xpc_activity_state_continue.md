@@ -25,7 +25,7 @@ var XPC_ACTIVITY_STATE_CONTINUE: Int { get }
 XPC_ACTIVITY_STATE_CONTINUE
 ```
 
-#### Discussion
+## Discussion
 
 An app may pass this value to [`xpc_activity_set_state(_:_:)`](./xpc_activity_set_state%28_,_%29.md) to indicate that the activity continues its operation beyond the return of its handler block. Use this to extend an activity to include asynchronous operations. The system doesn’t invoke the activity’s handler block again until the state updates to either [`XPC_ACTIVITY_STATE_DEFER`](./xpc_activity_state_defer.md) or, in the case of repeating activity, [`XPC_ACTIVITY_STATE_DONE`](./xpc_activity_state_done.md).
 

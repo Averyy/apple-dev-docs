@@ -25,7 +25,7 @@ var auditSessionIdentifier: au_asid_t { get }
 @property (readonly) au_asid_t auditSessionIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 This attribute may be used by the listener delegate to accept or reject connections.
 

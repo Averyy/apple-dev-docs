@@ -19,7 +19,7 @@ case catalog
 NSColorTypeCatalog
 ```
 
-#### Discussion
+## Discussion
 
 Colors of this type have values for the [`catalogNameComponent`](../catalognamecomponent.md) and [`colorNameComponent`](../colornamecomponent.md) properties. A color of this type may also have device- and appearance-specific representations, allowing you to convert it to other types.
 

@@ -5,7 +5,7 @@
 
 Create ARMv6 assembly language instructions that adhere to the application binary interface (ABI) that iOS supports.
 
-#### Overview
+## Overview
 
 The ARMv6 specification defines the calling conventions for passing arguments and return values between two functions. You pass arguments on the runtime stack or in registers, and the called function returns results registers or in memory. For the most part, the ARMv6 specification adopts the same conventions as those defined in the Procedure Call Standard for the ARM Architecture (release 1.07). However, the ARMv6 specification deviates in the following ways:
 
@@ -18,7 +18,7 @@ The ARMv6 specification defines the calling conventions for passing arguments an
 
 The Procedure Call Standard for the ARM Architecture (AAPCS) is available at [https://developer.arm.com](https://developer.arm.com).
 
-##### Preserve specific registers in ARMv6
+### Preserve specific registers in ARMv6
 
 The following table lists the ARM architecture registers and their volatility in procedure calls:
 
@@ -45,7 +45,7 @@ Consider the following additional behaviors with regard to register usage:
 - Some ARM environments refer to R11 with the mnemonic FP. In iOS, R11 is a general-purpose, nonvolatile register. To avoid confusion, iOS doesn’t use the term FP.
 - Don’t access the VFP registers from Thumb mode in ARMv6. To access the VFP registers, run your code in ARM mode. In iOS, you can switch between ARM and Thumb mode only at function boundaries.
 
-##### Handle data types and data alignment properly
+### Handle data types and data alignment properly
 
 The following table lists the ANSI C scalar data types, their sizes, and their natural alignments in the ARMv6 environment. The natural alignment represents the default alignment for values of that type.
 
@@ -71,7 +71,7 @@ The ARMv6 environment uses little-endian byte ordering to store numeric and poin
 
 As standalone arguments, scalar data types use their natural alignment. When part of a composite data type (array, structure, or union), the system chooses the member with the largest alignment value and uses that value for the overall type alignment. An array assumes the same alignment as its elements. The overall size of a composite data type is a multiple of its alignment value, which might require extra padding to accomplish.
 
-##### Configure stack frames using correct conventions
+### Configure stack frames using correct conventions
 
 In iOS, all subroutine call and return sequences must work in both the ARM and Thumb states. Specifically, you must use the appropriate `BLX` and `BX` instructions, and not the `MOV` instruction, for all calls to function pointers. The main difference between the ARM and Thumb instruction sets is how you set up the stacks and parameter lists.
 
@@ -91,7 +91,7 @@ In the ARMv6 environment, the stack frame size is not fixed and the stack pointe
 
 ![An illustration of the ARM stack, before and after a function call.](https://developer.apple.com/tutorials/images/com.apple.Xcode/writing-armv6-code-for-ios-1@2x.png)
 
-##### Create the prolog and epilog for a function
+### Create the prolog and epilog for a function
 
 When a function calls a subroutine, the subroutine must allocate its own stack frame. It accomplishes this task using a prolog, which is a section of code the compiler places before the body of the function. The compiler places an epilog at the end of the subroutine to restore the process to its prior state.
 
@@ -158,7 +158,7 @@ pop    {r4-r7, pc)     // Restore R4-R6, saved R7, and
 
 ```
 
-##### Pass arguments to functions and handle return values
+### Pass arguments to functions and handle return values
 
 The compiler generally adheres to the argument passing rules in the AAPCS document, but the following items are worth noting:
 

@@ -19,7 +19,7 @@ let kCVPixelBufferIOSurfaceOpenGLFBOCompatibilityKey: CFString
 extern CFStringRef const kCVPixelBufferIOSurfaceOpenGLFBOCompatibilityKey;
 ```
 
-#### Discussion
+## Discussion
 
 This key indicates whether the texture OpenGL creates from the pixel buffer’s underlying IOSurface instance is valid to use as a color buffer attachment to an OpenGL frame buffer object.
 

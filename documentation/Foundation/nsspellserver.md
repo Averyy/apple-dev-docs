@@ -20,7 +20,7 @@ class NSSpellServer
 @interface NSSpellServer : NSObject
 ```
 
-#### Overview
+## Overview
 
 A **service provider** is an application that declares its availability in a standard way, so that any other applications that wish to use it can do so. If you build a spelling checker that makes use of the [`NSSpellServer`](./nsspellserver.md) class and list it as an available service, then users of any application that makes use of [`NSSpellChecker`](../AppKit/nsspellchecker.md) or includes a Services menu will see your spelling checker as one of the available dictionaries.
 

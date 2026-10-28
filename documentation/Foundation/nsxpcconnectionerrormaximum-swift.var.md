@@ -21,7 +21,7 @@ The upper bounds of XPC connection error code values.
 var NSXPCConnectionErrorMaximum: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 All XPC error codes have values between [`NSXPCConnectionErrorMinimum`](./nsxpcconnectionerrorminimum-swift.var.md) and [`NSXPCConnectionErrorMaximum`](./nsxpcconnectionerrormaximum-swift.var.md), exclusive. This constant does not correspond to any particular error.
 

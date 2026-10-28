@@ -24,7 +24,7 @@ class MPSImageThresholdToZero
 @interface MPSImageThresholdToZero : MPSUnaryImageKernel
 ```
 
-#### Overview
+## Overview
 
 An [`MPSImageThresholdToZero`](./mpsimagethresholdtozero.md) filter converts a single channel image to a binary image. If the input image is not a single channel image, the function first converts the input image into a single channel luminance image using the linear gray color transform, and then it applies the threshold.
 

@@ -25,7 +25,7 @@ class AUHeadTrackingBinauralRenderer
 
 - [Rendering Spatial Audio from Bluetooth headphones](./rendering-spatial-audio-from-bluetooth-headphones.md)
 
-#### Overview
+## Overview
 
 This class adds spatial-audio-specific head tracking properties beyond the standard AUAudioUnit interface.
 

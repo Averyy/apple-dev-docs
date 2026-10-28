@@ -15,7 +15,7 @@ An ID that indicates the preferred language to use when displaying map labels, c
 language?: string | null;
 ```
 
-#### Discussion
+## Discussion
 
 The language ID lets you indicate the language to use for displaying map labels, controls, error messages, and search and directions text. A language ID consists of a language designator followed by an optional region or script designator. Some examples of language IDs are:
 

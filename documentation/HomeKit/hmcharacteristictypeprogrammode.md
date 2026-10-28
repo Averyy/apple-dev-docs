@@ -24,7 +24,7 @@ let HMCharacteristicTypeProgramMode: String
 extern NSString * const HMCharacteristicTypeProgramMode;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is one of the constants in the [`HMCharacteristicValueProgramMode`](./hmcharacteristicvalueprogrammode.md) enumeration.
 

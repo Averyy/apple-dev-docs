@@ -15,11 +15,11 @@ Bid strategy configuration as reported in report rows.
 object ReportingBidStrategy
 ```
 
-#### Discussion
+## Discussion
 
 The `ReportingBidStrategy` captures the bid strategy type and optional bid amount for a campaign or ad group at report time. It’s embedded in reporting objects where the bid configuration is needed for analysis alongside performance data.
 
-##### Example
+### Example
 
 ```json
 {

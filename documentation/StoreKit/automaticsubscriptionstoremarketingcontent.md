@@ -22,7 +22,7 @@ A view that represents the default marketing content for a subscription store.
 @preconcurrency struct AutomaticSubscriptionStoreMarketingContent
 ```
 
-#### Overview
+## Overview
 
 You don’t use this type directly. Instead, create a [`SubscriptionStoreView`](./subscriptionstoreview.md) using an initializer that doesn’t include a `marketingContent` parameter for providing custom marketing content.
 

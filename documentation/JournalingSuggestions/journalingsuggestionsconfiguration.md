@@ -19,7 +19,7 @@ class JournalingSuggestionsConfiguration
 
 - [Receiving journaling suggestions system notifications](./receiving-journaling-suggestions-from-system-notifications.md)
 
-#### Overview
+## Overview
 
 Create an instance of this class and refer to [`notificationSchedule`](./journalingsuggestionsconfiguration/notificationschedule-swift.property.md), which provides a read-only view of the Journaling Suggestion notification configuration, as it resides in Settings.
 

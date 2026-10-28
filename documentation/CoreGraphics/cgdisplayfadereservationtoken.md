@@ -20,7 +20,7 @@ typealias CGDisplayFadeReservationToken = UInt32
 typedef uint32_t CGDisplayFadeReservationToken;
 ```
 
-#### Discussion
+## Discussion
 
 Quartz lets you reserve the display hardware to perform a fade operation. Fade reservations are valid for up to 15 seconds. Only one token is needed for both fade-out and fade-in.
 

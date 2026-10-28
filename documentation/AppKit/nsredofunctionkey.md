@@ -19,7 +19,7 @@ var NSRedoFunctionKey: Int { get }
 NSRedoFunctionKey
 ```
 
-#### Discussion
+## Discussion
 
 This key is unavailable on most Macintosh keyboards.
 

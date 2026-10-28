@@ -21,11 +21,11 @@ string Creative.SystemStatus
 - `INVALID`: The ad creative has failed one or more validation checks. Check `systemStatusReasons` for the cause.
 - `PENDING`: The ad creative is undergoing system validation, policy determination, or waiting for asset CDN availability.
 
-#### Discussion
+## Discussion
 
 A `VALID` result only confirms system checks passed; Apple’s additional creative review can still affect whether the ad creative ultimately serves.
 
-##### Example
+### Example
 
 ```json
 {

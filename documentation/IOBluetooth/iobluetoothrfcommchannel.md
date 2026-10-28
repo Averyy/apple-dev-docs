@@ -19,7 +19,7 @@ class IOBluetoothRFCOMMChannel
 @interface IOBluetoothRFCOMMChannel : IOBluetoothObject
 ```
 
-#### Overview
+## Overview
 
 An RFCOMM channel object can be obtained by opening an RFCOMM channel in a device, or by requesting a notification when a channel is created (this is commonly used to provide services).
 

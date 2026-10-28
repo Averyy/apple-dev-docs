@@ -25,7 +25,7 @@ static var badCPUType: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 The specified executable doesn’t support the current CPU.
 

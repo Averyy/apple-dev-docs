@@ -25,7 +25,7 @@ func CFDataFind(_ theData: CFData!, _ dataToFind: CFData!, _ searchRange: CFRang
 extern CFRange CFDataFind(CFDataRef theData, CFDataRef dataToFind, CFRange searchRange, CFDataSearchFlags compareOptions);
 ```
 
-#### Return Value
+## Return Value
 
 The range representing the location and length of `dataToFind` within `searchRange`, modulo the options in `compareOptions`. The range returned is relative to the start of the searched data, not the passed-in search range. Returns [`kCFNotFound`](./kcfnotfound.md) if `dataToFind` is not found.
 

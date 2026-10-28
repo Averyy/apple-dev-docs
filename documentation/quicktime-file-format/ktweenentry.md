@@ -8,7 +8,7 @@ A tween atom, which can be either a single tween atom, a tween atom in a tween s
 
 > **Deprecated**: Tween media is deprecated in the QuickTime file format. The information that follows documents existing content containing tween media and should not be used for new development.
 
-#### Overview
+## Overview
 
 Its parent is the tween QT atom container (which you specify with the constant `kParentAtomIsContainer`).
 

@@ -21,7 +21,7 @@ The declaration to configure a legacy profile.
 object LegacyProfile
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.configuration.legacy` as the declaration type.
 
@@ -34,7 +34,7 @@ The profile may contain any payload type other than the following:
 
 If a user enrollment triggers this configuration: in macOS the system silently ignores any MDMv1 payloads in macOS where the User Enrollment Mode setting is `forbidden`; in iOS, tvOS, watchOS and visionOS, the system rejects the entire profile if any MDMv1 payload has its User Enrollment Mode setting set to `forbidden`.
 
-##### Transition profiles from MDM
+### Transition profiles from MDM
 
 A declarative device management (DDM) legacy profile can take control of profiles installed via MDM. This avoids the need to first remove the MDM profile, before installing the DDM equivalent. DDM cannot take over control of non-MDM-installed profiles.
 
@@ -58,7 +58,7 @@ When DDM takes control of the MDM profile, the following occurs:
 2. Any attempt to install, update, or remove the profile using MDM commands fails (using the usual identifier and UUID matching rules). This holds true while the DDM profile is active.
 3. Updates to the DDM configuration result in the system reapplying the profile which updates the system state with any new or changed settings.
 
-##### Configuration availability
+### Configuration availability
 
 |  |  |
 | --- | --- |
@@ -70,7 +70,7 @@ When DDM takes control of the MDM profile, the following occurs:
 | Allowed in user scope | macOS, Shared iPad |
 | Apply | Multiple configurations are applied separately |
 
-##### Configuration examples
+### Configuration examples
 
 **URL**:
 

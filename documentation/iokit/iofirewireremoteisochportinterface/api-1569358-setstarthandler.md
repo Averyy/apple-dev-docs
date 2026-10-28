@@ -14,7 +14,7 @@
 IOFireWireLibIsochPortCallback (*SetStartHandler)(IOFireWireLibRemoteIsochPortRef self, IOFireWireLibIsochPortCallback inHandler);
 ```
 
-#### Discussion
+## Discussion
 
 Description forthcoming
 

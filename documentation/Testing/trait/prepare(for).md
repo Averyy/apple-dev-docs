@@ -24,7 +24,7 @@ Prepare to run the test that has this trait.
 func prepare(for test: Test) async throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: Any error that prevents the test from running. If an error is thrown from this method, the test is skipped and the error is recorded as an [`Issue`](../issue.md).
 

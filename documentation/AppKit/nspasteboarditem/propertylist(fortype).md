@@ -19,7 +19,7 @@ func propertyList(forType type: NSPasteboard.PasteboardType) -> Any?
 - (id) propertyListForType:(NSPasteboardType) type;
 ```
 
-#### Return Value
+## Return Value
 
 The value for the specified type as a property list.
 

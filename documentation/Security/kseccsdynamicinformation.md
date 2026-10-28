@@ -20,7 +20,7 @@ var kSecCSDynamicInformation: UInt32 { get }
 kSecCSDynamicInformation
 ```
 
-#### Discussion
+## Discussion
 
 This information cannot be returned for code on disk (represented by a [`SecStaticCode`](./secstaticcode.md) object).
 

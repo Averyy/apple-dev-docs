@@ -24,7 +24,7 @@ var minimum: Double { get }
 @property (nonatomic, readonly) double minimum;
 ```
 
-#### Discussion
+## Discussion
 
 The framework sets the value of this property to the [`init(value:minimum:maximum:)`](./init%28value,minimum,maximum%29.md) argument.
 

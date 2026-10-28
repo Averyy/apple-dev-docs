@@ -24,11 +24,11 @@ optional func resourceLoader(_ resourceLoader: AVAssetResourceLoader, shouldWait
 - (BOOL) resourceLoader:(AVAssetResourceLoader *) resourceLoader shouldWaitForRenewalOfRequestedResource:(AVAssetResourceRenewalRequest *) renewalRequest;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the delegate can renew the resource; otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Delegates receive this message when assistance is required to renew a resource previously loaded by [`resourceLoader(_:shouldWaitForLoadingOfRequestedResource:)`](./resourceloader%28_,shouldwaitforloadingofrequestedresource%29.md). For example, this method is invoked to for decryption keys that require renewal, as indicated in a response to a prior invocation of [`resourceLoader(_:shouldWaitForLoadingOfRequestedResource:)`](./resourceloader%28_,shouldwaitforloadingofrequestedresource%29.md).
 

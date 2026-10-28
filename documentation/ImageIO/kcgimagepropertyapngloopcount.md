@@ -25,7 +25,7 @@ let kCGImagePropertyAPNGLoopCount: CFString
 extern CFStringRef const kCGImagePropertyAPNGLoopCount;
 ```
 
-#### Discussion
+## Discussion
 
 A value of `0` means the PNG repeats forever.
 

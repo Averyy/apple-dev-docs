@@ -26,7 +26,7 @@ func remotePaymentPasses() -> [PKPaymentPass]
 - (NSArray<PKPaymentPass *> *) remotePaymentPasses;
 ```
 
-#### Return Value
+## Return Value
 
 An array that contains all the passes on a remote paired device (for example, an Apple Watch) for the current device.
 

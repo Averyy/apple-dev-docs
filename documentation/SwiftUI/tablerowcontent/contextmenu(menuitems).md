@@ -20,11 +20,11 @@ Adds a context menu to a table row.
 @preconcurrency func contextMenu<M>(@ContentBuilder menuItems: () -> M) -> ModifiedContent<Self, _ContextMenuTableRowModifier<M>> where M : View
 ```
 
-#### Return Value
+## Return Value
 
 A row that can display a context menu.
 
-#### Discussion
+## Discussion
 
 Use this modifier to add a context menu to a table row. Compose the menu by returning controls like [`Button`](../button.md), [`Toggle`](../toggle.md), and [`Picker`](../picker.md) from the `menuItems` closure. You can also use [`Menu`](../menu.md) to define submenus, or [`Section`](../section.md) to group items.
 

@@ -24,7 +24,7 @@ init(seedPoint: NormalizedPoint, _ revision: GenerateIterativeSegmentationReques
 
 - [Isolating an object from a tap, box, or scribble](../segmenting-objects-with-iterative-refinement.md)
 
-#### Discussion
+## Discussion
 
 No result will be produced if the point is outside the `regionOfInterest`. By default, the `regionOfInterest` is the whole image. This point is counted toward the total number of points that can be added.
 

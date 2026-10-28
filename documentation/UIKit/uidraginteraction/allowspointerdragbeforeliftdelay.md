@@ -22,7 +22,7 @@ var allowsPointerDragBeforeLiftDelay: Bool { get set }
 @property (nonatomic, assign) BOOL allowsPointerDragBeforeLiftDelay;
 ```
 
-#### Discussion
+## Discussion
 
 When this property is [`true`](../../Swift/true.md), a pointer-initiated drag begins as soon as the pointer crosses the minimum movement threshold, regardless of whether the lift delay has elapsed.
 

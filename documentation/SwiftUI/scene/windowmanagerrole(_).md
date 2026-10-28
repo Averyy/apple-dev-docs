@@ -22,7 +22,7 @@ nonisolated
 func windowManagerRole(_ role: WindowManagerRole) -> some Scene
 ```
 
-#### Discussion
+## Discussion
 
 By default, the type of `Scene` and its placement within the app’s definition will determine the behavior of its windows within a window management context.
 

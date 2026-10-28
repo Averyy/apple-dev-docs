@@ -21,7 +21,7 @@ A type that can be initialized with a string literal.
 protocol ExpressibleByStringLiteral : ExpressibleByExtendedGraphemeClusterLiteral
 ```
 
-#### Overview
+## Overview
 
 The `String` and `StaticString` types conform to the `ExpressibleByStringLiteral` protocol. You can initialize a variable or constant of either of these types using a string literal of any length.
 
@@ -29,7 +29,7 @@ The `String` and `StaticString` types conform to the `ExpressibleByStringLiteral
 let picnicGuest = "Deserving porcupine"
 ```
 
-### Conforming to ExpressibleByStringLiteral
+## Conforming to ExpressibleByStringLiteral
 
 To add `ExpressibleByStringLiteral` conformance to your custom type, implement the required initializer.
 

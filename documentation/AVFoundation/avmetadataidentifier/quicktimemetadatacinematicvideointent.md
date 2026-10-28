@@ -25,7 +25,7 @@ static let quickTimeMetadataCinematicVideoIntent: AVMetadataIdentifier
 extern AVMetadataIdentifier const AVMetadataIdentifierQuickTimeMetadataCinematicVideoIntent;
 ```
 
-#### Discussion
+## Discussion
 
 This movie-level metadata is automatically added (with a value of 1) to a movie recorded using the Cinematic Video API. Clients can override it with a value of 0 to signal that this movie is not to be treated as a Cinematic Video by Apple’s software like Photos.
 

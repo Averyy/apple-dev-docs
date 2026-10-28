@@ -21,7 +21,7 @@ The current App Store storefront for product purchases.
 static var current: Storefront? { get async }
 ```
 
-#### Discussion
+## Discussion
 
 Use [`current`](./current.md) to determine a customer’s current storefront region and offer in-app products suitable for that region. You maintain your own list of product identifiers and the storefronts in which you make them available.
 

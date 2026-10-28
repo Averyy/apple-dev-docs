@@ -25,7 +25,7 @@ var bypass: Bool { get set }
 @property (nonatomic) BOOL bypass;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the bypass is active; otherwise, [`false`](../../Swift/false.md).
 

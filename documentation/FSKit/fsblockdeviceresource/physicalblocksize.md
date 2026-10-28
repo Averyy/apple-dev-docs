@@ -19,7 +19,7 @@ var physicalBlockSize: UInt64 { get }
 @property (readonly) uint64_t physicalBlockSize;
 ```
 
-#### Discussion
+## Discussion
 
 This is equivalent to the `DKIOCGETPHYSICALBLOCKSIZE` device parameter.
 

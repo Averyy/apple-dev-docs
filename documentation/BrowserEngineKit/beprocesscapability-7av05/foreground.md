@@ -17,7 +17,7 @@ A capability that enables an extension process to do foreground priority work.
 + (instancetype) foreground;
 ```
 
-#### Discussion
+## Discussion
 
 Use this capability while your browser app is in the foreground to allow extensions that support the browser’s UI to run at foreground priority.
 

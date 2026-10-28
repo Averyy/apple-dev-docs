@@ -25,7 +25,7 @@ let kCVImageBufferCleanApertureHeightKey: CFString
 extern CFStringRef const kCVImageBufferCleanApertureHeightKey;
 ```
 
-#### Discussion
+## Discussion
 
 The clean aperture height value is of type [`CFNumber`](../CoreFoundation/cfnumber.md).
 

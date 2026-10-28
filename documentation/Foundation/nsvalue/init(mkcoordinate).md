@@ -29,7 +29,7 @@ init(mkCoordinate coordinate: CLLocationCoordinate2D)
 + (NSValue *) valueWithMKCoordinate:(CLLocationCoordinate2D) coordinate;
 ```
 
-#### Return Value
+## Return Value
 
 A new value object that contains the geographic coordinate information.
 

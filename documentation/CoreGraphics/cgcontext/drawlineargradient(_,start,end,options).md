@@ -25,7 +25,7 @@ func drawLinearGradient(_ gradient: CGGradient, start startPoint: CGPoint, end e
 extern void CGContextDrawLinearGradient(CGContextRef c, CGGradientRef gradient, CGPoint startPoint, CGPoint endPoint, CGGradientDrawingOptions options);
 ```
 
-#### Discussion
+## Discussion
 
 The color at location 0 in the CGGradient object is mapped to the starting point. The color at location 1 in the CGGradient object is mapped to the ending point. Colors are linearly interpolated between these two points based on the location values of the gradient. The option flags control whether the gradient is drawn before the start point or after the end point.
 

@@ -20,7 +20,7 @@ An object that reports the result of the flashing lights processor.
 @interface MAFlashingLightsProcessorResult : NSObject
 ```
 
-#### Overview
+## Overview
 
 An [`MAFlashingLightsProcessorResult`](./maflashinglightsprocessorresult.md) object is the result of calling [`processSurface:outSurface:timestamp:options:`](./maflashinglightsprocessor/processsurface_outsurface_timestamp_options_.md). This object indicates whether the method successfully processed the input surface, the intensity of flashing lights in the input surface, and the amount of mitigation in the output surface.
 

@@ -27,7 +27,7 @@ optional func resolveSenders(for intent: INSearchForMessagesIntent) async -> [IN
 - (void) resolveSendersForSearchForMessages:(INSearchForMessagesIntent *) intent withCompletion:(void (^)(NSArray<INPersonResolutionResult *> *resolutionResults)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This method resolves the `sender` search parameter. Use the information in the `intent` object to identify the corresponding users in your app. Always strive toward a successful resolution of the specified users, but ask for confirmation for one or more users if there is some uncertainty.
 

@@ -14,7 +14,7 @@
 kUSBPowerDuringWakeUSB3 = 7
 ```
 
-#### Discussion
+## Discussion
 
 This is used by the USB stack to allocate the 400mA extra for USB3, above the 500ma allocated by USB2
 

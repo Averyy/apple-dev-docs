@@ -4,16 +4,16 @@
 
 Contains elements that are not directly evaluated by the template.
 
-#### Overview
+## Overview
 
 The `placeholder` element and all of the elements that it contains are ignored. The `placeholder` element is commonly used with data binding and is replaced by a valid element during run time.
 
-##### Subelements of placeholder
+### Subelements of placeholder
 
 - [relatedContentURL](./relatedcontenturl.md)
 - [rules](./rules.md)
 
-##### Elements that Use placeholder
+### Elements that Use placeholder
 
 - [listItemLockup](./listitemlockup.md)
 - [organizer](./organizer.md)

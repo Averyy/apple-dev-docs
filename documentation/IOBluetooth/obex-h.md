@@ -5,13 +5,13 @@
 
 Public OBEX technology interfaces.
 
-#### Overview
+## Overview
 
 Contains generic OBEX constants, structs, and C API used for all OBEX communication over any transport. For specific transport API, see that transport’s C API. For example, if you wanted to know more about the Bluetooth OBEX implementation, see OBEXBluetooth.h.
 
 The file also contains API that will assist in the construction and deconstruction of OBEX headers to and from raw bytes, as well as the creation of vCards and vEvents.
 
-##### Included Headers
+### Included Headers
 
 - <stdio.h>
 - <stdint.h>

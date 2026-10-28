@@ -23,7 +23,7 @@ func cgImageRepresentation() -> CGImage?
 - (CGImageRef) CGImageRepresentation;
 ```
 
-#### Return Value
+## Return Value
 
 A Core Graphics image representation of the captured photo, or `nil` if the image cannot be converted.
 

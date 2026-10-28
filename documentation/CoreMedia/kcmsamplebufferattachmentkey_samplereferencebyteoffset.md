@@ -25,7 +25,7 @@ let kCMSampleBufferAttachmentKey_SampleReferenceByteOffset: CFString
 extern CFStringRef const kCMSampleBufferAttachmentKey_SampleReferenceByteOffset;
 ```
 
-#### Discussion
+## Discussion
 
 This key is only used for sample buffers representing sample references. Its value is the byte offset from the beginning of data at the referenced URL to the contiguous sample data.
 

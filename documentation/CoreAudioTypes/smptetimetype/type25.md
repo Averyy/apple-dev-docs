@@ -23,7 +23,7 @@ case type25
 kSMPTETimeType25
 ```
 
-#### Discussion
+## Discussion
 
 25 video frames per second—standard for PAL and SECAM video.
 

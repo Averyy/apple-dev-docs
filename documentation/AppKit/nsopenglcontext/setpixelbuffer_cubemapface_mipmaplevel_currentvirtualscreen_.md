@@ -17,7 +17,7 @@ Attaches the specified pixel buffer to the OpenGL context.
 - (void) setPixelBuffer:(NSOpenGLPixelBuffer *) pixelBuffer cubeMapFace:(GLenum) face mipMapLevel:(GLint) level currentVirtualScreen:(GLint) screen;
 ```
 
-#### Discussion
+## Discussion
 
 The `NSOpenGLPixelBuffer` object gives the receiver access to accelerated offscreen rendering in the pixel buffer, which is primarily used for textures.
 

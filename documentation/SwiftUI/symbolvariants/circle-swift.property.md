@@ -21,7 +21,7 @@ A version of the variant that’s encapsulated in a circle.
 var circle: SymbolVariants { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to modify a variant like [`fill`](./fill-swift.property.md) so that it’s also contained in a circle:
 

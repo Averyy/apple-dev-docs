@@ -24,7 +24,7 @@ var projectedPoints: [VNPoint] { get }
 @property (nonatomic, copy, readonly) NSArray<VNPoint *> * projectedPoints;
 ```
 
-#### Discussion
+## Discussion
 
 The projected points define the ideal trajectory described by the parabolic equation. The equation’s coefficients and the projected points of the detected trajectory get refined over time. The system limits the maximum number of cached points to the maximum points needed to describe the trajectory together with the parabolic equation.
 

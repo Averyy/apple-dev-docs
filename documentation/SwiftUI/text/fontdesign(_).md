@@ -22,7 +22,7 @@ nonisolated
 func fontDesign(_ design: Font.Design?) -> Text
 ```
 
-#### Return Value
+## Return Value
 
 Text that uses the font design you specify.
 

@@ -12,11 +12,11 @@ virtual bool isEqualTo(
  const OSMetaClassBase *anObject) const;
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the two objects are equivalent, `false` otherwise.
 
-#### Overview
+## Overview
 
 An OSOrderedSet object is considered equal to another object if the other object is derived from OSOrderedSet and compares equal as an OSOrderedSet.
 

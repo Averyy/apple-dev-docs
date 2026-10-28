@@ -21,11 +21,11 @@ Reads the available data synchronously up to the end of file or maximum number o
 func readToEnd() throws -> Data?
 ```
 
-#### Return Value
+## Return Value
 
 The data available through the file handle up to the maximum size that can be represented by an [`NSData`](../nsdata.md) object or, if a communications channel, until an end-of-file indicator is returned.
 
-#### Discussion
+## Discussion
 
 This method invokes [`readData(ofLength:)`](./readdata%28oflength%29.md) as part of its implementation.
 

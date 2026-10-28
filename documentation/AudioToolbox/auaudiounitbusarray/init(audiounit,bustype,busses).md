@@ -24,7 +24,7 @@ init(audioUnit owner: AUAudioUnit, busType: AUAudioUnitBusType, busses busArray:
 - (instancetype) initWithAudioUnit:(AUAudioUnit *) owner busType:(AUAudioUnitBusType) busType busses:(NSArray<AUAudioUnitBus *> *) busArray;
 ```
 
-#### Return Value
+## Return Value
 
 A newly-initialized bus array.
 

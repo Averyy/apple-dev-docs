@@ -20,7 +20,7 @@ init(event: CareStoreFetchedResult<OCKAnyEvent>, numberFormatter: NumberFormatte
 
 Available when `Header` conforms to `View`.
 
-#### Discussion
+## Discussion
 
 This view displays the numeric progress and goal for the event by summing outcome values.
 

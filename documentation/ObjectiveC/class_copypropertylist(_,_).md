@@ -25,7 +25,7 @@ func class_copyPropertyList(_ cls: AnyClass?, _ outCount: UnsafeMutablePointer<U
 extern objc_property_t*class_copyPropertyList(Class cls, unsigned int *outCount);
 ```
 
-#### Return Value
+## Return Value
 
 An array of pointers of type `objc_property_t` describing the properties declared by the class. Any properties declared by superclasses are not included. The array contains `*outCount` pointers followed by a `NULL` terminator. You must free the array with `free()`.
 

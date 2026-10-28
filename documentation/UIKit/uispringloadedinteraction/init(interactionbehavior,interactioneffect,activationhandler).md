@@ -22,7 +22,7 @@ init(interactionBehavior: (any UISpringLoadedInteractionBehavior)?, interactionE
 - (instancetype) initWithInteractionBehavior:(id<UISpringLoadedInteractionBehavior>) interactionBehavior interactionEffect:(id<UISpringLoadedInteractionEffect>) interactionEffect activationHandler:(void (^)(UISpringLoadedInteraction *interaction, id<UISpringLoadedInteractionContext>context)) handler;
 ```
 
-#### Return Value
+## Return Value
 
 A spring-loaded interaction that has a specific behavior, visual effect, and activation handler block.
 

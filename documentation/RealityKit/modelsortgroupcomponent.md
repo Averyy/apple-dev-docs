@@ -20,7 +20,7 @@ A component that configures the rendering order for an entity’s model.
 struct ModelSortGroupComponent
 ```
 
-#### Overview
+## Overview
 
 Tell the renderer to draw a model on top of another by adding a `ModelSortGroupComponent` instance to both entities.
 
@@ -32,7 +32,7 @@ The scenario below shows a living room scene that has two rectangular cuboids wh
 
 The sections below demonstrate how to change the default behavior by configuring the properties of the model sort group component.
 
-##### Set the draw order
+### Set the draw order
 
 To tell the renderer to draw the red cuboid before the blue one, add a `ModelSortGroupComponent` instance to both cuboids. Then set both component’s [`order`](./modelsortgroupcomponent/order.md) property so that the red cuboid’s component has a smaller value than the blue cuboid’s component.
 
@@ -69,7 +69,7 @@ If the renderer instead draws the blue cuboid first, and the translucent red cub
 
 Rendering the blue cuboid produces the same result as if the two cuboids weren’t in a sort group.
 
-##### Set the depth pass
+### Set the depth pass
 
 In the examples in the previous section, the renderer draws each model’s depth and color together, at the same time.
 

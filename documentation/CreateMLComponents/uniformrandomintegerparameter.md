@@ -21,7 +21,7 @@ Applies the transformer with a randomly generated input parameter.
 final class UniformRandomIntegerParameter<RandomTransformer, Parameter> where RandomTransformer : RandomTransformer, Parameter : FixedWidthInteger, RandomTransformer.Input == RandomTransformer.Output
 ```
 
-#### Overview
+## Overview
 
 The parameter is chosen from a discrete uniform distribution in the specified range.
 

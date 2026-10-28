@@ -19,7 +19,7 @@ The percentage of charge that remains for the electric vehicle.
 final var chargePercentRemaining: Float? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Typically, you assign a value to this property only after handling the intent.
 

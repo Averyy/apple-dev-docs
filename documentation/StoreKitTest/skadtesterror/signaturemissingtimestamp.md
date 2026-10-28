@@ -17,7 +17,7 @@ The signature is missing a timestamp, in the testing environment.
 static var signatureMissingTimestamp: SKAdTestError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 Be sure to include a timestamp when you create and validate an ad impression in the testing environment.
 

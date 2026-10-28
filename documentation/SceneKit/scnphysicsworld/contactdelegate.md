@@ -25,7 +25,7 @@ weak var contactDelegate: (any SCNPhysicsContactDelegate)? { get set }
 @property (atomic, weak, nullable) id<SCNPhysicsContactDelegate> contactDelegate;
 ```
 
-#### Discussion
+## Discussion
 
 A contact is created when two physics bodies overlap and one of the physics bodies has a [`collisionBitMask`](../scnphysicsbody/collisionbitmask.md) property that overlaps with the other body’s [`categoryBitMask`](../scnphysicsbody/categorybitmask.md) property.
 

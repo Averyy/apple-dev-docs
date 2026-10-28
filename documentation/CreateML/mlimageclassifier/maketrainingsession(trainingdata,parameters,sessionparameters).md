@@ -26,7 +26,7 @@ static func makeTrainingSession(trainingData: MLImageClassifier.DataSource, para
         ), sessionParameters: MLTrainingSessionParameters = _defaultSessionParameters) throws -> MLTrainingSession<MLImageClassifier>
 ```
 
-#### Return Value
+## Return Value
 
 A `MLTrainingSession` that can be used to start or resume training.
 

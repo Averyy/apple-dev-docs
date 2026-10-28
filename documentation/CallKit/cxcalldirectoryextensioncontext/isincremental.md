@@ -22,7 +22,7 @@ var isIncremental: Bool { get }
 @property (nonatomic, readonly, getter=isIncremental) BOOL incremental;
 ```
 
-#### Discussion
+## Discussion
 
 Before adding or removing any entries, if you call this method and the value is [`true`](../../Swift/true.md), the request must only add or remove entries relative to the last time the system loaded data for the extension. Otherwise, if you don’t call this method, or if the value is [`false`](../../Swift/false.md), the request must add the full list of entries without removing any, regardless of whether the system loaded data in the past.
 

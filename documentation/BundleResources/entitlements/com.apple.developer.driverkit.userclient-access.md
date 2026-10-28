@@ -14,7 +14,7 @@ An array of strings that represent macOS driver extensions that may communicate 
 - **Name**: `com.apple.developer.driverkit.userclient-access`
 - **Type**: array of string 
 
-#### Discussion
+## Discussion
 
 Add this entitlement to your app that opens the [`IOUserClient`](../../DriverKit/iouserclient.md). Set its value to an array of bundle IDs of driver extensions that you want to use with DriverKit. If you have only one bundle ID, you can use either a single string or a one-element array.
 

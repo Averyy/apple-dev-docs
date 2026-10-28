@@ -17,7 +17,7 @@ A Boolean value that indicates whether the consumer bypassed the PIN entry.
 let pinBypassed: Bool
 ```
 
-#### Discussion
+## Discussion
 
 When the framework sets this property to `false`, the consumer didn’t bypass the PIN entry or it wasn’t required.
 

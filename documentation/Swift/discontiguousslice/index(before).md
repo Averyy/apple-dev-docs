@@ -23,7 +23,7 @@ func index(before i: DiscontiguousSlice<Base>.Index) -> DiscontiguousSlice<Base>
 
 Available when `Base` conforms to `BidirectionalCollection`.
 
-#### Return Value
+## Return Value
 
 The index value immediately before `i`.
 

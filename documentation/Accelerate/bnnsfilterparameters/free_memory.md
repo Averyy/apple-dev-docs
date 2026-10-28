@@ -25,7 +25,7 @@ var free_memory: BNNSFree?
 BNNSFree free_memory;
 ```
 
-#### Discussion
+## Discussion
 
 Must be compatible with the [`alloc_memory`](./alloc_memory.md) function. If `nil`, `free()` will be called.
 

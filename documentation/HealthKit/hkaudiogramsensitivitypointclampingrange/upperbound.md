@@ -23,7 +23,7 @@ var upperBound: HKQuantity? { get }
 @property (nonatomic, copy, readonly, nullable) HKQuantity * upperBound;
 ```
 
-#### Discussion
+## Discussion
 
 The upper bound of the clamping range, if any, in dBHL.
 

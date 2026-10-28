@@ -25,7 +25,7 @@ func CFStringHasSuffix(_ theString: CFString!, _ suffix: CFString!) -> Bool
 extern Boolean CFStringHasSuffix(CFStringRef theString, CFStringRef suffix);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if `theString` ends with `suffix`, `false` otherwise.
 

@@ -19,7 +19,7 @@ optional func textLayoutOrientation(at location: any NSTextLocation) -> NSTextSe
 - (NSTextSelectionNavigationLayoutOrientation) textLayoutOrientationAtLocation:(id<NSTextLocation>) location;
 ```
 
-#### Return Value
+## Return Value
 
 Returns an [`NSTextSelectionNavigation.LayoutOrientation`](../nstextselectionnavigation/layoutorientation.md) that describes the orientation of the layout.
 

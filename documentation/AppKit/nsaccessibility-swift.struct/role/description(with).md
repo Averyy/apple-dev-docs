@@ -19,7 +19,7 @@ func description(with subrole: NSAccessibility.Subrole?) -> String?
 extern NSString *NSAccessibilityRoleDescription(NSAccessibilityRole role, NSAccessibilitySubrole subrole);
 ```
 
-#### Discussion
+## Discussion
 
 You should pass `nil` to this function if there is no subrole. This function returns a description of a standard role. For example, if you implement a button widget that does not inherit from [`NSButton`](../../nsbutton.md), you should use this function to return a localized role description matching that returned by a standard button.
 

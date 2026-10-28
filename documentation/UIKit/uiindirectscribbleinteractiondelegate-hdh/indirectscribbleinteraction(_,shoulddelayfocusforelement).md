@@ -19,7 +19,7 @@ Allow the delegate to delay focusing an element.
 func indirectScribbleInteraction(_ interaction: any UIInteraction, shouldDelayFocusForElement elementIdentifier: Self.ElementIdentifier) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 Return [`true`](../../Swift/true.md) to delay focusing the element; the default is [`false`](../../Swift/false.md).
 

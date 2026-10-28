@@ -15,7 +15,7 @@ An IOMemoryDescriptor used for device physical memory ranges.
 class IODeviceMemory : IOMemoryDescriptor
 ```
 
-#### Overview
+## Overview
 
 The IODeviceMemory class is a simple subclass of IOMemoryDescriptor that uses its methods to describe a single range of physical memory on a device. IODeviceMemory objects are usually looked up with IOService or IOPCIDevice accessors, and are created by memory-mapped bus families. IODeviceMemory implements only some factory methods in addition to the methods of IOMemoryDescriptor.
 

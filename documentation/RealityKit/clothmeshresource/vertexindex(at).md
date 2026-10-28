@@ -17,11 +17,11 @@ Returns the vertex index at the given position in the mesh’s flattened primiti
 final func vertexIndex(at index: UInt32) -> UInt32
 ```
 
-#### Return Value
+## Return Value
 
 The vertex index at the specified position.
 
-#### Discussion
+## Discussion
 
 The mesh is formed by triangles with three vertices each. Different triangles can share the same vertex (for example, two adjacent triangles share the two vertices joined by their common edge).
 

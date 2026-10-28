@@ -19,7 +19,7 @@ object Text
 
 - [Supporting Dark Mode for Your Article](../AppleNews/supporting-dark-mode-for-your-article.md)
 
-#### Discussion
+## Discussion
 
 Apple News Format offers a range of `Text` components, each with its own `role`. You can use the [`Title`](./title.md) component for title text, [`Body`](./body.md) for body text, [`Intro`](./intro.md) for an article introduction, [`Caption`](./caption.md) text for media.
 

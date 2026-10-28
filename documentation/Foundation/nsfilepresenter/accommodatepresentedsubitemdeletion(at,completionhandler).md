@@ -29,7 +29,7 @@ optional func accommodatePresentedSubitemDeletion(at url: URL) async throws
 - (void) accommodatePresentedSubitemDeletionAtURL:(NSURL *) url completionHandler:(void (^)(NSError *errorOrNil)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 This method is relevant for applications that present directories. This might occur if the delegate manages the contents of a directory or manages a file that is implemented as a file package. When called, your implementation of this method should take whatever actions needed to update your application to handle the deletion of the specified file.
 

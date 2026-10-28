@@ -19,7 +19,7 @@ class func shared() -> CWWiFiClient
 + (CWWiFiClient *) sharedWiFiClient;
 ```
 
-#### Discussion
+## Discussion
 
 Each process spawns its own shared instance.
 

@@ -24,7 +24,7 @@ var reactiveMaskTexture: (any MTLTexture)? { get set }
 @property (nonatomic, retain, nullable) id<MTLTexture> reactiveMaskTexture;
 ```
 
-#### Discussion
+## Discussion
 
 This texture helps guide the denoiser when objects move quickly in a scene with inaccurate motion information, such as when they involve alpha blending. In these situations, you can get better results by guiding MetalFX whether to favor the current frame on a per-pixel basis with a reactive mask texture.
 

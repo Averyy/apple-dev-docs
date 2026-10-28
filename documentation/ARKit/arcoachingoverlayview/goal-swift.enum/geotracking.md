@@ -20,7 +20,7 @@ case geoTracking
 ARCoachingGoalGeoTracking
 ```
 
-#### Discussion
+## Discussion
 
 When you set this goal, the coaching overlay provides the user instructions when they start a geotracking session, or when they go off course during a session.
 

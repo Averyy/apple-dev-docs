@@ -21,7 +21,7 @@ Returns the result of performing a bitwise AND operation on the two given values
 static func & (lhs: Int8, rhs: Int8) -> Int8
 ```
 
-#### Discussion
+## Discussion
 
 A bitwise AND operation results in a value that has each bit set to `1` where *both* of its arguments have that bit set to `1`. For example:
 

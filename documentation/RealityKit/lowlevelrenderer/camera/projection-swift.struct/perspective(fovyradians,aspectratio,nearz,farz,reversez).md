@@ -18,7 +18,7 @@ Creates a symmetric perspective projection from a vertical field-of-view angle.
 static func perspective(fovYRadians: Float, aspectRatio: Float, nearZ: Float, farZ: Float, reverseZ: Bool = true) -> LowLevelRenderer.Camera.Projection
 ```
 
-#### Return Value
+## Return Value
 
 A symmetric perspective [`LowLevelRenderer.Camera.Projection`](../projection-swift.struct.md).
 

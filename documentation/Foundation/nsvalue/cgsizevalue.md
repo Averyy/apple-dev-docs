@@ -24,7 +24,7 @@ var cgSizeValue: CGSize { get }
 @property (nonatomic, readonly) CGSize CGSizeValue;
 ```
 
-#### Return Value
+## Return Value
 
 The CoreGraphics size structure representation of the value.
 

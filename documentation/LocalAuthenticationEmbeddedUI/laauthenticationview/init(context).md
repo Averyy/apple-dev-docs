@@ -19,7 +19,7 @@ init(context: LAContext)
 - (instancetype) initWithContext:(LAContext *) context;
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to create a local authentication view and connect it to a particular local authentication context. You typically do this in the [`loadView()`](../../AppKit/nsviewcontroller/loadview%28%29.md) method of an [`NSViewController`](../../AppKit/nsviewcontroller.md) subclass. You then add this view as a subview — along with any text, imagery, and interactive elements that you need — to create a custom authentication interface. When your interface appears, call the [`LAContext`](../../LocalAuthentication/lacontext.md) instance’s [`evaluatePolicy(_:localizedReason:reply:)`](../../LocalAuthentication/lacontext/evaluatepolicy%28_,localizedreason,reply%29.md) method to begin the authentication process.
 

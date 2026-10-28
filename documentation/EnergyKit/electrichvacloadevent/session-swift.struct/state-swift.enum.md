@@ -17,7 +17,7 @@ The state of the session.
 enum State
 ```
 
-#### Overview
+## Overview
 
 When a device transitions from from idle to consuming electricity, it must create a load event with [`ElectricHVACLoadEvent.Session.State.begin`](./state-swift.enum/begin.md). As it reports events, it sends load events with [`ElectricHVACLoadEvent.Session.State.active`](./state-swift.enum/active.md). Once idle, it closes the session with [`ElectricHVACLoadEvent.Session.State.end`](./state-swift.enum/end.md).
 

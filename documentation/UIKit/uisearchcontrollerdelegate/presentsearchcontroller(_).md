@@ -23,7 +23,7 @@ optional func presentSearchController(_ searchController: UISearchController)
 - (void) presentSearchController:(UISearchController *) searchController;
 ```
 
-#### Discussion
+## Discussion
 
 The system calls this method when the user begins editing in the search controller, or you set the [`isActive`](../uisearchcontroller/isactive.md) property to [`true`](../../Swift/true.md). The system performs a default presentation if you don’t implement this method or you present the controller yourself.
 

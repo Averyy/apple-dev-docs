@@ -25,7 +25,7 @@ class NSOrthography
 @interface NSOrthography : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use [`NSOrthography`](./nsorthography.md) objects to describe the linguistic content of a piece of text, including which scripts the text contains, a dominant language (and possibly other languages) for each script, and a dominant script and language for the text as a whole.
 
@@ -35,7 +35,7 @@ Languages are uniformly described by BCP-47 tags (preferably in canonical form).
 
 You typically work with orthography objects returned from methods and properties for classes like [`NSLinguisticTagger`](./nslinguistictagger.md) and [`NSSpellChecker`](../AppKit/nsspellchecker.md).
 
-##### Subclassing Notes
+### Subclassing Notes
 
 Subclasses must override the [`dominantScript`](./nsorthography/dominantscript.md) and [`languageMap`](./nsorthography/languagemap.md) properties. These properties are set using [`init(dominantScript:languageMap:)`](./nsorthography/init%28dominantscript,languagemap%29.md) or [`orthographyWithDominantScript:languageMap:`](./nsorthography/orthographywithdominantscript_languagemap_.md) in Objective-C.
 

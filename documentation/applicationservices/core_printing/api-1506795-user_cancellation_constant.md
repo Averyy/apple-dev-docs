@@ -4,7 +4,7 @@
 
 A constant that specifies an error value that indicates the user canceled a printing operation.
 
-#### Overview
+## Overview
 
 This constant is provided for compatibility with old applications and printer drivers that expect the `iPrAbort` error code to be returned when the user cancels a printing operation.
 

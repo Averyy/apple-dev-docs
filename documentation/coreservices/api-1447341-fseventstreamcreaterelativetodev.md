@@ -18,11 +18,11 @@ func FSEventStreamCreateRelativeToDevice(_ allocator: CFAllocator?, _ callback: 
 FSEventStreamRef FSEventStreamCreateRelativeToDevice(CFAllocatorRef allocator, FSEventStreamCallback callback, FSEventStreamContext *context, dev_t deviceToWatch, CFArrayRef pathsToWatchRelativeToDevice, FSEventStreamEventId sinceWhen, CFTimeInterval latency, FSEventStreamCreateFlags flags);
 ```
 
-#### Return Value
+## Return Value
 
 A valid FSEventStreamRef.
 
-#### Discussion
+## Discussion
 
 Creates a new FS event stream object for a particular device with the given parameters. In order to start receiving callbacks you must also call FSEventStreamScheduleWithRunLoop() and FSEventStreamStart().
 

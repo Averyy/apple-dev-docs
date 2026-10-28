@@ -24,7 +24,7 @@ func applyStrokeProperties(to context: CGContext, atZoomScale zoomScale: MKZoomS
 - (void) applyStrokePropertiesToContext:(CGContextRef) context atZoomScale:(MKZoomScale) zoomScale;
 ```
 
-#### Discussion
+## Discussion
 
 This is a convenience method for applying all of the drawing properties MapKit uses when stroking a path. This method applies the stroke color, line width, line join, line cap, miter limit, line dash phase, and line dash attributes to the specified graphics context. This method applies the scale factor in the `zoomScale` parameter to the line width and line dash pattern automatically so that lines scale appropriately.
 

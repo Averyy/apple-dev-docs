@@ -5,7 +5,7 @@
 
 Give users confidence in your FxPlug plug-in by enabling notarization.
 
-#### Overview
+## Overview
 
 [Code signing](https://developer.apple.com/support/code-signing/) your plug-in assures users that it’s from a known source and that modifications haven’t occurred since its certification. You must sign your plug-in with a certificate from Apple before you can integrate app services, install it on a device, or submit it to the App Store.
 
@@ -13,21 +13,21 @@ You can give users even more confidence in the Apple-certified software that you
 
 When the user first installs or runs your plug-in, the presence of a ticket (either online or as an attachment to the executable) tells Gatekeeper that Apple notarized the software. Gatekeeper then places descriptive information in the initial launch dialog so the user can make an informed choice about whether to launch the plug-in’s wrapper application.
 
-##### Set up for code signing your plug-in
+### Set up for code signing your plug-in
 
 If you haven’t already, enroll in the [Apple Developer Program](https://developer.apple.com/programs/), then follow the [Signing & Capabilities workflow](https://help.apple.com/xcode/mac/current/#/dev60b6fbbc7) instructions and generate a Developer ID certificate for macOS distribution. Apple recommends [automatic signing](https://help.apple.com/xcode/mac/current/#/dev80cc24546).
 
-##### Set your plug-in’s code signing team and signing certificate
+### Set your plug-in’s code signing team and signing certificate
 
 The FxPlug template and FxPlug Example projects are set to Sign to Run Locally, but you need to change this to your own signing certificate for your targets to enable code signing.
 
 For Wrapper Application and XPC Service targets, select your Team (if applicable) and the signing certificate you prepared in the previous step.
 
-##### Set your XPC service’s code signing inject base entitlements
+### Set your XPC service’s code signing inject base entitlements
 
 You must set your XPC Service target’s Code Signing Inject Base Entitlements to `YES` to ensure your plug-in loads correctly in Final Cut Pro and Motion. Select your XPC Service target, then select the Build Settings tab, and find Code Signing Inject Base Entitlements in the Signing section.
 
-##### Code sign embedded frameworks
+### Code sign embedded frameworks
 
 You must copy the `FxPlug.framework` to the XPC Service target of FxPlug plug-ins and turn on Code Sign On Copy to automatically code sign the framework when it copies to the bundle. Add other frameworks as necessary.
 
@@ -37,7 +37,7 @@ You must copy the `FxPlug.framework` to the XPC Service target of FxPlug plug-in
 
 > ❗ **Important**:  Deselect the “Based on dependency analysis” checkbox in the “Run script” options, and set “User Script Sandboxing” to No in Build Settings.
 
-##### Enable Hardened Runtime
+### Enable Hardened Runtime
 
 [Hardened runtime](https://help.apple.com/xcode/mac/current/#/devf87a2ac8f) provides security protection for your plug-ins and is a requirement for notarizing a macOS plug-in. You must enable the hardened runtime capability and declare entitlements for the functions your plug-in requires.
 
@@ -49,7 +49,7 @@ You must copy the `FxPlug.framework` to the XPC Service target of FxPlug plug-in
 
 You can check for errors by building and running your plug-in, and then launching Console and searching for the process name of your plug-in.
 
-##### Generate a notarized distributable version
+### Generate a notarized distributable version
 
 Before distributing your plug-in directly to customers, you must sign it with your Developer ID. Xcode’s Organizer window includes a workflow for generating a distributable version of your app. In Xcode 10 and later, this workflow includes an option to notarize your FxPlug plug-in automatically. Notarize your app using the following workflow:
 

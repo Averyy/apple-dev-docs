@@ -16,11 +16,11 @@ nonisolated
 func preferredSurroundingsEffect(_ effect: SurroundingsEffect?) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that exhibits the specified preference.
 
-#### Discussion
+## Discussion
 
 Use this modifier to indicate a preference for the appearance of passthrough video when displaying the modified view. For example, you can enhance the immersiveness of a scene that uses the default [`mixed`](../immersionstyle/mixed.md) immersion style by applying the [`systemDark`](../surroundingseffect/systemdark.md) preference to a view inside the scene:
 

@@ -25,7 +25,7 @@ static let hiraganaToKatakana: StringTransform
 extern NSStringTransform const NSStringTransformHiraganaToKatakana;
 ```
 
-#### Discussion
+## Discussion
 
 This transformation is reversible.
 

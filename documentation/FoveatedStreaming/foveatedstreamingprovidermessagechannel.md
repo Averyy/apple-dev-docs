@@ -16,7 +16,7 @@ A message channel between the host app and a streaming provider extension.
 final class FoveatedStreamingProviderMessageChannel
 ```
 
-#### Overview
+## Overview
 
 Message channels are created by the framework when the host app opens a channel and delivered to the extension via [`openMessageChannel(_:)`](./foveatedstreamingextension/openmessagechannel%28_%29.md). Provider extensions do not construct values of this type directly.
 

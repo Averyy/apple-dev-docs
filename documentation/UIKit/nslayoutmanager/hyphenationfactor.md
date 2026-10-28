@@ -24,7 +24,7 @@ var hyphenationFactor: CGFloat { get set }
 @property CGFloat hyphenationFactor;
 ```
 
-#### Discussion
+## Discussion
 
 Whenever (width of the real contents of the line) / (the line fragment width) is below `factor`, hyphenation is attempted when laying out the line. Hyphenation slows down text layout and increases memory usage, so it should be used sparingly.
 

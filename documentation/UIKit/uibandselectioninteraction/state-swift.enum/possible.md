@@ -22,7 +22,7 @@ case possible
 UIBandSelectionInteractionStatePossible
 ```
 
-#### Discussion
+## Discussion
 
 A [`UIBandSelectionInteraction`](../../uibandselectioninteraction.md) object in this state is waiting for events to occur that start the interaction. When an interaction concludes, the interaction returns to this state until a new interaction begins.
 

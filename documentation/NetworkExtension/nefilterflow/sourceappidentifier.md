@@ -22,7 +22,7 @@ var sourceAppIdentifier: String? { get }
 @property (readonly, nullable) NSString * sourceAppIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 This identifier remains the same for all versions and builds of the app and is unique among all apps.
 

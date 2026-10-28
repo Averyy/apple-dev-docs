@@ -22,7 +22,7 @@ var isActive: Bool { get }
 @property (readonly, getter=isActive) BOOL active;
 ```
 
-#### Discussion
+## Discussion
 
 Use key-value observing to watch for changes in this property.
 

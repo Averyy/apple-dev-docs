@@ -14,7 +14,7 @@
 virtual uint32_t getPhysicalMin();
 ```
 
-#### Return Value
+## Return Value
 
 Returns the element’s physical minimum.
 

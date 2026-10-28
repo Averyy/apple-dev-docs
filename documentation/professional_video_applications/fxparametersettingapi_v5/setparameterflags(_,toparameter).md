@@ -20,11 +20,11 @@ func setParameterFlags(_ flags: FxParameterFlags, toParameter parameterID: UInt3
 - (BOOL) setParameterFlags:(FxParameterFlags) flags toParameter:(UInt32) parameterID;
 ```
 
-#### Return Value
+## Return Value
 
 Returns `YES` if the value is set successfully; `NO` otherwise.
 
-#### Discussion
+## Discussion
 
 Setting or resetting the `kFxParameterFlag_HIDDEN` flag on a `ParameterSubGroup` parameter will also hide or reveal all of the controls within the group. Likewise, changing the `kFxParameterFlag_DISABLED` flag value affects all of the controls within the group as well.
 

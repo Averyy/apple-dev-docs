@@ -21,11 +21,11 @@ Returns a new URL made by resolving bookmark data.
 + (instancetype) URLByResolvingBookmarkData:(NSData *) bookmarkData options:(NSURLBookmarkResolutionOptions) options relativeToURL:(NSURL *) relativeURL bookmarkDataIsStale:(BOOL *) isStale error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A new URL made by resolving `bookmarkData`.
 
-#### Discussion
+## Discussion
 
 This method fails if the original file or directory could not be located or is on a volume that could not be mounted. If this method fails, you can use the [`resourceValues(forKeys:fromBookmarkData:)`](./resourcevalues%28forkeys,frombookmarkdata%29.md) method to obtain information about the bookmark, such as the last known path ([`pathKey`](../urlresourcekey/pathkey.md)) to help the user decide how to proceed.
 

@@ -19,7 +19,7 @@ func delayCurrentPacket(_ context: NEFilterPacketContext) -> NEPacket
 - (NEPacket *) delayCurrentPacket:(NEFilterPacketContext *) context;
 ```
 
-#### Discussion
+## Discussion
 
 This function is only valid within the [`packetHandler`](./packethandler.md) Swift closure or ObjectiveC block, which must return [`NEFilterPacketProvider.Verdict.delay`](./verdict/delay.md) after delaying the packet. The framework prevents further delivery of the packet through the network stack until it’s allowed or dropped. Allow the packet by calling [`allow(_:)`](./allow%28_%29.md), or drop it by releasing it.
 

@@ -24,7 +24,7 @@ class CAEmitterCell
 @interface CAEmitterCell : NSObject
 ```
 
-#### Overview
+## Overview
 
 The [`CAEmitterCell`](./caemittercell.md) class represents one source of particles being emitted by a [`CAEmitterLayer`](./caemitterlayer.md) object. An emitter cell defines the direction and properties of the emitted particles. Emitter cells can have an array of sub-cells, which lets the particles themselves emit particles.
 

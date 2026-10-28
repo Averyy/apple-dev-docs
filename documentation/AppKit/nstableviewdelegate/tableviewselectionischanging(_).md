@@ -20,7 +20,7 @@ optional func tableViewSelectionIsChanging(_ notification: Notification)
 - (void) tableViewSelectionIsChanging:(NSNotification *) notification;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called only when mouse events—and not keyboard events—are changing the selection. For example, this method is called when the user drags the mouse across multiple table rows.
 

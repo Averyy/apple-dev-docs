@@ -16,15 +16,15 @@ Requests the evaluation of insights.
 final nonisolated(nonsending) func requestEvaluation<each I>(context: InsightEvaluator.InsightContext<repeat each I>) async throws -> InsightEvaluation<repeat (each I).InsightType> where repeat each I : InsightEvaluator.InsightRequestProtocol
 ```
 
-#### Return Value
+## Return Value
 
 The [`InsightEvaluation`](../insightevaluation.md) that contains the results of the evaluation.
 
-#### Discussion
+## Discussion
 
 > **Throws**: An [`InsightEvaluator.EvaluationError`](./evaluationerror.md) if the framework fails to produce an evaluation.
 
-#### Discussion
+## Discussion
 
 > **Note**: The evaluation process includes processing both on device and on Apple’s servers and can take several seconds to perform an evaluation.
 

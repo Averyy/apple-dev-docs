@@ -25,7 +25,7 @@ var apduTemplate: Data? { get set }
 @property (copy, nullable) NSData * APDUTemplate;
 ```
 
-#### Discussion
+## Discussion
 
 If `nil`, the system will not attempt to authenticate by sending the formatted APDU to the Smart Card. Instead, the token itself is expected to perform the authentication. You are encouraged to provide an APDU template, if possible, as it allows the use of a hardware interface for secure PIN entry, provided one exists.
 

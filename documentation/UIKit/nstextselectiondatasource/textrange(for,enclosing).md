@@ -24,7 +24,7 @@ func textRange(for selectionGranularity: NSTextSelection.Granularity, enclosing 
 - (NSTextRange *) textRangeForSelectionGranularity:(NSTextSelectionGranularity) selectionGranularity enclosingLocation:(id<NSTextLocation>) location;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the text range of the section, or `nil` when `documentRange.isEmpty` `true`.
 

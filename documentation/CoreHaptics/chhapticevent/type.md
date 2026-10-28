@@ -24,7 +24,7 @@ var type: CHHapticEvent.EventType { get }
 @property (readonly) CHHapticEventType type;
 ```
 
-#### Discussion
+## Discussion
 
 An audio event can be one of two types: [`audioCustom`](./eventtype/audiocustom.md) or [`audioContinuous`](./eventtype/audiocontinuous.md). Haptic events can be [`hapticTransient`](./eventtype/haptictransient.md) or [`hapticContinuous`](./eventtype/hapticcontinuous.md):
 

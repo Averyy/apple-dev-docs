@@ -5,7 +5,7 @@
 
 Create and manage keys for an alternative app distribution.
 
-#### Overview
+## Overview
 
 As an alternative marketplace developer you create keys and JSON web tokens (JWTs) to authenticate and connect your marketplace to the apps distributed on your marketplace.
 

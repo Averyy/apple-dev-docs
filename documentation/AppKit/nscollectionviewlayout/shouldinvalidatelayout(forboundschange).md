@@ -19,11 +19,11 @@ func shouldInvalidateLayout(forBoundsChange newBounds: NSRect) -> Bool
 - (BOOL) shouldInvalidateLayoutForBoundsChange:(NSRect) newBounds;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if a layout should be invalidated or [`false`](../../Swift/false.md) if the layout is still valid.
 
-#### Discussion
+## Discussion
 
 The default implementation of this method returns [`false`](../../Swift/false.md). You can override this method in your custom layout classes and return a different value as needed. Your implementation of the method should determine if the new bounds would cause changes to the layout of other portions of the collection view.
 

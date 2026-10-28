@@ -30,7 +30,7 @@ var contentURL: URL? { get }
 
 - [Unlocking purchased content](../unlocking-purchased-content.md)
 
-#### Discussion
+## Discussion
 
 The value of this property is valid only when the [`downloadState`](./downloadstate.md) property is set to [`SKDownloadState.finished`](../skdownloadstate/finished.md). The URL becomes invalid after the transaction object associated with the download is finalized.
 

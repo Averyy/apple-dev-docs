@@ -16,7 +16,7 @@ The PIN or password doesn’t meet the specified conditions.
 case invalidInput
 ```
 
-#### Discussion
+## Discussion
 
 This error occurs when there’s an attempt to update the PIN or password for a digitial identity and the provided information doesn’t meet the defined requirements.
 

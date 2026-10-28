@@ -25,7 +25,7 @@ func requestRecordPermission(_ response: @escaping (Bool) -> Void)
 - (void) requestRecordPermission:(void (^)(BOOL granted)) response;
 ```
 
-#### Discussion
+## Discussion
 
 Recording audio requires explicit permission from the user. The first time your app’s audio session attempts to record from an audio input, the system automatically prompts the user for permission. You can explicitly ask earlier by calling this method. Until the user grants your app permission to record, your app records only silence. When a user responds to a recording permission prompt for your app, the system remembers the choice. If the user has denied recording permission, they can reenable it in Settings > Privacy > Microphone.
 

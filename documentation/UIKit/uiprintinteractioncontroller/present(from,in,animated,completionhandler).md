@@ -22,7 +22,7 @@ func present(from rect: CGRect, in view: UIView, animated: Bool, completionHandl
 - (BOOL) presentFromRect:(CGRect) rect inView:(UIView *) view animated:(BOOL) animated completionHandler:(UIPrintInteractionCompletionHandler) completion;
 ```
 
-#### Discussion
+## Discussion
 
 It is valid to call this method for applications on iPad devices. Calling this method on an iPhone or iPod touch with `animated` set to [`true`](../../Swift/true.md) causes the printing options view to animate upward from the bottom of the screen.
 

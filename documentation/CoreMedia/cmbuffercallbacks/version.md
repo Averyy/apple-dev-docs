@@ -25,7 +25,7 @@ var version: UInt32
 uint32_t version;
 ```
 
-#### Discussion
+## Discussion
 
 The `version` must be 0.
 

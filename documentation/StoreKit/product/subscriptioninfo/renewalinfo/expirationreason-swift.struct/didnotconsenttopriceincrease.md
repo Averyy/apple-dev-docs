@@ -25,7 +25,7 @@ static let didNotConsentToPriceIncrease: Product.SubscriptionInfo.RenewalInfo.Ex
 
 - [Managing Price Increases for Auto-Renewable Subscriptions](../../../../managing-price-increases-for-auto-renewable-subscriptions.md)
 
-#### Discussion
+## Discussion
 
 The customer didn’t consent to an auto-renewable subscription price increase that requires their consent, or to a subscription offer conversion that requires their consent, so the subscription expired.
 

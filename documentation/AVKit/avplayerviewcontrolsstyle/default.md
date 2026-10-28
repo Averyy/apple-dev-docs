@@ -19,7 +19,7 @@ static var `default`: AVPlayerViewControlsStyle { get }
 AVPlayerViewControlsStyleDefault
 ```
 
-#### Discussion
+## Discussion
 
 The default controls style is [`AVPlayerViewControlsStyle.inline`](./inline.md).
 

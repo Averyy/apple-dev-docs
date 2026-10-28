@@ -20,7 +20,7 @@ A property wrapper type that you use to create an AppKit app delegate.
 
 - [Migrating to the SwiftUI life cycle](./migrating-to-the-swiftui-life-cycle.md)
 
-#### Overview
+## Overview
 
 To handle app delegate callbacks in an app that uses the SwiftUI life cycle, define a type that conforms to the [`NSApplicationDelegate`](../AppKit/nsapplicationdelegate.md) protocol, and implement the delegate methods that you need. For example, you can implement the [`application(_:didRegisterForRemoteNotificationsWithDeviceToken:)`](../AppKit/nsapplicationdelegate/application%28_,didregisterforremotenotificationswithdevicetoken%29.md) method to handle remote notification registration:
 

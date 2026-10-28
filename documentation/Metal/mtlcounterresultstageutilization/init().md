@@ -20,7 +20,7 @@ Creates a default stage-utilization result.
 init()
 ```
 
-#### Discussion
+## Discussion
 
 Metal creates [`MTLCounterResultStageUtilization`](../mtlcounterresultstageutilization.md) instances for you when you resolve the counter set’s data (see [Converting a GPU’s counter data into a readable format](../converting-a-gpus-counter-data-into-a-readable-format.md)). There’s no reason for you to manually create one in your app.
 

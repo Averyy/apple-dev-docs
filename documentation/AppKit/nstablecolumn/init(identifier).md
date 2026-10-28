@@ -19,11 +19,11 @@ init(identifier: NSUserInterfaceItemIdentifier)
 - (instancetype) initWithIdentifier:(NSUserInterfaceItemIdentifier) identifier;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized table column instance with an [`NSTextFieldCell`](../nstextfieldcell.md) instance as its default cell.
 
-#### Discussion
+## Discussion
 
 You can set the table column title using the [`title`](./title.md) property.
 

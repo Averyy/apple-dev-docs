@@ -27,7 +27,7 @@ static var PKCS1: SecPadding { get }
 kSecPaddingPKCS1
 ```
 
-#### Discussion
+## Discussion
 
 For elliptic curve, defaults to a signature in x9.62 DER encoding.
 

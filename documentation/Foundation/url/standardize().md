@@ -21,7 +21,7 @@ Standardizes the path of a file URL.
 mutating func standardize()
 ```
 
-#### Discussion
+## Discussion
 
 If the `isFileURL` is false, this method does nothing.
 

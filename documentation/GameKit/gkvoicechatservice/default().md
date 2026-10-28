@@ -25,7 +25,7 @@ class func `default`() -> GKVoiceChatService!
 + (GKVoiceChatService *) defaultVoiceChatService;
 ```
 
-#### Return Value
+## Return Value
 
 The chat service.
 

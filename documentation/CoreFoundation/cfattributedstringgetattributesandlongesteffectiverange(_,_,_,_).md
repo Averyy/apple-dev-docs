@@ -25,7 +25,7 @@ func CFAttributedStringGetAttributesAndLongestEffectiveRange(_ aStr: CFAttribute
 extern CFDictionaryRefCFAttributedStringGetAttributesAndLongestEffectiveRange(CFAttributedStringRef aStr, CFIndex loc, CFRange inRange, CFRange *longestEffectiveRange);
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary that contains the attributes of `str` at the specified location. Ownership follows the [The Get Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-SW1).
 

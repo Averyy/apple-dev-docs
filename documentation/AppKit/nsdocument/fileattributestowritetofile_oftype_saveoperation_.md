@@ -17,7 +17,7 @@ Returns the file attributes that should be written to the named document file of
 - (NSDictionary *) fileAttributesToWriteToFile:(NSString *) fullDocumentPath ofType:(NSString *) documentTypeName saveOperation:(NSSaveOperationType) saveOperationType;
 ```
 
-#### Discussion
+## Discussion
 
 Returns the file attributes that should be written to the named document file of the specified type `docType`, as part of a particular `saveOperationType`. The set of valid file attributes is a subset of those understood by the `NSFileManager` class.
 

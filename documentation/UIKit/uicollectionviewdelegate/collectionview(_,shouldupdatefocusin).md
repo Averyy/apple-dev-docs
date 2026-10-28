@@ -23,11 +23,11 @@ optional func collectionView(_ collectionView: UICollectionView, shouldUpdateFoc
 - (BOOL) collectionView:(UICollectionView *) collectionView shouldUpdateFocusInContext:(UICollectionViewFocusUpdateContext *) context;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the focus change should occur or [`false`](../../Swift/false.md) if it should not.
 
-#### Discussion
+## Discussion
 
 Before a focus change can occur, the focus engine asks all affected views if such a change should occur. In response, the collection view calls this method to give you the opportunity to allow or prevent the change. Return this method to prevent changes that should not occur. For example, you might use it to ensure that the navigation between cells occurs in a specific order.
 

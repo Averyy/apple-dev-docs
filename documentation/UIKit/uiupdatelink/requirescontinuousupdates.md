@@ -23,7 +23,7 @@ var requiresContinuousUpdates: Bool { get set }
 @property (nonatomic) BOOL requiresContinuousUpdates;
 ```
 
-#### Discussion
+## Discussion
 
 By default, the value of this property is [`false`](../../Swift/false.md), which means the UI update link acts as a passive observer of UI updates. The system only calls its actions while producing a UI update in response to some kind of event, such as a gesture or layer change.
 

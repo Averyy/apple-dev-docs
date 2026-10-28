@@ -23,7 +23,7 @@ class GLKView
 @interface GLKView : UIView
 ```
 
-#### Overview
+## Overview
 
 The [`GLKView`](./glkview.md) class simplifies the effort required to create an OpenGL ES application by  directly managing a framebuffer object on your behalf; your application simply needs to draw into the framebuffer when the contents need to be updated.
 
@@ -33,7 +33,7 @@ To use this class in your application, create a new [`GLKView`](./glkview.md) ob
 
 The [`GLKView`](./glkview.md) class can be used in conjunction with a [`GLKViewController`](./glkviewcontroller.md) object to create an animation rendering loop that redraws the contents of the view at a specified frame rate.
 
-##### Subclassing Notes
+### Subclassing Notes
 
 Typically, there is no need to subclass the [`GLKView`](./glkview.md) class. Instead, provide a delegate object to draw the view’s contents. See [`GLKViewDelegate`](./glkviewdelegate.md).
 
@@ -98,8 +98,6 @@ Typically, there is no need to subclass the [`GLKView`](./glkview.md) class. Ins
 - [Hashable](../Swift/hashable.md)
 - [NSCoding](../Foundation/nscoding.md)
 - [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
-- [Sendable](../Swift/sendable.md)
-- [SendableMetatype](../Swift/sendablemetatype.md)
 - [UIAccessibilityIdentification](../UIKit/uiaccessibilityidentification.md)
 - [UIActivityItemsConfigurationProviding](../UIKit/uiactivityitemsconfigurationproviding.md)
 - [UIAppearance](../UIKit/uiappearance.md)

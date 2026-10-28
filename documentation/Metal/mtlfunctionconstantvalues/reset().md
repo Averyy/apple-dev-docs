@@ -24,7 +24,7 @@ func reset()
 - (void) reset;
 ```
 
-#### Discussion
+## Discussion
 
 You don’t need to call this method if you don’t set any constant values.
 

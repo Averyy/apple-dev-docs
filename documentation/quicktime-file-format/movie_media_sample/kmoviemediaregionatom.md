@@ -6,7 +6,7 @@
 
 A number of atoms, which describe how the Movie Media Handler should resize the embedded movie.
 
-#### Overview
+## Overview
 
 If this atom is not present, the Movie Media Handler resizes the embedded movie to completely fill the containing track’s box.
 

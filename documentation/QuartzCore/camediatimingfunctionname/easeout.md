@@ -24,7 +24,7 @@ static let easeOut: CAMediaTimingFunctionName
 extern CAMediaTimingFunctionName const kCAMediaTimingFunctionEaseOut;
 ```
 
-#### Discussion
+## Discussion
 
 This is a Bézier timing function with the control points (0.0,0.0) and (0.58,1.0).
 

@@ -23,11 +23,11 @@ optional func textViewShouldEndEditing(_ textView: UITextView) -> Bool
 - (BOOL) textViewShouldEndEditing:(UITextView *) textView;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if editing should stop; otherwise, [`false`](../../Swift/false.md) if the editing session should continue
 
-#### Discussion
+## Discussion
 
 This method is called when the text view is asked to resign the first responder status. This might occur when the user tries to change the editing focus to another control. Before the focus actually changes, however, the text view calls this method to give your delegate a chance to decide whether it should.
 

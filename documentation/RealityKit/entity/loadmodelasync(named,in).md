@@ -24,7 +24,7 @@ Asynchronously loads a model entity from a bundle.
 
 - [Reducing CPU Utilization in Your RealityKit App](../reducing-cpu-utilization-in-your-realitykit-app.md)
 
-#### Return Value
+## Return Value
 
 A resource loader that publishes the root entity in the loaded file as a [`ModelEntity`](../modelentity.md).
 

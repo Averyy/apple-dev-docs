@@ -15,7 +15,7 @@ Device transport state is running.
 Running
 ```
 
-#### Discussion
+## Discussion
 
 In this state, enable the hardware to fully run I/O.
 

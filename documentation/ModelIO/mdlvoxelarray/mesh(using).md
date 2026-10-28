@@ -24,11 +24,11 @@ func mesh(using allocator: (any MDLMeshBufferAllocator)?) -> MDLMesh?
 - (MDLMesh *) meshUsingAllocator:(id<MDLMeshBufferAllocator>) allocator;
 ```
 
-#### Return Value
+## Return Value
 
 A new mesh object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a polygon mesh for use in rendering the object described by the voxel array.
 

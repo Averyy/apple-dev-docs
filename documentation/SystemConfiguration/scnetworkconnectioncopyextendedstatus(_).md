@@ -19,11 +19,11 @@ func SCNetworkConnectionCopyExtendedStatus(_ connection: SCNetworkConnection) ->
 CFDictionaryRefSCNetworkConnectionCopyExtendedStatus(SCNetworkConnectionRef connection);
 ```
 
-#### Return Value
+## Return Value
 
 The status dictionary, or `NULL` if an error occurred (use the [`SCError()`](./scerror%28%29.md) function to retrieve the specific error).
 
-#### Discussion
+## Discussion
 
 An extended status dictionary contains specific dictionaries describing the status for each subcomponent of the service. For example, a status dictionary contains the following sub-dictionaries, keys, and values:
 

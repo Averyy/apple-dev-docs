@@ -19,11 +19,11 @@
 static bool SPRect3DFloatIsZero(SPRect3DFloat rect);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether the rectangle is zero.
 
-#### Discussion
+## Discussion
 
 Returns a Boolean value that indicates whether the rectangle is zero.
 

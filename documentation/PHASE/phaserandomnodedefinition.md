@@ -24,11 +24,11 @@ class PHASERandomNodeDefinition
 @interface PHASERandomNodeDefinition : PHASESoundEventNodeDefinition
 ```
 
-#### Overview
+## Overview
 
 When the framework invokes a random node, it passes the invocation on to one of its children at random. The weight you choose for a child node in the [`addSubtree(_:weight:)`](./phaserandomnodedefinition/addsubtree%28_,weight%29.md) argument skews the node’s selection chances.
 
-##### Choose from Alternate Sounds
+### Choose from Alternate Sounds
 
 This class can model real-world cases where an event varies slightly, such as when footsteps sound slightly different because of the unique ground composition at each step.
 

@@ -25,7 +25,7 @@ class SCNScene
 @interface SCNScene : NSObject
 ```
 
-#### Overview
+## Overview
 
 To display 3D content with SceneKit, you create a scene containing a hierarchy of the nodes and attributes that together represent your visual elements. Typically, you build your assets in a 3D visual editor, then assemble them into a scene using Xcode’s SceneKit Scene Editor, ready for SceneKit to render.
 
@@ -39,7 +39,7 @@ guard let myScene = SCNScene(named: "MyScene")
 scnView.scene = myScene // Your app's SCNView
 ```
 
-##### Creating a Scene
+### Creating a Scene
 
 The simplest way to create a scene is through Xcode’s SceneKit Scene Editor. Start by importing one or more assets from a 3D editor, such as Blender. Then you adjust the positions and attributes of the assets, and set global scene properties, such as lighting environment, to compose your scene. The scene editor creates a `.scn` file, which you save to a `.scnassets` folder in the app bundle. When you build your project, Xcode optimizes the scene file for your target platform.
 

@@ -15,7 +15,7 @@ A download error.
 static var downloadFailed: WatchKitError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 WatchKit reports this error when it can’t download a media file.
 

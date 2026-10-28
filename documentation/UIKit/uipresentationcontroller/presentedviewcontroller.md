@@ -23,7 +23,7 @@ var presentedViewController: UIViewController { get }
 @property (nonatomic, strong, readonly) UIViewController * presentedViewController;
 ```
 
-#### Discussion
+## Discussion
 
 This object corresponds to the one passed as the first parameter of the [`present(_:animated:completion:)`](../uiviewcontroller/present%28_,animated,completion%29.md) method. The successful conclusion of the presentation process causes this view controller’s content to be displayed onscreen.
 

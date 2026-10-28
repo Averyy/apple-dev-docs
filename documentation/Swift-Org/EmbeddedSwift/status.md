@@ -10,7 +10,7 @@ framework: "Swift-Org/EmbeddedSwift"
 
 Compare compiler and language feature support in Embedded Swift to standard Swift.
 
-#### Embedded Swift Language Features
+## Embedded Swift Language Features
 
 | **Language Feature** | **Currently Supported In Embedded Swift** |
 | --- | --- |
@@ -27,7 +27,7 @@ Compare compiler and language feature support in Embedded Swift to standard Swif
 | Non-final generic class methods | No, intentionally unsupported long-term, see [Restricting non-final generic methods](./nonfinalgenericmethods.md) |
 | Parameter packs (variadic generics) | No, not yet supported |
 
-#### Embedded Standard Library Breakdown
+## Embedded Standard Library Breakdown
 
 This status table describes which of the following standard library features can be used in Embedded Swift:
 
@@ -67,7 +67,7 @@ This status table describes which of the following standard library features can
 | Unsafe[Mutable][Raw][Buffer]Pointer | Yes |
 | VarArgs | Yes |
 
-#### Non-stdlib Features
+## Non-stdlib Features
 
 This status table describes which of the following Swift features can be used in Embedded Swift:
 

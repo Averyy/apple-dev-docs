@@ -21,7 +21,7 @@ optional func readerSessionDidBecomeActive(_ session: NFCNDEFReaderSession)
 - (void) readerSessionDidBecomeActive:(NFCNDEFReaderSession *) session;
 ```
 
-#### Discussion
+## Discussion
 
 The reader session calls this method after the device begins scanning for new tags.
 

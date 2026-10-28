@@ -18,7 +18,7 @@ var FFERR_MOREDATA: Int { get }
 #define FFERR_MOREDATA
 ```
 
-#### Discussion
+## Discussion
 
 Not all the requested information fit into the buffer.
 

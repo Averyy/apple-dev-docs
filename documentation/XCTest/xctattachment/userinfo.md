@@ -16,7 +16,7 @@ var userInfo: [AnyHashable : Any]? { get set }
 @property (copy, nullable) NSDictionary * userInfo;
 ```
 
-#### Discussion
+## Discussion
 
 Assign a custom dictionary to this property to store attachment-specific metadata along with the attachment.
 

@@ -25,11 +25,11 @@ func pointer(at index: Int) -> UnsafeMutableRawPointer?
 - (void *) pointerAtIndex:(NSUInteger) index;
 ```
 
-#### Return Value
+## Return Value
 
 The pointer at `index`.
 
-#### Discussion
+## Discussion
 
 The returned value may be `NULL`.
 

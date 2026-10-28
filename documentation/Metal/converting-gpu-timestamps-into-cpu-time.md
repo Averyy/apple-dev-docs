@@ -5,13 +5,13 @@
 
 Correlate GPU events with CPU timelines by calculating the CPU time equivalents for GPU timestamps.
 
-#### Overview
+## Overview
 
 Sampling runtime data from a GPU can provide a valuable insight to your app’s GPU performance (see [Sampling GPU data into counter sample buffers](./sampling-gpu-data-into-counter-sample-buffers.md)). GPU timestamps in particular can isolate runtime issues by showing what the GPU is working on relative to what the CPU is doing. However, the timestamp values your app samples from a GPU don’t typically match a CPU’s timestamps because each uses different hardware to measure time. This means you can’t always compare GPU timestamps directly with CPU timestamps.
 
 Your app can convert a GPU’s timestamps to CPU time by sampling both clocks at the same time to establish a common baseline of time. Establish that baseline by sampling both the GPU and CPU clocks at least twice. Typically, apps sample the timestamps at least twice, once before and once after the GPU stores its timestamp data in an [`MTLCounterSampleBuffer`](./mtlcountersamplebuffer.md). Your app needs the baseline to accurately convert the GPU’s timestamp data it *resolves* from a counter sample buffer. See [Converting a GPU’s counter data into a readable format](./converting-a-gpus-counter-data-into-a-readable-format.md) for instructions about resolving data within a counter sample buffer.
 
-##### Create a reference baseline in time by sampling the CPU and GPU timestamps twice
+### Create a reference baseline in time by sampling the CPU and GPU timestamps twice
 
 You can sample timestamps from the GPU and CPU at the same time by calling [`MTLDevice`](./mtldevice.md) instance’s [`sampleTimestamps()`](./mtldevice/sampletimestamps%28%29.md) method in Swift, or the [`sampleTimestamps:gpuTimestamp:`](./mtldevice/sampletimestamps_gputimestamp_.md) method in Objective-C.
 
@@ -125,7 +125,7 @@ func configureCommandBuffer(_ commandBuffer: MTLCommandBuffer, frame: Int) {
 
 You can find implmentations for the methods that this code example refers to in this article, except for the `resolveSampleBuffer` method, which comes from an earlier article in this series, [Converting a GPU’s counter data into a readable format](./converting-a-gpus-counter-data-into-a-readable-format.md).
 
-##### Convert GPU timestamps to CPU time
+### Convert GPU timestamps to CPU time
 
 Calculate the CPU time equivalent of a GPU timestamp by mathematically converting it using two sets of your app’s reference GPU and CPU timestamps.
 

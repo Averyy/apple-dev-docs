@@ -24,7 +24,7 @@ case contactName
 INVocabularyStringTypeContactName
 ```
 
-#### Discussion
+## Discussion
 
 For example, you might include the strings “Jon Smith” or “Apple Inc”. Don’t include names already in the Contacts app on the user’s device. Instead, use this type to define contacts that are exclusive to your app.
 

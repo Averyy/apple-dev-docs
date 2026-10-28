@@ -25,11 +25,11 @@ optional func unarchiver(_ unarchiver: NSKeyedUnarchiver, cannotDecodeObjectOfCl
 - (Class) unarchiver:(NSKeyedUnarchiver *) unarchiver cannotDecodeObjectOfClassName:(NSString *) name originalClasses:(NSArray<NSString *> *) classNames;
 ```
 
-#### Return Value
+## Return Value
 
 The class unarchiver should use in place of the class named `name`.
 
-#### Discussion
+## Discussion
 
 The delegate may, for example, load some code to introduce the class to the runtime and return the class, or substitute a different class object. If the delegate returns `nil`, unarchiving aborts and the method raises an `NSInvalidUnarchiveOperationException`.
 

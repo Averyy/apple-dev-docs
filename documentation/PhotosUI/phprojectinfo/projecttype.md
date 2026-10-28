@@ -19,7 +19,7 @@ var projectType: PHProjectType { get }
 @property (nonatomic, readonly) PHProjectType projectType;
 ```
 
-#### Discussion
+## Discussion
 
 See the [`PHProjectExtensionController`](../phprojectextensioncontroller.md) protocol for more information on configuring the options.
 

@@ -18,7 +18,7 @@ object SubscriptionGroupIdentifierItem
 ## Topics
 
 ### Object and Data Types
-- [subscriptionGroupIdentifier](./subscriptiongroupidentifieritem/subscriptiongroupidentifier.md)
+- subscriptionGroupIdentifier
 - [object lastTransactionsItem](./lasttransactionsitem.md)
   The most recent App Store-signed transaction information and App Store-signed renewal information for an auto-renewable subscription.
 

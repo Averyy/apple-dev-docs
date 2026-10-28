@@ -23,7 +23,7 @@ class WKInterfaceObject
 
 - [Connecting Your User Interface to Your Code](./connecting-your-user-interface-to-your-code.md)
 
-#### Overview
+## Overview
 
 Your WatchKit extension uses interface objects to manipulate the visual elements displayed on Apple Watch. Specifically, you use the methods of this class to change the size, alignment, and visibility of those elements. You can also configure the accessibility information displayed through assistive technologies like VoiceOver.
 
@@ -45,7 +45,7 @@ At runtime, WatchKit creates the appropriate interface objects and assigns them 
 
 WatchKit provides one-way communication between the interface objects in your extension and the corresponding interface elements in your watchOS app. You can set the values of an interface object, but you cannot get the current values. If you want to know the current value of an attribute, you must save the value yourself.
 
-##### Interface Builder Configuration Options
+### Interface Builder Configuration Options
 
 Xcode lets you configure information about your group interface object in your storyboard file. The following table lists the attributes you can configure in your storyboard and their meaning.
 

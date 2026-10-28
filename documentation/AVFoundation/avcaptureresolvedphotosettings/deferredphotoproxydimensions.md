@@ -21,7 +21,7 @@ var deferredPhotoProxyDimensions: CMVideoDimensions { get }
 @property (readonly) CMVideoDimensions deferredPhotoProxyDimensions;
 ```
 
-#### Discussion
+## Discussion
 
 When the system returns an [`AVCaptureDeferredPhotoProxy`](../avcapturedeferredphotoproxy.md), the [`photoDimensions`](./photodimensions.md) property of this object represents the dimensions of the final photo. If you don’t opt in to deferred photo delivery, this value has a width and height of 0.
 

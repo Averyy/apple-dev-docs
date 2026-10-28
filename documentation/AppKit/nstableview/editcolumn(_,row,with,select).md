@@ -19,7 +19,7 @@ func editColumn(_ column: Int, row: Int, with event: NSEvent?, select: Bool)
 - (void) editColumn:(NSInteger) column row:(NSInteger) row withEvent:(NSEvent *) event select:(BOOL) select;
 ```
 
-#### Discussion
+## Discussion
 
 This method is invoked automatically in response to user actions; you should rarely need to invoke it directly. `theEvent` is usually the mouse event that triggered editing; it can be `nil` when starting an edit programmatically.
 

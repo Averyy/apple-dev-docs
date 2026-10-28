@@ -25,11 +25,11 @@ init()
 - (instancetype) init;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSDate` object initialized to the current date and time.
 
-#### Discussion
+## Discussion
 
 This method is a designated initializer for `NSDate`.
 

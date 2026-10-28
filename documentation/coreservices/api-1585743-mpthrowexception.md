@@ -15,11 +15,11 @@ Throws an exception to a specified task.
 OSStatus MPThrowException(MPTaskID task, MPExceptionKind kind);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./carbon_core/multiprocessing_services.md#1663965). If the task is already suspended or if the task is not defined to take thrown exceptions, the function returns `kMPInsufficientResourcesErr`.
 
-#### Discussion
+## Discussion
 
 The exception is treated in the same manner as any other exception taken by a task. However, since it is asynchronous, it may not be presented immediately.
 

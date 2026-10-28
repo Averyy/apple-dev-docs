@@ -25,7 +25,7 @@ func remove(_ service: CBMutableService)
 - (void) removeService:(CBMutableService *) service;
 ```
 
-#### Discussion
+## Discussion
 
 Because apps on the local peripheral device share the GATT database, more than one instance of a service may exist in the database. As a result, this method removes only the instance of the service that your app added to the database (using the [`add(_:)`](./add%28_%29.md) method). If any other services contains this service, you must first remove them.
 

@@ -25,11 +25,11 @@ func CFStringConvertIANACharSetNameToEncoding(_ theString: CFString!) -> CFStrin
 extern CFStringEncoding CFStringConvertIANACharSetNameToEncoding(CFStringRef theString);
 ```
 
-#### Return Value
+## Return Value
 
 The Core Foundation string encoding that is closest to the IANA “charset” `IANAName`. Returns the [`kCFStringEncodingInvalidId`](./kcfstringencodinginvalidid.md) constant if the name is not recognized.
 
-#### Discussion
+## Discussion
 
 The [`CFStringConvertEncodingToIANACharSetName(_:)`](./cfstringconvertencodingtoianacharsetname%28_%29.md) function is complementary to this function.
 

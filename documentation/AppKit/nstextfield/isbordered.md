@@ -19,7 +19,7 @@ var isBordered: Bool { get set }
 @property (getter=isBordered) BOOL bordered;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../Swift/true.md), the text field draws a border; if [`false`](../../Swift/false.md), it doesn’t draw a border.
 

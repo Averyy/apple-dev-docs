@@ -5,13 +5,13 @@
 
 Gain insights to SIMD group performance by inspecting source code execution.
 
-#### Overview
+## Overview
 
 Metal organizes the threads of your shader into single-instruction, multiple-data (SIMD) groups. The performance heat maps feature provides a way to quickly find SIMD groups that are expensive or divergent. You can graphically inspect how Apple GPUs execute the shader source code in those groups, and gain insights of potential performance bottlenecks.
 
 > ❗ **Important**: The performance heat maps feature is available for iOS devices with A17 Pro or later, and Mac computers with M3 or later.
 
-##### View the performance heat maps
+### View the performance heat maps
 
 To open the performance heat maps, click the Performance button in the Metal debugger’s Debug navigator, and then click the Heat Map tab above the Performance timeline.
 
@@ -32,13 +32,13 @@ In addition, performance heat maps are available for the following shader types:
 
 > **Note**: For compute, object, and mesh shaders, when the maximum compute thread location in the x-axis or y-axis exceeds 8192, each pixel in the heat map represents a SIMD group instead of a thread.
 
-##### Switch between shader types
+### Switch between shader types
 
 By default, selecting a render command encoder, a render pipeline state, or a draw command shows the fragment shader heat maps. Selecting a compute dispatch command shows the compute shader heat maps.
 
 You can switch between different shader types using the Vertex and Fragment tabs above the heat maps.
 
-##### Display more types of performance heat maps
+### Display more types of performance heat maps
 
 By default, the Shader Execution Cost heat map and the Attachments display for render command encoders, pipeline states, and draws.
 
@@ -63,7 +63,7 @@ Available performance heat map options include the following:
 
 The color intensity in the heat maps represents the significance of the values. For example, red means *more expensive* in the Shader Execution Cost heat map, and *more divergent* in the Thread Divergence heat map.
 
-##### View and adjust the value range of performance heat maps
+### View and adjust the value range of performance heat maps
 
 You can filter and tone-map a performance heat map by clicking the Histogram button in the title bar.
 
@@ -71,7 +71,7 @@ You can filter and tone-map a performance heat map by clicking the Histogram but
 
 The histogram popover shows the value range of the heat map. You can drag the handles to adjust the range to filter smaller and larger values. This can be useful in situations when you want a certain value range, such as showing pixels in a render pass that executes more than 100 instructions.
 
-##### Inspect the execution history for a SIMD group
+### Inspect the execution history for a SIMD group
 
 Selecting a pixel in the heat map allows you to inspect the underlying SIMD group.
 
@@ -83,13 +83,13 @@ The Execution History timeline shows the progress of the selected SIMD group fro
 
 The Metal debugger also helps you better understand shader execution by detecting and visualizing loops in the shader instruction stream. You can select a node in the timeline, and the source editor jumps to the file and the line that contain the executed instructions of that node.
 
-##### Understand the number of instructions per line
+### Understand the number of instructions per line
 
 The number of executed instructions appears next to the lines of code, in the gutter of the shader source code. This number is the total assembly code executions over the lifetime of the entire SIMD group for that line of code.
 
 For example, if there’s a loop with 10 iterations, the number of instructions for the source lines within the loop is 10 times more than the source lines outside the loop, given the same amount of assembly code.
 
-##### Switch between per-line statistics modes
+### Switch between per-line statistics modes
 
 In the shader source code control bar, you can choose different modes for the per-line shader profiling statistics in the gutter. Options include the following:
 

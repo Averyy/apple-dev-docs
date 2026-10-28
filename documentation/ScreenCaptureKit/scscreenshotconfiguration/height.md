@@ -20,7 +20,7 @@ var height: Int { get set }
 @property (nonatomic, assign) NSInteger height;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is the height of the captured content.
 

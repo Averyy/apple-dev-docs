@@ -19,11 +19,11 @@ func completedString(_ string: String) -> String?
 - (NSString *) completedString:(NSString *) string;
 ```
 
-#### Return Value
+## Return Value
 
 The string from the combo box’s pop-up list that starts with the specified substring or `nil` if there is no such string.
 
-#### Discussion
+## Discussion
 
 The default implementation of this method first checks whether the combo box uses a data source and whether the data source responds to comboBox:completedString: or comboBoxCell:completedString:. If so, the combo box cell returns that method’s return value. Otherwise, this method goes through the combo box’s items one by one and returns an item that starts with `substring`.
 

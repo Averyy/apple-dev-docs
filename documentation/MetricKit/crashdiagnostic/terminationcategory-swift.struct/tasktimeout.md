@@ -19,7 +19,7 @@ The app was terminated for exceeding the allocated time for a background task.
 static let taskTimeout: CrashDiagnostic.TerminationCategory
 ```
 
-#### Discussion
+## Discussion
 
 Corresponds to [`taskTimeoutTerminationCount`](../../backgroundterminationmetric/tasktimeoutterminationcount.md).
 

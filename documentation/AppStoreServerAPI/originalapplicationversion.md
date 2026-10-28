@@ -15,7 +15,7 @@ The app version that the customer originally purchased from the App Store.
 string originalApplicationVersion
 ```
 
-#### Discussion
+## Discussion
 
 Use this value to determine which app version the customer first purchased or downloaded. This value remains constant and doesn’t change when the customer upgrades the app.
 

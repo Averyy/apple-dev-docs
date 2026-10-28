@@ -23,7 +23,7 @@ class VZMacOSInstaller
 
 - [Installing macOS on a Virtual Machine](./installing-macos-on-a-virtual-machine.md)
 
-#### Overview
+## Overview
 
 Initialize a [`VZMacOSInstaller`](./vzmacosinstaller.md) object with a [`VZVirtualMachine`](./vzvirtualmachine.md) and a file URL that refers to a macOS restore image.
 

@@ -20,7 +20,7 @@ var numberOfAveragesForRateSmoothing: UInt32 { get }
 @property (atomic, readonly) uint32_t numberOfAveragesForRateSmoothing;
 ```
 
-#### Discussion
+## Discussion
 
 A value of `0` indicates that it uses the default smoothing algorithm.
 

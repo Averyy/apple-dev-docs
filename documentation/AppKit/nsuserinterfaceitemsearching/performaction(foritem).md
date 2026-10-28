@@ -19,7 +19,7 @@ optional func performAction(forItem item: Any)
 - (void) performActionForItem:(id) item;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation brings up Help Viewer for a Help item.
 

@@ -19,7 +19,7 @@ var doesNotSupportVolumeSizes: Bool { get set }
 @property (nonatomic) BOOL doesNotSupportVolumeSizes;
 ```
 
-#### Discussion
+## Discussion
 
 A true value means the volume doesn’t support determining values for total data blocks, available blocks, or free blocks, as in `f_blocks`, `f_bavail`, and `f_bfree` in the struct `statFS` returned by `statfs(2)`.
 

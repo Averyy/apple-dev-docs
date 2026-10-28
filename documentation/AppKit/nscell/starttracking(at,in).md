@@ -19,11 +19,11 @@ func startTracking(at startPoint: NSPoint, in controlView: NSView) -> Bool
 - (BOOL) startTrackingAt:(NSPoint) startPoint inView:(NSView *) controlView;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the receiver is set to respond continuously or set to respond when the mouse is dragged, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 The `NSCell` implementation of [`trackMouse(with:in:of:untilMouseUp:)`](./trackmouse%28with,in,of,untilmouseup%29.md) invokes this method when tracking begins.  Subclasses can override this method to implement special mouse-tracking behavior at the beginning of mouse tracking—for example, displaying a special cursor.
 

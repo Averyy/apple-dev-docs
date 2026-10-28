@@ -21,7 +21,7 @@ class PDFAnnotationMarkup
 @interface PDFAnnotationMarkup : PDFAnnotation
 ```
 
-#### Overview
+## Overview
 
 The [`lineWidth`](./pdfborder/linewidth.md) and [`style`](./pdfborder/style.md) properties of the annotation’s associated `PDFBorder` object determines the stroke thickness and style. The [`color`](./pdfannotation/color.md) property of the `PDFAnnotation` class determines the stroke color.
 

@@ -31,7 +31,7 @@ SKProductDiscountPaymentModePayAsYouGo
 
 - [Implementing introductory offers in your app](../../implementing-introductory-offers-in-your-app.md)
 
-#### Discussion
+## Discussion
 
 With a pay as you go payment mode, users pay the discounted price at each billing period during the discount period.
 

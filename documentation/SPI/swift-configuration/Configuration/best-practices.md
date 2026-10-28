@@ -10,11 +10,11 @@ framework: "swift-configuration/Configuration"
 
 Follow these principles to make your code easily configurable and composable with other libraries.
 
-#### Overview
+## Overview
 
 When designing configuration for Swift libraries and applications, follow these patterns to create consistent, maintainable code that integrates well with the Swift ecosystem.
 
-##### Document configuration keys
+### Document configuration keys
 
 Include thorough documentation about what configuration keys your library reads. For each key, document:
 
@@ -42,7 +42,7 @@ public struct HTTPClientConfiguration {
 }
 ```
 
-##### Use sensible defaults
+### Use sensible defaults
 
 Provide reasonable default values to make your library work without extensive configuration.
 
@@ -55,7 +55,7 @@ let maxConnections = config.int(forKey: "http.maxConnections", default: 10)
 let timeout = try config.requiredDouble(forKey: "http.timeout") // Forces users to configure
 ```
 
-##### Use scoped configuration
+### Use scoped configuration
 
 Organize your configuration keys logically using namespaces to keep related keys together.
 
@@ -82,7 +82,7 @@ let libraryConfig = MyLibraryConfiguration(config: config.scoped(to: "myLib"))
 
 > **See also**: For more guidance on making your library configurable, check out [Configuring libraries](./configuring-libraries.md).
 
-##### Mark secrets appropriately
+### Mark secrets appropriately
 
 Mark sensitive configuration values like API keys, passwords, or tokens as secrets using the `isSecret: true` parameter. This tells access reporters to redact those values in logs.
 
@@ -99,7 +99,7 @@ Some providers also support the [`SecretsSpecifier`](./secretsspecifier.md), all
 
 For comprehensive guidance on handling secrets securely, see [Handling secrets correctly](./handling-secrets-correctly.md).
 
-##### Prefer optional over required
+### Prefer optional over required
 
 Only mark configuration as required if your library absolutely cannot function without it. For most cases, provide sensible defaults and make configuration optional.
 
@@ -114,7 +114,7 @@ let apiEndpoint = try config.requiredString(forKey: "api.endpoint")
 
 For more details, check out [Choosing reader methods](./choosing-reader-methods.md).
 
-##### Validate configuration values
+### Validate configuration values
 
 Validate configuration values and throw meaningful errors for invalid input to catch configuration issues early.
 
@@ -135,9 +135,9 @@ public init(config: ConfigReader) throws {
 }
 ```
 
-##### Choose provider types
+### Choose provider types
 
-###### When to use reloading providers
+#### When to use reloading providers
 
 Use reloading providers when you need configuration changes to take effect without restarting your application:
 
@@ -147,14 +147,14 @@ Use reloading providers when you need configuration changes to take effect witho
 
 Check out [Using reloading providers](./using-reloading-providers.md) to learn more.
 
-###### When to use static providers
+#### When to use static providers
 
 Use static providers when configuration doesn’t change during runtime:
 
 - Containerized applications with immutable configuration.
 - Applications where you set configuration once at startup.
 
-###### When to create custom providers
+#### When to create custom providers
 
 If none of the providers (built-in or community ones) meet your needs, you can implement your own custom provider. Common scenarios include:
 

@@ -19,7 +19,7 @@ optional func scannerDevice(_ scanner: ICScannerDevice, didScanTo url: URL)
 - (void) scannerDevice:(ICScannerDevice *) scanner didScanToURL:(NSURL *) url;
 ```
 
-#### Discussion
+## Discussion
 
 If the [`selectedFunctionalUnit`](../icscannerdevice/selectedfunctionalunit.md) is a document feeder, then this message is sent once for each scanned page.
 

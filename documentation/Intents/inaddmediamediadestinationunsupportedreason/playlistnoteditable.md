@@ -24,7 +24,7 @@ case playlistNotEditable
 INAddMediaMediaDestinationUnsupportedReasonPlaylistNotEditable
 ```
 
-#### Discussion
+## Discussion
 
 Provide this error explanation when the user tries to add a media item to a playlist they can’t change, such as another user’s shared playlist or a playlist your service publishes.
 

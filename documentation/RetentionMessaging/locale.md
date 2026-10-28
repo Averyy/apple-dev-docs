@@ -15,7 +15,7 @@ A string that represents a locale short code.
 string locale
 ```
 
-#### Discussion
+## Discussion
 
 For a list of locale short codes the App Store supports, see [Managing metadata in your app by using locale short codes](../AppStoreConnectAPI/managing-metadata-in-your-app-by-using-locale-shortcodes.md).
 

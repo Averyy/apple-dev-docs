@@ -21,7 +21,7 @@ A view that represents the default placeholder icon for an in-app store product.
 @preconcurrency struct AutomaticProductPlaceholderIcon
 ```
 
-#### Overview
+## Overview
 
 You don’t use this type directly. Instead, create a [`ProductView`](./productview.md) or [`StoreView`](./storeview.md) and provide product identifiers without a custom placeholder icon.
 

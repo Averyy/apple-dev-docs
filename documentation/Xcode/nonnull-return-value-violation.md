@@ -5,13 +5,13 @@
 
 Detects when a function incorrectly returns null.
 
-#### Overview
+## Overview
 
 Use this check to detect when a function with the `returns_nonnull` attribute, or a function with a return type that has the `_Nonnull` annotation, returns null. Available in Xcode 9 and later.
 
 > **Note**: The nonnull violation check for return types with the `_Nonnull` annotation is off by default. You can turn it on by enabling the `-fsanitize=nullability-return` compiler flag.
 
-##### Violation of the nonnull attribute for a function in C
+### Violation of the nonnull attribute for a function in C
 
 In the following code, there is a violation of the `returns_nonnull` attribute of the `nonnull_returning_function` function:
 
@@ -22,11 +22,11 @@ __attribute__((returns_nonnull)) int *nonnull_returning_function(int *p) {
 nonnull_returning_function(NULL); // Error: nonnull return value attribute violation
 ```
 
-###### Solution
+#### Solution
 
 Correct logic errors, add any necessary null guards to the function, or remove the `returns_nonnull` attribute and rework the function caller logic accordingly.
 
-##### Violation of the nonnull annotation for a return type in C
+### Violation of the nonnull annotation for a return type in C
 
 The following code violates the `_Nonnull` annotation of the return type for the `nonnull_returning_function` function:
 
@@ -37,7 +37,7 @@ int *_Nonnull nonnull_returning_function(int *p) {
 nonnull_returning_function(NULL); // Error: nonnull return value attribute violation
 ```
 
-###### Solution
+#### Solution
 
 Correct logic errors, add any necessary null guards to the function, or remove the `_Nonnull` annotation and rework the function caller logic accordingly.
 

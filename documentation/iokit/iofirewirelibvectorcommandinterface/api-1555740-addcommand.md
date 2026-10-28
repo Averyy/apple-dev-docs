@@ -16,7 +16,7 @@ Adds a command to the vector command.
 void (*AddCommand)(IOFireWireLibVectorCommandRef self, IOFireWireLibCommandRef command);
 ```
 
-#### Return Value
+## Return Value
 
 An IOReturn result code
 

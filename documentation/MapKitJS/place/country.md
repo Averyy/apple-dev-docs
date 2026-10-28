@@ -15,7 +15,7 @@ The country or region of the place.
 country: string | null;
 ```
 
-#### Discussion
+## Discussion
 
 For example, the [`country`](./country.md) for Golden Gate Park in San Francisco, California, is `"United States"`.
 

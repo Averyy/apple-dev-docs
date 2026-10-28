@@ -19,7 +19,7 @@ var sessionIdentifier: String { get }
 @property (copy, readonly) NSString * sessionIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 This property holds the background session identifier from the [`URLSessionConfiguration`](../../Foundation/urlsessionconfiguration.md) object used to create the background transfer. Use this identifier to create a configuration and session object to connect to the background session task.
 

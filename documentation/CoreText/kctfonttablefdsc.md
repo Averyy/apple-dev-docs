@@ -23,7 +23,7 @@ var kCTFontTableFdsc: Int { get }
 kCTFontTableFdsc
 ```
 
-#### Discussion
+## Discussion
 
 Font table tag for font descriptor.
 

@@ -15,11 +15,11 @@ Flushes out any encodings that may be stored in a converterobject’s temporary 
 OSStatus TECFlushMultipleEncodings(TECObjectRef encodingConverter, TextPtr outputBuffer, ByteCount outputBufferLength, ByteCount *actualOutputLength, TextEncodingRun outEncodingsBuffer[], ItemCount maxOutEncodingRuns, ItemCount *actualOutEncodingRuns);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./carbon_core/text_encoding_conversion_manager.md#1664324).
 
-#### Discussion
+## Discussion
 
 You should always call `TECFlushMultipleEncodings` atthe end of the conversion process to flush out any data that maybe stored in the temporary buffers of the text encoding converterobject or to perform other end-of-encoding conversion tasks. Encodingssuch as ISO-2022-JP are reset to a default state when you use thisfunction. 
 

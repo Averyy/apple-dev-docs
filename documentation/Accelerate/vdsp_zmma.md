@@ -21,7 +21,7 @@ Adds a single-precision complex matrix to the product of two single-precision co
 extern void vDSP_zmma(const DSPSplitComplex *__A, vDSP_Stride __IA, const DSPSplitComplex *__B, vDSP_Stride __IB, const DSPSplitComplex *__C, vDSP_Stride __IC, const DSPSplitComplex *__D, vDSP_Stride __ID, vDSP_Length __M, vDSP_Length __N, vDSP_Length __P);
 ```
 
-#### Discussion
+## Discussion
 
 The following code adds the matrix `c` to the product of matrices `a` and `b`, and writes the result to matrix `d`:
 

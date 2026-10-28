@@ -19,7 +19,7 @@ func sizeToFit()
 - (void) sizeToFit;
 ```
 
-#### Discussion
+## Discussion
 
 All columns are resized to the same size, up to a column’s maximum size. This method then invokes [`tile()`](./tile%28%29.md).
 

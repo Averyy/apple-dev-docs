@@ -17,7 +17,7 @@ Protocol for a type that can convert [`UserInput`](./userinput.md) to [`LMInput`
 protocol UserInputProcessor : Sendable
 ```
 
-#### Overview
+## Overview
 
 See also [`ModelContext`](./modelcontext.md).
 

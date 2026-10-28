@@ -5,7 +5,7 @@
 
 Display content on the X-Large watch face.
 
-#### Overview
+## Overview
 
 Extra large templates display text and images on the X-Large watch faces.
 

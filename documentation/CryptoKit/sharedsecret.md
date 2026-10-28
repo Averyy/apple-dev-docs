@@ -21,7 +21,7 @@ A key agreement result from which you can derive a symmetric cryptographic key.
 struct SharedSecret
 ```
 
-#### Overview
+## Overview
 
 Generate a shared secret by calling your private key’s `sharedSecretFromKeyAgreement(publicKeyShare:)` method with the public key from another party. The other party computes the same secret by passing your public key to the the equivalent method on their own private key.
 

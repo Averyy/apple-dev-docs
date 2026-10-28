@@ -14,11 +14,11 @@ virtual IOReturn createAGPSpace(
  IOPhysicalLength *length );
 ```
 
-#### Return Value
+## Return Value
 
 Returns an IOReturn code indicating success or failure.
 
-#### Overview
+## Overview
 
 This method should be called by the driver for the AGP primary device to set the size of the space and enable AGP transactions. It will destroy any AGP space currently allocated.
 

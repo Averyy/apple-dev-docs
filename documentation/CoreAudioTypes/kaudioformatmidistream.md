@@ -25,7 +25,7 @@ var kAudioFormatMIDIStream: AudioFormatID { get }
 kAudioFormatMIDIStream
 ```
 
-#### Discussion
+## Discussion
 
 This codec contains a stream of [`MIDIPacketList`](../CoreMIDI/midipacketlist.md) structures where the time stamps are sample offsets in the stream. The [`mSampleRate`](./audiostreambasicdescription/msamplerate.md) field describes how time passes in this stream. An audio unit that receives or generates this stream can use this sample rate, the number of frames it’s rendering, and the sample offsets within the [`MIDIPacketList`](../CoreMIDI/midipacketlist.md) to define the time for any MIDI event within this list.
 

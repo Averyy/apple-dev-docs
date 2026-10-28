@@ -19,7 +19,7 @@ var bitsPerSample: Int { get }
 extern NSInteger NSBitsPerSampleFromDepth(NSWindowDepth depth);
 ```
 
-#### Discussion
+## Discussion
 
 Returns the number of bits per sample (bits per pixel in each color component) for the window depth specified by `depth`.
 

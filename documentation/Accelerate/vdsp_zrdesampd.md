@@ -21,7 +21,7 @@ Performs complex-real double-precision FIR filtering with decimation and antiali
 extern void vDSP_zrdesampD(const DSPDoubleSplitComplex *__A, vDSP_Stride __DF, const double *__F, const DSPDoubleSplitComplex *__C, vDSP_Length __N, vDSP_Length __P);
 ```
 
-#### Discussion
+## Discussion
 
 This is the same as [`vDSP_zrdesamp`](./vdsp_zrdesamp.md), except for the types of vectors `A`, `F`, and `C`.
 

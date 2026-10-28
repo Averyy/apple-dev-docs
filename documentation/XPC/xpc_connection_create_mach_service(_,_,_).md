@@ -20,11 +20,11 @@ func xpc_connection_create_mach_service(_ name: UnsafePointer<CChar>, _ targetq:
 extern xpc_connection_txpc_connection_create_mach_service(const char *name, dispatch_queue_t targetq, uint64_t flags);
 ```
 
-#### Return Value
+## Return Value
 
 A new connection object.
 
-#### Discussion
+## Discussion
 
 If the [`XPC_CONNECTION_MACH_SERVICE_LISTENER`](./xpc_connection_mach_service_listener.md) flag is given to this method, then the connection returned will be a listener connection. Otherwise, a peer connection will be returned. See the documentation for [`xpc_connection_set_event_handler(_:_:)`](./xpc_connection_set_event_handler%28_,_%29.md) for the semantics of listener connections versus peer connections.
 

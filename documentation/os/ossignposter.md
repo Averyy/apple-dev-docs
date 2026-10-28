@@ -25,7 +25,7 @@ struct OSSignposter
 
 - [Recording Performance Data](./recording-performance-data.md)
 
-#### Overview
+## Overview
 
 Signposts allow you to record meaningful information about the duration of your app’s tasks using the same subsystems and categories that you use for logging. Use `OSSignposter` to create signposted intervals in your code, and then use Instruments’ `os_signposts` instrument to record those intervals as you run your app and perform the actions to measure. Instruments displays signpost data visually in a timeline.
 

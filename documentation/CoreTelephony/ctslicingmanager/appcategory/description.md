@@ -17,7 +17,7 @@ A string representation of the application category.
 var description: String { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property provides a string representation of the category, suitable for debugging and logging purposes.
 

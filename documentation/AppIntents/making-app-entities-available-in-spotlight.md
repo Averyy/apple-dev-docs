@@ -5,13 +5,13 @@
 
 Update your app entity types to support Spotlight indexing, and donate entities to make them findable in searches.
 
-#### Overview
+## Overview
 
 Spotlight is Apple’s search technology, and when you index your content using the Core Spotlight framework, you gain the ability to perform fast lexical and semantic searches of that content. Apple Intelligence can also apply your app’s indexed content to other system experiences like Siri. You provide the help these system features need by including [`AppEntity`](./appentity.md) types with the other data in your app’s index. These types offer a common way for your app and features like Siri to refer to your data, and their structure lets the system make better use of your data.
 
 To include entities in your app’s Spotlight indexes, you need to make a few modifications to your [`AppEntity`](./appentity.md) types. These modifications are mostly additive and can actually simplify the process of indexing your app’s content. For example, Spotlight can index properties of your entity directly with only a small change to how you declare those properties. Spotlight also offers ways to index your entities directly, without the need of creating a [`CSSearchableItemAttributeSet`](../CoreSpotlight/cssearchableitemattributeset.md) for your content.
 
-##### Add support for indexing your entity types
+### Add support for indexing your entity types
 
 To support Spotlight indexing, your entity types need to conform to the [`IndexedEntity`](./indexedentity.md) protocol. Adding this protocol to your entity’s declaration is the only requirement for support. The following example shows the `LandmarkEntity` type from [Adopting App Intents to support system experiences](./adopting-app-intents-to-support-system-experiences.md), which includes this protocol in its declaration:
 
@@ -23,7 +23,7 @@ struct LandmarkEntity: IndexedEntity {
 
 The [`IndexedEntity`](./indexedentity.md) protocol defines several properties, but provides default implementations for all of them. You can implement some of the properties yourself and use them to provide Spotlight with additional information about your entity.
 
-##### Specify which properties of your entity to index
+### Specify which properties of your entity to index
 
 Conformance to the [`IndexedEntity`](./indexedentity.md) protocol unlocks support for indexing your app’s entities, but conformance also provides some important automatic behaviors. When you define an entity type, you typically apply property wrappers to specific properties to make them discoverable by the system. Protocols like [`DisplayRepresentable`](./displayrepresentable.md) also provide descriptive information about your entity. Spotlight uses the information from these protocols to generate an initial set of attributes for your entity types.
 
@@ -75,7 +75,7 @@ extension LandmarkEntity {
 
 > **Note**: If a wrapped property uses the same indexing key as an attribute in your [`attributeSet`](./indexedentity/attributeset.md) property, Spotlight prefers the wrapped property’s value. Similarly, Spotlight prefers the title, subtitle, and image data from your entity’s [`displayRepresentation`](./instancedisplayrepresentable/displayrepresentation.md) property over the same items in the [`attributeSet`](./indexedentity/attributeset.md) property.
 
-##### Add app entities directly to your Spotlight index
+### Add app entities directly to your Spotlight index
 
 To make your app’s entities available to the system, add them to your app’s Spotlight index. If your app doesn’t currently support Spotlight, index your entities directly by creating a named [`CSSearchableIndex`](../CoreSpotlight/cssearchableindex.md) object and passing them to its [`indexAppEntities(_:priority:)`](../CoreSpotlight/cssearchableindex/indexappentities%28_,priority%29.md) method, as shown in the following example:
 
@@ -93,7 +93,7 @@ When you index entities directly, Spotlight uses the entity’s properties to bu
 
 > **Note**: When indexing your app’s content, use a named [`CSSearchableIndex`](../CoreSpotlight/cssearchableindex.md) type and not the default index. Use the default index only for prototyping and testing your code during development.
 
-##### Modify your existing Spotlight code to include entities
+### Modify your existing Spotlight code to include entities
 
 If you already integrated Core Spotlight support into your app, you might not want to replace your existing code with new code based on entities. Fortunately, Core Spotlight provides a way for you to reuse your current code and add entities to your existing [`CSSearchableItem`](../CoreSpotlight/cssearchableitem.md) types. The following steps explain the process:
 
@@ -124,7 +124,7 @@ let searchableItems = trails.map { trail in
 
 For information about how to index content using the Core Spotlight APIs, see [Adding your app’s content to Spotlight indexes](../CoreSpotlight/adding-your-app-s-content-to-spotlight-indexes.md).
 
-##### Add support for reindexing your app entities
+### Add support for reindexing your app entities
 
 If an issue arises with your app’s index, Spotlight can ask your app to index its content again — a process known as reindexing. If you donate app entities to a [`CSSearchableIndex`](../CoreSpotlight/cssearchableindex.md) using its [`indexAppEntities(_:priority:)`](../CoreSpotlight/cssearchableindex/indexappentities%28_,priority%29.md) method, implement the [`IndexedEntityQuery`](./indexedentityquery.md) protocol in your entity’s query object to handle reindexing.
 
@@ -150,7 +150,7 @@ If you create [`CSSearchableItem`](../CoreSpotlight/cssearchableitem.md) types f
 
 For more information about regenerating your app’s search indexes, see [Regenerating your app’s indexes on demand](../CoreSpotlight/regenerating-your-app-s-indexes-on-demand.md).
 
-##### Provide app intents to open your entites from search results
+### Provide app intents to open your entites from search results
 
 For each [`AppEntity`](./appentity.md) type that you define and donate to Spotlight, create an [`OpenIntent`](./openintent.md) type that opens that entity in your app. When Spotlight returns one of your app’s entities in a search result, you want people to be able to tap that result and navigate to the associated content in your app. When an open intent is present, Spotlight can use it to provide that behavior. The following example from [Adopting App Intents to support system experiences](./adopting-app-intents-to-support-system-experiences.md) shows the open intent for the app’s `LandmarkEntity` type. When someone taps a landmark in search results, Spotlight uses the intent to open the app and display the chosen landmark.
 

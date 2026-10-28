@@ -16,7 +16,7 @@ The underlying error that occurred, if applicable.
 var wifiAware: WAError? { get }
 ```
 
-#### Discussion
+## Discussion
 
 If the underlying connection is over Wi-Fi Aware and an error occurred, provide details on the specific error. Otherwise `nil`.
 

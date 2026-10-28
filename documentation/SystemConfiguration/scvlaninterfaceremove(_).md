@@ -19,7 +19,7 @@ func SCVLANInterfaceRemove(_ vlan: SCVLANInterface) -> Bool
 Boolean SCVLANInterfaceRemove(SCVLANInterfaceRef vlan);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if the interface was removed; `FALSE` if an error occurred.
 

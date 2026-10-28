@@ -22,7 +22,7 @@ var password: String { get set }
 @property (copy) NSString * password;
 ```
 
-#### Discussion
+## Discussion
 
 This property must be configured for PEAP, EAP-TTLS, and EAP-FAST authentication. It is optional for EAP-TLS authentication. The length of the string must be 1 to 64 characters, inclusive.
 

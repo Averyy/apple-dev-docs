@@ -13,7 +13,7 @@ Deletes a default message for a product in a locale.
 
 - [Identifying rate limits](./identifying-rate-limits.md)
 
-#### Discussion
+## Discussion
 
 Call this endpoint to delete a default message configuration. After a successful deletion, `productId` in `locale` has no default message.
 

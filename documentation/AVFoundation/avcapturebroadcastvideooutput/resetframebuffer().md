@@ -23,7 +23,7 @@ func resetFrameBuffer()
 - (void) resetFrameBuffer;
 ```
 
-#### Discussion
+## Discussion
 
 This method can be called when buffered video frames should be dropped. This will force all those frames to be dropped and reset the buffered frame count to 0.
 

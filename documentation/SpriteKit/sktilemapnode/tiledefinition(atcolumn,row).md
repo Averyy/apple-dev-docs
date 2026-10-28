@@ -23,7 +23,7 @@ func tileDefinition(atColumn column: Int, row: Int) -> SKTileDefinition?
 - (SKTileDefinition *) tileDefinitionAtColumn:(NSUInteger) column row:(NSUInteger) row;
 ```
 
-#### Return Value
+## Return Value
 
 The tile definition for the tile at the specified column and row.
 

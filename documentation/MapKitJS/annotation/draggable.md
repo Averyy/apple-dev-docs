@@ -16,7 +16,7 @@ get draggable(): boolean;
 set draggable(value: boolean);
 ```
 
-#### Discussion
+## Discussion
 
 The user can move the annotation if the [`draggable`](../annotationconstructoroptions/draggable.md) property is `true`.
 

@@ -28,7 +28,7 @@ extern CHHapticEventType CHHapticEventTypeHapticTransient;
 
 - [Playing a single-tap haptic pattern](../../playing-a-single-tap-haptic-pattern.md)
 
-#### Discussion
+## Discussion
 
 Transient events complete on their own, even without a duration.
 

@@ -16,7 +16,7 @@ Defines a constant Unicode mapping pointer.
 typedef const UnicodeMapping *ConstUnicodeMappingPtr;
 ```
 
-#### Discussion
+## Discussion
 
 Many Unicode Converter functions take a pointer to a Unicode mapping structure as a parameter. For functions that do not modify the Unicode mapping contents, the Unicode Converter provides a constant pointer to a Unicode mapping structure defined by the `ConstUnicodeMappingPtr` data type. 
 

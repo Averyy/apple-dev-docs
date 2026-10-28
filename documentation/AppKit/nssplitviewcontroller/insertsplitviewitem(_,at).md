@@ -19,7 +19,7 @@ func insertSplitViewItem(_ splitViewItem: NSSplitViewItem, at index: Int)
 - (void) insertSplitViewItem:(NSSplitViewItem *) splitViewItem atIndex:(NSInteger) index;
 ```
 
-#### Discussion
+## Discussion
 
 If the split view controller’s view finishes loading, and the split view item that you add is visible, the system loads the split view item’s view controller’s view and adds it to the split view.
 

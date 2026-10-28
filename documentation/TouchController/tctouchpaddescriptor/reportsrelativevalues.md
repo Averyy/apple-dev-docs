@@ -21,7 +21,7 @@ var reportsRelativeValues: Bool { get set }
 @property (nonatomic, assign) BOOL reportsRelativeValues;
 ```
 
-#### Discussion
+## Discussion
 
 If `YES`, the touchpad will report delta values as touch moves instead of absolute positions.
 

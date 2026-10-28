@@ -5,7 +5,7 @@
 
 Fetch events and reminders from the Calendar database.
 
-#### Overview
+## Overview
 
 To search for and return events and reminders from the Calendar database, you must connect to the event store, as discussed in “[Accessing the event store](./accessing-the-event-store.md).”
 
@@ -16,11 +16,11 @@ There are two ways to retrieve events and reminders. You can fetch via:
 
 > **Note**:  Retrieving events from the Calendar database does not necessarily return events in chronological order. To sort an array of [`EKEvent`](./ekevent.md) objects by date, call [`sortedArray(using:)`](../Foundation/nsarray/sortedarray%28using%29-9nhh9.md) on the array, providing the selector for the [`compareStartDate(with:)`](./ekevent/comparestartdate%28with%29.md) method.
 
-##### Search with Predicates
+### Search with Predicates
 
 Predicates return events and reminders that match a search query.
 
-###### Fetch Events
+#### Fetch Events
 
 It’s common to fetch events and reminders that fall within a date range. The [`EKEventStore`](./ekeventstore.md) method [`events(matching:)`](./ekeventstore/events%28matching%29.md): fetches all events that fall within the date range specified in the predicate you provide. The following code listing demonstrates how to fetch all events that occur between one day before and one year after the current date.
 
@@ -57,7 +57,7 @@ You can specify a subset of calendars to search by passing an array of [`EKCale
 
 Because the [`events(matching:)`](./ekeventstore/events%28matching%29.md) method is synchronous, you may not want to run it on your app’s main thread. For asynchronous behavior, run the method on another thread with the [`dispatch_async`](../Dispatch/dispatch_async.md) function or with an [`Operation`](../Foundation/operation.md) object.
 
-###### Fetch Reminders
+#### Fetch Reminders
 
 You can call [`fetchReminders(matching:completion:)`](./ekeventstore/fetchreminders%28matching,completion%29.md) to access multiple reminders that match a predicate. Pass a predicate returned by one of the following methods:
 
@@ -82,7 +82,7 @@ Unlike fetching events via predicate, you can fetch reminders via predicate asyn
 
 If you want to abort your fetch request by predicate, call [`cancelFetchRequest(_:)`](./ekeventstore/cancelfetchrequest%28_%29.md) while passing the identifier as returned by [`fetchReminders(matching:completion:)`](./ekeventstore/fetchreminders%28matching,completion%29.md).
 
-##### Search with Unique Identifiers
+### Search with Unique Identifiers
 
 If you know the event’s unique identifier because you fetched it previously with a predicate, you can use the [`EKEventStore`](./ekeventstore.md) method [`event(withIdentifier:)`](./ekeventstore/event%28withidentifier%29.md) to fetch the event. If it is a recurring event, this method will return the first occurrence of the event. You can get an event’s unique identifier with the [`eventIdentifier`](./ekevent/eventidentifier.md) property.
 

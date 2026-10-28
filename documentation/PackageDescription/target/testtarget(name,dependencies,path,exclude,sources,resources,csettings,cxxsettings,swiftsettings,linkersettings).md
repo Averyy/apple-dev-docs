@@ -12,7 +12,7 @@ Creates a test target.
 static func testTarget(name: String, dependencies: [Target.Dependency] = [], path: String? = nil, exclude: [String] = [], sources: [String]? = nil, resources: [Resource]? = nil, cSettings: [CSetting]? = nil, cxxSettings: [CXXSetting]? = nil, swiftSettings: [SwiftSetting]? = nil, linkerSettings: [LinkerSetting]? = nil) -> Target
 ```
 
-#### Discussion
+## Discussion
 
 Write test targets using the XCTest testing framework. Test targets generally declare a dependency on the targets they test.
 

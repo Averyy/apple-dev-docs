@@ -23,7 +23,7 @@ optional func download(_ download: WKDownload, didFailWithError error: any Error
 - (void) download:(WKDownload *) download didFailWithError:(NSError *) error resumeData:(NSData *) resumeData;
 ```
 
-#### Discussion
+## Discussion
 
 To restart a failed download, call [`resumeDownload(fromResumeData:completionHandler:)`](../wkwebview/resumedownload%28fromresumedata,completionhandler%29.md) with `resumeData`.
 

@@ -15,11 +15,11 @@ Retrieves the data for a certificate.
 OSStatus SecCertificateGetData(SecCertificateRef certificate, CSSM_DATA_PTR data);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 This function requires a certificate object, which can, for example, be created with the [`SecCertificateCreateFromData`](./seccertificatecreatefromdata.md) function, obtained from an identity with the [`SecIdentityCopyCertificate(_:_:)`](./secidentitycopycertificate%28_,_%29.md) function, or obtained over a network (see [Secure Transport](./secure-transport.md)).
 

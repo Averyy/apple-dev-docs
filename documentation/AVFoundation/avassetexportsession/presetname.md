@@ -24,7 +24,7 @@ var presetName: String { get }
 @property (nonatomic, readonly) NSString * presetName;
 ```
 
-#### Discussion
+## Discussion
 
 See [Export presets](../export-presets.md) for values an asset export session supports.
 

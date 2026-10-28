@@ -24,7 +24,7 @@ let kVTVideoEncoderList_EncoderID: CFString
 extern CFStringRef const kVTVideoEncoderList_EncoderID;
 ```
 
-#### Discussion
+## Discussion
 
 The associated value is a unique identifier [`CFString`](../CoreFoundation/cfstring.md), in reverse-DNS-style, for this encoder.
 

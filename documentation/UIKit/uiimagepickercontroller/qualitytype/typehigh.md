@@ -21,7 +21,7 @@ case typeHigh
 UIImagePickerControllerQualityTypeHigh
 ```
 
-#### Discussion
+## Discussion
 
 Recorded files are suitable for on-device playback and for wired transfer to the Desktop using Image Capture; they are likely to be too large for transfer using Wi-Fi.
 

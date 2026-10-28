@@ -25,11 +25,11 @@ class func fetchAssets(withALAssetURLs assetURLs: [URL], options: PHFetchOptions
 + (PHFetchResult<PHAsset *> *) fetchAssetsWithALAssetURLs:(NSArray<NSURL *> *) assetURLs options:(PHFetchOptions *) options;
 ```
 
-#### Return Value
+## Return Value
 
 A fetch result that contains the requested [`PHAsset`](../phasset.md) objects, or an empty fetch result if no objects match the request.
 
-#### Discussion
+## Discussion
 
 The Assets Library framework is deprecated in iOS 8.0 and later, replaced by the Photos framework. Use this method if your app has previously stored URLs from [`ALAsset`](../../AssetsLibrary/alasset.md) objects and you need to retrieve the corresponding Photos framework objects.
 

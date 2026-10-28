@@ -23,7 +23,7 @@ func setDefaultResult()
 - (void) setDefaultResult;
 ```
 
-#### Discussion
+## Discussion
 
 You call this method, as a fallback, for any items you don’t handle. Setting the default result when the item provider’s data isn’t supported is the same as calling the [`setNoResult()`](./setnoresult%28%29.md) method.
 

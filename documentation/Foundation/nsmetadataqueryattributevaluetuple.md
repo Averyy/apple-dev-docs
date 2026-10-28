@@ -25,7 +25,7 @@ class NSMetadataQueryAttributeValueTuple
 @interface NSMetadataQueryAttributeValueTuple : NSObject
 ```
 
-#### Overview
+## Overview
 
 Attribute-value tuples are returned by `NSMetadataQuery` objects as the results in the value lists. Each attribute/value tuple contains the attribute name, the value, and the number of instances of that value that exist for the attribute name.
 

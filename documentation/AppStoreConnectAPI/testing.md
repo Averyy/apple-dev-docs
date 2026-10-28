@@ -5,7 +5,7 @@
 
 Test matchmaking rules using sample data.
 
-#### Overview
+## Overview
 
 Use the Testing APIs to apply matchmaking rules to sample match requests and player properties. For more information, see [Testing matchmaking rules](../GameKit/testing-matchmaking-rules.md).
 

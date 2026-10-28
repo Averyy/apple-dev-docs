@@ -24,7 +24,7 @@ var customVideoCompositor: (any AVVideoCompositing)? { get }
 @property (nonatomic, readonly, nullable) id<AVVideoCompositing> customVideoCompositor;
 ```
 
-#### Discussion
+## Discussion
 
 This property is `nil` if there isn’t a custom video compositor, or if the internal video compositor is in use.
 

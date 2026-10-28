@@ -21,7 +21,7 @@ Creates a localized attributed string from a localized string resource.
 init(localized resource: LocalizedStringResource)
 ```
 
-#### Discussion
+## Discussion
 
 Call this initializer to look up the localization indicated by `resource`. Alter the resource’s [`locale`](../localizedstringresource/locale.md) prior to calling this method if you want to localize this string in a different locale than the process that created the [`LocalizedStringResource`](../localizedstringresource.md).
 

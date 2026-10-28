@@ -16,7 +16,7 @@ typedef struct IOUSBDeviceQualifierDescriptor {
 } IOUSBDeviceQualifierDescriptor;
 ```
 
-#### Overview
+## Overview
 
 USB Device Qualifier Descriptor. See the USB Specification at [http://www.usb.org](http://www.usb.org).
 

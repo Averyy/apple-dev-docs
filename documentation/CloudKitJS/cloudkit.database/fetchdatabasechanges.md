@@ -17,11 +17,11 @@ Promise<CloudKit.DatabaseChangesResponse, CKError> fetchDatabaseChanges(
 );
 ```
 
-#### Return Value
+## Return Value
 
 A `Promise` object that resolves to a [`CloudKit.DatabaseChangesResponse`](../cloudkit.databasechangesresponse.md) object, or rejects to a [`CKError`](../cloudkit/ckerror.md) object.
 
-#### Discussion
+## Discussion
 
 For example, use this method to fetch the zones that changed and then use the [`fetchRecordZoneChanges`](./fetchrecordzonechanges.md) method to fetch the changed records in each zone.
 

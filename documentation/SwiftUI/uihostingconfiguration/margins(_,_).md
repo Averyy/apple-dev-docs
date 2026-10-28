@@ -25,7 +25,7 @@ func margins(_ edges: Edge.Set = .all, _ insets: EdgeInsets) -> UIHostingConfigu
 func margins(_ edges: Edge.Set = .all, _ length: CGFloat) -> UIHostingConfiguration<Content, Background>
 ```
 
-#### Discussion
+## Discussion
 
 Use this modifier to replace the default margins applied to the root of the configuration. The following example creates 10 points of space between the content and the background on the leading edge and 20 points of space on the trailing edge:
 

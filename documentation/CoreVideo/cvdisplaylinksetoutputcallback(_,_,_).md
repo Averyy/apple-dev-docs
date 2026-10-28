@@ -22,11 +22,11 @@ func CVDisplayLinkSetOutputCallback(_ displayLink: CVDisplayLink, _ callback: CV
 extern CVReturn CVDisplayLinkSetOutputCallback(CVDisplayLinkRef displayLink, CVDisplayLinkOutputCallback callback, void *userInfo);
 ```
 
-#### Return Value
+## Return Value
 
 A Core Video result code. See [Core Video Constants](./core-video-constants.md) for possible values.
 
-#### Discussion
+## Discussion
 
 The display link invokes this callback whenever it wants you to output a frame.
 

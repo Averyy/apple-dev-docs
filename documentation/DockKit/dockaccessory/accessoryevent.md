@@ -18,7 +18,7 @@ An enumeration that represents an accessory event.
 enum AccessoryEvent
 ```
 
-#### Overview
+## Overview
 
 This event propagates input from the dock accessory. Example events are button presses or requests for common camera controls.
 

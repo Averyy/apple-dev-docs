@@ -25,7 +25,7 @@ func setStrokePattern(_ pattern: CGPattern, colorComponents components: UnsafePo
 extern void CGContextSetStrokePattern(CGContextRef c, CGPatternRef pattern, const CGFloat *components);
 ```
 
-#### Discussion
+## Discussion
 
 The current stroke color space must be a pattern color space. Otherwise, the result of calling this function is undefined. If you want to set a stroke color, not a stroke pattern, use [`setStrokeColor(_:)`](./setstrokecolor%28_%29-1sskg.md).
 

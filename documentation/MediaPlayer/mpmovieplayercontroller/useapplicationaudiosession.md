@@ -23,7 +23,7 @@ var useApplicationAudioSession: Bool { get set }
 @property (nonatomic) BOOL useApplicationAudioSession;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`true`](../../Swift/true.md). Setting this property to [`false`](../../Swift/false.md) causes the movie player to use a system-supplied audio session with a non-mixable playback category.
 
@@ -31,7 +31,7 @@ When this property is [`true`](../../Swift/true.md), the movie player shares the
 
 Changing the value of this property does not affect the currently playing movie. For the new setting to take effect, you must stop playback and then start it again.
 
-##### Special considerations
+### Special considerations
 
 In iOS 3.1 and earlier, a movie player always uses a system-supplied audio session. To obtain that same behavior in iOS 3.2 and newer, you must set this property’s value to [`false`](../../Swift/false.md).
 

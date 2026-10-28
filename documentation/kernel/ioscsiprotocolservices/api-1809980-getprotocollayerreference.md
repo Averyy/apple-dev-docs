@@ -12,11 +12,11 @@ void * GetProtocolLayerReference (
  SCSITaskIdentifierrequest );
 ```
 
-#### Return Value
+## Return Value
 
 The protocol layer reference value. May be NULL.
 
-#### Overview
+## Overview
 
 Accessor method to retrieve the protocol layer reference.
 

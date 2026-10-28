@@ -24,7 +24,7 @@ func MACaptionAppearanceGetRelativeCharacterSize(_ domain: MACaptionAppearanceDo
 extern CGFloat MACaptionAppearanceGetRelativeCharacterSize(MACaptionAppearanceDomain domain, MACaptionAppearanceBehavior *behavior);
 ```
 
-#### Return Value
+## Return Value
 
 The font scaling preference, as a multiplier, for the specified style; ranging from `0.0` to `2.0`.
 

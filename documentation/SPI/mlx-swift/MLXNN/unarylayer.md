@@ -17,11 +17,11 @@ A `Layer` ([`Module`](./module.md) subclass) that can be evaluated as a *unary f
 protocol UnaryLayer : Module
 ```
 
-#### Overview
+## Overview
 
 This provides [`callAsFunction(_:)`](./unarylayer/callasfunction%28_%29.md) with a single `MLXArray` input and a single `MLXArray` output.
 
-##### See Also
+### See Also
 
 - [Layers](./layers.md)
 - [`Sequential`](./sequential.md)

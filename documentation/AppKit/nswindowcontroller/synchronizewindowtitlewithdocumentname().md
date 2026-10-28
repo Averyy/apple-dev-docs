@@ -19,7 +19,7 @@ func synchronizeWindowTitleWithDocumentName()
 - (void) synchronizeWindowTitleWithDocumentName;
 ```
 
-#### Discussion
+## Discussion
 
 Does nothing if the window controller has no associated document or loaded window. This method queries the window controller’s document to get the document’s display name and full filename path, then calls [`windowTitle(forDocumentDisplayName:)`](./windowtitle%28fordocumentdisplayname%29.md) to get the display name to show in the window title.
 

@@ -15,7 +15,7 @@ The options for selection accessories.
 interface PlaceSelectionAccessoryOptions
 ```
 
-#### Overview
+## Overview
 
 For more information on places, see [Identifying unique locations with Place IDs](../MapKit/identifying-unique-locations-with-place-ids.md).
 

@@ -23,11 +23,11 @@ func contentCompressionResistancePriority(for axis: NSLayoutConstraint.Axis) -> 
 - (UILayoutPriority) contentCompressionResistancePriorityForAxis:(UILayoutConstraintAxis) axis;
 ```
 
-#### Return Value
+## Return Value
 
 The priority with which the view should resist being compressed from its intrinsic size on the specified axis.
 
-#### Discussion
+## Discussion
 
 The constraint-based layout system uses these priorities when determining the best layout for views that are encountering constraints that would require them to be smaller than their intrinsic size.
 

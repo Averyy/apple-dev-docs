@@ -19,7 +19,7 @@ enum NSCollectionLayoutSectionOrthogonalScrollingBehavior
 enum NSCollectionLayoutSectionOrthogonalScrollingBehavior : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 By default, each section lays out its content along the main axis of its layout, defined by the layout configuration’s [`scrollDirection`](./nscollectionviewcompositionallayoutconfiguration/scrolldirection.md) property. You can change this behavior for a particular section by setting its [`orthogonalScrollingBehavior`](./nscollectionlayoutsection/orthogonalscrollingbehavior.md) property to a different value than its default [`NSCollectionLayoutSectionOrthogonalScrollingBehavior.none`](./nscollectionlayoutsectionorthogonalscrollingbehavior/none.md). Setting any other value for this property makes the section lay out its content orthogonally to the main layout axis.
 

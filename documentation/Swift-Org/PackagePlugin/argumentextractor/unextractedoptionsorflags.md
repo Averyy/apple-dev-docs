@@ -17,7 +17,7 @@ Returns any unextracted flags or options.
 var unextractedOptionsOrFlags: [String] { get }
 ```
 
-#### Discussion
+## Discussion
 
 This is based strictly on whether remaining arguments have a `--` prefix.
 

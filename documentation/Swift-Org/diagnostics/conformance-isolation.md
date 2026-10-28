@@ -8,7 +8,7 @@ framework: "Swift-Org/diagnostics"
 **Framework**: Swift-Org/diagnostics  
 **Role**: Article
 
-#### Overview
+## Overview
 
 Protocol conformances crossing into actor-isolated code can cause data races in your program. Resolve this error by ensuring access to isolated state is always done within the actor.
 
@@ -66,7 +66,7 @@ There are several options for resolving this error, as indicated by the notes:
   }
   ```
 
-#### Stored Properties
+## Stored Properties
 
 When conforming to a protocol that has read only properties, there is an additional option; defining properties as `nonisolated let`. This makes them immutable and concurrently accessible. For example:
 

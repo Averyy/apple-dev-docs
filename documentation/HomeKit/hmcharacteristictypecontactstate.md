@@ -24,7 +24,7 @@ let HMCharacteristicTypeContactState: String
 extern NSString * const HMCharacteristicTypeContactState;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is one of the constants in the [`HMCharacteristicValueContactState`](./hmcharacteristicvaluecontactstate.md) enumeration.
 

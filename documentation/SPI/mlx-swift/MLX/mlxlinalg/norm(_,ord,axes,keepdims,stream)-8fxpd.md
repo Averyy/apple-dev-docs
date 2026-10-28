@@ -17,11 +17,11 @@ Matrix or vector norm.
 static func norm(_ array: MLXArray, ord: MLXLinalg.NormKind? = nil, axes: some Collection<Int>, keepDims: Bool = false, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Return Value
+## Return Value
 
 Output containing the norm(s)
 
-#### Discussion
+## Discussion
 
 For values of `ord < 1`, the result is, strictly speaking, not a mathematical norm, but it may still be useful for various numerical purposes.
 
@@ -48,7 +48,7 @@ The nuclear norm is the sum of the singular values.
 
 Both the Frobenius and nuclear norm orders are only defined for matrices and produce a fatal error when `array.ndim != 2`
 
-##### See Also
+### See Also
 
 - [`norm(_:ord:axes:keepDims:stream:)`](./norm%28_,ord,axes,keepdims,stream%29-8fxpd.md)
 

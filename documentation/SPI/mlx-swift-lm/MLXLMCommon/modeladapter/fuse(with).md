@@ -18,7 +18,7 @@ Permanently fuses the adapter into the specified model.
 func fuse(with model: LanguageModel) throws
 ```
 
-#### Discussion
+## Discussion
 
 Prefer [`fuse(with:)`](../languagemodel/fuse%28with%29.md) when invoking an adapter so the model can rebuild derived inference state after the topology change.
 

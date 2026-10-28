@@ -23,7 +23,7 @@ let kCFStreamSSLAllowsAnyRoot: CFString
 extern CFStringRef const kCFStreamSSLAllowsAnyRoot;
 ```
 
-#### Discussion
+## Discussion
 
 By default, the value of this key is `kCFBooleanFalse` (root certificates are not allowed).
 

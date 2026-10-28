@@ -19,7 +19,7 @@ func nextEvent(matching mask: NSEvent.EventTypeMask, until expiration: Date?, in
 - (NSEvent *) nextEventMatchingMask:(NSEventMask) mask untilDate:(NSDate *) expiration inMode:(NSRunLoopMode) mode dequeue:(BOOL) deqFlag;
 ```
 
-#### Return Value
+## Return Value
 
 The next event whose mask matches the specified `mask`; otherwise, `nil`.
 

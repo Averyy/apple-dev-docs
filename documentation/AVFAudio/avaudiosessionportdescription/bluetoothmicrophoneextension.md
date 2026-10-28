@@ -24,7 +24,7 @@ var bluetoothMicrophoneExtension: AVAudioSessionPortExtensionBluetoothMicrophone
 @property (nonatomic, readonly, nullable) AVAudioSessionPortExtensionBluetoothMicrophone * bluetoothMicrophoneExtension;
 ```
 
-#### Discussion
+## Discussion
 
 This property is optional and will be `nil` for all ports for which this capability set doesn’t apply.
 

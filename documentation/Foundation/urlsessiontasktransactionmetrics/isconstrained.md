@@ -25,7 +25,7 @@ var isConstrained: Bool { get }
 @property (readonly, getter=isConstrained) BOOL constrained;
 ```
 
-#### Discussion
+## Discussion
 
 A constrained interface is one the user marks as constrained by selecting “Low Data Mode” in the Settings app. You permit or deny use of constrained interfaces with the [`allowsConstrainedNetworkAccess`](../urlsessionconfiguration/allowsconstrainednetworkaccess.md) property on [`URLSessionConfiguration`](../urlsessionconfiguration.md) or [`allowsConstrainedNetworkAccess`](../urlrequest/allowsconstrainednetworkaccess.md) on [`URLRequest`](../urlrequest.md).
 

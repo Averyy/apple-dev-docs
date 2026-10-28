@@ -16,7 +16,7 @@ A description of the deferred payment.
 required DOMString paymentDescription;
 ```
 
-#### Discussion
+## Discussion
 
 Use a plain language description that explains what the payment is for, for example “Hotel stay, 2 nights.”
 

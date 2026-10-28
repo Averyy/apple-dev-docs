@@ -16,7 +16,7 @@ A Boolean value that indicates whether the Live Text button appears.
 final var liveTextButtonVisible: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 When a person taps the Live Text button, it highlights recognized items in the image.
 

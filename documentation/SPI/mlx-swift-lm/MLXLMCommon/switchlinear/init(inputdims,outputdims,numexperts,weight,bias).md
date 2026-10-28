@@ -17,7 +17,7 @@ Initializer meant for subclasses to provide weight and bias arrays directly.
 init(inputDims: Int, outputDims: Int, numExperts: Int, weight: MLXArray, bias: MLXArray? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 This is used e.g. by [`QuantizedSwitchLinear`](../quantizedswitchlinear.md) to provide quantized weights and biases rather than have [`SwitchLinear`](../switchlinear.md) compute them.
 

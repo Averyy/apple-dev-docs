@@ -23,7 +23,7 @@ var bytesOutboundCount: Int { get }
 @property (readonly) NSUInteger bytesOutboundCount;
 ```
 
-#### Discussion
+## Discussion
 
 This property is only non-zero when the report [`event`](./event-swift.property.md) is [`NEFilterReport.Event.flowClosed`](./event-swift.enum/flowclosed.md).
 

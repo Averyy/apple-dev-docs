@@ -15,11 +15,11 @@
 void vfs_unbusy(mount_t mp);
 ```
 
-#### Return Value
+## Return Value
 
 void.
 
-#### Discussion
+## Discussion
 
 A successful vfs_busy() must be followed by a vfs_unbusy() to release the lock on the mount.
 

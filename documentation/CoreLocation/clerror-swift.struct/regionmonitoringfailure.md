@@ -21,7 +21,7 @@ A constant that indicates the location manager failed to monitor a registered re
 static var regionMonitoringFailure: CLError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 Monitoring can fail if the app exceeds the maximum number of regions that it can monitor simultaneously. Monitoring can also fail if the region’s radius distance is too large.
 

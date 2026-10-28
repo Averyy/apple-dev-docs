@@ -22,7 +22,7 @@ var bodyRect: CGRect { get }
 @property (nonatomic, readonly) CGRect bodyRect;
 ```
 
-#### Discussion
+## Discussion
 
 The body rectangle contains the full lines of text in the middle of the drag preview that doesn’t include the first line and last line. This property can be a zero rectangle. The initial value is also not calculated until the first time it’s used.
 

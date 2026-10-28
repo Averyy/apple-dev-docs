@@ -22,7 +22,7 @@ The format style for the date components related to a subscription’s duration.
 var subscriptionPeriodFormatStyle: Date.ComponentsFormatStyle { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use this format style to format text that describes a subscription period, including its length and unit, such as “1 week”, “2 months”, and so on. Use this style with the [`formatted(_:referenceDate:)`](./subscriptionperiod/formatted%28_,referencedate%29-3t7wd.md) method on [`Product.SubscriptionPeriod`](./subscriptionperiod.md) to format the subscription period for the App Store locale.
 

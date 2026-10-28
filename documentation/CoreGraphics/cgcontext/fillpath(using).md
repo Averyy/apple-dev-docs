@@ -21,7 +21,7 @@ Paints the area within the current path, as determined by the specified fill rul
 func fillPath(using rule: CGPathFillRule = .winding)
 ```
 
-#### Discussion
+## Discussion
 
 If the current path contains any non-closed subpaths, this method treats each subpath as if it had been closed with the [`closePath()`](./closepath%28%29.md) method, then applies the specified rule to determine which areas to fill.
 

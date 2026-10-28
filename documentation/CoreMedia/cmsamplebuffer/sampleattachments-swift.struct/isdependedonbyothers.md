@@ -21,7 +21,7 @@ Indicates whether other samples depend on this sample for decoding.
 var isDependedOnByOthers: Bool? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This key has no default value. If this key is not present, dependency information for the sample is unknown. If this key is present and its value is false, the frame is considered droppable.
 

@@ -22,11 +22,11 @@ A nonowning collection interface to a buffer of mutable elements stored contiguo
 struct UnsafeMutableBufferPointer<Element> where Element : ~Copyable
 ```
 
-#### Overview
+## Overview
 
 You can use an `UnsafeMutableBufferPointer` instance in low level operations to eliminate uniqueness checks and, in release mode, bounds checks. Bounds checks are always performed in debug mode.
 
-### UnsafeMutableBufferPointer Semantics
+## UnsafeMutableBufferPointer Semantics
 
 An `UnsafeMutableBufferPointer` instance is a view into memory and does not own the memory that it references. Copying a value of type `UnsafeMutableBufferPointer` does not copy the instances stored in the underlying memory. However, initializing another collection with an `UnsafeMutableBufferPointer` instance copies the instances out of the referenced memory and into the new collection.
 

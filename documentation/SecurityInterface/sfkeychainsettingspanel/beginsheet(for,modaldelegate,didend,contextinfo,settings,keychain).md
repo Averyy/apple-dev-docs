@@ -19,7 +19,7 @@ func beginSheet(for docWindow: NSWindow!, modalDelegate delegate: Any!, didEnd d
 - (void) beginSheetForWindow:(NSWindow *) docWindow modalDelegate:(id) delegate didEndSelector:(SEL) didEndSelector contextInfo:(void *) contextInfo settings:(SecKeychainSettings *) settings keychain:(SecKeychainRef) keychain;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate method has the following signature:
 

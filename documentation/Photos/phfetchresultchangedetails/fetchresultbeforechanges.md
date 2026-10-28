@@ -24,7 +24,7 @@ var fetchResultBeforeChanges: PHFetchResult<ObjectType> { get }
 @property (atomic, strong, readonly) PHFetchResult<PHObject *> * fetchResultBeforeChanges;
 ```
 
-#### Discussion
+## Discussion
 
 This property’s value is the same object you passed to the [`changeDetails(for:)`](../phchange/changedetails%28for%29-33a6n.md) method to request change details.
 

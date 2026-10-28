@@ -15,7 +15,7 @@ The text encoding to use.
 static let textEncodingName: NSAttributedString.DocumentReadingOptionKey
 ```
 
-#### Discussion
+## Discussion
 
 [`NSString`](../../nsstring.md) containing the name, IANA or otherwise, of a text encoding to override any encoding specified in an HTML document. Mutually exclusive with [`characterEncoding`](./characterencoding.md). The previous string constant was `@"TextEncodingName"`.
 

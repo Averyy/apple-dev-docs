@@ -16,11 +16,11 @@ Method to abort the SCSITask.
 IOReturn (*AbortTask)(void *task);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess, kIOReturnUnsupported or kIOReturnError.
 
-#### Discussion
+## Discussion
 
 This method can be used to abort an SCSITask which is already in progress.
 

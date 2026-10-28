@@ -23,7 +23,7 @@ class CXAction
 @interface CXAction : NSObject
 ```
 
-#### Overview
+## Overview
 
 Each instance of [`CXAction`](./cxaction.md) is uniquely identified by a [`uuid`](./cxaction/uuid.md), which is generated on initialization. An action also tracks whether it has been completed or not.
 

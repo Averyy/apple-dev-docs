@@ -25,7 +25,7 @@ var errSessionSuccess: OSStatus { get }
 errSessionSuccess
 ```
 
-#### Discussion
+## Discussion
 
 This result code is an alias for errSecSuccess.
 

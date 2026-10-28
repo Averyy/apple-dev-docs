@@ -24,7 +24,7 @@ struct Timeline<EntryType> where EntryType : TimelineEntry
 
 - [Migrating ClockKit complications to WidgetKit](./converting-a-clockkit-app.md)
 
-#### Overview
+## Overview
 
 To tell WidgetKit when to update a widget’s view, [`TimelineProvider`](./timelineprovider.md) generates a timeline. The timeline contains an array of timeline entry objects and a refresh policy.
 

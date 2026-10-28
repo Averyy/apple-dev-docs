@@ -24,7 +24,7 @@ init(completionHandler: VNRequestCompletionHandler? = nil)
 - (instancetype) initWithCompletionHandler:(VNRequestCompletionHandler) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Vision executes the completion handler on the same queue that it executes the request; however, this queue differs from the one where you called [`perform(_:)`](../vnimagerequesthandler/perform%28_%29.md).
 

@@ -23,7 +23,7 @@ class MLCActivationDescriptor
 @interface MLCActivationDescriptor : NSObject
 ```
 
-#### Overview
+## Overview
 
 The framework provides the following activation descriptor initializers to create the associated descriptors:
 

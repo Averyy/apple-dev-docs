@@ -9,9 +9,9 @@ Get a list of builds associated with a specific app.
 **Availability**:
 - App Store Connect API 1.0+
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

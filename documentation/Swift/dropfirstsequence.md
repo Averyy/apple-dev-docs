@@ -22,7 +22,7 @@ A sequence that lazily consumes and drops `n` elements from an underlying `Base`
 struct DropFirstSequence<Base> where Base : Sequence
 ```
 
-#### Overview
+## Overview
 
 The underlying iterator’s sequence may be infinite.
 

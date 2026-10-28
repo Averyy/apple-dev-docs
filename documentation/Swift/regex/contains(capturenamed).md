@@ -21,7 +21,7 @@ Returns a Boolean value indicating whether a named capture with the given name e
 func contains(captureNamed name: String) -> Bool
 ```
 
-#### Discussion
+## Discussion
 
 This example shows a regular expression that includes capture groups named `key` and `value`:
 

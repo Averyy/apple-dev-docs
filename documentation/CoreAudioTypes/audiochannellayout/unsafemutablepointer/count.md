@@ -21,7 +21,7 @@ The number of `AudioChannelDescription`s
 var count: Int { get nonmutating set }
 ```
 
-#### Discussion
+## Discussion
 
 Warning: Setting a new value will not change the allocated size and may result in invalid access past the allocation.
 

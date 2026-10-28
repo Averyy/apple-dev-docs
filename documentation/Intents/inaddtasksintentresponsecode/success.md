@@ -25,7 +25,7 @@ case success
 INAddTasksIntentResponseCodeSuccess
 ```
 
-#### Discussion
+## Discussion
 
 Use this code after adding the tasks to the task list successfully. Your response should contain the details of the task list and tasks that you changed.
 

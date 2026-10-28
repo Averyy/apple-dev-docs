@@ -6,6 +6,10 @@ Create software on Apple platforms using Xcode and the Swift programming languag
 
 Software development for Apple platforms starts with Xcode, Apple’s integrated development environment (IDE). Xcode provides the suite of tools you use to create apps. It also supports the Swift programming language, Apple’s preferred language for writing code. After you write, test, and polish your code, distribute it on the App Store or your own website.
 
+## Development process
+
+[Read about the development process](./development-process.md)
+
 Start the development process with the Xcode app, which you use to manage your project’s code and resources. Write your code using Swift, and build and run the results on a real or simulated device. Use the integrated debugger to find and fix issues in your code and verify its behavior.
 
 - Write your code using Swift, Objective-C, C++, or other programming languages.
@@ -15,9 +19,9 @@ Start the development process with the Xcode app, which you use to manage your p
 
 ![](https://developer.apple.com/tutorials/images/com.apple.TechnologyOverviews/development-process.png)
 
-#### Development process
+## Testing and performance
 
-[Read about the development process](./development-process.md)
+[Read about testing and performance](./testing-and-performance.md)
 
 Automate the testing of your code using the frameworks and tools that come with Xcode. You can incorporate unit tests into your project to validate your code at compile time, and perform more extensive server-based testing and build management using Xcode Cloud. Improve your app’s efficiency, speed, and energy usage with Instruments.
 
@@ -28,9 +32,9 @@ Automate the testing of your code using the frameworks and tools that come with 
 
 ![](https://developer.apple.com/tutorials/images/com.apple.TechnologyOverviews/testing-and-performance.png)
 
-#### Testing and performance
+## Distribution
 
-[Read about testing and performance](./testing-and-performance.md)
+[Read about distributing software](./distribution.md)
 
 When you’re ready to package your software for distribution and deliver it to your customers, ship it on the App Store to take advantage of the Apple distribution network around the world. You can also support other marketplaces, or deliver software directly to customers yourself.
 
@@ -40,10 +44,6 @@ When you’re ready to package your software for distribution and deliver it to 
 - Explore alternate distribution options.
 
 ![](https://developer.apple.com/tutorials/images/com.apple.TechnologyOverviews/distribution.png)
-
-#### Distribution
-
-[Read about distributing software](./distribution.md)
 
 ## Topics
 

@@ -18,7 +18,7 @@ func clip()
 
 Available when `Element` is `CGRect`.
 
-#### Discussion
+## Discussion
 
 > **Precondition**: There must be a set current NSGraphicsContext.
 

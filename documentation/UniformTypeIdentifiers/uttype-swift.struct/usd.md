@@ -21,7 +21,7 @@ A type that represents Universal Scene Description content.
 static var usd: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `com.pixar.universal-scene-description`.
 

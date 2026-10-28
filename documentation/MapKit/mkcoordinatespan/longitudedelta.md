@@ -25,7 +25,7 @@ var longitudeDelta: CLLocationDegrees
 CLLocationDegrees longitudeDelta;
 ```
 
-#### Discussion
+## Discussion
 
 The number of kilometers spanned by a longitude range varies based on the current latitude. For example, one degree of longitude spans a distance of approximately 111 kilometers (69 miles) at the equator but shrinks to 0 kilometers at the poles.
 

@@ -29,7 +29,7 @@ class TKSmartCardTokenSession
 
 - [Authenticating Users with a Cryptographic Token](./authenticating-users-with-a-cryptographic-token.md)
 
-#### Overview
+## Overview
 
 You can use the [`smartCard`](./tksmartcardtokensession/smartcard.md) property to access and send APDUs to the underlying smart card.
 

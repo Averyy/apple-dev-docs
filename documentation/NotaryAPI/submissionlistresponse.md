@@ -15,7 +15,7 @@ The notary service’s response to a request for information about your team’s
 object SubmissionListResponse
 ```
 
-#### Discussion
+## Discussion
 
 You receive a structure of this type in response to a call to the [`Get Previous Submissions`](./get-previous-submissions.md) endpoint. The list includes only the 100 most recent submissions.
 

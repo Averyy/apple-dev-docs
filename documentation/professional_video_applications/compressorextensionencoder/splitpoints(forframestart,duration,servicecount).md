@@ -20,11 +20,11 @@ func splitPoints(forFrameStart start: Int64, duration numFrames: Int64, serviceC
 - (NSArray *) splitPointsForFrameStart:(int64_t) start duration:(int64_t) numFrames serviceCount:(int32_t) serviceCount;
 ```
 
-#### Return Value
+## Return Value
 
 An array of frame numbers indicating the start of each segment.
 
-#### Discussion
+## Discussion
 
 In a distributed process environment, the Compressor app assigns source media segments to the available encoder instances to process them concurrently. If your extension supports segmenting, the Compressor app calls this method to determine segments of the source media. Segmenting the source media is beneficial for distributed encoding, and for local encoding if you enable additional Compressor app instances.
 

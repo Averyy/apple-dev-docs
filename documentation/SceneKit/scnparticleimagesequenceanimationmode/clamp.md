@@ -25,7 +25,7 @@ case clamp
 SCNParticleImageSequenceAnimationModeClamp
 ```
 
-#### Discussion
+## Discussion
 
 After animation ends, the particle continues to display the last image of the sequence. (Or the first, if the animation is playing in reverse.)
 

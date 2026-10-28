@@ -25,7 +25,7 @@ static var create: FileDescriptor.OpenOptions { get }
 
 - [Adopting Swift File Options](../../adopting-file-options.md)
 
-#### Discussion
+## Discussion
 
 The corresponding C constant is `O_CREAT`.
 

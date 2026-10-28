@@ -21,11 +21,11 @@ Returns all the date components of a date, as if in a given time zone (instead o
 func dateComponents(in timeZone: TimeZone, from date: Date) -> DateComponents
 ```
 
-#### Return Value
+## Return Value
 
 All components, calculated using the `Calendar` and `TimeZone`.
 
-#### Discussion
+## Discussion
 
 The time zone overrides the time zone of the `Calendar` for the purposes of this calculation.
 

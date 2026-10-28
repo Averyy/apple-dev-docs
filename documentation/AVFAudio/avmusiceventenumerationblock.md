@@ -25,7 +25,7 @@ typealias AVMusicEventEnumerationBlock = (AVMusicEvent, UnsafeMutablePointer<AVM
 typedef void (^)(AVMusicEvent *, double *, _Bool *) AVMusicEventEnumerationBlock;
 ```
 
-#### Discussion
+## Discussion
 
 You use this type when you use [`enumerateEvents(in:using:)`](./avmusictrack/enumerateevents%28in,using%29.md). If you modify `event` or `timeStamp`, you change the corresponding value in the track event.
 

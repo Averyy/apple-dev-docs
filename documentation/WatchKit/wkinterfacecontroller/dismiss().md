@@ -19,7 +19,7 @@ func dismiss()
 - (void) dismissController;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method when you want to dismiss an interface controller that you presented modally. Always call this method from your WatchKit extension’s main thread.
 

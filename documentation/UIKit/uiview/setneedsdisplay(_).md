@@ -23,7 +23,7 @@ func setNeedsDisplay(_ rect: CGRect)
 - (void) setNeedsDisplayInRect:(CGRect) rect;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this method or the [`setNeedsDisplay()`](./setneedsdisplay%28%29.md) to notify the system that your view’s contents need to be redrawn. This method adds the specified rectangle into the view’s current list of invalid rectangles and returns immediately. The view is not actually redrawn until the next drawing cycle, at which point all invalidated views are updated.
 

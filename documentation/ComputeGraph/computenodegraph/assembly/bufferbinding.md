@@ -21,7 +21,7 @@ Describes how a Metal buffer is bound to a compute pipeline stage.
 struct BufferBinding
 ```
 
-#### Overview
+## Overview
 
 A buffer binding pairs an [`ComputeNodeGraph.Assembly.Attachment`](./attachment.md) (how the buffer is connected to the graph) with an optional [`ComputeNodeGraph.StateType`](../statetype.md) describing the element layout of the buffer’s contents.
 

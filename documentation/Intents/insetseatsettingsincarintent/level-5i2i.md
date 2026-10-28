@@ -28,7 +28,7 @@ An integer value indicating the desired level for the seat setting.
 @property (atomic, copy, readonly, nullable) NSNumber * level;
 ```
 
-#### Discussion
+## Discussion
 
 The value in this property maps to the heating, cooling, or massage level for the seat. For example, the value 1 corresponds to the first position of the corresponding knob, the value 2 corresponds to the second position of the knob, and so on. Use this property to change the corresponding seat setting to the level requested by the user.
 

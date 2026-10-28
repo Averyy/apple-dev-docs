@@ -15,7 +15,7 @@
 Boolean OSCompareAndSwap64(UInt64 oldValue, UInt64 newValue, volatile UInt64 *address);
 ```
 
-#### Discussion
+## Discussion
 
 See OSCompareAndSwap.
 

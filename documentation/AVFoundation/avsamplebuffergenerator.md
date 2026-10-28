@@ -25,7 +25,7 @@ class AVSampleBufferGenerator
 @interface AVSampleBufferGenerator : NSObject
 ```
 
-#### Overview
+## Overview
 
 Each request for `CMSampleBuffer` creation is described in an `AVSampleBufferRequest` object. The [`CMSampleBuffer`](../CoreMedia/cmsamplebuffer.md) opaque objects are returned synchronously. If requested, sample data may be loaded asynchronously (depending on file format support).
 

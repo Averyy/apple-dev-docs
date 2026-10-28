@@ -25,7 +25,7 @@ var groupingSeparator: String! { get set }
 @property (copy, null_resettable) NSString * groupingSeparator;
 ```
 
-#### Discussion
+## Discussion
 
 For example, the grouping separator used in the United States is the comma (“10,000”) whereas in France it is the space (“10 000”).
 

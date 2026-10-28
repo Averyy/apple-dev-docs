@@ -17,7 +17,7 @@ Requests that the session should start detecting the object in the center of the
 func startDetecting() -> Bool
 ```
 
-#### Discussion
+## Discussion
 
 If success, the session state eventually transitions to [`ObjectCaptureSession.CaptureState.detecting`](./capturestate/detecting.md) and switches to the bounding box selection mode UI.
 

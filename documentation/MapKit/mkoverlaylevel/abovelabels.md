@@ -25,7 +25,7 @@ case aboveLabels
 MKOverlayLevelAboveLabels
 ```
 
-#### Discussion
+## Discussion
 
 [`MKMapView`](../mkmapview.md) displays graphics in layers. The value [`MKOverlayLevel.aboveLabels`](./abovelabels.md) places a layer in the map view above roadways and map labels.
 

@@ -21,7 +21,7 @@ type FeatureVisibility =
     (typeof FeatureVisibility)[keyof typeof FeatureVisibility];
 ```
 
-#### Overview
+## Overview
 
 Indicates whether the map shows adaptive features like the scale, compass, and annotation title and subtitle text. The display of an adaptive feature depends on the current map state. You can show or hide controls that aren’t adaptive, such as the map type control or zoom controls, by setting map properties to `true` or `false`, respectively.
 

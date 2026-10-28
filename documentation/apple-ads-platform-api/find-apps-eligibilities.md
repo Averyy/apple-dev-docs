@@ -9,7 +9,7 @@ Check whether an app is eligible to run on certain Apple Ads placements and in s
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 This endpoint checks whether an app is eligible to run Apple Ads campaigns in specified countries or regions. The response contains per-app eligibility status, along with the specific supply placements and markets where advertising is allowed or blocked.
 
@@ -19,7 +19,7 @@ Ineligibility reasons can include: the app is not available in that market, regi
 
 See [`QueryFilterOperator`](./queryfilteroperator.md) for the full set of supported comparison operators.
 
-##### Filterable Fields
+### Filterable Fields
 
 | Field | Type | Operators | Sortable | Description |
 | --- | --- | --- | --- | --- |
@@ -31,7 +31,7 @@ See [`QueryFilterOperator`](./queryfilteroperator.md) for the full set of suppor
 
 See [`EligibilityQueryRequest`](./eligibilityqueryrequest.md) for the full field list. The request body is a [`QueryRequest`](./queryrequest.md)-shaped object composed of [`QueryFilter`](./queryfilter.md) conditions and [`QuerySort`](./querysort.md) directives ([`QuerySortOrder`](./querysortorder.md)), controlled by [`QueryPagination`](./querypagination.md).
 
-#### Request Body
+## Request Body
 
 The `state` field resolves to one of the following values:
 
@@ -40,7 +40,7 @@ The `state` field resolves to one of the following values:
 | `ELIGIBLE` | The app is approved to run ads in the specified country or region. |
 | `INELIGIBLE` | The app cannot run ads in the specified country or region. |
 
-##### Response Structure
+### Response Structure
 
 Each item in `result` is a flat `EligibilityResponse` row for a specific combination of app, supply placement, supply source, country, and device class.
 
@@ -65,9 +65,9 @@ Keep the following constraints in mind when checking eligibility:
 | Pre-campaign check | Always call this endpoint before creating campaigns in new markets. |
 | Distribution restrictions | Ineligibility may reflect App Store Connect distribution settings, not just policy violations. |
 
-#### Payload Examples
+## Payload Examples
 
-##### Request
+### Request
 
 ```http
 POST /v1/eligibilities/apps/query
@@ -87,7 +87,7 @@ POST /v1/eligibilities/apps/query
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {

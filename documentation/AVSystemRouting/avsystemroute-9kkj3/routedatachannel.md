@@ -17,7 +17,7 @@ A data channel for communicating with the extension outside of any media session
 @property (nonatomic, readonly) AVSystemRouteDataChannel * routeDataChannel;
 ```
 
-#### Discussion
+## Discussion
 
 Use this channel for control messages, state synchronization, and other bidirectional communication needs that are not tied to a specific [`AVSystemRouteSession`](../avsystemroutesession-5i6j6.md).
 

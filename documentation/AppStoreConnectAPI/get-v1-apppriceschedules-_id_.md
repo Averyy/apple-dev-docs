@@ -9,9 +9,9 @@ List the price schedule details for a specific app.
 **Availability**:
 - App Store Connect API 2.3+
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

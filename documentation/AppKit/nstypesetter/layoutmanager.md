@@ -19,7 +19,7 @@ unowned(unsafe) var layoutManager: NSLayoutManager? { get }
 @property (assign, readonly, nullable) NSLayoutManager * layoutManager;
 ```
 
-#### Return Value
+## Return Value
 
 The layout manager for the text being typeset. This value is valid only while the typesetter is performing layout.
 

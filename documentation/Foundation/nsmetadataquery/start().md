@@ -25,13 +25,13 @@ func start() -> Bool
 - (BOOL) startQuery;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) when successful; otherwise, [`false`](../../Swift/false.md).
 
 A query may fail to start if it does not specify a [`predicate`](./predicate.md), or if the query has already been started.
 
-#### Discussion
+## Discussion
 
 A query can’t be started if the receiver is already running a query or no predicate has been specified.
 

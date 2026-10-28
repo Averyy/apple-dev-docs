@@ -21,7 +21,7 @@ The type of elements produced by this asynchronous sequence.
 typealias Element = String
 ```
 
-#### Discussion
+## Discussion
 
 [`AsyncLineSequence`](../asynclinesequence.md) produces elements of type `String`.
 

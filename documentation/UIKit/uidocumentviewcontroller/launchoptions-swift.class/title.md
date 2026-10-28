@@ -26,7 +26,7 @@ var title: String { get set }
 
 - [Customizing a document-based app’s launch experience](../../customizing-a-document-based-app-s-launch-experience.md)
 
-#### Discussion
+## Discussion
 
 By default, the system displays your app’s name.
 

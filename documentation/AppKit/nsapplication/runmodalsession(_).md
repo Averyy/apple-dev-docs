@@ -19,11 +19,11 @@ func runModalSession(_ session: NSApplication.ModalSession) -> NSApplication.Mod
 - (NSModalResponse) runModalSession:(NSModalSession) session;
 ```
 
-#### Return Value
+## Return Value
 
 An integer indicating the reason that this method returned. See the discussion for a description of possible return values.
 
-#### Discussion
+## Discussion
 
 A loop that uses this method is similar in some ways to a modal event loop run with [`runModal(for:)`](./runmodal%28for%29.md), except with this method your code can do some additional work between method invocations. When you invoke this method, events for the `NSWindow` object of this session are dispatched as normal. This method returns when there are no more events. You must invoke this method frequently enough in your loop that the window remains responsive to events. However, you should not invoke this method in a tight loop because it returns immediately if there are no events, and consequently you could end up polling for events rather than blocking.
 

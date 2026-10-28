@@ -20,7 +20,7 @@ The collection of all of the joint update stage objects of the solver instance.
 var joints: IKComponent.JointCollection
 ```
 
-#### Discussion
+## Discussion
 
 The order matches the order in the rig [`joints`](../../ikrig/joints.md).
 

@@ -20,7 +20,7 @@ The identity transform.
 static let identity: Transform
 ```
 
-#### Discussion
+## Discussion
 
 The identity transform is defined as `scale = (1, 1, 1)`, `rotation = (0, 0, 0, 1)`, and `translation = (0, 0, 0)`.
 

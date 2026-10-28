@@ -19,7 +19,7 @@ func drawSortIndicator(withFrame cellFrame: NSRect, in controlView: NSView, asce
 - (void) drawSortIndicatorWithFrame:(NSRect) cellFrame inView:(NSView *) controlView ascending:(BOOL) ascending priority:(NSInteger) priority;
 ```
 
-#### Discussion
+## Discussion
 
 Override this method to customize the sorting user interface.
 

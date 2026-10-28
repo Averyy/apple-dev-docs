@@ -16,7 +16,7 @@ The timeout interval for replies to outgoing remote messages.
 @property NSTimeInterval replyTimeout;
 ```
 
-#### Discussion
+## Discussion
 
 If a non-oneway remote message is sent and no reply is received by the timeout, an [`portTimeoutException`](../nsexceptionname/porttimeoutexception.md) is raised. The default timeout is the maximum possible value.
 

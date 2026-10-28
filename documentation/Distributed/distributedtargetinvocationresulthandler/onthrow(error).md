@@ -22,7 +22,7 @@ Invoked when the distributed target execution of a target has thrown an error.
 func onThrow<Err>(error: Err) async throws where Err : Error
 ```
 
-#### Discussion
+## Discussion
 
 It is not guaranteed that the error conform to the [`SerializationRequirement`](./serializationrequirement.md); This guarantee is only given to return values (and offered by `onReturn`).
 

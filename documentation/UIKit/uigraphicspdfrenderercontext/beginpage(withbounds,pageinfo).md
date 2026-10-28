@@ -23,7 +23,7 @@ func beginPage(withBounds bounds: CGRect, pageInfo: [String : Any])
 - (void) beginPageWithBounds:(CGRect) bounds pageInfo:(NSDictionary<NSString *,id> *) pageInfo;
 ```
 
-#### Discussion
+## Discussion
 
 This function ends any previous page before beginning a new one. It sets the media box of the new page to the value in the [`kCGPDFContextMediaBox`](../../CoreGraphics/kcgpdfcontextmediabox.md) key of the `pageInfo` dictionary, or to the value in the bounds parameter if the dictionary does not contain the key.
 

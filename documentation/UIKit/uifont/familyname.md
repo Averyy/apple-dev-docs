@@ -24,7 +24,7 @@ var familyName: String { get }
 @property (nonatomic, strong, readonly) NSString * familyName;
 ```
 
-#### Discussion
+## Discussion
 
 A family name is a name such as `Times New Roman` that identifies one or more specific fonts. The value in this property is intended for an application’s internal usage only and should not be displayed.
 

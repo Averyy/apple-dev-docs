@@ -22,7 +22,7 @@ var currentMinimumTrackImage: UIImage? { get }
 @property (nonatomic, readonly, nullable) UIImage * currentMinimumTrackImage;
 ```
 
-#### Discussion
+## Discussion
 
 Sliders can have different track images for different control states. The active control state determines which minimum track image is stored in this property. To get the minimum track image for a different control state, use the [`minimumTrackImage(for:)`](./minimumtrackimage%28for%29.md) method.
 

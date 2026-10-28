@@ -26,7 +26,7 @@ var subsystem: String { get }
 @property (nonatomic, readonly) NSString * subsystem;
 ```
 
-#### Discussion
+## Discussion
 
 The category is derived from the `os_log_t` handle used.
 

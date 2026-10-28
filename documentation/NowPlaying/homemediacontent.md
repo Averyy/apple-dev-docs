@@ -25,7 +25,7 @@ struct HomeMediaContent
 
 - [Publishing media sessions](./publishing-media-sessions.md)
 
-#### Overview
+## Overview
 
 Use this type for home-related media such as security camera feeds, baby monitors, or ambient soundscapes.
 

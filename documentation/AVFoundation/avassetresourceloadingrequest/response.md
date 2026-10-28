@@ -25,7 +25,7 @@ var response: URLResponse? { get set }
 @property (nonatomic, copy, nullable) NSURLResponse * response;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is an instance of [`URLResponse`](../../Foundation/urlresponse.md), indicating a response to the loading request. If no response is needed, the value of this property is `nil`.
 

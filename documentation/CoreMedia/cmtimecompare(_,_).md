@@ -25,11 +25,11 @@ func CMTimeCompare(_ time1: CMTime, _ time2: CMTime) -> Int32
 extern int32_t CMTimeCompare(CMTime time1, CMTime time2);
 ```
 
-#### Return Value
+## Return Value
 
 A numeric value that indicates the relative order of the times.
 
-#### Discussion
+## Discussion
 
 This method returns the following values depending on the relationship of the time values:
 

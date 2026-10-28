@@ -20,7 +20,7 @@ optional func applicationDidChangeOcclusionState(_ notification: Notification)
 - (void) applicationDidChangeOcclusionState:(NSNotification *) notification;
 ```
 
-#### Discussion
+## Discussion
 
 Upon receiving this method, you can query the application for its occlusion state. Note that this only notifies about changes in the state of the occlusion, not when the occlusion region changes. You can use this method to increase responsiveness and save power by halting any expensive calculations that the user can not see.
 

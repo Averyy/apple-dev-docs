@@ -4,7 +4,7 @@
 
 Create documents that describe the data your app or workflow extension exchanges with Final Cut Pro.
 
-#### Overview
+## Overview
 
 Use FCPXML to describe the media, metadata, and other items users send and receive between your app and Final Cut Pro.
 

@@ -19,7 +19,7 @@ var textViewportLayoutController: NSTextViewportLayoutController { get }
 @property (strong, readonly) NSTextViewportLayoutController * textViewportLayoutController;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is `nil` if the text layout manager’s text container is `nil`. Set [`textContainer`](./textcontainer.md) before accessing this property.
 

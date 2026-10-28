@@ -24,7 +24,7 @@ let HKSourceRevisionAnyOperatingSystem: OperatingSystemVersion
 extern const NSOperatingSystemVersion HKSourceRevisionAnyOperatingSystem;
 ```
 
-#### Discussion
+## Discussion
 
 When creating a predicate, use this constant to create a source revision object that matches all operating systems.
 

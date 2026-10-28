@@ -26,7 +26,7 @@ var providerName: String { get }
 
 Available when `Snapshot` conforms to `FileConfigSnapshot`.
 
-#### Discussion
+## Discussion
 
 Used by [`AccessReporter`](../accessreporter.md) and other diagnostic logging.
 

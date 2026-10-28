@@ -19,7 +19,7 @@ func ABCopyArrayOfPropertiesForRecordType(_ addressBook: ABAddressBookRef!, _ re
 extern CFArrayRefABCopyArrayOfPropertiesForRecordType(ABAddressBookRef addressBook, CFStringRef recordType);
 ```
 
-#### Return Value
+## Return Value
 
 An new array containing the names (CFString objects) of all the properties in `recordType`. You are responsible for releasing this object.
 

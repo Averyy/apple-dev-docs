@@ -15,11 +15,11 @@ The object for defining conditional properties for a section component, and when
 object ConditionalSection
 ```
 
-#### Discussion
+## Discussion
 
 Use the `ConditionalSection` object to define an array of conditional section properties and the conditions under which to apply them. When a condition is met, the value of a property in `ConditionalSection` overrides the value of the same property if defined in the parent `Section` component. See [`Section`](./section.md).
 
-##### Example
+### Example
 
 ```json
 {

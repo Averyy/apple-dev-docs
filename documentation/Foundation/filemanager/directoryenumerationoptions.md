@@ -25,7 +25,7 @@ struct DirectoryEnumerationOptions
 enum NSDirectoryEnumerationOptions : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 These options are used with the [`contentsOfDirectory(at:includingPropertiesForKeys:options:)`](./contentsofdirectory%28at,includingpropertiesforkeys,options%29.md) method.
 

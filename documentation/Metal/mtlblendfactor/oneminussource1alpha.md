@@ -24,7 +24,7 @@ case oneMinusSource1Alpha
 MTLBlendFactorOneMinusSource1Alpha
 ```
 
-#### Discussion
+## Discussion
 
 `F = 1 - Source.a`
 

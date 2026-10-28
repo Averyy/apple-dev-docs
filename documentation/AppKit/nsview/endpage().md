@@ -19,7 +19,7 @@ func endPage()
 - (void) endPage;
 ```
 
-#### Discussion
+## Discussion
 
 This method is invoked after each page is printed. It invokes [`unlockFocus()`](./unlockfocus%28%29.md). This method also generates comments for the bounding box and page fonts, if they were specified as being at the end of the page.
 

@@ -20,11 +20,11 @@ Returns this token with the given namespace prefix removed.
 func strippingNamespacePrefix(_ prefix: USDToken) -> USDToken?
 ```
 
-#### Return Value
+## Return Value
 
 The token with `prefix` removed, or `nil` if the prefix does not match.
 
-#### Discussion
+## Discussion
 
 Matching is done at namespace boundaries.
 

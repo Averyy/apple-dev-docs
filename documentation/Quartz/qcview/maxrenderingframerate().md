@@ -21,7 +21,7 @@ func maxRenderingFrameRate() -> Float
 - (float) maxRenderingFrameRate;
 ```
 
-#### Return Value
+## Return Value
 
 The maximum frame rate for rendering. A value of `0.0` specifies that there is no limit.
 

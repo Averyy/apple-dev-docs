@@ -15,7 +15,7 @@ A type representing information about the window scenes snap state.
 struct SurfaceSnappingInfo
 ```
 
-#### Overview
+## Overview
 
 Use the provided [`SurfaceSnappingInfo`](./surfacesnappinginfo.md) to modify the contents of your view.
 

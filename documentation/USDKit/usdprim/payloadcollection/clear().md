@@ -20,7 +20,7 @@ Removes all payload arcs from the prim.
 func clear() throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if the payloads cannot be cleared.
 

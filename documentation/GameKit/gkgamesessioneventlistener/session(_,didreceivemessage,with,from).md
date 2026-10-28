@@ -24,7 +24,7 @@ optional func session(_ session: GKGameSession, didReceiveMessage message: Strin
 - (void) session:(GKGameSession *) session didReceiveMessage:(NSString *) message withData:(NSData *) data fromPlayer:(GKCloudPlayer *) player;
 ```
 
-#### Discussion
+## Discussion
 
 This event fires after the [`sendMessage(withLocalizedFormatKey:arguments:data:to:badgePlayers:completionHandler:)`](../gkgamesession/sendmessage%28withlocalizedformatkey,arguments,data,to,badgeplayers,completionhandler%29.md) method has been called. Only players contained in the `players` argument of the [`sendMessage(withLocalizedFormatKey:arguments:data:to:badgePlayers:completionHandler:)`](../gkgamesession/sendmessage%28withlocalizedformatkey,arguments,data,to,badgeplayers,completionhandler%29.md) method are notified.
 

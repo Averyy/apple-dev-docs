@@ -12,11 +12,11 @@ Returns the shared accelerometer object for the system.
 + (UIAccelerometer *) sharedAccelerometer;
 ```
 
-#### Return Value
+## Return Value
 
 The systemwide accelerometer object.
 
-#### Discussion
+## Discussion
 
 Always use this method to retrieve the shared system accelerometer object. Do not create new instances of the `UIAccelerometer` class.
 

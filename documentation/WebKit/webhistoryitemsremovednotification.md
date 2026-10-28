@@ -15,7 +15,7 @@ Posted when items have been removed from the web history.
 extern NSString * WebHistoryItemsRemovedNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the web history from which the history items were removed. The `userInfo` dictionary contains the following information:
 

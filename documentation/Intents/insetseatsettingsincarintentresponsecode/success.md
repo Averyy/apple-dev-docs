@@ -24,7 +24,7 @@ case success
 INSetSeatSettingsInCarIntentResponseCodeSuccess
 ```
 
-#### Discussion
+## Discussion
 
 Use this code if your app successfully changed the seat settings to the new values.
 

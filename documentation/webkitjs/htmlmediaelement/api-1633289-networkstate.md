@@ -16,7 +16,7 @@ The state of downloading the media resource. (read-only)
 readonly attribute unsigned short networkState;
 ```
 
-#### Discussion
+## Discussion
 
 Possible values are described in [Network States](./network_states.md).
 

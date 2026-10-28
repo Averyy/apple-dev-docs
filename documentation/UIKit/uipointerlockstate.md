@@ -23,7 +23,7 @@ class UIPointerLockState
 @interface UIPointerLockState : NSObject
 ```
 
-#### Overview
+## Overview
 
 To prevent the pointer from triggering system gestures, for example, bringing up the dock, lock it to your application. Locking the pointer hides the pointer and locks it to just your full-screen application.
 

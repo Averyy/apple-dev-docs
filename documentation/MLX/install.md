@@ -157,6 +157,8 @@ directory as the executable statically linked to `libmlx.a` or the
 preprocessor constant `METAL_PATH` should be defined at build time and it
 should point to the path to the built metal library.
 
+**Build Options**
+
 | Option | Default |
 | --- | --- |
 | MLX_BUILD_TESTS | ON |

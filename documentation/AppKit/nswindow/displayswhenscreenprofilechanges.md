@@ -19,7 +19,7 @@ var displaysWhenScreenProfileChanges: Bool { get set }
 @property BOOL displaysWhenScreenProfileChanges;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) when the window context should be updated when the ColorSync profile of the current screen changes or when a majority of the window is moved to a different screen whose profile is different than the previous screen; otherwise, [`false`](../../Swift/false.md). The default value is [`false`](../../Swift/false.md).
 

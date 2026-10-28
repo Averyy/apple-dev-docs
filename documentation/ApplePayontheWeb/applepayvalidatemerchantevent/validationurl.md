@@ -20,7 +20,7 @@ readonly attribute DOMString validationURL;
 
 - [Providing Merchant Validation](../providing-merchant-validation.md)
 
-#### Discussion
+## Discussion
 
 This attribute is contained by the [`onvalidatemerchant`](../applepaysession/onvalidatemerchant.md) event. Access this attribute using the event parameter, for example, `var URL = event.validationURL;`.
 

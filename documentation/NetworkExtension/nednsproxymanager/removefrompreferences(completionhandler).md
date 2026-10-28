@@ -27,7 +27,7 @@ func removeFromPreferences() async throws
 - (void) removeFromPreferencesWithCompletionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 If you use a device without an installed configuration profile during development, your app can create the DNS proxy configuration from scratch. You first call the [`loadFromPreferences(completionHandler:)`](./loadfrompreferences%28completionhandler%29.md) method to retrieve the empty configuration. You then make updates and call the [`saveToPreferences(completionHandler:)`](./savetopreferences%28completionhandler%29.md) method to store them. To remove the configuration, call the [`removeFromPreferences(completionHandler:)`](./removefrompreferences%28completionhandler%29.md) method. This allows you to restore the device to a clean, unconfigured state.
 

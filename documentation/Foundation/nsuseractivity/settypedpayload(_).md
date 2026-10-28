@@ -21,7 +21,7 @@ Encodes the specified payload into the user activity’s user info dictionary.
 func setTypedPayload<T>(_ payload: T) throws where T : Decodable, T : Encodable
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  This method applies only to SwiftUI apps.
 

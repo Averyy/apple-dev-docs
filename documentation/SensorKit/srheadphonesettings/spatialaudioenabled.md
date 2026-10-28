@@ -19,7 +19,7 @@ var spatialAudioEnabled: SRHeadphoneSettings.SettingEnablement { get }
 @property (nonatomic, assign, readonly) SRHeadphoneSettingsSettingEnablement spatialAudioEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 Hear audio rendered immersively in three dimensions.
 

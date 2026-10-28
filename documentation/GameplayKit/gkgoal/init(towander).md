@@ -24,7 +24,7 @@ convenience init(toWander speed: Float)
 + (instancetype) goalToWander:(float) speed;
 ```
 
-#### Return Value
+## Return Value
 
 A new goal object.
 

@@ -25,7 +25,7 @@ static var prior: NSKeyValueObservingOptions { get }
 NSKeyValueObservingOptionPrior
 ```
 
-#### Discussion
+## Discussion
 
 The change dictionary in a notification sent before a change always contains an [`notificationIsPriorKey`](../nskeyvaluechangekey/notificationispriorkey.md) entry whose value is an `NSNumber` object that contains the Boolean value [`true`](../../Swift/true.md), but never contains an [`newKey`](../nskeyvaluechangekey/newkey.md) entry. When this option is specified the change dictionary in a notification sent after a change contains the same entries that it would contain if this option were not specified. You can use this option when the observer’s own key-value observing-compliance requires it to invoke one of the `-willChange...` methods for one of its own properties, and the value of that property depends on the value of the observed object’s property. (In that situation it’s too late to easily invoke `-willChange...` properly in response to receiving an [`observeValue(forKeyPath:of:change:context:)`](../../ObjectiveC/nsobject-swift.class/observevalue%28forkeypath,of,change,context%29.md) message after the change.)
 

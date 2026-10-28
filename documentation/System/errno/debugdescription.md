@@ -21,7 +21,7 @@ A textual representation, suitable for debugging, of the most recent error retur
 var debugDescription: String { get }
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding C function is `strerror(3)`.
 

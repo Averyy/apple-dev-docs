@@ -26,7 +26,7 @@ var compositionTime: CMTime { get }
 @property (nonatomic, readonly) CMTime compositionTime;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this property to vary the parameters of a filter over time.
 

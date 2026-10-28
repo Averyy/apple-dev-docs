@@ -19,11 +19,11 @@ func activate(options: NSApplication.ActivationOptions = []) -> Bool
 - (BOOL) activateWithOptions:(NSApplicationActivationOptions) options;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the application was activated successfully, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 This method will return [`false`](../../Swift/false.md) if the application has quit, or is not a type of application than can be activated.
 

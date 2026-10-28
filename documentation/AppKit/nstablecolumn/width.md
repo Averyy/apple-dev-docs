@@ -19,7 +19,7 @@ var width: CGFloat { get set }
 @property CGFloat width;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is `100.0`.
 

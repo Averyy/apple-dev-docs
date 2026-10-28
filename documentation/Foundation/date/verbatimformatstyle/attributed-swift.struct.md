@@ -22,7 +22,7 @@ The type preserving attributed variant of this style.
 struct Attributed
 ```
 
-#### Overview
+## Overview
 
 This style attributes the formatted date with the `AttributeScopes.FoundationAttributes.DateFormatFieldAttribute`.
 

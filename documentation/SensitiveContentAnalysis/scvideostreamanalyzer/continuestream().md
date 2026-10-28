@@ -21,7 +21,7 @@ func continueStream()
 - (void) continueStream;
 ```
 
-#### Discussion
+## Discussion
 
 When the framework detects sensitive content in the video stream, it pauses analysis and begins censoring the stream’s video frames. Call this method to resume analysis and stop censoring video frames when your app is ready to show the stream again.
 

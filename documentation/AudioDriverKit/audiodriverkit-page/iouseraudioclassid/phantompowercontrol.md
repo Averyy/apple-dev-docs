@@ -15,7 +15,7 @@ The identifier for the audio phantom power control class.
 PhantomPowerControl
 ```
 
-#### Discussion
+## Discussion
 
 This class is a subclass of the [`IOUserAudioBooleanControl`](../../iouseraudiobooleancontrol.md) class where a `true` value indcates element’s hardware has phantom power enabled.
 

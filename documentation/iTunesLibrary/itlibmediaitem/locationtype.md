@@ -20,7 +20,7 @@ var locationType: ITLibMediaItemLocationType { get }
 @property (nonatomic, assign, readonly) ITLibMediaItemLocationType locationType;
 ```
 
-#### Discussion
+## Discussion
 
 See [`ITLibMediaItemLocationType`](../itlibmediaitemlocationtype.md) for a list of possible location types.
 

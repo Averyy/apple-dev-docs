@@ -21,11 +21,11 @@ Creates a warp geometry grid of a specific size and warp translation, in pointer
 - (instancetype) initWithColumns:(NSInteger) cols rows:(NSInteger) rows sourcePositions:(const vector_float2 *) sourcePositions destPositions:(const vector_float2 *) destPositions;
 ```
 
-#### Return Value
+## Return Value
 
 A new warp geometry grid object.
 
-#### Discussion
+## Discussion
 
 You supply the source and destination position as pointers to row-major arrays of normalized [`vector_float2`](../../simd/vector_float2.md) coordinates. The number of horizontal coordinates is the column count plus one and the number of vertical coordinates is the row count plus one. Passing `nil` as either of the position arguments results in an identity warp with vertices distributed evenly throughout the geometry. Passing `nil` to both `sourcePositions` and `destPositions` gives a result identical to [`init(columns:rows:)`](./init%28columns,rows%29.md).
 

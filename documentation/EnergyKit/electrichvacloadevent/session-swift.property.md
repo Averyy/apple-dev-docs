@@ -17,7 +17,7 @@ The session information.
 let session: ElectricHVACLoadEvent.Session
 ```
 
-#### Discussion
+## Discussion
 
 An HVAC system between its cooling or heating cycles can be idling and load events must not be generated
 

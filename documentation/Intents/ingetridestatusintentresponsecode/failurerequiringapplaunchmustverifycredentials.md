@@ -23,7 +23,7 @@ case failureRequiringAppLaunchMustVerifyCredentials
 INGetRideStatusIntentResponseCodeFailureRequiringAppLaunchMustVerifyCredentials
 ```
 
-#### Discussion
+## Discussion
 
 Use this code when you require authentication to retrieve information and the user is not currently authenticated. Don’t use this response code for general errors or to force the user to launch your app.
 

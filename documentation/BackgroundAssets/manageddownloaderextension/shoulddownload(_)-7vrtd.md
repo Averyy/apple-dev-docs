@@ -20,11 +20,11 @@ Determines whether a particular asset pack should be downloaded.
 func shouldDownload(_ assetPack: AssetPack) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 Whether the asset pack should be downloaded.
 
-#### Discussion
+## Discussion
 
 This default implementation always returns `true`. You can override it to specify your own filtering logic.
 

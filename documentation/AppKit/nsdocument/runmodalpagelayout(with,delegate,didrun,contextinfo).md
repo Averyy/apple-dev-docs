@@ -19,7 +19,7 @@ func runModalPageLayout(with printInfo: NSPrintInfo, delegate: Any?, didRun didR
 - (void) runModalPageLayoutWithPrintInfo:(NSPrintInfo *) printInfo delegate:(id) delegate didRunSelector:(SEL) didRunSelector contextInfo:(void *) contextInfo;
 ```
 
-#### Discussion
+## Discussion
 
 Invoked from the action method [`runPageLayout(_:)`](./runpagelayout%28_%29.md). Presents the page layout panel app modally if there is no document window to which it can be presented document modally.
 

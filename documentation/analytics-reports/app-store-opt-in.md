@@ -5,7 +5,7 @@
 
 Analyze the percentage of first-time app downloaders who choose to share their data with you.
 
-#### Overview
+## Overview
 
 The App Store provides an option for users to share diagnostic and usage data with developers. Utilize the App Store Opt-In Report to determine the percentage of first-time app downloaders who have chosen to share their data with you.
 
@@ -19,7 +19,7 @@ The App Store provides an option for users to share diagnostic and usage data wi
 
 The Analytics Reports framework delivers new portions of report content as instances. Each instance can contain one or more batches of data, to accommodate late-arriving events, or in rare cases, data corrections.  To learn more, see [Data Completeness and Corrections](./data-completeness-corrections.md).
 
-#### Report Fields
+## Report Fields
 
 | Report Field | Description | Data Type |
 | --- | --- | --- |

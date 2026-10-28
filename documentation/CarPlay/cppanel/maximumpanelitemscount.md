@@ -21,7 +21,7 @@ class var maximumPanelItemsCount: Int { get }
 @property (class, nonatomic, readonly) NSInteger maximumPanelItemsCount;
 ```
 
-#### Discussion
+## Discussion
 
 Each panel subtype configures this property with the maximum number of items it’s able to display. When assembling content for your panel, check the value of this property to determine precisely how many items the current type of panel supports.
 

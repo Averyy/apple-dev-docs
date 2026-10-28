@@ -24,11 +24,11 @@ convenience init?(for assetCollection: PHAssetCollection)
 + (instancetype) changeRequestForAssetCollection:(PHAssetCollection *) assetCollection;
 ```
 
-#### Return Value
+## Return Value
 
 An asset collection change request.
 
-#### Discussion
+## Discussion
 
 After you create a change request within a photo library change block, propose changes to the collection’s title or list of member assets with the properties and instance methods of the change request. After Photos runs your change block, the asset collection reflects your changes. For details on change blocks, see [`PHPhotoLibrary`](../phphotolibrary.md).
 

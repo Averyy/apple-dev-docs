@@ -25,7 +25,7 @@ func setAllowsFontSubpixelQuantization(_ allowsFontSubpixelQuantization: Bool)
 extern void CGContextSetAllowsFontSubpixelQuantization(CGContextRef c, bool allowsFontSubpixelQuantization);
 ```
 
-#### Discussion
+## Discussion
 
 Sub-pixel quantization is used by the graphics context if it is allowed, enabled, and if glyphs would be drawn at subpixel positions. For information on how to enable subpixel quantization, see the [`setShouldSubpixelQuantizeFonts(_:)`](./setshouldsubpixelquantizefonts%28_%29.md) function.
 

@@ -15,7 +15,7 @@ A four character code which, along with the selector and element, identify a spe
 enum IOUserAudioObjectPropertyScope : uint32_t;
 ```
 
-#### Discussion
+## Discussion
 
 The scope specifies the section of the object in which to look for the property, such as input, output, global, or pass-through. Each class has a different set of scopes. A subclass inherits its superclass’s set of scopes.
 

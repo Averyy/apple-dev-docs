@@ -25,7 +25,7 @@ func denyRequesters(_ requesters: [CKShare.AccessRequester])
 - (void) denyRequesters:(NSArray<CKShareAccessRequester *> *) requesters;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to deny pending access requests from uninvited users. CloudKit removes denied requesters from the [`requesters`](./requesters.md) array. To persist the changes, save the share to the server after calling this method.
 

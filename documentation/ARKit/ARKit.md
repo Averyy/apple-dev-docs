@@ -16,7 +16,7 @@ Integrate hardware sensing features to produce augmented reality apps and games.
 - [Validating a Model for Motion Capture](./validating-a-model-for-motion-capture.md)
 - [Recording and Replaying AR Session Data](./recording-and-replaying-ar-session-data.md)
 
-#### Overview
+## Overview
 
 *Augmented reality* (AR) describes user experiences that add 2D or 3D elements to the live view from a device’s sensors in a way that makes those elements appear to inhabit the real world. ARKit combines device motion tracking, world tracking, scene understanding, and display conveniences to simplify building an AR experience.
 

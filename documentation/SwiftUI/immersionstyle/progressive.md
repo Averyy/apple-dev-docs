@@ -19,7 +19,7 @@ static var progressive: ProgressiveImmersionStyle { get }
 
 Available when `Self` is `ProgressiveImmersionStyle`.
 
-#### Discussion
+## Discussion
 
 The system initially uses a radial portal effect that replaces passthrough in a portion of the field of view. People can interactively adjust the size of the portal by turning the Digital Crown, including down to a minimum amount of immersion defined by the system and up to the point where the portal fully covers passthrough. If someone tries to reduce the portal size below the minimum value, the portal smoothly bounces back to the minimum size. The portal’s behavior at the maximum size matches the behavior of the [`full`](./full.md) immersion style, including the configurable visibility of the viewer’s upper limbs.
 

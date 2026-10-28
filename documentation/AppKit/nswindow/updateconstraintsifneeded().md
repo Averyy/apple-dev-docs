@@ -19,7 +19,7 @@ func updateConstraintsIfNeeded()
 - (void) updateConstraintsIfNeeded;
 ```
 
-#### Discussion
+## Discussion
 
 When a new layout pass is triggered for a window, the system invokes this method to ensure that any constraints for views in the window are updated with information from the current view hierarchy and its constraints. This method is called automatically by the system, but may be invoked manually if you need to examine the most up to date constraints.
 

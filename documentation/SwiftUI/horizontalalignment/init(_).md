@@ -21,7 +21,7 @@ Creates a custom horizontal alignment of the specified type.
 init(_ id: any AlignmentID.Type)
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to create a custom horizontal alignment. Define an [`AlignmentID`](../alignmentid.md) type, and then use that type to create a new static property on [`HorizontalAlignment`](../horizontalalignment.md):
 

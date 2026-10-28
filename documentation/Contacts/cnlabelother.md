@@ -24,7 +24,7 @@ let CNLabelOther: String
 extern NSString * const CNLabelOther;
 ```
 
-#### Discussion
+## Discussion
 
 This label takes a string value.
 

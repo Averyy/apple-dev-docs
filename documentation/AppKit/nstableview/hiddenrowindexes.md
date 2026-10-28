@@ -19,7 +19,7 @@ var hiddenRowIndexes: IndexSet { get }
 @property (copy, readonly) NSIndexSet * hiddenRowIndexes;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is an index set containing the indexes of any hidden table rows. Table rows may be hidden by invoking the [`hideRows(at:withAnimation:)`](./hiderows%28at,withanimation%29.md) method. Some drag-and-drop operations also result in hidden rows.
 

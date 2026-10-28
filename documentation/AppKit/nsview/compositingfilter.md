@@ -19,7 +19,7 @@ var compositingFilter: CIFilter? { get set }
 @property (strong, nullable) CIFilter * compositingFilter;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the compositing filter stored in the [`compositingFilter`](../../QuartzCore/calayer/compositingfilter.md) property of the view’s layer. If the view does not have a layer, setting the value of this property has no effect.
 

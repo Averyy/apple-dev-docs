@@ -15,7 +15,7 @@ A string or array buffer that contains metadata about the properties of a Live P
 attribute String,ArrayBuffer metadataVideoSrc;
 ```
 
-#### Discussion
+## Discussion
 
 If you have a video asset that does not include a readable [`photoTime`](./phototime.md) and/or [`frameTimes`](./frametimes.md), you can set this property to a string URL or ArrayBuffer referencing the original MOV file that was captured by an iPhone.  That file is then parsed in the same manner as those loaded thorough [`videoSrc`](./videosrc.md). It serves as an alternate source for the [`photoTime`](./phototime.md) and [`frameTimes`](./frametimes.md) properties if they are not otherwise available.
 

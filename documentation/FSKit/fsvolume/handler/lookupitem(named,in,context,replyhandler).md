@@ -24,7 +24,7 @@ func lookupItem(named name: FSFileName, in directory: FSItem, context: FSContext
 - (void) lookupItemNamed:(FSFileName *) name inDirectory:(FSItem *) directory context:(FSContext *) context replyHandler:(void (^)(FSLookupItemResult *result, NSError *error)) reply;
 ```
 
-#### Discussion
+## Discussion
 
 If no item matching `name` exists in the directory indicated by `directory`, complete the request with an error with a domain of [`NSPOSIXErrorDomain`](../../../Foundation/nsposixerrordomain.md) and a code of `ENOENT`.
 

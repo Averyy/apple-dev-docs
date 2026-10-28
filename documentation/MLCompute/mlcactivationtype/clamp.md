@@ -23,7 +23,7 @@ case clamp
 MLCActivationTypeClamp
 ```
 
-#### Discussion
+## Discussion
 
 This activation type implements the following function:
 

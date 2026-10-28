@@ -16,9 +16,9 @@ A single item in a negative-keyword bulk-delete request.
 object NegativeKeywordDeleteBulkRequestItem
 ```
 
-#### Discussion
+## Discussion
 
-##### Example
+### Example
 
 ```json
 {

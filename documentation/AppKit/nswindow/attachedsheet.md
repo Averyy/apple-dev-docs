@@ -19,7 +19,7 @@ var attachedSheet: NSWindow? { get }
 @property (strong, readonly, nullable) NSWindow * attachedSheet;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is `nil` when the window doesn’t have a sheet attached.
 

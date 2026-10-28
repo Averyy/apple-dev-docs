@@ -21,7 +21,7 @@ Returns a Boolean value that indicates whether the rectangle contains the specif
 static bool SPRect3DContainsRect(SPRect3D rect, SPRect3D other);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether the rectangle contains the specified rectangle.
 

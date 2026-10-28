@@ -23,7 +23,7 @@ func startMirroringToCompanionDevice() async throws
 - (void) startMirroringToCompanionDeviceWithCompletion:(void (^)(BOOL success, NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method in your watchOS app to start a mirrored workout session on the companion iOS app. If your iOS app isn’t running, the system launches it in the background. The iOS companion app must assign a completion handler to its HealthKit Store’s [`workoutSessionMirroringStartHandler`](../hkhealthstore/workoutsessionmirroringstarthandler.md) property to process the incoming session.
 

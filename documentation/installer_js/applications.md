@@ -5,7 +5,7 @@
 
 An object that provides methods to obtain information about running applications.
 
-#### Overview
+## Overview
 
 This object is accessed using the `system.applications` property.
 

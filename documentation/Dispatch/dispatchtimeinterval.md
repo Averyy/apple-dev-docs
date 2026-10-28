@@ -21,7 +21,7 @@ A number of seconds, millisconds, microseconds, or nanoseconds.
 enum DispatchTimeInterval
 ```
 
-#### Overview
+## Overview
 
 Use [`DispatchTimeInterval`](./dispatchtimeinterval.md) values to specify the interval at which a [`DispatchSourceTimer`](./dispatchsourcetimer.md) fires or I/O handlers are invoked for a [`DispatchIO`](./dispatchio.md) channel, as well as to increment and decrement [`DispatchTime`](./dispatchtime.md) values.
 

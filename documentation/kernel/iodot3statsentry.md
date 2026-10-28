@@ -13,7 +13,7 @@
 typedef struct IODot3StatsEntry IODot3StatsEntry;
 ```
 
-#### Discussion
+## Discussion
 
 Ethernet MIB statistics structure.
 

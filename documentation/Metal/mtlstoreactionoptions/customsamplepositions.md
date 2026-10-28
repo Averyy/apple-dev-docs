@@ -30,7 +30,7 @@ MTLStoreActionOptionCustomSamplePositions
 
 - [Storing data a pass makes with custom sample positions for a subsequent pass](../storing-data-a-pass-makes-with-custom-sample-positions-for-a-subsequent-pass.md)
 
-#### Discussion
+## Discussion
 
 Set this option only on an [`MTLRenderPassColorAttachmentDescriptor`](../mtlrenderpasscolorattachmentdescriptor.md) or [`MTLRenderPassDepthAttachmentDescriptor`](../mtlrenderpassdepthattachmentdescriptor.md) instance. Setting this option on an [`MTLRenderPassStencilAttachmentDescriptor`](../mtlrenderpassstencilattachmentdescriptor.md) instance or combining it with a nonstore [`storeAction`](../mtlrenderpassattachmentdescriptor/storeaction.md) value results in a runtime error.
 

@@ -21,7 +21,7 @@ Creates a nonce from the given data.
 init(copying bytes: RawSpan) throws
 ```
 
-#### Discussion
+## Discussion
 
 Unless your use case calls for a nonce with a specific value, use the [`init()`](./init%28%29.md) method to instead create a random nonce.
 

@@ -20,11 +20,11 @@ func ioData(withCapacity capacity: Int) throws -> NSMutableData
 - (NSMutableData *) ioDataWithCapacity:(NSUInteger) capacity error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to an allocated buffer.
 
-#### Discussion
+## Discussion
 
 This method allocates and maps a kernel buffer that the underlying controller hardware has optimized. Using this method, the buffer doesn’t bounce to perform DMA operations.
 

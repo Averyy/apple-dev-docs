@@ -19,7 +19,7 @@ static var required: NSLayoutConstraint.Priority { get }
 static const NSLayoutPriority NSLayoutPriorityRequired;
 ```
 
-#### Discussion
+## Discussion
 
 Do not specify a layout constraint that exceeds this number.
 

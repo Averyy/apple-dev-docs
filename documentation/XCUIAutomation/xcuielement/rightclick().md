@@ -23,7 +23,7 @@ func rightClick()
 - (void) rightClick;
 ```
 
-#### Discussion
+## Discussion
 
 If the element exists within a scrollable view but is offscreen, XCTest attempts to scroll the element onscreen before performing the Control-click.
 

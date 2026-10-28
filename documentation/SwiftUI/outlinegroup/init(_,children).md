@@ -27,7 +27,7 @@ Available when `Data` conforms to `RandomAccessCollection`, `ID` is `Data.Elemen
 init<DataElement>(_ root: DataElement, children: KeyPath<DataElement, Data?>) where ID == DataElement.ID, Parent == TableRow<DataElement>, Leaf == TableRow<DataElement>, Subgroup == TableRow<DataElement>, DataElement : Identifiable, DataElement == Data.Element
 ```
 
-#### Discussion
+## Discussion
 
 This initializer provides a default `TableRowBuilder` using `TableRow` for each data element.
 

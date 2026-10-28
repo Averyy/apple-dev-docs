@@ -16,7 +16,7 @@ The default view contents of a reality view, using reality view content.
 @preconcurrency struct Body<Placeholder> where Placeholder : View
 ```
 
-#### Overview
+## Overview
 
 You don’t create this type directly. [`RealityView`](../realityview.md) creates values for you.
 

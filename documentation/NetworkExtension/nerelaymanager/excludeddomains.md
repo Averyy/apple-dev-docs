@@ -24,7 +24,7 @@ var excludedDomains: [String]? { get set }
 @property (copy, nullable) NSArray<NSString *> * excludedDomains;
 ```
 
-#### Discussion
+## Discussion
 
 Excluded domains take precedence over domains listed in [`matchDomains`](./matchdomains.md).
 

@@ -12,7 +12,7 @@ Sample predesigned Apple Haptic Audio Pattern files, and learn how to play your 
 - Mac Catalyst 13.0+
 - Xcode 13.3+
 
-#### Overview
+## Overview
 
 This app, HapticSampler, describes how to load files formatted as Apple Haptic Audio Pattern (AHAP). AHAP files are JSON-compliant dictionary representations of haptic and audio patterns that you can compose in a text editor, or any program that exports content in the JSON format.
 
@@ -24,7 +24,7 @@ You can examine and modify the AHAP file parameters in Xcode or a text editor.
 
 > **Note**: HapticSampler requires Xcode 11 or later. Simulator doesn’t support a haptic interface, so build and run this sample on an iPhone 8, 8 Plus, X, XR, XS, or XS Max running iOS 13 or later.
 
-##### Configure the App to Play Haptics
+### Configure the App to Play Haptics
 
 HapticSampler checks for device compatibility and sets up an instance of [`CHHapticEngine`](./chhapticengine.md) on launch.
 
@@ -42,7 +42,7 @@ do {
 
 See [Preparing your app to play haptics](./preparing-your-app-to-play-haptics.md) for more information about setting up the engine.
 
-##### Start the Haptic Engine
+### Start the Haptic Engine
 
 All AHAPs in the sample are included in the app bundle, so build a URL to the desired file by searching in the main bundle, as you might do for other included assets like audio files.
 
@@ -60,7 +60,7 @@ Tap one of the buttons in the app to load the AHAP file associated with that but
 try engine?.start()
 ```
 
-##### Play the AHAP
+### Play the AHAP
 
 Assuming the engine has started, call the engine’s method, [`playPattern(from:)`](./chhapticengine/playpattern%28from%29-6m9m5.md), passing it the URL to playing the file.
 
@@ -77,7 +77,7 @@ Core Haptics layers simultaneously playing haptics automatically. If you don’t
 
 > **Note**: Haptic patterns don’t blend like audio waveforms, and not all combinations produce a discernible effect. Playing two haptic events of the same type at the same time makes them hard to tell apart. Experiment with various combinations to ensure that the result feels right.
 
-##### Create Advanced Pattern Players for More Granular Control
+### Create Advanced Pattern Players for More Granular Control
 
 To have more granular control over individual haptics, such as configuring their pausing, resuming, and seeking behavior, create and maintain advanced pattern players using [`CHHapticAdvancedPatternPlayer`](./chhapticadvancedpatternplayer.md) instead of using [`playPattern(from:)`](./chhapticengine/playpattern%28from%29-6m9m5.md).
 
@@ -86,7 +86,7 @@ advancedPlayer = try hapticEngine.makeAdvancedPlayer(with: ahapPattern)
 advancedPlayer.loopEnabled = true
 ```
 
-##### Compose Your Own Haptic
+### Compose Your Own Haptic
 
 To compose your own haptic pattern, begin by modifying one of the AHAP files included in the project. You can copy components of it for producing a transient haptic pattern or a continuous haptic pattern, then build your own haptic by combining and modifying those pieces.
 

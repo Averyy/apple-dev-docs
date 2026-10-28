@@ -20,7 +20,7 @@ The current shuffle mode of the music player.
 var shuffleMode: MusicPlayer.ShuffleMode? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to `nil`.
 

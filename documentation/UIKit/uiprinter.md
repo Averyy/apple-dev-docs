@@ -23,7 +23,7 @@ class UIPrinter
 @interface UIPrinter : NSObject
 ```
 
-#### Overview
+## Overview
 
 You use a printer object to obtain information about a printer so that you can display that information in your app’s interface. You do not use printer objects to communicate with the printer directly.
 

@@ -19,7 +19,7 @@ func item(withTitle title: String) -> NSMenuItem?
 - (NSMenuItem *) itemWithTitle:(NSString *) title;
 ```
 
-#### Return Value
+## Return Value
 
 The found menu item (an object conforming to the NSMenuItem protocol) or `nil` if the object couldn’t be found.
 

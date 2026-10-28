@@ -24,7 +24,7 @@ class GKNoise
 @interface GKNoise : NSObject
 ```
 
-#### Overview
+## Overview
 
 Using procedural noise requires three steps:
 
@@ -34,7 +34,7 @@ Using procedural noise requires three steps:
 
 [`GKNoise`](./gknoise.md) objects are lightweight. Because each noise object represents only a specific configuration of noise generation and processing steps, there’s little computation cost to creating noise objects from noise sources and applying operations to process, transform, or combine them. After you create noise objects and apply operations, creating a [`GKNoiseMap`](./gknoisemap.md) object from the resulting noise object performs only the computation needed to generate final output.
 
-##### Colorizing and Combining Noise
+### Colorizing and Combining Noise
 
 A noise object doesn’t contain noise values or pixel color values for the noise field it describes. However, because you can combine multiple noise objects before producing colorized textures from the result, the [`gradientColors`](./gknoise/gradientcolors.md) property specifies the colors that the [`SKTexture`](../SpriteKit/sktexture.md) class uses to colorize output. For example, you can generate a realistic terrain texture by creating several styles of noise representing different biomes such as water, grassland, forests and mountains, each with their own color gradient, then combining them with the [`init(componentNoises:selectionNoise:)`](./gknoise/init%28componentnoises,selectionnoise%29.md) method. The selectionNoise parameter to that method determines which biomes shows through in which regions of the final output, and each retains its own color gradient.
 

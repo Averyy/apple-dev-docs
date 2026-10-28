@@ -19,7 +19,7 @@ func addSelectionIndexPaths(_ indexPaths: [IndexPath]) -> Bool
 - (BOOL) addSelectionIndexPaths:(NSArray<NSIndexPath *> *) indexPaths;
 ```
 
-#### Discussion
+## Discussion
 
 Attempting to change the selection may cause a `commitEditing` message which fails, thus denying the selection change.
 

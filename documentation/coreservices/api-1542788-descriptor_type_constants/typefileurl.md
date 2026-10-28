@@ -16,7 +16,7 @@ A file URL. That is, the associated data consists of the bytes of a UTF-8 encode
 typeFileURL = 'furl'
 ```
 
-#### Discussion
+## Discussion
 
 You can translate between a descriptor of this type and an instance of `CFURL` by calling [`CFURLCreateWithBytes(_:_:_:_:_:)`](../../CoreFoundation/cfurlcreatewithbytes%28_,_,_,_,_%29.md) and specifying `kCFStringEncodingUTF8` for the encoding. Or, if you have a [`CFURL`](../../CoreFoundation/cfurl.md), you can call [`CFURLCreateData(_:_:_:_:)`](../../CoreFoundation/cfurlcreatedata%28_,_,_,_%29.md) to get the data as an instance of `CFData` (again specifying an encoding of `kCFStringEncodingUTF8`), and[`CFDataGetBytes(_:_:_:)`](../../CoreFoundation/cfdatagetbytes%28_,_,_%29.md) to get the actual bytes to insert into a descriptor of this type.
 

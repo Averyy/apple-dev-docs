@@ -13,7 +13,7 @@
 kModeSenseParameterHeader10_LongLBABit = 0
 ```
 
-#### Discussion
+## Discussion
 
 Bit to indicate Long LBA block descriptors follow.
 

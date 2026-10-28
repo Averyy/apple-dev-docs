@@ -23,7 +23,7 @@ var activeExternalSyncVideoFrameDuration: CMTime { get }
 @property (nonatomic, readonly) CMTime activeExternalSyncVideoFrameDuration;
 ```
 
-#### Discussion
+## Discussion
 
 Set up your input to follow an external sync device by calling [`follow(_:videoFrameDuration:delegate:)`](./follow%28_,videoframeduration,delegate%29.md).
 

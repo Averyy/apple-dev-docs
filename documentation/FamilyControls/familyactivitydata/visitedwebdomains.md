@@ -16,7 +16,7 @@ Web domains someone visits on their device.
 var visitedWebDomains: [WebDomain] { get async throws }
 ```
 
-#### Discussion
+## Discussion
 
 Each web domain contains both a `domain` and a `token`.
 

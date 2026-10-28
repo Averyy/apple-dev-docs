@@ -25,11 +25,11 @@ func CTRunDelegateCreate(_ callbacks: UnsafePointer<CTRunDelegateCallbacks>, _ r
 extern CTRunDelegateRefCTRunDelegateCreate(const CTRunDelegateCallbacks *callbacks, void *refCon);
 ```
 
-#### Return Value
+## Return Value
 
 If  successful, a reference to an immutable CTRunDelegate object. Otherwise, returns `NULL`.
 
-#### Discussion
+## Discussion
 
 The run-delegate object can be used for reserving space in a line or for eliding the glyphs for a range of text altogether.
 

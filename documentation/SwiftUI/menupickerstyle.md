@@ -20,7 +20,7 @@ A picker style that presents the options as a menu when the user presses a butto
 struct MenuPickerStyle
 ```
 
-#### Overview
+## Overview
 
 You can also use [`menu`](./pickerstyle/menu.md) to construct this style.
 

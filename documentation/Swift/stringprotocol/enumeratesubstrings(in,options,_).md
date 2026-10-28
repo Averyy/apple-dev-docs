@@ -21,7 +21,7 @@ Enumerates the substrings of the specified type in the specified range of the st
 func enumerateSubstrings<R>(in range: R, options opts: String.EnumerationOptions = [], _ body: @escaping (String?, Range<Self.Index>, Range<Self.Index>, inout Bool) -> Void) where R : RangeExpression, R.Bound == String.Index
 ```
 
-#### Discussion
+## Discussion
 
 Mutation of a string value while enumerating its substrings is not supported. If you need to mutate a string from within `body`, convert your string to an `NSMutableString` instance and then call the `enumerateSubstrings(in:options:using:)` method.
 

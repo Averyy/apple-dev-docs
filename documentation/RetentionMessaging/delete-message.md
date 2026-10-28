@@ -13,7 +13,7 @@ Deletes a previously uploaded message.
 
 - [Identifying rate limits](./identifying-rate-limits.md)
 
-#### Discussion
+## Discussion
 
 Call this endpoint to delete a message. After successfully deleting the message, its `messageIdentifier` no longer exists.
 

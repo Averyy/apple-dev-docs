@@ -21,11 +21,11 @@ Returns a fixed-width font from the same family as the base font.
 func monospaced() -> Font
 ```
 
-#### Return Value
+## Return Value
 
 A fixed-width font from the same family as the base font, if one is available, and a default fixed-width font otherwise.
 
-#### Discussion
+## Discussion
 
 If there’s no suitable font face in the same family, SwiftUI returns a default fixed-width font.
 

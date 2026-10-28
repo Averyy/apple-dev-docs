@@ -24,7 +24,7 @@ class func calculateArea(_ area: UnsafeMutablePointer<Double>, for contour: VNCo
 + (BOOL) calculateArea:(double *) area forContour:(VNContour *) contour orientedArea:(BOOL) orientedArea error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 Attempting to calculate the area for a contour containing random points, or with self-crossing edges, produces undefined results.
 

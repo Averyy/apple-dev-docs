@@ -25,7 +25,7 @@ struct SyncableEntityIdentifier<LocalID, StableID> where LocalID : EntityIdentif
 
 - [Defining app entities for your custom data types](./defining-app-entities-for-your-custom-data-types.md)
 
-#### Overview
+## Overview
 
 Use this structure if you maintain separate local and stable identifiers in one of your entity types. Assign this structure to the `id` property of your entity and use the value in the [`local`](./syncableentityidentifier/local.md) property to refer to the entity in your code. The system uses the [`stable`](./syncableentityidentifier/stable.md) value to refer to the same entity during operations that occur on another device.
 

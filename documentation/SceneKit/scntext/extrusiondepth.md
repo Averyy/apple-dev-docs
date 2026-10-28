@@ -25,7 +25,7 @@ var extrusionDepth: CGFloat { get set }
 @property (nonatomic) CGFloat extrusionDepth;
 ```
 
-#### Discussion
+## Discussion
 
 The geometry is centered along the z-axis of its local coordinate space. For example, if its extrusion depth is is `1.0`, the geometry extends from `-0.5` to `0.5` along the z-axis.
 

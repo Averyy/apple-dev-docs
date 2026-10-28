@@ -12,11 +12,11 @@ static const IORegistryPlane * makePlane(
  const char *name );
 ```
 
-#### Return Value
+## Return Value
 
 A new instance of an IORegistryPlane, or zero on failure.
 
-#### Overview
+## Overview
 
 Most planes in IOKit are created by the OS, although other planes may be created.
 

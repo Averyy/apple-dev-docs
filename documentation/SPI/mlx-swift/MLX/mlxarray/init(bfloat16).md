@@ -17,13 +17,13 @@ Initializer allowing creation of scalar (0-dimension) `MLXArray` with a [`DType.
 convenience init(bfloat16 value: Float32)
 ```
 
-#### Discussion
+## Discussion
 
 ```swift
 let a = MLXArray(bfloat16: 35)
 ```
 
-##### See Also
+### See Also
 
 - [Initialization](../initialization.md)
 

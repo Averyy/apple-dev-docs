@@ -24,7 +24,7 @@ var componentClass: AnyClass { get }
 @property (nonatomic, readonly) Class componentClass;
 ```
 
-#### Discussion
+## Discussion
 
 Each [`GKComponentSystem`](../gkcomponentsystem.md) object manages components of a specific [`GKComponent`](../gkcomponent.md) subclass. You specify the component class to be used by a system when creating it with the [`init(componentClass:)`](./init%28componentclass%29.md) initializer. Afterward, you may add components to the system only if their type matches the system’s component class.
 

@@ -19,7 +19,7 @@ Returns a hover effect style that applies hover state data to a custom shader th
 static func shader(_ inputs: HoverEffectComponent.ShaderHoverEffectInputs) -> HoverEffectComponent.HoverEffect
 ```
 
-#### Discussion
+## Discussion
 
 The custom shader can be either MaterialX or [`CustomMaterial`](../../custommaterial.md).
 

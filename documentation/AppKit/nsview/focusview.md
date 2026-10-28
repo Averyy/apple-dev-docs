@@ -19,7 +19,7 @@ class var focusView: NSView? { get }
 @property (class, strong, readonly, nullable) NSView * focusView;
 ```
 
-#### Discussion
+## Discussion
 
 The value in this property is `nil` if there is no focused view.
 

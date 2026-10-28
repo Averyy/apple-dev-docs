@@ -24,7 +24,7 @@ func accounts(with accountType: ACAccountType!) -> [Any]!
 - (NSArray *) accountsWithAccountType:(ACAccountType *) accountType;
 ```
 
-#### Return Value
+## Return Value
 
 All accounts that match `accountType`.
 

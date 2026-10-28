@@ -17,11 +17,11 @@ Creates a new XPC connection to the extension process.
 - (xpc_connection_t) makeLibXPCConnectionError:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 An object that represents the new XPC connection, or `nil` if an error occurs.
 
-#### Discussion
+## Discussion
 
 When you create an [`xpc_connection_t`](../../XPC/xpc_connection_t.md) in your browser app using this method, the system calls your extension’s [`handle(xpcConnection:)`](../webcontentextension/handle%28xpcconnection%29.md) method to supply the remote end of the connection to your extension process.
 

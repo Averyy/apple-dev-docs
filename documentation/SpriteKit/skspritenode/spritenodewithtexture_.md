@@ -21,7 +21,7 @@ Initializes a textured sprite using an existing texture object.
 + (instancetype) spriteNodeWithTexture:(SKTexture *) texture;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized sprite object.
 

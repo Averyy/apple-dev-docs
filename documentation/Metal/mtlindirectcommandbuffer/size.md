@@ -25,7 +25,7 @@ var size: Int { get }
 @property (readonly) NSUInteger size;
 ```
 
-#### Discussion
+## Discussion
 
 You set the value of this property when you create the indirect command buffer, and afterwards it doesn’t change.
 

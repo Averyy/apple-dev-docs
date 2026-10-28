@@ -19,7 +19,7 @@ func deselectSelectedCell()
 - (void) deselectSelectedCell;
 ```
 
-#### Discussion
+## Discussion
 
 If the selection mode is `NSRadioModeMatrix` and empty selection is not allowed, or if nothing is currently selected, this method does nothing. This method doesn’t redisplay the receiver.
 

@@ -19,7 +19,7 @@ func setSelectionFrom(_ startPos: Int, to endPos: Int, anchor anchorPos: Int, hi
 - (void) setSelectionFrom:(NSInteger) startPos to:(NSInteger) endPos anchor:(NSInteger) anchorPos highlight:(BOOL) lit;
 ```
 
-#### Discussion
+## Discussion
 
 `startPos`, `endPos`, and `anchorPos` are cell positions, counting from 0 at the upper left cell of the receiver, in row order. For example, the third cell in the top row would be number 2.
 

@@ -25,7 +25,7 @@ var shouldBadge: Bool { get set }
 @property (assign) BOOL shouldBadge;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`false`](../../../Swift/false.md). Set it to [`true`](../../../Swift/true.md) to cause the system to increment the badge value whenever it receives the corresponding push notification.
 

@@ -19,7 +19,7 @@ enum ButtonType
 enum NSButtonType : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 For more information, see [`setButtonType(_:)`](../nsbuttoncell/setbuttontype%28_%29.md).
 

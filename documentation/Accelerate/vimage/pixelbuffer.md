@@ -31,7 +31,7 @@ struct PixelBuffer<Format> where Format : PixelFormat
 - [Converting chroma-subsampled images](../converting-chroma-subsampled-images.md)
 - [Optimizing image-processing performance](../optimizing-image-processing-performance.md)
 
-#### Overview
+## Overview
 
 Use a [`vImage.PixelBuffer`](./pixelbuffer.md) to represent an image from a [`CGImage`](../../CoreGraphics/cgimage.md) instance, a [`CVPixelBuffer`](../../CoreVideo/cvpixelbuffer.md) structure, or a collection of raw pixel values. Pixel buffers are typed by their bits per channel and number of channels. For example, [`vImage.Interleaved8x4`](./interleaved8x4.md) indicates a 4-channel, 8-bit-per-channel pixel buffer that contains image data such as RGBA or CMYK.
 

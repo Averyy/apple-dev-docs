@@ -29,11 +29,11 @@ func childNode(withName name: String) -> SKNode?
 
 - [Searching the Node Tree](../searching-the-node-tree.md)
 
-#### Return Value
+## Return Value
 
 If a node object with that name is found, the method returns the node object. Otherwise, it returns `nil`.
 
-#### Discussion
+## Discussion
 
 If more than one child share the same name, the first node discovered is returned.
 

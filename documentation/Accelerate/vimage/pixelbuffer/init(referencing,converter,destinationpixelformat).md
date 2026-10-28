@@ -23,7 +23,7 @@ init(referencing lockedCVPixelBuffer: CVPixelBuffer, converter: vImageConverter,
 
 Available when `Format` conforms to `SinglePlanePixelFormat`.
 
-#### Discussion
+## Discussion
 
 The following code shows how to incorporate a vImage pixel buffer into a [`CIImageProcessorKernel`](../../../CoreImage/ciimageprocessorkernel.md) instance. The code calls [`init(referencing:converter:destinationPixelFormat:)`](./init%28referencing,converter,destinationpixelformat%29.md) to initialize a source and destination vImage pixel buffers that share data with the processor kernel’s input and output:
 

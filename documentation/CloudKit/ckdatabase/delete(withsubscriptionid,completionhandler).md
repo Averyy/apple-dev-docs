@@ -23,7 +23,7 @@ Deletes a specific subscription and delivers the deleted subscription’s identi
 func delete(withSubscriptionID subscriptionID: CKSubscription.ID, completionHandler: @escaping @Sendable (String?, (any Error)?) -> Void)
 ```
 
-#### Discussion
+## Discussion
 
 The completion handler takes the following parameters:
 

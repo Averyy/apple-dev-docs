@@ -19,7 +19,7 @@ func setMetadata(_ parameters: nw_parameters_t)
 - (void) setMetadata:(nw_parameters_t) parameters;
 ```
 
-#### Discussion
+## Discussion
 
 Use an [`nw_parameters_t`](../../Network/nw_parameters_t.md) object to create a connection that transparently proxies the flow’s data. This also provides accurate source app information to any subsequent [`NEAppProxyProvider`](../neappproxyprovider.md) instances that transparently proxy the flow.
 

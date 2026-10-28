@@ -17,7 +17,7 @@ Log a message using the log level and source that you provide.
 func log(level: Logger.Level, _ message: @autoclosure () -> Logger.Message, metadata: @autoclosure () -> Logger.Metadata? = nil, source: @autoclosure () -> String? = nil, file: String = #fileID, function: String = #function, line: UInt = #line)
 ```
 
-#### Discussion
+## Discussion
 
 If the `logLevel` passed to this method is more severe than the `Logger`’s [`logLevel`](./loglevel.md), the library logs the message, otherwise nothing will happen.
 

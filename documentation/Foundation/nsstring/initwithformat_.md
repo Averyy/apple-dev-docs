@@ -21,11 +21,11 @@ Returns an `NSString` object initialized by using a given format string as a tem
 - (instancetype) initWithFormat:(NSString *) format;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSString` object initialized by using `format` as a template into which the remaining argument values are substituted according to the system locale. The returned object may be different from the original receiver.
 
-#### Discussion
+## Discussion
 
 Pass a comma-separated list of variadic arguments to substitute into `format`.
 

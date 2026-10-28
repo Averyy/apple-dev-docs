@@ -18,7 +18,7 @@ A string that contains a description of the error.
 var localizedDescription: String? { get }
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [`localizedDescription`](../../../Foundation/nserror/localizeddescription.md).
 

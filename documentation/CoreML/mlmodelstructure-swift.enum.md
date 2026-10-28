@@ -21,7 +21,7 @@ An enum representing the structure of a model.
 enum MLModelStructure
 ```
 
-#### Overview
+## Overview
 
 ```
 // Load the model structure.

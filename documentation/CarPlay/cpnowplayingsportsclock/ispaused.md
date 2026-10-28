@@ -21,7 +21,7 @@ var isPaused: Bool { get }
 @property (nonatomic, assign, readonly, getter=isPaused) BOOL paused;
 ```
 
-#### Discussion
+## Discussion
 
 If YES, the clock will be paused at the specified value.
 

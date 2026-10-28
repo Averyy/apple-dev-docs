@@ -24,7 +24,7 @@ case twoUpContinuous
 kPDFDisplayTwoUpContinuous
 ```
 
-#### Discussion
+## Discussion
 
 Vertical scrolling applies to the entire document.
 

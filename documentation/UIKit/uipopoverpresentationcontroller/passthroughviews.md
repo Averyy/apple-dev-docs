@@ -22,7 +22,7 @@ var passthroughViews: [UIView]? { get set }
 @property (nonatomic, copy, nullable) NSArray<UIView *> * passthroughViews;
 ```
 
-#### Discussion
+## Discussion
 
 When a popover is active, interactions with other views are normally disabled until the popover is dismissed. Assigning an array of [`UIView`](../uiview.md) objects to this property causes UIKit to continue dispatching touch event to the views you specified.
 

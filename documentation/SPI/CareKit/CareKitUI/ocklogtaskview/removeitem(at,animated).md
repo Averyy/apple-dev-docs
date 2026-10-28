@@ -18,7 +18,7 @@ Remove an item from the list of logged items.
 @MainActor func removeItem(at index: Int, animated: Bool) -> OCKLogItemButton?
 ```
 
-#### Return Value
+## Return Value
 
 The item that was removed.
 

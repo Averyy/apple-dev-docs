@@ -23,7 +23,7 @@ var kDNSServiceType_AAAA: Int { get }
 kDNSServiceType_AAAA
 ```
 
-#### Discussion
+## Discussion
 
 IPv6 Address.
 

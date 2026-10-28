@@ -19,7 +19,7 @@ var datePickerElements: NSDatePicker.ElementFlags { get set }
 @property NSDatePickerElementFlags datePickerElements;
 ```
 
-#### Discussion
+## Discussion
 
 See “Constants” in [`NSDatePickerCell`](../nsdatepickercell.md) for a description of the possible values.
 

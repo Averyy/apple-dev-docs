@@ -25,7 +25,7 @@ var fragmentFunctionDescriptor: MTL4FunctionDescriptor? { get set }
 @property (nonatomic, copy, readwrite, nullable) MTL4FunctionDescriptor * fragmentFunctionDescriptor;
 ```
 
-#### Discussion
+## Discussion
 
 When you don’t specify a fragment function, you need to disable rasterization by setting property [`isRasterizationEnabled`](./israsterizationenabled.md) to false.
 

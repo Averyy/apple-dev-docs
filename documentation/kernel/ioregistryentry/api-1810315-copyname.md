@@ -12,11 +12,11 @@ virtual const OSSymbol * copyName(
  const IORegistryPlane *plane = 0 ) const;
 ```
 
-#### Return Value
+## Return Value
 
 A reference to an OSSymbol for the name, which should be released by the caller.
 
-#### Overview
+## Overview
 
 Entries can be named in a particular plane, or globally. If the entry is named in plane and the plane is specified that name will be returned, otherwise the global name is returned. The global name defaults to the entry's meta class name if it has not been named.
 

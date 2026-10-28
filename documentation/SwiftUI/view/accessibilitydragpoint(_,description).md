@@ -37,7 +37,7 @@ nonisolated
 func accessibilityDragPoint<S>(_ point: UnitPoint, description: S) -> ModifiedContent<Self, AccessibilityAttachmentModifier> where S : StringProtocol
 ```
 
-#### Discussion
+## Discussion
 
 Use this modifier when you need to provide a description to users when prompted begin a drag interaction.
 

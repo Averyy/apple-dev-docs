@@ -20,7 +20,7 @@ func rotate(byRadians angle: Double)
 - (void) rotateByRadians:(CGFloat) angle;
 ```
 
-#### Discussion
+## Discussion
 
 After invoking this method, applying the receiver’s matrix turns the axes counterclockwise about the current origin by `angle` radians, in addition to performing all previous transformations.
 

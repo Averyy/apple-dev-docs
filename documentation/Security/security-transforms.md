@@ -5,7 +5,7 @@
 
 Perform cryptographic functions like encoding, encryption, signing, and signature verification.
 
-#### Overview
+## Overview
 
 You use security transforms to assemble a chain of security-related operations that you apply to a stream of data in macOS.
 

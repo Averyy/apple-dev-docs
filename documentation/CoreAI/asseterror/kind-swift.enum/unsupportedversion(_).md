@@ -19,7 +19,7 @@ An error that indicates the asset version is unsupported.
 case unsupportedVersion(String)
 ```
 
-#### Discussion
+## Discussion
 
 This typically means a more recent version of this library generated the asset, and you may need to upgrade.
 

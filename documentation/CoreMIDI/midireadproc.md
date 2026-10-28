@@ -25,7 +25,7 @@ typealias MIDIReadProc = (UnsafePointer<MIDIPacketList>, UnsafeMutableRawPointer
 typedef void (*)(const struct MIDIPacketList *, void *, void *) __attribute__((nonblocking)) MIDIReadProc;
 ```
 
-#### Discussion
+## Discussion
 
 This is a callback function through which a client receives incoming MIDI messages.
 

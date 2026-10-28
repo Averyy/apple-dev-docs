@@ -20,7 +20,7 @@ func SecCodeCopyPath(_ staticCode: SecStaticCode, _ flags: SecCSFlags, _ path: U
 OSStatus SecCodeCopyPath(SecStaticCodeRef staticCode, SecCSFlags flags, CFURLRef*path);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Code Signing Services Result Codes](./code-signing-services-result-codes.md).
 

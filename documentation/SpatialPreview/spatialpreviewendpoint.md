@@ -16,7 +16,7 @@ An endpoint representing a visionOS device you can connect to for spatial previe
 struct SpatialPreviewEndpoint
 ```
 
-#### Overview
+## Overview
 
 Obtain an endpoint from [`endpoint`](./connectedspatialendpointobserver/endpoint.md) when a device is connected via Mac Virtual Display, or let the user select one with [`SpatialPreviewDevicePicker`](./spatialpreviewdevicepicker.md). Pass the endpoint to [`start(endpoint:)`](./documentpreviewsession/start%28endpoint%29.md) or [`start(endpoint:parameters:viewerOptions:)`](./usdpreviewsession/start%28endpoint,parameters,vieweroptions%29.md) to begin a session.
 

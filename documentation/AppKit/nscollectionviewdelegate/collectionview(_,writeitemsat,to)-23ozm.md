@@ -21,11 +21,11 @@ optional func collectionView(_ collectionView: NSCollectionView, writeItemsAt in
 - (BOOL) collectionView:(NSCollectionView *) collectionView writeItemsAtIndexPaths:(NSSet<NSIndexPath *> *) indexPaths toPasteboard:(NSPasteboard *) pasteboard;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the drag operation can continue or [`false`](../../Swift/false.md) if you want to refuse the drag.
 
-#### Discussion
+## Discussion
 
 You must implement this method or the [`collectionView(_:pasteboardWriterForItemAt:)`](./collectionview%28_,pasteboardwriterforitemat%29-5eyyl.md) method to support drag operations. The collection view calls the [`collectionView(_:pasteboardWriterForItemAt:)`](./collectionview%28_,pasteboardwriterforitemat%29-5eyyl.md) method in preference to this one if both are implemented. If your app supports multi-image drag and drop, you must implement the [`collectionView(_:pasteboardWriterForItemAt:)`](./collectionview%28_,pasteboardwriterforitemat%29-5eyyl.md) method.
 

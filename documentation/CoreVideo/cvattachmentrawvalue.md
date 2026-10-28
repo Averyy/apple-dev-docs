@@ -21,7 +21,7 @@ A lightweight wrapper around raw attachment values.
 struct CVAttachmentRawValue
 ```
 
-#### Overview
+## Overview
 
 This type encapsulates a raw attachment value and provides dictionary-like access to its content. The `subscript(key:)-(String)` allows access to internal values in a type safe way.
 

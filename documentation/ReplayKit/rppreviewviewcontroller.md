@@ -34,7 +34,7 @@ class RPPreviewViewController
 @interface RPPreviewViewController : NSViewController
 ```
 
-#### Overview
+## Overview
 
 Upon completion of a successful recording, the preview view controller is passed into the completion handler for [`stopRecording(handler:)`](./rpscreenrecorder/stoprecording%28handler%29.md).
 

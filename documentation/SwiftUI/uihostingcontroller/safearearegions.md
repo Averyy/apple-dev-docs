@@ -22,7 +22,7 @@ The safe area regions that this view controller adds to its view.
 
 Available when `Content` conforms to `View`.
 
-#### Discussion
+## Discussion
 
 An example of when this is appropriate to use is when hosting content that you know should never be affected by the safe area, such as a custom scrollable container. Disabling a safe area region omits it from the SwiftUI layout system altogether.
 

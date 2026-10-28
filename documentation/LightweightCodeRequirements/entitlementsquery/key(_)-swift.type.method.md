@@ -21,7 +21,7 @@ Match against the specified key name at the root of the entitlements dictionary.
 static func key(_ keyName: String) -> EntitlementsQuery
 ```
 
-#### Discussion
+## Discussion
 
 Keys are matched byte for byte (i.e. no unicode normalization occurs). Chain additional qualifiers to constrain the value of the key.
 

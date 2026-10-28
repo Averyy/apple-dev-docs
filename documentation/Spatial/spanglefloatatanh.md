@@ -19,11 +19,11 @@
 static SPAngleFloat SPAngleFloatAtanh(float x);
 ```
 
-#### Return Value
+## Return Value
 
 The inverse hyperbolic tangent of the specified value.
 
-#### Discussion
+## Discussion
 
 Returns the inverse hyperbolic tangent of the specified value.
 

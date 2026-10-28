@@ -19,7 +19,7 @@ var promptsUserIfNeeded: Bool { get set }
 @property BOOL promptsUserIfNeeded;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../../Swift/true.md), the system presents a user interface to request or display relevant information. The system waits until the user dismisses the UI before calling any relevant completion handlers. The default value of this property is [`true`](../../../Swift/true.md).
 

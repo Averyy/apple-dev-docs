@@ -20,7 +20,7 @@ optional func renderer(_ renderer: any SCNSceneRenderer, willUpdate node: SCNNod
 - (void) renderer:(id<SCNSceneRenderer>) renderer willUpdateNode:(SCNNode *) node forAnchor:(ARAnchor *) anchor;
 ```
 
-#### Discussion
+## Discussion
 
 Depending on the session configuration, ARKit may automatically update anchors in a session. The view calls this method once for each updated anchor.
 

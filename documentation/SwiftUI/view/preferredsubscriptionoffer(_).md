@@ -22,7 +22,7 @@ nonisolated
 func preferredSubscriptionOffer(_ offer: @escaping (Product, Product.SubscriptionInfo, [Product.SubscriptionOffer]) -> Product.SubscriptionOffer?) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Subscription stores within this view use the subscription offer you specify to configure the appearance of the subscription plans. [`ProductView`](../../StoreKit/productview.md) doesn’t display the terms of a subscription offer in the UI, but you can still use this modifier to declare which offer product views within a view hierarchy apply to a purchase.
 

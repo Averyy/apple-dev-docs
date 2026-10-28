@@ -15,7 +15,7 @@ framework: "mlx-swift-lm/MLXLMCommon"
 func embed(inputIds: MLXArray, attentionMask: MLXArray?, softTokens: MLXArray? = nil) -> MLXArray
 ```
 
-#### Return Value
+## Return Value
 
 `[B, embeddingDim]` unit-length float32 embeddings.
 

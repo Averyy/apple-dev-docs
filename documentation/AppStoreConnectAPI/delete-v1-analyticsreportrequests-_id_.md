@@ -13,9 +13,9 @@ Remove a specific analytics report request.
 
 - [Downloading Analytics Reports](./downloading-analytics-reports.md)
 
-#### Discussion
+## Discussion
 
-##### Examples Request and Response
+### Examples Request and Response
 
 **Request**:
 

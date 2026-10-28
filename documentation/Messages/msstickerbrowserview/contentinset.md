@@ -21,7 +21,7 @@ var contentInset: UIEdgeInsets { get set }
 @property (nonatomic, assign, readwrite) UIEdgeInsets contentInset;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to add to the scrollable area around the content. The insets are measured in points. The default value is [`zero`](../../UIKit/uiedgeinsets/zero.md).
 

@@ -23,7 +23,7 @@ var textLayoutGuide: UILayoutGuide? { get }
 @property (nonatomic, strong, readonly, nullable) UILayoutGuide * textLayoutGuide;
 ```
 
-#### Discussion
+## Discussion
 
 If the configuration doesn’t specify primary text, the value of this property is `nil`.
 

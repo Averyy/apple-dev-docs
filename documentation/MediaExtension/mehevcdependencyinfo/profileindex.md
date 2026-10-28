@@ -19,7 +19,7 @@ var profileIndex: Int16 { get set }
 @property (nonatomic) int16_t profileIndex;
 ```
 
-#### Discussion
+## Discussion
 
 This value maps to the [`kCMHEVCTemporalLevelInfoKey_ProfileIndex`](../../CoreMedia/kcmhevctemporallevelinfokey_profileindex.md) sample buffer attachment, and is `-1` if this information isn’t available.
 

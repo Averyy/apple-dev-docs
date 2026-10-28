@@ -25,11 +25,11 @@ func SparseGetInertia(_ Factored: SparseOpaqueFactorization_Complex_Double, _ nu
 int SparseGetInertia(SparseOpaqueFactorization_Complex_Double Factored, int *num_positive, int *num_zero, int *num_negative);
 ```
 
-#### Return Value
+## Return Value
 
 0 on success, non-zero on error
 
-#### Discussion
+## Discussion
 
 For a given LDLT factorization, this function returns the number of negative, zero and positive pivots taken during the factorization. Note that in some cases, particularly when eigenvalues are close to zero, the computed numerical inertia may not be an accurate reflection of the true inertia of the system, and in particular can be highly dependent on the zeroTolerance (and to a less degree the pivotTolerance) specified in the factorization options.
 

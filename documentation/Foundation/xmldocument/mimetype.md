@@ -20,11 +20,11 @@ var mimeType: String? { get set }
 @property (copy, nullable) NSString * MIMEType;
 ```
 
-#### Return Value
+## Return Value
 
 The MIME type for the receiver (for example, “text/xml”).
 
-#### Discussion
+## Discussion
 
 MIME types are assigned by IANA (see [http://www.iana.org/assignments/media-types/index.html](http://www.iana.org/assignments/media-types/index.html)).
 

@@ -25,7 +25,7 @@ static let boundingBox: SCNPhysicsShape.ShapeType
 extern SCNPhysicsShapeType const SCNPhysicsShapeTypeBoundingBox;
 ```
 
-#### Discussion
+## Discussion
 
 This option provides the lowest level of detail and the fastest simulation performance. Use it for generally box-shaped physics bodies or when constructing a compound physics shape.
 

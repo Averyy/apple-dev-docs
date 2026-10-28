@@ -18,11 +18,11 @@ OSStatus PMSessionSetDocumentFormatGeneration (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../core_printing.md#1670007).
 
-#### Overview
+## Overview
 
 You only need to call the function `PMSessionSetDocumentFormatGeneration` if you want to specify a format other than the default format (PDF) or a graphics context other than the default context (QuickDraw). If you want to use the default format for the operating system and to draw with QuickDraw, then you do not need to call this function. If you want to generate PICT + PS to use as one of the supported formats, then call `PMSessionSetDocumentFormatGeneration` to set the graphics context to QuickDraw and the format to PICT + PS. Note that the PICT + PS format is not available on Intel-based systems.
 
@@ -81,7 +81,7 @@ The printing context you get is a Quartz context into which you can draw. Note t
 
 You must call this function between the creation and release of a printing session. See the function [`PMCreateSession`](../api-1463247-pmcreatesession.md). You must call the function `PMSessionSetDocumentFormatGeneration` before you call PMSessionBeginDocument or [PMSessionBeginDocumentNoDialog](./api-1805538-pmsessionbegindocumentnodialog.md). Before requesting a spool file format using this function, you should call the function `PMSessionGetDocumentFormatGeneration` to get the list of supported formats.
 
-##### Special Considerations
+### Special Considerations
 
 The PICT + PS spool file format is not available on Intel-based systems.
 

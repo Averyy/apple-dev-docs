@@ -23,7 +23,7 @@ class let removedNotification: NSNotification.Name
 extern NSNotificationName const UIPasteboardRemovedNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The removal class method is [`remove(withName:)`](./remove%28withname%29.md). There is no `userInfo` dictionary.
 

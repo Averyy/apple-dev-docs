@@ -23,7 +23,7 @@ case minimal
 UIUserNotificationActionContextMinimal
 ```
 
-#### Discussion
+## Discussion
 
 In this context, a minimal UI is displayed for the notification’s alert. You may specify up to two custom actions in this context.
 

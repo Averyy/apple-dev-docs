@@ -19,7 +19,7 @@ Creates a padding layer with the constant padding sizes and constant valu you sp
 + (instancetype) layerWithConstantPadding:(NSArray<NSNumber *> *) padding constantValue:(float) constantValue;
 ```
 
-#### Return Value
+## Return Value
 
 A constant padding layer.
 

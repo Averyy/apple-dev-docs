@@ -5,26 +5,26 @@
 
 Evaluate the server’s security credentials in your app.
 
-#### Overview
+## Overview
 
 When you use a secure connection (such as `https`) with a URL request, your [`URLSessionDelegate`](./urlsessiondelegate.md) receives an authentication challenge with an authentication type of [`NSURLAuthenticationMethodServerTrust`](./nsurlauthenticationmethodservertrust.md). Unlike other challenges where the server is asking your app to authenticate itself, this is an opportunity for you to authenticate the server’s credentials.
 
 > 💡 **Tip**:  See [Handling an authentication challenge](./handling-an-authentication-challenge.md) for an introduction to authentication challenges.
 
-##### Determine when manual server trust evaluation is appropriate
+### Determine when manual server trust evaluation is appropriate
 
 In most cases, you should let the URL Loading System’s default handling evaluate the server trust. You get this behavior when you either don’t have a delegate or don’t handle authentication challenges. However, performing your own evaluation may be useful for scenarios like the following:
 
 - You want to accept server credentials that would otherwise be rejected by the system. For example, your app makes a secure connection to a development server that uses a self-signed certificate, which would ordinarily not match anything in the system’s trust store.
 - You want to reject credentials that would otherwise be accepted by the system. For example, you want to “pin” your app to a set of specific keys or certificates under your control, rather than accept any valid credential.
 
-[Figure 1](./url_loading_system/handling_an_authentication_challenge/performing_manual_server_trust_authentication.md#2959678) illustrates how an app performs manual credential evaluation by providing a delegate method to handle the authentication challenge. This bypasses the default handling. Instead, the delegate directly compares the server certificate or its public key against a copy of the certificate or key (or a hash of either of these) stored in the app bundle itself. If the delegate decides the server credential is valid, it accepts the server trust and allows the connection to continue.
+[Figure 1](./performing-manual-server-trust-authentication.md#2959678) illustrates how an app performs manual credential evaluation by providing a delegate method to handle the authentication challenge. This bypasses the default handling. Instead, the delegate directly compares the server certificate or its public key against a copy of the certificate or key (or a hash of either of these) stored in the app bundle itself. If the delegate decides the server credential is valid, it accepts the server trust and allows the connection to continue.
 
 ![Flow diagram of a server trust being evaluated manually by a delegate method. A certificate in the server trust matches a certificate inside the app bundle, so the server trust is manually accepted and the flow ends with a “connect” state.](https://developer.apple.com/tutorials/images/com.apple.foundation/media-2959678@2x.png)
 
 > **Note**:  [`URLSession`](./urlsession.md) enforces [App Transport Security (ATS)](./urlsession.md#App-Transport-Security-ATS), if it is enabled for the domain you are connecting to. This applies security requirements for the certificates, TLS version, and cipher used by the connection. You cannot loosen server trust requirements for an ATS-protected domain, but you can tighten them, using the manual evaluation technique shown in this article. See [NSAppTransportSecurity](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/plist/info/NSAppTransportSecurity) in [Information Property List Key Reference](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009247) for further details.
 
-##### Handle server trust authentication challenges
+### Handle server trust authentication challenges
 
 To perform manual server trust authentication, implement the [`URLSessionDelegate`](./urlsessiondelegate.md) method [`urlSession(_:didReceive:completionHandler:)`](./urlsessiondelegate/urlsession%28_,didreceive,completionhandler%29.md). When this method is called, the first things your implementation needs to do are to check that:
 
@@ -45,7 +45,7 @@ guard protectionSpace.authenticationMethod ==
 }
 ```
 
-##### Evaluate the credential in the challenge
+### Evaluate the credential in the challenge
 
 To access the server’s credential, get the [`serverTrust`](./urlprotectionspace/servertrust.md) property (an instance of the [`SecTrust`](../Security/sectrust.md) class) from the protection space. The following example shows how to access the server trust and accept or reject it. The listing starts by attempting to get the [`serverTrust`](./urlprotectionspace/servertrust.md) property from the protection space, and falls back to default handling if the property is `nil`. Next, it passes the server trust to a private helper method `checkValidity(of:)` that compares the certificate or public key in the server trust to known-good values stored in the app bundle.
 
@@ -73,7 +73,7 @@ Once the code determines the validity of the server trust, it takes one of two a
 
 > 💡 **Tip**:  See [Certificate, Key, and Trust Services](../Security/certificate-key-and-trust-services.md) to learn more about how to evaluate a [`SecTrust`](../Security/sectrust.md) instance or access certificates or public keys from it.
 
-##### Create a long-term server authentication strategy
+### Create a long-term server authentication strategy
 
 If you determine that you need to evaluate server trust manually in some or all cases,  plan for what your app will do if you need to change your server credentials. Keep the following guidelines in mind:
 

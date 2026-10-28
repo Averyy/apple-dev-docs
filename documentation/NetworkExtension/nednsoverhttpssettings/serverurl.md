@@ -24,7 +24,7 @@ var serverURL: URL? { get set }
 @property (copy, nullable) NSURL * serverURL;
 ```
 
-#### Discussion
+## Discussion
 
 The URL should use the URI template format defined by [RFC 8484](https://tools.ietf.org/html/rfc8484), for example `https://dnsserver.example.net/dns-query`.
 

@@ -20,11 +20,11 @@ optional func collectionView(_ collectionView: NSCollectionView, layout collecti
 - (NSSize) collectionView:(NSCollectionView *) collectionView layout:(NSCollectionViewLayout *) collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *) indexPath;
 ```
 
-#### Return Value
+## Return Value
 
 The size of the item. The width and height values must both be greater than `0`. Items must also not exceed the available space in the collection view.
 
-#### Discussion
+## Discussion
 
 Implement this method when you want to provide the size of items in the flow layout. Your implementation can return the same size for all items or it can return different sizes for items. You can also adjust the size of items dynamically each time you update the layout. If you do not implement this method, the size of items is obtained from the properties of the flow layout object.
 

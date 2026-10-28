@@ -24,7 +24,7 @@ class INSendMessageRecipientResolutionResult
 @interface INSendMessageRecipientResolutionResult : INPersonResolutionResult
 ```
 
-#### Overview
+## Overview
 
 An [`INSendMessageRecipientResolutionResult`](./insendmessagerecipientresolutionresult.md) object is what you return when resolving parameters containing an [`INPerson`](./inperson.md) object. Use the [`unsupported(forReason:)`](./insendmessagerecipientresolutionresult/unsupported%28forreason%29.md) method to provide additional context about why a recipient was invalid. Otherwise, use the creation method that best reflects your ability to successfully resolve the parameter.
 

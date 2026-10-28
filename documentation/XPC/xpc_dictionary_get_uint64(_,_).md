@@ -25,7 +25,7 @@ func xpc_dictionary_get_uint64(_ xdict: xpc_object_t, _ key: UnsafePointer<CChar
 extern uint64_t xpc_dictionary_get_uint64(xpc_object_t xdict, const char *key);
 ```
 
-#### Return Value
+## Return Value
 
 The underlying `uint64_t` value for the specified key. 0 if the value for the specified key is not an unsigned integer value or if there is no value for the specified key.
 

@@ -19,7 +19,7 @@ protocol NSAccessibilitySwitch : NSAccessibilityButton
 @protocol NSAccessibilitySwitch <NSAccessibilityButton>
 ```
 
-#### Overview
+## Overview
 
 Use this protocol when you want a user interface element to behave like a switch—a control that toggles between an on state and an off state—in the accessibility hierarchy.
 

@@ -24,7 +24,7 @@ struct WidgetRenderingMode
 
 - [Migrating ClockKit complications to WidgetKit](./converting-a-clockkit-app.md)
 
-#### Overview
+## Overview
 
 The system can modify the appearance of accessory family widgets. For example, it renders widgets on the Lock Screen on iPhone using the [`vibrant`](./widgetrenderingmode/vibrant.md) mode, while it renders widget-based complications in watchOS using either the [`fullColor`](./widgetrenderingmode/fullcolor.md) or [`accented`](./widgetrenderingmode/accented.md) modes, depending on the watch face and the user’s settings.
 

@@ -15,7 +15,7 @@ A classification for the notification type.
 var kind: AlertingContext.Kind { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to apply specialized handling for different notification types such as incoming calls, alarms, or timers.
 

@@ -15,7 +15,7 @@ The gradient to apply along the line.
 lineGradient?: LineGradient;
 ```
 
-#### Discussion
+## Discussion
 
 If a style has both [`strokeColor`](../style/strokecolor.md) and [`lineGradient`](../style/linegradient.md) definitions, [`lineGradient`](../style/linegradient.md) takes precedence and displays. If you don’t define a color at the start or end location within the gradient, MapKit JS uses the style’s [`strokeColor`](../style/strokecolor.md).
 

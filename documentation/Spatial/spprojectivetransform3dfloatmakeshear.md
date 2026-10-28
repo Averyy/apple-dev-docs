@@ -19,11 +19,11 @@
 static SPProjectiveTransform3DFloat SPProjectiveTransform3DFloatMakeShear(SPAxis shearAxis, float shearFactor0, float shearFactor1);
 ```
 
-#### Return Value
+## Return Value
 
 A new affine transform structure.
 
-#### Discussion
+## Discussion
 
 Returns a new shear affine transform.
 

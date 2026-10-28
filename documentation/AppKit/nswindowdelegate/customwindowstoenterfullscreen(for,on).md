@@ -20,15 +20,15 @@ optional func customWindowsToEnterFullScreen(for window: NSWindow, on screen: NS
 - (NSArray<NSWindow *> *) customWindowsToEnterFullScreenForWindow:(NSWindow *) window onScreen:(NSScreen *) screen;
 ```
 
-#### Return Value
+## Return Value
 
 An array of windows to use for the animation to full-screen mode for `window`; otherwise `nil`.
 
-#### Discussion
+## Discussion
 
 This method lets a window delegate customize the animation when the window is about to enter full-screen mode by providing a custom window or windows containing layers or other effects. If you don’t want to perform custom animation, you can omit the implementation of this method, or it can return `nil`.
 
-##### Special Considerations
+### Special Considerations
 
 If this method and [`customWindowsToEnterFullScreen(for:)`](./customwindowstoenterfullscreen%28for%29.md) are both implemented, this method is called.
 

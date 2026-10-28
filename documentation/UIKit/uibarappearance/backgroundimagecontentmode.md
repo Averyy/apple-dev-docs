@@ -23,7 +23,7 @@ var backgroundImageContentMode: UIView.ContentMode { get set }
 @property (nonatomic, assign, readwrite) UIViewContentMode backgroundImageContentMode;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify how to scale or fit the image in the [`backgroundImage`](./backgroundimage.md) property.
 

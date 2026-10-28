@@ -17,11 +17,11 @@ Returns the content size calculated from the frame size and the specified specif
 + (NSSize) contentSizeForFrameSize:(NSSize) fSize hasHorizontalScroller:(BOOL) hFlag hasVerticalScroller:(BOOL) vFlag borderType:(NSBorderType) type;
 ```
 
-#### Return Value
+## Return Value
 
 The content view frame size.
 
-#### Discussion
+## Discussion
 
 For an existing scroll view, you can simply use the [`contentSize`](./contentsize.md) property.
 

@@ -20,7 +20,7 @@ Notable milestones that the framework signals during animation playback.
 enum AnimationEvents
 ```
 
-#### Overview
+## Overview
 
 This enumeration defines the playback states that an animated entity can indicate to an app. To receive notification of a particular event, create a completion handler:
 

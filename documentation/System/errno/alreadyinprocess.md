@@ -25,7 +25,7 @@ static var alreadyInProcess: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 You attempted an operation on a nonblocking object that already had an operation in progress.
 

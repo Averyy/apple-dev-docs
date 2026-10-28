@@ -19,7 +19,7 @@ let kABPhoneProperty: String
 extern NSString * const kABPhoneProperty;
 ```
 
-#### Discussion
+## Discussion
 
 Type: [`kABMultiStringProperty`](./kabmultistringproperty.md).
 

@@ -13,7 +13,7 @@
 kIOOutputStatusDropped = 0x0001
 ```
 
-#### Discussion
+## Discussion
 
 Packet accepted, but was also dropped.
 

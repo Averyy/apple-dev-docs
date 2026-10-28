@@ -5,13 +5,13 @@
 
 Compress the contents of an entire directory and store the result on the file system.
 
-#### Overview
+## Overview
 
 In this article, you’ll learn how to use AppleArchive to compress the contents of an entire directory to a single archive file.
 
 The code below compresses the contents of a directory name `src` using the [`Algorithm.lzfse`](../Compression/algorithm/lzfse.md) algorithm, and stores the result in a file named `directory.aar`.
 
-##### Create the file stream to write the compressed file
+### Create the file stream to write the compressed file
 
 Use [`fileStream(path:mode:options:permissions:)`](../AppleArchive/archivebytestream/filestream%28path,mode,options,permissions%29.md) to create the file stream that writes the compressed file to the file system. In this case, use the [`writeOnly`](../System/filedescriptor/accessmode/writeonly.md) mode:
 
@@ -31,7 +31,7 @@ defer {
 }
 ```
 
-##### Create the compression stream
+### Create the compression stream
 
 Create the compression stream, and specify the compression algorithm as [`lzfse`](../AppleArchive/archivecompression/lzfse.md). Specify the file-writing stream as the stream that receives the compressed data:
 
@@ -46,7 +46,7 @@ defer {
 }
 ```
 
-##### Create the encoding stream
+### Create the encoding stream
 
 Create the encoding stream. The encoding stream encodes its data as a byte stream, and sends the encoded data to the compression stream:
 
@@ -59,7 +59,7 @@ defer {
 }
 ```
 
-##### Define the header keys
+### Define the header keys
 
 Create a field key set that defines the fields in the archive header:
 
@@ -71,7 +71,7 @@ guard let keySet = ArchiveHeader.FieldKeySet("TYP,PAT,LNK,DEV,DAT,UID,GID,MOD,FL
 
 For more information about three-letter keys, see [`init(_:)`](../AppleArchive/archiveheader/fieldkeyset/init%28_%29.md).
 
-##### Compress the directory contents
+### Compress the directory contents
 
 Use [`writeDirectoryContents(archiveFrom:path:keySet:selectUsing:flags:threadCount:)`](../AppleArchive/archivestream/writedirectorycontents%28archivefrom,path,keyset,selectusing,flags,threadcount%29.md) to write the directory contents to the encode stream. In turn, the encode stream writes to the compression stream and then, the compression stream writes to the file stream. Finally, the file stream writes the archive file to the file system:
 

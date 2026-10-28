@@ -22,7 +22,7 @@ var allowsAccessibilityLiveCaptions: Bool { get set }
 @property (nonatomic, assign) BOOL allowsAccessibilityLiveCaptions;
 ```
 
-#### Discussion
+## Discussion
 
 Users can enable Live Captions in the Settings app (Accessibility > Live Captions) to receive real-time transcription of spoken audio as text on screen. An assessment session disables Live Captions by default, but you can allow it by setting [`allowsAccessibilityLiveCaptions`](./allowsaccessibilitylivecaptions.md) to `true` in the [`AEAssessmentConfiguration`](../aeassessmentconfiguration.md) instance that you use to initialize a session.
 

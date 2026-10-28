@@ -29,7 +29,7 @@ extern CFStringRef const kSecAttrCanEncrypt;
 
 - [Using Keys for Encryption](./using-keys-for-encryption.md)
 
-#### Discussion
+## Discussion
 
 The corresponding value is of type [`CFBoolean`](../CoreFoundation/cfboolean.md) and indicates whether this cryptographic key can be used to encrypt data.
 

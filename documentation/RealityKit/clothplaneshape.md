@@ -17,7 +17,7 @@ Shape representing an infinite plane that encloses one half of the world.
 struct ClothPlaneShape
 ```
 
-#### Overview
+## Overview
 
 The plane passes through the entity’s origin with the given `normal`. Everything on the side opposite the normal (including the plane itself) is considered inside the shape.
 

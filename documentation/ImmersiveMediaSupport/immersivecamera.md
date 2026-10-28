@@ -19,7 +19,7 @@ A structure that holds the required information for an immersive media camera to
 struct ImmersiveCamera
 ```
 
-#### Overview
+## Overview
 
 This type holds information including the camera identifier, type, default presentation rate, pose, and calibration data. Immersive media content can be captured with more than one camera calibrated lens, which means it’s necessary to use different geometry for each to render the corresponding video clips. AIV content creators should be able to add or remove any camera at any point during the creation and iteration process.
 

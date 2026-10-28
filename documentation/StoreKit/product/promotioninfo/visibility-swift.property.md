@@ -21,7 +21,7 @@ var visibility: Product.PromotionInfo.Visibility
 
 - [Supporting promoted Apple In-App Purchases in your app](../../supporting-promoted-in-app-purchases-in-your-app.md)
 
-#### Discussion
+## Discussion
 
 To override the visibility of a promoted Apple In-App Purchase, set the [`visibility`](./visibility-swift.property.md) value and then call [`update()`](./update%28%29.md) to save the change. You can also call [`updateProductVisibility(_:for:)`](./updateproductvisibility%28_,for%29.md) to set the visibility.
 

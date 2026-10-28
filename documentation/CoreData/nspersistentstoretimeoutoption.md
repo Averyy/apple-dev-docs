@@ -25,7 +25,7 @@ let NSPersistentStoreTimeoutOption: String
 extern NSString * const NSPersistentStoreTimeoutOption;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is an `NSNumber` object that represents the duration in seconds that Core Data will wait while attempting to create a connection to a persistent store. If a connection is cannot be made within that timeframe, the operation is aborted and an error is returned.
 

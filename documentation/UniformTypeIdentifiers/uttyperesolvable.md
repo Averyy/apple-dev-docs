@@ -21,7 +21,7 @@ A base type that represents a resolvable reference, including symbolic links and
 extern UTType * const UTTypeResolvable;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `com.apple.resolvable`.
 

@@ -20,7 +20,7 @@ Creates a reverb mesh resource from a list of positions, triangle indices, and m
 convenience init(positions: [SIMD3<Float>], triangleIndices: [UInt32], materials: [UInt32]) throws
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer when you have precise control over the geometry:
 

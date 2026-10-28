@@ -16,7 +16,7 @@ An AppKit view that hosts a SwiftUI view hierarchy.
 @preconcurrency class NSHostingView<Content> where Content : View
 ```
 
-#### Overview
+## Overview
 
 You use `NSHostingView` objects to integrate SwiftUI views into your AppKit view hierarchies. A hosting view is an [`NSView`](../AppKit/nsview.md) object that manages a single SwiftUI view, which may itself contain other SwiftUI views. Because it is an [`NSView`](../AppKit/nsview.md) object, you can integrate it into your existing AppKit view hierarchies to implement portions of your UI. For example, you can use a hosting view to implement a custom control.
 

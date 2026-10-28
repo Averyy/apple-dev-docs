@@ -17,7 +17,7 @@ An object that represents a date for an event.
 object SemanticTagType.EventDateInfo
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**:  The time zone identifiers come from the [IANA time zone database](https://www.iana.org/time-zones).
 

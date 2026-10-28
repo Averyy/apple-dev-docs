@@ -20,7 +20,7 @@ A high-level representation of a collection of vertices and edges that define a 
 final class ReverbMeshResource
 ```
 
-#### Overview
+## Overview
 
 Use a `ReverbMeshResource` to describe the acoustic geometry of your scene. Create one from geometric primitives, custom vertex data, or an existing [`MeshResource`](./meshresource.md):
 

@@ -16,7 +16,7 @@ The operation isn’t authorized.
 case notAuthorized
 ```
 
-#### Discussion
+## Discussion
 
 The requested operation isn’t authorized; use [`requestAuthorization(for:)`](../mscriticalsmsmessenger/requestauthorization%28for%29.md) to request someone’s authorization to be able to send background messages from this app.
 

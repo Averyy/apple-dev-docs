@@ -21,7 +21,7 @@ func beginGesture(with event: NSEvent)
 - (void) beginGestureWithEvent:(NSEvent *) event;
 ```
 
-#### Discussion
+## Discussion
 
 The event will be sent to the view under the touch in the key window.
 

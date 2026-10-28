@@ -23,7 +23,7 @@ static let generate: AVVideoComposition.PerFrameHDRDisplayMetadataPolicy
 extern AVVideoCompositionPerFrameHDRDisplayMetadataPolicy const AVVideoCompositionPerFrameHDRDisplayMetadataPolicyGenerate;
 ```
 
-#### Discussion
+## Discussion
 
 HDR metadata generation is influenced by the color space of the rendered frame, device, and HDR metadata format platform support. Any previously attached HDR metadata of the same metadata format is overwritten.
 

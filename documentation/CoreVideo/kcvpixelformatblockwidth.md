@@ -23,7 +23,7 @@ let kCVPixelFormatBlockWidth: CFString
 extern CFStringRef const kCVPixelFormatBlockWidth;
 ```
 
-#### Discussion
+## Discussion
 
 The width, in pixels, of the smallest byte-addressable group of pixels (type `CFNumber`). Used to assist with allocating memory for pixel formats that don’t have an integer value for bytes per pixel. Assumed to be 1 if this key is not present. Here are some examples of block widths for standard pixel formats:
 

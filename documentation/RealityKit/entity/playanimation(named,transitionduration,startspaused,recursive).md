@@ -22,11 +22,11 @@ Plays all the animations with the given name on the entity.
 @MainActor @preconcurrency func playAnimation(named animationName: String, transitionDuration: TimeInterval = 0, startsPaused: Bool = false, recursive: Bool = true) -> AnimationPlaybackController
 ```
 
-#### Return Value
+## Return Value
 
 An animation playback controller that you can use to start and stop the animations.
 
-#### Discussion
+## Discussion
 
 The method plays all the animations in the [`availableAnimations`](./availableanimations.md) property with a matching name. If there are none, the method returns a controller showing a stopped animation.
 

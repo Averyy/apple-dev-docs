@@ -21,7 +21,7 @@ var usesFeedbackWindow: Bool { get set }
 @property BOOL usesFeedbackWindow;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) when the receiver uses the speech feedback window, [`false`](../../Swift/false.md) otherwise.
 

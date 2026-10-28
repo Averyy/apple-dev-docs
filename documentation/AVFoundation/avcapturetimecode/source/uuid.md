@@ -23,7 +23,7 @@ var uuid: UUID { get }
 @property (nonatomic, copy, readonly) NSUUID * uuid;
 ```
 
-#### Discussion
+## Discussion
 
 The UUID uniquely identifies this timecode source. It is particularly useful when multiple sources of the same type are available, allowing your application to distinguish between them.
 

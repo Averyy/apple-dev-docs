@@ -24,7 +24,7 @@ var kAUVoiceIOProperty_MutedSpeechActivityEventListener: AudioUnitPropertyID { g
 kAUVoiceIOProperty_MutedSpeechActivityEventListener
 ```
 
-#### Discussion
+## Discussion
 
 To use this API, your app must implement mute using the [`kAUVoiceIOProperty_MuteOutput`](./kauvoiceioproperty_muteoutput.md) property.
 

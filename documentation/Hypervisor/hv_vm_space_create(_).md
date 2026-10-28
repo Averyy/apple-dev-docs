@@ -19,11 +19,11 @@ func hv_vm_space_create(_ asid: UnsafeMutablePointer<hv_vm_space_t>) -> hv_retur
 extern hv_return_t hv_vm_space_create(hv_vm_space_t *asid);
 ```
 
-#### Return Value
+## Return Value
 
 [`HV_SUCCESS`](./hv_success.md) if the operation was successful, otherwise an error code specified in [`hv_return_t`](./hv_return_t.md).
 
-#### Discussion
+## Discussion
 
 The guest address space has the maximum allowable size, with a base IPA of 0 and a 4096-byte page size.
 

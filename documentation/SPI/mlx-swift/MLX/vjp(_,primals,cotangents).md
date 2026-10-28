@@ -17,11 +17,11 @@ Compute the vector-Jacobian product.
 func vjp(_ f: @escaping ([MLXArray]) -> [MLXArray], primals: some Collection<MLXArray>, cotangents: some Collection<MLXArray>) -> ([MLXArray], [MLXArray])
 ```
 
-#### Return Value
+## Return Value
 
 Array of the vector-Jacobian products which is the same in number, shape and type of the outputs of `f`
 
-#### Discussion
+## Discussion
 
 Computes the product of the `cotangents` with the Jacobian of a function `f` evaluated at `primals`.
 

@@ -17,7 +17,7 @@ A target consisting of a source code module.
 protocol SourceModuleTarget : Target
 ```
 
-#### Overview
+## Overview
 
 The module contains either Swift or source files in one of the C-based languages.
 

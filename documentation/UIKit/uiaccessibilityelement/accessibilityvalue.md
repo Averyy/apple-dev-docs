@@ -23,7 +23,7 @@ var accessibilityValue: String? { get set }
 @property (nonatomic, strong, nullable) NSString * accessibilityValue;
 ```
 
-#### Discussion
+## Discussion
 
 The value is a localized string that contains the current value of an element. For example, the value of a slider might be 9.5 or 35% and the value of a text field is the text it contains.
 

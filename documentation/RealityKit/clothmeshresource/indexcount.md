@@ -17,7 +17,7 @@ The number of indices in the mesh.
 final var indexCount: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 This count will be equal to the number of primitives in the mesh multiplied by the number of vertices per primitive. For example, a triangular mesh with nine triangles has an index count of 9 ⨉ 3 = 27 indices.
 

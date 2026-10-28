@@ -19,7 +19,7 @@ func setAssociatedPoints(_ points: NSPointArray?, at index: Int)
 - (void) setAssociatedPoints:(NSPointArray) points atIndex:(NSInteger) index;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this method to change the points associated with a path quickly and without recreating the path. You cannot use this method to change the type of the path element.
 

@@ -23,7 +23,7 @@ var jwsRepresentation: String { get }
 
 Available when `SignedType` is `AppTransaction`.
 
-#### Discussion
+## Discussion
 
 Use this JSON Web Signature (JWS) value to perform your own JWS verification on your server or on the device.
 

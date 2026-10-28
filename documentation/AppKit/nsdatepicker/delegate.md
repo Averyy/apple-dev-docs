@@ -19,7 +19,7 @@ weak var delegate: (any NSDatePickerCellDelegate)? { get set }
 @property (weak, nullable) id<NSDatePickerCellDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 The date picker’s [`NSDatePickerCell`](../nsdatepickercell.md) instance handles all delegate methods.
 

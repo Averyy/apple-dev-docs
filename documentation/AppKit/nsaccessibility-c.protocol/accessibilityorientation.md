@@ -15,7 +15,7 @@ The orientation of the accessibility element.
 @property NSAccessibilityOrientation accessibilityOrientation;
 ```
 
-#### Discussion
+## Discussion
 
 This property can hold either the [`NSAccessibilityOrientation.horizontal`](../nsaccessibilityorientation/horizontal.md) value or the [`NSAccessibilityOrientation.vertical`](../nsaccessibilityorientation/vertical.md) value.
 

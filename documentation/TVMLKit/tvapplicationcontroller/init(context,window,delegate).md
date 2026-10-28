@@ -21,11 +21,11 @@ init(context: TVApplicationControllerContext, window: UIWindow?, delegate: (any 
 - (instancetype) initWithContext:(TVApplicationControllerContext *) context window:(UIWindow *) window delegate:(id<TVApplicationControllerDelegate>) delegate;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized [`TVApplicationController`](../tvapplicationcontroller.md) object.
 
-#### Discussion
+## Discussion
 
 An app controller coordinates activity between the JavaScript environments and tvOS. There are three options when presenting the application controller. If you provide a valid [`UIWindow`](../../UIKit/uiwindow.md) object, the application controller’s navigation controller is presented immediately and managed by [`TVApplicationController`](../tvapplicationcontroller.md). If no window is provided, the navigation controller can be presented and dismissed manually within the binary app. Finally, if you wish to present native view controllers alongside a [`TVApplicationController`](../tvapplicationcontroller.md) object, you can push additional view controllers onto [`navigationController`](./navigationcontroller.md).
 

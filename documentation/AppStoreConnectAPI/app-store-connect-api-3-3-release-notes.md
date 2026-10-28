@@ -5,11 +5,11 @@
 
 Update your server-side code to use new features, and test your code against API changes.
 
-#### Overview
+## Overview
 
 App Store Connect API version 3.3 provides resources that enable you to automate actions you take in App Store Connect.
 
-##### New Features
+### New Features
 
 - Developers who receive the entitlement can now configure and set up marketplace apps. For more information see: [Creating an alternative app marketplace](../MarketplaceKit/creating-an-alternative-app-marketplace.md) and [Update on apps distributed in the European Union](https://developer.apple.com/support/dma-and-apps-in-the-eu/).
 - You can now set the attribute `reviewType` when calling [`Modify an app store version`](./patch-v1-appstoreversions-_id_.md) for iOS apps, to specify app destination.
@@ -18,7 +18,7 @@ App Store Connect API version 3.3 provides resources that enable you to automate
 - You can now configure notifications for changes to apps distributed through an alternative marketplace. To learn more see [`Add a Marketplace Webhook Configuration`](./post-v1-marketplacewebhooks.md).
 - [`AppStoreAgeRating`](./appstoreagerating.md) type now has the enum `Unrated`. This is only available when using `reviewType` `NOTARIZATION.`
 
-##### Deprecations
+### Deprecations
 
 - The `appStoreState` attribute is now deprecated and replaced with `appVersionState` in the object [`AppStoreVersion.Attributes`](./appstoreversion/attributes-data.dictionary.md).
 - The `appStoreState` attribute is now deprecated and replaced with `state` in the object [`AppInfo.Attributes`](./appinfo/attributes-data.dictionary.md).

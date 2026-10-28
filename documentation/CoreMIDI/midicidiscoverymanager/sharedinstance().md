@@ -25,7 +25,7 @@ class func sharedInstance() -> MIDICIDiscoveryManager
 + (MIDICIDiscoveryManager *) sharedInstance;
 ```
 
-#### Return Value
+## Return Value
 
 The shared [`MIDICIDiscoveryManager`](../midicidiscoverymanager.md).
 

@@ -15,7 +15,7 @@ The request body you use to update a Game Center achievement image v2.
 object GameCenterAchievementImageV2UpdateRequest
 ```
 
-#### Overview
+## Overview
 
 - data:
 

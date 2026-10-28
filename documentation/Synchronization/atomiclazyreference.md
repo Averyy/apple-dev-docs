@@ -22,7 +22,7 @@ A lazily initializable atomic strong reference.
 struct AtomicLazyReference<Instance> where Instance : AnyObject
 ```
 
-#### Overview
+## Overview
 
 These values can be set (initialized) exactly once, but read many times.
 

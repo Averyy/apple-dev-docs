@@ -5,7 +5,7 @@
 
 Replace a color in one image with the background from another.
 
-#### Overview
+## Overview
 
 Use the chroma key effect, also known as bluescreening or greenscreening, to replace the background of an image by setting a color or range of colors to transparent.
 
@@ -17,7 +17,7 @@ You apply this technique in three steps:
 2. Apply the [`colorCube()`](./cifilter-swift.class/colorcube%28%29.md) filter to the image to make pixels transparent.
 3. Use the [`sourceOverCompositing()`](./cifilter-swift.class/sourceovercompositing%28%29.md) filter to place the image over the background image.
 
-##### Create a Cube Map
+### Create a Cube Map
 
 A color cube is a 3D color-lookup table that uses the R, G, and B values from the image to lookup a color. To filter out green from the image, create a color map with the green portion set to transparent pixels.
 
@@ -86,7 +86,7 @@ To create the color cube, iterate across all values of red, green, and blue, ent
 }
 ```
 
-##### Remove Green from the Source Image
+### Remove Green from the Source Image
 
 Apply the color cube filter to a foreground image by setting its `inputImage` parameter and then accessing the `outputImage`.
 
@@ -100,7 +100,7 @@ The output image contains the foreground with all green pixels made transparent.
 
 The filter passes through each pixel in the input image, looks up its color in the color cube, and replaces the source color with the color in the color cube at the nearest position.
 
-##### Composite over a Background Image
+### Composite over a Background Image
 
 Chain a [`sourceOverCompositing()`](./cifilter-swift.class/sourceovercompositing%28%29.md) filter to the color cube filter to composite a background image to the greenscreened output. The transparency in the colorcube-filtered image allows the composited background image to show through.
 

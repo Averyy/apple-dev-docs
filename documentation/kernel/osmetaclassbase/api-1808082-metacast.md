@@ -12,11 +12,11 @@ OSMetaClassBase * metaCast(
  const OSMetaClass *toMeta) const;
 ```
 
-#### Return Value
+## Return Value
 
 `this` if the object is derived from the class managed by `toMeta`, otherwise `NULL`.
 
-#### Overview
+## Overview
 
 It is far more convenient to use OSDynamicCast.
 

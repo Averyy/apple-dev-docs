@@ -24,7 +24,7 @@ let HMCharacteristicTypeLockManagementControlPoint: String
 extern NSString * const HMCharacteristicTypeLockManagementControlPoint;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding write-only value takes data in a format specified by the accessory’s manufacturer.
 

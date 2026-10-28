@@ -25,7 +25,7 @@ class func requestAuthorization(forPhoneNumber phoneNumber: String) async throws
 + (void) requestAuthorizationForPhoneNumber:(NSString *) phoneNumber completion:(void (^)(CTCellularPlanStatusAuthorization status, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The completion handler receives a [`CTCellularPlanStatusAuthorization`](../ctcellularplanstatusauthorization.md) value in the following circumstances:
 

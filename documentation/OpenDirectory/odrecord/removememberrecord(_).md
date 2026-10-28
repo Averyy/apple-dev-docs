@@ -20,7 +20,7 @@ func removeMemberRecord(_ inRecord: ODRecord!) throws
 - (BOOL) removeMemberRecord:(ODRecord *) inRecord error:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 This method produces an error if this record is not a group record, or if `inRecord` is not an appropriate type.
 

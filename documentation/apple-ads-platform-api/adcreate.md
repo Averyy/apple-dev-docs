@@ -15,13 +15,13 @@ The request body for creating a new Ad object.
 object AdCreate
 ```
 
-#### Discussion
+## Discussion
 
 Creating an ad links an ad creative to an ad group with `POST /v1/ads` ([`Create an Ad`](./post-ads.md)).
 
 An ad can’t be enabled until its parent ad group and campaign are also enabled.
 
-##### Example
+### Example
 
 ```json
 {

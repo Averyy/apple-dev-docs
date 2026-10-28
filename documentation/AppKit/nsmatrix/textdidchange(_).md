@@ -19,7 +19,7 @@ func textDidChange(_ notification: Notification)
 - (void) textDidChange:(NSNotification *) notification;
 ```
 
-#### Discussion
+## Discussion
 
 This method’s default behavior is to pass this message on to the selected cell (if the selected cell responds to `textDidChange:`) and then to post an [`textDidChangeNotification`](../nscontrol/textdidchangenotification.md) along with the receiving object to the default notification center. The posted notification’s user info contains the contents of notification’s user info dictionary, plus an additional key-value pair. The additional key is “`NSFieldEditor`”; the value for this key is the text object that changed.
 

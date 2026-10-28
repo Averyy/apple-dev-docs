@@ -19,7 +19,7 @@ static var crayonModeMask: NSColorPanel.Options { get }
 NSColorPanelCrayonModeMask
 ```
 
-#### Discussion
+## Discussion
 
 Crayons.
 

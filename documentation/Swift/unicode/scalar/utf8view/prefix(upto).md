@@ -21,11 +21,11 @@ Returns a subsequence from the start of the collection up to, but not including,
 func prefix(upTo end: Self.Index) -> Self.SubSequence
 ```
 
-#### Return Value
+## Return Value
 
 A subsequence up to, but not including, the `end` position.
 
-#### Discussion
+## Discussion
 
 The resulting subsequence *does not include* the element at the position `end`. The following example searches for the index of the number `40` in an array of integers, and then prints the prefix of the array up to, but not including, that index:
 

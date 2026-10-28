@@ -5,11 +5,11 @@
 
 Prevent changes to your Interface Builder files while localizing human-facing strings.
 
-#### Overview
+## Overview
 
 Before you export localizations, optionally lock the views in your storyboard and XIB files so you don’t inadvertently change localizable properties while you’re waiting for translations. Use this feature if you want to continue developing your app and avoid conflicts when importing localizations later. You can choose a locking level that controls the set of editable properties for each view.
 
-##### Lock views
+### Lock views
 
 You can set the locking level for a single view or for the entire user interface file. By default, views inherit their lock attribute from their parent view, and top-level views inherit their lock attribute from the user interface file. If you set a view’s lock attribute, it sets the lock attribute for all its descendant views.
 
@@ -27,7 +27,7 @@ For example, choose Localizable Properties while waiting for translations from l
 
 To lock all views, select the user interface file in the Project navigator, then choose a locking level from the Editor > Localization Locking menu.
 
-##### Unlock views
+### Unlock views
 
 To unlock all views after you import localizations, select the user interface file in the Project navigator, then choose Editor > Localization Locking > Reset Locking Controls. To prevent any edits in a user interface file that would impact localized strings files, choose Editor > Localization Locking > Reset Locking Controls and then choose Editor > Localization Locking > Localizable Properties.
 

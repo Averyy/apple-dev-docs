@@ -21,7 +21,7 @@ Convert this [`JobPriority`](../jobpriority.md) to a [`TaskPriority`](../taskpri
 init?(_ p: JobPriority)
 ```
 
-#### Discussion
+## Discussion
 
 Most values are directly interchangeable, but this initializer reserves the right to fail for certain values.
 

@@ -25,7 +25,7 @@ class CKQueryOperation
 @interface CKQueryOperation : CKDatabaseOperation
 ```
 
-#### Overview
+## Overview
 
 A `CKQueryOperation` object is a concrete operation that you can use to execute queries. A query operation applies query parameters to the specified database and record zone, delivering any matching records asynchronously to the handlers that you provide.
 

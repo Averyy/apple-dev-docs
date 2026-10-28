@@ -19,7 +19,7 @@ var objectClass: AnyClass! { get set }
 @property (assign, null_resettable) Class objectClass;
 ```
 
-#### Discussion
+## Discussion
 
 `NSObjectController`’s default implementation assumes that instances of `objectClass` are initialized using a standard `init` method that takes no arguments.
 

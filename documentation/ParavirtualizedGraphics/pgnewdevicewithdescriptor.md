@@ -13,7 +13,7 @@
 extern id<PGDevice>PGNewDeviceWithDescriptor(PGDeviceDescriptor *descriptor);
 ```
 
-#### Discussion
+## Discussion
 
 Create a new PGDevice implementation object based on the provided descriptor.
 

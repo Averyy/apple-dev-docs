@@ -25,7 +25,7 @@ class NLContextualEmbeddingResult
 @interface NLContextualEmbeddingResult : NSObject
 ```
 
-#### Overview
+## Overview
 
 This object returns embeddings at the subword level, meaning a single word may generate multiple vectors, especially for rare or complex terms. If you need to work with whole-word embeddings or create single representations for entire text inputs, pool or combine subword vectors.
 

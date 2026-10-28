@@ -24,7 +24,7 @@ let HMCharacteristicTypeColorTemperature: String
 extern NSString * const HMCharacteristicTypeColorTemperature;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is an integer representing the color temperature in micro-reciprocal degrees (mired), which is 1,000,000 divided by the color temperature in kelvins. For example, to emulate a traditional tungsten light with a color temperature of 3200 K, use a mired value of about 312.
 

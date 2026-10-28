@@ -19,7 +19,7 @@ Creates a detail system accessory with the specified display state, configuratio
 static func detail(displayed: UICellAccessory.DisplayedState = .always, options: UICellAccessory.DetailOptions = DetailOptions(), actionHandler: UICellAccessory.ActionHandler? = nil) -> UICellAccessory
 ```
 
-#### Return Value
+## Return Value
 
 A configured detail cell accessory. The accessory displays as the system information button. This accessory appears on the trailing edge of the cell.
 

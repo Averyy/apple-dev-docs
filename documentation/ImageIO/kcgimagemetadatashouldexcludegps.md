@@ -25,7 +25,7 @@ let kCGImageMetadataShouldExcludeGPS: CFString
 extern CFStringRef const kCGImageMetadataShouldExcludeGPS;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key must be a [`CFBoolean`](../CoreFoundation/cfboolean.md) value. The default value is [`kCFBooleanFalse`](../CoreFoundation/kcfbooleanfalse.md), which includes GPS information in the metadata. This flag doesn’t filter any proprietary location data in the manufacturer’s EXIF MakerNote or in custom XMP properties.
 

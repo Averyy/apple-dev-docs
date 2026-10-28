@@ -15,7 +15,7 @@ The increment button for the stepper accessibility element.
 @property (strong, nullable) id accessibilityIncrementButton;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property on a stepper.
 

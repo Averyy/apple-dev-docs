@@ -28,7 +28,7 @@ Asynchronously creates a 3D texture by generating it from images.
 @preconcurrency static func texture3D(slices: [CGImage], named resourceName: String? = nil, options: TextureResource.CreateOptions) throws -> TextureResource
 ```
 
-#### Discussion
+## Discussion
 
 RealityKit creates a [`MTLTextureType.type3D`](../../Metal/mtltexturetype/type3d.md) texture with `depth == slices.count` from an array of images.
 

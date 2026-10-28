@@ -21,7 +21,7 @@ init(timeRemaining: TimeInterval, paused: Bool)
 - (instancetype) initWithTimeRemaining:(NSTimeInterval) timeRemaining paused:(BOOL) paused;
 ```
 
-#### Discussion
+## Discussion
 
 When displayed on the now playing screen, the clock will count DOWN.
 

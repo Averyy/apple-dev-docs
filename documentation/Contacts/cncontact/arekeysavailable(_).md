@@ -24,11 +24,11 @@ func areKeysAvailable(_ keyDescriptors: [any CNKeyDescriptor]) -> Bool
 - (BOOL) areKeysAvailable:(NSArray<id<CNKeyDescriptor>> *) keyDescriptors;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if all the values are fetched; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 The [`isKeyAvailable(_:)`](./iskeyavailable%28_%29.md) or [`areKeysAvailable(_:)`](./arekeysavailable%28_%29.md) methods are used where you are not certain of the keys that when fetched. If this method returns [`false`](../../Swift/false.md), refetch the contact using the contact identifier and the keys you want to fetch. Accessing a property that was not fetched will throw an [`CNContactPropertyNotFetchedExceptionName`](../cncontactpropertynotfetchedexceptionname.md) exception.
 

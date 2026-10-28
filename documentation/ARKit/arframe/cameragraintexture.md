@@ -20,7 +20,7 @@ var cameraGrainTexture: (any MTLTexture)? { get }
 @property (nonatomic, readonly, nullable) id<MTLTexture> cameraGrainTexture;
 ```
 
-#### Discussion
+## Discussion
 
 Camera grain enhances the visual cohesion of the real and augmented aspects of your user experience by enabling your app’s virtual content to take on similar image noise characteristics that naturally occur in the camera feed.
 
@@ -28,7 +28,7 @@ Camera grain enhances the visual cohesion of the real and augmented aspects of y
 
 If [`ARSCNView`](../arscnview.md) is your renderer, SceneKit applies camera grain to your app’s virtual content by default. For more information, see [`rendersCameraGrain`](../arscnview/renderscameragrain.md).
 
-##### Enable Image Noise on a Custom Renderer
+### Enable Image Noise on a Custom Renderer
 
 For apps that display an AR experience using a custom Metal renderer, ARKit provides you with an [`cameraGrainTexture`](./cameragraintexture.md) that matches the noise it detects in the current video stream. Set the noise texture onto your renderer to apply its characteristics to your virtual content.
 

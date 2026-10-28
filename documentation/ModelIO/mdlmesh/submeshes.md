@@ -25,7 +25,7 @@ var submeshes: NSMutableArray? { get set }
 @property (nonatomic, copy, nullable) NSMutableArray<MDLSubmesh *> * submeshes;
 ```
 
-#### Discussion
+## Discussion
 
 Each submesh object provides index buffer and material information describing how some or all of the mesh’s vertex data is to be rendered.
 

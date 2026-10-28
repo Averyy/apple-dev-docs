@@ -24,11 +24,11 @@ init(documentType: HKDocumentType, predicate: NSPredicate?, limit: Int, sortDesc
 - (instancetype) initWithDocumentType:(HKDocumentType *) documentType predicate:(NSPredicate *) predicate limit:(NSUInteger) limit sortDescriptors:(NSArray<NSSortDescriptor *> *) sortDescriptors includeDocumentData:(BOOL) includeDocumentData resultsHandler:(void (^)(HKDocumentQuery *query, NSArray<__kindof HKDocumentSample *> *results, BOOL done, NSError *error)) resultsHandler;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized document query object.
 
-#### Discussion
+## Discussion
 
 After you instantiate the query, call the [`HKHealthStore`](../hkhealthstore.md) class’s [`execute(_:)`](../hkhealthstore/execute%28_%29.md) method to run it. Queries run on an anonymous background queue. As soon as the query is complete, the results handler is executed on the same background queue (but not necessarily on the same thread). You typically dispatch these results to the main queue to update the user interface.
 

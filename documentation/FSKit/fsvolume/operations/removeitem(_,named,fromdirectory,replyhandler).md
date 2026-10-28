@@ -24,7 +24,7 @@ func removeItem(_ item: FSItem, named name: FSFileName, fromDirectory directory:
 - (void) removeItem:(FSItem *) item named:(FSFileName *) name fromDirectory:(FSItem *) directory replyHandler:(void (^)(NSError *error)) reply;
 ```
 
-#### Discussion
+## Discussion
 
 Don’t actually remove the item object itself in your implementation; instead, only remove the given item name from the given directory. Remove and deallocate the item in `reclaimItem(_:)`.
 

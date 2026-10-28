@@ -27,7 +27,7 @@ optional func confirm(intent: INSearchForMessagesIntent) async -> INSearchForMes
 - (void) confirmSearchForMessages:(INSearchForMessagesIntent *) intent completion:(void (^)(INSearchForMessagesIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This method validates you can perform the search using the given parameters. If the search involves contacting a remote server, you should also validate that the server is available. At some point in your implementation, execute the provided completion block with a response object indicating your app’s readiness to perform the search.
 

@@ -21,7 +21,7 @@ Calls a closure with an audio buffer list that contains the data from a sample b
 func withAudioBufferList<R>(blockBufferMemoryAllocator: CFAllocator? = kCFAllocatorDefault, flags: CMSampleBuffer.Flags = [], body: (UnsafeMutableAudioBufferListPointer, CMBlockBuffer) throws -> R) throws -> R
 ```
 
-#### Discussion
+## Discussion
 
 The system may not copy the data, depending on its contiguity and 16-byte alignment. It guarantees the buffers it places in the AudioBufferList are contiguous.
 

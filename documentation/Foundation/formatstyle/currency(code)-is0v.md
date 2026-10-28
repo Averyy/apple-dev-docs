@@ -21,11 +21,11 @@ Returns a format style to use integer currency notation.
 static func currency<V>(code: String) -> Self where Self == IntegerFormatStyle<V>.Currency, V : BinaryInteger
 ```
 
-#### Return Value
+## Return Value
 
 An integer format style that uses the specified currency code.
 
-#### Discussion
+## Discussion
 
 Use the dot-notation form of this method when the call point allows the use of [`IntegerFormatStyle`](../integerformatstyle.md). You typically do this when calling the `formatted` methods of types that conform to [`BinaryInteger`](../../Swift/binaryinteger.md).
 

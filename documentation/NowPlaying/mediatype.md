@@ -21,7 +21,7 @@ The type of media being played.
 enum MediaType
 ```
 
-#### Overview
+## Overview
 
 Use this enumeration to specify whether content is audio-only or includes video. The system uses this information to optimize the Now Playing interface.
 

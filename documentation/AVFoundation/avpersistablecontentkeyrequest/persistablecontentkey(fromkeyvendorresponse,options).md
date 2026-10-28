@@ -25,7 +25,7 @@ func persistableContentKey(fromKeyVendorResponse keyVendorResponse: Data, option
 - (NSData *) persistableContentKeyFromKeyVendorResponse:(NSData *) keyVendorResponse options:(NSDictionary<NSString *,id> *) options error:(NSError **) outError;
 ```
 
-#### Return Value
+## Return Value
 
 Returns a data object that contains the persistable content key.
 

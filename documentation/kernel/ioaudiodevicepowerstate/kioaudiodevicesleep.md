@@ -13,7 +13,7 @@
 kIOAudioDeviceSleep = 0
 ```
 
-#### Discussion
+## Discussion
 
 State set when the system is going to sleep
 

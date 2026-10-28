@@ -24,7 +24,7 @@ let CNSocialProfileServiceKey: String
 extern NSString * const CNSocialProfileServiceKey;
 ```
 
-#### Discussion
+## Discussion
 
 This key takes a string value.
 

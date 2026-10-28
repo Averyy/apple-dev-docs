@@ -15,7 +15,7 @@ Get the collection of camera frame samples for this camera frame.
 extern ar_camera_frame_samples_tar_camera_frame_get_frame_samples(ar_camera_frame_t camera_frame);
 ```
 
-#### Return Value
+## Return Value
 
 An instance of `ar_camera_frame_samples_t`.
 

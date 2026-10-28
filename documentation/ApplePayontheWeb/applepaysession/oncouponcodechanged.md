@@ -16,7 +16,7 @@ An event handler called by the system when the user enters or updates a coupon c
 attribute EventHandler oncouponcodechanged;
 ```
 
-#### Discussion
+## Discussion
 
 Set this attribute to a function with one parameter that contains an [`ApplePayCouponCodeChangedEvent`](../applepaycouponcodechangedevent.md). This function processes the coupon code update, and then calls [`completeCouponCodeChange`](./completecouponcodechange.md) with the results.
 

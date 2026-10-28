@@ -20,7 +20,7 @@ Creates a new instance from a decoder.
 init(from decoder: any Decoder) throws
 ```
 
-#### Discussion
+## Discussion
 
 Throws an error if reading from `decoder` fails, or if the data is corrupted or otherwise invalid.
 

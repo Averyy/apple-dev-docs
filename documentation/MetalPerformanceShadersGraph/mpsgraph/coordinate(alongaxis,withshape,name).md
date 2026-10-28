@@ -24,11 +24,11 @@ func coordinate(alongAxis axis: Int, withShape shape: [NSNumber], name: String?)
 - (MPSGraphTensor *) coordinateAlongAxis:(NSInteger) axis withShape:(MPSShape *) shape name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor object.
 
-#### Discussion
+## Discussion
 
 Creates a tensor of specified shape with value at index `[i_0, i_1, ... , i_N] = i_axis` For example,
 

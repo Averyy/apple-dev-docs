@@ -24,11 +24,11 @@ var isInputAvailable: Bool { get }
 @property (readonly, getter=isInputAvailable) BOOL inputAvailable;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if an input route is available, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Use this property to determine whether the device currently supports audio input.
 

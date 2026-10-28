@@ -24,7 +24,7 @@ static var encoderExecutionStatus: MTLCommandBufferErrorOption { get }
 MTLCommandBufferErrorOptionEncoderExecutionStatus
 ```
 
-#### Discussion
+## Discussion
 
 You can set this option to a command buffer descriptor’s [`errorOptions`](../mtlcommandbufferdescriptor/erroroptions.md) property.
 

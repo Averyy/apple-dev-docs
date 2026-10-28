@@ -5,11 +5,11 @@
 
 Choose a suitable GPU and memory storage mode for tasks based on that GPU’s memory bandwidth on a Mac.
 
-#### Overview
+## Overview
 
 GPU memory *bandwidth* is a measure of the data transfer speed between a GPU and the system across a bus, such as PCI Express (PCIe) or Thunderbolt. It’s important to consider the bandwidth of each GPU in a system when developing your high-performance Metal apps. A GPU that’s powerful on its own may not be the optimal choice for certain tasks if it has a relatively low bandwidth connection to the system.
 
-##### Consider how a GPU connects to the system
+### Consider how a GPU connects to the system
 
 A GPU’s bandwidth largely depends on the bus that connects it to a system:
 
@@ -25,7 +25,7 @@ A discrete GPU’s PCIe bus can have 8 or 16 memory lanes — or PCIe x4 or PCIe
 
 Additionally, transferring data from one GPU to another can be even more expensive because the system can’t transfer data directly between GPUs. Instead, the process typically requires copying data to system memory before copying it again to the destination GPU.
 
-##### Select the appropriate storage mode for your resources
+### Select the appropriate storage mode for your resources
 
 You can minimize the bandwidth costs — the number of data transfers across a bus — by selecting an appropriate storage mode for your app’s resources. For more information about selecting a storage mode for specific GPUs, see [Choosing a resource storage mode for Apple GPUs](./choosing-a-resource-storage-mode-for-apple-gpus.md) and [Choosing a resource storage mode for Intel and AMD GPUs](./choosing-a-resource-storage-mode-for-intel-and-amd-gpus.md). Metal uses a resource’s storage mode to determine which memory location to save it in. The storage mode options for a resource include the following:
 
@@ -47,7 +47,7 @@ Managed resources can have modest data transfer costs for discrete and external 
 
 You can keep the copies in sync by efficiently running sparse blit operations (see [Synchronizing a managed resource in macOS](./synchronizing-a-managed-resource-in-macos.md)).
 
-##### Render a drawable on the same GPU that drives the destination display
+### Render a drawable on the same GPU that drives the destination display
 
 In Metal, a *drawable*, represented by [`MTLDrawable`](./mtldrawable.md), is a type that bridges Metal and [Core Animation](../QuartzCore/QuartzCore.md). Each drawable contains a texture that your apps can render with Metal and then present on a device’s display using Core Animation.
 

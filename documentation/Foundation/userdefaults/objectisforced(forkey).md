@@ -25,11 +25,11 @@ func objectIsForced(forKey key: String) -> Bool
 - (BOOL) objectIsForcedForKey:(NSString *) key;
 ```
 
-#### Return Value
+## Return Value
 
 `true` if an administrator provides a value for the key, otherwise `false`.
 
-#### Discussion
+## Discussion
 
 Apps can’t change the value of managed keys, so use this method to determine if you can make changes to one of your app-specific keys. If a key is managed, disable any app-specific UI you use to change the value of that key.
 

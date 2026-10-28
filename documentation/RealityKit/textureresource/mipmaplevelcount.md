@@ -21,7 +21,7 @@ The number of mipmaps for the texture.
 @preconcurrency var mipmapLevelCount: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 Mipmaps are additional copies of the same texture at different resolutions. This property contains the number of different versions of the texture, including the original-size version.
 

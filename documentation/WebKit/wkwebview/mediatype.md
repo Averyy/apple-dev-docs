@@ -23,7 +23,7 @@ var mediaType: String? { get set }
 @property (nonatomic, copy, nullable) NSString * mediaType;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is `nil`, the web view derives the current media type from the CSS media property of its content. If you assign a value other than `nil` to this property, the web view uses the value you provide instead. The default value of this property is `nil`.
 

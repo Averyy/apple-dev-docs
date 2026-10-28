@@ -23,7 +23,7 @@ var reactionEffectsInProgress: [AVCaptureReactionEffectState] { get }
 @property (nonatomic, readonly) NSArray<AVCaptureReactionEffectState *> * reactionEffectsInProgress;
 ```
 
-#### Discussion
+## Discussion
 
 Key-value observe this property to determine when reaction effects begin and end. If your key-value observing callback provides old and new values, any in-progress reaction effects in the new array have a value of [`invalid`](../../CoreMedia/cmtime/invalid.md) for their [`endTime`](../avcapturereactioneffectstate/endtime.md) property value. Completed reaction effects are only in the old array, and have their [`endTime`](../avcapturereactioneffectstate/endtime.md) property value set to the presentation time of the first frame where the reaction effect was no longer present.
 

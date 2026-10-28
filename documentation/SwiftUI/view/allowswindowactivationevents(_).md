@@ -20,7 +20,7 @@ nonisolated
 func allowsWindowActivationEvents(_ value: Bool?) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Views higher in the hierarchy can override the value you set on this view. In the following example, the tap gesture on the `Rectangle` won’t handle events that activate the containing window because the outer `allowsWindowActivationEvents(_:)` view modifier overrides the inner one:
 

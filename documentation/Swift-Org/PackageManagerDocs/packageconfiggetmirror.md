@@ -10,7 +10,7 @@ framework: "Swift-Org/PackageManagerDocs"
 
 Print mirror configuration for the given package dependency.
 
-#### Overview
+## Overview
 
 ```
 package config get-mirror [--package-path=<package-path>]

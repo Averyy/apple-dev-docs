@@ -5,7 +5,7 @@
 
 Add the capability to detect human body poses to your app using the Vision framework.
 
-#### Overview
+## Overview
 
 A primary goal of Vision is to provide you with tools to help you better identify and understand people in your visual data. Starting in iOS 14 and macOS 11, Vision adds the powerful new ability to identify human body poses. It does so by detecting up to 19 unique body points, as shown in the figure below.
 
@@ -13,7 +13,7 @@ A primary goal of Vision is to provide you with tools to help you better identif
 
 You can use Vision’s capability for detecting human body poses on its own or with Core ML. Combining Vision with the power of machine learning enables a wide variety of feature possibilities. For example, a safety-training app could help employees use correct ergonomics, a fitness app could automatically track the exercise a user performs, and a media-editing app could find photos or videos based on pose similarity.
 
-##### Perform a Body Pose Request
+### Perform a Body Pose Request
 
 Vision provides its body pose-detection capabilities through [`VNDetectHumanBodyPoseRequest`](./vndetecthumanbodyposerequest.md), an image-based request type that detects key body points. The following example shows how to use [`VNImageRequestHandler`](./vnimagerequesthandler.md) to perform a [`VNDetectHumanBodyPoseRequest`](./vndetecthumanbodyposerequest.md) for detecting body points in the specified [`CGImage`](../CoreGraphics/cgimage.md).
 
@@ -37,7 +37,7 @@ do {
 
 > **Note**:  If you have a known region of interest (ROI) in an image, you can specify it using the request’s [`regionOfInterest`](./vnimagebasedrequest/regionofinterest.md) property. Setting an ROI reduces the region in the image where the request performs its analysis, which generally results in more accurate pose estimation.
 
-##### Process the Results
+### Process the Results
 
 After the request handler processes the request, it calls the request’s completion closure, passing it the request and any errors that occurred. Retrieve the observations by querying the request object for its [`results`](./vnrequest/results.md), which it returns as an array of [`VNHumanBodyPoseObservation`](./vnhumanbodyposeobservation.md) objects. The request returns a unique observation for each detected human body pose, with each containing the recognized points and a confidence score indicating the accuracy of the observation.
 
@@ -53,7 +53,7 @@ func bodyPoseHandler(request: VNRequest, error: Error?) {
 }
 ```
 
-##### Retrieve the Points
+### Retrieve the Points
 
 Retrieve the points of interest from the observation by calling its [`recognizedPoints(_:)`](./vnhumanbodyposeobservation/recognizedpoints%28_%29.md) method. The argument you pass to this method is a key that identifies all of the points for a particular body region (see [`VNHumanBodyPoseObservation.JointsGroupName`](./vnhumanbodyposeobservation/jointsgroupname.md) for supported values). This method returns the recognized points for the region as a dictionary of [`VNRecognizedPoint`](./vnrecognizedpoint.md) objects keyed by joint name. Each instance of [`VNRecognizedPoint`](./vnrecognizedpoint.md) provides the `X` and `Y` coordinates, in normalized space, and a confidence score for the point. Ignore any recognized points with a [`confidence`](./vndetectedpoint/confidence.md) value of 0, because they’re invalid.
 
@@ -95,7 +95,7 @@ func processObservation(_ observation: VNHumanBodyPoseObservation) {
 
 For an example of how you can use and visualize recognized body points, see the [Building a feature-rich app for sports analysis](./building-a-feature-rich-app-for-sports-analysis.md) sample app.
 
-##### Improve Pose-Detection Accuracy
+### Improve Pose-Detection Accuracy
 
 To achieve the most accurate results from Vision’s human body pose-detection capabilities, consider the following points:
 

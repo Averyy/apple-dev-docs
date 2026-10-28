@@ -21,7 +21,7 @@ func invalidateLayout(forCharacterRange charRange: NSRange, isSoft flag: Bool, a
 - (void) invalidateLayoutForCharacterRange:(NSRange) charRange isSoft:(BOOL) flag actualCharacterRange:(NSRangePointer) actualCharRange;
 ```
 
-#### Discussion
+## Discussion
 
 This method only invalidates information; it performs no glyph generation or layout. You should rarely need to invoke this method.
 

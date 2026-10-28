@@ -19,7 +19,7 @@ func SCVLANInterfaceCopyAvailablePhysicalInterfaces() -> CFArray
 CFArrayRefSCVLANInterfaceCopyAvailablePhysicalInterfaces();
 ```
 
-#### Return Value
+## Return Value
 
 The list of interfaces. You must release the returned value.
 

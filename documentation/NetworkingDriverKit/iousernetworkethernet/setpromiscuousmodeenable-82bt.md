@@ -15,11 +15,11 @@ Enables or disables support for monitoriong all network packets.
 virtual kern_return_t SetPromiscuousModeEnable(bool enable);
 ```
 
-#### Return Value
+## Return Value
 
 `kIOReturnSuccess` on success, or another value if an error occurred.
 
-#### Discussion
+## Discussion
 
 Override this method and use it to enable promiscuous mode on your device.
 

@@ -10,11 +10,11 @@ IOMemoryMap * removeMappingForDescriptor(
  IOMemoryDescriptor *memory);
 ```
 
-#### Return Value
+## Return Value
 
 A reference to the first IOMemoryMap instance found in the list of mappings created by IOUserClient from that passed memory descriptor is returned, or zero if none exist. The caller should release this reference.
 
-#### Overview
+## Overview
 
 Remove the first mapping created from the memory descriptor returned by clientMemoryForType() from IOUserClient's list of mappings. If such a mapping exists, it is retained and the reference currently held by IOUserClient is returned to the caller.
 

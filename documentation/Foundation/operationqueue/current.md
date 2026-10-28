@@ -25,11 +25,11 @@ class var current: OperationQueue? { get }
 @property (class, strong, readonly, nullable) NSOperationQueue * currentQueue;
 ```
 
-#### Return Value
+## Return Value
 
 The operation queue that started the operation or `nil` if the queue could not be determined.
 
-#### Discussion
+## Discussion
 
 You can use this method from within a running operation object to get a reference to the operation queue that started it. Calling this method from outside the context of a running operation typically results in `nil` being returned.
 

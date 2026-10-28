@@ -25,7 +25,7 @@ func drawShading(_ shading: CGShading)
 extern void CGContextDrawShading(CGContextRef c, CGShadingRef shading);
 ```
 
-#### Discussion
+## Discussion
 
 The preferred way to draw gradients is to use a CGGradient object. See [`CGGradient`](../cggradient.md).
 

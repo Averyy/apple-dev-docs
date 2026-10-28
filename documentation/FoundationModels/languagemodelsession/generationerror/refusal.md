@@ -19,7 +19,7 @@ A refusal produced by a language model.
 struct Refusal
 ```
 
-#### Overview
+## Overview
 
 Refusal errors indicate that the model chose not to respond to a prompt. To make the model explain why it refused, catch the refusal error and access one of its explanation properties.
 

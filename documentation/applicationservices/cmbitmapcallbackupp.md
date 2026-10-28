@@ -15,7 +15,7 @@ Defines a universal procedure pointer to a bitmap callback.
 typedef CMBitmapCallBackProcPtr CMBitmapCallBackUPP;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see the description of the [`CMBitmapCallBackProcPtr`](./cmbitmapcallbackprocptr.md) callback function.
 

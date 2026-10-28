@@ -20,7 +20,7 @@ var estimatedDepthData: CVPixelBuffer? { get }
 @property (nonatomic, readonly, nullable) CVPixelBufferRef estimatedDepthData;
 ```
 
-#### Discussion
+## Discussion
 
 Each non-background pixel in the segmentation buffer maps to a depth value in this buffer. Use this to occlude people from the rendering of your app’s virtual content.
 

@@ -27,7 +27,7 @@ func didMove(toParent parent: UIViewController?)
 
 - [Creating a custom container view controller](../creating-a-custom-container-view-controller.md)
 
-#### Discussion
+## Discussion
 
 Your view controller can override this method when it wants to react to being added to a container.
 

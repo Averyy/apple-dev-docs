@@ -25,7 +25,7 @@ func languages(forScript script: String) -> [String]?
 - (NSArray<NSString *> *) languagesForScript:(NSString *) script;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is an array of BCP-47 language tags, such as `"en"` or `"fr"`, that identify the languages.
 

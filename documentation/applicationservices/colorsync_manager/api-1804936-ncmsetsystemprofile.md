@@ -13,11 +13,11 @@ CMError NCMSetSystemProfile (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A `CMError` value. See [Result Codes](../colorsync_manager.md#1670295).
 
-#### Overview
+## Overview
 
 Prior to ColorSync 2.6, the function for setting the system profile supported only the `FSSpec` file specification type as a way of specifying a profile. This function allows for greater flexibility when specifying a system profile. 
 

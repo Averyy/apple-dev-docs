@@ -25,7 +25,7 @@ var skipForwardCommand: MPSkipIntervalCommand { get }
 @property (nonatomic, readonly) MPSkipIntervalCommand * skipForwardCommand;
 ```
 
-#### Discussion
+## Discussion
 
 Use the object in this property to register your app’s handler for jumping to a future point in the current track. In your handler, skip forward by the amount specified in the event’s [`interval`](../mpskipintervalcommandevent/interval.md) property. You can disable the command if your app does not support it.
 

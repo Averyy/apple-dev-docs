@@ -24,14 +24,14 @@ class NSCollectionLayoutAnchor
 @interface NSCollectionLayoutAnchor : NSObject
 ```
 
-#### Overview
+## Overview
 
 You use an anchor to attach a supplementary item to a specific item. An anchor contains information about where on the item your supplementary item is attached, including:
 
 - An edge or set of edges. You can attach a supplementary item to a single edge, or to a corner by specifying two adjacent edges.
 - An offset from the item. By default, the supplementary item is anchored within the specified edges of the item it’s attached to. You can change this location by providing a custom offset when you create an anchor.
 
-##### Edges
+### Edges
 
 The leading and trailing edges for anchors differ in left-to-right versus right-to-left environments. In a left-to-right environment, the leading edge is on the left, and the trailing edge is on the right. In a right-to-left environment, the leading edge is on the right, and the trailing edge is on the left. This difference ensures that your collection view layout is built with support for right-to-left languages.
 
@@ -39,7 +39,7 @@ The following diagram shows anchor placement for the specified edges in a left-t
 
 ![Diagram showing anchor positions. Top, bottom, leading, and trailing anchors are on the halfway point on their respective edges. The anchors defined by the edge combinations top and leading, top and trailing, bottom and leading, and bottom and trailing are in the corners between each of those sets of edges.](https://developer.apple.com/tutorials/images/com.apple.uikit/media-3570665@2x.png)
 
-##### Offset
+### Offset
 
 You can express anchor offset in these ways:
 

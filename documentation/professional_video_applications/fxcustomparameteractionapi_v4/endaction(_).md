@@ -24,7 +24,7 @@ func endAction(_ sender: Any!)
 
 - [Adding parameters to plug-ins](../../Professional-Video-Applications/adding-parameters-to-plug-ins.md)
 
-#### Discussion
+## Discussion
 
 It is important to note that OSC plug-ins (implementing [`FxOnScreenControl_v4`](../fxonscreencontrol_v4.md)) should not use [`startAction(_:)`](./startaction%28_%29.md) and [`endAction(_:)`](./endaction%28_%29.md), as the host is already aware that parameters are likely to change.
 

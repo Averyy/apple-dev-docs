@@ -19,7 +19,7 @@ case navigationLeftTurn
 WKHapticTypeNavigationLeftTurn
 ```
 
-#### Discussion
+## Discussion
 
 You can only use this haptic type when your app is running a continuous background location session.
 

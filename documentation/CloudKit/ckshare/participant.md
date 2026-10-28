@@ -25,7 +25,7 @@ class Participant
 @interface CKShareParticipant : NSObject
 ```
 
-#### Overview
+## Overview
 
 Participants are a key element of sharing in CloudKit. A participant provides information about an iCloud user and their participation in a share, including their identity, acceptance status, permissions, and role.
 

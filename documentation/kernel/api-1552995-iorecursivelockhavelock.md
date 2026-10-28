@@ -24,11 +24,11 @@ bool IORecursiveLockHaveLock(struct IORecursiveLock *lock);
 boolean_t IORecursiveLockHaveLock(const IORecursiveLock *lock);
 ```
 
-#### Return Value
+## Return Value
 
 True if the calling thread holds the lock otherwise false.
 
-#### Discussion
+## Discussion
 
 If the lock is held by the calling thread, return true, otherwise the lock is unlocked, or held by another thread and false is returned.
 

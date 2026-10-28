@@ -29,7 +29,7 @@ typedef struct __SecKey * SecKeyRef;
 
 - [Getting an Existing Key](./getting-an-existing-key.md)
 
-#### Overview
+## Overview
 
 A [`SecKey`](./seckey.md) instance that represents a key that is stored in a keychain can be safely cast to a [`SecKeychainItem`](./seckeychainitem.md) for manipulation as a keychain item. On the other hand, if the key is not stored in a keychain, casting the object to a [`SecKeychainItem`](./seckeychainitem.md) and passing it to Keychain Services functions returns errors.
 

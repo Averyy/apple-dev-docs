@@ -19,7 +19,7 @@ optional func webViewStatusText(_ sender: WebView!) -> String!
 - (NSString *) webViewStatusText:(WebView *) sender;
 ```
 
-#### Return Value
+## Return Value
 
 The status message displayed in the web view’s window if one has been set with the [`webView(_:setStatusText:)`](./webview%28_,setstatustext%29.md) method; otherwise, `nil`.
 

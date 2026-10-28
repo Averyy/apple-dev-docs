@@ -25,7 +25,7 @@ var maxArgumentBufferSamplerCount: Int { get }
 @property (readonly) NSUInteger maxArgumentBufferSamplerCount;
 ```
 
-#### Discussion
+## Discussion
 
 This limit only applies to samplers that support argument buffers (see [`supportArgumentBuffers`](../mtlsamplerdescriptor/supportargumentbuffers.md)). An [`MTLSamplerState`](../mtlsamplerstate.md) instance is only unique if the properties of the [`MTLSamplerDescriptor`](../mtlsamplerdescriptor.md) instance that created it are unique. For example, two samplers with equal [`minFilter`](../mtlsamplerdescriptor/minfilter.md) values but different [`magFilter`](../mtlsamplerdescriptor/magfilter.md) values are unique.
 

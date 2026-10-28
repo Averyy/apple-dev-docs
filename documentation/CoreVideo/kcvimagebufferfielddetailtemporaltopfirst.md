@@ -25,7 +25,7 @@ let kCVImageBufferFieldDetailTemporalTopFirst: CFString
 extern CFStringRef const kCVImageBufferFieldDetailTemporalTopFirst;
 ```
 
-#### Discussion
+## Discussion
 
 The temporal top first detail field value is of type [`CFString`](../CoreFoundation/cfstring.md). The image buffer contains complete fields in alternating order. The top, odd-numbered, fields contain image data captured at an earlier time than bottom, even-numbered, fields.
 

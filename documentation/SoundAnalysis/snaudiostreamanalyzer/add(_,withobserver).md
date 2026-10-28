@@ -29,7 +29,7 @@ func add(_ request: any SNRequest, withObserver observer: any SNResultsObserving
 
 - [Classifying Sounds in an Audio Stream](../classifying-sounds-in-an-audio-stream.md)
 
-#### Discussion
+## Discussion
 
 You can add requests to an analyzer that’s actively analyzing an audio stream. The analyzer throws an error (Swift) or returns [`NO`](../../ObjectiveC/no.md) (Objective-C) if it can’t accept the new request, such as a request with an audio format that doesn’t match the analyzer’s.
 

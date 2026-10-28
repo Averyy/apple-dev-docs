@@ -21,7 +21,7 @@ The facial features of the detected face.
 var landmarks: FaceObservation.Landmarks2D?
 ```
 
-#### Discussion
+## Discussion
 
 This value is `nil` for face observations produced by a [`DetectFaceRectanglesRequest`](../detectfacerectanglesrequest.md) analysis. Use the [`DetectFaceLandmarksRequest`](../detectfacelandmarksrequest.md) object to find facial features.
 

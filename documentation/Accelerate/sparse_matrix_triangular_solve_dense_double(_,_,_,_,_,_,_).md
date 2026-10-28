@@ -4,7 +4,7 @@
 **Kind**: func  
 **Role**: Function
 
-Solves the system of equations *B = alpha * T⁻¹  * B* for *B* where *B* is a dense matrix and *T* is a triangular sparse matrix, both with double-precision values.
+Solves the system of equations *B = alpha \* T⁻¹  \* B* for *B* where *B* is a dense matrix and *T* is a triangular sparse matrix, both with double-precision values.
 
 **Availability**:
 - iOS 9.0+
@@ -25,11 +25,11 @@ func sparse_matrix_triangular_solve_dense_double(_ order: CBLAS_ORDER, _ transt:
 sparse_status sparse_matrix_triangular_solve_dense_double(enum CBLAS_ORDER order, enum CBLAS_TRANSPOSE transt, sparse_dimension nrhs, double alpha, sparse_matrix_double T, double * restrictB, sparse_dimension ldb);
 ```
 
-#### Return Value
+## Return Value
 
 On success, [`SPARSE_SUCCESS`](./sparse_success.md) is returned and *B* has been updated with result of the operation.  Will return [`SPARSE_ILLEGAL_PARAMETER`](./sparse_illegal_parameter.md) if either of order or `transt` are invalid or the `ldb` does not meet its dimension requirements.  On error, *B* is unchanged.
 
-#### Discussion
+## Discussion
 
 If *T* is of size *N x N*, then *B* must be of size *N x* `nrhs`.  The matrix *T* must be an upper or lower triangular matrix.
 
@@ -57,7 +57,7 @@ If *T* is of size *N x N*, then *B* must be of size *N x* `nrhs`.  The matrix *T
 - [func sparse_matrix_product_sparse_float(CBLAS_ORDER, CBLAS_TRANSPOSE, Float, sparse_matrix_float!, sparse_matrix_float!, UnsafeMutablePointer<Float>!, sparse_dimension) -> sparse_status](./sparse_matrix_product_sparse_float%28_,_,_,_,_,_,_%29.md)
   Multiplies the sparse matrix *B* by the sparse matrix *A* and adds the result to the dense matrix *C*, all with single-precision values.
 - [func sparse_matrix_triangular_solve_dense_float(CBLAS_ORDER, CBLAS_TRANSPOSE, sparse_dimension, Float, sparse_matrix_float!, UnsafeMutablePointer<Float>!, sparse_dimension) -> sparse_status](./sparse_matrix_triangular_solve_dense_float%28_,_,_,_,_,_,_%29.md)
-  Solves the system of equations *B = alpha * T⁻¹  * B* for *B* where *B* is a dense matrix and *T* is a triangular sparse matrix, both with double-precision values.
+  Solves the system of equations *B = alpha \* T⁻¹  \* B* for *B* where *B* is a dense matrix and *T* is a triangular sparse matrix, both with double-precision values.
 
 
 ---

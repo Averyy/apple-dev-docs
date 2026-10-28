@@ -21,7 +21,7 @@ The JSON representation of the transaction information.
 var jsonRepresentation: Data { get }
 ```
 
-#### Discussion
+## Discussion
 
 The [`jsonRepresentation`](./jsonrepresentation.md) is UTF-8 string data that has the same JSON schema as the [`JWSTransactionDecodedPayload`](../../AppStoreServerAPI/jwstransactiondecodedpayload.md) object. You can use this data to decode the transaction information into your own data type instead of using the [`Transaction`](../transaction.md) value and its [Transaction properties](../transaction-properties.md) directly.
 

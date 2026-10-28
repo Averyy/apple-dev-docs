@@ -17,7 +17,7 @@ Tells the delegate that the reader session is active.
 - (void) tagReaderSessionDidBecomeActive:(NFCTagReaderSession *) session;
 ```
 
-#### Discussion
+## Discussion
 
 The reader session calls this method after the device begins scanning for new tags.
 

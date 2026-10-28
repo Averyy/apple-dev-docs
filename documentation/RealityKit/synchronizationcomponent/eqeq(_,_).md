@@ -20,7 +20,7 @@ Indicates whether two synchronization components are equal.
 static func == (lhs: SynchronizationComponent, rhs: SynchronizationComponent) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value set to `true` if the two synchronization components are equal.
 

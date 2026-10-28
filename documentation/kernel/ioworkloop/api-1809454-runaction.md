@@ -17,11 +17,11 @@ virtual IOReturn runAction(
  void *arg3 = 0);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the value of the Action callout.
 
-#### Overview
+## Overview
 
 Client function that causes the given action to be called in a single threaded manner. Beware: the work-loop's gate is recursive and runAction can cause direct or indirect re-entrancy. When executing on a client's thread, runAction will sleep until the work-loop's gate opens for execution of client actions, the action is single threaded against all other work-loop event sources.
 

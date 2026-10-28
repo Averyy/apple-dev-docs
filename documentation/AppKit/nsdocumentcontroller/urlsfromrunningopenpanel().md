@@ -19,7 +19,7 @@ func urlsFromRunningOpenPanel() -> [URL]?
 - (NSArray<NSURL *> *) URLsFromRunningOpenPanel;
 ```
 
-#### Discussion
+## Discussion
 
 Accessing this property creates an [`NSOpenPanel`](../nsopenpanel.md) object and runs it using the [`runModalOpenPanel(_:forTypes:)`](./runmodalopenpanel%28_,fortypes%29.md) method. When the user dismisses the panel, the returned value is an array of URLs corresponding to the files chosen by the user. The value is `nil` if the user cancels the Open panel or makes no selection.
 

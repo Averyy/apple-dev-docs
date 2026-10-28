@@ -24,7 +24,7 @@ var renderingState: PHASESoundEvent.RenderingState { get }
 @property (readonly) PHASERenderingState renderingState;
 ```
 
-#### Discussion
+## Discussion
 
 Access this property to check the sound event’s playback status. The value reflects the state you control by calling one of the functions: [`start(completion:)`](./start%28completion%29.md), [`stopAndInvalidate()`](./stopandinvalidate%28%29.md), or [`pause()`](./pause%28%29.md).
 

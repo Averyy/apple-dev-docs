@@ -15,11 +15,11 @@ Gets the name of the video object.
 OSSharedPtr<OSString> GetName();
 ```
 
-#### Return Value
+## Return Value
 
 The video object’s name.
 
-#### Discussion
+## Discussion
 
 The object’s work queue synchronizes access to the value.
 

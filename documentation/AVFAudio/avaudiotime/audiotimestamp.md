@@ -25,7 +25,7 @@ var audioTimeStamp: AudioTimeStamp { get }
 @property (nonatomic, readonly) AudioTimeStamp audioTimeStamp;
 ```
 
-#### Discussion
+## Discussion
 
 This is useful for compatibility with lower-level Core Audio and Audio Toolbox API.
 

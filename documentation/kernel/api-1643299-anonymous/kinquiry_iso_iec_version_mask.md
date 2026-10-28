@@ -13,7 +13,7 @@
 kINQUIRY_ISO_IEC_VERSION_Mask = 0xC0
 ```
 
-#### Discussion
+## Discussion
 
 Mask for valid bits for ISO/IEC Version.
 

@@ -15,7 +15,7 @@ The maximum zoom level of the overlay.
 maximumZ: number;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `null`.
 

@@ -23,7 +23,7 @@ final class HitchTimeRatio
 
 - [Analyzing app performance with MetricKit](./analyzing-app-performance-with-metrickit.md)
 
-#### Discussion
+## Discussion
 
 [`ratio`](./hitchtimemetric/ratio.md) and [`hitchTimeRatio`](./signpostintervalmetric/hitchtimeratio.md) use this dimension type, both of type `Measurement<HitchTimeRatio>`. The base unit represents the total time spent hitching over the total duration of the tracked interval, with symbol `"ms per s"`.
 

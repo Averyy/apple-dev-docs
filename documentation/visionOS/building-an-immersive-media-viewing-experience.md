@@ -10,7 +10,7 @@ Add a deeper level of immersion to media playback in your app with RealityKit an
 - visionOS 2.0+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 visionOS provides powerful features for building immersive media playback apps. It supports playing 3D video and Spatial Audio, which helps bring the content to life and makes the viewer feel like they’re part of the action. Starting in visionOS 2, you can take your app’s playback experience even further by creating custom environments using RealityKit and Reality Composer Pro.
 
@@ -18,7 +18,7 @@ The [Destination Video](./destination-video.md) sample includes a custom environ
 
 ![An image that shows Destination Video's Studio environment. The environment is a large, indoor space with concrete floors and a skylight that fills the area with light. There's a stairway on the right that leads up to a walkway that runs horizontally across the scene. The scene anchors a large video screen in front of the walkway.](https://developer.apple.com/tutorials/images/com.apple.visionOS/studio-overview.jpg)
 
-#### Define a video docking location
+## Define a video docking location
 
 Destination Video uses [`AVPlayerViewController`](../AVKit/avplayerviewcontroller.md) to present video, which enables the app to provide a playback experience across platforms that matches system apps like TV and Music. In visionOS, `AVPlayerViewController` participates in the system docking behavior. When you play video in a full-window player then open an immersive experience, the system docks the video screen in a fixed location and presents streamlined playback controls that keep your focus on the content.
 
@@ -34,7 +34,7 @@ Reality Composer Pro provides a template to set up a configuration for Docking R
 
 Choose a location for your docking region that provides a comfortable viewing angle to avoid causing strain or discomfort during longer viewing sessions. Avoid placing objects between the viewer and the video. Using Reality Composer Pro to define the docking region helps to visualize how it looks in context. Review your environment and docking region placement on Apple Vision Pro to get an appropriate sense of scale and layout.
 
-#### Enhance the realism of your scene with reflections
+## Enhance the realism of your scene with reflections
 
 To make your environment feel like a real, dynamic space, enable reflections from the video player on your environment surfaces. Reality Composer Pro supports two types of reflections that it exposes as Shader Graph nodes:
 
@@ -47,7 +47,7 @@ Destination Video uses both types of reflections in its custom environment to cr
 
 To learn more about how the custom environment uses reflections, see [Enabling video reflections in an immersive environment](./enabling-video-reflections-in-an-immersive-environment.md).
 
-#### Define the virtual scene lighting
+## Define the virtual scene lighting
 
 When Destination Video presents the Studio environment in a progressive immersion style, the scene provides a source of indirect lighting to the system. RealityKit represents this light source using an instance of [`VirtualEnvironmentProbeComponent`](../RealityKit/virtualenvironmentprobecomponent.md). To configure this lighting, the Studio scene defines an `EnvironmentProbe` entity and adds a Virtual Environment Probe component to it in Reality Composer Pro’s Inspector. It defines the source as a blend between the project’s light and dark image-based lighting (IBL) files, as shown below.
 
@@ -73,7 +73,7 @@ private func setVirtualEnvironmentProbeComponent(blendParam: Float) {
 }
 ```
 
-#### Enhance audio immersion
+## Enhance audio immersion
 
 By default, visionOS reverberates spatial audio sources by simulating the acoustics of the user’s real environment. When you present a custom environment in a progressive or fully immersive space, you can enhance the level of immersion by applying reverb that matches the visuals of your scene.
 
@@ -87,7 +87,7 @@ Define a reverb component in your scene even if it doesn’t provide custom audi
 
 > **Note**: To optimize the viewing experience, in most cases lower the volume of environment sounds, or stop their playback altogether, when video playback begins.
 
-#### Specify content brightness and surroundings effects
+## Specify content brightness and surroundings effects
 
 Destination Video presents the Studio environment by opening an immersive space in the [`progressive`](../SwiftUI/immersionstyle/progressive.md) immersion style. This style works well for media apps because people can customize their level of immersion by turning the Digital Crown - from no immersion to fully immersive.
 
@@ -117,7 +117,7 @@ ImmersiveSpace(id: ImmersiveEnvironmentView.id) {
 .immersionStyle(selection: .constant(.progressive), in: .progressive)
 ```
 
-#### Present a custom scene in the environment picker
+## Present a custom scene in the environment picker
 
 In visionOS 2, [`AVPlayerViewController`](../AVKit/avplayerviewcontroller.md) automatically displays a button for a person to pick an environment. When a person presses the button, the system displays a list of viewing environments in which they can watch the video. Selecting an item from the list opens the environment, and docks the player into its ideal viewing location within the scene. By default, the environment picker lists the most recently used system environments, but you can configure the list to show your custom environments as well.
 
@@ -161,19 +161,19 @@ After adding these buttons to the environment picker, they appear alongside the 
 
 ![An image of an environment picker. At the top of the image is a back button and to the right of it an environment picker button. The environment picker appears as a floating window with two sections. The top section has the title Watch in Apple Environment, and below it are buttons to select a light or dark System Environment. The bottom section has the title Watch in Destination Video Environment, and below it are buttons to select the dark or light Studio environments.](https://developer.apple.com/tutorials/images/com.apple.visionOS/env-picker.png)
 
-#### See Also
+## See Also
 
-###### Related samples
+#### Related samples
 
 - [Destination Video](./destination-video.md)
   Leverage SwiftUI to build an immersive media experience in a multiplatform app.
 
-###### Related articles
+#### Related articles
 
 - [Enabling video reflections in an immersive environment](./enabling-video-reflections-in-an-immersive-environment.md)
   Create a more immersive experience by adding video reflections in a custom environment.
 
-###### Related videos
+#### Related videos
 
 - [Enhance the immersion of media viewing in custom environments](https://developer.apple.com/videos/play/wwdc2024/10115)
   Extend your media viewing experience using Reality Composer Pro components like Docking Region, Reverb, and Virtual Environment Probe. Find out how to further enhance immersion using Reflections, Tint Surroundings Effect, SharePlay, and the Immersive Environment Picker.

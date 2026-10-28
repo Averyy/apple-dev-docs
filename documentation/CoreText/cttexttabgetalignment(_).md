@@ -25,7 +25,7 @@ func CTTextTabGetAlignment(_ tab: CTTextTab) -> CTTextAlignment
 extern CTTextAlignment CTTextTabGetAlignment(CTTextTabRef tab);
 ```
 
-#### Return Value
+## Return Value
 
 The tab’s text alignment value.
 

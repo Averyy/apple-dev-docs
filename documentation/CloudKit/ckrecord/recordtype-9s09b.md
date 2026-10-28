@@ -21,7 +21,7 @@ The value that your app defines to identify the type of record.
 @property (copy, readonly) CKRecordType recordType;
 ```
 
-#### Discussion
+## Discussion
 
 Use this value to differentiate between different record types in your app. The value is primarily for your benefit, so choose record types that represent the data in the corresponding records.
 

@@ -24,7 +24,7 @@ case texture
 MDLMaterialPropertyTypeTexture
 ```
 
-#### Discussion
+## Discussion
 
 Use the [`textureSamplerValue`](../mdlmaterialproperty/texturesamplervalue.md) property to access the material property’s value.
 

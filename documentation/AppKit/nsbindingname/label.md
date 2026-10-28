@@ -19,7 +19,7 @@ static let label: NSBindingName
 extern NSBindingName NSLabelBinding;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [Cocoa Bindings](../cocoa-bindings.md).
 

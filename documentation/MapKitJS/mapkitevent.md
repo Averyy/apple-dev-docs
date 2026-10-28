@@ -17,7 +17,7 @@ A generic MapKit JS event object.
 class MapKitEvent
 ```
 
-#### Discussion
+## Discussion
 
 The event object implements similar interfaces as the DOM `Event`, but you shouldn’t mix them.
 

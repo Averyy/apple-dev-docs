@@ -22,7 +22,7 @@ static let simplified: LevelOfDetail
 
 - [Updating your widgets for visionOS](../updating-your-widgets-for-visionos.md)
 
-#### Discussion
+## Discussion
 
 This suggests the app should lay out its content and show a simplified version of its content. On visionOS specifically, this signals that the user is at a further distance.
 

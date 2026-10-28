@@ -17,7 +17,7 @@ The payload that configures parental controls for apps.
 object ParentalControlsApplicationRestrictions
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.applicationaccess.new` as the payload type.
 
@@ -29,7 +29,7 @@ To determine if an app can be launched, the app is evaluated with these rules:
 - If the path to the binary being launched matches or is a subdirectory of a path in the allow list, the binary is allowed to launch.
 - The binary is denied permission to launch.
 
-##### Profile availability
+### Profile availability
 
 |  |  |
 | --- | --- |
@@ -41,7 +41,7 @@ To determine if an app can be launched, the app is evaluated with these rules:
 | Allowed in user enrollment | N/A |
 | Allow multiple payloads | macOS |
 
-##### Profile example
+### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>

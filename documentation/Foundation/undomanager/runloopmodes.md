@@ -25,7 +25,7 @@ var runLoopModes: [RunLoop.Mode] { get set }
 @property (copy) NSArray<NSString *> * runLoopModes;
 ```
 
-#### Discussion
+## Discussion
 
 An array of string constants specifying the current run-loop modes.
 

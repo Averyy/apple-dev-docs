@@ -14,7 +14,7 @@ The coordinates of the currently-processed data in a given coordinate space.
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 | Input | Type |
 | --- | --- |
@@ -24,7 +24,7 @@ The coordinates of the currently-processed data in a given coordinate space.
 | --- | --- |
 | `Out` | Vector3f |
 
-#### Parameter description
+## Parameter description
 
 - **`Space`**: The space in which the shader defines the position vector. The valid spaces for this input are `model`, `object`, `tangent`, and `world`. The default is `object`.
 

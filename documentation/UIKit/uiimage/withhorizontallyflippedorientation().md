@@ -24,11 +24,11 @@ func withHorizontallyFlippedOrientation() -> UIImage
 - (UIImage *) imageWithHorizontallyFlippedOrientation;
 ```
 
-#### Return Value
+## Return Value
 
 The new [`UIImage`](../uiimage.md) object.
 
-#### Discussion
+## Discussion
 
 The returned image’s [`imageOrientation`](./imageorientation.md) property contains the mirrored version of the original image’s orientation. For example, if the original orientation is [`UIImage.Orientation.left`](./orientation/left.md), the new orientation is [`UIImage.Orientation.leftMirrored`](./orientation/leftmirrored.md). This method does not affect the value of the [`flipsForRightToLeftLayoutDirection`](./flipsforrighttoleftlayoutdirection.md) property.
 

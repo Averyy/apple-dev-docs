@@ -20,7 +20,7 @@ func DADissenterCreate(_ allocator: CFAllocator?, _ status: DAReturn, _ string: 
 extern DADissenterRefDADissenterCreate(CFAllocatorRef allocator, DAReturn status, CFStringRef string);
 ```
 
-#### Return Value
+## Return Value
 
 A reference to a new DADissenter.
 

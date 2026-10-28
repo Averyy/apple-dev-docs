@@ -23,7 +23,7 @@ func motionCancelled(_ motion: UIEvent.EventSubtype, with event: UIEvent?)
 - (void) motionCancelled:(UIEventSubtype) motion withEvent:(UIEvent *) event;
 ```
 
-#### Discussion
+## Discussion
 
 UIKit calls this method when it receives an interruption requiring cancellation of the motion event. An interruption is anything that causes the application to become inactive or causes the view handling the motion events to be removed from its window. UIKit might also call this method if the shaking goes on too long. All responders that handle motion events should implement this method. In your implementation, clean up any state information associated with handling the motion events.
 

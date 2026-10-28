@@ -26,7 +26,7 @@ class CKDiscoverAllUserIdentitiesOperation
 @interface CKDiscoverAllUserIdentitiesOperation : CKOperation
 ```
 
-#### Overview
+## Overview
 
 Use this operation to discover iCloud users that match entries in the device’s Contacts database. CloudKit uses the email addresses and phone numbers in each Contact record to search for a matching iCloud account.
 

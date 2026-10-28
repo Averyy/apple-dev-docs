@@ -21,7 +21,7 @@ var to: SRAbsoluteTime { get set }
 @property (assign) SRAbsoluteTime to;
 ```
 
-#### Discussion
+## Discussion
 
 The framework requires the app to define a value for this property. If an app fails to define this property, the framework responds to the fetch by providing [`SRError.Code.fetchRequestInvalid`](../srerror/code/fetchrequestinvalid.md) to the reader delegate via [`sensorReader(_:fetching:failedWithError:)`](../srsensorreaderdelegate/sensorreader%28_,fetching,failedwitherror%29.md).
 

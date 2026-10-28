@@ -18,7 +18,7 @@ An action for processing asynchronous data received from the service.
 OSAction * completion;
 ```
 
-#### Discussion
+## Discussion
 
 The system retains this method only during the invocation of [`ExternalMethod`](../iouserclient/externalmethod.md). Retain this method yourself if you intend to use it outside of that invocation.
 

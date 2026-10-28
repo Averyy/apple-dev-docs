@@ -19,7 +19,7 @@ Describes the drag operations suggested to destinations within the app.
 struct OperationsWithinApp
 ```
 
-#### Overview
+## Overview
 
 To create a default configuration, initialize it without parameters.
 

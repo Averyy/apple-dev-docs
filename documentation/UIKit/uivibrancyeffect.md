@@ -24,7 +24,7 @@ class UIVibrancyEffect
 @interface UIVibrancyEffect : UIVisualEffect
 ```
 
-#### Overview
+## Overview
 
 A vibrancy effect is intended to be used as a subview of or layered on top of a [`UIVisualEffectView`](./uivisualeffectview.md) that has been configured with a [`UIBlurEffect`](./uiblureffect.md). The use of a vibrancy effect can help the content placed inside the [`contentView`](./uivisualeffectview/contentview.md) become more vivid.
 

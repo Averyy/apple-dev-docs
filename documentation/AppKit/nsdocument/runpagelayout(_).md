@@ -20,7 +20,7 @@ func runPageLayout(_ sender: Any?)
 - (void) runPageLayout:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation invokes [`runModalPageLayout(with:delegate:didRun:contextInfo:)`](./runmodalpagelayout%28with,delegate,didrun,contextinfo%29.md) with the document’s current NSPrintInfo object as argument; if the user clicks the OK button and the document authorizes changes to its printing information ([`shouldChangePrintInfo(_:)`](./shouldchangeprintinfo%28_%29.md)), the method sets the document’s new `NSPrintInfo` object and increments the document’s change count.
 

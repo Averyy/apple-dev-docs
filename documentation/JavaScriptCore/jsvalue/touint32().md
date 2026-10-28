@@ -24,11 +24,11 @@ func toUInt32() -> UInt32
 - (uint32_t) toUInt32;
 ```
 
-#### Return Value
+## Return Value
 
 The native unsigned 32-bit integer value.
 
-#### Discussion
+## Discussion
 
 This method uses JavaScript type coercion to convert the value to a JavaScript integer value, then returns a native representation of the result. In JavaScript, all numeric values are treated as double-precision floating-point numbers except for certain operations such as bit shifts.
 

@@ -15,7 +15,7 @@ Returns the location in screen coordinates where the given submenu is displayed 
 - (NSPoint) locationForSubmenu:(NSMenu *) submenu;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSPoint` structure describing the location or (0.0, 0.0) if the submenu does not exist in the menu.
 

@@ -19,11 +19,11 @@ func PMGetAdjustedPaperRect(_ pageFormat: PMPageFormat, _ paperRect: UnsafeMutab
 OSStatus PMGetAdjustedPaperRect(PMPageFormat pageFormat, PMRect *paperRect);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./core_printing.md#1670007).
 
-#### Discussion
+## Discussion
 
 Before using this function, you must call the function [`PMSessionValidatePageFormat(_:_:_:)`](./api-1459090-pmsessionvalidatepageformat.md) to ensure that the values for the adjusted paper rectangle correctly account for scaling, rotation, and application resolution settings.
 

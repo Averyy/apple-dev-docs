@@ -15,7 +15,7 @@ Define and provide data records that fit within the structure defined by descrip
 object RecordStore.records
 ```
 
-#### Discussion
+## Discussion
 
 Each descriptor can point to only one key of your data records. You can choose not to include all values from a given record in a data table. Only data that corresponds to a data descriptor will be included in your data table.
 

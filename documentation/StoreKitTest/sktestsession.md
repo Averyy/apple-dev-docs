@@ -25,7 +25,7 @@ class SKTestSession
 @interface SKTestSession : NSObject
 ```
 
-#### Overview
+## Overview
 
 This class controls the settings that the server uses when it processes transactions. Run tests that reconfigure the environment serially, not concurrently, to avoid overwriting each other’s environment settings.
 

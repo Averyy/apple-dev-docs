@@ -12,7 +12,7 @@ The parent class you use to request an attribution response.
 @interface ADClient : NSObject
 ```
 
-#### Overview
+## Overview
 
 To use this class, fetch the shared client object, `shared()`. Then call its `requestAttributionDetails(_:)` method, passing in a block to be called with the result.
 

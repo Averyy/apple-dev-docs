@@ -19,11 +19,11 @@ func matchingFontDescriptor(withMandatoryKeys mandatoryKeys: Set<NSFontDescripto
 - (NSFontDescriptor *) matchingFontDescriptorWithMandatoryKeys:(NSSet<NSString *> *) mandatoryKeys;
 ```
 
-#### Return Value
+## Return Value
 
 The matching font descriptor.  If there is no font that matches the given mandatory key values, returns `nil`.
 
-#### Discussion
+## Discussion
 
 If more than one font matches the [`NSFontNameAttribute`, `NSFontFamilyAttribute`, `NSFontVisibleNameAttribute`, `NSFontFaceAttribute`] attributes, the list of font descriptors is filtered by the other mandatory keys, if any, and the top result that is returned is the same as the first element returned from [`matchingFontDescriptors(withMandatoryKeys:)`](./matchingfontdescriptors%28withmandatorykeys%29.md).
 

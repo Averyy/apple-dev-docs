@@ -23,7 +23,7 @@ init(legibilityWeight: UILegibilityWeight)
 + (UITraitCollection *) traitCollectionWithLegibilityWeight:(UILegibilityWeight) legibilityWeight;
 ```
 
-#### Return Value
+## Return Value
 
 A new trait collection containing only the user interface level trait.
 

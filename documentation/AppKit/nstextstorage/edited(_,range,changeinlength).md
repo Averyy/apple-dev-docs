@@ -19,7 +19,7 @@ func edited(_ editedMask: NSTextStorageEditActions, range editedRange: NSRange, 
 - (void) edited:(NSTextStorageEditActions) editedMask range:(NSRange) editedRange changeInLength:(NSInteger) delta;
 ```
 
-#### Discussion
+## Discussion
 
 This method invokes [`processEditing()`](./processediting%28%29.md) if there are no outstanding [`beginEditing()`](../../Foundation/nsmutableattributedstring/beginediting%28%29.md) calls. `NSTextStorage` invokes this method automatically each time it makes a change to its attributed string. Subclasses that override or add methods that alter their attributed strings directly should invoke this method after making those changes; otherwise you shouldn’t invoke this method. The information accumulated with this method is then used in an invocation of [`processEditing()`](./processediting%28%29.md) to report the affected portion of the receiver.
 

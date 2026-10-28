@@ -5,7 +5,7 @@
 
 Specifies the stabilization to aplly to a clip.
 
-#### Overview
+## Overview
 
 The `type` attribute specifies the stabilization type, which defaults to `automatic`.
 

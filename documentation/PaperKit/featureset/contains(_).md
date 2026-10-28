@@ -19,7 +19,7 @@ Returns a Boolean value that indicates whether the given feature exists in the s
 func contains(_ feature: FeatureSet.Feature) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if member exists in the set; otherwise, `false`.
 

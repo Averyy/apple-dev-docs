@@ -19,7 +19,7 @@ An error that indicates the command you sent was too long.
 case MessageTooLong
 ```
 
-#### Discussion
+## Discussion
 
 Don’t send more than 65 kilobytes of data to the vehicle in one request.
 

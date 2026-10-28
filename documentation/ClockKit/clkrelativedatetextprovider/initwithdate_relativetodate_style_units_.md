@@ -15,7 +15,7 @@ Creates a text provider that shows the difference in time between the provided d
 - (instancetype) initWithDate:(NSDate *) date relativeToDate:(NSDate *) relativeDate style:(CLKRelativeDateStyle) style units:(NSCalendarUnit) calendarUnits;
 ```
 
-#### Discussion
+## Discussion
 
 This initializer creates a text provider that produces a fixed, relative date. If you want a text provider that automatically updates as time passes, use [`init(date:style:units:)`](./init%28date,style,units%29.md) instead.
 

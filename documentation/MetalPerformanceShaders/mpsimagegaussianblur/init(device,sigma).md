@@ -24,7 +24,7 @@ init(device: any MTLDevice, sigma: Float)
 - (instancetype) initWithDevice:(id<MTLDevice>) device sigma:(float) sigma;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized Gaussian blur filter object.
 

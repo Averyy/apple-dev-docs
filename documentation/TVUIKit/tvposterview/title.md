@@ -19,7 +19,7 @@ var title: String? { get set }
 @property (nonatomic, copy, nullable) NSString * title;
 ```
 
-#### Discussion
+## Discussion
 
 The title appears beneath the image in the poster view.
 

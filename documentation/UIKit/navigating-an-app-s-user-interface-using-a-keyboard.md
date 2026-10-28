@@ -12,7 +12,7 @@ Navigate between user interface elements using a keyboard and focusable UI eleme
 - Mac Catalyst 15.0+
 - Xcode 13.0+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC21 session: [10260: Focus on iPad Keyboard Navigation](https://developer.apple.com/wwdc21/10260/)
 

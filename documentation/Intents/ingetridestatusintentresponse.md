@@ -23,7 +23,7 @@ class INGetRideStatusIntentResponse
 @interface INGetRideStatusIntentResponse : INIntentResponse
 ```
 
-#### Overview
+## Overview
 
 An [`INGetRideStatusIntentResponse`](./ingetridestatusintentresponse.md) object contains your app’s response to a request for the status of the user’s current ride. SiriKit can ask for the status of a ride at any time, but often this occurs in response to a direct request from the user. Use your response object to provide current details about the user’s ride, including the estimated pickup time, the pickup location, the drop-off location, the vehicle type, the driver, and so on.
 

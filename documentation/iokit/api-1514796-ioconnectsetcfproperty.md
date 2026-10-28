@@ -19,11 +19,11 @@ func IOConnectSetCFProperty(_ connect: io_connect_t, _ propertyName: CFString!, 
 kern_return_t IOConnectSetCFProperty(io_connect_t connect, CFStringRef propertyName, CFTypeRef property);
 ```
 
-#### Return Value
+## Return Value
 
 A kern_return_t error code returned by the object.
 
-#### Discussion
+## Discussion
 
 This is a generic method to pass a CF property to the connection. The property is interpreted by the family and commonly represent configuration settings, but may be interpreted as anything.
 

@@ -21,7 +21,7 @@ Calculates the double-precision element-wise division of a scalar value and a ve
 extern void vDSP_svdivD(const double *__A, const double *__B, vDSP_Stride __IB, double *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This function calculates the element-wise division of scalar value `A` and vector `B`, and writes the result to vector `C`, as follows:
 

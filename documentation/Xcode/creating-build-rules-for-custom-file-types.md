@@ -5,7 +5,7 @@
 
 Tell Xcode how to build your project’s custom file types, and provide dependency information to optimize the build process for each file.
 
-#### Overview
+## Overview
 
 The code and resource files in a project are typically in an editable format that a running app can’t use directly. During a build, Xcode transforms the files you’ve been editing into a suitable runtime format. For example, it compiles your code files into machine instructions for a specific device. Each transformation requires a specific tool, and Xcode uses your project’s build rules, or the built-in build rules, to select the correct tool for each file type.
 
@@ -13,7 +13,7 @@ A build rule maps a specific file type to the tools Xcode needs to generate the 
 
 > **Note**: A build rule is the preferred way to process files that are independent from each other. The build system processes each file using a separate task, which allows for more parallelization. If you require the build system to process your files as a group in a single operation, create a custom Run Script build phase instead, as described in [Running custom scripts during a build](./running-custom-scripts-during-a-build.md).
 
-##### Add a new build rule for a custom file type
+### Add a new build rule for a custom file type
 
 If your project contains file types not covered by Xcode’s built-in build rules, you can add new build rules to address those types. To create a new build rule:
 
@@ -27,7 +27,7 @@ If your project contains file types not covered by Xcode’s built-in build rule
 
 A build rule can use either a custom shell script or an existing tool to process files. If you use an existing tool to handle your custom file types, select that tool from the build rule’s Using field. For example, if your input files contain source code that a built-in compiler can handle, select the compiler from the list.
 
-##### Specify the match criteria for source files
+### Specify the match criteria for source files
 
 To match custom file types, select the “Source files with names matching” option in the Process field and specify a custom pattern string. Specify pattern strings that follow the same rules as the `fnmatch` function in the Standard C library. For example, to match all files with the names `myfile.c` and `myfile.h`, specify the string `*/myfile.c */myfile.h`. During a build, Xcode compares the full path of each project file against the specified pattern. When a match occurs, the system executes your custom script code.
 
@@ -35,7 +35,7 @@ To match custom file types, select the “Source files with names matching” op
 
 For information about pattern matching using the `fnmatch` function, see the man (manual) page for that function.
 
-##### Specify the input and output files for your shell script
+### Specify the input and output files for your shell script
 
 When Xcode detects one of your custom file types, it executes the shell script associated with the matching build rule. In your script, get the path to the source file from the `SCRIPT_INPUT_FILE` environment variable, and begin processing the file. If your script requires additional input data, such as build configuration files, specify those files in the Input Files section of your build rule, and access them using environment variables.
 
@@ -54,7 +54,7 @@ When you specify input and output files in your build rule, use the following va
 
 > ❗ **Important**: Place your script’s output files in the directory represented by the `DERIVED_FILE_DIR` variable. If you place them in other locations, your version-control system might not find them, or Xcode might not be able to remove them during a clean build operation.
 
-##### Access script-related files from environment variables
+### Access script-related files from environment variables
 
 Shell scripts have access to the current target’s build settings and the input and output files associated with the build rule. Before executing your build rule’s script, Xcode configures the shell environment with several environment variables. To access the build rule’s input and output files, use the environment variables in the following table.
 
@@ -73,7 +73,7 @@ Shell scripts have access to the current target’s build settings and the input
 
 For a list of build setting environment variables, see [Build settings reference](./build-settings-reference.md).
 
-##### Specify additional build dependencies for your source file
+### Specify additional build dependencies for your source file
 
 To improve performance during incremental builds, Xcode rebuilds only the files that require a rebuild. To determine whether a file requires a rebuild, Xcode evaluates the following criteria:
 

@@ -15,7 +15,7 @@ The key in the IORegistry for the IOAudioControl minimum value attribute.
 #define kIOAudioLevelControlMinValueKey
 ```
 
-#### Discussion
+## Discussion
 
 The value returned by this key is a 32-bit integer representing the minimum value for the IOAudioControl. This is currently only valid for Level controls or other driver-defined controls that have a minimum and maximum value.
 

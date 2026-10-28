@@ -15,7 +15,7 @@ If this method is implemented and returns `false`, NSToolbar will disable `theIt
 - (BOOL) validateToolbarItem:(NSToolbarItem *) item;
 ```
 
-#### Discussion
+## Discussion
 
 NSToolbar only calls this method for image items.
 

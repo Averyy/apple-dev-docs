@@ -21,7 +21,7 @@ var globalPrivacyControlEnabled: Bool { get set }
 @property (nonatomic) BOOL globalPrivacyControlEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 Whether the Global Privacy Control (GPC) signal is enabled for the navigation.
 

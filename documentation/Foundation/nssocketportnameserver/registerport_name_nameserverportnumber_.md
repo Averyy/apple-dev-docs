@@ -17,11 +17,11 @@ Registers a given port as a network service with the specified name in the local
 - (BOOL) registerPort:(NSPort *) port name:(NSString *) name nameServerPortNumber:(uint16_t) portNumber;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if successful, [`false`](../../Swift/false.md) otherwise.
 
-#### Discussion
+## Discussion
 
 If your application has already registered a port under the name `portName`, this method replaces it with `port`.
 

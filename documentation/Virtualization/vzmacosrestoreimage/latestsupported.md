@@ -23,7 +23,7 @@ class var latestSupported: VZMacOSRestoreImage { get async throws }
 
 - [Installing macOS on a Virtual Machine](../installing-macos-on-a-virtual-machine.md)
 
-#### Discussion
+## Discussion
 
 Construct a [`VZMacOSInstaller`](../vzmacosinstaller.md) object with a `VZMacOSRestoreImage` loaded from a file on the local file system. A `VZMacOSRestoreImage` fetched with the [`latestSupported`](./latestsupported.md) method has a URL property that refers to a restore image on the network.
 

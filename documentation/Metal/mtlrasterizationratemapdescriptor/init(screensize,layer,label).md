@@ -20,7 +20,7 @@ A convenience initializer that creates a rate map descriptor with a single rate 
 convenience init(screenSize: MTLSize, layer: MTLRasterizationRateLayerDescriptor, label: String? = nil)
 ```
 
-#### Return Value
+## Return Value
 
 A descriptor object whose [`screenSize`](./screensize.md) and [`label`](./label.md) properties are set to the provided values. Layer `0` in the rate map is set to the provided layer descriptor.
 

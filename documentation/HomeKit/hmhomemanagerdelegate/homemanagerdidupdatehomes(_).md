@@ -24,7 +24,7 @@ optional func homeManagerDidUpdateHomes(_ manager: HMHomeManager)
 - (void) homeManagerDidUpdateHomes:(HMHomeManager *) manager;
 ```
 
-#### Discussion
+## Discussion
 
 The home manager calls this method to inform an application of significant changes to the home configuration, including when the manager finishes its first load of data from the HomeKit database on initialization. Use this method as a cue to invalidate any references to HomeKit objects and refresh your app’s views with the new list of homes.
 

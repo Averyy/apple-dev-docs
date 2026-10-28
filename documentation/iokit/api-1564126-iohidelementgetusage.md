@@ -16,7 +16,7 @@ Retrieves the usage for an element.
 uint32_t IOHIDElementGetUsage(IOHIDElementRef element);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the usage for the element.
 

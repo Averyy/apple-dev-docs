@@ -13,7 +13,7 @@
 extern NSString * const NSPrintJobFeatures;
 ```
 
-#### Discussion
+## Discussion
 
 Deprecated. Do not use.
 

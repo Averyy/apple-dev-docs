@@ -24,7 +24,7 @@ var isDelegatedRequest: Bool { get set }
 @property (nonatomic, assign) BOOL isDelegatedRequest;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to YES when your app is acting as an Apple Pay delegate and presenting the payment sheet on behalf of another merchant. The default value is NO.
 

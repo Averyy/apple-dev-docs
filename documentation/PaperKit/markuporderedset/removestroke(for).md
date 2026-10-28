@@ -20,7 +20,7 @@ Removes the associated stroke for the given id from the set.
 mutating func removeStroke(for id: UUID) -> PKStroke?
 ```
 
-#### Return Value
+## Return Value
 
 The associated stroke for `id` if the set contains `id`; otherwise, `nil`.
 

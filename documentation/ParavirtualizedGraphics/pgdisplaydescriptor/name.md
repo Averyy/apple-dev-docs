@@ -20,7 +20,7 @@ var name: String? { get set }
 @property (nonatomic, copy, readwrite, nullable) NSString * name;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `Apple Virtual`. The framework truncates the name to 13 characters.
 

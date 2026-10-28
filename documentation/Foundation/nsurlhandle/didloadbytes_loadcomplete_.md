@@ -17,7 +17,7 @@ Appends new data to the receiver’s resource data.
 - (void) didLoadBytes:(NSData *) newBytes loadComplete:(BOOL) yorn;
 ```
 
-#### Discussion
+## Discussion
 
 You should call this method when loading the resource data in the background.
 

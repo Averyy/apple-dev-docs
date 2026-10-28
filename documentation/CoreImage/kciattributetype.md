@@ -24,7 +24,7 @@ let kCIAttributeType: String
 extern NSString * const kCIAttributeType;
 ```
 
-#### Discussion
+## Discussion
 
 One of the attribute types described in [Data Type Attributes](./data-type-attributes.md).
 

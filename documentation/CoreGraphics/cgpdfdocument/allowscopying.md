@@ -25,7 +25,7 @@ var allowsCopying: Bool { get }
 extern bool CGPDFDocumentAllowsCopying(CGPDFDocumentRef document);
 ```
 
-#### Discussion
+## Discussion
 
 If the document is encrypted and the current password doesn’t grant permission to perform copying, this returns [`false`](../../Swift/false.md).
 

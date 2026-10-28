@@ -19,7 +19,7 @@ init()
 - (instancetype) init;
 ```
 
-#### Discussion
+## Discussion
 
 Using this initializer is equivalent to calling [`init(displayID:)`](./init%28displayid%29.md) with the result of the [`CGMainDisplayID()`](../../CoreGraphics/cgmaindisplayid%28%29.md) function.
 

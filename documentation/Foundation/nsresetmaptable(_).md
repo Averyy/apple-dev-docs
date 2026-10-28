@@ -25,7 +25,7 @@ func NSResetMapTable(_ table: NSMapTable<AnyObject, AnyObject>)
 extern void NSResetMapTable(NSMapTable *table);
 ```
 
-#### Discussion
+## Discussion
 
 Releases each key and value but doesn’t deallocate `table`. This method is useful for preserving the capacity of `table`.
 

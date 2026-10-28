@@ -22,11 +22,11 @@ optional func textPasteConfigurationSupporting(_ textPasteConfigurationSupportin
 - (NSAttributedString *) textPasteConfigurationSupporting:(id<UITextPasteConfigurationSupporting>) textPasteConfigurationSupporting combineItemAttributedStrings:(NSArray<NSAttributedString *> *) itemStrings forRange:(UITextRange *) textRange;
 ```
 
-#### Return Value
+## Return Value
 
 An attributed string based on the combination of multiple strings.
 
-#### Discussion
+## Discussion
 
 You implement this method when you need to change how the item strings are combined to form the single attributed string. If this method isn’t implemented, the item strings are concatenated without any delimiters.
 

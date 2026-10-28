@@ -24,7 +24,7 @@ let AVVideoWidthKey: String
 extern NSString * const AVVideoWidthKey;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is an instance of `NSNumber`.
 

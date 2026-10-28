@@ -23,7 +23,7 @@ static let saveAsFilename: ICDownloadOption
 extern ICDownloadOption const ICSaveAsFilename;
 ```
 
-#### Discussion
+## Discussion
 
 Specify the filename as an [`NSString`](../../Foundation/nsstring.md) object.
 

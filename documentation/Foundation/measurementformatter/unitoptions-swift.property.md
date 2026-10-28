@@ -25,7 +25,7 @@ var unitOptions: MeasurementFormatter.UnitOptions { get set }
 @property NSMeasurementFormatterUnitOptions unitOptions;
 ```
 
-#### Discussion
+## Discussion
 
 You can set this property to ensure that the formatter chooses the preferred unit to format for the measurement based on the formatter’s locale. For possible values, see [`MeasurementFormatter.UnitOptions`](./unitoptions-swift.struct.md).
 

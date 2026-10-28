@@ -5,7 +5,7 @@
 
 Represents a basic unit of editing.
 
-#### Overview
+## Overview
 
 Use a `clip` element to describe a timeline sequence created from a source media file. A `clip` contains `video` and/or `audio` elements, each of which represents a media component (usually a track) in media. Specify the timing of the edit through the [Timing Attributes](./timing-attributes.md).
 

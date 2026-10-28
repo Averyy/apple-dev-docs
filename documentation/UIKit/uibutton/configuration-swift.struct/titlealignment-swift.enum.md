@@ -19,7 +19,7 @@ Specifies how to align a button’s title and subtitle.
 enum TitleAlignment
 ```
 
-#### Overview
+## Overview
 
 If your button displays both [`title`](./title.md) and [`subtitle`](./subtitle.md), use this enumeration to configure how the text aligns.
 

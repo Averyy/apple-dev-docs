@@ -19,7 +19,7 @@ Optional events you can observe during the card-reading process.
 enum Event
 ```
 
-#### Overview
+## Overview
 
 If you supply an event handler when reading a card, the session delivers appropriate events to your handler. Use them to update your UI or perform other app-specific tasks. You can also use them to provide accessibility-related feedback.
 

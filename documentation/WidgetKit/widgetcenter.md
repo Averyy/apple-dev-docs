@@ -25,11 +25,11 @@ class WidgetCenter
 - [Keeping a widget up to date](./keeping-a-widget-up-to-date.md)
 - [Making network requests in a widget extension](./making-network-requests-in-a-widget-extension.md)
 
-#### Overview
+## Overview
 
 WidgetCenter provides information about user-configured widgets, such as their family. For widgets that use [`IntentConfiguration`](./intentconfiguration.md), you can retrieve the user-edited values.
 
-##### Getting Configured Widget Information
+### Getting Configured Widget Information
 
 To get a list of user-configured widgets, use [`getCurrentConfigurations(_:)`](./widgetcenter/getcurrentconfigurations%28_%29.md). This property provides an array of [`WidgetInfo`](./widgetinfo.md) objects containing the following information:
 
@@ -43,7 +43,7 @@ struct WidgetInfo {
 
 The `kind` string matches the parameter you use when creating the widget’s [`StaticConfiguration`](./staticconfiguration.md) or [`IntentConfiguration`](./intentconfiguration.md). The `family` property matches one of the options specified in the [`supportedFamilies(_:)`](../SwiftUI/widgetconfiguration/supportedfamilies%28_%29.md) property of the widget’s configuration. If your widget is based on [`IntentConfiguration`](./intentconfiguration.md), the `configuration` property provides the custom intent containing the user-customized values for each individual widget.
 
-##### Requesting a Reload of Your Widget’s Timeline
+### Requesting a Reload of Your Widget’s Timeline
 
 Changes in your app’s state may affect a widget’s timeline. When this happens, you can tell WidgetKit to reload the timeline for either a specific kind of widget or all widgets. For example, your app might register for push notifications based on the widgets the user has configured. When your app receives a push notification that changes the state for one or more of your widgets, requesting a reload of their timelines updates their display.
 

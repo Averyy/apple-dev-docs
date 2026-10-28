@@ -20,7 +20,7 @@ PaymentCredentialStatus paymentCredentialStatus;
 
 - [Checking for Apple Pay availability](../checking-for-apple-pay-availability.md)
 
-#### Discussion
+## Discussion
 
 This object, which [`applePayCapabilities`](../applepaysession/applepaycapabilities.md) returns, helps you determine when and where to display an Apple Pay button.
 

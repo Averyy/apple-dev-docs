@@ -17,7 +17,7 @@ Asks the focus sytem to reevaluate the default focus item.
 func callAsFunction(in namespace: Namespace.ID)
 ```
 
-#### Discussion
+## Discussion
 
 The focus system reevaluates default focus when the currently-focused item is within the provided namespace.
 

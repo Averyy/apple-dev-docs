@@ -19,11 +19,11 @@ func runModal(with printInfo: NSPrintInfo) -> Int
 - (NSInteger) runModalWithPrintInfo:(NSPrintInfo *) printInfo;
 ```
 
-#### Return Value
+## Return Value
 
 `NSCancelButton` if the user clicks the Cancel button; otherwise, `NSOKButton`.
 
-#### Discussion
+## Discussion
 
 The receiver’s values are recorded in `printInfo`.
 

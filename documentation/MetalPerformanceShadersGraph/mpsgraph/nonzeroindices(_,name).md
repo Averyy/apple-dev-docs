@@ -24,11 +24,11 @@ func nonZeroIndices(_ tensor: MPSGraphTensor, name: String?) -> MPSGraphTensor
 - (MPSGraphTensor *) nonZeroIndicesOfTensor:(MPSGraphTensor *) tensor name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor containing indices in signed int32 data type.
 
-#### Discussion
+## Discussion
 
 The indices are returned as a two-dimensional tensor of size `[number_of_nonzeros, input_rank]`. Each row in the result contains indices of a nonzero elements in input. For example:
 

@@ -15,7 +15,7 @@ An object you use to hold options for communicating with the API server.
 interface Configuration
 ```
 
-#### Overview
+## Overview
 
 A `createConfiguration` function from one of the `@apple/cktool.target.browser` or `@apple/cktool.target.nodejs` packages creates an instance of this class appropriate for your target platform.
 

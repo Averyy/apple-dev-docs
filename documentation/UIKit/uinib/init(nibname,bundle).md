@@ -25,11 +25,11 @@ init(nibName name: String, bundle bundleOrNil: Bundle?)
 + (UINib *) nibWithNibName:(NSString *) name bundle:(NSBundle *) bundleOrNil;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized [`UINib`](../uinib.md) object. An exception is thrown if there were errors during initialization or the nib file could not be located.
 
-#### Discussion
+## Discussion
 
 The [`UINib`](../uinib.md) object looks for the nib file in the bundle’s language-specific project directories first, followed by the `Resources` directory.
 

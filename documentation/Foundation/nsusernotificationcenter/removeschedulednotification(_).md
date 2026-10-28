@@ -21,7 +21,7 @@ func removeScheduledNotification(_ notification: NSUserNotification)
 - (void) removeScheduledNotification:(NSUserNotification *) notification;
 ```
 
-#### Discussion
+## Discussion
 
 If the user notification’s [`deliveryDate`](../nsusernotification/deliverydate.md) occurs before the cancellation finishes, the notification may still be delivered.
 

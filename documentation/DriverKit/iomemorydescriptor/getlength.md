@@ -18,11 +18,11 @@ Returns the length of the memory block represented by this object.
 kern_return_t GetLength(uint64_t *returnLength);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../error-codes.md).
 
-#### Discussion
+## Discussion
 
 This method returns the effective size of the memory block, which might be less than the block’s total capacity.
 

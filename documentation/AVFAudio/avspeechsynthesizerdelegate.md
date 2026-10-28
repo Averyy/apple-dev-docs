@@ -25,7 +25,7 @@ protocol AVSpeechSynthesizerDelegate : NSObjectProtocol, Sendable
 @protocol AVSpeechSynthesizerDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 A speech synthesizer sends messages to its delegate for three categories of events:
 

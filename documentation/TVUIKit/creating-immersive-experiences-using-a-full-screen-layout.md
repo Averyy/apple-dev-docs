@@ -10,7 +10,7 @@ Display content with a collection view that maximizes the tvOS experience.
 - tvOS 13.0+
 - Xcode 14.2+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC 2019 session [211: Mastering the Living Room with tvOS](https://developer.apple.com/videos/play/wwdc19/211/).
 

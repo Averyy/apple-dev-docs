@@ -21,7 +21,7 @@ The low-level mesh that this mesh is built from, if any.
 @preconcurrency var lowLevelMesh: LowLevelMesh? { get }
 ```
 
-#### Discussion
+## Discussion
 
 If this mesh is not built from a [`LowLevelMesh`](../lowlevelmesh.md), it returns nil.
 

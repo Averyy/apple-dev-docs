@@ -5,7 +5,7 @@
 
 Use these constants to set rights and rules in the policy database.
 
-#### Overview
+## Overview
 
 Use these constants when creating or modifying a rule in the policy database using the [`AuthorizationRightSet(_:_:_:_:_:_:)`](./authorizationrightset%28_,_,_,_,_,_%29.md) function.
 

@@ -24,7 +24,7 @@ var worldTransform: simd_float4x4 { get set }
 @property (nonatomic, assign) simd_float4x4 worldTransform;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property requires orthogonal basis vectors and uniform scale.
 

@@ -15,7 +15,7 @@ The array of record field names that limit the amount of data the server returns
 attribute string[]? requestedFields;
 ```
 
-#### Discussion
+## Discussion
 
 The server only returns the fields specified in the array.
 

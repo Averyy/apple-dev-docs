@@ -19,7 +19,7 @@ static let rgbColorTable: NSBitmapImageRep.PropertyKey
 extern NSBitmapImageRepPropertyKey NSImageRGBColorTable;
 ```
 
-#### Discussion
+## Discussion
 
 Used only for GIF files. It’s stored as packed RGB. It’s set when reading in and used when writing out.
 

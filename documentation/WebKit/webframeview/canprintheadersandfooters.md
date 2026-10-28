@@ -19,7 +19,7 @@ var canPrintHeadersAndFooters: Bool { get }
 @property (nonatomic, readonly) BOOL canPrintHeadersAndFooters;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the receiver can print headers and footers; otherwise, [`false`](../../Swift/false.md).
 

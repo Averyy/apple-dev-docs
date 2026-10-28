@@ -17,11 +17,11 @@ func es_exec_entitlements(_ exec: UnsafePointer<es_event_exec_t>) -> xpc_object_
 extern xpc_object_tes_exec_entitlements(const es_event_exec_t *exec);
 ```
 
-#### Return Value
+## Return Value
 
 The XPC dictionary containing all entitlements, or NULL if there are no entitlements.
 
-#### Discussion
+## Discussion
 
 Get the dictionary of entitlements associated with a message containing an es_event_exec_t
 

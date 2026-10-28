@@ -14,7 +14,7 @@
 virtual uint32_t getUsagePage();
 ```
 
-#### Return Value
+## Return Value
 
 Returns the element’s usage page. Usage pages are defined in [HID Usage Tables](../hid-usage-tables.md).
 

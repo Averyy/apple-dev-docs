@@ -23,7 +23,7 @@ Buttons that help people get started or learn more about your feature.
 .ActionBuilder var actions: [Self.Action] { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use actions to provide primary and secondary buttons to help people get started or learn more about your feature. If you don’t supply a value, this property returns an empty array of type `Action`.
 

@@ -21,7 +21,7 @@ func vSaxpy(_ n: Int32, _ alpha: Float, _ x: UnsafePointer<vFloat>, _ y: UnsafeM
 extern void vSaxpy(int32_t n, float alpha, const vFloat *x, vFloat *y);
 ```
 
-#### Discussion
+## Discussion
 
 The elements of `x` are multiplied by `alpha` and added to the corresponding elements of `y`.  The results are stored in `y`.
 

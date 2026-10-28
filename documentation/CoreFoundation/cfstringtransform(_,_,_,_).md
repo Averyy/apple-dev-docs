@@ -25,11 +25,11 @@ func CFStringTransform(_ string: CFMutableString!, _ range: UnsafeMutablePointer
 extern Boolean CFStringTransform(CFMutableStringRef string, CFRange *range, CFStringRef transform, Boolean reverse);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the transform is successful; otherwise `false`.
 
-#### Discussion
+## Discussion
 
 The transformation represented by `transform` is applied to the given range of `string`, modifying it in place. Only the specified range is modified, but the transform may look at portions of the string outside that range for context. Reasons that the transform may be unsuccessful include an invalid transform identifier, and attempting to reverse an irreversible transform.
 

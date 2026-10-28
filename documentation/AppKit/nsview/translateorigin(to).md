@@ -19,7 +19,7 @@ func translateOrigin(to translation: NSPoint)
 - (void) translateOriginToPoint:(NSPoint) translation;
 ```
 
-#### Discussion
+## Discussion
 
 In the process, the origin of the view’s bounds rectangle is shifted by (`–translation.x`, `–translation.y`). This method neither redisplays the view nor marks it as needing display. You must do this yourself by calling the  [`display()`](./display%28%29.md) method or setting the [`needsDisplay`](./needsdisplay.md) property.
 

@@ -25,15 +25,15 @@ func newReferenceObject(for managedObject: NSManagedObject) -> Any
 - (id) newReferenceObjectForManagedObject:(NSManagedObject *) managedObject;
 ```
 
-#### Return Value
+## Return Value
 
 A new reference object for `managedObject`.
 
-#### Discussion
+## Discussion
 
 This method is invoked by the framework after a save operation on a managed object context, once for each newly-inserted managed object. The value returned is used to create a permanent ID for the object and must be unique for an instance within its entity’s inheritance hierarchy (in this store).
 
-##### Special Considerations
+### Special Considerations
 
 You must override this method.
 

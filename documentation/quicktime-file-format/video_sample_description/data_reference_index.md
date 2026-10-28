@@ -6,7 +6,7 @@
 
 A 16-bit integer that contains the index of the data reference to use to retrieve data associated with samples that use this sample description.
 
-#### Overview
+## Overview
 
 Data references are stored in data reference atoms.
 

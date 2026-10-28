@@ -25,7 +25,7 @@ var kAudioFormatParameterValueStream: AudioFormatID { get }
 kAudioFormatParameterValueStream
 ```
 
-#### Discussion
+## Discussion
 
 An audio unit typically runs a parameter value stream at either:
 

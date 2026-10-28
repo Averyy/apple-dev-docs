@@ -25,7 +25,7 @@ static let eac3: AVFileType
 extern AVFileType const AVFileTypeEnhancedAC3;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this UTI is `public.enhanced-ac3-audio`. Files of this type have an `.eac3` extension.
 

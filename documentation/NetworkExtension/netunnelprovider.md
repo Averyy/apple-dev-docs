@@ -28,17 +28,17 @@ class NETunnelProvider
 
 - [Routing your VPN network traffic](./routing-your-vpn-network-traffic.md)
 
-#### Overview
+## Overview
 
 Each [`NETunnelProvider`](./netunnelprovider.md) instance corresponds to a single tunneling session, with a single associated configuration.
 
 > ❗ **Important**:  The `com.apple.developer.networking.networkextension` entitlement is required in order to use the [`NETunnelProvider`](./netunnelprovider.md) class. Enable this entitlement when creating an App ID in your developer account.
 
-##### Subclassing Notes
+### Subclassing Notes
 
 The `NETunnelProvider` class should not be subclassed directly. Instead, you should create subclasses of `NETunnelProvider` subclasses.
 
-###### Methods to Override
+#### Methods to Override
 
 - [`handleAppMessage(_:completionHandler:)`](./netunnelprovider/handleappmessage%28_,completionhandler%29.md)
 

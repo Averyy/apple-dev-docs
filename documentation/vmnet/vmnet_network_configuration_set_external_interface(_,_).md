@@ -20,11 +20,11 @@ func vmnet_network_configuration_set_external_interface(_ config: vmnet_network_
 vmnet_return_t vmnet_network_configuration_set_external_interface(vmnet_network_configuration_ref config, const char *interface_name);
 ```
 
-#### Return Value
+## Return Value
 
 VMNET_SUCCESS on success, error otherwise.
 
-#### Discussion
+## Discussion
 
 This is only applicable to networks of `VMNET_SHARED_MODE`.
 

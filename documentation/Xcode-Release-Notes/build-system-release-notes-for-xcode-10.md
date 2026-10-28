@@ -5,7 +5,7 @@
 
 Update your apps to use new features, and test your apps against changes.
 
-#### Overview
+## Overview
 
 Xcode 10 uses a new build system. The new build system provides improved reliability and build performance, and it catches project configuration problems that the legacy build system does not.
 
@@ -22,7 +22,7 @@ Although the new build system is highly compatible with existing projects, some 
 
   If you need it, the legacy build system is still available in Xcode 10. To use the legacy build system, select it in the File > Project/Workspace Settings sheet. Projects configured to use the legacy build system will display an orange hammer icon in the Activity View.
 
-##### New Features
+### New Features
 
 - When an .`xcconfig` file contains multiple assignments of the same build setting, later assignments using `$(inherited)` or `$(`*<setting_name>*`)` will inherit from earlier assignments in the .xcconfig. The legacy build system caused every use of `$(inherited)` or `$(`*<setting_name>*`)` skip any other values defined within the .xcconfig. To detect whether your .xcconfig is affected by this improvement, run `defaults write com.apple.dt.XCBuild EnableCompatibilityWarningsForXCBuildTransition -bool YES` in Terminal to cause Xcode to generate a warning about this situation. (40283621)
 - While a target is performing post-compilation build steps, such as linking and code signing, Xcode’s new build system will begin compiling sources from targets that depend on that target, to improve build speed by using more of your available processor cores. This compilation will not start until any “Run Script” phases from the target have completed. (38772619)
@@ -32,7 +32,7 @@ Although the new build system is highly compatible with existing projects, some 
 - A new Product > Perform Action > Build With Timing Summary command produces a build log with statistics about the aggregate time taken by each command in the build. These timings aid in analyzing the time taken by the build. (40069871)
 - When using the new build system, only build settings with a non-empty value are exported to shell script build phases and build rules. A build setting set to an empty value is treated the same as one which isn’t set at all by both build systems. (40843445)
 
-##### Known Issues
+### Known Issues
 
 - Incremental builds may fail to codesign properly for non-source related changes to your project, such as resource file modifications, which can result in the app failing to launch. (41254808)
 
@@ -56,7 +56,7 @@ Although the new build system is highly compatible with existing projects, some 
 
   **Workaround:** Delete the build folder manually.
 
-##### Resolved Issues
+### Resolved Issues
 
 - Localized `.strings` files which are encoded using UTF-16 and don’t have an explicit encoding selected in the Xcode project file will now build. (41902162)
 - When a target that contains Swift code adds a new dependency on a Swift system library, Xcode will copy that runtime library into the app. (40456595)

@@ -20,7 +20,7 @@ typealias CGScreenUpdateMoveCallback = (CGScreenUpdateMoveDelta, Int, UnsafePoin
 typedef void (*)(struct CGScreenUpdateMoveDelta, unsigned long, const struct CGRect *, void *) CGScreenUpdateMoveCallback;
 ```
 
-#### Discussion
+## Discussion
 
 To register a screen-move callback function, you call the function [`CGScreenRegisterMoveCallback(_:_:)`](./cgscreenregistermovecallback%28_,_%29.md). Quartz invokes your callback function when operations such as window movement or scrolling occur on local displays. When you finish using a callback registration, you should call the function [`CGScreenUnregisterMoveCallback(_:_:)`](./cgscreenunregistermovecallback%28_,_%29.md) to remove it.
 

@@ -20,7 +20,7 @@ var ES_EVENT_TYPE_NOTIFY_SETREGID: es_event_type_t { get }
 ES_EVENT_TYPE_NOTIFY_SETREGID
 ```
 
-#### Discussion
+## Discussion
 
 This identifier corresponds to the [`es_events_t`](./es_events_t.md) union member [`setregid`](./es_events_t/setregid.md), which has the type [`es_event_setregid_t`](./es_event_setregid_t.md).
 

@@ -19,11 +19,11 @@ func PMPrintSettingsCopyKeys(_ printSettings: PMPrintSettings, _ settingsKeys: U
 OSStatus PMPrintSettingsCopyKeys(PMPrintSettings printSettings, CFArrayRef  _Nullable *settingsKeys);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./core_printing.md#1670007).
 
-#### Discussion
+## Discussion
 
 This function provides an array of the keys in a print settings object. You could get the values for the keys in the array with [`PMPrintSettingsGetValue(_:_:_:)`](./api-1460602-pmprintsettingsgetvalue.md), or use the keys to look up the values in the dictionary returned by [`PMPrintSettingsCopyAsDictionary(_:_:)`](./api-1459088-pmprintsettingscopyasdictionary.md).
 

@@ -20,7 +20,7 @@ var useLockInterval: DarwinBoolean
 Boolean useLockInterval;
 ```
 
-#### Discussion
+## Discussion
 
 Use [`lockInterval`](./lockinterval.md) to indicate the time in seconds after which the keychain should automatically be locked.
 

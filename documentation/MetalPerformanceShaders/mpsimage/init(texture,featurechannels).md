@@ -24,11 +24,11 @@ convenience init(texture: any MTLTexture, featureChannels: Int)
 - (instancetype) initWithTexture:(id<MTLTexture>) texture featureChannels:(NSUInteger) featureChannels;
 ```
 
-#### Return Value
+## Return Value
 
 A valid [`MPSImage`](../mpsimage.md) object or `nil`, if failure.
 
-#### Discussion
+## Discussion
 
 In a memory-intensive app, you can save memory (and allocation/deallocation time) by using an [`MPSTemporaryImage`](../mpstemporaryimage.md) object, where the framework aggressively reuses underlying texture memory within the same command buffer. However, in certain cases, you may want more control on the allocation, placement, reuse, and recycling of memory-backing textures used in your app by using the Metal Resource Heaps API. In this case, an app can create an [`MPSImage`](../mpsimage.md) object from a pre-allocated texture by calling this method.
 

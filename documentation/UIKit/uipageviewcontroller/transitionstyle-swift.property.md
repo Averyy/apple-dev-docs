@@ -23,7 +23,7 @@ var transitionStyle: UIPageViewController.TransitionStyle { get }
 @property (nonatomic, readonly) UIPageViewControllerTransitionStyle transitionStyle;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is set when the page view controller is initialized, and cannot be changed.
 

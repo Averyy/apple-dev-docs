@@ -15,7 +15,7 @@
 kINQUIRY_Page83_CodeSetBinaryData = 0x1
 ```
 
-#### Discussion
+## Discussion
 
 The identifier contains binary data.
 

@@ -19,7 +19,7 @@ func setContextHelp(_ attrString: NSAttributedString, for object: Any)
 - (void) setContextHelp:(NSAttributedString *) attrString forObject:(id) object;
 ```
 
-#### Discussion
+## Discussion
 
 When the application enters context-sensitive help mode, if `object` is clicked, `help` appears in the context-sensitive help window.
 

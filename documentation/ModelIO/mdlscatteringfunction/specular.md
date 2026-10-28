@@ -24,7 +24,7 @@ var specular: MDLMaterialProperty { get }
 @property (nonatomic, retain, readonly) MDLMaterialProperty * specular;
 ```
 
-#### Discussion
+## Discussion
 
 The default specular value is zero (no specular highlights).
 

@@ -22,7 +22,7 @@ The most recent fetched result from the Query.
 @preconcurrency var wrappedValue: Result { get }
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: When an fetch error occurs, `wrappedValue` retains results from the last successful fetch. Its value will update once a new fetch succeeds.
 

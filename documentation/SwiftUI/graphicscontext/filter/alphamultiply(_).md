@@ -21,7 +21,7 @@ Returns a filter that multiplies the alpha component by a given color.
 static func alphaMultiply(_ color: Color) -> GraphicsContext.Filter
 ```
 
-#### Return Value
+## Return Value
 
 A filter that multiplies the alpha component.
 

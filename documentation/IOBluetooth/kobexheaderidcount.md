@@ -17,7 +17,7 @@ var kOBEXHeaderIDCount: OBEXHeaderIdentifiers { get }
 kOBEXHeaderIDCount
 ```
 
-#### Discussion
+## Discussion
 
 Number of objects (used in Connect command).
 

@@ -19,7 +19,7 @@ var standardInput: FileHandle? { get set }
 @property (retain, nullable) NSFileHandle * standardInput;
 ```
 
-#### Discussion
+## Discussion
 
 Setting to `nil` will bind the stream to `/dev/null`.
 

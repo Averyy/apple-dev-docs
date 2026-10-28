@@ -19,11 +19,11 @@ func StopSpeech(_ chan: SpeechChannel) -> OSErr
 OSErr StopSpeech(SpeechChannel chan);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./speech_synthesis_manager.md#1659745).
 
-#### Discussion
+## Discussion
 
 The `StopSpeech` functionimmediately terminates speech on the channel specified by the `chan` parameter.After returning from `StopSpeech`,your application can safely release any text buffer that the speechsynthesizer has been using. You can call `StopSpeech` foran already idle channel without ill effect.
 

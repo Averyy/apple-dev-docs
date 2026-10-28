@@ -19,7 +19,7 @@ Expected characteristics of the spoken audio content and its delivery.
 struct ContentHint
 ```
 
-#### Overview
+## Overview
 
 These hints optimize transcription, but do not preclude spoken audio with different characteristics.
 

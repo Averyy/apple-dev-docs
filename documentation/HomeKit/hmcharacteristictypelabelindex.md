@@ -24,7 +24,7 @@ let HMCharacteristicTypeLabelIndex: String
 extern NSString * const HMCharacteristicTypeLabelIndex;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is an integer that’s greater than or equal to `1`. When the value for the label namespace characteristic is [`HMCharacteristicValueLabelNamespace.dot`](./hmcharacteristicvaluelabelnamespace/dot.md), the label index indicates the number of dots, like `.`, `..`, `...`, and so on. When the value for the label namespace characteristic is [`HMCharacteristicValueLabelNamespace.numeral`](./hmcharacteristicvaluelabelnamespace/numeral.md), the label index indicates the arabic numeral, like `1`, `2`, `3`, and so on.
 

@@ -23,7 +23,7 @@ func canEncrypt(using algorithm: SecKeyAlgorithm) -> Bool
 - (BOOL) canEncryptUsingSecKeyAlgorithm:(SecKeyAlgorithm) algorithm;
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether the algorithm you supply is valid for encrypting data with the key.
 

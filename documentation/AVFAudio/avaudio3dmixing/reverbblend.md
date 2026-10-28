@@ -25,7 +25,7 @@ var reverbBlend: Float { get set }
 @property (nonatomic) float reverbBlend;
 ```
 
-#### Discussion
+## Discussion
 
 This property controls the amount of the source’s audio that the [`AVAudioEnvironmentNode`](../avaudioenvironmentnode.md) instance processes. A value of `0.5` results in an equal blend of dry and processed (wet) audio.
 

@@ -26,7 +26,7 @@ func schedule(in aRunLoop: RunLoop, forMode mode: RunLoop.Mode)
 - (void) scheduleInRunLoop:(NSRunLoop *) aRunLoop forMode:(NSRunLoopMode) mode;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this method in conjunction with [`remove(from:forMode:)`](./remove%28from,formode%29.md) to transfer a service to a different run loop. You should not attempt to run a service on multiple run loops.
 

@@ -26,7 +26,7 @@ class AVMutableVideoComposition
 @interface AVMutableVideoComposition : AVVideoComposition
 ```
 
-#### Overview
+## Overview
 
 If you use the built-in video compositor, the instructions a video composition contain can specify a spatial transformation, an opacity value, and a cropping rectangle for each video source. This values can vary over time by applying linear ramping functions.
 

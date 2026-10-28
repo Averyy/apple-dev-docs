@@ -22,7 +22,7 @@ class MLMediaGroup
 @interface MLMediaGroup : NSObject
 ```
 
-#### Overview
+## Overview
 
 The structure of the group hierarchy is specific to each media source, but all sources have certain commonalities. For example, every source has a single root media group, which contains all groups and objects within that source. It is the highest-level parent group in the hierarchy and each of its descendant groups contains its own subgroups and their objects. All groups have a reference to their parent within the hierarchy. A group with no descendants contains only its own objects. If a media group does not contain any objects, it is not visible in the hierarchy.
 

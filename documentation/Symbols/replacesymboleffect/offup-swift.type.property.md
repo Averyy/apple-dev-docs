@@ -21,7 +21,7 @@ Returns an effect requesting the Off-Up variant of the Replace animation.
 static var offUp: ReplaceSymbolEffect { get }
 ```
 
-#### Discussion
+## Discussion
 
 The initial symbol is removed with no animation, and the new symbol scales up as it is added.
 

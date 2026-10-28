@@ -15,7 +15,7 @@ A resource object that represents a storefront, an Apple Music and iTunes Store 
 object Storefronts
 ```
 
-#### Discussion
+## Discussion
 
 For the specification of language tags, see [Language Codes](https://help.apple.com/itc/musicspec/?lang=en#/itc740f60829) in iTunes Package Music Specification.
 

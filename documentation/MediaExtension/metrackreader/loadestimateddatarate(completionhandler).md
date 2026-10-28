@@ -23,7 +23,7 @@ optional func estimatedDataRate() async throws -> Float32
 - (void) loadEstimatedDataRateWithCompletionHandler:(void (^)(Float32 estimatedDataRate, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 If this method fails, it sets `estimatedDataRate` to `0.0` and the error contains information about the failure.
 

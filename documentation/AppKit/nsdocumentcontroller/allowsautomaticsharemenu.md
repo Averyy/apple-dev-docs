@@ -19,7 +19,7 @@ var allowsAutomaticShareMenu: Bool { get }
 @property (readonly) BOOL allowsAutomaticShareMenu;
 ```
 
-#### Discussion
+## Discussion
 
 If your application has any [`NSDocument`](../nsdocument.md) subclasses with [`autosavesInPlace`](../nsdocument/autosavesinplace.md) set to `true`, the system defaults `allowsAutomaticShareMenu` to `true`. To disable the Share menu entirely, or to enable custom placement or construction of the share menu, override this property to return `false` in your app.
 

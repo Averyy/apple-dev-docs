@@ -5,7 +5,7 @@
 
 Flags that alter the display of buttons in a user notification dialog.
 
-#### Overview
+## Overview
 
 You specify these flags when you create the user notification with [`CFUserNotificationCreate(_:_:_:_:_:)`](./cfusernotificationcreate%28_,_,_,_,_%29.md).
 

@@ -18,7 +18,7 @@ A binding that makes payment methods available in apps for an Apple Account.
 struct PaymentMethodBinding
 ```
 
-#### Overview
+## Overview
 
 This functionality is available only to eligible apps with server entitlements. The initializer [`init(id:)`](./paymentmethodbinding/init%28id%29.md) throws an error if your app doesn’t have the appropriate entitlement to use this API, or if the user isn’t eligible.
 

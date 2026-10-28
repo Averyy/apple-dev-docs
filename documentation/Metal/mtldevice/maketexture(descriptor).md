@@ -29,7 +29,7 @@ func makeTexture(descriptor: MTLTextureDescriptor) -> (any MTLTexture)?
 
 - [Setting resource storage modes](../setting-resource-storage-modes.md)
 
-#### Return Value
+## Return Value
 
 A new [`MTLTexture`](../mtltexture.md) instance if the method completed successfully; otherwise `nil`.
 

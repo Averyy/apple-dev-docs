@@ -5,7 +5,7 @@
 
 Use stack views to lay out the views of your interface automatically. Use Auto Layout when you require precise placement of your views.
 
-#### Overview
+## Overview
 
 When you design your app’s interface, you position views and other interface elements in your app’s windows and size them appropriately. However, the size and position of those views may need to change at runtime for a variety of reasons:
 

@@ -25,7 +25,7 @@ func render(atTime time: CFTimeInterval, viewport: CGRect, commandBuffer: any MT
 - (void) renderAtTime:(CFTimeInterval) time viewport:(CGRect) viewport commandBuffer:(id<MTLCommandBuffer>) commandBuffer passDescriptor:(MTLRenderPassDescriptor *) renderPassDescriptor;
 ```
 
-#### Discussion
+## Discussion
 
 This method can be used only with an [`SCNRenderer`](../scnrenderer.md) object created with the [`SCNRenderer`](../scnrenderer.md) initializer. Call this method to tell SceneKit to draw the renderer’s scene into the render target described by the `renderPassDescriptor` parameter, by encoding render commands into the `commandBuffer` parameter.
 

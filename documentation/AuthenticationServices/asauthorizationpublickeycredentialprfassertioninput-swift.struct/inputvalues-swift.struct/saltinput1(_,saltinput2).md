@@ -19,7 +19,7 @@ The inputs for generating the PRF output secrets.
 static func saltInput1(_ saltInput1: Data, saltInput2: Data? = nil) -> ASAuthorizationPublicKeyCredentialPRFAssertionInput.InputValues
 ```
 
-#### Return Value
+## Return Value
 
 A configured instance of `InputValues`.
 

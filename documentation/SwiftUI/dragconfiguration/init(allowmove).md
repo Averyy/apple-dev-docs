@@ -19,7 +19,7 @@ Creates a drag configuration that can support drag-to-move in addition to drag-t
 init(allowMove: Bool)
 ```
 
-#### Discussion
+## Discussion
 
 iOS supports drag-to-move operations only within an application. On macOS, an item can be dragged to move both within the app and to other apps.
 

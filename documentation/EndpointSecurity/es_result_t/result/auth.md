@@ -14,7 +14,7 @@
 es_auth_result_t auth;
 ```
 
-#### Discussion
+## Discussion
 
 Valid authorization values to be used when responding to a es_message_t auth event
 

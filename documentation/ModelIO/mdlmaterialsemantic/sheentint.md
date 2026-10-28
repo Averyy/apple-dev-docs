@@ -24,7 +24,7 @@ case sheenTint
 MDLMaterialSemanticSheenTint
 ```
 
-#### Discussion
+## Discussion
 
 Model I/O uses this semantic for the `sheenTint` and `map_sheenTint` attributes when importing from the MTL file format (for assets in the OBJ file format).
 

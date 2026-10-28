@@ -15,7 +15,7 @@ The AirPort key `AuthPasswordEncryption`, whose value is of type `CFString`.
 extern CFStringRef const kSCPropNetAirPortAuthPasswordEncryption;
 ```
 
-#### Discussion
+## Discussion
 
 This key can be passed the following constants:
 

@@ -21,7 +21,7 @@ An object that describes the content of a Live Activity.
 
 - [Creating a widget extension](./creating-a-widget-extension.md)
 
-#### Overview
+## Overview
 
 To learn more about offering Live Activities for your app, see [ActivityKit](../ActivityKit/ActivityKit.md).
 

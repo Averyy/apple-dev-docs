@@ -21,7 +21,7 @@ The language code for this document.
 var languageCode: String?
 ```
 
-#### Discussion
+## Discussion
 
 This value is a [BCP-47](https://tools.ietf.org/search/bcp47) language code. If not `nil`, the string applies the [`languageIdentifier`](../../nsattributedstring/key/languageidentifier.md) attribute to any range in the returned string that doesn’t otherwise specify a language attribute. The default is `nil`, which applies no attributes.
 

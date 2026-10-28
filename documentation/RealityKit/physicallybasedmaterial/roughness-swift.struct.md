@@ -20,7 +20,7 @@ An object that defines the roughness of an entity’s surface.
 struct Roughness
 ```
 
-#### Overview
+## Overview
 
 Use this struct to specify the roughness of the entity. The `roughness` property represents how much the surface of the entity scatters light that it reflects. A material with a high roughness has a matte appearance, whereas one with a low roughness has a shiny appearance.
 

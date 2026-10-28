@@ -21,7 +21,7 @@ Whether a node with the given definition can be used in this stage.
 func canAddNode(with definition: ComputeNodeGraph.NodeDefinition) -> Bool
 ```
 
-#### Discussion
+## Discussion
 
 Use as a preflight check — for example, to enable a “drop here” target in a node-graph editor, or to filter a library down to definitions valid for a particular stage.
 

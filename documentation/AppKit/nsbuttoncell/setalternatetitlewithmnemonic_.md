@@ -15,7 +15,7 @@ Sets the title the button displays when it’s in its alternate state to the giv
 - (void) setAlternateTitleWithMnemonic:(NSString *) stringWithAmpersand;
 ```
 
-#### Discussion
+## Discussion
 
 Mnemonics are not supported in macOS.
 

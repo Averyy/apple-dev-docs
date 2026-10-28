@@ -10,9 +10,9 @@ framework: "swift-configuration/Configuration"
 
 Check out some techniques to debug unexpected issues and to increase visibility into accessed config values.
 
-#### Overview
+## Overview
 
-##### Debugging configuration issues
+### Debugging configuration issues
 
 If you can’t read your configuration values correctly, check:
 
@@ -22,11 +22,11 @@ If you can’t read your configuration values correctly, check:
 
 For guidance on selecting the right configuration access patterns and reader methods, check out [Choosing the access pattern](./choosing-access-patterns.md) and [Choosing reader methods](./choosing-reader-methods.md).
 
-##### Access reporting
+### Access reporting
 
 Configuration access reporting can help you debug issues and understand which configuration values your application is using. Swift Configuration provides two built-in ways to log access ([`AccessLogger`](./accesslogger.md) and [`FileAccessLogger`](./fileaccesslogger.md)), and you can also implement your own [`AccessReporter`](./accessreporter.md).
 
-###### Using AccessLogger
+#### Using AccessLogger
 
 [`AccessLogger`](./accesslogger.md) integrates with Swift Log and records all configuration accesses:
 
@@ -48,7 +48,7 @@ This produces log entries showing:
 - The location of the code reading the config value.
 - The timestamp of the access.
 
-###### Using FileAccessLogger
+#### Using FileAccessLogger
 
 For writing access events to a file, especially useful during ad-hoc debugging, use [`FileAccessLogger`](./fileaccesslogger.md):
 
@@ -72,9 +72,9 @@ And then read from the file to see one line per config access:
 tail -f /var/log/myapp/config-access.log
 ```
 
-##### Error handling
+### Error handling
 
-###### Provider errors
+#### Provider errors
 
 If any provider throws an error during lookup:
 
@@ -83,7 +83,7 @@ If any provider throws an error during lookup:
 
 > 💡 **Tip**: Even when an error gets handled gracefully, you can log it using an [`AccessReporter`](./accessreporter.md).
 
-###### Missing values
+#### Missing values
 
 When no provider has the requested value:
 
@@ -91,7 +91,7 @@ When no provider has the requested value:
 - **Methods without defaults**: Return `nil`.
 - **Required methods**: Throw an error.
 
-###### File not found errors
+#### File not found errors
 
 File-based providers ([`FileProvider`](./fileprovider.md), [`ReloadingFileProvider`](./reloadingfileprovider.md), [`DirectoryFilesProvider`](./directoryfilesprovider.md), [`EnvironmentVariablesProvider`](./environmentvariablesprovider.md) with file path) can throw “file not found” errors when expected configuration files don’t exist.
 
@@ -133,9 +133,9 @@ let provider = try await ReloadingFileProvider<JSONSnapshot>(
 
 > ❗ **Important**: The `allowMissing` parameter only affects missing files or directories. Files with syntax errors (invalid JSON, YAML, and so on) will still throw parsing errors.
 
-##### Reloading provider troubleshooting
+### Reloading provider troubleshooting
 
-###### Configuration not updating
+#### Configuration not updating
 
 If your reloading provider isn’t detecting file changes:
 
@@ -144,7 +144,7 @@ If your reloading provider isn’t detecting file changes:
 3. **Verify file path**: Confirm the file path is correct, the file exists, and file permissions are correct.
 4. **Check poll interval**: Consider if your poll interval is appropriate for your use case.
 
-###### ServiceGroup integration issues
+#### ServiceGroup integration issues
 
 Common ServiceGroup problems:
 

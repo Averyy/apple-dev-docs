@@ -19,7 +19,7 @@ var adjustVoiceEnabled: SRHeadphoneSettings.SettingEnablement { get }
 @property (nonatomic, assign, readonly) SRHeadphoneSettingsSettingEnablement adjustVoiceEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 Setting to enable audio adjustments to phone calls.
 

@@ -19,11 +19,11 @@ func SSRandomPointForSizeWithinRect(_ size: NSSize, _ rect: NSRect) -> NSPoint
 static NSPoint SSRandomPointForSizeWithinRect(NSSize size, NSRect rect);
 ```
 
-#### Return Value
+## Return Value
 
 A random point within `rect`, constrained within `(rect.size - size)` from `rect`’s origin.
 
-#### Discussion
+## Discussion
 
 The Screen Saver framework automatically seeds the `random()` C function to generate the point.
 

@@ -25,7 +25,7 @@ final var identities: [AppExtensionIdentity] { get }
 
 - [Discovering app extensions from your app](../../discovering-app-extensions-from-your-app.md)
 
-#### Discussion
+## Discussion
 
 Use this property to get an array of currently available app extensions your host app can use. This array contains entries for all of the monitored extension points. To find out if additional app extensions are present, but not yet enabled, get the value in the [`state`](./state-swift.property.md) property instead.
 

@@ -14,7 +14,7 @@
 typedef enum tIOPCIDeviceResetOptions : unsigned int { ... } tIOPCIDeviceResetOptions;
 ```
 
-#### Overview
+## Overview
 
 ```
         any attached client drivers. Devices with reset-initiated personality changes should use this option.

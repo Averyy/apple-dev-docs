@@ -19,7 +19,7 @@ func performFindPanelAction(_ sender: Any?)
 - (void) performFindPanelAction:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 This is the generic action method for the find menu and find panel, and can be overridden to implement a custom find panel.
 

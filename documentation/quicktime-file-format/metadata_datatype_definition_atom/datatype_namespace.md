@@ -6,7 +6,7 @@
 
 A 32-bit identifier describing how to interpret the data type for the value.
 
-#### Overview
+## Overview
 
 New namespace types should be registered with Apple.
 

@@ -24,7 +24,7 @@ convenience init(model: VNCoreMLModel)
 - (instancetype) initWithModel:(VNCoreMLModel *) model;
 ```
 
-#### Discussion
+## Discussion
 
 Initialization can fail if the [Core ML](../../CoreML/CoreML.md) model you provide isn’t supported in Vision, such as if the model doesn’t accept an image as input.
 

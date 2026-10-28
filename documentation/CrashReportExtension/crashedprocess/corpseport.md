@@ -20,7 +20,7 @@ A property that provides a Mach port to the crashed process.
 final var corpsePort: mach_port_t { get }
 ```
 
-#### Discussion
+## Discussion
 
 The corpse port is a read-only task port for a process that terminated but is still available for inspecting state and data. Send Mach IPC interface commands over this port to find leaks, symbolicate backtraces, and more. For example, call `task_threads` to enumerate threads, and call `mach_vm_read` to read memory from the process.
 

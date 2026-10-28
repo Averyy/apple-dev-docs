@@ -25,11 +25,11 @@ func CMBufferQueueInstallTriggerWithIntegerThreshold(_ queue: CMBufferQueue, cal
 extern OSStatus CMBufferQueueInstallTriggerWithIntegerThreshold(CMBufferQueueRef queue, CMBufferQueueTriggerCallback callback, void *refcon, CMBufferQueueTriggerCondition condition, CMItemCount threshold, CMBufferQueueTriggerToken*triggerTokenOut);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See `Result Codes`
 
-#### Discussion
+## Discussion
 
 This function behaves the same way as [`CMBufferQueueInstallTrigger(_:callback:refcon:condition:time:triggerTokenOut:)`](./cmbufferqueueinstalltrigger%28_,callback,refcon,condition,time,triggertokenout%29.md) except the trigger is evaluated against the integer value rather than the time value.
 

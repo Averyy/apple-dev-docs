@@ -24,7 +24,7 @@ let PHASEAssetErrorDomain: String
 extern NSErrorDomain const PHASEAssetErrorDomain;
 ```
 
-#### Discussion
+## Discussion
 
 For more information on Core Foundation error domains, see [Error domains](../CoreFoundation/error-domains.md).
 

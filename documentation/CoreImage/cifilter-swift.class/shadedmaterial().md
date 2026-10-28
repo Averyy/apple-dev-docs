@@ -24,11 +24,11 @@ class func shadedMaterial() -> any CIFilter & CIShadedMaterial
 + (CIFilter<CIShadedMaterial> *) shadedMaterialFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies the shaded material filter to an image. The effect produces a shaded image from a height-field image. Areas of the height field image that have a darker shaded area produce a stronger effect. You can combine the filter with [`CIHeightFieldFromMask`](../ciheightfieldfrommask.md) to produce quick shadings of masks, such as text.
 

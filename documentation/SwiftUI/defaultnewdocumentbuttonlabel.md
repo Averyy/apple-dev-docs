@@ -20,7 +20,7 @@ The default label used for a new document button.
 @preconcurrency struct DefaultNewDocumentButtonLabel
 ```
 
-#### Overview
+## Overview
 
 You don’t use this type directly. Instead, [`NewDocumentButton`](./newdocumentbutton.md) uses it automatically depending on how you create a button.
 

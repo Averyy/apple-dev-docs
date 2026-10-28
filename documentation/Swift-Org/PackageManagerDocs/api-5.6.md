@@ -8,13 +8,13 @@ framework: "Swift-Org/PackageManagerDocs"
 **Framework**: Swift-Org/PackageManagerDocs  
 **Role**: Article
 
-##### Package Plugins
+### Package Plugins
 
 [SE-0303](https://github.com/swiftlang/swift-evolution/blob/main/proposals/0303-swiftpm-extensible-build-tools.md) Introduces the ability to define build tool plugins in SwiftPM, allowing custom tools to be automatically invoked during a build. Build tool plugins are focused on code generation during the build of a package, for such purposes as generating Swift source files from .proto files or from other inputs, in order to allow build tools to be incorporated into the build graph and to run automatically in a safe manner.
 
 [SE-0332](https://github.com/swiftlang/swift-evolution/blob/main/proposals/0332-swiftpm-command-plugins.md) Extends SwiftPM plugin support first introduced with SE-0303 to allow the definition of custom command plugins — plugins that users can invoke directly from the SwiftPM CLI, or from an IDE that supports Swift Packages, in order to perform custom actions on their packages. A command plugin specifies the semantic intent of the command — this might be one of the predefined intents such “documentation generation” or “source code formatting”, or it might be a custom intent with a specialized verb that can be passed to the swift package command.
 
-##### Manifest API Improvements
+### Manifest API Improvements
 
 Semantic version dependencies can now be resolved against Git tag names that contain only major and minor version identifiers. A tag with the form `X.Y` will be treated as `X.Y.0`. This improves compatibility with existing repositories.
 
@@ -30,7 +30,7 @@ Dependency requirement enum calling convention is deprecated in favour of labele
 - `.package(url: String, .revision(String)) -> .package(url: String, revision: String)`
 - `.package(url: String, .exact(Version)) -> .package(url: String, exact: Version)`
 
-##### Other Improvements
+### Other Improvements
 
 Location of configuration files (including mirror file) have changed to accommodate new features that require more robust configuration directories structure, such as SE-0292:
 

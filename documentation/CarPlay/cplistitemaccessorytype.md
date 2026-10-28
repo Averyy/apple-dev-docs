@@ -21,7 +21,7 @@ enum CPListItemAccessoryType
 enum CPListItemAccessoryType : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Use these constants to set the value of a list item’s [`accessoryType`](./cplistitem/accessorytype.md) property. An accessory can provide additional context for a list item’s contents, or help communicate its behavior.
 

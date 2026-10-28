@@ -19,7 +19,7 @@ func alignment() -> NSTextAlignment
 - (NSTextAlignment) alignment;
 ```
 
-#### Return Value
+## Return Value
 
 The horizontal alignment of text within the bounds of the annotation. Supported values are `NSLeftTextAlignment`, `NSRightTextAlignment`, and `NSCenterTextAlignment`.
 

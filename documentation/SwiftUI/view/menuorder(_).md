@@ -26,11 +26,11 @@ func menuOrder(_ order: MenuOrder) -> some View
 
 - [Populating SwiftUI menus with adaptive controls](../populating-swiftui-menus-with-adaptive-controls.md)
 
-#### Return Value
+## Return Value
 
 A view that uses the specified menu ordering strategy.
 
-#### Discussion
+## Discussion
 
 Use this modifier to override the default menu order. On supported platforms, [`priority`](../menuorder/priority.md) order keeps the first items closer to the user’s point of interaction, whereas [`fixed`](../menuorder/fixed.md) order always orders items from top to bottom.
 

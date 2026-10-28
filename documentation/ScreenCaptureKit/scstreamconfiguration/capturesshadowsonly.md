@@ -20,7 +20,7 @@ var capturesShadowsOnly: Bool { get set }
 @property (nonatomic, assign) BOOL capturesShadowsOnly;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `false`.
 

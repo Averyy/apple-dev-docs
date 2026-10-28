@@ -23,7 +23,7 @@ var action: Selector? { get set }
 @property (nonatomic, assign, readwrite, nullable) SEL action;
 ```
 
-#### Discussion
+## Discussion
 
 If the value of this property is `nil`, no action message is sent. The default value is `nil`.
 

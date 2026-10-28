@@ -21,7 +21,7 @@ Creates a new tag category instance with defined mappings between a raw and type
 init(rawCategory: CMTypedTag<TypedValue>.RawCategory, valueForTagValue: @escaping @Sendable (CMTag.Value) -> TypedValue?, tagValueForValue: @escaping @Sendable (TypedValue) -> CMTag.Value)
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  To ensure that your category is valid, use an existing static category listed in [Creating Typed Categories](../category-swift.struct.md#Creating-Typed-Categories) rather than creating an instance yourself.
 

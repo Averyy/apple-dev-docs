@@ -15,7 +15,7 @@ Creates a new universal procedure pointer (UPP) to a text-donecallback function.
 SpeechTextDoneUPP NewSpeechTextDoneUPP(SpeechTextDoneProcPtr userRoutine);
 ```
 
-#### Return Value
+## Return Value
 
 A UPP to the text-donecallback function. See the description of the `SpeechTextDoneUPP` data type.
 

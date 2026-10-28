@@ -31,7 +31,7 @@ string RecommendationFilterOperator
 - `ENDS_WITH`: String suffix match. The field value must end with the filter value.
 - `LIKE`: Pattern match. Supports `%` as a wildcard character.
 
-#### Discussion
+## Discussion
 
 Use these operators in the `operator` field of a [`FilterCondition`](./recommendationfiltercondition.md). Not all operators are valid for all field types. Applying an incompatible operator returns a 400 error with a validation detail identifying the invalid condition.
 

@@ -25,7 +25,7 @@ static var serverUnavailable: DCError.Code { get }
 
 - [Establishing your app’s integrity](../establishing-your-app-s-integrity.md)
 
-#### Discussion
+## Discussion
 
 You receive this error when you call [`attestKey(_:clientDataHash:completionHandler:)`](../dcappattestservice/attestkey%28_,clientdatahash,completionhandler%29.md) and the framework isn’t able to complete the attestation. If you receive this error, try the attestation again later using the same key and the same value for the `clientDataHash` parameter. Retrying with the same inputs helps to preserve the risk metric for a given device.
 

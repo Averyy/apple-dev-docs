@@ -29,7 +29,7 @@ func beginSession() async throws -> Bool
 - (void) beginSessionWithReply:(void (^)(BOOL success, NSError *error)) reply;
 ```
 
-#### Discussion
+## Discussion
 
 This method will fail if there is already an existing session for the Smart Card.
 

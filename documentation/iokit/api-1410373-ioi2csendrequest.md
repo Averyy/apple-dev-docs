@@ -16,11 +16,11 @@ Carries out the I2C transaction specified by an IOI2CRequest structure.
 IOReturn IOI2CSendRequest(IOI2CConnectRef connect, IOOptionBits options, IOI2CRequest *request);
 ```
 
-#### Return Value
+## Return Value
 
 An IOReturn code reflecting only the result of starting the transaction. If the result of IOI2CSendRequest() is kIOReturnSuccess, the I2C transaction result is returned in the result field of the request structure.
 
-#### Discussion
+## Discussion
 
 Frees the resources associated with an IOI2CConnectRef.
 

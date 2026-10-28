@@ -29,11 +29,11 @@ SecCertificateRefSecCertificateCreateWithData(CFAllocatorRef allocator, CFDataRe
 
 - [Storing a DER-Encoded X.509 Certificate](./storing-a-der-encoded-x-509-certificate.md)
 
-#### Return Value
+## Return Value
 
 The newly created certificate object. In Objective-C, call the [`CFRelease`](../CoreFoundation/cfrelease.md) function to release this object when you are finished with it. Returns `nil` if the data passed in the `data` parameter is not a valid DER-encoded X.509 certificate.
 
-#### Discussion
+## Discussion
 
 The certificate object returned by this function is used as input to other functions in the API.
 

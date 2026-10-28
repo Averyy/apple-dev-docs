@@ -20,7 +20,7 @@ The current repeat mode of the music player.
 var repeatMode: MusicPlayer.RepeatMode? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to `nil`.
 

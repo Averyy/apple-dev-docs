@@ -21,7 +21,7 @@ Mastering display color volume of the image.
 static var masteringDisplayColorVolume: CVAttachmentKeyDefinition<Self.ShouldPropagate, Data> { get }
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is a 44 byte big-endian data sequence to match the payload of ISO/IEC 23008-2:2015(E), D.2.28 mastering display color volume in the supplemental enhancement information (SEI) message.
 

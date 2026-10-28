@@ -21,11 +21,11 @@ func SecKeychainItemDelete(_ itemRef: SecKeychainItem) -> OSStatus
 OSStatus SecKeychainItemDelete(SecKeychainItemRef itemRef);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 If the keychain item has not previously been added to the keychain, this function does nothing and returns `noErr`.
 

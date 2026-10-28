@@ -20,7 +20,7 @@ Creates a rate map descriptor with a single rate layer.
 + (MTLRasterizationRateMapDescriptor *) rasterizationRateMapDescriptorWithScreenSize:(MTLSize) screenSize layer:(MTLRasterizationRateLayerDescriptor *) layer;
 ```
 
-#### Return Value
+## Return Value
 
 A descriptor object whose [`screenSize`](./screensize.md) is set to the provided size. Layer 0 in the rate map is set to the provided layer descriptor.
 

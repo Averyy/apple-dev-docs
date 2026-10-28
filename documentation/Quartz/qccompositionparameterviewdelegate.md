@@ -4,7 +4,7 @@
 
 A protocol for composition parameter view’s delegate.
 
-#### Overview
+## Overview
 
 This informal protocol allows your application to define which parameters should be visible in a [`QCCompositionParameterView`](./qccompositionparameterview.md) object.
 

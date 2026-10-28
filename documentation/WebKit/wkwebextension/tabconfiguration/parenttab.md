@@ -23,7 +23,7 @@ var parentTab: (any WKWebExtensionTab)? { get }
 @property (nonatomic, strong, readonly, nullable) id<WKWebExtensionTab> parentTab;
 ```
 
-#### Discussion
+## Discussion
 
 If this property is `nil`, no parent tab was specified.
 

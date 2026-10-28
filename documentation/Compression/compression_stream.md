@@ -25,7 +25,7 @@ struct compression_stream
 typedef struct { ... } compression_stream;
 ```
 
-#### Overview
+## Overview
 
 The basic workflow for using the stream interface is as follows:
 

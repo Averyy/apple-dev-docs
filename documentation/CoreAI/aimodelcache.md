@@ -23,7 +23,7 @@ final class AIModelCache
 
 - [Managing model specialization and caching](./managing-model-specialization-and-caching.md)
 
-#### Overview
+## Overview
 
 The cache holds the optimized, device-specific artifacts that [`AIModel`](./aimodel.md) loads to execute its inference functions. Each cache entry contains a specialized asset formed from a specific `.aimodel` or `.aimodelc` and [`SpecializationOptions`](./specializationoptions.md) combination.
 

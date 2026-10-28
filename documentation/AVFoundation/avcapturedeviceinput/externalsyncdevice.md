@@ -23,7 +23,7 @@ var externalSyncDevice: AVExternalSyncDevice? { get }
 @property (nonatomic, readonly, nullable) AVExternalSyncDevice * externalSyncDevice;
 ```
 
-#### Discussion
+## Discussion
 
 This readonly property returns the [`AVExternalSyncDevice`](../avexternalsyncdevice.md) instance you provided in [`follow(_:videoFrameDuration:delegate:)`](./follow%28_,videoframeduration,delegate%29.md). This property returns `nil` when an external sync device is disconnected or fails to calibrate.
 

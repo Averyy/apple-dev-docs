@@ -23,7 +23,7 @@ optional func device(_ device: ICDevice, didReceiveStatusInformation status: [IC
 - (void) device:(ICDevice *) device didReceiveStatusInformation:(NSDictionary<NSString *,id> *) status;
 ```
 
-#### Discussion
+## Discussion
 
 The ‘status’ dictionary contains two keys, ICStatusNotificationKey and ICLocalizedStatusNotificationKey, which are defined above.  Status information keys are located in their respective ICDevice type class header.
 

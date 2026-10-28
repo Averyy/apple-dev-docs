@@ -22,11 +22,11 @@ convenience init(acceptableTypeIdentifiers: [String])
 - (instancetype) initWithAcceptableTypeIdentifiers:(NSArray<NSString *> *) acceptableTypeIdentifiers;
 ```
 
-#### Return Value
+## Return Value
 
 A paste configuration that is initialized with the specified UTI strings.
 
-#### Discussion
+## Discussion
 
 Specify the acceptable UTIs in descending order of fidelity. The UTI that provides the richest data representation should be first in the list. For instance, if the data to paste is contact information, list the vCard UTI first, followed by the plain text UTI.
 

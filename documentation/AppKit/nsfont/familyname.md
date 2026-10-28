@@ -19,7 +19,7 @@ var familyName: String? { get }
 @property (copy, readonly, nullable) NSString * familyName;
 ```
 
-#### Discussion
+## Discussion
 
 This name is the one that `NSFontManager` uses and may differ slightly from the AFM name.
 

@@ -17,7 +17,7 @@ Sets the current pathname in the panel’s browser.
 - (void) setDirectory:(NSString *) path;
 ```
 
-#### Discussion
+## Discussion
 
 The `path` argument must be an absolute pathname.
 

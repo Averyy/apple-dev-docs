@@ -19,7 +19,7 @@ func setDelegate(_ delegate: Any!)
 - (void) setDelegate:(id) delegate;
 ```
 
-#### Discussion
+## Discussion
 
 If you want to be notified of state changes (for example, when the user clicks the button), set a delegate and implement the delegate methods described in the delegate methods section.
 

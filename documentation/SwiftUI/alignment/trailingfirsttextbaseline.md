@@ -22,7 +22,7 @@ A guide that marks the trailing edge and top-most text baseline in a view.
 static var trailingFirstTextBaseline: Alignment { get }
 ```
 
-#### Discussion
+## Discussion
 
 This alignment combines the [`trailing`](../horizontalalignment/trailing.md) horizontal guide and the [`firstTextBaseline`](../verticalalignment/firsttextbaseline.md) vertical guide:
 

@@ -29,7 +29,7 @@ SCNWrapModeClampToBorder
 
 - [SCNClampToBorder](../scnclamptoborder.md)
 
-#### Discussion
+## Discussion
 
 Texture sampling in areas whose texture coordinates would fall outside this range uses the [`borderColor`](../scnmaterialproperty/bordercolor.md) property instead of texel colors from the texture image.
 

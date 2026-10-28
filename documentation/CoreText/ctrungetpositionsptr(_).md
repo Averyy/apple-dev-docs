@@ -25,11 +25,11 @@ func CTRunGetPositionsPtr(_ run: CTRun) -> UnsafePointer<CGPoint>?
 extern const CGPoint *CTRunGetPositionsPtr(CTRunRef run);
 ```
 
-#### Return Value
+## Return Value
 
 A valid pointer to an array of [`CGPoint`](../CoreFoundation/cgpoint.md) structures, or `NULL`.
 
-#### Discussion
+## Discussion
 
 The glyph positions in a run are relative to the origin of the line containing the run. The position array will have a length equal to the value returned by [`CTRunGetGlyphCount(_:)`](./ctrungetglyphcount%28_%29.md). The caller should be prepared for this function to return `NULL` even if there are glyphs in the stream. If this function returns `NULL`, the caller must allocate its own buffer and call [`CTRunGetPositions(_:_:_:)`](./ctrungetpositions%28_,_,_%29.md) to fetch the glyph positions.
 

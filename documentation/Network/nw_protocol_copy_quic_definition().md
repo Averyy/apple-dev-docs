@@ -25,7 +25,7 @@ func nw_protocol_copy_quic_definition() -> nw_protocol_definition_t
 nw_protocol_definition_tnw_protocol_copy_quic_definition();
 ```
 
-#### Return Value
+## Return Value
 
 The system definition of the QUIC transport protocol.
 

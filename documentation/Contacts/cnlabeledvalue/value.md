@@ -33,7 +33,7 @@ var value: ValueType { get }
 @property (atomic, copy, readonly) ValueType value;
 ```
 
-#### Discussion
+## Discussion
 
 A contact property value, such as [`CNPhoneNumber`](../cnphonenumber.md) for a phone number, NSString for an email address, and so on. For valid values, see [`CNContact`](../cncontact.md) properties that are arrays of labeled value objects.
 

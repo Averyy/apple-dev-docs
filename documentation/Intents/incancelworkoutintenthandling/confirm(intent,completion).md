@@ -27,7 +27,7 @@ optional func confirm(intent: INCancelWorkoutIntent) async -> INCancelWorkoutInt
 - (void) confirmCancelWorkout:(INCancelWorkoutIntent *) intent completion:(void (^)(INCancelWorkoutIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This method validates that your app is currently able to cancel the user’s workout. For example, verify that a workout is currently in progress and you can cancel it.
 

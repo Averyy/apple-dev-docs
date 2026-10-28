@@ -13,7 +13,7 @@ IOReturn ( *AddToRunLoop)(
    CFRunLoopRef runLoop );
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if the source was successfully added to the run loop.
 

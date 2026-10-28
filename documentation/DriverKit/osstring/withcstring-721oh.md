@@ -18,7 +18,7 @@ Allocates an OSString object with a copy of a c-string, up to a given length.
 static OSStringPtr withCString(const char *cString, size_t length);
 ```
 
-#### Return Value
+## Return Value
 
 NULL on failure, otherwise the allocated OSString with reference count 1 to be released by the caller.
 

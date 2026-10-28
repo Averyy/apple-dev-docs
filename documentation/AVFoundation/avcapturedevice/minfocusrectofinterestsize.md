@@ -23,7 +23,7 @@ var minFocusRectOfInterestSize: CGSize { get }
 @property (nonatomic, readonly) CGSize minFocusRectOfInterestSize;
 ```
 
-#### Discussion
+## Discussion
 
 The size returned is in normalized coordinates, and depends on the current [`activeFormat`](./activeformat.md). If [`isFocusRectOfInterestSupported`](./isfocusrectofinterestsupported.md) returns `false`, this property returns { 0, 0 }.
 

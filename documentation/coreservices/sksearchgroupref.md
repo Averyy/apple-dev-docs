@@ -16,7 +16,7 @@ Deprecated. Use asynchronous searching with SKSearchCreate instead, which does n
 typedef struct __SKSearchGroup *SKSearchGroupRef;
 ```
 
-#### Discussion
+## Discussion
 
 Defines an opaque data type representing a search group.
 

@@ -13,11 +13,11 @@
 ifaddr_t ifaddr_withnet(const struct sockaddr *net);
 ```
 
-#### Return Value
+## Return Value
 
 A reference to the interface address.
 
-#### Discussion
+## Discussion
 
 Returns an interface address for the interface with the network described by net. Increments the reference count on the ifaddr before returning to the caller. Caller is responsible for calling ifaddr_release.
 

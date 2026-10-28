@@ -21,7 +21,7 @@ Returns the final component of the path. Returns `nil` if the path is empty or o
 var lastComponent: FilePath.Component? { get }
 ```
 
-#### Discussion
+## Discussion
 
 Note: Even if the final component is a special directory (`.` or `..`), it will still be returned. See `lexicallyNormalize()`.
 

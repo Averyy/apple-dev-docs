@@ -23,17 +23,17 @@ func withUnsafeMutableBufferPointer<R>(_ body: (inout UnsafeMutableBufferPointer
 
 Available when `Format` conforms to `StaticPixelFormat`.
 
-#### Return Value
+## Return Value
 
 The return value, if any, of the body closure parameter.
 
-#### Discussion
+## Discussion
 
 You can use this function to simplify interoperation with other libraries and frameworks.
 
 > **Note**:  The contiguous storage may include space outside of the buffer’s width that doesn’t contain image information. The storage contains `rowStride * channelCount * height` elements.
 
-##### Add Text to a Pixel Buffer
+### Add Text to a Pixel Buffer
 
 The following code creates a [`CGContext`](../../../CoreGraphics/cgcontext.md) instance from the pointer to the buffer’s storage. The code renders a gray rectangle over the image and draws text inside the rectangle by calling [`CTLineDraw(_:_:)`](../../../CoreText/ctlinedraw%28_,_%29.md):
 
@@ -97,7 +97,7 @@ On return, the buffer contains the original image with a text overlay.
 
 ![A photograph of twigs and branches with the text vImage Pixel Buffer added to the bottom left corner.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3978480@2x.png)
 
-##### Fill a Pixel Buffer with Random Values
+### Fill a Pixel Buffer with Random Values
 
 The following code uses Accelerate’s [`BNNS`](../../bnns.md) library to fill a pixel buffer with random values:
 

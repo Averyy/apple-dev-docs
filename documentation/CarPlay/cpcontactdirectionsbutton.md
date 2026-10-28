@@ -21,7 +21,7 @@ class CPContactDirectionsButton
 @interface CPContactDirectionsButton : CPButton
 ```
 
-#### Overview
+## Overview
 
 Use this button to get directions to the location of the template’s contact.
 

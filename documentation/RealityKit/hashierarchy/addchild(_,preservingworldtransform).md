@@ -21,7 +21,7 @@ Adds the given entity to the collection of child entities.
 @preconcurrency func addChild(_ entity: Entity, preservingWorldTransform: Bool = false)
 ```
 
-#### Discussion
+## Discussion
 
 See the [`HasHierarchy`](../hashierarchy.md) protocol’s definition of [`addChild(_:preservingWorldTransform:)`](./addchild%28_,preservingworldtransform%29.md) for more information.
 

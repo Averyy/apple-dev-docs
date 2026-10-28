@@ -19,7 +19,7 @@ func setFrame(_ frameRect: NSRect, display flag: Bool)
 - (void) setFrame:(NSRect) frameRect display:(BOOL) flag;
 ```
 
-#### Discussion
+## Discussion
 
 Note that the window server limits window position coordinates to ±16,000 and sizes to 10,000.
 

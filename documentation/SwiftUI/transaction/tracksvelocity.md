@@ -21,7 +21,7 @@ Whether this transaction will track the velocity of any animatable properties th
 var tracksVelocity: Bool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This property can be enabled in an interactive context to track velocity during a user interaction so that when the interaction ends, an animation can use the accumulated velocities to create animations that preserve them. This tracking is mutually exclusive with an animation being used during a view change, since if there is an animation, it is responsible for managing its own velocity.
 

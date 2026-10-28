@@ -15,7 +15,7 @@ The interface implemented by URL handle clients.
 @protocol NSURLHandleClient
 ```
 
-#### Overview
+## Overview
 
 [`NSURLHandleClient`](./nsurlhandleclient.md) is deprecated in macOS 10.4 and later. Applications that are intended for deployment in macOS 10.3 or later should use [`NSURLConnection`](./nsurlconnection.md) or [`NSURLDownload`](./nsurldownload.md) instead; see [URL Loading System](./url-loading-system.md).
 

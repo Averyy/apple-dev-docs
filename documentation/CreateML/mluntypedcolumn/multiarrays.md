@@ -20,11 +20,11 @@ A cloned data column of machine learning multi-arrays.
 var multiArrays: MLDataColumn<MLDataValue.MultiArrayType>? { get }
 ```
 
-#### Return Value
+## Return Value
 
 A new data column if the underlying type of the column is [`MLDataValue.MultiArrayType`](../mldatavalue/multiarraytype.md); otherwise `nil`.
 
-#### Discussion
+## Discussion
 
 This property is functionally equivalent to passing [`MLDataValue.MultiArrayType`](../mldatavalue/multiarraytype.md) `.self` to [`column(type:)`](./column%28type%29.md). Typically you ensure [`type`](./type.md) is equal to [`MLDataValue.ValueType.multiArray`](../mldatavalue/valuetype/multiarray.md) before getting this property.
 

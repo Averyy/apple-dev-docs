@@ -23,7 +23,7 @@ case byCharWrapping
 kCTLineBreakByCharWrapping
 ```
 
-#### Discussion
+## Discussion
 
 Wrapping occurs before the first character that doesn’t fit.
 

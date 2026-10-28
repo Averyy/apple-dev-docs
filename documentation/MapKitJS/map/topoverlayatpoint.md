@@ -15,11 +15,11 @@ Returns the topmost overlay at a given point on the webpage.
 topOverlayAtPoint(point: DOMPoint): Overlay | null;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the topmost overlay or `null`.
 
-#### Discussion
+## Discussion
 
 If there are multiple overlays at a point, MapKit JS returns the overlay closest to the foreground. If the user selects an overlay, MapKit JS draws user-selected overlays on top of all other overlays. So when a user selects an overlay, MapKit JS returns that overlay.
 

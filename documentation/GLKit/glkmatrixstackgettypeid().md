@@ -22,7 +22,7 @@ func GLKMatrixStackGetTypeID() -> CFTypeID
 CFTypeID GLKMatrixStackGetTypeID();
 ```
 
-#### Return Value
+## Return Value
 
 A Core Foundation Type.
 

@@ -18,7 +18,7 @@ The text provider for the second row of body text.
 final var body2TextProvider: CLKTextProvider?
 ```
 
-#### Discussion
+## Discussion
 
 The template supports multicolored text from this text provider.
 

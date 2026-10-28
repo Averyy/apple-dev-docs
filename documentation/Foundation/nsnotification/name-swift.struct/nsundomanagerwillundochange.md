@@ -25,7 +25,7 @@ static let NSUndoManagerWillUndoChange: NSNotification.Name
 extern NSNotificationName const NSUndoManagerWillUndoChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 If you invoke [`undo()`](../../undomanager/undo%28%29.md) or [`undoNestedGroup()`](../../undomanager/undonestedgroup%28%29.md), this notification is posted. The notification object is the [`UndoManager`](../../undomanager.md) object. This notification doesn’t contain a `userInfo` dictionary.
 

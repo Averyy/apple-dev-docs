@@ -21,7 +21,7 @@ Creates a custom format style representing the fractional seconds component of a
 static func fractional(_ val: Int) -> Date.FormatStyle.Symbol.SecondFraction
 ```
 
-#### Return Value
+## Return Value
 
 Returns the numerical representation of the fractional component of the second.
 

@@ -21,7 +21,7 @@ Returns an `NSInvocation` object able to construct messages using a given method
 + (NSInvocation *) invocationWithMethodSignature:(NSMethodSignature *) sig;
 ```
 
-#### Discussion
+## Discussion
 
 The new object must have its selector set with [`NSInvocation`](../nsinvocation.md) and its arguments set with [`setArgument:atIndex:`](./setargument_atindex_.md) before it can be invoked. Do not use the [`alloc`](../../ObjectiveC/nsobject-swift.class/alloc.md)/[`init()`](../../ObjectiveC/nsobject-swift.class/init%28%29.md) approach to create `NSInvocation` objects.
 

@@ -27,7 +27,7 @@ class func metadataForPersistentStore(ofType storeType: String, at url: URL, opt
 + (NSDictionary<NSString *,id> *) metadataForPersistentStoreOfType:(NSString *) storeType URL:(NSURL *) url options:(NSDictionary *) options error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary that contains, at a minimum, values for the [`NSStoreTypeKey`](../nsstoretypekey.md) and [`NSStoreUUIDKey`](../nsstoreuuidkey.md) keys.
 

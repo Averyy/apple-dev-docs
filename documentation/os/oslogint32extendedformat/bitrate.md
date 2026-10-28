@@ -21,7 +21,7 @@ A format that displays a 32-bit integer as a bit rate.
 case bitrate
 ```
 
-#### Discussion
+## Discussion
 
 Use this option to format the interpolated value as a bit rate, such as `100 kbps`. The following example applies the `bitrate` formatter to the 32-bit integer value `100_000`:
 

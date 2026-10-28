@@ -5,7 +5,7 @@
 
 Balance audio quality against CPU, memory, and power cost when configuring playback.
 
-#### Overview
+## Overview
 
 Reality Composer Pro makes it easy to drop a sound into a scene, but the defaults behind that convenience carry real performance costs. Whether an asset streams or preloads, which playback component it uses, and the property values left at their defaults all affect CPU load, memory footprint, and power consumption — costs that aren’t obvious from the Inspector alone. Left unexamined, a scene can end up spending its audio budget on the wrong tradeoffs: high memory use for sounds that didn’t need it, ongoing decode work on the audio thread for assets that could have preloaded once, or full spatialization cost for sounds that only needed a fixed stereo mix.
 
@@ -13,7 +13,7 @@ Reality Composer Pro makes it easy to drop a sound into a scene, but the default
 
 This article covers the tradeoffs that matter most as a scene grows: memory versus compute when choosing how an asset loads, spatialization cost versus realism when choosing a playback component and tuning its properties, and organizational choices — like grouping related assets and sounds — that pay off as the number of audio sources increases. It assumes familiarity with Reality Composer Pro’s audio components and asset workflow. For that background, see [Adding audio components in Reality Composer Pro](./introduction-to-reality-composer-pro-audio.md).
 
-#### Choose a loading strategy for each audio asset
+## Choose a loading strategy for each audio asset
 
 Every audio asset in a scene loads using one of two strategies, set through [`AudioFileResource.LoadingStrategy`](../RealityKit/audiofileresource/loadingstrategy-swift.enum.md): [`AudioFileResource.LoadingStrategy.preload`](../RealityKit/audiofileresource/loadingstrategy-swift.enum/preload.md) decodes the entire asset into memory up front, and [`AudioFileResource.LoadingStrategy.stream`](../RealityKit/audiofileresource/loadingstrategy-swift.enum/stream.md) decodes it incrementally from disk during playback. In Reality Composer Pro, this is the **Should Stream** toggle in the audio file Inspector — see [Adding audio components in Reality Composer Pro](./introduction-to-reality-composer-pro-audio.md) for where to find that control.
 
@@ -24,7 +24,7 @@ Match the strategy to how the asset behaves in the scene:
 
 Normalization interacts with this choice in a way that’s easy to miss: the `.dynamic` case of `AudioResource.Normalization` applies real-time dynamic compression to bring an asset to a target loudness. For a `.preload` resource, that compression work happens once, at load time. For a `.stream` resource, it runs continuously alongside the ongoing decode, so combining `.stream` with dynamic normalization stacks two ongoing per-frame costs on the audio thread instead of one. If a streamed asset also needs loudness normalization, weigh that combined cost against simply preloading it.
 
-#### Pick the cheapest playback component that meets the need
+## Pick the cheapest playback component that meets the need
 
 Reality Composer Pro’s three playback components — Spatial Audio, Ambient Audio, and Channel Audio — don’t cost the same to render, even when playing identical source material. See [Adding audio components in Reality Composer Pro](./introduction-to-reality-composer-pro-audio.md) for what each component fundamentally does; this section focuses on their relative cost and how to choose deliberately.
 
@@ -44,7 +44,7 @@ Choose deliberately instead of relying on the default:
 
 ![A screenshot of Reality Composer Pro Scene with Ambient Audio properties displayed in the Inspector.](https://developer.apple.com/tutorials/images/RealityComposerPro/AudioVillageAmbientAudio2@2x.png)
 
-#### Tune spatial audio properties for cost and realism
+## Tune spatial audio properties for cost and realism
 
 [`SpatialAudioComponent`](../RealityKit/spatialaudiocomponent.md) exposes several properties for shaping how a spatialized sound behaves, including [`gain`](../RealityKit/spatialaudiocomponent/gain.md), [`directLevel`](../RealityKit/spatialaudiocomponent/directlevel.md), and [`reverbLevel`](../RealityKit/spatialaudiocomponent/reverblevel.md), all relative decibel values in the range `[-Decibel.infinity, Decibel.zero]`.
 
@@ -63,19 +63,19 @@ Treat `directivity` and `distanceAttenuation` as realism and quality controls, n
 
 > ❗ **Important**: Spatial audio sources project along negative-Z. If you author your source content facing positive-Z and you’re using a non-default `directivity` value — a `.beam(focus:)` with a non-zero focus — rotate the audio source entity 180 degrees around the y-axis so the beam points the intended direction. The default, `.beam(focus: .zero)`, projects sound evenly in all directions and needs no rotation.
 
-#### Author mono source material for spatial audio
+## Author mono source material for spatial audio
 
 Spatial audio sources are single-channel only. Regardless of how many channels a source asset has, [`SpatialAudioComponent`](../RealityKit/spatialaudiocomponent.md) mixes it down to mono before spatializing it.
 
 Because that mixdown happens automatically, it’s tempting to import stereo or multichannel assets and let the engine handle it. Author and export source assets as mono directly instead. This avoids phase-cancellation artifacts that can appear when a stereo file collapses to one channel, and it keeps source files smaller on disk — which also reduces the memory cost of preloading, as described in [Choose a loading strategy for each audio asset](./optimizing-audio-playback.md#Choose-a-loading-strategy-for-each-audio-asset).
 
-#### Manage the reverb budget across a scene
+## Manage the reverb budget across a scene
 
 Within a given ARView or RealityView, only one [`ReverbComponent`](../RealityKit/reverbcomponent.md) can be active at a time on macOS and iOS; see [Adding audio components in Reality Composer Pro](./introduction-to-reality-composer-pro-audio.md) for how to add one and choose a preset. Because reverb is a shared, scene-wide system rather than something each sound carries independently, `reverbLevel` — covered in [Tune spatial audio properties for cost and realism](./optimizing-audio-playback.md#Tune-spatial-audio-properties-for-cost-and-realism) — is the lever that controls each sound’s contribution to that shared cost.
 
 > **Note**: On visionOS, `ReverbComponent` is only active while your app has a progressive or full immersive space open. In Shared Space or a mixed immersion style, RealityKit uses real-environment acoustics simulation instead and ignores `ReverbComponent` entirely. If you tune `reverbLevel` or `directLevel` expecting your reverb preset to shape the sound, verify your app’s immersion style — the preset has no effect outside an immersive space.
 
-#### Avoid unnecessary power cost from preparing audio early
+## Avoid unnecessary power cost from preparing audio early
 
 [`prepareAudio(_:)`](../RealityKit/entity/prepareaudio%28_%29.md) gets an audio resource ready to play, but that readiness isn’t free. As its documentation states: “As soon as the system prepares an audio resource, the audio engine begins tracking the position of the entity and allocates rendering resources, which incurs a power cost.” The guidance that follows is direct: “For optimal system resource usage, avoid preparing sounds before they are needed.”
 
@@ -88,7 +88,7 @@ Two practices compound this cost if you’re not careful:
 
 That second point rules out an intuitive-but-wrong optimization: preparing audio ahead of time as a “warm-up” step before an entity is placed. Playback only actually starts once the entity is parented and placed in the scene, so preparing early doesn’t save time later — it just starts the power cost sooner. Prepare and play audio only when the entity is in place and the sound is actually needed.
 
-#### Control playback at runtime instead of restarting it
+## Control playback at runtime instead of restarting it
 
 Once a sound is playing, use [`AudioPlaybackController`](../RealityKit/audioplaybackcontroller.md) to change its behavior rather than stopping and re-triggering `playAudio(_:)`. Starting playback returns an [`AudioPlaybackController`](../RealityKit/audioplaybackcontroller.md), which exposes:
 
@@ -97,7 +97,7 @@ Once a sound is playing, use [`AudioPlaybackController`](../RealityKit/audioplay
 
 Check `isPlaying` before calling `playAudio(_:)` again on the same entity, so you don’t spin up a redundant concurrent playback instance as described in [Avoid unnecessary power cost from preparing audio early](./optimizing-audio-playback.md#Avoid-unnecessary-power-cost-from-preparing-audio-early).
 
-#### Organize assets with Audio File Groups and Audio Mix Groups
+## Organize assets with Audio File Groups and Audio Mix Groups
 
 Audio File Groups and Audio Mix Groups solve two different organizational problems, and it’s worth keeping them distinct despite the similar names. See [Adding audio components in Reality Composer Pro](./introduction-to-reality-composer-pro-audio.md) for the steps to create each one; this section covers why each matters.
 

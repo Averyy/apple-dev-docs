@@ -14,7 +14,7 @@ A Boolean value that indicates whether the app may have read-write access to the
 - **Name**: `com.apple.security.assets.movies.read-write`
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 To add this entitlement to your app, enable the App Sandbox capability in Xcode and set Movies Folder to Read/Write.
 

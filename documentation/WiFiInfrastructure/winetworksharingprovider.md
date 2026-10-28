@@ -17,7 +17,7 @@ A provider that delivers updated Wi-Fi network information to your app extension
 class WINetworkSharingProvider
 ```
 
-#### Overview
+## Overview
 
 Use `WINetworkSharingProvider` to receive real-time updates about Wi-Fi networks the system shares with connected accessories and to present network sharing interfaces to people. The provider manages the lifecycle of network-sharing operations and coordinates between your app extension, the system, and connected accessories.
 

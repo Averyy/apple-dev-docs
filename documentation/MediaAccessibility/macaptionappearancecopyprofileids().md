@@ -22,11 +22,11 @@ func MACaptionAppearanceCopyProfileIDs() -> CFArray
 extern CFArrayRefMACaptionAppearanceCopyProfileIDs();
 ```
 
-#### Return Value
+## Return Value
 
 An array of strings where each string represents a unique caption profile ID.
 
-#### Discussion
+## Discussion
 
 Copies all system and user defined profiles, each represented by a CFString containing a non-human-readable ID
 

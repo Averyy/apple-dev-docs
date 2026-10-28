@@ -15,7 +15,7 @@ Returns a Boolean value indicating whether two camera video formats are equal.
 static func == (lhs: CameraVideoFormat, rhs: CameraVideoFormat) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the two camera video formats are equal; otherwise, `false`.
 

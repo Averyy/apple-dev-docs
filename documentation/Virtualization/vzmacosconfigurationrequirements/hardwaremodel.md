@@ -24,7 +24,7 @@ var hardwareModel: VZMacHardwareModel { get }
 
 - [Installing macOS on a Virtual Machine](../installing-macos-on-a-virtual-machine.md)
 
-#### Discussion
+## Discussion
 
 Use a hardware model to configure a new VM that meets a set of specific requirements.
 

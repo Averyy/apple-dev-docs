@@ -19,7 +19,7 @@ Adds a new immersive camera definition to the venue descriptor.
 final func addCamera(_ camera: ImmersiveCamera) throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: This function throws an error if the `ImmersiveCamera` information points to invalid data; for example, invalid calibration or mask files.
 

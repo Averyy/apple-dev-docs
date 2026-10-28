@@ -25,7 +25,7 @@ var heading: CLLocationDirection { get set }
 @property (nonatomic) CLLocationDirection heading;
 ```
 
-#### Discussion
+## Discussion
 
 The value `0` means that the top edge of the map view corresponds to true north. The value `90` means the top of the map is pointing due east. The value `180` means the top of the map points due south, and so on.
 

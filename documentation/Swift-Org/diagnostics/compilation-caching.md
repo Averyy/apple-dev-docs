@@ -10,7 +10,7 @@ framework: "Swift-Org/diagnostics"
 
 Errors and warnings related to the compiler’s CAS compilation caching.
 
-#### Overview
+## Overview
 
 Compilation caching allows Swift compiler to reuse previously compiled outputs if the identical compilation has been done before.
 

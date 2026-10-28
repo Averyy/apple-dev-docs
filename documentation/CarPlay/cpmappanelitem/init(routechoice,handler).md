@@ -21,11 +21,11 @@ init(routeChoice: CPRouteChoice, handler: ((CPMapPanelItem, @escaping () -> Void
 - (instancetype) initWithRouteChoice:(CPRouteChoice *) routeChoice handler:(void (^)(CPMapPanelItem *item, dispatch_block_t completionBlock)) handler;
 ```
 
-#### Return Value
+## Return Value
 
 A map panel item initialized with a route choice.
 
-#### Discussion
+## Discussion
 
 For this type of item, the map panel displays the relevant route choice summaries.
 

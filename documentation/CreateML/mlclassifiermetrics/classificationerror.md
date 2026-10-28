@@ -25,7 +25,7 @@ var classificationError: Double { get }
 - [Creating a text classifier model](../creating-a-text-classifier-model.md)
 - [Improving Your Model’s Accuracy](../improving-your-model-s-accuracy.md)
 
-#### Discussion
+## Discussion
 
 The classification error describes how many examples were incorrectly labeled divided by the total number of examples. Accuracy as a percentage may be more intuitive. You can calculate it as follows:
 

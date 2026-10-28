@@ -20,7 +20,7 @@ A component that gives an entity the ability to receive system input.
 struct InputTargetComponent
 ```
 
-#### Overview
+## Overview
 
 This component should be added to an entity to inform the system that it should be treated as a target for input handling. It can be customized to require only specific forms of input like direct or indirect interactions. By default the component is configured to handle all forms of input on the system.
 

@@ -24,7 +24,7 @@ var minificationFilterBias: Float { get set }
 @property float minificationFilterBias;
 ```
 
-#### Discussion
+## Discussion
 
 This value is used by the [`minificationFilter`](./minificationfilter.md) property when it is set to `kCAFilterTrilinear`.
 

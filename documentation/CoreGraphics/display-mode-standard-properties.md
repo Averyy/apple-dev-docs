@@ -5,11 +5,11 @@
 
 Keys for the standard properties in a display mode dictionary.
 
-#### Overview
+## Overview
 
 To learn how to use these keys to access the values in a display mode dictionary, see [`CFDictionary`](../CoreFoundation/cfdictionary.md).
 
-##### Special Considerations
+### Special Considerations
 
 Starting in OS X v10.6, display mode dictionaries have been made obsolete by the display mode opaque type. For more information on display modes, see[Changing Display Modes (OS X v10.6 or later)](https://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/QuartzDisplayServicesConceptual/Articles/DisplayModes.html#//apple_ref/doc/uid/TP40004234).
 

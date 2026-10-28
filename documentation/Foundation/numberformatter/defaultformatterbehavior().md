@@ -25,7 +25,7 @@ class func defaultFormatterBehavior() -> NumberFormatter.Behavior
 + (NSNumberFormatterBehavior) defaultFormatterBehavior;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSNumberFormatterBehavior` constant that indicates default formatter behavior for new instances of `NSNumberFormatter`.
 

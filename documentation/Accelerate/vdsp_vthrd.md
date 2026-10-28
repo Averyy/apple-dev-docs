@@ -21,7 +21,7 @@ Calculates double-precision vector threshold to the specified range.
 extern void vDSP_vthrD(const double *__A, vDSP_Stride __IA, const double *__B, double *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This function is the same as [`vDSP_vthr`](./vdsp_vthr.md), except for the types of vectors `A` and `C`, and scalar `*B`.
 

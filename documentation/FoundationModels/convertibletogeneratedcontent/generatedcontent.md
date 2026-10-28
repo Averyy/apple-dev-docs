@@ -21,7 +21,7 @@ This instance represented as generated content.
 var generatedContent: GeneratedContent { get }
 ```
 
-#### Discussion
+## Discussion
 
 Conformance to this protocol is provided by the `@Generable` macro. You can provide a manual implementation to map values onto properties using different names. Use the generated content property as shown below, to manually return a new [`GeneratedContent`](../generatedcontent.md) with the properties you specify.
 

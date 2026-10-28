@@ -33,7 +33,7 @@ class UITextField
 - [Adopting system selection UI in custom text views](./adopting-system-selection-ui-in-custom-text-views.md)
 - [Customizing Writing Tools behavior for UIKit views](./customizing-writing-tools-behavior-for-system-views.md)
 
-#### Overview
+## Overview
 
 You use text fields to gather text-based input from the user using the onscreen keyboard. The keyboard is configurable for many different types of input such as plain text, emails, numbers, and so on. Text fields use the target-action mechanism and a delegate object to report changes made during the course of editing.
 
@@ -55,7 +55,7 @@ After adding a text field to your interface, you configure it for use in your ap
 
 For information about the methods of the text field’s delegate object, see [`UITextFieldDelegate`](./uitextfielddelegate.md).
 
-##### Show and hide the keyboard
+### Show and hide the keyboard
 
 When a text field becomes first responder, the system automatically shows the keyboard and binds its input to the text field. A text field becomes the first responder automatically when the user taps it. You can also force a text field to become the first responder by calling its [`becomeFirstResponder()`](./uiresponder/becomefirstresponder%28%29.md) method. You might force a text field to become first responder when you require the user to enter some information.
 
@@ -65,7 +65,7 @@ You can ask the system to dismiss the keyboard by calling the [`resignFirstRespo
 
 The appearance and dismissal of the keyboard affect the editing state of the text field. When the keyboard appears, the text field enters the editing state and sends the appropriate notifications to its delegate. Similarly, when the text field resigns the first responder status, it leaves the editing state and notifies its delegate. For more information about the sequence of events that occur during editing, see [Validate text and manage the editing process](./uitextfield.md#Validate-text-and-manage-the-editing-process).
 
-###### Configure the keyboard’s appearance
+#### Configure the keyboard’s appearance
 
 You customize your text field’s keyboard using the properties of the [`UITextInputTraits`](./uitextinputtraits.md) protocol, which the [`UITextField`](./uitextfield.md) class adopts. UIKit supports standard keyboards for the user’s current language and also supports specialized keyboards for entering numbers, URLs, email addresses, and other specific types of information. You use the properties of this protocol to adjust keyboard traits such as the following:
 
@@ -74,7 +74,7 @@ You customize your text field’s keyboard using the properties of the [`UITextI
 - The autocorrection behavior of the keyboard
 - The type of return key to display
 
-###### Respond to keyboard-related notifications
+#### Respond to keyboard-related notifications
 
 Because the system manages the showing and hiding of the keyboard in response to responder changes, it posts the following notifications for tracking the keyboard-related changes:
 
@@ -89,7 +89,7 @@ Each notification contains a [`userInfo`](../Foundation/nsnotification/userinfo.
 
 ![A screenshot that demonstrates adjusting the position of a text field when the keyboard appears.](https://developer.apple.com/tutorials/images/com.apple.uikit/media-1965762@2x.png)
 
-##### Format the text in a text field
+### Format the text in a text field
 
 There are two types of formatting you can do to a text field’s text:
 
@@ -100,7 +100,7 @@ The [`font`](./uitextfield/font.md), [`textColor`](./uitextfield/textcolor.md), 
 
 The [`UITextField`](./uitextfield.md) class doesn’t provide built-in support for formatting its string using an [`Formatter`](../Foundation/formatter.md) object, but you can use the text field’s delegate to format the content yourself. To do so, use the text field’s delegate methods to validate text and to format it appropriately. For example, use the [`textField(_:shouldChangeCharactersIn:replacementString:)`](./uitextfielddelegate/textfield%28_,shouldchangecharactersin,replacementstring%29.md) method to validate and format text while the user is typing. For information about how to use formatter objects, see [Data Formatting](../Foundation/data-formatting.md).
 
-##### Use overlay views to edit content
+### Use overlay views to edit content
 
 Overlay views are small views displayed on the left and right sides of the text view’s editable area. Typically, overlay views are image-based buttons that you set up as additional editing controls. For example, you might use an overlay view to implement a bookmarks button. To configure a button as an overlay view, specify an image for the button’s content and configure the target and action of the button to respond to taps.
 
@@ -138,13 +138,13 @@ self.textField.leftViewMode = UITextFieldViewModeAlways;
 
 When configuring overlay views, consider whether you want your text field to display the built-in clear button. The clear button provides the user with a convenient way to delete all of the text field’s text. This button is displayed in the right overlay position, but if you provide a custom right overlay view, use the [`rightViewMode`](./uitextfield/rightviewmode.md) and [`clearButtonMode`](./uitextfield/clearbuttonmode.md) properties to define when your custom overlay should be displayed and when the clear button should be displayed.
 
-##### Validate text and manage the editing process
+### Validate text and manage the editing process
 
 A text field manages the editing of its text with the help of its delegate object. As the user interacts with a text field, the text field notifies its delegate and gives it a chance to control what is happening. You can use the delegate methods to prevent the user from starting or stopping the editing process or to validate text as it’s typed. You can also use the delegate methods to perform related tasks, such as updating other parts of your interface based on the information typed by the user.
 
 For more information about using the text field’s delegate to manage editing interactions, see [`UITextFieldDelegate`](./uitextfielddelegate.md).
 
-##### Interface Builder attributes
+### Interface Builder attributes
 
 The following table lists the attributes that you configure for text fields in Interface Builder.
 
@@ -174,19 +174,19 @@ The following table lists the keyboard-related attributes that you configure for
 
 For information about additional attributes you can configure for a text view, see [`UIControl`](./uicontrol.md).
 
-##### Internationalization
+### Internationalization
 
 The default language of the device affects the keyboard that pops up with the text field (including the return key). You don’t need to do anything to enable this functionality; it’s enabled by default. However, your text field should be able to handle input that comes from any language.
 
 When using storyboards to build your interface, use Xcode’s base internationalization feature to configure the localizations your project supports. When you add a localization, Xcode creates a strings file for that localization. When configuring your interface programmatically, use the system’s built-in support for loading localized strings and resources. For more information about internationalizing your interface, see [Localization](../Xcode/localization.md).
 
-##### Accessibility
+### Accessibility
 
 Text fields are accessible by default. The default accessibility trait for a text field is User Interaction Enabled.
 
 For more information about making iOS controls accessible, see the accessibility information in [`UIControl`](./uicontrol.md). For general information about making your interface accessible, see [Accessibility for UIKit](./accessibility-for-uikit.md).
 
-##### State preservation
+### State preservation
 
 When you assign a value to a text field’s [`restorationIdentifier`](./uiview/restorationidentifier.md) property, it preserves the selected range of text, if any. During the next launch cycle, the text field attempts to restore that selection. If the selection range can’t be applied to the current text, no selection is made.
 

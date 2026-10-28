@@ -18,7 +18,7 @@ An object that generates image-based-lighting diffuse and specular cube textures
 class ImageBasedLightTextureGenerator
 ```
 
-#### Overview
+## Overview
 
 Image-based lighting (IBL) approximates how an environment lights a surface by convolving the environment’s skybox into two cube textures: a diffuse irradiance map (low-frequency lighting that hits matte surfaces) and a specular pre-filtered map (per-roughness lighting that drives glossy reflections). RealityKit’s `EnvironmentResource` consumes textures of this shape, and this generator lets you produce them directly in Metal so you can control resolution, pixel format, sampling quality, and command-buffer scheduling.
 

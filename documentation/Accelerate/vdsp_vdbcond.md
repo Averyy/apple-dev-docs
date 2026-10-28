@@ -21,7 +21,7 @@ Converts single-precision power or amplitude values to decibel values.
 extern void vDSP_vdbconD(const double *__A, vDSP_Stride __IA, const double *__B, double *__C, vDSP_Stride __IC, vDSP_Length __N, unsigned int __F);
 ```
 
-#### Discussion
+## Discussion
 
 The function uses the following calculation to perform the conversion:
 

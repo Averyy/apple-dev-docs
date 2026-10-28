@@ -23,7 +23,7 @@ class CMAbsoluteAltitudeData
 @interface CMAbsoluteAltitudeData : CMLogItem
 ```
 
-#### Overview
+## Overview
 
 Absolute altitude is only available on iPhone 12 and later and Apple Watch 6 or SE and later.
 

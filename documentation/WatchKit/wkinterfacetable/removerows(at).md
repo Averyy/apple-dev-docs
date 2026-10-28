@@ -19,7 +19,7 @@ func removeRows(at rows: IndexSet)
 - (void) removeRowsAtIndexes:(NSIndexSet *) rows;
 ```
 
-#### Discussion
+## Discussion
 
 This method removes row controllers from the table using the same semantics defined by the [`removeObjects(at:)`](../../Foundation/nsmutablearray/removeobjects%28at%29.md) method of [`NSMutableArray`](../../Foundation/nsmutablearray.md).
 

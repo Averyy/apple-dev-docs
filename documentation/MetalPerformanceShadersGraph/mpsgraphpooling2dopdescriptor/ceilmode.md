@@ -24,7 +24,7 @@ var ceilMode: Bool { get set }
 @property (nonatomic, readwrite) BOOL ceilMode;
 ```
 
-#### Discussion
+## Discussion
 
 If set to `YES` then output size is computed by rounding up instead of down when dividing input size by stride. Default value: `NO`.
 

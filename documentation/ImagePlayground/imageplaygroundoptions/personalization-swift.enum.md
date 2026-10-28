@@ -19,7 +19,7 @@ Options for enabling and disabling personalization features when generating imag
 enum Personalization
 ```
 
-#### Overview
+## Overview
 
 The SwiftUI sheets, [`ImagePlaygroundViewController`](../imageplaygroundviewcontroller.md) type, and [`ImageCreator`](../imagecreator.md) type offer ways to personalize the images you create using an existing photo or other information. When configuring one of those types, create an instance of [`ImagePlaygroundOptions`](../imageplaygroundoptions.md) and configure its [`personalization`](./personalization-swift.property.md) property with your personalization preferences.
 

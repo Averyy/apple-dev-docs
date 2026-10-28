@@ -25,7 +25,7 @@ var isiOSAppOnVision: Bool { get }
 @property (readonly, getter=isiOSAppOnVision) BOOL iOSAppOnVision;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) only when the process is an iOS app running on a visionOS device. The value of the property is [`false`](../../Swift/false.md) for all other apps on visionOS. The property is also [`false`](../../Swift/false.md) for processes running on platforms other than visonOS.
 

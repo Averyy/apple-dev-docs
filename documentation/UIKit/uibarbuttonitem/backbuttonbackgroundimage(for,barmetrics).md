@@ -22,11 +22,11 @@ func backButtonBackgroundImage(for state: UIControl.State, barMetrics: UIBarMetr
 - (UIImage *) backButtonBackgroundImageForState:(UIControlState) state barMetrics:(UIBarMetrics) barMetrics;
 ```
 
-#### Return Value
+## Return Value
 
 The back button background image for `state` and `barMetrics`.
 
-#### Discussion
+## Discussion
 
 This modifier applies only to navigation bar back buttons and is ignored by other buttons.
 

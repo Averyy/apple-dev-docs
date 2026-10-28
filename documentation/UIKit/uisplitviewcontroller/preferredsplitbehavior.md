@@ -23,7 +23,7 @@ var preferredSplitBehavior: UISplitViewController.SplitBehavior { get set }
 @property (nonatomic) UISplitViewControllerSplitBehavior preferredSplitBehavior;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify the split behavior that you prefer to use. The split view controller makes every effort to adopt the behavior you specify, but may use a different type of interface if there isn’t enough space to support your preferred choice. If changing the value of this property leads to an actual change in the current split behavior, the split view controller reflects the actual split behavior in the [`splitBehavior`](./splitbehavior-swift.property.md) property. This change takes effect after the next layout occurs.
 

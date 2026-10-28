@@ -19,7 +19,7 @@ The smallest multiplier for the font size that the configuration uses to make th
 var minimumScaleFactor: CGFloat { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This value applies when [`adjustsFontSizeToFitWidth`](./adjustsfontsizetofitwidth.md) is [`true`](../../../Swift/true.md).
 

@@ -24,7 +24,7 @@ var dataType: MPSDataType { get set }
 @property (nonatomic, readwrite) MPSDataType dataType;
 ```
 
-#### Discussion
+## Discussion
 
 When sampling from the uniform distribution, valid types are MPSDataTypeFloat16, MPSDataTypeFloat32, and MPSDataTypeInt32. When sampling from the normal or truncated normal distribution, valid types are MPSDataTypeFloat16 and MPSDataTypeFloat32.
 

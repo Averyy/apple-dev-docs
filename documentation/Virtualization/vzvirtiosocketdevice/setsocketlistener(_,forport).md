@@ -19,7 +19,7 @@ func setSocketListener(_ listener: VZVirtioSocketListener, forPort port: UInt32)
 - (void) setSocketListener:(VZVirtioSocketListener *) listener forPort:(uint32_t) port;
 ```
 
-#### Discussion
+## Discussion
 
 You can register the same listener object on multiple ports. When the guest operating system opens a connection to the port, the listener object notifies its associated delegate.
 

@@ -19,7 +19,7 @@ optional func handle(_ workoutConfiguration: HKWorkoutConfiguration)
 - (void) handleWorkoutConfiguration:(HKWorkoutConfiguration *) workoutConfiguration;
 ```
 
-#### Discussion
+## Discussion
 
 When your iPhone app starts a workout session using the HealthKit store’s `startWatchAppWithWorkoutConfiguration:completion:` method, the system launches or wakes the corresponding Watch app in the background and calls this method. Use this method to configure an [`HKWorkoutSession`](../../HealthKit/hkworkoutsession.md) object in your Watch app, and then call [`start(_:)`](../../HealthKit/hkhealthstore/start%28_%29.md) to start the session.
 

@@ -22,7 +22,7 @@ optional func documentInteractionControllerWillBeginPreview(_ controller: UIDocu
 - (void) documentInteractionControllerWillBeginPreview:(UIDocumentInteractionController *) controller;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called shortly before the view containing the document preview is presented modally. You can use this notification to set up any additional interface elements behind the preview elements.
 

@@ -19,7 +19,7 @@ A Boolean value that indicates whether the label adjusts spacing between letters
 @property (nonatomic) BOOL adjustsLetterSpacingToFitWidth;
 ```
 
-#### Discussion
+## Discussion
 
 When this property is [`true`](../../Swift/true.md), the label may alter the letter spacing of the text to make that text fit better within the label’s bounds. The label applies letter spacing to the text regardless of the current line break mode. The default value of this property is [`false`](../../Swift/false.md).
 

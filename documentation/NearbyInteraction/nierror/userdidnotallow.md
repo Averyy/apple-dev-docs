@@ -18,7 +18,7 @@ An error code that indicates that the user declined the request to share their r
 static var userDidNotAllow: NIError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 In this case, the user needs to enable Nearby Interaction in Settings. For more information, see [Initiating and maintaining a session](../initiating-and-maintaining-a-session.md).
 

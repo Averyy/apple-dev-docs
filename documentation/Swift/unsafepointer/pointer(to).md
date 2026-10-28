@@ -21,11 +21,11 @@ Obtain a pointer to the stored property referred to by a key path.
 func pointer<Property>(to property: KeyPath<Pointee, Property>) -> UnsafePointer<Property>?
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to the stored property represented by the key path, or `nil`.
 
-#### Discussion
+## Discussion
 
 If the key path represents a computed property, this function will return `nil`.
 

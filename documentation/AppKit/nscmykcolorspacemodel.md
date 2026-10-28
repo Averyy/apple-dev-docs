@@ -17,7 +17,7 @@ The CYMK (cyan, yellow, magenta, black) color-space model.
 static const NSColorSpaceModel NSCMYKColorSpaceModel;
 ```
 
-#### Discussion
+## Discussion
 
 Can refer to both device-dependent and generic color space variants.
 

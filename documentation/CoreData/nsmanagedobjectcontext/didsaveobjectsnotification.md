@@ -21,7 +21,7 @@ A notification that posts after a context completes a save.
 static let didSaveObjectsNotification: Notification.Name
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  Use [`didSaveObjectIDsNotification`](./didsaveobjectidsnotification.md) instead of this notification.
 

@@ -24,7 +24,7 @@ var instanceRedOffset: Float { get set }
 @property float instanceRedOffset;
 ```
 
-#### Discussion
+## Discussion
 
 The `instanceRedOffset` is added to the red color component of instance `k-1` to produce the modulation color of instance k.
 

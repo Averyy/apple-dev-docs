@@ -21,7 +21,7 @@ Updates the index buffer synchronously on the CPU.
 func withUnsafeMutableIndices(_ callback: (UnsafeMutableRawBufferPointer) -> Void)
 ```
 
-#### Discussion
+## Discussion
 
 The buffer is only valid for the lifetime of the callback.
 

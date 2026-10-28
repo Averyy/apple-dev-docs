@@ -25,11 +25,11 @@ init(code: INPayBillIntentResponseCode, userActivity: NSUserActivity?)
 - (instancetype) initWithCode:(INPayBillIntentResponseCode) code userActivity:(NSUserActivity *) userActivity;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized response object or `nil` if the object could not be created.
 
-#### Discussion
+## Discussion
 
 After initializing the response object, put the transaction details into the properties of the object. Always provide as many details as possible about the transaction, including the payment amount, the scheduled payment date, the user account providing the funds, and details about the bill to pay.
 

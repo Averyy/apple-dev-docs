@@ -19,7 +19,7 @@ init?(name: NSFontCollection.Name)
 + (NSFontCollection *) fontCollectionWithName:(NSFontCollectionName) name;
 ```
 
-#### Return Value
+## Return Value
 
 The named font collection.
 

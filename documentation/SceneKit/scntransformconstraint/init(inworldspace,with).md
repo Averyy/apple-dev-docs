@@ -25,11 +25,11 @@ convenience init(inWorldSpace world: Bool, with block: @escaping (SCNNode, SCNMa
 + (instancetype) transformConstraintInWorldSpace:(BOOL) world withBlock:(SCNMatrix4 (^)(SCNNode *node, SCNMatrix4 transform)) block;
 ```
 
-#### Return Value
+## Return Value
 
 A constraint object.
 
-#### Discussion
+## Discussion
 
 The `world` parameter determines the coordinate space of the transformations passed to and returned by the `block` parameter.
 

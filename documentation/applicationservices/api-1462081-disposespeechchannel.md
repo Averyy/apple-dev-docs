@@ -19,11 +19,11 @@ func DisposeSpeechChannel(_ chan: SpeechChannel) -> OSErr
 OSErr DisposeSpeechChannel(SpeechChannel chan);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./speech_synthesis_manager.md#1659745).
 
-#### Discussion
+## Discussion
 
 The `DisposeSpeechChannel` functiondisposes of the speech channel specified in the `chan` parameterand releases all memory the channel occupies. If the speech channelspecified is producing speech, then the `DisposeSpeechChannel` functionimmediately stops speech before disposing of the channel. If youhave defined a text-done callback function or a speech-done callbackfunction, the function will not be called before the channel is disposedof.
 

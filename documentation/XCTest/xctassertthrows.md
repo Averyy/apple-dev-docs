@@ -12,7 +12,7 @@ Asserts that an expression throws an `NSException`.
 #define XCTAssertThrows(expression, ...)
 ```
 
-#### Discussion
+## Discussion
 
 This function generates a failure if `expression` doesn’t throw an exception.
 

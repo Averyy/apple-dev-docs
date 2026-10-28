@@ -19,7 +19,7 @@ class let didBecomeMainNotification: NSNotification.Name
 extern NSNotificationName NSWindowDidBecomeMainNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the `NSWindow` object that has become the main window. This notification doesn’t contain a `userInfo` dictionary.
 

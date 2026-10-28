@@ -21,7 +21,7 @@ A Boolean value that indicates whether the system setting to prefer horizontal t
 static var prefersHorizontalTextLayout: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) if the system setting for Prefer Horizontal Text is on; otherwise, [`false`](../../Swift/false.md).
 

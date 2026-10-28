@@ -29,7 +29,7 @@ optional func confirm(intent: INGetVisualCodeIntent) async -> INGetVisualCodeInt
 - (void) confirmGetVisualCode:(INGetVisualCodeIntent *) intent completion:(void (^)(INGetVisualCodeIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to verify that you’re able to produce the requested visual code. You might use this method to verify the user’s account credentials and verify that their account can handle the specified type of transaction.
 

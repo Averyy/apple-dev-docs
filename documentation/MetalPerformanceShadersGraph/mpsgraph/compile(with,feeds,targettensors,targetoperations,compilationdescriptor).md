@@ -24,11 +24,11 @@ func compile(with device: MPSGraphDevice?, feeds: [MPSGraphTensor : MPSGraphShap
 - (MPSGraphExecutable *) compileWithDevice:(MPSGraphDevice *) device feeds:(MPSGraphTensorShapedTypeDictionary *) feeds targetTensors:(NSArray<MPSGraphTensor *> *) targetTensors targetOperations:(NSArray<MPSGraphOperation *> *) targetOperations compilationDescriptor:(MPSGraphCompilationDescriptor *) compilationDescriptor;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphExecutable object
 
-#### Discussion
+## Discussion
 
 This call blocks until execution has completed. The compilation descriptor helps specialize the executable returned.
 

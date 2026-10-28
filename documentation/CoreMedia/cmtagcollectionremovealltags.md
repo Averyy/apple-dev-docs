@@ -21,7 +21,7 @@ Removes all tags from a collection.
 extern OSStatus CMTagCollectionRemoveAllTags(CMMutableTagCollectionRef tagCollection);
 ```
 
-#### Return Value
+## Return Value
 
 Returns `0` on success and a value from Tag Collection Error Codes on failure.
 

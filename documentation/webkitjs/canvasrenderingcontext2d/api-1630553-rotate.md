@@ -18,7 +18,7 @@ void rotate(
 );
 ```
 
-#### Discussion
+## Discussion
 
 Changes to the coordinate system affect subsequent drawing operations, but do not affect anything already drawn. Rotation is clockwise around the origin, which by default is the upper-left corner.
 

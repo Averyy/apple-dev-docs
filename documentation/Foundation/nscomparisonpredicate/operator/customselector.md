@@ -25,7 +25,7 @@ case customSelector
 NSCustomSelectorPredicateOperatorType
 ```
 
-#### Discussion
+## Discussion
 
 The selector is invoked on the left hand side with the right hand side as the argument.
 

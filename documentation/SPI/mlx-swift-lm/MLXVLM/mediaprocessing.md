@@ -17,7 +17,7 @@ Collection of methods for processing media (images, video, etc.).
 enum MediaProcessing
 ```
 
-#### Overview
+## Overview
 
 A typical image preparation pipeline might look like this:
 

@@ -14,10 +14,10 @@ Returns the text of the help screen for the given subcommand of this command.
 ## Declaration
 
 ```swift
-static func helpMessage(for subcommand: any ParsableCommand.Type, columns: Int? = nil) -> String
+static func helpMessage(for subcommand: ParsableCommand.Type, columns: Int? = nil) -> String
 ```
 
-#### Return Value
+## Return Value
 
 The full help screen for this type.
 

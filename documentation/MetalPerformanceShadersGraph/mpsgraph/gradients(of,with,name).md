@@ -24,7 +24,7 @@ func gradients(of primaryTensor: MPSGraphTensor, with tensors: [MPSGraphTensor],
 - (NSDictionary<MPSGraphTensor *,MPSGraphTensor *> *) gradientForPrimaryTensor:(MPSGraphTensor *) primaryTensor withTensors:(NSArray<MPSGraphTensor *> *) tensors name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor dictionary object containing partial derivative d(primaryTensor)/d(secondaryTensor) for each tensor as key.
 

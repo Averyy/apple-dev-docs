@@ -21,7 +21,7 @@ A namespace for types related to attributed text formatting definitions.
 enum AttributedTextFormatting
 ```
 
-#### Overview
+## Overview
 
 > **See Also**: [`AttributedTextFormattingDefinition`](./attributedtextformattingdefinition.md), [`attributedTextFormattingDefinition(_:)`](./view/attributedtextformattingdefinition%28_%29-81jn6.md)
 

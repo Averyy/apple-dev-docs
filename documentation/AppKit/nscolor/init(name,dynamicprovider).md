@@ -19,7 +19,7 @@ init(name colorName: NSColor.Name?, dynamicProvider: @escaping (NSAppearance) ->
 + (NSColor *) colorWithName:(NSColorName) colorName dynamicProvider:(NSColor * (^)(NSAppearance *)) dynamicProvider;
 ```
 
-#### Discussion
+## Discussion
 
 When methods on a color need color component values, AppKit calls the provider with [`currentDrawingAppearance`](../nsappearance/currentdrawingappearance.md). The provider can use the appearance to return another color to use for drawing. For example, if you create a color matching [`systemYellow`](./systemyellow.md) for Light appearance, you’ll get a color matching [`systemYellow`](./systemyellow.md) for Dark appearance when using Dark Mode. As often as possible, use the given appearance.
 

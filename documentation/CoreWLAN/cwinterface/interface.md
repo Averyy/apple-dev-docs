@@ -17,7 +17,7 @@ Convenience method for getting an CWInterface object for the default WLAN interf
 + (instancetype) interface;
 ```
 
-#### Return Value
+## Return Value
 
 An CWInterface object.
 

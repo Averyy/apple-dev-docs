@@ -19,7 +19,7 @@ var deviceDescriptorData: Data { get }
 @property (readonly) NSData * deviceDescriptorData;
 ```
 
-#### Discussion
+## Discussion
 
 The underlying bytes can be cast to [`IOUSBDeviceDescriptor`](../../iokit/iousbdevicedescriptor.md).
 

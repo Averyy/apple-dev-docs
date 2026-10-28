@@ -17,7 +17,7 @@ Model state carried by the main model, as [`state`](../tokeniterator/state.md).
 var state: LMOutput.State? { get }
 ```
 
-#### Discussion
+## Discussion
 
 Seeded from `mainState` and updated by prefill and each verification pass. Read it from the same iterator value you generate with: this is a struct, so a copy would not observe later mutations.
 

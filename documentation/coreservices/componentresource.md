@@ -16,7 +16,7 @@ typedef struct ComponentResource {
 } ComponentResource;
 ```
 
-#### Overview
+## Overview
 
 The `ComponentResource` data type defines the structure of a component resource. You can also optionally append to the end of this structure the information defined by the  [`ComponentResourceExtension`](./componentresourceextension.md)  data type. 
 

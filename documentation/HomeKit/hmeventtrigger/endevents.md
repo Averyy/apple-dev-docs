@@ -24,7 +24,7 @@ var endEvents: [HMEvent] { get }
 @property (nonatomic, copy, readonly) NSArray<HMEvent *> * endEvents;
 ```
 
-#### Discussion
+## Discussion
 
 HomeKit restores the previously active scene when the events in this array trigger. For example, you can use end events to execute a scene for 10 minutes by specifying an [`HMDurationEvent`](../hmdurationevent.md) in the list of [`endEvents`](./endevents.md). This restores the previous scene when the duration event triggers.
 

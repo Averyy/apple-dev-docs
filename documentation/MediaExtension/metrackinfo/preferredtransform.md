@@ -19,7 +19,7 @@ var preferredTransform: CGAffineTransform { get set }
 @property (nonatomic) CGAffineTransform preferredTransform;
 ```
 
-#### Discussion
+## Discussion
 
 This property is only valid for tracks with visual media types and is [`CGAffineTransformIdentity`](../../CoreGraphics/cgaffinetransformidentity.md) for other track types.
 

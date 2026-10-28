@@ -25,7 +25,7 @@ class AVPlayerItemSampleBufferOutput
 @interface AVPlayerItemSampleBufferOutput : AVPlayerItemOutput
 ```
 
-#### Overview
+## Overview
 
 Playback only happens when the [`AVPlayerItem`](./avplayeritem.md) is the current item of its [`AVPlayer`](./avplayer.md).
 

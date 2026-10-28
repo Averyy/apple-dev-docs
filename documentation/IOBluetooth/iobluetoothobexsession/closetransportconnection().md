@@ -19,7 +19,7 @@ func closeTransportConnection() -> OBEXError
 - (OBEXError) closeTransportConnection;
 ```
 
-#### Return Value
+## Return Value
 
 Success or failure code, describing whether the call succeeded in closing the transport connection successfully.
 

@@ -17,7 +17,7 @@ weak var delegate: (any VZUSBController.Delegate)? { get set }
 @property (weak, nullable) id<VZUSBControllerDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 The controller’s delegate.
 

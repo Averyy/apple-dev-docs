@@ -22,7 +22,7 @@ Applies the given stroke style to drawn map overlays.
 @preconcurrency func strokeStyle(style: StrokeStyle) -> some MapContent
 ```
 
-#### Return Value
+## Return Value
 
 Returns [`MapContent`](../mapcontent.md) with overlays drawn with the [`StrokeStyle`](../../SwiftUI/strokestyle.md) you specified.
 

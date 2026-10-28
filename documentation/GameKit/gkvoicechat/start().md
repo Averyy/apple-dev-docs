@@ -30,7 +30,7 @@ func start()
 
 - [Adding voice chat to multiplayer games](../adding-voice-chat-to-multiplayer-games.md)
 
-#### Discussion
+## Discussion
 
 You must provide a reason, by adding the [`NSMicrophoneUsageDescription`](../../BundleResources/information-property-list/nsmicrophoneusagedescription.md) key to the Information Property List, to start voice chat with other players.
 

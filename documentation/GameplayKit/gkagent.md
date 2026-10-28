@@ -24,7 +24,7 @@ class GKAgent
 @interface GKAgent : GKComponent
 ```
 
-#### Overview
+## Overview
 
 The [`GKAgent`](./gkagent.md) class is abstract, defining only the general functionality of an agent—its movement constraints and the [`behavior`](./gkagent/behavior.md) property containing its goals ([`GKGoal`](./gkgoal.md) objects). To implement agent-based gameplay, choose a concrete subclass that fits your game.
 
@@ -33,13 +33,13 @@ The [`GKAgent`](./gkagent.md) class is abstract, defining only the general funct
 
 To learn more about the agent simulation, see [Agents, Goals, and Behaviors](https://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/Agent.html#//apple_ref/doc/uid/TP40015172-CH8) in [GameplayKit Programming Guide](https://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172).
 
-##### An Agent is a Component
+### An Agent is a Component
 
 Because [`GKAgent`](./gkagent.md) is a subclass of [`GKComponent`](./gkcomponent.md), you can use Entity-Component architecture to add agent-based behaviors to your game. (For details on this architecture, see [Entities and Components](https://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/EntityComponent.html#//apple_ref/doc/uid/TP40015172-CH6) in [GameplayKit Programming Guide](https://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172).)
 
 To integrate agents with gameplay, call each agent’s [`update(deltaTime:)`](./gkcomponent/update%28deltatime%29.md) method each time you want to update the simulation that governs the agent’s behavior. Typically, you call this method once for each frame processed by your game’s graphics engine—for example, in the [`update(_:)`](../SpriteKit/skscene/update%28_%29.md) method of a SpriteKit scene or the [`renderer(_:updateAtTime:)`](../SceneKit/scnscenerendererdelegate/renderer%28_,updateattime%29.md) method of a SceneKit renderer delegate. If your game uses Entity-Component architecture, you can use a [`GKComponentSystem`](./gkcomponentsystem.md) object to update all the agents in the game scene for each frame. If not, you must call each agent’s [`update(deltaTime:)`](./gkcomponent/update%28deltatime%29.md) method directly.
 
-##### An Agent Simulates Movement Based on Goals
+### An Agent Simulates Movement Based on Goals
 
 Each time an agent’s [`update(deltaTime:)`](./gkcomponent/update%28deltatime%29.md) method runs, the agent evaluates each [`GKGoal`](./gkgoal.md) object listed in its [`behavior`](./gkagent/behavior.md) property to find the change in direction and speed necessary to move toward fulfilling that goal (within the limits of the time delta and the agent’s maximum speed and turn rate). It then combines the effects from all the goals in its behavior, using the weights specified in the [`GKBehavior`](./gkbehavior.md) object to modulate the influence of each goal, resulting in a total change in its direction and speed.
 

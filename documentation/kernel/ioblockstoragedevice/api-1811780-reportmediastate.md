@@ -13,7 +13,7 @@ virtual IOReturn reportMediaState(
  bool *changedState = 0) = 0;
 ```
 
-#### Overview
+## Overview
 
 This method reports whether we have media in the drive or not, and whether the state has changed from the previously reported state.
 

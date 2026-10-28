@@ -25,11 +25,11 @@ func vImageLookupTable_PlanarFtoPlanar8(_ src: UnsafePointer<vImage_Buffer>, _ d
 vImage_Error vImageLookupTable_PlanarFtoPlanar8(const vImage_Buffer *src, const vImage_Buffer *dest, const Pixel_8 table[4096], vImage_Flags flags);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
-#### Discussion
+## Discussion
 
 This function maps the source pixels in the range `0...1` to the index values `0...4095`. The per-pixel conversion calculation is equivalent to the following:
 

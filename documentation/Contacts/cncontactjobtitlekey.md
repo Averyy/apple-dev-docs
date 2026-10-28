@@ -24,7 +24,7 @@ let CNContactJobTitleKey: String
 extern NSString * const CNContactJobTitleKey;
 ```
 
-#### Discussion
+## Discussion
 
 This key takes a string value.
 

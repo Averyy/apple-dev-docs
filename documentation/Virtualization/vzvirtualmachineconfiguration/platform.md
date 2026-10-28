@@ -19,7 +19,7 @@ var platform: VZPlatformConfiguration { get set }
 @property (strong) VZPlatformConfiguration * platform;
 ```
 
-#### Discussion
+## Discussion
 
 This can be an instance of either [`VZGenericPlatformConfiguration`](../vzgenericplatformconfiguration.md) or [`VZMacPlatformConfiguration`](../vzmacplatformconfiguration.md). The default is `VZGenericPlatformConfiguration`.
 

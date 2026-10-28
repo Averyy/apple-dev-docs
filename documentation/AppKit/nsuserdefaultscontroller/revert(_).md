@@ -20,7 +20,7 @@ func revert(_ sender: Any?)
 - (void) revert:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 The receiver invokes [`discardEditing`](../../ObjectiveC/nsobject-swift.class/discardediting.md) on any currently registered editors. The `sender` is typically the object that invoked this method.
 

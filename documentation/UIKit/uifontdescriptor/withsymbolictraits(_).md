@@ -24,7 +24,7 @@ func withSymbolicTraits(_ symbolicTraits: UIFontDescriptor.SymbolicTraits) -> UI
 - (UIFontDescriptor *) fontDescriptorWithSymbolicTraits:(UIFontDescriptorSymbolicTraits) symbolicTraits;
 ```
 
-#### Return Value
+## Return Value
 
 The new font descriptor.
 

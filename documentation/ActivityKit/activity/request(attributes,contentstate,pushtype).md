@@ -18,11 +18,11 @@ Requests and starts a Live Activity.
 static func request(attributes: Attributes, contentState: Activity<Attributes>.ContentState, pushType: PushType? = nil) throws -> Activity<Attributes>
 ```
 
-#### Return Value
+## Return Value
 
 The object that represents the started Live Activity.
 
-#### Discussion
+## Discussion
 
 Use this function to request and start a Live Activity from your app while it’s in the foreground. Note that you can’t do this while your app is in the background, unless you adopt [App Intents](../../AppIntents/AppIntents.md) and start the Live Activity using a [`LiveActivityIntent`](../../AppIntents/liveactivityintent.md).
 

@@ -25,7 +25,7 @@ var drawableID: Int { get }
 @property (nonatomic, readonly) NSUInteger drawableID;
 ```
 
-#### Discussion
+## Discussion
 
 Drawable objects are usually owned by some other object, such as a [`CAMetalLayer`](../../QuartzCore/cametallayer.md). The owning object gives the first drawable it creates an ID of `0`, and it increments the ID by `1` for each additional drawable it creates.
 

@@ -5,13 +5,13 @@
 
 Check whether your app can use ARKit and respect people’s privacy.
 
-#### Overview
+## Overview
 
 In visionOS, ARKit can enable new kinds of experiences that leverage data such as hand tracking and world sensing. The system gates access to this kind of sensitive information. Because people can decline your app’s request to use ARKit data or revoke access later, you need to provide alternative ways to use your app and to handle cases where your app loses access to data.
 
 ![A screenshot that shows the system permission alert for hand tracking. The options are Don't Allow and OK. The app-specific usage description is Track your hands to detect a heart gesture.](https://developer.apple.com/tutorials/images/com.apple.visionOS/request-data@2x.png)
 
-##### Add usage descriptions for ARKit data access
+### Add usage descriptions for ARKit data access
 
 People need to know why your app wants to access data from ARKit. Add the following keys to your app’s information property list to provide a user-facing usage description that explains how your app uses the data:
 
@@ -20,11 +20,11 @@ People need to know why your app wants to access data from ARKit. Add the follow
 
 > **Note**: World *tracking* — unlike world *sensing* — doesn’t require authorization. For more information, see [Tracking specific points in world space](./tracking-points-in-world-space.md).
 
-##### Choose between up-front or as-needed authorization
+### Choose between up-front or as-needed authorization
 
 You can choose when someone sees an authorization request to use ARKit data. If you need precise control over when the request appears, call the [`requestAuthorization(for:)`](../ARKit/arkitsession/requestauthorization%28for%29.md) method on [`ARKitSession`](../ARKit/arkitsession.md) to explicitly authorize access at the time you call it. Otherwise, people see an authorization request when you call the [`run(_:)`](../ARKit/arkitsession/run%28_%29.md) method. This is an implicit authorization because the timing of the request depends entirely on when you start the session.
 
-##### Open a space and run a session
+### Open a space and run a session
 
 To help protect people’s privacy, ARKit data is available only when your app presents a Full Space and other apps are hidden. Present one of these space styles before calling the [`run(_:)`](../ARKit/arkitsession/run%28_%29.md) method.
 
@@ -77,7 +77,7 @@ struct ContentView: View {
 }
 ```
 
-##### Provide alternatives for declined and revoked authorizations
+### Provide alternatives for declined and revoked authorizations
 
 Someone might not want to give your app access to data from ARKit, or they might choose to revoke that access later in Settings. Handle these situations gracefully, and remove or transition content that depends on ARKit data. For example, you might fade out content that you need to remove, or recenter content to an appropriate starting position. If your app uses ARKit data to place content in a person’s surroundings, consider letting people place content using the system-provided interface.
 

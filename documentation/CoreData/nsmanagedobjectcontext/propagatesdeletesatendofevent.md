@@ -25,7 +25,7 @@ var propagatesDeletesAtEndOfEvent: Bool { get set }
 @property (nonatomic) BOOL propagatesDeletesAtEndOfEvent;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the receiver propagates deletes at the end of the event in which a change was made, [`false`](../../Swift/false.md) if it propagates deletes only during a save operation. The default is [`true`](../../Swift/true.md).
 

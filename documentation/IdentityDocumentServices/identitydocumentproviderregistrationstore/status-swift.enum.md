@@ -17,7 +17,7 @@ Defines a status for the registration store.
 enum Status
 ```
 
-#### Discussion
+## Discussion
 
 This value indicates whether the app is able to register documents with the system.
 

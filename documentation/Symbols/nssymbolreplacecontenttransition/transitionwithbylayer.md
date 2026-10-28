@@ -21,7 +21,7 @@ An effect that replaces each layer separately.
 - (instancetype) transitionWithByLayer;
 ```
 
-#### Return Value
+## Return Value
 
 A copy of the transition that replaces each layer separately.
 

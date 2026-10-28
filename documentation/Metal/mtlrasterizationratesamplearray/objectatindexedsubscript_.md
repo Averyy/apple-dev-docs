@@ -20,7 +20,7 @@ Retrieves the sample value at the specified index.
 - (NSNumber *) objectAtIndexedSubscript:(NSUInteger) index;
 ```
 
-#### Return Value
+## Return Value
 
 An [`NSNumber`](../../Foundation/nsnumber.md) object. It contains the value of the sample at the specified index or `0` if the index you specified is out of bounds.
 

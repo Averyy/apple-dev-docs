@@ -20,7 +20,7 @@ A mode that displays the clearcoat normal of a material as the surface color.
 case clearcoatNormal
 ```
 
-#### Discussion
+## Discussion
 
 Adding a [`ModelDebugOptionsComponent`](../../modeldebugoptionscomponent.md) with a visualization mode of `clearcoatNormal` to an entity tells RealityKit to draw the world space clearcoat normal as its surface color. RealityKit draws the xyz value as a rgb color value after it has been transformed from tangent to world space.
 

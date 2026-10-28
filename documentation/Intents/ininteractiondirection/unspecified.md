@@ -25,7 +25,7 @@ case unspecified
 INInteractionDirectionUnspecified
 ```
 
-#### Discussion
+## Discussion
 
 Choose this value for interactions that do not involve information moving onto or off of the device. This is the default value.
 

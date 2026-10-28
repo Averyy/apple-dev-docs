@@ -23,7 +23,7 @@ static var mayAlreadyExist: NSFileProviderCreateItemOptions { get }
 NSFileProviderCreateItemMayAlreadyExist
 ```
 
-#### Discussion
+## Discussion
 
 Your extension should examine the item and determine whether it exists in your remote storage. Because the system may try to reimport a large number of items at once, avoid performing any computationally expensive tasks while trying to match items.
 

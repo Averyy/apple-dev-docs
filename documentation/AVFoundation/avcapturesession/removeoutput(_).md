@@ -24,7 +24,7 @@ func removeOutput(_ output: AVCaptureOutput)
 - (void) removeOutput:(AVCaptureOutput *) output;
 ```
 
-#### Discussion
+## Discussion
 
 You can call this method while the session is running.
 

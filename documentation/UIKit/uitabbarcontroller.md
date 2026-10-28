@@ -31,7 +31,7 @@ class UITabBarController
 - [Creating a custom container view controller](./creating-a-custom-container-view-controller.md)
 - [Managing content in your app’s windows](./managing-content-in-your-app-s-windows.md)
 
-#### Overview
+## Overview
 
 The tab bar interface displays tabs at the bottom of the window for selecting between the different modes and for displaying the views for that mode. This class is generally used as-is, but may also be subclassed.
 
@@ -45,7 +45,7 @@ Tab bar items are configured through their corresponding view controller. To ass
 
 As the user interacts with a tab bar interface, the tab bar controller object sends notifications about the interactions to its delegate. The delegate can be any object you specify but must conform to the [`UITabBarControllerDelegate`](./uitabbarcontrollerdelegate.md) protocol. You can use the delegate to prevent specific tab bar items from being selected and to perform additional tasks when tabs are selected. You can also use the delegate to monitor changes to the tab bar that are made by the More navigation controller, which is described in more detail in [The More navigation controller](./uitabbarcontroller.md#The-More-navigation-controller).
 
-##### The views of a tab bar controller
+### The views of a tab bar controller
 
 Because the [`UITabBarController`](./uitabbarcontroller.md) class inherits from the [`UIViewController`](./uiviewcontroller.md) class, tab bar controllers have their own view that’s accessible through the [`view`](./uiviewcontroller/view.md) property. The view for a tab bar controller is just a container for a tab bar view and the view containing your custom content. The tab bar view provides the selection controls for the user and consists of one or more tab bar items. The following image shows how these views are assembled to present the overall tab bar interface. Although the items in the tab bar and toolbar views can change, the views that manage them don’t. Only the custom content view changes to reflect the view controller for the currently selected tab.
 
@@ -53,7 +53,7 @@ Because the [`UITabBarController`](./uitabbarcontroller.md) class inherits from 
 
 You can use navigation controllers or custom view controllers as the root view controller for a tab. If the root view controller is a navigation controller, the tab bar controller makes further adjustments to the size of the displayed navigation content so that it doesn’t overlap the tab bar. Any views you display in a tab bar interface should therefore have their [`autoresizingMask`](./uiview/autoresizingmask-swift.property.md) property set to resize the view appropriately under any conditions.
 
-##### The More navigation controller
+### The More navigation controller
 
 The tab bar has limited space for displaying your custom items. If you add six or more custom view controllers to a tab bar controller, the tab bar controller displays only the first four items plus the standard More item on the tab bar. Tapping the More item brings up a standard interface for selecting the remaining items.
 
@@ -61,7 +61,7 @@ The interface for the standard More item includes an Edit button that allows the
 
 > **Note**:  Tab bar customization and the More interface are not available in tvOS.
 
-##### State preservation
+### State preservation
 
 When you assign a value to this view controller’s [`restorationIdentifier`](./uiviewcontroller/restorationidentifier.md) property, it preserves a reference to the view controller in the selected tab. At restore time, it uses the reference to select the tab with the same view controller.
 
@@ -69,7 +69,7 @@ When preserving a tab bar controller, assign unique restoration identifiers to t
 
 For more information about how state preservation and restoration works, see [App Programming Guide for iOS](https://developer.apple.com/library/archive/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40007072).
 
-##### Differences between iOS and tvOS
+### Differences between iOS and tvOS
 
 Tab bar controllers serve the same purpose in tvOS as in iOS, but provide slightly different user interface features:
 

@@ -15,7 +15,7 @@ A structure representing a request to retrieve information about a business.
 struct BusinessInformationRequest
 ```
 
-#### Overview
+## Overview
 
 To create an instance of this type, use the [`CellularServiceID`](../cellularserviceid.md) and [`RCSHandle`](../rcshandle.md) from an [`RCSMessage`](../rcsmessage.md) you receive in the RCS service’s [`incomingMessageNotifications`](./incomingmessagenotifications.md). Then call [`businessInformation(for:)`](./businessinformation%28for%29.md) on the RCS service, which returns an instance of the [`RCSService.Business`](./business.md) type.
 

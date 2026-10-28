@@ -21,11 +21,11 @@ Decodes the output from the upstream using a specified decoder.
 func decode<Item, Coder>(type: Item.Type, decoder: Coder) -> Publishers.Decode<Self, Item, Coder> where Item : Decodable, Coder : TopLevelDecoder, Self.Output == Coder.Input
 ```
 
-#### Return Value
+## Return Value
 
 A publisher that decodes a given type using a specified decoder and publishes the result.
 
-#### Discussion
+## Discussion
 
 Use [`decode(type:decoder:)`](./decode%28type,decoder%29.md) with a [`JSONDecoder`](../../Foundation/jsondecoder.md) (or a [`PropertyListDecoder`](../../Foundation/propertylistdecoder.md) for property lists) to decode data received from a [`URLSession.DataTaskPublisher`](../../Foundation/urlsession/datataskpublisher.md) or other data source using the [`Decodable`](../../Swift/decodable.md) protocol.
 

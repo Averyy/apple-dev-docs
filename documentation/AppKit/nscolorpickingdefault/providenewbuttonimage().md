@@ -21,11 +21,11 @@ func provideNewButtonImage() -> NSImage
 - (NSImage *) provideNewButtonImage;
 ```
 
-#### Return Value
+## Return Value
 
 The image for the mode button the user uses to select this picker in the color panel; that is, the color picker’s representation in the  `NSMatrix` of the `NSColorPanel`.
 
-#### Discussion
+## Discussion
 
 This image is the same one the color panel uses as an argument when sending the [`insertNewButtonImage(_:in:)`](./insertnewbuttonimage%28_,in%29.md) message.
 

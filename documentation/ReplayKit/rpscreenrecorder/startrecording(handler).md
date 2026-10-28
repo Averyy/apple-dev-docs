@@ -26,7 +26,7 @@ func startRecording(handler: (((any Error)?) -> Void)? = nil)
 - (void) startRecordingWithHandler:(void (^)(NSError *error)) handler;
 ```
 
-#### Discussion
+## Discussion
 
 Call [`startRecording(handler:)`](./startrecording%28handler%29.md) on an instance of the recorder to begin recording. When [`startRecording(handler:)`](./startrecording%28handler%29.md) is first called, an alert window appears asking the user to confirm recording. This alert window is also presented if it has been longer than 8 minutes since the last time [`startRecording(handler:)`](./startrecording%28handler%29.md) was called.
 

@@ -25,7 +25,7 @@ func setNotifyValue(_ enabled: Bool, for characteristic: CBCharacteristic)
 - (void) setNotifyValue:(BOOL) enabled forCharacteristic:(CBCharacteristic *) characteristic;
 ```
 
-#### Discussion
+## Discussion
 
 When you enable notifications for the characteristic’s value, the peripheral calls the [`peripheral(_:didUpdateNotificationStateFor:error:)`](../cbperipheraldelegate/peripheral%28_,didupdatenotificationstatefor,error%29.md) method of its delegate object to indicate if the action succeeded. If successful, the peripheral then calls the [`peripheral(_:didUpdateValueFor:error:)`](../cbperipheraldelegate/peripheral%28_,didupdatevaluefor,error%29-1xyna.md) method of its delegate object whenever the characteristic value changes. Because the peripheral chooses when it sends an update, your app should prepare to handle them as long as notifications or indications remain enabled. If the specified characteristic’s configuration allows both notifications and indications, calling this method enables notifications only. You can disable notifications and indications for a characteristic’s value by calling this method with the `enabled` parameter set to [`false`](../../Swift/false.md).
 

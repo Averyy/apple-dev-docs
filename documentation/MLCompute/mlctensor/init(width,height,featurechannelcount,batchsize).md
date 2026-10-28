@@ -23,7 +23,7 @@ convenience init(width: Int, height: Int, featureChannelCount: Int, batchSize: I
 + (instancetype) tensorWithWidth:(NSUInteger) width height:(NSUInteger) height featureChannelCount:(NSUInteger) featureChannelCount batchSize:(NSUInteger) batchSize;
 ```
 
-#### Discussion
+## Discussion
 
 The tensor data type is [`MLCDataType.float32`](../mlcdatatype/float32.md).
 

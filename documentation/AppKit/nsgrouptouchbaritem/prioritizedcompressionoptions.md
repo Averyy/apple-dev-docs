@@ -19,7 +19,7 @@ var prioritizedCompressionOptions: [NSUserInterfaceCompressionOptions] { get set
 @property (copy) NSArray<NSUserInterfaceCompressionOptions *> * prioritizedCompressionOptions;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property when you want to control the order of the system compression options, or if you want to use custom compression options.
 

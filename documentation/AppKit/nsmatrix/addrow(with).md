@@ -19,7 +19,7 @@ func addRow(with newCells: [NSCell])
 - (void) addRowWithCells:(NSArray<NSCell *> *) newCells;
 ```
 
-#### Discussion
+## Discussion
 
 This method redraws the receiver. Your code may need to send [`sizeToCells()`](./sizetocells%28%29.md) after sending this method to resize the receiver to fit the newly added cells.
 

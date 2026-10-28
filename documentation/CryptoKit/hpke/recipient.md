@@ -21,7 +21,7 @@ A type that represents the receiving side of an HPKE message exchange.
 struct Recipient
 ```
 
-#### Overview
+## Overview
 
 To decrypt and verify the identity of encrypted messages, initialize a `Recipient` specifying the appropriate cipher suite, the receiver’s private key, the encapsulated symmetric key, and the additional cryptographic material relevant to your chosen mode of operation. Call [`open(_:)`](./recipient/open%28_%29.md) or [`open(_:authenticating:)`](./recipient/open%28_,authenticating%29.md) on the `Recipient` instance for each message in turn to retrieve its cleartext. The recipient of the messages needs to process them in the same order as the `Sender`, using the same cipher suite, encryption mode, and key schedule information (`info` data). Use a separate `Recipient` instance for each stream of messages.
 

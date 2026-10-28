@@ -16,9 +16,9 @@ Add a new leaderboard to your app.
 - [App Store Connect API 3.7 release notes](./app-store-connect-api-3-7-release-notes.md)
 - [Configuring Game center activities](./configuring-game-center-activities.md)
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

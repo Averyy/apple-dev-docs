@@ -19,7 +19,7 @@ Automatic sizing behaviors for this markup.
 struct MarkupAutoresizing
 ```
 
-#### Overview
+## Overview
 
 Controls whether the markup automatically adjusts its dimensions to fit content changes.
 

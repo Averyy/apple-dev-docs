@@ -20,11 +20,11 @@ class func attribute(withName name: String, uri URI: String, stringValue: String
 + (id) attributeWithName:(NSString *) name URI:(NSString *) URI stringValue:(NSString *) stringValue;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSXMLNode` object of kind [`XMLNode.Kind.attribute`](./kind-swift.enum/attribute.md) or `nil` if the object couldn’t be created.
 
-#### Discussion
+## Discussion
 
 For example, in the attribute “bst:id=`12345’”, “bst” is the name qualifier (derived from the URI), “id” is the attribute name, and “12345” is the attribute value.
 

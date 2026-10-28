@@ -27,7 +27,7 @@ var expirationDate: Date! { get set }
 
 - [Adding your app’s content to Spotlight indexes](../adding-your-app-s-content-to-spotlight-indexes.md)
 
-#### Discussion
+## Discussion
 
 If you don’t set the [`expirationDate`](./expirationdate.md) property appropriately, the system automatically expires the item after a period of time.
 

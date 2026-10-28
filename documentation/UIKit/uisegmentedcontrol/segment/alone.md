@@ -23,7 +23,7 @@ case alone
 UISegmentedControlSegmentAlone
 ```
 
-#### Discussion
+## Discussion
 
 Applies only when [`numberOfSegments`](../numberofsegments.md) is 1.
 

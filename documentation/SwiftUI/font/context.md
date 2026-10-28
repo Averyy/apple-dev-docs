@@ -21,7 +21,7 @@ Information used to resolve a font.
 struct Context
 ```
 
-#### Overview
+## Overview
 
 > **See Also**: [`fontResolutionContext`](../environmentvalues/fontresolutioncontext.md), [`resolve(in:)`](./resolve%28in%29.md)
 

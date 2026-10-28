@@ -26,7 +26,7 @@ var reasonForWaitingToPlay: AVPlayer.WaitingReason? { get }
 @property (readonly, nullable) AVPlayerWaitingReason reasonForWaitingToPlay;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of the player’s [`timeControlStatus`](./timecontrolstatus-swift.property.md) is [`AVPlayer.TimeControlStatus.waitingToPlayAtSpecifiedRate`](./timecontrolstatus-swift.enum/waitingtoplayatspecifiedrate.md), you can use this property determine the reason the player is currently waiting for playback to begin or resume. Possible values for this property are:
 

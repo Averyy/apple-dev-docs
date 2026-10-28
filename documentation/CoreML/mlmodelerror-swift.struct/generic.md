@@ -21,7 +21,7 @@ An error code for runtime issues that don’t apply to the other error codes.
 static var generic: MLModelError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 Core ML typically throws this error when it encounters an internal problem.
 

@@ -24,7 +24,7 @@ static var minimizeMemory: MTLAccelerationStructureUsage { get }
 MTLAccelerationStructureUsageMinimizeMemory
 ```
 
-#### Discussion
+## Discussion
 
 The acceleration structures you build with this option can increase their build times and can reduce their intersection performance.
 

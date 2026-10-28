@@ -21,11 +21,11 @@ class func current() -> Self
 + (instancetype) currentHost;
 ```
 
-#### Return Value
+## Return Value
 
 `NSHost` object for the process’s host.
 
-#### Discussion
+## Discussion
 
 This method executes synchronously. The execution time of this method can be highly variable, depending on the local network configuration, and may block for several seconds if the network is unreachable. To avoid blocking execution on the main thread, you should call this method in an [`Operation`](../operation.md) or *Grand Central Dispatch* block that executes asynchronously in the background.
 

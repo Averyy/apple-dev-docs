@@ -22,7 +22,7 @@ Returns `-1` if this value is negative and `1` if it’s positive; otherwise, `0
 func signum() -> Self
 ```
 
-#### Return Value
+## Return Value
 
 The sign of this number, expressed as an integer of the same type.
 

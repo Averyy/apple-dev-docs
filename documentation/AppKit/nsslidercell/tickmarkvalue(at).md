@@ -19,7 +19,7 @@ func tickMarkValue(at index: Int) -> Double
 - (double) tickMarkValueAtIndex:(NSInteger) index;
 ```
 
-#### Return Value
+## Return Value
 
 The value represented by the specified tick mark.
 

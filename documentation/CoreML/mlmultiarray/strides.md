@@ -25,7 +25,7 @@ var strides: [NSNumber] { get }
 @property (nonatomic, readonly) NSArray<NSNumber *> * strides;
 ```
 
-#### Discussion
+## Discussion
 
 See [`subscript(_:)`](./subscript%28_%29-2hh91.md) and [`subscript(_:)`](./subscript%28_%29-3d9el.md) for code examples that use `strides`.
 

@@ -15,7 +15,7 @@ A cache layer.
 static let cache: DiskImage.LayerType
 ```
 
-#### Discussion
+## Discussion
 
 Cache layers store all the blocks read from the layers beneath it in the stack. A cache layer is useful when the base image is on a network mount, for example.
 

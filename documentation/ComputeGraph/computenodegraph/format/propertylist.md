@@ -21,7 +21,7 @@ A compact binary property list representation.
 case propertyList
 ```
 
-#### Discussion
+## Discussion
 
 Prefer this format when file size or read and write performance matter more than human readability.
 

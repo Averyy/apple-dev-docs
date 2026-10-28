@@ -15,7 +15,7 @@ The array of `CKDBRecordResult` objects that represent a record.
 attribute CKDBRecordResult[] recordResults;
 ```
 
-#### Discussion
+## Discussion
 
 `CKDBRecordResult` objects are used for representing a record when the lookup operation can potentially return deleted records or fail partially when looking up some of the record.
 

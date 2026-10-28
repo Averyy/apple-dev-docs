@@ -24,7 +24,7 @@ let HMCharacteristicTypeDigitalZoom: String
 extern NSString * const HMCharacteristicTypeDigitalZoom;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is a floating point number used as a multiplier on the image sourced by the video RTP service.
 

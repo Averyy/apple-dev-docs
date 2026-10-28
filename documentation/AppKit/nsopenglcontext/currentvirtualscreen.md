@@ -21,7 +21,7 @@ var currentVirtualScreen: GLint { get set }
 @property GLint currentVirtualScreen;
 ```
 
-#### Return Value
+## Return Value
 
 The virtual screen number, which is a value between 0 and the number of virtual screens minus one.
 

@@ -16,7 +16,7 @@ A prepopulated billing address.
 ApplePayPaymentContact billingContact;
 ```
 
-#### Discussion
+## Discussion
 
 If you have an up-to-date billing address for the customer on file, you can set it here. This billing address appears in the payment sheet. The user can either use the address you specify or select a different address.
 

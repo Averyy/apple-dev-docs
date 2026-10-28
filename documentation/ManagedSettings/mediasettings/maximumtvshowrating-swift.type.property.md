@@ -17,7 +17,7 @@ The metadata for the setting that controls the maximum TV show rating.
 static let maximumTVShowRating: BoundedSettingMetadata<Int>
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `1000` and the bounds are `0...1000`.
 

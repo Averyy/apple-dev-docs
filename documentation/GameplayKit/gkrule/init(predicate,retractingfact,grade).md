@@ -24,11 +24,11 @@ convenience init(predicate: NSPredicate, retractingFact fact: any NSObjectProtoc
 + (instancetype) ruleWithPredicate:(NSPredicate *) predicate retractingFact:(id<NSObject>) fact grade:(float) grade;
 ```
 
-#### Return Value
+## Return Value
 
 A new rule object.
 
-#### Discussion
+## Discussion
 
 Rules created using this method encode their predicate and action when archived with the [`NSKeyedArchiver`](../../Foundation/nskeyedarchiver.md) class. You can use this feature to support saving and loading rules, editing rules in-game, or building tools that separate your gameplay design and game programming tasks.
 

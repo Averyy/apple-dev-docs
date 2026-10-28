@@ -20,7 +20,7 @@ var isProcessRestoreEnabled: Bool { get set }
 @property (atomic, readwrite, getter=isProcessRestoreEnabled) BOOL processRestoreEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 True if this tap should save tapped processes by bundle ID when they exit, and restore them to the tap when they start up again.
 

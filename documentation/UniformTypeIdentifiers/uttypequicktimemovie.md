@@ -21,7 +21,7 @@ A type that represents a QuickTime movie.
 extern UTType * const UTTypeQuickTimeMovie;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `com.apple.quicktime-movie`.
 

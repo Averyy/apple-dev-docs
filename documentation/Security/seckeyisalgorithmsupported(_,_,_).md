@@ -30,7 +30,7 @@ Boolean SecKeyIsAlgorithmSupported(SecKeyRef key, SecKeyOperationType operation,
 - [Signing and Verifying](./signing-and-verifying.md)
 - [Using Keys for Encryption](./using-keys-for-encryption.md)
 
-#### Return Value
+## Return Value
 
 A Boolean indicating whether the key can be used for the given operation and algorithm.
 

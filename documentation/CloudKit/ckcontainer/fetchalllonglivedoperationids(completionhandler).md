@@ -23,7 +23,7 @@ Fetches the IDs of any long-lived operations that are running.
 func fetchAllLongLivedOperationIDs(completionHandler: @escaping @Sendable ([CKOperation.ID]?, (any Error)?) -> Void)
 ```
 
-#### Discussion
+## Discussion
 
 The closure doesn’t return a value and takes the following parameters:
 

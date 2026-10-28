@@ -24,7 +24,7 @@ case cfErrorHTTPConnectionLost
 kCFErrorHTTPConnectionLost
 ```
 
-#### Discussion
+## Discussion
 
 This usually indicates a highly overloaded server.
 

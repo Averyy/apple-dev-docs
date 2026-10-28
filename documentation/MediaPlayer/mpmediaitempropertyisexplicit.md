@@ -25,7 +25,7 @@ let MPMediaItemPropertyIsExplicit: String
 extern NSString * const MPMediaItemPropertyIsExplicit;
 ```
 
-#### Discussion
+## Discussion
 
 This value is an [`NSNumber`](../Foundation/nsnumber.md) object that represents a `BOOL` data type.
 

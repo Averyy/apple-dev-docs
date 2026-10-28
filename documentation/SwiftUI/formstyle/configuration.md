@@ -21,7 +21,7 @@ The properties of a form instance.
 typealias Configuration = FormStyleConfiguration
 ```
 
-#### Discussion
+## Discussion
 
 You receive a `configuration` parameter of this type — which is an alias for the [`FormStyleConfiguration`](../formstyleconfiguration.md) type — when you implement the required [`makeBody(configuration:)`](./makebody%28configuration%29.md) method in a custom form style implementation.
 

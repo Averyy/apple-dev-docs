@@ -4,7 +4,7 @@
 
 Specify values that represent general color spaces.
 
-#### Overview
+## Overview
 
 The data type [`CMBitmap`](../cmbitmap.md) defines a bitmap for an image whose colors can be matched with the function [CWMatchColors](./api-1805108-cwmatchcolors.md) or color-checked with the function [CWCheckColors](./api-1805111-cwcheckcolors.md).
 
@@ -14,7 +14,7 @@ For the `CWMatchBitmap` function to perform color matching successfully, the col
 
 This enumeration defines constants for abstract color spaces which, when combined with a packing format constant as described in [Color Packing for Color Spaces](./api-1560270-color_packing_for_color_spaces.md), can be used in the `space` field of the `CMBitmap` structure. The combined constants are shown in [`CMBitmapColorSpace`](../cmbitmapcolorspace.md).
 
-##### Version-Notes
+### Version-Notes
 
 The constants `cmRGBASpace` and `cmGrayASpace` were moved to this enum from [`CMBitmapColorSpace`](../cmbitmapcolorspace.md) in ColorSync version 2.5.
 

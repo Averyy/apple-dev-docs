@@ -5,11 +5,11 @@
 
 Extend your app’s appeal to users by adding subtitles and alternative audio tracks in their native language.
 
-#### Overview
+## Overview
 
 As a developer, you want to make your apps accessible to as broad an audience as possible. One way for you to extend your app’s reach is to make it available to users in their native language as well as to provide support for users who have have hearing impairments or other accessibility needs. AVKit and AVFoundation simplify handling these concerns by providing built-in support for presenting subtitles and closed captions, and for selecting alternative audio and video tracks. If you’re building your own custom player or would like to present your own media-selection interface, use the features provided by AVFoundation’s [`AVMediaSelectionGroup`](./avmediaselectiongroup.md) and [`AVMediaSelectionOption`](./avmediaselectionoption.md) classes.
 
-##### Retrieve the available media options
+### Retrieve the available media options
 
 `AVMediaSelectionOption` models an alternative audio, video, or text track contained within the source media. Media options are used to select alternative camera angles, present audio dubbed in a user’s native language, or display subtitles and closed captions. You determine which alternative media presentations are available by asynchronously loading and calling the asset’s [`availableMediaCharacteristicsWithMediaSelectionOptions`](./avasset/availablemediacharacteristicswithmediaselectionoptions.md) property, which returns an array of strings indicating the available media characteristics. The possible values returned are [`audible`](./avmediacharacteristic/audible.md) (alternative audio tracks), [`visual`](./avmediacharacteristic/visual.md) (alternative video tracks), and [`legible`](./avmediacharacteristic/legible.md) (subtitles and closed captions).
 
@@ -45,7 +45,7 @@ The output for an asset containing audio and subtitle media options looks simila
   Option: French
 ```
 
-##### Select the desired media option
+### Select the desired media option
 
 After you’ve retrieved an `AVMediaSelectionGroup` object for a particular media characteristic and identified the desired `AVMediaSelectionOption` object, the next step is to select it. You select a media option by calling [`select(_:in:)`](./avplayeritem/select%28_,in%29.md) on the active [`AVPlayerItem`](./avplayeritem.md). For instance, to present the asset’s Spanish subtitle option, you could select it as follows:
 

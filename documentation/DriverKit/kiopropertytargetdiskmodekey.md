@@ -16,7 +16,7 @@
 #define kIOPropertyTargetDiskModeKey
 ```
 
-#### Discussion
+## Discussion
 
 This key is used to indicate the device is another computer in Target Disk Mode.
 

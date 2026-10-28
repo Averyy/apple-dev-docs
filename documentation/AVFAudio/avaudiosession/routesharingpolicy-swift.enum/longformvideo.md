@@ -22,7 +22,7 @@ case longFormVideo
 AVAudioSessionRouteSharingPolicyLongFormVideo
 ```
 
-#### Discussion
+## Discussion
 
 Apps that play long-form video content can use this policy to play to the same output as other long-form video apps, such as the built-in TV app. These apps should also set the `AVInitialRouteSharingPolicy` key in their `Info.plist` to `LongFormVideo`. Video content not using this route sharing policy remains local to the playback device even when the system is routing long-form video content to AirPlay.
 

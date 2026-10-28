@@ -20,7 +20,7 @@ func mergeSegments(_ videoSegments: [Any]!, andAudio audioSegment: URL!, toFile 
 - (void) mergeSegments:(NSArray *) videoSegments andAudio:(NSURL *) audioSegment toFile:(NSURL *) file;
 ```
 
-#### Discussion
+## Discussion
 
 During a distributed encoding process, the encoder extension processes audio and video segments separately on the available encoder instances. Once the encoding job completes, the Compressor app invokes [`mergeSegments(_:andAudio:toFile:)`](./mergesegments%28_,andaudio,tofile%29.md): on one of the encoder instances with an audio segment URL, a list of video segment URLs, and the desired output file URL. Implement this method to merge multiple encoded video segments in order, with a complete audio segment, into a single output file.
 

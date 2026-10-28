@@ -15,7 +15,7 @@ A Boolean value indicating whether this push notification is a query notificatio
 readonly attribute Boolean isQueryNotification;
 ```
 
-#### Discussion
+## Discussion
 
 `true` if this notification is a [`CloudKit.QueryNotification`](../cloudkit.querynotification.md) object; otherwise, `false`.
 

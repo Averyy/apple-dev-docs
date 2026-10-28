@@ -18,7 +18,7 @@ An effect that alters a view’s appearance when a pointer enters the current re
 enum UIPointerEffect
 ```
 
-#### Overview
+## Overview
 
 `UIPointerEffect` automatically attempts to determine the appropriate effect for the given preview. Use one of its enumeration cases to request a specific system-provided effect.
 

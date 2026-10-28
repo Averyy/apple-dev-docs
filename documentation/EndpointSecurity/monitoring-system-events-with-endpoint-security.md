@@ -10,13 +10,13 @@ Receive notifications and authorization requests for sensitive operations by cre
 - macOS 11.0+
 - Xcode 13.0+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC 2020 session [10159: Build an Endpoint Security App](http://developer.apple.com/wwdc20/10159). For further information, see WWDC 2019 session [702: System Extensions and DriverKit](https://developer.apple.com/videos/play/wwdc2019/702/).
 
 `SampleEndpointApp` is a minimal system extension that shows how to use the Endpoint Security library. You can configure the extension to either receive notifications of events after they occur, or to allow or deny in-flight events.
 
-##### Configure the Sample Code Project
+### Configure the Sample Code Project
 
 This sample code project only runs on macOS 11 and later.
 

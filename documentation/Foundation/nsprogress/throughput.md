@@ -21,7 +21,7 @@ A value that represents the speed of data processing, in bytes per second.
 @property (copy, nullable) NSNumber * throughput;
 ```
 
-#### Discussion
+## Discussion
 
 If present, [`Progress`](../progress.md) presents additional information in its localized description by setting a value in the `userInfo` dictionary.
 

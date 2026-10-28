@@ -25,7 +25,7 @@ case lineBreakMode
 kCTParagraphStyleSpecifierLineBreakMode
 ```
 
-#### Discussion
+## Discussion
 
 Type: [`CTLineBreakMode`](../ctlinebreakmode.md). Default value: [`CTLineBreakMode.byWordWrapping`](../ctlinebreakmode/bywordwrapping.md). Affects: [`CTFramesetter`](../ctframesetter.md).
 

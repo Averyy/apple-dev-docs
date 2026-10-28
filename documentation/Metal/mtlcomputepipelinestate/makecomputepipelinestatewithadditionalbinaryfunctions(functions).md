@@ -25,7 +25,7 @@ func makeComputePipelineStateWithAdditionalBinaryFunctions(functions: [any MTLFu
 - (id<MTLComputePipelineState>) newComputePipelineStateWithAdditionalBinaryFunctions:(NSArray<id<MTLFunction>> *) functions error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A new compute pipeline state with access to the provided functions. When this value is `nil`, an error occurred during handle creation.
 

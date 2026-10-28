@@ -21,7 +21,7 @@ A type that represents a Perl script.
 extern UTType * const UTTypePerlScript;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.perl-script`.
 

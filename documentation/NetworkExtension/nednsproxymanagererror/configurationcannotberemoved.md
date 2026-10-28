@@ -23,7 +23,7 @@ case configurationCannotBeRemoved
 NEDNSProxyManagerErrorConfigurationCannotBeRemoved
 ```
 
-#### Discussion
+## Discussion
 
 This error occurs if you attempt to use a call to the [`removeFromPreferences(completionHandler:)`](../nednsproxymanager/removefrompreferences%28completionhandler%29.md) method to remove the DNS proxy configuration when an installed configuration profile specifies a baseline DNS proxy configuration. You can only call the removal method in a development environment where no configuration profile exists.
 

@@ -21,7 +21,7 @@ Labeled data that you plot in a chart using marks.
 struct PlottableValue<Value> where Value : Plottable
 ```
 
-#### Overview
+## Overview
 
 Provide a `PlottableValue` to a `Mark` property (e.g., x, y, foregroundStyle) to plot data values with the mark property.
 

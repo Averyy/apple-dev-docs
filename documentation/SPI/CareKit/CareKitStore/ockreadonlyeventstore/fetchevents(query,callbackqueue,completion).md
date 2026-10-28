@@ -18,7 +18,7 @@ The completion will be called with an error if there’s an issue accessing the 
 func fetchEvents(query: OCKEventQuery, callbackQueue: DispatchQueue, completion: @escaping OCKResultClosure<[Event]>)
 ```
 
-#### Discussion
+## Discussion
 
 The stream yields a new value whenever the result changes and yields an error if there’s an issue accessing the store or fetching results.
 

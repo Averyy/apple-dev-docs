@@ -24,7 +24,7 @@ var hardwareModel: VZMacHardwareModel { get set }
 
 - [Installing macOS on a Virtual Machine](../installing-macos-on-a-virtual-machine.md)
 
-#### Discussion
+## Discussion
 
 When creating a VM, the [`hardwareModel`](./hardwaremodel.md) depends on the restore image that you use to install macOS.
 

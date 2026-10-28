@@ -21,7 +21,7 @@ A base type that represents bookmark data.
 extern UTType * const UTTypeBookmark;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.bookmark`.
 

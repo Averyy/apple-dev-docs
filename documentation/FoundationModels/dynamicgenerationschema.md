@@ -24,7 +24,7 @@ struct DynamicGenerationSchema
 
 - [Generating Swift data structures with guided generation](./generating-swift-data-structures-with-guided-generation.md)
 
-#### Overview
+## Overview
 
 An individual schema may reference other schemas by name, and references are resolved when converting a set of dynamic schemas into a [`GenerationSchema`](./generationschema.md).
 

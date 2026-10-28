@@ -19,11 +19,11 @@ func getLinkType() -> BluetoothLinkType
 - (BluetoothLinkType) getLinkType;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the link type for the baseband connection. If no baseband connection is present, kBluetoothLinkTypeNone is returned.
 
-#### Discussion
+## Discussion
 
 This method only returns a valid result if a baseband connection is present (-isConnected returns TRUE).
 

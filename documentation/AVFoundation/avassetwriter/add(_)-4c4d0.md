@@ -26,7 +26,7 @@ func add(_ input: AVAssetWriterInput)
 - (void) addInput:(AVAssetWriterInput *) input;
 ```
 
-#### Discussion
+## Discussion
 
 You can’t add inputs after asset writing begins.
 

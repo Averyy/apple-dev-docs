@@ -25,7 +25,7 @@ typealias CTFontPriority = UInt32
 typedef uint32_t CTFontPriority;
 ```
 
-#### Discussion
+## Discussion
 
 Use the values of this enumeration for [`kCTFontPriorityAttribute`](./kctfontpriorityattribute.md).
 

@@ -25,7 +25,7 @@ func CFLocaleCopyCommonISOCurrencyCodes() -> CFArray!
 extern CFArrayRefCFLocaleCopyCommonISOCurrencyCodes();
 ```
 
-#### Return Value
+## Return Value
 
 An array of CFString objects that represents ISO currency codes for currencies in common use. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 

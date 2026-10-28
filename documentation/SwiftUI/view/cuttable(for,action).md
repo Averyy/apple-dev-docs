@@ -19,11 +19,11 @@ nonisolated
 func cuttable<T>(for payloadType: T.Type = T.self, action: @escaping () -> [T]) -> some View where T : Transferable
 ```
 
-#### Return Value
+## Return Value
 
 A view that sends one or more items to the Clipboard in response to a Cut command.
 
-#### Discussion
+## Discussion
 
 Use this modifier to remove one or more items from a collection of items and then move the items to the Clipboard when someone issues a Cut command. People issue a Cut command by choosing Edit > Cut from the app’s menu, or by using the Command-X keyboard shortcut. The system enables the Cut command for your app when it detects cuttable content.
 

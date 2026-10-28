@@ -25,11 +25,11 @@ func vfloorf(_: vFloat) -> vFloat
 extern vFloat vfloorf(vFloat );
 ```
 
-#### Return Value
+## Return Value
 
 Returns a vector of floating-point values, each of which is the floor of the corresponding value in `A`.
 
-##### Parameters
+### Parameters
 
 - **A**: The input vector.
 

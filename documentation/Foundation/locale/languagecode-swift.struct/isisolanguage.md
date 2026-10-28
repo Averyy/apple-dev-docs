@@ -21,7 +21,7 @@ A Boolean value that indicates whether this language code is in the list of ISO-
 var isISOLanguage: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 The following code snippet illustrates use of the [`isISOLanguage`](./isisolanguage.md) value.
 

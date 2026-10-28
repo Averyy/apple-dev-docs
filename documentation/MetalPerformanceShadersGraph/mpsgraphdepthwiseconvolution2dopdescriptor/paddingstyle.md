@@ -24,7 +24,7 @@ var paddingStyle: MPSGraphPaddingStyle { get set }
 @property (nonatomic, readwrite) MPSGraphPaddingStyle paddingStyle;
 ```
 
-#### Discussion
+## Discussion
 
 Default value is `MPSGraphPaddingStyleExplicit`.
 

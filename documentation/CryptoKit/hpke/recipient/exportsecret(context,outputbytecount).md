@@ -21,7 +21,7 @@ Exports a secret given domain-separation context and the desired output length.
 func exportSecret<Context>(context: Context, outputByteCount: Int) throws -> SymmetricKey where Context : DataProtocol
 ```
 
-#### Return Value
+## Return Value
 
 The exported secret.
 

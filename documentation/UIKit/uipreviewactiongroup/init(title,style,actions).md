@@ -24,7 +24,7 @@ convenience init(title: String, style: UIPreviewAction.Style, actions: [UIPrevie
 + (instancetype) actionGroupWithTitle:(NSString *) title style:(UIPreviewActionStyle) style actions:(NSArray<UIPreviewAction *> *) actions;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized peek quick action group with your specified title, style, and submenu of peek quick actions.
 

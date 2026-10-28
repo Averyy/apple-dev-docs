@@ -19,7 +19,7 @@ func drawBorderAndBackground(withFrame cellFrame: NSRect, in controlView: NSView
 - (void) drawBorderAndBackgroundWithFrame:(NSRect) cellFrame inView:(NSView *) controlView;
 ```
 
-#### Discussion
+## Discussion
 
 This method invokes the `NSCell` method [`imageRect(forBounds:)`](../nscell/imagerect%28forbounds%29.md), passing it `cellFrame`, to calculate the rectangle in which to draw the image. The cell invokes this method before invoking the methods to draw the other menu item components.
 

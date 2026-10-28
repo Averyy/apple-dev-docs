@@ -21,7 +21,7 @@ Returns the sign of the tensor’s elements.
 func sign() -> MLTensor
 ```
 
-#### Discussion
+## Discussion
 
 This operation returns `1.0` if the correspnding element is greater than `0`, `-1.0` if it is less than `0`, `-0.0` if it is equal to `-0.0`, and `+0.0` if it is equal to `+0.0`.
 

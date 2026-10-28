@@ -14,7 +14,7 @@ Build systems that run distributed code across multiple processes and devices.
 - tvOS 16.0+
 - watchOS 9.0+
 
-#### Overview
+## Overview
 
 Distributed actors share many characteristics with Swift actors, and include additional isolation checks to ensure location transparency and safety in a distributed environment. Similar to how actors make it easier to write concurrent code that’s safe and correct to run on a single computer, distributed actors make it easier to write code that runs across multiple computers.
 

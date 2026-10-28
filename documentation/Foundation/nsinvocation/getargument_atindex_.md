@@ -21,7 +21,7 @@ Returns by indirection the receiver’s argument at a specified index.
 - (void) getArgument:(void *) argumentLocation atIndex:(NSInteger) idx;
 ```
 
-#### Discussion
+## Discussion
 
 This method copies the argument stored at `index` into the storage pointed to by `buffer`. The size of `buffer` must be large enough to accommodate the argument value. When the argument value is an object, pass a pointer to the variable (or memory) into which the object should be placed.
 

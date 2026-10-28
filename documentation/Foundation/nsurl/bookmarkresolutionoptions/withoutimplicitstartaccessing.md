@@ -25,7 +25,7 @@ static var withoutImplicitStartAccessing: NSURL.BookmarkResolutionOptions { get 
 NSURLBookmarkResolutionWithoutImplicitStartAccessing
 ```
 
-#### Discussion
+## Discussion
 
 This option causes an implicit call to [`startAccessingSecurityScopedResource()`](../startaccessingsecurityscopedresource%28%29.md) on the returned URL when it’s ready to use the resource.
 

@@ -25,7 +25,7 @@ var emission: SCNMaterialProperty { get }
 @property (nonatomic, readonly) SCNMaterialProperty * emission;
 ```
 
-#### Discussion
+## Discussion
 
 You can use an *emissive map* texture to simulate parts of a surface that glow with their own light. SceneKit does not treat the material as a light source—rather, the emission property determines colors for a material independent of lighting. (To create an object that appears to glow, you may wish to combine a geometry with an emissive map and additional [`SCNLight`](../scnlight.md) objects added to the scene.)
 

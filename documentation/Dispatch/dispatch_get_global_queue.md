@@ -21,11 +21,11 @@ Returns a system-defined global concurrent queue with the specified quality-of-s
 extern dispatch_queue_global_tdispatch_get_global_queue(intptr_t identifier, uintptr_t flags);
 ```
 
-#### Return Value
+## Return Value
 
 The requested global concurrent queue.
 
-#### Discussion
+## Discussion
 
 This function returns a queue suitable for executing tasks with the specified quality-of-service level. Calls to the [`suspend()`](./dispatchobject/suspend%28%29.md), [`resume()`](./dispatchobject/resume%28%29.md), and [`dispatch_set_context`](./dispatch_set_context.md) functions have no effect on the returned queues.
 

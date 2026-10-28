@@ -20,7 +20,7 @@ func anchor(for node: SCNNode) -> ARAnchor?
 - (ARAnchor *) anchorForNode:(SCNNode *) node;
 ```
 
-#### Return Value
+## Return Value
 
 The [`ARAnchor`](../aranchor.md) object tracking the node, or `nil` if the node is not associated with an anchor or not in the view’s scene.
 

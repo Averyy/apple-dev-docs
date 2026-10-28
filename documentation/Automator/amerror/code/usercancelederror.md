@@ -20,7 +20,7 @@ case userCanceledError
 AMUserCanceledError
 ```
 
-#### Discussion
+## Discussion
 
 This error is the same as the AppleScript error [`userCanceledErr`](../../../kernel/api-1645157-anonymous/usercancelederr.md). When an Apple Event is canceled by the user, a running action may return this error. Automator ignores the error and stops the workflow gracefully, without displaying the error to the user.
 

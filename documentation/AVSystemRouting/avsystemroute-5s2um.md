@@ -21,21 +21,21 @@ final class AVSystemRoute
 
 - [Routing and streaming media to remote devices](./routing-and-streaming-media-to-remote-devices.md)
 
-#### Overview
+## Overview
 
 Use this object to control playback sessions, communicate with remote applications through data channels, and manage the lifecycle of remote connections.
 
 The system route provides a high-level abstraction for routing media content to external devices such as TVs, speakers, or other compatible endpoints. You can create multiple sessions on a single route to manage different playback contexts or communication channels.
 
-#### Manage sessions
+## Manage sessions
 
 Create an [`AVSystemRouteSession`](./avsystemroutesession-gp78.md) to initiate playback or communication with the remote device.
 
-#### Access the protocol identifier
+## Access the protocol identifier
 
 The [`protocolType`](./avsystemroute-5s2um/protocoltype.md) property identifies the communication protocol used by the active route.
 
-#### Send and receive data
+## Send and receive data
 
 Use the [`routeDataChannel`](./avsystemroute-5s2um/routedatachannel.md) property to send and receive custom data with the extension outside of any media session. This enables control messages, state synchronization, and other bidirectional communication needs.
 

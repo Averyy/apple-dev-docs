@@ -15,13 +15,13 @@ Metrics for brands promoted object type.
 object BrandsMetrics
 ```
 
-#### Discussion
+## Discussion
 
 The `BrandsMetrics` object is the base metrics for brands campaign reports. It includes spend, impression, and tap metrics shared with apps, plus brands-specific engagement actions (get directions, tap URL, call, share, get the app, gallery engagement) and their associated rate and cost breakdowns.
 
 All action count fields reference [`ActionMetrics`](./actionmetrics.md) objects. Cost fields reference [`CostMetrics`](./costmetrics.md). Rate fields reference [`RateMetrics`](./ratemetrics.md). Monetary spend fields reference [`Money`](./money.md).
 
-##### Example
+### Example
 
 ```json
 {

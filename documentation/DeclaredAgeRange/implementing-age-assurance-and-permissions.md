@@ -12,13 +12,13 @@ Create a significant change flow to inform people about important updates in you
 - Mac Catalyst 26.5+
 - Xcode 27.0+
 
-#### Overview
+## Overview
 
 When you introduce significant changes that affect how people interact with your app, you may be required to inform people about those changes. In certain regions, you’re also required to obtain parental approval before minors can continue using your app. For more information on complying with age assurance laws and related requirements, refer to [Design safe and age‑appropriate experiences for your apps and games](https://developer.apple.com/kids/).
 
 This sample app demonstrates how to implement a significant change flow using [Declared Age Range](./DeclaredAgeRange.md), [PermissionKit](../PermissionKit/PermissionKit.md), and [iCloud key-value storage](https://developer.apple.com/library/archive/documentation/General/Conceptual/iCloudDesignGuide/Chapters/DesigningForKey-ValueDataIniCloud.html).
 
-#### Configure the sample code project
+## Configure the sample code project
 
 To configure the sample code project, do the following in Xcode:
 
@@ -32,7 +32,7 @@ After configuring the project, sign in to iCloud on a device with iOS 26.4 or la
 
 > **Note**: To test this sample in the sandbox environment, create a [Sandbox Apple Account](https://developer.apple.com/help/app-store-connect/test-in-app-purchases/create-a-sandbox-apple-account/), then follow the steps in [Testing age assurance in sandbox](../StoreKit/testing-age-assurance-in-sandbox.md).
 
-#### Detect regulatory requirements
+## Detect regulatory requirements
 
 Before showing the significant change flow, the sample app checks whether the person is in a region that requires age assurance. `ComplianceManager` calls `AgeRangeService.shared.requiredRegulatoryFeatures` and inspects the returned set to determine which requirements apply:
 
@@ -43,7 +43,7 @@ isComplianceRequired = !regulatoryFeatures.isEmpty
 
 If the set contains [`AgeRangeService.RegulatoryFeature.significantAppChangeRequiresParentalConsent`](./agerangeservice/regulatoryfeature/significantappchangerequiresparentalconsent.md), the app requests parental approval for minors. If it contains [`AgeRangeService.RegulatoryFeature.significantAppChangeRequiresAdultNotification`](./agerangeservice/regulatoryfeature/significantappchangerequiresadultnotification.md), the app prompts verified adults to acknowledge the changes. When neither feature is present, the app skips the flow entirely.
 
-#### Request the person’s age range
+## Request the person’s age range
 
 When the sample app requires compliance, `SignificantChangeView` calls the `requestAgeRange()` environment action to present a system dialog asking the person to share their age range. The app passes an age gate of 18 to distinguish minors from adults:
 
@@ -59,7 +59,7 @@ let result = AgeRangeResult.from(response)
 - **`.unverifiedAdult`**: The person is an adult without a confirmed age declaration.
 - **`.declinedSharing`**: The person declined to share their age range.
 
-#### Handle the significant change flow
+## Handle the significant change flow
 
 The sample app routes each age-range result through a different path.
 
@@ -97,7 +97,7 @@ case .unverifiedAdult:
     phase = .blocked
 ```
 
-#### Request parental approval and track acknowledged changes
+## Request parental approval and track acknowledged changes
 
 `RequestParentalApprovalView` uses a [`PermissionButton`](../PermissionKit/permissionbutton.md) to send the `PermissionQuestion` to the parent or guardian’s device. The sample app entry point listens for the parent’s response using `AskCenter.shared.responses(for:)`. When the parent approves the request, the app marks all significant changes as handled. When the parent denies the request, the app prevents the minor from using it:
 

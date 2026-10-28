@@ -19,7 +19,7 @@ func valueType(for dimension: NSTextBlock.Dimension) -> NSTextBlock.ValueType
 - (NSTextBlockValueType) valueTypeForDimension:(NSTextBlockDimension) dimension;
 ```
 
-#### Return Value
+## Return Value
 
 The value type for the specified text block dimension. This result determines how the value for the dimension should be interpreted.
 

@@ -25,7 +25,7 @@ typealias CompletionHandler = (MKLocalSearch.Response?, (any Error)?) -> Void
 typedef void (^)(MKLocalSearchResponse *, NSError *) MKLocalSearchCompletionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 This block takes two parameters:
 

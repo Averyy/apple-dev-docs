@@ -21,7 +21,7 @@ Creates a mirror representing the given subject with a specified structure.
 init<Subject, C>(_ subject: Subject, children: C, displayStyle: Mirror.DisplayStyle? = nil, ancestorRepresentation: Mirror.AncestorRepresentation = .generated) where C : Collection, C.Element == (label: String?, value: Any)
 ```
 
-#### Discussion
+## Discussion
 
 You use this initializer from within your type’s `customMirror` implementation to create a customized mirror.
 

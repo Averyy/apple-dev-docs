@@ -25,7 +25,7 @@ func CFArrayCreate(_ allocator: CFAllocator!, _ values: UnsafeMutablePointer<Uns
 extern CFArrayRefCFArrayCreate(CFAllocatorRef allocator, const void **values, CFIndex numValues, const CFArrayCallBacks *callBacks);
 ```
 
-#### Return Value
+## Return Value
 
 A new immutable array containing `numValues` from `values`, or `NULL` if there was a problem creating the object. Ownership follows [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 

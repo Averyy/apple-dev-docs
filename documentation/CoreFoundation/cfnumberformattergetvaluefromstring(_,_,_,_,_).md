@@ -25,7 +25,7 @@ func CFNumberFormatterGetValueFromString(_ formatter: CFNumberFormatter!, _ stri
 extern Boolean CFNumberFormatterGetValueFromString(CFNumberFormatterRef formatter, CFStringRef string, CFRange *rangep, CFNumberType numberType, void *valuePtr);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the string was parsed successfully, otherwise `false`.
 

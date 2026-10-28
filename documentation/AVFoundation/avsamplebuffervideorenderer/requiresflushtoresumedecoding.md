@@ -26,7 +26,7 @@ var requiresFlushToResumeDecoding: Bool { get }
 @property (readonly) BOOL requiresFlushToResumeDecoding;
 ```
 
-#### Discussion
+## Discussion
 
 When your app enters a state where using a video decoder resources is not permissible, the value of this property changes to [`true`](../../Swift/true.md) along with the video renderer’s status changing to [`AVQueuedSampleBufferRenderingStatus.failed`](../avqueuedsamplebufferrenderingstatus/failed.md). To resume rendering sample buffers, you must first reset the video renderer by calling [`flush()`](../avqueuedsamplebufferrendering/flush%28%29.md) or [`flush(removingDisplayedImage:completionHandler:)`](./flush%28removingdisplayedimage,completionhandler%29.md).
 

@@ -19,7 +19,7 @@ func beginSheet(with printInfo: NSPrintInfo, modalFor docWindow: NSWindow, deleg
 - (void) beginSheetWithPrintInfo:(NSPrintInfo *) printInfo modalForWindow:(NSWindow *) docWindow delegate:(id) delegate didEndSelector:(SEL) didEndSelector contextInfo:(void *) contextInfo;
 ```
 
-#### Discussion
+## Discussion
 
 When the modal session ends, if `modalDelegate` and `didEndSelector` contain non-`nil` values, the method specified by `didEndSelector` is invoked on the object in `modalDelegate`. The data you specify in `contextInfo` is passed as a parameter to the `didEndSelector` method. The object in `modalDelegate` is not the same as a delegate assigned to the panel. Modal delegates for sheets are temporary and the relationship lasts only until the sheet is dismissed.
 

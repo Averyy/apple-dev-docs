@@ -5,7 +5,7 @@
 
 Provide your users a convenient connection to the Game Center dashboard.
 
-#### Overview
+## Overview
 
 You can add an *access point* to your game that provides a way for players to manage their profile, and view leaderboards, achievements, and challenges.
 
@@ -15,7 +15,7 @@ The access point initially shows player highlights, like how many achievements t
 
 You can also display the dashboard on its own, or a particular section of the dashboard. For more information, see [Displaying the Game Center dashboard](./displaying-the-game-center-dashboard.md). For design guidance, see [Human Interface Guidelines > Technologies > Game Center > Access point](https://developer.apple.com/design/human-interface-guidelines/game-center#Access-point).
 
-##### Configure the access point
+### Configure the access point
 
 You can place the access point in a corner of the screen and choose whether to show highlights when the access point first appears, such as the number of achievements or the player’s rank on the default leaderboard. Start by obtaining the shared [`GKAccessPoint`](./gkaccesspoint.md) object using the [`shared`](./gkaccesspoint/shared.md) class property.
 
@@ -44,7 +44,7 @@ GKAccessPoint.shared.isActive = true
 
 Hide the access point when displaying game intros or settings. To give your players a consistent experience, see [Access Point](https://developer.apple.com/design/human-interface-guidelines/game-center/overview/access-point/) in the [Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/).
 
-##### Adapt your game to the access point
+### Adapt your game to the access point
 
 You can observe access point properties to adjust your game when the access point either changes sizes or just before it presents the dashboard.
 
@@ -74,7 +74,7 @@ let observation = GKAccessPoint.shared.observe(
 }
 ```
 
-##### Change the focus and display the dashboard programmatically
+### Change the focus and display the dashboard programmatically
 
 If you handle the input from an Apple TV remote and game controller yourself, you need to programmatically change the focus to the access point and display the dashboard when the player taps or clicks it.
 
@@ -92,7 +92,7 @@ func trackController(position: CGPoint) {
 
 Then use the [`trigger(state:handler:)`](./gkaccesspoint/trigger%28state,handler%29.md) method to show the dashboard when the player selects the access point.
 
-##### Configure the access point on visionOS
+### Configure the access point on visionOS
 
 The location of the access point and dashboard varies depending on the type of visionOS game. To change the default behavior below, set the [`location`](./gkaccesspoint/location-swift.property.md) and [`parentWindow`](./gkaccesspoint/parentwindow.md) properties before you set [`isActive`](./gkaccesspoint/isactive.md) to [`true`](../Swift/true.md). For example, if you don’t set the parent window of volumetric games, the access point doesn’t appear.
 

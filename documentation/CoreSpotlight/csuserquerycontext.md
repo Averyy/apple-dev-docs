@@ -27,7 +27,7 @@ class CSUserQueryContext
 
 - [Building a search interface for your app](./building-a-search-interface-for-your-app.md)
 
-#### Overview
+## Overview
 
 Use an instance of `CSUserQueryContext` to configure the search parameters for a [`CSUserQuery`](./csuserquery.md) object. This object stores configuration details that the query uses to modify the search results it delivers. For example, use this object to specify the maximum number of results or suggestions you want the query to return. You can also use it to enable or disable the ranking of results by Spotlight.
 

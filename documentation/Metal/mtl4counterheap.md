@@ -24,7 +24,7 @@ protocol MTL4CounterHeap : NSObjectProtocol
 @protocol MTL4CounterHeap <NSObject>
 ```
 
-#### Overview
+## Overview
 
 The data instances that this type stores correspond to the [`MTL4CounterHeapType`](./mtl4counterheaptype.md) heap type that you assign at creation time.
 

@@ -20,7 +20,7 @@ var additionalActivationAction: NSUserNotificationAction? { get }
 @property (copy, readonly, nullable) NSUserNotificationAction * additionalActivationAction;
 ```
 
-#### Discussion
+## Discussion
 
 This property specifies an additional action selected by the user when the user notification is sent to to the [`NSUserNotificationCenterDelegate`](../nsusernotificationcenterdelegate.md) method [`userNotificationCenter(_:didActivate:)`](../nsusernotificationcenterdelegate/usernotificationcenter%28_,didactivate%29.md). The supported values are described in [`NSUserNotification.ActivationType`](./activationtype-swift.enum.md).
 

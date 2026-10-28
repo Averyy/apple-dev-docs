@@ -25,7 +25,7 @@ func BNNSDirectApplyTopK(_ K: Int, _ axis: Int, _ batch_size: Int, _ input: Unsa
 int BNNSDirectApplyTopK(size_t K, size_t axis, size_t batch_size, const BNNSNDArrayDescriptor *input, size_t input_batch_stride, BNNSNDArrayDescriptor *best_values, size_t best_values_batch_stride, BNNSNDArrayDescriptor *best_indices, size_t best_indices_batch_stride, const BNNSFilterParameters *filter_params);
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  In Swift, the input data type and best values data type must be `float`, and the best indices data type must be `int32`.
 

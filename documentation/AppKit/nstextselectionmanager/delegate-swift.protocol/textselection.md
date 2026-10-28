@@ -20,7 +20,7 @@ var textSelection: NSTextSelection? { get set }
 @property (strong, nullable) NSTextSelection * textSelection;
 ```
 
-#### Discussion
+## Discussion
 
 The text selection manager updates this property in response to user interactions. The delegate is responsible for storing and providing access to the current selection. The [`NSTextLocation`](../../nstextlocation.md) values that make up the [`NSTextRange`](../../nstextrange.md) objects can be any object that can describe a location in your text.
 

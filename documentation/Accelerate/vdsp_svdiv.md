@@ -25,7 +25,7 @@ extern void vDSP_svdiv(const float *__A, const float *__B, vDSP_Stride __IB, flo
 
 - [Using vDSP for vector-based arithmetic](./using-vdsp-for-vector-based-arithmetic.md)
 
-#### Discussion
+## Discussion
 
 This function calculates the element-wise division of scalar value `A` and vector `B`, and writes the result to vector `C`, as follows:
 

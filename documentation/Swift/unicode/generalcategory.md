@@ -21,7 +21,7 @@ The most general classification of a Unicode scalar.
 enum GeneralCategory
 ```
 
-#### Overview
+## Overview
 
 The general category of a scalar is its “first-order, most usual categorization”. It does not attempt to cover multiple uses of some scalars, such as the use of letters to represent Roman numerals.
 

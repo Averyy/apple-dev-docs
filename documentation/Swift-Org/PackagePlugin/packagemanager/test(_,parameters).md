@@ -17,11 +17,11 @@ Runs all, or a specified subset, of the unit tests of the package, after an incr
 func test(_ subset: TestSubset, parameters: TestParameters) throws -> TestResult
 ```
 
-#### Return Value
+## Return Value
 
 The test results.
 
-#### Discussion
+## Discussion
 
 The is functionally the same as `swift test` on the command line.
 

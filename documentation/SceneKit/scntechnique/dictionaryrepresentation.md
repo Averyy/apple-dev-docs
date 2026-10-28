@@ -25,7 +25,7 @@ var dictionaryRepresentation: [String : Any] { get }
 @property (readonly) NSDictionary<NSString *,id> * dictionaryRepresentation;
 ```
 
-#### Discussion
+## Discussion
 
 Read this property when you want to save a property list file containing the definition of a technique.
 

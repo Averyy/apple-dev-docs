@@ -15,11 +15,11 @@ The system calls this virtual method when the stream’s format changes.
 virtual kern_return_t HandleChangeCurrentStreamFormat(const IOUserVideoStreamBasicDescription *in_format);
 ```
 
-#### Return Value
+## Return Value
 
 `kIOReturnSuccess` on success. Upon success the stream’s format should be updated.
 
-#### Discussion
+## Discussion
 
 The default implementation calls `SetCurrentStreamFormat()` and returns `kIOReturnSuccess`. Subclass and override this method to handle changing stream format and return `kIOReturnSuccess` upon success.
 

@@ -19,7 +19,7 @@ var canStart: Bool { get }
 @property (readonly) BOOL canStart;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) when the VM is in a state that allows you to start it. Call the [`start(completionHandler:)`](./start%28completionhandler%29.md) method (Swift)  or [`start()`](./start%28%29.md) method (Objective-C) to start the VM.
 

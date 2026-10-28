@@ -24,7 +24,7 @@ let GCInputDirectionalDpad: String
 extern NSString * const GCInputDirectionalDpad;
 ```
 
-#### Discussion
+## Discussion
 
 For the second-generation Siri Remote and later, this represents the entire touch surface including the inner and outer rings.
 

@@ -25,7 +25,7 @@ class SKTileSet
 @interface SKTileSet : NSObject
 ```
 
-#### Overview
+## Overview
 
 An [`SKTileSet`](./sktileset.md) object contains an array of tile groups that define which tile definitions are available for use in a tile map.
 

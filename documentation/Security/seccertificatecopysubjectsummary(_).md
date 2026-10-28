@@ -30,11 +30,11 @@ CFStringRefSecCertificateCopySubjectSummary(SecCertificateRef certificate);
 - [Examining a Certificate](./examining-a-certificate.md)
 - [Importing an Identity](./importing-an-identity.md)
 
-#### Return Value
+## Return Value
 
 A string that contains a human-readable summary of the contents of the certificate. In Objective-C, call the [`CFRelease`](../CoreFoundation/cfrelease.md) function to release this object when you are finished with it. Returns `NULL` if the data passed in the `certificate` parameter is not a valid certificate object.
 
-#### Discussion
+## Discussion
 
 Because all the data in the string comes from the certificate, the string is in whatever language is used in the certificate.
 

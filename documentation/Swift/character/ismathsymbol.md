@@ -21,7 +21,7 @@ A Boolean value indicating whether this character represents a symbol that natur
 var isMathSymbol: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 For example, the following characters all represent math symbols:
 

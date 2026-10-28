@@ -21,7 +21,7 @@ var searchDescription: String? { get set }
 @property (copy, nullable) NSString * searchDescription;
 ```
 
-#### Discussion
+## Discussion
 
 The search description is displayed above the search field. If appropriate, the search display controller can change the description to reflect the current status of the search. The default value of this property is “Search”.
 

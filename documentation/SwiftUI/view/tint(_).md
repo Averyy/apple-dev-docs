@@ -29,7 +29,7 @@ nonisolated
 func tint<S>(_ tint: S?) -> some View where S : ShapeStyle
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to override the default accent color for this view. Unlike an app’s accent color, which can be overridden by user preference, the tint color is always respected and should be used as a way to provide additional meaning to the control.
 

@@ -17,7 +17,7 @@ case cwUnsupportedRateSetErr
 kCWUnsupportedRateSetErr
 ```
 
-#### Discussion
+## Discussion
 
 Interface does not support all of the rates in the access point’s basic rate set.
 

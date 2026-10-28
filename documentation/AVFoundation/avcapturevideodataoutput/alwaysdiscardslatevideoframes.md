@@ -24,7 +24,7 @@ var alwaysDiscardsLateVideoFrames: Bool { get set }
 @property (nonatomic) BOOL alwaysDiscardsLateVideoFrames;
 ```
 
-#### Discussion
+## Discussion
 
 If this property is [`true`](../../Swift/true.md), the output immediately discard frames that captured while the dispatch queue handling existing frames blocks in the [`captureOutput(_:didOutput:from:)`](../avcapturevideodataoutputsamplebufferdelegate/captureoutput%28_,didoutput,from%29.md) delegate method. When set to [`false`](../../Swift/false.md), the output gives delegates more time to process old frames before it discards new frames, but application memory usage may increase significantly as a result.
 

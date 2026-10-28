@@ -25,7 +25,7 @@ func registerUndo(withTarget target: Any, selector: Selector, object: Any?)
 - (void) registerUndoWithTarget:(id) target selector:(SEL) selector object:(id) object;
 ```
 
-#### Discussion
+## Discussion
 
 Use [`registerUndo(withTarget:selector:object:)`](./registerundo%28withtarget,selector,object%29.md) to register a selector for an undo operation.  To register a selector on the undo stack, you also need to make the method available to the Objective-C runtime by applying the @`objc` attribute to the method.  For more on how to create a selector, see [Selectors](https://developer.apple.com/library/archive/documentation/Swift/Conceptual/BuildingCocoaApps/InteractingWithObjective-CAPIs.html#//apple_ref/doc/uid/TP40014216-CH4-ID59).
 

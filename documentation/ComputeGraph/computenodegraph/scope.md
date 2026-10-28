@@ -21,7 +21,7 @@ A scope is a named region of memory, indicating where a value lives
 struct Scope
 ```
 
-#### Overview
+## Overview
 
 A value that exists on each element of a simulation would have a scope of [`element`](../element.md), whereas a value that exists on the emitter stage would have a scope of [`emitter`](../emitter.md).
 

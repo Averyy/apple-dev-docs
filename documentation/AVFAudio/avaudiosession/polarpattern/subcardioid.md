@@ -25,7 +25,7 @@ static let subcardioid: AVAudioSession.PolarPattern
 extern AVAudioSessionPolarPattern const AVAudioSessionPolarPatternSubcardioid;
 ```
 
-#### Discussion
+## Discussion
 
 The subcardioid pattern picks up a sound from a wide radius in the front and in the back.
 

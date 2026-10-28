@@ -17,7 +17,7 @@ framework: "mlx-swift/MLX"
 func convTransposed3d(_ array: MLXArray, _ weight: MLXArray, stride: IntOrTriple = 1, padding: IntOrTriple = 0, dilation: IntOrTriple = 1, outputPadding: IntOrTriple = 0, groups: Int = 1, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: Only the default `groups=1` is currently supported.
 
@@ -35,7 +35,7 @@ padding: [2, 3, 3]
 
 See [`IntOrTriple`](./intortriple.md) for more information.
 
-##### See Also
+### See Also
 
 - [Convolution](./convolution.md)
 - [`IntOrTriple`](./intortriple.md)

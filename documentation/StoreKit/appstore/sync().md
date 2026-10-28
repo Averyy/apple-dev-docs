@@ -21,7 +21,7 @@ Synchronizes your app’s transaction information and subscription status with i
 static func sync() async throws
 ```
 
-#### Discussion
+## Discussion
 
 Include some mechanism in your app, such as a Restore Purchases button, to let users restore their Apple In-App Purchases. In rare cases when a user suspects the app isn’t showing all the transactions, call [`sync()`](./sync%28%29.md). By calling [`sync()`](./sync%28%29.md), you force the app to obtain transaction information and subscription status from the App Store.
 

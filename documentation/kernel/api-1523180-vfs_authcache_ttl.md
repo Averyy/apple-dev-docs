@@ -15,11 +15,11 @@ Determine the time-to-live of cached authorized credentials for files in this fi
 int vfs_authcache_ttl(mount_t mp);
 ```
 
-#### Return Value
+## Return Value
 
 Cache lifetime in seconds. CACHED_RIGHT_INFINITE_TTL indicates that credentials never expire.
 
-#### Discussion
+## Discussion
 
 If a filesystem is set to allow caching credentials, the VFS layer can authorize previously-authorized actions from the same vfs_context_t without calling down to the filesystem (though it will not deny based on the cache).
 

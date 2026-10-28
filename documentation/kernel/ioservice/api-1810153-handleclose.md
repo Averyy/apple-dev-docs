@@ -13,7 +13,7 @@ virtual void handleClose(
  IOOptionBitsoptions );
 ```
 
-#### Overview
+## Overview
 
 IOService calls this method in its subclasses in response to the close method, so the subclass may implement the request. The default implementation provides single owner access to an IOService object via open. The object is locked via lockForArbitration before `handleClose` is called.
 

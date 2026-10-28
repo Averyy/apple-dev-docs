@@ -21,7 +21,7 @@ typedef struct LSLaunchURLSpec {
 } LSLaunchURLSpec;
 ```
 
-#### Overview
+## Overview
 
 This data type defines a URL-based launch specification designating, by URL, an app to launch, items to open, or both. To request that items be opened in a particular app, set `appURL` and `itemURLs` accordingly. To request that each designated item be opened in its own preferred app, set `appURL` to `NULL`.If the item URL’s scheme is `file` (designating either a file or a directory), the selection of the preferred app is based on the designated item’s filename extension, file type, and creator signature; otherwise, it is based on the URL scheme (such as `http`, `ftp`, or `mailto`). To request that a particular app be launched without opening any document, set `appURL` accordingly and set `itemURLs` to `NULL`.
 

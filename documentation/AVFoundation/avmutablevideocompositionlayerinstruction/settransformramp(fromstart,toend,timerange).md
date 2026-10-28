@@ -26,7 +26,7 @@ func setTransformRamp(fromStart startTransform: CGAffineTransform, toEnd endTran
 - (void) setTransformRampFromStartTransform:(CGAffineTransform) startTransform toEndTransform:(CGAffineTransform) endTransform timeRange:(CMTimeRange) timeRange;
 ```
 
-#### Discussion
+## Discussion
 
 During a transform ramp, the affine transform is interpolated between the values set at the ramp’s start time and end time. Before the first specified time for which a transform is set, the affine transform is held constant at the value of [`CGAffineTransformIdentity`](../../CoreGraphics/cgaffinetransformidentity.md); after the last time for which a transform is set, the affine transform is held constant at that last value.
 

@@ -11,7 +11,7 @@ Takes the global debugger lock.
 void reserveDebuggerLock();
 ```
 
-#### Overview
+## Overview
 
 This method should not be used. Instead, call the lock() method provided by IOKernelDebugger.
 

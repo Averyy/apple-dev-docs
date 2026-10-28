@@ -15,11 +15,11 @@ Synchronously writes data from from a buffer to the resource and executes a bloc
 - (size_t) writeFrom:(void *) buffer startingAt:(off_t) offset length:(size_t) length error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 The actual number of bytes written.
 
-#### Discussion
+## Discussion
 
 This is a synchronous version of [`writeFrom:startingAt:length:completionHandler:`](./writefrom_startingat_length_completionhandler_.md).
 

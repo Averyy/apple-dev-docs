@@ -15,7 +15,7 @@ A class that asks a person for permission to forward notifications.
 class AccessoryNotificationCenter
 ```
 
-#### Overview
+## Overview
 
 Use this class from your accessory’s companion app to begin the notification forwarding life cycle by calling [`requestForwarding(for:)`](./accessorynotificationcenter/requestforwarding%28for%29.md).
 

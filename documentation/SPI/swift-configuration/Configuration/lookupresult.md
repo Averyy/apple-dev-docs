@@ -24,7 +24,7 @@ The result of looking up a configuration value in a provider.
 struct LookupResult
 ```
 
-#### Overview
+## Overview
 
 Providers return this result from value lookup methods, containing both the encoded key used for the lookup and the value found:
 

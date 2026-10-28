@@ -8,7 +8,7 @@ framework: "Swift-Org/diagnostics"
 **Framework**: Swift-Org/diagnostics  
 **Role**: Article
 
-#### Overview
+## Overview
 
 When an actor is used to protect a non-Sendable value, the compiler will enforce that the non-Sendable value remains in the actor instance’s isolation. Accessing an actor’s property of non-Sendable type from a different isolation will be diagnosed when complete concurrency checking is enabled. This is an error in the Swift 6 language mode.
 

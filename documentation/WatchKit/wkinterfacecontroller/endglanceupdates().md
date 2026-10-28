@@ -21,7 +21,7 @@ func endGlanceUpdates()
 - (void) endGlanceUpdates;
 ```
 
-#### Discussion
+## Discussion
 
 When all outstanding calls to the [`beginGlanceUpdates()`](./beginglanceupdates%28%29.md) method are balanced with calls to this method, WatchKit displays your updated glance interface.
 

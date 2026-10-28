@@ -14,7 +14,7 @@ The geometric normal of the currently-processed data in a given coordinate space
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 | Input | Type |
 | --- | --- |
@@ -24,11 +24,11 @@ The geometric normal of the currently-processed data in a given coordinate space
 | --- | --- |
 | `Out` | Vector3f |
 
-#### Parameter description
+## Parameter description
 
 - **`Space`**: The coordinate space in which the shader defines the normal vector. The default value is `object`.
 
-#### Discussion
+## Discussion
 
 Valid values for the `Space` parameter include the following:
 

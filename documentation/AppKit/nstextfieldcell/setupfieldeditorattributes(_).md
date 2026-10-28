@@ -19,11 +19,11 @@ func setUpFieldEditorAttributes(_ textObj: NSText) -> NSText
 - (NSText *) setUpFieldEditorAttributes:(NSText *) textObj;
 ```
 
-#### Return Value
+## Return Value
 
 A text object with customized attributes suitable for editing the text field cell’s content.
 
-#### Discussion
+## Discussion
 
 You never invoke this method directly; by overriding it, however, you can customize the field editor. When you override this method, you should generally invoke the implementation of `super` and return the `textObj` argument. For information on field editors, see [Using the Window’s Field Editor](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/WinPanel/Tasks/UsingWindowFieldEditor.html#//apple_ref/doc/uid/20000238).
 

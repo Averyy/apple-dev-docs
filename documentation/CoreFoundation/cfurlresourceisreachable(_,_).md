@@ -25,11 +25,11 @@ func CFURLResourceIsReachable(_ url: CFURL!, _ error: UnsafeMutablePointer<Unman
 extern Boolean CFURLResourceIsReachable(CFURLRef url, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the resource is reachable; otherwise,  `false`.
 
-#### Discussion
+## Discussion
 
 This function synchronously checks if the file at the provided URL is reachable. Checking reachability is appropriate when making decisions that do not require other immediate operations on the resource, such as periodic maintenance of user interface state that depends on the existence of a specific document. For example, you might remove an item from a download list if the user deletes the file.
 

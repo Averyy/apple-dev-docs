@@ -21,11 +21,11 @@ Returns an audio player (creating one if necessary) to play an audio node.
 + (instancetype) audioPlayerWithAVAudioNode:(AVAudioNode *) audioNode;
 ```
 
-#### Return Value
+## Return Value
 
 A positional audio player object.
 
-#### Discussion
+## Discussion
 
 Creating an audio player from an audio node does not attach that node to an [`AVAudioEngine`](../../AVFAudio/avaudioengine.md) object for mixing and playback—instead, this option allows you to build your own audio node graph for custom effects before manually adding it to the [`audioEngine`](../scnscenerenderer/audioengine.md) object of the view (or other SceneKit renderer) displaying the scene. Then, after you attach the audio player to an [`SCNNode`](../scnnode.md) object, SceneKit continually updates the audio node’s 3D mixing parameters to match the position of the scene node.
 

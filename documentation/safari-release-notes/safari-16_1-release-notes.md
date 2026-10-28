@@ -5,25 +5,25 @@
 
 Released October 24, 2022 — Version 16.1 (18614.2.9)
 
-##### Overview
+### Overview
 
 Safari 16.1 is available for macOS Big Sur, macOS Monterey, macOS Ventura, iPadOS 16.1 and iOS 16.1.
 
-##### Accessibility
+### Accessibility
 
-###### Resolved Issue
+#### Resolved Issue
 
 - Fixed `display:contents` buttons failing to expose their accessible name.
 
-##### Authentication
+### Authentication
 
-###### New Feature
+#### New Feature
 
 - Added support for passkeys on macOS Big Sur, macOS Monterey, macOS Ventura, and iPadOS 16.1. See [Supporting passkeys](../AuthenticationServices/supporting-passkeys.md).
 
-##### CSS
+### CSS
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed dynamic viewport height units (`dvh`) not matching the actual viewport height.
 - Fixed scroll-snap properties set on `<body>` to stop propagating to the viewport.
@@ -35,9 +35,9 @@ Safari 16.1 is available for macOS Big Sur, macOS Monterey, macOS Ventura, iPadO
 - Fixed handling `font-variant: normal` and `font-variant: none` shorthands to reset `font-variant-numeric` and `font-variant-alternates`.
 - Fixed small caps handling to prevent synthesized small caps if any character in the font supports small caps.
 
-##### Forms
+### Forms
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed the ignored CSS `color` property on `<select>` elements.
 - Fixed `<input type="search">` with `appearance: textfield`  to hide icons.
@@ -48,57 +48,57 @@ Safari 16.1 is available for macOS Big Sur, macOS Monterey, macOS Ventura, iPadO
 - Fixed cloning a `<textarea>` to not set the initial selection at the end of the text content.
 - Fixed not firing a select event when setting a selection range results in no change to the selection.
 
-##### Media
+### Media
 
-###### New Features
+#### New Features
 
 - Added support for non-animated AVIF on macOS Ventura, and iPadOS 16.
 - Added support for AVIF animated image sequences on macOS Ventura, iPadOS 16, and iOS 16.
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed some AVIF images not rendering because of their container format.
 
-##### Privacy
+### Privacy
 
 New Features
 
 - Added support for web-to-App Store advertising with [`SKAdNetwork`](../StoreKit/skadnetwork.md).
 
-##### Rendering
+### Rendering
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Stopped propagating background on `<html>` with any containment.
 
-##### Security
+### Security
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed COOP `same-origin` breaking forms after a back navigation.
 - Fixed `script-src-elem` CSP in workers.
 
-##### Web API
+### Web API
 
-###### New Features
+#### New Features
 
 - Added Web Push Notifications support on macOS Ventura.
 - Added support for capturing a specific window with `getDisplayMedia()` on macOS Ventura.
 - Added support for Scroll to Text Fragment.
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed focus interactions between the shadow DOM and the `<dialog>` element to align with specifications.
 
-##### Web Driver
+### Web Driver
 
-###### New Features
+#### New Features
 
 - Added support for Wheel input source and actions.
 
-##### Web Inspector
+### Web Inspector
 
-###### New Features
+#### New Features
 
 - Added support for the color picker to pick a color from any pixel on the screen.
 

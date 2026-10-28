@@ -24,7 +24,7 @@ var version: String? { get }
 @property (readonly, nullable) NSString * version;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains a string that identifies the version of the app or device used to save the sample. If the sample is saved by an app, the property contains the current version number of the app (for example, `1.4`). If it is saved by an iOS device or an Apple Watch, the property contains the current version number of the device’s OS (for example, `9.0` or `2.0` respectively). If it is saved directly by a Bluetooth device, this property contains the version string provided by that device.
 

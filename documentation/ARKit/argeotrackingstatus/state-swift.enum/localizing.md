@@ -20,11 +20,11 @@ case localizing
 ARGeoTrackingStateLocalizing
 ```
 
-#### Discussion
+## Discussion
 
 In [`ARGeoTrackingStatus.State.localizing`](./localizing.md), the session downloads localization imagery for the user’s geographic location and compares it with captures from the device’s camera. This process is referred to as *visual localization*. When ARKit succeeds in matching this imagery with captures from the camera, the state moves to [`ARGeoTrackingStatus.State.localized`](./localized.md) and the app is free to create location anchors. For more information about localization imagery, see [Refine the user’s position with imagery](../../argeotrackingconfiguration.md#Refine-the-users-position-with-imagery).
 
-##### Assisting the User with Visual Localization
+### Assisting the User with Visual Localization
 
 To establish visual localization, the user must move the camera so it acquires the captures that ARKit needs. To elicit the right user movements in [`ARGeoTrackingStatus.State.localizing`](./localizing.md), the app needs to advise the user to:
 

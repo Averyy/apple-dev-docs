@@ -18,7 +18,7 @@ A description of a node type supported by RealityKit, including its inputs, outp
 struct NodeDefinition
 ```
 
-#### Overview
+## Overview
 
 Obtain definitions from a [`ShaderGraph.NodeLibrary`](./nodelibrary.md) and use them to add nodes to a [`ShaderGraph`](../shadergraph.md).
 

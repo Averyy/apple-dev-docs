@@ -15,7 +15,7 @@ Defines a universal procedure pointer to a progress-monitoring function that the
 typedef CMConcatCallBackProcPtr CMConcatCallBackUPP;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see the description of the [`CMConcatCallBackProcPtr`](./cmconcatcallbackprocptr.md) callback function.
 

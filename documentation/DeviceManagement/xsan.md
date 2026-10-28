@@ -15,13 +15,13 @@ The payload that configures an Xsan client system.
 object Xsan
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.xsan` as the payload type.
 
 For more information, see [https://support.apple.com/en-us/HT205333](https://support.apple.com/en-us/HT205333).
 
-##### Profile availability
+### Profile availability
 
 |  |  |
 | --- | --- |
@@ -33,7 +33,7 @@ For more information, see [https://support.apple.com/en-us/HT205333](https://sup
 | Allowed in user enrollment | N/A |
 | Allow multiple payloads | N/A |
 
-##### Profile example
+### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>

@@ -21,11 +21,11 @@ Returns the receiver.
 + (id) copyWithZone:(struct _NSZone *) zone;
 ```
 
-#### Return Value
+## Return Value
 
 The receiver.
 
-#### Discussion
+## Discussion
 
 This method exists so class objects can be used in situations where you need an object that conforms to the [`NSCopying`](../../Foundation/nscopying.md) protocol. For example, this method lets you use a class object as a key to an `NSDictionary` object. You should not override this method.
 

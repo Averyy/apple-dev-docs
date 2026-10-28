@@ -15,7 +15,7 @@ Presents an ornament on hover using a custom effect.
 struct OrnamentHoverContentEffect<OrnamentView, OrnamentContentEffect> where OrnamentView : View, OrnamentContentEffect : HoverEffectContent
 ```
 
-#### Overview
+## Overview
 
 You don’t use this directly. Use `CustomHoverEffect.ornament` to create ornament effects instead.
 

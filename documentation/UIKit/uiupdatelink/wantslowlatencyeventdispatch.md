@@ -23,7 +23,7 @@ var wantsLowLatencyEventDispatch: Bool { get set }
 @property (nonatomic) BOOL wantsLowLatencyEventDispatch;
 ```
 
-#### Discussion
+## Discussion
 
 By default, the value of this property is [`false`](../../Swift/false.md), which means dispatch for events that are eligible for low-latency is off.
 

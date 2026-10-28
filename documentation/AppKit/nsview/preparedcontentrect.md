@@ -19,7 +19,7 @@ var preparedContentRect: NSRect { get set }
 @property NSRect preparedContentRect;
 ```
 
-#### Discussion
+## Discussion
 
 During responsive scrolling, this property specifies the portion of the view that has been rendered and is ready to scroll. This rectangle always includes the visible portion of the view and may also include nonvisible portions that have been rendered and cached.
 

@@ -23,7 +23,7 @@ struct VSAccountProviderAuthenticationScheme
 typedef NSString * VSAccountProviderAuthenticationScheme;
 ```
 
-#### Discussion
+## Discussion
 
 If the minimum version your app supports is outside the availability of the [`VSAccountProviderAuthenticationScheme`](./vsaccountproviderauthenticationscheme.md) values, you must create an authentication scheme value using the raw string.
 

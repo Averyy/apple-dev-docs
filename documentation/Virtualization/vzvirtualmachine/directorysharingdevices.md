@@ -19,7 +19,7 @@ var directorySharingDevices: [VZDirectorySharingDevice] { get }
 @property (copy, readonly) NSArray<VZDirectorySharingDevice *> * directorySharingDevices;
 ```
 
-#### Discussion
+## Discussion
 
 Returns an empty array if there are no directory sharing devices associated with this virtual machine.
 

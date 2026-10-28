@@ -15,7 +15,7 @@ A pattern that indicates the pasteboard detects a string that contains a flight 
 extern NSPasteboardDetectionPattern const NSPasteboardDetectionPatternFlightNumber;
 ```
 
-#### Return Value
+## Return Value
 
 Array of DDMatchFlightNumber values
 

@@ -23,7 +23,7 @@ var activationMode: UIUserNotificationActivationMode { get set }
 @property (nonatomic, assign) UIUserNotificationActivationMode activationMode;
 ```
 
-#### Discussion
+## Discussion
 
 If the value in this property is [`UIMutableUserNotificationAction`](../uimutableusernotificationaction.md), the value of the [`isAuthenticationRequired`](./isauthenticationrequired.md) property is assumed to be [`true`](../../Swift/true.md) regardless of its actual value.
 

@@ -21,7 +21,7 @@ class QCPlugInViewController
 @interface QCPlugInViewController : NSViewController
 ```
 
-#### Overview
+## Overview
 
 You access the internal settings of a custom patch through key-value coding (KVC). All the KVC keys that represent the internal settings of the custom patch must be listed in its `plugInKeys` method.
 

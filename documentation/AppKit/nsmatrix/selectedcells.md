@@ -19,7 +19,7 @@ var selectedCells: [NSCell] { get }
 @property (copy, readonly) NSArray<__kindof NSCell *> * selectedCells;
 ```
 
-#### Discussion
+## Discussion
 
 See the class description for a discussion of the selected cell.
 

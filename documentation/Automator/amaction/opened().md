@@ -20,7 +20,7 @@ func opened()
 - (void) opened;
 ```
 
-#### Discussion
+## Discussion
 
 The system invokes this method when the action is first added to a workflow.
 

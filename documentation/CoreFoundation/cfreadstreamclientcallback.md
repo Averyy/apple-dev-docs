@@ -25,7 +25,7 @@ typealias CFReadStreamClientCallBack = (CFReadStream?, CFStreamEventType, Unsafe
 typedef void (*)(struct __CFReadStream *, enum CFStreamEventType, void *) CFReadStreamClientCallBack;
 ```
 
-#### Discussion
+## Discussion
 
 This callback is called only for the events requested when setting the client with [`CFReadStreamSetClient(_:_:_:_:)`](./cfreadstreamsetclient%28_,_,_,_%29.md).
 

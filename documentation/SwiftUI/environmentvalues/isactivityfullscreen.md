@@ -17,7 +17,7 @@ A Boolean value that indicates whether the Live Activity appears in a full-scree
 var isActivityFullscreen: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 When a Live Activity fills the entire screen, the system extends the background tint color you set with the [`activityBackgroundTint(_:)`](../view/activitybackgroundtint%28_%29.md) modifier to fill the screen.
 

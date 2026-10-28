@@ -17,7 +17,7 @@ Initializer allowing creation of scalar (0-dimension) `MLXArray` from an `Int` a
 convenience init(int64 value: Int)
 ```
 
-#### Discussion
+## Discussion
 
 ```swift
 let a = MLXArray(int64: Int(Int32.max) + 10)
@@ -25,7 +25,7 @@ let a = MLXArray(int64: Int(Int32.max) + 10)
 
 Note [`init(_:)`](./init%28_%29-6nnka.md) (producing an `int32` scalar is preferred).
 
-##### See Also
+### See Also
 
 - [Initialization](../initialization.md)
 

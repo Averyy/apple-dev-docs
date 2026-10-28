@@ -21,11 +21,11 @@ Returns the first element of the sequence that satisfies the given predicate.
 func first(where predicate: (Self.Element) async throws -> Bool) async rethrows -> Self.Element?
 ```
 
-#### Return Value
+## Return Value
 
 The first element of the sequence that satisfies `predicate`, or `nil` if there is no element that satisfies `predicate`.
 
-#### Discussion
+## Discussion
 
 In this example, an asynchronous sequence called `Counter` produces `Int` values from `1` to `10`. The `first(where:)` method returns the first member of the sequence that’s evenly divisible by both `2` and `3`.
 

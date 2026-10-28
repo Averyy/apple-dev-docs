@@ -22,7 +22,7 @@ static var defaultCompletionKind: CompletionKind { get }
 
 - [Customizing Completions](../customizingcompletions.md)
 
-#### Discussion
+## Discussion
 
 The default implementation of this property returns `.default`.
 
@@ -30,9 +30,7 @@ The default implementation of this property returns `.default`.
 
 ### ExpressibleByArgument Implementations
 - [static var defaultCompletionKind: CompletionKind](./defaultcompletionkind-5hmqe.md)
-  The completion kind to use for options or arguments of this type that don’t explicitly declare a completion kind.
 - [static var defaultCompletionKind: CompletionKind](./defaultcompletionkind-vjh9.md)
-  The completion kind to use for options or arguments of this type that don’t explicitly declare a completion kind.
 
 
 ---

@@ -19,7 +19,7 @@ An action that mutes or unmutes a conversation.
 final class MuteConversationAction
 ```
 
-#### Overview
+## Overview
 
 Muting a conversation means that remote members won’t be able to hear the local member.
 

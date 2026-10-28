@@ -25,7 +25,7 @@ var isEnabled: Bool { get set }
 @property (nonatomic, assign, getter=isEnabled) BOOL enabled;
 ```
 
-#### Discussion
+## Discussion
 
 When set to [`true`](../../Swift/true.md), the designated element is enabled so users can interact with it. When set to [`false`](../../Swift/false.md), events for this command are not sent to your app, and the user interface may be changed to reflect this when your app is the Now Playing app. The default value is [`true`](../../Swift/true.md).
 

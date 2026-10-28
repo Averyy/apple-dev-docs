@@ -8,15 +8,15 @@ Query and retrieve brands, business categories, and creative rejection reasons.
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Overview
+## Overview
 
 Use the Apple Ads Platform API to create and manage Apple Maps campaigns that promote business locations on Apple Maps. Ads on Apple Maps help users find businesses; you can reach people before they search, at the top of the Suggested Places list on Search home, or after they search for something specific, on Search results. For a full end-to-end walkthrough, see [Advertising Your Business on Apple Maps](./journey-apple-maps-brand-ads.md).
 
-#### Review the Prerequisites
+## Review the Prerequisites
 
 Ads on Apple Maps require an Apple Ads profile and a validated brand in Apple Ads. A brand must have `eligibility.status: ELIGIBLE` before you can use it in a campaign. Your ad account must also have `productFeatures: ["BUSINESS_BRAND_MANUAL"]` and a `BUSINESS_BRAND` delegation with the Brand ID as `resourceId` before campaigns can go live. See [`ProductFeatures`](./productfeatures.md) for full delegation requirements. All API calls require a Bearer token and the `X-AP-Context: adAccountId` header.
 
-#### Understand the Campaign Structure
+## Understand the Campaign Structure
 
 App Store campaigns use three objects: Campaign, Ad Group, and Ad, plus a Creative. Apple Maps campaigns add two more, [Understanding Locations](./locations-overview.md) and [Managing Location Groups](./location-groups-overview.md), that sit between the Brand and the Ad Group. The dependency chain is:
 
@@ -31,7 +31,7 @@ App Store campaigns use three objects: Campaign, Ad Group, and Ad, plus a Creati
 
 A Campaign references the Brand directly. Its Ad Groups reference a Location Group for targeting, and its Ads reference a Creative. Both the Location Group and the Creative must exist, and be in a valid state, before the Ad Group and Ad that depend on them can serve.
 
-#### Follow the Campaign Workflow
+## Follow the Campaign Workflow
 
 Follow these steps, in order, to launch an Apple Maps campaign once your brand and assets are ready:
 

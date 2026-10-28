@@ -25,7 +25,7 @@ var shouldSetDefaultLeaderboard: Bool { get set }
 @property (nonatomic, assign) BOOL shouldSetDefaultLeaderboard;
 ```
 
-#### Discussion
+## Discussion
 
 If the value of this property is [`true`](../../Swift/true.md), when the score is reported to Game Center, Game Center also updates the local player’s default leaderboard to match the value stored in the [`leaderboardIdentifier`](./leaderboardidentifier.md) property of the score object. This matches the behavior of the [`GKLeaderboard`](../gkleaderboard.md) class’s [`setDefault(_:withCompletionHandler:)`](../gkleaderboard/setdefault%28_,withcompletionhandler%29.md) class method. If the value of this property is [`false`](../../Swift/false.md), the default leaderboard is not changed by reporting the score. The default value of this property is [`false`](../../Swift/false.md).
 

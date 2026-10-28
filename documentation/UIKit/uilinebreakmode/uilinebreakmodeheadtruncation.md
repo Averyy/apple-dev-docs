@@ -19,7 +19,7 @@ Truncate text (as necessary) from the beginning of the line.
 UILineBreakModeHeadTruncation
 ```
 
-#### Discussion
+## Discussion
 
 For multiple lines of text, only text on the first line truncates.
 

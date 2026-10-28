@@ -28,7 +28,7 @@ class HKWorkoutRouteQuery
 
 - [Reading route data](./reading-route-data.md)
 
-#### Overview
+## Overview
 
 Use a workout route query to access the location data associated with an [`HKWorkoutRoute`](./hkworkoutroute.md). Because a route sample can include a large number of [`CLLocation`](../CoreLocation/cllocation.md) objects, the query asynchronously returns the locations in batches. For detailed instructions, see `Reading Route Data`.
 

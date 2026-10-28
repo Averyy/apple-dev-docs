@@ -21,11 +21,11 @@ Constructs a new span over all the items of this span.
 mutating func extracting(_: UnboundedRange) -> MutableSpan<Element>
 ```
 
-#### Return Value
+## Return Value
 
 A `MutableSpan` over all the items of this span.
 
-#### Discussion
+## Discussion
 
 The returned span represents a mutation of this span.
 

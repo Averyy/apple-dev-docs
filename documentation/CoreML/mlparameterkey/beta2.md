@@ -25,7 +25,7 @@ class var beta2: MLParameterKey { get }
 @property (class, nonatomic, readonly) MLParameterKey * beta2;
 ```
 
-#### Discussion
+## Discussion
 
 The value type for the [`beta2`](./beta2.md) key is a [`Double`](../../Swift/double.md).
 

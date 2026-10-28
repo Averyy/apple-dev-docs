@@ -15,7 +15,7 @@ Handles the completion of an asynchronous request.
 virtual void CompleteAsyncIsochIO(OSAction *action, IOReturn status);
 ```
 
-#### Discussion
+## Discussion
 
 Implement a custom version of this method and use the [`TYPE`](../../DriverKit/type.md) macro to let the system know that your method conforms to this prototype.
 

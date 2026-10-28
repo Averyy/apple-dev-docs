@@ -14,7 +14,7 @@
 kMPPreserveTimerIDMask = 1L << 0
 ```
 
-#### Discussion
+## Discussion
 
 Specifying this mask prevents the timer from being deleted when it expires.
 

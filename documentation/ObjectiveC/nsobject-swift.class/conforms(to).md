@@ -25,11 +25,11 @@ class func conforms(to protocol: Protocol) -> Bool
 + (BOOL) conformsToProtocol:(Protocol *) protocol;
 ```
 
-#### Return Value
+## Return Value
 
 [`YES`](../yes.md) if the target conforms to `protocol`, otherwise [`NO`](../no.md).
 
-#### Discussion
+## Discussion
 
 A class “conforms to” a protocol if it adopts the protocol or inherits from another class that adopts it. Classes adopt protocols by listing them within angle brackets after the interface declaration. For example, here `MyClass` adopts the (fictitious) `AffiliationRequests` and `Normalization` protocols:
 
@@ -53,7 +53,7 @@ To specify the protocol required as this method’s argument, use the `@protocol
 BOOL canJoin = [MyClass conformsToProtocol:@protocol(Joining)];
 ```
 
-##### Performance Considerations
+### Performance Considerations
 
 Calling this method in performance sensitive code can cause unwanted performance problems. [`conforms(to:)`](./conforms%28to%29.md) requires taking the Objective-C runtime lock and traversing the target’s class hierarchy to check for protocol conformance, which can take significant time.
 

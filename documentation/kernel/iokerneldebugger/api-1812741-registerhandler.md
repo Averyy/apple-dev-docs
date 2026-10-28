@@ -16,7 +16,7 @@ static void registerHandler(
  IODebuggerSetModeHandler setModeHandler = 0);
 ```
 
-#### Overview
+## Overview
 
 This method is called by handleOpen() and handleClose() to register or unregister the target and its handler functions.
 

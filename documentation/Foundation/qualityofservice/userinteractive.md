@@ -23,7 +23,7 @@ case userInteractive
 NSQualityOfServiceUserInteractive
 ```
 
-#### Discussion
+## Discussion
 
 Used for work directly involved in providing an interactive UI. For example, processing control events or drawing to the screen.
 

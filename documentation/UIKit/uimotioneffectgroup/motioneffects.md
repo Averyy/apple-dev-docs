@@ -23,7 +23,7 @@ var motionEffects: [UIMotionEffect]? { get set }
 @property (nonatomic, copy, nullable) NSArray<__kindof UIMotionEffect *> * motionEffects;
 ```
 
-#### Discussion
+## Discussion
 
 The array contains one or more [`UIMotionEffect`](../uimotioneffect.md) objects. When the viewer offset changes, each object in the group is asked for its key paths and updated values. Those values are then applied simultaneously.
 

@@ -22,7 +22,7 @@ var altitudeAngle: CGFloat { get }
 @property (nonatomic, readonly) CGFloat altitudeAngle;
 ```
 
-#### Discussion
+## Discussion
 
 This value is `0` for devices that don’t support altitude.
 

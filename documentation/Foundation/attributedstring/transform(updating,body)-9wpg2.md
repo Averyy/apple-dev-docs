@@ -21,7 +21,7 @@ Tracks the location of the selection throughout the mutation closure, updating t
 mutating func transform<E>(updating selection: inout AttributedTextSelection, body: (inout AttributedString) throws(E) -> Void) throws(E) where E : Error
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: If the mutation performed does not allow for tracking to succeed (such as replacing the provided inout variable with an entirely different `AttributedString`), the selection is reset to the fallback location at the end of the text.
 

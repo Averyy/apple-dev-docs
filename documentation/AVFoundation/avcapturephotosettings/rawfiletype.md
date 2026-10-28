@@ -22,7 +22,7 @@ var rawFileType: AVFileType? { get }
 @property (readonly, nullable) AVFileType rawFileType;
 ```
 
-#### Discussion
+## Discussion
 
 You specify a file format when creating capture settings with the [`init(rawPixelFormatType:rawFileType:processedFormat:processedFileType:)`](./init%28rawpixelformattype,rawfiletype,processedformat,processedfiletype%29.md) initializer. If you didn’t specify a file format, this value is `nil`, and the photo output automatically choosea a default file format appropriate to the [`rawPhotoPixelFormatType`](./rawphotopixelformattype.md) property.
 

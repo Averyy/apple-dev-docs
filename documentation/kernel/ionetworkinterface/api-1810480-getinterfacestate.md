@@ -12,7 +12,7 @@ virtual UInt32 getInterfaceState(
  void ) const;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the current interface state flags.
 

@@ -23,7 +23,7 @@ class INStartCallContactResolutionResult
 @interface INStartCallContactResolutionResult : INPersonResolutionResult
 ```
 
-#### Overview
+## Overview
 
 You return an `INStartCallContactResolutionResult` object when resolving parameters containing an [`INPerson`](./inperson.md) value. Use the creation method that best reflects your ability to resolve the parameter successfully. The resolved value can be different than the original [`INPerson`](./inperson.md). This flexibility allows app extensions to apply business logic constraints.
 

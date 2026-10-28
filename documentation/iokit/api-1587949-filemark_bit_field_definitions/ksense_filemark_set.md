@@ -15,7 +15,7 @@
 kSENSE_FILEMARK_Set = 0x80
 ```
 
-#### Discussion
+## Discussion
 
 Filemark bit is set.
 

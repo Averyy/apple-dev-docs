@@ -24,11 +24,11 @@ class func disambiguation(with mediaDestinationsToDisambiguate: [INMediaDestinat
 + (instancetype) disambiguationWithMediaDestinationsToDisambiguate:(NSArray<INMediaDestination *> *) mediaDestinationsToDisambiguate;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INMediaDestinationResolutionResult`](../inmediadestinationresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object when more than one media destination matches the given information and you can’t definitevely pick one. Ask the user to select from among the notes that you specify.
 

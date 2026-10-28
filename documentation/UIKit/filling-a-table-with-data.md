@@ -5,7 +5,7 @@
 
 Create and configure cells for your table dynamically using a data source object, or provide them statically from your storyboard.
 
-#### Overview
+## Overview
 
 Table views are data-driven elements of your interface. You provide your app’s data, along with the views needed to render each piece of that data onscreen, using a data source object (an object that adopts the [`UITableViewDataSource`](./uitableviewdatasource.md) protocol). The table view arranges your views onscreen and works with your data source object to keep that data up to date.
 
@@ -13,7 +13,7 @@ Table views organize your data into rows and sections. Rows display individual d
 
 ![Illustration showing the Contacts app. Sections in the main table of the Contacts app correspond to letters of the alphabet. Rows correspond to individual contacts.](https://developer.apple.com/tutorials/images/com.apple.uikit/filling-a-table-with-data-1@2x.png)
 
-##### Provide the numbers of rows and sections
+### Provide the numbers of rows and sections
 
 Before it appears onscreen, a table view asks you to specify the total number of rows and sections. Your data source object provides this information using two methods:
 
@@ -40,7 +40,7 @@ override func tableView(_ tableView: UITableView,
 
 ```
 
-##### Define the appearance of rows
+### Define the appearance of rows
 
 You define the appearance of your table’s rows in your storyboard file using cells. A cell is a [`UITableViewCell`](./uitableviewcell.md) object that acts like a template for the rows of your table. Cells are views, and they can contain any subviews that you need to display your content. You can add labels, image views, and other views to their content area and arrange those views using constraints.
 
@@ -61,7 +61,7 @@ When creating a cell with custom views, define a subclass of [`UITableViewCell`]
 
 For more information about how to configure the appearance of your cells, see [Configuring the cells for your table](./configuring-the-cells-for-your-table.md).
 
-##### Create and configure cells for each row
+### Create and configure cells for each row
 
 Before a table view appears onscreen, it asks its data source object to provide cells for the rows in or near the visible portion of the table. Respond quickly from your data source object’s [`tableView(_:cellForRowAt:)`](./uitableviewdatasource/tableview%28_,cellforrowat%29.md) method to avoid performance issues. Implement this method with the following pattern:
 
@@ -90,13 +90,13 @@ Table views don’t ask you to create cells for each of the table’s rows. Inst
 
 > **Note**:  In addition to using the standard cell styles, you can define custom cells that contain any views you want. For detailed information about configuring your cells, see [Configuring the cells for your table](./configuring-the-cells-for-your-table.md).
 
-##### Prefetch data to improve performance
+### Prefetch data to improve performance
 
 Scrolling performance for table views is critical. If fetching the data for your table involves an expensive operation, such as fetching it from a database, use a prefetching data source object—an object that adopts the [`UITableViewDataSourcePrefetching`](./uitableviewdatasourceprefetching.md) protocol—to begin loading that data asynchronously before it scrolls into view.
 
 For information about how to implement a prefetching data source, see [`UITableViewDataSourcePrefetching`](./uitableviewdatasourceprefetching.md).
 
-##### Specify data statically in the storyboard
+### Specify data statically in the storyboard
 
 Use static tables to save time during prototyping or when your table’s contents never change. With static tables, you specify all of your table’s data up front in your storyboard file; you don’t implement a data source object. At runtime, UIKit loads that data from your storyboard and manages it for you. Because you can’t change the data in static tables at runtime, use them sparingly in your shipping apps.
 

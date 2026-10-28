@@ -18,8 +18,8 @@ A key for querying an XPC event dictionary to retrieve a string that identifies 
 ## Declaration
 
 ```swift
-nonisolated
-(unsafe) let XPC_EVENT_KEY_NAME: UnsafePointer<CChar>
+nonisolated(unsafe)
+let XPC_EVENT_KEY_NAME: UnsafePointer<CChar>
 ```
 
 ## See Also

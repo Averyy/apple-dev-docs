@@ -25,7 +25,7 @@ var data: UnsafePointer<UInt8>
 const Byte * data;
 ```
 
-#### Discussion
+## Discussion
 
 Initially, the value is a pointer to the System Exclusive (SysEx) event to send. [`MIDISendSysex(_:)`](../midisendsysex%28_%29.md) advances this pointer as it sends bytes.
 

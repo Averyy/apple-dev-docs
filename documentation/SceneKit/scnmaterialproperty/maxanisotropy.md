@@ -25,7 +25,7 @@ var maxAnisotropy: CGFloat { get set }
 @property (nonatomic) CGFloat maxAnisotropy;
 ```
 
-#### Discussion
+## Discussion
 
 Anisotropic filtering is a process that increases the quality of texture rendering when a textured surface appears at an extreme angle relative to the camera. This process works by sampling from multiple mipmap levels of a texture for each rendered pixel—the term anisotropy refers to the number of samples per pixel. A higher anisotropy improves rendering quality, but at a cost to rendering performance.
 

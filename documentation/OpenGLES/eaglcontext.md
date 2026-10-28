@@ -24,7 +24,7 @@ class EAGLContext
 @interface EAGLContext : NSObject
 ```
 
-#### Overview
+## Overview
 
 Drawing resources, such as textures and renderbuffers, are managed for the [`EAGLContext`](./eaglcontext.md) object by an [`EAGLSharegroup`](./eaglsharegroup.md) object associated with the context. When you initialize a new [`EAGLContext`](./eaglcontext.md) object, you can choose to have it create a new sharegroup, or you can use one obtained from a previously created context.
 

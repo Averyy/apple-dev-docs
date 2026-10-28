@@ -21,7 +21,7 @@ Construct a `Duration` from the given number of attoseconds.
 init(attoseconds: Int128)
 ```
 
-#### Discussion
+## Discussion
 
 This directly constructs a `Duration` from the given number of attoseconds.
 

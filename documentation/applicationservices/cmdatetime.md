@@ -17,7 +17,7 @@ typedef struct CMDateTime {
 } CMDateTime;
 ```
 
-#### Overview
+## Overview
 
 The ColorSync Manager defines the `CMDateTime` data structure to specify a date and time in year, month, day of the month, hours, minutes, and seconds. Other ColorSync structures use the `CMDateTime` structure to specify information such as the creation date or calibration date for a color space profile.
 

@@ -21,7 +21,7 @@ The key encapsulation mechanisms to use in HPKE.
 enum KEM
 ```
 
-#### Overview
+## Overview
 
 The module-lattice key encapsulation mechanism (ML-KEM) is designed to offer increased security in situations where an adversary uses a quantum computer.
 

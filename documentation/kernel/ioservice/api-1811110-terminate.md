@@ -12,7 +12,7 @@ virtual bool terminate(
  IOOptionBits options = 0 );
 ```
 
-#### Overview
+## Overview
 
 Registering an IOService object informs possible clients of its existance and instantiates drivers that may be used with it; `terminate` involves the opposite process of informing clients that an IOService object is no longer able to be used and will be destroyed. By default, if any client has the service open, `terminate` fails. If the `kIOServiceRequired` flag is passed however, `terminate` will be successful though further progress in the destruction of the IOService object will not proceed until the last client has closed it. The service will be made inactive immediately upon successful termination, and all its clients will be notified via their message method with a message of type `kIOMessageServiceIsTerminated`. Both these actions take place on the caller's thread. After the IOService object is made inactive, further matching or attach calls will fail on it. Each client has its stop method called upon their close of an inactive IOService object , or on its termination if they do not have it open. After `stop`, detach is called in each client. When all clients have been detached, the finalize method is called in the inactive service. The termination process is inherently asynchronous because it will be deferred until all clients have chosen to close.
 

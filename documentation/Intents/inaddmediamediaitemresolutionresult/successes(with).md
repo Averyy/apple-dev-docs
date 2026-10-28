@@ -24,11 +24,11 @@ class func successes(with resolvedMediaItems: [INMediaItem]) -> [INAddMediaMedia
 + (NSArray<INAddMediaMediaItemResolutionResult *> *) successesWithResolvedMediaItems:(NSArray<INMediaItem *> *) resolvedMediaItems;
 ```
 
-#### Return Value
+## Return Value
 
 An array of new [`INAddMediaMediaItemResolutionResult`](../inaddmediamediaitemresolutionresult.md) objects.
 
-#### Discussion
+## Discussion
 
 When the system calls [`resolveMediaItems(for:with:)`](../inaddmediaintenthandling/resolvemediaitems%28for,with%29.md), if your app can identify relevant media for the intent, use this method to create results for each of those media items.
 

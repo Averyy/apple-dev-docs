@@ -25,7 +25,7 @@ var kAudioChannelLayoutTag_ITU_1_0: AudioChannelLayoutTag { get }
 kAudioChannelLayoutTag_ITU_1_0
 ```
 
-#### Discussion
+## Discussion
 
 You must use a monophonic signal.
 

@@ -25,7 +25,7 @@ let kCTFontCascadeListAttribute: CFString
 extern CFStringRef const kCTFontCascadeListAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 The cascade list is a [`CFArray`](../CoreFoundation/cfarray.md) object containing [`CTFontDescriptor`](./ctfontdescriptor.md) elements. If unspecified, the global cascade list is used.
 

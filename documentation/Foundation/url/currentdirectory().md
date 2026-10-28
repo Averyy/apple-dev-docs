@@ -21,7 +21,7 @@ Returns the working directory of the current process.
 static func currentDirectory() -> URL
 ```
 
-#### Return Value
+## Return Value
 
 Calling this method issues a `getcwd` system call. This method’s return value can change between calls because any thread can change the process’s current working directory at any time. Take precautions when reasoning about the current directory in a multithreaded environment.
 

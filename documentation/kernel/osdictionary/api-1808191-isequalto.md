@@ -12,11 +12,11 @@ virtual bool isEqualTo(
  const OSDictionary *aDictionary) const;
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the dictionaries are equal, `false` if not.
 
-#### Overview
+## Overview
 
 Two OSDictionary objects are considered equal if they have same count, the same keys, and if the objects stored in each under a given key compare as equal using isEqualTo.
 

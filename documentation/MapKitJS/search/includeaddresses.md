@@ -16,7 +16,7 @@ get includeAddresses(): boolean;
 set includeAddresses(value: boolean);
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `true`.
 

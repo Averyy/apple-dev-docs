@@ -15,7 +15,7 @@ Attributes that describe a Game Center achievement image v2 resource.
 object GameCenterAchievementImageV2.Attributes
 ```
 
-#### Overview
+## Overview
 
 - assetDeliveryState:
 - fileName:

@@ -28,7 +28,7 @@ func startRangingBeacons(in region: CLBeaconRegion)
 
 - [Determining the proximity to an iBeacon device](../determining-the-proximity-to-an-ibeacon-device.md)
 
-#### Discussion
+## Discussion
 
 Once registered, the location manager reports any encountered beacons to its delegate by calling the [`locationManager(_:didRangeBeacons:in:)`](../cllocationmanagerdelegate/locationmanager%28_,didrangebeacons,in%29.md) method. If there is an error registering the specified beacon region, the location manager calls its delegate’s [`locationManager(_:rangingBeaconsDidFailFor:withError:)`](../cllocationmanagerdelegate/locationmanager%28_,rangingbeaconsdidfailfor,witherror%29.md) method and provides the appropriate error information.
 

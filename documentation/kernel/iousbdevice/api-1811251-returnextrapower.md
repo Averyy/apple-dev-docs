@@ -13,7 +13,7 @@ virtual IOReturn ReturnExtraPower(
  UInt32returnedPower);
 ```
 
-#### Return Value
+## Return Value
 
 If the returnedPower was not previously allocated, an error will be returned. This will include the case for power that was requested for sleep but was returned for wake.
 

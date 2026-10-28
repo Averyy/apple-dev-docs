@@ -5,7 +5,7 @@
 
 Specifies the height of an element.
 
-#### Overview
+## Overview
 
 Here’s an example that shows how to set the height of an image to 376 points.
 
@@ -13,13 +13,13 @@ Here’s an example that shows how to set the height of an image to 376 points.
 <img src="path to image" width="250" height="376" />
 ```
 
-##### Values for height
+### Values for height
 
 - **Integer**: The height of the element, in points. For example, `height="200"` sets the height of the element to 200 points.
 
 > **Note**: You must explicitly set this style for custom cell elements provided by your app binary.
 
-##### Elements that Use height
+### Elements that Use height
 
 - [banner](./banner.md)
 - [button](./button.md)

@@ -25,7 +25,7 @@ static let convexHull: SCNPhysicsShape.ShapeType
 extern SCNPhysicsShapeType const SCNPhysicsShapeTypeConvexHull;
 ```
 
-#### Discussion
+## Discussion
 
 This option provides a moderate level of detail and simulation performance. Use it for rounded or irregularly shaped physics bodies.
 

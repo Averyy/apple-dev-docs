@@ -20,7 +20,7 @@ func matchesAppleEventCode(_ appleEventCode: FourCharCode) -> Bool
 - (BOOL) matchesAppleEventCode:(FourCharCode) appleEventCode;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the receiver’s primary four-character Apple event code or any of its secondary codes (its synonyms) matches `code`; otherwise, [`false`](../../Swift/false.md).
 

@@ -25,11 +25,11 @@ func CFTimeZoneCopyAbbreviationDictionary() -> CFDictionary!
 extern CFDictionaryRefCFTimeZoneCopyAbbreviationDictionary();
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary containing the mappings of time zone abbreviations to time zone names. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 More than one time zone may have the same abbreviation. For example, US/Pacific and Canada/Pacific both use the abbreviation “PST.” In these cases this function chooses a single name to map the abbreviation to.
 

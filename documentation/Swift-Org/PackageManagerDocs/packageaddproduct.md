@@ -10,7 +10,7 @@ framework: "Swift-Org/PackageManagerDocs"
 
 Add a new product to the manifest.
 
-#### Overview
+## Overview
 
 ```
 package add-product [--package-path=<package-path>]

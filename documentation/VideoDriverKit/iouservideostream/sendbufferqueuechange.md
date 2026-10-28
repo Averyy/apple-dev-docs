@@ -15,11 +15,11 @@ Sends a notification to the host that the buffer queue has changed.
 kern_return_t SendBufferQueueChange();
 ```
 
-#### Return Value
+## Return Value
 
 `kIOReturnSuccess` if the notification was successfully sent.
 
-#### Discussion
+## Discussion
 
 This will result in the user’s buffer queue changed handler being called, if they registered one.
 

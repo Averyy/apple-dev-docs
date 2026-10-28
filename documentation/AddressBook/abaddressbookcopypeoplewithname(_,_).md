@@ -23,7 +23,7 @@ func ABAddressBookCopyPeopleWithName(_ addressBook: ABAddressBook!, _ name: CFSt
 extern CFArrayRefABAddressBookCopyPeopleWithName(ABAddressBookRef addressBook, CFStringRef name);
 ```
 
-#### Return Value
+## Return Value
 
 Array containing person records (`ABRecordRef` objects) that match `name`.
 

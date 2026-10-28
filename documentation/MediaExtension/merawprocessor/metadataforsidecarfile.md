@@ -17,7 +17,7 @@ optional var metadataForSidecarFile: Data { get }
 @property (readonly) NSData * metadataForSidecarFile;
 ```
 
-#### Discussion
+## Discussion
 
 The metadata returned is a pre-formatted NSData that represents a fully-formed sidecar file, and should be compatible with the MediaExtension FormatReader.
 

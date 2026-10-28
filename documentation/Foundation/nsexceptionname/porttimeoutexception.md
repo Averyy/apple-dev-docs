@@ -25,7 +25,7 @@ static let portTimeoutException: NSExceptionName
 extern NSExceptionName const NSPortTimeoutException;
 ```
 
-#### Discussion
+## Discussion
 
 This is a distributed objects–specific exception.
 

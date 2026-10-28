@@ -15,7 +15,7 @@ A Boolean value that indicates whether the device’s Focus state suppresses not
 var isSuppressedByFocus: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 A `true` value indicates that the notification attempts to alert the person, but the device’s active Focus state suppresses it.
 

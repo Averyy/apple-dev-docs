@@ -23,7 +23,7 @@ static let pairedUUIDsDidChangeNotification: NSNotification.Name
 extern NSNotificationName const AXMFiHearingDevicePairedUUIDsDidChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The system posts this notification when the value of [`pairedDeviceIdentifiers()`](./paireddeviceidentifiers%28%29.md) changes.
 

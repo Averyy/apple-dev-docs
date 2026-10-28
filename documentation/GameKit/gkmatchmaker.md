@@ -30,7 +30,7 @@ class GKMatchmaker
 - [Finding multiple players for a game](./finding-multiple-players-for-a-game.md)
 - [Finding players with similar skill levels](./finding-players-with-similar-skill-levels.md)
 
-#### Overview
+## Overview
 
 Use the `GKMatchmaker` class to auto-match players for a quicker game start, programmatically invite specific players, or implement your own interface for players to invite other players. If you want to present a familiar matchmaking GameKit interface to players, instead use either the [`GKMatchmakerViewController`](./gkmatchmakerviewcontroller.md) or [`GKTurnBasedMatchmakerViewController`](./gkturnbasedmatchmakerviewcontroller.md) class.
 

@@ -4,7 +4,7 @@
 
 Contains general information about a product.
 
-#### Overview
+## Overview
 
 The `productInfo` element contains all of the elements required to describe a product. It commonly contains such information as a product’s title, type, format, running time, and so on. Here’s an example that describes a video, including its run time and languages.
 
@@ -64,14 +64,14 @@ The `productInfo` element contains all of the elements required to describe a pr
 </productInfo>
 ```
 
-##### Subelements of productInfo
+### Subelements of productInfo
 
 - [header](./header.md)
 - [infoTable](./infotable.md)
 - [row](./row.md)
 - [text](./text.md)
 
-##### Elements that Use productInfo
+### Elements that Use productInfo
 
 - [productBundleTemplate](./productbundletemplate.md)
 - [productTemplate](./producttemplate.md)

@@ -5,7 +5,7 @@
 
 A movie that contains references to alternate movies is called a reference movie.
 
-#### Overview
+## Overview
 
 A QuickTime movie can act as a container for a set of alternate movies to display under specific conditions. One of these movies may be contained within the same file; any others are included by reference.
 

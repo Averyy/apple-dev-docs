@@ -15,7 +15,7 @@ Returns a Boolean value indicating whether two axis-aligned bounding boxes are e
 static func == (lhs: ObjectAnchor.AxisAlignedBoundingBox, rhs: ObjectAnchor.AxisAlignedBoundingBox) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the two bounding boxes are equal; otherwise, `false`.
 

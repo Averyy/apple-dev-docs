@@ -15,7 +15,7 @@ A Boolean value indicating whether the App Store has more data to return.
 boolean hasMore
 ```
 
-#### Discussion
+## Discussion
 
 This value is `true` if more results are available. Call the endpoint again, including the [`revision`](./revision.md) or [`paginationToken`](./paginationtoken.md) query parameter, to get the next set of results.
 

@@ -23,7 +23,7 @@ var windowLevel: UIWindow.Level { get set }
 @property (nonatomic) UIWindowLevel windowLevel;
 ```
 
-#### Discussion
+## Discussion
 
 Window levels provide a relative grouping of windows along the z-axis. All windows assigned to the same window level appear in front of (or behind) all windows assigned to a different window level. The ordering of windows within a given window level is not guaranteed.
 

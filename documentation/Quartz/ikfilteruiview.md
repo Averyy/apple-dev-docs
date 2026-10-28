@@ -19,7 +19,7 @@ class IKFilterUIView
 @interface IKFilterUIView : NSView
 ```
 
-#### Overview
+## Overview
 
 The `IKFilterUIView` class provides a view that contains input parameter controls for a Core Image filter ([`CIFilter`](../CoreImage/cifilter-swift.class.md)). You need to use this class when providing a user interface for a custom filter. The class creates a view that has an object controller for the given filter. It also retains the filter.
 

@@ -21,7 +21,7 @@ The automatic limit behavior.
 static var automatic: ValueAlignedLimitBehavior { get }
 ```
 
-#### Discussion
+## Discussion
 
 By default, the behavior will be limited for scroll views that are compact along the scrollable axis.
 

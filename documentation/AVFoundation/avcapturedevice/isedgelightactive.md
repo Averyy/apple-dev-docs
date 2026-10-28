@@ -23,7 +23,7 @@ class var isEdgeLightActive: Bool { get }
 @property (class, readonly, getter=isEdgeLightActive) BOOL edgeLightActive;
 ```
 
-#### Discussion
+## Discussion
 
 This readonly property reflects whether the edge light UI is actively being shown on a screen. It is key-value observable.
 

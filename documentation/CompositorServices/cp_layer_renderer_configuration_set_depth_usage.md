@@ -16,7 +16,7 @@ Sets the texture usage for the layer’s depth textures to the specified value.
 void cp_layer_renderer_configuration_set_depth_usage(cp_layer_renderer_configuration_t configuration, MTLTextureUsage depth_usage);
 ```
 
-#### Discussion
+## Discussion
 
 Use this function to modify the configuration details for your layer. Metal optimizes texture-related operations based on the texture’s usage value. The usage value can be a combination of options. For more information, see [`MTLTextureUsage`](../Metal/mtltextureusage.md).
 

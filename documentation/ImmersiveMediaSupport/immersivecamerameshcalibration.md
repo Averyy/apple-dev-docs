@@ -19,7 +19,7 @@ Calibration mesh geometry based on USDZ data.
 final class ImmersiveCameraMeshCalibration
 ```
 
-#### Overview
+## Overview
 
 This class is associated with the calibration type ‘usdzMesh’ and is used for calibration performed by camera lens provider using usdz.
 

@@ -24,11 +24,11 @@ static func content(_ contentIdentifier: String) -> SceneAssociationBehavior
 
 - [Adding spatial Persona support to an activity](../adding-spatial-persona-support-to-an-activity.md)
 
-#### Return Value
+## Return Value
 
 A [`SceneAssociationBehavior`](../sceneassociationbehavior.md) type with the specified identifier.
 
-#### Discussion
+## Discussion
 
 Use this option when you want more control over the scene-selection process for your [`GroupActivity`](../groupactivity.md) object. You might use it to direct the activity to different scenes, or to direct the activity to a specific instance of a scene. For example, a drawing app might direct the activity to the specific canvas someone wants to share, and not to a new or unrelated canvas that uses the same scene type.
 

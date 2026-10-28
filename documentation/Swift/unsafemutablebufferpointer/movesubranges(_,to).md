@@ -22,11 +22,11 @@ Moves the elements in the given subranges to just before the element at the spec
 mutating func moveSubranges(_ subranges: RangeSet<Self.Index>, to insertionPoint: Self.Index) -> Range<Self.Index>
 ```
 
-#### Return Value
+## Return Value
 
 The new bounds of the moved elements.
 
-#### Discussion
+## Discussion
 
 This example finds all the uppercase letters in the array and then moves them to between `"i"` and `"j"`.
 

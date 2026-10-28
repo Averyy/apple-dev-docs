@@ -24,7 +24,7 @@ var haptics: GCDeviceHaptics? { get }
 @property (nonatomic, retain, readonly, nullable) GCDeviceHaptics * haptics;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to create [`CHHapticEngine`](../../CoreHaptics/chhapticengine.md) instances as necessary in your app. If the controller doesn’t provide haptics information, this property is `nil`.
 

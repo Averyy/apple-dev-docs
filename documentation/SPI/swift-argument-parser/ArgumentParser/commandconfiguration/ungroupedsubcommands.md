@@ -14,7 +14,7 @@ An array of types that define subcommands for this command and are not part of a
 ## Declaration
 
 ```swift
-var ungroupedSubcommands: [any ParsableCommand.Type]
+var ungroupedSubcommands: [ParsableCommand.Type]
 ```
 
 

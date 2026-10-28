@@ -30,11 +30,11 @@ func downloadTask(with url: URL) -> URLSessionDownloadTask
 - [Downloading files in the background](../downloading-files-in-the-background.md)
 - [Downloading files from websites](../downloading-files-from-websites.md)
 
-#### Return Value
+## Return Value
 
 The new session download task.
 
-#### Discussion
+## Discussion
 
 After you create the task, you must start it by calling its [`resume()`](../urlsessiontask/resume%28%29.md) method.
 

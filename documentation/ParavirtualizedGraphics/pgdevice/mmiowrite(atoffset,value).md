@@ -21,7 +21,7 @@ func mmioWrite(atOffset offset: Int, value: UInt32)
 - (void) mmioWriteAtOffset:(size_t) offset value:(uint32_t) value;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method whenever the guest virtual machine writes to the graphics device’s memory-mapped I/O region.
 

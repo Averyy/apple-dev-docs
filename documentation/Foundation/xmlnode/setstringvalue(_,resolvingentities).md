@@ -20,7 +20,7 @@ func setStringValue(_ string: String, resolvingEntities resolve: Bool)
 - (void) setStringValue:(NSString *) string resolvingEntities:(BOOL) resolve;
 ```
 
-#### Discussion
+## Discussion
 
 User-defined entities not declared in the DTD remain in their unresolved form. This method can only be invoked on `NSXMLNode` objects that may have content, specifically elements, attributes, namespaces, processing instructions, text, and DTD-declaration nodes. Setting the string value of a node object removes all existing children, including processing instructions and comments. Setting the string value of an element -node object creates a text node as the sole child.
 

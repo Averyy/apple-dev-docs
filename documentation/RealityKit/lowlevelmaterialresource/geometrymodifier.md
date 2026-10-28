@@ -18,7 +18,7 @@ A compiled Metal function that implements the geometry modifier function.
 final class GeometryModifier
 ```
 
-#### Overview
+## Overview
 
 Create a `GeometryModifier` by calling [`makeGeometryModifier(descriptor:)`](../lowlevelrendercontext/makegeometrymodifier%28descriptor%29-307ec.md), or use [`makeDefaultGeometryModifier()`](../lowlevelrendercontext/makedefaultgeometrymodifier%28%29.md) for a pass-through modifier that performs no vertex transformation.
 

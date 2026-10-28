@@ -21,7 +21,7 @@ func insertText(_ insertString: Any)
 - (void) insertText:(id) insertString;
 ```
 
-#### Discussion
+## Discussion
 
 The inserted text is assigned the current typing attributes.
 

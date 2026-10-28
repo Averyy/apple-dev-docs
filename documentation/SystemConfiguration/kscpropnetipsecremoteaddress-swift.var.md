@@ -19,7 +19,7 @@ let kSCPropNetIPSecRemoteAddress: CFString
 extern CFStringRef const kSCPropNetIPSecRemoteAddress;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is of type [`CFString`](../CoreFoundation/cfstring.md).
 

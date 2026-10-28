@@ -25,7 +25,7 @@ func makeCommandAllocator(descriptor: MTL4CommandAllocatorDescriptor) throws -> 
 - (id<MTL4CommandAllocator>) newCommandAllocatorWithDescriptor:(MTL4CommandAllocatorDescriptor *) descriptor error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A [`MTL4CommandAllocator`](../mtl4commandallocator.md) instance, or `nil` if the function failed.
 

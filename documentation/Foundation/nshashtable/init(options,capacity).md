@@ -25,7 +25,7 @@ init(options: NSPointerFunctions.Options = [], capacity initialCapacity: Int)
 - (instancetype) initWithOptions:(NSPointerFunctionsOptions) options capacity:(NSUInteger) initialCapacity;
 ```
 
-#### Return Value
+## Return Value
 
 A hash table initialized with options specified by `options` and initial capacity of `capacity`.
 

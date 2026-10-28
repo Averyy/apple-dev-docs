@@ -29,7 +29,7 @@ class SWHighlight
 - [Adding shared content collaboration to your app](./adding-shared-content-collaboration-to-your-app.md)
 - [Making your app content shareable](./making-your-app-content-shareable.md)
 
-#### Overview
+## Overview
 
 The system doesn’t expose the identities of the contacts to the app. It tracks shared universal links for the current user and determines which links to elevate for consumption in an app. When the system deems a link to be useful, it surfaces that link to the hosting app in the form of an `SWHighlight` object.
 

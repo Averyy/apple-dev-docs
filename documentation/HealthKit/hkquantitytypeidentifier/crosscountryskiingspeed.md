@@ -24,7 +24,7 @@ static let crossCountrySkiingSpeed: HKQuantityTypeIdentifier
 extern HKQuantityTypeIdentifier const HKQuantityTypeIdentifierCrossCountrySkiingSpeed;
 ```
 
-#### Discussion
+## Discussion
 
 These samples use distance per time units (described in [`HKUnit`](../hkunit.md)) and measure discrete values (described in [`HKQuantityAggregationStyle`](../hkquantityaggregationstyle.md)). During outdoor cross country skiing workouts, the system automatically records distance samples on Apple Watch.
 

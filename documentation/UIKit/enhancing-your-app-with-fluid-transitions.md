@@ -5,7 +5,7 @@
 
 Use the fluid zoom transition to provide a continuously interactive and responsive experience in your app.
 
-#### Overview
+## Overview
 
 iOS 18 introduces a fluid, continuously interactive zoom transition. You can use this transition when your app navigates from a large cell or thumbnail to increase the sense of continuity in your app. People can then grab, drag, and control the transitions when they begin and anytime during their animation.
 
@@ -15,7 +15,7 @@ For example, someone taps a thumbnail and your app pushes the corresponding view
 
 The fluid zoom transitions are available on iPhone and iPad, including iPad apps running in visionOS. The API is available on other platforms, but the system uses the default transitions based on the current context instead.
 
-##### Set up a zoom transition
+### Set up a zoom transition
 
 To use the zoom transition, set the [`preferredTransition`](./uiviewcontroller/preferredtransition.md) property to [`zoom(options:sourceViewProvider:)`](./uiviewcontroller/transition/zoom%28options,sourceviewprovider%29.md) on a new view controller, and pass a closure that returns the view you’re zooming from. Then push the view controller onto the navigation stack.
 
@@ -60,7 +60,7 @@ navigationController?.pushViewController(detailViewController, animated: true)
 
 > **Note**:  You can also use the `preferredTransition` property for other system transitions, such as [`coverVertical`](./uiviewcontroller/transition/coververtical.md), [`flipHorizontal`](./uiviewcontroller/transition/fliphorizontal.md), [`crossDissolve`](./uiviewcontroller/transition/crossdissolve.md), and [`partialCurl`](./uiviewcontroller/transition/partialcurl.md).
 
-##### Work with state changes and callbacks
+### Work with state changes and callbacks
 
 View controllers go through a number of state changes when pushing them onto or popping them off the navigation stack.
 
@@ -97,7 +97,7 @@ However, if someone interrupts a navigation push, the system doesn’t cancel pu
 
 > ❗ **Important**:  The system handles the push and pop transitions differently. It doesn’t cancel a push — instead, it converts it to a pop. This ensures that the view controller reaches the appeared state, and calls the full cycle of appear and disappear callbacks.
 
-##### Maintain seamless transitions
+### Maintain seamless transitions
 
 When using continuously interactive transitions, your app needs to be ready for a new transition to start or stop at any time. Follow these guidelines to help your transitions run seamlessly and smoothly:
 

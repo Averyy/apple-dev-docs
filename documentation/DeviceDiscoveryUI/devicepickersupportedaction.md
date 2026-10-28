@@ -15,7 +15,7 @@ An environment value that indicates whether the current device supports device d
 struct DevicePickerSupportedAction
 ```
 
-#### Overview
+## Overview
 
 Access the action using the `.devicePickerSupports` key. Then call it as a function, passing the same browse descriptor and parameters you use to search for devices.
 

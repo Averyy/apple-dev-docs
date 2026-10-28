@@ -23,7 +23,7 @@ func ABAddressBookGetAuthorizationStatus() -> ABAuthorizationStatus
 extern ABAuthorizationStatus ABAddressBookGetAuthorizationStatus();
 ```
 
-#### Return Value
+## Return Value
 
 The authorization status for your app.
 

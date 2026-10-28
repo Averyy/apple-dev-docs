@@ -9,7 +9,7 @@ Retrieve the merchant token usage information package from the merchant server.
 **Availability**:
 - Apple Pay Merchant Token Management API 1.0.12+
 
-#### Discussion
+## Discussion
 
 The user’s device calls this API to get the merchant token usage information package from the merchant server. Devices use the `webServiceURL` delivered to the Apple Pay server as part of the metadata.
 

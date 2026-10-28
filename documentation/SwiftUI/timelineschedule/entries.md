@@ -22,7 +22,7 @@ The sequence of dates within a schedule.
 associatedtype Entries : Sequence where Self.Entries.Element == Date
 ```
 
-#### Discussion
+## Discussion
 
 The [`entries(from:mode:)`](./entries%28from,mode%29.md) method returns a value of this type, which is a [`Sequence`](../../Swift/sequence.md) of dates in ascending order. A [`TimelineView`](../timelineview.md) that you create with a schedule updates its content at the moments in time corresponding to the dates included in the sequence.
 

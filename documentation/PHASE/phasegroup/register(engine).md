@@ -24,7 +24,7 @@ func register(engine: PHASEEngine)
 - (void) registerWithEngine:(PHASEEngine *) engine;
 ```
 
-#### Discussion
+## Discussion
 
 The function generates an exception if the argument is `nil` or if engine already contains the group. For more information, see [`groups`](../phaseengine/groups.md).
 

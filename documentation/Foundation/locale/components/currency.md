@@ -21,7 +21,7 @@ The currency used by the locale.
 var currency: Locale.Currency?
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to override the locale’s default currency. To request the default currency used by the locale, use the [`Locale`](../../locale.md) property [`currency`](../currency-swift.property.md).
 

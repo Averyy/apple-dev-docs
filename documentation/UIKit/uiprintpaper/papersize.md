@@ -22,7 +22,7 @@ var paperSize: CGSize { get }
 @property (readonly) CGSize paperSize;
 ```
 
-#### Discussion
+## Discussion
 
 The paper size is often associated with a standard designation, such as “Letter” and “A4”. For example, the paper size for a Letter sheet of paper is 612 points wide and 792 points high.
 

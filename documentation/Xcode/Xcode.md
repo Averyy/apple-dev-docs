@@ -4,7 +4,7 @@
 
 Build, test, and submit your app with Apple’s integrated development environment.
 
-#### Overview
+## Overview
 
 Xcode is the suite of tools you use to build apps for Apple platforms. Use Xcode to manage your entire development workflow — from creating your app to testing, optimizing, and submitting it to the App Store.
 

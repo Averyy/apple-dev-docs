@@ -22,7 +22,7 @@ Recovers a shared secret from an encapsulated representation.
 consuming func decapsulate(_ encapsulated: Data) throws -> SymmetricKey
 ```
 
-#### Return Value
+## Return Value
 
 The decapsulated shared secret.
 

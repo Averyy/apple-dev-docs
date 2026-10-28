@@ -21,7 +21,7 @@ The number of periods that the subscription offer renews for.
 let periodCount: Int
 ```
 
-#### Discussion
+## Discussion
 
 If the payment mode is [`payAsYouGo`](./paymentmode-swift.struct/payasyougo.md), the period count represents the number of periods the subscription renews at the discounted [`price`](./price.md).
 

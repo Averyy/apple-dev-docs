@@ -17,7 +17,7 @@ typedef struct SCSICmd_INQUIRY_Page00_Header {
 } SCSICmd_INQUIRY_Page00_Header;
 ```
 
-#### Overview
+## Overview
 
 INQUIRY Page 00h Header.
 

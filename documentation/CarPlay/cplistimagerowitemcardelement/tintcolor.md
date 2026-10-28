@@ -22,7 +22,7 @@ var tintColor: UIColor? { get set }
 @property (nonatomic, copy, nullable) UIColor * tintColor;
 ```
 
-#### Discussion
+## Discussion
 
 If this value is nil, iOS will use secondarySystemBackground color.
 

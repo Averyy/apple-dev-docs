@@ -16,11 +16,11 @@ Scales this view to fit its parent.
 nonisolated func scaledToFit3D() -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that scales this view to fit its parent, maintaining this view’s aspect ratio.
 
-#### Discussion
+## Discussion
 
 This view’s 3D aspect ratio is maintained as the view scales. This method is equivalent to calling `aspectRatio3D(nil, contentMode: .fit)`.
 

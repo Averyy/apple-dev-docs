@@ -21,7 +21,7 @@ func add(_ layerHierarchy: LayerHierarchy)
 - (void) addLayerHierarchy:(BELayerHierarchy *) layerHierarchy;
 ```
 
-#### Discussion
+## Discussion
 
 The transaction coordinator coordinates any transactions involving layers in the `layerHierarchy` until you call [`commit()`](./commit%28%29.md).
 

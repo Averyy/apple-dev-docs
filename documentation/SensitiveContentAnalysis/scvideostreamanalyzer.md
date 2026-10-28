@@ -25,7 +25,7 @@ class SCVideoStreamAnalyzer
 
 - [Detecting sensitive content in media and providing intervention options](./detecting-nudity-in-media-and-providing-intervention-options.md)
 
-#### Overview
+## Overview
 
 Use this class to detect sensitive content in a video stream, such as on a conference call that your app implements. The class detects sensitive content in the video stream from either the device’s camera or the remote devices signed into the call, depending on how you configure the analyzer.
 
@@ -35,7 +35,7 @@ To begin analyzing the stream, pass it to either [`beginAnalysis(of:)`](./scvide
 
 > ❗ **Important**:  This class works only when the Communication Safety parental control in Screen Time is enabled, or when the Sensitive Content Warnings setting is turned on. The initializers of this class throw an error if both settings are off.
 
-##### React to sensitive content
+### React to sensitive content
 
 When the framework detects sensitive content in the stream, it calls [`analysisChangedHandler`](./scvideostreamanalyzer/analysischangedhandler.md) immediately with an [`SCSensitivityAnalysis`](./scsensitivityanalysis.md) object that includes information about the detection.
 
@@ -49,7 +49,7 @@ To stop analyzing the stream, call [`endAnalysis()`](./scvideostreamanalyzer/end
 
 In the event of an error during analysis, the handler receives an error object that details what went wrong. For more information, see: [`SCVideoStreamAnalysisChangeHandler`](./scvideostreamanalysischangehandler.md).
 
-##### Add the app entitlement
+### Add the app entitlement
 
 To use this class, the system requires the [`com.apple.developer.sensitivecontentanalysis.client`](../BundleResources/entitlements/com.apple.developer.sensitivecontentanalysis.client.md) entitlement in your app’s code signature. Calls to the framework fail to return positive results without it. You can add this entitlement to your app by enabling the Sensitive Content Analysis capability in Xcode; see [Adding capabilities to your app](../Xcode/adding-capabilities-to-your-app.md).
 

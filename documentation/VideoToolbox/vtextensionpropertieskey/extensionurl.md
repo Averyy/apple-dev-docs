@@ -19,7 +19,7 @@ static let extensionURL: VTExtensionPropertiesKey
 extern VTExtensionPropertiesKey const kVTExtensionProperties_ExtensionURLKey;
 ```
 
-#### Discussion
+## Discussion
 
 This key points to a `CFURLRef` value with the URL for the extension.
 

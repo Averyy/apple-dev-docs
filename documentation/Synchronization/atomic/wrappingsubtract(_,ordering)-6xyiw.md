@@ -24,11 +24,11 @@ func wrappingSubtract(_ operand: Int8, ordering: AtomicUpdateOrdering) -> (oldVa
 
 Available when `Value` is `Int8`.
 
-#### Return Value
+## Return Value
 
 A tuple containing the original value before the operation and the new value after the operation.
 
-#### Discussion
+## Discussion
 
 > **Note**: This operation silently wraps around on overflow, like the `&-` operator does on `Int8` values.
 

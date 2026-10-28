@@ -19,11 +19,11 @@ func closeConnection() -> IOReturn
 - (IOReturn) closeConnection;
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if the connection has successfully been closed.
 
-#### Discussion
+## Discussion
 
 This method is synchronous and will not return until the connection has been closed (or the command failed). In the future this API will be changed to allow asynchronous operation.
 

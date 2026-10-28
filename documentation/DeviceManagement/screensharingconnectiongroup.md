@@ -15,11 +15,11 @@ The declaration to configure a group of screen-sharing connections.
 object ScreenSharingConnectionGroup
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.configuration.screensharing.connection.group` as the declaration type.
 
-##### Configuration availability
+### Configuration availability
 
 |  |  |
 | --- | --- |
@@ -31,7 +31,7 @@ Specify `com.apple.configuration.screensharing.connection.group` as the declarat
 | Allowed in user scope | macOS |
 | Apply | Multiple configurations are applied separately |
 
-##### Configuration example
+### Configuration example
 
 This configuration defines a group of screen-sharing connections.
 

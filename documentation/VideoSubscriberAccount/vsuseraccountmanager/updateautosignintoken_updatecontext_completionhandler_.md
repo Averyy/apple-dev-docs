@@ -17,7 +17,7 @@ Sets the current Automatic Sign-In token.
 - (void) updateAutoSignInToken:(NSString *) autoSignInToken updateContext:(VSAutoSignInTokenUpdateContext *) context completionHandler:(void (^)(NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method when generating a new token value for an account. To update the token, request the person’s authorization for Automatic Sign-In. For more information, see [`requestAutoSignInAuthorization()`](./requestautosigninauthorization%28%29.md).
 

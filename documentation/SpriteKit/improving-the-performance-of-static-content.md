@@ -5,7 +5,7 @@
 
 Flatten a portion of your node hierarchy to a single texture to improve performance.
 
-#### Overview
+## Overview
 
 An effect node normally discards its private framebuffer after rendering is complete. Rendering the content is necessary because it typically changes every frame. However, if the content is static, discarding the rendered framebuffer is unnecessary, and it might make more sense to keep it.
 

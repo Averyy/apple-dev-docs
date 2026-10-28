@@ -30,7 +30,7 @@ var availableBookings: [INRestaurantReservationBooking] { get }
 @property (atomic, readonly) NSArray<INRestaurantReservationBooking *> * availableBookings;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the details of the reservation time slots that you are offering to the user. Offering a time slot does not by itself complete the booking process. The user must choose a time slot, at which time the system sends your Intents extension a [`INBookRestaurantReservationIntent`](../inbookrestaurantreservationintent.md) object, which you use to complete the booking process.
 

@@ -17,7 +17,7 @@ Runs a system animation effect.
 extern void NSShowAnimationEffect(NSAnimationEffect animationEffect, NSPoint centerLocation, NSSize size, id animationDelegate, SEL didEndSelector, void *contextInfo);
 ```
 
-#### Discussion
+## Discussion
 
 This function runs one of the standard system animation effects, which includes display and sound. For example, you can use this function to display the puff of smoke effect. For a complete list of animation effects, see [`NSAnimationEffect`](./nsanimationeffect.md).
 

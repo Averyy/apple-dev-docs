@@ -15,11 +15,11 @@ Set flags on a mount.
 void vfs_setflags(mount_t mp, uint64_t flags);
 ```
 
-#### Return Value
+## Return Value
 
 Flags.
 
-#### Discussion
+## Discussion
 
 Sets mount flags to the bitwise "OR" of their current value and the specified bits. Often used by a filesystem as part of the mount process.
 

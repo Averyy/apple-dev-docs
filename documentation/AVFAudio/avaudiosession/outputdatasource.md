@@ -24,7 +24,7 @@ var outputDataSource: AVAudioSessionDataSourceDescription? { get }
 @property (readonly, nullable) AVAudioSessionDataSourceDescription * outputDataSource;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`nil`](../../ObjectiveC/nil-227m0.md) if switching between multiple output sources isn’t currently possible. Only certain USB accessories support switching output sources.
 

@@ -21,11 +21,11 @@ func compositionPickerView() -> QCCompositionPickerView!
 - (QCCompositionPickerView *) compositionPickerView;
 ```
 
-#### Return Value
+## Return Value
 
 The `QCCompositionPickerView` used by the composition picker panel.
 
-#### Discussion
+## Discussion
 
 After you retrieve the view, you can configure it.
 

@@ -20,11 +20,11 @@ func mouseDown(onCharacterIndex index: Int, coordinate point: NSPoint, withModif
 - (BOOL) mouseDownOnCharacterIndex:(NSUInteger) index coordinate:(NSPoint) point withModifier:(NSUInteger) flags continueTracking:(BOOL *) keepTracking client:(id) sender;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if handled; otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Implement this method if your input method handles mouse-down events.
 

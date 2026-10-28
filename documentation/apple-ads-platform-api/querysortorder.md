@@ -20,7 +20,7 @@ string QuerySortOrder
 - `ASC`: Sorts results in ascending order (A to Z, lowest to highest).
 - `DESC`: Sorts results in descending order (Z to A, highest to lowest).
 
-#### Discussion
+## Discussion
 
 The `QuerySortOrder` specifies the direction of a sort applied in `QuerySort.order`.
 

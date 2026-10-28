@@ -19,7 +19,7 @@ The supported features.
 var features: Set<FeatureSet.Feature>
 ```
 
-#### Discussion
+## Discussion
 
 Default is all features.
 

@@ -24,7 +24,7 @@ class PKPaymentRequest
 @interface PKPaymentRequest : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use a [`PKPaymentRequest`](./pkpaymentrequest.md) object to represent a merchant request for payment for goods or services. Your app creates a payment request as soon as a person taps the Apple Pay button to make a purchase. Tapping the Apple Pay button in your app initiates the payment request process. If your customers need to enter a discount code, choose a shipping method, or any other task, your app needs to ask for that information *before* they tap the Apple Pay button.
 
@@ -43,27 +43,27 @@ A typical payment request is for a one-time payment. To support different types 
 
 > **Note**:  You can set only one optional payment request type on a payment request object.
 
-##### Request a recurring payment
+### Request a recurring payment
 
 Use the [`recurringPaymentRequest`](./pkpaymentrequest/recurringpaymentrequest.md) property to set up a recurring payment request using the [`PKRecurringPaymentRequest`](./pkrecurringpaymentrequest.md) and [`PKRecurringPaymentSummaryItem`](./pkrecurringpaymentsummaryitem.md) classes. Recurring payments, such as subscriptions, can feature different payment intervals (for example, annually or monthly) and billing cycles, such as regular or trial.
 
-##### Request an automatic reload payment
+### Request an automatic reload payment
 
 Use the [`automaticReloadPaymentRequest`](./pkpaymentrequest/automaticreloadpaymentrequest.md) property to set up an automatic reload payment request using the [`PKAutomaticReloadPaymentRequest`](./pkautomaticreloadpaymentrequest.md) and [`PKAutomaticReloadPaymentSummaryItem`](./pkautomaticreloadpaymentsummaryitem.md) classes. You can set up automatic reload payments, such as store card top-ups, that feature a balance threshold and a reload amount. The card automatically reloads with the reload amount when the account drops below the balance threshold.
 
-##### Request a deferred payment
+### Request a deferred payment
 
 Use the [`deferredPaymentRequest`](./pkpaymentrequest/deferredpaymentrequest.md) property to set up a deferred payment request using the [`PKDeferredPaymentRequest`](./pkdeferredpaymentrequest.md) class. Deferred payments include purchases, such as hotel bookings or pre-orders, where the card renders payment at a later date upon the receipt of goods or delivery of services.
 
-##### Set the Apple Pay Later mode
+### Set the Apple Pay Later mode
 
 Use the [`applePayLaterAvailability`](./pkpaymentrequest/applepaylateravailability-3dxrt.md) property to indicate whether this payment request is eligible for Apple Pay Later. You can indicate that Apple Pay Later is unavailable for certain kinds of transactions, including subscriptions, items that require recurring payments or prohibited items, such as gift cards.
 
-##### Request multitoken or multimerchant payments
+### Request multitoken or multimerchant payments
 
 Use the [`multiTokenContexts`](./pkpaymentrequestupdate/multitokencontexts.md) property to request payment data for multimerchant payments with the [`PKPaymentTokenContext`](./pkpaymenttokencontext.md) class. You can set up multitoken transactions to process and display payment requests with multiple merchants on one payment sheet, for example, a booking site where someone pays for a hotel, flight, and car rental from different merchants.
 
-##### Exclude an Apple Pay from the payment sheet
+### Exclude an Apple Pay from the payment sheet
 
 Use the [`unsupportedPrimaryAccountIdentifiers`](./pkpaymentrequest/unsupportedprimaryaccountidentifiers.md) property to exclude specific Apple Pay cards that you’ve issued from appearing in the payment sheet as a pay option. For example, if a person is topping up a stored value card, you can exclude the card being topped up from the payment options.
 

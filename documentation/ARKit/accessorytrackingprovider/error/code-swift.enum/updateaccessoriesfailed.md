@@ -15,7 +15,7 @@ Updating accessories failed.
 case updateAccessoriesFailed
 ```
 
-#### Discussion
+## Discussion
 
 This error is returned when one or more accessories cannot be added or the request is superseded by a more recent request.
 

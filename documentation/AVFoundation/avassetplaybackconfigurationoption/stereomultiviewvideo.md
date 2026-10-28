@@ -25,7 +25,7 @@ static let stereoMultiviewVideo: AVAssetPlaybackConfigurationOption
 extern AVAssetPlaybackConfigurationOption const AVAssetPlaybackConfigurationOptionStereoMultiviewVideo;
 ```
 
-#### Discussion
+## Discussion
 
 Apps may use this property to determine whether to configure stereo video rendering.
 

@@ -24,7 +24,7 @@ let HMCharacteristicTypeTargetVisibilityState: String
 extern NSString * const HMCharacteristicTypeTargetVisibilityState;
 ```
 
-#### Overview
+## Overview
 
 This variable indicates if the application shows or hides the service. The corresponding value is one of the constants in the [`HMCharacteristicValueCurrentVisibilityState`](./hmcharacteristicvaluecurrentvisibilitystate.md) enumeration.
 

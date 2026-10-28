@@ -24,7 +24,7 @@ class VSSubscriptionRegistrationCenter
 @interface VSSubscriptionRegistrationCenter : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use the methods in this class to retrieve the default registration center object and set the user’s current subscription for your app. This subscription informs the Apple TV app of the user’s access level and tiers.
 

@@ -23,7 +23,7 @@ let kCTFontFeatureSelectorNameKey: CFString
 extern CFStringRef const kCTFontFeatureSelectorNameKey;
 ```
 
-#### Discussion
+## Discussion
 
 Key to be used with a selector dictionary to get the localized name string for the selector as a `CFStringRef` object.
 

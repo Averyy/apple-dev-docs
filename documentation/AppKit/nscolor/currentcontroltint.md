@@ -19,11 +19,11 @@ class var currentControlTint: NSControlTint { get }
 @property (class, readonly) NSControlTint currentControlTint;
 ```
 
-#### Return Value
+## Return Value
 
 The current system control tint.
 
-#### Discussion
+## Discussion
 
 An application can register for the [`currentControlTintDidChangeNotification`](./currentcontroltintdidchangenotification.md) notification to be notified of changes to the system control tint.
 

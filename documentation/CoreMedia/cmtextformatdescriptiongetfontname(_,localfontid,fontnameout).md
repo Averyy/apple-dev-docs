@@ -25,7 +25,7 @@ func CMTextFormatDescriptionGetFontName(_ desc: CMFormatDescription, localFontID
 extern OSStatus CMTextFormatDescriptionGetFontName(CMFormatDescriptionRef desc, uint16_t localFontID, CFStringRef*fontNameOut);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. Returns `noErr` if successful.
 

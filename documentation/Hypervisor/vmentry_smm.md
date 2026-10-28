@@ -19,7 +19,7 @@ var VMENTRY_SMM: UInt32 { get }
 VMENTRY_SMM
 ```
 
-#### Discussion
+## Discussion
 
 Must be `0`.
 

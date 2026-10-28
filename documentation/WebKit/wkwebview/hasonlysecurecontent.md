@@ -23,7 +23,7 @@ var hasOnlySecureContent: Bool { get }
 @property (nonatomic, readonly) BOOL hasOnlySecureContent;
 ```
 
-#### Discussion
+## Discussion
 
 [`WKWebView`](../wkwebview.md) is key-value observing (KVO) compliant for this property.
 

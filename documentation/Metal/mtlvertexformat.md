@@ -24,11 +24,11 @@ enum MTLVertexFormat
 enum MTLVertexFormat : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 Set the [`format`](./mtlvertexattributedescriptor/format.md) property of [`MTLVertexAttributeDescriptor`](./mtlvertexattributedescriptor.md) to one of these format values. The format configures how Metal interprets the vertex data in memory for the corresponding argument in your vertex shader. Choose a format that matches the type and component count the shader expects.
 
-##### Normalized integer formats
+### Normalized integer formats
 
 Normalized signed integer formats have `Normalized` in the name and signed types like [`MTLVertexFormat.char`](./mtlvertexformat/char.md) or [`MTLVertexFormat.short`](./mtlvertexformat/short.md). For these formats, values in the range `[-1.0, 1.0]` map to `[MIN_INT, MAX_INT]`, where `MIN_INT` is the most negative integer and `MAX_INT` is the most positive integer for the number of bits in the storage size. Positive values and zero distribute uniformly in the range `[0.0, 1.0]`, and negative integer values greater than `(MIN_INT + 1)` distribute uniformly in the range `(-1.0, 0.0)`.
 

@@ -21,7 +21,7 @@ Converts an array of unsigned 16-bit integers to single-precision floating-point
 extern void vDSP_vfltu32(const unsigned int *__A, vDSP_Stride __IA, float *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 The following code shows an example of using this function:
 

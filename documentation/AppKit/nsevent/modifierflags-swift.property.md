@@ -19,7 +19,7 @@ var modifierFlags: NSEvent.ModifierFlags { get }
 @property (readonly) NSEventModifierFlags modifierFlags;
 ```
 
-#### Discussion
+## Discussion
 
 You can examine individual flag settings using the C bitwise AND operator with the predefined key masks described in `Getting Unicode Values`. The lower 16 bits of the modifier flags are reserved for device-dependent bits.
 

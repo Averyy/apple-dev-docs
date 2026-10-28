@@ -23,11 +23,11 @@ func sec_protocol_options_get_default_max_tls_protocol_version() -> tls_protocol
 tls_protocol_version_t sec_protocol_options_get_default_max_tls_protocol_version();
 ```
 
-#### Return Value
+## Return Value
 
 The default maximum TLS version.
 
-#### Discussion
+## Discussion
 
 Get the system default maximum TLS protocol version.
 

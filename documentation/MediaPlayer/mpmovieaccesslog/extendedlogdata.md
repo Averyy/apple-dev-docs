@@ -23,7 +23,7 @@ var extendedLogData: Data! { get }
 @property (nonatomic, readonly) NSData * extendedLogData;
 ```
 
-#### Discussion
+## Discussion
 
 The web server access log in a textual format that conforms to the W3C Extended Log File Format for web server log files. For more information, see [http://www.w3.org/pub/WWW/TR/WD-logfile.html](http://www.w3.org/pub/WWW/TR/WD-logfile.html).
 

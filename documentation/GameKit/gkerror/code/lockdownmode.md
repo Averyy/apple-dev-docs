@@ -25,7 +25,7 @@ case lockdownMode
 GKErrorLockdownMode
 ```
 
-#### Discussion
+## Discussion
 
 For more information about Lockdown Mode, see [About Lockdown Mode](https://support.apple.com/en-us/HT212650).
 

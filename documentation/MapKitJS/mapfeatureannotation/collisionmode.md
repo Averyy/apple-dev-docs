@@ -15,7 +15,7 @@ A value that determines how the map handles collisions between annotations.
 get collisionMode(): AnnotationCollisionMode;
 ```
 
-#### Discussion
+## Discussion
 
 You can’t set the collision mode property of the map feature annotation.
 

@@ -19,7 +19,7 @@ static let fixedAdvance: NSFontDescriptor.AttributeName
 extern NSFontDescriptorAttributeName NSFontFixedAdvanceAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSNumber`](../../../Foundation/nsnumber.md) object. The default value is `0.0`.
 

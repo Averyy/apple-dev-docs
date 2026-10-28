@@ -19,11 +19,11 @@ func urlForApplication(withBundleIdentifier bundleIdentifier: String) -> URL?
 - (NSURL *) URLForApplicationWithBundleIdentifier:(NSString *) bundleIdentifier;
 ```
 
-#### Return Value
+## Return Value
 
 The URL of the app, or `nil` if no app has the bundle identifier.
 
-#### Discussion
+## Discussion
 
 This method uses various heuristics in case multiple apps have the same bundle ID.
 

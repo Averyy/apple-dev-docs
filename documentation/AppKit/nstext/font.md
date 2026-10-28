@@ -19,7 +19,7 @@ var font: NSFont? { get set }
 @property (strong, nullable) NSFont * font;
 ```
 
-#### Discussion
+## Discussion
 
 When the specified font doesn’t include a character, the text system uses an alternate font that contains the character. The substituted font may not have compatible metrics.
 

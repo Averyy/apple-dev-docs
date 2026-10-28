@@ -19,7 +19,7 @@ var containerFrame: NSRect { get }
 @property (readonly) NSRect containerFrame;
 ```
 
-#### Discussion
+## Discussion
 
 The rectangle in this property corresponds to the onscreen frame rectangle of the item. This rectangle may or may not intersect the [`sourceFrame`](./sourceframe.md) rectangle of the item. An intersection of the rectangles means that at least part of the item is visible onscreen.
 

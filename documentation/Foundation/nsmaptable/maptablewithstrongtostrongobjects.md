@@ -17,7 +17,7 @@ Returns a new map table object which has strong references to the keys and value
 + (id) mapTableWithStrongToStrongObjects;
 ```
 
-#### Return Value
+## Return Value
 
 A new map table object which has strong references to the keys and values.
 

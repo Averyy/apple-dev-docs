@@ -23,7 +23,7 @@ static func == (lhs: Publishers.CollectByCount<Upstream>, rhs: Publishers.Collec
 
 Available when `Upstream` conforms to `Publisher` and `Equatable`.
 
-#### Return Value
+## Return Value
 
 `true` if the corresponding `upstream` and `count` properties of each publisher are equal; otherwise `false`.
 

@@ -21,7 +21,7 @@ A type that represents audio that doesn’t contain video.
 static var audio: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.audio`.
 

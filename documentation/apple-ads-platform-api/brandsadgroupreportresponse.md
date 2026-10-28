@@ -15,11 +15,11 @@ The top-level response envelope for brands ad group reports.
 object BrandsAdGroupReportResponse
 ```
 
-#### Discussion
+## Discussion
 
 The `brands` ad group reports support `groupBy` dimensions `deviceClass`, `locationId`, and `supplyPlacement`.
 
-##### Example
+### Example
 
 ```json
 {

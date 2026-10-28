@@ -16,11 +16,11 @@ Method to set the task's attribute.
 IOReturn (*SetTaskAttribute)(void *task, SCSITaskAttribute inAttribute);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess or kIOReturnError.
 
-#### Discussion
+## Discussion
 
 This method can be used to set the SCSITask's SCSITaskAttribute field. Valid values are defined in SCSITask.h
 

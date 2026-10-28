@@ -24,7 +24,7 @@ static var traitLooseLeading: UIFontDescriptor.SymbolicTraits { get }
 UIFontDescriptorTraitLooseLeading
 ```
 
-#### Discussion
+## Discussion
 
 For fonts that you create using [`UIFont.TextStyle`](../../uifont/textstyle.md), loose leading adds 2 points to the current leading value.
 

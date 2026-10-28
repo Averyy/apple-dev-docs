@@ -23,7 +23,7 @@ var kCTFontTableFmtx: Int { get }
 kCTFontTableFmtx
 ```
 
-#### Discussion
+## Discussion
 
 Font table tag for font metrics.
 

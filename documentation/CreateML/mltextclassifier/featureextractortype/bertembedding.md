@@ -23,7 +23,7 @@ case bertEmbedding
 
 - [Creating a text classifier model](../../creating-a-text-classifier-model.md)
 
-#### Discussion
+## Discussion
 
 The embeddings consider the context from left-to-right and right-to-left simultaneously.
 

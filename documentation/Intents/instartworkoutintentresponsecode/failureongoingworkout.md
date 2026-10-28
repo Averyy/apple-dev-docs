@@ -23,7 +23,7 @@ case failureOngoingWorkout
 INStartWorkoutIntentResponseCodeFailureOngoingWorkout
 ```
 
-#### Discussion
+## Discussion
 
 Use this code when the user is already in the middle of a workout.
 

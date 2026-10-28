@@ -13,7 +13,7 @@ Provide voice and text communication on a local network isolated from Apple Push
 - macOS 11.0+
 - Xcode 17.0+
 
-#### Overview
+## Overview
 
 This sample app shows how to implement and use Local Push Connectivity within a messaging app. The sample workspace contains two app components:
 
@@ -27,7 +27,7 @@ The `SimplePush` app maintains two connections to the server:
 
 To run the sample, you need a Mac to operate as the server, and two iOS devices (such as an iPhone and an iPad, or an iPod touch and an iPhone) that can connect to the server to communicate with each other.
 
-##### Configure the Sample Code Project
+### Configure the Sample Code Project
 
 Apps that use Local Push Connectivity require the [App Push Provider entitlement](https://developer.apple.com/contact/request/local-push-connectivity).
 
@@ -39,11 +39,11 @@ After you receive the entitlement, do the following:
 4. In the SimplePush project, configure the `SimplePush` and `SimplePushProvider` targets with the imported provisioning profiles, deselect the existing App Group, and select the new App Group identifier you created in step 2.
 5. Update the `pushProviderBundleIdentifier` in `PushConfigurationManager.swift` with the bundle identifier set on the `SimplePushProvider` target.
 
-##### Build and Run the Sample Server
+### Build and Run the Sample Server
 
 Select the `SimplePushServer` build scheme and your Mac as the run destination, then run the project to start the server.
 
-##### Build, Run, and Configure the Sample App
+### Build, Run, and Configure the Sample App
 
 With the server running, select the `SimplePush` iOS build scheme and run the project on your iOS device. When `SimplePush` starts, update the app’s settings to connect to the server. Tap the Settings button and enter the following information:
 

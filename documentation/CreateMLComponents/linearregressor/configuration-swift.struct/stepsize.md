@@ -21,7 +21,7 @@ The starting step size to use for the solver.
 var stepSize: Double
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to 1.0. If the first iteration takes a considerable amount of time, reducing this parameter may speed up model training.
 

@@ -25,7 +25,7 @@ var videoCompressionProperties: [String : any NSSecureCoding & NSObjectProtocol]
 @property (nonatomic, strong, nullable) NSDictionary<NSString *,NSObject<NSCoding,NSSecureCoding> *> * videoCompressionProperties;
 ```
 
-#### Discussion
+## Discussion
 
 See [`AVVideoCompressionPropertiesKey`](../../AVFoundation/avvideocompressionpropertieskey.md) for a list of available properties.
 

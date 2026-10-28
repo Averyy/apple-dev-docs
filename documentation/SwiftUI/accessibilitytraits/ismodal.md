@@ -21,7 +21,7 @@ The accessibility element is modal.
 static let isModal: AccessibilityTraits
 ```
 
-#### Discussion
+## Discussion
 
 Use this trait to restrict which accessibility elements an assistive technology can navigate. When a modal accessibility element is visible, sibling accessibility elements that are not modal are ignored.
 

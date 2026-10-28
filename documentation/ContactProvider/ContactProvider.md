@@ -10,7 +10,7 @@ Provide contacts managed by your app to the system-wide Contacts ecosystem.
 - iOS 18.0+
 - iPadOS 18.0+
 
-#### Overview
+## Overview
 
 Use the Contact Provider framework if your app manages its own contacts to make them available in other apps that use the [Contacts](../Contacts/Contacts.md) framework. This enables apps like Phone and Mail to provide personal names and images for incoming calls or messages when your app knows the caller or sender. Instead of adding contacts directly with the Contacts framework, your app provides read-only contact items that it can update, and which the person using your app can easily enable, disable, add, or remove. This enables people to organize the contacts they use in your app separately from their personal contacts.
 

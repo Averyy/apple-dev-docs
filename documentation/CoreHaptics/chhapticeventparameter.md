@@ -24,7 +24,7 @@ class CHHapticEventParameter
 @interface CHHapticEventParameter : NSObject
 ```
 
-#### Overview
+## Overview
 
 Event parameters specify values for haptics associated with the event. For example, an intensity event parameter determines how intense the haptic feels when it fires. Event parameters are static; they don’t change over the course of the pattern. To change a parameter value after a haptic has started playing, use a [`CHHapticDynamicParameter`](./chhapticdynamicparameter.md) to make an immediate change, or a [`CHHapticParameterCurve`](./chhapticparametercurve.md) to transition smoothly.
 

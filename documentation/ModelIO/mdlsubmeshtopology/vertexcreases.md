@@ -24,7 +24,7 @@ var vertexCreases: (any MDLMeshBuffer)? { get set }
 @property (nonatomic, retain, nullable) id<MDLMeshBuffer> vertexCreases;
 ```
 
-#### Discussion
+## Discussion
 
 Each entry in this buffer corresponds to an entry in the [`vertexCreaseIndices`](./vertexcreaseindices.md) buffer that identifies a crease. The value of each entry determines the amount of smoothing to apply to the crease during surface subdivision—a value of zero completely smooths out the point, and a value of one leaves the point completely sharp.
 

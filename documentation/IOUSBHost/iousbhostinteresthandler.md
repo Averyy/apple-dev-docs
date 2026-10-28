@@ -20,7 +20,7 @@ typealias IOUSBHostInterestHandler = (IOUSBHostObject, UInt32, UnsafeMutableRawP
 typedef void (^)(IOUSBHostObject *, unsigned int, void *) IOUSBHostInterestHandler;
 ```
 
-#### Discussion
+## Discussion
 
 This is the block for the `kIOGeneralInterest` handler, and handles underlying service-state changes, such as termination. See [`IOServiceInterestCallback`](../iokit/ioserviceinterestcallback.md) in [IOKit](../iokit/iokit.md) for more details. An internal serial queue separate from the input/output queue services all notifications.
 

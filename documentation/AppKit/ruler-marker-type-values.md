@@ -5,7 +5,7 @@
 
 Values that indicate the marker type of an element.
 
-#### Overview
+## Overview
 
 Use these values with an accessibility element’s [`markerType`](./nsaccessibility-swift.struct/attribute/markertype.md) property.
 

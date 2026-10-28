@@ -20,7 +20,7 @@ Sets values for a group of function constants within a specific index range.
 func setConstantValues(_ values: UnsafeRawPointer, type: MTLDataType, range: Range<Int>)
 ```
 
-#### Discussion
+## Discussion
 
 Declare multiple function constants in Metal Shading Language (MSL).
 

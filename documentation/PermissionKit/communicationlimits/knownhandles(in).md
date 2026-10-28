@@ -23,11 +23,11 @@ final func knownHandles(in handles: Set<CommunicationHandle>) async -> Set<Commu
 
 - [Creating a communication experience](../creating-a-communication-experience.md)
 
-#### Return Value
+## Return Value
 
 A subset of the given handles known to the system.
 
-#### Discussion
+## Discussion
 
 > **Note**: This method requires that the calling app have a non-nil, nonempty bundle identifier.
 

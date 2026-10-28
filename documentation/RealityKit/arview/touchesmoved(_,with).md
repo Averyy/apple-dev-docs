@@ -19,7 +19,7 @@ Tells the view when one or more touches associated with an event changed.
 @preconcurrency override dynamic func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?)
 ```
 
-#### Discussion
+## Discussion
 
 See [`touchesMoved(_:with:)`](../../UIKit/uiresponder/touchesmoved%28_,with%29.md) for more information.
 

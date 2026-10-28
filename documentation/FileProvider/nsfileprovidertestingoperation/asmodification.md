@@ -18,7 +18,7 @@ Returns the operation if it propagates a change.
 - (id<NSFileProviderTestingModification>) asModification;
 ```
 
-#### Discussion
+## Discussion
 
 If the operation doesn’t conform to the [`NSFileProviderTestingModification`](../nsfileprovidertestingmodification.md) protocol, this method returns `nil`.
 

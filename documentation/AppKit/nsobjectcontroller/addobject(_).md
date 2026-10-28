@@ -19,7 +19,7 @@ func addObject(_ object: Any)
 - (void) addObject:(id) object;
 ```
 
-#### Discussion
+## Discussion
 
 If the receiver’s content is bound to another (primary) object or controller through a relationship key, the relationship of the primary object is changed. In a tree-like structure, the object is added after the current selection at the same depth. If there is no selection, the object is appended to the child nodes of the tree’s arranged objects.
 

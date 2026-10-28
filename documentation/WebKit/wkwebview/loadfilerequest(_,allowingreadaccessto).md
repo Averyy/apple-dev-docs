@@ -23,11 +23,11 @@ func loadFileRequest(_ request: URLRequest, allowingReadAccessTo readAccessURL: 
 - (WKNavigation *) loadFileRequest:(NSURLRequest *) request allowingReadAccessToURL:(NSURL *) readAccessURL;
 ```
 
-#### Return Value
+## Return Value
 
 A new navigation object you use to track the loading progress of the request.
 
-#### Discussion
+## Discussion
 
 Provide the source of this load request for app activity data by setting the [`attribution`](../../Foundation/urlrequest/attribution-swift.property.md) parameter on your request.
 

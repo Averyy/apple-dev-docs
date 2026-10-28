@@ -24,11 +24,11 @@ class func confirmationRequired(with mediaDestinationToConfirm: INMediaDestinati
 + (instancetype) confirmationRequiredWithMediaDestinationToConfirm:(INMediaDestination *) mediaDestinationToConfirm;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INMediaDestinationResolutionResult`](../inmediadestinationresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method when you can’t resolve the parameter to a destination type that’s similar, but not equal to, the one specified in the intent. Don’t use this method to resolve date types your app doesn’t support.
 

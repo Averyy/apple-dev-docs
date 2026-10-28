@@ -15,7 +15,7 @@ The document title.
 extern NSAttributedStringDocumentAttributeKey NSTitleDocumentAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSString`](../Foundation/nsstring.md) object containing document title.
 

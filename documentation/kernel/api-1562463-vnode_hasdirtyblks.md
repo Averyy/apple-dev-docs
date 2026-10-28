@@ -15,11 +15,11 @@ Check if a vnode has dirty data waiting to be written to disk.
 int vnode_hasdirtyblks(vnode_t vp);
 ```
 
-#### Return Value
+## Return Value
 
 Nonzero if there are dirty blocks, 0 otherwise
 
-#### Discussion
+## Discussion
 
 Note that this routine is unsynchronized; it is only a snapshot and its result may cease to be true at the moment it is returned..
 

@@ -25,7 +25,7 @@ var stride: (Int, Int, Int, Int, Int, Int, Int, Int)
 ssize_t stride[8];
 ```
 
-#### Discussion
+## Discussion
 
 The first [`rank`](./rank.md) elements specify the stride of each dimension.
 

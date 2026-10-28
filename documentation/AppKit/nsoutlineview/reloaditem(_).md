@@ -19,7 +19,7 @@ func reloadItem(_ item: Any?)
 - (void) reloadItem:(id) item;
 ```
 
-#### Discussion
+## Discussion
 
 Reloading the cell views associated with `item` occurs only in apps that link against macOS 10.12 and later.
 

@@ -32,7 +32,7 @@ var nonGregorianBirthday: DateComponents? { get set }
 @property (atomic, copy, nullable) NSDateComponents * nonGregorianBirthday;
 ```
 
-#### Discussion
+## Discussion
 
 A non-Gregorian birthday such as Lunisolar birthdays can be displayed using this property, whose values are the relevant properties of an [`NSDateComponents`](../../Foundation/nsdatecomponents.md) object. Day and month are required; [`year`](../../Foundation/nsdatecomponents/year.md) and [`isLeapMonth`](../../Foundation/nsdatecomponents/isleapmonth.md) are optional. The calendar property is also required and must be non-Gregorian. Some supported calendars are Buddhist, Chinese, or Islamic. All other date components are invalid.
 

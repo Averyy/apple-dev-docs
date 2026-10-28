@@ -15,7 +15,7 @@ An array of places that returns from a geocoder lookup or reverse lookup.
 results: Place[];
 ```
 
-#### Discussion
+## Discussion
 
 An object the system parses from the geocoder JSON response, which contains an array of places. Each [`Place`](../place.md) has several properties.
 

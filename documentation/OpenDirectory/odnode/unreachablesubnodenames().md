@@ -20,11 +20,11 @@ func unreachableSubnodeNames() throws -> [Any]
 - (NSArray *) unreachableSubnodeNamesAndReturnError:(NSError **) outError;
 ```
 
-#### Return Value
+## Return Value
 
 An array of unreachable subnodes.
 
-#### Discussion
+## Discussion
 
 > **Handling Errors in Swift**:  In Swift, this method returns a nonoptional result and is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
 >

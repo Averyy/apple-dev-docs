@@ -13,7 +13,7 @@ virtual bool setChar(
  unsigned intindex);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the character was replaced, `false` if the was created "NoCopy" or `index` is past the end of the string.
 

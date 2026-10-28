@@ -25,7 +25,7 @@ init(format: AVAudioFormat)
 - (instancetype) initWithFormat:(AVAudioFormat *) format;
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  The audio stream format must be a linear PCM (pulse code modulation).
 

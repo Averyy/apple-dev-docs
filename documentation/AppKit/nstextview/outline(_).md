@@ -19,7 +19,7 @@ func outline(_ sender: Any?)
 - (void) outline:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 If there is a selection and the first character of the selected range has a non-zero stroke width, or if there is no selection and the typing attributes have a non-zero stroke width, then the stroke width is removed; otherwise the value of `NSStrokeWidthAttributeName` is set to the default value for outline (3.0).
 

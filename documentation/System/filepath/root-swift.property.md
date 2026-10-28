@@ -21,7 +21,7 @@ Returns the root of a path if there is one, otherwise `nil`.
 var root: FilePath.Root? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 On Unix, this will return the leading `/` if the path is absolute and `nil` if the path is relative.
 

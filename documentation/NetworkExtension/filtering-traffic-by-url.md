@@ -13,7 +13,7 @@ Perform fast and robust filtering of full URLs by managing URL filtering configu
 - macOS 26.0+
 - Xcode 26.0+
 
-#### Overview
+## Overview
 
 Filtering requests by URL presents an efficiency challenge because real-world use of URL filters often involves testing against thousands, or even millions, of URLs. To perform this filtering, the Network Extension framework’s URL-filtering API uses two steps:
 
@@ -24,7 +24,7 @@ The sample code project `SimpleURLFilter` demonstrates how to use both of these 
 
 > **Note**: This sample code project is associated with WWDC25 session 234: [Filter and tunnel network traffic with NetworkExtension](https://developer.apple.com/videos/play/wwdc2025/234/).
 
-##### Configure the sample code project
+### Configure the sample code project
 
 To configure the sample code projects, do the following:
 
@@ -33,7 +33,7 @@ To configure the sample code projects, do the following:
 3. Optionally build and run the PIR server sample described in [Setting up a PIR server for URL filtering](./setting-up-a-pir-server-for-url-filtering.md). If you have your own PIR server ready for use, you can use that instead.
 4. Optionally populate the URL prefilter by using the provided `BloomFilterTool` to create data for both the Bloom filter and the PIR server. The article [Using the Bloom filter tool to configure a URL filter](./using-the-bloom-filter-tool.md) describes how to use this tool. If you prefer not to do this manually, the sample app extension already has Bloom filter data in the file `bloom_filter.plist` that it can use.
 
-##### Run the sample
+### Run the sample
 
 With the PIR server set up, go back to the Xcode workspace to build and run the sample on a macOS or iOS device. The main view of the app shows status information about the currently installed filter, if any, and transient status messages from the app as it performs its actions. The main view also has an Actions menu — available from the menu bar in macOS and a toolbar button in iOS — to provide ancillary functions like cache clearing and configuration reloading.
 
@@ -61,7 +61,7 @@ Use the Apply button to save these configuration changes and start the filter.
 
 After you enable the filter, go to Safari and attempt to load any of the URLs listed in the file `input_urls`, such as `https://example.com`. Loading these URLs should fail immediately with the filter enabled, and potentially succeed with the filter disabled, assuming the host is up and reachable.
 
-##### Provide a view of the filter configuration
+### Provide a view of the filter configuration
 
 The sample code workspace contains projects for the `SimpleURLFilter`, the `SwiftBloomFilter` framework it uses to perform prefiltering, and the separate `BloomFilterTool`, which is described in [Using the Bloom filter tool to configure a URL filter](./using-the-bloom-filter-tool.md). Within the `SimpleURLFilter` project, there are two targets:
 
@@ -72,7 +72,7 @@ The `SimpleURLFilter` app uses two views. `ContentView` uses a large icon to sho
 
 Both of these views depend on a `Configuration` object, which maintains the filter configuration state. The views communicate through a `ConfigurationModel` that contains the `Configuration` as a property. The model uses the [@Observable](../Observation/observable%28%29.md) macro to simplify exposing changes in the configuration to the views.
 
-##### Interact with the filter
+### Interact with the filter
 
 The model also contains the property `sharedFilterManager` as a reference to the shared instance of the [`NEURLFilterManager`](./neurlfiltermanager.md) class, `NEURLFilterManager.shared`. This is the app’s main interface with the [URL filters API](./url-filters.md); setting this object’s properties determines how the URL filter operates.
 
@@ -138,7 +138,7 @@ private func initiateStatusUpdate() {
 
 If the updated status indicates the filter stopped, the sample creates an error message by retrieving the [`lastDisconnectError`](./neurlfiltermanager/lastdisconnecterror.md) property from the shared instance of the [`NEURLFilterManager`](./neurlfiltermanager.md).
 
-##### Implement the app extension
+### Implement the app extension
 
 Although `SimpleURLFilter` provides a UI to manage the filter, the actual filter is in the `SimpleURLFilterExtension` target. This app extension target defines the `URLFilterControlProvider` class, which implements the [`NEURLFilterControlProvider`](./neurlfiltercontrolprovider.md) protocol required for providing a URL filter.
 
@@ -175,7 +175,7 @@ return preFilter
 
 From the app extension’s point of view, the Bloom filter data itself is opaque; the extension only needs to load it from the property list file. As described in [Using the Bloom filter tool to configure a URL filter](./using-the-bloom-filter-tool.md), the `BloomFilterTool` target is responsible for actually creating this data, and you can look in the `SwiftBloomFilter` target to inspect the hashing functions that encode the prefilter data.
 
-##### Perform URL filtering with MDM
+### Perform URL filtering with MDM
 
 Rather than configuring a URL filter for one device with an app, you can also perform configuation through mobile device management (MDM). This may be a better solution for enterprise deployment and other scenarios where you need to manage a large number of devices with identical configurations.
 

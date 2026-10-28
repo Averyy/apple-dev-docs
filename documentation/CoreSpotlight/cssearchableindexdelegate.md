@@ -27,7 +27,7 @@ protocol CSSearchableIndexDelegate : NSObjectProtocol
 
 - [Regenerating your app’s indexes on demand](./regenerating-your-app-s-indexes-on-demand.md)
 
-#### Overview
+## Overview
 
 The `CSSearchableIndexDelegate` protocol defines methods that a delegate object or an app extension can use to handle communication from the on-device index. Apps that are long-running or that perform batch updates to the index should implement the required methods of this protocol in either a delegate object or an app extension.
 

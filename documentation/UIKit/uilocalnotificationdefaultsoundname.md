@@ -24,7 +24,7 @@ let UILocalNotificationDefaultSoundName: String
 extern NSString * const UILocalNotificationDefaultSoundName;
 ```
 
-#### Discussion
+## Discussion
 
 You assign this value to the [`soundName`](./uilocalnotification/soundname.md) property.
 

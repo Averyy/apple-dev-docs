@@ -12,7 +12,7 @@ virtual void DeallocateResources (
  void );
 ```
 
-#### Overview
+## Overview
 
 Called from cleanUp method to deallocate resources.
 

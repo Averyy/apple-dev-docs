@@ -25,11 +25,11 @@ init?(axialSpace space: CGColorSpace, start: CGPoint, end: CGPoint, function: CG
 extern CGShadingRefCGShadingCreateAxial(CGColorSpaceRef space, CGPoint start, CGPoint end, CGFunctionRef function, bool extendStart, bool extendEnd);
 ```
 
-#### Return Value
+## Return Value
 
 A new Core Graphics axial shading. In Objective-C, you’re responsible for releasing this object using [`CGShadingRelease`](../cgshadingrelease.md).
 
-#### Discussion
+## Discussion
 
 An axial shading is a color blend that varies along a linear axis between two endpoints and extends indefinitely perpendicular to that axis. When you are ready to draw the shading, call the function [`drawShading(_:)`](../cgcontext/drawshading%28_%29.md).
 

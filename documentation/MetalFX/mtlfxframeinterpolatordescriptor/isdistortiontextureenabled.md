@@ -23,7 +23,7 @@ var isDistortionTextureEnabled: Bool { get set }
 @property (nonatomic, readwrite, getter=isDistortionTextureEnabled) BOOL distortionTextureEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to [`true`](../../Swift/true.md) to create a frame interpolator that can apply barrel distortion correction using a distortion field texture.
 

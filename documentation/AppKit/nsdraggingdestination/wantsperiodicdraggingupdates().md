@@ -20,11 +20,11 @@ optional func wantsPeriodicDraggingUpdates() -> Bool
 - (BOOL) wantsPeriodicDraggingUpdates;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the destination wants to receive periodic [`draggingUpdated(_:)`](./draggingupdated%28_%29.md) messages, [`false`](../../Swift/false.md) otherwise.
 
-#### Discussion
+## Discussion
 
 If the destination returns [`false`](../../Swift/false.md), these messages are sent only when the mouse moves or a modifier flag changes. Otherwise the destination gets the default behavior, where it receives periodic dragging-updated messages even if nothing changes.
 

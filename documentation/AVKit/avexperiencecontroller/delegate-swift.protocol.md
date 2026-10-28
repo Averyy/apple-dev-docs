@@ -16,7 +16,7 @@ A protocol that defines the methods to implement to respond to experience change
 protocol Delegate : AnyObject
 ```
 
-#### Overview
+## Overview
 
 Use this delegate to be aware of transitions and to update an app’s state based on those changes.
 

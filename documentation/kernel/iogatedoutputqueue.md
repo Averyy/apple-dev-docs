@@ -15,7 +15,7 @@ An extension of an IOBasicOutputQueue.
 class IOGatedOutputQueue : IOBasicOutputQueue
 ```
 
-#### Overview
+## Overview
 
 An IOCommandGate object is created by this queue and added to a work loop as an event source. All calls to the target by the consumer thread must occur with the gate closed. Therefore, all calls to the target of this type of queue will be serialized with any other thread that runs on the same work loop context. This is useful for network drivers that have a tight hardware coupling between the transmit and receive engines, and a single-threaded hardware access model is desirable.
 

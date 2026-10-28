@@ -19,7 +19,7 @@ func parentRow(forRow rowIndex: Int) -> Int
 - (NSInteger) parentRowForRow:(NSInteger) rowIndex;
 ```
 
-#### Return Value
+## Return Value
 
 The index of the parent of the row at `rowIndex`. If the row at `rowIndex` is a root row, returns `-1`.
 

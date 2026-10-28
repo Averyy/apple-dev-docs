@@ -19,7 +19,7 @@ An object that represents a user’s account with a TV provider.
 @interface VSUserAccount : NSObject
 ```
 
-#### Overview
+## Overview
 
 There are two sources for a `VSUserAccount` instance:
 

@@ -19,11 +19,11 @@ func getMTU() -> BluetoothRFCOMMMTU
 - (BluetoothRFCOMMMTU) getMTU;
 ```
 
-#### Return Value
+## Return Value
 
 Channel MTU size .
 
-#### Discussion
+## Discussion
 
 Returns the length of the largest chunk of data that this channel can carry. If the caller wishes to use the write:length:sleep: api the length of the data can not be bigger than the channel MTU (maximum transfer unit).
 

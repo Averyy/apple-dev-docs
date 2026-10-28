@@ -17,7 +17,7 @@ Evaluate one or more `MLXArray` asynchronously.
 func asyncEval(_ arrays: some Collection<MLXArray>)
 ```
 
-##### See Also
+### See Also
 
 - [Lazy Evaluation](./lazy-evaluation.md)
 - [`asyncEval(_:)`](./asynceval%28_%29-488lb.md)

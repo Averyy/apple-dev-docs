@@ -25,11 +25,11 @@ func TXTRecordSetValue(_ txtRecord: UnsafeMutablePointer<TXTRecordRef>!, _ key: 
 DNSServiceErrorType TXTRecordSetValue(TXTRecordRef *txtRecord, const char *key, uint8_t valueSize, const void *value);
 ```
 
-#### Return Value
+## Return Value
 
 Returns [`kDNSServiceErr_NoError`](./kdnsserviceerr_noerror.md) on success. Returns kDNSServiceErr_Invalid if the “key” string contains illegal characters. Returns kDNSServiceErr_NoMemory if adding this key would exceed the available storage.
 
-#### Discussion
+## Discussion
 
 If the “key” already exists in the TXTRecordRef, then the current value will be replaced with the new value. Keys may exist in four states with respect to a given TXT record: - Absent (key does not appear at all) - Present with no value (“key” appears alone) - Present with empty value (“key=” appears in TXT record) - Present with non-empty value (“key=value” appears in TXT record) For more details refer to “Data Syntax for DNS-SD TXT Records” in [dns-sd.org](http://files.dns-sd.org/draft-cheshire-dnsext-dns-sd.txt)
 

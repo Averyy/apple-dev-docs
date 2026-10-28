@@ -21,7 +21,7 @@ Returns the double-precision sliding window sum of a vector.
 static func slidingWindowSum<U>(_ vector: U, usingWindowLength windowLength: Int) -> [Double] where U : AccelerateBuffer, U.Element == Double
 ```
 
-#### Discussion
+## Discussion
 
 Use this function to populate an output vector with the consecutive sums of values in a sliding window. The number of elements in the input vector must be one subtracted from the sum of the window length and the number of window positions.
 

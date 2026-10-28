@@ -21,7 +21,7 @@ The kind of values published by this publisher.
 typealias Output = (A.Output, B.Output)
 ```
 
-#### Discussion
+## Discussion
 
 This publisher produces two-element tuples, whose members’ types correspond to the types produced by the upstream publishers.
 

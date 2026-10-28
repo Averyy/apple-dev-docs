@@ -22,7 +22,7 @@ protocol UIScribbleInteractionDelegate : NSObjectProtocol
 @protocol UIScribbleInteractionDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 By default, Scribble let users enter text by writing directly into any editable view that implement [`UITextInput`](./uitextinput.md). In apps with customized text fields, you can use the [`UIScribbleInteractionDelegate`](./uiscribbleinteractiondelegate.md) callbacks to optimize the UI for a better writing experience, including:
 

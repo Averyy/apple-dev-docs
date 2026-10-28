@@ -20,7 +20,7 @@ Words or phrases, grouped by tag, that should be recognized even if they are not
 final var contextualStrings: [AnalysisContext.ContextualStringsTag : [String]] { get set }
 ```
 
-#### Discussion
+## Discussion
 
 With the [`DictationTranscriber`](../dictationtranscriber.md) module, you can use this property to specify short custom phrases that are unique to your app. You might include phrases with the names of characters, products, or places that are specific to your app. Assigning custom phrases to this property improves the likelihood of those phrases being recognized.
 

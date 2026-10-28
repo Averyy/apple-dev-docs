@@ -6,7 +6,7 @@
 
 A 64-bit rectangle that specifies an area to receive text (each 16 bits indicate top, left, bottom, and right, respectively) within the subtitle track.
 
-#### Overview
+## Overview
 
 This rectangle must fill the track header dimensions exactly; that is, top is `0`, left is `0`, bottom is the height of the subtitle track header, and right is the width of the subtitle track header. See [Subtitle track header size and placement](../subtitle_track_header_size_and_placement.md).
 

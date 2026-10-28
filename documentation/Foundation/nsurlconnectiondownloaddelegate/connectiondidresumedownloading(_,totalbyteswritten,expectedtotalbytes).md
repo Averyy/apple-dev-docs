@@ -25,7 +25,7 @@ optional func connectionDidResumeDownloading(_ connection: NSURLConnection, tota
 - (void) connectionDidResumeDownloading:(NSURLConnection *) connection totalBytesWritten:(long long) totalBytesWritten expectedTotalBytes:(long long) expectedTotalBytes;
 ```
 
-#### Discussion
+## Discussion
 
 This method is invoked once a suspended download of a URL asset resumes downloading. In response, the delegate can display a progress indicator, setting the initial value of the indicator to where it was when downloading was suspended. After the URL-connection object sends this message, it sends one or more [`connection(_:didWriteData:totalBytesWritten:expectedTotalBytes:)`](./connection%28_,didwritedata,totalbyteswritten,expectedtotalbytes%29.md) to the delegate until the download concludes.
 

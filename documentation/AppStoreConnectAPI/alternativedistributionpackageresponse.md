@@ -15,7 +15,7 @@ The response body for endpoints that read a single alternative distribution pack
 object AlternativeDistributionPackageResponse
 ```
 
-#### Discussion
+## Discussion
 
 This object is the response that contains a single the alternative distribution package. For more information, see Creating and reading distribution packages. The schema of the response body is below.
 

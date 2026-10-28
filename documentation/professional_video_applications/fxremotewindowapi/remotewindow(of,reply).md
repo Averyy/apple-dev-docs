@@ -24,7 +24,7 @@ func remoteWindow(of contentSize: CGSize) async throws -> NSView?
 - (void) remoteWindowOfSize:(CGSize) contentSize reply:(void (^)(NSView * parentView, NSError * error)) reply;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to request that the host creates a new window to display custom user-interface elements. The reply block returns the window for your custom view. If there are any problems creating the window, `parentView` is `nil` and `error` contains an [`NSError`](../../Foundation/nserror.md) that describes the problem.
 

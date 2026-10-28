@@ -19,11 +19,11 @@ init(calibratedHue hue: CGFloat, saturation: CGFloat, brightness: CGFloat, alpha
 + (NSColor *) colorWithCalibratedHue:(CGFloat) hue saturation:(CGFloat) saturation brightness:(CGFloat) brightness alpha:(CGFloat) alpha;
 ```
 
-#### Return Value
+## Return Value
 
 The color object.
 
-#### Discussion
+## Discussion
 
 Values below 0.0 are interpreted as 0.0, and values above 1.0 are interpreted as 1.0.
 

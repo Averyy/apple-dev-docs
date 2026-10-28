@@ -24,7 +24,7 @@ var timeZone: TimeZone? { get set }
 @property (nonatomic, copy, nullable) NSTimeZone * timeZone;
 ```
 
-#### Discussion
+## Discussion
 
 If `nil`, the calendar item is a floating event. A floating event is not tied to a particular time zone. It occurs at a given time regardless of the time zone — for example, “lunch at noon.” The start and end times of a floating event should be set as if they were in the system time zone.
 

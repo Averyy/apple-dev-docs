@@ -24,7 +24,7 @@ string environment
 
 - [App Store Server API changelog](./app-store-server-api-changelog.md)
 
-#### Discussion
+## Discussion
 
 You receive data from the [App Store Server API](./AppStoreServerAPI.md) for the sandbox environment when you send test requests to the endpoints using the sandbox base URL:
 

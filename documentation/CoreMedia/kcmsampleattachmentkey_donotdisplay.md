@@ -25,7 +25,7 @@ let kCMSampleAttachmentKey_DoNotDisplay: CFString
 extern CFStringRef const kCMSampleAttachmentKey_DoNotDisplay;
 ```
 
-#### Discussion
+## Discussion
 
 Use this attachment at run time to request this behavior from a display pipeline such as the [`AVSampleBufferDisplayLayer`](../AVFoundation/avsamplebufferdisplaylayer.md) class.
 

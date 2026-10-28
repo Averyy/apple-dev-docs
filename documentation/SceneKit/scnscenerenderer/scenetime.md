@@ -26,7 +26,7 @@ var sceneTime: TimeInterval { get set }
 @property (nonatomic) NSTimeInterval sceneTime;
 ```
 
-#### Discussion
+## Discussion
 
 This timestamp determines how running animations behave, which is similar to how the playhead time in a video player application determines which frame of a movie to display. Scene time applies only to animations whose [`usesSceneTimeBase`](../../QuartzCore/caanimation/usesscenetimebase.md) property is [`true`](../../Swift/true.md), including those loaded from a scene source using the [`playUsingSceneTimeBase`](../scnscenesource/animationimportpolicy/playusingscenetimebase.md) option.
 

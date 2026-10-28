@@ -23,7 +23,7 @@ var relyingPartyIdentifier: String { get }
 @property (nonatomic, copy, readonly) NSString * relyingPartyIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 A passkey credential identity reports its `relyingPartyIdentifier` value as its [`serviceIdentifier`](../ascredentialidentity/serviceidentifier.md).
 

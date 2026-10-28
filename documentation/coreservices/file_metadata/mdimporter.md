@@ -3,7 +3,7 @@
 **Framework**: Core Services  
 **Role**: API Collection
 
-#### Overview
+## Overview
 
 An MDImporter is responsible for returning the metadata containedwith a file. The Spotlight server is notified when a file is changedand loads the appropriate importer to extract the metadata. An importeris implemented as a CFPlugin.
 

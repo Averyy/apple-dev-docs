@@ -15,7 +15,7 @@ The default animation the UI uses to show differences between rows.
 var defaultRowAnimation: NSTableView.AnimationOptions
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`effectFade`](../nstableview/animationoptions/effectfade.md).
 

@@ -29,11 +29,11 @@ func objectIDNotification() -> Notification
 
 - [Consuming relevant store changes](../consuming-relevant-store-changes.md)
 
-#### Return Value
+## Return Value
 
 An `NSManagedObjectContextDidSaveObjectIDsNotification` notification.
 
-#### Discussion
+## Discussion
 
 To merge the relevant changes into your view context, first obtain a notification by calling `objectIDNotification()` on the transaction. Then, pass the notification to [`mergeChanges(fromContextDidSave:)`](../nsmanagedobjectcontext/mergechanges%28fromcontextdidsave%29.md).
 

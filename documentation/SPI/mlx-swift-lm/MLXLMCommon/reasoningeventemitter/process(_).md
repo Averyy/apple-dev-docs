@@ -17,7 +17,7 @@ Ingests one decoded chunk and returns the segments it resolves to.
 mutating func process(_ chunk: String) -> [Segment]
 ```
 
-#### Discussion
+## Discussion
 
 May return zero segments (e.g. the chunk only advanced a partial delimiter), or several (e.g. a chunk containing a full `<think>…</think>`).
 

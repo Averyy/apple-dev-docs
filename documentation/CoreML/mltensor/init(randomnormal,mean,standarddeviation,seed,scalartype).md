@@ -21,7 +21,7 @@ Creates a tensor with the specified shape, randomly sampling scalar values from 
 init<Scalar>(randomNormal shape: [Int], mean: Scalar = Scalar.init(0.0), standardDeviation: Scalar = Scalar.init(1.0), seed: UInt64? = nil, scalarType: Scalar.Type = Scalar.self) where Scalar : MLTensorScalar, Scalar : BinaryFloatingPoint
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: Using the same seed produces the same result only when dispatched to the same compute device.
 

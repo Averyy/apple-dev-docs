@@ -26,7 +26,7 @@ func setMediaSelectionCriteria(_ criteria: AVPlayerMediaSelectionCriteria?, forM
 - (void) setMediaSelectionCriteria:(AVPlayerMediaSelectionCriteria *) criteria forMediaCharacteristic:(AVMediaCharacteristic) mediaCharacteristic;
 ```
 
-#### Discussion
+## Discussion
 
 Criteria will be applied to an [`AVPlayerItem`](../avplayeritem.md) instance when:
 

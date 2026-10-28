@@ -20,11 +20,11 @@ A set of animatable transform values for joints that collectively represent a si
 struct JointTransforms
 ```
 
-#### Overview
+## Overview
 
 This structure provides a template that informs an animation on how to animate a character. The resulting movement bases on the *from* ([`fromValue`](./fromtobyanimation/fromvalue-6msd.md)) , *to* ([`toValue`](./fromtobyanimation/tovalue-813jk.md)) , or *by* values ([`byValue`](./fromtobyanimation/byvalue-3bp3q.md)) you supply for a [`FromToByAnimation`](./fromtobyanimation.md). The animation determines which joints take on the movement through its [`jointNames`](./fromtobyanimation/jointnames.md) property.
 
-#### Animate an Entity’s Skeleton
+## Animate an Entity’s Skeleton
 
 The following code moves the joints of a 3D asset by specifying the joint, `joint1`, beginning, and ending values.
 

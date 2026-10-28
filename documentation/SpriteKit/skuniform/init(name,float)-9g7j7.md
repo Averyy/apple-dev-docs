@@ -22,7 +22,7 @@ init(name: String, float value: GLKVector4)
 - (instancetype) initWithName:(NSString *) name floatVector4:(GLKVector4) value;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized uniform object whose type is set to [`SKUniformType.floatVector4`](../skuniformtype/floatvector4.md).
 

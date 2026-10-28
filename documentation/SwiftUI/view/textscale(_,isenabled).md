@@ -22,7 +22,7 @@ nonisolated
 func textScale(_ scale: Text.Scale, isEnabled: Bool = true) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view with the specified text scale applied.
 

@@ -23,7 +23,7 @@ case middle
 kCTLineTruncationMiddle
 ```
 
-#### Discussion
+## Discussion
 
 Truncate the middle of the line, leaving both the start and the end portions visible.
 

@@ -25,7 +25,7 @@ class NFCNDEFPayload
 
 - [Adding Support for Background Tag Reading](./adding-support-for-background-tag-reading.md)
 
-#### Overview
+## Overview
 
 An NDEF message payload consists of the Type Name Format field (as defined by the NDEF specification), type, identifier, and data.
 

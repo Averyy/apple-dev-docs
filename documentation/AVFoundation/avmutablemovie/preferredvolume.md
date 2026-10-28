@@ -24,7 +24,7 @@ var preferredVolume: Float { get set }
 @property (nonatomic) float preferredVolume;
 ```
 
-#### Discussion
+## Discussion
 
 This value is typically, but not always, 1.0.
 

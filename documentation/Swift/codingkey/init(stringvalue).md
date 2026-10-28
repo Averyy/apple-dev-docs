@@ -22,7 +22,7 @@ Creates a new instance from the given string.
 init?(stringValue: String)
 ```
 
-#### Discussion
+## Discussion
 
 If the string passed as `stringValue` does not correspond to any instance of this type, the result is `nil`.
 

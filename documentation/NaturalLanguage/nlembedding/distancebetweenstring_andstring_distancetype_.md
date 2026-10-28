@@ -25,7 +25,7 @@ Calculates the distance between two strings in the vocabulary space.
 
 - [Finding similarities between pieces of text](../finding-similarities-between-pieces-of-text.md)
 
-#### Return Value
+## Return Value
 
 The distance associated with `distanceType`.
 

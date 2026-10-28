@@ -15,11 +15,11 @@ The object for defining conditional properties for a component, and when the con
 object ConditionalComponent
 ```
 
-#### Discussion
+## Discussion
 
 Use the `ConditionalComponent` object to define an array of conditional component properties and the conditions under which to apply them. When a condition is met, the value of a property in `ConditionalComponent` overrides the value of the same property if you define it in the parent component. See [`Component`](./component.md).
 
-##### Example
+### Example
 
 ```json
 {

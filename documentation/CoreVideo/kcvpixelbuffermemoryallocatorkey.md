@@ -25,7 +25,7 @@ let kCVPixelBufferMemoryAllocatorKey: CFString
 extern CFStringRef const kCVPixelBufferMemoryAllocatorKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is of type [`CFAllocator`](../CoreFoundation/cfallocator.md).
 

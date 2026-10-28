@@ -15,11 +15,11 @@ A single row in an Apps ad group report, containing ad group metadata, total met
 object AppsAdGroupReportRow
 ```
 
-#### Discussion
+## Discussion
 
 The `metadata` field captures ad group identifiers and configuration at report time. The `totalMetrics` field contains the aggregated performance figures across the full reporting period.
 
-##### Example
+### Example
 
 ```json
 {

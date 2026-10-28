@@ -24,7 +24,7 @@ case ratio
 kAudioUnitParameterUnit_Ratio
 ```
 
-#### Discussion
+## Discussion
 
 Useful for representing an amount of compression or expansion, for example.
 

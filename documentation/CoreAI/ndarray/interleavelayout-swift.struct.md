@@ -19,13 +19,13 @@ Describes the interleaved memory layout of an ndArray dimension.
 struct InterleaveLayout
 ```
 
-#### Overview
+## Overview
 
 An interleaved layout means that elements of the interleaved `dimension` are stored in physically contiguous blocks of `factor` elements (stride 1 between adjacent elements within a block). This differs from the standard layout where a dimension’s elements are separated by the strides of subsequent dimensions.
 
 A common use case is representing an image with interleaved channels: a `[C, H, W]` tensor uses `InterleaveLayout(dimension: 0, factor: C)` to store all channels for each pixel contiguously — like `RGBRGB...` — rather than in separate planar slices — like `RRR...GGG...BBB...`. More generally, this can be useful for optimizing the layout of an ndArray based on how the later compute will access it.
 
-#### Stride semantics
+## Stride semantics
 
 The stride for the interleaved dimension (as reported by [`strides`](./strides.md)) is a *block stride* — the distance in memory between adjacent blocks of `factor` elements, not between individual elements. Within a block, adjacent elements have stride 1. The element offset formula is:
 
@@ -35,7 +35,7 @@ The stride for the interleaved dimension (as reported by [`strides`](./strides.m
 //        + Σ index[i] * strides[i]  for all i ≠ d
 ```
 
-#### Equivalence with shape/stride transformations
+## Equivalence with shape/stride transformations
 
 When `factor` divides the size of the interleaved dimension evenly, the layout can equivalently be expressed as a shape/stride transformation without interleave metadata. For example, for `shape=[8, 256, 256]` with `InterleaveLayout(dimension: 0, factor: 4)`:
 

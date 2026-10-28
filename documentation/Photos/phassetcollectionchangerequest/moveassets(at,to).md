@@ -24,7 +24,7 @@ func moveAssets(at fromIndexes: IndexSet, to toIndex: Int)
 - (void) moveAssetsAtIndexes:(NSIndexSet *) fromIndexes toIndex:(NSUInteger) toIndex;
 ```
 
-#### Discussion
+## Discussion
 
 When you call this method, Photos first removes the items in the `indexes` parameter from the collection, and then inserts them at the location specified by the `toIndex` parameter.
 

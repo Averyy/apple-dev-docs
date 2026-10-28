@@ -27,7 +27,7 @@ var preferredSymbolConfiguration: UIImage.SymbolConfiguration? { get set }
 
 - [Configuring and displaying symbol images in your UI](../configuring-and-displaying-symbol-images-in-your-ui.md)
 
-#### Discussion
+## Discussion
 
 Use this property to configure the point size, text style, weight, or scale of a symbol image. For example, you might configure the image to be the same weight as text in a neighboring label.
 

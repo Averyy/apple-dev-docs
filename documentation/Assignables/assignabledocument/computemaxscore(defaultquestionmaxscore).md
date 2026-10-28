@@ -18,7 +18,7 @@ Computes the maximum possible score for this `AssignableDocument` as defined by 
 func computeMaxScore(defaultQuestionMaxScore: Double? = Double.zero) -> Double?
 ```
 
-#### Return Value
+## Return Value
 
 The maximum possible score for this `AssignableDocument` as defined by each individual question’s `maxScore`. `nil` is returned, if any individual’s `maxScore` is `nil` and `defaultQuestionMaxScore` is `nil`.
 

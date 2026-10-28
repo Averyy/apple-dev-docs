@@ -21,7 +21,7 @@ Returns a materialized representation of the tensor.
 func shapedArray<Scalar>(of scalarType: Scalar.Type) async -> MLShapedArray<Scalar> where Scalar : MLShapedArrayScalar, Scalar : MLTensorScalar
 ```
 
-#### Return Value
+## Return Value
 
 A `MLShapedArray` with the contents of the tensor.
 

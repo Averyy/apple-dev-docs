@@ -23,7 +23,7 @@ class INRequestRideIntentResponse
 @interface INRequestRideIntentResponse : INIntentResponse
 ```
 
-#### Overview
+## Overview
 
 An [`INRequestRideIntentResponse`](./inrequestrideintentresponse.md) object contains your app’s response to a ride-booking request. After creating your response object, assign an appropriate object to the [`rideStatus`](./inrequestrideintentresponse/ridestatus.md) property. The ride status object provides the details about how you handled the ride, including details about selected vehicle type, pricing, driver information, pickup time, pickup location, drop-off location, and so on. Siri and Maps display your response information to the user during the confirmation and booking phases.
 

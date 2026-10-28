@@ -23,11 +23,11 @@ func SecIdentityCreate(_ allocator: CFAllocator?, _ certificate: SecCertificate,
 SecIdentityRefSecIdentityCreate(CFAllocatorRef allocator, SecCertificateRef certificate, SecKeyRef privateKey);
 ```
 
-#### Return Value
+## Return Value
 
 An identity reference.
 
-#### Discussion
+## Discussion
 
 Create a new identity object from the provided certificate and its associated private key.
 

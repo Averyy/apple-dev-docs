@@ -24,7 +24,7 @@ static let iTunesItemIdentifier: SKCloudServiceSetupOptionsKey
 extern SKCloudServiceSetupOptionsKey const SKCloudServiceSetupOptionsITunesItemIdentifierKey;
 ```
 
-#### Discussion
+## Discussion
 
 The only iTunes Store items that are supported are song, video, playlist, and album.
 

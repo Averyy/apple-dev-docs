@@ -5,21 +5,21 @@
 
 Provide SiriKit with an intent handler capable of handling a specific intent.
 
-#### Overview
+## Overview
 
 When a user makes a request of your app as an intent, SiriKit needs a handler that conforms to the corresponding intent handling protocol. Each intent object has an associated protocol based on the name of the intent. For example, to handle an [`INSendMessageIntent`](../Intents/insendmessageintent.md), provide an instance of a type that conforms to the [`INSendMessageIntentHandling`](../Intents/insendmessageintenthandling.md) protocol. The protocol defines the methods that your handler implements to resolve any intent parameters and to let SiriKit know how your app handled the intent.
 
-##### Provide a handler in your intents app extension
+### Provide a handler in your intents app extension
 
 An intents app extension helps you respond to a person’s request quickly, without loading the entire app. For intents you support in an extension, SiriKit loads your intents app extension and creates an instance of your [`INExtension`](../Intents/inextension.md) subclass. Implement the [`handler(for:)`](../Intents/inintenthandlerproviding/handler%28for%29.md) method on your extension object to provide SiriKit with the handlers that you use to handle specific intents.
 
-##### Provide a handler in your app
+### Provide a handler in your app
 
 If you support an intent directly in your app, the system asks your app delegate for the handler. In a macOS app that uses [AppKit](../AppKit/AppKit.md), implement [`application(_:handlerFor:)`](../AppKit/nsapplicationdelegate/application%28_,handlerfor%29.md) on your [`NSApplicationDelegate`](../AppKit/nsapplicationdelegate.md). In an iOS app (or an app built with Mac Catalyst), implement [`application(_:handlerFor:)`](../UIKit/uiapplicationdelegate/application%28_,handlerfor%29.md) on your [`UIApplicationDelegate`](../UIKit/uiapplicationdelegate.md). If you’re using SwiftUI, use [`UIApplicationDelegateAdaptor`](../SwiftUI/uiapplicationdelegateadaptor.md) or [`NSApplicationDelegateAdaptor`](../SwiftUI/nsapplicationdelegateadaptor.md) to include an app delegate in your app.
 
 > ❗ **Important**:  On iOS (and Mac Catalyst), the system only invokes the delegate method in apps that support multiple scenes. For more information, see [Specifying the scenes your app supports](../UIKit/specifying-the-scenes-your-app-supports.md).
 
-##### Determine which handler type to return
+### Determine which handler type to return
 
 You can define a separate type for handling each intent class to keep your code organized. When the system asks your app delegate or Intents app extension for an intent handler, check the type of the intent you receive to determine which type of handler to return. Return a valid new handler that conforms to the relevant protocol for all intents that your app or extension supports.
 
@@ -42,7 +42,7 @@ switch intent {
 }
 ```
 
-##### Handle an intent in multiple versions of iOS
+### Handle an intent in multiple versions of iOS
 
 In iOS 14 and later, you can resolve, confirm, and handle long-running or memory-intensive intents directly in your app. In iOS 13 and earlier, SiriKit required you resolve and confirm all intents in an Intents app extension, then send long-running intents to your app for the final handling step. To continue supporting these intents on earlier versions of iOS, you can implement the methods to resolve and confirm the intent in both your app delegate and Intents app extension. When your extension confirms the intent, respond with a `continueInApp` or `handleInApp` response code so the system sends the intent to the app to handle the intent.
 

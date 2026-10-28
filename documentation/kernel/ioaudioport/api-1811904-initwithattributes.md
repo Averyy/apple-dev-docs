@@ -15,11 +15,11 @@ virtual bool initWithAttributes(
  OSDictionary *properties = 0);
 ```
 
-#### Return Value
+## Return Value
 
 Returns true on success.
 
-#### Overview
+## Overview
 
 The properties parameter is passed on the superclass' init(). The portType, subType and properties parameters are optional, however portType is recommended.
 

@@ -27,7 +27,7 @@ protocol INSearchForMessagesIntentHandling : NSObjectProtocol
 
 - [Dispatching intents to handlers](../SiriKit/dispatching-intents-to-handlers.md)
 
-#### Overview
+## Overview
 
 Use the methods of the [`INSearchForMessagesIntentHandling`](./insearchformessagesintenthandling.md) protocol to resolve, confirm, and handle requests to search the current user’s messages. Adopt this protocol in an object of your Intents extension capable of searching your app’s messages.
 

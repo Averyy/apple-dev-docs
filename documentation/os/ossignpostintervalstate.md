@@ -21,7 +21,7 @@ An object that tracks the state of a signposted interval.
 class OSSignpostIntervalState
 ```
 
-#### Overview
+## Overview
 
 [`OSSignposter`](./ossignposter.md) uses interval state to enforce the following runtime assertions:
 

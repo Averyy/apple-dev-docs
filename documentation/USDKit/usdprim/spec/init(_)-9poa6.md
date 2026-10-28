@@ -20,7 +20,7 @@ Narrows an untyped [`USDLayer.Spec`](../../usdlayer/spec.md) to a `USDPrim.Spec`
 init?(_ spec: USDLayer.Spec)
 ```
 
-#### Discussion
+## Discussion
 
 Returns `nil` if `spec` is not a prim spec.
 

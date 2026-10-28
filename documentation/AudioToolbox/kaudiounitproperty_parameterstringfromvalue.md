@@ -24,7 +24,7 @@ var kAudioUnitProperty_ParameterStringFromValue: AudioUnitPropertyID { get }
 kAudioUnitProperty_ParameterStringFromValue
 ```
 
-#### Discussion
+## Discussion
 
 This property is used with parameters that are marked with the kAudioUnitParameterFlag_HasName parameter info flag. This indicates that some (or all) of the values represented by the parameter can and should be represented by a special display string.
 

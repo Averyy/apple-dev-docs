@@ -32,7 +32,7 @@ var imageData: Data? { get set }
 @property (atomic, copy, nullable) NSData * imageData;
 ```
 
-#### Discussion
+## Discussion
 
 It is recommended that you fetch this property only when you need to access its value, such as when you need to display the contact’s profile picture.
 

@@ -15,11 +15,11 @@ Set the UPL (Universal Page List), and offset therein, on a buffer.
 errno_t buf_setupl(buf_t bp, upl_t upl, uint32_t offset);
 ```
 
-#### Return Value
+## Return Value
 
 0 for success, EINVAL if the buffer was not allocated with buf_alloc().
 
-#### Discussion
+## Discussion
 
 buf_setupl() should only be called on buffers allocated with buf_alloc(). A subsequent call to buf_map() will map the UPL and give back the address at which data begins. After buf_setupl() is called, a buffer is marked B_CLUSTER; when this is the case, buf_strategy() assumes that a buffer is correctly configured to be passed to the device layer without modification. Passing a NULL upl will clear the upl and the B_CLUSTER flag on the buffer.
 

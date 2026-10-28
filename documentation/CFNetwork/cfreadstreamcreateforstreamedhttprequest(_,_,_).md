@@ -26,11 +26,11 @@ func CFReadStreamCreateForStreamedHTTPRequest(_ alloc: CFAllocator?, _ requestHe
 extern CFReadStreamRefCFReadStreamCreateForStreamedHTTPRequest(CFAllocatorRef alloc, CFHTTPMessageRef requestHeaders, CFReadStreamRef requestBody);
 ```
 
-#### Return Value
+## Return Value
 
 A new read stream, or `NULL` if there was a problem creating the object. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 This function creates a read stream for the response to the `requestHeaders` plus `requestBody`. Call this function instead of [`CFReadStreamCreateForHTTPRequest(_:_:)`](./cfreadstreamcreateforhttprequest%28_,_%29.md) when the body of the request is so long that you do not want it to be resident in memory.
 

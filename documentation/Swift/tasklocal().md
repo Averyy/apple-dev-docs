@@ -18,11 +18,11 @@ Macro that introduces a [`TaskLocal`](./tasklocal.md) binding.
 ## Declaration
 
 ```swift
-@attached
-(accessor) @attached(peer, names: prefixed(`$`)) macro TaskLocal()
+@attached(accessor)
+@attached(peer, names: prefixed(`$`)) macro TaskLocal()
 ```
 
-#### Overview
+## Overview
 
 For information about task-local bindings, see [`TaskLocal`](./tasklocal.md).
 

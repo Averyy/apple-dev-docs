@@ -21,7 +21,7 @@ Instruction to render a cubic Bezier curve (not currently used).
 HVFPartRenderInstructionAddCubic
 ```
 
-#### Discussion
+## Discussion
 
 The `HVFPartRenderParams` union will contain the data for `addCubic`.
 

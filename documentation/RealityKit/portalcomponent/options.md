@@ -20,7 +20,7 @@ Options to toggle the portal features on and off.
 struct Options
 ```
 
-#### Overview
+## Overview
 
 This option set is equivalent to setting [`clippingMode`](./clippingmode-swift.property.md) and [`crossingMode`](./crossingmode-swift.property.md) directly.
 

@@ -17,7 +17,7 @@ The language the framework uses when localizing the user interface.
 var userInterfaceLanguage: Locale.Language?
 ```
 
-#### Discussion
+## Discussion
 
 Setting this attribute only affects customer facing elements. Screen elements or audio targeted at the merchant (device owner) remain set to the language defined in the system settings. When you set this option to `nil`, the framework uses the person’s preferred language defined in System Settings.
 

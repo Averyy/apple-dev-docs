@@ -9,7 +9,7 @@
 UInt32 _mediaType;
 ```
 
-#### Overview
+## Overview
 
 Type of the media (can be used to differentiate between the different types of CD media, DVD media, etc).
 

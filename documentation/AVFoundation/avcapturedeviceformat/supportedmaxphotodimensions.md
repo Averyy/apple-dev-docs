@@ -19,7 +19,7 @@ The maximum photo dimension this format supports.
 @property (nonatomic, readonly) NSArray<NSValue *> * supportedMaxPhotoDimensions;
 ```
 
-#### Discussion
+## Discussion
 
 The array contains [`NSValue`](../../Foundation/nsvalue.md) objects that hold a [`CMVideoDimensions`](../../CoreMedia/cmvideodimensions.md) structure.
 

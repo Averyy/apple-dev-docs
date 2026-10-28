@@ -32,7 +32,7 @@ var amount: NSDecimalNumber? { get }
 @property (atomic, copy, readonly, nullable) NSDecimalNumber * amount;
 ```
 
-#### Discussion
+## Discussion
 
 Use the [`balanceType`](./balancetype.md) property to determine the meaning of this value.
 

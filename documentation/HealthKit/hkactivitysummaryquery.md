@@ -24,7 +24,7 @@ class HKActivitySummaryQuery
 @interface HKActivitySummaryQuery : HKQuery
 ```
 
-#### Overview
+## Overview
 
 Activity summary query objects are mostly immutable. You can assign the query’s [`updateHandler`](./hkactivitysummaryquery/updatehandler.md) property after instantiating the object, but before executing the query. All other properties must be set when you instantiate the object, and they can’t change.
 

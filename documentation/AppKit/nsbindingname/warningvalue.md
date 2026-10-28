@@ -19,7 +19,7 @@ static let warningValue: NSBindingName
 extern NSBindingName NSWarningValueBinding;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [Cocoa Bindings](../cocoa-bindings.md).
 

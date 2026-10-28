@@ -26,7 +26,7 @@ var tags: Set<String> { get }
 @property (copy, readonly) NSSet<NSString *> * tags;
 ```
 
-#### Discussion
+## Discussion
 
 This value is read-only value and is set when the resource request is initialized. The value of each tag in the set corresponds to an identifier you created during app development.
 

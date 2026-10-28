@@ -24,7 +24,7 @@ static let containsHDRVideo: AVMediaCharacteristic
 extern AVMediaCharacteristic const AVMediaCharacteristicContainsHDRVideo;
 ```
 
-#### Discussion
+## Discussion
 
 HDR video contains extended dynamic range that requires explicit support when compositing. The system infers this characteristic from the format description of the associated track.
 

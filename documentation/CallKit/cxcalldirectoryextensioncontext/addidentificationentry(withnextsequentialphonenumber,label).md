@@ -26,7 +26,7 @@ func addIdentificationEntry(withNextSequentialPhoneNumber phoneNumber: CXCallDir
 
 - [Identifying and blocking calls](../identifying-and-blocking-calls.md)
 
-#### Discussion
+## Discussion
 
 When a phone number has an identification entry, incoming calls from that phone number will display its associated label to the user.
 

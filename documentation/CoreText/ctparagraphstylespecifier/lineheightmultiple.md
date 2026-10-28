@@ -25,7 +25,7 @@ case lineHeightMultiple
 kCTParagraphStyleSpecifierLineHeightMultiple
 ```
 
-#### Discussion
+## Discussion
 
 The natural line height of the receiver is multiplied by this factor (if positive) before being constrained by minimum and maximum line height. Type: [`CGFloat`](../../CoreFoundation/cgfloat-swift.struct.md). Default value: `0.0`. Affects: [`CTFramesetter`](../ctframesetter.md).
 

@@ -21,7 +21,7 @@ typedef struct LSLaunchFSRefSpec {
 } LSLaunchFSRefSpec;
 ```
 
-#### Overview
+## Overview
 
 This data type defines a file-based launch specification designating,by file-system reference, an application to launch, items to open,or both. To request that items be opened in a particular application,set `appRef`, `numDocs`,and `itemRefs` accordingly.To request that each designated item be opened in its own preferredapplication, set `appRef` to `NULL`. Torequest that a particular application be launched without openingany documents, set `appRef` accordinglyand set `numDocs` to `0`.
 

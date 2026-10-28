@@ -20,11 +20,11 @@ func DASessionCreate(_ allocator: CFAllocator?) -> DASession?
 extern DASessionRefDASessionCreate(CFAllocatorRef allocator);
 ```
 
-#### Return Value
+## Return Value
 
 A reference to a new DASession.
 
-#### Discussion
+## Discussion
 
 The caller of this function receives a reference to the returned object. The caller also implicitly retains the object and is responsible for releasing it.
 

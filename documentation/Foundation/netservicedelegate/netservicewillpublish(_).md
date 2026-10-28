@@ -24,7 +24,7 @@ optional func netServiceWillPublish(_ sender: NetService)
 - (void) netServiceWillPublish:(NSNetService *) sender;
 ```
 
-#### Discussion
+## Discussion
 
 Publication of the service proceeds asynchronously and may still generate a call to the delegate’s [`netService(_:didNotPublish:)`](./netservice%28_,didnotpublish%29.md) method if an error occurs.
 

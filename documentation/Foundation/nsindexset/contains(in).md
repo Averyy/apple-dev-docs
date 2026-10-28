@@ -25,7 +25,7 @@ func contains(in range: NSRange) -> Bool
 - (BOOL) containsIndexesInRange:(NSRange) range;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) when the index set contains the indexes in `indexRange`, [`false`](../../Swift/false.md) otherwise.
 

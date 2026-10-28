@@ -19,7 +19,7 @@ func addRenderingAttribute(_ renderingAttribute: NSAttributedString.Key, value: 
 - (void) addRenderingAttribute:(NSAttributedStringKey) renderingAttribute value:(id) value forTextRange:(NSTextRange *) textRange;
 ```
 
-#### Discussion
+## Discussion
 
 Passing `nil` overrides the specified attribute by removing it from the final attributes the framework passes to the layout and rendering engine. This is a convenience method for [`setRenderingAttributes(_:for:)`](./setrenderingattributes%28_,for%29.md).
 

@@ -15,7 +15,7 @@ A score representing artist relevance, used to rank artists when surfacing conte
 object Artist.RelevanceScore
 ```
 
-#### Overview
+## Overview
 
 A higher score indicates higher relevance. For example, an artist with a score of 90 is ranked as more relevant than an artist with a score of 50.
 

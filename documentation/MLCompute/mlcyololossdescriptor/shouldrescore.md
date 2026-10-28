@@ -23,7 +23,7 @@ var shouldRescore: Bool { get set }
 @property (nonatomic, readwrite) BOOL shouldRescore;
 ```
 
-#### Discussion
+## Discussion
 
 If `true`, the layer scales the loss by the IOU overlap; otherwise, the layer doesn’t scale the loss by the IOU overlap. The default value is `true`.
 

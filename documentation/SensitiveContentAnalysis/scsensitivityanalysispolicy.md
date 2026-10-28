@@ -23,7 +23,7 @@ enum SCSensitivityAnalysisPolicy
 enum SCSensitivityAnalysisPolicy : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 This enumeration defines the possible values for the [`SCSensitivityAnalyzer`](./scsensitivityanalyzer.md) property [`analysisPolicy`](./scsensitivityanalyzer/analysispolicy.md). The values of the policy determine how your app manages sensitive content detection.
 

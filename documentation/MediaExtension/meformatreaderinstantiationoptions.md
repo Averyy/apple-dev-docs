@@ -19,7 +19,7 @@ class MEFormatReaderInstantiationOptions
 @interface MEFormatReaderInstantiationOptions : NSObject
 ```
 
-#### Overview
+## Overview
 
 This object is mutable with options set through instance properties.
 

@@ -17,7 +17,7 @@ Collection of functions related to random number generation.
 enum MLXRandom
 ```
 
-#### Overview
+## Overview
 
 Following [JAX’s PRNG design](https://jax.readthedocs.io/en/latest/jep/263-prng.html) we use a splittable version of Threefry, which is a counter-based PRNG.
 

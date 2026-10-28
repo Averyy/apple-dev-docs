@@ -16,7 +16,7 @@ A result builder that creates attachment content from closures.
 struct AttachmentContentBuilder
 ```
 
-#### Overview
+## Overview
 
 The `buildBlock` methods in this type create [`AttachmentContent`](./attachmentcontent.md) instances based on the number and types of sources provided as parameters.
 

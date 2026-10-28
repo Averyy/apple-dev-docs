@@ -24,11 +24,11 @@ class func animatedImageNamed(_ name: String, duration: TimeInterval) -> UIImage
 + (UIImage *) animatedImageNamed:(NSString *) name duration:(NSTimeInterval) duration;
 ```
 
-#### Return Value
+## Return Value
 
 A new image object.
 
-#### Discussion
+## Discussion
 
 This method loads a series of files by appending a series of numbers to the base file name provided in the `name` parameter. For example, if the `name` parameter had ‘image’ as its contents, this method would attempt to load images from files with the names ‘image0’, ‘image1’ and so on all the way up to ‘image1024’. All images included in the animated image should share the same size and scale.
 

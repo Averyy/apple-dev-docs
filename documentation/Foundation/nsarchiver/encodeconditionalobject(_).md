@@ -24,7 +24,7 @@ func encodeConditionalObject(_ object: Any?)
 - (void) encodeConditionalObject:(id) object;
 ```
 
-#### Discussion
+## Discussion
 
 This method overrides the superclass implementation to allow `object` to be encoded only if it is also encoded unconditionally by another object in the object graph. Conditional encoding lets you encode one part of a graph detached from the rest. (See [Archives and Serializations Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Archiving/Archiving.html#//apple_ref/doc/uid/10000047i) for more information.)
 

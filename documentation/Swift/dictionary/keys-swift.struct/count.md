@@ -21,7 +21,7 @@ The number of keys in the dictionary.
 var count: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 > **Complexity**: O(1).
 

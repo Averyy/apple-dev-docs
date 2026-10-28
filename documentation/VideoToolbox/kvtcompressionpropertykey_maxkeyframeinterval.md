@@ -24,7 +24,7 @@ let kVTCompressionPropertyKey_MaxKeyFrameInterval: CFString
 extern CFStringRef const kVTCompressionPropertyKey_MaxKeyFrameInterval;
 ```
 
-#### Discussion
+## Discussion
 
 Key frames, also known as sync frames, reset inter-frame dependencies; decoding a key frame is sufficient to prepare a decoder for correctly decoding the difference frames that follow. Video encoders are allowed to generate key frames more frequently if doing so results in more efficient compression. The default key frame interval is 0, which indicates that the video encoder should choose where to place all key frames. A key frame interval of 1 indicates that every frame must be a keyframe, 2 indicates that at least every other frame must be a keyframe, and so on.
 

@@ -16,7 +16,7 @@ Defines a pointer to a function that obtainsthe text encoding specifications for
 typedef OSStatus (*TECPluginGetCountSubTextEncodingsPtr)(TextEncoding inputEncoding, TextEncoding subEncodings[], ItemCount maxSubEncodings, ItemCount *actualSubEncodings);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./carbon_core/text_encoding_conversion_manager.md#1664324).
 

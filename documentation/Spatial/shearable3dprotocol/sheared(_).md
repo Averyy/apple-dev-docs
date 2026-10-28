@@ -22,7 +22,7 @@ Returns a sheared entity.
 func sheared(_ shear: Self.AxisEnumeration) -> Self
 ```
 
-#### Discussion
+## Discussion
 
 - Returns The sheared entity.
 

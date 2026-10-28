@@ -15,7 +15,7 @@ The descriptor controlling the current endpoint policy.
 kIOUSBGetEndpointDescriptorCurrentPolicy
 ```
 
-#### Discussion
+## Discussion
 
 Specify this option when you want the include descriptor changes you made using the [`AdjustPipe`](../iousbhostpipe/adjustpipe.md) method.
 

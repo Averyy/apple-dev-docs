@@ -16,7 +16,7 @@ A local file path to the downloaded file.
 @property (readonly) NSURL * destinationURL;
 ```
 
-#### Discussion
+## Discussion
 
 Your browser app’s network extension writes the downloaded file to this location.
 

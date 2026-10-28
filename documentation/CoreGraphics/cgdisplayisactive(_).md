@@ -20,11 +20,11 @@ func CGDisplayIsActive(_ display: CGDirectDisplayID) -> boolean_t
 extern boolean_t CGDisplayIsActive(CGDirectDisplayID display);
 ```
 
-#### Return Value
+## Return Value
 
 If `true`, the specified display is active; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 An active display is connected, awake, and available for drawing. In a hardware mirroring set, only the primary display is active.
 

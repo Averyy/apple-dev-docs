@@ -27,7 +27,7 @@ func addControl(_ control: AVCaptureControl)
 
 - [Enhancing your app experience with the Camera Control](../enhancing-your-app-experience-with-the-camera-control.md)
 
-#### Discussion
+## Discussion
 
 A capture session may not be able to add a control due to configuration reasons or limits of the host platform. Before calling this method, determine whether you can successfully add a control by calling the capture session’s [`canAddControl(_:)`](./canaddcontrol%28_%29.md) method.
 

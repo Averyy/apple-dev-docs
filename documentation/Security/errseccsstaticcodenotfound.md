@@ -20,7 +20,7 @@ var errSecCSStaticCodeNotFound: OSStatus { get }
 errSecCSStaticCodeNotFound
 ```
 
-#### Discussion
+## Discussion
 
 You can get this error if you specify a location on disk and the system can’t find the code at that location or if the system is checking the validity of running code and it can’t find the code on disk that was the source for the code in memory.
 

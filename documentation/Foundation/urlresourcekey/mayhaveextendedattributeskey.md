@@ -25,7 +25,7 @@ static let mayHaveExtendedAttributesKey: URLResourceKey
 extern NSURLResourceKey const NSURLMayHaveExtendedAttributesKey;
 ```
 
-#### Discussion
+## Discussion
 
 A value of `false` indicates there are no extended attributes.
 

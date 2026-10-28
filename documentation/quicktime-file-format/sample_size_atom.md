@@ -6,7 +6,7 @@
 
 An atom you use to specify the size of each sample in the media.
 
-#### Overview
+## Overview
 
 Sample size atoms have an atom type of `'stsz'`.
 

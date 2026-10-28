@@ -15,7 +15,7 @@ Initializes a criteria object using USB interface matching criteria, for the giv
 convenience init(deviceMatchingCriteria: AAUSBAccessoryMatchingCriteria.DeviceMatchingCriteria?, interfaceMatchingCriteria: [AAUSBAccessoryMatchingCriteria.InterfaceMatchingCriteria], interfaceMatchingOption: AAUSBAccessoryMatchingCriteria.InterfaceMatchingOption)
 ```
 
-#### Discussion
+## Discussion
 
 Initialize a criteria object using USB interface matching dictionaries, for the given USB device matching dictionary.
 

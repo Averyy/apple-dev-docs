@@ -19,7 +19,7 @@ case constant
 kFxKeyframeSegmentStyle_Constant
 ```
 
-#### Discussion
+## Discussion
 
 At the next keyframe, its value will jump to the value at that keyframe.
 

@@ -23,7 +23,7 @@ var flashMode: AVCaptureDevice.FlashMode { get set }
 @property (nonatomic) AVCaptureFlashMode flashMode;
 ```
 
-#### Discussion
+## Discussion
 
 The default value for this setting is [`AVCaptureDevice.FlashMode.off`](../avcapturedevice/flashmode-swift.enum/off.md).
 

@@ -25,7 +25,7 @@ let MPNowPlayingInfoPropertyIsLiveStream: String
 extern NSString * const MPNowPlayingInfoPropertyIsLiveStream;
 ```
 
-#### Discussion
+## Discussion
 
 Value is an [`NSNumber`](../Foundation/nsnumber.md) object configured as a `boolean`. A value of `1.0` indicates the now playing item is a live stream.
 

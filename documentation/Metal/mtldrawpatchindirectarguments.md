@@ -28,7 +28,7 @@ typedef struct { ... } MTLDrawPatchIndirectArguments;
 
 - [Specifying drawing and dispatch arguments indirectly](./specifying-drawing-and-dispatch-arguments-indirectly.md)
 
-#### Overview
+## Overview
 
 See also the following methods:
 

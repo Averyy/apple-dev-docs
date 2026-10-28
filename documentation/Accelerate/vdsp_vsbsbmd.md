@@ -21,7 +21,7 @@ Calculates the double-precision element-wise product of the differences of two p
 extern void vDSP_vsbsbmD(const double *__A, vDSP_Stride __IA, const double *__B, vDSP_Stride __IB, const double *__C, vDSP_Stride __IC, const double *__D, vDSP_Stride __ID, double *__E, vDSP_Stride __IE, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This function calculates the products of the first `N` elements of the subtraction of vectors `A` and `B` and the subtraction of vectors `C` and `D`, as follows:
 

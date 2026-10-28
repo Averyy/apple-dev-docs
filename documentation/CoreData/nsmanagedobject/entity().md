@@ -25,7 +25,7 @@ class func entity() -> NSEntityDescription
 + (NSEntityDescription *) entity;
 ```
 
-#### Discussion
+## Discussion
 
 This method is only legal to call on subclasses of `NSManagedObject` that represent a single entity in the model.
 

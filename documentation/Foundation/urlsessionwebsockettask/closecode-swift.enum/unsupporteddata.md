@@ -25,7 +25,7 @@ case unsupportedData
 NSURLSessionWebSocketCloseCodeUnsupportedData
 ```
 
-#### Discussion
+## Discussion
 
 An endpoint that only accepts text may send this close code if it receives a binary message.
 

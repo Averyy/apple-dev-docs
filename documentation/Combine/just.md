@@ -21,7 +21,7 @@ A publisher that emits an output to each subscriber just once, and then finishes
 struct Just<Output>
 ```
 
-#### Overview
+## Overview
 
 You can use a [`Just`](./just.md) publisher to start a chain of publishers. A [`Just`](./just.md) publisher is also useful when replacing a value with [`Publishers.Catch`](./publishers/catch.md).
 

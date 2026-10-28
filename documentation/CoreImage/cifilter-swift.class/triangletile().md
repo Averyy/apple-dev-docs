@@ -24,11 +24,11 @@ class func triangleTile() -> any CIFilter & CITriangleTile
 + (CIFilter<CITriangleTile> *) triangleTileFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The tiled image.
 
-#### Discussion
+## Discussion
 
 This method applies the triangle tile filter to an image. The effect creates a tiled pattern from a triangular area from the input image.
 

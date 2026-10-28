@@ -21,7 +21,7 @@ The stream finished as a result of calling the continuation’s `finish` method.
 case finished(Failure?)
 ```
 
-#### Discussion
+## Discussion
 
 The associated `Failure` value provides the error that terminated the stream. If no error occurred, this value is `nil`.
 

@@ -23,7 +23,7 @@ A type that defines whether the testing library runs this test serially or in pa
 struct ParallelizationTrait
 ```
 
-#### Overview
+## Overview
 
 When you add this trait to a parameterized test function, that test runs its cases serially instead of in parallel. This trait has no effect when you apply it to a non-parameterized test function.
 

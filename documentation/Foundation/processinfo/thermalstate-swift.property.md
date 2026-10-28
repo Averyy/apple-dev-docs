@@ -25,7 +25,7 @@ var thermalState: ProcessInfo.ThermalState { get }
 @property (readonly) NSProcessInfoThermalState thermalState;
 ```
 
-#### Discussion
+## Discussion
 
 At higher thermal states your app should reduce usage of system resources. For more information, see [`ProcessInfo.ThermalState`](./thermalstate-swift.enum.md).
 

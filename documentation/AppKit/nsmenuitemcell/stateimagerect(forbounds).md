@@ -19,7 +19,7 @@ func stateImageRect(forBounds cellFrame: NSRect) -> NSRect
 - (NSRect) stateImageRectForBounds:(NSRect) cellFrame;
 ```
 
-#### Return Value
+## Return Value
 
 The returned rectangle is based on `cellFrame` but encompasses only the area to be occupied by the menu item’s state image.
 

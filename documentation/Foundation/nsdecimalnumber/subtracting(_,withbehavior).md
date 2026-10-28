@@ -25,7 +25,7 @@ func subtracting(_ decimalNumber: NSDecimalNumber, withBehavior behavior: (any N
 - (NSDecimalNumber *) decimalNumberBySubtracting:(NSDecimalNumber *) decimalNumber withBehavior:(id<NSDecimalNumberBehaviors>) behavior;
 ```
 
-#### Discussion
+## Discussion
 
 `behavior` specifies the handling of calculation errors and rounding.
 

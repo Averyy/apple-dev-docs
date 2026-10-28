@@ -17,7 +17,7 @@ Convert array to have at least 2 dimensions.
 func atLeast2D(_ array: MLXArray, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-##### See Also
+### See Also
 
 - [Shapes](./shapes.md)
 

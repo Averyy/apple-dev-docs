@@ -23,11 +23,11 @@ var shouldAutomaticallyForwardAppearanceMethods: Bool { get }
 @property (nonatomic, readonly) BOOL shouldAutomaticallyForwardAppearanceMethods;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if appearance methods are forwarded or [`false`](../../Swift/false.md) if they are not.
 
-#### Discussion
+## Discussion
 
 This method is called to determine whether to automatically forward appearance-related containment callbacks to child view controllers.
 

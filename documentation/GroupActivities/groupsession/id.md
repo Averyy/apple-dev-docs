@@ -20,7 +20,7 @@ The unique identifier of the current session.
 final let id: UUID
 ```
 
-#### Discussion
+## Discussion
 
 The system assigns a globally unique identifier to each session. This identifier is valid only for the lifetime of the session object.
 

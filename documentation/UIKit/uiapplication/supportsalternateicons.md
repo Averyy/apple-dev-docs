@@ -23,7 +23,7 @@ var supportsAlternateIcons: Bool { get }
 @property (nonatomic, readonly) BOOL supportsAlternateIcons;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) only when the system allows you to change the icon of your app. To declare your app’s alternate icons, include them in the [`CFBundleIcons`](../../BundleResources/information-property-list/cfbundleicons.md) key of your app’s `Info.plist` file.
 

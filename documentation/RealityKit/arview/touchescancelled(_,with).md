@@ -19,7 +19,7 @@ Tells the view when a system event (such as a system alert) cancels a touch sequ
 @preconcurrency override dynamic func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?)
 ```
 
-#### Discussion
+## Discussion
 
 See [`touchesCancelled(_:with:)`](../../UIKit/uiresponder/touchescancelled%28_,with%29.md) for more information.
 

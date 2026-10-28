@@ -5,7 +5,7 @@
 
 Analyze how many people use your app and for how long.
 
-#### Overview
+## Overview
 
 The data in this report details how frequently people use your application. This report is similar to [App Sessions](./app-sessions.md), but includes data for iOS across all distribution methods. Use App Sessions to understand usage of your App Store distributed App, and use App Sessions Context to provide more context to most of the Framework Usage and Performance reports.
 
@@ -21,7 +21,7 @@ The data in this report details how frequently people use your application. This
   - Includes data from users who have opted to share their data with Apple and developers.
   - Individual rows will only appear if they have a value of 5 or more.
 
-#### Report Fields
+## Report Fields
 
 | Report Field | Description | Data Type |
 | --- | --- | --- |

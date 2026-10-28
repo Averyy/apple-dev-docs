@@ -19,7 +19,7 @@ var alignment: NSLayoutConstraint.Attribute { get set }
 @property NSLayoutAttribute alignment;
 ```
 
-#### Discussion
+## Discussion
 
 The default value for this property depends on whether the stack view is horizontal or vertical:
 

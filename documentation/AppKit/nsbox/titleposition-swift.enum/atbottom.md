@@ -17,7 +17,7 @@ case atBottom
 NSAtBottom
 ```
 
-#### Discussion
+## Discussion
 
 Title positioned within the box’s bottom border.
 

@@ -24,7 +24,7 @@ case pageCurl
 UIBarButtonSystemItemPageCurl
 ```
 
-#### Discussion
+## Discussion
 
 This bar button image can be used only for bar button items placed on toolbars.
 

@@ -15,7 +15,7 @@ Display tips that help people discover features in your app.
 - visionOS 1.0+
 - watchOS 10.0+
 
-#### Overview
+## Overview
 
 Use TipKit to show contextual tips that highlight new, interesting, or unused features people haven’t discovered on their own yet.
 

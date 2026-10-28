@@ -20,7 +20,7 @@ protocol ImageAnalysisOverlayViewDelegate : AnyObject
 
 - [Enabling Live Text interactions with images](./enabling-live-text-interactions-with-images.md)
 
-#### Overview
+## Overview
 
 The delegate of an [`ImageAnalysisOverlayView`](./imageanalysisoverlayview.md) object implements this protocol to provide interface details and to customize the response for a person’s interaction.
 

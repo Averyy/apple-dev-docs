@@ -24,11 +24,11 @@ class func smoothLinearGradient() -> any CIFilter & CISmoothLinearGradient
 + (CIFilter<CISmoothLinearGradient> *) smoothLinearGradientFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The generated image.
 
-#### Discussion
+## Discussion
 
 This method generates a smooth linear-gradient image. The effect creates a gradient by gradually blending colors between `point0` and `point1` using the sigmoid curve function.
 

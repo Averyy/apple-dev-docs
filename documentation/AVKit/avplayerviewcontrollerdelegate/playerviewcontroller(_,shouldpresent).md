@@ -23,7 +23,7 @@ optional func playerViewController(_ playerViewController: AVPlayerViewControlle
 
 - [Presenting content proposals in tvOS](../presenting-content-proposals-in-tvos.md)
 
-#### Return Value
+## Return Value
 
 `true` if the player view controller should propose the content; otherwise `false`.
 

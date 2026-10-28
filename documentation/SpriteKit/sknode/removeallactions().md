@@ -29,7 +29,7 @@ func removeAllActions()
 
 - [Configuring Action Timing](../configuring-action-timing.md)
 
-#### Discussion
+## Discussion
 
 When an action is removed from the node, any remaining animation the action would perform is skipped; however, previous changes are not reverted. It is possible that an action may make a final change to the scene when removed; if so, it is documented for the specific action in [`SKAction`](../skaction.md).
 

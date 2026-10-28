@@ -20,7 +20,7 @@ The default media selections for this asset’s media selection groups.
 var preferredMediaSelection: AVMediaSelection { get }
 ```
 
-#### Discussion
+## Discussion
 
 Provides an instance of [`AVMediaSelection`](../avmediaselection.md) with the default selections for each of the assets media selection groups.
 

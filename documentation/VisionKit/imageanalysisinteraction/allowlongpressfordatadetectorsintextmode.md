@@ -23,7 +23,7 @@ final var allowLongPressForDataDetectorsInTextMode: Bool { get set }
 
 - [Enabling Live Text interactions with images](../enabling-live-text-interactions-with-images.md)
 
-#### Discussion
+## Discussion
 
 If you set this property to `true` when the interaction type is just text, people can press and hold data in text, even when data detectors aren’t active. Otherwise, people can perform only text actions, such as copy and translate. The default value for this property is `true`.
 

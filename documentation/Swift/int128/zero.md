@@ -21,7 +21,7 @@ The zero value.
 static var zero: Int128 { get }
 ```
 
-#### Discussion
+## Discussion
 
 Zero is the identity element for addition. For any value, `x + .zero == x` and `.zero + x == x`.
 

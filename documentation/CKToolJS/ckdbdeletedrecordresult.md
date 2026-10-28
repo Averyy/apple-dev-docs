@@ -18,7 +18,7 @@ dictionary CKDBDeletedRecordResult {
 };
 ```
 
-#### Overview
+## Overview
 
 The server returns the CKDBDeletedRecordResult object when looking up a deleted record as part of a batch record lookup operation.
 

@@ -22,7 +22,7 @@ case captureVideo
 UIApplicationShortcutIconTypeCaptureVideo
 ```
 
-#### Discussion
+## Discussion
 
 ![Video capture icon](https://developer.apple.com/tutorials/images/com.apple.uikit/media-2934530@2x.png)
 

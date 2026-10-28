@@ -19,7 +19,7 @@ func isColumnSelected(_ column: Int) -> Bool
 - (BOOL) isColumnSelected:(NSInteger) column;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the column at `columnIndex` is selected, otherwise [`false`](../../Swift/false.md).
 

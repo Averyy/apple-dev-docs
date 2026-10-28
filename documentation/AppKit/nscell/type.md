@@ -19,7 +19,7 @@ var type: NSCell.CellType { get set }
 @property NSCellType type;
 ```
 
-#### Discussion
+## Discussion
 
 When you change the cell type to [`NSCell.CellType.textCellType`](./celltype/textcelltype.md), the cell converts gives itself a default title and sets the font to the system font at the default size. When you change the cell type to [`NSCell.CellType.imageCellType`](./celltype/imagecelltype.md), the cell type does not change until you assign a new non-`nil` image to it.
 

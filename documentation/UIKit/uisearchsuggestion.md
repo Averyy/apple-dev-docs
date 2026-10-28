@@ -24,7 +24,7 @@ protocol UISearchSuggestion : NSObjectProtocol
 @protocol UISearchSuggestion <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Provide common or predicted search queries to save the user the time of typing their entire query in a [`UISearchController`](./uisearchcontroller.md) field. [`UISearchSuggestionItem`](./uisearchsuggestionitem.md) provides a simple implementation of this protocol. You may also define and use your own type that conforms to [`UISearchSuggestion`](./uisearchsuggestion.md).
 

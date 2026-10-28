@@ -16,7 +16,7 @@ A Bool where a value of false indicates the device is not providing timestamps a
 var isRunning: Bool { get throws }
 ```
 
-#### Discussion
+## Discussion
 
 The notification for this property is usually sent from the device’s IO thread.
 

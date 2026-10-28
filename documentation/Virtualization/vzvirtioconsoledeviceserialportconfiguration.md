@@ -19,7 +19,7 @@ class VZVirtioConsoleDeviceSerialPortConfiguration
 @interface VZVirtioConsoleDeviceSerialPortConfiguration : VZSerialPortConfiguration
 ```
 
-#### Overview
+## Overview
 
 A [`VZVirtioConsoleDeviceSerialPortConfiguration`](./vzvirtioconsoledeviceserialportconfiguration.md) object enables serial communication between the guest operating system and host computer through the Virtio interface. After you create this configuration object, configure its inherited [`attachment`](./vzserialportconfiguration/attachment.md) property with an object that defines the type of serial communication you want to enable. Use a [`VZFileHandleSerialPortAttachment`](./vzfilehandleserialportattachment.md) object to enable two-way communication between the guest and host, and use a [`VZFileSerialPortAttachment`](./vzfileserialportattachment.md) object to enable one-way communication from the guest to the file you designate.
 

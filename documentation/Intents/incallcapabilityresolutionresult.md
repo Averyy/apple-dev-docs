@@ -24,7 +24,7 @@ class INCallCapabilityResolutionResult
 @interface INCallCapabilityResolutionResult : INIntentResolutionResult
 ```
 
-#### Overview
+## Overview
 
 You return an `INCallCapabilityResolutionResult` object when resolving parameters containing an [`INCallCapability`](./incallcapability.md) value. Use the creation method that best reflects your ability to resolve the parameter successfully. The resolved value can be different than the original [`INCallCapability`](./incallcapability.md). This flexibility allows app extensions to apply business logic constraints.
 

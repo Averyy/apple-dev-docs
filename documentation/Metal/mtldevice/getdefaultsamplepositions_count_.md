@@ -24,7 +24,7 @@ Retrieves the default sample positions for a specific sample count.
 
 - [Positioning samples programmatically](../positioning-samples-programmatically.md)
 
-#### Discussion
+## Discussion
 
 The default sample positions are the same on all GPUs that support programmable sample positions (see [`areProgrammableSamplePositionsSupported`](./areprogrammablesamplepositionssupported.md)).
 

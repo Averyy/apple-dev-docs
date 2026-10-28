@@ -24,7 +24,7 @@ var showsNodeCount: Bool { get set }
 @property (nonatomic) BOOL showsNodeCount;
 ```
 
-#### Discussion
+## Discussion
 
 When you enable this option, it shows the number of nodes currently in the scene’s node tree.
 

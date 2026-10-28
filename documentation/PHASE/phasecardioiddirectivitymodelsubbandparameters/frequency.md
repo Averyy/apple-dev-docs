@@ -24,7 +24,7 @@ var frequency: Double { get set }
 @property (nonatomic) double frequency;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `1000.0`.
 

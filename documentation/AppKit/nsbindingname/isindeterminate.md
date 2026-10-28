@@ -19,7 +19,7 @@ static let isIndeterminate: NSBindingName
 extern NSBindingName NSIsIndeterminateBinding;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [Cocoa Bindings](../cocoa-bindings.md).
 

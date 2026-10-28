@@ -23,7 +23,7 @@ optional func presentationIndex(for pageViewController: UIPageViewController) ->
 - (NSInteger) presentationIndexForPageViewController:(UIPageViewController *) pageViewController;
 ```
 
-#### Return Value
+## Return Value
 
 The index of the selected item to be reflected in the page indicator.
 

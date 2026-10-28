@@ -19,7 +19,7 @@ func unhideWithoutActivation()
 - (void) unhideWithoutActivation;
 ```
 
-#### Discussion
+## Discussion
 
 When this method begins, it posts an [`willUnhideNotification`](./willunhidenotification.md) to the default notification center. If it completes successfully, it posts an [`didUnhideNotification`](./didunhidenotification.md).
 

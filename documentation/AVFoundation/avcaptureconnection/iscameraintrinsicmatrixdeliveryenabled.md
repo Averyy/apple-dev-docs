@@ -22,7 +22,7 @@ var isCameraIntrinsicMatrixDeliveryEnabled: Bool { get set }
 @property (nonatomic, getter=isCameraIntrinsicMatrixDeliveryEnabled) BOOL cameraIntrinsicMatrixDeliveryEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 You can set this property to [`true`](../../Swift/true.md) for a video connection if [`isCameraIntrinsicMatrixDeliverySupported`](./iscameraintrinsicmatrixdeliverysupported.md) is [`true`](../../Swift/true.md), and only before calling the [`AVCaptureSession`](../avcapturesession.md) [`startRunning()`](../avcapturesession/startrunning%28%29.md) method. The default value is [`false`](../../Swift/false.md).
 

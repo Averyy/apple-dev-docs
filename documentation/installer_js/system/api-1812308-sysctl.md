@@ -11,11 +11,11 @@ Provides the result of a `sysctlbyname()` call using the given selector.
 sysctl(selector)
 ```
 
-#### Return Value
+## Return Value
 
 Hardware data corresponding to `selector`.
 
-#### Overview
+## Overview
 
 Use `man sysctl` in the macOS Terminal application to see a list of hardware selectors.
 

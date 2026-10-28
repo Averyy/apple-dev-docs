@@ -29,7 +29,7 @@ func reviewFabricRestrictions(with params: MTRAccessControlClusterReviewFabricRe
 - (void) reviewFabricRestrictionsWithParams:(MTRAccessControlClusterReviewFabricRestrictionsParams *) params completion:(void (^)(MTRAccessControlClusterReviewFabricRestrictionsResponseParams *data, NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This command signals to the service associated with the device vendor that the fabric administrator would like a review of the current restrictions on the accessing fabric.
 

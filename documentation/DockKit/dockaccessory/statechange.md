@@ -18,7 +18,7 @@ An event that indicates a change in the state of a dock accessory.
 struct StateChange
 ```
 
-#### Overview
+## Overview
 
 DockKit generates this event when a device docks or undocks from the dock accessory, or when a person presses the tracking button. To iterate the stream of state changes, see [`accessoryStateChanges`](../dockaccessorymanager/accessorystatechanges.md).
 

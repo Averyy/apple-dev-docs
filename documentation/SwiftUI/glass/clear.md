@@ -20,7 +20,7 @@ The clear variant of glass.
 static var clear: Glass { get }
 ```
 
-#### Discussion
+## Discussion
 
 When using clear glass, ensure content remains legible by adding a dimming layer or other treatment beneath the glass.
 

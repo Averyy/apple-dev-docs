@@ -10,11 +10,11 @@
 extern CGDisplayStreamRefCGDisplayStreamCreateWithDispatchQueue(CGDirectDisplayID display, size_t outputWidth, size_t outputHeight, int32_t pixelFormat, CFDictionaryRef properties, dispatch_queue_t queue, CGDisplayStreamFrameAvailableHandler handler);
 ```
 
-#### Return Value
+## Return Value
 
 The new CGDisplayStream object.
 
-#### Discussion
+## Discussion
 
 Creates a new CGDisplayStream intended to be serviced by a block handler
 

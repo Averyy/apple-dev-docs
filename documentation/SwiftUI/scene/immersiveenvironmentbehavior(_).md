@@ -16,11 +16,11 @@ nonisolated
 func immersiveEnvironmentBehavior(_ behavior: ImmersiveEnvironmentBehavior) -> some Scene
 ```
 
-#### Return Value
+## Return Value
 
 A scene that uses the specified `behavior`.
 
-#### Discussion
+## Discussion
 
 Use this modifier to control how the immersive environment behaves when an [`ImmersiveSpace`](../immersivespace.md) is opened, that uses an immersion style that supports keeping the immersive environment visible.
 

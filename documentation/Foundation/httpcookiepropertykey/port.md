@@ -25,7 +25,7 @@ static let port: HTTPCookiePropertyKey
 extern NSHTTPCookiePropertyKey const NSHTTPCookiePort;
 ```
 
-#### Discussion
+## Discussion
 
 Only valid for Version 1 cookies or later. The default value is an empty string (`""`). This cookie attribute is optional.
 

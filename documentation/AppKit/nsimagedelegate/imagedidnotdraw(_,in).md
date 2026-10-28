@@ -20,11 +20,11 @@ optional func imageDidNotDraw(_ sender: NSImage, in rect: NSRect) -> NSImage?
 - (NSImage *) imageDidNotDraw:(NSImage *) sender inRect:(NSRect) rect;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSImage` to draw in place of the one in `sender`, or `nil` if the delegate wants to draw the image itself.
 
-#### Discussion
+## Discussion
 
 The delegate can do one of the following:
 

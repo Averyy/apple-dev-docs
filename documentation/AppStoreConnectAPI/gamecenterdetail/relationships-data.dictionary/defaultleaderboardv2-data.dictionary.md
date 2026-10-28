@@ -15,7 +15,7 @@ The data that describes the default leaderboard of the Game Center detail.
 object GameCenterDetail.Relationships.DefaultLeaderboardV2
 ```
 
-#### Overview
+## Overview
 
 - data:
 

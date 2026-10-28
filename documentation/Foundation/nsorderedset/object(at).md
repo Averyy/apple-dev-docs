@@ -25,7 +25,7 @@ func object(at idx: Int) -> Any
 - (ObjectType) objectAtIndex:(NSUInteger) idx;
 ```
 
-#### Return Value
+## Return Value
 
 If `idx` is beyond the end of the ordered set (that is, if index is greater than or equal to the value returned by count), an [`rangeException`](../nsexceptionname/rangeexception.md) is raised.
 

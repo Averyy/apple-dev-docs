@@ -31,7 +31,7 @@ var name: String { get set }
 @property (atomic, copy, readwrite) NSString * name;
 ```
 
-#### Discussion
+## Discussion
 
 Siri displays this string to the user during the ride selection process and when confirming the ride. The [`init(name:estimatedPickupDate:)`](./init%28name,estimatedpickupdate%29.md) method sets this property at initialization time.
 

@@ -19,7 +19,7 @@ var subrowsKeyPath: String { get set }
 @property (copy) NSString * subrowsKeyPath;
 ```
 
-#### Discussion
+## Discussion
 
 The key path is used to get the nested rows in the “rows” binding. The corresponding property should be an ordered to-many relationship containing additional bound row objects.
 

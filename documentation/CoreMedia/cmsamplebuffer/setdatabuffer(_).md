@@ -21,7 +21,7 @@ Associates a block buffer of media data with a sample buffer.
 func setDataBuffer(_ dataBuffer: CMBlockBuffer) throws
 ```
 
-#### Discussion
+## Discussion
 
 Calling this method is a write-once operation; it fails if the sample buffer already has a data buffer.
 

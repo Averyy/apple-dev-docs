@@ -23,7 +23,7 @@ The error which was associated with this issue, if any.
 var error: (any Error)? { get }
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is non-`nil` when [`kind`](./kind-swift.property.md) is [`Issue.Kind.errorCaught(_:)`](./kind-swift.enum/errorcaught%28_%29.md).
 

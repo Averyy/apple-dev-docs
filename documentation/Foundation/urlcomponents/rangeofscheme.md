@@ -21,7 +21,7 @@ Returns the character range of the scheme in the string returned by the string p
 var rangeOfScheme: Range<String.Index>? { get }
 ```
 
-#### Discussion
+## Discussion
 
 If the component does not exist, nil is returned.
 

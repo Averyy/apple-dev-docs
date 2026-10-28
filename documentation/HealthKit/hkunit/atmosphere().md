@@ -24,11 +24,11 @@ class func atmosphere() -> Self
 + (instancetype) atmosphereUnit;
 ```
 
-#### Return Value
+## Return Value
 
 A HealthKit unit for measuring pressure in atmospheres.
 
-#### Discussion
+## Discussion
 
 One atmosphere is the average atmospheric pressure at sea level.
 

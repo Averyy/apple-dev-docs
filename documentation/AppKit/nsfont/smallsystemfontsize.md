@@ -19,7 +19,7 @@ class var smallSystemFontSize: CGFloat { get }
 @property (class, readonly) CGFloat smallSystemFontSize;
 ```
 
-#### Return Value
+## Return Value
 
 The small system font size in points.
 

@@ -24,7 +24,7 @@ class GKObstacle
 @interface GKObstacle : NSObject
 ```
 
-#### Overview
+## Overview
 
 You do not use this class directly; instead, create instances of its concrete subclasses [`GKCircleObstacle`](./gkcircleobstacle.md), [`GKSphereObstacle`](./gksphereobstacle.md), and [`GKPolygonObstacle`](./gkpolygonobstacle.md). To make agents ([`GKAgent`](./gkagent.md) objects) avoid obstacles, create a goal with the goalToAvoidObstacles:timeBeforeCollisionToAvoid: method.
 

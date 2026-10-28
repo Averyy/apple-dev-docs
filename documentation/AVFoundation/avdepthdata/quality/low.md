@@ -24,7 +24,7 @@ case low
 AVDepthDataQualityLow
 ```
 
-#### Discussion
+## Discussion
 
 Low quality occurs when the process generating the depth map (such as inference of depth from disparity on a device with dual cameras) cannot find enough distinct key points in the input images, resulting in a large number of invalid depth values in the (pre-filtered) map.
 

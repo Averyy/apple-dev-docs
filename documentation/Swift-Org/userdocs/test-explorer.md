@@ -10,7 +10,7 @@ framework: "Swift-Org/userdocs"
 
 View test results in the Test Explorer.
 
-#### Overview
+## Overview
 
 View, run, and debug tests that your package containers in the VS Code [Test Explorer](https://code.visualstudio.com/docs/debugtest/testing).
 
@@ -18,7 +18,7 @@ View, run, and debug tests that your package containers in the VS Code [Test Exp
 
 The Test Explorer will list all your [Swift Testing](https://developer.apple.com/xcode/swift-testing/) and [XCTest](https://developer.apple.com/documentation/xctest) tests. These tests are grouped by package, then test target, and finally, by XCTestCase class. From the Test Explorer, you can initiate a test run, debug a test run, and if you have already opened a file, you can quickly jump to the source code for a test.
 
-#### Run Tests with Coverage
+## Run Tests with Coverage
 
 Test coverage is a measurement of how much of your code is tested by your tests. It defines how many lines of code were actually run when you ran your tests and how many were not. When a line of code is not run by your tests it will not have been tested and perhaps you need to extend your tests.
 

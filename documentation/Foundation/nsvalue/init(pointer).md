@@ -25,11 +25,11 @@ init(pointer: UnsafeRawPointer?)
 + (NSValue *) valueWithPointer:(const void *) pointer;
 ```
 
-#### Return Value
+## Return Value
 
 A new value object that contains `aPointer`.
 
-#### Discussion
+## Discussion
 
 This method is equivalent to invoking [`init(_:withObjCType:)`](./init%28_,withobjctype%29.md) in this manner:
 

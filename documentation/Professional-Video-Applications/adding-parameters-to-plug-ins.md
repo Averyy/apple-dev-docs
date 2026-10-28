@@ -5,11 +5,11 @@
 
 Create standard and custom user-facing parameters for your plug-in that will appear in the inspector.
 
-#### Overview
+## Overview
 
 Once a plug-in is invoked by a host application, the host application asks for the plug-in’s parameter list by calling the [`addParameters()`](../professional_video_applications/fxtileableeffect/addparameters%28%29.md) method. This method is declared in the `FxBaseEffect` protocol, which is inherited by the [`FxTileableEffect`](../professional_video_applications/fxtileableeffect.md) protocol. The host application then displays the parameters in its inspector.
 
-##### Add a parameter
+### Add a parameter
 
 The FxPlug SDK includes methods for adding these standard types of parameters:
 
@@ -74,7 +74,7 @@ enum
 
 > **Note**:  A Mix slider parameter is automatically added filter plug-ins, and a Publish OSC toggle parameter is automatically added in Motion to any plug-in that contains onscreen controls. The Publish OSC toggle parameter is never visible in Final Cut Pro.
 
-##### Create a custom parameter
+### Create a custom parameter
 
 In addition to the standard parameter types, you can use the following method to create a custom parameter with an opaque data type:
 
@@ -92,11 +92,11 @@ addCustomParameter(withName:parameterID:defaultValue:parameterFlags:)
 
 Each custom parameter must be associated with a custom parameter view, which is defined by the methods in [`FxCustomParameterViewHost_v2`](../professional_video_applications/fxcustomparameterviewhost_v2.md).
 
-##### Interact with parameters
+### Interact with parameters
 
 When a user changes a parameter control for an FxPlug plug-in, the host application calls the [`parameterChanged(_:at:)`](../professional_video_applications/fxtileableeffect/parameterchanged%28_,at%29.md) plug-in method. This is useful for a plug-in that changes the state of other parameters. For example, if the user changes a toggle button, the plug-in can hide or reveal other parameters during [`parameterChanged(_:at:)`](../professional_video_applications/fxtileableeffect/parameterchanged%28_,at%29.md).
 
-##### Handle user interaction for custom UI parameters
+### Handle user interaction for custom UI parameters
 
 Custom UI parameters let developers draw directly to a custom UI and create their own controls in a space that the host application makes for them in the inspector. The host application handles user interaction for custom parameters in a different way than standard UI parameters. For example, when you develop custom parameters, they must conform to the [`FxCustomParameterViewHost_v2`](../professional_video_applications/fxcustomparameterviewhost_v2.md) protocol. An example of this can be found in the `FxSimpleColorCorrector` sample plug-in.
 
@@ -106,7 +106,7 @@ The plug-in can create a custom view object programmatically or retrieve it from
 
 Your plug-in’s custom view methods must call the [`FxCustomParameterActionAPI_v4`](../professional_video_applications/fxcustomparameteractionapi_v4.md) host API [`startAction(_:)`](../professional_video_applications/fxcustomparameteractionapi_v4/startaction%28_%29.md) method before your plug-in accesses any parameter values, and then call the [`endAction(_:)`](../professional_video_applications/fxcustomparameteractionapi_v4/endaction%28_%29.md) method after it has finished accessing the parameter values. This lets the host application set up and restore the internal state.
 
-##### Update versioning for your plug-in’s parameters
+### Update versioning for your plug-in’s parameters
 
 As you develop plug-ins over time, you may need to deprecate, add, or update your parameters, like changing a default value or range.
 

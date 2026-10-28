@@ -29,7 +29,7 @@ var valueDescriptionProvider: (Double) -> String { get set }
 
 - [Representing chart data as an audio graph](../representing-chart-data-as-an-audio-graph.md)
 
-#### Discussion
+## Discussion
 
 Use this property to format data values into string representations that include units, dates, times, and more.
 

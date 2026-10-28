@@ -17,7 +17,7 @@ Whenever the in-app context for this intent changes any process containing this 
 static func updateAppContext(_ newContext: Self.AppContext?) async throws
 ```
 
-#### Discussion
+## Discussion
 
 Note: The size of data `newContext` uses when encoded with JSONEncoder can not exceed 4kB
 

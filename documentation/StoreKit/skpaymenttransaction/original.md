@@ -31,7 +31,7 @@ var original: SKPaymentTransaction? { get }
 
 - [Restoring purchased products](../restoring-purchased-products.md)
 
-#### Discussion
+## Discussion
 
 The contents of this property are undefined except when [`transactionState`](./transactionstate.md) is set to [`SKPaymentTransactionState.restored`](../skpaymenttransactionstate/restored.md). When a transaction is restored, the current transaction holds a new transaction identifier, receipt, and so on. Your application will read this property to retrieve the restored transaction.
 

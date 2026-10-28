@@ -10,11 +10,11 @@ virtual IOReturn setSpeed(
  UInt16kilobytesPerSecond);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the status of the operation.
 
-#### Overview
+## Overview
 
 Set the speed to be used for data transfers.
 

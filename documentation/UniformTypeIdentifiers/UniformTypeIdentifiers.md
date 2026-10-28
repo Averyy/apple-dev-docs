@@ -15,7 +15,7 @@ Provide uniform type identifiers that describe file types for storage or transfe
 - visionOS 1.0+
 - watchOS 7.0+
 
-#### Overview
+## Overview
 
 The [Uniform Type Identifiers](./UniformTypeIdentifiers.md) framework provides a collection of common types that map to MIME and file types. Use these types in your project to describe the file types in your app. These descriptions help the system properly handle file storage formats or in-memory data for transfer — for example, transferring data to or from the pasteboard. The identifier types can also identify other resources, such as directories, volumes, or packages.
 

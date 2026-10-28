@@ -19,11 +19,11 @@
 static SPAngleFloat SPAngleFloatNegate(SPAngleFloat angle);
 ```
 
-#### Return Value
+## Return Value
 
 The normalized angle.
 
-#### Discussion
+## Discussion
 
 Returns the additive inverse of the specified angle.
 

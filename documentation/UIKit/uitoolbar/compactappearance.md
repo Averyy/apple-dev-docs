@@ -23,7 +23,7 @@ var compactAppearance: UIToolbarAppearance? { get set }
 @property (nonatomic, copy, readwrite, nullable) UIToolbarAppearance * compactAppearance;
 ```
 
-#### Discussion
+## Discussion
 
 If the value of this property is `nil`, UIKit uses the same settings found in the [`standardAppearance`](./standardappearance.md) property.
 

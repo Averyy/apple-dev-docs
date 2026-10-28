@@ -23,7 +23,7 @@ let kCTFontFeatureTypeNameKey: CFString
 extern CFStringRef const kCTFontFeatureTypeNameKey;
 ```
 
-#### Discussion
+## Discussion
 
 Key to get the localized font feature type name as a `CFString` object.
 

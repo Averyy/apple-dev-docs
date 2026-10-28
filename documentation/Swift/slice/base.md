@@ -21,7 +21,7 @@ The underlying collection of the slice.
 var base: Base { get }
 ```
 
-#### Discussion
+## Discussion
 
 You can use a slice’s `base` property to access its base collection. The following example declares `singleDigits`, a range of single digit integers, and then drops the first element to create a slice of that range, `singleNonZeroDigits`. The `base` property of the slice is equal to `singleDigits`.
 

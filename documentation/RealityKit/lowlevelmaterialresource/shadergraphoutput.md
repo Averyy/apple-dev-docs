@@ -18,7 +18,7 @@ The compiled Metal shader functions derived from a ShaderGraph.
 struct ShaderGraphOutput
 ```
 
-#### Overview
+## Overview
 
 Obtain a `ShaderGraphOutput` by calling [`makeShaderGraphFunctions(shaderGraph:constantValues:)`](../lowlevelrendercontextshadergraph/makeshadergraphfunctions%28shadergraph,constantvalues%29.md) on [`shaderGraph`](../lowlevelrendercontext/shadergraph.md).
 

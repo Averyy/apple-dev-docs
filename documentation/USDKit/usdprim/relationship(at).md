@@ -20,7 +20,7 @@ Returns the relationship at a given path, relative to this prim.
 func relationship(at path: USDLayer.Path) -> USDPrim.Relationship
 ```
 
-#### Discussion
+## Discussion
 
 If `path` is relative, it is anchored to this prim’s path. If no relationship exists at the resolved path, returns an invalid relationship handle.
 

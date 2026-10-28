@@ -20,11 +20,11 @@ func remove(_ sender: Any?)
 - (void) remove:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 The `sender` is typically the object that invoked this method.
 
-##### Special Considerations
+### Special Considerations
 
 The result of this method is deferred until the next iteration of the run loop so that the error presentation mechanism can provide feedback as a sheet.
 

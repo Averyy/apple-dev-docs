@@ -22062,8 +22062,11 @@
     }
   },
   "metadata": {
+    "gone_links": [
+      "https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxlmcommon/MLXHuggingFace"
+    ],
     "render": {
-      "version": 3
+      "version": 4
     },
     "total_pages": 5515
   }

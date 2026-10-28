@@ -25,7 +25,7 @@ class NSEntityMigrationPolicy
 @interface NSEntityMigrationPolicy : NSObject
 ```
 
-#### Overview
+## Overview
 
 You set the policy for an entity mapping by passing the name of the migration policy class as the argument to [`entityMigrationPolicyClassName`](./nsentitymapping/entitymigrationpolicyclassname.md). Typically, you specify the name in the Xcode mapping model editor.
 

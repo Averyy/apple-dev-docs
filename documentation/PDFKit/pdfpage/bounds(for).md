@@ -40,7 +40,7 @@ func bounds(for box: PDFDisplayBox) -> NSRect
 - (NSRect) boundsForBox:(PDFDisplayBox) box;
 ```
 
-#### Discussion
+## Discussion
 
 The [`PDFDisplayBox`](../pdfdisplaybox.md) enumeration defines the various box types.
 

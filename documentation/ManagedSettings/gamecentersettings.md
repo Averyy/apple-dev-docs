@@ -17,7 +17,7 @@ Constraints on the user’s Game Center settings.
 struct GameCenterSettings
 ```
 
-#### Overview
+## Overview
 
 Use `GameCenterSettings` to prevent the user from changing Game Center’s settings for adding friends and joining multiplayer games.
 

@@ -3,7 +3,7 @@
 **Framework**: WebKit JS  
 **Kind**: clconst
 
-#### Overview
+## Overview
 
 Specifies centered text. The middle of the bounding box is aligned with the x-coordinate.
 

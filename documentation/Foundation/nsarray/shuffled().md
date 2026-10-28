@@ -24,11 +24,11 @@ func shuffled() -> [Any]
 - (NSArray<id> *) shuffledArray;
 ```
 
-#### Return Value
+## Return Value
 
 A new array that lists this array’s elements in a random order.
 
-#### Discussion
+## Discussion
 
 Calling this method is equivalent to calling the [`shuffled(using:)`](./shuffled%28using%29.md) method and passing the system [`sharedRandom()`](../../GameplayKit/gkrandomsource/sharedrandom%28%29.md) random source. To influence the random shuffling or to be able to deterministically reproduce a series of shuffles, create your own [`GKRandomSource`](../../GameplayKit/gkrandomsource.md) object.
 

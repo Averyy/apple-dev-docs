@@ -23,7 +23,7 @@ var kAudioSessionProperty_OverrideCategoryMixWithOthers: Int { get }
 kAudioSessionProperty_OverrideCategoryMixWithOthers
 ```
 
-#### Discussion
+## Discussion
 
 A read/write `UInt32` value. By default, the value of this property is `FALSE` (`0`).
 

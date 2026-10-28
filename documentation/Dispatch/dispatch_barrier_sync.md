@@ -21,7 +21,7 @@ Submits a barrier block object for execution and waits until that block complete
 extern void dispatch_barrier_sync(dispatch_queue_t queue, dispatch_block_t block);
 ```
 
-#### Discussion
+## Discussion
 
 This function submits a barrier block to a dispatch queue for synchronous execution. Unlike [`dispatch_barrier_async`](./dispatch_barrier_async.md), this function does not return until the barrier block has finished. Calling this function and targeting the current queue results in deadlock.
 

@@ -26,7 +26,7 @@ func urlProtocol(_ protocol: URLProtocol, didReceive response: URLResponse, cach
 - (void) URLProtocol:(NSURLProtocol *) protocol didReceiveResponse:(NSURLResponse *) response cacheStoragePolicy:(NSURLCacheStoragePolicy) policy;
 ```
 
-#### Discussion
+## Discussion
 
 The implementation should use the provided cache storage policy to determine whether to store the response in a cache.
 

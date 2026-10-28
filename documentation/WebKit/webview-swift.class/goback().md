@@ -21,7 +21,7 @@ func goBack() -> Bool
 - (BOOL) goBack;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if able to move backward; otherwise, [`false`](../../Swift/false.md).
 

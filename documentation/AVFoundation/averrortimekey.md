@@ -25,7 +25,7 @@ let AVErrorTimeKey: String
 extern NSString * const AVErrorTimeKey;
 ```
 
-#### Discussion
+## Discussion
 
 The associated value is of type [`CMTime`](../CoreMedia/cmtime.md).
 

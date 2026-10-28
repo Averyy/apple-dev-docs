@@ -21,7 +21,7 @@ init(identifier: String, hostPid: pid_t)
 - (id) initWithIdentifier:(NSString *) identifier hostPid:(pid_t) hostPid;
 ```
 
-#### Discussion
+## Discussion
 
 Don’t return an instance of this class from an object in your view hierarchy.
 

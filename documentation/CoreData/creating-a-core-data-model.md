@@ -5,13 +5,13 @@
 
 Define your app’s object structure with a data model file.
 
-#### Overview
+## Overview
 
 The first step in working with Core Data is to create a data model file to define the structure of your app’s objects, including their object types, properties, and relationships.
 
 You can add a Core Data model file to your Xcode project when you create the project, or you can add it to an existing project.
 
-##### Add Core Data to a New Xcode Project
+### Add Core Data to a New Xcode Project
 
 In the dialog for creating a new project, select the Use Core Data checkbox, and click Next.
 
@@ -21,7 +21,7 @@ The resulting project includes an `.xcdatamodeld` file.
 
 ![Screenshot showing the .xcdatamodeld file highlighted in the project navigator.](https://developer.apple.com/tutorials/images/com.apple.coredata/media-3080773@2x.png)
 
-##### Add a Core Data Model to an Existing Project
+### Add a Core Data Model to an Existing Project
 
 Choose File > New > File and select the iOS platform tab. Scroll down to the Core Data section, select Data Model, and click Next.
 

@@ -19,7 +19,7 @@ class let selectionIsChangingNotification: NSNotification.Name
 extern NSNotificationName NSComboBoxSelectionIsChangingNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the `NSComboBox` whose selection is changing. This notification does not contain a `userInfo` dictionary.
 

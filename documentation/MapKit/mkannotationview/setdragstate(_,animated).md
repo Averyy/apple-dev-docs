@@ -23,7 +23,7 @@ func setDragState(_ newDragState: MKAnnotationView.DragState, animated: Bool)
 - (void) setDragState:(MKAnnotationViewDragState) newDragState animated:(BOOL) animated;
 ```
 
-#### Discussion
+## Discussion
 
 Apps can override this method and use it to implement drag support for custom annotation views. As the system detects user actions that indicate a drag, it calls this method to update the drag state. In response to these changes, your custom implementation of this method needs to do the following:
 

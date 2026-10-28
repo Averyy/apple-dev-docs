@@ -17,7 +17,7 @@ Retrieves the suggested number of items to include in a page.
 var suggestedPageSize: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 This value is a suggested upper limit for the number of contact items you can pass in the aggregate calls to [`didEnumerate(_:)`](./didenumerate%28_%29.md). Exceeding this limit may result in memory issues.
 

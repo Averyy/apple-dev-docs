@@ -19,7 +19,7 @@ class Identifier
 @interface FSVolumeIdentifier : FSEntityIdentifier
 ```
 
-#### Overview
+## Overview
 
 For most volumes, the volume identifier is the UUID identifying the volume.
 

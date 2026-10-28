@@ -18,7 +18,7 @@ A metric that counts app terminations from the background by category.
 struct BackgroundTerminationMetric
 ```
 
-#### Discussion
+## Discussion
 
 This metric corresponds to the [`MetricResult.backgroundTermination(_:)`](./metricresult/backgroundtermination%28_%29.md) case. It appears in both [`intervalEntries`](./metricreport/intervalentries.md) and [`stateEntries`](./metricreport/stateentries.md) when state reporting is enabled.
 

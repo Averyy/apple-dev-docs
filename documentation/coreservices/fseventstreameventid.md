@@ -18,7 +18,7 @@ typealias FSEventStreamEventId = UInt64
 typedef UInt64 FSEventStreamEventId;
 ```
 
-#### Discussion
+## Discussion
 
 Event IDs that can be passed to the FSEventStreamCreate...() functions and FSEventStreamCallback(). They are monotonically increasing per system, even across reboots and drives coming and going. They bear no relation to any particular clock or timebase.
 

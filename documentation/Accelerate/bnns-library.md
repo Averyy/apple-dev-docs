@@ -5,7 +5,7 @@
 
 Implement and run neural networks for training and inference.
 
-#### Overview
+## Overview
 
 The Accelerate framework’s BNNS library is a collection of functions that you use to construct neural networks for training and inference. BNNS provides routines optimized for high performance and low energy consumption across all Apple platforms.
 

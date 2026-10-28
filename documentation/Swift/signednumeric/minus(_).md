@@ -22,11 +22,11 @@ Returns the additive inverse of the specified value.
 static func - (operand: Self) -> Self
 ```
 
-#### Return Value
+## Return Value
 
 The additive inverse of this value.
 
-#### Discussion
+## Discussion
 
 The negation operator (prefix `-`) returns the additive inverse of its argument.
 

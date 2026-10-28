@@ -23,7 +23,7 @@ func stopScrollingAndZooming()
 - (void) stopScrollingAndZooming;
 ```
 
-#### Discussion
+## Discussion
 
 The scroll view’s content offset remains at the value it has when you call this method, unless:
 

@@ -16,7 +16,7 @@ Initializes the device.
 virtual bool init();
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if initialization was successful, or [`false`](../../Swift/false.md) if it was unsuccessful.
 

@@ -15,7 +15,7 @@ The response body for endpoints that modify a single Game Center score moderatio
 object GameCenterScoreModerationResponse
 ```
 
-#### Overview
+## Overview
 
 The [`Modify a Game Center Score Moderation`](./patch-v1-gamecenterscoremoderations-_id_.md) endpoint returns this response.
 

@@ -19,7 +19,7 @@ A Boolean that checks if the system knows the given handle.
 final func isKnownHandle(_ handle: CommunicationHandle) async -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 Whether or not the given handle is known by the system.
 

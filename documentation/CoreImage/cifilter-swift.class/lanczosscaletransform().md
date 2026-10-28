@@ -28,11 +28,11 @@ class func lanczosScaleTransform() -> any CIFilter & CILanczosScaleTransform
 
 - [Processing an Image Using Built-in Filters](../processing-an-image-using-built-in-filters.md)
 
-#### Return Value
+## Return Value
 
 The adjusted image.
 
-#### Discussion
+## Discussion
 
 This method applies the Lanczos scale transform filter to an image. The effect creates the output image by scaling the input image based on the scale and aspect ratio properties provided.
 

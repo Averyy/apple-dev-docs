@@ -12,11 +12,11 @@ virtual bool StartController (
  void ) = 0;
 ```
 
-#### Return Value
+## Return Value
 
 return true means that start was successful.
 
-#### Overview
+## Overview
 
 The StartController will always be called before any requests are sent to the driver for execution. This method is called after an initialize to start the services provided by the specific HBA driver or called after a StopController call to restart those services. After this call completes, all services provided by the HBA driver are available to the client.
 

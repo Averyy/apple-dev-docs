@@ -24,7 +24,7 @@ func arrayType() -> MTLArrayType?
 - (MTLArrayType *) arrayType;
 ```
 
-#### Return Value
+## Return Value
 
 An object that describes the array. If [`dataType`](./datatype.md) indicates that this member is not an array, this method returns `nil.`
 

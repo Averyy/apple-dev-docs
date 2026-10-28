@@ -23,11 +23,11 @@ class func `default`() -> Self
 + (instancetype) defaultFormat;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized format.
 
-#### Discussion
+## Discussion
 
 The returned format object always represents the device’s highest fidelity, regardless of the actual fidelity currently employed by the device. A graphics renderer uses this method to create a format at initialization time if you use an initializer that does not have a format argument.
 

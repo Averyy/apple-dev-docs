@@ -21,7 +21,7 @@ Connect to an endpoint on the network to send and receive data.
 final class NetworkConnection<ApplicationProtocol> where ApplicationProtocol : NetworkProtocolOptions
 ```
 
-#### Overview
+## Overview
 
 A connection handles establishment of any transport, security, and application-level protocols required to transmit and receive user data. Connections may make multiple establishment attempts before the connection is ready.
 

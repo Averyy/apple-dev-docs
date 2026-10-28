@@ -25,7 +25,7 @@ var physicsField: SCNPhysicsField? { get set }
 @property (nonatomic, retain, nullable) SCNPhysicsField * physicsField;
 ```
 
-#### Discussion
+## Discussion
 
 Physics fields apply forces to other physics bodies in a specified area around their node. For example, a SCNPhysicsDragField field slows all physics bodies that pass through its area. For a full list of field types and their effects, see [`SCNPhysicsField`](../scnphysicsfield.md).
 

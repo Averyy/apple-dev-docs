@@ -18,7 +18,7 @@ Accessory settings that your extension provides to the Home app.
 struct HomeAccessorySettings
 ```
 
-#### Overview
+## Overview
 
 Provide a [`HomeAccessorySettingsProvider`](./homeaccessorysettingsprovider.md) that reads and writes the settings, and a [`HomeAccessorySettingsContext`](./homeaccessorysettingscontext.md) that the provider uses to communicate with the accessory.
 

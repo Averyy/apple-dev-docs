@@ -24,11 +24,11 @@ class func circleSplashDistortion() -> any CIFilter & CICircleSplashDistortion
 + (CIFilter<CICircleSplashDistortion> *) circleSplashDistortionFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The distorted image.
 
-#### Discussion
+## Discussion
 
 This method applies the circle splash distortion filter to an image. This effect distorts the pixels starting at the circumference of a circle and emanating outward.
 

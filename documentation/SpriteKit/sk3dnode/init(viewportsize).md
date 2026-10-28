@@ -25,7 +25,7 @@ init(viewportSize: CGSize)
 - (instancetype) initWithViewportSize:(CGSize) viewportSize;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized [`SK3DNode`](../sk3dnode.md) object.
 

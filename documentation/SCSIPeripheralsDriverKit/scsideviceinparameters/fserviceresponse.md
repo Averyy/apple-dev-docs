@@ -15,7 +15,7 @@ The response from the service, such as complete, in process, or rejected.
 SCSIServiceResponse fServiceResponse;
 ```
 
-#### Discussion
+## Discussion
 
 Use the values that [`SCSIServiceResponse`](../../iokit/scsiserviceresponse.md) defines to evaluate this field.
 

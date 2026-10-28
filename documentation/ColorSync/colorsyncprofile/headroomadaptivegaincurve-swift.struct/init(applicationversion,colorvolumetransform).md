@@ -21,7 +21,7 @@ Creates Headroom Adaptive Gain Curve metadata.
 init(applicationVersion: UInt8 = 0, colorVolumeTransform: ColorSyncProfile.HeadroomAdaptiveGainCurve.ColorVolumeTransform? = nil) throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: [`ColorSyncProfile.HeadroomAdaptiveGainCurve.Error.unsupportedApplicationVersion(_:)`](./error/unsupportedapplicationversion%28_%29.md) if `applicationVersion` is not `0`.
 

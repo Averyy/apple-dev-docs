@@ -19,7 +19,7 @@ static var dragThatCanResizeWindow: NSLayoutConstraint.Priority { get }
 static const NSLayoutPriority NSLayoutPriorityDragThatCanResizeWindow;
 ```
 
-#### Discussion
+## Discussion
 
 This drag does not need to explicitly resize the window. The user might be dragging around window contents, and it might be desirable for the window get bigger to accommodate those contents.
 

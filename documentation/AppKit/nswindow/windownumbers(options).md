@@ -19,7 +19,7 @@ class func windowNumbers(options: NSWindow.NumberListOptions = []) -> [NSNumber]
 + (NSArray<NSNumber *> *) windowNumbersWithOptions:(NSWindowNumberListOptions) options;
 ```
 
-#### Return Value
+## Return Value
 
 An array of window numbers for all visible windows satisfying the specified options. (Windows on the active space are returned in z-order; that is, front to back.)
 

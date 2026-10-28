@@ -24,7 +24,7 @@ var seed: UInt64 { get set }
 @property (nonatomic, assign) uint64_t seed;
 ```
 
-#### Discussion
+## Discussion
 
 Any two random sources initialized with the same seed value will generate the same sequence of random numbers. To replicate the behavior of an existing [`GKMersenneTwisterRandomSource`](../gkmersennetwisterrandomsource.md) instance, read this property and then create a new instance by passing the resulting value to the [`seed`](./seed.md) initializer.
 

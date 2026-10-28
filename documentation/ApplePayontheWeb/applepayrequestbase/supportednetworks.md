@@ -16,7 +16,7 @@ The payment networks the merchant provides to their customers.
 required sequence <DOMString> supportedNetworks;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to one or more of the payment network values. For a complete list of networks that Apple Pay supports and the specific Apple Pay version that introduced that network, see [Supporting payment networks](../supported-networks.md).
 

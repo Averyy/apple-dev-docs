@@ -21,7 +21,7 @@ Gets the position of an entity relative to the given entity.
 @preconcurrency func position(relativeTo referenceEntity: Entity?) -> SIMD3<Float>
 ```
 
-#### Return Value
+## Return Value
 
 The position of the entity relative to `referenceEntity`.
 

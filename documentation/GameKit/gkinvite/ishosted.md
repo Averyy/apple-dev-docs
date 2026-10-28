@@ -36,7 +36,7 @@ var isHosted: Bool { get }
 
 - [Finding players for custom server-based games](../finding-players-for-custom-server-based-games.md)
 
-#### Discussion
+## Discussion
 
 If the value of this property is [`true`](../../Swift/true.md), you host the game on your own servers. If the value is [`false`](../../Swift/false.md), Game Center hosts the peer-to-peer match on its servers. The default value is [`false`](../../Swift/false.md).
 

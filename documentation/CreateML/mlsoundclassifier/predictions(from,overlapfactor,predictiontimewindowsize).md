@@ -19,7 +19,7 @@ Generates predictions that use an overlap factor and time window size for an arr
 func predictions(from audioFiles: [URL], overlapFactor: Double, predictionTimeWindowSize: TimeInterval) throws -> [String]
 ```
 
-#### Return Value
+## Return Value
 
 An array of prediction labels for the audio files.
 

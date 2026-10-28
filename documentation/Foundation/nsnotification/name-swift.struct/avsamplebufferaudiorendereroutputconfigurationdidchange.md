@@ -23,7 +23,7 @@ A notification the system posts to indicate that the hardware configuration does
 static let AVSampleBufferAudioRendererOutputConfigurationDidChange: NSNotification.Name
 ```
 
-#### Discussion
+## Discussion
 
 The output configuration of the playback hardware might change during the playback session if other apps play content in different formats. In these cases, the media content format doesn’t match the hardware configuration which would produce suboptimal rendering of the enqueued media data. When the framework detects such mismatch it posts this notification, so an app can flush the renderer and re-enqueue the sample buffers from the current media playhead, which configures the hardware based on the format of newly enqueued sample buffers.
 

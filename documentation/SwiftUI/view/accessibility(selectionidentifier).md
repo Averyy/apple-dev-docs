@@ -24,7 +24,7 @@ nonisolated
 func accessibility(selectionIdentifier: AnyHashable) -> ModifiedContent<Self, AccessibilityAttachmentModifier>
 ```
 
-#### Discussion
+## Discussion
 
 Picker uses the value to determine what node to use for the accessibility value.
 

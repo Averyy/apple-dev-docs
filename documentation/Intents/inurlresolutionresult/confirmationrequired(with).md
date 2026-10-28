@@ -24,11 +24,11 @@ class func confirmationRequired(with urlToConfirm: URL?) -> Self
 + (instancetype) confirmationRequiredWithURLToConfirm:(NSURL *) urlToConfirm;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INURLResolutionResult`](../inurlresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method when you can’t resolve the parameter to a destination type that’s similar to, but not equal to, the one specified in the intent. Don’t use this method to resolve date types that your app doesn’t support.
 

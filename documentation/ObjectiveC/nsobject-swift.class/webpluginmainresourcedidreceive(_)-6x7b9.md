@@ -19,7 +19,7 @@ func webPlugInMainResourceDidReceive(_ response: URLResponse!)
 - (void) webPlugInMainResourceDidReceiveResponse:(NSURLResponse *) response;
 ```
 
-#### Discussion
+## Discussion
 
 This message is invoked when the `WebPlugInShouldLoadMainResourceKey` plug-in command-line argument is set to [`NO`](../no.md) and the underlying `NSURLConnection` object for the main resource sends the connection:didReceiveResponse: message to its delegate.
 

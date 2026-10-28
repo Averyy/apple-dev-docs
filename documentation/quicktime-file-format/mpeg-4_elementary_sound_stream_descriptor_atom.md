@@ -11,7 +11,7 @@ A required extension to the audio sample description for MPEG-4 audio.
 - [QuickTime File Format change log](./revision_history.md)
 - [Sound sample data](./sound_sample_data.md)
 
-#### Overview
+## Overview
 
 This atom contains an elementary stream descriptor, which is defined in ISO/IEC FDIS 14496.
 

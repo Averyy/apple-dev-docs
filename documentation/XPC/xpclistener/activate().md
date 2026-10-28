@@ -16,7 +16,7 @@ Activates an inactive listener.
 func activate() throws
 ```
 
-#### Discussion
+## Discussion
 
 If you create an inactive listener using the [`inactive`](./initializationoptions/inactive.md) flag, be sure to activate it before releasing the last reference to the listener. Releasing the last reference to an inactive listener crashes.
 

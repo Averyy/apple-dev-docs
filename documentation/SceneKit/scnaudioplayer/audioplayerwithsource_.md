@@ -21,11 +21,11 @@ Returns an audio player (creating one if necessary) to play a simple audio sourc
 + (instancetype) audioPlayerWithSource:(SCNAudioSource *) source;
 ```
 
-#### Return Value
+## Return Value
 
 A positional audio player object.
 
-#### Discussion
+## Discussion
 
 An [`SCNAudioSource`](../scnaudiosource.md) object represents a distinct source of audio (for example, a sound file) that can be reused and shared by many player objects. Use this method to create an audio player from such a source. When you use this method, SceneKit creates an audio player for the specified [`SCNAudioSource`](../scnaudiosource.md) object or, if an audio player for that source already exists and is not in use, SceneKit reuses the existing player object.
 

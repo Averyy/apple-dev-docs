@@ -16,7 +16,7 @@ typedef enum USBNotificationTypes : unsigned int {
 } USBNotificationTypes;
 ```
 
-#### Overview
+## Overview
 
 Used to register for USB notifications. These types may be OR'd together if more than one notification is desired. These notification are expected to be acknowledged before the process (e.g. system sleep or system wake) can be continued. See RegisterForNotification and AcknowledgeNotification in IOUSBDeviceInterface and IOUSBInterfaceInterface.
 

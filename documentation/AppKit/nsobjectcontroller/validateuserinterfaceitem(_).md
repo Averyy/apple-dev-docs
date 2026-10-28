@@ -19,7 +19,7 @@ func validateUserInterfaceItem(_ item: any NSValidatedUserInterfaceItem) -> Bool
 - (BOOL) validateUserInterfaceItem:(id<NSValidatedUserInterfaceItem>) item;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the receiver can handle the action method; [`false`](../../Swift/false.md) if it cannot.
 

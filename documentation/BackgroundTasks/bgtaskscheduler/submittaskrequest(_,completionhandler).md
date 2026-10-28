@@ -27,7 +27,7 @@ func submitTaskRequest(_ taskRequest: BGTaskRequest) async throws
 - (void) submitTaskRequest:(BGTaskRequest *) taskRequest completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 This method asynchronously submits the task request and invokes the completion handler with any errors that occur during submission.
 

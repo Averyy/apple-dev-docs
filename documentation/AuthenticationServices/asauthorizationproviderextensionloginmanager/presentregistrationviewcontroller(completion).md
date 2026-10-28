@@ -27,7 +27,7 @@ func presentRegistrationViewController() async throws
 
 - [Registering devices and users](../registering-devices-and-users.md)
 
-#### Discussion
+## Discussion
 
 This is only valid during registration. If the system can’t show the controller, the completion returns an error.
 

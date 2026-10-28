@@ -24,11 +24,11 @@ OSStatus AuthorizationCopyInfo(AuthorizationRef authorization, AuthorizationStri
 
 - [Extending authorization services with plug-ins](./extending-authorization-services-with-plug-ins.md)
 
-#### Return Value
+## Return Value
 
 A result code. See [Authorization Services Result Codes](./authorization-services-result-codes.md).
 
-#### Discussion
+## Discussion
 
 An authorization plug-in can store the results of an authentication operation by calling the [`SetContextValue`](./authorizationcallbacks/setcontextvalue.md) function. You can use the [`AuthorizationCopyInfo(_:_:_:)`](./authorizationcopyinfo%28_,_,_%29.md) function to retrieve this information.
 

@@ -21,7 +21,7 @@ Returns a size that results from uniformly scaling with the specified double-pre
 static SPSize3D SPSize3DScaleUniform(SPSize3D size, double scale);
 ```
 
-#### Return Value
+## Return Value
 
 The size that results from uniformly scaling with the specified double-precision value.
 

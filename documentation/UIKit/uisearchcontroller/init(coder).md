@@ -23,7 +23,7 @@ init?(coder: NSCoder)
 - (instancetype) initWithCoder:(NSCoder *) coder;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized search controller, or `nil` if the coder doesn’t define a search controller.
 

@@ -16,7 +16,7 @@ A key that specifies the primary usage type of the device.
 #define kIOHIDPrimaryUsageKey
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is the number for a HID usage type.
 

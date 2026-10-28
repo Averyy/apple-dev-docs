@@ -19,7 +19,7 @@ func CFUserNotificationCheckBoxChecked(_ i: CFIndex) -> CFOptionFlags
 static CFOptionFlags CFUserNotificationCheckBoxChecked(CFIndex i);
 ```
 
-#### Return Value
+## Return Value
 
 A flag that can be used either to set the state of a checkbox when creating a user notification with [`CFUserNotificationCreate(_:_:_:_:_:)`](./cfusernotificationcreate%28_,_,_,_,_%29.md) or to test a checkbox’s state returned in a user notification’s response flags, such as from [`CFUserNotificationReceiveResponse(_:_:_:)`](./cfusernotificationreceiveresponse%28_,_,_%29.md), when the notification dialog is dismissed.
 

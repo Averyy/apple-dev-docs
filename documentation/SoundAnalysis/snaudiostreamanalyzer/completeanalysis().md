@@ -25,7 +25,7 @@ func completeAnalysis()
 - (void) completeAnalysis;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method for requests that provide final results when a stream reaches its end. The analyzer ignores any further calls to the [`analyze(_:atAudioFramePosition:)`](./analyze%28_,ataudioframeposition%29.md) method.
 

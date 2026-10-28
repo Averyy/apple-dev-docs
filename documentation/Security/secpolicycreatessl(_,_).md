@@ -29,7 +29,7 @@ SecPolicyRefSecPolicyCreateSSL(Boolean server, CFStringRef hostname);
 
 - [Creating a Trust Object](./creating-a-trust-object.md)
 
-#### Return Value
+## Return Value
 
 The policy object. In Objective-C, call the [`CFRelease`](../CoreFoundation/cfrelease.md) function to release the object when you are finished with it.
 

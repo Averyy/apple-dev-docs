@@ -6,7 +6,12 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.S
 
 # mlx.nn.SiLU
 
-**class SiLU**
-: Applies the Sigmoid Linear Unit. Also known as Swish.
+```python
+class SiLU
+```
+
+Applies the Sigmoid Linear Unit. Also known as Swish.
+
 See [silu()](../_autosummary_functions/mlx.nn.silu.md#mlx.nn.silu) for the functional equivalent.
+
 Methods

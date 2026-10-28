@@ -20,7 +20,7 @@ static let appleImmersiveVideo: AVAssetPlaybackConfigurationOption
 extern AVAssetPlaybackConfigurationOption const AVAssetPlaybackConfigurationOptionAppleImmersiveVideo;
 ```
 
-#### Discussion
+## Discussion
 
 Clients may use this property to switch into specific display and control modes for Apple Immersive Video playback.
 

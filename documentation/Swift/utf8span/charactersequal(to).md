@@ -21,7 +21,7 @@ Whether this span has the same `Character`s as `other`.
 func charactersEqual(to other: some Sequence<Character>) -> Bool
 ```
 
-#### Discussion
+## Discussion
 
 > **Complexity**: O(n)
 

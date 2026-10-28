@@ -19,7 +19,7 @@ let kVTRAWProcessingPropertyKey_OutputColorAttachments: CFString!
 extern CFStringRef const kVTRAWProcessingPropertyKey_OutputColorAttachments;
 ```
 
-#### Discussion
+## Discussion
 
 This property may not be supported by all RAW Processors. Only color-related keys from `CVImageBuffer.h` are permitted in the returned dictionary.
 

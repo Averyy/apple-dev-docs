@@ -16,7 +16,7 @@ Establishes a streaming connection at the provided endpoint.
 final func connect(endpoint: FoveatedStreamingSession.Endpoint = .systemDiscovered) async throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: A [`FoveatedStreamingSession.DisconnectReason`](./disconnectreason.md) error if a disconnection occurs.  Or, a [`CancellationError`](../../Swift/cancellationerror.md) if the task is cancelled.
 

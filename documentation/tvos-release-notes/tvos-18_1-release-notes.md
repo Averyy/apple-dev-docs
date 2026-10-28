@@ -5,25 +5,25 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 The tvOS 18.1 SDK provides support to develop tvOS apps for Apple TV devices running tvOS 18.1. The SDK comes bundled with Xcode 16.1. For information on the compatibility requirements for Xcode 16.1, see [Xcode 16.1 Release Notes](../Xcode-Release-Notes/xcode-16_1-release-notes.md).
 
-##### Screen Saver
+### Screen Saver
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Portraits and Memories & Slideshows screen savers might not reflect availability accurately in Screen Saver settings or switcher.  (133837315)
 
-##### StoreKit
+### StoreKit
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: In StoreKit Testing in Xcode, the offer identifier in the subscription renewal info might be reported incorrectly for offer codes.  (133774710)
 
-##### SwiftUI
+### SwiftUI
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Using `if #available` in @WidgetBundleBuilder and @SceneBuilder crashes on prior OS versions due to “unknown OS version.”  (136098106)
 

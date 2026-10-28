@@ -25,7 +25,7 @@ func BNNSGraphCompileOptionsSetMessageLogCallback(_ options: bnns_graph_compile_
 void BNNSGraphCompileOptionsSetMessageLogCallback(bnns_graph_compile_options_t options, bnns_graph_compile_message_fn_t log_callback, bnns_user_message_data_t *additional_logging_arguments);
 ```
 
-#### Discussion
+## Discussion
 
 If you don’t specify this callback, default callback functions log messages to [`os_log`](../os/os_log.md).
 

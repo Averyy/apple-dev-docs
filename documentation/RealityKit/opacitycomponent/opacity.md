@@ -20,7 +20,7 @@ The floating-point value the renderer applies to an entity and its descendants.
 var opacity: Float
 ```
 
-#### Discussion
+## Discussion
 
 The opacity is a float within the inclusive range `[0.0, 1.0]`, where `0.0` is completely transparent and `1.0` is completely opaque.
 

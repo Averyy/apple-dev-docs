@@ -25,7 +25,7 @@ let kCVPixelBufferPixelFormatTypeKey: CFString
 extern CFStringRef const kCVPixelBufferPixelFormatTypeKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is either a single [`CFNumber`](../CoreFoundation/cfnumber.md) value or a [`CFArray`](../CoreFoundation/cfarray.md) containing multiple [`CFNumber`](../CoreFoundation/cfnumber.md) values.
 

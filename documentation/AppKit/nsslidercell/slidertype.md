@@ -19,7 +19,7 @@ var sliderType: NSSlider.SliderType { get set }
 @property NSSliderType sliderType;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is a constant indicating the type of the slider. Possible values are described in [`NSSlider.SliderType`](../nsslider/slidertype-swift.enum.md).
 

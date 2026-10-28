@@ -15,7 +15,7 @@ A preferred date and format to display with the notification.
 let displayDate: AccessoryNotification.DisplayDate
 ```
 
-#### Discussion
+## Discussion
 
 The value might differ from the timestamp when the notification arrives.
 

@@ -21,7 +21,7 @@ A type that represents Public Key Cryptography Standard (PKCS) 12 data.
 extern UTType * const UTTypePKCS12;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `com.rsa.pkcs-12`.
 

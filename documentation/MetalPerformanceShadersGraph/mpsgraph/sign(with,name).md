@@ -24,11 +24,11 @@ func sign(with tensor: MPSGraphTensor, name: String?) -> MPSGraphTensor
 - (MPSGraphTensor *) signWithTensor:(MPSGraphTensor *) tensor name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid `MPSGraphTensor` object containing the elementwise result of the applied operation.
 
-#### Discussion
+## Discussion
 
 This operation returns 1.0 if the correspnding input element is greater than 0, -1.0 if it is lesser than 0, -0.0 if it is equal to -0.0, and +0.0 if it is equal to +0.0.
 

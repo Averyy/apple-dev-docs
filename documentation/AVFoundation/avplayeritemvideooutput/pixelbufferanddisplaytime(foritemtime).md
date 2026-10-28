@@ -20,11 +20,11 @@ Retrieves an image that is appropriate for display at the specified item time, a
 func pixelBufferAndDisplayTime(forItemTime itemTime: CMTime) -> (pixelBuffer: CVReadOnlyPixelBuffer?, itemTimeForDisplay: CMTime)
 ```
 
-#### Return Value
+## Return Value
 
 A tuple containing the image to be displayed and a CMTime representing the true display deadline for the pixel buffer
 
-#### Discussion
+## Discussion
 
 - itemTime: A CMTime that expresses a desired item time
 

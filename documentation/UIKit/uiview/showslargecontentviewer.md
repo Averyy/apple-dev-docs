@@ -22,7 +22,7 @@ var showsLargeContentViewer: Bool { get set }
 @property (nonatomic, assign, readwrite) BOOL showsLargeContentViewer;
 ```
 
-#### Discussion
+## Discussion
 
 For this property to take effect, the view must have a [`UILargeContentViewerInteraction`](../uilargecontentviewerinteraction.md).
 

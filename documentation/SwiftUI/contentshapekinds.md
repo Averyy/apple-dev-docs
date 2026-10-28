@@ -21,7 +21,7 @@ A kind for the content shape of a view.
 struct ContentShapeKinds
 ```
 
-#### Overview
+## Overview
 
 The kind is used by the system to influence various effects, hit-testing, and more.
 

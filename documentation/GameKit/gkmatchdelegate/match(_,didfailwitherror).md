@@ -24,7 +24,7 @@ optional func match(_ match: GKMatch, didFailWithError error: (any Error)?)
 - (void) match:(GKMatch *) match didFailWithError:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 GameKit calls this method when the local player can’t connect to any other players in the match.
 

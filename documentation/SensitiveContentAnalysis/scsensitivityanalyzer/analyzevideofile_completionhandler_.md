@@ -23,11 +23,11 @@ Analyzes a video file on disk at the given URL and runs the given code on comple
 
 - [Testing your app’s response to sensitive media](../testing-your-app-s-response-to-sensitive-media.md)
 
-#### Return Value
+## Return Value
 
 An object that indicates how far analysis progresses while the system checks the video for sensitive content.
 
-#### Discussion
+## Discussion
 
 The completion handler:
 

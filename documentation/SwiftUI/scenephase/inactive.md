@@ -21,7 +21,7 @@ The scene is in the foreground but should pause its work.
 case inactive
 ```
 
-#### Discussion
+## Discussion
 
 A scene in this phase doesn’t receive events and should pause timers and free any unnecessary resources. The scene might be completely hidden in the user interface, minimized, visible in the app switcher, or otherwise unavailable. In some cases, scenes only pass through this phase temporarily on their way to the [`ScenePhase.background`](./background.md) phase.
 

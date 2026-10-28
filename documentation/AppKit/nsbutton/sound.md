@@ -19,7 +19,7 @@ var sound: NSSound? { get set }
 @property (strong, nullable) NSSound * sound;
 ```
 
-#### Discussion
+## Discussion
 
 The sound represented by this property is played during a mouse event, such as [`NSLeftMouseDown`](../nsleftmousedown.md).
 

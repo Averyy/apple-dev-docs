@@ -15,11 +15,11 @@ Determines whether the pasteboard item matches the specified patterns, without n
 func detectedPatterns(for keyPaths: Set<PartialKeyPath<NSPasteboardItem.DetectedValues>>) async throws -> Set<PartialKeyPath<NSPasteboardItem.DetectedValues>>
 ```
 
-#### Return Value
+## Return Value
 
 A set with the patterns found on the pasteboard item.
 
-#### Discussion
+## Discussion
 
 This method only gives an indication of whether a pasteboard item matches a particular pattern and doesn’t allow the app to access the contents. As a result, the system doesn’t notify the person using the app about reading the contents of the pasteboard.
 

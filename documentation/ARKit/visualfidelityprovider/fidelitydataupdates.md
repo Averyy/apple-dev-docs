@@ -15,7 +15,7 @@ An async sequence of visual fidelity data updates.
 final var fidelityDataUpdates: some AsyncSequence<VisualFidelityData, Never> { get }
 ```
 
-#### Return Value
+## Return Value
 
 An async sequence of fidelity data.
 

@@ -23,7 +23,7 @@ func update(_ group: CNMutableGroup)
 - (void) updateGroup:(CNMutableGroup *) group;
 ```
 
-#### Discussion
+## Discussion
 
 The group to be updated must already exist in the contact store. If it does not, the update request fails, the `CNErrorCodeRecordDoesNotExist` error is thrown, and the `CNErrorUserInfoAffectedRecordsKey` array is updated to contain that object.
 

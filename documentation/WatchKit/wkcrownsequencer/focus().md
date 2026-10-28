@@ -19,7 +19,7 @@ func focus()
 - (void) focus;
 ```
 
-#### Discussion
+## Discussion
 
 You must call this method to begin the delivery of crown events to your crown sequencer object. If your interface includes a picker or scrollable scene that is currently receiving crown events, calling this method causes that object to resign focus.
 

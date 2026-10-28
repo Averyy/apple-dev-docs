@@ -9,15 +9,15 @@ Change an ad creative’s name or creative spec by its unique identifier.
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 This endpoint updates an existing ad creative. Only two fields are mutable after creation: `name` and `creativeSpec`. The `creativeType` and `destination` are permanently fixed at creation time and can’t be changed. Not every field within `creativeSpec` is mutable. Refer to the specific creative type documentation for which sub-fields can be updated.
 
-#### Payload Examples
+## Payload Examples
 
 **Update Name**:
 
-##### Request
+### Request
 
 ```http
 PUT /v1/creatives/666777888
@@ -27,7 +27,7 @@ PUT /v1/creatives/666777888
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -56,7 +56,7 @@ PUT /v1/creatives/666777888
 
 **Update Creative Spec**:
 
-##### Request
+### Request
 
 ```http
 PUT /v1/creatives/666777888
@@ -82,7 +82,7 @@ PUT /v1/creatives/666777888
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {

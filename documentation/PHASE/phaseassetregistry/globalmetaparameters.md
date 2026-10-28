@@ -24,7 +24,7 @@ var globalMetaParameters: [String : PHASEMetaParameter] { get }
 @property (atomic, copy, readonly) NSDictionary<NSString *,PHASEMetaParameter *> * globalMetaParameters;
 ```
 
-#### Discussion
+## Discussion
 
 When you change a value for a metaparameter in this dictionary, every sound event attached to the metaparameter observes the change. The dictionary key is the [`identifier`](../phasemetaparameter/identifier.md) of the [`PHASEMetaParameterDefinition`](../phasemetaparameterdefinition.md) you pass into [`registerGlobalMetaParameter(metaParameterDefinition:)`](./registerglobalmetaparameter%28metaparameterdefinition%29.md).
 

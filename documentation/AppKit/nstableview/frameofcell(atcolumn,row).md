@@ -19,11 +19,11 @@ func frameOfCell(atColumn column: Int, row: Int) -> NSRect
 - (NSRect) frameOfCellAtColumn:(NSInteger) column row:(NSInteger) row;
 ```
 
-#### Return Value
+## Return Value
 
 A rectangle locating the cell that lies at the intersection of `columnIndex` and `rowIndex`. This method returns `NSZeroRect` if `columnIndex` or `rowIndex` is greater than the number of columns or rows in the table view.
 
-#### Discussion
+## Discussion
 
 You can use this method to update a single cell more efficiently than sending the table view a [`reloadData()`](./reloaddata%28%29.md) message using [`reloadData(forRowIndexes:columnIndexes:)`](./reloaddata%28forrowindexes,columnindexes%29.md)
 

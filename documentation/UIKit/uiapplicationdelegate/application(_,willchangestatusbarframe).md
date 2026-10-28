@@ -23,7 +23,7 @@ optional func application(_ application: UIApplication, willChangeStatusBarFrame
 - (void) application:(UIApplication *) application willChangeStatusBarFrame:(CGRect) newStatusBarFrame;
 ```
 
-#### Discussion
+## Discussion
 
 The app calls this method when it receives a [`setStatusBarOrientation(_:animated:)`](../uiapplication/setstatusbarorientation%28_,animated%29.md) message and is about to change the interface orientation.
 

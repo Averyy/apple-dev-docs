@@ -25,7 +25,7 @@ class func defaultOrthography(forLanguage language: String) -> Self
 + (instancetype) defaultOrthographyForLanguage:(NSString *) language;
 ```
 
-#### Discussion
+## Discussion
 
 This method automatically determines the script for the specified language. For example, the default orthography for the Hindi language has a language map with a single key, `"Deva"` (the ISO 15924 script code for Devanagari), that has a corresponding value of an array containing the element `"hi"` (the BCP-47 identifier for Hindi).
 

@@ -15,7 +15,7 @@ Returns the coordinate region that corresponds to the calling bounding region.
 toCoordinateRegion(): CoordinateRegion;
 ```
 
-#### Return Value
+## Return Value
 
 A [`CoordinateRegion`](../coordinateregion.md) that corresponds to the calling [`BoundingRegion`](../boundingregion.md).
 

@@ -19,7 +19,7 @@ var toolbarStyle: UITitlebarToolbarStyle { get set }
 @property (nonatomic) UITitlebarToolbarStyle toolbarStyle;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`UITitlebarToolbarStyle.automatic`](../uititlebartoolbarstyle/automatic.md).
 

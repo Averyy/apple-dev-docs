@@ -5,13 +5,13 @@
 
 Identify and fix problematic shaders in your app using the shader debugger.
 
-#### Overview
+## Overview
 
 If you notice any visual artifacts while running your app, such as missing geometry or invalid pixels, you can use the shader debugger to investigate problematic shaders. Step through your shader source code and inspect variable values until you discover the problem. Then, just edit the shader source and reload the shader to verify your fix.
 
 > ❗ **Important**: Include source code when you capture a Metal workload because the shader debugger needs it to function correctly. For more information, see [Building your project with embedded shader sources](./building-your-project-with-embedded-shader-sources.md).
 
-##### Debug your shader
+### Debug your shader
 
 To begin debugging a shader, select the draw command or compute dispatch of interest in the Debug navigator. Then, click the Shader Debugger button in the debug bar to begin debugging any of the associated shaders for the currently bound pipeline state.
 
@@ -57,7 +57,7 @@ You can also expand the Functions to Debug option to select a subset of function
 
 You can also select a subset of functions in the Vertex, Mesh, Object, and Fragment tabs by clicking Debug while holding down the Option key.
 
-##### Step through your shader code
+### Step through your shader code
 
 After you click the Debug button, the shader debugger displays the shader source in the Shader editor (see [Inspecting shaders](./inspecting-shaders.md)).
 The call tree on the left shows each executed line in your shader. The values of the variables appear to the right of each shader line of source code in the Shader editor. For example, in the screenshot below, you can see that the `in` variable has a value containing `721.5`, `815.5`, and so on.
@@ -81,13 +81,13 @@ Alternatively, you can change the playhead location by clicking any line in the 
 
 ![A screenshot of the shader debugger with an active shader debugging session. A line of code is selected in the call tree.](https://developer.apple.com/tutorials/images/com.apple.Xcode/gputools-metal-debugger-sdp-call-list-2@2x.png)
 
-##### Iterate through loops
+### Iterate through loops
 
 Unlike a traditional CPU debugger, the shader debugger shows the value of all variables at the same time, with no need to step to the next line. If you decide not to use the call tree to iterate through loops, you can switch the visible loop iteration directly within the Shader editor. Click the Loop Iteration tab on the right above the loop, just before the variables sidebar. When you select a different iteration, the variables within the sidebar update to reflect their values during that iteration.
 
 ![A screenshot of the shader debugger with an active shader debugging session. The Loop Iteration Selection menu is open, with iteration 5 selected.](https://developer.apple.com/tutorials/images/com.apple.Xcode/gputools-metal-debugger-sdp-loop2@2x.png)
 
-##### Inspect variable values
+### Inspect variable values
 
 To inspect the value of a variable, move the pointer over it. For example, in the screenshot below, hovering over `linearSampler` shows the sampler properties in a popover.
 
@@ -115,7 +115,7 @@ In the preview, the mask shows the pixels or threads within the region of intere
 
 ![A screenshot of the inline variable inspection view.](https://developer.apple.com/tutorials/images/com.apple.Xcode/gputools-metal-debugger-sdp-mask@2x.png)
 
-##### Update your shader
+### Update your shader
 
 After changing a shader, you can update the captured frame with the new source code by clicking the Reload Shaders button in the debug bar.
 

@@ -17,7 +17,7 @@ Information about the type of a file.
 enum FileType
 ```
 
-#### Overview
+## Overview
 
 Future cases will use availability annotations to make sure existing plugins continue to work until they increase their required tools version.
 

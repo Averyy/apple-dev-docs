@@ -19,7 +19,7 @@ var isEditable: Bool { get set }
 @property (getter=isEditable) BOOL editable;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the cell is editable. When the value is [`true`](../../Swift/true.md), the text of the cell is also made selectable. When you change the value of the property to [`false`](../../Swift/false.md), the [`isSelectable`](./isselectable.md) property is restored to the value it had before the cell was made editable.
 

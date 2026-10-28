@@ -25,11 +25,11 @@ func CMSimpleQueueGetHead(_ queue: CMSimpleQueue) -> UnsafeRawPointer?
 extern const void *CMSimpleQueueGetHead(CMSimpleQueueRef queue);
 ```
 
-#### Return Value
+## Return Value
 
 The head element.  `NULL` if the queue was empty, or if there was some other error.
 
-#### Discussion
+## Discussion
 
 If the queue is empty, the function returns `NULL`.
 

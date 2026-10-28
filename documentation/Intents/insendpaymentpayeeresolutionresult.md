@@ -23,7 +23,7 @@ class INSendPaymentPayeeResolutionResult
 @interface INSendPaymentPayeeResolutionResult : INPersonResolutionResult
 ```
 
-#### Overview
+## Overview
 
 An [`INSendPaymentPayeeResolutionResult`](./insendpaymentpayeeresolutionresult.md) object is what you return when resolving parameters containing an [`INPerson`](./inperson.md) object. Use the creation method that best reflects your ability to resolve the parameter.
 

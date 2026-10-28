@@ -21,7 +21,7 @@ var sourceIdentifier: String? { get }
 @property (nonatomic, strong, readonly, nullable) NSString * sourceIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 The source identifier in a winning postback may contain two, three, or all four digits of the [`sourceIdentifier`](../../StoreKit/skadimpression/sourceidentifier.md) in the corresponding ad impression. For more information about the value you may get in the postback, see [Receiving postbacks in multiple conversion windows](../../StoreKit/receiving-postbacks-in-multiple-conversion-windows.md).
 

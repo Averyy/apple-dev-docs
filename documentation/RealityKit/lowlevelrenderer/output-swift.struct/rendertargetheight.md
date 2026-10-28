@@ -18,7 +18,7 @@ The height of the render target, in pixels.
 var renderTargetHeight: Int { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Corresponds to `MTLRenderPassDescriptor.renderTargetHeight`.
 

@@ -8,7 +8,7 @@ Making information intuitive and accessible keeps people engaged with your app. 
 
 ---
 
-#### Make your app’s content searchable
+## Make your app’s content searchable
 
 Adding search capabilities to your app helps people find your content quickly. Even if your app doesn’t offer a [search interface](../CoreSpotlight/building-a-search-interface-for-your-app.md), [indexing your app’s content](../CoreSpotlight/adding-your-app-s-content-to-spotlight-indexes.md) makes it visible to Spotlight – the system-wide search tool. On Apple platforms, you create search interfaces and manage your app’s indexed content using [Core Spotlight](../CoreSpotlight/CoreSpotlight.md). Adopting Core Spotlight for search has some other advantages:
 
@@ -22,7 +22,7 @@ If your app creates [`NSUserActivity`](../Foundation/nsuseractivity.md) objects 
 
 ---
 
-#### Extend the reach of your content
+## Extend the reach of your content
 
 Apps are one way to access content, but making your content available in other parts of the system helps people stay engaged with that content.
 
@@ -37,7 +37,7 @@ On Apple Watch, [increase the visibility of widgets](../WidgetKit/widget-suggest
 
 ---
 
-#### Provide helpful information from your app
+## Provide helpful information from your app
 
 Incorporate contextual information to make your app’s content more useful and relevant. For example, a map with a restaurant’s location makes it easier to understand how close that restaurant is to the person’s current location than the address alone. Incorporate other types of contextual information that make sense for your app, including:
 
@@ -50,7 +50,7 @@ Incorporate contextual information to make your app’s content more useful and 
 
 ---
 
-#### Help people manage their device usage
+## Help people manage their device usage
 
 People sometimes need help managing the time they or their children spend on their devices. The [Screen Time](../ScreenTime/ScreenTime.md) framework gives you a way to help parents and guardians supervise their child’s web usage and take action against prohibited URLs. The [Family Controls](../FamilyControls/FamilyControls.md) framework prevents a child from circumventing the parental controls on their device.
 

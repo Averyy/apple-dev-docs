@@ -25,7 +25,7 @@ func setVertexAccelerationStructure(_ accelerationStructure: (any MTLAcceleratio
 - (void) setVertexAccelerationStructure:(id<MTLAccelerationStructure>) accelerationStructure atBufferIndex:(NSUInteger) bufferIndex;
 ```
 
-#### Discussion
+## Discussion
 
 By default, the acceleration structure at each index is `nil`.
 

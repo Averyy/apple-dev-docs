@@ -15,7 +15,7 @@ Returns the XML structure type code for a CFXMLNode object.
 extern CFXMLNodeTypeCode CFXMLNodeGetTypeCode(CFXMLNodeRef node);
 ```
 
-#### Return Value
+## Return Value
 
 The type code for `node`.
 

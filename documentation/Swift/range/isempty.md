@@ -21,7 +21,7 @@ A Boolean value indicating whether the range contains no elements.
 var isEmpty: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 An empty `Range` instance has equal lower and upper bounds.
 

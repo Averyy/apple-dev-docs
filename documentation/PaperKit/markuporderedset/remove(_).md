@@ -20,7 +20,7 @@ Removes the given element from the set.
 mutating func remove(_ member: MarkupOrderedSet.Element) -> MarkupOrderedSet.Element?
 ```
 
-#### Return Value
+## Return Value
 
 The element equal to `member` if `member` is contained in the set; otherwise, `nil`.
 

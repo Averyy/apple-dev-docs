@@ -21,7 +21,7 @@ Create an NWTXTRecord object from a Dictionary<String, Data>.
 init(_ dataDictionary: [String : Data])
 ```
 
-#### Discussion
+## Discussion
 
 Invalid keys will be ignored.
 

@@ -18,7 +18,7 @@ A Boolean value that allows an app to use ARKit to track more objects with a hig
 
 **Default**: `NO`
 
-#### Discussion
+## Discussion
 
 With this entitlement, you can use the [`ObjectTrackingProvider.TrackingConfiguration`](../../ARKit/objecttrackingprovider/trackingconfiguration-swift.struct.md) to change object tracking parameters.
 

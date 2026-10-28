@@ -21,7 +21,7 @@ Creates a new camera position centered on a map item and automatic pitch selecti
 static func item(_ item: MKMapItem, allowsAutomaticPitch: Bool = true) -> MapCameraPosition
 ```
 
-#### Return Value
+## Return Value
 
 Returns a new [`MapCameraPosition`](../mapcameraposition.md).
 

@@ -33,7 +33,7 @@ var addedTasks: [INTask]? { get set }
 @property (atomic, copy, readwrite, nullable) NSArray<INTask *> * addedTasks;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to an array of [`INTask`](../intask.md) objects, each of which represents a single task that you added.
 

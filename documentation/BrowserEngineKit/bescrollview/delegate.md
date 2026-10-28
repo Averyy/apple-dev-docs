@@ -22,7 +22,7 @@ weak var delegate: (any BEScrollViewDelegate)? { get set }
 @property (nonatomic, weak, nullable) id<BEScrollViewDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 `BEScrollView` doesn’t retain the delegate, which must conform to the [`BEScrollViewDelegate`](../bescrollviewdelegate.md) protocol.
 

@@ -15,11 +15,11 @@ Sets a collection of RAW Processing parameters.
 extern OSStatus VTRAWProcessingSessionSetProcessingParameters(VTRAWProcessingSessionRef session, CFDictionaryRef processingParameters);
 ```
 
-#### Return Value
+## Return Value
 
 An error if any of the provided parameters are invalid, disabled, or outside of the declared valid range. None of the provided parameters will be set on the processor if an error is returned.
 
-#### Discussion
+## Discussion
 
 This call sets a collection of RAW Processing parameters on the RAW Processor.  These are set as a dictionary where the keys match [`kVTRAWProcessingParameter_Key`](./kvtrawprocessingparameter_key.md) values that were returned in [`VTRAWProcessingSessionCopyProcessingParameters`](./vtrawprocessingsessioncopyprocessingparameters.md) and where values conform to the type and range defined in the `kVTRAWProcessingParameter` dictionary for each parameter.
 

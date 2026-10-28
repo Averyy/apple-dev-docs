@@ -21,7 +21,7 @@ var isNearbyWithLocalParticipant: Bool { get }
 
 - [Configure your visionOS app for sharing with people nearby](../configure-your-app-for-sharing-with-people-nearby.md)
 
-#### Discussion
+## Discussion
 
 This property is always true for the local participant.
 

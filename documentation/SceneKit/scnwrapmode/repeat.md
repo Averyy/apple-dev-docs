@@ -29,7 +29,7 @@ SCNWrapModeRepeat
 
 - [SCNRepeat](../scnrepeat.md)
 
-#### Discussion
+## Discussion
 
 Texture sampling in areas of the material whose texture coordinates would fall outside from `0.0` to `1.0` results in tiling the texture image across the surface using the material.
 

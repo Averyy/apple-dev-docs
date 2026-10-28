@@ -5,7 +5,7 @@
 
 The version of Apple Pay available in macOS 12 and iOS 15.
 
-#### Overview
+## Overview
 
 New features include:
 

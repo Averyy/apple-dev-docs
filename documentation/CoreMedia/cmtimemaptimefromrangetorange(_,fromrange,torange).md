@@ -25,11 +25,11 @@ func CMTimeMapTimeFromRangeToRange(_ t: CMTime, fromRange: CMTimeRange, toRange:
 extern CMTime CMTimeMapTimeFromRangeToRange(CMTime t, CMTimeRange fromRange, CMTimeRange toRange);
 ```
 
-#### Return Value
+## Return Value
 
 A time structure that represents the translated time.
 
-#### Discussion
+## Discussion
 
 The start and end time of `fromRange` maps to the start and end time of `toRange` respectively. The function maps other times linearly using the formula:
 

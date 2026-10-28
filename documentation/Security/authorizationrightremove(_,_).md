@@ -25,11 +25,11 @@ func AuthorizationRightRemove(_ authRef: AuthorizationRef, _ rightName: UnsafePo
 OSStatus AuthorizationRightRemove(AuthorizationRef authRef, const char *rightName);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Authorization Services Result Codes](./authorization-services-result-codes.md).
 
-#### Discussion
+## Discussion
 
 The right you remove must be an explicit right with no wildcards. Wildcard rights are for use by system administrators for site configuration.
 

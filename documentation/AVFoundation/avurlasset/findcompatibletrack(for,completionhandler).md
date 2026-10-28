@@ -29,7 +29,7 @@ func findCompatibleTrack(for compositionTrack: AVCompositionTrack) async throws 
 - (void) findCompatibleTrackForCompositionTrack:(AVCompositionTrack *) compositionTrack completionHandler:(void (^)(AVAssetTrack *, NSError *)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 This method is the logical complement of [`mutableTrack(compatibleWith:)`](../avmutablecomposition/mutabletrack%28compatiblewith%29.md).
 

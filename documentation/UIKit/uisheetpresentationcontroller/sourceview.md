@@ -22,7 +22,7 @@ var sourceView: UIView? { get set }
 @property (nonatomic, strong, nullable) UIView * sourceView;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `nil`, which means the system centers edge-attached sheets on the edge they attach to, and centers floating sheets vertically and horizontally in the window.
 

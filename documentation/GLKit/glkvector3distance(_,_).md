@@ -22,7 +22,7 @@ func GLKVector3Distance(_ vectorStart: GLKVector3, _ vectorEnd: GLKVector3) -> F
 static float GLKVector3Distance(GLKVector3 vectorStart, GLKVector3 vectorEnd);
 ```
 
-#### Return Value
+## Return Value
 
 The distance between the two points.
 

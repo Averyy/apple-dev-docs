@@ -19,11 +19,11 @@ func ABMultiValueInsert(_ multiValue: ABMutableMultiValueRef!, _ value: CFTypeRe
 extern bool ABMultiValueInsert(ABMutableMultiValueRef multiValue, CFTypeRef value, CFStringRef label, CFIndex index, CFStringRef*outIdentifier);
 ```
 
-#### Return Value
+## Return Value
 
 `true` ifsuccessfully, `false` otherwise.
 
-#### Discussion
+## Discussion
 
 This function performs no type checking and will let you adda value whose type does not match the types of the other valuesin the list. However, if you try to use a multi-value list whosevalues are not all of the same type, functions, such as the ABRecord [`ABRecordSetValue(_:_:_:_:)`](./abrecordsetvalue%28_,_,_,_%29.md) function,will returns `NULL` or kABErrorProperty.
 

@@ -8,9 +8,6 @@ url: https://github.com/swiftlang/sourcekit-lsp/blob/main/Documentation/Editor%2
 
 Most modern text editors support the [Language Server Protocol](https://microsoft.github.io/language-server-protocol/) (LSP) and many have support for Swift through SourceKit-LSP. https://www.swift.org/tools has a list of some popular editors and how to set them up. This page covers any editors not listed there.
 
-<!-- Editors are sorted alphabetically followed by the generic other editor section -->
-<!-- All editors included in this list should offer at least basic functionality free of charge -->
-
 ## BBEdit
 
 Support for LSP is built in to BBEdit 14.0 and later.
@@ -67,7 +64,7 @@ SourceKit-LSP should work with any editor that supports the [Language Server Pro
 
 If you are building a new SourceKit-LSP client for an editor, here are some critical hints that may help you. Some of these are general hints for development of an LSP client.
 
-- SourceKit-LSP has extensive logging. See the [Logging section in CONTRIBUTING.md](../CONTRIBUTING.md#logging) for more information.
+- SourceKit-LSP has extensive logging. See the [Logging section in CONTRIBUTING.md](https://github.com/swiftlang/sourcekit-lsp/blob/main/CONTRIBUTING.md#logging) for more information.
 - You have to [open a document](https://microsoft.github.io/language-server-protocol/specifications/lsp/3.17/specification/#textDocument_didOpen) before sending document-based requests.
 - [Don't](https://forums.swift.org/t/how-do-you-build-a-sandboxed-editor-that-uses-sourcekit-lsp/40906) attempt to use Sourcekit-LSP in [a sandboxed context](https://developer.apple.com/documentation/xcode/configuring-the-macos-app-sandbox):
     - As with most developer tooling, SourceKit-LSP relies on other system- and language tools that it would not be allowed to access from within an app sandbox.

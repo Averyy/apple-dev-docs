@@ -17,11 +17,11 @@ Generates raw token IDs asynchronously using speculative decoding with a draft m
 func generateTokens(input: LMInput, cache: [KVCache]? = nil, state: LMOutput.State? = nil, parameters: GenerateParameters, context: ModelContext, draftModel: any LanguageModel, draftCache: [KVCache]? = nil, numDraftTokens: Int = 2, components: GenerationComponents = .init(), wiredMemoryTicket: WiredMemoryTicket? = nil) throws -> AsyncStream<TokenGeneration>
 ```
 
-#### Return Value
+## Return Value
 
 An `AsyncStream` that emits `TokenGeneration` values.
 
-#### Discussion
+## Discussion
 
 This is similar to `generate(input:cache:state:parameters:context:draftModel:draftCache:numDraftTokens:components:wiredMemoryTicket:)`, but yields raw token IDs instead of decoded text/tool calls.
 

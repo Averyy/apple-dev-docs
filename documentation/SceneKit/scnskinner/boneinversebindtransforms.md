@@ -25,7 +25,7 @@ var boneInverseBindTransforms: [NSValue]? { get }
 @property (nonatomic, readonly, nullable) NSArray<NSValue *> * boneInverseBindTransforms;
 ```
 
-#### Discussion
+## Discussion
 
 An array of [`NSValue`](../../Foundation/nsvalue.md) objects containing [`SCNMatrix4`](../scnmatrix4-swift.struct.md) transforms, each of which corresponds to a node in the [`bones`](./bones.md) array. Each value is the inverse of the bone node’s transform from bind space (that is, of the concatenation of all transforms from the skeleton root down to that bone) in the skeleton’s default pose.
 

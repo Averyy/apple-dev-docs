@@ -23,7 +23,7 @@ init(vector: Vector3D)
 
 Available when `Scalar` is `Float`.
 
-#### Discussion
+## Discussion
 
 Values rounded to a representable value, if necessary.
 

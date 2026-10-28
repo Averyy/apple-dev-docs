@@ -22,7 +22,7 @@ class var jobLimit: Int { get }
 @property (class, readonly) NSInteger jobLimit;
 ```
 
-#### Discussion
+## Discussion
 
 This includes jobs that are in-flight and those that have succeeded or failed.
 

@@ -21,7 +21,7 @@ A format style that displays the time offset between a comparison date and an an
 struct DateOffset
 ```
 
-#### Overview
+## Overview
 
 `DateOffset` formats the difference between the input date and the specified anchor into a human-readable string. It automatically chooses between a compact time representation (like `5:32`) and a units representation (like `2 days, 3 hours`) based on what values you set in `allowedFields`.
 
@@ -35,7 +35,7 @@ Text(.currentDate, format: .offset(to: startDate))
 // Output: "3 minutes, 42 seconds"
 ```
 
-##### Controlling which units appear
+### Controlling which units appear
 
 By default, the style may show year, month, day, hour, minute, and second fields. You can restrict this with `allowedFields`:
 
@@ -57,7 +57,7 @@ When you limit the allowed fields to `[.minute, .second]` (with `maxFieldCount: 
 | `[.hour, .minute]` | 2 | `1 hour, 5 minutes` |
 | `[.year, .month, .day, ...]` | 2 | `2 days, 3 hours` |
 
-##### Controlling the sign
+### Controlling the sign
 
 The `sign` parameter determines how the style indicates whether the offset is in the past or future:
 
@@ -79,7 +79,7 @@ Text(.currentDate, format:
 // 0 seconds from anchor: "0 seconds"
 ```
 
-##### Limiting the number of fields
+### Limiting the number of fields
 
 The `maxFieldCount` parameter controls how many units appear in the output. For an offset of 1 hour, 34 minutes, and 23 seconds from the anchor:
 

@@ -19,7 +19,7 @@ Placement for commands that expose app settings and preferences.
 static let appSettings: CommandGroupPlacement
 ```
 
-#### Discussion
+## Discussion
 
 By default, this group includes the following command in macOS:
 

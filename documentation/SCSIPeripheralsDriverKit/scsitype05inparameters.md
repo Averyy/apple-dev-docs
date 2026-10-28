@@ -15,7 +15,7 @@ Parameters for responses from the external SCSI device.
 struct SCSIType05InParameters;
 ```
 
-#### Discussion
+## Discussion
 
 This type contains all the fields from [`SCSIDeviceInParameters`](./scsideviceinparameters.md), typed for use only with [`IOUserSCSIPeripheralDeviceType05`](./iouserscsiperipheraldevicetype05.md) devices.
 

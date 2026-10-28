@@ -21,7 +21,7 @@ The date from the schedule that triggered the current view update.
 let date: Date
 ```
 
-#### Discussion
+## Discussion
 
 The first time a [`TimelineView`](../../timelineview.md) closure receives this date, it might be in the past. For example, if you create an [`everyMinute`](../../timelineschedule/everyminute.md) schedule at `10:09:55`, the schedule creates entries `10:09:00`, `10:10:00`, `10:11:00`, and so on. In response, the timeline view performs an initial update immediately, at `10:09:55`, but the context contains the `10:09:00` date entry. Subsequent entries arrive at their corresponding times.
 

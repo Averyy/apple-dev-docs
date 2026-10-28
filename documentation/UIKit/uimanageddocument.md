@@ -23,7 +23,7 @@ class UIManagedDocument
 @interface UIManagedDocument : UIDocument
 ```
 
-#### Overview
+## Overview
 
 [`UIManagedDocument`](./uimanageddocument.md) is a concrete subclass of [`UIDocument`](./uidocument.md). When you initialize a managed document, you specify the URL for the document location. The document object then creates a Core Data stack to use to access the document’s persistent store using a managed object model from the app’s main bundle. [`UIManagedDocument`](./uimanageddocument.md) performs all the basic setup you need for Core Data, and in some cases you may use instances of the class directly (without a need to subclass). You can supply configuration options for the creation of the coordinator using [`persistentStoreOptions`](./uimanageddocument/persistentstoreoptions.md), and for the model using [`modelConfiguration`](./uimanageddocument/modelconfiguration.md). You can also perform additional customization by creating a subclass of [`UIManagedDocument`](./uimanageddocument.md):
 
@@ -35,7 +35,7 @@ You do this if, for example, your app supports multiple document types, each of 
 - Override [`persistentStoreType(forFileType:)`](./uimanageddocument/persistentstoretype%28forfiletype%29.md) to customize the type of persistent store used by a document.
 - Override [`configurePersistentStoreCoordinator(for:ofType:modelConfiguration:storeOptions:)`](./uimanageddocument/configurepersistentstorecoordinator%28for,oftype,modelconfiguration,storeoptions%29.md) to customize the loading or creation of a persistent store.
 
-##### Handling errors
+### Handling errors
 
 To enable your app to observe and handle errors in saving and validating a managed document, you must subclass the [`UIManagedDocument`](./uimanageddocument.md) class and override one or both of the following two inherited methods from the [`UIDocument`](./uidocument.md) class:
 

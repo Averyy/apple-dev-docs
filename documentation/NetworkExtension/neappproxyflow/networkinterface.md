@@ -24,7 +24,7 @@ var networkInterface: nw_interface_t? { get set }
 @property (copy, nullable) nw_interface_t networkInterface;
 ```
 
-#### Discussion
+## Discussion
 
 To transport the flow’s data over a different interface, set this property to that interface.
 

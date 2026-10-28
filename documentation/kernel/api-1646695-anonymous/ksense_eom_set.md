@@ -13,7 +13,7 @@
 kSENSE_EOM_Set = 0x40
 ```
 
-#### Discussion
+## Discussion
 
 End Of Medium bit is set.
 

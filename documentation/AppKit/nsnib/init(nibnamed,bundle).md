@@ -19,11 +19,11 @@ init?(nibNamed nibName: NSNib.Name, bundle: Bundle?)
 - (instancetype) initWithNibNamed:(NSNibName) nibName bundle:(NSBundle *) bundle;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized `NSNib` object or `nil` if there were errors during initialization or the nib file could not be located.
 
-#### Discussion
+## Discussion
 
 The `NSNib` object looks for the nib file in the bundle’s language-specific project directories first, followed by the `Resources` directory.
 

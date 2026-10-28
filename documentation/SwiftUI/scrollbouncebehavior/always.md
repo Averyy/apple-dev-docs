@@ -21,7 +21,7 @@ The scrollable view always bounces.
 static var always: ScrollBounceBehavior { get }
 ```
 
-#### Discussion
+## Discussion
 
 The scrollable view always bounces along the specified axis, regardless of the size of the content.
 

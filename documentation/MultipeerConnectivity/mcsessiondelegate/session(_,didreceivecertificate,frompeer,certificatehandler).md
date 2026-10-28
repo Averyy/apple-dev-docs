@@ -26,7 +26,7 @@ optional func session(_ session: MCSession, didReceiveCertificate certificate: [
 - (void) session:(MCSession *) session didReceiveCertificate:(NSArray *) certificate fromPeer:(MCPeerID *) peerID certificateHandler:(void (^)(BOOL accept)) certificateHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Your app should inspect the nearby peer’s certificate, and then should decide whether to trust that certificate. Upon making that determination, your app should call the provided `certificateHandler` block, passing either [`true`](../../Swift/true.md) (to trust the nearby peer) or [`false`](../../Swift/false.md) (to reject it).
 

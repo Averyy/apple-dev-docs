@@ -22,7 +22,7 @@ The diffable data source’s handlers for reordering items.
 
 Available when `SectionIdentifierType` conforms to `Hashable`, `SectionIdentifierType` conforms to `Sendable`, `ItemIdentifierType` conforms to `Hashable`, and `ItemIdentifierType` conforms to `Sendable`.
 
-#### Discussion
+## Discussion
 
 Provide reordering handlers to support the reordering of items in your collection view.
 

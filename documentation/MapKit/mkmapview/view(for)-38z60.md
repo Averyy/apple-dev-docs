@@ -23,7 +23,7 @@ func view(for overlay: any MKOverlay) -> MKOverlayView
 - (MKOverlayView *) viewForOverlay:(id<MKOverlay>) overlay;
 ```
 
-#### Return Value
+## Return Value
 
 The view associated with the overlay object or `nil` if the overlay is not onscreen.
 

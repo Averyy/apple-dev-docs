@@ -21,7 +21,7 @@ Returns a new time that represents the difference between two times.
 static func - (minuend: CMTime, subtrahend: CMTime) -> CMTime
 ```
 
-#### Return Value
+## Return Value
 
 A time value that represents the result of the operation.
 

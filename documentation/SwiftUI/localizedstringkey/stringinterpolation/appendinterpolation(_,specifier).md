@@ -21,7 +21,7 @@ Appends a type, convertible to a string with a format specifier, to a string int
 mutating func appendInterpolation<T>(_ value: T, specifier: String) where T : _FormatSpecifiable
 ```
 
-#### Discussion
+## Discussion
 
 Don’t call this method directly; it’s used by the compiler when interpreting string interpolations.
 

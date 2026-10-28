@@ -20,7 +20,7 @@ Adds a transform operation of the given kind to this prim’s transform stack.
 func addTransformOperation(type: USDTransformOperation.Kind)
 ```
 
-#### Discussion
+## Discussion
 
 Creates the corresponding `xformOp:*` attribute and appends its name to the prim’s `xformOpOrder`.
 

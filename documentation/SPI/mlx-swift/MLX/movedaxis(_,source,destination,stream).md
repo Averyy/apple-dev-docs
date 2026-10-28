@@ -21,7 +21,7 @@ func movedAxis(_ array: MLXArray, source: Int, destination: Int, stream: StreamO
 
 - [Converting From Python](./converting-python.md)
 
-#### Discussion
+## Discussion
 
 ```swift
 let array = MLXArray(0 ..< 16, [2, 2, 2, 2])
@@ -47,7 +47,7 @@ print(r)
 //          [7, 15]]]], dtype=int64)
 ```
 
-##### See Also
+### See Also
 
 - [Shapes](./shapes.md)
 - [`swappedAxes(_:_:_:stream:)`](./swappedaxes%28_,_,_,stream%29.md)

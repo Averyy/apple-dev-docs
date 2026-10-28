@@ -21,7 +21,7 @@ optional func getPlaceholderTemplate(for complication: CLKComplication, withHand
 - (void) getPlaceholderTemplateForComplication:(CLKComplication *) complication withHandler:(void (^)(CLKComplicationTemplate *complicationTemplate)) handler;
 ```
 
-#### Discussion
+## Discussion
 
 When your app is first launched, ClockKit calls this method to retrieve an appropriate placeholder template for your complication. In the customization screen for the clock face, your placeholder template is displayed to the user during the selection process. The contents of the placeholder aren’t updated and are meant to convey the type of data your complication displays. They don’t need to convey actual user data.
 

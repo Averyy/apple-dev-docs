@@ -17,7 +17,7 @@ A Boolean value that indicates whether the user is actively writing.
 @property (nonatomic, readonly, getter=isHandlingWriting) BOOL handlingWriting;
 ```
 
-#### Discussion
+## Discussion
 
 Set to [`true`](../../Swift/true.md) in between calls to [`indirectScribbleInteraction:willBeginWritingInElement:`](../uiindirectscribbleinteractiondelegate-3jmnk/indirectscribbleinteraction_willbeginwritinginelement_.md) and [`indirectScribbleInteraction:didFinishWritingInElement:`](../uiindirectscribbleinteractiondelegate-3jmnk/indirectscribbleinteraction_didfinishwritinginelement_.md) calls.
 

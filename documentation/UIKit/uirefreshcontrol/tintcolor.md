@@ -22,7 +22,7 @@ var tintColor: UIColor! { get set }
 @property (nonatomic, strong, null_resettable) UIColor * tintColor;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is `nil`.
 

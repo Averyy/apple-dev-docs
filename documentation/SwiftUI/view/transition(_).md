@@ -29,7 +29,7 @@ nonisolated
 func transition(_ t: AnyTransition) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 When this view appears or disappears, the transition will be applied to it, allowing for animating it in and out.
 

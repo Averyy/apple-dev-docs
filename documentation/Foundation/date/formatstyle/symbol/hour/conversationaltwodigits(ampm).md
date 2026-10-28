@@ -21,11 +21,11 @@ Custom format style portraying two digits that represent the hour and locale-dep
 static func conversationalTwoDigits(amPM: Date.FormatStyle.Symbol.Hour.AMPMStyle) -> Date.FormatStyle.Symbol.Hour
 ```
 
-#### Return Value
+## Return Value
 
 An hour format style customized according to the specified day period format style and the given locale.
 
-#### Discussion
+## Discussion
 
 This style pads the hour with a leading zero if necessary. This style may include the day period symbol (a.m. or p.m.), depending on locale, and can include conversational period formats. For example, `07a` (`narrow`), `07AM` (`abbreviated`), `07A.M.` (`wide`).
 

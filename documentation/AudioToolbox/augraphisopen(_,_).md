@@ -26,11 +26,11 @@ func AUGraphIsOpen(_ inGraph: AUGraph, _ outIsOpen: UnsafeMutablePointer<DarwinB
 extern OSStatus AUGraphIsOpen(AUGraph inGraph, Boolean *outIsOpen);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 
-#### Discussion
+## Discussion
 
 ## Parameters
 

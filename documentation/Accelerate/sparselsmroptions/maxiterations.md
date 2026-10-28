@@ -25,7 +25,7 @@ var maxIterations: Int32
 int maxIterations;
 ```
 
-#### Discussion
+## Discussion
 
 If [`maxIterations`](./maxiterations.md) is less than `0`, the operation uses a default value of `4n`. However, if a good preconditioner is available or the matrix is well-conditioned such that singular values cluster, a value of `n/2` may be more appropriate.
 

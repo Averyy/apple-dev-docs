@@ -20,7 +20,7 @@ nonisolated
 struct Table<Value, Rows, Columns> where Value == Rows.TableRowValue, Rows : TableRowContent, Columns : TableColumnContent, Rows.TableRowValue == Columns.TableRowValue
 ```
 
-#### Overview
+## Overview
 
 You commonly create tables from collections of data. The following example shows how to create a simple, three-column table from an array of `Person` instances that conform to the [`Identifiable`](../Swift/identifiable.md) protocol:
 
@@ -56,7 +56,7 @@ struct PeopleTable: View {
 
 If there are more rows than can fit in the available space, `Table` provides vertical scrolling automatically. On macOS, the table also provides horizontal scrolling if there are more columns than can fit in the width of the view. Scroll bars appear as needed on iOS; on macOS, the `Table` shows or hides scroll bars based on the “Show scroll bars” system preference.
 
-##### Supporting selection in tables
+### Supporting selection in tables
 
 To make rows of a table selectable, provide a binding to a selection variable. Binding to a single instance of the table data’s [`id`](../Swift/identifiable/id-8t2ws.md) type creates a single-selection table. Binding to a [`Set`](../Swift/set.md) creates a table that supports multiple selections. The following example shows how to add multi-select to the previous example. A [`Text`](./text.md) view below the table shows the number of items currently selected.
 
@@ -75,7 +75,7 @@ struct SelectableTable: View {
 }
 ```
 
-##### Supporting sorting in tables
+### Supporting sorting in tables
 
 To make the columns of a table sortable, provide a binding to an array of [`SortComparator`](../Foundation/sortcomparator.md) instances. The table reflects the sorted state through its column headers, allowing sorting for any columns with key paths.
 
@@ -100,7 +100,7 @@ struct SortableTable: View {
 }
 ```
 
-##### Building tables with static rows
+### Building tables with static rows
 
 To create a table from static rows, rather than the contents of a collection of data, you provide both the columns and the rows.
 
@@ -140,11 +140,11 @@ struct TipTable: View {
 
 ![A table with four columns and three rows. Each row of the](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/Table-2-macOS@2x.png)
 
-##### Styling tables
+### Styling tables
 
 Use the [`tableStyle(_:)`](./view/tablestyle%28_%29.md) modifier to set a [`TableStyle`](./tablestyle.md) for all tables within a view. SwiftUI provides several table styles, such as [`InsetTableStyle`](./insettablestyle.md) and, on macOS, [`BorderedTableStyle`](./borderedtablestyle.md). The default style is [`AutomaticTableStyle`](./automatictablestyle.md), which is available on all platforms that support `Table`.
 
-##### Using tables on different platforms
+### Using tables on different platforms
 
 You can define a single table for use on macOS, iOS, iPadOS, and visionOS. On iOS, iPadOS, and visionOS, the size class provided by the environment is used to transition the table’s layout. Regular size class environments on iPadOS, visionOS, and the inner display of iPhone Duo will display headers and all of the columns in the table. However, on other iPhones or in a compact horizontal size class environment — typical on iPhone Duo’s outer display or iPad in certain modes, like smaller windowed apps — the table has limited space to display its columns. To conserve space, the table automatically hides headers and all columns after the first when it detects this condition.
 

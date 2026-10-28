@@ -24,7 +24,7 @@ var kAFInfoDictionary_SourceBitDepth: String { get }
 #define kAFInfoDictionary_SourceBitDepth
 ```
 
-#### Discussion
+## Discussion
 
 See [`kAudioFilePropertySourceBitDepth`](./kaudiofilepropertysourcebitdepth.md).
 

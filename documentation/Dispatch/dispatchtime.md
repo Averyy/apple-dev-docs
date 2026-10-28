@@ -21,7 +21,7 @@ A point in time relative to the default clock, with nanosecond precision.
 struct DispatchTime
 ```
 
-#### Overview
+## Overview
 
 On Apple platforms, the default clock is based on the Mach absolute time unit.
 

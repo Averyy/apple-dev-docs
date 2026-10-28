@@ -21,11 +21,11 @@ convenience init(kilowattHours: Measurement<UnitEnergy>)
 + (instancetype) routeDetailWithKilowattHours:(NSMeasurement<NSUnitEnergy *> *) kilowattHours;
 ```
 
-#### Return Value
+## Return Value
 
 A new @c CPRouteDetail instance representing the battery energy
 
-#### Discussion
+## Discussion
 
 Use this method to display battery levels for electric vehicles using absolute energy measurements rather than percentages. This provides more meaningful information for users familiar with their vehicle’s battery capacity.
 

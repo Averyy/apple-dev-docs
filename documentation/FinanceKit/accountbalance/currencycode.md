@@ -16,7 +16,7 @@ The balance currency.
 var currencyCode: String { get }
 ```
 
-#### Discussion
+## Discussion
 
 This is the same across available and booked balances.
 

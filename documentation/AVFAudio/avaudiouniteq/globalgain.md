@@ -24,7 +24,7 @@ var globalGain: Float { get set }
 @property (nonatomic) float globalGain;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `0 db`. The valid range of values is `-96 db` to `24 db`.
 

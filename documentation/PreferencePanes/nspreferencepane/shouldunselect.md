@@ -20,7 +20,7 @@ var shouldUnselect: NSPreferencePaneUnselectReply { get }
 @property (readonly) NSPreferencePaneUnselectReply shouldUnselect;
 ```
 
-#### Discussion
+## Discussion
 
 The possible values are described in Help Menu Support. The default implementation always returns [`NSPreferencePaneUnselectReply.unselectNow`](../nspreferencepaneunselectreply/unselectnow.md). Override this method if your pane needs to cancel or delay a deselect action. If you override this method to return [`NSPreferencePaneUnselectReply.unselectLater`](../nspreferencepaneunselectreply/unselectlater.md), you must invoke [`reply(toShouldUnselect:)`](./reply%28toshouldunselect%29.md) when you have determined whether or not the deselection can occur.
 

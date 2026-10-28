@@ -15,7 +15,7 @@ A signal object allowing you to cancel the request.
 signal?: AbortSignal;
 ```
 
-#### Discussion
+## Discussion
 
 Pass an `AbortSignal` from an `AbortController` to allow the controller to cancel a pending search or autocomplete request. When the controller aborts, the promise it returns rejects with a `DOMException` whose `name` is `"AbortError"`.
 

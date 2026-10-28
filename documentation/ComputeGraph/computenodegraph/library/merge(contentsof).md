@@ -21,7 +21,7 @@ Merges nodes from specified library into this library.
 final func merge(contentsOf library: ComputeNodeGraph.Library)
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to merge libraries. If two nodes have the same name and bundle, the nodes in `library` will replace ones in `self`.
 

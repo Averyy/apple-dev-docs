@@ -22,7 +22,7 @@ string KeywordMatchType
 - `PHRASE`: (Apple Maps) Matches the keyword and close variants within Maps search, allowing flexibility while staying focused on the search intent. Supported for negative keywords on Maps.
 - `CATEGORY`: (Apple Maps keywords only) Matches user searches to a Maps business category. Use category identifiers from the Query Business Categories endpoint (for example, `dining.restaurant`, `shopping.clothing`). Does not match app categories. Not supported for negative keywords.
 
-#### Discussion
+## Discussion
 
 Keywords apply only to App Store campaigns using the Search results placement. Today tab, Search tab, and Product pages campaigns use audience targeting instead.
 

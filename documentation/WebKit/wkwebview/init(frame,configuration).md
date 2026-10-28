@@ -23,11 +23,11 @@ init(frame: CGRect, configuration: WKWebViewConfiguration)
 - (instancetype) initWithFrame:(CGRect) frame configuration:(WKWebViewConfiguration *) configuration;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized web view, or `nil` if the view couldn’t be initialized.
 
-#### Discussion
+## Discussion
 
 This method is the designated initializer for the class. Use this method to create a web view that requires custom configuration. For example, use it when you need to specify custom cookies or content filters for the web content.
 

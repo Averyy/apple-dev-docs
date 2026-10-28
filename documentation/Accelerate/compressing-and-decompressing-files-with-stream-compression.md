@@ -10,7 +10,7 @@ Perform compression for all files and decompression for files with supported ext
 - macOS 13.0+
 - Xcode 14.3+
 
-#### Overview
+## Overview
 
 This sample code project uses the [Compression](../Compression/Compression.md) framework to encode (compress) and decode (decompress) files when the user drags and drops them onto the app window. The app decompresses files with extensions that match one of four supported compression algorithms: `.lz4`, `.zlib`, `lzma`, or `.lzfse`, and compresses all other files, regardless of their extension. The app writes the encoded or decoded result to the temporary directory that the [`NSTemporaryDirectory`](../Foundation/nstemporarydirectory%28%29.md) function returns.
 
@@ -25,7 +25,7 @@ Because the sample app performs the encoding and decoding in a background thread
 
 This sample code project includes implementations that use the Compression Swift API and C API. The Compression C API is suitable for use with Swift and Objective-C and for older operating systems that’s don’t support the Swift API.
 
-##### Select a compression algorithm
+### Select a compression algorithm
 
 The app uses the [`Algorithm.lzfse`](../Compression/algorithm/lzfse.md) algorithm, which provides the compression ratio of zlib level 5, but with much higher energy efficiency and speed (between 2x and 3x) for both encode and decode operations.
 
@@ -35,7 +35,7 @@ let encodeAlgorithm = Algorithm.lzfse
 
 For apps that require interoperability with non-Apple devices, use [`Algorithm.zlib`](../Compression/algorithm/zlib.md) instead. For more information about other compression algorithms, see [`compression_algorithm`](../Compression/compression_algorithm.md).
 
-##### Distinguish between compressed and uncompressed files
+### Distinguish between compressed and uncompressed files
 
 The sample code uses a file’s path extension to infer whether a file is already compressed, or if the file needs to be compressed. To simplify this process, the project includes a failable initializer in an extension to the Compression framework’s [`Algorithm`](../Compression/algorithm.md) enumeration.
 
@@ -75,7 +75,7 @@ if let decodeAlgorithm = Algorithm(name: url.pathExtension) {
 }
 ```
 
-##### Define the source and destination file handles
+### Define the source and destination file handles
 
 The sample uses [`FileHandle`](../Foundation/filehandle.md) instances to read from the source file and write to the destination file. Use optional binding to define the required file handles.
 
@@ -95,7 +95,7 @@ If the optional binding succeeded, the destination file handle points to the sou
 
 For example, the compressed source file `MyCompressedFile.PDF.lzfse` would have a decompressed destination of `MyCompressedFile.PDF`; and the uncompressed source file, `MyRawFile.PDF`, would have a compressed destination of `MyRawFile.PDF.lzfse`.
 
-##### Perform streaming compression
+### Perform streaming compression
 
 The `streamingCompression(operation:sourceFileHandle:destinationFileHandle:algorithm:progressUpdateFunction:)` functions iterate over the source data and encodes or decodes data in blocks based on the length that `bufferSize` defines. The methods write the result into the destination buffer, and write the destination buffer data to the destination file handle. The Swift and C API functions have slightly different signatures.
 
@@ -144,7 +144,7 @@ if useSwiftAPI {
 }
 ```
 
-##### Create the output filter using the Swift API
+### Create the output filter using the Swift API
 
 The [`OutputFilter`](../Compression/outputfilter.md) instance specifies the operation and the compression algorithm.  The final initializer parameter is a closure the instance calls as it writes each encoded or decoded block of data to the destination file handler.
 
@@ -159,7 +159,7 @@ do {
     }
 ```
 
-##### Compress or decompress the dropped file using the Swift API
+### Compress or decompress the dropped file using the Swift API
 
 The Swift streaming compression function iterates over the source data and calls the [`readData(ofLength:)`](../Foundation/filehandle/readdata%28oflength%29.md) method to copy `bufferSize` chunks to `subdata`.
 
@@ -176,7 +176,7 @@ while true {
 }
 ```
 
-##### Create a destination buffer using the C API
+### Create a destination buffer using the C API
 
 The C API streaming compression function allocates the destination buffer based on the `bufferSize` constant.
 
@@ -187,7 +187,7 @@ defer {
 }
 ```
 
-##### Create a compression stream using the C API
+### Create a compression stream using the C API
 
 The [`compression_stream`](../Compression/compression_stream.md) structure defines the source and destination pointers and sizes.  The following code declares and initializes the compression stream:
 
@@ -216,7 +216,7 @@ streamPointer.pointee.dst_ptr = destinationBufferPointer
 streamPointer.pointee.dst_size = bufferSize
 ```
 
-##### Read the source file data iteratively using the C API
+### Read the source file data iteratively using the C API
 
 A `repeat-while` loop manages the read-encode/decode-write process. If the stream’s source size is zero, the code reads a block of data from the source file handle and points the stream’s source pointer to that data. If the read data is shorter than the buffer size, the code infers that it’s reading the last block of the source file and sets the stream’s status to [`COMPRESSION_STREAM_FINALIZE`](../Compression/compression_stream_finalize.md):
 
@@ -237,7 +237,7 @@ repeat {
     }
 ```
 
-##### Compress or decompress the dropped file using the C API
+### Compress or decompress the dropped file using the C API
 
 The [`compression_stream_process(_:_:)`](../Compression/compression_stream_process%28_,_%29.md) function encodes or decodes the current block.
 
@@ -256,7 +256,7 @@ if let sourceData = sourceData {
 
 On return, `destinationBufferPointer` points to the encoded or decoded data.
 
-##### Write encoded or decoded data to a destination file
+### Write encoded or decoded data to a destination file
 
 The following code checks the status that `compression_stream_process` returns. If the status is either [`COMPRESSION_STATUS_OK`](../Compression/compression_status_ok.md) or [`COMPRESSION_STATUS_END`](../Compression/compression_status_end.md), the code writes the destination data to the destination file handler:
 
@@ -283,7 +283,7 @@ switch status {
 
 This read-encode/decode-write loop continues while `status` equals `COMPRESSION_STATUS_OK`.
 
-##### Close the source and destination files
+### Close the source and destination files
 
 After the app has finished working with the source and destination file handles, it calls the [`closeFile()`](../Foundation/filehandle/closefile%28%29.md) method to close them.
 

@@ -5,7 +5,7 @@
 
 Adds a person’s last name to an element.
 
-#### Overview
+## Overview
 
 Here’s an example that sets the last name for a monogram.
 
@@ -17,11 +17,11 @@ Here’s an example that sets the last name for a monogram.
 </monogramLockup>
 ```
 
-##### Values for lastName
+### Values for lastName
 
 - **String**: The last name of a person.
 
-##### Elements that Use lastName
+### Elements that Use lastName
 
 - [monogram](./monogram.md)
 

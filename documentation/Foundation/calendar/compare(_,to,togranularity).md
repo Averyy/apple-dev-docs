@@ -21,7 +21,7 @@ Compares two dates down to the specified component.
 func compare(_ date1: Date, to date2: Date, toGranularity component: Calendar.Component) -> ComparisonResult
 ```
 
-#### Return Value
+## Return Value
 
 `.orderedSame` if the two dates are equal in the given component and all larger components; otherwise, either `.orderedAscending` or `.orderedDescending`.
 

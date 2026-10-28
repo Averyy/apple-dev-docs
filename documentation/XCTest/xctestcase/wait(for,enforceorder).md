@@ -16,7 +16,7 @@ func wait(for expectations: [XCTestExpectation], enforceOrder enforceOrderOfFulf
 - (void) waitForExpectations:(NSArray<XCTestExpectation *> *) expectations enforceOrder:(BOOL) enforceOrderOfFulfillment;
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**:  Use [`fulfillment(of:timeout:enforceOrder:)`](../xctwaiter/fulfillment%28of,timeout,enforceorder%29-swift.method.md) in Swift code requiring concurrency.
 

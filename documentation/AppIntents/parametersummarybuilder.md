@@ -27,7 +27,7 @@ enum ParameterSummaryBuilder<Intent> where Intent : AppIntent
 - [Adding parameters to an app intent](./adding-parameters-to-an-app-intent.md)
 - [Creating your first app intent](./creating-your-first-app-intent.md)
 
-#### Overview
+## Overview
 
 For more information about using parameters and providing a parameter summary, see [Provide an interactive parameter summary for your intent](./adding-parameters-to-an-app-intent.md#Provide-an-interactive-parameter-summary-for-your-intent).
 

@@ -23,11 +23,11 @@ class func radialGravityField(position: CGPoint) -> Self
 + (instancetype) radialGravityFieldWithPosition:(CGPoint) position;
 ```
 
-#### Return Value
+## Return Value
 
 A field behavior object that applies a gravitational force to items with mass.
 
-#### Discussion
+## Discussion
 
 This field creates a gravitational force at the specified point in the referenced coordinate system. Dynamic items with mass are attracted to the specified point with a force that is proportional to their distance from the point.
 

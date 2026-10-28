@@ -25,7 +25,7 @@ var shadowSampleCount: Int { get set }
 @property (nonatomic) NSUInteger shadowSampleCount;
 ```
 
-#### Discussion
+## Discussion
 
 SceneKit produces soft-edged shadows by rendering the silhouettes of scene geometry into a 2D shadow map and then using several weighted samples from the shadow map to determine the strength of the shadow at each pixel in the rendered scene. This property controls the number of samples from the shadow map used to render each pixel. Higher numbers result in smoother edges; lower numbers increase rendering performance.
 

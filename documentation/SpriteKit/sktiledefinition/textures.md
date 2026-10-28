@@ -25,7 +25,7 @@ var textures: [SKTexture] { get set }
 @property (nonatomic, copy) NSArray<SKTexture *> * textures;
 ```
 
-#### Discussion
+## Discussion
 
 If the tile is non-animated, this will be an array containing one textures.
 

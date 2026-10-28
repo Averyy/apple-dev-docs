@@ -23,7 +23,7 @@ var isTorchActive: Bool { get }
 @property (nonatomic, readonly, getter=isTorchActive) BOOL torchActive;
 ```
 
-#### Discussion
+## Discussion
 
 A torch must be present on the device and currently available before it can be active.
 

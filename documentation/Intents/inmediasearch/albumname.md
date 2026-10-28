@@ -32,7 +32,7 @@ var albumName: String? { get }
 @property (atomic, copy, readonly, nullable) NSString * albumName;
 ```
 
-#### Discussion
+## Discussion
 
 Only use this property for combination queries in conjunction with the [`mediaName`](./medianame.md) property. For example, “Play the song requestedSongName on the album requestedAlbumName by requestedArtistName”.
 

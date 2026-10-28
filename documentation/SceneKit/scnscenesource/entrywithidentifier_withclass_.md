@@ -21,11 +21,11 @@ Loads and returns a specific object in the scene source.
 - (id) entryWithIdentifier:(NSString *) uid withClass:(Class) entryClass;
 ```
 
-#### Return Value
+## Return Value
 
 A new SceneKit object containing the requested scene source entry, or `nil` if no such object exists in the scene source.
 
-#### Discussion
+## Discussion
 
 SceneKit recognizes objects of the following classes in scene files:
 

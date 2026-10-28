@@ -15,7 +15,7 @@ The names of the feature columns the activity classifier used during its trainin
 var featureColumns: [String]
 ```
 
-#### Discussion
+## Discussion
 
 Changing the value of this property doesn’t retrain the model or affect its behavior.
 

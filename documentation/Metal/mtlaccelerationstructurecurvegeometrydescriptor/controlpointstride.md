@@ -24,7 +24,7 @@ var controlPointStride: Int { get set }
 @property (nonatomic) NSUInteger controlPointStride;
 ```
 
-#### Discussion
+## Discussion
 
 The stride needs to be a multiple of the format element size you configure with the [`controlPointFormat`](./controlpointformat.md) property, and at least the format’s size. The default value is `0`, which indicates that the control point elements in the buffer have zero bytes of padding between them.
 

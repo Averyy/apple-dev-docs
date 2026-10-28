@@ -16,7 +16,7 @@ The current playback position in seconds.
 attribute unrestricted double currentTime;
 ```
 
-#### Discussion
+## Discussion
 
 When you set this property, the media play head moves to the new location. An `INVALID_STATE_ERR` DOM exception is raised if there is no selected media resource when you set this property. An `INDEX_SIZE_ERR` DOM exception is raised if the specified time is not within the start and end times.
 

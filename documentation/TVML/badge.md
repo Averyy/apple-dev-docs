@@ -4,7 +4,7 @@
 
 A small image displayed alongside or on top of another image.
 
-#### Overview
+## Overview
 
 The `badge` element contains a link to a small image that is displayed, often with another image. This element is commonly used to display images that provide additional information about the element in which they are contained. The following listing shows an example of a `badge` element.
 
@@ -12,7 +12,7 @@ The `badge` element contains a link to a small image that is displayed, often wi
 <badge src="Path to image" alt="additional identifier" accessibility="" />
 ```
 
-##### Contained In
+### Contained In
 
 - [buttonLockup](./buttonlockup.md)
 - [header](./header.md)

@@ -18,7 +18,7 @@ An event that indicates the state of a dock accessory’s current position and s
 struct MotionState
 ```
 
-#### Overview
+## Overview
 
 This event indicates the dock accessory’s current velocity and position along each supported axis of rotation. For more information, see [`motionStates`](./motionstates-swift.property.md).
 

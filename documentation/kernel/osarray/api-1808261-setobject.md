@@ -12,11 +12,11 @@ virtual bool setObject(
  const OSMetaClassBase *anObject);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the addition of `anObject` was successful, `false` if not.
 
-#### Overview
+## Overview
 
 The array adds storage to accomodate the new object, if necessary. If successfully added, the object is retained.
 

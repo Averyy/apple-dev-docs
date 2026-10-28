@@ -25,7 +25,7 @@ protocol MLBatchProvider
 @protocol MLBatchProvider
 ```
 
-#### Overview
+## Overview
 
 Similar to the [`MLFeatureProvider`](./mlfeatureprovider.md), this interface allows you to define your own batch provider. If you collect your data asynchronously or it is memory intensive, implement this protocol on your data structure to optimize performance with batch processing.
 

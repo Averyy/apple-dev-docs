@@ -24,7 +24,7 @@ class func begin()
 + (void) begin;
 ```
 
-#### Discussion
+## Discussion
 
 The transaction is nested within the thread’s current transaction, if there is one.
 

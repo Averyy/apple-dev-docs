@@ -24,7 +24,7 @@ func UIRectClip(_ rect: CGRect)
 extern void UIRectClip(CGRect rect);
 ```
 
-#### Discussion
+## Discussion
 
 Each call to this function permanently shrinks the clipping path of the current graphics context using the specified rectangle. You cannot use this function to expand the clipping region path. If the current graphics context is `nil`, this function does nothing.
 

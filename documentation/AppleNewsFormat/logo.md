@@ -21,13 +21,13 @@ object Logo
 - [Positioning the Content in Your Article](../AppleNews/positioning-the-content-in-your-article.md)
 - [Using HTML with Apple News Format](../AppleNews/using-html-with-apple-news-format.md)
 
-#### Discussion
+## Discussion
 
 Use the `logo` component to display an image that identifies a brand, company, or publication. (Other components are available for other types of images, such as [`Figure`](./figure.md), [`Portrait`](./portrait.md), and [`Photo`](./photo.md).)
 
 See [Preparing Image, Video, Audio, Music, and ARKit Assets](../AppleNews/preparing-image-video-audio-music-and-arkit-assets.md).
 
-##### Example
+### Example
 
 ```json
 {

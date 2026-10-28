@@ -25,7 +25,7 @@ var currentDirectoryPath: String { get }
 @property (copy, readonly) NSString * currentDirectoryPath;
 ```
 
-#### Discussion
+## Discussion
 
 The current directory path is the starting point for any relative paths you specify. For example, if the current directory is `/tmp` and you specify a relative pathname of `reports/info.txt`, the resulting full path for the item is `/tmp/reports/info.txt`.
 

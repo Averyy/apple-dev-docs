@@ -24,13 +24,13 @@ class UIAttachmentBehavior
 @interface UIAttachmentBehavior : UIDynamicBehavior
 ```
 
-#### Overview
+## Overview
 
 When two items are attached to each other, forces imparted on one item affect the movement of the other in a prescribed way. When an item is attached to an anchor point, the movement of that item is affected by its attachment to the specified anchor point. Some attachment behaviors support both two items and an anchor point.
 
 You specify type of attachment behavior you want at creation time. This class offers many creation and initialization methods, each of which creates a different type of attachment behavior, which cannot be changed later. However, you may change specific attributes of the attachment behavior using the properties of this class. For example, you can change the distance between two attached items or change the damping forces applied to the items.
 
-##### Applying an Attachment Behavior to Dynamic Items
+### Applying an Attachment Behavior to Dynamic Items
 
 To apply an attachment behavior to your dynamic items, do the following:
 

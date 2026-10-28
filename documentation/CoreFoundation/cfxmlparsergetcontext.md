@@ -15,7 +15,7 @@ Returns the context for an XML parser.
 extern void CFXMLParserGetContext(CFXMLParserRef parser, CFXMLParserContext *context);
 ```
 
-#### Discussion
+## Discussion
 
 If you set a context for the parser, it will be passed to you as a parameter in each of the parser callback functions. The context data structure is application defined and associated with a parser using one of the `CFXMLParserCreate...` functions.
 

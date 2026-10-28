@@ -16,11 +16,11 @@ Get max render quality the layer can use when drawing to the drawables.
 cp_render_quality_t cp_layer_renderer_configuration_get_max_render_quality(cp_layer_renderer_configuration_t configuration);
 ```
 
-#### Return Value
+## Return Value
 
 The max render qualityto use for the drawable’s.
 
-#### Discussion
+## Discussion
 
 The max render quality is a value between [0, 1]. This determines the max render quality at which drawing can happen.
 

@@ -20,7 +20,7 @@ Determines how “aggressive” the voice activity detection (VAD) model will be
 enum SensitivityLevel
 ```
 
-#### Overview
+## Overview
 
 [`SpeechDetector.SensitivityLevel.low`](./sensitivitylevel/low.md) will allow for a more “forgiving” VAD model, whereas selecting [`SpeechDetector.SensitivityLevel.high`](./sensitivitylevel/high.md) will make the model more aggressive. [`SpeechDetector.SensitivityLevel.medium`](./sensitivitylevel/medium.md) is the recommended level for most use cases.
 

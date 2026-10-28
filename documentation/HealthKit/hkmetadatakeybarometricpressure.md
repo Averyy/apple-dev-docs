@@ -24,7 +24,7 @@ let HKMetadataKeyBarometricPressure: String
 extern NSString * const HKMetadataKeyBarometricPressure;
 ```
 
-#### Discussion
+## Discussion
 
 This key takes an [`HKQuantity`](./hkquantity.md) value that measures the barometric pressure in units of pressure, such as [`atmosphere()`](./hkunit/atmosphere%28%29.md), [`pascal()`](./hkunit/pascal%28%29.md), or [`millimeterOfMercury()`](./hkunit/millimeterofmercury%28%29.md).
 

@@ -25,7 +25,7 @@ func index(atPosition position: Int) -> Int
 - (NSUInteger) indexAtPosition:(NSUInteger) position;
 ```
 
-#### Return Value
+## Return Value
 
 The index value at `node` or `NSNotFound` if the node is outside the range of the index path.
 

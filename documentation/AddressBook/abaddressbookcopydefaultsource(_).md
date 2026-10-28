@@ -23,11 +23,11 @@ func ABAddressBookCopyDefaultSource(_ addressBook: ABAddressBook!) -> Unmanaged<
 extern ABRecordRefABAddressBookCopyDefaultSource(ABAddressBookRef addressBook);
 ```
 
-#### Return Value
+## Return Value
 
 The default source record.
 
-#### Discussion
+## Discussion
 
 This is the source used when creating new records if no source is specified.
 

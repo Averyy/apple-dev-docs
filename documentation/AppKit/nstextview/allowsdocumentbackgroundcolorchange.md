@@ -19,7 +19,7 @@ var allowsDocumentBackgroundColorChange: Bool { get set }
 @property BOOL allowsDocumentBackgroundColorChange;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the receiver allows the background color to change, otherwise [`false`](../../Swift/false.md).
 

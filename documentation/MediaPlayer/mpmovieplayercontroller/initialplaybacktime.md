@@ -23,7 +23,7 @@ var initialPlaybackTime: TimeInterval { get set }
 @property (nonatomic) NSTimeInterval initialPlaybackTime;
 ```
 
-#### Discussion
+## Discussion
 
 For progressively downloaded content, playback starts at the closest key frame prior to the provided time. For video-on-demand content, playback starts at the nearest segment boundary to the provided time. For live video streams, the playback start time is measured from the start of the current playlist and is rounded to the nearest segment boundary.
 

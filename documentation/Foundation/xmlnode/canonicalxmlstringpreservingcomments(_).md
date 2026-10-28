@@ -20,7 +20,7 @@ func canonicalXMLStringPreservingComments(_ comments: Bool) -> String
 - (NSString *) canonicalXMLStringPreservingComments:(BOOL) comments;
 ```
 
-#### Discussion
+## Discussion
 
 Be sure to set the input option [`nodePreserveWhitespace`](./options/nodepreservewhitespace.md) for true canonical form. The canonical form of an XML document is defined by the World Wide Web Consortium at `http://www.w3.org/TR/xml-c14n`. Generally, if two documents with varying physical representations have the same canonical form, then they are considered logically equivalent within the given application context. The following list summarizes most key aspects of canonical form as defined by the W3C recommendation:
 

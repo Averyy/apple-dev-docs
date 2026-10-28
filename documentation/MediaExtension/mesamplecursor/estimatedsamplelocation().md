@@ -19,11 +19,11 @@ optional func estimatedSampleLocation() throws -> MEEstimatedSampleLocation
 - (MEEstimatedSampleLocation *) estimatedSampleLocationReturningError:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 An object that provides information about the estimated sample location.
 
-#### Discussion
+## Discussion
 
 Some formats may need to read some data on a per-sample basis to produce the exact sample location. For these formats, it’s more efficient to read a larger chunk of data that contains both the data to produce the exact sample location and the actual sample data.
 

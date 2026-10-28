@@ -19,7 +19,7 @@ func canDragRows(with rowIndexes: IndexSet, at mouseDownPoint: NSPoint) -> Bool
 - (BOOL) canDragRowsWithIndexes:(NSIndexSet *) rowIndexes atPoint:(NSPoint) mouseDownPoint;
 ```
 
-#### Return Value
+## Return Value
 
 [`false`](../../Swift/false.md) to disallow the drag.
 

@@ -19,7 +19,7 @@ var isDrawingFindIndicator: Bool { get }
 @property (readonly, getter=isDrawingFindIndicator) BOOL drawingFindIndicator;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) when the view contents are being drawn so that they are easily readable against the find indicator background. The default value of this property is [`false`](../../Swift/false.md).
 

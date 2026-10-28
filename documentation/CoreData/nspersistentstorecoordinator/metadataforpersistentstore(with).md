@@ -23,11 +23,11 @@ class func metadataForPersistentStore(with url: URL) throws -> [AnyHashable : An
 + (NSDictionary *) metadataForPersistentStoreWithURL:(NSURL *) url error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary containing the metadata for the persistent store at `url`. If no store is found, or there is a problem accessing its contents, returns `nil`. The keys guaranteed to be in this dictionary are `NSStoreTypeKey` and `NSStoreUUIDKey`.
 
-#### Discussion
+## Discussion
 
 This method allows you to access the metadata in a persistent store without initializing a Core Data stack.
 

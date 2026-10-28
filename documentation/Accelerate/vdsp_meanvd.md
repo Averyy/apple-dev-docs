@@ -21,7 +21,7 @@ Calculates the mean value of a double-precision vector.
 extern void vDSP_meanvD(const double *__A, vDSP_Stride __IA, double *__C, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This function calculates the mean value of the first `N` elements of the input vector and writes the result to the output scalar parameter, `C`.
 

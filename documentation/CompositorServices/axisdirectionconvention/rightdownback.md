@@ -20,7 +20,7 @@ case rightDownBack
 cp_axis_direction_convention_right_down_back
 ```
 
-#### Discussion
+## Discussion
 
 This convention positions the left-most pixel at the left edge of the view and the top-most pixel at the bottom edge of the view, and the system renders with a counterclockwise winding order.
 

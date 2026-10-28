@@ -12,11 +12,11 @@ IOReturn powerOverrideOnPriv(
  void );
 ```
 
-#### Return Value
+## Return Value
 
 A return code that can be ignored by the caller.
 
-#### Overview
+## Overview
 
 Power management normally keeps a device at the highest state required by its requests via changePowerStateTo, changePowerStateToPriv, and its children. However, a driver may ensure a lower power state than otherwise required by itself and its children using `powerOverrideOnPriv`. When the override is on, power management keeps the device's power state in the state specified by `changePowerStateToPriv`. Turning on the override will initiate a power change if the driver's `changePowerStateToPriv` desired power state is different from the maximum of the `changePowerStateTo` desired power state and the children's desires.
 

@@ -24,7 +24,7 @@ static func fixedLayout(width: CGFloat, height: CGFloat) -> PreviewTrait<T>
 
 Available when `T` is `Preview.ViewTraits`.
 
-#### Discussion
+## Discussion
 
 This is the same as [`PreviewLayout.fixed(width:height:)`](../previewlayout/fixed%28width,height%29.md).
 

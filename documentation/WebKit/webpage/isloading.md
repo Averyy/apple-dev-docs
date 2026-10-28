@@ -20,7 +20,7 @@ Indicates whether the webpage is currently loading content.
 final var isLoading: Bool { get }
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the page is still loading content, otherwise, `false`.
 

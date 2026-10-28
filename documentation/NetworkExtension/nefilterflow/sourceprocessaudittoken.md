@@ -19,7 +19,7 @@ var sourceProcessAuditToken: Data? { get }
 @property (readonly, nullable) NSData * sourceProcessAuditToken;
 ```
 
-#### Discussion
+## Discussion
 
 In cases where a system process creates the connection on behalf of a source app, this value is different from [`sourceAppAuditToken`](./sourceappaudittoken.md). In cases where the source app directly creates the connection, these values are identical.
 

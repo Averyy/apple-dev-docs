@@ -24,7 +24,7 @@ func add(_ nodes: [GKGraphNode])
 - (void) addNodes:(NSArray<GKGraphNode *> *) nodes;
 ```
 
-#### Discussion
+## Discussion
 
 Calling this method does not connect the newly added nodes to others in the graph.
 

@@ -5,7 +5,7 @@
 
 Create sets of app screenshots for an app custom product page localization.
 
-#### Overview
+## Overview
 
 An `appScreenshotSets` resource represents a set of screenshots that you intend to upload to App Store Connect. Create an appScreenshotSets resource as a container for all screenshots associated with a locale and display target, for example, screenshots for Simplified Chinese on an iPhone with a 6.5-inch display. Next, upload individual screenshots using the [App Screenshots](./app-screenshots.md) resource.
 

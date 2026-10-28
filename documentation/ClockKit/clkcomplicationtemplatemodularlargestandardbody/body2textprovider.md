@@ -22,7 +22,7 @@ var body2TextProvider: CLKTextProvider? { get set }
 @property (nonatomic, copy, nullable) CLKTextProvider * body2TextProvider;
 ```
 
-#### Discussion
+## Discussion
 
 If you don’t specify a value for this property, the text in the [`body1TextProvider`](./body1textprovider.md) property wraps and is displayed on the second line.
 

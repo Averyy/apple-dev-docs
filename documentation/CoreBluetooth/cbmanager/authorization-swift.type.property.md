@@ -25,7 +25,7 @@ class var authorization: CBManagerAuthorization { get }
 @property (class, nonatomic, assign, readonly) CBManagerAuthorization authorization;
 ```
 
-#### Discussion
+## Discussion
 
 Check this property in your implementation of the delegate methods [`centralManagerDidUpdateState(_:)`](../cbcentralmanagerdelegate/centralmanagerdidupdatestate%28_%29.md) and [`peripheralManagerDidUpdateState(_:)`](../cbperipheralmanagerdelegate/peripheralmanagerdidupdatestate%28_%29.md) to determine whether your app can use Core Bluetooth. You can also use it to check the app’s authorization status before creating a [`CBManager`](../cbmanager.md) instance.
 

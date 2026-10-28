@@ -23,7 +23,7 @@ func transition(from fromViewController: UIViewController, to toViewController: 
 - (void) transitionFromViewController:(UIViewController *) fromViewController toViewController:(UIViewController *) toViewController duration:(NSTimeInterval) duration options:(UIViewAnimationOptions) options animations:(void (^)()) animations completion:(void (^)(BOOL finished)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This method adds the second view controller’s view to the view hierarchy and then performs the animations defined in your animations block. After the animation completes, it removes the first view controller’s view from the view hierarchy.
 

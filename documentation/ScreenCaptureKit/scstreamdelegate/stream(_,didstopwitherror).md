@@ -24,7 +24,7 @@ optional func stream(_ stream: SCStream, didStopWithError error: any Error)
 - (void) stream:(SCStream *) stream didStopWithError:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**:  When the `error` parameter has the code [`SCStreamError.Code.userStopped`](../scstreamerror/code/userstopped.md), the user took an intentional action to cancel the stream. Treat errors of this type as expected and recoverable failures.
 

@@ -25,7 +25,7 @@ var numberOfMediaRequests: Int { get }
 @property (nonatomic, readonly) NSInteger numberOfMediaRequests;
 ```
 
-#### Discussion
+## Discussion
 
 For HTTP live streaming, this property contains the count of media requests downloaded from the server. For progressive-style HTTP media downloads, it contains a count of HTTP `GET` (byte-range) requests for the resource.
 

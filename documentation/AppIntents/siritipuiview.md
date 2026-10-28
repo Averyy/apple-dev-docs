@@ -18,7 +18,7 @@ A view that displays the phrase a person uses to invoke an App Shortcut.
 @objc @preconcurrency final class SiriTipUIView
 ```
 
-#### Overview
+## Overview
 
 You must call [`setIntent(intent:)`](./siritipuiview/setintent%28intent%29.md) before displaying the view.
 

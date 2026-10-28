@@ -21,7 +21,7 @@ The number of bytes from the start of one instance of `T` to the start of the ne
 static var stride: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 This is the same as the number of bytes moved when an `UnsafePointer<T>` instance is incremented. `T` may have a lower minimal alignment that trades runtime performance for space efficiency. This value is always positive.
 

@@ -16,7 +16,7 @@ The configuration options per experience.
 final var configuration: AVExperienceController.Configuration
 ```
 
-#### Discussion
+## Discussion
 
 You may modify the configuration at any time, but after the [`experienceController(_:prepareForTransitionUsing:)`](./delegate-swift.protocol/experiencecontroller%28_,preparefortransitionusing%29.md) delegate callback returns, the system copies the configuration and uses it for the ensuing transition. Further modifications affect subsequent transitions.
 

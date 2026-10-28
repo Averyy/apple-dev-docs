@@ -19,7 +19,7 @@ Creates a tensor with the shape and random initializer type you specify.
 + (instancetype) tensorWithShape:(NSArray<NSNumber *> *) shape randomInitializerType:(MLCRandomInitializerType) randomInitializerType;
 ```
 
-#### Return Value
+## Return Value
 
 A tensor.
 

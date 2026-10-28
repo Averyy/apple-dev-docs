@@ -22,7 +22,7 @@ class let indexSearch: String
 extern NSString * const UITableViewIndexSearch;
 ```
 
-#### Discussion
+## Discussion
 
 If the data source includes this constant string in the array of strings it returns in [`sectionIndexTitles(for:)`](../uitableviewdatasource/sectionindextitles%28for%29.md), the section index displays a magnifying glass icon at the corresponding index location. This location should generally be the first title in the index.
 

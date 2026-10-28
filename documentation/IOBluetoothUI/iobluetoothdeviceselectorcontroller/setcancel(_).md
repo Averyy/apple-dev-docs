@@ -19,7 +19,7 @@ func setCancel(_ prompt: String!)
 - (void) setCancel:(NSString *) prompt;
 ```
 
-#### Discussion
+## Discussion
 
 The prompt text should be localized for best user experience.
 

@@ -21,7 +21,7 @@ The classification identifiers supported by the request.
 var supportedIdentifiers: [String]? { get }
 ```
 
-#### Discussion
+## Discussion
 
 This returns `nil` if the configuration isn’t supported.
 

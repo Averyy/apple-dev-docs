@@ -17,11 +17,11 @@ Repeat an array along a specified axis.
 func `repeat`(_ array: MLXArray, count: Int, axis: Int, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: Deprected in favor of the more consistently named [`repeated(_:count:axis:stream:)`](./repeated%28_,count,axis,stream%29.md)
 
-##### See Also
+### See Also
 
 - [Initialization](./initialization.md)
 - [`repeated(_:count:stream:)`](./repeated%28_,count,stream%29.md)

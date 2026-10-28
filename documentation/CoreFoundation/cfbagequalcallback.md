@@ -25,11 +25,11 @@ typealias CFBagEqualCallBack = (UnsafeRawPointer?, UnsafeRawPointer?) -> DarwinB
 typedef unsigned char (*)(const void *, const void *) CFBagEqualCallBack;
 ```
 
-#### Return Value
+## Return Value
 
 `true` if `value1` and `value2` are equal, `false` otherwise.
 
-#### Discussion
+## Discussion
 
 This callback is passed to [`CFBagCreate(_:_:_:_:)`](./cfbagcreate%28_,_,_,_%29.md) in a [`CFBagCallBacks`](./cfbagcallbacks.md) structure.
 

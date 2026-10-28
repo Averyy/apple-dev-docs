@@ -4,7 +4,7 @@
 
 Specifies standard options for Unicode string comparison.
 
-#### Overview
+## Overview
 
 For descriptions of other collation options, see  [`UCCollateOptions`](../../uccollateoptions.md). 
 

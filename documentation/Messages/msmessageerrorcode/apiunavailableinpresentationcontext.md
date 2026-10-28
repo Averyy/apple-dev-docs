@@ -25,7 +25,7 @@ MSMessageErrorCodeAPIUnavailableInPresentationContext
 
 - [Adding Sticker packs and iMessage apps to the system Stickers app, Messages camera, and FaceTime](../adding-sticker-packs-and-imessage-apps-to-the-system-stickers-app-messages-camera-and-facetime.md)
 
-#### Discussion
+## Discussion
 
 Different contexts may support only a subset of the Message framework API. For more information, see the [`MSMessagesAppViewController`](../msmessagesappviewcontroller.md) class’s [`presentationContext`](../msmessagesappviewcontroller/presentationcontext.md) property and the [`MSMessagesAppPresentationContext.media`](../msmessagesapppresentationcontext/media.md) constant.
 

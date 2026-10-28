@@ -21,11 +21,11 @@ Activates a session so you can send messages.
 extern bool xpc_session_activate(xpc_session_t session, xpc_rich_error_t*error_out);
 ```
 
-#### Return Value
+## Return Value
 
 `YES` if the session was activated; otherwise `NO`.
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  Don’t call [`xpc_session_activate`](./xpc_session_activate.md) with a session that’s already active.
 

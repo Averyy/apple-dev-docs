@@ -32,7 +32,7 @@ var supportedChannelLayoutTags: [NSNumber]? { get }
 @property (atomic, copy, readonly, nullable) NSArray<NSNumber *> * supportedChannelLayoutTags;
 ```
 
-#### Discussion
+## Discussion
 
 The array contains [`NSNumber`](../../Foundation/nsnumber.md) objects representing [`AudioChannelLayoutTag`](../../CoreAudioTypes/audiochannellayouttag.md) values.
 

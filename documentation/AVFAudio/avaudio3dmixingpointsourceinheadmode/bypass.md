@@ -24,7 +24,7 @@ case bypass
 AVAudio3DMixingPointSourceInHeadModeBypass
 ```
 
-#### Discussion
+## Discussion
 
 This option enables transitions between traditional, nonspatialized rendering and spatialized sources outside of the listener’s head.
 

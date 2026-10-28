@@ -5,7 +5,7 @@
 
 Send custom messages and data between devices to synchronize content for your activity, and incorporate messages your app receives from other participants.
 
-#### Overview
+## Overview
 
 During a typical activity, you want the content one participant sees on their device to match the content other participants see. To make this happen, share data between devices to keep those devices in sync. For example, a drawing app might share the tool state and coordinate points for pen strokes. You then incorporate that shared data into your app, recreating the content that other participants created on their devices.
 
@@ -13,7 +13,7 @@ When an activity-related session is active, share data among participants using 
 
 > **Note**: The [AVFoundation](../AVFoundation/AVFoundation.md) framework supports the synchronization of movie playback without custom messages. For more information, see [Supporting coordinated media playback](../AVFoundation/supporting-coordinated-media-playback.md).
 
-##### Define the messages to send
+### Define the messages to send
 
 During the creation of an activity, think about what information you need to share among participants:
 
@@ -34,7 +34,7 @@ struct PenStrokeMessage: Codable {
 
 When you need to send photos, videos, audio, or other large data types, encode that information into a type that adopts the [`Transferable`](../CoreTransferable/transferable.md) protocol. The [`GroupSessionJournal`](./groupsessionjournal.md) object requires this protocol when sending types.
 
-##### Send a message to one or more participants
+### Send a message to one or more participants
 
 When the person running your app on their device makes activity-related changes, send those changes to other affected participants using a [`GroupSessionMessenger`](./groupsessionmessenger.md) object. When you send data, you’re actually sending it from one instance of your app to another instance of your app on a different device. The [`GroupSessionMessenger`](./groupsessionmessenger.md) object delivers the data over the network to the part of your app configured to receive that data.
 
@@ -59,7 +59,7 @@ messenger.send(ReadyStateMessage(ready: true), to: .only(everyoneElse)) { error 
 }
 ```
 
-##### Receive messages from other participants
+### Receive messages from other participants
 
 Messages targeting the current participant can arrive at any time, so it’s best to use a separate task to listen for them. The [`GroupSessionMessenger`](./groupsessionmessenger.md) object delivers messages using an [`AsyncSequence`](../Swift/asyncsequence.md), which makes it easy to receive those messages asynchronously. Respond to incoming messages as quickly as possible by updating your app’s data structures to include the new information.
 
@@ -75,7 +75,7 @@ var task = Task {
 
 Create separate tasks to monitor each distinct message type your activity supports. If you have multiple activities, and each one has multiple messages, this results in multiple separate tasks. However, each task runs only when messages are available.
 
-##### Share files among participants
+### Share files among participants
 
 To share files and other large data objects with participants of an activity, use a [`GroupSessionJournal`](./groupsessionjournal.md) object instead of a [`GroupSessionMessenger`](./groupsessionmessenger.md). A [`GroupSessionJournal`](./groupsessionjournal.md) object lets you associate multiple data objects or files with the activity as attachments to the session. The size limit for attachments is 100 megabytes, and the system provides end-to-end encryption for your data.
 

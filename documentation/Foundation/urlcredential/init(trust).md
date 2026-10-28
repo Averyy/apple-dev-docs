@@ -25,11 +25,11 @@ init(trust: SecTrust)
 - (instancetype) initWithTrust:(SecTrustRef) trust;
 ```
 
-#### Return Value
+## Return Value
 
 A new URL credential object, containing the provided server trust.
 
-#### Discussion
+## Discussion
 
 Before your implementation of [`urlSession(_:task:didReceive:completionHandler:)`](../urlsessiontaskdelegate/urlsession%28_,task,didreceive,completionhandler%29.md) uses this initializer to create a server trust credential, you are responsible for evaluating the received [`SecTrust`](../../Security/sectrust.md) instance. You get this [`serverTrust`](../urlprotectionspace/servertrust.md) from the [`protectionSpace`](../urlauthenticationchallenge/protectionspace.md) of the [`URLAuthenticationChallenge`](../urlauthenticationchallenge.md) parameter that is passed to your delegate method. Pass the trust instance to [`SecTrustEvaluate(_:_:)`](../../Security/sectrustevaluate%28_,_%29.md) to evaluate it. If this call indicates the trust is invalid, you should cancel the challenge by passing the [`URLSession.AuthChallengeDisposition.cancelAuthenticationChallenge`](../urlsession/authchallengedisposition/cancelauthenticationchallenge.md) disposition to the completion handler.
 

@@ -20,7 +20,7 @@ case accountItemAttr
 kSecAccountItemAttr
 ```
 
-#### Discussion
+## Discussion
 
 You use this tag to set or get a string that represents the user account. It also applies to generic, Internet, and AppleShare password items. Keychain strings should use UTF-8 encoding.
 

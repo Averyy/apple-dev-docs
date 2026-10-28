@@ -25,7 +25,7 @@ static let toXMLHex: StringTransform
 extern NSStringTransform const NSStringTransformToXMLHex;
 ```
 
-#### Discussion
+## Discussion
 
 This transformation is reversible.
 

@@ -5,13 +5,13 @@
 
 Learn about important changes to LightweightCodeRequirements.
 
-#### Overview
+## Overview
 
 Browse notable changes in [LightweightCodeRequirements](../LightweightCodeRequirements/LightweightCodeRequirements.md).
 
-#### June 2024
+## June 2024
 
-##### General
+### General
 
 - Use fields on [`ValidationResult`](../LightweightCodeRequirements/validationresult.md) to find out whether a code file has a valid signature, and whether the signature satisfies your lightweight code requirement.
 - Combine multiple [`EntitlementsQuery`](../LightweightCodeRequirements/entitlementsquery.md) constraints using the `anyOf` and `allOf` operators.

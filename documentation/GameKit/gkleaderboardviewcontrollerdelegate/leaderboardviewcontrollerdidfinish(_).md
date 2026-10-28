@@ -24,7 +24,7 @@ func leaderboardViewControllerDidFinish(_ viewController: GKLeaderboardViewContr
 - (void) leaderboardViewControllerDidFinish:(GKLeaderboardViewController *) viewController;
 ```
 
-#### Discussion
+## Discussion
 
 Your delegate should dismiss the view controller. If your game paused any gameplay or other activities, it can restart those services in this method.
 

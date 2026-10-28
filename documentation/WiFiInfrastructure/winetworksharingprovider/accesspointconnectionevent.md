@@ -17,7 +17,7 @@ An event that indicates an update to the available shared access points.
 struct AccessPointConnectionEvent
 ```
 
-#### Discussion
+## Discussion
 
 An `AccessPointConnectionEvent` provides a snapshot of changes to one or more of the currently connected access points that might require action from your app extension. Each event contains the complete list of access points to which the host is currently connected; your app may share this list with your accessory.
 

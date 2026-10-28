@@ -16,7 +16,7 @@ Creates a hosting controller object from the contents of the specified archive.
 @preconcurrency required dynamic init?(coder: NSCoder)
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation of this method throws an exception. To create your view controller from an archive, override this method and initialize the superclass using the [`init(coder:rootView:)`](./init%28coder,rootview%29.md) method instead.
 

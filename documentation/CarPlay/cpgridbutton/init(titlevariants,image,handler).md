@@ -21,7 +21,7 @@ convenience init(titleVariants: [String], image: UIImage, handler: ((CPGridButto
 - (instancetype) initWithTitleVariants:(NSArray<NSString *> *) titleVariants image:(UIImage *) image handler:(void (^)(CPGridButton *gridButton)) handler;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized grid button.
 

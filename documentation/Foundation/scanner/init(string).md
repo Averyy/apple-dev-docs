@@ -25,7 +25,7 @@ init(string: String)
 - (instancetype) initWithString:(NSString *) string;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSScanner` object initialized to scan `aString` from the beginning. The returned object might be different than the original receiver.
 

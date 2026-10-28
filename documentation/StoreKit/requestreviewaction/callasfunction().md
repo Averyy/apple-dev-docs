@@ -20,7 +20,7 @@ Tells StoreKit to ask the user to rate or review your app, if appropriate.
 func callAsFunction()
 ```
 
-#### Discussion
+## Discussion
 
 Don’t call this method directly. SwiftUI calls it when you call the [`RequestReviewAction`](../requestreviewaction.md) instance that you get from the [`requestReview`](../../SwiftUI/environmentvalues/requestreview.md) environment value.
 

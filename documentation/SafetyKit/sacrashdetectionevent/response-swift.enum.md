@@ -23,7 +23,7 @@ enum Response
 enum SACrashDetectionEventResponse : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 The Crash Detection event response indicates whether the system attempted to dial the Emergency SOS - Call After Severe Crash provider, depending on the setting in the Settings app.
 

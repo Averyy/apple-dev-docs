@@ -19,7 +19,7 @@ func setIsMiniaturized(_ flag: Bool)
 - (void) setIsMiniaturized:(BOOL) flag;
 ```
 
-#### Discussion
+## Discussion
 
 Depending on the current miniaturized state and the value of `flag`, the window may minimize to the Dock or expand from the Dock.
 

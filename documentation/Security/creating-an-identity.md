@@ -5,7 +5,7 @@
 
 Create an identity from a certificate and private key.
 
-#### Overview
+## Overview
 
 In macOS, you can create an identity as a combination of a certificate and a private key. You begin by obtaining a certificate reference in one of the ways described in [Getting a Certificate](./getting-a-certificate.md). You then supply that reference to the [`SecIdentityCreateWithCertificate(_:_:_:)`](./secidentitycreatewithcertificate%28_,_,_%29.md) function:
 

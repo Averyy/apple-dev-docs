@@ -24,7 +24,7 @@ func sessionControlsWillExitFullscreenAppearance(_ session: AVCaptureSession)
 - (void) sessionControlsWillExitFullscreenAppearance:(AVCaptureSession *) session;
 ```
 
-#### Discussion
+## Discussion
 
 When your app receives this callback, it should resume showing portions of the interface it hid when controls entered a fullscreen appearance.
 

@@ -25,11 +25,11 @@ convenience init(attributedText: NSAttributedString?)
 + (instancetype) labelNodeWithAttributedText:(NSAttributedString *) attributedText;
 ```
 
-#### Return Value
+## Return Value
 
 A lable initialized from attributed text.
 
-#### Discussion
+## Discussion
 
 ## Parameters
 

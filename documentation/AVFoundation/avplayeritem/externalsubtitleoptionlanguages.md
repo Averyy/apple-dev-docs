@@ -13,7 +13,7 @@
 @property (nonatomic, copy) NSArray<NSString *> * externalSubtitleOptionLanguages;
 ```
 
-#### Discussion
+## Discussion
 
 An array of BCP 47 language codes that supplements the list of subtitle options that will be presented to the user.
 

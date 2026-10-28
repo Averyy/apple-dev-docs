@@ -20,7 +20,7 @@ object ImageFill
 - [Applying a Background to a Component](../AppleNews/applying-a-background-to-a-component.md)
 - [Preparing Image, Video, Audio, Music, and ARKit Assets](../AppleNews/preparing-image-video-audio-music-and-arkit-assets.md)
 
-#### Discussion
+## Discussion
 
 Use the `ImageFill` object to fill a component with a background image.
 
@@ -38,11 +38,11 @@ For more information about the use of `cw`, see [Specifying Measurements for Com
 
 You can use this object in [`ComponentStyle`](./componentstyle.md).
 
-##### Create a Layered Effect with a Background
+### Create a Layered Effect with a Background
 
 You can create a layered or collage effect by using a background image with a header container component. Create a header that contains the other components you want in the top section of your article, such as the `title` and `intro`, and then apply a background image to the `header` component. All content in the `header` component appears in front of the background, creating a layered effect.
 
-##### Set a Fixed Image Fill
+### Set a Fixed Image Fill
 
 One of the most captivating effects in Apple News Format is the fixed image fill. With this background, the image stays still as a person scrolls, with the rest of the content in the article seeming to move independently of the image. As long as any part of the component containing the image is visible in the viewport, the image remains still.
 
@@ -52,7 +52,7 @@ To create this effect, use a [`ComponentStyle`](./componentstyle.md) object with
 
 > 💡 **Tip**:  Use structural container components (such as `header`, `section`, and `container`) to have more control over backgrounds in your article. For example, you can specify backgrounds for the components inside the container as well as for the container itself.
 
-##### Example
+### Example
 
 ```json
 {

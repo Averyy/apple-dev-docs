@@ -19,7 +19,7 @@ An intent schema that moves existing files or folders.
 var moveFiles: some AppSchemaIntent { get }
 ```
 
-#### Discussion
+## Discussion
 
 To make your app’s actions available to Apple Intelligence, conform your [`AppIntent`](../../appintent.md) to a schema that describes your action to the system. If your app’s functionality aligns with the `files` domain and one of your app’s actions matches the `moveFiles` schema, you can generate the properties and protocol conformance the schema requires for your intent implementation with the `@AppIntent( .files.moveFiles)` Swift macro. To make your app work with Siri, see [Apple Intelligence and Siri AI](../../apple-intelligence-and-siri-ai.md).
 

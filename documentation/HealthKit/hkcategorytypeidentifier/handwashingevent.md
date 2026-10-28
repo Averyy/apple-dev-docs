@@ -24,7 +24,7 @@ static let handwashingEvent: HKCategoryTypeIdentifier
 extern HKCategoryTypeIdentifier const HKCategoryTypeIdentifierHandwashingEvent;
 ```
 
-#### Discussion
+## Discussion
 
 Use this type to read or share handwashing events. When creating a handwashing event sample, set the value to [`HKCategoryValue.notApplicable`](../hkcategoryvalue/notapplicable.md), and set the duration by specifying different start and end dates. The Health app uses the sample’s duration to determine if the handwashing event completed.
 

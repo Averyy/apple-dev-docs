@@ -20,7 +20,7 @@ The current processing state of a face group analyzer.
 enum State
 ```
 
-#### Overview
+## Overview
 
 This type describes whether the analyzer’s face cluster assignments are up to date. Read [`state`](./state-swift.property.md) to check the current value before deciding whether to call [`update(subprogress:)`](./update%28subprogress%29.md).
 

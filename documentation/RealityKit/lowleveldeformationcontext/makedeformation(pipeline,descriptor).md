@@ -18,7 +18,7 @@ Creates a deformation bound to a compiled pipeline.
 final func makeDeformation(pipeline: LowLevelDeformation.Pipeline, descriptor: LowLevelDeformation.Descriptor) throws -> LowLevelDeformation
 ```
 
-#### Discussion
+## Discussion
 
 The pipeline must originate from this context.
 

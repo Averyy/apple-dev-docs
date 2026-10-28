@@ -29,7 +29,7 @@ func deactivateTextTrack(with params: MTRMediaPlaybackClusterDeactivateTextTrack
 - (void) deactivateTextTrackWithParams:(MTRMediaPlaybackClusterDeactivateTextTrackParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This command is used to deactivate a specific Text Track for the media being played.
 

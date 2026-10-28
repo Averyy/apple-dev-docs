@@ -23,11 +23,11 @@ mutating func popFirst() -> Self.Element?
 
 Available when `Self` is `Self.SubSequence`.
 
-#### Return Value
+## Return Value
 
 The first element of the collection if the collection is not empty; otherwise, `nil`.
 
-#### Discussion
+## Discussion
 
 > **Complexity**: O(1)
 

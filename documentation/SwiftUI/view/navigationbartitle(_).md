@@ -35,7 +35,7 @@ nonisolated
 func navigationBarTitle<S>(_ title: S) -> some View where S : StringProtocol
 ```
 
-#### Discussion
+## Discussion
 
 Use `navigationBarTitle(_:)` to set the title of the navigation bar. This modifier only takes effect when this view is inside of and visible within a [`NavigationView`](../navigationview.md).
 

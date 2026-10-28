@@ -20,7 +20,7 @@ enum AltitudeSource
 enum ARAltitudeSource : NSInteger;
 ```
 
-#### Discussion
+## Discussion
 
 Each altitude source has unique performance and accuracy characteristics.
 

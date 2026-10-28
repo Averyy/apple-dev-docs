@@ -32,7 +32,7 @@ class PHPhotoLibrary
 - [Fetching Objects and Requesting Changes](../PhotoKit/fetching-objects-and-requesting-changes.md)
 - [Observing Changes in the Photo Library](../PhotoKit/observing-changes-in-the-photo-library.md)
 
-#### Overview
+## Overview
 
 The object represents the entire set of assets and collections that the Photos app manages, including assets stored on the local device and those stored in iCloud Photos. Use this object for the following tasks:
 

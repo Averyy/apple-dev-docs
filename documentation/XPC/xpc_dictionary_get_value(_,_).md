@@ -25,11 +25,11 @@ func xpc_dictionary_get_value(_ xdict: xpc_object_t, _ key: UnsafePointer<CChar>
 extern xpc_object_txpc_dictionary_get_value(xpc_object_t xdict, const char *key);
 ```
 
-#### Return Value
+## Return Value
 
 The object for the specified key within the dictionary. NULL if there is no value associated with the specified key.
 
-#### Discussion
+## Discussion
 
 This method does not grant the caller a reference to the underlying object, and thus the caller is not responsible for releasing the object.
 

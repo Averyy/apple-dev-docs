@@ -20,7 +20,7 @@ Whether to account for multiple scattering between microfacets.
 var isMultiscatteringEnabled: Bool
 ```
 
-#### Discussion
+## Discussion
 
 Improves accuracy at the cost of performance, particularly for rough surfaces.
 

@@ -24,11 +24,11 @@ convenience init(rect: CGRect)
 + (instancetype) bezierPathWithRect:(CGRect) rect;
 ```
 
-#### Return Value
+## Return Value
 
 A new path object with the rectangular path.
 
-#### Discussion
+## Discussion
 
 This method creates a closed subpath by starting at the origin of `rect` and adding line segments in a clockwise direction (relative to the default coordinate system).
 

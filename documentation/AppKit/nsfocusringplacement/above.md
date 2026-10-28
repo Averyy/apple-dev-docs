@@ -19,7 +19,7 @@ case above
 NSFocusRingAbove
 ```
 
-#### Discussion
+## Discussion
 
 Fill a shape to add the focus ring around the shape.
 

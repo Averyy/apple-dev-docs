@@ -23,7 +23,7 @@ func register(_ viewClass: AnyClass?, forDecorationViewOfKind elementKind: Strin
 - (void) registerClass:(Class) viewClass forDecorationViewOfKind:(NSString *) elementKind;
 ```
 
-#### Discussion
+## Discussion
 
 This method gives the layout object a chance to register a decoration view for use in the collection view. Decoration views provide visual adornments to a section or to the entire collection view but are not otherwise tied to the data provided by the collection view’s data source.
 

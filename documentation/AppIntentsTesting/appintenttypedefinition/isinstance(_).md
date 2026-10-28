@@ -22,7 +22,7 @@ Validates that the provided value matches this definition’s type.
 func isInstance(_ value: Self.Instance) throws
 ```
 
-#### Discussion
+## Discussion
 
 If validation fails, this method throws an error.
 

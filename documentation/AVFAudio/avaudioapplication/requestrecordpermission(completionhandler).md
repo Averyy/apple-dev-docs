@@ -29,7 +29,7 @@ class func requestRecordPermission() async -> Bool
 + (void) requestRecordPermissionWithCompletionHandler:(void (^)(BOOL granted)) response;
 ```
 
-#### Discussion
+## Discussion
 
 Recording audio requires explicit permission from the user. The first time your app attempts to record audio input, the system automatically prompts the user for permission. You can also explicitly ask for permission by calling this method. This method returns immediately, but the system waits for user input if the user hasn’t previously granted or denied recording permission.
 

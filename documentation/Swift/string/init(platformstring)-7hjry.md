@@ -21,7 +21,7 @@ Creates a string by interpreting the null-terminated platform string as UTF-8 on
 init(platformString: [CInterop.PlatformChar])
 ```
 
-#### Discussion
+## Discussion
 
 - Note It is a precondition that `platformString` must be null-terminated. The absence of a null byte will trigger a runtime error.
 

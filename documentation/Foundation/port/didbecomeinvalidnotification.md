@@ -25,7 +25,7 @@ class let didBecomeInvalidNotification: NSNotification.Name
 extern NSNotificationName const NSPortDidBecomeInvalidNotification;
 ```
 
-#### Discussion
+## Discussion
 
 An `NSSocketPort` object cannot detect when its connection to a remote port is lost, even if the remote port is on the same machine. Therefore, it cannot invalidate itself and post this notification. Instead, you must detect the timeout error when the next message is sent.
 

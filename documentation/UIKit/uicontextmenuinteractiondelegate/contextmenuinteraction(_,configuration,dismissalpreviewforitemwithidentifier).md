@@ -23,11 +23,11 @@ optional func contextMenuInteraction(_ interaction: UIContextMenuInteraction, co
 - (UITargetedPreview *) contextMenuInteraction:(UIContextMenuInteraction *) interaction configuration:(UIContextMenuConfiguration *) configuration dismissalPreviewForItemWithIdentifier:(id<NSCopying>) identifier;
 ```
 
-#### Return Value
+## Return Value
 
 A targeted preview object corresponding to the item with the identifier to use during the menu’s dismissal animation.
 
-#### Discussion
+## Discussion
 
 The system calls this method when a context-menu dismissal occurs. Implement this method to override the default dismissal preview that the system generates for the item.
 

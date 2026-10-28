@@ -25,7 +25,7 @@ func stepInPresentationOrder(byCount stepCount: Int64) -> Int64
 - (int64_t) stepInPresentationOrderByCount:(int64_t) stepCount;
 ```
 
-#### Return Value
+## Return Value
 
 The number of samples the cursor traversed. If the cursor reaches the beginning or the end of the sample sequence before the requested number of samples was traversed, the absolute value of the result will be less than the absolute value of the specified step count.
 

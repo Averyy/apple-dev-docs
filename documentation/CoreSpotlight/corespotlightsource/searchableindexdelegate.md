@@ -19,7 +19,7 @@ An optional delegate object you use to provide additional data about items in se
 var searchableIndexDelegate: (any CSSearchableIndexDelegate)?
 ```
 
-#### Discussion
+## Discussion
 
 Use this delegate object to provide detailed information about your searchable items to the model. Some information in the Spotlight index is searchable, but not recoverable. For example, Spotlight can’t recover the original text or HTML content you supply for an item. When it needs this information, the search tool asks your delegate to provide a new [`CSSearchableItem`](../cssearchableitem.md) object with the same content as the original one.
 

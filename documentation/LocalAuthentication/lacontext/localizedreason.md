@@ -23,7 +23,7 @@ var localizedReason: String { get set }
 @property (nonatomic, copy) NSString * localizedReason;
 ```
 
-#### Discussion
+## Discussion
 
 This property is overwritten if an authentication reason is provided in [`evaluatePolicy(_:localizedReason:reply:)`](./evaluatepolicy%28_,localizedreason,reply%29.md).
 

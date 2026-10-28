@@ -22,7 +22,7 @@ An attribute to define the International Phonetic Alphabet representation for sp
 enum IPANotationAttribute
 ```
 
-#### Overview
+## Overview
 
 The IPA representation defines pronunciation of words that have the same spelling but different sounds.
 

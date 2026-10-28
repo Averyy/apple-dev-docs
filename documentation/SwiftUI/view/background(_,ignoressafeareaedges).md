@@ -22,11 +22,11 @@ nonisolated
 func background<S>(_ style: S, ignoresSafeAreaEdges edges: Edge.Set = .all) -> some View where S : ShapeStyle
 ```
 
-#### Return Value
+## Return Value
 
 A view with the specified style drawn behind it.
 
-#### Discussion
+## Discussion
 
 Use this modifier to place a type that conforms to the [`ShapeStyle`](../shapestyle.md) protocol — like a [`Color`](../color.md), [`Material`](../material.md), or [`HierarchicalShapeStyle`](../hierarchicalshapestyle.md) — behind a view. For example, you can add the [`regularMaterial`](../shapestyle/regularmaterial.md) behind a [`Label`](../label.md):
 

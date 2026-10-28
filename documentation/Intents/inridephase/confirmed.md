@@ -23,7 +23,7 @@ case confirmed
 INRidePhaseConfirmed
 ```
 
-#### Discussion
+## Discussion
 
 The driver has confirmed receipt of the information and will pick up the user’s party at the estimated time.
 

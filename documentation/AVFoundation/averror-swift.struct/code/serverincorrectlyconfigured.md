@@ -25,7 +25,7 @@ case serverIncorrectlyConfigured
 AVErrorServerIncorrectlyConfigured
 ```
 
-#### Discussion
+## Discussion
 
 This error might indicate that the server doesn’t support byte range requests.
 

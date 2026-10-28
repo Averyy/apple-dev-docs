@@ -24,7 +24,7 @@ var postalAddress: CNPostalAddress? { get set }
 @property (nonatomic, strong, nullable) CNPostalAddress * postalAddress;
 ```
 
-#### Discussion
+## Discussion
 
 The contact’s full street address including name, street, city, state or province, postal code, and country or region. This property can be `nil` if the contact’s address isn’t needed for the transaction.
 

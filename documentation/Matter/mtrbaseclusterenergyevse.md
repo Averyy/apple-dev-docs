@@ -25,7 +25,7 @@ class MTRBaseClusterEnergyEVSE
 @interface MTRBaseClusterEnergyEVSE : MTRGenericBaseCluster
 ```
 
-#### Overview
+## Overview
 
 Electric Vehicle Supply Equipment (EVSE) is equipment used to charge an Electric Vehicle (EV) or Plug-In Hybrid Electric Vehicle. This cluster provides an interface to the functionality of Electric Vehicle Supply Equipment (EVSE) management.
 

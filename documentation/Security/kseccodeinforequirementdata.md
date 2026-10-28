@@ -20,7 +20,7 @@ let kSecCodeInfoRequirementData: CFString
 extern CFStringRef const kSecCodeInfoRequirementData;
 ```
 
-#### Discussion
+## Discussion
 
 The value is a [`CFData`](../CoreFoundation/cfdata.md) object. If there is an explicit designated requirement, then it’s included in this data blob.
 

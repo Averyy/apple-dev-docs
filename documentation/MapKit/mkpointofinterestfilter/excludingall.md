@@ -25,7 +25,7 @@ class var excludingAll: MKPointOfInterestFilter { get }
 @property (class, nonatomic, readonly) MKPointOfInterestFilter * filterExcludingAllCategories;
 ```
 
-#### Discussion
+## Discussion
 
 You can use [`excludingAll`](./excludingall.md)  to remove all points of interest from your map view without listing all the categories individually.
 

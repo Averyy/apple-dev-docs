@@ -19,7 +19,7 @@ var size: NSSize { get set }
 @property NSSize size;
 ```
 
-#### Discussion
+## Discussion
 
 Setting the value of this property also updates the value in the [`frame`](./frame.md) property.
 

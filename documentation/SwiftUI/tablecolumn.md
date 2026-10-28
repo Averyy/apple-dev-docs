@@ -20,7 +20,7 @@ nonisolated
 struct TableColumn<RowValue, Sort, Content, Label> where RowValue : Identifiable, Sort : SortComparator, Content : View, Label : View
 ```
 
-#### Overview
+## Overview
 
 You create a column with a label, content view, and optional key path. The table calls the content content builder with the value for each row in the table. The column uses a key path to map to a property of each row value, which sortable tables use to reflect the current sort order.
 

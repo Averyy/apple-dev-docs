@@ -17,7 +17,7 @@ An attributed string to be rendered below the large title.
 @property (nonatomic, copy, nullable) NSAttributedString * largeAttributedSubtitle;
 ```
 
-#### Discussion
+## Discussion
 
 When `nil`, the navigation bar will fall back to the `largeSubtitle`. If a `largeSubtitleView` is set, this property is ignored.
 

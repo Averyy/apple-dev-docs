@@ -19,7 +19,7 @@ case localNetwork
 
 - [Receiving iOS notifications on an accessory](../receiving-ios-notifications-on-an-accessory.md)
 
-#### Discussion
+## Discussion
 
 The system requires [`SecurityMessage.CipherSuite.xWing`](../securitymessage/ciphersuite-swift.enum/xwing.md) cryptography for this transport method.
 

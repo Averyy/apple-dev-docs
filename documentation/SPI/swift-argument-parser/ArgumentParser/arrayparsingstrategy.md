@@ -44,11 +44,11 @@ struct ArrayParsingStrategy
 ### Array Options
 - [init<T>(name: NameSpecification, parsing: ArrayParsingStrategy, help: ArgumentHelp?, completion: CompletionKind?)](./option/init%28name,parsing,help,completion%29-238hg.md)
   Creates a required array property that reads its values from zero or more labeled options.
-- [init<T>(name: NameSpecification, parsing: ArrayParsingStrategy, help: ArgumentHelp?, completion: CompletionKind?, transform: (String) throws -> T)](./option/init%28name,parsing,help,completion,transform%29-74hnp.md)
+- [init<T>(name: NameSpecification, parsing: ArrayParsingStrategy, help: ArgumentHelp?, completion: CompletionKind?, transform: @Sendable (String) throws -> T)](./option/init%28name,parsing,help,completion,transform%29-74hnp.md)
   Creates a required array property that reads its values from zero or more labeled options, parsing each element with the given closure.
 - [init<T>(wrappedValue: [T], name: NameSpecification, parsing: ArrayParsingStrategy, help: ArgumentHelp?, completion: CompletionKind?)](./option/init%28wrappedvalue,name,parsing,help,completion%29-1dtbf.md)
   Creates an array property that reads its values from zero or more labeled options.
-- [init<T>(wrappedValue: [T], name: NameSpecification, parsing: ArrayParsingStrategy, help: ArgumentHelp?, completion: CompletionKind?, transform: (String) throws -> T)](./option/init%28wrappedvalue,name,parsing,help,completion,transform%29-1kpto.md)
+- [init<T>(wrappedValue: [T], name: NameSpecification, parsing: ArrayParsingStrategy, help: ArgumentHelp?, completion: CompletionKind?, transform: @Sendable (String) throws -> T)](./option/init%28wrappedvalue,name,parsing,help,completion,transform%29-1kpto.md)
   Creates an array property that reads its values from zero or more labeled options, parsing each element with the given closure.
 
 

@@ -23,7 +23,7 @@ convenience init(relyingPartyIdentifier: String, userName: String, credentialID:
 + (instancetype) identityWithRelyingPartyIdentifier:(NSString *) relyingPartyIdentifier userName:(NSString *) userName credentialID:(NSData *) credentialID userHandle:(NSData *) userHandle recordIdentifier:(NSString *) recordIdentifier;
 ```
 
-#### Return Value
+## Return Value
 
 The new credential identity object.
 

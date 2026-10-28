@@ -24,7 +24,7 @@ let HMCharacteristicMetadataFormatData: String
 extern NSString * const HMCharacteristicMetadataFormatData;
 ```
 
-#### Discussion
+## Discussion
 
 The value is an [`NSData`](../Foundation/nsdata.md) object containing bytes of data.
 

@@ -15,7 +15,7 @@ Returns the user-readable description of the current error condition.
 extern CFStringRefCFXMLParserCopyErrorDescription(CFXMLParserRef parser);
 ```
 
-#### Return Value
+## Return Value
 
 A user-readable description of the current error condition, or `NULL` if no error occurred. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 

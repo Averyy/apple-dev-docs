@@ -14,7 +14,7 @@ Outputs each of the channels of a color3, vector3, or integer3 as individual flo
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 **Separate 3 (color3f)**:
 

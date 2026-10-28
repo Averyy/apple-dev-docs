@@ -19,11 +19,11 @@ func AEStreamCloseDesc(_ ref: AEStreamRef!) -> OSStatus
 OSStatus AEStreamCloseDesc(AEStreamRef ref);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145).
 
-#### Discussion
+## Discussion
 
 Call this function to balance a preceding call to [`AEStreamOpenDesc(_:_:)`](./api-1446544-aestreamopendesc.md) or [`AEStreamOpenKeyDesc(_:_:_:)`](./api-1442897-aestreamopenkeydesc.md). This function completes the definition of the `AEDesc`. 
 

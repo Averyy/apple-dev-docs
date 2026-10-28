@@ -16,7 +16,7 @@ static IOKernelDebugger * debugger(
  IODebuggerSetModeHandlersetModeHandler);
 ```
 
-#### Return Value
+## Return Value
 
 Returns an IOKernelDebugger instance on success, 0 otherwise.
 

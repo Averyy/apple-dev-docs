@@ -24,7 +24,7 @@ struct AudioUnitParameterHistoryInfo
 struct AudioUnitParameterHistoryInfo;
 ```
 
-#### Overview
+## Overview
 
 The structure is filled out by getting the value of the `kAudioUnitProperty_ParameterHistoryInfo` property.
 

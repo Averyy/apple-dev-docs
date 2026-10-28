@@ -23,7 +23,7 @@ var kCTFontTableFvar: Int { get }
 kCTFontTableFvar
 ```
 
-#### Discussion
+## Discussion
 
 Font table tag for font variation.
 

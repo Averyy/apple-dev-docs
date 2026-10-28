@@ -21,7 +21,7 @@ The amount of drag applied, as a fraction of the amount needed to produce critic
 var dampingRatio: Double { get }
 ```
 
-#### Discussion
+## Discussion
 
 When `dampingRatio` is 1, the spring will smoothly decelerate to its final position without oscillating. Damping ratios less than 1 will oscillate more and more before coming to a complete stop.
 

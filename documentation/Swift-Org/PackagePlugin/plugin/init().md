@@ -18,7 +18,7 @@ Instantiates the plugin.
 init()
 ```
 
-#### Discussion
+## Discussion
 
 This happens once per invocation of the plugin. There is no facility for keeping in-memory state from one invocation to the next. Most plugins do not need to implement the initializer.
 

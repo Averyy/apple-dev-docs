@@ -19,11 +19,11 @@ func convert(_ size: NSSize, from view: NSView?) -> NSSize
 - (NSSize) convertSize:(NSSize) size fromView:(NSView *) view;
 ```
 
-#### Return Value
+## Return Value
 
 The converted size, as an [`NSSize`](../../Foundation/nssize.md) structure.
 
-#### Discussion
+## Discussion
 
 The returned `NSSize` values are always forced to have positive a width and height.
 

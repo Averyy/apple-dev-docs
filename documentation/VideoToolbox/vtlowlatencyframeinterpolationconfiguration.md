@@ -24,7 +24,7 @@ class VTLowLatencyFrameInterpolationConfiguration
 @interface VTLowLatencyFrameInterpolationConfiguration : NSObject
 ```
 
-#### Overview
+## Overview
 
 This configuration can do either purely temporal interpolation (frame-rate conversion) or temporal and spatial interpolation (scaling and frame-rate conversion). This processor requires a source frame and a previous frame. It does temporal scaling, which interpolates frames between the previous frame and the source frame. When performing both temporal and spatial interpolation, the processor can only perform 2x upscaling, and a single frame of temporal interpolation. When performing spatial scaling, the processor produces upscaled intermediate frames and an upscaled `sourceFrame`, but it does not upscale the previous reference frame you provided.
 

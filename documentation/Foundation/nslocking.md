@@ -25,7 +25,7 @@ protocol NSLocking
 @protocol NSLocking
 ```
 
-#### Overview
+## Overview
 
 A lock object is used to coordinate the actions of multiple threads of execution within a single application. By using a lock object, an application can protect critical sections of code from being executed simultaneously by separate threads, thus protecting shared data and other shared resources from corruption.
 

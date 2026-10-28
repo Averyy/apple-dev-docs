@@ -24,7 +24,7 @@ init(data pixelData: Data?, topLeftOrigin: Bool, name: String?, dimensions: vect
 - (instancetype) initWithData:(NSData *) pixelData topLeftOrigin:(BOOL) topLeftOrigin name:(NSString *) name dimensions:(vector_int2) dimensions rowStride:(NSInteger) rowStride channelCount:(NSUInteger) channelCount channelEncoding:(MDLTextureChannelEncoding) channelEncoding isCube:(BOOL) isCube;
 ```
 
-#### Return Value
+## Return Value
 
 A new texture object.
 

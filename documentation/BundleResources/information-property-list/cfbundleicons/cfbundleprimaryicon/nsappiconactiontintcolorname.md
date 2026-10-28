@@ -16,7 +16,7 @@ The tint color to apply to text and symbols in the App Shortcuts platter.
 - **Name**: `NSAppIconActionTintColorName`
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 By default, the system uses predefined colors for text and symbols in the App Shortcuts platter — a view that represents a single group of App Shortcuts. To override that behavior and change the color of those items, add a custom color to your app’s asset catalog and specify the color’s name as the value for this key.
 

@@ -24,7 +24,7 @@ Schedules a timer to fire once with the specified deadline and leeway values.
 func scheduleOneshot(deadline: DispatchTime, leeway: DispatchTimeInterval = .nanoseconds(0))
 ```
 
-#### Discussion
+## Discussion
 
 The system may defer the deliver of timer events to improve power consumption and system performance. The first time the timer fires, the maximum allowable delay is equal to the value in the `leeway` parameter.
 

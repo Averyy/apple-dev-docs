@@ -24,11 +24,11 @@ class func predicateForWorkouts(with workoutActivityType: HKWorkoutActivityType)
 + (NSPredicate *) predicateForWorkoutsWithWorkoutActivityType:(HKWorkoutActivityType) workoutActivityType;
 ```
 
-#### Return Value
+## Return Value
 
 A predicate for matching workouts based on the type of activity.
 
-#### Discussion
+## Discussion
 
 Use this convenience method to create a predicate that matches workouts based on their activity. The following sample uses both the convenience method and a predicate format string to create equivalent predicates.
 

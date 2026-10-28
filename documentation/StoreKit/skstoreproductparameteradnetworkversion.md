@@ -27,7 +27,7 @@ extern NSString * const SKStoreProductParameterAdNetworkVersion;
 - [Generating the signature to validate StoreKit-rendered ads](./generating-the-signature-to-validate-storekit-rendered-ads.md)
 - [Identifying the parameters in install-validation postbacks](./identifying-the-parameters-in-install-validation-postbacks.md)
 
-#### Discussion
+## Discussion
 
 The value for this key is an [`NSString`](../Foundation/nsstring.md). Set this key to version number “`4.0`”, “`3.0`”, “`2.2"`, `“2.1"`, or `"2.0"`. Use the highest available version whenever possible. For version availability, see [SKAdNetwork release notes](./skadnetwork-release-notes.md).
 

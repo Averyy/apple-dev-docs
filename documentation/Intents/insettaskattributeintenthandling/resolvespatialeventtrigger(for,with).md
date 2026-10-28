@@ -29,7 +29,7 @@ optional func resolveSpatialEventTrigger(for intent: INSetTaskAttributeIntent) a
 - (void) resolveSpatialEventTriggerForSetTaskAttribute:(INSetTaskAttributeIntent *) intent withCompletion:(void (^)(INSpatialEventTriggerResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve the location-based trigger to apply to the task. For apps that support reminders based on the user’s proximity to a location, use this method to resolve the trigger information. If location-based reminders are optional, return a successful resolution when the user provided trigger information or return a not required resolution when there is no trigger information. If the intent includes some trigger information, but not enough for a successful resolution, you can ask the user to confirm or disambiguate from among the possible values.
 

@@ -15,7 +15,7 @@ Display the glass material only when the view isn’t already contained in glass
 case implicit
 ```
 
-#### Discussion
+## Discussion
 
 Use this value to avoid duplicate backgrounds when a view that has a glass background contains another view that also has a glass background.
 

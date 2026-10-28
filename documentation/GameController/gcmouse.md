@@ -24,7 +24,7 @@ class GCMouse
 @interface GCMouse : NSObject
 ```
 
-#### Overview
+## Overview
 
 To get a mouse object and its input values, register for the [`GCMouseDidConnect`](../Foundation/nsnotification/name-swift.struct/gcmousedidconnect.md) (Swift) or [`GCMouseDidConnectNotification`](./gcmousedidconnectnotification.md) (Objective-C) notification for when a mouse connects to the device. Then register for the [`GCMouseDidBecomeCurrent`](../Foundation/nsnotification/name-swift.struct/gcmousedidbecomecurrent.md)  (Swift) or [`GCMouseDidBecomeCurrentNotification`](./gcmousedidbecomecurrentnotification.md) (Objective-C) notification for when it becomes the [`current`](./gcmouse/current.md) mouse. Alternatively, use the [`current`](./gcmouse/current.md) class property or the [`mice()`](./gcmouse/mice%28%29.md) class method to get a mouse object. Then get the current input values from the mouse object’s [`mouseInput`](./gcmouse/mouseinput.md) controller profile.
 

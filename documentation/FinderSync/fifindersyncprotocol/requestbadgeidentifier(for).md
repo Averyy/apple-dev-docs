@@ -19,7 +19,7 @@ optional func requestBadgeIdentifier(for url: URL)
 - (void) requestBadgeIdentifierForURL:(NSURL *) url;
 ```
 
-#### Discussion
+## Discussion
 
 Override this method to receive notifications whenever a new item becomes visible in the Finder. Check the item’s state, and call [`setBadgeIdentifier(_:for:)`](../fifindersynccontroller/setbadgeidentifier%28_,for%29.md) to set an appropriate badge.
 

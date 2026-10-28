@@ -22,15 +22,15 @@ func AudioSessionGetProperty(_ inID: AudioSessionPropertyID, _ ioDataSize: Unsaf
 extern OSStatus AudioSessionGetProperty(AudioSessionPropertyID inID, UInt32 *ioDataSize, void *outData);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See Result Codes.
 
-#### Discussion
+## Discussion
 
 Audio session properties are listed and described in [Audio Session Property Identifiers](./api-1618455-audio-session-property-identifie.md).
 
-##### Special Considerations
+### Special Considerations
 
 Some Core Audio property values are C types and others are Core Foundation objects.
 

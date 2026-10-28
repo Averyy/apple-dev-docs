@@ -5,19 +5,19 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 The tvOS 15.4 SDK provides support to develop tvOS apps for Apple TV devices running tvOS 15.4. The SDK comes bundled with Xcode 13.3.1. For information on the compatibility requirements for Xcode 13.3.1, see [Xcode 13.3.1 Release Notes](../Xcode-Release-Notes/xcode-13_3_1-release-notes.md).
 
-##### General
+### General
 
-###### New Features
+#### New Features
 
 - Captive Wi-Fi network support on tvOS allows you to use your iPhone or iPad to connect your Apple TV to networks that need additional sign-in steps, like at hotels or dorms. (8351052)
 
-##### libc++
+### libc++
 
-###### New Features
+#### New Features
 
 - The following new C++20 and C++23 features are now implemented:
 
@@ -28,7 +28,7 @@ The tvOS 15.4 SDK provides support to develop tvOS apps for Apple TV devices run
   - A `.contains()` method for associative containers.
   - Added `std::bind_front()`. (88131816)
 
-###### Deprecations
+#### Deprecations
 
 - Some extensions in `std::tuple` were removed to fix bugs caused by those extensions:
 
@@ -36,9 +36,9 @@ The tvOS 15.4 SDK provides support to develop tvOS apps for Apple TV devices run
   - A tuple can no longer be constructed from an array.
   - The `std::result_of` and `std::is_literal_type` type traits are no longer available in C++20 mode, as specified in the Standard.
 
-##### StoreKit
+### StoreKit
 
-###### New Features
+#### New Features
 
 - [`SKTestSession`](../StoreKitTest/sktestsession.md) has three new methods to simulate a subscription requiring price increase consent, simulate consenting to a pending price increase, and simulate declining a price increase in automated tests. (84556183)
 

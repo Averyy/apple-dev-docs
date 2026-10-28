@@ -25,11 +25,11 @@ func CFSocketSetAddress(_ s: CFSocket!, _ address: CFData!) -> CFSocketError
 extern CFSocketError CFSocketSetAddress(CFSocketRef s, CFDataRef address);
 ```
 
-#### Return Value
+## Return Value
 
 An error code indicating success or failure.
 
-#### Discussion
+## Discussion
 
 This function binds the socket by calling bind, and if the socket supports it, configures the socket for listening by calling listen with a backlog of 256.
 

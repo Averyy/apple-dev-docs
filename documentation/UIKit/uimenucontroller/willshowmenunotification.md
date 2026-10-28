@@ -25,7 +25,7 @@ class let willShowMenuNotification: NSNotification.Name
 extern NSNotificationName const UIMenuControllerWillShowMenuNotification;
 ```
 
-#### Discussion
+## Discussion
 
 There is no `userInfo` dictionary.
 

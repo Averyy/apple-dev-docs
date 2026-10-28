@@ -25,7 +25,7 @@ var canWrap: Bool { get }
 @property (readonly) BOOL canWrap;
 ```
 
-#### Discussion
+## Discussion
 
 For non-sequential switches, this property is always [`true`](../../Swift/true.md).
 

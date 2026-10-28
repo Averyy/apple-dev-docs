@@ -19,7 +19,7 @@ struct OBEXSetPathCommandResponseData
 struct OBEXSetPathCommandResponseData;
 ```
 
-#### Overview
+## Overview
 
 Is readable when the event is of type kOBEXSessionEventTypeSetPathCommandResponseReceived (see OBEXSessionEventTypes).
 

@@ -25,11 +25,11 @@ class var standardOutput: FileHandle { get }
 @property (class, strong, readonly) NSFileHandle * fileHandleWithStandardOutput;
 ```
 
-#### Return Value
+## Return Value
 
 The shared file handle associated with the standard output file.
 
-#### Discussion
+## Discussion
 
 Conventionally this is a terminal device that receives a stream of data from a program. There’s one standard output file handle per process; it’s a shared instance.
 

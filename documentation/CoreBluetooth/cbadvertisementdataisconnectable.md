@@ -25,7 +25,7 @@ let CBAdvertisementDataIsConnectable: String
 extern NSString * const CBAdvertisementDataIsConnectable;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is an [`NSNumber`](../Foundation/nsnumber.md) object. You can use this value to determine whether your app can currently connect to a peripheral.
 

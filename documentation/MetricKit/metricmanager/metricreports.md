@@ -22,7 +22,7 @@ final var metricReports: some AsyncSequence<MetricReport, Never> { get }
 
 - [Monitoring app performance with MetricKit](../monitoring-app-performance-with-metrickit.md)
 
-#### Discussion
+## Discussion
 
 Iterate `metricReports` in a long-lived `Task` to receive [`MetricReport`](../metricreport.md) values as they become available. The sequence never throws.
 

@@ -30,7 +30,7 @@ func currentTime() -> CMTime
 
 - [Controlling the transport behavior of a player](../controlling-the-transport-behavior-of-a-player.md)
 
-#### Return Value
+## Return Value
 
 The current time of the item.
 

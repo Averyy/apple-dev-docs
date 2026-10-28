@@ -25,7 +25,7 @@ var symbolConfiguration: UIImage.SymbolConfiguration? { get }
 @property (nonatomic, copy, readonly, nullable) UIImageSymbolConfiguration * symbolConfiguration;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to access the traits and rendering attributes associated with the symbol image. The system uses the specified details to determine which variant of the image to load and draw and how to render it, falling back on the current environment as needed for any unspecified values. For symbol images, the default value of this property is a symbol image configuration object with unspecified values. For other image types, the default value of this property is `nil`.
 

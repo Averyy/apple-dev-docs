@@ -20,7 +20,7 @@ set strokeStart(strokeStart: number);
 
 - [MapKit JS 5](../mapkit-js-5.md)
 
-#### Discussion
+## Discussion
 
 The value of this property must be a number between `0` and `1`. A value of `0`, the default, represents the beginning of the polyline, and a value of `1` represents the end. MapKit JS interprets values between `0` and `1` linearly along the length of the polyline.
 

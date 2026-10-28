@@ -21,7 +21,7 @@ A collection that supports replacement of an arbitrary subrange of elements with
 protocol RangeReplaceableCollection<Element> : Collection where Self.SubSequence : RangeReplaceableCollection
 ```
 
-#### Overview
+## Overview
 
 Range-replaceable collections provide operations that insert and remove elements. For example, you can add elements to an array of strings by calling any of the inserting or appending operations that the `RangeReplaceableCollection` protocol defines.
 
@@ -55,7 +55,7 @@ Lastly, use the eponymous `replaceSubrange(_:with:)` method to replace a subrang
  // Prints "[10, 1, 1, 1, 1, 1, 50]"
 ```
 
-### Conforming to the RangeReplaceableCollection Protocol
+## Conforming to the RangeReplaceableCollection Protocol
 
 To add `RangeReplaceableCollection` conformance to your custom collection, add an empty initializer and the `replaceSubrange(_:with:)` method to your custom type. `RangeReplaceableCollection` provides default implementations of all its other methods using this initializer and method. For example, the `removeSubrange(_:)` method is implemented by calling `replaceSubrange(_:with:)` with an empty collection for the `newElements` parameter. You can override any of the protocol’s required methods to provide your own custom implementation.
 

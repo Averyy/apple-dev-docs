@@ -17,7 +17,7 @@ let kSKEndTermChars: CFString!
 const CFStringRef kSKEndTermChars;
 ```
 
-#### Discussion
+## Discussion
 
 Additional valid last-position “word” characters for indexing and querying. The corresponding value, a CFString object, specifies the additional valid “word” characters that you want to be considered as valid ending characters of terms for indexing and querying. “Word” characters are contrasted with nonword characters, such as spaces.
 

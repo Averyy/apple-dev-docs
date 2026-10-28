@@ -24,7 +24,7 @@ let kVTPixelTransferPropertyKey_DestinationCleanAperture: CFString
 extern CFStringRef const kVTPixelTransferPropertyKey_DestinationCleanAperture;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is a [`CFDictionary`](../CoreFoundation/cfdictionary.md) object with same keys as used in the [`kCVImageBufferCleanApertureKey`](../CoreVideo/kcvimagebuffercleanaperturekey.md) dictionary.
 

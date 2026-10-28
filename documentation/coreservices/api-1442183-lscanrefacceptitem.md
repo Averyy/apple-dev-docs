@@ -21,11 +21,11 @@ func LSCanRefAcceptItem(_ inItemFSRef: UnsafePointer<FSRef>!, _ inTargetRef: Uns
 OSStatus LSCanRefAcceptItem(const FSRef *inItemFSRef, const FSRef *inTargetRef, LSRolesMask inRoleMask, LSAcceptanceFlags inFlags, Boolean *outAcceptsItem);
 ```
 
-#### Return Value
+## Return Value
 
 A result code; see [Result Codes](./launch_services.md#1661359).
 
-#### Discussion
+## Discussion
 
 Thread-safe since Mac OS version 10.2.
 

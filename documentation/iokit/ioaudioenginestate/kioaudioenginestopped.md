@@ -14,7 +14,7 @@
 kIOAudioEngineStopped = 0
 ```
 
-#### Discussion
+## Discussion
 
 The IOAudioEngine is currently stopped - no activity is occurring.
 

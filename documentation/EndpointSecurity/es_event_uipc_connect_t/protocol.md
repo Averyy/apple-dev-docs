@@ -20,7 +20,7 @@ var `protocol`: Int32
 int protocol;
 ```
 
-#### Discussion
+## Discussion
 
 See the man page for `socket(2)` for a discussion of the `protocol` parameter.
 

@@ -23,11 +23,11 @@ func IODataQueueAllocateNotificationPort() -> mach_port_t
 mach_port_t IODataQueueAllocateNotificationPort(void);
 ```
 
-#### Return Value
+## Return Value
 
 Returns a newly allocated mach port on success. On failure, it returns MACH_PORT_NULL.
 
-#### Discussion
+## Discussion
 
 This port is intended to be passed down into the kernel and into an IODataQueue to allow it to send the appropriate notification. The returned mach port is allocated with a queue limit of one message. This allows only one mach message to be queued up at a time. The IODataQueue code is written with the restriction in mind and will only queue up a message if no messages alread have been sent.
 

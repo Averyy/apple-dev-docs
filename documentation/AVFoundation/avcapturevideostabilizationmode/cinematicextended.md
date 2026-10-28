@@ -22,7 +22,7 @@ case cinematicExtended
 AVCaptureVideoStabilizationModeCinematicExtended
 ```
 
-#### Discussion
+## Discussion
 
 Enabling extended cinematic stabilization introduces longer latency into the video capture pipeline compared to [`AVCaptureVideoStabilizationMode.cinematic`](./cinematic.md) and consumes more memory, but yields improved stability.
 

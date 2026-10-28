@@ -21,7 +21,7 @@ The temporal layer information for all samples in a temporal layer.
 struct HEVCTemporalInfo
 ```
 
-#### Overview
+## Overview
 
 The members of this struct represents the `tscl` sample group as defined in ISO/IEC 14496‐15 section 8.4.5 Temporal scalability sample grouping..
 

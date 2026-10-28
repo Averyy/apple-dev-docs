@@ -19,7 +19,7 @@ case useConstraints
 NSSplitViewItemCollapseBehaviorUseConstraints
 ```
 
-#### Discussion
+## Discussion
 
 This collapse behavior may result in a partial internal content resize and window resize, and doesn’t affect whether the window stays onscreen. You can use external constraints to adjust how the animation affects the item, its sibling items, and the window’s size and position.
 

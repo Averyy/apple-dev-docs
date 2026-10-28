@@ -13,11 +13,11 @@
 errno_t ifaddr_release(ifaddr_t ifaddr);
 ```
 
-#### Return Value
+## Return Value
 
 0 upon success
 
-#### Discussion
+## Discussion
 
 Decrements the reference count of and possibly frees an address tied to an interface.
 

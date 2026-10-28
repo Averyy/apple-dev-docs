@@ -25,11 +25,11 @@ func indexesOfObjects(at s: IndexSet, options opts: NSEnumerationOptions = [], p
 - (NSIndexSet *) indexesOfObjectsAtIndexes:(NSIndexSet *) s options:(NSEnumerationOptions) opts passingTest:(BOOL (^)(ObjectType obj, NSUInteger idx, BOOL *stop)) predicate;
 ```
 
-#### Return Value
+## Return Value
 
 The indexes whose corresponding values in the array pass the test specified by `predicate`. If no objects in the array pass the test, returns an empty index set.
 
-#### Discussion
+## Discussion
 
 By default, the enumeration starts with the first object and continues serially through the array to the last element specified by `indexSet`. You can specify `NSEnumerationConcurrent` and/or `NSEnumerationReverse` as enumeration options to modify this behavior.
 

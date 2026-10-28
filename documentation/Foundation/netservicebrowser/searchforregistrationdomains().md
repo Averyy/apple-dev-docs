@@ -26,7 +26,7 @@ func searchForRegistrationDomains()
 - (void) searchForRegistrationDomains;
 ```
 
-#### Discussion
+## Discussion
 
 This method returns immediately, sending a [`netServiceBrowserWillSearch(_:)`](../netservicebrowserdelegate/netservicebrowserwillsearch%28_%29.md) message to the delegate if the network was ready to initiate the search. The delegate receives a subsequent [`netServiceBrowser(_:didFindDomain:moreComing:)`](../netservicebrowserdelegate/netservicebrowser%28_,didfinddomain,morecoming%29.md) message for each domain discovered.
 

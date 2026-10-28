@@ -21,7 +21,7 @@ case sessionExpired
 
 - [Adopting the Verifier API in your iPhone app](../adopting-the-verifier-api-in-your-iphone-app.md)
 
-#### Discussion
+## Discussion
 
 Generate a new reader token and call [`prepare(using:)`](../mobiledocumentreader/prepare%28using%29.md) again.
 

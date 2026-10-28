@@ -24,11 +24,11 @@ class func confirmationRequired(with objectToConfirm: INObject?) -> Self
 + (instancetype) confirmationRequiredWithObjectToConfirm:(INObject *) objectToConfirm;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INObjectResolutionResult`](../inobjectresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method when you can resolve the parameter to the specified object but you want the user to confirm that value.
 

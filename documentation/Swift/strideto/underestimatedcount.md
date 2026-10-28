@@ -23,7 +23,7 @@ var underestimatedCount: Int { get }
 
 Available when `Element` conforms to `Strideable`.
 
-#### Discussion
+## Discussion
 
 The default implementation returns 0. If you provide your own implementation, make sure to compute the value nondestructively.
 

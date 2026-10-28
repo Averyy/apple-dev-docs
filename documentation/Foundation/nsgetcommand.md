@@ -20,7 +20,7 @@ class NSGetCommand
 @interface NSGetCommand : NSScriptCommand
 ```
 
-#### Overview
+## Overview
 
 An instance of `NSGetCommand` gets the specified value or object from the specified scriptable object: for example, the words from a paragraph or the name of a document.
 

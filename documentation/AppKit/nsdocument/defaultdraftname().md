@@ -19,7 +19,7 @@ func defaultDraftName() -> String
 - (NSString *) defaultDraftName;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation of this method returns the string “Untitled”, as adjusted according to the user’s specified locale. Your app should typically return a name that describes the kind of document. For example, a spreadsheet app could return “Spreadsheet”. A document created from a template could return the name of the template, for example, “Résumé”.
 

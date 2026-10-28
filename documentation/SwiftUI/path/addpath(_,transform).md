@@ -21,7 +21,7 @@ Appends another path value to this path.
 mutating func addPath(_ path: Path, transform: CGAffineTransform = .identity)
 ```
 
-#### Discussion
+## Discussion
 
 If the `path` parameter is a non-empty empty path, its elements are appended in order to this path. Afterward, the start point and current point of this path are those of the last subpath in the `path` parameter.
 

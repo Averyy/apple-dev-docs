@@ -25,7 +25,7 @@ final func join()
 - [Joining and managing a shared activity](../joining-and-managing-a-shared-activity.md)
 - [Adding spatial Persona support to an activity](../adding-spatial-persona-support-to-an-activity.md)
 
-#### Discussion
+## Discussion
 
 Call this method to begin the delivery of synchronized data to the current device. Typically, you call this method when your app is ready to engage in an activity. For example, call it when you present your app’s UI for the activity. When your app successfully joins the session, the session changes the value in its [`state`](./state-swift.property.md) property to [`GroupSession.State.joined`](./state-swift.enum/joined.md).
 

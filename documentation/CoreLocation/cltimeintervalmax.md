@@ -25,7 +25,7 @@ let CLTimeIntervalMax: TimeInterval
 extern const NSTimeInterval CLTimeIntervalMax;
 ```
 
-#### Discussion
+## Discussion
 
 When scheduling deferred updates, you can use this constant to indicate that a new update should be triggered only after a large time interval has passed.
 

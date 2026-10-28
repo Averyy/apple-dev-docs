@@ -15,7 +15,7 @@
 kINQUIRY_Byte6_ADDR16_Mask = (1 << kINQUIRY_Byte6_ADDR16_Bit)
 ```
 
-#### Discussion
+## Discussion
 
 Mask to use to test the ADDR16 bit.
 

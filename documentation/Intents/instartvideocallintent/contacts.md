@@ -32,7 +32,7 @@ var contacts: [INPerson]? { get }
 @property (atomic, copy, readonly, nullable) NSArray<INPerson *> * contacts;
 ```
 
-#### Discussion
+## Discussion
 
 Use the information in each [`INPerson`](../inperson.md) object to look for a matching contact in your app.
 

@@ -19,7 +19,7 @@ var status: WKAudioFilePlayerStatus { get }
 @property (nonatomic, readonly) WKAudioFilePlayerStatus status;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`WKAudioFilePlayerStatus.failed`](../wkaudiofileplayerstatus/failed.md), the [`error`](./error.md) property contains the reason for the failure.
 

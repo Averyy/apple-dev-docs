@@ -21,7 +21,7 @@ init(albumIdentifier: String, photoLibrary: PHPhotoLibrary)
 - (instancetype) initWithAlbumIdentifier:(NSString *) albumIdentifier photoLibrary:(PHPhotoLibrary *) photoLibrary;
 ```
 
-#### Discussion
+## Discussion
 
 Returns a view controller that allows the user to customize a specified shared album.
 

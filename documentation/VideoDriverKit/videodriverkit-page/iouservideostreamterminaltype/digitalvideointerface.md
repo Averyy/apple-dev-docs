@@ -15,7 +15,7 @@ The ID for a terminal type of stream from/to a digital audio interface as define
 DigitalVideoInterface
 ```
 
-#### Discussion
+## Discussion
 
 This applies to both input streams and output streams.
 

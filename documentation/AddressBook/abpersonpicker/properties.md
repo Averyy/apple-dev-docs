@@ -15,7 +15,7 @@ An array of properties to display in the picker when the user selects a person.
 @property (copy) NSArray * properties;
 ```
 
-#### Discussion
+## Discussion
 
 For a list of properties, see [Address Book Constants](../address-book-constants.md). If you don’t provide any properties, the picker selects people instead of values.
 

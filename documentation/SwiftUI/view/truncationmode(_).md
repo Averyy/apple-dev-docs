@@ -22,11 +22,11 @@ nonisolated
 func truncationMode(_ mode: Text.TruncationMode) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that truncates text at different points in a line depending on the mode you select.
 
-#### Discussion
+## Discussion
 
 Use the `truncationMode(_:)` modifier to determine whether text in a long line is truncated at the beginning, middle, or end. Truncation is indicated by adding an ellipsis (…) to the line when removing text to indicate to readers that text is missing.
 

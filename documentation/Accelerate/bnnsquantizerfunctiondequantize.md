@@ -25,7 +25,7 @@ var BNNSQuantizerFunctionDequantize: BNNSQuantizerFunction { get }
 BNNSQuantizerFunctionDequantize
 ```
 
-#### Discussion
+## Discussion
 
 The following code dequantizes a 16-bit integer matrix to a single-precision matrix. The code applies the scale along the zeroth axis and, therefore, the scale tensor contains four elements:
 

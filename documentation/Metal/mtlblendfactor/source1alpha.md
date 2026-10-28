@@ -24,7 +24,7 @@ case source1Alpha
 MTLBlendFactorSource1Alpha
 ```
 
-#### Discussion
+## Discussion
 
 `F = Source.a`
 

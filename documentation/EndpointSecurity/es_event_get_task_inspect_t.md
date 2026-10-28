@@ -20,7 +20,7 @@ struct es_event_get_task_inspect_t
 typedef struct { ... } es_event_get_task_inspect_t;
 ```
 
-#### Overview
+## Overview
 
 This event represents a process that obtains a send right to a task inspect port, through `SYS_task_inspect_for_pid` or functions like `task_identity_token_get_task_port(_:_:_:)`.
 

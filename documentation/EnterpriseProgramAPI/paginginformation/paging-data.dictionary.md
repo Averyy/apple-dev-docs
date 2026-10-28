@@ -12,7 +12,7 @@ Paging details such as the total number of resources and the per-page limit.
 object PagingInformation.Paging
 ```
 
-#### Discussion
+## Discussion
 
 Adjust the number of resources returned per page by using the `limit` query parameter in your request. For example, the following request returns the first 10 users:
 

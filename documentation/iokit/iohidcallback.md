@@ -14,7 +14,7 @@
 typedef void (*IOHIDCallback)(void *context, IOReturn result, void *sender);
 ```
 
-#### Discussion
+## Discussion
 
 Type and arguments of callout C function that is used when a completion routine is called.
 

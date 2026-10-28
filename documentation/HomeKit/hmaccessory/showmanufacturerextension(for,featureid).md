@@ -16,7 +16,7 @@ Presents the system-rendered UI for one manufacturer feature.
 func showManufacturerExtension(for kind: HMAccessory.ManufacturerFeature.Kind, featureID: String? = nil) async throws
 ```
 
-#### Discussion
+## Discussion
 
 Returns once the request has been handed off to the system; throws on any error encountered while attempting to launch.
 

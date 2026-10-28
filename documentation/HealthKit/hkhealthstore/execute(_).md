@@ -34,7 +34,7 @@ func execute(_ query: HKQuery)
 - [Executing Statistical Queries](../executing-statistical-queries.md)
 - [Reading route data](../reading-route-data.md)
 
-#### Discussion
+## Discussion
 
 HealthKit executes queries asynchronously on a background queue. Most queries automatically stop after they have finished executing. However, long-running queries—such as observer queries and some statistics collection queries—continue to execute in the background. To stop long-running queries, call the [`stop(_:)`](./stop%28_%29.md) method.
 

@@ -22,7 +22,7 @@ A signed integer value type.
 struct Int
 ```
 
-#### Overview
+## Overview
 
 On 32-bit platforms, `Int` is the same size as `Int32`, and on 64-bit platforms, `Int` is the same size as `Int64`.
 

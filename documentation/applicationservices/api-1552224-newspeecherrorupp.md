@@ -15,7 +15,7 @@ Creates a new universal procedure pointer to an errorcallback function.
 SpeechErrorUPP NewSpeechErrorUPP(SpeechErrorProcPtr userRoutine);
 ```
 
-#### Return Value
+## Return Value
 
 A UPP to the errorcallback function. See the description of the `SpeechErrorUPP` data type.
 

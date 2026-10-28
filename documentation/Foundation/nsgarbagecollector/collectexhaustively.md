@@ -15,7 +15,7 @@ Tells the receiver to collect iteratively.
 - (void) collectExhaustively;
 ```
 
-#### Discussion
+## Discussion
 
 You use this method to indicate to the collector that it should perform an exhaustive collection. Collection is subject to interruption on user input.
 

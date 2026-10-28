@@ -20,7 +20,7 @@ class BEBrowserDataReadingListItem
 @interface BEBrowserDataReadingListItem : BEBrowserData
 ```
 
-#### Overview
+## Overview
 
 This class represents an article or webpage in a reading list, including a URL, a title, and the date the item was last opened.
 

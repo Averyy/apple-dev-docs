@@ -19,7 +19,7 @@ case saturation
 NSColorRenderingIntentSaturation
 ```
 
-#### Discussion
+## Discussion
 
 The result is an image with bright, saturated colors. Saturation intent is good for reproducing images with low detail, such as presentation charts and graphs.
 

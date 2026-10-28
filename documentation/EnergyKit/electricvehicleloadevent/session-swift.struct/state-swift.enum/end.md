@@ -21,7 +21,7 @@ case end
 
 - [Providing charging history for electric vehicles](../../../providing-informative-charging-history-for-electric-vehicles.md)
 
-#### Discussion
+## Discussion
 
 The electricity measurement represents the final value for the session and power must be 0.
 

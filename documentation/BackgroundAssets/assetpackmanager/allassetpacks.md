@@ -22,7 +22,7 @@ The asset packs that are available to download.
 var allAssetPacks: Set<AssetPack> { get async throws }
 ```
 
-#### Discussion
+## Discussion
 
 Accessing this property may cause an attempt to get the latest asset-pack information from the server.
 

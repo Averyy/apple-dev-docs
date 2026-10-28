@@ -15,11 +15,11 @@ The system calls this virtual method when the clock device’s sample rate chang
 virtual kern_return_t HandleChangeSampleRate(double in_sample_rate);
 ```
 
-#### Return Value
+## Return Value
 
 `kIOReturnSuccess` on success. Upon success the value should be updated.
 
-#### Discussion
+## Discussion
 
 The default implementation calls SetSampleRate() and returns `kIOReturnSuccess`. Subclass and override this method to handle changes to this value and return `kIOReturnSuccess` upon success.
 

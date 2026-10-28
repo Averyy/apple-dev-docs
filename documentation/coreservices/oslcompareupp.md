@@ -20,7 +20,7 @@ typealias OSLCompareUPP = OSLCompareProcPtr
 typedef OSLCompareProcPtr OSLCompareUPP;
 ```
 
-#### Discussion
+## Discussion
 
 For a description of a compare callback function, see [`OSLCompareProcPtr`](./oslcompareprocptr.md). 
 

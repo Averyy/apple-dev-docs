@@ -21,11 +21,11 @@ Returns all the date components of a date, using the calendar time zone.
 func dateComponents(_ components: Set<Calendar.Component>, from date: Date) -> DateComponents
 ```
 
-#### Return Value
+## Return Value
 
 The date components of the specified date.
 
-#### Discussion
+## Discussion
 
 > **Note**:  If you want “date information in a given time zone” in order to display it, you should use `DateFormatter` to format the date.
 

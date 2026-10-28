@@ -20,7 +20,7 @@ Scale the scattering data by a frequency-dependent scalar value between -1 and 1
 func scaled(by frequencyDependentScalar: (Float) -> Float) -> Audio.Scattering
 ```
 
-#### Discussion
+## Discussion
 
 - No adjustment is made to the coefficient when the scalar is 0.
 - The coefficient is set to 0 when the scalar is -1.

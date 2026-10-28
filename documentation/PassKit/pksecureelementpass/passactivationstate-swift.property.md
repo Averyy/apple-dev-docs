@@ -24,7 +24,7 @@ var passActivationState: PKSecureElementPass.PassActivationState { get }
 @property (nonatomic, readonly) PKSecureElementPassActivationState passActivationState;
 ```
 
-#### Discussion
+## Discussion
 
 You must activate a secure pass before it can be used.
 

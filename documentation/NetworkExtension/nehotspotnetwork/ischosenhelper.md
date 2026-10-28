@@ -22,7 +22,7 @@ var isChosenHelper: Bool { get }
 @property (readonly, getter=isChosenHelper) BOOL chosenHelper;
 ```
 
-#### Discussion
+## Discussion
 
 The `NEHotspotNetwork` class must have been instantiated via a call to the `supportedNetworkInterfaces` method in the [`NEHotspotHelper`](../nehotspothelper.md) object. This property is useful for restoring state after the Hotspot Helper application has quit and restarted.
 

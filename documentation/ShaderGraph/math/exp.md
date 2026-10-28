@@ -14,7 +14,7 @@ Outputs ‘e’ to the power of the input.
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 **Exp (float)**:
 

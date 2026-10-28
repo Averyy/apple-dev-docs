@@ -17,7 +17,7 @@ A property that returns a set of supported features, or an empty set if the curr
 static var supportedFeatures: Set<WACapabilities.Feature> { get }
 ```
 
-#### Discussion
+## Discussion
 
 If the host device doesn’t support Wi-Fi Aware, the system returns an empty set. If a feature is present in the set, it’s supported, which you can test by using the code below:
 

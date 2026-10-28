@@ -25,11 +25,11 @@ func CLLocationCoordinate2DIsValid(_ coord: CLLocationCoordinate2D) -> Bool
 extern BOOL CLLocationCoordinate2DIsValid(CLLocationCoordinate2D coord);
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if the coordinate is valid or [`false`](../Swift/false.md) if it is not.
 
-#### Discussion
+## Discussion
 
 A coordinate is considered invalid if it meets at least one of the following criteria:
 

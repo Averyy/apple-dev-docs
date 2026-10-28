@@ -24,7 +24,7 @@ static var notAtHome: HMPresenceEventType { get }
 HMPresenceEventTypeNotAtHome
 ```
 
-#### Discussion
+## Discussion
 
 A convenience value for use in predicates on [`HMEventTrigger`](../hmeventtrigger.md). Represents the presence of no users in the home.
 

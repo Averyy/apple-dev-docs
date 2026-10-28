@@ -23,7 +23,7 @@ nonisolated
 init<V>(id: String, @ContentBuilder content: () -> V) where Content == ImmersiveSpaceViewContent<V>, Data == Never, V : View
 ```
 
-#### Discussion
+## Discussion
 
 The space uses the specified content builder to form the content.
 

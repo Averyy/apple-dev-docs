@@ -19,7 +19,7 @@ func blended(withFraction fraction: CGFloat, of color: NSColor) -> NSColor?
 - (NSColor *) blendedColorWithFraction:(CGFloat) fraction ofColor:(NSColor *) color;
 ```
 
-#### Return Value
+## Return Value
 
 The resulting color object or `nil` if the colors can’t be converted.
 

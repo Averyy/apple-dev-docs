@@ -19,7 +19,7 @@ var buttonTitle: String { get set }
 @property (copy) NSString * buttonTitle;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is the empty string.
 

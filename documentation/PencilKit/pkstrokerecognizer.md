@@ -23,7 +23,7 @@ final actor PKStrokeRecognizer
 
 - [Recognizing handwriting and converting it to text](./recognizing-handwriting-and-converting-to-text.md)
 
-#### Overview
+## Overview
 
 Use `PKStrokeRecognizer` to extract recognized text from individual strokes, generate content suitable for indexing in search systems such as Spotlight, and search for specific words or phrases within handwritten content. The recognizer uses an on-device recognition engine and all operations are asynchronous.
 

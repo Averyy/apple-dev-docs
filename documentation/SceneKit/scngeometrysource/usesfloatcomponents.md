@@ -25,7 +25,7 @@ var usesFloatComponents: Bool { get }
 @property (nonatomic, readonly) BOOL floatComponents;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../Swift/true.md), SceneKit interprets the geometry source’s data as an array of vectors whose components are floating-point values. The type of floating-point value is determined by the [`SCNGeometrySource`](../scngeometrysource.md) property: 4 bytes for `float` values or 8 bytes for `double` values.
 

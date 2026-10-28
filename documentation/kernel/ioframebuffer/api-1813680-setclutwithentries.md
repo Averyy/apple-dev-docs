@@ -15,11 +15,11 @@ virtual IOReturn setCLUTWithEntries(
  IOOptionBitsoptions );
 ```
 
-#### Return Value
+## Return Value
 
 an IOReturn code.
 
-#### Overview
+## Overview
 
 IOFramebuffer subclasses may implement this method to allow a palette to be set for indexed display modes. It will not be called on framebuffers in direct display modes.
 

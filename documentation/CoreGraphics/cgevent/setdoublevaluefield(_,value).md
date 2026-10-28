@@ -20,7 +20,7 @@ func setDoubleValueField(_ field: CGEventField, value: Double)
 extern void CGEventSetDoubleValueField(CGEventRef event, CGEventField field, double value);
 ```
 
-#### Discussion
+## Discussion
 
 Before calling this function, the event type must be set using a typed event creation function such as [`init(mouseEventSource:mouseType:mouseCursorPosition:mouseButton:)`](./init%28mouseeventsource,mousetype,mousecursorposition,mousebutton%29.md), or by calling [`CGEventSetType`](../cgeventsettype.md).
 

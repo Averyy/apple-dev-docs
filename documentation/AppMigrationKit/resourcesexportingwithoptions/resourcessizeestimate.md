@@ -17,7 +17,7 @@ The estimated size of all resources to export, in bytes.
 var resourcesSizeEstimate: Int { get async }
 ```
 
-#### Discussion
+## Discussion
 
 AppMigrationKit uses this property when preflighting the app transfer to estimate the data size required for the transfer.
 

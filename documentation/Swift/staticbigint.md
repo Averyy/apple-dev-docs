@@ -22,7 +22,7 @@ An immutable arbitrary-precision signed integer.
 struct StaticBigInt
 ```
 
-#### Overview
+## Overview
 
 `StaticBigInt` is primarily intended to be used as the associated type of an `ExpressibleByIntegerLiteral` conformance.
 

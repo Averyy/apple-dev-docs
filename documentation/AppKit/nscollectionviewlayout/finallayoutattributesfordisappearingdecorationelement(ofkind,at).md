@@ -19,11 +19,11 @@ func finalLayoutAttributesForDisappearingDecorationElement(ofKind elementKind: N
 - (NSCollectionViewLayoutAttributes *) finalLayoutAttributesForDisappearingDecorationElementOfKind:(NSCollectionViewDecorationElementKind) elementKind atIndexPath:(NSIndexPath *) decorationIndexPath;
 ```
 
-#### Return Value
+## Return Value
 
 The layout attributes object that describes the decoration view’s position and properties at the end of animations.
 
-#### Discussion
+## Discussion
 
 When your layout object removes decoration views in response to other changes in the collection view, the collection view calls this method for each decoration view you remove. Use this method to specify the layout attributes for the view after it has been removed. For example, you might return attributes that position the decoration view offscreen or set its alpha to `0`. The collection view uses the attributes you return as the end point for any animations. (The start point of the animation is the view’s current location and attributes.) If you return `nil`, the layout uses the decoration view’s current attributes for both the start point and end point of the animation.
 

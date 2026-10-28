@@ -24,11 +24,11 @@ class func subtractBlendMode() -> any CIFilter & CICompositeOperation
 + (CIFilter<CICompositeOperation> *) subtractBlendModeFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies the subtract-blend mode filter to an image. The effect calculates the colors in the output image by subtracting the color values that differ between the background image and the input image.
 

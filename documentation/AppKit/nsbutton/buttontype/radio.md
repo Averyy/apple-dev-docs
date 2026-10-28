@@ -19,7 +19,7 @@ case radio
 NSButtonTypeRadio
 ```
 
-#### Discussion
+## Discussion
 
 A radio button is similar to a [`NSButton.ButtonType.switch`](./switch.md) button, but it constrains the selection to a single button within a group.
 

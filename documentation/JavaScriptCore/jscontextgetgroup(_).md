@@ -24,7 +24,7 @@ func JSContextGetGroup(_ ctx: JSContextRef!) -> JSContextGroupRef!
 JSContextGroupRefJSContextGetGroup(JSContextRef ctx);
 ```
 
-#### Return Value
+## Return Value
 
 The group that `ctx` belongs to.
 

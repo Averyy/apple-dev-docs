@@ -23,7 +23,7 @@ extern NSPasteboardType const NSPasteboardTypeString;
 
 - [Supporting Writing Tools via the pasteboard](../../supporting-writing-tools-via-the-pasteboard.md)
 
-#### Discussion
+## Discussion
 
 Apps that adopt App Sandbox cannot access files identified using the [`string`](./string.md) pasteboard type. Instead, use an [`NSURL`](../../../Foundation/nsurl.md) object, a bookmark, or a filename pasteboard type.
 

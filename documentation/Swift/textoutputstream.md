@@ -21,7 +21,7 @@ A type that can be the target of text-streaming operations.
 protocol TextOutputStream
 ```
 
-#### Overview
+## Overview
 
 You can send the output of the standard library’s `print(_:to:)` and `dump(_:to:)` functions to an instance of a type that conforms to the `TextOutputStream` protocol instead of to standard output. Swift’s `String` type conforms to `TextOutputStream` already, so you can capture the output from `print(_:to:)` and `dump(_:to:)` in a string instead of logging it to standard output.
 
@@ -33,7 +33,7 @@ for n in 1...5 {
 // s == "12345"
 ```
 
-### Conforming to the TextOutputStream Protocol
+## Conforming to the TextOutputStream Protocol
 
 To make your custom type conform to the `TextOutputStream` protocol, implement the required `write(_:)` method. Functions that use a `TextOutputStream` target may call `write(_:)` multiple times per writing operation.
 

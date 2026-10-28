@@ -23,7 +23,7 @@ mutating func addTaskUnlessCancelled(name: String?, priority: TaskPriority? = ni
 
 Available when `ChildTaskResult` conforms to `Sendable`.
 
-#### Return Value
+## Return Value
 
 `true` if the child task was added to the group; otherwise `false`.
 

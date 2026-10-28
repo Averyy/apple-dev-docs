@@ -23,7 +23,7 @@ var displayedPerson: ABRecord? { get set }
 @property (nonatomic, readwrite, nullable) ABRecordRef displayedPerson;
 ```
 
-#### Discussion
+## Discussion
 
 When this property has no person properties, the new-person view controller does not pre-fill properties in its views.
 

@@ -11,7 +11,7 @@ Annotate library APIs for concurrency while preserving source and ABI compatibil
 
 Concurrency annotations such as `@MainActor` and `@Sendable` can impact source and ABI compatibility. Library authors should be aware of these implications when annotating existing APIs.
 
-#### Preconcurrency annotations
+## Preconcurrency annotations
 
 The `@preconcurrency` attribute can be used directly on library APIs to stage in new concurrency requirements that are checked at compile time without breaking source or ABI compatibility for clients:
 
@@ -31,9 +31,9 @@ For ABI compatibility, `@preconcurrency` will mangle symbol names without any co
 
 Note that all APIs imported from C, C++, and Objective-C are automatically considered `@preconcurrency`. Concurrency attributes can always be applied to these APIs using `__attribute__((__swift_attr__("<attribute name>")))` without breaking source or ABI compatibility.
 
-#### Sendable
+## Sendable
 
-##### Conformances on concrete types
+### Conformances on concrete types
 
 Adding a `Sendable` conformance to a concrete type, including conditional conformances, is typically a source compatible change in practice.
 
@@ -48,7 +48,7 @@ Like any other conformance, adding a conformance to `Sendable` can change overlo
 
 Adding a `Sendable` conformance to a concrete type, and not one of its type parameters, is always an ABI compatible change.
 
-##### Generic requirements
+### Generic requirements
 
 Adding a `Sendable` conformance requirement to a generic type or function is a source incompatible change, because it places a restriction on generic arguments passed by the client.
 
@@ -66,7 +66,7 @@ Adding a `Sendable` conformance requirement to a generic type or function is a s
 public func generic<T> where T: Sendable { ... }
 ```
 
-##### Function types
+### Function types
 
 Like generic requirements, adding `@Sendable` to a function type is a source and ABI incompatible change:
 
@@ -84,9 +84,9 @@ Like generic requirements, adding `@Sendable` to a function type is a source and
 public func performConcurrently(completion: @escaping @Sendable () -> Void)
 ```
 
-#### Main actor annotations
+## Main actor annotations
 
-##### Protocols and types
+### Protocols and types
 
 Adding `@MainActor` annotations to protocols or type declarations is a source and ABI incompatible change.
 
@@ -120,7 +120,7 @@ extension P {
 
 Language affordances for precise control over the ABI of a declaration are [under development](https://forums.swift.org/t/pitch-controlling-the-abi-of-a-declaration/75123).
 
-##### Function declarations and types
+### Function declarations and types
 
 Adding `@MainActor` to a function declaration or a function type is a source and ABI incompatible change.
 
@@ -144,7 +144,7 @@ public func runOnMain() { ... }
 public func performConcurrently(completion: @escaping @MainActor () -> Void) { ... }
 ```
 
-#### `sending` parameters and results
+## `sending` parameters and results
 
 Adding `sending` to a result lifts restrictions in client code, and is always a source and ABI compatible change:
 
@@ -166,7 +166,7 @@ However, adding `sending` to a parameter is more restrictive at the caller.
 
 There is currently no way to stage in a new `sending` annotation on a parameter without breaking source compatibility.
 
-##### Replacing `@Sendable` with `sending`
+### Replacing `@Sendable` with `sending`
 
 Replacing an existing `@Sendable` annotation with `sending` on a closure parameter is a source compatible, ABI incompatible change.
 

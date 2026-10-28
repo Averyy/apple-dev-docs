@@ -24,7 +24,7 @@ static var failOnBinaryArchiveMiss: MTLStitchedLibraryOptions { get }
 MTLStitchedLibraryOptionFailOnBinaryArchiveMiss
 ```
 
-#### Discussion
+## Discussion
 
 By default, Metal compiles the functions for a stitched library if they aren’t in a binary archive. When you set this option, Metal returns an error instead of compiling a missing function.
 

@@ -22,7 +22,7 @@ static let automatic: ImageAnalysisInteraction.InteractionTypes
 
 - [Enabling Live Text interactions with images](../../enabling-live-text-interactions-with-images.md)
 
-#### Discussion
+## Discussion
 
 People can select text to perform actions, and after tapping the Live Text button, they can interact with data detectors. If the [`allowLongPressForDataDetectorsInTextMode`](../allowlongpressfordatadetectorsintextmode.md) property is `true`, a person can touch and hold text to activate data detectors without tapping the Live Text button.
 

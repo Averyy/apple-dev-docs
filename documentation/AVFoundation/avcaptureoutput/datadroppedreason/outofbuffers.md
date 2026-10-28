@@ -24,7 +24,7 @@ case outOfBuffers
 AVCaptureOutputDataDroppedReasonOutOfBuffers
 ```
 
-#### Discussion
+## Discussion
 
 This situation typically indicates that your delegate object is holding on to captured data buffers for too long. If you need to perform extended processing of captured data, copy that data into buffers whose lifetimes you manage instead of relying on buffers vended by the capture output.
 

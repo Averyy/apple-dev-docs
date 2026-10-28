@@ -23,7 +23,7 @@ string Certainty
 - `unlikely`
 - `unknown`
 
-#### Possible Values
+## Possible Values
 
 - **observed**: The event has already occurred or is ongoing.
 - **likely**: The event is likely to occur (greater than 50% probability).

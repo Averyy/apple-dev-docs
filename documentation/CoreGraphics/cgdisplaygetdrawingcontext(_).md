@@ -20,11 +20,11 @@ func CGDisplayGetDrawingContext(_ display: CGDirectDisplayID) -> CGContext?
 extern CGContextRefCGDisplayGetDrawingContext(CGDirectDisplayID display);
 ```
 
-#### Return Value
+## Return Value
 
 A Quartz graphics context suitable for drawing to a captured display, or `NULL` if the display has not been captured. The context is owned by the system and you should not release it.
 
-#### Discussion
+## Discussion
 
 After capturing a display or changing the configuration of a captured display, you can use this function to obtain the current graphics context for the display. The graphics context remains valid while the display is captured and the display configuration is unchanged. Releasing the captured display or reconfiguring the display invalidates the context. To determine when the display configuration is changing, you can use the function [`CGDisplayRegisterReconfigurationCallback(_:_:)`](./cgdisplayregisterreconfigurationcallback%28_,_%29.md) to register a display reconfiguration callback.
 

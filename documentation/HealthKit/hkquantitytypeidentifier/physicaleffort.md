@@ -24,7 +24,7 @@ static let physicalEffort: HKQuantityTypeIdentifier
 extern HKQuantityTypeIdentifier const HKQuantityTypeIdentifierPhysicalEffort;
 ```
 
-#### Discussion
+## Discussion
 
 These samples use power in Metabolic Equivalent of Task (METs) units (described in [`HKUnit`](../hkunit.md)) and measure discrete values (described in [`HKQuantityAggregationStyle`](../hkquantityaggregationstyle.md)). Physical effort is estimated and recorded automatically by Apple Watch.
 

@@ -15,7 +15,7 @@ The response body for a successful subscription cancellation.
 object SubscriptionCancelResponse
 ```
 
-#### Discussion
+## Discussion
 
 This is the response body for the [`Cancel a Subscription`](./cancel-a-subscription.md) endpoint.
 

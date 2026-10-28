@@ -25,7 +25,7 @@ var materials: [SCNMaterial] { get set }
 @property (nonatomic, copy) NSArray<SCNMaterial *> * materials;
 ```
 
-#### Discussion
+## Discussion
 
 Materials provide the information SceneKit uses to add color, lighting, texture, and special effects when rendering a geometry. Each [`SCNMaterial`](../scnmaterial.md) object can be shared between several geometries.
 

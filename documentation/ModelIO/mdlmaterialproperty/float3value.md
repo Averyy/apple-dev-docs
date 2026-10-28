@@ -24,7 +24,7 @@ var float3Value: vector_float3 { get set }
 @property (nonatomic, assign) vector_float3 float3Value;
 ```
 
-#### Discussion
+## Discussion
 
 A 3-component vector can also be used to store RGB3 color values. In this case, color components should be interpreted using the Rec. 709 color space standard.
 

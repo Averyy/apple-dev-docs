@@ -24,7 +24,7 @@ var preserveInvariance: Bool { get set }
 @property (nonatomic, readwrite) BOOL preserveInvariance;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`false`](../../Swift/false.md). When [`true`](../../Swift/true.md), the Metal shader compiler looks at the position value in all vertex output structures that it compiles. If the position value also has the `[[invariant]]` attribute, the compiler compiles the corresponding vertex shader conservatively to guarantee that the GPU performs the calculations the same way. You need to preserve invariance when your renderer contains multiple render passes and requires the same position calculations in each render pass.
 

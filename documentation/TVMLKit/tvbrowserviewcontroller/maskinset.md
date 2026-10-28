@@ -19,7 +19,7 @@ var maskInset: UIEdgeInsets { get set }
 @property (nonatomic, assign) UIEdgeInsets maskInset;
 ```
 
-#### Discussion
+## Discussion
 
 The default is `UIEdgeInsetsMake(32.0, 120.0, 0.0, 120.0)`.
 

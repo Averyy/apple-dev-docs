@@ -24,7 +24,7 @@ case timeout
 MTLCommandBufferErrorTimeout
 ```
 
-#### Discussion
+## Discussion
 
 Possible causes include:
 

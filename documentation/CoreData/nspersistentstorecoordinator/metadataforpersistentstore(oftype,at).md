@@ -27,15 +27,15 @@ class func metadataForPersistentStore(ofType storeType: String?, at url: URL) th
 + (NSDictionary<NSString *,id> *) metadataForPersistentStoreOfType:(NSString *) storeType URL:(NSURL *) url error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary containing the metadata stored in the persistent store at `url`, or `nil` if the store cannot be opened or if there is a problem accessing its contents.
 
-#### Discussion
+## Discussion
 
 The keys guaranteed to be in this dictionary are [`NSStoreTypeKey`](../nsstoretypekey.md) and [`NSStoreUUIDKey`](../nsstoreuuidkey.md).
 
-#### Discussion
+## Discussion
 
 You can use this method to retrieve the metadata from a store without the overhead of creating a Core Data stack.
 

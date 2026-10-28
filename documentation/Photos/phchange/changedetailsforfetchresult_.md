@@ -20,11 +20,11 @@ Returns detailed change information for a fetch result.
 - (PHFetchResultChangeDetails *) changeDetailsForFetchResult:(PHFetchResult *) object;
 ```
 
-#### Return Value
+## Return Value
 
 A change details object, or `nil` if there have been no changes affecting the fetch result’s contents.
 
-#### Discussion
+## Discussion
 
 When Photos calls your change observer’s [`photoLibraryDidChange(_:)`](../phphotolibrarychangeobserver/photolibrarydidchange%28_%29.md) method, call the [`changeDetailsForObject:`](./changedetailsforobject_.md) [`changeDetails(for:)`](./changedetails%28for%29-2fne7.md) method to get detailed change information about the results of a fetch you’ve previously performed. If there have been any changes in the Photos library affecting the fetch, the resulting [`PHFetchResultChangeDetails`](../phfetchresultchangedetails.md) object tells you if any contents in the fetch result have been added, removed, or changed since you fetched it. If there have been no changes since you performed the fetch, this method returns `nil`.
 

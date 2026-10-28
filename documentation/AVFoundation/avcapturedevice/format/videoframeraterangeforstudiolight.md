@@ -23,7 +23,7 @@ var videoFrameRateRangeForStudioLight: AVFrameRateRange? { get }
 @property (nonatomic, readonly, nullable) AVFrameRateRange * videoFrameRateRangeForStudioLight;
 ```
 
-#### Discussion
+## Discussion
 
 Devices may support a limited frame rate range when Studio Light is active. If the format doesn’t support Studio Light, this property is `nil`.
 

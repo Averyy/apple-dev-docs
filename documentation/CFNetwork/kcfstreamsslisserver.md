@@ -24,7 +24,7 @@ let kCFStreamSSLIsServer: CFString
 extern CFStringRef const kCFStreamSSLIsServer;
 ```
 
-#### Discussion
+## Discussion
 
 By default, the value of this key is `kCFBooleanFalse` (the connection is not to act as a server). If the value of this key is `kCFBooleanTrue`, the `kCFStreamSSLCertificates` key must contain a valid value.
 

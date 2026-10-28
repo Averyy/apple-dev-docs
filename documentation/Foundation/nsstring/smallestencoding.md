@@ -25,7 +25,7 @@ var smallestEncoding: UInt { get }
 @property (readonly) NSStringEncoding smallestEncoding;
 ```
 
-#### Discussion
+## Discussion
 
 This encoding may not be the fastest for accessing characters, but is space-efficient. This property may take some time to access.
 

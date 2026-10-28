@@ -19,11 +19,11 @@ func SCPreferencesSetComputerName(_ prefs: SCPreferences, _ name: CFString?, _ n
 Boolean SCPreferencesSetComputerName(SCPreferencesRef prefs, CFStringRef name, CFStringEncoding nameEncoding);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if successful; otherwise, `FALSE`.
 
-#### Discussion
+## Discussion
 
 To commit these changes to permanent storage you must call the [`SCPreferencesCommitChanges(_:)`](./scpreferencescommitchanges%28_%29.md) function. In addition, you must call the [`SCPreferencesApplyChanges(_:)`](./scpreferencesapplychanges%28_%29.md) function for the new name to become active.
 

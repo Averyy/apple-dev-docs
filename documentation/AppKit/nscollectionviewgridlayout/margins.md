@@ -19,7 +19,7 @@ var margins: NSEdgeInsets { get set }
 @property NSEdgeInsets margins;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is `NSEdgeInsetsZero`. Changing this property to a new value invalidates the layout.
 

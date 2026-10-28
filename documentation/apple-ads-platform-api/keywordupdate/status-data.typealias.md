@@ -20,11 +20,11 @@ string KeywordUpdate.Status
 - `ENABLED`: Keyword is active and eligible to serve.
 - `PAUSED`: Keyword is paused and will not serve.
 
-#### Discussion
+## Discussion
 
 Send `status: PAUSED` to stop an existing keyword from competing in auctions, or `ENABLED` to resume it.
 
-##### Example
+### Example
 
 ```json
 {

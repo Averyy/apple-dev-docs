@@ -5,7 +5,7 @@
 
 Transition between images in creative ways using Core Image filters.
 
-#### Overview
+## Overview
 
 You can add visual effects to an image transition by chaining together Core Image [`CIFilter`](./cifilter-swift.class.md) objects in the category [CICategoryTransition](https://developer.apple.com/library/archive/documentation/GraphicsImaging/Reference/CoreImageFilterReference/index.html#//apple_ref/doc/uid/TP30000136-SW239). Each filter from this category represents a single transition effect.
 
@@ -17,7 +17,7 @@ For example, you can combine an effect that dissolves an image and one that pixe
 
 ![Pixelated transition from a beach at daytime with rainbow in the sky to a beach at sunset](https://developer.apple.com/tutorials/images/com.apple.coreimage/media-2960176@2x.png)
 
-##### Load Source and Target Images
+### Load Source and Target Images
 
 Filters in the transition category require your program to load both source and target images in order to transform the source into the destination.
 
@@ -29,7 +29,7 @@ NSURL* destinationURL = [[NSBundle mainBundle] URLForResource:@"YourTargetImage"
 _finalCIImage = [CIImage imageWithContentsOfURL:destinationURL];
 ```
 
-##### Create a Time-Dependent Dissolve Transition
+### Create a Time-Dependent Dissolve Transition
 
 The key difference of transition filters from their normal filter chain counterparts is the dependence on time.  After creating a [`CIFilter`](./cifilter-swift.class.md) from the [Transition Filters](./transition-filters.md) category, you set the value of the `time` parameter to a float between `0.0` and `1.0` to indicate how far along the transition has progressed.
 
@@ -54,7 +54,7 @@ You don’t need to pass time linearly from `0.0` to `1.0`. In fact, you can adv
 
 ![A graphic of simd_smoothstep, showing a smooth ramp between 0 and 1](https://developer.apple.com/tutorials/images/com.apple.coreimage/media-2960171@2x.png)
 
-##### Create a Time-Dependent Pixelate Transition
+### Create a Time-Dependent Pixelate Transition
 
 Like the dissolve transition, you can write the pixelate transition filter as a time-dependent function as well.
 
@@ -76,7 +76,7 @@ As with the dissolve filter, you can modify the speed and acceleration of the tr
 
 This function puts the peak of the pixelation at the middle of the transition: the pixels start and end small, closely approximating the source image, but as the transition reaches its halfway point, the pixels scale to their largest size, effectively blocking out the moment farthest from source and target.
 
-##### Step Time with a Display Link
+### Step Time with a Display Link
 
 In writing the filter functions to accept a time parameter, you parametrized the transition effect moving from source to target. Now, you must move time forward when you want to perform the transition.
 
@@ -89,7 +89,7 @@ Adding a [`CADisplayLink`](../QuartzCore/cadisplaylink.md) to your run loop give
 
 > **Note**:  Adding a [`Timer`](../Foundation/timer.md) may seem like a logical strategy for stepping time, but the display link fires with greater precision in sync with screen redraws.
 
-###### Create the Display Link to Call an Update Function
+#### Create the Display Link to Call an Update Function
 
 ```swift
 _displayLink = [CADisplayLink displayLinkWithTarget:self 
@@ -98,7 +98,7 @@ _displayLink = [CADisplayLink displayLinkWithTarget:self
 
 Keeping the display link around beyond function scope allows you to remove it when the transition completes.
 
-###### Add the Display Link to Begin the Transition
+#### Add the Display Link to Begin the Transition
 
 To begin the transition effect, add the [`CADisplayLink`](../QuartzCore/cadisplaylink.md) to your program’s main run loop, so it can execute each time step and redraw the transitioning [`CIImage`](./ciimage.md).
 
@@ -112,7 +112,7 @@ To begin the transition effect, add the [`CADisplayLink`](../QuartzCore/cadispla
 }
 ```
 
-###### Write the Transition Update Function
+#### Write the Transition Update Function
 
 The [`CADisplayLink`](../QuartzCore/cadisplaylink.md) should call a time-stepping function on each pass through the run loop.  Inside this function, recompute the filtered image with that frame’s `time` variable.
 
@@ -153,7 +153,7 @@ As a convenience, the following helper function shows a CIImage in a UIImageView
 }
 ```
 
-##### Explore Other Transition Visual Effects
+### Explore Other Transition Visual Effects
 
 The Core Image framework provides many distinct visual effects through its built-in catalog of filters. You can substitute a different transition effect for the dissolve and pixelation effects.
 

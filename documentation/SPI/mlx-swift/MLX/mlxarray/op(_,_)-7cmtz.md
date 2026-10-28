@@ -17,7 +17,7 @@ Element-wise division with a [`ScalarOrArray`](../scalarorarray.md) (scalar) arg
 static func / (lhs: some ScalarOrArray, rhs: MLXArray) -> MLXArray
 ```
 
-##### See Also
+### See Also
 
 - [Arithmetic](../arithmetic.md)
 

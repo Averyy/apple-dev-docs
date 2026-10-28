@@ -18,7 +18,7 @@ Whether a declared tool name that begins a line, followed by a JSON arguments ob
 var supportsMarkerlessNamedJSON: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 The dialect has no markers, so `ToolCallProcessor` detects it only when tool schemas are supplied and the name is one of them.
 

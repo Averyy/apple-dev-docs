@@ -19,7 +19,7 @@ func convertFromScreen(_ rect: NSRect) -> NSRect
 - (NSRect) convertRectFromScreen:(NSRect) rect;
 ```
 
-#### Return Value
+## Return Value
 
 A rectangle in the window’s coordinate system.
 

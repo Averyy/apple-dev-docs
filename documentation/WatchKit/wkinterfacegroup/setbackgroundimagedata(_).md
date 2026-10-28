@@ -19,7 +19,7 @@ func setBackgroundImageData(_ imageData: Data?)
 - (void) setBackgroundImageData:(NSData *) imageData;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method when you already have image data in the raw PNG or JPG format. This method sends the data as-is, which lets you send the data in a compressed format. Sending compressed data is often more efficient than sending a [`UIImage`](../../UIKit/uiimage.md) object.
 

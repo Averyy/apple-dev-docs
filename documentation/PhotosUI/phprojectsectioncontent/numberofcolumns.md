@@ -19,7 +19,7 @@ var numberOfColumns: Int { get }
 @property (nonatomic, readonly) NSInteger numberOfColumns;
 ```
 
-#### Discussion
+## Discussion
 
 The number of columns informs the suggested layout of the content, in resolution-independent grid space units. One grid space unit is defined as the width of the project canvas divided by `numberOfColumns`.
 

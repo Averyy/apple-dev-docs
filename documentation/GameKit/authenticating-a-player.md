@@ -5,7 +5,7 @@
 
 Confirm player credentials and device capabilities and check for account restrictions.
 
-#### Overview
+## Overview
 
 To identify themselves and access their game data from all their devices, players create a Game Center account that includes a profile with an avatar and nickname. A single account allows players to sign in to Game Center once and use the same credentials for all Game Center games on their device.
 
@@ -13,7 +13,7 @@ In the GameKit framework, you use player objects to post scores, award achieveme
 
 Before you access any Game Center data, you must verify that the local player signed in to Game Center on the device. Check if the player has any account restrictions and adjust your game accordingly. On Apple TV, your game can also support the ability to switch between user accounts.
 
-##### Initialize the local player
+### Initialize the local player
 
 In your game, you need to initialize the local player before you can use any GameKit APIs and Game Center services. Game Center verifies the credentials of the player and ensures their account is ready for use. Game Center also checks whether you configured your game for Game Center.
 
@@ -34,7 +34,7 @@ GameKit calls the handler, possibly several times, for the following cases:
 - If the player decides not to sign in or create a Game Center account, GameKit sets the local player’s [`isAuthenticated`](./gklocalplayer/isauthenticated.md) property to [`false`](../Swift/false.md) and calls the handler again by passing an error that indicates the reason the player isn’t available. In this case, disable Game Center in your game.
 - If the local player previously signed in on the device when you set the handler, GameKit sets the local player’s [`isAuthenticated`](./gklocalplayer/isauthenticated.md) property to [`true`](../Swift/true.md) and passes `nil` for both the view controller and error parameters, and you can start the game.
 
-##### Check for restrictions
+### Check for restrictions
 
 Before starting a game, check the local player’s account for restrictions and disable or hide features and content accordingly.
 
@@ -73,7 +73,7 @@ GKLocalPlayer.local.authenticateHandler = { viewController, error in
 
 If the `isPersonalizedCommunicationRestricted` property is [`true`](../Swift/true.md), then the player isn’t allowed to use voice or messaging features during a multiplayer game. If your game includes any custom communication features, you should disable them. Note that if the player is underage, this property is always [`true`](../Swift/true.md).
 
-##### Support user switching
+### Support user switching
 
 Multiple people can sign in to their accounts on a single Apple TV and you can allow players to run your game on Apple TV using their individual Game Center account. After you configure your app, add code to support user switching; otherwise, the system runs your game as the default user.
 

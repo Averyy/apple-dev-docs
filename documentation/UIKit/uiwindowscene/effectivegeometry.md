@@ -23,7 +23,7 @@ var effectiveGeometry: UIWindowScene.Geometry { get }
 @property (nonatomic, readonly) UIWindowSceneGeometry * effectiveGeometry;
 ```
 
-#### Discussion
+## Discussion
 
 This property is key-value observing (KVO) compliant. Observing [`effectiveGeometry`](./effectivegeometry.md) is the recommended way to receive notifications of changes to the window scene’s geometry. These changes can occur because of user interaction or as a result of the system resolving a geometry request.
 

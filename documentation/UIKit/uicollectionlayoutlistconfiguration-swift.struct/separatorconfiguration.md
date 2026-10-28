@@ -18,7 +18,7 @@ The section’s preferred configuration for list separators.
 var separatorConfiguration: UIListSeparatorConfiguration { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This configuration only takes effect if [`showsSeparators`](./showsseparators.md) is [`true`](../../Swift/true.md).
 

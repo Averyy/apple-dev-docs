@@ -20,7 +20,7 @@ func adjust(with descriptors: UnsafePointer<IOUSBHostIOSourceDescriptors>) throw
 - (BOOL) adjustPipeWithDescriptors:(const IOUSBHostIOSourceDescriptors *) descriptors error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 During creation, periodic (interrupt and isochronous) endpoints reserve bus bandwidth to allow for maximum packet size, mult (the maximum number of packets that this endpoint supports), burst size, and the endpoint service interval.
 

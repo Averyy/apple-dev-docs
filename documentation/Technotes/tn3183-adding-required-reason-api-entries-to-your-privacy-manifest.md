@@ -5,7 +5,7 @@
 
 Declare the APIs that can potentially fingerprint devices in your app or third-party SDK in a privacy manifest.
 
-#### Overview
+## Overview
 
 When you build an app or third-party SDK that uses any required reason API, perform these steps in your privacy manifest (`PrivacyInfo.xcprivacy`):
 
@@ -18,7 +18,7 @@ This document describes how to add the `NSPrivacyAccessedAPIType`, `NSPrivacyAcc
 
 > **Note**: Before you start adding the keys to your privacy manifest, enable raw keys and values in Xcode to view the raw keys and hide their human-readable names. Click anywhere in the privacy manifest, then choose Xcode > Editor > Raw Keys and Values. Repeat the process to disable this feature.
 
-#### Select an accessed API category
+## Select an accessed API category
 
 A privacy accessed API category identifies the category of required reason APIs your app or third-party SDK uses. Set the value of the `NSPrivacyAccessedAPIType` key to a privacy accessed API category. For more information, see [Describing use of required reason API](../BundleResources/describing-use-of-required-reason-api.md).
 
@@ -30,7 +30,7 @@ The possible values of a privacy accessed API category are:
 - `NSPrivacyAccessedAPICategorySystemBootTime`
 - `NSPrivacyAccessedAPICategoryUserDefaults`
 
-#### Add an accessed API type key
+## Add an accessed API type key
 
 The `NSPrivacyAccessedAPIType` key uses the following format:
 
@@ -51,7 +51,7 @@ To add the `NSPrivacyAccessedAPIType` key to a privacy accessed API type and rea
 6. Select a privacy accessed API category from the pop-up menu in the Value column. For possible values, see [Select an accessed API category](./tn3183-adding-required-reason-api-entries-to-your-privacy-manifest.md#Select-an-accessed-API-category).
 7. Confirm that the value exactly matches the category of required reason API that your app or third-party SDK uses.
 
-#### Add an accessed API type reasons key
+## Add an accessed API type reasons key
 
 The `NSPrivacyAccessedAPITypeReasons` key uses the following format:
 
@@ -78,7 +78,7 @@ To add the `NSPrivacyAccessedAPITypeReasons` key to a privacy accessed API type 
 9. Choose a reason from the pop-up menu in the Value column. For possible values, see [Describing use of required reason API](../BundleResources/describing-use-of-required-reason-api.md).
 10. Confirm that the value exactly matches a reason for the `NSPrivacyAccessedAPIType` key you use in step 3.
 
-#### Add an accessed API type and reasons dictionary
+## Add an accessed API type and reasons dictionary
 
 A privacy accessed API type and reasons dictionary includes a category of required reason APIs and a list of related reasons. The dictionary contains exactly two keys: `NSPrivacyAccessedAPIType` and `NSPrivacyAccessedAPITypeReasons`. It uses the following format:
 
@@ -107,7 +107,7 @@ To add a privacy accessed API type and reasons dictionary to the `NSPrivacyAcces
 6. To add the `NSPrivacyAccessedAPIType` key to the dictionary, see [Add an accessed API type key](./tn3183-adding-required-reason-api-entries-to-your-privacy-manifest.md#Add-an-accessed-API-type-key).
 7. To add the `NSPrivacyAccessedAPITypeReasons` key to the dictionary, see [Add an accessed API type reasons key](./tn3183-adding-required-reason-api-entries-to-your-privacy-manifest.md#Add-an-accessed-API-type-reasons-key).
 
-#### Add the accessed API types key
+## Add the accessed API types key
 
 The `NSPrivacyAccessedAPITypes` key is an array of privacy accessed API type and reasons dictionaries. For more information, see [Add an accessed API type and reasons dictionary](./tn3183-adding-required-reason-api-entries-to-your-privacy-manifest.md#Add-an-accessed-API-type-and-reasons-dictionary). The key uses the following format:
 
@@ -200,7 +200,7 @@ Repeat step 5 for each additional required reason API your app or third-party SD
 
 ![A privacy manifest that declares disk space and user defaults required reason APIs usage.](https://developer.apple.com/tutorials/images/com.apple.technotes/tn3183-required_reason_api_entries@2x.png)
 
-#### Revision History
+## Revision History
 
 - **2024-12-17** First published.
 

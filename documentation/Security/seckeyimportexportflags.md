@@ -19,7 +19,7 @@ struct SecKeyImportExportFlags
 enum SecKeyImportExportFlags : uint32_t;
 ```
 
-#### Overview
+## Overview
 
 Use an instance of this structure to set the [`flags`](./secitemimportexportkeyparameters/flags.md) property in the [`SecItemImportExportKeyParameters`](./secitemimportexportkeyparameters.md) import/export structure.
 

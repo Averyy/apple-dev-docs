@@ -23,7 +23,7 @@ var messages: AsyncThrowingStream<ApplicationProtocol.Message<ApplicationProtoco
 
 Available when `ApplicationProtocol` conforms to `MessageProtocol`.
 
-#### Discussion
+## Discussion
 
 This may be called before the connection is ready, in which case the receive requests will be enqueued until the connection is ready.
 

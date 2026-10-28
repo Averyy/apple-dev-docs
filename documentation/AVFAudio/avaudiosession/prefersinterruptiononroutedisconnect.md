@@ -24,7 +24,7 @@ var prefersInterruptionOnRouteDisconnect: Bool { get }
 @property (readonly) BOOL prefersInterruptionOnRouteDisconnect;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`true`](../../Swift/true.md).
 

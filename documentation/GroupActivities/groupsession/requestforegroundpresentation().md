@@ -20,7 +20,7 @@ Tells the system that your app needs to be in the foreground to continue an acti
 final func requestForegroundPresentation()
 ```
 
-#### Discussion
+## Discussion
 
 Call this method if your app is in the background and can’t start the activity without the participant’s assistance. For example, you might call the method if your app requires the participant’s credentials to play back a shared media file. Don’t call this method if you’re able to start the activity without assistance. When you call this method, the system asks the participant to continue the activity in your app.
 

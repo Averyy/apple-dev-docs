@@ -21,11 +21,11 @@ Modifies the format style to use the specified rounding rule and increment.
 func rounded(rule: Decimal.FormatStyle.Configuration.RoundingRule = .toNearestOrEven, increment: Int? = nil) -> Decimal.FormatStyle
 ```
 
-#### Return Value
+## Return Value
 
 A decimal format style modified to use the specified rounding rule and increment.
 
-#### Discussion
+## Discussion
 
 The following example creates a default [`Decimal.FormatStyle`](../formatstyle.md) for the `en_US` locale, and a modified style that rounds integers to the nearest multiple of `100`. It then formats the value `1999.95` using these format styles.
 

@@ -16,7 +16,7 @@ Generates an opaque token that the system uses to keep your networking extension
 + (NSData *) createAccessToken;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to generate a token that you pass to [`initWithSourceURL:destinationURL:observedProgress:liveActivityAccessToken:`](./initwithsourceurl_destinationurl_observedprogress_liveactivityaccesstoken_.md).
 

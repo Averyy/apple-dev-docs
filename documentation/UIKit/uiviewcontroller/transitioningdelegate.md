@@ -23,7 +23,7 @@ weak var transitioningDelegate: (any UIViewControllerTransitioningDelegate)? { g
 @property (nonatomic, weak, nullable) id<UIViewControllerTransitioningDelegate> transitioningDelegate;
 ```
 
-#### Discussion
+## Discussion
 
 When the view controller’s [`modalPresentationStyle`](./modalpresentationstyle.md) property is [`UIModalPresentationStyle.custom`](../uimodalpresentationstyle/custom.md), UIKit uses the object in this property to facilitate transitions and presentations for the view controller. The transitioning delegate object is a custom object that you provide and that conforms to the [`UIViewControllerTransitioningDelegate`](../uiviewcontrollertransitioningdelegate.md) protocol. Its job is to vend the animator objects used to animate this view controller’s view onscreen and an optional presentation controller to provide any additional chrome and animations.
 

@@ -21,7 +21,7 @@ An image-analysis request that you track over time to determine the affine trans
 final class TrackTranslationalImageRegistrationRequest
 ```
 
-#### Overview
+## Overview
 
 This request generates an [`ImageTranslationAlignmentObservation`](./imagetranslationalignmentobservation.md) object that describes the transform data the request detects.
 

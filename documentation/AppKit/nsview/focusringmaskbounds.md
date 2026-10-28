@@ -19,7 +19,7 @@ var focusRingMaskBounds: NSRect { get }
 @property (readonly) NSRect focusRingMaskBounds;
 ```
 
-#### Discussion
+## Discussion
 
 The rectangle in this property is specified relative to the view’s interior (bounds) coordinate space. The mask bounds allows the focus ring’s overall size and position to be determined before it is drawn. Override this property if your view requires the display of a focus ring. The default value of this property is [`NSZeroRect`](../../Foundation/nszerorect.md).
 

@@ -5,7 +5,7 @@
 
 Identify the signature of an unresponsive app terminated by the watchdog, and address the issue.
 
-#### Overview
+## Overview
 
 Users expect apps to launch quickly, and are responsive to touches and gestures. The operating system employs a watchdog that monitors launch times and app responsiveness, and terminates unresponsive apps. Watchdog terminations use the code `0x8badf00d` (pronounced “ate bad food”) in the Termination Reason of a crash report:
 
@@ -27,7 +27,7 @@ To understand why blocking the main thread is an issue, consider the most common
 
 ![A timing diagram for the main thread showing UI scrolling events queued behind a long-running networking operation.](https://developer.apple.com/tutorials/images/com.apple.Xcode/addressing-watchdog-terminations-1@2x.png)
 
-##### Interpret the app responsiveness watchdog information
+### Interpret the app responsiveness watchdog information
 
 When an app is slow to launch or respond to events, the termination information in the crash report contains important information about how the app spent its time. For example, an iOS app that doesn’t render the UI quickly after launch has the following in the crash report:
 
@@ -55,7 +55,7 @@ The `Elapsed total CPU time` shows how much time the CPU ran for all processes o
 
 The `Elapsed application CPU time` shows how much time the app spent running on the CPU within the wall clock time. If this number is at either extreme, it is a hint to the problem. If this number is high, the app is performing significant work across all of its threads—the number aggregates all threads, and isn’t specific to the main thread. If this number is low, the app is mostly idle, because it is waiting on system resources, such as a network connection.
 
-##### Interpret background task watchdog information (watchOS)
+### Interpret background task watchdog information (watchOS)
 
 In addition to the app responsiveness watchdog, watchOS has a watchdog for background tasks. In this example, an app didn’t complete handling a [Watch Connectivity](../WatchConnectivity/WatchConnectivity.md) background task within the time allowance:
 
@@ -74,7 +74,7 @@ Termination Description: SPRINGBOARD,
 
 Interpret the information about wall clock time and CPU time as described in [Interpret the app responsiveness watchdog information](./addressing-watchdog-terminations.md#Interpret-the-app-responsiveness-watchdog-information).
 
-##### Identify the reason the watchdog triggered
+### Identify the reason the watchdog triggered
 
 The backtraces are sometimes helpful in identifying what is taking so much time on the app’s main thread. For example, if an app uses synchronous networking on the main thread, networking functions are visible in the main thread’s backtrace.
 
@@ -98,7 +98,7 @@ You may be able to use the information from all backtraces in the crash report t
 
 In addition, profile your app’s performance during development to eliminate problems before releasing the app, and monitor the app’s performance after the app is released. [Reducing your app’s launch time](./reducing-your-app-s-launch-time.md) and [Improving app responsiveness](./improving-app-responsiveness.md) provide more information on these techniques.
 
-##### Identify hidden synchronous networking code
+### Identify hidden synchronous networking code
 
 Synchronous networking that blocks the main thread and leads to a watchdog termination are sometimes hidden behind abstraction layers that mask the danger. The example backtrace in [Identify the reason the watchdog triggered](./addressing-watchdog-terminations.md#Identify-the-reason-the-watchdog-triggered) shows the app triggered the synchronous download by calling `init(contentsOf:)` with a `https` URL, in frame 7. This API implicitly makes a synchronous network request before returning from the initializer. Even if this initalizer completed quickly and wasn’t in the crash report, it still can contribute to a watchdog termination. Other classes with an initalizer that takes a URL parameter, such as [`XMLParser`](../Foundation/xmlparser.md) and [`NSData`](../Foundation/nsdata.md), behave in the same way.
 
@@ -109,7 +109,7 @@ Other common examples of hidden synchronous networking include the following:
 
 Synchronous networking issues depend a great deal on the network environment. If you always test your app in your office, where network connectivity is good, you’ll never see this type of issue. However, once you start deploying your app to users—who run apps in all sorts of network environments—synchronous networking problems become common. In Xcode, you can simulate adverse network conditions to aid testing your app under the conditions your users encounter. See [Test under adverse device conditions (iOS)](https://help.apple.com/xcode/mac/current/#/dev308429d42).
 
-##### Move code off the main thread
+### Move code off the main thread
 
 Move all long-running code not essential to your app’s UI to a background queue. By moving this work to a background queue, the app’s main thread can complete the app’s launch faster and process events quicker. Using a networking example, rather than performing a synchronous network call on the main thread, move it to an asynchronous background queue. By moving this work to a background queue, the main thread can process scroll events as they happen, allowing the app to be more responsive.
 

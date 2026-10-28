@@ -22,7 +22,7 @@ Creates a public key from an encoded representation.
 init<D>(_ serialization: D, kem: HPKE.KEM) throws where D : ContiguousBytes
 ```
 
-#### Discussion
+## Discussion
 
 - serialization: The serialized key data.
 - kem: The key encapsulation mechanism that the sender used to encapsulate the key.

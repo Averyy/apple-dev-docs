@@ -24,7 +24,7 @@ class var outputIsOpaque: Bool { get }
 @property (class, readonly) bool outputIsOpaque;
 ```
 
-#### Discussion
+## Discussion
 
 If not overridden, false is returned.
 

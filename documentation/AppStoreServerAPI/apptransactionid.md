@@ -19,7 +19,7 @@ string appTransactionId
 
 - [App Store Server API changelog](./app-store-server-api-changelog.md)
 
-#### Discussion
+## Discussion
 
 To get app transaction information, call [`Get App Transaction Info`](./get-app-transaction-info.md) and provide the `appTransactionId`.
 

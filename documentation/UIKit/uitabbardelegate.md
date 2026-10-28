@@ -24,7 +24,7 @@ protocol UITabBarDelegate : NSObjectProtocol
 @protocol UITabBarDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Send [`beginCustomizingItems(_:)`](./uitabbar/begincustomizingitems%28_%29.md) to a [`UITabBar`](./uitabbar.md) object to begin customizing. Implement the methods in Customizing tab bars to intervene while a user is customizing a tab bar. The customizing modal view is dismissed when the user taps the Done button on the modal view.
 

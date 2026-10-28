@@ -16,7 +16,7 @@
 kINQUIRY_Byte7_VS_Bit
 ```
 
-#### Discussion
+## Discussion
 
 VS bit definition.
 

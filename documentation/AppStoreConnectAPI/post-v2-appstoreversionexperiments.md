@@ -13,9 +13,9 @@ Add a new experiment to an App Store version.
 
 - [App Store Connect API 2.4 release notes](./app-store-connect-api-2-4-release-notes.md)
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 
@@ -77,7 +77,7 @@ POST https://api.appstoreconnect.apple.com/v2/appStoreVersionExperiments -d
 
 ```
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

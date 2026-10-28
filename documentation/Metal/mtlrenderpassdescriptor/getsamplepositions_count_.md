@@ -20,11 +20,11 @@ Retrieves the programmable sample positions set for a render pass.
 - (NSUInteger) getSamplePositions:(MTLSamplePosition *) positions count:(NSUInteger) count;
 ```
 
-#### Return Value
+## Return Value
 
 The total number of programmable sample positions set for the render pass.
 
-#### Discussion
+## Discussion
 
 The value of `count` needs to be equal to the number of programmable sample positions set by a previous call to the [`setSamplePositions:count:`](./setsamplepositions_count_.md) method (the `count` parameter). Also, the `positions` array needs to contain at least as many elements as the value of `count`.
 

@@ -23,7 +23,7 @@ var currentLayout: UICollectionViewLayout { get }
 @property (nonatomic, readonly) UICollectionViewLayout * currentLayout;
 ```
 
-#### Discussion
+## Discussion
 
 This object provides the layout attributes representing the initial position of items in the collection view. If you ultimately cancel the transition, the collection view animates its items back to the positions provided by this object.
 

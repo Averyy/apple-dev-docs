@@ -24,7 +24,7 @@ optional func session(_ session: GKSession, didReceiveConnectionRequestFromPeer 
 - (void) session:(GKSession *) session didReceiveConnectionRequestFromPeer:(NSString *) peerID;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate should call the session’s [`acceptConnection(fromPeer:)`](../gksession/acceptconnection%28frompeer%29.md) method if it wants to accept the connection or the [`denyConnection(fromPeer:)`](../gksession/denyconnection%28frompeer%29.md) method if it wants to refuse the connection.
 

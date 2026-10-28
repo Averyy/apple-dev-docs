@@ -5,11 +5,11 @@
 
 Ensure data security by managing device passcodes and compliance with policies.
 
-#### Overview
+## Overview
 
 When members of your organization have proprietary information on their devices, it’s important to ensure the devices are secure. Require your users to have strong passcodes on their managed devices to secure your data. Device management makes it possible to manage and enforce these requirements.
 
-#### Manage changes to passcode policies
+## Manage changes to passcode policies
 
 You can push a profile that contains a passcode policy or a change to an existing policy without user interaction using device management. For instance, you can require a user to change their passcode to comply with a more stringent policy. When you do this, a 60-minute countdown begins. During this grace period, the user receives a prompt to change their passcode when they return to the Home screen, however, they can dismiss the prompt and continue working. After the 60-minute period elapses, the user must change the passcode to launch any application on the device, including built-in applications.
 
@@ -17,7 +17,7 @@ Use the [`SecurityInfoCommand`](./securityinfocommand.md) to determine whether a
 
 > ❗ **Important**:  Wait until the user complies with the passcode policy before sending any proprietary data or configurations to the device.
 
-#### Clear passcodes
+## Clear passcodes
 
 Passcodes add a layer of security to your organization’s devices. Occasionally, it may be necessary to clear a device’s passcode by sending it a [`ClearPasscodeCommand`](./clearpasscodecommand.md), such as when:
 

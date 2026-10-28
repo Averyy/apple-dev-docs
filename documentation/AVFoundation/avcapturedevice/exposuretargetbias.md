@@ -26,7 +26,7 @@ var exposureTargetBias: Float { get }
 
 - [Enhancing your app experience with the Camera Control](../enhancing-your-app-experience-with-the-camera-control.md)
 
-#### Discussion
+## Discussion
 
 When the device exposure mode is [`AVCaptureDevice.ExposureMode.continuousAutoExposure`](./exposuremode-swift.enum/continuousautoexposure.md) or [`AVCaptureDevice.ExposureMode.locked`](./exposuremode-swift.enum/locked.md), the bias affects both metering ([`exposureTargetOffset`](./exposuretargetoffset.md)), and the actual exposure level ([`exposureDuration`](./exposureduration.md) and [`iso`](./iso.md)).  When the exposure mode is [`AVCaptureDevice.ExposureMode.custom`](./exposuremode-swift.enum/custom.md), it only affects metering.
 

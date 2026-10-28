@@ -16,7 +16,7 @@ An error that indicates the layer doesn’t support the current pixel format for
 case unsupportedDrawableRenderContextStencilFormat
 ```
 
-#### Discussion
+## Discussion
 
 Compare the value that the [`cp_layer_renderer_configuration_get_drawable_render_context_stencil_format`](../cp_layer_renderer_configuration_get_drawable_render_context_stencil_format.md) function returns and make sure it matches one of the values that the [`cp_layer_renderer_capabilities_drawable_render_context_supported_stencil_format`](../cp_layer_renderer_capabilities_drawable_render_context_supported_stencil_format.md) function returns.
 

@@ -19,7 +19,7 @@ var layoutDirection: WKInterfaceLayoutDirection { get }
 @property (nonatomic, readonly) WKInterfaceLayoutDirection layoutDirection;
 ```
 
-#### Discussion
+## Discussion
 
 For a list of possible values, see [`WKInterfaceLayoutDirection`](../wkinterfacelayoutdirection.md).
 

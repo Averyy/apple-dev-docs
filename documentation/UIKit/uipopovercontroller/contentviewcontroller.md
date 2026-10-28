@@ -24,7 +24,7 @@ var contentViewController: UIViewController { get set }
 @property (nonatomic, strong) UIViewController * contentViewController;
 ```
 
-#### Discussion
+## Discussion
 
 This property is initially set to the view controller passed to the [`init(contentViewController:)`](./init%28contentviewcontroller%29.md) method. You can change the value of this property later to reflect a new set of content. Changing the value of this property swaps the new view controller in for the old one immediately and does not trigger an animation. If you want to animate the change, use the [`setContentView(_:animated:)`](./setcontentview%28_,animated%29.md) method instead.
 

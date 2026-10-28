@@ -23,7 +23,7 @@ optional var spellCheckingType: UITextSpellCheckingType { get set }
 @property (nonatomic) UITextSpellCheckingType spellCheckingType;
 ```
 
-#### Discussion
+## Discussion
 
 This property determines whether spell-checking is enabled or disabled during typing. With spell-checking enabled, the text object generates red underlines for all misspelled words. If the user taps on a misspelled word, the text object presents the user with a list of possible corrections.
 

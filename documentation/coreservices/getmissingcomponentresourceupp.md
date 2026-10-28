@@ -14,7 +14,7 @@
 typedef GetMissingComponentResourceProcPtr GetMissingComponentResourceUPP;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see the description of the GetMissingComponentResourceUPP callback function.
 

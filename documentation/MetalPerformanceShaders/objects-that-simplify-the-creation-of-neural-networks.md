@@ -5,7 +5,7 @@
 
 Simplify the creation of neural networks using networks of filter, image, and state nodes.
 
-#### Overview
+## Overview
 
 Graphs in Metal Performance Shaders offer a higher level graph API, intended to simplify the creation of neural networks. The graph is a network of [`MPSNNFilterNode`](./mpsnnfilternode.md), [`MPSNNImageNode`](./mpsnnimagenode.md) and [`MPSNNStateNode`](./mpsnnstatenode.md) objects.
 

@@ -25,7 +25,7 @@ let kCGImagePropertyAPNGDelayTime: CFString
 extern CFStringRef const kCGImagePropertyAPNGDelayTime;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is a [`CFNumber`](../CoreFoundation/cfnumber.md) with a floating-point value. The value of this key is never less than 50 millseconds, and the system adjusts values less than that amount to 50 milliseconds, as needed. See [`kCGImagePropertyAPNGUnclampedDelayTime`](./kcgimagepropertyapngunclampeddelaytime.md).
 

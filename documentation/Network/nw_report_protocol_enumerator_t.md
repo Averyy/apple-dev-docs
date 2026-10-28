@@ -25,7 +25,7 @@ typealias nw_report_protocol_enumerator_t = (nw_protocol_definition_t, UInt64, U
 typedef _Bool (^)(NSObject<OS_nw_protocol_definition> *, unsigned long long, unsigned long long) nw_report_protocol_enumerator_t;
 ```
 
-#### Return Value
+## Return Value
 
 Return true to continue enumerating, or false to stop enumerating.
 

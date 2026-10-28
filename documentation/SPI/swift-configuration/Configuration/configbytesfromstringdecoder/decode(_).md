@@ -25,11 +25,11 @@ Decodes a string value into an array of bytes.
 func decode(_ value: String) -> [UInt8]?
 ```
 
-#### Return Value
+## Return Value
 
 An array of bytes if decoding succeeds, or `nil` if it fails.
 
-#### Discussion
+## Discussion
 
 This method attempts to parse the provided string according to the decoder’s specific format and returns the corresponding byte array. If the string cannot be decoded (due to invalid format or encoding), the method returns `nil`.
 

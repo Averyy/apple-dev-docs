@@ -6,12 +6,15 @@ url: https://ml-explore.github.io/mlx-data/build/html/python/_autosummary/mlx.da
 
 # mlx.data.Buffer.filter_key
 
-**Buffer.filter_key(*self: mlx.data._c.Buffer*, *key: str*, *remove: bool = False*) → mlx.data._c.Buffer**
-: Transform the samples to either only contain this `key` or never
+```python
+Buffer.filter_key(self: mlx.data._c.Buffer, key: str, remove: bool = False) → mlx.data._c.Buffer
+```
+
+Transform the samples to either only contain this `key` or never
 contain this `key` based on the value of `remove`.
 
-Parameters:
+**Parameters:**
 
-**key** ([str](https://docs.python.org/3/library/stdtypes.html#str)) – The key to keep or remove.
-**remove** ([bool](https://docs.python.org/3/library/functions.html#bool)) – If set to True then remove this key instead of keeping
+- **key** ([str](https://docs.python.org/3/library/stdtypes.html#str)) – The key to keep or remove.
+- **remove** ([bool](https://docs.python.org/3/library/functions.html#bool)) – If set to True then remove this key instead of keeping
 it (default: False).

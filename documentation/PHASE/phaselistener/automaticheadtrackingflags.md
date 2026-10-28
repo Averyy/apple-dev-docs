@@ -22,7 +22,7 @@ var automaticHeadTrackingFlags: PHASEAutomaticHeadTrackingFlags { get set }
 @property (nonatomic, assign) PHASEAutomaticHeadTrackingFlags automaticHeadTrackingFlags;
 ```
 
-#### Discussion
+## Discussion
 
 A combination of flags to express automatic headtracking behaviors for this listener.
 

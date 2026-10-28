@@ -22,7 +22,7 @@ final func foundDevice(_ device: MediaOutputDevice)
 
 - [Creating a media device extension](../creating-a-media-device-extension.md)
 
-#### Discussion
+## Discussion
 
 Call this function when a `MediaDeviceExtension` discovers a new device.
 

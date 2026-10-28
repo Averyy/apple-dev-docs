@@ -5,7 +5,7 @@
 
 Generate signatures to sign your ad with versions 2.2 and 3.
 
-#### Overview
+## Overview
 
 To generate the signature, combine the required values of [Ad network install-validation keys](./ad-network-install-validation-keys.md) for version 2, and include a `fidelity-type` value of `1` for StoreKit-rendered ads.
 

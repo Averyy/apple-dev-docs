@@ -21,7 +21,7 @@ A protocol that frames and encodes/decodes Codable types.
 struct Coder<Sending, Receiving, CoderType> where Sending : Encodable, Receiving : Decodable, CoderType : NetworkCoder
 ```
 
-#### Overview
+## Overview
 
 Supports sending and receiving Codable types using a specified format.
 

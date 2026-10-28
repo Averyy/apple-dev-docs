@@ -22,7 +22,7 @@ func draw(inCGLContext ctx: CGLContextObj, pixelFormat pf: CGLPixelFormatObj, fo
 - (void) drawInCGLContext:(CGLContextObj) ctx pixelFormat:(CGLPixelFormatObj) pf forLayerTime:(CFTimeInterval) t displayTime:(const CVTimeStamp *) ts;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called when a new frame needs to be generated for the layer time specified by `timeInterval`. The viewport of `glContext` is set correctly for the size of the layer. No other state is defined. If the method enables OpenGL features, it should disable them before returning.
 

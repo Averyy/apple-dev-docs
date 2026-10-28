@@ -20,7 +20,7 @@ Retrieves the joint group names the request supports.
 - (NSArray<NSString *> *) supportedJointsGroupNamesAndReturnError:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 The array of joint group names.
 

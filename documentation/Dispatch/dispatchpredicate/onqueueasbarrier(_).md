@@ -21,7 +21,7 @@ A predicate that indicates the evaluated context is the associated dispatch queu
 case onQueueAsBarrier(DispatchQueue)
 ```
 
-#### Discussion
+## Discussion
 
 For more information about barrier operations, see `[`barrier`](../dispatchworkitemflags/barrier.md)`.
 

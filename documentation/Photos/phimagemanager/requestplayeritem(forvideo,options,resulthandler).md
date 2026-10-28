@@ -24,11 +24,11 @@ func requestPlayerItem(forVideo asset: PHAsset, options: PHVideoRequestOptions?,
 - (PHImageRequestID) requestPlayerItemForVideo:(PHAsset *) asset options:(PHVideoRequestOptions *) options resultHandler:(void (^)(AVPlayerItem *playerItem, NSDictionary *info)) resultHandler;
 ```
 
-#### Return Value
+## Return Value
 
 A numeric identifier for the request. If you need to cancel the request before it completes, pass this identifier to the [`cancelImageRequest(_:)`](./cancelimagerequest%28_%29.md) method.
 
-#### Discussion
+## Discussion
 
 When you call this method, Photos downloads the video data (if necessary) and creates a player item. It then calls your `resultHandler` block to provide the requested video.
 

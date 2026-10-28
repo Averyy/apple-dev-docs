@@ -19,7 +19,7 @@ Creates a new image creator object for you to use in your app.
 init() async throws
 ```
 
-#### Discussion
+## Discussion
 
 If the device doesn’t support image creation or the feature is currently unavailable, this initializer throws an error.
 

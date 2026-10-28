@@ -25,7 +25,7 @@ func CFDataIncreaseLength(_ theData: CFMutableData!, _ extraLength: CFIndex)
 extern void CFDataIncreaseLength(CFMutableDataRef theData, CFIndex extraLength);
 ```
 
-#### Discussion
+## Discussion
 
 This function increases the length of a CFMutableData object’s underlying byte buffer to a new size, initializing the new bytes to `0`.
 

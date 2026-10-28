@@ -19,7 +19,7 @@ let kSCValNetModemDialModeWaitForDialTone: CFString
 extern CFStringRef const kSCValNetModemDialModeWaitForDialTone;
 ```
 
-#### Discussion
+## Discussion
 
 This value applies to the [`kSCPropNetModemDialMode`](./kscpropnetmodemdialmode-swift.var.md) key.
 

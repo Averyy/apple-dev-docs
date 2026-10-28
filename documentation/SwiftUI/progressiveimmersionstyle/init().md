@@ -16,7 +16,7 @@ An immersion style that displays unbounded content that partially replaces passt
 init()
 ```
 
-#### Discussion
+## Discussion
 
 The system initially uses a radial portal effect that replaces passthrough in a portion of the field of view. People can interactively adjust the size of the portal by turning the Digital Crown, up to the point where the portal fully replaces passthrough. The latter matches the behavior of the [`full`](../immersionstyle/full.md) immersion style, including the configurable visibility of the viewer’s upper limbs.
 

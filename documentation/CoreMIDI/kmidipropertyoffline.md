@@ -23,7 +23,7 @@ let kMIDIPropertyOffline: CFString
 extern CFStringRef const kMIDIPropertyOffline;
 ```
 
-#### Discussion
+## Discussion
 
 A value of 1 indicates the device is temporarily absent and offline, and 0 indicates the object is present.
 

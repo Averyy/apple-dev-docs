@@ -13,11 +13,11 @@
 errno_t sock_inject_data_out(socket_t so, const struct sockaddr *to, mbuf_t data, mbuf_t control, sflt_data_flag_t flags);
 ```
 
-#### Return Value
+## Return Value
 
 0 on success otherwise the errno error. The data and control values are always freed regardless of return value.
 
-#### Discussion
+## Discussion
 
 Inject data in to the send buffer of the socket as if it had come from the client.
 

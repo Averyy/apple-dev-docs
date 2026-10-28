@@ -25,7 +25,7 @@ var customInfoViewControllers: [UIViewController] { get set }
 - [Adopting the system player interface in visionOS](../adopting-the-system-player-interface-in-visionos.md)
 - [Customizing the tvOS playback experience](../customizing-the-tvos-playback-experience.md)
 
-#### Discussion
+## Discussion
 
 The system uses a view controller’s [`title`](../../UIKit/uiviewcontroller/title.md) property value as the content tab title. Set this property value before adding it to the array so that the title renders correctly in the player’s user interface.
 

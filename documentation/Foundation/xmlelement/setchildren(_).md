@@ -20,7 +20,7 @@ func setChildren(_ children: [XMLNode]?)
 - (void) setChildren:(NSArray<NSXMLNode *> *) children;
 ```
 
-#### Discussion
+## Discussion
 
 Send this message with `children` as `nil` to remove all child nodes.
 

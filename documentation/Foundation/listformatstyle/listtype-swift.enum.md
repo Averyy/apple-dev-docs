@@ -21,7 +21,7 @@ A type that describes whether the returned list contains cumulative or alternati
 enum ListType
 ```
 
-#### Overview
+## Overview
 
 The possible values of a [`listType`](./listtype-swift.property.md) are `and` and `or`.
 

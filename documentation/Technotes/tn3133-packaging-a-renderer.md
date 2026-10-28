@@ -5,11 +5,11 @@
 
 Distribute a Metal renderer in a Swift package.
 
-#### Overview
+## Overview
 
 Several individual pieces make up a Metal renderer: The CPU-side app code, the GPU-side shaders, and the structures that the app code and the shaders share. Bundling these pieces together in a single Swift package is an excellent way to modularize a renderer for use in multiple projects. Read this technote to discover a Swift package structure that shares C structs between Swift and Metal code, and to learn how to access the compiled Metal source as a `MTLLibrary`.
 
-#### Configure the package manifest
+## Configure the package manifest
 
 The package structure that enables you to package Swift, Metal, and shared C sources in a single Swift package requires two [`Target`](../PackageDescription/target.md) declarations, as shown in the following example package manifest:
 
@@ -62,7 +62,7 @@ Here is a visual representation of the file structure described in the example a
                 └── SharedTypes.h
 ```
 
-#### Accessing the shared C structs in Swift
+## Accessing the shared C structs in Swift
 
 Swift Package Manager creates a module that contains the C structs found in the [`publicHeadersPath`](../PackageDescription/target/publicheaderspath.md), and because the Swift target is dependent on the C target, the C structs are directly accessible from Swift.
 
@@ -90,7 +90,7 @@ import MySharedTypes
 let vertex = AAPLVertex(position: .init(250, -250), color: .init(1, 0, 0, 1))
 ```
 
-#### Accessing the shared C structs in Metal
+## Accessing the shared C structs in Metal
 
 Using the same package structure defined above, the shared types are accessible in Metal files after importing the appropriate header file:
 
@@ -101,7 +101,7 @@ Using the same package structure defined above, the shared types are accessible 
 // Use any C types found in the imported header in this Metal file.
 ```
 
-#### Retrieving the precompiled Metal library
+## Retrieving the precompiled Metal library
 
 Swift Package Manager compiles the Metal source to a `.metallib` and stores it in the resource bundle of the target. This resource bundle is accessible from Swift through the `Bundle.module` static property.
 
@@ -118,7 +118,7 @@ do {
 
 For more information about the `Bundle.module` static property, see [Bundling resources with a Swift package](../Xcode/bundling-resources-with-a-swift-package.md).
 
-#### Introducing a custom Metal compilation step
+## Introducing a custom Metal compilation step
 
 You might want to invoke the `metal` command-line tool yourself, and provide it with arguments that fit your specific needs. For example, you could compile your Metal source with debug symbols to enable shader debugging in a client app.
 
@@ -126,7 +126,7 @@ To introduce a custom Metal compilation step to the build process, create a Swif
 
 For more information about creating and applying a Swift Package Build Tool Plugin, see [Create Swift Package plugins](https://developer.apple.com/videos/play/wwdc2022/110401/).
 
-#### Revision History
+## Revision History
 
 - **2022-11-08** First published.
 

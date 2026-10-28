@@ -12,7 +12,7 @@ virtual void feedPacketInputTap(
  mbuf_t );
 ```
 
-#### Overview
+## Overview
 
 This function is called internally to send input packets to the BPF input tap when it is enabled. Subclasses are not expected to override this method.
 

@@ -10,7 +10,7 @@ Dispatch model inference commands with a machine learning pass in a Metal 4 comm
 - macOS 26.0+
 - Xcode 26.2+
 
-#### Overview
+## Overview
 
 This sample demonstrates how to encode commands that run a machine learning model with the Metal 4 API. Each machine learning inference pass runs alongside other tasks on a Metal device and typically requires less time and overhead than running a model from the CPU and passing its outputs to a Metal workload.
 
@@ -42,7 +42,7 @@ When you run the app, it:
 
 The app reports whether the results match and exits.
 
-#### Create a compiler
+## Create a compiler
 
 The app creates an [`MTL4Compiler`](./mtl4compiler.md) along with other reusable resources like the device, command queue, and command buffer.
 
@@ -55,7 +55,7 @@ The app creates these resources one time so long-running apps avoid repeating se
 
 The app’s compiler builds the machine learning model into a pipeline state that runs on the GPU.
 
-#### Compile the pipeline state
+## Compile the pipeline state
 
 The app creates a pipeline state based on the model by passing the compiler instance and a library that represents the model to the app’s `createPipelineStateWithCompiler:fromLibrary:forMatrices:` method. The method starts by retrieving the reflection information for the library’s `main` function:
 
@@ -125,7 +125,7 @@ The model has inputs with a dynamic shape, which means the app needs to select s
 
 > **Note**: Apps need to create a pipeline state for each unique combination of dimensions for model inputs that have dynamic shapes.
 
-#### Extract tensor bindings from pipeline reflection
+## Extract tensor bindings from pipeline reflection
 
 The `extractTensorBindingsFromPipelineState:` method retrieves tensor bindings from the pipeline state.
 
@@ -149,7 +149,7 @@ extractTensorBindingsFromPipelineState:(id<MTL4MachineLearningPipelineState>)pip
 
 The app matches bindings by name because the bindings in a pipeline state reflection can be in any order. Pipeline reflection provides information about each binding, including its name, index, dimensions, and data type.
 
-#### Create tensors for the bindings
+## Create tensors for the bindings
 
 The `createTensorsForBindings:withDevice:` method creates tensors that match the dimensions and data types from the pipeline bindings.
 
@@ -204,7 +204,7 @@ The method creates a tensor for each binding by configuring the descriptor with 
 
 Each tensor stores multidimensional data on the GPU for machine learning operations.
 
-#### Fill input tensors with matrix data
+## Fill input tensors with matrix data
 
 The app copies each matrix’s data from regular memory into the corresponding tensor by calling the `copyDataToTensor:` method:
 
@@ -231,7 +231,7 @@ The [`replace(sliceOrigin:sliceDimensions:withBytes:strides:)`](./mtltensor/repl
 
 > **Note**: The sample includes helper methods in the `Matrix+TensorUtilities` category that create default arguments for the origin and stride parameters.
 
-#### Add each tensor to an argument table entry
+## Add each tensor to an argument table entry
 
 The app provides machine learning pass access to the input and output tensors by binding each tensor to an entry in an argument table:
 
@@ -247,7 +247,7 @@ for (NSString *tensorName in bindingsByName) {
 
 Each argument table entry has a unique index, and refers to each tensor by the value of its [`gpuResourceID`](./mtltensor/gpuresourceid.md) property.
 
-#### Create an intermediates heap
+## Create an intermediates heap
 
 A machine learning encoder sometimes needs a temporary pool of memory as it encodes a pass. The app creates a heap for the encoder based on the value of the pipeline state’s [`intermediatesHeapSize`](./mtl4machinelearningpipelinestate/intermediatesheapsize.md) property:
 
@@ -265,7 +265,7 @@ if (intermediatesHeap == nil) {
 
 Each machine learning encoder needs a heap that supports the [`MTLHeapType.placement`](./mtlheaptype/placement.md) option. An encoder creates the intermediate resources it needs from this heap as it encodes a machine learning pass to a command buffer.
 
-#### Encode the machine learning pass
+## Encode the machine learning pass
 
 To run a model inference on the Metal device, the app encodes a machine learning dispatch pass into its command buffer.
 
@@ -290,7 +290,7 @@ It adds a machine learning pass to the command buffer by calling the encoder’s
 [commandBuffer endCommandBuffer];
 ```
 
-#### Run the machine learning pass
+## Run the machine learning pass
 
 The app submits the machine learning pass to the Metal device by committing the command buffer to a queue:
 
@@ -302,7 +302,7 @@ It may take the Metal device some time to run the contents of a command buffer, 
 
 > 💡 **Tip**: You can reuse an [`MTL4CommandBuffer`](./mtl4commandbuffer.md) instance immediately after committing it to a queue.
 
-#### Wait for machine learning pass to finish
+## Wait for machine learning pass to finish
 
 The app detects when the device has finished running the pass by adding a signal command that updates an [`MTLSharedEvent`](./mtlsharedevent.md) instance to the queue:
 
@@ -329,7 +329,7 @@ if (!success) {
 
 The timeout value is large enough to give the GPU enough time to run the command buffer’s single pass, and small enough that the app can report potential problems, such as stalls or an error state.
 
-#### Retrieve the results from the machine learning pass
+## Retrieve the results from the machine learning pass
 
 The app copies the data from the output tensor into a new matrix instance with an initializer:
 

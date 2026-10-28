@@ -24,11 +24,11 @@ func makeAssetDownloadTask(downloadConfiguration: AVAssetDownloadConfiguration) 
 - (AVAssetDownloadTask *) assetDownloadTaskWithConfiguration:(AVAssetDownloadConfiguration *) downloadConfiguration;
 ```
 
-#### Return Value
+## Return Value
 
 A new download task.
 
-#### Discussion
+## Discussion
 
 This method raises an exception if you call it on an invalidated session.
 

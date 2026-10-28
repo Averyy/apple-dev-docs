@@ -11,11 +11,11 @@ virtual IOReturn getIndexValue(
  UInt32 &value);
 ```
 
-#### Return Value
+## Return Value
 
 kIOReturnSuccess if the index exists in the dictionary and is of a type appropriate for the value parameter
 
-#### Overview
+## Overview
 
 Gets the value at the specified index of the directory, in a variety of forms.
 

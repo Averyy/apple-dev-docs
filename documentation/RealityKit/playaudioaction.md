@@ -20,7 +20,7 @@ An action which plays an audio resource on the given target entity.
 struct PlayAudioAction
 ```
 
-#### Overview
+## Overview
 
 Use this action to initiate the playback of audio in a data-driven way. For example, this action can play an animation group which contains a nested action, which plays audio with specific playback properties.
 

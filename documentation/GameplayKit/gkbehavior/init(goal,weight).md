@@ -24,11 +24,11 @@ convenience init(goal: GKGoal, weight: Float)
 + (instancetype) behaviorWithGoal:(GKGoal *) goal weight:(float) weight;
 ```
 
-#### Return Value
+## Return Value
 
 A new behavior object. To assign a set of goals to an agent, use its [`behavior`](../gkagent/behavior.md) property.
 
-#### Discussion
+## Discussion
 
 For more information, see [GameplayKit Programming Guide](https://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172).
 

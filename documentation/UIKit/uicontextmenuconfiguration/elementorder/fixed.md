@@ -23,7 +23,7 @@ case fixed
 UIContextMenuConfigurationElementOrderFixed
 ```
 
-#### Discussion
+## Discussion
 
 This ordering strategy displays the menu elements in the order they appear in the [`children`](../../uimenu/children.md) array of the [`UIMenu`](../../uimenu.md).
 

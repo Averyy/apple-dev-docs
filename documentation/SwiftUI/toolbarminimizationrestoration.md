@@ -21,7 +21,7 @@ The restoration behavior during toolbar minimization.
 struct ToolbarMinimizationRestoration
 ```
 
-#### Overview
+## Overview
 
 Use this type with the [`toolbarMinimizationRestoration(_:for:)`](./view/toolbarminimizationrestoration%28_,for%29.md) modifier to control when a minimized toolbar restores. By default the toolbar restores when the user reverses scroll direction; with [`atScrollEdge`](./toolbarminimizationrestoration/atscrolledge.md), the toolbar instead restores only when the scroll view’s content reaches the scroll edge – appropriate for screens where the bar is mostly chrome that doesn’t need to follow the user.
 

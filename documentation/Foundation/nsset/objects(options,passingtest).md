@@ -25,7 +25,7 @@ func objects(options opts: NSEnumerationOptions = [], passingTest predicate: (An
 - (NSSet<id> *) objectsWithOptions:(NSEnumerationOptions) opts passingTest:(BOOL (^)(ObjectType obj, BOOL *stop)) predicate;
 ```
 
-#### Return Value
+## Return Value
 
 An [`NSSet`](../nsset.md) containing objects that pass the test.
 

@@ -39,7 +39,7 @@ nonisolated
 func help<S>(_ text: S) -> some View where S : StringProtocol
 ```
 
-#### Discussion
+## Discussion
 
 Adding help to a view configures the view’s accessibility hint and its help tag (also called a *tooltip*) in macOS or visionOS. For more information on using help tags, see [Offering help](https://developer.apple.com/design/human-interface-guidelines/offering-help) in the Human Interface Guidelines.
 

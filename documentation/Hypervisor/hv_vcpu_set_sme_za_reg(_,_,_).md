@@ -19,11 +19,11 @@ func hv_vcpu_set_sme_za_reg(_ vcpu: hv_vcpu_t, _ value: UnsafePointer<UInt8>, _ 
 extern hv_return_t hv_vcpu_set_sme_za_reg(hv_vcpu_t vcpu, const uint8_t *value, size_t length);
 ```
 
-#### Return Value
+## Return Value
 
 `HV_SUCCESS` on success, an error code otherwise.
 
-#### Discussion
+## Discussion
 
 This method returns an error if `PSTATE.ZA` is `0` (for example, if [`za_storage_enabled`](./hv_vcpu_sme_state_t/za_storage_enabled.md) is `false`), or if the value `length` isn’t the range of [maximum of `SVL` bytes * maximum `SVL` bytes].
 

@@ -25,7 +25,7 @@ class let muteStateKey: String
 extern NSString * const AVAudioApplicationMuteStateKey;
 ```
 
-#### Discussion
+## Discussion
 
 Use this key to retrieve the app’s mute state from an [`inputMuteStateChangeNotification`](./inputmutestatechangenotification.md).
 

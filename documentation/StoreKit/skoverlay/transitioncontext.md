@@ -22,7 +22,7 @@ class TransitionContext
 @interface SKOverlayTransitionContext : NSObject
 ```
 
-#### Overview
+## Overview
 
 For more information on animating UI changes while the system presents or dismisses an overlay, see [`storeOverlayWillStartPresentation(_:transitionContext:)`](../skoverlaydelegate/storeoverlaywillstartpresentation%28_,transitioncontext%29.md) and [`storeOverlayWillStartDismissal(_:transitionContext:)`](../skoverlaydelegate/storeoverlaywillstartdismissal%28_,transitioncontext%29.md).
 

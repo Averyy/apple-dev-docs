@@ -23,7 +23,7 @@ var exposurePointOfInterest: CGPoint { get set }
 @property (nonatomic) CGPoint exposurePointOfInterest;
 ```
 
-#### Discussion
+## Discussion
 
 Setting a value for this property doesn’t initiate an exposure rebalancing operation. To set exposure using a point of interest, first set this property’s value, then set the [`exposureMode`](./exposuremode-swift.property.md) property to [`AVCaptureDevice.ExposureMode.autoExpose`](./exposuremode-swift.enum/autoexpose.md) or [`AVCaptureDevice.ExposureMode.continuousAutoExposure`](./exposuremode-swift.enum/continuousautoexposure.md).
 

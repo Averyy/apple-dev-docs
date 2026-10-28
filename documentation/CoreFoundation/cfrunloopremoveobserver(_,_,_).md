@@ -25,7 +25,7 @@ func CFRunLoopRemoveObserver(_ rl: CFRunLoop!, _ observer: CFRunLoopObserver!, _
 extern void CFRunLoopRemoveObserver(CFRunLoopRef rl, CFRunLoopObserverRef observer, CFRunLoopMode mode);
 ```
 
-#### Discussion
+## Discussion
 
 If `rl` does not contain `observer` in `mode`, this function does nothing.
 

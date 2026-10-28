@@ -19,7 +19,7 @@ Spawns elements into the particle simulation.
 mutating func spawn(elements: [ElementSpawnParameters], in system: ComputeNodeGraph.NodeID? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 This method queues an element to be spawned during the next simulation update. The spawning is deferred and batched for performance reasons.
 

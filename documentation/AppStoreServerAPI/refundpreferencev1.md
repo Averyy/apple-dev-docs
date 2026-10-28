@@ -26,7 +26,7 @@ int32 refundPreferenceV1
 
 - [App Store Server API changelog](./app-store-server-api-changelog.md)
 
-#### Discussion
+## Discussion
 
 Your refund preference is one of a variety of factors that the App Store uses to inform its refund decisions.
 

@@ -16,11 +16,11 @@ Set the maximum size in bytes of packets transferred by this command.
 IOReturn (*SetMaxPacket)(IOFireWireLibCommandRef self, IOByteCount maxPacketSize);
 ```
 
-#### Return Value
+## Return Value
 
 An IOReturn result code indicating whether or not the command was successfully submitted
 
-#### Discussion
+## Discussion
 
 Availability: (for interfaces obtained with ID)
 

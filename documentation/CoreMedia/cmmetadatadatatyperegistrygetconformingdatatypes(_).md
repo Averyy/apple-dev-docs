@@ -25,7 +25,7 @@ func CMMetadataDataTypeRegistryGetConformingDataTypes(_ dataType: CFString) -> C
 extern CFArrayRefCMMetadataDataTypeRegistryGetConformingDataTypes(CFStringRef dataType);
 ```
 
-#### Return Value
+## Return Value
 
 List of conforming data types registered for the given data type, or `NULL` if the data type has not been registered.
 

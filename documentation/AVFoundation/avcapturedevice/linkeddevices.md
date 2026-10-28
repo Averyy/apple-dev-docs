@@ -19,7 +19,7 @@ var linkedDevices: [AVCaptureDevice] { get }
 @property (nonatomic, readonly) NSArray<AVCaptureDevice *> * linkedDevices;
 ```
 
-#### Discussion
+## Discussion
 
 For an external iSight camera, the array contains an [`AVCaptureDevice`](../avcapturedevice.md) instance that represents the external iSight microphone.
 

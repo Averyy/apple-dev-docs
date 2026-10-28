@@ -22,7 +22,7 @@ var sharedItemContentType: UTType? { get set }
 @property (copy, nullable) UTType * sharedItemContentType;
 ```
 
-#### Discussion
+## Discussion
 
 Core Spotlight uses this property to determine the correct type identifier to pass to the [`fileURL(for:itemIdentifier:typeIdentifier:inPlace:)`](../cssearchableindexdelegate/fileurl%28for,itemidentifier,typeidentifier,inplace%29.md) method.
 

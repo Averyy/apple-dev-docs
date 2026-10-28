@@ -25,7 +25,7 @@ case perNode
 SCNBufferFrequencyPerNode
 ```
 
-#### Discussion
+## Discussion
 
 Use this option when the contents of the buffer should be uniform across multiple geometries or materials, but specific to each node rendered using the shader. For example, a node-specific buffer might contain information based on the node’s position and transform.
 

@@ -14,7 +14,7 @@ func simd_mul(_ q: simd_quath, _ a: Float16) -> simd_quath
 static simd_quath simd_mul(simd_quath q, _Float16 a);
 ```
 
-#### Discussion
+## Discussion
 
 The quaternion `q` scaled by the real value `a`.
 

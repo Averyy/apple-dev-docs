@@ -25,7 +25,7 @@ case overDistance
 SCNParticleInputModeOverDistance
 ```
 
-#### Discussion
+## Discussion
 
 Use the [`inputOrigin`](../scnparticlepropertycontroller/inputorigin.md) property to specify the node to measure distance from, and the [`inputBias`](../scnparticlepropertycontroller/inputbias.md) and [`inputScale`](../scnparticlepropertycontroller/inputscale.md) properties to refine the relationship between a range of distances into a range of input values for the controller’s animation.
 

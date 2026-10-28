@@ -28,7 +28,7 @@ var requiredShippingContactFields: Set<PKContactField> { get set }
 
 - [Displaying a Read-Only Pickup Address](../displaying-a-read-only-pickup-address.md)
 
-#### Discussion
+## Discussion
 
 See [`PKContactField`](../pkcontactfield.md) for the list of possible contact fields.
 

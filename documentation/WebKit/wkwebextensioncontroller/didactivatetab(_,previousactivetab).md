@@ -20,7 +20,7 @@ Should be called by the app when a tab is activated to notify all loaded web ext
 @preconcurrency func didActivateTab(_ activatedTab: any WKWebExtensionTab, previousActiveTab previousTab: (any WKWebExtensionTab)? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 This method informs all loaded extensions of the tab activation, ensuring consistent state awareness across extensions.
 

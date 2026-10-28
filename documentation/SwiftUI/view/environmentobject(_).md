@@ -22,7 +22,7 @@ nonisolated
 func environmentObject<T>(_ object: T) -> some View where T : ObservableObject
 ```
 
-#### Discussion
+## Discussion
 
 Use this modifier to add an observable object to a view’s environment. The object must conform to the [`ObservableObject`](../../Combine/observableobject.md) protocol.
 

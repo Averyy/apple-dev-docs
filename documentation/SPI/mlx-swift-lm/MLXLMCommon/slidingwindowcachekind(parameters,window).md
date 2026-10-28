@@ -17,7 +17,7 @@ Architecture-imposed sliding-window attention kind, capped by legacy `maxKVSize`
 func slidingWindowCacheKind(parameters: GenerateParameters?, window: Int) throws -> CacheLayerKind
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: [`KVCacheConfigurationError`](./kvcacheconfigurationerror.md) when the request or window is invalid.
 

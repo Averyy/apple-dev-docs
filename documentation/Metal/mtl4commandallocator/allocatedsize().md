@@ -25,7 +25,7 @@ func allocatedSize() -> UInt64
 - (uint64_t) allocatedSize;
 ```
 
-#### Return Value
+## Return Value
 
 A size in bytes.
 

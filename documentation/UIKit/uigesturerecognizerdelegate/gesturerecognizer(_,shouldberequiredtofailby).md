@@ -27,11 +27,11 @@ optional func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, should
 
 - [Preferring one gesture over another](../preferring-one-gesture-over-another.md)
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) to set up a dynamic failure requirement between `gestureRecognizer` and `otherGestureRecognizer`. The default implementation returns [`false`](../../Swift/false.md)—`gestureRecognizer` isn’t required to fail by `otherGestureRecognizer`.
 
-#### Discussion
+## Discussion
 
 This method is called once per attempt to recognize, so failure requirements can be determined lazily and may be set up between recognizers across view hierarchies. Note that returning [`true`](../../Swift/true.md) is guaranteed to set up the failure requirement; returning [`false`](../../Swift/false.md), on the other hand, isn’t guaranteed to prevent or remove a failure requirement because `otherGestureRecognizer` might make itself a failure requirement by using its own subclass or delegate methods.
 

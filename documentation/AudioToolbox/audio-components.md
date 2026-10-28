@@ -5,7 +5,7 @@
 
 Find, load, and configure audio components, such as Audio Units and audio codecs.
 
-#### Overview
+## Overview
 
 Use the Audio Components API to register and discover audio units, codecs, and other loadable code modules. This API replaces the Component Manager API used prior to macOS 10.6. The system searches for loadable bundles with a `.audiocomp` or `.component` filename extension in the following locations:
 

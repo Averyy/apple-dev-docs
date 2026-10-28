@@ -25,11 +25,11 @@ func ColorSyncProfileCreateLink(_ profileInfo: CFArray!, _ options: CFDictionary
 extern ColorSyncProfileRefColorSyncProfileCreateLink(CFArrayRef profileInfo, CFDictionaryRef options);
 ```
 
-#### Return Value
+## Return Value
 
 A new profile, or `NULL` in case of failure.
 
-#### Discussion
+## Discussion
 
 Each dictionary in `profileInfo` contains a profile object and information on the usage of the profile in the transform.
 

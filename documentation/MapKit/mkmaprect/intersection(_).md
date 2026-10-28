@@ -25,7 +25,7 @@ func intersection(_ rect2: MKMapRect) -> MKMapRect
 extern MKMapRect MKMapRectIntersection(MKMapRect rect1, MKMapRect rect2);
 ```
 
-#### Return Value
+## Return Value
 
 The rectangle representing the intersection of the two rectangles, or [`null`](./null.md) if there’s no intersection.
 

@@ -22,7 +22,7 @@ Creates an empty instance ready to be filled with string literal content.
 init(literalCapacity: Int, interpolationCount: Int)
 ```
 
-#### Discussion
+## Discussion
 
 Don’t call this initializer directly. Instead, initialize a variable or constant using a string literal with interpolated expressions.
 

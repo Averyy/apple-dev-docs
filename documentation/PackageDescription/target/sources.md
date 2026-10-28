@@ -12,7 +12,7 @@ The source files in this target.
 final var sources: [String]?
 ```
 
-#### Discussion
+## Discussion
 
 If this property is `nil`, Swift Package Manager includes all valid source files in the target’s path and treats specified paths as relative to the target’s path.
 

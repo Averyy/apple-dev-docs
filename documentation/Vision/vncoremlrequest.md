@@ -24,7 +24,7 @@ class VNCoreMLRequest
 @interface VNCoreMLRequest : VNImageBasedRequest
 ```
 
-#### Overview
+## Overview
 
 The results array of a Core ML-based image analysis request contains a different observation type, depending on the kind of [`MLModel`](../CoreML/mlmodel.md) object you use:
 

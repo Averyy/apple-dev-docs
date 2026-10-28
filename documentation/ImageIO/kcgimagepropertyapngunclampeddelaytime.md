@@ -25,7 +25,7 @@ let kCGImagePropertyAPNGUnclampedDelayTime: CFString
 extern CFStringRef const kCGImagePropertyAPNGUnclampedDelayTime;
 ```
 
-#### Discussion
+## Discussion
 
 This value may be `0` milliseconds or higher. Unlike the [`kCGImagePropertyAPNGDelayTime`](./kcgimagepropertyapngdelaytime.md) property, this value is not clamped at the low end of the range.
 

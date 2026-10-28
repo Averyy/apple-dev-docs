@@ -22,7 +22,7 @@ var embedsPortraitEffectsMatteInPhoto: Bool { get set }
 @property (nonatomic) BOOL embedsPortraitEffectsMatteInPhoto;
 ```
 
-#### Discussion
+## Discussion
 
 The default is [`true`](../../Swift/true.md), which tells AV Foundation to embed the portrait effects matte images as HEIF and JPEG in the photo.
 

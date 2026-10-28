@@ -16,11 +16,11 @@ Returns the maximum command block size.
 UInt32 (*getMaxCommandBlockSize)(void *self);
 ```
 
-#### Return Value
+## Return Value
 
 Returns a UInt32 containing the maximum command block size.
 
-#### Discussion
+## Discussion
 
 The device publishes an upper limit on the size of command block that it can accept. That value can be accessed via this method.
 

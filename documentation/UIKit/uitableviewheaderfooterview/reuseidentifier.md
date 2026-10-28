@@ -23,7 +23,7 @@ var reuseIdentifier: String? { get }
 @property (nonatomic, copy, readonly, nullable) NSString * reuseIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 You assign a reuse identifier to a header or footer view at creation time. Once assigned, the table view uses that reuse identifier to gather your views when they’re scrolled offscreen and queue them for later reuse. You can retrieve header or footer views by passing the same reuse identifier to the [`dequeueReusableHeaderFooterView(withIdentifier:)`](../uitableview/dequeuereusableheaderfooterview%28withidentifier%29.md) method of the table view.
 

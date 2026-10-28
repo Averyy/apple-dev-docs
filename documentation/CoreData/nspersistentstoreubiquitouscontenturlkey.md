@@ -25,7 +25,7 @@ let NSPersistentStoreUbiquitousContentURLKey: String
 extern NSString * const NSPersistentStoreUbiquitousContentURLKey;
 ```
 
-#### Discussion
+## Discussion
 
 In iOS 6 and OS X 10.8 and below, this option is required for ubiquitous content to function. In iOS 7 and macOS 10.9 and later, it is optional.
 

@@ -5,7 +5,7 @@
 
 Train a machine learning model to classify images, and add it to your Core ML app.
 
-#### Overview
+## Overview
 
 An *image classifier* is a machine learning model that recognizes images. When you give it an image, it responds with a category label for that image.
 
@@ -17,7 +17,7 @@ You train an image classifier by showing it many examples of images you’ve alr
 
 After the image classifier finishes training, you assess its accuracy and, if it performs well enough, save it as a Core ML model file. You then import the model file into your Xcode project to use the image classifier in your app.
 
-##### Gather Your Data
+### Gather Your Data
 
 Use at least 10 images per category, but keep in mind that an image classifier performs better with a more diverse set of images. Consider including images of each category from multiple angles and in different lighting conditions.
 
@@ -29,19 +29,19 @@ If possible, gather images that best represent what you expect the model to see 
 
 > **Note**: By default, the image classifier uses the scene print feature extractor to accelerate the training process and works best with real-world objects. For more information, see [`MLImageClassifier.FeatureExtractorType.scenePrint(revision:)`](./mlimageclassifier/featureextractortype/sceneprint%28revision%29.md).
 
-##### Organize Your Training Data
+### Organize Your Training Data
 
 Prepare a training dataset by sorting the images into subfolders. Give each subfolder a name for the category of images contained within it. For example, you might use the label `Cheetah` for all the images of cheetahs.
 
 ![A diagram showing a folder called Training Data with subfolders that are named using the label corresponding to the category of images they contain. For example, all the cheetah images go into a subfolder named, Cheetah.](https://developer.apple.com/tutorials/images/com.apple.createml/creating-an-image-classifier-model-3@2x.png)
 
-##### Organize Your Testing Data
+### Organize Your Testing Data
 
 Testing your model with a testing dataset is a quick way to see how well your trained model might perform in the real world.
 
 If your dataset has enough images, say 25 or more per category, create a testing dataset by duplicating the folder structure of the training dataset. Then move about 20 percent of the images from each category into the equivalent category folder in the testing dataset.
 
-##### Create an Image Classifier Project
+### Create an Image Classifier Project
 
 Use Create ML to create an image classifier project. With Xcode open, Control-click the Xcode icon in the Dock and choose Open Developer Tool > Create ML. Or, from the Xcode menu, choose Open Developer Tool > Create ML.
 
@@ -53,7 +53,7 @@ Change the project’s default name to a more meaningful one. If applicable, ent
 
 ![A screenshot of the new project options window with text fields for Project Name, Author, License, and Description. The first text fields have the values Animal Classifier, Maria Ruiz, and No license provided, respectively. The description text field reads, An image classification machine learning model that recognizes animals.](https://developer.apple.com/tutorials/images/com.apple.createml/creating-an-image-classifier-model-5@2x.png)
 
-##### Configure the Training Session
+### Configure the Training Session
 
 Drag the folder with your training dataset into the Training Data well in the project window.
 
@@ -71,7 +71,7 @@ You can adjust the following parameters before training your image classifier:
 
 ![A screenshot of the project window in the Settings tab that highlights the Parameters section. The Feature Extractor is set to Image Feature Print V2. The Iterations parameter setting is set to 50 and the Augmentations setting has 6 checkboxes named, Add Noise, Blur, Crop, Expose, Flip, and Rotate.](https://developer.apple.com/tutorials/images/com.apple.createml/creating-an-image-classifier-model-8@2x.png)
 
-##### Train the Image Classifier
+### Train the Image Classifier
 
 Click the Train button to start the training session. Create ML begins the session by quickly separating some of your training data into a validation dataset. Next, Create ML extracts features, such as edges, corners, textures, and regions of color, from the remaining training images. Create ML uses the images’ features to iteratively train the model and then checks its accuracy with the validation dataset.
 
@@ -79,7 +79,7 @@ Click the Train button to start the training session. Create ML begins the sessi
 
 Create ML shows its progress in a graph, where the black and gray lines represent the model’s accuracy with the training and validation datasets, respectively.
 
-##### Assess the Model’s Accuracy
+### Assess the Model’s Accuracy
 
 When Create ML finishes training the model, it tests the model using the testing dataset. When it’s finished testing the model, Create ML shows the training, validation, and testing accuracy scores in the Evaluation tab. Models typically have higher accuracy scores on the training dataset because it learned from those images. In this example, the image classifier model correctly identified:
 
@@ -93,13 +93,13 @@ When Create ML finishes training the model, it tests the model using the testing
 
 If the evaluation performance isn’t good enough, you may need to train a new model with a dataset that has more variety. For example, you can gather additional images from new angles or in new environments, or add one or more image augmentation options. For details about evaluating a model, as well as strategies for improving the model’s performance, see [Improving Your Model’s Accuracy](./improving-your-model-s-accuracy.md).
 
-##### Preview the Model
+### Preview the Model
 
 Click the Preview tab to try out the model with images it hasn’t seen before. To see the model’s predictions, drag image files to the column below the Train button.
 
 ![A screenshot of the project window in the Preview tab that predicts an image of an elephant as, elephant, with 100% confidence.](https://developer.apple.com/tutorials/images/com.apple.createml/creating-an-image-classifier-model-11@2x.png)
 
-##### Save the Model
+### Save the Model
 
 When you’re satisfied with the model’s performance, save it to the file system (in a Core ML format). From the Output tab, save the model using any of these options:
 
@@ -110,7 +110,7 @@ When you’re satisfied with the model’s performance, save it to the file syst
 
 ![A screenshot of the project window in the Output tab showing a model save dialog after the user clicked the Get-button. The Get-button’s icon is a box with a down arrow leading into it.](https://developer.apple.com/tutorials/images/com.apple.createml/creating-an-image-classifier-model-12@2x.png)
 
-##### Add the Model to Your App
+### Add the Model to Your App
 
 The last step is to add your trained model to an Xcode project. For example, your image classifier model can replace the model in the [Classifying Images with Vision and Core ML](../CoreML/classifying-images-with-vision-and-core-ml.md) sample.
 
@@ -134,7 +134,7 @@ let imageClassifierWrapper = try? AnimalClassifier(configuration: defaultConfig)
 
 These models are interchangeable because both take an image as input, and both output a label string. With your model substitution, the sample app classifies images as before, except now it uses your model and its associated labels.
 
-##### Automate Model Training and Assessment
+### Automate Model Training and Assessment
 
 You can use Create ML to train a useful image classifier with very little code or machine learning expertise, as described in the sections above. However, you can also use an [`MLImageClassifier`](./mlimageclassifier.md) instance to script the model training process. The general tasks are the same: prepare data, train a model, assess performance, and save the Core ML model file. The difference is that you do everything programmatically.
 

@@ -25,7 +25,7 @@ var videoAttributes: AVAssetVariant.VideoAttributes? { get }
 @property (nonatomic, readonly, nullable) AVAssetVariantVideoAttributes * videoAttributes;
 ```
 
-#### Discussion
+## Discussion
 
 This property value is `nil` if the variant defines no video attributes.
 

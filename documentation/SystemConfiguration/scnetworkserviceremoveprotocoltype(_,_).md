@@ -19,7 +19,7 @@ func SCNetworkServiceRemoveProtocolType(_ service: SCNetworkService, _ protocolT
 Boolean SCNetworkServiceRemoveProtocolType(SCNetworkServiceRef service, CFStringRef protocolType);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if the protocol was removed to the service; `FALSE` if the protocol was not configured or an error occurred.
 

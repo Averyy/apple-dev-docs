@@ -13,7 +13,7 @@
 kINQUIRY_Byte7_TRANDIS_Bit = 2
 ```
 
-#### Discussion
+## Discussion
 
 TRANDIS bit definition.
 

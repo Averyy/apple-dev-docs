@@ -18,7 +18,7 @@ A Boolean value that indicates whether to exlude the path component from URL par
 var excluded: Bool
 ```
 
-#### Discussion
+## Discussion
 
 When this value is `true`, parsing ignores all other path options.
 

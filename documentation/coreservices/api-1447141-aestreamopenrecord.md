@@ -19,11 +19,11 @@ func AEStreamOpenRecord(_ ref: AEStreamRef!, _ newType: DescType) -> OSStatus
 OSStatus AEStreamOpenRecord(AEStreamRef ref, DescType newType);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145).
 
-#### Discussion
+## Discussion
 
 This routine marks the beginning of a sequence of zero or more keyword/descriptor definitions that you use to build an `AERecord` structure. You must balance each call to this method with a corresponding call to [`AEStreamCloseRecord(_:)`](./api-1449522-aestreamcloserecord.md). 
 

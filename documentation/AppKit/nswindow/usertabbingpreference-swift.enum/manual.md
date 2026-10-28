@@ -19,7 +19,7 @@ case manual
 NSWindowUserTabbingPreferenceManual
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [`tabbingMode`](../tabbingmode-swift.property.md).
 

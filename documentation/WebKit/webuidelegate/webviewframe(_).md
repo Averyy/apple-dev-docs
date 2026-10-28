@@ -19,7 +19,7 @@ optional func webViewFrame(_ sender: WebView!) -> NSRect
 - (NSRect) webViewFrame:(WebView *) sender;
 ```
 
-#### Return Value
+## Return Value
 
 The frame rectangle of the web view’s window.
 

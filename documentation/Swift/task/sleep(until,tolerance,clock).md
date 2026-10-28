@@ -23,7 +23,7 @@ static func sleep<C>(until deadline: C.Instant, tolerance: C.Instant.Duration? =
 
 Available when `Success` is `Never` and `Failure` is `Never`.
 
-#### Discussion
+## Discussion
 
 If the task is canceled before the time ends, this function throws `CancellationError`.
 

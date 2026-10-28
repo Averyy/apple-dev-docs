@@ -15,7 +15,7 @@ A type that describes the effects of a view for a particular hover effect phase.
 protocol HoverEffectContent
 ```
 
-#### Overview
+## Overview
 
 ```swift
 Color.red

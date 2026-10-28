@@ -12,7 +12,7 @@ The visual appearance configuration for a markup adornment.
 struct ImageConfiguration
 ```
 
-#### Overview
+## Overview
 
 An `ImageConfiguration` defines the visual appearance of an adornment, including the image source, size, and alignment anchor point for positioning.
 

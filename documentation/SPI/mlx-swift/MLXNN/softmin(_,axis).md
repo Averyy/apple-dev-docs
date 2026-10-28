@@ -17,7 +17,7 @@ Applies the Softmin function.
 func softmin(_ x: MLXArray, axis: Int = -1) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 This operation is a numerically stable version of:
 

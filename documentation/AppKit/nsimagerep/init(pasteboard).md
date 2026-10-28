@@ -19,11 +19,11 @@ init?(pasteboard: NSPasteboard)
 + (NSImageRep *) imageRepWithPasteboard:(NSPasteboard *) pasteboard;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized instance of an `NSImageRep` subclass, or `nil` if the image data could not be read.
 
-#### Discussion
+## Discussion
 
 If sent to the `NSImageRep` class object, this method returns a newly allocated instance of a subclass of `NSImageRep` initialized with the data in the specified pasteboard. If sent to a subclass of `NSImageRep` that recognizes the data on the pasteboard, it returns an instance of that subclass initialized with that data.
 

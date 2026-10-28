@@ -39,7 +39,7 @@ nonisolated
 func accessibilityHint<S>(_ hint: S) -> ModifiedContent<Self, AccessibilityAttachmentModifier> where S : StringProtocol
 ```
 
-#### Discussion
+## Discussion
 
 Provide a hint in the form of a brief phrase, like “Purchases the item” or “Downloads the attachment”.
 

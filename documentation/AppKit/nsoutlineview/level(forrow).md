@@ -19,11 +19,11 @@ func level(forRow row: Int) -> Int
 - (NSInteger) levelForRow:(NSInteger) row;
 ```
 
-#### Return Value
+## Return Value
 
 The indentation level for `row`. For an invalid row, returns `–1`.
 
-#### Discussion
+## Discussion
 
 The levels are zero-based—that is, the first level of displayed items is level `0`.
 

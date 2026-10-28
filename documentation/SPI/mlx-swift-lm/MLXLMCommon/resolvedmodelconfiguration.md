@@ -17,7 +17,7 @@ A fully resolved model configuration where all sources have been resolved to loc
 struct ResolvedModelConfiguration
 ```
 
-#### Overview
+## Overview
 
 Created by resolving a [`ModelConfiguration`](./modelconfiguration.md) — downloading remote sources via a [`Downloader`](./downloader.md) and mapping behavioral properties. Factory implementations receive this type in their `_load` method, so they work purely with local files.
 

@@ -19,7 +19,7 @@ func stopSpeaking(_ sender: Any?)
 - (void) stopSpeaking:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 This action method stops speech that was previously started with [`startSpeaking(_:)`](./startspeaking%28_%29.md). This method behaves similar to the [`stopSpeaking(_:)`](../../AppKit/nstextview/stopspeaking%28_%29.md) method in [`NSTextView`](../../AppKit/nstextview.md).
 

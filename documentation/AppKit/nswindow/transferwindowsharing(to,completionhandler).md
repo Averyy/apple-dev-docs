@@ -23,7 +23,7 @@ func transferWindowSharing(to window: NSWindow) async throws
 - (void) transferWindowSharingToWindow:(NSWindow *) window completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 In response to this request, the user may choose to transfer sharing to the new window, or simply stop sharing the content.
 

@@ -24,11 +24,11 @@ class func localizedReferenceDocumentation(forFilterName filterName: String) -> 
 + (NSURL *) localizedReferenceDocumentationForFilterName:(NSString *) filterName;
 ```
 
-#### Return Value
+## Return Value
 
 A URL that specifies the location of the localized documentation, or `nil` if the filter does not provide localized reference documentation.
 
-#### Discussion
+## Discussion
 
 The URL can be a local file or a remote document on a web server. Because filters created prior to OS X v10.5 could return `nil`, you should be make sure that your code handles this case gracefully.
 

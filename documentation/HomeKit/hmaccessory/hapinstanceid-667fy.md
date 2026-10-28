@@ -18,7 +18,7 @@
 @property (nonatomic, copy, readonly, nullable) NSNumber * HAPInstanceID;
 ```
 
-#### Discussion
+## Discussion
 
 Returns the HAP Accessory Instance ID, or nil if the receiver does not represent a HAP accessory.
 

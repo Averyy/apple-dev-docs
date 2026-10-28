@@ -25,7 +25,7 @@ let MPNowPlayingInfoPropertyCurrentLanguageOptions: String
 extern NSString * const MPNowPlayingInfoPropertyCurrentLanguageOptions;
 ```
 
-#### Discussion
+## Discussion
 
 Value is an array of [`MPNowPlayingInfoLanguageOption`](./mpnowplayinginfolanguageoption.md) items.
 

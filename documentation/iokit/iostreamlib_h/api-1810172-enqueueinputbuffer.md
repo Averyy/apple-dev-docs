@@ -17,7 +17,7 @@ IOReturn ( *EnqueueInputBuffer)(
    IOByteCount controlLength );
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if the buffer was successfully placed on the input queue.
 

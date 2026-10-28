@@ -23,7 +23,7 @@ func previewInteractionDidCancel(_ previewInteraction: UIPreviewInteraction)
 - (void) previewInteractionDidCancel:(UIPreviewInteraction *) previewInteraction;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called when the preview interaction is canceled, either programmatically through the [`cancel()`](../uipreviewinteraction/cancel%28%29.md) method on [`UIPreviewInteraction`](../uipreviewinteraction.md), or by interrupting the preview interaction before the commit phase is complete.
 

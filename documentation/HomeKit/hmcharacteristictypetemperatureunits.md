@@ -24,7 +24,7 @@ let HMCharacteristicTypeTemperatureUnits: String
 extern NSString * const HMCharacteristicTypeTemperatureUnits;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is one of the constants from the [`HMCharacteristicValueTemperatureUnit`](./hmcharacteristicvaluetemperatureunit.md) enumeration.
 

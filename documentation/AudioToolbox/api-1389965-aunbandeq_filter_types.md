@@ -5,7 +5,7 @@
 
 Values for the filter type parameter of the Multitype EQ (NBandEQ) unit.
 
-#### Overview
+## Overview
 
 Use these constants with the [`kAUNBandEQParam_FilterType`](./kaunbandeqparam_filtertype.md) parameter.
 

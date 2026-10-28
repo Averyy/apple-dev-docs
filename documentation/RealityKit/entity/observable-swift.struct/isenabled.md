@@ -20,7 +20,7 @@ A Boolean value that indicates whether the entity is enabled in the scene, allow
 var isEnabled: Bool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [`isEnabled`](../isenabled.md).
 

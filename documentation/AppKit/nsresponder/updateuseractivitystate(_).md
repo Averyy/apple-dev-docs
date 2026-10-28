@@ -19,7 +19,7 @@ func updateUserActivityState(_ userActivity: NSUserActivity)
 - (void) updateUserActivityState:(NSUserActivity *) userActivity;
 ```
 
-#### Discussion
+## Discussion
 
 Subclasses override this method to update the state of the supplied `userActivity`. Add state representing the user’s activity into `userActivity` using its [`addUserInfoEntries(from:)`](../../Foundation/nsuseractivity/adduserinfoentries%28from%29.md) method. When the state is dirty, set the [`needsSave`](../../Foundation/nsuseractivity/needssave.md) property to [`true`](../../Swift/true.md).
 

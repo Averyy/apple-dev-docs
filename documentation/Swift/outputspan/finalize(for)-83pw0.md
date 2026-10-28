@@ -21,11 +21,11 @@ Consume the output span and return the number of initialized elements.
 consuming func finalize(for buffer: UnsafeMutableBufferPointer<Element>) -> Int
 ```
 
-#### Return Value
+## Return Value
 
 The number of initialized elements in the same buffer, as tracked by the consumed `OutputSpan` instance.
 
-#### Discussion
+## Discussion
 
 This method should be invoked in the scope where the `OutputSpan` was created, when it is time to commit the contents of the updated buffer back into the construct being initialized.
 

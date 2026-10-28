@@ -25,7 +25,7 @@ func removeObject(at index: Int)
 - (void) removeObjectAtIndex:(NSUInteger) index;
 ```
 
-#### Discussion
+## Discussion
 
 To fill the gap, all elements beyond `index` are moved by subtracting 1 from their index.
 

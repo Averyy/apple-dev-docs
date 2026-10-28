@@ -15,7 +15,7 @@ A conflicting cache operation is in progress.
 static var errorCacheOperationConflict: FSDataCacheError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 This error occurs when multiple cache operations on the same item conflict, such as attempting to change cache mode while I/O is active.
 

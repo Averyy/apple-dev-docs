@@ -19,7 +19,7 @@ The restrictions that apply to the set of assets that download immediately after
 - **Name**: `BAInitialDownloadRestrictions`
 - **Type**: dictionary
 
-#### Discussion
+## Discussion
 
 This key is required to use Background Assets.
 

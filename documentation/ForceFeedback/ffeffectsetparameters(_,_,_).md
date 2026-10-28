@@ -20,11 +20,11 @@ func FFEffectSetParameters(_ effectReference: FFEffectObjectReference!, _ pFFEff
 extern HRESULT FFEffectSetParameters(FFEffectObjectReference effectReference, FFEFFECT *pFFEffect, FFEffectParameterFlag flags);
 ```
 
-#### Return Value
+## Return Value
 
 If the method succeeds, the return value is FF_OK. If the method fails, the return value can be one of the following error values:
 
-#### Discussion
+## Discussion
 
 FFERR_INVALIDPARAM
 
@@ -42,7 +42,7 @@ FFERR_INTERNAL
 
 FFERR_EFFECTTYPEMISMATCH
 
-#### Discussion
+## Discussion
 
 The FFEffectSetParameters method automatically downloads the effect, but this behavior can be suppressed by setting the FFEP_NODOWNLOAD flag. If automatic download has been suppressed, you can manually download the effect by invoking the FFEffectDownload method.
 

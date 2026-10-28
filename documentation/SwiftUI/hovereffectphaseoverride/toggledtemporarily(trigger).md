@@ -15,7 +15,7 @@ Temporaily transitions to the opposite of the effect’s current phase at the mo
 static func toggledTemporarily(trigger: some Equatable) -> HoverEffectPhaseOverride
 ```
 
-#### Discussion
+## Discussion
 
 Use `toggledTemporarily(trigger:)` to toggle an effect’s current phase until it fully transitions to its new phase. The transition will use the animations defined by the effect, but will ignore any delays.
 

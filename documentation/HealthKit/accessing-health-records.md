@@ -5,7 +5,7 @@
 
 Read clinical record data from the HealthKit store.
 
-#### Overview
+## Overview
 
 Use HealthKit’s clinical record support to read Fast Healthcare Interoperability Resources (FHIR) from the HealthKit store. Users can download their FHIR records from supported healthcare institutions. The system then updates the records in the background on a regular basis.
 
@@ -15,7 +15,7 @@ To use clinical records, you must request permission to read each record type. T
 
 Xcode’s simulator provides sample accounts you can use when building and testing your app. For more information, see [Accessing Sample Data in the Simulator](./accessing-sample-data-in-the-simulator.md).
 
-##### Set Up HealthKit
+### Set Up HealthKit
 
 Due to their sensitive nature, clinical records have additional setup requirements. First, when you enable your app’s HealthKit capabilities, you must also select the Clinical Health Records checkbox.
 
@@ -53,7 +53,7 @@ You can request authorization of clinical record types and regular HealthKit typ
 
 App Review may reject apps that don’t use clinical record data appropriately. For more information, see the [Health and Health Research](https://developer.apple.com/app-store/review/guidelines/#health-and-health-research) section of the [App Store Review Guidelines](https://developer.apple.com/app-store/review/guidelines/).
 
-##### Query for Health Records
+### Query for Health Records
 
 You can use HealthKit’s regular queries to look up clinical records.
 
@@ -83,7 +83,7 @@ Each query returns a single clinical record type. HealthKit also provides two pr
 - **[`predicateForClinicalRecords(from:fhirResourceType:identifier:)`](./hkquery/predicateforclinicalrecords%28from,fhirresourcetype,identifier%29.md)**: Search for a particular FHIR record. Note that the system only guarantees that the FHIR identifier is unique for a particular resource type from a given source. To identify a record uniquely, you must check the identifier, type, and source.
 - **[`predicateForClinicalRecords(withFHIRResourceType:)`](./hkquery/predicateforclinicalrecords%28withfhirresourcetype%29.md)**: Search for a specific FHIR resource type. In most cases, there’s a one-to-one correspondence between the clinical record types and the FHIR resource types; therefore, most queries already return samples from a single FHIR resource type. However, queries for the [`medicationRecord`](./hkclinicaltypeidentifier/medicationrecord.md) type can return records from the [`medicationOrder`](./hkfhirresourcetype/medicationorder.md), [`medicationRequest`](./hkfhirresourcetype/medicationrequest.md), [`medicationDispense`](./hkfhirresourcetype/medicationdispense.md), and [`medicationStatement`](./hkfhirresourcetype/medicationstatement.md) FHIR resource types. You can use this predicate to limit your query to one of these FHIR types.
 
-##### Examine FHIR Data
+### Examine FHIR Data
 
 Once you have an [`HKClinicalRecord`](./hkclinicalrecord.md) sample, you can access the FHIR data through its [`fhirResource`](./hkclinicalrecord/fhirresource.md) property. The [`HKFHIRResource`](./hkfhirresource.md) object represents the underlying data from the user’s health care institution. While the resource object provides properties to access a few, useful attributes ([`identifier`](./hkfhirresource/identifier.md), [`resourceType`](./hkfhirresource/resourcetype.md), and [`sourceURL`](./hkfhirresource/sourceurl.md)), use the [`data`](./hkfhirresource/data.md) property to access the underlying JSON, which contains the complete clinical data.
 

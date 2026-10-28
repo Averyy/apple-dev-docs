@@ -24,7 +24,7 @@ func JSValueProtect(_ ctx: JSContextRef!, _ value: JSValueRef!)
 void JSValueProtect(JSContextRef ctx, JSValueRef value);
 ```
 
-#### Discussion
+## Discussion
 
 Use this method when you want to store a [`JSValueRef`](./jsvalueref.md) in a global or on the heap, where the garbage collector can’t discover your reference to it.
 

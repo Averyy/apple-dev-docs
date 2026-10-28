@@ -16,7 +16,7 @@ A potential value for [`kIOPMAssertionTimeoutActionKey`](./kiopmassertiontimeout
 #define kIOPMAssertionTimeoutActionRelease
 ```
 
-#### Discussion
+## Discussion
 
 When a timeout expires with this action, Power Management will log the timeout event, and will release the assertion.
 

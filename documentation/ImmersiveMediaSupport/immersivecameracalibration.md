@@ -19,7 +19,7 @@ A structure that represents immersive media camera calibration data.
 struct ImmersiveCameraCalibration
 ```
 
-#### Overview
+## Overview
 
 This data includes calibration type, calibration name, calibration file name, lens definition, mask data, camera origin, and other relevant data.
 

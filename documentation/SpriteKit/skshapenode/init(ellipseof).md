@@ -25,7 +25,7 @@ convenience init(ellipseOf size: CGSize)
 + (instancetype) shapeNodeWithEllipseOfSize:(CGSize) size;
 ```
 
-#### Return Value
+## Return Value
 
 A new shape node.
 

@@ -17,7 +17,7 @@ Returns the usage text for this type.
 static func usageString(includeHidden: Bool = false) -> String
 ```
 
-#### Return Value
+## Return Value
 
 The usage text for this type.
 

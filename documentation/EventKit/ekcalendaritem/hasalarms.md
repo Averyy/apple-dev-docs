@@ -24,7 +24,7 @@ var hasAlarms: Bool { get }
 @property (nonatomic, readonly) BOOL hasAlarms;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../Swift/true.md), the calendar item has alarms; otherwise it does not.
 

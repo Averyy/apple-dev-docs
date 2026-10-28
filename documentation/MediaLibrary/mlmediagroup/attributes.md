@@ -22,7 +22,7 @@ var attributes: [String : Any] { get }
 @property (copy, readonly) NSDictionary<NSString *,id> * attributes;
 ```
 
-#### Discussion
+## Discussion
 
 These attributes are usually defined by the source app, such as iTunes. For example, an iTunes playlist is represented as a group. iTunes attaches attributes such as “Playlist Persistent ID” to the group in its `attributes`. The attribute names vary based on the media source. Attributes common to all sources are called out as separate properties.
 

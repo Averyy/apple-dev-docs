@@ -22,15 +22,15 @@ Runs `operation` with a copy of [`current`](./logger/current.md) whose aspects a
 ## Declaration
 
 ```swift
-nonisolated
-(nonsending) func withLogger<Result, Failure>(logLevel: Logger.Level? = nil, handler: (any LogHandler)? = nil, metadata: @autoclosure () -> Logger.Metadata? = nil, _ operation: nonisolated(nonsending)) async throws(Failure) -> Result where Failure : Error
+nonisolated(nonsending)
+func withLogger<Result, Failure>(logLevel: Logger.Level? = nil, handler: (any LogHandler)? = nil, metadata: @autoclosure () -> Logger.Metadata? = nil, _ operation: nonisolated(nonsending)) async throws(Failure) -> Result where Failure : Error
 ```
 
-#### Return Value
+## Return Value
 
 The value returned by `operation`.
 
-#### Discussion
+## Discussion
 
 Unlike [`withLogger(mergingMetadata:_:)`](./withlogger%28mergingmetadata,_%29-3eduo.md), which layers metadata on top of the inherited base, this overload **replaces** the base metadata when `metadata` is non-nil. Pass `metadata: [:]` to wipe the inherited metadata entirely for the scope.
 

@@ -23,7 +23,7 @@ class var frameCountSource: AVCaptureTimecode.Source { get }
 @property (class, nonatomic, readonly) AVCaptureTimecodeSource * frameCountSource;
 ```
 
-#### Discussion
+## Discussion
 
 This class property represents a standalone timecode source that advances based purely on frame count, independent of any real-time or external synchronization. It is ideal for scenarios where a simple, self-contained timing reference is sufficient, without requiring alignment to system clocks or external devices.
 

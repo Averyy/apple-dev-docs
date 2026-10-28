@@ -23,7 +23,7 @@ func index(before index: EnumeratedSequence<Base>.Index) -> EnumeratedSequence<B
 
 Available when `Base` conforms to `RandomAccessCollection`.
 
-#### Return Value
+## Return Value
 
 The index value immediately before `i`.
 

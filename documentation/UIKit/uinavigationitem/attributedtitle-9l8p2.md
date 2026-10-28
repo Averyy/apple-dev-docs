@@ -17,13 +17,13 @@ An attributed string that is rendered as the title in the navigation bar.
 @property (nonatomic, copy, nullable) NSAttributedString * attributedTitle;
 ```
 
-#### Discussion
+## Discussion
 
 If `titleView` is non-nil, this property is ignored.
 
 An attributed string that the system renders as the title in the navigation bar.
 
-#### Discussion
+## Discussion
 
 If [`titleView`](./titleview.md) is non-`nil`, the system ignores this property.
 

@@ -19,7 +19,7 @@ Begins or continues an asynchronous style transfer model-training session.
 static func resume(_ session: MLTrainingSession<MLStyleTransfer>) throws -> MLJob<MLStyleTransfer>
 ```
 
-#### Return Value
+## Return Value
 
 An [`MLJob`](../mljob.md) that represents the style transfer model-training session.
 

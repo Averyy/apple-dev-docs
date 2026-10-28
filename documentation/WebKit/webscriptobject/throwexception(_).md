@@ -19,7 +19,7 @@ class func throwException(_ exceptionMessage: String!) -> Bool
 + (BOOL) throwException:(NSString *) exceptionMessage;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if successful, [`false`](../../Swift/false.md) otherwise.
 

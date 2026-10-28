@@ -21,7 +21,7 @@ func abs(stream: StreamOrDevice = .default) -> MLXArray
 
 - [Converting From Python](../converting-python.md)
 
-##### See Also
+### See Also
 
 - [Arithmetic](../arithmetic.md)
 

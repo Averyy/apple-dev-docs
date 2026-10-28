@@ -20,7 +20,7 @@ var kCGDisplayRefreshRate: String { get }
 #define kCGDisplayRefreshRate
 ```
 
-#### Discussion
+## Discussion
 
 Some displays may not use conventional video vertical and horizontal sweep in painting the screen; these displays report a refresh rate of 0.
 

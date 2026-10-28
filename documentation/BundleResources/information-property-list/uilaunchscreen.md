@@ -15,7 +15,7 @@ The user interface to show while an app launches.
 - **Name**: `UILaunchScreen` (Launch Screen)
 - **Type**: dictionary
 
-#### Discussion
+## Discussion
 
 You use this key to define the launch screen that the system displays while your app launches. If you need to provide different launch screens in response to being launched by different URL schemes, use [`UILaunchScreens`](./uilaunchscreens.md) instead.
 

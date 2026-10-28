@@ -6,7 +6,7 @@
 
 A 32-bit integer containing flags that describe how the subtitle text should be drawn.
 
-#### Overview
+## Overview
 
 The following flags are defined:
 

@@ -20,11 +20,11 @@ func IOUSBGetEndpointIntervalFrames(_ usbDeviceSpeed: UInt32, _ descriptor: Unsa
 uint32_t IOUSBGetEndpointIntervalFrames(uint32_t usbDeviceSpeed, const IOUSBEndpointDescriptor *descriptor);
 ```
 
-#### Return Value
+## Return Value
 
 The endpoint interval in frames.
 
-#### Discussion
+## Discussion
 
 This method parses an endpoint descriptor and returns the service interval in frames.
 

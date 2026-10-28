@@ -11,7 +11,7 @@ Performs the flush operation.
 virtual void performFlush();
 ```
 
-#### Overview
+## Overview
 
 This method is called automatically each time the timer event fires. It stops the audio engine if there are no more clients and the audio engine is passed the latest flush ending position.
 

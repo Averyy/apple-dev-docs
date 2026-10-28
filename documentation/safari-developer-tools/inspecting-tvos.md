@@ -5,11 +5,11 @@
 
 Inspect JavaScript and TVML content on tvOS from a Mac on the same network.
 
-#### Overview
+## Overview
 
 JavaScript and TVML in your apps can be inspected from a Mac on the same network as your Apple TV. You can also use simulators on macOS to debug your JavaScript and TVML without having to use a physical device. To learn more about getting simulators for device, see [Installing Xcode and Simulators](./installing-xcode-and-simulators.md).
 
-#### Enabling inspecting your device from a Mac on the same network
+## Enabling inspecting your device from a Mac on the same network
 
 Unlike iOS and iPadOS devices, Apple TV does not have a way to connect physically to your Mac. Instead you must pair the Apple TV over the network:
 
@@ -23,11 +23,11 @@ Once paired, you can inspect content on the device like any other device. In Saf
 
 Alternatively, you can also [pair with the device using Xcode](https://help.apple.com/xcode/mac/current/#/devbc48d1bad).
 
-##### tvOS simulators
+### tvOS simulators
 
 **Web Inspector** is always enabled for simulators, and currently booted simulators will appear in the **Develop** menu just like connected devices. You do not need to pair simulators.
 
-#### Inspecting JavaScript and TVML in apps
+## Inspecting JavaScript and TVML in apps
 
 [`JSContext`](../JavaScriptCore/jscontext.md)s in apps can be made inspectable, allowing any user who enables **Web Inspector** on the device to inspect them. When content in an application is inspectable it will appear in a submenu for the connected device of the *Develop* menu of Safari on a connected Mac. webpages (and other content) is separated by app, making it easier to find the webpage you want to inspect.
 

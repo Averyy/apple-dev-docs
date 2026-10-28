@@ -21,11 +21,11 @@ class func widgetController() -> Self
 + (instancetype) widgetController;
 ```
 
-#### Return Value
+## Return Value
 
 A widget controller.
 
-#### Discussion
+## Discussion
 
 Both a widget and its containing app can get a widget controller object to specify whether there is content the widget should display.
 

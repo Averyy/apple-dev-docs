@@ -19,11 +19,11 @@ func es_exec_fd(_ event: UnsafePointer<es_event_exec_t>, _ index: UInt32) -> Uns
 extern const es_fd_t *es_exec_fd(const es_event_exec_t *event, uint32_t index);
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to an [`es_fd_t`](./es_fd_t.md) instance that describes the file descriptor.
 
-#### Discussion
+## Discussion
 
 This function doesn’t allocate memory for the returned file descriptor description; it points to an [`es_fd_t`](./es_fd_t.md) inside of `event`. Because you don’t own this memory, don’t try to free it.
 

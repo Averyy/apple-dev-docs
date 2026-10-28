@@ -15,7 +15,7 @@ Posted when protected data is about to become unavailable.
 extern NSNotificationName NSApplicationProtectedDataWillBecomeUnavailableNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is [`shared`](./nsapplication/shared.md). This notification doesn’t contain a `userInfo` dictionary. The system posts this notification on the main actor.
 

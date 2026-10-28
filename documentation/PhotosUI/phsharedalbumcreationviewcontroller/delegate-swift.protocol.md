@@ -21,7 +21,7 @@ protocol Delegate : NSObjectProtocol
 @protocol PHSharedAlbumCreationViewControllerDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 A set of methods that the delegate must implement to respond to `PHSharedAlbumCreationViewController` events.
 

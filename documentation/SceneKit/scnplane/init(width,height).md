@@ -25,11 +25,11 @@ convenience init(width: CGFloat, height: CGFloat)
 + (instancetype) planeWithWidth:(CGFloat) width height:(CGFloat) height;
 ```
 
-#### Return Value
+## Return Value
 
 A new plane geometry.
 
-#### Discussion
+## Discussion
 
 The plane is centered in its local coordinate system. For example, if you create a plane whose width and height are both `10.0`, it extends from `-5.0` to `5.0` along both the x- and y-axes, and the z-coordinate of all points in the plane is zero.
 

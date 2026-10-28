@@ -21,7 +21,7 @@ Creates a group resource from an array of audio file resources (backward compati
 @preconcurrency init(_ resources: [AudioFileResource]) throws
 ```
 
-#### Discussion
+## Discussion
 
 This initializer maintains backward compatibility with existing code that doesn’t specify configuration.
 

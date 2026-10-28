@@ -24,7 +24,7 @@ enum PHASEPlaybackMode
 enum PHASEPlaybackMode : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 This class defines the options for a sampler node’s [`playbackMode`](./phasesamplernodedefinition/playbackmode.md). These options control whether the node’s sound event automatically plays back its audio asset from the beginning after finishing.
 

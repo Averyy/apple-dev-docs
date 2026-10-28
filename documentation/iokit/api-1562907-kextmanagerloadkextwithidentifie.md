@@ -16,11 +16,11 @@ Request the kext loading system to load a kext with a given bundle identifier.
 OSReturn KextManagerLoadKextWithIdentifier(CFStringRef kextIdentifier, CFArrayRef dependencyKextAndFolderURLs);
 ```
 
-#### Return Value
+## Return Value
 
 `kOSReturnSuccess` if the kext is successfully loaded (or is already loaded), otherwise returns on error.
 
-#### Discussion
+## Discussion
 
 `kextIdentifier` is looked up in the system extensions folder and among any kexts from `dependencyKextAndFolderURLs`. Any non-kext URLs in `dependencyKextAndFolderURLs` are scanned at the top level for kexts and plugins of kexts.
 

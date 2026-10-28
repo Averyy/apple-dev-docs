@@ -25,7 +25,7 @@ protocol NSSecureCoding : NSCoding
 @protocol NSSecureCoding <NSCoding>
 ```
 
-#### Overview
+## Overview
 
 Historically, many classes decoded instances of themselves like this:
 

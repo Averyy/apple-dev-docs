@@ -21,7 +21,7 @@ Returns the number of glyphs (suitable for rendering) in the `hvgl` table.
 uint32_t HVF_glyph_count(HVFPartRenderer *renderer);
 ```
 
-#### Discussion
+## Discussion
 
 The glyphs are always a prefix of all parts.
 

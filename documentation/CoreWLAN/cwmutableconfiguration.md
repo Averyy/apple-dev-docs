@@ -19,7 +19,7 @@ class CWMutableConfiguration
 @interface CWMutableConfiguration : CWConfiguration
 ```
 
-#### Overview
+## Overview
 
 Use this class to change configuration settings or the preferred networks list. To commit configuration changes, use [`commitConfiguration(_:authorization:)`](./cwinterface/commitconfiguration%28_,authorization%29.md).
 

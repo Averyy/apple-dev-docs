@@ -16,7 +16,7 @@ Queries an AudioHardwareObject about whether or not the given property can be se
 func isPropertySettable(address: AudioObjectPropertyAddress) throws -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 A Bool indicating whether or not the property is settable.
 

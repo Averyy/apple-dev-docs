@@ -23,7 +23,7 @@ var inclusionHashes: [Data] { get }
 @property (nonatomic, copy, readonly) NSArray<NSData *> * inclusionHashes;
 ```
 
-#### Discussion
+## Discussion
 
 The data contains an array of SHA256 hash of the user’s combined public identities.
 

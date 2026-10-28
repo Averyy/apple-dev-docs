@@ -25,7 +25,7 @@ static var addressFamilyNotSupported: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 An address incompatible with the requested protocol was used. For example, you shouldn’t necessarily expect to be able to use name server addresses with ARPA Internet protocols.
 

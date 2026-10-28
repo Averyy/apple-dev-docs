@@ -25,7 +25,7 @@ var shouldEnableLimits: Bool { get set }
 @property (nonatomic) BOOL shouldEnableLimits;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`false`](../../Swift/false.md). If [`true`](../../Swift/true.md), the [`lowerAngleLimit`](./loweranglelimit.md) and [`upperAngleLimit`](./upperanglelimit.md) properties are used to limit the angle of the pin joint.
 

@@ -23,11 +23,11 @@ class func confirmationRequired(with taskListToConfirm: INTaskList?, forReason r
 + (instancetype) confirmationRequiredWithTaskListToConfirm:(INTaskList *) taskListToConfirm forReason:(INAddTasksTargetTaskListConfirmationReason) reason;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INAddTasksTargetTaskListResolutionResult`](../inaddtaskstargettasklistresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method when you can’t resolve the parameter to a similar but not equal temporal event type than the one specified in the intent. Don’t use this method to resolve task list types your app doesn’t support.
 

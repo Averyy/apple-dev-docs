@@ -25,11 +25,11 @@ init(roundingMode: NSDecimalNumber.RoundingMode, scale: Int16, raiseOnExactness 
 - (instancetype) initWithRoundingMode:(NSRoundingMode) roundingMode scale:(short) scale raiseOnExactness:(BOOL) exact raiseOnOverflow:(BOOL) overflow raiseOnUnderflow:(BOOL) underflow raiseOnDivideByZero:(BOOL) divideByZero;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized `NSDecimalNumberHandler` object initialized with customized behavior. The returned object might be different than the original receiver.
 
-#### Discussion
+## Discussion
 
 See the [`NSDecimalNumberBehaviors`](../nsdecimalnumberbehaviors.md) protocol specification for a complete explanation of the possible behaviors.
 

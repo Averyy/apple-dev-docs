@@ -24,7 +24,7 @@ var sampleBufferRenderer: AVSampleBufferVideoRenderer { get }
 @property (nonatomic, readonly) AVSampleBufferVideoRenderer * sampleBufferRenderer;
 ```
 
-#### Discussion
+## Discussion
 
 This object allows you to safely enqueue sample buffers from a background thread.
 

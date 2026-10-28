@@ -21,7 +21,7 @@ Creates an entity query that searches for entities by their identifiers.
 func entityQuery<Identifier>(identifiers: [Identifier]) -> AnyEntityQuery where Identifier : EntityIdentifierConvertible
 ```
 
-#### Return Value
+## Return Value
 
 An entity query, configured for identifier-based searching.
 

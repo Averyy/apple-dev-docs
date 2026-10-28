@@ -12,7 +12,7 @@ Delivers the latest acceleration data to the delegate.
 - (void) accelerometer:(UIAccelerometer *) accelerometer didAccelerate:(UIAcceleration *) acceleration;
 ```
 
-#### Discussion
+## Discussion
 
 The shared [`UIAccelerometer`](../uiaccelerometer.md) object invokes this method at the desired interval, providing your delegate with updated acceleration data each time.
 

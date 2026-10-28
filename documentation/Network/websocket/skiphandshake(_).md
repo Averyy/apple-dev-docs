@@ -21,7 +21,7 @@ Configure the WebSocket protocol to skip the opening handshake and begin framing
 func skipHandshake(_ skip: Bool) -> WebSocket
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: This option should not be set when communicating with a generic WebSocket server or client. This option allows a custom handshake (or no handshake) to be implemented below the WebSocket layer when both client and server are coordinated.
 

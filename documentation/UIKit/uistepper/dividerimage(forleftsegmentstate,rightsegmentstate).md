@@ -22,7 +22,7 @@ func dividerImage(forLeftSegmentState state: UIControl.State, rightSegmentState 
 - (UIImage *) dividerImageForLeftSegmentState:(UIControlState) state rightSegmentState:(UIControlState) state;
 ```
 
-#### Return Value
+## Return Value
 
 The image used for the specified combination of left and right states.
 

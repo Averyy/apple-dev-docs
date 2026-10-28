@@ -24,11 +24,11 @@ convenience init(name: String, semantic: MDLMaterialSemantic, url URL: URL?)
 - (instancetype) initWithName:(NSString *) name semantic:(MDLMaterialSemantic) semantic URL:(NSURL *) URL;
 ```
 
-#### Return Value
+## Return Value
 
 A new material property object whose [`type`](./type.md) property is [`MDLMaterialPropertyType.URL`](../mdlmaterialpropertytype/url.md).
 
-#### Discussion
+## Discussion
 
 A renderer (or other software component processing a material) is responsible for loading a texture image from the specified URL.
 

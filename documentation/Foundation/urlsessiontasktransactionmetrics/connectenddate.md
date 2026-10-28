@@ -25,7 +25,7 @@ var connectEndDate: Date? { get }
 @property (copy, readonly, nullable) NSDate * connectEndDate;
 ```
 
-#### Discussion
+## Discussion
 
 This value accounts for completion of security-related and other handshakes. The value will be `nil` if a persistent connection is used, or if the resource is retrieved from local resources.
 

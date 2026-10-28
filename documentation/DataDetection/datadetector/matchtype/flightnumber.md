@@ -21,7 +21,7 @@ The type that represents flight numbers.
 static let flightNumber: DataDetector.MatchType
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: The framework only supports International Air Transport Association (IATA) codes.
 

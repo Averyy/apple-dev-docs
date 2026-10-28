@@ -23,7 +23,7 @@ func isPointNearMarkedText(_ point: CGPoint) -> Bool
 - (BOOL) isPointNearMarkedText:(CGPoint) point;
 ```
 
-#### Discussion
+## Discussion
 
 The system uses the value you return to determine whether to begin text interaction gestures that occur close to the marked text.
 

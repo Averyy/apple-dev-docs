@@ -25,7 +25,7 @@ init(audioTimeStamp ts: UnsafePointer<AudioTimeStamp>, sampleRate: Double)
 - (instancetype) initWithAudioTimeStamp:(const AudioTimeStamp *) ts sampleRate:(double) sampleRate;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`AVAudioTime`](../avaudiotime.md) instance.
 

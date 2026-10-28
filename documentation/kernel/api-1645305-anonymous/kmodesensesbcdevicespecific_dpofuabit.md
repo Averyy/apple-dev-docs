@@ -13,7 +13,7 @@
 kModeSenseSBCDeviceSpecific_DPOFUABit = 4
 ```
 
-#### Discussion
+## Discussion
 
 Bit to indicate DPO and FUA bits are accepted by the device server.
 

@@ -19,7 +19,7 @@ struct MLWordTagger
 
 - [Creating a word tagger model](./creating-a-word-tagger-model.md)
 
-#### Overview
+## Overview
 
 Use an [`MLWordTagger`](./mlwordtagger.md) to create a custom word tagger to identify content that’s relevant for your app, like product names and points of interest.
 

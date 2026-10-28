@@ -17,7 +17,7 @@ The metadata associated with the setting that denies access to content in the Bo
 static let denyBookstoreErotica: SettingMetadata<Bool>
 ```
 
-#### Discussion
+## Discussion
 
 Use `denyBookstoreErotica` to access the metadata for [`denyBookstoreErotica`](./denybookstoreerotica-swift.property.md). The default value is `false`.
 

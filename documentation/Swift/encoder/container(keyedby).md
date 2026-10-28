@@ -22,11 +22,11 @@ Returns an encoding container appropriate for holding multiple values keyed by t
 func container<Key>(keyedBy type: Key.Type) -> KeyedEncodingContainer<Key> where Key : CodingKey
 ```
 
-#### Return Value
+## Return Value
 
 A new keyed encoding container.
 
-#### Discussion
+## Discussion
 
 You must use only one kind of top-level encoding container. This method must not be called after a call to `unkeyedContainer()` or after encoding a value through a call to `singleValueContainer()`
 

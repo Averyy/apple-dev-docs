@@ -23,7 +23,7 @@ func truncatedGlyphRange(inLineFragmentForGlyphAt glyphIndex: Int) -> NSRange
 - (NSRange) truncatedGlyphRangeInLineFragmentForGlyphAtIndex:(NSUInteger) glyphIndex;
 ```
 
-#### Return Value
+## Return Value
 
 The range of truncated glyphs for a line fragment containing the specified glyph, or, when there is no truncation for the line fragment, `{NSNotFound, 0}`.
 

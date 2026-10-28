@@ -19,7 +19,7 @@ let kMDItemCity: CFString!
 const CFStringRef kMDItemCity;
 ```
 
-#### Discussion
+## Discussion
 
 For example, "New York", "Cupertino", or "Toronto". 
 

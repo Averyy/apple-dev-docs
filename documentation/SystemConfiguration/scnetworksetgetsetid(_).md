@@ -19,7 +19,7 @@ func SCNetworkSetGetSetID(_ set: SCNetworkSet) -> CFString?
 CFStringRefSCNetworkSetGetSetID(SCNetworkSetRef set);
 ```
 
-#### Return Value
+## Return Value
 
 The set identifier.
 

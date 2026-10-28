@@ -19,7 +19,7 @@ typealias SpeechTextDoneProcPtr = (SpeechChannel, SRefCon, UnsafeMutablePointer<
 typedef void (*SpeechTextDoneProcPtr)(SpeechChannel chan, SRefCon refCon, const void * _Nullable *nextBuf, unsigned long *byteLen, SInt32 *controlFlags);
 ```
 
-#### Discussion
+## Discussion
 
 If a text-done callback function is installed in a speechchannel, then the Speech Synthesis Manager calls this function whenit finishes processing a buffer of text. The Speech Synthesis Managermight not yet have completed finishing speaking the text and indeed mightnot have started speaking it. 
 

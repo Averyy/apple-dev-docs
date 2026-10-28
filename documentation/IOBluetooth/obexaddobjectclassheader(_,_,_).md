@@ -19,11 +19,11 @@ func OBEXAddObjectClassHeader(_ inHeaderData: UnsafeRawPointer!, _ inHeaderDataL
 OBEXError OBEXAddObjectClassHeader(const void *inHeaderData, uint32_t inHeaderDataLength, CFMutableDictionaryRef dictRef);
 ```
 
-#### Return Value
+## Return Value
 
 Error code, kOBEXSuccess (0) if success.
 
-#### Discussion
+## Discussion
 
 Object Class header - OBEX Spec, 2.2.15: Byte sequence.
 

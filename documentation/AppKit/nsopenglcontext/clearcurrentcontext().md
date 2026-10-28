@@ -21,7 +21,7 @@ class func clearCurrentContext()
 + (void) clearCurrentContext;
 ```
 
-#### Discussion
+## Discussion
 
 Until you issue a subsequent call to the [`makeCurrentContext()`](./makecurrentcontext%28%29.md) method, OpenGL calls do nothing.
 

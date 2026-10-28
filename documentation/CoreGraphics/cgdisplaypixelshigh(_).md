@@ -20,7 +20,7 @@ func CGDisplayPixelsHigh(_ display: CGDirectDisplayID) -> Int
 extern size_t CGDisplayPixelsHigh(CGDirectDisplayID display);
 ```
 
-#### Return Value
+## Return Value
 
 The display height in pixel units.
 

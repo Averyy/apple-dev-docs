@@ -16,7 +16,7 @@ The ready state of the media resource. (read-only)
 readonly attribute unsigned short readyState;
 ```
 
-#### Discussion
+## Discussion
 
 Possible values are described in [Media Ready States](./media_ready_states.md).
 

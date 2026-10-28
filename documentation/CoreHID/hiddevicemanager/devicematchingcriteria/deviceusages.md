@@ -15,7 +15,7 @@ A list of usages supported by the device.
 var deviceUsages: [HIDUsage]?
 ```
 
-#### Discussion
+## Discussion
 
 For more details, see [`HIDUsage`](../../hidusage.md).
 

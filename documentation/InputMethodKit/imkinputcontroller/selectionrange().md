@@ -19,11 +19,11 @@ func selectionRange() -> NSRange
 - (NSRange) selectionRange;
 ```
 
-#### Return Value
+## Return Value
 
 The range of the selection.
 
-#### Discussion
+## Discussion
 
 This method is called by [`updateComposition()`](./updatecomposition%28%29.md) to obtain the selection range for marked text. The default implementation sets the selection range at the end of the marked text. You should override this method if your input method provides font or glyph information.
 

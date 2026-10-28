@@ -24,7 +24,7 @@ var curveBasis: MTLCurveBasis { get set }
 @property (nonatomic) MTLCurveBasis curveBasis;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`MTLCurveBasis.bSpline`](../mtlcurvebasis/bspline.md).
 

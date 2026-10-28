@@ -21,7 +21,7 @@ A Boolean value that indicates whether the Switch Control motor accessibility fe
 var accessibilitySwitchControlEnabled: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 The state changes as the user turns on or off the Switch Control feature.
 

@@ -26,7 +26,7 @@ static let scaleFactor: CIRAWFilterOption
 extern CIRAWFilterOption const kCIInputScaleFactorKey;
 ```
 
-#### Discussion
+## Discussion
 
 The associated value is a floating-point value packaged as an [`NSNumber`](../../Foundation/nsnumber.md) object that specifies the desired scale factor at which the image will be drawn. Setting this value can greatly improve the drawing performance. A value of `1` is the identity. In some cases, if you change the scale factor and enable draft mode, performance can decrease. See [`allowDraftMode`](./allowdraftmode.md).
 

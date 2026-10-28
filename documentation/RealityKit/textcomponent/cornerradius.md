@@ -20,7 +20,7 @@ The corner radius of the text mesh.
 var cornerRadius: Float
 ```
 
-#### Discussion
+## Discussion
 
 The corner geometry is based on a circular shape and is not a continuous corner. Text components use the CoreGraphics coordinate space: The origin is at the upper left of the canvas and positive values extend down and to the right.
 

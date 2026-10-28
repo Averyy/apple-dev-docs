@@ -5,7 +5,7 @@
 
 Read metadata for app builds you upload to App Store Connect.
 
-#### Overview
+## Overview
 
 Use this resource to upload and manage build uploads for your apps. Use the `BUILD_UPLOAD_STATE_UPDATED` webhook event type to get information about build upload status changes. To learn more, see [`WebhookEventType`](./webhookeventtype.md).
 

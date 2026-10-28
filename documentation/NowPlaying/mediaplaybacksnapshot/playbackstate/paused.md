@@ -21,7 +21,7 @@ Playback is paused.
 case paused
 ```
 
-#### Discussion
+## Discussion
 
 Use this state when playback is temporarily halted but can be resumed.
 

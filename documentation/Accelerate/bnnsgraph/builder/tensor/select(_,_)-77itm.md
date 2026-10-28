@@ -23,7 +23,7 @@ func select<U>(_ valueIfTrue: any BNNSGraph.Builder.OperationParameter<U>, _ val
 
 Available when `T` is `Bool`.
 
-#### Discussion
+## Discussion
 
 For example, the following code returns `Float.infinity` when the corresponding elements in `z` are `true` and the elements in `valueIfFalse` when the corresponding elements in `z` are `false`:
 

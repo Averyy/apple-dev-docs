@@ -9,7 +9,7 @@ Convert iWork documents to Portable Document Format (PDF) files using a web API.
 **Availability**:
 - iWork 14.0+
 
-#### Overview
+## Overview
 
 The iWork API enables the conversion of iWork documents from apps such as Numbers, Pages, and Keynote into PDF documents that a person can view using the Preview app or another PDF reader application.
 
@@ -24,13 +24,13 @@ The conversion service supports files that meet the following criteria:
 
 To convert iWork documents to PDF files using the iWork document-exporting service, sign up by generating the keys and service identifier the service requires. This process consists of several steps that you need to perform in the order described below.
 
-##### Log in to the developer portal
+### Log in to the developer portal
 
 Log into the developer portal by accessing [developer.apple.com](https://developer.apple.com) using your Apple Developer ID. After logging in, click on the Identifiers item in the Certificates, IDs & Profiles section.
 
 Make note of your developer team ID, located under your account name in the upper-right corner of the window; the service requires this value when making calls to the service API.
 
-##### Create a new identifier
+### Create a new identifier
 
 To create a new identifier, perform these steps:
 
@@ -41,7 +41,7 @@ To create a new identifier, perform these steps:
 5. Click on the newly created identifier.
 6. Enable iWork Document Export, click Continue, and then click Save.
 
-##### Create and download a new key
+### Create and download a new key
 
 To create a new key, perform these steps:
 

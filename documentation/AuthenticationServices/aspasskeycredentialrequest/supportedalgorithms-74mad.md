@@ -19,7 +19,7 @@ A list of cryptographic signature algorithms that the relying party supports.
 var supportedAlgorithms: [ASCOSEAlgorithmIdentifier] { get }
 ```
 
-#### Discussion
+## Discussion
 
 For credential assertion requests, this property is empty.
 

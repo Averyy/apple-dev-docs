@@ -23,7 +23,7 @@ func switchToLatest() -> Publishers.SwitchToLatest<Self.Output, Publishers.SetFa
 
 Available when `Failure` is `Never` and `Output` conforms to `Publisher`.
 
-#### Discussion
+## Discussion
 
 This operator works with an upstream publisher of publishers, flattening the stream of elements to appear as if they were coming from a single stream of elements. It switches the inner publisher as new ones arrive but keeps the outer publisher constant for downstream subscribers.
 

@@ -15,7 +15,7 @@ The maximum number of participants allowed for a group chat.
 var maximumGroupSize: Int? { get }
 ```
 
-#### Discussion
+## Discussion
 
 This value is `nil` if group chat is disabled.
 

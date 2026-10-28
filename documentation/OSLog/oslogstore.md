@@ -25,7 +25,7 @@ class OSLogStore
 @interface OSLogStore : NSObject
 ```
 
-#### Overview
+## Overview
 
 Instances of this class represent a fixed range of entries and may be backed by a `logarchive` or your Mac’s local store.
 

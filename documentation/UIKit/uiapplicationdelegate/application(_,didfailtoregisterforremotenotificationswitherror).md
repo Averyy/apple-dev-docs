@@ -23,7 +23,7 @@ optional func application(_ application: UIApplication, didFailToRegisterForRemo
 - (void) application:(UIApplication *) application didFailToRegisterForRemoteNotificationsWithError:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 UIKit calls this method if it was unable to register your app with APNs or if your app is not properly configured for remote notifications. During development, make sure your app has the proper entitlements and that its App ID is configured to support push notifications. You might use your implementation of this method to make a note of the failed registration so that you can try again later.
 

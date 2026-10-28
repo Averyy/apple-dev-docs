@@ -19,7 +19,7 @@ Creates a previously saved data representation.
 - (instancetype) initWithDataRepresentation:(NSData *) dataRepresentation;
 ```
 
-#### Return Value
+## Return Value
 
 An object of a previously saved data representation.
 

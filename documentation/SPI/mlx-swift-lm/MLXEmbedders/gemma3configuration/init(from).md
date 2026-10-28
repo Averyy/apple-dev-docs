@@ -17,7 +17,7 @@ Initializes a configuration by decoding from the given decoder.
 init(from decoder: Decoder) throws
 ```
 
-#### Discussion
+## Discussion
 
 This initializer automatically handles configurations that are nested under a `text_config` key, which is common for models converted from Vision-Language Model (VLM) checkpoints.
 

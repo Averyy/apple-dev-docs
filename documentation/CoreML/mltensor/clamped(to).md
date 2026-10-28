@@ -31,7 +31,7 @@ func clamped(to bounds: PartialRangeFrom<Float>) -> MLTensor
 func clamped(to bounds: PartialRangeThrough<Float>) -> MLTensor
 ```
 
-#### Discussion
+## Discussion
 
 For example:
 

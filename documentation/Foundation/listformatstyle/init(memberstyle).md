@@ -21,7 +21,7 @@ Creates an instance using the provided format style.
 init(memberStyle: Style)
 ```
 
-#### Discussion
+## Discussion
 
 The input type of memberStyle must match the type of an element in the sequence. The output type is a string.
 

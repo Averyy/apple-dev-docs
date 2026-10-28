@@ -19,7 +19,7 @@ optional func webView(_ sender: WebView!, didCancelClientRedirectFor frame: WebF
 - (void) webView:(WebView *) sender didCancelClientRedirectForFrame:(WebFrame *) frame;
 ```
 
-#### Discussion
+## Discussion
 
 This might happen if a frame changes locations before a pending client redirect is fired. The client redirect occurred in `frame`.
 

@@ -16,11 +16,11 @@ Returns the stencil format at the specified index in the layer capabilities.
 MTLPixelFormat cp_layer_renderer_capabilities_drawable_render_context_supported_stencil_format(cp_layer_renderer_capabilities_t layer_capabilities, size_t index);
 ```
 
-#### Return Value
+## Return Value
 
 The stencil format at the specified index.
 
-#### Discussion
+## Discussion
 
 Use this function to determine the pixel arrangements and characteristics you can apply to the layer.
 

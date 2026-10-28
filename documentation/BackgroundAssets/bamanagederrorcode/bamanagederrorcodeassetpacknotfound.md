@@ -20,7 +20,7 @@ An error code that indicates the system couldn’t find an asset pack with the g
 BAManagedErrorCodeAssetPackNotFound
 ```
 
-#### Discussion
+## Discussion
 
 Refer to the value in `-[NSError userInfo]` for the key [`BAAssetPackIdentifierErrorKey`](../baassetpackidentifiererrorkey.md) for the asset pack’s identifier.
 

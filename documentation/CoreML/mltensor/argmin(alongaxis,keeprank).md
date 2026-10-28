@@ -21,11 +21,11 @@ Returns the indices of the minimum values along the specified axis.
 func argmin(alongAxis axis: Int, keepRank: Bool = false) -> MLTensor
 ```
 
-#### Return Value
+## Return Value
 
 The reduced tensor.
 
-#### Discussion
+## Discussion
 
 ```swift
 let x = MLTensor(shape: [3, 2], scalars: [2, 3, 4, 5, 6, 7], scalarType: Float.self)

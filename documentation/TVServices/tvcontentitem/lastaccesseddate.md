@@ -21,7 +21,7 @@ var lastAccessedDate: Date? { get set }
 @property (nonatomic, copy, nullable) NSDate * lastAccessedDate;
 ```
 
-#### Discussion
+## Discussion
 
 A typical use is for content types in which “playing” represents the date when the user last played the item or played a subitem within the group. When the user simply looks at an item, the access date should not change.
 

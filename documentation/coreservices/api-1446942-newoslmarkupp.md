@@ -19,11 +19,11 @@ func NewOSLMarkUPP(_ userRoutine: OSLMarkProcPtr!) -> OSLMarkUPP!
 OSLMarkUPP NewOSLMarkUPP(OSLMarkProcPtr userRoutine);
 ```
 
-#### Return Value
+## Return Value
 
 See [`OSLMarkUPP`](./oslmarkupp.md).
 
-#### Discussion
+## Discussion
 
 See the [`OSLMarkProcPtr`](./oslmarkprocptr.md) callback function. 
 

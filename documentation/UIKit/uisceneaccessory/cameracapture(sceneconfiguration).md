@@ -21,7 +21,7 @@ class func cameraCapture(sceneConfiguration: UISceneConfiguration) -> Self
 + (instancetype) cameraCaptureSceneAccessoryWithConfiguration:(UISceneConfiguration *) sceneConfiguration;
 ```
 
-#### Discussion
+## Discussion
 
 The content may be presented while the app is in the foreground and has an active camera capture session. The system determines whether and where to present it. The content can be interactive.
 

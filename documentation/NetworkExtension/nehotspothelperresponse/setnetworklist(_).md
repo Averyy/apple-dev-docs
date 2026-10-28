@@ -22,7 +22,7 @@ func setNetworkList(_ networkList: [NEHotspotNetwork])
 - (void) setNetworkList:(NSArray<NEHotspotNetwork *> *) networkList;
 ```
 
-#### Discussion
+## Discussion
 
 The Hotspot Helper app calls this method on its response to the [`NEHotspotHelperCommandType.filterScanList`](../nehotspothelpercommandtype/filterscanlist.md). The helper provides the list of network objects that it is capable of handling with at least low confidence. Networks that it has no confidence in handling should not be specified.
 

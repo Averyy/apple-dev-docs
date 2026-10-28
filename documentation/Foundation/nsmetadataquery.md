@@ -25,7 +25,7 @@ class NSMetadataQuery
 @interface NSMetadataQuery : NSObject
 ```
 
-#### Overview
+## Overview
 
 The [`NSMetadataQuery`](./nsmetadataquery.md) class encapsulates the functionality provided by the [MDQuery](../coreservices/file_metadata/mdquery.md) opaque type for querying the Spotlight metadata.
 

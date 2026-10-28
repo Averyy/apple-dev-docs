@@ -20,7 +20,7 @@ case actionLoadError
 AMActionLoadError
 ```
 
-#### Discussion
+## Discussion
 
 For example, there may have been a problem with a library it depends on.
 

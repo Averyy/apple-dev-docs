@@ -24,7 +24,7 @@ case networkAccessRequired
 PHPhotosErrorNetworkAccessRequired
 ```
 
-#### Discussion
+## Discussion
 
 Set [`isNetworkAccessAllowed`](../../phassetresourcerequestoptions/isnetworkaccessallowed.md) to `true` to enable network access.
 

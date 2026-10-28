@@ -20,7 +20,7 @@ A type that describes a video analysis operation.
 protocol Request : Sendable
 ```
 
-#### Overview
+## Overview
 
 The framework provides two built-in request types: [`HighlightAnalysisRequest`](../highlightanalysisrequest.md) and [`KeyFrameAnalysisRequest`](../keyframeanalysisrequest.md).
 

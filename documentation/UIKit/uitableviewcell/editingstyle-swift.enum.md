@@ -23,7 +23,7 @@ enum EditingStyle
 enum UITableViewCellEditingStyle : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Use these constants with the [`editingStyle`](./editingstyle-swift.property.md) property.
 

@@ -28,7 +28,7 @@ var excludedRoutes: [NEIPv6Route]? { get set }
 
 - [Routing your VPN network traffic](../routing-your-vpn-network-traffic.md)
 
-#### Discussion
+## Discussion
 
 This property excludes routes that the system might otherwise include from the [`includedRoutes`](./includedroutes.md) property. The system automatically excludes the IP address of the tunnel server.
 

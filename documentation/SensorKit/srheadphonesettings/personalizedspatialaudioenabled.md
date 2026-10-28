@@ -19,7 +19,7 @@ var personalizedSpatialAudioEnabled: SRHeadphoneSettings.SettingEnablement { get
 @property (nonatomic, assign, readonly) SRHeadphoneSettingsSettingEnablement personalizedSpatialAudioEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 Improved audio rendering when used with supported AirPods or Beats headphones.
 

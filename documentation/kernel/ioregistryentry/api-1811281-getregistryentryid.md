@@ -12,11 +12,11 @@ uint64_t getRegistryEntryID(
  void );
 ```
 
-#### Return Value
+## Return Value
 
 An ID for the registry entry, assigned when the entry is first attached in the registry.
 
-#### Overview
+## Overview
 
 The entry ID returned by getRegistryEntryID can be used to identify a registry entry across all tasks. A registry entry may be looked up by its entry ID by creating a matching dictionary with IORegistryEntryIDMatching() in user space, or `IOService::registryEntryIDMatching()` in the kernel, to be used with the IOKit matching functions. The ID is valid only until the machine reboots.
 

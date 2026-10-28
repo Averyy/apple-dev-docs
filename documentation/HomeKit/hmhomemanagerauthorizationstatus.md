@@ -24,7 +24,7 @@ struct HMHomeManagerAuthorizationStatus
 enum HMHomeManagerAuthorizationStatus : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 Inspect the home manager’s [`authorizationStatus`](./hmhomemanager/authorizationstatus.md) property for one or more of the bits defined by [`HMHomeManagerAuthorizationStatus`](./hmhomemanagerauthorizationstatus.md).
 

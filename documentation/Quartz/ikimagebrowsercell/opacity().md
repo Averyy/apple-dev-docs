@@ -19,11 +19,11 @@ func opacity() -> CGFloat
 - (CGFloat) opacity;
 ```
 
-#### Return Value
+## Return Value
 
 The cell’s opacity.
 
-#### Discussion
+## Discussion
 
 Possible values are between 0.0 (transparent) and 1.0 (opaque).
 

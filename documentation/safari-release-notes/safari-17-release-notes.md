@@ -5,17 +5,17 @@
 
 Released September 18, 2023 — Version 17 (19616.1.27)
 
-#### Overview
+## Overview
 
 Safari 17 is available for iOS 17, iPadOS 17, macOS Sonoma, macOS Ventura, and macOS Monterey.
 
-##### Accessibility
+### Accessibility
 
-###### New Features
+#### New Features
 
 - Added support for `code` ARIA role. (106621574)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed `aria-owns` attribute for the `radio` role. (23630121)
 - Fixed incorrect accessible name from multiple `<label>` elements. (24033482)
@@ -49,28 +49,28 @@ Safari 17 is available for iOS 17, iPadOS 17, macOS Sonoma, macOS Ventura, and m
 - Fixed unexpected speech synthesis behavior for unordered lists. (112085797)
 - Fixed `display: contents` elements sometimes missing their children. (113044333)
 
-##### Apple Pay
+### Apple Pay
 
-###### New Features
+#### New Features
 
 - Added support for Apple Pay in cross-origin iframes with the `allow="payment"` attribute. (88969594)
 
-##### Authentication
+### Authentication
 
-###### New Features
+#### New Features
 
 - Added support for `largeBlob` extension for the local authenticator. (105237759)
 
-##### Canvas
+### Canvas
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed `createImageBitmap` using `ImageData` to respect the premultiply flag. (89382358)
 - Fixed repaint issue when drawing VideoFrames to canvas. (109100283)
 
-##### CSS
+### CSS
 
-###### New Features
+#### New Features
 
 - Added support for `@counter-style`. (30318695)
 - Added support for the `update` Media Query. (35799713)
@@ -91,7 +91,7 @@ Safari 17 is available for iOS 17, iPadOS 17, macOS Sonoma, macOS Ventura, and m
 - Added support for `contain-intrinsic-size: auto none`. (111510558)
 - Added support for `contain-intrinsic-size: inherit`. (112409855)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed CSS `@imports` in HTML missing quote marks getting mistakenly hidden from the Preload Scanner. (46031271)
 - Fixed matching elements without a parent with the child-indexed pseudo-class. (91637426)
@@ -130,9 +130,9 @@ Safari 17 is available for iOS 17, iPadOS 17, macOS Sonoma, macOS Ventura, and m
 - Fixed `@font-face { src: format() }`  to parse valid unsupported keywords. (112135869)
 - Fixed `-webkit-box-decoration-break: clone` with left and right padding causes unexpected wrapping of inline content. (112197978)
 
-##### Developer Tools
+### Developer Tools
 
-###### New Features
+#### New Features
 
 - Redesigned the Develop menu, including device and application icons for connected devices. (99830772)
 - Added the ability to open the current page in a Simulator from Responsive Design Mode or the Develop menu. (99830918)
@@ -140,21 +140,21 @@ Safari 17 is available for iOS 17, iPadOS 17, macOS Sonoma, macOS Ventura, and m
 - Redesigned Responsive Design Mode. (100522676)
 - Added support for pairing with tvOS and visionOS on macOS Sonoma. (103498148)
 
-##### DOM
+### DOM
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed XML serialization to serialize implicit `xmlns` attributes first and use lowercase “ns” when generating prefixes. (103234827)
 
-##### Editing
+### Editing
 
-###### New Features
+#### New Features
 
 - Improved interoperability for the Range API and Selection API. (100579464)
 - Added a new appearance for marked text. (101869724)
 - Added support for the caret color to match the accent color of the system on macOS. (102450017)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed webpage translation for iframes. (59693219)
 - Fixed returning live range synchronized with selection from `getRangeAt` and throw errors as specified. (69015762)
@@ -165,13 +165,13 @@ Safari 17 is available for iOS 17, iPadOS 17, macOS Sonoma, macOS Ventura, and m
 - Fixed “insertLineBreak” sometimes inserting a non-breaking space instead of a new line. (105439065)
 - Fixed an issue when breaking out of an empty list item in case of nested lists. (111724381)
 
-##### Forms
+### Forms
 
-###### New Features
+#### New Features
 
 - Added support for `<hr>` inside `<select>`. On macOS this is rendered as a separator. (107656886)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed CSS color getting adjusted for disabled input elements. (99826522)
 - Fixed `input.validity` reporting `valid: true` for partially completed dates and times. (102984901)
@@ -187,43 +187,43 @@ Safari 17 is available for iOS 17, iPadOS 17, macOS Sonoma, macOS Ventura, and m
 - Fixed HTMLOptionElement text setter to not throw an exception. (109740566)
 - Fixed change event not firing when the user reverts the value of a color, date, or time input after JavaScript changed the value. (109843791)
 
-##### HTML
+### HTML
 
-###### New Features
+#### New Features
 
 - Added experimental support for the `<model>` element. (100595523)
 - Added support for the `popover` attribute. (104204093)
 - Added support for the `<search>` element. (107175819)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed handling unclosed parenthese at the end of the `sizes` attribute. (107509739)
 - Fixed the HTMLPreloadScanner to not preload scripts with unsupported types. (110905029)
 - Fixed popover incorrectly auto-hiding when using shadow DOM. (112410375)
 
-##### HTTP
+### HTTP
 
-###### New Features
+#### New Features
 
 - Added support for preconnect via HTTP early hints. (106055702)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed respecting Content-Type header for MIME type determination. (73343155)
 - Fixed a bug with empty header values in Headers objects with “request-no-cors” guard. (105207779)
 - Fixed Cross-Origin-Embedder-Policy incorrectly blocking an iframe on a cache hit. (107002434)
 - Fixed `vary` header behavior for opaque responses. (107769146)
 
-##### Images
+### Images
 
-###### New Features
+#### New Features
 
 - Added support for HEIC/HEIF images. (99517108)
 - Added support for JPEG XL. (100641584)
 
-##### JavaScript
+### JavaScript
 
-###### New Features
+#### New Features
 
 - Added support for RegExp duplicate named capture groups. (100335581)
 - Added support for the RegExp `v` flag. (100337109)
@@ -231,22 +231,22 @@ Safari 17 is available for iOS 17, iPadOS 17, macOS Sonoma, macOS Ventura, and m
 - Updated `Intl.Locale` to replace info getters with individual `get…` methods. (105570888)
 - Added support for `Set.prototype.difference`. (106031487)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Improved performance of `Object.entries()` by 1.5×. (100783096)
 - Fixed `/\p{Number}--]/v;` to be a syntax error. (109400589)
 - Fixed: Improved RegExp lookbehind character class backtracking. (111051833)
 - Fixed `String#charAt` to support out-of-bounds handling in DFG. (111421698)
 
-##### Live Text
+### Live Text
 
-###### New Features
+#### New Features
 
 - Added support for vertical text recognition in images and videos. (101314828)
 
-##### Lockdown Mode
+### Lockdown Mode
 
-###### New Features
+#### New Features
 
 - Disabled IndexedDB. (101187278)
 - Disabled the File API and FileReader API. (101187306)
@@ -257,9 +257,9 @@ Safari 17 is available for iOS 17, iPadOS 17, macOS Sonoma, macOS Ventura, and m
 - Disabled the WebSpeech (SpeechSynthesis) API. (103316392)
 - Disabled the WebLocks API. (103316423)
 
-##### Media
+### Media
 
-###### New Features
+#### New Features
 
 - Added support for Managed Media Source on macOS and iPadOS, and added support as a preview on iOS. (30320350)
 - Added support for AV1 codec support to the MediaCapabilities API for devices with hardware support. (97803066)
@@ -269,7 +269,7 @@ Safari 17 is available for iOS 17, iPadOS 17, macOS Sonoma, macOS Ventura, and m
 - Added support for WebCodecs temporal `scalabilityMode` for software codecs, including parsing and error handling. (110774875)
 - Added support for stereo-only Opus in MPEG-4 and WebM containers on macOS Sonoma. (50994465)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed `top` CSS added to audio controls when the height of an `<audio>` element is adjusted on iOS. (99548840)
 - Fixed Netflix.com playback error S7381-1203. (103561991)
@@ -284,9 +284,9 @@ Safari 17 is available for iOS 17, iPadOS 17, macOS Sonoma, macOS Ventura, and m
 - Fixed MediaRecorder producing empty chunks when attaching a MediaStream before the context in a canvas is created. (109705910)
 - Fixed muting capture in all other tabs when Safari starts camera and/or microphone capture in a tab. (109896538)
 
-##### Private Browsing
+### Private Browsing
 
-###### New Features
+#### New Features
 
 - Added blocking for known trackers and fingerprinting. (99360202)
 - Added support for mitigating trackers that map subdomains to third-party IP addresses. (99360259)
@@ -296,16 +296,16 @@ Safari 17 is available for iOS 17, iPadOS 17, macOS Sonoma, macOS Ventura, and m
 - Added support for blocking trackers that use third-party CNAME cloaking. (101612742)
 - Added support for Private Click Measurement. (106245330)
 
-##### Profiles
+### Profiles
 
-###### New Features
+#### New Features
 
 - Added support for enabling Safari Extensions per-profile. (99399845)
 - Added support for Web Push subscriptions per profile. (100194363)
 
-##### Rendering
+### Rendering
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed rendering for `border-image-repeat: round`. (28213711)
 - Fixed `text-overflow: ellipsis` incorrectly truncating text in right-to-left mode. (29464657)
@@ -357,9 +357,9 @@ Safari 17 is available for iOS 17, iPadOS 17, macOS Sonoma, macOS Ventura, and m
 - Fixed list alignment when a list item has a flex container. (111217986)
 - Fixed canvas not showing the results of `CanvasRenderingContext2D.putImageData` until a forced re-render. (112901862)
 
-##### Safari Extensions
+### Safari Extensions
 
-###### New Features
+#### New Features
 
 - Added support for turning on or off extensions and content blockers in Private Browsing mode. (17933284)
 - Added support for per-site permissions for Safari App Extensions. (84104594)
@@ -367,28 +367,28 @@ Safari 17 is available for iOS 17, iPadOS 17, macOS Sonoma, macOS Ventura, and m
 - Added support for showing Content Blockers, the “On Other Devices” section, and a link to the App Store in the Manage Extensions view. (98330674)
 - Added support for `regexSubstitution` in `declarativeNetRequest`. (100039848)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed the script API not returning a result when the `func` parameter is used. (100034937)
 - Fixed WebNavigation events to no longer fire for webpages where the extension hasn’t been granted access. (100191647)
 - Fixed `scripting.executeScript` return types. (107044691)
 
-##### Storage
+### Storage
 
-###### New Features
+#### New Features
 
 - Added complete support for the Storage API. (84280909)
 - Added support for overwriting the `move` method for FileSystemHandle. (105858983)
 - Added support for `StorageManager.estimate()`. (106169267)
 - Added support for calculating quota based on disk space. (107711361)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed removing HTTP credentials when the data store is removed. (106728064)
 
-##### SVG
+### SVG
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed SVG `textLength` behavior. (32066826)
 - Fixed references for SVG fragments in shadow DOM trees. (64094920)
@@ -405,17 +405,17 @@ Safari 17 is available for iOS 17, iPadOS 17, macOS Sonoma, macOS Ventura, and m
 - Fixed the mapping from a point to a character index for the SVG `<text>` element. (110119702)
 - Fixed handling of a negative radius for `feMorphology`. (110504653)
 
-##### Tables
+### Tables
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed `table-layout: fixed` not getting applied when the width is `max-content`. (105627723)
 - Fixed computing the percentage height of table cell children by removing the height of a horizontal scrollbar. (105627946)
 - Fixed percentage sizing of table cell replaced children with a scrollbar. (108459503)
 
-##### Web Animations
+### Web Animations
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed logic to recompute keyframe styles to tie a change in computed keyframes on an accelerated animation while animating. (87766485)
 - Fixed handling `transition-property: all` to distinguish matching any CSS property or Animation object. (87785199)
@@ -425,9 +425,9 @@ Safari 17 is available for iOS 17, iPadOS 17, macOS Sonoma, macOS Ventura, and m
 - Fixed the `all` value for the `transition-property` to parse as a keyword, not a CSS property. (105556116)
 - Fixed exposing `CSSKeyFramesRule.length`. (105565920)
 
-##### Web API
+### Web API
 
-###### New Features
+#### New Features
 
 - Added support for 3D OffscreenCanvas WebGL support. (39882956)
 - Added `canvas.drawImage` support for SVGImageElement as an image source. (79555760)
@@ -440,7 +440,7 @@ Safari 17 is available for iOS 17, iPadOS 17, macOS Sonoma, macOS Ventura, and m
 - Added support for two-parameter `delete()` and `has()` on URLSearchParams. (108949109)
 - Added experimental support for priority to CSS Highlight API. (110125853)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed Canvas context allocation failures due to exceeding the maximum canvas memory limit. (48609162)
 - Fixed firing an unexpected `mousemove` event when a modifier key is pressed. (81287778)
@@ -491,20 +491,20 @@ Safari 17 is available for iOS 17, iPadOS 17, macOS Sonoma, macOS Ventura, and m
 - Fixed emoji characters sometimes getting incorrectly drawn in text style. (111411175)
 - Fixed `HTMLTableSectionElement.insertRow(0)` and `HTMLTableRowElement.insertCell(0)`. (111791597)
 
-###### Deprecations
+#### Deprecations
 
 - Stopped parsing `<command>` as if it has no end tag. (107416609)
 - Removed vestigal support for `<layer>` and `<nolayer>` from the HTML parser. (107554605)
 - Removed deprecated uppercase URL attribute alias on the WebSocket interface. (109151597)
 
-##### Web apps
+### Web apps
 
-###### New Features
+#### New Features
 
 - Added support for web apps on macOS Sonoma. Add any website to the Dock from the File menu or Share Sheet to get to them even faster. Web apps open in their own window, and integrate with system features like Stage Manager, Screen Time, Notifications, and Focus. (68606770)
 - Added support for Notification alert sounds. (107424158)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed passing `NotificationOptions.silent`. (107424158)
 - Fixed: Started using origin directory for DOMCache and ServiceWorkerRegistrations. (107843591)
@@ -513,9 +513,9 @@ Safari 17 is available for iOS 17, iPadOS 17, macOS Sonoma, macOS Ventura, and m
 - Fixed service worker downloads failing when chunks are sent via `postMessage`. (109561888)
 - Fixed firing `controllerchange` event when a service worker gets deleted. (109567316)
 
-##### Web Inspector
+### Web Inspector
 
-###### New Features
+#### New Features
 
 - Added pretty-printing support for various modern JavaScript syntax, including optional chaining, private class members, and optional assignment operators. (89097522)
 - Added support for showing grid and flex overlays when in element selection mode. (105041619)
@@ -525,7 +525,7 @@ Safari 17 is available for iOS 17, iPadOS 17, macOS Sonoma, macOS Ventura, and m
 - Added support for ES2022 Private Fields when inspecting and logging JavaScript objects. (107863310)
 - Added support for viewing the target of a `WeakRef`. (109475228)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed removing a CSS declaration when tabbing though the CSS selector in the Styles panel. (100492875)
 - Fixed Step Over behaving like Resume when stepping over a function with a falsy conditional breakpoint in the Sources tab. (101604843)
@@ -546,9 +546,9 @@ Safari 17 is available for iOS 17, iPadOS 17, macOS Sonoma, macOS Ventura, and m
 - Fixed the resource type shown in the Network tab to use XHR when the XHR request has the same URL as the main resource. (110016863)
 - Fixed color swatch to not show an incorrect tooltip when read-only. (110409252)
 
-##### WebGL
+### WebGL
 
-###### New Features
+#### New Features
 
 - Added support for `EXT_disjoint_timer_query` (30054979)
 - Added support for `WEBGL_clip_cull_distance` (105178437)
@@ -556,21 +556,21 @@ Safari 17 is available for iOS 17, iPadOS 17, macOS Sonoma, macOS Ventura, and m
 - Added support for `EXT_polygon_offset_clamp` (105987827)
 - Added support for GPUExternalTexture. (108463707)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed firing the context lost event for OffscreenCanvas. (104198422)
 - Fixed OffscreenCanvas to work as a TexImageSource in WebGL. (106700463)
 
-##### WebRTC
+### WebRTC
 
-###### New Features
+#### New Features
 
 - Added support for inbound rtp `trackIdentifier` stat field. (105197543)
 - Added support for exposing `zoom` in MediaTrackCapabilities. (106498125)
 - Added support for `InputDeviceInfo`. (106716244)
 - Added support for `getDisplayMedia` video track clone resizing. (106755005)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed preventing the display from going to sleep when the camera is on. (100423979)
 - Fixed layer context handling for the HTMLMediaElement. (105795272)
@@ -578,9 +578,9 @@ Safari 17 is available for iOS 17, iPadOS 17, macOS Sonoma, macOS Ventura, and m
 - Fixed camera selection to use the system preferred camera on iOS. (109220107)
 - Fixed camera and microphone to all have `groupIds`. (109355290)
 
-##### WKWebView
+### WKWebView
 
-###### New Features
+#### New Features
 
 - Added support for trying HTTPS for all navigations. (100477884)
 - Added support for the Proxy API. (100583135)

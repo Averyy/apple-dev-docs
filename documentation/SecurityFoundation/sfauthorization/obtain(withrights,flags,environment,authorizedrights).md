@@ -19,11 +19,11 @@ func obtain(withRights rights: UnsafePointer<AuthorizationRights>!, flags: Autho
 - (BOOL) obtainWithRights:(const AuthorizationRights *) rights flags:(AuthorizationFlags) flags environment:(const AuthorizationEnvironment *) environment authorizedRights:(AuthorizationRights **) authorizedRights error:(NSError **) error;
 ```
 
-#### Return value
+## Return value
 
 [`true`](../../Swift/true.md) if operation completes successfully.
 
-#### Discussion
+## Discussion
 
 There are three main reasons to use this method. The first reason is to preauthorize rights by specifying the `kAuthorizationFlagPreAuthorize`, `kAuthorizationFlagInteractionAllowed`, and `kAuthorizationFlagExtendRights` masks as authorization options. Preauthorization is most useful when a right has a zero timeout. For example, you can preauthorize in the application and if it succeeds, call the helper tool and request authorization. This eliminates calling the helper tool if the Security framework cannot later authorize the specified rights.
 

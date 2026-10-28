@@ -30,7 +30,7 @@ GKMatchTypeTurnBased
 - [Finding multiple players for a game](../finding-multiple-players-for-a-game.md)
 - [Starting turn-based matches and passing turns between players](../starting-turn-based-matches-and-passing-turns-between-players.md)
 
-#### Discussion
+## Discussion
 
 A [`GKTurnBasedMatch`](../gkturnbasedmatch.md) object represents a turn-based match.
 

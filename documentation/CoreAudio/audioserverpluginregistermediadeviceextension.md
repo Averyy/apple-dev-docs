@@ -15,11 +15,11 @@
 extern OSStatus AudioServerPlugInRegisterMediaDeviceExtension(AudioServerPlugInDriverRef inPlugIn, void (^interruptionHandler)());
 ```
 
-#### Return Value
+## Return Value
 
 An OSStatus indicating success or failure.
 
-#### Discussion
+## Discussion
 
 This is used to register an AudioServerPlugin interface to host a driver for a remote media device to be used in conjunction with [Creating a media device extension](../MediaDevice/creating-a-media-device-extension.md).
 

@@ -24,7 +24,7 @@ var rawPublicKeys: [Data]? { get set }
 @property (copy, nullable) NSArray<NSData *> * rawPublicKeys;
 ```
 
-#### Discussion
+## Discussion
 
 If you set one or more keys, the raw public keys are used to authenticate the relay server. If no keys are set, or if the array is `nil`, default TLS server certificate evaluation is used.
 

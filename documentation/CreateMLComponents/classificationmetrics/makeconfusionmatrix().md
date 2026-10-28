@@ -21,7 +21,7 @@ Computes the confusion matrix.
 func makeConfusionMatrix() -> MLShapedArray<Float> where Label : Comparable, Label : Decodable, Label : Encodable
 ```
 
-#### Discussion
+## Discussion
 
 The `i`th row and `j`th column value indicate the count of true label being the `i`th class and predicted label being the `j`th class. The labels are sorted in ascending order.
 

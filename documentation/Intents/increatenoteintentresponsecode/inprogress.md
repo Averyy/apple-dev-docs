@@ -25,7 +25,7 @@ case inProgress
 INCreateNoteIntentResponseCodeInProgress
 ```
 
-#### Discussion
+## Discussion
 
 Return this code if you initiated the note creation process but did not receive a timely response. You might use this code when a server handles note creation and you have not yet received a confirmation from that server.
 

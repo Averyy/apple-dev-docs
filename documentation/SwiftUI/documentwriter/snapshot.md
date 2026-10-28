@@ -20,7 +20,7 @@ The type representing the document’s content to write.
 associatedtype Snapshot
 ```
 
-#### Discussion
+## Discussion
 
 This is the same type returned by [`snapshot(contentType:)`](../writabledocument/snapshot%28contenttype%29.md). It crosses an actor boundary (from main actor to background), so use `sending` annotations or make it `Sendable`.
 

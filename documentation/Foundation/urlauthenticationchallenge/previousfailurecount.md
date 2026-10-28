@@ -25,7 +25,7 @@ var previousFailureCount: Int { get }
 @property (readonly) NSInteger previousFailureCount;
 ```
 
-#### Discussion
+## Discussion
 
 The previous failure count includes failures from *all* protection spaces, not just the current one.
 

@@ -21,11 +21,11 @@ Creates a new dispatch source object for monitoring the specified process.
 class func makeProcessSource(identifier: pid_t, eventMask: DispatchSource.ProcessEvent, queue: DispatchQueue? = nil) -> any DispatchSourceProcess
 ```
 
-#### Return Value
+## Return Value
 
 A dispatch source object that conforms to the [`DispatchSourceProcess`](../dispatchsourceprocess.md) protocol.
 
-#### Discussion
+## Discussion
 
 After creating the dispatch source, use the methods of the [`DispatchSourceProtocol`](../dispatchsourceprotocol.md) protocol to install the event handlers you need. The returned dispatch source is in the inactive state initially. When you are ready to begin processing events, call its [`activate()`](../dispatchobject/activate%28%29.md) method.
 

@@ -20,11 +20,11 @@ Vends a CVMutablePixelBuffer to use for rendering. The buffer will have its kCVI
 func makeMutablePixelBuffer() throws -> CVMutablePixelBuffer
 ```
 
-#### Return Value
+## Return Value
 
 A CVMutablePixelBuffer to use for rendering.
 
-#### Discussion
+## Discussion
 
 > **Throws**: Insufficient memory or other system error.
 

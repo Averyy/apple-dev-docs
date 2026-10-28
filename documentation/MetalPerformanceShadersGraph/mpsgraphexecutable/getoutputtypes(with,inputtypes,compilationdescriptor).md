@@ -24,7 +24,7 @@ func getOutputTypes(with device: MPSGraphDevice?, inputTypes: [MPSGraphType], co
 - (NSArray<MPSGraphShapedType *> *) getOutputTypesWithDevice:(MPSGraphDevice *) device inputTypes:(NSArray<MPSGraphType *> *) inputTypes compilationDescriptor:(MPSGraphCompilationDescriptor *) compilationDescriptor;
 ```
 
-#### Discussion
+## Discussion
 
 In case specialization has not been done yet then calling this function will specialize for the given input shapes.
 

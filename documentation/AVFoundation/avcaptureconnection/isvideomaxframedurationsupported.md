@@ -22,7 +22,7 @@ var isVideoMaxFrameDurationSupported: Bool { get }
 @property (nonatomic, readonly, getter=isVideoMaxFrameDurationSupported) BOOL supportsVideoMaxFrameDuration;
 ```
 
-#### Discussion
+## Discussion
 
 The property indicates whether the connection honors the [`videoMaxFrameDuration`](./videomaxframeduration.md) property for a video connection.
 

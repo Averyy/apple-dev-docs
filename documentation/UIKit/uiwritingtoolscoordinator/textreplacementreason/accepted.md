@@ -22,7 +22,7 @@ case accepted
 UIWritingToolsCoordinatorTextReplacementReasonAccepted
 ```
 
-#### Discussion
+## Discussion
 
 When the user interacts with a grammar issue and the UI is shown, and the option to accept a suggestion is chosen, this reason will be used. Update your view’s text storage without animating the change.
 

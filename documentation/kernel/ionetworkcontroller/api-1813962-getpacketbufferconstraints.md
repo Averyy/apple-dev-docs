@@ -12,7 +12,7 @@ virtual void getPacketBufferConstraints(
  IOPacketBufferConstraints *constraints) const;
 ```
 
-#### Overview
+## Overview
 
 Called by start() to obtain the constraints on the memory buffer for each mbuf packet allocated through allocatePacket(). Drivers can override this method to specify the buffer constraints imposed by their bus mastering hardware. Note that outbound packets, those that originate from the network stack, are not currently subject to the constraints reported here.
 

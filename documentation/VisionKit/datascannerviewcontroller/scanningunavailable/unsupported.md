@@ -17,7 +17,7 @@ The data scanner isn’t supported on this device.
 case unsupported
 ```
 
-#### Discussion
+## Discussion
 
 The device must have the Neural Engine to perform data scanning.
 

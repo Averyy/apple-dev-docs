@@ -21,7 +21,7 @@ An error code for problems related to model parameters.
 static var parameters: MLModelError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 Core ML typically throws this error when an app queries the model for a parameter it doesn’t support.
 

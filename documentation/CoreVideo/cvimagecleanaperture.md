@@ -22,7 +22,7 @@ An image’s clean aperture is a region of video to display.
 struct CVImageCleanAperture
 ```
 
-#### Overview
+## Overview
 
 This represents a rectangle within the image that’s free from transition artifacts caused by the encoding of the signal.
 

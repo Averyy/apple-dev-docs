@@ -19,7 +19,7 @@ func discardMarkedText()
 - (void) discardMarkedText;
 ```
 
-#### Discussion
+## Discussion
 
 The client should clear its marked range when sending this message.
 

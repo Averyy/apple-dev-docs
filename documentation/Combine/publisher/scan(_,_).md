@@ -21,11 +21,11 @@ Transforms elements from the upstream publisher by providing the current element
 func scan<T>(_ initialResult: T, _ nextPartialResult: @escaping (T, Self.Output) -> T) -> Publishers.Scan<Self, T>
 ```
 
-#### Return Value
+## Return Value
 
 A publisher that transforms elements by applying a closure that receives its previous return value and the next element from the upstream publisher.
 
-#### Discussion
+## Discussion
 
 Use [`scan(_:_:)`](./scan%28_,_%29.md) to accumulate all previously-published values into a single value, which you then combine with each newly-published value.
 

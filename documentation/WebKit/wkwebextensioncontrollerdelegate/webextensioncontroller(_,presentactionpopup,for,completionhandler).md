@@ -27,7 +27,7 @@ optional func webExtensionController(_ controller: WKWebExtensionController, pre
 - (void) webExtensionController:(WKWebExtensionController *) controller presentPopupForAction:(WKWebExtensionAction *) action forExtensionContext:(WKWebExtensionContext *) context completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called in response to the extension’s scripts or when invoking [`performAction(for:)`](../wkwebextensioncontext/performaction%28for%29.md) if the action has a popup.
 

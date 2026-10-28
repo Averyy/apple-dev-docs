@@ -16,7 +16,7 @@ State of the capture session.
 enum CaptureState
 ```
 
-#### Overview
+## Overview
 
 A session starts in `.initializing` state and proceeds through the other states via use of function calls until it reaches an end state.  A session is over when the capture state is set to `.completed` or `.failed(Error)`.
 

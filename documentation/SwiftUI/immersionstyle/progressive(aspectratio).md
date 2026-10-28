@@ -18,7 +18,7 @@ static func progressive(aspectRatio: ProgressiveImmersionAspectRatio) -> Progres
 
 Available when `Self` is `ProgressiveImmersionStyle`.
 
-#### Discussion
+## Discussion
 
 Use the [`immersionStyle(selection:in:)`](../scene/immersionstyle%28selection,in%29.md) scene modifier to specify this style for an [`ImmersiveSpace`](../immersivespace.md).
 

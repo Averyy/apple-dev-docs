@@ -23,11 +23,11 @@ static func == <LeftHandSideType, RightHandSideType>(lhs: Measurement<LeftHandSi
 
 Available when `UnitType` inherits `Unit`.
 
-#### Return Value
+## Return Value
 
 `true` if the measurements are equal.
 
-#### Discussion
+## Discussion
 
 If `lhs.unit == rhs.unit`, returns `lhs.value == rhs.value`. Otherwise, converts `rhs` to the same unit as `lhs` and then compares the resulting values.
 

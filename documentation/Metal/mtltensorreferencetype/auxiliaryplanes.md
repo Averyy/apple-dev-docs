@@ -24,7 +24,7 @@ var auxiliaryPlanes: [MTLTensorAuxiliaryPlaneType] { get }
 @property (readonly) NSArray<MTLTensorAuxiliaryPlaneType *> * auxiliaryPlanes;
 ```
 
-#### Discussion
+## Discussion
 
 Returns an array of [`MTLTensorAuxiliaryPlaneType`](../mtltensorauxiliaryplanetype.md) objects describing each auxiliary plane the shader expects. Empty if the tensor has no auxiliary planes.
 

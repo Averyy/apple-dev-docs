@@ -19,7 +19,7 @@ case sidebar
 NSSplitViewItemBehaviorSidebar
 ```
 
-#### Discussion
+## Discussion
 
 This behavior corresponds to split view items that you create using [`init(sidebarWithViewController:)`](../init%28sidebarwithviewcontroller%29.md).
 

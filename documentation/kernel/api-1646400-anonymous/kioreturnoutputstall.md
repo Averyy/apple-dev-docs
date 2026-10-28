@@ -13,7 +13,7 @@
 kIOReturnOutputStall = (kIOOutputStatusRetry    | kIOOutputCommandStall)
 ```
 
-#### Discussion
+## Discussion
 
 Stall the queue and retry the same packet when the queue is restarted.
 

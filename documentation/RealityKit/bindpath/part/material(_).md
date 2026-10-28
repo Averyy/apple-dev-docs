@@ -20,7 +20,7 @@ A path component to animate a material property.
 case material(Int)
 ```
 
-#### Discussion
+## Discussion
 
 This path component indicates that another component follows, which either contains or identifies the material property that animates.
 

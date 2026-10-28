@@ -16,11 +16,11 @@
 bool IORecursiveLockTryLock(struct IORecursiveLock *lock);
 ```
 
-#### Return Value
+## Return Value
 
 True if the lock is now locked by the caller, otherwise false.
 
-#### Discussion
+## Discussion
 
 Attempt to lock a recursive lock.
 

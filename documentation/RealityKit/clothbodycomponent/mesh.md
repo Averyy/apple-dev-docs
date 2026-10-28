@@ -17,7 +17,7 @@ The (simulation) mesh of the cloth body that defines the rest pose of the body.
 var mesh: ClothMeshResource { get }
 ```
 
-#### Discussion
+## Discussion
 
 This acts as the initial pose of the body when [`initialMeshDraping`](./initialmeshdraping.md) is `nil`.
 

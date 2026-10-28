@@ -21,7 +21,7 @@ Inserts a new element at the specified position.
 mutating func insert(_ newElement: Element, at i: Int)
 ```
 
-#### Discussion
+## Discussion
 
 The new element is inserted before the element currently at the specified index. If you pass the array’s `endIndex` property as the `index` parameter, the new element is appended to the array.
 

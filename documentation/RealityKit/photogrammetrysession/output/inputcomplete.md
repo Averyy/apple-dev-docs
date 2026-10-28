@@ -18,7 +18,7 @@ The data ingestion portion of the process is complete.
 case inputComplete
 ```
 
-#### Discussion
+## Discussion
 
 Once the session sends this messagae, processing on the actual requests begins. It only sends this on the first `process()` call after which the data from the original processing is reused.
 

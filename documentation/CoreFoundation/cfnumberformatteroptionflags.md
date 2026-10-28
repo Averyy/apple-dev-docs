@@ -25,7 +25,7 @@ struct CFNumberFormatterOptionFlags
 enum CFNumberFormatterOptionFlags : CFOptionFlags;
 ```
 
-#### Overview
+## Overview
 
 For values, see [Number Format Options](./number_format_options.md)
 

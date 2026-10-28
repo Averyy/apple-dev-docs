@@ -18,7 +18,7 @@ The number of samples per pixel for MSAA.
 var rasterSampleCount: Int { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Corresponds to `MTLRenderPassDescriptor.rasterSampleCount`.
 

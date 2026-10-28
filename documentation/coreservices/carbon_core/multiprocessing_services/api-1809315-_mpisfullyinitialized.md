@@ -13,7 +13,7 @@ Boolean _MPIsFullyInitialized (
 );
 ```
 
-#### Return Value
+## Return Value
 
 If true, Multiprocessing Services is available for use; otherwise, false.
 

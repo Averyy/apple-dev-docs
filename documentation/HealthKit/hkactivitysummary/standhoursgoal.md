@@ -24,7 +24,7 @@ var standHoursGoal: HKQuantity? { get set }
 @property (nonatomic, strong, nullable) HKQuantity * standHoursGoal;
 ```
 
-#### Discussion
+## Discussion
 
 The [`HKQuantity`](../hkquantity.md) object for this property must use [`count()`](../hkunit/count%28%29.md) units.
 

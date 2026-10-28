@@ -24,7 +24,7 @@ case cubed
 PHASECurveTypeCubed
 ```
 
-#### Discussion
+## Discussion
 
 The function `y` `=` `x^3` shapes this curve.
 

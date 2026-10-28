@@ -14,7 +14,7 @@
 gestaltATSUFeatures = 'uisf'
 ```
 
-#### Discussion
+## Discussion
 
 Specifies the ATSUI features available on the user’s system. You pass this selector to the `Gestalt` function. On return, the `Gestalt` function passes back a value that represents the features available in the version of ATSUI installed on the user’s system.
 

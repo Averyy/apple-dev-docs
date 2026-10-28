@@ -20,11 +20,11 @@ Create an image object based on pixels from an image provider object.
 + (CIImage *) imageWithImageProvider:(id) provider size:(size_t) width :(size_t) height format:(CIFormat) format colorSpace:(CGColorSpaceRef) colorSpace options:(NSDictionary<NSString *,id> *) options;
 ```
 
-#### Return Value
+## Return Value
 
  An autoreleased [`CIImage`](../ciimage.md) object based on the data provider.
 
-#### Discussion
+## Discussion
 
 Core Image retains the provider object until the image is deallocated. The image provider object will not be called until the image is rendered.
 

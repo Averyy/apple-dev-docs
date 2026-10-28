@@ -16,7 +16,7 @@ An object that controls video experiences.
 final class AVExperienceController
 ```
 
-#### Overview
+## Overview
 
 Use this class to control, observe, and respond to experience changes for an [`AVPlayerViewController`](./avplayerviewcontroller.md). After you attach an experience controller, the player view controller no longer honors its presentation APIs. Using the other presentation APIs may preclude the use of this class.
 

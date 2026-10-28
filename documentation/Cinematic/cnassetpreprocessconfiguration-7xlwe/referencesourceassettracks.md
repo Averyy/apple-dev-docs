@@ -18,7 +18,7 @@ Controls whether the color track in the output asset reference the source asset 
 @property BOOL referenceSourceAssetTracks;
 ```
 
-#### Discussion
+## Discussion
 
 When YES, the output asset references the color from the source asset. This keeps the intermediate file small, but the output asset will not be portable — it depends on the source asset remaining at its original location.
 

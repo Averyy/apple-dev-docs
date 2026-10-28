@@ -5,7 +5,7 @@
 
 Category identifiers for audio sessions, used as values for the [`kAudioSessionProperty_AudioCategory`](./kaudiosessionproperty_audiocategory.md) property.
 
-#### Overview
+## Overview
 
 Each app running in iOS has a single audio session, which in turn has a single category. You can change your audio session’s category while your app is running.
 

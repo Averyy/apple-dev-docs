@@ -26,7 +26,7 @@ var playersToInvite: [String]? { get set }
 @property (retain, nullable) NSArray<NSString *> * playersToInvite;
 ```
 
-#### Discussion
+## Discussion
 
 The property holds an array of [`NSString`](../../Foundation/nsstring.md) objects, each of which is an identifier for a player on Game Center. If the value of the property is non-`nil`, when you use the request to create a match, Game Center invites those players to the match. No automatching is done and the [`GKMatchRequest`](../gkmatchrequest.md) `maxPlayers` and `minPlayers` properties are ignored. If `nil` (the default), no players are invited. The exact behavior for matchmaking depends on the kind of match being created and the class used to create the match.
 

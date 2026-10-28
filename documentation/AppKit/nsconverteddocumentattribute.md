@@ -15,7 +15,7 @@ A value that indicates whether a filter service converted the file.
 extern NSAttributedStringDocumentAttributeKey NSConvertedDocumentAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSNumber`](../Foundation/nsnumber.md) object containing an integer. Indicates whether the file was converted by a filter service.
 

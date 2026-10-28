@@ -19,7 +19,7 @@ var socket: SocketNativeHandle { get }
 @property (readonly) NSSocketNativeHandle socket;
 ```
 
-#### Discussion
+## Discussion
 
 In macOS, the native socket identifier is an integer file descriptor.
 

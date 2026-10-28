@@ -20,7 +20,7 @@ Adds a new variant to this variant set.
 func add(_ variantName: String) throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if the variant cannot be added.
 

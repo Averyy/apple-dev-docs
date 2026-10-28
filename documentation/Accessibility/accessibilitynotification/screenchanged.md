@@ -21,7 +21,7 @@ A notification that an app posts when a new view appears that occupies a major p
 struct ScreenChanged
 ```
 
-#### Overview
+## Overview
 
 Optionally, include a parameter that contains the accessibility element for VoiceOver to move to after processing the notification.
 

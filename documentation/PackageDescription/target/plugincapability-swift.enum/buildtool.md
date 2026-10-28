@@ -15,7 +15,7 @@ Specifies that the plug-in provides a build tool capability.
 case buildTool
 ```
 
-#### Discussion
+## Discussion
 
 The plug-in to apply to each target that uses it, and creates commands that run before or during the build of the target.
 

@@ -23,7 +23,7 @@ init<F>(value: Binding<F.FormatInput>, step: F.FormatInput.Stride = 1, format: F
 
 Available when `Label` conforms to `View`.
 
-#### Discussion
+## Discussion
 
 Use this initializer to create a stepper that increments or decrements a bound value by a specific amount each time the user clicks or taps the stepper’s increment or decrement buttons, while displaying the current value.
 

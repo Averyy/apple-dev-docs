@@ -26,7 +26,7 @@ func enqueue(_ sampleBuffer: CMSampleBuffer)
 - (void) enqueueSampleBuffer:(CMSampleBufferRef) sampleBuffer;
 ```
 
-#### Discussion
+## Discussion
 
 Video-specific notes:
 

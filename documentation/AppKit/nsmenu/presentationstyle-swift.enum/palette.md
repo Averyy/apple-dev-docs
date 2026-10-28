@@ -19,7 +19,7 @@ case palette
 NSMenuPresentationStylePalette
 ```
 
-#### Discussion
+## Discussion
 
 You can turn any menu into a palette menu by setting the menu’s presentation style to `.palette`. For each menu item, set its image. For template images, AppKit automatically adds the appropriate selection tint. Alternatively you can set the [`offStateImage`](../../nsmenuitem/offstateimage.md) and the [`onStateImage`](../../nsmenuitem/onstateimage.md). Use the `onStateImage` to indicate selection.
 

@@ -17,15 +17,15 @@ The sample frequencies of a discrete Fourier Transform on a real input.
 static func rfftfreq(_ n: Int, d: Double = 1.0, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Return Value
+## Return Value
 
 Array of non-negative sample frequencies
 
-#### Discussion
+## Discussion
 
 Like [`fftfreq(_:d:stream:)`](./fftfreq%28_,d,stream%29.md) but returns only the `n / 2 + 1` non-negative frequencies, matching the output of [`rfft(_:n:axis:norm:stream:)`](./rfft%28_,n,axis,norm,stream%29.md).
 
-##### See Also
+### See Also
 
 - [`MLXFFT`](../mlxfft.md)
 - [`fftfreq(_:d:stream:)`](./fftfreq%28_,d,stream%29.md)

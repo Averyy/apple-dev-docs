@@ -25,11 +25,11 @@ convenience init(body: SCNPhysicsBody, axis: SCNVector3, anchor: SCNVector3)
 + (instancetype) jointWithBody:(SCNPhysicsBody *) body axis:(SCNVector3) axis anchor:(SCNVector3) anchor;
 ```
 
-#### Return Value
+## Return Value
 
 A new slider joint behavior.
 
-#### Discussion
+## Discussion
 
 This method defines the location where the body is anchored in the coordinate system of the node containing it. To define its sliding or rotation motion relative to that point, use the properties listed in Limiting the Motion of a Slider Joint.
 

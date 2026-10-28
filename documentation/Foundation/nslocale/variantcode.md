@@ -25,7 +25,7 @@ var variantCode: String? { get }
 @property (copy, readonly, nullable) NSString * variantCode;
 ```
 
-#### Discussion
+## Discussion
 
 Examples of variant code include `"POSIX"` and `"PREEURO"`.
 

@@ -20,7 +20,7 @@ A component that enables Level of Detail (LOD) optimization for entities with mu
 struct LevelOfDetailComponent
 ```
 
-#### Overview
+## Overview
 
 The component allows entities to automatically show/hide child entities based on viewing conditions, reducing rendering complexity for distant or small objects.
 

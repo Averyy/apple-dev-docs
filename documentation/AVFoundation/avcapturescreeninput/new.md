@@ -15,7 +15,7 @@ Creates a capture screen input that provides media data from the main screen.
 + (instancetype) new;
 ```
 
-#### Discussion
+## Discussion
 
 Using this method is equivalent to calling [`init(displayID:)`](./init%28displayid%29.md) with the result of the [`CGMainDisplayID()`](../../CoreGraphics/cgmaindisplayid%28%29.md) function.
 

@@ -19,7 +19,7 @@ static let transparent: NSBindingName
 extern NSBindingName NSTransparentBinding;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [Cocoa Bindings](../cocoa-bindings.md).
 

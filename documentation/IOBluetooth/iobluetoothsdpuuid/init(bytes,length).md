@@ -19,11 +19,11 @@ convenience init!(bytes: UnsafeRawPointer!, length: UInt32)
 + (instancetype) uuidWithBytes:(const void *) bytes length:(unsigned int) length;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the new IOBluetoothSDPUUID object or nil on failure.
 
-#### Discussion
+## Discussion
 
 If the length is invalid for a UUID, nil is returned.
 

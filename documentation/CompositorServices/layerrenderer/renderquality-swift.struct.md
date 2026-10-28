@@ -20,7 +20,7 @@ struct RenderQuality
 typedef float cp_render_quality_t;
 ```
 
-#### Overview
+## Overview
 
 This can be used to increase the quality of what users see, however this directly impacts the memory allocated for resources which is billed to the app as well as per-frame GPU time. The app should monitor its frame rate to ensure its not regularly missing frames and will likely need to change the quality based on scene complexity that is being shown.
 

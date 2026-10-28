@@ -18,11 +18,11 @@ Provides an access to the asynchronous sequence of tracking session states
 final var trackingStates: DockAccessory.TrackingStates { get throws }
 ```
 
-#### Return Value
+## Return Value
 
 A `DockAccessory.TrackingStates` instance representing the current state of tracking.
 
-#### Discussion
+## Discussion
 
 > **Throws**: [`DockKitError.notConnected`](../dockkiterror/notconnected.md) if device is disconnected, or [`DockKitError.notSupportedByDevice`](../dockkiterror/notsupportedbydevice.md) if device doesn’t support updates.
 

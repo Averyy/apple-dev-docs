@@ -15,7 +15,7 @@ A class representing a stream of data buffers passed from kernel to user space a
 class IOStream : IOService
 ```
 
-#### Overview
+## Overview
 
 The IOStream class defines a mechanism for moving buffers of data from kernel space to user space or vice-versa. The policy for which direction the data flows and the nature of the data is left up the the implementer of the driver which uses IOStream.
 

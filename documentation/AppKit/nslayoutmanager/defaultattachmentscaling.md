@@ -19,7 +19,7 @@ var defaultAttachmentScaling: NSImageScaling { get set }
 @property NSImageScaling defaultAttachmentScaling;
 ```
 
-#### Discussion
+## Discussion
 
 Attachment cells control their own size and drawing, so this setting is only advisory to them, but Application Kit–supplied attachment cells respect it.
 

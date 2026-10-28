@@ -21,7 +21,7 @@ class TCSwitch
 @interface TCSwitch : NSObject
 ```
 
-#### Overview
+## Overview
 
 This is mirrored by a [`GCControllerButtonInput`](../GameController/gccontrollerbuttoninput.md) on the associated [`GCController`](../GameController/gccontroller.md).
 

@@ -24,7 +24,7 @@ func supportedSymbologies() throws -> [VNBarcodeSymbology]
 - (NSArray<NSString *> *) supportedSymbologiesAndReturnError:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 An array of symbologies.
 

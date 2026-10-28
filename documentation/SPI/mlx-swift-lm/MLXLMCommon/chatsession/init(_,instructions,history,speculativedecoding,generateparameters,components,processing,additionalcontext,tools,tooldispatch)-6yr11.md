@@ -17,7 +17,7 @@ Initialize the `ChatSession` with an existing message history.
 init(_ model: ModelContainer, instructions: String? = nil, history: consuming [Chat.Message], speculativeDecoding: SpeculativeDecodingConfig? = nil, generateParameters: GenerateParameters = .init(), components: GenerationComponents = .init(), processing: UserInput.Processing = .init(resize: CGSize(width: 512, height: 512)), additionalContext: [String : any Sendable]? = nil, tools: [ToolSpec]? = nil, toolDispatch: (@Sendable (ToolCall) async throws -> String)? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 This enables “Prompt Re-hydration” for persistent chat applications.
 

@@ -21,11 +21,11 @@ Returns a Boolean value that indicates whether a given time is positive infinity
 func CMTIME_IS_POSITIVEINFINITY(_ time: CMTime) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if the time represents positive infinity; otherwise, [`false`](../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Use this macro instead of testing if a time is equal to [`positiveInfinity`](./cmtime/positiveinfinity.md), because there are many times that represent positive infinity. This is because the system ignores nonflags fields, so they can contain anything.
 

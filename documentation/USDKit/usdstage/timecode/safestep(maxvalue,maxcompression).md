@@ -20,7 +20,7 @@ Returns a time delta small enough to represent a jump discontinuity, but large e
 static func safeStep(maxValue: Double = 1e6, maxCompression: Double = 10.0) -> Double
 ```
 
-#### Discussion
+## Discussion
 
 Use it to author paired samples at `t` and `t + SafeStep()` that stay distinct for any `t` in [-maxValue, maxValue] under compression up to `maxCompression`.
 

@@ -19,7 +19,7 @@ Creates a scene session activation request object with a scene session, a user a
 init(session: UISceneSession, userActivity: NSUserActivity? = nil, options: UIScene.ActivationRequestOptions? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 Create an activation request with this method when you want the system to activate an existing scene session that you provide.
 

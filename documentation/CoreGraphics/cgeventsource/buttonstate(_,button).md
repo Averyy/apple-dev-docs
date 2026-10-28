@@ -20,7 +20,7 @@ class func buttonState(_ stateID: CGEventSourceStateID, button: CGMouseButton) -
 extern bool CGEventSourceButtonState(CGEventSourceStateID stateID, CGMouseButton button);
 ```
 
-#### Return Value
+## Return Value
 
 If `true`, the button is down. If `false`, the button is up.
 

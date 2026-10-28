@@ -19,7 +19,7 @@ var eventRef: UnsafeRawPointer? { get }
 @property (readonly, nullable) const void * eventRef;
 ```
 
-#### Discussion
+## Discussion
 
 This method is valid for all types of events. The `EventRef` object is retained by the receiver, so it is valid as long as the `NSEvent` object is valid, and is released when the `NSEvent` object is freed. You can use `RetainEvent(_:)` to extend the lifetime of the `EventRef` object, with a corresponding `ReleaseEvent(_:)` when you are done with it.
 

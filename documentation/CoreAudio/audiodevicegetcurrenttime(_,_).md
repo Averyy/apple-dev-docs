@@ -20,11 +20,11 @@ func AudioDeviceGetCurrentTime(_ inDevice: AudioObjectID, _ outTime: UnsafeMutab
 extern OSStatus AudioDeviceGetCurrentTime(AudioObjectID inDevice, AudioTimeStamp *outTime);
 ```
 
-#### Return Value
+## Return Value
 
 An OSStatus indicating success or failure. kAudioHardwareNotRunningError will be returned if the AudioDevice isn’t running.
 
-#### Discussion
+## Discussion
 
 Retrieves the current time from an AudioDevice. Note that the device has to be running.
 

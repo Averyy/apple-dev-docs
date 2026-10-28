@@ -14,7 +14,7 @@
 IOReturn (*SetDCLWaitControl)(NuDCLRef dcl, Boolean wait);
 ```
 
-#### Discussion
+## Discussion
 
 Description forthcoming
 

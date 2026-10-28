@@ -23,7 +23,7 @@ optional func pendingURL(for context: WKWebExtensionContext) -> URL?
 - (NSURL *) pendingURLForWebExtensionContext:(WKWebExtensionContext *) context;
 ```
 
-#### Discussion
+## Discussion
 
 The pending URL is the URL of a page that is in the process of loading. If there is no pending URL, return `nil`.
 

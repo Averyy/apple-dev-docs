@@ -25,7 +25,7 @@ static var atomic: NSData.WritingOptions { get }
 NSDataWritingAtomic
 ```
 
-#### Discussion
+## Discussion
 
 This option is equivalent to using a write method that takes the parameter `atomically` as [`true`](../../../Swift/true.md).
 

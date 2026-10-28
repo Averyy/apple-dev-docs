@@ -25,7 +25,7 @@ var numberOfStalls: Int { get }
 @property (nonatomic, readonly) NSInteger numberOfStalls;
 ```
 
-#### Discussion
+## Discussion
 
 The property corresponds to “c-stalls”.
 

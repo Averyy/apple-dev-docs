@@ -20,7 +20,7 @@ optional func textDidBeginEditing(_ notification: Notification)
 - (void) textDidBeginEditing:(NSNotification *) notification;
 ```
 
-#### Discussion
+## Discussion
 
 The name of `aNotification` is [`didBeginEditingNotification`](../nstext/didbegineditingnotification.md).
 

@@ -17,7 +17,7 @@ Compute all events that occur between `start` (inclusive) and `end` (exclusive).
 func events(from start: Date, to end: Date) -> [OCKScheduleEvent]
 ```
 
-#### Discussion
+## Discussion
 
 > **Precondition**: `start` < `end`
 

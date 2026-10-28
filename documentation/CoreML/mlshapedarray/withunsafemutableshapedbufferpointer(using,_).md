@@ -23,7 +23,7 @@ mutating func withUnsafeMutableShapedBufferPointer<R>(using bufferLayout: MLShap
 
 Available when `Scalar` conforms to `MLShapedArrayScalar`.
 
-#### Discussion
+## Discussion
 
 The storage contains the scalars according to buffer layout parameter. For example, the scalar at `[x1, x2, ... xn]` with strides `[s1, s2, ... sn]` is stored at `ptr[x1 * s1 + x2 * s2 + ... + xn * sn]`
 

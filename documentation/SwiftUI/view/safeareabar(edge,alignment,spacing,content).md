@@ -29,11 +29,11 @@ nonisolated
 func safeAreaBar(edge: VerticalEdge, alignment: HorizontalAlignment = .center, spacing: CGFloat? = nil, @ContentBuilder content: () -> some View) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A new view that displays `content` beside the modified view, making space for the `content` view by horizontally insetting the modified view, adjusting the safe area and scroll edge effects to match.
 
-#### Discussion
+## Discussion
 
 Similar to the [`safeAreaInset(edge:alignment:spacing:content:)`](./safeareainset%28edge,alignment,spacing,content%29-6gwby.md) modifier, the `content` view is anchored to the specified horizontal edge of the parent view and its width insets the safe area.
 

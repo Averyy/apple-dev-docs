@@ -25,7 +25,7 @@ static let NSSystemClockDidChange: NSNotification.Name
 extern NSNotificationName const NSSystemClockDidChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 This can be initiated by a call to `settimeofday(_:_:)` or the user changing values in the Date and Time Preference panel.
 

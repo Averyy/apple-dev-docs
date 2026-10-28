@@ -12,11 +12,11 @@ virtual bool start (
  IOService *provider );
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the start was successful; `false` otherwise (which will cause the instance to be detached and usually freed).
 
-#### Overview
+## Overview
 
 The `start` method of an IOService instance is called by its provider when it has been selected (due to its probe score and match category) as the winning client. The client is already attached to the provider when `start` is called.
 

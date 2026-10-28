@@ -15,7 +15,7 @@ An action that sets the current seats participating in the current turn.
 struct SetTurnAction
 ```
 
-#### Overview
+## Overview
 
 To create a set turn action, use the [`setTurn(forSeat:context:)`](./tabletopaction/setturn%28forseat,context%29.md) or a similar static method.
 

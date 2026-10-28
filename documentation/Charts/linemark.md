@@ -26,7 +26,7 @@ Chart content that represents data using a sequence of connected line segments.
 
 - [Creating a chart using Swift Charts](./creating-a-chart-using-swift-charts.md)
 
-#### Overview
+## Overview
 
 You create a line chart by plotting a category or date property, typically with the x position, and plotting a number category, typically with the y position. The example below plots the `date` property to the x position and the `hoursOfSunshine` property to the y position using [`init(x:y:)`](./linemark/init%28x,y%29.md):
 
@@ -61,7 +61,7 @@ var body: some View {
 
 ![Line chart with date on x-axis and hours of sunshine on y-axis. One line showing 12 points representing hours of sunshine in a month 1 74, 2 99, 3 154, 4 201, 5 247, 6 234, 7 304, 8 248, 9 197, 10 122, 11 77, 12 62.](https://developer.apple.com/tutorials/images/com.apple.Charts/LineMarkSwift.LineMarkLineChart@2x.png)
 
-##### Plotting multiple lines
+### Plotting multiple lines
 
 You can plot multiple lines in a chart either by explicitly specifying the `series` parameter in [`init(x:y:series:)`](./linemark/init%28x,y,series%29.md) or by applying the [`foregroundStyle(_:)`](./chartcontent/foregroundstyle%28_%29.md) or [`lineStyle(_:)`](./chartcontent/linestyle%28_%29.md) modifiers. Line marks with the same `series` value will always be rendered together as a single line. When `series` is unspecified line marks with the same value plotted to foreground style and line style will be grouped together and plotted on their own line. The example below plots one line per distinct value in `city` and colors each line based on the `city` it represents:
 

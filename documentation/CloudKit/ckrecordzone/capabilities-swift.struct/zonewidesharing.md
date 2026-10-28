@@ -25,7 +25,7 @@ static var zoneWideSharing: CKRecordZone.Capabilities { get }
 CKRecordZoneCapabilityZoneWideSharing
 ```
 
-#### Discussion
+## Discussion
 
 CloudKit allows you to share custom record zones that you create in the user’s private database. For more information, see [Shared Records](../../shared-records.md).
 

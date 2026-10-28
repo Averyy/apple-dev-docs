@@ -14,11 +14,11 @@ virtual IOReturn getAttributeForConnection(
  uintptr_t *value );
 ```
 
-#### Return Value
+## Return Value
 
 an IOReturn code.
 
-#### Overview
+## Overview
 
 IOAudioEngine subclasses may implement this method to allow arbitrary attribute/value pairs to be returned, specific to one connection.
 

@@ -24,7 +24,7 @@ class func predicateForWorkouts(operatorType: NSComparisonPredicate.Operator, qu
 + (NSPredicate *) predicateForWorkoutsWithOperatorType:(NSPredicateOperatorType) operatorType quantityType:(HKQuantityType *) quantityType averageQuantity:(HKQuantity *) averageQuantity;
 ```
 
-#### Discussion
+## Discussion
 
 Use this convenience method to create a predicate that matches workouts with the specified average quantity. For more information on how HealthKit calculates statistics for [`HKWorkout`](../hkworkout.md) objects, see [`statistics(for:)`](../hkworkout/statistics%28for%29.md) .
 

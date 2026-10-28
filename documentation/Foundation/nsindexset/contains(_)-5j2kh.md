@@ -25,7 +25,7 @@ func contains(_ indexSet: IndexSet) -> Bool
 - (BOOL) containsIndexes:(NSIndexSet *) indexSet;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) when the receiving index set contains a superset of the indexes in `indexSet`, [`false`](../../Swift/false.md) otherwise.
 

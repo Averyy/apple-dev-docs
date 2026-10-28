@@ -20,7 +20,7 @@ func deleteCredential(_ credential: CredentialSession.Credential) async throws
 
 - [Accessing and using secure element credentials](../accessing-and-using-secure-element-credentials.md)
 
-#### Discussion
+## Discussion
 
 - The most common errors are:
 

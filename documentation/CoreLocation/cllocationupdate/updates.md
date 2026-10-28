@@ -21,7 +21,7 @@ A structure that represents an asynchronous sequence of location updates.
 struct Updates
 ```
 
-#### Overview
+## Overview
 
 [`CLLocationUpdate`](../cllocationupdate.md) uses this structure to asynchronously deliver a stream of location updates to your app when you call [`liveUpdates(_:)`](./liveupdates%28_%29.md).
 

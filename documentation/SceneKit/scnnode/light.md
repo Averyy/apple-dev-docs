@@ -25,7 +25,7 @@ var light: SCNLight? { get set }
 @property (nonatomic, retain, nullable) SCNLight * light;
 ```
 
-#### Discussion
+## Discussion
 
 A node can have only one light attached to it. To combine lights so they can be controlled or animated together, create a node with no light and add other nodes to it.
 

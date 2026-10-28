@@ -25,7 +25,7 @@ func CFPropertyListWrite(_ propertyList: CFPropertyList!, _ stream: CFWriteStrea
 extern CFIndex CFPropertyListWrite(CFPropertyListRef propertyList, CFWriteStreamRef stream, CFPropertyListFormat format, CFOptionFlags options, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 The number of bytes written to `stream`. If an error occurs, returns `0`.
 

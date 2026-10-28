@@ -19,7 +19,7 @@ var allowsMagnification: Bool { get set }
 @property BOOL allowsMagnification;
 ```
 
-#### Discussion
+## Discussion
 
 This property does not prevent the developer from manually adjusting the magnification value. If magnification exceeds either the maximum or minimum limits for magnification, and [`allowsMagnification`](./allowsmagnification.md) is [`true`](../../Swift/true.md), the scroll view temporarily animates the content magnification just past those limits before returning to them. The default value is [`false`](../../Swift/false.md).
 

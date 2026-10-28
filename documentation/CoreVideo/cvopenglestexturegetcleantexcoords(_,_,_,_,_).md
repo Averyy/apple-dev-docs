@@ -23,7 +23,7 @@ func CVOpenGLESTextureGetCleanTexCoords(_ image: CVOpenGLESTexture, _ lowerLeft:
 extern void CVOpenGLESTextureGetCleanTexCoords(CVOpenGLESTextureRef image, GLfloat lowerLeft[2], GLfloat lowerRight[2], GLfloat upperRight[2], GLfloat upperLeft[2]);
 ```
 
-#### Discussion
+## Discussion
 
 This function automatically takes into account whether or not the texture is flipped.
 

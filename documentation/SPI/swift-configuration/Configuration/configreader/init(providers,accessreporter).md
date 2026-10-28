@@ -24,7 +24,7 @@ Creates a config reader with multiple providers.
 init(providers: [any ConfigProvider], accessReporter: (any AccessReporter)? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 > **Precondition**: `providers` must not be empty.
 

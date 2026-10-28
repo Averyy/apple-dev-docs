@@ -19,7 +19,7 @@ init?(location: any NSTextLocation, end endLocation: (any NSTextLocation)?)
 - (instancetype) initWithLocation:(id<NSTextLocation>) location endLocation:(id<NSTextLocation>) endLocation;
 ```
 
-#### Discussion
+## Discussion
 
 Returns an empty range when `endLocation` is `nil`.
 

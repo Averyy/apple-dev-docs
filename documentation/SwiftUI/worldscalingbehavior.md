@@ -15,7 +15,7 @@ Specifies the scaling behavior a window should have within the world.
 struct WorldScalingBehavior
 ```
 
-#### Overview
+## Overview
 
 By default, a regular [`WindowGroup`](./windowgroup.md) uses a scaling behavior of [`dynamic`](./worldscalingbehavior/dynamic.md), and a window with [`volumetric`](./windowstyle/volumetric.md) has a fixed scale.
 

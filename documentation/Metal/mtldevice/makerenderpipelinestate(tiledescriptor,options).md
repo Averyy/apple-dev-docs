@@ -20,7 +20,7 @@ Synchronously creates a tile shader’s render pipeline state and reflection inf
 func makeRenderPipelineState(tileDescriptor: MTLTileRenderPipelineDescriptor, options: MTLPipelineOption) throws -> (any MTLRenderPipelineState, MTLRenderPipelineReflection?)
 ```
 
-#### Return Value
+## Return Value
 
 A tuple with a new [`MTLTileRenderPipelineDescriptor`](../mtltilerenderpipelinedescriptor.md) instance and an [`MTLRenderPipelineReflection`](../mtlrenderpipelinereflection.md) optional instance if the method completes successfully; otherwise Swift throws an error and Objective-C returns `nil`.
 

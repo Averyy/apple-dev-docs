@@ -19,7 +19,7 @@ func selectedIndexes() -> IndexSet!
 - (NSIndexSet *) selectedIndexes;
 ```
 
-#### Return Value
+## Return Value
 
 The indexes of the selected files.
 

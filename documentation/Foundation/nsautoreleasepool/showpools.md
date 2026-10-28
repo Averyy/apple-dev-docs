@@ -16,7 +16,7 @@ Displays the state of the current thread’s autorelease pool stack to `stderr`.
 + (void) showPools;
 ```
 
-#### Discussion
+## Discussion
 
 > ⚠️ **Warning**:  Unsupported API
 >

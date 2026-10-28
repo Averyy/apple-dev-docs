@@ -5,7 +5,7 @@
 
 Learn how to request and review data about your apps, their usage, engagement, and performance.
 
-#### Overview
+## Overview
 
 Use the Analytics Reports API to request and download reports for your apps. This API provides access to reports in these categories:
 
@@ -17,7 +17,7 @@ Use the Analytics Reports API to request and download reports for your apps. Thi
 
 > **Note**:  To learn more about the contents of each report, see [Analytics Reports](../analytics-reports/analytics-reports.md).
 
-##### Understand roles and reports
+### Understand roles and reports
 
 To download analytics reports, be sure your API key has one of the following roles, because each role has access to specific endpoints:
 
@@ -29,7 +29,7 @@ To download analytics reports, be sure your API key has one of the following rol
 
 > **Note**:  If you share an API key for your developer account with a third party for analyzing or processing your reports, select the `Sales and Reports` role when generating a new key. This role can access to the [`Download sales and trends reports`](./get-v1-salesreports.md) but can’t access [`Download finance reports`](./get-v1-financereports.md) endpoint.
 
-##### Request analytics reports
+### Request analytics reports
 
 Start by using the [`Request Reports`](./post-v1-analyticsreportrequests.md) API to request generation of reports for one of your apps. There are two types of `accessTypes` for report requests:
 
@@ -44,7 +44,7 @@ To read more information about a specific request, use [`Read Report Request Inf
 
 > **Note**:  If you don’t retrieve data for a long time, a report request changes to `stoppedDueToInactivity`. You need to make a new request to resume getting reports.
 
-##### Read the analytics reports
+### Read the analytics reports
 
 Use [`Read Reports for a Specific Request`](./get-v1-analyticsreportrequests-_id_-reports.md) to check whether your reports are available. This endpoint lists all the reports that the API generated to fulfill your request. For more about the information in each report see [Analytics Reports](../analytics-reports/analytics-reports.md).
 
@@ -61,13 +61,13 @@ Some reports have two content levels, Standard or Detailed, which the report’s
 
 To learn more about what data is in each report and report type, see [Analytics Reports](../analytics-reports/analytics-reports.md).
 
-##### Download specific analytic report data
+### Download specific analytic report data
 
 Select a report of interest and use [`Read a List of Instances of a Report`](./get-v1-analyticsreports-_id_-instances.md) to see a list of report instances filtered by `granularity` and `processingDate`. *Instances* are discreet containers for a report data set. You can choose a `granularity` of daily, weekly, or monthly for the reports in an instance. The `processingDate` represents new data available that day. The data for a given report with a specific `processingDate` might contain data for that day, full data for past dates, or both.
 
 Then, you use the [`Read the Segments for a Report`](./get-v1-analyticsreportinstances-_id_-segments.md) endpoint to get a download URL for the report. *Segments* are the actual report files, and based on the amount of data for a specific instance, you might have multiple segments to download. You can also use `sizeInBytes` and `checksum` to verify a specific report segment downloaded successfully.
 
-##### Analyze your app data
+### Analyze your app data
 
 After you download some reports, you can start analyzing the data and learning more about how people use your apps. To learn more about the fields and descriptions in these reports see [Analytics Reports](../analytics-reports/analytics-reports.md).
 

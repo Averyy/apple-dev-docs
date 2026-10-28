@@ -29,11 +29,11 @@ class func positionY(_ range: SKRange) -> Self
 
 - [Creating Position Constraints](../creating-position-constraints.md)
 
-#### Return Value
+## Return Value
 
 A new constraint.
 
-#### Discussion
+## Discussion
 
 Each time when constraints are applied, the y-coordinate of the node’s [`position`](../sknode/position.md) property is clamped so that it lies inside the specified range.
 

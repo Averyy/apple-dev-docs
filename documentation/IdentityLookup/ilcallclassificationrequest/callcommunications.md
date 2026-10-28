@@ -22,7 +22,7 @@ var callCommunications: [ILCallCommunication] { get }
 @property (nonatomic, copy, readonly) NSArray<ILCallCommunication *> * callCommunications;
 ```
 
-#### Discussion
+## Discussion
 
 The system sorts calls by the date received.
 

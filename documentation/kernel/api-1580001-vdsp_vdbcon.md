@@ -15,7 +15,7 @@ Vector convert power or amplitude to decibels; single precision.
 void vDSP_vdbcon(const float *__A, vDSP_Stride __IA, const float *__B, float *__C, vDSP_Stride __IC, vDSP_Length __N, unsigned int __F);
 ```
 
-#### Discussion
+## Discussion
 
 Performs the following operation. α is 20 if `F` is 1, or 10 if `F` is 0.
 

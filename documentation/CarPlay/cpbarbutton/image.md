@@ -21,7 +21,7 @@ var image: UIImage? { get set }
 @property (nonatomic, strong, nullable) UIImage * image;
 ```
 
-#### Discussion
+## Discussion
 
 If you provide an animated image, the button displays only the first image in the animation sequence.
 

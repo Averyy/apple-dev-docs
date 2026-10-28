@@ -19,7 +19,7 @@ class let preferencesGeneralName: String
 extern NSImageName const NSImageNamePreferencesGeneral;
 ```
 
-#### Discussion
+## Discussion
 
 Use in a preferences window only.
 

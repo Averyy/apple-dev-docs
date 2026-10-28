@@ -20,7 +20,7 @@ func setAttribute(_ descriptor: NSAppleEventDescriptor, forKeyword keyword: AEKe
 - (void) setAttributeDescriptor:(NSAppleEventDescriptor *) descriptor forKeyword:(AEKeyword) keyword;
 ```
 
-#### Discussion
+## Discussion
 
 The receiver must be an Apple event. Currently provides no indication if an error occurs.
 

@@ -16,7 +16,7 @@ CFDictionary key indicates whether the battery is finishing off its charge.
 #define kIOPSIsFinishingChargeKey
 ```
 
-#### Discussion
+## Discussion
 
 When this is true, the system UI should indicate that the battery is "Finishing Charge." Some batteries may continue charging after they report 100% capacity.
 

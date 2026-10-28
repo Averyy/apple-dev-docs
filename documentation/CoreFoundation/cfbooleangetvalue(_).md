@@ -25,7 +25,7 @@ func CFBooleanGetValue(_ boolean: CFBoolean!) -> Bool
 extern Boolean CFBooleanGetValue(CFBooleanRef boolean);
 ```
 
-#### Return Value
+## Return Value
 
 The value of `boolean`.
 

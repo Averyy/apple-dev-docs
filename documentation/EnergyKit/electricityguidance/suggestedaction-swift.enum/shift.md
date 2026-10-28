@@ -17,7 +17,7 @@ An indication of when to shift energy usage for devices that can’t reduce elec
 case shift
 ```
 
-#### Discussion
+## Discussion
 
 For example, an electric vehicle has to reach a certain charge, so it shifts to a better suited energy consumption time.
 

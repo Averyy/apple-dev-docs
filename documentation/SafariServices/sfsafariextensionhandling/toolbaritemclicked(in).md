@@ -23,7 +23,7 @@ optional func toolbarItemClicked(in window: SFSafariWindow)
 
 - [Adjusting settings for a toolbar item](../adjusting-settings-for-a-toolbar-item.md)
 
-#### Discussion
+## Discussion
 
 The toolbar item can either execute a command or display a popover.
 

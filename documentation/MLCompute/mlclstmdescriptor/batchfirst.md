@@ -23,7 +23,7 @@ var batchFirst: Bool { get }
 @property (nonatomic, readonly) BOOL batchFirst;
 ```
 
-#### Discussion
+## Discussion
 
 If `batchFirst` is `true`, the input and output shape is `[batch, feature, 1, time steps]`. Otherwise, the shape is `[time steps, batch, feature]`, which is more efficient.
 

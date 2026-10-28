@@ -25,7 +25,7 @@ var loops: Bool { get set }
 @property (nonatomic) BOOL loops;
 ```
 
-#### Discussion
+## Discussion
 
 If this value is [`true`](../../Swift/true.md) (the default), you can make the system emit particles periodically or sporadically. For example, in a looping system where the [`emissionDuration`](./emissionduration.md) value is `1.0` seconds and the [`idleDuration`](./idleduration.md) value is `1.0` seconds, the system alternates alternates between equal one-second periods of spawning and not spawning particles. Use the [`emissionDurationVariation`](./emissiondurationvariation.md) and [`idleDurationVariation`](./idledurationvariation.md) properties to randomize the duration of each emission and idle period, making the emission behavior more sporadic.
 

@@ -13,11 +13,11 @@
 errno_t net_init_add(net_init_func_ptr init_func);
 ```
 
-#### Return Value
+## Return Value
 
 EINVAL - the init_func value was NULL. EALREADY - the network has already been initialized ENOMEM - there was not enough memory to perform this operation 0 - success
 
-#### Discussion
+## Discussion
 
 Add a function to be called during network initialization. Your kext must not unload until the function you register is called if net_init_add returns success.
 

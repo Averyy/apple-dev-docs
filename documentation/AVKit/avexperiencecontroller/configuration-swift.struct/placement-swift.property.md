@@ -15,7 +15,7 @@ Supply a Placement to be used when the original container isn’t added to the v
 var placement: AVExperienceController.Configuration.Placement
 ```
 
-#### Discussion
+## Discussion
 
 Indicates the placement of where the media playback will be experienced. Setting this property will apply to all experiences, unless its overwritten by the targeted experience configuration object.
 

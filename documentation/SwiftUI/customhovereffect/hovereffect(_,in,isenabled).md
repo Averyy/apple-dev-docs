@@ -15,7 +15,7 @@ Applies this effect in parallel with the given `effect`.
 func hoverEffect(_ effect: some CustomHoverEffect, in group: HoverEffectGroup? = nil, isEnabled: Bool = true) -> some CustomHoverEffect
 ```
 
-#### Discussion
+## Discussion
 
 Use `hoverEffect(_:)` to combine two effects into a single effect that applies both effects in parallel. Modifiers like [`hoverEffectDisabled(_:)`](./hovereffectdisabled%28_%29.md) applied to `effect` will not apply to this effect.
 

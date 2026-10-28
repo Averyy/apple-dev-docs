@@ -15,7 +15,7 @@ Optionally queries the user how to handle a failed trust evaluation.
 typedef enum SecTrustResultType (*)(struct __SecTrust *, enum SecTrustResultType, void *) SecureDownloadTrustEvaluateCallback;
 ```
 
-#### Return Value
+## Return Value
 
 A trust evaluation result.
 

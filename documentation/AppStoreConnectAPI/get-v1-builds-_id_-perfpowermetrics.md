@@ -13,11 +13,11 @@ Get the performance and power metrics data for a specific build.
 
 - [App Store Connect API 1.4 release notes](./app-store-connect-api-1-4-release-notes.md)
 
-#### Discussion
+## Discussion
 
 The example below requests iOS animation metrics on all iPads for a specific build. To get the metrics for all of the most-recent app versions instead, use the [`Get power and performance metrics for an app`](./get-v1-apps-_id_-perfpowermetrics.md) endpoint.
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

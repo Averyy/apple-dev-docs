@@ -15,11 +15,11 @@ The response object for a single budget order operation.
 object SharedBudgetResponse
 ```
 
-#### Discussion
+## Discussion
 
 Create, update, and get-by-ID budget order operations return `SharedBudgetResponse` as the single-item response envelope.
 
-##### Example
+### Example
 
 ```json
 {

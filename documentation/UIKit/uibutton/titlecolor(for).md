@@ -23,7 +23,7 @@ func titleColor(for state: UIControl.State) -> UIColor?
 - (UIColor *) titleColorForState:(UIControlState) state;
 ```
 
-#### Return Value
+## Return Value
 
 The color of the title for the specified state.
 

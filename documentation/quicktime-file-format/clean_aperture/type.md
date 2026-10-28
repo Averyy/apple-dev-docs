@@ -6,7 +6,7 @@
 
 A 32-bit unsigned integer.
 
-#### Overview
+## Overview
 
 Contains the four-character code `'clap'`.
 

@@ -24,7 +24,7 @@ typealias GCGamepadValueChangedHandler = (GCGamepad, GCControllerElement) -> Voi
 typedef void (^)(GCGamepad *, GCControllerElement *) GCGamepadValueChangedHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The block parameters are defined as follows:
 

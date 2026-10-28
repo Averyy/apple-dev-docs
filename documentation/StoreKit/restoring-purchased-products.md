@@ -5,7 +5,7 @@
 
 Give customers functionality that restores their purchases in your app to maintain access to purchased content.
 
-#### Overview
+## Overview
 
 Customers sometimes need to restore purchased content, such as when they upgrade to a new phone. Include some mechanism in your app, such as a Restore Purchases button, to let them restore their purchases.
 
@@ -25,7 +25,7 @@ Restoring completed transactions creates a new transaction for each previously c
 
 Give the user an appropriate level of control over the content that’s downloaded again. For example, don’t automatically download three years of daily newspapers or hundreds of megabytes of game levels at the same time.
 
-##### Refresh the app receipt
+### Refresh the app receipt
 
 Create a receipt refresh request, set a delegate, and start the request. The request supports optional properties for obtaining receipts in various states, such as expired receipts, during testing. For details, see the [`init(receiptProperties:)`](./skreceiptrefreshrequest/init%28receiptproperties%29.md) method of [`SKReceiptRefreshRequest`](./skreceiptrefreshrequest.md).
 
@@ -47,7 +47,7 @@ request.delegate = self;
 
 After the app receipt refreshes, examine it and deliver any additional products, as necessary.
 
-##### Restore completed transactions
+### Restore completed transactions
 
 Your app starts restoring completed transactions by calling the [`restoreCompletedTransactions()`](./skpaymentqueue/restorecompletedtransactions%28%29.md) method of [`SKPaymentQueue`](./skpaymentqueue.md). This call sends a request to the App Store to restore all of your app’s completed transactions. If your app sets a value for the [`applicationUsername`](./skmutablepayment/applicationusername.md) property of its payment requests, use the [`restoreCompletedTransactions(withApplicationUsername:)`](./skpaymentqueue/restorecompletedtransactions%28withapplicationusername%29.md) method to provide the same information when restoring the transactions.
 

@@ -24,7 +24,7 @@ var rgbBlendOperation: MTLBlendOperation { get set }
 @property (nonatomic) MTLBlendOperation rgbBlendOperation;
 ```
 
-#### Discussion
+## Discussion
 
 This property defaults to [`MTLBlendOperation.add`](../mtlblendoperation/add.md).
 

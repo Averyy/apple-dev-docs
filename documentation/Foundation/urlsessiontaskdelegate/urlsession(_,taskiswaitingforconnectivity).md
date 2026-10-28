@@ -25,7 +25,7 @@ optional func urlSession(_ session: URLSession, taskIsWaitingForConnectivity tas
 - (void) URLSession:(NSURLSession *) session taskIsWaitingForConnectivity:(NSURLSessionTask *) task;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called if the  [`waitsForConnectivity`](../urlsessionconfiguration/waitsforconnectivity.md) property of [`URLSessionConfiguration`](../urlsessionconfiguration.md) is `true`, and sufficient connectivity is unavailable. The delegate can use this opportunity to update the user interface; for example, by presenting an offline mode or a cellular-only mode.
 

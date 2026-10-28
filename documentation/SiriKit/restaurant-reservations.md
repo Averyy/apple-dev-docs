@@ -5,7 +5,7 @@
 
 Create and manage restaurant reservations with help from the Maps app.
 
-#### Overview
+## Overview
 
 Users can book restaurant reservations and view their current reservations from Maps. You provide Apple with information about the restaurants that you support before implementing support for these intents. When the user books a restaurant, Maps includes your information in the intents that it sends to your Intents app extension, which uses the information to complete the booking.
 

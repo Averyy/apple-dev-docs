@@ -20,7 +20,7 @@ func supportsCommand(_ commandDescription: NSScriptCommandDescription) -> Bool
 - (BOOL) supportsCommand:(NSScriptCommandDescription *) commandDescription;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if an the receiver or the instance of `NSScriptClassDescription` of any superclass of the receiver’s class lists the command described by `commandDesc` among its supported commands; otherwise, [`false`](../../Swift/false.md).
 

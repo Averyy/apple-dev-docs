@@ -21,7 +21,7 @@ func SecTransformCreateFromExternalRepresentation(_ dictionary: CFDictionary, _ 
 extern SecTransformRefSecTransformCreateFromExternalRepresentation(CFDictionaryRef dictionary, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to a SecTransformRef object. You must release the object with CFRelease when you are done with it. A NULL will be returned if an error occurred during initialization, and if the error parameter is non-null, it contains the specific error data.
 

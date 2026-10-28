@@ -19,11 +19,11 @@ func arrange(_ objects: [Any]) -> [Any]
 - (NSArray *) arrangeObjects:(NSArray *) objects;
 ```
 
-#### Return Value
+## Return Value
 
 An array containing `objects` filtered using the receiver’s filter predicate (see [`filterPredicate`](./filterpredicate.md)) and sorted according to the receiver’s [`sortDescriptors`](./sortdescriptors.md).
 
-#### Discussion
+## Discussion
 
 Subclasses should override this method to use a different sort mechanism, provide custom object arrangement, or (typically only prior to OS X version 10.4, which provides a filter predicate) filter the objects.
 

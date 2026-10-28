@@ -21,11 +21,11 @@ Parameters used to configure the initial state of a particle when it’s spawned
 struct ElementSpawnParameters
 ```
 
-#### Overview
+## Overview
 
 The values specified become initial values in the Initialization stage, which can read or overwrite the values.
 
-#### Usage
+## Usage
 
 ```swift
 let params = ElementSpawnParameters(

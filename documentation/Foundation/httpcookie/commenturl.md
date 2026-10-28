@@ -25,7 +25,7 @@ var commentURL: URL? { get }
 @property (copy, readonly, nullable) NSURL * commentURL;
 ```
 
-#### Discussion
+## Discussion
 
 This value is `nil` if the cookie has no comment URL. This value specifies a URL that can be presented to the user as a link for further information about this cookie.
 

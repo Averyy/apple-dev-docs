@@ -24,7 +24,7 @@ enum AVCaptureVideoOrientation
 enum AVCaptureVideoOrientation : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 You can set these constants to [`videoOrientation`](./avcaptureconnection/videoorientation.md) for a connection that has an [`AVCaptureVideoPreviewLayer`](./avcapturevideopreviewlayer.md) output.
 

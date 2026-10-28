@@ -24,11 +24,11 @@ convenience init(name: String, semantic: MDLMaterialSemantic, float value: Float
 - (instancetype) initWithName:(NSString *) name semantic:(MDLMaterialSemantic) semantic float:(float) value;
 ```
 
-#### Return Value
+## Return Value
 
 A new material property object whose [`type`](./type.md) property is [`MDLMaterialPropertyType.float`](../mdlmaterialpropertytype/float.md).
 
-#### Discussion
+## Discussion
 
 Scalar values are appropriate for some semantics, such as the [`MDLMaterialSemantic.specularTint`](../mdlmaterialsemantic/speculartint.md) semantic (which controls the balance between material and light colors in specular highlighting). Providing a float value for the material property applies that value for all pixels rendered using the material; to provide variation in the semantic’s value across a surface, use a grayscale texture image instead.
 

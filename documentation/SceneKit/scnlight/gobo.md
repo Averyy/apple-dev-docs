@@ -25,7 +25,7 @@ var gobo: SCNMaterialProperty? { get }
 @property (nonatomic, readonly, nullable) SCNMaterialProperty * gobo;
 ```
 
-#### Discussion
+## Discussion
 
 In photographic and stage lighting terminology, a gobo (also known as a *flag* or *cookie*) is a stencil, gel, or other object placed just in front of a light source, shaping or coloring the beam of light.
 

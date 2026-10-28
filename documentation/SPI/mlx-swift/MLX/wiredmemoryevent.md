@@ -21,7 +21,7 @@ struct WiredMemoryEvent
 
 - [Wired Memory Management](./wired-memory.md)
 
-#### Overview
+## Overview
 
 Events are only emitted in DEBUG builds. In release builds the event stream is empty and finishes immediately.
 

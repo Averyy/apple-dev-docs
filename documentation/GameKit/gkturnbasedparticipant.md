@@ -25,7 +25,7 @@ class GKTurnBasedParticipant
 @interface GKTurnBasedParticipant : NSObject
 ```
 
-#### Overview
+## Overview
 
 A `GKTurnBasedParticipant` represents a player in a turn-based match that Game Center uses to store and forward match data. In your game, use participant objects to show information about opponents during gameplay.
 
@@ -33,7 +33,7 @@ You get `GKTurnBasedParticipant` objects from the [`participants`](./gkturnbased
 
 Before you end a match, you must set the [`matchOutcome`](./gkturnbasedparticipant/matchoutcome.md) property for every participant in the match.
 
-##### Subclassing
+### Subclassing
 
 You may not subclass this class.
 

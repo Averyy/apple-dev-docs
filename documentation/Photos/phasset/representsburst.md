@@ -24,7 +24,7 @@ var representsBurst: Bool { get }
 @property (nonatomic, assign, readonly) BOOL representsBurst;
 ```
 
-#### Discussion
+## Discussion
 
 When the user takes a sequence of photos in burst mode with the Camera app (on supported devices), the Photos app user interface groups the resulting assets together. One asset represents the entire sequence in displayed collections.
 

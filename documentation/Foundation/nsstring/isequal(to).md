@@ -25,15 +25,15 @@ func isEqual(to aString: String) -> Bool
 - (BOOL) isEqualToString:(NSString *) aString;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if `aString` is equivalent to the receiver (if they have the same id or if they are `NSOrderedSame` in a literal comparison), otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 The comparison uses the canonical representation of strings, which for a particular string is the length of the string plus the UTF-16 code units that make up the string. When this method compares two strings, if the individual Unicodes are the same, then the strings are equal, regardless of the backing store. “Literal” when applied to string comparison means that various Unicode decomposition rules are not applied and UTF-16 code units are individually compared. So, for instance, “Ö” represented as the composed character sequence “O” (`U+004F LATIN CAPITAL LETTER O`) and a combining diaeresis “¨” (`U+0308 COMBINING DIAERESIS`) would not compare equal to “Ö” represented as a single Unicode character (`U+00D6 LATIN CAPITAL LETTER O WITH DIAERESIS`).
 
-##### Special Considerations
+### Special Considerations
 
 When you know both objects are strings, this method is a faster way to check equality than [`isEqual(_:)`](../../ObjectiveC/nsobjectprotocol/isequal%28_%29.md).
 

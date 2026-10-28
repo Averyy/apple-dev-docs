@@ -5,7 +5,7 @@
 
 Catch potential performance issues while your app runs using the Metal heads-up display.
 
-#### Overview
+## Overview
 
 To help you optimize performance, the Metal Performance HUD analyzes your app’s Metal API call patterns and automatically flags potential issues. This analysis is available for both native apps and Windows games running through the evaluation environment. Each insight offers links to documentation detailing the issue and outlining methods for resolution.
 
@@ -19,7 +19,7 @@ export MTL_HUD_INSIGHTS_ENABLED=1
 
 ![A screenshot showing the Metal Performance HUD insights panel on macOS.](https://developer.apple.com/tutorials/images/com.apple.Xcode/metal-hud-config-insights@2x.png)
 
-##### Analyze and interpret performance insights
+### Analyze and interpret performance insights
 
 When performance insights are active, the Metal Performance HUD collects Metal API statistics for every frame. If a pattern suggesting a potential performance issue on Apple GPUs occurs in at least half the frames over a set duration (the default time is 5 seconds), an insight overlay appears alongside the main overlay.
 

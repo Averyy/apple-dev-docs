@@ -19,7 +19,7 @@ object AgeRatingDeclarationUpdateRequest.Data.Attributes
 
 - [App Store Connect API 3.6 release notes](../../app-store-connect-api-3-6-release-notes.md)
 
-#### Discussion
+## Discussion
 
 For more information about app ratings, see [App ratings](https://help.apple.com/app-store-connect/#/dev269f11291).
 

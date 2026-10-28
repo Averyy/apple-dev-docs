@@ -24,7 +24,7 @@ class func fetchTopLevelUserCollections(with options: PHFetchOptions?) -> PHFetc
 + (PHFetchResult<PHCollection *> *) fetchTopLevelUserCollectionsWithOptions:(PHFetchOptions *) options;
 ```
 
-#### Return Value
+## Return Value
 
 A fetch result that contains the requested [`PHCollection`](../phcollection.md) objects, or an empty fetch result if no objects match the request.
 

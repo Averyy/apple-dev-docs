@@ -24,11 +24,11 @@ Watches for updates to a config value for the given config key with default fall
 func watchInt<Return>(forKey key: ConfigKey, isSecret: Bool = false, default defaultValue: Int, fileID: String = #fileID, line: UInt = #line, updatesHandler: nonisolated(nonsending) (ConfigUpdatesAsyncSequence<Int, Never>) async throws -> Return) async throws -> Return where Return : ~Copyable
 ```
 
-#### Return Value
+## Return Value
 
 The result produced by the handler.
 
-#### Discussion
+## Discussion
 
 Use this method to observe changes to configuration values over time with a guaranteed fallback. The handler receives an async sequence that produces the current value whenever it changes, or the default value if the configuration value is missing or can’t be converted.
 

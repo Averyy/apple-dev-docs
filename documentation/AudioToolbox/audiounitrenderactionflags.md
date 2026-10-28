@@ -24,7 +24,7 @@ struct AudioUnitRenderActionFlags
 enum AudioUnitRenderActionFlags : UInt32;
 ```
 
-#### Overview
+## Overview
 
 These flags can be set in a callback from an audio unit during an audio unit render operation from either the `RenderNotify` Proc or the render input callback.
 

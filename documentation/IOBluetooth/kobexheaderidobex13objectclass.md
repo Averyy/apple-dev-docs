@@ -17,7 +17,7 @@ var kOBEXHeaderIDOBEX13ObjectClass: OBEXHeaderIdentifiers { get }
 kOBEXHeaderIDOBEX13ObjectClass
 ```
 
-#### Discussion
+## Discussion
 
 Used to reference the object class and properties. Byte Sequence.
 

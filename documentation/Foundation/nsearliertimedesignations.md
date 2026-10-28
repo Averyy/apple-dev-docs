@@ -17,7 +17,7 @@ Key for an array of strings that denote a time in the past.
 extern NSString * const NSEarlierTimeDesignations;
 ```
 
-#### Discussion
+## Discussion
 
 These are adjectives that modify values from `NSYearMonthWeekDesignations`. The defaults are “prior,” “last,” “past,” and “ago.”
 

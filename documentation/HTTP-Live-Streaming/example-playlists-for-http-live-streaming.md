@@ -4,7 +4,7 @@
 
 View and compare playlists for different HLS applications.
 
-#### Overview
+## Overview
 
 HTTP Live Streaming sends audio and video as a series of small files, typically of about 6 seconds duration, called *media segment files*. An index file, or playlist, provides an ordered list of the URLs of the media segment files. Index files for HTTP Live Streaming are saved as M3U8 playlists, an extension of the M3U format used for MP3 playlists. The URL of the index file is accessed by clients, which then request the indexed files in sequence.
 

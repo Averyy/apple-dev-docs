@@ -23,7 +23,7 @@ let kNWErrorDomainWiFiAware: CFString
 extern CFStringRef const kNWErrorDomainWiFiAware;
 ```
 
-#### Discussion
+## Discussion
 
 CFErrorRef domain corresponding to nw_error_domain_wifi_aware.
 

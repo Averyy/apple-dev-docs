@@ -17,7 +17,7 @@
 #define kIOMessageSystemWillRestart
 ```
 
-#### Discussion
+## Discussion
 
 Indicates an imminent system restart. Recipients have a limited amount of time to respond, otherwise the system will timeout and restart even without a response. Delivered to in-kernel IOKit drivers via `IOService::systemWillShutdown()`, and to clients of `registerPrioritySleepWakeInterest()`. Never delivered to user space notification clients.
 

@@ -21,7 +21,7 @@ A video-range, two-plane YpCbCr 4:2:2 pixel format with 16 bits per channel.
 case format422YpCbCr16
 ```
 
-#### Discussion
+## Discussion
 
 This format defines luminance and chrominance data in the range `4096...61440`.
 

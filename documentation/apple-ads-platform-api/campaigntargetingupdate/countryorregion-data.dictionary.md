@@ -15,7 +15,7 @@ The countries or regions where an existing campaign’s ads are eligible to serv
 object CampaignTargetingUpdate.CountryOrRegion
 ```
 
-#### Discussion
+## Discussion
 
 The `countryOrRegion` field uses ISO 3166-1 alpha-2 country codes (for example, `US`, `CA`, `GB`). It’s include-only: the `exclude` array isn’t supported at the campaign level. Omit to leave unchanged. See [`TargetingDataUpdate`](../targetingdataupdate.md) for the `include`/`exclude` shape.
 

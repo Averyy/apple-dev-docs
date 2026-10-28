@@ -13,7 +13,7 @@
 NSProgressIndicatorPreferredAquaThickness
 ```
 
-#### Discussion
+## Discussion
 
 12
 

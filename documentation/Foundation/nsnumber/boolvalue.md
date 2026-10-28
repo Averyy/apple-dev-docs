@@ -25,7 +25,7 @@ var boolValue: Bool { get }
 @property (readonly) BOOL boolValue;
 ```
 
-#### Discussion
+## Discussion
 
 A `0` value always means [`false`](../../Swift/false.md), and any nonzero value is interpreted as [`true`](../../Swift/true.md).
 

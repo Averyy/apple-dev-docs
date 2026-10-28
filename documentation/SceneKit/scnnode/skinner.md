@@ -25,7 +25,7 @@ var skinner: SCNSkinner? { get set }
 @property (nonatomic, retain, nullable) SCNSkinner * skinner;
 ```
 
-#### Discussion
+## Discussion
 
 A skinner object maintains an hierarchy of control nodes that can deform the node’s geometry using skeletal animations created in an external 3D authoring tool. For details, see [`SCNSkinner`](../scnskinner.md).
 

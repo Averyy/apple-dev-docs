@@ -16,11 +16,11 @@
 static kern_return_t Create(OSString *name, IOUserClient *userClient, IOWorkGroup **workgroup);
 ```
 
-#### Return Value
+## Return Value
 
 kIOReturnSuccess on success. See IOReturn.h for error codes.
 
-#### Discussion
+## Discussion
 
 Create an IOWorkGroup object. This object is not functional until a workgroup port has been set.
 

@@ -19,7 +19,7 @@ func ABGroupRemoveGroup(_ group: ABGroupRef!, _ groupToRemove: ABGroupRef!) -> B
 extern bool ABGroupRemoveGroup(ABGroupRef group, ABGroupRef groupToRemove);
 ```
 
-#### Return Value
+## Return Value
 
 `true` ifsuccessful. If the `group` parameteris not a subgroup, this function does nothing and returns `false`.
 

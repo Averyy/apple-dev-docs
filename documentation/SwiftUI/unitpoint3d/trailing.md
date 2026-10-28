@@ -15,7 +15,7 @@ A point that’s centered vertically and in the depth dimension on the trailing 
 static let trailing: UnitPoint3D
 ```
 
-#### Discussion
+## Discussion
 
 The trailing edge appears on the right in a left-to-right language environment and on the left in a right-to-left environment.
 

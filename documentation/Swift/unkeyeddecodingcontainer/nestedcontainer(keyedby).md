@@ -22,11 +22,11 @@ Decodes a nested container keyed by the given type.
 mutating func nestedContainer<NestedKey>(keyedBy type: NestedKey.Type) throws -> KeyedDecodingContainer<NestedKey> where NestedKey : CodingKey
 ```
 
-#### Return Value
+## Return Value
 
 A keyed decoding container view into `self`.
 
-#### Discussion
+## Discussion
 
 > **Throws**: `DecodingError.typeMismatch` if the encountered stored value is not a keyed container.
 

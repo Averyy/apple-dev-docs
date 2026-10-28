@@ -29,7 +29,7 @@ typedef struct DSPDoubleComplex { ... } DSPDoubleComplex;
 
 - [Performing Fourier transforms on interleaved-complex data](./performing-fourier-transforms-on-interleaved-complex-data.md)
 
-#### Overview
+## Overview
 
 Double complex data are stored as ordered pairs of double-precision floating-point numbers. Because they are stored as ordered pairs, complex vectors require address strides that are multiples of two.
 

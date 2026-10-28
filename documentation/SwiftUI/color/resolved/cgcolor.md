@@ -21,7 +21,7 @@ A Core Graphics representation of the color.
 var cgColor: CGColor { get }
 ```
 
-#### Discussion
+## Discussion
 
 You can get a [`CGColor`](../../../CoreGraphics/cgcolor.md) instance from a resolved color.
 

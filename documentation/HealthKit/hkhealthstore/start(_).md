@@ -21,7 +21,7 @@ func start(_ workoutSession: HKWorkoutSession)
 - (void) startWorkoutSession:(HKWorkoutSession *) workoutSession;
 ```
 
-#### Discussion
+## Discussion
 
 Workout sessions allow apps to run in the foreground. The current Foreground App appears when the user wakes the watch. Additionally, Apple Watch sets its sensors based on the workout activity and location types for more accurate measurements and better performance.
 

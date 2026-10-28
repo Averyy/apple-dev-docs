@@ -26,11 +26,11 @@ func AUGraphUpdate(_ inGraph: AUGraph, _ outIsUpdated: UnsafeMutablePointer<Darw
 extern OSStatus AUGraphUpdate(AUGraph inGraph, Boolean *outIsUpdated);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 
-#### Discussion
+## Discussion
 
 Call this function to finalize changes to an audio processing graph’s state after making calls such as [`AUGraphConnectNodeInput(_:_:_:_:_:)`](./augraphconnectnodeinput%28_,_,_,_,_%29.md).
 

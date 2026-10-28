@@ -24,11 +24,11 @@ func unifiedContacts(matching predicate: NSPredicate, keysToFetch keys: [any CNK
 - (NSArray<CNContact *> *) unifiedContactsMatchingPredicate:(NSPredicate *) predicate keysToFetch:(NSArray<id<CNKeyDescriptor>> *) keys error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`CNContact`](../cncontact.md) objects matching the predicate.
 
-#### Discussion
+## Discussion
 
 If the system doesn’t find any matches, this method returns an empty array (or `nil` in case of error). Use only the predicates from the [`CNContact`](../cncontact.md) class predicates. This method doesn’t support compound predicates. Due to unification, the returned contacts may have different identifiers than you specify. To fetch all contacts, use [`enumerateContacts(with:usingBlock:)`](./enumeratecontacts%28with,usingblock%29.md).
 

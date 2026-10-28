@@ -25,7 +25,7 @@ static let secureUnarchiveFromDataTransformerName: NSValueTransformerName
 extern NSValueTransformerName const NSSecureUnarchiveFromDataTransformerName;
 ```
 
-#### Discussion
+## Discussion
 
 The transformer this property references returns the [`NSData`](../nsdata.md) instance created by archiving the value using secure keyed archiving. This transformer requires that an object implement the [`NSSecureCoding`](../nssecurecoding.md) protocol in order to archive and unarchive with this transformer.
 

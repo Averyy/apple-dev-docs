@@ -24,7 +24,7 @@ let kVTVideoDecoderSpecification_RequireHardwareAcceleratedVideoDecoder: CFStrin
 extern CFStringRef const kVTVideoDecoderSpecification_RequireHardwareAcceleratedVideoDecoder;
 ```
 
-#### Discussion
+## Discussion
 
 This key is set in the `decoderSpecification` passed in to [`VTDecompressionSessionCreate(allocator:formatDescription:decoderSpecification:imageBufferAttributes:outputCallback:decompressionSessionOut:)`](./vtdecompressionsessioncreate%28allocator,formatdescription,decoderspecification,imagebufferattributes,outputcallback,decompressionsessionout%29.md). If set to [`kCFBooleanTrue`](../CoreFoundation/kcfbooleantrue.md), VideoToolbox tries to allocate a hardware-accelerated decoder. If it cannot, it returns an error and the session creation fails.
 

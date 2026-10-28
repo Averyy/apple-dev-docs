@@ -19,7 +19,7 @@ A Boolean value that indicates whether you can edit the document.
 var isEditable: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 On macOS, the document could be non-editable if the user lacks write permissions, the parent directory or volume is read-only, or the document couldn’t be autosaved.
 

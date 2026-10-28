@@ -24,7 +24,7 @@ class Configuration
 @interface UIImageConfiguration : NSObject
 ```
 
-#### Overview
+## Overview
 
 Images may contain multiple variants to account for environmental factors, such as whether the interface is light or dark. The image configuration object lets you override the current environment and render an image with specific attributes. For example, you might want to render a specific version of your image to your interface.
 

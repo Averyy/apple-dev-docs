@@ -35,7 +35,7 @@ class SKShader
 - [Executing Shaders in Metal and OpenGL](./executing-shaders-in-metal-and-opengl.md)
 - [Getting Started with Particle Shaders](./getting-started-with-particle-shaders.md)
 
-#### Overview
+## Overview
 
 An [`SKShader`](./skshader.md) object holds a custom OpenGL ES fragment shader. Shader objects are used to customize the drawing behavior of many different kinds of nodes in SpriteKit.
 

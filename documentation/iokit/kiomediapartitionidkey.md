@@ -16,7 +16,7 @@ A property of IOMedia objects.
 #define kIOMediaPartitionIDKey
 ```
 
-#### Discussion
+## Discussion
 
 The kIOMediaPartitionIDKey property has an OSNumber value and is placed into an IOMedia instance created via the partition scheme. It is an ID that differentiates one partition from the other (within a given scheme). It is typically an index into the on-disk partition table.
 

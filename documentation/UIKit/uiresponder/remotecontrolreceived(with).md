@@ -23,7 +23,7 @@ func remoteControlReceived(with event: UIEvent?)
 - (void) remoteControlReceivedWithEvent:(UIEvent *) event;
 ```
 
-#### Discussion
+## Discussion
 
 Remote-control events originate as commands from external accessories, including headsets. An app responds to these commands by controlling audio or video media presented to the user. The receiving responder object should examine the [`subtype`](../uievent/subtype.md) of `event` to determine the intended command — for example, *play* ([`UIEvent.EventSubtype.remoteControlPlay`](../uievent/eventsubtype/remotecontrolplay.md)) — and then proceed accordingly.
 

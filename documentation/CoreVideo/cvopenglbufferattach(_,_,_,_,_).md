@@ -21,7 +21,7 @@ func CVOpenGLBufferAttach(_ openGLBuffer: CVOpenGLBuffer, _ cglContext: CGLConte
 extern CVReturn CVOpenGLBufferAttach(CVOpenGLBufferRef openGLBuffer, CGLContextObj cglContext, GLenum face, GLint level, GLint screen);
 ```
 
-#### Return Value
+## Return Value
 
 A Core Video result code. See [Core Video Constants](./core-video-constants.md) for possible values.
 

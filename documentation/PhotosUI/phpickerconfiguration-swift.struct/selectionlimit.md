@@ -19,7 +19,7 @@ The maximum number of selections the user can make.
 var selectionLimit: Int
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `1`. Setting the value to `0` sets the selection limit to the maximum that the system supports.
 

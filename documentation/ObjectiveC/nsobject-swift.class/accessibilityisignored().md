@@ -21,11 +21,11 @@ func accessibilityIsIgnored() -> Bool
 - (BOOL) accessibilityIsIgnored;
 ```
 
-#### Return Value
+## Return Value
 
 [`YES`](../yes.md) if the receiver should be ignored; otherwise, [`NO`](../no.md).
 
-#### Discussion
+## Discussion
 
 When asking for an object’s children, do not include ignored children; instead, replace the ignored children with their own unignored children. The same applies when asking for an object’s parent: skip the ignored parent and treat the first unignored ancestor as the real parent.  Likewise, when a hit-test or focus test is satisfied by an ignored element, use the element’s first unignored ancestor (or descendant in certain cases, such as single-celled controls) instead.
 

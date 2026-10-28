@@ -24,11 +24,11 @@ init?(mdlSubmesh submesh: MDLSubmesh, indexType: MDLIndexBitDepth, geometryType:
 - (instancetype) initWithMDLSubmesh:(MDLSubmesh *) submesh indexType:(MDLIndexBitDepth) indexType geometryType:(MDLGeometryType) geometryType;
 ```
 
-#### Return Value
+## Return Value
 
 A new submesh object.
 
-#### Discussion
+## Discussion
 
 If the `indexType` or `geometryType` parameter does not match the corresponding property of the object in the `submesh` parameter, this method creates a new index buffer by converting the submesh’s index buffer to the described format while preserving shape and topology. For example, you can use this method to convert a quad mesh to a triangle mesh for rendering using GPUs that do not support quad primitives, or to convert a triangle mesh to triangle strips to create a smaller index buffer.
 

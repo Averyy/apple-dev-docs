@@ -23,7 +23,7 @@ optional func animationEnded(_ transitionCompleted: Bool)
 - (void) animationEnded:(BOOL) transitionCompleted;
 ```
 
-#### Discussion
+## Discussion
 
 UIKit calls this method at the end of a transition to let you know the results. Use this method to perform any final cleanup operations required by your transition animator when the transition finishes.
 

@@ -22,7 +22,7 @@ A 3x3 matrix that transforms points in a plane.
 struct ProjectionTransform
 ```
 
-#### Overview
+## Overview
 
 A projection transform covers everything `CGAffineTransform` does - translation, rotation, scale, and skew - and adds perspective, which an affine transform cannot express. SwiftUI uses it to describe the geometry a view effect applies.
 

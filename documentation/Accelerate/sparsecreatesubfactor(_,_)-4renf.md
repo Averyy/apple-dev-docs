@@ -25,7 +25,7 @@ func SparseCreateSubfactor(_ subfactor: SparseSubfactor_t, _ Factor: SparseOpaqu
 static SparseOpaqueSubfactor_Float SparseCreateSubfactor(SparseSubfactor_t subfactor, SparseOpaqueFactorization_Float Factor);
 ```
 
-#### Return Value
+## Return Value
 
 A `SparseOpaqueSubfactor_Float` structure that represents the subfactor. You must free the resource through a call to [`SparseCleanup(_:)`](./sparsecleanup%28_%29-15kpj.md) after you finish with the object.
 

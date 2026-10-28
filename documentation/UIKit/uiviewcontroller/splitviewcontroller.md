@@ -23,7 +23,7 @@ var splitViewController: UISplitViewController? { get }
 @property (nonatomic, strong, readonly, nullable) UISplitViewController * splitViewController;
 ```
 
-#### Discussion
+## Discussion
 
 If the view controller or one of its ancestors is a child of a split view controller, this property contains the owning split view controller. This property is `nil` if the view controller is not embedded inside a split view controller.
 

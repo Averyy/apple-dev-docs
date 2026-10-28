@@ -40,7 +40,7 @@ subscript(slice: Range<Int>) -> MLDataColumn<Element> { get }
 subscript<R>(slice: R) -> MLDataColumn<Element> where R : RangeExpression, R.Bound == Int { get }
 ```
 
-#### Return Value
+## Return Value
 
 The `Element` at the given index.
 

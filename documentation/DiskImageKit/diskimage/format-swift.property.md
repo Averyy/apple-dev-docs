@@ -15,7 +15,7 @@ The format of the disk image.
 var format: DiskImage.Format { get }
 ```
 
-#### Discussion
+## Discussion
 
 This is one of the available [`DiskImage.Format`](./format-swift.enum.md) values.
 

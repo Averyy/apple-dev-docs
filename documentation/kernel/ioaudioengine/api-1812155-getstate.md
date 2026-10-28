@@ -11,11 +11,11 @@ Returns the current state of the IOAudioEngine.
 virtual IOAudioEngineState getState();
 ```
 
-#### Return Value
+## Return Value
 
 The current state of the IOAudioEngine: kIOAudioEngineRunning, kIOAudioEngineStopped.
 
-#### Overview
+## Overview
 
 If this method is called in preparation for calling setState(), the stateLock must be acquired before the first call to getState() and held until after the last call to setState(). Be careful not to return from the code acquiring the lock while the lock is being held. That will cause a deadlock situation.
 

@@ -24,7 +24,7 @@ class HKSourceQuery
 @interface HKSourceQuery : HKQuery
 ```
 
-#### Overview
+## Overview
 
 Source queries return a list of sources that have saved samples matching the specified sample types. Sources can be apps or devices (like Apple Watch or Bluetooth heart-rate monitors).
 

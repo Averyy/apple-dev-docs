@@ -15,7 +15,7 @@ Checks whether two objects are type-compatible.
 #define OSCheckTypeInst(typeinst, inst)
 ```
 
-#### Return Value
+## Return Value
 
 `true` if both `inst` and `typeinst` are non-`NULL` and `inst` is derived from the class of `typeinst`; otherwise `false`.
 

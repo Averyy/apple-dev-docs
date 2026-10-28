@@ -19,7 +19,7 @@ func IOBluetoothUserNotificationUnregister(_ notificationRef: IOBluetoothUserNot
 void IOBluetoothUserNotificationUnregister(IOBluetoothUserNotificationRef notificationRef);
 ```
 
-#### Discussion
+## Discussion
 
 This function will unregister the notification. Once the notification has been unregistered, it will no longer call the callback. Additionally, once this function has been called the target IOBluetoothUserNotificationRef is no longer valid.
 

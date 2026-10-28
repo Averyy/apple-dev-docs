@@ -6,7 +6,7 @@
 
 An array of value atoms.
 
-#### Overview
+## Overview
 
 See [`Value atom`](../value_atom.md).
 

@@ -20,7 +20,7 @@ func DADissenterGetStatusString(_ dissenter: DADissenter) -> CFString?
 extern CFStringRefDADissenterGetStatusString(DADissenterRef dissenter);
 ```
 
-#### Return Value
+## Return Value
 
 The return code string.
 

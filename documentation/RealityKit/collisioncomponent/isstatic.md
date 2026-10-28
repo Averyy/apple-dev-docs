@@ -20,7 +20,7 @@ A Boolean value that indicates whether the collider is static.
 var isStatic: Bool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 When an object is static the physics engine recognizes that the object isn’t moving, which typically improves performance.
 

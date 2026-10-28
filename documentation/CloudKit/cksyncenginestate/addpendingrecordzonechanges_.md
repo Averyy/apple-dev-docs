@@ -21,7 +21,7 @@ Adds the specified record zone changes to the state.
 - (void) addPendingRecordZoneChanges:(NSArray<CKSyncEnginePendingRecordZoneChange *> *) changes;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to enable the sync engine to manage your pending record zone changes. For example, when someone makes a change that your app needs to send to the server, use this method to record the change. Then, when creating the change batch for the next send operation, retrieve the pending changes from the [`pendingRecordZoneChanges`](./pendingrecordzonechanges.md) property.
 

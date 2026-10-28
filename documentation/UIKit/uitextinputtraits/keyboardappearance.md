@@ -23,7 +23,7 @@ optional var keyboardAppearance: UIKeyboardAppearance { get set }
 @property (nonatomic) UIKeyboardAppearance keyboardAppearance;
 ```
 
-#### Discussion
+## Discussion
 
 This property lets you distinguish between the default text entry inside your application and text entry inside an alert panel. The default value for this property is [`UIKeyboardAppearance.default`](../uikeyboardappearance/default.md).
 

@@ -14,7 +14,7 @@
 #define kIOHIDDeviceInterfaceID121
 ```
 
-#### Discussion
+## Discussion
 
 Interface ID for the IOHIDDeviceInterface121. Corresponds to an available HID device that includes methods from IOHIDDeviceInterface. This interface is available on IOHIDLib 1.2.1 and macOS 10.2.3 or later.
 

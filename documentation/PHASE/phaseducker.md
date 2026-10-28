@@ -24,11 +24,11 @@ class PHASEDucker
 @interface PHASEDucker : NSObject
 ```
 
-#### Overview
+## Overview
 
 When a sound plays in any of the source groups, this class lowers the volume of all the target groups so the listener hears the source sound more clearly. You set the source and target using [`PHASEGroup`](./phasegroup.md) objects; see [`sourceGroups`](./phaseducker/sourcegroups.md) and [`targetGroups`](./phaseducker/targetgroups.md).
 
-##### Lower Background Music During a Monologue
+### Lower Background Music During a Monologue
 
 When an app plays a monologue, the background music may need to lower, or *duck*, to enhance the clarity of the vocals. The following code demonstrates a ducker that configures a group for background music, and another group for the vocals.
 

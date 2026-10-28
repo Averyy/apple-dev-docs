@@ -20,7 +20,7 @@ Creates a blit option from a raw value.
 init(rawValue: UInt)
 ```
 
-#### Discussion
+## Discussion
 
 Use one of the [`MTLBlitOption`](../mtlblitoption.md) type’s static properties, such as [`depthFromDepthStencil`](./depthfromdepthstencil.md), [`stencilFromDepthStencil`](./stencilfromdepthstencil.md), and [`rowLinearPVRTC`](./rowlinearpvrtc.md) instead of creating a blit option yourself with this initializer.
 

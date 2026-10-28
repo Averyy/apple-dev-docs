@@ -24,7 +24,7 @@ func assertFact(_ fact: any NSObjectProtocol, grade: Float)
 - (void) assertFact:(id<NSObject>) fact grade:(float) grade;
 ```
 
-#### Discussion
+## Discussion
 
 Each fact has a membership grade ranging from zero to 1.0, representing variable levels of truth, strength, or confidence for use in fuzzy logic. Calling this method increases the fact’s grade by the amount specified in the `grade` parameter (up to a maximum of 1.0), adding the fact to the [`facts`](./facts.md) array if it is not already present.
 

@@ -13,7 +13,7 @@ IOReturn ( *RemoveFromRunLoop)(
    CFRunLoopRef runLoop );
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if the source was successfully removed from the run loop.
 

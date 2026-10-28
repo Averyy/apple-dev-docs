@@ -22,7 +22,7 @@ func releaseCGLPixelFormat(_ pf: CGLPixelFormatObj)
 - (void) releaseCGLPixelFormat:(CGLPixelFormatObj) pf;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called when the OpenGL pixel format that was previously returned by [`copyCGLContext(forPixelFormat:)`](./copycglcontext%28forpixelformat%29.md).
 

@@ -19,7 +19,7 @@ init(audioUnit au: AudioUnit)
 - (AUGenericView *) initWithAudioUnit:(AudioUnit) au;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized generic view. On error, returns `nil`.
 

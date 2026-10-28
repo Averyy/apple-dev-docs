@@ -22,7 +22,7 @@ typealias GLKQuaternion = _GLKQuaternion
 typedef union _GLKQuaternion GLKQuaternion;
 ```
 
-##### Fields
+### Fields
 
 | Name | Description |
 | --- | --- |

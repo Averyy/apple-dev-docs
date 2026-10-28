@@ -25,7 +25,7 @@ typealias CLGeocodeCompletionHandler = ([CLPlacemark]?, (any Error)?) -> Void
 typedef void (^)(NSArray<CLPlacemark *> *, NSError *) CLGeocodeCompletionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Upon completion of a geocoding request, a block of this form is called to give you a chance to process the results. The parameters of this block are as follows:
 

@@ -19,7 +19,7 @@ var safariDomains: [String] { get set }
 @property (copy) NSArray<NSString *> * safariDomains;
 ```
 
-#### Discussion
+## Discussion
 
 For per-app VPNs only, when the user navigates in Safari to a website within one of these domains, the system routes the website traffic through the VPN.
 

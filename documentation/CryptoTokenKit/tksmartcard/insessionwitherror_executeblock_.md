@@ -21,7 +21,7 @@ Synchronously begins a session, executes the given block, and ends the session.
 - (BOOL) inSessionWithError:(NSError **) error executeBlock:(BOOL (^)(NSError **error)) block;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the session was successfully created and the specified block returns [`true`](../../Swift/true.md); otherwise, [`false`](../../Swift/false.md).
 

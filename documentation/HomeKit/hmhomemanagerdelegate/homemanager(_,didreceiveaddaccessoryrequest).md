@@ -22,7 +22,7 @@ optional func homeManager(_ manager: HMHomeManager, didReceiveAddAccessoryReques
 - (void) homeManager:(HMHomeManager *) manager didReceiveAddAccessoryRequest:(HMAddAccessoryRequest *) request;
 ```
 
-#### Discussion
+## Discussion
 
 HomeKit calls this method when it needs help adding an accessory to a home, which typically occurs when the accessory requires explicit user authentication that HomeKit can’t negotiate. HomeKit asks the accessory manufacturer’s app, which it locates using information provided by the accessory, to complete the authentication.
 

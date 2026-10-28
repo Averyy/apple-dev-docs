@@ -5,13 +5,13 @@
 
 An array of font names.
 
-#### Overview
+## Overview
 
 The runtime scans this list in ascending order and chooses the first font that the runtime can provide. Font names provide the font family, then the font style, such as “Gill Sans.” You can reference font names using Font Book on macOS.
 
 If the system doesn’t support your chosen font, you can fall back to a generic font by providing one or more generic font specifiers at the end of the font list: `serif`, `san-serif`, `monospaced`, or `cursive`.
 
-##### Declaration
+### Declaration
 
 ```other
 string[] font

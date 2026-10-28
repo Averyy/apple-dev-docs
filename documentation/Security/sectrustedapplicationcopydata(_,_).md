@@ -21,11 +21,11 @@ func SecTrustedApplicationCopyData(_ appRef: SecTrustedApplication, _ data: Unsa
 OSStatus SecTrustedApplicationCopyData(SecTrustedApplicationRef appRef, CFDataRef*data);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 The trusted app instance created by the [`SecTrustedApplicationCreateFromPath(_:_:)`](./sectrustedapplicationcreatefrompath%28_,_%29.md) method includes data that uniquely identifies the app, such as a cryptographic hash of the app. The operating system uses this data to verify that the app is unaltered since the trusted app instance was created. When an app requests access to an item in the keychain for which it is designated as a trusted app, the operating system checks this data before granting access.
 

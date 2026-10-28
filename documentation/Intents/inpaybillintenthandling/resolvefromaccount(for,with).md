@@ -29,7 +29,7 @@ optional func resolveFromAccount(for intent: INPayBillIntent) async -> INPayment
 - (void) resolveFromAccountForPayBill:(INPayBillIntent *) intent withCompletion:(void (^)(INPaymentAccountResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Before paying bills with Siri, the user must set up a payment account in your app to provide the funds for those bills. Implement this method to identify the user account to use. The [`fromAccount`](../inpaybillintent/fromaccount.md) property of the intent object contains any information provided by the user about which account to use. Verify only that the account exists and the app can use it to pay the bill. Don’t try to verify that the account has sufficient funds to pay the bill here; verify that the account has sufficient funds in the [`confirm(intent:completion:)`](./confirm%28intent,completion%29.md) method.
 

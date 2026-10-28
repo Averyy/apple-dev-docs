@@ -25,11 +25,11 @@ func enumerator(atPath path: String) -> FileManager.DirectoryEnumerator?
 - (NSDirectoryEnumerator<NSString *> *) enumeratorAtPath:(NSString *) path;
 ```
 
-#### Return Value
+## Return Value
 
 A [`FileManager.DirectoryEnumerator`](./directoryenumerator.md) object that enumerates the contents of the directory at `path`.
 
-#### Discussion
+## Discussion
 
 If `path` is a filename, the method returns an enumerator object that enumerates no files—the first call to [`nextObject()`](../nsenumerator/nextobject%28%29.md) will return `nil`.
 

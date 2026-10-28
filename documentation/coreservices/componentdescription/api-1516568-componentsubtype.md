@@ -16,7 +16,7 @@ A four-character code that identifies the subtype of the component.
 OSType componentSubType;
 ```
 
-#### Discussion
+## Discussion
 
 Different subtypes of a component type may support additional features or provide interfaces that extend beyond the standard functions for a given component type. For example, the subtype of drawing components indicates the type of object the component draws. Drawing components that draw ovals have a subtype of `oval`.
 

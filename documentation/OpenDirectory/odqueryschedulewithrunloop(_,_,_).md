@@ -20,7 +20,7 @@ func ODQueryScheduleWithRunLoop(_ query: ODQueryRef!, _ runLoop: CFRunLoop!, _ r
 extern void ODQueryScheduleWithRunLoop(ODQueryRef query, CFRunLoopRef runLoop, CFStringRef runLoopMode);
 ```
 
-#### Discussion
+## Discussion
 
 This function spawns a new thread to execute the query in `inRunLoop`. When the query is complete, the query’s callback function is called with both `inResults` and `inError` set to `NULL`. To remove an incomplete query from its run loop, call [`ODQueryUnscheduleFromRunLoop(_:_:_:)`](./odqueryunschedulefromrunloop%28_,_,_%29.md).
 

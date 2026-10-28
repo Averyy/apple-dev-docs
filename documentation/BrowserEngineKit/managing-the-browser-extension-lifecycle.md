@@ -5,11 +5,11 @@
 
 Coordinate helper processes to efficiently support your browser app.
 
-#### Overview
+## Overview
 
 When your browser app uses an alternative browser engine, it relies on helper processes to access operating-system resources and work with untrusted resources, following the security principle of least privilege. Use the [BrowserEngineKit](./BrowserEngineKit.md) framework to manage these processes, and notify the system of the status of each process as it supports your browser app.
 
-##### Launch browser extensions
+### Launch browser extensions
 
 Your browser app acts as the “host” for each of the extensions that support your browser engine. You need to include the code to launch each extension in your browser app; one extension can’t load another extension.
 
@@ -23,17 +23,17 @@ let contentProcess = WebContentProcess() {
 
 To launch the GPU extension, create a [`RenderingProcess`](./renderingprocess.md) instead of a [`WebContentProcess`](./webcontentprocess.md). To launch the networking extension, create a [`NetworkingProcess`](./networkingprocess.md) instead.
 
-##### Communicate between your browser app and its extensions
+### Communicate between your browser app and its extensions
 
 Use the [`WebContentProcess`](./webcontentprocess.md), [`RenderingProcess`](./renderingprocess.md), and [`NetworkingProcess`](./networkingprocess.md) objects to create inter-process communication (IPC) channels between your host app and the extensions.
 
 For more information, see [Using XPC to communicate with browser extensions](./using-xpc-to-communicate-with-browser-extensions.md).
 
-##### Put the content extension in a restricted sandbox
+### Put the content extension in a restricted sandbox
 
 The system creates a temporary sandbox when it starts your content extension process, which gives the extension access to resources it uses during initialization. For more information: see [Limiting resource access in web content extensions](./limiting-resource-access-in-content-extensions.md).
 
-##### Grant and invalidate extension capabilities
+### Grant and invalidate extension capabilities
 
 As your extensions participate in your browser app’s workflow, grant them capabilities that tell the system what your browser is using the extensions for. Capabilities act as assertions to the system that it needs to schedule the extension to support particular tasks, for example preparing media content to display in a tab that’s in the foreground on the person’s screen.
 
@@ -50,7 +50,7 @@ if let grant = try? networkingProcess.grant(.foreground) {
 }
 ```
 
-##### Stop extension processes
+### Stop extension processes
 
 When you no longer need an extension process, call its `invalidate()` method to indicate to the system that it can stop the process. Once you have invalidated a process, it’s an error to call other methods on the process object.
 

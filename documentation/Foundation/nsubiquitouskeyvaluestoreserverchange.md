@@ -25,7 +25,7 @@ var NSUbiquitousKeyValueStoreServerChange: Int { get }
 NSUbiquitousKeyValueStoreServerChange
 ```
 
-#### Discussion
+## Discussion
 
 This type of change occurs when another instance of your app changes the value on a different device.
 

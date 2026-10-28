@@ -5,7 +5,7 @@
 
 Return a value that changes according to an array of values as a function of the age of the requests.
 
-#### Overview
+## Overview
 
 Use the `agedValues()` function in the expression of a matchmaking rule to loosen matchmaking criteria over time. This function returns a value that changes based on the given arrays and depending on the age of requests. Use this function instead of `agedAsSteppedValue()` when you want more control over the values.
 
@@ -34,7 +34,7 @@ To loosen constraints over time, use the results of this function in comparisons
 agedValues(avg(requests[].secondsInQueue), 8, [ 6, 4, 2], [ 10, 15, 20 ]) <= sum(requests[].playerCount)
 ```
 
-##### Declaration
+### Declaration
 
 ```other
 number agedValues(number        $ageSeconds, 
@@ -43,7 +43,7 @@ number agedValues(number        $ageSeconds,
                   array[number] $ages)
 ```
 
-##### Parameters
+### Parameters
 
 | `ageSeconds` | The average, maximum, or minimum age of match requests in the queue. |
 | --- | --- |
@@ -51,7 +51,7 @@ number agedValues(number        $ageSeconds,
 | `values` | The values to map the age ranges to. |
 | `ages` | The age ranges to map to the values. |
 
-##### Return value
+### Return value
 
 If `ageSeconds` is less than the first item in the `ages` array (`ages[0]`), `initialValue`. If `ageSeconds` is in the range between two items in the `ages` array (`ages[n] <= ageSeconds < ages[n+1]`), the corresponding item in the `values` array (`values[n]`). If `ageSeconds` is greater than the last item in the `ages` array, `initialValue`.
 

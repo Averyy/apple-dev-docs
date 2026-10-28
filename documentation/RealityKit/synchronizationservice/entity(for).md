@@ -22,7 +22,7 @@ Gets the entity with the given identifier.
 @preconcurrency func entity(for identifier: Self.Identifier) -> Entity?
 ```
 
-#### Return Value
+## Return Value
 
 The entity with the corresponding identifier.
 

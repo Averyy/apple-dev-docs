@@ -21,7 +21,7 @@ weak var delegate: (any TVApplicationControllerDelegate)? { get }
 @property (nonatomic, weak, readonly, nullable) id<TVApplicationControllerDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate provides methods for observing and managing different `TVApplicationController` object states. [`TVApplicationControllerDelegate`](../tvapplicationcontrollerdelegate.md) provides callbacks during the launch of the JavaScript application.
 

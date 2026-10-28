@@ -25,7 +25,7 @@ func CGRectIntegral(_ rect: CGRect) -> CGRect
 extern CGRect CGRectIntegral(CGRect rect);
 ```
 
-#### Return Value
+## Return Value
 
 A rectangle with the smallest integer values for its origin and size that contains the source rectangle. That is, given a rectangle with fractional origin or size values, `CGRectIntegral` rounds the rectangle’s origin downward and its size upward to the nearest whole integers, such that the result contains the original rectangle. Returns a null rectangle if `rect` is a null rectangle.
 

@@ -25,7 +25,7 @@ class NSStagedMigrationManager
 @interface NSStagedMigrationManager : NSObject
 ```
 
-#### Overview
+## Overview
 
 A staged migration manager contains the individual stages of a migration and applies those stages, in the order you specify, when that migration runs. The manager handles the migration’s event loop, and provides access to the migrating store through its [`container`](./nsstagedmigrationmanager/container.md) property. Stages can be custom, which enables you to perform tasks immediately before and after a stage runs, or lightweight, which supplements custom stages with those that Core Data can invoke automatically because they’re already compatible with lightweight migrations.
 

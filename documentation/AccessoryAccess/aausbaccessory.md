@@ -19,7 +19,7 @@ class AAUSBAccessory
 @interface AAUSBAccessory : NSObject
 ```
 
-#### Discussion
+## Discussion
 
 Obtain a USB accessory from the [`usbAccessoryDidConnect(_:)`](./aausbaccessorylistener/usbaccessorydidconnect%28_%29.md) method, or instantiate one from an [XPC](../XPC/XPC.md) representation that describes an existing USB accessory.
 

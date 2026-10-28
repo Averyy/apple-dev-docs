@@ -19,7 +19,7 @@ func hv_gic_get_icv_reg(_ vcpu: hv_vcpu_t, _ reg: hv_gic_icv_reg_t, _ value: Uns
 extern hv_return_t hv_gic_get_icv_reg(hv_vcpu_t vcpu, hv_gic_icv_reg_t reg, uint64_t *value);
 ```
 
-#### Return Value
+## Return Value
 
 [`HV_SUCCESS`](./hv_success.md) on success; otherwise, an error code.
 

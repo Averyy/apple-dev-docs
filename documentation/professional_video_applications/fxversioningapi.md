@@ -24,7 +24,7 @@ protocol FxVersioningAPI
 - [Versioning and obsoleting old plug-ins](../Professional-Video-Applications/versioning-and-obsoleting-old-plug-ins.md)
 - [Adding parameters to plug-ins](../Professional-Video-Applications/adding-parameters-to-plug-ins.md)
 
-#### Overview
+## Overview
 
 This protocol allows a plug-in instance to determine the version of the original instance of the plug-in. For example, if a user creates a project using version 1 of a plug-in, and then updates to version 2, the plug-in determines the old plug-in version and chooses which version to render.
 

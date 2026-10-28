@@ -23,7 +23,7 @@ class WKURLSessionRefreshBackgroundTask
 
 - [Using background tasks](./using-background-tasks.md)
 
-#### Overview
+## Overview
 
 Always upload and download data using a [`URLSession`](../Foundation/urlsession.md) background transfer. Background transfers occur in a separate process and continue to transfer data even after your app terminates. Asynchronous uploads and downloads, on the other hand, suspend with your app. Because watchOS apps have a short runtime, you can’t guarantee that an asynchronous transfer finishes before the app suspends. For more information on background transfers, see [Downloading files in the background](../Foundation/downloading-files-in-the-background.md).
 

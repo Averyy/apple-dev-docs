@@ -15,7 +15,7 @@ A single filter condition in an audit query request, specifying the field to fil
 object AuditFilter
 ```
 
-#### Discussion
+## Discussion
 
 The `AuditFilter` object is the building block for narrowing change history query results. Each filter targets a single field and applies the specified operator against the provided values. The system combines multiple filters in the same request with logical AND.
 
@@ -50,7 +50,7 @@ Each field accepts only certain operators and value formats, summarized below.
 | `campaignId` | `EQUALS`, `IN` | Campaign ID string(s). Available when `entityType` is `AdGroup`, `Keyword`, or `NegativeKeyword`. |
 | `adGroupId` | `EQUALS`, `IN` | Ad group ID string(s). Available when `entityType` is `Keyword` or `NegativeKeyword`. |
 
-##### Example
+### Example
 
 ```json
 {

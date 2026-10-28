@@ -24,7 +24,7 @@ let kVTCompressionPropertyKey_H264EntropyMode: CFString
 extern CFStringRef const kVTCompressionPropertyKey_H264EntropyMode;
 ```
 
-#### Discussion
+## Discussion
 
 If supported by an H.264 encoder, this property controls whether the encoder should use Context-based Adaptive Variable Length Coding (CAVLC) or Context-based Adaptive Binary Arithmetic Coding (CABAC). CABAC generally gives better compression at the expense of higher computational overhead. The default value is encoder-specific and may change depending on other encoder settings.
 

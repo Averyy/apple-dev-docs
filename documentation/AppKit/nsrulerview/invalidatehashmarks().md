@@ -19,7 +19,7 @@ func invalidateHashMarks()
 - (void) invalidateHashMarks;
 ```
 
-#### Discussion
+## Discussion
 
 You should never need to invoke this method directly, but might need to override it if you override [`drawHashMarksAndLabels(in:)`](./drawhashmarksandlabels%28in%29.md).
 

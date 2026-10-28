@@ -24,11 +24,11 @@ func split(_ tensor: MPSGraphTensor, numSplits: Int, axis: Int, name: String?) -
 - (NSArray<MPSGraphTensor *> *) splitTensor:(MPSGraphTensor *) tensor numSplits:(NSUInteger) numSplits axis:(NSInteger) axis name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor object.
 
-#### Discussion
+## Discussion
 
 Splits the input tensor along `axis` into `numsplits` result tensors of equal size. Requires that the lenth of the input along `axis` is divisible by `numSplits`.
 

@@ -16,11 +16,11 @@ OSStatus PMSetPrintSettingsExtendedData (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../core_printing.md#1670007).
 
-#### Overview
+## Overview
 
 You can retrieve the data you store with the function `PMSetPrintSettingsExtendedData` by calling the function `PMGetPrintSettingsExtendedData`.
 

@@ -21,11 +21,11 @@ Constructs a standalone buffer pointer over the items within the supplied range 
 func extracting(_ bounds: some RangeExpression<Int>) -> UnsafeMutableBufferPointer<Element>
 ```
 
-#### Return Value
+## Return Value
 
 A new buffer pointer over the items at `bounds`.
 
-#### Discussion
+## Discussion
 
 The returned buffer’s first item is always at index 0; unlike buffer slices, extracted buffers do not generally share their indices with the original buffer pointer.
 

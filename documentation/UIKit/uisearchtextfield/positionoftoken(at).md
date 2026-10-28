@@ -22,11 +22,11 @@ func positionOfToken(at tokenIndex: Int) -> UITextPosition
 - (UITextPosition *) positionOfTokenAtIndex:(NSInteger) tokenIndex;
 ```
 
-#### Return Value
+## Return Value
 
 The text position of the token.
 
-#### Discussion
+## Discussion
 
 Use this method to convert a token’s index in the [`tokens`](./tokens.md) array into the token’s [`UITextPosition`](../uitextposition.md) in the overall contents of the text field. Many [`UITextInput`](../uitextinput.md) methods for interacting with text take a [`UITextPosition`](../uitextposition.md) or [`UITextRange`](../uitextrange.md) (constructed from two text positions) as a parameter.
 

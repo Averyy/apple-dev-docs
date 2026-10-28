@@ -21,7 +21,7 @@ optional func safariViewController(_ controller: SFSafariViewController, didComp
 - (void) safariViewController:(SFSafariViewController *) controller didCompleteInitialLoad:(BOOL) didLoadSuccessfully;
 ```
 
-#### Discussion
+## Discussion
 
 This method is invoked when [`SFSafariViewController`](../sfsafariviewcontroller.md) completes the loading of the URL that you pass to its initializer. The method is not invoked for any subsequent page loads in the same [`SFSafariViewController`](../sfsafariviewcontroller.md) instance.
 

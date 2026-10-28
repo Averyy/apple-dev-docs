@@ -20,7 +20,7 @@ Creates a portal material from a previously compiled program.
 init(program: PortalMaterial.Program)
 ```
 
-#### Discussion
+## Discussion
 
 Because [`init(descriptor:)`](./program-swift.struct/init%28descriptor%29.md) is asynchronous, preload the programs your scene needs once during setup, then use this initializer to instantiate portal materials from them synchronously at runtime — for example, when populating a model component each frame.
 

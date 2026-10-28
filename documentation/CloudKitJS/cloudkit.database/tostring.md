@@ -15,7 +15,7 @@ Returns a string representation of this object.
 String toString();
 ```
 
-#### Return Value
+## Return Value
 
 A string representation of this [`CloudKit.Database`](../cloudkit.database.md) object.
 

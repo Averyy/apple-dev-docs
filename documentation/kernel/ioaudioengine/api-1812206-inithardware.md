@@ -12,11 +12,11 @@ virtual bool initHardware(
  IOService *provider);
 ```
 
-#### Return Value
+## Return Value
 
 Returns true if the hardware was successfully initialized.
 
-#### Overview
+## Overview
 
 Upon return from this function, all IOAudioStreams and IOAudioControls should be created and the audio engine should be ready to be started when a client requests that playback begin.
 

@@ -17,7 +17,7 @@
 - (NSDictionary<NSString *,id> *) assetReaderOutputSettingsForContentType:(CNSpatialAudioContentType) contentType;
 ```
 
-#### Discussion
+## Discussion
 
 Returns a dictionary of settings and the source track that should be used to fetch LPCM samples from this track with the effect applied
 

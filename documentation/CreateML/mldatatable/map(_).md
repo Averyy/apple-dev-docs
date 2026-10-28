@@ -26,11 +26,11 @@ func map<T>(_ lazyTransform: @escaping (MLDataTable.Row) -> T) -> MLDataColumn<T
 func map<T>(_ lazyTransform: @escaping (MLDataTable.Row) -> T?) -> MLDataColumn<T> where T : MLDataValueConvertible
 ```
 
-#### Return Value
+## Return Value
 
 A new [`MLDataColumn`](../mldatacolumn.md).
 
-#### Discussion
+## Discussion
 
 Use this method to create a new column derived from the existing data in the table. The closure you pass evaluates lazily only when the transformed values are needed for a subsequent operation. Your implementation should accept a data table row and must be thread-safe because the framework may invoke the closure concurrently on unspecified threads.
 

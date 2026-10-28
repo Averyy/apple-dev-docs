@@ -16,7 +16,7 @@ Set the tag bits for the AsynStream packets.
 void (*SetTagBits)(IOFireWireLibAsyncStreamCommandRef self, UInt16 tag);
 ```
 
-#### Discussion
+## Discussion
 
 Available in v1 and newer.
 

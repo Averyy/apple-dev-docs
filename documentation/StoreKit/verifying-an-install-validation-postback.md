@@ -5,7 +5,7 @@
 
 Ensure the validity of a postback you receive after an ad conversion by verifying its cryptographic signature.
 
-#### Overview
+## Overview
 
 Install-validation postbacks contain data that validate an ad conversion. You need to verify the postback signature to make sure it’s signed by Apple before you count the conversion. Follow these steps to validate the postback:
 
@@ -16,23 +16,23 @@ Install-validation postbacks contain data that validate an ad conversion. You ne
 5. Verify Apple’s signature.
 6. Count only unique postbacks with signatures you verify. For version 3 and later, check the `did-win` parameter to learn whether the postback represents a winning attribution.
 
-##### Receive the postback
+### Receive the postback
 
 Devices send install-validation postbacks to ad networks and developers within a defined timeframe after a user installs and launches an advertised app. Ad networks receive postbacks at the URL they provide when they register to use SKAdNetwork. Developers who opt in receive copies of winning postbacks at the URL they configure in the app’s property list key, [`NSAdvertisingAttributionReportEndpoint`](../BundleResources/information-property-list/nsadvertisingattributionreportendpoint.md). For more information about setting up your postback URL, see [Registering an ad network](./registering-an-ad-network.md) and [Configuring an advertised app](./configuring-an-advertised-app.md).
 
 For more information about the timeframe for receiving attribution, see [Receiving ad attributions and postbacks](./receiving-ad-attributions-and-postbacks.md) Starting with version 4, you may receive postbacks in three conversion windows. For more information, see [Receiving postbacks in multiple conversion windows](./receiving-postbacks-in-multiple-conversion-windows.md).
 
-##### Respond to the postback
+### Respond to the postback
 
 When you receive a postback, respond with an HTTP status code `200` OK. If the device doesn’t receive the `200` status code, it attempts to send the postback up to nine times over a maximum of 9 days.
 
-##### Check the postback version number
+### Check the postback version number
 
 Postbacks contain a `version` parameter, starting with SKAdNetwork 2. Use the version number to follow the version-specific instructions for verifying a postback signature. For a description of all the parameters in a postback, see [Identifying the parameters in install-validation postbacks](./identifying-the-parameters-in-install-validation-postbacks.md).
 
 The postback version you receive depends on the version number the ad network uses to sign the ad, the iOS version on the device, and the SDK version that the source app uses. Expect to receive the same version number in the postback as the ad network uses to sign the ad if the device runs the latest iOS version, and the source app uses the latest SDK. For more information about version dependencies, see [SKAdNetwork release notes](./skadnetwork-release-notes.md). For more information about signing, see [Signing and providing ads](./signing-and-providing-ads.md).
 
-##### Recreate the byte array from the postback parameters
+### Recreate the byte array from the postback parameters
 
 To confirm that Apple sent the postback request, you need to verify Apple’s signature in the postback’s `attribution-signature` parameter. First, decode the signature with Apple’s public key. Next, compare the decoded signature to a byte array that you recreate using the postback parameters. To create the byte array, build a UTF-8 string by combining the parameter values with invisible separators, `‘\u2063’`, in an exact version-specific order.
 
@@ -110,7 +110,7 @@ The following example is a first postback that results from a web ad, in a low p
 
 The `attribution-signature` value in both examples is a verified signature. Use the parameter values and signature in the examples to test your code. For more information about the postback data tiers and the parameters available in each tier, see [Receiving postbacks in multiple conversion windows](./receiving-postbacks-in-multiple-conversion-windows.md).
 
-##### Verify Apple’s signature
+### Verify Apple’s signature
 
 Copy Apple’s public key, below, which you need for the remaining steps. Apple’s NIST P-256 public key that you use to verify signatures for versions 2.1 and later is:
 
@@ -133,11 +133,11 @@ If your verification passes, the postback is valid.
 
 For version 3 and later, valid postbacks with a `did-win` value of `true` represent an ad attribution.
 
-##### Count unique messages only
+### Count unique messages only
 
 Use the `transaction-id` value to ensure you’re counting unique ad conversions. If you receive more than one ad-conversion message with the same `transaction-id`, discard the duplicate message.
 
-##### Receive a postback during testing
+### Receive a postback during testing
 
 In test scenarios, the postback always contains the `source-app-id` and `conversion-value` parameters with values of `0`. To trigger test scenarios, use a development-signed source app with an [`SKStoreProductParameterAdNetworkSourceAppStoreIdentifier`](./skstoreproductparameteradnetworksourceappstoreidentifier.md) value equal to `0`.
 

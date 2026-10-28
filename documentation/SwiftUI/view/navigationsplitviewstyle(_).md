@@ -26,7 +26,7 @@ func navigationSplitViewStyle<S>(_ style: S) -> some View where S : NavigationSp
 
 - [Migrating to new navigation types](../migrating-to-new-navigation-types.md)
 
-#### Return Value
+## Return Value
 
 A view that uses the specified navigation split view style.
 

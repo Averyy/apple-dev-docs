@@ -19,7 +19,7 @@ func checkText(in range: NSRange, types checkingTypes: NSTextCheckingTypes, opti
 - (void) checkTextInRange:(NSRange) range types:(NSTextCheckingTypes) checkingTypes options:(NSDictionary<NSString *,id> *) options;
 ```
 
-#### Discussion
+## Discussion
 
 This method calls the delegate method [`textView(_:willCheckTextIn:options:types:)`](../nstextviewdelegate/textview%28_,willchecktextin,options,types%29.md) allowing you to modify the parameters before the checking occurs.
 

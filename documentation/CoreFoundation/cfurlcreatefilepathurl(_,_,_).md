@@ -25,11 +25,11 @@ func CFURLCreateFilePathURL(_ allocator: CFAllocator!, _ url: CFURL!, _ error: U
 extern CFURLRefCFURLCreateFilePathURL(CFAllocatorRef allocator, CFURLRef url, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 The new file path URL, or `NULL` if an error occurs
 
-#### Discussion
+## Discussion
 
 If the original URL is a file reference URL, this function returns a copy of the URL converted to a file path URL. If the original URL is a file path URL, this function returns the original URL. If the original URL is not a file URL, or if the resource is not reachable or no longer exists, this function returns `nil`.
 

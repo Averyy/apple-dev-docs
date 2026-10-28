@@ -20,7 +20,7 @@ init(origin: simd_float3, direction: simd_float3, allowing target: ARRaycastQuer
 - (instancetype) initWithOrigin:(simd_float3) origin direction:(simd_float3) direction allowingTarget:(ARRaycastTarget) target alignment:(ARRaycastTargetAlignment) alignment;
 ```
 
-#### Discussion
+## Discussion
 
 This creates a query by supplying a 3D starting place and vector. To acquire a raycast query using a screen point and vector that points outward from the user, call [`raycastQuery(from:allowing:alignment:)`](../arscnview/raycastquery%28from,allowing,alignment%29.md) on [`ARSCNView`](../arscnview.md).
 

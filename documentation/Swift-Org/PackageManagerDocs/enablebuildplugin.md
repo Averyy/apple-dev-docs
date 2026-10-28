@@ -13,11 +13,11 @@ Extend the package manager with a build plugin from another package.
 **Availability**:
 - Swift 5.6+
 
-#### Overview
+## Overview
 
 A package plugin is available to the package that defines it, and if there is a corresponding plugin product, it is also available to any other package that has a direct dependency on the package that defines it.
 
-##### Add a dependency
+### Add a dependency
 
 To use a plugin defined in another package, add a package dependency on the package that defines the plugin. For example, to use the [swift-openapi-generator](https://github.com/apple/swift-openapi-generator), add the following dependency:
 
@@ -37,7 +37,7 @@ let package = Package(
 
 This plugin can generate models and stubs for clients and servers from an OpenAPI definition file.
 
-##### Identify the targets to enable
+### Identify the targets to enable
 
 Add the plugin to each target to which it should apply. For example, the following example enables the OpenAPI generator plugin on the executable target:
 

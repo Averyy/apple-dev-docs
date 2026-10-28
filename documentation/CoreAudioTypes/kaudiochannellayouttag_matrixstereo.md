@@ -25,7 +25,7 @@ var kAudioChannelLayoutTag_MatrixStereo: AudioChannelLayoutTag { get }
 kAudioChannelLayoutTag_MatrixStereo
 ```
 
-#### Discussion
+## Discussion
 
 Your channels must be laid out in the following order:
 

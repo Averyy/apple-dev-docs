@@ -25,7 +25,7 @@ var pixelBuffer: CVPixelBuffer? { get }
 @property (nonatomic, readonly, nullable) CVPixelBufferRef pixelBuffer;
 ```
 
-#### Discussion
+## Discussion
 
 > ⚠️ **Warning**: This buffer must not be modified by the [`CIImageProcessorKernel`](../ciimageprocessorkernel.md).
 

@@ -24,7 +24,7 @@ static let uppercaseLatin: NSTextList.MarkerFormat
 extern NSTextListMarkerFormat const NSTextListMarkerUppercaseLatin;
 ```
 
-#### Discussion
+## Discussion
 
 Uppercase Latin alphabetical markers follow the pattern A, B, C, and so on.
 

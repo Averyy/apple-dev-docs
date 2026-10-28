@@ -25,7 +25,7 @@ var timelineOccupancy: AVPlayerInterstitialEvent.TimelineOccupancy { get set }
 @property (nonatomic, readonly) AVPlayerInterstitialEventTimelineOccupancy timelineOccupancy;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`AVPlayerInterstitialEvent.TimelineOccupancy.singlePoint`](./timelineoccupancy-swift.enum/singlepoint.md).
 

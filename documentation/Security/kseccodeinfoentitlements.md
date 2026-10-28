@@ -20,7 +20,7 @@ let kSecCodeInfoEntitlements: CFString
 extern CFStringRef const kSecCodeInfoEntitlements;
 ```
 
-#### Discussion
+## Discussion
 
 The value is a [`CFData`](../CoreFoundation/cfdata.md) object.
 

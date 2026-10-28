@@ -25,7 +25,7 @@ class var main: Thread { get }
 @property (class, strong, readonly) NSThread * mainThread;
 ```
 
-#### Return Value
+## Return Value
 
 The `NSThread` object representing the main thread.
 

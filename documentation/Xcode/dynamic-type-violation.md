@@ -5,11 +5,11 @@
 
 Detects when an object has the wrong dynamic type.
 
-#### Overview
+## Overview
 
 Use this check to detect when an object has the wrong dynamic type. Dynamic type violations can cause unintended code execution. Available in Xcode 9 and later.
 
-##### Member call on instance with incorrect type in C++
+### Member call on instance with incorrect type in C++
 
 In the following code, `reinterpret_cast` creates a variable with the wrong dynamic type:
 
@@ -35,7 +35,7 @@ The method call `dog->speak()` is suspect. If the `speak` method in `Dog` is `fi
 
 > **Note**: This UBSan check requires runtime type information, and is incompatible with the `-fno-rtti` compiler flag.
 
-###### Solution
+#### Solution
 
 Use `reinterpret_cast` sparingly, and only when it’s possible to verify that the cast object is an instance of the destination type.
 

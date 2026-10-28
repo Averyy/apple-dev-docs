@@ -23,7 +23,7 @@ protocol UICollectionViewDropItem : NSObjectProtocol
 @protocol UICollectionViewDropItem <NSObject>
 ```
 
-#### Overview
+## Overview
 
 When handling a drop, you get instances of this class from the [`items`](./uicollectionviewdropcoordinator/items.md) property of the [`UICollectionViewDropCoordinator`](./uicollectionviewdropcoordinator.md) object. Use them to retrieve the data for the items being dragged and to plan any animations related to dropping the items. You do not create instances of this class yourself.
 

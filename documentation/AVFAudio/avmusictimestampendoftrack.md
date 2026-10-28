@@ -25,7 +25,7 @@ var AVMusicTimeStampEndOfTrack: Double { get }
 #define AVMusicTimeStampEndOfTrack
 ```
 
-#### Discussion
+## Discussion
 
 Pass this value as the length of an [`AVBeatRange`](./avbeatrange-c.struct.md) to indicate an end time beyond the last event in the track. This makes it possible to specify a beat range that includes all events starting at a particular time, up to and including the last event.
 

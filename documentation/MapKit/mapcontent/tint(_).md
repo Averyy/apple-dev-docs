@@ -22,7 +22,7 @@ The tint shape style to apply to map content.
 @preconcurrency func tint<S>(_ tint: S) -> some MapContent where S : ShapeStyle
 ```
 
-#### Return Value
+## Return Value
 
 Returns [`MapContent`](../mapcontent.md) with overlays drawn with the [`ShapeStyle`](../../SwiftUI/shapestyle.md) you specified.
 

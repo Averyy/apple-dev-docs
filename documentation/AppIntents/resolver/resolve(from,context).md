@@ -22,7 +22,7 @@ Converts the specified value into the expected data type.
 func resolve(from input: Self.Input, context: IntentParameterContext<Self.Output>) async throws -> Self.Output?
 ```
 
-#### Return Value
+## Return Value
 
 The converted value, or `nil` if conversion fails.
 

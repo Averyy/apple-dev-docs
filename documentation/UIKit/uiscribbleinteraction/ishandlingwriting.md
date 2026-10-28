@@ -21,7 +21,7 @@ var isHandlingWriting: Bool { get }
 @property (nonatomic, readonly, getter=isHandlingWriting) BOOL handlingWriting;
 ```
 
-#### Discussion
+## Discussion
 
 This property is [`true`](../../Swift/true.md) in between calls to [`scribbleInteractionWillBeginWriting(_:)`](../uiscribbleinteractiondelegate/scribbleinteractionwillbeginwriting%28_%29.md) and [`scribbleInteractionDidFinishWriting(_:)`](../uiscribbleinteractiondelegate/scribbleinteractiondidfinishwriting%28_%29.md) when the user is writing.
 

@@ -15,11 +15,11 @@ Allows you to test the session for an open OBEX connection for a particular sess
 OBEXError OBEXSessionHasOpenOBEXConnection(OBEXSessionRef inSessionRef, Boolean *outIsConnected);
 ```
 
-#### Return Value
+## Return Value
 
 An error code value. 0 if successful.
 
-#### Discussion
+## Discussion
 
 This method will return true only if (a) you are transport-connected to another OBEX target and (b) an OBEX Connect command has been issued and received successfully.
 

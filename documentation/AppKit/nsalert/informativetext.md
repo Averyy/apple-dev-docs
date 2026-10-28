@@ -19,7 +19,7 @@ var informativeText: String { get set }
 @property (copy) NSString * informativeText;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property must not be `nil`.
 

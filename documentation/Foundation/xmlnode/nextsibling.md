@@ -21,7 +21,7 @@ var nextSibling: XMLNode? { get }
 @property (copy, readonly, nullable) NSXMLNode * nextSibling;
 ```
 
-#### Discussion
+## Discussion
 
 This object will have an [`index`](./index.md) value that is one more than the receiver’s. If there are no more subsequent siblings (that is, other child nodes of the receiver’s parent) the method returns `nil`.
 

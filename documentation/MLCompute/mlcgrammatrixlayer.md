@@ -23,7 +23,7 @@ class MLCGramMatrixLayer
 @interface MLCGramMatrixLayer : MLCLayer
 ```
 
-#### Overview
+## Overview
 
 For example, if the input tensor batch function is:
 

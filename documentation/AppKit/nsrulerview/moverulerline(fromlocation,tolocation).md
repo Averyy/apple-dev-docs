@@ -19,7 +19,7 @@ func moveRulerline(fromLocation oldLocation: CGFloat, toLocation newLocation: CG
 - (void) moveRulerlineFromLocation:(CGFloat) oldLocation toLocation:(CGFloat) newLocation;
 ```
 
-#### Discussion
+## Discussion
 
 If `oldLoc` is 0 or greater, erases the ruler line at that location; if `newLoc` is 0 or greater, draws a new rulerline at that location. `oldLoc` and `newLoc` are expressed in the coordinate system of the NSRulerView, not the client or document view, and are x coordinates for horizontal rulers and y coordinates for vertical rulers. Use NSView’s `convert...` methods to convert coordinates from the client or document view’s coordinate system to that of the NSRulerView.
 

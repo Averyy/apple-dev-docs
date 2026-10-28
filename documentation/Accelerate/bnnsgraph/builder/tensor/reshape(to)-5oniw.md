@@ -23,7 +23,7 @@ func reshape(to shape: some BNNSGraph.Builder.OperationParameter<Int32>) -> BNNS
 
 Available when `T` conforms to `BNNSScalar`.
 
-#### Discussion
+## Discussion
 
 This function reshapes a tensor based on the values in `shape`.
 

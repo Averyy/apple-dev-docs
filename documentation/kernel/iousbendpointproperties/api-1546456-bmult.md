@@ -15,7 +15,7 @@ The mult value for isochronous endpoints.
 UInt8 bMult;
 ```
 
-#### Discussion
+## Discussion
 
 For SuperSpeed isochronous endpoints, this is the mult value from the SuperSpeed endpoint companion descriptor. For high-speed isochronous and interrupt endpoints, this is bits 11 and 12 of the standard endpoint descriptor.
 

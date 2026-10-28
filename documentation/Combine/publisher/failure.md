@@ -26,7 +26,7 @@ associatedtype Failure : Error
 
 - [Receiving and Handling Events with Combine](../receiving-and-handling-events-with-combine.md)
 
-#### Discussion
+## Discussion
 
 Use `Never` if this `Publisher` does not publish errors.
 

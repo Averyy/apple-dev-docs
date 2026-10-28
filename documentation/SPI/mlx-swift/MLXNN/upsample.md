@@ -17,7 +17,7 @@ Upsample the input signal spatially.
 class Upsample
 ```
 
-#### Overview
+## Overview
 
 See [`init(scaleFactor:mode:)`](./upsample/init%28scalefactor,mode%29.md) for more information.
 

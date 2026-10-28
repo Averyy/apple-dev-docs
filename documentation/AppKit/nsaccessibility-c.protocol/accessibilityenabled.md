@@ -15,7 +15,7 @@ A Boolean value that determines whether the accessibility element responds to us
 @property (getter=isAccessibilityEnabled) BOOL accessibilityEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 Returns YES if the element is enabled; otherwise, NO. Enabled elements respond to user events.
 

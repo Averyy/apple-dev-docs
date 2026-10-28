@@ -21,7 +21,7 @@ Returns the vector that results from unapplying an affine transform to the vecto
 func unapplying(_ transform: AffineTransform3D) -> Vector3D
 ```
 
-#### Discussion
+## Discussion
 
 - Returns The transformed primitive.
 

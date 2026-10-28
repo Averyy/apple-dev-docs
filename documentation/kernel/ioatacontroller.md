@@ -15,7 +15,7 @@ The base class for ata controller family. Provides the interface common to all a
 class IOATAController : IOService
 ```
 
-#### Overview
+## Overview
 
 The header doc for this class is incomplete. The source however is heavily commented and should be consulted until such time as complete header doc is available.
 

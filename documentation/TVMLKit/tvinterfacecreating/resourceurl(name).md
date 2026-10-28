@@ -21,11 +21,11 @@ optional func resourceURL(name resourceName: String) -> URL?
 - (NSURL *) URLForResource:(NSString *) resourceName;
 ```
 
-#### Return Value
+## Return Value
 
 The URL associated with the resource name. The app must return `nil` if the event is not handled.
 
-#### Discussion
+## Discussion
 
 The `resourceName` parameter comes from a resource URL specified in certain elements. For example, `badge src="resource://developer-resource">` contains the resource name, `developer-resource`.
 

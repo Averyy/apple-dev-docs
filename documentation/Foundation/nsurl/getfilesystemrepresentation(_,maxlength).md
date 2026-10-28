@@ -25,11 +25,11 @@ func getFileSystemRepresentation(_ buffer: UnsafeMutablePointer<CChar>, maxLengt
 - (BOOL) getFileSystemRepresentation:(char *) buffer maxLength:(NSUInteger) maxBufferLength;
 ```
 
-#### Return Value
+## Return Value
 
 Returns [`true`](../../Swift/true.md) if the URL could be converted into a file system representation, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 The file system representation format is described in File Encodings and Fonts.
 

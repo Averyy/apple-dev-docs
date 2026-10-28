@@ -22,7 +22,7 @@ class var appleITTBottom: AVCaptionRegion { get }
 @property (class, readonly) AVCaptionRegion * appleITTBottomRegion;
 ```
 
-#### Discussion
+## Discussion
 
 This region occupies the bottom 15% of the display area, and it uses a LRTB layout where a line progresses from left to right and the block extends from top to bottom. Lines are bottom justified.
 

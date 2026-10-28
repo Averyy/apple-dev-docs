@@ -16,11 +16,11 @@
 static OSSerializationPtr createFromBytes(const void *bytes, size_t length, OSSerializationFreeBufferHandler freeBuffer, OSSerializationPortCopyInHandler copyInHandler);
 ```
 
-#### Return Value
+## Return Value
 
 NULL on failure, otherwise the allocated OSSerialization with reference count 1 to be released by the caller.
 
-#### Discussion
+## Discussion
 
 Allocates an OSSerialization object from the serialized data of a previous serialization.
 

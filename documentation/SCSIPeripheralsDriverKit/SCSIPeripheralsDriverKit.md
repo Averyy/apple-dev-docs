@@ -9,11 +9,11 @@ Develop drivers for peripherals that use SCSI Block Command and Multimedia Comma
 **Availability**:
 - DriverKit 22.0+
 
-#### Overview
+## Overview
 
 The SCSIPeripheralsDriverKit framework supports the development of drivers for external devices that communicate using SCSI protocols. This framework operates at the logical unit level. For block-level driver development, use [BlockStorageDeviceDriverKit](../BlockStorageDeviceDriverKit/BlockStorageDeviceDriverKit.md). For protocol-level driver development, use [SCSIControllerDriverKit](../SCSIControllerDriverKit/SCSIControllerDriverKit.md).
 
-##### Creating a driver
+### Creating a driver
 
 SCSIPeripheralsDriverKit supports three types of peripherals defined by the SCSI specifications:
 

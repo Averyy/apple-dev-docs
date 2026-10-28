@@ -24,7 +24,7 @@ let HMCharacteristicTypeCurrentFanState: String
 extern NSString * const HMCharacteristicTypeCurrentFanState;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is one of the constants in the [`HMCharacteristicValueCurrentFanState`](./hmcharacteristicvaluecurrentfanstate.md) enumeration.
 

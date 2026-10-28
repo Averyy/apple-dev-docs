@@ -25,7 +25,7 @@ class NSCompositeAttributeDescription
 @interface NSCompositeAttributeDescription : NSAttributeDescription
 ```
 
-#### Overview
+## Overview
 
 Composite attributes enable you to define and store complex data types, and then query, index, and apply constraints to those types. Model classes use dictionaries to represent those composites in-memory, where each dictionary contains keys corresponding to the names of the underlying attributes. You may use composite attributes anywhere you use standard attributes, including lightweight migrations and CloudKit, through [`NSPersistentCloudKitContainer`](./nspersistentcloudkitcontainer.md). You can even nest composites inside other composites to create complex object hierarchies without additional model classes.
 

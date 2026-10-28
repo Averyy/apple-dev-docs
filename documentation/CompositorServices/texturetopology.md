@@ -16,7 +16,7 @@ A type that specifies the organization of one of the drawable’s textures.
 struct TextureTopology
 ```
 
-#### Overview
+## Overview
 
 Metal supports multiple organizations for the textures you use for drawing. Use this type to identify one of the organizations available to use in your app.
 

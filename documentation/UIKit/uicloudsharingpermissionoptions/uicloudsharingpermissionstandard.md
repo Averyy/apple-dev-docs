@@ -18,7 +18,7 @@ The option that makes all user options available.
 UICloudSharingPermissionStandard
 ```
 
-#### Discussion
+## Discussion
 
 To tell the [`UICloudSharingController`](../uicloudsharingcontroller.md) instance to display all user options, set its [`availablePermissions`](../uicloudsharingcontroller/availablepermissions.md) property to [`UICloudSharingPermissionStandard`](./uicloudsharingpermissionstandard.md).
 

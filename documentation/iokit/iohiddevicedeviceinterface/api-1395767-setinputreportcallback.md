@@ -16,11 +16,11 @@ Sets the input report callback to be used when data is received from the Input p
 IOReturn (*setInputReportCallback)(void *self, uint8_t *report, CFIndex reportLength, IOHIDReportCallback callback, void *context, IOOptionBits options);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if successful or a kern_return_t if unsuccessful.
 
-#### Discussion
+## Discussion
 
 In order to function properly, the event source obtained using getAsyncEventSource must be added to a run loop.
 

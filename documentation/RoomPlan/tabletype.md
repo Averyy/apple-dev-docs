@@ -17,7 +17,7 @@ Types of table the framework identifies in a captured room.
 enum TableType
 ```
 
-#### Overview
+## Overview
 
 When the framework observes a table in the physical environment during a scan, it chooses a type among these options that best matches the table’s look. The framework adds that instance of this enum to the [`attributes`](./capturedroom/object/attributes.md) array for the object (see [`objects`](./capturedroom/objects.md)) that represents the table in the captured room.
 

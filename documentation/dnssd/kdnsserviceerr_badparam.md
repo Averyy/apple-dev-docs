@@ -23,7 +23,7 @@ var kDNSServiceErr_BadParam: Int { get }
 kDNSServiceErr_BadParam
 ```
 
-#### Discussion
+## Discussion
 
 Bad parameter value passed to function.
 

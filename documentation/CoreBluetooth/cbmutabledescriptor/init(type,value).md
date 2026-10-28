@@ -22,11 +22,11 @@ init(type UUID: CBUUID, value: Any?)
 - (instancetype) initWithType:(CBUUID *) UUID value:(id) value;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized mutable descriptor.
 
-#### Discussion
+## Discussion
 
 The value type of `value` depends on the type of descriptor:
 

@@ -5,7 +5,7 @@
 
 Learn how to affect the way in which components come into view.
 
-#### Overview
+## Overview
 
 An animation is an effect, such as a fade-in, that’s applied to an individual component. Apple News Format has these animations for components:
 

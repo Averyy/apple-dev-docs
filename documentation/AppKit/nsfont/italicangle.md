@@ -19,7 +19,7 @@ var italicAngle: CGFloat { get }
 @property (readonly) CGFloat italicAngle;
 ```
 
-#### Discussion
+## Discussion
 
 The italic angle value is read from the font’s AFM file. Because the slant is measured counterclockwise, English italic fonts typically return a negative value.
 

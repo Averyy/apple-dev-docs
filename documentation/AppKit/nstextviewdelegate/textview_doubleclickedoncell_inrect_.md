@@ -17,7 +17,7 @@ Sent when the user double-clicks a cell.
 - (void) textView:(NSTextView *) textView doubleClickedOnCell:(id<NSTextAttachmentCell>) cell inRect:(NSRect) cellFrame;
 ```
 
-#### Discussion
+## Discussion
 
 This message is only sent if [`textView(_:doubleClickedOn:in:at:)`](./textview%28_,doubleclickedon,in,at%29.md) is not implemented. Implement this method in order to track the mouse after a mouse double-click on a cell.
 

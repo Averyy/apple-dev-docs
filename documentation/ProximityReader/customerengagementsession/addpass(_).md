@@ -21,11 +21,11 @@ final func addPass(_ pass: Data) async throws -> Bool
 
 - [Adding support for Tap to Share to your app](../adding-support-for-tap-to-share-to-your-app.md)
 
-#### Return Value
+## Return Value
 
 `true` if the pass is added to Wallet successfully or the same pass already exists; `false` if the customer declines.
 
-#### Discussion
+## Discussion
 
 > **Throws**: [`CustomerEngagementSession.Error`](./error.md) if the request fails.
 

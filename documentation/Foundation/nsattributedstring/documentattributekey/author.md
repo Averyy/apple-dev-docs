@@ -15,7 +15,7 @@ The author of the document.
 static let author: NSAttributedString.DocumentAttributeKey
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSString`](../../nsstring.md) object containing author name.
 

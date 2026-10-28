@@ -23,7 +23,7 @@ func setPositionAdjustment(_ adjustment: UIOffset, for icon: UISearchBar.Icon)
 - (void) setPositionAdjustment:(UIOffset) adjustment forSearchBarIcon:(UISearchBarIcon) icon;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to adjust the position of an icon within the search text field.
 

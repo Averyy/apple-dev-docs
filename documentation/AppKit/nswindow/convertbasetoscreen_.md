@@ -17,7 +17,7 @@ Converts a given point from the window’s base coordinate system to the screen 
 - (NSPoint) convertBaseToScreen:(NSPoint) point;
 ```
 
-#### Return Value
+## Return Value
 
 `point` expressed in screen coordinates.
 

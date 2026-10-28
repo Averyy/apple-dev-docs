@@ -9,11 +9,11 @@ Get details and download information for a specific analytics report segment.
 **Availability**:
 - App Store Connect API 3.4+
 
-#### Discussion
+## Discussion
 
 To learn more about interpreting the data using the glossary of report fields and definitions, see [Analytics Reports](../analytics-reports/analytics-reports.md).
 
-##### Examples Request and Response
+### Examples Request and Response
 
 **Request**:
 

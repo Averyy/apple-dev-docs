@@ -24,11 +24,11 @@ class var screens: [UIScreen] { get }
 @property (class, nonatomic, readonly) NSArray<UIScreen *> * screens;
 ```
 
-#### Return Value
+## Return Value
 
 An array of `UIScreen` objects.
 
-#### Discussion
+## Discussion
 
 The returned array includes the main screen plus any additional screens connected to the device. The main screen is always at index `0`.
 

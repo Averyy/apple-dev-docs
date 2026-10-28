@@ -33,7 +33,7 @@ func declineInvite() async throws
 
 - [Starting turn-based matches and passing turns between players](../starting-turn-based-matches-and-passing-turns-between-players.md)
 
-#### Discussion
+## Discussion
 
 When you provide a custom interface for managing matches, use this method to programmatically decline an invitation on behalf of the local player.
 

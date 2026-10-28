@@ -25,11 +25,11 @@ func appending<S>(path: S, directoryHint: URL.DirectoryHint = .inferFromPath) ->
 
 - [Improving performance and stability when accessing the file system](../improving-performance-and-stability-when-accessing-the-file-system.md)
 
-#### Return Value
+## Return Value
 
 A new URL that appends the specified path to the original URL.
 
-#### Discussion
+## Discussion
 
 This method doesn’t percent-encode any path separators (`/`) in the path component before appending the component to the path. If you want this encoding, use [`appending(component:directoryHint:)`](./appending%28component,directoryhint%29.md) instead.
 

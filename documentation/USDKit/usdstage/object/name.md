@@ -20,7 +20,7 @@ The name of this scene graph object.
 var name: USDToken { get }
 ```
 
-#### Discussion
+## Discussion
 
 An object’s name is the last component of its [`path`](./path.md). This property is equivalent to the `USDLayer.Path/name` property of that path.
 

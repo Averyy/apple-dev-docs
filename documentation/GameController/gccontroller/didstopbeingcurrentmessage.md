@@ -20,7 +20,7 @@ A message that posts after a game controller stops being the most recently used 
 struct DidStopBeingCurrentMessage
 ```
 
-#### Overview
+## Overview
 
 Use the `.didStopBeingCurrent` identifier with `NotificationCenter` to listen for this message.
 

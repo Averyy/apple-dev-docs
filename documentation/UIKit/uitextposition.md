@@ -24,7 +24,7 @@ class UITextPosition
 @interface UITextPosition : NSObject
 ```
 
-#### Overview
+## Overview
 
 Classes that adopt the [`UITextInput`](./uitextinput.md) protocol must create custom [`UITextPosition`](./uitextposition.md) objects for representing specific locations within the text managed by the class. The text input system uses both these objects and [`UITextRange`](./uitextrange.md) objects for communicating text-layout information. There are two reasons for using objects for text positions rather than primitive types such as [`NSInteger`](../ObjectiveC/nsinteger.md):
 

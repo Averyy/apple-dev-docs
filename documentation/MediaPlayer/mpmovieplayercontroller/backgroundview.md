@@ -23,7 +23,7 @@ var backgroundView: UIView! { get }
 @property (nonatomic, readonly) UIView * backgroundView;
 ```
 
-#### Discussion
+## Discussion
 
 This view provides the backing content, on top of which the movie content is displayed. You can add subviews to the background view if you want to display custom background content.
 

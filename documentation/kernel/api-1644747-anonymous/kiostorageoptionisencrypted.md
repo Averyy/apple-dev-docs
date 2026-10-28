@@ -13,7 +13,7 @@
 kIOStorageOptionIsEncrypted = 0x0010
 ```
 
-#### Discussion
+## Discussion
 
 The data is already encrypted.
 

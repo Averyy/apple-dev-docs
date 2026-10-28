@@ -25,13 +25,13 @@ func setPrimitiveValue(_ value: Any?, forKey key: String)
 - (void) setPrimitiveValue:(id) value forKey:(NSString *) key;
 ```
 
-#### Discussion
+## Discussion
 
 Sets in the receiver’s private internal storage the value of the property specified by `key` to `value`. If `key` identifies a to-one relationship, relates the object specified by `value` to the receiver, unrelating the previously related object if there was one. Given a collection object and a key that identifies a to-many relationship, relates the objects contained in the collection to the receiver, unrelating previously related objects if there were any.
 
 This method does not invoke the change notification methods ([`willChangeValue(forKey:)`](../../ObjectiveC/nsobject-swift.class/willchangevalue%28forkey%29.md) and [`didChangeValue(forKey:)`](../../ObjectiveC/nsobject-swift.class/didchangevalue%28forkey%29.md)). It is typically used by subclasses that implement custom accessor methods that need direct access to the receiver’s private internal storage. It is also used by the Core Data framework to initialize the receiver with values from a persistent store or to restore a value from a snapshot.
 
-##### Special Considerations
+### Special Considerations
 
 You must not override this method.
 

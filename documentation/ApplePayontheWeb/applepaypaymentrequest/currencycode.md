@@ -16,7 +16,7 @@ The three-letter ISO 4217 currency code for the payment.
 required DOMString currencyCode;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to the three-letter code for the currency used by this payment request. Apple Pay interprets the amounts provided in the summary items of this request as amounts in this currency.
 

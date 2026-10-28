@@ -25,7 +25,7 @@ var showsPointsOfInterest: Bool { get set }
 @property (nonatomic) BOOL showsPointsOfInterest;
 ```
 
-#### Discussion
+## Discussion
 
 When this property is set to [`true`](../../../Swift/true.md), the map displays icons and labels for restaurants, schools, and other relevant points of interest. The default value of this property is [`true`](../../../Swift/true.md).
 

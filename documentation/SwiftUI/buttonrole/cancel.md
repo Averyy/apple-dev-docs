@@ -21,7 +21,7 @@ A role that indicates a button that cancels an operation.
 static let cancel: ButtonRole
 ```
 
-#### Discussion
+## Discussion
 
 Use this role for a button that cancels the current operation. Unlike confirmation, a cancel action implies progress will be lost by performing the operation.
 

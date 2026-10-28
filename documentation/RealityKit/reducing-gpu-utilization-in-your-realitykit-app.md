@@ -5,11 +5,11 @@
 
 Prevent the GPU from limiting your app’s frame rate by reducing the complexity of your render.
 
-#### Overview
+## Overview
 
 When you use RealityKit, the framework manages GPU access for you. However, your design decisions affect whether your app tries to use more than the available GPU capacity. If you find that your app is GPU limited, as described in [Improving the Performance of a RealityKit App](./improving-the-performance-of-a-realitykit-app.md), consider ways to simplify your app’s content, simplify the render, or both.
 
-##### Avoid unnecessarily complex textures
+### Avoid unnecessarily complex textures
 
 RealityKit helps you get the most out of textures. For example, the framework automatically generates and uses *mipmaps*, which are a series of progressively lower resolution variants of your texture that improve render times when applied to distant objects.
 
@@ -31,13 +31,13 @@ The `channels` parameter indicates the number of color channels in the texture. 
 
 For example, a texture describing a base color with four channels — one for each of red, green, blue, and alpha — stored in a usdz file as a PNG with dimensions of 2048 px × 2048 px consumes a little more than 22 MB.
 
-##### Maintain a modest polygon count
+### Maintain a modest polygon count
 
 One way to reduce the complexity of the render is to selectively reduce the polygon count of your models. Reserve high complexity for the models, or parts of models, that the user is likely to examine most closely. Reduce the complexity of background models, or regions of lesser importance.
 
 A reduced polygon count can be especially helpful if you have a lot of shadows in the scene.
 
-##### Choose render effects carefully
+### Choose render effects carefully
 
 Polygon count doesn’t affect the time needed for effects like depth of field or motion blur. Nevertheless, these effects do consume GPU time. So carefully select which effects to include by balancing your app’s visual appearance requirements against its performance constraints.
 
@@ -55,13 +55,13 @@ When you initialize a view, the system automatically inserts options to disable 
 
 Experiment to figure out which combination of effects produces the best result. Be aware that disabling some of these effects can also benefit CPU utilization, specifically render thread time.  For the complete list of effects that you can control, see [`ARView.RenderOptions`](./arview/renderoptions-swift.struct.md).
 
-##### Keep transparency and shadows to a minimum
+### Keep transparency and shadows to a minimum
 
 Be careful to avoid one or more layers of transparent material appearing atop other rendered materials. This causes the fragment shader to run on the affected pixels once for each rendered layer. This is a particular problem when objects appear large in the display, affecting many pixels.
 
 Likewise, the more lights and shadows you have in your scene, the more work the fragment shader does. Look for ways to reduce the number of distinct lights.
 
-##### Simplify skeletal animations
+### Simplify skeletal animations
 
 Both skeletal animations and joint transforms result in deformer work, which runs on the GPU. This work can be very costly. Look for ways to minimize the number of joints, and the overall complexity of the animation.
 

@@ -19,7 +19,7 @@ var backgroundColors: [NSColor]! { get set }
 @property (copy, null_resettable) NSArray<NSColor *> * backgroundColors;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains an array of [`NSColor`](../nscolor.md) objects, representing the colors to use when drawing the background grid. Specifying an empty array or `nil` causes the collection view to use the default colors returned by the [`controlAlternatingRowBackgroundColors`](../nscolor/controlalternatingrowbackgroundcolors.md) method.
 

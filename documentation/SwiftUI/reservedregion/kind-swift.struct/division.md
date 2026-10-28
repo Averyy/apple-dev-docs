@@ -21,7 +21,7 @@ A region that splits your view into separate parts.
 static var division: ReservedRegion.Kind { get }
 ```
 
-#### Discussion
+## Discussion
 
 A division region is an area, such as the fold of iPhone Duo, that splits your view. Place your content on both sides of the region instead of across it.
 

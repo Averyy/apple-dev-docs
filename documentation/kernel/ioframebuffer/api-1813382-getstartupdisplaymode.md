@@ -13,11 +13,11 @@ virtual IOReturn getStartupDisplayMode(
  IOIndex *depth );
 ```
 
-#### Return Value
+## Return Value
 
 an IOReturn code.
 
-#### Overview
+## Overview
 
 IOFramebuffer subclasses should implement this method to return the current mode and depth.
 

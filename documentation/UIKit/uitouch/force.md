@@ -23,7 +23,7 @@ var force: CGFloat { get }
 @property (nonatomic, readonly) CGFloat force;
 ```
 
-#### Discussion
+## Discussion
 
 This property is available on devices that support 3D Touch or Apple Pencil. To check at runtime if a device supports 3D Touch, read the value of the [`forceTouchCapability`](../uitraitcollection/forcetouchcapability.md) property on the trait collection for any object in your app with a trait environment.
 

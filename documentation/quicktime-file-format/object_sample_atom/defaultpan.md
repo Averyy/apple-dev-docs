@@ -6,7 +6,7 @@
 
 The default pan angle, in degrees.
 
-#### Overview
+## Overview
 
 This is the pan angle used when the object is first displayed. The value of this field must be greater than or equal to the value of the `minPan` field and less than or equal to the value of the `maxPan` field.
 

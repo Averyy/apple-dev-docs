@@ -21,7 +21,7 @@ The custom year format style showing the minimum number of digits that represent
 static var defaultDigits: Date.FormatStyle.Symbol.Year { get }
 ```
 
-#### Discussion
+## Discussion
 
 This style represents years like `1`, `18`, `202`, and `2020`.
 

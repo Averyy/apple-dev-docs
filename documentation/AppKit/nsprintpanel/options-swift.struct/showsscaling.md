@@ -19,7 +19,7 @@ static var showsScaling: NSPrintPanel.Options { get }
 NSPrintPanelShowsScaling
 ```
 
-#### Discussion
+## Discussion
 
 This control is separate from any accessory views.
 

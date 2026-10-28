@@ -23,7 +23,7 @@ optional func handle(_ intent: INIntent) async -> INIntentResponse
 - (void) handleIntent:(INIntent *) intent completionHandler:(void (^)(INIntentResponse *intentResponse)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The system calls this method when it receives a Siri intent. Implement a method that handles the incoming intent, and then call the completion handler as quickly as possible.
 

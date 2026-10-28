@@ -24,11 +24,11 @@ func value(at position: vector_int2) -> Float
 - (float) valueAtPosition:(vector_int2) position;
 ```
 
-#### Return Value
+## Return Value
 
 The value at the specified position.
 
-#### Discussion
+## Discussion
 
 When you create a noise map from a [`GKNoise`](../gknoise.md) object, GameplayKit performs the noise generation and processing computations necessary to fill a discrete grid with noise samples. (You specify the size of the grid and its number of samples in the [`init(_:size:origin:sampleCount:seamless:)`](./init%28_,size,origin,samplecount,seamless%29.md) initializer.) Use this method to get sample values from that grid.
 

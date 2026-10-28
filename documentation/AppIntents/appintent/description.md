@@ -26,7 +26,7 @@ static var description: IntentDescription? { get }
 
 - [Creating your first app intent](../creating-your-first-app-intent.md)
 
-#### Discussion
+## Discussion
 
 If the app intent conforms to a schema, the schema provides a default implementation and value. If you implement this property, the system uses your custom value instead of the default value.
 

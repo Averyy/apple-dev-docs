@@ -23,7 +23,7 @@ var isActivated: Bool { get set }
 @property (nonatomic, assign, readwrite, getter=isActivated) BOOL activated;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to [`true`](../../Swift/true.md) when you want the system to display the selection UI. Set the property to [`false`](../../Swift/false.md) to hide the selection UI again.
 

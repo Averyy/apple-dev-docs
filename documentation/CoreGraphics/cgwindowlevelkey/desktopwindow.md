@@ -18,7 +18,7 @@ case desktopWindow
 kCGDesktopWindowLevelKey
 ```
 
-#### Discussion
+## Discussion
 
 The level for the desktop.
 

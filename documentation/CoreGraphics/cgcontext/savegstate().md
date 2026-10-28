@@ -25,7 +25,7 @@ func saveGState()
 extern void CGContextSaveGState(CGContextRef c);
 ```
 
-#### Discussion
+## Discussion
 
 Each graphics context maintains a stack of graphics states. Note that not all aspects of the current drawing environment are elements of the graphics state. For example, the current path is not considered part of the graphics state and is therefore not saved when you call this function. The graphics state parameters that *are* saved are:
 

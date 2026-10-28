@@ -22,7 +22,7 @@ Current model context `Query` interacts with.
 @preconcurrency var modelContext: ModelContext { get }
 ```
 
-#### Discussion
+## Discussion
 
 Access this value from `Query` property wrapper’s stored property:
 

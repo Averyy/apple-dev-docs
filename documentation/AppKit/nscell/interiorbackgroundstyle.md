@@ -19,7 +19,7 @@ var interiorBackgroundStyle: NSView.BackgroundStyle { get }
 @property (readonly) NSBackgroundStyle interiorBackgroundStyle;
 ```
 
-#### Discussion
+## Discussion
 
 The interior background style describes the surface drawn onto in the [`drawInterior(withFrame:in:)`](./drawinterior%28withframe,in%29.md) method. This is often the same as the [`backgroundStyle`](./backgroundstyle.md), but a button that draws a bezel would use a different value for this property.
 

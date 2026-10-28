@@ -19,7 +19,7 @@ static let builtInOuterUltraWideCamera: AVCaptureDevice.DeviceType
 extern AVCaptureDeviceType const AVCaptureDeviceTypeBuiltInOuterUltraWideCamera;
 ```
 
-#### Discussion
+## Discussion
 
 A built-in outer ultra wide camera device. Note that devices of this type may only be discovered using an AVCaptureDeviceDiscoverySession.
 

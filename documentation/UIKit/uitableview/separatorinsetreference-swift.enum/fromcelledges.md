@@ -23,7 +23,7 @@ case fromCellEdges
 UITableViewSeparatorInsetFromCellEdges
 ```
 
-#### Discussion
+## Discussion
 
 When this style is active, setting the left and right insets to `0.0` would result in a separator to extend from the entire distance between the left and right edges of the cell. Setting the insets to other values would inset the separator by the specified amount.
 

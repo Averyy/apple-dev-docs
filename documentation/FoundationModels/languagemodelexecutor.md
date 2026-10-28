@@ -20,7 +20,7 @@ A protocol that defines the interface for responding to session requests.
 protocol LanguageModelExecutor : Sendable
 ```
 
-#### Overview
+## Overview
 
 An executor is the bridge between the framework types and the system that actually generates the tokens, like a server API or a local inference engine. A [`LanguageModel`](./languagemodel.md) pairs with exactly one executor type and the framework instantiates the executor from the [`Configuration`](./languagemodelexecutor/configuration.md) the model provides.
 

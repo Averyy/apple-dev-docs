@@ -18,7 +18,7 @@ Returns the operation if it propagates the deletion of an item.
 - (id<NSFileProviderTestingDeletion>) asDeletion;
 ```
 
-#### Discussion
+## Discussion
 
 If the operation doesn’t conform to the [`NSFileProviderTestingDeletion`](../nsfileprovidertestingdeletion.md) protocol, this method returns `nil`.
 

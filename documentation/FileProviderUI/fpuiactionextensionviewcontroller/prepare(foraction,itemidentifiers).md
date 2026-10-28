@@ -27,7 +27,7 @@ func prepare(forAction actionIdentifier: String, itemIdentifiers: [NSFileProvide
 
 - [Adding Actions to the Context Menu](../adding-actions-to-the-context-menu.md)
 
-#### Discussion
+## Discussion
 
 Use this method to prepare a user interface for handling the action. At a minimum, you should display feedback about the action.
 

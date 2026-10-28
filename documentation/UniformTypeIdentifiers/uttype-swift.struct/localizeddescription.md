@@ -21,7 +21,7 @@ A localized description of the type.
 var localizedDescription: String? { get }
 ```
 
-#### Discussion
+## Discussion
 
 If the type doesn’t provide a description, the system searches its supertypes. A dynamic type doesn’t have localized description, even if its supertypes do.
 

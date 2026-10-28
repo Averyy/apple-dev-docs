@@ -22,7 +22,7 @@ class func canAddPasses() -> Bool
 + (BOOL) canAddPasses;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the device supports adding passes; otherwise, [`false`](../../Swift/false.md).
 

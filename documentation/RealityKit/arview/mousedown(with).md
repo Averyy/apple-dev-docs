@@ -16,7 +16,7 @@ Informs the view that the user has pressed the left mouse button.
 @preconcurrency override dynamic func mouseDown(with event: NSEvent)
 ```
 
-#### Discussion
+## Discussion
 
 The view handles the event instead of passing it to the next responder. See [`NSResponder`](../../AppKit/nsresponder.md) for more information about the responder chain.
 

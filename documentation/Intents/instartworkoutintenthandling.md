@@ -23,7 +23,7 @@ protocol INStartWorkoutIntentHandling : NSObjectProtocol
 @protocol INStartWorkoutIntentHandling <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Use the methods of the [`INStartWorkoutIntentHandling`](./instartworkoutintenthandling.md) protocol to resolve, confirm, and handle requests to start a workout using your app. Adopt this protocol in an object of your Intents extension capable of validating the workout name or goals.
 

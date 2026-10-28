@@ -15,7 +15,7 @@ Returns the floating-point value associated with the specified key.
 - (float) floatForKey:(NSString *) key inTable:(NSString *) table;
 ```
 
-#### Return Value
+## Return Value
 
 The floating-point value. Returns `0.0` if the key is not in the table or the receiver lacks a PPD file.
 

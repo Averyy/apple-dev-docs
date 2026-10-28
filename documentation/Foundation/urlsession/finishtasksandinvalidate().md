@@ -25,7 +25,7 @@ func finishTasksAndInvalidate()
 - (void) finishTasksAndInvalidate;
 ```
 
-#### Discussion
+## Discussion
 
 This method returns immediately without waiting for tasks to finish. Once a session is invalidated, new tasks cannot be created in the session, but existing tasks continue until completion. After the last task finishes and the session makes the last delegate call related to those tasks, the session calls the [`urlSession(_:didBecomeInvalidWithError:)`](../urlsessiondelegate/urlsession%28_,didbecomeinvalidwitherror%29.md) method on its delegate, then breaks references to the delegate and callback objects. After invalidation, session objects cannot be reused.
 

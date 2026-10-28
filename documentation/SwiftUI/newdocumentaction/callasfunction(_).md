@@ -28,7 +28,7 @@ Presents a new document window.
 @preconcurrency func callAsFunction<D>(_ newDocument: @escaping @Sendable () -> D) where D : ReferenceFileDocument
 ```
 
-#### Discussion
+## Discussion
 
 Don’t call this method directly. SwiftUI calls it when you call the [`newDocument`](../environmentvalues/newdocument.md) action:
 

@@ -24,11 +24,11 @@ class func categoryType(forIdentifier identifier: HKCategoryTypeIdentifier) -> H
 + (HKCategoryType *) categoryTypeForIdentifier:(HKCategoryTypeIdentifier) identifier;
 ```
 
-#### Return Value
+## Return Value
 
 The shared `HKCategoryType` instance based on the provided identifier.
 
-#### Discussion
+## Discussion
 
 This method returns an instance of the [`HKCategoryType`](../hkcategorytype.md) concrete subclass. HealthKit uses category types to represent data that can be categorized into an enumeration of values. Use category type instances to create category samples that you can then save in the HealthKit store. For more information, see [`HKCategorySample`](../hkcategorysample.md).
 

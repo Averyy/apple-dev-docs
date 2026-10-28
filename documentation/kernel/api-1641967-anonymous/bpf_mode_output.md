@@ -13,7 +13,7 @@
 BPF_MODE_OUTPUT = 2
 ```
 
-#### Discussion
+## Discussion
 
 Enable output only.
 

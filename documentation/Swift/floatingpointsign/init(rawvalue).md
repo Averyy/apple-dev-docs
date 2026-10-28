@@ -21,7 +21,7 @@ Creates a new instance with the specified raw value.
 init?(rawValue: Int)
 ```
 
-#### Discussion
+## Discussion
 
 If there is no value of the type that corresponds with the specified raw value, this initializer returns `nil`. For example:
 

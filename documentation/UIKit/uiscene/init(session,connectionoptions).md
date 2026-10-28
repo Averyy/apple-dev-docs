@@ -23,11 +23,11 @@ init(session: UISceneSession, connectionOptions: UIScene.ConnectionOptions)
 - (instancetype) initWithSession:(UISceneSession *) session connectionOptions:(UISceneConnectionOptions *) connectionOptions;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized scene object.
 
-#### Discussion
+## Discussion
 
 Subclasses call this method to initialize the scene details.
 

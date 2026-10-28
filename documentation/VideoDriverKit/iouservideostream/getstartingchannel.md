@@ -15,11 +15,11 @@ Gets the starting channel of the stream.
 uint32_t GetStartingChannel();
 ```
 
-#### Return Value
+## Return Value
 
 The starting channel of the stream.
 
-#### Discussion
+## Discussion
 
 The object’s work queue synchronizes access to the value.
 

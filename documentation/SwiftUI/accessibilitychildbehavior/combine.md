@@ -21,7 +21,7 @@ Any child accessibility element’s properties are merged into the new accessibi
 static let combine: AccessibilityChildBehavior
 ```
 
-#### Discussion
+## Discussion
 
 Use this behavior when you want a view represented by a single accessibility element. The new accessibility element merges properties from all non-hidden children. Some properties may be transformed or ignored to achieve the ideal combined result. For example, not all of [`AccessibilityTraits`](../accessibilitytraits.md) are merged and a [`default`](../accessibilityactionkind/default.md) action may become a named action ([`init(named:)`](../accessibilityactionkind/init%28named%29.md)).
 

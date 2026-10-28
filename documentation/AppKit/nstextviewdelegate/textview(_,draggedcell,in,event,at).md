@@ -20,7 +20,7 @@ optional func textView(_ view: NSTextView, draggedCell cell: any NSTextAttachmen
 - (void) textView:(NSTextView *) view draggedCell:(id<NSTextAttachmentCell>) cell inRect:(NSRect) rect event:(NSEvent *) event atIndex:(NSUInteger) charIndex;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate can use this message as its cue to initiate a dragging operation.
 

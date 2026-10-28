@@ -15,11 +15,11 @@ Removes an audio device from the audio box.
 kern_return_t RemoveDevice(IOUserAudioDevice *in_device);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../../DriverKit/error-codes.md).
 
-#### Discussion
+## Discussion
 
 If removing the device succeeds, the device’s reference count decrements by one.
 

@@ -25,7 +25,7 @@ func CFTimeZoneGetData(_ tz: CFTimeZone!) -> CFData!
 extern CFDataRefCFTimeZoneGetData(CFTimeZoneRef tz);
 ```
 
-#### Return Value
+## Return Value
 
 The data used to store `tz`. Ownership follows the [The Get Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-SW1). May be `NULL` if the timezone does not have any data or use Olson data for its information.
 

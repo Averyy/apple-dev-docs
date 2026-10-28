@@ -22,7 +22,7 @@ var tag: Int { get set }
 @property NSInteger tag;
 ```
 
-#### Discussion
+## Discussion
 
 The toolbar doesn’t use this value. You can use it for your own custom purposes.
 

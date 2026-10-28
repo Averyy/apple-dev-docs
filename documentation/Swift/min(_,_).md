@@ -21,7 +21,7 @@ Returns the lesser of two comparable values.
 func min<T>(_ x: T, _ y: T) -> T where T : Comparable
 ```
 
-#### Return Value
+## Return Value
 
 The lesser of `x` and `y`. If `x` is equal to `y`, returns `x`.
 

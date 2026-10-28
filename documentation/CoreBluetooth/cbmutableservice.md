@@ -25,7 +25,7 @@ class CBMutableService
 @interface CBMutableService : CBService
 ```
 
-#### Overview
+## Overview
 
 The [`CBMutableService`](./cbmutableservice.md) class adds write access to all of the properties in the [`CBService`](./cbservice.md) class it inherits from. You use this class to create a service or an included service on a local peripheral device (represented by a [`CBPeripheralManager`](./cbperipheralmanager.md) object). After creating a service, you can add it to the peripheral’s local database using the [`add(_:)`](./cbperipheralmanager/add%28_%29.md) method of the [`CBPeripheralManager`](./cbperipheralmanager.md) class. After you add a service to the peripheral’s local database, Core Bluetooth caches the service and you can no longer make changes to it.
 

@@ -28,7 +28,7 @@ var eventIdentifier: String! { get }
 
 - [Retrieving events and reminders](../retrieving-events-and-reminders.md)
 
-#### Discussion
+## Discussion
 
 You can use this identifier to look up an event with the EKEventStore method [`event(withIdentifier:)`](../ekeventstore/event%28withidentifier%29.md).
 

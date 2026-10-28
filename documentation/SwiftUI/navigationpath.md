@@ -26,13 +26,13 @@ struct NavigationPath
 - [Migrating to new navigation types](./migrating-to-new-navigation-types.md)
 - [Understanding the navigation stack](./understanding-the-navigation-stack.md)
 
-#### Overview
+## Overview
 
 You can manage the state of a [`NavigationStack`](./navigationstack.md) by initializing the stack with a binding to a collection of data. The stack stores data items in the collection for each view on the stack. You also can read and write the collection to observe and alter the stack’s state.
 
 When a stack displays views that rely on only one kind of data, you can use a standard collection, like an array, to hold the data. If you need to present different kinds of data in a single stack, use a navigation path instead. The path uses type erasure so you can manage a collection of heterogeneous elements. The path also provides the usual collection controls for adding, counting, and removing data elements.
 
-##### Serialize the path
+### Serialize the path
 
 When the values you present on the navigation stack conform to the [`Codable`](../Swift/codable.md) protocol, you can use the path’s [`codable`](./navigationpath/codable.md) property to get a serializable representation of the path. Use that representation to save and restore the contents of the stack. For example, you can define an [`ObservableObject`](../Combine/observableobject.md) that handles serializing and deserializing the path:
 

@@ -23,7 +23,7 @@ var style: UITableView.Style { get }
 @property (nonatomic, readonly) UITableViewStyle style;
 ```
 
-#### Discussion
+## Discussion
 
 See [`UITableView.Style`](./style-swift.enum.md) for descriptions of the constants used to specify table-view style.
 

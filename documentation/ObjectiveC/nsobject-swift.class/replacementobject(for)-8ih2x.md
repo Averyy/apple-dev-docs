@@ -22,11 +22,11 @@ func replacementObject(for archiver: NSArchiver) -> Any?
 - (id) replacementObjectForArchiver:(NSArchiver *) archiver;
 ```
 
-#### Return Value
+## Return Value
 
 The object to substitute for the receiver during archiving.
 
-#### Discussion
+## Discussion
 
 This method is invoked by `NSArchiver`. `NSObject`’s implementation returns the object returned by [`replacementObject(for:)`](./replacementobject%28for%29-2l8ox.md).
 

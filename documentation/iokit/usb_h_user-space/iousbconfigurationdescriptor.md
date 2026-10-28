@@ -18,7 +18,7 @@ struct IOUSBConfigurationDescriptor {
 };
 ```
 
-#### Overview
+## Overview
 
 Standard USB Configuration Descriptor. It is variable length, so this only specifies the known fields. We use the wTotalLength field to read the whole descriptor. See the USB Specification at [http://www.usb.org](http://www.usb.org).
 

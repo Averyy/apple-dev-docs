@@ -15,7 +15,7 @@ Creates a binary target that references an artifact on disk.
 static func binaryTarget(name: String, path: String) -> Target
 ```
 
-#### Discussion
+## Discussion
 
 Binary targets are only available on Apple platforms.
 

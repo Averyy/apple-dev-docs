@@ -25,7 +25,7 @@ optional func templateApplicationScene(_ templateApplicationScene: CPTemplateApp
 
 - [Displaying Content in CarPlay](../displaying-content-in-carplay.md)
 
-#### Discussion
+## Discussion
 
 CarPlay calls this method when it launches your app and connects the scene. Use the interface controller to present your user interface templates. You must set the scene’s root template before returning from this method.
 

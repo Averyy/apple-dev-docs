@@ -22,7 +22,7 @@ class var pointingHand: NSCursor { get }
 @property (class, strong, readonly) NSCursor * pointingHandCursor;
 ```
 
-#### Return Value
+## Return Value
 
 The pointing-hand cursor. The tip of the pointing finger is the hot spot.
 

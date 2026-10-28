@@ -21,7 +21,7 @@ An array of representations of the place using common mapping concepts.
 let representations: [PlaceDescriptor.PlaceRepresentation]
 ```
 
-#### Discussion
+## Discussion
 
 When searching or fetching a place from a mapping service provider, the order of the list can be a hint of usefulness for a specific purpose. Representations that most closely match the original data source come first.
 

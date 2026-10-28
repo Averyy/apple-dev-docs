@@ -20,7 +20,7 @@ Copies multiple regions within a source placement sparse texture to a destinatio
 func copyMappings(sourceTexture: any MTLTexture, destinationTexture: any MTLTexture, operations: [MTL4CopySparseTextureMappingOperation])
 ```
 
-#### Discussion
+## Discussion
 
 You are responsible for ensuring the source and destination textures have the same [`placementSparsePageSize`](../mtltexturedescriptor/placementsparsepagesize.md).
 

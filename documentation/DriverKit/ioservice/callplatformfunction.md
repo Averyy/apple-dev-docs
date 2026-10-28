@@ -16,11 +16,11 @@
 virtual kern_return_t CallPlatformFunction(OSString *functionName, bool waitForFunction, OSDictionary *inParam, OSDictionary **outParam);
 ```
 
-#### Return Value
+## Return Value
 
 An IOReturn code; kIOReturnSuccess if the function was successfully executed, kIOReturnUnsupported if a service to execute the function could not be found. Other return codes may be returned by the function.
 
-#### Discussion
+## Discussion
 
 Calls the platform function with the given name.
 

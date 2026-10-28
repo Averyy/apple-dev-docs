@@ -16,7 +16,7 @@ The AR session is attempting to resume after an interruption.
 ARTrackingStateReasonRelocalizing
 ```
 
-#### Discussion
+## Discussion
 
 ARKit cannot track device position or orientation when the session has been interrupted (for example, by dismissing the view hosting an AR session or switching to another app). When resuming the session after an interruption, you cannot be certain that the world coordinate system (used for placing anchors) matches the device’s real-world environment.
 

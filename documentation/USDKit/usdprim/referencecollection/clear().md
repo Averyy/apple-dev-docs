@@ -20,7 +20,7 @@ Removes all reference arcs from the prim.
 func clear() throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if the references cannot be cleared.
 

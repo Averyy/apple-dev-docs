@@ -25,7 +25,7 @@ static var compareNonliteral: CFStringCompareFlags { get }
 kCFCompareNonliteral
 ```
 
-#### Discussion
+## Discussion
 
 For example, “ö” represented as two distinct characters (“o” and “umlaut”) is equivalent to “ö” represented by a single character (“o-umlaut”). Note that this is not the same as diacritic insensitivity.
 

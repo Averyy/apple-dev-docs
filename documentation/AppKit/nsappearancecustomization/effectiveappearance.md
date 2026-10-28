@@ -20,7 +20,7 @@ var effectiveAppearance: NSAppearance { get }
 @property (strong, readonly) NSAppearance * effectiveAppearance;
 ```
 
-#### Discussion
+## Discussion
 
 The default value for this property is provided by the nearest ancestor of the receiver that has set an appearance.
 

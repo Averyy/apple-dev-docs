@@ -19,11 +19,11 @@
 static bool SPPoint3DIsFinite(SPPoint3D point);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether all of the coordinates of the point are finite.
 
-#### Discussion
+## Discussion
 
 Returns a Boolean value that indicates whether all of the coordinates of the point are finite.
 

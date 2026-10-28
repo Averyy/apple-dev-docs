@@ -24,7 +24,7 @@ func draw(with box: PDFDisplayBox, in context: CGContext)
 - (void) drawWithBox:(PDFDisplayBox) box inContext:(CGContextRef) context;
 ```
 
-#### Discussion
+## Discussion
 
 Page space is a 72 dpi coordinate system with the origin at the lower-left corner of the current page.
 

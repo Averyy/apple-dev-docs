@@ -22,7 +22,7 @@ func GLKMatrix4MultiplyVector3ArrayWithTranslation(_ matrix: GLKMatrix4, _ vecto
 static void GLKMatrix4MultiplyVector3ArrayWithTranslation(GLKMatrix4 matrix, GLKVector3 *vectors, size_t vectorCount);
 ```
 
-#### Discussion
+## Discussion
 
 The input vectors are treated as they were 4-component vectors with a `w`-component of `1.0`.
 

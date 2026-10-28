@@ -25,7 +25,7 @@ let NSItemProviderPreferredImageSizeKey: String
 extern NSString * const NSItemProviderPreferredImageSizeKey;
 ```
 
-#### Discussion
+## Discussion
 
 Use this key only with the [`NSItemProvider`](./nsitemprovider.md) type coercion policy. Ensure the value is an [`NSValue`](./nsvalue.md) object that contains a [`CGSize`](../CoreFoundation/cgsize.md) struct specifying the requested size, in points.
 

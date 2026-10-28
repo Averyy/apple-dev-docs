@@ -16,7 +16,7 @@ Pauses a session without ending it.
 final func pause() async throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: A [`FoveatedStreamingSession.DisconnectReason`](./disconnectreason.md) error if a disconnection occurs.  Or, a [`CancellationError`](../../Swift/cancellationerror.md) if the task is cancelled.
 

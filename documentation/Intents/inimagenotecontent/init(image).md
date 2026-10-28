@@ -25,7 +25,7 @@ init(image: INImage)
 - (instancetype) initWithImage:(INImage *) image;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized object or `nil` if the object could not be created.
 

@@ -21,7 +21,7 @@ Applies a Boolean function to tags in a collection, stopping when it returns tru
 extern CMTag CMTagCollectionApplyUntil(CMTagCollectionRef tagCollection, CMTagCollectionTagFilterFunction applier, void *context);
 ```
 
-#### Return Value
+## Return Value
 
 The tag for which `applier` returned `YES`.
 

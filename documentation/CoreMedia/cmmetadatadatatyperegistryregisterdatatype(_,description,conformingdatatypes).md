@@ -25,11 +25,11 @@ func CMMetadataDataTypeRegistryRegisterDataType(_ dataType: CFString, descriptio
 extern OSStatus CMMetadataDataTypeRegistryRegisterDataType(CFStringRef dataType, CFStringRef description, CFArrayRef conformingDataTypes);
 ```
 
-#### Return Value
+## Return Value
 
 If successful, a nonzero result code. See [Metadata Registry Error Codes](./metadata-registry-errors.md).
 
-#### Discussion
+## Discussion
 
 This routine is called by clients to register a data type with the data type registry. The list of conforming data type identifiers must include a base data type. If the data type has already been registered, then it is not considered an error to re-register it as long as the list of conforming data type identifiers has the same entries as the original; otherwise an error will be returned.
 

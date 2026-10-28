@@ -15,7 +15,7 @@ The stop key.
 static let stop: NSEvent.SpecialKey
 ```
 
-#### Discussion
+## Discussion
 
 This key is unavailable on most Macintosh keyboards.
 

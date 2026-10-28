@@ -16,7 +16,7 @@ Holds a table of numeric values describing the driver's operating statistics.
 #define kIOBlockStorageDriverStatisticsKey
 ```
 
-#### Discussion
+## Discussion
 
 This property holds a table of numeric values describing the driver's operating statistics. The table is an OSDictionary, where each entry describes one given statistic.
 

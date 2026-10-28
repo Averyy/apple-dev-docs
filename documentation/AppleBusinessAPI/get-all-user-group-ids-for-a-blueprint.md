@@ -9,7 +9,7 @@ Get a list of user group IDs associated with a Blueprint.
 **Availability**:
 - Apple Business API 2.6+
 
-##### Example
+### Example
 
 **Request**:
 

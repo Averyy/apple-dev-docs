@@ -25,7 +25,7 @@ class var main: RunLoop { get }
 @property (class, strong, readonly) NSRunLoop * mainRunLoop;
 ```
 
-#### Return Value
+## Return Value
 
 An object representing the main thread’s run loop.
 

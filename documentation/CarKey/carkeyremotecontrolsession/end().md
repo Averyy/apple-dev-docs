@@ -19,7 +19,7 @@ Ends the session and stops the delivery of notifications for all vehicles in the
 func end() throws
 ```
 
-#### Discussion
+## Discussion
 
 When you no longer need to access the vehicle information, call this method to end the session. If the session isn’t currently active when you call this method, it throws an error.
 

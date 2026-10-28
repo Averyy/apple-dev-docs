@@ -23,7 +23,7 @@ optional func window(for context: WKWebExtensionContext) -> (any WKWebExtensionW
 - (id<WKWebExtensionWindow>) windowForWebExtensionContext:(WKWebExtensionContext *) context;
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to `nil` if not implemented.
 

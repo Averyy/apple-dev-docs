@@ -15,11 +15,11 @@ Handles the basic initialization of the service.
 virtual bool init();
 ```
 
-#### Return Value
+## Return Value
 
 `YES` if initialization was successful, or `NO` if an error occurred.
 
-#### Discussion
+## Discussion
 
 The system calls this method shortly after it instantiates your [`IOUserNetworkEthernet`](../iousernetworkethernet.md) subclass, and before it calls the [`Start`](../../DriverKit/ioservice/start.md) method of your service. Limit the work you do in this method to simple tasks that must occur before your service stats. For example, you might use this method to allocate memory for your `ivars` structure.
 

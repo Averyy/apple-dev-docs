@@ -5,7 +5,7 @@
 
 Obtain the internal state of Core Audio objects during the development and debugging of your code.
 
-#### Overview
+## Overview
 
 The `AudioToolbox.h` header file provides auxiliary functions for obtaining the internal state of a Core Audio object. Use these functions during development and debugging.
 

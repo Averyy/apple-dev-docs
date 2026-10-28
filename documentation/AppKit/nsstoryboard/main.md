@@ -19,7 +19,7 @@ class var main: NSStoryboard? { get }
 @property (class, strong, readonly, nullable) NSStoryboard * mainStoryboard;
 ```
 
-#### Discussion
+## Discussion
 
 The name of the main storyboard is stored in the [`NSMainStoryboardFile`](../../BundleResources/information-property-list/nsmainstoryboardfile.md) key of the app’s `Info.plist` file.
 

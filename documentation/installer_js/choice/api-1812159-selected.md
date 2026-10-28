@@ -5,7 +5,7 @@
 
 A Boolean value that indicates whether the choice is selected.
 
-#### Overview
+## Overview
 
 `true` when the choice is selected, `false` otherwise.
 

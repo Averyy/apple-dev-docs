@@ -22,7 +22,7 @@ func GLKQuaternionAxis(_ quaternion: GLKQuaternion) -> GLKVector3
 GLKVector3 GLKQuaternionAxis(GLKQuaternion quaternion);
 ```
 
-#### Return Value
+## Return Value
 
 The axis of rotation.
 

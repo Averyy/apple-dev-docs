@@ -27,7 +27,7 @@ func startAccelerometerUpdates(to queue: OperationQueue, withHandler handler: @e
 
 - [Getting raw accelerometer events](../getting-raw-accelerometer-events.md)
 
-#### Discussion
+## Discussion
 
 You must call [`stopAccelerometerUpdates()`](./stopaccelerometerupdates%28%29.md) when you no longer want your app to process accelerometer updates.
 

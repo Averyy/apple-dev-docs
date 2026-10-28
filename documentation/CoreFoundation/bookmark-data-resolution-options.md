@@ -5,11 +5,11 @@
 
 Options used when resolving bookmark data.
 
-#### Overview
+## Overview
 
 When resolving a bookmark to obtain a URL, use bitwise `OR` operators to combine the options you want to specify, and provide them to the `options` parameter of the [`CFURLCreateByResolvingBookmarkData(_:_:_:_:_:_:_:)`](./cfurlcreatebyresolvingbookmarkdata%28_,_,_,_,_,_,_%29.md) function.
 
-##### Version-Notes
+### Version-Notes
 
 Security-scoped bookmarks are not available in versions of macOS prior to OS X v10.7.3.
 

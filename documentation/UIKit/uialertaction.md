@@ -28,7 +28,7 @@ class UIAlertAction
 
 - [Getting the user’s attention with alerts and action sheets](./getting-the-user-s-attention-with-alerts-and-action-sheets.md)
 
-#### Overview
+## Overview
 
 You use this class to configure information about a single action, including the title to display in the button, any styling information, and a handler to execute when the user taps the button. After creating an alert action object, add it to a [`UIAlertController`](./uialertcontroller.md) object before displaying the corresponding alert to the user.
 

@@ -25,7 +25,7 @@ class func fetchEvents(after event: NSPersistentCloudKitContainer.Event?) -> Sel
 + (instancetype) fetchEventsAfterEvent:(NSPersistentCloudKitContainerEvent *) event;
 ```
 
-#### Return Value
+## Return Value
 
 A request object that fetches persistent CloudKit container events by executing in a managed object context.
 

@@ -24,7 +24,7 @@ var motionVectorScaleX: Float { get set }
 @property (nonatomic) float motionVectorScaleX;
 ```
 
-#### Discussion
+## Discussion
 
 The frame interpolator converts the horizontal component of each value in [`motionTexture`](./motiontexture.md) into fragment (pixel) coordinates by multiplying it by this property’s value.
 

@@ -22,7 +22,7 @@ weak var delegate: (any VNDocumentCameraViewControllerDelegate)? { get set }
 @property (nonatomic, weak, nullable) id<VNDocumentCameraViewControllerDelegate> delegate;
 ```
 
-#### Overview
+## Overview
 
 The delegate receives one of the following three calls:
 

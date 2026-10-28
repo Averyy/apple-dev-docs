@@ -17,7 +17,7 @@ Assigns human readable names to arrays in a compute graph.
 final class NodeNamer
 ```
 
-#### Overview
+## Overview
 
 Arrays that aren’t given a name are numbered automatically.  Pass a namer to [`exportToDot(_:namer:)`](./exporttodot%28_,namer%29.md) or [`graphDescription(_:namer:)`](./graphdescription%28_,namer%29.md) to make their output easier to read:
 
@@ -32,7 +32,7 @@ namer.setName("y", for: y)
 print(exportToDot([x + y], namer: namer))
 ```
 
-##### See Also
+### See Also
 
 - [`exportToDot(_:namer:)`](./exporttodot%28_,namer%29.md)
 - [`graphDescription(_:namer:)`](./graphdescription%28_,namer%29.md)

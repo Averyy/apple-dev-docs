@@ -19,7 +19,7 @@ case scheduledTooFarInAdvance
 WKExtendedRuntimeSessionErrorScheduledTooFarInAdvance
 ```
 
-#### Discussion
+## Discussion
 
 You can’t schedule alarm sessions more than 36 hours in advance. Other session types do not support scheduling.
 

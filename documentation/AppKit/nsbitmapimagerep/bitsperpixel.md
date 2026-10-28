@@ -19,7 +19,7 @@ var bitsPerPixel: Int { get }
 @property (readonly) NSInteger bitsPerPixel;
 ```
 
-#### Discussion
+## Discussion
 
 This number is normally equal to the number of bits per sample or, if the data is in meshed configuration, the number of bits per sample times the number of samples per pixel. It can be explicitly set to another value (in [`init(bitmapDataPlanes:pixelsWide:pixelsHigh:bitsPerSample:samplesPerPixel:hasAlpha:isPlanar:colorSpaceName:bytesPerRow:bitsPerPixel:)`](./init%28bitmapdataplanes,pixelswide,pixelshigh,bitspersample,samplesperpixel,hasalpha,isplanar,colorspacename,bytesperrow,bitsperpixel%29.md)) in case extra memory is allocated for each pixel. This may be the case, for example, if pixel data is aligned on byte boundaries.
 

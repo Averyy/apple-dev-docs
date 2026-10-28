@@ -23,7 +23,7 @@ convenience init(_ elementProvider: @escaping (@escaping ([UIMenuElement]) -> Vo
 + (instancetype) elementWithProvider:(void (^)(void (^completion)(NSArray<UIMenuElement *> *elements))) elementProvider;
 ```
 
-#### Discussion
+## Discussion
 
 The system calls each element’s closure once, when it first encounters the element in a menu. Once provided, the system caches the element and may reuse it across menus.
 

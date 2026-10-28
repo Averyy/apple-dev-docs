@@ -17,7 +17,7 @@ The defined targeted audience according to app downloads.
 object AppDownloaderCriteria
 ```
 
-#### Discussion
+## Discussion
 
 To target all users, don’t include the `AppDownloaderCriteria` dimension in the request payload.
 

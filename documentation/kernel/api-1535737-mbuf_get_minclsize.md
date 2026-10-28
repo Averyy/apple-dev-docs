@@ -13,11 +13,11 @@
 u_int32_t mbuf_get_minclsize(void);
 ```
 
-#### Return Value
+## Return Value
 
 The minimum number of bytes before a cluster will be used.
 
-#### Discussion
+## Discussion
 
 This routine returns the minimum number of data bytes before an external cluster is used. This is equivalent to the legacy MINCLSIZE macro.
 

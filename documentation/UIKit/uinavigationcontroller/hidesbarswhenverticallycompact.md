@@ -22,7 +22,7 @@ var hidesBarsWhenVerticallyCompact: Bool { get set }
 @property (nonatomic, assign, readwrite) BOOL hidesBarsWhenVerticallyCompact;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the navigation controller hides its navigation bar and toolbar when it transitions to a vertically compact environment. Upon returning to a vertically regular environment, the navigation controller automatically shows both bars again. In addition, unhandled taps in the content area cause the navigation controller to show both bars again. The default value of this property is [`false`](../../Swift/false.md).
 

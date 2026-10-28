@@ -14,7 +14,7 @@
 MPLibrary_MajorVersion = 2
 ```
 
-#### Discussion
+## Discussion
 
 Major version number.
 

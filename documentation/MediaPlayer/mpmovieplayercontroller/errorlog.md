@@ -23,7 +23,7 @@ var errorLog: MPMovieErrorLog! { get }
 @property (nonatomic, readonly) MPMovieErrorLog * errorLog;
 ```
 
-#### Discussion
+## Discussion
 
 Can be `nil`. For information about movie error logs, refer to [`MPMovieErrorLog`](../mpmovieerrorlog.md).
 

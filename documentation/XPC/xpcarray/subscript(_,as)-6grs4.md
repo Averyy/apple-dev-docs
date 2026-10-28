@@ -21,7 +21,7 @@ Reads and writes the value at the given index as an integer value.
 subscript<T>(index: Int, as type: T.Type = T.self) -> T? where T : BinaryInteger { get }
 ```
 
-#### Return Value
+## Return Value
 
 The value at the specified index in the array, otherwise [`nil`](../../ObjectiveC/nil-227m0.md).
 

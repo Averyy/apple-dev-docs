@@ -19,7 +19,7 @@ class VZMemoryBalloonDeviceConfiguration
 @interface VZMemoryBalloonDeviceConfiguration : NSObject
 ```
 
-#### Overview
+## Overview
 
 Don’t instantiate this abstract class directly. Instead, instantiate one of its subclasses such as [`VZVirtioTraditionalMemoryBalloonDeviceConfiguration`](./vzvirtiotraditionalmemoryballoondeviceconfiguration.md).
 

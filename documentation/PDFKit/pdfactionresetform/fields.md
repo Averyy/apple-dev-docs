@@ -24,7 +24,7 @@ var fields: [String]? { get set }
 @property (nonatomic, copy, nullable) NSArray<NSString *> * fields;
 ```
 
-#### Return Value
+## Return Value
 
 An array of `NSString` objects that corresponds to the `fieldNames` property of widget annotations (such as [`PDFAnnotationButtonWidget`](../pdfannotationbuttonwidget.md)) on the PDF page. This method can return `NULL`.
 

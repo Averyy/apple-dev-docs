@@ -20,7 +20,7 @@ optional func textView(_ textView: NSTextView, candidatesForSelectedRange select
 - (NSArray *) textView:(NSTextView *) textView candidatesForSelectedRange:(NSRange) selectedRange;
 ```
 
-#### Return Value
+## Return Value
 
 An array of objects that represent the selection.
 

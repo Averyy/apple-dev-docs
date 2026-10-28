@@ -25,11 +25,11 @@ func unitString(fromKilograms numberInKilograms: Double, usedUnit unitp: UnsafeM
 - (NSString *) unitStringFromKilograms:(double) numberInKilograms usedUnit:(NSMassFormatterUnit *) unitp;
 ```
 
-#### Return Value
+## Return Value
 
 A localized string representing the unit.
 
-#### Discussion
+## Discussion
 
 This method selects the correct unit based on the formatter’s locale, the magnitude of the value, and the [`isForPersonMassUse`](./isforpersonmassuse.md) property. The value, once converted into the appropriate unit, determines whether the unit string is plural or singular.
 

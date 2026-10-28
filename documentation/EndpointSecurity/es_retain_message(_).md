@@ -19,7 +19,7 @@ func es_retain_message(_ msg: UnsafePointer<es_message_t>)
 extern void es_retain_message(const es_message_t *msg);
 ```
 
-#### Discussion
+## Discussion
 
 If you asynchronously process the message provided to the event-handler block of [`es_new_client(_:_:)`](./es_new_client%28_,_%29.md), you must retain the message.
 

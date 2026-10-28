@@ -29,7 +29,7 @@ class NSFileCoordinator
 
 - [Improving performance and stability when accessing the file system](./improving-performance-and-stability-when-accessing-the-file-system.md)
 
-#### Overview
+## Overview
 
 The [`NSFileCoordinator`](./nsfilecoordinator.md) class coordinates the reading and writing of files and directories among multiple processes and objects in the same process. You use instances of this class as is to read from, write to, modify the attributes of, change the location of, or delete a file or directory, but before your code to perform those actions executes, the file coordinator lets registered file presenter objects perform any tasks that they might require to ensure their own integrity. For example, if you want to change the location of a file, other objects interested in that file need to know where you intend to move it so that they can update their references.
 
@@ -39,19 +39,19 @@ Instances of [`NSFileCoordinator`](./nsfilecoordinator.md) are meant to be used 
 
 For information about implementing a file presenter object to receive file-related notifications, see [`NSFilePresenter`](./nsfilepresenter.md).
 
-##### File Presenters and iOS
+### File Presenters and iOS
 
 If your app or extension enters the background with an active file presenter, it may be terminated by the system in order to prevent deadlock on that file. To prevent this situation, call [`removeFilePresenter(_:)`](./nsfilecoordinator/removefilepresenter%28_%29.md) to remove the file presenter in the [`applicationDidEnterBackground(_:)`](../UIKit/uiapplicationdelegate/applicationdidenterbackground%28_%29.md) method or in response to a [`didEnterBackgroundNotification`](../UIKit/uiapplication/didenterbackgroundnotification.md) notification. Call [`addFilePresenter(_:)`](./nsfilecoordinator/addfilepresenter%28_%29.md) to add the file presenter again in the [`applicationWillEnterForeground(_:)`](../UIKit/uiapplicationdelegate/applicationwillenterforeground%28_%29.md) method or in response to a [`willEnterForegroundNotification`](../UIKit/uiapplication/willenterforegroundnotification.md) notification.
 
 > **Note**:  The [`UIDocument`](../UIKit/uidocument.md) class automatically removes itself when your app goes to the background. It automatically adds itself again when your app returns to the foreground.
 
-##### File Coordinators and iOS
+### File Coordinators and iOS
 
 A coordinated read or write will automatically begin a background task when granted, similar to one created with the [`beginBackgroundTask(expirationHandler:)`](../UIKit/uiapplication/beginbackgroundtask%28expirationhandler%29.md) method. This helps ensure that your app or extension has sufficient time to finish the read or write operation if it’s suspended, without creating a deadlock on access to that file by other processes. If a process is suspended while waiting for a coordinated read or write to be granted, the request is canceled, and an `NSError` object with the code [`NSUserCancelledError`](./nsusercancellederror-swift.var.md) is produced. If the background task expires, the process is terminated.
 
 > **Note**:  The [`UIDocument`](../UIKit/uidocument.md) class automatically requests additional background time and safely performs coordinated reads and writes when loading and saving the document.
 
-##### Threading Considerations
+### Threading Considerations
 
 Each file coordinator object you create should be used on a single thread only. If you need to coordinate file operations across multiple objects in different threads, each object should create its own file coordinator.
 

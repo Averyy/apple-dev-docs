@@ -19,7 +19,7 @@ init(type: NSEvent.EventType)
 static NSEventMask NSEventMaskFromType(NSEventType type);
 ```
 
-#### Return Value
+## Return Value
 
 The event mask corresponding to the specified type. The returned mask is equivalent to the number 1 left-shifted by `type` bits.
 

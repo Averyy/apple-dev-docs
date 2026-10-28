@@ -23,11 +23,11 @@ func sec_protocol_metadata_create_secret_with_context(_ metadata: sec_protocol_m
 dispatch_data_tsec_protocol_metadata_create_secret_with_context(sec_protocol_metadata_t metadata, size_t label_len, const char *label, size_t context_len, const uint8_t *context, size_t exporter_length);
 ```
 
-#### Return Value
+## Return Value
 
 Returns a dispatch_data_t object carrying the exported secret.
 
-#### Discussion
+## Discussion
 
 Export a secret, e.g., a cryptographic key, derived from the protocol metadata using a label and context string.
 

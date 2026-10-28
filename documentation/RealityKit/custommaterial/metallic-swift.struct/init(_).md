@@ -19,7 +19,7 @@ Creates a metallic object from a physically based material’s metallic property
 init(_ value: PhysicallyBasedMaterial.Metallic)
 ```
 
-#### Discussion
+## Discussion
 
 This initializer creates a new object by copying the values from an existing [`PhysicallyBasedMaterial.Metallic`](../../physicallybasedmaterial/metallic-swift.struct.md) object.
 

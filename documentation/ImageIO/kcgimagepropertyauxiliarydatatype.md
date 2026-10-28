@@ -25,7 +25,7 @@ let kCGImagePropertyAuxiliaryDataType: CFString
 extern CFStringRef const kCGImagePropertyAuxiliaryDataType;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is a [`CFString`](../CoreFoundation/cfstring.md). The value of this key might be [`kCGImageAuxiliaryDataTypeDisparity`](./kcgimageauxiliarydatatypedisparity.md), [`kCGImageAuxiliaryDataTypeDepth`](./kcgimageauxiliarydatatypedepth.md), or another auxiliary data type.
 

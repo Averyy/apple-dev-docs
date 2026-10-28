@@ -21,7 +21,7 @@ A type that represents a fixed date format string using string interpolation.
 struct FormatString
 ```
 
-#### Overview
+## Overview
 
 Use `Date.FormatString` with [`Date.VerbatimFormatStyle`](./verbatimformatstyle.md) or [`Date.ParseStrategy`](./parsestrategy.md) to create fixed-pattern format strings for dates. You build format strings using string interpolation with date field symbols:
 

@@ -19,7 +19,7 @@ Creates a split layer with the lengths of each split section and dimension you s
 + (instancetype) layerWithSplitSectionLengths:(NSArray<NSNumber *> *) splitSectionLengths dimension:(NSUInteger) dimension;
 ```
 
-#### Return Value
+## Return Value
 
 A split layer.
 

@@ -5,7 +5,7 @@
 
 Place content based on the current position of a known image in a person’s surroundings.
 
-#### Overview
+## Overview
 
 Use ARKit’s support for tracking 2D images to place 3D content in a space. ARKit provides updates to the image’s location as it moves relative to the person. If you supply one or more reference images in your app’s asset catalog, people can use a real-world copy of that image to place virtual 3D content in your app. For example, if you design a set of movie posters and provide those assets to people in the form of real-world environments, they can view the trailer for the movie in a fully immersive experience.
 

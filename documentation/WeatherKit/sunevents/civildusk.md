@@ -21,7 +21,7 @@ The time of civil sunset, when the sun’s center is 6° below the horizon.
 var civilDusk: Date?
 ```
 
-#### Discussion
+## Discussion
 
 The sky is often colored orange or red, and objects are typically distinguishable. Beyond civil dusk, artificial light may be needed for outdoor activities, depending on weather conditions. This property is optional because it’s possible for the sun to not set on a given day, at extreme latitudes.
 

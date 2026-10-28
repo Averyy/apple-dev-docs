@@ -21,7 +21,7 @@ enum RecognizedItem
 
 - [Scanning data with the camera](./scanning-data-with-the-camera.md)
 
-#### Overview
+## Overview
 
 A `RecognizedItem` enumeration contains the data for an item that the scanner identifies, such as the location, bounds, and content of the item. For text items, the content is the selected string, and for barcodes, it’s the encoded payload string.
 

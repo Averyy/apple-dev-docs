@@ -25,7 +25,7 @@ func count() -> Int
 - (NSUInteger) count;
 ```
 
-#### Return Value
+## Return Value
 
 The number of keyframes in the sequence.
 

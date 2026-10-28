@@ -24,7 +24,7 @@ func setCaptionPreviewProfileID(_ profileID: String, position: CGPoint, text: St
 - (void) setCaptionPreviewProfileID:(NSString *) profileID position:(CGPoint) position text:(NSString *) text;
 ```
 
-#### Discussion
+## Discussion
 
 This method enables a preview mode that displays sample caption text using the visual appearance settings from the specified accessibility profile. The preview replaces any currently active subtitles and/or closed captions while active. The sample caption text position can be specified to avoid UI controls.
 

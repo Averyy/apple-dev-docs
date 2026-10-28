@@ -14,7 +14,7 @@ Asserts that two values are not equal within a certain accuracy.
 func XCTAssertNotEqualWithAccuracy<T>(_ expression1: @autoclosure () throws -> T, _ expression2: @autoclosure () throws -> T, _ accuracy: T, _ message: @autoclosure () -> String = "", file: StaticString = #filePath, line: UInt = #line) where T : FloatingPoint
 ```
 
-#### Discussion
+## Discussion
 
 `expression1`, `expression2`, and `accuracy` must all be of the same type `T` that conforms to [`FloatingPoint`](../Swift/floatingpoint.md).
 

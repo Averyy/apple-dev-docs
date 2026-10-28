@@ -16,11 +16,11 @@
 virtual kern_return_t InsertData(OSData *data);
 ```
 
-#### Return Value
+## Return Value
 
 0 in case of success. Negative in case of an error.
 
-#### Discussion
+## Discussion
 
 This function is called to insert data into the buffer.
 

@@ -22,7 +22,7 @@ nonisolated
 func buttonRepeatBehavior(_ behavior: ButtonRepeatBehavior) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Apply this to buttons that increment or decrement a value or perform some other inherently iterative operation. Interactions such as pressing-and-holding on the button, holding the button’s keyboard shortcut, or holding down the space key while the button is focused will trigger this repeat behavior.
 

@@ -25,7 +25,7 @@ func CFFileSecuritySetOwnerUUID(_ fileSec: CFFileSecurity!, _ ownerUUID: CFUUID!
 extern Boolean CFFileSecuritySetOwnerUUID(CFFileSecurityRef fileSec, CFUUIDRef ownerUUID);
 ```
 
-#### Return Value
+## Return Value
 
 Returns `true` if the owner UUID property was successfully set, otherwise `false`.
 

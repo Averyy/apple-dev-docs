@@ -25,11 +25,11 @@ func CFStringGetBytes(_ theString: CFString!, _ range: CFRange, _ encoding: CFSt
 extern CFIndex CFStringGetBytes(CFStringRef theString, CFRange range, CFStringEncoding encoding, UInt8 lossByte, Boolean isExternalRepresentation, UInt8 *buffer, CFIndex maxBufLen, CFIndex *usedBufLen);
 ```
 
-#### Return Value
+## Return Value
 
 The number of characters converted.
 
-#### Discussion
+## Discussion
 
 This function is the basic encoding-conversion function for CFString objects. As with the other functions that get the character contents of CFString objects, it allows conversion to a supported 8-bit encoding. Unlike most of those other functions, it also allows “lossy conversion.” The function permits the specification of a “loss byte” in a parameter; if a character cannot be converted this character is substituted and conversion proceeds. (With the other functions, conversion stops at the first error and the operation fails.)
 

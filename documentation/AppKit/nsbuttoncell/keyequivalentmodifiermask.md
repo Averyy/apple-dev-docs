@@ -19,7 +19,7 @@ var keyEquivalentModifierMask: NSEvent.ModifierFlags { get set }
 @property NSEventModifierFlags keyEquivalentModifierMask;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is a mask that indicates the modifier keys that are applied to the button’s key equivalent. Mask bits are defined in `NSEvent.h`. The only mask bits that are relevant in button key-equivalent modifier masks are `NSControlKeyMask`, `NSAlternateKeyMask`, and `NSCommandKeyMask` bits.
 

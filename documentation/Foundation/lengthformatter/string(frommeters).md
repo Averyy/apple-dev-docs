@@ -25,11 +25,11 @@ func string(fromMeters numberInMeters: Double) -> String
 - (NSString *) stringFromMeters:(double) numberInMeters;
 ```
 
-#### Return Value
+## Return Value
 
 A string that combines a value and a unit string appropriate for the formatter’s locale.
 
-#### Discussion
+## Discussion
 
 This method converts the provided length into units appropriate for the formatter’s locale.
 

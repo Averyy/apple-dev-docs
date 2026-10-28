@@ -10,7 +10,7 @@ Allow access to credentials inside the Secure Element on device.
 
 - [Accessing and using secure element credentials](./accessing-and-using-secure-element-credentials.md)
 
-#### Overview
+## Overview
 
 The SecureElementCredential framework allows your app to manage and use Secure Element credentials with contactless transaction capabilities. See [NFC & SE Platform for secure contactless transactions](https://developer.apple.com/support/nfc-se-platform) for information about requirements, availability, and requesting acccess to the platform.
 

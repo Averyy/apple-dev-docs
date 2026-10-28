@@ -19,7 +19,7 @@ func intersects(_ textRange: NSTextRange) -> Bool
 - (BOOL) intersectsWithTextRange:(NSTextRange *) textRange;
 ```
 
-#### Return Value
+## Return Value
 
 Returns `true` if the ranges intersect.
 

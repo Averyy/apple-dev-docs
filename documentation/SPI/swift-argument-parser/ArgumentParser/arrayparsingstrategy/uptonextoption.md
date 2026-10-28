@@ -17,7 +17,7 @@ Parse all values up to the next option.
 static var upToNextOption: ArrayParsingStrategy { get }
 ```
 
-#### Discussion
+## Discussion
 
 For example, for a parsable type with a property defined as `@Option(parsing: .upToNextOption) var files: [String]`, the input `--files foo bar` would result in the array `["foo", "bar"]`.
 

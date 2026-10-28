@@ -23,7 +23,7 @@ case failureMessageTooManyResults
 INSearchForMessagesIntentResponseCodeFailureMessageTooManyResults
 ```
 
-#### Discussion
+## Discussion
 
 Use this response code when your search returns more results than might make sense to display to the user. For example, you might return this code on watchOS if there are more than 20 messages.
 

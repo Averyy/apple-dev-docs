@@ -15,7 +15,7 @@ The relationships for an alternative distribution package, linking it to its ver
 object AlternativeDistributionPackage.Relationships
 ```
 
-#### Discussion
+## Discussion
 
 For more information on the object that owns these relationships, see [`AlternativeDistributionPackage`](../alternativedistributionpackage.md).
 

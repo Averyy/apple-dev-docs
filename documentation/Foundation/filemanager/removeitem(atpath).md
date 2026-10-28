@@ -25,7 +25,7 @@ func removeItem(atPath path: String) throws
 - (BOOL) removeItemAtPath:(NSString *) path error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 Prior to removing each item, the file manager asks its delegate if it should actually do so. It does this by calling the [`fileManager(_:shouldRemoveItemAt:)`](../filemanagerdelegate/filemanager%28_,shouldremoveitemat%29.md) method; if that method is not implemented (or the process is running in OS X 10.5 or earlier) it calls the [`fileManager(_:shouldRemoveItemAtPath:)`](../filemanagerdelegate/filemanager%28_,shouldremoveitematpath%29.md) method instead. If the delegate method returns [`true`](../../Swift/true.md), or if the delegate does not implement the appropriate methods, the file manager proceeds to remove the file or directory. If there is an error removing an item, the file manager may also call the delegate’s [`fileManager(_:shouldProceedAfterError:removingItemAt:)`](../filemanagerdelegate/filemanager%28_,shouldproceedaftererror,removingitemat%29.md) or [`fileManager(_:shouldProceedAfterError:removingItemAtPath:)`](../filemanagerdelegate/filemanager%28_,shouldproceedaftererror,removingitematpath%29.md) method to determine how to proceed.
 

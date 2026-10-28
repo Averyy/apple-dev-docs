@@ -25,7 +25,7 @@ case failureRequiringAppLaunch
 INCreateNoteIntentResponseCodeFailureRequiringAppLaunch
 ```
 
-#### Discussion
+## Discussion
 
 Use this response code when you cannot create the note from your Intents extension but the user can create it in your app. Do not use this code for general errors or to force the user to launch your app.
 

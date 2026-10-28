@@ -25,7 +25,7 @@ func functionHandle(withName name: String, stage: MTLRenderStages) -> (any MTLFu
 - (id<MTLFunctionHandle>) functionHandleWithName:(NSString *) name stage:(MTLRenderStages) stage;
 ```
 
-#### Return Value
+## Return Value
 
 A function handle representing the function if present, otherwise `nil`.
 

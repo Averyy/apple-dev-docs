@@ -25,7 +25,7 @@ func initializeCloudKitSchema(options: NSPersistentCloudKitContainerSchemaInitia
 - (BOOL) initializeCloudKitSchemaWithOptions:(NSPersistentCloudKitContainerSchemaInitializationOptions) options error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 To create the schema, this method creates a set of representative [`CKRecord`](../../CloudKit/ckrecord.md) instances for all stores in the container that use Core Data with CloudKit, and uploads them to CloudKit. These records have a representative value for every field Core Data might serialize for the specified managed object model. After successfully uploading the records, the schema is visible in the CloudKit Dashboard and the container deletes the representative records.
 

@@ -1388,6 +1388,18 @@
       "file_path": "documentation/AppStoreServerAPI/consumptionrequest.md",
       "hash": "7d0a2d567c37d508a765ec5c0d2705130d54f2c9b1a67a289b7aeae66981f755"
     },
+    "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/consumptionrequest/consumptionpercentage.json": {
+      "error": "HTTP 404",
+      "status": "error"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/consumptionrequest/deliverystatus.json": {
+      "error": "HTTP 404",
+      "status": "error"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/consumptionrequest/refundpreference.json": {
+      "error": "HTTP 404",
+      "status": "error"
+    },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/consumptionrequestv1.json": {
       "file_path": "documentation/AppStoreServerAPI/consumptionrequestv1.md",
       "hash": "2c205cdb13139ad8a87a22d2fed37bf43ecc1a43c61ce2bddcdd237d44ce0641"
@@ -1512,6 +1524,10 @@
       "file_path": "documentation/AppStoreServerAPI/get-all-subscription-statuses.md",
       "hash": "bd795d75b1a6544c2871e3fc424a7a57555b818dc85ce1aaaaa5a28d4f818454"
     },
+    "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/get-all-subscription-statuses/status.json": {
+      "error": "HTTP 404",
+      "status": "error"
+    },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/get-app-transaction-info.json": {
       "file_path": "documentation/AppStoreServerAPI/get-app-transaction-info.md",
       "hash": "493482f074b2f60aed977173cdaf8bbe90ccc5ea8f843794959f0060b85d1aff"
@@ -1524,9 +1540,21 @@
       "file_path": "documentation/AppStoreServerAPI/get-group-members.md",
       "hash": "6d9c440c00ff23e53bd643fc1887fd258b8ab4df48b5f60a54f2723a0b05b3d0"
     },
+    "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/get-group-members/groupid.json": {
+      "error": "HTTP 404",
+      "status": "error"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/get-group-members/paginationtoken.json": {
+      "error": "HTTP 404",
+      "status": "error"
+    },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/get-notification-history.json": {
       "file_path": "documentation/AppStoreServerAPI/get-notification-history.md",
       "hash": "38a9ecb6cbbf7ae465c100b470b0551aab9eb3289a50ac136ddb11dc6f346d68"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/get-notification-history/paginationtoken.json": {
+      "error": "HTTP 404",
+      "status": "error"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/get-refund-history-v1.json": {
       "file_path": "documentation/AppStoreServerAPI/get-refund-history-v1.md",
@@ -1536,6 +1564,10 @@
       "file_path": "documentation/AppStoreServerAPI/get-refund-history.md",
       "hash": "cf642945638a336fdaa0fe8bddecce891c1f1218569a5bba76dad2abbe98b141"
     },
+    "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/get-refund-history/revision.json": {
+      "error": "HTTP 404",
+      "status": "error"
+    },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/get-status-of-subscription-renewal-date-extensions.json": {
       "file_path": "documentation/AppStoreServerAPI/get-status-of-subscription-renewal-date-extensions.md",
       "hash": "5fefe762c99d73752ad702d56b4a74a63685633d6355feeb882a635d4a31362d"
@@ -1543,6 +1575,10 @@
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/get-test-notification-status.json": {
       "file_path": "documentation/AppStoreServerAPI/get-test-notification-status.md",
       "hash": "81925da1838c3a6f1171189cd6c2d5b1e768f1ed202cc5bbcceec5d1b68b1106"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/get-test-notification-status/testnotificationtoken.json": {
+      "error": "HTTP 404",
+      "status": "error"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/get-transaction-history-v1.json": {
       "file_path": "documentation/AppStoreServerAPI/get-transaction-history-v1.md",
@@ -1564,6 +1600,14 @@
       "file_path": "documentation/AppStoreServerAPI/getgroupmembersresponse.md",
       "hash": "64d495e0c42cc2e9878318bb3e630aa75727d06e2cf14b223ec9b493c551ff5f"
     },
+    "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/getgroupmembersresponse/hasmore.json": {
+      "error": "HTTP 404",
+      "status": "error"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/getgroupmembersresponse/paginationtoken.json": {
+      "error": "HTTP 404",
+      "status": "error"
+    },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/graceperiodexpiresdate.json": {
       "file_path": "documentation/AppStoreServerAPI/graceperiodexpiresdate.md",
       "hash": "7c86f20fa56ce07d7e60f80f3bade7cdbf48f246c3cf624abc82c9595c8d3350"
@@ -1571,6 +1615,10 @@
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/groupentry.json": {
       "file_path": "documentation/AppStoreServerAPI/groupentry.md",
       "hash": "196732da847e8f59c92664ccac2bb33ed04fd01440d6cdcd5106c7a6cec95495"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/groupentry/grouptype.json": {
+      "error": "HTTP 404",
+      "status": "error"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/groupid.json": {
       "file_path": "documentation/AppStoreServerAPI/groupid.md",
@@ -1595,6 +1643,14 @@
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/historyresponse.json": {
       "file_path": "documentation/AppStoreServerAPI/historyresponse.md",
       "hash": "05322337aae94c815c9617b290ac7a0e9141c22748d620b1591df71cff19f750"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/historyresponse/hasmore.json": {
+      "error": "HTTP 404",
+      "status": "error"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/historyresponse/revision.json": {
+      "error": "HTTP 404",
+      "status": "error"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/identifying-rate-limits.json": {
       "file_path": "documentation/AppStoreServerAPI/identifying-rate-limits.md",
@@ -1844,6 +1900,10 @@
       "file_path": "documentation/AppStoreServerAPI/notificationhistoryresponse.md",
       "hash": "40b1b09014707500f730517d3e70c860bea857972a9db547d82fc1bd04d204fe"
     },
+    "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/notificationhistoryresponse/hasmore.json": {
+      "error": "HTTP 404",
+      "status": "error"
+    },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/notificationhistoryresponseitem.json": {
       "file_path": "documentation/AppStoreServerAPI/notificationhistoryresponseitem.md",
       "hash": "cb889b657d55fe4580c1b1ea355b293e6b49899c4f417a26fa3a97c83ac0fb19"
@@ -1972,6 +2032,10 @@
       "file_path": "documentation/AppStoreServerAPI/refundhistoryresponse.md",
       "hash": "89795b9408244b4357a713756307fffc1879d93eefffab65bf59e61098900889"
     },
+    "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/refundhistoryresponse/revision.json": {
+      "error": "HTTP 404",
+      "status": "error"
+    },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/refundlookupresponse.json": {
       "file_path": "documentation/AppStoreServerAPI/refundlookupresponse.md",
       "hash": "ddd8e42c0446f4b0e538d719a02fd30adec5af6c2a98224572680c7aca270506"
@@ -2036,6 +2100,14 @@
       "file_path": "documentation/AppStoreServerAPI/roleentry.md",
       "hash": "d28d06d60531f180f594e7c80e6409be18849b78045af1ea3aadb277b1bb442c"
     },
+    "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/roleentry/productid.json": {
+      "error": "HTTP 404",
+      "status": "error"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/roleentry/role.json": {
+      "error": "HTTP 404",
+      "status": "error"
+    },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/samplecontentprovided.json": {
       "file_path": "documentation/AppStoreServerAPI/samplecontentprovided.md",
       "hash": "a5a02668f8d1d8366603fd69c8cc5f437d3996ca04a2d6673a6d76b2ce043fbb"
@@ -2059,6 +2131,10 @@
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/sendtestnotificationresponse.json": {
       "file_path": "documentation/AppStoreServerAPI/sendtestnotificationresponse.md",
       "hash": "8a62c9b09501b18141ff9e931b8f0f40915c1c4e9dc9063dc07e7cf6077ebfaa"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/sendtestnotificationresponse/testnotificationtoken.json": {
+      "error": "HTTP 404",
+      "status": "error"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/servernotificationurlnotfounderror.json": {
       "file_path": "documentation/AppStoreServerAPI/servernotificationurlnotfounderror.md",
@@ -2215,8 +2291,16 @@
   },
   "metadata": {
     "render": {
-      "version": 3
+      "version": 4
     },
-    "total_pages": 553
+    "text_links": {
+      "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/lasttransactionsitem.json": [
+        "https://developer.apple.com/documentation/appstoreserverapi/subscriptiongroupidentifieritem/subscriptiongroupidentifier"
+      ],
+      "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/subscriptiongroupidentifieritem.json": [
+        "https://developer.apple.com/documentation/appstoreserverapi/subscriptiongroupidentifieritem/subscriptiongroupidentifier"
+      ]
+    },
+    "total_pages": 572
   }
 }

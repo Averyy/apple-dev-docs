@@ -16,7 +16,7 @@ Create a quadlet compare/swap command object and initialize it with 64-bit value
 IOFireWireLibCommandRef (*CreateCompareSwapCommand64)(IOFireWireLibDeviceRef self, io_object_t device, const FWAddress *addr, UInt64 cmpVal, UInt64 newVal, IOFireWireLibCommandCallback callback, Boolean failOnReset, UInt32 generation, void *inRefCon, REFIID iid);
 ```
 
-#### Return Value
+## Return Value
 
 An IOFireWireLibCommandRef interface. See IOFireWireLibCommandRef.
 

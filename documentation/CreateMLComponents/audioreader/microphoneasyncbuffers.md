@@ -19,7 +19,7 @@ An async sequence of audio frames.
 struct MicrophoneAsyncBuffers
 ```
 
-#### Overview
+## Overview
 
 This sequence allows iterating through the microphone audio frames.
 

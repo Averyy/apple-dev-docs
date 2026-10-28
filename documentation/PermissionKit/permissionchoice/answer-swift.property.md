@@ -19,7 +19,7 @@ The type of answer this choice represents.
 var answer: PermissionChoice.Answer { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The system uses this value to style how the choice appears to the person making the decision.
 

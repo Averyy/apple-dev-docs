@@ -20,7 +20,7 @@ class ARSkeletonDefinition
 @interface ARSkeletonDefinition : NSObject
 ```
 
-#### Overview
+## Overview
 
 A skeleton definition establishes the relationship of joints that make up a 3D or 2D body’s [`skeleton`](./arbody2d/skeleton.md), in which joints connect to other joints to compose a single skeleton in a parent-child hierarchy. Use [`parentIndices`](./arskeletondefinition/parentindices-82iw2.md) to identify the hierarchy for a given skeleton definition.
 

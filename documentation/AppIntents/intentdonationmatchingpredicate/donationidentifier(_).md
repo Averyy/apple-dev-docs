@@ -21,11 +21,11 @@ Creates a predicate that matches a single, previous donation.
 static func donationIdentifier(_ identifier: IntentDonationIdentifier) -> IntentDonationMatchingPredicate
 ```
 
-#### Return Value
+## Return Value
 
 A predicate that matches the specified donation.
 
-#### Discussion
+## Discussion
 
 When you donate an app intent using the methods of [`IntentDonationManager`](../intentdonationmanager.md), the method returns a unique identifier for that donation. Use this method to create a predicate that matches only the donation you specified.
 

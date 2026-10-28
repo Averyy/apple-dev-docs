@@ -25,7 +25,7 @@ func CTFontManagerUnregisterFontDescriptors(_ fontDescriptors: CFArray, _ scope:
 extern void CTFontManagerUnregisterFontDescriptors(CFArrayRef fontDescriptors, CTFontManagerScope scope, bool (^registrationHandler)(CFArrayRef errors, bool done));
 ```
 
-#### Discussion
+## Discussion
 
 Unregistered fonts don’t participate in font descriptor matching.
 

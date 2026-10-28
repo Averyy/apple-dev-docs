@@ -21,7 +21,7 @@ Creates a Curve25519 elliptic curve public key for use with Diffie-Hellman key e
 init<D>(_ serialization: D, kem: HPKE.KEM) throws where D : ContiguousBytes
 ```
 
-#### Discussion
+## Discussion
 
 - serialization: The serialized bytes of the public key.
 - kem: The key encapsulation mechanism to use with the public key.

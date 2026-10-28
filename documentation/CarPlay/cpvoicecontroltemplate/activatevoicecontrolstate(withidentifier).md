@@ -21,7 +21,7 @@ func activateVoiceControlState(withIdentifier identifier: String)
 - (void) activateVoiceControlStateWithIdentifier:(NSString *) identifier;
 ```
 
-#### Discussion
+## Discussion
 
 Your app must present the voice control template using its [`CPInterfaceController`](../cpinterfacecontroller.md) object before the app can activate a new state. Calling this method before presenting the template has no effect on the active state.
 

@@ -16,7 +16,7 @@ The merchant’s top-level domain that the Apple Pay server associates with the 
 DOMString merchantDomain;
 ```
 
-#### Discussion
+## Discussion
 
 This value is optional; provide the top-level domain for the merchant if it’s available.
 

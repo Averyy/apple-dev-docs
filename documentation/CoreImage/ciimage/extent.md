@@ -36,7 +36,7 @@ var extent: CGRect { get }
 
 - [Selectively Focusing on an Image](../selectively-focusing-on-an-image.md)
 
-#### Discussion
+## Discussion
 
 This rectangle specifies the extent of the image in working space coordinates.
 

@@ -24,7 +24,7 @@ static let serif: UIFontDescriptor.SystemDesign
 extern UIFontDescriptorSystemDesign const UIFontDescriptorSystemDesignSerif;
 ```
 
-#### Discussion
+## Discussion
 
 Using this constant with [`withDesign(_:)`](../withdesign%28_%29.md) returns [New York](https://developer.apple.com/fonts/).
 

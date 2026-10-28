@@ -24,7 +24,7 @@ var displayMode: PDFDisplayMode { get set }
 @property (nonatomic) PDFDisplayMode displayMode;
 ```
 
-#### Discussion
+## Discussion
 
 See `Constants` for possible values.
 

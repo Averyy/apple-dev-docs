@@ -15,7 +15,7 @@ Convenience method for getting a CWConfiguration object initialized with the giv
 + (instancetype) configurationWithConfiguration:(CWConfiguration *) configuration;
 ```
 
-#### Return Value
+## Return Value
 
 A CWConfiguration object.
 

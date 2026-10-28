@@ -5,7 +5,7 @@
 
 Verify an attestation that a managed device returns by performing the required steps.
 
-#### Overview
+## Overview
 
 The [Managed Device Attestation](https://support.apple.com/guide/deployment/dep28afbde6a) feature provides a cryptographic declaration of device properties that you can use as part of a trust evaluation. This feature helps protect against various threats, such as a compromised device providing false information.
 
@@ -16,7 +16,7 @@ You can use Managed Device Attestation in two different workflows:
 
 In both cases, you need to carefully validate the attestation to preserve the security assurances of Managed Device Attestation. The validation requirements differ between the two workflows, as outlined below.
 
-#### Validate a device information attestation
+## Validate a device information attestation
 
 When your device management service sends a [`Device Information`](./device-information-command.md) command that requests an attestation, the response’s `DevicePropertiesAttestation` key has a value that is a chain of certificates with the leaf certificate first. The leaf certificate describes the properties of an Apple device and may differ depending on the device type.
 
@@ -26,7 +26,7 @@ To properly validate the attestation, follow these steps:
 2. If the [`Device Information`](./device-information-command.md) request includes a value for the `DeviceAttestationNonce` key, verify that it matches the freshness code in the leaf certificate. If the freshness code doesn’t match, the attestation wasn’t generated in response to the request, so dynamic properties in the attestation may be out of date. See the `DeviceAttestationNonce` key for details of attestation caching, which may affect the expected value.
 3. Parse out the device properties in the various OIDs in the leaf certificate and evaluate their values. Any missing OIDs or blank values indicate that Apple’s attestation servers were unable to reliably determine the corresponding property.
 
-#### Validate an ACME attestation
+## Validate an ACME attestation
 
 When the device installs a [`ACMECertificate`](./acmecertificate.md) payload or [`AssetCredentialACME`](./assetcredentialacme.md) declaration asset that has its `Attest` key set to `true, the device requests an attestation from Apple’s attestation servers. Your ACME service receives the attestation certificate chain when the device responds to the `device-attest-01` challenge.
 

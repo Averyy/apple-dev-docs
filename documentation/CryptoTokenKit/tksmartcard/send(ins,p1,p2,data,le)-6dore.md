@@ -22,11 +22,11 @@ Asynchronously sends an APDU command to the smart card.
 final func send(ins: UInt8, p1: UInt8, p2: UInt8, data: Data? = nil, le: Int? = nil) async throws -> (sw: UInt16, response: Data)
 ```
 
-#### Return Value
+## Return Value
 
 A tuple containing the status word (sw) and response data.
 
-#### Discussion
+## Discussion
 
 In an async context, Swift prefers this overload over the synchronous `send(ins:p1:p2:data:le:) throws` method. To call the synchronous overload from an async context, use a typed function reference cast: `card.send as (UInt8, UInt8, UInt8, Data?, Int?) throws -> (UInt16, Data)`
 

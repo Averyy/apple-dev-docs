@@ -20,7 +20,7 @@ Determines the position and direction of a ray through the given point in the 2D
 func ray(through point: CGPoint, in space: some CoordinateSpaceProtocol, to realitySpace: some RealityCoordinateSpace) -> (origin: SIMD3<Float>, direction: SIMD3<Float>)?
 ```
 
-#### Return Value
+## Return Value
 
 A 3D ray, expressed in the `realitySpace` coordinate space, which starts at the camera position and passes through the specified `point`.
 

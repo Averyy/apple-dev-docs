@@ -24,7 +24,7 @@ var state: GKChallengeState { get }
 @property (nonatomic, assign, readonly) GKChallengeState state;
 ```
 
-#### Discussion
+## Discussion
 
 See [`GKChallengeState`](../gkchallengestate.md) for possible values.
 

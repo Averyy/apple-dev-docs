@@ -23,11 +23,11 @@ func viewController(for column: UISplitViewController.Column) -> UIViewControlle
 - (UIViewController *) viewControllerForColumn:(UISplitViewControllerColumn) column;
 ```
 
-#### Return Value
+## Return Value
 
 The corresponding child view controller object.
 
-#### Discussion
+## Discussion
 
 This method doesn’t apply to classic split view controllers with a [`style`](./style-swift.property.md) of [`UISplitViewController.Style.unspecified`](./style-swift.enum/unspecified.md). For a classic split view controller, instead use the [`viewControllers`](./viewcontrollers.md) property to get the view controllers in the split view interface.
 

@@ -15,7 +15,7 @@ Information about whether your service can resolve the specified queue location.
 object PlaybackQueueLocationResolutionResult
 ```
 
-#### Discussion
+## Discussion
 
 Only provide one of the optional properties. If a client receives a result with more than one outcome, such as `needsValue` and `success`, it arbitrarily chooses one and ignores the rest.
 

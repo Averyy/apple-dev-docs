@@ -19,7 +19,7 @@ var inhibitKernelOffloadedIO: Bool { get set }
 @property (nonatomic) BOOL inhibitKernelOffloadedIO;
 ```
 
-#### Discussion
+## Discussion
 
 This property has no meaning if the volume doesn’t conform to [`FSVolumeKernelOffloadedIOOperations`](../../fsvolumekerneloffloadediooperations.md) or [`FSVolume.KernelOffloadedIOHandler`](../../fsvolume/kerneloffloadediohandler.md).
 

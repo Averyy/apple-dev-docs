@@ -21,7 +21,7 @@ On which months the event should occur.
 var months: [Calendar.RecurrenceRule.Month]
 ```
 
-#### Discussion
+## Discussion
 
 - 1 is the first month of the year (January in Gregorian calendars)
 

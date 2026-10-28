@@ -20,7 +20,7 @@ var cs_validation_category: es_cs_validation_category_t
 es_cs_validation_category_t cs_validation_category;
 ```
 
-#### Discussion
+## Discussion
 
 Indicates the code signature validation policy that was applied to a binary
 

@@ -19,11 +19,11 @@ func AEInstallSpecialHandler(_ functionClass: AEKeyword, _ handler: AEEventHandl
 OSErr AEInstallSpecialHandler(AEKeyword functionClass, AEEventHandlerUPP handler, Boolean isSysHandler);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145).
 
-#### Discussion
+## Discussion
 
 An Apple event special handler dispatch table contains entries with a function class keyword, the address of the handler function that handles the Apple events indicated by the keyword, and a reference constant. Depending on which handlers you choose to install, a special handler dispatch table can have entries for any of the following:
 
@@ -32,7 +32,7 @@ An Apple event special handler dispatch table contains entries with a function c
 
 See also [`AEGetSpecialHandler(_:_:_:)`](./api-1444274-aegetspecialhandler.md) and [`AERemoveSpecialHandler(_:_:_:)`](./api-1447960-aeremovespecialhandler.md). 
 
-##### Version-Notes
+### Version-Notes
 
 Thread safe starting in OS X v10.2.
 

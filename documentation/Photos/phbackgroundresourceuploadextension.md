@@ -22,7 +22,7 @@ protocol PHBackgroundResourceUploadExtension : AppExtension
 
 - [Uploading asset resources in the background](../PhotoKit/uploading-asset-resources-in-the-background.md)
 
-#### Overview
+## Overview
 
 Use this protocol to create, acknowledge, retry asset resource upload jobs.
 

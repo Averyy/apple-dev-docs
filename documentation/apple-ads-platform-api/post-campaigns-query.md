@@ -9,13 +9,13 @@ Query campaigns using filters, sorting, and pagination.
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 This endpoint queries campaigns using a standard `QueryRequest` body. An empty request body returns all campaigns for the ad account with default pagination.
 
 See [`QueryFilterOperator`](./queryfilteroperator.md) for the full set of supported comparison operators.
 
-##### Filterable Fields
+### Filterable Fields
 
 | Field | Type | Operators | Sortable | Description |
 | --- | --- | --- | --- | --- |
@@ -37,13 +37,13 @@ See [`QueryFilterOperator`](./queryfilteroperator.md) for the full set of suppor
 
 The request body is a [`QueryRequest`](./queryrequest.md) composed of [`QueryFilter`](./queryfilter.md) conditions and [`QuerySort`](./querysort.md) directives ([`QuerySortOrder`](./querysortorder.md)), controlled by [`QueryPagination`](./querypagination.md). This endpoint caps `pageSize` at 1000.
 
-#### Payload Examples
+## Payload Examples
 
 **Query for a Brand**:
 
 Query campaigns for a specific brand by pairing `promotedObjectType` and `promotedObjectId`.
 
-##### Request
+### Request
 
 Filters campaigns to a single brand by combining an `EQUALS` match on `promotedObjectType` and `promotedObjectId`, returning results sorted by creation date descending.
 
@@ -77,7 +77,7 @@ POST /v1/campaigns/query
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -136,7 +136,7 @@ POST /v1/campaigns/query
 
 Query campaigns for a specific App Store app using its `adamId` as the `promotedObjectId`.
 
-##### Request
+### Request
 
 Filters campaigns to a specific App Store app using its `adamId` as the `promotedObjectId`, returning results sorted by most recently modified.
 
@@ -170,7 +170,7 @@ POST /v1/campaigns/query
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -229,7 +229,7 @@ POST /v1/campaigns/query
 
 Combine `promotedObjectType`, `promotedObjectId`, and `status` to return only enabled campaigns for a specific brand.
 
-##### Request
+### Request
 
 Adds a `status` filter alongside `promotedObjectType` and `promotedObjectId` to return only `ENABLED` campaigns for a specific brand, narrowing results without a sort order.
 
@@ -262,7 +262,7 @@ POST /v1/campaigns/query
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -321,7 +321,7 @@ POST /v1/campaigns/query
 
 To query campaigns across multiple brands in a single request, use the `IN` operator.
 
-##### Request
+### Request
 
 Uses the `IN` operator on `promotedObjectId` to retrieve campaigns across three distinct brand IDs in a single request, avoiding separate per-brand queries.
 
@@ -353,7 +353,7 @@ POST /v1/campaigns/query
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {

@@ -15,7 +15,7 @@ Creates a dictionary wherein the keys are string representations of the correspo
 #define NSDictionaryOfVariableBindings(...)
 ```
 
-#### Discussion
+## Discussion
 
 This macro is particularly useful when creating Auto Layout constraints. For example, the following code creates the dictionary `{ @"button1" = button1, @"button2" = button2 }`.
 

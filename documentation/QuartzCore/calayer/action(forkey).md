@@ -24,11 +24,11 @@ func action(forKey event: String) -> (any CAAction)?
 - (id<CAAction>) actionForKey:(NSString *) event;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the object that provides the action for `key`. The object must implement the [`CAAction`](../caaction.md) protocol.
 
-#### Discussion
+## Discussion
 
 This method searches for the given action object of the layer. Actions define dynamic behaviors for a layer. For example, the animatable properties of a layer typically have corresponding action objects to initiate the actual animations. When that property changes, the layer looks for the action object associated with the property name and executes it. You can also associate custom action objects with your layer to implement app-specific actions.
 

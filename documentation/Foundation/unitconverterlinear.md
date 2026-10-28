@@ -25,7 +25,7 @@ class UnitConverterLinear
 @interface NSUnitConverterLinear : NSUnitConverter
 ```
 
-#### Overview
+## Overview
 
 A linear equation for unit conversion takes the form `y = mx + b`, such that the following is true:
 

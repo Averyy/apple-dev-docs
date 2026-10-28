@@ -25,7 +25,7 @@ var isAtomic: Bool { get set }
 @property (nonatomic, assign) BOOL atomic;
 ```
 
-#### Discussion
+## Discussion
 
 Modifying records atomically prevents you from updating your data in a way that leaves it in an inconsistent state. You use atomic updates when you want to write multiple records to the same record zone. If there’s a failure to modify any of the records in a zone, CloudKit doesn’t change the other records in that same zone. The record zone must have the [`atomic`](../ckrecordzone/capabilities-swift.struct/atomic.md) capability for this behavior to apply. If a record zone doesn’t support the atomic capability, setting this property has no effect.
 

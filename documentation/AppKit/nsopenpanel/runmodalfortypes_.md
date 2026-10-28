@@ -17,11 +17,11 @@ Displays the panel and begins a modal event loop that is terminated when the use
 - (NSInteger) runModalForTypes:(NSArray *) fileTypes;
 ```
 
-#### Return Value
+## Return Value
 
 The button used to dismiss the dialog: `NSOKButton` for the OK button and `NSCancelButton` for the Cancel button.
 
-#### Discussion
+## Discussion
 
 This convenience method sends `runModalForDirectory:nil file:nil types:``fileTypes` to the panel. See [`runModalForDirectory:file:types:`](./runmodalfordirectory_file_types_.md) for additional details.
 

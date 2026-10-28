@@ -19,7 +19,7 @@ var screenBounds: CGRect { get }
 @property (nonatomic, readonly) CGRect screenBounds;
 ```
 
-#### Discussion
+## Discussion
 
 The rectangle represents the dimensions of the screen and may be different from the rectangle used to display your app’s content.
 

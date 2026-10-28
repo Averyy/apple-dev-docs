@@ -6,7 +6,7 @@
 
 An atom that specifies the media handler component that is to be used to interpret the media’s data.
 
-#### Overview
+## Overview
 
 The handler reference atom has an atom type value of `'hdlr'`.
 

@@ -6,23 +6,27 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.li
 
 # mlx.core.linalg.cross
 
-**cross(*a: array*, *b: array*, *axis: int = -1*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.md#mlx.core.array)**
-: Compute the cross product of two arrays along a specified axis.
+```python
+cross(a: array, b: array, axis: int = -1, *, stream: StreamOrDevice = None) → array
+```
+
+Compute the cross product of two arrays along a specified axis.
+
 The cross product is defined for arrays with size 2 or 3 in the
 specified axis. If the size is 2 then the third value is assumed
 to be zero.
 
-Parameters:
+**Parameters:**
 
-**a** ([array](mlx.core.array.md#mlx.core.array)) – Input array.
-**b** ([array](mlx.core.array.md#mlx.core.array)) – Input array.
-**axis** ([int](https://docs.python.org/3/builtins/functions.html#int)*, **optional*) – Axis along which to compute the cross
+- **a** ([array](mlx.core.array.md#mlx.core.array)) – Input array.
+- **b** ([array](mlx.core.array.md#mlx.core.array)) – Input array.
+- **axis** ([int](https://docs.python.org/3/builtins/functions.html#int), *optional*) – Axis along which to compute the cross
 product. Default: `-1`.
-**stream** ([Stream](stream_class.md#mlx.core.Stream)*, **optional*) – Stream or device. Defaults to `None`
+- **stream** ([Stream](stream_class.md#mlx.core.Stream), *optional*) – Stream or device. Defaults to `None`
 in which case the default stream of the default device is used.
 
-Returns:
-The cross product of `a` and `b` along the specified axis.
+**Returns:**
+: The cross product of `a` and `b` along the specified axis.
 
-Return type:
-[array](mlx.core.array.md#mlx.core.array)
+**Return type:**
+: [array](mlx.core.array.md#mlx.core.array)

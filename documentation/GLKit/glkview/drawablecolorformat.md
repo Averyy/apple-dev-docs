@@ -23,7 +23,7 @@ var drawableColorFormat: GLKViewDrawableColorFormat { get set }
 @property (nonatomic) GLKViewDrawableColorFormat drawableColorFormat;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`GLKViewDrawableColorFormat.RGBA8888`](../glkviewdrawablecolorformat/rgba8888.md).
 

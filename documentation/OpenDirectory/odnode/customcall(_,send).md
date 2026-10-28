@@ -20,11 +20,11 @@ func customCall(_ inCustomCode: Int, send inSendData: Data!) throws -> Data
 - (NSData *) customCall:(NSInteger) inCustomCode sendData:(NSData *) inSendData error:(NSError **) outError;
 ```
 
-#### Return Value
+## Return Value
 
 The result of the custom call.
 
-#### Discussion
+## Discussion
 
 > **Handling Errors in Swift**:  In Swift, this method returns a nonoptional result and is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
 >

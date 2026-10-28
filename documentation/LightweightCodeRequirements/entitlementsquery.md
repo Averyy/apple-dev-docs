@@ -21,7 +21,7 @@ A constraint that tests values in the entitlements dictionary associated with a 
 class EntitlementsQuery
 ```
 
-#### Overview
+## Overview
 
 Entitlements dictionaries use strings for keys. The value of each key could be a bool, integer, string, array or another dictionary. Arrays are homogenous. Entitlements queries are a chain of operations that allow matching against arbitrarily nested values in the dictionary.
 

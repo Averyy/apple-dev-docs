@@ -27,11 +27,11 @@ func CFURLCopyParameterString(_ anURL: CFURL!, _ charactersToLeaveEscaped: CFStr
 extern CFStringRefCFURLCopyParameterString(CFURLRef anURL, CFStringRef charactersToLeaveEscaped);
 ```
 
-#### Return Value
+## Return Value
 
 The parameter string (as defined in RFC 1738), or `NULL` if no parameter string exists. For example, in the URL `myproto://www.example.com/;command=laugh`, the parameter string is `command=laugh`. Ownership follows the create rule. See [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 This function removes all percent escape sequences except those for characters specified in `charactersToLeaveEscaped`.
 

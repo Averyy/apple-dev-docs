@@ -19,17 +19,17 @@ func PMSessionCreatePrinterList(_ printSession: PMPrintSession, _ printerList: U
 OSStatus PMSessionCreatePrinterList(PMPrintSession printSession, CFArrayRef  _Nullable *printerList, CFIndex *currentIndex, PMPrinter  _Nullable *currentPrinter);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./core_printing.md#1670007).
 
-#### Discussion
+## Discussion
 
 You must call this function between the creation and release of a printing session. See the function [`PMCreateSession(_:)`](./api-1463247-pmcreatesession.md). 
 
 You can call the function `PMSessionCreatePrinterList` to obtain a valid printer name to pass to the function `PMSessionSetCurrentPrinter`.
 
-##### Special Considerations
+### Special Considerations
 
 In macOS 10.2 and later, Apple recommends using the function [`PMServerCreatePrinterList(_:_:)`](./api-1459953-pmservercreateprinterlist.md) instead. `PMServerCreatePrinterList` doesn’t require a `PMSession` object; it can be called at any time. It also works directly with `PMPrinter` objects.
 

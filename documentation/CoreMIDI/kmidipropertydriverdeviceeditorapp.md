@@ -23,7 +23,7 @@ let kMIDIPropertyDriverDeviceEditorApp: CFString
 extern CFStringRef const kMIDIPropertyDriverDeviceEditorApp;
 ```
 
-#### Discussion
+## Discussion
 
 Only drivers may set this property on their owned devices.
 

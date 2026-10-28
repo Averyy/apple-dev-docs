@@ -19,7 +19,7 @@ func DADiskSetOptions(_ disk: DADisk, _ options: DADiskOptions, _ value: Bool) -
 extern DAReturn DADiskSetOptions(DADiskRef disk, DADiskOptions options, Boolean value);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 

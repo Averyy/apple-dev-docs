@@ -20,7 +20,7 @@ The type representing the document’s content after reading.
 associatedtype Snapshot
 ```
 
-#### Discussion
+## Discussion
 
 This can be any type: a `String`, a custom struct, or even the document type itself. SwiftUI delivers it to [`apply(snapshot:previous:)`](../readabledocument/apply%28snapshot,previous%29.md) on the main actor after reading completes.
 

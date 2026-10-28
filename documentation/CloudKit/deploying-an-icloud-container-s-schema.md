@@ -5,7 +5,7 @@
 
 Reset your container’s state during development and deploy your container’s schema to production.
 
-#### Overview
+## Overview
 
 During initial development of your app, you create your schema and add records for testing in the development environment. Apps in the App Store can access only the production environment. Before you publish your app, you must deploy the development schema to the production environment to copy over its record types, fields, and indexes.
 
@@ -13,7 +13,7 @@ As you continue to develop your app, you can add record types and fields to the 
 
 ![A diagram showing a development workflow for iterating a schema in the development environment before deploying it to the production environment.](https://developer.apple.com/tutorials/images/com.apple.cloudkit/media-3562414@2x.png)
 
-##### Reset the development environment
+### Reset the development environment
 
 You can reset the development environment in the CloudKit Database app between runs of your app to remove all records. If your schema isn’t in production, resetting the development environment also deletes all record types. Otherwise, the development schema reverts to the state of the production environment.
 
@@ -27,7 +27,7 @@ To reset the development environment to the current state of production:
 
 ![A screenshot showing the details of a selected container in the CloudKit Database app. The screenshot highlights the Reset Environment menu item on the left.](https://developer.apple.com/tutorials/images/com.apple.cloudkit/media-3699106@2x.png)
 
-##### Deploy the development schema
+### Deploy the development schema
 
 After you finalize your schema and test your app in the development environment, you’re ready to deploy the schema to production in the CloudKit Database app. Deploying the schema copies its record types, fields, and indexes to the production environment, but doesn’t copy any records. After deployment, you can populate the production environment with records as necessary, and test your app there.
 

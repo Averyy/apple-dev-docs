@@ -19,7 +19,7 @@ case willNeedAllData
 NSImageRepLoadStatusWillNeedAllData
 ```
 
-#### Discussion
+## Discussion
 
 Until you call [`incrementalLoad(from:complete:)`](../incrementalload%28from,complete%29.md) with [`true`](../../../Swift/true.md), this status will be returned. You can continue to call the method but no decompression will take place. Once you do call the method with [`true`](../../../Swift/true.md), then the image will be decompressed and one of the final three status messages will be returned.
 

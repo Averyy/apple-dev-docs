@@ -20,7 +20,7 @@ class NSMoveCommand
 @interface NSMoveCommand : NSScriptCommand
 ```
 
-#### Overview
+## Overview
 
 An instance of `NSMoveCommand` moves the specified scriptable object or objects; for example, it may move words to a new location in a document or a file to a new directory.
 

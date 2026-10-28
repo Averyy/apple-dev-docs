@@ -24,7 +24,7 @@ var initiallyInteractive: Bool { get }
 @property (nonatomic, readonly) BOOL initiallyInteractive;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) when the transition was initiated interactively and the [`isAnimated`](./isanimated.md) property is also set to [`true`](../../Swift/true.md); otherwise, the value is [`false`](../../Swift/false.md). The value of this property doesn’t change during the course of a transition. To determine whether the transition is currently interactive, use the [`isInteractive`](./isinteractive.md) method instead.
 

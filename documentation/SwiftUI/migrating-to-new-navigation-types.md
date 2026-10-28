@@ -5,11 +5,11 @@
 
 Improve navigation behavior in your app by replacing navigation views with navigation stacks and navigation split views.
 
-#### Overview
+## Overview
 
 If your app has a minimum deployment target of iOS 16, iPadOS 16, macOS 13, tvOS 16, watchOS 9, or visionOS 1, or later, transition away from using [`NavigationView`](./navigationview.md). In its place, use [`NavigationStack`](./navigationstack.md) and [`NavigationSplitView`](./navigationsplitview.md) instances. How you use these depends on whether you perform navigation in one column or across multiple columns. With these newer containers, you get better control over view presentation, container configuration, and programmatic navigation.
 
-##### Update single column navigation
+### Update single column navigation
 
 If your app uses a [`NavigationView`](./navigationview.md) that you style using the [`stack`](./navigationviewstyle/stack.md) navigation view style, where people navigate by pushing a new view onto a stack, switch to [`NavigationStack`](./navigationstack.md).
 
@@ -30,7 +30,7 @@ NavigationStack {
 }
 ```
 
-##### Update multicolumn navigation
+### Update multicolumn navigation
 
 If your app uses a two- or three-column [`NavigationView`](./navigationview.md), or for apps that have multiple columns in some cases and a single column in others — which is typical for apps that run on iPhone and iPad — switch to [`NavigationSplitView`](./navigationsplitview.md).
 
@@ -77,7 +77,7 @@ NavigationSplitView {
 
 If you need navigation within a column, embed a navigation stack in that column. This arrangement provides finer control over what each column displays. [`NavigationSplitView`](./navigationsplitview.md) also enables you to customize column visibility and width.
 
-##### Update programmatic navigation
+### Update programmatic navigation
 
 If you perform programmatic navigation using one of the [`NavigationLink`](./navigationlink.md) initializers that has an `isActive` input parameter, move the automation to the enclosing stack. Do this by changing your navigation links to use the [`init(value:label:)`](./navigationlink/init%28value,label%29.md) initializer, then use one of the navigation stack initializers that takes a path input, like [`init(path:root:)`](./navigationstack/init%28path,root%29.md).
 
@@ -129,7 +129,7 @@ var body: some View {
 
 This version uses the [`navigationDestination(for:destination:)`](./view/navigationdestination%28for,destination%29.md) view modifier to detach the presented data from the corresponding view. That makes it possible for the `path` array to represent every view on the stack. Changes that you make to the array affect what the container displays right now, as well as what people encounter as they navigate through the stack. You can support even more sophisticated programmatic navigation if you use a [`NavigationPath`](./navigationpath.md) to store the path information, rather than a plain collection of data. For more information, see [`NavigationStack`](./navigationstack.md).
 
-##### Update selection-based navigation
+### Update selection-based navigation
 
 If you perform programmatic navigation on [`List`](./list.md) elements that use one of the [`NavigationLink`](./navigationlink.md) initializers with a `selection` input parameter, you can move the selection to the list. For example, suppose you have a navigation view with links that activate in response to a `selection` state variable:
 
@@ -171,7 +171,7 @@ var body: some View {
 
 The list coordinates with the navigation logic so that changing the selection state variable in another part of your code activates the navigation link with the corresponding color. Similarly, if someone chooses the navigation link associated with a particular color, the list updates the selection value that other parts of your code can read.
 
-##### Provide backward compatibility with an availability check
+### Provide backward compatibility with an availability check
 
 If your app needs to run on platform versions earlier than iOS 16, iPadOS 16, macOS 13, tvOS 16, watchOS 9, or visionOS 1, you can start migration while continuing to support older clients by using an [availability condition](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/statements/#Availability-Condition). For example, you can create a custom wrapper view that conditionally uses either [`NavigationSplitView`](./navigationsplitview.md) or [`NavigationView`](./navigationview.md):
 

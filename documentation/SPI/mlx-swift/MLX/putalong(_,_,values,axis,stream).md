@@ -17,7 +17,7 @@ Put values along an axis at the specified indices.
 func putAlong(_ array: MLXArray, _ indices: MLXArray, values: MLXArray, axis: Int, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-##### See Also
+### See Also
 
 - [Indexes](./indexes.md)
 - [`takeAlong(_:_:stream:)`](./takealong%28_,_,stream%29.md)

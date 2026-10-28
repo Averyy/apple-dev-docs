@@ -21,11 +21,11 @@ func getGlyphs(in glyphRange: NSRange, glyphs glyphBuffer: UnsafeMutablePointer<
 - (NSUInteger) getGlyphsInRange:(NSRange) glyphRange glyphs:(NSGlyph *) glyphBuffer characterIndexes:(NSUInteger *) charIndexBuffer glyphInscriptions:(NSGlyphInscription *) inscribeBuffer elasticBits:(BOOL *) elasticBuffer bidiLevels:(unsigned char *) bidiLevelBuffer;
 ```
 
-#### Return Value
+## Return Value
 
 The number of glyphs returned in `glyphBuffer`.
 
-#### Discussion
+## Discussion
 
 This method and [`getGlyphs(in:glyphs:characterIndexes:glyphInscriptions:elasticBits:)`](./getglyphs%28in,glyphs,characterindexes,glyphinscriptions,elasticbits%29.md) are intended primarily to enable the typesetter to obtain in bulk the glyphs and other information that it needs to perform layout. These methods return all glyphs in the range, including `NSNullGlyph` and not-shown glyphs.  They do not null-terminate the results. Each pointer passed in should either be `NULL`, or else point to sufficient memory to hold `glyphRange.length` elements.
 

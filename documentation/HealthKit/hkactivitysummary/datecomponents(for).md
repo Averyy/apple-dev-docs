@@ -24,11 +24,11 @@ func dateComponents(for calendar: Calendar) -> DateComponents
 - (NSDateComponents *) dateComponentsForCalendar:(NSCalendar *) calendar;
 ```
 
-#### Return Value
+## Return Value
 
 Date components that uniquely specify a day. For example, for the Gregorian calendar, the date components consist of only the era, year, month, and day.
 
-#### Discussion
+## Discussion
 
 Each activity summary covers a single day. The day always begins and ends at midnight; however, the day may be longer or shorter than 24 hours (for example, if the user traveled across time zones).
 

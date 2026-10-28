@@ -19,11 +19,11 @@ class func windowNumber(at point: NSPoint, belowWindowWithWindowNumber windowNum
 + (NSInteger) windowNumberAtPoint:(NSPoint) point belowWindowWithWindowNumber:(NSInteger) windowNumber;
 ```
 
-#### Return Value
+## Return Value
 
 The window number of the window under the point. The window number returned may correspond to a window in another application.
 
-#### Discussion
+## Discussion
 
 Because this method uses the same rules as mouse-down hit-testing, windows with transparency at the given point, and windows that ignore mouse events, will not be returned.
 

@@ -17,11 +17,11 @@ Determines whether a file system object is an alias file, a data file, or a fold
 OSErr FSIsAliasFile(const FSRef *fileRef, Boolean *aliasFileFlag, Boolean *folderFlag);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 
-#### Discussion
+## Discussion
 
 [Table 1](./api-1444426-fsisaliasfile.md#1966543) summarizes the information that this function provides about the object specified in the `fileRef` parameter: 
 

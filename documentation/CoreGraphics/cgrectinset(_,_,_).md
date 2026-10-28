@@ -25,11 +25,11 @@ func CGRectInset(_ rect: CGRect, _ dx: CGFloat, _ dy: CGFloat) -> CGRect
 extern CGRect CGRectInset(CGRect rect, CGFloat dx, CGFloat dy);
 ```
 
-#### Return Value
+## Return Value
 
 A rectangle. The origin value is offset in the x-axis by the distance specified by the `dx` parameter and in the y-axis by the distance specified by the `dy` parameter, and its size adjusted by `(2*dx,2*dy)`, relative to the source rectangle. If `dx` and `dy` are positive values, then the rectangle’s size is decreased. If `dx` and `dy` are negative values, the rectangle’s size is increased.
 
-#### Discussion
+## Discussion
 
 The rectangle is standardized and then the inset parameters are applied. If the resulting rectangle would have a negative height or width, a null rectangle is returned.
 

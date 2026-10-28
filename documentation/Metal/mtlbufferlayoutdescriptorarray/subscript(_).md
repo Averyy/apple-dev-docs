@@ -24,7 +24,7 @@ subscript(index: Int) -> MTLBufferLayoutDescriptor! { get set }
 - (MTLBufferLayoutDescriptor *) objectAtIndexedSubscript:(NSUInteger) index;
 ```
 
-#### Return Value
+## Return Value
 
 The buffer layout descriptor for the buffer bound to the given attribute table index.
 

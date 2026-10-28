@@ -24,11 +24,11 @@ class UIBarItem
 @interface UIBarItem : NSObject
 ```
 
-#### Overview
+## Overview
 
 Items on a bar behave in a way similar to buttons (instances of [`UIButton`](./uibutton.md)). They have a title, image, action, and target. You can also enable and disable an item on a bar.
 
-##### Customize appearance
+### Customize appearance
 
 You can customize the image to represent the item, and the position of the image, using [`image`](./uibaritem/image.md) and [`imageInsets`](./uibaritem/imageinsets.md) respectively.
 

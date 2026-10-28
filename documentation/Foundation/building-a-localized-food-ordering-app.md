@@ -13,7 +13,7 @@ Format, style, and localize your app’s text for use in multiple languages with
 - watchOS 8.0+
 - Xcode 13.0+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC21 session [10109: What’s New in Foundation](https://developer.apple.com/wwdc21/10109/).
 
@@ -23,11 +23,11 @@ The Caffé sample app presents a list of menu items — each of which are availa
 - Attributed strings allow the app to easily create styled text with Markdown for display in SwiftUI views. The app also uses localized attributed strings to build strings at runtime, even when the word order changes in different languages.
 - Automatic grammar agreement handles localization situations when strings need to adjust at runtime to match grammatical gender or number in certain languages.
 
-##### Use Formatters to Format Strings at Runtime
+### Use Formatters to Format Strings at Runtime
 
 When the app launches, the user can choose one of several foods to add to their order. When the user chooses a food item, a new view shows the item’s ingredients and the available sizes with corresponding prices.
 
-The ingredient list shows an example of formatting a list of items, using the [formatted(_:)](../Swift/sequence/api-3767271-formatted.md) method defined on the Swift [Sequence](../Swift/sequence.md) type. It starts with the an array of `ingredients` defined by the `Food` type. In `FoodHeaderView`, the `ingredientText` variable takes the ingredient strings, maps each to a localized string, and then uses the `formatted(_:)` method to create a comma-separated list. By adding the [ListFormatStyle](./listformatstyle.md) list type [.and](./listformatstyle/listtype/and.md) as a format style parameter, the formatter places an “and” (or its localized equivalent) before last member of the list.
+The ingredient list shows an example of formatting a list of items, using the [formatted(_:)](../Swift/sequence/formatted%28_%29.md) method defined on the Swift [Sequence](../Swift/sequence.md) type. It starts with the an array of `ingredients` defined by the `Food` type. In `FoodHeaderView`, the `ingredientText` variable takes the ingredient strings, maps each to a localized string, and then uses the `formatted(_:)` method to create a comma-separated list. By adding the [ListFormatStyle](./listformatstyle.md) list type [.and](./listformatstyle/listtype-swift.enum/and.md) as a format style parameter, the formatter places an “and” (or its localized equivalent) before last member of the list.
 
 ```swift
 private var ingredientText: String {
@@ -45,7 +45,7 @@ func localizedPrice(_ size: FoodSize) -> String {
 }
 ```
 
-As with the list of ingredients earlier, the [formatted(_:)](../Swift/binaryinteger/api-3765927-formatted.md) method applies directly to the type it formats. In this case, the formatted type is a [Decimal](./decimal.md); this type conforms to Swift’s [BinaryInteger](../Swift/binaryinteger.md), which defines the `formatted(_:)` method. A [FormatStyle](./formatstyle.md) parameter indicates that the formatting should format the price as a currency, using U.S. dollars.
+As with the list of ingredients earlier, the [formatted(_:)](../Swift/binaryinteger/formatted%28_%29-73k3e.md) method applies directly to the type it formats. In this case, the formatted type is a [Decimal](./decimal.md); this type conforms to Swift’s [BinaryInteger](../Swift/binaryinteger.md), which defines the `formatted(_:)` method. A [FormatStyle](./formatstyle.md) parameter indicates that the formatting should format the price as a currency, using U.S. dollars.
 
 For more sophisticated formatting needs, some format styles support chaining modifier methods to customize a default style. The Caffé app includes a companion app for Apple Watch that shows the next date when the user is eligible to receive a free coffee. The [Date](./date.md) presented in this view customizes the default [dateTime](./date/formatstyle/api-3798884-datetime.md) format style to show only the weekday, hour, and minute:
 
@@ -58,9 +58,9 @@ var str = date.formatted(.dateTime
                             .attributed)
 ```
 
-##### Use Attributed Strings to Style Text
+### Use Attributed Strings to Style Text
 
-The previous listing also uses the [attributed](./date/formatstyle/api-3796283-attributed.md) modifier to return an [AttributedString](./attributedstring.md). Attributed strings contain text and metadata that applies to ranges of that text. In this case, the attributed string returned by the formatter uses the [dateField](./attributescopes/foundationattributes/api-3796121-datefield.md) attribute to mark which ranges of text correspond to which parts of the formatted date. This allows the app to find the weekday attribute in the attribute container and change it to an orange foreground color attribute. The SwiftUI view can then use this attribute when styling the watch display.
+The previous listing also uses the [attributed](./date/formatstyle/attributed-swift.property.md) modifier to return an [AttributedString](./attributedstring.md). Attributed strings contain text and metadata that applies to ranges of that text. In this case, the attributed string returned by the formatter uses the [dateField](./attributescopes/foundationattributes/datefield.md) attribute to mark which ranges of text correspond to which parts of the formatted date. This allows the app to find the weekday attribute in the attribute container and change it to an orange foreground color attribute. The SwiftUI view can then use this attribute when styling the watch display.
 
 ```swift
 let weekday = AttributeContainer
@@ -111,7 +111,7 @@ extension AttributeDynamicLookup {
 }
 ```
 
-The implementation of `RainbowText` uses these attributes by creating an [`AttributedString`](./attributedstring.md) and calling a private `annotateRainbowColors(from:)` method to apply its color attributes. To create an `AttributedString` that uses custom attribute scopes, Caffé uses the [init(localized:options:table:bundle:locale:comment:including:)](./attributedstring/api-3867591-init.md) initializer, passing the key path to the custom attribute name as the `including:` parameter:
+The implementation of `RainbowText` uses these attributes by creating an [`AttributedString`](./attributedstring.md) and calling a private `annotateRainbowColors(from:)` method to apply its color attributes. To create an `AttributedString` that uses custom attribute scopes, Caffé uses the [init(localized:options:table:bundle:locale:comment:including:)](./attributedstring/init%28localized,options,table,bundle,locale,comment,including%29-5jzpg.md) initializer, passing the key path to the custom attribute name as the `including:` parameter:
 
 ```swift
 init(_ localizedKey: String.LocalizationValue) {
@@ -128,7 +128,7 @@ RainbowText("^[Fast](rainbow: 'fun') & ^[Delicious](rainbow: 'extreme') Food")
     .frame(maxWidth: 260, alignment: .leading)
 ```
 
-##### Simplify Localization by Performing Grammar Agreement Automatically
+### Simplify Localization by Performing Grammar Agreement Automatically
 
 Some languages’ grammar require that nouns, adjectives, articles, and other parts of speech agree in number or gender with other parts of a sentence. Localized attributed strings can perform this agreement by using a template string to format the values at runtime.
 

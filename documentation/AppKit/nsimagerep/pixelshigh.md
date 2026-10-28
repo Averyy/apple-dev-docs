@@ -19,7 +19,7 @@ var pixelsHigh: Int { get set }
 @property NSInteger pixelsHigh;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is the height of the image, measured in the units of the device coordinate space. This value is usually derived from the image data itself.
 

@@ -21,7 +21,7 @@ func handleTouchMoved(at point: CGPoint, index: Int) -> Bool
 - (BOOL) handleTouchMovedAtPoint:(CGPoint) point index:(NSInteger) index;
 ```
 
-#### Return Value
+## Return Value
 
 `YES` if the touch was handled by a control, `NO` otherwise.
 

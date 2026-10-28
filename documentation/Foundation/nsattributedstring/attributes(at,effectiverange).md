@@ -25,11 +25,11 @@ func attributes(at location: Int, effectiveRange range: NSRangePointer?) -> [NSA
 - (NSDictionary<NSString *,id> *) attributesAtIndex:(NSUInteger) location effectiveRange:(NSRangePointer) range;
 ```
 
-#### Return Value
+## Return Value
 
 The attributes for the character at `index`.
 
-#### Discussion
+## Discussion
 
 Raises an [`rangeException`](../nsexceptionname/rangeexception.md) if `index` lies beyond the end of the receiver’s characters.
 

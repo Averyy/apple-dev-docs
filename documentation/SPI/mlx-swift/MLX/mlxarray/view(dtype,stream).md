@@ -17,11 +17,11 @@ View the array as a different type.
 func view(dtype: DType, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Return Value
+## Return Value
 
 Array with the new type
 
-#### Discussion
+## Discussion
 
 The output array will change along the last axis if the input array’s type and the output array’s type do not have the same size.
 

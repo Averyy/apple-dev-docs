@@ -25,7 +25,7 @@ let kSecAttrSecurityDomain: CFString
 extern CFStringRef const kSecAttrSecurityDomain;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is of type [`CFString`](../CoreFoundation/cfstring.md) and represents the Internet security domain. Items of class [`kSecClassInternetPassword`](./ksecclassinternetpassword.md) have this attribute.
 

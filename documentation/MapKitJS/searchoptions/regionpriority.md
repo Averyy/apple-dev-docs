@@ -15,7 +15,7 @@ A region priority value that controls whether results occur outside, or strictl
 regionPriority?: RegionPriority;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to filter places that exist outside the bounds of a region that may have the same name.
 

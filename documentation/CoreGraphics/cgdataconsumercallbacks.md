@@ -25,7 +25,7 @@ struct CGDataConsumerCallbacks
 struct CGDataConsumerCallbacks;
 ```
 
-#### Overview
+## Overview
 
 The functions specified by the `CGDataConsumerCallbacks` structure are responsible for copying data that Core Graphics sends to your consumer and for handling the consumer’s basic memory management. You supply this structure to the function [`init(info:cbks:)`](./cgdataconsumer/init%28info,cbks%29.md) to create a data consumer.
 

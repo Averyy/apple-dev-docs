@@ -6,7 +6,7 @@
 
 The VR world atom container.
 
-#### Overview
+## Overview
 
 The sample description structure is extended to hold this atom container.
 

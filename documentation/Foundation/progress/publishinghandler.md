@@ -25,7 +25,7 @@ typealias PublishingHandler = @Sendable (Progress) -> Progress.UnpublishingHandl
 typedef void (^(^)(NSProgress *))(void) NSProgressPublishingHandler;
 ```
 
-#### Return Value
+## Return Value
 
 An optional block that the system invokes when the observed progress object invokes [`unpublish()`](./unpublish%28%29.md), the publishing process terminates, or you invoke [`removeSubscriber(_:)`](./removesubscriber%28_%29.md).
 

@@ -5,7 +5,7 @@
 
 Configure a rasterization rate map to vary rasterization rates depending on the amount of detail needed.
 
-#### Overview
+## Overview
 
 In complex 3D applications, you perform many calculations to render each pixel in the output image, generating a high-quality result. However, as your render targets get larger and screen resolutions increase, the cost to render so many pixels at high quality becomes too great.
 
@@ -13,7 +13,7 @@ One common solution is to render intermediate images at a lower resolution and t
 
 Another way to reduce rendering cost is to avoid complex calculations in parts of the rendered image when you don’t need the detail in those parts or the app discards them later in the rendering process. For example, if you plan to apply a blur effect to part of your image as a postprocessing step, you don’t need to incur the cost of rendering those pixels with great detail, because the blur effect removes the details.
 
-##### Implement variable rasterization rates
+### Implement variable rasterization rates
 
 In Metal, you can combine these two solutions by using variable rasterization rates (VRR). You specify different rasterization rates for different parts of the render target. When you need detail, you render those areas of the target at full resolution. In areas that don’t need detail, you specify a lower resolution rate, which means that you need fewer pixels in those areas and fewer invocations of your fragment shader.
 
@@ -26,7 +26,7 @@ To use VRR, you create a rasterization map to divide the render target into zone
 
 After you’ve finished rendering intermediate data using the rate map, you execute additional draw commands to stretch the intermediate data and copy it to another texture at the higher resolution, such as a texture provided by a Metal drawable for display. This final target is called a *full-rate image*, because it uses the normal rasterization uniformly across the image. After you generate the full-rate image, you can apply additional processing to it. For example, you usually want to render user interface elements on top of the full-rate image.
 
-##### Check for VRR support
+### Check for VRR support
 
 Not all GPUs support VRR. Before attempting to use it, check for support on the device object:
 

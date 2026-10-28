@@ -23,7 +23,7 @@ var statusBarStyle: UIStatusBarStyle { get set }
 @property (nonatomic, readonly) UIStatusBarStyle statusBarStyle;
 ```
 
-#### Discussion
+## Discussion
 
 The value of the property is a [`UIStatusBarStyle`](../uistatusbarstyle.md) constant that indicates the style of status. The default style is [`UIStatusBarStyle.default`](../uistatusbarstyle/default.md). Changing this property sets the new style immediately without animations.
 

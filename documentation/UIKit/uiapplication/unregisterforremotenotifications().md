@@ -23,7 +23,7 @@ func unregisterForRemoteNotifications()
 - (void) unregisterForRemoteNotifications;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method when your app no longer needs to receive push notifications, such as when:
 

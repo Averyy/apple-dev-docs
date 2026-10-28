@@ -24,7 +24,7 @@ class CNContactFetchRequest
 @interface CNContactFetchRequest : CNFetchRequest
 ```
 
-#### Overview
+## Overview
 
 You need at least one contact property key to fetch a contact’s properties. Use this class with the [`enumerateContacts(with:usingBlock:)`](./cncontactstore/enumeratecontacts%28with,usingblock%29.md) method to execute the contact fetch request.
 

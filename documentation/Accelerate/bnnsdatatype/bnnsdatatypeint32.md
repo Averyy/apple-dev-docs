@@ -19,7 +19,7 @@
 BNNSDataTypeInt32
 ```
 
-#### Discussion
+## Discussion
 
 Storage data type
 

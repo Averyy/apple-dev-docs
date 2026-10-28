@@ -15,7 +15,7 @@ The physical minimum for this element’s data.
 var physicalMinimum: Int64?
 ```
 
-#### Discussion
+## Discussion
 
 The physical minimum combines with the physical maximum to determine the shifting and scaling required to transform the raw report data into the actual value that has meaning for the device.
 

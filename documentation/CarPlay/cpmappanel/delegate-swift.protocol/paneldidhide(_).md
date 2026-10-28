@@ -21,7 +21,7 @@ optional func panelDidHide(_ panel: CPMapPanel)
 - (void) panelDidHide:(CPMapPanel *) panel;
 ```
 
-#### Discussion
+## Discussion
 
 Shortly after the system removes a map panel from your CarPlay interface, the system calls this method to give you a chance to respond. Use this method to perform any cleanup tasks associated with the panel’s disappearance. The system calls this method on your app’s main thread.
 

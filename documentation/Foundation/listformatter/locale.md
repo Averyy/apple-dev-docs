@@ -25,7 +25,7 @@ var locale: Locale! { get set }
 @property (copy, null_resettable) NSLocale * locale;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`autoupdatingCurrent`](../nslocale/autoupdatingcurrent.md). If you set this property to `nil`, the formatter resets to using [`autoupdatingCurrent`](../nslocale/autoupdatingcurrent.md).
 

@@ -23,7 +23,7 @@ let kCFStreamSSLAllowsExpiredRoots: CFString
 extern CFStringRef const kCFStreamSSLAllowsExpiredRoots;
 ```
 
-#### Discussion
+## Discussion
 
 By default, the value of this key is `kCFBooleanFalse` (expired root certificates are not allowed).
 

@@ -19,7 +19,7 @@ enum NestingMode
 enum NSRuleEditorNestingMode : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 See `Nesting Modes` for possible values.
 

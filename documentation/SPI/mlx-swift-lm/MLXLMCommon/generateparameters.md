@@ -17,7 +17,7 @@ Parameters for text generation, see [`TokenIterator`](./tokeniterator.md).
 struct GenerateParameters
 ```
 
-#### Overview
+## Overview
 
 This produces:
 

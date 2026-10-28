@@ -17,7 +17,7 @@ Constraints on the device’s date and time settings.
 struct DateAndTimeSettings
 ```
 
-#### Overview
+## Overview
 
 Use `DateAndTimeSettings` to prevent the user from changing their device’s date and time.
 

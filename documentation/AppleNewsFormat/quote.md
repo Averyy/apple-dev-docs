@@ -20,11 +20,11 @@ object Quote
 - [Using HTML with Apple News Format](../AppleNews/using-html-with-apple-news-format.md)
 - [Using Markdown with Apple News Format](../AppleNews/using-markdown-with-apple-news-format.md)
 
-#### Discussion
+## Discussion
 
 Use the `Quote` component to indicate the text of a quotation. A `quote` is a unique portion of text, while a pull quote duplicates a selection of text.
 
-##### Example
+### Example
 
 ```json
 {

@@ -16,7 +16,7 @@ Try to turn on packet notifications for this address space.
 Boolean (*TurnOnNotification)(IOFireWireLibPseudoAddressSpaceRef self);
 ```
 
-#### Return Value
+## Return Value
 
 Returns true upon success
 

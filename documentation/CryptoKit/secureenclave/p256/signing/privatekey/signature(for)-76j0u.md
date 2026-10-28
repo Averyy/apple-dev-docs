@@ -21,7 +21,7 @@ Generates an elliptic curve digital signature algorithm (ECDSA) signature of the
 func signature<D>(for data: D) throws -> P256.Signing.ECDSASignature where D : DataProtocol
 ```
 
-#### Return Value
+## Return Value
 
 A cryptographic signature. The signing algorithm employs randomization to generate a different signature on every call, even for the same data and key.
 

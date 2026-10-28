@@ -20,7 +20,7 @@ Selects the level of processing time allocated to achieve compression.
 enum ASTCQuality
 ```
 
-#### Overview
+## Overview
 
 > ❗ **Important**: Given its processing cost, runtime compression isn’t recommended for interactive apps, as opposed to loading `.reality` files or `.ktx` precompressed textures. Higher quality levels are recommended for pipelines assembling scenes you intend to export to `.reality` files.
 

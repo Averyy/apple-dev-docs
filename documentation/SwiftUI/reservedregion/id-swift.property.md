@@ -21,7 +21,7 @@ The identifier of the region.
 var id: ReservedRegion.ID { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use the identifier to tell whether a region you saw in an earlier query is still there or is a different region.
 

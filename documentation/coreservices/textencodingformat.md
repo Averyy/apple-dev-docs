@@ -16,7 +16,7 @@ Specify a text encoding format.
 typedef UInt32 TextEncodingFormat;
 ```
 
-#### Discussion
+## Discussion
 
 A text encoding format specifies a way of formatting or algorithmically transforming a particular base encoding. For example, the UTF-7 format is the Unicode standard formatted for transmission through channels that can handle only 7-bit values. Other text encoding formats for Unicode include UTF-8 and 16-bit or 32-bit formats. These transformations are not viewed as different base encodings. Rather, they are different formats for representing the same base encoding.
 

@@ -19,7 +19,7 @@ var isAnimating: Bool { get }
 @property (atomic, readonly, getter=isAnimating) BOOL animating;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) when the screen saver is animating, and [`false`](../../Swift/false.md) when it isn’t.
 

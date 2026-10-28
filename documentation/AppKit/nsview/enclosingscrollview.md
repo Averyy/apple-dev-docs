@@ -19,7 +19,7 @@ var enclosingScrollView: NSScrollView? { get }
 @property (strong, readonly, nullable) NSScrollView * enclosingScrollView;
 ```
 
-#### Discussion
+## Discussion
 
 If the current view is not embedded inside a scroll view, the value of this property is `nil`. This property does not contain the current view if the current view is itself a scroll view. It always contains an ancestor scroll view.
 

@@ -22,7 +22,7 @@ var hoverPose: UIPencilHoverPose? { get }
 @property (nonatomic, strong, readonly, nullable) UIPencilHoverPose * hoverPose;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is `nil` if Apple Pencil isn’t close enough to the screen to detect a hover, or if the device doesn’t support hover.
 

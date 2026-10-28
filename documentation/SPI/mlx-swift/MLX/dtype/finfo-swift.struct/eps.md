@@ -17,7 +17,7 @@ The difference between 1.0 and the next smallest representable float larger than
 var eps: Double { get }
 ```
 
-#### Discussion
+## Discussion
 
 In Swift this is e.g. `Double.ulpOfOne`
 

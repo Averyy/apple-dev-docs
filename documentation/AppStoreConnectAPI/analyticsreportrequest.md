@@ -15,7 +15,7 @@ A request to generate ongoing analytics reports for an app, specifying the repor
 object AnalyticsReportRequest
 ```
 
-#### Discussion
+## Discussion
 
 To learn more about the response that includes this analytics report request object, see [`AnalyticsReportRequestCreateRequest`](./analyticsreportrequestcreaterequest.md).
 

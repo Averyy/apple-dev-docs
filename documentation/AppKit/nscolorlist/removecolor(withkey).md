@@ -19,7 +19,7 @@ func removeColor(withKey key: NSColor.Name)
 - (void) removeColorWithKey:(NSColorName) key;
 ```
 
-#### Discussion
+## Discussion
 
 This method does nothing if the receiver doesn’t contain the key. This method posts [`didChangeNotification`](./didchangenotification.md) to the default notification center. It raises `NSColorListNotEditableException` if the receiver is not editable.
 

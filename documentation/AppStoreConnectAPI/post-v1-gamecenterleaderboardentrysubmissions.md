@@ -14,11 +14,11 @@ Add a new score for a player to a leaderboard.
 - [App Store Connect API 3.2 release notes](./app-store-connect-api-3-2-release-notes.md)
 - [App Store Connect API 4.3 release notes](./app-store-connect-api-4-3-release-notes.md)
 
-#### Discussion
+## Discussion
 
 Use the `preReleased` attribute to indicate whether the requested change applies to the game’s release version or its prerelease version. Set `preReleased` to `true` to indicate that the change applies to the game’s prerelease version.
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

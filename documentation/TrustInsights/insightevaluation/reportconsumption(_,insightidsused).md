@@ -16,7 +16,7 @@ Reports the consumption status, and optionally provides one or more associated i
 final func reportConsumption(_ status: InsightEvaluationConsumptionStatus, insightIDsUsed: [String])
 ```
 
-#### Discussion
+## Discussion
 
 Before releasing an [`InsightEvaluation`](../insightevaluation.md), call this to report how your app used the results. The system may present this value in transparency reporting and also helps with model improvement.
 

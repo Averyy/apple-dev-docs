@@ -21,7 +21,7 @@ Creates a new instance that approximates the given value.
 init(_ other: Float16)
 ```
 
-#### Discussion
+## Discussion
 
 The value of `other` is rounded to a representable value, if necessary. A NaN passed as `other` results in another NaN, with a signaling NaN value converted to quiet NaN.
 

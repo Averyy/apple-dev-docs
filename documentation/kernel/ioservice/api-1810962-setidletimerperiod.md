@@ -12,11 +12,11 @@ virtual IOReturn setIdleTimerPeriod(
  unsignedperiod );
 ```
 
-#### Return Value
+## Return Value
 
 `kIOReturnSuccess` upon success; an I/O Kit error code otherwise.
 
-#### Overview
+## Overview
 
 A driver using the idleness determination provided by IOService calls its superclass with this method to set or change the idle timer period. See activityTickle for a description of this type of idleness determination.
 

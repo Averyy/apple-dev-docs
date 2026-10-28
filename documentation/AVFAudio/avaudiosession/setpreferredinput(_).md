@@ -23,7 +23,7 @@ func setPreferredInput(_ inPort: AVAudioSessionPortDescription?) throws
 - (BOOL) setPreferredInput:(AVAudioSessionPortDescription *) inPort error:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 Setting the preferred input port requests a change to the input audio route. To determine whether the change has taken effect, use the [`currentRoute`](./currentroute.md) property.
 

@@ -24,7 +24,7 @@ class INObjectResolutionResult
 @interface INObjectResolutionResult : INIntentResolutionResult
 ```
 
-#### Overview
+## Overview
 
 An [`INObjectResolutionResult`](./inobjectresolutionresult.md) object is what you return when resolving Object related parameters of an intent object. Use the creation method that best reflects your ability to successfully resolve the parameter.
 

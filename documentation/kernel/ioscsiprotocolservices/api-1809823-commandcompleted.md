@@ -14,7 +14,7 @@ void CommandCompleted (
  SCSITaskStatustaskStatus );
 ```
 
-#### Overview
+## Overview
 
 Subclasses will call this inherited method when the command executed by SendSCSICommand has completed.
 

@@ -23,7 +23,7 @@ func setNeedsCellUpdate()
 - (void) setNeedsCellUpdate;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method when you want to update the contents of the placeholder cell. When you call this method, UIKit calls the update handler that you originally passed to the `drop(_:toPlaceholderInsertedAt:withReuseIdentifier:cellUpdateHandler:)` method when creating the cell.
 

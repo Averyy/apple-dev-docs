@@ -25,7 +25,7 @@ let kCMTextMarkupAttribute_CharacterEdgeStyle: CFString
 extern CFStringRef const kCMTextMarkupAttribute_CharacterEdgeStyle;
 ```
 
-#### Discussion
+## Discussion
 
 This attribute’s value must be one of the constants listed below that control the shape of the edges of drawn characters. The default value is [`kCMTextMarkupCharacterEdgeStyle_None`](./kcmtextmarkupcharacteredgestyle_none.md).
 

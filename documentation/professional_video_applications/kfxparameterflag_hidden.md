@@ -19,7 +19,7 @@ var kFxParameterFlag_HIDDEN: Int { get }
 kFxParameterFlag_HIDDEN
 ```
 
-#### Discussion
+## Discussion
 
 Note that this visibility control is independent of the [`kFxParameterFlag_DONT_DISPLAY_IN_DASHBOARD`](./kfxparameterflag_dont_display_in_dashboard.md) flag. It is possible to have a parameter that appears in the dashboard but not in the inspector, or vice versa.
 

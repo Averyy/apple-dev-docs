@@ -18,7 +18,7 @@ Creates a new modified shape by applying the provided inset to this shape.
 func inset(by amount: CGFloat) -> UIShape
 ```
 
-#### Discussion
+## Discussion
 
 You can use negative values to add inner padding to a shape.
 

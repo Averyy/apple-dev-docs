@@ -22,7 +22,7 @@ var hotSpot: NSPoint { get }
 @property (readonly) NSPoint hotSpot;
 ```
 
-#### Discussion
+## Discussion
 
 The hot spot precisely determines the click location within the cursor’s image. Using its flipped coordinate system, you calculate the hot spot in points with the top-left corner acting as the origin. For example, the arrow cursor’s hot spot is at the intersection of its left and right edges, which is inset 4pts from the image’s corner to account for the arrow’s stroke and shadow.
 

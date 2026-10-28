@@ -24,7 +24,7 @@ var tileBuffers: MTLPipelineBufferDescriptorArray { get }
 @property (readonly) MTLPipelineBufferDescriptorArray * tileBuffers;
 ```
 
-#### Discussion
+## Discussion
 
 This property returns an array of [`MTLPipelineBufferDescriptor`](../mtlpipelinebufferdescriptor.md) objects, with each array index corresponding to the same index in the buffer argument table for the render pipeline’s tile shader.
 

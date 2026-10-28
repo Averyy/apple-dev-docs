@@ -19,7 +19,7 @@ class let followLinkFreestandingTemplateName: String
 extern NSImageName const NSImageNameFollowLinkFreestandingTemplate;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this image to implement a borderless button.
 

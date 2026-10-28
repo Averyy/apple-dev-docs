@@ -22,11 +22,11 @@ nonisolated
 func layoutDirectionBehavior(_ behavior: LayoutDirectionBehavior) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that conditionally mirrors its contents horizontally in a given layout direction.
 
-#### Discussion
+## Discussion
 
 Use `layoutDirectionBehavior(_:)` when you need the system to horizontally mirror the contents of the view when presented in a layout direction.
 

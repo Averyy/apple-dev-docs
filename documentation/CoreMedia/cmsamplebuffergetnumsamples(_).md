@@ -25,7 +25,7 @@ func CMSampleBufferGetNumSamples(_ sbuf: CMSampleBuffer) -> CMItemCount
 extern CMItemCount CMSampleBufferGetNumSamples(CMSampleBufferRef sbuf);
 ```
 
-#### Return Value
+## Return Value
 
 The number of media samples in the `CMSampleBuffer`. 0 is returned if there is an error.
 

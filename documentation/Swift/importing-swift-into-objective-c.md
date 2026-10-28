@@ -5,7 +5,7 @@
 
 Access Swift types and declarations from within your Objective-C codebase.
 
-#### Overview
+## Overview
 
 You can work with types declared in Swift from within the Objective-C code in your project by importing an Xcode-generated header file. This file is an Objective-C header that declares the Swift interfaces in your target, and you can think of it as an umbrella header for your Swift code. You don’t need to do anything special to create the generated header—just import it to use its contents in your Objective-C code.
 
@@ -15,7 +15,7 @@ The header’s name is generated from your product module name, followed by `"-S
 
 The process for importing Swift declarations into Objective-C code differs slightly depending on whether you’re writing an app or a framework. Both processes are described below.
 
-##### Import Code Within an App Target
+### Import Code Within an App Target
 
 When you’re building an app target, you can import your Swift code into any Objective-C `.m` file within that same target using this syntax and substituting the appropriate name:
 
@@ -29,7 +29,7 @@ The Swift interfaces in the generated header include references to all of the Ob
 
 When building an app target, you can provide a custom name for the product module by changing the Product Module Name build setting. Xcode uses this name when naming the generated header file.
 
-##### Import Code Within a Framework Target
+### Import Code Within a Framework Target
 
 To import a set of Swift files in the same framework target as your Objective-C code, import the Xcode-generated header for your Swift code into any Objective-C `.m` file where you want to use your Swift code.
 
@@ -44,7 +44,7 @@ Import Swift code into Objective-C within the same framework:
 #import <ProductName/ProductModuleName-Swift.h>
 ```
 
-##### Include Swift Classes in Objective-C Headers Using Forward Declarations
+### Include Swift Classes in Objective-C Headers Using Forward Declarations
 
 When declarations in an Objective-C header file refer to a Swift class or protocol that comes from the same target, importing the generated header creates a cyclical reference. To avoid this, use a forward declaration of the Swift class or protocol to reference it in an Objective-C interface.
 

@@ -18,7 +18,7 @@ typealias PGPhysicalMemoryRange_t = PGPhysicalMemoryRange_s
 typedef struct PGPhysicalMemoryRange_s PGPhysicalMemoryRange_t;
 ```
 
-#### Discussion
+## Discussion
 
 A struct for a guest physical memory range
 

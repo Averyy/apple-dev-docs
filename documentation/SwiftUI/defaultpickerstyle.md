@@ -21,7 +21,7 @@ The default picker style, based on the picker’s context.
 struct DefaultPickerStyle
 ```
 
-#### Overview
+## Overview
 
 You can also use [`automatic`](./pickerstyle/automatic.md) to construct this style.
 

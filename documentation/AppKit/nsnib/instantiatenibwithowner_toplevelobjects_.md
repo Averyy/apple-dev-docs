@@ -17,11 +17,11 @@ Unarchives and instantiates the in-memory contents of the receiver’s nib file,
 - (BOOL) instantiateNibWithOwner:(id) owner topLevelObjects:(NSArray **) topLevelObjects;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the nib file’s contents were instantiated successfully; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 You may use this method to instantiate a nib file multiple times. This is a convenience method that composes the name-table dictionary and invokes the [`instantiateNibWithExternalNameTable:`](./instantiatenibwithexternalnametable_.md) method, passing it the name table.
 

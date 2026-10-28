@@ -15,7 +15,7 @@ The hosting view’s associated window will have its title and subtitle populate
 static let title: NSHostingSceneBridgingOptions
 ```
 
-#### Discussion
+## Discussion
 
 Title bars populated in this manner overwrite any values set using AppKit.
 

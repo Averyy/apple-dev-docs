@@ -20,11 +20,11 @@ Initializes the intent object with the specified climate settings information.
 convenience init(radioType: INRadioType = .unknown, frequency: Double? = nil, stationName: String? = nil, channel: String? = nil, presetNumber: Int? = nil)
 ```
 
-#### Return Value
+## Return Value
 
 An initialized intent object or `nil` if the object could not be created.
 
-#### Discussion
+## Discussion
 
 Normally, you don’t create instances of this class yourself. Instead, SiriKit creates instances when the user asks to change the radio station. However, you can use this method during testing to create intent objects in order to validate your intent handling code paths.
 

@@ -6,14 +6,17 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.lo
 
 # mlx.core.logical_not
 
-**logical_not(*a: array*, */*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.md#mlx.core.array)**
-: Element-wise logical not.
+```python
+logical_not(a: array, /, *, stream: StreamOrDevice = None) → array
+```
 
-Parameters:
-**a** ([array](mlx.core.array.md#mlx.core.array)) – Input array or scalar.
+Element-wise logical not.
 
-Returns:
-The boolean array containing the logical not of `a`.
+**Parameters:**
+: **a** ([array](mlx.core.array.md#mlx.core.array)) – Input array or scalar.
 
-Return type:
-[array](mlx.core.array.md#mlx.core.array)
+**Returns:**
+: The boolean array containing the logical not of `a`.
+
+**Return type:**
+: [array](mlx.core.array.md#mlx.core.array)

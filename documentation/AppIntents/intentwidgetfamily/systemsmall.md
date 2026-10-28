@@ -20,7 +20,7 @@ A small widget.
 case systemSmall
 ```
 
-#### Discussion
+## Discussion
 
 The small system widget can appear on the Home Screen or in the Today View in iOS and iPadOS, or in the Notification Center on macOS.
 

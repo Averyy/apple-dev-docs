@@ -19,7 +19,7 @@ func panelType() -> IMKCandidatePanelType
 - (IMKCandidatePanelType) panelType;
 ```
 
-#### Return Value
+## Return Value
 
 A [`IMKCandidatePanelType`](../imkcandidatepaneltype.md) constant that represents the style of the candidates window.
 

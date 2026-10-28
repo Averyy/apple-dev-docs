@@ -19,7 +19,7 @@ optional func webView(_ sender: WebView!, didReceiveIcon image: NSImage!, for fr
 - (void) webView:(WebView *) sender didReceiveIcon:(NSImage *) image forFrame:(WebFrame *) frame;
 ```
 
-#### Discussion
+## Discussion
 
 This method may be invoked multiple times before all resources for `frame` are completely loaded. Sometimes a page uses a default icon or stored image that changes when the actual images is loaded.
 

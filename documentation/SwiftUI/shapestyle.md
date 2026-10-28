@@ -21,7 +21,7 @@ A color or pattern to use when rendering a shape.
 protocol ShapeStyle : Sendable
 ```
 
-#### Overview
+## Overview
 
 You create custom shape styles by declaring a type that conforms to the `ShapeStyle` protocol and implementing the required `resolve` function to return a shape style that represents the desired appearance based on the current environment.
 

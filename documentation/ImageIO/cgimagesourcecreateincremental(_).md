@@ -25,11 +25,11 @@ func CGImageSourceCreateIncremental(_ options: CFDictionary?) -> CGImageSource
 extern CGImageSourceRefCGImageSourceCreateIncremental(CFDictionaryRef options);
 ```
 
-#### Return Value
+## Return Value
 
 An empty image source object. You’re responsible for releasing this type using [`CFRelease`](../CoreFoundation/cfrelease.md).
 
-#### Discussion
+## Discussion
 
 This function creates an empty image source container, which you use to accumulate data downloaded in chunks from the network. To add new chunks of data to the image source, call the [`CGImageSourceUpdateDataProvider(_:_:_:)`](./cgimagesourceupdatedataprovider%28_,_,_%29.md) or [`CGImageSourceUpdateData(_:_:_:)`](./cgimagesourceupdatedata%28_,_,_%29.md) functions.
 

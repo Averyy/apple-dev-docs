@@ -17,11 +17,11 @@ Applies Group Normalization [1] on the inputs.
 class GroupNorm
 ```
 
-##### References
+### References
 
 1. [https://arxiv.org/abs/1803.08494](https://arxiv.org/abs/1803.08494)
 
-##### See also
+### See also
 
 - [Normalization](./normalization.md)
 

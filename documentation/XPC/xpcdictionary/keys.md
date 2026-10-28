@@ -21,7 +21,7 @@ A collection containing just the keys of the dictionary.
 var keys: [String] { get }
 ```
 
-#### Discussion
+## Discussion
 
 When iterated over, keys appear in this collection in the same order as they occur in the dictionary’s key-value pairs. Each key in the keys collection has a unique value.
 

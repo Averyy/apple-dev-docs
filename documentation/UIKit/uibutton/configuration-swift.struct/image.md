@@ -19,7 +19,7 @@ The foreground image the button displays.
 var image: UIImage? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 A configuration contains one image. To change the image based on button state, use [`configurationUpdateHandler`](../configurationupdatehandler-swift.property.md) or [`updateConfiguration()`](../updateconfiguration%28%29.md).
 

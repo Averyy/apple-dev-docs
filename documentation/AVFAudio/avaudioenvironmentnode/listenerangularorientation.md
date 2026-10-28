@@ -24,7 +24,7 @@ var listenerAngularOrientation: AVAudio3DAngularOrientation { get set }
 @property (nonatomic) AVAudio3DAngularOrientation listenerAngularOrientation;
 ```
 
-#### Discussion
+## Discussion
 
 The system specifies all angles in degrees.
 

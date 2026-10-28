@@ -23,7 +23,7 @@ func crop(at origin: CGPoint, destination: vImage.PixelBuffer<Format>)
 
 Available when `Format` conforms to `StaticPixelFormat`.
 
-#### Discussion
+## Discussion
 
 For example, the following code populates a pixel buffer from the center 3 x 3 pixels of a 5 x 5 planar buffer:
 

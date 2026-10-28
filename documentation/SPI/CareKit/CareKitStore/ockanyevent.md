@@ -17,7 +17,7 @@ A representation of a single occassion which a task was scheduled to occur on.
 struct OCKAnyEvent
 ```
 
-#### Overview
+## Overview
 
 The event contains a copy of the task itself, as well as the schedule event and an outcome that is non-`nil` if progress occurred on the task.
 

@@ -25,7 +25,7 @@ func linkItem(atPath srcPath: String, toPath dstPath: String) throws
 - (BOOL) linkItemAtPath:(NSString *) srcPath toPath:(NSString *) dstPath error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to create hard links between files in the current file system. If `srcPath` is a directory, this method creates a new directory at `dstPath` and then creates hard links for the items in that directory. If `srcPath` is (or contains) a symbolic link, the symbolic link is copied to the new location and not converted to a hard link.
 

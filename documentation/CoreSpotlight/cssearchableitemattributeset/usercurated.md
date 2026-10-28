@@ -23,7 +23,7 @@ var userCurated: NSNumber? { get set }
 @property (strong, getter=isUserCurated, nullable) NSNumber * userCurated;
 ```
 
-#### Discussion
+## Discussion
 
 Examples of items to set this property on include media content the user downloads and websites or news articles the user bookmarks.
 

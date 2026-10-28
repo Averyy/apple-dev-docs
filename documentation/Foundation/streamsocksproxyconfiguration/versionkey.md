@@ -25,7 +25,7 @@ static let versionKey: StreamSOCKSProxyConfiguration
 extern NSStreamSOCKSProxyConfiguration const NSStreamSOCKSProxyVersionKey;
 ```
 
-#### Discussion
+## Discussion
 
 If this key is not present, `NSStreamSOCKSProxyVersion5` is used by default.
 

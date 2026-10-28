@@ -22,7 +22,7 @@ case selecting
 UIBandSelectionInteractionStateSelecting
 ```
 
-#### Discussion
+## Discussion
 
 Use this state to select items that intersect the current selection rectangle.
 

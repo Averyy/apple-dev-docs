@@ -17,7 +17,7 @@ static func planarStacked(layout: [EquipmentPose2D], animationDuration: Double? 
 
 Available when `Self` is `DefaultEquipmentLayout`.
 
-#### Discussion
+## Discussion
 
 The height of the children is calculated by going over each equipment in the layout in the provided order and moving it to the lowest possible position so that it touches either the table or any of the siblings already placed.
 

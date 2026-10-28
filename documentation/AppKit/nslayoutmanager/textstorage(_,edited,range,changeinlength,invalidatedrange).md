@@ -21,7 +21,7 @@ func textStorage(_ str: NSTextStorage, edited editedMask: Int = [], range newCha
 - (void) textStorage:(NSTextStorage *) str edited:(NSTextStorageEditedOptions) editedMask range:(NSRange) newCharRange changeInLength:(NSInteger) delta invalidatedRange:(NSRange) invalidatedCharRange;
 ```
 
-#### Discussion
+## Discussion
 
 This message is sent from the `NSTextStorage`object’s [`processEditing()`](../nstextstorage/processediting%28%29.md) method to indicate that its characters or attributes have changed. This method invalidates glyphs and layout for the affected characters.
 

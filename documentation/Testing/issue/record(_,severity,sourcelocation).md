@@ -21,11 +21,11 @@ static func record(_ comment: Comment? = nil, severity: Issue.Severity = .error,
 
 - [Migrating a test from XCTest](../migratingfromxctest.md)
 
-#### Return Value
+## Return Value
 
 The issue that was recorded.
 
-#### Discussion
+## Discussion
 
 Use this function if, while running a test, an issue occurs that cannot be represented as an expectation (using the [`expect(_:_:sourceLocation:)`](../expect%28_,_,sourcelocation%29.md) or [`require(_:_:sourceLocation:)`](../require%28_,_,sourcelocation%29-5l63q.md) macros.)
 

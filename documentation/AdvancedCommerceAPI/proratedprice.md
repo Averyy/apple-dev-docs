@@ -15,7 +15,7 @@ A prorated price, in milliunits of a currency, for an Advanced Commerce API SKU.
 int64 proratedPrice
 ```
 
-#### Discussion
+## Discussion
 
 For information about prices, see [Specifying prices for Advanced Commerce SKUs](./prices.md).
 

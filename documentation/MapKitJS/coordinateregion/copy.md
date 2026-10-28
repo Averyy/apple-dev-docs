@@ -15,7 +15,7 @@ Returns a copy of the calling coordinate region.
 copy(): CoordinateRegion;
 ```
 
-#### Return Value
+## Return Value
 
 A [`CoordinateRegion`](../coordinateregion.md) that is a copy of the calling coordinate region.
 

@@ -21,7 +21,7 @@ Creates an [`ArtworkRepresentation`](../artworkrepresentation.md) from a `CGImag
 init(cgImage: CGImage) throws
 ```
 
-#### Discussion
+## Discussion
 
 If the provided image uses an unsupported format, this initializer returns `nil`.
 

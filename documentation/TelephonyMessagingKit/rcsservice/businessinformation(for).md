@@ -15,7 +15,7 @@ Requests business information for a specified handle.
 final func businessInformation(for request: RCSService.BusinessInformationRequest) async throws -> RCSService.Business?
 ```
 
-#### Return Value
+## Return Value
 
 The actual render information structure or error.
 

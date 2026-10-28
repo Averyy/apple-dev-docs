@@ -20,7 +20,7 @@ A notification that posts after a keyboard connects to the device.
 static let GCKeyboardDidConnect: NSNotification.Name
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is a [`GCKeyboard`](../../../GameController/gckeyboard.md) object that represents the keyboard. If the user connects multiple keyboards, the framework posts this notification only after the first keyboard connects to the device.
 

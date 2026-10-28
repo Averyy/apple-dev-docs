@@ -25,7 +25,7 @@ class func lookupInfos(with recordIDs: [CKRecord.ID]) -> [CKUserIdentity.LookupI
 + (NSArray<CKUserIdentityLookupInfo *> *) lookupInfosWithRecordIDs:(NSArray<CKRecordID *> *) recordIDs;
 ```
 
-#### Discussion
+## Discussion
 
 Use the values that this method returns in an [`CKDiscoverUserIdentitiesOperation`](../../ckdiscoveruseridentitiesoperation.md) operation or an  [`CKFetchShareParticipantsOperation`](../../ckfetchshareparticipantsoperation.md) operation to retrieve the corresponding user identities.
 

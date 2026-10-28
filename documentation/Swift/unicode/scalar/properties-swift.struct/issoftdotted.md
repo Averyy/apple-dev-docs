@@ -21,7 +21,7 @@ A Boolean value indicating whether the scalar has a “soft dot” that disappea
 var isSoftDotted: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 For example, “i” is soft dotted because the dot disappears when adding an accent mark, as in “í”.
 

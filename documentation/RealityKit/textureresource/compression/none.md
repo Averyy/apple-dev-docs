@@ -20,7 +20,7 @@ A texture you can create with no compression.
 static var none: TextureResource.Compression { get }
 ```
 
-#### Discussion
+## Discussion
 
 If you export this to a `.reality` file using [`write(to:)`](../../entity/write%28to%29.md), the texture remains uncompressed.
 

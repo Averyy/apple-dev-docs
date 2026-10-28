@@ -24,7 +24,7 @@ void removeObject(uint32_t index);
 virtual void removeObject(unsigned int index);
 ```
 
-#### Discussion
+## Discussion
 
 Removes a current member of the array, shifting down all following members. The removed object is released.
 

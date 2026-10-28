@@ -16,7 +16,7 @@ The volume of the audio portion of the media element.
 attribute double volume;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property must be in the range from `0.0` (silent) to `1.0` (loudest); otherwise, a `INDEX_SIZE_ERR` DOM exception is raised. The default value is `1.0`.
 

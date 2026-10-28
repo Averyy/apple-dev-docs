@@ -14,7 +14,7 @@ Analyze video content and group faces in images using on-device machine learning
 - tvOS 27.0+
 - visionOS 27.0+
 
-#### Overview
+## Overview
 
 Media Intelligence provides on-device algorithms to analyze image and video content. Use it in video editors, photo organizers, and other media apps to add intelligence features without building the underlying analysis pipeline yourself.
 

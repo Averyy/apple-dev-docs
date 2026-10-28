@@ -11,7 +11,7 @@ Cover your app’s virtual content with people that ARKit perceives in the camer
 - iPadOS 13.0+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 By default, virtual content covers anything in the camera feed. For example, when a person passes in front of a virtual object, the object is drawn on top of the person, which can break the illusion of the AR experience.
 
@@ -23,7 +23,7 @@ To cover your app’s virtual content with people that ARKit perceives in the ca
 
 This sample renders its graphics using RealityKit, but you can follow the same steps to use people occlusion with SceneKit. To enable people occlusion in Metal apps, see [Effecting People Occlusion in Custom Renderers](./effecting-people-occlusion-in-custom-renderers.md).
 
-#### Verify device support for people occlusion
+## Verify device support for people occlusion
 
 People occlusion is supported on Apple A12 and later devices. Before attempting to enable people occlusion, verify that the user’s device supports it.
 
@@ -35,7 +35,7 @@ guard ARWorldTrackingConfiguration.supportsFrameSemantics(.personSegmentationWit
 
 > **Note**: If your device doesn’t support people occlusion, the sample stops. However, if the user’s device doesn’t support people occlusion, you should continue your AR experience without it.
 
-#### Enable people occlusion
+## Enable people occlusion
 
 If the user’s device supports people occlusion, enable it by adding the
 
@@ -59,7 +59,7 @@ Alternatively, the [`personSegmentation`](./arconfiguration/framesemantics-swift
 
 ![Screenshot of people occlusion with virtual background.](https://developer.apple.com/tutorials/images/com.apple.arkit/figure4-annotated.png)
 
-#### Disable people occlusion
+## Disable people occlusion
 
 You might choose to disable people occlusion for performance reasons if, for example, no virtual content is present in the scene, or if the device has reached a serious or critical [`thermalState`](../Foundation/processinfo/thermalstate-swift.property.md) (see [`ProcessInfo.ThermalState`](../Foundation/processinfo/thermalstate-swift.enum.md)). To temporarily disable people occlusion, remove that option from your app’s [`frameSemantics`](./arconfiguration/framesemantics-swift.property.md).
 

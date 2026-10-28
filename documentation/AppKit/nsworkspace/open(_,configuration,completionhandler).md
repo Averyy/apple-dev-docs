@@ -23,7 +23,7 @@ func open(_ url: URL, configuration: NSWorkspace.OpenConfiguration) async throws
 - (void) openURL:(NSURL *) url configuration:(NSWorkspaceOpenConfiguration *) configuration completionHandler:(void (^)(NSRunningApplication *app, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 You may call this method safely from any thread of your app.
 

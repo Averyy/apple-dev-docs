@@ -17,7 +17,7 @@ Applies the Step Activation Function.
 func step(_ x: MLXArray, threshold: Float = 0.0) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 This function implements a binary step activation, where the output is set to 1 if the input is greater than a specified threshold, and 0 otherwise.
 
@@ -27,7 +27,7 @@ This is:
 MLX.where(x .> threshold, 1, 0)
 ```
 
-##### See Also
+### See Also
 
 - [Activation Functions and Layers](./activations.md)
 - [`Step`](./step.md)

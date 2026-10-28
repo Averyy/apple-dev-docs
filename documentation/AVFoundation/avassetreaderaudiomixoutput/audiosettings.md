@@ -24,7 +24,7 @@ var audioSettings: [String : Any]? { get }
 @property (nonatomic, readonly, nullable) NSDictionary<NSString *,id> * audioSettings;
 ```
 
-#### Discussion
+## Discussion
 
 The dictionary must contain values for the keys in [Linear PCM format settings](../linear-pcm-format-settings.md).
 

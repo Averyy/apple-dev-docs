@@ -6,7 +6,7 @@
 
 A 32-bit field containing a four-character code for the color parameter type.
 
-#### Overview
+## Overview
 
 The currently defined types are `'nclc'` for video, and `'prof'` for print. The color parameter type distinguishes between print and video mappings. If the color parameter type is `'prof'`, then this field is followed by an ICC profile. This is the color model used by Apple’s ColorSync. The contents of this type are not defined in this documentation. Contact Apple for more information on the `'prof'` type `'colr'` extension. If the color parameter type is `'nclc'` then this atom contains the following fields:
 

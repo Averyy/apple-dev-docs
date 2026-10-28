@@ -24,7 +24,7 @@ class MKMultiPolygonRenderer
 @interface MKMultiPolygonRenderer : MKOverlayPathRenderer
 ```
 
-#### Overview
+## Overview
 
 Use this renderer to provide the style for multiple polygons created using [`MKMultiPolygon`](./mkmultipolygon.md).
 

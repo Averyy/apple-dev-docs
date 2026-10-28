@@ -24,7 +24,7 @@ case cfNetServiceErrorUnknown
 kCFNetServiceErrorUnknown
 ```
 
-#### Discussion
+## Discussion
 
 An unknown error occurred.
 

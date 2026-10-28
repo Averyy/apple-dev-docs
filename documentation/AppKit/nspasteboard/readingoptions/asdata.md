@@ -19,7 +19,7 @@ static var asData: NSPasteboard.ReadingOptions { get }
 NSPasteboardReadingAsData
 ```
 
-#### Discussion
+## Discussion
 
 This is the default value. AppKit returns the data in an [`NSData`](../../../Foundation/nsdata.md) object.
 

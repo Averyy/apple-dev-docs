@@ -18,7 +18,7 @@ A Boolean value indicating whether an app built with Mac Catalyst supports autom
 
 **Default**: `YES`
 
-#### Discussion
+## Discussion
 
 By default, the tabbing mode for an app built with Mac Catalyst that support multiple scenes is [`NSWindow.TabbingMode.automatic`](../../../AppKit/nswindow/tabbingmode-swift.enum/automatic.md). Starting with macOS 12, you can disable this behavior by adding the [`UIApplicationSupportsTabbedSceneCollection`](./uiapplicationsupportstabbedscenecollection.md) key with a value of [`false`](../../../Swift/false.md) to the [`UIApplicationSceneManifest`](../uiapplicationscenemanifest.md) key in your app’s `Info.plist` file.
 

@@ -21,7 +21,7 @@ Returns the interval between this date and another given date.
 func timeIntervalSince(_ date: Date) -> TimeInterval
 ```
 
-#### Return Value
+## Return Value
 
 The interval between the receiver and the `another` parameter. If the receiver is earlier than `anotherDate`, the return value is negative. If `anotherDate` is `nil`, the results are undefined.
 

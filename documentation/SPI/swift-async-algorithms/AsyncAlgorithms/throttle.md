@@ -8,17 +8,17 @@ framework: "swift-async-algorithms/AsyncAlgorithms"
 **Framework**: swift-async-algorithms/AsyncAlgorithms  
 **Role**: Article
 
-#### Overview
+## Overview
 
 - Author(s): [Philippe Hausler](https://github.com/phausler)
 
 [ [Source](https://github.com/apple/swift-async-algorithms/blob/main/Sources/AsyncAlgorithms/AsyncThrottleSequence.swift) | [Tests](https://github.com/apple/swift-async-algorithms/blob/main/Tests/AsyncAlgorithmsTests/TestThrottle.swift) ]
 
-#### Introduction
+## Introduction
 
 When events can potentially happen faster than the desired consumption rate, there are multiple ways to handle the situation. One approach is to emit values after a given period has elapsed. These emitted values can be reduced from the values encountered during the waiting period. This algorithm is commonly referred to as throttling.
 
-#### Proposed Solution
+## Proposed Solution
 
 The throttle algorithm produces elements such that at least a specific interval has elapsed between them. It transacts by measuring against a specific clock. If values are produced by the base `AsyncSequence` the throttle does not resume its next iterator until the period has elapsed or unless a terminal event is encountered.
 
@@ -58,7 +58,7 @@ fastEvents.throttle(for: .seconds(1))
 
 In this case, the throttle transforms a potentially fast asynchronous sequence of events into one that waits for a window of 1 second to elapse before emitting a value.
 
-#### Detailed Design
+## Detailed Design
 
 The type that implements the algorithm for throttle emits the same element type as the base that it applies to. It also throws when the base type throws (and likewise does not throw when the base type does not throw).
 
@@ -86,11 +86,11 @@ The `AsyncThrottleSequence` and its `Iterator` are conditionally `Sendable` if t
 
 The time in which events are measured are from the previous emission if present. If a duration has elapsed between the last emission and the point in time the throttle is measured then that duration is counted as elapsed. The first element is considered not throttled because no interval can be constructed from the start to the first element.
 
-#### Alternatives Considered
+## Alternatives Considered
 
 It was considered to only provide the “latest” style APIs, however the reduction version grants more flexibility and can act as a funnel to the implementations of `latest`.
 
-#### Credits/Inspiration
+## Credits/Inspiration
 
 http://reactivex.io/documentation/operators/sample.html
 

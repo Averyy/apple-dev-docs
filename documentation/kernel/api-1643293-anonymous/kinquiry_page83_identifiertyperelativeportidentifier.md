@@ -13,7 +13,7 @@
 kINQUIRY_Page83_IdentifierTypeRelativePortIdentifier = 4
 ```
 
-#### Discussion
+## Discussion
 
 Relative Target Port Identifier Type.
 

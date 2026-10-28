@@ -17,7 +17,7 @@ Routes a model’s decoded generation stream into reasoning (chain-of-thought) v
 struct ReasoningEventEmitter
 ```
 
-#### Overview
+## Overview
 
 A value-type streaming scanner: feed it each decoded chunk via [`process(_:)`](./reasoningeventemitter/process%28_%29.md) and it returns the routed segments, holding back any partial delimiter that straddles a chunk boundary (`pendingPrefix`). This makes detection robust to the detokenizer or tool-call processor fragmenting a `<think>` across chunks.
 

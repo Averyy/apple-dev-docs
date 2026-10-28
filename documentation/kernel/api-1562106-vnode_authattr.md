@@ -15,11 +15,11 @@ Given a vnode_attr structure, determine what kauth-style actions must be authori
 int vnode_authattr(vnode_t vp, struct vnode_attr *vap, kauth_action_t *actionp, vfs_context_t ctx);
 ```
 
-#### Return Value
+## Return Value
 
 0 (and a result in "actionp" for success. Otherwise, an error code.
 
-#### Discussion
+## Discussion
 
 vnode_authorize requires kauth-style actions; if we want to set a vnode_attr structure on a vnode, we need to translate the set of attributes to a set of kauth-style actions. This routine will return errors for certain obviously disallowed, or incoherent, actions.
 

@@ -24,7 +24,7 @@ class HMSignificantTimeEvent
 @interface HMSignificantTimeEvent : HMTimeEvent
 ```
 
-#### Overview
+## Overview
 
 Use this class to represent an event that fires at a time relative to a significant event, for example “30 minutes before sunset”.
 

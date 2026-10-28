@@ -21,7 +21,7 @@ Causes the current endpoint to be rejected, allowing the connection to try anoth
 final func cancelCurrentEndpoint()
 ```
 
-#### Discussion
+## Discussion
 
 Protocols that do not have handshakes, such as UDP, do not allow connections to validate connectivity on their own. Cancelling an endpoint allows you to indicate that a certain endpoint should be rejected due to a lack of valid response. If other addresses were resolved for the remote endpoint, those will be attempted next.
 

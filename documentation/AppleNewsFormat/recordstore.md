@@ -19,7 +19,7 @@ object RecordStore
 
 - [Defining and Using Table Styles](../AppleNews/defining-and-using-table-styles.md)
 
-#### Discussion
+## Discussion
 
 The `RecordStore` object uses two required properties to provide the `data` for a table and to specify how that data will be used in the table.
 
@@ -30,7 +30,7 @@ For example, your data `descriptors` might describe a table that contains stock 
 
 This object can be used in [`DataTable`](./datatable.md).
 
-##### Example
+### Example
 
 ```json
 {

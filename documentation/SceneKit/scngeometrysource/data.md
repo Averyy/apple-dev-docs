@@ -25,7 +25,7 @@ var data: Data { get }
 @property (nonatomic, readonly) NSData * data;
 ```
 
-#### Discussion
+## Discussion
 
 A geometry source’s data is an array of vectors, each of which represents a particular attribute (or semantic) of a vertex in the geometry. The other properties of the geometry source determine how SceneKit interprets this data. For example, an array of vertex positions may have three 32-bit floating-point components per vector, but an array of texture coordinates may have two 8-bit integer coponents per vector.
 

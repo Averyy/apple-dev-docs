@@ -19,7 +19,7 @@ static var `default`: AVCaptureViewControlsStyle { get }
 AVCaptureViewControlsStyleDefault
 ```
 
-#### Discussion
+## Discussion
 
 The default controls style is [`AVCaptureViewControlsStyle.inline`](./inline.md).
 

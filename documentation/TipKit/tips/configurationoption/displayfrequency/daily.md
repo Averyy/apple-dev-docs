@@ -21,7 +21,7 @@ A daily display frequency.
 static var daily: Tips.ConfigurationOption.DisplayFrequency { get }
 ```
 
-#### Discussion
+## Discussion
 
 When you set this, the system shows no more than one tip per day.
 

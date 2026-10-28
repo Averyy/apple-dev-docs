@@ -22,7 +22,7 @@ case none
 ILClassificationActionNone
 ```
 
-#### Discussion
+## Discussion
 
 The extension just dismisses the [`ILClassificationUIExtensionViewController`](../../IdentityLookupUI/ilclassificationuiextensionviewcontroller.md).
 

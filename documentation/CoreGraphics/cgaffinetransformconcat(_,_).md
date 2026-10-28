@@ -25,11 +25,11 @@ func CGAffineTransformConcat(_ t1: CGAffineTransform, _ t2: CGAffineTransform) -
 extern CGAffineTransform CGAffineTransformConcat(CGAffineTransform t1, CGAffineTransform t2);
 ```
 
-#### Return Value
+## Return Value
 
 A new affine transformation matrix. That is, t’ = t1*t2.
 
-#### Discussion
+## Discussion
 
 Concatenation combines two affine transformation matrices by multiplying them together. You might perform several concatenations in order to create a single affine transform that contains the cumulative effects of several transformations.
 

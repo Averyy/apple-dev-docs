@@ -24,7 +24,7 @@ case bgr10_xr
 MTLPixelFormatBGR10_XR
 ```
 
-#### Discussion
+## Discussion
 
 Pixel components are in blue, green, and red order, from least significant bit to most significant bit. Bits 30 and 31 are padding, and their value is `0`.
 

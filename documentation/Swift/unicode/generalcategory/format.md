@@ -21,7 +21,7 @@ A format control character.
 case format
 ```
 
-#### Discussion
+## Discussion
 
 This value corresponds to the category `Format` (abbreviated `Cf`) in the [Unicode Standard](https://unicode.org/reports/tr44/#General_Category_Values).
 

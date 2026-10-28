@@ -21,7 +21,7 @@ Update this pointer’s initialized memory by moving the specified number of ins
 func moveUpdate(from source: UnsafeMutablePointer<Pointee>, count: Int)
 ```
 
-#### Discussion
+## Discussion
 
 The region of memory starting at this pointer and covering `count` instances of the pointer’s `Pointee` type must be initialized or `Pointee` must be a trivial type. After calling `moveUpdate(from:count:)`, the region is initialized and the memory region `source..<(source + count)` is uninitialized.
 

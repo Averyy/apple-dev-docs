@@ -5,7 +5,7 @@
 
 Provide a container for your view hierarchies and other content.
 
-#### Overview
+## Overview
 
 Window objects act as containers for your app’s onscreen content, and screens report the characteristics of the underlying display to your app. Use [Scenes](./scenes.md) to configure and manage your user interface, and review [`UIScreen`](./uiscreen.md) objects to understand the device’s main screen or connected displays.
 

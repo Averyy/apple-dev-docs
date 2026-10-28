@@ -25,7 +25,7 @@ func cblas_dger(_ ORDER: CBLAS_ORDER, _ M: __LAPACK_int, _ N: __LAPACK_int, _ AL
 void cblas_dger(const enum CBLAS_ORDER ORDER, const __LAPACK_int M, const __LAPACK_int N, const double ALPHA, const double *X, const __LAPACK_int INCX, const double *Y, const __LAPACK_int INCY, double *A, const __LAPACK_int LDA);
 ```
 
-#### Discussion
+## Discussion
 
 Computes `alpha*x*y' + A`.
 

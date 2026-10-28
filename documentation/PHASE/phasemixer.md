@@ -24,7 +24,7 @@ class PHASEMixer
 @interface PHASEMixer : NSObject
 ```
 
-#### Overview
+## Overview
 
 Mixers provide a single point of control over the multiple audio signals they combine. To create a mixer, you provide the framework with a mixer definition; see [`PHASEMixerDefinition`](./phasemixerdefinition.md).
 

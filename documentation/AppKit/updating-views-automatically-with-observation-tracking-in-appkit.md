@@ -5,7 +5,7 @@
 
 Use Swift Observation and automatic tracking to update your views in response to model data updates.
 
-#### Overview
+## Overview
 
 Swift [Observation](../Observation/Observation.md) provides the [`Observable`](../Observation/observable.md) macro to mark your models for automatic change tracking. When you combine `Observable` models with AppKit, the system automatically watches for property changes and updates your views. You don’t need to manually invalidate anything — AppKit handles it for you.
 
@@ -13,7 +13,7 @@ AppKit provides methods in several objects where automatic observation tracking 
 
 > **Note**: In macOS 15, the system doesn’t enable automatic observation tracking by default. To enable it, add the [`NSObservationTrackingEnabled`](../BundleResources/information-property-list/nsobservationtrackingenabled.md) key to your app’s information property list and set the key’s value to [`true`](../Swift/true.md).
 
-##### Update view properties automatically
+### Update view properties automatically
 
 The [`viewWillLayout()`](./nsviewcontroller/viewwilllayout%28%29.md) method automatically tracks `Observable` properties and updates views when they change. For example, to show a message list with a status label that displays unread message information, start by creating an `Observable` model with the properties your view needs:
 
@@ -39,7 +39,7 @@ When the view first appears, AppKit runs `viewWillLayout()` and tracks that you 
 
 You can also automatically track changes in a custom view using [`layout()`](./nsview/layout%28%29.md).
 
-##### Draw views automatically
+### Draw views automatically
 
 AppKit automatically tracks any `Observable` properties you read inside your [`draw(_:)`](./nsview/draw%28_%29.md) override. When those properties change, AppKit invalidates and redraws the view.
 

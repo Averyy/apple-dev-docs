@@ -16,7 +16,7 @@ optional func waiter(_ waiter: XCTWaiter, didFulfillInvertedExpectation expectat
 - (void) waiter:(XCTWaiter *) waiter didFulfillInvertedExpectation:(XCTestExpectation *) expectation;
 ```
 
-#### Discussion
+## Discussion
 
 If the delegate is an [`XCTestCase`](../xctestcase.md) instance, this will be reported as a test failure.
 

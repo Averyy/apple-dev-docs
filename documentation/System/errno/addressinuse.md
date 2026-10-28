@@ -25,7 +25,7 @@ static var addressInUse: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 Only one use of each address is normally permitted.
 

@@ -23,7 +23,7 @@ case validCard
 TKSmartCardSlotStateValidCard
 ```
 
-#### Discussion
+## Discussion
 
 A Smart Card is inserted and properly answered to a reset command.
 

@@ -23,7 +23,7 @@ static func == (lhs: Range<Bound>, rhs: Range<Bound>) -> Bool
 
 Available when `Bound` conforms to `Comparable`.
 
-#### Discussion
+## Discussion
 
 Two ranges are equal when they have the same lower and upper bounds. That requirement holds even for empty ranges.
 

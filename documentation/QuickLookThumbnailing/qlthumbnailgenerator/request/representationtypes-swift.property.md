@@ -23,7 +23,7 @@ var representationTypes: QLThumbnailGenerator.Request.RepresentationTypes { get 
 @property (nonatomic, readonly) QLThumbnailGenerationRequestRepresentationTypes representationTypes;
 ```
 
-#### Discussion
+## Discussion
 
 The representation types provide access to icon, low-quality, and high-quality thumbnails so you can request and show a lower-quality thumbnail quickly while computing a higher-quality thumbnail in the background.
 

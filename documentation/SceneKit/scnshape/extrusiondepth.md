@@ -25,7 +25,7 @@ var extrusionDepth: CGFloat { get set }
 @property (nonatomic) CGFloat extrusionDepth;
 ```
 
-#### Discussion
+## Discussion
 
 The extruded shape is centered at the zero point of its z-axis. For example, an extrusion depth of `1.0` creates a shape that extends from `-0.5` to `0.5` along the z-axis. An extrusion depth of zero creates a flat, one-sided shape.
 

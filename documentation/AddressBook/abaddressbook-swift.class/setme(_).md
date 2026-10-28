@@ -19,7 +19,7 @@ func setMe(_ moi: ABPerson!)
 - (void) setMe:(ABPerson *) moi;
 ```
 
-#### Discussion
+## Discussion
 
 If you don’t want a record to represent the logged-in user, then pass `nil` as the `person` argument. Note that this will not delete the existing record, if one is set.
 

@@ -25,7 +25,7 @@ var httpCookieStorage: HTTPCookieStorage? { get set }
 @property (retain, nullable) NSHTTPCookieStorage * HTTPCookieStorage;
 ```
 
-#### Discussion
+## Discussion
 
 This property determines the cookie storage object used by all tasks within sessions based on this configuration.
 

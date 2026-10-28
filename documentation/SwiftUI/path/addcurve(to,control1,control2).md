@@ -21,7 +21,7 @@ Adds a cubic Bézier curve to the path, with the specified end point and control
 mutating func addCurve(to end: CGPoint, control1: CGPoint, control2: CGPoint)
 ```
 
-#### Discussion
+## Discussion
 
 This method constructs a curve starting from the path’s current point and ending at the specified end point, with curvature defined by the two control points. After this method appends that curve to the current path, the end point of the curve becomes the path’s current point.
 

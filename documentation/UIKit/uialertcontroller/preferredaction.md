@@ -23,7 +23,7 @@ var preferredAction: UIAlertAction? { get set }
 @property (nonatomic, strong, nullable) UIAlertAction * preferredAction;
 ```
 
-#### Discussion
+## Discussion
 
 The preferred action is relevant for the [`UIAlertController.Style.alert`](./style/alert.md) style only; it isn’t used by action sheets. When you specify a preferred action, the alert controller highlights the text of that action to give it emphasis. (If the alert also contains a cancel button, the preferred action receives the highlighting instead of the cancel button.) If the iOS device is connected to a physical keyboard, pressing the Return key triggers the preferred action.
 

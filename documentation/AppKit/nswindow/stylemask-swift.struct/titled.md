@@ -19,7 +19,7 @@ static var titled: NSWindow.StyleMask { get }
 NSWindowStyleMaskTitled
 ```
 
-#### Discussion
+## Discussion
 
 Setting this flag also causes the default value of [`canBecomeKey`](../canbecomekey.md) to become [`true`](../../../Swift/true.md). Setting this flag doesn’t cause a sheet to display a title, so you can set it on a sheet without having to hide the title separately.
 

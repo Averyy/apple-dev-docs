@@ -11,7 +11,7 @@ Display the system user interface for your app’s Push to Talk services.
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
 
-#### Overview
+## Overview
 
 The Push to Talk framework is a power-efficient, user-friendly, and privacy-focused API. It gives your apps the ability to provide user interface controls that allow your users to transmit audio from anywhere. It supplies an ephemeral Apple Push Notification service token so the system can wake your app in the background to handle incoming audio while a session is ongoing.
 

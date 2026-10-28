@@ -21,7 +21,7 @@ Represents solar midnight, the time when the sun reaches its lowest point in the
 var solarMidnight: Date?
 ```
 
-#### Discussion
+## Discussion
 
 It may or may not be above the horizon at this time due to variations of solar events at extreme latitudes. If the lowest point is not below the horizon, this property is `nil`.
 

@@ -4,7 +4,7 @@
 
 Designate a region to which you apply video filter by using a collection of masks.
 
-#### Overview
+## Overview
 
 Use a `filter-video-mask` element to apply video filters to a portion of the image described as a mask, or apply two different filters, one inside the mask and one outside. Together, the  Mask Elements define a single region to which the effect applies. The actual video filter is described with a `video-filter` element as a child of the `filter-video-mask` element.
 

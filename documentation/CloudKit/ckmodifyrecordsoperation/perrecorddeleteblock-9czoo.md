@@ -21,7 +21,7 @@ The closure to execute when CloudKit deletes a record.
 var perRecordDeleteBlock: ((CKRecord.ID, Result<Void, any Error>) -> Void)? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This property is a closure that returns no value and has the following parameters:
 

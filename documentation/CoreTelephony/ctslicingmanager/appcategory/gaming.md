@@ -17,7 +17,7 @@ An application category for gaming traffic requiring low latency.
 case gaming
 ```
 
-#### Discussion
+## Discussion
 
 Gaming slices provide low latency and consistent network performance for interactive gaming experiences. Use this category for real-time multiplayer games and other latency-sensitive gaming traffic.
 

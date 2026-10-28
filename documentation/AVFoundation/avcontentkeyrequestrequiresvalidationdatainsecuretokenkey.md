@@ -25,7 +25,7 @@ let AVContentKeyRequestRequiresValidationDataInSecureTokenKey: String
 extern NSString * const AVContentKeyRequestRequiresValidationDataInSecureTokenKey;
 ```
 
-#### Discussion
+## Discussion
 
 You create the value for this key by using [`persistableContentKey(fromKeyVendorResponse:options:)`](./avpersistablecontentkeyrequest/persistablecontentkey%28fromkeyvendorresponse,options%29.md).
 

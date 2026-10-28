@@ -13,7 +13,7 @@
 kBluetoothHCITransportUSBClassCode = 0xE0
 ```
 
-#### Discussion
+## Discussion
 
 Wireless Controller
 

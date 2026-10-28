@@ -23,7 +23,7 @@ class INPaymentAccount
 @interface INPaymentAccount : NSObject
 ```
 
-#### Overview
+## Overview
 
 An [`INPaymentAccount`](./inpaymentaccount.md) object represents a user account known to your app. When paying bills, you use the specified payment account as the source of any funds involved in the financial transaction. Your app must have the authority to transfer funds from the designated account to any payees.
 

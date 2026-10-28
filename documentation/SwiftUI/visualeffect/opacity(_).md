@@ -21,11 +21,11 @@ Sets the transparency of the view.
 func opacity(_ opacity: Double) -> some VisualEffect
 ```
 
-#### Return Value
+## Return Value
 
 An effect that sets the transparency of the view.
 
-#### Discussion
+## Discussion
 
 When applying the `opacity(_:)` effect to a view that has already had its opacity transformed, the effect of the underlying opacity transformation is multiplied.
 

@@ -15,7 +15,7 @@ The top margin of the document.
 extern NSAttributedStringDocumentAttributeKey NSTopMarginDocumentAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSNumber`](../Foundation/nsnumber.md) object containing a float, in points.
 

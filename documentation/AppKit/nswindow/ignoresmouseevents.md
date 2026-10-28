@@ -19,7 +19,7 @@ var ignoresMouseEvents: Bool { get set }
 @property BOOL ignoresMouseEvents;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) when the window is transparent to mouse events; otherwise, [`false`](../../Swift/false.md).
 

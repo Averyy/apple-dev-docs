@@ -17,7 +17,7 @@ Positions the window in the same spot as an existing window, hiding the old wind
 static func replacing(_ relativeWindow: WindowProxy) -> WindowPlacement.Position
 ```
 
-#### Discussion
+## Discussion
 
 This will position the new window in the same location as the specified existing window, and hide the old window. Closing the new window will then result in the original window being shown again.
 

@@ -25,11 +25,11 @@ func la_retain(_ object: la_object_t) -> la_object_t
 extern la_object_tla_retain(la_object_t object);
 ```
 
-#### Return Value
+## Return Value
 
 The retained object.
 
-#### Discussion
+## Discussion
 
 Increment the reference count of a la_object_t object.
 

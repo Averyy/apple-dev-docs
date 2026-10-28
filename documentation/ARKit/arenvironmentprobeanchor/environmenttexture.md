@@ -20,7 +20,7 @@ var environmentTexture: (any MTLTexture)? { get }
 @property (nonatomic, strong, readonly, nullable) id<MTLTexture> environmentTexture;
 ```
 
-#### Discussion
+## Discussion
 
 This texture is in the format [`MTLPixelFormat.bgra8Unorm_srgb`](../../Metal/mtlpixelformat/bgra8unorm_srgb.md).
 

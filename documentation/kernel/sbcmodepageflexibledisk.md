@@ -13,7 +13,7 @@
 typedef struct SBCModePageFlexibleDisk SBCModePageFlexibleDisk;
 ```
 
-#### Discussion
+## Discussion
 
 Flexible Disk Mode Page (PAGE CODE 0x05) format.
 

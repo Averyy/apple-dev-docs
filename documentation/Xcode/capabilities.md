@@ -4,7 +4,7 @@
 
 Enable services that Apple provides, such as In-App Purchase, Push Notifications, Apple Pay, iCloud, and many others.
 
-#### Overview
+## Overview
 
 Capabilities simplify the configuration process for many of Apple’s services, some of which require you to configure specific [`Entitlements`](../BundleResources/entitlements.md) or change your app’s provisioning profile. When you add a capability to an app or other target in your project, Xcode automatically configures that target to use the corresponding service. For example, Xcode might add a required entitlement to a new entitlements file and configure the project to use those entitlements. When Xcode needs you to provide additional information, it presents a simplified UI for you to specify that information.
 

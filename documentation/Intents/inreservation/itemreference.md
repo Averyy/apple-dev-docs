@@ -33,7 +33,7 @@ var itemReference: INSpeakableString { get }
 @property (atomic, copy, readonly) INSpeakableString * itemReference;
 ```
 
-#### Discussion
+## Discussion
 
 Provide information that identifies this specific reservation. The [`vocabularyIdentifier`](../inspeakable/vocabularyidentifier.md) should be specific enough that your app can use it to retrieve and display this reservation’s info later. The [`spokenPhrase`](../inspeakable/spokenphrase.md) should describe the event to the user. For example, a restaurant reservation might use a phrase like `“Table for 2 at McNeil’s on February 11”` or `“7pm at McNeil’s”`. For a multi-part reservation, such as a round-trip ticket, provide an `itemReference` that is specific to this portion of the overall reservation.
 

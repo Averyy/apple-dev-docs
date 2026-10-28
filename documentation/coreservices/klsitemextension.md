@@ -20,7 +20,7 @@ let kLSItemExtension: CFString!
 const CFStringRef kLSItemExtension;
 ```
 
-#### Discussion
+## Discussion
 
 Use [`CFURLCopyPathExtension(_:)`](../CoreFoundation/cfurlcopypathextension%28_%29.md) or [`pathExtension`](../Foundation/nsurl/pathextension.md) instead.
 

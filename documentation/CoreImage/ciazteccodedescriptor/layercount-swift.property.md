@@ -24,7 +24,7 @@ var layerCount: Int { get }
 @property (readonly) NSInteger layerCount;
 ```
 
-#### Discussion
+## Discussion
 
 Combined with [`isCompact`](./iscompact-swift.property.md), the number of data layers determines the number of
 modules in the Aztec Code symbol. Valid values range from 1 to 32. Compact symbols can have up to 4 data layers.

@@ -5,11 +5,11 @@
 
 Write a request and handle responses from the API.
 
-#### Overview
+## Overview
 
 After adding the appropriate tokens to the header, compose your request to get data from the API and handle responses.
 
-##### Compose a Request
+### Compose a Request
 
 Apple Music API requests have common components. To compose a request, first specify the root path, `https://api.music.apple.com/v1`.
 
@@ -34,7 +34,7 @@ Every resource has a unique identifier in the Apple Music catalog. Resources in 
 
 Most requests return only the requested resource. For information about how to request related resources at the same time, see [Handling Resource Representation and Relationships](./handling-resource-representation-and-relationships.md).
 
-##### Handle a Response
+### Handle a Response
 
 There are three kinds of responses: Resource Collection, Results, and Errors.
 

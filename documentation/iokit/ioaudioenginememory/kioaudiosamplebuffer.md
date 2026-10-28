@@ -14,7 +14,7 @@
 kIOAudioSampleBuffer = 1
 ```
 
-#### Discussion
+## Discussion
 
 This requests the IOAudioEngine's sample buffer
 

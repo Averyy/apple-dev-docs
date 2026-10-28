@@ -20,7 +20,7 @@ Begins seeking backward through the music content.
 func beginSeekingBackward()
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to move the current playback position backward in time at an accelerated rate. Seeking begins when you call this method, and continues until you call the [`endSeeking()`](./endseeking%28%29.md) method.
 

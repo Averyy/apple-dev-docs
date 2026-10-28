@@ -29,7 +29,7 @@ extern NSNotificationName const UIScreenDidDisconnectNotification;
 
 - [Processing queued notifications](../processing-queued-notifications.md)
 
-#### Discussion
+## Discussion
 
 The object of the notification is the [`UIScreen`](../uiscreen.md) object that represented the now-disconnected screen. There’s no `userInfo` dictionary.
 

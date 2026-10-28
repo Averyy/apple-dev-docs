@@ -25,7 +25,7 @@ var entitiesByName: [String : NSEntityDescription] { get }
 @property (copy, readonly) NSDictionary<NSString *,NSEntityDescription *> * entitiesByName;
 ```
 
-#### Discussion
+## Discussion
 
 Entities are instances of [`NSEntityDescription`](../nsentitydescription.md).
 

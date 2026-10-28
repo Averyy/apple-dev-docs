@@ -19,7 +19,7 @@ Style options that determine the appearance of generated images.
 struct ImagePlaygroundStyle
 ```
 
-#### Overview
+## Overview
 
 When you create images programmatically, you can ask the system to create images in a particular style. The generative model takes the requested style option and applies it to the content it generates.
 

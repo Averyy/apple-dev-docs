@@ -24,7 +24,7 @@ The result of a configuration lookup from a specific provider.
 struct ProviderResult
 ```
 
-#### Overview
+## Overview
 
 Contains the provider’s name and the outcome of querying that provider, which can be either a successful lookup result or an error.
 

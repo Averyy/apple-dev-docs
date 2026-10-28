@@ -23,7 +23,7 @@ var kDNSServiceFlagsBogus: UInt32 { get }
 kDNSServiceFlagsBogus
 ```
 
-#### Discussion
+## Discussion
 
 If the response cannot be verified to be secure due to expired signatures, missing signatures, and so on, then the results are considered to be bogus.
 

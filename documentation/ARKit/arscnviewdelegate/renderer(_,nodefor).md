@@ -20,11 +20,11 @@ optional func renderer(_ renderer: any SCNSceneRenderer, nodeFor anchor: ARAncho
 - (SCNNode *) renderer:(id<SCNSceneRenderer>) renderer nodeForAnchor:(ARAnchor *) anchor;
 ```
 
-#### Return Value
+## Return Value
 
 A new SceneKit node, which ARKit will add to the scene and update to follow its corresponding AR anchor.
 
-#### Discussion
+## Discussion
 
 Depending on the session configuration, ARKit may automatically add anchors to a session. ARKit also calls this method to provide visual content for any [`ARAnchor`](../aranchor.md) objects you manually add using the session’s [`add(anchor:)`](../arsession/add%28anchor%29.md) method.
 

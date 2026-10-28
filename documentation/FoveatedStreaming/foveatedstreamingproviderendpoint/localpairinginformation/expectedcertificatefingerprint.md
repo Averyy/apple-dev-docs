@@ -15,7 +15,7 @@ The SHA-256 fingerprint of the server’s TLS certificate, as attested by the se
 let expectedCertificateFingerprint: Data?
 ```
 
-#### Discussion
+## Discussion
 
 The extension **must** verify the server’s actual certificate matches this value, if non-`nil`.
 

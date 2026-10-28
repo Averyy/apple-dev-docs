@@ -22,7 +22,7 @@ Cached values associated with the layout instance.
 associatedtype Cache = Void
 ```
 
-#### Discussion
+## Discussion
 
 If you create a cache for your custom layout, you can use a type alias to define this type as your data storage type. Alternatively, you can refer to the data storage type directly in all the places where you work with the cache.
 

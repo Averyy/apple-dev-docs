@@ -24,7 +24,7 @@ var boundaryMode: MPSGraphPaddingMode { get set }
 @property (nonatomic, readwrite) MPSGraphPaddingMode boundaryMode;
 ```
 
-#### Discussion
+## Discussion
 
 Default value: `MPSGraphPaddingModeZero`.
 

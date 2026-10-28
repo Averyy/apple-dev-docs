@@ -5,7 +5,7 @@
 
 Create JSON Web Tokens (JWTs) to authorize Advanced Commerce requests from your server.
 
-#### Discussion
+## Discussion
 
 The following Advanced Commerce APIs are endpoints that you call from your server:
 

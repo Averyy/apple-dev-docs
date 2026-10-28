@@ -19,7 +19,7 @@ var calendarDomains: [String] { get set }
 @property (copy) NSArray<NSString *> * calendarDomains;
 ```
 
-#### Discussion
+## Discussion
 
 This property applies only to per-app VPNs.
 

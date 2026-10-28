@@ -19,7 +19,7 @@ class SFKeychainSettingsPanel
 @interface SFKeychainSettingsPanel : NSPanel
 ```
 
-#### Overview
+## Overview
 
 Keychain settings include:
 

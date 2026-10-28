@@ -23,7 +23,7 @@ var semanticContentAttribute: UISemanticContentAttribute { get set }
 @property (nonatomic) UISemanticContentAttribute semanticContentAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 Some views should not flip when switching between left-to-right and right-to-left layouts. For example, the view is part of the playback controls or represents physical directions (up, down, left, right) that don’t change. Instead of thinking about whether or not a view should change its orientation, select the semantic content attribute that best describes your view.
 

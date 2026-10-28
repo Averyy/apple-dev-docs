@@ -25,11 +25,11 @@ init(fovyRadians: Double, aspectRatio: Double, nearZ: Double, farZ: Double)
 static SPProjectiveTransform3D SPProjectiveTransform3DMakeWithRightHandPerspective(double fovyRadians, double aspectRatio, double nearZ, double farZ);
 ```
 
-#### Return Value
+## Return Value
 
 A projective transform with right-hand side perspective.
 
-#### Discussion
+## Discussion
 
 Returns a projective transform with right-hand side perspective.
 

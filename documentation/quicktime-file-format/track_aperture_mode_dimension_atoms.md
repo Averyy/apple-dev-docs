@@ -5,7 +5,7 @@
 
 Atoms that store information for each of the track aperture presentation modes.
 
-#### Overview
+## Overview
 
 A video track in a QuickTime Movie can signal clean aperture and pixel aspect ratio information through image description extensions. The clean aperture defines the part of the encoded pixels to be displayed. The pixel aspect ratio is the aspect ratio of the encoded pixels. Conceptually the encoded pixels are decompressed, stretched (or shrunk) based on the pixel aspect ratio, and extra pixels are cropped off according to the clean aperture.
 

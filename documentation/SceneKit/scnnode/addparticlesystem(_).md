@@ -25,7 +25,7 @@ func addParticleSystem(_ system: SCNParticleSystem)
 - (void) addParticleSystem:(SCNParticleSystem *) system;
 ```
 
-#### Discussion
+## Discussion
 
 When attached to a node, a particle system’s emitter location follows that node as it moves through the scene. To instead attach a particle system to a location in the scene’s world coordinate space, use the corresponding method on [`SCNScene`](../scnscene.md).
 

@@ -20,7 +20,7 @@ optional func draggingEnded(_ sender: any NSDraggingInfo)
 - (void) draggingEnded:(id<NSDraggingInfo>) sender;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method if you want to be notified when a drag operation ends, which can be useful if the drag ends in some other destination. For example, this method might be used by a destination doing auto-expansion in order to collapse any auto-expands.
 

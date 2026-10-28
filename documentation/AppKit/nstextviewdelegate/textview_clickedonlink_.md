@@ -17,7 +17,7 @@ Sent after the user clicks on a link.
 - (BOOL) textView:(NSTextView *) textView clickedOnLink:(id) link;
 ```
 
-#### Discussion
+## Discussion
 
 This message is only sent if textView:clickedOnLink:atIndex: is not implemented.
 

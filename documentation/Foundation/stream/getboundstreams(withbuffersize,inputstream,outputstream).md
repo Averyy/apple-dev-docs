@@ -29,7 +29,7 @@ class func getBoundStreams(withBufferSize bufferSize: Int, inputStream: Autorele
 
 - [Uploading streams of data](../uploading-streams-of-data.md)
 
-#### Discussion
+## Discussion
 
 The created streams are bound to one another, such that any data written to `outputStream` is received by `inputStream`.
 

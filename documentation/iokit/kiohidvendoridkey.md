@@ -16,7 +16,7 @@ A key for specifying the vendor ID of the device.
 #define kIOHIDVendorIDKey
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is the numerical ID that the USB-IF assigned to the manufacturer. 
 

@@ -19,7 +19,7 @@ Returns a Boolean value that indicates whether active text exists at the specifi
 final func hasText(at point: CGPoint) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if active text exists at `point`; otherwise, `false`.
 

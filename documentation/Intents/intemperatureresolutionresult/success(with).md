@@ -24,11 +24,11 @@ class func success(with resolvedTemperature: Measurement<UnitTemperature>) -> Se
 + (instancetype) successWithResolvedTemperature:(NSMeasurement<NSUnitTemperature *> *) resolvedTemperature;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INTemperatureResolutionResult`](../intemperatureresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object when you recognize the temperature value and are able to apply it to the vehicle settings.
 

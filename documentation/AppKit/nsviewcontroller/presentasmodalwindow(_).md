@@ -19,7 +19,7 @@ func presentAsModalWindow(_ viewController: NSViewController)
 - (void) presentViewControllerAsModalWindow:(NSViewController *) viewController;
 ```
 
-#### Discussion
+## Discussion
 
 This method calls the [`present(_:animator:)`](./present%28_,animator%29.md) method on `self` (the presenting view controller), and passes a modal window animator to that method.
 

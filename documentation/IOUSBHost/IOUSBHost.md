@@ -10,7 +10,7 @@ Create host-mode user space drivers for USB devices.
 - Mac Catalyst 14.0+
 - macOS 10.15+
 
-#### Overview
+## Overview
 
 With the [IOUSBHost](./IOUSBHost.md) framework, you can access custom and non–class-compliant USB devices from within your apps. Use this framework to connect to cameras, audio devices, scanners, printers, keyboards, mouse devices, MIDI keyboards, and USB hubs.
 

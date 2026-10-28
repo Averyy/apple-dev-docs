@@ -20,7 +20,7 @@ static let mouthPressRight: ARFaceAnchor.BlendShapeLocation
 extern ARBlendShapeLocation const ARBlendShapeLocationMouthPressRight;
 ```
 
-#### Discussion
+## Discussion
 
 The figure below shows a face geometry (see [`ARSCNFaceGeometry`](../../arscnfacegeometry.md)) in two states, demonstrating values of `0.0` and `1.0` for this coefficient. In both states, the values for all other [`ARFaceAnchor.BlendShapeLocation`](../blendshapelocation.md) coefficients are set to `0.0`.
 

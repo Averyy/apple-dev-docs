@@ -24,7 +24,7 @@ var isTessellationFactorScaleEnabled: Bool { get set }
 @property (nonatomic, readwrite, getter=isTessellationFactorScaleEnabled) BOOL tessellationFactorScaleEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`false`](../../Swift/false.md).
 

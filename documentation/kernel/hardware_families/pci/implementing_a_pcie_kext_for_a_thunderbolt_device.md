@@ -5,7 +5,7 @@
 
 Create an IOKit driver to support Thunderbolt devices that implement features not supported in PCIDriverKit, such as wireless networking or audio. 
 
-#### Overview
+## Overview
 
 If you manufacture Thunderbolt devices, create a custom driver only when your device contains unique features that require additional support. Apple supplies drivers for many standard protocols and device types, alleviating the need for you to create custom drivers in some cases. However, if your Thunderbolt device contains PCIe endpoints that require additional support, create a custom PCIe driver to support those endpoints. 
 
@@ -19,13 +19,13 @@ Kernel extensions run in the kernel process space of the target Mac computer usi
 
 For basic information about building kernel extensions, see [Kernel Extension Programming Topics](https://developer.apple.com/library/archive/documentation/Darwin/Conceptual/KEXTConcept/KEXTConceptIntro/introduction.html#//apple_ref/doc/uid/TP40001063). For information about how to develop drivers using PCIDriverKit, see [Creating Custom PCIe Drivers for Thunderbolt Devices](../../../PCIDriverKit/creating-custom-pcie-drivers-for-thunderbolt-devices.md). 
 
-##### Implement Your Driver Life Cycle Normally
+### Implement Your Driver Life Cycle Normally
 
 The life cycle of a kernel extension in macOS 11 remains unchanged from previous versions of macOS. In particular, the system loads your custom [`IOService`](../../ioservice.md) subclass, and calls its [`init`](../../ioservice/api-3180717-init.md) and [`Start`](../../ioservice/api-3180710-start.md) methods. Use the [`init`](../../ioservice/api-3180717-init.md) method to allocate your driver’s data structures. Use the [`Start`](../../ioservice/api-3180710-start.md) method to configure your hardware, install event handlers, and prepare your driver to handle requests. When your driver is no longer needed, the system calls the corresponding [`Stop`](../../ioservice/api-3180713-stop.md) and [`free`](../../ioservice/api-3180716-free.md) methods to release any driver-related resources. 
 
 For information about how to implement your driver life cycle, see [IOKit Fundamentals](https://developer.apple.com/library/archive/documentation/DeviceDrivers/Conceptual/IOKitFundamentals/Introduction/Introduction.html#//apple_ref/doc/uid/TP0000011).
 
-##### Access Memory Using DMA Commands
+### Access Memory Using DMA Commands
 
 Thunderbolt devices access system memory through a system-provided I/O memory management unit (IOMMU). On Intel-based Mac computers, the system provides a single IOMMU and gives all devices a shared view of system memory. On Macs with Apple silicon, the system gives each device its own IOMMU. Always implement your driver as if it has its own IOMMU, and never assume you have a shared view of system memory. 
 
@@ -48,7 +48,7 @@ When you are ready to transfer data to or from your device, create a new memory 
 
 > **Note**: Calls to the [`getPhysicalSegment`](../../iomemorydescriptor/api-1442068-getphysicalsegment.md) method of [`IOMemoryDescriptor`](../../iomemorydescriptor.md) fail on Apple silicon. When updating older kernel extensions to support Apple silicon, replace all calls to that method with [`IODMACommand`](../../iodmacommand.md) objects. 
 
-##### Add Thunderbolt Support to Your Driver’s Personality Data
+### Add Thunderbolt Support to Your Driver’s Personality Data
 
 When it detects new hardware, the system must find an appropriate set of drivers to manage that hardware. It does so by comparing the hardware details to information found in the `kIOKitPersonalitiesKey` key of each driver’s `Info.plist` file, and identifying the drivers that best match the hardware. For example, a driver might match only against devices from a specific manufacturer, or devices that support only a specific communication protocol. 
 
@@ -97,7 +97,7 @@ if (SearchProperty("IOPCITunnelled", "IOService", kIOServiceSearchPropertyParent
 }
 ```
 
-##### Notify the System of External Storage Devices
+### Notify the System of External Storage Devices
 
 Users can disconnect most Thunderbolt devices at any time, but macOS doesn’t allow them to disconnect external storage devices without properly ejecting them. If your PCI driver presents the device as storage to the system, notify the system early in your driver’s [`start`](../../ioservice/api-1532606-start.md) method by setting the `Physical Interconnect Location` property to `External`, as shown in the following example.
 
@@ -113,7 +113,7 @@ OSSafeReleaseNULL(dict);
 
 > ❗ **Important**: Always set the `Physical Interconnect Location` property early in your driver’s [`start`](../../ioservice/api-1532606-start.md) method. Don’t set it after you access the device. 
 
-##### Avoid Audio Glitches Caused by Power Transitions
+### Avoid Audio Glitches Caused by Power Transitions
 
 The processors in recent Macs have low-power states that reduce the processor speed and voltage when the computer is idle. These low-power states decrease overall power consumption and heat generation on the system, and improve battery life. However, when a power-state transition occurs, the system temporarily stops all PCI bus traffic while it changes the power state of the processor cores. Halting PCI bus traffic can cause audio glitches and other side effects on devices that are sensitive to the added latency.
 
@@ -150,7 +150,7 @@ IOReturn MyAudioEngine::performAudioEngineStop()
 }
 ```
 
-##### Build Your Kernel Extension as a Universal Binary
+### Build Your Kernel Extension as a Universal Binary
 
 Build your kernel extension as a universal binary on macOS 11 and later. A universal binary supports both Apple silicon and Intel-based Mac computers. 
 

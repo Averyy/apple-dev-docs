@@ -25,7 +25,7 @@ func createRelationships(forDestination dInstance: NSManagedObject, in mapping: 
 - (BOOL) createRelationshipsForDestinationInstance:(NSManagedObject *) dInstance entityMapping:(NSEntityMapping *) mapping manager:(NSMigrationManager *) manager error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this stage to (re)create relationships between migrated objects—you use the association lookup methods on the [`NSMigrationManager`](../nsmigrationmanager.md) instance to determine the appropriate relationship targets.
 

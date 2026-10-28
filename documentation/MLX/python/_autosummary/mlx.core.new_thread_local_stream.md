@@ -6,5 +6,8 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ne
 
 # mlx.core.new_thread_local_stream
 
-**new_thread_local_stream(*device: Device | DeviceType*) → [ThreadLocalStream](mlx.core.ThreadLocalStream.md#mlx.core.ThreadLocalStream)**
-: Make a new stream that will be unique per thread.
+```python
+new_thread_local_stream(device: Device | DeviceType) → ThreadLocalStream
+```
+
+Make a new stream that will be unique per thread.

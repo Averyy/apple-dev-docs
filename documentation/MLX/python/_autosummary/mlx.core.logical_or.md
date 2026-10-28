@@ -6,16 +6,19 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.lo
 
 # mlx.core.logical_or
 
-**logical_or(*a: array*, *b: array*, */*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.md#mlx.core.array)**
-: Element-wise logical or.
+```python
+logical_or(a: array, b: array, /, *, stream: StreamOrDevice = None) → array
+```
 
-Parameters:
+Element-wise logical or.
 
-**a** ([array](mlx.core.array.md#mlx.core.array)) – First input array or scalar.
-**b** ([array](mlx.core.array.md#mlx.core.array)) – Second input array or scalar.
+**Parameters:**
 
-Returns:
-The boolean array containing the logical or of `a` and `b`.
+- **a** ([array](mlx.core.array.md#mlx.core.array)) – First input array or scalar.
+- **b** ([array](mlx.core.array.md#mlx.core.array)) – Second input array or scalar.
 
-Return type:
-[array](mlx.core.array.md#mlx.core.array)
+**Returns:**
+: The boolean array containing the logical or of `a` and `b`.
+
+**Return type:**
+: [array](mlx.core.array.md#mlx.core.array)

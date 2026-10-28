@@ -22,7 +22,7 @@ func setActive(_ active: Bool, withFlags flags: Int) throws
 - (BOOL) setActive:(BOOL) active withFlags:(NSInteger) flags error:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 If another app’s active audio session has higher priority than your app, and that other audio session doesn’t allow mixing with other apps, attempting to activate your audio session might fail.
 

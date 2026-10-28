@@ -21,7 +21,7 @@ Dynamically replaces the texture with a Core Graphics image.
 @preconcurrency func replace(withImage cgImage: CGImage, options: TextureResource.CreateOptions) throws
 ```
 
-#### Discussion
+## Discussion
 
 This method blocks until the resource updates. Don’t use this method for updates at frame-rate frequency. For frequent texture changes, see [`replace(withDrawables:)`](./replace%28withdrawables%29.md). If you have an attached [`TextureResource.DrawableQueue`](./drawablequeue-swift.class.md) on this resource, this function detaches it.
 

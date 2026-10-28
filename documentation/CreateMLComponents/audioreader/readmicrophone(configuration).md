@@ -19,7 +19,7 @@ Reads an async sequence of audio frames captured with a microphone.
 static func readMicrophone(configuration: AudioReader.Configuration = .init()) async throws -> AudioReader.MicrophoneAsyncBuffers
 ```
 
-#### Return Value
+## Return Value
 
 An async sequence of `AVAudioPCMBuffer`.
 

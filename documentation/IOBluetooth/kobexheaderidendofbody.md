@@ -17,7 +17,7 @@ var kOBEXHeaderIDEndOfBody: OBEXHeaderIdentifiers { get }
 kOBEXHeaderIDEndOfBody
 ```
 
-#### Discussion
+## Discussion
 
 The last checking of the object body.
 

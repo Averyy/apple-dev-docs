@@ -25,7 +25,7 @@ func respond(value: any NSCopying & NSObjectProtocol)
 - (void) respondWithValue:(id<NSCopying,NSObject>) value;
 ```
 
-#### Discussion
+## Discussion
 
 You call this method to return the metadata item’s value.
 

@@ -18,7 +18,7 @@ Creates a new path options configuration with default values.
 init(excluded: Bool = false, segments: UInt = 0, enumerateHierarchy: Bool = true)
 ```
 
-#### Discussion
+## Discussion
 
 The path options default behavior is as follows:
 

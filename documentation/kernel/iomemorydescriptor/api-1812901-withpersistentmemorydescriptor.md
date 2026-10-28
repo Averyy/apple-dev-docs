@@ -12,11 +12,11 @@ static IOMemoryDescriptor * withPersistentMemoryDescriptor(
  IOMemoryDescriptor *originalMD);
 ```
 
-#### Return Value
+## Return Value
 
 Either the original memory descriptor with an additional retain or a new memory descriptor, 0 for a bad original memory descriptor or some other resource shortage.
 
-#### Overview
+## Overview
 
 If the original memory descriptor's address and length is still backed by the same real memory, i.e. the user hasn't deallocated and the reallocated memory at the same address then the original memory descriptor is returned with a additional reference. Otherwise we build a totally new memory descriptor with the same characteristics as the previous one but with a new view of the vm. Note not legal to call this function with anything except an IOGeneralMemoryDescriptor that was created with the kIOMemoryPersistent option.
 

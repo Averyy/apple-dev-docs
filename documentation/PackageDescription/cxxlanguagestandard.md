@@ -12,7 +12,7 @@ The supported C++ language standard you use to compile C++ sources in the packag
 enum CXXLanguageStandard
 ```
 
-#### Overview
+## Overview
 
 Aliases are available for some C++ language standards. For example, use `cxx98` or `cxx03` for the “ISO C++ 1998 with amendments” standard. To learn more, see [C++ Support in Clang](https://clang.llvm.org/cxx_status.html).
 

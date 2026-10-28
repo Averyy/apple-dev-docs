@@ -23,7 +23,7 @@ case failureRequiringAppLaunch
 INGetRideStatusIntentResponseCodeFailureRequiringAppLaunch
 ```
 
-#### Discussion
+## Discussion
 
 Use this response code when you can’t process the request for a reason not covered by any other response code. Don’t use it for general errors or to force the user to launch your app.
 

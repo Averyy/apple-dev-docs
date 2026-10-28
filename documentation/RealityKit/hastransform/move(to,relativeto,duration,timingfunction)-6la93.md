@@ -28,7 +28,7 @@ Moves an entity over a period of time to a new location given by a 4x4 matrix.
 @MainActor @preconcurrency func move(to target: Transform, relativeTo referenceEntity: Entity?, duration: TimeInterval, timingFunction: AnimationTimingFunction = .default) -> AnimationPlaybackController
 ```
 
-#### Return Value
+## Return Value
 
 An [`AnimationPlaybackController`](../animationplaybackcontroller.md) instance that you use to control the animation playback.
 

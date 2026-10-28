@@ -15,7 +15,7 @@ Creates a new `Uuid`.
 static Uuid createUuid();
 ```
 
-#### Discussion
+## Discussion
 
 ```javascript
 import { createUuid } from "@apple/cktool.database";

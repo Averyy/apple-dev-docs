@@ -23,7 +23,7 @@ case failureRequiringAppLaunch
 INEndWorkoutIntentResponseCodeFailureRequiringAppLaunch
 ```
 
-#### Discussion
+## Discussion
 
 Use this code only when you can’t end the workout because of extenuating circumstances. For example, use this code if the user must log into your app before ending workouts and the user is not currently logged in. Do not use this response code for general errors or to force the user to launch your app.
 

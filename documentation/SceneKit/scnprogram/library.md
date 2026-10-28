@@ -25,7 +25,7 @@ var library: (any MTLLibrary)? { get set }
 @property (nonatomic, retain, nullable) id<MTLLibrary> library;
 ```
 
-#### Discussion
+## Discussion
 
 If this property’s value is nil (the default), SceneKit loads shader functions from the default Metal library. Change this value if you have compiled a separate `.metallib` file for the shader functions you wish to use.
 

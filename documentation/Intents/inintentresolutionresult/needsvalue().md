@@ -25,11 +25,11 @@ class func needsValue() -> Self
 + (instancetype) needsValue;
 ```
 
-#### Return Value
+## Return Value
 
 A new resolution result object.
 
-#### Discussion
+## Discussion
 
 Use this method when a property of the intent object is missing a value that your app requires. When you return a resolution of this type, Siri prompts the user to provide the information and then passes the newly received value back to you for resolution. The cycle of prompting the user and asking you to resolve the parameter continues until you resolve the parameter successfully.
 

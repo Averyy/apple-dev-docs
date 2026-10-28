@@ -23,7 +23,7 @@ convenience init?(type: MLCDeviceType)
 + (instancetype) deviceWithType:(MLCDeviceType) type;
 ```
 
-#### Discussion
+## Discussion
 
 For the `type` parameter, use [`MLCDeviceType.any`](../mlcdevicetype/any.md) unless you need to control device selection. This ensures that the framework selects the best device to execute the neural network.
 

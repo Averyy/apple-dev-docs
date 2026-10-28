@@ -19,11 +19,11 @@ func getHandle(_ outServiceRecordHandle: UnsafeMutablePointer<BluetoothSDPServic
 - (IOReturn) getServiceRecordHandle:(BluetoothSDPServiceRecordHandle *) outServiceRecordHandle;
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if the service record handle is found.
 
-#### Discussion
+## Discussion
 
 This method will search through the attributes to find the one representing the service record handle. If one is found the outServiceRecordHandle param is set with the value. The outServiceRecordHandle value only gets set when kIOReturnSuccess is returned.
 

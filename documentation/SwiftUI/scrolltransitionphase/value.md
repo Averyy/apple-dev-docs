@@ -21,7 +21,7 @@ A phase-derived value that can be used to scale or otherwise modify effects.
 var value: Double { get }
 ```
 
-#### Discussion
+## Discussion
 
 Returns -1.0 when in the topLeading phase, zero when in the identity phase, and 1.0 when in the bottomTrailing phase.
 

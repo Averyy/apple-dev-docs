@@ -20,7 +20,7 @@ Initializes a parameter summary Switch statement over widget family.
 init(_ widgetFamily: ParameterSummarySwitchCondition<Intent, Value, CaseCondition>.WidgetFamily, @ParameterSummaryCaseBuilder<Intent, IntentWidgetFamily> _ builder: () -> CaseCondition) where Value == IntentWidgetFamily
 ```
 
-#### Discussion
+## Discussion
 
 For example:
 

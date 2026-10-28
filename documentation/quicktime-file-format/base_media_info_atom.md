@@ -6,7 +6,7 @@
 
 An atom that defines the media’s control information, including graphics mode and balance information.
 
-#### Overview
+## Overview
 
 The base media info atom, contained in the base media information header atom (`'gmhd'`), defines the media’s control information, including graphics mode and balance information.
 

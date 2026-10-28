@@ -24,7 +24,7 @@ func addQuadCurve(to endPoint: CGPoint, controlPoint: CGPoint)
 - (void) addQuadCurveToPoint:(CGPoint) endPoint controlPoint:(CGPoint) controlPoint;
 ```
 
-#### Discussion
+## Discussion
 
 This method appends a quadratic Bézier curve from the current point to the end point specified by the `endPoint` parameter. The relationships between the current point, control point, and end point are what defines the actual curve. The following image shows some examples of quadratic curves and the approximate curve shape based on some sample points. The exact curvature of the segment involves a complex mathematical relationship between the points and is well documented online.
 

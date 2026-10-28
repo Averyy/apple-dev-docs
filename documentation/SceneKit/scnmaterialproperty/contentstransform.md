@@ -25,7 +25,7 @@ var contentsTransform: SCNMatrix4 { get set }
 @property (nonatomic) SCNMatrix4 contentsTransform;
 ```
 
-#### Discussion
+## Discussion
 
 SceneKit applies this transformation to the texture coordinates provided by the geometry object the material is attached to, then uses the resulting coordinates to map the material property’s [`contents`](./contents.md) across the surface of the material. (This transformation has no effect if the material property’s [`contents`](./contents.md) object is a constant color.)
 

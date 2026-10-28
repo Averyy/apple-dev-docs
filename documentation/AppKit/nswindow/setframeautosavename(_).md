@@ -19,7 +19,7 @@ func setFrameAutosaveName(_ name: NSWindow.FrameAutosaveName) -> Bool
 - (BOOL) setFrameAutosaveName:(NSWindowFrameAutosaveName) name;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the specified name is acceptable and another window isn’t already using it; otherwise, [`false`](../../Swift/false.md).
 

@@ -25,7 +25,7 @@ let kCVImageBufferFieldDetailSpatialFirstLineLate: CFString
 extern CFStringRef const kCVImageBufferFieldDetailSpatialFirstLineLate;
 ```
 
-#### Discussion
+## Discussion
 
 The spatial first line early detail field value is of type [`CFString`](../CoreFoundation/cfstring.md). The image buffer contains interleaved fields. The first line of image data corresponds to the first bottom, even-numbered, field.
 

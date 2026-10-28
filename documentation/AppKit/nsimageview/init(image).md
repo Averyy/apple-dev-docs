@@ -19,7 +19,7 @@ convenience init(image: NSImage)
 + (instancetype) imageViewWithImage:(NSImage *) image;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized image view.
 

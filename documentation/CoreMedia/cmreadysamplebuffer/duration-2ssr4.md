@@ -21,7 +21,7 @@ The unmodified sum of the durations of all samples in the sample buffer.
 var duration: CMTime { get }
 ```
 
-#### Discussion
+## Discussion
 
 If the buffer contains out-of-presentation-order samples, any gaps in the presentation timeline are not represented in the returned duration. The calculated duration is simply the sum of all the individual sample durations.
 

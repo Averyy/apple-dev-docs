@@ -25,7 +25,7 @@ var observedBitrate: Double { get }
 @property (nonatomic, readonly) double observedBitrate;
 ```
 
-#### Discussion
+## Discussion
 
 The property corresponds to “c-observed-bitrate”.
 

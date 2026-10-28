@@ -22,7 +22,7 @@ An attribute to define if each character should be spoken separately.
 enum SpellOutAttribute
 ```
 
-#### Overview
+## Overview
 
 For example, a number representing a series of digits, like 25, spoken as “two-five” rather than “twenty-five”. Another usecase is acronyms, like APPL, spoken as “A-P-P-L”
 

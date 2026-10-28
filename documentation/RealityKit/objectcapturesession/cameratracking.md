@@ -17,7 +17,7 @@ The current state of ARKit camera tracking.
 var cameraTracking: ObjectCaptureSession.Tracking { get }
 ```
 
-#### Discussion
+## Discussion
 
 The ARKit coaching overylay will be automatically show if this state moves away from `.normal` since the loss of ARKit tracking will cause many of the Object Capture algorithms to pause until the environmental tracking issue is resolved by the user. Also, the app may want to adjust its UI when this state is not `.normal` to allow proper visibility of the coaching overlay.
 

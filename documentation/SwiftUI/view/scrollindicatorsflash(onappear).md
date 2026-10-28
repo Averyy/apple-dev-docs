@@ -22,11 +22,11 @@ nonisolated
 func scrollIndicatorsFlash(onAppear: Bool) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that flashes any visible scroll indicators when it first appears.
 
-#### Discussion
+## Discussion
 
 Use this modifier to control whether the scroll indicators of a scroll view briefly flash when the view first appears. For example, you can make the indicators flash by setting the `onAppear` parameter to `true`:
 

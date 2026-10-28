@@ -27,7 +27,7 @@ func navigationDestination<D, C>(for data: D.Type, @ContentBuilder destination: 
 - [Understanding the navigation stack](../understanding-the-navigation-stack.md)
 - [Migrating to new navigation types](../migrating-to-new-navigation-types.md)
 
-#### Discussion
+## Discussion
 
 Add this view modifier to a view inside a [`NavigationStack`](../navigationstack.md) to describe the view that the stack displays when presenting a particular kind of data. Use a [`NavigationLink`](../navigationlink.md) to present the data. For example, you can present a `ColorDetail` view for each presentation of a [`Color`](../color.md) instance:
 

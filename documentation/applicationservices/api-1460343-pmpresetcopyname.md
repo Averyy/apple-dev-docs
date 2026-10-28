@@ -19,7 +19,7 @@ func PMPresetCopyName(_ preset: PMPreset, _ name: UnsafeMutablePointer<Unmanaged
 OSStatus PMPresetCopyName(PMPreset preset, CFStringRef  _Nullable *name);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./core_printing.md#1670007).
 

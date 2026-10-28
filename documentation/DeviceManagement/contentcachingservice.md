@@ -17,11 +17,11 @@ The payload that configures the Content Caching service.
 object ContentCachingService
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.AssetCache.managed` as the payload type.
 
-##### Profile availability
+### Profile availability
 
 |  |  |
 | --- | --- |
@@ -33,7 +33,7 @@ Specify `com.apple.AssetCache.managed` as the payload type.
 | Allowed in user enrollment | N/A |
 | Allow multiple payloads | N/A |
 
-##### Profile example
+### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">

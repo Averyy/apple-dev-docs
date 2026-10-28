@@ -12,7 +12,7 @@ Post content to supported social networking services, using standard system inte
 - Mac Catalyst 13.0+
 - macOS 10.8+
 
-#### Overview
+## Overview
 
 On iOS and macOS, this framework provides a template for creating HTTP requests. On iOS only, the Social framework provides a generalized interface for posting requests on behalf of the user.
 

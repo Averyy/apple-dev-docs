@@ -14,7 +14,7 @@
 #define kIOPropertyFibreChannelCableDescriptionCopperKey
 ```
 
-#### Discussion
+## Discussion
 
 This key defines the value of Copper for the key kIOPropertyFibreChannelCableDescriptionKey. If the cabling is Copper, this key should be used.
 

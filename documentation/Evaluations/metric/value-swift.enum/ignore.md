@@ -21,7 +21,7 @@ The metric doesn’t apply to this sample and aggregators skip it.
 case ignore
 ```
 
-#### Discussion
+## Discussion
 
 Use this when a sample doesn’t have the necessary data for evaluation, such as when no tool expectations exist for a tool trajectory metric. Aggregators skip these results when computing statistics like mean.
 

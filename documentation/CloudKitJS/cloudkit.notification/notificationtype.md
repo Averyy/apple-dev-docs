@@ -15,7 +15,7 @@ The type of notification.
 readonly attribute String notificationType;
 ```
 
-#### Discussion
+## Discussion
 
 Possible values are described in [Notification Types](../notification-types.md).
 

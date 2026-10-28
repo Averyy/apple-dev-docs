@@ -17,7 +17,7 @@ Returns the width for scrollers of the receiving class, assuming a control size 
 + (CGFloat) scrollerWidth;
 ```
 
-#### Discussion
+## Discussion
 
 `NSScrollView` uses this value to lay out its components. Subclasses that use a different width should override this method.
 

@@ -23,7 +23,7 @@ case textInput
 UIUserNotificationActionBehaviorTextInput
 ```
 
-#### Discussion
+## Discussion
 
 When specified, the system provides a way for the user to enter a text response to be included with the notification. The text response is assigned to the [`UIUserNotificationActionResponseTypedTextKey`](../uiusernotificationactionresponsetypedtextkey.md) of the response information dictionary when the notification is delivered to your app.
 

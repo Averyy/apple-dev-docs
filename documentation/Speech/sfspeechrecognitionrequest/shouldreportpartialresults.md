@@ -23,7 +23,7 @@ var shouldReportPartialResults: Bool { get set }
 @property (nonatomic) BOOL shouldReportPartialResults;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is `true`. If you want only final results (and you don’t care about intermediate results), set this property to `false` to prevent the system from doing extra work.
 

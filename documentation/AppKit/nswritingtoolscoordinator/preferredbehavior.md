@@ -23,7 +23,7 @@ var preferredBehavior: NSWritingToolsBehavior { get set }
 
 - [Adding Writing Tools support to a custom AppKit view](../adding-writing-tools-support-to-a-custom-nsview.md)
 
-#### Discussion
+## Discussion
 
 Use this property to request an inline or panel-based experience, or to disable Writing Tools for your view altogether. The default value of this property is [`NSWritingToolsBehavior.default`](../nswritingtoolsbehavior/default.md).
 

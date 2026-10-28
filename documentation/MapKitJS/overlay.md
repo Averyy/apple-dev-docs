@@ -19,7 +19,7 @@ abstract class Overlay extends EventTarget
 
 - [Adding interactivity to overlays](./adding-interactivity-to-overlays.md)
 
-#### Overview
+## Overview
 
 Overlays inherit from an abstract base object, [`Overlay`](./overlay.md), and share some common properties with [`Annotation`](./annotation.md) that allow you to control the visibility and interaction with the map in the same way. This object is abstract and you can’t instantiate it.
 

@@ -23,11 +23,11 @@ func MIDIObjectGetProperties(_ obj: MIDIObjectRef, _ outProperties: UnsafeMutabl
 extern OSStatus MIDIObjectGetProperties(MIDIObjectRef obj, CFPropertyListRef*outProperties, Boolean deep);
 ```
 
-#### Return Value
+## Return Value
 
 An `OSStatus` result code.
 
-#### Discussion
+## Discussion
 
 The property list may be a dictionary or an array. Dictionaries map property names ([`CFString`](../CoreFoundation/cfstring.md)) to values, which may be [`CFNumber`](../CoreFoundation/cfnumber.md), [`CFString`](../CoreFoundation/cfstring.md), or [`CFData`](../CoreFoundation/cfdata.md). Arrays provide collections of other property list types.
 

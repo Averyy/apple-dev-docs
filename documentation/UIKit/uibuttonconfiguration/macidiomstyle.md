@@ -19,7 +19,7 @@ The style to use when this button appears in macOS.
 @property (nonatomic, assign, readwrite) UIButtonConfigurationMacIdiomStyle macIdiomStyle;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property when building your app with Mac Catalyst. The value [`UIButtonConfigurationMacIdiomStyleAutomatic`](../uibuttonconfigurationmacidiomstyle/uibuttonconfigurationmacidiomstyleautomatic.md) lets the system choose the appropriate style. Select a specific style to force the button to always use that style.
 

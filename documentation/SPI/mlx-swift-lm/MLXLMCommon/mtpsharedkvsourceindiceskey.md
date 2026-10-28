@@ -17,7 +17,7 @@ Which cache entry each [`mtpSharedKVStatesKey`](./mtpsharedkvstateskey.md) tuple
 let mtpSharedKVSourceIndicesKey: LMOutput.Key<[String : Int]>
 ```
 
-#### Discussion
+## Discussion
 
 A speculative round keeps only part of what its verify pass wrote, so the emitted snapshot has to be reconciled against the cache afterwards. That reconciliation is exact only if the consumer knows the entry behind each tuple: a sliding layer’s snapshot is bounded by its ring and a global layer’s is not, and at the crossing the two are indistinguishable by length.
 

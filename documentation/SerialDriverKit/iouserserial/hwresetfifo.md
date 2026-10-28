@@ -15,11 +15,11 @@ Sends a command to reset the specified device queues.
 virtual kern_return_t HwResetFIFO(bool tx, bool rx);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 
-#### Discussion
+## Discussion
 
 Override this method and use it to reset your device.
 

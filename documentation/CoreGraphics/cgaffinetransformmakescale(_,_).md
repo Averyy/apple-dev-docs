@@ -25,11 +25,11 @@ func CGAffineTransformMakeScale(_ sx: CGFloat, _ sy: CGFloat) -> CGAffineTransfo
 extern CGAffineTransform CGAffineTransformMakeScale(CGFloat sx, CGFloat sy);
 ```
 
-#### Return Value
+## Return Value
 
 A new affine transformation matrix.
 
-#### Discussion
+## Discussion
 
 This function creates a `CGAffineTransform` structure, which you can use (and reuse, if you want) to scale a coordinate system. The matrix takes the following form:
 

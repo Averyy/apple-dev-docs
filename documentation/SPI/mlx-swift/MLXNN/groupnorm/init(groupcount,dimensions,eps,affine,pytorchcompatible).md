@@ -17,13 +17,13 @@ Applies Group Normalization [1] on the inputs.
 init(groupCount: Int, dimensions: Int, eps: Float = 1e-5, affine: Bool = true, pytorchCompatible: Bool = false)
 ```
 
-#### Discussion
+## Discussion
 
 See [GroupNorm python docs](https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.GroupNorm.html) for more information.
 
 The feature dimension is assumed to be the last dimension and the dimensions that precede it (except the first) are considered the spatial dimensions.
 
-##### References
+### References
 
 1. [https://arxiv.org/abs/1803.08494](https://arxiv.org/abs/1803.08494)
 

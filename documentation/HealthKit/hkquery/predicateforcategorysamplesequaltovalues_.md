@@ -20,7 +20,7 @@ A predicate that returns category samples with a matching value.
 + (NSPredicate *) predicateForCategorySamplesEqualToValues:(NSSet<NSNumber *> *) values;
 ```
 
-#### Discussion
+## Discussion
 
 The following example creates a query for sleep analysis samples with the [`HKCategoryValueSleepAnalysis.asleepDeep`](../hkcategoryvaluesleepanalysis/asleepdeep.md) category value.
 

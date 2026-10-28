@@ -29,7 +29,7 @@ class NSMapTable<KeyType, ObjectType> where KeyType : AnyObject, ObjectType : An
 
 - [NSMapTable](./legacy-nsmaptable.md)
 
-#### Overview
+## Overview
 
 The map table is modeled after [`NSDictionary`](./nsdictionary.md) with the following differences:
 
@@ -41,7 +41,7 @@ You can configure an [`NSMapTable`](./nsmaptable.md) instance to operate on arbi
 
 When configuring map tables, note that only the options listed in [`NSMapTableOptions`](./nsmaptableoptions.md) guarantee that the rest of the API will work correctly—including copying, archiving, and fast enumeration. While other [`NSPointerFunctions`](./nspointerfunctions.md) options are used for certain configurations, such as to hold arbitrary pointers, not all combinations of the options are valid. With some combinations the map table may not work correctly, or may not even be initialized correctly.
 
-##### Subclassing Notes
+### Subclassing Notes
 
 `NSMapTable` is not suitable for subclassing.
 

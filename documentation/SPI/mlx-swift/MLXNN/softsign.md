@@ -17,7 +17,7 @@ Applies the Softsign function.
 class Softsign
 ```
 
-#### Overview
+## Overview
 
 This is:
 
@@ -25,7 +25,7 @@ This is:
 x / (1 + MLX.abs(x))
 ```
 
-##### See Also
+### See Also
 
 - [Activation Functions and Layers](./activations.md)
 - [`softsign(_:)`](./softsign%28_%29.md)

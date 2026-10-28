@@ -25,7 +25,7 @@ optional func application(_ application: UIApplication, didFailToContinueUserAct
 - (void) application:(UIApplication *) application didFailToContinueUserActivityWithType:(NSString *) userActivityType error:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to let the user know that the specified activity could not be continued. If you do not implement this method, UIKit displays an error to the user with an appropriate message about the reason for the failure.
 

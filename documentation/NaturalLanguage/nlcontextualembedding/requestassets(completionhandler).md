@@ -29,7 +29,7 @@ func requestAssets() async throws -> NLContextualEmbedding.AssetsResult
 - (void) requestEmbeddingAssetsWithCompletionHandler:(void (^)(NLContextualEmbeddingAssetsResult result, NSError *error)) completionHandler;
 ```
 
-#### Asynchronous alternative
+## Asynchronous alternative
 
 You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
 
@@ -39,7 +39,7 @@ func requestAssets() async throws -> NLContextualEmbedding.AssetsResult
 
 For information about concurrency and asynchronous code in Swift, see [Calling Objective-C APIs Asynchronously](../../Swift/calling-objective-c-apis-asynchronously.md).
 
-#### Discussion
+## Discussion
 
 You use a contextual embedding after loading the necessary assets onto the device. Use [`hasAvailableAssets`](./hasavailableassets.md) to determine whether assets are available. This method returns immediately if the framework knows the state of the assets or if an error occurs.
 

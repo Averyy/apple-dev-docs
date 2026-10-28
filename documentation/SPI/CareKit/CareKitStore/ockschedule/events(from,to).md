@@ -17,7 +17,7 @@ Compute a list of events that occur between two dates. The lower bound is inclus
 func events(from start: Date, to end: Date) -> [OCKScheduleEvent]
 ```
 
-#### Discussion
+## Discussion
 
 > **Precondition**: `start` < `end`
 

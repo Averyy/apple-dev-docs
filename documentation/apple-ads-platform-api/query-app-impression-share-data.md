@@ -9,13 +9,13 @@ Retrieve impression share data showing how often your ads appear relative to tot
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 This endpoint measures impression share: what fraction of available impressions your app captures for a given search term and country. To identify competitive gaps, use this data. A low impression share on a high-volume term indicates that either budget, bid, or eligibility constraints are limiting your reach.
 
 See [`Filter`](./filter.md) for the full set of supported comparison operators.
 
-##### Filterable Fields
+### Filterable Fields
 
 | Field | Type | Operators | Description |
 | --- | --- | --- | --- |
@@ -30,7 +30,7 @@ See [`Filter`](./filter.md) for the full set of supported comparison operators.
 | `rank` | integer | `EQUALS`, `GREATER_THAN`, `GREATER_THAN_OR_EQUAL_TO`, `LESS_THAN`, `LESS_THAN_OR_EQUAL_TO`, `BETWEEN` | Optional. App’s impression share rank for the search term and country. |
 | `searchPopularity1to5` | integer | `EQUALS`, `GREATER_THAN`, `GREATER_THAN_OR_EQUAL_TO`, `LESS_THAN`, `LESS_THAN_OR_EQUAL_TO`, `BETWEEN` | Optional. Relative search volume on a 1-5 scale. |
 
-##### Output Types
+### Output Types
 
 Configure the output type via `options.impressionShareReportType`:
 
@@ -54,7 +54,7 @@ Each row in the response carries the following fields.
 | `rank` | App’s impression share rank for this search term and country. `1` = highest share. |
 | `searchPopularity1to5` | Relative search volume on a 1–5 scale. `5` = most popular. |
 
-##### Impression Share Encoding
+### Impression Share Encoding
 
 The `lowImpressionShare` and `highImpressionShare` fields use a tiered encoding, not a continuous range:
 
@@ -81,7 +81,7 @@ The following limits and defaults apply to this endpoint’s requests and respon
 | High-saturation bucket | `lowImpressionShare: 0.91, highImpressionShare: 1.0` indicates >90% impression share. Marginal bid increases at this level yield diminishing returns. |
 | Privacy filter | The privacy filter suppresses `searchTerm` for terms with fewer than 10 impressions in the aggregation period. |
 
-##### Estimate Market Size
+### Estimate Market Size
 
 To estimate total eligible inventory for a search term, use impression share alongside confirmed impressions:
 
@@ -89,13 +89,13 @@ To estimate total eligible inventory for a search term, use impression share alo
 
 **Example:** 10,000 confirmed impressions at `lowImpressionShare: 0.04` (4%) → ≈ 250,000 total eligible impressions. The same app at `lowImpressionShare: 0.91` (>90% bucket) has captured nearly all available inventory. Single-digit precision makes this estimate meaningful across the 1–90% range covered by `lowImpressionShare`. Only within the 91–100% bucket, where `lowImpressionShare` and `highImpressionShare` diverge to `0.91` and `1.0`, does the estimate lose that precision.
 
-#### Payload Examples
+## Payload Examples
 
 **First Slot: Search Term**:
 
 Retrieve daily first-slot impression share for an app, filtered to a specific country and search term.
 
-##### Request
+### Request
 
 Queries daily first-slot impression share for a specific app in the US over a seven-day window, scoping results to the first ad position only.
 
@@ -130,7 +130,7 @@ POST /v1/insights/apps/impression-share/query
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -172,7 +172,7 @@ POST /v1/insights/apps/impression-share/query
 
 Retrieve weekly all-slots impression share to understand overall reach across all ad positions.
 
-##### Request
+### Request
 
 Queries weekly all-slots impression share for an app over a four-week window (the maximum for `WEEKLY_SUN_SAT` granularity), sorted by `highImpressionShare` descending to highlight the search terms with the strongest reach.
 
@@ -208,7 +208,7 @@ POST /v1/insights/apps/impression-share/query
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -239,7 +239,7 @@ POST /v1/insights/apps/impression-share/query
 
 Retrieve first-slot impression share for a branded search term. When `lowImpressionShare` and `highImpressionShare` are `0.91` and `1.0`, the app holds >90% of available impressions (the 91–100% bucket). Bid increases at this level yield negligible gains.
 
-##### Request
+### Request
 
 Queries daily first-slot impression share for a branded term where the app already dominates the auction.
 
@@ -274,7 +274,7 @@ POST /v1/insights/apps/impression-share/query
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {

@@ -20,7 +20,7 @@ Creates a new binary visible or intersection function synchronously.
 - (id<MTL4BinaryFunction>) newBinaryFunctionWithDescriptor:(MTL4BinaryFunctionDescriptor *) descriptor compilerTaskOptions:(MTL4CompilerTaskOptions *) compilerTaskOptions error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A new binary function upon success, `nil` otherwise.
 

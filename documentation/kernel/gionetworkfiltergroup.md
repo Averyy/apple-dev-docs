@@ -13,7 +13,7 @@
 const OSSymbol *gIONetworkFilterGroup;
 ```
 
-#### Discussion
+## Discussion
 
 gIONetworkFilterGroup is an OSSymbol object that contains the name of the standard network filter group as defined by kIONetworkFilterGroup.
 

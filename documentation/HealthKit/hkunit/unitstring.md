@@ -24,7 +24,7 @@ var unitString: String { get }
 @property (strong, readonly) NSString * unitString;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains a string using the format required by [`init(from:)`](./init%28from%29-9qont.md).
 

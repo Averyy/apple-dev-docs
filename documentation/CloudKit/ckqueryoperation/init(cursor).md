@@ -25,7 +25,7 @@ convenience init(cursor: CKQueryOperation.Cursor)
 - (instancetype) initWithCursor:(CKQueryCursor *) cursor;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to create an operation that retrieves the next batch of results from a previous search. When executing searches for a cursor, don’t cache cursors for a long time before using them. A cursor isn’t a snapshot of the previous search results; it stores a relative offset into the results list. An operation that you create from a cursor performs a new search, sorts the new set of results, and uses the previous offset value to determine where the next batch of results starts.
 

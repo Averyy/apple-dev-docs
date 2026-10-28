@@ -25,7 +25,7 @@ protocol NSItemProviderReading : NSObjectProtocol
 @protocol NSItemProviderReading <NSObject>
 ```
 
-#### Overview
+## Overview
 
 A destination app uses an object that conforms to this protocol to consume pasted or dropped items.
 

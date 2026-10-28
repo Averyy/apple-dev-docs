@@ -20,7 +20,7 @@ typealias AEArrayDataPointer = UnsafeMutablePointer<AEArrayData>
 typedef AEArrayData *AEArrayDataPointer;
 ```
 
-#### Discussion
+## Discussion
 
 This data type merely defines a pointer to an [`AEArrayData`](./aearraydata.md) union.
 

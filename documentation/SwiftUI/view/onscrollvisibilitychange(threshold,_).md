@@ -22,7 +22,7 @@ nonisolated
 func onScrollVisibilityChange(threshold: Double = 0.5, _ action: @escaping (Bool) -> Void) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Use this modifier to be informed when the view has crossed the provided threshold to be considered on/off screen.
 

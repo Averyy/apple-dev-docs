@@ -19,7 +19,7 @@ Creates a new `MetricManager` instance without state reporting domains.
 convenience init()
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer when you only need interval-based metric data and diagnostic reports, without per-state metrics. Hold the returned instance in a property for as long as you need reports:
 

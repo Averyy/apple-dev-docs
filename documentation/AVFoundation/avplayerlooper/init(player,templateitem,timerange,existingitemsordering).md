@@ -24,7 +24,7 @@ init(player: AVQueuePlayer, templateItem itemToLoop: AVPlayerItem, timeRange loo
 - (instancetype) initWithPlayer:(AVQueuePlayer *) player templateItem:(AVPlayerItem *) itemToLoop timeRange:(CMTimeRange) loopRange existingItemsOrdering:(AVPlayerLooperItemOrdering) itemOrdering;
 ```
 
-#### Discussion
+## Discussion
 
 The player looper doesn’t use the player item you specify for playback, and instead uses it as a template to create at least three player item replicas that it uses for looping playback. Because the looper only uses the player item as a template, any changes that you make to it after initialization aren’t reflected in the looping playback.
 

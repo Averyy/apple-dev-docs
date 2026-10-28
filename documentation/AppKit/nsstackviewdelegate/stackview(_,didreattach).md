@@ -20,7 +20,7 @@ optional func stackView(_ stackView: NSStackView, didReattach views: [NSView])
 - (void) stackView:(NSStackView *) stackView didReattachViews:(NSArray<NSView *> *) views;
 ```
 
-#### Discussion
+## Discussion
 
 To configure a custom class to respond to the automatic reattachment of views to a stack view’s view hierarchy, implement this method in the class. This method is not called when your code explicitly adds a view to a stack view’s [`views`](../nsstackview/views.md) array.
 

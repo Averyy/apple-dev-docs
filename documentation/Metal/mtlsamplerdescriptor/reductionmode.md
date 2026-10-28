@@ -24,7 +24,7 @@ var reductionMode: MTLSamplerReductionMode { get set }
 @property (nonatomic) MTLSamplerReductionMode reductionMode;
 ```
 
-#### Discussion
+## Discussion
 
 The property’s default value is [`MTLSamplerReductionMode.weightedAverage`](../mtlsamplerreductionmode/weightedaverage.md). The sampler ignores this property if any of the following property values are equal to a specific value:
 

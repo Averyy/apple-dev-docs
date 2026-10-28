@@ -26,7 +26,7 @@ var alertLaunchImage: String? { get }
 @property (nonatomic, copy, readonly, nullable) NSString * alertLaunchImage;
 ```
 
-#### Discussion
+## Discussion
 
 The system uses this property’s value to locate an image in the app’s bundle, and displays it as a launch image when the user launches the app after receiving a push notification.
 

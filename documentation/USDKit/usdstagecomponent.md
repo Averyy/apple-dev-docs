@@ -20,7 +20,7 @@ A component that renders a USD stage as RealityKit entities.
 struct USDStageComponent
 ```
 
-#### Overview
+## Overview
 
 Attach a `USDStageComponent` to an entity to render USD content as child entities. The component supports two modes of operation:
 

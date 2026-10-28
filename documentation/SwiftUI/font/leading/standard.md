@@ -21,7 +21,7 @@ The font’s default line spacing.
 case standard
 ```
 
-#### Discussion
+## Discussion
 
 If you modify a font to use a nonstandard line spacing like [`Font.Leading.tight`](./tight.md) or [`Font.Leading.loose`](./loose.md), you can use this value to return to the font’s default line spacing.
 

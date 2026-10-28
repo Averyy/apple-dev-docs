@@ -19,7 +19,7 @@ var isOld: Bool { get }
 @property (readonly, getter=isOld) BOOL old;
 ```
 
-#### Discussion
+## Discussion
 
 The publish and subscribe mechanism is generally *level-triggered*, in that when you invoke [`addSubscriber(forFileURL:withPublishingHandler:)`](./addsubscriber%28forfileurl,withpublishinghandler%29.md), the system invokes your block for every relevant published and unpublished progress object. Sometimes you need to implement *edge-triggered* behavior, in which you do something either exactly when new progress begins or not at all.
 

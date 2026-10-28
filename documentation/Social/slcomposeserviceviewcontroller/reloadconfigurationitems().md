@@ -21,7 +21,7 @@ func reloadConfigurationItems()
 - (void) reloadConfigurationItems;
 ```
 
-#### Discussion
+## Discussion
 
 In general, a subclass doesn’t need to call this method, unless it determines its configuration items in a deferred way, such as in [`presentationAnimationDidFinish()`](./presentationanimationdidfinish%28%29.md). In particular, you don’t need to call this method after you change a configuration item property, because the `SLComposeServiceViewController` base class automatically detects and responds to such changes.
 

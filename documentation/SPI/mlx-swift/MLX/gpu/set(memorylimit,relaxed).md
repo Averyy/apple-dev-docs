@@ -19,7 +19,7 @@ Set the memory limit.
 static func set(memoryLimit: Int, relaxed: Bool = true)
 ```
 
-#### Discussion
+## Discussion
 
 Calls to malloc will wait on scheduled tasks if the limit is exceeded.
 

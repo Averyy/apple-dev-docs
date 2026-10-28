@@ -21,7 +21,7 @@ The region used by the locale.
 var region: Locale.Region? { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property corresponds to the `rg` key of the Unicode BCP 47 extension.
 

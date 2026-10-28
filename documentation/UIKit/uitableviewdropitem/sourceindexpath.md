@@ -23,7 +23,7 @@ var sourceIndexPath: IndexPath? { get }
 @property (nonatomic, readonly, nullable) NSIndexPath * sourceIndexPath;
 ```
 
-#### Discussion
+## Discussion
 
 If the item originated from the table view, this property contains the item’s original index path.
 

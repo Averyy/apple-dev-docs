@@ -23,7 +23,7 @@ var NOTIFY_STATUS_OK: Int32 { get }
 #define NOTIFY_STATUS_OK
 ```
 
-#### Discussion
+## Discussion
 
 Status codes returned by the API.
 

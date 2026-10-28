@@ -17,7 +17,7 @@ A default implementation for the SwiftLog 1.0 log message handler.
 func log(level: Logging.Logger.Level, message: Logging.Logger.Message, metadata: Logging.Logger.Metadata?, file: String, function: String, line: UInt)
 ```
 
-#### Discussion
+## Discussion
 
 Forwards to [`log(event:)`](./log%28event%29.md) directly. Forwarding to the source-carrying deprecated method closed a cycle with its own default, so a handler implementing only [`log(event:)`](./log%28event%29.md) overflowed the stack when called through this entry point.
 

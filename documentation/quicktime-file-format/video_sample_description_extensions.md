@@ -5,7 +5,7 @@
 
 Extend video sample descriptions by appending other atoms.
 
-#### Overview
+## Overview
 
 These atoms are placed after the color table, if one is present. These extensions to the sample description may contain display hints for the decompressor or may simply carry additional information associated with the images. The following table lists the currently defined extensions to video sample descriptions.
 

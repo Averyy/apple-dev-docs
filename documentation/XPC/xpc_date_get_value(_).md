@@ -25,7 +25,7 @@ func xpc_date_get_value(_ xdate: xpc_object_t) -> Int64
 extern int64_t xpc_date_get_value(xpc_object_t xdate);
 ```
 
-#### Return Value
+## Return Value
 
 The underlying date interval.
 

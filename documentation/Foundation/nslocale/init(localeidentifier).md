@@ -25,11 +25,11 @@ init(localeIdentifier string: String)
 - (instancetype) initWithLocaleIdentifier:(NSString *) string;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized locale.
 
-#### Discussion
+## Discussion
 
 This method is the designated initializer for this class.
 

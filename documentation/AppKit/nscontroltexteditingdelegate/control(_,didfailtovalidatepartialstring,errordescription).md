@@ -20,7 +20,7 @@ optional func control(_ control: NSControl, didFailToValidatePartialString strin
 - (void) control:(NSControl *) control didFailToValidatePartialString:(NSString *) string errorDescription:(NSString *) error;
 ```
 
-#### Discussion
+## Discussion
 
 You can implement this method to display a warning message or perform a similar action when the user enters improperly formatted text.
 

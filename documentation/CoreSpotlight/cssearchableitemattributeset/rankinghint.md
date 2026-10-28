@@ -23,7 +23,7 @@ var rankingHint: NSNumber? { get set }
 @property (strong, nullable) NSNumber * rankingHint;
 ```
 
-#### Discussion
+## Discussion
 
 Core Spotlight uses this value to distinguish between similar items from an app’s indexed content. Set this property to an integer value between zero and one hundred. Higher values indicate an item is more relevant, and Spotlight may display it more prominently.
 

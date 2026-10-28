@@ -19,7 +19,7 @@ func otherMouseDown(with event: NSEvent)
 - (void) otherMouseDown:(NSEvent *) event;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation of this method does nothing. Use this method to start tracking the gesture in whatever way is appropriate.
 

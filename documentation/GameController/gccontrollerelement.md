@@ -24,7 +24,7 @@ class GCControllerElement
 @interface GCControllerElement : NSObject
 ```
 
-#### Overview
+## Overview
 
 `GCControllerElement` is an abstract superclass for specific types of elements that represent controls on a game controller. Use the respective subclasses to either get the input of an element directly or set a handler that the element calls when the user changes a value. This class provides support for common features.
 

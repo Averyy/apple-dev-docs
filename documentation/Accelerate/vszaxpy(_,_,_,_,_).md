@@ -21,7 +21,7 @@ func vSzaxpy(_ n: Int32, _ alpha: Float, _ x: UnsafePointer<vFloat>, _ y: Unsafe
 extern void vSzaxpy(int32_t n, float alpha, const vFloat *x, const vFloat *y, vFloat *z);
 ```
 
-#### Discussion
+## Discussion
 
 Each element of vector `x` is multiplied by `alpha`, then the corresponding element of `yY` is added. Results are stored in the corresponding elements of `z`.
 

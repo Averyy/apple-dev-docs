@@ -14,7 +14,7 @@
 kSBCModePageCaching_SIZE_Mask = (1 << kSBCModePageCaching_SIZE_Bit)
 ```
 
-#### Discussion
+## Discussion
 
 Mask for use with flags field.
 

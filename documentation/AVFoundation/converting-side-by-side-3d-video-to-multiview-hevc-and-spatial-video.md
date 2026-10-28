@@ -10,7 +10,7 @@ Create video content for visionOS by converting an existing 3D HEVC file to a mu
 - macOS 15.0+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 In visionOS, 3D video uses the *Multiview High Efficiency Video Encoding* (MV-HEVC) format, supported by MPEG4 and QuickTime. Unlike other 3D media, MV-HEVC stores a single track containing multiple layers for the video, where the track and layers share a frame size. This track frame size is different from other 3D video types, such as *side-by-side video*. Side-by-side videos use a single track, and place the left- and right-eye images next to each other as part of a single video frame.
 
@@ -28,7 +28,7 @@ You can verify this sample’s MV-HEVC output by opening it with the sample proj
 
 For the full details of the MV-HEVC format, see [Apple HEVC Stereo Video - Interoperability Profile (PDF)](https://developer.apple.com/av-foundation/HEVC-Stereo-Video-Profile.pdf) and [ISO Base Media File Format and Apple HEVC Stereo Video (PDF)](https://developer.apple.com/av-foundation/Stereo-Video-ISOBMFF-Extensions.pdf).
 
-##### Configure the sample code project
+### Configure the sample code project
 
 The app takes a path to a side-by-side stereo input video file as a single command-line argument. To run the app in Xcode, select Product > Scheme > Edit Scheme (Command-<), and add the path to your file to Arguments Passed On Launch.
 
@@ -47,7 +47,7 @@ The `--spatial` argument tells the app to write spatial metadata to the output v
 
 For this video, a disparity adjustment of +2% of the image width produces a comfortable depth effect when the spatial video is presented in a window on Apple Vision Pro. This 2% disparity adjustment value positions the nearest object in the spatial video — the hummingbird — just behind the front of the window, while still keeping an effective illusion of depth between the hummingbird and the background. The scheme’s arguments express the +2% disparity adjustment with a `--disparityAdjustment` value of `0.02`.
 
-##### Load the side-by-side video
+### Load the side-by-side video
 
 The app starts by loading the side-by-side video, creating an [`AVAssetReader`](./avassetreader.md). The app calls [`loadTracks(withMediaCharacteristic:completionHandler:)`](./avasset/loadtracks%28withmediacharacteristic,completionhandler%29.md) to load video tracks, and then selects the first track available as the side-by-side input.
 
@@ -87,7 +87,7 @@ if !reader.startReading() {
 
 When creating the reader track output, the app specifies the file’s pixel format and [IOSurface](../IOSurface/IOSurface.md) settings in the `readerSettings` dictionary. The app indicates that output goes to a 32-bit ARGB pixel buffer, using [`kCVPixelBufferPixelFormatTypeKey`](../CoreVideo/kcvpixelbufferpixelformattypekey.md) with a value of [`kCVPixelFormatType_32ARGB`](../CoreVideo/kcvpixelformattype_32argb.md). The sample app also manages its own pixel buffer allocations, passing an empty array as the value for [`kCVPixelBufferIOSurfacePropertiesKey`](../CoreVideo/kcvpixelbufferiosurfacepropertieskey.md).
 
-##### Configure the output MV-HEVC file
+### Configure the output MV-HEVC file
 
 With the reader initialized, the app calls the `async` method `transcodeToMVHEVC(output:spatialMetadata:)` to generate the output file. First, the app creates a new [`AVAssetWriter`](./avassetwriter.md) pointing to the video output location, and then configures the necessary information on the output to indicate that the file contains MV-HEVC video.
 
@@ -115,7 +115,7 @@ let MVHEVCViewIDs = [0, 1]
 let MVHEVCLeftAndRightViewIDs = [0, 1]
 ```
 
-##### Include spatial metadata
+### Include spatial metadata
 
 If the person calling this command-line app requested to add spatial metadata to the output file, and provided the necessary spatial metadata, the app converts that metadata to expected units and scales, and adds an additional compression property key for each metadata value. The app also specifies that the input uses a rectilinear projection, to indicate that it has the expected projection for spatial video.
 
@@ -134,7 +134,7 @@ if let spatialMetadata {
 }
 ```
 
-##### Configure the MV-HEVC input source
+### Configure the MV-HEVC input source
 
 The app transcodes video by directly copying pixels from the source frame. Writing track data to a video file requires an [`AVAssetWriterInput`](./avassetwriterinput.md). The sample app uses an [`AVAssetWriterInputTaggedPixelBufferGroupAdaptor`](./avassetwriterinputtaggedpixelbuffergroupadaptor.md) to provide pixel data from the source, writing to the output.
 
@@ -170,7 +170,7 @@ guard multiviewWriter.canAdd(frameInput) else {
 multiviewWriter.add(frameInput)
 ```
 
-##### Process input as it becomes available
+### Process input as it becomes available
 
 The app calls [`startWriting()`](./avassetwriter/startwriting%28%29.md) and [`startSession(atSourceTime:)`](./avassetwriter/startsession%28atsourcetime%29.md) in sequence to start the video writing process, and then iterates over available frame inputs with [`requestMediaDataWhenReady(on:using:)`](./avassetwriterinput/requestmediadatawhenready%28on,using%29.md).
 
@@ -186,7 +186,7 @@ frameInput.requestMediaDataWhenReady(on: DispatchQueue(label: "Multiview HEVC Wr
 
 The closure argument of `requestMediaDataWhenReady(on:using:)` runs on the provided [`DispatchQueue`](../Dispatch/dispatchqueue.md) when the first data read is available. The closure itself is responsible for managing resources that process the media data, and running a loop to process data efficiently.
 
-##### Create the video frame transfer session and output pixel buffer pool
+### Create the video frame transfer session and output pixel buffer pool
 
 To perform the data transfer from the source track, the pixel input adapter requires a pixel buffer as a source. The app creates a [`VTPixelTransferSession`](../VideoToolbox/vtpixeltransfersession.md) to allow for reading data from the video source, and uses the `AVAssetWriterInputTaggedPixelBufferGroupAdaptor`’s existing pixel buffer pool to allocate pixel buffers for the new multiview eye layers.
 
@@ -200,7 +200,7 @@ guard let pixelBufferPool = bufferInputAdapter.pixelBufferPool else {
 }
 ```
 
-##### Copy frame images from input to output
+### Copy frame images from input to output
 
 After preparing resources, the app then begins a loop to process frames until there’s no more data, or the input read has stopped to buffer data. The [`isReadyForMoreMediaData`](./avassetwriterinput/isreadyformoremediadata.md) property of an input source is `true` if another frame is immediately available to process. When a frame is ready, a [`CVImageBuffer`](../CoreVideo/cvimagebuffer.md) instance is created from it.
 
@@ -230,7 +230,7 @@ multiviewWriter.finishWriting {
 break
 ```
 
-##### Convert side-by-side inputs into video layer outputs
+### Convert side-by-side inputs into video layer outputs
 
 In the `convertFrame` method, the app processes the left- and right-eye images for the frame by `layerID`, using `0` for the left eye and `1` for the right. First, the app creates a pixel buffer from the pool.
 

@@ -19,11 +19,11 @@ func constraint(greaterThanOrEqualTo anchor: NSLayoutAnchor<AnchorType>, constan
 - (NSLayoutConstraint *) constraintGreaterThanOrEqualToAnchor:(NSLayoutAnchor<id> *) anchor constant:(CGFloat) c;
 ```
 
-#### Return Value
+## Return Value
 
 An [`NSLayoutConstraint`](../nslayoutconstraint.md) object that defines the attribute represented by this layout anchor as greater than or equal to the attribute represented by the `anchor` parameter plus a constant offset.
 
-#### Discussion
+## Discussion
 
 This method defines the relationship `first attribute >= second attribute + c`. Where `first attribute` is the layout attribute represented by the anchor receiving this method call, and `second attribute` is the layout attribute represented by the `anchor` parameter. The value `c`, represents a constant offset. All values are measured in points; however, these values can be interpreted in different ways, depending on the type of layout anchor.
 

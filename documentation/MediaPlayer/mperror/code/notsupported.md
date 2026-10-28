@@ -25,7 +25,7 @@ case notSupported
 MPErrorNotSupported
 ```
 
-#### Discussion
+## Discussion
 
 An example of this is trying to add a media item to a smart playlist.
 

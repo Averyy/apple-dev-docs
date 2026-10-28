@@ -21,7 +21,7 @@ Initializes a private key from the seed representation.
 init<D>(seedRepresentation: D, publicKey: MLDSA87.PublicKey?) throws where D : DataProtocol
 ```
 
-#### Discussion
+## Discussion
 
 This initializer implements the `ML-DSA.KeyGen_internal` algorithm (Algorithm 16) of FIPS 204.
 

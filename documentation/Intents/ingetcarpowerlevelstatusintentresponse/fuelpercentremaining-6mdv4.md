@@ -27,7 +27,7 @@ The percentage of fuel remaining for the fuel-powered vehicle.
 @property (atomic, copy, readwrite, nullable) NSNumber * fuelPercentRemaining;
 ```
 
-#### Discussion
+## Discussion
 
 Typically, you assign a value to this property only after handling the intent.
 

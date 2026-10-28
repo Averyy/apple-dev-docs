@@ -19,11 +19,11 @@ func hv_vcpu_write_fpstate(_ vcpu: hv_vcpuid_t, _ buffer: UnsafeMutableRawPointe
 extern hv_return_t hv_vcpu_write_fpstate(hv_vcpuid_t vcpu, void *buffer, size_t size);
 ```
 
-#### Return Value
+## Return Value
 
 [`HV_SUCCESS`](./hv_success.md) if the operation was successful, otherwise an error code specified in [`hv_return_t`](./hv_return_t.md).
 
-#### Discussion
+## Discussion
 
 The XSAVE feature set of the host processor defines the structure and size of the returned buffer.
 

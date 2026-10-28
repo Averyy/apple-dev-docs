@@ -20,7 +20,7 @@ The color of the text.
 extern NSAttributedStringKey const NSForegroundColorAttributeName;
 ```
 
-#### Discussion
+## Discussion
 
 In macOS, the value of this attribute is an [`NSColor`](../AppKit/nscolor.md) instance. In iOS, tvOS, watchOS, and Mac Catalyst, the value of this attribute is a [`UIColor`](./uicolor.md) instance. Use this attribute to specify the color of the text during rendering. If you don’t specify this attribute, the text renders in black.
 

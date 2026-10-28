@@ -22,7 +22,7 @@ Calculates and returns a height based on the context.
 static func height(in context: Self.Context) -> CGFloat?
 ```
 
-#### Return Value
+## Return Value
 
 The height of the detent, or `nil` if the detent should be inactive based on the `context` input.
 

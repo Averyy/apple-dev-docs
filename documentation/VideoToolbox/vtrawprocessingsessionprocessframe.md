@@ -15,7 +15,7 @@ Submits RAW frames for format-specific processing using sequence and frame level
 extern OSStatus VTRAWProcessingSessionProcessFrame(VTRAWProcessingSessionRef session, CVPixelBufferRef inputPixelBuffer, CFDictionaryRef frameOptions, VTRAWProcessingOutputHandler outputHandler);
 ```
 
-#### Discussion
+## Discussion
 
 Processed frames may or may not be output before the function returns. The client should not modify the input pixel data after making this call. The RAW Processor will retain the input pixel buffer as long as necessary.
 

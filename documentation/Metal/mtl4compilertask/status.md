@@ -20,7 +20,7 @@ Returns the compiler task status.
 @property (readonly) MTL4CompilerTaskStatus status;
 ```
 
-#### Discussion
+## Discussion
 
 The default is `MTL4CompilerStatusNone`.
 

@@ -19,7 +19,7 @@ var autostarts: Bool { get set }
 @property BOOL autostarts;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to allow previews of movie files to start playback automatically when displayed.
 

@@ -23,7 +23,7 @@ var filterConfiguration: NEFilterProviderConfiguration { get }
 @property (readonly) NEFilterProviderConfiguration * filterConfiguration;
 ```
 
-#### Discussion
+## Discussion
 
 The Filter Provider can observe this property to be notified when the configuration changes, using KVO. See [Key-Value Observing Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyValueObserving/KeyValueObserving.html#//apple_ref/doc/uid/10000177i).
 

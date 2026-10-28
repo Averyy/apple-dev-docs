@@ -19,7 +19,7 @@ Determines the disparity to use to focus on the object in the rectangle.
 static func disparity(in normalizedRect: CGRect, sourceDisparity: CVPixelBuffer, detectionType: CNDetectionType, priorDisparity: Float? = nil) -> Float
 ```
 
-#### Return Value
+## Return Value
 
 A float representing the disparity to use to focus on the object in the rectangle.
 

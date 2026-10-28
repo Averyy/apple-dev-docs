@@ -15,7 +15,7 @@ Check if a world anchor is marked to be shared with nearby participants.
 extern bool ar_world_anchor_is_shared_with_nearby_participants(ar_world_anchor_t world_anchor);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the world anchor is marked to be shared with nearby participants, `false` otherwise.
 

@@ -20,21 +20,21 @@ string ProductFeatures
 - `APPSTORE_APP_MANUAL`: Authorizes App Store advertising.
 - `BUSINESS_BRAND_MANUAL`: Authorizes Apple Maps advertising.
 
-#### Discussion
+## Discussion
 
 The `productFeatures` array on an [`AdAccount`](./adaccount.md) controls whether campaigns in that account run on App Store or Apple Maps. You set `productFeatures` when creating an ad account (it’s required on `AdAccountCreate`). It can’t be changed after the account is created. An account is authorized for App Store or Apple Maps, not both.
 
 An account configured for App Store advertising can’t create Apple Maps campaigns. An account configured for Apple Maps advertising can’t create App Store campaigns. If your organization needs campaigns on both App Store and Apple Maps, create a dedicated ad account for each.
 
-##### Enable App Store advertising
+### Enable App Store advertising
 
 The `APPSTORE_APP_MANUAL` feature authorizes an ad account for App Store advertising. Campaigns in this account promote iOS apps across App Store placements. Every campaign must set `promotedObjectType` to `APPSTORE_APP` and identify the app by its `adamId`. The app must pass an eligibility check (see [`Check App Eligibility`](./find-apps-eligibilities.md)) before the campaign can serve.
 
-##### Enable Apple Maps advertising
+### Enable Apple Maps advertising
 
 The `BUSINESS_BRAND_MANUAL` feature authorizes an ad account for Apple Maps advertising. Campaigns in this account promote brands on Apple Maps. Every campaign must set `promotedObjectType` to `BUSINESS_BRAND`.
 
-##### Link the required delegations
+### Link the required delegations
 
 Delegations link the appropriate advertiser resource to an ad account. For App Store accounts this will be a `CONTENT_PROVIDER`. For Apple Maps accounts this will be a `BUSINESS_BRAND`. This delegation, together with the matching `productFeatures` value, must be in place before campaigns can go live.
 

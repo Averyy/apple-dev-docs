@@ -5,7 +5,7 @@
 
 An array identifying each package attached to the choice.
 
-#### Overview
+## Overview
 
 Each item of the array references a `pkg-ref` element in the installation definition and contains the following two properties:
 

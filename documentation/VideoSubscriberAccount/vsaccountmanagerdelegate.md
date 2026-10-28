@@ -24,7 +24,7 @@ protocol VSAccountManagerDelegate : NSObjectProtocol
 @protocol VSAccountManagerDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Use the [`VSAccountManagerDelegate`](./vsaccountmanagerdelegate.md) methods to aid in displaying and dismissing authentication view controllers.
 

@@ -25,7 +25,7 @@ weak var delegate: (any CLLocationManagerDelegate)? { get set }
 @property (nonatomic, weak, nullable) id<CLLocationManagerDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 In iOS, this property is declared as `nonatomic`. In macOS, it is declared as `atomic`.
 

@@ -26,11 +26,11 @@ func AUGraphRemoveNode(_ inGraph: AUGraph, _ inNode: AUNode) -> OSStatus
 extern OSStatus AUGraphRemoveNode(AUGraph inGraph, AUNode inNode);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 
-#### Discussion
+## Discussion
 
 Nodes can be removed in any thread context. The output node of the graph cannot be removed while the graph is running.
 

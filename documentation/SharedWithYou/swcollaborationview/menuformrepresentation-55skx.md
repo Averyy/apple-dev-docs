@@ -19,7 +19,7 @@ var menuFormRepresentation: NSMenuItem { get }
 @property (readonly) NSMenuItem * menuFormRepresentation;
 ```
 
-#### Discussion
+## Discussion
 
 If this [`SWCollaborationView`](../swcollaborationview.md) instance is being set on an [`NSToolbarItem`](../../AppKit/nstoolbaritem.md), assign this property to the item’s `menuFormRepresentation` property.
 

@@ -15,7 +15,7 @@ The currently active spatial video rendering mode.
 var spatialVideoMode: VideoPlayerComponent.SpatialVideoMode { get }
 ```
 
-#### Discussion
+## Discussion
 
 Determined by checking if the current video content is able to satisfy the requested desiredSpatialVideoMode
 

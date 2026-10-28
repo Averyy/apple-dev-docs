@@ -23,7 +23,7 @@ optional func playerViewController(_ playerViewController: AVPlayerViewControlle
 - (void) playerViewController:(AVPlayerViewController *) playerViewController willPresentInterstitialTimeRange:(AVInterstitialTimeRange *) interstitial;
 ```
 
-#### Discussion
+## Discussion
 
 Interstitial content is material unrelated to the main content of a presentation that may have special playback options or requirements. For example, implement this method to record when a user begins viewing an advertisement, or to enable the player view controller’s [`requiresLinearPlayback`](../avplayerviewcontroller/requireslinearplayback.md) property to prevent skipping mandatory legal notices.
 

@@ -13,11 +13,11 @@ Disables ColorSync color matching for the current page.
 OSStatus PMDisableColorSync ();
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../core_printing.md#1670007).
 
-#### Overview
+## Overview
 
 Valid between calls to `PMBeginPage` and `PMEndPage`.
 

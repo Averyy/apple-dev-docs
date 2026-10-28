@@ -13,7 +13,7 @@
 var kSpeechShowSyllables: Int32 { get }
 ```
 
-#### Discussion
+## Discussion
 
 Show all syllable marks in the phonetic output or tune.
 

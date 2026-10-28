@@ -20,11 +20,11 @@ optional func collectionView(_ collectionView: NSCollectionView, acceptDrop drag
 - (BOOL) collectionView:(NSCollectionView *) collectionView acceptDrop:(id<NSDraggingInfo>) draggingInfo indexPath:(NSIndexPath *) indexPath dropOperation:(NSCollectionViewDropOperation) dropOperation;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the drop operation should be accepted or [`false`](../../Swift/false.md) if it should be rejected.
 
-#### Discussion
+## Discussion
 
 The collection view calls this method when the user releases the mouse button while it is over a valid drop target. This method is called after the [`collectionView(_:validateDrop:proposedIndexPath:dropOperation:)`](./collectionview%28_,validatedrop,proposedindexpath,dropoperation%29.md) method validates that dropping the content at the specified location is possible. You must implement this method to accept the dropped content and incorporate it into the collection view.
 

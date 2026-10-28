@@ -21,7 +21,7 @@ Returns a Boolean value indicating whether the corresponding components of two t
 func == (lhs: (), rhs: ()) -> Bool
 ```
 
-#### Discussion
+## Discussion
 
 All arity zero tuples are equal.
 

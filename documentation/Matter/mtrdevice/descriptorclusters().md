@@ -25,7 +25,7 @@ func descriptorClusters() -> [MTRAttributePath : [String : Any]]
 - (NSDictionary<MTRAttributePath *,NSDictionary<NSString *,id> *> *) descriptorClusters;
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary with the paths of the attributes as keys and the data-values (as described in the documentation for MTRDeviceResponseHandler) as values.
 

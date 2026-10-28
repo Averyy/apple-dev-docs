@@ -25,11 +25,11 @@ func url(forPublishingUbiquitousItemAt url: URL, expiration outDate: Autoreleasi
 - (NSURL *) URLForPublishingUbiquitousItemAtURL:(NSURL *) url expirationDate:(NSDate **) outDate error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A URL with which users can download a copy of the item at `url`. In Objective-C, returns `nil` if the URL could not be created for any reason.
 
-#### Discussion
+## Discussion
 
 This method creates a snapshot of the specified flat file and places that copy in a temporary iCloud location where it can be accessed by other users using the returned URL. The snapshot reflects the contents of the file at the time the URL was generated and is not updated when subsequent changes are made to the original file in the user’s iCloud storage. The snapshot file remains available at the specified URL until the date specified in the `outDate` parameter, after which it is automatically deleted. Explicitly deleting the item by calling the [`removeItem(at:)`](./removeitem%28at%29.md) or [`removeItem(atPath:)`](./removeitem%28atpath%29.md) method also deletes all old versions of the item, invalidating URLs to those versions returned by this method.
 

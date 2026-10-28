@@ -19,7 +19,7 @@ func curve(to endPoint: NSPoint, controlPoint1: NSPoint, controlPoint2: NSPoint)
 - (void) curveToPoint:(NSPoint) endPoint controlPoint1:(NSPoint) controlPoint1 controlPoint2:(NSPoint) controlPoint2;
 ```
 
-#### Discussion
+## Discussion
 
 You must set the path’s current point (using the [`move(to:)`](./move%28to%29.md) method or through the creation of a preceding line or curve segment) before you invoke this method. If the path is empty, this method raises an [`genericException`](../../Foundation/nsexceptionname/genericexception.md) exception.
 

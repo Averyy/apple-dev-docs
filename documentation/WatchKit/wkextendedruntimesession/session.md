@@ -15,7 +15,7 @@ Instantiates a new session object.
 + (WKExtendedRuntimeSession *) session;
 ```
 
-#### Discussion
+## Discussion
 
 The system sets the session’s type based on the Session Type setting in your WatchKit Extension’s Background Modes capability. For more information, see [Set Up the Session](../using-extended-runtime-sessions.md#Set-Up-the-Session).
 

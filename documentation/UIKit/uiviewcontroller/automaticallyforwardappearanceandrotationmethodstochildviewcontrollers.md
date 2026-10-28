@@ -19,11 +19,11 @@ Returns a Boolean value that indicates whether appearance and rotation methods a
 - (BOOL) automaticallyForwardAppearanceAndRotationMethodsToChildViewControllers;
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether appearance and rotation methods are forwarded.
 
-#### Discussion
+## Discussion
 
 This method is called to determine whether to automatically forward containment callbacks to the child view controllers.
 

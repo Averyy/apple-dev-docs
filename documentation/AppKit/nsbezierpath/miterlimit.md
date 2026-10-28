@@ -19,7 +19,7 @@ var miterLimit: CGFloat { get set }
 @property CGFloat miterLimit;
 ```
 
-#### Discussion
+## Discussion
 
 The miter limit helps you avoid spikes at the junction of two line segments connected by a miter join ([`NSMiterLineJoinStyle`](../nsmiterlinejoinstyle.md)). If the ratio of the miter length—the diagonal length of the miter join—to the line thickness exceeds the miter limit, the joint is converted to a bevel join.
 

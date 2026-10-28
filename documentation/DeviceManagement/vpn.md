@@ -20,11 +20,11 @@ The payload that configures a VPN.
 object VPN
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.vpn.managed` as the payload type.
 
-##### Profile availability
+### Profile availability
 
 |  |  |
 | --- | --- |
@@ -36,7 +36,7 @@ Specify `com.apple.vpn.managed` as the payload type.
 | Allowed in user enrollment | N/A |
 | Allow multiple payloads | iOS, macOS, Shared iPad, tvOS, visionOS |
 
-##### Profile example
+### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>

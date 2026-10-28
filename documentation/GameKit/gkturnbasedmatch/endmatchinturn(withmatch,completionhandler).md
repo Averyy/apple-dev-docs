@@ -33,7 +33,7 @@ func endMatchInTurn(withMatch matchData: Data) async throws
 
 - [Starting turn-based matches and passing turns between players](../starting-turn-based-matches-and-passing-turns-between-players.md)
 
-#### Discussion
+## Discussion
 
 Invoke this method only when the local player is the current participant. Also, set the [`matchOutcome`](../gkturnbasedparticipant/matchoutcome.md) property for each participant in the match’s [`participants`](./participants.md) property to a value other than [`GKTurnBasedMatch.Outcome.none`](./outcome/none.md) before invoking this method.
 

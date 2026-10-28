@@ -23,11 +23,11 @@ func allocateUserGradient(for tensor: MLCTensor) -> MLCTensor?
 - (MLCTensor *) allocateUserGradientForTensor:(MLCTensor *) tensor;
 ```
 
-#### Return Value
+## Return Value
 
 A gradient tensor.
 
-#### Discussion
+## Discussion
 
 Third-party numeric libraries can perform additional computations on the result tensor produced by a layer in the training graph. This external computation may produce gradients that you can backpropagate during gradient execution by using this method to allocate an entry for the gradient.
 

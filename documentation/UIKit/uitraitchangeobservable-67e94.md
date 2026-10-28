@@ -25,7 +25,7 @@ protocol UITraitChangeObservable
 - [Adapting your app when traits change](./adapting-your-app-when-traits-change.md)
 - [Building a desktop-class iPad app](./building-a-desktop-class-ipad-app.md)
 
-#### Overview
+## Overview
 
 Types that conform to [`UITraitChangeObservable`](./uitraitchangeobservable-67e94.md) can execute your code in response to changes in their trait collection. When you register for trait changes, the system observes the specified traits, and calls your code when any of the observed traits change value.
 

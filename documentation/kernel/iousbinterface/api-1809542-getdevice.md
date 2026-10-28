@@ -9,11 +9,11 @@
 virtual IOUSBDevice *GetDevice();
 ```
 
-#### Return Value
+## Return Value
 
 Pointer to the IOUSBDevice object which is the parent of this IOUSBInterface object.
 
-#### Overview
+## Overview
 
 returns the device the interface is part of.
 

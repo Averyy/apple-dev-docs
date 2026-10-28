@@ -23,7 +23,7 @@ var kCFSocketAutomaticallyReenableAcceptCallBack: CFOptionFlags { get }
 kCFSocketAutomaticallyReenableAcceptCallBack
 ```
 
-#### Discussion
+## Discussion
 
 When enabled using [`CFSocketSetSocketFlags(_:_:)`](./cfsocketsetsocketflags%28_,_%29.md), the accept callback is called every time someone connects to your socket. When disabled, the accept callback is called only once the next time a new socket connection is accepted. The accept callback is automatically reenabled by default.
 

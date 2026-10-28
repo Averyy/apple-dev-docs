@@ -25,7 +25,7 @@ func CFSocketSetDefaultNameRegistryPortNumber(_ port: UInt16)
 extern void CFSocketSetDefaultNameRegistryPortNumber(UInt16 port);
 ```
 
-#### Discussion
+## Discussion
 
 If you do not provide a name server signature or leave out the socket address in the signature when calling one of the name registry functions, such as [`CFSocketRegisterSocketSignature(_:_:_:_:)`](./cfsocketregistersocketsignature%28_,_,_,_%29.md), `port` will be used for the connection.
 

@@ -5,7 +5,7 @@
 
 Use vectors to calculate geometric values, calculate dot products and cross products, and interpolate between values.
 
-#### Overview
+## Overview
 
 A vector is comparable to a fixed-length array containing integer or floating-point values. The simd framework provides support for *small vectors*, that is, vectors that contain up to eight double-precision or sixteen single-precision values.
 
@@ -28,7 +28,7 @@ let c = a + b    // c = (7.0, 10.0, 12.0, 16.0)
 
 The following examples show a few common uses of vectors.
 
-##### Calculate Luminance
+### Calculate Luminance
 
 You can calculate the luminance of a color by multiplying each of its red, green, and blue color channels by a certain coefficient, and adding the three products together—creating a grayscale representation of the color. The following code uses the Rec. 709 luma coefficients for the color-to-grayscale conversion. Without the simd framework, you could implement this calculation using the following code:
 
@@ -55,17 +55,17 @@ func lumaForColor(red: Float, green: Float, blue: Float) -> Float {
 }
 ```
 
-##### Calculate Length and Distance
+### Calculate Length and Distance
 
 Calculating the distance between two points using the Pythagorean theorem is a common task in games and graphics programming. The simd framework provides functions for calculating length and distance in two, three, and four dimensions.
 
-###### Calculate Length
+#### Calculate Length
 
 The length functions, for example, [`simd_length`](../simd/simd_length-3ob5d.md), return the length of a vector. The following illustration shows how the length of a vector, *A*, is calculated as the square root of the sum of the squares of its two values.
 
 ![Illustration showing how the length of vector A, at coordinates 4, 3, is calculated using the Pythagorean theorem.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-2972222@2x.png)
 
-###### Calculate Distance
+#### Calculate Distance
 
 The distance functions, for example, [`simd_distance`](../simd/simd_distance-598wa.md), return the distance between two vectors:
 
@@ -82,7 +82,7 @@ let dist = simd_distance(a, b)
 let len = simd_length(a)
 ```
 
-###### Compare Distances
+#### Compare Distances
 
 Because the distance and length functions both calculate the square root of the sum of the squares of the vectors, they can be computationally expensive. If you don’t need the exact value—for example, if you’re comparing the relative lengths of two vectors—simd provides functions that return the square of the distance and the length.
 
@@ -98,7 +98,7 @@ if simd_distance_squared(a, target) < simd_distance_squared(b, target) {
 }
 ```
 
-##### Calculate Reflection and Refraction Vectors
+### Calculate Reflection and Refraction Vectors
 
 The simd framework provides functions for calculating vectors that describe reflections and refractions in two-, three-, and four-dimensional space. The image below shows:
 
@@ -109,7 +109,7 @@ The simd framework provides functions for calculating vectors that describe refl
 
 ![Image showing incident, reflected, and refracted rays and a normal, and their relationship to an object surface.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-2969455@2x.png)
 
-###### Normalize Vectors
+#### Normalize Vectors
 
 You normalize the vectors (calculate a vector with the same direction as the original, but with a length of 1) passed to the reflect and refract functions to achieve the correct results. Given the values above, the following code defines normalized vectors for the incident ray and normal:
 
@@ -118,7 +118,7 @@ let incident = simd_normalize(simd_double2(x: 1.5, y: -1))
 let normal = simd_normalize(simd_double2(x: 0, y: 1))
 ```
 
-###### Calculate Reflection
+#### Calculate Reflection
 
 You get the reflected vector with [`simd_reflect`](../simd/simd_reflect-7c8f9.md):
 
@@ -126,7 +126,7 @@ You get the reflected vector with [`simd_reflect`](../simd/simd_reflect-7c8f9.md
 let reflected = simd_reflect(incident, normal)
 ```
 
-###### Calculate Refraction
+#### Calculate Refraction
 
 For the refraction function, you pass an additional parameter (`eta`) that models the index of refraction for physical materials:
 
@@ -136,7 +136,7 @@ let glass = 1.5     // refractive index for glass
 let refracted = simd_refract(incident, normal, air / glass)
 ```
 
-##### Calculate the Normal of a Triangle
+### Calculate the Normal of a Triangle
 
 The normal of a triangle in 3D space is the vector perpendicular to its surface. You can use the simd framework’s cross product function to calculate the normal of a triangle. This is a common task in 3D graphics programming and is used when calculating the shading of surfaces.
 
@@ -165,7 +165,7 @@ The `simd_cross` function returns the vector that’s perpendicular to the two v
 let normal = simd_normalize(simd_cross(vector1, vector2)) 
 ```
 
-##### Interpolate Between Values
+### Interpolate Between Values
 
 Interpolation adds new, intermediate data points between known values. The simd framework provides functions to linearly and smoothly interpolate between scalar and vector values. Smooth interpolation is commonly used in animation, and you can, for example, use the functions described below to define the [`timingFunction`](../SpriteKit/skaction/timingfunction.md) of a SpriteKit action.
 
@@ -173,7 +173,7 @@ The following illustration shows how linear interpolation creates a straight lin
 
 ![Illustration showing linear and smooth interpolation between scalar values.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-2969414@2x.png)
 
-###### Linearly Interpolate
+#### Linearly Interpolate
 
 Linear interpolation is provided by the `simd_mix` function. The first two parameters specify the range, and the third parameter specifies the normalized (between `0` and `1`) position in the range. The following code shows how to populate an array with 1024 elements. The first element in the array has a value of -100, and the last element of the array has a value of 100. Intermediate elements linearly interpolate between the first and last values:
 
@@ -183,7 +183,7 @@ let linear: [Float] = stride(from: 0.0, to: 1.0, by: 1 / 1024).map { x in
 }
 ```
 
-###### Smoothly Interpolate
+#### Smoothly Interpolate
 
 Smooth interpolation is provided by the `simd_smoothstep` function. This function uses Hermite interpolation based on the following code:
 

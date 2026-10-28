@@ -21,7 +21,7 @@ case file
 MPMovieSourceTypeFile
 ```
 
-#### Discussion
+## Discussion
 
 The movie is a local file or is a file that can be downloaded from the network.
 

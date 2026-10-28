@@ -19,7 +19,7 @@ func viewDidEndLiveResize()
 - (void) viewDidEndLiveResize;
 ```
 
-#### Discussion
+## Discussion
 
 In the simple case, a view is sent [`viewWillStartLiveResize()`](./viewwillstartliveresize%28%29.md) before the first resize operation on the containing window and [`viewDidEndLiveResize()`](./viewdidendliveresize%28%29.md) after the last resize operation. A view that is repeatedly added and removed from a window during live resize will receive only one [`viewWillStartLiveResize()`](./viewwillstartliveresize%28%29.md) (on the first time it is added to the window) and one [`viewDidEndLiveResize()`](./viewdidendliveresize%28%29.md) (when the window has completed the live resize operation). This allows a superview such as [`NSBrowser`](../nsbrowser.md) object to add and remove its [`NSMatrix`](../nsmatrix.md) subviews during live resize without the `NSMatrix` receiving multiple calls to these methods.
 

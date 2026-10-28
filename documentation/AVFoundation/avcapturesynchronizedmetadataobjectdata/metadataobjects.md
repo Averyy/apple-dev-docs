@@ -22,7 +22,7 @@ var metadataObjects: [AVMetadataObject] { get }
 @property (readonly) NSArray<AVMetadataObject *> * metadataObjects;
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**:  Because [`AVMetadataObject`](../avmetadataobject.md) is an abstract class, the objects in this array are always instances of a concrete subclass.
 

@@ -19,7 +19,7 @@ optional func slideshowDidChangeCurrentIndex(_ newIndex: Int)
 - (void) slideshowDidChangeCurrentIndex:(NSUInteger) newIndex;
 ```
 
-#### Discussion
+## Discussion
 
 Image Kit invokes this method when the slideshow changes to the specified item. Implement this method to perform custom tasks at that time.
 

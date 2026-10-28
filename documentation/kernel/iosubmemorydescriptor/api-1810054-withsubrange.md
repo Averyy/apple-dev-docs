@@ -15,11 +15,11 @@ static IOSubMemoryDescriptor * withSubRange(
  IOOptionBitsoptions);
 ```
 
-#### Return Value
+## Return Value
 
 The created IOMemoryDescriptor on success, to be released by the caller, or zero on failure.
 
-#### Overview
+## Overview
 
 This method creates and initializes an IOMemoryDescriptor for memory consisting of a subrange of the specified memory descriptor. The parent memory descriptor is retained by the new descriptor.
 

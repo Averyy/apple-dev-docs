@@ -25,7 +25,7 @@ static var operationNotSupportedByDevice: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 You attempted to apply an inappropriate function to a device; for example, trying to read a write-only device such as a printer.
 

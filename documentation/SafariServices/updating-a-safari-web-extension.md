@@ -5,7 +5,7 @@
 
 Add new features and fix bugs in your Safari web extension using Xcode tools.
 
-#### Overview
+## Overview
 
 Update your Safari web extension by editing the generated files in your Xcode project to fix bugs, or by adding new source files to create new features.
 
@@ -13,17 +13,17 @@ If you prefer to use another editor for your source files, or if you want to pre
 
 Add new features with web extension APIs that work across browsers. For more information, see Mozilla’s [Browser Extensions](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions) documentation. For more information about web extension API compatibility in Safari, see [Assessing your Safari web extension’s browser compatibility](./assessing-your-safari-web-extension-s-browser-compatibility.md).
 
-##### Share your extension in Safari in iOS
+### Share your extension in Safari in iOS
 
 Safari supports web extensions in iOS 15 and later. To update your existing Xcode project with a macOS Safari web extension to support iOS, use the packager tool with the `--rebuild-project` option. For more information, see [Add iOS to your existing Xcode project](./packaging-a-web-extension-for-safari.md#Add-iOS-to-your-existing-Xcode-project).
 
-##### Edit existing files in Xcode
+### Edit existing files in Xcode
 
 While Xcode is primarily for native development, it has built-in support for editing web source-code documents, including HTML, CSS, JavaScript, and JSON. In the Xcode Project navigator, select and edit the files you want to customize.
 
 For more information, see [Editing source files in Xcode](../Xcode/editing-source-files-in-xcode.md).
 
-##### Edit existing files in an external editor
+### Edit existing files in an external editor
 
 If you have an existing development workflow for your web extension, you can use another source editor for your HTML, CSS, and JavaScript extension files in the Resources group. Your changes are visible in Xcode when you save changes to your files.
 
@@ -42,7 +42,7 @@ xcodebuild -scheme HelloWorld\ \(macOS\) build
 
 Run the `xcodebuild` command from the top directory of your Xcode project, and replace the `-scheme` parameter with the name of your Xcode project.
 
-##### Add new files to your Safari web extension
+### Add new files to your Safari web extension
 
 Add new sources files for new features or to refactor existing features. To add a new source file to your web extension:
 

@@ -22,7 +22,7 @@ struct State
 enum UIDocumentState : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 A [`UIDocument`](../uidocument.md) object stores the current state of the document in the [`documentState`](./documentstate.md) property. To receive notifications about changes in document state, observe the [`stateChangedNotification`](./statechangednotification.md) notification.
 

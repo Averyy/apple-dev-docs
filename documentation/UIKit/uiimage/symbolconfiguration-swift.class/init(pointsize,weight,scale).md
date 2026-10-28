@@ -24,7 +24,7 @@ convenience init(pointSize: CGFloat, weight: UIImage.SymbolWeight, scale: UIImag
 + (instancetype) configurationWithPointSize:(CGFloat) pointSize weight:(UIImageSymbolWeight) weight scale:(UIImageSymbolScale) scale;
 ```
 
-#### Return Value
+## Return Value
 
 A new symbol configuration object with the specified information.
 

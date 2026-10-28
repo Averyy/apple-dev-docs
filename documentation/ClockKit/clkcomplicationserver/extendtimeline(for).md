@@ -25,7 +25,7 @@ func extendTimeline(for complication: CLKComplication)
 
 - [Keeping your complications up to date](../keeping-your-complications-up-to-date.md)
 
-#### Discussion
+## Discussion
 
 Call this method when your existing complication data is still valid and you’ve new data to add to the end of your timeline. ClockKit initiates an update session to request the additional data from your complication data source. If your complication has already exceeded its allotted daily budget for execution time, calls to this method do nothing.
 

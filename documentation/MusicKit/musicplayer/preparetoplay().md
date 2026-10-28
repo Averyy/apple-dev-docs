@@ -20,7 +20,7 @@ Prepares the current queue for playback, interrupting any active (nonmixable) au
 func prepareToPlay() async throws
 ```
 
-#### Discussion
+## Discussion
 
 Call this function to ensure that the player buffers the starting entry in the queue and that the entry is ready to play.
 

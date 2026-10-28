@@ -19,7 +19,7 @@ class NSSegmentedControl
 @interface NSSegmentedControl : NSControl
 ```
 
-#### Overview
+## Overview
 
 The `NSSegmentedControl` class uses an [`NSSegmentedCell`](./nssegmentedcell.md) class to implement much of the control’s functionality. Most methods in `NSSegmentedControl` are simply cover methods that call the corresponding method in [`NSSegmentedCell`](./nssegmentedcell.md). The methods of [`NSSegmentedCell`](./nssegmentedcell.md) that do not have covers relate to accessing and setting values for tags and tooltips, programatically setting the key segment, and establishing the mode of the control.
 

@@ -24,7 +24,7 @@ var style: PDFBorderStyle { get set }
 @property (nonatomic) PDFBorderStyle style;
 ```
 
-#### Discussion
+## Discussion
 
 Refer to `Constants` for the available border styles.
 

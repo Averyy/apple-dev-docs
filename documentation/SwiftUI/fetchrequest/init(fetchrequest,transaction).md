@@ -24,7 +24,7 @@ Creates a fully configured fetch request that uses the specified transaction whe
 
 Available when `Result` conforms to `NSFetchRequestResult`.
 
-#### Discussion
+## Discussion
 
 Use this initializer if you need a fetch request with updates that affect the user interface based on a [`Transaction`](../transaction.md). Otherwise, use [`init(fetchRequest:animation:)`](./init%28fetchrequest,animation%29.md).
 

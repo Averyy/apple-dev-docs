@@ -21,7 +21,7 @@ Performs one or more framework requests on the handler’s image.
 final func perform<each T>(_ request: repeat each T) async throws -> (repeat (each T).Result) where repeat each T : VisionRequest
 ```
 
-#### Discussion
+## Discussion
 
 The function returns after all requests complete.
 

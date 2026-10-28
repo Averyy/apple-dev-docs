@@ -25,7 +25,7 @@ let NSStoreModelVersionIdentifiersKey: String
 extern NSString * const NSStoreModelVersionIdentifiersKey;
 ```
 
-#### Discussion
+## Discussion
 
 If you add your own annotations to a model’s version identifier (see [`versionIdentifiers`](./nsmanagedobjectmodel/versionidentifiers.md)), they are stored in the persistent store’s metadata. You can use this key to retrieve the identifiers from the metadata dictionaries available from `NSPersistentStore` ([`metadata`](./nspersistentstore/metadata.md)) and `NSPersistentStoreCoordinator` ([`metadata(for:)`](./nspersistentstorecoordinator/metadata%28for%29.md) and related methods). The corresponding value is a Foundation collection (an `NSArray` or `NSSet` object).
 

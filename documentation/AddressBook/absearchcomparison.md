@@ -19,7 +19,7 @@ typealias ABSearchComparison = CFIndex
 typedef CFIndex ABSearchComparison;
 ```
 
-#### Discussion
+## Discussion
 
 These constants are used in a call to the [`ABGroupCreateSearchElement(_:_:_:_:_:)`](./abgroupcreatesearchelement%28_,_,_,_,_%29.md) or [`ABPersonCreateSearchElement(_:_:_:_:_:)`](./abpersoncreatesearchelement%28_,_,_,_,_%29.md) functionto specify the type of comparison being made.
 

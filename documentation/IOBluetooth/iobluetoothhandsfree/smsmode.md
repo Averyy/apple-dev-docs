@@ -19,11 +19,11 @@ var smsMode: IOBluetoothSMSMode { get }
 @property (readonly) IOBluetoothSMSMode SMSMode;
 ```
 
-#### Return Value
+## Return Value
 
 The SMS mode
 
-#### Discussion
+## Discussion
 
 Returns the device’s SMS mode. The values are described in “IOBluetoothSMSMode.”
 

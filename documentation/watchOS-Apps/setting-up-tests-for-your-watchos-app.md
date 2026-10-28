@@ -5,11 +5,11 @@
 
 Configure your watch-only project with unit tests and user interface tests.
 
-#### Overview
+## Overview
 
 Xcode offers unit and user interface tests to use while building your watchOS app. Add them to your project to confirm that your features work as expected, prevent performance regressions, and validate user interaction flows.
 
-##### Add a test target to the project
+### Add a test target to the project
 
 Add a unit test or UI test target to your existing watch-only watchOS Xcode project by choosing File > New > Target to open the template selection dialog. Alternatively, select the project in the Project navigator, select the General tab, and click the Add a Target button (+) at the bottom of the Targets area.
 
@@ -27,13 +27,13 @@ Confirm the selected executable is [*Project Name*] `WatchKit App.app`. If not, 
 
 ![A screenshot of an Xcode scheme editor showing the Info pane for the selected Run action. Options available for selection are: Build Configuration, Executable, Watch Interface, and Launch. The WatchKit App option displays as the executable option.](https://developer.apple.com/tutorials/images/com.apple.watchOS-Apps/setting-up-tests-for-your-watchos-app-3@2x.png)
 
-##### Make the extension code visible in unit tests
+### Make the extension code visible in unit tests
 
 When you add a unit test file to your test target, your watch extension code isn’t visible to your tests by default. Add an `@testable import` declaration at the top of your test file, specifying your watch extension name, to make your extension code testable.
 
 ![An image of the first three lines of code in a sample test file that Xcode generates. A rectangle surrounds the @testable import declaration on the second line.](https://developer.apple.com/tutorials/images/com.apple.watchOS-Apps/setting-up-tests-for-your-watchos-app-4@2x.png)
 
-##### Switch schemes to run tests
+### Switch schemes to run tests
 
 If you try to run your tests before switching to the new test scheme, Xcode lets you know that the current scheme isn’t set up for testing.
 

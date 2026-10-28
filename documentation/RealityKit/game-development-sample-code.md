@@ -4,7 +4,7 @@
 
 Explore a collection of projects relating to game development.
 
-#### Overview
+## Overview
 
 - [Bringing your SceneKit projects to RealityKit](./bringing-your-scenekit-projects-to-realitykit.md)
   Adapt a platformer game for RealityKit’s powerful ECS and modularity.

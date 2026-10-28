@@ -19,7 +19,7 @@ func substituteGlyphs(in glyphRange: NSRange, withGlyphs glyphs: UnsafeMutablePo
 - (void) substituteGlyphsInRange:(NSRange) glyphRange withGlyphs:(NSGlyph *) glyphs;
 ```
 
-#### Discussion
+## Discussion
 
 This method does not alter the glyph-to-character mapping or invalidate layout information.
 

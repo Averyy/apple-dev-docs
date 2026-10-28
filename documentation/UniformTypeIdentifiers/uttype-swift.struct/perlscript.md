@@ -21,7 +21,7 @@ A type that represents a Perl script.
 static var perlScript: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.perl-script`.
 

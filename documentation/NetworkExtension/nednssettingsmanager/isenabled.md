@@ -23,7 +23,7 @@ var isEnabled: Bool { get }
 @property (readonly, getter=isEnabled) BOOL enabled;
 ```
 
-#### Discussion
+## Discussion
 
 A user must enable your DNS settings configuration in order to apply it to the system. By default, configurations are disabled until the user enables the configuration in the Settings app on iOS or in System Preferences on macOS.
 

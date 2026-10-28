@@ -21,7 +21,7 @@ var kABMultiRealPropertyType: Int { get }
 kABMultiRealPropertyType
 ```
 
-#### Discussion
+## Discussion
 
 Returned as an [`ABMultiValue`](./abmultivalue-swift.typealias.md) of [`CFNumber`](../CoreFoundation/cfnumber.md) objects.
 

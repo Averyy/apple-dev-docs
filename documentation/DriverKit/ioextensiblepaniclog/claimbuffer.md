@@ -16,11 +16,11 @@
 virtual kern_return_t ClaimBuffer(uint64_t *addr, uint64_t *len);
 ```
 
-#### Return Value
+## Return Value
 
 0 in case of success. Negative in case of an error.
 
-#### Discussion
+## Discussion
 
 This function is called to get a pointer to the ext paniclog buffer
 

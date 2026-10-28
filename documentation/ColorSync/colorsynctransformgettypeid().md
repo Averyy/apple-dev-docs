@@ -25,7 +25,7 @@ func ColorSyncTransformGetTypeID() -> CFTypeID
 extern CFTypeID ColorSyncTransformGetTypeID();
 ```
 
-#### Return Value
+## Return Value
 
 The `CFTypeID` for `ColorSyncTransform` objects.
 

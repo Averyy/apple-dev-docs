@@ -16,7 +16,7 @@ A user ID for the person installing the app.
 let account: String
 ```
 
-#### Discussion
+## Discussion
 
 You set this value and the operating system sends it back to you as:
 

@@ -10,7 +10,7 @@ framework: "mlx-swift/MLX"
 
 Functions to produce and consume array indexes.
 
-#### Overview
+## Overview
 
 MLX has a number of functions (typically named `argX()`) that can produce array indices and a few functions that can consume them.
 

@@ -21,7 +21,7 @@ var updateType: TVElementUpdateType { get }
 @property (nonatomic, readonly) TVElementUpdateType updateType;
 ```
 
-#### Discussion
+## Discussion
 
 For possible values, see [`TVElementUpdateType`](../tvelementupdatetype.md). This property is initially set to [`TVElementUpdateType.none`](../tvelementupdatetype/none.md).
 

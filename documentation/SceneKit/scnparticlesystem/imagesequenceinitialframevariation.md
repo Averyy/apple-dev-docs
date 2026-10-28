@@ -25,7 +25,7 @@ var imageSequenceInitialFrameVariation: CGFloat { get set }
 @property (nonatomic) CGFloat imageSequenceInitialFrameVariation;
 ```
 
-#### Discussion
+## Discussion
 
 Setting a nonzero value for this property randomizes the effect of the [`imageSequenceInitialFrame`](./imagesequenceinitialframe.md) property. SceneKit randomly adjusts the initial animation frame for each particle by up to half the [`imageSequenceInitialFrameVariation`](./imagesequenceinitialframevariation.md) value. For example, if the [`imageSequenceInitialFrame`](./imagesequenceinitialframe.md) value is `10.0` and the [`imageSequenceInitialFrameVariation`](./imagesequenceinitialframevariation.md) value is `5.0`, each particle randomly begins on a frame between frame 7.5 and frame 12.5 of the image sequence animation.
 

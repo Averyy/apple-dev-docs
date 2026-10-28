@@ -17,7 +17,7 @@ A set of applications for the system to block.
 var blockedApplications: Set<Application>? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The system hides blocked applications and prevents the user from launching them. The value is `nil` if your app doesn’t specify a set of apps to block. Your app can shield up to 50 applications at once.
 

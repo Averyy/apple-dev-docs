@@ -21,7 +21,7 @@ A type that explicitly supplies its own mirror.
 protocol CustomReflectable
 ```
 
-#### Overview
+## Overview
 
 You can create a mirror for any type using the `Mirror(reflecting:)` initializer, but if you are not satisfied with the mirror supplied for your type by default, you can make it conform to `CustomReflectable` and return a custom `Mirror` instance.
 

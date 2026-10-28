@@ -25,11 +25,11 @@ func applyingExifOrientation(_ exifOrientation: CGImagePropertyOrientation) -> S
 - (instancetype) semanticSegmentationMatteByApplyingExifOrientation:(CGImagePropertyOrientation) exifOrientation;
 ```
 
-#### Return Value
+## Return Value
 
 A new semantic segmentation matte instance.
 
-#### Discussion
+## Discussion
 
 This method throws an [`invalidArgumentException`](../../Foundation/nsexceptionname/invalidargumentexception.md) if you pass an unrecognized `exifOrientation`.
 

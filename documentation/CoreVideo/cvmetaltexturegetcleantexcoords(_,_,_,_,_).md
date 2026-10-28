@@ -24,7 +24,7 @@ func CVMetalTextureGetCleanTexCoords(_ image: CVMetalTexture, _ lowerLeft: Unsaf
 extern void CVMetalTextureGetCleanTexCoords(CVMetalTextureRef image, float lowerLeft[2], float lowerRight[2], float upperRight[2], float upperLeft[2]);
 ```
 
-#### Discussion
+## Discussion
 
 This function automatically takes into account whether or not the texture is flipped.
 

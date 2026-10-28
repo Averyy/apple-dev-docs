@@ -20,7 +20,7 @@ func toggleSidebar(_ sender: Any?)
 - (void) toggleSidebar:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 If the split view controller doesn’t contain a sidebar, calling this method does nothing.
 

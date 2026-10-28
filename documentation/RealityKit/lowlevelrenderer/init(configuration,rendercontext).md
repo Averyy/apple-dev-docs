@@ -15,11 +15,11 @@ Creates a renderer, asynchronously compiling all required GPU resources.
 ## Declaration
 
 ```swift
-nonisolated
-(nonsending) convenience init(configuration: LowLevelRenderer.Configuration, renderContext: any LowLevelRenderContext) async throws
+nonisolated(nonsending)
+convenience init(configuration: LowLevelRenderer.Configuration, renderContext: any LowLevelRenderContext) async throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if GPU resource compilation fails.
 

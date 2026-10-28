@@ -15,7 +15,7 @@ Fills the rectangles in the passed list with the current fill color.
 extern void NSRectFillList(const NSRect *rects, NSInteger count);
 ```
 
-#### Discussion
+## Discussion
 
 Fills the specified rectangles with the current fill color using the compositing mode `NSCompositeCopy`.
 

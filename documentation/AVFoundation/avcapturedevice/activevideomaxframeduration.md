@@ -24,7 +24,7 @@ var activeVideoMaxFrameDuration: CMTime { get set }
 @property (nonatomic) CMTime activeVideoMaxFrameDuration;
 ```
 
-#### Discussion
+## Discussion
 
 A device’s maximum frame duration is the reciprocal of its minimum frame rate. You can set the value of this property to limit the minimum frame rate during a capture session. The capture device automatically chooses a default maximum frame duration based on its active format. After changing the value of this property, you can return to the default maximum frame duration by setting this property’s value to [`invalid`](../../CoreMedia/cmtime/invalid.md). Choosing a new preset for the capture session also resets this property to its default value.
 

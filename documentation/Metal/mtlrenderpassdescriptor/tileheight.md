@@ -24,7 +24,7 @@ var tileHeight: Int { get set }
 @property (nonatomic) NSUInteger tileHeight;
 ```
 
-#### Discussion
+## Discussion
 
 The valid tile sizes are `32 x 32`, `32 x 16`, and `16 x 16`. The Metal driver chooses a default size when your app doesn’t set a tile size.
 

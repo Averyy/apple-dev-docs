@@ -13,11 +13,11 @@ Get details for a specific analytics report segment.
 
 - [Downloading Analytics Reports](./downloading-analytics-reports.md)
 
-#### Discussion
+## Discussion
 
 > 💡 **Tip**:  The download URLs are valid for 5 minutes after generating. You need to download the reports immediately after calling this endpoint.
 
-##### Examples Request and Response
+### Examples Request and Response
 
 **Request**:
 

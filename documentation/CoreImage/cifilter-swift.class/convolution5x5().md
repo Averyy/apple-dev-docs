@@ -24,11 +24,11 @@ class func convolution5X5() -> any CIFilter & CIConvolution
 + (CIFilter<CIConvolution> *) convolution5X5Filter;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies a 5 x 5 convolution to the `RGBA` components of an image. The effect uses a 5 x 5 area surrounding an input pixel, the pixel itself, and those within a distance of 2 pixels horizontally and vertically. The effect repeats this for every pixel within the image. The work area is then combined with the weight property vector to produce the processed image. This filter differs from the [`convolutionRGB5X5()`](./convolutionrgb5x5%28%29.md) filter, which only processes the RGB components.
 

@@ -23,7 +23,7 @@ class func uniformAcrossSiblings(estimate estimatedDimension: CGFloat) -> Self
 + (instancetype) uniformAcrossSiblingsWithEstimate:(CGFloat) estimatedDimension;
 ```
 
-#### Discussion
+## Discussion
 
 Use the [`uniformAcrossSiblings(estimate:)`](./uniformacrosssiblings%28estimate%29.md) dimension to ensure that self-sizing items have a consistent size across their group. This dimension provides an alternative to using the [`estimated(_:)`](./estimated%28_%29.md) dimension, which might not result in a uniform layout for items that vary in size.
 

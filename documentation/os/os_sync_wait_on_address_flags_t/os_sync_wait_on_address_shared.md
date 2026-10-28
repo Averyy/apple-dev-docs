@@ -21,7 +21,7 @@ Flag to indicate an address is in a shared memory region, allowing for a futex w
 OS_SYNC_WAIT_ON_ADDRESS_SHARED
 ```
 
-#### Discussion
+## Discussion
 
 Use this flag when you pass an address allocated in shared memory to any futex wait function. Shared memory can be used for waits and wakes within a single process, but incur a performance hit.
 

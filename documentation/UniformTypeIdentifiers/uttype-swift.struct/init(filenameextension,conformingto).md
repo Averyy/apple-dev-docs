@@ -21,7 +21,7 @@ Creates a type based on a filename extension and an existing supertype that it c
 init?(filenameExtension: String, conformingTo supertype: UTType = .data)
 ```
 
-#### Discussion
+## Discussion
 
 If the system finds no types with the provided filename extension and conformance, but the inputs are otherwise valid, it may provide a dynamic type. The initializer returns `nil` if the parameters aren’t valid.
 

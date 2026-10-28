@@ -24,7 +24,7 @@ var transform: CGAffineTransform { get set }
 @property (nonatomic, readwrite) CGAffineTransform transform;
 ```
 
-#### Discussion
+## Discussion
 
 UIKit Dynamics makes use only of the rotation value in this property.
 

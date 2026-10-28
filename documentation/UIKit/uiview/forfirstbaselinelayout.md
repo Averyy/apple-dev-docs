@@ -23,7 +23,7 @@ var forFirstBaselineLayout: UIView { get }
 @property (strong, readonly) UIView * viewForFirstBaselineLayout;
 ```
 
-#### Discussion
+## Discussion
 
 For views with multiple rows of text, the first baseline is the baseline for the topmost row.
 

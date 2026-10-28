@@ -16,7 +16,7 @@ Defines a constant Unicode to text converter object.
 typedef const UnicodeToTextInfo ConstUnicodeToTextInfo;
 ```
 
-#### Discussion
+## Discussion
 
 The [`TruncateForUnicodeToText`](./api-1433649-truncateforunicodetotext.md) function requires a Unicode converter object as a parameter. This function does not modify the contents of the private structure to which the Unicode converter object refers, so it uses the constant Unicode converter object defined by the `ConstUnicodeToTextInfo` data type. 
 

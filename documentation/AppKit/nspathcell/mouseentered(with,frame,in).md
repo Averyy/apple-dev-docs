@@ -19,7 +19,7 @@ func mouseEntered(with event: NSEvent, frame: NSRect, in view: NSView)
 - (void) mouseEntered:(NSEvent *) event withFrame:(NSRect) frame inView:(NSView *) view;
 ```
 
-#### Discussion
+## Discussion
 
 The `NSPathCell` object dynamically animates to display the component that the mouse is hovering over using mouse-entered and mouse-exited events. The control should call these methods to correctly display the hovered component to the user. The control can acquire rectangles to track using [`rect(of:withFrame:in:)`](./rect%28of,withframe,in%29.md).
 

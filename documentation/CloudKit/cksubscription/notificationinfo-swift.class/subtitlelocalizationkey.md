@@ -24,7 +24,7 @@ var subtitleLocalizationKey: String? { get set }
 @property (copy, nullable) NSString * subtitleLocalizationKey;
 ```
 
-#### Discussion
+## Discussion
 
 CloudKit uses this value to set the `subtitle-loc-key` push notification property. Setting this property overrides any value in [`subtitle`](./subtitle.md).
 

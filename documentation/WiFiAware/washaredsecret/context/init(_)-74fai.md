@@ -17,11 +17,11 @@ Creates a new custom context that provides unique data.
 init?(_ data: Data)
 ```
 
-#### Return Value
+## Return Value
 
 A new `Context`, or `nil` if the provided string was too short.
 
-#### Discussion
+## Discussion
 
 Custom contexts may use any data. Set the same byte value on the local and remote devices in order to generate the same shared secret.
 

@@ -21,11 +21,11 @@ Returns an identifier that the signposter derives from the specified object.
 func makeSignpostID(from object: AnyObject) -> OSSignpostID
 ```
 
-#### Return Value
+## Return Value
 
 A signpost ID that you use to match an interval’s signposts.
 
-#### Discussion
+## Discussion
 
 > ⚠️ **Warning**:  Don’t use this method to generate an identifier for a signposted interval that crosses process boundaries. Instead, use the [`makeSignpostID()`](./makesignpostid%28%29.md) method.
 

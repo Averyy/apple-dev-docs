@@ -23,7 +23,7 @@ weak var associatedTab: (any WKWebExtensionTab)? { get }
 @property (nonatomic, weak, readonly, nullable) id<WKWebExtensionTab> associatedTab;
 ```
 
-#### Discussion
+## Discussion
 
 When this property is `nil`, it indicates that the action is the default action and not associated with a specific tab.
 

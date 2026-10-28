@@ -21,7 +21,7 @@ A policy that requires authentication before running the app intent.
 case requiresAuthentication
 ```
 
-#### Discussion
+## Discussion
 
 Use this policy if you require some type of authentication before the system runs the app intent. If the app intent originates on one device, but runs on another device, only one of the devices needs to be unlocked. For example, if someone starts an app intent on their unlocked Apple Watch, the system doesn’t require additional authentication even if your app intent’s code runs on a locked iPhone. If both devices are locked, the system prompts the person to authenticate before running the app intent.
 

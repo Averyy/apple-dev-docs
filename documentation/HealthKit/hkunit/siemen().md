@@ -24,7 +24,7 @@ class func siemen() -> Self
 + (instancetype) siemenUnit;
 ```
 
-#### Return Value
+## Return Value
 
 A HealthKit unit for measuring electrical conductance in siemens.
 

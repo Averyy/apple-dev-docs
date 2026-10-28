@@ -25,7 +25,7 @@ func discoverServices(_ serviceUUIDs: [CBUUID]?)
 - (void) discoverServices:(NSArray<CBUUID *> *) serviceUUIDs;
 ```
 
-#### Discussion
+## Discussion
 
 You can provide an array of [`CBUUID`](../cbuuid.md) objects—representing service UUIDs—in the `serviceUUIDs` parameter. When you do, the peripheral returns only the services of the peripheral that match the provided UUIDs.
 

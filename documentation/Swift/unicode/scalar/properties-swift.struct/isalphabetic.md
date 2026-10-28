@@ -21,7 +21,7 @@ A Boolean value indicating whether the scalar is alphabetic.
 var isAlphabetic: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 Alphabetic scalars are the primary units of alphabets and/or syllabaries.
 

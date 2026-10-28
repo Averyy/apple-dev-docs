@@ -2,7 +2,7 @@
 
 **Framework**: Core WLAN
 
-##### Included Headers
+### Included Headers
 
 - <Foundation/Foundation.h>
 

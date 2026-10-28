@@ -19,7 +19,7 @@ func otherMouseDown(with event: NSEvent)
 - (void) otherMouseDown:(NSEvent *) event;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation simply passes this message to the next responder.
 

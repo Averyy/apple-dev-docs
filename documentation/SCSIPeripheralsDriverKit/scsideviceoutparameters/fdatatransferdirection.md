@@ -15,7 +15,7 @@ The direction for the caller to send data to or receive data from the device.
 uint8_t fDataTransferDirection;
 ```
 
-#### Discussion
+## Discussion
 
 Use the following `DriverKit/storage/SCSITask.h` direction values to populate this field:
 

@@ -24,7 +24,7 @@ class MPSMatrixDecompositionLU
 @interface MPSMatrixDecompositionLU : MPSMatrixUnaryKernel
 ```
 
-#### Overview
+## Overview
 
 This kernel object computes an LU factorization, *PA = LU*, where:
 

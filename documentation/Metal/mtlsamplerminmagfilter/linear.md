@@ -24,7 +24,7 @@ case linear
 MTLSamplerMinMagFilterLinear
 ```
 
-#### Discussion
+## Discussion
 
 Support for linear filtering varies by GPU and the format of the texture being sampled. For example, you can’t use linear filtering on textures with an integer format, and only some device objects support linear filtering for textures with a floating-point format. To determine whether linear filtering is available for a specific texture format, see:
 

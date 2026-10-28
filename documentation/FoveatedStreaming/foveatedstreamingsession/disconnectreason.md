@@ -15,7 +15,7 @@ A description of why a foveated streaming session’s status is in the disconnec
 struct DisconnectReason
 ```
 
-#### Overview
+## Overview
 
 This struct may also be thrown as an error.
 

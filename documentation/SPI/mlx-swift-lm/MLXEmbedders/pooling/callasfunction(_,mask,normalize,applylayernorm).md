@@ -17,7 +17,7 @@ Processes the input hidden states according to the configured strategy.
 func callAsFunction(_ inputs: EmbeddingModelOutput, mask: MLXArray? = nil, normalize: Bool = false, applyLayerNorm: Bool = false) -> MLXArray
 ```
 
-#### Return Value
+## Return Value
 
 An `MLXArray` representing the pooled embedding.
 

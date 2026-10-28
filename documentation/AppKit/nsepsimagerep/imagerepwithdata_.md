@@ -15,11 +15,11 @@ Creates and returns a representation of an image initialized with the specified 
 + (instancetype) imageRepWithData:(NSData *) epsData;
 ```
 
-#### Return Value
+## Return Value
 
 A new, initialized `NSEPSImageRep` object or `nil` if the object could not be initialized.
 
-#### Discussion
+## Discussion
 
 The size of the receiver is set using the bounding box information specified in the EPS header comments.
 

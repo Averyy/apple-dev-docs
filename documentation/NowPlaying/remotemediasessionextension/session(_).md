@@ -24,11 +24,11 @@ func session(_ attributes: Self.Attributes) async throws -> Self.Session
 
 - [Publishing remote media sessions](../publishing-remote-media-sessions.md)
 
-#### Return Value
+## Return Value
 
 A configured remote session.
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if a session can’t be created.
 

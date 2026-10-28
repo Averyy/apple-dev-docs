@@ -20,11 +20,11 @@ optional func tableView(_ tableView: NSTableView, pasteboardWriterForRow row: In
 - (id<NSPasteboardWriting>) tableView:(NSTableView *) tableView pasteboardWriterForRow:(NSInteger) row;
 ```
 
-#### Return Value
+## Return Value
 
 Returns an instance of [`NSPasteboardItem`](../nspasteboarditem.md) or a custom object that implements the [`NSPasteboardWriting`](../nspasteboardwriting.md) protocol. Returning `nil` excludes the row from being dragged.
 
-#### Discussion
+## Discussion
 
 This method is required for multi-image dragging.
 

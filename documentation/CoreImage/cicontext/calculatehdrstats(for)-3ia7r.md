@@ -24,7 +24,7 @@ func calculateHDRStats(for cgimage: CGImage) -> CGImage
 - (CGImageRef) calculateHDRStatsForCGImage:(CGImageRef) cgimage;
 ```
 
-#### Return Value
+## Return Value
 
  Returns a new `CGImage` instance that has the calculated statistics attached.
 

@@ -19,7 +19,7 @@ A Boolean value that controls whether the scroll-to-top gesture is enabled.
 final var scrollsToTop: Bool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 When a person taps the status bar, the scroll view closest to the status bar scrolls to the top, but only if its `scrollsToTop` property is `true`, its delegate does not return `false` from `scrollViewShouldScrollToTop:`, and it is not already at the top.
 

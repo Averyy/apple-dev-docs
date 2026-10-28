@@ -15,7 +15,7 @@ Country-level geographic targeting.
 object AdGroupTargetingCreate.Country
 ```
 
-#### Discussion
+## Discussion
 
 Country IDs are returned by [`Search Geo Locations`](../searches-for-a-list-of-geo-locations.md) or [`Query Geo Locations`](../gets-a-list-of-geo-locations.md) (`supplySource=APPSTORE`). Used with App Store campaigns. Uses the [`TargetingDataCreate`](../targetingdatacreate.md) `include`/`exclude` shape.
 

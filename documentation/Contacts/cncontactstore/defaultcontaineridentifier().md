@@ -24,11 +24,11 @@ func defaultContainerIdentifier() -> String
 - (NSString *) defaultContainerIdentifier;
 ```
 
-#### Return Value
+## Return Value
 
 The identifier of the default container.
 
-#### Discussion
+## Discussion
 
 This identifier can be used to fetch a default container. A default container is where the user wants new contacts to be added implicitly.
 

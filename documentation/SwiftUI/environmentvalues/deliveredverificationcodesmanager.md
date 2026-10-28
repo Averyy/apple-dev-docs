@@ -19,7 +19,7 @@ This environment variable is for SwiftUI clients of the ASDeliveredVerificationC
 var deliveredVerificationCodesManager: DeliveredVerificationCodesManager { get }
 ```
 
-#### Discussion
+## Discussion
 
 ```swift
 struct DeliveredVerificationCodesManagerExample: View {

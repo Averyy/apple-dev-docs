@@ -25,7 +25,7 @@ func class_getName(_ cls: AnyClass?) -> UnsafePointer<CChar>
 extern const char *class_getName(Class cls);
 ```
 
-#### Return Value
+## Return Value
 
 The name of the class, or the empty string if `cls` is `Nil`.
 

@@ -23,7 +23,7 @@ class func version() -> String?
 
 - [Movement disorder algorithm changelog](../movement-disorder-algorithm-changelog.md)
 
-#### Discussion
+## Discussion
 
 Use this method to determine the algorithm used by the movement disorder manager. If the current device supports gathering movement disorder data, this method returns a string with the version number in `<major>.<minor>.<fix>` format. It returns `nil` anytime [`isAvailable()`](./isavailable%28%29.md) returns [`false`](../../Swift/false.md). For information about the current version, see [Movement disorder algorithm changelog](../movement-disorder-algorithm-changelog.md).
 

@@ -23,7 +23,7 @@ func makeFrameInterpolator(device: any MTLDevice) -> (any MTLFXFrameInterpolator
 - (id<MTLFXFrameInterpolator>) newFrameInterpolatorWithDevice:(id<MTLDevice>) device;
 ```
 
-#### Return Value
+## Return Value
 
  A new frame interpolator instance upon success, or `nil` otherwise.
 

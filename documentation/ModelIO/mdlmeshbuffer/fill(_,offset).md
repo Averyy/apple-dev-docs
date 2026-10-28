@@ -25,7 +25,7 @@ func fill(_ data: Data, offset: Int)
 - (void) fillData:(NSData *) data offset:(NSUInteger) offset;
 ```
 
-#### Discussion
+## Discussion
 
 If the length of the specified data (plus the `offset` parameter, if nonzero) is greater than the buffer’s [`length`](./length.md) property, this method writes data only up to the end of the buffer.
 

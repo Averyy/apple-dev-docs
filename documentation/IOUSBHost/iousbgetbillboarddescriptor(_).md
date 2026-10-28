@@ -20,11 +20,11 @@ func IOUSBGetBillboardDescriptor(_ bosDescriptor: UnsafePointer<IOUSBBOSDescript
 const IOUSBDeviceCapabilityBillboard *IOUSBGetBillboardDescriptor(const IOUSBBOSDescriptor *bosDescriptor);
 ```
 
-#### Return Value
+## Return Value
 
 A billboard capability descriptor pointer, or `nil` if no matching descriptor returns.
 
-#### Discussion
+## Discussion
 
 This method uses [`IOUSBGetNextCapabilityDescriptorWithType(_:_:_:)`](./iousbgetnextcapabilitydescriptorwithtype%28_,_,_%29.md) to find the first billboard capability descriptor.
 

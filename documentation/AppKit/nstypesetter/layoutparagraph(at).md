@@ -19,11 +19,11 @@ func layoutParagraph(at lineFragmentOrigin: NSPointPointer) -> Int
 - (NSUInteger) layoutParagraphAtPoint:(NSPointPointer) lineFragmentOrigin;
 ```
 
-#### Return Value
+## Return Value
 
 The next glyph index; usually the index right after the paragraph separator, but it can be inside the paragraph range if, for example, the end of the text container is reached before the paragraph separator.
 
-#### Discussion
+## Discussion
 
 Concrete subclasses must implement this method. A concrete implementation must invoke [`beginParagraph()`](./beginparagraph%28%29.md), [`beginLine(withGlyphAt:)`](./beginline%28withglyphat%29.md), [`endLine(withGlyphRange:)`](./endline%28withglyphrange%29.md), and [`endParagraph()`](./endparagraph%28%29.md).
 

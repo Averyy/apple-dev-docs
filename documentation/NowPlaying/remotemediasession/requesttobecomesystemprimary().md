@@ -22,7 +22,7 @@ func requestToBecomeSystemPrimary() async throws
 
 - [Publishing remote media sessions](../publishing-remote-media-sessions.md)
 
-#### Discussion
+## Discussion
 
 Use this method to request that the system display this session prominently on the Lock Screen and in Control Center.
 

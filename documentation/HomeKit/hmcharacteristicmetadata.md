@@ -24,7 +24,7 @@ class HMCharacteristicMetadata
 @interface HMCharacteristicMetadata : NSObject
 ```
 
-#### Overview
+## Overview
 
 Querying a characteristic’s metadata enables you to build a user interface that reflects the underlying units, minima, and maxima, and other aspects of the characteristic value.
 

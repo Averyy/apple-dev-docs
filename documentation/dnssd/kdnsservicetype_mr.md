@@ -23,7 +23,7 @@ var kDNSServiceType_MR: Int { get }
 kDNSServiceType_MR
 ```
 
-#### Discussion
+## Discussion
 
 Mail rename name.
 

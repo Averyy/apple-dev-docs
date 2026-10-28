@@ -23,7 +23,7 @@ class func softmaxCrossEntropy(reductionType: MLCReductionType, labelSmoothing: 
 + (instancetype) softmaxCrossEntropyLossWithReductionType:(MLCReductionType) reductionType labelSmoothing:(float) labelSmoothing classCount:(NSUInteger) classCount weights:(MLCTensor *) weights;
 ```
 
-#### Return Value
+## Return Value
 
 A softmax cross entropy loss layer.
 

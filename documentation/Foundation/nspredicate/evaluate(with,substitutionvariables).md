@@ -25,11 +25,11 @@ func evaluate(with object: Any?, substitutionVariables bindings: [String : Any]?
 - (BOOL) evaluateWithObject:(id) object substitutionVariables:(NSDictionary<NSString *,id> *) bindings;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if `object` matches the conditions specified by the predicate after substituting in the values in `bindings` for any replacement tokens, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 This method returns the same result as the two step process of first invoking [`withSubstitutionVariables(_:)`](./withsubstitutionvariables%28_%29.md) on the predicate and then invoking [`evaluate(with:)`](./evaluate%28with%29.md) on the returned value. This method is optimized for situations which require repeatedly evaluating a predicate with substitution variables with different variable substitutions.
 

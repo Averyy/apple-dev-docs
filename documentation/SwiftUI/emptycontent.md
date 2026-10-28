@@ -21,7 +21,7 @@ Content which contains nothing.
 typealias EmptyContent = EmptyView
 ```
 
-#### Discussion
+## Discussion
 
 You will rarely, if ever, need to create an `EmptyContent` directly. Instead, `EmptyContent` represents the absence of content.
 

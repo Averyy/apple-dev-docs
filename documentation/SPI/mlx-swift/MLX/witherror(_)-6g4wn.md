@@ -17,7 +17,7 @@ Evaluate the block and convert MLX errors into Swift `throws` on block exit.
 func withError<R>(_ body: () throws -> R) throws -> R
 ```
 
-#### Discussion
+## Discussion
 
 For example this will throw a Swift `Error`:
 
@@ -33,7 +33,7 @@ try withError {
 
 Nested calls to `withError` produce scoped error collection.
 
-##### See Also
+### See Also
 
 - [`withError(_:)`](./witherror%28_%29-2wfiu.md)
 - [`withError(_:)`](./witherror%28_%29-4tvdu.md)

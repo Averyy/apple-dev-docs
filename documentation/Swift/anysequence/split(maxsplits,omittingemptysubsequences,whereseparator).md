@@ -21,11 +21,11 @@ Returns the longest possible subsequences of the sequence, in order, that don’
 func split(maxSplits: Int = Int.max, omittingEmptySubsequences: Bool = true, whereSeparator isSeparator: (Self.Element) throws -> Bool) rethrows -> [ArraySlice<Self.Element>]
 ```
 
-#### Return Value
+## Return Value
 
 An array of subsequences, split from this sequence’s elements.
 
-#### Discussion
+## Discussion
 
 The following examples show the effects of the `maxSplits` and `omittingEmptySubsequences` parameters when splitting a string using a closure that matches spaces. The first use of `split` returns each word that was originally separated by one or more spaces.
 

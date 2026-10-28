@@ -22,7 +22,7 @@ typealias SLRequestHandler = (Data?, HTTPURLResponse?, (any Error)?) -> Void
 typedef void (^)(NSData *, NSHTTPURLResponse *, NSError *) SLRequestHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The parameters for this handler are:
 

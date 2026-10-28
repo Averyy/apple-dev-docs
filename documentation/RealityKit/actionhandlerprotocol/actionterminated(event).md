@@ -21,7 +21,7 @@ The function used to respond to action terminated events.
 mutating func actionTerminated(event: Self.EventType)
 ```
 
-#### Discussion
+## Discussion
 
 Action terminated is raised when playback is terminated and the animation is removed from the animation system. This can occur before the animation has a chance to complete if the user manually stops the animation by calling [`stop()`](../animationplaybackcontroller/stop%28%29.md).
 

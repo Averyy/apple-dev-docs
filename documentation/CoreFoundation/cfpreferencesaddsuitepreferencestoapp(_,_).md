@@ -25,7 +25,7 @@ func CFPreferencesAddSuitePreferencesToApp(_ applicationID: CFString, _ suiteID:
 extern void CFPreferencesAddSuitePreferencesToApp(CFStringRef applicationID, CFStringRef suiteID);
 ```
 
-#### Discussion
+## Discussion
 
 Suite preferences allow you to maintain a set of preferences that are common to all applications in the suite. When a suite is added to an application’s search chain, all of the domains pertaining to that suite are inserted into the chain. Suite preferences are added between the “Current Application” domains and the “Any Application” domains. If you add multiple suite preferences to one application, the order of the suites in the search chain is non-deterministic. You can override a suite preference for a given application by defining the same preference key in the application specific preferences.
 

@@ -16,11 +16,11 @@ Commits element transaction to an IOHIDDevice in this IOHIDDeviceTransactionInte
 IOReturn (*commit)(void *self, uint32_t timeout, IOHIDCallback callback, void *context, IOOptionBits options);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if successful or a kern_return_t if unsuccessful.
 
-#### Discussion
+## Discussion
 
 In regards to kIOHIDTransactionDirectionTypeOutput direction, default element values will be used if element values are not set. If neither are set, that element will be omitted from the commit. After a transaction is committed, transaction element values will be cleared and default values preserved.
 

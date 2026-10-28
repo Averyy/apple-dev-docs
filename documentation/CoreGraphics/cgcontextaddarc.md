@@ -21,7 +21,7 @@ Adds an arc of a circle to the current path, possibly preceded by a straight lin
 extern void CGContextAddArc(CGContextRef c, CGFloat x, CGFloat y, CGFloat radius, CGFloat startAngle, CGFloat endAngle, int clockwise);
 ```
 
-#### Discussion
+## Discussion
 
 This method calculates starting and ending points using the radius and angles you specify, uses a sequence of cubic Bézier curves to approximate a segment of a circle between those points, and then appends those curves to the current path.
 

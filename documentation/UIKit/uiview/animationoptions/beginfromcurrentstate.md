@@ -23,7 +23,7 @@ static var beginFromCurrentState: UIView.AnimationOptions { get }
 UIViewAnimationOptionBeginFromCurrentState
 ```
 
-#### Discussion
+## Discussion
 
 If this key is not present, all in-flight animations are allowed to finish before the new animation is started. If another animation is not in flight, this key has no effect.
 

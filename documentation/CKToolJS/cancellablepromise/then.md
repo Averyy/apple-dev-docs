@@ -18,7 +18,7 @@ CancellablePromise then(
 );
 ```
 
-#### Discussion
+## Discussion
 
 If you provide a function for the `onrejected` parameter, `CancellablePromise` will call that function if the promise fails.
 

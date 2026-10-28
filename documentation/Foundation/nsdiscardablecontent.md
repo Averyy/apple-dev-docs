@@ -25,7 +25,7 @@ protocol NSDiscardableContent
 @protocol NSDiscardableContent
 ```
 
-#### Overview
+## Overview
 
 An `NSDiscardableContent` object’s life cycle is dependent upon a “counter” variable. An `NSDiscardableContent` object is a purgeable block of memory that keeps track of whether or not it is currently being used by some other object. When this memory is being read, or is still needed, its counter variable will be greater than or equal to 1. When it is not being used, and can be discarded, the counter variable will be equal to 0.
 

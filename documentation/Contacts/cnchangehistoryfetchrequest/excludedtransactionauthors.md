@@ -24,7 +24,7 @@ var excludedTransactionAuthors: [String]? { get set }
 @property (nonatomic, copy, nullable) NSArray<NSString *> * excludedTransactionAuthors;
 ```
 
-#### Discussion
+## Discussion
 
 Specify authors using the same string(s) that you use in [`CNSaveRequest`](../cnsaverequest.md)’s [`transactionAuthor`](../cnsaverequest/transactionauthor.md) to suppress processing changes that you already know about.
 

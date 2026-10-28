@@ -22,11 +22,11 @@ Creates an asynchronous sequence that contains, in order, the elements of the ba
 func filter(_ isIncluded: @escaping @Sendable (Self.Element) async throws -> Bool) -> AsyncThrowingFilterSequence<Self>
 ```
 
-#### Return Value
+## Return Value
 
 An asynchronous sequence that contains, in order, the elements of the base sequence that satisfy the given predicate. If the predicate throws an error, the sequence contains only values produced prior to the error.
 
-#### Discussion
+## Discussion
 
 In this example, an asynchronous sequence called `Counter` produces `Int` values from `1` to `10`. The `filter(_:)` method returns `true` for even values and `false` for odd values, thereby filtering out the odd values, but also throws an error for values divisible by 5:
 

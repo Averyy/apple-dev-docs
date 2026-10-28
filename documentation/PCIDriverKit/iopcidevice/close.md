@@ -16,7 +16,7 @@ Closes the session to the PCI device.
 void Close(IOService *forClient, IOOptionBits options);
 ```
 
-#### Discussion
+## Discussion
 
 This method closes the session previously opened by the object in the `forClient` parameter. The method also turns off the Bus Master Enable and Memory Space Enable bits defined in the command register of the PCI specification.
 

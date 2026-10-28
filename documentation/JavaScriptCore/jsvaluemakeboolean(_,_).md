@@ -24,7 +24,7 @@ func JSValueMakeBoolean(_ ctx: JSContextRef!, _ boolean: Bool) -> JSValueRef!
 JSValueRefJSValueMakeBoolean(JSContextRef ctx, bool boolean);
 ```
 
-#### Return Value
+## Return Value
 
 A [`JSValueRef`](./jsvalueref.md) of the Boolean type that represents the value of `boolean`.
 

@@ -19,7 +19,7 @@ The attributed text displayed inside this shape.
 var attributedText: AttributedString { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The attributed string supports: `.font`, `.foregroundColor`, `.underlineStyle`, `.strikethroughStyle` and writing direction and alignment from `.paragraphStyle`.
 

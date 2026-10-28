@@ -15,11 +15,11 @@ Returns the drawable type you use to retrieve the textures and drawing environme
 cp_drawable_tcp_frame_query_drawable(cp_frame_t frame);
 ```
 
-#### Return Value
+## Return Value
 
 The drawable type, or `nil` if the layer is in the [`LayerRenderer.State.paused`](./layerrenderer/state-swift.enum/paused.md) or [`LayerRenderer.State.invalidated`](./layerrenderer/state-swift.enum/invalidated.md) state.
 
-#### Discussion
+## Discussion
 
 Fetch the drawable when you’re ready to encode the drawing commands for the frame. The [`cp_drawable_t`](./cp_drawable_t.md) type contains the textures and other information you need to set up your render descriptor in Metal.
 

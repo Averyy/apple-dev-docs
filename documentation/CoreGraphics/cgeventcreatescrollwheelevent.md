@@ -16,7 +16,7 @@ Returns a new Quartz scrolling event.
 extern CGEventRefCGEventCreateScrollWheelEvent(CGEventSourceRef source, CGScrollEventUnit units, uint32_t wheelCount, int32_t wheel1, ...);
 ```
 
-##### Parameters
+### Parameters
 
 - **source**: An event source taken from another event, or `NULL`.
 - **units**: The unit of measurement for the scrolling event. Pass one of the constants listed in [`CGScrollEventUnit`](./cgscrolleventunit.md).
@@ -24,11 +24,11 @@ extern CGEventRefCGEventCreateScrollWheelEvent(CGEventSourceRef source, CGScroll
 - **wheel1**: A value that reflects the movement of the primary scrolling device on the mouse. Scrolling movement is generally represented by small signed integer values, typically in a range from -10 to +10.  Large values may have unexpected results, depending on the application that processes the event.
 - **…**: Up to two values that reflect the movements of the other scrolling devices on the mouse, if any.
 
-##### Returns
+### Returns
 
 A new scrolling event, or `NULL` if the event could not be created. When you no longer need the event, you should release it using the function `CFRelease`.
 
-#### Discussion
+## Discussion
 
 This function allows you to create a scrolling event and customize the event before posting it to the event system.
 

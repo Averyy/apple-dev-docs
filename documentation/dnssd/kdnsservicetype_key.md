@@ -23,7 +23,7 @@ var kDNSServiceType_KEY: Int { get }
 kDNSServiceType_KEY
 ```
 
-#### Discussion
+## Discussion
 
 Security key.
 

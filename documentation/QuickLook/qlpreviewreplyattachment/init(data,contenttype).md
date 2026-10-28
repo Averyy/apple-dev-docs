@@ -20,7 +20,7 @@ init(data: Data, contentType: UTType)
 - (instancetype) initWithData:(NSData *) data contentType:(UTType *) contentType;
 ```
 
-#### Discussion
+## Discussion
 
 Create an attachment for html previews by providing the data and mime type of the attachment.
 

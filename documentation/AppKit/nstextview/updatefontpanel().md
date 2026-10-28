@@ -19,7 +19,7 @@ func updateFontPanel()
 - (void) updateFontPanel;
 ```
 
-#### Discussion
+## Discussion
 
 Does nothing if the receiver doesn’t use the Font panel. You should never need to invoke this method directly, but you can override it if needed to handle additional font attributes.
 

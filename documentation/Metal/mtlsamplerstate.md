@@ -29,7 +29,7 @@ protocol MTLSamplerState : NSObjectProtocol, Sendable
 - [Improving CPU performance by using argument buffers](./improving-cpu-performance-by-using-argument-buffers.md)
 - [Adding mipmap filtering to samplers](./adding-mipmap-filtering-to-samplers.md)
 
-#### Overview
+## Overview
 
 The [`MTLSamplerState`](./mtlsamplerstate.md) protocol defines the interface for a lightweight instance used to encode how a shader or compute kernel should sample a texture. To create a sampler state instance:
 

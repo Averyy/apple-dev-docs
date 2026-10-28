@@ -5,7 +5,7 @@
 
 Info describing an attempt to load a Live Photo.
 
-#### Overview
+## Overview
 
 These keys are in the `info` dictionary of the result handler you provide for the [`request(withResourceFileURLs:placeholderImage:targetSize:contentMode:resultHandler:)`](../Photos/phlivephoto/request%28withresourcefileurls,placeholderimage,targetsize,contentmode,resulthandler%29.md) method.
 

@@ -25,11 +25,11 @@ func number(from string: String) -> NSNumber?
 - (NSNumber *) numberFromString:(NSString *) string;
 ```
 
-#### Return Value
+## Return Value
 
 An [`NSNumber`](../nsnumber.md) object created by parsing `string` using the receiver’s format, or `nil` if no single number could be parsed.
 
-#### Discussion
+## Discussion
 
 If a string contains any characters other than numerical digits or locale-appropriate group or decimal separators, parsing will fail.
 

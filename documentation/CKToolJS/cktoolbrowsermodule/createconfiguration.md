@@ -15,7 +15,7 @@ This function creates an instance of `Configuration` with suitable values for us
 static Configuration createConfiguration();
 ```
 
-#### Discussion
+## Discussion
 
 ```javascript
 import { createConfiguration } from "@apple/cktool.target.browser";

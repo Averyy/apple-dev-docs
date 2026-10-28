@@ -25,7 +25,7 @@ static let zero: CMTime
 extern const CMTime kCMTimeZero;
 ```
 
-#### Discussion
+## Discussion
 
 Don’t test a time against this constant using (time == [`zero`](./zero.md)) because there are many times that are also `0`. Use [`CMTimeCompare(_:_:)`](../cmtimecompare%28_,_%29.md) instead.
 

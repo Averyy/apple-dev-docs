@@ -21,7 +21,7 @@ class MSStickerBrowserView
 @interface MSStickerBrowserView : UIView
 ```
 
-#### Overview
+## Overview
 
 Use the [`MSStickerBrowserView`](./msstickerbrowserview.md) to display a dynamically generated list of stickers. The browser provides drag-and-drop functionality. The user can press and hold a sticker to peel it from the browser, then drag the sticker to any balloon in the transcript. The user can also tap stickers to add them to the Messages app’s input field.
 

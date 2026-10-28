@@ -25,7 +25,7 @@ func setFillPattern(_ pattern: CGPattern, colorComponents components: UnsafePoin
 extern void CGContextSetFillPattern(CGContextRef c, CGPatternRef pattern, const CGFloat *components);
 ```
 
-#### Discussion
+## Discussion
 
 The current fill color space must be a pattern color space. Otherwise, the result of calling this function is undefined. If you want to set a fill color, not a pattern, use [`setFillColor(_:)`](./setfillcolor%28_%29-8lhn8.md).
 

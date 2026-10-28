@@ -19,7 +19,7 @@ protocol HIDVirtualDeviceDelegate : Sendable
 
 - [Creating virtual devices](./creatingvirtualdevices.md)
 
-#### Overview
+## Overview
 
 A delegate must be created and provided to [`activate(delegate:)`](./hidvirtualdevice/activate%28delegate%29.md) during activation of a virtual HID device. This delegate receives notifications intended for the device, such as a get report request from a client. One delegate can be used for many devices.
 

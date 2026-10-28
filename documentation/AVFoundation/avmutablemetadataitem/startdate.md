@@ -25,7 +25,7 @@ var startDate: Date? { get set }
 @property (nonatomic, copy, readwrite, nullable) NSDate * startDate;
 ```
 
-#### Discussion
+## Discussion
 
 The value is `nil` if the metadata item doesn’t provide a start date.
 

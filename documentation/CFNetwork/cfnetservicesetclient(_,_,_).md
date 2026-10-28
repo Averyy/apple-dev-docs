@@ -26,15 +26,15 @@ func CFNetServiceSetClient(_ theService: CFNetService, _ clientCB: CFNetServiceC
 extern Boolean CFNetServiceSetClient(CFNetServiceRef theService, CFNetServiceClientCallBack clientCB, CFNetServiceClientContext *clientContext);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if the client was set; otherwise, `FALSE`.
 
-#### Discussion
+## Discussion
 
 The callback function specified by `clientCB` will be called to report IP addresses (in the case of [`CFNetServiceResolve`](./cfnetserviceresolve.md)) or to report registration errors (in the case of [`CFNetServiceRegister`](./cfnetserviceregister.md)).
 
-##### Special Considerations
+### Special Considerations
 
 This function is thread safe.
 

@@ -15,7 +15,7 @@ A collection of terms and their labels, which augments a tagger that analyzes na
 struct MLGazetteer
 ```
 
-#### Overview
+## Overview
 
 Use an [`MLGazetteer`](./mlgazetteer.md) to configure a gazetteer and save it to a file, which you then add to your app in Xcode. Your app uses the gazetteer file at runtime to create an instance of [`NLGazetteer`](../NaturalLanguage/nlgazetteer.md), which augments an [`NLTagger`](../NaturalLanguage/nltagger.md) to tag specific terms with a label.
 

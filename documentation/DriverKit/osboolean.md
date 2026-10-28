@@ -18,7 +18,7 @@ A container for a true or false value.
 class OSBoolean;
 ```
 
-#### Overview
+## Overview
 
 Only two static immutable instances of OSBoolean exist, kOSBooleanFalse & kOSBooleanTrue.
 

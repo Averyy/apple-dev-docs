@@ -25,7 +25,7 @@ func NSConvertHostDoubleToSwapped(_ x: Double) -> NSSwappedDouble
 static NSSwappedDouble NSConvertHostDoubleToSwapped(double x);
 ```
 
-#### Discussion
+## Discussion
 
 Converts the double value in `x` to a value whose bytes can be swapped. This function does not actually swap the bytes of `x`. You should not need to call this function directly.
 

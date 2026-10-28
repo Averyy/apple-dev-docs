@@ -19,11 +19,11 @@ func columnIndexes(in rect: NSRect) -> IndexSet
 - (NSIndexSet *) columnIndexesInRect:(NSRect) rect;
 ```
 
-#### Return Value
+## Return Value
 
 New [`NSIndexSet`](../../Foundation/nsindexset.md) object containing the indexes of the table view’s columns that intersect with `rect`.
 
-#### Discussion
+## Discussion
 
 Columns that return [`true`](../../Swift/true.md) for the `NSTableColumn` method [`isHidden`](../nstablecolumn/ishidden.md) are excluded from the results.
 

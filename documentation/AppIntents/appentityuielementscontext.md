@@ -21,7 +21,7 @@ Contextual information for UI elements you make discoverable by Apple Intelligen
 struct AppEntityUIElementsContext
 ```
 
-#### Overview
+## Overview
 
 When you implement your custom app entity provider to make a custom view’s content discoverable by Apple Intelligence and Siri, you provide the system with [`AppEntityUIElement`](./appentityuielement.md) objects that combine the app entity for a view’s content with additional information. The `AppEntityUIElementsContext` holds this additional information that the system uses to understand where content appears onscreen.
 

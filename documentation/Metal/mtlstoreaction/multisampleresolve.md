@@ -28,7 +28,7 @@ MTLStoreActionMultisampleResolve
 
 - [Setting load and store actions](../setting-load-and-store-actions.md)
 
-#### Discussion
+## Discussion
 
 Use this option when you need to resolve the multisample attachment’s contents at the end of the render pass but don’t need the multisample data afterwards. Some GPUs may still store the multisample data back to the texture, but you can’t rely on that behavior. You need to assume that GPU discarded the multisample texture’s contents.
 

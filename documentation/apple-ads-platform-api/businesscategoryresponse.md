@@ -15,11 +15,11 @@ The Get Business Category endpoint returns this response object.
 object BusinessCategoryResponse
 ```
 
-#### Discussion
+## Discussion
 
 The [`Get Business Category`](./get-category-by-id.md) returns `BusinessCategoryResponse` as the top-level envelope. On success, `result` contains a single [`BusinessCategory`](./businesscategory.md) object. On failure (for example, 404 Not Found), the response contains only the `error` object. The response omits the `result` key entirely rather than setting it to `null`.
 
-##### Example
+### Example
 
 ```json
 {

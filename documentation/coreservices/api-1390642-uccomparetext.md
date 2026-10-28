@@ -19,11 +19,11 @@ func UCCompareText(_ collatorRef: CollatorRef!, _ text1Ptr: UnsafePointer<UniCha
 OSStatus UCCompareText(CollatorRef collatorRef, const UniChar *text1Ptr, UniCharCount text1Length, const UniChar *text2Ptr, UniCharCount text2Length, Boolean *equivalent, SInt32 *order);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.  The function can return `paramErr` (for example, if `collatorRef`, `text1Ptr`, or `text2Ptr` are `NULL`.
 
-#### Discussion
+## Discussion
 
 You can use the `UCCompareText` function to perform various types of string comparison for a given set of locale and collation specifications. You can
 

@@ -21,7 +21,7 @@ The date of the next (after the current instant) daylight saving time transition
 var nextDaylightSavingTimeTransition: Date? { get }
 ```
 
-#### Discussion
+## Discussion
 
 Depending on the time zone, the value of this property may represent a change of the time zone’s offset from GMT. The value is `nil` if the time zone does not currently observe daylight saving time.
 

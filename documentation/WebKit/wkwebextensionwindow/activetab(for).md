@@ -23,7 +23,7 @@ optional func activeTab(for context: WKWebExtensionContext) -> (any WKWebExtensi
 - (id<WKWebExtensionTab>) activeTabForWebExtensionContext:(WKWebExtensionContext *) context;
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to `nil` if not implemented.
 

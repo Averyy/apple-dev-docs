@@ -25,7 +25,7 @@ func drawPath(using mode: CGPathDrawingMode)
 extern void CGContextDrawPath(CGContextRef c, CGPathDrawingMode mode);
 ```
 
-#### Discussion
+## Discussion
 
 The current path is cleared as a side effect of calling this function.
 

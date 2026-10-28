@@ -25,7 +25,7 @@ func getObjectValue(_ obj: AutoreleasingUnsafeMutablePointer<AnyObject?>?, for s
 - (BOOL) getObjectValue:(id*) obj forString:(NSString *) string range:(NSRange *) rangep error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 If a string contains any characters other than numerical digits or locale-appropriate group or decimal separators, parsing will fail.
 

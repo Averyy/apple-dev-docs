@@ -21,7 +21,7 @@ nonisolated
 func textInputAutocapitalization(_ autocapitalization: TextInputAutocapitalization?) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Use `textInputAutocapitalization(_:)` when you need to automatically capitalize words, sentences, or other text like proper nouns.
 

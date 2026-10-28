@@ -14,7 +14,7 @@
 typedef enum tIOPCIDeviceResetTypes : unsigned int { ... } tIOPCIDeviceResetTypes;
 ```
 
-#### Overview
+## Overview
 
 ```
         This will issue a hot reset from its upstream bridge by setting the secondary bus reset bit in the bridge's control

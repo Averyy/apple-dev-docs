@@ -21,7 +21,7 @@ Creates a type your app uses, but doesn’t own, based on an identifier and a su
 init(importedAs identifier: String, conformingTo parentType: UTType? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 Define a type with this initializer when you’re supporting a type that another app owns. For example, the following code uses another app’s type information to open or save files in its app:
 

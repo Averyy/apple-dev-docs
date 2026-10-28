@@ -21,7 +21,7 @@ init!(file path: String!)
 - (id) initWithFile:(NSString *) path;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized `QCCompositionLayer` object or `nil` if initialization is not successful.
 

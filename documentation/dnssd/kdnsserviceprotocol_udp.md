@@ -23,7 +23,7 @@ var kDNSServiceProtocol_UDP: Int { get }
 kDNSServiceProtocol_UDP
 ```
 
-#### Discussion
+## Discussion
 
 UDP protocol.
 

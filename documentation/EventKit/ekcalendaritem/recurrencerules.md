@@ -24,7 +24,7 @@ var recurrenceRules: [EKRecurrenceRule]? { get set }
 @property (nonatomic, copy, nullable) NSArray<EKRecurrenceRule *> * recurrenceRules;
 ```
 
-#### Discussion
+## Discussion
 
 The implementation only supports a single recurrence rule.
 

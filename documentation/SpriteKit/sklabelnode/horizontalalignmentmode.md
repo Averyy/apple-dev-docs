@@ -29,7 +29,7 @@ var horizontalAlignmentMode: SKLabelHorizontalAlignmentMode { get set }
 
 - [Adding Text to a Scene](../adding-text-to-a-scene.md)
 
-#### Discussion
+## Discussion
 
 The possible values for this property are listed in [`SKLabelHorizontalAlignmentMode`](../sklabelhorizontalalignmentmode.md). The default value of this property is [`SKLabelHorizontalAlignmentMode.center`](../sklabelhorizontalalignmentmode/center.md).
 

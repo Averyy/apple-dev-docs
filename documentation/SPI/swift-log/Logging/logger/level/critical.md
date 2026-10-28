@@ -22,7 +22,7 @@ case critical
 - [001: Choosing log levels](../../api-001-choosingloglevels.md)
 - [Understanding Loggers and Log Handlers](../../understandingloggers.md)
 
-#### Discussion
+## Discussion
 
 When a `critical` message is logged, the logging backend (`LogHandler`) is free to perform more heavy-weight operations to capture system state (such as capturing stack traces) to facilitate debugging.
 

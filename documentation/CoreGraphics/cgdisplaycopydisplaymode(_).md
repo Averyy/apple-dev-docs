@@ -20,7 +20,7 @@ func CGDisplayCopyDisplayMode(_ display: CGDirectDisplayID) -> CGDisplayMode?
 extern CGDisplayModeRefCGDisplayCopyDisplayMode(CGDirectDisplayID display);
 ```
 
-#### Return Value
+## Return Value
 
 A display-mode opaque-type reference, or `NULL` if the display is invalid. In Objective-C, you’re responsible for releasing the display mode using [`CGDisplayModeRelease`](./cgdisplaymoderelease.md).
 

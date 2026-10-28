@@ -16,7 +16,7 @@ case scaleFit
 VNImageCropAndScaleOptionScaleFit
 ```
 
-#### Discussion
+## Discussion
 
 This option fills the remaining space with transparent pixels to maintain aspect ratio.
 

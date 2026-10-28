@@ -24,7 +24,7 @@ static let PKPassLibraryDidChange: PKPassLibraryNotificationName
 extern PKPassLibraryNotificationName const PKPassLibraryDidChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 PassKit posts this notification on an arbitary queue, and only does so if an instance of `PKPassLibrary` exists. The notification’s user info dictionary describes the changes. See [`PKPassLibrary`](../pkpasslibrary.md) for the keys it uses.
 

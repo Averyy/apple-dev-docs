@@ -17,7 +17,7 @@ Returns an alert panel to display an informational message.
 extern idNSGetInformationalAlertPanel(NSString *title, NSString *msgFormat, NSString *defaultButton, NSString *alternateButton, NSString *otherButton, ...);
 ```
 
-#### Discussion
+## Discussion
 
 Returns an NSPanel that can be used to set up a modal session. No button is displayed if `defaultButton` is `nil`. When you’re finished with the panel created by this function, you must dispose of it by passing it to [`NSReleaseAlertPanel(_:)`](./nsreleasealertpanel%28_%29.md).
 

@@ -25,7 +25,7 @@ init(renderBlock block: @escaping AVAudioSourceNodeRenderBlock)
 - (instancetype) initWithRenderBlock:(AVAudioSourceNodeRenderBlock) block;
 ```
 
-#### Discussion
+## Discussion
 
 When connecting the audio source node to another node, the system uses the connection format to set the audio format for the output bus.
 

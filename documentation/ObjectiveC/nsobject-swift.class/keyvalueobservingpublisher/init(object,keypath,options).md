@@ -21,7 +21,7 @@ Creates a key-value observing publisher for the given combination of object and 
 init(object: Subject, keyPath: KeyPath<Subject, Value>, options: NSKeyValueObservingOptions)
 ```
 
-#### Discussion
+## Discussion
 
 This publisher produces a new element every time the observed property changes.
 

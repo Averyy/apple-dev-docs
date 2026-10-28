@@ -20,7 +20,7 @@ Returns a new path with a relationship target appended.
 func appending(target name: USDLayer.Path) -> USDLayer.Path
 ```
 
-#### Return Value
+## Return Value
 
 A new path identifying the relationship target.
 

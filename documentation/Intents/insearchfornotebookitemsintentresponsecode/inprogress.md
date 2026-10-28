@@ -25,7 +25,7 @@ case inProgress
 INSearchForNotebookItemsIntentResponseCodeInProgress
 ```
 
-#### Discussion
+## Discussion
 
 Avoid using this code.
 

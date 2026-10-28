@@ -25,9 +25,9 @@ func vvfmodf(_: UnsafeMutablePointer<Float>, _: UnsafePointer<Float>, _: UnsafeP
 void vvfmodf(float *, const float *, const float *, const int *);
 ```
 
-#### Discussion
+## Discussion
 
-##### Parameters:
+### Parameters:
 
 - **parameter 1**: The output array, *z*.
 - **parameter 2**: The numerators input array, *y*.

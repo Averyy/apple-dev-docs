@@ -27,11 +27,11 @@ func migrateStore(from sourceURL: URL, sourceType sStoreType: String, options sO
 - (BOOL) migrateStoreFromURL:(NSURL *) sourceURL type:(NSString *) sStoreType options:(NSDictionary *) sOptions withMappingModel:(NSMappingModel *) mappings toDestinationURL:(NSURL *) dURL destinationType:(NSString *) dStoreType destinationOptions:(NSDictionary *) dOptions error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 This method performs compatibility checks on the source and destination models and the mapping model.
 
-##### Special Considerations
+### Special Considerations
 
 If a store does not exist at the destination URL (`dURL`), one is created; otherwise, the migration appends to the existing store.
 

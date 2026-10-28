@@ -24,7 +24,7 @@ let GLKTextureLoaderOriginBottomLeft: String
 extern NSString * const GLKTextureLoaderOriginBottomLeft;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is an [`NSNumber`](../Foundation/nsnumber.md) object that specifies a boolean value. If [`false`](../Swift/false.md), the image data is not flipped. If [`true`](../Swift/true.md), the image data is flipped before being loaded. If the key is not specified, the default value is [`false`](../Swift/false.md).
 

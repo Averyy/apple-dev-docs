@@ -23,7 +23,7 @@ var BNNSDataTypeMiscellaneousBit: BNNSDataType { get }
 BNNSDataTypeMiscellaneousBit
 ```
 
-#### Discussion
+## Discussion
 
 Storage data type
 

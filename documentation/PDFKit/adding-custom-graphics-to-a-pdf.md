@@ -5,7 +5,7 @@
 
 Create and add custom annotation and page graphics to your PDF document.
 
-#### Overview
+## Overview
 
 You can add custom annotation and page graphics to a PDF by overriding the `draw` method for [`PDFAnnotation`](./pdfannotation.md) or [`PDFPage`](./pdfpage.md). If the graphic applies to the whole page, like a watermark, custom border, or logo, you add it to the page using [`PDFPage`](./pdfpage.md). If the graphic is something small, such as circling or highlighting a particular element on the page, or a repeatable custom graphic, such as a heart, club, spade, or diamond, then it should be added using [`PDFAnnotation`](./pdfannotation.md). Some graphics, like lines, can work as annotations or page elements.
 
@@ -13,7 +13,7 @@ Drawings are static, unlike interactive annotation types like widgets. To learn 
 
 ![Add a custom watermark annotation to a PDF. ](https://developer.apple.com/tutorials/images/com.apple.pdfkit/media-3039566@2x.png)
 
-##### Register a Delegate for the Document
+### Register a Delegate for the Document
 
 Register a [`PDFDocumentDelegate`](./pdfdocumentdelegate.md) to the [`PDFDocument`](./pdfdocument.md) loaded in the current [`PDFView`](./pdfview.md). This delegate will allow you to specify a method for building PDF annotations or PDF pages. The [`PDFDocument`](./pdfdocument.md) is called `document`.
 
@@ -22,11 +22,11 @@ document.delegate = self
 pdfView?.document = document
 ```
 
-##### Implement a Custom Subclass
+### Implement a Custom Subclass
 
 Create a custom subclass for your custom graphics, one that will include your drawing. This example shows how to add a custom line graphic to a PDF, either through a PDF annotation or a PDF page.
 
-###### Implement a Custom Annotation Subclass
+#### Implement a Custom Annotation Subclass
 
 Create a custom annotation subclass for your line graphic.
 
@@ -48,7 +48,7 @@ func `class`(forAnnotationType annotationType: String) -> AnyClass {
 }
 ```
 
-###### Implement a Custom Page Subclass
+#### Implement a Custom Page Subclass
 
 Create a custom subclass for [`PDFPage`](./pdfpage.md) that includes your line graphic.
 
@@ -66,7 +66,7 @@ func classForPage() -> AnyClass {
 }
 ```
 
-##### Override the Draw Method and Add Your Custom Graphic
+### Override the Draw Method and Add Your Custom Graphic
 
 Override the `draw` method in your subclass to draw your custom graphic, the line. Draw the original content by calling the superclass version of the `draw` method. The `draw` methods for pages and annotations are nearly identical, the only difference being the `in context` parameter for annotations and the `to context` parameter for pages:
 

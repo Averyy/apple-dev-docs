@@ -22,7 +22,7 @@ optional func pickerView(_ pickerView: UIPickerView, widthForComponent component
 - (CGFloat) pickerView:(UIPickerView *) pickerView widthForComponent:(NSInteger) component;
 ```
 
-#### Return Value
+## Return Value
 
 A float value indicating the width of the row in points.
 

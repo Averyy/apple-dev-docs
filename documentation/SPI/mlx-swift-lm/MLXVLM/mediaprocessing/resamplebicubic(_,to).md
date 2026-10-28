@@ -17,7 +17,7 @@ Resample the image using bicubic interpolation.
 static func resampleBicubic(_ image: CIImage, to size: CGSize) -> CIImage
 ```
 
-#### Return Value
+## Return Value
 
 The resampled image
 

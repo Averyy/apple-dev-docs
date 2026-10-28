@@ -25,11 +25,11 @@ init?(identifier calendarIdentifierConstant: NSCalendar.Identifier)
 + (NSCalendar *) calendarWithIdentifier:(NSCalendarIdentifier) calendarIdentifierConstant;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized calendar, or `nil` if the identifier is unknown (if, for example, it is either an unrecognized string or the calendar is not supported by the current version of the operating system).
 
-#### Discussion
+## Discussion
 
 The returned calendar defaults to the current locale and default time zone.
 

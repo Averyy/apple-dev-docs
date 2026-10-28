@@ -15,11 +15,11 @@ Allocates and initializes an instance of the slider control class.
 static OSSharedPtr<IOUserAudioSliderControl> Create(IOUserAudioDriver *in_driver, bool in_is_settable, uint32_t in_control_value, IOUserAudioSliderRange in_range, IOUserAudioObjectPropertyElement in_control_element, IOUserAudioObjectPropertyScope in_control_scope, IOUserAudioClassID in_control_class_id);
 ```
 
-#### Return Value
+## Return Value
 
 A poiner to an [`IOUserAudioSliderControl`](../iouseraudioslidercontrol.md), if allocation and initialization succeeded.
 
-#### Discussion
+## Discussion
 
 If you subclass [`IOUserAudioSliderControl`](../iouseraudioslidercontrol.md) to override this class’ behavior, don’t use [`Create`](./create.md) to allocate and initialize the custom subclass.
 

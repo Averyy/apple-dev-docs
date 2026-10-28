@@ -21,7 +21,7 @@ typedef struct SpeechErrorInfo {
 } SpeechErrorInfo;
 ```
 
-#### Overview
+## Overview
 
 By calling the [`GetSpeechInfo`](./api-1552220-getspeechinfo.md) function with the `soErrors` selector, you can obtain a speech error information structure, which shows what Speech Synthesis Manager errors occurred while processing a text buffer on a given speech channel.
 

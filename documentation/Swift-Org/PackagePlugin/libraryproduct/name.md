@@ -17,7 +17,7 @@ The name of the product, as defined in the package manifest.
 let name: String
 ```
 
-#### Discussion
+## Discussion
 
 This name is unique among the products of the package in which it is defined.
 

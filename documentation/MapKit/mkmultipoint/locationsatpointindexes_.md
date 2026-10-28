@@ -21,7 +21,7 @@ Returns a set of unit distance values that correspond to the point indexes along
 - (NSArray<NSNumber *> *) locationsAtPointIndexes:(NSIndexSet *) indexes;
 ```
 
-#### Return Value
+## Return Value
 
 An [`NSIndexSet`](../../Foundation/nsindexset.md) that corresponds to the point indexes along the shape.
 

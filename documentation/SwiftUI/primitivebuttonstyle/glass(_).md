@@ -23,7 +23,7 @@ static func glass(_ glass: Glass) -> Self
 
 Available when `Self` is `GlassButtonStyle`.
 
-#### Discussion
+## Discussion
 
 This button style applies a Liquid Glass effect that you can customize by specifying a tint or variant. In the following example, the button renders using the clear variant of Liquid Glass:
 

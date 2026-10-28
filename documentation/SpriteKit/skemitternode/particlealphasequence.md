@@ -30,7 +30,7 @@ var particleAlphaSequence: SKKeyframeSequence? { get set }
 - [Animating Particle Properties Across Disparate Values](../animating-particle-properties-across-disparate-values.md)
 - [Using Keyframe Sequence to effect Custom Interpolation](../using-keyframe-sequence-to-effect-custom-interpolation.md)
 
-#### Discussion
+## Discussion
 
 The default value is `nil`. If a non-`nil` value is specified, then the [`particleAlpha`](./particlealpha.md), [`particleAlphaRange`](./particlealpharange.md), and [`particleAlphaSpeed`](./particlealphaspeed.md) properties are ignored. Instead, the sequence is used to specify the alpha value.
 

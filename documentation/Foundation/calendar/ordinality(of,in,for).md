@@ -21,11 +21,11 @@ Returns, for a given absolute time, the ordinal number of a smaller calendar com
 func ordinality(of smaller: Calendar.Component, in larger: Calendar.Component, for date: Date) -> Int?
 ```
 
-#### Return Value
+## Return Value
 
 The ordinal number of smaller within larger at the time specified by date. Returns `nil` if larger is not logically bigger than smaller in the calendar, or the given combination of components does not make sense (or is a computation which is undefined).
 
-#### Discussion
+## Discussion
 
 The ordinality is in most cases not the same as the decomposed value of the component. Typically return values are 1 and greater. For example, the time 00:45 is in the first hour of the day, and for components `hour` and `day` respectively, the result would be 1. An exception is the week-in-month calculation, which returns 0 for days before the first week in the month containing the date.
 

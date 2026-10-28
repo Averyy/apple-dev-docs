@@ -22,7 +22,7 @@ string BidStrategy.BidStrategyType
 - `MAX_CONVERSIONS`: Automated strategy that maximizes the total number of conversions within the available budget, using Search Match to identify optimal search queries.
 - `MAX_ENGAGEMENTS`: Automated bidding strategy that automatically sets bids to maximize taps on your place card using cost-per-tap (CPT) billing.
 
-#### Discussion
+## Discussion
 
 The `MANUAL_CPT` and `MANUAL_CPM` values are manual bidding strategies with a fixed bid. The `MAX_CONVERSIONS` and `MAX_ENGAGEMENTS` values are automated strategies that adjust bids to maximize conversions or engagements.
 

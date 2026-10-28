@@ -21,11 +21,11 @@ Returns a collection of resource values identified by the given resource keys.
 func resourceValues(forKeys keys: Set<URLResourceKey>) throws -> URLResourceValues
 ```
 
-#### Return Value
+## Return Value
 
 A [`URLResourceValues`](../urlresourcevalues.md) instance, containing the retrieved values.
 
-#### Discussion
+## Discussion
 
 This method first checks if the URL instance already caches the specified resource values. If so, it returns the cached resource values to the caller. If not, then this method synchronously obtains the resource values from the backing store, adds them to the URL object’s cache, and returns a populated [`URLResourceValues`](../urlresourcevalues.md) instance. This method only populates [`URLResourceValues`](../urlresourcevalues.md) members corresponding to the contents of the `keys` parameter.
 

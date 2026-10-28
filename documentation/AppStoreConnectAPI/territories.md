@@ -5,7 +5,7 @@
 
 Get a list of active App Store storefronts in which you make your app available.
 
-#### Overview
+## Overview
 
 Use `territories` to get a list of active App Store storefronts in which to make your app available to customers. This is a read-only resource.
 

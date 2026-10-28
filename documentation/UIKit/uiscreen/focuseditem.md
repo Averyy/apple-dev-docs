@@ -24,7 +24,7 @@ weak var focusedItem: (any UIFocusItem)? { get }
 @property (nonatomic, weak, readonly, nullable) id<UIFocusItem> focusedItem;
 ```
 
-#### Discussion
+## Discussion
 
 If this item is not a view, the [`focusedView`](./focusedview.md) property is set to the view that contains the item.
 

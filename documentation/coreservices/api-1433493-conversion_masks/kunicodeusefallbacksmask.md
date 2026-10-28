@@ -14,7 +14,7 @@
 kUnicodeUseFallbacksMask = 1L << kUnicodeUseFallbacksBit
 ```
 
-#### Discussion
+## Discussion
 
 A mask for setting the Unicode-use-fallbacks conversion flag. The Unicode Converter uses fallback mappings when it encounters a source text element for which there is no equivalent destination encoding. Fallback mappings are mappings that do not preserve the meaning or identity of the source character but represent a useful approximation of it. See the function [`SetFallbackUnicodeToText`](../api-1433614-setfallbackunicodetotext.md).
 

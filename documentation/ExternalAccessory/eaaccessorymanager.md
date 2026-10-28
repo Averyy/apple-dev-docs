@@ -24,7 +24,7 @@ class EAAccessoryManager
 @interface EAAccessoryManager : NSObject
 ```
 
-#### Overview
+## Overview
 
 An [`EAAccessoryManager`](./eaaccessorymanager.md) object coordinates the attached accessories for an iOS-based device. Use the shared accessory manager to retrieve a list of connected accessories, and start and stop the delivery of connection and disconnection notifications.
 

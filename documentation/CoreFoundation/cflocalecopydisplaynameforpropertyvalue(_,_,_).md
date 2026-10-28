@@ -25,11 +25,11 @@ func CFLocaleCopyDisplayNameForPropertyValue(_ displayLocale: CFLocale!, _ key: 
 extern CFStringRefCFLocaleCopyDisplayNameForPropertyValue(CFLocaleRef displayLocale, CFLocaleKey key, CFStringRef value);
 ```
 
-#### Return Value
+## Return Value
 
 The display name for `value`. Returns `NULL` if there was a problem creating the object. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 Note that not all locale property keys have values with display name values.
 

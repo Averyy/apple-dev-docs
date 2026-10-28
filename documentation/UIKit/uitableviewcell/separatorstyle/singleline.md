@@ -22,7 +22,7 @@ case singleLine
 UITableViewCellSeparatorStyleSingleLine
 ```
 
-#### Discussion
+## Discussion
 
 This is the default value.
 

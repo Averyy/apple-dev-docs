@@ -25,7 +25,7 @@ static let bottom: VerticalAlignment
 
 - [Aligning views within a stack](../aligning-views-within-a-stack.md)
 
-#### Discussion
+## Discussion
 
 Use this guide to align the bottom edges of views:
 

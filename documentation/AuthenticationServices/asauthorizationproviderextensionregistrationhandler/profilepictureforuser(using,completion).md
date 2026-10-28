@@ -21,7 +21,7 @@ optional func profilePictureForUser(using loginManager: ASAuthorizationProviderE
 - (void) profilePictureForUserUsingLoginManager:(ASAuthorizationProviderExtensionLoginManager *) loginManager completion:(void (^)(NSData *jpegData)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Request the profile picture for the current user in jpeg format.
 

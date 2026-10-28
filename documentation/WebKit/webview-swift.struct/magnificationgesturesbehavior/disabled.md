@@ -19,7 +19,7 @@ Magnify gestures are disabled.
 static let disabled: WebView.MagnificationGesturesBehavior
 ```
 
-#### Discussion
+## Discussion
 
 The web view prevents magnify gestures from changing its magnification.
 

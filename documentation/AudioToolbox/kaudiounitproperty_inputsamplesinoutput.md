@@ -24,7 +24,7 @@ var kAudioUnitProperty_InputSamplesInOutput: AudioUnitPropertyID { get }
 kAudioUnitProperty_InputSamplesInOutput
 ```
 
-#### Discussion
+## Discussion
 
 An audio unit calls this callback at the end of its render call. The audio unit supplies the following information:
 

@@ -20,7 +20,7 @@ A process in which the system specifies polygons to remove before rendering a me
 var faceCulling: SimpleMaterial.FaceCulling { get set }
 ```
 
-#### Discussion
+## Discussion
 
 To improve performance, RealityKit culls polygons, or faces, that it determines won’t be visible. Discarding faces that aren’t part of the final render eliminates the need to do any calculations for those faces.
 

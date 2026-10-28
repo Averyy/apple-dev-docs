@@ -24,7 +24,7 @@ var eccVersion: CIDataMatrixCodeDescriptor.ECCVersion { get }
 @property (readonly) CIDataMatrixCodeECCVersion eccVersion;
 ```
 
-#### Discussion
+## Discussion
 
 The possible error correction version are enumerated in [`CIDataMatrixCodeDescriptor.ECCVersion`](./eccversion-swift.enum.md). Any symbol with an even number of rows and columns will be ECC 200.
 

@@ -24,7 +24,7 @@ Creates a new CLI provider with the provided arguments.
 init(arguments: [String] = CommandLine.arguments, secretsSpecifier: SecretsSpecifier<String, String> = .none, bytesDecoder: some ConfigBytesFromStringDecoder = .base64)
 ```
 
-#### Discussion
+## Discussion
 
 ```swift
 // Uses the current process's arguments.

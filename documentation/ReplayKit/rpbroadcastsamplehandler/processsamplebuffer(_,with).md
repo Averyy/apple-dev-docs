@@ -26,7 +26,7 @@ func processSampleBuffer(_ sampleBuffer: CMSampleBuffer, with sampleBufferType: 
 - (void) processSampleBuffer:(CMSampleBufferRef) sampleBuffer withType:(RPSampleBufferType) sampleBufferType;
 ```
 
-#### Discussion
+## Discussion
 
 This method handles buffers of all sample buffer types throughout each broadcast. If no audio is available — for example, if the microphone isn’t capturing input — ReplayKit provides audio buffers whose samples represent continuous silence.
 

@@ -25,7 +25,7 @@ let kCTFramePathClippingPathAttributeName: CFString
 extern CFStringRef const kCTFramePathClippingPathAttributeName;
 ```
 
-#### Discussion
+## Discussion
 
 Specifies clipping path.  This attribute is valid only in a dictionary contained in an array specified by `kCTFrameClippingPathsAttributeName`.
 

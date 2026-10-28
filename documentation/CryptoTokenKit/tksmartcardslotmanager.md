@@ -25,7 +25,7 @@ class TKSmartCardSlotManager
 @interface TKSmartCardSlotManager : NSObject
 ```
 
-#### Overview
+## Overview
 
 Get a list of all known smart card reader slots in the system using the [`slotNames`](./tksmartcardslotmanager/slotnames.md) property, and access individual slots by name using the [`getSlot(withName:reply:)`](./tksmartcardslotmanager/getslot%28withname,reply%29.md) method.
 

@@ -14,7 +14,7 @@
 gestaltMultiChannels = 11
 ```
 
-#### Discussion
+## Discussion
 
 Set if the Sound Manager supports multiple channels of sound.
 

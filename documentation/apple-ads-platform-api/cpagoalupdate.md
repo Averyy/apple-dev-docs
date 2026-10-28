@@ -15,11 +15,11 @@ The deprecated request payload for updating a cost-per-acquisition goal. Use `bi
 object CPAGoalUpdate
 ```
 
-#### Discussion
+## Discussion
 
 The `cpaCap` field is deprecated on `AdGroupUpdate`. Use `BidStrategyUpdate` with `bidStrategyType` set to `MAX_CONVERSIONS` instead of `CPAGoalUpdate` to configure automated conversion-maximizing bidding.
 
-##### Example
+### Example
 
 ```json
 {

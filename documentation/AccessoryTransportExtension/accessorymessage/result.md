@@ -15,7 +15,7 @@ An enumeration of results for message transmission.
 enum Result
 ```
 
-#### Overview
+## Overview
 
 Pass values of this type to completion handlers in [`AccessoryTransportSession.EventHandler`](../accessorytransportsession/eventhandler.md) and [`AccessorySecuritySession.EventHandler`](../accessorysecuritysession/eventhandler.md) methods to indicate transmission outcomes.
 

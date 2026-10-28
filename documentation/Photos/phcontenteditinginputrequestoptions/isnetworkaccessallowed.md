@@ -24,7 +24,7 @@ var isNetworkAccessAllowed: Bool { get set }
 @property (nonatomic, assign, getter=isNetworkAccessAllowed) BOOL networkAccessAllowed;
 ```
 
-#### Discussion
+## Discussion
 
 By default, the value is `false`. If `true`, Photos downloads the asset for editing if it’s not available on the local device. Use the [`progressHandler`](./progresshandler.md) property to track the progress of the download.
 

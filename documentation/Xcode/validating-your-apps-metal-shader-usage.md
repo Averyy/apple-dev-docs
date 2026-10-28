@@ -5,7 +5,7 @@
 
 Catch common shader runtime issues using Shader Validation.
 
-#### Overview
+## Overview
 
 Metal Shader Validation detects errors only discoverable during shader execution, such as accesses to non-resident resources, out-of-bounds memory accesses, undefined behavior, and attempts to access `nil` textures.
 
@@ -31,7 +31,7 @@ To ensure you see the most up-to-date debug information, set your app’s deploy
 
 For more information, see the WWDC20 video [Debug GPU-side errors in Metal](https://developer.apple.com/videos/play/wwdc2020/10616/) and the WWDC21 video [Discover Metal debugging, profiling, and asset creation tools](https://developer.apple.com/videos/play/wwdc2021/10157?time=770).
 
-##### Enable Shader Validation in Xcode
+### Enable Shader Validation in Xcode
 
 Follow these steps to enable Shader Validation using the runtime diagnostics options in the Scheme settings:
 
@@ -44,7 +44,7 @@ Xcode enables Shader Validation each time you run your scheme.
 
 ![A screenshot of Metal validation options with the Shader Validation option enabled and the quick jump button highlighted.](https://developer.apple.com/tutorials/images/com.apple.Xcode/gputools-runtime-shader-jump@2x.png)
 
-##### Customize Shader Validation options
+### Customize Shader Validation options
 
 You can customize Shader Validation behaviors from the Diagnostics tab:
 
@@ -58,7 +58,7 @@ Choose Detect GPU Stack Overflow to check for GPU stack overflow caused by indir
 
 > **Note**: Except for setting an Xcode shader breakpoint, you can control these options through the environment variables in section “Enable Shader Validation with environment variables” below.
 
-##### Selectively enable Shader Validation
+### Selectively enable Shader Validation
 
 When enabling Shader Validation, you can also choose to only enable (or disable) Shader Validation for specific pipelines. This advanced control can be particularly useful when you want to focus your debugging on specific pipelines of interest. It can also greatly improve the performance of the apps you debug, due to the reduced amount of instrumented pipelines.
 
@@ -99,7 +99,7 @@ pipeline = ...
 > ./<application>
 ```
 
-Alternatively, you can programmatically set your pipeline descriptor property [shaderValidation](../Metal/mtlrenderpipelinedescriptor/api-4354231-shadervalidation.md) to either `MTLShaderValidationEnabled` or `MTLShaderValidationDisabled`.
+Alternatively, you can programmatically set your pipeline descriptor property [shaderValidation](../Metal/mtlrenderpipelinedescriptor/shadervalidation.md) to either `MTLShaderValidationEnabled` or `MTLShaderValidationDisabled`.
 
 In the following example, `pipe` is the only pipeline instrumented by Shader Validation.
 
@@ -135,9 +135,9 @@ pipe = device->newRenderPipelineState(descriptor, &error);
 > ./<application>
 ```
 
-Finally, you can query the Shader Validation state of a pipeline through the [shaderValidation](../Metal/mtlrenderpipelinestate/api-4354232-shadervalidation.md) property of pipeline state objects.
+Finally, you can query the Shader Validation state of a pipeline through the [shaderValidation](../Metal/mtlrenderpipelinestate/shadervalidation.md) property of pipeline state objects.
 
-##### Print pipeline UIDs
+### Print pipeline UIDs
 
 Shader Validation generates UIDs for all pipelines you process, which you can use as an entry to `MTL_SHADER_VALIDATION_ENABLE_PIPELINES` and `MTL_SHADER_VALIDATION_DISABLE_PIPELINES`. This is useful when your app has no pipeline labels.
 
@@ -147,7 +147,7 @@ To print the UIDs to Console or a `log stream` instance, set `MTL_SHADER_VALIDAT
 
 ![A screenshot of the Console displaying dumped Shader Validation UIDs.](https://developer.apple.com/tutorials/images/com.apple.Xcode/gputools-runtime-shader-validation-uid-in-console@2x.png)
 
-##### View Shader Validation errors in Xcode
+### View Shader Validation errors in Xcode
 
 After enabling Shader Validation, if Metal encounters errors while executing the commands in a command buffer, Xcode displays the error details in the source editor as shown below:
 
@@ -159,7 +159,7 @@ You can find the breakpoint in the Breakpoint navigator if you want to modify or
 
 If you discover an error in your shader, consider taking a capture and investigating with the shader debugger (see [Investigating visual artifacts](./investigating-visual-artifacts.md)).
 
-##### View Shader Validation errors in the terminal
+### View Shader Validation errors in the terminal
 
 You can enable Shader Validation for any Metal app via environment variables, even when you don’t have access to its source.
 
@@ -169,7 +169,7 @@ By default, Shader Validation logs any issues it finds to the OS log. You can vi
 
 You can also configure Shader Validation to copy its messages to the app’s standard error stream by setting environment variables `MTL_SHADER_VALIDATION=1` and `MTL_SHADER_VALIDATION_REPORT_TO_STDERR=1`.
 
-##### Enable Shader Validation with environment variables
+### Enable Shader Validation with environment variables
 
 You can also enable Shader Validation and customize its behavior by setting the following environment variables on your Metal app:
 
@@ -191,7 +191,7 @@ For a complete list of settings, run `man MetalValidation` in Terminal.
 
 If you discover an error in your shader, consider taking a capture (see [Capturing a Metal workload programmatically](./capturing-a-metal-workload-programmatically.md)) and investigating with the Metal debugger (see [Debugging the shaders within a draw command or compute dispatch](./debugging-the-shaders-within-a-draw-command-or-compute-dispatch.md)).
 
-##### Review Metal Shader Validation constraints
+### Review Metal Shader Validation constraints
 
 Because Metal Shader Validation relies on live shader instrumentation, it’s incompatible with Metal Binary Archives.
 

@@ -24,11 +24,11 @@ bool isEqualTo(const OSDictionary *aDictionary, const OSCollection *keys);
 virtual bool isEqualTo(const OSDictionary *aDictionary, const OSCollection *keys);
 ```
 
-#### Return Value
+## Return Value
 
 true if both dictionaries have equal counts, every key exists in both, values for each key compare true with isEqualTo().
 
-#### Discussion
+## Discussion
 
 For each key in the given collection, both dictionaries must contain values for the key that compare successfully with isEqualTo().
 

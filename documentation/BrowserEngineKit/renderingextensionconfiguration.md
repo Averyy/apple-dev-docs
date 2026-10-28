@@ -18,7 +18,7 @@ An opaque configuration structure for a rendering extension.
 @preconcurrency struct RenderingExtensionConfiguration
 ```
 
-#### Overview
+## Overview
 
 For more information, see [`RenderingExtension`](./renderingextension.md).
 

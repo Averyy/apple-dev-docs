@@ -25,7 +25,7 @@ func CFRunLoopGetNextTimerFireDate(_ rl: CFRunLoop!, _ mode: CFRunLoopMode!) -> 
 extern CFAbsoluteTime CFRunLoopGetNextTimerFireDate(CFRunLoopRef rl, CFRunLoopMode mode);
 ```
 
-#### Return Value
+## Return Value
 
 The earliest firing time of the run loop timers registered in `mode` for the run loop `rl`.
 

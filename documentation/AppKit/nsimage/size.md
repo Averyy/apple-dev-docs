@@ -19,7 +19,7 @@ var size: NSSize { get set }
 @property NSSize size;
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to `{0.0, 0.0}` if no size has been set and the size cannot be determined from any of the receiver’s image representations. If the size of the image hasn’t already been set when an image representation is added, the size is taken from the image representation’s data. For EPS images, the size is taken from the image’s bounding box. For TIFF images, the size is taken from the `ImageLength` and `ImageWidth` attributes.
 

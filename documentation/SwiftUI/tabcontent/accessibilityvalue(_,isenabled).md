@@ -39,7 +39,7 @@ nonisolated
 func accessibilityValue<S>(_ value: S, isEnabled: Bool = true) -> some TabContent<Self.TabValue> where S : StringProtocol
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to describe the value represented by a tab, but only if that’s different than the tab’s label such as when an icon represent information about a tab.
 

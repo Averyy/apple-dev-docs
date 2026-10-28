@@ -33,7 +33,7 @@ var units: MKDistanceFormatter.Units { get set }
 @property (atomic, assign) MKDistanceFormatterUnits units;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this property to explicitly set the measuring system for units. The default value of this property is [`MKDistanceFormatter.Units.default`](./units-swift.enum/default.md), which bases the measuring system on the user’s locale.
 

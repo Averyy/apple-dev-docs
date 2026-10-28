@@ -23,7 +23,7 @@ func isValid(within text: some AttributedStringProtocol) -> Bool
 
 Available when `Bound` is `AttributedString.Index`.
 
-#### Return Value
+## Return Value
 
 `true` when the range is valid for use with the provided attributed string; otherwise, false. A range is valid if its lower and upper bounds are each either valid in the attributed string or equivalent to the string’s `endIndex`.
 

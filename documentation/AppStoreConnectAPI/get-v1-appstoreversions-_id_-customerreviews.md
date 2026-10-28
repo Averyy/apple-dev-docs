@@ -9,9 +9,9 @@ Get a list of customer reviews for a specific version of your app.
 **Availability**:
 - App Store Connect API 2.0+
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

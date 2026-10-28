@@ -22,7 +22,7 @@ var isTranslucent: Bool { get set }
 @property (nonatomic, getter=isTranslucent) BOOL translucent;
 ```
 
-#### Discussion
+## Discussion
 
 When the tab bar is translucent, configure the [`edgesForExtendedLayout`](../uiviewcontroller/edgesforextendedlayout.md) and [`extendedLayoutIncludesOpaqueBars`](../uiviewcontroller/extendedlayoutincludesopaquebars.md) properties of your view controller to display your content underneath the tab bar.
 

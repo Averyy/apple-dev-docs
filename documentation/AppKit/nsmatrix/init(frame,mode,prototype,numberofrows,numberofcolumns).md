@@ -19,7 +19,7 @@ init(frame frameRect: NSRect, mode: NSMatrix.Mode, prototype cell: NSCell, numbe
 - (instancetype) initWithFrame:(NSRect) frameRect mode:(NSMatrixMode) mode prototype:(NSCell *) cell numberOfRows:(NSInteger) rowsHigh numberOfColumns:(NSInteger) colsWide;
 ```
 
-#### Discussion
+## Discussion
 
 This method is the designated initializer for matrices that add cells by copying an instance of an [`NSCell`](../nscell.md) subclass.
 

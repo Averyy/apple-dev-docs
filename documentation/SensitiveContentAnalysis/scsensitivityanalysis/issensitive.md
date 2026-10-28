@@ -28,7 +28,7 @@ var isSensitive: Bool { get }
 - [Testing your app’s response to sensitive media](../testing-your-app-s-response-to-sensitive-media.md)
 - [Detecting sensitive content in media and providing intervention options](../detecting-nudity-in-media-and-providing-intervention-options.md)
 
-#### Discussion
+## Discussion
 
 The framework indicates that content is sensitive only when the active [`analysisPolicy`](../scsensitivityanalyzer/analysispolicy.md) is a value other than [`SCSensitivityAnalysisPolicy.disabled`](../scsensitivityanalysispolicy/disabled.md). When this property is `true`, check [`detectedTypes`](./detectedtypes.md) to determine the specific categories of sensitive content that the framework detects in the media.
 

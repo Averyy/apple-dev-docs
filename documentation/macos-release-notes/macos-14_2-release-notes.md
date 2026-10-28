@@ -5,13 +5,13 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 The macOS 14.2 SDK provides support to develop apps for Mac computers running Sonoma 14.2. The SDK comes bundled with Xcode 15.1. For information on the compatibility requirements for Xcode 15.1, see [Xcode 15.1 Release Notes](../Xcode-Release-Notes/xcode-15_1-release-notes.md).
 
-##### iMessage Contact Key Verification
+### iMessage Contact Key Verification
 
-###### New Features
+#### New Features
 
 - With iMessage Contact Key Verification, users can choose to further verify that they are messaging only with the people they intend. iMessage Contact Key Verification uses Key Transparency to enable automatic verification that the iMessage key distribution service returns device keys that have been logged to a verifiable and auditable map. When a user enables the feature, they will be notified about any validation errors directly in the Messages conversation transcript and Apple ID Settings.
 
@@ -19,51 +19,51 @@ The macOS 14.2 SDK provides support to develop apps for Mac computers running So
 
   All devices signed into your iCloud account must be on the minimum supported version of iOS 17.2 Beta, macOS 14.2 Beta, or watchOS 10.2 Beta. If you wish to keep using other devices on older versions of the OS, you will need to sign out of iMessage on these devices in order to enable contact key verification.  (111356044)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: When verifying another user, Contact Verification Code will not show unless both users are on beta 4 or higher.   (114462363)
 - Fixed: After verifying a contact, the verificaton checkmark might not show up in Messages app.  (116142336)
 - Fixed: Users might see an error to Turned Off transcript every few hours.   (116405131)
 - Fixed: Users might see that they’re are not eligible to enable Contact Key Verification on some of their upgraded devices.  (117044482)
 
-###### Known Issues
+#### Known Issues
 
 - The Learn More links do not link to Knowledge Base articles during Beta.  (101563811)
 
-##### Messages
+### Messages
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Unlocalized string shown for member count in the full screen Map View of Group Messages might appear (e.g. DETAIL_NUMBER_OF_PEOPLE_LABEL).  (117287069)
 
-##### ServiceManagement
+### ServiceManagement
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Requirements for agents and daemons registered with `SMAppService` have changed to prevent sandbox escapes. The target executable must be sandboxed if the main app is sandboxed. A small sandboxed trampoline tool can be written to execute scripts and unsandboxed or system tools.  (113037504)
 
-##### StoreKit
+### StoreKit
 
-###### New Features
+#### New Features
 
 - New pricing properties `price`, `currency`, and `currencyCode` are now available on [Transaction](../StoreKit/transaction.md). If an offer was applied to the transaction, a new property `offer` is available to see information about it (id, type, payment mode), as well as convenience properties `offerID`, `offerType`, and `offerPaymentMode`.  (106650768)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: The StoreKit 2 Transaction properties `price`, `currency`, and `Offer.paymentMode` now have Optional types.  (116592563)
 - Fixed: The StoreKit 2 Transaction properties `price`, `currency`, and `Offer.paymentMode` now have Optional types.  (116809380)
 - Fixed an issue causing the refund request “Done” button to not dismiss the sheet when using StoreKit Testing in Xcode.  (117482750)
 - Fixed an issue where StoreKit 2 `deviceVerification` was incorrect, which caused transaction verification to fail.  (117689523) (FB13315344)
 
-##### Swift Charts
+### Swift Charts
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where a scrollable chart did not respect the initial non-zero binding value passed to `chartScrollPosition`.  (114889276)
 
-##### SwiftUI
+### SwiftUI
 
-###### New Features
+#### New Features
 
 - Use `_logChanges()` to log causes of SwiftUI view updates.
 
@@ -86,14 +86,14 @@ The macOS 14.2 SDK provides support to develop apps for Mac computers running So
 
   Calls to `_logChanges()` log at the info level to the “com.apple.SwiftUI” subsystem with the category “Changed Body Properties”.  (113352555)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Resolved a possible Swift access conflict crash that could occur with toolbar items.  (113992797)
 - Fixed: To prevent unintentional implicit dependency cycles, ImageRenderer no longer sends Observable updates when the image it produces changes. This change **does not** affect the behavior when a dependency is explicitly declared by observing the ImageRenderer’s publisher.  (116836341)
 
-##### WidgetKit
+### WidgetKit
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: In widgets `Text(_:style:)` does not animate its content by default.  (107582710)
 

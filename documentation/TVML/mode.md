@@ -5,7 +5,7 @@
 
 Specifies how an image is displayed.
 
-#### Overview
+## Overview
 
 Use the `mode` attribute to define how an image is displayed in the `oneupTemplate` and `showcaseTemplate` elements. The `showcaseTemplate` element can only use the `showcase oneup` attribute value. The `oneupTemplate` can only use the `oneup caption` attribute value. Clicking an image alternates between the selected modes. Here’s an example that displays images in `showcaseTemplate` in `showcase` mode:
 
@@ -42,12 +42,12 @@ Use the `mode` attribute to define how an image is displayed in the `oneupTempla
 </document>
 ```
 
-##### Values for mode
+### Values for mode
 
 - **`showcase oneup`**: Image alternates between the actual image size and a fullscreen image.
 - **`oneup caption`**: Image alternates between a fullscreen image with or without a caption below the image.
 
-##### Elements that Use mode
+### Elements that Use mode
 
 - [oneupTemplate](./oneuptemplate.md)
 - [showcaseTemplate](./showcasetemplate.md)

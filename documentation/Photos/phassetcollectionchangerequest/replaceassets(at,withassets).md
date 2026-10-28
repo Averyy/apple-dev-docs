@@ -24,7 +24,7 @@ func replaceAssets(at indexes: IndexSet, withAssets assets: any NSFastEnumeratio
 - (void) replaceAssetsAtIndexes:(NSIndexSet *) indexes withAssets:(id<NSFastEnumeration>) assets;
 ```
 
-#### Discussion
+## Discussion
 
 To ensure that the index set you specify is valid even if the asset collection has changed since you fetched it, create a change request with a snapshot of the asset collection’s contents using the [`init(for:assets:)`](./init%28for,assets%29.md) method before rearranging assets.
 

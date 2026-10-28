@@ -25,7 +25,7 @@ func nextInt(upperBound: Int) -> Int
 - (NSUInteger) nextIntWithUpperBound:(NSUInteger) upperBound;
 ```
 
-#### Return Value
+## Return Value
 
 A new random integer greater than or equal to zero and less than the value of the `upperBound` parameter.
 

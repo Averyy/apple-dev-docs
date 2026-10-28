@@ -6,7 +6,7 @@
 
 An optional item information atom.
 
-#### Overview
+## Overview
 
 See [`Item information atom`](../item_information_atom.md).
 

@@ -5,7 +5,7 @@
 
 Upload and download app screenshots for an app locale and display target.
 
-#### Overview
+## Overview
 
 An `appScreenshots` resource represents a single app screenshot for an app locale and display target. Use this resource to:
 

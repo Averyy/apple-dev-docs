@@ -22,7 +22,7 @@ var allowsMultipleSelection: Bool { get set }
 @property (nonatomic, assign) BOOL allowsMultipleSelection;
 ```
 
-#### Discussion
+## Discussion
 
 By default, this property is [`false`](../../Swift/false.md).
 

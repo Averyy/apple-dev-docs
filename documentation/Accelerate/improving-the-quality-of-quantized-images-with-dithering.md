@@ -10,7 +10,7 @@ Apply dithering to simulate colors that are unavailable in reduced bit depths.
 - macOS 13.3+
 - Xcode 14.3+
 
-#### Overview
+## Overview
 
 When you convert images to lower bit depths, some colors may be unavailable in the destination bit depth. As a solution, the vImage library provides options to apply dithering, a process that uses a pattern of random pixels to simulate unavailable colors. For example, a mid-gray color from an 8-bit grayscale image that’s quantized to 1 bit returns data that contains 50% white pixels and 50% black pixels.
 
@@ -22,7 +22,7 @@ The example below shows an image with continuous tones (left) and the same image
 
 Before exploring the code, try building and running the app to familiarize yourself with the effect of the different dithering algorithms on the image.
 
-##### Define the source and destination Core Graphics image formats
+### Define the source and destination Core Graphics image formats
 
 The sample code defines two [`vImage_CGImageFormat`](./vimage_cgimageformat.md) structures that represent the source and destination image formats. The `sourceFormat` structure is an 8-bit grayscale format that supports 256 levels of gray. The `destinationFormat` structure is a 1-bit format with pixels that are either black or white.
 
@@ -40,7 +40,7 @@ let destinationFormat = vImage_CGImageFormat(
     bitmapInfo: .init(rawValue: CGImageAlphaInfo.none.rawValue))!
 ```
 
-##### Allocate the source and destination image buffers
+### Allocate the source and destination image buffers
 
 The code populates the contents of the source [`vImage_Buffer`](./vimage_buffer.md) structure with a grayscale version of the source image. Because the code passes a populated [`vImage_CGImageFormat`](./vimage_cgimageformat.md) structure to the [`init(cgImage:format:flags:)`](./vimage_buffer/init%28cgimage,format,flags%29.md) initializer, vImage converts the source image to an 8-bit grayscale format.
 
@@ -56,7 +56,7 @@ destinationBuffer = try vImage_Buffer(
     bitsPerPixel: destinationFormat.bitsPerPixel)
 ```
 
-##### Create a dither-type enumeration
+### Create a dither-type enumeration
 
 To support dither-type selection in the user interface, the sample code includes an enumeration that wraps the available vImage dithering algorithms.
 
@@ -94,7 +94,7 @@ The sample code app supports the following dithering types:
 
 The vImage library also includes [`kvImageConvert_DitherOrderedReproducible`](./kvimageconvert_ditherorderedreproducible.md), which returns the same result as [`kvImageConvert_DitherOrdered`](./kvimageconvert_ditherordered.md) but uses the same offset into the blue noise for each call.
 
-##### Apply dithering to the image
+### Apply dithering to the image
 
 The [`vImageConvert_Planar8toPlanar1(_:_:_:_:_:)`](./vimageconvert_planar8toplanar1%28_,_,_,_,_%29.md) function converts the 8-bit grayscale to a 1-bit image using the dithering type that the user interface defines.
 

@@ -23,7 +23,7 @@ func addItem(_ item: any UIDynamicItem)
 - (void) addItem:(id<UIDynamicItem>) item;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to apply a field to a dynamic item in your interface. This method adds the specified dynamic item to the field behavior’s list of dynamic items.
 

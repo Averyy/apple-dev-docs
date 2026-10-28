@@ -5,7 +5,7 @@
 
 Offer additional content and services in your app using the Original Apple In-App Purchase API.
 
-#### Overview
+## Overview
 
 The Apple In-App Purchase APIs, including the original API and the Swift-based [Apple In-App Purchase](./in-app-purchase.md) API, allow you to offer customers the opportunity to purchase in-app content and features. Customers can make the purchases within your app, and find your promoted products on the App Store.
 
@@ -15,13 +15,13 @@ The StoreKit framework connects to the App Store on your app’s behalf to promp
 
 For more information about Apple In-App Purchases, including configuration, testing, marketing, and more, see [Apple In-App Purchase](https://developer.apple.com/in-app-purchase/).
 
-##### Configure Apple In-App Purchases in App Store Connect
+### Configure Apple In-App Purchases in App Store Connect
 
 To use the Apple In-App Purchase API, you need to configure the products in App Store Connect. As you develop your app, you can add or remove products and refine or reconfigure existing products. For more information, see [Configure Apple In-App Purchase settings](https://developer.apple.com/help/app-store-connect/configure-in-app-purchase-settings/overview-for-configuring-in-app-purchases).
 
 You can also offer apps and Apple In-App Purchases that run on multiple platforms as a single purchase. For more information about universal purchase, see [App Store Connect Help](https://help.apple.com/app-store-connect/#/dev2cd126805).
 
-##### Understand product types
+### Understand product types
 
 There are four Apple In-App Purchase types you can offer:
 

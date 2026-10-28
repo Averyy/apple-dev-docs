@@ -23,7 +23,7 @@ var scale: CGFloat { get set }
 @property (nonatomic) CGFloat scale;
 ```
 
-#### Discussion
+## Discussion
 
 The display scale determines the number of pixels per point.
 

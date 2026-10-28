@@ -5,7 +5,7 @@
 
 Implement per-frame app logic, such as the scene’s update function that’s called every frame.
 
-#### Overview
+## Overview
 
 When a scene is presented via [`presentScene(_:)`](./skview/presentscene%28_%29.md), SpriteKit calls you every frame if you implement any of the functions shown in the following image:
 
@@ -13,7 +13,7 @@ When a scene is presented via [`presentScene(_:)`](./skview/presentscene%28_%29.
 
 If you don’t implement any of the frame-cycle functions, SpriteKit will only render the scene when something within it has changed, improving energy efficiency and allowing your game or app to perform other operations instead.
 
-##### Decide Which Events to Implement
+### Decide Which Events to Implement
 
 Each time through the rendering loop, the scene’s contents are updated and then rendered. You can’t override the rendering behavior; instead you update the nodes in the scene. However, the scene includes methods you can override to customize scene processing, and you can use actions and physics to alter properties of nodes in the tree. Here are the steps in the rendering loop:
 
@@ -27,11 +27,11 @@ Each time through the rendering loop, the scene’s contents are updated and the
 8. The scene calls its [`didFinishUpdate()`](./skscene/didfinishupdate%28%29.md) method. This is your last chance to make changes to the scene.
 9. The scene is rendered.
 
-##### Use a Scene Delegate Instead of Subclassing a Scene
+### Use a Scene Delegate Instead of Subclassing a Scene
 
 Subclassing [`SKScene`](./skscene.md) and overriding frame-cycle functions is a simple way to implement your app’s logic, but you avoid subclassing by using a delegate. All of the frame-cycle functions defined by `SKScene` have an [`SKSceneDelegate`](./skscenedelegate.md) protocol equivalent function. So, if you provide a scene delegate, the delegate’s frame-cycle methods are called instead of those on the scene. For example, an iOS app might use a view controller as the scene delegate. See [Subclassing Scenes Versus Assigning a Delegate](./subclassing-scenes-versus-assigning-a-delegate.md) for more information.
 
-##### Implement Post-Processing
+### Implement Post-Processing
 
 A scene can process the actions on the scene tree in any order. For this reason, if you have tasks that you need to run each frame and you need precise control over when they run, you should use the [`didEvaluateActions()`](./skscene/didevaluateactions%28%29.md) and [`didSimulatePhysics()`](./skscene/didsimulatephysics%28%29.md) methods to perform those tasks. Typically, you make changes during post-processing that require the final calculated positions of certain nodes in the tree. Your post-processing can take these positions and perform other useful work on the tree.
 

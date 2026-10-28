@@ -25,7 +25,7 @@ static var isApplicationAccessibilityEnabled: Bool { get }
 extern BOOL AXApplicationAccessibilityEnabled();
 ```
 
-#### Discussion
+## Discussion
 
 Returns `YES` when at least one assistive technology — such as VoiceOver, Switch Control, Voice Control, or Full Keyboard Access — has requested access to this app’s accessibility information. Apps can use this signal to avoid building expensive accessibility data when no assistive technology is consuming it.
 

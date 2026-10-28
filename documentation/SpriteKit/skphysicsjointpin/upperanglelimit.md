@@ -29,7 +29,7 @@ var upperAngleLimit: CGFloat { get set }
 
 - [Pinning and Rotating Physics Bodies](../pinning-and-rotating-physics-bodies.md)
 
-#### Discussion
+## Discussion
 
 The default value is `0.0`.
 

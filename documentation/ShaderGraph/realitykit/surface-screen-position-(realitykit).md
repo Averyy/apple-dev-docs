@@ -14,7 +14,7 @@ The coordinates of the currently-processed data in screen space.
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 | Output | Type |
 | --- | --- |

@@ -17,7 +17,7 @@ Pre-load heuristics for deciding whether a model identifier looks like a reasoni
 enum ReasoningHeuristics
 ```
 
-#### Overview
+## Overview
 
 This is a standalone, opt-in helper — nothing in `MLXLMCommon` calls it. It exists for callers that need to guess reasoning capability from a repo id alone (e.g. before any model files are downloaded, when no other signal is available). Callers that have a stronger signal, or that simply declare their capabilities explicitly, should not use it.
 

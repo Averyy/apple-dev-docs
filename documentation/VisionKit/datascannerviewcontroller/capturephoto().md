@@ -18,7 +18,7 @@ Captures a high-resolution photo of the camera’s live video.
 func capturePhoto() async throws -> UIImage
 ```
 
-#### Return Value
+## Return Value
 
 An image of the live video.
 

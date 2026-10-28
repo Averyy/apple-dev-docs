@@ -18,7 +18,7 @@ An object that describes the data format and layout of the buffers in a low-leve
 struct Descriptor
 ```
 
-#### Overview
+## Overview
 
 The descriptor is analogous to `MTLVertexDescriptor`, with additional semantics that make vertex data available in shaders.
 

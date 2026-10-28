@@ -11,9 +11,9 @@ Get information about an In-App Purchase.
 
 > **Deprecated**: Use [`Read In-App Purchase information`](./get-v2-inapppurchases-_id_.md) instead.
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

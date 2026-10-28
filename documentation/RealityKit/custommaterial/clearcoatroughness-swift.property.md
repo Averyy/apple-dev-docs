@@ -19,7 +19,7 @@ The degree to which an entity’s clear, shiny coating scatters light to create 
 var clearcoatRoughness: CustomMaterial.ClearcoatRoughness { get set }
 ```
 
-#### Discussion
+## Discussion
 
 An entity in RealityKit can display a clearcoat, which is a separate layer of transparent specular highlights used to simulate a clear coating, like on a car or the surface of lacquered objects. This property allows you to specify a clearcoat roughness value to indicate how much the clearcoat scatters light that bounces off of it, which softens and disperses the highlights.
 

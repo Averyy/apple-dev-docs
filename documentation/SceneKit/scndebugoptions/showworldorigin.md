@@ -21,7 +21,7 @@ Display a coordinate axis visualization indicating the position and orientation 
 static let showWorldOrigin: SCNDebugOptions
 ```
 
-#### Discussion
+## Discussion
 
 This visualization is available to all session configurations and session [`worldAlignment`](../../ARKit/arconfiguration/worldalignment-swift.property.md) options, but is most useful with a [`ARWorldTrackingConfiguration`](../../ARKit/arworldtrackingconfiguration.md) session. For example, if you start running a session when this option is enabled, then take a step backward, the real-world position tracked by the AR world coordinate system should become visible on your device screen.
 

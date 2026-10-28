@@ -21,7 +21,7 @@ Gathers the specified double-precision vector using a vector that defines the in
 static func gather<T, U, V>(_ vector: T, indices: U, result: inout V) where T : AccelerateBuffer, U : AccelerateBuffer, V : AccelerateMutableBuffer, T.Element == Double, U.Element == UInt, V.Element == Double
 ```
 
-#### Discussion
+## Discussion
 
 The following code shows an example of gathering the values in `source` using the values in `indices`:
 

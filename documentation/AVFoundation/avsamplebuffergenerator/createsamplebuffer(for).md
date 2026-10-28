@@ -21,11 +21,11 @@ func createSampleBuffer(for request: AVSampleBufferRequest) -> CMSampleBuffer?
 - (CMSampleBufferRef) createSampleBufferForRequest:(AVSampleBufferRequest *) request;
 ```
 
-#### Return Value
+## Return Value
 
 Returns a new `CMSampleBufferRef`.
 
-#### Discussion
+## Discussion
 
 It is an error to use an `AVSampleBufferRequest` object with mode set to `AVSampleBufferRequestModeScheduled` when the `AVSampleBufferGenerator` was created with a `NULL` timebase.
 

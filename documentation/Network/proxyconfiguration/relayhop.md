@@ -21,7 +21,7 @@ A single relay server you can chain together with other servers.
 struct RelayHop
 ```
 
-#### Overview
+## Overview
 
 Relay servers are secure HTTP proxies that allow proxying TCP traffic using the `CONNECT` method and UDP traffic using the `connect-udp` protocol defined in [RFC 9298](https://www.rfc-editor.org/rfc/rfc9298.html).
 

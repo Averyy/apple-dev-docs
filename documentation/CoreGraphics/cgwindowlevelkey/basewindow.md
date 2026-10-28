@@ -18,7 +18,7 @@ case baseWindow
 kCGBaseWindowLevelKey
 ```
 
-#### Discussion
+## Discussion
 
 The base key used to define window levels. Do not use.
 

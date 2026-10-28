@@ -20,7 +20,7 @@ A provided frame object has a presentation time stamp which isn’t supported by
 static var invalidFrameTiming: VTFrameProcessorError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 The time stamp is either invalid or out-of-order.
 

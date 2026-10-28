@@ -24,7 +24,7 @@ let kVTCompressionPropertyKey_CleanAperture: CFString
 extern CFStringRef const kVTCompressionPropertyKey_CleanAperture;
 ```
 
-#### Discussion
+## Discussion
 
 If a video encoder enforces specific clean apertures, this property is read-only ([`VTSessionSetProperty(_:key:value:)`](./vtsessionsetproperty%28_,key,value%29.md) will return [`kVTPropertyReadOnlyErr`](./kvtpropertyreadonlyerr.md)). The clean aperture will be set on the format description for output samples, and may affect source frame scaling. NULL is a valid value for this property, meaning that the clean aperture is the full width and height.
 

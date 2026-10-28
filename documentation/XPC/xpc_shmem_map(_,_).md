@@ -25,11 +25,11 @@ func xpc_shmem_map(_ xshmem: xpc_object_t, _ region: UnsafeMutablePointer<Unsafe
 extern size_t xpc_shmem_map(xpc_object_t xshmem, void **region);
 ```
 
-#### Return Value
+## Return Value
 
 The length of the region that was mapped. If the mapping failed, 0 is returned.
 
-#### Discussion
+## Discussion
 
 The resulting region must be disposed of with `munmap(2)`.
 

@@ -17,11 +17,11 @@ If implemented, text formatting will call this method before presenting color pi
 - (BOOL) textFormattingViewController:(UITextFormattingViewController *) viewController shouldPresentColorPicker:(UIColorPickerViewController *) colorPicker;
 ```
 
-#### Return Value
+## Return Value
 
 Flag indicating if text formatting controller should present font picker.
 
-#### Discussion
+## Discussion
 
 You may decide to prevent presentation of color picker via text formatting controller. In that case, you may present provided color picker controller yourself, but you will have to handle any actions in that controller separately.
 

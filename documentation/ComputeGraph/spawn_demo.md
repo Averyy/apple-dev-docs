@@ -14,7 +14,7 @@
 void spawn_demo()
 ```
 
-#### Discussion
+## Discussion
 
 > **Visual**: ![Graph](https://developer.apple.com/tutorials/images/com.apple.computegraph/spawn_demo.svg)
 

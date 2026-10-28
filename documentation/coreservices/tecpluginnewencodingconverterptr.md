@@ -16,7 +16,7 @@ Defines a pointer to a function that determinesa conversion path for a source an
 typedef OSStatus (*TECPluginNewEncodingConverterPtr)(TECObjectRef *newEncodingConverter, TECConverterContextRec *plugContext, TextEncoding inputEncoding, TextEncoding outputEncoding);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./carbon_core/text_encoding_conversion_manager.md#1664324).
 

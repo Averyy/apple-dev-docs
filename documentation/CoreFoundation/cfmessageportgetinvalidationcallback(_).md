@@ -25,7 +25,7 @@ func CFMessagePortGetInvalidationCallBack(_ ms: CFMessagePort!) -> CFMessagePort
 extern CFMessagePortInvalidationCallBackCFMessagePortGetInvalidationCallBack(CFMessagePortRef ms);
 ```
 
-#### Return Value
+## Return Value
 
 The callback function invoked when `ms` is invalidated. `NULL` if no callback has been set with [`CFMessagePortSetInvalidationCallBack(_:_:)`](./cfmessageportsetinvalidationcallback%28_,_%29.md).
 

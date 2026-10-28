@@ -20,7 +20,7 @@ func invalidate()
 - (void) invalidate;
 ```
 
-#### Discussion
+## Discussion
 
 The framework calls this method to cancel a search if the person using the device changes their query, making the results of the current search obsolete. The framework also calls this method when it’s finished using this enumerator object.
 

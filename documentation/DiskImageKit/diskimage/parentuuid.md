@@ -15,7 +15,7 @@ A UUID of the image that must be equal to the layer UUID of the layer beneath it
 var parentUUID: UUID? { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property is in a set state for all images in a stacked disk image, where the layer beneath them has a [`layerUUID`](./layeruuid.md).
 

@@ -15,11 +15,11 @@ Request body for brands reporting queries.
 object BrandsReportingRequest
 ```
 
-#### Discussion
+## Discussion
 
 The `BrandsReportingRequest` object is the request body for all `brands` entity-level report endpoints.
 
-##### Example
+### Example
 
 ```json
 {

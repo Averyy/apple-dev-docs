@@ -14,7 +14,7 @@
 kMPSemaphoreInfoVersion = 1L | (kOpaqueSemaphoreID << 16)
 ```
 
-#### Discussion
+## Discussion
 
 The `MPSemaphoreInfo` structure version.
 

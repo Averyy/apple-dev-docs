@@ -24,7 +24,7 @@ protocol GKGameModel : NSCopying, NSObjectProtocol
 @protocol GKGameModel <NSObject, NSCopying>
 ```
 
-#### Overview
+## Overview
 
 You adopt this protocol to describe the gameplay of your turn-based game for use by a [`GKStrategist`](./gkstrategist.md) object. The strategist uses your game model class (that is, the class you create to adopt this protocol), along with other custom classes you create (adopting the [`GKGameModelPlayer`](./gkgamemodelplayer.md) and [`GKGameModelUpdate`](./gkgamemodelupdate.md) protocols), to find optimal moves.
 

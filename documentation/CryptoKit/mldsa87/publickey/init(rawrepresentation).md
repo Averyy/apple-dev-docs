@@ -21,7 +21,7 @@ Parses a public key from a serialized representation.
 init<D>(rawRepresentation: D) throws where D : DataProtocol
 ```
 
-#### Return Value
+## Return Value
 
 The deserialized public key.
 

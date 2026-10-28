@@ -23,7 +23,7 @@ static var thermalStateDidChange: NotificationCenter.BaseMessageIdentifier<Proce
 
 Available when `Self` is `NotificationCenter.BaseMessageIdentifier<ProcessInfo.ThermalStateDidChangeMessage>`.
 
-#### Discussion
+## Discussion
 
 Use this identifier with [`NotificationCenter`](../../notificationcenter.md)’s `addObserver(of:for:using:)` or `messages(of:for:bufferSize:)` methods to observe messages of type [`ProcessInfo.ThermalStateDidChangeMessage`](../../processinfo/thermalstatedidchangemessage.md).
 

@@ -23,7 +23,7 @@ class func clearTextInputContextIdentifier(_ identifier: String)
 + (void) clearTextInputContextIdentifier:(NSString *) identifier;
 ```
 
-#### Discussion
+## Discussion
 
 Calling this method removes any text input mode information associated with the specified identifier from the app’s user defaults. Removing this information causes the responder to use the default text input mode again.
 

@@ -19,11 +19,11 @@ class var defaultDepthLimit: NSWindow.Depth { get }
 @property (class, readonly) NSWindowDepth defaultDepthLimit;
 ```
 
-#### Return Value
+## Return Value
 
 The default depth limit for instances of `NSWindow`, determined by the depth of the deepest screen level available to the window server.
 
-#### Discussion
+## Discussion
 
 The value returned can be examined with the Application Kit functions [`isPlanar`](./depth/isplanar.md), [`colorSpaceName`](./depth/colorspacename.md), [`bitsPerSample`](./depth/bitspersample.md), and [`bitsPerPixel`](./depth/bitsperpixel.md).
 

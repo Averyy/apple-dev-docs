@@ -19,7 +19,7 @@ Layout options that determine how the picker orders photos visually.
 enum PHPickerMode : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 This structure defines the possible options for the photos picker configuration ([`PHPickerConfiguration`](./phpickerconfiguration-c.class.md)) property [`mode`](./phpickerconfiguration-swift.struct/mode.md). The option you choose determines the direction that its assets scroll in the view. In addition, the linear scrolling behavior of [`compact`](./phpickermode-swift.struct/compact.md) mode offers the best user experience in a space-constrained layout.
 

@@ -19,7 +19,7 @@ var canDownloadUbiquitousContents: Bool { get set }
 @property BOOL canDownloadUbiquitousContents;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the panel disallows opening non-local iCloud files. If the user selects a non-local file, the panel attempts to download that file. When the value of this property is [`false`](../../Swift/false.md), the user may select and open non-local files. Your app is responsible for downloading the files and reporting progress or any issues.
 

@@ -20,7 +20,7 @@ Returns an element by index.
 subscript(index: Int) -> T { get }
 ```
 
-#### Overview
+## Overview
 
 The index should be in the range [0, [`physicsBodyCount`](../forceeffectparameters/physicsbodycount.md)].
 

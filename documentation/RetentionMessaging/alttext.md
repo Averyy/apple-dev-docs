@@ -19,7 +19,7 @@ string altText
 
 **Maximum Length**: `150`
 
-#### Discussion
+## Discussion
 
 Provide the `altText` as a UTF-8-encoded string. The maximum string length for `altText` is `150`.
 

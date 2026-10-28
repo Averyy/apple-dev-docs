@@ -16,7 +16,7 @@ A Boolean value that indicates whether the app may request user authorization to
 - **Name**: `com.apple.developer.healthkit` (HealthKit)
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 To add this entitlement to your app, enable the HealthKit capability in Xcode.
 

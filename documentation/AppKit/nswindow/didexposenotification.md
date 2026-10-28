@@ -19,7 +19,7 @@ class let didExposeNotification: NSNotification.Name
 extern NSNotificationName NSWindowDidExposeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The system posts this notification when a window moves in front of other windows or when other windows move from in front of it, exposing part of its content.
 

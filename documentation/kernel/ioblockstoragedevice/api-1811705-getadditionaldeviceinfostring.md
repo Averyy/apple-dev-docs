@@ -12,7 +12,7 @@ virtual char * getAdditionalDeviceInfoString(
  void) = 0;
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to a static character string.
 

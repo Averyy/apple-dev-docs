@@ -19,7 +19,7 @@ let kSCPropNetIPSecAuthenticationMethod: CFString
 extern CFStringRef const kSCPropNetIPSecAuthenticationMethod;
 ```
 
-#### Discussion
+## Discussion
 
 This key can be passed the following constants:
 

@@ -23,7 +23,7 @@ func MIDIObjectFindByUniqueID(_ inUniqueID: MIDIUniqueID, _ outObject: UnsafeMut
 extern OSStatus MIDIObjectFindByUniqueID(MIDIUniqueID inUniqueID, MIDIObjectRef *outObject, MIDIObjectType *outObjectType);
 ```
 
-#### Return Value
+## Return Value
 
 An `OSStatus` error code, including [`kMIDIObjectNotFound`](./kmidiobjectnotfound.md) if there is no object with this unique ID.
 

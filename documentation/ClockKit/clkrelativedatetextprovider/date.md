@@ -21,7 +21,7 @@ var date: Date { get set }
 @property (nonatomic, retain) NSDate * date;
 ```
 
-#### Discussion
+## Discussion
 
 When creating a text provider that updates automatically,  the provider calculates the relative date between this property and the current date. The value of this property must not be `nil`.
 

@@ -23,7 +23,7 @@ protocol NSFileProviderCustomAction : NSObjectProtocol
 @protocol NSFileProviderCustomAction <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Adopt this protocol to add a custom action to the context menu (for example, when the user control-clicks an item in Finder).
 

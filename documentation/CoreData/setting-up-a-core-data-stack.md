@@ -5,7 +5,7 @@
 
 Set up the classes that manage and persist your app’s objects.
 
-#### Overview
+## Overview
 
 After you create a data model file as described in [Creating a Core Data model](./creating-a-core-data-model.md), set up the classes that collaboratively support your app’s model layer. These classes are collectively referred to as the Core Data stack.
 
@@ -16,7 +16,7 @@ After you create a data model file as described in [Creating a Core Data model](
 - An instance of [`NSPersistentStoreCoordinator`](./nspersistentstorecoordinator.md) saves and fetches instances of your app’s types from stores.
 - An instance of [`NSPersistentContainer`](./nspersistentcontainer.md) sets up the model, context, and store coordinator all at once.
 
-##### Initialize a Persistent Container
+### Initialize a Persistent Container
 
 Typically, you initialize a Core Data stack as a singleton:
 
@@ -50,7 +50,7 @@ Once created, the persistent container holds references to the model, context, a
 
 You can now use the Core Data stack througout your app.
 
-##### Inject the managed object context
+### Inject the managed object context
 
 Create an instance of the Core Data stack and inject its managed object context into your app environment:
 
@@ -84,7 +84,7 @@ struct ContentView: View {
 }
 ```
 
-##### Add functionality to the stack
+### Add functionality to the stack
 
 Your Core Data stack is a convenient place to put related code, such as methods to save changes and delete managed objects in the persistent store:
 

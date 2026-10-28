@@ -9,7 +9,7 @@ Foveated Streaming enables visionOS apps to display high-resolution, low-latency
 **Availability**:
 - visionOS 26.4+
 
-#### Overview
+## Overview
 
 The Foveated Streaming framework provides a session-based API for establishing connections from Apple Vision Pro to local and cloud streaming endpoints. The endpoint host streams high quality content only where necessary based on information about the approximate region where the person is looking, ensuring performance. Applications and games can integrate with the NVIDIA CloudXR™ SDK to become streaming endpoints.
 
@@ -37,7 +37,8 @@ The core workflow involves creating a [`FoveatedStreamingSession`](./foveatedstr
   Creates an immersive space to display foveated streaming content.
 - [init<V>(foveatedStreaming: FoveatedStreamingSession, content: () -> V)](../SwiftUI/immersivespace/init%28foveatedstreaming,content%29.md)
   Creates an immersive space to display foveated streaming content alongside `RealityKit` content.
-- [func foveatedStreamingPauseSheet(session: Binding<FoveatedStreamingSession?>) -> some View\n](../SwiftUI/view/foveatedstreamingpausesheet%28session%29.md)
+- [func foveatedStreamingPauseSheet(session: Binding<FoveatedStreamingSession?>) -> some View
+](../SwiftUI/view/foveatedstreamingpausesheet%28session%29.md)
   Tells the system to present a sheet with controls for resuming or ending the foveated streaming session when it pauses.
 ### Streaming provider extensions
 - [class FoveatedStreamingProviderContext](./foveatedstreamingprovidercontext.md)

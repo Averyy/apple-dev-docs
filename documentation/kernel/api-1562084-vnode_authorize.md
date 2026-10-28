@@ -15,11 +15,11 @@ Authorize a kauth-style action on a vnode.
 int vnode_authorize(vnode_t vp, vnode_t dvp, kauth_action_t action, vfs_context_t ctx);
 ```
 
-#### Return Value
+## Return Value
 
 EACCESS if permission is denied. 0 if operation allowed. Various errors from lower layers.
 
-#### Discussion
+## Discussion
 
 Operations on dead vnodes are always allowed (though never do anything).
 

@@ -15,11 +15,11 @@ Creates a sniffer object and returns a reference to it.
 OSStatus TECCreateSniffer(TECSnifferObjectRef *encodingSniffer, const TextEncoding testEncodings[], ItemCount numTextEncodings);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./carbon_core/text_encoding_conversion_manager.md#1664324).
 
-#### Discussion
+## Discussion
 
 The `TECCreateSniffer` functionpolls plug-ins for available sniffers, creates a sniffer object capableof sniffing each of the specified encodings that it can find a snifferfunction for, and returns a reference to it. You use this snifferobject reference with sniffer functions such as  [`TECSniffTextEncoding`](./api-1571836-tecsnifftextencoding.md). If no snifferfunction is available for an encoding, no error is returned and `TECSniffTextEncoding` indicateslater that the encoding was not examined.
 

@@ -15,21 +15,21 @@ Obtains information about the operating environment.
 OSErr Gestalt(OSType selector, SInt32 *response);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Gestalt Manager](./carbon_core/gestalt_manager.md).
 
-#### Discussion
+## Discussion
 
 The Apple-defined selector codes fall into two categories: environmental selectors, which supply specific environmental information you can use to control the behavior of your application, and informational selectors, which can’t supply information you can use to determine what hardware or software features are available. You can use one of the selector codes defined by Apple or a selector code defined by a third-party product.
 
 Selectors with the suffix `Attr` return a 32-bit response value in which the individual bits represent specific attributes. The constants listed for these response values represent bit numbers.  
 
-##### Special Considerations
+### Special Considerations
 
 When passed one of the Apple-defined selector codes, the `Gestalt` function does not move or purge memory and therefore may be called even at interrupt time. However, selector functions associated with non-Apple selector codes might move or purge memory, and third-party software can alter the Apple-defined selector functions. Therefore, it is safest always to assume that `Gestalt` could move or purge memory.
 
-##### Version-Notes
+### Version-Notes
 
 The `ROMVersion`  and `machineType` selectors are not supported in Carbon.
 

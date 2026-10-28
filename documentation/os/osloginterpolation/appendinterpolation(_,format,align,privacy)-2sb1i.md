@@ -21,7 +21,7 @@ Appends an interpolated 32-bit integer with the specified alignment.
 mutating func appendInterpolation(_ number: @autoclosure @escaping () -> Int32, format: OSLogIntegerFormatting = .decimal, align: OSLogStringAlignment = .none, privacy: OSLogPrivacy = .auto)
 ```
 
-#### Discussion
+## Discussion
 
 Don’t call this function directly. The system calls it automatically when interpolating values of this type. When specifying the value in your string, you may include any of the indicated parameters to change the default presentation of that value.
 

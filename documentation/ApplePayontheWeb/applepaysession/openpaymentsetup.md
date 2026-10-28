@@ -22,7 +22,7 @@ static Promise <boolean> openPaymentSetup(
 
 - [Apple Pay on the Web Version 2 Release Notes](../apple-pay-on-the-web-version-2-release-notes.md)
 
-#### Discussion
+## Discussion
 
 This method is available starting in iOS 10.1 and macOS 10.12.1. The code in `Listing 1` displays the Set up Apple Pay button if the method is available on a supported device and the user does not have Apple Pay set up yet.
 

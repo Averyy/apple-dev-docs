@@ -25,11 +25,11 @@ func CTFramesetterGetTypesetter(_ framesetter: CTFramesetter) -> CTTypesetter
 extern CTTypesetterRefCTFramesetterGetTypesetter(CTFramesetterRef framesetter);
 ```
 
-#### Return Value
+## Return Value
 
 A reference to a CTTypesetter object if the call was successful; otherwise, `NULL`. The framesetter maintains a reference to the returned object, which should not be released by the caller.
 
-#### Discussion
+## Discussion
 
 Each framesetter uses a typesetter internally to perform line breaking and other contextual analysis based on the characters in a string; this function returns the typesetter being used by a particular framesetter in case the caller would like to perform other operations on that typesetter.
 

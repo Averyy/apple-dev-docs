@@ -5,11 +5,11 @@
 
 Seamlessly schedule updates to your user interface, even while it’s inactive.
 
-#### Overview
+## Overview
 
 When you schedule periodic updates to your user interface with [`TimelineView`](../SwiftUI/timelineview.md), updates continue to run even when your app is in the [`ScenePhase.background`](../SwiftUI/scenephase/background.md) or [`ScenePhase.inactive`](../SwiftUI/scenephase/inactive.md) state, making this an ideal choice for keeping a watchOS app up-to-date while in the Always On state. Additionally, you can use a `TimelineView` to drive other changes — such as animation — when your app is running in the foreground.
 
-##### Set up the timeline
+### Set up the timeline
 
 Specify the part of your user interface that receives periodic updates using a `TimelineView`.
 
@@ -51,7 +51,7 @@ When the updates drop to the `TimelineView.Context.Cadence.seconds` frequency, t
 
 If the frequency drops to `TimelineView.Context.Cadence.minutes`, the app also hides the seconds and only shows the time remaining to the nearest minute.
 
-##### Specify the schedule
+### Specify the schedule
 
 When you create a `TimelineView`, you must specify the update schedule, which is an instance that adopts the [`TimelineSchedule`](../SwiftUI/timelineschedule.md) protocol. While you can create your own custom schedules, SwiftUI provides schedules for many common use cases.
 
@@ -64,7 +64,7 @@ Common schedules include:
 - **[`AnimationTimelineSchedule`](../SwiftUI/animationtimelineschedule.md)**: A schedule to create a `TimelineView` instance with high-frequency updates for animated content. When you create the schedule, you can set both the minimum interval and a Boolean value that indicates whether the animation is currently paused. If you don’t set a minimum interval, the system picks an appropriate update interval. Additionally, it only updates the view when the paused parameter is [`false`](../Swift/false.md).
 - **[`ExplicitTimelineSchedule`](../SwiftUI/explicittimelineschedule.md)**: A schedule to specify a list of update times. For example, an app that plays audiobooks might schedule updates for the beginning of each chapter. When you create an explicit timeline, you pass a [`Sequence`](../Swift/sequence.md), such as an [`Array`](../Swift/array.md) of [`Date`](../Foundation/date.md) instances. The system updates the `TimelineView` at the time specified by each date in the sequence.
 
-##### Update during always on
+### Update during always on
 
 You can use timeline views to update your watchOS app while it’s in the Always On state; however, you must be able to specify the view’s contents given a `Date` instance for a time in the future. To improve performance, the system may ask for views up to 5 minutes in the future. For example, an egg timer could use a `TimelineView` to display the time remaining during Always On because it can calculate the amount of time remaining given any arbitrary time in the future.
 

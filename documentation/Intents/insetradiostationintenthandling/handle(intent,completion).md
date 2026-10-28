@@ -29,7 +29,7 @@ func handle(intent: INSetRadioStationIntent) async -> INSetRadioStationIntentRes
 - (void) handleSetRadioStation:(INSetRadioStationIntent *) intent completion:(void (^)(INSetRadioStationIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Your implementation of this method should change the radio station, which means communicating with the vehicle’s built-in entertainment system. When done, execute the provided block with a response object indicating whether or not the operation was successful.
 

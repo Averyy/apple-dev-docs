@@ -21,7 +21,7 @@ Repeatedly draws an image, scaled to the provided rectangle, to fill the current
 extern void CGContextDrawTiledImage(CGContextRef c, CGRect rect, CGImageRef image);
 ```
 
-#### Discussion
+## Discussion
 
 Core Graphics draws the scaled image starting at the origin of the rectangle in user space, then moves to a new point (horizontally by the width of the tile and/or vertically by the height of the tile), draws the scaled image, moves again, draws again, and so on, until the current clip region is tiled with copies of the image. Unlike patterns, the image is tiled in user space, so transformations applied to the CTM affect the final result.
 

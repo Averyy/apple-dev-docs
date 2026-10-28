@@ -13,7 +13,7 @@
 OSErr GetComponentIndString(Component aComponent, Str255 theString, SInt16 strListID, SInt16 index);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./carbon_core/component_manager.md#1668759).
 

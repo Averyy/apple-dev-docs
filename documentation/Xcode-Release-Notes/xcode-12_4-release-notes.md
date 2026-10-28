@@ -5,17 +5,17 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 ---
 
-#### Overview
+## Overview
 
 Xcode 12.4 includes SDKs for iOS 14.4, iPadOS 14.4, tvOS 14.3, watchOS 7.2, and macOS Big Sur 11.1. The Xcode 12.4 release supports on-device debugging for iOS 9 and later, tvOS 9 and later, and watchOS 2 and later. Xcode 12.4 requires a Mac running macOS 10.15.4 or later.
 
-##### Debugging
+### Debugging
 
-###### Known Issues
+#### Known Issues
 
 - Xcode may hang if the host Mac is connected to an iOS device which has one or more companion watches. The hangs occur when the watches aren’t fully prepared for development, or if they are experiencing poor wireless connectivity. (72490921) (FB8945320)
 
@@ -34,22 +34,22 @@ You can force Xcode to freshly prepare a watch for development using these steps
 
 Once Xcode finishes preparing the iOS device and its companion watches for development, repeat steps 5 through 8 for each remaining iOS device and its companion watches until you verify that Xcode has prepared all devices for development. You may now open your Xcode projects and resume development.
 
-##### Sanitizers
+### Sanitizers
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed a crash that could occur when launching an application with Thread Sanitizer enabled on a Mac with Apple silicon. (72129387, 72262222, 72449940) (FB8933994, FB8938284)
 
-##### Simulator
+### Simulator
 
-###### Resolved Issues
+#### Resolved Issues
 
 - iOS simulated devices no longer display an incorrect yellow tint in translucent UI elements. Certain GPUs may continue to display the tint with some tvOS simulators. (71203015)
 - Fixed an issue that could prevent iOS apps from launching on Macs with Apple silicon. (72360675)
 
-##### Swift Packages
+### Swift Packages
 
-###### Known Issues
+#### Known Issues
 
 - If you use a Swift package with binary dependencies in an app with extensions, the build system incorrectly embeds the binary dependencies alongside the extension in the PlugIns directory, causing validation of the archived app to fail. (69834549) (FB8761306)
 

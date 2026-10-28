@@ -19,7 +19,7 @@ protocol NSAccessibilityList : NSAccessibilityTable
 @protocol NSAccessibilityList <NSAccessibilityTable>
 ```
 
-#### Overview
+## Overview
 
 Use this protocol when you want a user interface element to behave like a list—a view that displays a set of related records in a single-column table—in the accessibility hierarchy.
 

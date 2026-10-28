@@ -24,7 +24,7 @@ func JSStringGetUTF8CString(_ string: JSStringRef!, _ buffer: UnsafeMutablePoint
 size_t JSStringGetUTF8CString(JSStringRef string, char *buffer, size_t bufferSize);
 ```
 
-#### Return Value
+## Return Value
 
 The number of bytes the system writes into `buffer` (including the null-terminator byte).
 

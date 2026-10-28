@@ -23,7 +23,7 @@ func overwriteChannels(_ channels: [UInt8], withScalar scalar: Pixel_8, destinat
 
 Available when `Format` is `vImage.Interleaved8x4`.
 
-#### Discussion
+## Discussion
 
 Use this function to overwrite one or more channels of an interleaved buffer with a scalar value. The following code overwrites channels `1` and `3` with the value `99`:
 

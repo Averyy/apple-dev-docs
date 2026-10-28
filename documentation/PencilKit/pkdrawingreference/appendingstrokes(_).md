@@ -23,7 +23,7 @@ func appendingStrokes(_ strokes: [PKStroke]) -> PKDrawing
 - (PKDrawing *) drawingByAppendingStrokes:(NSArray<PKStroke *> *) strokes;
 ```
 
-#### Return Value
+## Return Value
 
 A new drawing created by appending the provided strokes to the current drawing.
 

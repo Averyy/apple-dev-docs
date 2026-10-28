@@ -25,7 +25,7 @@ let kCVImageBufferCleanApertureWidthKey: CFString
 extern CFStringRef const kCVImageBufferCleanApertureWidthKey;
 ```
 
-#### Discussion
+## Discussion
 
 The clean aperture width value is of type [`CFNumber`](../CoreFoundation/cfnumber.md).
 

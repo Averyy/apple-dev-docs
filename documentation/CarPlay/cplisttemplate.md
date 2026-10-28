@@ -22,7 +22,7 @@ class CPListTemplate
 @interface CPListTemplate : CPTemplate
 ```
 
-#### Overview
+## Overview
 
 Use the list template to display a list of items, grouped into one or more sections. When the user selects an item, CarPlay invokes Siri or a custom handler that you provide, depending on the type of list item. If your list displays hierarchical data, use the handler to add templates to the navigation hierarchy.
 
@@ -38,7 +38,7 @@ Each section contains an array of list items — objects that conform to either 
 
 To display the list, call your interface controller’s [`pushTemplate(_:animated:completion:)`](./cpinterfacecontroller/pushtemplate%28_,animated,completion%29.md) method, passing in the list template to add it to your navigation hierarchy. Alternatively, add the template as a tab in your [`CPTabBarTemplate`](./cptabbartemplate.md).
 
-##### Integrating Siri Into Your Template App
+### Integrating Siri Into Your Template App
 
 For audio and communication apps, CarPlay provides an *assistant cell* to let users interact with your app using Siri_._
 

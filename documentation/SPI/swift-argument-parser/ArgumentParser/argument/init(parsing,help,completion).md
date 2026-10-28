@@ -17,7 +17,7 @@ Creates a property with no default value that reads an array from zero or more a
 init<T>(parsing parsingStrategy: ArgumentArrayParsingStrategy = .remaining, help: ArgumentHelp? = nil, completion: CompletionKind? = nil) where Value == [T], T : ExpressibleByArgument
 ```
 
-#### Discussion
+## Discussion
 
 This method is called to initialize an array `Argument` with no default value such as:
 
@@ -35,11 +35,11 @@ var foo: [String]
 ## See Also
 
 ### Array Arguments
-- [init<T>(parsing: ArgumentArrayParsingStrategy, help: ArgumentHelp?, completion: CompletionKind?, transform: (String) throws -> T)](./init%28parsing,help,completion,transform%29.md)
+- [init<T>(parsing: ArgumentArrayParsingStrategy, help: ArgumentHelp?, completion: CompletionKind?, transform: @Sendable (String) throws -> T)](./init%28parsing,help,completion,transform%29.md)
   Creates a property with no default value that reads an array from zero or more arguments, parsing each element with the given closure.
 - [init<T>(wrappedValue: [T], parsing: ArgumentArrayParsingStrategy, help: ArgumentHelp?, completion: CompletionKind?)](./init%28wrappedvalue,parsing,help,completion%29.md)
   Creates a property that reads an array from zero or more arguments.
-- [init<T>(wrappedValue: [T], parsing: ArgumentArrayParsingStrategy, help: ArgumentHelp?, completion: CompletionKind?, transform: (String) throws -> T)](./init%28wrappedvalue,parsing,help,completion,transform%29.md)
+- [init<T>(wrappedValue: [T], parsing: ArgumentArrayParsingStrategy, help: ArgumentHelp?, completion: CompletionKind?, transform: @Sendable (String) throws -> T)](./init%28wrappedvalue,parsing,help,completion,transform%29.md)
   Creates a property that reads an array from zero or more arguments, parsing each element with the given closure.
 - [struct ArgumentArrayParsingStrategy](../argumentarrayparsingstrategy.md)
   The strategy to use when parsing multiple values from positional arguments into an array.

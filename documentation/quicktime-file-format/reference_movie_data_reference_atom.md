@@ -6,7 +6,7 @@
 
 An atom that contains the information necessary to locate a movie, stream or file.
 
-#### Overview
+## Overview
 
 The information to locate a movie, stream, or file is typically in the form of a URL or a file alias. Only one data reference atom is allowed in a given movie reference descriptor atom.
 

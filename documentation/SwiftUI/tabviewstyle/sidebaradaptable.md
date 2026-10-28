@@ -23,7 +23,7 @@ A tab bar style that adapts to each platform.
 
 Available when `Self` is `SidebarAdaptableTabViewStyle`.
 
-#### Discussion
+## Discussion
 
 Tab views using the sidebar adaptable style have an appearance that varies depending on the platform:
 

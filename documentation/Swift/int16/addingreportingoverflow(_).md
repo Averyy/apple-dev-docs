@@ -21,7 +21,7 @@ Returns the sum of this value and the given value, along with a Boolean value in
 func addingReportingOverflow(_ other: Int16) -> (partialValue: Int16, overflow: Bool)
 ```
 
-#### Return Value
+## Return Value
 
 A tuple containing the result of the addition along with a Boolean value indicating whether overflow occurred. If the `overflow` component is `false`, the `partialValue` component contains the entire sum. If the `overflow` component is `true`, an overflow occurred and the `partialValue` component contains the truncated sum of this value and `rhs`.
 

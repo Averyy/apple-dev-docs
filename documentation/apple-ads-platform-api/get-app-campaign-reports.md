@@ -9,7 +9,7 @@ Retrieve performance metrics for campaigns.
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 Campaign reports return one row per campaign. Each row contains a `metadata` object with campaign identifiers, `totalMetrics` aggregated over the full date range, and a `granularMetrics` array broken down by the selected `granularity`.
 
@@ -17,11 +17,11 @@ The `campaignId` filter is optional for campaign reports. Use `filters` to scope
 
 See [`Filter`](./filter.md) for the full set of supported comparison operators.
 
-#### Request Body
+## Request Body
 
 See [`AppsReportingRequest`](./appsreportingrequest.md).
 
-##### groupBy Dimensions
+### groupBy Dimensions
 
 `deviceClass`, `ageRange`, `gender`, `countryCode`, `adminArea`, `locality`, `countryOrRegion`
 
@@ -43,11 +43,11 @@ Selecting a timezone of `ORTZ` or `UTC` and using the `fields` array to request 
 | Timezone | Use `ORTZ` (reporting timezone) or `UTC`. |
 | Fields selection | Use the `fields` array to request only specific metric columns. |
 
-#### Payload Examples
+## Payload Examples
 
 Retrieve daily campaign metrics for a specific app campaign, grouped by country. The `granularMetrics` array returns one entry per day per country combination.
 
-##### Request
+### Request
 
 Filters by a single `campaignId` and groups results by `countryOrRegion`, using daily granularity over a 31-day window in the account’s reporting timezone.
 
@@ -78,7 +78,7 @@ POST /v1/reports/apps/campaigns/query
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {

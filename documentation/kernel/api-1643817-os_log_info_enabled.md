@@ -15,7 +15,7 @@ Returns a Boolean value indicating whether info-level logging is enabled for a s
 bool os_log_info_enabled(os_log_t log);
 ```
 
-#### Return Value
+## Return Value
 
 [`YES`](../ObjectiveC/yes.md) if info-level logging is enabled, otherwise [`NO`](../ObjectiveC/no.md).
 

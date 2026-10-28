@@ -19,7 +19,7 @@ optional func nextChannelInterstitialViewController(for playerViewController: AV
 - (UIViewController *) nextChannelInterstitialViewControllerForPlayerViewController:(AVPlayerViewController *) playerViewController;
 ```
 
-#### Discussion
+## Discussion
 
 The framework calls this method when the user initiates, but hasn’t yet committed, a change in channel. The framework may calls this method while a previous channel interstice is visible (on screen, or transitioning).
 

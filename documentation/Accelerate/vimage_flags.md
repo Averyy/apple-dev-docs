@@ -25,7 +25,7 @@ typealias vImage_Flags = UInt32
 typedef uint32_t vImage_Flags;
 ```
 
-#### Discussion
+## Discussion
 
 [Processing Flags](./api-1578976-processing-flags.md) describes the constants that use this type.
 

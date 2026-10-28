@@ -25,7 +25,7 @@ func enqueue()
 - (void) enqueue;
 ```
 
-#### Discussion
+## Discussion
 
 The [`enqueue()`](./enqueue%28%29.md) method adds the command buffer to the [`MTLCommandQueue`](../mtlcommandqueue.md) instance that owns it, but doesn’t commit the command buffer to run on the GPU. You can call the command buffer’s [`commit()`](./commit%28%29.md) method at a later time when it’s ready to run on the GPU. You can call a command buffer’s [`enqueue()`](./enqueue%28%29.md) method any time before you call [`commit()`](./commit%28%29.md), including before, after, or as you encode commands to it.
 

@@ -15,7 +15,7 @@ A key that defines a URL that AdAttributionKit uses to deliver copies of ad attr
 - **Name**: `AttributionCopyEndpoint` (AdAttributionKit - Postback Copy URL)
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 Use this key to specify a URL to receive copies of postbacks. For more information, see [Configuring an advertised app](../../AdAttributionKit/configuring-an-advertised-app.md).
 

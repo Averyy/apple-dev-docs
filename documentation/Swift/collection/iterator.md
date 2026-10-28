@@ -22,7 +22,7 @@ A type that provides the collection’s iteration interface and encapsulates its
 associatedtype Iterator = IndexingIterator<Self>
 ```
 
-#### Discussion
+## Discussion
 
 By default, a collection conforms to the `Sequence` protocol by supplying `IndexingIterator` as its associated `Iterator` type.
 

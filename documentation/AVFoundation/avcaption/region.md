@@ -22,7 +22,7 @@ var region: AVCaptionRegion? { get }
 @property (nonatomic, readonly, nullable) AVCaptionRegion * region;
 ```
 
-#### Discussion
+## Discussion
 
 This property is `nil` when the underlying caption format doesn’t support or use regions.
 

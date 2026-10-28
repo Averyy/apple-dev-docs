@@ -24,7 +24,7 @@ case mixerFaderCurve1
 kAudioUnitParameterUnit_MixerFaderCurve1
 ```
 
-#### Discussion
+## Discussion
 
 Recommended range is from 0.0 through 1.0. Use `pow (x, 3.0)` to simulate a reasonable linear mixer channel fader response.
 

@@ -26,11 +26,11 @@ object ManifestURL
 - [Installing, managing, updating, and removing apps](./installing-managing-updating-and-removing-apps.md)
 - [Installing packages](./installing-packages.md)
 
-#### Discussion
+## Discussion
 
 Use SHA-256 hashes instead of MD5 because SHA-256 has stronger security. If both SHA-256 and MD5 hash properties are present, the device uses only the SHA-256 hashes to verify the manifest data.
 
-##### Example manifest
+### Example manifest
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>

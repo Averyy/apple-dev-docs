@@ -24,7 +24,7 @@ convenience init(keyPath path: String?)
 + (instancetype) animationWithKeyPath:(NSString *) path;
 ```
 
-#### Return Value
+## Return Value
 
 A new instance of `CAPropertyAnimation` with the key path set to `keyPath`.
 

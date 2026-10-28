@@ -19,7 +19,7 @@ Creates a plain-style item using the specified image and context menu.
 - (instancetype) initWithImage:(UIImage *) image menu:(UIMenu *) menu;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized [`UIBarButtonItem`](../uibarbuttonitem.md).
 

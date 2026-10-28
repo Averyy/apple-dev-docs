@@ -15,7 +15,7 @@ Get a list of installed certificates on a device.
 - visionOS 1.1+
 - watchOS 10.0+
 
-#### Discussion
+## Discussion
 
 This command allows the server to retrieve the list of installed certificates on the device. The command requires that the server has the Inspect Profile Manifest privilege. For user enrollment, this request returns only certificates pushed by MDM.
 
@@ -25,7 +25,7 @@ Starting with iOS 15.4, this command returns a Not Now response before the passc
 
 Refer to the following sections to determine supported channels and requirements, and to see an example request and response.
 
-##### Command availability
+### Command availability
 
 |  |  |
 | --- | --- |
@@ -35,7 +35,7 @@ Refer to the following sections to determine supported channels and requirements
 | Allowed in user enrollment | iOS, macOS, visionOS |
 | Required access right | AllowInspection |
 
-##### Example request and response
+### Example request and response
 
 **Request**:
 

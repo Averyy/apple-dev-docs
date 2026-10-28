@@ -11,7 +11,7 @@ Drops and frees all packets currently held by the queue.
 virtual UInt32 flush() = 0;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the number of packets that were dropped and freed.
 

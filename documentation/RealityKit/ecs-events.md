@@ -5,7 +5,7 @@
 
 Respond to things happening in your RealityKit scene by subscribing to specific event types.
 
-#### Overview
+## Overview
 
 You can receive notifications to specific RealityKit events — all of which conform to the Event protocol — by subscribing to specific events. The kinds of events you can subscribe to include the following:
 

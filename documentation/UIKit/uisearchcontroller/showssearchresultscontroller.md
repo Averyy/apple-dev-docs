@@ -22,7 +22,7 @@ var showsSearchResultsController: Bool { get set }
 @property (nonatomic) BOOL showsSearchResultsController;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to directly control the visibility of the search results controller. If you set this property, [`automaticallyShowsSearchResultsController`](./automaticallyshowssearchresultscontroller.md) becomes [`false`](../../Swift/false.md).
 

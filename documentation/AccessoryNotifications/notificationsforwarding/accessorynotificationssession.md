@@ -15,7 +15,7 @@ A protocol that enables bidirectional communication between your extension and t
 protocol AccessoryNotificationsSession : Sendable
 ```
 
-#### Overview
+## Overview
 
 Use the session object provided to [`didActivate(for:)`](./accessorynotificationshandler/didactivate%28for%29.md) to send messages to your accessory and communicate notification responses back to the system.
 

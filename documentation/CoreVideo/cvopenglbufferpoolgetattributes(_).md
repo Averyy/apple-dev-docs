@@ -21,7 +21,7 @@ func CVOpenGLBufferPoolGetAttributes(_ pool: CVOpenGLBufferPool) -> Unmanaged<CF
 extern CFDictionaryRefCVOpenGLBufferPoolGetAttributes(CVOpenGLBufferPoolRef pool);
 ```
 
-#### Return Value
+## Return Value
 
 The buffer-pool attributes Core Foundation dictionary, or `NULL` on failure.
 

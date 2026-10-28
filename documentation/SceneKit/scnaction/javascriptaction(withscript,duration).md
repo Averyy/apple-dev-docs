@@ -25,11 +25,11 @@ class func javaScriptAction(withScript script: String, duration seconds: TimeInt
 + (SCNAction *) javaScriptActionWithScript:(NSString *) script duration:(NSTimeInterval) seconds;
 ```
 
-#### Return Value
+## Return Value
 
 A new action object.
 
-#### Discussion
+## Discussion
 
 SceneKit exposes its classes, methods, and functions in the JavaScript context that runs the script—see the `SCNJavaScript.h` header file for details.
 

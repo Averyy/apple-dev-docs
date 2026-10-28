@@ -13,7 +13,7 @@ virtual void setVlanTag(
  UInt32vlanTag);
 ```
 
-#### Overview
+## Overview
 
 A network controller that can strip 802.1Q vlan tag information for a received packet should call this method to encode the result on the packet, before passing it up towards the protocol stacks.
 

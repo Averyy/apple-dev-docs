@@ -19,7 +19,7 @@
 static void SPRect3DFloatGetCornerPoints(SPRect3DFloat rect, SPPoint3DFloat points[]);
 ```
 
-#### Discussion
+## Discussion
 
 Returns the corner points of the specified rectangle.
 

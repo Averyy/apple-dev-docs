@@ -21,7 +21,7 @@ The alternate quotation end delimiter of the locale.
 var alternateQuotationEndDelimiter: String? { get }
 ```
 
-#### Discussion
+## Discussion
 
 For example, returns `’` for “en_US”, and `』` for “zh-Hant-HK”.
 

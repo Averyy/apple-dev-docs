@@ -20,11 +20,11 @@ func transform(_ aSize: NSSize) -> NSSize
 - (NSSize) transformSize:(NSSize) aSize;
 ```
 
-#### Return Value
+## Return Value
 
 The resulting size after applying the receiver’s transformations.
 
-#### Discussion
+## Discussion
 
 This method applies the current rotation and scaling factors to `aSize`; it does not apply translation factors. You can think of this method as transforming a vector whose origin is (0, 0) and whose end point is specified by the value in `aSize`. After the rotation and scaling factors are applied, this method effectively returns the end point of the new vector.
 

@@ -20,7 +20,7 @@ Starts playback of the next entry in the playback queue.
 func skipToNextEntry() async throws
 ```
 
-#### Discussion
+## Discussion
 
 If the music player isn’t playing, this method designates the next entry as the next to play.
 

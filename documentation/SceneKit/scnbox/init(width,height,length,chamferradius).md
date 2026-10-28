@@ -25,11 +25,11 @@ convenience init(width: CGFloat, height: CGFloat, length: CGFloat, chamferRadius
 + (instancetype) boxWithWidth:(CGFloat) width height:(CGFloat) height length:(CGFloat) length chamferRadius:(CGFloat) chamferRadius;
 ```
 
-#### Return Value
+## Return Value
 
 A new box geometry.
 
-#### Discussion
+## Discussion
 
 The box is centered in its local coordinate system. For example, if you create a box whose width, height and length are all `10.0`, it extends from `-5.0` to `5.0` along in each of the x-, y-, and z-axes.
 

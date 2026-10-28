@@ -21,7 +21,7 @@ var parameters: [AnyHashable : Any] { get }
 @property (nonatomic, copy, readonly) NSDictionary * parameters;
 ```
 
-#### Discussion
+## Discussion
 
 Use this dictionary to specify any behavior-specific data for the action. For example, the [`UIUserNotificationActionBehavior.textInput`](../uiusernotificationactionbehavior/textinput.md) behavior supports the [`UIUserNotificationTextInputActionButtonTitleKey`](../uiusernotificationtextinputactionbuttontitlekey.md) key, which lets you customize the title of the button displayed by the text input interface.
 

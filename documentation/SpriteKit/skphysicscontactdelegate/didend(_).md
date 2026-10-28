@@ -25,7 +25,7 @@ optional func didEnd(_ contact: SKPhysicsContact)
 - (void) didEndContact:(SKPhysicsContact *) contact;
 ```
 
-#### Discussion
+## Discussion
 
 The two physics bodies described in the contact parameter are not passed in a guaranteed order. The following code shows how you might respond to the end of a contact event to execute code if either physics body is owned by a node with the name `ground`.
 

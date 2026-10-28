@@ -23,7 +23,7 @@ protocol INUIHostedViewControlling : NSObjectProtocol
 @protocol INUIHostedViewControlling <NSObject>
 ```
 
-#### Overview
+## Overview
 
 The [`INUIHostedViewControlling`](./inuihostedviewcontrolling.md) protocol defines methods for presenting a custom interface from Siri or Maps. You adopt this protocol in a view controller, which you then deliver in an Intents UI app extension as part of your iOS app. When displaying information to the user, Siri and Maps incorporate your view controller’s content into the default interface. In iOS 11 and later, SiriKit gives you the option to replace some or all of the default interface.
 
@@ -33,7 +33,7 @@ Each Intents UI app extension must contain only one view controller, but that vi
 
 For more information on how to create an Intents UI extension, see [Creating an Intents UI Extension](../SiriKit/creating-an-intents-ui-extension.md).
 
-##### Replace Some or All of the Default Interface
+### Replace Some or All of the Default Interface
 
 Prior to displaying an interface, SiriKit determines which pieces of data that it wants to display from the intent and your response and packages them into [`INParameter`](../Intents/inparameter.md) objects. For each parameter (or grouped set of parameters), SiriKit creates an instance of your view controller and calls its [`configureView(for:of:interactiveBehavior:context:completion:)`](./inuihostedviewcontrolling/configureview%28for,of,interactivebehavior,context,completion%29.md) method. Use that method to configure the custom interface that you want displayed by Siri and Maps. If you don’t provide a custom view, SiriKit displays a default view.
 
@@ -41,7 +41,7 @@ Prior to displaying an interface, SiriKit determines which pieces of data that i
 
 Each view controller object may display parameters other than the ones that SiriKit provided. For example, if SiriKit asks you to display the pickup date for a ride, you could display the pickup date, drop-off date, and the pickup location in your custom view. When executing the handler block of the [`configureView(for:of:interactiveBehavior:context:completion:)`](./inuihostedviewcontrolling/configureview%28for,of,interactivebehavior,context,completion%29.md) method, return [`INParameter`](../Intents/inparameter.md) objects for all of the parameters that you displayed. SiriKit doesn’t ask you to configure the same parameter twice.
 
-##### Augment the Default Interface with a Single View
+### Augment the Default Interface with a Single View
 
 If you want to keep the default Siri or Maps interface and augment it with a custom view, implement the [`configure(with:context:completion:)`](./inuihostedviewcontrolling/configure%28with,context,completion%29.md) method. When you implement only that method, SiriKit doesn’t replace any of the default interfaces. Instead, it inserts your view controller’s view into the default interface. You might augment the default interface when you want to take a more minimal approach to your customizations. For example, you might use it solely to add branding information to the default interface.
 

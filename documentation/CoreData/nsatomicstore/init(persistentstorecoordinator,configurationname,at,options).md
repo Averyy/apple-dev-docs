@@ -25,7 +25,7 @@ init(persistentStoreCoordinator coordinator: NSPersistentStoreCoordinator?, conf
 - (instancetype) initWithPersistentStoreCoordinator:(NSPersistentStoreCoordinator *) coordinator configurationName:(NSString *) configurationName URL:(NSURL *) url options:(NSDictionary *) options;
 ```
 
-#### Discussion
+## Discussion
 
 Typically, you don’t invoke this method yourself; instead, the persistent store coordinator invokes the method when it creates a new store or adds an existing one.
 

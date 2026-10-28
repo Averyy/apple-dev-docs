@@ -24,7 +24,7 @@ var outerGain: Double { get set }
 @property (nonatomic) double outerGain;
 ```
 
-#### Discussion
+## Discussion
 
 The framework clamps the value of this property to the range `[0,` `1]`, where `0` silences loudness and `1` doesn’t modify loudness.
 

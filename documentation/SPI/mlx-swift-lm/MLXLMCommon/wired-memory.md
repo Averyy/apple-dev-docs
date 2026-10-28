@@ -10,13 +10,13 @@ framework: "mlx-swift-lm/MLXLMCommon"
 
 MLXLMCommon exposes wired memory policies and tickets to help coordinate a single process-wide wired memory limit during inference. Policies decide whether work should be admitted and what wired limit is needed; tickets represent active or reserved memory usage and are registered with the `WiredMemoryManager`.
 
-#### Overview
+## Overview
 
 For a full system overview (manager, policies, tickets, hysteresis, and usage patterns), see the MLX wired memory article in the upstream `mlx-swift` repository: [https://github.com/ml-explore/mlx-swift/blob/main/Source/MLX/Documentation.docc/Articles/wired-memory.md](https://github.com/ml-explore/mlx-swift/blob/main/Source/MLX/Documentation.docc/Articles/wired-memory.md)
 
 This article focuses on **estimating model weight bytes** so you can create a **weight reservation (ticket)** that reflects the actual cost of keeping weights resident.
 
-#### Measuring weight bytes at runtime
+## Measuring weight bytes at runtime
 
 If you can afford to load the model, the most accurate approach is to sum `nbytes` across all parameter arrays. Loading a model already materializes weights, so you get a reliable number without running any extra inference.
 
@@ -30,7 +30,7 @@ let weightBytes = context.model
 
 You can optionally sanity check with `Memory.snapshot()` before/after load. In practice, the difference between the sum of `nbytes` and MLX active memory has been very small in our tests.
 
-#### Avoiding load: estimate from tensor files
+## Avoiding load: estimate from tensor files
 
 If you want a **no-load estimate**, sum the tensor file sizes on disk (for example, all `.safetensors` shards in the model directory). This is fast and avoids allocating the model, but it includes file metadata and may slightly exceed the in-memory representation.
 
@@ -40,13 +40,13 @@ let sizes = fileSizes(in: modelURL, tensorExtensions: tensorExtensions)
 let estimatedBytes = sizes.tensorTotalBytes
 ```
 
-##### What affects the difference?
+### What affects the difference?
 
 - **File metadata/headers**: safetensors includes a JSON header; shard totals usually exceed `nbytes` by a small amount.
 - **Allocator alignment/overhead**: MLX active memory may be a tiny bit larger than the logical `nbytes` sum.
 - **Format differences**: compressed or container formats can cause larger gaps between on-disk size and in-memory representation.
 
-#### Observed deltas (local measurements)
+## Observed deltas (local measurements)
 
 These measurements were taken on two local models using the runtime `nbytes` sum, tensor file sizes, and MLX `Memory.snapshot()` right after load (no inference):
 
@@ -57,7 +57,7 @@ These measurements were taken on two local models using the runtime `nbytes` sum
 
 These examples suggest that **`nbytes` is a reliable basis** for a reservation ticket when you can load the model, and file-size estimates are a close approximation when you cannot.
 
-#### Diagnostic utilities
+## Diagnostic utilities
 
 MLXLMCommon includes lightweight helpers to measure real memory usage so you can model tickets based on observed behavior rather than only static estimates. The utilities are policy-agnostic; use the measurements to size tickets or validate a policy’s budget assumptions.
 
@@ -69,7 +69,7 @@ Use `WiredMemoryUtils.tune(...)` to capture:
 
 The returned `WiredMemoryMeasurement` can be used to build a budget policy or to validate manual calculations. For multimodal models, prefer the overload that accepts a prepared `LMInput` or a `UserInput` so the measurement includes image or video tensors.
 
-#### Practical guidance for tickets
+## Practical guidance for tickets
 
 - If you **can load**: compute `nbytes` once at load time and reuse it for the model’s lifetime.
 - If you **cannot load**: sum tensor file sizes as a proxy.
@@ -77,7 +77,7 @@ The returned `WiredMemoryMeasurement` can be used to build a budget policy or to
 
 For inference workloads, keep **weights**, **KV cache**, and **activation** budgets separate so policies can scale the wired limit based on what is actually active.
 
-#### Policy-only budgeting on CPU
+## Policy-only budgeting on CPU
 
 If wired memory control is unavailable (CPU-only execution), you can still use policies for admission gating and budgeting by enabling policy-only mode on the manager. This keeps ticket tracking and limit math active without attempting to change the wired limit. Policy-only mode defaults to `true` on unsupported backends.
 
@@ -89,11 +89,11 @@ await WiredMemoryManager.shared.updateConfiguration { configuration in
 
 You can also provide `baselineOverride` (a fixed budget), or rely on `GPU.maxRecommendedWorkingSetBytes()` when running on Apple Silicon with unified memory.
 
-#### Estimating KV cache and attention workspace
+## Estimating KV cache and attention workspace
 
 Inference tickets are typically driven by **KV cache** (persistent) plus **prefill workspace** (transient). Dense models are straightforward; MoE and hybrid models (like Qwen3-Next with full-attention + linear/SSM layers) need a layer-by-layer sum using config values.
 
-##### Dense full-attention KV cache
+### Dense full-attention KV cache
 
 For standard attention layers:
 
@@ -106,7 +106,7 @@ total KV bytes = layer bytes * numAttentionLayers
 
 Where `bytesPerElement` is 2 for FP16/BF16, 1 for INT8, and 0.5 for INT4.
 
-##### Hybrid / MoE models with SSM (example: Qwen3-Next)
+### Hybrid / MoE models with SSM (example: Qwen3-Next)
 
 Qwen3-Next alternates full-attention layers with linear/SSM layers. Use the same KV math above for **full-attention layers**, then add the SSM cache sizes for the linear layers.
 
@@ -124,7 +124,7 @@ total linear bytes = linear layer bytes * numLinearLayers
 
 This yields a small but non-zero persistent cache budget for the linear/SSM layers.
 
-##### Prefill attention workspace (transient)
+### Prefill attention workspace (transient)
 
 Prefill can allocate large temporary buffers proportional to the **prefill chunk size** `L`. A simple upper bound for a single attention layer in FP16/BF16 is:
 
@@ -138,7 +138,7 @@ Output = B * H * L * D
 
 Multiply each by `bytesPerElement`, then sum to estimate peak transient workspace. If the model uses an additional gating tensor, include it as `B * L * (H * D)`.
 
-##### Practical guidance
+### Practical guidance
 
 In MLXLMCommon, most callers will **create a single ticket** and run `generate()` inside the ticket scope. In that case, budget the ticket for the **peak** expected usage (weights + KV cache + prefill workspace). If you already created a **separate reservation ticket** for weights, then the inference ticket should cover **KV cache + prefill workspace** only.
 

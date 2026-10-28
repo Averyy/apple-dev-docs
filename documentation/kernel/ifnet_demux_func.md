@@ -13,11 +13,11 @@
 typedef errno_t (*ifnet_demux_func)(ifnet_t interface, mbuf_t packet, char *frame_header, protocol_family_t *protocol_family);
 ```
 
-#### Return Value
+## Return Value
 
 If the result is zero, processing will continue normally. If the result is EJUSTRETURN, processing will stop but the packet will not be freed. If the result is anything else, the processing will stop and the packet will be freed.
 
-#### Discussion
+## Discussion
 
 ifnet_demux_func is called for each inbound packet to determine which protocol family the packet belongs to. This information is then used by the stack to determine which protocol to pass the packet to. This function may return protocol families for protocols that are not attached. If the protocol family has not been attached to the interface, the packet will be discarded.
 

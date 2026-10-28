@@ -21,11 +21,11 @@ An effect that replaces a symbol by scaling it down, and scaling a different sym
 + (instancetype) replaceDownUpTransition;
 ```
 
-#### Return Value
+## Return Value
 
 A new instance of the transition that uses the Down-Up animation.
 
-#### Discussion
+## Discussion
 
 The initial symbol scales down as it’s removed, and the new symbol scales up as it’s added.
 

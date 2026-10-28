@@ -17,7 +17,7 @@ Encodes an old-style object onto the coder.
 - (void) encodeNXObject:(id) object;
 ```
 
-#### Discussion
+## Discussion
 
 No sharing is done across separate [`encodeNXObject:`](./encodenxobject_.md) invocations. Callers must have implemented an [`encode(with:)`](../nscoding/encode%28with%29.md), which parallels the `write:` methods, on all of their classes that may be touched by this operation.
 

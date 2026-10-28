@@ -24,7 +24,7 @@ typealias JSObjectGetPropertyNamesCallback = (JSContextRef?, JSObjectRef?, JSPro
 typedef void (*)(const struct OpaqueJSContext *, struct OpaqueJSValue *, struct OpaqueJSPropertyNameAccumulator *) JSObjectGetPropertyNamesCallback;
 ```
 
-#### Discussion
+## Discussion
 
 If you name your function `GetPropertyNames`, you declare it like this:
 

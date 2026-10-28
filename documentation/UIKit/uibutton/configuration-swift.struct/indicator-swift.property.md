@@ -19,7 +19,7 @@ The style of the indicator that appears on the button.
 var indicator: UIButton.Configuration.Indicator { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to control the style of the indicator that appears on the trailing edge of the button. For example, the following code disables the indicator by setting this style to [`UIButton.Configuration.Indicator.none`](./indicator-swift.enum/none.md).
 

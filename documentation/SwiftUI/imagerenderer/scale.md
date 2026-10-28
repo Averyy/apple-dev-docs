@@ -22,7 +22,7 @@ The scale at which to render the image.
 final var scale: CGFloat { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This value is a ratio of view points to image pixels. This relationship means that values greater than `1.0` create an image larger than the original content view, and less than `1.0` creates a smaller image. The following example shows a 100 x 50 rectangle view and an image rendered from it with a `scale` of `2.0`, resulting in an image size of 200 x 100.
 

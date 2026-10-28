@@ -19,7 +19,7 @@ func selectedIdentifiers(for person: ABPerson!) -> [Any]!
 - (NSArray *) selectedIdentifiersForPerson:(ABPerson *) person;
 ```
 
-#### Discussion
+## Discussion
 
 Returns `nil` if the property displayed is a single-value property, or if the selected value is not a property of `person`.
 

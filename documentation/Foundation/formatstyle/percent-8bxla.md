@@ -23,7 +23,7 @@ static var percent: IntegerFormatStyle<UInt64>.Percent { get }
 
 Available when `Self` is `IntegerFormatStyle<UInt64>.Percent`.
 
-#### Discussion
+## Discussion
 
 Use this type property when the call point allows the use of [`IntegerFormatStyle`](../integerformatstyle.md). You typically do this when calling the `formatted` methods of types that conform to [`BinaryInteger`](../../Swift/binaryinteger.md).
 

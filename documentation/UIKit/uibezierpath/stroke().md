@@ -24,7 +24,7 @@ func stroke()
 - (void) stroke;
 ```
 
-#### Discussion
+## Discussion
 
 The drawn line is centered on the path with its sides parallel to the path segment. This method applies the current drawing properties to the rendered path.
 

@@ -21,7 +21,7 @@ The first day of the week for the calendar.
 var firstWeekday: Int { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The default value of [`firstWeekday`](./firstweekday.md) varies by calendar and locale. Your app can reset this value.
 

@@ -17,7 +17,7 @@ Provides information about the error that invalidated the reader session.
 - (void) readerSession:(NFCReaderSession *) session didInvalidateWithError:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called when the reader session becomes invalid, at which time the client should discard the returned reader session object.
 

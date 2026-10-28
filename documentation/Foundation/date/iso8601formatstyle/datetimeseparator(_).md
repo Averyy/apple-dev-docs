@@ -21,11 +21,11 @@ Sets the character that specifies the date and time components.
 func dateTimeSeparator(_ separator: Date.ISO8601FormatStyle.DateTimeSeparator) -> Date.ISO8601FormatStyle
 ```
 
-#### Return Value
+## Return Value
 
 An ISO 8601 date format style with the provided date and time component separator.
 
-#### Discussion
+## Discussion
 
 Possible values of [`Date.ISO8601FormatStyle.DateTimeSeparator`](./datetimeseparator-swift.enum.md) are [`Date.ISO8601FormatStyle.DateTimeSeparator.space`](./datetimeseparator-swift.enum/space.md) and [`Date.ISO8601FormatStyle.DateTimeSeparator.standard`](./datetimeseparator-swift.enum/standard.md).
 

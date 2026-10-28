@@ -24,7 +24,7 @@ init<S1, S2, S3>(x: S1, y: S2, t: S3, domain: ClosedRange<Double>, function: @es
 
 Available when `Content` is `FunctionLinePlotContent`.
 
-#### Discussion
+## Discussion
 
 Parameters:
 

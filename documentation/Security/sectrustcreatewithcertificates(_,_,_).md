@@ -30,11 +30,11 @@ OSStatus SecTrustCreateWithCertificates(CFTypeRef certificates, CFTypeRef polici
 - [Configuring a Trust](./configuring-a-trust.md)
 - [Creating a Trust Object](./creating-a-trust-object.md)
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 The trust management object includes a reference to the certificate to be verified, plus pointers to the policies to be evaluated for those certificates. You can optionally include references to other certificates, including anchor certificates, that you think might be in the certificate chain needed to verify the first (leaf) certificate. Any input certificates that turn out to be irrelevant are harmlessly ignored. Call the [`SecTrustEvaluateWithError(_:_:)`](./sectrustevaluatewitherror%28_,_%29.md) function to evaluate the trust management object.
 

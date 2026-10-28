@@ -16,11 +16,11 @@ static IOReturn completePowerStateChangeAction(
  void *arg4);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the result of protectedCompletePowerStateChange()
 
-#### Overview
+## Overview
 
 This is needed to allow protectedCompletePowerStateChange() to be called on the IOWorkLoop.
 

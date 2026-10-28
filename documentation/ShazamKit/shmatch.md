@@ -25,7 +25,7 @@ class SHMatch
 @interface SHMatch : NSObject
 ```
 
-#### Overview
+## Overview
 
 A single query signature may match more than one reference signature. In addition, one reference signature may map to many media items.
 

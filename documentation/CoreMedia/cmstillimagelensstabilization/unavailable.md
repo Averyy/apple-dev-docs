@@ -21,7 +21,7 @@ The lens stabilization module was unavailable for use.
 case unavailable
 ```
 
-#### Discussion
+## Discussion
 
 The value of kCMSampleBufferAttachmentKey_StillImageLensStabilizationInfo if the lens stabilization module is unavailable to compensate for the motion of the device. The module may be available at a later time.
 

@@ -20,7 +20,7 @@ optional func coachingOverlayViewDidRequestSessionReset(_ coachingOverlayView: A
 - (void) coachingOverlayViewDidRequestSessionReset:(ARCoachingOverlayView *) coachingOverlayView;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this function to do the actions your app requires to restart the AR experience. For example, you might hide custom relocalization UI, deallocate resources, or restore virtual content to a starting location.
 

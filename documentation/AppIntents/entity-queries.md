@@ -5,7 +5,7 @@
 
 Implement one or more query types to help the system find your app’s entities.
 
-#### Overview
+## Overview
 
 When the system needs to retrieve one or more specific instances of an app entity, it asks you to provide a relevant query type. The system uses queries during parameter resolution when the parameter of an intent contains an entity. The system also uses them to resolve information in a different format into one of your app’s entities. For example, it uses them to resolve natural spoken language into one of your app’s entities.
 

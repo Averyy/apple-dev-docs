@@ -29,7 +29,7 @@ optional func urlSession(_ session: URLSession, downloadTask: URLSessionDownload
 
 - [Pausing and resuming downloads](../pausing-and-resuming-downloads.md)
 
-#### Discussion
+## Discussion
 
 If a resumable download task is canceled or fails, you can request a `resumeData` object that provides enough information to restart the download in the future. Later, you can call [`downloadTask(withResumeData:)`](../urlsession/downloadtask%28withresumedata%29.md) or [`downloadTask(withResumeData:completionHandler:)`](../urlsession/downloadtask%28withresumedata,completionhandler%29.md) with that data.
 

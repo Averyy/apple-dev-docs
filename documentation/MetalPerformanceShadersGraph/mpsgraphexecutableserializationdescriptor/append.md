@@ -24,7 +24,7 @@ var append: Bool { get set }
 @property (atomic, readwrite) BOOL append;
 ```
 
-#### Discussion
+## Discussion
 
 If false, the exisiting .mpsgraphpackage will be overwritten.
 

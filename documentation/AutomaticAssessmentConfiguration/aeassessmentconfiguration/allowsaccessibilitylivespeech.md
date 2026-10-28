@@ -20,7 +20,7 @@ var allowsAccessibilityLiveSpeech: Bool { get set }
 @property (nonatomic, assign) BOOL allowsAccessibilityLiveSpeech;
 ```
 
-#### Discussion
+## Discussion
 
 Users can enable Live Speech in the Settings app (Accessibility > Speech > Live Speech) to type what they want to say and have it spoken aloud. An assessment session disables Live Speech by default, but you can allow it by setting [`allowsAccessibilityLiveSpeech`](./allowsaccessibilitylivespeech.md) to `true` in the [`AEAssessmentConfiguration`](../aeassessmentconfiguration.md) instance that you use to initialize a session.
 

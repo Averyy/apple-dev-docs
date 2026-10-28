@@ -15,7 +15,7 @@ A unique identifier for equipment.
 struct EquipmentIdentifier
 ```
 
-#### Overview
+## Overview
 
 The equipment identifier needs to be unique across all instances of the same tabletop game.
 

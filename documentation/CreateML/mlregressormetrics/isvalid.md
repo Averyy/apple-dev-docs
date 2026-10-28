@@ -20,7 +20,7 @@ A Boolean value indicating whether the regressor model was able to calculate met
 var isValid: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 Your metrics may be invalid if you attempt to perform evaluation on data that doesn’t match the structure of your training examples.
 

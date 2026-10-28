@@ -17,11 +17,11 @@ Export a function to a `.mlxfn` file.
 func exportFunction(to url: URL, shapeless: Bool = false, _ f: @escaping ([MLXArray]) -> [MLXArray]) -> FunctionExporterSingle
 ```
 
-#### Return Value
+## Return Value
 
 A helper ([`FunctionExporterSingle`](./functionexportersingle.md)) that records the call
 
-#### Discussion
+## Discussion
 
 For example this defines a function, writes it to a file, imports it and evaluates it.
 
@@ -45,7 +45,7 @@ let b = MLXArray([5, 10, 20])
 let r = try f2(a, y: b)[0]
 ```
 
-##### See Also
+### See Also
 
 - [`exportFunctions(to:shapeless:_:build:)`](./exportfunctions%28to,shapeless,_,build%29.md)
 - [`importFunction(from:)`](./importfunction%28from%29.md)

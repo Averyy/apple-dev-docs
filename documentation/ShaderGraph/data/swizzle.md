@@ -14,7 +14,7 @@ Performs an arbitrary permutation of the channels of the input stream, returning
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 **Swizzle (float color3f)**:
 
@@ -643,12 +643,12 @@ Performs an arbitrary permutation of the channels of the input stream, returning
 | --- | --- |
 | `Out` | Half |
 
-#### Parameter descriptions
+## Parameter descriptions
 
 - **`In`**: The input value.
 - **`Channels`**: A string of `1-4` characters that determine the permutation to perform. These characters can be “r”, “g”, “b”, or “a” if the `In` parameter is a color input, or “x”, “y”, “z”, or “w” for vector inputs. Use “r” or “x” if the input is a float.
 
-#### Discussion
+## Discussion
 
 The `Swizzle` node determines its output by first looking at the `Channels` parameter. Each character in the `Channel` string represents one of the channels of the `In` parameter. For example, if you pass in a vector3 of `(1, 5, 10)` as the `In` parameter, “x” refers to `1`, `y` to `5`, and `z` to `10`. The order of the characters determines how the channels of the input switch around to create the output. For the previous example, if the `Channels` parameter is “zzz”, the output is `(10, 10, 10)`.
 

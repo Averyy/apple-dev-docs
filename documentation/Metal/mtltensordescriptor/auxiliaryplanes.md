@@ -24,7 +24,7 @@ var auxiliaryPlanes: MTLTensorAuxiliaryPlaneDescriptorMap? { get set }
 @property (nonatomic, retain, nullable) MTLTensorAuxiliaryPlaneDescriptorMap * auxiliaryPlanes;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property with a populated [`MTLTensorAuxiliaryPlaneDescriptorMap`](../mtltensorauxiliaryplanedescriptormap.md) to create a multi-plane tensor. When `nil`, the tensor has only a data plane.
 

@@ -18,7 +18,7 @@ Pushes a page onto the Home app’s navigation stack.
 final func push(_ value: some Hashable, title: String? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 To provide the page’s view, add a matching `homeEmbeddedNavigationDestination(for:destination:)` modifier to your root view. The Home app manages back navigation.
 

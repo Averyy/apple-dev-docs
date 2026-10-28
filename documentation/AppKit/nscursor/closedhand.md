@@ -22,7 +22,7 @@ class var closedHand: NSCursor { get }
 @property (class, strong, readonly) NSCursor * closedHandCursor;
 ```
 
-#### Return Value
+## Return Value
 
 The closed-hand cursor.
 

@@ -25,7 +25,7 @@ static func anyOrder(_ expectations: [ToolExpectation]) -> ToolExpectation
 
 - [Evaluating tool-calling behavior](../evaluating-tool-calling-behavior.md)
 
-#### Discussion
+## Discussion
 
 You can only use this method within the `ordered` array of a [`TrajectoryExpectation`](../trajectoryexpectation.md).
 

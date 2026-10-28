@@ -16,7 +16,7 @@ get size(): Size;
 set size(_: Size);
 ```
 
-#### Discussion
+## Discussion
 
 You can’t change the size of an [`MarkerAnnotation`](../markerannotation.md).
 

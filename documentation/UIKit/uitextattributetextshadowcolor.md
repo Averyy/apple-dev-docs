@@ -19,7 +19,7 @@ The key to the text shadow color in a text attributes dictionary.
 extern NSString * const UITextAttributeTextShadowColor;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is an instance of [`UIColor`](./uicolor.md).
 

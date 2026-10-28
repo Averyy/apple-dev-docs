@@ -21,11 +21,11 @@ func openFile(_ fullPath: String, from image: NSImage?, at point: NSPoint, in vi
 - (BOOL) openFile:(NSString *) fullPath fromImage:(NSImage *) image at:(NSPoint) point inView:(NSView *) view;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the file was successfully opened; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Use of this method is discouraged. The method currently provides the same behavior as the [`openFile(_:)`](./openfile%28_%29.md) method. The Finder provides an animation before opening the file to give the user feedback that the file is to be opened. To provide this animation, `anImage` should contain an icon for the file, and its image should be displayed at `point`, specified in the coordinates of `aView`.
 

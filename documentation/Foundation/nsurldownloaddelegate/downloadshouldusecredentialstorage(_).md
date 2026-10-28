@@ -19,7 +19,7 @@ optional func downloadShouldUseCredentialStorage(_ download: NSURLDownload) -> B
 - (BOOL) downloadShouldUseCredentialStorage:(NSURLDownload *) download;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called before any attempt to authenticate is made.  By returning [`false`](../../Swift/false.md), the delegate tells the download not to consult the credential storage and makes itself responsible for providing credentials for any authentication challenges.  Not implementing this method is the same as returing [`true`](../../Swift/true.md). The delegate is free to consult the credential storage itself when it receives a [`download(_:didReceive:)`](./download%28_,didreceive%29-1pc0v.md) message.
 

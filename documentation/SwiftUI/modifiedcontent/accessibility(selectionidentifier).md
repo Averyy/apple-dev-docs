@@ -26,7 +26,7 @@ func accessibility(selectionIdentifier: AnyHashable) -> ModifiedContent<Content,
 
 Available when `Modifier` is `AccessibilityAttachmentModifier`.
 
-#### Discussion
+## Discussion
 
 Picker uses the value to determine what node to use for the accessibility value.
 

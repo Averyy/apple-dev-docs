@@ -20,7 +20,7 @@ var isEnvironmentTexturingEnabled: Bool { get set }
 @property (nonatomic, assign, getter=isEnvironmentTexturingEnabled) BOOL environmentTexturingEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 When enabled, the system automatically generates and updates the environment texture at the device position. Disabled by default.
 

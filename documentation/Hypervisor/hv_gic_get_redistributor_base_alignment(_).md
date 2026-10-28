@@ -19,7 +19,7 @@ func hv_gic_get_redistributor_base_alignment(_ redistributor_base_alignment: Uns
 extern hv_return_t hv_gic_get_redistributor_base_alignment(size_t *redistributor_base_alignment);
 ```
 
-#### Return Value
+## Return Value
 
 [`HV_SUCCESS`](./hv_success.md) on success; otherwise, an error code.
 

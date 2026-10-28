@@ -25,11 +25,11 @@ func CFStringGetSmallestEncoding(_ theString: CFString!) -> CFStringEncoding
 extern CFStringEncoding CFStringGetSmallestEncoding(CFStringRef theString);
 ```
 
-#### Return Value
+## Return Value
 
 The string encoding that has the smallest representation of `theString`.
 
-#### Discussion
+## Discussion
 
 This function returns the supported encoding that requires the least space (in terms of bytes needed to represent one character) to represent the character contents of a string. This information is not always immediately available, so this function might need to compute it.
 

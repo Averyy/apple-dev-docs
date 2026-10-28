@@ -19,11 +19,11 @@ CMError CMGetProfileDescriptions (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A `CMError` value. See [Result Codes](../colorsync_manager.md#1670295).
 
-#### Overview
+## Overview
 
 Use this function to get the description tag data for a given profile. The ICC Profile Format Specification (available at [http://www.color.org](http://www.color.org) ) includes a description tag (`'desc'` ), designed to provide more information about a profile than can be contained in a file name. This is especially critical on file systems with 8.3 names. The tag data can consist of up to three separate pieces (strings) of information for a profile. These different strings are designed to allow for display in different languages or on different computer systems. Applications typically use one of the strings to show profiles in a list or a pop-up menu. 
 

@@ -15,7 +15,7 @@ A constant identifying the mode of transportation as walking.
 readonly Walking: "WALKING";
 ```
 
-#### Discussion
+## Discussion
 
 Use for directions that are suitable for a pedestrian.
 

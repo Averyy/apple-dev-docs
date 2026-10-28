@@ -15,7 +15,7 @@ An error a validator emits when a given value is less than the allowed minimum.
 interface ValueLessThanMinNumberError
 ```
 
-#### Overview
+## Overview
 
 Extends `ValueRangeError`.
 

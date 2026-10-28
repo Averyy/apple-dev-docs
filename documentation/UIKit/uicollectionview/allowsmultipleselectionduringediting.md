@@ -23,7 +23,7 @@ var allowsMultipleSelectionDuringEditing: Bool { get set }
 @property (nonatomic) BOOL allowsMultipleSelectionDuringEditing;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`false`](../../Swift/false.md).
 

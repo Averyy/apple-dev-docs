@@ -21,7 +21,7 @@ var simCapability: CTCellularPlanCapability { get set }
 @property (nonatomic, readwrite) CTCellularPlanCapability simCapability;
 ```
 
-#### Discussion
+## Discussion
 
 Use to define whether your eSIM is capable of data only or data and voice. Refer to [`CTCellularPlanCapability.dataOnly`](../ctcellularplancapability/dataonly.md) or [`CTCellularPlanCapability.dataAndVoice`](../ctcellularplancapability/dataandvoice.md).
 

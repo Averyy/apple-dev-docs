@@ -23,7 +23,7 @@ var startIndex: FlattenSequence<Base>.Index { get }
 
 Available when `Base` conforms to `Collection` and `Base.Element` conforms to `Collection`.
 
-#### Discussion
+## Discussion
 
 In an empty collection, `startIndex == endIndex`.
 

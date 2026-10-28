@@ -21,7 +21,7 @@ struct Chromaticity
 typedef struct { ... } SRAmbientLightChromaticity;
 ```
 
-#### Overview
+## Overview
 
 The [`SRAmbientLightSample`](../srambientlightsample.md) class provides read-only access to an instance of this structure through its [`chromaticity`](./chromaticity-swift.property.md) property.
 

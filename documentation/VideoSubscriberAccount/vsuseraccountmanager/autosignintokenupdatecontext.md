@@ -21,7 +21,7 @@ struct AutoSignInTokenUpdateContext
 
 - [Signing people in to their media accounts automatically](../signing-people-in-to-media-apps-automatically.md)
 
-#### Overview
+## Overview
 
 The framework returns an instance of this structure when your app calls [`requestAutoSignInAuthorization()`](./requestautosigninauthorization%28%29.md) to prompt a person for approval to opt in to Automatic Sign-In.
 

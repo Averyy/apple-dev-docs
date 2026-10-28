@@ -25,11 +25,11 @@ func CGPDFStringCopyDate(_ string: CGPDFStringRef) -> CFDate?
 extern CFDateRefCGPDFStringCopyDate(CGPDFStringRef string);
 ```
 
-#### Return Value
+## Return Value
 
 A CFDate object.
 
-#### Discussion
+## Discussion
 
 The PDF specification defines a specific format for strings that represent dates. This function converts strings in that form to CFDate objects.
 

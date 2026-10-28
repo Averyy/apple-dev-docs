@@ -20,11 +20,11 @@ optional func collectionView(_ collectionView: NSCollectionView, draggingImageFo
 - (NSImage *) collectionView:(NSCollectionView *) collectionView draggingImageForItemsAtIndexPaths:(NSSet<NSIndexPath *> *) indexPaths withEvent:(NSEvent *) event offset:(NSPointPointer) dragImageOffset;
 ```
 
-#### Return Value
+## Return Value
 
 The image to use for the dragged items.
 
-#### Discussion
+## Discussion
 
 Your implementation of this method should create an appropriate image to use during the drag operation.  The collection view places the center of your image at the current mouse location. Update the value in the `dragImageOffset` parameter to shift the position of your image by the specified amount.
 

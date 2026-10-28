@@ -4,7 +4,7 @@
 
 Specify constants that indicate the format of PostScript data.
 
-#### Overview
+## Overview
 
 The ColorSync Manager provides these constant declarations to specify the format of PostScript data. 
 

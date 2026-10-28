@@ -25,11 +25,11 @@ func copyCGImage(at requestedTime: CMTime, actualTime: UnsafeMutablePointer<CMTi
 - (CGImageRef) copyCGImageAtTime:(CMTime) requestedTime actualTime:(CMTime *) actualTime error:(NSError **) outError;
 ```
 
-#### Return Value
+## Return Value
 
 A [`CGImage`](../../CoreGraphics/cgimage.md) for the asset at or near a specified time, or `NULL` if the image could not be created.
 
-#### Discussion
+## Discussion
 
 This method returns the image synchronously.
 

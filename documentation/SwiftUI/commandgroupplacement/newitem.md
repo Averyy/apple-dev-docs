@@ -19,7 +19,7 @@ Placement for commands that create different kinds of documents.
 static let newItem: CommandGroupPlacement
 ```
 
-#### Discussion
+## Discussion
 
 By default, this group includes the following commands in macOS:
 

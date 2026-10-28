@@ -5,7 +5,7 @@
 
 Configure services provided by the app, like support for giving directions or using game controllers.
 
-#### Overview
+## Overview
 
 Add keys to your app’s [`Information Property List`](./information-property-list.md) file that tell the system about services that your app provides.
 

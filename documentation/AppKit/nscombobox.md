@@ -19,7 +19,7 @@ class NSComboBox
 @interface NSComboBox : NSTextField
 ```
 
-#### Overview
+## Overview
 
 A combo box combines the behavior of an [`NSTextField`](./nstextfield.md) object with an [`NSPopUpButton`](./nspopupbutton.md) object. A combo box displays a list of values from a pop-up list, but also provides a means for users to type in custom values. For example, here’s a combo box in its initial state.
 

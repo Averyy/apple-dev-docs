@@ -19,11 +19,11 @@ func CMSEncoderAddRecipients(_ cmsEncoder: CMSEncoder, _ recipientOrArray: CFTyp
 OSStatus CMSEncoderAddRecipients(CMSEncoderRef cmsEncoder, CFTypeRef recipientOrArray);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 Your keychain must contain a certificate that supports encryption for each recipient. You can call this function more than once for the same message.
 

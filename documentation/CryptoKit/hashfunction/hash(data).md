@@ -21,11 +21,11 @@ Computes the digest of the bytes in the given data instance and returns the comp
 static func hash<D>(data: D) -> Self.Digest where D : DataProtocol
 ```
 
-#### Return Value
+## Return Value
 
 The computed digest of the data.
 
-#### Discussion
+## Discussion
 
 Use this method if all your data fits into a single data instance. If the data you want to hash is too large, initialize a hash function and use the [`update(data:)`](./update%28data%29.md) and [`finalize()`](./finalize%28%29.md) methods to compute the digest in blocks.
 

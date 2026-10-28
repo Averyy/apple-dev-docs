@@ -15,7 +15,7 @@ Implements the framework for a generic network controller.
 class IONetworkController : IOService
 ```
 
-#### Overview
+## Overview
 
 A subclass of IONetworkController must provide additional functionality specific for a particular networking type. In addition, the driver must implement (override) a basic set of hardware dependent methods to create a working driver.
 

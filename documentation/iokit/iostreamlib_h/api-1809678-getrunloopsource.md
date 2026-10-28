@@ -12,7 +12,7 @@ CFRunLoopSourceRef ( *GetRunLoopSource)(
    IOStreamRef stream );
 ```
 
-#### Return Value
+## Return Value
 
 The CFRunLoopSourceRef for the run loop source, or NULL if there was an error creating the source.
 

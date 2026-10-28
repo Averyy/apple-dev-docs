@@ -21,7 +21,7 @@ A unique identifier for an app entity or transient app entity type within an app
 struct AttributedTypeIdentifier
 ```
 
-#### Overview
+## Overview
 
 Use `AttributedTypeIdentifier` to uniquely identify entity types across your application. This identifier combines a persistent identifier — typically the entity’s type name — with an optional bundle identifier to ensure uniqueness across different bundles.
 

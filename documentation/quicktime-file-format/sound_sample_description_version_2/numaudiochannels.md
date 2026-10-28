@@ -6,7 +6,7 @@
 
 A 32-bit integer field set to the number of audio channels.
 
-#### Overview
+## Overview
 
 Any channel assignment will be expressed in an extension.
 

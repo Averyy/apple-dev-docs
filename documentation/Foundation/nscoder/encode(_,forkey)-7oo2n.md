@@ -24,7 +24,7 @@ func encode(_ insets: NSDirectionalEdgeInsets, forKey key: String)
 - (void) encodeDirectionalEdgeInsets:(NSDirectionalEdgeInsets) insets forKey:(NSString *) key;
 ```
 
-#### Discussion
+## Discussion
 
 When decoding the data from the archive, you pass the value in the key parameter to the corresponding [`decodeDirectionalEdgeInsets(forKey:)`](./decodedirectionaledgeinsets%28forkey%29.md) method to retrieve the data.
 

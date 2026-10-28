@@ -19,7 +19,7 @@ The request to create a thumbnail was canceled.
 static var requestCancelled: QLThumbnailError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 An app canceled a request to create a thumbnail using QLThumbnailGenerator’s [`cancel(_:)`](../qlthumbnailgenerator/cancel%28_%29.md) method.
 

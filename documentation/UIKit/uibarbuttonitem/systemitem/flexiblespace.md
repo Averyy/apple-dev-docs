@@ -23,7 +23,7 @@ case flexibleSpace
 UIBarButtonSystemItemFlexibleSpace
 ```
 
-#### Discussion
+## Discussion
 
 The space is distributed equally between the other items. Other item properties are ignored when this value is set.
 

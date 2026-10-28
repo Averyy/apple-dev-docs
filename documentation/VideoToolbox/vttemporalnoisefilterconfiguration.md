@@ -22,7 +22,7 @@ class VTTemporalNoiseFilterConfiguration
 @interface VTTemporalNoiseFilterConfiguration : NSObject
 ```
 
-#### Overview
+## Overview
 
 The class properties of `VTTemporalNoiseFilterConfiguration` help to identify the capabilities of temporal noise filter processor on the current platform, prior to initiating a session. You can confirm the availability of temporal noise-filter processor in the current platform by checking the [`isSupported`](./vttemporalnoisefilterconfiguration/issupported.md) class property. Verify the processor’s capability to process source frames by ensuring that the dimensions are no less than [`minimumDimensions`](./vttemporalnoisefilterconfiguration/minimumdimensions.md) and no greater than [`maximumDimensions`](./vttemporalnoisefilterconfiguration/maximumdimensions.md). Use the instance properties such as [`frameSupportedPixelFormats`](./vttemporalnoisefilterconfiguration/framesupportedpixelformats.md), [`sourcePixelBufferAttributes`](./vttemporalnoisefilterconfiguration/sourcepixelbufferattributes.md), and [`destinationPixelBufferAttributes`](./vttemporalnoisefilterconfiguration/destinationpixelbufferattributes.md) to ensure that the input and output pixel buffer formats and attributes of the processor align with the client’s specific requirements. The properties [`previousFrameCount`](./vttemporalnoisefilterconfiguration/previousframecount.md) and [`nextFrameCount`](./vttemporalnoisefilterconfiguration/nextframecount.md) represent the maximum number of preceding and subsequent reference frames, used in the processing of a source frame, to achieve optimum noise-reduction quality.
 

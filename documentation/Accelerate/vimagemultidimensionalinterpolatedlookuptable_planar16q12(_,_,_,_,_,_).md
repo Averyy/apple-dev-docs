@@ -29,17 +29,17 @@ vImage_Error vImageMultiDimensionalInterpolatedLookupTable_Planar16Q12(const vIm
 
 - [Applying color transforms to images with a multidimensional lookup table](./applying-color-transforms-to-images-with-a-multidimensional-lookup-table.md)
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, a negative value indicates one of the error codes that [Data Types and Constants](./data-types-and-constants.md) describes, and a positive value indicates the required size for the temporary buffer.
 
-#### Discussion
+## Discussion
 
 This function transforms a 16Q12 format image to a destination image using a multidimensional lookup table.
 
 See [Conversion](./conversion.md) for functions that convert to and from the 16Q12 format.
 
-##### Optimize performance with temporary buffers
+### Optimize performance with temporary buffers
 
 This function uses a multiple-pass algorithm that saves intermediate pixel values between passes. In some cases, the destination buffer may not be large enough to store that intermediate data, so the operation requires additional storage.
 

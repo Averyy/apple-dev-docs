@@ -24,7 +24,7 @@ var featureChannels: Int { get set }
 @property (nonatomic, readwrite) NSUInteger featureChannels;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is 1.
 

@@ -5,7 +5,7 @@
 
 The APIs for working with the framework’s Metadata Identifier Services and Metadata Data Type Registry.
 
-#### Overview
+## Overview
 
 The Core Media framework provides two services: Metadata Identifier Services and the Metadata Data Type Registry.
 

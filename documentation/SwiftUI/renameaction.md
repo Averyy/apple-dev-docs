@@ -21,7 +21,7 @@ An action that activates a standard rename interaction.
 struct RenameAction
 ```
 
-#### Overview
+## Overview
 
 Use the [`renameAction(_:)`](./view/renameaction%28_%29.md) modifier to configure the rename action in the environment.
 

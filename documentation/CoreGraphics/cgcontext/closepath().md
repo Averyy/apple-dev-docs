@@ -25,7 +25,7 @@ func closePath()
 extern void CGContextClosePath(CGContextRef c);
 ```
 
-#### Discussion
+## Discussion
 
 Appends a line from the current point to the starting point of the current subpath and ends the subpath.
 

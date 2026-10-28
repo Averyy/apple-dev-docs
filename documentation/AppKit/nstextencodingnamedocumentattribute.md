@@ -15,7 +15,7 @@ The name of the text encoding to use.
 extern NSAttributedStringDocumentAttributeKey NSTextEncodingNameDocumentAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 An [`NSString`](../Foundation/nsstring.md) object containing the name, IANA or otherwise, of a text encoding to be used. This attribute is mutually exclusive with [`NSCharacterEncodingDocumentAttribute`](./nscharacterencodingdocumentattribute.md).
 

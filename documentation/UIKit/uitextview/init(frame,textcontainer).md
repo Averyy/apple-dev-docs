@@ -23,11 +23,11 @@ init(frame: CGRect, textContainer: NSTextContainer?)
 - (instancetype) initWithFrame:(CGRect) frame textContainer:(NSTextContainer *) textContainer;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized text view.
 
-#### Discussion
+## Discussion
 
 This is the designated initializer for `UITextView` objects.
 

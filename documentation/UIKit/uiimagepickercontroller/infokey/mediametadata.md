@@ -22,7 +22,7 @@ static let mediaMetadata: UIImagePickerController.InfoKey
 extern UIImagePickerControllerInfoKey const UIImagePickerControllerMediaMetadata;
 ```
 
-#### Discussion
+## Discussion
 
 This key is valid only when using an image picker whose source type is set to [`UIImagePickerController.SourceType.camera`](../sourcetype-swift.enum/camera.md), and applies only to still images.
 

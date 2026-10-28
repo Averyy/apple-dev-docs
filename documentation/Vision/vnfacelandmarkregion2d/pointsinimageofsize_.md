@@ -20,7 +20,7 @@ A buffer in memory containing landmark points in the coordinate space of the spe
 - (const CGPoint *) pointsInImageOfSize:(CGSize) imageSize;
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to a buffer containing a [`CGPoint`](../../CoreFoundation/cgpoint.md) for each landmark detected in the image, expressed in the coordinate space of the specified image size.
 

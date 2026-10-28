@@ -21,7 +21,7 @@ var address: String { get set }
 @property (nonatomic, strong, nonnull) NSString * address;
 ```
 
-#### Discussion
+## Discussion
 
 The destination server must support the SMDP+ standard.
 

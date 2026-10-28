@@ -21,7 +21,7 @@ Creates an item for an ordered list with the provided information.
 + (NSPresentationIntent *) listItemIntentWithIdentity:(NSInteger) identity ordinal:(NSInteger) ordinal nestedInsideIntent:(NSPresentationIntent *) parent;
 ```
 
-#### Return Value
+## Return Value
 
 A new intent with the kind set to [`NSPresentationIntentKindListItem`](../nspresentationintentkind/nspresentationintentkindlistitem.md).
 

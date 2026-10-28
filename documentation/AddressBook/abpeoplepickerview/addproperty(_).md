@@ -19,7 +19,7 @@ func addProperty(_ property: String!)
 - (void) addProperty:(NSString *) property;
 ```
 
-#### Discussion
+## Discussion
 
 For additional information about properties see Constants.
 

@@ -16,7 +16,7 @@ Returns the position and orientation you specified for the frame.
 ar_device_anchor_tcp_drawable_get_device_anchor(cp_drawable_t drawable);
 ```
 
-#### Return Value
+## Return Value
 
 The current position and orientation for the frame, or `nil` if you didn’t specify this information.
 

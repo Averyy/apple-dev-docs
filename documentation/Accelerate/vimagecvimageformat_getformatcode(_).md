@@ -25,11 +25,11 @@ func vImageCVImageFormat_GetFormatCode(_ format: vImageConstCVImageFormat) -> UI
 uint32_t vImageCVImageFormat_GetFormatCode(vImageConstCVImageFormatRef format);
 ```
 
-#### Return Value
+## Return Value
 
 The four-character code of the image format, such as [`kCVPixelFormatType_420YpCbCr8Planar`](../CoreVideo/kcvpixelformattype_420ypcbcr8planar.md).
 
-#### Discussion
+## Discussion
 
 The functions that create Core Video image formats, such as [`vImageCVImageFormat_CreateWithCVPixelBuffer(_:)`](./vimagecvimageformat_createwithcvpixelbuffer%28_%29.md), return a [`vImageCVImageFormat`](./vimagecvimageformat.md). The following code shows how you create a [`vImageConstCVImageFormat`](./vimageconstcvimageformat.md) representation of a [`vImageCVImageFormat`](./vimagecvimageformat.md) instance to pass to [`vImageCVImageFormat_GetFormatCode(_:)`](./vimagecvimageformat_getformatcode%28_%29.md):
 

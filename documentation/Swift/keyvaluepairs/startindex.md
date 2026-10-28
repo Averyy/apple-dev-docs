@@ -21,7 +21,7 @@ The position of the first element in a nonempty collection.
 var startIndex: KeyValuePairs<Key, Value>.Index { get }
 ```
 
-#### Discussion
+## Discussion
 
 If the `KeyValuePairs` instance is empty, `startIndex` is equal to `endIndex`.
 

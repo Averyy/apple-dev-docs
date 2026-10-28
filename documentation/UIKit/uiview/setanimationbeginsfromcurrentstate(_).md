@@ -24,7 +24,7 @@ class func setAnimationBeginsFromCurrentState(_ fromCurrentState: Bool)
 + (void) setAnimationBeginsFromCurrentState:(BOOL) fromCurrentState;
 ```
 
-#### Discussion
+## Discussion
 
 If set to [`true`](../../Swift/true.md) when an animation is in flight, the current view position of the in-flight animation is used as the starting state for the new animation. If set to [`false`](../../Swift/false.md), the in-flight animation ends before the new animation begins using the last view position as the starting state. This method does nothing if an animation is not in flight or invoked outside of an animation block. Use the [`beginAnimations(_:context:)`](./beginanimations%28_,context%29.md) class method to start and the [`commitAnimations()`](./commitanimations%28%29.md) class method to end an animation block. The default value is [`false`](../../Swift/false.md).
 

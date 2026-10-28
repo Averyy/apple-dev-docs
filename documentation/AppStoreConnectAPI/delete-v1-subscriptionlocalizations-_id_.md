@@ -11,7 +11,7 @@ Delete localized metadata that you configured for an auto-renewable subscription
 
 > **Deprecated**: This endpoint is deprecated. Use [`Delete a subscription localization`](./delete-v2-subscriptionlocalizations-_id_.md) instead.
 
-#### Discussion
+## Discussion
 
 > **Note**:  Changes that you make to product metadata with the App Store Connect API can take up to 1 hour to appear in the sandbox environment.
 

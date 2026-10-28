@@ -25,7 +25,7 @@ func coordinate(writingItemAt url1: URL, options options1: NSFileCoordinator.Wri
 - (void) coordinateWritingItemAtURL:(NSURL *) url1 options:(NSFileCoordinatorWritingOptions) options1 writingItemAtURL:(NSURL *) url2 options:(NSFileCoordinatorWritingOptions) options2 error:(NSError **) outError byAccessor:(void (^)(NSURL *newURL1, NSURL *newURL2)) writer;
 ```
 
-#### Discussion
+## Discussion
 
 When invoking these methods, declare a `__block` variable before the accessor block and initialize it to a value that signals failure, and then inside the accessor block set it to a value that indicates success. If the coordinated operation fails, then the accessor block never runs. The sentinel variable still holds a value that indicates failure, and the [`NSError`](../nserror.md) out parameter contains a reference that describes the error.
 

@@ -27,7 +27,7 @@ static var sigmoid: BNNSActivationFunction { get }
 
 - [Using Long Short-Term Memory Layers (LSTM)](../using-long-short-term-memory-layers-lstm.md)
 
-#### Discussion
+## Discussion
 
 This constant defines an activation function that returns values using the logistic function:
 

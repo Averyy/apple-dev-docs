@@ -21,7 +21,7 @@ Horizontal offset from the center of the image buffer.
 var horizontalOffset: Float
 ```
 
-#### Discussion
+## Discussion
 
 A positive value of this property will move the center of clean aperture towards right side.
 

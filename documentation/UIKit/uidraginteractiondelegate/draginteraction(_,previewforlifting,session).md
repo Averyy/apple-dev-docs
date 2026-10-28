@@ -22,11 +22,11 @@ optional func dragInteraction(_ interaction: UIDragInteraction, previewForLiftin
 - (UITargetedDragPreview *) dragInteraction:(UIDragInteraction *) interaction previewForLiftingItem:(UIDragItem *) item session:(id<UIDragSession>) session;
 ```
 
-#### Return Value
+## Return Value
 
 A targeted drag item preview you create, or `nil` to tell the system not to display the lift animation.
 
-#### Discussion
+## Discussion
 
 If you don’t provide this method, the system creates a preview based on the view owned by the drag interaction.
 

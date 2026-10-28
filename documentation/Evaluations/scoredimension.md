@@ -26,7 +26,7 @@ struct ScoreDimension
 - [Scoring with model-judge evaluators](./scoring-with-model-as-judge-evaluators.md)
 - [Designing effective model-judge evaluators](./designing-effective-model-judges.md)
 
-#### Overview
+## Overview
 
 Each dimension defines a name (used as the DataFrame column), an optional description, and a [`ScoringScale`](./scoringscale.md) that defines what each score means.
 

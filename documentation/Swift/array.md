@@ -22,7 +22,7 @@ An ordered, random-access collection.
 struct Array<Element>
 ```
 
-#### Overview
+## Overview
 
 Arrays are one of the most commonly used data types in an app. You use arrays to organize your app’s data. Specifically, you use the `Array` type to hold elements of a single type, the array’s `Element` type. An array can store any kind of elements—from integers to strings to classes.
 
@@ -54,7 +54,7 @@ print(digitCounts)
 // Prints "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]"
 ```
 
-### Accessing Array Values
+## Accessing Array Values
 
 When you need to perform an operation on all of an array’s elements, use a `for`-`in` loop to iterate through the array’s contents.
 
@@ -100,7 +100,7 @@ print(emptyDoubles[0])
 // Triggers runtime error: Index out of range
 ```
 
-### Adding and Removing Elements
+## Adding and Removing Elements
 
 Suppose you need to store a list of the names of students that are signed up for a class you’re teaching. During the registration period, you need to add and remove names as students add and drop the class.
 
@@ -144,7 +144,7 @@ if let i = students.firstIndex(of: "Maxime") {
 // ["Ivy", "Jordell", "Liam", "Max", "Shakia"]
 ```
 
-#### Growing the Size of an Array
+## Growing the Size of an Array
 
 Every array reserves a specific amount of memory to hold its contents. When you add elements to an array and that array begins to exceed its reserved capacity, the array allocates a larger region of memory and copies its elements into the new storage. The new storage is a multiple of the old storage’s size. This exponential growth strategy means that appending an element happens in constant time, averaging the performance of many append operations. Append operations that trigger reallocation have a performance cost, but they occur less and less often as the array grows larger.
 
@@ -152,7 +152,7 @@ If you know approximately how many elements you will need to store, use the `res
 
 For arrays of most `Element` types, this storage is a contiguous block of memory. For arrays with an `Element` type that is a class or `@objc` protocol type, this storage can be a contiguous block of memory or an instance of `NSArray`. Because any arbitrary subclass of `NSArray` can become an `Array`, there are no guarantees about representation or efficiency in this case.
 
-### Modifying Copies of Arrays
+## Modifying Copies of Arrays
 
 Each array has an independent value that includes the values of all of its elements. For simple types such as integers and other structures, this means that when you change a value in one array, the value of that element does not change in any copies of the array. For example:
 
@@ -209,7 +209,7 @@ numbers[2] = 300
 // 'firstCopy' and 'secondCopy' are [1, 2, 3, 4, 5]
 ```
 
-### Bridging Between Array and NSArray
+## Bridging Between Array and NSArray
 
 When you need to access APIs that require data in an `NSArray` instance instead of `Array`, use the type-cast operator (`as`) to bridge your instance. For bridging to be possible, the `Element` type of your array must be a class, an `@objc` protocol (a protocol imported from Objective-C or marked with the `@objc` attribute), or a type that bridges to a Foundation type.
 

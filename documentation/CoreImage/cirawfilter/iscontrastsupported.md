@@ -24,7 +24,7 @@ var isContrastSupported: Bool { get }
 @property (readonly, getter=isContrastSupported) BOOL contrastSupported;
 ```
 
-#### Discussion
+## Discussion
 
 If this value is `true`, you can adjust the amount of contrast to apply to the image by setting [`contrastAmount`](./contrastamount.md).
 

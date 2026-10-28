@@ -17,7 +17,7 @@ Attaches the image data in the specified pixel buffer to the texture object curr
 - (void) setTextureImageToPixelBuffer:(NSOpenGLPixelBuffer *) pixelBuffer colorBuffer:(GLenum) source;
 ```
 
-#### Discussion
+## Discussion
 
 This method corresponds to the Core OpenGL method `CGLTexImagePBuffer`.
 

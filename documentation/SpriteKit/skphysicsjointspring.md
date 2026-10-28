@@ -29,7 +29,7 @@ class SKPhysicsJointSpring
 
 - [Getting Started with Spring Joints](./getting-started-with-spring-joints.md)
 
-#### Overview
+## Overview
 
 An [`SKPhysicsJointSpring`](./skphysicsjointspring.md) object simulates connecting two physics bodies together with a spring. The farther the two objects move from each other, the more force is applied to bring the two bodies back together.
 

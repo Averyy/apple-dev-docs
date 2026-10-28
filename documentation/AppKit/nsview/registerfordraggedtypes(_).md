@@ -19,7 +19,7 @@ func registerForDraggedTypes(_ newTypes: [NSPasteboard.PasteboardType])
 - (void) registerForDraggedTypes:(NSArray<NSString *> *) newTypes;
 ```
 
-#### Discussion
+## Discussion
 
 Registering an `NSView` object for dragged types automatically makes it a candidate destination object for a dragging session. As such, it must properly implement some or all of the `NSDraggingDestination` protocol methods. As a convenience, `NSView` provides default implementations of these methods. See the [`NSDraggingDestination`](../nsdraggingdestination.md) protocol specification for details.
 

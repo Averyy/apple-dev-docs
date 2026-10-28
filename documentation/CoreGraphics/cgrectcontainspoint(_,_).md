@@ -25,11 +25,11 @@ func CGRectContainsPoint(_ rect: CGRect, _ point: CGPoint) -> Bool
 extern bool CGRectContainsPoint(CGRect rect, CGPoint point);
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if the rectangle is not null or empty and the point is located within the rectangle; otherwise, [`false`](../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 A point is considered inside the rectangle if its coordinates lie inside the rectangle or on the minimum X or minimum Y edge.
 

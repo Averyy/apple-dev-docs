@@ -25,7 +25,7 @@ var kAudioChannelLayoutTag_AAC_7_1_B: AudioChannelLayoutTag { get }
 kAudioChannelLayoutTag_AAC_7_1_B
 ```
 
-#### Discussion
+## Discussion
 
 Your channels must be laid out in the following order:
 

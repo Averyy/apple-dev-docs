@@ -15,7 +15,7 @@ A message that tells people why the app is requesting the ability to authenticat
 - **Name**: `NSFaceIDUsageDescription` (Privacy - Face ID Usage Description)
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  This key is required if your app uses APIs that access Face ID. Also note that App Clips can’t use Face ID. For more information about functionality that’s unavailable to App Clips, see [Choosing the right functionality for your App Clip](../../AppClip/choosing-the-right-functionality-for-your-app-clip.md).
 

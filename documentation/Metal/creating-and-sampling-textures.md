@@ -14,7 +14,7 @@ Load image data into a texture and apply it to a quadrangle.
 - tvOS 17.0+
 - Xcode 26.3+
 
-#### Overview
+## Overview
 
 You use textures to draw and process images in Metal. A texture is a structured collection of texture elements, often called *texels* or *pixels*. The exact configuration of these texture elements depends on the type of texture. This sample uses a texture structured as a 2D array of elements, each of which contains color data, to hold an image. The texture is drawn onto geometric primitives through a process called *texture mapping*. The fragment function generates colors for each fragment by sampling the texture.
 
@@ -24,7 +24,7 @@ The Metal framework doesn’t provide an API to directly load image data from a 
 
 > **Note**: The Xcode project contains schemes for running the sample on macOS, iOS, or tvOS devices. The default scheme is macOS, which runs the sample as is on your Mac.
 
-##### Load and format image data
+### Load and format image data
 
 You can create a texture or update its contents manually, a process that’s covered in the next few sections. You might do this for multiple reasons:
 
@@ -90,7 +90,7 @@ for(NSUInteger y = 0; y < _height; y++)
 _data = mutableData;
 ```
 
-##### Create a texture from a texture descriptor
+### Create a texture from a texture descriptor
 
 Use an [`MTLTextureDescriptor`](./mtltexturedescriptor.md) object to configure properties like texture dimensions and pixel format for an [`MTLTexture`](./mtltexture.md) object. Then call the [`makeTexture(descriptor:)`](./mtldevice/maketexture%28descriptor%29.md) method to create a texture.
 
@@ -111,7 +111,7 @@ id<MTLTexture> texture = [_device newTextureWithDescriptor:textureDescriptor];
 
 Metal creates an `MTLTexture` object and allocates memory for the texture data. This memory is uninitialized when the texture is created, so the next step is to copy your data into the texture.
 
-##### Copy the image data into the texture
+### Copy the image data into the texture
 
 Metal manages memory for textures and doesn’t provide you direct access to it. So you can’t get a pointer to the texture data in memory and copy the pixels yourself. Instead, you call methods on an `MTLTexture` object to copy data from memory you can access into the texture and vice versa.
 
@@ -141,7 +141,7 @@ Call the [`replace(region:mipmapLevel:withBytes:bytesPerRow:)`](./mtltexture/rep
             bytesPerRow:bytesPerRow];
 ```
 
-##### Map the texture onto a geometric primitive
+### Map the texture onto a geometric primitive
 
 You can’t render a texture on its own; you need to map it onto geometric primitives (in this example, a pair of triangles) that are output by the vertex stage and turned into fragments by the rasterizer. Each fragment needs to know which part of the texture should be applied to it. You define this mapping with *texture coordinates*: floating-point positions that map locations on a texture image to locations on the geometric surface.
 
@@ -203,7 +203,7 @@ In the vertex shader, pass the texture coordinates to the rasterizer stage by wr
 out.textureCoordinate = vertexArray[vertexID].textureCoordinate;
 ```
 
-##### Calculate a color from a location in the texture
+### Calculate a color from a location in the texture
 
 You sample a texture to calculate a color from a location in the texture. To sample the texture data, the fragment function needs the texture coordinates and a reference to the texture to sample. In addition to the arguments passed in from the rasterizer stage, pass in a `colorTexture` argument with a `texture2d` type and the `[[texture(index)]]` attribute qualifier. This argument is a reference to the `MTLTexture` object to be sampled.
 
@@ -227,7 +227,7 @@ const half4 colorSample = colorTexture.sample(textureSampler, in.textureCoordina
 
 > **Note**: Try increasing or decreasing the size of the quad to see how filtering works.
 
-##### Encode the draw parameters
+### Encode the draw parameters
 
 The process for encoding and submitting drawing commands is the same as that shown in Using a Render Pipeline to Render Primitives, so the complete code is not shown below. The difference in this sample is that the fragment shader has an additional parameter. When you encode the command’s arguments, set the fragment function’s texture argument. This sample uses the `AAPLTextureIndexBaseColor` index to identify the texture in both Objective-C and Metal Shading Language code.
 

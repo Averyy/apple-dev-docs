@@ -19,13 +19,13 @@ An object you use to access configuration information for controls and reload th
 class ControlCenter
 ```
 
-#### Overview
+## Overview
 
 ControlCenter provides information about user-configured controls, such as their push information.
 
 For additional information about offering controls that allow people to perform app actions; – for example, in Control Center on iPhone – refer to [Creating controls to perform actions across the system](./creating-controls-to-perform-actions-across-the-system.md). For more information about offering user-configured controls, refer to [Add configuration to a control](./adding-refinements-and-configuration-to-controls.md#Add-configuration-to-a-control).
 
-##### Access configured control information
+### Access configured control information
 
 To get a list of user-configured controls, use [`currentControls()`](./controlcenter/currentcontrols%28%29.md). This property provides an array of [`ControlInfo`](./controlinfo.md) objects containing the following information:
 
@@ -41,7 +41,7 @@ The `kind` string matches the parameter you use when defining the control type. 
 
 For more information about updating controls with WidgetKit push notifications, refer to [Updating controls locally and remotely](./updating-controls-locally-and-remotely.md).
 
-##### Request a reload of your controls
+### Request a reload of your controls
 
 Changes in your app’s state may affect a control’s state. When this happens, you can tell `ControlCenter` to reload the template for either a specific kind of control or all controls. For example, someone might press a button in your app that changes state shared by a control. The app should reload that control for its display to reflect the new state.
 

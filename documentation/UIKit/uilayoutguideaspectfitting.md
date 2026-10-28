@@ -23,7 +23,7 @@ protocol UILayoutGuideAspectFitting : NSObjectProtocol
 @protocol UILayoutGuideAspectFitting <NSObject>
 ```
 
-#### Overview
+## Overview
 
 The [`safeAreaAspectFitLayoutGuide`](./uiwindow/safeareaaspectfitlayoutguide.md) property adopts this protocol to provide a layout guide for placing media content of a particular aspect ratio.
 

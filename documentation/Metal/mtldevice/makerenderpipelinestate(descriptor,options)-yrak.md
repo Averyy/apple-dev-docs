@@ -20,11 +20,11 @@ Synchronously creates a mesh render pipeline state and reflection information in
 func makeRenderPipelineState(descriptor: MTLMeshRenderPipelineDescriptor, options: MTLPipelineOption) throws -> (any MTLRenderPipelineState, MTLRenderPipelineReflection?)
 ```
 
-#### Return Value
+## Return Value
 
 A tuple with a new [`MTLRenderPipelineState`](../mtlrenderpipelinestate.md) instance and an [`MTLRenderPipelineReflection`](../mtlrenderpipelinereflection.md) optional instance if the method completes successfully; otherwise Swift throws an error and Objective-C returns `nil`.
 
-#### Discussion
+## Discussion
 
 Use the graphics-rendering pipeline state to configure a render pass by calling the [`setRenderPipelineState(_:)`](../mtlrendercommandencoder/setrenderpipelinestate%28_%29.md) method of an [`MTLRenderCommandEncoder`](../mtlrendercommandencoder.md) instance.
 

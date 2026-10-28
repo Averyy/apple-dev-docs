@@ -5,11 +5,11 @@
 
 The size of the text’s font.
 
-#### Overview
+## Overview
 
 The default value is `144` points.
 
-##### Declaration
+### Declaration
 
 ```other
 float pointSize = 144.0

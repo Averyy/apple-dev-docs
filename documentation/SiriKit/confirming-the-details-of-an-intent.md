@@ -5,7 +5,7 @@
 
 Perform final validation of the intent parameters and verify that your services are ready to fulfill the intent.
 
-#### Overview
+## Overview
 
 After you resolve the parameters of an intent, but before you handle that intent, SiriKit may ask you to confirm the intent details. The confirmation phase is your chance to perform any final validation of the intent parameters and to verify that any needed services are available. For example, you might confirm that you can communicate with your company’s server. After performing your final validation, you provide SiriKit with a response object indicating how you plan to handle the request.
 

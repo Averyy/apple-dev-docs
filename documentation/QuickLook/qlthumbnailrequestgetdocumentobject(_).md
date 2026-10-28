@@ -21,7 +21,7 @@ func QLThumbnailRequestGetDocumentObject(_ thumbnail: QLThumbnailRequest!) -> Un
 extern const void *QLThumbnailRequestGetDocumentObject(QLThumbnailRequestRef thumbnail);
 ```
 
-#### Return Value
+## Return Value
 
 The object that’s stored as part of the thumbnail request.
 

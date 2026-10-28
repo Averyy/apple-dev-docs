@@ -23,11 +23,11 @@ func textRect(forBounds bounds: CGRect, limitedToNumberOfLines numberOfLines: In
 - (CGRect) textRectForBounds:(CGRect) bounds limitedToNumberOfLines:(NSInteger) numberOfLines;
 ```
 
-#### Return Value
+## Return Value
 
 The computed drawing rectangle for the label’s text.
 
-#### Discussion
+## Discussion
 
 Override this method in subclasses that require changes in the label’s bounding rectangle to occur before the system performs other text layout calculations. Use the value in the `numberOfLines` parameter to limit the height of the returned rectangle to the specified number of lines of text.
 

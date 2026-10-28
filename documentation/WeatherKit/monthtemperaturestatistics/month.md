@@ -21,7 +21,7 @@ The month of the year, in UTC.
 var month: Int
 ```
 
-#### Discussion
+## Discussion
 
 The Gregorian month of the year ranges from 1 (January) to 12 (December).
 

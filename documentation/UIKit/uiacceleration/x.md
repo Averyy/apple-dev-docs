@@ -12,7 +12,7 @@ The acceleration value for the x axis of the device.
 @property (nonatomic, readonly) UIAccelerationValue x;
 ```
 
-#### Discussion
+## Discussion
 
 With the device held in portrait orientation and the screen facing you, the x axis runs from left (negative values) to right (positive values) across the face of the device.
 

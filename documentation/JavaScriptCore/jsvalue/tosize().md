@@ -24,11 +24,11 @@ func toSize() -> CGSize
 - (CGSize) toSize;
 ```
 
-#### Return Value
+## Return Value
 
 A CoreGraphics size representation of the value.
 
-#### Discussion
+## Discussion
 
 This method treats the value as a JavaScript object, reading the values of its `width` and `height` properties using the [`toDouble()`](./todouble%28%29.md) method and creating a [`CGSize`](../../CoreFoundation/cgsize.md) structure from the result. If the value is not a JavaScript object or does not have the appropriate properties, the size’s width and height are each not a number (NaN).
 

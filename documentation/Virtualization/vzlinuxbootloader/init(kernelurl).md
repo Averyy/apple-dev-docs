@@ -19,7 +19,7 @@ init(kernelURL: URL)
 - (instancetype) initWithKernelURL:(NSURL *) kernelURL;
 ```
 
-#### Return Value
+## Return Value
 
 A boot loader object for the specified Linux kernel.
 

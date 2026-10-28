@@ -31,7 +31,7 @@ var partySizeRange: NSRange { get }
 @property (atomic, readonly) NSRange partySizeRange;
 ```
 
-#### Discussion
+## Discussion
 
 The `location` value of the range contains the minimum number of people. Adding the `location` and `length` values results in the maximum number of people. For example, a range value of (1, 0) represents a single person and a range value of (1, 2) represents 1 to 3 people.
 

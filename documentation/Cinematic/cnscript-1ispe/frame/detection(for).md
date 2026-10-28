@@ -19,7 +19,7 @@ The detection in the frame with the given detection ID, if any.
 func detection(for detectionID: CNDetectionID) -> CNDetection?
 ```
 
-#### Return Value
+## Return Value
 
 A detection for the frame with the given detection ID.
 

@@ -23,7 +23,7 @@ var clearsSelectionOnViewWillAppear: Bool { get set }
 @property (nonatomic) BOOL clearsSelectionOnViewWillAppear;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`true`](../../Swift/true.md). When [`true`](../../Swift/true.md), the collection view controller clears the collection view’s current selection when it receives a [`viewWillAppear(_:)`](../uiviewcontroller/viewwillappear%28_%29.md) message. Setting this property to [`false`](../../Swift/false.md) preserves the selection.
 

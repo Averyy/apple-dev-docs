@@ -26,11 +26,11 @@ func write(to url: URL, atomically: Bool) -> Bool
 - (BOOL) writeToURL:(NSURL *) url atomically:(BOOL) atomically;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the location is written successfully, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 If `atomically` is [`true`](../../Swift/true.md), the receiver is written to an auxiliary location, and then the auxiliary location is renamed to `aURL`. If `atomically` is [`false`](../../Swift/false.md), the receiver is written directly to `aURL`. The [`true`](../../Swift/true.md) option guarantees that `aURL`, if it exists at all, won’t be corrupted even if the system should crash during writing.
 

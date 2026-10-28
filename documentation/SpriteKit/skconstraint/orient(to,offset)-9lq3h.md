@@ -25,11 +25,11 @@ class func orient(to point: CGPoint, offset radians: SKRange) -> Self
 + (instancetype) orientToPoint:(CGPoint) point offset:(SKRange *) radians;
 ```
 
-#### Return Value
+## Return Value
 
 A new constraint.
 
-#### Discussion
+## Discussion
 
 Each time when constraints are applied, a new angle is calculated so that a line projected at this angle would point at the target point. This angle is added to the values specified in the `radians` property to create a new range. Finally, the node’s [`zRotation`](../sknode/zrotation.md) value is clamped to fit inside this range.
 

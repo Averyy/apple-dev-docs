@@ -20,7 +20,7 @@ object RepeatableImageFill
 - [Applying a Background to a Component](../AppleNews/applying-a-background-to-a-component.md)
 - [Preparing Image, Video, Audio, Music, and ARKit Assets](../AppleNews/preparing-image-video-audio-music-and-arkit-assets.md)
 
-#### Discussion
+## Discussion
 
 Use the `RepeatableImage` fill type object to add a repeatable image on components.
 
@@ -29,7 +29,7 @@ The recommended dimensions for a repeatable image are as follows:
 - Minimum dimensions: 3 x 6 or 6 x 3 pixels
 - Maximum dimensions: 3000 x 3000 pixels
 
-##### Example
+### Example
 
 ```json
 {

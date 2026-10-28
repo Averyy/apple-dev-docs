@@ -17,7 +17,7 @@ An error that occurs if your app didn’t declare the necessary services.
 case serviceNotDeclared(WAError.ServiceNotDeclaredDetails)
 ```
 
-#### Discussion
+## Discussion
 
 This error indicates that your app declares services in the `Info.plist`.
 

@@ -5,7 +5,7 @@
 
 Interact with groups of related functionality that Matter accessories expose.
 
-#### Overview
+## Overview
 
 A cluster defines data and a set of related commands that operate on that data. For example, a temperature sensor exposes the Temperature Measurement cluster that provides ambient temperature. A door lock exposes the Door Lock cluster that provides the state of the lock, as well as commands to lock, unlock, and add access codes.
 

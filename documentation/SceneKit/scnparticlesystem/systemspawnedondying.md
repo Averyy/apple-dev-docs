@@ -25,7 +25,7 @@ var systemSpawnedOnDying: SCNParticleSystem? { get set }
 @property (nonatomic, retain, nullable) SCNParticleSystem * systemSpawnedOnDying;
 ```
 
-#### Discussion
+## Discussion
 
 When a particle reaches the end of its [`particleLifeSpan`](./particlelifespan.md) duration and is removed from the scene, SceneKit adds a copy of the specified particle system to the scene at the particle’s final location.
 

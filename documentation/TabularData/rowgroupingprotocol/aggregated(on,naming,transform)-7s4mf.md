@@ -21,7 +21,7 @@ Generates a data frame by aggregating each group’s contents for each column yo
 func aggregated<Element, Result>(on columnNames: String..., naming: (String) -> String, transform: (DiscontiguousColumnSlice<Element>) throws -> Result?) rethrows -> DataFrame
 ```
 
-#### Discussion
+## Discussion
 
 The data frame contains two columns that:
 

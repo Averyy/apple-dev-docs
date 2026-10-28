@@ -21,7 +21,7 @@ A validation dataset represented by a dictionary.
 case dictionary([String : [URL]])
 ```
 
-#### Discussion
+## Discussion
 
 - dictionary: A validation dataset that uses a collection of labeled audio files represented by a dictionary. Each key of the dictionary is a label, and its value is an array of audio-file URLs.
 

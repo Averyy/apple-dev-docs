@@ -15,11 +15,11 @@ Creates a standalone render context, asynchronously preparing required resources
 ## Declaration
 
 ```swift
-nonisolated
-(nonsending) init(configuration: LowLevelRenderContextStandalone.Configuration) async throws
+nonisolated(nonsending)
+init(configuration: LowLevelRenderContextStandalone.Configuration) async throws
 ```
 
-#### Discussion
+## Discussion
 
 Prefer this overload when creating a single render context. If you need to share prepared resources across multiple contexts, create a [`LowLevelRenderContextStandalone.Resources`](./resources.md) value first and use [`init(configuration:resources:)`](./init%28configuration,resources%29.md) instead.
 

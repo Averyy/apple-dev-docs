@@ -24,7 +24,7 @@ init(device: any MTLDevice, thresholdValue: Float, maximumValue: Float, linearGr
 - (instancetype) initWithDevice:(id<MTLDevice>) device thresholdValue:(float) thresholdValue maximumValue:(float) maximumValue linearGrayColorTransform:(const float *) transform;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized kernel object.
 

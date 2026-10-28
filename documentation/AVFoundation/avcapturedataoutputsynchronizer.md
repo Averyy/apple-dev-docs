@@ -22,7 +22,7 @@ class AVCaptureDataOutputSynchronizer
 @interface AVCaptureDataOutputSynchronizer : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use this class when you need to capture media from multiple capture outputs and want to receive all data samples from the same timestamp in a single delegate callback.
 

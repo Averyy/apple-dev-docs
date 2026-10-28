@@ -10,11 +10,11 @@ framework: "swift-configuration/Configuration"
 
 Protect sensitive configuration values from accidental disclosure in logs and debug output.
 
-#### Overview
+## Overview
 
 Swift Configuration provides built-in support for marking sensitive values as secrets. Access reporters automatically redact secret values to prevent accidental disclosure of API keys, passwords, and other sensitive information.
 
-##### Marking values as secret when reading
+### Marking values as secret when reading
 
 Use the `isSecret` parameter on any configuration reader method to mark a value as secret:
 
@@ -58,11 +58,11 @@ try await config.watchString(
 }
 ```
 
-##### Provider-level secret specification
+### Provider-level secret specification
 
 Use [`SecretsSpecifier`](./secretsspecifier.md) to automatically mark values as secret based on keys or content when creating providers:
 
-###### Mark all values as secret
+#### Mark all values as secret
 
 The following example marks all configuration that the [`DirectoryFilesProvider`](./directoryfilesprovider.md) reads as secret:
 
@@ -73,7 +73,7 @@ let provider = DirectoryFilesProvider(
 )
 ```
 
-###### Mark specific keys as secret
+#### Mark specific keys as secret
 
 The following example marks three specific keys from a provider as secret:
 
@@ -83,7 +83,7 @@ let provider = EnvironmentVariablesProvider(
 )
 ```
 
-###### Dynamic secret detection
+#### Dynamic secret detection
 
 The following example marks keys as secret based on the closure you provide. In this case, the library marks keys that contain `password`, `secret`, or `token` as secret:
 
@@ -98,7 +98,7 @@ let provider = FileProvider<JSONSnapshot>(
 )
 ```
 
-###### No secret values
+#### No secret values
 
 The following example asserts that the provider doesn’t return any secret values:
 
@@ -109,7 +109,7 @@ let provider = FileProvider<JSONSnapshot>(
 )
 ```
 
-##### For provider implementors
+### For provider implementors
 
 When implementing a custom [`ConfigProvider`](./configprovider.md), use the [`ConfigValue`](./configvalue.md) type’s `isSecret` property:
 
@@ -123,7 +123,7 @@ let regularValue = ConfigValue("public-data", isSecret: false)
 
 Set the `isSecret` property to `true` when your provider reads the values from a secrets store and must not log them.
 
-##### How the library protects secret values
+### How the library protects secret values
 
 The library automatically handles secret values with:
 
@@ -138,7 +138,7 @@ print(provider)
 
 > ⚠️ **Warning**: Marking a configuration key as secret does not prevent you from exposing the secret directly. If you log values outside of using the [`AccessLogger`](./accesslogger.md) or [`FileAccessLogger`](./fileaccesslogger.md), you may inadvertently expose the information.
 
-##### Best practices
+### Best practices
 
 1. **Mark all sensitive data as secret**: API keys, passwords, tokens, private keys, connection strings.
 2. **Use provider-level specification** when you know which keys are always secret.

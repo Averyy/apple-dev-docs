@@ -21,7 +21,7 @@ func requestSharingOfWindow(_ window: NSWindow) async throws
 - (void) requestSharingOfWindow:(NSWindow *) window completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Request sharing of window.  If there is an available ScreenCaptureKit sharing session, an alert will be presented asking the user to confirm the share
 

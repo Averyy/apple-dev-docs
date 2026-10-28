@@ -23,7 +23,7 @@ optional func preparePreviewOfFile(at url: URL) async throws
 - (void) preparePreviewOfFileAtURL:(NSURL *) url completionHandler:(void (^)(NSError *)) handler;
 ```
 
-#### Discussion
+## Discussion
 
 The operating system calls this method only once from the main thread before it presents the previewing controller. To avoid blocking the main thread, don’t perform long-running or resource-intensive work.
 

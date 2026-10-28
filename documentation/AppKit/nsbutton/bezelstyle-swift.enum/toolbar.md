@@ -19,7 +19,7 @@ case toolbar
 NSBezelStyleToolbar
 ```
 
-#### Discussion
+## Discussion
 
 Use this case for displaying a button in an [`NSToolbar`](../../nstoolbar.md).
 

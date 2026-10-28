@@ -29,11 +29,11 @@ static SparseMatrix_Float SparseConvertFromCoordinate(int rowCount, int columnCo
 
 - [Creating a sparse matrix from coordinate format arrays](./creating-a-sparse-matrix-from-coordinate-format-arrays.md)
 
-#### Return Value
+## Return Value
 
 A new [`SparseMatrix_Float`](./sparsematrix_float.md) object. After you finish using a sparse matrix, call [`SparseCleanup(_:)`](./sparsecleanup%28_%29-6ywzn.md) to release its references to any memory that the Sparse Solvers library allocates.
 
-#### Discussion
+## Discussion
 
 The conversion drops out-of-range entries, and sums duplicate entries.
 

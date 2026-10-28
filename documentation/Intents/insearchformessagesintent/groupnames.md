@@ -33,7 +33,7 @@ var groupNames: [String]? { get }
 @property (atomic, copy, readonly, nullable) NSArray<NSString *> * groupNames;
 ```
 
-#### Discussion
+## Discussion
 
 When this property contains one or more [`NSString`](../../Foundation/nsstring.md) objects, your search should return only messages that sent to the specified groups. Use the operator in the [`groupNamesOperator`](./groupnamesoperator.md) property to determine whether to search for messages containing all, some, or none of the specified groups.
 

@@ -5,7 +5,7 @@
 
 Track the distance between two fingers and use that information to scale or zoom your content.
 
-#### Overview
+## Overview
 
 A pinch gesture is a continuous gesture that tracks the distance between the first two fingers that touch the screen. Use the [`UIPinchGestureRecognizer`](./uipinchgesturerecognizer.md) class to detect pinch gestures.
 

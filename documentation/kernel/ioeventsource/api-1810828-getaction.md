@@ -11,7 +11,7 @@ Get'ter for $link action variable.
 virtual IOEventSource::Action getAction() const;
 ```
 
-#### Return Value
+## Return Value
 
 value of action.
 

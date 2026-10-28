@@ -17,7 +17,7 @@ A Base64-encoded string that contains the encrypted payment information to send 
 let paymentCardData: String
 ```
 
-#### Discussion
+## Discussion
 
 This information is present any time the system reads a card, including for purchases, refunds, and card verification.
 

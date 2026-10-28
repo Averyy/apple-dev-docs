@@ -16,7 +16,7 @@
 kSENSE_DATA_VALID_Mask
 ```
 
-#### Discussion
+## Discussion
 
 Validity mask to use when checking the VALID_RESPONSE_CODE field.
 

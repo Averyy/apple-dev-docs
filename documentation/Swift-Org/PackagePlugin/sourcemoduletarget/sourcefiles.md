@@ -18,7 +18,7 @@ The source files that are associated with this target.
 var sourceFiles: FileList { get }
 ```
 
-#### Discussion
+## Discussion
 
 Any files that have been excluded in the manifest are filtered out.
 

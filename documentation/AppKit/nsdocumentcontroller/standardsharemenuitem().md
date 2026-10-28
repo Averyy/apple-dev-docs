@@ -19,11 +19,11 @@ func standardShareMenuItem() -> NSMenuItem
 - (NSMenuItem *) standardShareMenuItem;
 ```
 
-#### Return Value
+## Return Value
 
 An [`NSMenuItem`](../nsmenuitem.md) for the Share menu.
 
-#### Discussion
+## Discussion
 
 Use this method to perform custom placement of the Share menu if your [`NSDocument`](../nsdocument.md) subclass returns `false` for [`allowsAutomaticShareMenu`](./allowsautomaticsharemenu.md).
 

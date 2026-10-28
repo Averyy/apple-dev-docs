@@ -19,7 +19,7 @@ func rssiValue() -> Int
 - (NSInteger) rssiValue;
 ```
 
-#### Discussion
+## Discussion
 
 Dynamically queries the interface for the current aggregate RSSI measurement. Returns 0 in the case of an error, or if the interface is not participating in a network.
 

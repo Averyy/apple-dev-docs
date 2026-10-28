@@ -10,7 +10,7 @@ framework: "Swift-Org/docc"
 
 Elevate your content’s visual appeal by adding images.
 
-#### Overview
+## Overview
 
 DocC extends Markdown’s image support so you can provide appearance and display scale-aware versions of an image. You use specific components to create image filenames, and DocC uses the most appropriate version of the image when displaying your documentation.
 

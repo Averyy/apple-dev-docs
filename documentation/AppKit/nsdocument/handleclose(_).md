@@ -19,7 +19,7 @@ func handleClose(_ command: NSCloseCommand) -> Any?
 - (id) handleCloseScriptCommand:(NSCloseCommand *) command;
 ```
 
-#### Discussion
+## Discussion
 
 Extracts Close command arguments from the `command` object and uses them to determine how to close the document—specifically, whether to ignore unsaved changes, save changes automatically, or ask the user and to identify the file in which to save the document (by default, the file that was opened or previously saved to). A Close AppleScript command may specify more than one document to close. If so, a message is sent to each document object.
 

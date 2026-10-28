@@ -22,7 +22,7 @@ Configures whether navigation links show a disclosure indicator.
 @export(implementation) @preconcurrency func navigationLinkIndicatorVisibility(_ visibility: Visibility) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 If you need to detect whether the navigation disclosure indicator should be shown for the current view, read the [`navigationLinkIndicatorVisibility`](../environmentvalues/navigationlinkindicatorvisibility.md) environment value.
 

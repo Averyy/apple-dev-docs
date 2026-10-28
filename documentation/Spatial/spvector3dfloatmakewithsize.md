@@ -19,11 +19,11 @@
 static SPVector3DFloat SPVector3DFloatMakeWithSize(SPSize3DFloat size);
 ```
 
-#### Return Value
+## Return Value
 
 A new vector.
 
-#### Discussion
+## Discussion
 
 Creates a vector with elements specified as dimensions of a size structure.
 

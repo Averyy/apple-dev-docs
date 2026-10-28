@@ -25,7 +25,7 @@ func string(for obj: Any?) -> String?
 - (NSString *) stringForObjectValue:(id) obj;
 ```
 
-#### Discussion
+## Discussion
 
 Returns `nil` if `obj` is not of the correct class (`NSNumber` or `NSMeasurement`). Throws an exception if `obj` is an `NSMeasurement` whose unit does not belong to the `NSUnitInformationStorage` dimension.
 

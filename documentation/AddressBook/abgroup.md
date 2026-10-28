@@ -19,7 +19,7 @@ class ABGroup
 @interface ABGroup : ABRecord
 ```
 
-#### Overview
+## Overview
 
 The `ABGroup` class supports the concept of a “group” containing one or more persons. People may belong to multiple groups, and groups may also belong to other groups unless the relationship causes a circular reference. The only predefined property of a group is its name. However, similar to person records, you can add your own properties to group records. Groups not only help to organize person records, but also allow you to create email distribution lists.
 

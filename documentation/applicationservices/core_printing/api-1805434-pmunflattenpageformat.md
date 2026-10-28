@@ -16,11 +16,11 @@ OSStatus PMUnflattenPageFormat (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../core_printing.md#1670007). The result code `kPMInvalidParameter` is returned if the flattened `PMPageFormat` object was created by an incompatible version of Core Printing.
 
-#### Overview
+## Overview
 
 The `PMUnflattenPageFormat` function creates a new `PMPageFormat` object that contains the data from the flattened page format data. You should call the function [`PMSessionValidatePageFormat`](../api-1459090-pmsessionvalidatepageformat.md) to make sure the page format object contains valid values. 
 

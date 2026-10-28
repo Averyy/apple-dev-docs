@@ -24,7 +24,7 @@ let HKMetadataKeyVO2MaxValue: String
 extern NSString * const HKMetadataKeyVO2MaxValue;
 ```
 
-#### Discussion
+## Discussion
 
 The system sets this key on [`lowCardioFitnessEvent`](./hkcategorytypeidentifier/lowcardiofitnessevent.md) samples. It contains the value of the VO2 max measurement that triggered the event. The value of this key is an [`HKQuantity`](./hkquantity.md) object with a unit of `ml/kg/min`. For more information on working with complex units, see [`unitMultiplied(by:)`](./hkunit/unitmultiplied%28by%29.md), [`unitDivided(by:)`](./hkunit/unitdivided%28by%29.md), and [`init(from:)`](./hkunit/init%28from%29-9qont.md).
 

@@ -20,11 +20,11 @@ init(containerClassDescription classDesc: NSScriptClassDescription, containerSpe
 - (instancetype) initWithContainerClassDescription:(NSScriptClassDescription *) classDesc containerSpecifier:(NSScriptObjectSpecifier *) container key:(NSString *) property index:(NSInteger) index;
 ```
 
-#### Return Value
+## Return Value
 
 Initialized [`NSIndexSpecifier`](../nsindexspecifier.md) object with its `index` property set to `objectIndex`.
 
-#### Discussion
+## Discussion
 
 Invokes the super class’s [`init(containerClassDescription:containerSpecifier:key:)`](../nsscriptobjectspecifier/init%28containerclassdescription,containerspecifier,key%29.md) method and sets the `index` property of the index specifier to `objectIndex`.
 

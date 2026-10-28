@@ -19,7 +19,7 @@ struct CFXMLParserCallBacks
 typedef struct { ... } CFXMLParserCallBacks;
 ```
 
-#### Overview
+## Overview
 
 This structure is passed to one of the `CFXMLParserCreate...` functions. Only the `createXMLStructure`, `addChild`, and `endXMLStructure` fields are required. Set the others to `NULL` if you don’t wish to implement them.
 

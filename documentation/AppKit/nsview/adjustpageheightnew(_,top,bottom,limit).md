@@ -19,7 +19,7 @@ func adjustPageHeightNew(_ newBottom: UnsafeMutablePointer<CGFloat>, top oldTop:
 - (void) adjustPageHeightNew:(CGFloat *) newBottom top:(CGFloat) oldTop bottom:(CGFloat) oldBottom limit:(CGFloat) bottomLimit;
 ```
 
-#### Discussion
+## Discussion
 
 This method is invoked by [`printView(_:)`](./printview%28_%29.md). The view can raise the bottom edge and return the new value in `newBottom`, allowing it to prevent items such as lines of text from being divided across pages. If `bottomLimit` is exceeded, the pagination mechanism simply uses `bottomLimit` for the bottom edge.
 

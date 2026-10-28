@@ -24,7 +24,7 @@ struct CommandGroup<Content> where Content : View
 
 - [Building and customizing the menu bar with SwiftUI](./building-and-customizing-the-menu-bar-with-swiftui.md)
 
-#### Overview
+## Overview
 
 In macOS, SwiftUI realizes command groups as collections of menu items in a menu bar menu. In iOS, iPadOS, and tvOS, SwiftUI creates key commands for each of a group’s commands that has a keyboard shortcut.
 

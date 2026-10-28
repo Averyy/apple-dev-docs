@@ -24,7 +24,7 @@ var ps: Float { get set }
 @property (nonatomic, readwrite) float ps;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `1.0`.
 

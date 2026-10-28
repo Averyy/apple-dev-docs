@@ -17,7 +17,7 @@ Convert a flattened list of key/value tuples back into a `NestedDictionary` stru
 static func unflattened(_ flat: some Collection<(String, Element)>) -> NestedDictionary<Key, Element> where Key == String
 ```
 
-##### See Also
+### See Also
 
 - [`flattened(prefix:)`](./flattened%28prefix%29.md)
 - [`unflattened(_:)`](./unflattened%28_%29-4p8bn.md)

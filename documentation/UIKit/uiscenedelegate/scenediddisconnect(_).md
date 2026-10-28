@@ -27,7 +27,7 @@ optional func sceneDidDisconnect(_ scene: UIScene)
 
 - [Presenting content on a connected display](../presenting-content-on-a-connected-display.md)
 
-#### Discussion
+## Discussion
 
 Use this method to perform any final cleanup before your scene is purged from memory. For example, use it to release references to files or shared resources and to save user data.
 

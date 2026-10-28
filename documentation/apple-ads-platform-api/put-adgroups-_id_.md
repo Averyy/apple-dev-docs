@@ -9,13 +9,13 @@ Update an existing ad group’s name, status, bid strategy, targeting, or schedu
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 This endpoint updates an existing ad group. Only include the fields you want to modify. See the Determine Which Fields You Can Update section below to confirm which fields you can change.
 
 For ad groups under an auto-bidding campaign, see [`AdGroupUpdate.BidStrategy`](./adgroupupdate/bidstrategy-data.dictionary.md) for how to echo the campaign’s bid strategy so the API doesn’t reject a `GET`-then-`PUT` round trip.
 
-##### Determine Which Fields You Can Update
+### Determine Which Fields You Can Update
 
 To change any field marked Yes below, use this endpoint. Fields marked No are either only settable at creation via [`Create an Ad Group`](./post-adgroups.md) or are system-computed. Sending them in an update request has no effect. See the Notes column for which applies to a given field. The `cpaCap` field is marked Deprecated: the API still accepts it on update for backward compatibility, but new integrations should use `bidStrategy` instead.
 
@@ -42,13 +42,13 @@ To change any field marked Yes below, use this endpoint. Fields marked No are ei
 | `modificationTime` | No | Updated automatically on every change. Read-only. |
 | `deleted` | No | Managed via [`Delete an Ad Group`](./delete-adgroups-_id_.md), not via update. Read-only. |
 
-#### Payload Examples
+## Payload Examples
 
 **Pause Ad Group**:
 
 Pause an ad group by setting `status` to `PAUSED`. Send only the fields you want to change.
 
-##### Request
+### Request
 
 ```http
 PUT /v1/adgroups/555666777
@@ -58,7 +58,7 @@ PUT /v1/adgroups/555666777
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -107,7 +107,7 @@ PUT /v1/adgroups/555666777
 
 Increase the tap bid for an Apple Maps ad group. Send only the `bidStrategy` field.
 
-##### Request
+### Request
 
 ```http
 PUT /v1/adgroups/555666779
@@ -124,7 +124,7 @@ PUT /v1/adgroups/555666779
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -164,7 +164,7 @@ PUT /v1/adgroups/555666779
 
 For an ad group under an auto-bidding campaign (`MAX_CONVERSIONS` or `MAX_ENGAGEMENTS`), a `GET`-then-`PUT` round trip is safe: echo the same `bidStrategyType` and `bidStrategyGoal` as the campaign with `bid` set to `0`. The API rejects a non-zero bid or a type or goal that doesn’t match the campaign’s.
 
-##### Request
+### Request
 
 ```http
 PUT /v1/adgroups/555666781
@@ -182,7 +182,7 @@ PUT /v1/adgroups/555666781
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -215,7 +215,7 @@ PUT /v1/adgroups/555666781
 
 Update specific targeting dimensions. The request modifies only the dimensions it includes. Omitted dimensions remain unchanged. Each dimension’s `include` array fully replaces the existing values for that dimension. Daypart slot values range from 0–167 (slot 0 = Sunday 12:00 AM, slot 24 = Monday 12:00 AM).
 
-##### Request
+### Request
 
 ```http
 PUT /v1/adgroups/555666780
@@ -241,7 +241,7 @@ PUT /v1/adgroups/555666780
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {

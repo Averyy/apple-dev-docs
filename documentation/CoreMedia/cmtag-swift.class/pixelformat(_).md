@@ -21,7 +21,7 @@ Creates a tag containing pixel format information.
 static func pixelFormat(_ value: OSType) -> CMTypedTag<OSType>
 ```
 
-#### Return Value
+## Return Value
 
 A new typed tag containing the pixel format represented by `value`.
 

@@ -15,7 +15,7 @@ Describes different type of HID reports.
 typedef enum IOHIDReportType IOHIDReportType;
 ```
 
-#### Discussion
+## Discussion
 
 Used by the IOHIDFamily to identify the type of report being processed.
 

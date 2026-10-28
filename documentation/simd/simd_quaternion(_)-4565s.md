@@ -14,7 +14,7 @@ func simd_quaternion(_ xyzr: simd_half4) -> simd_quath
 static simd_quath simd_quaternion(simd_half4 xyzr);
 ```
 
-#### Discussion
+## Discussion
 
 Constructs a quaternion from a four-element vector.
 

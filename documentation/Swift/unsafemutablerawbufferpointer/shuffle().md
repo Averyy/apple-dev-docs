@@ -23,7 +23,7 @@ mutating func shuffle()
 
 Available when `Self` conforms to `RandomAccessCollection`.
 
-#### Discussion
+## Discussion
 
 Use the `shuffle()` method to randomly reorder the elements of an array.
 

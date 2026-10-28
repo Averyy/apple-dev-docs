@@ -24,11 +24,11 @@ typealias CFHostClientCallBack = (CFHost, CFHostInfoType, UnsafePointer<CFStream
 typedef void (*)(struct __CFHost *, enum CFHostInfoType, const CFStreamError *, void *) CFHostClientCallBack;
 ```
 
-#### Discussion
+## Discussion
 
 If you name your callback `MyHostClientCallBack`, you would declare it like this:
 
-##### Discussion
+### Discussion
 
 The callback function for a CFHost object is called one or more times when an asynchronous resolution completes for the specified host, when an asynchronous resolution is cancelled, or when an error occurs during an asynchronous resolution.
 

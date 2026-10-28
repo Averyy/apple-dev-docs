@@ -21,7 +21,7 @@ nonisolated
 func menuStyle<S>(_ style: S) -> some View where S : MenuStyle
 ```
 
-#### Discussion
+## Discussion
 
 To set a specific style for all menu instances within a view, use the `menuStyle(_:)` modifier:
 

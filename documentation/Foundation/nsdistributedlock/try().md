@@ -20,11 +20,11 @@ func `try`() -> Bool
 - (BOOL) tryLock;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the attempt to acquire the receiver was successful, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Raises `NSGenericException` if a file-system error occurs.
 

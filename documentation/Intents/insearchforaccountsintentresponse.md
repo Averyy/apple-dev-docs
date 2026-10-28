@@ -23,7 +23,7 @@ class INSearchForAccountsIntentResponse
 @interface INSearchForAccountsIntentResponse : INIntentResponse
 ```
 
-#### Overview
+## Overview
 
 Use an [`INSearchForAccountsIntentResponse`](./insearchforaccountsintentresponse.md) object to return the account information found during a search operation. After performing a search using the criteria specified in an [`INSearchForAccountsIntent`](./insearchforaccountsintent.md) object, create an instance of this class and fill it with the results of that search. Siri communicates the information from your response to the user at appropriate times.
 

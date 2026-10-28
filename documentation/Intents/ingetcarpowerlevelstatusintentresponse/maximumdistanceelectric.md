@@ -31,7 +31,7 @@ var maximumDistanceElectric: Measurement<UnitLength>? { get set }
 @property (atomic, copy, readwrite, nullable) NSMeasurement<NSUnitLength *> * maximumDistanceElectric;
 ```
 
-#### Discussion
+## Discussion
 
 Due to driving characteristics, this value can change over time when the vehicle’s in motion. The state of charge can also impact this value.
 

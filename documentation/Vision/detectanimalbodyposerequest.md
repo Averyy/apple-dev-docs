@@ -20,7 +20,7 @@ A request that detects an animal body pose.
 struct DetectAnimalBodyPoseRequest
 ```
 
-#### Overview
+## Overview
 
 This request generates a collection of [`AnimalBodyPoseObservation`](./animalbodyposeobservation.md) objects that describe the position of each animal the request detects.
 

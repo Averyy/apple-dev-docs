@@ -23,7 +23,7 @@ case rightMargin
 NSLayoutAttributeRightMargin
 ```
 
-#### Discussion
+## Discussion
 
 For [`UIView`](../../uiview.md) objects, the margins are defined by their [`layoutMargins`](../../uiview/layoutmargins.md) property.
 

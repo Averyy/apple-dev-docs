@@ -19,7 +19,7 @@ Classifies a string with a label.
 func prediction(from text: String) throws -> String
 ```
 
-#### Return Value
+## Return Value
 
 The label for the given string.
 

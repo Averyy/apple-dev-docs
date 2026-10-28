@@ -21,7 +21,7 @@ Creates a reference-type attributed string from the specified value-type attribu
 convenience init(_ attrStr: AttributedString)
 ```
 
-#### Discussion
+## Discussion
 
 This initializer includes all attribute scopes defined by the SDK, such as [`AttributeScopes.FoundationAttributes`](../attributescopes/foundationattributes.md), [`AttributeScopes.SwiftUIAttributes`](../attributescopes/swiftuiattributes.md), and [`AttributeScopes.AccessibilityAttributes`](../attributescopes/accessibilityattributes.md). To use third-party attribute scopes, use the initializers [`init(_:including:)`](./init%28_,including%29-9gogq.md) or [`init(_:including:)`](./init%28_,including%29-8iy4i.md).
 

@@ -19,7 +19,7 @@ let kSCValNetPPPAuthProtocolCHAP: CFString
 extern CFStringRef const kSCValNetPPPAuthProtocolCHAP;
 ```
 
-#### Discussion
+## Discussion
 
 This value applies to the [`kSCPropNetPPPAuthProtocol`](./kscpropnetpppauthprotocol-swift.var.md) key.
 

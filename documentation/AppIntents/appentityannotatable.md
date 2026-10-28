@@ -25,7 +25,7 @@ protocol AppEntityAnnotatable
 
 - [Providing contextual cues to Apple Intelligence and Siri](./providing-contextual-cues-to-apple-intelligence-and-siri.md)
 
-#### Overview
+## Overview
 
 System types adopt the `AppEntityAnnotatable` protocol and use it to store a reference to an app entity. Don’t add support for this protocol to your own custom types. Instead, the system incorporates it into types like [`NSUserActivity`](../Foundation/nsuseractivity.md) to support your custom entities. The system types use the presence of an entity to improve system experiences like Apple Intelligence, Siri, and Shortcuts.
 

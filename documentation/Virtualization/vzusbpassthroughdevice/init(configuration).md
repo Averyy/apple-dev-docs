@@ -17,11 +17,11 @@ init(configuration: VZUSBPassthroughDeviceConfiguration) throws
 - (instancetype) initWithConfiguration:(VZUSBPassthroughDeviceConfiguration *) configuration error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized VZUSBPassthroughDevice on success, or nil on failure.
 
-#### Discussion
+## Discussion
 
 Initialize the USB passthrough device.
 

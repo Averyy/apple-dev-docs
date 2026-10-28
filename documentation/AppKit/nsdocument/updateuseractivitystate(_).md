@@ -19,7 +19,7 @@ func updateUserActivityState(_ activity: NSUserActivity)
 - (void) updateUserActivityState:(NSUserActivity *) activity;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation of this method puts the document’s [`fileURL`](./fileurl.md) into the [`NSUserActivity`](../../Foundation/nsuseractivity.md) object’s [`userInfo`](../../Foundation/nsuseractivity/userinfo.md) dictionary with the [`NSUserActivityDocumentURLKey`](../nsuseractivitydocumenturlkey.md). [`NSDocument`](../nsdocument.md) automatically sets the [`needsSave`](../../Foundation/nsuseractivity/needssave.md) property of the [`NSUserActivity`](../../Foundation/nsuseractivity.md) to [`true`](../../Swift/true.md) when the [`fileURL`](./fileurl.md) changes.
 

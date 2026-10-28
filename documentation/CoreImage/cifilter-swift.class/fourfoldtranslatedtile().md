@@ -24,11 +24,11 @@ class func fourfoldTranslatedTile() -> any CIFilter & CIFourfoldTranslatedTile
 + (CIFilter<CIFourfoldTranslatedTile> *) fourfoldTranslatedTileFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The tiled image.
 
-#### Discussion
+## Discussion
 
 This method applies the four-fold translated tile filter to an image. The effect produces a four-way tiled image by applying four translation operations. Translation operations map the position of each element in the photo to a new position in the output image.
 

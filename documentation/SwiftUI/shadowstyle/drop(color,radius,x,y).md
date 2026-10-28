@@ -21,11 +21,11 @@ Creates a custom drop shadow style.
 static func drop(color: Color = .init(.sRGBLinear, white: 0, opacity: 0.33), radius: CGFloat, x: CGFloat = 0, y: CGFloat = 0) -> ShadowStyle
 ```
 
-#### Return Value
+## Return Value
 
 A new shadow style.
 
-#### Discussion
+## Discussion
 
 Drop shadows draw behind the source content by blurring, tinting and offsetting its per-pixel alpha values.
 

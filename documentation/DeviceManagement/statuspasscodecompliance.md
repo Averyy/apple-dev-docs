@@ -19,9 +19,9 @@ The status item that reports the device’s passcode compliance.
 object StatusPasscodeCompliance
 ```
 
-#### Discussion
+## Discussion
 
-##### Status item availability
+### Status item availability
 
 |  |  |
 | --- | --- |
@@ -32,7 +32,7 @@ object StatusPasscodeCompliance
 | Allowed in system scope | iOS, Shared iPad, visionOS, watchOS |
 | Allowed in user scope | Shared iPad |
 
-##### Status item example
+### Status item example
 
 ```json
 {

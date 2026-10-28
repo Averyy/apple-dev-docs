@@ -23,7 +23,7 @@ func setTrainingTensorParameters(_ parameters: [MLCTensorParameter]) -> Bool
 - (BOOL) setTrainingTensorParameters:(NSArray<MLCTensorParameter *> *) parameters;
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the operation was successful.
 

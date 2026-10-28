@@ -24,7 +24,7 @@ func prepareToPlay()
 - (void) prepareToPlay;
 ```
 
-#### Discussion
+## Discussion
 
 If a media player isn’t already prepared to play when you call the [`play()`](./play%28%29.md) method, that method automatically calls this method. However, to minimize playback delay, call this method before you call [`play()`](./play%28%29.md).
 

@@ -26,7 +26,7 @@ NIErrorCodeInvalidConfiguration
 
 - [Initiating and maintaining a session](../../initiating-and-maintaining-a-session.md)
 
-#### Discussion
+## Discussion
 
 The framework invalidates a session with this error code if the app provides an invalid discovery token to the [`init(peerToken:)`](../../ninearbypeerconfiguration/init%28peertoken%29.md) initializer.
 

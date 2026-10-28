@@ -26,11 +26,11 @@ var timedMetadata: [AVMetadataItem]? { get }
 @property (nonatomic, readonly, nullable) NSArray<AVMetadataItem *> * timedMetadata;
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`AVMetadataItem`](../avmetadataitem.md) or `nil` if no metadata was found.
 
-#### Discussion
+## Discussion
 
 Prior to the player item loading its media, this property value is `nil`. You can key-value observe this property to monitor when metadata becomes available.
 

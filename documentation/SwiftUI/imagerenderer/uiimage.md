@@ -23,7 +23,7 @@ final var uiImage: UIImage? { get }
 
 Available when `Content` conforms to `View`.
 
-#### Discussion
+## Discussion
 
 The renderer notifies its `objectWillChange` publisher when the contents of the image may have changed.
 

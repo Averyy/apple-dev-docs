@@ -21,7 +21,7 @@ var isCameraAssistanceEnabled: Bool { get set }
 @property (nonatomic, assign, getter=isCameraAssistanceEnabled) BOOL cameraAssistanceEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `false`.
 

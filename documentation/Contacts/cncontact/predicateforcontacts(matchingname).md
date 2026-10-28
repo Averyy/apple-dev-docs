@@ -24,11 +24,11 @@ class func predicateForContacts(matchingName name: String) -> NSPredicate
 + (NSPredicate *) predicateForContactsMatchingName:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A predicate that you can use to fetch contacts from [`CNContactStore`](../cncontactstore.md).
 
-#### Discussion
+## Discussion
 
 The name can contain any number of words.
 

@@ -21,15 +21,15 @@ convenience init?(path: String)
 - (id) initWithPath:(NSString *) path;
 ```
 
-#### Return Value
+## Return Value
 
 File wrapper for `node`.
 
-#### Discussion
+## Discussion
 
 If `node` is a directory, this method recursively creates file wrappers for each node within that directory.
 
-##### Special Considerations
+### Special Considerations
 
 Beginning with OS X v10.6, the preferred method of referring to files is with a `file://` URL. Therefore, this method has been deprecated in favor of [`init(url:options:)`](./init%28url,options%29-70161.md).
 

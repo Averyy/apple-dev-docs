@@ -20,7 +20,7 @@ struct AudioObjectPropertyAddress
 struct AudioObjectPropertyAddress;
 ```
 
-#### Overview
+## Overview
 
 - term: `mSelector`: The AudioObjectPropertySelector for the property.
 - term: `mScope`: The AudioObjectPropertyScope for the property.

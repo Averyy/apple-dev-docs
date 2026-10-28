@@ -23,7 +23,7 @@ kFxParameterFlag_DONT_REMAP_COLORS
 
 - [Managing color space and gamut in plug-ins](../Professional-Video-Applications/managing-color-space-and-gamut-in-plug-ins.md)
 
-#### Discussion
+## Discussion
 
 This flag indicates that this parameter is a color channel that doesn’t logically represent a color, and therefore the host doesn’t color manage the values. The parameter API retrieves the component values as-is without converting them to the working color space.
 

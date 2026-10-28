@@ -19,7 +19,7 @@ func stop(_ sender: Any?)
 - (void) stop:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 This method notifies the app that you want to exit the current run loop as soon as it finishes processing the current [`NSEvent`](../nsevent.md) object. This method doesn’t forcibly exit the current run loop. Instead it sets a flag that the app checks only after it finishes dispatching an actual event object. For example, you could call this method from an action method responding to a button click or from one of the many methods defined by the [`NSResponder`](../nsresponder.md) class. However, calling this method from a timer or run-loop observer routine wouldn’t stop the run loop because they don’t result in the posting of an [`NSEvent`](../nsevent.md) object.
 

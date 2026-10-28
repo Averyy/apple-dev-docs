@@ -15,7 +15,7 @@ The boundary of the area within which the map view’s center needs to remain.
 cameraBoundary?: CoordinateRegionData | MapRectData | null;
 ```
 
-#### Discussion
+## Discussion
 
 This property requires either a [`CoordinateRegion`](../coordinateregion.md) or a [`MapRect`](../maprect.md) instance as a value.
 

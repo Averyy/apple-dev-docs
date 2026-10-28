@@ -9,7 +9,7 @@ Search for geographic locations by entity type and ID for use in ad group geo ta
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 This endpoint returns a list of geographic locations matching the specified entity criteria. To look up valid geo IDs and names before assigning geo targets to an ad group, use this endpoint.
 
@@ -17,13 +17,13 @@ The API sorts results alphabetically by `displayName` and paginates them using [
 
 The `supplySource` field controls which entity types appear in the response. Use `APPSTORE` for App Store campaigns and `MAPS` for Apple Maps campaigns. Unlike the GET endpoint, the POST endpoint doesn’t filter by eligibility. The API always returns soft-blocked geos with their eligibility data included.
 
-#### Payload Examples
+## Payload Examples
 
 **Query by Locality ID**:
 
 Look up a specific locality by its numeric ID for use in an App Store ad group.
 
-##### Request
+### Request
 
 ```http
 POST /v1/search/geo
@@ -43,7 +43,7 @@ POST /v1/search/geo
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -70,7 +70,7 @@ POST /v1/search/geo
 
 Look up an admin area (state) for use in an Apple Maps ad group.
 
-##### Request
+### Request
 
 ```http
 POST /v1/search/geo
@@ -90,7 +90,7 @@ POST /v1/search/geo
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -116,7 +116,7 @@ POST /v1/search/geo
 
 Batch-resolve multiple geo locations (a state and a postal code) in a single request.
 
-##### Request
+### Request
 
 ```http
 POST /v1/search/geo
@@ -140,7 +140,7 @@ POST /v1/search/geo
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {

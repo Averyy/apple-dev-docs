@@ -21,7 +21,7 @@ init(startButtonTitle: String?, additionalRoutesButtonTitle: String?, overviewBu
 - (instancetype) initWithStartButtonTitle:(NSString *) startButtonTitle additionalRoutesButtonTitle:(NSString *) additionalRoutesButtonTitle overviewButtonTitle:(NSString *) overviewButtonTitle;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized trip preview text configuration.
 

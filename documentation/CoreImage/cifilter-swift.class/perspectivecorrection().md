@@ -24,11 +24,11 @@ class func perspectiveCorrection() -> any CIFilter & CIPerspectiveCorrection
 + (CIFilter<CIPerspectiveCorrection> *) perspectiveCorrectionFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The adjusted image.
 
-#### Discussion
+## Discussion
 
 This method applies the perspective correction filter to an image. The effect applies a perspective correction transforming nonrectangular area in the source image to a rectangular output image.
 

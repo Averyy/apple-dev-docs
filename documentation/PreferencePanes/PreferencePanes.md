@@ -10,7 +10,7 @@ Integrate your app’s custom preferences into the System Preferences app.
 - Mac Catalyst 14.0+
 - macOS 10.1+
 
-#### Overview
+## Overview
 
 Use the Preference Panes framework to integrate your custom system-level preferences into the System Preferences app. You use this framework to implement a preference pane bundle, which contains the custom interface you want to display to the user. You then install your bundle in the appropriate `Library/PreferencePanes` directory on the user’s system.
 

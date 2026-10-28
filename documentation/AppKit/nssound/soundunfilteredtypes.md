@@ -19,7 +19,7 @@ class var soundUnfilteredTypes: [String] { get }
 @property (class, copy, readonly) NSArray<NSString *> * soundUnfilteredTypes;
 ```
 
-#### Return Value
+## Return Value
 
 Array of UTIs identifying the file types the `NSSound` class understands.
 

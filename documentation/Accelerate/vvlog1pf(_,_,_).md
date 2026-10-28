@@ -25,9 +25,9 @@ func vvlog1pf(_: UnsafeMutablePointer<Float>, _: UnsafePointer<Float>, _: Unsafe
 void vvlog1pf(float *, const float *, const int *);
 ```
 
-#### Discussion
+## Discussion
 
-##### Parameters:
+### Parameters:
 
 - **parameter 1**: The output array, *y*.
 - **parameter 2**: The input array, *x*.

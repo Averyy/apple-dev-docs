@@ -13,7 +13,7 @@
 gestaltSystemVersionMinor = 'sys2'
 ```
 
-#### Discussion
+## Discussion
 
 The minor operating system version number. For example, in *10.4.12* this would be the decimal value 4.
 

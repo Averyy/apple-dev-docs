@@ -15,11 +15,11 @@ The request body object for updating an existing location group.
 object LocationGroupUpdate
 ```
 
-#### Discussion
+## Discussion
 
 The `LocationGroupUpdate` object is the partial-update payload sent to [`Update Location Group`](./update-location-group.md). All fields are optional. The system changes only the fields you provide. Omitted fields retain their current values.
 
-##### Example
+### Example
 
 ```json
 {

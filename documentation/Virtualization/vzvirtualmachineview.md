@@ -19,7 +19,7 @@ class VZVirtualMachineView
 @interface VZVirtualMachineView : NSView
 ```
 
-#### Overview
+## Overview
 
 The `VZVirtualMachineView` is a UI element that shows the contents of the VM frame buffer that you can optionally configure to respond to changes in the host’s display settings. If the VM configuration includes a keyboard and a pointing device, the view forwards keyboard and mouse events to the VM through those devices.
 

@@ -22,7 +22,7 @@ var isScaleAnimated: Bool { get set }
 
 Available when `Value` is `JointTransforms`.
 
-#### Discussion
+## Discussion
 
 If you set this property to `true`, the animation accommodates scale differences in the entity’s transform by interpolating to the target scale across the animation timeline.
 

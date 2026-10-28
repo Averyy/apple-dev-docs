@@ -21,7 +21,7 @@ Generates a data frame by copying the data frame’s rows and then sorting the r
 func sorted<T>(on columnID: ColumnID<T>, by areInIncreasingOrder: (T, T) throws -> Bool) rethrows -> DataFrame
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: Elements with a value of `nil` are less than all non-`nil` values.
 

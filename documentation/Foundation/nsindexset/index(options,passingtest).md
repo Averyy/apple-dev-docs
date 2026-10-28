@@ -25,7 +25,7 @@ func index(options opts: NSEnumerationOptions = [], passingTest predicate: (Int,
 - (NSUInteger) indexWithOptions:(NSEnumerationOptions) opts passingTest:(BOOL (^)(NSUInteger idx, BOOL *stop)) predicate;
 ```
 
-#### Return Value
+## Return Value
 
 The index of the first object that passes the predicate test.
 

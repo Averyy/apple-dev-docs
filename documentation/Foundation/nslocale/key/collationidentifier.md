@@ -25,7 +25,7 @@ static let collationIdentifier: NSLocale.Key
 extern NSLocaleKey const NSLocaleCollationIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is an `NSString` object; for example, `"pinyin"`.
 

@@ -19,7 +19,7 @@ var inputContext: NSTextInputContext? { get }
 @property (strong, readonly, nullable) NSTextInputContext * inputContext;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is `nil` when the view does not conform to the [`NSTextInputClient`](../nstextinputclient.md) protocol.
 

@@ -25,7 +25,7 @@ var sharpness: Float { get set }
 @property (nonatomic) float sharpness;
 ```
 
-#### Discussion
+## Discussion
 
 The larger the value, the sharper the result.
 

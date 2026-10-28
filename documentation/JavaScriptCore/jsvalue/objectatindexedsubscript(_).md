@@ -24,11 +24,11 @@ func objectAtIndexedSubscript(_ index: Int) -> JSValue!
 - (JSValue *) objectAtIndexedSubscript:(NSUInteger) index;
 ```
 
-#### Return Value
+## Return Value
 
 The value at the specified index, or the JavaScript `undefined` value if no property exists at that index.
 
-#### Discussion
+## Discussion
 
 This method is equivalent to the [`atIndex(_:)`](./atindex%28_%29.md) method, but provides Objective-C subscripting support.
 

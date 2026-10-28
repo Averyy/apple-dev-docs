@@ -17,7 +17,7 @@ Sends [`textDidChange:`](./textdidchange_.md) to the edited cell and posts an [`
 - (void) textDidChange:(NSNotification *) notification;
 ```
 
-#### Discussion
+## Discussion
 
 See the [`NSText`](../nstext.md) class specification for more information on this text delegate method. For additional details, see the [`NSControl`](../nscontrol.md) class specification.
 

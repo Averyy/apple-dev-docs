@@ -25,7 +25,7 @@ init(bytes: UnsafeRawPointer?, length: Int)
 - (instancetype) initWithBytes:(const void *) bytes length:(NSUInteger) length;
 ```
 
-#### Discussion
+## Discussion
 
 A data object initialized by adding to it `length` bytes of data copied from the buffer `bytes`. The returned object might be different than the original receiver.
 

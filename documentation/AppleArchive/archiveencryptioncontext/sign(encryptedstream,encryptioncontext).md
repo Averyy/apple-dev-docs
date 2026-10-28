@@ -21,7 +21,7 @@ Signs an encrypted archive using the credentials stored in the specified encrypt
 static func sign(encryptedStream: ArchiveByteStream, encryptionContext context: ArchiveEncryptionContext) throws
 ```
 
-#### Discussion
+## Discussion
 
 Close the encrypted stream before calling this function, and create the archive with a `signatureMode` other than [`none`](./signaturemode-swift.struct/none.md). Create the context that you pass to this function from the same archive and it must contain the signature encryption key and the signing private key.
 

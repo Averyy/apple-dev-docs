@@ -30,7 +30,7 @@ var textLabel: UILabel? { get }
 - [Configuring the cells for your table](../configuring-the-cells-for-your-table.md)
 - [Filling a table with data](../filling-a-table-with-data.md)
 
-#### Discussion
+## Discussion
 
 This property holds the main label of the cell. [`UITableViewCell`](../uitableviewcell.md) adds an appropriate label when you create the cell in a particular cell style. See [`UITableViewCell.CellStyle`](./cellstyle.md) for descriptions of the main label in currently defined cell styles.
 

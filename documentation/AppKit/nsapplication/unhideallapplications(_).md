@@ -19,7 +19,7 @@ func unhideAllApplications(_ sender: Any?)
 - (void) unhideAllApplications:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 This action causes each app to order its windows to the front, which could obscure the currently active window in the active app.
 

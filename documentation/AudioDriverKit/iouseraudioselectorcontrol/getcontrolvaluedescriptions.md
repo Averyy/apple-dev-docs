@@ -15,11 +15,11 @@ Gets value descriptions used by the selector control.
 size_t GetControlValueDescriptions(IOUserAudioSelectorValueDescription *out_control_value_descriptions, size_t in_num_value_descriptions);
 ```
 
-#### Return Value
+## Return Value
 
 The number of values populated in the `out_control_value_descriptions` buffer.
 
-#### Discussion
+## Discussion
 
 This method synchronizes by using the work queue created by the object.
 

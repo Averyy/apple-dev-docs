@@ -21,11 +21,11 @@ Creates a structure that represents a transfer function to convert from linear t
 init(c0: CGFloat, c1: CGFloat, c2: CGFloat, c3: CGFloat, gamma: CGFloat, cutoff: CGFloat, c4: CGFloat, c5: CGFloat)
 ```
 
-#### Return Value
+## Return Value
 
 A new structure that represents a transfer function.
 
-#### Discussion
+## Discussion
 
 Listing 1.
 

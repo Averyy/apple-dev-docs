@@ -23,7 +23,7 @@ var hasEnded: Bool { get }
 @property (nonatomic, assign, readonly) BOOL hasEnded;
 ```
 
-#### Discussion
+## Discussion
 
 A call is considered ended when the user disconnects or all other callers disconnect.
 

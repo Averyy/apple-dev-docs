@@ -25,7 +25,7 @@ static let alternateQuotationBeginDelimiterKey: NSLocale.Key
 extern NSLocaleKey const NSLocaleAlternateQuotationBeginDelimiterKey;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is an `NSString` object; for example, `"‘"`, `"‹"`, or `"『"`.
 

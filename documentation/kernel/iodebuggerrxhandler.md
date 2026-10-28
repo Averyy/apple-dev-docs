@@ -13,7 +13,7 @@
 typedef void (*IODebuggerRxHandler)(IOService *target, void *buffer, UInt32 *length, UInt32 timeout);
 ```
 
-#### Discussion
+## Discussion
 
 Defines the receive handler that must be implemented by the target to service KDP receive requests. This handler is called by kdpReceiveDispatcher().
 

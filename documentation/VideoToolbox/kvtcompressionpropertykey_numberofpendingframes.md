@@ -24,7 +24,7 @@ let kVTCompressionPropertyKey_NumberOfPendingFrames: CFString
 extern CFStringRef const kVTCompressionPropertyKey_NumberOfPendingFrames;
 ```
 
-#### Discussion
+## Discussion
 
 This number may decrease asynchronously.
 

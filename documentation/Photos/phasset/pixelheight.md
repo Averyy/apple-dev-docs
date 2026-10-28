@@ -24,7 +24,7 @@ var pixelHeight: Int { get }
 @property (nonatomic, assign, readonly) NSUInteger pixelHeight;
 ```
 
-#### Discussion
+## Discussion
 
 If the asset’s content has been edited, this property describes the size of the current version of the asset.
 

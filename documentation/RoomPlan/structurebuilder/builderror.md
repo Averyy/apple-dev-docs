@@ -17,7 +17,7 @@ Errors that can occur during the multiple-scan merging process.
 enum BuildError
 ```
 
-#### Overview
+## Overview
 
 The structure builder ([`StructureBuilder`](../structurebuilder.md)) function [`capturedStructure(from:)`](./capturedstructure%28from%29.md) throws an error of this type if the multiple-scan merging process fails.
 

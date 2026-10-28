@@ -15,11 +15,11 @@ Removes a collection of annotations, overlays, or other item collections from th
 removeItems(items: (Overlay | Annotation)[]): (Annotation | Overlay)[];
 ```
 
-#### Return Value
+## Return Value
 
 Returns an array of items removed from the map.
 
-#### Discussion
+## Discussion
 
 This method doesn’t change the map’s visible region. Use [`showItems()`](./showitems.md) with a list of items to focus on to update the map’s view.
 

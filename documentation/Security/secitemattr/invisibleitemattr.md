@@ -20,7 +20,7 @@ case invisibleItemAttr
 kSecInvisibleItemAttr
 ```
 
-#### Discussion
+## Discussion
 
 You use this tag to set or get a value of type `Boolean` that indicates whether the item is invisible (that is, should not be displayed).
 

@@ -26,11 +26,11 @@ func write(toFile path: String, atomically useAuxiliaryFile: Bool) -> Bool
 - (BOOL) writeToFile:(NSString *) path atomically:(BOOL) useAuxiliaryFile;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the file is written successfully, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Writes the contents of the receiver to the file specified by `path` (overwriting any existing file at `path`). `path` is written in the default C-string encoding if possible (that is, if no information would be lost), in the Unicode encoding otherwise.
 

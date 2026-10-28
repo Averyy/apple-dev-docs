@@ -24,7 +24,7 @@ optional func display(_ layer: CALayer)
 - (void) displayLayer:(CALayer *) layer;
 ```
 
-#### Discussion
+## Discussion
 
 The [`display(_:)`](./display%28_%29.md) delegate method is called when the layer is marked for its content to be reloaded, typically initiated by the [`setNeedsDisplay()`](../calayer/setneedsdisplay%28%29.md) method. The typical technique for updating is to set the layer’s `contents` property.
 

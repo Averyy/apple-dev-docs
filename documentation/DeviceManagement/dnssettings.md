@@ -21,7 +21,7 @@ The payload that configures encrypted DNS settings.
 object DNSSettings
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.dnsSettings.managed` as the payload type.
 
@@ -29,7 +29,7 @@ When installed from an MDM, the setting only applies to managed Wi-Fi networks.
 
 When installed manually, this setting also applies to cellular networks.
 
-##### Profile availability
+### Profile availability
 
 |  |  |
 | --- | --- |

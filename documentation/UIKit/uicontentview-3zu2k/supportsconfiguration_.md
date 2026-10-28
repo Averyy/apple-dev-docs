@@ -19,11 +19,11 @@ Determines whether the view is compatible with the provided configuration.
 - (BOOL) supportsConfiguration:(id<UIContentConfiguration>) configuration;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the view supports this configuration being set to its [`configuration`](./configuration.md) property and is capable of updating itself for the configuration; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 The default implementation assumes the view is compatible with configuration classes that match the class of the view’s existing configuration.
 

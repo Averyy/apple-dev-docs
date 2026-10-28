@@ -26,7 +26,7 @@ let AVAudioSessionInterruptionTypeKey: String
 extern NSString * const AVAudioSessionInterruptionTypeKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is an [`NSNumber`](../Foundation/nsnumber.md) object containing an unsigned integer that identifies the type of interruption. For a list of possible values, see [`AVAudioSession.InterruptionType`](./avaudiosession/interruptiontype.md).
 

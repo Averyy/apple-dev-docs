@@ -12,11 +12,11 @@ virtual IOReturn hardwareValueChanged(
  OSObject *newValue);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if the value is successfully updated.
 
-#### Overview
+## Overview
 
 This is designed to be called by the driver when it detects that the hardware's value has changed without driver intervention (e.g. when an external event causes the change). The difference between hardwareValueChanged() and setValue() is that hardwareValueChanged() doesn't call performValueChange() which sends a message back to the driver to cause it to change the hardware with the new value. This function must be called on the IOWorkLoop.
 

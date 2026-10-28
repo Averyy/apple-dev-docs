@@ -32,7 +32,7 @@ var currencyAmount: INCurrencyAmount? { get }
 @property (atomic, copy, readonly, nullable) INCurrencyAmount * currencyAmount;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to verify that you can handle the transfer successfully. For example, you might verify they are using a supported currency type and that the user’s account has the needed funds to complete the transaction.
 

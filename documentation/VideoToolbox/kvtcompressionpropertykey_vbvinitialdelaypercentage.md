@@ -22,7 +22,7 @@ let kVTCompressionPropertyKey_VBVInitialDelayPercentage: CFString
 extern CFStringRef const kVTCompressionPropertyKey_VBVInitialDelayPercentage;
 ```
 
-#### Discussion
+## Discussion
 
 Initial delay of the VBV model between storing the picture in the VBV buffer model and decoding of that picture, as a percentage of VBV buffer duration.
 

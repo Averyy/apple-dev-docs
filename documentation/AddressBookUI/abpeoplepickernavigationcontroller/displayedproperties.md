@@ -23,7 +23,7 @@ var displayedProperties: [NSNumber]? { get set }
 @property (nonatomic, copy, nullable) NSArray<NSNumber *> * displayedProperties;
 ```
 
-#### Discussion
+## Discussion
 
 Objects in the array are instances of [`NSNumber`](../../Foundation/nsnumber.md) that represent [`ABPropertyID`](../../AddressBook/abpropertyid.md) values.
 

@@ -25,11 +25,11 @@ func CTRunGetGlyphsPtr(_ run: CTRun) -> UnsafePointer<CGGlyph>?
 extern const CGGlyph *CTRunGetGlyphsPtr(CTRunRef run);
 ```
 
-#### Return Value
+## Return Value
 
 A valid pointer to an array of [`CGGlyph`](../CoreGraphics/cgglyph.md) structures, or `NULL`.
 
-#### Discussion
+## Discussion
 
 The glyph array will have a length equal to the value returned by [`CTRunGetGlyphCount(_:)`](./ctrungetglyphcount%28_%29.md). The caller should be prepared for this function to return `NULL` even if there are glyphs in the stream. If this function returns `NULL`, the caller must allocate its own buffer and call [`CTRunGetGlyphs(_:_:_:)`](./ctrungetglyphs%28_,_,_%29.md) to fetch the glyphs.
 

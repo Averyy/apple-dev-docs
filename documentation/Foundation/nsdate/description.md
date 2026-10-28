@@ -25,7 +25,7 @@ var description: String { get }
 @property (copy, readonly) NSString * description;
 ```
 
-#### Discussion
+## Discussion
 
 The representation is useful for debugging only.
 

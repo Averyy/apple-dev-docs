@@ -19,7 +19,7 @@ func setBaseWritingDirection(_ writingDirection: NSWritingDirection, range: NSRa
 - (void) setBaseWritingDirection:(NSWritingDirection) writingDirection range:(NSRange) range;
 ```
 
-#### Discussion
+## Discussion
 
 Invoke this method to change the base writing direction from left-to-right to right-to-left for languages like Hebrew and Arabic, for example.
 

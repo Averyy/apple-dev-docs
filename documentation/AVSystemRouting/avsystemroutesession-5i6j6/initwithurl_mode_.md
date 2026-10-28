@@ -17,7 +17,7 @@ Creates a session for initiating playback on a remote device.
 - (instancetype) initWithURL:(NSURL *) url mode:(AVSystemRouteLaunchMode) mode;
 ```
 
-#### Discussion
+## Discussion
 
 Initialize a session with the media URL and launch mode before adding it to an [`AVSystemRoute`](../avsystemroute-9kkj3.md). The URL and mode determine how the remote device handles playback — either by launching your app’s counterpart or using the system’s built-in media player.
 

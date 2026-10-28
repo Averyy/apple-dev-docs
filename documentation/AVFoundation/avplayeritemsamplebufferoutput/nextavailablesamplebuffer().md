@@ -21,7 +21,7 @@ Returns the next sample buffer if it is already available.
 func nextAvailableSampleBuffer() -> AVPlayerItemSampleBufferOutput.SampleBufferInSequence?
 ```
 
-#### Discussion
+## Discussion
 
 If no sample buffers are ready, this method will return nil immediately.
 

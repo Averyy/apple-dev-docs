@@ -24,7 +24,7 @@ optional func mapViewWillStartLocatingUser(_ mapView: MKMapView)
 - (void) mapViewWillStartLocatingUser:(MKMapView *) mapView;
 ```
 
-#### Discussion
+## Discussion
 
 The map view calls this method when the value of the [`showsUserLocation`](../mkmapview/showsuserlocation.md) property changes to [`true`](../../Swift/true.md).
 

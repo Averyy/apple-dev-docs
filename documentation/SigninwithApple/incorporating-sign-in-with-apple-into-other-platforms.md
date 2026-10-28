@@ -5,11 +5,11 @@
 
 Add Sign in with Apple capabilities to apps that can’t directly access Sign in with Apple JS.
 
-#### Overview
+## Overview
 
 To add Sign in with Apple to apps that don’t have access to the [Sign in with Apple JS](../SigninwithAppleJS/SigninwithAppleJS.md) framework, you control the sign-in request manually. Perform this request by adding a custom Sign in with Apple button, sending the required query parameters, handling the return request, and returning control back to the app.
 
-##### Add a custom Sign in with Apple button
+### Add a custom Sign in with Apple button
 
 Apple provides three secure HTTP URLs that generate Sign in with Apple button images corresponding to three modes: center-aligned, left-aligned, and logo only. Entering one of these URLs in a browser triggers the download of the related button image as a PNG file. Use this file to customize and embed your button of choice in your application or service. You can also test and preview custom buttons at [Sign in with Apple Button](https://appleid.apple.com/signinwithapple/button).
 
@@ -85,7 +85,7 @@ You can customize the logo button with the following attributes:
 
 When the user clicks any of these button types, open a browser tab with the authorization URL and the authorization query parameters.
 
-##### Send the required query parameters
+### Send the required query parameters
 
 Direct the authorization request using the HTTP `GET` method to the URL `https://appleid.apple.com/auth/authorize`, as in this example:
 
@@ -115,7 +115,7 @@ If the response contains an error, see [`ErrorResponse`](../SigninwithAppleRESTA
 
 You can also visit [Sign in with Apple button](https://account.apple.com/signinwithapple/button#center-align-button-section) to view and adjust live previews of web-based buttons and get the code.
 
-##### Handle the response
+### Handle the response
 
 When the Sign in with Apple UI appears in the opened browser tab, the user can sign in and accept any terms and conditions for your app. After Apple processes the authorization request, the handling of the response depends on the value in `response_mode:`
 
@@ -154,13 +154,13 @@ If an error occurs, the HTTP body contains the following parameters:
 
 > **Note**:  The only error code that might be returned is `user_cancelled_authorize`. This error code is returned if the user clicks Cancel during the web flow.
 
-##### Return control to the app
+### Return control to the app
 
 At the end of the authorization flow, Apple performs a `form_post` to the `redirect_uri` value you provided. At this point, the authorization flow is complete, and it’s your server’s responsibility to persist the data and return control to the app.
 
 Platforms that support custom URL schemes — iOS 12.0 and earlier and Android — must handle the data resulting from the authorization flow by storing it on their app server in the logic of their `redirect_uri` endpoint. You then redirect the custom URL scheme to give control back to the app.
 
-##### Get a Sign in with Apple button
+### Get a Sign in with Apple button
 
 Use the following API endpoints to create a custom Sign in with Apple button:
 

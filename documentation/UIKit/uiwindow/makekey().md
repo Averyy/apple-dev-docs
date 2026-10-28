@@ -23,7 +23,7 @@ func makeKey()
 - (void) makeKeyWindow;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to make the window key without changing its visibility. The key window receives keyboard and other non-touch related events. This method causes the previous key window to resign the key status.
 

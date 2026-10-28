@@ -24,7 +24,7 @@ let kCIInputAngleKey: String
 extern NSString * const kCIInputAngleKey;
 ```
 
-#### Discussion
+## Discussion
 
 A key for a scalar value ([`NSNumber`](../Foundation/nsnumber.md)) that specifies an angle.
 

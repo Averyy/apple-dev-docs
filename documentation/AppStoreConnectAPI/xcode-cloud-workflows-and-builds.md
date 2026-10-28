@@ -4,7 +4,7 @@
 
 Automate reading Xcode Cloud data, managing workflows, and starting builds.
 
-#### Overview
+## Overview
 
 [Xcode Cloud](../Xcode/xcode-cloud.md) makes it easy to get started with continuous integration and delivery_ _(CI/CD). Using either Xcode or [App Store Connect](https://appstoreconnect.apple.com), you can create custom workflows to verify the quality of your apps or frameworks. However, you may need to further automate Xcode Cloud usage and integrate Xcode Cloud into existing back-end systems — often in a corporate context. For example, you may need to:
 
@@ -22,7 +22,7 @@ Taking advantage of the App Store Connect API, you can combine functionality off
 
 If you’re new to using the App Store Connect API, make sure to read the documentation in the Essentials section of [App Store Connect API](./AppStoreConnectAPI.md).
 
-##### Read Xcode Cloud Data
+### Read Xcode Cloud Data
 
 The App Store Connect API provides resources to access the following Xcode Cloud data:
 
@@ -38,7 +38,7 @@ When you’ve identified the data you need to access, the next step is to identi
 4. Call the [`Read xcode cloud workflow information`](./get-v1-ciworkflows-_id_.md) endpoint for each workflow using the workflow’s `id` to access detailed workflow information.
 5. Populate your dashboard with the detailed workflow information.
 
-##### Start a New Build
+### Start a New Build
 
 Xcode Cloud workflows allow you to configure a custom start condition that queues new builds based on a schedule or in response to branch changes, pull request changes, or tag changes. You can also manually start a new build using Xcode and App Store Connect, but that might not be feasible for large teams or in a corporate context. For example, your company’s back-end team likely uses a CI/CD process that frequently deploys changes to staging and production servers. As a result, you need to perform verifications in your app to ensure the app works well with the updated servers. Starting new builds in Xcode Cloud for each back-end change manually or based on a schedule might not be sufficient. To help with these scenarios, use the App Store Connect API to automatically start new Xcode Cloud builds with an API call.
 
@@ -47,7 +47,7 @@ To start a new build:
 1. Read data necessary to create a [`CiBuildRunCreateRequest`](./cibuildruncreaterequest.md); for example, access workflow information using endpoints provided by the [Products](./products.md) and [Workflows](./workflows.md) resources.
 2. Create the [`CiBuildRunCreateRequest`](./cibuildruncreaterequest.md) and perform the [`Start a build`](./post-v1-cibuildruns.md) operation that starts a new build.
 
-##### Manage Workflows
+### Manage Workflows
 
 Xcode and App Store Connect offer a convenient way to create, update, or delete workflows. However, large teams and companies with many teams often work on multiple apps and frameworks in parallel. As a result, they need to maintain a large number of workflows, making additional automation necessary.
 

@@ -5,7 +5,7 @@
 
 Prepare your app to start collecting location data.
 
-#### Overview
+## Overview
 
 The location data available on most Apple devices gives you additional context and information to incorporate into your app’s content. You might use that data to show someone’s physical location on a map and help them navigate their environment. Or you might apply location data to a list of restaurants and shops to eliminate choices that aren’t nearby. You might also use location data to alert someone when they’re near a particular device or geographic region. For all of these use cases and more, the Core Location framework provides access to the location data you need.
 
@@ -13,7 +13,7 @@ When you add code to support Core Location, plan for situations where location d
 
 > ❗ **Important**:  Location data is sensitive information, and it’s important for you to secure any location data you collect. Encrypt any location data you store on disk or send over the network. In addition, provide a clear privacy policy that explains how you use someone’s location data.
 
-##### Check the availability of services your app uses
+### Check the availability of services your app uses
 
 Always verify that location services are available before you attempt to use them. Services might be unavailable for many different reasons, including:
 
@@ -37,7 +37,7 @@ if CLLocationManager.headingAvailable() {
 
 If your app can’t function without specific location services, declare those requirements in advance using your app’s Information Property list. For more information, see Declare the device capabilities your app requires below.
 
-##### Start receiving location updates and authorization status changes
+### Start receiving location updates and authorization status changes
 
 You can request location updates in your code immediately. If the system hasn’t requested authorization for your app, it does so when your code starts iterating over the asynchronous stream of updates. Because location data is sensitive personal information, the owner of a device controls which apps give access. They can grant or deny access to apps separately, and can change an app’s access at any time in system settings.
 
@@ -63,7 +63,7 @@ for try await update in stream {
 
 If your app always needs authorization, it needs to create and hold a privileged session offered by [`CLServiceSession`](./clservicesession-pt7n.md). This class provides a single opportunity to upgrade from “While using” to “Always.”
 
-##### Declare the device capabilities your app requires
+### Declare the device capabilities your app requires
 
 Core Location generates location updates using a combination of Wi-Fi, cellular, and GPS hardware, and it generates compass updates using magnetometer hardware. For location updates, Core Location doesn’t use every piece of hardware every time. You specify the level of precision you want in your [`CLLocationManager`](./cllocationmanager.md) object, and Core Location turns on the hardware it needs to deliver that data in the most power-efficient way.
 
@@ -73,7 +73,7 @@ Include the `gps` key only if you require the highest level of precision for loc
 
 Don’t include the [`UIRequiredDeviceCapabilities`](../BundleResources/information-property-list/uirequireddevicecapabilities.md) key if people can still use your app without location data. For example, don’t include the key if your app uses location data to filter search results for nearby restaurants. When location data isn’t available, you can find alternatives to get you what you need or work without that data. For example, if you want to filter search results by location, you might prompt someone to enter a postal code or other geographic information explicitly.
 
-##### Start the location services
+### Start the location services
 
 After you perform the initial checks and verify the authorization status of your app, start the location services you need. Core Location offers several different ways to access location-related information:
 

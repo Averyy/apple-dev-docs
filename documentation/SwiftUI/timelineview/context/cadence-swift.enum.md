@@ -21,7 +21,7 @@ A rate at which timeline views can receive updates.
 enum Cadence
 ```
 
-#### Overview
+## Overview
 
 Use the cadence presented to content in a [`TimelineView`](../../timelineview.md) to hide information that updates faster than the view’s current update rate. For example, you could hide the millisecond component of a digital timer when the cadence is [`TimelineView.Context.Cadence.seconds`](./cadence-swift.enum/seconds.md) or [`TimelineView.Context.Cadence.minutes`](./cadence-swift.enum/minutes.md).
 

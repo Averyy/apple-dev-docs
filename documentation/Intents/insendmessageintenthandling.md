@@ -28,7 +28,7 @@ protocol INSendMessageIntentHandling : NSObjectProtocol
 
 - [Dispatching intents to handlers](../SiriKit/dispatching-intents-to-handlers.md)
 
-#### Overview
+## Overview
 
 Use the methods of the [`INSendMessageIntentHandling`](./insendmessageintenthandling.md) protocol to resolve, confirm, and handle requests to send text or audio messages to the designated users. Adopt this protocol in an object of your Intents extension that is capable of sending the messages.
 

@@ -21,7 +21,7 @@ Indicates a step-wise temporal sublayer access (STSA) sample grouping.
 var hevcStepwiseTemporalSubLayerAccess: Bool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Corresponds to ‘stsa’ sample group.
 

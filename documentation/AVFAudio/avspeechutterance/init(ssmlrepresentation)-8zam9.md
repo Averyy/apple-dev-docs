@@ -25,7 +25,7 @@ init?(ssmlRepresentation string: String)
 - (instancetype) initWithSSMLRepresentation:(NSString *) string;
 ```
 
-#### Discussion
+## Discussion
 
 If using SSML to request voices that fall under certain attributes, the system may split a single utterance into multiple parts and send each to an appropriate synthesizer.
 

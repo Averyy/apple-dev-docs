@@ -25,7 +25,7 @@ optional func urlSession(_ session: URLSession, readClosedFor streamTask: URLSes
 - (void) URLSession:(NSURLSession *) session readClosedForStreamTask:(NSURLSessionStreamTask *) streamTask;
 ```
 
-#### Discussion
+## Discussion
 
 This method may be called even if no reads are currently in progress. This method does not indicate that the stream reached end-of-file (EOF), such that no more data can be read.
 

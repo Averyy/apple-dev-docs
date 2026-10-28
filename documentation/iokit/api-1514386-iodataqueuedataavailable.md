@@ -23,7 +23,7 @@ func IODataQueueDataAvailable(_ dataQueue: UnsafeMutablePointer<IODataQueueMemor
 Boolean IODataQueueDataAvailable(IODataQueueMemory *dataQueue);
 ```
 
-#### Return Value
+## Return Value
 
 Returns true if data is available and false if not.
 

@@ -5,7 +5,7 @@
 
 Read detailed build information and start new builds.
 
-#### Overview
+## Overview
 
 The `ciBuildRuns` resource represents an Xcode Cloud build. Use it to get a list of builds Xcode Cloud performed and access detailed information for a specific build; for example:
 

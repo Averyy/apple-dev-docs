@@ -21,7 +21,7 @@ The base URL.
 var baseURL: URL? { get }
 ```
 
-#### Discussion
+## Discussion
 
 If the URL is itself absolute, then this value is `nil`.
 

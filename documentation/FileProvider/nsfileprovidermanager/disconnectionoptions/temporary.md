@@ -19,7 +19,7 @@ static var temporary: NSFileProviderManager.DisconnectionOptions { get }
 NSFileProviderManagerDisconnectionOptionsTemporary
 ```
 
-#### Discussion
+## Discussion
 
 Include the [`temporary`](./temporary.md) value when the disconnection is temporary, such as when updating the domain. Exclude this value when the disconnection isn’t temporary, like when the user logs out.
 

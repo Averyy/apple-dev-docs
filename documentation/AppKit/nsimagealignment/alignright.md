@@ -17,7 +17,7 @@ case alignRight
 NSImageAlignRight
 ```
 
-#### Discussion
+## Discussion
 
 Position the image along the right edge of the cell.
 

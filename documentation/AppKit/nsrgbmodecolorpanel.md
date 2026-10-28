@@ -15,7 +15,7 @@
 static const NSColorPanelMode NSRGBModeColorPanel;
 ```
 
-#### Discussion
+## Discussion
 
 Red-green-blue
 

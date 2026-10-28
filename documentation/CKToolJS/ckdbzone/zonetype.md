@@ -15,7 +15,7 @@ The type for the zone.
 attribute string zoneType;
 ```
 
-#### Discussion
+## Discussion
 
 Possible values are `DEFAULT_ZONE` and `REGULAR_CUSTOM_ZONE`.
 

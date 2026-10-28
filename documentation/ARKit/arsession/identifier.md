@@ -20,7 +20,7 @@ var identifier: UUID { get }
 @property (atomic, strong, readonly) NSUUID * identifier;
 ```
 
-#### Discussion
+## Discussion
 
 This property might change after you call the run function, but not immediately. Therefore, to get the new value, listen for its change using key-value observation.
 

@@ -29,7 +29,7 @@ optional func resolveSearchTerms(for intent: INSearchForPhotosIntent) async -> [
 - (void) resolveSearchTermsForSearchForPhotos:(INSearchForPhotosIntent *) intent withCompletion:(void (^)(NSArray<INStringResolutionResult *> *resolutionResults)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve any search terms provided by the user.
 

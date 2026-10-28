@@ -16,7 +16,7 @@ A container view that defines its content as a function of its own size and coor
 nonisolated struct GeometryReader3D<Content> where Content : View
 ```
 
-#### Overview
+## Overview
 
 This view returns a flexible preferred size to its own container view.
 

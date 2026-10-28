@@ -17,7 +17,7 @@ Releases a ticket and recomputes the limit.
 func end(id: UUID, policy: any WiredMemoryPolicy) -> Int
 ```
 
-#### Discussion
+## Discussion
 
 If this was the last ticket, the manager restores the baseline and clears internal state.
 

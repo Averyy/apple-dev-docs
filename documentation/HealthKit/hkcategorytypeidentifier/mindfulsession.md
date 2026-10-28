@@ -24,7 +24,7 @@ static let mindfulSession: HKCategoryTypeIdentifier
 extern HKCategoryTypeIdentifier const HKCategoryTypeIdentifierMindfulSession;
 ```
 
-#### Discussion
+## Discussion
 
 Use a [`HKCategoryValue.notApplicable`](../hkcategoryvalue/notapplicable.md) value with these samples.
 

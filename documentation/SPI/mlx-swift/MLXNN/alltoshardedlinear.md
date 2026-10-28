@@ -17,7 +17,7 @@ Each member of the group applies part of the affine transformation so that the r
 class AllToShardedLinear
 ```
 
-#### Overview
+## Overview
 
 The gradients are automatically aggregated from each member of the group.
 

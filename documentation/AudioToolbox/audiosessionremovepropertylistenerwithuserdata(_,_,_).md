@@ -22,11 +22,11 @@ func AudioSessionRemovePropertyListenerWithUserData(_ inID: AudioSessionProperty
 extern OSStatus AudioSessionRemovePropertyListenerWithUserData(AudioSessionPropertyID inID, AudioSessionPropertyListener inProc, void *inClientData);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See Result Codes.
 
-#### Discussion
+## Discussion
 
 Audio session properties are listed and described in [Audio Session Property Identifiers](./api-1618455-audio-session-property-identifie.md).
 

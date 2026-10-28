@@ -24,7 +24,7 @@ func intersect(with voxels: MDLVoxelArray)
 - (void) intersectWithVoxels:(MDLVoxelArray *) voxels;
 ```
 
-#### Discussion
+## Discussion
 
 After an intersection operation, the voxel array contains only those voxels that were present in both the original array and the specified array. That is, an intersection operation creates a voxel array representing only the space where two volumes overlap.
 

@@ -15,7 +15,7 @@ Provides information about the current snap state of the scene.
 var surfaceSnappingInfo: SurfaceSnappingInfo { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use the provided [`SurfaceSnappingInfo`](../surfacesnappinginfo.md) from the environment to modify the content of your view
 

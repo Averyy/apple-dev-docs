@@ -15,7 +15,7 @@ Remove an app.
 - visionOS 1.1+
 - watchOS 10.0+
 
-#### Discussion
+## Discussion
 
 This command allows a server to remove managed apps. It also allows a server to remove unmanaged and system deletable apps on supervised devices in iOS 26 and later, tvOS 26 and later, visionOS 26 and later, and watchOS 26 and later. When the device removes an app, it also removes the data for the app.
 
@@ -23,7 +23,7 @@ This command fails for apps that Declarative Device Management is managing.
 
 Refer to the following sections to determine supported channels and requirements, and to see an example request and response.
 
-##### Command availability
+### Command availability
 
 |  |  |
 | --- | --- |
@@ -33,7 +33,7 @@ Refer to the following sections to determine supported channels and requirements
 | Allowed in user enrollment | iOS, macOS, visionOS |
 | Required access right | AllowAppInstallation |
 
-##### Example request and response
+### Example request and response
 
 **Request**:
 

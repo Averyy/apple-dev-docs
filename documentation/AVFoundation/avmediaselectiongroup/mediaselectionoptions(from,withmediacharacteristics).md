@@ -25,7 +25,7 @@ class func mediaSelectionOptions(from mediaSelectionOptions: [AVMediaSelectionOp
 + (NSArray<AVMediaSelectionOption *> *) mediaSelectionOptionsFromArray:(NSArray<AVMediaSelectionOption *> *) mediaSelectionOptions withMediaCharacteristics:(NSArray<NSString *> *) mediaCharacteristics;
 ```
 
-#### Return Value
+## Return Value
 
 An array containing the media selection options from `array` that match `mediaCharacteristics`.
 

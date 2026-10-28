@@ -19,7 +19,7 @@ var localizedModel: String { get }
 @property (nonatomic, copy, readonly) NSString * localizedModel;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the localized string for the value in the [`model`](./model.md) property.
 

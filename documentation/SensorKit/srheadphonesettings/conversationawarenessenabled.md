@@ -19,7 +19,7 @@ var conversationAwarenessEnabled: SRHeadphoneSettings.SettingEnablement { get }
 @property (nonatomic, assign, readonly) SRHeadphoneSettingsSettingEnablement conversationAwarenessEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 Media volume lowers and reduces background noise when you start speaking to other people.
 

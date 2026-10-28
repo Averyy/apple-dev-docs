@@ -25,7 +25,7 @@ func la_release(_ object: la_object_t)
 extern void la_release(la_object_t object);
 ```
 
-#### Discussion
+## Discussion
 
 Decrement the reference count of an la_object_t object.
 

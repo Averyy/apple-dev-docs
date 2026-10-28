@@ -13,7 +13,7 @@
 gestaltSystemVersion = 'sysv'
 ```
 
-#### Discussion
+## Discussion
 
 Indicates the version number of the operating system, with limitations on the values returned.
 

@@ -24,7 +24,7 @@ let MKMapViewDefaultAnnotationViewReuseIdentifier: String
 extern NSString * const MKMapViewDefaultAnnotationViewReuseIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 Use this constant to register a default annotation view. This map view uses this default annotation view when your map view’s delegate doesn’t implement the [`mapView(_:viewFor:)`](./mkmapviewdelegate/mapview%28_,viewfor%29-8humz.md) method, or when that method returns `nil`.
 

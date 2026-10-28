@@ -15,7 +15,7 @@ Divides a single-precision scalar value by a single-precision vector.
 void vDSP_svdiv(const float *__A, const float *__B, vDSP_Stride __IB, float *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This function calculates the scalar value `A` divied by the first `N` elements of `B`, writing the result to `C`:
 

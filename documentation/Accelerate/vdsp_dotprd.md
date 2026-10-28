@@ -21,7 +21,7 @@ Calculates the dot product of two double-precision vectors.
 extern void vDSP_dotprD(const double *__A, vDSP_Stride __IA, const double *__B, vDSP_Stride __IB, double *__C, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This function calculates the dot product of two vectors, using the following operation:
 

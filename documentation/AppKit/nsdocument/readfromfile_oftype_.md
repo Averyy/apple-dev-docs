@@ -17,7 +17,7 @@ Reads and loads document data of the given type from the given file.
 - (BOOL) readFromFile:(NSString *) fileName ofType:(NSString *) type;
 ```
 
-#### Discussion
+## Discussion
 
 Reads and loads document data of type `docType` from the file `fileName`, returning whether the operation was successful. This method invokes `loadDataRepresentation:ofType:` and is invoked when the receiver is first created and initialized by `initWithContentsOfFile:ofType:`. It uses `NSData` [`init(contentsOfFile:)`](../../Foundation/nsdata/init%28contentsoffile%29.md) to get the document data.
 

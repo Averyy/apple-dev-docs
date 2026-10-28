@@ -24,7 +24,7 @@ static var isVoiceOverRunning: Bool { get }
 extern BOOL UIAccessibilityIsVoiceOverRunning();
 ```
 
-#### Discussion
+## Discussion
 
 You can use this function to customize your app’s UI specifically for VoiceOver users. For example, you might want UI elements that usually disappear quickly to persist onscreen for VoiceOver users. Note that you can also listen for the [`voiceOverStatusDidChangeNotification`](./voiceoverstatusdidchangenotification.md) notification to determine when VoiceOver starts and stops.
 

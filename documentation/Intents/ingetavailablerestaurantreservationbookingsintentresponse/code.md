@@ -30,7 +30,7 @@ var code: INGetAvailableRestaurantReservationBookingsIntentCode { get }
 @property (atomic, readonly) INGetAvailableRestaurantReservationBookingsIntentCode code;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is set automatically at initialization time and can’t be changed later.
 

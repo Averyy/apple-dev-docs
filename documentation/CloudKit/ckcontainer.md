@@ -30,7 +30,7 @@ class CKContainer
 - [Designing and Creating a CloudKit Database](./designing-and-creating-a-cloudkit-database.md)
 - [Identifying an App’s Containers](./identifying-an-app-s-containers.md)
 
-#### Overview
+## Overview
 
 A container manages all explicit and implicit attempts to access its contents.
 
@@ -38,7 +38,7 @@ Every app has a default container that manages its own content. If you develop a
 
 > **Note**: `CKContainer` instances operate with a [`QualityOfService.userInitiated`](../Foundation/qualityofservice/userinitiated.md) quality of service level by default. For information about quality of service, see [Prioritize Work with Quality of Service Classes](https://developer.apple.com/library/archive/documentation/Performance/Conceptual/EnergyGuide-iOS/PrioritizeWorkWithQoS.html#//apple_ref/doc/uid/TP40015243-CH39) in [Energy Efficiency Guide for iOS Apps](https://developer.apple.com/library/archive/documentation/Performance/Conceptual/EnergyGuide-iOS/index.html#//apple_ref/doc/uid/TP40015243) and [Prioritize Work at the Task Level](https://developer.apple.com/library/archive/documentation/Performance/Conceptual/power_efficiency_guidelines_osx/PrioritizeWorkAtTheTaskLevel.html#//apple_ref/doc/uid/TP40013929-CH35) in [Energy Efficiency Guide for Mac Apps](https://developer.apple.com/library/archive/documentation/Performance/Conceptual/power_efficiency_guidelines_osx/index.html#//apple_ref/doc/uid/TP40013929).
 
-##### Interacting with a Container
+### Interacting with a Container
 
 A container coordinates all interactions between your app and the server. Most of these interactions involve the following tasks:
 
@@ -46,7 +46,7 @@ A container coordinates all interactions between your app and the server. Most o
 - With the user’s permission, discovering other users who the current user knows, and making the current user’s information discoverable.
 - Getting the container or one of its databases to use with an operation.
 
-##### Public and Private Databases
+### Public and Private Databases
 
 Each container provides a public and a private database for storing data. The contents of the public database are accessible to all users of the app, whereas the contents of the private database are, by default, visible only to the current user. Content that is specific to a single user usually belongs in that user’s private database, whereas app-related content that you provide (or that users want to share) belongs in the public database.
 
@@ -54,17 +54,17 @@ The public database is always available, regardless of whether the device has an
 
 > **Note**: The data in a public database counts toward the iCloud storage quota of the app that owns the container. That data doesn’t count toward the storage quota of any single user. Data in the private database counts toward the user’s iCloud storage quota.
 
-##### Using iCloud
+### Using iCloud
 
 Whenever possible, design your app to run gracefully with or without an active iCloud account. Even without an active iCloud account, apps can fetch records from the public database and display that information to the user. If your app requires the ability to write to the public database or requires access to the private database, notify the user of the reason and encourage them to enable iCloud. You can even provide a button that takes the user directly to Settings so that they can enable iCloud. To implement such a button, have the button’s action open the URL that the [`openSettingsURLString`](../UIKit/uiapplication/opensettingsurlstring.md) constant provides.
 
-##### User Records and Permissions
+### User Records and Permissions
 
 When a user accesses a container for the first time, CloudKit assigns them a unique identifier and uses it to create two user records — one in the app’s public database and another in that user’s private database. By default, these records don’t contain any identifying personal information, but you can use the record in the user’s private database to store additional, nonsensitive information about that user. Because the public database’s user record is accessible to all users of your app, don’t use it to store information about the user.
 
 While a user record isn’t the same as the user’s [`CKUserIdentity`](./ckuseridentity.md), the identity does provide the identifier of their user record that you can use to fetch that record from either the public database or the user’s private database. For more information, see [`userRecordID`](./ckuseridentity/userrecordid.md).
 
-##### Testing Your Code Using the Development Container
+### Testing Your Code Using the Development Container
 
 At runtime, CloudKit uses your app’s `com.apple.developer.icloud-container-environment` entitlement to discover whether you’re using a `Development` or `Production` version of your provisioning profile. When you configure the entitlement for development, CloudKit configures the app’s containers to use the development server. The development environment is a safe place to make changes during the development process without disrupting users of your app. You can add new fields to records programmatically, and you can delete or modify fields using iCloud Dashboard.
 

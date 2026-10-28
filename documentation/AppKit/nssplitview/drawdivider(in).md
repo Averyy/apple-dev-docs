@@ -19,7 +19,7 @@ func drawDivider(in rect: NSRect)
 - (void) drawDividerInRect:(NSRect) rect;
 ```
 
-#### Discussion
+## Discussion
 
 If you override this method to use a custom style for the divider, you may need to change the size of the divider.
 

@@ -19,7 +19,7 @@ class VZXHCIController
 @interface VZXHCIController : VZUSBController
 ```
 
-#### Overview
+## Overview
 
 Don’t create `VZXHCIController` objects directly. Instead, you create a `VZXHCIController` object at runtime though the [`usbControllers`](./vzvirtualmachineconfiguration/usbcontrollers.md) property of the [`VZVirtualMachineConfiguration`](./vzvirtualmachineconfiguration.md) object by populating it with [`VZXHCIControllerConfiguration`](./vzxhcicontrollerconfiguration.md) objects.
 

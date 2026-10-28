@@ -24,7 +24,7 @@ class func localizedDescription(forFilterName filterName: String) -> String?
 + (NSString *) localizedDescriptionForFilterName:(NSString *) filterName;
 ```
 
-#### Return Value
+## Return Value
 
 The localized description of the filter.
 

@@ -23,11 +23,11 @@ func gss_import_cred(_ minor_status: UnsafeMutablePointer<OM_uint32>, _ token: g
 OM_uint32 gss_import_cred(OM_uint32 *minor_status, gss_buffer_t token, gss_cred_id_t*cred_handle);
 ```
 
-#### Return Value
+## Return Value
 
 A status code set to [`GSS_S_COMPLETE`](./gss_s_complete.md) on success. See [Function Status](./function-status.md) for a description of other status outputs.
 
-#### Discussion
+## Discussion
 
 You can import a credential from a token created with [`gss_export_cred(_:_:_:)`](./gss_export_cred%28_,_,_%29.md).
 

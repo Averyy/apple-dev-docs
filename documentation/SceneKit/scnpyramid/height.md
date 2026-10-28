@@ -25,7 +25,7 @@ var height: CGFloat { get set }
 @property (nonatomic) CGFloat height;
 ```
 
-#### Discussion
+## Discussion
 
 The pyramid’s base is centered in its local coordinate system. For example, if you create a pyramid of height `10.0`, the y-coordinate of every point in its rectangular base is `0.0` and the y-coordinate of its apex is `10.0`. The default height is `1.0`. A height of zero or less creates an empty geometry.
 

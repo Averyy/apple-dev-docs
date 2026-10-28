@@ -12,11 +12,11 @@ static OSDictionary * withCapacity(
  unsigned intcapacity);
 ```
 
-#### Return Value
+## Return Value
 
 An empty instance of OSDictionary with a retain count of 1; `NULL` on failure.
 
-#### Overview
+## Overview
 
 `capacity` must be nonzero. The new dictionary will grow as needed to accommodate more key/object pairs (*unlike*[CFMutableDictionary](../../CoreFoundation/cfmutabledictionary.md), for which the initial capacity is a hard limit).
 

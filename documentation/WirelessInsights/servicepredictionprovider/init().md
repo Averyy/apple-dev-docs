@@ -16,7 +16,7 @@ Creates a service prediction provider.
 init()
 ```
 
-#### Discussion
+## Discussion
 
 Retain a reference to this instance for as long as you need to receive events from the [`servicePredictions`](./servicepredictions.md) asychronous sequence.
 

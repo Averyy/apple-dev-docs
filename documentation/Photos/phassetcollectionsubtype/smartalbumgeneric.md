@@ -24,7 +24,7 @@ case smartAlbumGeneric
 PHAssetCollectionSubtypeSmartAlbumGeneric
 ```
 
-#### Discussion
+## Discussion
 
 This subtype applies to smart albums synced to the iOS device from the macOS Photos app.
 

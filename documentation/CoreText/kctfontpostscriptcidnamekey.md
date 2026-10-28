@@ -23,7 +23,7 @@ let kCTFontPostScriptCIDNameKey: CFString
 extern CFStringRef const kCTFontPostScriptCIDNameKey;
 ```
 
-#### Discussion
+## Discussion
 
 The name specifier for the PostScript character identifier (CID) font name.
 

@@ -24,11 +24,11 @@ func components(passingTest testHandler: @escaping (AVAudioUnitComponent, Unsafe
 - (NSArray<AVAudioUnitComponent *> *) componentsPassingTest:(BOOL (^)(AVAudioUnitComponent *comp, BOOL *stop)) testHandler;
 ```
 
-#### Return Value
+## Return Value
 
 An array of audio components that pass the test.
 
-#### Discussion
+## Discussion
 
 For each audio component the manager finds, the system calls the block method. If the block returns [`true`](../../Swift/true.md), the method adds `AVAudioComponent` instance to the array.
 

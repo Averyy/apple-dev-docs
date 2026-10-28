@@ -29,7 +29,7 @@ typedef struct __SecIdentity * SecIdentityRef;
 
 - [Storing an Identity in the Keychain](./storing-an-identity-in-the-keychain.md)
 
-#### Overview
+## Overview
 
 A [`SecIdentity`](./secidentity.md) object contains a [`SecKey`](./seckey.md) object and an associated [`SecCertificate`](./seccertificate.md) object.
 

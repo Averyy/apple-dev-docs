@@ -20,7 +20,7 @@ Replaces all specializes arcs with the specified list.
 func set(_ primPaths: [USDLayer.Path]) throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if the specializes cannot be set.
 

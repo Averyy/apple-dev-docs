@@ -21,7 +21,7 @@ Returns the least argument passed.
 func min<T>(_ x: T, _ y: T, _ z: T, _ rest: T...) -> T where T : Comparable
 ```
 
-#### Return Value
+## Return Value
 
 The least of all the arguments. If there are multiple equal least arguments, the result is the first one.
 

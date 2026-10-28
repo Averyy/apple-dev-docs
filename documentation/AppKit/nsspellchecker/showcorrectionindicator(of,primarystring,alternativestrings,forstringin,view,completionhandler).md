@@ -23,7 +23,7 @@ func showCorrectionIndicator(of type: NSSpellChecker.CorrectionIndicatorType, pr
 - (void) showCorrectionIndicatorOfType:(NSCorrectionIndicatorType) type primaryString:(NSString *) primaryString alternativeStrings:(NSArray<NSString *> *) alternativeStrings forStringInRect:(NSRect) rectOfTypedString view:(NSView *) view completionHandler:(void (^)(NSString *acceptedString)) completionBlock;
 ```
 
-#### Discussion
+## Discussion
 
 Only one indicator at a time may be displayed for a given view, and the only thing a client may do with the indicator after displaying it is to dismiss it using the [`dismissCorrectionIndicator(for:)`](./dismisscorrectionindicator%28for%29.md) method.
 

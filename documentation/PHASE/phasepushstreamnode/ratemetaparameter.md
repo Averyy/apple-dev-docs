@@ -24,7 +24,7 @@ var rateMetaParameter: PHASENumberMetaParameter? { get }
 @property (nonatomic, strong, readonly, nullable) PHASENumberMetaParameter * rateMetaParameter;
 ```
 
-#### Discussion
+## Discussion
 
 The framework sets this property when the app specifies a meta parameter definition at initialization.
 

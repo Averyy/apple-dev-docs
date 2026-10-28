@@ -16,7 +16,7 @@ Sets matching criteria for device enumeration.
 void IOHIDManagerSetDeviceMatching(IOHIDManagerRef manager, CFDictionaryRef matching);
 ```
 
-#### Discussion
+## Discussion
 
 Matching keys are prefixed by kIOHIDDevice and declared in <IOKit/hid/IOHIDKeys.h>. Passing a NULL dictionary will result in all devices being enumerated. Any subsequent calls will cause the hid manager to release previously enumerated devices and restart the enuerate process using the revised criteria. If interested in multiple, specific device classes, please defer to using IOHIDManagerSetDeviceMatchingMultiple.
 

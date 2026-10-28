@@ -23,7 +23,7 @@ init()
 - (instancetype) init;
 ```
 
-#### Return Value
+## Return Value
 
 A new image asset object.
 

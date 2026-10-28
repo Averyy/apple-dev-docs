@@ -20,7 +20,7 @@ enum CGEventSuppressionState
 enum CGEventSuppressionState : uint32_t;
 ```
 
-#### Overview
+## Overview
 
 These constants specify the types of event suppression intervals during which an event filter is applied after posting an event.
 

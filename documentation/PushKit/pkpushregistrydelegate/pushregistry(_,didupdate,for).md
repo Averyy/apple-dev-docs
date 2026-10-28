@@ -29,7 +29,7 @@ func pushRegistry(_ registry: PKPushRegistry, didUpdate pushCredentials: PKPushC
 
 - [Supporting PushKit Notifications in Your App](../supporting-pushkit-notifications-in-your-app.md)
 
-#### Discussion
+## Discussion
 
 The system calls this method when it receives new credentials (including a push token) for the specified push type.
 

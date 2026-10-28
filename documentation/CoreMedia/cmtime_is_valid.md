@@ -21,7 +21,7 @@ Returns a Boolean value that indicates whether a time is valid.
 #define CMTIME_IS_VALID(time)
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if the time is valid; otherwise, [`false`](../Swift/false.md).
 

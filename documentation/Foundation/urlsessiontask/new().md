@@ -27,7 +27,7 @@ class func new() -> Self
 + (instancetype) new;
 ```
 
-#### Return Value
+## Return Value
 
 Don’t call this method directly. Instead, create tasks from a [`URLSession`](../urlsession.md).
 

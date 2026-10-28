@@ -18,7 +18,7 @@ Mapping from the sample ID to the image URL in the input folder corresponding to
 var urlsBySample: [Int : URL] { get }
 ```
 
-#### Discussion
+## Discussion
 
 Note: the dictionary is empty unless a folder of images was used to create this session.  If the session is created from a custom `Sequence` it is expected that the caller has maintained the map from provided sample ID to original image location.
 

@@ -20,11 +20,11 @@ func vmnet_read(_ interface: interface_ref, _ packets: UnsafeMutablePointer<vmpk
 vmnet_return_t vmnet_read(interface_ref interface, struct vmpktdesc *packets, int *pktcnt);
 ```
 
-#### Return Value
+## Return Value
 
 Returns `vmnet` on success, or an error code on failure. See `vmnet` for possible values.
 
-#### Discussion
+## Discussion
 
 Each packet buffer passed should be at least as large as the value of [`vmnet_max_packet_size_key`](./vmnet_max_packet_size_key.md) for the interface.
 

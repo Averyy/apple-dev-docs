@@ -16,11 +16,11 @@ Allocate a SendPacket NuDCL and append it to the program.
 NuDCLSendPacketRef (*AllocateSendPacket_v)(IOFireWireLibNuDCLPoolRef self, CFMutableSetRef saveBag, IOVirtualRange *firstRange);
 ```
 
-#### Return Value
+## Return Value
 
 Returns an NuDCLSendPacketRef on success or 0 on failure.
 
-#### Discussion
+## Discussion
 
 Same as AllocateSendPacket but ranges are passed as a NULL-terminated vector of IOVirtualRange's
 

@@ -22,7 +22,7 @@ The MachPortRight type used to manage a send-once right.
 struct SendOnceRight
 ```
 
-#### Overview
+## Overview
 
 Send-once rights are the most restrictive type of Mach port rights. They cannot create other rights, and are consumed upon use.
 

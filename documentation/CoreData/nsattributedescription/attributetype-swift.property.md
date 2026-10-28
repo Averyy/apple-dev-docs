@@ -27,7 +27,7 @@ var attributeType: NSAttributeType { get set }
 @property NSAttributeType attributeType;
 ```
 
-#### Discussion
+## Discussion
 
 Don’t change an attribute’s type after you add its containing managed object model to a persistent store coordinator; otherwise, Core Data throws an exception.
 

@@ -21,7 +21,7 @@ static func .>= (lhs: MLXArray, rhs: MLXArray) -> MLXArray
 
 - [Converting From Python](../converting-python.md)
 
-#### Discussion
+## Discussion
 
 Greater than or equal on two arrays with [Numpy Style Broadcasting](../broadcasting.md).
 
@@ -36,7 +36,7 @@ if (a .>= b).all().item() {
 }
 ```
 
-##### See Also
+### See Also
 
 - [Logical Operators](../logical.md)
 - [`greaterEqual(_:_:stream:)`](../greaterequal%28_,_,stream%29.md)

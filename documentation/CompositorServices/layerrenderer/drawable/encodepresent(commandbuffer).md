@@ -24,7 +24,7 @@ void cp_drawable_encode_present(cp_drawable_t drawable, id<MTLCommandBuffer>comm
 
 - [Drawing fully immersive content using Metal](../../drawing-fully-immersive-content-using-metal.md)
 
-#### Discussion
+## Discussion
 
 Call this function as the last step before committing the specified command buffer. Specifically, call it after you finish encoding all the work required to render the frame, and immediately before you call the command buffer’s [`commit()`](../../../Metal/mtlcommandbuffer/commit%28%29.md) method. The function adds a presentation event to the buffer that causes the compositor to display your frame.
 

@@ -24,11 +24,11 @@ class func areaMinMax() -> any CIFilter & CIAreaMinMax
 + (CIFilter<CIAreaMinMax> *) areaMinMaxFilter;
 ```
 
-#### Return Value
+## Return Value
 
 A 2 x 1 pixel image containing the minimum and maximum color components.
 
-#### Discussion
+## Discussion
 
 This filter returns the maximum and minimum color components in the region defined by `extent`. The result is a 2 x 1 pixel image with the left pixel containing the minimum components and the right pixel containing the maximum components.
 

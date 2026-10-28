@@ -23,7 +23,7 @@ var predicateForSelectionOfProperty: NSPredicate? { get set }
 @property (nonatomic, copy, nullable) NSPredicate * predicateForSelectionOfProperty;
 ```
 
-#### Discussion
+## Discussion
 
 This property determines whether a selected contact should be returned (when the predicate evaluates to TRUE), or a default action for the property should be performed (when the predicate evaluates to FALSE). By default the contact picker view controller returns the first selected property of the contact. This predicate is evaluated on the [`CNContactProperty`](../../Contacts/cncontactproperty.md) property that is being selected, such as `(key == 'emailAddresses') AND (value LIKE '*@apple.com')` to return email address of the contact if the address contains the string “@apple.com”.
 

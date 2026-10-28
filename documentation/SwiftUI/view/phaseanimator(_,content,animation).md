@@ -22,7 +22,7 @@ nonisolated
 func phaseAnimator<Phase>(_ phases: some Sequence, @ContentBuilder content: @escaping (PlaceholderContentView<Self>, Phase) -> some View, animation: @escaping (Phase) -> Animation? = { _ in .default }) -> some View where Phase : Equatable
 ```
 
-#### Discussion
+## Discussion
 
 When the modified view first appears, this modifier renders its `content` closure using the first phase as input to the closure, along with a proxy for the modified view. Apply effects to the proxy — and thus to the modified view — in a way that’s appropriate for the first phase value.
 

@@ -26,7 +26,7 @@ A SwiftUI view that displays a chart.
 
 - [Creating a chart using Swift Charts](./creating-a-chart-using-swift-charts.md)
 
-#### Overview
+## Overview
 
 To create a chart, instantiate a `Chart` structure with marks that display the properties of your data. For example, suppose you have an array of `ValuePerCategory` structures that define data points composed of a `category` and a `value`:
 
@@ -58,7 +58,7 @@ This chart initializer behaves a lot like a SwiftUI [`ForEach`](../SwiftUI/forea
 
 ![A bar chart with three categories A, B, and C on the x-axis and a range of 0 to 10 on the y-axis. A bar appears in each category. All the bars are the same color. The first has a value of 5. The second has a value of 9. The third has a value of 7.](https://developer.apple.com/tutorials/images/com.apple.Charts/chart-1-macOS@2x.png)
 
-##### Controlling data series inside a chart
+### Controlling data series inside a chart
 
 You can compose more sophisticated charts by providing more than one series of marks to the chart. For example, suppose you have profit data for two companies:
 

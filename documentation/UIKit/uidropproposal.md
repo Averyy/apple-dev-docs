@@ -27,7 +27,7 @@ class UIDropProposal
 
 - [Making a view into a drop destination](./making-a-view-into-a-drop-destination.md)
 
-#### Overview
+## Overview
 
 If a view’s drop interaction delegate accepts dropped drag items, it must return a drop proposal in its implementation of the [`dropInteraction(_:sessionDidUpdate:)`](./uidropinteractiondelegate/dropinteraction%28_,sessiondidupdate%29.md) method.
 

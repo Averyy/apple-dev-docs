@@ -21,7 +21,7 @@ static func prominent() -> Self
 
 Available when `Self` is `UIWindowSceneProminentPlacement`.
 
-#### Return Value
+## Return Value
 
 A placement that indicates the system should present the window more prominently than others in the space.
 

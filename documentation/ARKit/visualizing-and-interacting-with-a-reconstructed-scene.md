@@ -11,7 +11,7 @@ Estimate the shape of the physical environment using a polygonal mesh.
 - iPadOS 13.4+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 On a fourth-generation iPad Pro running iPadOS 13.4 or later, ARKit uses the LiDAR Scanner to create a polygonal model of the physical environment. The LiDAR Scanner quickly retrieves depth information in front of the person for ARKit to estimate and reconstruct the shape of the real world. ARKit converts the depth information into a series of vertices that connect to form a mesh. To partition the information, ARKit makes multiple anchors, each assigned a unique portion of the mesh. Collectively, the mesh anchors represent the real-world scene around the person.
 
@@ -27,7 +27,7 @@ This sample app presents an AR experience using RealityKit. The figure below ill
 
 ![Screenshot of a chair visible in the camera feed with a mesh overlay visualized by RealityKit.](https://developer.apple.com/tutorials/images/com.apple.arkit/meshing3-annotated@2x.png)
 
-#### Visualize the shape of the physical environment
+## Visualize the shape of the physical environment
 
 To enable scene meshes, the sample sets a world-configuration’s [`sceneReconstruction`](./arworldtrackingconfiguration/scenereconstruction.md) property to one of the mesh options.
 
@@ -51,7 +51,7 @@ To begin the AR experience, the sample configures and runs the session when the 
 arView.session.run(configuration)
 ```
 
-##### Add plane detection
+### Add plane detection
 
 When an app enables plane detection with scene reconstruction, ARKit considers that information when making the mesh. Where the LiDAR scanner may produce a slightly uneven mesh on a real-world surface, ARKit flattens the mesh where it detects a plane on that surface.
 
@@ -73,7 +73,7 @@ To demonstrate the difference that plane detection makes on meshes, this app dis
 }
 ```
 
-#### Locate a Point on an Object’s Surface
+## Locate a Point on an Object’s Surface
 
 Apps that retrieve surface locations using meshes can achieve unprecedented accuracy. By considering the mesh, raycasts can intersect with nonplanar surfaces, or surfaces with little or no features, like white walls.
 
@@ -96,7 +96,7 @@ arView.scene.addAnchor(resultAnchor, removeAfter: 3)
 
 ![Screenshot of a virtual sphere placed on the surface of a mesh that intersected the user's raycast.](https://developer.apple.com/tutorials/images/com.apple.arkit/insersection-sphere-annotated@2x.png)
 
-#### Classify Real-World Objects
+## Classify Real-World Objects
 
 ARKit has a classification feature that analyzes its meshed model of the world to recognize specific, real-world objects. Within the mesh, ARKit can classify floors, tables, seats, windows, and ceilings. See [`ARMeshClassification`](./armeshclassification.md) for the full list.
 
@@ -188,7 +188,7 @@ if let centerOfFace = centerOfFace {
 
 ![Screenshot of a virtual sphere that identifies the origin of a classified mesh.](https://developer.apple.com/tutorials/images/com.apple.arkit/classified-text-annotated@2x.png)
 
-##### Occlude virtual content with a mesh
+### Occlude virtual content with a mesh
 
 *Occlusion* is a feature where parts of the real world cover an app’s virtual content, from the camera’s perspective. To achieve this illusion, RealityKit checks for any meshes in front of virtual content, viewed by the user, and omits drawing any part of the virtual content obscured by those meshes. The sample enables occlusion by adding the [`ARView.Environment.SceneUnderstanding.Options`](../RealityKit/arview/environment-swift.struct/sceneunderstanding-swift.struct/options-swift.struct.md) option to the environment’s [`sceneUnderstanding`](../RealityKit/arview/environment-swift.struct/sceneunderstanding-swift.property.md) property.
 
@@ -200,7 +200,7 @@ At runtime, this app omits drawing portions of the virtual text that are behind 
 
 ![Screenshot of a real-world table that occludes a virtual object placed by the app.](https://developer.apple.com/tutorials/images/com.apple.arkit/table-floor-annotated@2x.png)
 
-##### Interact with real-world objects using physics
+### Interact with real-world objects using physics
 
 With scene meshes, virtual content can interact with the physical environment realistically because the meshes give RealityKit’s physics engine an accurate model of the world. The sample enables physics by adding the [`physics`](../RealityKit/arview/environment-swift.struct/sceneunderstanding-swift.struct/options-swift.struct/physics.md) option to the environment’s [`sceneUnderstanding`](../RealityKit/arview/environment-swift.struct/sceneunderstanding-swift.property.md) property.
 

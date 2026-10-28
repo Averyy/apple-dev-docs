@@ -23,7 +23,7 @@ var isAccessibilityElement: Bool { get set }
 @property (nonatomic, assign) BOOL isAccessibilityElement;
 ```
 
-#### Discussion
+## Discussion
 
 The default value for this property is [`false`](../../Swift/false.md). If the receiver is a UIKit control, the default value is [`true`](../../Swift/true.md).
 

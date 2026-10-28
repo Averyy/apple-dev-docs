@@ -25,11 +25,11 @@ func localizedString(fromTimeInterval timeInterval: TimeInterval) -> String
 - (NSString *) localizedStringFromTimeInterval:(NSTimeInterval) timeInterval;
 ```
 
-#### Return Value
+## Return Value
 
 A string that represents the formatted time interval.
 
-#### Discussion
+## Discussion
 
 The formatter interprets a negative time interval as a date in the past.
 

@@ -41,7 +41,7 @@ static SCNMatrix4 SCNMatrix4MakeTranslation(float tx, float ty, float tz);
 static SCNMatrix4 SCNMatrix4MakeTranslation(CGFloat tx, CGFloat ty, CGFloat tz);
 ```
 
-#### Return Value
+## Return Value
 
 A new translation matrix.
 

@@ -25,7 +25,7 @@ var COMPRESSION_LZRAVEN: compression_algorithm { get }
 COMPRESSION_LZRAVEN
 ```
 
-#### Discussion
+## Discussion
 
 LZRAVEN is the Apple high-compression algorithm, designed to replace [`COMPRESSION_LZMA`](./compression_lzma.md) across Apple platforms. It combines LZ77 with modern entropy coding, adaptive context-sensitive modeling, and near-optimal parsing to often achieve a slightly better compression ratio than [`COMPRESSION_LZMA`](./compression_lzma.md). LZRAVEN uses an 8 MB dictionary and encodes faster than [`COMPRESSION_LZMA`](./compression_lzma.md) while decoding 3x faster on Apple silicon, where the decoder leverages vector units to process multiple symbols per operation.
 

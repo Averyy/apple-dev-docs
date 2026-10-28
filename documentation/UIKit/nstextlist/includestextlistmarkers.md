@@ -24,7 +24,7 @@ class var includesTextListMarkers: Bool { get }
 @property (class, readonly) BOOL includesTextListMarkers;
 ```
 
-#### Overview
+## Overview
 
 The default value is [`false`](../../Swift/false.md). When [`true`](../../Swift/true.md), TextKit includes text list markers in the text content.
 

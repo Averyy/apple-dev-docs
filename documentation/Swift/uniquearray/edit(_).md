@@ -21,11 +21,11 @@ Arbitrarily edit the storage underlying this array by invoking a user-supplied c
 mutating func edit<E, R>(_ body: @_lifetime(0: copy 0) (inout OutputSpan<Element>) throws(E) -> R) throws(E) -> R where E : Error, R : ~Copyable
 ```
 
-#### Return Value
+## Return Value
 
 This method returns the result of its function argument.
 
-#### Discussion
+## Discussion
 
 When the function argument finishes (whether by returning or throwing an error) the rigid array instance is updated to match the final contents of the output span.
 

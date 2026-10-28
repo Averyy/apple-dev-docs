@@ -25,7 +25,7 @@ let kCTFontCharacterSetAttribute: CFString
 extern CFStringRef const kCTFontCharacterSetAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is a [`CFCharacterSet`](../CoreFoundation/cfcharacterset.md) object. If specified, this attribute can be used to restrict the font to a subset of its actual character set. If unspecified, this attribute is ignored and the actual character set is used.
 

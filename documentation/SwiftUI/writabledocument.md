@@ -19,7 +19,7 @@ A document type that supports writing to file.
 protocol WritableDocument : AnyObject
 ```
 
-#### Overview
+## Overview
 
 Conform to `WritableDocument` to add save and export capabilities. Most documents also conform to [`ReadableDocument`](./readabledocument.md) — use the [`Document`](./document.md) protocol as a shorthand for both.
 

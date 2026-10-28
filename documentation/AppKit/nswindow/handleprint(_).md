@@ -19,7 +19,7 @@ func handlePrint(_ command: NSScriptCommand) -> Any?
 - (id) handlePrintScriptCommand:(NSScriptCommand *) command;
 ```
 
-#### Discussion
+## Discussion
 
 If there’s a corresponding document and the window is the main window of the document, it forwards the `print` command to the corresponding document. Otherwise, the window sends itself a `print` message.
 

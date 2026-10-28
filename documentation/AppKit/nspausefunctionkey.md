@@ -19,7 +19,7 @@ var NSPauseFunctionKey: Int { get }
 NSPauseFunctionKey
 ```
 
-#### Discussion
+## Discussion
 
 This key is unavailable on most Macintosh keyboards.
 

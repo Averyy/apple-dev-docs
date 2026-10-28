@@ -19,7 +19,7 @@ A configuration that controls how a navigation bar minimizes in response to scro
 @interface UIBarMinimization : NSObject
 ```
 
-#### Overview
+## Overview
 
 Access this configuration through `UINavigationItem/navigationBarMinimization` and set its properties to customize minimization.
 

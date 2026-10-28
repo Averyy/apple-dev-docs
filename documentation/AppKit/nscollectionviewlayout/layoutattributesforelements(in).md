@@ -19,11 +19,11 @@ func layoutAttributesForElements(in rect: NSRect) -> [NSCollectionViewLayoutAttr
 - (NSArray<__kindof NSCollectionViewLayoutAttributes *> *) layoutAttributesForElementsInRect:(NSRect) rect;
 ```
 
-#### Return Value
+## Return Value
 
 An array of layout attribute objects containing the layout information for the enclosed items and views.
 
-#### Discussion
+## Discussion
 
 Subclasses must override this method. In your implementation, return layout attributes for all items, supplementary views, and decoration views that intersect the specified rectangle.
 

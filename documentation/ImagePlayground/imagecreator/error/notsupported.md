@@ -19,7 +19,7 @@ An error that indicates the device doesn’t support image generation.
 case notSupported
 ```
 
-#### Discussion
+## Discussion
 
 Make sure the device has the hardware required to run models.
 

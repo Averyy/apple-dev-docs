@@ -28,7 +28,7 @@ class func instantiate(with audioComponentDescription: AudioComponentDescription
 + (void) instantiateWithComponentDescription:(AudioComponentDescription) audioComponentDescription options:(AudioComponentInstantiationOptions) options completionHandler:(void (^)(AVAudioUnit *audioUnit, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 You must create components with flags that include [`requiresAsyncInstantiation`](../../AudioToolbox/audiocomponentflags/requiresasyncinstantiation.md) asynchronously through this method if they’re for use with [`AVAudioEngine`](../avaudioengine.md).
 

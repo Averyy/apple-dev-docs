@@ -23,7 +23,7 @@ An audio unit object that wraps or underlies the implementation’s audio unit.
 var auAudioUnit: AUAudioUnit { get }
 ```
 
-#### Discussion
+## Discussion
 
 This provides an [`AUAudioUnit`](../../AudioToolbox/auaudiounit.md) that either wraps or underlies the implementation’s audio unit, depending on how the app packages the audio unit. Apps interact with this to control custom properties, select presets, and change parameters.
 

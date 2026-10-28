@@ -5,7 +5,7 @@
 
 Configure the session when a SharePlay activity starts, and handle events that occur during the lifetime of the activity.
 
-#### Overview
+## Overview
 
 When one person in a group starts an activity, other people’s devices display system UI to prompt them to join that activity.  When each person joins, the system prepares a [`GroupSession`](./groupsession.md) object for the activity and delivers it to their app. Your app uses that session object to:
 
@@ -17,7 +17,7 @@ When one person in a group starts an activity, other people’s devices display 
 
 For information about how to define activities, see [Defining your app’s SharePlay activities](./defining-your-apps-shareplay-activities.md). For information about how to start activities, see [Presenting SharePlay activities from your app’s UI](./promoting-shareplay-activities-from-your-apps-ui.md).
 
-##### Join an activity from a background task
+### Join an activity from a background task
 
 Activities can start at any time, so you need to set up an asynchronous handler in your app to listen for when they start. After a participant joins an activity, the system creates a [`GroupSession`](./groupsession.md) object and delivers it to the sessions property of the [`GroupActivity`](./groupactivity.md) type you defined. Monitor the sessions property from an asynchronous handler, and process new session objects when they become available.
 
@@ -60,7 +60,7 @@ var task = Task {
 
 Save a reference to any sessions you receive asynchronously and remove those references when the session state changes to [`GroupSession.State.invalidated(reason:)`](./groupsession/state-swift.enum/invalidated%28reason%29.md). The system delivers one new session for each joined activity. When the state of the session changes, or when other properties change, the system updates the already delivered session. To detect updates while the session is active, add subscribers to the properties of the [`GroupSession`](./groupsession.md) object.
 
-##### Prepare your app’s interface
+### Prepare your app’s interface
 
 When your app receives a [`GroupSession`](./groupsession.md) object, start preparing your app’s UI immediately. The activity doesn’t start until you call the join method of the session object you received. However, don’t call that method until you’re ready to display the UI for the activity itself. If your app needs to collect login credentials or download content before starting the activity, present the UI for those tasks and wait for them to complete before you call the join method.
 
@@ -71,14 +71,14 @@ After you join an activity, update your UI as needed to reflect relevant informa
 - Support people navigating away from an activity but staying on the group FaceTime call or Messages conversation. For activities that involve video playback, support Picture in Picture to continue playback even when someone changes apps.
 - Make sure app-specific controls are easy to access.
 
-##### Join the session to start the activity
+### Join the session to start the activity
 
 When your app has everything it needs and is ready to start the activity, call the [`join()`](./groupsession/join%28%29.md) method of the [`GroupSession`](./groupsession.md) object. The [`join()`](./groupsession/join%28%29.md) method asks the system to start the activity in your app.
 Even after you call this method, the session remains in the [`GroupSession.State.waiting`](./groupsession/state-swift.enum/waiting.md) state until the system establishes a connection to the activity.
 
 If your call to [`join()`](./groupsession/join%28%29.md) is successful, the system changes the state of the session to [`GroupSession.State.joined`](./groupsession/state-swift.enum/joined.md) and begins sending information to and from the current device. If you tried to synchronize data after calling [`join()`](./groupsession/join%28%29.md), but before the system completed the request, those requests remain queued until your session enters the [`GroupSession.State.joined`](./groupsession/state-swift.enum/joined.md) state. After successfully joining the session, the system expects you to handle session-related changes and messages. For information about how to send messages between participants, see [Synchronizing data during a SharePlay activity](./synchronizing-data-during-a-shareplay-activity.md).
 
-##### Accommodate people who arrive late to the session
+### Accommodate people who arrive late to the session
 
 Participants join activities separately, and people can join immediately or after a delay.  If participants need to download your app, or don’t see the invitation to join the activity, they might arrive several minutes after others. If your activity manages state information that all participants require, devise a way to deliver that information to someone who arrives late. For example, a whiteboard app needs to deliver the current whiteboard content to any late joiners.
 
@@ -96,7 +96,7 @@ Task {
 }
 ```
 
-##### End the activity for one or more participants
+### End the activity for one or more participants
 
 The [`GroupSession`](./groupsession.md) object contains methods to end the session for the current participant or the entire group. When designing your UI, make it clear which option someone is choosing, and call the correct method in response.
 

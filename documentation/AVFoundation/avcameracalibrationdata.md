@@ -24,7 +24,7 @@ class AVCameraCalibrationData
 @interface AVCameraCalibrationData : NSObject
 ```
 
-#### Overview
+## Overview
 
 Information about the calibration of a camera—such as its pixel focal length, principal point, and lens distortion characteristics—helps to determine the geometric relationships between the camera device and the images it captures. You can use this information to accurately render visual effects into images produced by a camera or perform computer vision tasks such as correcting images for geometric distortions.
 

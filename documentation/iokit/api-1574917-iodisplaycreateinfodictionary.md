@@ -16,11 +16,11 @@ Create a CFDictionary with information about display hardware.
 CFDictionaryRef IODisplayCreateInfoDictionary(io_service_t framebuffer, IOOptionBits options);
 ```
 
-#### Return Value
+## Return Value
 
 The returned CFDictionary that should be released by the caller with CFRelease().
 
-#### Discussion
+## Discussion
 
 The CFDictionary created by this function contains information about the display hardware associated with a framebuffer. The keys for the dictionary are listed in IOGraphicsTypes.h.
 

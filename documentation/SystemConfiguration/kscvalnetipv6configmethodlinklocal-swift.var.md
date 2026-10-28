@@ -19,7 +19,7 @@ let kSCValNetIPv6ConfigMethodLinkLocal: CFString
 extern CFStringRef const kSCValNetIPv6ConfigMethodLinkLocal;
 ```
 
-#### Discussion
+## Discussion
 
 This value applies to the [`kSCPropNetIPv6ConfigMethod`](./kscpropnetipv6configmethod-swift.var.md) key.
 

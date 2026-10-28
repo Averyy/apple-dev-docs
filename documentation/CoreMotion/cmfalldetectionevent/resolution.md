@@ -19,7 +19,7 @@ var resolution: CMFallDetectionEvent.UserResolution { get }
 @property (nonatomic, readonly) CMFallDetectionEventUserResolution resolution;
 ```
 
-#### Discussion
+## Discussion
 
 The resolution of an event reflects the user’s action in response to the fall detection notification. For example, the user might tap a button to respond inside the notification, or press the digital crown to dismiss the notification.
 

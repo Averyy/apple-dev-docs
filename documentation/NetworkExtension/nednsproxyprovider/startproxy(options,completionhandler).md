@@ -27,7 +27,7 @@ func startProxy(options: [String : Any]? = nil) async throws
 - (void) startProxyWithOptions:(NSDictionary<NSString *,id> *) options completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Subclasses of [`NEDNSProxyProvider`](../nednsproxyprovider.md) must override this method to perform any necessary steps to ready the proxy for handling flows of network data.
 

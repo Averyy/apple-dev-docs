@@ -5,13 +5,13 @@
 
 Prepare the necessary information, such as parameter values, for your FxPlug plug-in to render.
 
-#### Overview
+## Overview
 
 One of the biggest changes between FxPlug 3 and 4 is that now there is no FxPlug API access at render time. Rendering occurs out-of-process, reducing the amount of back and forth between the host app and the plug-in, which is essential for performance. Thus, if you call [`FxParameterRetrievalAPI_v6`](../professional_video_applications/fxparameterretrievalapi_v6.md) at render time, it will return *nil*.
 
 This means that your plug-in must prepare what it needs to know to render before render time. Then, at render time, this information is provided to your plug-in. This information is called the *Plug-in State*. It’s represented by a byte-buffer of [`NSData`](../Foundation/nsdata.md) of your own creation that can be passed to the rendering method at render time. The content of the `NSData` object is up to you, but it typically contains parameter values from the host application’s UI, or values calculated from those parameter values.
 
-##### Prepare the plug-in state
+### Prepare the plug-in state
 
 Here, your plug-in can query parameter values, and store the required information in an NSData object as you see fit. In the `FxBrightness` example, a struct of values is filled in with plug-in parameter values and ultimately combined into an `NSData` object like this:
 

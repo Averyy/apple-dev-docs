@@ -23,7 +23,7 @@ func setText(_ text: String?)
 
 - [Connecting Your User Interface to Your Code](../connecting-your-user-interface-to-your-code.md)
 
-#### Discussion
+## Discussion
 
 This method changes the string displayed by the label to the new value. When using this method to set the text, the default font and styling information for the text is derived from the storyboard file. You can change the default text color using the [`setTextColor(_:)`](./settextcolor%28_%29.md) method.
 

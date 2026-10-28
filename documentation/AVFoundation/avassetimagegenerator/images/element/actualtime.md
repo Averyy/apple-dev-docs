@@ -20,7 +20,7 @@ The actual time in the video timeline at which the image generator creates the i
 var actualTime: CMTime { get throws }
 ```
 
-#### Discussion
+## Discussion
 
 This value may differ from the [`requestedTime`](./requestedtime.md) depending on the configuration of the image generator’s [`requestedTimeToleranceBefore`](../../requestedtimetolerancebefore.md) and [`requestedTimeToleranceAfter`](../../requestedtimetoleranceafter.md) properties.
 

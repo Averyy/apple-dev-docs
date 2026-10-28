@@ -21,7 +21,7 @@ Sets the event handler function for the given dispatch source.
 extern void dispatch_source_set_event_handler_f(dispatch_source_t source, dispatch_function_t handler);
 ```
 
-#### Discussion
+## Discussion
 
 The event handler (if specified) is submitted to the source’s target queue in response to the arrival of an event.
 

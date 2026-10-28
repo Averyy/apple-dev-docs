@@ -22,7 +22,7 @@ A normalized 2D point in a view’s coordinate space.
 struct UnitPoint
 ```
 
-#### Overview
+## Overview
 
 Use a unit point to represent a location in a view without having to know the view’s rendered size. The point stores a value in each dimension that indicates the fraction of the view’s size in that dimension — measured from the view’s origin — where the point appears. For example, you can create a unit point that represents the center of any view by using the value `0.5` for each dimension:
 
@@ -49,7 +49,7 @@ You can create custom unit points with explicit values, like the example above, 
 
 > **Note**: A unit point with one or more components outside the range `[0, 1]` projects to a point outside of the view.
 
-##### Layout direction
+### Layout direction
 
 When a person configures their device to use a left-to-right language like English, the system places the view’s origin in its top-left corner, with positive x toward the right and positive y toward the bottom of the view. In a right-to-left environment, the origin moves to the upper-right corner, and the positive x direction changes to be toward the left. You don’t typically need to do anything to handle this change, because SwiftUI applies the change to all aspects of the system. For example, see the discussion about layout direction in [`HorizontalAlignment`](./horizontalalignment.md).
 

@@ -19,7 +19,7 @@ class AccessorySecuritySession
 
 - [Receiving iOS notifications on an accessory](./receiving-ios-notifications-on-an-accessory.md)
 
-#### Overview
+## Overview
 
 The security session handles a key exchange process (see `AccessorySecurity/Event`) that establishes encrypted communication with your accessory.
 

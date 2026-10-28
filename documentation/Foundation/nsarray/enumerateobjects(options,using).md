@@ -25,7 +25,7 @@ func enumerateObjects(options opts: NSEnumerationOptions = [], using block: (Any
 - (void) enumerateObjectsWithOptions:(NSEnumerationOptions) opts usingBlock:(void (^)(ObjectType obj, NSUInteger idx, BOOL *stop)) block;
 ```
 
-#### Discussion
+## Discussion
 
 This method executes synchronously. By default, the enumeration starts with the first object and continues serially through the array to the last object. You can specify [`concurrent`](../nsenumerationoptions/concurrent.md) and/or [`reverse`](../nsenumerationoptions/reverse.md) as enumeration options to modify this behavior.
 

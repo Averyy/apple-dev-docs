@@ -20,7 +20,7 @@ func finishEnumeratingWithError(_ error: any Error)
 - (void) finishEnumeratingWithError:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 Finishing with an error causes the system to stop requesting additional pages of results. The system doesn’t retry after you call this method. If an error is potentially recoverable, you can perform your own retry in your implementation of [`enumerateSearchResults(for:startingAt:)`](../nsfileprovidersearchenumerator/enumeratesearchresults%28for,startingat%29.md) and continue if successful, or end the query by calling this method.
 

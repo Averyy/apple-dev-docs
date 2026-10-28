@@ -16,7 +16,7 @@ Defines custom detail level specifications for a photogrammetry session with cus
 var customDetailSpecification: PhotogrammetrySession.Configuration.CustomDetailSpecification
 ```
 
-#### Discussion
+## Discussion
 
 This property configures the characteristics of the model’s precision and characteristics, such as texture size and the types of texture maps.
 

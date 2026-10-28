@@ -21,7 +21,7 @@ Suppresses the representation of all ancestor classes.
 case suppressed
 ```
 
-#### Discussion
+## Discussion
 
 In a mirror created with this ancestor representation, the `superclassMirror` property is `nil`.
 

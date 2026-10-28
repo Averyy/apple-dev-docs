@@ -24,7 +24,7 @@ var vertexFormat: MTLAttributeFormat { get set }
 @property (nonatomic) MTLAttributeFormat vertexFormat;
 ```
 
-#### Discussion
+## Discussion
 
 This property controls the format of the position attribute of the vertices the [`vertexBuffer`](./vertexbuffer.md) references.
 

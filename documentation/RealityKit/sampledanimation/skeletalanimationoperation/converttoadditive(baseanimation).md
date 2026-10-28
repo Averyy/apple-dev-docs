@@ -20,11 +20,11 @@ Converts animation to additive format by subtracting a base animation.
 static func convertToAdditive(baseAnimation: AnimationResource) -> SampledAnimation<Value>.SkeletalAnimationOperation
 ```
 
-#### Return Value
+## Return Value
 
 A [`SampledAnimation.SkeletalAnimationOperation`](../skeletalanimationoperation.md) that, when processed, produces a `SampledAnimation<JointTransforms>` in additive format.
 
-#### Discussion
+## Discussion
 
 Creates a delta animation that represents the difference between this animation and the provided base animation. You can layer the resulting animation on top of other animations using additive blending.
 

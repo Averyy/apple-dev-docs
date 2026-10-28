@@ -14,7 +14,7 @@
 DCLCommand *(*AllocateLabelDCL)(IOFireWireLibDCLCommandPoolRef self, DCLCommand *inDCL);
 ```
 
-#### Discussion
+## Discussion
 
 Description forthcoming
 

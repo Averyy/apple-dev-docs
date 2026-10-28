@@ -21,7 +21,7 @@ The strategy used when decoding dates from part of a JSON object.
 var dateDecodingStrategy: JSONDecoder.DateDecodingStrategy { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The default strategy is the [`JSONDecoder.DateDecodingStrategy.deferredToDate`](./datedecodingstrategy-swift.enum/deferredtodate.md) strategy.
 

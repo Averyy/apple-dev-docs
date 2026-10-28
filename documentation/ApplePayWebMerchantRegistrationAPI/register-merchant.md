@@ -13,7 +13,7 @@ Register a merchant and its corresponding set of fully qualified domains.
 
 - [Preparing merchant domains for verification](./preparing-merchant-domains-for-verification.md)
 
-#### Discussion
+## Discussion
 
 Call this API to register a merchant and their domains. You can register domains in multiple requests. The API has a limit of 99 domain names per `partnerInternalMerchantIdentifier.`
 

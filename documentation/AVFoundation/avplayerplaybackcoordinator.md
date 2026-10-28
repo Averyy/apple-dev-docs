@@ -24,7 +24,7 @@ class AVPlayerPlaybackCoordinator
 @interface AVPlayerPlaybackCoordinator : AVPlaybackCoordinator
 ```
 
-#### Overview
+## Overview
 
 This object coordinates the state of [`AVPlayer`](./avplayer.md) objects. You don’t create an instance of the coordinator, but instead access the player’s instance through its [`playbackCoordinator`](./avplayer/playbackcoordinator.md) property.
 

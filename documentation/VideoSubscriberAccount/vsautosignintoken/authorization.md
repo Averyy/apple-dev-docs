@@ -19,7 +19,7 @@ A state that represents a person’s approval of Automatic Sign-In.
 @property (nonatomic, readonly) VSAutoSignInAuthorization authorization;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`VSUserAccountManager.AutoSignInAuthorization.notDetermined`](../vsuseraccountmanager/autosigninauthorization/notdetermined.md). The framework updates the value based on a person’s answer to the prompt to opt in to Automatic Sign-In (see [`requestAutoSignInAuthorization()`](../vsuseraccountmanager/requestautosigninauthorization%28%29.md)).
 

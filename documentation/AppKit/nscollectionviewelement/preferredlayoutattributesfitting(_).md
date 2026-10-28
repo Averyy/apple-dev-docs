@@ -20,15 +20,15 @@ optional func preferredLayoutAttributesFitting(_ layoutAttributes: NSCollectionV
 - (NSCollectionViewLayoutAttributes *) preferredLayoutAttributesFittingAttributes:(NSCollectionViewLayoutAttributes *) layoutAttributes;
 ```
 
-#### Return Value
+## Return Value
 
 The final attributes to apply to the element.
 
-#### Discussion
+## Discussion
 
 The default implementation of this method returns the same attributes that are in the `layoutAttributes` parameter. You can override this method in subclasses and use it to return a different set of attributes. If you override this method, call `super` first to give the system the opportunity to make changes, then modify the returned attributes.
 
-##### Special Considerations
+### Special Considerations
 
 In OS X 10.11, this method is never called.
 

@@ -24,7 +24,7 @@ var networkPrefixLengths: [NSNumber] { get }
 @property (readonly) NSArray<NSNumber *> * networkPrefixLengths;
 ```
 
-#### Discussion
+## Discussion
 
 Each network prefix length in this array is combined with the IP address in the corresponding index in `addresses` to specify an IPv6 network that the TUN interface is (virtually) connected to.
 

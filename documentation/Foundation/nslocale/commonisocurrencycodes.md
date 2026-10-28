@@ -25,7 +25,7 @@ class var commonISOCurrencyCodes: [String] { get }
 @property (class, copy, readonly) NSArray<NSString *> * commonISOCurrencyCodes;
 ```
 
-#### Discussion
+## Discussion
 
 Common codes may include, for example, `"AED"`, `"AUD"`, `"BZD"`, `"DKK"`, `"EUR"`, `"GBP"`, `"JPY"`, `"KES"`, `"MXN"`, `"OMR"`, `"STD"`, `"USD"`, `"XCD"`, and `"ZWD"`.
 

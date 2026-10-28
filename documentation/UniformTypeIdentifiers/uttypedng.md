@@ -19,7 +19,7 @@
 extern UTType * const UTTypeDNG;
 ```
 
-#### Discussion
+## Discussion
 
 An Adobe DNG (digital negative) image.
 

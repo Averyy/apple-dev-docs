@@ -25,7 +25,7 @@ var weights: BNNSLayerData
 BNNSLayerData weights;
 ```
 
-#### Discussion
+## Discussion
 
 This parameter should contain [`k_width`](./k_width.md) `*` [`k_height`](./k_height.md) `*` [`in_channels`](./in_channels.md) `*` [`out_channels`](./out_channels.md) values.
 

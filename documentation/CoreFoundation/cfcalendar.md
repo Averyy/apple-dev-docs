@@ -23,7 +23,7 @@ class CFCalendar
 typedef struct __CFCalendar * CFCalendarRef;
 ```
 
-#### Overview
+## Overview
 
 The CFCalendar opaque type represents a calendar system. The associated API provides information about a calendar and supports calendrical computations such as determining the range of a given calendrical unit and adding units to a given absolute time.
 

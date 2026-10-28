@@ -23,7 +23,7 @@ var automaticallyAdjustsCinematicVideoMetadataCaptureEnabled: Bool { get set }
 @property (nonatomic) BOOL automaticallyAdjustsCinematicVideoMetadataCaptureEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 When this property is `true` (the default), the framework manages `cinematicVideoMetadataCaptureEnabled` automatically. The framework decides when to enable cinematic video metadata capture; capture is not guaranteed even when `cinematicVideoMetadataCaptureSupported` is `true`. Clients that need explicit control over whether metadata is captured should set this property to `false` and manage `cinematicVideoMetadataCaptureEnabled` directly.
 

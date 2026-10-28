@@ -25,7 +25,7 @@ var resultType: NSBatchDeleteRequestResultType { get set }
 @property NSBatchDeleteRequestResultType resultType;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property before you execute the request if you require a result type other than the default of [`NSBatchDeleteRequestResultType.resultTypeStatusOnly`](../nsbatchdeleterequestresulttype/resulttypestatusonly.md).
 

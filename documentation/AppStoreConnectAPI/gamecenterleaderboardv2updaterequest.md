@@ -15,7 +15,7 @@ The request body you use to update a Game Center leaderboard v2.
 object GameCenterLeaderboardV2UpdateRequest
 ```
 
-#### Overview
+## Overview
 
 - data:
 

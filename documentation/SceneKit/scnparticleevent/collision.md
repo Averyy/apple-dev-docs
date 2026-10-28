@@ -25,7 +25,7 @@ case collision
 SCNParticleEventCollision
 ```
 
-#### Discussion
+## Discussion
 
 SceneKit calls your event handler block immediately after resolving the collision.
 

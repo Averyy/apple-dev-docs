@@ -21,7 +21,7 @@ The newly created queue is inactive.
 static let initiallyInactive: DispatchQueue.Attributes
 ```
 
-#### Discussion
+## Discussion
 
 Normally, a newly created queue schedules submitted blocks for execution immediately. Use this attribute to prevent the queue from scheduling blocks until you call its [`activate()`](../../dispatchobject/activate%28%29.md) method.
 

@@ -16,11 +16,11 @@ Returns a virtual range spanning lowest referenced buffer address to highest
 IOReturn (*GetDCLSpan)(NuDCLRef dcl, IOVirtualRange *spanRange);
 ```
 
-#### Return Value
+## Return Value
 
 Returns an IOVirtualRange.
 
-#### Discussion
+## Discussion
 
 Applies: NuDCLSendPacketRef, NuDCLReceivePacket
 

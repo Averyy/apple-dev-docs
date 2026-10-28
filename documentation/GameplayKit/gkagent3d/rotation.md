@@ -24,7 +24,7 @@ var rotation: matrix_float3x3 { get set }
 @property (nonatomic, assign) matrix_float3x3 rotation;
 ```
 
-#### Discussion
+## Discussion
 
 The agent updates its own position, rotation, and velocity according to its goals when you call its [`update(deltaTime:)`](./update%28deltatime%29.md) method.
 

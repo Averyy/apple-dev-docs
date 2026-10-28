@@ -21,7 +21,7 @@ Information used to resolve a font.
 var fontResolutionContext: Font.Context { get }
 ```
 
-#### Discussion
+## Discussion
 
 > **See Also**: [`resolve(in:)`](../font/resolve%28in%29.md)
 

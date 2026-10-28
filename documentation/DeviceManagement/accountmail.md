@@ -19,11 +19,11 @@ The declaration to configure a Mail account.
 object AccountMail
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.configuration.account.mail` as the declaration type.
 
-##### Configuration availability
+### Configuration availability
 
 |  |  |
 | --- | --- |
@@ -35,7 +35,7 @@ Specify `com.apple.configuration.account.mail` as the declaration type.
 | Allowed in user scope | macOS, Shared iPad |
 | Apply | Multiple configurations are applied separately |
 
-##### Configuration example
+### Configuration example
 
 This configuration sets up an IMAP email account with SMTP outgoing mail.
 

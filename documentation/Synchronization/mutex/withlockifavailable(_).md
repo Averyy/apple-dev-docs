@@ -21,11 +21,11 @@ Attempts to acquire the lock and then calls the given closure if successful.
 borrowing func withLockIfAvailable<Result, E>(_ body: (inout sending Value) throws(E) -> sending Result) throws(E) -> sending Result? where E : Error, Result : ~Copyable
 ```
 
-#### Return Value
+## Return Value
 
 The return value, if any, of the `body` closure parameter or `nil` if the lock couldn’t be acquired.
 
-#### Discussion
+## Discussion
 
 If the calling thread was successful in acquiring the lock, the closure will be executed and then immediately after it will release ownership of the lock. If we were unable to acquire the lock, this will return `nil`.
 

@@ -25,7 +25,7 @@ typealias CGImageMetadataTagBlock = (CFString, CGImageMetadataTag) -> Bool
 typedef _Bool (^)(const struct __CFString *, struct CGImageMetadataTag *) CGImageMetadataTagBlock;
 ```
 
-#### Return Value
+## Return Value
 
 `true` to continue enumerating the tags, or `false` to stop.
 

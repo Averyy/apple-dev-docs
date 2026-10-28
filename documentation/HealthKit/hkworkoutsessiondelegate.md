@@ -28,7 +28,7 @@ protocol HKWorkoutSessionDelegate : NSObjectProtocol
 
 - [Running workout sessions](./running-workout-sessions.md)
 
-#### Overview
+## Overview
 
 All the methods are required. HealthKit calls these methods on an anonymous serial background queue.
 

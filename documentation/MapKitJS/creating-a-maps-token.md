@@ -5,11 +5,11 @@
 
 Generate your token to access MapKit services with proper authorization.
 
-#### Overview
+## Overview
 
 MapKit JS uses tokens to authenticate map initializations and other API requests. You create a Maps token through your [Apple Developer Account](https://developer.apple.com/account), and then use the token to access MapKit JS services for displaying maps and points of interest on them.
 
-#### Create the Maps token
+## Create the Maps token
 
 To create a Maps token, follow these steps:
 
@@ -28,7 +28,7 @@ The token appears in the list under Website domains. Click the copy icon to copy
 
 If you need to revoke your token, click Revoke. This invalidates the token and you can no longer use it with MapKit JS.
 
-#### Signing a token dynamically
+## Signing a token dynamically
 
 To sign a token dynamically with the private key for Maps Server API, create and sign the token following the steps in [Creating and using tokens with Maps Server API](../AppleMapsServerAPI/creating-and-using-tokens-with-maps-server-api.md) and set the `scope` to `mapkit_js`. You must also set an `origin` value.
 

@@ -20,7 +20,7 @@ var numberOfEventsForRateSmoothing: UInt32 { get }
 @property (atomic, readonly) uint32_t numberOfEventsForRateSmoothing;
 ```
 
-#### Discussion
+## Discussion
 
 The property value is always greater than `0`.
 

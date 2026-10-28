@@ -24,7 +24,7 @@ class SCStreamConfiguration
 @interface SCStreamConfiguration : NSObject
 ```
 
-#### Overview
+## Overview
 
 Creating an instance of this class provides a default configuration for a stream. Only configure its properties if you need to customize the output.
 

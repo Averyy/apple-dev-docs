@@ -19,7 +19,7 @@ object NotificationHistoryRequest
 
 - [App Store Server API changelog](./app-store-server-api-changelog.md)
 
-#### Discussion
+## Discussion
 
 Specify the constraints for the App Store Server Notification history entries you’re requesting from [`Get Notification History`](./get-notification-history.md). The request requires the `startDate` and `endDate` fields; all other fields are optional. Include only the fields in your request that you need to constrain the response.
 

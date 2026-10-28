@@ -31,7 +31,7 @@ class SKTextureAtlas
 - [Maximizing Node Drawing Performance](./maximizing-node-drawing-performance.md)
 - [Maximizing Texture Performance](./maximizing-texture-performance.md)
 
-#### Overview
+## Overview
 
 An `SKTextureAtlas` is a collection of textures that were either created from an `.atlas` folder in the app bundle, or created at runtime. Texture atlases improve memory usage and rendering performance by reducing draw calls. Whenever you have textures that are always used together, store them in an atlas for best results.
 

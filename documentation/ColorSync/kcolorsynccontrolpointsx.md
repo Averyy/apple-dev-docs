@@ -25,7 +25,7 @@ var kColorSyncControlPointsX: Unmanaged<CFString>
 extern CFStringRef kColorSyncControlPointsX;
 ```
 
-#### Discussion
+## Discussion
 
 The coordinates are normalized by the reference white, so a value of `1.0` corresponds to the signal value at reference white. Shared across all alternates from index 0 when [`kColorSyncCommonCurveParameters`](./kcolorsynccommoncurveparameters.md) is true.
 

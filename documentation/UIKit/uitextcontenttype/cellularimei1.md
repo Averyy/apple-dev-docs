@@ -23,7 +23,7 @@ static let cellularIMEI1: UITextContentType
 extern UITextContentType const UITextContentTypeCellularIMEI1;
 ```
 
-#### Discussion.
+## Discussion.
 
 On single SIM devices, this is the equivalent of [`cellularIMEI`](./cellularimei.md).
 

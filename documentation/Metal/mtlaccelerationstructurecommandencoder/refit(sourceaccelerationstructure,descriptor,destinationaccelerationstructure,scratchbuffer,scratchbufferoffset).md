@@ -25,7 +25,7 @@ func refit(sourceAccelerationStructure: any MTLAccelerationStructure, descriptor
 - (void) refitAccelerationStructure:(id<MTLAccelerationStructure>) sourceAccelerationStructure descriptor:(MTLAccelerationStructureDescriptor *) descriptor destination:(id<MTLAccelerationStructure>) destinationAccelerationStructure scratchBuffer:(id<MTLBuffer>) scratchBuffer scratchBufferOffset:(NSUInteger) scratchBufferOffset;
 ```
 
-#### Discussion
+## Discussion
 
 Use refitting to update an acceleration structure when you make small changes to the underlying geometry. Refitting performs much faster than rebuilding an acceleration structure from scratch. However, ray-tracing performance may degrade, based on how many changes you make to the geometry data.
 

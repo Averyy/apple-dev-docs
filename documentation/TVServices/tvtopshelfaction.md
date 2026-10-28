@@ -19,7 +19,7 @@ class TVTopShelfAction
 @interface TVTopShelfAction : NSObject
 ```
 
-#### Overview
+## Overview
 
 A [`TVTopShelfAction`](./tvtopshelfaction.md) object contains the URL that you want tvOS to open when the user selects an item in the top shelf. Use actions to specify the location of playable content or pages containing additional information.
 

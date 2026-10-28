@@ -19,7 +19,7 @@ var NSFontFamilyClassMask: UInt32 { get }
 NSFontFamilyClassMask
 ```
 
-#### Discussion
+## Discussion
 
 The font family class mask you use to access `NSFontFamilyClass` values.
 

@@ -24,7 +24,7 @@ class CIRenderDestination
 @interface CIRenderDestination : NSObject
 ```
 
-#### Overview
+## Overview
 
 The `CIRenderDestination` class provides an API for specifying a render task destination’s properties, such as buffer format, alpha mode, clamping behavior, blending, and color space, properties formerly tied to [`CIContext`](./cicontext.md).
 

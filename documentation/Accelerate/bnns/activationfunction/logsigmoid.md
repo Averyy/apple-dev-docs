@@ -23,7 +23,7 @@ An activation function that returns the logarithm of the sigmoid function of its
 case logSigmoid
 ```
 
-#### Discussion
+## Discussion
 
 This constant defines an activation function that returns values using the following operation:
 

@@ -5,11 +5,11 @@
 
 Declare your app’s intention to use HomeKit, and get permission from the user to access home automation accessories.
 
-#### Overview
+## Overview
 
 To access the devices in the user’s home automation network, you enable the HomeKit capability for your app. You also provide a usage description that explains to the user why the app needs access, and handle the case where the user denies access.
 
-##### Enable the HomeKit capability
+### Enable the HomeKit capability
 
 To ready your app to work with HomeKit, enable the HomeKit capability for your app in Xcode. Open your project, select the app target, and choose the Signing & Capabilities pane. Then click the + button. In the window that appears, choose HomeKit.
 
@@ -19,7 +19,7 @@ When you enable the HomeKit capability, Xcode automatically adds the [`HomeKit E
 
 > ❗ **Important**:  HomeKit supports independent Apple Watch apps in watchOS 7 and later.
 
-##### Explain why your app needs access to the user’s home network
+### Explain why your app needs access to the user’s home network
 
 A user’s home automation network is a sensitive resource. Apps with access can collect sensor data and change the state of physical objects in the real world. To protect users, the first time your app uses the HomeKit framework—typically, when you create a [`HMHomeManager`](./hmhomemanager.md) instance—the system prompts the user for permission.
 
@@ -35,7 +35,7 @@ Accurately and concisely explaining to the user why your app needs access to the
 
 > ❗ **Important**:  If you don’t include a purpose string, your app crashes when you first try to use HomeKit.
 
-##### Handle permission denial gracefully
+### Handle permission denial gracefully
 
 If the user grants permission, the system remembers the user’s choice and doesn’t prompt again. If the user denies permission, the access attempt that initiated the prompt and any further attempts fail. Look for a [`homeAccessNotAuthorized`](./hmerror/homeaccessnotauthorized.md) error in your completion handlers to detect this condition. Alternatively, you can inspect the home manager’s [`authorizationStatus`](./hmhomemanager/authorizationstatus.md) property.
 

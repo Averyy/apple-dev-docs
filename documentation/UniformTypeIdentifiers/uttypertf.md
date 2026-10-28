@@ -21,7 +21,7 @@ A type that represents Rich Text Format data.
 extern UTType * const UTTypeRTF;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.rtf`.
 

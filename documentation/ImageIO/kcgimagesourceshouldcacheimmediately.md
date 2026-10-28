@@ -25,7 +25,7 @@ let kCGImageSourceShouldCacheImmediately: CFString
 extern CFStringRef const kCGImageSourceShouldCacheImmediately;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is a [`CFBoolean`](../CoreFoundation/cfboolean.md). The default value is [`kCFBooleanFalse`](../CoreFoundation/kcfbooleanfalse.md), which causes decoding and caching to happen only when you render the image.
 

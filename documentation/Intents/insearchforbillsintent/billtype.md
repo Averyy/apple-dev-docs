@@ -33,7 +33,7 @@ var billType: INBillType { get }
 @property (atomic, assign, readonly) INBillType billType;
 ```
 
-#### Discussion
+## Discussion
 
 When performing the search, your results should contain bills whose type matches the value in this property. If the value in this property is [`INBillType.unknown`](../inbilltype/unknown.md), return all bills regardless of their type.
 

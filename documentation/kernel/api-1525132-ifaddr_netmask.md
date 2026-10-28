@@ -13,11 +13,11 @@
 errno_t ifaddr_netmask(ifaddr_t ifaddr, struct sockaddr *out_netmask, u_int32_t netmask_size);
 ```
 
-#### Return Value
+## Return Value
 
 0 upon success
 
-#### Discussion
+## Discussion
 
 Copies the netmask out of the ifaddr.
 

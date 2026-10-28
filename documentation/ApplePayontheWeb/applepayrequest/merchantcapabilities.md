@@ -16,7 +16,7 @@ An array of the payment capabilities the merchant supports, such as credit or de
 required sequence <ApplePayMerchantCapability> merchantCapabilities;
 ```
 
-#### Discussion
+## Discussion
 
 The supported values for `merchantCapabilities` are:
 

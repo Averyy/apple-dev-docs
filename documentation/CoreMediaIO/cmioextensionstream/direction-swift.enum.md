@@ -20,7 +20,7 @@ enum Direction
 enum CMIOExtensionStreamDirection : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 A stream can be a source or sink. A source stream produces samples, and a sink stream consumes samples.
 

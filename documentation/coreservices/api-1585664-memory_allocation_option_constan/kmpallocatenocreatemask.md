@@ -14,7 +14,7 @@
 kMPAllocateNoCreateMask = 0x0020
 ```
 
-#### Discussion
+## Discussion
 
 Do not attempt to create the pool if it does not yet exist.
 

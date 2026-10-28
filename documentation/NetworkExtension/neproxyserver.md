@@ -24,7 +24,7 @@ class NEProxyServer
 @interface NEProxyServer : NSObject
 ```
 
-#### Overview
+## Overview
 
 `NEProxyServer` instances are used inside of [`NEProxySettings`](./neproxysettings.md) instances to configure proxy settings for VPN connections.
 

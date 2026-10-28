@@ -25,7 +25,7 @@ var data: Data? { get }
 @property (readonly, nullable) NSData * data;
 ```
 
-#### Discussion
+## Discussion
 
 This property is [`nil`](../../ObjectiveC/nil-227m0.md) if you don’t create the player with a data buffer.
 

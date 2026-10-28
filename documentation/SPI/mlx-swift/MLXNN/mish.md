@@ -17,7 +17,7 @@ Applies the Mish function, element-wise.
 class Mish
 ```
 
-#### Overview
+## Overview
 
 Mish: A Self Regularized Non-Monotonic Neural Activation Function.
 
@@ -29,7 +29,7 @@ This is:
 x * MLX.tanh(softPlus(x))
 ```
 
-##### See Also
+### See Also
 
 - [Activation Functions and Layers](./activations.md)
 - [`mish(_:)`](./mish%28_%29.md)

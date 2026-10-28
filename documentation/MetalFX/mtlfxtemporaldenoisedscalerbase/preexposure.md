@@ -24,7 +24,7 @@ var preExposure: Float { get set }
 @property (nonatomic) float preExposure;
 ```
 
-#### Discussion
+## Discussion
 
 If the input color texture you assign to [`colorTexture`](./colortexture.md) is pre-multiplied by fixed value, set this property to that same fixed value so MetalFX divides input color by it. This is not a common situation and you typically don’t need to assign a value to this property.
 

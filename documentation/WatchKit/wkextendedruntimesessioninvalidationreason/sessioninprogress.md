@@ -19,7 +19,7 @@ case sessionInProgress
 WKExtendedRuntimeSessionInvalidationReasonSessionInProgress
 ```
 
-#### Discussion
+## Discussion
 
 Each app can only run one extended runtime session at a time.
 

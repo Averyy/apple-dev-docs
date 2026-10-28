@@ -23,7 +23,7 @@ func endInteractiveMovement()
 - (void) endInteractiveMovement;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method upon the successful completion of movement tracking for a item. For example, when using a gesture recognizer to track user interactions, call this method upon the successful completion of the gesture. Calling this method lets the collection view know to end tracking and move the item to its new location permanently. The collection view responds by calling the [`collectionView(_:moveItemAt:to:)`](../uicollectionviewdatasource/collectionview%28_,moveitemat,to%29.md) method of its data source to ensure that your data structures are updated.
 

@@ -16,7 +16,7 @@ An action that presents an immersive space.
 var openImmersiveSpace: OpenImmersiveSpaceAction { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use this environment value to get the instance of the [`OpenImmersiveSpaceAction`](../openimmersivespaceaction.md) structure for a given [`Environment`](../environment.md). Then call the instance to present a space. You call the instance directly because it defines `callAsFunction()` methods that Swift calls when you call the instance.
 

@@ -21,7 +21,7 @@ Creates an empty vImage buffer.
 init()
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to create an empty vImage buffer that you pass to a subsequent function that allocates and initializes the buffer’s storage and properties. For example, the following code creates an empty buffer and initializes it using the [`vImageBuffer_Init(_:_:_:_:_:)`](../vimagebuffer_init%28_,_,_,_,_%29.md) function:
 

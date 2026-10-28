@@ -24,7 +24,7 @@ let HMCharacteristicTypeSmokeDetected: String
 extern NSString * const HMCharacteristicTypeSmokeDetected;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is one of the constants in the [`HMCharacteristicValueSmokeDetectionStatus`](./hmcharacteristicvaluesmokedetectionstatus.md) enumeration.
 

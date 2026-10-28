@@ -12,11 +12,11 @@ virtual bool isEqualTo(
  const OSOrderedSet *anOrderedSet) const;
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the two sets are equivalent, `false` otherwise.
 
-#### Overview
+## Overview
 
 Two OSOrderedSet objects are considered equal if they have same count and the same object pointer values in the same order.
 

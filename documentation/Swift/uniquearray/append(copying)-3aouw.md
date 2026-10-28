@@ -21,7 +21,7 @@ Copies the elements of a span to the end of this array.
 mutating func append(copying newElements: Span<Element>)
 ```
 
-#### Discussion
+## Discussion
 
 If the array does not have sufficient capacity to hold enough elements, then this reallocates the array’s storage to extend its capacity, using a geometric growth rate.
 

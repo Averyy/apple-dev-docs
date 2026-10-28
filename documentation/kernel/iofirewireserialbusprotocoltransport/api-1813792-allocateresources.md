@@ -12,7 +12,7 @@ virtual IOReturn AllocateResources (
  void );
 ```
 
-#### Overview
+## Overview
 
 Called from start method to allocate needed resources.
 

@@ -23,11 +23,11 @@ class func isMonitoringAvailable(for regionClass: AnyClass) -> Bool
 + (BOOL) isMonitoringAvailableForClass:(Class) regionClass;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the device is capable of monitoring regions using the specified class or [`false`](../../Swift/false.md) if it is not.
 
-#### Discussion
+## Discussion
 
 The availability of region monitoring support is dependent on the hardware present on the device. This method does not take into account the availability of location services or the fact that the user might have disabled them for the app or system; you must determine your app’s authorization status separately.
 

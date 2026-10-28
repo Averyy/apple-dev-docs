@@ -20,7 +20,7 @@ var altitudeSource: ARGeoAnchor.AltitudeSource { get }
 @property (nonatomic, readonly) ARAltitudeSource altitudeSource;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`ARGeoAnchor.AltitudeSource.userDefined`](./altitudesource-swift.enum/userdefined.md) if you set the altitude yourself (see [`getGeoLocation(forPoint:completionHandler:)`](../arsession/getgeolocation%28forpoint,completionhandler%29.md)).
 

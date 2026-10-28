@@ -32,7 +32,7 @@ var sortOrder: CNContactSortOrder { get }
 @property (atomic, readonly) CNContactSortOrder sortOrder;
 ```
 
-#### Discussion
+## Discussion
 
 Sort order is determined by the operating system’s configured language or overridden by the user.
 

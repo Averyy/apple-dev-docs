@@ -24,7 +24,7 @@ case percent
 kAudioUnitParameterUnit_Percent
 ```
 
-#### Discussion
+## Discussion
 
 Most audio unit parameters of this type range from 0 (for 0%) through 100 (for 100%). Some range from from –50 to +50.
 

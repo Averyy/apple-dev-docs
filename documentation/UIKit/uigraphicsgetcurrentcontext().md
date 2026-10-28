@@ -24,11 +24,11 @@ func UIGraphicsGetCurrentContext() -> CGContext?
 extern CGContextRefUIGraphicsGetCurrentContext();
 ```
 
-#### Return Value
+## Return Value
 
 The current graphics context.
 
-#### Discussion
+## Discussion
 
 The current graphics context is `nil` by default. Prior to calling its `drawRect:` method, view objects push a valid context onto the stack, making it current. If you are not using a `UIView` object to do your drawing, however, you must push a valid context onto the stack manually using the [`UIGraphicsPushContext(_:)`](./uigraphicspushcontext%28_%29.md) function.
 

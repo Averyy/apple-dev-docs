@@ -21,7 +21,7 @@ case stale
 - [Displaying live data with Live Activities](../displaying-live-data-with-live-activities.md)
 - [Starting and updating Live Activities with ActivityKit push notifications](../starting-and-updating-live-activities-with-activitykit-push-notifications.md)
 
-#### Discussion
+## Discussion
 
 The content of a Live Activity may become out of date before you can update it. For example, a person may be in an area without a network connection, causing the Live Activity to not receive updates. To tell people that they are looking at outdated Live Activity content, you can configure a [`staleDate`](../activitycontent/staledate.md) for your Live Activity. At the specified date, the [`activityState`](../activity/activitystate.md) changes to `stale` and you can update the Live Activity to indicate that its content is out of date.
 

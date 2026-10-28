@@ -6,7 +6,7 @@
 
 A four-character code that identifies the type of the handler.
 
-#### Overview
+## Overview
 
 Only two values are valid for this field: `'mhlr'` for media handlers and `'dhlr'` for data handlers.
 

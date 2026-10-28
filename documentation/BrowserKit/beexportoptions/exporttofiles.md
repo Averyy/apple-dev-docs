@@ -24,7 +24,7 @@ var exportToFiles: Bool { get }
 
 - [Transferring browsing data to another browser](../transferring-browsing-data-to-another-browser.md)
 
-#### Discussion
+## Discussion
 
 If the value of this property is `false`, call [`exportBrowserData(_:)`](../bebrowserdataexportmanager/exportbrowserdata%28_%29.md) to send the browser data directly to the browser that the person chooses in the browsing-data transfer sheet.
 

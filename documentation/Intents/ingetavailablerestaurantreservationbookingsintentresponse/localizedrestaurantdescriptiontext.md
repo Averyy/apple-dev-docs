@@ -30,7 +30,7 @@ var localizedRestaurantDescriptionText: String? { get set }
 @property (atomic, copy, nullable) NSString * localizedRestaurantDescriptionText;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to provide descriptive information about the restaurant. You are responsible for the contents of this string, Typical descriptions might include a summary of the cuisine offered by the restaurant along with a description of the restaurant’s ambiance, amenities, and services. The default value of this property is `nil`.
 

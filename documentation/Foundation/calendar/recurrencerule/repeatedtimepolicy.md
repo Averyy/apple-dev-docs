@@ -21,7 +21,7 @@ What to do when there are multiple recurrences occurring at the same time of the
 var repeatedTimePolicy: Calendar.RepeatedTimePolicy
 ```
 
-#### Discussion
+## Discussion
 
 For example, an event with daily recurrence rule that starts at 1 am on November 2 in PDT will repeat on:
 

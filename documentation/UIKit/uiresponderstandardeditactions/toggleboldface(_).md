@@ -23,7 +23,7 @@ optional func toggleBoldface(_ sender: Any?)
 - (void) toggleBoldface:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to apply or remove style information to the currently selected content.
 

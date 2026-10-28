@@ -33,7 +33,7 @@ var searchTermsOperator: INConditionalOperator { get }
 @property (atomic, assign, readonly) INConditionalOperator searchTermsOperator;
 ```
 
-#### Discussion
+## Discussion
 
 This property indicates whether photos must contain all, some, or none of the terms listed in the [`searchTerms`](./searchterms.md) property.
 

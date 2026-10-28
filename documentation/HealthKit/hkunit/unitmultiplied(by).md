@@ -24,11 +24,11 @@ func unitMultiplied(by unit: HKUnit) -> HKUnit
 - (HKUnit *) unitMultipliedByUnit:(HKUnit *) unit;
 ```
 
-#### Return Value
+## Return Value
 
 A new, complex unit.
 
-#### Discussion
+## Discussion
 
 You can create a complex unit by multiplying two units together. For example, you could create a foot-pound unit by multiplying a foot unit by a pound unit as shown below.
 

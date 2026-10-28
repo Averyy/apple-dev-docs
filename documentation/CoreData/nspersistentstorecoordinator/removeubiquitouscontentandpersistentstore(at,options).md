@@ -25,7 +25,7 @@ class func removeUbiquitousContentAndPersistentStore(at storeURL: URL, options: 
 + (BOOL) removeUbiquitousContentAndPersistentStoreAtURL:(NSURL *) storeURL options:(NSDictionary *) options error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 Errors may be returned as a result of file I/O, iCloud network or iCloud account issues.
 

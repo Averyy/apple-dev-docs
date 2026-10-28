@@ -26,7 +26,7 @@ func cString() -> UnsafePointer<CChar>?
 - (const char *) cString;
 ```
 
-#### Discussion
+## Discussion
 
 The returned C string will be automatically freed just as a returned object would be released; your code should copy the C string or use [`getCString(_:)`](./getcstring%28_%29.md) if it needs to store the C string outside of the autorelease context in which the C string is created.
 

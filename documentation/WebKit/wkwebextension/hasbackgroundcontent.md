@@ -23,7 +23,7 @@ var hasBackgroundContent: Bool { get }
 @property (nonatomic, readonly) BOOL hasBackgroundContent;
 ```
 
-#### Discussion
+## Discussion
 
 If this property is `YES`, the extension can run in the background even when no webpages are open.
 

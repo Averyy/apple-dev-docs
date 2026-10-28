@@ -32,7 +32,7 @@ var implementorValueProvider: AUImplementorValueProvider { get set }
 @property (atomic, copy) AUImplementorValueProvider implementorValueProvider;
 ```
 
-#### Discussion
+## Discussion
 
 The audio unit should return the current value for this parameter; the parameter node object then stores this value.
 

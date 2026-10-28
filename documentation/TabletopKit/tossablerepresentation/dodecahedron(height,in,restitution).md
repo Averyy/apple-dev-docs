@@ -15,7 +15,7 @@ Creates a regular dodecahedron, a shape with 12 pentagonal faces, that the playe
 static func dodecahedron(height: Float, in unit: UnitLength = .meters, restitution: Float? = nil) -> TossableRepresentation
 ```
 
-#### Discussion
+## Discussion
 
 The vertices for the simulated dodecahedron are oriented with one face toward +y with one vertex of that top face oriented toward -z. In this orientation, the height (h) is measured from face to opposing face, and the vertices have the following coordinates, which all lie on a circumscribed sphere of radius r = h/2 ⋅ sqrt(15)/(phi ⋅ sqrt(phi^2 + 1)), where phi = (sqrt(5) + 1)/2: ±Y face: ±{ 0,                +1, -2/phi^2            } ⋅ h/2, ±{+2/phi ⋅ sin(72º), +1, -2/phi^2 ⋅ cos(72º) } ⋅ h/2, ±{+2/phi ⋅ sin(36º), +1, +2/phi^2 ⋅ cos(36º) } ⋅ h/2, ±{-2/phi ⋅ sin(36º), +1, +2/phi^2 ⋅ cos(36º) } ⋅ h/2, ±{-2/phi ⋅ sin(72º), +1, -2/phi^2 ⋅ cos(72º) } ⋅ h/2 Equator: ±{                  0, +1/phi^3, -2/phi            } ⋅ h/2, ±{+2/phi^2 ⋅ sin(72º), +1/phi^3, -2/phi ⋅ cos(72º) } ⋅ h/2, ±{+2/phi^2 ⋅ sin(36º), +1/phi^3, +2/phi ⋅ cos(36º) } ⋅ h/2, ±{-2/phi^2 ⋅ sin(36º), +1/phi^3, +2/phi ⋅ cos(36º) } ⋅ h/2, ±{-2/phi^2 ⋅ sin(72º), +1/phi^3, -2/phi ⋅ cos(72º) } ⋅ h/2
 

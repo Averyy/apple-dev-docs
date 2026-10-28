@@ -19,7 +19,7 @@ static let onStateImage: NSBindingName
 extern NSBindingName NSOnStateImageBinding;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [Cocoa Bindings](../cocoa-bindings.md).
 

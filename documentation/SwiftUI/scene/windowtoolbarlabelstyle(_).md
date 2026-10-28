@@ -22,7 +22,7 @@ nonisolated
 func windowToolbarLabelStyle(_ toolbarLabelStyle: Binding<ToolbarLabelStyle>) -> some Scene
 ```
 
-#### Discussion
+## Discussion
 
 Use this modifier to bind a [`ToolbarLabelStyle`](../toolbarlabelstyle.md) to [`AppStorage`](../appstorage.md). The toolbar will default to the label style specified but will also be user configurable.
 

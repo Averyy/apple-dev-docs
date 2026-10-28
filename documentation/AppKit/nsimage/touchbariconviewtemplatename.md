@@ -22,7 +22,7 @@ class let touchBarIconViewTemplateName: String
 extern NSImageName const NSImageNameTouchBarIconViewTemplate;
 ```
 
-#### Discussion
+## Discussion
 
 ![Template image for icon view](https://developer.apple.com/tutorials/images/com.apple.appkit/media-2793514@2x.png)
 

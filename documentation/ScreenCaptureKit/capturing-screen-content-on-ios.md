@@ -12,7 +12,7 @@ Record and share screen captures on iOS by presenting the system content-sharing
 - Mac Catalyst 27.0+
 - Xcode 27.0+
 
-#### Overview
+## Overview
 
 This sample shows how to capture screen content on iOS using [ScreenCaptureKit](./ScreenCaptureKit.md). ScreenCaptureKit supports screen streaming and mirroring on all available platforms. You present the system content-sharing picker to let a person choose between capturing the entire display or content from within the sample, then stream that content with fine-grained control over audio, recording, and the camera.
 
@@ -20,7 +20,7 @@ You use the sample to record the screen to a file, to buffer up to 15 seconds of
 
 > **Note**: This sample requires a device running iOS 27 or later. The sample requests camera and photo library access at runtime.
 
-#### Configure the sample code project
+## Configure the sample code project
 
 The sample declares two background modes so ScreenCaptureKit continues to run while the app isn’t frontmost:
 
@@ -29,7 +29,7 @@ The sample declares two background modes so ScreenCaptureKit continues to run wh
 
 The Info pane in Xcode also declares [`NSCameraUsageDescription`](../BundleResources/information-property-list/nscamerausagedescription.md) and [`NSPhotoLibraryAddUsageDescription`](../BundleResources/information-property-list/nsphotolibraryaddusagedescription.md). Verify both prompts appear the first time you exercise the in-app capture and recording flows.
 
-#### Present the content-sharing picker
+## Present the content-sharing picker
 
 The sample offers two entry points into the system picker: a full-display capture and an in-app capture. Both configure the shared [`SCContentSharingPicker`](./sccontentsharingpicker.md) and register an observer before presenting the picker, so the app receives the resulting [`SCContentFilter`](./sccontentfilter.md) regardless of which mode the person chooses.
 
@@ -53,7 +53,7 @@ func presentInAppPicker() {
 
 Activating the picker registers the sample’s [`SCContentSharingPickerObserver`](./sccontentsharingpickerobserver.md), so the app receives the selected filter through [`contentSharingPicker(_:didUpdateWith:for:)`](./sccontentsharingpickerobserver/contentsharingpicker%28_,didupdatewith,for%29.md) and starts the stream from that callback.
 
-#### Configure the picker’s controls
+## Configure the picker’s controls
 
 The sample uses two [`SCContentSharingPickerConfiguration`](./sccontentsharingpickerconfiguration-c.class.md) instances so it tailors the picker to each capture mode. Both configurations allow toggling the microphone. Only the in-app configuration enables the camera toggle, because ScreenCaptureKit doesn’t support a camera overlay for full-display captures.
 
@@ -74,7 +74,7 @@ var inAppPickerConfiguration: SCContentSharingPickerConfiguration {
 
 The picker records the person’s choices in the returned filter’s [`isMicrophoneEnabled`](./sccontentfilter/ismicrophoneenabled.md) and [`isCameraEnabled`](./sccontentfilter/iscameraenabled.md) properties, which the sample checks when it attaches stream outputs.
 
-#### Start a stream from the filter
+## Start a stream from the filter
 
 When the picker returns a filter, the sample tears down any prior stream and builds a fresh [`SCStream`](./scstream.md) with a new [`SCStreamConfiguration`](./scstreamconfiguration.md). Screen frames flow through an output attached with the [`SCStreamOutputType.screen`](./scstreamoutputtype/screen.md) type. The sample attaches a microphone output only when the filter’s [`isMicrophoneEnabled`](./sccontentfilter/ismicrophoneenabled.md) is `true`, mirroring the person’s selection in the picker.
 
@@ -95,7 +95,7 @@ try await newStream.startCapture()
 
 Before starting a full-display capture, the sample activates an [`AVAudioSession`](../AVFAudio/avaudiosession.md) in the [`playAndRecord`](../AVFAudio/avaudiosession/category-swift.struct/playandrecord.md) category so the microphone tap keeps producing samples while the app runs in the background.
 
-#### Record the stream to a file
+## Record the stream to a file
 
 The sample uses [`SCRecordingOutput`](./screcordingoutput.md) to encode the stream directly to an MP4 file, so the code doesn’t need to handle sample buffers manually. It configures an output URL in the temporary directory through [`SCRecordingOutputConfiguration`](./screcordingoutputconfiguration.md), adds the output to the running stream, and lets ScreenCaptureKit encode the file in place.
 
@@ -110,7 +110,7 @@ try stream.addRecordingOutput(output)
 
 When the person stops the recording, the sample removes the output and awaits its finalization through a [`CheckedContinuation`](../Swift/checkedcontinuation.md). The delegate’s [`recordingOutputDidFinishRecording(_:)`](./screcordingoutputdelegate/recordingoutputdidfinishrecording%28_%29.md) callback resumes the continuation, at which point the sample hands the file to Photos. The Recent tab later reads [`recordedDuration`](./screcordingoutput/recordedduration.md) and [`recordedFileSize`](./screcordingoutput/recordedfilesize.md) from the finished `SCRecordingOutput` to display the recording’s duration and size.
 
-#### Save clips from a rolling buffer
+## Save clips from a rolling buffer
 
 For quick clips, the sample attaches an [`SCClipBufferingOutput`](./scclipbufferingoutput.md) to the same stream. The buffering output holds up to 15 seconds of rolling capture in memory without writing anything to disk. When the person taps Export Current Clip, the sample asks the output to write the most recent N seconds to a file.
 
@@ -129,7 +129,7 @@ output.exportClip(to: clipURL, duration: duration) { [weak self] error in
 
 Exporting a clip doesn’t interrupt buffering, so the person can capture overlapping clips while the buffer continues to accumulate new frames.
 
-#### Preview the camera during capture
+## Preview the camera during capture
 
 In-app capture mode supports an overlay of the device’s camera. When the filter’s [`isCameraEnabled`](./sccontentfilter/iscameraenabled.md) is `true`, the sample attaches an [`SCVideoEffectOutput`](./scvideoeffectoutput.md) and stores the [`UIView`](../UIKit/uiview.md) the output vends. A [`UIViewRepresentable`](../SwiftUI/uiviewrepresentable.md) wrapper embeds that view in the SwiftUI hierarchy so it renders as a floating rounded rectangle anchored to the bottom-trailing corner of the app.
 
@@ -146,7 +146,7 @@ if captureMode == .inApp && filter.isCameraEnabled,
 
 The sample re-attaches the preview when the app returns to the foreground, because the camera view’s underlying capture session pauses on backgrounding.
 
-#### Save recordings to Photos
+## Save recordings to Photos
 
 When a recording or clip finishes, the sample writes it to Photos through [`PHPhotoLibrary`](../Photos/phphotolibrary.md). Because the sample only writes to Photos, it requests the narrower [`PHAccessLevel.addOnly`](../Photos/phaccesslevel/addonly.md) authorization scope rather than full library access — the data-minimization pattern of requesting only what the feature needs. The sample hands the file off with [`shouldMoveFile`](../Photos/phassetresourcecreationoptions/shouldmovefile.md) set to `true` so the temporary file doesn’t linger on disk.
 

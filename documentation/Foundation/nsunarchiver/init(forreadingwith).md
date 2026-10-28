@@ -24,11 +24,11 @@ init?(forReadingWith data: Data)
 - (instancetype) initForReadingWithData:(NSData *) data;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSUnarchiver` object initialized to read an archive from `data`. Returns `nil` if `data` is not a valid archive.
 
-#### Discussion
+## Discussion
 
 The method decodes the system version number that was archived in `data` prepares the `NSUnarchiver` object for a subsequent invocation of [`decodeObject()`](../nscoder/decodeobject%28%29.md).
 

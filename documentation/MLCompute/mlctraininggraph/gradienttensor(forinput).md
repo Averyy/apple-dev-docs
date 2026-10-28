@@ -23,7 +23,7 @@ func gradientTensor(forInput input: MLCTensor) -> MLCTensor?
 - (MLCTensor *) gradientTensorForInput:(MLCTensor *) input;
 ```
 
-#### Return Value
+## Return Value
 
 A gradient tensor.
 

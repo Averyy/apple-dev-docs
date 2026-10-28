@@ -22,7 +22,7 @@ var pinnedTrailingGroup: UIBarButtonItemGroup? { get set }
 @property (nonatomic, strong, readwrite, nullable) UIBarButtonItemGroup * pinnedTrailingGroup;
 ```
 
-#### Discussion
+## Discussion
 
 This group can’t move to the overflow menu. If there’s more than one item in this group, assign a [`representativeItem`](../uibarbuttonitemgroup/representativeitem.md) for the group to avoid overflowing the contents of the navigation bar.
 

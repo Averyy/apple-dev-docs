@@ -5,11 +5,11 @@
 
 A value that defines the depth, in scene units, of the text’s extrusion.
 
-#### Overview
+## Overview
 
 This value must be positive. The runtime always displays this text’s geometry from both sides even if this property is zero.
 
-##### Declaration
+### Declaration
 
 ```other
 float depth

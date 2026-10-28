@@ -25,7 +25,7 @@ init(_ coordinate: CLLocationCoordinate2D)
 extern MKMapPoint MKMapPointForCoordinate(CLLocationCoordinate2D coordinate);
 ```
 
-#### Return Value
+## Return Value
 
 The map point value that corresponds to the specified coordinate on a two-dimensional map projection.
 

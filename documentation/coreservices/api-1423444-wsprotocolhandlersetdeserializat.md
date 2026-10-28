@@ -15,7 +15,7 @@ Specifies a callback to be made when parsing an XML method response.
 void WSProtocolHandlerSetDeserializationOverride(WSProtocolHandlerRef protocol, CFStringRef typeNamespace, CFStringRef typeName, WSProtocolHandlerDeserializationProcPtr deserializationProc, WSClientContext *context);
 ```
 
-#### Discussion
+## Discussion
 
 This function specifies a callback to be made when parsing an XML method response. The callback is passed a reference to the protocol element currently being executed, the root of the response parse tree, the current node being deserialized, and a pointer to private data. The return result should be a valid `CFTypeRef` object, which will be released by the caller. If the callback returns `NULL`, the default deserializer will be used.
 

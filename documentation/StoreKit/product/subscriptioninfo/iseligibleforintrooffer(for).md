@@ -21,11 +21,11 @@ Returns a Boolean value that determines the customer’s eligibility for an intr
 static func isEligibleForIntroOffer(for groupID: String) async -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the customer is eligible for an introductory offer on any auto-renewable subscription within the subscription group; `false` otherwise.
 
-#### Discussion
+## Discussion
 
 This value may be `true` even if you haven’t set up an introductory offer in App Store Connect.
 

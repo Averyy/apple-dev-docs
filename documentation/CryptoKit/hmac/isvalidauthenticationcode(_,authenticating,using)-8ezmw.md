@@ -21,7 +21,7 @@ Returns a Boolean value indicating whether the given message authentication code
 static func isValidAuthenticationCode<D>(_ authenticationCode: HMAC<H>.MAC, authenticating authenticatedData: D, using key: SymmetricKey) -> Bool where D : DataProtocol
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that’s `true` if the message authentication code is valid for the specified block of data.
 

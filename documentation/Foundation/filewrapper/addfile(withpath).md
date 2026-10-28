@@ -21,11 +21,11 @@ func addFile(withPath path: String) -> String
 - (NSString *) addFileWithPath:(NSString *) path;
 ```
 
-#### Return Value
+## Return Value
 
 Dictionary key used to store the new file wrapper in the directory’s list of file wrappers. See [Accessing File Wrapper Identities](https://developer.apple.com/library/archive/documentation/FileManagement/Conceptual/FileSystemProgrammingGuide/FileWrappers/FileWrappers.html#//apple_ref/doc/uid/TP40010672-CH13-SW1) in [File System Programming Guide](https://developer.apple.com/library/archive/documentation/FileManagement/Conceptual/FileSystemProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40010672) for more information.
 
-#### Discussion
+## Discussion
 
 Beginning with OS X v10.6, the preferred method of referring to files is with a `file://` URL. Instead of using this method, you can instantiate `NSFileWrapper` with one of the initializers, set its [`preferredFilename`](./preferredfilename.md) property if necessary, and pass the result to [`addFileWrapper(_:)`](./addfilewrapper%28_%29.md).
 

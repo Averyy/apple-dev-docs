@@ -5,7 +5,7 @@
 
 Enable reliable cloud backup for photo library assets with background processing.
 
-#### Overview
+## Overview
 
 PhotoKit’s Background Resource Upload extension enables apps to deliver seamless cloud backup experiences. The system manages uploads on your app’s behalf, processing them in the background even when people switch to other apps or lock their devices. The system calls your extension to process uploads when conditions allow, scheduling work based on factors such as network availability, power state, and device activity.
 
@@ -13,7 +13,7 @@ The async [`PHBackgroundResourceUploadJobExtension`](../Photos/phbackgroundresou
 
 > **Note**: In iOS, this feature isn’t available in Simulator; test on a physical device.
 
-#### Create and configure the extension target
+## Create and configure the extension target
 
 To add an upload extension to your app, begin by adding a new target:
 
@@ -60,7 +60,7 @@ In the Info pane in Xcode, make the following changes:
 
 > **Note**: Your extension also needs photo library authorization to access assets. Ensure your host app requests the appropriate authorization level before enabling the extension. For more information, see [Delivering an Enhanced Privacy Experience in Your Photos App](./delivering-an-enhanced-privacy-experience-in-your-photos-app.md).
 
-#### Enable the extension
+## Enable the extension
 
 Before the system can call your extension, your host app must explicitly enable it by calling [`setUploadJobExtensionEnabled(_:)`](../Photos/phphotolibrary/setuploadjobextensionenabled%28_%29.md) on the shared photo library instance. Your app must have full library access before enabling the extension. Call [`requestAuthorization(for:handler:)`](../Photos/phphotolibrary/requestauthorization%28for,handler%29.md) with the `.readWrite` access level and verify the status is `.authorized`.
 
@@ -89,7 +89,7 @@ Check the [`uploadJobExtensionEnabled`](../Photos/phphotolibrary/uploadjobextens
 
 > ❗ **Important**: The extension processes uploads only while enabled. Disable the extension when a person signs out or disables cloud sync in your app.
 
-#### Process upload jobs
+## Process upload jobs
 
 The system calls your extension’s [`processJobs()`](../Photos/phbackgroundresourceuploadjobextension/processjobs%28%29.md) method when upload work is available. A typical implementation first retries failed uploads, then acknowledges completed or failed uploads to free resources, and finally creates new upload jobs for unprocessed assets.
 
@@ -128,7 +128,7 @@ Handle [`limitExceeded`](../Photos/phphotoserror-swift.struct/limitexceeded.md) 
 
 > ❗ **Important**: The system enforces a limit on inflight jobs. When you reach this limit, job creation throws [`limitExceeded`](../Photos/phphotoserror-swift.struct/limitexceeded.md). Acknowledge completed jobs to free up space.
 
-#### Retry failed jobs
+## Retry failed jobs
 
 Network issues or temporary server problems can cause upload failures. Your extension can retry jobs in the `.failed` state that haven’t exceeded the retry limit. Retrying jobs recovers from transient errors without manual intervention.
 
@@ -180,7 +180,7 @@ Inspect the [`error`](../Photos/phassetresourceuploadjob/error.md) property to d
 
 Passing `nil` to [`retry(destination:)`](../Photos/phassetresourceuploadjobchangerequest/retry%28destination%29.md) uses the original destination URL. Alternatively, you can retry the job with a different destination. Retrying a job counts toward the inflight job limit. If you’ve reached the limit, the retry throws [`limitExceeded`](../Photos/phphotoserror-swift.struct/limitexceeded.md). Acknowledge completed jobs to free capacity before retrying.
 
-#### Acknowledge completed jobs
+## Acknowledge completed jobs
 
 Jobs that you create consume space in the extension’s inflight job limit. Whether a job succeeds or fails, acknowledge it to free capacity for new uploads.
 
@@ -219,7 +219,7 @@ After confirming each job’s upload status with your server or local tracking s
 
 > **Note**: Before acknowledging a job, update your app’s tracking system to record its success or failure. After acknowledging the job, its record is no longer available from PhotoKit.
 
-#### Inspect response headers and errors
+## Inspect response headers and errors
 
 The system copies any response headers returned by your server to the [`responseHeaderFields`](../Photos/phassetresourceuploadjob/responseheaderfields.md) property for jobs in the [`PHAssetResourceUploadJob.State.succeeded`](../Photos/phassetresourceuploadjob/state-swift.enum/succeeded.md) or [`PHAssetResourceUploadJob.State.failed`](../Photos/phassetresourceuploadjob/state-swift.enum/failed.md) state. The system normalizes header field names to lowercase for consistent lookup.
 
@@ -227,7 +227,7 @@ The system populates the [`error`](../Photos/phassetresourceuploadjob/error.md) 
 
 > **Note**: The system sanitizes the error it provides, so it can differ from the actual URL response error.
 
-#### Cancel inflight jobs
+## Cancel inflight jobs
 
 You can cancel redundant background upload jobs to avoid duplicate uploads. You can only cancel jobs in the [`PHAssetResourceUploadJob.State.registered`](../Photos/phassetresourceuploadjob/state-swift.enum/registered.md) or [`PHAssetResourceUploadJob.State.pending`](../Photos/phassetresourceuploadjob/state-swift.enum/pending.md) state.
 
@@ -256,7 +256,7 @@ private func cancelRedundantJobs() throws {
 
 Canceled jobs transition to the [`PHAssetResourceUploadJob.State.cancelled`](../Photos/phassetresourceuploadjob/state-swift.enum/cancelled.md) state, and the system automatically acknowledges them, so they don’t consume space in the inflight job limit.
 
-#### Create upload jobs
+## Create upload jobs
 
 Creating upload jobs queues asset resources for background upload to your server. Each job requires a destination URL request that specifies the upload destination.
 
@@ -313,7 +313,7 @@ While your extension has jobs to process, keep the job queue filled to its limit
 
 > ❗ **Important**: Your extension needs a mechanism to track which assets you’ve already processed and detect new ones. This typically involves persistent storage shared between your app and extension using an app group. Use [`fetchPersistentChanges(since:)`](../Photos/phphotolibrary/fetchpersistentchanges%28since%29.md) with a [`PHPersistentChangeToken`](../Photos/phpersistentchangetoken.md) to track your progress.
 
-#### Create download-only jobs
+## Create download-only jobs
 
 The system automatically downloads asset resources before processing. However, if your workflow requires local access to the resource before submitting a processing job, the system can download the resource locally without uploading it.
 
@@ -341,7 +341,7 @@ When acknowledging completed jobs, check the [`type`](../Photos/phassetresourceu
 
 > **Note**: The system may purge downloaded resources due to disk space constraints. After a download-only job succeeds, process the resource promptly or create an upload job to send it to your server.
 
-#### Handle extension termination
+## Handle extension termination
 
 The system calls [`willTerminate()`](../Photos/phbackgroundresourceuploadjobextension/willterminate%28%29.md) before suspending or terminating your extension. Use this method to stop current work and clean up resources.
 
@@ -375,11 +375,11 @@ Upon receiving a termination notification, cancel any in-progress work such as n
 
 > ❗ **Important**: The system manages the extension life cycle and may terminate your extension at any time due to resource pressure. When the extension restarts, the system calls [`processJobs()`](../Photos/phbackgroundresourceuploadjobextension/processjobs%28%29.md) again. Design your implementation to handle interruption at any point.
 
-#### Support resumable uploads
+## Support resumable uploads
 
 The background upload system supports resumable uploads according to the draft [IETF Resumable Uploads for HTTP](https://datatracker.ietf.org/doc/draft-ietf-httpbis-resumable-upload/) protocol. Resumable uploads allow interrupted transfers to continue from the point of interruption, rather than restarting from the beginning. This reduces redundant data transfer for large asset resources uploaded over unreliable network connections.
 
-#### Respond to preflight requests
+## Respond to preflight requests
 
 Before the system begins an upload, it checks whether your server supports the resumable upload protocol. The system sends an HTTP `OPTIONS` request to your upload endpoint to perform this preflight capability check. Your server must respond appropriately to indicate its support.
 
@@ -397,7 +397,7 @@ The `Upload-Limit` header indicates the maximum upload size your server supports
 
 The system caches this capability check, so your server handles fewer `OPTIONS` requests.
 
-#### Issue an informational response during uploads
+## Issue an informational response during uploads
 
 For each upload, your server must also provide in-band feature detection by sending a `104 (Upload Resumption Supported)` informational response while the client uploads the request body.
 
@@ -421,7 +421,7 @@ The `104` informational response serves as the authoritative signal that the ser
 
 > **Note**: Your API must include both the `OPTIONS` preflight check and the `104` informational response.
 
-#### Test your extension with Developer Mode
+## Test your extension with Developer Mode
 
 The system waits for ideal conditions before running your extension, which makes it hard to test. Developer Mode runs your extension promptly so you can exercise your upload logic without waiting. When you enable it, the system removes the extension runtime limit on each invocation, skips the backoff delays between scheduling attempts, and raises the scheduling priority of your extension. Developer Mode is available in iOS 27.0, macOS 27.0, and Mac Catalyst 27.0.
 

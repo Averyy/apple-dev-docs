@@ -21,7 +21,7 @@ Creates a new I/O channel that accesses the specified file descriptor.
 convenience init(type: DispatchIO.StreamType, fileDescriptor: Int32, queue: DispatchQueue, cleanupHandler: @escaping (Int32) -> Void)
 ```
 
-#### Discussion
+## Discussion
 
 The channel takes control of the specified file descriptor until the channel closes, either deliberately on your part or because an error occurred. While the channel owns the file descriptor, the system modifies flags such as `O_NONBLOCK` automatically. It is a programmer error for you to modify the file descriptor while the channel owns it. However, you may create additional channels based on the same file descriptor.
 

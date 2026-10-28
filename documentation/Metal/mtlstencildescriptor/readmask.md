@@ -24,7 +24,7 @@ var readMask: UInt32 { get set }
 @property (nonatomic) uint32_t readMask;
 ```
 
-#### Discussion
+## Discussion
 
 The [`readMask`](./readmask.md) bits are used for logical AND operations to both the stored stencil value and the reference value.
 

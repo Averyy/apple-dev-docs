@@ -22,7 +22,7 @@ protocol ActivityAttributes : Decodable, Encodable
 - [Launching your app from a Live Activity](./launching-your-app-from-a-live-activity.md)
 - [Starting and updating Live Activities with ActivityKit push notifications](./starting-and-updating-live-activities-with-activitykit-push-notifications.md)
 
-#### Overview
+## Overview
 
 The `ActivityAttributes` protocol describes the content that appears in your Live Activity. Its inner type [`ContentState`](./activityattributes/contentstate.md) represents the dynamic content of the Live Activity.
 

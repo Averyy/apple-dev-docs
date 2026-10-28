@@ -25,7 +25,7 @@ case success
 INGetVisualCodeIntentResponseCodeSuccess
 ```
 
-#### Discussion
+## Discussion
 
 Use this code after retrieving the image for the visual code successfully.
 

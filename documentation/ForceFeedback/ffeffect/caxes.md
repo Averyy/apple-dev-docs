@@ -20,7 +20,7 @@ var cAxes: DWORD
 DWORD cAxes;
 ```
 
-#### Discussion
+## Discussion
 
 This member must be filled in by the caller if changing or setting the axis list or the direction list.
 

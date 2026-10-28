@@ -24,7 +24,7 @@ nonisolated static var borderedProminent: BorderedProminentButtonStyle { get }
 
 Available when `Self` is `BorderedProminentButtonStyle`.
 
-#### Discussion
+## Discussion
 
 In tvOS, this button style applies a Liquid Glass effect when the button gains focus.
 

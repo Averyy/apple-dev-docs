@@ -15,11 +15,11 @@ Returns the number of processors on the host computer.
 ItemCount MPProcessors(void);
 ```
 
-#### Return Value
+## Return Value
 
 The number of physical processors on the host computer. 
 
-#### Discussion
+## Discussion
 
 See also the function  [`MPProcessorsScheduled`](./api-1585777-mpprocessorsscheduled.md). 
 

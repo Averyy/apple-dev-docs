@@ -24,7 +24,7 @@ func createCredentialAssertionRequest(challenge: Data) -> ASAuthorizationPlatfor
 - (ASAuthorizationPlatformPublicKeyCredentialAssertionRequest *) createCredentialAssertionRequestWithChallenge:(NSData *) challenge;
 ```
 
-#### Return Value
+## Return Value
 
 A public key credential registration request.
 

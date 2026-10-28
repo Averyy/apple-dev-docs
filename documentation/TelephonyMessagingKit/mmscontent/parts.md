@@ -15,7 +15,7 @@ The individual parts of the MMS message.
 var parts: [MMSPartContent]
 ```
 
-#### Discussion
+## Discussion
 
 When sending an MMS, add the individual parts to this array. When receiving an MMS, inspect this array to receive the MMS parts, in order.
 

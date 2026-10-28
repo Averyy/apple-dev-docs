@@ -21,7 +21,7 @@ An error that sends to the connection’s event handler to indicate that the con
 var XPC_ERROR_CONNECTION_INVALID: xpc_object_t { get }
 ```
 
-#### Discussion
+## Discussion
 
 Will be delivered to the connection’s event handler if the named service provided to [`xpc_connection_create(_:_:)`](./xpc_connection_create%28_,_%29.md) could not be found in the XPC service namespace. The connection is useless and should be disposed of.
 

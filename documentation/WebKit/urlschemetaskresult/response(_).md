@@ -19,7 +19,7 @@ The response to return to WebKit. The response value must include the MIME type 
 case response(URLResponse)
 ```
 
-#### Discussion
+## Discussion
 
 This value is used to provide WebKit with the MIME type of the requested resource and its expected size. This must be added to the task result sequence at least once, but may be added multiple times if needed. It must be added to the sequence before any data values are.
 

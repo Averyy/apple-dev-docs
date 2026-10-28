@@ -21,7 +21,7 @@ func remove(_ observer: any CPNowPlayingTemplateObserver)
 - (void) removeObserver:(id<CPNowPlayingTemplateObserver>) observer;
 ```
 
-#### Discussion
+## Discussion
 
 You must register an observer using the [`add(_:)`](./add%28_%29.md) method before calling this method.
 

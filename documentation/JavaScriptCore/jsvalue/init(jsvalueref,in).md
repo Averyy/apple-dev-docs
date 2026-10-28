@@ -22,11 +22,11 @@ init!(jsValueRef value: JSValueRef!, in context: JSContext!)
 + (JSValue *) valueWithJSValueRef:(JSValueRef) value inContext:(JSContext *) context;
 ```
 
-#### Return Value
+## Return Value
 
 The Objective-C API equivalent of the specified JSValueRef.
 
-#### Discussion
+## Discussion
 
 Creates a JSValue, wrapping its C API counterpart.
 

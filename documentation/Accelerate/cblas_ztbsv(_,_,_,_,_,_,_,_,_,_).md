@@ -25,7 +25,7 @@ func cblas_ztbsv(_ ORDER: CBLAS_ORDER, _ UPLO: CBLAS_UPLO, _ TRANSA: CBLAS_TRANS
 void cblas_ztbsv(const enum CBLAS_ORDER ORDER, const enum CBLAS_UPLO UPLO, const enum CBLAS_TRANSPOSE TRANSA, const enum CBLAS_DIAG DIAG, const __LAPACK_int N, const __LAPACK_int K, const __LAPACK_double_complex *A, const __LAPACK_int LDA, __LAPACK_double_complex *X, const __LAPACK_int INCX);
 ```
 
-#### Discussion
+## Discussion
 
 Solves the system of equations `A*X=B` or `A'*X=B`, depending on the value of `TransA`.
 

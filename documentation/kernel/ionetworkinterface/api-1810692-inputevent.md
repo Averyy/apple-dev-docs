@@ -13,11 +13,11 @@ virtual bool inputEvent(
  void *data );
 ```
 
-#### Return Value
+## Return Value
 
 Returns true if the event was delivered, false if the event type specified is invalid, or if the event delivery failed.
 
-#### Overview
+## Overview
 
 This method can be used by the driver to send an event to the network stack.
 

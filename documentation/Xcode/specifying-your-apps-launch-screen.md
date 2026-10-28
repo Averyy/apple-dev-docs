@@ -5,7 +5,7 @@
 
 Make your iOS app launch experience faster and more responsive by customizing a launch screen.
 
-#### Overview
+## Overview
 
 Every iOS app must provide a *launch screen*, a screen that displays while your app launches. The launch screen appears instantly when your app starts up and is quickly replaced with the app’s first screen.
 
@@ -17,7 +17,7 @@ You create a launch screen for your app in your Xcode project in one of two ways
 To make the app launch experience as seamless as possible, create a launch screen with basic views that closely resemble the first screen of your app.
 For guidelines about designing a launch screen, see [Launching](https://developer.apple.com/design/human-interface-guidelines/patterns/launching/) in the [Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/guidelines/overview).
 
-##### Configure a launch screen in an information property list
+### Configure a launch screen in an information property list
 
 For apps with simple user interfaces, using the information property list in your app provides a quick and straightforward method to configure your launch screen.
 
@@ -30,7 +30,7 @@ For apps with simple user interfaces, using the information property list in you
 
 Define the appearance of the launch screen by specifying a combination of launch screen options from the possible keys in [`UILaunchScreen`](../BundleResources/information-property-list/uilaunchscreen.md).
 
-##### Configure a launch screen storyboard
+### Configure a launch screen storyboard
 
 Alternatively, you can configure your launch screen in a user interface file, a file with a `.storyboard` file extension. A launch screen storyboard contains basic UIKit views, and uses size classes and Auto Layout constraints to support different device sizes and resolutions.
 

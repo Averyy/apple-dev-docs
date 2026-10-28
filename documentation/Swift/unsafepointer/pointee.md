@@ -21,7 +21,7 @@ Accesses the instance referenced by this pointer.
 var pointee: Pointee { get }
 ```
 
-#### Discussion
+## Discussion
 
 When reading from the `pointee` property, the instance referenced by this pointer must already be initialized.
 

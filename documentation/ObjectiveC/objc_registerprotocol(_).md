@@ -25,7 +25,7 @@ func objc_registerProtocol(_ proto: Protocol)
 extern void objc_registerProtocol(Protocol *proto);
 ```
 
-#### Discussion
+## Discussion
 
 When you create a new protocol using the [`objc_allocateProtocol(_:)`](./objc_allocateprotocol%28_%29.md), you then register it with the Objective-C runtime by calling this function. After a protocol is successfully registered, it is immutable and ready to use.
 

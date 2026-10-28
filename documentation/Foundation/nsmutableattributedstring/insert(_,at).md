@@ -25,7 +25,7 @@ func insert(_ attrString: NSAttributedString, at loc: Int)
 - (void) insertAttributedString:(NSAttributedString *) attrString atIndex:(NSUInteger) loc;
 ```
 
-#### Discussion
+## Discussion
 
 The new characters and attributes begin at the given index and the existing characters and attributes from the index to the end of the receiver are shifted by the length of the attributed string. Raises an [`rangeException`](../nsexceptionname/rangeexception.md) if `loc` lies beyond the end of the receiver’s characters.
 

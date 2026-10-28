@@ -14,7 +14,7 @@ struct IOStorageExtent {
 };
 ```
 
-#### Discussion
+## Discussion
 
 Extent for unmap storage requests.
 

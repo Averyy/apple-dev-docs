@@ -25,7 +25,7 @@ func photoLibraryDidChange(_ changeInstance: PHChange)
 - (void) photoLibraryDidChange:(PHChange *) changeInstance;
 ```
 
-#### Discussion
+## Discussion
 
 Use the provided [`PHChange`](../phchange.md) object to find out which, if any, of the albums or collections you’re interested in have changed and get detailed change information. Call the change object’s [`changeDetailsForObject:`](../phchange/changedetailsforobject_.md) method to get information about changes to an asset’s contents or metadata properties or about a collection’s metadata properties. Call the change object’s [`changeDetails(for:)`](../phchange/changedetails%28for%29-33a6n.md) to get information about changes to a collection’s list of members (or to any other fetch result).
 

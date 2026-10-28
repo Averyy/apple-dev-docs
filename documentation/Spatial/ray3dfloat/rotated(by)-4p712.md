@@ -21,7 +21,7 @@ Returns a ray that’s rotated by the specified rotation.
 func rotated(by rotation: Rotation3DFloat) -> Ray3DFloat
 ```
 
-#### Discussion
+## Discussion
 
 - Returns A ray with a direction that’s rotated by the specified rotation.
 

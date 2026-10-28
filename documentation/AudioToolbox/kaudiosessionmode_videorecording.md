@@ -23,7 +23,7 @@ var kAudioSessionMode_VideoRecording: Int { get }
 kAudioSessionMode_VideoRecording
 ```
 
-#### Discussion
+## Discussion
 
 For use with the [`kAudioSessionCategory_RecordAudio`](./kaudiosessioncategory_recordaudio.md) audio session category. Also works with the [`kAudioSessionCategory_PlayAndRecord`](./kaudiosessioncategory_playandrecord.md) category. On devices with more than one built-in microphone, the microphone closest to the video camera is used.
 

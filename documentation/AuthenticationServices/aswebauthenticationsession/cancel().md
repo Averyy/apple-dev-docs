@@ -28,7 +28,7 @@ func cancel()
 
 - [Authenticating a User Through a Web Service](../authenticating-a-user-through-a-web-service.md)
 
-#### Discussion
+## Discussion
 
 If the session has already presented a view with the authentication webpage, calling this method dismisses that view. Calling [`cancel()`](./cancel%28%29.md) on an already canceled session has no effect.
 

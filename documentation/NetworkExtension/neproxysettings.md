@@ -24,7 +24,7 @@ class NEProxySettings
 @interface NEProxySettings : NSObject
 ```
 
-#### Overview
+## Overview
 
 `NEProxySettings` is used in the context of a VPN configuration to specify the proxy that should be used for network traffic when the VPN is active.
 

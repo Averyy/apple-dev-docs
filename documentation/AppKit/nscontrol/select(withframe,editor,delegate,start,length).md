@@ -19,7 +19,7 @@ func select(withFrame rect: NSRect, editor textObj: NSText, delegate: Any?, star
 - (void) selectWithFrame:(NSRect) rect editor:(NSText *) textObj delegate:(id) delegate start:(NSInteger) selStart length:(NSInteger) selLength;
 ```
 
-#### Discussion
+## Discussion
 
 This method is similar to [`edit(withFrame:editor:delegate:event:)`](./edit%28withframe,editor,delegate,event%29.md), except that it can be invoked in any situation, not only on a mouse-down event. This method returns without doing anything if `textObj` or the receiver is `nil`, or if the receiver has no font set for it.
 

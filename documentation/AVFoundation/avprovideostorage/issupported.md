@@ -23,7 +23,7 @@ class var isSupported: Bool { get }
 @property (class, readonly, getter=isSupported) BOOL supported;
 ```
 
-#### Return Value
+## Return Value
 
 `YES` if the device and OS support Pro Video Storage functionality; otherwise, `NO`.
 

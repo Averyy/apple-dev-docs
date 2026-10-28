@@ -24,7 +24,7 @@ var calendarItemIdentifier: String { get }
 @property (nonatomic, readonly) NSString * calendarItemIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 This property is set when the calendar item is created and can be used as a local identifier. Use [`calendarItem(withIdentifier:)`](../ekeventstore/calendaritem%28withidentifier%29.md) to look up the item by this value.
 

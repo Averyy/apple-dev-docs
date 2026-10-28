@@ -24,11 +24,11 @@ class MPSMatrixMultiplication
 @interface MPSMatrixMultiplication : MPSKernel
 ```
 
-#### Overview
+## Overview
 
 An [`MPSMatrixMultiplication`](./mpsmatrixmultiplication.md) object computes the following operation:
 
-*C = alpha * op(A) * op(B) + beta * C*
+*C = alpha \* op(A) \* op(B) + beta \* C*
 
 Where *A*, *B*_,_ and *C* are matrices represented by [`MPSMatrix`](./mpsmatrix.md) objects, and *alpha* and *beta* are scalar values of the same data type as the values of *C*. *A* and *B* may each have an optional transposition operation applied.
 

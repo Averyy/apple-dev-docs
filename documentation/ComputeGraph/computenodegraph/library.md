@@ -21,7 +21,7 @@ A class defining a library of node definitions that can be added to a ComputeNod
 final class Library
 ```
 
-#### Overview
+## Overview
 
 A Library contains definitions and also stores MTLFunction implementations for built-in nodes and you can construct new libraries containing nodes you provide.
 

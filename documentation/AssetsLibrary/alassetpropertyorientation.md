@@ -12,7 +12,7 @@ The key to retrieve the orientation of the asset.
 extern NSString * const ALAssetPropertyOrientation;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is an [`NSNumber`](../Foundation/nsnumber.md) object containing an asset’s orientation as described by the TIFF format.
 

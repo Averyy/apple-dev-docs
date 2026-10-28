@@ -21,7 +21,7 @@ Sends a message at a specific logging level, such as default, info, debug, error
 #define os_log_with_type(log, type, format, ...)
 ```
 
-#### Discussion
+## Discussion
 
 Calling this function doesn’t ensure that the system logs a message. Logging always occurs in accordance with the behavior settings of the provided log object and log type. Note that the logging system may truncate lengthy log messages when it stores them.
 

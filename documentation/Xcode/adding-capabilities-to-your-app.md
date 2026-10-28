@@ -5,7 +5,7 @@
 
 Configure your target to include and customize capabilities that provide access to Apple’s app services.
 
-#### Overview
+## Overview
 
 A *capability* grants your app access to an *app service* that Apple provides, such as CloudKit, Game Center, or In-App Purchase. To use some app services, you need to add a capability to your target in Xcode to configure the app service correctly. Xcode may edit the [`Entitlements`](../BundleResources/entitlements.md) and [`Information Property List`](../BundleResources/information-property-list.md) files, add related frameworks, and configure your signing assets.
 
@@ -17,7 +17,7 @@ Before you begin, add your Apple Account to settings and assign the project to a
 
 > ❗ **Important**: Use the default automatic signing when you create a project from a template. If you manually sign your app, you need to perform the capability configuration steps yourself.
 
-##### Add a capability
+### Add a capability
 
 You add capabilities to your app using the Signing & Capabilities pane of the project editor.
 
@@ -37,7 +37,7 @@ To add a capability to the target, double-click the capability in the sidebar or
 
 If errors appear in the Signing section, read the message and correct the problem. For example, the bundle ID ([`CFBundleIdentifier`](../BundleResources/information-property-list/cfbundleidentifier.md)) that appears in the Bundle Identifier field under Signing needs to be unique. The default value for the bundle ID is the organization identifier concatenated with the app name that you enter when creating a project.
 
-##### Perform additional configuration steps
+### Perform additional configuration steps
 
 For some capabilities, you may need to perform additional configuration steps in Xcode, your developer account, or App Store Connect. For other capabilities, you may need to write some code.
 

@@ -8,7 +8,7 @@ Configure your Xcode project to use the JSON project configuration file format t
 **Availability**:
 - Xcode 27.2+
 
-#### Overview
+## Overview
 
 An Xcode project file with a `.xcodeproj` extension contains a project configuration file along with other files specific to your project. In previous Xcode releases, a project configuration file is a property list file with a `.pbxproj` extension. In Xcode 27.2 and later, the default project configuration file is a smaller, hierarchical, self-describing JSON file with a `.xcproj` extension. Xcode 27 and later supports both file formats so you can choose the format you prefer. For projects you created using earlier releases, you can switch to the new JSON file format.
 
@@ -18,7 +18,7 @@ For more information on creating projects, see [Creating an Xcode project for an
 
 > **Note**: The JSON file format `.xcproj` is compatible with Xcode 27 and later.
 
-#### Change the project configuration file format to JSON
+## Change the project configuration file format to JSON
 
 In the Project navigator, select the project, and in the File inspector, choose JSON from the Project Format pop-up menu under Project Document. If a dialog appears, click Continue to change the format.
 

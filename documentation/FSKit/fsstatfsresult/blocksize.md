@@ -19,7 +19,7 @@ var blockSize: Int { get set }
 @property NSInteger blockSize;
 ```
 
-#### Discussion
+## Discussion
 
 This value defaults to `4096`. Zero isn’t a valid block size.
 

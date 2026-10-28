@@ -23,7 +23,7 @@ var kDNSServiceType_EID: Int { get }
 kDNSServiceType_EID
 ```
 
-#### Discussion
+## Discussion
 
 Endpoint identifier.
 

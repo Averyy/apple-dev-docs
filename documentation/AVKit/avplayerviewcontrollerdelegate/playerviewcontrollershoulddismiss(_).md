@@ -19,11 +19,11 @@ optional func playerViewControllerShouldDismiss(_ playerViewController: AVPlayer
 - (BOOL) playerViewControllerShouldDismiss:(AVPlayerViewController *) playerViewController;
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the player view controller should dismiss itself; otherwise `false`.
 
-#### Discussion
+## Discussion
 
 If allowed, the player view controller dismisses itself with animation. If you’ve embedded the player view controller in another view, the delegate may need to manually dismiss the view controller.
 

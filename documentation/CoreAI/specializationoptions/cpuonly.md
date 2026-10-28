@@ -19,7 +19,7 @@ Options that restrict compute to the CPU only.
 static let cpuOnly: SpecializationOptions
 ```
 
-#### Discussion
+## Discussion
 
 The resulting specialized model only uses the CPU during inference. Because all operations support the CPU, no fallback to other compute units occurs.
 

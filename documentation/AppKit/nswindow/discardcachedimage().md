@@ -21,7 +21,7 @@ func discardCachedImage()
 - (void) discardCachedImage;
 ```
 
-#### Discussion
+## Discussion
 
 An `NSWindow` object automatically discards its cached image rectangles when it displays.
 

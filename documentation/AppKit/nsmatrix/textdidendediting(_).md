@@ -19,7 +19,7 @@ func textDidEndEditing(_ notification: Notification)
 - (void) textDidEndEditing:(NSNotification *) notification;
 ```
 
-#### Discussion
+## Discussion
 
 This method’s default behavior is to post an [`textDidEndEditingNotification`](../nscontrol/textdidendeditingnotification.md) along with the receiving object to the default notification center. The posted notification’s user info contains the contents of notification’s user info dictionary, plus an additional key-value pair. The additional key is “`NSFieldEditor`”; the value for this key is the text object that began editing. After posting the notification, [`NSMatrix`](../nsmatrix.md) sends an [`endEditing(_:)`](../nscell/endediting%28_%29.md) message to the selected cell, draws and makes the selected cell key, and then takes the appropriate action based on which key was used to end editing (Return, Tab, or Back-Tab).
 

@@ -25,7 +25,7 @@ func updateCurrentPageDisplay()
 - (void) updateCurrentPageDisplay;
 ```
 
-#### Discussion
+## Discussion
 
 This method updates the page indicator so that the current page (the white dot) matches the value returned from [`currentPage`](./currentpage.md). The class ignores this method if the value of [`defersCurrentPageDisplay`](./deferscurrentpagedisplay.md) is [`false`](../../Swift/false.md). Setting the [`currentPage`](./currentpage.md) value directly updates the indicator immediately.
 

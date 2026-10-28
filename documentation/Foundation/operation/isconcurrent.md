@@ -25,7 +25,7 @@ var isConcurrent: Bool { get }
 @property (readonly, getter=isConcurrent) BOOL concurrent;
 ```
 
-#### Discussion
+## Discussion
 
 Use the [`isAsynchronous`](./isasynchronous.md) property instead.
 

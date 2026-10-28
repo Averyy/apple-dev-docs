@@ -19,11 +19,11 @@ optional func webView(_ webView: WebView!, shouldInsertText text: String!, repla
 - (BOOL) webView:(WebView *) webView shouldInsertText:(NSString *) text replacingDOMRange:(DOMRange *) range givenAction:(WebViewInsertAction) action;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the user should be allowed to insert `text` in `webView`; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 This method may perform an alternate action—for example, insert different text—and return [`false`](../../Swift/false.md).
 

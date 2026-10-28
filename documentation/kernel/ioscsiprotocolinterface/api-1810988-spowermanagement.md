@@ -12,7 +12,7 @@ static void sPowerManagement (
  thread_call_param_twhichDevice );
 ```
 
-#### Overview
+## Overview
 
 The sPowerManagement method is a static C-function which is called using mach's thread_call API. It guarantees us a thread of execution which is different than the power management thread and the workloop thread on which we can issue commands to the device synchronously or asynchronously without worrying about deadlocks. It calls through to HandlePowerChange, which is a state machine used to direct power management.
 

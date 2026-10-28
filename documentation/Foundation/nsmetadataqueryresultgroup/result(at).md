@@ -25,11 +25,11 @@ func result(at idx: Int) -> Any
 - (id) resultAtIndex:(NSUInteger) idx;
 ```
 
-#### Return Value
+## Return Value
 
 The query result at a specific index.
 
-#### Discussion
+## Discussion
 
 For performance reasons, you should use this method when retrieving a specific result, rather than they array contained in [`results`](./results.md).
 

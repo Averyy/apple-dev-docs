@@ -23,7 +23,7 @@ static var calculationModeCubic: UIView.KeyframeAnimationOptions { get }
 UIViewKeyframeAnimationOptionCalculationModeCubic
 ```
 
-#### Discussion
+## Discussion
 
 You can’t adjust the parameters of this algorithm.
 

@@ -21,11 +21,11 @@ Resolves an entity from an exported intent file through the entity type’s tran
 func resolved(from file: IntentFile) async throws -> AnyAppEntity
 ```
 
-#### Return Value
+## Return Value
 
 The resolved entity.
 
-#### Discussion
+## Discussion
 
 Use this to verify the import direction — that an [`IntentFile`](../../AppIntents/intentfile.md) produced by `AnyAppEntity/exported(as:)-swift.method` (or constructed from test data) can be resolved back into an entity through the same pipeline used at runtime.
 

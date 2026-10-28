@@ -20,7 +20,7 @@ Return true if this stage’s root layer has an authored opinion for the default
 var hasDefaultPrim: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: This function only consults the stage’s root layer.  To consult a different layer, use [`defaultPrim`](../usdlayer/defaultprim.md).
 

@@ -24,7 +24,7 @@ var shadowOffset: CGSize { get set }
 @property CGSize shadowOffset;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is (`0.0`, `-3.0`).
 

@@ -19,7 +19,7 @@ enum PageOrder
 enum NSPrintingPageOrder : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 These constants are used by [`pageOrder`](./pageorder-swift.property.md) and [`pageOrder`](./pageorder-swift.property.md).
 

@@ -18,7 +18,7 @@ Asynchronously loads a body-tracked entity from a file URL.
 @preconcurrency static func loadBodyTrackedAsync(contentsOf url: URL, withName resourceName: String? = nil) -> LoadRequest<BodyTrackedEntity>
 ```
 
-#### Return Value
+## Return Value
 
 A resource loader that publishes the root entity in the loaded file as a [`BodyTrackedEntity`](../bodytrackedentity.md).
 

@@ -28,7 +28,7 @@ func updateActivity(uuid UUID: UUID, end endDate: Date) async throws
 - (void) updateActivityWithUUID:(NSUUID *) UUID endDate:(NSDate *) endDate completion:(void (^)(BOOL success, NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Calling this method after calling [`finishWorkout(completion:)`](./finishworkout%28completion%29.md) fails with an error.
 

@@ -25,7 +25,7 @@ var countOfBytesExpectedToSend: Int64 { get }
 @property (readonly) int64_t countOfBytesExpectedToSend;
 ```
 
-#### Discussion
+## Discussion
 
 The URL loading system can determine the length of the upload data in three ways:
 

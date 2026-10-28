@@ -5,7 +5,7 @@
 
 The process violated a guarded resource protection, often related to file descriptors.
 
-#### Overview
+## Overview
 
 There are multiple types of guarded system resources, however most guarded resource crashes are from guarded file descriptors, which have the `GUARD_TYPE_FD` value in the `Exception Subtype` field. The operating system marks a file descriptor as guarded so that normal file descriptor APIs can’t modify them. For example, if an app closes the file descriptor used to access the SQLite file backing a [Core Data](../CoreData/CoreData.md) store, [Core Data](../CoreData/CoreData.md) could mysteriously crash much later on. The guard file description identifies these problems when they happen, making them easier to identify and address.
 

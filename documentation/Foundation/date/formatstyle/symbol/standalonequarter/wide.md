@@ -21,7 +21,7 @@ The full representation of a standalone quarter.
 static var wide: Date.FormatStyle.Symbol.StandaloneQuarter { get }
 ```
 
-#### Discussion
+## Discussion
 
 This custom format style conveys the complete representation of a standalone quarter, like `4th Quarter`, for the fourth quarter.
 

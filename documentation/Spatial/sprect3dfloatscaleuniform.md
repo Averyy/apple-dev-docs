@@ -19,11 +19,11 @@
 static SPRect3DFloat SPRect3DFloatScaleUniform(SPRect3DFloat rect, float scale);
 ```
 
-#### Return Value
+## Return Value
 
 A rectangle that’s uniformly scaled by the specified value.
 
-#### Discussion
+## Discussion
 
 Returns a rectangle with dimensions uniformly scaled by the specified value.
 

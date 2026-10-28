@@ -24,7 +24,7 @@ var prefersToActivateForTargetContentIdentifierPredicate: NSPredicate { get set 
 @property (nonatomic, copy) NSPredicate * prefersToActivateForTargetContentIdentifierPredicate;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify which tasks you want this scene to handle. UIKit evaluates your predicate against the [`targetContentIdentifier`](../../Foundation/nsuseractivity/targetcontentidentifier.md) property of the object causing the activation of the scene. Many different objects contain target content identifiers, including [`NSUserActivity`](../../Foundation/nsuseractivity.md), [`UNNotificationContent`](../../UserNotifications/unnotificationcontent.md), and [`UIApplicationShortcutItem`](../uiapplicationshortcutitem.md).
 

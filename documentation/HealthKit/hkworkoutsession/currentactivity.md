@@ -25,7 +25,7 @@ var currentActivity: HKWorkoutActivity { get }
 @property (copy, readonly) HKWorkoutActivity * currentActivity;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains a workout activity that’s currently in progress (an activity with an [`endDate`](../hkworkoutactivity/enddate.md) property set to `nil`). If you end the activity — for example, by calling [`endCurrentActivity(on:)`](./endcurrentactivity%28on%29.md) or [`updateActivity(uuid:end:completion:)`](../hkworkoutbuilder/updateactivity%28uuid,end,completion%29.md) — the system sets this property to `nil` until you begin a new activity.
 

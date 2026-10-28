@@ -21,7 +21,7 @@ Populates a double-precision vector with a specified scalar value.
 static func fill<V>(_ vector: inout V, with value: Double) where V : AccelerateMutableBuffer, V.Element == Double
 ```
 
-#### Discussion
+## Discussion
 
 This function populates a vector with a specified scalar value.
 

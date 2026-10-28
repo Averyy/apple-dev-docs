@@ -21,7 +21,7 @@ Returns the threshold if the input value is less than threshold; otherwise retur
 case clampToThreshold
 ```
 
-#### Discussion
+## Discussion
 
 Use [`vDSP.ThresholdRule.clampToThreshold`](./clamptothreshold.md) to calculate a new vector where the threshold operation sets all source values below the threshold to the threshold.
 

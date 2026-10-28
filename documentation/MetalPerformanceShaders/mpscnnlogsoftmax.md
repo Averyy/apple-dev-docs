@@ -24,7 +24,7 @@ class MPSCNNLogSoftMax
 @interface MPSCNNLogSoftMax : MPSCNNKernel
 ```
 
-#### Overview
+## Overview
 
 The logarithmic softmax filter is calculated by taking the natural logarithm of the result of a softmax filter.
 

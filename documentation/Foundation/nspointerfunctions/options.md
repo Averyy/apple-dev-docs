@@ -25,7 +25,7 @@ struct Options
 enum NSPointerFunctionsOptions : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 When specifying a value, you can use only one of the options listed in Memory Options,  only one of the options listed in Personality Options, and any number of other options.
 

@@ -19,7 +19,7 @@ Constants that determine the style of the indicator that appears on a button.
 enum UIButtonConfigurationIndicator : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Use these constants to set the value of the [`indicator`](./uibuttonconfiguration/indicator.md) property.
 

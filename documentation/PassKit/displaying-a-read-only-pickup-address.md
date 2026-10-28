@@ -5,13 +5,13 @@
 
 Configure a payment request to display a read-only pickup address on the payment sheet.
 
-#### Overview
+## Overview
 
 The payment sheet displays the shipping address in the same place whether the shipping method is delivery or pickup. You can prevent the user from editing the address of a pickup and still require other information about the person making the pickup.
 
 > **Note**:  This feature is available in apps built for iOS 15, iPadOS 15, watchOS 8, macOS 12, and apps built with Mac Catalyst 15 and later.
 
-##### Add a Read-Only Pickup Address
+### Add a Read-Only Pickup Address
 
 Set the following four properties of your payment request to display a read-only pickup address:
 

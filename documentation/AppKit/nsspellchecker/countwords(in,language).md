@@ -19,11 +19,11 @@ func countWords(in stringToCount: String, language: String?) -> Int
 - (NSInteger) countWordsInString:(NSString *) stringToCount language:(NSString *) language;
 ```
 
-#### Return Value
+## Return Value
 
 The number of words in the string or `-1` if word counting is unavailable or has not occurred for some reason.
 
-#### Discussion
+## Discussion
 
 If `language` is `nil`, the current selection in the Spelling panel’s pop-up menu is used.
 

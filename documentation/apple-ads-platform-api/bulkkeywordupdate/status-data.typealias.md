@@ -20,11 +20,11 @@ string BulkKeywordUpdate.Status
 - `ENABLED`: Keyword is active and eligible to serve.
 - `PAUSED`: Keyword is paused and will not serve.
 
-#### Discussion
+## Discussion
 
 Include this field within an item’s `data` to enable or pause the keyword as part of the same bulk update request.
 
-##### Example
+### Example
 
 ```json
 {

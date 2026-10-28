@@ -25,7 +25,7 @@ func NSDecimalSubtract(_ result: UnsafeMutablePointer<Decimal>, _ leftOperand: U
 extern NSCalculationError NSDecimalSubtract(NSDecimal *result, const NSDecimal *leftOperand, const NSDecimal *rightOperand, NSRoundingMode roundingMode);
 ```
 
-#### Discussion
+## Discussion
 
 Subtracts `rightOperand` from `leftOperand` and stores the difference, possibly rounded off according to `roundingMode`, in `result`.
 

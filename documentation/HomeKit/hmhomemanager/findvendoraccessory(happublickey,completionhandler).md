@@ -28,7 +28,7 @@ func findVendorAccessory(hapPublicKey: Data) async throws -> HMAccessory?
 - (void) findVendorAccessoryWithHAPPublicKey:(NSData *) hapPublicKey completionHandler:(void (^)(HMAccessory *, NSError *)) completion;
 ```
 
-#### Overview
+## Overview
 
 Use `findVendorAccessory(hapPublicKey:completionHandler:)` to find out if your accessory is currently paired with HomeKit.
 

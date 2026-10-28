@@ -18,7 +18,7 @@ The context of the scene.
 var context: DeviceActivityReport.Context { get }
 ```
 
-#### Discussion
+## Discussion
 
 When your app creates a `DeviceActivityReport` with this context, the system uses this scene to render the report’s content.
 

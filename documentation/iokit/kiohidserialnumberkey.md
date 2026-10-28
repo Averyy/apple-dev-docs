@@ -16,7 +16,7 @@ A key that specifies the device's serial number.
 #define kIOHIDSerialNumberKey
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is a string that contains the serial number of the device.
 

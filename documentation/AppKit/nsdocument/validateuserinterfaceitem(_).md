@@ -20,11 +20,11 @@ func validateUserInterfaceItem(_ item: any NSValidatedUserInterfaceItem) -> Bool
 - (BOOL) validateUserInterfaceItem:(id<NSValidatedUserInterfaceItem>) item;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the item is valid; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 These items currently include only Revert and Save. You can override this method to add more selectors validated by your document subclass.
 

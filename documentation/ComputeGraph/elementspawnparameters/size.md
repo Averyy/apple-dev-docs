@@ -21,7 +21,7 @@ The initial size of the particle as a 2D vector representing width and height.
 var size: SIMD2<Float> { get set }
 ```
 
-#### Discussion
+## Discussion
 
 For most particle systems, this represents the billboard size in world space units.
 

@@ -25,7 +25,7 @@ func BNNSGraphGetInputNames(_ graph: bnns_graph_t, _ function: UnsafePointer<CCh
 int BNNSGraphGetInputNames(bnns_graph_t graph, const char *function, size_t input_names_count, const char **input_names);
 ```
 
-#### Return Value
+## Return Value
 
 `0` on success, nonzero on failure.
 

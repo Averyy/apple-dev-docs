@@ -15,7 +15,7 @@ Get the count of accessories in the collection.
 extern size_t ar_accessories_get_count(ar_accessories_t accessories);
 ```
 
-#### Return Value
+## Return Value
 
 The number of accessories in the collection.
 

@@ -24,7 +24,7 @@ static let forcedExpiratoryVolume1: HKQuantityTypeIdentifier
 extern HKQuantityTypeIdentifier const HKQuantityTypeIdentifierForcedExpiratoryVolume1;
 ```
 
-#### Discussion
+## Discussion
 
 These samples use volume units (described in [`HKUnit`](../hkunit.md)) and measure discrete values (described in [`HKQuantityAggregationStyle`](../hkquantityaggregationstyle.md)).
 

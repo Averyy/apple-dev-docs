@@ -22,11 +22,11 @@ optional func previewController(_ controller: QLPreviewController, shouldOpen ur
 - (BOOL) previewController:(QLPreviewController *) controller shouldOpenURL:(NSURL *) url forPreviewItem:(id<QLPreviewItem>) item;
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value indicating whether to open the URL in the `url` parameter.
 
-#### Discussion
+## Discussion
 
 The system invokes this method when the user taps a URL link in a preview. If you return [`true`](../../Swift/true.md), the Quick Look preview controller invokes the [`openURL(_:)`](../../UIKit/uiapplication/openurl%28_%29.md) method on the [`UIApplication`](../../UIKit/uiapplication.md) object, sending it the value of the `url` parameter. If you return [`false`](../../Swift/false.md), the system doesn’t invoke the [`openURL(_:)`](../../UIKit/uiapplication/openurl%28_%29.md) method.
 

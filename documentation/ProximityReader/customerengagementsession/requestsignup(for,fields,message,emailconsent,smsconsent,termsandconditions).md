@@ -17,11 +17,11 @@ Opens a form so that the customer can share the contact information for the purp
 final func requestSignup(for purpose: CustomerEngagementSession.Purpose = .membership, fields: [CustomerEngagementSession.Field], message: String? = nil, emailConsent: CustomerEngagementSession.ConsentOption = .hidden, smsConsent: CustomerEngagementSession.ConsentOption = .hidden, termsAndConditions: String? = nil) async throws -> CustomerEngagement.SignUp
 ```
 
-#### Return Value
+## Return Value
 
 [`CustomerEngagement.SignUp`](../customerengagement/signup.md) contact information shared by the customer.
 
-#### Discussion
+## Discussion
 
 > **Throws**: [`CustomerEngagementSession.Error`](./error.md) if the request fails.
 

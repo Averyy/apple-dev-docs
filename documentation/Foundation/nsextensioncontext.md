@@ -25,7 +25,7 @@ class NSExtensionContext
 @interface NSExtensionContext : NSObject
 ```
 
-#### Overview
+## Overview
 
 When a host app sends a request to an app extension, it provides an extension context. For many app extensions, the most important part of the context is the data the user wants to work with, which is contained in the [`inputItems`](./nsextensioncontext/inputitems.md) property.
 

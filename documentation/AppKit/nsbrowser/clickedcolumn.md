@@ -19,7 +19,7 @@ var clickedColumn: Int { get }
 @property (readonly) NSInteger clickedColumn;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is `-1` if no context menu is active.
 

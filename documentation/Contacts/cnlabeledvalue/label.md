@@ -32,7 +32,7 @@ var label: String? { get }
 @property (atomic, copy, readonly, nullable) NSString * label;
 ```
 
-#### Discussion
+## Discussion
 
 A contact property can have a label, such as Home, Work, iPhone, etc. For some predefined label constants, see[`CNPhoneNumber`](../cnphonenumber.md), and [`CNContactRelation`](../cncontactrelation.md). Custom labels can also be used. Labels are not used for [`CNSocialProfile`](../cnsocialprofile.md) and [`CNInstantMessageAddress`](../cninstantmessageaddress.md) properties.
 

@@ -29,7 +29,7 @@ func makeCommandAllocator() -> (any MTL4CommandAllocator)?
 
 - [Understanding the Metal 4 core API](../understanding-the-metal-4-core-api.md)
 
-#### Return Value
+## Return Value
 
 A [`MTL4CommandAllocator`](../mtl4commandallocator.md) instance, or `nil` if the function failed.
 

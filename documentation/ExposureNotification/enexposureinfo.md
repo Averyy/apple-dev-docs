@@ -23,7 +23,7 @@ class ENExposureInfo
 @interface ENExposureInfo : NSObject
 ```
 
-#### Overview
+## Overview
 
 > ❗ **Important**:  This class is available in iOS 12.5, and in iOS 13.5 and later. It isn’t supported for apps with [`ENAPIVersion`](../BundleResources/information-property-list/enapiversion.md) set to `2` in the `Info.plist` file. Instead, [`getExposureWindows(summary:completionHandler:)`](./enmanager/getexposurewindows%28summary,completionhandler%29.md) provides an array of [`ENExposureWindow`](./enexposurewindow.md) objects.
 

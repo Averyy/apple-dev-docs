@@ -23,7 +23,7 @@ protocol NSFileProviderItemDecorating : NSFileProviderItemProtocol
 @protocol NSFileProviderItemDecorating <NSFileProviderItem>
 ```
 
-#### Overview
+## Overview
 
 To adopt this protocol, implement the [`decorations`](./nsfileprovideritemdecorating/decorations.md) method for your extension’s [`NSFileProviderItem`](./nsfileprovideritem-swift.typealias.md) and return valid identifiers for the desired decorations.
 

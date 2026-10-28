@@ -24,7 +24,7 @@ case plain
 PKPaymentButtonTypePlain
 ```
 
-#### Discussion
+## Discussion
 
 This plain button style can have a smaller minimum width than Apple Pay buttons with text. This button looks like:
 

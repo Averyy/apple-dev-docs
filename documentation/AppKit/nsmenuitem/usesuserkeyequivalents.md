@@ -19,7 +19,7 @@ class var usesUserKeyEquivalents: Bool { get set }
 @property (class) BOOL usesUserKeyEquivalents;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if menu items conform to user preferences for key equivalents; otherwise, [`false`](../../Swift/false.md).
 

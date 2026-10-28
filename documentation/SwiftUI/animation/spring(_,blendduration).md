@@ -21,7 +21,7 @@ A persistent spring animation.
 static func spring(_ spring: Spring, blendDuration: TimeInterval = 0.0) -> Animation
 ```
 
-#### Discussion
+## Discussion
 
 When mixed with other `spring()` or `interactiveSpring()` animations on the same property, each animation will be replaced by their successor, preserving velocity from one animation to the next. Optionally blends the duration values between springs over a time period.
 

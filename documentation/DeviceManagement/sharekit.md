@@ -15,11 +15,11 @@ The payload that configures ShareKit.
 object ShareKit
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.ShareKitHelper` as the payload type.
 
-##### Profile availability
+### Profile availability
 
 |  |  |
 | --- | --- |

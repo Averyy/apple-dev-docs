@@ -22,7 +22,7 @@ case began
 UIBandSelectionInteractionStateBegan
 ```
 
-#### Discussion
+## Discussion
 
 The interaction object enters this state once at the beginning of each interaction, and subsequently transitions to the [`UIBandSelectionInteraction.State.selecting`](./selecting.md) or [`UIBandSelectionInteraction.State.ended`](./ended.md) state. When in this state, perform any one-time tasks that you need to manage your app’s state. For example, you might prepare your view to start the selection of items.
 

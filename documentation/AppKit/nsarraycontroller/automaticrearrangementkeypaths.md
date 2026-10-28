@@ -19,7 +19,7 @@ var automaticRearrangementKeyPaths: [String]? { get }
 @property (copy, readonly, nullable) NSArray<NSString *> * automaticRearrangementKeyPaths;
 ```
 
-#### Discussion
+## Discussion
 
 Subclasses can override this property to customize the default behavior of the sort descriptors and filtering predicates, for example, if additional arrangement criteria are used in a custom implementation of [`arrangedObjects`](./arrangedobjects.md).
 

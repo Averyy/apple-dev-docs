@@ -24,7 +24,7 @@ var sceneAssociationBehavior: SceneAssociationBehavior
 
 - [Adding spatial Persona support to an activity](../adding-spatial-persona-support-to-an-activity.md)
 
-#### Discussion
+## Discussion
 
 An app with multiple [`Scene`](../../SwiftUI/scene.md) types typically uses each scene for a different purpose. For example, you might use one scene type for your app’s documents, and a different scene type for tool palettes, information windows, and other content. When a group activity starts, the system uses the information in this property to deliver the activity to the appropriate scene. On some platforms, the system also adds a custom indicator to the scene to let people know that SharePlay is active.
 

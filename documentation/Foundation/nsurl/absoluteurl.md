@@ -25,7 +25,7 @@ var absoluteURL: URL? { get }
 @property (copy, readonly, nullable) NSURL * absoluteURL;
 ```
 
-#### Discussion
+## Discussion
 
 If the URL is already absolute, this property contains a copy of the receiver. Resolution is performed per RFC 1808.
 

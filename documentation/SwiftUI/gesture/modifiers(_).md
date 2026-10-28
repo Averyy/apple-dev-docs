@@ -16,11 +16,11 @@ Combines a gesture with keyboard modifiers.
 @preconcurrency func modifiers(_ modifiers: EventModifiers) -> _ModifiersGesture<Self>
 ```
 
-#### Return Value
+## Return Value
 
 A new gesture that combines a gesture with keyboard modifiers.
 
-#### Discussion
+## Discussion
 
 The gesture receives updates while the user presses the modifier keys that correspond to the given modifiers option set.
 

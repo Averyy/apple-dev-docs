@@ -25,7 +25,7 @@ let SCNProgramMappingChannelKey: String
 extern NSString * const SCNProgramMappingChannelKey;
 ```
 
-#### Discussion
+## Discussion
 
 This key can be used with the `options` dictionary for the [`setSemantic(_:forSymbol:options:)`](./scnprogram/setsemantic%28_,forsymbol,options%29.md) method, and applies only to the [`texcoord`](./scngeometrysource/semantic-swift.struct/texcoord.md) semantic. Its value is an [`NSNumber`](../Foundation/nsnumber.md) object containing an unsigned integer value.
 

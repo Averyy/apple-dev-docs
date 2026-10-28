@@ -21,7 +21,7 @@ Returns a date offset the specified time interval from this date.
 func advanced(by n: TimeInterval) -> Date
 ```
 
-#### Return Value
+## Return Value
 
 A date offset the specified time interval from this date.
 

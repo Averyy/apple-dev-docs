@@ -23,7 +23,7 @@ var transform: CGAffineTransform { get set }
 @property (nonatomic) CGAffineTransform transform;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to scale or rotate the view’s frame rectangle within its superview’s coordinate system. (To change the position of the view, modify the [`center`](./center.md) property instead.) The default value of this property is `CGAffineTransformIdentity`.
 

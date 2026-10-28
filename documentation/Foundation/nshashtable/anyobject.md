@@ -25,7 +25,7 @@ var anyObject: ObjectType? { get }
 @property (nonatomic, readonly, nullable) ObjectType anyObject;
 ```
 
-#### Discussion
+## Discussion
 
 One of the objects in the hash table, or `nil` if the hash table contains no objects.
 

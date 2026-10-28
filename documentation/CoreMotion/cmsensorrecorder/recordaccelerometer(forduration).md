@@ -22,7 +22,7 @@ func recordAccelerometer(forDuration duration: TimeInterval)
 - (void) recordAccelerometerForDuration:(NSTimeInterval) duration;
 ```
 
-#### Discussion
+## Discussion
 
 When you call this method, the system begins capturing accelerometer data at a sample rate of 50 Hz. The system records the data for the specified amount of time, even if your app is suspended or terminated. The collected data remains accessible to your app for up to three days.
 

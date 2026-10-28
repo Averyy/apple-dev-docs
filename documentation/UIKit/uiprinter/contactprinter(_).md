@@ -26,7 +26,7 @@ func contactPrinter() async -> Bool
 - (void) contactPrinter:(void (^)(BOOL available)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 For printers you create yourself using the [`init(url:)`](./init%28url%29-1mibn.md) method, you must call this method prior to accessing properties containing printer-related information. This method runs asynchronously, returning immediately while the system continues to try and gather information about the printer’s name, location, capabilities, and so on. When the printer’s availability is determined, the results are delivered to the `completionHandler` block you provided.
 

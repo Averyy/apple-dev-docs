@@ -19,7 +19,7 @@ var position: NSPositionalSpecifier.InsertionPosition { get }
 @property (readonly) NSInsertionPosition position;
 ```
 
-#### Return Value
+## Return Value
 
 An insertion position.
 

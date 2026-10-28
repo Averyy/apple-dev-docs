@@ -21,7 +21,7 @@ An array of proxy configuration objects containing information about the proxies
 var proxyConfigurations: [ProxyConfiguration] { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This property controls which proxy tasks within sessions based on this configuration use when connecting to remote hosts.
 

@@ -24,7 +24,7 @@ func newTexture(cgImage: CGImage, options: [MTKTextureLoader.Option : Any]? = ni
 - (id<MTLTexture>) newTextureWithCGImage:(CGImageRef) cgImage options:(NSDictionary<NSString *,id> *) options error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A fully loaded and initialized Metal texture, or `nil` if an error occurred.
 

@@ -21,7 +21,7 @@ final func didAuthenticate(account: String) async
 
 - [Reauthenticating a person to manage apps](../reauthenticating-a-person-to-manage-apps.md)
 
-#### Discussion
+## Discussion
 
 The marketplace or other web-distributed app calls this method after reauthenticating a person when the access token expires. For more information, see [Reauthenticating a person to manage apps](../reauthenticating-a-person-to-manage-apps.md).
 

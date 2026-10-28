@@ -22,7 +22,7 @@ convenience init(style: UIContextualAction.Style, title: String?, handler: @esca
 + (instancetype) contextualActionWithStyle:(UIContextualActionStyle) style title:(NSString *) title handler:(UIContextualActionHandler) handler;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized contextual action object.
 

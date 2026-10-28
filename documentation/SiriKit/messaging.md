@@ -5,7 +5,7 @@
 
 Send messages and search the user’s received messages.
 
-#### Overview
+## Overview
 
 With messaging intents, users can ask Siri to compose new messages, read existing messages, and indicate to other users whether they’re available.
 

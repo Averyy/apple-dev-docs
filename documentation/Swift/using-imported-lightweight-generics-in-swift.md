@@ -5,7 +5,7 @@
 
 Understand the constraints of imported Obj-C lightweight generic type declarations.
 
-#### Overview
+## Overview
 
 Objective-C type declarations that use lightweight generic parameterization are imported by Swift with information about the type of their contents preserved. For example, given the following Objective-C property declarations:
 

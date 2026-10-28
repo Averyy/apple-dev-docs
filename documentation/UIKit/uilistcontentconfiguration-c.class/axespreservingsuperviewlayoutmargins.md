@@ -19,7 +19,7 @@ A Boolean value that detemines whether the content view preserves the layout mar
 @property (nonatomic) UIAxis axesPreservingSuperviewLayoutMargins;
 ```
 
-#### Discussion
+## Discussion
 
 By default, the content view preserves the layout margins of its superview on [`both`](../uiaxis/both.md) axes.
 

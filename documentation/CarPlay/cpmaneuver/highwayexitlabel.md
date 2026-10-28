@@ -21,7 +21,7 @@ var highwayExitLabel: String { get set }
 @property (nonatomic, copy) NSString * highwayExitLabel;
 ```
 
-#### Discussion
+## Discussion
 
 Set the label to a string that describes the exit, as in the example:
 

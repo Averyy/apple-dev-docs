@@ -21,7 +21,7 @@ Indicates that an icon-only button, without text, has been pressed (touch down).
 static let buttonIconOnly: SensoryFeedback.PressFeedback
 ```
 
-#### Discussion
+## Discussion
 
 Only plays feedback on visionOS.
 

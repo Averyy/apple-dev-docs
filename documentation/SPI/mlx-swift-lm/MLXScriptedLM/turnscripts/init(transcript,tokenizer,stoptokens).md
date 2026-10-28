@@ -17,7 +17,7 @@ Initialize the TurnScripts.
 init(transcript: Transcript, tokenizer: ScriptedTokenizer, stopTokens: Set<Int> = []) throws
 ```
 
-#### Discussion
+## Discussion
 
 The transcript’s assistant scripts, with the template’s generation prompt as the turn marker.
 

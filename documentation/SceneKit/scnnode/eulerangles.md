@@ -25,7 +25,7 @@ var eulerAngles: SCNVector3 { get set }
 @property (nonatomic) SCNVector3 eulerAngles;
 ```
 
-#### Discussion
+## Discussion
 
 The order of components in this vector matches the axes of rotation:
 

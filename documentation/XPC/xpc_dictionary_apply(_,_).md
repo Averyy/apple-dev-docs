@@ -25,11 +25,11 @@ func xpc_dictionary_apply(_ xdict: xpc_object_t, _ applier: (UnsafePointer<CChar
 extern bool xpc_dictionary_apply(xpc_object_t xdict, xpc_dictionary_applier_t applier);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean indicating whether iteration of the dictionary completed successfully. Iteration will only fail if the applier block returns false.
 
-#### Discussion
+## Discussion
 
 You should not modify a dictionary’s contents during iteration. There is no guaranteed order of iteration over dictionaries.
 

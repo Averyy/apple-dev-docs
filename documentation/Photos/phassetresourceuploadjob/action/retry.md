@@ -26,7 +26,7 @@ PHAssetResourceUploadJobActionRetry
 
 - [Uploading asset resources in the background](../../../PhotoKit/uploading-asset-resources-in-the-background.md)
 
-#### Discussion
+## Discussion
 
 A retryable job has a [`state`](../state-swift.property.md) of `failed` and hasn’t previously been retried.
 

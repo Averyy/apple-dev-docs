@@ -16,7 +16,7 @@ Creates a frame semantics feature.
 init(rawValue: UInt)
 ```
 
-#### Discussion
+## Discussion
 
 Initialize an [`ARConfiguration.FrameSemantics`](../framesemantics-swift.struct.md) with the value of zero to indicate that no optional frame features are enabled.
 

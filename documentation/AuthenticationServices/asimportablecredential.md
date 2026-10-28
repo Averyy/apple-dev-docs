@@ -19,7 +19,7 @@ A credential for use in import and export.
 enum ASImportableCredential
 ```
 
-#### Overview
+## Overview
 
 A credential represents a piece of secure information associated with an item. `ASImportableCredential` currently supports the following kinds of credentials:
 

@@ -19,11 +19,11 @@
 static SPPose3DFloat SPPose3DFloatMakeLookAt(SPVector3DFloat forward, SPVector3DFloat up);
 ```
 
-#### Return Value
+## Return Value
 
 A new pose stucture.
 
-#### Discussion
+## Discussion
 
 Returns a pose with the specified forward and up vectors.
 

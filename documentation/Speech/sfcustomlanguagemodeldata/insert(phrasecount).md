@@ -20,7 +20,7 @@ Add a sample to the body of training data.
 func insert(phraseCount: SFCustomLanguageModelData.PhraseCount)
 ```
 
-#### Discussion
+## Discussion
 
 This class accumulates text data that will later be used to train a language model, which can be provided to an `SFSpeechRecognizer` to improve performance on certain phrases.
 

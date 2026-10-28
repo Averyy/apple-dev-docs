@@ -21,7 +21,7 @@ func slideDraggedImage(to screenPoint: NSPoint)
 - (void) slideDraggedImageTo:(NSPoint) screenPoint;
 ```
 
-#### Discussion
+## Discussion
 
 This method can be used to adjust the location to which the dragged image will slide back if the drag is rejected.
 
@@ -29,7 +29,7 @@ It should only be invoked from within the destination’s implementation of prep
 
 This method is invoked after the user has released the image but before it is removed from the screen.
 
-##### Special Considerations
+### Special Considerations
 
 This method has been available since OS X v 10.0, however it was not implemented until OS X v 10.5. Previous to that version, it did nothing.
 

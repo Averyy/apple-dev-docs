@@ -17,7 +17,7 @@ A Boolean value that indicates whether your app meets the requirements of the vi
 - **Name**: `com.apple.smoot.subscriptionservice`
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 This entitlement enables you to use the required APIs for the Apple TV App and Universal Search.
 

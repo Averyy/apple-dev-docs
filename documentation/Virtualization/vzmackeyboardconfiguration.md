@@ -19,7 +19,7 @@ class VZMacKeyboardConfiguration
 @interface VZMacKeyboardConfiguration : VZKeyboardConfiguration
 ```
 
-#### Overview
+## Overview
 
 Use this configuration to attach a Mac keyboard configuration to a VM. A [`VZVirtualMachineView`](./vzvirtualmachineview.md) can use this device to send key events to the VM, including the Mac-specific key events, such as the Globe key.
 

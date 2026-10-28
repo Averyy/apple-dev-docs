@@ -14,7 +14,7 @@ func simd_quaternion(_ xyzr: UnsafePointer<Float16>!) -> simd_quath
 static simd_quath simd_quaternion(const _Float16 xyzr[4]);
 ```
 
-#### Discussion
+## Discussion
 
 Constructs a quaternion from an array of four scalars.
 

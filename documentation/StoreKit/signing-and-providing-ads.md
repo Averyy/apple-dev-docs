@@ -5,7 +5,7 @@
 
 Advertise apps by signing and providing StoreKit-rendered ads, view-through ads, or attributable web ads.
 
-#### Overview
+## Overview
 
 SKAdNetwork supports several ways for ad networks to provide ads:
 
@@ -27,7 +27,7 @@ The `fidelity-type` can affect which ad receives attribution when the user exper
 
 Ad networks must cryptographically sign the ads. The signature contains information that includes a campaign identifier. If ads result in conversions, ad networks receive an install-validation postback that includes the campaign identifier. For more information about the postback, see [Verifying an install-validation postback](./verifying-an-install-validation-postback.md).
 
-##### Provide a StoreKit-rendered ad
+### Provide a StoreKit-rendered ad
 
 Follow these steps to display a StoreKit-rendered ad in your app:
 
@@ -36,7 +36,7 @@ Follow these steps to display a StoreKit-rendered ad in your app:
 3. Call [`loadProduct(withParameters:completionBlock:)`](./skstoreproductviewcontroller/loadproduct%28withparameters,completionblock%29.md) using your ad network install-validation keys to load the ad.
 4. Present the ad in your app according to your app’s design. You can use either an [`SKOverlay`](./skoverlay.md) or an [`SKStoreProductViewController`](./skstoreproductviewcontroller.md) to display a StoreKit-rendered ad. The `fidelity-type` value of a StoreKit-rendered ad is `1` in either case.
 
-##### Provide a view-through ad
+### Provide a view-through ad
 
 Follow these steps to provide a view-through ad:
 
@@ -45,7 +45,7 @@ Follow these steps to provide a view-through ad:
 3. Call [`startImpression(_:completionHandler:)`](./skadnetwork/startimpression%28_,completionhandler%29.md) and then present your custom ad to the user according to your app’s design.
 4. Call [`endImpression(_:completionHandler:)`](./skadnetwork/endimpression%28_,completionhandler%29.md) when you finish presenting the ad.
 
-##### Provide an attributable web ad
+### Provide an attributable web ad
 
 Ad networks can sign attributable ads that websites can display in Safari. For more information, see [SKAdNetwork for Web Ads](../SKAdNetworkforWebAds/SKAdNetworkforWebAds.md).
 

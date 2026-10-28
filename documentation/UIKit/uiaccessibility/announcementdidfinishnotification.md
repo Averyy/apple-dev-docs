@@ -25,7 +25,7 @@ static let announcementDidFinishNotification: NSNotification.Name
 extern NSNotificationName const UIAccessibilityAnnouncementDidFinishNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The parameter is a dictionary with two keys, [`announcementStringValueUserInfoKey`](./announcementstringvalueuserinfokey.md) and [`announcementWasSuccessfulUserInfoKey`](./announcementwassuccessfuluserinfokey.md). Observe this notification using the default notification center.
 

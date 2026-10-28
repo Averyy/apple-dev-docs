@@ -24,7 +24,7 @@ struct Mode
 typedef NSString * AVAudioSessionMode;
 ```
 
-#### Overview
+## Overview
 
 While categories set the base behaviors for your app, you use modes to assign specialized behavior to an audio session category.
 

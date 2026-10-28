@@ -21,11 +21,11 @@ Provides scoped access to a buffer pointer to memory of the specified type and w
 func withUnsafeTemporaryAllocation<T, R, E>(of type: T.Type, capacity: Int, _ body: (UnsafeMutableBufferPointer<T>) throws(E) -> R) throws(E) -> R where E : Error, T : ~Copyable, R : ~Copyable
 ```
 
-#### Return Value
+## Return Value
 
 Whatever is returned by `body`.
 
-#### Discussion
+## Discussion
 
 > **Throws**: Whatever is thrown by `body`.
 

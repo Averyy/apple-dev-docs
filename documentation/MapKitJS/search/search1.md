@@ -21,11 +21,11 @@ search(
 ): Promise<SearchResponse>;
 ```
 
-#### Return Value
+## Return Value
 
 A promise that resolves when the search completes.
 
-#### Discussion
+## Discussion
 
 The [`search()`](./search1.md) method returns a set of locations that matches a user-entered query or a [`SearchAutocompleteResult`](../searchautocompleteresult.md).
 

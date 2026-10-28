@@ -25,7 +25,7 @@ class AVAudioTime
 @interface AVAudioTime : NSObject
 ```
 
-#### Overview
+## Overview
 
 The `AVAudioTime` object represents a single moment in time in two ways:
 

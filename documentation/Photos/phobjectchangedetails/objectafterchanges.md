@@ -24,7 +24,7 @@ var objectAfterChanges: ObjectType? { get }
 @property (atomic, strong, readonly, nullable) ObjectType objectAfterChanges;
 ```
 
-#### Discussion
+## Discussion
 
 Read this object’s properties to retrieve updated metadata for the asset or collection. Using this object is equivalent to repeating the same fetch that returned the original object.
 

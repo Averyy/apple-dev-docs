@@ -24,7 +24,7 @@ class GKPeerPickerController
 @interface GKPeerPickerController : NSObject
 ```
 
-#### Overview
+## Overview
 
 The result is a configured [`GKSession`](./gksession.md) object connecting the two devices. To use a [`GKPeerPickerController`](./gkpeerpickercontroller.md) object, your application creates the controller, adds a delegate, configures the allowed connection types, and then shows the peer picker. The delegate is called as the user makes selections within the peer picker interface.
 

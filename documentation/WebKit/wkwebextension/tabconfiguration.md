@@ -24,7 +24,7 @@ class TabConfiguration
 @interface WKWebExtensionTabConfiguration : NSObject
 ```
 
-#### Overview
+## Overview
 
 This class holds various options that influence the behavior and initial state of a tab.
 

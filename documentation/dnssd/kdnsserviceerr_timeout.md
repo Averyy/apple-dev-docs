@@ -23,7 +23,7 @@ var kDNSServiceErr_Timeout: Int { get }
 kDNSServiceErr_Timeout
 ```
 
-#### Discussion
+## Discussion
 
 A timeout occurred because the kDNSServiceFlagsTimeout + flag was passed.
 

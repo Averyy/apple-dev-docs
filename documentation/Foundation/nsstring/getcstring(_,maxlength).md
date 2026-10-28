@@ -26,7 +26,7 @@ func getCString(_ bytes: UnsafeMutablePointer<CChar>, maxLength: Int)
 - (void) getCString:(char *) bytes maxLength:(NSUInteger) maxLength;
 ```
 
-#### Discussion
+## Discussion
 
 `buffer` must be large enough to contain `maxLength`  chars plus a terminating zero char (which this method adds).
 

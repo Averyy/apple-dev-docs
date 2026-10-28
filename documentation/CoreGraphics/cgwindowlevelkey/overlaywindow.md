@@ -18,7 +18,7 @@ case overlayWindow
 kCGOverlayWindowLevelKey
 ```
 
-#### Discussion
+## Discussion
 
 The level for overlay windows.
 

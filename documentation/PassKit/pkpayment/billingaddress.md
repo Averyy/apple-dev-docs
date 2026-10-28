@@ -22,7 +22,7 @@ unowned(unsafe) var billingAddress: ABRecord? { get }
 @property (nonatomic, assign, readonly, nullable) ABRecordRef billingAddress;
 ```
 
-#### Discussion
+## Discussion
 
 Only the fields specified in the the [`requiredBillingAddressFields`](../pkpaymentrequest/requiredbillingaddressfields.md) property of the [`PKPaymentRequest`](../pkpaymentrequest.md) object are populated. If no required billing fields were specified, the value of this property is `nil`.
 

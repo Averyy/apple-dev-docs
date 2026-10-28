@@ -20,7 +20,7 @@ The update stage object that lets you read and update the current settings of a 
 class Solver
 ```
 
-#### Overview
+## Overview
 
 The settings this object exposes are the runtime editable values on the solver instance itself, the solver joints and constraints. For the full list of settings adjustable during creation, see [`IKRig`](../ikrig.md).
 

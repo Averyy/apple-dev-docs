@@ -21,7 +21,7 @@ The output decode timestamp for a sample buffer.
 var outputDecodeTimeStamp: CMTime { get }
 ```
 
-#### Discussion
+## Discussion
 
 The system calculates this value as shown below:
 

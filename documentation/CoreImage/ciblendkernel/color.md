@@ -24,7 +24,7 @@ class var color: CIBlendKernel { get }
 @property (class, strong, readonly) CIBlendKernel * color;
 ```
 
-#### Discussion
+## Discussion
 
 ![The result of using the color blend kernel (background image is top left, foreground image is bottom left)](https://developer.apple.com/tutorials/images/com.apple.coreimage/media-2926849@2x.png)
 

@@ -18,11 +18,11 @@ func withUnsafeBytes<R>(for attachment: borrowing Attachment<Self>, _ body: (Uns
 
 Available when `Self` conforms to `NSSecureCoding`.
 
-#### Return Value
+## Return Value
 
 Whatever is returned by `body`.
 
-#### Discussion
+## Discussion
 
 > **Throws**: Whatever is thrown by `body`, or any error that prevented the creation of the buffer.
 

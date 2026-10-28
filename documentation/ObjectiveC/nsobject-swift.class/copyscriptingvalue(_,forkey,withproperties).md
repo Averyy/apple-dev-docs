@@ -19,11 +19,11 @@ func copyScriptingValue(_ value: Any, forKey key: String, withProperties propert
 - (id) copyScriptingValue:(id) value forKey:(NSString *) key withProperties:(NSDictionary<NSString *,id> *) properties;
 ```
 
-#### Return Value
+## Return Value
 
 The copied object or objects. Returns `nil` if an error occurs.
 
-#### Discussion
+## Discussion
 
 You can override the `copyScriptingValue` method to take more control when your application is sent a `duplicate` command. This method is invoked on the prospective container of the copied object or objects. The `properties` are derived from the `with properties` parameter of the `duplicate` command. The returned objects or objects are then inserted into the container using key-value coding.
 

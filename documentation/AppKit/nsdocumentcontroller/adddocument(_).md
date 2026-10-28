@@ -19,7 +19,7 @@ func addDocument(_ document: NSDocument)
 - (void) addDocument:(NSDocument *) document;
 ```
 
-#### Discussion
+## Discussion
 
 The `open...` methods automatically call [`addDocument(_:)`](./adddocument%28_%29.md). This method is mostly provided for subclasses that want to know when documents arrive.
 

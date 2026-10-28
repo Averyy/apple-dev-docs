@@ -20,7 +20,7 @@ Creates a playlist in the user’s music library.
 func createPlaylist(name: String, description: String? = nil, authorDisplayName: String? = nil) async throws -> Playlist
 ```
 
-#### Return Value
+## Return Value
 
 The newly created playlist.
 

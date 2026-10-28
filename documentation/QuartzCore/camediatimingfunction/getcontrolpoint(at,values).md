@@ -24,7 +24,7 @@ func getControlPoint(at idx: Int, values ptr: UnsafeMutablePointer<Float>)
 - (void) getControlPointAtIndex:(size_t) idx values:(float[2]) ptr;
 ```
 
-#### Discussion
+## Discussion
 
 The value of `index` must be between 0 and 3.
 

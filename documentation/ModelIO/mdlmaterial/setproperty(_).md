@@ -24,7 +24,7 @@ func setProperty(_ property: MDLMaterialProperty)
 - (void) setProperty:(MDLMaterialProperty *) property;
 ```
 
-#### Discussion
+## Discussion
 
 If the material already contains a material property with the same name or semantic, this method replaces that material property. Otherwise, this method adds the specified material property to the material.
 

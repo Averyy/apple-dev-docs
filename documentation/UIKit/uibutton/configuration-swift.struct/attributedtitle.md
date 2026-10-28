@@ -19,7 +19,7 @@ The text and style attributes for the button’s title label.
 var attributedTitle: AttributedString? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The configuration sets the [`title`](./title.md) property to match the string value of this attributed string. To change the button title when the button state changes, use [`configurationUpdateHandler`](../configurationupdatehandler-swift.property.md) or [`updateConfiguration()`](../updateconfiguration%28%29.md).
 

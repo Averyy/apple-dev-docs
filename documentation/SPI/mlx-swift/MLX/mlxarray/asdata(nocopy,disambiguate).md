@@ -19,13 +19,13 @@ Return the contents as contiguous bytes in the native [`dtype`](./dtype.md).
 func asData(noCopy: Bool = false, disambiguate: Bool = false) -> Data
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: If you can guarantee the lifetime of the [`MLXArray`](../mlxarray.md) will exceed the Data and that the array will not be mutated (e.g. using indexing or other means) it is possible to pass `noCopy: true` to reference the backing bytes.
 
 **Replaced with** [`asData(access:)`](./asdata%28access%29.md)
 
-##### See Also
+### See Also
 
 - [Conversion](../conversion.md)
 - [`asArray(_:)`](./asarray%28_%29.md)

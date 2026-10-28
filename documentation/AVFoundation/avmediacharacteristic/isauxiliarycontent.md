@@ -25,7 +25,7 @@ static let isAuxiliaryContent: AVMediaCharacteristic
 extern AVMediaCharacteristic const AVMediaCharacteristicIsAuxiliaryContent;
 ```
 
-#### Discussion
+## Discussion
 
 An example of auxiliary content is audio commentary about the presentation.
 

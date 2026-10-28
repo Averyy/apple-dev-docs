@@ -24,7 +24,7 @@ class ACAccountCredential
 @interface ACAccountCredential : NSObject
 ```
 
-#### Overview
+## Overview
 
 To create an account credential that uses the OAuth open authentication standard, use the [`init(oAuthToken:tokenSecret:)`](./acaccountcredential/init%28oauthtoken,tokensecret%29-6bfyf.md) method.
 

@@ -15,7 +15,7 @@ An error a validator emits when the minimum value given isn’t numeric.
 interface MinValueNotNumericError
 ```
 
-#### Overview
+## Overview
 
 Extends `ValidationError`.
 

@@ -25,7 +25,7 @@ typealias CGFunctionEvaluateCallback = (UnsafeMutableRawPointer?, UnsafePointer<
 typedef void (*)(void *, const double *, double *) CGFunctionEvaluateCallback;
 ```
 
-#### Discussion
+## Discussion
 
 The callback you write is responsible for implementing thecalculation of output values from the supplied input values. Forexample, if you want to implement a simple “squaring” functionof one input argument to one output argument, your evaluation functionmight be:
 

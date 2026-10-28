@@ -6,16 +6,19 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.is
 
 # mlx.core.isposinf
 
-**isposinf(*a: array*, *stream: StreamOrDevice = None*) → [array](mlx.core.array.md#mlx.core.array)**
-: Return a boolean array indicating which elements are positive infinity.
+```python
+isposinf(a: array, stream: StreamOrDevice = None) → array
+```
 
-Parameters:
+Return a boolean array indicating which elements are positive infinity.
 
-**a** ([array](mlx.core.array.md#mlx.core.array)) – Input array.
-**stream** (*StreamOrDevice*) – Optional stream or device.
+**Parameters:**
 
-Returns:
-The boolean array indicating which elements are positive infinity.
+- **a** ([array](mlx.core.array.md#mlx.core.array)) – Input array.
+- **stream** (*StreamOrDevice*) – Optional stream or device.
 
-Return type:
-[array](mlx.core.array.md#mlx.core.array)
+**Returns:**
+: The boolean array indicating which elements are positive infinity.
+
+**Return type:**
+: [array](mlx.core.array.md#mlx.core.array)

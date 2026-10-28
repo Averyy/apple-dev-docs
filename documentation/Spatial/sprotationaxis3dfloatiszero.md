@@ -19,11 +19,11 @@
 static bool SPRotationAxis3DFloatIsZero(SPRotationAxis3DFloat axis);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether the rotation axis is zero.
 
-#### Discussion
+## Discussion
 
 Returns a Boolean value that indicates whether the rotation axis is zero.
 

@@ -21,7 +21,7 @@ typedef struct PhonemeDescriptor {
 } PhonemeDescriptor;
 ```
 
-#### Overview
+## Overview
 
 By calling the [`GetSpeechInfo`](./api-1552220-getspeechinfo.md) function with the `soPhonemeSymbols` selector, you can obtain a phoneme descriptor structure, which describes all phonemes defined for the current synthesizer.
 

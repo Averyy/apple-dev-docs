@@ -5,7 +5,7 @@
 
 Renew your app’s authorization when an app needs updating or when a device restores from backup.
 
-#### Overview
+## Overview
 
 If your marketplace app restricts the download of apps according to specific criteria, such as signing in, or purchasing a subscription, you issue an access token that the system includes in communication with your server. When the access token expires, the system prompts a person to sign in to retrieve a new token. This reauthentication occurs in the following situations:
 
@@ -14,7 +14,7 @@ If your marketplace app restricts the download of apps according to specific cri
 
 > **Note**: [MarketplaceKit](./MarketplaceKit.md) implements the OAuth2.0 specification for reauthentication described in [RFC 8693](https://www.rfc-editor.org/rfc/rfc8693).
 
-#### Reinstall an alternative marketplace from a backup
+## Reinstall an alternative marketplace from a backup
 
 If a person restores their device from a backup, a previously installed alternative marketplace app and its apps display as darkened placeholders on the Home Screen. When the person taps a placeholder, the system attempts to reinstall the apps beginning with the alternative marketplace. The system calls the `restores` endpoint in your `marketplace-kit` configuration file (see [Installing your app from your website](./installing-your-app-from-your-website.md)) but the communication lacks an access or bearer token. When you restrict your alternative marketplace app’s downloads to qualified users, notice the missing access token and replace it by reauthenticating the person. Respond with `HTTP` code `401` or `403` and the system instructs the person to log in by presenting a Home Screen prompt that reads:
 
@@ -94,7 +94,7 @@ In response, your token endpoint sends an access token and an optional refresh t
 
 Completion of the authentication flow authorizes the system to reinstall the app on the person’s behalf. Next, the system again calls the marketplace’s `"restores"` endpoint that the `marketplace-kit` configuration specifies. This time, the system provides the access or bearer token in the header. For more information about serving the `"restores"` request, see [Installing your app from your website](./installing-your-app-from-your-website.md).
 
-#### Reinstall an app from a backup
+## Reinstall an app from a backup
 
 After the system restores your alternative marketplace app from a backup, it proceeds to reinstall the other apps from your marketplace. The system sends a POST to your `restores` endpoint with a header decorated with the access token. Your marketplace app adds the token to the header by implementing the [`MarketplaceAppExtension`](./marketplaceappextension.md) method [`additionalHeaders(for:account:)`](./marketplaceappextension/additionalheaders%28for,account%29.md). Then, your server reads the token in the request and determines the response:
 
@@ -113,7 +113,7 @@ When your marketplace app launches, check for a missing or invalid access token.
 
 After the person signs in, store the renewed access token locally. Call [`didAuthenticate(account:)`](./applibrary/didauthenticate%28account%29.md), which instructs the system to retry the app installation. This time, your marketplace extension decorates the header of the restores endpoint POST with a renewed access token for the system to complete the reinstallation.
 
-#### Reauthenticate a person in your marketplace app or extension
+## Reauthenticate a person in your marketplace app or extension
 
 If your marketplace app is running while your marketplace server encounters an invalid access token, the system calls your extension’s [`requestFailed(response:)`](./marketplaceappextension/requestfailed%28response%29.md) implementation. In this callback, your marketplace app can correct the issue by reauthenticating the person. For example, you can set a flag to present a webpage in your app with [`ASWebAuthenticationSession`](../AuthenticationServices/aswebauthenticationsession.md) that enables the person to enter their credentials before retrying the update.
 

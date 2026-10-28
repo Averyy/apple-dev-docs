@@ -25,7 +25,7 @@ func excludes(_ category: MKPointOfInterestCategory) -> Bool
 - (BOOL) excludesCategory:(MKPointOfInterestCategory) category;
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the filter excludes the point of interest category; otherwise, `false`.
 

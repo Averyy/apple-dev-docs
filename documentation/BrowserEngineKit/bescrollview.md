@@ -23,7 +23,7 @@ class BEScrollView
 @interface BEScrollView : UIScrollView
 ```
 
-#### Overview
+## Overview
 
 Use `BEScrollView` instead of [`UIScrollView`](../UIKit/uiscrollview.md) if you need to:
 

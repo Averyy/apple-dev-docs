@@ -20,11 +20,11 @@ func fieldOrderForInput(toFilter filter: (any FxTileableEffect)!) -> FxFieldOrde
 - (FxFieldOrder) fieldOrderForInputToFilter:(id<FxTileableEffect>) filter;
 ```
 
-#### Return Value
+## Return Value
 
 An `FxFieldOrder` value `kFxFieldOrder_PROGRESSIVE`, `kFxFieldOrder_TOP_FIRST`, or `kFxFieldOrder_LOWER_FIRST`).
 
-#### Discussion
+## Discussion
 
 This method’s value refers to the field order of the input clip to which the user applies the effect, not the field order of the timeline.
 

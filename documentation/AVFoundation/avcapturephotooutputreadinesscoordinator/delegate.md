@@ -23,7 +23,7 @@ weak var delegate: (any AVCapturePhotoOutputReadinessCoordinatorDelegate)? { get
 @property (atomic, weak, nullable) id<AVCapturePhotoOutputReadinessCoordinatorDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 The capture delegate receives callbacks when the photo output’s captureReadiness changes. It calls its delegate on the main queue, which allows you to perform user interface updates directly from the delegate’s [`readinessCoordinator(_:captureReadinessDidChange:)`](../avcapturephotooutputreadinesscoordinatordelegate/readinesscoordinator%28_,capturereadinessdidchange%29.md) method.
 

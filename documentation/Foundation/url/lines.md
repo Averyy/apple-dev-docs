@@ -21,7 +21,7 @@ The URL’s resource data, as an asynchronous sequence of lines of text.
 var lines: AsyncLineSequence<URL.AsyncBytes> { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use this property with Swift’s `for`-`await`-`in` syntax, to read the contents of a URL line-by-line, like this:
 

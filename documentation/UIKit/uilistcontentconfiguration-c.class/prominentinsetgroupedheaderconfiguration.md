@@ -18,11 +18,11 @@ Creates the default configuration you use to style a prominent header in an inse
 + (instancetype) prominentInsetGroupedHeaderConfiguration;
 ```
 
-#### Return Value
+## Return Value
 
 The default configuration for a prominent header in an inset grouped list.
 
-#### Discussion
+## Discussion
 
 Create this configuration to update the content and styling of a header in a table view or collection view list.
 

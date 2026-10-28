@@ -10,7 +10,7 @@ framework: "Swift-Org/APIGuidelines"
 
 Prefer methods and properties to free functions.
 
-#### Overview
+## Overview
 
 Free functions are used only in special cases:
 

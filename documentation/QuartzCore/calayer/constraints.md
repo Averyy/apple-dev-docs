@@ -20,7 +20,7 @@ var constraints: [CAConstraint]? { get set }
 @property (copy, nullable) NSArray<CAConstraint *> * constraints;
 ```
 
-#### Discussion
+## Discussion
 
 macOS apps can use this property to access their layer-based constraints. Before constraints can be applied, you must also assign a [`CAConstraintLayoutManager`](../caconstraintlayoutmanager.md) object to the [`layoutManager`](./layoutmanager.md) property of the layer.
 

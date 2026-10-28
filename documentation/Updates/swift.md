@@ -5,13 +5,13 @@
 
 Learn about important changes to Swift.
 
-#### Overview
+## Overview
 
 Browse notable changes in [Swift](../Swift/Swift.md). For information about Swift language changes, refer to [The Swift Programming Language](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/revisionhistory).
 
-#### June 2025
+## June 2025
 
-##### Swift standard library
+### Swift standard library
 
 - Safely access contiguous regions of memory, like a container’s underlying storage, using [`Span`](../Swift/span.md) and [`RawSpan`](../Swift/rawspan.md). Safely modify that memory using [`MutableSpan`](../Swift/mutablespan.md) and [`MutableRawSpan`](../Swift/mutablerawspan.md).
 
@@ -21,9 +21,9 @@ Browse notable changes in [Swift](../Swift/Swift.md). For information about Swif
 - To identify a task during debugging, you can set a name for a detached task using [`init(name:priority:operation:)`](../Swift/task/init%28name,priority,operation%29-43wmk.md), and for a task in a task group using [`addTask(name:priority:operation:)`](../Swift/taskgroup/addtask%28name,priority,operation%29.md). Access the current task’s name using [`name`](../Swift/task/name-swift.property.md).
 - Start a task immediately using [`immediate(name:priority:executorPreference:operation:)`](../Swift/task/immediate%28name,priority,executorpreference,operation%29-9bghc.md).
 
-#### June 2024
+## June 2024
 
-##### Swift standard library
+### Swift standard library
 
 - Operate on noncontiguous ranges in collections using [`RangeSet`](../Swift/rangeset.md) and [`DiscontiguousSlice`](../Swift/discontiguousslice.md).
 - Control which executor runs a task using [`TaskExecutor`](../Swift/taskexecutor.md).

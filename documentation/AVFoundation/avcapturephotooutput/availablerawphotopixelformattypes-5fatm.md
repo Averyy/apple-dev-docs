@@ -22,7 +22,7 @@ The pixel formats the capture output supports for RAW photo capture.
 
 - [Capturing photos in RAW and Apple ProRAW formats](../capturing-photos-in-raw-and-apple-proraw-formats.md)
 
-#### Discussion
+## Discussion
 
 To capture a photo in RAW format, use the [`init(rawPixelFormatType:)`](../avcapturephotosettings/init%28rawpixelformattype%29.md) or [`init(rawPixelFormatType:processedFormat:)`](../avcapturephotosettings/init%28rawpixelformattype,processedformat%29.md) initializer to create your photo settings object. The value for that initializer’s `rawPixelFormatType` parameter must be one of the Bayer RAW format identifiers listed in this array.
 

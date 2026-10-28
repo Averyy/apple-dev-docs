@@ -22,11 +22,11 @@ nonisolated
 func clipShape<S>(_ shape: S, style: FillStyle = FillStyle()) -> some View where S : Shape
 ```
 
-#### Return Value
+## Return Value
 
 A view that clips this view to `shape`, using `style` to define the shape’s rasterization.
 
-#### Discussion
+## Discussion
 
 Use `clipShape(_:style:)` to clip the view to the provided shape. By applying a clipping shape to a view, you preserve the parts of the view covered by the shape, while eliminating other parts of the view. The clipping shape itself isn’t visible.
 

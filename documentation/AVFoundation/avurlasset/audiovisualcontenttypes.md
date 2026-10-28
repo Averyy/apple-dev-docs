@@ -25,7 +25,7 @@ class var audiovisualContentTypes: [UTType] { get }
 @property (class, copy, readonly) NSArray<UTType *> * audiovisualContentTypes;
 ```
 
-#### Return Value
+## Return Value
 
 An NSArray of UTTypes identifying the content types the AVURLAsset class understands.
 

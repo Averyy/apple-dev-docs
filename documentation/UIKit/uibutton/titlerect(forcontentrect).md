@@ -25,7 +25,7 @@ func titleRect(forContentRect contentRect: CGRect) -> CGRect
 - (CGRect) titleRectForContentRect:(CGRect) contentRect;
 ```
 
-#### Return Value
+## Return Value
 
 The rectangle in which the receiver draws its title.
 

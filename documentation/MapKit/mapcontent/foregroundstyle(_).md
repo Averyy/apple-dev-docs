@@ -22,7 +22,7 @@ Specifies the shape style used to fill content in drawing map overlays.
 @preconcurrency func foregroundStyle(_ content: some ShapeStyle) -> some MapContent
 ```
 
-#### Return Value
+## Return Value
 
 Returns [`MapContent`](../mapcontent.md) with the foreground style you specified.
 

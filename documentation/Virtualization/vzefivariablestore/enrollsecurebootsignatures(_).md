@@ -19,7 +19,7 @@ func enrollSecureBootSignatures(_ signatures: VZEFISignatureDatabaseConfiguratio
 - (BOOL) enrollSecureBootSignatures:(VZEFISignatureDatabaseConfiguration *) signatures error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 > ⚠️ **Warning**: Make sure that the given Secure Boot signatures are valid before enabling Secure Boot, otherwise it may render the guest unbootable.
 

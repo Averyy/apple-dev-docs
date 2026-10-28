@@ -23,7 +23,7 @@ struct ByteCount
 
 Available when `UnitType` is `UnitInformationStorage`.
 
-#### Overview
+## Overview
 
 Use the [`attributed`](../formatstyle/bytecount/attributed.md) modifier on a [`Measurement.FormatStyle.ByteCount`](../formatstyle/bytecount.md) instance to create a format style of this type.
 

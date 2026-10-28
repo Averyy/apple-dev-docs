@@ -15,7 +15,7 @@ A protocol that defines methods for handling notification life cycle events in y
 protocol AccessoryNotificationsHandler : Sendable
 ```
 
-#### Overview
+## Overview
 
 Implement this protocol in your app’s [`didActivate(for:)`](./accessorynotificationshandler/didactivate%28for%29.md) extension to receive, update, and remove notifications forwarded to your accessory.
 

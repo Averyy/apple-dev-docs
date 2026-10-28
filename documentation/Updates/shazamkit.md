@@ -5,11 +5,11 @@
 
 Learn about important changes in ShazamKit.
 
-#### Overview
+## Overview
 
 Browse notable changes in [ShazamKit](../ShazamKit/ShazamKit.md).
 
-#### June 2024
+## June 2024
 
 - Use [`SHManagedSession`](../ShazamKit/shmanagedsession.md) across threads since it now conforms to `Sendable`.
 - Use the new [`dataRepresentation`](../ShazamKit/shcustomcatalog/datarepresentation.md) property in the [`SHCustomCatalog`](../ShazamKit/shcustomcatalog.md) class to get the contents of a catalog.

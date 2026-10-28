@@ -24,7 +24,7 @@ var intervalUnit: NSCalendar.Unit { get set }
 @property (nonatomic, assign) NSCalendarUnit intervalUnit;
 ```
 
-#### Discussion
+## Discussion
 
 The default value for the interval unit is [`month`](../../Foundation/nscalendar/unit/month.md).
 

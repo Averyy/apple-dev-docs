@@ -13,7 +13,7 @@
 kIONetworkFeatureTSOIPv6 = 0x020
 ```
 
-#### Discussion
+## Discussion
 
 Set this bit to advertise support for TCP/IPv6 segmentation offload.
 

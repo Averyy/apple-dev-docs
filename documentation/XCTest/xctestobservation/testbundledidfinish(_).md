@@ -16,7 +16,7 @@ optional func testBundleDidFinish(_ testBundle: Bundle)
 - (void) testBundleDidFinish:(NSBundle *) testBundle;
 ```
 
-#### Discussion
+## Discussion
 
 This method provides a customization point for any post-testing activity. The test process will generally exit after this method returns, so if there is long running and/or asynchronous work to be done after testing, be sure to implement this method in a way that blocks until all long running activity is complete.
 

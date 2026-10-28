@@ -27,7 +27,7 @@ var sequence_descriptor: BNNSNDArrayDescriptor
 BNNSNDArrayDescriptor sequence_descriptor;
 ```
 
-#### Discussion
+## Discussion
 
 If [`seq_len`](./seq_len.md) is greater than `1` and the [`data`](../bnnsndarraydescriptor/data.md) property of this descriptor is `nil`, BNNS uses the same [`batch_size`](./batch_size.md) for the entire sequence.
 

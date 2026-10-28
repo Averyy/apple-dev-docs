@@ -16,7 +16,7 @@ object UnlimitedResponseAsset
 
 - [Managing assets](./managing-assets.md)
 
-#### Overview
+## Overview
 
 The server returns this object in the `unlimitedAssets` array of [`GetAssetsResponse`](./getassetsresponse.md) when the `unlimited` query parameter is set to `true`. This object omits the `availableCount`, `totalCount`, and `retiredCount` fields, which don’t apply to unlimited licenses.
 

@@ -21,7 +21,7 @@ class var controlAlternatingRowBackgroundColors: [NSColor] { get }
 @property (class, strong, readonly) NSArray<NSColor *> * controlAlternatingRowBackgroundColors;
 ```
 
-#### Return Value
+## Return Value
 
 An array of `NSColor` objects specifying the system colors used for rows in tables and lists. You should not assume the array will contain only two colors. For more information, see [`NSColor`](../nscolor.md).
 

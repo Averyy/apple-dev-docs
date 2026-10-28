@@ -19,7 +19,7 @@ static let acousticSettings: SRSensor
 extern SRSensor const SRSensorAcousticSettings;
 ```
 
-#### Discussion
+## Discussion
 
 Sensor stream for Acoustic Settings
 

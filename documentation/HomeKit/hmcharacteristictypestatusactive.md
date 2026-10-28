@@ -24,7 +24,7 @@ let HMCharacteristicTypeStatusActive: String
 extern NSString * const HMCharacteristicTypeStatusActive;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is a Boolean. A value of `true` indicates the service is working.
 

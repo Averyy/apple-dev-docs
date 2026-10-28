@@ -17,13 +17,13 @@ The payload that configures access point names.
 object APN
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.apn.managed` as the payload type.
 
 This profile is deprecated. Use the [`Cellular`](./cellular.md) profile instead.
 
-##### Profile availability
+### Profile availability
 
 |  |  |
 | --- | --- |

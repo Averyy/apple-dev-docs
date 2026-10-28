@@ -19,7 +19,7 @@ The button style your app uses when running in macOS.
 enum MacIdiomStyle
 ```
 
-#### Overview
+## Overview
 
 If you build your app with [Mac Catalyst](../../mac-catalyst.md), you can use these styles to configure how your app displays a button when running on a Mac. To opt in to these styles, choose Optimize Interface for Mac in you project’s general settings.
 

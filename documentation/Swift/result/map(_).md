@@ -23,11 +23,11 @@ func map<NewSuccess>(_ transform: (Success) -> NewSuccess) -> Result<NewSuccess,
 
 Available when `Failure` conforms to `Error`.
 
-#### Return Value
+## Return Value
 
 A `Result` instance with the result of evaluating `transform` as the new success value if this instance represents a success.
 
-#### Discussion
+## Discussion
 
 Use this method when you need to transform the value of a `Result` instance when it represents a success. The following example transforms the integer success value of a result into a string:
 

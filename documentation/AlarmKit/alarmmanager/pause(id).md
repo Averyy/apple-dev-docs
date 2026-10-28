@@ -17,7 +17,7 @@ Pauses the alarm with the specified ID if it’s in the countdown state.
 func pause(id: Alarm.ID) throws
 ```
 
-#### Discussion
+## Discussion
 
 The function throws otherwise. Sets the alarm to the [`AlarmPresentationState.Mode.paused(_:)`](../alarmpresentationstate/mode-swift.enum/paused%28_%29.md) state.
 

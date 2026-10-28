@@ -25,7 +25,7 @@ func cancelRequest(withError error: any Error)
 - (void) cancelRequestWithError:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 On return, the `userInfo` dictionary of the [`NSError`](../nserror.md) object contains a key named [`NSExtensionItemsAndErrorsKey`](../nsextensionitemsanderrorskey.md) which has as its value a dictionary of [`NSExtensionItem`](../nsextensionitem.md) objects and associated [`NSError`](../nserror.md) instances.
 

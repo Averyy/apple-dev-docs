@@ -21,7 +21,7 @@ var highlightGroups: [TVMediaItem.HighlightGroup] { get }
 @property (nonatomic, strong, readonly) NSArray<TVHighlightGroup *> * highlightGroups;
 ```
 
-#### Discussion
+## Discussion
 
 The `highlightGroups` property enables you to show several groups [`highlights`](./highlightgroup/highlights.md) from a stream. Each highlight group in the array contains a list of highlights. Each highlight is an object with the following properties: [`highlightDescription`](./highlight/highlightdescription.md), [`localizedName`](./highlight/localizedname.md), [`imageURL`](./highlight/imageurl.md), and [`TVMediaItem.TimeRange`](./timerange.md).
 

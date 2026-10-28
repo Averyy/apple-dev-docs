@@ -24,7 +24,7 @@ optional func applicationWillEnterForeground()
 - [Handling Common State Transitions](../handling-common-state-transitions.md)
 - [Working with the watchOS app life cycle](../working-with-the-watchos-app-life-cycle.md)
 
-#### Discussion
+## Discussion
 
 The system calls this method when the app transitions from the background to the foreground. Override this method to undo many of the changes you made to your app upon entering the background. The call to this method is invariably followed by a call to the [`applicationDidBecomeActive()`](./applicationdidbecomeactive%28%29.md) method, as the app moves from the inactive to the active state.
 

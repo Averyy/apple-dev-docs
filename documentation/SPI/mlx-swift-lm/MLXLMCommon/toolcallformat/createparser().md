@@ -17,7 +17,7 @@ Create the appropriate parser for this format.
 func createParser() -> any ToolCallParser
 ```
 
-#### Return Value
+## Return Value
 
 A parser instance configured for this format
 

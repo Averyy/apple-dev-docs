@@ -12,7 +12,7 @@ virtual void taggedRelease(
  const void *tag) const;
 ```
 
-#### Overview
+## Overview
 
 Because OSSymbol shares instances, the reference-counting functions must synchronize access to the class-internal tables used to track those instances.
 

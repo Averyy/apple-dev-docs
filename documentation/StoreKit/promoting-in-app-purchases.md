@@ -5,7 +5,7 @@
 
 Show promoted Apple In-App Purchases on your product page and handle purchases that customers initiate on the App Store.
 
-#### Overview
+## Overview
 
 Starting in iOS 11, you can promote Apple In-App Purchases on the App Store.
 
@@ -26,7 +26,7 @@ For marketing guidance on this feature, see [Promoting Your Apple In-App Purchas
 
 > **Note**:  Promoted Apple In-App Purchases aren’t available to compatible iPad or iPhone apps running in visionOS.
 
-##### Complete the purchase in the app
+### Complete the purchase in the app
 
 When a user selects an in-app product to purchase on the App Store, StoreKit automatically opens your app and sends the transaction information to the delegate in the [`SKPaymentTransactionObserver`](./skpaymenttransactionobserver.md) protocol. Your app needs to complete the purchase transaction and any related actions that are specific to it.
 
@@ -34,7 +34,7 @@ In the delegate method, return `true` to continue the transaction, or `false` to
 
 If your app isn’t installed when the user selects to purchase the in-app product, the App Store automatically downloads the app or prompts the user to purchase it. If the installed version of your app is an older version that doesn’t support Apple In-App Purchase promotions, the App Store prompts the user to upgrade the app.
 
-##### Continue the transaction
+### Continue the transaction
 
 To continue an Apple In-App Purchase transaction, implement the delegate method in the [`SKPaymentTransactionObserver`](./skpaymenttransactionobserver.md) protocol and return `true`. StoreKit then displays the payment sheet, and the user can complete the transaction.
 
@@ -51,7 +51,7 @@ func paymentQueue(_ queue: SKPaymentQueue, shouldAddStorePayment payment: SKPaym
 }
 ```
 
-##### Defer or cancel the transaction
+### Defer or cancel the transaction
 
 If your app needs to defer or cancel a transaction, return `false`. For example, you may need to defer a transaction if the user is in the middle of onboarding, and continue it after they complete the onboarding. Or, you may need to cancel a transaction if the user has already unlocked the product they’re trying to buy.
 
@@ -96,7 +96,7 @@ func paymentQueue(_ queue: SKPaymentQueue, shouldAddStorePayment payment: SKPaym
 SKPaymentQueue.default().add(savedPayment)
 ```
 
-##### Get visibility settings
+### Get visibility settings
 
 To get the visibility settings for a promoted product, call [`fetchStorePromotionVisibility(for:completionHandler:)`](./skproductstorepromotioncontroller/fetchstorepromotionvisibility%28for,completionhandler%29.md), providing the product information.
 
@@ -112,7 +112,7 @@ storePromotionController.fetchStorePromotionVisibility(forProduct: hiddenBeaches
 })
 ```
 
-##### Override visibility settings
+### Override visibility settings
 
 For each device, you can decide whether to make Apple In-App Purchases visible or hidden. For example, you may want to hide products the customer already purchased, and show only the products they can buy.
 
@@ -128,7 +128,7 @@ storePromotionController.update(storePromotionVisibility: .hide, for: proSubscri
     })
 ```
 
-##### Override the order of promoted products
+### Override the order of promoted products
 
 You can customize the promoted Apple In-App Purchases on each device by overriding their default order. Use overrides to show promotions that are relevant to the user. For example, you can override the order to promote an Apple In-App Purchase that unlocks a level in your game when a user reaches the preceding level.
 
@@ -148,11 +148,11 @@ storePromotionController.updateStorePromotionOrder(newProductsOrder,
     })
 ```
 
-##### Cancel order overrides
+### Cancel order overrides
 
 To remove overrides and use the default promotion order, send an empty product array to the [`update(storePromotionOrder:completionHandler:)`](./skproductstorepromotioncontroller/update%28storepromotionorder,completionhandler%29.md) method. The App Store then displays the promoted Apple In-App Purchase products in the default order that you set in App Store Connect.
 
-##### Fetch order overrides
+### Fetch order overrides
 
 To get the product promotion order for the device, call [`fetchStorePromotionOrder(completionHandler:)`](./skproductstorepromotioncontroller/fetchstorepromotionorder%28completionhandler%29.md). This method returns an array of products that have an overridden order. If you get an empty array, there aren’t any overrides and the products are in the default order.
 

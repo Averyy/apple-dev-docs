@@ -19,7 +19,7 @@ weak var delegate: (any NSTextSelectionManager.Delegate)? { get set }
 @property (weak, nullable) id<NSTextSelectionManagerDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate is responsible for storing the current text selection and responding to selection-related events.
 

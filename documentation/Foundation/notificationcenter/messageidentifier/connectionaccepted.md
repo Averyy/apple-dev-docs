@@ -23,7 +23,7 @@ static var connectionAccepted: NotificationCenter.BaseMessageIdentifier<FileHand
 
 Available when `Self` is `NotificationCenter.BaseMessageIdentifier<FileHandle.ConnectionAcceptedMessage>`.
 
-#### Discussion
+## Discussion
 
 Use this identifier with [`NotificationCenter`](../../notificationcenter.md)’s `addObserver(of:for:using:)` or `messages(of:for:bufferSize:)` methods to observe messages of type [`FileHandle.ConnectionAcceptedMessage`](../../filehandle/connectionacceptedmessage.md).
 

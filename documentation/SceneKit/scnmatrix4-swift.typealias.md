@@ -25,7 +25,7 @@ typealias SCNMatrix4 = CATransform3D
 typedef CATransform3D SCNMatrix4;
 ```
 
-#### Discussion
+## Discussion
 
 SceneKit uses matrices to represent coordinate space transformations, which in turn can represent the combined position, rotation or orientation, and scale of an object in three-dimensional space.
 

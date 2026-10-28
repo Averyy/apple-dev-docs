@@ -24,7 +24,7 @@ var kAudioUnitProperty_MeterClipping: AudioUnitPropertyID { get }
 kAudioUnitProperty_MeterClipping
 ```
 
-#### Discussion
+## Discussion
 
 A read-only [`AudioUnitMeterClipping`](./audiounitmeterclipping.md) data structure valid on the audio unit global scope.
 

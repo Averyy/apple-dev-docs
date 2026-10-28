@@ -19,7 +19,7 @@ var cpuCount: Int { get set }
 @property (readwrite) NSUInteger CPUCount;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property must be greater than or equal to the value in [`minimumAllowedCPUCount`](./minimumallowedcpucount.md), and less than or equal to the value in [`maximumAllowedCPUCount`](./maximumallowedcpucount.md). The system uses the number of physical CPUs on the current system to determine a default value.
 

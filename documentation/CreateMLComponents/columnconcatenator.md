@@ -21,7 +21,7 @@ A transformer that concatenates every numerical column in a dataframe into to a 
 struct ColumnConcatenator<Scalar> where Scalar : MLShapedArrayScalar, Scalar : BinaryFloatingPoint
 ```
 
-#### Overview
+## Overview
 
 The resulting concatenated column contains `MLShapedArray<Scalar>` elements. For example
 

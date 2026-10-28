@@ -24,11 +24,11 @@ class func nameOrder(for contact: CNContact) -> CNContactDisplayNameOrder
 + (CNContactDisplayNameOrder) nameOrderForContact:(CNContact *) contact;
 ```
 
-#### Return Value
+## Return Value
 
 The display order to use when combining the given name and family name components.
 
-#### Discussion
+## Discussion
 
 For more information about display name orders, see [`CNContactDisplayNameOrder`](../cncontactdisplaynameorder.md).
 

@@ -27,7 +27,7 @@ func BNNSFilterCreateLayerTensorContraction(_ layer_params: UnsafePointer<BNNSLa
 BNNSFilterBNNSFilterCreateLayerTensorContraction(const BNNSLayerParametersTensorContraction *layer_params, const BNNSFilterParameters *filter_params);
 ```
 
-#### Discussion
+## Discussion
 
 A tensor contraction is the summation of the elements of two tensors over one or more indices. BNNS represents this in the `operation` parameter of a [`BNNSLayerParametersTensorContraction`](./bnnslayerparameterstensorcontraction.md) structure as a string using Einstein’s summation convention.
 
@@ -71,7 +71,7 @@ A `“*”` on one side only matches indices represent by a `“*”` on the oth
 
 Note that where contraction matches index letters, the sizes of the corresponding dimensions for the tensors must also match, unless one tensor has size 1. In that case the operation repeats (broadcasts) to match the corresponding dimension.
 
-##### Perform a Tensor Contraction
+### Perform a Tensor Contraction
 
 The following code performs a tensor contraction over two 2 x 1 row-major matrices, writing the result to a 2 x 2 row-major matrix.
 

@@ -20,7 +20,7 @@ var kMEFormatReaderExtensionPointName: String { get }
 #define kMEFormatReaderExtensionPointName
 ```
 
-#### Discussion
+## Discussion
 
 The value for this string is `com.apple.mediaextension.formatreader`.
 

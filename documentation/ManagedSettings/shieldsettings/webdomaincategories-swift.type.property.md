@@ -17,7 +17,7 @@ The metadata for the configuration that specifies categories of websites for the
 static let webDomainCategories: SettingMetadata<ShieldSettings.ActivityCategoryPolicy<WebDomain>>
 ```
 
-#### Discussion
+## Discussion
 
 Use `webDomainCategories` to access the metadata for [`webDomainCategories`](./webdomaincategories-swift.property.md). The default value is [`ShieldSettings.ActivityCategoryPolicy.none`](./activitycategorypolicy/none.md).
 

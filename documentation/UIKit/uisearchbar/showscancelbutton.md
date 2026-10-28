@@ -22,7 +22,7 @@ var showsCancelButton: Bool { get set }
 @property (nonatomic) BOOL showsCancelButton;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the cancel button is displayed if the app is running on iPhone. The value of this property is ignored, and no cancel button is displayed, for apps running on iPad. The default value is [`false`](../../Swift/false.md).
 

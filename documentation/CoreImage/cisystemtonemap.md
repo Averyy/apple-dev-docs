@@ -24,7 +24,7 @@ protocol CISystemToneMap : CIFilterProtocol
 @protocol CISystemToneMap <CIFilter>
 ```
 
-#### Overview
+## Overview
 
 Apply a global tone curve to an image that reduces colors of the input image to a desired dynamic range consistent with other frameworks.
 

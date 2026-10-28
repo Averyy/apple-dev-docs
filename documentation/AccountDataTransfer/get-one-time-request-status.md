@@ -9,7 +9,7 @@ Find the status of a one-time download request.
 **Availability**:
 - Account Data Transfer 1.0+
 
-#### Overview
+## Overview
 
 **Request**:
 

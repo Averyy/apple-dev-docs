@@ -21,11 +21,11 @@ Exports this entity’s content as an `IntentFile`.
 func exported(as contentType: UTType? = nil) async throws -> IntentFile
 ```
 
-#### Return Value
+## Return Value
 
 The exported content as an `IntentFile`.
 
-#### Discussion
+## Discussion
 
 When no content type is specified, the entity’s first registered `TransferRepresentation` is used.
 

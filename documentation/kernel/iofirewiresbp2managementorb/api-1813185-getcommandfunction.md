@@ -12,11 +12,11 @@ virtual OSObject* getManageeCommand(
  void );
 ```
 
-#### Return Value
+## Return Value
 
 Returns the current managee command of the management ORB.
 
-#### Overview
+## Overview
 
 Returns the current managee command of the management ORB. This is the same value that was set with setManageeCommand.
 

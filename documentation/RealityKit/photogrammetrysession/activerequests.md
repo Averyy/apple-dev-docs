@@ -18,7 +18,7 @@ The session’s active request objects.
 var activeRequests: [PhotogrammetrySession.Request] { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property provides read-only access to the requests that the session actively processes.
 

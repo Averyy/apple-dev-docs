@@ -35,7 +35,7 @@ func setDefaultLeaderboardIdentifier(_ leaderboardIdentifier: String) async thro
 
 - [Encourage progress and competition with leaderboards](../encourage-progress-and-competition-with-leaderboards.md)
 
-#### Discussion
+## Discussion
 
 Until you change the default leaderboard for a player, it is the same as the default leaderboard for your game that you set in App Store Connect.
 

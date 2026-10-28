@@ -21,7 +21,7 @@ Returns a new Euler angles structure from three angle structures.
 init(x: Angle2DFloat, y: Angle2DFloat, z: Angle2DFloat, order: EulerAngles.Order)
 ```
 
-#### Discussion
+## Discussion
 
 - Parameter x The first angle.
 - Parameter y The second angle.

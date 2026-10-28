@@ -24,11 +24,11 @@ class func monospacedSystemFont(ofSize fontSize: CGFloat, weight: UIFont.Weight)
 + (UIFont *) monospacedSystemFontOfSize:(CGFloat) fontSize weight:(UIFontWeight) weight;
 ```
 
-#### Return Value
+## Return Value
 
 A font object of the specified size.
 
-#### Discussion
+## Discussion
 
 This method provides the same font as the [`monospaced`](../uifontdescriptor/systemdesign/monospaced.md) system font descriptor. For design guidance, see [Typography](https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/typography/) in the Human Interface Guidelines.
 

@@ -16,7 +16,7 @@ Increments the assertion's retain count.
 void IOPMAssertionRetain(IOPMAssertionID theAssertion);
 ```
 
-#### Discussion
+## Discussion
 
 Increments the retain count according to CoreFoundation style retain/release semantics. Retain count can be inspected in the assertion's info dictionary at key [`kIOPMAssertionRetainCountKey`](./kiopmassertionretaincountkey.md)
 

@@ -24,7 +24,7 @@ var rate: Float { get }
 @property (nonatomic, readonly) float rate;
 ```
 
-#### Discussion
+## Discussion
 
 This value is always nonzero.
 

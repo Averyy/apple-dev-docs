@@ -15,7 +15,7 @@ A Boolean value that indicates whether the subscription-renewal-date extension s
 boolean success
 ```
 
-#### Discussion
+## Discussion
 
 If this value is `true`, the renewal date for the subscription is extended.
 

@@ -5,7 +5,7 @@
 
 Identify topics, actions, objects, and emotions in input text with a content tagging model.
 
-#### Overview
+## Overview
 
 The Foundation Models framework provides an adapted on-device system language model that specializes in content tagging. A content tagging model produces a list of categorizing tags based on the input text you provide. When you prompt the content tagging model, it produces a tag that uses one to a few lowercase words. The model finds the similarity between the terms in your prompt so tags are semantically consistent. For example, the model produces the topic tag “greet” when it encounters words such as “hi,” “hello,” and “yo”. Use the content tagging model to:
 
@@ -16,7 +16,7 @@ The Foundation Models framework provides an adapted on-device system language mo
 
 If you’re tagging content that’s not an action, object, emotion, or topic, use [`general`](./systemlanguagemodel/usecase/general.md) instead. Use the general model to generate content like hashtags for social media posts. If you adopt the tool calling API, and want to generate tags, use [`general`](./systemlanguagemodel/usecase/general.md) and pass the [`Tool`](./tool.md) output to the content tagging model. For more information about tool-calling, see [Expanding generation with tool calling](./expanding-generation-with-tool-calling.md).
 
-#### Provide instructions to the model
+## Provide instructions to the model
 
 The content tagging model isn’t a typical language model that responds to a query from a person: instead, it evaluates and groups the input you provide. For example, if you ask the model questions, it produces tags about asking questions. Before you prompt the model, consider the instructions you want it to follow: instructions to the the model produce a more precise outcome than instructions in the prompt.
 
@@ -37,7 +37,7 @@ You don’t need to provide a lot of custom tagging instructions; the content ta
 
 > **Note**: For very short input queries, topic and emotion tagging instructions provide the best results. Actions or object lists will be too specific, and may repeat the words in the query.
 
-#### Create a generable type
+## Create a generable type
 
 The content tagging model supports [`Generable`](./generable.md), so you can define a custom data type that the model uses when generating a response. Use [`maximumCount(_:)`](./generationguide/maximumcount%28_%29.md) on your generable type to enforce a maximum number of tags that you want the model to return. The code below uses [`Generable`](./generable.md) guide descriptions to specify the kinds and quantities of tags the model produces:
 
@@ -78,7 +78,7 @@ If you have a complex set of constraints on tagging that are more complicated th
 
 For more information on guided generation, see [Generating Swift data structures with guided generation](./generating-swift-data-structures-with-guided-generation.md).
 
-#### Generate a content tagging response
+## Generate a content tagging response
 
 Initialize your session by using the [`contentTagging`](./systemlanguagemodel/usecase/contenttagging.md) model:
 

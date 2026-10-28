@@ -17,7 +17,7 @@ The quantized flavor of [`AllToShardedLinear`](./alltoshardedlinear.md).
 class QuantizedAllToShardedLinear
 ```
 
-#### Overview
+## Overview
 
 Like [`QuantizedLinear`](./quantizedlinear.md) its parameters are frozen.
 

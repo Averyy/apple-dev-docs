@@ -12,7 +12,7 @@ A condition that limits the application of a build setting.
 struct BuildSettingCondition
 ```
 
-#### Overview
+## Overview
 
 By default, build settings are applicable for all platforms and build configurations. Use the `.when` modifier to define a build setting for a specific condition. Invalid usage of `.when` emits an error during manifest parsing. For example, it’s invalid to specify a `.when` condition with both parameters as `nil`.
 

@@ -15,7 +15,7 @@ An error indicating the transport failed but may recover.
 case transportFailed
 ```
 
-#### Discussion
+## Discussion
 
 The system retries message delivery when you return this error.
 

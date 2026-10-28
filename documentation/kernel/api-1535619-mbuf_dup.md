@@ -13,11 +13,11 @@
 errno_t mbuf_dup(const mbuf_t src, mbuf_how_t how, mbuf_t *new_mbuf);
 ```
 
-#### Return Value
+## Return Value
 
 0 upon success otherwise the errno error.
 
-#### Discussion
+## Discussion
 
 Exactly duplicates an mbuf chain. If the original mbuf contains a packet header (including tags), the new mbuf will have the same packet header contents and a copy of each tag associated with the original mbuf.
 

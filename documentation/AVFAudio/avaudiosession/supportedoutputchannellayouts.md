@@ -22,7 +22,7 @@ var supportedOutputChannelLayouts: [AVAudioChannelLayout] { get }
 @property (readonly) NSArray<AVAudioChannelLayout *> * supportedOutputChannelLayouts;
 ```
 
-#### Discussion
+## Discussion
 
 The possible channel layouts for this property are:
 

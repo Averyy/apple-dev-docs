@@ -24,7 +24,7 @@ func JSObjectMakeFunctionWithCallback(_ ctx: JSContextRef!, _ name: JSStringRef!
 JSObjectRefJSObjectMakeFunctionWithCallback(JSContextRef ctx, JSStringRef name, JSObjectCallAsFunctionCallback callAsFunction);
 ```
 
-#### Return Value
+## Return Value
 
 A [`JSObjectRef`](./jsobjectref.md) that is a function. The object’s prototype is the default function prototype.
 

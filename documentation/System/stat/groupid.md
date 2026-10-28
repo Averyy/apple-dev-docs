@@ -21,7 +21,7 @@ Group ID of owner
 var groupID: GroupID { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding C property is `st_gid`.
 

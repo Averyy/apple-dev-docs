@@ -22,7 +22,7 @@ static let useDropFrameTimeCode: AVCaptionSettingsKey
 extern AVCaptionSettingsKey const AVCaptionUseDropFrameTimeCodeKey;
 ```
 
-#### Discussion
+## Discussion
 
 Some formats, such as SCC, use time code notation to indicate the timing of a caption. Use the property to specify whether the system uses the drop frame time code or non-drop frame time code.
 

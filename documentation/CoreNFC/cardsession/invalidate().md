@@ -17,7 +17,7 @@ Invalidates the current card emulation session.
 func invalidate()
 ```
 
-#### Discussion
+## Discussion
 
 This call stops any currently-running card emulation.
 

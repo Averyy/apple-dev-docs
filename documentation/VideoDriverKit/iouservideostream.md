@@ -15,7 +15,7 @@ A video stream.
 class IOUserVideoStream;
 ```
 
-#### Overview
+## Overview
 
 [`IOUserVideoDevice`](./iouservideodevice.md) instances own [`IOUserVideoStream`](./iouservideostream.md) instances. [`IOUserVideoStream`](./iouservideostream.md) allocates memory descriptors that the host uses for running IO. Changes to the owning [`IOUserVideoDevice`](./iouservideodevice.md) will potentially update formats on the underlying [`IOUserVideoStream`](./iouservideostream.md).
 

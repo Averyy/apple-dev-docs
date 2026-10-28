@@ -25,7 +25,7 @@ var wantsDepthOfField: Bool { get set }
 @property (nonatomic) BOOL wantsDepthOfField;
 ```
 
-#### Discussion
+## Discussion
 
 This value is [`false`](../../Swift/false.md) by default, disabling depth-of-field effects.
 

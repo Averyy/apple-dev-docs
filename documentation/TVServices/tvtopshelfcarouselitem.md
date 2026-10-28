@@ -19,7 +19,7 @@ class TVTopShelfCarouselItem
 @interface TVTopShelfCarouselItem : TVTopShelfItem
 ```
 
-#### Overview
+## Overview
 
 A [`TVTopShelfCarouselItem`](./tvtopshelfcarouselitem.md) object offers a more dynamic way to present your content than section-based items. When a carousel item first appears, it displays either a static image or a short looping video as its background. When the navigation focus stops on the item, the system plays the video in the item’s [`previewVideoURL`](./tvtopshelfcarouselitem/previewvideourl.md) property.
 

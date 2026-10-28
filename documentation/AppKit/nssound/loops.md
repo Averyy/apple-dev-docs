@@ -19,7 +19,7 @@ var loops: Bool { get set }
 @property BOOL loops;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the sounds restarts playback when it finishes and does not send [`sound(_:didFinishPlaying:)`](../nssounddelegate/sound%28_,didfinishplaying%29.md) to its delegate when it reaches the end of its content and restarts playback. The default value of this property is [`false`](../../Swift/false.md).
 

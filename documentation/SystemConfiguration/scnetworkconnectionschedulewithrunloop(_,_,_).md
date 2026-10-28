@@ -19,7 +19,7 @@ func SCNetworkConnectionScheduleWithRunLoop(_ connection: SCNetworkConnection, _
 Boolean SCNetworkConnectionScheduleWithRunLoop(SCNetworkConnectionRef connection, CFRunLoopRef runLoop, CFStringRef runLoopMode);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if the connection is scheduled successfully; `FALSE` (use the [`SCError()`](./scerror%28%29.md) function to retrieve the specific error).
 

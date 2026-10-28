@@ -22,7 +22,7 @@ optional func beginInterruption()
 - (void) beginInterruption;
 ```
 
-#### Discussion
+## Discussion
 
 By the time this interruption arrives, your audio has already stopped. Your application may be suspended or terminated following an interruption—for example, if a user chooses to take an incoming phone call. Use this method to adjust the user interface, and to save application state, as necessary.
 

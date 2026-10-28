@@ -24,7 +24,7 @@ func selection(from startPage: PDFPage, atCharacterIndex startCharacter: Int, to
 - (PDFSelection *) selectionFromPage:(PDFPage *) startPage atCharacterIndex:(NSUInteger) startCharacter toPage:(PDFPage *) endPage atCharacterIndex:(NSUInteger) endCharacter;
 ```
 
-#### Discussion
+## Discussion
 
 The selection begins at `startChar` on `startPage` and ends at `endChar` on `endPage`. The starting and ending index values must be in the range of the number of characters (as returned by [`numberOfCharacters`](../pdfpage/numberofcharacters.md)) within the respective `PDFPage` objects.
 

@@ -31,7 +31,7 @@ var signature: String { get }
 
 - [Implementing promotional offers in your app](../implementing-promotional-offers-in-your-app.md)
 
-#### Discussion
+## Discussion
 
 The [`signature`](./signature.md) is a string signed with your private key that represents the properties of a specific promotional offer. To keep your private key secure, generate the [`signature`](./signature.md) on a server.
 

@@ -18,7 +18,7 @@ Returns the registry properties associated with the current service.
 virtual kern_return_t CopyProperties(OSDictionary **properties);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../error-codes.md).
 

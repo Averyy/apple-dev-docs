@@ -20,7 +20,7 @@ A mode which pulls the joint in the direction of the set position target.
 case poleVector
 ```
 
-#### Discussion
+## Discussion
 
 You can use this in cases like a knee joint being pulled forward for bend direction control.
 

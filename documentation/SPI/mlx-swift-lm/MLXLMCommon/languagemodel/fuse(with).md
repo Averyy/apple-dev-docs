@@ -17,7 +17,7 @@ Fuses an adapter permanently into the model.
 func fuse(with adapter: ModelAdapter) throws
 ```
 
-#### Discussion
+## Discussion
 
 Example:
 

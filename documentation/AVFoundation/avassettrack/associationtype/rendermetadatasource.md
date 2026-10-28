@@ -25,7 +25,7 @@ static let renderMetadataSource: AVAssetTrack.AssociationType
 extern AVTrackAssociationType const AVTrackAssociationTypeRenderMetadataSource;
 ```
 
-#### Discussion
+## Discussion
 
 This track association is not symmetric; when used with -[AVAssetWriterInput addTrackAssociationWithTrackOfInput:type:], the receiver should be an instance of AVAssetWriterInput with mediaType, AVMediaTypeMetadata, while the input parameter should be an instance of AVAssetWriterInput for the target track that would be rendered (for example, a video track).
 

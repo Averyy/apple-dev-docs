@@ -24,7 +24,7 @@ var center: CGPoint { get set }
 @property (nonatomic, readwrite) CGPoint center;
 ```
 
-#### Discussion
+## Discussion
 
 The dynamic animator (that the item is associated with) calls this method when it has computed a new center point for the item.
 

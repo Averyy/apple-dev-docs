@@ -18,7 +18,7 @@ The metadata provider this log handler uses when a log statement is about to be 
 var metadataProvider: Logger.MetadataProvider? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 A [`Logger.MetadataProvider`](../logger/metadataprovider-swift.struct.md) may add a constant set of metadata, or use task-local values to pick up contextual metadata and add it to emitted logs.
 

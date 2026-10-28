@@ -24,7 +24,7 @@ class PHASEAssetRegistry
 @interface PHASEAssetRegistry : NSObject
 ```
 
-#### Overview
+## Overview
 
 This class manages audio by registering two types of assets throughout the app’s life cycle:
 

@@ -19,7 +19,7 @@ var isAutomaticQuoteSubstitutionEnabled: Bool { get set }
 @property (getter=isAutomaticQuoteSubstitutionEnabled) BOOL automaticQuoteSubstitutionEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../Swift/true.md), automatic quotation mark substitution is enabled; if [`false`](../../Swift/false.md), it is disabled.
 

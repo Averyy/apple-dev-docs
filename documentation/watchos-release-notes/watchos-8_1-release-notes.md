@@ -5,13 +5,13 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 The watchOS 8 SDK provides support to develop watchOS apps for Apple Watch devices running watchOS 8.1. The SDK comes bundled with Xcode 13. For information on the compatibility requirements for Xcode 13, see [Xcode 13 Release Notes](../Xcode-Release-Notes/xcode-13-release-notes.md).
 
-##### CoreData
+### CoreData
 
-###### Known Issues
+#### Known Issues
 
 - `NSExpression` immediately forbids certain operations that have significant side effects, like creating and destroying objects. Additionally, casting string class names into Class objects with `NSConstantValueExpression` is deprecated. (84017178)
 

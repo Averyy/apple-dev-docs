@@ -15,7 +15,7 @@ A structure that represents a single data payload within an accessory message.
 struct Payload
 ```
 
-#### Overview
+## Overview
 
 The [`AccessoryMessage`](../accessorymessage.md) structure’s [`payloads`](./payloads.md) property contains an array of this type.
 

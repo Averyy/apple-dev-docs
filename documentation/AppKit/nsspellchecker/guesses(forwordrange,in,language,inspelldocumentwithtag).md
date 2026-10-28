@@ -19,7 +19,7 @@ func guesses(forWordRange range: NSRange, in string: String, language: String?, 
 - (NSArray<NSString *> *) guessesForWordRange:(NSRange) range inString:(NSString *) string language:(NSString *) language inSpellDocumentWithTag:(NSInteger) tag;
 ```
 
-#### Return Value
+## Return Value
 
 An array of strings containing possible replacement words.
 

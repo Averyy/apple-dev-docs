@@ -21,7 +21,7 @@ final var routeDataChannel: AVSystemRoute.DataChannel { get }
 
 - [Routing and streaming media to remote devices](../routing-and-streaming-media-to-remote-devices.md)
 
-#### Discussion
+## Discussion
 
 Use this channel for control messages, state synchronization, and other bidirectional communication needs that are not tied to a specific [`AVSystemRouteSession`](../avsystemroutesession-gp78.md).
 

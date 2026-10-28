@@ -20,7 +20,7 @@ Marks the control template as containing sensitive, private user data.
 @preconcurrency func privacySensitive(_ sensitive: Bool = true) -> some ControlWidgetTemplate
 ```
 
-#### Discussion
+## Discussion
 
 The system redacts controls marked with this modifier when those controls are displayed on the Lock Screen and the device is locked.
 

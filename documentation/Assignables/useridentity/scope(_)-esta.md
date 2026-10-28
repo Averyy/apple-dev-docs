@@ -19,7 +19,7 @@ Sets the user identity for document-related operations that occur within the clo
 func scope<R>(_ access: () throws -> R) rethrows -> R
 ```
 
-#### Return Value
+## Return Value
 
 The result of the closure.
 

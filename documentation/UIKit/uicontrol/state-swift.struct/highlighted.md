@@ -23,7 +23,7 @@ static var highlighted: UIControl.State { get }
 UIControlStateHighlighted
 ```
 
-#### Discussion
+## Discussion
 
 A control becomes highlighted when a touch event enters the control’s bounds, and it loses that highlight when there’s a touch-up event or when the touch event exits the control’s bounds. You can retrieve and set this value through the [`isHighlighted`](../ishighlighted.md) property.
 

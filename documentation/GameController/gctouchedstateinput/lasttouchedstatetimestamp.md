@@ -25,7 +25,7 @@ var lastTouchedStateTimestamp: TimeInterval { get }
 @property (readonly) NSTimeInterval lastTouchedStateTimestamp;
 ```
 
-#### Discussion
+## Discussion
 
 This property isn’t a specific date and time. To determine the time between changes, subtract a previous value from the current value.
 

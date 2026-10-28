@@ -23,7 +23,7 @@ class UIRefreshControl
 @interface UIRefreshControl : UIControl
 ```
 
-#### Overview
+## Overview
 
 A [`UIRefreshControl`](./uirefreshcontrol.md) object is a standard control that you attach to any [`UIScrollView`](./uiscrollview.md) object, including table views and collection views. Add this control to scrollable views to give your users a standard way to refresh their contents. When the user drags the top of the scrollable content area downward, the scroll view reveals the refresh control, begins animating its progress indicator, and notifies your app. You use that notification to update your content and dismiss the refresh control.
 

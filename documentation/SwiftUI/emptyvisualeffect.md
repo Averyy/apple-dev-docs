@@ -21,7 +21,7 @@ The base visual effect that you apply additional effect to.
 struct EmptyVisualEffect
 ```
 
-#### Overview
+## Overview
 
 `EmptyVisualEffect` does not change the appearance of the view that it is applied to.
 

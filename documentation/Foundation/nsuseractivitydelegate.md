@@ -25,7 +25,7 @@ protocol NSUserActivityDelegate : NSObjectProtocol
 @protocol NSUserActivityDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 An object conforming to the [`NSUserActivityDelegate`](./nsuseractivitydelegate.md) protocol works with an [`NSUserActivity`](./nsuseractivity.md) object, which encapsulates the state of a user activity in an application on a particular device and enables the same activity to be continued on another device. For example, a user browsing an article in Safari on a Mac can move to an iOS device where the same webpage automatically opens in Safari with the same scroll position.
 

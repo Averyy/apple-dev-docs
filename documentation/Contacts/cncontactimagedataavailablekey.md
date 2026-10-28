@@ -24,7 +24,7 @@ let CNContactImageDataAvailableKey: String
 extern NSString * const CNContactImageDataAvailableKey;
 ```
 
-#### Discussion
+## Discussion
 
 This key takes a string value. This is a validation check of image data availability.
 

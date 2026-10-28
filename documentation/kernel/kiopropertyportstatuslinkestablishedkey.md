@@ -14,7 +14,7 @@
 #define kIOPropertyPortStatusLinkEstablishedKey
 ```
 
-#### Discussion
+## Discussion
 
 This key defines the value of Link Established for the key kIOPropertyPortStatusKey.
 

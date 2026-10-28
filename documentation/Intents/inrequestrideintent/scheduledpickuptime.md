@@ -32,7 +32,7 @@ var scheduledPickupTime: INDateComponentsRange? { get }
 @property (atomic, copy, readonly, nullable) INDateComponentsRange * scheduledPickupTime;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to schedule a vehicle to arrive at the specified time at the user’s location. Your handler for the [`INGetRideStatusIntent`](../ingetridestatusintent.md) object should also pick the most appropriate ride for the scheduled time.
 

@@ -20,7 +20,7 @@ The maximum total number of pixels in the source frame for a given spatial scale
 class func maximumPixelCount(forSpatialScaleFactor spatialScaleFactor: Int) -> Int?
 ```
 
-#### Discussion
+## Discussion
 
 The product of `frameWidth` and `frameHeight` must be less than or equal to this value. Use in conjunction with [`maximumDimensionForSpatialScaleFactor:`](./maximumdimensionforspatialscalefactor_.md) to determine valid frame dimensions. Pass `1` for `spatialScaleFactor` when using the processor for temporal interpolation without spatial scaling. Optional return value.  Returns nil for unsupported spatialScaleFactor or if processor is unsupported.
 

@@ -17,7 +17,7 @@ var loginRequestEncryptionAlgorithm: ASAuthorizationProviderExtensionEncryptionA
 @property (nonatomic, copy) ASAuthorizationProviderExtensionEncryptionAlgorithm loginRequestEncryptionAlgorithm;
 ```
 
-#### Discussion
+## Discussion
 
 The encryption algorithm to use for the embedded login assertion.
 

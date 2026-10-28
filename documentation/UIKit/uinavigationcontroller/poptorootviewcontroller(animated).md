@@ -23,11 +23,11 @@ func popToRootViewController(animated: Bool) -> [UIViewController]?
 - (NSArray<__kindof UIViewController *> *) popToRootViewControllerAnimated:(BOOL) animated;
 ```
 
-#### Return Value
+## Return Value
 
 An array of view controllers representing the items that were popped from the stack.
 
-#### Discussion
+## Discussion
 
 The root view controller becomes the top view controller. For information on how the navigation bar is updated, see doc:UINavigationController#Updating-the-navigation-bar.
 

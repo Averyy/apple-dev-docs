@@ -24,7 +24,7 @@ struct PDFAreaOfInterest
 enum PDFAreaOfInterest : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 These constants are components of a bit field and may be combined arbitrarily.
 

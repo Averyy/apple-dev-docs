@@ -23,7 +23,7 @@ case inProgress
 INSendPaymentIntentResponseCodeInProgress
 ```
 
-#### Discussion
+## Discussion
 
 Use this code during the handling phase to indicate you received the transaction details, but haven’t yet transferred the funds to the other user’s account.
 

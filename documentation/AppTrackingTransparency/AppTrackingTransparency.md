@@ -14,11 +14,11 @@ Request authorization to access app-related data that your app can use to track 
 - tvOS 14.0+
 - visionOS 1.0+
 
-#### Overview
+## Overview
 
 Your app needs to use the App Tracking Transparency framework if it collects data about people and shares it with other companies to track them across apps and websites. The framework presents a tracking-authorization UI and reports the current authorization status.
 
-#### Request authorization to access app-related data
+## Request authorization to access app-related data
 
 To use the App Tracking Transparency framework:
 

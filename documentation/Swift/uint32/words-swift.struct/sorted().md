@@ -23,11 +23,11 @@ func sorted() -> [Self.Element]
 
 Available when `Element` conforms to `Comparable`.
 
-#### Return Value
+## Return Value
 
 A sorted array of the sequence’s elements.
 
-#### Discussion
+## Discussion
 
 You can sort any sequence of elements that conform to the `Comparable` protocol by calling this method. Elements are sorted in ascending order.
 

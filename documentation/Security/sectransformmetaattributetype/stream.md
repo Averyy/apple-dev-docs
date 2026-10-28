@@ -21,7 +21,7 @@ case stream
 kSecTransformMetaAttributeStream
 ```
 
-#### Discussion
+## Discussion
 
 Specifies if the attribute should expect a series of values ending with a `NULL` to specify the end of the data stream. This metadata has a default value of [`true`](../../Swift/true.md) for the input and output attributes, but is [`false`](../../Swift/false.md) for all other attributes.
 

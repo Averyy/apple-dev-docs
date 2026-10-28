@@ -23,7 +23,7 @@ var accessibilityContrast: UIAccessibilityContrast { get }
 @property (nonatomic, readonly) UIAccessibilityContrast accessibilityContrast;
 ```
 
-#### Discussion
+## Discussion
 
 Use this trait to determine whether the user requested a high contrast between foreground and background content. The user sets the contrast level in the Accessibility area in Settings.
 

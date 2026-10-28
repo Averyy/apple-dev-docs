@@ -10,7 +10,7 @@ framework: "mlx-swift/MLXNN"
 
 A model training loop.
 
-#### Overview
+## Overview
 
 The model training loop in `MLX` consists of:
 

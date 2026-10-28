@@ -5,7 +5,7 @@
 
 Store text data used for subtitles in QuickTime movies.
 
-#### Overview
+## Overview
 
 Subtitle media is used to store text data used for subtitles in QuickTime movies. It has a media type of `'sbtl'`. Subtitles provide written versions of audio or visual content, such as to offer alternate language translations or to supplement the content. Subtitles differ from closed captions in that subtitles are usually a translation of the sound track into a different language rather than a transcription of the sound track in the same language.
 

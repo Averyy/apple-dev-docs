@@ -19,11 +19,11 @@ optional func webView(_ webView: WebView!, shouldBeginEditingIn range: DOMRange!
 - (BOOL) webView:(WebView *) webView shouldBeginEditingInDOMRange:(DOMRange *) range;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the user is allowed to edit `webView`; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 This method is invoked when a web view attempts to become the first responder or when the user drops an object on it.
 

@@ -13,7 +13,7 @@ Trigger enhanced log collection on the device.
 - macOS 27.0+
 - tvOS 27.0+
 
-#### Discussion
+## Discussion
 
 When the organization’s IT support reports a problem to AppleCare, AppleCare may request that the device runs enhanced log collection. AppleCare provides a token to IT support, and they send the `TriggerEnhancedLogCollection` command to the device, with the token, to initiate the enhanced log collection procedure.
 
@@ -29,7 +29,7 @@ AppleCare, in conjunction with IT support, determines the mode and the token enc
 
 You can cancel an active enhanced log collection session by sending the [`Cancel Enhanced Log Collection`](./cancel-enhanced-log-collection-command.md) to the device.
 
-##### Declarative status
+### Declarative status
 
 The enhanced log collection process reports declarative status to the device management service using the following status items:
 
@@ -37,7 +37,7 @@ The enhanced log collection process reports declarative status to the device man
 - `enhanced-logging.applecare-token`: Reports the device’s enhanced log collection session AppleCare token. See [`StatusEnhancedLoggingAppleCareToken`](./statusenhancedloggingapplecaretoken.md).
 - `enhanced-logging.timestamp`: Reports the device’s enhanced log collection session timestamp. See [`StatusEnhancedLoggingTimestamp`](./statusenhancedloggingtimestamp.md).
 
-##### Tokens for testing
+### Tokens for testing
 
 You can use a set of test tokens to verify correct operation of your device management service product. The set of tokens are:
 
@@ -45,7 +45,7 @@ You can use a set of test tokens to verify correct operation of your device mana
 - `test-token-normal-headless`: This token activates a non-interactive enhanced log collection session that results in the device reporting the `finished` declarative state if all parts of the flow succeed. Any failure, cancellation, or decline, result in the device reporting the corresponding state.
 - `test-token-failed`: This token activates an interactive enhanced log collection session that results in the device reporting the `failed` declarative state if all parts of the flow succeed. Any failure, cancellation, or decline, result in the device reporting the corresponding state.
 
-##### Command availability
+### Command availability
 
 |  |  |
 | --- | --- |

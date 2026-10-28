@@ -25,7 +25,7 @@ case soundField
 AVAudio3DMixingRenderingAlgorithmSoundField
 ```
 
-#### Discussion
+## Discussion
 
 This takes data the system renders with [`AVAudio3DMixingRenderingAlgorithm.soundField`](./soundfield.md) and distributes it among all of the output channels with a weighting toward the location of the sound. This algorithm is very effective for ambient sounds. Those sounds may derive from a specific location, but they fill the listener’s entire space.
 

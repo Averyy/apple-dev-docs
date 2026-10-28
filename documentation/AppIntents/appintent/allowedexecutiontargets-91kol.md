@@ -21,7 +21,7 @@ The list of targets this intent can be executed against.
 static var allowedExecutionTargets: IntentExecutionTargets { get }
 ```
 
-#### Discussion
+## Discussion
 
 By default, an intent can be executed against any target. Use this property to restrict execution to specific targets such as the main app, an App Intents extension, or a WidgetKit extension.
 

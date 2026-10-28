@@ -21,11 +21,11 @@ Returns a string representation of the Unicode scalar.
 func escaped(asASCII forceASCII: Bool) -> String
 ```
 
-#### Return Value
+## Return Value
 
 A string representation of the scalar.
 
-#### Discussion
+## Discussion
 
 Scalar values representing characters that are normally unprintable or that otherwise require escaping are escaped with a backslash.
 

@@ -21,7 +21,7 @@ The sizes that a symmetric cryptographic key can take.
 struct SymmetricKeySize
 ```
 
-#### Overview
+## Overview
 
 When creating a new [`SymmetricKey`](./symmetrickey.md) instance with a call to its [`init(size:)`](./symmetrickey/init%28size%29.md) initializer, you typically use one of the standard key sizes, like [`bits128`](./symmetrickeysize/bits128.md), [`bits192`](./symmetrickeysize/bits192.md), or [`bits256`](./symmetrickeysize/bits256.md). When you need a key with a non-standard length, use the [`init(bitCount:)`](./symmetrickeysize/init%28bitcount%29.md) initializer to create a `SymmetricKeySize` instance with a custom bit count.
 

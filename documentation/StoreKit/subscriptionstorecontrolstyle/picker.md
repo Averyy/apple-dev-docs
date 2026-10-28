@@ -23,7 +23,7 @@ A subscription store control style that displays subscription plans as a picker 
 
 Available when `Self` is `PickerSubscriptionStoreControlStyle`.
 
-#### Discussion
+## Discussion
 
 You can also use [`subscriptionStoreControlStyle(_:)`](../../SwiftUI/view/subscriptionstorecontrolstyle%28_%29.md) with [`picker`](./picker.md) as the parameter to construct this style.
 

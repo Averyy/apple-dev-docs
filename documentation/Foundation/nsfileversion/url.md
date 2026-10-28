@@ -25,7 +25,7 @@ var url: URL { get }
 @property (copy, readonly) NSURL * URL;
 ```
 
-#### Discussion
+## Discussion
 
 The URL identifies the location of the file associated with this version. If this version of the file has been deleted, the value in this property is `nil`.
 

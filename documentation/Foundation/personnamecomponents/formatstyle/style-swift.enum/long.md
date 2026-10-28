@@ -21,7 +21,7 @@ Specifies a long person name components style.
 case long
 ```
 
-#### Discussion
+## Discussion
 
 The rawValue of `long` is 3.
 

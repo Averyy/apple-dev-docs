@@ -17,7 +17,7 @@ Disconnect from the streaming endpoint.
 func disconnect() async throws
 ```
 
-#### Discussion
+## Discussion
 
 This method should cleanly shut down the streaming connection and release any associated resources.
 

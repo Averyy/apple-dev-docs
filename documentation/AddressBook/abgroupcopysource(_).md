@@ -23,7 +23,7 @@ func ABGroupCopySource(_ group: ABRecord!) -> Unmanaged<ABRecord>!
 extern ABRecordRefABGroupCopySource(ABRecordRef group);
 ```
 
-#### Return Value
+## Return Value
 
 The source that the group record is from.
 

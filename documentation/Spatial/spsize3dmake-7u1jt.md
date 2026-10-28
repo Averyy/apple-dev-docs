@@ -19,11 +19,11 @@
 static SPSize3D SPSize3DMake(double width, double height, double depth);
 ```
 
-#### Return Value
+## Return Value
 
 A new size stucture.
 
-#### Discussion
+## Discussion
 
 Creates a size structure with the specified dimensions.
 

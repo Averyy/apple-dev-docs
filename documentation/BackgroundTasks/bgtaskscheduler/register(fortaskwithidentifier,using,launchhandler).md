@@ -27,11 +27,11 @@ func register(forTaskWithIdentifier identifier: String, using queue: dispatch_qu
 
 - [Performing long-running tasks on iOS and iPadOS](../performing-long-running-tasks-on-ios-and-ipados.md)
 
-#### Return value
+## Return value
 
 Returns [`true`](../../Swift/true.md) if the launch handler was registered. Returns [`false`](../../Swift/false.md) if the identifier isn’t included in the [`BGTaskSchedulerPermittedIdentifiers`](../../BundleResources/information-property-list/bgtaskschedulerpermittedidentifiers.md) `Info.plist`.
 
-#### Discussion
+## Discussion
 
 Every identifier in the [`BGTaskSchedulerPermittedIdentifiers`](../../BundleResources/information-property-list/bgtaskschedulerpermittedidentifiers.md) requires a handler. Registration of all launch handlers must be complete before the end of [`applicationDidFinishLaunching(_:)`](../../UIKit/uiapplicationdelegate/applicationdidfinishlaunching%28_%29.md).
 

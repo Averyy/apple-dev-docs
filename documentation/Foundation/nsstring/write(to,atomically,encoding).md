@@ -25,7 +25,7 @@ func write(to url: URL, atomically useAuxiliaryFile: Bool, encoding enc: UInt) t
 - (BOOL) writeToURL:(NSURL *) url atomically:(BOOL) useAuxiliaryFile encoding:(NSStringEncoding) enc error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 This method stores the specified encoding with the file in an extended attribute under the name `com.apple.TextEncoding`. The value contains the IANA name for the encoding and the [`CFStringEncoding`](../../CoreFoundation/cfstringencoding.md) value for the encoding, separated by a semicolon. The `CFStringEncoding` value is written as an ASCII string containing an unsigned 32-bit decimal integer and is not terminated by a null character. One or both of these values may be missing. Examples of the value written include the following:
 

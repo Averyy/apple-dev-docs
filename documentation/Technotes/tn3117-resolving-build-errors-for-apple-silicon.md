@@ -5,7 +5,7 @@
 
 Update your app’s architecture build settings to support building macOS, iOS, watchOS, and tvOS apps on Apple silicon.
 
-#### Overview
+## Overview
 
 Xcode’s default architecture build settings provide the recommended combinations of CPU architectures to ship your app to all supported devices on each of Apple’s platforms.
 
@@ -53,7 +53,7 @@ If you receive any of those error messages, the combination of values set in `AR
 
 Once these build settings are reset back to their default values, build your app to see if the build succeeds. If your build still completes with errors, use the information in the remainder of this article to resolve those errors. If you are building a Mac app, also consult [Building a universal macOS binary](../apple-silicon/building-a-universal-macos-binary.md) for additional information on resolving build issues unique to Mac apps.
 
-#### Unset Valid Architectures
+## Unset Valid Architectures
 
 Xcode 12 deprecated the `VALID_ARCHS` build setting, and moved it from the Architectures build settings group to the User-Defined build settings group. All targets overriding this setting should completely remove the override from the Xcode project by looking at the User-Defined group of build settings.
 
@@ -65,11 +65,11 @@ To remove this setting from a target, use the Delete key to remove it. Once `VAL
 
 If `VALID_ARCHS` was intentionally preventing a target from building for a specific architecture, modify the `EXCLUDED_ARCHS` build setting as needed to achieve the same results as before.
 
-#### Exclude architectures sparingly
+## Exclude architectures sparingly
 
 Strive for your app, including all of its pre-compiled libraries, to always build for the complete set of architectures defined by the default value of the `ARCHS` build setting. Only use the `EXCLUDED_ARCHS` build setting on targets where the final released app is not using the target’s functionality on a specific architecture, such as a Mac app that only supports a legacy feature on Intel-based Mac computers. Do not modify the `ARCHS` build setting to achieve the same result.
 
-#### Update pre-compiled libraries with Apple silicon support
+## Update pre-compiled libraries with Apple silicon support
 
 Apps for iOS, watchOS, and tvOS that depend on pre-compiled libraries not updated to support the simulator on Apple silicon will encounter one of these build errors:
 
@@ -92,7 +92,7 @@ If you’re developing a watchOS app, all XCFrameworks for your watchOS app must
 
 > **Note**: A pre-compiled library must be built as an XCFramework to separate the device and simulator builds. Combining architectures for iOS, watchOS, or tvOS and their respective simulators into a single binary file is not supported.
 
-##### Update pre-compiled libraries from vendors
+### Update pre-compiled libraries from vendors
 
 If the library producing the build error is a pre-compiled library from a vendor and you don’t have the source code, contact the vendor for an updated XCFramework supporting Apple silicon. If an update isn’t available from the vendor, temporarily use the `EXCLUDED_ARCHS` build setting to exclude `arm64` for the simulator SDK as shown in the figure below. Do not exclude `arm64` for any other SDK.
 
@@ -104,7 +104,7 @@ After temporarily changing `EXCLUDED_ARCHS`, select the appropriate simulator de
 
 > ❗ **Important**: Always contact the library vendor to request an updated library supporting the simulator on Apple silicon. Modifications to the `EXCLUDED_ARCHS` build setting for a simulator SDK are not a replacement for getting an updated library, and should only be used while waiting for the vendor to make an updated library available. Remove the changes to `EXCLUDED_ARCHS` after receiving the updated library.
 
-#### Revision History
+## Revision History
 
 - **2026-03-11** Updated the text of the error messages.
 - **2023-04-11** Added information about the Destination Architectures menu in Xcode 14.3.

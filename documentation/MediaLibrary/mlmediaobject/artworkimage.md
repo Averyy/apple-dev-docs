@@ -23,7 +23,7 @@ var artworkImage: NSImage? { get }
 @property (copy, readonly, nullable) NSImage * artworkImage;
 ```
 
-#### Discussion
+## Discussion
 
 Applies to iTunes media only. Returns `nil` if not applicable or not available.
 

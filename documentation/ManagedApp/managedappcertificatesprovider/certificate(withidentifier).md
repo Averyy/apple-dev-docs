@@ -18,11 +18,11 @@ Provides a certificate by its identifier.
 func certificate(withIdentifier identifier: String) async throws(ManagedAppError) -> SecCertificate
 ```
 
-#### Return Value
+## Return Value
 
 The requested certificate
 
-#### Discussion
+## Discussion
 
 The MDM server can update the certificate at any time. After that, [`identifiers`](../managedappidentitiesprovider/identifiers.md) yields a new array of identifiers. Call this method again to obtain the updated certificate.
 

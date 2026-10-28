@@ -19,7 +19,7 @@ This function returns all presentation commands to be muxed into an MOV during a
 func outputPresentationCommands(for time: CMTime) -> [PresentationCommand]?
 ```
 
-#### Return Value
+## Return Value
 
 An array of PresentationCommand instances representing the commands that need to be included in the output file for that PTS.
 

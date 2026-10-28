@@ -16,7 +16,7 @@ An environment key for the size of a rendered Live Activity.
 struct SupportedActivityFamiliesEnvironmentKey
 ```
 
-#### Overview
+## Overview
 
 To detect the currently rendered activity family size, use the [`activityFamily`](../SwiftUI/environmentvalues/activityfamily.md) environment variable.
 

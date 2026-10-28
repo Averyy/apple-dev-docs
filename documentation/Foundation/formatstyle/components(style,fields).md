@@ -23,11 +23,11 @@ static func components(style: Date.ComponentsFormatStyle.Style, fields: Set<Date
 
 Available when `Self` is `Date.ComponentsFormatStyle`.
 
-#### Return Value
+## Return Value
 
 A date format style that uses the specified style and fields.
 
-#### Discussion
+## Discussion
 
 Use this type method when the call point allows the use of [`Date.ComponentsFormatStyle`](../date/componentsformatstyle.md). You typically do this when calling the [`formatted(_:)`](../../Swift/range/formatted%28_%29.md) method of a `Range<Date>`.
 

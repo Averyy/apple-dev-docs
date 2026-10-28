@@ -19,7 +19,7 @@ protocol NSPopoverDelegate : NSObjectProtocol
 @protocol NSPopoverDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 See [`NSPopover`](./nspopover.md) for more information on popovers in general.
 

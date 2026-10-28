@@ -20,7 +20,7 @@ Accesses the item at the relative offset from the current item.
 subscript(index: Int) -> WebPage.BackForwardList.Item? { get }
 ```
 
-#### Return Value
+## Return Value
 
 The item at the specified offset from the current item, or `nil` if the index exceeds the limits of the list.
 

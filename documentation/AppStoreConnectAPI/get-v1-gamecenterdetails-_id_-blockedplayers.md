@@ -13,7 +13,7 @@ List the blocked players for a game.
 
 - [App Store Connect API 4.5 release notes](./app-store-connect-api-4-5-release-notes.md)
 
-#### Overview
+## Overview
 
 The response contains a list of [`GameCenterDetailPlayer`](./gamecenterdetailplayer.md) resources in a [`GameCenterDetailPlayersResponse`](./gamecenterdetailplayersresponse.md).
 

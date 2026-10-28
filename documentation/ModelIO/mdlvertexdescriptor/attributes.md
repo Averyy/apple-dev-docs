@@ -24,7 +24,7 @@ var attributes: NSMutableArray { get set }
 @property (nonatomic, retain) NSMutableArray<MDLVertexAttribute *> * attributes;
 ```
 
-#### Discussion
+## Discussion
 
 A [`MDLVertexAttribute`](../mdlvertexattribute.md) object describes the data for one semantic attribute of a vertex, such as position, normal, color, or texture coordinates. Each object names the semantic attribute it is used for, and describes the format of the data for that attribute and its location in the vertex buffers of a [`MDLMesh`](../mdlmesh.md) object.
 

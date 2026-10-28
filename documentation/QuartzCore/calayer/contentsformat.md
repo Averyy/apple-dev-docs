@@ -24,7 +24,7 @@ var contentsFormat: CALayerContentsFormat { get set }
 @property (copy) CALayerContentsFormat contentsFormat;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`RGBA8Uint`](../calayercontentsformat/rgba8uint.md).
 

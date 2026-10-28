@@ -14,7 +14,7 @@ A top-to-bottom linear value ramp (gradient) generator.
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 **Ramp Vertical (float)**:
 
@@ -136,13 +136,13 @@ A top-to-bottom linear value ramp (gradient) generator.
 | --- | --- |
 | `Out` | Half |
 
-#### Parameter Descriptions
+## Parameter Descriptions
 
 - **`Top`**: The top value of the interpolation.
 - **`Bottom`**: The bottom value of the interpolation.
 - **`Texture coordinates`**: The 2D coordinate at which the data is read for mapping the texture onto a surface. The default is to use the current UV coordinates, in which U is the horizontal axis and V is the vertical axis.
 
-#### Discussion
+## Discussion
 
 This node uses interpolation to create a vertical ramp or gradient from two values. Any point within the output ramp is a mix of the two values. A given point is more similar to the value that its vertical position is closer to. Below is a an example of a simple node graph that uses `Ramp Vertical` to create a color gradient:
 

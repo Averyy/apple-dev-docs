@@ -23,7 +23,7 @@ var obscuresBackgroundDuringPresentation: Bool { get set }
 @property (nonatomic, assign) BOOL obscuresBackgroundDuringPresentation;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the search controller obscures the view controller containing your searchable content as soon as the user interacts with the search bar. When this property is [`false`](../../Swift/false.md), the search controller doesn’t obscure the original view controller. This property controls only whether the original view controller is initially obscured. When the user enters text in the search bar, the search controller immediately displays the search results controller with the results.
 

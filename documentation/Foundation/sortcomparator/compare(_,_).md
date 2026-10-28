@@ -22,7 +22,7 @@ Provides the relative ordering of two elements based on the sort order of the co
 func compare(_ lhs: Self.Compared, _ rhs: Self.Compared) -> ComparisonResult
 ```
 
-#### Return Value
+## Return Value
 
 The relative ordering between the two elements according to the sort order of the comparator.
 

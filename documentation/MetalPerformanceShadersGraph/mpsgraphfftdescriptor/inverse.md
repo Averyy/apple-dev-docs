@@ -24,7 +24,7 @@ var inverse: Bool { get set }
 @property (nonatomic, readwrite) BOOL inverse;
 ```
 
-#### Discussion
+## Discussion
 
 When set to `YES` graph uses the positive phase factor: `exp(+i 2Pi mu nu / n)`, when computing the (inverse) Fourier transform. Otherwise MPSGraph uses the negative phase factor: `exp(-i 2Pi mu nu / n)`, when computing the Fourier transform. Default value: `NO`.
 

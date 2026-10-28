@@ -24,7 +24,7 @@ The provider-specific encoding of the configuration key.
 var encodedKey: String
 ```
 
-#### Discussion
+## Discussion
 
 This string shows how the provider interpreted and encoded the key for its data source, which is useful for debugging configuration lookups.
 

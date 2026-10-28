@@ -24,7 +24,7 @@ var lineDashPattern: [NSNumber]? { get set }
 @property (copy, nullable) NSArray<NSNumber *> * lineDashPattern;
 ```
 
-#### Discussion
+## Discussion
 
 The array contains one or more [`NSNumber`](../../Foundation/nsnumber.md) objects that indicate the lengths (in points) of the line segments and gaps in the pattern. The values in the array alternate, starting with the first line segment length, followed by the first gap length, followed by the second line segment length, and so on.
 

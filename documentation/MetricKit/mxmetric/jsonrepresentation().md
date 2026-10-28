@@ -25,7 +25,7 @@ func jsonRepresentation() -> Data
 - (NSData *) JSONRepresentation;
 ```
 
-#### Return Value
+## Return Value
 
 A [`Data`](../../Foundation/data.md) (Swift) or [`NSData`](../../Foundation/nsdata.md) (Objective-C) object containing the JSON representation of the contents of the metric.
 

@@ -21,7 +21,7 @@ An error that indicates the assets required for the session are unavailable.
 case assetsUnavailable(LanguageModelSession.GenerationError.Context)
 ```
 
-#### Discussion
+## Discussion
 
 This may happen if you forget to check model availability to begin with, or if the model assets are deleted. This can happen if the user disables AppleIntelligence while your app is running.
 

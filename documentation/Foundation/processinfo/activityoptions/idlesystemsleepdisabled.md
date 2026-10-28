@@ -25,7 +25,7 @@ static var idleSystemSleepDisabled: ProcessInfo.ActivityOptions { get }
 NSActivityIdleSystemSleepDisabled
 ```
 
-#### Discussion
+## Discussion
 
 This is negated by [`userInitiatedAllowingIdleSystemSleep`](./userinitiatedallowingidlesystemsleep.md).
 

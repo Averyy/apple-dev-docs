@@ -25,7 +25,7 @@ func setDefaultCredential(_ credential: URLCredential, for space: URLProtectionS
 - (void) setDefaultCredential:(NSURLCredential *) credential forProtectionSpace:(NSURLProtectionSpace *) space;
 ```
 
-#### Discussion
+## Discussion
 
 If you override this method, also override [`setDefaultCredential(_:for:task:)`](./setdefaultcredential%28_,for,task%29.md).
 

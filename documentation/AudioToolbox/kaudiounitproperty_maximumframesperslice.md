@@ -24,7 +24,7 @@ var kAudioUnitProperty_MaximumFramesPerSlice: AudioUnitPropertyID { get }
 kAudioUnitProperty_MaximumFramesPerSlice
 ```
 
-#### Discussion
+## Discussion
 
 A read/write `UInt32` value valid on the audio unit global scope.
 

@@ -25,7 +25,7 @@ var subdivisionLevel: Int { get set }
 @property (nonatomic) NSUInteger subdivisionLevel;
 ```
 
-#### Discussion
+## Discussion
 
 *Surface subdivision* is a technique for using low-detail geometry to generate a smooth surface for rendering. When you increase the [`subdivisionLevel`](./subdivisionlevel.md) value of a geometry, SceneKit automatically splits each face in the rendered surface, creating a more detailed, smoother geometry, as shown in . SceneKit performs this subdivision process at render time, preserving the original geometry data.
 

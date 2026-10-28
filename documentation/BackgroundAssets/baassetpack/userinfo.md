@@ -20,7 +20,7 @@ JSON-encoded custom information that’s associated with the asset pack.
 @property (copy, readonly, nullable) NSData * userInfo;
 ```
 
-#### Discussion
+## Discussion
 
 This property is `nil` for Apple-hosted asset packs.
 

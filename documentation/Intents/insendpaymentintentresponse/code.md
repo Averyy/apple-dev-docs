@@ -31,7 +31,7 @@ var code: INSendPaymentIntentResponseCode { get }
 @property (atomic, readonly) INSendPaymentIntentResponseCode code;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is set automatically at initialization time and cant be changed later.
 

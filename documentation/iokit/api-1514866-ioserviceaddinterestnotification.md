@@ -23,11 +23,11 @@ func IOServiceAddInterestNotification(_ notifyPort: IONotificationPortRef!, _ se
 kern_return_t IOServiceAddInterestNotification(IONotificationPortRef notifyPort, io_service_t service, const io_name_t interestType, IOServiceInterestCallback callback, void *refCon, io_object_t *notification);
 ```
 
-#### Return Value
+## Return Value
 
 A kern_return_t error code.
 
-#### Discussion
+## Discussion
 
 IOService objects deliver notifications of their state changes to their clients via the IOService::message API, and to other interested parties including callers of this function. Message type s are defined IOKit/IOMessage.h.
 

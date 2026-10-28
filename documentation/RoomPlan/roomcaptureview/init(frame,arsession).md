@@ -18,7 +18,7 @@ Creates a room-capture view with the given AR session.
 @preconcurrency init(frame: CGRect, arSession: ARSession)
 ```
 
-#### Discussion
+## Discussion
 
 By providing your own [`ARSession`](../../ARKit/arsession.md) object, you can continue your app’s existing AR experience by seamlessly transitioning into a room-scanning session wtih RoomPlan. In addition, continuing an `ARSession` across multiple room-capture sessions — specifically, different rooms in the same vicinity — enables you to merge multiple [`CapturedRoom`](../capturedroom.md) objects into a single captured structure. For more information, see [`CapturedStructure`](../capturedstructure.md).
 

@@ -10,7 +10,7 @@ framework: "mlx-swift/MLX"
 
 Help with problems you might run into.
 
-#### Installation
+## Installation
 
 See [Installation](./install.md) for more information.  If you use Xcode or SwiftPM to reference the package on github.com there should be no manual steps.
 
@@ -28,7 +28,7 @@ If you have already cloned the repository you can use this command to force the 
 git submodule update --init --recursive
 ```
 
-#### Running From Command Line
+## Running From Command Line
 
 > **Note**: MLX requires metal shaders from the `Cmlx` framework – these are not usable from command line tools unless `DYLD_FRAMEWORK_PATH` makes them visible.
 
@@ -44,15 +44,15 @@ Note: applications will link the `MLX` and `Cmlx` libraries which will automatic
 ./mlx-run llm-tool --help
 ```
 
-#### Building
+## Building
 
 Specific build issues you may encounter.
 
-##### The file “kernels” couldn’t be opened …
+### The file “kernels” couldn’t be opened …
 
 This message comes from part of the build process that prepares the metal kernels. This may mean that the `kernels` directory in `Source/Cmlx/mlx/mlx/backend/metal/kernels` does not exist.  In particular it may mean that the git submodules were not checked out – see “Installation” above.
 
-##### received multiple target ended messages for target ID …
+### received multiple target ended messages for target ID …
 
 If you receive a message like this:
 
@@ -67,11 +67,11 @@ There are a few approaches that have been observed to work around the issue:
 - clean the build folder and rebuild
 - use Xcode 15.3 beta 2 or later
 
-#### Porting Python Code
+## Porting Python Code
 
 See [Converting From Python](./converting-python.md) for examples and information about symbol changes from python to swift.  [Porting and implementing models](https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxlmcommon/porting) contains information about porting models from MLX (Python) to Swift.
 
-#### Running on iOS Simulator
+## Running on iOS Simulator
 
 It isn’t possible to use the iOS simulator for developing MLX applications, since MLX requires a modern [Metal MTLGPUFamily](https://developer.apple.com/documentation/metal/mtlgpufamily) and the simulator does not provide that.
 

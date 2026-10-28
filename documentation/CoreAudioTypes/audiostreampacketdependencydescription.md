@@ -23,7 +23,7 @@ struct AudioStreamPacketDependencyDescription
 struct AudioStreamPacketDependencyDescription;
 ```
 
-#### Overview
+## Overview
 
 A structure to provide a description of the dependencies of one audio packet on other audio packets.
 

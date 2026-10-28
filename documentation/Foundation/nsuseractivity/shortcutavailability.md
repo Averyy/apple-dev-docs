@@ -31,7 +31,7 @@ var shortcutAvailability: INShortcutAvailabilityOptions { get set }
 @property (atomic, assign, readwrite) INShortcutAvailabilityOptions shortcutAvailability;
 ```
 
-#### Discussion
+## Discussion
 
 When you donate an activity, include a set of relevant [`INShortcutAvailabilityOptions`](../../Intents/inshortcutavailabilityoptions.md) to describe appropriate categories for offering a shortcut to the activity.
 

@@ -25,7 +25,7 @@ var castsShadow: Bool { get set }
 @property (nonatomic) BOOL castsShadow;
 ```
 
-#### Discussion
+## Discussion
 
 Geometries illuminated by the light cast shadows only if the value of this property is [`true`](../../Swift/true.md) and the [`type`](./type.md) property of the light is [`spot`](./lighttype/spot.md) or [`directional`](./lighttype/directional.md). The default value is [`false`](../../Swift/false.md).
 

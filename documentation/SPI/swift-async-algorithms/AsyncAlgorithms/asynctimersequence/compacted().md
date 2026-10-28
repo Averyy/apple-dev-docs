@@ -23,11 +23,11 @@ Returns a new `AsyncSequence` that iterates over every non-nil element from the 
 func compacted<Unwrapped>() -> AsyncCompactedSequence<Self, Unwrapped> where Self.Element == Unwrapped?
 ```
 
-#### Return Value
+## Return Value
 
 An `AsyncSequence` where the element is the unwrapped original element and iterates over every non-nil element from the original `AsyncSequence`.
 
-#### Discussion
+## Discussion
 
 Produces the same result as `c.compactMap { $0 }`.
 

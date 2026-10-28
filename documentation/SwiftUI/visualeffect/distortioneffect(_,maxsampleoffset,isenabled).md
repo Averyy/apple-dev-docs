@@ -20,11 +20,11 @@ Returns a new visual effect that applies `shader` to `self` as a geometric disto
 func distortionEffect(_ shader: Shader, maxSampleOffset: CGSize, isEnabled: Bool = true) -> some VisualEffect
 ```
 
-#### Return Value
+## Return Value
 
 A new view that renders `self` with the shader applied as a distortion effect.
 
-#### Discussion
+## Discussion
 
 For a shader function to act as a distortion effect it must have a function signature matching:
 

@@ -16,7 +16,7 @@ The number of views that you must fill with content.
 var viewCount: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property tells you how many views you’re responsible for filling with your content. For example, this function returns `1` for a monoscopic display and `2` for a stereoscopic display.
 

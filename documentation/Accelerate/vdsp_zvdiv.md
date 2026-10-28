@@ -21,7 +21,7 @@ Divides two complex single-precision vectors.
 extern void vDSP_zvdiv(const DSPSplitComplex *__B, vDSP_Stride __IB, const DSPSplitComplex *__A, vDSP_Stride __IA, const DSPSplitComplex *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This function divides the first `N` elements of `A` by corresponding elements of `B`, leaving the result in `C`.
 

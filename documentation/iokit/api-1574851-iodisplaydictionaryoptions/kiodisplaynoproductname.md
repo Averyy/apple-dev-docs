@@ -14,7 +14,7 @@
 kIODisplayNoProductName = 0x00000400
 ```
 
-#### Discussion
+## Discussion
 
 The kDisplayProductName property is not included in the returned dictionary.
 

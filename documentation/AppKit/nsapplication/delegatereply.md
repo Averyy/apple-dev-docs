@@ -19,7 +19,7 @@ enum DelegateReply
 enum NSApplicationDelegateReply : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 These constants are used by the [`reply(toOpenOrPrint:)`](./reply%28toopenorprint%29.md) method.
 

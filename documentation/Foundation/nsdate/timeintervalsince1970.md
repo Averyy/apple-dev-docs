@@ -25,7 +25,7 @@ var timeIntervalSince1970: TimeInterval { get }
 @property (readonly) NSTimeInterval timeIntervalSince1970;
 ```
 
-#### Discussion
+## Discussion
 
 This property’s value is negative if the date object is earlier than 00:00:00 UTC on 1 January 1970.
 

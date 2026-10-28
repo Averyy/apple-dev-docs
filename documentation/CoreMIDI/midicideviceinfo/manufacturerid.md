@@ -25,7 +25,7 @@ var manufacturerID: Data { get }
 @property (nonatomic, readonly) NSData * manufacturerID;
 ```
 
-#### Discussion
+## Discussion
 
 This value is 3 bytes long.
 

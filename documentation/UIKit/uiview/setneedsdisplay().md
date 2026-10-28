@@ -27,7 +27,7 @@ func setNeedsDisplay()
 
 - [Updating views automatically with observation tracking in UIKit](../updating-views-automatically-with-observation-tracking-in-uikit.md)
 
-#### Discussion
+## Discussion
 
 You can use this method or the [`setNeedsDisplay(_:)`](./setneedsdisplay%28_%29.md) to notify the system that your view’s contents need to be redrawn. This method makes a note of the request and returns immediately. The view is not actually redrawn until the next drawing cycle, at which point all invalidated views are updated.
 

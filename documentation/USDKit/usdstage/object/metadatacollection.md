@@ -20,7 +20,7 @@ A scene graph object that possesses metadata.
 protocol MetadataCollection
 ```
 
-#### Overview
+## Overview
 
 Prims, attributes, and relationships may have associated metadata. Metadata on an object is accessed by its name, which is a [`USDToken`](../../usdtoken.md).
 

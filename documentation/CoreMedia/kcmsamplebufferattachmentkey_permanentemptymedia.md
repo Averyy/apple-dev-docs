@@ -25,7 +25,7 @@ let kCMSampleBufferAttachmentKey_PermanentEmptyMedia: CFString
 extern CFStringRef const kCMSampleBufferAttachmentKey_PermanentEmptyMedia;
 ```
 
-#### Discussion
+## Discussion
 
 Marker sample buffers with this attachment in addition to [`kCMSampleBufferAttachmentKey_EmptyMedia`](./kcmsamplebufferattachmentkey_emptymedia.md)        are used to indicate that no further samples are expected.
 

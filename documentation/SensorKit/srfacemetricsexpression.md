@@ -21,7 +21,7 @@ class SRFaceMetricsExpression
 @interface SRFaceMetricsExpression : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use the [`identifier`](./srfacemetricsexpression/identifier.md) property to determine the facial expression.
 

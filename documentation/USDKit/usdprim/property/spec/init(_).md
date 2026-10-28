@@ -20,7 +20,7 @@ Narrows an untyped [`USDLayer.Spec`](../../../usdlayer/spec.md) to a property sp
 init?(_ spec: USDLayer.Spec)
 ```
 
-#### Return Value
+## Return Value
 
 A property spec, or `nil` if `spec` is not an attribute or relationship spec.
 

@@ -16,7 +16,7 @@ Registers a callback to be used when an input report is issued by the device.
 void IOHIDDeviceRegisterInputReportCallback(IOHIDDeviceRef device, uint8_t *report, CFIndex reportLength, IOHIDReportCallback callback, void *context);
 ```
 
-#### Discussion
+## Discussion
 
 An input report is an interrupt driver report issued by the device.
 

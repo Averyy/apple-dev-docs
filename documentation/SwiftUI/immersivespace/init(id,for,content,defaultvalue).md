@@ -23,7 +23,7 @@ nonisolated
 init<V>(id: String, for type: Data.Type = Data.self, @ContentBuilder content: @escaping (Binding<Data>) -> V, defaultValue: @escaping () -> Data) where Content == ImmersiveSpaceViewContent<V>, V : View
 ```
 
-#### Discussion
+## Discussion
 
 The space uses the specified content builder to form the content. Your app invokes this initializer when it presents a value of the specified `type` using the [`openImmersiveSpace`](../environmentvalues/openimmersivespace.md) action.
 

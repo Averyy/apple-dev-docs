@@ -25,7 +25,7 @@ case success
 INSnoozeTasksIntentResponseCodeSuccess
 ```
 
-#### Discussion
+## Discussion
 
 Use this code after successfully snoozing the tasks in the task list. Your response should contain the details of the task list and tasks that you changed.
 

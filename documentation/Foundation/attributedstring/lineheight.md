@@ -21,7 +21,7 @@ The line height definition of a paragraph.
 struct LineHeight
 ```
 
-#### Overview
+## Overview
 
 The line height defines the distance between the baselines of two subsequent lines of text.
 

@@ -26,11 +26,11 @@ func copyNextSampleBuffer() -> CMSampleBuffer?
 - (CMSampleBufferRef) copyNextSampleBuffer;
 ```
 
-#### Return Value
+## Return Value
 
 The output sample buffer, or `nil` if you’ve read all samples or an error occurs.
 
-#### Discussion
+## Discussion
 
 This method returns `nil` when you’ve read all available sample buffers, or if there’s an error. Check the value of the asset reader’s [`status`](../avassetreader/status-swift.property.md) property to determine the reason.
 

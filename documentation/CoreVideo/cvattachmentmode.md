@@ -25,7 +25,7 @@ enum CVAttachmentMode
 enum CVAttachmentMode : uint32_t;
 ```
 
-#### Overview
+## Overview
 
 You set these attributes when adding attachments to a [`CVBuffer`](./cvbuffer.md) object.
 

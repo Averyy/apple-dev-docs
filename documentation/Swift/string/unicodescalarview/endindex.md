@@ -21,7 +21,7 @@ The “past the end” position—that is, the position one greater than the las
 var endIndex: String.UnicodeScalarView.Index { get }
 ```
 
-#### Discussion
+## Discussion
 
 In an empty Unicode scalars view, `endIndex` is equal to `startIndex`.
 

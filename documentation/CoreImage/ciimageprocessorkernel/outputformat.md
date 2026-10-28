@@ -24,7 +24,7 @@ class var outputFormat: CIFormat { get }
 @property (class, readonly) CIFormat outputFormat;
 ```
 
-#### Discussion
+## Discussion
 
 The format must be one of `kCIFormatBGRA8`, `kCIFormatRGBAh`, `kCIFormatRGBAf` or `kCIFormatR8`. On iOS 12 and macOS 10.14, the formats `kCIFormatRh` and `kCIFormatRf` are also supported.
 

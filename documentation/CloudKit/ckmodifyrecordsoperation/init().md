@@ -25,7 +25,7 @@ init()
 - (instancetype) init;
 ```
 
-#### Discussion
+## Discussion
 
 You must set at least one of the [`recordsToSave`](./recordstosave.md) or [`recordIDsToDelete`](./recordidstodelete.md) properties before you execute the operation.
 

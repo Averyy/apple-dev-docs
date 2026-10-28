@@ -21,7 +21,7 @@ The index type for arrays, `Int`.
 typealias Index = Int
 ```
 
-#### Discussion
+## Discussion
 
 `ArraySlice` instances are not always indexed from zero. Use `startIndex` and `endIndex` as the bounds for any element access, instead of `0` and `count`.
 

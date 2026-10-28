@@ -15,7 +15,7 @@ Determine if a reload of filesystem data is in progress. This can only be the ca
 int vfs_isreload(mount_t mp);
 ```
 
-#### Return Value
+## Return Value
 
 Nonzero if a request has been made to reload data, else 0.
 

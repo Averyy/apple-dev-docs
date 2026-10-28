@@ -19,7 +19,7 @@ var pointingDevices: [VZPointingDeviceConfiguration] { get set }
 @property (copy) NSArray<VZPointingDeviceConfiguration *> * pointingDevices;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is an empty array. If your VM exposes one or more pointing devices, assign an array of [`VZPointingDeviceConfiguration`](../vzpointingdeviceconfiguration.md) objects to this property.
 

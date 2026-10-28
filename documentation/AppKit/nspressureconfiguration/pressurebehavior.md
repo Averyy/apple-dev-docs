@@ -19,7 +19,7 @@ var pressureBehavior: NSEvent.PressureBehavior { get }
 @property (readonly) NSPressureBehavior pressureBehavior;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is set when the pressure configuration object is created and cannot be changed later. It contains the pressure behavior type of the pressure configuration object.
 

@@ -15,7 +15,7 @@ An event object that the map view dispatches when someone selects or deselects a
 class MapOverlaySelectionEvent extends Event
 ```
 
-#### Discussion
+## Discussion
 
 [`Map`](./map.md) dispatches a [`MapOverlaySelectionEvent`](./mapoverlayselectionevent.md) when someone selects or deselects an overlay. The event type can be `select` or `deselect`.
 

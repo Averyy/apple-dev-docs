@@ -19,7 +19,7 @@ var isJavaEnabled: Bool { get set }
 @property (nonatomic, getter=isJavaEnabled) BOOL javaEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 Set to [`true`](../../Swift/true.md) to indicate that the web view allows Java, otherwise [`false`](../../Swift/false.md).
 

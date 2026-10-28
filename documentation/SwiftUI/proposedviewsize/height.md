@@ -21,7 +21,7 @@ The proposed vertical size measured in points.
 var height: CGFloat?
 ```
 
-#### Discussion
+## Discussion
 
 A value of `nil` represents an unspecified height proposal, which a view interprets to mean that it should use its ideal height.
 

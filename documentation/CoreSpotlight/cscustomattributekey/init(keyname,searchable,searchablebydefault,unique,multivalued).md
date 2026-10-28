@@ -23,11 +23,11 @@ init?(keyName: String, searchable: Bool, searchableByDefault: Bool, unique: Bool
 - (instancetype) initWithKeyName:(NSString *) keyName searchable:(BOOL) searchable searchableByDefault:(BOOL) searchableByDefault unique:(BOOL) unique multiValued:(BOOL) multiValued;
 ```
 
-#### Return Value
+## Return Value
 
 A new custom attribute key with the specified name and properties.
 
-#### Discussion
+## Discussion
 
 To create custom attribute key names, it’s recommended that you use a reverse DNS format that includes your company name and does not include the period character (”.”). For example, a key name of the form `com_mycompany_myapp_mykeyname` works well.
 

@@ -17,15 +17,15 @@ The sample frequencies of a discrete Fourier Transform.
 func fftfreq(_ n: Int, d: Double = 1.0, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Return Value
+## Return Value
 
 Array of sample frequencies
 
-#### Discussion
+## Discussion
 
 Returns `n` frequencies in cycles per unit of the sample spacing `d`, ordered to match the output of [`fft(_:n:axis:norm:stream:)`](./fft%28_,n,axis,norm,stream%29.md).
 
-##### See Also
+### See Also
 
 - [`MLXFFT`](./mlxfft.md)
 - [`rfftfreq(_:d:stream:)`](./rfftfreq%28_,d,stream%29.md)

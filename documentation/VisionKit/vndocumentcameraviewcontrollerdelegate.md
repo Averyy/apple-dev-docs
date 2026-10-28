@@ -22,7 +22,7 @@ protocol VNDocumentCameraViewControllerDelegate : NSObjectProtocol
 @protocol VNDocumentCameraViewControllerDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Your app is responsible for dismissing the document camera in all delegate callback methods.
 

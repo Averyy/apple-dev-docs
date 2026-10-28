@@ -5,7 +5,7 @@
 
 A model of a timeline under application control.
 
-#### Overview
+## Overview
 
 A timebase represents a timeline that clients can control by setting the rate and time. Each timebase has either a host clock or a host timebase, and its rate is expressed relative to its host:
 

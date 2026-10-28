@@ -19,7 +19,7 @@ static let fullScreenModeWindowLevel: NSView.FullScreenModeOptionKey
 extern NSViewFullScreenModeOptionKey const NSFullScreenModeWindowLevel;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is an instance of [`NSNumber`](../../../Foundation/nsnumber.md) containing an integer value.
 

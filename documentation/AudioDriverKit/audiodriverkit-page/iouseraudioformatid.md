@@ -15,7 +15,7 @@ An enumeration of four character codes used to identify distinct audio data form
 enum IOUserAudioFormatID : uint32_t;
 ```
 
-#### Discussion
+## Discussion
 
 Some audio formats require additional configurations as indicated by the [`mFormatFlags`](./iouseraudiostreambasicdescription/mformatflags.md) field of the [`IOUserAudioStreamBasicDescription`](./iouseraudiostreambasicdescription.md).
 

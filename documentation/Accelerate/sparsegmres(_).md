@@ -25,11 +25,11 @@ func SparseGMRES(_ options: SparseGMRESOptions) -> SparseIterativeMethod
 static SparseIterativeMethod SparseGMRES(SparseGMRESOptions options);
 ```
 
-#### Return Value
+## Return Value
 
 A [`SparseIterativeMethod`](./sparseiterativemethod.md) structure that represents a generalized minimal residual (GMRES) method.
 
-#### Discussion
+## Discussion
 
 Use GMRES to solve *Ax = b* when *A* is symmetric indefinite or unsymmetric.
 

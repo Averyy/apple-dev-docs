@@ -5,7 +5,7 @@
 
 Play video in your scene by adding a video node.
 
-#### Overview
+## Overview
 
 A video node renders a video at a given size and location in your scene with no exposed player controls. You might use a video node to animate visual behaviors that would be expensive to define using a collection of textures.
 

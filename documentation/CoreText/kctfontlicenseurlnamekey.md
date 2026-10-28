@@ -23,7 +23,7 @@ let kCTFontLicenseURLNameKey: CFString
 extern CFStringRef const kCTFontLicenseURLNameKey;
 ```
 
-#### Discussion
+## Discussion
 
 The name specifier for the license URL name.
 

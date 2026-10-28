@@ -21,7 +21,7 @@ Computes a single-precision out-of-place radix-3 complex FFT, either forward or 
 extern void vDSP_fft3_zop(FFTSetup __Setup, const DSPSplitComplex *__A, vDSP_Stride __IA, const DSPSplitComplex *__C, vDSP_Stride __IC, vDSP_Length __Log2N, FFTDirection __Direction);
 ```
 
-#### Discussion
+## Discussion
 
 The number of input and output values processed equals 3 times the power of 2 specified by parameter `Log2N`.
 

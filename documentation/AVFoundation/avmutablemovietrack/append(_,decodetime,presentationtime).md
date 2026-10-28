@@ -26,7 +26,7 @@ func append(_ sampleBuffer: CMSampleBuffer, decodeTime outDecodeTime: UnsafeMuta
 - (BOOL) appendSampleBuffer:(CMSampleBufferRef) sampleBuffer decodeTime:(CMTime *) outDecodeTime presentationTime:(CMTime *) outPresentationTime error:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 If the sample buffer carries sample data, the sample data is written to the container specified by the track property [`mediaDataStorage`](./mediadatastorage.md) if non-nil, or by the movie property [`defaultMediaDataStorage`](../avmutablemovie/defaultmediadatastorage.md) if non-nil, and sample references are appended to the track’s media. If both media data storage properties are `nil`, the method will fail and return `NO`.
 

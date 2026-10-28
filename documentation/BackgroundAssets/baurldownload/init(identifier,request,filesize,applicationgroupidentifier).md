@@ -22,7 +22,7 @@ convenience init(identifier: String, request: URLRequest, fileSize: Int, applica
 - (instancetype) initWithIdentifier:(NSString *) identifier request:(NSURLRequest *) request fileSize:(NSUInteger) fileSize applicationGroupIdentifier:(NSString *) applicationGroupIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 Constructs a download object to represent the download of a asset located inside of the provided @c request.
 

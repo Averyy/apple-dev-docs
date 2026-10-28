@@ -15,7 +15,7 @@ The object detector’s confidence score for its prediction’s accuracy.
 var confidence: Double
 ```
 
-#### Discussion
+## Discussion
 
 The confidence range is `[0.0, 1.0]`, where `1.0` is the highest possible confidence score.
 

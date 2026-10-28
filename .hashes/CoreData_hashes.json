@@ -2556,9 +2556,21 @@
       "file_path": "documentation/CoreData/nsmanagedobjectcontextconcurrencytype/privatequeueconcurrencytype.md",
       "hash": "fc866fe7ae5962d12c141960d10c66fbf8c4c73e256586099451e893b5cd9bf5"
     },
+    "https://developer.apple.com/documentation/coredata/nsmanagedobjectcontextdidsavenotification": {
+      "file_path": "documentation/CoreData/nsmanagedobjectcontextdidsavenotification.md",
+      "hash": "1eac0578d64d48edbd7ea42b178dc91c81705f3d563fb0e027f6890c7285c1f9"
+    },
+    "https://developer.apple.com/documentation/coredata/nsmanagedobjectcontextdidsaveobjectidsnotification": {
+      "file_path": "documentation/CoreData/nsmanagedobjectcontextdidsaveobjectidsnotification.md",
+      "hash": "3233a1477e0f6756543c072ceeb3a18ab6ee6e55f1c5cd207ff46716a2784220"
+    },
     "https://developer.apple.com/documentation/coredata/nsmanagedobjectcontextlockingerror": {
       "file_path": "documentation/CoreData/nsmanagedobjectcontextlockingerror.md",
       "hash": "5be38950050c69faca2878a06f0aa2da63ba2cb6f584fcda68fecedf1922d83b"
+    },
+    "https://developer.apple.com/documentation/coredata/nsmanagedobjectcontextobjectsdidchangenotification": {
+      "file_path": "documentation/CoreData/nsmanagedobjectcontextobjectsdidchangenotification.md",
+      "hash": "1ca5de24aa93754ac3ba93051a4a9d02e0eaa5e1c70341e11ea2f9926af2d718"
     },
     "https://developer.apple.com/documentation/coredata/nsmanagedobjectcontextquerygenerationkey": {
       "file_path": "documentation/CoreData/nsmanagedobjectcontextquerygenerationkey.md",
@@ -7232,9 +7244,21 @@
       "file_path": "documentation/CoreData/nsmanagedobjectcontextconcurrencytype/privatequeueconcurrencytype.md",
       "hash": "fc866fe7ae5962d12c141960d10c66fbf8c4c73e256586099451e893b5cd9bf5"
     },
+    "https://developer.apple.com/tutorials/data/documentation/coredata/nsmanagedobjectcontextdidsavenotification.json": {
+      "file_path": "documentation/CoreData/nsmanagedobjectcontextdidsavenotification.md",
+      "hash": "1eac0578d64d48edbd7ea42b178dc91c81705f3d563fb0e027f6890c7285c1f9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coredata/nsmanagedobjectcontextdidsaveobjectidsnotification.json": {
+      "file_path": "documentation/CoreData/nsmanagedobjectcontextdidsaveobjectidsnotification.md",
+      "hash": "3233a1477e0f6756543c072ceeb3a18ab6ee6e55f1c5cd207ff46716a2784220"
+    },
     "https://developer.apple.com/tutorials/data/documentation/coredata/nsmanagedobjectcontextlockingerror.json": {
       "file_path": "documentation/CoreData/nsmanagedobjectcontextlockingerror.md",
       "hash": "5be38950050c69faca2878a06f0aa2da63ba2cb6f584fcda68fecedf1922d83b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/coredata/nsmanagedobjectcontextobjectsdidchangenotification.json": {
+      "file_path": "documentation/CoreData/nsmanagedobjectcontextobjectsdidchangenotification.md",
+      "hash": "1ca5de24aa93754ac3ba93051a4a9d02e0eaa5e1c70341e11ea2f9926af2d718"
     },
     "https://developer.apple.com/tutorials/data/documentation/coredata/nsmanagedobjectcontextquerygenerationkey.json": {
       "file_path": "documentation/CoreData/nsmanagedobjectcontextquerygenerationkey.md",
@@ -9354,9 +9378,36 @@
     }
   },
   "metadata": {
+    "link_seeds": [
+      [
+        "https://developer.apple.com/tutorials/data/documentation/coredata/nsmanagedobjectcontextdidmergechangesobjectidsnotification.json",
+        "CoreData",
+        "com.apple.documentation"
+      ],
+      [
+        "https://developer.apple.com/tutorials/data/documentation/coredata/nsmanagedobjectcontextdidsavenotification.json",
+        "CoreData",
+        "com.apple.documentation"
+      ],
+      [
+        "https://developer.apple.com/tutorials/data/documentation/coredata/nsmanagedobjectcontextdidsaveobjectidsnotification.json",
+        "CoreData",
+        "com.apple.documentation"
+      ],
+      [
+        "https://developer.apple.com/tutorials/data/documentation/coredata/nsmanagedobjectcontextobjectsdidchangenotification.json",
+        "CoreData",
+        "com.apple.documentation"
+      ],
+      [
+        "https://developer.apple.com/tutorials/data/documentation/coredata/nsmanagedobjectcontextwillsavenotification.json",
+        "CoreData",
+        "com.apple.documentation"
+      ]
+    ],
     "render": {
-      "version": 3
+      "version": 4
     },
-    "total_pages": 2338
+    "total_pages": 2344
   }
 }

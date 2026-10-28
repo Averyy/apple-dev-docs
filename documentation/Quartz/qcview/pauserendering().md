@@ -21,7 +21,7 @@ func pauseRendering()
 - (void) pauseRendering;
 ```
 
-#### Discussion
+## Discussion
 
 You can nest calls to this method.
 

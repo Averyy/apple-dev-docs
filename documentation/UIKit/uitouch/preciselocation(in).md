@@ -27,11 +27,11 @@ func preciseLocation(in view: UIView?) -> CGPoint
 
 - [Implementing coalesced touch support in an app](../implementing-coalesced-touch-support-in-an-app.md)
 
-#### Return Value
+## Return Value
 
 A precise location for the touch.
 
-#### Discussion
+## Discussion
 
 Use this method to get additional precision for a touch (when available). Do not use the returned point for hit testing. In some cases, hit testing can indicate that the touch is within a view, but hit testing against the more precise location may indicate that the touch is outside of the view.
 

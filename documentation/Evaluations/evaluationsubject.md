@@ -21,7 +21,7 @@ A type that represents the output the system under test produces.
 protocol EvaluationSubject<Value>
 ```
 
-#### Overview
+## Overview
 
 Conform to this protocol to define custom subject types. The primary concrete conformance is [`ModelSubject`](./modelsubject.md), which carries a value and an optional transcript for tool-call evaluation.
 

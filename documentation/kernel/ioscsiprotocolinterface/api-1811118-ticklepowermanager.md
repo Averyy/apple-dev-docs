@@ -12,11 +12,11 @@ bool TicklePowerManager (
  UInt32maxPowerState );
 ```
 
-#### Return Value
+## Return Value
 
 The result of the call to activityTickle(). See IOService.h for details.
 
-#### Overview
+## Overview
 
 The TicklePowerManager(UInt32 maxPowerState) method is a convenience function which can be called by subclasses in TicklePowerManager(void) in order to tell the power manager to reset idle timer or bring the device into the requested state. It returns whatever is returned by activityTickle (true if device is in the requested state, false if it is not).
 

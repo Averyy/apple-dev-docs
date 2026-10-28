@@ -19,7 +19,7 @@ var canAdd: Bool { get }
 @property (readonly) BOOL canAdd;
 ```
 
-#### Discussion
+## Discussion
 
 Bindings can use this method to control the enabling of user interface objects.
 

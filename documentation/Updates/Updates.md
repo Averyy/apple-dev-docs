@@ -6,13 +6,13 @@
 
 Latest additions to documentation and platform release notes.
 
-#### The 27 platform releases – June 2026
+## The 27 platform releases – June 2026
 
 Read about the latest updates to the 27 platform releases. This page highlights changes to framework and tools documentation, as well as release notes for Xcode, macOS, iOS, iPadOS, visionOS, watchOS, and Safari.
 
 ---
 
-##### Xcode 27
+### Xcode 27
 
 Agentic [Coding intelligence](../Xcode/coding-intelligence.md) features in [Xcode](../Xcode/Xcode.md) get even more powerful with support for skills that help you modernize and add new features to your app. For instance, skills can help you ensure your iOS apps respond perfectly as people resize your app using iPhone Mirroring on macOS.
 
@@ -23,7 +23,7 @@ Agentic [Coding intelligence](../Xcode/coding-intelligence.md) features in [Xcod
 - Read [Running your app on simulated or physical devices](../Xcode/running-your-app-on-simulated-or-physical-devices.md) and [Managing your simulated and physical devices in Device Hub](../Xcode/managing-your-simulated-and-physical-devices-in-device-hub.md) to learn about the new [Device Hub](../Xcode/device-hub.md).
 - Reach more people all over the world by having Xcode help you with [Localizing your app using agents](../Xcode/localizing-your-app-using-agents.md). This improved localizing workflow is integrated directly into Xcode, bringing your apps to a wider market much faster and easier.
 
-###### Performance and analysis
+#### Performance and analysis
 
 - Learn how to use the tools and frameworks Xcode provides by reading [Improving your app’s performance](../Xcode/improving-your-app-s-performance.md). Tools like Instruments and [MetricKit](../MetricKit/MetricKit.md) can give you the insights you need to make your app perform at its best.
 - The new [StateReporting](../StateReporting/StateReporting.md) framework works with [MetricKit](../MetricKit/MetricKit.md) and helps you record a specific state for a feature within your app using the [`StateReporter`](../StateReporting/statereporter.md) class.
@@ -31,11 +31,11 @@ Agentic [Coding intelligence](../Xcode/coding-intelligence.md) features in [Xcod
 
 ---
 
-##### Apple Intelligence and Machine Learning
+### Apple Intelligence and Machine Learning
 
 The 27 platform releases include powerful new developer features that supercharge apps with AI capabilities. [App Intents](../AppIntents/AppIntents.md) can connect your app with Siri, Spotlight, and Shortcuts. [Foundation Models](../FoundationModels/FoundationModels.md) gives you a standard interface to perform powerful AI tasks across Apple-provided and third-party models. [Core AI](../CoreAI/CoreAI.md) lets you connect your own models into the Apple tools as first-class providers. And the [Evaluations](../Evaluations/Evaluations.md) framework provides a standard interface to evaluate your app’s intelligence-powered features.
 
-###### Siri, Intents, and Spotlight
+#### Siri, Intents, and Spotlight
 
 Your app can integrate with Apple Intelligence in the 27 releases across Apple platforms by leveraging [App Intents](../AppIntents/AppIntents.md), which make the core features of your app available to Siri, Spotlight, and Shortcuts. Widgets and Live Activities also interact with your core app through its intents.
 
@@ -50,7 +50,7 @@ Your app can integrate with Apple Intelligence in the 27 releases across Apple p
 - Read [Adding your app’s content to Spotlight indexes](../CoreSpotlight/adding-your-app-s-content-to-spotlight-indexes.md) to see how to use [Core Spotlight](../CoreSpotlight/CoreSpotlight.md) to give people access to activities and items within your app directly from the Spotlight interface.
 - Learn to use the [Visual Intelligence](../VisualIntelligence/VisualIntelligence.md) framework on iOS, iPadOS, and now macOS by reading [Integrating your app with visual intelligence](../VisualIntelligence/integrating-your-app-with-visual-intelligence.md). This enables your app to analyze image data from the camera to identify places and objects.
 
-##### Foundation Models
+### Foundation Models
 
 The 27 platform releases add powerful new API to the [Foundation Models](../FoundationModels/FoundationModels.md) framework. Developers can now use a single, standard interface to connect to all their models – from Apple’s on-device models to the powerful Private Cloud Compute hosted models. Frontier model providers can use the new [`LanguageModel`](../FoundationModels/languagemodel.md) protocol to vend a Swift package to bridge their powerful cloud-hosted models to the Foundation Models API. And with [Core AI](../CoreAI/CoreAI.md), Foundation Models API can access your own models, too.
 
@@ -64,14 +64,14 @@ The 27 platform releases add powerful new API to the [Foundation Models](../Foun
 
 Explore the Origami sample that demonstrates Foundation Models with Private Cloud Compute or third-party models, shown in the Platform State of the Union by reading [Origami: Crafting a dynamic tutorial for Apple Intelligence](../FoundationModels/origami-crafting-a-dynamic-tutorial-for-apple-intelligence.md).
 
-###### Core AI
+#### Core AI
 
 The [Core AI](../CoreAI/CoreAI.md) framework includes a set of tools that help you build, run, and deploy your own AI models within your app. Core AI also vends your custom AI models in a format that Foundation Models can use natively, so once adapted to Core AI, your models can interact with the same Foundation Models code you write when working with Apple’s own built-in models.
 
 - Designed for Apple silicon performance, [Integrating on-device AI models in your app with Core AI](../CoreAI/integrating-on-device-ai-models-in-your-app-with-core-ai.md) details how to easily import third-party or your own models into your app, and achieve great performance.
 - Read [Managing model specialization and caching](../CoreAI/managing-model-specialization-and-caching.md) to see how best to specialize your AI model, either in advance by [Compiling Core AI models ahead of time](../CoreAI/compiling-core-ai-models-ahead-of-time.md), or cached on first use within the app.
 
-###### Evaluations
+#### Evaluations
 
 - The new [Evaluations](../Evaluations/Evaluations.md) framework makes it easy to write intuitive Swift code to evaluate the behavior of your model, and validate your app’s behavior due to model results.
 - Read [Evaluating language model responses](../Evaluations/evaluating-language-model-responses.md) to learn how you can build a strategy to evaluate your use of models within your app. Writing evaluations and creating comprehensive coverage is outlined in the article [Designing effective evaluations](../Evaluations/designing-effective-evaluations.md).
@@ -79,7 +79,7 @@ The [Core AI](../CoreAI/CoreAI.md) framework includes a set of tools that help y
 
 ---
 
-##### SwiftUI
+### SwiftUI
 
 - Learn to use reorderable containers in your SwiftUI apps by reading  [Reordering items in lists, stacks, grids, and custom layouts](../SwiftUI/reordering-items-in-lists-stacks-grids-and-custom-layouts.md). See how clean the code can look:
 
@@ -105,7 +105,7 @@ LazyVStack {
 
 ---
 
-##### UIKit
+### UIKit
 
 - Use [`UICollectionViewCompositionalLayoutSectionProvider`](../UIKit/uicollectionviewcompositionallayoutsectionprovider.md) closures as part of automatic observation tracking to automatically invalidate and update compositional layouts when observable objects change.
 - Adopt the UIKit scene-based life cycle using the guidance in [Transitioning to the UIKit scene-based life cycle](../UIKit/transitioning-to-the-uikit-scene-based-life-cycle.md). Starting in iOS 27, apps built with the latest SDK must use the scene-based life cycle or they fail to launch.
@@ -113,7 +113,7 @@ LazyVStack {
 
 ---
 
-##### AppKit
+### AppKit
 
 - Create events similar to UIControl events on NSControl with the new [`NSControl.Events`](../AppKit/nscontrol/events.md) type.
 - Update views automatically in response to Observable model changes using the guidance in [Updating views automatically with observation tracking in AppKit](../AppKit/updating-views-automatically-with-observation-tracking-in-appkit.md).
@@ -121,20 +121,20 @@ LazyVStack {
 
 ---
 
-##### SwiftData
+### SwiftData
 
 - Read the latest article update to help you migrate your Core Data app to use SwiftData with [Adopting SwiftData for a Core Data app](../CoreData/adopting-swiftdata-for-a-core-data-app.md).
 - Learn how to use [`sections`](../SwiftData/query/sections.md) with a SwiftData [`Query`](../SwiftData/query.md).
 
 ---
 
-##### Privacy and Security
+### Privacy and Security
 
 - Developers of sensitive and secure apps can use the [Trust Insights](../TrustInsights/TrustInsights.md) framework to request an evaluation from the system to help detect if someone is at risk of a social engineering threat. This information can be used in combination with other factors to enable a developer to help keep their users more protected.
 
 ---
 
-##### Graphics and Media
+### Graphics and Media
 
 - Create immersive games in visionOS with RealityKit and Reality Composer 3. Read [Chaparral Village: Building an immersive visionOS adventure game](../visionOS/chaparral-village-building-an-immersive-visionos-adventure-game.md) to create an adventure game with navigation mesh, animation graph, cloth simulation, and baked lighting. Read [Designing no-code games with Reality Composer Pro 3](../visionOS/designing-no-code-games-in-reality-composer-pro-3.md) to create a game without code using script graphs.
 - Use the [Spatial Preview](../SpatialPreview/SpatialPreview.md) framework to work with 3D spatial content from a macOS app within a connected visionOS device in real time.
@@ -146,21 +146,21 @@ LazyVStack {
 
 ---
 
-##### Health
+### Health
 
 - Access workout zone data for heart rate and cycling power, and learn about the  [`HKWorkoutZoneGroup`](../HealthKit/hkworkoutzonegroup.md) structure by reading [Accessing workout zone data](../HealthKit/accessing-workout-zone-data.md).
 - Read the new article [Recording and querying menopausal state](../HealthKit/recording-and-querying-menopausal-state.md) to help personalize the experience within your health-related app.
 
 ---
 
-##### Apple Pay, Passes, and Commerce
+### Apple Pay, Passes, and Commerce
 
 - Read the article [Adding support for Tap to Share to your app](../ProximityReader/adding-support-for-tap-to-share-to-your-app.md) to see how to use the [ProximityReader](../ProximityReader/ProximityReader.md) framework to use nearby iPhones to conduct in-person transactions.
 - See the new customization features in [Creating an airline boarding pass using semantic tags](../WalletPasses/creating-an-airline-boarding-pass-using-semantic-tags.md) to make your app’s passes even more useful in the moment. [Creating a pass with Pass Designer](../WalletPasses/creating-a-pass-with-pass-designer.md) explains how the Pass Designer tool can help you visualize and design your passes. [Defining the metadata of your Wallet Pass](../WalletPasses/defining-the-metadata-of-your-wallet-pass.md) explains how to include additional information with your pass.
 
 ---
 
-##### Platform services
+### Platform services
 
 - With iOS 27, people can easily switch from one iPhone to another. Read about [iPhone quick switch](../CoreTelephony/iphone-quick-switch.md) and how to follow best practices using the [Core Telephony](../CoreTelephony/CoreTelephony.md) framework to ensure your app gracefully handles this switch.
 - Use the [CrashReportExtension](../CrashReportExtension/CrashReportExtension.md) framework to perform on-device analysis and produce a report when your app crashes. This crash-handling code will then run out of process, managed by the system. Implement the [`CrashReporterExtension`](../CrashReportExtension/crashreporterextension.md) to create your own custom crash report.

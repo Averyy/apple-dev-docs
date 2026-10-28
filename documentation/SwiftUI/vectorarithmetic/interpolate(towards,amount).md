@@ -22,7 +22,7 @@ Interpolates this value with `other` by the specified `amount`.
 mutating func interpolate(towards other: Self, amount: Double)
 ```
 
-#### Discussion
+## Discussion
 
 This is equivalent to `self = self + (other - self) * amount`.
 

@@ -18,7 +18,7 @@ case popUpMenuWindow
 kCGPopUpMenuWindowLevelKey
 ```
 
-#### Discussion
+## Discussion
 
 The level for pop-up menus.
 

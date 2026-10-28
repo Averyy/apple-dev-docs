@@ -25,11 +25,11 @@ func CMTimeMappingMakeEmpty(target: CMTimeRange) -> CMTimeMapping
 extern CMTimeMapping CMTimeMappingMakeEmpty(CMTimeRange target);
 ```
 
-#### Return Value
+## Return Value
 
 A new time mapping.
 
-#### Discussion
+## Discussion
 
 The target time range must have a duration whose epoch is `0`, otherwise the system returns an invalid time mapping.
 

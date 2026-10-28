@@ -25,7 +25,7 @@ case msgSetupChanged
 kMIDIMsgSetupChanged
 ```
 
-#### Discussion
+## Discussion
 
 This type provides no data. Ignore this message if you’re explicitly handling other state changes.
 

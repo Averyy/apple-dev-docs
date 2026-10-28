@@ -21,7 +21,7 @@ Appends a cubic Bézier curve from the current point, using the provided control
 extern void CGContextAddCurveToPoint(CGContextRef c, CGFloat cp1x, CGFloat cp1y, CGFloat cp2x, CGFloat cp2y, CGFloat x, CGFloat y);
 ```
 
-#### Discussion
+## Discussion
 
 This function appends a cubic curve to the current path. On return, the current point is set to the end point of that segment.
 

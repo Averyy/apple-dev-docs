@@ -23,7 +23,7 @@ var kDNSServiceType_TXT: Int { get }
 kDNSServiceType_TXT
 ```
 
-#### Discussion
+## Discussion
 
 One or more text strings (NOT “zero or more…”).
 

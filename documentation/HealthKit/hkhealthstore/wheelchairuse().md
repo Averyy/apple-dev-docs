@@ -24,11 +24,11 @@ func wheelchairUse() throws -> HKWheelchairUseObject
 - (HKWheelchairUseObject *) wheelchairUseWithError:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 An object indicating whether the user uses a wheelchair.
 
-#### Discussion
+## Discussion
 
 If the user has not yet specified their wheelchair use, or if the user has denied your app permission to read the wheelchair use, this method returns [`HKWheelchairUse.notSet`](../hkwheelchairuse/notset.md).
 

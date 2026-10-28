@@ -25,7 +25,7 @@ func protocol_getName(_ proto: Protocol) -> UnsafePointer<CChar>
 extern const char *protocol_getName(Protocol *proto);
 ```
 
-#### Return Value
+## Return Value
 
 The name of the protocol `p` as a C string.
 
